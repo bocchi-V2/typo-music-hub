@@ -1,0 +1,302 @@
+[
+  {
+    "id": 231,
+    "name": "Dandadan",
+    "nameTH": "ดันดาดัน",
+    "genre": [
+      "แอคชั่น",
+      "เหนือธรรมชาติ",
+      "โรแมนติก",
+      "คอมเมดี้"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48269/poster_image/medium-9feb265c75b7016c63b21e122f69a84b.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Dandadan",
+    "mood": "hype"
+  },
+  {
+    "id": 232,
+    "name": "Kaiju No. 8",
+    "nameTH": "ไคจูหมายเลข 8",
+    "genre": [
+      "แอคชั่น",
+      "ไซไฟ",
+      "สัตว์ประหลาด",
+      "ลูกผู้ชาย"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46300/poster_image/medium-c1c025bbee42bed048e628b1eae278c0.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kaiju%20No%208",
+    "mood": "hype"
+  },
+  {
+    "id": 233,
+    "name": "Sousou no Frieren",
+    "nameTH": "คำอธิษฐานในวันที่จากลา Frieren",
+    "genre": [
+      "แฟนตาซี",
+      "ซึ้งกินใจ",
+      "การเดินทาง",
+      "เวทมนตร์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46474/poster_image/medium-23e1293e41a0b54b6621eb589c3f0d62.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Frieren",
+    "mood": "sad"
+  },
+  {
+    "id": 234,
+    "name": "Dungeon Meshi",
+    "nameTH": "สูตรลับตำรับดันเจี้ยน (Delicious in Dungeon)",
+    "genre": [
+      "แฟนตาซี",
+      "ทำอาหาร",
+      "ผจญภัย",
+      "คอมเมดี้"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46320/poster_image/medium-feb3c7544b2d91902c9c6a38bf1f5944.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Dungeon%20Meshi",
+    "mood": "chill"
+  },
+  {
+    "id": 235,
+    "name": "Wind Breaker",
+    "nameTH": "วินด์เบรกเกอร์",
+    "genre": [
+      "แอคชั่น",
+      "นักเลง",
+      "มิตรภาพ",
+      "สคูลไลฟ์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/47271/poster_image/medium-90a981a5a5570ba5fdb809a3152c8348.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Wind%20Breaker",
+    "mood": "hype"
+  },
+  {
+    "id": 236,
+    "name": "Solo Leveling",
+    "nameTH": "ชะตากรรมนักล่าเงา (Ore dake Level Up na Ken)",
+    "genre": [
+      "แอคชั่น",
+      "แฟนตาซี",
+      "ฮันเตอร์",
+      "จุติเทพ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46231/poster_image/medium-d75b57ef0c9056044cc0e277ac34d6e5.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Solo%20Leveling",
+    "mood": "hype"
+  },
+  {
+    "id": 237,
+    "name": "Kusuriya no Hitorigoto",
+    "nameTH": "สืบคดีปริศนาหมอยาตำรับโคมแดง (The Apothecary Diaries)",
+    "genre": [
+      "สืบสวน",
+      "ดราม่า",
+      "วังหลวง",
+      "ฉลาด"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/47083/poster_image/medium-1ba1a4603c851776031d439eba948633.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kusuriya%20no%20Hitorigoto",
+    "mood": "chill"
+  },
+  {
+    "id": 238,
+    "name": "Oshi no Ko Season 2",
+    "nameTH": "เกิดใหม่เป็นลูกโอชิ ซีซั่น 2",
+    "genre": [
+      "ดราม่า",
+      "วงการบันเทิง",
+      "ล้างแค้น",
+      "ละครเวที"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/47659/poster_image/medium-54e7989414b7049dfbdd5975f612a0dd.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Oshi%20no%20Ko",
+    "mood": "hype"
+  },
+  {
+    "id": 239,
+    "name": "Look Back",
+    "nameTH": "ลุค แบ็ค (Look Back)",
+    "genre": [
+      "ดราม่า",
+      "ชีวิต",
+      "มิตรภาพ",
+      "สร้างสรรค์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48541/poster_image/medium-996392db10718d6b3177f11982f8b975.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Look%20Back",
+    "mood": "sad"
+  },
+  {
+    "id": 240,
+    "name": "Make Heroine ga Oosugiru!",
+    "nameTH": "ชนะเลิศแค่ไหนก็แพ้เธอ (Too Many Losing Heroines!)",
+    "genre": [
+      "โรแมนติก",
+      "คอมเมดี้",
+      "โรงเรียน",
+      "น่ารัก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48312/poster_image/medium-5a3bba84ddb645a765b4714655abf044.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Makeine",
+    "mood": "love"
+  },
+  {
+    "id": 241,
+    "name": "Ao no Hako",
+    "nameTH": "กล่องรักวัยใส (Blue Box)",
+    "genre": [
+      "กีฬา",
+      "โรแมนติก",
+      "แบดมินตัน",
+      "โรงเรียน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Blue%20Box",
+    "mood": "love"
+  },
+  {
+    "id": 242,
+    "name": "Haikyu!! The Dumpster Battle",
+    "nameTH": "ไฮคิว!! คู่ตบฟ้าประทาน ตอนศึกที่กองขยะ",
+    "genre": [
+      "กีฬา",
+      "วอลเลย์บอล",
+      "มิตรภาพ",
+      "เดือดสุด"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46336/poster_image/medium-162a579fe7a25c1b188532bb8aaa7129.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Haikyu",
+    "mood": "hype"
+  },
+  {
+    "id": 243,
+    "name": "Tokidoki Bosotto Russia-go",
+    "nameTH": "คุณอาลิย่าพูดรัสเซียหวานใส่เพราะคิดว่าไม่รู้",
+    "genre": [
+      "โรแมนติก",
+      "คอมเมดี้",
+      "โรงเรียน",
+      "หวานเจี๊ยบ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/47192/poster_image/medium-671e94191e8d931769dfa6d8a73e6491.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Alya",
+    "mood": "love"
+  },
+  {
+    "id": 244,
+    "name": "Chainsaw Man: Reze-hen",
+    "nameTH": "มนุษย์เลื่อยยนต์ - บทเรเซ่",
+    "genre": [
+      "แอคชั่น",
+      "ดาร์กแฟนตาซี",
+      "ระเบิด",
+      "รักขมขื่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48323/poster_image/medium-c1ff86228f7d5e9ce2564837fb8e0585.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Chainsaw%20Man",
+    "mood": "hype"
+  },
+  {
+    "id": 245,
+    "name": "Mashle: Magic and Muscles",
+    "nameTH": "ศึกโลกเวทมนตร์คนพลังกล้าม",
+    "genre": [
+      "คอมเมดี้",
+      "เวทมนตร์",
+      "แอคชั่น",
+      "ล้อเลียน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium-0233bf77af3e0ab7303ae7099209d58a.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Mashle",
+    "mood": "hype"
+  },
+  {
+    "id": 246,
+    "name": "Wistoria: Wand and Sword",
+    "nameTH": "ตำนานดาบและคทาแห่งวิสโทเรีย",
+    "genre": [
+      "แอคชั่น",
+      "แฟนตาซี",
+      "เวทมนตร์",
+      "ดาบ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48534/poster_image/medium-c38c15266ae228974e8c2a00d776ea92.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Wistoria",
+    "mood": "hype"
+  },
+  {
+    "id": 247,
+    "name": "Shangri-La Frontier",
+    "nameTH": "เมื่อนักล่าเกมขยะท้าสู้ในเกมเทพ",
+    "genre": [
+      "เกม",
+      "แอคชั่น",
+      "แฟนตาซี",
+      "บอสไฟต์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46241/poster_image/medium-e4a6d7f3be58c861ffff72a72cb1791d.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Shangri-La%20Frontier",
+    "mood": "hype"
+  },
+  {
+    "id": 248,
+    "name": "Bleach: Thousand-Year Blood War",
+    "nameTH": "บลีช เทพมรณะ สงครามเลือดพันปี",
+    "genre": [
+      "แอคชั่น",
+      "ยมทูต",
+      "บังไค",
+      "สงคราม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/43078/poster_image/medium-c33a4b2e827f0e99ea57f831af0adabd.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Bleach",
+    "mood": "hype"
+  },
+  {
+    "id": 249,
+    "name": "NieR:Automata Ver1.1a",
+    "nameTH": "เนียร์: ออโตมาตา",
+    "genre": [
+      "ไซไฟ",
+      "แอนดรอยด์",
+      "ดราม่า",
+      "ปรัชญา"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/47784/poster_image/medium-87164c01153374979cbb13368c4635a1.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=NieR%20Automata",
+    "mood": "sad"
+  },
+  {
+    "id": 250,
+    "name": "Jigokuraku",
+    "nameTH": "สุขาวดีอเวจี (Hell’s Paradise)",
+    "genre": [
+      "แอคชั่น",
+      "นินจา",
+      "สยองขวัญ",
+      "แฟนตาซี"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/44012/poster_image/medium-b7adf5b796a614ae3630153229fe4469.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Jigokuraku",
+    "mood": "hype"
+  }
+]

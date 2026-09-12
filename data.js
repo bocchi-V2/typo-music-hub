@@ -1,0 +1,25483 @@
+const ANIMES = [
+  {
+    "id": 1,
+    "name": "Your Lie in April",
+    "nameTH": "เพลงรักสองหัวใจ",
+    "genre": [
+      "ดราม่า",
+      "ดนตรี",
+      "โรแมนติก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8403/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/23273.jpg?1711973143",
+    "anifumeUrl": "https://anifume.com/?s=Your%20Lie%20in%20April",
+    "mood": "sad"
+  },
+  {
+    "id": 2,
+    "name": "Kaguya-sama: Love is War",
+    "nameTH": "สารภาพรักกับคุณคางุยะซะดีๆ",
+    "genre": [
+      "คอมเมดี้",
+      "โรแมนติก",
+      "โรงเรียน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41373/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/37999.jpg?1711956945",
+    "anifumeUrl": "https://anifume.com/?s=Kaguya-sama%3A%20Love%20is%20War",
+    "mood": "love"
+  },
+  {
+    "id": 3,
+    "name": "Violet Evergarden",
+    "nameTH": "ไวโอเล็ต เอเวอร์การ์เดน",
+    "genre": [
+      "ดราม่า",
+      "แฟนตาซี",
+      "ซึ้งกินใจ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/12230/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/33352.jpg?1711979744",
+    "anifumeUrl": "https://anifume.com/?s=Violet%20Evergarden",
+    "mood": "sad"
+  },
+  {
+    "id": 4,
+    "name": "Spirited Away",
+    "nameTH": "มิติวิญญาณมหัศจรรย์",
+    "genre": [
+      "แฟนตาซี",
+      "ผจญภัย",
+      "จิบลิ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/176/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/199.jpg?1711972539",
+    "anifumeUrl": "https://anifume.com/?s=Spirited%20Away",
+    "mood": "chill"
+  },
+  {
+    "id": 5,
+    "name": "Jujutsu Kaisen",
+    "nameTH": "มหาเวทย์ผนึกมาร",
+    "genre": [
+      "แอ็กชัน",
+      "โชเน็น",
+      "ดาร์กแฟนตาซี"
+    ],
+    "coverUrl": "https://anifume.com/images/19/Jujutsu-Kaisen-3.jpg",
+    "coverFallback": "https://anifume.com/images/19/Jujutsu-Kaisen-3.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Jujutsu%20Kaisen",
+    "mood": "hype"
+  },
+  {
+    "id": 6,
+    "name": "Haikyuu!!",
+    "nameTH": "ไฮคิว!! คู่ตบฟ้าประทาน",
+    "genre": [
+      "กีฬา",
+      "มิตรภาพ",
+      "สร้างแรงบันดาลใจ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8133/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/20583.jpg?1711952288",
+    "anifumeUrl": "https://anifume.com/?s=Haikyuu!!",
+    "mood": "hype"
+  },
+  {
+    "id": 7,
+    "name": "Weathering With You",
+    "nameTH": "ฤดูฝัน ฉันมีเธอ",
+    "genre": [
+      "โรแมนติก",
+      "แฟนตาซี",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/42028/poster_image/medium-7c29b40139396c7d225977be4e5987be.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/38826.jpg?1711977019",
+    "anifumeUrl": "https://anifume.com/?s=Weathering%20With%20You",
+    "mood": "rainy"
+  },
+  {
+    "id": 8,
+    "name": "Toradora!",
+    "nameTH": "โทราโดระ! ยัยตัวร้ายกับนายหน้าโหด",
+    "genre": [
+      "โรแมนติกคอมเมดี้",
+      "โรงเรียน",
+      "อบอุ่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3532/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/4224.jpg?1711978202",
+    "anifumeUrl": "https://anifume.com/?s=Toradora!",
+    "mood": "love"
+  },
+  {
+    "id": 9,
+    "name": "Your Name",
+    "nameTH": "หลับตาฝัน ถึงชื่อเธอ",
+    "genre": [
+      "โรแมนติก",
+      "เหนือธรรมชาติ",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11614/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/32281.jpg?1711958651",
+    "anifumeUrl": "https://anifume.com/?s=Your%20Name",
+    "mood": "sad"
+  },
+  {
+    "id": 10,
+    "name": "A Silent Voice",
+    "nameTH": "รักไร้เสียง (Koe no Katachi)",
+    "genre": [
+      "ดราม่า",
+      "โรงเรียน",
+      "เยียวยาจิตใจ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/10028/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/28851.jpg?1711959177",
+    "anifumeUrl": "https://anifume.com/?s=A%20Silent%20Voice",
+    "mood": "sad"
+  },
+  {
+    "id": 11,
+    "name": "Attack on Titan",
+    "nameTH": "ผ่าพิภพไททัน",
+    "genre": [
+      "แอ็กชัน",
+      "ดาร์กแฟนตาซี",
+      "มหากาพย์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7442/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/16498.jpg?1711973439",
+    "anifumeUrl": "https://anifume.com/?s=Attack%20on%20Titan",
+    "mood": "hype"
+  },
+  {
+    "id": 12,
+    "name": "Hotarubi no Mori e",
+    "nameTH": "สู่ป่าแห่งแสงหิ่งห้อย",
+    "genre": [
+      "โรแมนติก",
+      "เหนือธรรมชาติ",
+      "ซึ้งกินใจ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6169/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/10408.jpg?1711954179",
+    "anifumeUrl": "https://anifume.com/?s=Hotarubi%20no%20Mori%20e",
+    "mood": "sad"
+  },
+  {
+    "id": 13,
+    "name": "The Garden of Words",
+    "nameTH": "ยามสายฝนโปรยปราย",
+    "genre": [
+      "โรแมนติก",
+      "ดราม่า",
+      "ภาพสวย"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7515/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/16782.jpg?1712343791",
+    "anifumeUrl": "https://anifume.com/?s=The%20Garden%20of%20Words",
+    "mood": "rainy"
+  },
+  {
+    "id": 14,
+    "name": "Horimiya",
+    "nameTH": "โฮริมิยะ สาวมั่นกับนายมืดมน",
+    "genre": [
+      "โรแมนติกคอมเมดี้",
+      "ชีวิตในโรงเรียน",
+      "อบอุ่นหัวใจ"
+    ],
+    "coverUrl": "https://anifume.com/images/48/Horimiya-Piece.jpg",
+    "coverFallback": "https://anifume.com/images/48/Horimiya-Piece.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Horimiya",
+    "mood": "love"
+  },
+  {
+    "id": 15,
+    "name": "5 Centimeters per Second",
+    "nameTH": "ยามซากุระร่วงโรย (5 cm/s)",
+    "genre": [
+      "โรแมนติก",
+      "ดราม่า",
+      "คิดถึงวันวาน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1517/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/1689.jpg?1711944834",
+    "anifumeUrl": "https://anifume.com/?s=5%20Centimeters%20per%20Second",
+    "mood": "sad"
+  },
+  {
+    "id": 16,
+    "name": "I Want to Eat Your Pancreas",
+    "nameTH": "ตับอ่อนเธอนั้น ขอฉันเถอะนะ",
+    "genre": [
+      "ดราม่า",
+      "โรแมนติก",
+      "เรียกน้ำตา"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13723/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/36098.jpg?1711958622",
+    "anifumeUrl": "https://anifume.com/?s=I%20Want%20to%20Eat%20Your%20Pancreas",
+    "mood": "sad"
+  },
+  {
+    "id": 17,
+    "name": "Kamisama Kiss",
+    "nameTH": "จิ้งจอกเย็นชากับสาวซ่าเทพจำเป็น",
+    "genre": [
+      "โรแมนติกคอมเมดี้",
+      "เหนือธรรมชาติ",
+      "โชโจ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7157/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/14713.jpg?1711957359",
+    "anifumeUrl": "https://anifume.com/?s=Kamisama%20Kiss",
+    "mood": "love"
+  },
+  {
+    "id": 18,
+    "name": "Anohana",
+    "nameTH": "ดอกไม้ มิตรภาพ และความทรงจำ",
+    "genre": [
+      "ดราม่า",
+      "มิตรภาพ",
+      "เรียกน้ำตา"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/5981/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/15039.jpg?1711941358",
+    "anifumeUrl": "https://anifume.com/?s=Anohana",
+    "mood": "sad"
+  },
+  {
+    "id": 19,
+    "name": "Bocchi the Rock!",
+    "nameTH": "บ็อจจิ เดอะ ร็อก!",
+    "genre": [
+      "ดนตรี",
+      "คอมเมดี้",
+      "ชีวิตประจำวัน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/44196/poster_image/medium-a7b52a1e9cea5a04b29ee6878fbff923.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/47917.jpg?1711944241",
+    "anifumeUrl": "https://anifume.com/?s=Bocchi%20the%20Rock!",
+    "mood": "chill"
+  },
+  {
+    "id": 20,
+    "name": "Kimi ni Todoke",
+    "nameTH": "ฝากใจไปถึงเธอ",
+    "genre": [
+      "โรแมนติก",
+      "โรงเรียน",
+      "ฟีลกู๊ด"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/4397/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/6045.jpg?1711958562",
+    "anifumeUrl": "https://anifume.com/?s=Kimi%20ni%20Todoke",
+    "mood": "love"
+  },
+  {
+    "id": 21,
+    "name": "Oshi no Ko",
+    "nameTH": "เกิดใหม่เป็นลูกโอชิ",
+    "genre": [
+      "ดราม่า",
+      "วงการบันเทิง",
+      "ปริศนา"
+    ],
+    "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
+    "coverFallback": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Oshi%20no%20Ko",
+    "mood": "hype"
+  },
+  {
+    "id": 22,
+    "name": "Frieren: Beyond Journey's End",
+    "nameTH": "คำอธิษฐานในวันที่จากลา Frieren",
+    "genre": [
+      "แฟนตาซี",
+      "ผจญภัย",
+      "อบอุ่นลึกซึ้ง"
+    ],
+    "coverUrl": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
+    "coverFallback": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Frieren%3A%20Beyond%20Journey's%20End",
+    "mood": "chill"
+  },
+  {
+    "id": 23,
+    "name": "Chainsaw Man",
+    "nameTH": "มนุษย์เลื่อยยนต์",
+    "genre": [
+      "แอ็กชัน",
+      "ดาร์กแฟนตาซี",
+      "เลือดสาด"
+    ],
+    "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "coverFallback": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Chainsaw%20Man",
+    "mood": "hype"
+  },
+  {
+    "id": 24,
+    "name": "Demon Slayer: Kimetsu no Yaiba",
+    "nameTH": "ดาบพิฆาตอสูร",
+    "genre": [
+      "แอ็กชัน",
+      "ประวัติศาสตร์",
+      "โชเน็น"
+    ],
+    "coverUrl": "https://anifume.com/images/53/Kimetsu-no-Yaiba-Hashira-Geiko-hen.jpg",
+    "coverFallback": "https://anifume.com/images/53/Kimetsu-no-Yaiba-Hashira-Geiko-hen.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Demon%20Slayer%3A%20Kimetsu%20no%20Yaiba",
+    "mood": "hype"
+  },
+  {
+    "id": 25,
+    "name": "Cyberpunk: Edgerunners",
+    "nameTH": "ไซเบอร์พังก์: เอ็ดจ์รันเนอร์ส",
+    "genre": [
+      "ไซไฟ",
+      "แอ็กชัน",
+      "ดราม่าบาดลึก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/43248/poster_image/medium-b6579dda46b596b2d2c3fa6d4618dc69.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/42310.jpg?1711946940",
+    "anifumeUrl": "https://anifume.com/?s=Cyberpunk%3A%20Edgerunners",
+    "mood": "hype"
+  },
+  {
+    "id": 26,
+    "name": "Suzume",
+    "nameTH": "การผนึกประตูของซูซูเมะ",
+    "genre": [
+      "ผจญภัย",
+      "แฟนตาซี",
+      "โรแมนติก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/45597/poster_image/medium-63432be1d191a4ce68e599e02336a62b.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/50594.jpg?1709523135",
+    "anifumeUrl": "https://anifume.com/?s=Suzume",
+    "mood": "sad"
+  },
+  {
+    "id": 27,
+    "name": "Spy x Family",
+    "nameTH": "สปาย × แฟมิลี",
+    "genre": [
+      "คอมเมดี้",
+      "แอ็กชัน",
+      "ครอบครัว"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/45398/poster_image/medium-f2f30d957a12e8269655c6036b460c90.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/50265.jpg?1716777040",
+    "anifumeUrl": "https://anifume.com/?s=Spy%20x%20Family",
+    "mood": "chill"
+  },
+  {
+    "id": 28,
+    "name": "Blue Lock",
+    "nameTH": "ขังดวลแข้ง",
+    "genre": [
+      "กีฬา",
+      "ฟุตบอล",
+      "ระทึกขวัญ"
+    ],
+    "coverUrl": "https://anifume.com/images/45/Blue-Lock.jpg",
+    "coverFallback": "https://anifume.com/images/45/Blue-Lock.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Blue%20Lock",
+    "mood": "hype"
+  },
+  {
+    "id": 29,
+    "name": "Wind Breaker",
+    "nameTH": "วินด์เบรกเกอร์ นักเรียนสายบู๊",
+    "genre": [
+      "แอ็กชัน",
+      "นักเลง",
+      "มิตรภาพ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/47271/poster_image/medium-90a981a5a5570ba5fdb809a3152c8348.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/54900.jpg?1718109974",
+    "anifumeUrl": "https://anifume.com/?s=Wind%20Breaker",
+    "mood": "hype"
+  },
+  {
+    "id": 30,
+    "name": "Tokyo Revengers",
+    "nameTH": "โตเกียว รีเวนเจอร์ส",
+    "genre": [
+      "แอ็กชัน",
+      "ย้อนเวลา",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/43321/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/42249.jpg?1711977954",
+    "anifumeUrl": "https://anifume.com/?s=Tokyo%20Revengers",
+    "mood": "hype"
+  },
+  {
+    "id": 31,
+    "name": "Solo Leveling",
+    "nameTH": "โซโลเลเวลลิง",
+    "genre": [
+      "แอ็กชัน",
+      "แฟนตาซี",
+      "ฮันเตอร์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46231/poster_image/medium-d75b57ef0c9056044cc0e277ac34d6e5.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52299.jpg?1710732907",
+    "anifumeUrl": "https://anifume.com/?s=Solo%20Leveling",
+    "mood": "hype"
+  },
+  {
+    "id": 32,
+    "name": "DanDaDan",
+    "nameTH": "ดันดาดัน",
+    "genre": [
+      "แอ็กชัน",
+      "คอมเมดี้",
+      "เหนือธรรมชาติ"
+    ],
+    "coverUrl": "https://anifume.com/images/08/Dandadan-2.jpg",
+    "coverFallback": "https://anifume.com/images/08/Dandadan-2.jpg",
+    "anifumeUrl": "https://anifume.com/?s=DanDaDan",
+    "mood": "hype"
+  },
+  {
+    "id": 33,
+    "name": "Kaiju No. 8",
+    "nameTH": "ไคจูหมายเลข 8",
+    "genre": [
+      "แอ็กชัน",
+      "ไซไฟ",
+      "สัตว์ประหลาด"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46300/poster_image/medium-c1c025bbee42bed048e628b1eae278c0.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52588.jpg?1717955244",
+    "anifumeUrl": "https://anifume.com/?s=Kaiju%20No.%208",
+    "mood": "hype"
+  },
+  {
+    "id": 34,
+    "name": "Death Note",
+    "nameTH": "เดธโน้ต สมุดมรณะ",
+    "genre": [
+      "สืบสวน",
+      "จิตวิทยา",
+      "ระทึกขวัญ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1376/medium.jpg",
+    "coverFallback": "https://shikimori.io/assets/globals/missing_original.jpg?1711947446",
+    "anifumeUrl": "https://anifume.com/?s=Death%20Note",
+    "mood": "dark"
+  },
+  {
+    "id": 35,
+    "name": "Bleach",
+    "nameTH": "บลีช เทพมรณะ",
+    "genre": [
+      "แอ็กชัน",
+      "โชเน็น",
+      "เหนือธรรมชาติ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/244/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/269.jpg?1711944143",
+    "anifumeUrl": "https://anifume.com/?s=Bleach",
+    "mood": "hype"
+  },
+  {
+    "id": 36,
+    "name": "One Piece",
+    "nameTH": "วันพีซ",
+    "genre": [
+      "ผจญภัย",
+      "แฟนตาซี",
+      "มิตรภาพ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/12/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/459.jpg?1711967475",
+    "anifumeUrl": "https://anifume.com/?s=One%20Piece",
+    "mood": "hype"
+  },
+  {
+    "id": 37,
+    "name": "Hunter x Hunter",
+    "nameTH": "ฮันเตอร์ x ฮันเตอร์",
+    "genre": [
+      "ผจญภัย",
+      "แอ็กชัน",
+      "แฟนตาซี"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6448/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/11061.jpg?1711954447",
+    "anifumeUrl": "https://anifume.com/?s=Hunter%20x%20Hunter",
+    "mood": "hype"
+  },
+  {
+    "id": 38,
+    "name": "Neon Genesis Evangelion",
+    "nameTH": "อีวานเกเลียน",
+    "genre": [
+      "หุ่นยนต์",
+      "จิตวิทยา",
+      "ไซไฟ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/21/poster_image/medium-d98a2928c9eda0d71f0dab72c1a0124d.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/30.jpg?1711973635",
+    "anifumeUrl": "https://anifume.com/?s=Neon%20Genesis%20Evangelion",
+    "mood": "dark"
+  },
+  {
+    "id": 39,
+    "name": "Mushoku Tensei",
+    "nameTH": "เกิดชาตินี้พี่ต้องเทพ",
+    "genre": [
+      "ต่างโลก",
+      "แฟนตาซี",
+      "ผจญภัย"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/42323/poster_image/medium-b274092f0e16d8788b9f0ac497f321b2.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/39535.jpg?1711965119",
+    "anifumeUrl": "https://anifume.com/?s=Mushoku%20Tensei",
+    "mood": "chill"
+  },
+  {
+    "id": 40,
+    "name": "Re:Zero",
+    "nameTH": "รีเซทชีวิต ฝ่าวิกฤติต่างโลก",
+    "genre": [
+      "ดาร์กแฟนตาซี",
+      "ดราม่า",
+      "ย้อนเวลา"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11209/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/31240.jpg?1711970097",
+    "anifumeUrl": "https://anifume.com/?s=Re%3AZero",
+    "mood": "dark"
+  },
+  {
+    "id": 41,
+    "name": "My Hero Academia",
+    "nameTH": "มายฮีโร่ อคาเดเมีย",
+    "genre": [
+      "แอ็กชัน",
+      "ฮีโร่",
+      "โรงเรียน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11469/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/31964.jpg?1711944324",
+    "anifumeUrl": "https://anifume.com/?s=My%20Hero%20Academia",
+    "mood": "hype"
+  },
+  {
+    "id": 42,
+    "name": "Steins;Gate",
+    "nameTH": "สไตน์ส;เกท",
+    "genre": [
+      "ไซไฟ",
+      "ระทึกขวัญ",
+      "ย้อนเวลา"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/5646/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/9253.jpg?1711975211",
+    "anifumeUrl": "https://anifume.com/?s=Steins%3BGate",
+    "mood": "dark"
+  },
+  {
+    "id": 43,
+    "name": "Classroom of the Elite",
+    "nameTH": "ขอต้อนรับสู่ห้องเรียนนิยม (เฉพาะ) ยอดคน",
+    "genre": [
+      "จิตวิทยา",
+      "โรงเรียน",
+      "ชิงไหวชิงพริบ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13503/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/35507.jpg?1711982853",
+    "anifumeUrl": "https://anifume.com/?s=Classroom%20of%20the%20Elite",
+    "mood": "dark"
+  },
+  {
+    "id": 44,
+    "name": "Komi Can't Communicate",
+    "nameTH": "โคมิซัง สื่อสารไม่เก่งนะ",
+    "genre": [
+      "คอมเมดี้",
+      "โรงเรียน",
+      "อบอุ่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/44551/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/48926.jpg?1708748157",
+    "anifumeUrl": "https://anifume.com/?s=Komi%20Can't%20Communicate",
+    "mood": "chill"
+  },
+  {
+    "id": 45,
+    "name": "Clannad: After Story",
+    "nameTH": "แคลนนาด อาฟเตอร์สตอรี่",
+    "genre": [
+      "ดราม่า",
+      "ชีวิตครอบครัว",
+      "ซึ้งระดับตำนาน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3505/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/4181.jpg?1711946491",
+    "anifumeUrl": "https://anifume.com/?s=Clannad%3A%20After%20Story",
+    "mood": "sad"
+  },
+  {
+    "id": 46,
+    "name": "Bungo Stray Dogs",
+    "nameTH": "คณะประพันธกรจรจัด",
+    "genre": [
+      "แอ็กชัน",
+      "พลังพิเศษ",
+      "สืบสวน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11339/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/31478.jpg?1711944783",
+    "anifumeUrl": "https://anifume.com/?s=Bungo%20Stray%20Dogs",
+    "mood": "hype"
+  },
+  {
+    "id": 47,
+    "name": "Hell's Paradise",
+    "nameTH": "สุขาวดีอเวจี",
+    "genre": [
+      "แอ็กชัน",
+      "ดาร์กแฟนตาซี",
+      "นินจา"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/44012/poster_image/medium-b7adf5b796a614ae3630153229fe4469.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/46569.jpg?1711955691",
+    "anifumeUrl": "https://anifume.com/?s=Hell's%20Paradise",
+    "mood": "hype"
+  },
+  {
+    "id": 48,
+    "name": "Vinland Saga",
+    "nameTH": "วินแลนด์ ซาก้า",
+    "genre": [
+      "ประวัติศาสตร์",
+      "แอ็กชัน",
+      "มหากาพย์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41084/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/37521.jpg?1711979804",
+    "anifumeUrl": "https://anifume.com/?s=Vinland%20Saga",
+    "mood": "hype"
+  },
+  {
+    "id": 49,
+    "name": "Noragami",
+    "nameTH": "โนรางามิ เทวดาขาจร",
+    "genre": [
+      "แอ็กชัน",
+      "เหนือธรรมชาติ",
+      "คอมเมดี้"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7881/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/20507.jpg?1711966572",
+    "anifumeUrl": "https://anifume.com/?s=Noragami",
+    "mood": "chill"
+  },
+  {
+    "id": 50,
+    "name": "Dororo",
+    "nameTH": "ดาบล่าพญามาร โดโรโระ",
+    "genre": [
+      "แอ็กชัน",
+      "ย้อนยุค",
+      "ปีศาจ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41083/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/5760.jpg?1711948072",
+    "anifumeUrl": "https://anifume.com/?s=Dororo",
+    "mood": "dark"
+  },
+  {
+    "id": 51,
+    "name": "Naruto Shippuden",
+    "nameTH": "นารูโตะ ตำนานวายุสลาตัน",
+    "genre": [
+      "แอ็กชัน",
+      "นินจา",
+      "โชเน็น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1555/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/1735.jpg?1711965662",
+    "anifumeUrl": "https://anifume.com/?s=Naruto%20Shippuden",
+    "mood": "hype"
+  },
+  {
+    "id": 52,
+    "name": "Tokyo Ghoul",
+    "nameTH": "โตเกียว กูล",
+    "genre": [
+      "ดาร์กแฟนตาซี",
+      "สยองขวัญ",
+      "จิตวิทยา"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8271/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/22319.jpg?1711978006",
+    "anifumeUrl": "https://anifume.com/?s=Tokyo%20Ghoul",
+    "mood": "hype"
+  },
+  {
+    "id": 53,
+    "name": "Mashle: Magic and Muscles",
+    "nameTH": "ศึกโลกเวทมนตร์คนพลังกล้าม",
+    "genre": [
+      "คอมเมดี้",
+      "เวทมนตร์",
+      "กล้าม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium-0233bf77af3e0ab7303ae7099209d58a.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52211.jpg?1711937409",
+    "anifumeUrl": "https://anifume.com/?s=Mashle%3A%20Magic%20and%20Muscles",
+    "mood": "hype"
+  },
+  {
+    "id": 54,
+    "name": "Beastars",
+    "nameTH": "บีสตาร์",
+    "genre": [
+      "ดราม่า",
+      "จิตวิทยา",
+      "สัตว์มนุษย์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/42147/poster_image/medium-e17accdc782f75a56fb5c9167ec2652b.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/39195.jpg?1711943715",
+    "anifumeUrl": "https://anifume.com/?s=Beastars",
+    "mood": "hype"
+  },
+  {
+    "id": 55,
+    "name": "One Punch Man",
+    "nameTH": "วันพั้นช์แมน",
+    "genre": [
+      "แอ็กชัน",
+      "คอมเมดี้",
+      "ฮีโร่"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/10740/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/30276.jpg?1711967568",
+    "anifumeUrl": "https://anifume.com/?s=One%20Punch%20Man",
+    "mood": "hype"
+  },
+  {
+    "id": 56,
+    "name": "Mob Psycho 100",
+    "nameTH": "ม็อบไซโค 100",
+    "genre": [
+      "แอ็กชัน",
+      "พลังจิต",
+      "คอมเมดี้"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/11578/poster_image/medium-9ace4ac709f334cc96d244c15fe7d4d0.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/32182.jpg?1711964270",
+    "anifumeUrl": "https://anifume.com/?s=Mob%20Psycho%20100",
+    "mood": "hype"
+  },
+  {
+    "id": 57,
+    "name": "Death Parade",
+    "nameTH": "เดธ พาเหรด",
+    "genre": [
+      "จิตวิทยา",
+      "ระทึกขวัญ",
+      "ดนตรีบาร์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/9969/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/28223.jpg?1711947433",
+    "anifumeUrl": "https://anifume.com/?s=Death%20Parade",
+    "mood": "hype"
+  },
+  {
+    "id": 58,
+    "name": "Parasyte: The Maxim",
+    "nameTH": "ปรสิตเดรัจฉาน",
+    "genre": [
+      "แอ็กชัน",
+      "ไซไฟ",
+      "จิตวิทยา"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8147/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/22535.jpg?1711958969",
+    "anifumeUrl": "https://anifume.com/?s=Parasyte%3A%20The%20Maxim",
+    "mood": "hype"
+  },
+  {
+    "id": 59,
+    "name": "Erased",
+    "nameTH": "รีไววัล เมืองที่ไม่มีฉัน (Boku dake ga Inai Machi)",
+    "genre": [
+      "ย้อนเวลา",
+      "สืบสวน",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11110/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/31043.jpg?1711944305",
+    "anifumeUrl": "https://anifume.com/?s=Erased",
+    "mood": "hype"
+  },
+  {
+    "id": 60,
+    "name": "Nana",
+    "nameTH": "นานะ",
+    "genre": [
+      "ดนตรี",
+      "ดราม่า",
+      "ความรัก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/777/poster_image/medium-838bd2659fa6198a6626d175be3e967b.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/877.jpg?1711965470",
+    "anifumeUrl": "https://anifume.com/?s=Nana",
+    "mood": "hype"
+  },
+  {
+    "id": 61,
+    "name": "Given",
+    "nameTH": "กีฟเว่น",
+    "genre": [
+      "ดนตรี",
+      "ร็อค",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/12230/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/39533.jpg?1711951428",
+    "anifumeUrl": "https://anifume.com/?s=Given",
+    "mood": "hype"
+  },
+  {
+    "id": 62,
+    "name": "Fate/stay night: Unlimited Blade Works",
+    "nameTH": "เฟท/สเตย์ ไนท์",
+    "genre": [
+      "แอ็กชัน",
+      "แฟนตาซี",
+      "มหากาพย์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7882/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/22297.jpg?1711950480",
+    "anifumeUrl": "https://anifume.com/?s=Fate%2Fstay%20night%3A%20Unlimited%20Blade%20Works",
+    "mood": "hype"
+  },
+  {
+    "id": 63,
+    "name": "Dr. STONE",
+    "nameTH": "ดร.สโตน เจ้าแห่งวิทยาศาสตร์กู้โลก",
+    "genre": [
+      "วิทยาศาสตร์",
+      "ผจญภัย",
+      "โชเน็น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42080/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/38691.jpg?1711948374",
+    "anifumeUrl": "https://anifume.com/?s=Dr.%20STONE",
+    "mood": "hype"
+  },
+  {
+    "id": 64,
+    "name": "Black Clover",
+    "nameTH": "แบล็คโคลเวอร์",
+    "genre": [
+      "เวทมนตร์",
+      "แอ็กชัน",
+      "โชเน็น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13209/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/34572.jpg?1711944087",
+    "anifumeUrl": "https://anifume.com/?s=Black%20Clover",
+    "mood": "hype"
+  },
+  {
+    "id": 65,
+    "name": "Fullmetal Alchemist: Brotherhood",
+    "nameTH": "แขนกลคนแปรธาตุ: บราเธอร์ฮูด",
+    "genre": [
+      "แอ็กชัน",
+      "แฟนตาซี",
+      "ตำนาน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3936/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/5114.jpg?1711949773",
+    "anifumeUrl": "https://anifume.com/?s=Fullmetal%20Alchemist%3A%20Brotherhood",
+    "mood": "hype"
+  },
+  {
+    "id": 66,
+    "name": "JoJo's Bizarre Adventure",
+    "nameTH": "โจโจ้ ล่าข้ามศตวรรษ",
+    "genre": [
+      "แอ็กชัน",
+      "สแตนด์",
+      "ตำนาน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/7158/poster_image/medium-dc5b9aa567da90538903f8b0b329d585.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/666.jpg?1711956300",
+    "anifumeUrl": "https://anifume.com/?s=JoJo's%20Bizarre%20Adventure",
+    "mood": "hype"
+  },
+  {
+    "id": 67,
+    "name": "K-On!",
+    "nameTH": "เค-อง! ก๊วนดนตรีแป๋วแหวว",
+    "genre": [
+      "ดนตรี",
+      "ชีวิตประจำวัน",
+      "น่ารัก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/4240/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/5680.jpg?1711956754",
+    "anifumeUrl": "https://anifume.com/?s=K-On!",
+    "mood": "hype"
+  },
+  {
+    "id": 68,
+    "name": "Sword Art Online",
+    "nameTH": "ซอร์ดอาร์ตออนไลน์",
+    "genre": [
+      "เกม",
+      "แอ็กชัน",
+      "แฟนตาซี"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6589/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/11757.jpg?1711975853",
+    "anifumeUrl": "https://anifume.com/?s=Sword%20Art%20Online",
+    "mood": "hype"
+  },
+  {
+    "id": 69,
+    "name": "No Game No Life",
+    "nameTH": "โนเกม โนไลฟ์",
+    "genre": [
+      "เกม",
+      "ต่างโลก",
+      "ชิงไหวชิงพริบ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7880/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/19815.jpg?1711966406",
+    "anifumeUrl": "https://anifume.com/?s=No%20Game%20No%20Life",
+    "mood": "hype"
+  },
+  {
+    "id": 70,
+    "name": "My Dress-Up Darling",
+    "nameTH": "หนุ่มเย็บผ้ากับสาวคอสเพลย์",
+    "genre": [
+      "โรแมนติก",
+      "คอมเมดี้",
+      "คอสเพลย์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/44382/poster_image/large-8ffc8ea9b6a1f9e79bc626e03baab167.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/44382/poster_image/medium-3f1d12c9a238701563f95c29d9994afd.jpeg",
+    "anifumeUrl": "https://anifume.com/anime/my-dress-up-darling"
+  },
+  {
+    "id": 71,
+    "name": "Berserk",
+    "nameTH": "เบอร์เซิร์ก นักรบวิปลาส",
+    "genre": [
+      "ดาร์กแฟนตาซี",
+      "แอคชั่น",
+      "สงคราม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/24/poster_image/large-8b69ef8e3f4f4359af304e9b664eef0f.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/24/poster_image/medium-221f1cd380a46ac845efb99b27df4eaf.jpeg",
+    "anifumeUrl": "https://anifume.com/anime/berserk"
+  },
+  {
+    "id": 72,
+    "name": "Record of Ragnarok",
+    "nameTH": "มหาศึกคนชนเทพ",
+    "genre": [
+      "แอคชั่น",
+      "เทพเจ้า",
+      "แบทเทิล"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/44207/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/44207/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/record-of-ragnarok"
+  },
+  {
+    "id": 73,
+    "name": "InuYasha",
+    "nameTH": "อินุยาฉะ เทพอสูรจิ้งจอกเงิน",
+    "genre": [
+      "แอคชั่น",
+      "โรแมนติก",
+      "ย้อนยุค"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/224/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/224/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/inuyasha"
+  },
+  {
+    "id": 74,
+    "name": "Gintama",
+    "nameTH": "กินทามะ",
+    "genre": [
+      "คอมเมดี้",
+      "ซามูไร",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/818/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/818/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/gintama"
+  },
+  {
+    "id": 75,
+    "name": "Slam Dunk",
+    "nameTH": "สแลมดังก์",
+    "genre": [
+      "กีฬา",
+      "บาสเกตบอล",
+      "ความฝัน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/148/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/148/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/slam-dunk"
+  },
+  {
+    "id": 76,
+    "name": "The Promised Neverland",
+    "nameTH": "พันธสัญญาเนเวอร์แลนด์",
+    "genre": [
+      "สืบสวน",
+      "ระทึกขวัญ",
+      "ดาร์ก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41312/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/41312/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/the-promised-neverland"
+  },
+  {
+    "id": 77,
+    "name": "Assassination Classroom",
+    "nameTH": "ห้องเรียนลอบสังหาร",
+    "genre": [
+      "คอมเมดี้",
+      "แอคชั่น",
+      "มิตรภาพ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8640/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/8640/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/assassination-classroom"
+  },
+  {
+    "id": 78,
+    "name": "Blue Period",
+    "nameTH": "บลูพีเรียด",
+    "genre": [
+      "ศิลปะ",
+      "ดราม่า",
+      "แรงบันดาลใจ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/43888/poster_image/large-b41e0d1b3a736bad94ecad04662ac538.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/43888/poster_image/medium-675ca4f5a6dde4f263a5dfcb78702b79.jpeg",
+    "anifumeUrl": "https://anifume.com/anime/blue-period"
+  },
+  {
+    "id": 79,
+    "name": "Samurai Champloo",
+    "nameTH": "ซามูไรแชมพลู",
+    "genre": [
+      "ซามูไร",
+      "ฮิปฮอป",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/181/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/181/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/samurai-champloo"
+  },
+  {
+    "id": 80,
+    "name": "Trigun Stampede",
+    "nameTH": "ไตรกัน สแตมพีด",
+    "genre": [
+      "ไซไฟ",
+      "แอคชั่น",
+      "กันสลิงเกอร์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46183/poster_image/large-18f01df516283259a59ae88e549918de.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/46183/poster_image/medium-5f704e2d6d86c0666d81e140d2c9f6a0.jpeg",
+    "anifumeUrl": "https://anifume.com/anime/trigun-stampede"
+  },
+  {
+    "id": 81,
+    "name": "Fire Force",
+    "nameTH": "หน่วยผจญคนไฟลุก",
+    "genre": [
+      "แอคชั่น",
+      "โชเน็น",
+      "ไฟ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42068/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/42068/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/fire-force"
+  },
+  {
+    "id": 82,
+    "name": "Akame ga Kill!",
+    "nameTH": "อาคาเมะ สวยประหาร",
+    "genre": [
+      "แอคชั่น",
+      "ดาร์ก",
+      "นักฆ่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8270/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/8270/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/akame-ga-kill"
+  },
+  {
+    "id": 83,
+    "name": "Soul Eater",
+    "nameTH": "โซลอีทเตอร์ ยมทูตแสบสายพันธุ์ซ่า",
+    "genre": [
+      "แอคชั่น",
+      "แฟนตาซี",
+      "ยมทูต"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3128/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/3128/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/soul-eater"
+  },
+  {
+    "id": 84,
+    "name": "Summer Time Rendering",
+    "nameTH": "ปริศนาบ้านเก่า เงามรณะ",
+    "genre": [
+      "ระทึกขวัญ",
+      "ย้อนเวลา",
+      "เกาะ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/44032/poster_image/large-5b1626fbfbc64e8c4a4a2a2874be2afd.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/44032/poster_image/medium-4a5e35896e7e1b020f8b7bf73a8d8667.jpeg",
+    "anifumeUrl": "https://anifume.com/anime/summer-time-rendering"
+  },
+  {
+    "id": 85,
+    "name": "Lycoris Recoil",
+    "nameTH": "ไลโคริส รีคอยล์",
+    "genre": [
+      "แอคชั่น",
+      "สืบสวน",
+      "สาวน้อย"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/45705/poster_image/large-cc78d70c11671d2e76ce9f4cf6fa7e66.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/45705/poster_image/medium-e881fbee100fa4c129de9d982f1cf8ea.jpeg",
+    "anifumeUrl": "https://anifume.com/anime/lycoris-recoil"
+  },
+  {
+    "id": 86,
+    "name": "That Time I Got Reincarnated as a Slime",
+    "nameTH": "เกิดใหม่ทั้งทีก็เป็นสไลม์ไปซะแล้ว",
+    "genre": [
+      "ต่างโลก",
+      "แฟนตาซี",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41024/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/41024/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/tensura"
+  },
+  {
+    "id": 87,
+    "name": "Black Butler",
+    "nameTH": "คนลึกไขปริศนาลับ",
+    "genre": [
+      "ดาร์กแฟนตาซี",
+      "ปีศาจ",
+      "สืบสวน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3840/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/3840/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/black-butler"
+  },
+  {
+    "id": 88,
+    "name": "Angel Beats!",
+    "nameTH": "แองเจิลบีทส์! แดนปาฏิหาริย์",
+    "genre": [
+      "ดราม่า",
+      "น้ำตาแตก",
+      "โรงเรียน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/4604/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/4604/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/angel-beats"
+  },
+  {
+    "id": 89,
+    "name": "Princess Mononoke",
+    "nameTH": "เจ้าหญิงจิตวิญญาณ",
+    "genre": [
+      "แฟนตาซี",
+      "ผจญภัย",
+      "จิบลิ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/142/poster_image/large-bf3297058b86c1ef19cefb5b9c38c99e.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/142/poster_image/medium-9b2569d9191a65fd9d2db126320a47af.jpeg",
+    "anifumeUrl": "https://anifume.com/anime/princess-mononoke"
+  },
+  {
+    "id": 90,
+    "name": "Ouran High School Host Club",
+    "nameTH": "โอรัน โฮสต์คลับ",
+    "genre": [
+      "โรแมนติก",
+      "คอมเมดี้",
+      "ฮาเร็ม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/755/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/755/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/ouran-host-club"
+  },
+  {
+    "id": 91,
+    "name": "Yowamushi Pedal",
+    "nameTH": "สิงห์นักปั่น",
+    "genre": [
+      "กีฬา",
+      "จักรยาน",
+      "พลังใจ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7700/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7700/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/yowamushi-pedal"
+  },
+  {
+    "id": 92,
+    "name": "Jujutsu Kaisen 0",
+    "nameTH": "มหาเวทย์ผนึกมาร 0",
+    "genre": [
+      "แอคชั่น",
+      "โชเน็น",
+      "ความรักต้องสาป"
+    ],
+    "coverUrl": "https://anifume.com/images/19/Jujutsu-Kaisen-3.jpg",
+    "coverFallback": "https://anifume.com/images/19/Jujutsu-Kaisen-3.jpg",
+    "anifumeUrl": "https://anifume.com/anime/jujutsu-kaisen-0"
+  },
+  {
+    "id": 93,
+    "name": "Blue Lock: Episode Nagi",
+    "nameTH": "ขังดวลแข้ง เอพิโซด นางิ",
+    "genre": [
+      "กีฬา",
+      "ฟุตบอล",
+      "อัจฉริยะ"
+    ],
+    "coverUrl": "https://anifume.com/images/45/Blue-Lock.jpg",
+    "coverFallback": "https://anifume.com/images/45/Blue-Lock.jpg",
+    "anifumeUrl": "https://anifume.com/anime/blue-lock-nagi"
+  },
+  {
+    "id": 94,
+    "name": "Shakugan no Shana",
+    "nameTH": "ชานะ นักรบเนตรอัคคี",
+    "genre": [
+      "แอคชั่น",
+      "โรแมนติก",
+      "เปลวเพลิง"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/322/poster_image/large-8b66ba9dc26ab1a72f17cd36d8265c66.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/322/poster_image/medium-2da41d49a879995c05597681ffe89b92.jpeg",
+    "anifumeUrl": "https://anifume.com/anime/shakugan-no-shana"
+  },
+  {
+    "id": 95,
+    "name": "Charlotte",
+    "nameTH": "ชาร์ลอตต์ พลังวิเศษ",
+    "genre": [
+      "ดราม่า",
+      "พลังพิเศษ",
+      "น้ำตา"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/10103/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/10103/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/charlotte"
+  },
+  {
+    "id": 96,
+    "name": "Guilty Crown",
+    "nameTH": "ปฏิวัติหัตถ์ราชันย์",
+    "genre": [
+      "ไซไฟ",
+      "แอคชั่น",
+      "ดนตรี"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6349/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/6349/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/guilty-crown"
+  },
+  {
+    "id": 97,
+    "name": "No Game No Life: Zero",
+    "nameTH": "โนเกม โนไลฟ์ ซีโร่",
+    "genre": [
+      "แฟนตาซี",
+      "สงคราม",
+      "ซึ้งกินใจ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/12325/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/12325/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/no-game-no-life-zero"
+  },
+  {
+    "id": 98,
+    "name": "Kimi no Suizou wo Tabetai",
+    "nameTH": "เพราะหัวใจใกล้เธอ",
+    "genre": [
+      "ดราม่า",
+      "โรแมนติก",
+      "น้ำตา"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13723/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/13723/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/i-want-to-eat-your-pancreas"
+  },
+  {
+    "id": 99,
+    "name": "Maquia: When the Promised Flower Blooms",
+    "nameTH": "ซาโยอาสะ สัญญาของเราในวันนั้น",
+    "genre": [
+      "แฟนตาซี",
+      "แม่ลูก",
+      "ซึ้ง"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13612/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/13612/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/maquia"
+  },
+  {
+    "id": 100,
+    "name": "Violet Evergarden: The Movie",
+    "nameTH": "ไวโอเลต เอเวอร์การ์เดน เดอะมูฟวี่",
+    "genre": [
+      "ดราม่า",
+      "จดหมาย",
+      "รักแท้"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41450/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/41450/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/violet-evergarden-movie"
+  },
+  {
+    "id": 101,
+    "name": "Fate/Zero",
+    "nameTH": "เฟท/ซีโร่",
+    "genre": [
+      "ดาร์กแฟนตาซี",
+      "แอคชั่น",
+      "สงครามจอกศักดิ์สิทธิ์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/6028/poster_image/large-e9b1ea8a2aee8fd902446d0c273f9eb4.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/6028/poster_image/medium-edd1c8af6e5c64750fcbc9f58389ed0c.jpeg",
+    "anifumeUrl": "https://anifume.com/anime/fate-zero"
+  },
+  {
+    "id": 102,
+    "name": "Code Geass: Lelouch of the Rebellion",
+    "nameTH": "โค้ด กีอัส การปฏิวัติของลูลูช",
+    "genre": [
+      "หุ่นยนต์",
+      "สืบสวน",
+      "การเมือง"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1415/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/1415/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/code-geass-lelouch-of-the-rebellion"
+  },
+  {
+    "id": 103,
+    "name": "Cowboy Bebop",
+    "nameTH": "คาวบอย บีบ๊อป",
+    "genre": [
+      "ไซไฟ",
+      "แจ๊ส",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/1/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/cowboy-bebop"
+  },
+  {
+    "id": 104,
+    "name": "Monster",
+    "nameTH": "คนปีศาจ มอนสเตอร์",
+    "genre": [
+      "จิตวิทยา",
+      "สืบสวน",
+      "ระทึกขวัญ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/10/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/10/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/monster"
+  },
+  {
+    "id": 105,
+    "name": "Hellsing Ultimate",
+    "nameTH": "เฮลซิ่ง อัลติเมท",
+    "genre": [
+      "แวมไพร์",
+      "แอคชั่น",
+      "โกธิค"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/695/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/695/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/hellsing-ultimate"
+  },
+  {
+    "id": 106,
+    "name": "Psycho-Pass",
+    "nameTH": "ไซโค-พาส ถอดรหัสล่า",
+    "genre": [
+      "ไซไฟ",
+      "สืบสวน",
+      "ดิสโทเปีย"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7000/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7000/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/psycho-pass"
+  },
+  {
+    "id": 107,
+    "name": "Kill la Kill",
+    "nameTH": "คิล ลา คิล",
+    "genre": [
+      "แอคชั่น",
+      "คอมเมดี้",
+      "หลุดโลก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7712/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7712/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/kill-la-kill"
+  },
+  {
+    "id": 108,
+    "name": "Tengen Toppa Gurren Lagann",
+    "nameTH": "กุเรนลากันน์ อภิมหาทะลวงสวรรค์",
+    "genre": [
+      "หุ่นยนต์",
+      "ไฮป์",
+      "สู้ชีวิต"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1801/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/1801/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/tengen-toppa-gurren-lagann"
+  },
+  {
+    "id": 109,
+    "name": "Fate/Apocrypha",
+    "nameTH": "เฟท/อโพคริฟา",
+    "genre": [
+      "แฟนตาซี",
+      "สงคราม",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13066/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/13066/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/fate-apocrypha"
+  },
+  {
+    "id": 110,
+    "name": "Tokyo Ravens",
+    "nameTH": "โตเกียว เรเวนส์",
+    "genre": [
+      "องเมียวจิ",
+      "แอคชั่น",
+      "เวทมนตร์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7359/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7359/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/tokyo-ravens"
+  },
+  {
+    "id": 111,
+    "name": "The Misfit of Demon King Academy",
+    "nameTH": "ใครว่าข้าไม่เหมาะเป็นจอมมาร",
+    "genre": [
+      "ต่างโลก",
+      "จอมมาร",
+      "พลังเทพ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/43005/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/43005/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/the-misfit-of-demon-king-academy"
+  },
+  {
+    "id": 112,
+    "name": "Overlord",
+    "nameTH": "โอเวอร์ลอร์ด จอมมารพิชิตโลก",
+    "genre": [
+      "ต่างโลก",
+      "ดาร์กแฟนตาซี",
+      "วางแผน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/9965/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/9965/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/overlord"
+  },
+  {
+    "id": 113,
+    "name": "The Rising of the Shield Hero",
+    "nameTH": "ผู้กล้าโล่ผงาด",
+    "genre": [
+      "ต่างโลก",
+      "แฟนตาซี",
+      "แก้แค้น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13593/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/13593/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/the-rising-of-the-shield-hero"
+  },
+  {
+    "id": 114,
+    "name": "Darwin's Game",
+    "nameTH": "ดาร์วินส์เกม เกมนรก",
+    "genre": [
+      "เซอร์ไววัล",
+      "แอคชั่น",
+      "พลังจิต"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42260/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/42260/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/darwin-s-game"
+  },
+  {
+    "id": 115,
+    "name": "Tomodachi Game",
+    "nameTH": "เกมมิตรภาพ",
+    "genre": [
+      "จิตวิทยา",
+      "หักมุม",
+      "มิตรภาพ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/45401/poster_image/large-0850c0cfa153c42d890ac90b014b78b6.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/45401/poster_image/medium-1024a5e6edb5ef307297eadcfc464a0d.jpeg",
+    "anifumeUrl": "https://anifume.com/anime/tomodachi-game"
+  },
+  {
+    "id": 116,
+    "name": "Dororo (2019)",
+    "nameTH": "ดาบล่าพญามาร โดโรโระ 2019",
+    "genre": [
+      "ซามูไร",
+      "ดาร์ก",
+      "ปีศาจ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41083/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/41083/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/dororo-2019-"
+  },
+  {
+    "id": 117,
+    "name": "Wistoria: Wand and Sword",
+    "nameTH": "วิสตอเรีย ดาบและเวทมนตร์",
+    "genre": [
+      "เวทมนตร์",
+      "ดาบ",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48534/poster_image/large-703abd524d4c595bc05eaf5f3c3e1454.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/48534/poster_image/medium-c38c15266ae228974e8c2a00d776ea92.jpeg",
+    "anifumeUrl": "https://anifume.com/anime/wistoria-wand-and-sword"
+  },
+  {
+    "id": 118,
+    "name": "Solo Leveling: Season 2",
+    "nameTH": "โซโลเลเวลลิง ซีซั่น 2",
+    "genre": [
+      "ฮันเตอร์",
+      "ดันเจี้ยน",
+      "เงา"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48671/poster_image/large-6156a7475d03dbb788ab1a9ce6c7f962.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/48671/poster_image/medium-31e96bc0e48dfb71f0bb6bc5cf84164f.jpeg",
+    "anifumeUrl": "https://anifume.com/anime/solo-leveling-season-2"
+  },
+  {
+    "id": 119,
+    "name": "Kaiju No. 8 Season 2",
+    "nameTH": "ไคจูหมายเลข 8 ซีซั่น 2",
+    "genre": [
+      "สัตว์ประหลาด",
+      "หน่วยป้องกัน",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48994/poster_image/large-d66ad0518e3dcd862ffc4b734a85c432.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/48994/poster_image/medium-f9a6d85e03c0d0c0ce99f9fc04962b6c.jpeg",
+    "anifumeUrl": "https://anifume.com/anime/kaiju-no-8-season-2"
+  },
+  {
+    "id": 120,
+    "name": "Sousou no Frieren Season 2",
+    "nameTH": "คำอธิษฐานในวันที่จากลา ฟรีเรน 2",
+    "genre": [
+      "การเดินทาง",
+      "เวทมนตร์",
+      "อบอุ่น"
+    ],
+    "coverUrl": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
+    "coverFallback": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
+    "anifumeUrl": "https://anifume.com/anime/sousou-no-frieren-season-2"
+  },
+  {
+    "id": 121,
+    "name": "Dandadan",
+    "nameTH": "ดันดาดัน",
+    "genre": [
+      "แอคชั่น",
+      "เหนือธรรมชาติ",
+      "คอมเมดี้",
+      "โรแมนติก"
+    ],
+    "coverUrl": "https://anifume.com/images/08/Dandadan-2.jpg",
+    "coverFallback": "https://anifume.com/images/08/Dandadan-2.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Dandadan",
+    "mood": "hype"
+  },
+  {
+    "id": 122,
+    "name": "Kaiju No. 8",
+    "nameTH": "ไคจูหมายเลข 8",
+    "genre": [
+      "แอคชั่น",
+      "ไซไฟ",
+      "ทหาร",
+      "พลังพิเศษ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46300/poster_image/medium-c1c025bbee42bed048e628b1eae278c0.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52588.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kaiju%20No.%208",
+    "mood": "hype"
+  },
+  {
+    "id": 123,
+    "name": "Solo Leveling",
+    "nameTH": "ชะตากรรมนักล่าเงา",
+    "genre": [
+      "แอคชั่น",
+      "แฟนตาซี",
+      "ผจญภัย"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46140/poster_image/medium-09c31317676fc3251c6543b5936780c1.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52299.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Solo%20Leveling",
+    "mood": "hype"
+  },
+  {
+    "id": 124,
+    "name": "Frieren: Beyond Journey's End",
+    "nameTH": "คำอธิษฐานในวันที่จากลา",
+    "genre": [
+      "แฟนตาซี",
+      "ดราม่า",
+      "ซึ้งกินใจ",
+      "ผจญภัย"
+    ],
+    "coverUrl": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
+    "coverFallback": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Frieren",
+    "mood": "sad"
+  },
+  {
+    "id": 125,
+    "name": "Chainsaw Man",
+    "nameTH": "มนุษย์เลื่อยยนต์",
+    "genre": [
+      "ดาร์กแฟนตาซี",
+      "แอคชั่น",
+      "เหนือธรรมชาติ"
+    ],
+    "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "coverFallback": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Chainsaw%20Man",
+    "mood": "hype"
+  },
+  {
+    "id": 126,
+    "name": "Oshi no Ko",
+    "nameTH": "เกิดใหม่เป็นลูกโอชิ",
+    "genre": [
+      "ดราม่า",
+      "ไอดอล",
+      "ลึกลับ",
+      "วงการบันเทิง"
+    ],
+    "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
+    "coverFallback": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Oshi%20no%20Ko",
+    "mood": "love"
+  },
+  {
+    "id": 127,
+    "name": "Bocchi the Rock!",
+    "nameTH": "บ็อจจิเดอะร็อก!",
+    "genre": [
+      "ดนตรี",
+      "คอมเมดี้",
+      "ชีวิตประจำวัน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/44196/poster_image/medium-6fa968eeb7e1ce8cfb0429a1b18cecae.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/47917.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Bocchi%20the%20Rock",
+    "mood": "chill"
+  },
+  {
+    "id": 128,
+    "name": "Wind Breaker",
+    "nameTH": "วินด์เบรกเกอร์",
+    "genre": [
+      "แอคชั่น",
+      "นักเลง",
+      "มิตรภาพ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/47372/poster_image/medium-a2ecdc145e69e0618032ea8e8ef6e693.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/54900.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Wind%20Breaker",
+    "mood": "hype"
+  },
+  {
+    "id": 129,
+    "name": "Jujutsu Kaisen Season 2",
+    "nameTH": "มหาเวทย์ผนึกมาร ซีซั่น 2",
+    "genre": [
+      "แอคชั่น",
+      "ดาร์กแฟนตาซี",
+      "เหนือธรรมชาติ"
+    ],
+    "coverUrl": "https://anifume.com/images/19/Jujutsu-Kaisen-3.jpg",
+    "coverFallback": "https://anifume.com/images/19/Jujutsu-Kaisen-3.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Jujutsu%20Kaisen",
+    "mood": "hype"
+  },
+  {
+    "id": 130,
+    "name": "Delicious in Dungeon",
+    "nameTH": "สูตรลับตำรับดันเจี้ยน",
+    "genre": [
+      "คอมเมดี้",
+      "แฟนตาซี",
+      "ทำอาหาร",
+      "ผจญภัย"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46299/poster_image/medium-3e61ff8c6d376eb1c28c8fc029a59cf6.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52701.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Dungeon%20Meshi",
+    "mood": "chill"
+  },
+  {
+    "id": 131,
+    "name": "Cyberpunk: Edgerunners",
+    "nameTH": "ไซเบอร์พังค์: เอ็ดจ์รันเนอร์ส",
+    "genre": [
+      "ไซไฟ",
+      "แอคชั่น",
+      "ดิสโทเปีย"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/44917/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/42310.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Cyberpunk",
+    "mood": "sad"
+  },
+  {
+    "id": 132,
+    "name": "Lycoris Recoil",
+    "nameTH": "ไลโคริส รีคอยล์",
+    "genre": [
+      "แอคชั่น",
+      "คอมเมดี้",
+      "ชีวิตประจำวัน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/45579/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/50709.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Lycoris",
+    "mood": "hype"
+  },
+  {
+    "id": 133,
+    "name": "Mashle: Magic and Muscles",
+    "nameTH": "ศึกโลกเวทมนตร์คนพลังกล้าม",
+    "genre": [
+      "คอมเมดี้",
+      "แอคชั่น",
+      "แฟนตาซี"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52211.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Mashle",
+    "mood": "hype"
+  },
+  {
+    "id": 134,
+    "name": "Hell's Paradise",
+    "nameTH": "สุขาวดีอเวจี",
+    "genre": [
+      "แอคชั่น",
+      "ดาร์กแฟนตาซี",
+      "นินจา"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/44358/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/46569.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Jigokuraku",
+    "mood": "hype"
+  },
+  {
+    "id": 135,
+    "name": "Blue Lock",
+    "nameTH": "ขังดวลแข้ง",
+    "genre": [
+      "กีฬา",
+      "ฟุตบอล",
+      "โชเน็น",
+      "ระทึกขวัญ"
+    ],
+    "coverUrl": "https://anifume.com/images/45/Blue-Lock.jpg",
+    "coverFallback": "https://anifume.com/images/45/Blue-Lock.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Blue%20Lock",
+    "mood": "hype"
+  },
+  {
+    "id": 136,
+    "name": "My Hero Academia",
+    "nameTH": "มายฮีโร่ อคาเดเมีย",
+    "genre": [
+      "แอคชั่น",
+      "ฮีโร่",
+      "โชเน็น",
+      "พลังพิเศษ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/11469/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/31964.jpg",
+    "anifumeUrl": "https://anifume.com/?s=My%20Hero%20Academia",
+    "mood": "hype"
+  },
+  {
+    "id": 137,
+    "name": "Bleach: TYBW",
+    "nameTH": "บลีช สงครามเลือดพันปี",
+    "genre": [
+      "แอคชั่น",
+      "ยมทูต",
+      "โชเน็น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/43547/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/41467.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Bleach",
+    "mood": "hype"
+  },
+  {
+    "id": 138,
+    "name": "Black Clover",
+    "nameTH": "แบล็คโคลเวอร์",
+    "genre": [
+      "แอคชั่น",
+      "เวทมนตร์",
+      "แฟนตาซี"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/12976/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/34572.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Black%20Clover",
+    "mood": "hype"
+  },
+  {
+    "id": 139,
+    "name": "Tokyo Revengers",
+    "nameTH": "โตเกียว รีเวนเจอร์ส",
+    "genre": [
+      "แอคชั่น",
+      "ย้อนเวลา",
+      "นักเลง"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/43477/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/42249.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Tokyo%20Revengers",
+    "mood": "hype"
+  },
+  {
+    "id": 140,
+    "name": "Hunter x Hunter",
+    "nameTH": "ฮันเตอร์ x ฮันเตอร์",
+    "genre": [
+      "ผจญภัย",
+      "แอคชั่น",
+      "เน็น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/6448/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/11061.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Hunter%20x%20Hunter",
+    "mood": "hype"
+  },
+  {
+    "id": 141,
+    "name": "Haikyu!!",
+    "nameTH": "ไฮคิว!! คู่ตบฟ้าประทาน",
+    "genre": [
+      "กีฬา",
+      "วอลเลย์บอล",
+      "มิตรภาพ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/8133/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/20583.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Haikyu",
+    "mood": "hype"
+  },
+  {
+    "id": 142,
+    "name": "Bungo Stray Dogs",
+    "nameTH": "คณะประพันธกรจรจัด",
+    "genre": [
+      "แอคชั่น",
+      "สืบสวน",
+      "พลังพิเศษ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/11260/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/31478.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Bungo%20Stray%20Dogs",
+    "mood": "hype"
+  },
+  {
+    "id": 143,
+    "name": "Mob Psycho 100",
+    "nameTH": "ม็อบไซโค 100",
+    "genre": [
+      "แอคชั่น",
+      "พลังจิต",
+      "คอมเมดี้"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/11757/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/32182.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Mob%20Psycho",
+    "mood": "hype"
+  },
+  {
+    "id": 144,
+    "name": "Vinland Saga",
+    "nameTH": "มหากาพย์ไวกิ้ง",
+    "genre": [
+      "ประวัติศาสตร์",
+      "แอคชั่น",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/41277/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/37521.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Vinland%20Saga",
+    "mood": "sad"
+  },
+  {
+    "id": 145,
+    "name": "Overlord",
+    "nameTH": "โอเวอร์ลอร์ด",
+    "genre": [
+      "ต่างโลก",
+      "แฟนตาซี",
+      "ดาร์ก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/9991/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/29803.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Overlord",
+    "mood": "hype"
+  },
+  {
+    "id": 146,
+    "name": "Slime Isekai",
+    "nameTH": "เกิดใหม่ทั้งทีก็เป็นสไลม์ไปซะแล้ว",
+    "genre": [
+      "ต่างโลก",
+      "แฟนตาซี",
+      "สร้างเมือง"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/41144/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/37430.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Tensura",
+    "mood": "chill"
+  },
+  {
+    "id": 147,
+    "name": "Mushoku Tensei",
+    "nameTH": "เกิดชาตินี้พี่ต้องเทพ",
+    "genre": [
+      "ต่างโลก",
+      "แฟนตาซี",
+      "ดราม่า",
+      "ผจญภัย"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/42490/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/39535.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Mushoku%20Tensei",
+    "mood": "sad"
+  },
+  {
+    "id": 148,
+    "name": "Re:Zero",
+    "nameTH": "รีเซทชีวิต ท่องโลกต่างมิติ",
+    "genre": [
+      "ต่างโลก",
+      "จิตวิทยา",
+      "ดาร์กแฟนตาซี"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/11370/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/31240.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Re%20Zero",
+    "mood": "sad"
+  },
+  {
+    "id": 149,
+    "name": "Sword Art Online",
+    "nameTH": "ซอร์ดอาร์ตออนไลน์",
+    "genre": [
+      "เกม",
+      "แอคชั่น",
+      "ไซไฟ",
+      "โรแมนติก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/6686/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/11757.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Sword%20Art%20Online",
+    "mood": "hype"
+  },
+  {
+    "id": 150,
+    "name": "No Game No Life",
+    "nameTH": "โนเกม โนไลฟ์",
+    "genre": [
+      "เกม",
+      "แฟนตาซี",
+      "ชิงไหวชิงพริบ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/7957/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/19815.jpg",
+    "anifumeUrl": "https://anifume.com/?s=No%20Game%20No%20Life",
+    "mood": "hype"
+  },
+  {
+    "id": 151,
+    "name": "The Rising of the Shield Hero",
+    "nameTH": "ผู้กล้าโล่ผงาด",
+    "genre": [
+      "ต่างโลก",
+      "แอคชั่น",
+      "แก้แค้น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/13569/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/35790.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Tate%20no%20Yuusha",
+    "mood": "hype"
+  },
+  {
+    "id": 152,
+    "name": "The Eminence in Shadow",
+    "nameTH": "ชีวิตไม่ต้องเด่น ขอแค่เป็นเทพในเงา",
+    "genre": [
+      "แอคชั่น",
+      "คอมเมดี้",
+      "เบียวสุดขีด"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/44265/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/48316.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kage%20no%20Jitsuryokusha",
+    "mood": "hype"
+  },
+  {
+    "id": 153,
+    "name": "Horimiya",
+    "nameTH": "โฮริมิยะ สาวมั่นกับนายมืดมน",
+    "genre": [
+      "โรแมนติก",
+      "โรงเรียน",
+      "ฟีลกู๊ด"
+    ],
+    "coverUrl": "https://anifume.com/images/48/Horimiya-Piece.jpg",
+    "coverFallback": "https://anifume.com/images/48/Horimiya-Piece.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Horimiya",
+    "mood": "love"
+  },
+  {
+    "id": 154,
+    "name": "The Dangers in My Heart",
+    "nameTH": "เธอผู้อันตรายต่อใจผม",
+    "genre": [
+      "โรแมนติก",
+      "คอมเมดี้",
+      "ฟินจิกหมอน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46369/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Boku%20no%20Kokoro",
+    "mood": "love"
+  },
+  {
+    "id": 155,
+    "name": "My Dress-Up Darling",
+    "nameTH": "หนุ่มเย็บผ้ากับสาวคอสเพลย์",
+    "genre": [
+      "โรแมนติก",
+      "คอสเพลย์",
+      "คอมเมดี้"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/44426/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/48736.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Sono%20Bisque%20Doll",
+    "mood": "love"
+  },
+  {
+    "id": 156,
+    "name": "Rent-a-Girlfriend",
+    "nameTH": "สะดุดรักยัยแฟนเช่า",
+    "genre": [
+      "โรแมนติก",
+      "คอมเมดี้",
+      "ฮาเร็ม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/42886/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/40839.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kanojo%20Okarishimasu",
+    "mood": "love"
+  },
+  {
+    "id": 157,
+    "name": "Toradora!",
+    "nameTH": "โทราโดระ ยัยตัวร้ายกับนายหน้าโหด",
+    "genre": [
+      "โรแมนติก",
+      "ดราม่า",
+      "โรงเรียน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/3639/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/4224.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Toradora",
+    "mood": "love"
+  },
+  {
+    "id": 158,
+    "name": "Clannad: After Story",
+    "nameTH": "แคลนนาด อาฟเตอร์สตอรี่",
+    "genre": [
+      "ดราม่า",
+      "ครอบครัว",
+      "น้ำตาแตก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/3468/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/4181.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Clannad",
+    "mood": "sad"
+  },
+  {
+    "id": 159,
+    "name": "Plastic Memories",
+    "nameTH": "พลาสติก เมโมรี่",
+    "genre": [
+      "ดราม่า",
+      "ไซไฟ",
+      "โรแมนติก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/9963/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/27775.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Plastic%20Memories",
+    "mood": "sad"
+  },
+  {
+    "id": 160,
+    "name": "Angel Beats!",
+    "nameTH": "แองเจิลบีทส์! แผนพิชิตนางฟ้า",
+    "genre": [
+      "ดราม่า",
+      "โรงเรียน",
+      "ชีวิตหลังความตาย"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/4802/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/6547.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Angel%20Beats",
+    "mood": "sad"
+  },
+  {
+    "id": 161,
+    "name": "Erased",
+    "nameTH": "รีไววัล เมืองที่ไม่มีฉัน",
+    "genre": [
+      "ระทึกขวัญ",
+      "ย้อนเวลา",
+      "สืบสวน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/11100/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/31043.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Boku%20dake%20ga%20Inai%20Machi",
+    "mood": "sad"
+  },
+  {
+    "id": 162,
+    "name": "Steins;Gate",
+    "nameTH": "สไตน์ส;เกท",
+    "genre": [
+      "ไซไฟ",
+      "ข้ามเวลา",
+      "ระทึกขวัญ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/5993/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/9253.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Steins%20Gate",
+    "mood": "hype"
+  },
+  {
+    "id": 163,
+    "name": "Death Note",
+    "nameTH": "เดธโน้ต",
+    "genre": [
+      "จิตวิทยา",
+      "ชิงไหวชิงพริบ",
+      "เหนือธรรมชาติ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/1376/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/1535.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Death%20Note",
+    "mood": "hype"
+  },
+  {
+    "id": 164,
+    "name": "Code Geass",
+    "nameTH": "โค้ด กีอัส การปฏิวัติของลูลูช",
+    "genre": [
+      "หุ่นยนต์",
+      "การเมือง",
+      "สงคราม",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/1410/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/1575.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Code%20Geass",
+    "mood": "hype"
+  },
+  {
+    "id": 165,
+    "name": "Neon Genesis Evangelion",
+    "nameTH": "อีวานเกเลียน",
+    "genre": [
+      "จิตวิทยา",
+      "ไซไฟ",
+      "หุ่นยนต์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/26/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/30.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Evangelion",
+    "mood": "sad"
+  },
+  {
+    "id": 166,
+    "name": "Fullmetal Alchemist: Brotherhood",
+    "nameTH": "แขนกลคนแปรธาตุ",
+    "genre": [
+      "แฟนตาซี",
+      "แอคชั่น",
+      "ผจญภัย"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/4388/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/5114.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Fullmetal%20Alchemist",
+    "mood": "hype"
+  },
+  {
+    "id": 167,
+    "name": "Cowboy Bebop",
+    "nameTH": "คาวบอย บีบ็อป",
+    "genre": [
+      "อวกาศ",
+      "แอคชั่น",
+      "แจ๊ส"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/1/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/1.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Cowboy%20Bebop",
+    "mood": "chill"
+  },
+  {
+    "id": 168,
+    "name": "Gurren Lagann",
+    "nameTH": "กุเร็นลากันน์ อภิมหาหุ่นทะลุฟ้า",
+    "genre": [
+      "แอคชั่น",
+      "หุ่นยนต์",
+      "เลือดร้อน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/1816/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/2001.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Gurren%20Lagann",
+    "mood": "hype"
+  },
+  {
+    "id": 169,
+    "name": "Kill la Kill",
+    "nameTH": "คิลลาคิล",
+    "genre": [
+      "แอคชั่น",
+      "คอมเมดี้",
+      "บ้าพลัง"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/7625/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/18679.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kill%20la%20Kill",
+    "mood": "hype"
+  },
+  {
+    "id": 170,
+    "name": "JoJo's Bizarre Adventure",
+    "nameTH": "โจโจ้ ล่าข้ามศตวรรษ",
+    "genre": [
+      "แอคชั่น",
+      "สแตนด์",
+      "ผจญภัย"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/7074/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/14719.jpg",
+    "anifumeUrl": "https://anifume.com/?s=JoJo",
+    "mood": "hype"
+  },
+  {
+    "id": 171,
+    "name": "One Punch Man",
+    "nameTH": "วันพั้นช์แมน",
+    "genre": [
+      "แอคชั่น",
+      "คอมเมดี้",
+      "ฮีโร่"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/10740/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/30276.jpg",
+    "anifumeUrl": "https://anifume.com/?s=One%20Punch%20Man",
+    "mood": "hype"
+  },
+  {
+    "id": 172,
+    "name": "Dr. STONE",
+    "nameTH": "ดร.สโตน เจ้าแห่งวิทยาศาสตร์กู้โลก",
+    "genre": [
+      "วิทยาศาสตร์",
+      "ผจญภัย",
+      "โชเน็น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/41984/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/38691.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Dr%20Stone",
+    "mood": "hype"
+  },
+  {
+    "id": 173,
+    "name": "Fire Force",
+    "nameTH": "หน่วยผจญคนไฟลุก",
+    "genre": [
+      "แอคชั่น",
+      "ไฟ",
+      "เหนือธรรมชาติ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/41979/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/38671.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Enen%20no%20Shouboutai",
+    "mood": "hype"
+  },
+  {
+    "id": 174,
+    "name": "Dororo",
+    "nameTH": "ดาบล่าพญามาร โดโรโระ",
+    "genre": [
+      "ซามูไร",
+      "ดาร์กแฟนตาซี",
+      "ปีศาจ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/41300/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/37520.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Dororo",
+    "mood": "sad"
+  },
+  {
+    "id": 175,
+    "name": "Golden Kamuy",
+    "nameTH": "โกลเดนคามุย",
+    "genre": [
+      "แอคชั่น",
+      "ล่าสมบัติ",
+      "ไอนู"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/13768/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/36028.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Golden%20Kamuy",
+    "mood": "hype"
+  },
+  {
+    "id": 176,
+    "name": "Made in Abyss",
+    "nameTH": "ผจญภัยแดนนรก",
+    "genre": [
+      "ผจญภัย",
+      "ดาร์กแฟนตาซี",
+      "ความลี้ลับ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/13017/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/34599.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Made%20in%20Abyss",
+    "mood": "sad"
+  },
+  {
+    "id": 177,
+    "name": "The Promised Neverland",
+    "nameTH": "พันธสัญญาเนเวอร์แลนด์",
+    "genre": [
+      "ระทึกขวัญ",
+      "หนีตาย",
+      "ชิงไหวชิงพริบ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/41334/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/37779.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Yakusoku%20no%20Neverland",
+    "mood": "sad"
+  },
+  {
+    "id": 178,
+    "name": "Noragami",
+    "nameTH": "โนรากามิ เทวดาขาจร",
+    "genre": [
+      "แอคชั่น",
+      "เทพเจ้า",
+      "เหนือธรรมชาติ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/7983/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/20507.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Noragami",
+    "mood": "hype"
+  },
+  {
+    "id": 179,
+    "name": "Fate/stay night: UBW",
+    "nameTH": "เฟท/สเตย์ไนท์ อันลิมิเต็ด เบลดเวิร์คส์",
+    "genre": [
+      "แอคชั่น",
+      "เวทมนตร์",
+      "สงครามจอก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/8017/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/22297.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Fate%20stay%20night",
+    "mood": "hype"
+  },
+  {
+    "id": 180,
+    "name": "Fate/Zero",
+    "nameTH": "เฟท/ซีโร่",
+    "genre": [
+      "ดาร์ก",
+      "สงครามจอกศักดิ์สิทธิ์",
+      "โศกนาฏกรรม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/6045/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/10087.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Fate%20Zero",
+    "mood": "sad"
+  },
+  {
+    "id": 181,
+    "name": "Suzume",
+    "nameTH": "การผนึกประตูของซูซูเมะ",
+    "genre": [
+      "แฟนตาซี",
+      "ผจญภัย",
+      "แผ่นดินไหว"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/45532/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/50594.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Suzume",
+    "mood": "sad"
+  },
+  {
+    "id": 182,
+    "name": "Weathering With You",
+    "nameTH": "ฤดูฝัน ฉันมีเธอ",
+    "genre": [
+      "โรแมนติก",
+      "แฟนตาซี",
+      "ฝนตก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/42070/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/38826.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Tenki%20no%20Ko",
+    "mood": "love"
+  },
+  {
+    "id": 183,
+    "name": "5 Centimeters per Second",
+    "nameTH": "ยามซากุระร่วงโรย",
+    "genre": [
+      "โรแมนติก",
+      "ดราม่า",
+      "ความเหงา"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/1531/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/1689.jpg",
+    "anifumeUrl": "https://anifume.com/?s=5%20Centimeters",
+    "mood": "sad"
+  },
+  {
+    "id": 184,
+    "name": "A Silent Voice",
+    "nameTH": "รักไร้เสียง",
+    "genre": [
+      "ดราม่า",
+      "โรงเรียน",
+      "การไถ่บาป"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/9987/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/28851.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Koe%20no%20Katachi",
+    "mood": "sad"
+  },
+  {
+    "id": 185,
+    "name": "I Want to Eat Your Pancreas",
+    "nameTH": "ตับอ่อนเธอนั้น ขอฉันเถอะนะ",
+    "genre": [
+      "ดราม่า",
+      "ซึ้งกินใจ",
+      "โรแมนติก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/13767/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/36098.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kimi%20no%20Suizou",
+    "mood": "sad"
+  },
+  {
+    "id": 186,
+    "name": "Josee, the Tiger and the Fish",
+    "nameTH": "โจเซ่ กับเสือและหมู่ปลา",
+    "genre": [
+      "โรแมนติก",
+      "ดราม่า",
+      "ก้าวข้ามอุปสรรค"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/42680/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/40787.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Josee",
+    "mood": "love"
+  },
+  {
+    "id": 187,
+    "name": "Look Back",
+    "nameTH": "ลุค แบค",
+    "genre": [
+      "ดราม่า",
+      "มิตรภาพ",
+      "วาดมังงะ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48443/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/58125.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Look%20Back",
+    "mood": "sad"
+  },
+  {
+    "id": 188,
+    "name": "Suzumiya Haruhi",
+    "nameTH": "เรียกเธอว่าพระเจ้า สึซึมิยะ ฮารุฮิ",
+    "genre": [
+      "ไซไฟ",
+      "คอมเมดี้",
+      "ชีวิตในโรงเรียน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/789/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/849.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Suzumiya%20Haruhi",
+    "mood": "hype"
+  },
+  {
+    "id": 189,
+    "name": "K-On!",
+    "nameTH": "เค-อง! ก๊วนดนตรีแป๋วแหวว",
+    "genre": [
+      "ดนตรี",
+      "คอมเมดี้",
+      "มิตรภาพ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/4249/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/5680.jpg",
+    "anifumeUrl": "https://anifume.com/?s=K-On",
+    "mood": "chill"
+  },
+  {
+    "id": 190,
+    "name": "Hyouka",
+    "nameTH": "ปริศนาความทรงจำ",
+    "genre": [
+      "สืบสวน",
+      "โรงเรียน",
+      "เสี้ยวชีวิต"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/6738/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/12189.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Hyouka",
+    "mood": "chill"
+  },
+  {
+    "id": 191,
+    "name": "Oregairu",
+    "nameTH": "กะแล้วชีวิตรักวัยรุ่นของผมมันต้องไม่สดใส",
+    "genre": [
+      "จิตวิทยา",
+      "โรแมนติก",
+      "โรงเรียน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/7307/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/14813.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Oregairu",
+    "mood": "sad"
+  },
+  {
+    "id": 192,
+    "name": "Classroom of the Elite",
+    "nameTH": "ขอต้อนรับสู่ห้องเรียนนิยมยอดคน",
+    "genre": [
+      "จิตวิทยา",
+      "โรงเรียน",
+      "ดาร์ก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/13369/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/35507.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Classroom%20of%20the%20Elite",
+    "mood": "hype"
+  },
+  {
+    "id": 193,
+    "name": "Bunny Girl Senpai",
+    "nameTH": "เรื่องฝันปั่นป่วยของผมกับรุ่นพี่บันนี่เกิร์ล",
+    "genre": [
+      "เหนือธรรมชาติ",
+      "โรแมนติก",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/41285/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/37450.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Seishun%20Buta%20Yarou",
+    "mood": "love"
+  },
+  {
+    "id": 194,
+    "name": "Komi Can't Communicate",
+    "nameTH": "โคมิซัง สื่อสารไม่เก่งนะ",
+    "genre": [
+      "คอมเมดี้",
+      "โรแมนติก",
+      "โรงเรียน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/44368/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/48926.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Komi%20san",
+    "mood": "chill"
+  },
+  {
+    "id": 195,
+    "name": "Spy x Family",
+    "nameTH": "สปาย x แฟมิลี",
+    "genre": [
+      "คอมเมดี้",
+      "สายลับ",
+      "ครอบครัว"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/44980/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/50265.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Spy%20x%20Family",
+    "mood": "chill"
+  },
+  {
+    "id": 196,
+    "name": "Romantic Killer",
+    "nameTH": "โรแมนติก คิลเลอร์",
+    "genre": [
+      "คอมเมดี้",
+      "โรแมนติก",
+      "ล้อเลียน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46481/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52865.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Romantic%20Killer",
+    "mood": "chill"
+  },
+  {
+    "id": 197,
+    "name": "Wotakoi",
+    "nameTH": "ยากแท้จริงหนอรักของโอตาคุ",
+    "genre": [
+      "โรแมนติก",
+      "วัยทำงาน",
+      "คอมเมดี้"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/13670/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/35968.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Wotakoi",
+    "mood": "love"
+  },
+  {
+    "id": 198,
+    "name": "Nana",
+    "nameTH": "นานะ",
+    "genre": [
+      "ดนตรี",
+      "ดราม่า",
+      "โรแมนติก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/782/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/877.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Nana",
+    "mood": "sad"
+  },
+  {
+    "id": 199,
+    "name": "Gintama",
+    "nameTH": "กินทามะ",
+    "genre": [
+      "คอมเมดี้",
+      "แอคชั่น",
+      "ซามูไร",
+      "ล้อเลียน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/847/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/918.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Gintama",
+    "mood": "hype"
+  },
+  {
+    "id": 200,
+    "name": "Monster",
+    "nameTH": "คนปีศาจ",
+    "genre": [
+      "จิตวิทยา",
+      "สืบสวน",
+      "ระทึกขวัญ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/18/poster_image/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/19.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Monster",
+    "mood": "sad"
+  },
+  {
+    "id": 201,
+    "name": "Haimiya Senpai wa Kowakute Kawaii",
+    "nameTH": "รุ่นพี่ไฮมิยะ (ไฮมิยะคุง)",
+    "genre": [
+      "เลิฟคอมเมดี้",
+      "โรแมนติก",
+      "สคูลไลฟ์",
+      "สาวแกล"
+    ],
+    "coverUrl": "https://media.kitsu.app/manga/76925/poster_image/medium-feda3ccfff216f3dbd7fbbe9e5dc7785.jpeg",
+    "coverFallback": "https://shikimori.io/system/mangas/original/174987.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Haimiya",
+    "mood": "love"
+  },
+  {
+    "id": 202,
+    "name": "Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san",
+    "nameTH": "คุณอาเรียโต๊ะข้างๆ พูดภาษารัสเซียหวานใส่ซะหัวใจจะวาย (Roshidere)",
+    "genre": [
+      "โรแมนติก",
+      "คอมเมดี้",
+      "สคูลไลฟ์",
+      "น่ารัก"
+    ],
+    "coverUrl": "https://anifume.com/images/54/Tokidoki-Bosotto-Russia-go.jpg",
+    "coverFallback": "https://anifume.com/images/54/Tokidoki-Bosotto-Russia-go.jpg",
+    "anifumeUrl": "https://anifume.com/41068",
+    "mood": "love"
+  },
+  {
+    "id": 203,
+    "name": "Make Heroine ga Oosugiru!",
+    "nameTH": "สาวขี้แพ้เยอะเกินไปแล้ว! (Makeine)",
+    "genre": [
+      "คอมเมดี้",
+      "โรแมนติก",
+      "ชีวิตประจำวัน",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48312/poster_image/medium-5a3bba84ddb645a765b4714655abf044.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/57524.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Makeine",
+    "mood": "chill"
+  },
+  {
+    "id": 204,
+    "name": "Ao no Hako",
+    "nameTH": "กล่องรักวัยบลู (Blue Box)",
+    "genre": [
+      "กีฬา",
+      "โรแมนติก",
+      "แบดมินตัน",
+      "บาสเกตบอล"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/57134.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Ao+no+Hako",
+    "mood": "love"
+  },
+  {
+    "id": 205,
+    "name": "Kaoru Hana wa Rin to Saku",
+    "nameTH": "ดอกไม้ผลิบานด้วยรัก (The Fragrant Flower Blooms with Grace)",
+    "genre": [
+      "โรแมนติก",
+      "เยียวยาจิตใจ",
+      "สคูลไลฟ์",
+      "อบอุ่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/49205/poster_image/medium-26bbae139e3a0869dece52e864b93052.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/59845.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kaoru+Hana",
+    "mood": "love"
+  },
+  {
+    "id": 206,
+    "name": "SAKAMOTO DAYS",
+    "nameTH": "ซากาโมโตะเดย์ (Sakamoto Days)",
+    "genre": [
+      "แอคชั่นสุดมันส์",
+      "คอมเมดี้",
+      "นักฆ่า",
+      "ไฮป์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48915/poster_image/medium-83bb1f545c139c563ecacc57b97f6d40.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/58941.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Sakamoto+Days",
+    "mood": "hype"
+  },
+  {
+    "id": 207,
+    "name": "Tsue to Tsurugi no Wistoria",
+    "nameTH": "ตำนานดาบและคทาแห่งวิสตอเรีย (Wistoria: Wand and Sword)",
+    "genre": [
+      "แฟนตาซี",
+      "เวทมนตร์",
+      "แอคชั่นภาพสวย",
+      "มิตรภาพ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48534/poster_image/medium-c38c15266ae228974e8c2a00d776ea92.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/58059.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Wistoria",
+    "mood": "hype"
+  },
+  {
+    "id": 208,
+    "name": "Medalist",
+    "nameTH": "เมดัลลิสต์ นักสเกตหัวใจแกร่ง (Medalist)",
+    "genre": [
+      "กีฬา",
+      "ฟิกเกอร์สเกต",
+      "สร้างแรงบันดาลใจ",
+      "มิตรภาพ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/47454/poster_image/medium-647eca310356254a1840a496f41ea57c.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/55231.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Medalist",
+    "mood": "hype"
+  },
+  {
+    "id": 209,
+    "name": "Look Back",
+    "nameTH": "ลุคแบ็ค (Look Back - Tatsuki Fujimoto)",
+    "genre": [
+      "ดราม่าเข้มข้น",
+      "ศิลปะการวาดมังงะ",
+      "มิตรภาพ",
+      "ซึ้งกินใจ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48541/poster_image/medium-996392db10718d6b3177f11982f8b975.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/58125.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Look+Back",
+    "mood": "sad"
+  },
+  {
+    "id": 210,
+    "name": "Girls Band Cry",
+    "nameTH": "เกิร์ลส์แบนด์คราย (Girls Band Cry)",
+    "genre": [
+      "ดนตรี",
+      "ร็อก",
+      "มิตรภาพ",
+      "ดราม่าเข้มข้น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/47356/poster_image/medium-5abbbd782206cfd20df5125c75baf298.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/55102.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Girls+Band+Cry",
+    "mood": "hype"
+  },
+  {
+    "id": 211,
+    "name": "Shikanoko Nokonoko Koshitantan",
+    "nameTH": "น้องกวางชิกะโนะโกะ (My Deer Friend Nokotan)",
+    "genre": [
+      "คอมเมดี้กาวๆ",
+      "ชีวิตประจำวัน",
+      "มีม",
+      "น่ารัก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48618/poster_image/medium-3ef7ecfe0da23a4d4ee757d46dfcd1db.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/58426.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Nokotan",
+    "mood": "chill"
+  },
+  {
+    "id": 212,
+    "name": "Dungeon Meshi",
+    "nameTH": "สูตรลับตำรับดันเจี้ยน (Delicious in Dungeon)",
+    "genre": [
+      "ทำอาหาร",
+      "แฟนตาซี",
+      "ดันเจี้ยน",
+      "คอมเมดี้"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46320/poster_image/medium-feb3c7544b2d91902c9c6a38bf1f5944.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52701.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Dungeon+Meshi",
+    "mood": "chill"
+  },
+  {
+    "id": 213,
+    "name": "Skip to Loafer",
+    "nameTH": "จังหวะวัยรุ่น ว้าวุ่นหัวใจ (Skip and Loafer)",
+    "genre": [
+      "สคูลไลฟ์",
+      "โรแมนติกฟีลกู้ด",
+      "ชีวิตประจำวัน",
+      "อบอุ่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/45520/poster_image/medium-8f06466090ed7480f3afbb9d9b5f31f0.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/50416.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Skip+to+Loafer",
+    "mood": "chill"
+  },
+  {
+    "id": 214,
+    "name": "Horimiya -piece-",
+    "nameTH": "โฮริมิยะ พีซ (Horimiya: The Missing Pieces)",
+    "genre": [
+      "โรแมนติกคอมเมดี้",
+      "สคูลไลฟ์",
+      "มิตรภาพ",
+      "อบอุ่น"
+    ],
+    "coverUrl": "https://anifume.com/images/48/Horimiya-Piece.jpg",
+    "coverFallback": "https://anifume.com/images/48/Horimiya-Piece.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Horimiya",
+    "mood": "love"
+  },
+  {
+    "id": 215,
+    "name": "Gachiakuta",
+    "nameTH": "กะชีอะคุตะ (Gachiakuta)",
+    "genre": [
+      "แอคชั่นดาร์กแฟนตาซี",
+      "ต่อสู้",
+      "พลังพิเศษ",
+      "ไฮป์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48946/poster_image/medium-0e314e0d6ebfb67ed53d173c7b9d1287.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/59050.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Gachiakuta",
+    "mood": "hype"
+  },
+  {
+    "id": 216,
+    "name": "Witch Watch",
+    "nameTH": "วิทช์วอทช์ (Witch Watch)",
+    "genre": [
+      "เวทมนตร์",
+      "คอมเมดี้",
+      "โรแมนติก",
+      "สคูลไลฟ์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/49136/poster_image/medium-eae65e06bdbe0c415c6ea26217c0e713.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/59654.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Witch+Watch",
+    "mood": "chill"
+  },
+  {
+    "id": 217,
+    "name": "Kimi wa Meido-sama.",
+    "nameTH": "คุณเมดของผมเป็นอดีตนักฆ่า (You Are Ms. Servant)",
+    "genre": [
+      "คอมเมดี้",
+      "ชีวิตประจำวัน",
+      "แอคชั่น",
+      "อบอุ่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48395/poster_image/medium-c4a572327a49c03c814cd66d263e3b1f.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/57703.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kimi+wa+Meido-sama",
+    "mood": "chill"
+  },
+  {
+    "id": 218,
+    "name": "Dead Dead Demons Dededede Destruction",
+    "nameTH": "เดดเดดเดมอนส์ เดเดเดเดเดสตรากชัน",
+    "genre": [
+      "ไซไฟ",
+      "ชีวิตประจำวัน",
+      "ดราม่าเข้มข้น",
+      "อวกาศ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48892/poster_image/medium-66e6fb051c762862c540598bd99b3e6b.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/58883.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Dededede",
+    "mood": "sad"
+  },
+  {
+    "id": 219,
+    "name": "Ranma 1/2 (2024)",
+    "nameTH": "รันม่า 1/2 ฉบับสร้างใหม่ (Ranma Remake)",
+    "genre": [
+      "ศิลปะการต่อสู้",
+      "คอมเมดี้",
+      "โรแมนติก",
+      "คลาสสิก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48981/poster_image/medium-abfe4d8f087bdfef4385faeb830873d4.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/59160.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Ranma",
+    "mood": "chill"
+  },
+  {
+    "id": 220,
+    "name": "Tengoku Daimakyou",
+    "nameTH": "ถอดรหัสแดนมหัศจรรย์ (Heavenly Delusion)",
+    "genre": [
+      "ไซไฟ",
+      "ลึกลับ",
+      "ผจญภัย",
+      "หลังวันสิ้นโลก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46641/poster_image/medium-71f060bb011b08d372285bdbdbfe393f.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/53393.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Tengoku+Daimakyou",
+    "mood": "sad"
+  },
+  {
+    "id": 221,
+    "name": "Trigun Stampede",
+    "nameTH": "ไตรกัน สแตมพีด (Trigun Stampede)",
+    "genre": [
+      "ไซไฟ",
+      "แอคชั่นเดือด",
+      "ยิงปืน",
+      "ภาพสวยระดับเทพ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46183/poster_image/medium-5f704e2d6d86c0666d81e140d2c9f6a0.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52093.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Trigun+Stampede",
+    "mood": "hype"
+  },
+  {
+    "id": 222,
+    "name": "Isekai Suicide Squad",
+    "nameTH": "ทีมพลีชีพมหาวายร้ายต่างโลก (Isekai Suicide Squad)",
+    "genre": [
+      "แอคชั่นสุดมันส์",
+      "ต่างโลก",
+      "ดีซีคอมิกส์",
+      "ไฮป์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/47687/poster_image/medium-1b60c7e721df919140c4dd564810afd5.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/55848.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Isekai+Suicide+Squad",
+    "mood": "hype"
+  },
+  {
+    "id": 223,
+    "name": "NieR:Automata Ver1.1a",
+    "nameTH": "เนียร์: ออโตมาตา (NieR:Automata)",
+    "genre": [
+      "ไซไฟ",
+      "แอนดรอยด์",
+      "ดราม่าซึ้ง",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/47784/poster_image/medium-87164c01153374979cbb13368c4635a1.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/56060.jpg",
+    "anifumeUrl": "https://anifume.com/?s=NieR",
+    "mood": "sad"
+  },
+  {
+    "id": 224,
+    "name": "Jigokuraku",
+    "nameTH": "สุขาวดีอเวจี (Hell’s Paradise)",
+    "genre": [
+      "แอคชั่นดาร์กแฟนตาซี",
+      "นินจา",
+      "ต่อสู้ดุเดือด",
+      "ไฮป์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/44012/poster_image/medium-b7adf5b796a614ae3630153229fe4469.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/46569.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Jigokuraku",
+    "mood": "hype"
+  },
+  {
+    "id": 225,
+    "name": "Zom 100: Zombie ni Naru made ni Shitai 100 no Koto",
+    "nameTH": "ซอม 100: สิ่งที่อยากทำก่อนจะกลายเป็นซอมบี้ (Zom 100)",
+    "genre": [
+      "คอมเมดี้",
+      "ซอมบี้สดใส",
+      "แอคชั่น",
+      "ฟีลกู้ด"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46954/poster_image/medium-42b1d7dde1b056e21b1a96c48df5a64c.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/54112.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Zom+100",
+    "mood": "hype"
+  },
+  {
+    "id": 226,
+    "name": "Shangri-La Frontier",
+    "nameTH": "แชงกรีล่า ฟรอนเทียร์ (เมื่อนักล่าเกมขยะท้าสู้ในเกมเทพ)",
+    "genre": [
+      "เกมออนไลน์",
+      "แอคชั่นมันส์หยด",
+      "ผจญภัย",
+      "ไฮป์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46241/poster_image/medium-e4a6d7f3be58c861ffff72a72cb1791d.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52347.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Shangri-La+Frontier",
+    "mood": "hype"
+  },
+  {
+    "id": 227,
+    "name": "Undead Unluck",
+    "nameTH": "อันเดด อันลัค (Undead Unluck)",
+    "genre": [
+      "พลังพิเศษเหนือธรรมชาติ",
+      "แอคชั่นเดือด",
+      "คอมเมดี้",
+      "ไฮป์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46415/poster_image/medium-09a8e8a7b821309beba30e1b49a5369e.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52710.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Undead+Unluck",
+    "mood": "hype"
+  },
+  {
+    "id": 228,
+    "name": "Otonari no Tenshi-sama",
+    "nameTH": "ข้างห้องมีนางฟ้าสุดน่ารักคอยดูแล (The Angel Next Door Spoils Me Rotten)",
+    "genre": [
+      "โรแมนติกหวานฉ่ำ",
+      "ชีวิตประจำวัน",
+      "อบอุ่นหัวใจ",
+      "เยียวยา"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/45715/poster_image/medium-775439626fef38f5ca5fe646a095dcb5.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/50739.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Otonari+no+Tenshi-sama",
+    "mood": "love"
+  },
+  {
+    "id": 229,
+    "name": "Yamada-kun to Lv999 no Koi wo Suru",
+    "nameTH": "รักสุดฟินเลเวล 999 กับยามาดะคุง (My Love Story with Yamada-kun)",
+    "genre": [
+      "โรแมนติกเกมเมอร์",
+      "คอมเมดี้",
+      "ฟินจิกหมอน",
+      "หวานละมุน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46529/poster_image/medium-86099eeb5036c415a65a02d7e142017e.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/53126.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Yamada-kun+to+Lv999",
+    "mood": "love"
+  },
+  {
+    "id": 230,
+    "name": "Boku no Kokoro no Yabai Yatsu",
+    "nameTH": "เธอผู้อันตรายต่อใจผม (The Dangers in My Heart)",
+    "genre": [
+      "โรแมนติกสุดประทับใจ",
+      "สคูลไลฟ์",
+      "หวานซึ้ง",
+      "พัฒนาการ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46299/poster_image/medium-6d03c7b6f887ab8dae48e7f52d3a4dfe.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Bokuyaba",
+    "mood": "love"
+  },
+  {
+    "id": 231,
+    "name": "Dandadan",
+    "nameTH": "ดันดาดัน",
+    "genre": [
+      "แอคชั่น",
+      "เหนือธรรมชาติ",
+      "โรแมนติก",
+      "คอมเมดี้"
+    ],
+    "coverUrl": "https://anifume.com/images/08/Dandadan-2.jpg",
+    "coverFallback": "https://anifume.com/images/08/Dandadan-2.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Dandadan",
+    "mood": "hype"
+  },
+  {
+    "id": 232,
+    "name": "Kaiju No. 8",
+    "nameTH": "ไคจูหมายเลข 8",
+    "genre": [
+      "แอคชั่น",
+      "ไซไฟ",
+      "สัตว์ประหลาด",
+      "ลูกผู้ชาย"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46300/poster_image/medium-c1c025bbee42bed048e628b1eae278c0.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kaiju%20No%208",
+    "mood": "hype"
+  },
+  {
+    "id": 233,
+    "name": "Sousou no Frieren",
+    "nameTH": "คำอธิษฐานในวันที่จากลา Frieren",
+    "genre": [
+      "แฟนตาซี",
+      "ซึ้งกินใจ",
+      "การเดินทาง",
+      "เวทมนตร์"
+    ],
+    "coverUrl": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
+    "coverFallback": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Frieren",
+    "mood": "sad"
+  },
+  {
+    "id": 234,
+    "name": "Dungeon Meshi",
+    "nameTH": "สูตรลับตำรับดันเจี้ยน (Delicious in Dungeon)",
+    "genre": [
+      "แฟนตาซี",
+      "ทำอาหาร",
+      "ผจญภัย",
+      "คอมเมดี้"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46320/poster_image/medium-feb3c7544b2d91902c9c6a38bf1f5944.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Dungeon%20Meshi",
+    "mood": "chill"
+  },
+  {
+    "id": 235,
+    "name": "Wind Breaker",
+    "nameTH": "วินด์เบรกเกอร์",
+    "genre": [
+      "แอคชั่น",
+      "นักเลง",
+      "มิตรภาพ",
+      "สคูลไลฟ์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/47271/poster_image/medium-90a981a5a5570ba5fdb809a3152c8348.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Wind%20Breaker",
+    "mood": "hype"
+  },
+  {
+    "id": 236,
+    "name": "Solo Leveling",
+    "nameTH": "ชะตากรรมนักล่าเงา (Ore dake Level Up na Ken)",
+    "genre": [
+      "แอคชั่น",
+      "แฟนตาซี",
+      "ฮันเตอร์",
+      "จุติเทพ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46231/poster_image/medium-d75b57ef0c9056044cc0e277ac34d6e5.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Solo%20Leveling",
+    "mood": "hype"
+  },
+  {
+    "id": 237,
+    "name": "Kusuriya no Hitorigoto",
+    "nameTH": "สืบคดีปริศนาหมอยาตำรับโคมแดง (The Apothecary Diaries)",
+    "genre": [
+      "สืบสวน",
+      "ดราม่า",
+      "วังหลวง",
+      "ฉลาด"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/47083/poster_image/medium-1ba1a4603c851776031d439eba948633.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kusuriya%20no%20Hitorigoto",
+    "mood": "chill"
+  },
+  {
+    "id": 238,
+    "name": "Oshi no Ko Season 2",
+    "nameTH": "เกิดใหม่เป็นลูกโอชิ ซีซั่น 2",
+    "genre": [
+      "ดราม่า",
+      "วงการบันเทิง",
+      "ล้างแค้น",
+      "ละครเวที"
+    ],
+    "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
+    "coverFallback": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Oshi%20no%20Ko",
+    "mood": "hype"
+  },
+  {
+    "id": 239,
+    "name": "Look Back",
+    "nameTH": "ลุค แบ็ค (Look Back)",
+    "genre": [
+      "ดราม่า",
+      "ชีวิต",
+      "มิตรภาพ",
+      "สร้างสรรค์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48541/poster_image/medium-996392db10718d6b3177f11982f8b975.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Look%20Back",
+    "mood": "sad"
+  },
+  {
+    "id": 240,
+    "name": "Make Heroine ga Oosugiru!",
+    "nameTH": "ชนะเลิศแค่ไหนก็แพ้เธอ (Too Many Losing Heroines!)",
+    "genre": [
+      "โรแมนติก",
+      "คอมเมดี้",
+      "โรงเรียน",
+      "น่ารัก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48312/poster_image/medium-5a3bba84ddb645a765b4714655abf044.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Makeine",
+    "mood": "love"
+  },
+  {
+    "id": 241,
+    "name": "Ao no Hako",
+    "nameTH": "กล่องรักวัยใส (Blue Box)",
+    "genre": [
+      "กีฬา",
+      "โรแมนติก",
+      "แบดมินตัน",
+      "โรงเรียน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Blue%20Box",
+    "mood": "love"
+  },
+  {
+    "id": 242,
+    "name": "Haikyu!! The Dumpster Battle",
+    "nameTH": "ไฮคิว!! คู่ตบฟ้าประทาน ตอนศึกที่กองขยะ",
+    "genre": [
+      "กีฬา",
+      "วอลเลย์บอล",
+      "มิตรภาพ",
+      "เดือดสุด"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46336/poster_image/medium-162a579fe7a25c1b188532bb8aaa7129.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Haikyu",
+    "mood": "hype"
+  },
+  {
+    "id": 243,
+    "name": "Tokidoki Bosotto Russia-go",
+    "nameTH": "คุณอาลิย่าพูดรัสเซียหวานใส่เพราะคิดว่าไม่รู้",
+    "genre": [
+      "โรแมนติก",
+      "คอมเมดี้",
+      "โรงเรียน",
+      "หวานเจี๊ยบ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/47192/poster_image/medium-671e94191e8d931769dfa6d8a73e6491.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Alya",
+    "mood": "love"
+  },
+  {
+    "id": 244,
+    "name": "Chainsaw Man: Reze-hen",
+    "nameTH": "มนุษย์เลื่อยยนต์ - บทเรเซ่",
+    "genre": [
+      "แอคชั่น",
+      "ดาร์กแฟนตาซี",
+      "ระเบิด",
+      "รักขมขื่น"
+    ],
+    "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "coverFallback": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Chainsaw%20Man",
+    "mood": "hype"
+  },
+  {
+    "id": 245,
+    "name": "Mashle: Magic and Muscles",
+    "nameTH": "ศึกโลกเวทมนตร์คนพลังกล้าม",
+    "genre": [
+      "คอมเมดี้",
+      "เวทมนตร์",
+      "แอคชั่น",
+      "ล้อเลียน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium-0233bf77af3e0ab7303ae7099209d58a.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Mashle",
+    "mood": "hype"
+  },
+  {
+    "id": 246,
+    "name": "Wistoria: Wand and Sword",
+    "nameTH": "ตำนานดาบและคทาแห่งวิสโทเรีย",
+    "genre": [
+      "แอคชั่น",
+      "แฟนตาซี",
+      "เวทมนตร์",
+      "ดาบ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48534/poster_image/medium-c38c15266ae228974e8c2a00d776ea92.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Wistoria",
+    "mood": "hype"
+  },
+  {
+    "id": 247,
+    "name": "Shangri-La Frontier",
+    "nameTH": "เมื่อนักล่าเกมขยะท้าสู้ในเกมเทพ",
+    "genre": [
+      "เกม",
+      "แอคชั่น",
+      "แฟนตาซี",
+      "บอสไฟต์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46241/poster_image/medium-e4a6d7f3be58c861ffff72a72cb1791d.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Shangri-La%20Frontier",
+    "mood": "hype"
+  },
+  {
+    "id": 248,
+    "name": "Bleach: Thousand-Year Blood War",
+    "nameTH": "บลีช เทพมรณะ สงครามเลือดพันปี",
+    "genre": [
+      "แอคชั่น",
+      "ยมทูต",
+      "บังไค",
+      "สงคราม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/43078/poster_image/medium-c33a4b2e827f0e99ea57f831af0adabd.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Bleach",
+    "mood": "hype"
+  },
+  {
+    "id": 249,
+    "name": "NieR:Automata Ver1.1a",
+    "nameTH": "เนียร์: ออโตมาตา",
+    "genre": [
+      "ไซไฟ",
+      "แอนดรอยด์",
+      "ดราม่า",
+      "ปรัชญา"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/47784/poster_image/medium-87164c01153374979cbb13368c4635a1.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=NieR%20Automata",
+    "mood": "sad"
+  },
+  {
+    "id": 250,
+    "name": "Jigokuraku",
+    "nameTH": "สุขาวดีอเวจี (Hell’s Paradise)",
+    "genre": [
+      "แอคชั่น",
+      "นินจา",
+      "สยองขวัญ",
+      "แฟนตาซี"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/44012/poster_image/medium-b7adf5b796a614ae3630153229fe4469.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52578.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Jigokuraku",
+    "mood": "hype"
+  },
+  {
+    "id": 251,
+    "name": "Oshi no Ko",
+    "nameTH": "ดาวในดวงใจ",
+    "genre": [
+      "ดราม่า",
+      "ไอดอล",
+      "ลึกลับ"
+    ],
+    "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
+    "coverFallback": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Oshi+no+Ko",
+    "mood": "hype"
+  },
+  {
+    "id": 252,
+    "name": "Chainsaw Man",
+    "nameTH": "ชายคนเลื่อยยนต์",
+    "genre": [
+      "แอคชั่น",
+      "ดาร์ก",
+      "ปีศาจ"
+    ],
+    "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "coverFallback": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Chainsaw+Man",
+    "mood": "hype"
+  },
+  {
+    "id": 253,
+    "name": "One Piece",
+    "nameTH": "วันพีซ",
+    "genre": [
+      "ผจญภัย",
+      "แอคชั่น",
+      "โจรสลัด"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/12/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/21.jpg",
+    "anifumeUrl": "https://anifume.com/?s=One+Piece",
+    "mood": "hype"
+  },
+  {
+    "id": 254,
+    "name": "Naruto Shippuden",
+    "nameTH": "นารูโตะ ชิปปุเดน",
+    "genre": [
+      "แอคชั่น",
+      "นินจา",
+      "ผจญภัย"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1555/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/1735.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Naruto+Shippuden",
+    "mood": "hype"
+  },
+  {
+    "id": 255,
+    "name": "Bleach: Thousand-Year Blood War",
+    "nameTH": "บลีช: สงครามพันปีแห่งเลือด",
+    "genre": [
+      "แอคชั่น",
+      "ซูเปอร์เนเชอรัล",
+      "ซามูไร"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/45547/poster_image/medium-ecff21462bacc73bbf9e1a60a6ec3e91.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/41467.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Bleach+Thousand-Year+Blood+War",
+    "mood": "hype"
+  },
+  {
+    "id": 256,
+    "name": "Re:Zero − Starting Life in Another World",
+    "nameTH": "รีเซทชีวิตฝ่าวิกฤตต่างโลก",
+    "genre": [
+      "แฟนตาซี",
+      "ดราม่า",
+      "อิเซไค"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11981/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/31240.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Re%3AZero",
+    "mood": "sad"
+  },
+  {
+    "id": 257,
+    "name": "Sword Art Online",
+    "nameTH": "ซอร์ดอาร์ตออนไลน์",
+    "genre": [
+      "แอคชั่น",
+      "แฟนตาซี",
+      "เกม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7936/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/11757.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Sword+Art+Online",
+    "mood": "hype"
+  },
+  {
+    "id": 258,
+    "name": "No Game No Life",
+    "nameTH": "โนเกม โนไลฟ์",
+    "genre": [
+      "แฟนตาซี",
+      "คอมเมดี้",
+      "เกม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8687/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/19815.jpg",
+    "anifumeUrl": "https://anifume.com/?s=No+Game+No+Life",
+    "mood": "hype"
+  },
+  {
+    "id": 259,
+    "name": "Toradora!",
+    "nameTH": "โทราโดร่า!",
+    "genre": [
+      "โรแมนติก",
+      "คอมเมดี้",
+      "โรงเรียน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3853/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/4224.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Toradora",
+    "mood": "love"
+  },
+  {
+    "id": 260,
+    "name": "Clannad: After Story",
+    "nameTH": "แคลนนาด: อาฟเตอร์สตอรี่",
+    "genre": [
+      "ดราม่า",
+      "โรแมนติก",
+      "ซึ้งกินใจ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/2286/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/4181.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Clannad+After+Story",
+    "mood": "sad"
+  },
+  {
+    "id": 261,
+    "name": "Angel Beats!",
+    "nameTH": "แองเจิลบีทส์!",
+    "genre": [
+      "ดราม่า",
+      "แอคชั่น",
+      "ดนตรี",
+      "ซึ้งกินใจ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/5681/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/6594.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Angel+Beats",
+    "mood": "sad"
+  },
+  {
+    "id": 262,
+    "name": "Fullmetal Alchemist: Brotherhood",
+    "nameTH": "แขนกลคนแปรธาตุ: บราเธอร์ฮูด",
+    "genre": [
+      "แอคชั่น",
+      "ผจญภัย",
+      "แฟนตาซี"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6421/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/5114.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Fullmetal+Alchemist+Brotherhood",
+    "mood": "hype"
+  },
+  {
+    "id": 263,
+    "name": "Death Note",
+    "nameTH": "เดธโน้ต",
+    "genre": [
+      "ลึกลับ",
+      "จิตวิทยา",
+      "ทริลเลอร์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1376/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/1535.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Death+Note",
+    "mood": "hype"
+  },
+  {
+    "id": 264,
+    "name": "Code Geass",
+    "nameTH": "โค้ด กีอัส",
+    "genre": [
+      "แอคชั่น",
+      "หุ่นยนต์",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1434/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/1575.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Code+Geass",
+    "mood": "hype"
+  },
+  {
+    "id": 265,
+    "name": "Steins;Gate",
+    "nameTH": "สไตน์สเกท",
+    "genre": [
+      "ไซไฟ",
+      "ทริลเลอร์",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/5646/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/9253.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Steins%3BGate",
+    "mood": "sad"
+  },
+  {
+    "id": 266,
+    "name": "Neon Genesis Evangelion",
+    "nameTH": "อีวานเกเลียน",
+    "genre": [
+      "หุ่นยนต์",
+      "จิตวิทยา",
+      "ไซไฟ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/367/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/30.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Neon+Genesis+Evangelion",
+    "mood": "sad"
+  },
+  {
+    "id": 267,
+    "name": "Hunter x Hunter",
+    "nameTH": "ฮันเตอร์ x ฮันเตอร์",
+    "genre": [
+      "แอคชั่น",
+      "ผจญภัย",
+      "แฟนตาซี"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7578/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/11061.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Hunter+x+Hunter",
+    "mood": "hype"
+  },
+  {
+    "id": 268,
+    "name": "Black Clover",
+    "nameTH": "แบล็คโคลเวอร์",
+    "genre": [
+      "แอคชั่น",
+      "แฟนตาซี",
+      "เวทมนตร์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13995/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/34572.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Black+Clover",
+    "mood": "hype"
+  },
+  {
+    "id": 269,
+    "name": "That Time I Got Reincarnated as a Slime",
+    "nameTH": "เกิดใหม่ทั้งทีก็เป็นสไลม์ไปซะแล้ว",
+    "genre": [
+      "แฟนตาซี",
+      "อิเซไค",
+      "คอมเมดี้"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/14352/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/37430.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Slime+Reincarnated",
+    "mood": "chill"
+  },
+  {
+    "id": 270,
+    "name": "The Rising of the Shield Hero",
+    "nameTH": "วีรบุรุษโล่ผู้ถูกทอดทิ้ง",
+    "genre": [
+      "แฟนตาซี",
+      "อิเซไค",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/14350/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/35790.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Shield+Hero",
+    "mood": "hype"
+  },
+  {
+    "id": 271,
+    "name": "Made in Abyss",
+    "nameTH": "เมดอินอะบิสส์",
+    "genre": [
+      "ผจญภัย",
+      "ดาร์ก",
+      "แฟนตาซี"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13925/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/34599.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Made+in+Abyss",
+    "mood": "sad"
+  },
+  {
+    "id": 272,
+    "name": "Overlord",
+    "nameTH": "โอเวอร์ลอร์ด",
+    "genre": [
+      "แฟนตาซี",
+      "อิเซไค",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/10356/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/29803.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Overlord",
+    "mood": "hype"
+  },
+  {
+    "id": 273,
+    "name": "Konosuba: God's Blessing on This Wonderful World!",
+    "nameTH": "โคโนซูบะ! พรของพระเจ้าสู่โลกมหัศจรรย์",
+    "genre": [
+      "คอมเมดี้",
+      "แฟนตาซี",
+      "อิเซไค"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11902/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/30831.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Konosuba",
+    "mood": "chill"
+  },
+  {
+    "id": 274,
+    "name": "My Hero Academia",
+    "nameTH": "มายฮีโร่อคาเดเมีย",
+    "genre": [
+      "แอคชั่น",
+      "ซูเปอร์ฮีโร่",
+      "โรงเรียน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11469/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/31964.jpg",
+    "anifumeUrl": "https://anifume.com/?s=My+Hero+Academia",
+    "mood": "hype"
+  },
+  {
+    "id": 275,
+    "name": "Fairy Tail",
+    "nameTH": "เฟรี่เทล",
+    "genre": [
+      "แอคชั่น",
+      "แฟนตาซี",
+      "เวทมนตร์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/5646/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/6702.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Fairy+Tail",
+    "mood": "hype"
+  },
+  {
+    "id": 276,
+    "name": "Dragon Ball Super",
+    "nameTH": "ดราก้อนบอล ซูเปอร์",
+    "genre": [
+      "แอคชั่น",
+      "ผจญภัย",
+      "คอมเมดี้"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11606/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/30694.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Dragon+Ball+Super",
+    "mood": "hype"
+  },
+  {
+    "id": 277,
+    "name": "Tokyo Ghoul",
+    "nameTH": "โตเกียวกูล",
+    "genre": [
+      "ดาร์ก",
+      "สยองขวัญ",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8778/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/22319.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Tokyo+Ghoul",
+    "mood": "hype"
+  },
+  {
+    "id": 278,
+    "name": "Parasyte: The Maxim",
+    "nameTH": "ปรสิต เดอะ แมกซิม",
+    "genre": [
+      "ไซไฟ",
+      "สยองขวัญ",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/9018/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/22535.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Parasyte",
+    "mood": "hype"
+  },
+  {
+    "id": 279,
+    "name": "Assassination Classroom",
+    "nameTH": "แผนสังหารคุณครูอสูร",
+    "genre": [
+      "คอมเมดี้",
+      "แอคชั่น",
+      "โรงเรียน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8671/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/24833.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Assassination+Classroom",
+    "mood": "chill"
+  },
+  {
+    "id": 280,
+    "name": "Haikyuu!!",
+    "nameTH": "ไฮคิว!! คู่ตบฟ้าประทาน",
+    "genre": [
+      "กีฬา",
+      "โรงเรียน",
+      "มิตรภาพ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8230/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/20583.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Haikyuu",
+    "mood": "hype"
+  },
+  {
+    "id": 281,
+    "name": "Kuroko's Basketball",
+    "nameTH": "คุโรโกะ โนะ บาสเก็ต",
+    "genre": [
+      "กีฬา",
+      "โรงเรียน",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7645/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/11771.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kuroko+Basketball",
+    "mood": "hype"
+  },
+  {
+    "id": 282,
+    "name": "Blue Lock",
+    "nameTH": "บลูล็อค",
+    "genre": [
+      "กีฬา",
+      "แอคชั่น",
+      "จิตวิทยา"
+    ],
+    "coverUrl": "https://anifume.com/images/45/Blue-Lock.jpg",
+    "coverFallback": "https://anifume.com/images/45/Blue-Lock.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Blue+Lock",
+    "mood": "hype"
+  },
+  {
+    "id": 283,
+    "name": "Kaiju No. 8",
+    "nameTH": "ไคจูหมายเลข 8",
+    "genre": [
+      "แอคชั่น",
+      "ไซไฟ",
+      "สัตว์ประหลาด"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/47196/poster_image/medium-f1b3a9c68b72af0e02b2b6e3a8dc1c0b.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/55791.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kaiju+No+8",
+    "mood": "hype"
+  },
+  {
+    "id": 284,
+    "name": "Wind Breaker",
+    "nameTH": "วินด์เบรกเกอร์",
+    "genre": [
+      "แอคชั่น",
+      "โรงเรียน",
+      "มิตรภาพ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/47899/poster_image/medium-7c2a90df27e51f03bc70a0e86d79d88e.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/55787.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Wind+Breaker",
+    "mood": "hype"
+  },
+  {
+    "id": 285,
+    "name": "The Apothecary Diaries",
+    "nameTH": "บันทึกร้านขายยา",
+    "genre": [
+      "ดราม่า",
+      "ลึกลับ",
+      "ประวัติศาสตร์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46945/poster_image/medium-3e8cf2cca6c7c9ad7a93bc4c0d5d6a6b.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52034.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Apothecary+Diaries",
+    "mood": "chill"
+  },
+  {
+    "id": 286,
+    "name": "A Silent Voice",
+    "nameTH": "เสียงจากหัวใจ",
+    "genre": [
+      "ดราม่า",
+      "โรแมนติก",
+      "ซึ้งกินใจ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13284/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/33352.jpg",
+    "anifumeUrl": "https://anifume.com/?s=A+Silent+Voice",
+    "mood": "sad"
+  },
+  {
+    "id": 287,
+    "name": "I Want to Eat Your Pancreas",
+    "nameTH": "อยากกินตับอ่อนของเธอ",
+    "genre": [
+      "ดราม่า",
+      "โรแมนติก",
+      "ซึ้งกินใจ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/14312/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/36098.jpg",
+    "anifumeUrl": "https://anifume.com/?s=I+Want+to+Eat+Your+Pancreas",
+    "mood": "sad"
+  },
+  {
+    "id": 288,
+    "name": "Anohana: The Flower We Saw That Day",
+    "nameTH": "อาโนะฮานะ ดอกไม้วันนั้น",
+    "genre": [
+      "ดราม่า",
+      "ซึ้งกินใจ",
+      "ซูเปอร์เนเชอรัล"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6437/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/9756.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Anohana",
+    "mood": "sad"
+  },
+  {
+    "id": 289,
+    "name": "Your Name",
+    "nameTH": "ชื่อของเธอ",
+    "genre": [
+      "โรแมนติก",
+      "แฟนตาซี",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13054/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/32281.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Your+Name",
+    "mood": "love"
+  },
+  {
+    "id": 290,
+    "name": "Weathering with You",
+    "nameTH": "ฝนของเธอและฉัน",
+    "genre": [
+      "โรแมนติก",
+      "แฟนตาซี",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/45059/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/38826.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Weathering+with+You",
+    "mood": "love"
+  },
+  {
+    "id": 291,
+    "name": "Suzume",
+    "nameTH": "ซูซูเมะ",
+    "genre": [
+      "แฟนตาซี",
+      "ผจญภัย",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46004/poster_image/medium-b5e9b4b5a0e2e4d3d7dc8fd2f7d3af10.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/50594.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Suzume",
+    "mood": "sad"
+  },
+  {
+    "id": 292,
+    "name": "The Boy and the Heron",
+    "nameTH": "เด็กชายกับนกกระสา",
+    "genre": [
+      "แฟนตาซี",
+      "ผจญภัย",
+      "จิบลิ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46874/poster_image/medium-77ce4d83e28e24e71cf7fdcbe0df8e28.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/57458.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The+Boy+and+the+Heron",
+    "mood": "chill"
+  },
+  {
+    "id": 293,
+    "name": "Princess Mononoke",
+    "nameTH": "เจ้าหญิงจิตวิญญาณแห่งพงไพร",
+    "genre": [
+      "แฟนตาซี",
+      "ผจญภัย",
+      "จิบลิ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/192/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/164.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Princess+Mononoke",
+    "mood": "hype"
+  },
+  {
+    "id": 294,
+    "name": "Howl's Moving Castle",
+    "nameTH": "ปราสาทเวทมนตร์ของฮาวล์",
+    "genre": [
+      "แฟนตาซี",
+      "โรแมนติก",
+      "จิบลิ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/419/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/431.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Howl%27s+Moving+Castle",
+    "mood": "love"
+  },
+  {
+    "id": 295,
+    "name": "Bocchi the Rock!",
+    "nameTH": "บ็อคจิ เดอะ ร็อค!",
+    "genre": [
+      "ดนตรี",
+      "คอมเมดี้",
+      "โรงเรียน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/45580/poster_image/medium-41f685e5cde5e038c0e50c7e5d3e1b9c.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/47917.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Bocchi+the+Rock",
+    "mood": "chill"
+  },
+  {
+    "id": 296,
+    "name": "Spy x Family",
+    "nameTH": "สปาย x แฟมิลี่",
+    "genre": [
+      "คอมเมดี้",
+      "แอคชั่น",
+      "ครอบครัว"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/44936/poster_image/medium-12e4edde8e1e3e6f7e64b62b22df6e8b.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/50265.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Spy+x+Family",
+    "mood": "chill"
+  },
+  {
+    "id": 297,
+    "name": "Mushoku Tensei: Jobless Reincarnation",
+    "nameTH": "ชีวิตใหม่ไม่ให้เสียดาย",
+    "genre": [
+      "แฟนตาซี",
+      "อิเซไค",
+      "ผจญภัย"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/42929/poster_image/medium-c14f69d5c2cdb13e27b0ef03dde95248.jpeg",
+    "coverFallback": "https://shikimori.io/system/animes/original/39535.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Mushoku+Tensei",
+    "mood": "chill"
+  },
+  {
+    "id": 298,
+    "name": "Vinland Saga",
+    "nameTH": "วินแลนด์ซากา",
+    "genre": [
+      "แอคชั่น",
+      "ประวัติศาสตร์",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42438/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/37521.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Vinland+Saga",
+    "mood": "hype"
+  },
+  {
+    "id": 299,
+    "name": "Bungo Stray Dogs",
+    "nameTH": "บุงโงะ สเตรย์ ด็อกส์",
+    "genre": [
+      "แอคชั่น",
+      "ลึกลับ",
+      "ซูเปอร์เนเชอรัล"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11492/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/31478.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Bungo+Stray+Dogs",
+    "mood": "hype"
+  },
+  {
+    "id": 300,
+    "name": "Classroom of the Elite",
+    "nameTH": "ห้องเรียนของผู้ที่ยิ่งยวด",
+    "genre": [
+      "จิตวิทยา",
+      "โรงเรียน",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13672/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/35507.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Classroom+of+the+Elite",
+    "mood": "hype"
+  },
+  {
+    "id": 301,
+    "name": "86: Eighty Six",
+    "nameTH": "86 -เอทตี้ซิกซ์-",
+    "genre": [
+      "สงคราม",
+      "ดราม่า",
+      "หุ่นยนต์",
+      "ไซไฟ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/43088/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/41457.jpg",
+    "anifumeUrl": "https://anifume.com/?s=86",
+    "mood": "sad"
+  },
+  {
+    "id": 302,
+    "name": "Summertime Rendering",
+    "nameTH": "ปริศนาบ้านเก่า เงามรณะ",
+    "genre": [
+      "ระทึกขวัญ",
+      "ย้อนเวลา",
+      "ลึกลับ",
+      "เหนือธรรมชาติ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/44053/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/47194.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Summertime+Rendering",
+    "mood": "hype"
+  },
+  {
+    "id": 303,
+    "name": "Pluto",
+    "nameTH": "พลูโต ตามล่าหุ่นยนต์สังหาร",
+    "genre": [
+      "สืบสวน",
+      "ไซไฟ",
+      "จิตวิทยา",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13524/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/35825.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Pluto",
+    "mood": "chill"
+  },
+  {
+    "id": 304,
+    "name": "Rascal Does Not Dream of Bunny Girl Senpai",
+    "nameTH": "เรื่องฝันปั่นป่วยของผมกับรุ่นพี่บันนี่เกิร์ล",
+    "genre": [
+      "โรแมนติก",
+      "ดราม่า",
+      "เหนือธรรมชาติ",
+      "โรงเรียน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41300/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/37450.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Bunny+Girl+Senpai",
+    "mood": "love"
+  },
+  {
+    "id": 305,
+    "name": "Fruits Basket",
+    "nameTH": "เสน่ห์สาวข้าวปั้น",
+    "genre": [
+      "ดราม่า",
+      "อบอุ่นหัวใจ",
+      "โรแมนติก",
+      "เหนือธรรมชาติ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41724/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/38680.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Fruits+Basket",
+    "mood": "love"
+  },
+  {
+    "id": 306,
+    "name": "ReLIFE",
+    "nameTH": "รีไลฟ์ ย้อนวัยวัยรุ่น",
+    "genre": [
+      "ชีวิตประจำวัน",
+      "โรแมนติก",
+      "โรงเรียน",
+      "การเติบโต"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/10427/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/30015.jpg",
+    "anifumeUrl": "https://anifume.com/?s=ReLIFE",
+    "mood": "chill"
+  },
+  {
+    "id": 307,
+    "name": "Shinsekai Yori",
+    "nameTH": "จากแดนสนธยา",
+    "genre": [
+      "ลึกลับ",
+      "ดราม่า",
+      "ไซไฟ",
+      "จิตวิทยา"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6831/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/13125.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Shinsekai+Yori",
+    "mood": "sad"
+  },
+  {
+    "id": 308,
+    "name": "Goblin Slayer",
+    "nameTH": "ก็อบลิน สเลเยอร์",
+    "genre": [
+      "แฟนตาซีดาร์ก",
+      "ผจญภัย",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41199/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/37349.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Goblin+Slayer",
+    "mood": "hype"
+  },
+  {
+    "id": 309,
+    "name": "Mushishi",
+    "nameTH": "กีฏจารย์กับสัตว์ประหลาด",
+    "genre": [
+      "ปรัชญา",
+      "ธรรมชาติ",
+      "ลึกลับ",
+      "เยียวยาจิตใจ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/444/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/457.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Mushishi",
+    "mood": "chill"
+  },
+  {
+    "id": 310,
+    "name": "Natsume Yuujinchou",
+    "nameTH": "นัตสึเมะกับบันทึกพิศวง",
+    "genre": [
+      "อบอุ่นหัวใจ",
+      "วิญญาณ",
+      "มิตรภาพ",
+      "ชีวิตประจำวัน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3431/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/4081.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Natsume+Yuujinchou",
+    "mood": "chill"
+  },
+  {
+    "id": 311,
+    "name": "Hajime no Ippo",
+    "nameTH": "ก้าวแรกสู่สังเวียน",
+    "genre": [
+      "กีฬา",
+      "มวย",
+      "ลูกผู้ชาย",
+      "สร้างแรงบันดาลใจ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/183/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/196.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Hajime+no+Ippo",
+    "mood": "hype"
+  },
+  {
+    "id": 312,
+    "name": "Rurouni Kenshin",
+    "nameTH": "ซามูไรพเนจร",
+    "genre": [
+      "ประวัติศาสตร์",
+      "ซามูไร",
+      "แอคชั่น",
+      "โรแมนติก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/43/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/45.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Rurouni+Kenshin",
+    "mood": "hype"
+  },
+  {
+    "id": 313,
+    "name": "Great Teacher Onizuka",
+    "nameTH": "คุณครูพันธุ์หายาก GTO",
+    "genre": [
+      "คอมเมดี้",
+      "ชีวิตโรงเรียน",
+      "ดราม่า",
+      "มิตรภาพ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/236/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/245.jpg",
+    "anifumeUrl": "https://anifume.com/?s=GTO",
+    "mood": "chill"
+  },
+  {
+    "id": 314,
+    "name": "Initial D",
+    "nameTH": "นักซิ่งดริฟท์สายฟ้า",
+    "genre": [
+      "รถแข่ง",
+      "ดริฟท์",
+      "ยูโรบีท",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/176/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/185.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Initial+D",
+    "mood": "hype"
+  },
+  {
+    "id": 315,
+    "name": "MF Ghost",
+    "nameTH": "เอ็มเอฟ โกสต์",
+    "genre": [
+      "แข่งรถ",
+      "สปอร์ต",
+      "แอคชั่น",
+      "โตเกียว"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/45564/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/50695.jpg",
+    "anifumeUrl": "https://anifume.com/?s=MF+Ghost",
+    "mood": "hype"
+  },
+  {
+    "id": 316,
+    "name": "Akira",
+    "nameTH": "อากิระ คนไม่ใช่คน",
+    "genre": [
+      "ไซเบอร์พังค์",
+      "แอนิเมชันระดับตำนาน",
+      "มอเตอร์ไซค์",
+      "ไซไฟ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/47/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/47.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Akira",
+    "mood": "hype"
+  },
+  {
+    "id": 317,
+    "name": "Perfect Blue",
+    "nameTH": "เพอร์เฟกต์ บลู",
+    "genre": [
+      "ระทึกขวัญจิตวิทยา",
+      "ไอดอล",
+      "สืบสวน",
+      "ดาร์ก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/428/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/437.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Perfect+Blue",
+    "mood": "sad"
+  },
+  {
+    "id": 318,
+    "name": "Paprika",
+    "nameTH": "ลบแผนจารกรรมคนล่าฝัน",
+    "genre": [
+      "ความฝัน",
+      "เซอร์เรียล",
+      "ไซไฟ",
+      "จิตวิทยา"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1799/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/1943.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Paprika",
+    "mood": "chill"
+  },
+  {
+    "id": 319,
+    "name": "Wolf Children",
+    "nameTH": "คู่จิ๊ดชีวิตอัศจรรย์",
+    "genre": [
+      "ครอบครัว",
+      "ความรักของแม่",
+      "อบอุ่นหัวใจ",
+      "แฟนตาซี"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6744/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/12355.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Wolf+Children",
+    "mood": "sad"
+  },
+  {
+    "id": 320,
+    "name": "Bakuman",
+    "nameTH": "วัยซนคนการ์ตูน",
+    "genre": [
+      "มังงะ",
+      "ทำตามความฝัน",
+      "โรแมนติก",
+      "โชเน็น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/5482/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/7674.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Bakuman",
+    "mood": "chill"
+  },
+  {
+    "id": 321,
+    "name": "Terror in Resonance",
+    "nameTH": "โตเกียวพิฆาต",
+    "genre": [
+      "ระทึกขวัญ",
+      "ปริศนา",
+      "ดนตรีเพราะ",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8334/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/23283.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Zankyou+no+Terror",
+    "mood": "sad"
+  },
+  {
+    "id": 322,
+    "name": "Darker than Black",
+    "nameTH": "ยมทูตสีดำ",
+    "genre": [
+      "พลังพิเศษ",
+      "นักฆ่า",
+      "ไซไฟ",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1879/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/2025.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Darker+than+Black",
+    "mood": "hype"
+  },
+  {
+    "id": 323,
+    "name": "D.Gray-man",
+    "nameTH": "ดี.เกรย์แมน",
+    "genre": [
+      "โกธิค",
+      "เอ็กโซซิสต์",
+      "ดาร์กแฟนตาซี",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1376/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/1482.jpg",
+    "anifumeUrl": "https://anifume.com/?s=D.Gray-man",
+    "mood": "hype"
+  },
+  {
+    "id": 324,
+    "name": "Link Click",
+    "nameTH": "ข้ามเวลาพิชิตคดี",
+    "genre": [
+      "ย้อนเวลาผ่านภาพถ่าย",
+      "ดราม่าน้ำตาตก",
+      "สืบสวน",
+      "ระทึกขวัญ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/43896/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/44074.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Link+Click",
+    "mood": "sad"
+  },
+  {
+    "id": 325,
+    "name": "Dr. STONE",
+    "nameTH": "ดร.สโตน เจ้าแห่งวิทยาศาสตร์กู้โลก",
+    "genre": [
+      "วิทยาศาสตร์",
+      "เอาชีวิตรอด",
+      "ผจญภัย",
+      "สร้างอารยธรรม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41838/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/38691.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Dr.+STONE",
+    "mood": "hype"
+  },
+  {
+    "id": 326,
+    "name": "JoJo's Bizarre Adventure",
+    "nameTH": "โจโจ้ ล่าข้ามศตวรรษ",
+    "genre": [
+      "สแตนด์",
+      "ต่อสู้สุดมันส์",
+      "แอคชั่น",
+      "การผจญภัย"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7106/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/14719.jpg",
+    "anifumeUrl": "https://anifume.com/?s=JoJo",
+    "mood": "hype"
+  },
+  {
+    "id": 327,
+    "name": "Kill la Kill",
+    "nameTH": "คิล ลา คิล",
+    "genre": [
+      "แอคชั่นสุดเหวี่ยง",
+      "แฟนตาซี",
+      "ตลก",
+      "ต่อสู้"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7680/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/18679.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kill+la+Kill",
+    "mood": "hype"
+  },
+  {
+    "id": 328,
+    "name": "The First Slam Dunk",
+    "nameTH": "เดอะ เฟิสต์ สแลมดังก์",
+    "genre": [
+      "บาสเกตบอล",
+      "มิตรภาพ",
+      "สร้างแรงใจ",
+      "การแข่งขัน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/45561/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/45649.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Slam+Dunk",
+    "mood": "hype"
+  },
+  {
+    "id": 329,
+    "name": "Yu Yu Hakusho",
+    "nameTH": "คนเก่งฟ้าประทาน",
+    "genre": [
+      "โลกวิญญาณ",
+      "หมัดกระสุนวิญญาณ",
+      "โชเน็นคลาสสิก",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/344/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/392.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Yu+Yu+Hakusho",
+    "mood": "hype"
+  },
+  {
+    "id": 330,
+    "name": "Gintama: The Final",
+    "nameTH": "กินทามะ เดอะ ไฟนอล",
+    "genre": [
+      "คอมเมดี้",
+      "ซามูไร",
+      "แอคชั่นเดือด",
+      "ซึ้งน้ำตาคลอ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42551/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/39486.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Gintama",
+    "mood": "hype"
+  },
+  {
+    "id": 331,
+    "name": "Look Back",
+    "nameTH": "ลุค แบค - ฟูจิโมโตะ ทัตสึกิ",
+    "genre": [
+      "มิตรภาพ",
+      "วาดการ์ตูน",
+      "ดราม่าบาดลึก",
+      "เยียวยาจิตใจ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/48366/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/58272.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Look+Back",
+    "mood": "sad"
+  },
+  {
+    "id": 332,
+    "name": "Josee, the Tiger and the Fish",
+    "nameTH": "โจเซ่ กับเสือและหมู่ปลา",
+    "genre": [
+      "โรแมนติก",
+      "สร้างแรงบันดาลใจ",
+      "ท้องทะเล",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42792/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/40787.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Josee",
+    "mood": "love"
+  },
+  {
+    "id": 333,
+    "name": "The Girl Who Leapt Through Time",
+    "nameTH": "กระโดดจัมพ์ทะลุข้ามเวลา",
+    "genre": [
+      "ย้อนเวลา",
+      "ฤดูร้อน",
+      "โรแมนติก",
+      "ความทรงจำ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1990/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/2236.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The+Girl+Who+Leapt+Through+Time",
+    "mood": "chill"
+  },
+  {
+    "id": 334,
+    "name": "Summer Wars",
+    "nameTH": "สงครามฤดูร้อน",
+    "genre": [
+      "โลกดิจิทัล",
+      "ครอบครัวใหญ่",
+      "ไซไฟ",
+      "อบอุ่นหัวใจ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/4234/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/5681.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Summer+Wars",
+    "mood": "chill"
+  },
+  {
+    "id": 335,
+    "name": "Millennium Actress",
+    "nameTH": "นักแสดงสาวพันปี",
+    "genre": [
+      "ตามหาคนรัก",
+      "ภาพยนตร์",
+      "กาลเวลา",
+      "ศิลปะ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/936/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/1033.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Millennium+Actress",
+    "mood": "sad"
+  },
+  {
+    "id": 336,
+    "name": "Ghost in the Shell",
+    "nameTH": "โกสต์อินเดอะเชลล์ นิลผึ้งจักรกล",
+    "genre": [
+      "ไซเบอร์พังค์",
+      "ปรัชญา",
+      "ไซไฟ",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/43.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Ghost+in+the+Shell",
+    "mood": "chill"
+  },
+  {
+    "id": 337,
+    "name": "Hellsing Ultimate",
+    "nameTH": "เฮลซิ่ง อัลติเมต แวมไพร์ล่าปีศาจ",
+    "genre": [
+      "แวมไพร์",
+      "แอคชั่นเลือดสาด",
+      "ดาร์กแฟนตาซี",
+      "สไนเปอร์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/719/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/777.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Hellsing",
+    "mood": "hype"
+  },
+  {
+    "id": 338,
+    "name": "Soul Eater",
+    "nameTH": "ยมทูตแสบสายพันธุ์ซ่า",
+    "genre": [
+      "อาวุธวิญญาณ",
+      "แอคชั่นมันส์หยด",
+      "แฟนตาซี",
+      "ตลก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3133/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/3588.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Soul+Eater",
+    "mood": "hype"
+  },
+  {
+    "id": 339,
+    "name": "Violet Evergarden: The Movie",
+    "nameTH": "ไวโอเล็ต เอเวอร์การ์เดน เดอะ มูฟวี่",
+    "genre": [
+      "จดหมายบอกรัก",
+      "น้ำตาท่วมโรง",
+      "ดราม่า",
+      "บทสรุปความรัก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41443/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/37987.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Violet+Evergarden+Movie",
+    "mood": "sad"
+  },
+  {
+    "id": 340,
+    "name": "Fate/stay night: Heaven's Feel",
+    "nameTH": "มหาสงครามจอกศักดิ์สิทธิ์ เฮเวนส์ฟีล",
+    "genre": [
+      "ดาร์กแฟนตาซี",
+      "ความรักและการเสียสละ",
+      "แอคชั่นอลังการ",
+      "เวทมนตร์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8536/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/25537.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Heaven%27s+Feel",
+    "mood": "sad"
+  },
+  {
+    "id": 341,
+    "name": "Kara no Kyoukai: The Garden of Sinners",
+    "nameTH": "คาระ โนะ เคียวไค คดีฆาตกรรมตาสะกดวิญญาณ",
+    "genre": [
+      "สืบสวนเหนือธรรมชาติ",
+      "ดาร์ก",
+      "จิตวิทยา",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/2026/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/2593.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kara+no+Kyoukai",
+    "mood": "chill"
+  },
+  {
+    "id": 342,
+    "name": "Monogatari Series",
+    "nameTH": "ปกรณัมของเหล่าภูต บาเกะโมโนกาตาริ",
+    "genre": [
+      "การสนทนาเฉียบคม",
+      "ภูตผี",
+      "สไตล์เฉพาะตัว",
+      "โรแมนติก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/4255/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/5081.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Bakemonogatari",
+    "mood": "chill"
+  },
+  {
+    "id": 343,
+    "name": "Kizumonogatari",
+    "nameTH": "คิสึโมโนกาตาริ ปกรณัมของตำหนิ",
+    "genre": [
+      "แวมไพร์",
+      "แอนิเมชันระดับพระกาฬ",
+      "ดาร์ก",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6462/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/9693.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kizumonogatari",
+    "mood": "hype"
+  },
+  {
+    "id": 344,
+    "name": "Blood+",
+    "nameTH": "บลัด พลัส สงครามผีดูดเลือด",
+    "genre": [
+      "แวมไพร์",
+      "ซายะ",
+      "เพลงเพราะ",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/149/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/150.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Blood%2B",
+    "mood": "sad"
+  },
+  {
+    "id": 345,
+    "name": "Overtake!",
+    "nameTH": "โอเวอร์เทค นักซิ่งหัวใจสู้",
+    "genre": [
+      "แข่งรถสูตร",
+      "เยียวยาบาดแผลใจ",
+      "ถ่ายภาพ",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/47101/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/54301.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Overtake",
+    "mood": "chill"
+  },
+  {
+    "id": 346,
+    "name": "Blue Period",
+    "nameTH": "บลู พีเรียด ปลุกไฟศิลปะ",
+    "genre": [
+      "วาดภาพสีน้ำมัน",
+      "ค้นหาตนเอง",
+      "วัยรุ่น",
+      "มุ่งมั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/44055/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/46352.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Blue+Period",
+    "mood": "chill"
+  },
+  {
+    "id": 347,
+    "name": "Trigun",
+    "nameTH": "ไตรกัน มือปืนทลายโลก คลาสสิก",
+    "genre": [
+      "คาวบอยอวกาศ",
+      "มือปืน",
+      "รักสงบ",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/6.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Trigun",
+    "mood": "chill"
+  },
+  {
+    "id": 348,
+    "name": "Dragon Ball Daima",
+    "nameTH": "ดราก้อนบอล ไดมะ",
+    "genre": [
+      "ผจญภัยในแดนปีศาจ",
+      "แอคชั่น",
+      "โกคูตอนเด็ก",
+      "แฟนตาซี"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/47953/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/56880.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Dragon+Ball+Daima",
+    "mood": "hype"
+  },
+  {
+    "id": 349,
+    "name": "Ranma 1/2 (2024)",
+    "nameTH": "รันม่า 1/2 ฉบับรีเมคใหม่",
+    "genre": [
+      "กังฟูคอมเมดี้",
+      "แปลงร่างชายหญิง",
+      "โรแมนติก",
+      "คลาสสิก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/48624/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/59188.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Ranma",
+    "mood": "chill"
+  },
+  {
+    "id": 350,
+    "name": "Bleach: Thousand-Year Blood War - The Conflict",
+    "nameTH": "บลีช เทพมรณะ สงครามเลือดพันปี พาร์ท 3",
+    "genre": [
+      "ยมทูต",
+      "ควินซี่",
+      "บังไค",
+      "แอคชั่นอลังการ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/47625/medium.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/56788.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Bleach+TYBW",
+    "mood": "hype"
+  },
+  {
+    "id": 351,
+    "name": "Blue Box",
+    "nameTH": "กล่องรักวัยใส (Ao no Hako)",
+    "genre": [
+      "โรแมนติก",
+      "กีฬา",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
+    "coverFallback": "https://cdn.myanimelist.net/images/anime/1063/144611l.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Blue%20Box",
+    "mood": "love"
+  },
+  {
+    "id": 352,
+    "name": "Look Back",
+    "nameTH": "ลุค แบ็ค",
+    "genre": [
+      "ดราม่า",
+      "ศิลปะ",
+      "ชีวิต"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48541/poster_image/medium-996392db10718d6b3177f11982f8b975.jpeg",
+    "coverFallback": "https://cdn.myanimelist.net/images/anime/1100/142493l.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Look%20Back",
+    "mood": "sad"
+  },
+  {
+    "id": 353,
+    "name": "Makeine: Too Many Losing Heroines!",
+    "nameTH": "รักเรานั้นมีคนแพ้เยอะเกินไป",
+    "genre": [
+      "คอมเมดี้",
+      "โรแมนติก",
+      "โรงเรียน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48312/poster_image/medium-5a3bba84ddb645a765b4714655abf044.jpeg",
+    "coverFallback": "https://cdn.myanimelist.net/images/anime/1761/144186l.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Makeine",
+    "mood": "chill"
+  },
+  {
+    "id": 354,
+    "name": "Wistoria: Wand and Sword",
+    "nameTH": "ตำนานดาบและคทาแห่งวิสตอเรีย",
+    "genre": [
+      "แอคชั่น",
+      "แฟนตาซี",
+      "เวทมนตร์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48534/poster_image/medium-c38c15266ae228974e8c2a00d776ea92.jpeg",
+    "coverFallback": "https://cdn.myanimelist.net/images/anime/1379/143574l.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Wistoria",
+    "mood": "hype"
+  },
+  {
+    "id": 355,
+    "name": "The Elusive Samurai",
+    "nameTH": "นินจาล่าทรราช (Nige Jouzu no Wakagimi)",
+    "genre": [
+      "ประวัติศาสตร์",
+      "แอคชั่น",
+      "การผจญภัย"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/47197/poster_image/medium-54b3a236ff9d29f69370f9b17929b220.jpeg",
+    "coverFallback": "https://cdn.myanimelist.net/images/anime/1208/143213l.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Elusive%20Samurai",
+    "mood": "hype"
+  },
+  {
+    "id": 356,
+    "name": "Alya Sometimes Hides Her Feelings in Russian",
+    "nameTH": "คุณอาเรียโต๊ะข้างๆ พูดรัสเซียหวานใส่",
+    "genre": [
+      "โรแมนติก",
+      "คอมเมดี้",
+      "โรงเรียน"
+    ],
+    "coverUrl": "https://anifume.com/images/54/Tokidoki-Bosotto-Russia-go.jpg",
+    "coverFallback": "https://anifume.com/images/54/Tokidoki-Bosotto-Russia-go.jpg",
+    "anifumeUrl": "https://anifume.com/41068",
+    "mood": "love"
+  },
+  {
+    "id": 357,
+    "name": "Dead Dead Demons Dededede Destruction",
+    "nameTH": "เดดเดดเดมอนส์ เดเดเดเดเดสตรักชัน",
+    "genre": [
+      "ไซไฟ",
+      "ดราม่า",
+      "จิตวิทยา"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48892/poster_image/medium-66e6fb051c762862c540598bd99b3e6b.jpeg",
+    "coverFallback": "https://cdn.myanimelist.net/images/anime/1660/142981l.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Dededede",
+    "mood": "chill"
+  },
+  {
+    "id": 358,
+    "name": "Pseudo Harem",
+    "nameTH": "ฮาเร็มนี้พี่ขอสร้าง (Giji Harem)",
+    "genre": [
+      "โรแมนติก",
+      "คอมเมดี้",
+      "ชีวิตประจำวัน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/47296/poster_image/medium-c324bf5d5fcccf17986a04ab494dd9d7.jpeg",
+    "coverFallback": "https://cdn.myanimelist.net/images/anime/1857/143586l.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Giji%20Harem",
+    "mood": "love"
+  },
+  {
+    "id": 359,
+    "name": "Bleach: Thousand-Year Blood War",
+    "nameTH": "บลีช เทพมรณะ สงครามเลือดพันปี",
+    "genre": [
+      "แอคชั่น",
+      "เหนือธรรมชาติ",
+      "โชเน็น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/43078/poster_image/medium-c33a4b2e827f0e99ea57f831af0adabd.jpeg",
+    "coverFallback": "https://cdn.myanimelist.net/images/anime/1908/135431l.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Bleach%20TYBW",
+    "mood": "hype"
+  },
+  {
+    "id": 360,
+    "name": "2.5 Dimensional Seduction",
+    "nameTH": "2.5 มิติ ริริสะ",
+    "genre": [
+      "คอมเมดี้",
+      "โรแมนติก",
+      "คอสเพลย์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46842/poster_image/medium-3171a2ed1cb9c882f40ac196841a84ba.jpeg",
+    "coverFallback": "https://cdn.myanimelist.net/images/anime/1628/143587l.jpg",
+    "anifumeUrl": "https://anifume.com/?s=2.5%20Dimensional",
+    "mood": "love"
+  },
+  {
+    "id": 361,
+    "name": "Trigun Stampede",
+    "nameTH": "ไตรกัน สแตมพีด",
+    "genre": [
+      "แอคชั่น",
+      "ไซไฟ",
+      "การผจญภัย"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46183/poster_image/medium-5f704e2d6d86c0666d81e140d2c9f6a0.jpeg",
+    "coverFallback": "https://cdn.myanimelist.net/images/anime/1286/128919l.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Trigun%20Stampede",
+    "mood": "hype"
+  },
+  {
+    "id": 362,
+    "name": "Tower of God Season 2",
+    "nameTH": "หอคอยเทพเจ้า ซีซั่น 2",
+    "genre": [
+      "แอคชั่น",
+      "แฟนตาซี",
+      "ลึกลับ"
+    ],
+    "coverUrl": "https://cdn.myanimelist.net/images/anime/1792/143588l.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/52676.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Tower%20of%20God",
+    "mood": "hype"
+  },
+  {
+    "id": 363,
+    "name": "Orb: On the Movements of the Earth",
+    "nameTH": "เกี่ยวกับความเคลื่อนไหวของโลก (Chi)",
+    "genre": [
+      "ประวัติศาสตร์",
+      "ดราม่า",
+      "วิทยาศาสตร์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46214/poster_image/medium-576598f2a2b60146ac60300c89339f25.jpeg",
+    "coverFallback": "https://cdn.myanimelist.net/images/anime/1169/145452l.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Chi%20Chikyuu",
+    "mood": "sad"
+  },
+  {
+    "id": 364,
+    "name": "Bocchi the Rock! Re:Re:",
+    "nameTH": "บ็อจจิเดอะร็อก! ฉบับเดอะมูฟวี่",
+    "genre": [
+      "คอมเมดี้",
+      "ดนตรี",
+      "ชีวิตประจำวัน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/44196/poster_image/medium-a7b52a1e9cea5a04b29ee6878fbff923.jpeg",
+    "coverFallback": "https://cdn.myanimelist.net/images/anime/1448/127956l.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Bocchi%20the%20Rock",
+    "mood": "hype"
+  },
+  {
+    "id": 365,
+    "name": "Haikyu!! The Dumpster Battle",
+    "nameTH": "ไฮคิว!! ศึกที่กองขยะ",
+    "genre": [
+      "กีฬา",
+      "มิตรภาพ",
+      "โชเน็น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46336/poster_image/medium-162a579fe7a25c1b188532bb8aaa7129.jpeg",
+    "coverFallback": "https://cdn.myanimelist.net/images/anime/1206/141838l.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Haikyuu%20Movie",
+    "mood": "hype"
+  },
+  {
+    "id": 366,
+    "name": "Neon Genesis Evangelion",
+    "nameTH": "เอวานเกเลี่ยน",
+    "genre": [
+      "แอ็กชัน",
+      "ไซไฟ",
+      "จิตวิทยา",
+      "มหากาพย์"
+    ],
+    "coverUrl": "https://cdn.myanimelist.net/images/anime/1314/108941l.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/30.jpg?1711973143",
+    "anifumeUrl": "https://anifume.com/?s=Neon%20Genesis%20Evangelion",
+    "mood": "hype"
+  },
+  {
+    "id": 367,
+    "name": "Bakemonogatari",
+    "nameTH": "บาเคโมโนกาตาริ",
+    "genre": [
+      "แฟนตาซี",
+      "โรแมนติก",
+      "ลึกลับ"
+    ],
+    "coverUrl": "https://cdn.myanimelist.net/images/anime/11/75274l.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/5081.jpg?1711956945",
+    "anifumeUrl": "https://anifume.com/?s=Bakemonogatari",
+    "mood": "love"
+  },
+  {
+    "id": 368,
+    "name": "Cowboy Bebop",
+    "nameTH": "คาวบอย บีบ็อป",
+    "genre": [
+      "แอ็กชัน",
+      "ไซไฟ",
+      "Jazz",
+      "นัวร์"
+    ],
+    "coverUrl": "https://cdn.myanimelist.net/images/anime/4/19644l.jpg",
+    "coverFallback": "https://shikimori.io/system/animes/original/1.jpg?1711956945",
+    "anifumeUrl": "https://anifume.com/?s=Cowboy%20Bebop",
+    "mood": "hype"
+  },
+  {
+    "id": 369,
+    "name": "Demon Slayer: Mugen Train Arc",
+    "nameTH": "ดาบพิฆาตอสูร: เรนโกกุ อาร์ค",
+    "genre": [
+      "แอ็กชัน",
+      "โชเน็น",
+      "แฟนตาซี"
+    ],
+    "coverUrl": "https://anifume.com/images/53/Kimetsu-no-Yaiba-Hashira-Geiko-hen.jpg",
+    "coverFallback": "https://anifume.com/images/53/Kimetsu-no-Yaiba-Hashira-Geiko-hen.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Demon%20Slayer%20Mugen%20Train",
+    "mood": "hype"
+  },
+  {
+    "id": 370,
+    "name": "Skip and Loafer",
+    "nameTH": "จังหวะวัยรุ่น ว้าวุ่นหัวใจ",
+    "genre": [
+      "สไลซ์ออฟไลฟ์",
+      "โรแมนติก",
+      "โรงเรียน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/45517/poster_image/medium-55342a19ef9eb98db5dfd17c9b83b38c.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/50416.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Skip%20and%20Loafer",
+    "mood": "chill"
+  },
+  {
+    "id": 371,
+    "name": "Buddy Daddies",
+    "nameTH": "บัดดี้ แดดดี้ส์",
+    "genre": [
+      "แอคชั่น",
+      "คอมเมดี้",
+      "ครอบครัว"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46577/poster_image/medium-8ef6409549f257f8623b0dfb2f293933.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/53411.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Buddy%20Daddies",
+    "mood": "love"
+  },
+  {
+    "id": 372,
+    "name": "Zom 100: Bucket List of the Dead",
+    "nameTH": "ซอม 100: 100 สิ่งที่อยากทำก่อนจะกลายเป็นซอมบี้",
+    "genre": [
+      "แอคชั่น",
+      "คอมเมดี้",
+      "ซอมบี้"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46857/poster_image/medium-4f810148ad4a0d922a901bf9e62fe46d.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/54112.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Zom%20100%3A%20Bucket%20List%20of%20the%20Dead",
+    "mood": "hype"
+  },
+  {
+    "id": 373,
+    "name": "Insomniacs After School",
+    "nameTH": "ค่ำคืนนี้มีเราสองคน",
+    "genre": [
+      "โรแมนติก",
+      "ดาราศาสตร์",
+      "โรงเรียน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/45598/poster_image/medium-c9bf66231c51a0a552fbce2d91bb3a20.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/50796.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Insomniacs%20After%20School",
+    "mood": "love"
+  },
+  {
+    "id": 374,
+    "name": "Tengoku Daimakyo",
+    "nameTH": "ถ้ำสวรรค์แดนอเวจี",
+    "genre": [
+      "ไซไฟ",
+      "ผจญภัย",
+      "ลึกลับ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46603/poster_image/medium-c71c4c11b6099b25be248eb847326ea0.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/53393.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Tengoku%20Daimakyo",
+    "mood": "chill"
+  },
+  {
+    "id": 375,
+    "name": "My Love Story with Yamada-kun at Lv999",
+    "nameTH": "รักสุดฟินเลเวล 999 กับยามาดะคุง",
+    "genre": [
+      "โรแมนติก",
+      "เกม",
+      "คอมเมดี้"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/46571/poster_image/medium-ea8832a82d6fa830d9cbff53f56eb72f.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/53126.jpg",
+    "anifumeUrl": "https://anifume.com/?s=My%20Love%20Story%20with%20Yamada-kun%20at%20Lv999",
+    "mood": "love"
+  },
+  {
+    "id": 376,
+    "name": "DanMachi (Is It Wrong to Try to Pick Up Girls in a Dungeon?)",
+    "nameTH": "มันผิดรึไงถ้าใจอยากจะพบรักในดันเจี้ยน",
+    "genre": [
+      "แฟนตาซี",
+      "ผจญภัย",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/10016/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/28121.jpg",
+    "anifumeUrl": "https://anifume.com/?s=DanMachi%20(Is%20It%20Wrong%20to%20Try%20to%20Pick%20Up%20Girls%20in%20a%20Dungeon%3F)",
+    "mood": "hype"
+  },
+  {
+    "id": 377,
+    "name": "Vivy: Fluorite Eye's Song",
+    "nameTH": "วีวี่ บทเพลงแห่งดวงดาว",
+    "genre": [
+      "ไซไฟ",
+      "ดนตรี",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/43974/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/46095.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Vivy%3A%20Fluorite%20Eye's%20Song",
+    "mood": "hype"
+  },
+  {
+    "id": 378,
+    "name": "Ya Boy Kongming!",
+    "nameTH": "ขงเบ้ง เจาะเวลามาปั้นดาว",
+    "genre": [
+      "คอมเมดี้",
+      "ดนตรี",
+      "วางแผน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/45212/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/50380.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Ya%20Boy%20Kongming!",
+    "mood": "hype"
+  },
+  {
+    "id": 379,
+    "name": "Sword Art Online Alternative: Gun Gale Online II",
+    "nameTH": "ซอร์ดอาร์ตออนไลน์ อัลเทอร์เนทีฟ กันเกลออนไลน์ 2",
+    "genre": [
+      "แอคชั่น",
+      "เกม",
+      "ไซไฟ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/47413/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/55994.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Sword%20Art%20Online%20Alternative%3A%20Gun%20Gale%20Online%20II",
+    "mood": "hype"
+  },
+  {
+    "id": 380,
+    "name": "Mobile Suit Gundam: Iron-Blooded Orphans",
+    "nameTH": "โมบิลสูท กันดั้ม ไอรอน-บลัดด์ ออร์แฟนส์",
+    "genre": [
+      "แอคชั่น",
+      "ดราม่า",
+      "หุ่นยนต์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11179/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/31251.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Mobile%20Suit%20Gundam%3A%20Iron-Blooded%20Orphans",
+    "mood": "hype"
+  },
+  {
+    "id": 381,
+    "name": "Mobile Suit Gundam: Hathaway's Flash",
+    "nameTH": "กันดั้ม ฮาธาเวย์ แฟลช",
+    "genre": [
+      "ไซไฟ",
+      "ดราม่า",
+      "สงคราม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41870/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/37799.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Mobile%20Suit%20Gundam%3A%20Hathaway's%20Flash",
+    "mood": "hype"
+  },
+  {
+    "id": 382,
+    "name": "Fate/Grand Order: Babylonia",
+    "nameTH": "เฟท/แกรนด์ออร์เดอร์ บาบิโลเนีย",
+    "genre": [
+      "แอคชั่น",
+      "แฟนตาซี",
+      "มหากาพย์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41446/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/38084.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Fate%2FGrand%20Order%3A%20Babylonia",
+    "mood": "hype"
+  },
+  {
+    "id": 383,
+    "name": "MF Ghost Season 2",
+    "nameTH": "เอ็มเอฟ โกสต์ ภาค 2",
+    "genre": [
+      "แข่งรถ",
+      "กีฬา",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/48270/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/57538.jpg",
+    "anifumeUrl": "https://anifume.com/?s=MF%20Ghost%20Season%202",
+    "mood": "hype"
+  },
+  {
+    "id": 384,
+    "name": "Blue Miburo",
+    "nameTH": "ซามูไรบลู มิบูโระ",
+    "genre": [
+      "ประวัติศาสตร์",
+      "ซามูไร",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/47743/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/56501.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Blue%20Miburo",
+    "mood": "hype"
+  },
+  {
+    "id": 385,
+    "name": "Nina the Starry Bride",
+    "nameTH": "นีน่าแห่งราชอาณาจักรดวงดาว",
+    "genre": [
+      "โรแมนติก",
+      "แฟนตาซี",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/47854/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/57061.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Nina%20the%20Starry%20Bride",
+    "mood": "love"
+  },
+  {
+    "id": 386,
+    "name": "Uzumaki",
+    "nameTH": "ก้นหอยมรณะ",
+    "genre": [
+      "สยองขวัญ",
+      "จิตวิทยา",
+      "ลึกลับ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42551/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/40417.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Uzumaki",
+    "mood": "sad"
+  },
+  {
+    "id": 387,
+    "name": "Monogatari Series: Off & Monster Season",
+    "nameTH": "โมโนกาตาริ ซีรีส์ ออฟ & มอนสเตอร์ ซีซัน",
+    "genre": [
+      "เหนือธรรมชาติ",
+      "ลึกลับ",
+      "คอมเมดี้"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/48316/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/57706.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Monogatari%20Series%3A%20Off%20%26%20Monster%20Season",
+    "mood": "chill"
+  }
+];
+
+const SONGS = [
+  {
+    "id": 1,
+    "title": "ดาวหางฮัลเลย์",
+    "artist": "fellow fellow",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/f1/fd/59/f1fd59e5-09ce-dde1-077e-d568ece0cee0/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/ดาวหางฮัลเลย์%20fellow%20fellow",
+    "mood": "sad",
+    "tags": [
+      "คิดถึง",
+      "จักรวาล",
+      "ห่างไกล"
+    ],
+    "bpm": "ช้า (68 BPM)",
+    "lang": "th",
+    "animeId": 9,
+    "animeMatch": [
+      9,
+      3
+    ],
+    "reason": "เนื้อเพลงเล่าถึงความหวังที่จะได้เคียงข้างกันแม้ดาวหางจะมาเยือนเพียงครั้งเดียว เข้ากับฉากดาวตกและความรักข้ามมิติเวลาของ Your Name อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์สไตล์มินิมอลสีขาว มีแสง Glow นุ่มนวล เคลื่อนที่ลอยช้าๆ สลับกับฉากดาวตกบนท้องฟ้ายามค่ำคืน"
+  },
+  {
+    "id": 2,
+    "title": "ซ่อน(ไม่)หา (Ghost)",
+    "artist": "Jeff Satur",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/2d/8a/7c/2d8a7c7b-5ebd-6f42-8300-69730a55a2eb/5054197954672.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/be/ea/9c/beea9cc5-2f4a-657a-cda1-5e5ef382ba7a/mzaf_6797589711112840217.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/ซ่อน(ไม่)หา%20(Ghost)%20Jeff%20Satur",
+    "mood": "sad",
+    "tags": [
+      "ซ่อนหา",
+      "โชคชะตา",
+      "เจ็บปวด"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 18,
+    "animeMatch": [
+      18,
+      12
+    ],
+    "reason": "พลังเสียงสะกดอารมณ์และเมโลดี้ทรงพลังของ Jeff Satur สื่อถึงความเจ็บปวดของการตามหาคนสำคัญในความทรงจำ เข้ากับมิติความสูญเสียใน Jujutsu Kaisen",
+    "typoIdea": "ฟอนต์สีขาวละลายขอบฟุ้งเหมือนวิญญาณ ค่อยๆ จางหายไปตามท่อนฮุค 'ซ่อนตัวอยู่ตรงนั้น' เลียนแบบฉากเล่นซ่อนหาของเมนมะใน Anohana"
+  },
+  {
+    "id": 3,
+    "title": "ลืมไปแล้วว่าลืมยังไง (Fade)",
+    "artist": "Jeff Satur",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/3c/3b/c2/3c3bc2fb-dcc5-411c-22be-6f50a5993e11/5054197362187.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/bf/53/33bf53d3-3a8b-c2a0-61d8-552a41cb0895/mzaf_17373431248148690542.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/ลืมไปแล้วว่าลืมยังไง%20(Fade)%20Jeff%20Satur",
+    "mood": "sad",
+    "tags": [
+      "ลืมไม่ลง",
+      "ความทรงจำ",
+      "ดนตรีเศร้า"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      1,
+      7
+    ],
+    "reason": "อารมณ์เพลงที่ตัดพ้อถึงความทรงจำที่ไม่มีวันจางหาย สอดคล้องกับเรื่องราวเปียโนและจดหมายสุดท้ายใน Your Lie in April",
+    "typoIdea": "ใช้แอนิเมชันตัวหนังสือค่อยๆ จางหาย (Fade Out) สลับเบลอเมื่อถึงท่อน 'ลืมไปแล้ว' วางตรงกลางจังหวะเปียโน"
+  },
+  {
+    "id": 4,
+    "title": "ไม่เปลี่ยนเลย (Best Luck)",
+    "artist": "fellow fellow",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/6f/be/f9/6fbef931-6eee-0c8d-6d90-f17301061daf/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/08/c8/af08c87c-8f9d-cc49-739a-7830f1567c00/mzaf_5128047126536625887.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/ไม่เปลี่ยนเลย%20(Best%20Luck)%20fellow%20fellow",
+    "mood": "love",
+    "tags": [
+      "รักนิรันดร์",
+      "ผูกพัน",
+      "อบอุ่น"
+    ],
+    "bpm": "ปานกลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14,
+      8
+    ],
+    "reason": "ดนตรีอบอุ่นละมุนหัวใจของ fellow fellow สะท้อนถึงความรักที่มั่นคงระหว่างมิยามุระและโฮริใน Horimiya",
+    "typoIdea": "ใช้ฟอนต์สไตล์ลายมือ (Handwritten) ขอบมน สีพาสเทลโทนชมพู-เบจ ขยับสไลด์เข้าออกนุ่มนวล"
+  },
+  {
+    "id": 5,
+    "title": "รถไฟบนฟ้า (Galaxy Express)",
+    "artist": "D Gerrard",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c6/e1/63/c6e1632b-e81b-e67a-a21f-79fb450bf96a/5054197946035.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7b/b6/80/7bb68048-fb1d-84ed-bac7-ecc04eec0ed5/mzaf_4744985832839020218.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/รถไฟบนฟ้า%20(Galaxy%20Express)%20D%20Gerrard",
+    "mood": "chill",
+    "tags": [
+      "อวกาศ",
+      "เดินทาง",
+      "จินตนาการ"
+    ],
+    "bpm": "ปานกลาง (92 BPM)",
+    "lang": "th",
+    "animeId": 4,
+    "animeMatch": [
+      4,
+      7
+    ],
+    "reason": "บรรยากาศชวนฝันและการเดินทางข้ามมิติ เข้ากับฉากรถไฟเหนือน้ำในตำนานของ Spirited Away ได้อย่างไร้ที่ติ",
+    "typoIdea": "จัดวางตัวหนังสือโค้งตามแนวขอบหน้าต่างรถไฟ ใช้เอฟเฟกต์ประกายละอองแสงระยิบระยับ"
+  },
+  {
+    "id": 6,
+    "title": "โต๊ะริม (Melt)",
+    "artist": "NONT TANONT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5d/70/fe/5d70fe6e-f3e4-c874-a2de-e4ecd186bf80/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/5f/f4/f45ff486-6fa0-9df5-9d58-8ed552c86140/mzaf_5412811150878921175.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/โต๊ะริม%20(Melt)%20NONT%20TANONT",
+    "mood": "love",
+    "tags": [
+      "แอบชอบ",
+      "มองตา",
+      "เขิน"
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "lang": "th",
+    "animeId": 201,
+    "animeMatch": [
+      201,
+      2,
+      14
+    ],
+    "reason": "ความน่ารักของการแอบมองคนที่ชอบจนใจละลาย เข้ากับลุคสาวแกลสุดเท่แต่แอบเขินรุ่นน้องใน 'รุ่นพี่ไฮมิยะ' สุดๆ",
+    "typoIdea": "แอนิเมชันตัวอักษรละลาย (Melt) เมื่อร้องคำว่า 'ละลาย' พร้อมซูมสายตาไฮมิยะตอนหน้าแดงแบบ Pop-up"
+  },
+  {
+    "id": 7,
+    "title": "ดอกไม้ที่รอฝน (Spring)",
+    "artist": "THE TOYS & NONT TANONT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/20/f3/61/20f361b1-53f6-bf76-0320-777873a76492/25UMGIM84015.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/63/30/2a633070-c228-60ea-a557-590c7814f5f2/mzaf_6284737101935456326.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/ดอกไม้ที่รอฝน%20(Spring)%20THE%20TOYS%20&%20NONT%20TANONT",
+    "mood": "sad",
+    "tags": [
+      "รอคอย",
+      "สายฝน",
+      "เหงา"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 13,
+    "animeMatch": [
+      13,
+      3
+    ],
+    "reason": "เมโลดี้ละมุนผสานเสียงฝนพรำ เข้ากับศาลาพักใจกลางสวนชินจูกุใน The Garden of Words ราวกับสร้างมาคู่กัน",
+    "typoIdea": "ตัวหนังสือสไตล์หมึกหยดซึม (Ink Bleed) ปรากฏขึ้นพร้อมระลอกคลื่นน้ำฝนบนผิวน้ำ"
+  },
+  {
+    "id": 8,
+    "title": "จำนน (White Flag)",
+    "artist": "NONT TANONT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/30/b3/b5/30b3b54c-b1ce-e6c4-a0e0-2ec6eee6766b/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3f/be/b9/3fbeb9fa-3537-ee85-553c-c9992f3aa3ff/mzaf_11225322134181997478.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/จำนน%20(White%20Flag)%20NONT%20TANONT",
+    "mood": "sad",
+    "tags": [
+      "ยอมจำนน",
+      "หัวใจแตกสลาย",
+      "เศร้า"
+    ],
+    "bpm": "ช้า (65 BPM)",
+    "lang": "th",
+    "animeId": 10,
+    "animeMatch": [
+      10,
+      1
+    ],
+    "reason": "ความรู้สึกยอมแพ้ต่อโชคชะตาและความเจ็บปวด เข้ากับประเด็นการให้อภัยและไถ่บาปใน A Silent Voice",
+    "typoIdea": "ใช้ฟอนต์สไตล์สะบัดพู่กัน สีขาวตัดดำ จังหวะกระแทกคำตรงกับบีทกลองเพื่อส่งอารมณ์บีบหัวใจ"
+  },
+  {
+    "id": 9,
+    "title": "วาดไว้ (Recall)",
+    "artist": "BOWKYLION",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0f/0f/42/0f0f4249-8f24-a6e8-56e4-6ec088900d93/25UMGIM79865.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/14/66/49/1466491a-b745-525c-7b96-321b4fd231d0/mzaf_16914207157708959097.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/วาดไว้%20(Recall)%20BOWKYLION",
+    "mood": "sad",
+    "tags": [
+      "วาดไว้",
+      "น้ำตา",
+      "คิดถึงคนที่จากไป"
+    ],
+    "bpm": "ช้า (68 BPM)",
+    "lang": "th",
+    "animeId": 3,
+    "animeMatch": [
+      3,
+      5
+    ],
+    "reason": "เพลงแห่งการสูญเสียที่ตราตรึง เข้ากับจดหมายแห่งความรักและความทรงจำของ ไวโอเล็ต เอเวอร์การ์เดน",
+    "typoIdea": "ใช้เอฟเฟกต์พิมพ์ดีด (Typewriter Effect) สลับกับตัวหนังสือลายมือเขียนลงบนกระดาษจดหมาย"
+  },
+  {
+    "id": 10,
+    "title": "บานปลาย (Best Wishes)",
+    "artist": "BOWKYLION",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5a/6c/c1/5a6cc1e5-af49-e7ce-1953-e70c9804ad3f/mzaf_8513941258598109632.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/บานปลาย%20(Best%20Wishes)%20BOWKYLION",
+    "mood": "love",
+    "tags": [
+      "ชอบเพื่อน",
+      "เกินเลย",
+      "แอบรัก"
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "lang": "th",
+    "animeId": 8,
+    "animeMatch": [
+      8,
+      14
+    ],
+    "reason": "ความรู้สึกเริ่มแอบรักเพื่อนสนิทจนบานปลาย เข้ากับความสัมพันธ์ซึนเดเระของ ริวจิ และ ไทกะ ใน Toradora!",
+    "typoIdea": "ใช้ฟอนต์สไตล์นีออนโทนส้ม-ชมพู เด้งเข้าตามจังหวะพร้อมไอคอนอิโมจิหัวใจเล็กๆ"
+  },
+  {
+    "id": 11,
+    "title": "นะหน้าทอง",
+    "artist": "โจอี้ ภูวศิษฐ์",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/cc/96/60cc96ee-d36d-201c-0ae7-a8f9d43d672e/mzaf_17220888096056606772.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/นะหน้าทอง%20โจอี้%20ภูวศิษฐ์",
+    "mood": "love",
+    "tags": [
+      "คลั่งรัก",
+      "มนต์สะกด",
+      "เสน่ห์"
+    ],
+    "bpm": "ปานกลาง (96 BPM)",
+    "lang": "th",
+    "animeId": 17,
+    "animeMatch": [
+      17,
+      8
+    ],
+    "reason": "ดนตรีโฟล์กร็อคผสมผสานมนต์เสน่ห์ความรัก เข้ากับเรื่องราวความรักระหว่างมนุษย์และเทพจิ้งจอกใน Kamisama Kiss",
+    "typoIdea": "ใช้ฟอนต์ตัวหนาแสงสีทองเปล่งประกาย สลับกับทรานซิชันไฟสีทองพวยพุ่งในท่อนฮุค"
+  },
+  {
+    "id": 12,
+    "title": "ดวงเดือน",
+    "artist": "โจอี้ ภูวศิษฐ์",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/47/fd/90/47fd904b-7653-5f99-d915-19529a77c697/888332917681.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/64/31/d964312a-8619-ca7c-2580-1844e0fdf698/mzaf_8881744960688057961.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/ดวงเดือน%20โจอี้%20ภูวศิษฐ์",
+    "mood": "sad",
+    "tags": [
+      "พระจันทร์",
+      "ไกลบ้าน",
+      "คิดถึง"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 12,
+    "animeMatch": [
+      12,
+      4
+    ],
+    "reason": "การมองพระจันทร์ดวงเดียวกันเพื่อส่งความคิดถึง เข้ากับความรักที่ไม่อาจสัมผัสตัวกันได้ใน Hotarubi no Mori e",
+    "typoIdea": "วางตัวหนังสือโค้งรับกับทรงพระจันทร์เรืองแสง พร้อมเอฟเฟกต์หิ่งห้อยลอยผ่าน"
+  },
+  {
+    "id": 13,
+    "title": "กลิ่นดอกไม้",
+    "artist": "Newery",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b2/81/0c/b2810cad-9fad-ed73-71fc-76a81f33dfdd/0849480072479_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/c3/a7/2ec3a7a1-78fb-efac-c3aa-5bc5220eab9e/mzaf_10494967788962621898.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/กลิ่นดอกไม้%20Newery",
+    "mood": "sad",
+    "tags": [
+      "กลิ่นอดีต",
+      "หอมละมุน",
+      "คิดถึง"
+    ],
+    "bpm": "ช้า (74 BPM)",
+    "lang": "th",
+    "animeId": 16,
+    "animeMatch": [
+      16,
+      3
+    ],
+    "reason": "กลิ่นดอกไม้และความทรงจำที่ยังคงหอมหวาน เข้ากับเรื่องราวซากุระและไดอารี่ใน I Want to Eat Your Pancreas",
+    "typoIdea": "ใช้ฟอนต์สไตล์ละมุนโปร่งแสง มีกลีบดอกซากุระปลิวผ่านตัวหนังสืออย่างช้าๆ"
+  },
+  {
+    "id": 14,
+    "title": "พิจารณา (Consider)",
+    "artist": "Musketeers ft. Maiyarap",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/36/67/693667e1-5321-801b-2762-2706f0a8ce26/25UM1IM09762.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/c3/28/acc32878-a7bd-58a1-7d09-06fc124e8b50/mzaf_15257925916120333587.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/พิจารณา%20(Consider)%20Musketeers%20ft.%20Maiyarap",
+    "mood": "chill",
+    "tags": [
+      "พิจารณา",
+      "มองตา",
+      "หลงใหล"
+    ],
+    "bpm": "ปานกลาง (86 BPM)",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14,
+      2
+    ],
+    "reason": "จังหวะชิลล์ฟังสบายสื่อถึงการมองเธอแล้วอยากให้เธอพิจารณาใจ เข้ากับชีวิตวัยรุ่นแสนอบอุ่นใน Horimiya",
+    "typoIdea": "ใช้ข้อความสไตล์แชท Pop-up ค่อยๆ ลอยขึ้นตรงกลางหน้าจอตามจังหวะท่อนแร็พ"
+  },
+  {
+    "id": 15,
+    "title": "ตอนนั้นในวันนี้",
+    "artist": "PURPEECH",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/09/b5/c1/09b5c14d-4d99-9fe9-4498-6c1472e04696/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1e/80/dd/1e80dd0d-2ff6-7173-428c-c208f3e49074/mzaf_6392198639159685250.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/ตอนนั้นในวันนี้%20PURPEECH",
+    "mood": "sad",
+    "tags": [
+      "คิดถึงวัยเด็ก",
+      "ย้อนเวลา",
+      "วันวาน"
+    ],
+    "bpm": "ปานกลาง (84 BPM)",
+    "lang": "th",
+    "animeId": 18,
+    "animeMatch": [
+      18,
+      7
+    ],
+    "reason": "บทเพลงรำลึกถึงมิตรภาพในวัยเด็กที่ไม่อาจย้อนกลับมา สื่อถึงกลุ่มเพื่อนและความทรงจำของเมมมะใน Anohana ได้ซาบซึ้งที่สุด",
+    "typoIdea": "ใช้ฟอนต์สไตล์ฟิล์มเก่าวินเทจ โทนภาพอบอุ่นพร้อม Grain บางๆ เพื่อให้ความรู้สึกคิดถึงวันวาน"
+  },
+  {
+    "id": 16,
+    "title": "17",
+    "artist": "Dept",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/e4/5b/9d/e45b9d12-d046-f885-177a-304697f3b09c/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/f3/15/20/f31520ce-a524-7764-6a2c-87c79333ec25/mzaf_8664520394720386170.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/17%20Dept",
+    "mood": "chill",
+    "tags": [
+      "อายุ17",
+      "สับสน",
+      "วัยรุ่นอินดี้"
+    ],
+    "bpm": "ปานกลาง (95 BPM)",
+    "lang": "th",
+    "animeId": 19,
+    "animeMatch": [
+      19,
+      6
+    ],
+    "reason": "เพลงอินดี้ป็อปสะท้อนความเคว้งคว้างของวัย 17 เข้ากับบุคลิกเก็บตัวและดนตรีร็อคของบ็อจจิใน Bocchi the Rock!",
+    "typoIdea": "ใช้ฟอนต์แนวโมเดิร์นคลีน วางสลับซ้ายขวาตามจังหวะเบส 8 บิต"
+  },
+  {
+    "id": 17,
+    "title": "เพลงรักเพลงแรก (Blooming)",
+    "artist": "LANDOKMAI",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/52/a1/5c/52a15c16-00df-6ffb-3f4a-8b702301dab1/25UMGIM90612.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/ce/0a/70ce0a58-ce48-8f9f-8d43-a3bdd030d1b0/mzaf_17078307960515154041.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/เพลงรักเพลงแรก%20(Blooming)%20LANDOKMAI",
+    "mood": "love",
+    "tags": [
+      "รักแรก",
+      "ดอกไม้ผลิบาน",
+      "โรแมนติก"
+    ],
+    "bpm": "ช้า (76 BPM)",
+    "lang": "th",
+    "animeId": 20,
+    "animeMatch": [
+      20,
+      2
+    ],
+    "reason": "เสียงร้องหวานชวนฝันถ่ายทอดความรู้สึกรักแรกที่เบ่งบาน เข้ากับความรักอันบริสุทธิ์ของ ซาวาโกะ และ คาเซฮายะ ใน Kimi ni Todoke",
+    "typoIdea": "ใช้ฟอนต์สไตล์เรียบหรูสีขาวนวล พร้อมดอกไม้บานประกอบในท่อนคำว่า 'Blooming'"
+  },
+  {
+    "id": 18,
+    "title": "ถ้าเธอรักฉันจริง",
+    "artist": "Three Man Down",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/17/78/67177823-eea6-843e-2fd6-1cb45da0fa62/888332917599.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/02/13/f4021324-132e-c5de-8b8e-8dca141c1880/mzaf_3517459293482534577.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/ถ้าเธอรักฉันจริง%20Three%20Man%20Down",
+    "mood": "sad",
+    "tags": [
+      "ปล่อยไป",
+      "รักแท้",
+      "อกหัก"
+    ],
+    "bpm": "ปานกลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 18,
+    "animeMatch": [
+      18
+    ],
+    "reason": "ดนตรีร็อคระบายความอัดอั้น เข้ากับฉากแอคชั่นและความสูญเสียอันน่าสะเทือนใจใน Jujutsu Kaisen",
+    "typoIdea": "ใช้ฟอนต์ Cinematic ตัวกว้างสีแดง-ดำ พร้อมเอฟเฟกต์สั่นกระแทกจังหวะกลอง"
+  },
+  {
+    "id": 19,
+    "title": "คิด(แต่ไม่)ถึง (Same Page?)",
+    "artist": "Tilly Birds",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/06/d7/83/06d783b3-18cb-b180-523b-fd9b9efb0522/888332921213.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/00/20/e500207c-a120-ad6f-7da9-c1ad1d7f6942/mzaf_640349242702877208.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/คิด(แต่ไม่)ถึง%20(Same%20Page?)%20Tilly%20Birds",
+    "mood": "sad",
+    "tags": [
+      "คิดถึงแต่ไม่ถึง",
+      "อดีต",
+      "น้ำตา"
+    ],
+    "bpm": "ปานกลาง (92 BPM)",
+    "lang": "th",
+    "animeId": 15,
+    "animeMatch": [
+      15,
+      3
+    ],
+    "reason": "เนื้อเพลงสื่อถึงระยะทางและความรู้สึกคิดถึงที่ไม่อาจส่งไปถึง เข้ากับความห่างไกลใน 5 Centimeters per Second ได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "เล่นคำว่า 'คิด' แล้วเว้นจังหวะให้คำว่า 'แต่ไม่ถึง' ค่อยๆ โผล่ขึ้นมาในโทนสีฟ้าหม่น"
+  },
+  {
+    "id": 20,
+    "title": "เพื่อนเล่น ไม่เล่นเพื่อน",
+    "artist": "Tilly Birds ft. MILLI",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3a/d1/4c/3ad14c38-72fa-5cbc-558b-7ee6ef9d101e/888332916318.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/95/0a/8a/950a8a75-b236-bc32-e016-23fc81dd6af0/mzaf_15220071794383537599.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/เพื่อนเล่น%20ไม่เล่นเพื่อน%20Tilly%20Birds%20ft.%20MILLI",
+    "mood": "love",
+    "tags": [
+      "เฟรนด์โซน",
+      "เพื่อนสนิท",
+      "สนุกสนาน"
+    ],
+    "bpm": "เร็ว (120 BPM)",
+    "lang": "th",
+    "animeId": 2,
+    "animeMatch": [
+      2,
+      6
+    ],
+    "reason": "ความสนุกสนานและจังหวะกวนๆ ของการไม่อยากเป็นแค่เพื่อน เข้ากับคู่กัดใน Kaguya-sama อย่างที่สุด",
+    "typoIdea": "ใช้ฟอนต์สไตล์เรโทรขยับเด้ง (Bounce) ตามจังหวะแร็พของ MILLI พร้อมป้ายสัญลักษณ์ Warning โทนเหลือง-ดำ"
+  },
+  {
+    "id": 21,
+    "title": "เสแสร้ง (Pretend)",
+    "artist": "Paper Planes ft. MOON",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6c/fa/65/6cfa6522-e9ff-af0a-eb1f-80866c7f90ba/888332891172.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e2/f4/8e/e2f48ee5-396c-5ba7-1869-6f7a0d571e7a/mzaf_16804993014002264430.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/เสแสร้ง%20(Pretend)%20Paper%20Planes%20ft.%20MOON",
+    "mood": "hype",
+    "tags": [
+      "ร็อคสะใจ",
+      "โกหก",
+      "เดือด"
+    ],
+    "bpm": "เร็ว (138 BPM)",
+    "lang": "th",
+    "animeId": 11,
+    "animeMatch": [
+      11,
+      10
+    ],
+    "reason": "ดนตรีโพสต์ฮาร์ดคอร์สุดเข้มข้นระเบิดอารมณ์ความเจ็บปวด เข้ากับฉากต่อสู้แห่งโชคชะตาใน Attack on Titan",
+    "typoIdea": "ใช้ฟอนต์แนวร็อคฉีกขาด (Distorted) สลับภาพเร็วตามจังหวะกระเดื่องกลองแบบสปีดแรป"
+  },
+  {
+    "id": 22,
+    "title": "ทรงอย่างแบด (Bad Boy)",
+    "artist": "Paper Planes",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/90/a0/8c90a081-b8f8-8d89-acf7-3531400bd49d/mzaf_1875861912879165721.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/ทรงอย่างแบด%20(Bad%20Boy)%20Paper%20Planes",
+    "mood": "hype",
+    "tags": [
+      "แบดบอย",
+      "ฮิตทั่วเมือง",
+      "พลังล้น"
+    ],
+    "bpm": "เร็ว (145 BPM)",
+    "lang": "th",
+    "animeId": 6,
+    "animeMatch": [
+      6,
+      11
+    ],
+    "reason": "เพลงพังค์ร็อคพลังล้นหลาม ปลุกเร้าความตื่นเต้น เหมาะมากกับฉากตบลูกยางสุดมันส์ใน Haikyuu!!",
+    "typoIdea": "ตัวอักษรขยายใหญ่กระแทกหน้าจอ (Explosion) พร้อมสีนีออนม่วง-ส้ม ตามบีทท่อนฮุค 'ทรงอย่างแบด แซดอย่างบ่อย'"
+  },
+  {
+    "id": 23,
+    "title": "ถ้าเราเจอกันอีก (Until Then)",
+    "artist": "Tilly Birds",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/31/bc/03/31bc03c0-7ddb-9615-c0f1-d97ee1fb0e08/888332913805.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ef/40/e2/ef40e2a5-462d-3900-e800-ac36e02fc442/mzaf_2677602440669876174.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%96%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%A3%E0%B8%B2%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B5%E0%B8%81%20(Until%20Then)%20Tilly%20Birds",
+    "mood": "sad",
+    "tags": [
+      "คิดถึง",
+      "จากลา",
+      "ความทรงจำ"
+    ],
+    "bpm": "ช้า (74 BPM)",
+    "lang": "th",
+    "animeId": 22,
+    "animeMatch": [
+      22
+    ],
+    "reason": "การรอคอยและการจากลาที่งดงาม เข้ากับคำอธิษฐานและความทรงจำของฟรีเรนใน Frieren อย่างสมบูรณ์",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏในหมอกควัน แล้วลอยขึ้นสู่ท้องฟ้าในท่อนฮุค 'ถ้าเราได้เจอกันอีก'"
+  },
+  {
+    "id": 24,
+    "title": "พิง (เพลงประกอบละคร \"กระเช้าสีดา\")",
+    "artist": "NONT TANONT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/68/25/6668253c-aa17-85c5-4ad4-d112e0d7cd1e/mzaf_4161458375630754491.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%B4%E0%B8%87%20(%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%AD%E0%B8%9A%E0%B8%A5%E0%B8%B0%E0%B8%84%E0%B8%A3%20%22%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%8A%E0%B9%89%E0%B8%B2%E0%B8%AA%E0%B8%B5%E0%B8%94%E0%B8%B2%22)%20NONT%20TANONT",
+    "mood": "love",
+    "tags": [
+      "อบอุ่น",
+      "ที่พึ่งพา",
+      "โรแมนติก"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 20,
+    "animeMatch": [
+      20
+    ],
+    "reason": "ความอบอุ่นของการเป็นที่พึ่งพาให้คนที่เรารัก เข้ากับความอ่อนโยนของคาเซฮายะใน Kimi ni Todoke",
+    "typoIdea": "ใช้ฟอนต์สีพาสเทลขอบมน แอนิเมชันลอยเบาๆ เหมือนถูกโอบกอด"
+  },
+  {
+    "id": 25,
+    "title": "รักแท้ (เพลงจากละคร \"คุณชาย\")",
+    "artist": "NuNew",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e6/c3/94/e6c39457-6511-4a34-467b-a78c4b170f5d/888332907446.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d0/88/f8/d088f87c-1135-1816-2d69-c33e80f57088/mzaf_4799799825808235537.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%81%E0%B8%97%E0%B9%89%20(%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%A5%E0%B8%B0%E0%B8%84%E0%B8%A3%20%22%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%8A%E0%B8%B2%E0%B8%A2%22)%20NuNew",
+    "mood": "love",
+    "tags": [
+      "รักแท้",
+      "หวานซึ้ง",
+      "นิรันดร์"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 17,
+    "animeMatch": [
+      17
+    ],
+    "reason": "ความรักที่ข้ามผ่านทุกอุปสรรคและโชคชะตา สอดคล้องกับความรักของนานามิและโทโมเอะใน Kamisama Kiss",
+    "typoIdea": "ตัวหนังสือสีทองเรืองรอง พร้อมกลีบดอกไม้โปรยปรายรอบข้อความ"
+  },
+  {
+    "id": 26,
+    "title": "สายตาหลอกกันไม่ได้ (Eyes don't lie)",
+    "artist": "Ink Waruntorn",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/90/c3/5b/90c35b5b-ba74-e3fb-1a0e-6ba03e914c93/0840102441345_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/64/a6/db/64a6db06-8931-cd05-30a7-6ff976ed96ca/mzaf_1200240892676868907.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%95%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%AD%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%20(Eyes%20don't%20lie)%20Ink%20Waruntorn",
+    "mood": "love",
+    "tags": [
+      "แอบรัก",
+      "สายตา",
+      "เขิน"
+    ],
+    "bpm": "ปานกลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14
+    ],
+    "reason": "สายตาที่ไม่อาจโกหกความรู้สึกเวลาเผลอมองเธอ เข้ากับความน่ารักของโฮริและมิยามุระใน Horimiya",
+    "typoIdea": "ซูมตัวหนังสือพร้อมเอฟเฟกต์เบลอพื้นหลัง เน้นคำว่า 'สายตามันหลอกกันไม่ได้'"
+  },
+  {
+    "id": 27,
+    "title": "ถ้าเธอรักใครคนหนึ่ง (เพลงประกอบภาพยนตร์ \"บุพเพสันนิวาส 2\")",
+    "artist": "Ink Waruntorn",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d4/22/b4/d422b40d-4edb-b2d1-327f-a670e09ccb1d/888332908498.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/20/52/4c/20524cf3-73b9-9c39-5204-2006ef9dfe78/mzaf_1394626490362469262.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%96%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%83%E0%B8%84%E0%B8%A3%E0%B8%84%E0%B8%99%E0%B8%AB%E0%B8%99%E0%B8%B6%E0%B9%88%E0%B8%87%20(%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%AD%E0%B8%9A%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%A2%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B9%8C%20%22%E0%B8%9A%E0%B8%B8%E0%B8%9E%E0%B9%80%E0%B8%9E%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%99%E0%B8%B4%E0%B8%A7%E0%B8%B2%E0%B8%AA%202%22)%20Ink%20Waruntorn",
+    "mood": "love",
+    "tags": [
+      "ความรัก",
+      "อบอุ่น",
+      "หวังดี"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "th",
+    "animeId": 9,
+    "animeMatch": [
+      9
+    ],
+    "reason": "ความรักแท้ที่อยู่เหนือกาลเวลาและมิติ เข้ากับสายใยผูกพันของทาคิและมิตสึฮะใน Your Name",
+    "typoIdea": "ตัวหนังสือสไตล์เส้นสายด้ายแดงแห่งโชคชะตา ค่อยๆ เชื่อมโยงเข้าหากัน"
+  },
+  {
+    "id": 28,
+    "title": "คิดไม่ออก",
+    "artist": "TangBadVoice & BILLKIN",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/7e/28/42/7e2842b8-ae58-f98f-98a0-31b97f7e3b22/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/21/0d/1e/210d1e32-0b9a-c77b-6ccd-ffd672277703/mzaf_15612215393812234031.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%AD%E0%B8%AD%E0%B8%81%20TangBadVoice%20%26%20BILLKIN",
+    "mood": "love",
+    "tags": [
+      "น่ารัก",
+      "มีความสุข",
+      "รอยยิ้ม"
+    ],
+    "bpm": "ปานกลาง (94 BPM)",
+    "lang": "th",
+    "animeId": 27,
+    "animeMatch": [
+      27
+    ],
+    "reason": "ความอลหม่านและคอมเมดี้ชวนหัวเราะ เข้ากับครอบครัวฟอร์เจอร์สุดป่วนใน Spy x Family",
+    "typoIdea": "ตัวหนังสือป็อปอัปสไตล์หนังสือการ์ตูนคอมมิค สลับกรอบคำพูดน่ารักๆ"
+  },
+  {
+    "id": 29,
+    "title": "หน้าหนาวที่แล้ว",
+    "artist": "THE TOYS",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/24/ff/5324ff49-9bb2-46ad-6a00-8502cb671389/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c4/36/1c/c4361c0f-fcf7-d584-f136-21d681cd9ee4/mzaf_13703260627470484180.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B2%E0%B8%A7%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%20THE%20TOYS",
+    "mood": "chill",
+    "tags": [
+      "ลมหนาว",
+      "คิดถึง",
+      "อดีต"
+    ],
+    "bpm": "ปานกลาง (86 BPM)",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      1
+    ],
+    "reason": "ความหนาวเหน็บและความทรงจำในฤดูกาลที่ผ่านไป เข้ากับบรรยากาศการจากลาใน Your Lie in April",
+    "typoIdea": "ตัวหนังสือมีเอฟเฟกต์ไอน้ำและละอองหิมะโปรยปราย"
+  },
+  {
+    "id": 30,
+    "title": "ข้างกัน (City) [feat. ออม TELEx TELEXs]",
+    "artist": "Three Man Down",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ef/eb/7c/efeb7cbd-2252-8629-d41b-f6b72c2b1650/888332918770.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/53/b1/2f53b12f-d984-4e4d-0235-e2041b5d3311/mzaf_632423543988720742.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B1%E0%B8%99%20(City)%20%5Bfeat.%20%E0%B8%AD%E0%B8%AD%E0%B8%A1%20TELEx%20TELEXs%5D%20Three%20Man%20Down",
+    "mood": "love",
+    "tags": [
+      "ข้างกัน",
+      "อบอุ่น",
+      "ค่ำคืน"
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "lang": "th",
+    "animeId": 7,
+    "animeMatch": [
+      7
+    ],
+    "reason": "การมีเธออยู่ข้างๆ แม้วันที่ฝนตกหรือท้องฟ้ามืดมน เข้ากับฮินะและโฮดากะใน Weathering With You",
+    "typoIdea": "วางข้อความสองฝั่งแล้ววิ่งเข้ามาประกบกันตรงกลางจังหวะเพลง"
+  },
+  {
+    "id": 31,
+    "title": "ฝนตกไหม",
+    "artist": "Three Man Down",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fc/22/ba/fc22ba00-0d93-66cd-dce0-ded6923c8537/888332922777.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/d2/65/34d2659e-148d-c029-0cc8-60d75ca37f13/mzaf_12794166550202757517.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9D%E0%B8%99%E0%B8%95%E0%B8%81%E0%B9%84%E0%B8%AB%E0%B8%A1%20Three%20Man%20Down",
+    "mood": "sad",
+    "tags": [
+      "ฝนตก",
+      "เหงา",
+      "คิดถึงคนเก่า"
+    ],
+    "bpm": "ปานกลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 13,
+    "animeMatch": [
+      13
+    ],
+    "reason": "ความคิดถึงที่พัดมาพร้อมกับสายฝน เข้ากับหยาดฝนแห่งสวนชินจูกุใน The Garden of Words",
+    "typoIdea": "ตัวหนังสือไล่ระดับความโปร่งใส คล้ายมองผ่านกระจกที่มีหยดน้ำฝนเกาะ"
+  },
+  {
+    "id": 32,
+    "title": "วันเกิดฉันปีนี้ (HBD to me)",
+    "artist": "Three Man Down",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/0b/4e/290b4ec0-c24d-8f11-695d-acc8ebb145b4/888332914536.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/37/b6/a6/37b6a6a3-1dca-1397-409c-cd4670b55122/mzaf_4887075626909576367.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%81%E0%B8%B4%E0%B8%94%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%9B%E0%B8%B5%E0%B8%99%E0%B8%B5%E0%B9%89%20(HBD%20to%20me)%20Three%20Man%20Down",
+    "mood": "sad",
+    "tags": [
+      "วันเกิด",
+      "ไม่มีเธอ",
+      "เจ็บปวด"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 10,
+    "animeMatch": [
+      10
+    ],
+    "reason": "ความเหงาและความเจ็บปวดในวันที่ไม่มีใครเคียงข้าง สอดคล้องกับความเดียวดายใน A Silent Voice",
+    "typoIdea": "ตัวหนังสือสีเทาหม่น ค่อยๆ ดับลงเหมือนแสงเทียนบนเค้กวันเกิด"
+  },
+  {
+    "id": 33,
+    "title": "เวลาเธอยิ้ม",
+    "artist": "Polycat",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/83/11/6f/83116f31-73a4-3df3-6c5f-6658aabbea49/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2f/3f/ac/2f3fac81-9e83-4ae6-5171-841804b44c6f/mzaf_16866220623392363387.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%A2%E0%B8%B4%E0%B9%89%E0%B8%A1%20Polycat",
+    "mood": "love",
+    "tags": [
+      "รอยยิ้ม",
+      "ตกหลุมรัก",
+      "สดใส"
+    ],
+    "bpm": "เร็ว (118 BPM)",
+    "lang": "th",
+    "animeId": 20,
+    "animeMatch": [
+      20
+    ],
+    "reason": "รอยยิ้มของเธอที่ทำให้โลกทั้งใบสดใส เข้ากับรอยยิ้มของซาวาโกะใน Kimi ni Todoke",
+    "typoIdea": "ตัวหนังสือสีชมพูส้มสว่างวาบขึ้นมา พร้อมเอฟเฟกต์ประกายดาววิ้งค์ๆ"
+  },
+  {
+    "id": 34,
+    "title": "อาวรณ์ (I Want You)",
+    "artist": "Polycat",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a3/22/d8/a322d8f4-3e84-0fc7-9b40-b3903966e639/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/5a/f7/e55af74d-5e28-ce04-ba12-c57fbe58af12/mzaf_9994674882709681890.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%93%E0%B9%8C%20(I%20Want%20You)%20Polycat",
+    "mood": "sad",
+    "tags": [
+      "อาวรณ์",
+      "คิดถึง",
+      "ยุค80s"
+    ],
+    "bpm": "ปานกลาง (96 BPM)",
+    "lang": "th",
+    "animeId": 15,
+    "animeMatch": [
+      15
+    ],
+    "reason": "ความอาวรณ์และเสียดายช่วงเวลาที่ไม่อาจย้อนคืน เข้ากับความสัมพันธ์ระยะไกลใน 5 Centimeters per Second",
+    "typoIdea": "สไตล์ฟอนต์เรโทรย้อนยุค 80s แสงนีออนม่วงสลับชมพูสะท้อนความเหงา"
+  },
+  {
+    "id": 35,
+    "title": "พบกันใหม่",
+    "artist": "Polycat",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/83/11/6f/83116f31-73a4-3df3-6c5f-6658aabbea49/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/db/c6/d7dbc6b7-df68-509b-393c-d2e7461e4782/mzaf_16441888389148470421.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%9A%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%20Polycat",
+    "mood": "sad",
+    "tags": [
+      "บอกลา",
+      "น้ำตา",
+      "ความทรงจำ"
+    ],
+    "bpm": "เร็ว (124 BPM)",
+    "lang": "th",
+    "animeId": 18,
+    "animeMatch": [
+      18
+    ],
+    "reason": "การกล่าวลาที่หวังว่าจะได้พบกันอีก เข้ากับฉากบอกลาทั้งน้ำตาของเมมมะใน Anohana",
+    "typoIdea": "ตัวหนังสือค่อยๆ จางหายไปพร้อมการโบกมือลาของตัวละคร"
+  },
+  {
+    "id": 36,
+    "title": "ซ่อนกลิ่น",
+    "artist": "Palmy",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7a/f1/7d/7af17dac-68dc-1ec7-39be-35186bf08a0a/888332930772.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/08/12/36/0812360d-4479-b29d-5275-931b1e541694/mzaf_5285055444520979895.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%8B%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%81%E0%B8%A5%E0%B8%B4%E0%B9%88%E0%B8%99%20Palmy",
+    "mood": "sad",
+    "tags": [
+      "กลิ่นอาย",
+      "เก็บซ่อน",
+      "หวนคิด"
+    ],
+    "bpm": "ช้า (76 BPM)",
+    "lang": "th",
+    "animeId": 12,
+    "animeMatch": [
+      12
+    ],
+    "reason": "กลิ่นหอมของความรักที่ต้องซ่อนไว้ในใจ สอดคล้องกับความรักในป่าหิ่งห้อยของ Hotarubi no Mori e",
+    "typoIdea": "ตัวหนังสือเลือนรางซ่อนอยู่ในเงามืดแล้วสว่างขึ้นตามจังหวะเคาะระนาด"
+  },
+  {
+    "id": 37,
+    "title": "ดวงใจ",
+    "artist": "Palmy",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6d/8c/7d/6d8c7d8b-3549-c6df-2da2-7a89cdb73fce/888332924092.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/6e/2d/806e2d43-db51-edb6-19ed-dfd13aa92f99/mzaf_5101326889103556069.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B9%83%E0%B8%88%20Palmy",
+    "mood": "love",
+    "tags": [
+      "ดวงใจ",
+      "รักมาก",
+      "อบอุ่น"
+    ],
+    "bpm": "ปานกลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 8,
+    "animeMatch": [
+      8
+    ],
+    "reason": "การมอบทั้งดวงใจให้คนที่รัก เข้ากับความทุ่มเทและการปกป้องของริวจิใน Toradora!",
+    "typoIdea": "ฟอนต์ลายมืออบอุ่น วางลอยบนฉากพระอาทิตย์ตกดิน"
+  },
+  {
+    "id": 38,
+    "title": "ทุกนาทีที่สวยงาม",
+    "artist": "NONT TANONT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/5e/2b/94/5e2b94f0-77f5-62e3-8f3c-d5e76405b8bc/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/54/e7/1954e7f4-b211-849d-03a4-94a515c197df/mzaf_10611984984504241868.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%B8%E0%B8%81%E0%B8%99%E0%B8%B2%E0%B8%97%E0%B8%B5%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AA%E0%B8%A7%E0%B8%A2%E0%B8%87%E0%B8%B2%E0%B8%A1%20NONT%20TANONT",
+    "mood": "love",
+    "tags": [
+      "ขอบคุณ",
+      "ช่วงเวลาดีๆ",
+      "ซึ้ง"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 4,
+    "animeMatch": [
+      4
+    ],
+    "reason": "การขอบคุณทุกช่วงเวลาที่ได้ร่วมเดินทางด้วยกัน เข้ากับการผจญภัยของจิฮิโระใน Spirited Away",
+    "typoIdea": "ตัวหนังสือไล่เฉดสีรุ้งอ่อนๆ ค่อยๆ ปรากฏพร้อมวิวทิวทัศน์กว้าง"
+  },
+  {
+    "id": 39,
+    "title": "ยินดี (เพลงประกอบละครมาตาลดา ช่อง 3)",
+    "artist": "sarah salola",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/bb/f2/7c/bbf27ca3-0154-100f-38bb-d5805aaa0b5d/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/4a/bb/aa/4abbaad0-6911-aa8c-6b45-4a99f5c54773/mzaf_9453094306125921868.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A2%E0%B8%B4%E0%B8%99%E0%B8%94%E0%B8%B5%20(%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%AD%E0%B8%9A%E0%B8%A5%E0%B8%B0%E0%B8%84%E0%B8%A3%E0%B8%A1%E0%B8%B2%E0%B8%95%E0%B8%B2%E0%B8%A5%E0%B8%94%E0%B8%B2%20%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%203)%20sarah%20salola",
+    "mood": "sad",
+    "tags": [
+      "ยินดี",
+      "ปล่อยเธอไป",
+      "เจ็บลึก"
+    ],
+    "bpm": "ช้า (74 BPM)",
+    "lang": "th",
+    "animeId": 16,
+    "animeMatch": [
+      16
+    ],
+    "reason": "การยินดีที่ได้พบและรักเธอแม้เวลาจะแสนสั้น เข้ากับความทรงจำอันล้ำค่าใน I Want to Eat Your Pancreas",
+    "typoIdea": "ตัวหนังสือบางเรียบหรู ค่อยๆ เขียนขึ้นทีละตัวอักษรเหมือนไดอารี่"
+  },
+  {
+    "id": 40,
+    "title": "เอาปากกามาวง",
+    "artist": "BELL WARISARA",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/21/8c/1c/218c1c05-c60a-457d-f3ae-4818ff2a8125/0840102466300_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/29/08/db/2908db02-32cc-c24e-50a6-4583a85b5369/mzaf_5867430908003016888.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%AD%E0%B8%B2%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%81%E0%B8%B2%E0%B8%A1%E0%B8%B2%E0%B8%A7%E0%B8%87%20BELL%20WARISARA",
+    "mood": "love",
+    "tags": [
+      "น่ารัก",
+      "แอบรัก",
+      "สารภาพ"
+    ],
+    "bpm": "ปานกลาง (100 BPM)",
+    "lang": "th",
+    "animeId": 2,
+    "animeMatch": [
+      2
+    ],
+    "reason": "ความน่ารักของการท้าให้เอาปากกามาวงจุดที่ไม่น่ารัก เข้ากับความซึนเดเระใน Kaguya-sama",
+    "typoIdea": "มีเอฟเฟกต์วงกลมปากกาสีแดงวงรอบคำสำคัญตามจังหวะเพลง"
+  },
+  {
+    "id": 41,
+    "title": "B Blood Type",
+    "artist": "CHRRISSA",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/9f/64/86/9f6486f1-746c-d3b5-1569-3a6294cdfea0/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/ca/32/cb/ca32cbd3-6e00-5d33-72c4-7d71ee456d73/mzaf_15308886385266869376.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/B%20Blood%20Type%20CHRRISSA",
+    "mood": "chill",
+    "tags": [
+      "ตัดพ้อ",
+      "โสด",
+      "ฮิตไวรัล"
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14
+    ],
+    "reason": "เพลงตัดพ้อสนุกๆ ของคนโสด เข้ากับโมเมนต์คอมเมดี้ใน Horimiya",
+    "typoIdea": "ตัวหนังสือขยับสลับสีสนุกสนาน พร้อมป้ายกรุ๊ปเลือด B ป๊อปอัป"
+  },
+  {
+    "id": 42,
+    "title": "สลักจิต",
+    "artist": "Pop Pongkool",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8c/69/cb/8c69cba7-b440-a3b3-b9c0-8e409b8613f2/888332908481.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/6e/34/e66e34c2-c971-ef2c-2e0f-f8a99e220912/mzaf_7695861381642299193.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%88%E0%B8%B4%E0%B8%95%20(feat.%20%E0%B8%94%E0%B8%B2%20%E0%B9%80%E0%B8%AD%E0%B9%87%E0%B8%99%E0%B9%82%E0%B8%94%E0%B8%A3%E0%B8%9F%E0%B8%B4%E0%B8%99)%20Pop%20Pongkool",
+    "mood": "sad",
+    "tags": [
+      "สลักจิต",
+      "รักฝังใจ",
+      "ดราม่า"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 3,
+    "animeMatch": [
+      3
+    ],
+    "reason": "ความรักที่สลักลึกในจิตใจไม่อาจลบเลือน เข้ากับภารกิจส่งความในใจของไวโอเล็ตใน Violet Evergarden",
+    "typoIdea": "ตัวหนังสือแกะสลักเรืองแสงสีทองสว่างวาบบนฉากมืด"
+  },
+  {
+    "id": 43,
+    "title": "ฝันถึงแฟนเก่า",
+    "artist": "Three Man Down",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a1/32/f9/a132f91c-ad0e-a6c0-eb86-ff65dbe01fc0/888332920254.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8a/75/33/8a75330f-429f-7069-6f3b-83061bd3d265/mzaf_2681671476093048229.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9D%E0%B8%B1%E0%B8%99%E0%B8%96%E0%B8%B6%E0%B8%87%E0%B9%81%E0%B8%9F%E0%B8%99%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%B2%20Three%20Man%20Down",
+    "mood": "sad",
+    "tags": [
+      "แฟนเก่า",
+      "ความฝัน",
+      "ไม่ลืม"
+    ],
+    "bpm": "ปานกลาง (92 BPM)",
+    "lang": "th",
+    "animeId": 18,
+    "animeMatch": [
+      18
+    ],
+    "reason": "การฝันถึงเรื่องราวเก่าๆ ที่ไม่มีวันกลับมา เข้ากับความผูกพันของกลุ่มบัสเตอส์ใน Anohana",
+    "typoIdea": "เอฟเฟกต์ตัวหนังสือเบลอแบบความฝัน (Dream Blur) สลับภาพย้อนอดีต"
+  },
+  {
+    "id": 44,
+    "title": "golden hour",
+    "artist": "JVKE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8d/1a/7b/8d1a7b44-316f-7c7f-4380-935673fb697a/5056167175650.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/02/8c/30028c8a-a125-5466-bcc6-27a83b1c0135/mzaf_16911571635366913039.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/golden%20hour%20JVKE",
+    "mood": "love",
+    "tags": [
+      "แสงสีทอง",
+      "โรแมนติก",
+      "เปียโนหรู"
+    ],
+    "bpm": "ปานกลาง (94 BPM)",
+    "lang": "en",
+    "animeId": 9,
+    "animeMatch": [
+      9
+    ],
+    "reason": "แสงสีทองยามเย็นและเมโลดี้เปียโนอันวิจิตร เข้ากับฉาก Golden Hour บนยอดเขาใน Your Name อย่างไร้ที่ติ",
+    "typoIdea": "ตัวหนังสือสีทองแวววาวขยับพลิ้วไหวตามคอร์ดเปียโนระยิบระยับ"
+  },
+  {
+    "id": 45,
+    "title": "Until I Found You",
+    "artist": "Stephen Sanchez",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/64/d2/c5/64d2c511-67f4-ae09-5153-d39c3da413a3/21UMGIM75467.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/82/c1/5382c1d4-ddba-aa2b-90df-57268895fac9/mzaf_8926201202931541051.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Until%20I%20Found%20You%20Stephen%20Sanchez",
+    "mood": "love",
+    "tags": [
+      "วินเทจ",
+      "รักแท้",
+      "50s vibe"
+    ],
+    "bpm": "ช้า (68 BPM)",
+    "lang": "en",
+    "animeId": 17,
+    "animeMatch": [
+      17
+    ],
+    "reason": "บรรยากาศวินเทจโรแมนติกที่มั่นคง เข้ากับความรักนิรันดร์ของโทโมเอะใน Kamisama Kiss",
+    "typoIdea": "ตัวหนังสือสไตล์เรโทร 1950s สีครีม-ทอง สลับแสง Glow นุ่มนวล"
+  },
+  {
+    "id": 46,
+    "title": "Die With A Smile",
+    "artist": "Lady Gaga & Bruno Mars",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/11/ae/f2/11aef294-f57c-bab9-c9fc-529162984e62/24UMGIM85348.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/6a/99/076a99ed-b946-431b-6f1f-54fa187ca5bd/mzaf_8102882277995122875.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Die%20With%20A%20Smile%20Lady%20Gaga%20%26%20Bruno%20Mars",
+    "mood": "sad",
+    "tags": [
+      "รักนิรันดร์",
+      "ซึ้งกินใจ",
+      "พลังเสียง"
+    ],
+    "bpm": "ช้า (52 BPM)",
+    "lang": "en",
+    "animeId": 25,
+    "animeMatch": [
+      25
+    ],
+    "reason": "ความรักที่ยอมเคียงข้างกันจนวินาทีสุดท้าย แม้โลกจะพังทลาย เข้ากับฉากไคลแม็กซ์ของ Cyberpunk: Edgerunners",
+    "typoIdea": "ตัวหนังสือสไตล์ Cyberpunk แตกสลาย มีแสงนีออนสีฟ้า-ชมพูสลับกระพริบ"
+  },
+  {
+    "id": 47,
+    "title": "Past Lives",
+    "artist": "BØRNS",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/07/37/8e/07378ef3-7950-ba76-4280-9acb0e5d032a/15UMGIM42534.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/b6/5b/bab65b54-b62b-afe7-7b2c-42d17c175479/mzaf_180048884343447783.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Past%20Lives%20B%C3%98RNS",
+    "mood": "chill",
+    "tags": [
+      "อดีตชาติ",
+      "ผูกพัน",
+      "ชวนฝัน"
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "lang": "en",
+    "animeId": 12,
+    "animeMatch": [
+      12
+    ],
+    "reason": "เพลงแห่งอดีตชาติและสายใยที่เชื่อมโยงกัน เข้ากับความรักต่างภพใน Hotarubi no Mori e",
+    "typoIdea": "ตัวหนังสือลอยละล่องเหมือนควันหมอกโปร่งใส ซ้อนทับฉากป่าไม้"
+  },
+  {
+    "id": 48,
+    "title": "Sweater Weather",
+    "artist": "The Neighbourhood",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/28/71/00/287100fb-5c31-0195-5343-e6b3625886d0/886443969834.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/37/20/8c372047-2727-8054-9411-0e4867643dd8/mzaf_10169659262182214119.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Sweater%20Weather%20The%20Neighbourhood",
+    "mood": "chill",
+    "tags": [
+      "ฤดูหนาว",
+      "ไอคอนิก",
+      "อินดี้ร็อค"
+    ],
+    "bpm": "เร็ว (118 BPM)",
+    "lang": "en",
+    "animeId": 7,
+    "animeMatch": [
+      7
+    ],
+    "reason": "บรรยากาศฤดูหนาวและไออุ่น เข้ากับโทนฝนตกและความหนาวเย็นใน Weathering With You",
+    "typoIdea": "ตัวหนังสือสไตล์อินดี้มินิมอล มีละอองความเย็นและควันจางๆ"
+  },
+  {
+    "id": 49,
+    "title": "Daylight",
+    "artist": "David Kushner",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b9/f2/2b/b9f22b26-d962-70de-6d85-674139ded7cc/842812190988_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/93/94/52/939452d5-e74e-a819-2f16-7c9148f3419a/mzaf_17998933934090835373.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Daylight%20David%20Kushner",
+    "mood": "sad",
+    "tags": [
+      "ดาร์ก",
+      "เสียงทุ้ม",
+      "ดนตรีขลัง"
+    ],
+    "bpm": "ช้า (65 BPM)",
+    "lang": "en",
+    "animeId": 21,
+    "animeMatch": [
+      21
+    ],
+    "reason": "โทนดนตรีดาร์กเข้มข้นและความลับในความมืด เข้ากับปมดราม่าและการล้างแค้นใน Oshi no Ko",
+    "typoIdea": "ตัวหนังสือสีขาวตัดกับพื้นหลังสีดำสนิท ค่อยๆ สว่างขึ้นเมื่อถึงท่อน Daylight"
+  },
+  {
+    "id": 50,
+    "title": "Glimpse of Us",
+    "artist": "Joji",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d0/2a/43/d02a433a-3ab8-9a94-b07d-1dc599b64966/93624864387.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/53/c2/0c53c240-300a-5ddf-fc86-3a54e1b73a78/mzaf_13555682862214742934.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Glimpse%20of%20Us%20Joji",
+    "mood": "sad",
+    "tags": [
+      "เปียโนบาดลึก",
+      "คิดถึงคนเก่า",
+      "น้ำตาซึม"
+    ],
+    "bpm": "ช้า (69 BPM)",
+    "lang": "en",
+    "animeId": 15,
+    "animeMatch": [
+      15
+    ],
+    "reason": "เสียงเปียโนบาดลึกที่ยังมองเห็นภาพเธอในตัวคนอื่น เข้ากับความเจ็บปวดใน 5 Centimeters per Second",
+    "typoIdea": "ตัวหนังสือค่อยๆ เบลอและมีรอยหยดน้ำตาไหลผ่านข้อความ"
+  },
+  {
+    "id": 51,
+    "title": "Die For You",
+    "artist": "The Weeknd",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e2/61/f8/e261f8c1-73db-9a7a-c89e-1068f19970e0/16UMGIM67863.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/50/50/1a/50501a86-bd74-e90d-8a56-68c9b5e6e7d6/mzaf_4588197682084244913.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Die%20For%20You%20The%20Weeknd",
+    "mood": "love",
+    "tags": [
+      "ยอมตายเพื่อเธอ",
+      "อารมณ์หนักแน่น",
+      "R&B"
+    ],
+    "bpm": "ปานกลาง (67 BPM)",
+    "lang": "en",
+    "animeId": 25,
+    "animeMatch": [
+      25
+    ],
+    "reason": "ความหนักแน่นของการยอมสละทุกสิ่งเพื่อคนสำคัญ เข้ากับการต่อสู้สุดชีวิตใน Jujutsu Kaisen",
+    "typoIdea": "ตัวหนังสือหนาสไตล์ Cinematic กระแทกสั่นไหวตามจังหวะเสียงเบส"
+  },
+  {
+    "id": 52,
+    "title": "Dandelions",
+    "artist": "Ruth B.",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/24/f7/82/24f782af-5aea-55e7-bf67-2f4e62664fe8/886446439341.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bc/5a/88/bc5a881d-dc44-fc7f-92fd-376680957969/mzaf_10218454983981161930.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Dandelions%20Ruth%20B.",
+    "mood": "love",
+    "tags": [
+      "ดอกแดนดิไลออน",
+      "อธิษฐาน",
+      "หวานฉ่ำ"
+    ],
+    "bpm": "ปานกลาง (117 BPM)",
+    "lang": "en",
+    "animeId": 20,
+    "animeMatch": [
+      20
+    ],
+    "reason": "คำอธิษฐานต่อดอกแดนดิไลออนเพื่อความรัก เข้ากับความหวานละมุนใน Kimi ni Todoke",
+    "typoIdea": "มีเกสรดอกแดนดิไลออนลอยปลิวผ่านตัวหนังสือที่สว่างสดใส"
+  },
+  {
+    "id": 53,
+    "title": "double take",
+    "artist": "Dhruv",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5f/ea/71/5fea71a9-7dbd-9a0c-fb8a-9f151f506f52/5056271652788.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/78/8b/ad/788bad05-971e-aa6e-2c00-f8885a8e333e/mzaf_3444595279441892744.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/double%20take%20Dhruv",
+    "mood": "love",
+    "tags": [
+      "เพื่อนสนิท",
+      "ใจเต้น",
+      "R&B ละมุน"
+    ],
+    "bpm": "ปานกลาง (109 BPM)",
+    "lang": "en",
+    "animeId": 14,
+    "animeMatch": [
+      14
+    ],
+    "reason": "ความรู้สึกใจเต้นแรงเวลาแอบมองเพื่อนสนิท เข้ากับความสัมพันธ์ของโฮริและมิยามุระใน Horimiya",
+    "typoIdea": "ตัวหนังสือสไลด์เข้าออกแบบ Double-vision สลับมองซ้ายขวา"
+  },
+  {
+    "id": 54,
+    "title": "Here With Me",
+    "artist": "d4vd",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d6/83/1a/d6831a94-4e8f-5b23-df44-a313eb358257/23UMGIM33457.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bf/a3/6d/bfa36d9c-8e41-e05f-8a2b-970c9b21c695/mzaf_9987737564511061938.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Here%20With%20Me%20d4vd",
+    "mood": "love",
+    "tags": [
+      "แก่ไปด้วยกัน",
+      "อบอุ่น",
+      "ซึ้งกินใจ"
+    ],
+    "bpm": "ช้า (66 BPM)",
+    "lang": "en",
+    "animeId": 16,
+    "animeMatch": [
+      16
+    ],
+    "reason": "ความปรารถนาที่จะแก่เฒ่าไปด้วยกันแม้โชคชะตาจะใจร้าย เข้ากับ I Want to Eat Your Pancreas",
+    "typoIdea": "ตัวหนังสือเขียนช้าๆ บนสมุดบันทึกพร้อมแสงแดดอุ่นส่องผ่าน"
+  },
+  {
+    "id": 55,
+    "title": "BIRDS OF A FEATHER",
+    "artist": "Billie Eilish",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/9f/69/929f69f1-9977-3a44-d674-11f70c852d1b/24UMGIM36186.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/31/d3/3431d34e-847f-5d66-df83-0bce688d997e/mzaf_18106743962423782018.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/BIRDS%20OF%20A%20FEATHER%20Billie%20Eilish",
+    "mood": "love",
+    "tags": [
+      "เคียงข้างกันตลอดไป",
+      "สดใสปนซึ้ง",
+      "ป็อป"
+    ],
+    "bpm": "ปานกลาง (105 BPM)",
+    "lang": "en",
+    "animeId": 26,
+    "animeMatch": [
+      26
+    ],
+    "reason": "การผูกพันที่จะบินไปด้วยกัน เข้ากับการผจญภัยและสายใยใน Suzume",
+    "typoIdea": "ตัวหนังสือบินขึ้นเหมือนขนนก พร้อมสีสันสดใสชวนฝัน"
+  },
+  {
+    "id": 56,
+    "title": "Starboy",
+    "artist": "The Weeknd",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b5/92/bb/b592bb72-52e3-e756-9b26-9f56d08f47ab/16UMGIM67864.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/11/71/d6/1171d6ad-3c96-e027-2af6-58028426588c/mzaf_15137631797407745471.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Starboy%20(feat.%20Daft%20Punk)%20The%20Weeknd",
+    "mood": "hype",
+    "tags": [
+      "เท่",
+      "จังหวะตื๊ด",
+      "บีทหนัก"
+    ],
+    "bpm": "เร็ว (186 BPM)",
+    "lang": "en",
+    "animeId": 23,
+    "animeMatch": [
+      23
+    ],
+    "reason": "บีทสุดเท่และพลังดาร์ก เข้ากับความบ้าคลั่งและการต่อสู้สุดมันส์ใน Chainsaw Man",
+    "typoIdea": "ฟอนต์ไฟนีออนสไตล์เรโทรเวฟ กระพริบตามจังหวะเพลงพร้อมแสงแฟลช"
+  },
+  {
+    "id": 57,
+    "title": "Rewrite the Stars",
+    "artist": "James Arthur & Anne-Marie",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c6/8b/0b/c68b0b2d-de10-262a-7b2a-4413a453da67/075679877116.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c9/ca/ac/c9caacde-3f18-01b2-7e20-49c5d9236d1c/mzaf_14026827879801528592.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Rewrite%20the%20Stars%20James%20Arthur%20%26%20Anne-Marie",
+    "mood": "love",
+    "tags": [
+      "โชคชะตา",
+      "รักต้องห้าม",
+      "ดูเอ็ททรงพลัง"
+    ],
+    "bpm": "เร็ว (125 BPM)",
+    "lang": "en",
+    "animeId": 9,
+    "animeMatch": [
+      9
+    ],
+    "reason": "การพยายามเขียนโชคชะตาใหม่เพื่อได้อยู่ด้วยกัน เข้ากับการท้าทายมิติเวลาใน Your Name",
+    "typoIdea": "ตัวหนังสือลอยอยู่ท่ามกลางกลุ่มดวงดาวระยิบระยับบนท้องฟ้ายามราตรี"
+  },
+  {
+    "id": 58,
+    "title": "Enemy (From Arcane: League of Legends)",
+    "artist": "Imagine Dragons & JID",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/76/77/08/767708a7-ec93-3b3d-3bac-40086e5a265c/21UM1IM29634.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/8b/d9/f98bd9a6-96d2-b8fd-1848-0de12814aec6/mzaf_18165369050311284240.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Enemy%20(From%20Arcane%3A%20League%20of%20Legends)%20Imagine%20Dragons%20%26%20JID",
+    "mood": "hype",
+    "tags": [
+      "ศัตรู",
+      "เดือด",
+      "แอคชั่น AMV"
+    ],
+    "bpm": "ปานกลาง (77 BPM)",
+    "lang": "en",
+    "animeId": 28,
+    "animeMatch": [
+      28
+    ],
+    "reason": "ความเดือดของการต่อสู้ท่ามกลางศัตรูรอบตัว เข้ากับสงครามชิงความเป็นหนึ่งใน Blue Lock",
+    "typoIdea": "ฟอนต์สไตล์ดิบเถื่อน สีแดง-ดำ สั่นสะเทือนตามจังหวะบีทหนัก"
+  },
+  {
+    "id": 59,
+    "title": "Believer",
+    "artist": "Imagine Dragons",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/11/7a/b8/117ab805-6811-8929-18b9-0fad7baf0c25/17UMGIM98210.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c0/3f/36/c03f367a-b66b-fd0a-a54c-30f8250c4410/mzaf_12768434238801682952.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Believer%20Imagine%20Dragons",
+    "mood": "hype",
+    "tags": [
+      "พลังใจ",
+      "กลองหนัก",
+      "ต่อสู้"
+    ],
+    "bpm": "เร็ว (125 BPM)",
+    "lang": "en",
+    "animeId": 24,
+    "animeMatch": [
+      24
+    ],
+    "reason": "พลังใจที่ไม่ยอมแพ้ต่อความเจ็บปวด เข้ากับการฝึกฝนและดาบพิฆาตอสูรของทันจิโร่ใน Demon Slayer",
+    "typoIdea": "ตัวหนังสือมีเปลวไฟลุกโชน กระแทกหน้าจอตามจังหวะกลอง"
+  },
+  {
+    "id": 60,
+    "title": "Play Date",
+    "artist": "Melanie Martinez",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/67/81/bd/6781bd55-509b-d1c4-5017-34d77f47e10b/075679921345.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/11/ff/7011ffad-84a1-9d58-4b01-7032d5c2a7fb/mzaf_13004071810449682860.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Play%20Date%20Melanie%20Martinez",
+    "mood": "chill",
+    "tags": [
+      "ตัดพ้อ",
+      "น่ารักปนดาร์ก",
+      "ไวรัล TikTok"
+    ],
+    "bpm": "ปานกลาง (94 BPM)",
+    "lang": "en",
+    "animeId": 21,
+    "animeMatch": [
+      21
+    ],
+    "reason": "ความรู้สึกตัดพ้อที่ถูกมองเป็นแค่ของเล่น เข้ากับโลกวงการบันเทิงใน Oshi no Ko",
+    "typoIdea": "ตัวหนังสือสีพาสเทลน่ารักปนดาร์ก หมุนส่ายไปมาเหมือนของเล่น"
+  },
+  {
+    "id": 61,
+    "title": "Cupid - Twin Ver. (FIFTY FIFTY) [Sped Up Version]",
+    "artist": "FIFTY FIFTY",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cd/ed/5e/cded5e7e-193f-1744-bb30-02f0af2c3848/196872362800.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/62/ec/42/62ec4270-b631-2c1c-24d6-47a62c376f7f/mzaf_6864422965918305749.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Cupid%20-%20Twin%20Ver.%20(FIFTY%20FIFTY)%20%5BSped%20Up%20Version%5D%20FIFTY%20FIFTY",
+    "mood": "love",
+    "tags": [
+      "กามเทพ",
+      "หวานสดใส",
+      "คิ้วท์มาก"
+    ],
+    "bpm": "เร็ว (120 BPM)",
+    "lang": "en",
+    "animeId": 27,
+    "animeMatch": [
+      27
+    ],
+    "reason": "ความสดใสไร้เดียงสาและน่ารัก เข้ากับความน่ารักของน้องอาเนียใน Spy x Family",
+    "typoIdea": "ตัวหนังสือป๊อปอัปเด้งดึ๋งสีชมพู พร้อมลูกศรคิวปิดยิงผ่านหน้าจอ"
+  },
+  {
+    "id": 62,
+    "title": "Line Without a Hook",
+    "artist": "Ricky Montgomery",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/fc/58/f2/fc58f24a-4a9b-f17f-6edb-701b750c4f46/054391924353.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/40/1b/71/401b7185-ee3e-f425-bbe0-ec3f29d74b89/mzaf_13608855253971080269.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Line%20Without%20a%20Hook%20(feat.%20mxmtoon)%20Ricky%20Montgomery",
+    "mood": "love",
+    "tags": [
+      "รักมาก",
+      "ไม่มีเธอไม่ได้",
+      "อินดี้ป็อป"
+    ],
+    "bpm": "เร็ว (135 BPM)",
+    "lang": "en",
+    "animeId": 8,
+    "animeMatch": [
+      8
+    ],
+    "reason": "ความรู้สึกที่ยอมแพ้ใจให้เธอหมดทุกอย่าง เข้ากับความรักวุ่นๆ ใน Toradora!",
+    "typoIdea": "ตัวหนังสือหมุนวนสไตล์คลื่นน้ำ พร้อมเอฟเฟกต์เบ็ดตกปลาเกี่ยวคำสำคัญ"
+  },
+  {
+    "id": 63,
+    "title": "SNAP",
+    "artist": "Rosa Linn",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/db/b6/5b/dbb65bfe-d7ba-fa7a-2939-8efe303f06c1/196589359971.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/fa/50/94fa5077-8434-5da0-f27f-9b8cf2504321/mzaf_6990351409112839530.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/SNAP%20Rosa%20Linn",
+    "mood": "sad",
+    "tags": [
+      "พยายามลืม",
+      "ดีดนิ้ว",
+      "อกหัก"
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "lang": "en",
+    "animeId": 10,
+    "animeMatch": [
+      10
+    ],
+    "reason": "การพยายามดีดนิ้วเพื่อลืมความเจ็บปวด เข้ากับการเอาชนะปมในใจของ A Silent Voice",
+    "typoIdea": "ตัวหนังสือระเบิดเป็นละอองดาวทุกครั้งที่ได้ยินเสียงดีดนิ้ว 'Snap'"
+  },
+  {
+    "id": 64,
+    "title": "As It Was",
+    "artist": "Harry Styles",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2a/19/fb/2a19fb85-2f70-9e44-f2a9-82abe679b88e/886449990061.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/10/16/67101606-3869-ca44-6c03-e13d6322cb51/mzaf_1135399237022217274.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/As%20It%20Was%20Harry%20Styles",
+    "mood": "chill",
+    "tags": [
+      "ความเปลี่ยนแปลง",
+      "เหงาซ่อนสดใส",
+      "ฮิตระดับโลก"
+    ],
+    "bpm": "เร็ว (174 BPM)",
+    "lang": "en",
+    "animeId": 7,
+    "animeMatch": [
+      7
+    ],
+    "reason": "เพลงนี้มีจังหวะและอารมณ์ที่เข้ากับมู้ดของอนิเมะเรื่องนี้ เหมาะมากสำหรับการทำคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ที่เข้ากับจังหวะดนตรี วางตัวหนังสือตามจังหวะบีทและเน้นท่อนฮุค"
+  },
+  {
+    "id": 65,
+    "title": "Somewhere Only We Know",
+    "artist": "Keane",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/89/a6/f7/89a6f7be-a0e0-2524-a13b-6b5df7b7534a/06UMGIM24399.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/fc/4f/6cfc4f89-f9b9-590f-744f-49173af0d9de/mzaf_13370105221544142821.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Somewhere%20Only%20We%20Know%20Keane",
+    "mood": "sad",
+    "tags": [
+      "สถานที่ลับ",
+      "คิดถึงความหลัง",
+      "คลาสสิก"
+    ],
+    "bpm": "ปานกลาง (86 BPM)",
+    "lang": "en",
+    "animeId": 1,
+    "animeMatch": [
+      1
+    ],
+    "reason": "เพลงนี้มีจังหวะและอารมณ์ที่เข้ากับมู้ดของอนิเมะเรื่องนี้ เหมาะมากสำหรับการทำคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ที่เข้ากับจังหวะดนตรี วางตัวหนังสือตามจังหวะบีทและเน้นท่อนฮุค"
+  },
+  {
+    "id": 66,
+    "title": "รักแรก (First Love) [เพลงประกอบภาพยนตร์ \"รักแรกโคตรลืมยาก My Precious\"]",
+    "artist": "NONT TANONT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4a/b0/fb/4ab0fb88-6e1e-aa92-1073-3328de938f11/888332904681.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dd/68/d2/dd68d249-fd10-8e2a-0c2e-486774533a60/mzaf_15793260015738384691.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%81%E0%B8%A3%E0%B8%81%20(First%20Love)%20%5B%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%AD%E0%B8%9A%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%A2%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B9%8C%20%22%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%81%E0%B8%A3%E0%B8%81%E0%B9%82%E0%B8%84%E0%B8%95%E0%B8%A3%E0%B8%A5%E0%B8%B7%E0%B8%A1%E0%B8%A2%E0%B8%B2%E0%B8%81%20My%20Precious%22%5D%20NONT%20TANONT",
+    "mood": "sad",
+    "tags": [
+      "รักแรก",
+      "ความทรงจำ",
+      "น้ำตาซึม"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 15,
+    "animeMatch": [
+      15
+    ],
+    "reason": "รักแรกที่ฝังลึกในใจและไม่อาจลืมเลือน เข้ากับความห่างไกลใน 5 Centimeters per Second",
+    "typoIdea": "ตัวหนังสือสไตล์ฟิล์มภาพยนตร์ ค่อยๆ เลือนรางสลับกับภาพซากุระร่วง"
+  },
+  {
+    "id": 67,
+    "title": "จันทร์อังคารพุธพฤหัสศุกร์เสาร์อาทิตย์ (Everyday)",
+    "artist": "Patrickananda",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5a/ea/6c/5aea6cd3-b3f6-10ae-6c57-54e8db3c611b/190296614651.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/13/73/51/13735125-14f2-46a2-ad33-dcf0a2f107fc/mzaf_4006001298880379360.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C%E0%B8%AD%E0%B8%B1%E0%B8%87%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B8%9E%E0%B8%B8%E0%B8%98%E0%B8%9E%E0%B8%A4%E0%B8%AB%E0%B8%B1%E0%B8%AA%E0%B8%A8%E0%B8%B8%E0%B8%81%E0%B8%A3%E0%B9%8C%E0%B9%80%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%AD%E0%B8%B2%E0%B8%97%E0%B8%B4%E0%B8%95%E0%B8%A2%E0%B9%8C%20(Everyday)%20Patrickananda",
+    "mood": "love",
+    "tags": [
+      "ทุกวัน",
+      "คลั่งรัก",
+      "คิดถึง"
+    ],
+    "bpm": "ปานกลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 2,
+    "animeMatch": [
+      2
+    ],
+    "reason": "การคิดถึงเธอทุกลมหายใจตั้งแต่วันจันทร์ถึงอาทิตย์ เข้ากับความคลั่งรักใน Kaguya-sama",
+    "typoIdea": "จัดเรียงชื่อวัน จันทร์-อาทิตย์ เด้งขึ้นทีละคำตามจังหวะเคาะบีท"
+  },
+  {
+    "id": 68,
+    "title": "ฉลามชอบงับคุณ",
+    "artist": "bonnadol",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/77/96/f2/7796f231-3101-4129-bc60-39482b57e148/0840291206831_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3a/83/83/3a83836b-e462-1997-cf82-05ca00ba5525/mzaf_8049178132188694572.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%89%E0%B8%A5%E0%B8%B2%E0%B8%A1%E0%B8%8A%E0%B8%AD%E0%B8%9A%E0%B8%87%E0%B8%B1%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%93%20(feat.%20IIVY%20B)%20bonnadol",
+    "mood": "love",
+    "tags": [
+      "น่ารัก",
+      "งับคุณ",
+      "สดใส"
+    ],
+    "bpm": "เร็ว (118 BPM)",
+    "lang": "th",
+    "animeId": 27,
+    "animeMatch": [
+      27
+    ],
+    "reason": "ความน่ารักกวนๆ สดใสชวนยิ้ม เข้ากับความน่ารักของน้องอาเนียใน Spy x Family",
+    "typoIdea": "ตัวหนังสือมีรูปฟันฉลามงับคำว่า 'งับคุณ' พร้อมแอนิเมชันเด้งดึ๋งสีพาสเทล"
+  },
+  {
+    "id": 69,
+    "title": "Heather",
+    "artist": "Conan Gray",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/18/08/a1/1808a1be-b5a9-5e69-583d-b8a357efd760/19UM1IM12338.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/df/b0/08/dfb008d8-bd86-4091-21d5-8216881e3414/mzaf_5288004330582456914.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Heather%20Conan%20Gray",
+    "mood": "sad",
+    "tags": [
+      "อิจฉา",
+      "เธอชอบเขา",
+      "เศร้าซึ้ง"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "en",
+    "animeId": 1,
+    "animeMatch": [
+      1
+    ],
+    "reason": "ความรู้สึกเจ็บปวดที่มองคนที่เรารักไปรักคนอื่น เข้ากับปมความรักสามเส้าใน Your Lie in April",
+    "typoIdea": "ตัวหนังสือสไตล์มินิมอลเขียนคำว่า 'Heather' ตัวหนาบนพื้นหลังโทนฟ้าหม่น"
+  },
+  {
+    "id": 70,
+    "title": "I Like Me Better",
+    "artist": "LAUV",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5c/3d/e5/5c3de510-1123-0da6-9531-318d9597159c/5056167107347_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/12/49/cc/1249cc81-a570-f4fe-ad01-c9d9fddf5601/mzaf_10704657862018478118.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/I%20Like%20Me%20Better%20LAUV",
+    "mood": "love",
+    "tags": [
+      "ชอบตัวเอง",
+      "สดใส",
+      "ฟีลกู๊ด"
+    ],
+    "bpm": "ปานกลาง (92 BPM)",
+    "lang": "en",
+    "animeId": 20,
+    "animeMatch": [
+      20
+    ],
+    "reason": "การชอบตัวเองมากขึ้นเวลาได้อยู่เคียงข้างเธอ เข้ากับความเปลี่ยนแปลงของซาวาโกะใน Kimi ni Todoke",
+    "typoIdea": "ฟอนต์ตัวเขียนสไตล์โมเดิร์น ขยับสไลด์เข้าออกซิงค์กับบีทซินธ์น่ารัก"
+  },
+  {
+    "id": 71,
+    "title": "Heat Waves",
+    "artist": "Glass Animals",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/da/8b/77/da8b7731-6f4f-eacf-5e74-8b23389eefa1/20UMGIM03371.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/4c/b9/a34cb911-40fc-5f0c-e862-14bd171a77aa/mzaf_384792072030970151.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Heat%20Waves%20Glass%20Animals",
+    "mood": "chill",
+    "tags": [
+      "คิดถึงตอนดึก",
+      "บีทละมุน",
+      "เพลงฮิตไวรัล"
+    ],
+    "bpm": "ปานกลาง (81 BPM)",
+    "lang": "en",
+    "animeId": 25,
+    "animeMatch": [
+      25
+    ],
+    "reason": "ความทรงจำที่วนเวียนในหัวช่วงค่ำคืน เข้ากับบรรยากาศแสงสีนีออนและน้ำตาใน Cyberpunk: Edgerunners",
+    "typoIdea": "ตัวหนังสือมีความสั่นไหวแบบคลื่นความร้อน (Heat Wave Distortion) สีเขียว-ม่วงนีออน"
+  },
+  {
+    "id": 72,
+    "title": "Ghost",
+    "artist": "Justin Bieber",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e0/92/da/e092da2d-9f6d-11dc-7843-2021e95a2b61/21UMGIM17518.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/35/03/85/350385d9-e71f-4e23-49eb-9bbf812c6ffc/mzaf_18141129225761277085.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Ghost%20Justin%20Bieber",
+    "mood": "sad",
+    "tags": [
+      "เงาความทรงจำ",
+      "คิดถึงคนที่จาก",
+      "ดนตรีเพราะ"
+    ],
+    "bpm": "เร็ว (154 BPM)",
+    "lang": "en",
+    "animeId": 18,
+    "animeMatch": [
+      18
+    ],
+    "reason": "หากไม่อาจได้ตัวเธอคืนมา ขอเพียงเงาความทรงจำก็ยังดี สื่อถึงเมมมะใน Anohana ได้ตรงหัวใจ",
+    "typoIdea": "ตัวหนังสือสีขาวโปร่งแสง ค่อยๆ ละลายเป็นละอองดาวเมื่อถึงท่อน 'Ghost of you'"
+  },
+  {
+    "id": 73,
+    "title": "Nonsense",
+    "artist": "Sabrina Carpenter",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/22/fe/7a/22fe7a31-534a-58d8-eb80-fd08fdb9274d/22UMGIM63573.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/54/8a/71548ac3-92b8-3932-c41d-30d379482d1b/mzaf_8628578731558578514.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Nonsense%20Sabrina%20Carpenter",
+    "mood": "love",
+    "tags": [
+      "เขิน",
+      "พูดจาไม่รู้เรื่อง",
+      "น่ารักมาก"
+    ],
+    "bpm": "ปานกลาง (96 BPM)",
+    "lang": "en",
+    "animeId": 8,
+    "animeMatch": [
+      8
+    ],
+    "reason": "ความเขินจนพูดจาไม่รู้เรื่อง เข้ากับความน่ารักซึนเดเระของไทกะใน Toradora!",
+    "typoIdea": "ตัวหนังสือขยับหมุนวนและสลับขนาดตามท่อนร้องเร็วๆ พร้อมอิโมจิหัวใจป็อปอัป"
+  },
+  {
+    "id": 74,
+    "title": "Shinunoga E-Wa",
+    "artist": "Fujii Kaze",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/96/4e/5b/964e5b6e-4766-63ba-7e50-9f8a5bd0569e/20UMGIM17280.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/27/a4/b127a427-710b-e65f-e734-ead910b94cbc/mzaf_692825803667967327.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Shinunoga%20E-Wa%20Fujii%20Kaze",
+    "mood": "sad",
+    "tags": [
+      "ยอมตายดีกว่า",
+      "รักฝังใจ",
+      "ฮิตทั่วโลก"
+    ],
+    "bpm": "ปานกลาง (80 BPM)",
+    "lang": "jp",
+    "animeId": 25,
+    "animeMatch": [
+      25
+    ],
+    "reason": "Cyberpunk ดำดิ่งในความรักยอมตายเพื่อเธอ",
+    "typoIdea": "ตัวหนังสือสไตล์หมึกพู่กันญี่ปุ่น สลับแสงสลัวโทนแดง-ดำตามจังหวะดนตรีทรงพลัง"
+  },
+  {
+    "id": 75,
+    "title": "NIGHT DANCER",
+    "artist": "IMASE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/c2/49/87/c249873f-fa61-9d61-52aa-a7e1d780c8b3/22UMGIM81500.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/d4/05/b3d40599-79fe-8ae8-030b-c534dcbc2564/mzaf_13850105976352284754.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/NIGHT%20DANCER%20IMASE",
+    "mood": "chill",
+    "tags": [
+      "เต้นรำยามค่ำคืน",
+      "บีทติดหู",
+      "ไวรัล TikTok"
+    ],
+    "bpm": "เร็ว (117 BPM)",
+    "lang": "jp",
+    "animeId": 19,
+    "animeMatch": [
+      19
+    ],
+    "reason": "จังหวะชวนโยกและดนตรีโมเดิร์นซิตี้ป็อป เข้ากับลีลากีตาร์และเสน่ห์ของ Bocchi the Rock!",
+    "typoIdea": "ฟอนต์นีออนสีชมพู-ม่วง ขยับสวิงซ้ายขวาตามจังหวะกรูฟเพลง"
+  },
+  {
+    "id": 76,
+    "title": "Idol",
+    "artist": "YOASOBI",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3a/17/eb/3a17eb30-eacb-82eb-51df-d1321dbb55bc/197188492205.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/db/16/f0db16be-457e-f10f-98b6-f30b11de34e4/mzaf_5189430943078523093.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Idol%20YOASOBI",
+    "mood": "hype",
+    "tags": [
+      "ไอดอลสมบูรณ์แบบ",
+      "สองด้าน",
+      "เพลงแห่งปี"
+    ],
+    "bpm": "เร็ว (166 BPM)",
+    "lang": "jp",
+    "animeId": 21,
+    "animeMatch": [
+      21
+    ],
+    "reason": "Oshi no Ko ไอดอลผู้สมบูรณ์แบบ",
+    "typoIdea": "ตัวหนังสือระเบิดแสงประกายดาวตาวิ้งค์ (Star Eyes Effect) สลับบีทแร็พเร็วสะใจ"
+  },
+  {
+    "id": 77,
+    "title": "Suzume",
+    "artist": "RADWIMPS",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/eb/0c/e3/eb0ce3d8-b9b9-ce8d-47f9-38d147128dee/0602448618207_cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1b/91/c6/1b91c682-1f1d-f678-6fb6-e16bffc22beb/mzaf_8572139935794413888.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Suzume%20(feat.%20Toaka)%20RADWIMPS",
+    "mood": "chill",
+    "tags": [
+      "บทสวดโบราณ",
+      "เสียงผิวปาก",
+      "มนต์ขลัง"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "jp",
+    "animeId": 26,
+    "animeMatch": [
+      26
+    ],
+    "reason": "Suzume ผนึกประตูแห่งภัยพิบัติ",
+    "typoIdea": "ตัวหนังสือเขียนแนวตั้งแบบญี่ปุ่นโบราณ ค่อยๆ เรืองแสงสีทองเหมือนบานประตูมิติ"
+  },
+  {
+    "id": 78,
+    "title": "Sparkle",
+    "artist": "RADWIMPS",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fa/1d/26/fa1d26c2-f6fa-b317-ef04-d23931e2441a/859755977873_cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d8/fa/07/d8fa073d-c1ca-6928-b5ee-94a437af581f/mzaf_1898817050310855929.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Sparkle%20RADWIMPS",
+    "mood": "sad",
+    "tags": [
+      "ประกายแสง",
+      "ดาวตก",
+      "มิติเวลา"
+    ],
+    "bpm": "ช้า (62 BPM)",
+    "lang": "jp",
+    "animeId": 9,
+    "animeMatch": [
+      9
+    ],
+    "reason": "Your Name ซีนดาวตกเคียงคู่",
+    "typoIdea": "ตัวหนังสือตัวเรียวยาวเรืองแสงสีรุ้งระยิบระยับ ทะยานผ่านหน้าจอพร้อมอุกกาบาต"
+  },
+  {
+    "id": 79,
+    "title": "KICK BACK",
+    "artist": "Kenshi Yonezu",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/4e/a8/75/4ea875d1-bdb6-9b83-185a-646391cbffbd/4547366589849.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/2d/45/862d4572-805c-3a72-49a4-905a8c327888/mzaf_14805576631717868964.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/KICK%20BACK%20Kenshi%20Yonezu",
+    "mood": "hype",
+    "tags": [
+      "ความบ้าคลั่ง",
+      "ร็อคจัดหนัก",
+      "เลื่อยยนต์"
+    ],
+    "bpm": "เร็ว (155 BPM)",
+    "lang": "jp",
+    "animeId": 23,
+    "animeMatch": [
+      23
+    ],
+    "reason": "Chainsaw Man มนุษย์เลื่อยยนต์บ้าคลั่ง",
+    "typoIdea": "ตัวหนังสือขอบหนาฉีกขาดกระแทกหน้าจอตามจังหวะเสียงเลื่อยยนต์ติดเครื่อง"
+  },
+  {
+    "id": 80,
+    "title": "SPECIALZ",
+    "artist": "King Gnu",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/aa/33/55/aa335541-9932-d73c-6b1e-62bd484fc83d/4547366642308.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/5d/57/045d57fb-d1c4-2979-31ef-485662a97783/mzaf_7661994685536659402.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/SPECIALZ%20King%20Gnu",
+    "mood": "hype",
+    "tags": [
+      "ชิบูย่า",
+      "ความโกลาหล",
+      "เดือดสุด"
+    ],
+    "bpm": "เร็ว (120 BPM)",
+    "lang": "jp",
+    "animeId": 5,
+    "animeMatch": [
+      5
+    ],
+    "reason": "Jujutsu Kaisen ชิบูย่าโกลาหล",
+    "typoIdea": "ฟอนต์สไตล์ดิบเถื่อนโทนขาว-ดำ-แดง กระพริบตามจังหวะแร็พแบบ Strobe Effect"
+  },
+  {
+    "id": 81,
+    "title": "Can You?",
+    "artist": "Grab & BNK48",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/0d/6b/03/0d6b0326-1950-9153-bdb9-92a049a32299/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/46/6f/86/466f86e4-f739-1387-9767-44f1d86caa6e/mzaf_4703131653683967502.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Can%20You%3F%20Grab%20%26%20BNK48",
+    "mood": "sad",
+    "tags": [
+      "หัวใจสลาย",
+      "สูญเสีย",
+      "น้ำตา"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 3,
+    "animeMatch": [
+      3
+    ],
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "id": 82,
+    "title": "ยิ่งรู้จักยิ่งรักเธอ",
+    "artist": "Da Endorphine",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/98/41/b8/9841b8e1-9411-ad32-89a6-f98d3e236085/888332998079.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/02/02/ab020212-9417-6a77-a87b-84de784492a7/mzaf_8820936705586657082.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%98%E0%B8%AD%20Da%20Endorphine",
+    "mood": "love",
+    "tags": [
+      "คู่รัก",
+      "ความผูกพัน",
+      "ฝัน"
+    ],
+    "bpm": "ปานกลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 20,
+    "animeMatch": [
+      20
+    ],
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "id": 83,
+    "title": "วัลลภ",
+    "artist": "Musketeers",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/74/59/b0/7459b064-30ad-b59e-ef94-f2f89a8906f6/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/55/13/ba551389-7a83-74bb-9e43-71c92cab7b26/mzaf_7320240883992052257.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A7%E0%B8%B1%E0%B8%A5%E0%B8%A5%E0%B8%A0%20Musketeers",
+    "mood": "love",
+    "tags": [
+      "โรแมนติก",
+      "ปรารถนา",
+      "แอบชอบ"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "th",
+    "animeId": 27,
+    "animeMatch": [
+      27
+    ],
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "id": 84,
+    "title": "Consider (feat. Maiyarap)",
+    "artist": "Musketeers",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/36/67/693667e1-5321-801b-2762-2706f0a8ce26/25UM1IM09762.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/c3/28/acc32878-a7bd-58a1-7d09-06fc124e8b50/mzaf_15257925916120333587.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Consider%20(feat.%20Maiyarap)%20Musketeers",
+    "mood": "love",
+    "tags": [
+      "รักแท้",
+      "หัวใจ",
+      "อบอุ่น"
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "lang": "th",
+    "animeId": 2,
+    "animeMatch": [
+      2
+    ],
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "id": 85,
+    "title": "บอกรัก",
+    "artist": "Bedroom Audio",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/19/e3/04/19e304c7-6541-708a-74a7-ce1e7d342674/8859056404322.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/b3/34/2fb3340c-64f2-441d-ebf7-e69e27efc7e3/mzaf_8332993460271125080.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%A3%E0%B8%B1%E0%B8%81%20Bedroom%20Audio",
+    "mood": "love",
+    "tags": [
+      "คู่รัก",
+      "ความผูกพัน",
+      "ฝัน"
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "lang": "th",
+    "animeId": 8,
+    "animeMatch": [
+      8
+    ],
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "id": 86,
+    "title": "อนาคตคือ",
+    "artist": "MILLI & YOUNGOHM",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1f/01/ea/1f01ea96-eedb-1d03-2779-0124c0ce5d6f/888332913713.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8b/13/cb/8b13cb5f-6c44-c309-aae6-6e3488105008/mzaf_13672026115046699824.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%99%E0%B8%B2%E0%B8%84%E0%B8%95%E0%B8%84%E0%B8%B7%E0%B8%AD%20MILLI%20%26%20YOUNGOHM",
+    "mood": "love",
+    "tags": [
+      "โรแมนติก",
+      "ปรารถนา",
+      "แอบชอบ"
+    ],
+    "bpm": "ปานกลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14
+    ],
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "id": 87,
+    "title": "อยู่ได้ ได้อยู่ (ineednoone)",
+    "artist": "Tilly Birds",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/10/77/a3/1077a38f-5440-aea5-45ec-4cb047815416/888332919708.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/88/4d/d4884d9d-0aa3-721c-0551-595999e96455/mzaf_9472551012657096850.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B8%B9%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%20%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B8%B9%E0%B9%88%20(ineednoone)%20Tilly%20Birds",
+    "mood": "sad",
+    "tags": [
+      "เหงา",
+      "ความเศร้า",
+      "รอคอย"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 22,
+    "animeMatch": [
+      22
+    ],
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "id": 88,
+    "title": "เริ่มก่อน (If I Could)",
+    "artist": "PROXIE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a6/02/e8/a602e839-3694-a9df-0ae0-3f8b48747c12/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/63/07/ac630782-afe1-c472-8c22-aa07eafe42df/mzaf_8898300112891044083.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A3%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%81%E0%B9%88%E0%B8%AD%E0%B8%99%20(If%20I%20Could)%20PROXIE",
+    "mood": "sad",
+    "tags": [
+      "คิดถึง",
+      "ความเจ็บปวด",
+      "จากลา"
+    ],
+    "bpm": "ช้า (68 BPM)",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      1
+    ],
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "id": 89,
+    "title": "แอบดี",
+    "artist": "Stamp",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/16/77/1d/16771d08-65d4-286d-e3b5-cf11926b8e13/3616401840786.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c7/03/b8/c703b819-2a38-d124-89e6-3ea4d86e3e96/mzaf_11766523748585566107.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%AD%E0%B8%9A%E0%B8%94%E0%B8%B5%20Stamp",
+    "mood": "sad",
+    "tags": [
+      "หัวใจสลาย",
+      "สูญเสีย",
+      "น้ำตา"
+    ],
+    "bpm": "ช้า (65 BPM)",
+    "lang": "th",
+    "animeId": 3,
+    "animeMatch": [
+      3
+    ],
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "id": 90,
+    "title": "ความรู้สึกที่ไม่เคยรู้สึก",
+    "artist": "getsunova",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7c/a7/a4/7ca7a4c9-d23d-a423-b0af-12d5d8b2cfef/888332929523.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/e9/7b/dae97b5f-cb85-8910-caee-26ce9b5fafdf/mzaf_630246643534627193.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%AA%E0%B8%B6%E0%B8%81%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%84%E0%B8%A2%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%AA%E0%B8%B6%E0%B8%81%20getsunova",
+    "mood": "love",
+    "tags": [
+      "รักแท้",
+      "หัวใจ",
+      "อบอุ่น"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "th",
+    "animeId": 2,
+    "animeMatch": [
+      2
+    ],
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "id": 91,
+    "title": "ถามใจ (ซนซน 40 ปี GMM GRAMMY)",
+    "artist": "getsunova",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7b/7b/d1/7b7bd1a6-020b-2d93-c0c6-ddff8a92f8d7/888332901130.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6a/92/f4/6a92f429-6518-e7f0-44e4-b7b52cc8d6c2/mzaf_11734889890409221379.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%96%E0%B8%B2%E0%B8%A1%E0%B9%83%E0%B8%88%20(%E0%B8%8B%E0%B8%99%E0%B8%8B%E0%B8%99%2040%20%E0%B8%9B%E0%B8%B5%20GMM%20GRAMMY)%20getsunova",
+    "mood": "sad",
+    "tags": [
+      "เหงา",
+      "ความเศร้า",
+      "รอคอย"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 10,
+    "animeMatch": [
+      10
+    ],
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "id": 92,
+    "title": "Mua Kuen (feat. The Parkinson)",
+    "artist": "Season Five",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/84/f4/b8/84f4b885-e82b-0b2e-72d3-01dd7aea36a1/0849480040393_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a6/63/73/a66373b2-ba05-ec2a-0dcb-f2ce5ad32179/mzaf_1841564492072968913.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Mua%20Kuen%20(feat.%20The%20Parkinson)%20Season%20Five",
+    "mood": "sad",
+    "tags": [
+      "คิดถึง",
+      "ความเจ็บปวด",
+      "จากลา"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 15,
+    "animeMatch": [
+      15
+    ],
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "id": 93,
+    "title": "ยังคง",
+    "artist": "Potato",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/91/2e/fc/912efced-915d-806d-355e-1767556214ab/888332927703.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e0/93/63/e093632d-d40c-f8e7-168a-479b1b378c52/mzaf_17193656136888010802.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B8%84%E0%B8%87%20Potato",
+    "mood": "sad",
+    "tags": [
+      "หัวใจสลาย",
+      "สูญเสีย",
+      "น้ำตา"
+    ],
+    "bpm": "ช้า (68 BPM)",
+    "lang": "th",
+    "animeId": 16,
+    "animeMatch": [
+      16
+    ],
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "id": 94,
+    "title": "Oh It's You",
+    "artist": "Bird Thongchai & BILLKIN",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e8/88/8e/e8888e41-1602-93a4-3e60-e5bb56f2e177/888332887700.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8a/a3/bc/8aa3bca0-858e-44af-3463-4e9711815007/mzaf_12552687340167890494.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Oh%20It's%20You%20Bird%20Thongchai%20%26%20BILLKIN",
+    "mood": "love",
+    "tags": [
+      "คู่รัก",
+      "ความผูกพัน",
+      "ฝัน"
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "lang": "th",
+    "animeId": 20,
+    "animeMatch": [
+      20
+    ],
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "id": 95,
+    "title": "Boring Boo (feat. AUTTA)",
+    "artist": "NOONA",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/06/eb/b7/06ebb797-0c0e-ca74-a817-74e7b6eb9878/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/f7/2a/c8/f72ac8bd-0c8f-2eb5-5afa-530d5154b7cd/mzaf_2375630059108178408.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Boring%20Boo%20(feat.%20AUTTA)%20NOONA",
+    "mood": "sad",
+    "tags": [
+      "เหงา",
+      "ความเศร้า",
+      "รอคอย"
+    ],
+    "bpm": "ช้า (65 BPM)",
+    "lang": "th",
+    "animeId": 22,
+    "animeMatch": [
+      22
+    ],
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "id": 96,
+    "title": "เกินคำว่ารัก",
+    "artist": "Clash",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d8/a6/40/d8a64089-addb-f7d6-0cd2-4804a25239ea/888332976060.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0a/c4/e6/0ac4e68b-d4e6-cf86-b6f1-c6f9790f4f6b/mzaf_16103964413119376973.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%81%E0%B8%B4%E0%B8%99%E0%B8%84%E0%B8%B3%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%B1%E0%B8%81%20Clash",
+    "mood": "love",
+    "tags": [
+      "โรแมนติก",
+      "ปรารถนา",
+      "แอบชอบ"
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "lang": "th",
+    "animeId": 2,
+    "animeMatch": [
+      2
+    ],
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "id": 97,
+    "title": "ยังคงสวยงาม (When The Film's Over)",
+    "artist": "Tilly Birds",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/10/77/a3/1077a38f-5440-aea5-45ec-4cb047815416/888332919708.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2e/46/5c/2e465cf8-23b6-4fae-3b38-60d75b93a7ac/mzaf_5125915226626374346.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B8%84%E0%B8%87%E0%B8%AA%E0%B8%A7%E0%B8%A2%E0%B8%87%E0%B8%B2%E0%B8%A1%20(When%20The%20Film's%20Over)%20Tilly%20Birds",
+    "mood": "hype",
+    "tags": [
+      "เร้าใจ",
+      "สู้ไม่ถอย",
+      "เดือด"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "th",
+    "animeId": 6,
+    "animeMatch": [
+      6
+    ],
+    "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+  },
+  {
+    "id": 98,
+    "title": "นอนไม่หลับ (THE REMAKE)",
+    "artist": "Three Man Down",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ec/84/44/ec844475-43c1-ab5b-e5bd-cd9ac75b5068/888332919876.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/29/21/68/292168d3-0e9b-cc42-4cbd-8770cd67c29e/mzaf_12166436641514699840.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%99%E0%B8%AD%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%9A%20(THE%20REMAKE)%20Three%20Man%20Down",
+    "mood": "sad",
+    "tags": [
+      "คิดถึง",
+      "ความเจ็บปวด",
+      "จากลา"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 9,
+    "animeMatch": [
+      9
+    ],
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "id": 99,
+    "title": "อีกครั้ง",
+    "artist": "Pause",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music7/v4/77/ed/e6/77ede6db-2911-24b1-c68f-3aa76b9fe8c7/886445407426.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7c/e4/35/7ce435b4-56e1-7f32-7173-fbd2f81928ac/mzaf_1589506648924429724.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%B5%E0%B8%81%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B9%89%E0%B8%87%20Pause",
+    "mood": "love",
+    "tags": [
+      "รักแท้",
+      "หัวใจ",
+      "อบอุ่น"
+    ],
+    "bpm": "ปานกลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 17,
+    "animeMatch": [
+      17
+    ],
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "id": 100,
+    "title": "เราไม่เหมือนกัน",
+    "artist": "PHUMIN",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5e/e2/f2/5ee2f222-f5e8-b90f-4074-2fae93ddf524/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/40/ea/5e/40ea5eb5-d6f3-fd6b-73e0-e6e86b6ed1f1/mzaf_14119099734476362879.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A3%E0%B8%B2%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%AB%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%99%E0%B8%81%E0%B8%B1%E0%B8%99%20PHUMIN",
+    "mood": "sad",
+    "tags": [
+      "หัวใจสลาย",
+      "สูญเสีย",
+      "น้ำตา"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 15,
+    "animeMatch": [
+      15
+    ],
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "id": 101,
+    "title": "Paris",
+    "artist": "The Chainsmokers",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/9d/56/6f/9d566f55-5253-bed6-5c31-df952dae649d/886446379289.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/da/a7/1fdaa7c3-9af3-bd5f-9048-406a31e21c1d/mzaf_14744732617925969794.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Paris%20The%20Chainsmokers",
+    "mood": "love",
+    "tags": [
+      "คู่รัก",
+      "ความผูกพัน",
+      "ฝัน"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "th",
+    "animeId": 27,
+    "animeMatch": [
+      27
+    ],
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "id": 102,
+    "title": "พริบตา",
+    "artist": "Bird Thongchai & Stamp",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/11/04/4a/11044a0e-abac-6b95-52d5-815599a8c10e/888332937719.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/7b/3a/347b3a84-2534-9bdf-c329-96d573242277/mzaf_13581029785097585222.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%A3%E0%B8%B4%E0%B8%9A%E0%B8%95%E0%B8%B2%20Bird%20Thongchai%20%26%20Stamp",
+    "mood": "sad",
+    "tags": [
+      "เหงา",
+      "ความเศร้า",
+      "รอคอย"
+    ],
+    "bpm": "ช้า (68 BPM)",
+    "lang": "th",
+    "animeId": 18,
+    "animeMatch": [
+      18
+    ],
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "id": 103,
+    "title": "Galaxy (feat. Kob The X Factor)",
+    "artist": "D Gerrard",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/b5/0a/8f/b50a8f99-8bc8-be7e-aa96-052260c4e7b1/190295705831.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/29/eb/09/29eb0912-35dd-cf43-6e5b-28d446040adf/mzaf_2346313121230373536.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Galaxy%20(feat.%20Kob%20The%20X%20Factor)%20D%20Gerrard",
+    "mood": "love",
+    "tags": [
+      "โรแมนติก",
+      "ปรารถนา",
+      "แอบชอบ"
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "lang": "th",
+    "animeId": 8,
+    "animeMatch": [
+      8
+    ],
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "id": 104,
+    "title": "ตรงนี้ (feat. Fiixd & Ben Bizzy)",
+    "artist": "GAVIN:D",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/a4/e9/49/a4e94980-bdd0-9c02-1cdf-779658a3143b/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8d/c2/4d/8dc24df1-477d-6ec1-e0e4-6e5a67a00c54/mzaf_14319771143472837228.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%95%E0%B8%A3%E0%B8%87%E0%B8%99%E0%B8%B5%E0%B9%89%20(feat.%20Fiixd%20%26%20Ben%20Bizzy)%20GAVIN%3AD",
+    "mood": "love",
+    "tags": [
+      "รักแท้",
+      "หัวใจ",
+      "อบอุ่น"
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14
+    ],
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "id": 105,
+    "title": "Nothing Else Matters",
+    "artist": "Metallica",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c6/9b/1d/c69b1ddb-f873-53b4-9fc9-87ca49af2062/21UMGIM48676.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9b/a1/37/9ba137ed-330d-09e6-7449-e0557dfbe85d/mzaf_14863385354373294620.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Nothing%20Else%20Matters%20Metallica",
+    "mood": "chill",
+    "tags": [
+      "อินดี้",
+      "ลอยตัว",
+      "ฝัน"
+    ],
+    "bpm": "ปานกลาง (95 BPM)",
+    "lang": "th",
+    "animeId": 19,
+    "animeMatch": [
+      19
+    ],
+    "reason": "บรรยากาศเพลงนุ่มนวลชวนฝัน เข้ากับฉากชีวิตธรรมดาและความงามของวันๆ หนึ่งในอนิเมะ",
+    "typoIdea": "ฟอนต์สะอาดเรียบ ขยับเบาๆ พร้อมพื้นหลังเบลอนุ่ม สไตล์ Lo-Fi Aesthetic"
+  },
+  {
+    "id": 106,
+    "title": "เธอ (Live From Coming of FATE)",
+    "artist": "Cocktail",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0e/c8/88/0ec88823-e6f7-3e25-870a-0c50a2f61554/888332896740.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1f/74/f9/1f74f9d0-b2a1-bd45-fba2-da633fcfc2b5/mzaf_10858955049314603202.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%98%E0%B8%AD%20(Live%20From%20Coming%20of%20FATE)%20Cocktail",
+    "mood": "love",
+    "tags": [
+      "คู่รัก",
+      "ความผูกพัน",
+      "ฝัน"
+    ],
+    "bpm": "ปานกลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 20,
+    "animeMatch": [
+      20
+    ],
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "id": 107,
+    "title": "ที่คั่นหนังสือ (Sometimes) [feat. NONT TANONT]",
+    "artist": "BOWKYLION",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6b/39/f0/6b39f021-a558-caba-f937-5e2505691b2a/25UMGIM82152.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/48/20/8d/48208dcc-58c1-565b-1020-1ec3be3bf985/mzaf_12253333339341324916.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%84%E0%B8%B1%E0%B9%88%E0%B8%99%E0%B8%AB%E0%B8%99%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%B7%E0%B8%AD%20(Sometimes)%20%5Bfeat.%20NONT%20TANONT%5D%20BOWKYLION",
+    "mood": "sad",
+    "tags": [
+      "คิดถึง",
+      "ความเจ็บปวด",
+      "จากลา"
+    ],
+    "bpm": "ช้า (65 BPM)",
+    "lang": "th",
+    "animeId": 10,
+    "animeMatch": [
+      10
+    ],
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "id": 108,
+    "title": "ที่ไม่รัก (Unnoticed)",
+    "artist": "PROXIE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/57/be/a6/57bea6d8-1b57-1225-8a7d-0ab688a8b226/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/97/e1/23/97e123bf-1358-d66a-8638-2dd8206906a9/mzaf_2878869473299301002.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A3%E0%B8%B1%E0%B8%81%20(Unnoticed)%20PROXIE",
+    "mood": "sad",
+    "tags": [
+      "หัวใจสลาย",
+      "สูญเสีย",
+      "น้ำตา"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 15,
+    "animeMatch": [
+      15
+    ],
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "id": 109,
+    "title": "About Damn Time",
+    "artist": "Lizzo",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/84/94/03/849403d7-0261-391e-ff14-0b801d50ab27/075679747563.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/52/94/f9/5294f90f-fe1f-b5c2-ae83-47fcf74ee933/mzaf_6241981034637010530.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/About%20Damn%20Time%20Lizzo",
+    "mood": "hype",
+    "tags": [
+      "จังหวะจัดหนัก",
+      "บีทเร็ว",
+      "ตื่นเต้น"
+    ],
+    "bpm": "เร็ว (120 BPM)",
+    "lang": "en",
+    "animeId": 28,
+    "animeMatch": [
+      28
+    ],
+    "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+  },
+  {
+    "id": 110,
+    "title": "Espresso",
+    "artist": "Sabrina Carpenter",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3a/09/fa/3a09fabd-7a71-d0d7-3e6a-7f3c4c89014e/24UMGIM32304.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/48/14/5f/48145fa9-a5b6-32a0-45e8-05af48e52b9c/mzaf_6315924685303002328.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Espresso%20Sabrina%20Carpenter",
+    "mood": "hype",
+    "tags": [
+      "พลังงาน",
+      "ร้อนแรง",
+      "มันส์"
+    ],
+    "bpm": "เร็ว (140 BPM)",
+    "lang": "en",
+    "animeId": 29,
+    "animeMatch": [
+      29
+    ],
+    "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+  },
+  {
+    "id": 111,
+    "title": "Anti-Hero",
+    "artist": "Taylor Swift",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3d/01/f2/3d01f2e5-5a08-835f-3d30-d031720b2b80/22UM1IM07364.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1d/56/2a/1d562a07-dc5f-a9c0-1f36-2051a8c14eb7/mzaf_7214829135431340590.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Anti-Hero%20Taylor%20Swift",
+    "mood": "sad",
+    "tags": [
+      "เหงา",
+      "ความเศร้า",
+      "รอคอย"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "en",
+    "animeId": 22,
+    "animeMatch": [
+      22
+    ],
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "id": 112,
+    "title": "Karma (feat. Ice Spice)",
+    "artist": "Taylor Swift",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/fb/b7/5d/fbb75d98-3b52-2fa5-ca82-658194f3c498/23UMGIM58157.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c8/ac/68/c8ac6803-8916-b71a-955d-da3026d74058/mzaf_4702470268666228750.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Karma%20(feat.%20Ice%20Spice)%20Taylor%20Swift",
+    "mood": "hype",
+    "tags": [
+      "เร้าใจ",
+      "สู้ไม่ถอย",
+      "เดือด"
+    ],
+    "bpm": "เร็ว (125 BPM)",
+    "lang": "en",
+    "animeId": 43,
+    "animeMatch": [
+      43
+    ],
+    "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+  },
+  {
+    "id": 113,
+    "title": "Boy's a liar",
+    "artist": "PinkPantheress",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/8a/3f/ef/8a3fef38-bbba-4644-74f1-64e3c8894e1e/5054197466762.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/eb/47/1f/eb471f8e-1cb7-7b2b-7933-778499bebbc9/mzaf_9607257104137505664.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Boy's%20a%20liar%20PinkPantheress",
+    "mood": "hype",
+    "tags": [
+      "จังหวะจัดหนัก",
+      "บีทเร็ว",
+      "ตื่นเต้น"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "en",
+    "animeId": 6,
+    "animeMatch": [
+      6
+    ],
+    "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+  },
+  {
+    "id": 114,
+    "title": "Cupid (Instrumental)",
+    "artist": "FIFTY FIFTY",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6b/2e/aa/6b2eaa77-af21-4b0d-5ae0-2062cbf44e55/196872355437.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/af/75/85/af7585a3-5361-70e3-692b-436b7d3b08e3/mzaf_2104452874915302284.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Cupid%20(Instrumental)%20FIFTY%20FIFTY",
+    "mood": "love",
+    "tags": [
+      "โรแมนติก",
+      "ปรารถนา",
+      "แอบชอบ"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "en",
+    "animeId": 2,
+    "animeMatch": [
+      2
+    ],
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "id": 115,
+    "title": "vampire",
+    "artist": "Olivia Rodrigo",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/9e/0d/17/9e0d17e0-c068-fbd9-fd85-610cc87c86aa/23UMGIM71511.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/2f/a6/702fa6b5-946c-7a8e-2dba-03de25c732d3/mzaf_12764345117177639836.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/vampire%20Olivia%20Rodrigo",
+    "mood": "sad",
+    "tags": [
+      "คิดถึง",
+      "ความเจ็บปวด",
+      "จากลา"
+    ],
+    "bpm": "ช้า (68 BPM)",
+    "lang": "en",
+    "animeId": 10,
+    "animeMatch": [
+      10
+    ],
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "id": 116,
+    "title": "Cruel Summer",
+    "artist": "Taylor Swift",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/49/3d/ab/493dab54-f920-9043-6181-80993b8116c9/19UMGIM53909.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/44/af/81/44af8168-9609-1b85-5048-ada08dceacf3/mzaf_1341699644335558812.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Cruel%20Summer%20Taylor%20Swift",
+    "mood": "hype",
+    "tags": [
+      "พลังงาน",
+      "ร้อนแรง",
+      "มันส์"
+    ],
+    "bpm": "เร็ว (120 BPM)",
+    "lang": "en",
+    "animeId": 24,
+    "animeMatch": [
+      24
+    ],
+    "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+  },
+  {
+    "id": 117,
+    "title": "Love Story (Taylor’s Version)",
+    "artist": "Taylor Swift",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c3/d0/1c/c3d01c88-73e7-187e-fd62-e1744de979a6/21UMGIM09915.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8b/4c/b3/8b4cb3a5-b1d1-c82c-e6ab-48cc3969d4ff/mzaf_858711921713575608.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Love%20Story%20(Taylor%E2%80%99s%20Version)%20Taylor%20Swift",
+    "mood": "love",
+    "tags": [
+      "รักแท้",
+      "หัวใจ",
+      "อบอุ่น"
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "lang": "en",
+    "animeId": 17,
+    "animeMatch": [
+      17
+    ],
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "id": 118,
+    "title": "Shake It Off",
+    "artist": "Taylor Swift",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fe/57/5f/fe575f85-b843-e190-b043-2605d5f6ec59/14UMGIM34830.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f7/18/af/f718afd0-1a4f-410d-bafa-809d548edb34/mzaf_10394250021096638941.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Shake%20It%20Off%20Taylor%20Swift",
+    "mood": "hype",
+    "tags": [
+      "เร้าใจ",
+      "สู้ไม่ถอย",
+      "เดือด"
+    ],
+    "bpm": "เร็ว (140 BPM)",
+    "lang": "en",
+    "animeId": 29,
+    "animeMatch": [
+      29
+    ],
+    "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+  },
+  {
+    "id": 119,
+    "title": "Viva La Vida",
+    "artist": "Coldplay",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/52/aa/85/52aa851f-15b7-6322-f91f-df84b15b7b19/190295978044.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/19/60/b0196060-7786-24c0-8c56-8f628fe89f52/mzaf_12479456646715449366.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Viva%20La%20Vida%20Coldplay",
+    "mood": "hype",
+    "tags": [
+      "จังหวะจัดหนัก",
+      "บีทเร็ว",
+      "ตื่นเต้น"
+    ],
+    "bpm": "เร็ว (125 BPM)",
+    "lang": "en",
+    "animeId": 30,
+    "animeMatch": [
+      30
+    ],
+    "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+  },
+  {
+    "id": 120,
+    "title": "The Scientist",
+    "artist": "Coldplay",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b9/b4/2a/b9b42ad1-1e25-5096-da43-497a247e69a3/190295978051.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ae/a6/27/aea62715-e6ae-9562-ba81-1f969a2ee2fa/mzaf_9054259057357054559.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/The%20Scientist%20Coldplay",
+    "mood": "sad",
+    "tags": [
+      "หัวใจสลาย",
+      "สูญเสีย",
+      "น้ำตา"
+    ],
+    "bpm": "ช้า (65 BPM)",
+    "lang": "en",
+    "animeId": 1,
+    "animeMatch": [
+      1
+    ],
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "id": 121,
+    "title": "Someone Like You",
+    "artist": "Adele",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f8/df/0a/f8df0ac9-ae76-9dae-86d3-4e913fc54fb1/634904152062.png/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cc/7c/82/cc7c82b6-0f0c-a362-952f-6389dbc603ba/mzaf_15156534524546439842.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Someone%20Like%20You%20Adele",
+    "mood": "sad",
+    "tags": [
+      "เหงา",
+      "ความเศร้า",
+      "รอคอย"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "en",
+    "animeId": 3,
+    "animeMatch": [
+      3
+    ],
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "id": 122,
+    "title": "Rolling In the Deep",
+    "artist": "Adele",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f8/df/0a/f8df0ac9-ae76-9dae-86d3-4e913fc54fb1/634904152062.png/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/84/ab/e5/84abe549-c9d6-3de2-cdd0-90e9256a637e/mzaf_7958095177960014950.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Rolling%20In%20the%20Deep%20Adele",
+    "mood": "hype",
+    "tags": [
+      "พลังงาน",
+      "ร้อนแรง",
+      "มันส์"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "en",
+    "animeId": 11,
+    "animeMatch": [
+      11
+    ],
+    "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+  },
+  {
+    "id": 123,
+    "title": "Easy On Me",
+    "artist": "Adele",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/73/6d/7c/736d7cfb-c79d-c9a9-4170-5e71d008dea1/886449666430.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4c/08/30/4c08305e-0556-30a1-d1ba-2f916b56d62c/mzaf_10419822985277809788.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Easy%20On%20Me%20Adele",
+    "mood": "sad",
+    "tags": [
+      "คิดถึง",
+      "ความเจ็บปวด",
+      "จากลา"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "en",
+    "animeId": 10,
+    "animeMatch": [
+      10
+    ],
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "id": 124,
+    "title": "Watermelon Sugar",
+    "artist": "Harry Styles",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2b/c4/c9/2bc4c9d4-3bc6-ab13-3f71-df0b89b173de/886448022213.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/25/54/81/255481c0-1ef2-c1bc-f3b3-ea2b1419c1f1/mzaf_5289557126888202047.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Watermelon%20Sugar%20Harry%20Styles",
+    "mood": "chill",
+    "tags": [
+      "โมเดิร์น",
+      "นุ่มนวล",
+      "เบาๆ"
+    ],
+    "bpm": "ช้า (78 BPM)",
+    "lang": "en",
+    "animeId": 22,
+    "animeMatch": [
+      22
+    ],
+    "reason": "บรรยากาศเพลงนุ่มนวลชวนฝัน เข้ากับฉากชีวิตธรรมดาและความงามของวันๆ หนึ่งในอนิเมะ",
+    "typoIdea": "ฟอนต์สะอาดเรียบ ขยับเบาๆ พร้อมพื้นหลังเบลอนุ่ม สไตล์ Lo-Fi Aesthetic"
+  },
+  {
+    "id": 125,
+    "title": "Where Our Blue Is",
+    "artist": "Tatsuya Kitani",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/65/74/62/65746244-f7e0-ee86-3020-3059dec75961/4547366633085.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/be/8d/8cbe8db3-d84c-8308-3253-a03202ce49a0/mzaf_5586218102364426317.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Where%20Our%20Blue%20Is%20Tatsuya%20Kitani",
+    "mood": "hype",
+    "tags": [
+      "มิตรภาพ",
+      "โกโจ",
+      "เกะโท",
+      "มหาเวทย์"
+    ],
+    "bpm": "เร็ว (138 BPM)",
+    "lang": "jp",
+    "animeId": 5,
+    "animeMatch": [
+      5
+    ],
+    "reason": "Jujutsu Kaisen มิตรภาพโกโจ & เกะโท",
+    "typoIdea": "ฟอนต์สีฟ้า-ขาวตามชื่อเพลง กระพริบตามจังหวะกีตาร์ร็อค"
+  },
+  {
+    "id": 126,
+    "title": "Kaikai Kitan",
+    "artist": "EVE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/cb/e7/4a/cbe74ac2-3dba-c282-5be6-5cc1c71ccf82/4988061912912.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/b9/99/b1b999d6-2533-85f0-7eda-3b51122f5fdc/mzaf_5590574589561084646.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Kaikai%20Kitan%20EVE",
+    "mood": "hype",
+    "tags": [
+      "โชเน็น",
+      "ไสยเวท",
+      "เดือด"
+    ],
+    "bpm": "เร็ว (142 BPM)",
+    "lang": "jp",
+    "animeId": 5,
+    "animeMatch": [
+      5
+    ],
+    "reason": "Jujutsu Kaisen OP1 ไสยเวทย์เดือด",
+    "typoIdea": "ตัวหนังสือสไตล์ดิบ ตัดขอบดำ แวบตามสปีดบีท"
+  },
+  {
+    "id": 127,
+    "title": "After Dark",
+    "artist": "Mr.Kitty",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ce/5d/c6/ce5dc65e-6dac-bb8a-daaf-72bf77d0ba75/616450974909.png/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3e/cb/52/3ecb5294-5ea1-e392-7262-1b10cc67a299/mzaf_17548677748266742699.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/After%20Dark%20Mr.Kitty",
+    "mood": "dark",
+    "tags": [
+      "ดาร์กเวฟ",
+      "ไวรัล",
+      "ชวนฝัน"
+    ],
+    "bpm": "ปานกลาง (110 BPM)",
+    "lang": "en",
+    "animeId": 25,
+    "animeMatch": [
+      25
+    ],
+    "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
+    "typoIdea": "ฟอนต์สีนีออนม่วง-ฟ้า เบลอขอบชวนฝันตามเสียงสังเคราะห์"
+  },
+  {
+    "id": 128,
+    "title": "MIDDLE OF THE NIGHT",
+    "artist": "Elley Duhé",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/64/03/cb/6403cb43-d892-4663-d759-5093b5ed610c/886448203087.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9e/c6/c5/9ec6c5ce-022d-8bbd-0de1-534d8362fe11/mzaf_12030472432441091994.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/MIDDLE%20OF%20THE%20NIGHT%20Elley%20Duh%C3%A9",
+    "mood": "dark",
+    "tags": [
+      "ดาร์กป็อป",
+      "ทรงพลัง",
+      "แอ็กชัน"
+    ],
+    "bpm": "เร็ว (125 BPM)",
+    "lang": "en",
+    "animeId": 11,
+    "animeMatch": [
+      11
+    ],
+    "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
+    "typoIdea": "ฟอนต์สีเงินเมทัลลิก สั่นกระแทกเบสตอนท่อนดรอป"
+  },
+  {
+    "id": 129,
+    "title": "Judas",
+    "artist": "Lady Gaga",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/42/9f/0f/429f0fd2-30bd-b64e-27fc-76d8fbbd0988/11UMGIM12476.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0c/43/75/0c437569-cb18-d647-b887-150e8ac8f76e/mzaf_4164071903328598127.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Judas%20Lady%20Gaga",
+    "mood": "hype",
+    "tags": [
+      "ป็อปแดนซ์",
+      "บีทเดือด",
+      "ไวรัล"
+    ],
+    "bpm": "เร็ว (131 BPM)",
+    "lang": "en",
+    "animeId": 23,
+    "animeMatch": [
+      23
+    ],
+    "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
+    "typoIdea": "ตัวหนังสือสีแดงสด แฟลชตัดขาวดำตามจังหวะเต้น"
+  },
+  {
+    "id": 130,
+    "title": "Bloody Mary",
+    "artist": "Lady Gaga",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/42/9f/0f/429f0fd2-30bd-b64e-27fc-76d8fbbd0988/11UMGIM12476.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a9/d9/fd/a9d9fdbe-0718-8d5e-fd2a-91bf05bbcc4c/mzaf_6014557621905797616.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Bloody%20Mary%20Lady%20Gaga",
+    "mood": "dark",
+    "tags": [
+      "หลอน",
+      "ไวรัลติ๊กต๊อก",
+      "ดาร์ก"
+    ],
+    "bpm": "ปานกลาง (100 BPM)",
+    "lang": "en",
+    "animeId": 34,
+    "animeMatch": [
+      34
+    ],
+    "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
+    "typoIdea": "ฟอนต์โกธิคสีดำขลิบแดง ซูมเข้าออกช้าๆ ให้ความรู้สึกลึกลับ"
+  },
+  {
+    "id": 131,
+    "title": "The Hills",
+    "artist": "The Weeknd",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/30/05/1e/30051e57-a63a-3acc-4b30-42568293f5f7/15UMGIM36514.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0b/70/c8/0b70c898-ec23-3131-5d17-aa7417045013/mzaf_3059117378996578649.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/The%20Hills%20The%20Weeknd",
+    "mood": "dark",
+    "tags": [
+      "เบสหนัก",
+      "ดาร์กอาร์แอนด์บี",
+      "ท่อนฮุค"
+    ],
+    "bpm": "ช้า (113 BPM)",
+    "lang": "en",
+    "animeId": 30,
+    "animeMatch": [
+      30
+    ],
+    "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
+    "typoIdea": "ฟอนต์ตัวหนาขอบคม เบสกระแทกหน้าจอเขย่าตามท่อนฮุค"
+  },
+  {
+    "id": 132,
+    "title": "lovely",
+    "artist": "Billie Eilish & Khalid",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/27/94/d4/2794d4fc-c3e2-2373-3e6c-dd82fd5aefe6/18UMGIM18200.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1e/d8/8d/1ed88d91-fb06-b3f2-5391-afd732cc2ff9/mzaf_18444937225262929488.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/lovely%20Billie%20Eilish%20%26%20Khalid",
+    "mood": "sad",
+    "tags": [
+      "เศร้าบาดลึก",
+      "เปียโน",
+      "เสียงประสาน"
+    ],
+    "bpm": "ช้า (115 BPM)",
+    "lang": "en",
+    "animeId": 3,
+    "animeMatch": [
+      3
+    ],
+    "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
+    "typoIdea": "ฟอนต์เส้นบางสีขาวสว่าง ค่อยๆ ละลายหายไปตามเสียงร้องแผ่วเบา"
+  },
+  {
+    "id": 133,
+    "title": "What Was I Made For?",
+    "artist": "Billie Eilish",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/c0/54/97/c05497aa-c19f-bf4f-de29-71edf30fbefb/075679688767.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/16/69/77/16697701-c8c4-6d9c-4491-7423e3fde6e8/mzaf_13139724549993369958.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/What%20Was%20I%20Made%20For%3F%20Billie%20Eilish",
+    "mood": "sad",
+    "tags": [
+      "ค้นหาตัวเอง",
+      "เศร้าซึ้ง",
+      "เปียโน"
+    ],
+    "bpm": "ช้า (78 BPM)",
+    "lang": "en",
+    "animeId": 16,
+    "animeMatch": [
+      16
+    ],
+    "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
+    "typoIdea": "ตัวหนังสือเขียนมือ ค่อยๆ ปรากฏทีละตัวอักษรอย่างช้าๆ"
+  },
+  {
+    "id": 134,
+    "title": "Gurenge",
+    "artist": "LiSA",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/51/b3/58/51b35899-bda2-50d2-2c00-b2b95999b3c3/4547366473681.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/9f/31/029f31d9-865f-8238-795d-0a69106cd7bd/mzaf_4087349157470098609.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Gurenge%20LiSA",
+    "mood": "hype",
+    "tags": [
+      "ดาบพิฆาตอสูร",
+      "ร็อค",
+      "ปลุกพลัง"
+    ],
+    "bpm": "เร็ว (135 BPM)",
+    "lang": "jp",
+    "animeId": 24,
+    "animeMatch": [
+      24
+    ],
+    "reason": "Demon Slayer OP1 ดาบพิฆาตอสูร",
+    "typoIdea": "ฟอนต์พู่กันญี่ปุ่นสีแดงเพลิง กระแทกตามจังหวะสับดาบ"
+  },
+  {
+    "id": 135,
+    "title": "homura",
+    "artist": "LiSA",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/88/ce/67/88ce6774-3358-e238-5244-1b0788adea50/4547366475562.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0b/4a/47/0b4a47b3-159e-fdb0-c2a2-608a1c3a8bb1/mzaf_4434592051303284611.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/homura%20LiSA",
+    "mood": "sad",
+    "tags": [
+      "รถไฟสู่นิรันดร์",
+      "ซึ้งกินใจ",
+      "ทรงคุณค่า"
+    ],
+    "bpm": "ช้า (78 BPM)",
+    "lang": "jp",
+    "animeId": 24,
+    "animeMatch": [
+      24
+    ],
+    "reason": "Demon Slayer Mugen Train น้ำตาตกใน",
+    "typoIdea": "ฟอนต์อบอุ่นสีส้มเปลวไฟ ค่อยๆ เลือนหายเป็นละอองดาว"
+  },
+  {
+    "id": 136,
+    "title": "Bling-Bang-Bang-Born",
+    "artist": "Creepy Nuts",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/12/81/dc/1281dc28-48e6-5ff7-642d-6cf4d487d9e0/4547366660890.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/54/5e/5c545e9a-c8ca-c673-f85d-a74b14c2c882/mzaf_2313943576213161760.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Bling-Bang-Bang-Born%20Creepy%20Nuts",
+    "mood": "hype",
+    "tags": [
+      "ไวรัลทั่วโลก",
+      "แร็พเร็ว",
+      "แดนซ์"
+    ],
+    "bpm": "เร็ว (150 BPM)",
+    "lang": "jp",
+    "animeId": 53,
+    "animeMatch": [
+      53
+    ],
+    "reason": "Mashle OP2 ท่าเต้นไวรัลทั่วโลก",
+    "typoIdea": "ตัวหนังสือเด้งดึ๋ง สลับตำแหน่งซ้ายขวาตามจังหวะบีทแดนซ์สุดกวน"
+  },
+  {
+    "id": 137,
+    "title": "Matsuri (Fujii Kaze Stadium Live \"Feelin' Good\")",
+    "artist": "Fujii Kaze",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5f/4b/8a/5f4b8a5b-d28f-ba88-d508-b1665fa348a0/24UM1IM21653.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ea/94/89/ea94893f-8f02-943e-6b91-611a9b611a5b/mzaf_5437217620758333068.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Matsuri%20(Fujii%20Kaze%20Stadium%20Live%20%22Feelin'%20Good%22)%20Fujii%20Kaze",
+    "mood": "chill",
+    "tags": [
+      "ชิลล์",
+      "เทศกาล",
+      "ฟีลกู๊ด"
+    ],
+    "bpm": "ปานกลาง (118 BPM)",
+    "lang": "jp",
+    "animeId": 4,
+    "animeMatch": [
+      4
+    ],
+    "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
+    "typoIdea": "ตัวหนังสือพลิ้วไหวโทนสีทอง-ส้ม ลอยขึ้นตามท่วงทำนองเครื่องเป่า"
+  },
+  {
+    "id": 138,
+    "title": "Nandemonaiya - Movie Ver.",
+    "artist": "RADWIMPS",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/56/b3/8c/56b38c05-1728-402c-016c-c1e4b0635be8/4988031167618_cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1b/d9/14/1bd91428-b6ee-cfbf-57e6-274b8f5dde02/mzaf_8596295425982043448.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Nandemonaiya%20-%20Movie%20Ver.%20RADWIMPS",
+    "mood": "sad",
+    "tags": [
+      "หลับตาฝัน",
+      "น้ำตาซึม",
+      "ความทรงจำ"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "jp",
+    "animeId": 9,
+    "animeMatch": [
+      9
+    ],
+    "reason": "Your Name น้ำตาแห่งความทรงจำ",
+    "typoIdea": "ฟอนต์มินิมอลสีขาว โปร่งแสงลอยผ่านทิวทัศน์ท้องฟ้ายามเย็น"
+  },
+  {
+    "id": 139,
+    "title": "Sai Nam Peung (feat. SONOFO)",
+    "artist": "YOUNGOHM",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/62/1a/68/621a6834-423c-cc6e-7f7d-a1593a81d308/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/05/e7/a105e710-5fe5-4348-ec91-a14916a5ad93/mzaf_8141032513242893609.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Sai%20Nam%20Peung%20(feat.%20SONOFO)%20YOUNGOHM",
+    "mood": "hype",
+    "tags": [
+      "แร็พไทย",
+      "ไวรัล",
+      "อีกี้"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "th",
+    "animeId": 29,
+    "animeMatch": [
+      29
+    ],
+    "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
+    "typoIdea": "ฟอนต์ป้ายไฟนีออนสไตล์ไทย สั่นกระพริบตามจังหวะตื๊ด 808"
+  },
+  {
+    "id": 140,
+    "title": "คนไม่คุย (Silent Mode)",
+    "artist": "PROXIE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e5/d5/1d/e5d51db9-6b50-89f1-65d9-35b436440439/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e0/c2/a3/e0c2a3bb-aef0-43bd-922d-cbc01fa0d3b2/mzaf_6637886844505349168.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%84%E0%B8%B8%E0%B8%A2%20(Silent%20Mode)%20PROXIE",
+    "mood": "love",
+    "tags": [
+      "ทีป็อป",
+      "น่ารัก",
+      "แอบชอบ"
+    ],
+    "bpm": "ปานกลาง (115 BPM)",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14
+    ],
+    "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
+    "typoIdea": "ฟอนต์น่ารักมุมมน เด้งป๊อปอัพเป็นกล่องข้อความแชท"
+  },
+  {
+    "id": 141,
+    "title": "ลบไม่ได้ช่วยให้ลืม (Erase)",
+    "artist": "Ink Waruntorn",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d9/58/d3/d958d398-1aec-0f5e-2d34-656df8184890/0840102420586_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/a5/51/aba5515b-36c4-4ec4-f376-4f886bfb5a56/mzaf_2464286645921122949.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%9A%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%A5%E0%B8%B7%E0%B8%A1%20(Erase)%20Ink%20Waruntorn",
+    "mood": "sad",
+    "tags": [
+      "ซินธ์ป็อป",
+      "คิดถึงแฟนเก่า",
+      "เศร้า"
+    ],
+    "bpm": "ช้า (84 BPM)",
+    "lang": "th",
+    "animeId": 15,
+    "animeMatch": [
+      15
+    ],
+    "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
+    "typoIdea": "ตัวหนังสือสลายเป็นละอองฝุ่น คล้ายการกดปุ่ม Delete ความทรงจำ"
+  },
+  {
+    "id": 142,
+    "title": "ต่อจากนี้เพลงรักทุกเพลงจะเป็นของเธอเท่านั้น",
+    "artist": "No One Else",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/80/59/0f/80590f8d-7107-43b5-f85b-a9656a3f05ec/00602445052523_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/7e/2f/cd/7e2fcdd5-162f-8a2b-6276-1f7816e7e131/mzaf_17567992105568955058.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%97%E0%B8%B8%E0%B8%81%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%88%E0%B8%B0%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B9%80%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%99%E0%B8%B1%E0%B9%89%E0%B8%99%20No%20One%20Else",
+    "mood": "love",
+    "tags": [
+      "เพลงแต่งงาน",
+      "คลั่งรัก",
+      "โรแมนติก"
+    ],
+    "bpm": "ปานกลาง (96 BPM)",
+    "lang": "th",
+    "animeId": 2,
+    "animeMatch": [
+      2
+    ],
+    "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
+    "typoIdea": "ฟอนต์ลายมือหวานละมุน โทนพาสเทลชมพู-ขาว ละมุนสายตา"
+  },
+  {
+    "id": 143,
+    "title": "เธอคือกาแฟในตอนเช้า",
+    "artist": "No One Else",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/85/be/47/85be476b-2a62-64ae-bd62-51313df49644/196922552069_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/61/5c/fa/615cfac1-ae77-eba0-641a-638e4cf53908/mzaf_12830498071402364966.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%84%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%B2%E0%B9%81%E0%B8%9F%E0%B9%83%E0%B8%99%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%8A%E0%B9%89%E0%B8%B2%20No%20One%20Else",
+    "mood": "love",
+    "tags": [
+      "อบอุ่น",
+      "เช้าวันใหม่",
+      "กาแฟ"
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "lang": "th",
+    "animeId": 27,
+    "animeMatch": [
+      27
+    ],
+    "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
+    "typoIdea": "ฟอนต์สีน้ำตาลครีม ควันลอยกรุ่นคล้ายกลิ่นกาแฟหอมฟุ้ง"
+  },
+  {
+    "id": 144,
+    "title": "ทน (feat. GUYGEEGEE) [โกดัง Live Session]",
+    "artist": "SPRITE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/34/83/be/3483bef0-98b4-72f4-f9d8-d34624af7ee2/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4d/ed/db/4deddbe7-6fbc-278d-68a5-70af0469ae51/mzaf_14081093176846582709.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%99%20(feat.%20GUYGEEGEE)%20%5B%E0%B9%82%E0%B8%81%E0%B8%94%E0%B8%B1%E0%B8%87%20Live%20Session%5D%20SPRITE",
+    "mood": "hype",
+    "tags": [
+      "พี่ไม่มีหลุยส์วิตตอง",
+      "บิลบอร์ดชาร์ต",
+      "มันส์"
+    ],
+    "bpm": "เร็ว (140 BPM)",
+    "lang": "th",
+    "animeId": 28,
+    "animeMatch": [
+      28
+    ],
+    "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
+    "typoIdea": "ฟอนต์กราฟิตี้ สลับสีเหลือง-ดำ กระแทกตามจังหวะโฟลว์แร็พ"
+  },
+  {
+    "id": 145,
+    "title": "วาสนาผู้ใด",
+    "artist": "Parkmalody",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/e3/b6/0de3b628-c320-81b3-b346-f42dbfb0588b/859778485225_cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/66/07/52/66075276-7468-d0bc-5a91-43cfeccafbe1/mzaf_1904391022478786864.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A7%E0%B8%B2%E0%B8%AA%E0%B8%99%E0%B8%B2%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B9%83%E0%B8%94%20Parkmalody",
+    "mood": "love",
+    "tags": [
+      "วาสนาผู้ใดหนอ",
+      "คลั่งรัก",
+      "น่ารัก"
+    ],
+    "bpm": "ปานกลาง (102 BPM)",
+    "lang": "th",
+    "animeId": 20,
+    "animeMatch": [
+      20
+    ],
+    "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
+    "typoIdea": "ตัวหนังสือกระโดดดุ๊กดิ๊ก มีอิโมจิดอกไม้และหัวใจประดับ"
+  },
+  {
+    "id": 146,
+    "title": "จังหวะจะรัก",
+    "artist": "Violette Wautier",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/5a/1d/61/5a1d6167-70aa-d39c-b911-a101bb3e08dc/00602557961485_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5d/9a/52/5d9a5214-1d19-b5f8-0956-260767121429/mzaf_12920634546527175307.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B0%E0%B8%88%E0%B8%B0%E0%B8%A3%E0%B8%B1%E0%B8%81%20Violette%20Wautier",
+    "mood": "love",
+    "tags": [
+      "ฟีลกู๊ด",
+      "จังหวะหัวใจ",
+      "ตกหลุมรัก"
+    ],
+    "bpm": "ปานกลาง (112 BPM)",
+    "lang": "th",
+    "animeId": 17,
+    "animeMatch": [
+      17
+    ],
+    "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
+    "typoIdea": "ตัวหนังสือเต้นตุบๆ ตามจังหวะหัวใจเต้น บีทกลองนุ่มหู"
+  },
+  {
+    "id": 147,
+    "title": "ดีใจด้วยนะ(Glad)",
+    "artist": "Ink Waruntorn",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2a/d6/c7/2ad6c7bc-3304-d588-9b12-5fda1540cbce/0849480039267_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6d/c9/00/6dc90011-a863-bdeb-be57-b9f297c4b82b/mzaf_12511109928019079134.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%B5%E0%B9%83%E0%B8%88%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%99%E0%B8%B0(Glad)%20Ink%20Waruntorn",
+    "mood": "sad",
+    "tags": [
+      "ยินดีทั้งน้ำตา",
+      "แฟนเก่าแต่งงาน",
+      "ดราม่า"
+    ],
+    "bpm": "ช้า (80 BPM)",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      1
+    ],
+    "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
+    "typoIdea": "ตัวหนังสือคมกริบสีขาวบนพื้นหลังมืด ไฮไลต์คำว่า ยินดี ด้วยน้ำตา"
+  },
+  {
+    "id": 148,
+    "title": "รอยยิ้ม",
+    "artist": "SCRUBB",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/82/6f/80/826f8021-97e0-9b13-751d-ac8f27ee1746/886444384537.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/90/87/86/90878668-186c-2671-b0ab-7e47b9717f5c/mzaf_1288087794164117295.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A3%E0%B8%AD%E0%B8%A2%E0%B8%A2%E0%B8%B4%E0%B9%89%E0%B8%A1%20SCRUBB",
+    "mood": "love",
+    "tags": [
+      "อินดี้ป็อป",
+      "สดใส",
+      "คิดถึง"
+    ],
+    "bpm": "ปานกลาง (115 BPM)",
+    "lang": "th",
+    "animeId": 8,
+    "animeMatch": [
+      8
+    ],
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ตัวหนังสือกระโดดดุ๊กดิ๊ก มีเส้นสายรอยยิ้มโค้งประดับคำว่า รอยยิ้ม"
+  },
+  {
+    "id": 149,
+    "title": "เข้ากันดี",
+    "artist": "SCRUBB",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b4/db/78/b4db7897-a07e-5e36-c38b-d807d3127760/mzi.igdgnlhh.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6c/ea/c7/6ceac720-ef2d-afa7-b911-cb39bf7c7ba8/mzaf_5357215185813458890.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%94%E0%B8%B5%20SCRUBB",
+    "mood": "love",
+    "tags": [
+      "ฟีลกู๊ด",
+      "คู่รัก",
+      "สบายๆ"
+    ],
+    "bpm": "ปานกลาง (118 BPM)",
+    "lang": "th",
+    "animeId": 20,
+    "animeMatch": [
+      20
+    ],
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์มินิมอลสีเขียวมิ้นต์ ลอยสอดประสานกัน 2 บรรทัด"
+  },
+  {
+    "id": 150,
+    "title": "คู่ชีวิต",
+    "artist": "Cocktail",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9d/40/33/9d40332f-9fa7-cc6e-c1de-e2e7cb6f6e05/888332997744.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/a4/a4/c9a4a4d0-c4ce-c322-17ba-3d7fa6d7f7d8/mzaf_4706791527223213954.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B9%E0%B9%88%E0%B8%8A%E0%B8%B5%E0%B8%A7%E0%B8%B4%E0%B8%95%20Cocktail",
+    "mood": "love",
+    "tags": [
+      "ความรักแท้",
+      "ตำนาน",
+      "ซึ้ง"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 3,
+    "animeMatch": [
+      3
+    ],
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์ทองหรูหราขอบทอง เรืองแสงสง่างามตามเสียงออร์เคสตรา"
+  },
+  {
+    "id": 151,
+    "title": "เธอทำให้ฉันเสียใจ",
+    "artist": "Cocktail",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/02/02/9c/02029cc9-d5b3-5b76-8532-497b82463bc7/888332970747.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/40/45/304045a6-7545-6344-d0ec-f18fb71375d5/mzaf_5601595833484110834.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%97%E0%B8%B3%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B9%83%E0%B8%88%20Cocktail",
+    "mood": "sad",
+    "tags": [
+      "เจ็บปวด",
+      "ร็อคบัลลาด",
+      "ดราม่า"
+    ],
+    "bpm": "ปานกลาง (92 BPM)",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      1
+    ],
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ตัวหนังสือสลายหล่นลงมาตามเสียงกีตาร์บาดลึก"
+  },
+  {
+    "id": 152,
+    "title": "คำยินดี",
+    "artist": "KLEAR",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/77/75/70/777570c5-15e6-71a9-9d80-0261333583cd/888332991414.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9b/0d/25/9b0d2539-6aaf-7c9e-2486-bc7874ac5122/mzaf_7280392792458901469.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B3%E0%B8%A2%E0%B8%B4%E0%B8%99%E0%B8%94%E0%B8%B5%20KLEAR",
+    "mood": "sad",
+    "tags": [
+      "ยินดีทั้งน้ำตา",
+      "แฟนเก่า",
+      "ตำนาน"
+    ],
+    "bpm": "ช้า (74 BPM)",
+    "lang": "th",
+    "animeId": 18,
+    "animeMatch": [
+      18
+    ],
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ตัวหนังสือสีขาวบนพื้นหลังมืดสลัว ซูมเข้าหาคำว่า ขอให้โชคดี"
+  },
+  {
+    "id": 153,
+    "title": "สิ่งของ",
+    "artist": "KLEAR",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f0/a9/72/f0a97283-6c79-f005-80de-15fb8247dae0/888332952316.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/8b/5d/678b5d00-7a2c-2cc3-c96e-e7b18526c98d/mzaf_1385378532326019552.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%AD%E0%B8%87%20KLEAR",
+    "mood": "sad",
+    "tags": [
+      "ไร้ค่า",
+      "เก็บซ่อม",
+      "ซึ้ง"
+    ],
+    "bpm": "ช้า (76 BPM)",
+    "lang": "th",
+    "animeId": 3,
+    "animeMatch": [
+      3
+    ],
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์สีซีดคล้ายของเก่า ค่อยๆ สว่างขึ้นเมื่อได้รับความรัก"
+  },
+  {
+    "id": 154,
+    "title": "ได้แต่นึกถึง",
+    "artist": "Only Monday",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ea/6a/d2/ea6ad2ce-cc70-6a5a-3873-0067196f9975/888332913898.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/95/f9/15/95f915ba-c692-0a8f-4153-aa2a97ee4e3a/mzaf_18159072783949803297.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%94%E0%B9%89%E0%B9%81%E0%B8%95%E0%B9%88%E0%B8%99%E0%B8%B6%E0%B8%81%E0%B8%96%E0%B8%B6%E0%B8%87%20Only%20Monday",
+    "mood": "sad",
+    "tags": [
+      "อินดี้ร็อค",
+      "คิดถึงวันเก่า",
+      "เหงา"
+    ],
+    "bpm": "ปานกลาง (105 BPM)",
+    "lang": "th",
+    "animeId": 15,
+    "animeMatch": [
+      15
+    ],
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์โมเดิร์นสีขาว เด้งจังหวะชัตเตอร์กล้องถ่ายรูปย้อนอดีต"
+  },
+  {
+    "id": 155,
+    "title": "ทิ้งไว้กลางทาง",
+    "artist": "Potato",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/05/ea/e7/05eae781-69bd-0749-bdf6-95b0142cf2a3/888332952095.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/ae/1d/67ae1d8c-3045-d82e-b543-9b5379ff0bbe/mzaf_9763511802935788780.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%B4%E0%B9%89%E0%B8%87%E0%B9%84%E0%B8%A7%E0%B9%89%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%97%E0%B8%B2%E0%B8%87%20Potato",
+    "mood": "sad",
+    "tags": [
+      "ปล่อยมือ",
+      "ร็อคบัลลาด",
+      "ร้อยล้านวิว"
+    ],
+    "bpm": "ช้า (78 BPM)",
+    "lang": "th",
+    "animeId": 12,
+    "animeMatch": [
+      12
+    ],
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ จางหายไปที่กึ่งกลางจอ เลียนแบบการถูกทิ้งไว้กลางทาง"
+  },
+  {
+    "id": 156,
+    "title": "From The Start",
+    "artist": "Laufey",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/8b/8b/20/8b8b2083-c8a3-a1a6-1f9e-a4da5bf45d5d/197188679637.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b0/8c/e1/b08ce131-3860-fdbd-43a9-dc4bf1ec78f8/mzaf_18185086236351287888.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/From%20The%20Start%20Laufey",
+    "mood": "love",
+    "tags": [
+      "บอสซาโนวา",
+      "แอบชอบ",
+      "แจ๊สไวรัล"
+    ],
+    "bpm": "ปานกลาง (120 BPM)",
+    "lang": "en",
+    "animeId": 2,
+    "animeMatch": [
+      2
+    ],
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์สไตล์วินเทจเรโทร เด้งตามจังหวะกีตาร์บอสซาโนวาพลิ้วไหว"
+  },
+  {
+    "id": 157,
+    "title": "Valentine",
+    "artist": "Laufey",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ed/76/5e/ed765e68-3e35-eeb0-5760-68af76e6d455/5056167170075_1.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/23/b6/1423b64e-6e16-84bc-baa3-b8ac6f66c01c/mzaf_11947839376803206443.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Valentine%20Laufey",
+    "mood": "love",
+    "tags": [
+      "วาเลนไทน์",
+      "โรแมนติก",
+      "หวานซึ้ง"
+    ],
+    "bpm": "ช้า (84 BPM)",
+    "lang": "en",
+    "animeId": 14,
+    "animeMatch": [
+      14
+    ],
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์ตัวเขียนพริ้วไหวสีทองอ่อน มีประกายวิ้งลอยขึ้นเบาๆ"
+  },
+  {
+    "id": 158,
+    "title": "cardigan",
+    "artist": "Taylor Swift",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ca/f3/67/caf367a5-2cf6-6b2e-a891-97dc57b19f08/20UMGIM64216.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/00/b3/f2/00b3f2a0-3228-b65f-7189-91eb26f5adf6/mzaf_3535055549125623460.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/cardigan%20Taylor%20Swift",
+    "mood": "sad",
+    "tags": [
+      "โฟล์ค",
+      "คิดถึงอดีต",
+      "วันฝนตก"
+    ],
+    "bpm": "ช้า (130 BPM)",
+    "lang": "en",
+    "animeId": 7,
+    "animeMatch": [
+      7
+    ],
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์สไตล์นิทานวินเทจ หมอกควันบางๆ ลอยผ่านตัวอักษร"
+  },
+  {
+    "id": 159,
+    "title": "august",
+    "artist": "Taylor Swift",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/7c/04/ba/7c04ba17-2ff8-21b3-0ac0-7d141f86e924/20UMGIM64216.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/9f/fd/ba9ffdbe-e2d8-f0f2-3e64-dc0ad2429a05/mzaf_7780705505584561681.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/august%20Taylor%20Swift",
+    "mood": "sad",
+    "tags": [
+      "ฤดูร้อน",
+      "รักที่ผ่านไป",
+      "ทรงพลัง"
+    ],
+    "bpm": "ปานกลาง (106 BPM)",
+    "lang": "en",
+    "animeId": 9,
+    "animeMatch": [
+      9
+    ],
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์สีทรายชายหาด ละลายไปกับคลื่นน้ำทะเลสีฟ้าคราม"
+  },
+  {
+    "id": 160,
+    "title": "Lover",
+    "artist": "Taylor Swift",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/49/3d/ab/493dab54-f920-9043-6181-80993b8116c9/19UMGIM53909.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e0/db/47/e0db47b0-7f70-0631-0414-cd4777d2fb3e/mzaf_6362891154838442638.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Lover%20Taylor%20Swift",
+    "mood": "love",
+    "tags": [
+      "งานแต่ง",
+      "หวานฉ่ำ",
+      "โรแมนติก"
+    ],
+    "bpm": "ช้า (68 BPM)",
+    "lang": "en",
+    "animeId": 17,
+    "animeMatch": [
+      17
+    ],
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์สีชมพูนมพาสเทล ลอยหมุนเคว้งคว้างเหมือนเต้นรำในห้องนั่งเล่น"
+  },
+  {
+    "id": 161,
+    "title": "drivers license",
+    "artist": "Olivia Rodrigo",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/02/ed/8c/02ed8cab-c089-2fdd-7ce6-ab334a9a4e19/21UMGIM26093.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/36/62/61/366261be-0996-d73d-de6f-03417867c800/mzaf_8201528327761821135.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/drivers%20license%20Olivia%20Rodrigo",
+    "mood": "sad",
+    "tags": [
+      "อกหักล้านวิว",
+      "ขับรถ",
+      "ร้องไห้"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "en",
+    "animeId": 16,
+    "animeMatch": [
+      16
+    ],
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์สีขาวตัดกับไฟหน้ารถสีแดง สั่นเบลอตามหยดน้ำตา"
+  },
+  {
+    "id": 162,
+    "title": "traitor",
+    "artist": "Olivia Rodrigo",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/33/fd/32/33fd32b1-0e43-9b4a-8ed6-19643f23544e/21UMGIM26092.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4f/ae/6c/4fae6c93-6bb3-d320-00bf-f32310705b3f/mzaf_16796881619991035581.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/traitor%20Olivia%20Rodrigo",
+    "mood": "sad",
+    "tags": [
+      "หักหลัง",
+      "เจ็บปวด",
+      "ป็อปร็อค"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "en",
+    "animeId": 1,
+    "animeMatch": [
+      1
+    ],
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์ขอบคมสีดำ-แดง กระพริบตามท่อนกรีดร้องอันทรงพลัง"
+  },
+  {
+    "id": 163,
+    "title": "deja vu",
+    "artist": "Olivia Rodrigo",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/02/ed/8c/02ed8cab-c089-2fdd-7ce6-ab334a9a4e19/21UMGIM26093.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/5a/c2/835ac220-f31a-006f-b6a9-2acd29eb60d0/mzaf_13621843495437485054.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/deja%20vu%20Olivia%20Rodrigo",
+    "mood": "chill",
+    "tags": [
+      "ภาพซ้อน",
+      "แฟนใหม่",
+      "ชวนฝัน"
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "lang": "en",
+    "animeId": 26,
+    "animeMatch": [
+      26
+    ],
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "เอฟเฟกต์ภาพซ้อน Glitch ซ้อนทับกันสองมิติคล้ายอาการเดจาวู"
+  },
+  {
+    "id": 164,
+    "title": "Talking to the Moon",
+    "artist": "Bruno Mars",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/52/b1/45/52b1452b-229e-78db-231b-7b43fa0077cc/075679956491.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c4/ce/e8/c4cee8c1-ac62-b308-9c8f-df0c9bb69383/mzaf_1726042899961262714.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Talking%20to%20the%20Moon%20Bruno%20Mars",
+    "mood": "sad",
+    "tags": [
+      "ดวงจันทร์",
+      "คิดถึงสุดหัวใจ",
+      "คลาสสิก"
+    ],
+    "bpm": "ช้า (73 BPM)",
+    "lang": "en",
+    "animeId": 9,
+    "animeMatch": [
+      9
+    ],
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์สีนวลจันทร์ ส่องแสงเรืองรองบนท้องฟ้ามืดมิดยามค่ำคืน"
+  },
+  {
+    "id": 165,
+    "title": "Locked Out of Heaven",
+    "artist": "Bruno Mars",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e0/a4/7c/e0a47c6f-005a-9f9f-ce29-8e858e2bcfcb/075679957283.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/05/04/d5050434-1278-6b8e-9cd8-6261ea319fd1/mzaf_9746689865251353718.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Locked%20Out%20of%20Heaven%20Bruno%20Mars",
+    "mood": "hype",
+    "tags": [
+      "มันส์กระจาย",
+      "ฟังก์ร็อค",
+      "กระโดด"
+    ],
+    "bpm": "เร็ว (144 BPM)",
+    "lang": "en",
+    "animeId": 21,
+    "animeMatch": [
+      21
+    ],
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ตัวหนังสือกระแทกจังหวะกลองและเบส สลับสีนีออนเขียว-ม่วง"
+  },
+  {
+    "id": 166,
+    "title": "Sunflower (Spider-Man: Into the Spider-Verse)",
+    "artist": "Post Malone & Swae Lee",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/4b/30/2c/4b302cb6-7a14-5464-4e97-0577e9d0be49/18UMGIM82277.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/98/f0/d6/98f0d67e-f8bf-762d-cac7-1c6b3b6b35dd/mzaf_4543283896248560946.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Sunflower%20(Spider-Man%3A%20Into%20the%20Spider-Verse)%20Post%20Malone%20%26%20Swae%20Lee",
+    "mood": "chill",
+    "tags": [
+      "ทานตะวัน",
+      "สไปเดอร์แมน",
+      "ฟีลกู๊ด"
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "lang": "en",
+    "animeId": 6,
+    "animeMatch": [
+      6
+    ],
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์สีเหลืองดอกทานตะวัน ลอยพลิ้วไหวอย่างอิสระตามสายลม"
+  },
+  {
+    "id": 167,
+    "title": "Circles",
+    "artist": "Post Malone",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7b/1b/1b/7b1b1b0b-7ce2-b223-f9e0-8e36abe51877/19UMGIM78325.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f9/b1/aa/f9b1aaed-3e24-227f-153d-99969f8b8464/mzaf_6272498007975402144.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Circles%20Post%20Malone",
+    "mood": "chill",
+    "tags": [
+      "วนลูป",
+      "ชิลล์อกหัก",
+      "ติดหู"
+    ],
+    "bpm": "ปานกลาง (120 BPM)",
+    "lang": "en",
+    "animeId": 19,
+    "animeMatch": [
+      19
+    ],
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ตัวหนังสือวิ่งวนเป็นวงกลมตามชื่อเพลง Circles อย่างมีสไตล์"
+  },
+  {
+    "id": 168,
+    "title": "Romantic Homicide",
+    "artist": "d4vd",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/4e/0c/82/4e0c82e8-7970-25f5-bfd6-6f0faec83dcb/22UMGIM94151.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/f5/40/a1f5405d-408f-d84e-1775-b87b30174067/mzaf_5384372198207712281.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Romantic%20Homicide%20d4vd",
+    "mood": "dark",
+    "tags": [
+      "ดาร์กอินดี้",
+      "หลอนเศร้า",
+      "ไวรัล"
+    ],
+    "bpm": "ช้า (66 BPM)",
+    "lang": "en",
+    "animeId": 23,
+    "animeMatch": [
+      23
+    ],
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์สีดำเลือดหมู ค่อยๆ จมดิ่งลงสู่ความมืดอย่างช้าๆ"
+  },
+  {
+    "id": 169,
+    "title": "we can't be friends (wait for your love)",
+    "artist": "Ariana Grande",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/2e/88/88/2e8888ad-a0cf-eece-70a7-1ff81377a3ab/24UMGIM00198.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/63/f1/45/63f1452d-5087-18b1-4426-52cd1f10bc06/mzaf_5211000209678891014.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/we%20can't%20be%20friends%20(wait%20for%20your%20love)%20Ariana%20Grande",
+    "mood": "sad",
+    "tags": [
+      "ลบความทรงจำ",
+      "ซินธ์ป็อป",
+      "ฮิตทั่วโลก"
+    ],
+    "bpm": "ปานกลาง (116 BPM)",
+    "lang": "en",
+    "animeId": 10,
+    "animeMatch": [
+      10
+    ],
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ พิกเซลแตกกระจายเหมือนความทรงจำที่ถูกลบเลือน"
+  },
+  {
+    "id": 170,
+    "title": "Yoru ni kakeru",
+    "artist": "YOASOBI",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7f/8c/90/7f8c90dd-e11f-30d5-271d-4b72eee970bd/195497666737.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/04/c0/bc/04c0bcbf-399f-b668-4c1a-8eb37f63d6e3/mzaf_8386400470233731365.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Yoru%20ni%20kakeru%20YOASOBI",
+    "mood": "hype",
+    "tags": [
+      "วิ่งสู่อัศดง",
+      "ไวรัลระดับโลก",
+      "เปียโนร็อค"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "jp",
+    "animeId": 21,
+    "animeMatch": [
+      21
+    ],
+    "reason": "เพลงเปียโนร็อควิ่งสู่อัศดง",
+    "typoIdea": "ตัวหนังสือพุ่งจากขอบจอเข้าหากลางจอตามสปีดนิ้วเปียโนไฟแลบ"
+  },
+  {
+    "id": 171,
+    "title": "Gunjo",
+    "artist": "Vangakuz",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/da/33/b3/da33b30d-f629-352d-8521-7ff09bdd8b83/4510422548982.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/e8/18/29/e81829b6-fd8a-b228-ab7f-ccfc9f0b7230/mzaf_9996233948634453819.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Gunjo%20Vangakuz",
+    "mood": "hype",
+    "tags": [
+      "สีน้ำเงิน",
+      "ความฝัน",
+      "แรงบันดาลใจ"
+    ],
+    "bpm": "เร็ว (135 BPM)",
+    "lang": "jp",
+    "animeId": 6,
+    "animeMatch": [
+      6
+    ],
+    "reason": "Haikyuu!! แรงบันดาลใจสีน้ำเงิน",
+    "typoIdea": "ฟอนต์สีน้ำเงินเข้มสะท้อนแสง ขยายใหญ่ตามท่อนประสานเสียงปลุกใจ"
+  },
+  {
+    "id": 172,
+    "title": "Kaibutsu (From \"Beastars Season 2\") [feat. Jonatan King]",
+    "artist": "Akano",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/d8/b5/dd/d8b5dda6-f802-90f5-b228-58da045f9e89/194152878997.png/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1e/44/0e/1e440e47-679c-3d3b-ed0d-0a0afd90851a/mzaf_13732518623443303361.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Kaibutsu%20(From%20%22Beastars%20Season%202%22)%20%5Bfeat.%20Jonatan%20King%5D%20Akano",
+    "mood": "dark",
+    "tags": [
+      "อสูรกาย",
+      "บีทหนัก",
+      "ดาร์ก"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "jp",
+    "animeId": 54,
+    "animeMatch": [
+      54
+    ],
+    "reason": "Beastars OP บทความมืดในใจ",
+    "typoIdea": "ฟอนต์ขอบหนามสีม่วงเข้ม แฟลชสลับแดงตามจังหวะเบสสังเคราะห์ดิบๆ"
+  },
+  {
+    "id": 173,
+    "title": "Lemon",
+    "artist": "Kenshi Yonezu",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/86/b0/9d/86b09d63-367a-563a-1e24-d5d62c220ac8/jacket_SRCL09749B00Z_550.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/27/17/9b/27179b15-2153-25e8-d035-35fdb4d059d8/mzaf_757024838235216109.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Lemon%20Kenshi%20Yonezu",
+    "mood": "sad",
+    "tags": [
+      "เลมอน",
+      "ความสูญเสีย",
+      "ตำนานหมื่นล้านวิว"
+    ],
+    "bpm": "ช้า (87 BPM)",
+    "lang": "jp",
+    "animeId": 10,
+    "animeMatch": [
+      10
+    ],
+    "reason": "A Silent Voice สื่อถึงการให้อภัยและเยียวยาใจ",
+    "typoIdea": "ฟอนต์สีเหลืองเลมอนตัดกับสีเทาหม่น ค่อยๆ ปรากฏทีละประโยคกินใจ"
+  },
+  {
+    "id": 174,
+    "title": "Silhouette",
+    "artist": "KANA-BOON",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/32/6b/cc/326bcc4d-5c22-1451-4935-4d693cde2ad1/jacket_KSCL02535B00Z_550.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/46/f6/8b/46f68b4a-fb0f-b118-4f1f-6b464e5e6579/mzaf_11941046521694916490.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Silhouette%20KANA-BOON",
+    "mood": "hype",
+    "tags": [
+      "นารูโตะ",
+      "วิ่ง",
+      "ร็อคสุดมันส์"
+    ],
+    "bpm": "เร็ว (142 BPM)",
+    "lang": "jp",
+    "animeId": 51,
+    "animeMatch": [
+      51
+    ],
+    "reason": "Naruto Shippuden OP16 ในตำนาน",
+    "typoIdea": "ตัวหนังสือเงาสีดำสลับพื้นหลังสีส้มสดใส วิ่งไปข้างหน้าตามจังหวะกลอง"
+  },
+  {
+    "id": 175,
+    "title": "Blue Bird",
+    "artist": "Ikimonogakari",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/48/f2/f7/48f2f77a-1229-2f65-87da-5efa9dab85b1/886445760033.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/a5/c3/9aa5c3d6-b763-a852-e3f2-60f5270f196e/mzaf_13214537326205111491.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Blue%20Bird%20Ikimonogakari",
+    "mood": "hype",
+    "tags": [
+      "นกสีฟ้า",
+      "กระพือปีก",
+      "เพลงฮิตในตำนาน"
+    ],
+    "bpm": "เร็ว (152 BPM)",
+    "lang": "jp",
+    "animeId": 51,
+    "animeMatch": [
+      51
+    ],
+    "reason": "Naruto Shippuden OP3 อมตะตลอดกาล",
+    "typoIdea": "ตัวหนังสือสยายปีก ลอยพุ่งขึ้นสู่ท้องฟ้าสีครามตามท่อนฮุคทรงพลัง"
+  },
+  {
+    "id": 176,
+    "title": "Unravel",
+    "artist": "TK from Ling tosite sigure",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b5/28/30/b5283070-a9c6-29ba-6644-635f566f26a4/jacket_AICL02717B00Z_550.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3e/6b/f2/3e6bf2a5-f547-f33f-615f-7b8a37d5bbed/mzaf_13110023540909055333.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Unravel%20TK%20from%20Ling%20tosite%20sigure",
+    "mood": "dark",
+    "tags": [
+      "โตเกียวกูล",
+      "กรีดร้อง",
+      "ดาร์กจิตวิทยา"
+    ],
+    "bpm": "เร็ว (135 BPM)",
+    "lang": "jp",
+    "animeId": 52,
+    "animeMatch": [
+      52
+    ],
+    "reason": "Tokyo Ghoul OP1 กรีดร้องบาดลึก",
+    "typoIdea": "ฟอนต์สั่นระรัวแบบ Distortion ตัวอักษรบิดเบี้ยวตามเสียงร้องอันบาดลึก"
+  },
+  {
+    "id": 177,
+    "title": "Zenzenzense - Movie Ver.",
+    "artist": "RADWIMPS",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/56/b3/8c/56b38c05-1728-402c-016c-c1e4b0635be8/4988031167618_cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f8/fd/9f/f8fd9f88-67e8-ce12-f44d-1b4fe421f1f9/mzaf_5313510550820503304.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Zenzenzense%20-%20Movie%20Ver.%20RADWIMPS",
+    "mood": "hype",
+    "tags": [
+      "ชาติก่อนๆ",
+      "หลับตาฝัน",
+      "ร็อคพลังบวก"
+    ],
+    "bpm": "เร็ว (190 BPM)",
+    "lang": "jp",
+    "animeId": 9,
+    "animeMatch": [
+      9
+    ],
+    "reason": "Your Name วิ่งข้ามกาลเวลา",
+    "typoIdea": "ฟอนต์พุ่งกระแทกตามจังหวะอินโทรสับคอร์ดกีตาร์ความเร็ว 190 BPM"
+  },
+  {
+    "id": 178,
+    "title": "Sign",
+    "artist": "FLOW",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/d1/36/28/d1362856-9a92-94bb-213f-80b767322a13/jacket_KSCL01600B00Z_550.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5d/a7/c3/5da7c37b-7516-eeeb-4f9c-a65ffcc33189/mzaf_961849683140294438.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Sign%20FLOW",
+    "mood": "hype",
+    "tags": [
+      "นารูโตะ",
+      "จิไรยะ",
+      "ร็อคในตำนาน"
+    ],
+    "bpm": "เร็ว (140 BPM)",
+    "lang": "jp",
+    "animeId": 51,
+    "animeMatch": [
+      51
+    ],
+    "reason": "Naruto Shippuden OP6 บทจิไรยะ",
+    "typoIdea": "ฟอนต์สีส้มเพลิง กระแทกตามจังหวะริฟฟ์กีตาร์บาดอารมณ์"
+  },
+  {
+    "id": 179,
+    "title": "Go!!!",
+    "artist": "FLOW",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/cd/ca/89/cdca8927-8181-fe15-976c-e4ece60f53ea/jacket_KSCL03035B00Z_550.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9c/64/09/9c64099b-9459-325a-7ef1-506108e8f8da/mzaf_12308580034832000273.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Go!!!%20FLOW",
+    "mood": "hype",
+    "tags": [
+      "นารูโตะ",
+      "วีอาร์ไฟท์ติ้งดรีมเมอร์",
+      "ตำนาน"
+    ],
+    "bpm": "เร็ว (134 BPM)",
+    "lang": "jp",
+    "animeId": 51,
+    "animeMatch": [
+      51
+    ],
+    "reason": "Naruto OP4 วีอาร์ไฟท์ติ้งดรีมเมอร์",
+    "typoIdea": "ตัวหนังสือสลับสี แดง-เหลือง-ดำ กระโดดตามจังหวะกลองพาเหรด"
+  },
+  {
+    "id": 180,
+    "title": "The Rumbling",
+    "artist": "SiM",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/7a/18/87/7a1887b2-5a4b-c3ca-255d-db8a65f43245/PCSP_03935_A.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/42/81/ee/4281ee26-10b9-b596-0b33-eede676753eb/mzaf_11152246900383586621.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/The%20Rumbling%20SiM",
+    "mood": "dark",
+    "tags": [
+      "ผ่าพิภพไททัน",
+      "เมทัล",
+      "การกวาดล้าง"
+    ],
+    "bpm": "เร็ว (145 BPM)",
+    "lang": "jp",
+    "animeId": 11,
+    "animeMatch": [
+      11
+    ],
+    "reason": "Attack on Titan Final Season เมทัลถล่มพิภพ",
+    "typoIdea": "ฟอนต์เหล็กหนาแตกระแหง สั่นสะเทือนตามเสียงสำรอกเฮฟวี่เมทัล"
+  },
+  {
+    "id": 181,
+    "title": "Zankyosanka",
+    "artist": "Aimer",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c9/40/9e/c9409e84-c0ea-c389-3be3-2343ec3dfb3b/4547366539806.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e7/65/bc/e765bc4b-7710-5c13-c35d-8cd30d7bcacd/mzaf_5473058310448658183.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Zankyosanka%20Aimer",
+    "mood": "hype",
+    "tags": [
+      "ดาบพิฆาตอสูร",
+      "ย่านเริงรมย์",
+      "ดอกไม้ไฟ"
+    ],
+    "bpm": "เร็ว (160 BPM)",
+    "lang": "jp",
+    "animeId": 24,
+    "animeMatch": [
+      24
+    ],
+    "reason": "Demon Slayer บท่านเริงรมย์ พลุไฟ",
+    "typoIdea": "ฟอนต์ประกายสีทอง ลอยระเบิดเหมือนดอกไม้ไฟยามราตรี"
+  },
+  {
+    "id": 182,
+    "title": "LOST IN PARADISE (feat. AKLO)",
+    "artist": "ALI",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/98/69/58/9869582a-a29e-b828-11e2-4f484deabb7d/4547366477733.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f3/50/5a/f3505a8e-6547-e3bb-33bd-95521ddfeec9/mzaf_7361094109626562212.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/LOST%20IN%20PARADISE%20(feat.%20AKLO)%20ALI",
+    "mood": "chill",
+    "tags": [
+      "มหาเวทย์ผนึกมาร",
+      "แจ๊สฟังค์",
+      "แดนซ์สุดเท่"
+    ],
+    "bpm": "ปานกลาง (115 BPM)",
+    "lang": "jp",
+    "animeId": 5,
+    "animeMatch": [
+      5
+    ],
+    "reason": "Jujutsu Kaisen ED1 แดนซ์สุดเท่",
+    "typoIdea": "ตัวหนังสือเต้นดุ๊กดิ๊ก หมุนตัวตามจังหวะเบสเดินอย่างมีคลาส"
+  },
+  {
+    "id": 183,
+    "title": "The Hero! (One Punch Man)",
+    "artist": "Midnight Shinigami",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/6f/43/e2/6f43e20d-881d-1400-163c-0e9b980c3999/artwork.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e0/01/96/e00196d1-46c9-fd80-8f33-7e49ca4a7652/mzaf_6574669169551309082.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/The%20Hero!%20(One%20Punch%20Man)%20Midnight%20Shinigami",
+    "mood": "hype",
+    "tags": [
+      "วันพั้นช์แมน",
+      "หมัดเดียวจอด",
+      "พลังเต็มพิกัด"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "jp",
+    "animeId": 55,
+    "animeMatch": [
+      55
+    ],
+    "reason": "One Punch Man OP1 หมัดเดียวจอด",
+    "typoIdea": "ตัวหนังสือสีเหลือง-แดง ขยายใหญ่เต็มจอในจังหวะ ONE PUNCH"
+  },
+  {
+    "id": 184,
+    "title": "Flyers",
+    "artist": "BRADIO",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1c/56/52/1c56524d-2df6-bedf-4446-2d1853b1dbe1/4988021009430.png/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/44/92/e6/4492e6a7-e737-9a8b-ba37-6107d51dc37c/mzaf_940610776988081801.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Flyers%20BRADIO",
+    "mood": "hype",
+    "tags": [
+      "เดธพาเหรด",
+      "ฟังก์ร็อค",
+      "รอยยิ้ม"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "jp",
+    "animeId": 57,
+    "animeMatch": [
+      57
+    ],
+    "reason": "Death Parade OP ฟังก์ร็อคเปี่ยมรอยยิ้ม",
+    "typoIdea": "ฟอนต์เรโทรย้อนยุค สวิงซ้ายขวาตามจังหวะดีดนิ้วสุดเร้าใจ"
+  },
+  {
+    "id": 185,
+    "title": "Again",
+    "artist": "YUI",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/f7/51/e7/f751e79a-9bcb-f7ec-18d9-348ca8aa65f8/jacket_SRCL07311B00Z_550.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/48/2f/4f/482f4fca-6848-9ab5-4f6a-e76cee5a6c98/mzaf_17040137880719986209.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Again%20YUI",
+    "mood": "hype",
+    "tags": [
+      "แขนกลคนแปรธาตุ",
+      "อะคูสติกร็อค",
+      "คลาสสิก"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "jp",
+    "animeId": 65,
+    "animeMatch": [
+      65
+    ],
+    "reason": "Fullmetal Alchemist: Brotherhood OP1 ในตำนาน",
+    "typoIdea": "ฟอนต์พู่กันสีเงิน กวาดเป็นวงกลมเวทมนตร์แปรธาตุตามท่อนฮุค"
+  },
+  {
+    "id": 186,
+    "title": "Black Catcher",
+    "artist": "ビッケブランカ",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/69/1b/6f/691b6ff6-a5d9-c11f-0f83-411b6e020eff/ANTCD-A0000000841.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/72/1f/81/721f8150-9e02-bc81-ae38-004baf64bd2a/mzaf_13307220116577833618.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Black%20Catcher%20%E3%83%93%E3%83%83%E3%82%B1%E3%83%96%E3%83%A9%E3%83%B3%E3%82%AB",
+    "mood": "dark",
+    "tags": [
+      "แบล็คโคลเวอร์",
+      "ดาร์กเปียโน",
+      "ไวรัล"
+    ],
+    "bpm": "เร็ว (138 BPM)",
+    "lang": "jp",
+    "animeId": 64,
+    "animeMatch": [
+      64
+    ],
+    "reason": "Black Clover OP10 ดาร์กเปียโน",
+    "typoIdea": "ตัวหนังสือเงาสีดำ ค่อยๆ ถูกดูดกลืนลงสู่ความมืดมิด"
+  },
+  {
+    "id": 187,
+    "title": "Brand New",
+    "artist": "Mrs. GREEN APPLE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/41/a0/b6/41a0b6b9-a720-25e5-fc69-7e9c3ca1296e/26UMGIM73217.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/86/b9/e2/86b9e295-d9f1-d53d-c4f5-5335ac7127b2/mzaf_13409156314119121134.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Brand%20New%20Mrs.%20GREEN%20APPLE",
+    "mood": "hype",
+    "tags": [
+      "ไฟร์ฟอร์ซ",
+      "ไฟลุก",
+      "สปีดสูง"
+    ],
+    "bpm": "เร็ว (180 BPM)",
+    "lang": "jp",
+    "animeId": 11,
+    "animeMatch": [
+      11
+    ],
+    "reason": "ฟอนต์สีเปลวไฟ วิ่งผ่านหน้าจอด้วยความเร็ว 180 BPM",
+    "typoIdea": "ฟอนต์สีเปลวไฟ วิ่งผ่านหน้าจอด้วยความเร็ว 180 BPM"
+  },
+  {
+    "id": 188,
+    "title": "Paint It Black",
+    "artist": "The Rolling Stones",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/29/b7/81/29b781e5-3773-c87e-c6a8-82581e53d270/13ABKIM00053.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/82/a9/36/82a936f6-cc74-9df6-bf75-19c1483b8e5b/mzaf_1315194188082064730.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Paint%20It%20Black%20The%20Rolling%20Stones",
+    "mood": "dark",
+    "tags": [
+      "ร็อคคลาสสิก",
+      "เวนส์เดย์",
+      "ดาร์ก"
+    ],
+    "bpm": "เร็ว (160 BPM)",
+    "lang": "en",
+    "animeId": 71,
+    "animeMatch": [
+      71
+    ],
+    "reason": "ฟอนต์สีดำสนิทขอบคม ค่อยๆ กลืนกินสีสันรอบตัวให้เป็นสีดำ",
+    "typoIdea": "ฟอนต์สีดำสนิทขอบคม ค่อยๆ กลืนกินสีสันรอบตัวให้เป็นสีดำ"
+  },
+  {
+    "id": 189,
+    "title": "Heathens",
+    "artist": "twenty one pilots",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2f/76/c0/2f76c0c7-5aaf-eb97-2002-f40c9ecde722/075679910486.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/85/cb/b1/85cbb14b-149c-8344-fbc9-432c623fda47/mzaf_5195826988206544126.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Heathens%20twenty%20one%20pilots",
+    "mood": "dark",
+    "tags": [
+      "ดาร์กฮิปฮอป",
+      "ลึกลับ",
+      "ระทึกขวัญ"
+    ],
+    "bpm": "ช้า (90 BPM)",
+    "lang": "en",
+    "animeId": 34,
+    "animeMatch": [
+      34
+    ],
+    "reason": "ฟอนต์สีเขียวพิษ กระพริบช้าๆ ในห้องขังแห่งความมืด",
+    "typoIdea": "ฟอนต์สีเขียวพิษ กระพริบช้าๆ ในห้องขังแห่งความมืด"
+  },
+  {
+    "id": 190,
+    "title": "Starboy (feat. Daft Punk)",
+    "artist": "The Weeknd",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b5/92/bb/b592bb72-52e3-e756-9b26-9f56d08f47ab/16UMGIM67864.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/11/71/d6/1171d6ad-3c96-e027-2af6-58028426588c/mzaf_15137631797407745471.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Starboy%20(feat.%20Daft%20Punk)%20The%20Weeknd",
+    "mood": "dark",
+    "tags": [
+      "ไซเบอร์พังก์",
+      "ดาร์กซินธ์",
+      "หรูหรา"
+    ],
+    "bpm": "เร็ว (186 BPM)",
+    "lang": "en",
+    "animeId": 25,
+    "animeMatch": [
+      25
+    ],
+    "reason": "ฟอนต์สีนีออนม่วง-ชมพู เรืองแสงสะท้อนตึกระฟ้าแห่งอนาคต",
+    "typoIdea": "ฟอนต์สีนีออนม่วง-ชมพู เรืองแสงสะท้อนตึกระฟ้าแห่งอนาคต"
+  },
+  {
+    "id": 191,
+    "title": "Mockingbird",
+    "artist": "Eminem",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/49/2c/16/492c1618-544d-2587-094c-009b059ba96f/00602567850359.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/01/02/04/010204d9-0ec4-9f71-586c-4776a579b1cb/mzaf_6978124395926668013.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Mockingbird%20Eminem",
+    "mood": "sad",
+    "tags": [
+      "ครอบครัว",
+      "กล่องดนตรี",
+      "ซึ้งลึก"
+    ],
+    "bpm": "ช้า (84 BPM)",
+    "lang": "en",
+    "animeId": 10,
+    "animeMatch": [
+      10
+    ],
+    "reason": "ฟอนต์ตัวพิมพ์ดีดโบราณ พิมพ์ทีละตัวตามเสียงกล่องดนตรีไขลาน",
+    "typoIdea": "ฟอนต์ตัวพิมพ์ดีดโบราณ พิมพ์ทีละตัวตามเสียงกล่องดนตรีไขลาน"
+  },
+  {
+    "id": 192,
+    "title": "Another Love (Tiësto Remix)",
+    "artist": "Tom Odell & Tiësto",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/20/ac/68/20ac6879-1846-84df-7189-d8745c1bef93/196589135537.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/0d/8d/2a0d8d48-f74a-236e-ec23-24a958f5649d/mzaf_16143782915340700495.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Another%20Love%20(Ti%C3%ABsto%20Remix)%20Tom%20Odell%20%26%20Ti%C3%ABsto",
+    "mood": "sad",
+    "tags": [
+      "เศร้าบาดลึก",
+      "เปียโนทรงพลัง",
+      "ร้องไห้"
+    ],
+    "bpm": "ช้า (123 BPM)",
+    "lang": "en",
+    "animeId": 3,
+    "animeMatch": [
+      3
+    ],
+    "reason": "ตัวหนังสือสั่นไหวและแตกสลายตามเสียงตะโกนท่อนฮุค",
+    "typoIdea": "ตัวหนังสือสั่นไหวและแตกสลายตามเสียงตะโกนท่อนฮุค"
+  },
+  {
+    "id": 193,
+    "title": "Thank You",
+    "artist": "Dido",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Features114/v4/45/9a/24/459a24aa-0c31-0129-fa8d-44b03a04df62/dj.zcfxujdv.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/b3/ed/c9b3ed28-4209-f550-3170-e633b200f105/mzaf_7244198289293517571.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Thank%20You%20Dido",
+    "mood": "chill",
+    "tags": [
+      "ฝนพรำ",
+      "คิดถึง",
+      "กาแฟอุ่น"
+    ],
+    "bpm": "ช้า (80 BPM)",
+    "lang": "en",
+    "animeId": 13,
+    "animeMatch": [
+      13
+    ],
+    "reason": "ฟอนต์โปร่งแสงสีขาว ละอองฝนเกาะตัวหนังสืออย่างนุ่มนวล",
+    "typoIdea": "ฟอนต์โปร่งแสงสีขาว ละอองฝนเกาะตัวหนังสืออย่างนุ่มนวล"
+  },
+  {
+    "id": 194,
+    "title": "พิจารณา (Musketeers) 70s Funk \"So Good\" Cover",
+    "artist": "70s Funk So Good",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4d/41/c0/4d41c0a8-9336-a91c-685d-a7eb9c219224/artwork.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4a/ad/9f/4aad9f93-e194-4557-fae6-37ce5f3dc61b/mzaf_5243675828192966992.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%B4%E0%B8%88%E0%B8%B2%E0%B8%A3%E0%B8%93%E0%B8%B2%20(Musketeers)%2070s%20Funk%20%22So%20Good%22%20Cover%2070s%20Funk%20So%20Good",
+    "mood": "sad",
+    "tags": [
+      "ไมยราพ",
+      "ตัดพ้อ",
+      "ไวรัล"
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14
+    ],
+    "reason": "ตัวหนังสือกล่องคำพูด ซูมเข้าหาคำสำคัญในท่อนแร็พ",
+    "typoIdea": "ตัวหนังสือกล่องคำพูด ซูมเข้าหาคำสำคัญในท่อนแร็พ"
+  },
+  {
+    "id": 195,
+    "title": "เพลงรักในวันลา (รักที่เคยหวาน)",
+    "artist": "Lower Mansion",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/6f/21/de/6f21deea-a256-f52d-8b9f-21b98e0b97da/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ec/37/ce/ec37ce72-fdaa-1333-c2aa-7c1334c77fa7/mzaf_13475738661062503563.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%83%E0%B8%99%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%A5%E0%B8%B2%20Lower%20Mansion",
+    "mood": "sad",
+    "tags": [
+      "รักที่เคยหวาน",
+      "ความทรงจำ",
+      "วันลา",
+      "อกหัก"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 15,
+    "animeMatch": [
+      15
+    ]
+  },
+  {
+    "id": 196,
+    "title": "ทนพิษบาดแผลไม่ไหว (รักที่เคยหวาน)",
+    "artist": "Potato",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6e/4d/90/6e4d907f-9dee-7e73-0ae8-0021b45553c9/888332974875.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/48/14/0d/48140d82-bafe-05c3-3d2e-30be6bde7ff5/mzaf_13152390124138197259.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%99%E0%B8%9E%E0%B8%B4%E0%B8%A9%E0%B8%9A%E0%B8%B2%E0%B8%94%E0%B9%81%E0%B8%9C%E0%B8%A5%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%8ไหว%20Potato",
+    "mood": "sad",
+    "tags": [
+      "รักที่เคยหวาน",
+      "กลายเป็นความขม",
+      "เจ็บปวด",
+      "ร็อก"
+    ],
+    "bpm": "ช้า (76 BPM)",
+    "lang": "th",
+    "animeId": 52,
+    "animeMatch": [
+      52
+    ]
+  },
+  {
+    "id": 197,
+    "title": "Tek It",
+    "artist": "Cafuné",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/66/00/2c/66002c66-9fc6-5a16-654f-8409873352d4/075679747020.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ac/25/c6/ac25c644-057b-1421-ff7c-bdd4a0114459/mzaf_9368654034340652874.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Tek%20It%20Cafune",
+    "mood": "chill",
+    "tags": [
+      "I watch the moon",
+      "TikTok ไทโป",
+      "อินดี้ร็อก",
+      "ติดหู"
+    ],
+    "bpm": "ปานกลาง (96 BPM)",
+    "lang": "en",
+    "animeId": 25,
+    "animeMatch": [
+      25
+    ]
+  },
+  {
+    "id": 198,
+    "title": "Sun Sun Days",
+    "artist": "Spira Spica",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/3c/2f/cf/3c2fcf50-51de-1954-4dfe-6fde363c34a3/4547366554625.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/9f/31/029f31d9-865f-8238-795d-0a69106cd7bd/mzaf_4087349157470098609.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Sun%20Sun%20Days%20Spira%20Spica",
+    "mood": "love",
+    "tags": [
+      "หนุ่มเย็บผ้ากับสาวคอสเพลย์ OP",
+      "สดใส",
+      "โรแมนติก",
+      "พลังบวก"
+    ],
+    "bpm": "เร็ว (138 BPM)",
+    "lang": "jp",
+    "animeId": 70,
+    "animeMatch": [
+      70
+    ]
+  },
+  {
+    "id": 199,
+    "title": "Shiki No Uta",
+    "artist": "MINMI",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/6e/c7/57/6ec75738-5948-e0ec-2d3b-05af3efb1d83/mzi.wqkgumkk.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/d4/05/b3d40599-79fe-8ae8-030b-c534dcbc2564/mzaf_13850105976352284754.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Shiki%20No%20Uta%20MINMI",
+    "mood": "chill",
+    "tags": [
+      "ซามูไรแชมพลู ED",
+      "Nujabes Beat",
+      "Lo-Fi Chill",
+      "คลาสสิก"
+    ],
+    "bpm": "ปานกลาง (94 BPM)",
+    "lang": "jp",
+    "animeId": 79,
+    "animeMatch": [
+      79
+    ]
+  },
+  {
+    "id": 200,
+    "title": "Bye Bye Yesterday",
+    "artist": "3-nen E-gumi Utatan",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/01/aa/57/01aa57d8-703d-6ecb-d76e-850a92cea9c9/EYCA-10927.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/54/e7/1954e7f4-b211-849d-03a4-94a515c197df/mzaf_10611984984504241868.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Bye%20Bye%20Yesterday%20Assassination%20Classroom",
+    "mood": "hype",
+    "tags": [
+      "ห้องเรียนลอบสังหาร OP",
+      "มิตรภาพ",
+      "วันวาน",
+      "พลังใจ"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "jp",
+    "animeId": 77,
+    "animeMatch": [
+      77
+    ]
+  },
+  {
+    "id": 201,
+    "title": "สัมผัสรัก (Touch my heart) [From \"วาดฝันวันวิวาห์\"]",
+    "artist": "BOWKYLION",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e4/97/68/e49768af-d0d8-dfea-32c5-51e6a3b9e25e/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/f0/2d/76f02d3a-4b61-f285-a84a-272aa2904c63/mzaf_2746150345781827060.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9C%E0%B8%B1%E0%B8%AA%E0%B8%A3%E0%B8%B1%E0%B8%81%20(Touch%20my%20heart)%20%5BFrom%20%22%E0%B8%A7%E0%B8%B2%E0%B8%94%E0%B8%9D%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%A7%E0%B8%B4%E0%B8%A7%E0%B8%B2%E0%B8%AB%E0%B9%8C%22%5D%20BOWKYLION",
+    "mood": "sad",
+    "tags": [
+      "วาดไว้",
+      "BOWKYLION",
+      "ซึ้งกินใจ"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      1
+    ]
+  },
+  {
+    "id": 202,
+    "title": "ดาวหางฮัลเลย์",
+    "artist": "fellow fellow",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/87/3b/c0/873bc037-c197-bc3d-4ac2-77300149fa38/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/37/ff/7337ff2d-c4c8-4190-1f92-5fdca53ce282/mzaf_5262209305244392518.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%B2%E0%B8%A7%E0%B8%AB%E0%B8%B2%E0%B8%87%E0%B8%AE%E0%B8%B1%E0%B8%A5%E0%B9%80%E0%B8%A5%E0%B8%A2%E0%B9%8C%20fellow%20fellow",
+    "mood": "love",
+    "tags": [
+      "ส่องสว่าง",
+      "ความรัก",
+      "ดวงดาว"
+    ],
+    "bpm": "ปานกลาง (86 BPM)",
+    "lang": "th",
+    "animeId": 9,
+    "animeMatch": [
+      9
+    ]
+  },
+  {
+    "id": 203,
+    "title": "Klin Dokmai",
+    "artist": "Newery",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b2/81/0c/b2810cad-9fad-ed73-71fc-76a81f33dfdd/0849480072479_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/c3/a7/2ec3a7a1-78fb-efac-c3aa-5bc5220eab9e/mzaf_10494967788962621898.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Klin%20Dokmai%20Newery",
+    "mood": "chill",
+    "tags": [
+      "กลิ่นดอกไม้",
+      "อินดี้",
+      "คิดถึง"
+    ],
+    "bpm": "ช้า (78 BPM)",
+    "lang": "th",
+    "animeId": 18,
+    "animeMatch": [
+      18
+    ]
+  },
+  {
+    "id": 204,
+    "title": "พิจารณา (Musketeers) 70s Funk \"So Good\" Cover",
+    "artist": "70s Funk So Good",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4d/41/c0/4d41c0a8-9336-a91c-685d-a7eb9c219224/artwork.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4a/ad/9f/4aad9f93-e194-4557-fae6-37ce5f3dc61b/mzaf_5243675828192966992.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%B4%E0%B8%88%E0%B8%B2%E0%B8%A3%E0%B8%93%E0%B8%B2%20(Musketeers)%2070s%20Funk%20%22So%20Good%22%20Cover%2070s%20Funk%20So%20Good",
+    "mood": "sad",
+    "tags": [
+      "พิจารณา",
+      "ฟังก์",
+      "อกหัก"
+    ],
+    "bpm": "ปานกลาง (96 BPM)",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14
+    ]
+  },
+  {
+    "id": 205,
+    "title": "ลบไม่ได้ช่วยให้ลืม (Erase)",
+    "artist": "Ink Waruntorn",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d9/58/d3/d958d398-1aec-0f5e-2d34-656df8184890/0840102420586_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/a5/51/aba5515b-36c4-4ec4-f376-4f886bfb5a56/mzaf_2464286645921122949.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%9A%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%A5%E0%B8%B7%E0%B8%A1%20(Erase)%20Ink%20Waruntorn",
+    "mood": "sad",
+    "tags": [
+      "ความทรงจำ",
+      "ไม่ลืม",
+      "เศร้า"
+    ],
+    "bpm": "ช้า (74 BPM)",
+    "lang": "th",
+    "animeId": 10,
+    "animeMatch": [
+      10
+    ]
+  },
+  {
+    "id": 206,
+    "title": "ถ้าเราเจอกันอีก (Until Then)",
+    "artist": "Tilly Birds",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/92/a3/5c/92a35c3e-826b-1104-b9a4-7f0839fa3751/888332906845.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/1b/5c/021b5c1f-dd10-80f6-f78b-8d338c1af224/mzaf_9496894947285646060.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%96%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%A3%E0%B8%B2%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B5%E0%B8%81%20(Until%20Then)%20Tilly%20Birds",
+    "mood": "sad",
+    "tags": [
+      "การจากลา",
+      "หวังว่า",
+      "น้ำตา"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 15,
+    "animeMatch": [
+      15
+    ]
+  },
+  {
+    "id": 207,
+    "title": "ซ่อนกลิ่น",
+    "artist": "Palmy",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7a/f1/7d/7af17dac-68dc-1ec7-39be-35186bf08a0a/888332930772.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/08/12/36/0812360d-4479-b29d-5275-931b1e541694/mzaf_5285055444520979895.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%8B%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%81%E0%B8%A5%E0%B8%B4%E0%B9%88%E0%B8%99%20Palmy",
+    "mood": "love",
+    "tags": [
+      "หอมกลิ่นรัก",
+      "ฝังใจ",
+      "วันวาน"
+    ],
+    "bpm": "ปานกลาง (84 BPM)",
+    "lang": "th",
+    "animeId": 12,
+    "animeMatch": [
+      12
+    ]
+  },
+  {
+    "id": 208,
+    "title": "golden hour",
+    "artist": "JVKE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8d/1a/7b/8d1a7b44-316f-7c7f-4380-935673fb697a/5056167175650.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/02/8c/30028c8a-a125-5466-bcc6-27a83b1c0135/mzaf_16911571635366913039.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/golden%20hour%20JVKE",
+    "mood": "love",
+    "tags": [
+      "shining",
+      "viral edit",
+      "piano"
+    ],
+    "bpm": "ปานกลาง (94 BPM)",
+    "lang": "en",
+    "animeId": 7,
+    "animeMatch": [
+      7
+    ]
+  },
+  {
+    "id": 209,
+    "title": "Until I Found You",
+    "artist": "Stephen Sanchez",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/64/d2/c5/64d2c511-67f4-ae09-5153-d39c3da413a3/21UMGIM75467.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/82/c1/5382c1d4-ddba-aa2b-90df-57268895fac9/mzaf_8926201202931541051.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Until%20I%20Found%20You%20Stephen%20Sanchez",
+    "mood": "love",
+    "tags": [
+      "Georgia",
+      "falling in love",
+      "retro"
+    ],
+    "bpm": "ปานกลาง (102 BPM)",
+    "lang": "en",
+    "animeId": 70,
+    "animeMatch": [
+      70
+    ]
+  },
+  {
+    "id": 210,
+    "title": "Romantic Homicide",
+    "artist": "d4vd",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/4e/0c/82/4e0c82e8-7970-25f5-bfd6-6f0faec83dcb/22UMGIM94151.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/f5/40/a1f5405d-408f-d84e-1775-b87b30174067/mzaf_5384372198207712281.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Romantic%20Homicide%20d4vd",
+    "mood": "sad",
+    "tags": [
+      "in the back of my mind",
+      "dark",
+      "heartbroken"
+    ],
+    "bpm": "ช้า (66 BPM)",
+    "lang": "en",
+    "animeId": 25,
+    "animeMatch": [
+      25
+    ]
+  },
+  {
+    "id": 211,
+    "title": "Here With Me",
+    "artist": "d4vd",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Video122/v4/ba/ba/58/baba58f5-20a1-3b9f-45ed-c9742866478c/22UM1IM13444.crop.jpg/600x600bb.jpg",
+    "previewUrl": "https://video-ssl.itunes.apple.com/itunes-assets/Video122/v4/c6/3e/51/c63e514d-55d5-9a6a-3b81-92a38f121e4f/mzvf_1502976068911400270.1920w.h264lc.U.p.m4v",
+    "spotifyUrl": "https://open.spotify.com/search/Here%20With%20Me%20d4vd",
+    "mood": "love",
+    "tags": [
+      "watch the stars",
+      "slowed",
+      "aesthetic"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "en",
+    "animeId": 20,
+    "animeMatch": [
+      20
+    ]
+  },
+  {
+    "id": 212,
+    "title": "Glimpse of Us",
+    "artist": "Joji",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d0/2a/43/d02a433a-3ab8-9a94-b07d-1dc599b64966/93624864387.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/53/c2/0c53c240-300a-5ddf-fc86-3a54e1b73a78/mzaf_13555682862214742934.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Glimpse%20of%20Us%20Joji",
+    "mood": "sad",
+    "tags": [
+      "looking at her",
+      "memories",
+      "crying"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "en",
+    "animeId": 16,
+    "animeMatch": [
+      16
+    ]
+  },
+  {
+    "id": 213,
+    "title": "Daylight",
+    "artist": "David Kushner",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b9/f2/2b/b9f22b26-d962-70de-6d85-674139ded7cc/842812190988_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/93/94/52/939452d5-e74e-a819-2f16-7c9148f3419a/mzaf_17998933934090835373.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Daylight%20David%20Kushner",
+    "mood": "sad",
+    "tags": [
+      "running from sunlight",
+      "heavy beats",
+      "haunting"
+    ],
+    "bpm": "ช้า (65 BPM)",
+    "lang": "en",
+    "animeId": 38,
+    "animeMatch": [
+      38
+    ]
+  },
+  {
+    "id": 214,
+    "title": "Otonoke",
+    "artist": "Creepy Nuts",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2c/66/b5/2c66b5b5-a46f-1064-4802-fe82c0e56200/4547366705638.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/de/3c/55/de3c5508-301a-2aae-a8e6-069a1e2edb04/mzaf_14245211407965810210.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Otonoke%20Creepy%20Nuts",
+    "mood": "hype",
+    "tags": [
+      "DanDaDan OP",
+      "Creepy Nuts",
+      "บีทเดือด"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "jp",
+    "animeId": 32,
+    "animeMatch": [
+      32
+    ]
+  },
+  {
+    "id": 215,
+    "title": "Kizuna No Kiseki",
+    "artist": "MAN WITH A MISSION & milet",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ea/50/a1/ea50a147-5c73-a762-0650-d2a285d6fabd/4547366615807.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/c3/c8/66c3c8a9-846c-e4b5-9a5d-c1d961f14644/mzaf_7312965873766517511.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Kizuna%20No%20Kiseki%20MAN%20WITH%20A%20MISSION%20%26%20milet",
+    "mood": "hype",
+    "tags": [
+      "ดาบพิฆาตอสูร",
+      "มิตรภาพ",
+      "สู้ไม่ถอย"
+    ],
+    "bpm": "เร็ว (135 BPM)",
+    "lang": "jp",
+    "animeId": 24,
+    "animeMatch": [
+      24
+    ]
+  },
+  {
+    "id": 216,
+    "title": "Abyss (from Kaiju No. 8)",
+    "artist": "YUNGBLUD",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a7/7f/24/a77f24f6-d347-fe0c-05de-0528971e6027/24UMGIM26706.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/b0/ef/17b0ef44-1d0a-8ca4-7442-53a5fba773fb/mzaf_16206251573451214130.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Abyss%20(from%20Kaiju%20No.%208)%20YUNGBLUD",
+    "mood": "hype",
+    "tags": [
+      "Kaiju No. 8 OP",
+      "YUNGBLUD",
+      "มันส์"
+    ],
+    "bpm": "เร็ว (140 BPM)",
+    "lang": "en",
+    "animeId": 33,
+    "animeMatch": [
+      33
+    ]
+  },
+  {
+    "id": 217,
+    "title": "Inferno",
+    "artist": "Mrs. GREEN APPLE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/86/12/f4/8612f495-10a5-0189-0f39-6644100a2434/19UMGIM67614.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/c0/17/acc017cc-c110-03bb-c94a-8195e6568698/mzaf_17290573489629338079.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Inferno%20Mrs.%20GREEN%20APPLE",
+    "mood": "hype",
+    "tags": [
+      "หน่วยผจญคนไฟลุก OP",
+      "ไฟลุก",
+      "เดือดสุด"
+    ],
+    "bpm": "เร็ว (145 BPM)",
+    "lang": "jp",
+    "animeId": 81,
+    "animeMatch": [
+      81
+    ]
+  },
+  {
+    "id": 218,
+    "title": "Peace Sign",
+    "artist": "Kenshi Yonezu",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/1b/7a/5e/1b7a5e77-b0c4-6e32-f3ee-c09c70f8378e/jacket_SRCL09571B00Z_550.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/55/c0/aa/55c0aaf3-d74d-9b62-4126-63d9c0345561/mzaf_6612008514607888435.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Peace%20Sign%20Kenshi%20Yonezu",
+    "mood": "hype",
+    "tags": [
+      "มายฮีโร่ OP",
+      "ก้าวต่อไป",
+      "ฮีโร่"
+    ],
+    "bpm": "เร็ว (136 BPM)",
+    "lang": "jp",
+    "animeId": 41,
+    "animeMatch": [
+      41
+    ]
+  },
+  {
+    "id": 219,
+    "title": "Cry Baby",
+    "artist": "OFFICIAL HIGE DANDISM",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e5/06/f2/e506f2a5-ebde-dd12-b347-7cf322d40644/PCSP_03508_A.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3b/fb/b9/3bfbb919-71d2-7358-a0c8-f39b6381a442/mzaf_8987359075267074414.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Cry%20Baby%20OFFICIAL%20HIGE%20DANDISM",
+    "mood": "hype",
+    "tags": [
+      "โตเกียว รีเวนเจอร์ส OP",
+      "ย้อนเวลา",
+      "มิตรภาพ"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "jp",
+    "animeId": 30,
+    "animeMatch": [
+      30
+    ]
+  },
+  {
+    "id": 220,
+    "title": "Dandelions",
+    "artist": "Ruth B.",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/24/f7/82/24f782af-5aea-55e7-bf67-2f4e62664fe8/886446439341.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bc/5a/88/bc5a881d-dc44-fc7f-92fd-376680957969/mzaf_10218454983981161930.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Dandelions%20Ruth%20B.",
+    "mood": "love",
+    "tags": [
+      "Dandelions",
+      "Ruth B.",
+      "love",
+      "Typography Edit"
+    ],
+    "bpm": "ปานกลาง (95 BPM)",
+    "lang": "en",
+    "animeId": 12,
+    "animeMatch": [
+      12
+    ]
+  },
+  {
+    "id": 221,
+    "title": "Heat Waves",
+    "artist": "Glass Animals",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/da/8b/77/da8b7731-6f4f-eacf-5e74-8b23389eefa1/20UMGIM03371.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/4c/b9/a34cb911-40fc-5f0c-e862-14bd171a77aa/mzaf_384792072030970151.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Heat%20Waves%20Glass%20Animals",
+    "mood": "chill",
+    "tags": [
+      "Heat Waves",
+      "Glass Animals",
+      "chill",
+      "Typography Edit"
+    ],
+    "bpm": "ปานกลาง (95 BPM)",
+    "lang": "en",
+    "animeId": 25,
+    "animeMatch": [
+      25
+    ]
+  },
+  {
+    "id": 222,
+    "title": "As It Was",
+    "artist": "Harry Styles",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2a/19/fb/2a19fb85-2f70-9e44-f2a9-82abe679b88e/886449990061.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/10/16/67101606-3869-ca44-6c03-e13d6322cb51/mzaf_1135399237022217274.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/As%20It%20Was%20Harry%20Styles",
+    "mood": "chill",
+    "tags": [
+      "As It Was",
+      "Harry Styles",
+      "chill",
+      "Typography Edit"
+    ],
+    "bpm": "ปานกลาง (95 BPM)",
+    "lang": "en",
+    "animeId": 14,
+    "animeMatch": [
+      14
+    ]
+  },
+  {
+    "id": 223,
+    "title": "STAY",
+    "artist": "The Kid LAROI & Justin Bieber",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/89/59/6a/89596ab9-fa3c-8d08-4d95-a6450fa2013c/886449400515.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d7/4a/84/d74a84d5-9afa-761e-b632-baab55c2a23b/mzaf_11865500880477235553.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/STAY%20The%20Kid%20LAROI%20%26%20Justin%20Bieber",
+    "mood": "hype",
+    "tags": [
+      "STAY",
+      "The Kid LAROI & Justin Bieber",
+      "hype",
+      "Typography Edit"
+    ],
+    "bpm": "เร็ว (132 BPM)",
+    "lang": "en",
+    "animeId": 28,
+    "animeMatch": [
+      28
+    ]
+  },
+  {
+    "id": 224,
+    "title": "BIRDS OF A FEATHER",
+    "artist": "Billie Eilish",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/9f/69/929f69f1-9977-3a44-d674-11f70c852d1b/24UMGIM36186.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/31/d3/3431d34e-847f-5d66-df83-0bce688d997e/mzaf_18106743962423782018.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/BIRDS%20OF%20A%20FEATHER%20Billie%20Eilish",
+    "mood": "love",
+    "tags": [
+      "BIRDS OF A FEATHER",
+      "Billie Eilish",
+      "love",
+      "Typography Edit"
+    ],
+    "bpm": "ปานกลาง (95 BPM)",
+    "lang": "en",
+    "animeId": 20,
+    "animeMatch": [
+      20
+    ]
+  },
+  {
+    "id": 225,
+    "title": "Espresso (On Vacation Version)",
+    "artist": "Sabrina Carpenter",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/57/e8/7b/57e87ba0-5057-9bb9-c247-ce7dbe426e89/24UMGIM55213.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/4d/02/e94d0230-11ee-ef94-d2cf-a5d547bd73f4/mzaf_554140808559155562.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Espresso%20(On%20Vacation%20Version)%20Sabrina%20Carpenter",
+    "mood": "hype",
+    "tags": [
+      "Espresso (On Vacation Version)",
+      "Sabrina Carpenter",
+      "hype",
+      "Typography Edit"
+    ],
+    "bpm": "เร็ว (132 BPM)",
+    "lang": "en",
+    "animeId": 70,
+    "animeMatch": [
+      70
+    ]
+  },
+  {
+    "id": 226,
+    "title": "Beautiful Things",
+    "artist": "Benson Boone",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/54/f4/92/54f49210-e260-b519-ebbd-f4f40ee710cd/054391342751.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4d/d5/00/4dd5006f-ee02-c3f1-94db-0ed4b8dd68f1/mzaf_14250561294796027079.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Beautiful%20Things%20Benson%20Boone",
+    "mood": "hype",
+    "tags": [
+      "Beautiful Things",
+      "Benson Boone",
+      "hype",
+      "Typography Edit"
+    ],
+    "bpm": "เร็ว (132 BPM)",
+    "lang": "en",
+    "animeId": 48,
+    "animeMatch": [
+      48
+    ]
+  },
+  {
+    "id": 227,
+    "title": "Lose Control",
+    "artist": "Teddy Swims",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/36/19/66/36196640-1561-dc5e-c6bc-1e5f4befa583/093624856771.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9f/65/d6/9f65d67d-db40-d7da-c954-9a23d28dfe1a/mzaf_7625794503195542708.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Lose%20Control%20Teddy%20Swims",
+    "mood": "sad",
+    "tags": [
+      "Lose Control",
+      "Teddy Swims",
+      "sad",
+      "Typography Edit"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "en",
+    "animeId": 52,
+    "animeMatch": [
+      52
+    ]
+  },
+  {
+    "id": 228,
+    "title": "Too Sweet",
+    "artist": "Hozier",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/98/80/95/98809581-4a0e-68a6-04de-b72492e35939/196871908191.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a6/61/fc/a661fcaf-f8e5-03db-36f3-31f2e196b1a5/mzaf_18300083713037280538.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Too%20Sweet%20Hozier",
+    "mood": "chill",
+    "tags": [
+      "Too Sweet",
+      "Hozier",
+      "chill",
+      "Typography Edit"
+    ],
+    "bpm": "ปานกลาง (95 BPM)",
+    "lang": "en",
+    "animeId": 79,
+    "animeMatch": [
+      79
+    ]
+  },
+  {
+    "id": 229,
+    "title": "Die With A Smile",
+    "artist": "Lady Gaga & Bruno Mars",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/11/ae/f2/11aef294-f57c-bab9-c9fc-529162984e62/24UMGIM85348.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/6a/99/076a99ed-b946-431b-6f1f-54fa187ca5bd/mzaf_8102882277995122875.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Die%20With%20A%20Smile%20Lady%20Gaga%20%26%20Bruno%20Mars",
+    "mood": "love",
+    "tags": [
+      "Die With A Smile",
+      "Lady Gaga & Bruno Mars",
+      "love",
+      "Typography Edit"
+    ],
+    "bpm": "ปานกลาง (95 BPM)",
+    "lang": "en",
+    "animeId": 25,
+    "animeMatch": [
+      25
+    ]
+  },
+  {
+    "id": 230,
+    "title": "ท้องฟ้า",
+    "artist": "Paper",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e1/f4/d4/e1f4d4d0-9f40-2add-05d8-63b6a45806c0/0840102465303_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6f/9c/78/6f9c787e-ec52-6842-8773-a71e48aa3712/mzaf_754096951661057381.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%9F%E0%B9%89%E0%B8%B2%20Paper",
+    "mood": "chill",
+    "tags": [
+      "ท้องฟ้า",
+      "Paper",
+      "chill",
+      "Typography Edit"
+    ],
+    "bpm": "ปานกลาง (95 BPM)",
+    "lang": "th",
+    "animeId": 7,
+    "animeMatch": [
+      7
+    ]
+  },
+  {
+    "id": 231,
+    "title": "ซูลูปาก้า ตาปาเฮ้",
+    "artist": "THEMOONWILLALWAYSBEWITHME",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9b/7f/a1/9b7fa1bb-4f62-511f-592e-3ba805324e66/0.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/eb/d7/57/ebd757cd-f9aa-342d-c6f0-2f3221526aab/mzaf_8667682640341965635.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%8B%E0%B8%B9%E0%B8%A5%E0%B8%B9%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B9%89%E0%B8%B2%20%E0%B8%95%E0%B8%B2%E0%B8%9B%E0%B8%B2%E0%B9%80%E0%B8%AE%E0%B9%89%20THEMOONWILLALWAYSBEWITHME",
+    "mood": "chill",
+    "tags": [
+      "ซูลูปาก้า ตาปาเฮ้",
+      "THEMOONWILLALWAYSBEWITHME",
+      "chill",
+      "Typography Edit"
+    ],
+    "bpm": "ปานกลาง (95 BPM)",
+    "lang": "th",
+    "animeId": 9,
+    "animeMatch": [
+      9
+    ]
+  },
+  {
+    "id": 232,
+    "title": "ยิ้มทั้งน้ำตา",
+    "artist": "BILLKIN",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/16/9c/5d/169c5d84-48ee-f8d5-e5c5-4a0c2f1a9745/23UMGIM24691.crop.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A2%E0%B8%B4%E0%B9%89%E0%B8%A1%E0%B8%97%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B8%B2%20BILLKIN",
+    "mood": "sad",
+    "tags": [
+      "ยิ้มทั้งน้ำตา",
+      "BILLKIN",
+      "sad",
+      "Typography Edit"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 10,
+    "animeMatch": [
+      10
+    ],
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/42/5e/6c/425e6c75-eb3f-75a5-9665-5928cf1b619f/mzaf_13059409262426465220.plus.aac.p.m4a"
+  },
+  {
+    "id": 233,
+    "title": "เธอเก่ง",
+    "artist": "Jetset'er",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/80/dc/77/80dc77c1-45a0-9258-095e-24a7f4bd0ebd/888332952439.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fd/a5/a1/fda5a19d-716d-60ad-5ef6-34835a4a0654/mzaf_6568920496921364930.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87%20Jetset'er",
+    "mood": "sad",
+    "tags": [
+      "เธอเก่ง",
+      "Jetset'er",
+      "sad",
+      "Typography Edit"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 18,
+    "animeMatch": [
+      18
+    ]
+  },
+  {
+    "id": 234,
+    "title": "ความเงียบดังที่สุด",
+    "artist": "getsunova",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/57/23/5e/57235e8c-09c0-33b9-d1d1-05346ff1cf29/888332932455.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0d/68/cc/0d68cc88-b494-f054-6cbe-213e54e74127/mzaf_5126607641999438681.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%87%E0%B8%B5%E0%B8%A2%E0%B8%9A%E0%B8%94%E0%B8%B1%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AA%E0%B8%B8%E0%B8%94%20getsunova",
+    "mood": "sad",
+    "tags": [
+      "ความเงียบดังที่สุด",
+      "getsunova",
+      "sad",
+      "Typography Edit"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 15,
+    "animeMatch": [
+      15
+    ]
+  },
+  {
+    "id": 235,
+    "title": "แหลก",
+    "artist": "Season Five",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6f/29/52/6f2952bc-303f-0830-c7a8-9f0245e937c5/888332993777.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/ad/60/d7ad604f-ba67-0eac-f6cb-7b3944a7e369/mzaf_10206650190114843736.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%AB%E0%B8%A5%E0%B8%81%20Season%20Five",
+    "mood": "sad",
+    "tags": [
+      "แหลก",
+      "Season Five",
+      "sad",
+      "Typography Edit"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 52,
+    "animeMatch": [
+      52
+    ]
+  },
+  {
+    "id": 236,
+    "title": "แน่ใจไหม?",
+    "artist": "NONT TANONT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f3/ff/53/f3ff5378-6f21-5590-7a57-f2fda3118636/888332915861.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f7/12/f2/f712f235-db5a-8f21-25be-bbfb4ba72b7f/mzaf_13242668168382438329.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%99%E0%B9%88%E0%B9%83%E0%B8%88%E0%B9%84%E0%B8%AB%E0%B8%A1%3F%20NONT%20TANONT",
+    "mood": "sad",
+    "tags": [
+      "แน่ใจไหม?",
+      "NONT TANONT",
+      "sad",
+      "Typography Edit"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      1
+    ]
+  },
+  {
+    "id": 237,
+    "title": "Crossing Field",
+    "artist": "LiSA",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/bc/b1/d0/bcb1d0bc-8736-61ac-cb16-51c623c2b0bc/jacket_SVWC07875B00Z_550.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7b/98/f8/7b98f82c-21e1-e719-88ed-a94812bf02c7/mzaf_4584398930797681924.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Crossing%20Field%20LiSA",
+    "mood": "hype",
+    "tags": [
+      "Crossing Field",
+      "LiSA",
+      "hype",
+      "Typography Edit"
+    ],
+    "bpm": "เร็ว (132 BPM)",
+    "lang": "jp",
+    "animeId": 68,
+    "animeMatch": [
+      68
+    ]
+  },
+  {
+    "id": 238,
+    "title": "Polaris",
+    "artist": "BLUE ENCOUNT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/b8/49/03/b84903e8-dcc4-ccc6-526b-68842a50f804/jacket_KSXX01960B00Z_550.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b9/7d/21/b97d213d-3ee4-a141-c922-5968ff854a35/mzaf_9170763121409795607.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Polaris%20BLUE%20ENCOUNT",
+    "mood": "hype",
+    "tags": [
+      "Polaris",
+      "BLUE ENCOUNT",
+      "hype",
+      "Typography Edit"
+    ],
+    "bpm": "เร็ว (132 BPM)",
+    "lang": "jp",
+    "animeId": 41,
+    "animeMatch": [
+      41
+    ]
+  },
+  {
+    "id": 239,
+    "title": "Red Swan (feat. HYDE)",
+    "artist": "YOSHIKI",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/16/81/71/1681712b-479b-7e91-a9cd-51fe8973dab7/PCCA_70532.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/a5/21/aba521b2-1931-2ff6-5d2a-40953a757993/mzaf_10633737123938191815.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Red%20Swan%20(feat.%20HYDE)%20YOSHIKI",
+    "mood": "chill",
+    "tags": [
+      "Red Swan (feat. HYDE)",
+      "YOSHIKI",
+      "chill",
+      "Typography Edit"
+    ],
+    "bpm": "ปานกลาง (95 BPM)",
+    "lang": "jp",
+    "animeId": 11,
+    "animeMatch": [
+      11
+    ]
+  },
+  {
+    "id": 240,
+    "title": "Kibou No Uta (Food Wars! Shokugeki No Soma)",
+    "artist": "Miura Jam",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6b/3b/4d/6b3b4d58-5d6a-4da7-844c-b30545f96d20/artwork.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8d/78/90/8d78901b-a8b5-4ab1-c2c6-0141684afc33/mzaf_16192309365366931650.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Kibou%20No%20Uta%20(Food%20Wars!%20Shokugeki%20No%20Soma)%20Miura%20Jam",
+    "mood": "hype",
+    "tags": [
+      "Kibou No Uta (Food Wars! Shokugeki No Soma)",
+      "Miura Jam",
+      "hype",
+      "Typography Edit"
+    ],
+    "bpm": "เร็ว (132 BPM)",
+    "lang": "jp",
+    "animeId": 63,
+    "animeMatch": [
+      63
+    ]
+  },
+  {
+    "id": 241,
+    "title": "Brave Shine",
+    "artist": "Aimer",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/76/50/78/765078f3-2251-8995-cb59-98ae62de8bad/4560429729846.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/23/3d/22/233d22af-2b53-2732-e88c-db95ce330988/mzaf_8454975281954723147.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Brave%20Shine%20Aimer",
+    "mood": "hype",
+    "tags": [
+      "Brave Shine",
+      "Aimer",
+      "hype",
+      "Typography Edit"
+    ],
+    "bpm": "เร็ว (132 BPM)",
+    "lang": "jp",
+    "animeId": 62,
+    "animeMatch": [
+      62
+    ]
+  },
+  {
+    "id": 242,
+    "title": "Ref:rain",
+    "artist": "Aimer",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/77/cc/b3/77ccb311-f62e-76d6-18df-7ac92b5b888f/4547366402346.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ae/0a/60/ae0a6018-a1e3-746c-0a98-be5852d53c18/mzaf_1817107385756081440.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Ref%3Arain%20Aimer",
+    "mood": "sad",
+    "tags": [
+      "Ref:rain",
+      "Aimer",
+      "sad",
+      "Typography Edit"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "jp",
+    "animeId": 13,
+    "animeMatch": [
+      13
+    ]
+  },
+  {
+    "id": 243,
+    "title": "Torches",
+    "artist": "Aimer",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/af/5b/75/af5b75b1-ab2f-35c8-d689-1c11475c56d2/4547366420647.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5a/e9/3a/5ae93a65-f30f-e43a-3b4c-df187b0b7ae3/mzaf_16162367997657350789.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Torches%20Aimer",
+    "mood": "chill",
+    "tags": [
+      "Torches",
+      "Aimer",
+      "chill",
+      "Typography Edit"
+    ],
+    "bpm": "ปานกลาง (95 BPM)",
+    "lang": "jp",
+    "animeId": 48,
+    "animeMatch": [
+      48
+    ]
+  },
+  {
+    "id": 244,
+    "title": "Guren no Yumiya (TV Size Version)",
+    "artist": "Linked Horizon",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/50/50/b3/5050b320-cd45-2ad7-b1b2-1b9b473d2475/PCSP_01397_itunes.png/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8e/d3/23/8ed323de-3b4a-5978-63e8-e8da11cc8403/mzaf_13830835556296346443.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Guren%20no%20Yumiya%20(TV%20Size%20Version)%20Linked%20Horizon",
+    "mood": "hype",
+    "tags": [
+      "Guren no Yumiya (TV Size Version)",
+      "Linked Horizon",
+      "hype",
+      "Typography Edit"
+    ],
+    "bpm": "เร็ว (132 BPM)",
+    "lang": "jp",
+    "animeId": 11,
+    "animeMatch": [
+      11
+    ]
+  },
+  {
+    "id": 245,
+    "title": "Shinzou wo Sasageyo! (From \"Attack on Titan\") [Japanese Version]",
+    "artist": "Miura Jam",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music127/v4/82/7a/3b/827a3b18-741d-0d02-7ed9-ef359dbb8215/6bda430f-52bd-4172-ba7b-1345a59ac4be.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d6/a4/11/d6a411db-7be8-5dcf-1a32-63898c89a724/mzaf_8962357708499511048.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Shinzou%20wo%20Sasageyo!%20(From%20%22Attack%20on%20Titan%22)%20%5BJapanese%20Version%5D%20Miura%20Jam",
+    "mood": "hype",
+    "tags": [
+      "Shinzou wo Sasageyo! (From \"Attack on Titan\") [Japanese Version]",
+      "Miura Jam",
+      "hype",
+      "Typography Edit"
+    ],
+    "bpm": "เร็ว (132 BPM)",
+    "lang": "jp",
+    "animeId": 11,
+    "animeMatch": [
+      11
+    ]
+  },
+  {
+    "id": 246,
+    "title": "Kuchizuke Diamond",
+    "artist": "Palette Project",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/a8/91/03/a8910383-78fb-dbf2-7cd5-b69d55fcd7f6/artwork.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/ca/d9/a1/cad9a1aa-0a8e-9bdb-0e11-2c84a31c8d50/mzaf_12905940124585217075.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Kuchizuke%20Diamond%20Palette%20Project",
+    "mood": "love",
+    "tags": [
+      "Kuchizuke Diamond",
+      "Palette Project",
+      "love",
+      "Typography Edit"
+    ],
+    "bpm": "ปานกลาง (95 BPM)",
+    "lang": "jp",
+    "animeId": 59,
+    "animeMatch": [
+      59
+    ]
+  },
+  {
+    "id": 247,
+    "title": "Fukashigi No Carte (Bunny Girl Senpai)",
+    "artist": "ShiroNeko",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/ed/5d/e0/ed5de0bd-1287-b60b-f006-91a983f718cd/198001842320.png/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/a8/c8/fb/a8c8fb69-3017-0c74-a38c-df5e5e17d51e/mzaf_15919099609777833075.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Fukashigi%20No%20Carte%20(Bunny%20Girl%20Senpai)%20ShiroNeko",
+    "mood": "chill",
+    "tags": [
+      "Fukashigi No Carte (Bunny Girl Senpai)",
+      "ShiroNeko",
+      "chill",
+      "Typography Edit"
+    ],
+    "bpm": "ปานกลาง (95 BPM)",
+    "lang": "jp",
+    "animeId": 19,
+    "animeMatch": [
+      19
+    ]
+  },
+  {
+    "id": 248,
+    "title": "Super Bright Shining Girl \"Chika\"",
+    "artist": "Chika Fujiwara(CV:Konomi Kohara)",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/8b/40/6e/8b406e85-31af-fc19-b174-502aed94fd96/4534530138033.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b8/48/af/b848af45-7b72-d06b-6033-309867539ffb/mzaf_17383963494548662878.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Super%20Bright%20Shining%20Girl%20%22Chika%22%20Chika%20Fujiwara(CV%3AKonomi%20Kohara)",
+    "mood": "love",
+    "tags": [
+      "Super Bright Shining Girl \"Chika\"",
+      "Chika Fujiwara(CV:Konomi Kohara)",
+      "love",
+      "Typography Edit"
+    ],
+    "bpm": "ปานกลาง (95 BPM)",
+    "lang": "jp",
+    "animeId": 2,
+    "animeMatch": [
+      2
+    ]
+  },
+  {
+    "id": 249,
+    "title": "Renaicirculation (Yunomi Kawaii EDM Remix)",
+    "artist": "Kana Hanazawa",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/1b/9a/73/1b9a731e-a5f9-a925-9859-2e3fc925f464/jacket_ANXX00708B00Z_550.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d6/ec/c2/d6ecc268-758f-9dcd-1947-5904a100ea92/mzaf_17788436145576609307.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Renaicirculation%20(Yunomi%20Kawaii%20EDM%20Remix)%20Kana%20Hanazawa",
+    "mood": "love",
+    "tags": [
+      "Renaicirculation (Yunomi Kawaii EDM Remix)",
+      "Kana Hanazawa",
+      "love",
+      "Typography Edit"
+    ],
+    "bpm": "ปานกลาง (95 BPM)",
+    "lang": "jp",
+    "animeId": 44,
+    "animeMatch": [
+      44
+    ]
+  },
+  {
+    "id": 250,
+    "title": "จังหวะจะรัก (Heartbeat)",
+    "artist": "Violette Wautier",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/5a/1d/61/5a1d6167-70aa-d39c-b911-a101bb3e08dc/00602557961485_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5d/9a/52/5d9a5214-1d19-b5f8-0956-260767121429/mzaf_12920634546527175307.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%88%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B0%E0%B8%88%E0%B8%B0%E0%B8%A3%E0%B8%B1%E0%B8%81%20Violette%20Wautier",
+    "mood": "love",
+    "tags": [
+      "จังหวะจะรัก",
+      "Violette",
+      "โรแมนติก",
+      "มินิมอล"
+    ],
+    "bpm": "ปานกลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14
+    ]
+  },
+  {
+    "id": 251,
+    "title": "Fly Me to the Moon",
+    "artist": "Claire Littley",
+    "category": "vibe",
+    "duration": 230,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0f/0a/12/0f0a1265-54d6-960a-3e73-c42501f62d70/mzaf_13856329359304122037.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/77/65/fa/7765fa66-2af8-dce3-fb4c-18cc68d6ba77/886448179139.jpg/600x600bb.jpg",
+    "badge": "🌕 ชิลล์คลาสสิก ล่องลอย",
+    "mood": "chill",
+    "lang": "jp",
+    "animeId": 18,
+    "animeMatch": [
+      18
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "tags": [
+      "Fly Me to the Moon",
+      "Claire Littley",
+      "chill",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/Fly%20Me%20to%20the%20Moon%20Claire%20Littley"
+  },
+  {
+    "id": 252,
+    "title": "Blue Bird",
+    "artist": "Ikimonogakari",
+    "category": "hype",
+    "duration": 215,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/a5/c3/9aa5c3d6-b763-a852-e3f2-60f5270f196e/mzaf_13214537326205111491.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/48/f2/f7/48f2f77a-1229-2f65-87da-5efa9dab85b1/886445760033.jpg/600x600bb.jpg",
+    "badge": "⚡ พลังใจ ฮาร์ดคัตเท่ๆ",
+    "mood": "hype",
+    "lang": "jp",
+    "animeId": 10,
+    "animeMatch": [
+      10
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "tags": [
+      "Blue Bird",
+      "Ikimonogakari",
+      "hype",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/Blue%20Bird%20Ikimonogakari"
+  },
+  {
+    "id": 253,
+    "title": "Sign",
+    "artist": "FLOW",
+    "category": "sad",
+    "duration": 238,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/24/c8/93/24c89307-77b9-49ae-d703-cd6bb6b5cc4c/mzaf_16738229274062920705.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/6c/1d/e6/6c1de681-d7fa-a93b-f347-643340afd588/jacket_KSXX00341B00Z_550.jpg/600x600bb.jpg",
+    "badge": "💔 น้ำตาซึม ดิ่งลึก",
+    "mood": "sad",
+    "lang": "jp",
+    "animeId": 10,
+    "animeMatch": [
+      10
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "tags": [
+      "Sign",
+      "FLOW",
+      "sad",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/Sign%20FLOW"
+  },
+  {
+    "id": 254,
+    "title": "Again",
+    "artist": "YUI",
+    "category": "hype",
+    "duration": 254,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/48/2f/4f/482f4fca-6848-9ab5-4f6a-e76cee5a6c98/mzaf_17040137880719986209.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/f7/51/e7/f751e79a-9bcb-f7ec-18d9-348ca8aa65f8/jacket_SRCL07311B00Z_550.jpg/600x600bb.jpg",
+    "badge": "🔥 สปีดรัน บีทหนักแน่น",
+    "mood": "hype",
+    "lang": "jp",
+    "animeId": 9,
+    "animeMatch": [
+      9
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "tags": [
+      "Again",
+      "YUI",
+      "hype",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/Again%20YUI"
+  },
+  {
+    "id": 255,
+    "title": "Gurenge",
+    "artist": "LiSA",
+    "category": "hype",
+    "duration": 237,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/9f/31/029f31d9-865f-8238-795d-0a69106cd7bd/mzaf_4087349157470098609.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/51/b3/58/51b35899-bda2-50d2-2c00-b2b95999b3c3/4547366473681.jpg/600x600bb.jpg",
+    "badge": "⚡ แอคชั่นระเบิด ฟันดาบเป๊ะ",
+    "mood": "hype",
+    "lang": "jp",
+    "animeId": 5,
+    "animeMatch": [
+      5
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "tags": [
+      "Gurenge",
+      "LiSA",
+      "hype",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/Gurenge%20LiSA"
+  },
+  {
+    "id": 256,
+    "title": "Homura",
+    "artist": "LiSA",
+    "category": "sad",
+    "duration": 274,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0b/4a/47/0b4a47b3-159e-fdb0-c2a2-608a1c3a8bb1/mzaf_4434592051303284611.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/88/ce/67/88ce6774-3358-e238-5244-1b0788adea50/4547366475562.jpg/600x600bb.jpg",
+    "badge": "🥀 อาลัยอาวรณ์ ซึ้งกินใจ",
+    "mood": "sad",
+    "lang": "jp",
+    "animeId": 5,
+    "animeMatch": [
+      5
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "tags": [
+      "Homura",
+      "LiSA",
+      "sad",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/Homura%20LiSA"
+  },
+  {
+    "id": 257,
+    "title": "Akuma no Ko",
+    "artist": "Ai Higuchi",
+    "category": "sad",
+    "duration": 227,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4c/89/a6/4c89a6f6-89d7-957c-bee0-d4ff622a56ee/mzaf_15664807686809922181.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/da/34/aa/da34aa4e-963d-da81-973a-c4baf699c03d/PCSP_03907_A.jpg/600x600bb.jpg",
+    "badge": "💔 โลกที่โหดร้ายแต่ยังรักเธอ",
+    "mood": "sad",
+    "lang": "jp",
+    "animeId": 4,
+    "animeMatch": [
+      4
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "tags": [
+      "Akuma no Ko",
+      "Ai Higuchi",
+      "sad",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/Akuma%20no%20Ko%20Ai%20Higuchi"
+  },
+  {
+    "id": 258,
+    "title": "Shinzou wo Sasageyo!",
+    "artist": "Linked Horizon",
+    "category": "hype",
+    "duration": 89,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d6/a4/11/d6a411db-7be8-5dcf-1a32-63898c89a724/mzaf_8962357708499511048.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music127/v4/82/7a/3b/827a3b18-741d-0d02-7ed9-ef359dbb8215/6bda430f-52bd-4172-ba7b-1345a59ac4be.jpg/600x600bb.jpg",
+    "badge": "⚔️ พลีชีพเพื่ออิสรภาพ",
+    "mood": "hype",
+    "lang": "jp",
+    "animeId": 4,
+    "animeMatch": [
+      4
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "tags": [
+      "Shinzou wo Sasageyo!",
+      "Linked Horizon",
+      "hype",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/Shinzou%20wo%20Sasageyo!%20Linked%20Horizon"
+  },
+  {
+    "id": 259,
+    "title": "Red Swan",
+    "artist": "YOSHIKI feat. HYDE",
+    "category": "vibe",
+    "duration": 263,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/a5/21/aba521b2-1931-2ff6-5d2a-40953a757993/mzaf_10633737123938191815.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/16/81/71/1681712b-479b-7e91-a9cd-51fe8973dab7/PCCA_70532.jpg/600x600bb.jpg",
+    "badge": "🕊️ บินสู่นภา กว้างใหญ่",
+    "mood": "chill",
+    "lang": "en",
+    "animeId": 4,
+    "animeMatch": [
+      4
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "tags": [
+      "Red Swan",
+      "YOSHIKI feat. HYDE",
+      "chill",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/Red%20Swan%20YOSHIKI%20feat.%20HYDE"
+  },
+  {
+    "id": 260,
+    "title": "Mephisto",
+    "artist": "Queen Bee",
+    "category": "hype",
+    "duration": 229,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/94/f8/ab94f80e-df3a-5f12-8bda-36ffda3ee208/mzaf_18055957024459030175.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/68/d2/e6/68d2e6c3-c101-16fd-fb78-6c1852147faf/4547366622515.jpg/600x600bb.jpg",
+    "badge": "🎭 ดาร์กอลังการ ทวิสต์สะเทือน",
+    "mood": "hype",
+    "lang": "en",
+    "animeId": 15,
+    "animeMatch": [
+      15
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "tags": [
+      "Mephisto",
+      "Queen Bee",
+      "hype",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/Mephisto%20Queen%20Bee"
+  },
+  {
+    "id": 261,
+    "title": "odoriko",
+    "artist": "Vaundy",
+    "category": "vibe",
+    "duration": 229,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/1c/69/ba1c690e-5187-1fbe-829c-cbb36d013d1c/mzaf_16225330016265705451.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/8a/eb/75/8aeb7526-6fe4-a81a-5dce-c5d026e7f036/4547366655728.jpg/600x600bb.jpg",
+    "badge": "✨ โฟลว์ชิลล์ โคตรมีสไตล์",
+    "mood": "chill",
+    "lang": "en",
+    "animeId": 81,
+    "animeMatch": [
+      81
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "tags": [
+      "odoriko",
+      "Vaundy",
+      "chill",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/odoriko%20Vaundy"
+  },
+  {
+    "id": 262,
+    "title": "Kaijuu no Hanauta",
+    "artist": "Vaundy",
+    "category": "hype",
+    "duration": 222,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/9a/ec/c59aec70-94cd-1bac-884e-2cd8c1401abf/mzaf_17538645848549560384.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/8a/eb/75/8aeb7526-6fe4-a81a-5dce-c5d026e7f036/4547366655728.jpg/600x600bb.jpg",
+    "badge": "⚡ ร้องตะโกน ความเยาว์วัย",
+    "mood": "hype",
+    "lang": "en",
+    "animeId": 81,
+    "animeMatch": [
+      81
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "tags": [
+      "Kaijuu no Hanauta",
+      "Vaundy",
+      "hype",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/Kaijuu%20no%20Hanauta%20Vaundy"
+  },
+  {
+    "id": 263,
+    "title": "Sweater Weather",
+    "artist": "The Neighbourhood",
+    "category": "vibe",
+    "duration": 240,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/37/20/8c372047-2727-8054-9411-0e4867643dd8/mzaf_10169659262182214119.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/28/71/00/287100fb-5c31-0195-5343-e6b3625886d0/886443969834.jpg/600x600bb.jpg",
+    "badge": "🧥 หนาวใจแต่มีเธอ โรแมนติก",
+    "mood": "chill",
+    "lang": "en",
+    "animeId": 2,
+    "animeMatch": [
+      2
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "tags": [
+      "Sweater Weather",
+      "The Neighbourhood",
+      "chill",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/Sweater%20Weather%20The%20Neighbourhood"
+  },
+  {
+    "id": 264,
+    "title": "Night Changes",
+    "artist": "One Direction",
+    "category": "love",
+    "duration": 226,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ec/0b/95/ec0b9501-fa6e-a789-ef22-aa6b64c54329/mzaf_15278239933131766406.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/62/2d/19/622d19da-eb88-022c-2bc5-d843657defe8/886444549851.jpg/600x600bb.jpg",
+    "badge": "🕰️ กาลเวลาเปลี่ยนแต่ใจไม่เปลี่ยน",
+    "mood": "love",
+    "lang": "en",
+    "animeId": 2,
+    "animeMatch": [
+      2
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "tags": [
+      "Night Changes",
+      "One Direction",
+      "love",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/Night%20Changes%20One%20Direction"
+  },
+  {
+    "id": 265,
+    "title": "Duvet",
+    "artist": "bôa",
+    "category": "vibe",
+    "duration": 203,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8a/f5/82/8af582c2-c361-9494-327a-d3075068d740/mzaf_17099126382276763793.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/45/44/15/45441528-0288-eedc-f6fc-93137b8cfe96/067003248969.png/600x600bb.jpg",
+    "badge": "🌀 เวิ้งว้าง ดำดิ่งจิตวิทยา",
+    "mood": "chill",
+    "lang": "en",
+    "animeId": 104,
+    "animeMatch": [
+      104
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "tags": [
+      "Duvet",
+      "bôa",
+      "chill",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/Duvet%20b%C3%B4a"
+  },
+  {
+    "id": 266,
+    "title": "ลบไม่ได้ช่วยให้ลืม (Erase)",
+    "artist": "Ink Waruntorn",
+    "category": "sad",
+    "duration": 224,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/25/82/87/25828778-7153-a4c7-d122-57e428450466/mzaf_5411916731022249839.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/06/d7/9f/06d79fe1-2771-f623-e874-6f2ef9125aad/0840291216281_Cover.jpg/600x600bb.jpg",
+    "badge": "🥀 พยายามลบแต่ยิ่งจำ",
+    "mood": "sad",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      1
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "tags": [
+      "ลบไม่ได้ช่วยให้ลืม (Erase)",
+      "Ink Waruntorn",
+      "sad",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%9A%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%A5%E0%B8%B7%E0%B8%A1%20(Erase)%20Ink%20Waruntorn"
+  },
+  {
+    "id": 267,
+    "title": "สายตาหลอกกันไม่ได้",
+    "artist": "Ink Waruntorn",
+    "category": "love",
+    "duration": 188,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/64/a6/db/64a6db06-8931-cd05-30a7-6ff976ed96ca/mzaf_1200240892676868907.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/90/c3/5b/90c35b5b-ba74-e3fb-1a0e-6ba03e914c93/0840102441345_Cover.jpg/600x600bb.jpg",
+    "badge": "👀 สบตาแล้วใจเต้นรัว",
+    "mood": "love",
+    "lang": "th",
+    "animeId": 3,
+    "animeMatch": [
+      3
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "tags": [
+      "สายตาหลอกกันไม่ได้",
+      "Ink Waruntorn",
+      "love",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%95%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%AD%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%20Ink%20Waruntorn"
+  },
+  {
+    "id": 268,
+    "title": "เก่งแต่เรื่องคนอื่น",
+    "artist": "Ink Waruntorn feat. Sprite",
+    "category": "vibe",
+    "duration": 186,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1b/99/3a/1b993a9f-7b34-df23-707b-4f03f6feb157/mzaf_6608298572200764123.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/88/53/a8/8853a852-19a0-e3e7-60eb-7b6c798e631b/0840102461893_Cover.jpg/600x600bb.jpg",
+    "badge": "💬 สอนคนอื่นเก่ง เรื่องตัวเองพัง",
+    "mood": "chill",
+    "lang": "th",
+    "animeId": 44,
+    "animeMatch": [
+      44
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "tags": [
+      "เก่งแต่เรื่องคนอื่น",
+      "Ink Waruntorn feat. Sprite",
+      "chill",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87%E0%B9%81%E0%B8%95%E0%B9%88%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B8%99%E0%B8%AD%E0%B8%B7%E0%B9%88%E0%B8%99%20Ink%20Waruntorn%20feat.%20Sprite"
+  },
+  {
+    "id": 269,
+    "title": "แฟนเก่าคนโปรด",
+    "artist": "SLAPKISS",
+    "category": "sad",
+    "duration": 216,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9f/d1/57/9fd157f8-f92d-70e3-68b7-122d726b8d80/mzaf_604165407385122578.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/35/1c/35/351c35ca-0e17-f202-cbcc-c3090bd0c5da/cover.jpg/600x600bb.jpg",
+    "badge": "💔 คนที่ลืมไม่ลงตลอดกาล",
+    "mood": "sad",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "tags": [
+      "แฟนเก่าคนโปรด",
+      "SLAPKISS",
+      "sad",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%9F%E0%B8%99%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%B2%E0%B8%84%E0%B8%99%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B8%94%20SLAPKISS"
+  },
+  {
+    "id": 270,
+    "title": "ให้เค้าดูแลเธอ",
+    "artist": "Three Man Down",
+    "category": "sad",
+    "duration": 306,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/81/51/1c/81511c9e-378d-4053-2565-28d81c970bbf/mzaf_14411542490329709246.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ad/4d/6f/ad4d6fc2-9559-0855-47fc-ab3794502596/cover.jpg/600x600bb.jpg",
+    "badge": "🌧️ ยอมปล่อยให้เธอไปมีความสุข",
+    "mood": "sad",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      1
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "tags": [
+      "ให้เค้าดูแลเธอ",
+      "Three Man Down",
+      "sad",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%80%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%94%E0%B8%B9%E0%B9%81%E0%B8%A5%E0%B9%80%E0%B8%98%E0%B8%AD%20Three%20Man%20Down"
+  },
+  {
+    "id": 271,
+    "title": "เวลาเธอยิ้ม",
+    "artist": "POLYCAT",
+    "category": "love",
+    "duration": 227,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2f/3f/ac/2f3fac81-9e83-4ae6-5171-841804b44c6f/mzaf_16866220623392363387.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/83/11/6f/83116f31-73a4-3df3-6c5f-6658aabbea49/cover.jpg/600x600bb.jpg",
+    "badge": "💖 โลกสดใสเมื่อเห็นเธอยิ้ม",
+    "mood": "love",
+    "lang": "th",
+    "animeId": 13,
+    "animeMatch": [
+      13
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "tags": [
+      "เวลาเธอยิ้ม",
+      "POLYCAT",
+      "love",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%A2%E0%B8%B4%E0%B9%89%E0%B8%A1%20POLYCAT"
+  },
+  {
+    "id": 272,
+    "title": "อาวรณ์ (I Want You)",
+    "artist": "POLYCAT",
+    "category": "sad",
+    "duration": 267,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/5a/f7/e55af74d-5e28-ce04-ba12-c57fbe58af12/mzaf_9994674882709681890.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a3/22/d8/a322d8f4-3e84-0fc7-9b40-b3903966e639/cover.jpg/600x600bb.jpg",
+    "badge": "🍷 ฉันยังคงคิดถึงเธอเสมอ",
+    "mood": "sad",
+    "lang": "th",
+    "animeId": 8,
+    "animeMatch": [
+      8
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "tags": [
+      "อาวรณ์ (I Want You)",
+      "POLYCAT",
+      "sad",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%93%E0%B9%8C%20(I%20Want%20You)%20POLYCAT"
+  },
+  {
+    "id": 273,
+    "title": "พบกันใหม่? (So Long)",
+    "artist": "POLYCAT",
+    "category": "sad",
+    "duration": 314,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/db/c6/d7dbc6b7-df68-509b-393c-d2e7461e4782/mzaf_16441888389148470421.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/83/11/6f/83116f31-73a4-3df3-6c5f-6658aabbea49/cover.jpg/600x600bb.jpg",
+    "badge": "👋 ลาก่อนแม้ใจยังรัก",
+    "mood": "sad",
+    "lang": "th",
+    "animeId": 2,
+    "animeMatch": [
+      2
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "tags": [
+      "พบกันใหม่? (So Long)",
+      "POLYCAT",
+      "sad",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%9A%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%3F%20(So%20Long)%20POLYCAT"
+  },
+  {
+    "id": 274,
+    "title": "เพื่อนรัก (Dear Friend)",
+    "artist": "The Parkinson",
+    "category": "sad",
+    "duration": 289,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/27/11/ba/2711baa9-8b79-9a14-4eef-1415e1d0ea18/mzaf_6442225337578644867.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/9d/2c/92/9d2c92e5-4c35-ae74-4fa6-caa1b2e0fe6f/00602438355785_Cover.jpg/600x600bb.jpg",
+    "badge": "🥀 รักเพื่อนแต่พูดไม่ได้",
+    "mood": "sad",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "tags": [
+      "เพื่อนรัก (Dear Friend)",
+      "The Parkinson",
+      "sad",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%A3%E0%B8%B1%E0%B8%81%20(Dear%20Friend)%20The%20Parkinson"
+  },
+  {
+    "id": 275,
+    "title": "หมดแก้ว (Cheers)",
+    "artist": "The Parkinson",
+    "category": "sad",
+    "duration": 233,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/98/ce/8398ce0f-bee4-06c1-2466-ad1e6ca33e50/mzaf_928090392430032362.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/7f/61/21/7f612111-b521-30de-307f-c7ee6b3d59b7/00602508117961_Cover.jpg/600x600bb.jpg",
+    "badge": "🍻 ดื่มย้อมใจให้ความทรงจำ",
+    "mood": "sad",
+    "lang": "th",
+    "animeId": 24,
+    "animeMatch": [
+      24
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "tags": [
+      "หมดแก้ว (Cheers)",
+      "The Parkinson",
+      "sad",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%A1%E0%B8%94%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7%20(Cheers)%20The%20Parkinson"
+  },
+  {
+    "id": 276,
+    "title": "บานปลาย (Best Wishes)",
+    "artist": "Bowkylion",
+    "category": "love",
+    "duration": 210,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/1b/29/831b29ed-6124-a13a-fb5e-1641f3b26631/mzaf_11183248487603969900.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/40/31/d6/4031d6e5-6c14-72cb-3ac0-9f238dc74726/859732364931_cover.jpg/600x600bb.jpg",
+    "badge": "🌸 แอบชอบจนเลยเถิด",
+    "mood": "love",
+    "lang": "th",
+    "animeId": 43,
+    "animeMatch": [
+      43
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "tags": [
+      "บานปลาย (Best Wishes)",
+      "Bowkylion",
+      "love",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9A%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%A2%20(Best%20Wishes)%20Bowkylion"
+  },
+  {
+    "id": 277,
+    "title": "ทราบแล้วเปลี่ยน (Post-it)",
+    "artist": "Bowkylion",
+    "category": "love",
+    "duration": 172,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/1b/29/831b29ed-6124-a13a-fb5e-1641f3b26631/mzaf_11183248487603969900.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/40/31/d6/4031d6e5-6c14-72cb-3ac0-9f238dc74726/859732364931_cover.jpg/600x600bb.jpg",
+    "badge": "💌 ข้อความบอกรักน่ารักๆ",
+    "mood": "love",
+    "lang": "th",
+    "animeId": 3,
+    "animeMatch": [
+      3
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "tags": [
+      "ทราบแล้วเปลี่ยน (Post-it)",
+      "Bowkylion",
+      "love",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%20(Post-it)%20Bowkylion"
+  },
+  {
+    "id": 278,
+    "title": "เจ้าของที่",
+    "artist": "Mirrr",
+    "category": "love",
+    "duration": 253,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/a7/ab/b7a7ab8a-2c84-2218-01ae-cca4b110346d/mzaf_12733890203505854122.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/05/c5/bc/05c5bc6c-3632-c39d-3e85-925a07f2d678/artwork.jpg/600x600bb.jpg",
+    "badge": "🏡 หัวใจฉันมีเธอเป็นเจ้าของ",
+    "mood": "love",
+    "lang": "th",
+    "animeId": 44,
+    "animeMatch": [
+      44
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "tags": [
+      "เจ้าของที่",
+      "Mirrr",
+      "love",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88%20Mirrr"
+  },
+  {
+    "id": 279,
+    "title": "เลือดกรุ๊ปบี",
+    "artist": "Chrrissa Chot",
+    "category": "vibe",
+    "duration": 289,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/ca/32/cb/ca32cbd3-6e00-5d33-72c4-7d71ee456d73/mzaf_15308886385266869376.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/9f/64/86/9f6486f1-746c-d3b5-1569-3a6294cdfea0/cover.jpg/600x600bb.jpg",
+    "badge": "🩸 โสดเพราะเลือดกรุ๊ปบีแน่ๆ",
+    "mood": "chill",
+    "lang": "th",
+    "animeId": 44,
+    "animeMatch": [
+      44
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "tags": [
+      "เลือดกรุ๊ปบี",
+      "Chrrissa Chot",
+      "chill",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%94%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B9%8A%E0%B8%9B%E0%B8%9A%E0%B8%B5%20Chrrissa%20Chot"
+  },
+  {
+    "id": 280,
+    "title": "ยินดี (Happy For You)",
+    "artist": "Sarah Salola",
+    "category": "sad",
+    "duration": 197,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/4a/bb/aa/4abbaad0-6911-aa8c-6b45-4a99f5c54773/mzaf_9453094306125921868.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/bb/f2/7c/bbf27ca3-0154-100f-38bb-d5805aaa0b5d/cover.jpg/600x600bb.jpg",
+    "badge": "🙂 ยิ้มส่งทั้งน้ำตา",
+    "mood": "sad",
+    "lang": "th",
+    "animeId": 8,
+    "animeMatch": [
+      8
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "tags": [
+      "ยินดี (Happy For You)",
+      "Sarah Salola",
+      "sad",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A2%E0%B8%B4%E0%B8%99%E0%B8%94%E0%B8%B5%20(Happy%20For%20You)%20Sarah%20Salola"
+  },
+  {
+    "id": 281,
+    "title": "เอาปากกามาวง",
+    "artist": "Bell Warisara",
+    "category": "love",
+    "duration": 204,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/29/08/db/2908db02-32cc-c24e-50a6-4583a85b5369/mzaf_5867430908003016888.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/21/8c/1c/218c1c05-c60a-457d-f3ae-4818ff2a8125/0840102466300_Cover.jpg/600x600bb.jpg",
+    "badge": "🖊️ ตรงไหนไม่ชอบให้วง",
+    "mood": "love",
+    "lang": "th",
+    "animeId": 43,
+    "animeMatch": [
+      43
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "tags": [
+      "เอาปากกามาวง",
+      "Bell Warisara",
+      "love",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%AD%E0%B8%B2%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%81%E0%B8%B2%E0%B8%A1%E0%B8%B2%E0%B8%A7%E0%B8%87%20Bell%20Warisara"
+  },
+  {
+    "id": 282,
+    "title": "คนหรือไมโครเวฟ (Microwave)",
+    "artist": "Bell Warisara",
+    "category": "love",
+    "duration": 207,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8b/31/d3/8b31d3fe-4318-789a-23a5-acfdfd032642/mzaf_10671997517877613953.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/24/e6/ae/24e6ae22-6748-0230-0994-10c89918ae1b/0840102476804_Cover.jpg/600x600bb.jpg",
+    "badge": "☀️ อบอุ่นจนใจละลาย",
+    "mood": "love",
+    "lang": "th",
+    "animeId": 44,
+    "animeMatch": [
+      44
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "tags": [
+      "คนหรือไมโครเวฟ (Microwave)",
+      "Bell Warisara",
+      "love",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%99%E0%B8%AB%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B9%84%E0%B8%A1%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B9%80%E0%B8%A7%E0%B8%9F%20(Microwave)%20Bell%20Warisara"
+  },
+  {
+    "id": 283,
+    "title": "กอดในใจ (One Ok)",
+    "artist": "Billkin feat. Jaylerr",
+    "category": "love",
+    "duration": 210,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/07/c3/01/07c3017c-4ecf-5a35-7ba7-7ce3ddcd2e9e/mzaf_3428982367352057917.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/91/f0/b7/91f0b7de-133f-577d-4ed5-0c8d81c1968d/8447721261457.jpg/600x600bb.jpg",
+    "badge": "🫂 คิดถึงจึงกอดไว้ในใจ",
+    "mood": "love",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "tags": [
+      "กอดในใจ (One Ok)",
+      "Billkin feat. Jaylerr",
+      "love",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%AD%E0%B8%94%E0%B9%83%E0%B8%99%E0%B9%83%E0%B8%88%20(One%20Ok)%20Billkin%20feat.%20Jaylerr"
+  },
+  {
+    "id": 284,
+    "title": "แปลไม่ออก",
+    "artist": "Billkin",
+    "category": "sad",
+    "duration": 253,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/07/c3/01/07c3017c-4ecf-5a35-7ba7-7ce3ddcd2e9e/mzaf_3428982367352057917.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/91/f0/b7/91f0b7de-133f-577d-4ed5-0c8d81c1968d/8447721261457.jpg/600x600bb.jpg",
+    "badge": "❓ การกระทำที่เธอไม่เคยชัดเจน",
+    "mood": "sad",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      1
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "tags": [
+      "แปลไม่ออก",
+      "Billkin",
+      "sad",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%9B%E0%B8%A5%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%AD%E0%B8%AD%E0%B8%81%20Billkin"
+  },
+  {
+    "id": 285,
+    "title": "โคตรพิเศษ",
+    "artist": "Billkin",
+    "category": "love",
+    "duration": 206,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b4/f4/b4/b4f4b491-0fb8-b419-8eb7-14903a2c6a67/mzaf_9538742581248410138.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4d/42/d0/4d42d06e-5070-6ed4-c278-6c6e4c4acbfe/artwork.jpg/600x600bb.jpg",
+    "badge": "✨ คนที่พิเศษที่สุดในชีวิต",
+    "mood": "love",
+    "lang": "th",
+    "animeId": 2,
+    "animeMatch": [
+      2
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "tags": [
+      "โคตรพิเศษ",
+      "Billkin",
+      "love",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%82%E0%B8%84%E0%B8%95%E0%B8%A3%E0%B8%9E%E0%B8%B4%E0%B9%80%E0%B8%A8%E0%B8%A9%20Billkin"
+  },
+  {
+    "id": 286,
+    "title": "Mr. Everything",
+    "artist": "Billkin",
+    "category": "love",
+    "duration": 159,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/88/60/93/88609322-b09d-210b-b46d-89492aaec126/mzaf_193115905557089572.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/8b/bd/5d8bbdee-c444-02c9-3ee5-5924c6cb70e0/7330178133273.png/600x600bb.jpg",
+    "badge": "🎁 เป็นทุกอย่างให้เธอแล้ว",
+    "mood": "love",
+    "lang": "en",
+    "animeId": 13,
+    "animeMatch": [
+      13
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "tags": [
+      "Mr. Everything",
+      "Billkin",
+      "love",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/Mr.%20Everything%20Billkin"
+  },
+  {
+    "id": 287,
+    "title": "พิง",
+    "artist": "NONT TANONT",
+    "category": "love",
+    "duration": 242,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/68/25/6668253c-aa17-85c5-4ad4-d112e0d7cd1e/mzaf_4161458375630754491.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "badge": "🛋️ เหนื่อยเมื่อไหร่ก็มาพิงฉัน",
+    "mood": "love",
+    "lang": "th",
+    "animeId": 8,
+    "animeMatch": [
+      8
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "tags": [
+      "พิง",
+      "NONT TANONT",
+      "love",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%B4%E0%B8%87%20NONT%20TANONT"
+  },
+  {
+    "id": 288,
+    "title": "ทุกนาทีที่สวยงาม (Always With Me)",
+    "artist": "NONT TANONT",
+    "category": "love",
+    "duration": 365,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/54/e7/1954e7f4-b211-849d-03a4-94a515c197df/mzaf_10611984984504241868.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/5e/2b/94/5e2b94f0-77f5-62e3-8f3c-d5e76405b8bc/cover.jpg/600x600bb.jpg",
+    "badge": "⏳ ทุกวินาทีมีค่าเมื่อมีเธอ",
+    "mood": "love",
+    "lang": "th",
+    "animeId": 3,
+    "animeMatch": [
+      3
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "tags": [
+      "ทุกนาทีที่สวยงาม (Always With Me)",
+      "NONT TANONT",
+      "love",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%B8%E0%B8%81%E0%B8%99%E0%B8%B2%E0%B8%97%E0%B8%B5%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AA%E0%B8%A7%E0%B8%A2%E0%B8%87%E0%B8%B2%E0%B8%A1%20(Always%20With%20Me)%20NONT%20TANONT"
+  },
+  {
+    "id": 289,
+    "title": "จำนน (White Flag)",
+    "artist": "NONT TANONT",
+    "category": "sad",
+    "duration": 249,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3f/be/b9/3fbeb9fa-3537-ee85-553c-c9992f3aa3ff/mzaf_11225322134181997478.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/30/b3/b5/30b3b54c-b1ce-e6c4-a0e0-2ec6eee6766b/cover.jpg/600x600bb.jpg",
+    "badge": "🏳️ ยอมแพ้ต่อความรักของเธอ",
+    "mood": "sad",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "tags": [
+      "จำนน (White Flag)",
+      "NONT TANONT",
+      "sad",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%88%E0%B8%B3%E0%B8%99%E0%B8%99%20(White%20Flag)%20NONT%20TANONT"
+  },
+  {
+    "id": 290,
+    "title": "เจ็บจริง",
+    "artist": "NONT TANONT",
+    "category": "sad",
+    "duration": 242,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/88/7a/86/887a8612-f04c-9e99-2244-338d8dd47b1d/mzaf_7382844161794732783.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2b/d2/b2/2bd2b29f-1161-56f8-f71d-8ca90a7c560e/888332946223.jpg/600x600bb.jpg",
+    "badge": "💔 เจ็บจริงไม่ได้แกล้งทำ",
+    "mood": "sad",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      1
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "tags": [
+      "เจ็บจริง",
+      "NONT TANONT",
+      "sad",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%88%E0%B9%87%E0%B8%9A%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%87%20NONT%20TANONT"
+  },
+  {
+    "id": 291,
+    "title": "เสแสร้ง (Pretend)",
+    "artist": "Paper Planes feat. MOON",
+    "category": "hype",
+    "duration": 223,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/c2/ee/17c2ee1a-86fe-9824-3fb0-317616b49045/mzaf_10653722034220541901.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8d/4c/f2/8d4cf22b-326e-ede1-6941-f846fae91804/888332910439.jpg/600x600bb.jpg",
+    "badge": "🎸 ร็อคเจ็บลึก บีทหนักสะใจ",
+    "mood": "hype",
+    "lang": "th",
+    "animeId": 3,
+    "animeMatch": [
+      3
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "tags": [
+      "เสแสร้ง (Pretend)",
+      "Paper Planes feat. MOON",
+      "hype",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%AA%E0%B9%81%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%87%20(Pretend)%20Paper%20Planes%20feat.%20MOON"
+  },
+  {
+    "id": 292,
+    "title": "ทรงอย่างแบด (Bad Boy)",
+    "artist": "Paper Planes",
+    "category": "hype",
+    "duration": 206,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/90/a0/8c90a081-b8f8-8d89-acf7-3531400bd49d/mzaf_1875861912879165721.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "badge": "⚡ เพลงชาติวัยรุ่นฟันน้ำนม",
+    "mood": "hype",
+    "lang": "th",
+    "animeId": 6,
+    "animeMatch": [
+      6
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "tags": [
+      "ทรงอย่างแบด (Bad Boy)",
+      "Paper Planes",
+      "hype",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%9A%E0%B8%94%20(Bad%20Boy)%20Paper%20Planes"
+  },
+  {
+    "id": 293,
+    "title": "ดวงเดือน",
+    "artist": "JOEY PHUWASIT",
+    "category": "sad",
+    "duration": 289,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/64/31/d964312a-8619-ca7c-2580-1844e0fdf698/mzaf_8881744960688057961.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/47/fd/90/47fd904b-7653-5f99-d915-19529a77c697/888332917681.jpg/600x600bb.jpg",
+    "badge": "🌙 มองจันทร์ดวงเดียวกัน",
+    "mood": "sad",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      1
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "tags": [
+      "ดวงเดือน",
+      "JOEY PHUWASIT",
+      "sad",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B9%80%E0%B8%94%E0%B8%B7%E0%B8%AD%E0%B8%99%20JOEY%20PHUWASIT"
+  },
+  {
+    "id": 294,
+    "title": "สาริกาลิ้นทอง",
+    "artist": "Paper Planes x Joey Phuwasit",
+    "category": "hype",
+    "duration": 248,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0f/9b/d6/0f9bd6dd-9e87-36fc-1f0a-788c5d41369d/mzaf_13961912807424325430.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9b/77/d5/9b77d5dd-5ec4-33b8-fb8a-53a44292b6e2/888332896313.jpg/600x600bb.jpg",
+    "badge": "🔥 ฟังก์ร็อคไทยร่วมสมัยสุดมันส์",
+    "mood": "hype",
+    "lang": "th",
+    "animeId": 7,
+    "animeMatch": [
+      7
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "tags": [
+      "สาริกาลิ้นทอง",
+      "Paper Planes x Joey Phuwasit",
+      "hype",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A5%E0%B8%B4%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%AD%E0%B8%87%20Paper%20Planes%20x%20Joey%20Phuwasit"
+  },
+  {
+    "id": 295,
+    "title": "คนละชั้น",
+    "artist": "Jaonaay",
+    "category": "vibe",
+    "duration": 207,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e7/4c/f3/e74cf32f-7036-4023-cfec-b0bd55c67247/mzaf_1897628885734558985.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f2/1d/0b/f21d0b12-571a-8d9c-800e-c17ae8aeec13/0849480035603_Cover.jpg/600x600bb.jpg",
+    "badge": "🪜 อยู่ไกลเกินเอื้อมถึง",
+    "mood": "chill",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "tags": [
+      "คนละชั้น",
+      "Jaonaay",
+      "chill",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%99%E0%B8%A5%E0%B8%B0%E0%B8%8A%E0%B8%B1%E0%B9%89%E0%B8%99%20Jaonaay"
+  },
+  {
+    "id": 296,
+    "title": "พูดทำไม",
+    "artist": "ตู่ ภพธร",
+    "category": "sad",
+    "duration": 242,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d5/53/f1/d553f1c4-9beb-e70c-ad8e-eaac26810153/mzaf_13309458600547057550.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/36/17/0c/36170cfd-0451-44d9-878d-2e2ea9bc7b4a/cover.jpg/600x600bb.jpg",
+    "badge": "🥀 จะพูดทำไมถ้าไม่ได้รัก",
+    "mood": "sad",
+    "lang": "th",
+    "animeId": 2,
+    "animeMatch": [
+      2
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "tags": [
+      "พูดทำไม",
+      "ตู่ ภพธร",
+      "sad",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%B9%E0%B8%94%E0%B8%97%E0%B8%B3%E0%B9%84%E0%B8%A1%20%E0%B8%95%E0%B8%B9%E0%B9%88%20%E0%B8%A0%E0%B8%9E%E0%B8%98%E0%B8%A3"
+  },
+  {
+    "id": 297,
+    "title": "โปรดเถอะ",
+    "artist": "แพรว คณิตกุล",
+    "category": "love",
+    "duration": 210,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/41/4d/94/414d94b3-c3c0-570f-a98c-60c21d614836/mzaf_12675013831786128287.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/76/75/7d/76757d51-c189-5c2d-d179-df2989424adf/888332956307.jpg/600x600bb.jpg",
+    "badge": "🥺 ขอร้องให้เธอหันมามอง",
+    "mood": "love",
+    "lang": "th",
+    "animeId": 3,
+    "animeMatch": [
+      3
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "tags": [
+      "โปรดเถอะ",
+      "แพรว คณิตกุล",
+      "love",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B8%94%E0%B9%80%E0%B8%96%E0%B8%AD%E0%B8%B0%20%E0%B9%81%E0%B8%9E%E0%B8%A3%E0%B8%A7%20%E0%B8%84%E0%B8%93%E0%B8%B4%E0%B8%95%E0%B8%81%E0%B8%B8%E0%B8%A5"
+  },
+  {
+    "id": 298,
+    "title": "มีใจก็ทักมา",
+    "artist": "Jeff Satur",
+    "category": "vibe",
+    "duration": 210,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/a7/ab/b7a7ab8a-2c84-2218-01ae-cca4b110346d/mzaf_12733890203505854122.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/05/c5/bc/05c5bc6c-3632-c39d-3e85-925a07f2d678/artwork.jpg/600x600bb.jpg",
+    "badge": "📱 อย่าปล่อยให้รอตอบแชท",
+    "mood": "chill",
+    "lang": "th",
+    "animeId": 44,
+    "animeMatch": [
+      44
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "tags": [
+      "มีใจก็ทักมา",
+      "Jeff Satur",
+      "chill",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%88%E0%B8%81%E0%B9%87%E0%B8%97%E0%B8%B1%E0%B8%81%E0%B8%A1%E0%B8%B2%20Jeff%20Satur"
+  },
+  {
+    "id": 299,
+    "title": "ลืมแทบไม่ไหว",
+    "artist": "SARAN feat. Maimhon",
+    "category": "sad",
+    "duration": 354,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ab/16/c1/ab16c133-7bdc-01e6-0e6c-f9ff0c8c9f41/mzaf_3282050872927801930.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/b3/10/f7/b310f75e-2465-705c-7d55-0480dcce3b98/cover.jpg/600x600bb.jpg",
+    "badge": "🎙️ โฟลว์แร็ปบาดลึกถึงกระดูก",
+    "mood": "sad",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      1
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "tags": [
+      "ลืมแทบไม่ไหว",
+      "SARAN feat. Maimhon",
+      "sad",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B7%E0%B8%A1%E0%B9%81%E0%B8%97%E0%B8%9A%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%AB%E0%B8%A7%20SARAN%20feat.%20Maimhon"
+  },
+  {
+    "id": 300,
+    "title": "สลักจิต",
+    "artist": "Pop Pongkool x Da Endorphine",
+    "category": "sad",
+    "duration": 210,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/6e/34/e66e34c2-c971-ef2c-2e0f-f8a99e220912/mzaf_7695861381642299193.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8c/69/cb/8c69cba7-b440-a3b3-b9c0-8e409b8613f2/888332908481.jpg/600x600bb.jpg",
+    "badge": "🖤 สลักไว้ในหัวใจชั่วนิรันดร์",
+    "mood": "sad",
+    "lang": "th",
+    "animeId": 8,
+    "animeMatch": [
+      8
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "tags": [
+      "สลักจิต",
+      "Pop Pongkool x Da Endorphine",
+      "sad",
+      "Typography Edit"
+    ],
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%88%E0%B8%B4%E0%B8%95%20Pop%20Pongkool%20x%20Da%20Endorphine"
+  },
+  {
+    "id": 301,
+    "title": "Die With A Smile",
+    "artist": "Lady Gaga & Bruno Mars",
+    "mood": "love",
+    "lang": "en",
+    "bpm": "ช้า (79 BPM)",
+    "animeId": 124,
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/11/ae/f2/11aef294-f57c-bab9-c9fc-529162984e62/24UMGIM85348.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/6a/99/076a99ed-b946-431b-6f1f-54fa187ca5bd/mzaf_8102882277995122875.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Die%20With%20A%20Smile%20Lady%20Gaga%20Bruno%20Mars",
+    "tags": [
+      "Die With A Smile",
+      "Lady Gaga",
+      "Bruno Mars",
+      "Romantic",
+      "Typography Edit"
+    ],
+    "badge": "💍 เพลงคู่รักแห่งศตวรรษ"
+  },
+  {
+    "id": 302,
+    "title": "Bling-Bang-Bang-Born",
+    "artist": "Creepy Nuts",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (155 BPM)",
+    "animeId": 121,
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/12/81/dc/1281dc28-48e6-5ff7-642d-6cf4d487d9e0/4547366660890.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/54/5e/5c545e9a-c8ca-c673-f85d-a74b14c2c882/mzaf_2313943576213161760.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Bling-Bang-Bang-Born%20Creepy%20Nuts",
+    "tags": [
+      "Bling-Bang-Bang-Born",
+      "Creepy Nuts",
+      "Mashle",
+      "Dance",
+      "Fast Cut"
+    ],
+    "badge": "🕺 บีทไวรัลโลก แดนซ์ไทโปสะบัด"
+  },
+  {
+    "id": 303,
+    "title": "Otonoke",
+    "artist": "Creepy Nuts",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (160 BPM)",
+    "animeId": 121,
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2c/66/b5/2c66b5b5-a46f-1064-4802-fe82c0e56200/4547366705638.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/54/5e/5c545e9a-c8ca-c673-f85d-a74b14c2c882/mzaf_2313943576213161760.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Otonoke%20Creepy%20Nuts",
+    "tags": [
+      "Otonoke",
+      "Creepy Nuts",
+      "Dandadan OP",
+      "Supernatural",
+      "Hype"
+    ],
+    "badge": "👻 เพลงเปิด Dandadan หลอนมันส์สะใจ"
+  },
+  {
+    "id": 304,
+    "title": "Idol (アイドル)",
+    "artist": "YOASOBI",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (166 BPM)",
+    "animeId": 126,
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3a/17/eb/3a17eb30-eacb-82eb-51df-d1321dbb55bc/197188492205.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/db/16/f0db16be-457e-f10f-98b6-f30b11de34e4/mzaf_5189430943078523093.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Idol%20YOASOBI",
+    "tags": [
+      "Idol",
+      "YOASOBI",
+      "Oshi no Ko",
+      "Viral",
+      "Anime OP"
+    ],
+    "badge": "⭐ เพลงระดับตำนาน เกิดใหม่เป็นลูกโอชิ"
+  },
+  {
+    "id": 305,
+    "title": "Yusha (The Brave)",
+    "artist": "YOASOBI",
+    "mood": "chill",
+    "lang": "jp",
+    "bpm": "ปานกลาง (130 BPM)",
+    "animeId": 124,
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/cc/d5/b3/ccd5b3db-b344-ba47-341c-6d4a9c8f3a88/4571416824093.png/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/db/16/f0db16be-457e-f10f-98b6-f30b11de34e4/mzaf_5189430943078523093.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Yusha%20YOASOBI",
+    "tags": [
+      "Yusha",
+      "YOASOBI",
+      "Frieren",
+      "Fantasy",
+      "Story"
+    ],
+    "badge": "🧝‍♀️ บทกวีผู้กล้าและความทรงจำของฟรีเรน"
+  },
+  {
+    "id": 306,
+    "title": "KICK BACK",
+    "artist": "Kenshi Yonezu",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (160 BPM)",
+    "animeId": 125,
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/4e/a8/75/4ea875d1-bdb6-9b83-185a-646391cbffbd/4547366589849.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/2d/45/862d4572-805c-3a72-49a4-905a8c327888/mzaf_14805576631717868964.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/KICK%20BACK%20Kenshi%20Yonezu",
+    "tags": [
+      "KICK BACK",
+      "Kenshi Yonezu",
+      "Chainsaw Man",
+      "Rock",
+      "Madness"
+    ],
+    "badge": "⛓️ เลื่อยยนต์คลั่ง บีทระเบิดอารมณ์"
+  },
+  {
+    "id": 307,
+    "title": "Specialz",
+    "artist": "King Gnu",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (145 BPM)",
+    "animeId": 129,
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/aa/33/55/aa335541-9932-d73c-6b1e-62bd484fc83d/4547366642308.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/5d/57/045d57fb-d1c4-2979-31ef-485662a97783/mzaf_7661994685536659402.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Specialz%20King%20Gnu",
+    "tags": [
+      "Specialz",
+      "King Gnu",
+      "Jujutsu Kaisen",
+      "Shibuya Incident",
+      "Chaos"
+    ],
+    "badge": "👁️ เพลงชาติชิบูย่า 'You are my special'"
+  },
+  {
+    "id": 308,
+    "title": "Abyss",
+    "artist": "YUNGBLUD",
+    "mood": "hype",
+    "lang": "en",
+    "bpm": "เร็ว (140 BPM)",
+    "animeId": 122,
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a7/7f/24/a77f24f6-d347-fe0c-05de-0528971e6027/24UMGIM26706.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/b0/ef/17b0ef44-1d0a-8ca4-7442-53a5fba773fb/mzaf_16206251573451214130.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Abyss%20YUNGBLUD",
+    "tags": [
+      "Abyss",
+      "YUNGBLUD",
+      "Kaiju No. 8",
+      "Alternative Rock"
+    ],
+    "badge": "🦖 ร็อคเปิดตัว ไคจูหมายเลข 8"
+  },
+  {
+    "id": 309,
+    "title": "โต๊ะริม (melt)",
+    "artist": "NONT TANONT",
+    "mood": "love",
+    "lang": "th",
+    "bpm": "ปานกลาง (85 BPM)",
+    "animeId": 2,
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5d/70/fe/5d70fe6e-f3e4-c874-a2de-e4ecd186bf80/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/5f/f4/f45ff486-6fa0-9df5-9d58-8ed552c86140/mzaf_5412811150878921175.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/โต๊ะริม%20NONT%20TANONT",
+    "tags": [
+      "โต๊ะริม",
+      "NONT TANONT",
+      "ละมุน",
+      "คลั่งรัก",
+      "Romantic"
+    ],
+    "badge": "☕ เธอฆ่าคนด้วยสายตา เพียงแค่เธอนั้นมองมา"
+  },
+  {
+    "id": 310,
+    "title": "ถ้าเราเจอกันอีก (Until Then)",
+    "artist": "Tilly Birds",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ช้า (74 BPM)",
+    "animeId": 3,
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/92/a3/5c/92a35c3e-826b-1104-b9a4-7f0839fa3751/888332906845.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/1b/5c/021b5c1f-dd10-80f6-f78b-8d338c1af224/mzaf_9496894947285646060.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/ถ้าเราเจอกันอีก%20Tilly%20Birds",
+    "tags": [
+      "ถ้าเราเจอกันอีก",
+      "Tilly Birds",
+      "คิดถึงคนบนฟ้า",
+      "ซึ้งกินใจ",
+      "Sad"
+    ],
+    "badge": "🕊️ ถ้าเราเจอกันอีก ในวันที่เราทั้งคู่เติบโต"
+  },
+  {
+    "id": 311,
+    "title": "ลืมไปแล้วว่าลืมยังไง (Fade)",
+    "artist": "Jeff Satur",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ช้า (70 BPM)",
+    "animeId": 9,
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/94/fd/69/94fd691b-d908-918a-6e07-e0b2265bca6e/5054197362491.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1c/13/a1/1c13a1c4-682c-a104-ce6f-b2394287c14f/mzaf_17818307861761409830.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/ลืมไปแล้วว่าลืมยังไง%20Jeff%20Satur",
+    "tags": [
+      "Fade",
+      "Jeff Satur",
+      "อกหัก",
+      "น้ำตาซึม",
+      "อินดี้ป็อป"
+    ],
+    "badge": "🥀 ความทรงจำไม่เคยจางหายไปไหน"
+  },
+  {
+    "id": 312,
+    "title": "ดาวหมุน",
+    "artist": "PURPEECH",
+    "mood": "chill",
+    "lang": "th",
+    "bpm": "ปานกลาง (90 BPM)",
+    "animeId": 18,
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b6/b5/09/b6b509da-566e-abf9-4118-3a4356a34c7d/888332898645.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/92/21/e2/9221e21b-2b41-fcea-d53e-4b1be1a81397/mzaf_4002739893091787783.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/ดาวหมุน%20PURPEECH",
+    "tags": [
+      "ดาวหมุน",
+      "PURPEECH",
+      "เชียงใหม่",
+      "อินดี้",
+      "อบอุ่น"
+    ],
+    "badge": "🌌 ปล่อยให้ดาวหมุนไปตามกาลเวลา"
+  },
+  {
+    "id": 313,
+    "title": "กีต้าร์คอร์ดโปรด",
+    "artist": "fellow fellow",
+    "mood": "love",
+    "lang": "th",
+    "bpm": "ปานกลาง (88 BPM)",
+    "animeId": 127,
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/41/de/b4/41deb47a-1806-9fc4-81e4-b1b654ec2d4d/8859028151018.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/65/1a/b2/651ab205-304c-9a22-9cf2-fc03970fec54/mzaf_4705519762718674207.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/กีต้าร์คอร์ดโปรด%20fellow%20fellow",
+    "tags": [
+      "กีต้าร์คอร์ดโปรด",
+      "fellow fellow",
+      "แอบรัก",
+      "อคูสติก",
+      "น่ารัก"
+    ],
+    "badge": "🎸 เธอคือคอร์ดโปรดที่ฉันอยากเล่นซ้ำๆ"
+  },
+  {
+    "id": 314,
+    "title": "วาดไว้ (recall)",
+    "artist": "BOWKYLION",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ช้า (68 BPM)",
+    "animeId": 1,
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e4/97/68/e49768af-d0d8-dfea-32c5-51e6a3b9e25e/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/f0/2d/76f02d3a-4b61-f285-a84a-272aa2904c63/mzaf_2746150345781827060.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/วาดไว้%20BOWKYLION",
+    "tags": [
+      "วาดไว้",
+      "BOWKYLION",
+      "คิดถึง",
+      "น้ำตาแตก",
+      "Sad"
+    ],
+    "badge": "🎨 ที่เธอเคยวาดไว้ กลับไม่มีเธออยู่ข้างใน"
+  },
+  {
+    "id": 315,
+    "title": "ซ่อนกลิ่น",
+    "artist": "Palmy",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ช้า (75 BPM)",
+    "animeId": 18,
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7a/f1/7d/7af17dac-68dc-1ec7-39be-35186bf08a0a/888332930772.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/08/12/36/0812360d-4479-b29d-5275-931b1e541694/mzaf_5285055444520979895.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/ซ่อนกลิ่น%20Palmy",
+    "tags": [
+      "ซ่อนกลิ่น",
+      "Palmy",
+      "คิดถึงลึกซึ้ง",
+      "คลาสสิกไทย",
+      "Vintage"
+    ],
+    "badge": "🌸 กลิ่นหอมที่ซ่อนไว้ในใจตลอดกาล"
+  },
+  {
+    "id": 316,
+    "title": "Birds of a Feather",
+    "artist": "Billie Eilish",
+    "mood": "love",
+    "lang": "en",
+    "bpm": "ปานกลาง (105 BPM)",
+    "animeId": 2,
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/9f/69/929f69f1-9977-3a44-d674-11f70c852d1b/24UMGIM36186.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/31/d3/3431d34e-847f-5d66-df83-0bce688d997e/mzaf_18106743962423782018.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Birds%20of%20a%20Feather%20Billie%20Eilish",
+    "tags": [
+      "Birds of a Feather",
+      "Billie Eilish",
+      "Hit 2024",
+      "Love",
+      "Dreamy"
+    ],
+    "badge": "🕊️ 'I want you to stay, 'til I'm in the grave'"
+  },
+  {
+    "id": 317,
+    "title": "Espresso",
+    "artist": "Sabrina Carpenter",
+    "mood": "hype",
+    "lang": "en",
+    "bpm": "เร็ว (104 BPM)",
+    "animeId": 2,
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/57/e8/7b/57e87ba0-5057-9bb9-c247-ce7dbe426e89/24UMGIM55213.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/4d/02/e94d0230-11ee-ef94-d2cf-a5d547bd73f4/mzaf_554140808559155562.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Espresso%20Sabrina%20Carpenter",
+    "tags": [
+      "Espresso",
+      "Sabrina Carpenter",
+      "Pop Sensation",
+      "Dance",
+      "Catchy"
+    ],
+    "badge": "☕ 'Say you can't sleep, baby, I know That's that me espresso'"
+  },
+  {
+    "id": 318,
+    "title": "From The Start",
+    "artist": "Laufey",
+    "mood": "love",
+    "lang": "en",
+    "bpm": "ปานกลาง (85 BPM)",
+    "animeId": 20,
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/8b/8b/20/8b8b2083-c8a3-a1a6-1f9e-a4da5bf45d5d/197188679637.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b0/8c/e1/b08ce131-3860-fdbd-43a9-dc4bf1ec78f8/mzaf_18185086236351287888.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/From%20The%20Start%20Laufey",
+    "tags": [
+      "From The Start",
+      "Laufey",
+      "Bossa Nova",
+      "Jazz Pop",
+      "Crush"
+    ],
+    "badge": "🌸 บอสซาโนวาแจ๊สแสนหวาน 'She's so perfect, blah, blah, blah'"
+  },
+  {
+    "id": 319,
+    "title": "Golden Hour",
+    "artist": "JVKE",
+    "mood": "love",
+    "lang": "en",
+    "bpm": "ปานกลาง (94 BPM)",
+    "animeId": 9,
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8d/1a/7b/8d1a7b44-316f-7c7f-4380-935673fb697a/5056167175650.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/02/8c/30028c8a-a125-5466-bcc6-27a83b1c0135/mzaf_16911571635366913039.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Golden%20Hour%20JVKE",
+    "tags": [
+      "Golden Hour",
+      "JVKE",
+      "Piano",
+      "Cinematic",
+      "Glow"
+    ],
+    "badge": "🌅 แสงสีทองประกาย เปียโนระดับเวิลด์คลาส"
+  },
+  {
+    "id": 320,
+    "title": "Shinunoga E-Wa",
+    "artist": "Fujii Kaze",
+    "mood": "love",
+    "lang": "jp",
+    "bpm": "ปานกลาง (85 BPM)",
+    "animeId": 44,
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/96/4e/5b/964e5b6e-4766-63ba-7e50-9f8a5bd0569e/20UMGIM17280.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/27/a4/b127a427-710b-e65f-e734-ead910b94cbc/mzaf_692825803667967327.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Shinunoga%20E-Wa%20Fujii%20Kaze",
+    "tags": [
+      "Shinunoga E-Wa",
+      "Fujii Kaze",
+      "Viral Hit",
+      "Devotion",
+      "Aesthetic"
+    ],
+    "badge": "🥀 รักเธอจนยอมตาย 'ตายซะยังจะดีกว่าถ้าต้องจากเธอ'"
+  },
+  {
+    "id": 321,
+    "title": "ผีเห็นผี",
+    "artist": "Lipta",
+    "mood": "chill",
+    "lang": "th",
+    "bpm": "ปานกลาง (96 BPM)",
+    "animeId": 194,
+    "animeMatch": [
+      194
+    ],
+    "tags": [
+      "ผีเห็นผี",
+      "Lipta",
+      "กวนๆ",
+      "น่ารัก"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/07/43/df/0743dfa2-dfe5-0732-a84b-5a1a2cd7fbb4/dj.kjzyigvy.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/ab/de/e6abde00-0b67-1f59-cb5b-b5d8d4b7e449/mzaf_8805488840482688838.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9C%E0%B8%B5%E0%B9%80%E0%B8%AB%E0%B9%87%E0%B8%99%E0%B8%9C%E0%B8%B5%20Lipta"
+  },
+  {
+    "id": 322,
+    "title": "ทราบแล้วเปลี่ยน",
+    "artist": "BOWKYLION",
+    "mood": "love",
+    "lang": "th",
+    "bpm": "ปานกลาง (90 BPM)",
+    "animeId": 153,
+    "animeMatch": [
+      153
+    ],
+    "tags": [
+      "ทราบแล้วเปลี่ยน",
+      "BOWKYLION",
+      "น่ารัก",
+      "T-POP"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/40/31/d6/4031d6e5-6c14-72cb-3ac0-9f238dc74726/859732364931_cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/19/ac/b6/19acb60d-7e8f-6d46-13bc-4969c35694c2/mzaf_15103463905261313447.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%20BOWKYLION"
+  },
+  {
+    "id": 323,
+    "title": "บานปลาย",
+    "artist": "BOWKYLION",
+    "mood": "love",
+    "lang": "th",
+    "bpm": "ปานกลาง (92 BPM)",
+    "animeId": 155,
+    "animeMatch": [
+      155
+    ],
+    "tags": [
+      "บานปลาย",
+      "BOWKYLION",
+      "คลั่งรัก",
+      "ละมุน"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/00/41/f0/0041f0ec-4159-56a4-3333-527314493446/888332884709.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/75/da/29/75da2914-b0d0-079c-fab3-74f9c9bce832/mzaf_5007088629268930493.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9A%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%A2%20BOWKYLION"
+  },
+  {
+    "id": 324,
+    "title": "Boy Pablo (feat. BOWKYLION)",
+    "artist": "MILLI",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ช้า (72 BPM)",
+    "animeId": 159,
+    "animeMatch": [
+      159
+    ],
+    "tags": [
+      "ลงใจ",
+      "BOWKYLION",
+      "อกหัก",
+      "ยอมแพ้"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/88/8e/f6/888ef696-be19-993b-627c-37e07dadc264/3617053329292.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/3d/d0/a13dd0f3-d279-2dbb-6b8c-a202ac679a95/mzaf_14155678883415832162.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Boy%20Pablo%20(feat.%20BOWKYLION)%20MILLI"
+  },
+  {
+    "id": 325,
+    "title": "เพื่อนเล่น ไม่เล่นเพื่อน (Just Being Friendly) [feat. MILLI]",
+    "artist": "Tilly Birds",
+    "mood": "love",
+    "lang": "th",
+    "bpm": "เร็ว (115 BPM)",
+    "animeId": 154,
+    "animeMatch": [
+      154
+    ],
+    "tags": [
+      "เพื่อนเล่น",
+      "Tilly Birds",
+      "MILLI",
+      "แอบรัก"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3a/d1/4c/3ad14c38-72fa-5cbc-558b-7ee6ef9d101e/888332916318.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/95/0a/8a/950a8a75-b236-bc32-e016-23fc81dd6af0/mzaf_15220071794383537599.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%99%20%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%99%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%20(Just%20Being%20Friendly)%20%5Bfeat.%20MILLI%5D%20Tilly%20Birds"
+  },
+  {
+    "id": 326,
+    "title": "ลู่วิ่ง",
+    "artist": "Tilly Birds",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ปานกลาง (95 BPM)",
+    "animeId": 191,
+    "animeMatch": [
+      191
+    ],
+    "tags": [
+      "ลู่วิ่ง",
+      "Tilly Birds",
+      "วิ่งตาม",
+      "เหนื่อย"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6d/28/32/6d2832e0-2f44-16ed-ca20-9c98aadb2cf9/888332914994.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/a0/d5/15a0d550-d86f-c65f-5e15-3d7dc704b179/mzaf_2230048146146833751.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B9%E0%B9%88%E0%B8%A7%E0%B8%B4%E0%B9%88%E0%B8%87%20Tilly%20Birds"
+  },
+  {
+    "id": 327,
+    "title": "ฝนตกไหม (Live At Impact Arena 2023)",
+    "artist": "Three Man Down",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ช้า (74 BPM)",
+    "animeId": 182,
+    "animeMatch": [
+      182
+    ],
+    "tags": [
+      "ฝนตกไหม",
+      "Three Man Down",
+      "ฝนตก",
+      "คิดถึง"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d1/b9/39/d1b939c6-6773-46ee-0bf9-bf6d458785a0/888332897631.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/79/9d/95/799d95af-1979-bf4a-2fdf-63729b996e8d/mzaf_13867197414949145128.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9D%E0%B8%99%E0%B8%95%E0%B8%81%E0%B9%84%E0%B8%AB%E0%B8%A1%20(Live%20At%20Impact%20Arena%202023)%20Three%20Man%20Down"
+  },
+  {
+    "id": 328,
+    "title": "น้อง (Nong) [feat. UrboyTJ]",
+    "artist": "Three Man Down",
+    "mood": "love",
+    "lang": "th",
+    "bpm": "เร็ว (120 BPM)",
+    "animeId": 193,
+    "animeMatch": [
+      193
+    ],
+    "tags": [
+      "น้อง",
+      "Three Man Down",
+      "URBOYTJ",
+      "สนุก"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/74/35/93/74359389-10ad-9c7b-b397-ff226fc92890/888332906746.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/07/4e/f9074e99-418d-e2e8-81cf-4f062294c200/mzaf_13515487952562679555.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%87%20(Nong)%20%5Bfeat.%20UrboyTJ%5D%20Three%20Man%20Down"
+  },
+  {
+    "id": 329,
+    "title": "เธอจำเก่งเลยเอารักเราไปจำนำ (feat. yoon, E.P., Simon, DakidJP & NATSY B)",
+    "artist": "CHXID!",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ปานกลาง (85 BPM)",
+    "animeId": 190,
+    "animeMatch": [
+      190
+    ],
+    "tags": [
+      "จำเก่ง",
+      "F.HERO",
+      "Tilly Birds",
+      "ลืมไม่ได้"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/8c/5d/7c/8c5d7c27-6d75-0ac9-3520-e25865bb53cb/197188388676.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/95/a8/3d/95a83de3-ad7c-5109-4eb3-ebb8b24c66e6/mzaf_16124769710809171100.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%88%E0%B8%B3%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87%20F.HERO%20Tilly%20Birds"
+  },
+  {
+    "id": 330,
+    "title": "วันครบเลิก (UNNIVERSARY)",
+    "artist": "NONT TANONT",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ช้า (70 BPM)",
+    "animeId": 144,
+    "animeMatch": [
+      144
+    ],
+    "tags": [
+      "วันครบเลิก",
+      "ร็อค",
+      "อกหัก",
+      "เจ็บลึก"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c5/e1/e0/c5e1e0ce-5779-6423-8dd6-e883cf02ba6f/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a5/f4/2a/a5f42aa9-6607-61bc-5a54-aff133f4d3e3/mzaf_14507165370451016819.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%20(UNNIVERSARY)%20NONT%20TANONT"
+  },
+  {
+    "id": 331,
+    "title": "ดึงดัน",
+    "artist": "Cocktail & Tuk Siriporn",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ช้า (74 BPM)",
+    "animeId": 180,
+    "animeMatch": [
+      180
+    ],
+    "tags": [
+      "ดึงดัน",
+      "Cocktail",
+      "ดราม่า",
+      "เจ็บปวด"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a7/01/11/a7011103-04f0-9206-cc5d-3b9e522812ba/888332918909.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7c/aa/43/7caa4305-5199-043b-5840-04c553a8856e/mzaf_15947743532366797810.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%B6%E0%B8%87%E0%B8%94%E0%B8%B1%E0%B8%99%20Cocktail%20%26%20Tuk%20Siriporn"
+  },
+  {
+    "id": 332,
+    "title": "คุกเข่า",
+    "artist": "Cocktail",
+    "mood": "hype",
+    "lang": "th",
+    "bpm": "เร็ว (140 BPM)",
+    "animeId": 139,
+    "animeMatch": [
+      139
+    ],
+    "tags": [
+      "คุกเข่า",
+      "Cocktail",
+      "ร็อคมันส์",
+      "กระแทกใจ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9d/40/33/9d40332f-9fa7-cc6e-c1de-e2e7cb6f6e05/888332997744.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/63/7a/9d/637a9d4f-47b5-d41d-5a75-c2366055c1ad/mzaf_10696006268171849383.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B8%E0%B8%81%E0%B9%80%E0%B8%82%E0%B9%88%E0%B8%B2%20Cocktail"
+  },
+  {
+    "id": 333,
+    "title": "หลอกกันทั้งนั้น",
+    "artist": "Chilling Sunday",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ช้า (70 BPM)",
+    "animeId": 191,
+    "animeMatch": [
+      191
+    ],
+    "tags": [
+      "หลอกกันทั้งนั้น",
+      "Chilling Sunday",
+      "ผิดหวัง",
+      "เศร้า"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/31/20/5d/31205d25-b029-0a52-2eb7-ccb52d5f06da/197338216385.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/99/d8/5c/99d85cc7-1b70-f98f-a3ac-943cc98655a4/mzaf_12184586061060778773.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%A5%E0%B8%AD%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%99%E0%B8%B1%E0%B9%89%E0%B8%99%20Chilling%20Sunday"
+  },
+  {
+    "id": 334,
+    "title": "คนเก่าเขาทำไว้ดี (Can't win)",
+    "artist": "Chilling Sunday",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ช้า (72 BPM)",
+    "animeId": 156,
+    "animeMatch": [
+      156
+    ],
+    "tags": [
+      "คนเก่าเขาทำไว้ดี",
+      "Chilling Sunday",
+      "เปรียบเทียบ",
+      "เจ็บ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/57/95/e6/5795e648-ecaa-f604-50ad-305c2a24319e/8859028150936.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bd/ee/9a/bdee9a13-1826-8e9f-e0c5-c43ca4fe9c67/mzaf_533430522273910553.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%99%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%97%E0%B8%B3%E0%B9%84%E0%B8%A7%E0%B9%89%E0%B8%94%E0%B8%B5%20(Can't%20win)%20Chilling%20Sunday"
+  },
+  {
+    "id": 335,
+    "title": "Kab Rod Len",
+    "artist": "Anatomy Rabbit",
+    "mood": "chill",
+    "lang": "th",
+    "bpm": "ปานกลาง (86 BPM)",
+    "animeId": 189,
+    "animeMatch": [
+      189
+    ],
+    "tags": [
+      "ไม่คิด",
+      "Anatomy Rabbit",
+      "ดรีมป็อป",
+      "ลอย"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/01/2a/21/012a21bb-cfab-6a0c-cc70-2af5ee8b7276/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/68/53/22/685322f3-b14e-3a0c-e61e-2090e14debcf/mzaf_12539373086656692962.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Kab%20Rod%20Len%20Anatomy%20Rabbit"
+  },
+  {
+    "id": 336,
+    "title": "ขอให้โลกนี้ใจดีกับเธอ",
+    "artist": "Anatomy Rabbit",
+    "mood": "love",
+    "lang": "th",
+    "bpm": "ช้า (75 BPM)",
+    "animeId": 187,
+    "animeMatch": [
+      187
+    ],
+    "tags": [
+      "ขอให้โลกนี้ใจดีกับเธอ",
+      "Anatomy Rabbit",
+      "อบอุ่น",
+      "ให้กำลังใจ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/0c/9d/de/0c9ddefa-2444-5404-ef55-cac1fe6aa3d2/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/52/9c/e8/529ce800-9bdd-57d7-969b-5e73b0112e12/mzaf_15372456788368335050.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%82%E0%B8%AD%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%83%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%98%E0%B8%AD%20Anatomy%20Rabbit"
+  },
+  {
+    "id": 337,
+    "title": "ลา ลา ลา",
+    "artist": "Dept",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ปานกลาง (90 BPM)",
+    "animeId": 192,
+    "animeMatch": [
+      192
+    ],
+    "tags": [
+      "ลา ลา ลา",
+      "Dept",
+      "ปล่อยมือ",
+      "อินดี้"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/f5/63/d1/f563d107-7691-64db-6c7c-fc2b628721a5/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cf/d8/8f/cfd88fca-dea9-956f-58b8-a3b5b80cc028/mzaf_679471082992934543.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B2%20%E0%B8%A5%E0%B8%B2%20%E0%B8%A5%E0%B8%B2%20Dept"
+  },
+  {
+    "id": 338,
+    "title": "คงต้องบอกลาแล้ว",
+    "artist": "Dept",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ช้า (74 BPM)",
+    "animeId": 183,
+    "animeMatch": [
+      183
+    ],
+    "tags": [
+      "คงต้องบอกลา",
+      "Dept",
+      "จากลา",
+      "ความทรงจำ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/c1/ee/75/c1ee752f-6650-5137-7d17-e17c89cdd046/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/68/b5/7668b5e7-7c13-c9e1-7c02-ad2c42f0cf36/mzaf_1856077144740014777.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%87%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%20Dept"
+  },
+  {
+    "id": 339,
+    "title": "เพราะเธอนั้นเป็นเหมือนดั่งโลกทั้งใบ",
+    "artist": "Dept",
+    "mood": "chill",
+    "lang": "th",
+    "bpm": "ปานกลาง (92 BPM)",
+    "animeId": 190,
+    "animeMatch": [
+      190
+    ],
+    "tags": [
+      "ทิ้งไป",
+      "Dept",
+      "ลืม",
+      "สบายใจ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/43/c8/9f/43c89f4b-d109-b3ef-6f8d-e3a0eda02b22/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f5/cf/00/f5cf00e7-489a-7734-882a-a20450d316b0/mzaf_1049112818015024624.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%9E%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%99%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B9%80%E0%B8%AB%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%99%E0%B8%94%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%97%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%83%E0%B8%9A%20Dept"
+  },
+  {
+    "id": 340,
+    "title": "ภาพจำ",
+    "artist": "Pop Pongkool",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ช้า (68 BPM)",
+    "animeId": 185,
+    "animeMatch": [
+      185
+    ],
+    "tags": [
+      "ภาพจำ",
+      "ป๊อบ ปองกูล",
+      "คิดถึง",
+      "น้ำตาซึม"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c9/c1/6c/c9c16c5e-e99d-c08f-6c88-d5b13d0f03dd/888332936224.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/92/51/36/925136e1-f8c8-815a-b222-dd512ea87501/mzaf_1228418370768204602.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%88%E0%B8%B3%20Pop%20Pongkool"
+  },
+  {
+    "id": 341,
+    "title": "ปล่อย",
+    "artist": "Pop Pongkool",
+    "mood": "chill",
+    "lang": "th",
+    "bpm": "ปานกลาง (85 BPM)",
+    "animeId": 146,
+    "animeMatch": [
+      146
+    ],
+    "tags": [
+      "ปล่อย",
+      "ป๊อบ ปองกูล",
+      "ปล่อยวาง",
+      "สบายใจ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/84/c4/ad/84c4ad75-e4a8-4901-a265-f83e80660476/888332948876.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dd/b5/ee/ddb5ee24-a6b2-1559-3fd3-dceefb1e3d65/mzaf_2222975055897583397.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9B%E0%B8%A5%E0%B9%88%E0%B8%AD%E0%B8%A2%20Pop%20Pongkool"
+  },
+  {
+    "id": 342,
+    "title": "ดูดี (Pretty ...Good)",
+    "artist": "Polycat",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ช้า (78 BPM)",
+    "animeId": 191,
+    "animeMatch": [
+      191
+    ],
+    "tags": [
+      "ดูดี",
+      "Polycat",
+      "แอบมอง",
+      "ไม่สมหวัง"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/5a/ed/86/5aed8692-6895-d9b2-638b-30a8676b888e/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1c/a9/ab/1ca9ab9c-8156-e074-0bc9-5b55b03cac81/mzaf_635483027260507020.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%B9%E0%B8%94%E0%B8%B5%20(Pretty%20...Good)%20Polycat"
+  },
+  {
+    "id": 343,
+    "title": "เป็นเพราะฝน",
+    "artist": "Polycat",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ช้า (70 BPM)",
+    "animeId": 182,
+    "animeMatch": [
+      182
+    ],
+    "tags": [
+      "เป็นเพราะฝน",
+      "Polycat",
+      "ฝนตก",
+      "เหงา"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/83/11/6f/83116f31-73a4-3df3-6c5f-6658aabbea49/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2c/12/ef/2c12ef51-d9e3-3e8e-95c0-3ccde7456caa/mzaf_17810438549414752579.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B9%80%E0%B8%9E%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B8%9D%E0%B8%99%20Polycat"
+  },
+  {
+    "id": 344,
+    "title": "มันเป็นใคร",
+    "artist": "Polycat",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ปานกลาง (90 BPM)",
+    "animeId": 156,
+    "animeMatch": [
+      156
+    ],
+    "tags": [
+      "มันเป็นใคร",
+      "Polycat",
+      "พระรอง",
+      "เจ็บใจ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/83/11/6f/83116f31-73a4-3df3-6c5f-6658aabbea49/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/ca/46/daca46e3-64af-7b7e-e951-4e7dc70fd7a1/mzaf_15328664495680037062.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A1%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B9%83%E0%B8%84%E0%B8%A3%20Polycat"
+  },
+  {
+    "id": 345,
+    "title": "ซ่อนเธอไว้ในเพลง",
+    "artist": "PURPEECH",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ช้า (74 BPM)",
+    "animeId": 187,
+    "animeMatch": [
+      187
+    ],
+    "tags": [
+      "ซ่อนเธอไว้ในเพลง",
+      "PURPEECH",
+      "เชียงใหม่",
+      "บทเพลง"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8e/a0/1e/8ea01eb5-ba25-3eb1-4301-29256070a4dd/888332890656.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4d/77/fa/4d77fa57-d974-be9e-a0b9-4a25b148a7e6/mzaf_6917187748366600878.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%8B%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B9%84%E0%B8%A7%E0%B9%89%E0%B9%83%E0%B8%99%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%20PURPEECH"
+  },
+  {
+    "id": 346,
+    "title": "หากจะเพียงขอ",
+    "artist": "PURPEECH",
+    "mood": "love",
+    "lang": "th",
+    "bpm": "ปานกลาง (88 BPM)",
+    "animeId": 154,
+    "animeMatch": [
+      154
+    ],
+    "tags": [
+      "หากจะเพียงขอ",
+      "PURPEECH",
+      "อธิษฐาน",
+      "ความรัก"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/07/76/ee/0776ee3c-4c2c-1a9a-0cce-ffd3a32c78cc/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7a/29/4e/7a294eee-ab93-0027-1820-6171f9a403c4/mzaf_14245151415795228477.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%B2%E0%B8%81%E0%B8%88%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%82%E0%B8%AD%20PURPEECH"
+  },
+  {
+    "id": 347,
+    "title": "I'm here",
+    "artist": "PURPEECH",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ช้า (72 BPM)",
+    "animeId": 183,
+    "animeMatch": [
+      183
+    ],
+    "tags": [
+      "ตอนเธอไม่อยู่",
+      "PURPEECH",
+      "คิดถึง",
+      "ว่างเปล่า"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4d/f4/f3/4df4f383-80db-cf29-ceee-7a3db092830e/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ca/a6/9e/caa69e01-7afa-6795-302c-02fe2e4c9ab7/mzaf_5602172392199194521.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/I'm%20here%20PURPEECH"
+  },
+  {
+    "id": 348,
+    "title": "TUK KRUB (feat. GUYGEEGEE)",
+    "artist": "Lipta",
+    "mood": "love",
+    "lang": "th",
+    "bpm": "ปานกลาง (98 BPM)",
+    "animeId": 155,
+    "animeMatch": [
+      155
+    ],
+    "tags": [
+      "ทักครับ",
+      "LIPTA",
+      "GUYGEEGEE",
+      "จีบ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/03/05/78/0305781f-f8ef-04a9-8eb6-3b9de0574051/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f7/45/b6/f745b644-d98a-e02d-bf0b-525d4f3d7589/mzaf_13381419881567407789.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/TUK%20KRUB%20(feat.%20GUYGEEGEE)%20Lipta"
+  },
+  {
+    "id": 349,
+    "title": "อยากมีแฟนแล้ว",
+    "artist": "LIPTA",
+    "mood": "love",
+    "lang": "th",
+    "bpm": "เร็ว (110 BPM)",
+    "animeId": 156,
+    "animeMatch": [
+      156
+    ],
+    "tags": [
+      "อยากมีแฟนแล้ว",
+      "LIPTA",
+      "โสด",
+      "น่ารัก"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/07/ba/1b/07ba1bf3-244a-0ad2-aeb0-7a365a16d8d4/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/a1/85/8f/a1858f85-de3f-039a-bb21-6f1c074693ee/mzaf_11868268795591292553.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%A1%E0%B8%B5%E0%B9%81%E0%B8%9F%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%20LIPTA"
+  },
+  {
+    "id": 350,
+    "title": "ไปอยู่ที่ไหนมา",
+    "artist": "LIPTA",
+    "mood": "love",
+    "lang": "th",
+    "bpm": "ปานกลาง (95 BPM)",
+    "animeId": 153,
+    "animeMatch": [
+      153
+    ],
+    "tags": [
+      "ไปอยู่ที่ไหนมา",
+      "LIPTA",
+      "เจอคนที่ใช่",
+      "สดใส"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/08/53/86/08538631-8724-07ce-01d1-d2ff44da686c/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/65/2c/9b/652c9be2-bf64-007d-c34d-9095e3e2ffc5/mzaf_7952602862305013001.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%9B%E0%B8%AD%E0%B8%A2%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%AB%E0%B8%99%E0%B8%A1%E0%B8%B2%20LIPTA"
+  },
+  {
+    "id": 351,
+    "title": "แฟนใหม่หน้าคุ้น (feat. MILLI)",
+    "artist": "Maiyarap",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ปานกลาง (90 BPM)",
+    "animeId": 192,
+    "animeMatch": [
+      192
+    ],
+    "tags": [
+      "แฟนใหม่หน้าคุ้น",
+      "MAIYARAP",
+      "MILLI",
+      "เจ็บแสบ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/96/33/6e/96336e1e-b1b4-9008-87e5-4fd3928cb619/3616554625872.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e3/9a/89/e39a89dc-3ff0-012c-5271-a1d6fe0b18d0/mzaf_7860819482062022940.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%9F%E0%B8%99%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%84%E0%B8%B8%E0%B9%89%E0%B8%99%20(feat.%20MILLI)%20Maiyarap"
+  },
+  {
+    "id": 352,
+    "title": "เก็บไว้ในใจไม่พอ",
+    "artist": "MAIYARAP",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ช้า (75 BPM)",
+    "animeId": 185,
+    "animeMatch": [
+      185
+    ],
+    "tags": [
+      "เก็บไว้ในใจไม่พอ",
+      "MAIYARAP",
+      "Three Man Down",
+      "ล้นใจ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/96/33/6e/96336e1e-b1b4-9008-87e5-4fd3928cb619/3616554625872.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ee/7a/47/ee7a47b4-ba80-a6c5-f574-18be049b1381/mzaf_5457147984436058917.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%9A%E0%B9%84%E0%B8%A7%E0%B9%89%E0%B9%83%E0%B8%99%E0%B9%83%E0%B8%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%9E%E0%B8%AD%20MAIYARAP"
+  },
+  {
+    "id": 353,
+    "title": "Pink Noise (Loopable Noise)",
+    "artist": "Slow Radio",
+    "mood": "love",
+    "lang": "th",
+    "bpm": "ปานกลาง (92 BPM)",
+    "animeId": 154,
+    "animeMatch": [
+      154
+    ],
+    "tags": [
+      "Pink",
+      "fellow fellow",
+      "โลกสีชมพู",
+      "ละมุน"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8b/a8/69/8ba869c4-8771-0a97-23c9-4a265c991573/White_Noise_Artwork_Tinnitus_2026.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5e/9c/65/5e9c65d0-b906-f933-b530-de9abf0046b0/mzaf_12826950011932518019.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%B4%E0%B8%87%E0%B8%84%E0%B9%8C%20(Pink)fellow%20fellow"
+  },
+  {
+    "id": 354,
+    "title": "ไม่เปลี่ยนเลย",
+    "artist": "fellow fellow",
+    "mood": "love",
+    "lang": "th",
+    "bpm": "ช้า (78 BPM)",
+    "animeId": 184,
+    "animeMatch": [
+      184
+    ],
+    "tags": [
+      "ไม่เปลี่ยนเลย",
+      "fellow fellow",
+      "เสมอต้นเสมอปลาย",
+      "รักแท้"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/6f/be/f9/6fbef931-6eee-0c8d-6d90-f17301061daf/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/08/c8/af08c87c-8f9d-cc49-739a-7830f1567c00/mzaf_5128047126536625887.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B9%80%E0%B8%A5%E0%B8%A2%20fellow%20fellow"
+  },
+  {
+    "id": 355,
+    "title": "สลักจิต (feat. Da Endorphine)",
+    "artist": "Pop Pongkool",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ช้า (68 BPM)",
+    "animeId": 160,
+    "animeMatch": [
+      160
+    ],
+    "tags": [
+      "สลักจิต",
+      "ป๊อบ",
+      "ดา",
+      "สลักในใจ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/31/84/4a/31844a10-9719-5ecb-b3ab-0e01d15860d7/888332904940.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/98/9c/7c/989c7c73-b7c0-95b8-6656-c7e55ed7cc2f/mzaf_2851323882635172201.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%88%E0%B8%B4%E0%B8%95%20(feat.%20Da%20Endorphine)%20Pop%20Pongkool"
+  },
+  {
+    "id": 356,
+    "title": "ลืมแทบไม่ไหว (feat. Maimhon)",
+    "artist": "SARAN",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ช้า (74 BPM)",
+    "animeId": 144,
+    "animeMatch": [
+      144
+    ],
+    "tags": [
+      "ลืมแทบไม่ไหว",
+      "SARAN",
+      "แร็ปดิ่ง",
+      "คิดถึง"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/b3/10/f7/b310f75e-2465-705c-7d55-0480dcce3b98/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ab/16/c1/ab16c133-7bdc-01e6-0e6c-f9ff0c8c9f41/mzaf_3282050872927801930.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B7%E0%B8%A1%E0%B9%81%E0%B8%97%E0%B8%9A%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%AB%E0%B8%A7%20(feat.%20Maimhon)%20SARAN"
+  },
+  {
+    "id": 357,
+    "title": "แต่งครับ (feat. F.HERO)",
+    "artist": "Lipta",
+    "mood": "hype",
+    "lang": "th",
+    "bpm": "เร็ว (130 BPM)",
+    "animeId": 139,
+    "animeMatch": [
+      139
+    ],
+    "tags": [
+      "ใจเกเร",
+      "F.HERO",
+      "ไวรัล",
+      "มันส์"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/46/8d/49/468d49ff-4f3e-c258-3ef0-60777a20806d/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2b/26/4b/2b264b7b-0c6d-6e30-805d-482bcb35f20c/mzaf_14199327013781287539.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%95%E0%B9%88%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B8%9A%20(feat.%20F.HERO)%20Lipta"
+  },
+  {
+    "id": 358,
+    "title": "Money Honey (feat. Minnie (G)I -DLE)",
+    "artist": "F.HERO & URBOYTJ",
+    "mood": "love",
+    "lang": "th",
+    "bpm": "เร็ว (105 BPM)",
+    "animeId": 155,
+    "animeMatch": [
+      155
+    ],
+    "tags": [
+      "Money Honey",
+      "F.HERO",
+      "URBOYTJ",
+      "MINNIE"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c0/4c/b7/c04cb75d-d98a-6880-eeb8-92457ce34fd8/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d5/8d/40/d58d4072-fc06-f85b-ed56-641e03a98533/mzaf_2706977307100101456.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Money%20Honey%20F.HERO%20URBOYTJ"
+  },
+  {
+    "id": 359,
+    "title": "กอดในใจ",
+    "artist": "Billkin",
+    "mood": "love",
+    "lang": "th",
+    "bpm": "ช้า (76 BPM)",
+    "animeId": 186,
+    "animeMatch": [
+      186
+    ],
+    "tags": [
+      "กอดในใจ",
+      "Billkin",
+      "Jaylerr",
+      "คิดถึง"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ad/51/7a/ad517afe-4b83-d424-3595-50ef03a2cb22/056870981048.png/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/ac/32/c5ac3266-f71a-9ea9-e111-ec0ab24128b9/mzaf_5420595864084864596.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%AD%E0%B8%94%E0%B9%83%E0%B8%99%E0%B9%83%E0%B8%88%20Billkin"
+  },
+  {
+    "id": 360,
+    "title": "กีดกัน",
+    "artist": "Billkin",
+    "mood": "sad",
+    "lang": "th",
+    "bpm": "ช้า (70 BPM)",
+    "animeId": 180,
+    "animeMatch": [
+      180
+    ],
+    "tags": [
+      "กีดกัน",
+      "Billkin",
+      "แปลรักฉันด้วยใจเธอ",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/5b/3e/99/5b3e9978-cc69-4ff9-bf1a-500e5ebf464e/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/2e/15/2d/2e152d27-d70a-a9a1-3fc6-74ee343fab74/mzaf_15413016550361418281.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%B5%E0%B8%94%E0%B8%81%E0%B8%B1%E0%B8%99%20Billkin"
+  },
+  {
+    "id": 361,
+    "title": "รู้งี้เป็นแฟนกันตั้งนานแล้ว",
+    "artist": "Billkin PP Krit",
+    "mood": "love",
+    "lang": "th",
+    "bpm": "ปานกลาง (94 BPM)",
+    "animeId": 154,
+    "animeMatch": [
+      154
+    ],
+    "tags": [
+      "รู้งี้เป็นแฟนกันตั้งนานแล้ว",
+      "Billkin",
+      "PP Krit",
+      "คลั่งรัก"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/68/58/fe/6858fedb-418f-4954-cc3e-7518fee27753/21UMGIM55046.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/19/9e/d3/199ed3d9-89c4-9083-2ea0-bf0cc74f2475/mzaf_5416351774261439958.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%87%E0%B8%B5%E0%B9%89%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B9%81%E0%B8%9F%E0%B8%99%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%20Billkin%20PP%20Krit"
+  },
+  {
+    "id": 362,
+    "title": "ลังเล",
+    "artist": "Samat PhayakArun",
+    "mood": "love",
+    "lang": "th",
+    "bpm": "ปานกลาง (96 BPM)",
+    "animeId": 156,
+    "animeMatch": [
+      156
+    ],
+    "tags": [
+      "ลังเล",
+      "PP Krit",
+      "เขิน",
+      "T-POP"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/46/e6/c6/46e6c640-72f6-39d9-1533-b59f538a26bc/888332982351.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0a/7d/e8/0a7de860-ed2f-a287-e069-0b7f67f8ad08/mzaf_17642865150197446962.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B9%80%E0%B8%A5%20PP%20Krit"
+  },
+  {
+    "id": 363,
+    "title": "FIRE BOY",
+    "artist": "PP KRIT",
+    "mood": "hype",
+    "lang": "th",
+    "bpm": "เร็ว (118 BPM)",
+    "animeId": 173,
+    "animeMatch": [
+      173
+    ],
+    "tags": [
+      "Fire Boy",
+      "PP Krit",
+      "เซ็กซี่",
+      "แดนซ์"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/d3/de/90/d3de9003-790c-95f1-5aba-42f800f830bc/22UM1IM28456.crop.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/FIRE%20BOY%20PP%20KRIT",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cb/a3/dd/cba3dd7e-e4a2-9ce7-38ab-51409640bb4e/mzaf_11843253337762537405.plus.aac.p.m4a"
+  },
+  {
+    "id": 364,
+    "title": "Grand Escape (feat. Toko Miura)",
+    "artist": "RADWIMPS",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (130 BPM)",
+    "animeId": 182,
+    "animeMatch": [
+      182
+    ],
+    "tags": [
+      "Grand Escape",
+      "Tenki no Ko",
+      "ดนตรีอลังการ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/ad/03/6b/ad036bed-1b09-562b-6026-384b37a9251d/0602508485701_cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0f/be/ca/0fbeca14-fb58-cb5b-28e5-fce72308e6c1/mzaf_10126865951010148236.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Grand%20Escape%20RADWIMPS%20Toko%20Miura"
+  },
+  {
+    "id": 365,
+    "title": "Crossing",
+    "artist": "Field LiSA",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (145 BPM)",
+    "animeId": 149,
+    "animeMatch": [
+      149
+    ],
+    "tags": [
+      "Crossing Field",
+      "LiSA",
+      "SAO OP1",
+      "ตำนาน"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/bc/b1/d0/bcb1d0bc-8736-61ac-cb16-51c623c2b0bc/jacket_SVWC07875B00Z_550.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7b/98/f8/7b98f82c-21e1-e719-88ed-a94812bf02c7/mzaf_4584398930797681924.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Crossing%20Field%20LiSA"
+  },
+  {
+    "id": 366,
+    "title": "Catch the Moment",
+    "artist": "LiSA",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (138 BPM)",
+    "animeId": 149,
+    "animeMatch": [
+      149
+    ],
+    "tags": [
+      "Catch the Moment",
+      "LiSA",
+      "SAO Ordinal Scale"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/11/05/ad/1105adba-1ede-4f31-f5cd-25f74c01b8ef/4547366312348.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3e/eb/b0/3eebb096-8539-e3b8-cf06-9d4237c84d67/mzaf_17083840174941586540.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Catch%20the%20Moment%20LiSA"
+  },
+  {
+    "id": 367,
+    "title": "Kaikai Kitan",
+    "artist": "EVE",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (142 BPM)",
+    "animeId": 129,
+    "animeMatch": [
+      129
+    ],
+    "tags": [
+      "Kaikai Kitan",
+      "Eve",
+      "Jujutsu Kaisen OP1",
+      "มันส์"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/cb/e7/4a/cbe74ac2-3dba-c282-5be6-5cc1c71ccf82/4988061912912.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/b9/99/b1b999d6-2533-85f0-7eda-3b51122f5fdc/mzaf_5590574589561084646.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Kaikai%20Kitan%20Eve"
+  },
+  {
+    "id": 368,
+    "title": "Where Our Blue Is",
+    "artist": "Tatsuya Kitani",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (150 BPM)",
+    "animeId": 129,
+    "animeMatch": [
+      129
+    ],
+    "tags": [
+      "Ao no Sumika",
+      "Tatsuya Kitani",
+      "โกโจ",
+      "เกะโท"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/65/74/62/65746244-f7e0-ee86-3020-3059dec75961/4547366633085.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/be/8d/8cbe8db3-d84c-8308-3253-a03202ce49a0/mzaf_5586218102364426317.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Ao%20no%20Sumika%20Tatsuya%20Kitani"
+  },
+  {
+    "id": 369,
+    "title": "Akari",
+    "artist": "Soushi Sakiyama",
+    "mood": "sad",
+    "lang": "jp",
+    "bpm": "ช้า (78 BPM)",
+    "animeId": 129,
+    "animeMatch": [
+      129
+    ],
+    "tags": [
+      "Akari",
+      "Soshi Sakiyama",
+      "JJK ED",
+      "ซึ้ง"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a9/c5/c3/a9c5c397-ce1e-d9ce-8226-566876afe78f/4547366628203.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/96/12/b6/9612b695-297d-0297-144f-bee0ba802b9c/mzaf_12450084874172922637.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Akari%20Soshi%20Sakiyama"
+  },
+  {
+    "id": 370,
+    "title": "Peace Sign",
+    "artist": "Kenshi Yonezu",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (145 BPM)",
+    "animeId": 136,
+    "animeMatch": [
+      136
+    ],
+    "tags": [
+      "Peace Sign",
+      "Kenshi Yonezu",
+      "MHA OP2",
+      "พลังใจ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/1b/7a/5e/1b7a5e77-b0c4-6e32-f3ee-c09c70f8378e/jacket_SRCL09571B00Z_550.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/55/c0/aa/55c0aaf3-d74d-9b62-4126-63d9c0345561/mzaf_6612008514607888435.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Peace%20Sign%20Kenshi%20Yonezu"
+  },
+  {
+    "id": 371,
+    "title": "CHIKYUUGI",
+    "artist": "kanon",
+    "mood": "chill",
+    "lang": "jp",
+    "bpm": "ช้า (72 BPM)",
+    "animeId": 187,
+    "animeMatch": [
+      187
+    ],
+    "tags": [
+      "Spinning Globe",
+      "Kenshi Yonezu",
+      "จิบลิ",
+      "อบอุ่น"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/02/3f/95/023f957e-fe3e-129d-10ff-a1f6040f8386/4511820-76105.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fa/f3/fd/faf3fd1d-5397-e5b3-f7ac-2e49a249679f/mzaf_2467322249630047899.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/CHIKYUUGI%20kanon"
+  },
+  {
+    "id": 372,
+    "title": "Kataomoi",
+    "artist": "Aimer",
+    "mood": "love",
+    "lang": "jp",
+    "bpm": "ช้า (74 BPM)",
+    "animeId": 153,
+    "animeMatch": [
+      153
+    ],
+    "tags": [
+      "Kataomoi",
+      "Aimer",
+      "แอบรัก",
+      "อคูสติก"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/46/4a/84/464a843d-14cc-e5e2-a9d6-763eb558e104/4547366270358.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/22/c6/fb/22c6fb53-4fa7-2735-243a-b566fcd54b93/mzaf_5886088748348953599.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Kataomoi%20Aimer"
+  },
+  {
+    "id": 373,
+    "title": "Akuma no Ko",
+    "artist": "Ai Higuchi",
+    "mood": "sad",
+    "lang": "jp",
+    "bpm": "ช้า (72 BPM)",
+    "animeId": 165,
+    "animeMatch": [
+      165
+    ],
+    "tags": [
+      "Akuma no Ko",
+      "Ai Higuchi",
+      "ลูกศัตรู",
+      "เจ็บปวด"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/da/34/aa/da34aa4e-963d-da81-973a-c4baf699c03d/PCSP_03907_A.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4c/89/a6/4c89a6f6-89d7-957c-bee0-d4ff622a56ee/mzaf_15664807686809922181.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Akuma%20no%20Ko%20Ai%20Higuchi"
+  },
+  {
+    "id": 374,
+    "title": "Blue Bird",
+    "artist": "Ikimonogakari",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (148 BPM)",
+    "animeId": 140,
+    "animeMatch": [
+      140
+    ],
+    "tags": [
+      "Blue Bird",
+      "นารูโตะ",
+      "นกสีฟ้า",
+      "ความหวัง"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/48/f2/f7/48f2f77a-1229-2f65-87da-5efa9dab85b1/886445760033.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/a5/c3/9aa5c3d6-b763-a852-e3f2-60f5270f196e/mzaf_13214537326205111491.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Blue%20Bird%20Ikimonogakari"
+  },
+  {
+    "id": 375,
+    "title": "Haruka Kanata",
+    "artist": "Asian Kung-Fu Generation",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (155 BPM)",
+    "animeId": 140,
+    "animeMatch": [
+      140
+    ],
+    "tags": [
+      "Haruka Kanata",
+      "AKG",
+      "Naruto OP2",
+      "ร็อค"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/48/96/3e/48963e5a-75d7-7a8b-132c-233f26ebd70d/jacket_KSCL01917B00Z_550.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/de/ff/43deffe5-2364-7450-f3cc-f4e88fa55a3c/mzaf_11108385612711234952.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Haruka%20Kanata%20ASIAN%20KUNG-FU%20GENERATION"
+  },
+  {
+    "id": 376,
+    "title": "After Dark",
+    "artist": "Asian Kung-Fu Generation",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (150 BPM)",
+    "animeId": 137,
+    "animeMatch": [
+      137
+    ],
+    "tags": [
+      "After Dark",
+      "Bleach OP7",
+      "เจ๋ง"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/48/96/3e/48963e5a-75d7-7a8b-132c-233f26ebd70d/jacket_KSCL01917B00Z_550.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ed/0d/6f/ed0d6ff0-d645-8698-b5b2-23feee3860c1/mzaf_10500902622289664662.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/After%20Dark%20ASIAN%20KUNG-FU%20GENERATION"
+  },
+  {
+    "id": 377,
+    "title": "Velonica",
+    "artist": "Aqua Timez",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (145 BPM)",
+    "animeId": 137,
+    "animeMatch": [
+      137
+    ],
+    "tags": [
+      "Velonica",
+      "Aqua Timez",
+      "Bleach OP9",
+      "แร็ปร็อค"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b8/c9/63/b8c963b1-4f29-8e76-0101-c6c1d6cc1425/4988010034696.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b3/50/87/b3508796-5f70-bf76-0eb0-7a7bb2966533/mzaf_17965121025001590398.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Velonica%20Aqua%20Timez"
+  },
+  {
+    "id": 378,
+    "title": "Alones",
+    "artist": "Aqua Timez",
+    "mood": "chill",
+    "lang": "jp",
+    "bpm": "เร็ว (130 BPM)",
+    "animeId": 137,
+    "animeMatch": [
+      137
+    ],
+    "tags": [
+      "Alones",
+      "Aqua Timez",
+      "Bleach OP6",
+      "ซึ้ง"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/7b/3e/d7/7b3ed7eb-f3ec-9c01-4218-61d084599b7b/886443575615.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/59/7d/2c/597d2c20-c873-ae19-daee-a1c2d834f936/mzaf_3726616331021906684.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Alones%20Aqua%20Timez"
+  },
+  {
+    "id": 379,
+    "title": "Black Catcher",
+    "artist": "ビッケブランカ",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (155 BPM)",
+    "animeId": 138,
+    "animeMatch": [
+      138
+    ],
+    "tags": [
+      "Black Catcher",
+      "Vickeblanka",
+      "Black Clover",
+      "เปียโนร็อค"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/69/1b/6f/691b6ff6-a5d9-c11f-0f83-411b6e020eff/ANTCD-A0000000841.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/72/1f/81/721f8150-9e02-bc81-ae38-004baf64bd2a/mzaf_13307220116577833618.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Black%20Catcher%20Vickeblanka"
+  },
+  {
+    "id": 380,
+    "title": "Cry Baby",
+    "artist": "OFFICIAL HIGE DANDISM",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (140 BPM)",
+    "animeId": 139,
+    "animeMatch": [
+      139
+    ],
+    "tags": [
+      "Cry Baby",
+      "Tokyo Revengers",
+      "ทาคิมิจิ",
+      "ร็อค"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e5/06/f2/e506f2a5-ebde-dd12-b347-7cf322d40644/PCSP_03508_A.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3b/fb/b9/3bfbb919-71d2-7358-a0c8-f39b6381a442/mzaf_8987359075267074414.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Cry%20Baby%20Official%20HIGE%20DANdism"
+  },
+  {
+    "id": 381,
+    "title": "Mixed Signals",
+    "artist": "Ruth B.",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (150 BPM)",
+    "animeId": 195,
+    "animeMatch": [
+      195
+    ],
+    "tags": [
+      "Mixed Nuts",
+      "Spy x Family",
+      "อาเนีย",
+      "แจ๊สร็อค"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/24/f7/82/24f782af-5aea-55e7-bf67-2f4e62664fe8/886446439341.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/89/f0/c1/89f0c1e6-e720-21af-8512-a32f2bc7a80a/mzaf_946015838213934721.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Mixed%20Nuts%20Official%20HIGE%20DANdism"
+  },
+  {
+    "id": 382,
+    "title": "7 Years",
+    "artist": "Lukas Graham",
+    "mood": "love",
+    "lang": "jp",
+    "bpm": "ปานกลาง (85 BPM)",
+    "animeId": 153,
+    "animeMatch": [
+      153
+    ],
+    "tags": [
+      "I Love",
+      "Hige Dandism",
+      "คลั่งรัก",
+      "ซึ้ง"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music69/v4/1f/57/08/1f57082e-ee7e-dcb7-a73e-ba1f3468211d/093624920496.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/15/71/af/1571af0b-19e7-00a2-452d-8c146b88bab3/mzaf_1010696746274902629.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/I%20Love...%20Official%20HIGE%20DANdism"
+  },
+  {
+    "id": 383,
+    "title": "Pretender",
+    "artist": "Official HIGE DANdism",
+    "mood": "sad",
+    "lang": "jp",
+    "bpm": "ปานกลาง (92 BPM)",
+    "animeId": 191,
+    "animeMatch": [
+      191
+    ],
+    "tags": [
+      "Pretender",
+      "Hige Dandism",
+      "แอบรักข้างเดียว"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/1f/b6/36/1fb6364f-77fc-7653-3750-811631832ee9/PCCA_04785.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/95/8d/6b/958d6b1a-b4f1-0c72-039b-ddb2fbf6489b/mzaf_170812766685279849.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Pretender%20Official%20HIGE%20DANdism"
+  },
+  {
+    "id": 384,
+    "title": "Subtitles",
+    "artist": "Official HIGE DANdism",
+    "mood": "love",
+    "lang": "jp",
+    "bpm": "ปานกลาง (88 BPM)",
+    "animeId": 184,
+    "animeMatch": [
+      184
+    ],
+    "tags": [
+      "Subtitle",
+      "Silent",
+      "หิมะ",
+      "อบอุ่น"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/53/0c/17/530c1752-6dce-d4bc-98d1-784141b1703e/PCSP_04565_A.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e1/e1/78/e1e1784d-ec42-bdc5-b40a-9eedda88668d/mzaf_1015486412126374844.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Subtitles%20Official%20HIGE%20DANdism"
+  },
+  {
+    "id": 385,
+    "title": "FLY HIGH!!",
+    "artist": "BURNOUT SYNDROMES",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (160 BPM)",
+    "animeId": 141,
+    "animeMatch": [
+      141
+    ],
+    "tags": [
+      "Fly High",
+      "Haikyu OP4",
+      "ฮารุอิจิ",
+      "กระโดด"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/23/c8/b9/23c8b96b-32d8-e3f6-6df1-bc275d46ab27/jacket_ESCL04734B00Z_550.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2b/63/06/2b630674-1776-769d-cdba-078df1ae8769/mzaf_18210322045745467564.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Fly%20High%20BURNOUT%20SYNDROMES"
+  },
+  {
+    "id": 386,
+    "title": "Hikariare",
+    "artist": "BURNOUT SYNDROMES",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (155 BPM)",
+    "animeId": 141,
+    "animeMatch": [
+      141
+    ],
+    "tags": [
+      "Hikariare",
+      "Haikyu OP5",
+      "แสงสว่าง",
+      "พลัง"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/e5/1c/e6/e51ce672-9edd-70c4-b912-27ac14d62329/jacket_ESCL04719B00Z_550.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/1b/d1/d71bd12d-c065-80bb-2165-0bc55997b5d6/mzaf_1782369243265149974.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Hikariare%20BURNOUT%20SYNDROMES"
+  },
+  {
+    "id": 387,
+    "title": "Imagination",
+    "artist": "SPYAIR",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (150 BPM)",
+    "animeId": 141,
+    "animeMatch": [
+      141
+    ],
+    "tags": [
+      "Imagination",
+      "SPYAIR",
+      "Haikyu OP1",
+      "ตำนาน"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/c3/87/11/c3871157-a2a6-c5c6-2f00-e96beebf1386/886444581486.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b9/25/ef/b925efce-0f71-71b8-e529-641fd8232f51/mzaf_17420806842691141247.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Imagination%20SPYAIR"
+  },
+  {
+    "id": 388,
+    "title": "Samurai",
+    "artist": "Heart SPYAIR",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (145 BPM)",
+    "animeId": 199,
+    "animeMatch": [
+      199
+    ],
+    "tags": [
+      "Samurai Heart",
+      "SPYAIR",
+      "Gintama",
+      "หัวใจซามูไร"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b6/51/58/b65158b9-4c51-f529-e416-c4b65580a320/4547366842838.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/b1/6a/73b16a3f-874c-91f5-3ca5-01e579472480/mzaf_7345399253431740454.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Samurai%20Heart%20SPYAIR"
+  },
+  {
+    "id": 389,
+    "title": "Colors",
+    "artist": "FLOW",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (142 BPM)",
+    "animeId": 164,
+    "animeMatch": [
+      164
+    ],
+    "tags": [
+      "Colors",
+      "FLOW",
+      "Code Geass OP1",
+      "จิบุงโวะ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/cd/ca/89/cdca8927-8181-fe15-976c-e4ece60f53ea/jacket_KSCL03035B00Z_550.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/09/e7/9a/09e79aee-4a40-6651-979e-034daab2d26f/mzaf_17363127222195917506.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Colors%20FLOW"
+  },
+  {
+    "id": 390,
+    "title": "Rain",
+    "artist": "SID",
+    "mood": "sad",
+    "lang": "jp",
+    "bpm": "ช้า (74 BPM)",
+    "animeId": 166,
+    "animeMatch": [
+      166
+    ],
+    "tags": [
+      "Rain",
+      "SID",
+      "FMA Brotherhood OP5",
+      "สายฝน"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/66/59/3a/66593ad9-1f8a-035c-f8c5-86769e93782e/jacket_KSCL01597B00Z_550.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ae/0a/60/ae0a6018-a1e3-746c-0a98-be5852d53c18/mzaf_1817107385756081440.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Rain%20SID"
+  },
+  {
+    "id": 391,
+    "title": "Usseewa",
+    "artist": "Ado",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (165 BPM)",
+    "animeId": 169,
+    "animeMatch": [
+      169
+    ],
+    "tags": [
+      "Usseewa",
+      "Ado",
+      "ด่ากราด",
+      "ระเบิดอารมณ์"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/cb/82/41/cb8241a3-5324-bbaa-8da2-33c5b29b1c7d/20UMGIM76771.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/8d/33/0c8d339b-db50-ce5a-8f20-bdbec6df3f6c/mzaf_10409401370931580642.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Usseewa%20Ado"
+  },
+  {
+    "id": 392,
+    "title": "Odo",
+    "artist": "Ado",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (130 BPM)",
+    "animeId": 132,
+    "animeMatch": [
+      132
+    ],
+    "tags": [
+      "Odo",
+      "Ado",
+      "EDM",
+      "เต้นยับ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/24/e9/c2/24e9c269-bee0-62e0-6de6-257db163ee5a/21UM1IM54074.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/02/8c/30028c8a-a125-5466-bcc6-27a83b1c0135/mzaf_16911571635366913039.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Odo%20Ado"
+  },
+  {
+    "id": 393,
+    "title": "New Genesis",
+    "artist": "Ado",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (140 BPM)",
+    "animeId": 140,
+    "animeMatch": [
+      140
+    ],
+    "tags": [
+      "New Genesis",
+      "Ado",
+      "One Piece Red",
+      "อูตะ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/42/a3/cc/42a3cc35-fdb7-2ae7-02f3-e5a90f32eb8e/22UMGIM74128.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/99/c7/ba99c7c7-e89f-925f-3a40-6b078f3dd182/mzaf_9096013844103066202.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/New%20Genesis%20Ado"
+  },
+  {
+    "id": 394,
+    "title": "Show",
+    "artist": "Ado",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (135 BPM)",
+    "animeId": 133,
+    "animeMatch": [
+      133
+    ],
+    "tags": [
+      "Show",
+      "Ado",
+      "ฮัลโลวีน",
+      "ไวรัล"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/80/e8/82/80e8826c-f877-9a74-0e7b-a142108feda0/23UMGIM92958.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cb/3c/81/cb3c81aa-7e19-61a3-5aaa-fc521b81d27a/mzaf_11772413152923766264.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Show%20Ado"
+  },
+  {
+    "id": 395,
+    "title": "NIGHT DANCER",
+    "artist": "IMASE",
+    "mood": "chill",
+    "lang": "jp",
+    "bpm": "ปานกลาง (100 BPM)",
+    "animeId": 167,
+    "animeMatch": [
+      167
+    ],
+    "tags": [
+      "NIGHT DANCER",
+      "imase",
+      "ไวรัล TikTok",
+      "กรู๊ฟ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/c2/49/87/c249873f-fa61-9d61-52aa-a7e1d780c8b3/22UMGIM81500.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/d4/05/b3d40599-79fe-8ae8-030b-c534dcbc2564/mzaf_13850105976352284754.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/NIGHT%20DANCER%20imase"
+  },
+  {
+    "id": 396,
+    "title": "Nagisa (From \"Clannad\")",
+    "artist": "PianoDeuss",
+    "mood": "chill",
+    "lang": "jp",
+    "bpm": "ปานกลาง (95 BPM)",
+    "animeId": 189,
+    "animeMatch": [
+      189
+    ],
+    "tags": [
+      "Nagisa",
+      "imase",
+      "เรโทรป็อป",
+      "ชายหาด"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/ac/51/59/ac51598a-ad30-6286-ed59-c2f9e4213d58/artwork.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ea/bc/35/eabc359d-258b-45bc-07e2-c5717ab382f2/mzaf_10400850224631037623.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Nagisa%20imase"
+  },
+  {
+    "id": 397,
+    "title": "Tabun",
+    "artist": "YOASOBI",
+    "mood": "chill",
+    "lang": "jp",
+    "bpm": "ช้า (80 BPM)",
+    "animeId": 190,
+    "animeMatch": [
+      190
+    ],
+    "tags": [
+      "Tabun",
+      "YOASOBI",
+      "ลอย",
+      "ห้องนอน"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/bf/1c/3b/bf1c3bdd-a128-2843-776a-35bf3c879d98/195081850498.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/90/2f/a7/902fa7eb-a6f2-2ea4-6fc8-ea609b5a69bd/mzaf_8772585538653242854.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Tabun%20YOASOBI"
+  },
+  {
+    "id": 398,
+    "title": "Gunjou (群青)",
+    "artist": "YOASOBI",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (135 BPM)",
+    "animeId": 187,
+    "animeMatch": [
+      187
+    ],
+    "tags": [
+      "Gunjou",
+      "YOASOBI",
+      "Blue Period",
+      "สีน้ำเงิน"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ae/7e/4a/ae7e4a28-fd46-9617-1066-fcbd124303d6/195497105656.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e0/8e/24/e08e24a4-b067-e60e-b2e6-e029d97bf1ea/mzaf_8308864448558061764.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Gunjou%20YOASOBI"
+  },
+  {
+    "id": 399,
+    "title": "Racing Into the Night (Yoru ni Kakeru)",
+    "artist": "Shayne Orok",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (130 BPM)",
+    "animeId": 131,
+    "animeMatch": [
+      131
+    ],
+    "tags": [
+      "Yoru ni Kakeru",
+      "YOASOBI",
+      "วิ่งสู่ราตรี",
+      "เพลงชาติ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/4c/53/dc/4c53dc1c-deff-2a49-0c68-636a9917a291/7ffb0b7b-cfb1-4b6f-8e63-5f42d01bd421.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fe/f8/f7/fef8f703-72dc-18d0-a731-62999dec1c76/mzaf_11227056274961701165.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Racing%20Into%20The%20Night%20YOASOBI"
+  },
+  {
+    "id": 400,
+    "title": "Monster",
+    "artist": "YOASOBI",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (140 BPM)",
+    "animeId": 134,
+    "animeMatch": [
+      134
+    ],
+    "tags": [
+      "Kaibutsu",
+      "YOASOBI",
+      "Beastars",
+      "อสูร"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9e/ab/2c/9eab2c24-8289-1bd7-548d-e6b871fcf169/195497732630.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ed/35/8f/ed358f20-baf2-7b27-d1e5-eeb9fa4f4498/mzaf_2838285223197932486.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Monster%20YOASOBI"
+  },
+  {
+    "id": 401,
+    "title": "Shukufuku",
+    "artist": "YOASOBI",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (138 BPM)",
+    "animeId": 168,
+    "animeMatch": [
+      168
+    ],
+    "tags": [
+      "The Blessing",
+      "YOASOBI",
+      "Gundam Witch",
+      "คำอวยพร"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/cc/d5/b3/ccd5b3db-b344-ba47-341c-6d4a9c8f3a88/4571416824093.png/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5f/3a/3b/5f3a3bc8-0d8a-db17-c1ff-7d881011f716/mzaf_1668049474924266874.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Shukufuku%20YOASOBI"
+  },
+  {
+    "id": 402,
+    "title": "Tokyo",
+    "artist": "Flash Vaundy",
+    "mood": "chill",
+    "lang": "jp",
+    "bpm": "ปานกลาง (92 BPM)",
+    "animeId": 167,
+    "animeMatch": [
+      167
+    ],
+    "tags": [
+      "Tokyo Flash",
+      "Vaundy",
+      "ซิตี้ป็อป",
+      "โตเกียว"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6c/96/f8/6c96f8bc-6f70-175d-07eb-fe6f49cbef5d/4547366525175.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/11/71/d6/1171d6ad-3c96-e027-2af6-58028426588c/mzaf_15137631797407745471.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Tokyo%20Flash%20Vaundy"
+  },
+  {
+    "id": 403,
+    "title": "Chainsaw",
+    "artist": "Blood Vaundy",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (150 BPM)",
+    "animeId": 125,
+    "animeMatch": [
+      125
+    ],
+    "tags": [
+      "Chainsaw Blood",
+      "Vaundy",
+      "Chainsaw Man ED1"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/c9/de/16/c9de1632-3d12-19c3-2699-22090b4bfcc1/4547366588620.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e1/13/8b/e1138b12-ad1b-45e6-3545-8c4f8765ce8b/mzaf_16193442776413626505.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Chainsaw%20Blood%20Vaundy"
+  },
+  {
+    "id": 404,
+    "title": "Dramaturgy (ドラマツルギー)",
+    "artist": "Eve",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (145 BPM)",
+    "animeId": 142,
+    "animeMatch": [
+      142
+    ],
+    "tags": [
+      "Dramaturgy",
+      "Eve",
+      "อินดี้ร็อค",
+      "หน้ากาก"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/95/4f/a7/954fa762-540c-afd0-50b1-2fc52d920cb1/4988004145858_cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5f/a9/6d/5fa96ddc-feb6-9a06-5ae7-f6ba91d4fb97/mzaf_7282977440251524074.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Dramaturgy%20Eve"
+  },
+  {
+    "id": 405,
+    "title": "As",
+    "artist": "You Like It Eve",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (138 BPM)",
+    "animeId": 143,
+    "animeMatch": [
+      143
+    ],
+    "tags": [
+      "Okinimesumama",
+      "Eve",
+      "จังหวะสนุก"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/95/4f/a7/954fa762-540c-afd0-50b1-2fc52d920cb1/4988004145858_cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/71/80/3c/71803c37-bdc8-27db-5d54-972bcd16da35/mzaf_12059103177066323948.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/As%20You%20Like%20It%20Eve"
+  },
+  {
+    "id": 406,
+    "title": "Inochi",
+    "artist": "no Tabekata Eve",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (150 BPM)",
+    "animeId": 134,
+    "animeMatch": [
+      134
+    ],
+    "tags": [
+      "How to Eat Life",
+      "Eve",
+      "ดาร์ก"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/cd/6c/55/cd6c55b7-f18d-a251-e4c8-295cef9ce351/4988061913001.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/b9/99/b1b999d6-2533-85f0-7eda-3b51122f5fdc/mzaf_5590574589561084646.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Inochi%20no%20Tabekata%20Eve"
+  },
+  {
+    "id": 407,
+    "title": "Anoko secret",
+    "artist": "EVE",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (140 BPM)",
+    "animeId": 157,
+    "animeMatch": [
+      157
+    ],
+    "tags": [
+      "Anoko Secret",
+      "Eve",
+      "ความลับ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/2a/84/07/2a8407ff-01ef-b4df-a29b-c63e192aa51a/195497876488.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c0/8d/e7/c08de75e-4207-987c-8745-e95c96ad5b80/mzaf_9522592722553102254.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Anoko%20Secret%20Eve"
+  },
+  {
+    "id": 408,
+    "title": "Guitar,",
+    "artist": "Loneliness and Blue Planet Kessoku Band",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (160 BPM)",
+    "animeId": 127,
+    "animeMatch": [
+      127
+    ],
+    "tags": [
+      "Kessoku Band",
+      "Bocchi the Rock",
+      "กีตาร์",
+      "โดดเดี่ยว"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/51/3b/00/513b003d-5583-4533-168b-f213c245b53f/4534530141828.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/5c/99/d95c9928-7a84-80d8-f666-9e139bb55618/mzaf_3451712062174813596.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Guitar%2C%20Loneliness%20and%20Blue%20Planet%20Kessoku%20Band"
+  },
+  {
+    "id": 409,
+    "title": "That Should Be Me",
+    "artist": "Justin Bieber",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (155 BPM)",
+    "animeId": 127,
+    "animeMatch": [
+      127
+    ],
+    "tags": [
+      "Ano Bando",
+      "Bocchi the Rock",
+      "ร็อคเท่"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/b9/0a/b4/b90ab45a-07b1-0bcc-331c-c496a21d07e4/10UMGIM01134.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/ec/53/8cec5388-2a61-1ab8-192d-520c59e05580/mzaf_15063474702584342169.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/That%20Band%20Kessoku%20Band"
+  },
+  {
+    "id": 410,
+    "title": "Seishun",
+    "artist": "Complex Kessoku Band",
+    "mood": "hype",
+    "lang": "jp",
+    "bpm": "เร็ว (165 BPM)",
+    "animeId": 127,
+    "animeMatch": [
+      127
+    ],
+    "tags": [
+      "Seishun Complex",
+      "Bocchi OP",
+      "วัยรุ่น"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/10/38/b1/1038b1be-83d4-c006-b612-e6156498da35/4534530140661.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/10/3d/8a/103d8aa8-a696-60c7-55f8-de6ec4a478e5/mzaf_2506909169539581190.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Seishun%20Complex%20Kessoku%20Band"
+  },
+  {
+    "id": 411,
+    "title": "Karakara",
+    "artist": "Kessoku Band",
+    "mood": "chill",
+    "lang": "jp",
+    "bpm": "ปานกลาง (100 BPM)",
+    "animeId": 127,
+    "animeMatch": [
+      127
+    ],
+    "tags": [
+      "Karakara",
+      "Bocchi ED2",
+      "อินดี้"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/51/3b/00/513b003d-5583-4533-168b-f213c245b53f/4534530141828.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/08/e5/95/08e5955b-5e35-810a-af21-c5ea627b9e62/mzaf_14523279170137656585.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Karakara%20Kessoku%20Band"
+  },
+  {
+    "id": 412,
+    "title": "If I could be a constellation",
+    "artist": "kessoku band",
+    "mood": "love",
+    "lang": "jp",
+    "bpm": "ปานกลาง (110 BPM)",
+    "animeId": 127,
+    "animeMatch": [
+      127
+    ],
+    "tags": [
+      "Constellation",
+      "Bocchi",
+      "กลุ่มดาว",
+      "ซึ้ง"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/51/3b/00/513b003d-5583-4533-168b-f213c245b53f/4534530141828.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6c/1d/2e/6c1d2e47-1a3d-ac8a-19d2-a5ab01a4fecf/mzaf_4077582503102929951.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/If%20I%20could%20be%20a%20constellation%20Kessoku%20Band"
+  },
+  {
+    "id": 413,
+    "title": "BIRDS OF A FEATHER",
+    "artist": "Billie Eilish",
+    "mood": "love",
+    "lang": "en",
+    "bpm": "ปานกลาง (105 BPM)",
+    "animeId": 153,
+    "animeMatch": [
+      153
+    ],
+    "tags": [
+      "Birds of a Feather",
+      "Billie Eilish",
+      "ฮิตทั่วโลก"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/9f/69/929f69f1-9977-3a44-d674-11f70c852d1b/24UMGIM36186.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/31/d3/3431d34e-847f-5d66-df83-0bce688d997e/mzaf_18106743962423782018.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Birds%20of%20a%20Feather%20Billie%20Eilish"
+  },
+  {
+    "id": 414,
+    "title": "Taste",
+    "artist": "Sabrina Carpenter",
+    "mood": "hype",
+    "lang": "en",
+    "bpm": "เร็ว (112 BPM)",
+    "animeId": 155,
+    "animeMatch": [
+      155
+    ],
+    "tags": [
+      "Taste",
+      "Sabrina Carpenter",
+      "ป็อป"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f6/15/d0/f615d0ab-e0c4-575d-907e-1cc084642357/24UMGIM61704.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/57/a6/2657a620-c596-e0e4-efa2-e814f3572d1c/mzaf_5475540510703120797.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Taste%20Sabrina%20Carpenter"
+  },
+  {
+    "id": 415,
+    "title": "Please Please Please",
+    "artist": "Sabrina Carpenter & Dolly Parton",
+    "mood": "love",
+    "lang": "en",
+    "bpm": "ปานกลาง (98 BPM)",
+    "animeId": 156,
+    "animeMatch": [
+      156
+    ],
+    "tags": [
+      "Please Please Please",
+      "Sabrina Carpenter",
+      "ร้องขอ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c9/a3/e9/c9a3e987-3952-a6ac-7975-680f2033e660/25UMGIM10586.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/86/0b/54860b8b-0c3b-b16b-5b19-b00424af8b9b/mzaf_1272478887800630516.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Please%20Please%20Please%20Sabrina%20Carpenter"
+  },
+  {
+    "id": 416,
+    "title": "From The Start",
+    "artist": "Laufey",
+    "mood": "love",
+    "lang": "en",
+    "bpm": "ปานกลาง (85 BPM)",
+    "animeId": 154,
+    "animeMatch": [
+      154
+    ],
+    "tags": [
+      "From The Start",
+      "Laufey",
+      "บอสซาโนวา",
+      "แอบรัก"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/8b/8b/20/8b8b2083-c8a3-a1a6-1f9e-a4da5bf45d5d/197188679637.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b0/8c/e1/b08ce131-3860-fdbd-43a9-dc4bf1ec78f8/mzaf_18185086236351287888.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/From%20The%20Start%20Laufey"
+  },
+  {
+    "id": 417,
+    "title": "Promise",
+    "artist": "Laufey",
+    "mood": "sad",
+    "lang": "en",
+    "bpm": "ช้า (70 BPM)",
+    "animeId": 159,
+    "animeMatch": [
+      159
+    ],
+    "tags": [
+      "Promise",
+      "Laufey",
+      "เปียโน",
+      "สัญญา"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/27/19/89/271989d3-9d33-d962-2a0a-d1abdf126f9d/mzi.ogvyuvet.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4d/f1/62/4df16272-e2f3-398d-b27f-81211315d6ae/mzaf_16626351907053427853.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Promise%20Laufey"
+  },
+  {
+    "id": 418,
+    "title": "golden hour",
+    "artist": "JVKE",
+    "mood": "love",
+    "lang": "en",
+    "bpm": "ปานกลาง (94 BPM)",
+    "animeId": 181,
+    "animeMatch": [
+      181
+    ],
+    "tags": [
+      "Golden Hour",
+      "JVKE",
+      "แสงทอง",
+      "เปียโน"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8d/1a/7b/8d1a7b44-316f-7c7f-4380-935673fb697a/5056167175650.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/02/8c/30028c8a-a125-5466-bcc6-27a83b1c0135/mzaf_16911571635366913039.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Golden%20Hour%20JVKE"
+  },
+  {
+    "id": 419,
+    "title": "this is what falling in love feels like",
+    "artist": "JVKE",
+    "mood": "love",
+    "lang": "en",
+    "bpm": "ปานกลาง (100 BPM)",
+    "animeId": 153,
+    "animeMatch": [
+      153
+    ],
+    "tags": [
+      "Falling in Love",
+      "JVKE",
+      "ตกหลุมรัก"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0f/6b/0d/0f6b0d9e-686c-9cca-ae0b-442f649224ac/5056167166535_1.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/23/28/c7/2328c7a9-24fe-7bab-8024-c8c67828164b/mzaf_7087381778902583194.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/This%20Is%20What%20Falling%20in%20Love%20Feels%20Like%20JVKE"
+  },
+  {
+    "id": 420,
+    "title": "Until I Found You",
+    "artist": "Stephen Sanchez",
+    "mood": "love",
+    "lang": "en",
+    "bpm": "ช้า (74 BPM)",
+    "animeId": 184,
+    "animeMatch": [
+      184
+    ],
+    "tags": [
+      "Until I Found You",
+      "Stephen Sanchez",
+      "ย้อนยุค",
+      "รักนิรันดร์"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/64/d2/c5/64d2c511-67f4-ae09-5153-d39c3da413a3/21UMGIM75467.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/82/c1/5382c1d4-ddba-aa2b-90df-57268895fac9/mzaf_8926201202931541051.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Until%20I%20Found%20You%20Stephen%20Sanchez"
+  },
+  {
+    "id": 421,
+    "title": "Always",
+    "artist": "Daniel Caesar",
+    "mood": "love",
+    "lang": "en",
+    "bpm": "ช้า (72 BPM)",
+    "animeId": 185,
+    "animeMatch": [
+      185
+    ],
+    "tags": [
+      "Always",
+      "Daniel Caesar",
+      "อาร์แอนด์บี",
+      "อบอุ่น"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/91/30/85/9130858b-bc2c-ec38-cf9f-864befea4374/23UMGIM38673.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/29/94/e4/2994e49b-8613-f5bb-8533-7cf13de92630/mzaf_12958362463531140094.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Always%20Daniel%20Caesar"
+  },
+  {
+    "id": 422,
+    "title": "Best Part (feat. H.E.R.)",
+    "artist": "Daniel Caesar",
+    "mood": "love",
+    "lang": "en",
+    "bpm": "ช้า (75 BPM)",
+    "animeId": 154,
+    "animeMatch": [
+      154
+    ],
+    "tags": [
+      "Best Part",
+      "Daniel Caesar",
+      "H.E.R.",
+      "ส่วนที่ดีที่สุด"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b6/cd/1a/b6cd1a5b-83af-a1e2-0ad7-ea530fcf2522/859722261219.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/52/e4/4f/52e44f76-2397-114f-e749-ea7b9cd18a3c/mzaf_7907771188147988307.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Best%20Part%20Daniel%20Caesar%20H.E.R."
+  },
+  {
+    "id": 423,
+    "title": "Japanese",
+    "artist": "Denim Daniel Caesar",
+    "mood": "chill",
+    "lang": "en",
+    "bpm": "ช้า (70 BPM)",
+    "animeId": 167,
+    "animeMatch": [
+      167
+    ],
+    "tags": [
+      "Japanese Denim",
+      "Daniel Caesar",
+      "โซล",
+      "ละมุน"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/24/4f/ec/244fec58-ea20-e0b0-eea6-e06c6aff948b/23UMGIM14483.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2d/2b/61/2d2b6102-157b-dd97-f5a9-1e6014b40dfc/mzaf_14408745609786889918.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Japanese%20Denim%20Daniel%20Caesar"
+  },
+  {
+    "id": 424,
+    "title": "Get You (Live)",
+    "artist": "Daniel Caesar",
+    "mood": "love",
+    "lang": "en",
+    "bpm": "ช้า (74 BPM)",
+    "animeId": 155,
+    "animeMatch": [
+      155
+    ],
+    "tags": [
+      "Get You",
+      "Daniel Caesar",
+      "โรแมนติก"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/63/92/46/639246a5-9e39-69cf-c2f4-543621d76cfe/859722598605.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/98/10/91/981091a4-bb55-dc1b-6750-881210b1ea4e/mzaf_6781837645961347219.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Get%20You%20Daniel%20Caesar%20Kali%20Uchis"
+  },
+  {
+    "id": 425,
+    "title": "Romantic",
+    "artist": "Homicide d4vd",
+    "mood": "sad",
+    "lang": "en",
+    "bpm": "ช้า (68 BPM)",
+    "animeId": 131,
+    "animeMatch": [
+      131
+    ],
+    "tags": [
+      "Romantic Homicide",
+      "d4vd",
+      "อกหักดิ่ง",
+      "ในหัวใจ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/4e/0c/82/4e0c82e8-7970-25f5-bfd6-6f0faec83dcb/22UMGIM94151.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/f5/40/a1f5405d-408f-d84e-1775-b87b30174067/mzaf_5384372198207712281.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Romantic%20Homicide%20d4vd"
+  },
+  {
+    "id": 426,
+    "title": "Here With Me",
+    "artist": "d4vd",
+    "mood": "love",
+    "lang": "en",
+    "bpm": "ช้า (72 BPM)",
+    "animeId": 181,
+    "animeMatch": [
+      181
+    ],
+    "tags": [
+      "Here With Me",
+      "d4vd",
+      "อบอุ่น",
+      "เคียงข้าง"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d6/83/1a/d6831a94-4e8f-5b23-df44-a313eb358257/23UMGIM33457.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bf/a3/6d/bfa36d9c-8e41-e05f-8a2b-970c9b21c695/mzaf_9987737564511061938.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Here%20With%20Me%20d4vd"
+  },
+  {
+    "id": 427,
+    "title": "Glimpse",
+    "artist": "of Us Joji",
+    "mood": "sad",
+    "lang": "en",
+    "bpm": "ช้า (70 BPM)",
+    "animeId": 183,
+    "animeMatch": [
+      183
+    ],
+    "tags": [
+      "Glimpse of Us",
+      "Joji",
+      "มองเห็นเธอในคนใหม่",
+      "เปียโน"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d0/2a/43/d02a433a-3ab8-9a94-b07d-1dc599b64966/93624864387.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/53/c2/0c53c240-300a-5ddf-fc86-3a54e1b73a78/mzaf_13555682862214742934.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Glimpse%20of%20Us%20Joji"
+  },
+  {
+    "id": 428,
+    "title": "SLOW DANCING IN THE DARK (Loud Luxury Remix)",
+    "artist": "Joji",
+    "mood": "sad",
+    "lang": "en",
+    "bpm": "ช้า (75 BPM)",
+    "animeId": 131,
+    "animeMatch": [
+      131
+    ],
+    "tags": [
+      "Slow Dancing",
+      "Joji",
+      "เต้นช้าๆ ในความมืด"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/af/ee/e2/afeee208-5816-b700-f703-d4f46780c504/190296919015.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/11/b8/ff/11b8ff74-aaa5-41c6-91c3-7f19ebc374c4/mzaf_4419658226336232185.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Slow%20Dancing%20in%20the%20Dark%20Joji"
+  },
+  {
+    "id": 429,
+    "title": "Die For You",
+    "artist": "The Weeknd",
+    "mood": "love",
+    "lang": "en",
+    "bpm": "ปานกลาง (90 BPM)",
+    "animeId": 148,
+    "animeMatch": [
+      148
+    ],
+    "tags": [
+      "Die For You",
+      "The Weeknd",
+      "ยอมตายเพื่อเธอ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e2/61/f8/e261f8c1-73db-9a7a-c89e-1068f19970e0/16UMGIM67863.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/50/50/1a/50501a86-bd74-e90d-8a56-68c9b5e6e7d6/mzaf_4588197682084244913.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Die%20For%20You%20The%20Weeknd"
+  },
+  {
+    "id": 430,
+    "title": "Save Your Tears",
+    "artist": "The Weeknd",
+    "mood": "sad",
+    "lang": "en",
+    "bpm": "เร็ว (118 BPM)",
+    "animeId": 191,
+    "animeMatch": [
+      191
+    ],
+    "tags": [
+      "Save Your Tears",
+      "The Weeknd",
+      "ซินธ์เวฟ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/83/3a/f7/833af71b-2e0c-3303-24f5-8f5c546c073b/20UMGIM21167.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8b/38/17/8b3817e4-c0e9-7e02-2654-3e2ecee93603/mzaf_18415642125637540903.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Save%20Your%20Tears%20The%20Weeknd"
+  },
+  {
+    "id": 431,
+    "title": "Blinding",
+    "artist": "Lights The Weeknd",
+    "mood": "hype",
+    "lang": "en",
+    "bpm": "เร็ว (170 BPM)",
+    "animeId": 131,
+    "animeMatch": [
+      131
+    ],
+    "tags": [
+      "Blinding Lights",
+      "The Weeknd",
+      "ซินธ์ป็อป",
+      "ความเร็ว"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/61/e7/3f/61e73f94-018d-5f50-50ec-8521952bc72e/20UM1IM11629.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/12/73/ca/1273ca46-233a-5331-189b-25ac1d656533/mzaf_976341070785891411.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Blinding%20Lights%20The%20Weeknd"
+  },
+  {
+    "id": 432,
+    "title": "Watermelon",
+    "artist": "Sugar Harry Styles",
+    "mood": "chill",
+    "lang": "en",
+    "bpm": "ปานกลาง (95 BPM)",
+    "animeId": 196,
+    "animeMatch": [
+      196
+    ],
+    "tags": [
+      "Watermelon Sugar",
+      "Harry Styles",
+      "สดชื่น"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2b/c4/c9/2bc4c9d4-3bc6-ab13-3f71-df0b89b173de/886448022213.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/25/54/81/255481c0-1ef2-c1bc-f3b3-ea2b1419c1f1/mzaf_5289557126888202047.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Watermelon%20Sugar%20Harry%20Styles"
+  },
+  {
+    "id": 433,
+    "title": "Falling",
+    "artist": "Harry Styles",
+    "mood": "sad",
+    "lang": "en",
+    "bpm": "ช้า (70 BPM)",
+    "animeId": 185,
+    "animeMatch": [
+      185
+    ],
+    "tags": [
+      "Falling",
+      "Harry Styles",
+      "เปียโน",
+      "จมดิ่ง"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2b/c4/c9/2bc4c9d4-3bc6-ab13-3f71-df0b89b173de/886448022213.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c9/0f/88/c90f88a8-df5d-96bf-fd25-43d554a2e897/mzaf_6453555596864780419.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Falling%20Harry%20Styles"
+  },
+  {
+    "id": 434,
+    "title": "Cruel Summer",
+    "artist": "Taylor Swift",
+    "mood": "hype",
+    "lang": "en",
+    "bpm": "เร็ว (170 BPM)",
+    "animeId": 132,
+    "animeMatch": [
+      132
+    ],
+    "tags": [
+      "Cruel Summer",
+      "Taylor Swift",
+      "ฤดูร้อน",
+      "สะใจ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/49/3d/ab/493dab54-f920-9043-6181-80993b8116c9/19UMGIM53909.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/44/af/81/44af8168-9609-1b85-5048-ada08dceacf3/mzaf_1341699644335558812.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Cruel%20Summer%20Taylor%20Swift"
+  },
+  {
+    "id": 435,
+    "title": "Flowers",
+    "artist": "Miley Cyrus",
+    "mood": "hype",
+    "lang": "en",
+    "bpm": "เร็ว (118 BPM)",
+    "animeId": 197,
+    "animeMatch": [
+      197
+    ],
+    "tags": [
+      "Flowers",
+      "Miley Cyrus",
+      "รักตัวเอง",
+      "สตรอง"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/8c/67/ff/8c67ff91-31c3-3fef-1884-ce3ec89f3af4/196589946874.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/68/9e/f7/689ef7fe-14fe-a846-c87f-7d3b2d6344b1/mzaf_4167137058064023087.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Flowers%20Miley%20Cyrus"
+  },
+  {
+    "id": 436,
+    "title": "Peaches",
+    "artist": "Justin Bieber",
+    "mood": "chill",
+    "lang": "en",
+    "bpm": "ปานกลาง (90 BPM)",
+    "animeId": 195,
+    "animeMatch": [
+      195
+    ],
+    "tags": [
+      "Peaches",
+      "Justin Bieber",
+      "ชิลล์ริมสระ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e0/92/da/e092da2d-9f6d-11dc-7843-2021e95a2b61/21UMGIM17518.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/6d/b1/c96db138-df15-d3d1-ef9d-98ef9d350960/mzaf_9411021956242812289.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Peaches%20Justin%20Bieber"
+  },
+  {
+    "id": 437,
+    "title": "Levitating",
+    "artist": "Dua Lipa",
+    "mood": "hype",
+    "lang": "en",
+    "bpm": "เร็ว (103 BPM)",
+    "animeId": 133,
+    "animeMatch": [
+      133
+    ],
+    "tags": [
+      "Levitating",
+      "Dua Lipa",
+      "ดิสโก้ป็อป",
+      "ลอย"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/6c/11/d6/6c11d681-aa3a-d59e-4c2e-f77e181026ab/190295092665.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/59/dc/4d/59dc4dda-93ff-8f1c-c536-f005f6ea6af5/mzaf_3066686759813252385.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Levitating%20Dua%20Lipa"
+  },
+  {
+    "id": 438,
+    "title": "Don't",
+    "artist": "Bryson Tiller",
+    "mood": "hype",
+    "lang": "en",
+    "bpm": "เร็ว (124 BPM)",
+    "animeId": 169,
+    "animeMatch": [
+      169
+    ],
+    "tags": [
+      "Don't Start Now",
+      "Dua Lipa",
+      "ก้าวข้าม",
+      "เต้น"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/b6/80/3c/b6803c18-1285-3c66-ec98-5e423e7268f8/886445447828.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/12/f8/63/12f86376-9b16-4206-fe19-bc74c6d77113/mzaf_15220743029863562895.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Don't%20Start%20Now%20Dua%20Lipa"
+  },
+  {
+    "id": 439,
+    "title": "Dance The Night",
+    "artist": "Dua Lipa",
+    "mood": "hype",
+    "lang": "en",
+    "bpm": "เร็ว (110 BPM)",
+    "animeId": 196,
+    "animeMatch": [
+      196
+    ],
+    "tags": [
+      "Dance The Night",
+      "Barbie",
+      "แดนซ์สุดเหวี่ยง"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/c0/54/97/c05497aa-c19f-bf4f-de29-71edf30fbefb/075679688767.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9d/9f/56/9d9f566f-abf6-5f10-bcdb-09e14dcace42/mzaf_10277018989080903908.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Dance%20The%20Night%20Dua%20Lipa"
+  },
+  {
+    "id": 440,
+    "title": "Good 4 U (EDM Remix) [142 Bpm]",
+    "artist": "Olivia Rodrigues",
+    "mood": "hype",
+    "lang": "en",
+    "bpm": "เร็ว (166 BPM)",
+    "animeId": 169,
+    "animeMatch": [
+      169
+    ],
+    "tags": [
+      "Good 4 U",
+      "Olivia Rodrigo",
+      "ป็อปร็อค",
+      "สะใจ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ae/a7/fe/aea7fe21-19ab-9568-8576-5b95a9df3a5b/Workout_Music_Summer_2021_-_The_Ultimate_Treino_Cardio_Fitness_Gym_Music_Playlist.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/db/36/26/db362607-1a96-0b60-b9bf-6d94a71f10c8/mzaf_579761103735086595.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Good%204%20U%20Olivia%20Rodrigo"
+  },
+  {
+    "id": 441,
+    "title": "Drivers",
+    "artist": "License Olivia Rodrigo",
+    "mood": "sad",
+    "lang": "en",
+    "bpm": "ช้า (72 BPM)",
+    "animeId": 183,
+    "animeMatch": [
+      183
+    ],
+    "tags": [
+      "Drivers License",
+      "Olivia Rodrigo",
+      "ขับรถร้องไห้"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/02/ed/8c/02ed8cab-c089-2fdd-7ce6-ab334a9a4e19/21UMGIM26093.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/36/62/61/366261be-0996-d73d-de6f-03417867c800/mzaf_8201528327761821135.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Drivers%20License%20Olivia%20Rodrigo"
+  },
+  {
+    "id": 442,
+    "title": "deja vu",
+    "artist": "Olivia Rodrigo",
+    "mood": "sad",
+    "lang": "en",
+    "bpm": "ปานกลาง (90 BPM)",
+    "animeId": 191,
+    "animeMatch": [
+      191
+    ],
+    "tags": [
+      "Deja Vu",
+      "Olivia Rodrigo",
+      "เดจาวู",
+      "เจ็บปวด"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/02/ed/8c/02ed8cab-c089-2fdd-7ce6-ab334a9a4e19/21UMGIM26093.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/5a/c2/835ac220-f31a-006f-b6a9-2acd29eb60d0/mzaf_13621843495437485054.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Deja%20Vu%20Olivia%20Rodrigo"
+  },
+  {
+    "id": 443,
+    "title": "Heat Waves",
+    "artist": "Glass Animals",
+    "mood": "chill",
+    "lang": "en",
+    "bpm": "ปานกลาง (81 BPM)",
+    "animeId": 167,
+    "animeMatch": [
+      167
+    ],
+    "tags": [
+      "Heat Waves",
+      "Glass Animals",
+      "กลางคืน",
+      "คิดถึง"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/da/8b/77/da8b7731-6f4f-eacf-5e74-8b23389eefa1/20UMGIM03371.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/4c/b9/a34cb911-40fc-5f0c-e862-14bd171a77aa/mzaf_384792072030970151.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Heat%20Waves%20Glass%20Animals"
+  },
+  {
+    "id": 444,
+    "title": "Another",
+    "artist": "Love Tom Odell",
+    "mood": "sad",
+    "lang": "en",
+    "bpm": "ช้า (62 BPM)",
+    "animeId": 144,
+    "animeMatch": [
+      144
+    ],
+    "tags": [
+      "Another Love",
+      "Tom Odell",
+      "เหนื่อยล้า",
+      "เปียโนทรงพลัง"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/20/ac/68/20ac6879-1846-84df-7189-d8745c1bef93/196589135537.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/0d/8d/2a0d8d48-f74a-236e-ec23-24a958f5649d/mzaf_16143782915340700495.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Another%20Love%20Tom%20Odell"
+  },
+  {
+    "id": 445,
+    "title": "Past Lives",
+    "artist": "BØRNS",
+    "mood": "love",
+    "lang": "en",
+    "bpm": "ช้า (75 BPM)",
+    "animeId": 181,
+    "animeMatch": [
+      181
+    ],
+    "tags": [
+      "Past Lives",
+      "BORNS",
+      "ชาติก่อน",
+      "รักข้ามภพ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/07/37/8e/07378ef3-7950-ba76-4280-9acb0e5d032a/15UMGIM42534.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/b6/5b/bab65b54-b62b-afe7-7b2c-42d17c175479/mzaf_180048884343447783.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Past%20Lives%20B%C3%98RNS"
+  },
+  {
+    "id": 446,
+    "title": "Unstoppable",
+    "artist": "Sia",
+    "mood": "hype",
+    "lang": "en",
+    "bpm": "ปานกลาง (90 BPM)",
+    "animeId": 136,
+    "animeMatch": [
+      136
+    ],
+    "tags": [
+      "Unstoppable",
+      "Sia",
+      "ไร้เทียมทาน",
+      "พลังใจ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bc/13/27/bc13275c-8b26-802d-771b-d15ae00fb530/mzm.hvpwjsvi.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bb/dd/6a/bbdd6a92-b322-1c35-8dc7-8eb7d84f72b8/mzaf_14355345747730153074.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Unstoppable%20Sia"
+  },
+  {
+    "id": 447,
+    "title": "Snowman",
+    "artist": "Sia",
+    "mood": "love",
+    "lang": "en",
+    "bpm": "ช้า (74 BPM)",
+    "animeId": 184,
+    "animeMatch": [
+      184
+    ],
+    "tags": [
+      "Snowman",
+      "Sia",
+      "สโนว์แมน",
+      "ฤดูหนาว"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/85/c3/21/85c32113-1c4c-571c-7602-88f568d8081c/075679861016.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2e/4c/43/2e4c43fb-efc6-4ea4-ffd2-141511e9a69e/mzaf_11409859438872626218.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Snowman%20Sia"
+  },
+  {
+    "id": 448,
+    "title": "Somewhere Only We Know",
+    "artist": "Keane",
+    "mood": "sad",
+    "lang": "en",
+    "bpm": "ปานกลาง (86 BPM)",
+    "animeId": 160,
+    "animeMatch": [
+      160
+    ],
+    "tags": [
+      "Somewhere Only We Know",
+      "Keane",
+      "ที่ของเราสองคน"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/89/a6/f7/89a6f7be-a0e0-2524-a13b-6b5df7b7534a/06UMGIM24399.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/fc/4f/6cfc4f89-f9b9-590f-744f-49173af0d9de/mzaf_13370105221544142821.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Somewhere%20Only%20We%20Know%20Keane"
+  },
+  {
+    "id": 449,
+    "title": "Yellow",
+    "artist": "Coldplay",
+    "mood": "love",
+    "lang": "en",
+    "bpm": "ช้า (87 BPM)",
+    "animeId": 181,
+    "animeMatch": [
+      181
+    ],
+    "tags": [
+      "Yellow",
+      "Coldplay",
+      "ดาวสีเหลือง",
+      "คลาสสิก"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f5/93/8c/f5938c49-964c-31d1-4b33-78b634f71fb7/190295978075.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/f3/1a/66f31a76-a6ed-cb4c-f353-23310a7ae9a8/mzaf_10593596652344378873.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Yellow%20Coldplay"
+  },
+  {
+    "id": 450,
+    "title": "Fix You",
+    "artist": "Coldplay",
+    "mood": "sad",
+    "lang": "en",
+    "bpm": "ช้า (70 BPM)",
+    "animeId": 185,
+    "animeMatch": [
+      185
+    ],
+    "tags": [
+      "Fix You",
+      "Coldplay",
+      "เยียวยา",
+      "ให้กำลังใจ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0c/82/48/0c8248a8-4a5b-d30d-8056-f32d650d2fc9/190295978068.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/42/e3/e542e340-a45c-695e-e0b8-6155e222ebc0/mzaf_14955746616030397665.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Fix%20You%20Coldplay"
+  },
+  {
+    "id": 451,
+    "title": "Viva La Vida",
+    "artist": "Coldplay",
+    "mood": "hype",
+    "lang": "en",
+    "bpm": "เร็ว (138 BPM)",
+    "animeId": 164,
+    "animeMatch": [
+      164
+    ],
+    "tags": [
+      "Viva La Vida",
+      "Coldplay",
+      "ราชา",
+      "ยิ่งใหญ่"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/52/aa/85/52aa851f-15b7-6322-f91f-df84b15b7b19/190295978044.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/19/60/b0196060-7786-24c0-8c56-8f628fe89f52/mzaf_12479456646715449366.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Viva%20La%20Vida%20Coldplay"
+  },
+  {
+    "id": 452,
+    "title": "A Sky Full of Stars",
+    "artist": "Coldplay",
+    "mood": "hype",
+    "lang": "en",
+    "bpm": "เร็ว (125 BPM)",
+    "animeId": 181,
+    "animeMatch": [
+      181
+    ],
+    "tags": [
+      "Sky Full of Stars",
+      "Coldplay",
+      "ดวงดาว",
+      "แดนซ์"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/60/90/ad/6090adc3-8863-861d-afcc-23c55c6fe5da/dj.vmtulfyu.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f1/24/d0/f124d058-5d43-73ca-79e4-36f5eb42b172/mzaf_12358370529108063354.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/A%20Sky%20Full%20of%20Stars%20Coldplay"
+  },
+  {
+    "id": 453,
+    "title": "Counting",
+    "artist": "Stars OneRepublic",
+    "mood": "hype",
+    "lang": "en",
+    "bpm": "เร็ว (122 BPM)",
+    "animeId": 172,
+    "animeMatch": [
+      172
+    ],
+    "tags": [
+      "Counting Stars",
+      "OneRepublic",
+      "นับดาว",
+      "มันส์"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/25/46/a7/2546a71a-b2bb-b4c9-4c52-a4daa3ae23ca/13UMGIM15076.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/db/7f/b0db7fbe-f8ff-1f67-fe72-ca8185ffbca2/mzaf_15298650366584767800.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Counting%20Stars%20OneRepublic"
+  },
+  {
+    "id": 454,
+    "title": "ดาวหางฮัลเลย์",
+    "artist": "fellow fellow",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/f1/fd/59/f1fd59e5-09ce-dde1-077e-d568ece0cee0/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/ดาวหางฮัลเลย์%20fellow%20fellow",
+    "mood": "sad",
+    "tags": [
+      "คิดถึง",
+      "จักรวาล",
+      "ห่างไกล"
+    ],
+    "bpm": "ช้า (68 BPM)",
+    "lang": "th",
+    "animeId": 55,
+    "animeMatch": [
+      55
+    ],
+    "reason": "เนื้อเพลงเล่าถึงความหวังที่จะได้เคียงข้างกันแม้ดาวหางจะมาเยือนเพียงครั้งเดียว เข้ากับฉากดาวตกและความรักข้ามมิติเวลาของ Your Name อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์สไตล์มินิมอลสีขาว มีแสง Glow นุ่มนวล เคลื่อนที่ลอยช้าๆ สลับกับฉากดาวตกบนท้องฟ้ายามค่ำคืน"
+  },
+  {
+    "id": 455,
+    "title": "ซ่อน(ไม่)หา (Ghost)",
+    "artist": "Jeff Satur",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/2d/8a/7c/2d8a7c7b-5ebd-6f42-8300-69730a55a2eb/5054197954672.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/be/ea/9c/beea9cc5-2f4a-657a-cda1-5e5ef382ba7a/mzaf_6797589711112840217.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/ซ่อน(ไม่)หา%20(Ghost)%20Jeff%20Satur",
+    "mood": "sad",
+    "tags": [
+      "ซ่อนหา",
+      "โชคชะตา",
+      "เจ็บปวด"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 56,
+    "animeMatch": [
+      56
+    ],
+    "reason": "พลังเสียงสะกดอารมณ์และเมโลดี้ทรงพลังของ Jeff Satur สื่อถึงความเจ็บปวดของการตามหาคนสำคัญในความทรงจำ เข้ากับมิติความสูญเสียใน Jujutsu Kaisen",
+    "typoIdea": "ฟอนต์สีขาวละลายขอบฟุ้งเหมือนวิญญาณ ค่อยๆ จางหายไปตามท่อนฮุค 'ซ่อนตัวอยู่ตรงนั้น' เลียนแบบฉากเล่นซ่อนหาของเมนมะใน Anohana"
+  },
+  {
+    "id": 456,
+    "title": "ลืมไปแล้วว่าลืมยังไง (Fade)",
+    "artist": "Jeff Satur",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/3c/3b/c2/3c3bc2fb-dcc5-411c-22be-6f50a5993e11/5054197362187.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/bf/53/33bf53d3-3a8b-c2a0-61d8-552a41cb0895/mzaf_17373431248148690542.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/ลืมไปแล้วว่าลืมยังไง%20(Fade)%20Jeff%20Satur",
+    "mood": "sad",
+    "tags": [
+      "ลืมไม่ลง",
+      "ความทรงจำ",
+      "ดนตรีเศร้า"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "th",
+    "animeId": 57,
+    "animeMatch": [
+      57
+    ],
+    "reason": "อารมณ์เพลงที่ตัดพ้อถึงความทรงจำที่ไม่มีวันจางหาย สอดคล้องกับเรื่องราวเปียโนและจดหมายสุดท้ายใน Your Lie in April",
+    "typoIdea": "ใช้แอนิเมชันตัวหนังสือค่อยๆ จางหาย (Fade Out) สลับเบลอเมื่อถึงท่อน 'ลืมไปแล้ว' วางตรงกลางจังหวะเปียโน"
+  },
+  {
+    "id": 457,
+    "title": "ไม่เปลี่ยนเลย (Best Luck)",
+    "artist": "fellow fellow",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/6f/be/f9/6fbef931-6eee-0c8d-6d90-f17301061daf/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/08/c8/af08c87c-8f9d-cc49-739a-7830f1567c00/mzaf_5128047126536625887.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/ไม่เปลี่ยนเลย%20(Best%20Luck)%20fellow%20fellow",
+    "mood": "love",
+    "tags": [
+      "รักนิรันดร์",
+      "ผูกพัน",
+      "อบอุ่น"
+    ],
+    "bpm": "ปานกลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 58,
+    "animeMatch": [
+      58
+    ],
+    "reason": "ดนตรีอบอุ่นละมุนหัวใจของ fellow fellow สะท้อนถึงความรักที่มั่นคงระหว่างมิยามุระและโฮริใน Horimiya",
+    "typoIdea": "ใช้ฟอนต์สไตล์ลายมือ (Handwritten) ขอบมน สีพาสเทลโทนชมพู-เบจ ขยับสไลด์เข้าออกนุ่มนวล"
+  },
+  {
+    "id": 458,
+    "title": "รถไฟบนฟ้า (Galaxy Express)",
+    "artist": "D Gerrard",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c6/e1/63/c6e1632b-e81b-e67a-a21f-79fb450bf96a/5054197946035.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7b/b6/80/7bb68048-fb1d-84ed-bac7-ecc04eec0ed5/mzaf_4744985832839020218.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/รถไฟบนฟ้า%20(Galaxy%20Express)%20D%20Gerrard",
+    "mood": "chill",
+    "tags": [
+      "อวกาศ",
+      "เดินทาง",
+      "จินตนาการ"
+    ],
+    "bpm": "ปานกลาง (92 BPM)",
+    "lang": "th",
+    "animeId": 59,
+    "animeMatch": [
+      59
+    ],
+    "reason": "บรรยากาศชวนฝันและการเดินทางข้ามมิติ เข้ากับฉากรถไฟเหนือน้ำในตำนานของ Spirited Away ได้อย่างไร้ที่ติ",
+    "typoIdea": "จัดวางตัวหนังสือโค้งตามแนวขอบหน้าต่างรถไฟ ใช้เอฟเฟกต์ประกายละอองแสงระยิบระยับ"
+  },
+  {
+    "id": 459,
+    "title": "โต๊ะริม (Melt)",
+    "artist": "NONT TANONT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5d/70/fe/5d70fe6e-f3e4-c874-a2de-e4ecd186bf80/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/5f/f4/f45ff486-6fa0-9df5-9d58-8ed552c86140/mzaf_5412811150878921175.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/โต๊ะริม%20(Melt)%20NONT%20TANONT",
+    "mood": "love",
+    "tags": [
+      "แอบชอบ",
+      "มองตา",
+      "เขิน"
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "lang": "th",
+    "animeId": 60,
+    "animeMatch": [
+      60
+    ],
+    "reason": "ความน่ารักของการแอบมองคนที่ชอบจนใจละลาย เข้ากับสงครามจิตวิทยาความรักสุดฮาใน Kaguya-sama อย่างยิ่ง",
+    "typoIdea": "แอนิเมชันตัวอักษรละลาย (Melt) เมื่อร้องคำว่า 'ละลาย' พร้อมซูมสายตาตัวละครแบบ Pop-up"
+  },
+  {
+    "id": 460,
+    "title": "ดอกไม้ที่รอฝน (Spring)",
+    "artist": "THE TOYS & NONT TANONT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/20/f3/61/20f361b1-53f6-bf76-0320-777873a76492/25UMGIM84015.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/63/30/2a633070-c228-60ea-a557-590c7814f5f2/mzaf_6284737101935456326.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/ดอกไม้ที่รอฝน%20(Spring)%20THE%20TOYS%20&%20NONT%20TANONT",
+    "mood": "sad",
+    "tags": [
+      "รอคอย",
+      "สายฝน",
+      "เหงา"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 61,
+    "animeMatch": [
+      61
+    ],
+    "reason": "เมโลดี้ละมุนผสานเสียงฝนพรำ เข้ากับศาลาพักใจกลางสวนชินจูกุใน The Garden of Words ราวกับสร้างมาคู่กัน",
+    "typoIdea": "ตัวหนังสือสไตล์หมึกหยดซึม (Ink Bleed) ปรากฏขึ้นพร้อมระลอกคลื่นน้ำฝนบนผิวน้ำ"
+  },
+  {
+    "id": 461,
+    "title": "จำนน (White Flag)",
+    "artist": "NONT TANONT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/30/b3/b5/30b3b54c-b1ce-e6c4-a0e0-2ec6eee6766b/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3f/be/b9/3fbeb9fa-3537-ee85-553c-c9992f3aa3ff/mzaf_11225322134181997478.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/จำนน%20(White%20Flag)%20NONT%20TANONT",
+    "mood": "sad",
+    "tags": [
+      "ยอมจำนน",
+      "หัวใจแตกสลาย",
+      "เศร้า"
+    ],
+    "bpm": "ช้า (65 BPM)",
+    "lang": "th",
+    "animeId": 62,
+    "animeMatch": [
+      62
+    ],
+    "reason": "ความรู้สึกยอมแพ้ต่อโชคชะตาและความเจ็บปวด เข้ากับประเด็นการให้อภัยและไถ่บาปใน A Silent Voice",
+    "typoIdea": "ใช้ฟอนต์สไตล์สะบัดพู่กัน สีขาวตัดดำ จังหวะกระแทกคำตรงกับบีทกลองเพื่อส่งอารมณ์บีบหัวใจ"
+  },
+  {
+    "id": 462,
+    "title": "วาดไว้ (Recall)",
+    "artist": "BOWKYLION",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0f/0f/42/0f0f4249-8f24-a6e8-56e4-6ec088900d93/25UMGIM79865.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/14/66/49/1466491a-b745-525c-7b96-321b4fd231d0/mzaf_16914207157708959097.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/วาดไว้%20(Recall)%20BOWKYLION",
+    "mood": "sad",
+    "tags": [
+      "วาดไว้",
+      "น้ำตา",
+      "คิดถึงคนที่จากไป"
+    ],
+    "bpm": "ช้า (68 BPM)",
+    "lang": "th",
+    "animeId": 63,
+    "animeMatch": [
+      63
+    ],
+    "reason": "เพลงแห่งการสูญเสียที่ตราตรึง เข้ากับจดหมายแห่งความรักและความทรงจำของ ไวโอเล็ต เอเวอร์การ์เดน",
+    "typoIdea": "ใช้เอฟเฟกต์พิมพ์ดีด (Typewriter Effect) สลับกับตัวหนังสือลายมือเขียนลงบนกระดาษจดหมาย"
+  },
+  {
+    "id": 463,
+    "title": "บานปลาย (Best Wishes)",
+    "artist": "BOWKYLION",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5a/6c/c1/5a6cc1e5-af49-e7ce-1953-e70c9804ad3f/mzaf_8513941258598109632.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/บานปลาย%20(Best%20Wishes)%20BOWKYLION",
+    "mood": "love",
+    "tags": [
+      "ชอบเพื่อน",
+      "เกินเลย",
+      "แอบรัก"
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "lang": "th",
+    "animeId": 64,
+    "animeMatch": [
+      64
+    ],
+    "reason": "ความรู้สึกเริ่มแอบรักเพื่อนสนิทจนบานปลาย เข้ากับความสัมพันธ์ซึนเดเระของ ริวจิ และ ไทกะ ใน Toradora!",
+    "typoIdea": "ใช้ฟอนต์สไตล์นีออนโทนส้ม-ชมพู เด้งเข้าตามจังหวะพร้อมไอคอนอิโมจิหัวใจเล็กๆ"
+  },
+  {
+    "id": 464,
+    "title": "นะหน้าทอง",
+    "artist": "โจอี้ ภูวศิษฐ์",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/cc/96/60cc96ee-d36d-201c-0ae7-a8f9d43d672e/mzaf_17220888096056606772.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/นะหน้าทอง%20โจอี้%20ภูวศิษฐ์",
+    "mood": "love",
+    "tags": [
+      "คลั่งรัก",
+      "มนต์สะกด",
+      "เสน่ห์"
+    ],
+    "bpm": "ปานกลาง (96 BPM)",
+    "lang": "th",
+    "animeId": 65,
+    "animeMatch": [
+      65
+    ],
+    "reason": "ดนตรีโฟล์กร็อคผสมผสานมนต์เสน่ห์ความรัก เข้ากับเรื่องราวความรักระหว่างมนุษย์และเทพจิ้งจอกใน Kamisama Kiss",
+    "typoIdea": "ใช้ฟอนต์ตัวหนาแสงสีทองเปล่งประกาย สลับกับทรานซิชันไฟสีทองพวยพุ่งในท่อนฮุค"
+  },
+  {
+    "id": 465,
+    "title": "ดวงเดือน",
+    "artist": "โจอี้ ภูวศิษฐ์",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/47/fd/90/47fd904b-7653-5f99-d915-19529a77c697/888332917681.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/64/31/d964312a-8619-ca7c-2580-1844e0fdf698/mzaf_8881744960688057961.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/ดวงเดือน%20โจอี้%20ภูวศิษฐ์",
+    "mood": "sad",
+    "tags": [
+      "พระจันทร์",
+      "ไกลบ้าน",
+      "คิดถึง"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 66,
+    "animeMatch": [
+      66
+    ],
+    "reason": "การมองพระจันทร์ดวงเดียวกันเพื่อส่งความคิดถึง เข้ากับความรักที่ไม่อาจสัมผัสตัวกันได้ใน Hotarubi no Mori e",
+    "typoIdea": "วางตัวหนังสือโค้งรับกับทรงพระจันทร์เรืองแสง พร้อมเอฟเฟกต์หิ่งห้อยลอยผ่าน"
+  },
+  {
+    "id": 466,
+    "title": "กลิ่นดอกไม้",
+    "artist": "Newery",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b2/81/0c/b2810cad-9fad-ed73-71fc-76a81f33dfdd/0849480072479_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/c3/a7/2ec3a7a1-78fb-efac-c3aa-5bc5220eab9e/mzaf_10494967788962621898.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/กลิ่นดอกไม้%20Newery",
+    "mood": "sad",
+    "tags": [
+      "กลิ่นอดีต",
+      "หอมละมุน",
+      "คิดถึง"
+    ],
+    "bpm": "ช้า (74 BPM)",
+    "lang": "th",
+    "animeId": 67,
+    "animeMatch": [
+      67
+    ],
+    "reason": "กลิ่นดอกไม้และความทรงจำที่ยังคงหอมหวาน เข้ากับเรื่องราวซากุระและไดอารี่ใน I Want to Eat Your Pancreas",
+    "typoIdea": "ใช้ฟอนต์สไตล์ละมุนโปร่งแสง มีกลีบดอกซากุระปลิวผ่านตัวหนังสืออย่างช้าๆ"
+  },
+  {
+    "id": 467,
+    "title": "พิจารณา (Consider)",
+    "artist": "Musketeers ft. Maiyarap",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/36/67/693667e1-5321-801b-2762-2706f0a8ce26/25UM1IM09762.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/c3/28/acc32878-a7bd-58a1-7d09-06fc124e8b50/mzaf_15257925916120333587.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/พิจารณา%20(Consider)%20Musketeers%20ft.%20Maiyarap",
+    "mood": "chill",
+    "tags": [
+      "พิจารณา",
+      "มองตา",
+      "หลงใหล"
+    ],
+    "bpm": "ปานกลาง (86 BPM)",
+    "lang": "th",
+    "animeId": 68,
+    "animeMatch": [
+      68
+    ],
+    "reason": "จังหวะชิลล์ฟังสบายสื่อถึงการมองเธอแล้วอยากให้เธอพิจารณาใจ เข้ากับชีวิตวัยรุ่นแสนอบอุ่นใน Horimiya",
+    "typoIdea": "ใช้ข้อความสไตล์แชท Pop-up ค่อยๆ ลอยขึ้นตรงกลางหน้าจอตามจังหวะท่อนแร็พ"
+  },
+  {
+    "id": 468,
+    "title": "ตอนนั้นในวันนี้",
+    "artist": "PURPEECH",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/09/b5/c1/09b5c14d-4d99-9fe9-4498-6c1472e04696/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1e/80/dd/1e80dd0d-2ff6-7173-428c-c208f3e49074/mzaf_6392198639159685250.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/ตอนนั้นในวันนี้%20PURPEECH",
+    "mood": "sad",
+    "tags": [
+      "คิดถึงวัยเด็ก",
+      "ย้อนเวลา",
+      "วันวาน"
+    ],
+    "bpm": "ปานกลาง (84 BPM)",
+    "lang": "th",
+    "animeId": 69,
+    "animeMatch": [
+      69
+    ],
+    "reason": "บทเพลงรำลึกถึงมิตรภาพในวัยเด็กที่ไม่อาจย้อนกลับมา สื่อถึงกลุ่มเพื่อนและความทรงจำของเมมมะใน Anohana ได้ซาบซึ้งที่สุด",
+    "typoIdea": "ใช้ฟอนต์สไตล์ฟิล์มเก่าวินเทจ โทนภาพอบอุ่นพร้อม Grain บางๆ เพื่อให้ความรู้สึกคิดถึงวันวาน"
+  },
+  {
+    "id": 469,
+    "title": "17",
+    "artist": "Dept",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/e4/5b/9d/e45b9d12-d046-f885-177a-304697f3b09c/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/f3/15/20/f31520ce-a524-7764-6a2c-87c79333ec25/mzaf_8664520394720386170.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/17%20Dept",
+    "mood": "chill",
+    "tags": [
+      "อายุ17",
+      "สับสน",
+      "วัยรุ่นอินดี้"
+    ],
+    "bpm": "ปานกลาง (95 BPM)",
+    "lang": "th",
+    "animeId": 70,
+    "animeMatch": [
+      70
+    ],
+    "reason": "เพลงอินดี้ป็อปสะท้อนความเคว้งคว้างของวัย 17 เข้ากับบุคลิกเก็บตัวและดนตรีร็อคของบ็อจจิใน Bocchi the Rock!",
+    "typoIdea": "ใช้ฟอนต์แนวโมเดิร์นคลีน วางสลับซ้ายขวาตามจังหวะเบส 8 บิต"
+  },
+  {
+    "id": 470,
+    "title": "เพลงรักเพลงแรก (Blooming)",
+    "artist": "LANDOKMAI",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/52/a1/5c/52a15c16-00df-6ffb-3f4a-8b702301dab1/25UMGIM90612.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/ce/0a/70ce0a58-ce48-8f9f-8d43-a3bdd030d1b0/mzaf_17078307960515154041.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/เพลงรักเพลงแรก%20(Blooming)%20LANDOKMAI",
+    "mood": "love",
+    "tags": [
+      "รักแรก",
+      "ดอกไม้ผลิบาน",
+      "โรแมนติก"
+    ],
+    "bpm": "ช้า (76 BPM)",
+    "lang": "th",
+    "animeId": 71,
+    "animeMatch": [
+      71
+    ],
+    "reason": "เสียงร้องหวานชวนฝันถ่ายทอดความรู้สึกรักแรกที่เบ่งบาน เข้ากับความรักอันบริสุทธิ์ของ ซาวาโกะ และ คาเซฮายะ ใน Kimi ni Todoke",
+    "typoIdea": "ใช้ฟอนต์สไตล์เรียบหรูสีขาวนวล พร้อมดอกไม้บานประกอบในท่อนคำว่า 'Blooming'"
+  },
+  {
+    "id": 471,
+    "title": "ถ้าเธอรักฉันจริง",
+    "artist": "Three Man Down",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/17/78/67177823-eea6-843e-2fd6-1cb45da0fa62/888332917599.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/02/13/f4021324-132e-c5de-8b8e-8dca141c1880/mzaf_3517459293482534577.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/ถ้าเธอรักฉันจริง%20Three%20Man%20Down",
+    "mood": "sad",
+    "tags": [
+      "ปล่อยไป",
+      "รักแท้",
+      "อกหัก"
+    ],
+    "bpm": "ปานกลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 72,
+    "animeMatch": [
+      72
+    ],
+    "reason": "ดนตรีร็อคระบายความอัดอั้น เข้ากับฉากแอคชั่นและความสูญเสียอันน่าสะเทือนใจใน Jujutsu Kaisen",
+    "typoIdea": "ใช้ฟอนต์ Cinematic ตัวกว้างสีแดง-ดำ พร้อมเอฟเฟกต์สั่นกระแทกจังหวะกลอง"
+  },
+  {
+    "id": 472,
+    "title": "คิด(แต่ไม่)ถึง (Same Page?)",
+    "artist": "Tilly Birds",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/06/d7/83/06d783b3-18cb-b180-523b-fd9b9efb0522/888332921213.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/00/20/e500207c-a120-ad6f-7da9-c1ad1d7f6942/mzaf_640349242702877208.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/คิด(แต่ไม่)ถึง%20(Same%20Page?)%20Tilly%20Birds",
+    "mood": "sad",
+    "tags": [
+      "คิดถึงแต่ไม่ถึง",
+      "อดีต",
+      "น้ำตา"
+    ],
+    "bpm": "ปานกลาง (92 BPM)",
+    "lang": "th",
+    "animeId": 73,
+    "animeMatch": [
+      73
+    ],
+    "reason": "เนื้อเพลงสื่อถึงระยะทางและความรู้สึกคิดถึงที่ไม่อาจส่งไปถึง เข้ากับความห่างไกลใน 5 Centimeters per Second ได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "เล่นคำว่า 'คิด' แล้วเว้นจังหวะให้คำว่า 'แต่ไม่ถึง' ค่อยๆ โผล่ขึ้นมาในโทนสีฟ้าหม่น"
+  },
+  {
+    "id": 473,
+    "title": "เพื่อนเล่น ไม่เล่นเพื่อน",
+    "artist": "Tilly Birds ft. MILLI",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3a/d1/4c/3ad14c38-72fa-5cbc-558b-7ee6ef9d101e/888332916318.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/95/0a/8a/950a8a75-b236-bc32-e016-23fc81dd6af0/mzaf_15220071794383537599.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/เพื่อนเล่น%20ไม่เล่นเพื่อน%20Tilly%20Birds%20ft.%20MILLI",
+    "mood": "love",
+    "tags": [
+      "เฟรนด์โซน",
+      "เพื่อนสนิท",
+      "สนุกสนาน"
+    ],
+    "bpm": "เร็ว (120 BPM)",
+    "lang": "th",
+    "animeId": 74,
+    "animeMatch": [
+      74
+    ],
+    "reason": "ความสนุกสนานและจังหวะกวนๆ ของการไม่อยากเป็นแค่เพื่อน เข้ากับคู่กัดใน Kaguya-sama อย่างที่สุด",
+    "typoIdea": "ใช้ฟอนต์สไตล์เรโทรขยับเด้ง (Bounce) ตามจังหวะแร็พของ MILLI พร้อมป้ายสัญลักษณ์ Warning โทนเหลือง-ดำ"
+  },
+  {
+    "id": 474,
+    "title": "เสแสร้ง (Pretend)",
+    "artist": "Paper Planes ft. MOON",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6c/fa/65/6cfa6522-e9ff-af0a-eb1f-80866c7f90ba/888332891172.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e2/f4/8e/e2f48ee5-396c-5ba7-1869-6f7a0d571e7a/mzaf_16804993014002264430.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/เสแสร้ง%20(Pretend)%20Paper%20Planes%20ft.%20MOON",
+    "mood": "hype",
+    "tags": [
+      "ร็อคสะใจ",
+      "โกหก",
+      "เดือด"
+    ],
+    "bpm": "เร็ว (138 BPM)",
+    "lang": "th",
+    "animeId": 75,
+    "animeMatch": [
+      75
+    ],
+    "reason": "ดนตรีโพสต์ฮาร์ดคอร์สุดเข้มข้นระเบิดอารมณ์ความเจ็บปวด เข้ากับฉากต่อสู้แห่งโชคชะตาใน Attack on Titan",
+    "typoIdea": "ใช้ฟอนต์แนวร็อคฉีกขาด (Distorted) สลับภาพเร็วตามจังหวะกระเดื่องกลองแบบสปีดแรป"
+  },
+  {
+    "id": 475,
+    "title": "ทรงอย่างแบด (Bad Boy)",
+    "artist": "Paper Planes",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/90/a0/8c90a081-b8f8-8d89-acf7-3531400bd49d/mzaf_1875861912879165721.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/ทรงอย่างแบด%20(Bad%20Boy)%20Paper%20Planes",
+    "mood": "hype",
+    "tags": [
+      "แบดบอย",
+      "ฮิตทั่วเมือง",
+      "พลังล้น"
+    ],
+    "bpm": "เร็ว (145 BPM)",
+    "lang": "th",
+    "animeId": 76,
+    "animeMatch": [
+      76
+    ],
+    "reason": "เพลงพังค์ร็อคพลังล้นหลาม ปลุกเร้าความตื่นเต้น เหมาะมากกับฉากตบลูกยางสุดมันส์ใน Haikyuu!!",
+    "typoIdea": "ตัวอักษรขยายใหญ่กระแทกหน้าจอ (Explosion) พร้อมสีนีออนม่วง-ส้ม ตามบีทท่อนฮุค 'ทรงอย่างแบด แซดอย่างบ่อย'"
+  },
+  {
+    "id": 476,
+    "title": "ถ้าเราเจอกันอีก (Until Then)",
+    "artist": "Tilly Birds",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/31/bc/03/31bc03c0-7ddb-9615-c0f1-d97ee1fb0e08/888332913805.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ef/40/e2/ef40e2a5-462d-3900-e800-ac36e02fc442/mzaf_2677602440669876174.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%96%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%A3%E0%B8%B2%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B5%E0%B8%81%20(Until%20Then)%20Tilly%20Birds",
+    "mood": "sad",
+    "tags": [
+      "คิดถึง",
+      "จากลา",
+      "ความทรงจำ"
+    ],
+    "bpm": "ช้า (74 BPM)",
+    "lang": "th",
+    "animeId": 77,
+    "animeMatch": [
+      77
+    ],
+    "reason": "การรอคอยและการจากลาที่งดงาม เข้ากับคำอธิษฐานและความทรงจำของฟรีเรนใน Frieren อย่างสมบูรณ์",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏในหมอกควัน แล้วลอยขึ้นสู่ท้องฟ้าในท่อนฮุค 'ถ้าเราได้เจอกันอีก'"
+  },
+  {
+    "id": 477,
+    "title": "พิง (เพลงประกอบละคร \"กระเช้าสีดา\")",
+    "artist": "NONT TANONT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/68/25/6668253c-aa17-85c5-4ad4-d112e0d7cd1e/mzaf_4161458375630754491.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%B4%E0%B8%87%20(%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%AD%E0%B8%9A%E0%B8%A5%E0%B8%B0%E0%B8%84%E0%B8%A3%20%22%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%8A%E0%B9%89%E0%B8%B2%E0%B8%AA%E0%B8%B5%E0%B8%94%E0%B8%B2%22)%20NONT%20TANONT",
+    "mood": "love",
+    "tags": [
+      "อบอุ่น",
+      "ที่พึ่งพา",
+      "โรแมนติก"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 78,
+    "animeMatch": [
+      78
+    ],
+    "reason": "ความอบอุ่นของการเป็นที่พึ่งพาให้คนที่เรารัก เข้ากับความอ่อนโยนของคาเซฮายะใน Kimi ni Todoke",
+    "typoIdea": "ใช้ฟอนต์สีพาสเทลขอบมน แอนิเมชันลอยเบาๆ เหมือนถูกโอบกอด"
+  },
+  {
+    "id": 478,
+    "title": "รักแท้ (เพลงจากละคร \"คุณชาย\")",
+    "artist": "NuNew",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e6/c3/94/e6c39457-6511-4a34-467b-a78c4b170f5d/888332907446.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d0/88/f8/d088f87c-1135-1816-2d69-c33e80f57088/mzaf_4799799825808235537.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%81%E0%B8%97%E0%B9%89%20(%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%A5%E0%B8%B0%E0%B8%84%E0%B8%A3%20%22%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%8A%E0%B8%B2%E0%B8%A2%22)%20NuNew",
+    "mood": "love",
+    "tags": [
+      "รักแท้",
+      "หวานซึ้ง",
+      "นิรันดร์"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 79,
+    "animeMatch": [
+      79
+    ],
+    "reason": "ความรักที่ข้ามผ่านทุกอุปสรรคและโชคชะตา สอดคล้องกับความรักของนานามิและโทโมเอะใน Kamisama Kiss",
+    "typoIdea": "ตัวหนังสือสีทองเรืองรอง พร้อมกลีบดอกไม้โปรยปรายรอบข้อความ"
+  },
+  {
+    "id": 479,
+    "title": "สายตาหลอกกันไม่ได้ (Eyes don't lie)",
+    "artist": "Ink Waruntorn",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/90/c3/5b/90c35b5b-ba74-e3fb-1a0e-6ba03e914c93/0840102441345_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/64/a6/db/64a6db06-8931-cd05-30a7-6ff976ed96ca/mzaf_1200240892676868907.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%95%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%AD%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%20(Eyes%20don't%20lie)%20Ink%20Waruntorn",
+    "mood": "love",
+    "tags": [
+      "แอบรัก",
+      "สายตา",
+      "เขิน"
+    ],
+    "bpm": "ปานกลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 80,
+    "animeMatch": [
+      80
+    ],
+    "reason": "สายตาที่ไม่อาจโกหกความรู้สึกเวลาเผลอมองเธอ เข้ากับความน่ารักของโฮริและมิยามุระใน Horimiya",
+    "typoIdea": "ซูมตัวหนังสือพร้อมเอฟเฟกต์เบลอพื้นหลัง เน้นคำว่า 'สายตามันหลอกกันไม่ได้'"
+  },
+  {
+    "id": 480,
+    "title": "ถ้าเธอรักใครคนหนึ่ง (เพลงประกอบภาพยนตร์ \"บุพเพสันนิวาส 2\")",
+    "artist": "Ink Waruntorn",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d4/22/b4/d422b40d-4edb-b2d1-327f-a670e09ccb1d/888332908498.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/20/52/4c/20524cf3-73b9-9c39-5204-2006ef9dfe78/mzaf_1394626490362469262.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%96%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%83%E0%B8%84%E0%B8%A3%E0%B8%84%E0%B8%99%E0%B8%AB%E0%B8%99%E0%B8%B6%E0%B9%88%E0%B8%87%20(%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%AD%E0%B8%9A%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%A2%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B9%8C%20%22%E0%B8%9A%E0%B8%B8%E0%B8%9E%E0%B9%80%E0%B8%9E%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%99%E0%B8%B4%E0%B8%A7%E0%B8%B2%E0%B8%AA%202%22)%20Ink%20Waruntorn",
+    "mood": "love",
+    "tags": [
+      "ความรัก",
+      "อบอุ่น",
+      "หวังดี"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "th",
+    "animeId": 81,
+    "animeMatch": [
+      81
+    ],
+    "reason": "ความรักแท้ที่อยู่เหนือกาลเวลาและมิติ เข้ากับสายใยผูกพันของทาคิและมิตสึฮะใน Your Name",
+    "typoIdea": "ตัวหนังสือสไตล์เส้นสายด้ายแดงแห่งโชคชะตา ค่อยๆ เชื่อมโยงเข้าหากัน"
+  },
+  {
+    "id": 481,
+    "title": "คิดไม่ออก",
+    "artist": "TangBadVoice & BILLKIN",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/7e/28/42/7e2842b8-ae58-f98f-98a0-31b97f7e3b22/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/21/0d/1e/210d1e32-0b9a-c77b-6ccd-ffd672277703/mzaf_15612215393812234031.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%AD%E0%B8%AD%E0%B8%81%20TangBadVoice%20%26%20BILLKIN",
+    "mood": "love",
+    "tags": [
+      "น่ารัก",
+      "มีความสุข",
+      "รอยยิ้ม"
+    ],
+    "bpm": "ปานกลาง (94 BPM)",
+    "lang": "th",
+    "animeId": 82,
+    "animeMatch": [
+      82
+    ],
+    "reason": "ความอลหม่านและคอมเมดี้ชวนหัวเราะ เข้ากับครอบครัวฟอร์เจอร์สุดป่วนใน Spy x Family",
+    "typoIdea": "ตัวหนังสือป็อปอัปสไตล์หนังสือการ์ตูนคอมมิค สลับกรอบคำพูดน่ารักๆ"
+  },
+  {
+    "id": 482,
+    "title": "หน้าหนาวที่แล้ว",
+    "artist": "THE TOYS",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/24/ff/5324ff49-9bb2-46ad-6a00-8502cb671389/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c4/36/1c/c4361c0f-fcf7-d584-f136-21d681cd9ee4/mzaf_13703260627470484180.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%B2%E0%B8%A7%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%20THE%20TOYS",
+    "mood": "chill",
+    "tags": [
+      "ลมหนาว",
+      "คิดถึง",
+      "อดีต"
+    ],
+    "bpm": "ปานกลาง (86 BPM)",
+    "lang": "th",
+    "animeId": 83,
+    "animeMatch": [
+      83
+    ],
+    "reason": "ความหนาวเหน็บและความทรงจำในฤดูกาลที่ผ่านไป เข้ากับบรรยากาศการจากลาใน Your Lie in April",
+    "typoIdea": "ตัวหนังสือมีเอฟเฟกต์ไอน้ำและละอองหิมะโปรยปราย"
+  },
+  {
+    "id": 483,
+    "title": "ข้างกัน (City) [feat. ออม TELEx TELEXs]",
+    "artist": "Three Man Down",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ef/eb/7c/efeb7cbd-2252-8629-d41b-f6b72c2b1650/888332918770.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/53/b1/2f53b12f-d984-4e4d-0235-e2041b5d3311/mzaf_632423543988720742.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B1%E0%B8%99%20(City)%20%5Bfeat.%20%E0%B8%AD%E0%B8%AD%E0%B8%A1%20TELEx%20TELEXs%5D%20Three%20Man%20Down",
+    "mood": "love",
+    "tags": [
+      "ข้างกัน",
+      "อบอุ่น",
+      "ค่ำคืน"
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "lang": "th",
+    "animeId": 84,
+    "animeMatch": [
+      84
+    ],
+    "reason": "การมีเธออยู่ข้างๆ แม้วันที่ฝนตกหรือท้องฟ้ามืดมน เข้ากับฮินะและโฮดากะใน Weathering With You",
+    "typoIdea": "วางข้อความสองฝั่งแล้ววิ่งเข้ามาประกบกันตรงกลางจังหวะเพลง"
+  },
+  {
+    "id": 484,
+    "title": "ฝนตกไหม",
+    "artist": "Three Man Down",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fc/22/ba/fc22ba00-0d93-66cd-dce0-ded6923c8537/888332922777.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/d2/65/34d2659e-148d-c029-0cc8-60d75ca37f13/mzaf_12794166550202757517.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9D%E0%B8%99%E0%B8%95%E0%B8%81%E0%B9%84%E0%B8%AB%E0%B8%A1%20Three%20Man%20Down",
+    "mood": "sad",
+    "tags": [
+      "ฝนตก",
+      "เหงา",
+      "คิดถึงคนเก่า"
+    ],
+    "bpm": "ปานกลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 85,
+    "animeMatch": [
+      85
+    ],
+    "reason": "ความคิดถึงที่พัดมาพร้อมกับสายฝน เข้ากับหยาดฝนแห่งสวนชินจูกุใน The Garden of Words",
+    "typoIdea": "ตัวหนังสือไล่ระดับความโปร่งใส คล้ายมองผ่านกระจกที่มีหยดน้ำฝนเกาะ"
+  },
+  {
+    "id": 485,
+    "title": "วันเกิดฉันปีนี้ (HBD to me)",
+    "artist": "Three Man Down",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/0b/4e/290b4ec0-c24d-8f11-695d-acc8ebb145b4/888332914536.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/37/b6/a6/37b6a6a3-1dca-1397-409c-cd4670b55122/mzaf_4887075626909576367.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%81%E0%B8%B4%E0%B8%94%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%9B%E0%B8%B5%E0%B8%99%E0%B8%B5%E0%B9%89%20(HBD%20to%20me)%20Three%20Man%20Down",
+    "mood": "sad",
+    "tags": [
+      "วันเกิด",
+      "ไม่มีเธอ",
+      "เจ็บปวด"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 86,
+    "animeMatch": [
+      86
+    ],
+    "reason": "ความเหงาและความเจ็บปวดในวันที่ไม่มีใครเคียงข้าง สอดคล้องกับความเดียวดายใน A Silent Voice",
+    "typoIdea": "ตัวหนังสือสีเทาหม่น ค่อยๆ ดับลงเหมือนแสงเทียนบนเค้กวันเกิด"
+  },
+  {
+    "id": 486,
+    "title": "เวลาเธอยิ้ม",
+    "artist": "Polycat",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/83/11/6f/83116f31-73a4-3df3-6c5f-6658aabbea49/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2f/3f/ac/2f3fac81-9e83-4ae6-5171-841804b44c6f/mzaf_16866220623392363387.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%A2%E0%B8%B4%E0%B9%89%E0%B8%A1%20Polycat",
+    "mood": "love",
+    "tags": [
+      "รอยยิ้ม",
+      "ตกหลุมรัก",
+      "สดใส"
+    ],
+    "bpm": "เร็ว (118 BPM)",
+    "lang": "th",
+    "animeId": 87,
+    "animeMatch": [
+      87
+    ],
+    "reason": "รอยยิ้มของเธอที่ทำให้โลกทั้งใบสดใส เข้ากับรอยยิ้มของซาวาโกะใน Kimi ni Todoke",
+    "typoIdea": "ตัวหนังสือสีชมพูส้มสว่างวาบขึ้นมา พร้อมเอฟเฟกต์ประกายดาววิ้งค์ๆ"
+  },
+  {
+    "id": 487,
+    "title": "อาวรณ์ (I Want You)",
+    "artist": "Polycat",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a3/22/d8/a322d8f4-3e84-0fc7-9b40-b3903966e639/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/5a/f7/e55af74d-5e28-ce04-ba12-c57fbe58af12/mzaf_9994674882709681890.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%93%E0%B9%8C%20(I%20Want%20You)%20Polycat",
+    "mood": "sad",
+    "tags": [
+      "อาวรณ์",
+      "คิดถึง",
+      "ยุค80s"
+    ],
+    "bpm": "ปานกลาง (96 BPM)",
+    "lang": "th",
+    "animeId": 88,
+    "animeMatch": [
+      88
+    ],
+    "reason": "ความอาวรณ์และเสียดายช่วงเวลาที่ไม่อาจย้อนคืน เข้ากับความสัมพันธ์ระยะไกลใน 5 Centimeters per Second",
+    "typoIdea": "สไตล์ฟอนต์เรโทรย้อนยุค 80s แสงนีออนม่วงสลับชมพูสะท้อนความเหงา"
+  },
+  {
+    "id": 488,
+    "title": "พบกันใหม่",
+    "artist": "Polycat",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/83/11/6f/83116f31-73a4-3df3-6c5f-6658aabbea49/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/db/c6/d7dbc6b7-df68-509b-393c-d2e7461e4782/mzaf_16441888389148470421.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%9A%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%20Polycat",
+    "mood": "sad",
+    "tags": [
+      "บอกลา",
+      "น้ำตา",
+      "ความทรงจำ"
+    ],
+    "bpm": "เร็ว (124 BPM)",
+    "lang": "th",
+    "animeId": 89,
+    "animeMatch": [
+      89
+    ],
+    "reason": "การกล่าวลาที่หวังว่าจะได้พบกันอีก เข้ากับฉากบอกลาทั้งน้ำตาของเมมมะใน Anohana",
+    "typoIdea": "ตัวหนังสือค่อยๆ จางหายไปพร้อมการโบกมือลาของตัวละคร"
+  },
+  {
+    "id": 489,
+    "title": "ซ่อนกลิ่น",
+    "artist": "Palmy",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7a/f1/7d/7af17dac-68dc-1ec7-39be-35186bf08a0a/888332930772.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/08/12/36/0812360d-4479-b29d-5275-931b1e541694/mzaf_5285055444520979895.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%8B%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%81%E0%B8%A5%E0%B8%B4%E0%B9%88%E0%B8%99%20Palmy",
+    "mood": "sad",
+    "tags": [
+      "กลิ่นอาย",
+      "เก็บซ่อน",
+      "หวนคิด"
+    ],
+    "bpm": "ช้า (76 BPM)",
+    "lang": "th",
+    "animeId": 90,
+    "animeMatch": [
+      90
+    ],
+    "reason": "กลิ่นหอมของความรักที่ต้องซ่อนไว้ในใจ สอดคล้องกับความรักในป่าหิ่งห้อยของ Hotarubi no Mori e",
+    "typoIdea": "ตัวหนังสือเลือนรางซ่อนอยู่ในเงามืดแล้วสว่างขึ้นตามจังหวะเคาะระนาด"
+  },
+  {
+    "id": 490,
+    "title": "ดวงใจ",
+    "artist": "Palmy",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6d/8c/7d/6d8c7d8b-3549-c6df-2da2-7a89cdb73fce/888332924092.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/6e/2d/806e2d43-db51-edb6-19ed-dfd13aa92f99/mzaf_5101326889103556069.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B9%83%E0%B8%88%20Palmy",
+    "mood": "love",
+    "tags": [
+      "ดวงใจ",
+      "รักมาก",
+      "อบอุ่น"
+    ],
+    "bpm": "ปานกลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 91,
+    "animeMatch": [
+      91
+    ],
+    "reason": "การมอบทั้งดวงใจให้คนที่รัก เข้ากับความทุ่มเทและการปกป้องของริวจิใน Toradora!",
+    "typoIdea": "ฟอนต์ลายมืออบอุ่น วางลอยบนฉากพระอาทิตย์ตกดิน"
+  },
+  {
+    "id": 491,
+    "title": "ทุกนาทีที่สวยงาม",
+    "artist": "NONT TANONT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/5e/2b/94/5e2b94f0-77f5-62e3-8f3c-d5e76405b8bc/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/54/e7/1954e7f4-b211-849d-03a4-94a515c197df/mzaf_10611984984504241868.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%B8%E0%B8%81%E0%B8%99%E0%B8%B2%E0%B8%97%E0%B8%B5%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AA%E0%B8%A7%E0%B8%A2%E0%B8%87%E0%B8%B2%E0%B8%A1%20NONT%20TANONT",
+    "mood": "love",
+    "tags": [
+      "ขอบคุณ",
+      "ช่วงเวลาดีๆ",
+      "ซึ้ง"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 92,
+    "animeMatch": [
+      92
+    ],
+    "reason": "การขอบคุณทุกช่วงเวลาที่ได้ร่วมเดินทางด้วยกัน เข้ากับการผจญภัยของจิฮิโระใน Spirited Away",
+    "typoIdea": "ตัวหนังสือไล่เฉดสีรุ้งอ่อนๆ ค่อยๆ ปรากฏพร้อมวิวทิวทัศน์กว้าง"
+  },
+  {
+    "id": 492,
+    "title": "ยินดี (เพลงประกอบละครมาตาลดา ช่อง 3)",
+    "artist": "sarah salola",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/bb/f2/7c/bbf27ca3-0154-100f-38bb-d5805aaa0b5d/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/4a/bb/aa/4abbaad0-6911-aa8c-6b45-4a99f5c54773/mzaf_9453094306125921868.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A2%E0%B8%B4%E0%B8%99%E0%B8%94%E0%B8%B5%20(%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%AD%E0%B8%9A%E0%B8%A5%E0%B8%B0%E0%B8%84%E0%B8%A3%E0%B8%A1%E0%B8%B2%E0%B8%95%E0%B8%B2%E0%B8%A5%E0%B8%94%E0%B8%B2%20%E0%B8%8A%E0%B9%88%E0%B8%AD%E0%B8%87%203)%20sarah%20salola",
+    "mood": "sad",
+    "tags": [
+      "ยินดี",
+      "ปล่อยเธอไป",
+      "เจ็บลึก"
+    ],
+    "bpm": "ช้า (74 BPM)",
+    "lang": "th",
+    "animeId": 93,
+    "animeMatch": [
+      93
+    ],
+    "reason": "การยินดีที่ได้พบและรักเธอแม้เวลาจะแสนสั้น เข้ากับความทรงจำอันล้ำค่าใน I Want to Eat Your Pancreas",
+    "typoIdea": "ตัวหนังสือบางเรียบหรู ค่อยๆ เขียนขึ้นทีละตัวอักษรเหมือนไดอารี่"
+  },
+  {
+    "id": 493,
+    "title": "เอาปากกามาวง",
+    "artist": "BELL WARISARA",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/21/8c/1c/218c1c05-c60a-457d-f3ae-4818ff2a8125/0840102466300_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/29/08/db/2908db02-32cc-c24e-50a6-4583a85b5369/mzaf_5867430908003016888.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%AD%E0%B8%B2%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%81%E0%B8%B2%E0%B8%A1%E0%B8%B2%E0%B8%A7%E0%B8%87%20BELL%20WARISARA",
+    "mood": "love",
+    "tags": [
+      "น่ารัก",
+      "แอบรัก",
+      "สารภาพ"
+    ],
+    "bpm": "ปานกลาง (100 BPM)",
+    "lang": "th",
+    "animeId": 94,
+    "animeMatch": [
+      94
+    ],
+    "reason": "ความน่ารักของการท้าให้เอาปากกามาวงจุดที่ไม่น่ารัก เข้ากับความซึนเดเระใน Kaguya-sama",
+    "typoIdea": "มีเอฟเฟกต์วงกลมปากกาสีแดงวงรอบคำสำคัญตามจังหวะเพลง"
+  },
+  {
+    "id": 494,
+    "title": "B Blood Type",
+    "artist": "CHRRISSA",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/9f/64/86/9f6486f1-746c-d3b5-1569-3a6294cdfea0/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/ca/32/cb/ca32cbd3-6e00-5d33-72c4-7d71ee456d73/mzaf_15308886385266869376.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/B%20Blood%20Type%20CHRRISSA",
+    "mood": "chill",
+    "tags": [
+      "ตัดพ้อ",
+      "โสด",
+      "ฮิตไวรัล"
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "lang": "th",
+    "animeId": 95,
+    "animeMatch": [
+      95
+    ],
+    "reason": "เพลงตัดพ้อสนุกๆ ของคนโสด เข้ากับโมเมนต์คอมเมดี้ใน Horimiya",
+    "typoIdea": "ตัวหนังสือขยับสลับสีสนุกสนาน พร้อมป้ายกรุ๊ปเลือด B ป๊อปอัป"
+  },
+  {
+    "id": 495,
+    "title": "สลักจิต",
+    "artist": "Pop Pongkool",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8c/69/cb/8c69cba7-b440-a3b3-b9c0-8e409b8613f2/888332908481.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/6e/34/e66e34c2-c971-ef2c-2e0f-f8a99e220912/mzaf_7695861381642299193.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%88%E0%B8%B4%E0%B8%95%20(feat.%20%E0%B8%94%E0%B8%B2%20%E0%B9%80%E0%B8%AD%E0%B9%87%E0%B8%99%E0%B9%82%E0%B8%94%E0%B8%A3%E0%B8%9F%E0%B8%B4%E0%B8%99)%20Pop%20Pongkool",
+    "mood": "sad",
+    "tags": [
+      "สลักจิต",
+      "รักฝังใจ",
+      "ดราม่า"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 96,
+    "animeMatch": [
+      96
+    ],
+    "reason": "ความรักที่สลักลึกในจิตใจไม่อาจลบเลือน เข้ากับภารกิจส่งความในใจของไวโอเล็ตใน Violet Evergarden",
+    "typoIdea": "ตัวหนังสือแกะสลักเรืองแสงสีทองสว่างวาบบนฉากมืด"
+  },
+  {
+    "id": 496,
+    "title": "ฝันถึงแฟนเก่า",
+    "artist": "Three Man Down",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a1/32/f9/a132f91c-ad0e-a6c0-eb86-ff65dbe01fc0/888332920254.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8a/75/33/8a75330f-429f-7069-6f3b-83061bd3d265/mzaf_2681671476093048229.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9D%E0%B8%B1%E0%B8%99%E0%B8%96%E0%B8%B6%E0%B8%87%E0%B9%81%E0%B8%9F%E0%B8%99%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%B2%20Three%20Man%20Down",
+    "mood": "sad",
+    "tags": [
+      "แฟนเก่า",
+      "ความฝัน",
+      "ไม่ลืม"
+    ],
+    "bpm": "ปานกลาง (92 BPM)",
+    "lang": "th",
+    "animeId": 97,
+    "animeMatch": [
+      97
+    ],
+    "reason": "การฝันถึงเรื่องราวเก่าๆ ที่ไม่มีวันกลับมา เข้ากับความผูกพันของกลุ่มบัสเตอส์ใน Anohana",
+    "typoIdea": "เอฟเฟกต์ตัวหนังสือเบลอแบบความฝัน (Dream Blur) สลับภาพย้อนอดีต"
+  },
+  {
+    "id": 497,
+    "title": "golden hour",
+    "artist": "JVKE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8d/1a/7b/8d1a7b44-316f-7c7f-4380-935673fb697a/5056167175650.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/02/8c/30028c8a-a125-5466-bcc6-27a83b1c0135/mzaf_16911571635366913039.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/golden%20hour%20JVKE",
+    "mood": "love",
+    "tags": [
+      "แสงสีทอง",
+      "โรแมนติก",
+      "เปียโนหรู"
+    ],
+    "bpm": "ปานกลาง (94 BPM)",
+    "lang": "en",
+    "animeId": 98,
+    "animeMatch": [
+      98
+    ],
+    "reason": "แสงสีทองยามเย็นและเมโลดี้เปียโนอันวิจิตร เข้ากับฉาก Golden Hour บนยอดเขาใน Your Name อย่างไร้ที่ติ",
+    "typoIdea": "ตัวหนังสือสีทองแวววาวขยับพลิ้วไหวตามคอร์ดเปียโนระยิบระยับ"
+  },
+  {
+    "id": 498,
+    "title": "Until I Found You",
+    "artist": "Stephen Sanchez",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/64/d2/c5/64d2c511-67f4-ae09-5153-d39c3da413a3/21UMGIM75467.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/82/c1/5382c1d4-ddba-aa2b-90df-57268895fac9/mzaf_8926201202931541051.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Until%20I%20Found%20You%20Stephen%20Sanchez",
+    "mood": "love",
+    "tags": [
+      "วินเทจ",
+      "รักแท้",
+      "50s vibe"
+    ],
+    "bpm": "ช้า (68 BPM)",
+    "lang": "en",
+    "animeId": 99,
+    "animeMatch": [
+      99
+    ],
+    "reason": "บรรยากาศวินเทจโรแมนติกที่มั่นคง เข้ากับความรักนิรันดร์ของโทโมเอะใน Kamisama Kiss",
+    "typoIdea": "ตัวหนังสือสไตล์เรโทร 1950s สีครีม-ทอง สลับแสง Glow นุ่มนวล"
+  },
+  {
+    "id": 499,
+    "title": "Die With A Smile",
+    "artist": "Lady Gaga & Bruno Mars",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/11/ae/f2/11aef294-f57c-bab9-c9fc-529162984e62/24UMGIM85348.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/6a/99/076a99ed-b946-431b-6f1f-54fa187ca5bd/mzaf_8102882277995122875.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Die%20With%20A%20Smile%20Lady%20Gaga%20%26%20Bruno%20Mars",
+    "mood": "sad",
+    "tags": [
+      "รักนิรันดร์",
+      "ซึ้งกินใจ",
+      "พลังเสียง"
+    ],
+    "bpm": "ช้า (52 BPM)",
+    "lang": "en",
+    "animeId": 100,
+    "animeMatch": [
+      100
+    ],
+    "reason": "ความรักที่ยอมเคียงข้างกันจนวินาทีสุดท้าย แม้โลกจะพังทลาย เข้ากับฉากไคลแม็กซ์ของ Cyberpunk: Edgerunners",
+    "typoIdea": "ตัวหนังสือสไตล์ Cyberpunk แตกสลาย มีแสงนีออนสีฟ้า-ชมพูสลับกระพริบ"
+  },
+  {
+    "id": 500,
+    "title": "Past Lives",
+    "artist": "BØRNS",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/07/37/8e/07378ef3-7950-ba76-4280-9acb0e5d032a/15UMGIM42534.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/b6/5b/bab65b54-b62b-afe7-7b2c-42d17c175479/mzaf_180048884343447783.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Past%20Lives%20B%C3%98RNS",
+    "mood": "chill",
+    "tags": [
+      "อดีตชาติ",
+      "ผูกพัน",
+      "ชวนฝัน"
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "lang": "en",
+    "animeId": 101,
+    "animeMatch": [
+      101
+    ],
+    "reason": "เพลงแห่งอดีตชาติและสายใยที่เชื่อมโยงกัน เข้ากับความรักต่างภพใน Hotarubi no Mori e",
+    "typoIdea": "ตัวหนังสือลอยละล่องเหมือนควันหมอกโปร่งใส ซ้อนทับฉากป่าไม้"
+  },
+  {
+    "id": 501,
+    "title": "Bling-Bang-Bang-Born",
+    "artist": "Creepy Nuts",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/12/81/dc/1281dc28-48e6-5ff7-642d-6cf4d487d9e0/4547366660890.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/54/5e/5c545e9a-c8ca-c673-f85d-a74b14c2c882/mzaf_2313943576213161760.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Bling-Bang-Bang-Born%20Creepy%20Nuts",
+    "mood": "hype",
+    "tags": [
+      "ไวรัลทั่วโลก",
+      "แดนซ์สับ",
+      "พลังกล้าม"
+    ],
+    "bpm": "เร็ว (156 BPM)",
+    "lang": "jp",
+    "animeId": 245,
+    "animeMatch": [
+      245
+    ],
+    "reason": "เพลงไวรัลเปิดโลกเวทมนตร์ด้วยจังหวะเจอร์ซีย์คลับ เหมาะกับฉากโชว์พลังหรือเต้นกวนๆ",
+    "typoIdea": "ใช้ฟอนต์สไตล์ Bold Pop เด้งตามบีทกลองซอยยี่ แอนิเมชัน Zoom Shake"
+  },
+  {
+    "id": 502,
+    "title": "Otonoke",
+    "artist": "Creepy Nuts",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2c/66/b5/2c66b5b5-a46f-1064-4802-fe82c0e56200/4547366705638.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/de/3c/55/de3c5508-301a-2aae-a8e6-069a1e2edb04/mzaf_14245211407965810210.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Otonoke%20Creepy%20Nuts",
+    "mood": "hype",
+    "tags": [
+      "ดันดาดัน",
+      "ไซคิก",
+      "โฟลว์ดุ"
+    ],
+    "bpm": "เร็ว (160 BPM)",
+    "lang": "jp",
+    "animeId": 231,
+    "animeMatch": [
+      231
+    ],
+    "reason": "เพลงเปิดสุดไฮป์แห่งปี จังหวะสับและลื่นไหล เข้ากับฉากวิ่งหนีผีเอเลี่ยนแบบสุดโต่ง",
+    "typoIdea": "ตัวอักษรแนวกลิตช์นีออนสีม่วง-เขียว สลับสีสโตรกตามสปีดการแร็ป"
+  },
+  {
+    "id": 503,
+    "title": "The Brave (Yuusha)",
+    "artist": "YOASOBI",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/33/bf/16/33bf1688-953b-a1ac-3f14-5809b38f088a/199999394624.png/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c0/3c/c9/c03cc970-0f43-1ea8-2928-624b47a92df6/mzaf_14834841731697041590.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/The%20Brave%20(Yuusha)%20YOASOBI",
+    "mood": "hype",
+    "tags": [
+      "ผู้กล้า",
+      "การเดินทาง",
+      "ความทรงจำ"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "jp",
+    "animeId": 233,
+    "animeMatch": [
+      233
+    ],
+    "reason": "บทเพลงสรรเสริญผู้กล้าฮิมเมล ความเร็วและเมโลดี้ทรงพลังสะท้อนการผจญภัย",
+    "typoIdea": "ฟอนต์แนว Serif โบราณ เรืองแสงสีทอง สลับคัตติ้งซีนต่อสู้กับฉากยิ้มอบอุ่น"
+  },
+  {
+    "id": 504,
+    "title": "Anytime Anywhere",
+    "artist": "milet",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a2/bb/16/a2bb16e5-7521-df4f-9563-b0fdcaefd5cf/4547366645477.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5e/37/bc/5e37bc4d-24f4-2bb8-9167-03ff36eff3ef/mzaf_12019400102538358885.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Anytime%20Anywhere%20milet",
+    "mood": "sad",
+    "tags": [
+      "ซึ้งกินใจ",
+      "อบอุ่น",
+      "น้ำตาซึม"
+    ],
+    "bpm": "ช้า (74 BPM)",
+    "lang": "jp",
+    "animeId": 233,
+    "animeMatch": [
+      233
+    ],
+    "reason": "เสียงร้องที่โอบกอดหัวใจและความรู้สึกที่คงอยู่ตลอดไป แม้กาลเวลาจะผ่านไปนับร้อยปี",
+    "typoIdea": "ตัวหนังสือสลายเป็นละอองดาว ค่อยๆ ปรากฏและเลือนหายตามลมหายใจ"
+  },
+  {
+    "id": 505,
+    "title": "Abyss",
+    "artist": "YUNGBLUD",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a7/7f/24/a77f24f6-d347-fe0c-05de-0528971e6027/24UMGIM26706.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/b0/ef/17b0ef44-1d0a-8ca4-7442-53a5fba773fb/mzaf_16206251573451214130.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Abyss%20YUNGBLUD",
+    "mood": "hype",
+    "tags": [
+      "ไคจู",
+      "ร็อคสะเทือน",
+      "แปลงร่าง"
+    ],
+    "bpm": "เร็ว (140 BPM)",
+    "lang": "jp",
+    "animeId": 232,
+    "animeMatch": [
+      232
+    ],
+    "reason": "เพลงร็อคระเบิดพลังแห่งการต่อสู้เพื่อความฝันในวัยผู้ใหญ่ เข้ากับไคจูหมายเลข 8 เต็มพิกัด",
+    "typoIdea": "สไตล์ Heavy Grunge ตัวหนังสือแตกกระจาย มีประกายสายฟ้าและเอฟเฟกต์เบสบูสต์"
+  },
+  {
+    "id": 506,
+    "title": "Nobody",
+    "artist": "OneRepublic",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6d/90/51/6d90513a-88ed-e5f2-20ab-669dd2aa6f7b/24UMGIM28945.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b5/9b/14/b59b1431-4908-3b7a-fd4d-bb86d193ca6a/mzaf_1746474897586183065.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Nobody%20OneRepublic",
+    "mood": "chill",
+    "tags": [
+      "ฟีลกู้ด",
+      "มิตรภาพ",
+      "กวนๆ"
+    ],
+    "bpm": "ปานกลาง (115 BPM)",
+    "lang": "jp",
+    "animeId": 232,
+    "animeMatch": [
+      232
+    ],
+    "reason": "เพลงจบสุดชิลล์ มู้ดสดใสของเหล่าหน่วยปราบไคจูในยามพักผ่อน",
+    "typoIdea": "ตัวอักษร Pop Art มี Drop Shadow สดใส เลื่อนไหลตามจังหวะเดินสบายๆ"
+  },
+  {
+    "id": 507,
+    "title": "LEveL",
+    "artist": "SawanoHiroyuki[nZk]:TOMORROW X TOGETHER",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c5/84/f5/c584f538-7562-d76a-f303-fd471bc1a98e/4547366658231.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c7/7d/7e/c77d7e26-2150-abf1-ded3-01167033630f/mzaf_7806321940178359695.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/LEveL%20SawanoHiroyuki%5BnZk%5D%3ATOMORROW%20X%20TOGETHER",
+    "mood": "hype",
+    "tags": [
+      "อัปเลเวล",
+      "จุติเทพ",
+      "ดาร์กแอคชั่น"
+    ],
+    "bpm": "เร็ว (138 BPM)",
+    "lang": "jp",
+    "animeId": 236,
+    "animeMatch": [
+      236
+    ],
+    "reason": "ซาวด์ดนตรีสไตล์ซาวาโนะผนวกกับเสียงร้องเร้าใจ เข้ากับฉากซองจินอูตื่นขึ้นมาผงาด",
+    "typoIdea": "เอฟเฟกต์หน้าต่างสถานะสีน้ำเงิน เรืองแสง ตัวหนังสือคมกริบแบบมีดสั้น"
+  },
+  {
+    "id": 508,
+    "title": "Hana ni Natte",
+    "artist": "Ryokuoushoku Shakai",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b6/99/f1/b699f178-2d1e-8ec5-bc26-6082fb286b97/hanninatte.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ce/96/79/ce9679b3-82cc-6ddc-eff2-431f1caaf1de/mzaf_9002925095666019880.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Hana%20ni%20Natte%20Ryokuoushoku%20Shakai",
+    "mood": "hype",
+    "tags": [
+      "ยาพิษ",
+      "เสน่ห์ล้น",
+      "เฉลียวฉลาด"
+    ],
+    "bpm": "เร็ว (148 BPM)",
+    "lang": "jp",
+    "animeId": 237,
+    "animeMatch": [
+      237
+    ],
+    "reason": "เมโลดี้ทรงเสน่ห์น่าค้นหา เปี่ยมด้วยไหวพริบเข้ากับตัวตนของเหมาเหมาในวังหลวง",
+    "typoIdea": "ตัวอักษรพริ้วไหวแซมกลีบดอกไม้และควันยาพิษสีม่วง คัตติ้งรวดเร็วตามเสียงเปียโน"
+  },
+  {
+    "id": 509,
+    "title": "Fatal",
+    "artist": "GEMN",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c9/cf/c2/c9cfc235-e135-d5ba-1a4b-291924a4ad3a/198009797387.png/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8f/2b/7a/8f2b7a50-583a-2194-be0d-9cb52d470a90/mzaf_14695686469368549754.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Fatal%20GEMN",
+    "mood": "hype",
+    "tags": [
+      "เกิดใหม่เป็นลูกโอชิ",
+      "ล้างแค้น",
+      "โรงละคร"
+    ],
+    "bpm": "เร็ว (132 BPM)",
+    "lang": "jp",
+    "animeId": 238,
+    "animeMatch": [
+      238
+    ],
+    "reason": "ความลับและไฟแค้นที่ปะทุบนเวทีการแสดง เสียงประสานทรงพลังดุดัน",
+    "typoIdea": "ดวงตาดาวสีขาวสลับดำ ฟอนต์คมสองเฉดสี ตัดกับแสงไฟสปอตไลท์โรงละคร"
+  },
+  {
+    "id": 510,
+    "title": "Orange",
+    "artist": "SPYAIR",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/79/0a/01/790a0111-75d7-06e5-cf3b-c5238031cc7d/4547366669541.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/26/db/e526dbbb-f107-57fb-8783-9feea7eb7844/mzaf_13628143605540446538.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Orange%20SPYAIR",
+    "mood": "hype",
+    "tags": [
+      "วอลเลย์บอล",
+      "มิตรภาพคู่แค้น",
+      "น้ำตาลูกผู้ชาย"
+    ],
+    "bpm": "เร็ว (135 BPM)",
+    "lang": "jp",
+    "animeId": 242,
+    "animeMatch": [
+      242
+    ],
+    "reason": "เพลงประกอบศึกกองขยะ คาราสึโนะปะทะเนโกมะ สื่อถึงมิตรภาพและการแข่งขันที่ไม่อยากให้จบ",
+    "typoIdea": "แสงแดดสีส้มตกกระทบพื้นคอร์ท ตัวหนังสือสไตล์ Brush สาดหมึกอย่างมีพลัง"
+  },
+  {
+    "id": 511,
+    "title": "Shinunoga E-Wa",
+    "artist": "Fujii Kaze",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/96/4e/5b/964e5b6e-4766-63ba-7e50-9f8a5bd0569e/20UMGIM17280.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/27/a4/b127a427-710b-e65f-e734-ead910b94cbc/mzaf_692825803667967327.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Shinunoga%20E-Wa%20Fujii%20Kaze",
+    "mood": "chill",
+    "tags": [
+      "ไวรัลคลาสสิก",
+      "คลั่งรัก",
+      "เสน่ห์สะกด"
+    ],
+    "bpm": "ปานกลาง (83 BPM)",
+    "lang": "jp",
+    "animeId": 243,
+    "animeMatch": [
+      243
+    ],
+    "reason": "ยอมตายดีกว่าต้องพรากจากเธอ เมโลดี้สไตล์ R&B ญี่ปุ่นที่สะกดคนฟังทั้งโลก",
+    "typoIdea": "ฟอนต์แนว Mincho คลาสสิก ย้อมโทนสีซีเปียอบอุ่น มีเกรนฟิล์มเบาๆ"
+  },
+  {
+    "id": 512,
+    "title": "Matsuri",
+    "artist": "Fujii Kaze",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5f/4b/8a/5f4b8a5b-d28f-ba88-d508-b1665fa348a0/24UM1IM21653.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ea/94/89/ea94893f-8f02-943e-6b91-611a9b611a5b/mzaf_5437217620758333068.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Matsuri%20Fujii%20Kaze",
+    "mood": "chill",
+    "tags": [
+      "เทศกาล",
+      "ปล่อยวาง",
+      "เบาสบาย"
+    ],
+    "bpm": "ปานกลาง (94 BPM)",
+    "lang": "jp",
+    "animeId": 234,
+    "animeMatch": [
+      234
+    ],
+    "reason": "บทเพลงแห่งการเฉลิมฉลองชีวิตและปล่อยวางความทุกข์ เหมือนนั่งล้อมวงกินอาหารในดันเจี้ยน",
+    "typoIdea": "ตัวหนังสือสไตล์งานวัดญี่ปุ่น โทนสีทองและแดง ค่อยๆ หมุนคลายความตึงเครียด"
+  },
+  {
+    "id": 513,
+    "title": "Kura Kura",
+    "artist": "Ado",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/b0/cb/ad/b0cbad88-e4ad-d171-2bff-522798da6565/23UM1IM05243.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/f5/7c/1ff57c55-c4fb-b3f9-5c47-c30113eae7b0/mzaf_4586119715915097532.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Kura%20Kura%20Ado",
+    "mood": "hype",
+    "tags": [
+      "สปาย",
+      "หมุนติ้ว",
+      "สดใสป่วน"
+    ],
+    "bpm": "เร็ว (165 BPM)",
+    "lang": "jp",
+    "animeId": 240,
+    "animeMatch": [
+      240
+    ],
+    "reason": "เพลงเปิดสุดป่วนสดใสที่ทำให้เวียนหัวด้วยความน่ารักและความวุ่นวายของครอบครัวฟอร์เจอร์",
+    "typoIdea": "ข้อความกระโดดดึ๋งไปมา หมุน 360 องศา พร้อมไอคอนหน้าตกใจน่ารักๆ"
+  },
+  {
+    "id": 514,
+    "title": "Show",
+    "artist": "Ado",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/80/e8/82/80e8826c-f877-9a74-0e7b-a142108feda0/23UMGIM92958.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cb/3c/81/cb3c81aa-7e19-61a3-5aaa-fc521b81d27a/mzaf_11772413152923766264.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Show%20Ado",
+    "mood": "hype",
+    "tags": [
+      "เร้าใจสุดขีด",
+      "ระเบิดพลัง",
+      "แดนซ์ผี"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "jp",
+    "animeId": 244,
+    "animeMatch": [
+      244
+    ],
+    "reason": "บีท EDM เดือดสะบัดและลูกคอสุดคลั่งของ Ado เข้ากับฉากบู๊ระเบิดเมือง",
+    "typoIdea": "ฟอนต์นีออนสีชมพูกระพริบไฟสโตรบ แอนิเมชันปาดคำซ้อนกันอย่างรวดเร็ว"
+  },
+  {
+    "id": 515,
+    "title": "Suzume",
+    "artist": "RADWIMPS feat. Toaka",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/eb/0c/e3/eb0ce3d8-b9b9-ce8d-47f9-38d147128dee/0602448618207_cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1b/91/c6/1b91c682-1f1d-f678-6fb6-e16bffc22beb/mzaf_8572139935794413888.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Suzume%20RADWIMPS%20feat.%20Toaka",
+    "mood": "sad",
+    "tags": [
+      "ผนึกประตู",
+      "เสียงฮัมสะกด",
+      "ความสูญเสีย"
+    ],
+    "bpm": "ช้า (78 BPM)",
+    "lang": "jp",
+    "animeId": 239,
+    "animeMatch": [
+      239
+    ],
+    "reason": "เสียงฮัมเปิดเพลงที่เป็นเอกลักษณ์ สื่อถึงความทรงจำที่ไม่อาจลืมเลือนและการเยียวยาจิตใจ",
+    "typoIdea": "ฟอนต์มินิมอลสีขาวสะท้อนแสงน้ำ คลื่นเสียงสั่นตามจังหวะ รูรู รูรูรูรู"
+  },
+  {
+    "id": 516,
+    "title": "A Cruel Angel's Thesis",
+    "artist": "Yoko Takahashi",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/77/65/fa/7765fa66-2af8-dce3-fb4c-18cc68d6ba77/886448179139.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bc/73/1b/bc731b20-2b4a-aa0a-08e3-cdead8d612bf/mzaf_2050640833676529854.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/A%20Cruel%20Angel's%20Thesis%20Yoko%20Takahashi",
+    "mood": "hype",
+    "tags": [
+      "ตำนานคลาสสิก",
+      "อีวานเกเลียน",
+      "เพลงชาติโอตาคุ"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "jp",
+    "animeId": 248,
+    "animeMatch": [
+      248
+    ],
+    "reason": "เพลงอนิเมะระดับตำนานที่ทุกคนต้องรู้จัก ท่อนคอรัสทรงพลังที่เข้ากับทุกฉากไคลแม็กซ์",
+    "typoIdea": "ข้อความจัดกึ่งกลางสไตล์ Evangelion typography ฟอนต์ Serif ตัวหนาแถบดำ"
+  },
+  {
+    "id": 517,
+    "title": "W●RK",
+    "artist": "millennium parade & Sheena Ringo",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/be/82/68be82ce-6780-5304-a0a5-4f5d40fd13fc/4547366684209.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/63/cc/cb/63cccb43-283a-3ec1-46cc-23943f70b4bf/mzaf_10447331168631135086.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/W%E2%97%8FRK%20millennium%20parade%20%26%20Sheena%20Ringo",
+    "mood": "hype",
+    "tags": [
+      "สุขาวดีอเวจี",
+      "สไตล์ล้ำ",
+      "คู่หูเดือด"
+    ],
+    "bpm": "เร็ว (142 BPM)",
+    "lang": "jp",
+    "animeId": 250,
+    "animeMatch": [
+      250
+    ],
+    "reason": "ความผสมผสานระหว่างดนตรีอว็อง-การ์ดกับเสียงร้องอันเป็นเอกลักษณ์ในเกาะมรณะ",
+    "typoIdea": "ตัวอักษรสีแดงชาดตัดดำ มีรอยป้ายพู่กันจีนและเอฟเฟกต์เบลอโมชัน"
+  },
+  {
+    "id": 518,
+    "title": "Bling-Bang-Bang-Born (Sped Up)",
+    "artist": "Creepy Nuts",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/12/81/dc/1281dc28-48e6-5ff7-642d-6cf4d487d9e0/4547366660890.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7e/df/95/7edf9517-4ea4-9d22-7bdd-6d754076514a/mzaf_13929503387910019248.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Bling-Bang-Bang-Born%20(Sped%20Up)%20Creepy%20Nuts",
+    "mood": "hype",
+    "tags": [
+      "ติ๊กต็อก",
+      "สปีดอัพ",
+      "เต้นยับ"
+    ],
+    "bpm": "เร็ว (170 BPM)",
+    "lang": "jp",
+    "animeId": 235,
+    "animeMatch": [
+      235
+    ],
+    "reason": "เวอร์ชันความเร็วพิเศษยอดฮิตบน TikTok เหมาะกับคลิปไทโปตัดต่อกระชับฉับไว",
+    "typoIdea": "ตัวหนังสือสับสเกลขึ้นลงอย่างบ้าคลั่ง สลับซูมเข้าหน้าตัวละครตามจังหวะเตะต่อย"
+  },
+  {
+    "id": 519,
+    "title": "Haru (Sunny)",
+    "artist": "Yorushika",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b5/22/db/b522dbf2-da18-3712-1c3c-4f947c9ff9e1/199999507703.png/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d5/33/90/d5339021-95a7-0c24-b303-576f386562fb/mzaf_6920451872994359221.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Haru%20(Sunny)%20Yorushika",
+    "mood": "chill",
+    "tags": [
+      "ฤดูใบไม้ผลิ",
+      "สดใส",
+      "กวี"
+    ],
+    "bpm": "ปานกลาง (105 BPM)",
+    "lang": "jp",
+    "animeId": 233,
+    "animeMatch": [
+      233
+    ],
+    "reason": "เพลงเปิดซีซั่นสองของโยรุชิกะ ให้ความรู้สึกถึงแสงแดดอันอบอุ่นและการก้าวต่อไปข้างหน้า",
+    "typoIdea": "โทนสีพาสเทลเขียวมิ้นต์และชมพูดอกไม้ ตัวหนังสือลอยไปทางขวาตามสายลม"
+  },
+  {
+    "id": 520,
+    "title": "SPECIALZ",
+    "artist": "King Gnu",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/aa/33/55/aa335541-9932-d73c-6b1e-62bd484fc83d/4547366642308.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/5d/57/045d57fb-d1c4-2979-31ef-485662a97783/mzaf_7661994685536659402.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/SPECIALZ%20King%20Gnu",
+    "mood": "hype",
+    "tags": [
+      "ชิบูย่า",
+      "ความโกลาหล",
+      "เท่ดุดัน"
+    ],
+    "bpm": "เร็ว (120 BPM)",
+    "lang": "jp",
+    "animeId": 244,
+    "animeMatch": [
+      244
+    ],
+    "reason": "บีทสุดหน่วงและท่อน 'You are my special' สำหรับฉากต่อสู้ในเมืองอันมืดมิด",
+    "typoIdea": "ตัวหนังสือตัวเอียงขอบคมกริบ สีแดงนีออนปนควันดำ มีการซ้อนทับภาพสั่นไหว"
+  },
+  {
+    "id": 521,
+    "title": "ดาวหางฮัลเลย์ (Halley's Comet)",
+    "artist": "fellow fellow",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/87/3b/c0/873bc037-c197-bc3d-4ac2-77300149fa38/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/37/ff/7337ff2d-c4c8-4190-1f92-5fdca53ce282/mzaf_5262209305244392518.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%B2%E0%B8%A7%E0%B8%AB%E0%B8%B2%E0%B8%87%E0%B8%AE%E0%B8%B1%E0%B8%A5%E0%B9%80%E0%B8%A5%E0%B8%A2%E0%B9%8C%20(Halley's%20Comet)%20fellow%20fellow",
+    "mood": "love",
+    "tags": [
+      "ขอให้ได้รักเธอ",
+      "75ปีเจอกันที",
+      "โรแมนติกซึ้ง"
+    ],
+    "bpm": "ช้า (76 BPM)",
+    "lang": "th",
+    "animeId": 239,
+    "animeMatch": [
+      239
+    ],
+    "reason": "เพลงรักอภิมหาฮิตที่สื่อถึงความรักที่รอคอยได้ แม้จะนานเท่าวงโคจรดาวหาง",
+    "typoIdea": "ตัวหนังสือลากเส้นแสงประกายดาวหาง ตัวอักษรโค้งมนละมุนตาบนท้องฟ้าราตรี"
+  },
+  {
+    "id": 522,
+    "title": "ไม่เปลี่ยนใจ (Just You)",
+    "artist": "fellow fellow",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/6f/be/f9/6fbef931-6eee-0c8d-6d90-f17301061daf/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/08/c8/af08c87c-8f9d-cc49-739a-7830f1567c00/mzaf_5128047126536625887.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B9%83%E0%B8%88%20(Just%20You)%20fellow%20fellow",
+    "mood": "love",
+    "tags": [
+      "รักเดียวใจเดียว",
+      "มั่นคง",
+      "ฟังสบาย"
+    ],
+    "bpm": "ปานกลาง (82 BPM)",
+    "lang": "th",
+    "animeId": 241,
+    "animeMatch": [
+      241
+    ],
+    "reason": "ไม่ว่าเวลาจะผ่านไปนานแค่ไหน ใจก็ยังเลือกเธอคนเดิมเสมอ เหมาะกับซีนสคูลไลฟ์",
+    "typoIdea": "ตัวพิมพ์ลายมือน่ารัก มีไฮไลท์สีพาสเทลขีดเน้นคำสำคัญแบบสมุดไดอารี่"
+  },
+  {
+    "id": 523,
+    "title": "โต๊ะริม (Melt)",
+    "artist": "NONT TANONT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/5e/2b/94/5e2b94f0-77f5-62e3-8f3c-d5e76405b8bc/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b9/bf/45/b9bf45d8-91c6-4b76-17d4-3d7db300b78c/mzaf_15414683918025641305.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%82%E0%B8%95%E0%B9%8A%E0%B8%B0%E0%B8%A3%E0%B8%B4%E0%B8%A1%20(Melt)%20NONT%20TANONT",
+    "mood": "love",
+    "tags": [
+      "ละลาย",
+      "ตกหลุมรัก",
+      "เสียงหวาน"
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "lang": "th",
+    "animeId": 243,
+    "animeMatch": [
+      243
+    ],
+    "reason": "ความน่ารักที่ทำให้ใจละลายเหมือนโดนสะกดจิต เพียงแค่เห็นเธอนั่งอยู่ตรงโต๊ะริม",
+    "typoIdea": "คำว่า 'ละลาย' ค่อยๆ ไหลเยิ้มลงมาเป็นเอฟเฟกต์นุ่มนวล พร้อมอิโมจิหัวใจสีชมพู"
+  },
+  {
+    "id": 524,
+    "title": "รักแรก (First Love)",
+    "artist": "NONT TANONT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4a/b0/fb/4ab0fb88-6e1e-aa92-1073-3328de938f11/888332904681.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dd/68/d2/dd68d249-fd10-8e2a-0c2e-486774533a60/mzaf_15793260015738384691.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%81%E0%B8%A3%E0%B8%81%20(First%20Love)%20NONT%20TANONT",
+    "mood": "sad",
+    "tags": [
+      "รักแรก",
+      "ย้อนวัย",
+      "คิดถึง"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 239,
+    "animeMatch": [
+      239
+    ],
+    "reason": "ความทรงจำของรักแรกที่ไม่เคยจางหายไปจากใจ เรียกน้ำตาและรอยยิ้มได้พร้อมกัน",
+    "typoIdea": "ฟอนต์มีหัวสไตล์วินเทจ เคลื่อนที่ช้าๆ ซ้อนทับฉากฝนตกหรือแสงแดดส่องยามเย็น"
+  },
+  {
+    "id": 525,
+    "title": "วาดไว้ (Recall)",
+    "artist": "BOWKYLION",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e4/97/68/e49768af-d0d8-dfea-32c5-51e6a3b9e25e/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/f0/2d/76f02d3a-4b61-f285-a84a-272aa2904c63/mzaf_2746150345781827060.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A7%E0%B8%B2%E0%B8%94%E0%B9%84%E0%B8%A7%E0%B9%89%20(Recall)%20BOWKYLION",
+    "mood": "sad",
+    "tags": [
+      "ภาพวาด",
+      "คิดถึงคนบนฟ้า",
+      "โศกเศร้า"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 239,
+    "animeMatch": [
+      239
+    ],
+    "reason": "ภาพที่เคยวาดไว้ด้วยกันในวันวาน เพลงระดับปรากฏการณ์ที่บีบหัวใจทุกคนที่เคยสูญเสีย",
+    "typoIdea": "ตัวอักษรปรากฏเหมือนปลายพู่กันวาดลงบนกระดาษ แล้วค่อยๆ โดนสีน้ำชะล้าง"
+  },
+  {
+    "id": 526,
+    "title": "ลืมไปแล้วว่าลืมยังไง (Fade)",
+    "artist": "Jeff Satur",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/94/fd/69/94fd691b-d908-918a-6e07-e0b2265bca6e/5054197362491.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1c/13/a1/1c13a1c4-682c-a104-ce6f-b2394287c14f/mzaf_17818307861761409830.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B7%E0%B8%A1%E0%B9%84%E0%B8%9B%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%A5%E0%B8%B7%E0%B8%A1%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B9%84%E0%B8%87%20(Fade)%20Jeff%20Satur",
+    "mood": "sad",
+    "tags": [
+      "เจฟซาเตอร์",
+      "เสียงสูงสะกดใจ",
+      "ลืมไม่ได้"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "th",
+    "animeId": 249,
+    "animeMatch": [
+      249
+    ],
+    "reason": "เสียงร้องทรงพลังที่ถ่ายทอดความเจ็บปวดของการติดอยู่ในวังวนความคิดถึง",
+    "typoIdea": "ตัวหนังสือสลายตัวแบบ Glitch & Dissolve พร้อมเรนจ์สีขาว-ครามเย็นชา"
+  },
+  {
+    "id": 527,
+    "title": "ดอกไม้ไฟ (Firework)",
+    "artist": "Mirrr",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/11/59/20/11592013-24f4-54f6-4ba8-bb1e20586ff1/25UMGIM89092.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fc/bf/3a/fcbf3a31-1277-ebf6-daeb-19d303c99478/mzaf_4431898585055530236.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B9%84%E0%B8%9F%20(Firework)%20Mirrr",
+    "mood": "love",
+    "tags": [
+      "สวยงามแต่งดงาม",
+      "ชั่วขณะ",
+      "อบอุ่น"
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "lang": "th",
+    "animeId": 241,
+    "animeMatch": [
+      241
+    ],
+    "reason": "ความรักที่เปรียบดั่งประกายดอกไม้ไฟ แม้จะเป็นช่วงเวลาสั้นๆ แต่งดงามที่สุดในความทรงจำ",
+    "typoIdea": "ตัวหนังสือแตกประกายไฟสีทองและส้ม มีอนุภาคสะเก็ดไฟระยิบระยับ"
+  },
+  {
+    "id": 528,
+    "title": "ซ่อนกลิ่น",
+    "artist": "Palmy",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7a/f1/7d/7af17dac-68dc-1ec7-39be-35186bf08a0a/888332930772.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/08/12/36/0812360d-4479-b29d-5275-931b1e541694/mzaf_5285055444520979895.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%8B%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%81%E0%B8%A5%E0%B8%B4%E0%B9%88%E0%B8%99%20Palmy",
+    "mood": "sad",
+    "tags": [
+      "กลิ่นหอมในใจ",
+      "บทกวี",
+      "คิดถึงลึกซึ้ง"
+    ],
+    "bpm": "ช้า (78 BPM)",
+    "lang": "th",
+    "animeId": 233,
+    "animeMatch": [
+      233
+    ],
+    "reason": "เพลงแห่งความคิดถึงที่หอมหวลแต่แฝงความเหงา สอดคล้องกับการรำลึกอดีตของเอลฟ์ผู้ยืนยาว",
+    "typoIdea": "ตัวหนังสือพริ้วไหวเหมือนควันกำยาน ค่อยๆ จางลงตามระนาดและสายลม"
+  },
+  {
+    "id": 529,
+    "title": "ถ้าเธอรักใครคนหนึ่ง",
+    "artist": "INK WARUNTORN",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d4/22/b4/d422b40d-4edb-b2d1-327f-a670e09ccb1d/888332908498.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/20/52/4c/20524cf3-73b9-9c39-5204-2006ef9dfe78/mzaf_1394626490362469262.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%96%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%83%E0%B8%84%E0%B8%A3%E0%B8%84%E0%B8%99%E0%B8%AB%E0%B8%99%E0%B8%B6%E0%B9%88%E0%B8%87%20INK%20WARUNTORN",
+    "mood": "love",
+    "tags": [
+      "บุพเพ",
+      "รักแท้",
+      "เสียงใส"
+    ],
+    "bpm": "ช้า (74 BPM)",
+    "lang": "th",
+    "animeId": 243,
+    "animeMatch": [
+      243
+    ],
+    "reason": "บทเพลงรักแสนหวานที่บอกว่าหากรักใครสักคน ก็ขอให้รักหมดหัวใจและดูแลเขาให้ดีที่สุด",
+    "typoIdea": "ตัวหนังสือฟอนต์หวานสไตล์ Modern Calligraphy ลอยประดับด้วยกลีบดอกไม้ขาว"
+  },
+  {
+    "id": 530,
+    "title": "ยินดีด้วยนะ (Glad)",
+    "artist": "INK WARUNTORN",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/06/d7/9f/06d79fe1-2771-f623-e874-6f2ef9125aad/0840291216281_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cc/1e/85/cc1e8593-514b-8acd-7d85-ef89c8e0904b/mzaf_9241957827263325243.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A2%E0%B8%B4%E0%B8%99%E0%B8%94%E0%B8%B5%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%99%E0%B8%B0%20(Glad)%20INK%20WARUNTORN",
+    "mood": "sad",
+    "tags": [
+      "งานแต่งเธอ",
+      "ยิ้มทั้งน้ำตา",
+      "เจ็บลึก"
+    ],
+    "bpm": "ปานกลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 240,
+    "animeMatch": [
+      240
+    ],
+    "reason": "การอวยพรให้คนที่เรารักได้มีความสุขกับคนที่เขาเลือก แม้คนข้างกายจะไม่ใช่เรา",
+    "typoIdea": "ข้อความแบ่งสองฝั่ง 'ยินดีด้วยนะ' ชัดเจน แต่ข้อความซ่อนเบื้องหลังเบลอจาง"
+  },
+  {
+    "id": 531,
+    "title": "คนไม่คุย (Silent Mode)",
+    "artist": "PROXIE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e5/d5/1d/e5d51db9-6b50-89f1-65d9-35b436440439/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e0/c2/a3/e0c2a3bb-aef0-43bd-922d-cbc01fa0d3b2/mzaf_6637886844505349168.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%84%E0%B8%B8%E0%B8%A2%20(Silent%20Mode)%20PROXIE",
+    "mood": "love",
+    "tags": [
+      "บอยแบนด์ไทย",
+      "น่ารักขี้เล่น",
+      "แดนซ์"
+    ],
+    "bpm": "เร็ว (120 BPM)",
+    "lang": "th",
+    "animeId": 243,
+    "animeMatch": [
+      243
+    ],
+    "reason": "เพลงป๊อปสุดน่ารัก อาการเขินเมื่ออยู่ใกล้คนที่ชอบจนกลายเป็นคนไม่พูดไม่จา",
+    "typoIdea": "กล่องแชทข้อความเด้ง Typing Bubble สลับกับสติ๊กเกอร์เครื่องหมายคำถามน่ารัก"
+  },
+  {
+    "id": 532,
+    "title": "พิจารณา (Consider)",
+    "artist": "Musketeers feat. MAIYARAP",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/36/67/693667e1-5321-801b-2762-2706f0a8ce26/25UM1IM09762.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/c3/28/acc32878-a7bd-58a1-7d09-06fc124e8b50/mzaf_15257925916120333587.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%B4%E0%B8%88%E0%B8%B2%E0%B8%A3%E0%B8%93%E0%B8%B2%20(Consider)%20Musketeers%20feat.%20MAIYARAP",
+    "mood": "sad",
+    "tags": [
+      "ตัดพ้อ",
+      "โปรดพิจารณา",
+      "ดนตรีเท่"
+    ],
+    "bpm": "ปานกลาง (92 BPM)",
+    "lang": "th",
+    "animeId": 244,
+    "animeMatch": [
+      244
+    ],
+    "reason": "การขอความชัดเจนในความสัมพันธ์ ท่อนแร็ปของ MAIYARAP เสริมอารมณ์ตัดพ้อได้อย่างเจ็บแสบ",
+    "typoIdea": "แอนิเมชันปั๊มตรายางคำว่า 'พิจารณา' ลงบนพื้นหลังเอกสารคัตติ้งดุดัน"
+  },
+  {
+    "id": 533,
+    "title": "ติดฝน (rain)",
+    "artist": "PiXXiE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/01/b9/6a/01b96ac7-9f44-90fc-f882-d3bda001af9a/26UMGIM00427.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7c/c3/80/7cc38052-0428-c41e-5d70-d5d072ff0201/mzaf_15626711221296127212.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%9D%E0%B8%99%20(rain)%20PiXXiE",
+    "mood": "chill",
+    "tags": [
+      "ติดฝนกับเธอ",
+      "ร่มคันเดียว",
+      "T-POP"
+    ],
+    "bpm": "ปานกลาง (95 BPM)",
+    "lang": "th",
+    "animeId": 241,
+    "animeMatch": [
+      241
+    ],
+    "reason": "โมเมนต์แอบหวังให้ฝนตกนานๆ เพื่อจะได้ยืนติดฝนอยู่ใต้ร่มคันเดียวกันกับเธอ",
+    "typoIdea": "หยดน้ำฝนไหลเกาะกระจก ตัวหนังสือใสสะท้อนแสงไฟนีออนริมถนนยามเย็น"
+  },
+  {
+    "id": 534,
+    "title": "มูเตลู (MUTELU)",
+    "artist": "PiXXiE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/53/bd/4f/53bd4fbb-ea1c-80b0-f464-2a1686ad18ea/26UMGIM00061.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/d1/d2/1fd1d205-e88c-b3a6-3cfe-95e882d6edc2/mzaf_1867053330668459966.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A1%E0%B8%B9%E0%B9%80%E0%B8%95%E0%B8%A5%E0%B8%B9%20(MUTELU)%20PiXXiE",
+    "mood": "hype",
+    "tags": [
+      "สายมู",
+      "ร่ายมนตร์รัก",
+      "สนุกสนาน"
+    ],
+    "bpm": "เร็ว (125 BPM)",
+    "lang": "th",
+    "animeId": 231,
+    "animeMatch": [
+      231
+    ],
+    "reason": "ขอพรสิ่งศักดิ์สิทธิ์ให้เธอหันมารัก จังหวะสนุก ท่อนฮุคติดหู เต้นตามได้ทันที",
+    "typoIdea": "ยันต์สายมูและประกายเวทมนตร์สีชมพู ตัวหนังสือหมุนวนเหมือนกำลังร่ายคาถา"
+  },
+  {
+    "id": 535,
+    "title": "ฉลามชอบงับคุณ",
+    "artist": "Bonnadol feat. IIVY B",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/77/96/f2/7796f231-3101-4129-bc60-39482b57e148/0840291206831_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3a/83/83/3a83836b-e462-1997-cf82-05ca00ba5525/mzaf_8049178132188694572.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%89%E0%B8%A5%E0%B8%B2%E0%B8%A1%E0%B8%8A%E0%B8%AD%E0%B8%9A%E0%B8%87%E0%B8%B1%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%93%20Bonnadol%20feat.%20IIVY%20B",
+    "mood": "love",
+    "tags": [
+      "ฉลามงับ",
+      "น่ารักเกินต้าน",
+      "มุกจีบ"
+    ],
+    "bpm": "ปานกลาง (100 BPM)",
+    "lang": "th",
+    "animeId": 240,
+    "animeMatch": [
+      240
+    ],
+    "reason": "เพลงจีบสุดน่ารักที่เป็นไวรัลเต้นทั่วบ้านทั่วเมือง 'ถ้าหากฉลามชอบงับคุณ ผมก็ชอบคุณงับ'",
+    "typoIdea": "ไอคอนครีบฉลามแหวกว่าย ตัวหนังสือกัดงับเด้งไปมาอย่างขี้เล่น"
+  },
+  {
+    "id": 536,
+    "title": "Die With A Smile",
+    "artist": "Lady Gaga & Bruno Mars",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/11/ae/f2/11aef294-f57c-bab9-c9fc-529162984e62/24UMGIM85348.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/6a/99/076a99ed-b946-431b-6f1f-54fa187ca5bd/mzaf_8102882277995122875.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Die%20With%20A%20Smile%20Lady%20Gaga%20%26%20Bruno%20Mars",
+    "mood": "love",
+    "tags": [
+      "เพลงรักระดับโลก",
+      "คอรัสสะกดโลก",
+      "ถ้าโลกจะแตก"
+    ],
+    "bpm": "ช้า (79 BPM)",
+    "lang": "en",
+    "animeId": 244,
+    "animeMatch": [
+      244
+    ],
+    "reason": "เพลงดูเอทแห่งทศวรรษ ถ้าโลกจะต้องอวสาน ขอแค่ได้ตายเคียงข้างเธอด้วยรอยยิ้ม",
+    "typoIdea": "สไตล์เรโทร 70s ไฟนีออนสีน้ำเงินอมส้ม ฟอนต์คลาสสิกตัวหนาพุ่งตามเสียงเปียโน"
+  },
+  {
+    "id": 537,
+    "title": "BIRDS OF A FEATHER",
+    "artist": "Billie Eilish",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/9f/69/929f69f1-9977-3a44-d674-11f70c852d1b/24UMGIM36186.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/31/d3/3431d34e-847f-5d66-df83-0bce688d997e/mzaf_18106743962423782018.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/BIRDS%20OF%20A%20FEATHER%20Billie%20Eilish",
+    "mood": "love",
+    "tags": [
+      "บิลลี่ไอลิช",
+      "รักจนวันตาย",
+      "นุ่มนวลติดหู"
+    ],
+    "bpm": "ปานกลาง (105 BPM)",
+    "lang": "en",
+    "animeId": 241,
+    "animeMatch": [
+      241
+    ],
+    "reason": "ความรักที่ผูกพันกันเหมือนนกที่บินไปด้วยกันจนกว่าจะถึงวันสิ้นลมหายใจ",
+    "typoIdea": "ขนนกลอยละล่อง ตัวหนังสือมินิมอลสีครีม สะอาดตาและมีแสงฟุ้งอบอุ่น"
+  },
+  {
+    "id": 538,
+    "title": "Espresso",
+    "artist": "Sabrina Carpenter",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/57/e8/7b/57e87ba0-5057-9bb9-c247-ce7dbe426e89/24UMGIM55213.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/4d/02/e94d0230-11ee-ef94-d2cf-a5d547bd73f4/mzaf_554140808559155562.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Espresso%20Sabrina%20Carpenter",
+    "mood": "hype",
+    "tags": [
+      "ซัมเมอร์ไวรัล",
+      "มั่นใจตัวแม่",
+      "คาเฟอีน"
+    ],
+    "bpm": "เร็ว (120 BPM)",
+    "lang": "en",
+    "animeId": 243,
+    "animeMatch": [
+      243
+    ],
+    "reason": "เพลงแดนซ์ป๊อปไวรัลอันดับหนึ่งของโลก เสน่ห์ที่ทำให้ใครๆ ก็นอนไม่หลับเหมือนดื่มเอสเปรสโซ",
+    "typoIdea": "แก้วกาแฟและแว่นกันแดดยุค 80s สไตล์ฟอนต์ลายมือสนุกสนานพร้อมจังหวะเบสหนึบ"
+  },
+  {
+    "id": 539,
+    "title": "golden hour",
+    "artist": "JVKE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8d/1a/7b/8d1a7b44-316f-7c7f-4380-935673fb697a/5056167175650.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/02/8c/30028c8a-a125-5466-bcc6-27a83b1c0135/mzaf_16911571635366913039.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/golden%20hour%20JVKE",
+    "mood": "love",
+    "tags": [
+      "แสงสีทอง",
+      "เปียโนพริ้ว",
+      "วินาทีหยุดโลก"
+    ],
+    "bpm": "ปานกลาง (94 BPM)",
+    "lang": "en",
+    "animeId": 239,
+    "animeMatch": [
+      239
+    ],
+    "reason": "ท่อนเปียโนพริ้วไหวที่พาผู้ฟังล่องลอยสู่ช่วงเวลาทองคำแห่งการตกหลุมรัก",
+    "typoIdea": "แสงอาทิตย์สีทองทะลุผ่านละอองฝุ่น ตัวหนังสือสีทองคำเรืองรองระยับตา"
+  },
+  {
+    "id": 540,
+    "title": "Until I Found You",
+    "artist": "Stephen Sanchez",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/64/d2/c5/64d2c511-67f4-ae09-5153-d39c3da413a3/21UMGIM75467.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/82/c1/5382c1d4-ddba-aa2b-90df-57268895fac9/mzaf_8926201202931541051.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Until%20I%20Found%20You%20Stephen%20Sanchez",
+    "mood": "love",
+    "tags": [
+      "ดูว็อปยุค50s",
+      "รักแท้",
+      "อบอุ่นหัวใจ"
+    ],
+    "bpm": "ช้า (68 BPM)",
+    "lang": "en",
+    "animeId": 241,
+    "animeMatch": [
+      241
+    ],
+    "reason": "บทเพลงดูว็อปกลิ่นอายคลาสสิกที่ทำให้รู้สึกว่าโลกใบนี้มีความหมายขึ้นมาเมื่อเจอเธอ",
+    "typoIdea": "สไตล์โปสเตอร์หนังรักยุค 1950s ฟอนต์ Script หรูหราและขอบเฟรมสีงาช้าง"
+  },
+  {
+    "id": 541,
+    "title": "Glimpse of Us",
+    "artist": "Joji",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d0/2a/43/d02a433a-3ab8-9a94-b07d-1dc599b64966/93624864387.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/53/c2/0c53c240-300a-5ddf-fc86-3a54e1b73a78/mzaf_13555682862214742934.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Glimpse%20of%20Us%20Joji",
+    "mood": "sad",
+    "tags": [
+      "ยังลืมเขาไม่ได้",
+      "เปียโนเศร้า",
+      "ดิ่งสุดขั้ว"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "en",
+    "animeId": 249,
+    "animeMatch": [
+      249
+    ],
+    "reason": "อยู่กับคนใหม่แต่ในแววตายังเห็นเพียงภาพเงาของเธอคนเก่า บาดลึกเข้าขั้วหัวใจ",
+    "typoIdea": "ภาพซ้อนโปร่งแสงของความทรงจำ ตัวหนังสือสีขาวหม่นซีดจาง ค่อยๆ ละลายหายไป"
+  },
+  {
+    "id": 542,
+    "title": "Daylight",
+    "artist": "David Kushner",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b9/f2/2b/b9f22b26-d962-70de-6d85-674139ded7cc/842812190988_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/93/94/52/939452d5-e74e-a819-2f16-7c9148f3419a/mzaf_17998933934090835373.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Daylight%20David%20Kushner",
+    "mood": "sad",
+    "tags": [
+      "เสียงทุ้มกังวาน",
+      "ดาร์กโกธิค",
+      "บาปและแสงสว่าง"
+    ],
+    "bpm": "ช้า (65 BPM)",
+    "lang": "en",
+    "animeId": 236,
+    "animeMatch": [
+      236
+    ],
+    "reason": "เสียงเบสทุ้มต่ำและเปียโนมืดหม่น ดั่งการวิ่งหนีความมืดมิดในใจไปสู่แสงตะวัน",
+    "typoIdea": "ตัวหนังสือสไตล์โบสถ์กอธิค ละอองหมอกสีเทาดำ และแสงลำส่องลงมาจากเบื้องบน"
+  },
+  {
+    "id": 543,
+    "title": "Romantic Homicide",
+    "artist": "d4vd",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/4e/0c/82/4e0c82e8-7970-25f5-bfd6-6f0faec83dcb/22UMGIM94151.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/f5/40/a1f5405d-408f-d84e-1775-b87b30174067/mzaf_5384372198207712281.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Romantic%20Homicide%20d4vd",
+    "mood": "sad",
+    "tags": [
+      "ตัดใจ",
+      "ดาร์กอินดี้",
+      "ความตายของรัก"
+    ],
+    "bpm": "ช้า (66 BPM)",
+    "lang": "en",
+    "animeId": 244,
+    "animeMatch": [
+      244
+    ],
+    "reason": "'In the back of my mind, I killed you' การบอกลาความรู้สึกเก่าแบบเด็ดขาดแต่เจ็บปวด",
+    "typoIdea": "โทนสีแดงเลือดหมูตัดดำ ตัวหนังสือแนว Typewriter กระตุกตามคอร์ดกีตาร์โปร่ง"
+  },
+  {
+    "id": 544,
+    "title": "Here With Me",
+    "artist": "d4vd",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d6/83/1a/d6831a94-4e8f-5b23-df44-a313eb358257/23UMGIM33457.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bf/a3/6d/bfa36d9c-8e41-e05f-8a2b-970c9b21c695/mzaf_9987737564511061938.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Here%20With%20Me%20d4vd",
+    "mood": "love",
+    "tags": [
+      "อยู่ด้วยกันจนแก่",
+      "โรแมนติกอินดี้",
+      "ภาพยนตร์"
+    ],
+    "bpm": "ปานกลาง (84 BPM)",
+    "lang": "en",
+    "animeId": 233,
+    "animeMatch": [
+      233
+    ],
+    "reason": "ความหวังที่จะได้อยู่เคียงข้างเธอจนกระทั่งแก่เฒ่า เข้ากับเรื่องราวของเวลาและความทรงจำ",
+    "typoIdea": "เกรนฟิล์ม 8mm แอนิเมชันตัวอักษรลายมือ เขียนลงบนกระดาษจดหมายเก่า"
+  },
+  {
+    "id": 545,
+    "title": "Dandelions",
+    "artist": "Ruth B.",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/24/f7/82/24f782af-5aea-55e7-bf67-2f4e62664fe8/886446439341.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bc/5a/88/bc5a881d-dc44-fc7f-92fd-376680957969/mzaf_10218454983981161930.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Dandelions%20Ruth%20B.",
+    "mood": "love",
+    "tags": [
+      "ดอกแดนดิไลออน",
+      "อธิษฐาน",
+      "สดใสฟุ้งฝัน"
+    ],
+    "bpm": "ปานกลาง (118 BPM)",
+    "lang": "en",
+    "animeId": 233,
+    "animeMatch": [
+      233
+    ],
+    "reason": "เป่าเกสรดอกแดนดิไลออนเพื่ออธิษฐานให้ได้รักเธอ เมโลดี้สดใสเปี่ยมความหวัง",
+    "typoIdea": "เกสรดอกไม้สีขาวปลิวว่อน ตัวหนังสือพริ้วละมุนมีแสงสะท้อนระยิบระยับ"
+  },
+  {
+    "id": 546,
+    "title": "Ghost",
+    "artist": "Justin Bieber",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e0/92/da/e092da2d-9f6d-11dc-7843-2021e95a2b61/21UMGIM17518.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/35/03/85/350385d9-e71f-4e23-49eb-9bbf812c6ffc/mzaf_18141129225761277085.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Ghost%20Justin%20Bieber",
+    "mood": "sad",
+    "tags": [
+      "ถ้ากอดไม่ได้ขอกอดเงา",
+      "คิดถึงคนไกล",
+      "อะคูสติกป๊อป"
+    ],
+    "bpm": "เร็ว (154 BPM)",
+    "lang": "en",
+    "animeId": 239,
+    "animeMatch": [
+      239
+    ],
+    "reason": "ถ้าหากแตะต้องตัวจริงไม่ได้ ขอเก็บเพียงเงาความทรงจำไว้กอดก็ยังดี",
+    "typoIdea": "ฟิลเตอร์กระจกฝ้ามัว ตัวหนังสือซ้อนทับภาพความทรงจำที่วิ่งผ่านไปอย่างรวดเร็ว"
+  },
+  {
+    "id": 547,
+    "title": "As It Was",
+    "artist": "Harry Styles",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2a/19/fb/2a19fb85-2f70-9e44-f2a9-82abe679b88e/886449990061.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/10/16/67101606-3869-ca44-6c03-e13d6322cb51/mzaf_1135399237022217274.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/As%20It%20Was%20Harry%20Styles",
+    "mood": "chill",
+    "tags": [
+      "ซินธ์ป๊อป",
+      "ไม่มีอะไรเหมือนเดิม",
+      "เต้นเหงาๆ"
+    ],
+    "bpm": "เร็ว (174 BPM)",
+    "lang": "en",
+    "animeId": 234,
+    "animeMatch": [
+      234
+    ],
+    "reason": "จังหวะซินธ์ป๊อปเต้นรำแต่เนื้อหากล่าวถึงการเปลี่ยนแปลงและความโดดเดี่ยว",
+    "typoIdea": "ตัวอักษรกลมมินิมอล หมุนตามแป้นหมุนเสียงดนตรี คุมโทนสีฟ้า แดง และเหลืองสดใส"
+  },
+  {
+    "id": 548,
+    "title": "Another Love",
+    "artist": "Tom Odell",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/20/ac/68/20ac6879-1846-84df-7189-d8745c1bef93/196589135537.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/0d/8d/2a0d8d48-f74a-236e-ec23-24a958f5649d/mzaf_16143782915340700495.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Another%20Love%20Tom%20Odell",
+    "mood": "sad",
+    "tags": [
+      "หมดแรงจะรักใคร",
+      "เปียโนทรงพลัง",
+      "น้ำตาไหล"
+    ],
+    "bpm": "ช้า (62 BPM)",
+    "lang": "en",
+    "animeId": 248,
+    "animeMatch": [
+      248
+    ],
+    "reason": "ความเหนื่อยล้าจนแทบไม่มีแรงจะรักใครได้อีก บทเพลงที่ยอดนิยมในการตัดคลิปสะเทือนอารมณ์",
+    "typoIdea": "ตัวหนังสือสั่นไหวและแตกกระจายเมื่อเสียงกลองไคลแม็กซ์ระเบิดขึ้น"
+  },
+  {
+    "id": 549,
+    "title": "Mockingbird",
+    "artist": "Eminem",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/27/79/d5/2779d529-ff10-c15d-1c50-08cd46dd1237/06UMGIM17625.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/c5/39/b3c5394b-cf7a-7114-d938-943c93374fce/mzaf_8824293284590733612.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Mockingbird%20Eminem",
+    "mood": "sad",
+    "tags": [
+      "ความรักครอบครัว",
+      "กล่องดนตรี",
+      "แร็ปบาดลึก"
+    ],
+    "bpm": "ปานกลาง (84 BPM)",
+    "lang": "en",
+    "animeId": 235,
+    "animeMatch": [
+      235
+    ],
+    "reason": "เสียงกล่องดนตรีกล่อมเด็กกับไรม์แร็ปสุดจริงใจของผู้เป็นพ่อ ไวรัลตลอดกาลสำหรับซีนปกป้องคนสำคัญ",
+    "typoIdea": "ฟอนต์แบบสตรีทแต่มีเส้นแสงนุ่มนวล ค่อยๆ พิมพ์ขึ้นตามความเร็วในการเล่าเรื่อง"
+  },
+  {
+    "id": 550,
+    "title": "Can't Hold Us",
+    "artist": "Macklemore & Ryan Lewis feat. Ray Dalton",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5e/5f/81/5e5f81c7-849e-63f6-6ffd-8801145bfd97/707541525398.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/bb/72/71bb7251-2e3c-0e02-8cd6-8e4a0218c398/mzaf_17925527612221098407.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Can't%20Hold%20Us%20Macklemore%20%26%20Ryan%20Lewis%20feat.%20Ray%20Dalton",
+    "mood": "hype",
+    "tags": [
+      "ไม่มีอะไรหยุดเราได้",
+      "พลังเต็มร้อย",
+      "ฮาร์ดคัต"
+    ],
+    "bpm": "เร็ว (146 BPM)",
+    "lang": "en",
+    "animeId": 242,
+    "animeMatch": [
+      242
+    ],
+    "reason": "เพลงพลังบวกสุดมันส์ จังหวะตบมือและเปียโนสปีดสูง เหมาะกับช็อตชิงชัยชนะในวินาทีสุดท้าย",
+    "typoIdea": "ตัวหนังสือ Extra Bold กระแทกตามจังหวะปรบมือ หมุนมุมกล้อง 3D กระตุ้นอะดรีนาลีน"
+  },
+  {
+    "id": 551,
+    "title": "วันเวลาเปลี่ยนไป (วันเวลา)",
+    "artist": "พงษ์เทพ กระโดนชำนาญ",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/a8/15/96/a81596d6-38be-729b-d60b-e40c84b89885/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/14/a9/f5/14a9f543-1cd8-5d71-ff27-e521137a7ef6/mzaf_18039583278245734306.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B9%84%E0%B8%9B%20(%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2)%20%E0%B8%9E%E0%B8%87%E0%B8%A9%E0%B9%8C%E0%B9%80%E0%B8%97%E0%B8%9E%20%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B9%82%E0%B8%94%E0%B8%99%E0%B8%8A%E0%B8%B3%E0%B8%99%E0%B8%B2%E0%B8%8D",
+    "mood": "sad",
+    "tags": [
+      "วันเวลาเปลี่ยนไป",
+      "ความทรงจำ",
+      "คิดถึงอดีต"
+    ],
+    "bpm": "ช้า (68 BPM)",
+    "lang": "th",
+    "animeId": 9,
+    "animeMatch": [
+      9,
+      22,
+      18
+    ],
+    "reason": "เนื้อเพลงสะท้อนถึงวันเวลาที่หมุนเปลี่ยนเวียนไป ทุกสิ่งเปลี่ยนผัน เข้ากับฉากความทรงจำและการพลัดพรากของ Your Name และ Frieren อย่างลึกซึ้ง",
+    "typoIdea": "ฟอนต์ Serif เรียบหรู ย้อมแสงอุ่น Fade In-Out สโลว์โมชั่นตามจังหวะเวลาเดิน"
+  },
+  {
+    "id": 552,
+    "title": "วันเวลา",
+    "artist": "พงษ์สิทธิ์ คำภีร์",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/b5/ad/ae/b5adae5b-553a-96b0-1c12-3c79cbc39fe9/190295408756.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a3/d6/6e/a3d66e52-caeb-0038-4bda-6c6da56d5b16/mzaf_1208238290972712910.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%20%E0%B8%9E%E0%B8%87%E0%B8%A9%E0%B9%8C%E0%B8%AA%E0%B8%B4%E0%B8%97%E0%B8%98%E0%B8%B4%E0%B9%8C%20%E0%B8%84%E0%B8%B3%E0%B8%A0%E0%B8%B5%E0%B8%A3%E0%B9%8C",
+    "mood": "sad",
+    "tags": [
+      "วันเวลา",
+      "กาลเวลา",
+      "ความหลัง"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 22,
+    "animeMatch": [
+      22,
+      18
+    ],
+    "reason": "บรรยากาศโฟล์กซึ้งๆ ถ่ายทอดความเหงาและความผูกพันเมื่อเวลาล่วงเลยไป",
+    "typoIdea": "ฟอนต์ลายมือเบาๆ ขึ้นทีละตัวอักษรพร้อมเอฟเฟกต์ฟิล์มเกรนย้อนยุค"
+  },
+  {
+    "id": 553,
+    "title": "เปลี่ยนไปแต่เหมือนเดิม (Changed)",
+    "artist": "AYLA's",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/01/84/b9/0184b97e-d9a3-30fa-a21c-43429db0bab2/5054197662188.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f8/5c/11/f85c1174-0261-5c2c-779f-a1f2200861e1/mzaf_9405486884806381771.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B9%84%E0%B8%9B%E0%B9%81%E0%B8%95%E0%B9%88%E0%B9%80%E0%B8%AB%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%A1%20(Changed)%20AYLA's",
+    "mood": "sad",
+    "tags": [
+      "เปลี่ยนไป",
+      "ความรู้สึก",
+      "อกหัก"
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "lang": "th",
+    "animeId": 10,
+    "animeMatch": [
+      10,
+      14
+    ],
+    "reason": "ความรู้สึกที่แม้ทุกอย่างจะเปลี่ยนไป แต่ข้างในยังคงเดิม เหมาะกับฉากดราม่าความรู้สึกวัยรุ่น",
+    "typoIdea": "ใช้ฟอนต์สไตล์มินิมอลตัดขอบสีหม่น เคลื่อนที่แบบ Slide Up ช้าๆ"
+  },
+  {
+    "id": 554,
+    "title": "เหมือนเดิมอยู่ไหม (วันเวลาเปลี่ยนไป)",
+    "artist": "Endorphine",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c3/99/de/c399dead-c8dc-2afc-a6a1-6652d3b742a7/888332979504.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/56/8d/2b/568d2b23-c70a-4604-f96e-f6d5b6a2566f/mzaf_7384032267805770698.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%AB%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%A1%E0%B8%AD%E0%B8%A2%E0%B8%B9%E0%B9%88%E0%B9%84%E0%B8%AB%E0%B8%A1%20(%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B9%84%E0%B8%9B)%20Endorphine",
+    "mood": "sad",
+    "tags": [
+      "วันเวลาเปลี่ยนไป",
+      "ถามความรู้สึก",
+      "เหงา"
+    ],
+    "bpm": "ช้า (74 BPM)",
+    "lang": "th",
+    "animeId": 8,
+    "animeMatch": [
+      8,
+      14
+    ],
+    "reason": "ท่อน วันเวลาเปลี่ยนไป อะไรอะไรเปลี่ยนไปได้ทุกอย่าง สื่อถึงความไม่มั่นใจในความสัมพันธ์",
+    "typoIdea": "ตัวหนังสือสีขาวเรืองแสงเบาๆ ขยายขนาดเข้าหาคนดูตามท่อนฮุก"
+  },
+  {
+    "id": 555,
+    "title": "เปลี่ยนไปแล้วทุกอย่าง",
+    "artist": "Uncle Ben",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/c0/9c/e0c09cfc-75cd-da9b-c03c-2b14cbc2fb5c/25UMGIM93307.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c6/e2/46/c6e2466f-f1ff-708a-31e7-cf952c33fb28/mzaf_3280385960187477393.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B9%84%E0%B8%9B%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%E0%B8%97%E0%B8%B8%E0%B8%81%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%20Uncle%20Ben",
+    "mood": "sad",
+    "tags": [
+      "เปลี่ยนไป",
+      "อดีต",
+      "สูญเสีย"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 18,
+    "animeMatch": [
+      18,
+      9
+    ],
+    "reason": "ถ่ายทอดความว่างเปล่าเมื่อคนข้างๆ ไม่เหมือนเดิม เข้ากับฉากฝนตกและน้ำตา",
+    "typoIdea": "ฟอนต์ลายมือกึ่งหวัด มีเอฟเฟกต์ Blur ก่อนจะชัดเมื่อตรงคำร้อง"
+  },
+  {
+    "id": 556,
+    "title": "เปลี่ยนไป (Starlight)",
+    "artist": "Whal & Dolph",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/07/0e/9e/070e9e0b-2b28-b575-5390-900475acf228/25UM1IM07297.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b7/06/04/b70604e1-a932-2586-664c-0c867445567e/mzaf_2877329538197016337.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B9%84%E0%B8%9B%20(Starlight)%20Whal%20%26%20Dolph",
+    "mood": "chill",
+    "tags": [
+      "เปลี่ยนไป",
+      "ดวงดาว",
+      "อินดี้"
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "lang": "th",
+    "animeId": 13,
+    "animeMatch": [
+      13,
+      19
+    ],
+    "reason": "เมโลดี้อินดี้ป็อปฟังสบายแต่แฝงความคิดถึงวันเก่าๆ",
+    "typoIdea": "ตัวอักษรแบบโมเดิร์นโค้งมน เด้งนุ่มนวลตามเบสกีตาร์"
+  },
+  {
+    "id": 557,
+    "title": "แล้ววันหนึ่งเธอกับฉันก็ต้องจากกันในวันที่ฤดูหนาวเปลี่ยนไป",
+    "artist": "ชีวรินท์",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/12/64/ea/1264ea68-7bd6-c046-30ee-e1cf54c062e4/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/23/e9/a9/23e9a988-bbad-ea1d-00c1-3e81ba712efb/mzaf_8537939197615000529.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%AB%E0%B8%99%E0%B8%B6%E0%B9%88%E0%B8%87%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%81%E0%B9%87%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B9%83%E0%B8%99%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A4%E0%B8%94%E0%B8%B9%E0%B8%AB%E0%B8%99%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B9%84%E0%B8%9B%20%E0%B8%8A%E0%B8%B5%E0%B8%A7%E0%B8%A3%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B9%8C",
+    "mood": "sad",
+    "tags": [
+      "ฤดูหนาว",
+      "จากลา",
+      "หิมะ"
+    ],
+    "bpm": "ช้า (66 BPM)",
+    "lang": "th",
+    "animeId": 15,
+    "animeMatch": [
+      15,
+      9
+    ],
+    "reason": "ชื่อเพลงสุดโรแมนติกและเศร้า เข้ากับฉากหิมะตกของ 5 Centimeters per Second อย่างสมบูรณ์",
+    "typoIdea": "ตัวอักษรสีขาวบางเฉียบ เลื่อนลอยเหมือนละอองหิมะที่ค่อยๆ ละลาย"
+  },
+  {
+    "id": 558,
+    "title": "ลืมแทบไม่ไหว",
+    "artist": "SARAN x Maimhon",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/b3/10/f7/b310f75e-2465-705c-7d55-0480dcce3b98/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ab/16/c1/ab16c133-7bdc-01e6-0e6c-f9ff0c8c9f41/mzaf_3282050872927801930.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B7%E0%B8%A1%E0%B9%81%E0%B8%97%E0%B8%9A%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%AB%E0%B8%A7%20SARAN%20x%20Maimhon",
+    "mood": "sad",
+    "tags": [
+      "ลืมไม่ไหว",
+      "ฮิปฮอป",
+      "เจ็บปวด"
+    ],
+    "bpm": "ช้า (78 BPM)",
+    "lang": "th",
+    "animeId": 30,
+    "animeMatch": [
+      30,
+      11
+    ],
+    "reason": "บีทฮิปฮอปผสมกลิ่นอายเพื่อชีวิต ท่อนแร็ปบาดใจเข้ากับฉากย้อนอดีตดราม่าต่อสู้",
+    "typoIdea": "ตัวหนังสือตัวหนาสไตล์ Kinetic Typo พุ่งกระแทกตามจังหวะคิกและสแนร์"
+  },
+  {
+    "id": 559,
+    "title": "วาดไว้ (Recall)",
+    "artist": "BOWKYLION",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0f/0f/42/0f0f4249-8f24-a6e8-56e4-6ec088900d93/25UMGIM79865.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/14/66/49/1466491a-b745-525c-7b96-321b4fd231d0/mzaf_16914207157708959097.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A7%E0%B8%B2%E0%B8%94%E0%B9%84%E0%B8%A7%E0%B9%89%20(Recall)%20BOWKYLION",
+    "mood": "sad",
+    "tags": [
+      "วาดไว้",
+      "น้ำตา",
+      "จากลา"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 3,
+    "animeMatch": [
+      3,
+      18
+    ],
+    "reason": "เพลงไวรัลแห่งชาติ ที่วาดไว้ในฝันแต่ความเป็นจริงคือจากลา เข้ากับ Violet Evergarden ที่สุด",
+    "typoIdea": "ฟอนต์หรูหราคมกริบ ค่อยๆ วาดเส้นเป็นตัวอักษรทีละเส้นคล้ายพู่กัน"
+  },
+  {
+    "id": 560,
+    "title": "ถ้าเราเจอกันอีก (Until Then)",
+    "artist": "Tilly Birds",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/31/bc/03/31bc03c0-7ddb-9615-c0f1-d97ee1fb0e08/888332913805.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ef/40/e2/ef40e2a5-462d-3900-e800-ac36e02fc442/mzaf_2677602440669876174.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%96%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%A3%E0%B8%B2%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%AD%E0%B8%B5%E0%B8%81%20(Until%20Then)%20Tilly%20Birds",
+    "mood": "sad",
+    "tags": [
+      "เจอกันอีก",
+      "คิดถึง",
+      "สวรรค์"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "th",
+    "animeId": 18,
+    "animeMatch": [
+      18,
+      22
+    ],
+    "reason": "คำสัญญาที่หวังว่าจะได้เจอกันอีกที่ไหนสักแห่ง ยอดฮิตในคลิปไทโปตัดพ้อชีวิต",
+    "typoIdea": "เอฟเฟกต์ Glitch เบาๆ แล้วสว่างวาบในท่อนฮุก"
+  },
+  {
+    "id": 561,
+    "title": "โต๊ะริม (melt)",
+    "artist": "NONT TANONT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5d/70/fe/5d70fe6e-f3e4-c874-a2de-e4ecd186bf80/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/5f/f4/f45ff486-6fa0-9df5-9d58-8ed552c86140/mzaf_5412811150878921175.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%82%E0%B8%95%E0%B9%8A%E0%B8%B0%E0%B8%A3%E0%B8%B4%E0%B8%A1%20(melt)%20NONT%20TANONT",
+    "mood": "love",
+    "tags": [
+      "ตกหลุมรัก",
+      "ละลาย",
+      "แอบชอบ"
+    ],
+    "bpm": "ปานกลาง (100 BPM)",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14,
+      2
+    ],
+    "reason": "ความรู้สึกใจละลายเมื่อมองเธอจากโต๊ะริม เข้ากับฉากโรแมนติกคอมเมดี้",
+    "typoIdea": "ฟอนต์น่ารัก สีพาสเทล ละลายหยดลงตามคำร้อง melt"
+  },
+  {
+    "id": 562,
+    "title": "พิง",
+    "artist": "NONT TANONT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/68/25/6668253c-aa17-85c5-4ad4-d112e0d7cd1e/mzaf_4161458375630754491.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%B4%E0%B8%87%20NONT%20TANONT",
+    "mood": "love",
+    "tags": [
+      "พักพิง",
+      "อบอุ่น",
+      "ดูแล"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14,
+      3
+    ],
+    "reason": "พร้อมจะเป็นที่พักพิงให้เธอเสมอ ซึ้งและอบอุ่นหัวใจ",
+    "typoIdea": "ฟอนต์โค้งมน อบอุ่น มีแสงโกลว์สีทองนุ่มลอยรองหลัง"
+  },
+  {
+    "id": 563,
+    "title": "จำนน",
+    "artist": "NONT TANONT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/30/b3/b5/30b3b54c-b1ce-e6c4-a0e0-2ec6eee6766b/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3f/be/b9/3fbeb9fa-3537-ee85-553c-c9992f3aa3ff/mzaf_11225322134181997478.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%88%E0%B8%B3%E0%B8%99%E0%B8%99%20NONT%20TANONT",
+    "mood": "sad",
+    "tags": [
+      "ยอมแพ้",
+      "เจ็บปวด",
+      "จำนน"
+    ],
+    "bpm": "ช้า (68 BPM)",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      1,
+      10
+    ],
+    "reason": "การจำนนต่อความรักที่ไม่มีวันสมหวัง บาดลึกหัวใจ",
+    "typoIdea": "ตัวอักษรแตกร้าว ค่อยๆ ร่วงหล่นลงด้านล่างจอ"
+  },
+  {
+    "id": 564,
+    "title": "ไม่เปลี่ยนเลย (Best Luck)",
+    "artist": "fellow fellow",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/6f/be/f9/6fbef931-6eee-0c8d-6d90-f17301061daf/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/08/c8/af08c87c-8f9d-cc49-739a-7830f1567c00/mzaf_5128047126536625887.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B9%80%E0%B8%A5%E0%B8%A2%20(Best%20Luck)%20fellow%20fellow",
+    "mood": "love",
+    "tags": [
+      "ไม่เปลี่ยนเลย",
+      "รักเสมอ",
+      "อบอุ่น"
+    ],
+    "bpm": "ปานกลาง (96 BPM)",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14,
+      20
+    ],
+    "reason": "โชคดีแค่ไหนที่ได้รักเธอ และความรู้สึกไม่เคยเปลี่ยนไป",
+    "typoIdea": "ฟอนต์มินิมอล มีหัวใจดวงเล็กๆ ลอยผ่านตัวอักษร"
+  },
+  {
+    "id": 565,
+    "title": "หยดน้ำตา (Tears)",
+    "artist": "4EVE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/82/c4/b7/82c4b70a-95d5-0866-32b7-579774147012/25UMGIM35416.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/18/1b/99/181b999e-aa4f-575d-e6d0-7da603756bd0/mzaf_6537050579275792757.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%A2%E0%B8%94%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B8%B2%20(Tears)%204EVE",
+    "mood": "sad",
+    "tags": [
+      "หยดน้ำตา",
+      "อกหัก",
+      "ป็อป"
+    ],
+    "bpm": "ช้า (76 BPM)",
+    "lang": "th",
+    "animeId": 21,
+    "animeMatch": [
+      21,
+      10
+    ],
+    "reason": "เพลงช้าที่ทรงพลังที่สุดของ 4EVE เข้ากับฉากไอดอลและน้ำตาใน Oshi no Ko",
+    "typoIdea": "ตัวหนังสือแก้วโปร่งแสง มีประกายน้ำตาสะท้อนแสง"
+  },
+  {
+    "id": 566,
+    "title": "ภาพจำ",
+    "artist": "ป๊อบ ปองกูล",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c9/c1/6c/c9c16c5e-e99d-c08f-6c88-d5b13d0f03dd/888332936224.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/92/51/36/925136e1-f8c8-815a-b222-dd512ea87501/mzaf_1228418370768204602.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%88%E0%B8%B3%20%E0%B8%9B%E0%B9%8A%E0%B8%AD%E0%B8%9A%20%E0%B8%9B%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B9%E0%B8%A5",
+    "mood": "sad",
+    "tags": [
+      "ภาพจำ",
+      "ลืมไม่ลง",
+      "ความทรงจำ"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 9,
+    "animeMatch": [
+      9,
+      1
+    ],
+    "reason": "ภาพจำยังชัดเจนประหนึ่งเพิ่งเกิดขึ้นเมื่อวาน ยอดฮิตตลอดกาลของคลิปอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ สลักลงบนจอเหมือนภาพถ่ายโพลารอยด์"
+  },
+  {
+    "id": 567,
+    "title": "ดวงเดือน",
+    "artist": "JOEY PHUWASIT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/47/fd/90/47fd904b-7653-5f99-d915-19529a77c697/888332917681.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/64/31/d964312a-8619-ca7c-2580-1844e0fdf698/mzaf_8881744960688057961.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B9%80%E0%B8%94%E0%B8%B7%E0%B8%AD%E0%B8%99%20JOEY%20PHUWASIT",
+    "mood": "sad",
+    "tags": [
+      "ดวงจันทร์",
+      "คิดถึงบ้าน",
+      "คนไกล"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "th",
+    "animeId": 23,
+    "animeMatch": [
+      23,
+      11
+    ],
+    "reason": "เสียงร้องกังวานและเสียงพิณสุดจับใจ ส่งความถึงคนอยู่ไกลใต้ดวงจันทร์ดวงเดียวกัน",
+    "typoIdea": "ฟอนต์สีเงินประกายจันทรา ส่องแสงวาบเป็นจังหวะ"
+  },
+  {
+    "id": 568,
+    "title": "นะหน้าทอง",
+    "artist": "JOEY PHUWASIT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/cc/96/60cc96ee-d36d-201c-0ae7-a8f9d43d672e/mzaf_17220888096056606772.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%99%E0%B8%B0%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%97%E0%B8%AD%E0%B8%87%20JOEY%20PHUWASIT",
+    "mood": "hype",
+    "tags": [
+      "สะกดใจ",
+      "หลงรัก",
+      "ร็อคไทย"
+    ],
+    "bpm": "เร็ว (125 BPM)",
+    "lang": "th",
+    "animeId": 5,
+    "animeMatch": [
+      5,
+      24
+    ],
+    "reason": "บีทกระแทกใจ ผสมมนต์เสน่ห์ เข้ากับฉากแอคชั่นตัดต่อเร็วๆ",
+    "typoIdea": "ฟอนต์สีทองอร่าม กระตุกและสั่นไหวแบบ Shake Effect"
+  },
+  {
+    "id": 569,
+    "title": "เมษา",
+    "artist": "fellow fellow ft. BLACKBEANS",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/73/8f/91/738f91e4-a3e7-6e77-741e-f20fff3fab9f/8859028150356.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fc/7e/e1/fc7ee125-53f3-23ca-4550-34ab2f8640f4/mzaf_11820125010527885603.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A1%E0%B8%A9%E0%B8%B2%20fellow%20fellow%20ft.%20BLACKBEANS",
+    "mood": "sad",
+    "tags": [
+      "เมษา",
+      "หน้าร้อน",
+      "จากลา"
+    ],
+    "bpm": "ช้า (78 BPM)",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      1,
+      9
+    ],
+    "reason": "ความทรงจำในเดือนเมษาที่อบอุ่นแต่เจ็บปวด",
+    "typoIdea": "ฟอนต์บางเบา สีส้มอ่อนของแสงแดดยามเย็น ลอยผ่านหน้าจอ"
+  },
+  {
+    "id": 570,
+    "title": "Wish",
+    "artist": "Blackbeans",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/97/1b/21/971b2145-7fef-3ce8-6ebb-7300b14c0b62/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1a/89/b6/1a89b60c-dfb8-44c1-3dc9-abec9bf5e29a/mzaf_11321530818193066067.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Wish%20Blackbeans",
+    "mood": "chill",
+    "tags": [
+      "อธิษฐาน",
+      "ชิลล์",
+      "กลางคืน"
+    ],
+    "bpm": "ช้า (80 BPM)",
+    "lang": "th",
+    "animeId": 13,
+    "animeMatch": [
+      13,
+      20
+    ],
+    "reason": "ความรู้สึกชิลล์ยามค่ำคืนกับเสียงร้องนุ่มๆ",
+    "typoIdea": "ตัวหนังสือโปร่งแสง ลอยฟุ้งกลางละอองดาว"
+  },
+  {
+    "id": 571,
+    "title": "Moon",
+    "artist": "Blackbeans",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/47/12/65/47126576-2db1-9529-f877-11211cd654ce/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3f/d9/ca/3fd9ca56-4ff6-0a85-3c6c-f5489d84c219/mzaf_1735759782933162554.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Moon%20Blackbeans",
+    "mood": "chill",
+    "tags": [
+      "พระจันทร์",
+      "ดึกดื่น",
+      "เหงา"
+    ],
+    "bpm": "ช้า (76 BPM)",
+    "lang": "th",
+    "animeId": 25,
+    "animeMatch": [
+      25,
+      9
+    ],
+    "reason": "บรรยากาศมองพระจันทร์กับความทรงจำของคนสองคน เข้ากับ Edgerunners อย่างน่าทึ่ง",
+    "typoIdea": "ตัวหนังสือสีเหลืองนวล เคลื่อนที่แบบ Orbit รอบองค์ประกอบ"
+  },
+  {
+    "id": 572,
+    "title": "กลิ่นดอกไม้",
+    "artist": "Newery",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b2/81/0c/b2810cad-9fad-ed73-71fc-76a81f33dfdd/0849480072479_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/c3/a7/2ec3a7a1-78fb-efac-c3aa-5bc5220eab9e/mzaf_10494967788962621898.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%A5%E0%B8%B4%E0%B9%88%E0%B8%99%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B9%84%E0%B8%A1%E0%B9%89%20Newery",
+    "mood": "sad",
+    "tags": [
+      "กลิ่นดอกไม้",
+      "คิดถึง",
+      "อบอุ่น"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 12,
+    "animeMatch": [
+      12,
+      18
+    ],
+    "reason": "กลิ่นหอมที่พาหวนคิดถึงวันวาน เข้ากับฉากป่าไม้และวิญญาณของ Hotarubi no Mori e",
+    "typoIdea": "ฟอนต์ลายมือพลิ้วไหว กลีบดอกไม้โปรยปรายรอบข้อความ"
+  },
+  {
+    "id": 573,
+    "title": "หลงรัก",
+    "artist": "Newery",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/65/8b/6d/658b6d6c-d878-c91b-954f-6d790598686a/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/c8/d0/ed/c8d0ed77-4e8e-e07b-b312-3c72dac18109/mzaf_16314888132155269219.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%A5%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81%20Newery",
+    "mood": "love",
+    "tags": [
+      "หลงรัก",
+      "ตกหลุมรัก",
+      "ละมุน"
+    ],
+    "bpm": "ปานกลาง (92 BPM)",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14,
+      2
+    ],
+    "reason": "เพลงแอบรักฟีลกู๊ด อบอุ่นหัวใจ เหมาะกับคลิปหวานๆ ในรั้วโรงเรียน",
+    "typoIdea": "ฟอนต์น่ารักเด้งไปมาแบบ Bounce เล็กน้อย"
+  },
+  {
+    "id": 574,
+    "title": "สลักจิต",
+    "artist": "ป๊อบ ปองกูล feat. ดา เอ็นโดรฟิน",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8c/69/cb/8c69cba7-b440-a3b3-b9c0-8e409b8613f2/888332908481.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/6e/34/e66e34c2-c971-ef2c-2e0f-f8a99e220912/mzaf_7695861381642299193.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%88%E0%B8%B4%E0%B8%95%20%E0%B8%9B%E0%B9%8A%E0%B8%AD%E0%B8%9A%20%E0%B8%9B%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B9%E0%B8%A5%20feat.%20%E0%B8%94%E0%B8%B2%20%E0%B9%80%E0%B8%AD%E0%B9%87%E0%B8%99%E0%B9%82%E0%B8%94%E0%B8%A3%E0%B8%9F%E0%B8%B4%E0%B8%99",
+    "mood": "sad",
+    "tags": [
+      "สลักจิต",
+      "ลืมไม่ได้",
+      "เจ็บลึก"
+    ],
+    "bpm": "ช้า (68 BPM)",
+    "lang": "th",
+    "animeId": 3,
+    "animeMatch": [
+      3,
+      9
+    ],
+    "reason": "ชื่อเธอสลักอยู่ในจิตใจ แม้เวลาจะผ่านไปนานแค่ไหนก็ลบไม่ออก",
+    "typoIdea": "ตัวอักษรแกะสลักเรืองแสงสีชาด ค่อยๆ ปรากฏขึ้น"
+  },
+  {
+    "id": 575,
+    "title": "รักแรก (First Love)",
+    "artist": "NONT TANONT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4a/b0/fb/4ab0fb88-6e1e-aa92-1073-3328de938f11/888332904681.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dd/68/d2/dd68d249-fd10-8e2a-0c2e-486774533a60/mzaf_15793260015738384691.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%81%E0%B8%A3%E0%B8%81%20(First%20Love)%20NONT%20TANONT",
+    "mood": "love",
+    "tags": [
+      "รักแรก",
+      "วัยเรียน",
+      "ความทรงจำ"
+    ],
+    "bpm": "ช้า (74 BPM)",
+    "lang": "th",
+    "animeId": 20,
+    "animeMatch": [
+      20,
+      14
+    ],
+    "reason": "เพลงรักแรกที่ตรึงใจคนทั้งประเทศ เข้ากับบรรยากาศมัธยมปลาย",
+    "typoIdea": "ฟอนต์เรียบหรูสไตล์โน้ตสมุดเรียน ย้อนวันวาน"
+  },
+  {
+    "id": 576,
+    "title": "เส้นบางๆ",
+    "artist": "INDIGO",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b0/16/d8/b016d888-ced2-6c26-ab6d-4412583ca9ba/0840102487152_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8b/b6/f9/8bb6f9dd-7a14-44ce-c441-7cce25877660/mzaf_13562693385241554759.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%AA%E0%B9%89%E0%B8%99%E0%B8%9A%E0%B8%B2%E0%B8%87%E0%B9%86%20INDIGO",
+    "mood": "sad",
+    "tags": [
+      "เส้นบางๆ",
+      "เพื่อนรัก",
+      "แอบชอบ"
+    ],
+    "bpm": "ปานกลาง (84 BPM)",
+    "lang": "th",
+    "animeId": 8,
+    "animeMatch": [
+      8,
+      14
+    ],
+    "reason": "เส้นแบ่งระหว่างเพื่อนกับคนรักที่ก้าวข้ามไม่ได้",
+    "typoIdea": "เส้นตรงบางๆ ขีดคั่นระหว่างคำ ก่อนจะค่อยๆ แตกกระจาย"
+  },
+  {
+    "id": 577,
+    "title": "ถ้าเธอรักฉันจริง",
+    "artist": "Three Man Down",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/17/78/67177823-eea6-843e-2fd6-1cb45da0fa62/888332917599.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/02/13/f4021324-132e-c5de-8b8e-8dca141c1880/mzaf_3517459293482534577.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%96%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%87%20Three%20Man%20Down",
+    "mood": "sad",
+    "tags": [
+      "หวังดี",
+      "ปล่อยไป",
+      "อกหัก"
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "lang": "th",
+    "animeId": 10,
+    "animeMatch": [
+      10,
+      8
+    ],
+    "reason": "ถ้าเธอรักฉันจริง ได้โปรดทิ้งฉันไป เพื่อให้เธอได้เจอสิ่งที่ดีกว่า",
+    "typoIdea": "ตัวอักษรเน้นคำเด่นด้วยสีแดงสด สลับฉากตัดเร็ว"
+  },
+  {
+    "id": 578,
+    "title": "วันเกิดฉันปีนี้ (HBD to me)",
+    "artist": "Three Man Down",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/0b/4e/290b4ec0-c24d-8f11-695d-acc8ebb145b4/888332914536.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/37/b6/a6/37b6a6a3-1dca-1397-409c-cd4670b55122/mzaf_4887075626909576367.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%81%E0%B8%B4%E0%B8%94%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%9B%E0%B8%B5%E0%B8%99%E0%B8%B5%E0%B9%89%20(HBD%20to%20me)%20Three%20Man%20Down",
+    "mood": "sad",
+    "tags": [
+      "วันเกิด",
+      "เดียวดาย",
+      "คิดถึง"
+    ],
+    "bpm": "ช้า (74 BPM)",
+    "lang": "th",
+    "animeId": 18,
+    "animeMatch": [
+      18,
+      10
+    ],
+    "reason": "ของขวัญวันเกิดชิ้นเดียวที่อยากได้คือเธอ ขอพรให้เธอกลับมา",
+    "typoIdea": "เทียนวันเกิดริบหรี่ ควันเทียนลอยขึ้นเป็นรูปตัวหนังสือ"
+  },
+  {
+    "id": 579,
+    "title": "กีดกัน (Skyline)",
+    "artist": "Billkin",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/1b/3e/19/1b3e1926-dec0-ee1d-3af1-f282330d8133/21UMGIM61789.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6e/61/4d/6e614df7-ce9a-5f08-911e-44fd4e572e6b/mzaf_6336853943153832577.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%B5%E0%B8%94%E0%B8%81%E0%B8%B1%E0%B8%99%20(Skyline)%20Billkin",
+    "mood": "sad",
+    "tags": [
+      "ขอบฟ้า",
+      "โชคชะตา",
+      "ความรัก"
+    ],
+    "bpm": "ช้า (66 BPM)",
+    "lang": "th",
+    "animeId": 9,
+    "animeMatch": [
+      9,
+      3
+    ],
+    "reason": "แม้เส้นขอบฟ้าจะขวางกั้น ก็ไม่อาจกั้นความรักของเราได้",
+    "typoIdea": "เส้นขอบฟ้าสีทองพาดกลางจอ ตัวอักษรสะท้อนผิวน้ำ"
+  },
+  {
+    "id": 580,
+    "title": "โคตรพิเศษ",
+    "artist": "Billkin",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e4/ea/c8/e4eac88a-2469-8a22-261d-3a1326fc61b3/21UMGIM61782.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0d/40/5e/0d405e54-0350-2a85-5259-1e9e70c39e59/mzaf_9765378744840613670.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%82%E0%B8%84%E0%B8%95%E0%B8%A3%E0%B8%9E%E0%B8%B4%E0%B9%80%E0%B8%A8%E0%B8%A9%20Billkin",
+    "mood": "love",
+    "tags": [
+      "พิเศษ",
+      "เธอคนเดียว",
+      "อบอุ่น"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14,
+      20
+    ],
+    "reason": "เพราะเธอคือคนที่โคตรพิเศษในชีวิต",
+    "typoIdea": "ประกายดาววิบวับรอบคำว่า พิเศษ"
+  },
+  {
+    "id": 581,
+    "title": "คำยินดี",
+    "artist": "KLEAR",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/77/75/70/777570c5-15e6-71a9-9d80-0261333583cd/888332991414.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9b/0d/25/9b0d2539-6aaf-7c9e-2486-bc7874ac5122/mzaf_7280392792458901469.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B3%E0%B8%A2%E0%B8%B4%E0%B8%99%E0%B8%94%E0%B8%B5%20KLEAR",
+    "mood": "sad",
+    "tags": [
+      "ยินดี",
+      "งานแต่ง",
+      "เจ็บปวด"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      1,
+      10
+    ],
+    "reason": "เพลงอกหักระดับตำนาน ยิ้มทั้งน้ำตาเพื่อยินดีกับความสุขของเธอ",
+    "typoIdea": "ตัวหนังสือขอบดำพื้นขาว กระพริบตามจังหวะเปียโน"
+  },
+  {
+    "id": 582,
+    "title": "สิ่งของ",
+    "artist": "KLEAR",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f0/a9/72/f0a97283-6c79-f005-80de-15fb8247dae0/888332952316.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/8b/5d/678b5d00-7a2c-2cc3-c96e-e7b18526c98d/mzaf_1385378532326019552.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%AD%E0%B8%87%20KLEAR",
+    "mood": "love",
+    "tags": [
+      "ซ่อมแซม",
+      "ของเก่า",
+      "เห็นค่า"
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "lang": "th",
+    "animeId": 3,
+    "animeMatch": [
+      3,
+      10
+    ],
+    "reason": "จากสิ่งของที่ไม่มีค่า เธอกลับมองเห็นและเก็บมารักษา",
+    "typoIdea": "ชิ้นส่วนตัวหนังสือค่อยๆ ต่อประกอบกันจนสมบูรณ์"
+  },
+  {
+    "id": 583,
+    "title": "รักไม่ต้องการเวลา",
+    "artist": "KLEAR",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ea/f9/c7/eaf9c758-0f8f-bc6a-7c2f-ac3995f3f9ce/888332973960.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/18/d3/ee/18d3ee17-c832-271c-c922-3b64ef7f6e24/mzaf_2241832353594298933.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%20KLEAR",
+    "mood": "love",
+    "tags": [
+      "กาลเวลา",
+      "รักแท้",
+      "ตลอดไป"
+    ],
+    "bpm": "ปานกลาง (94 BPM)",
+    "lang": "th",
+    "animeId": 9,
+    "animeMatch": [
+      9,
+      15
+    ],
+    "reason": "ตรงกับธีมกาลเวลา เมื่อรักแท้ไม่สนว่าเวลาจะผ่านไปนานเพียงใด",
+    "typoIdea": "เข็มนาฬิกาหมุนวนรอบข้อความ แล้วหยุดนิ่งตรงเวลาปัจจุบัน"
+  },
+  {
+    "id": 584,
+    "title": "เธอเก่ง",
+    "artist": "Jetset'er",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/19/af/c5/19afc5c7-1bbc-4e85-7d0e-6217d02aa8be/888332938273.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/96/39/16/963916f0-ce01-aad7-e227-4b3a8c3d02c6/mzaf_12779033532088526221.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87%20Jetset'er",
+    "mood": "sad",
+    "tags": [
+      "เก่ง",
+      "ทำใจ",
+      "เจ็บ"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 10,
+    "animeMatch": [
+      10,
+      18
+    ],
+    "reason": "เธอเก่งที่ทำให้ฉันคิดถึงเธอได้ตลอดเวลา",
+    "typoIdea": "ตัวหนังสือเงียบสงบ Fade ช้าๆ ดึงอารมณ์ดิ่ง"
+  },
+  {
+    "id": 585,
+    "title": "พิจารณา (Consider)",
+    "artist": "Musketeers feat. MAIYARAP",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/36/67/693667e1-5321-801b-2762-2706f0a8ce26/25UM1IM09762.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/c3/28/acc32878-a7bd-58a1-7d09-06fc124e8b50/mzaf_15257925916120333587.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%B4%E0%B8%88%E0%B8%B2%E0%B8%A3%E0%B8%93%E0%B8%B2%20(Consider)%20Musketeers%20feat.%20MAIYARAP",
+    "mood": "chill",
+    "tags": [
+      "พิจารณา",
+      "ทบทวน",
+      "ชิลล์"
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14,
+      2
+    ],
+    "reason": "เพลงฟังสบายๆ ชวนทบทวนเรื่องราวดีๆ ระหว่างเรา",
+    "typoIdea": "ฟอนต์มินิมอล มีเส้นใต้ลากผ่านคำร้อง"
+  },
+  {
+    "id": 586,
+    "title": "เลือดกรุ๊ปบี (B Blood Type)",
+    "artist": "Chrrissa Chotiras",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/9f/64/86/9f6486f1-746c-d3b5-1569-3a6294cdfea0/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/ca/32/cb/ca32cbd3-6e00-5d33-72c4-7d71ee456d73/mzaf_15308886385266869376.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%94%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B9%8A%E0%B8%9B%E0%B8%9A%E0%B8%B5%20(B%20Blood%20Type)%20Chrrissa%20Chotiras",
+    "mood": "chill",
+    "tags": [
+      "เลือดกรุ๊ปบี",
+      "ไวรัล",
+      "ตลก"
+    ],
+    "bpm": "ปานกลาง (94 BPM)",
+    "lang": "th",
+    "animeId": 2,
+    "animeMatch": [
+      2,
+      19
+    ],
+    "reason": "เพลงไวรัลสุดฮิต ตัดต่อคู่กับซีนขายขำในอนิเมะโรแมนติกคอมเมดี้",
+    "typoIdea": "ฟอนต์ป๊อปน่ารัก สติกเกอร์หยดเลือดสีแดงสดใส"
+  },
+  {
+    "id": 587,
+    "title": "พัง",
+    "artist": "INDIGO",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/32/ae/fd/32aefd49-ecd3-6199-fc67-e769485893ce/0840291244598.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/aa/c4/ce/aac4cec7-5062-2b24-1ef3-97d622568bf8/mzaf_14666153690779455863.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%B1%E0%B8%87%20INDIGO",
+    "mood": "sad",
+    "tags": [
+      "พัง",
+      "อกหัก",
+      "ร็อค"
+    ],
+    "bpm": "ช้า (74 BPM)",
+    "lang": "th",
+    "animeId": 10,
+    "animeMatch": [
+      10,
+      8
+    ],
+    "reason": "ความรู้สึกพังทลายเมื่อถูกทิ้ง เข้ากับฉากร้องไห้กลางสายฝน",
+    "typoIdea": "ตัวอักษรแตกร้าวสลายเป็นเศษผง"
+  },
+  {
+    "id": 588,
+    "title": "น้อง (feat. URBOYTJ)",
+    "artist": "Three Man Down feat. URBOYTJ",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/74/35/93/74359389-10ad-9c7b-b397-ff226fc92890/888332906746.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/07/4e/f9074e99-418d-e2e8-81cf-4f062294c200/mzaf_13515487952562679555.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%87%20(feat.%20URBOYTJ)%20Three%20Man%20Down%20feat.%20URBOYTJ",
+    "mood": "hype",
+    "tags": [
+      "น้อง",
+      "แอบชอบ",
+      "จีบ"
+    ],
+    "bpm": "เร็ว (120 BPM)",
+    "lang": "th",
+    "animeId": 2,
+    "animeMatch": [
+      2,
+      14
+    ],
+    "reason": "เพลงเร็วสุดกวน เหมาะกับคลิปไทโปตัดต่อจังหวะเร็ว",
+    "typoIdea": "ตัวหนังสือพุ่งจากหลังมาหน้าจอตามบีท"
+  },
+  {
+    "id": 589,
+    "title": "หวังว่าเธอสบายดี",
+    "artist": "Three Man Down",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/fe/6e/71/fe6e7105-4c41-3e13-faac-bff555c5cd80/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/93/23/ab/9323abc8-d5fc-0bd8-9f14-0e0be14ce735/mzaf_6046384343602072316.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%87%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%AA%E0%B8%9A%E0%B8%B2%E0%B8%A2%E0%B8%94%E0%B8%B5%20Three%20Man%20Down",
+    "mood": "sad",
+    "tags": [
+      "ห่วงใย",
+      "หวังว่า",
+      "คิดถึง"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 9,
+    "animeMatch": [
+      9,
+      18
+    ],
+    "reason": "ความปรารถนาดีที่ส่งไปถึงคนรักเก่าแม้ไม่ได้คุยกันแล้ว",
+    "typoIdea": "ฟอนต์แชทข้อความลอยขึ้นมาทีละบรรทัด"
+  },
+  {
+    "id": 590,
+    "title": "กอดในใจ",
+    "artist": "Billkin feat. JAYLERR",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ff/7a/4a/ff7a4a2b-915e-cb7b-e9f2-b0d42a3440b2/21UMGIM61784.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b6/4c/04/b64c0494-122a-2c86-4d77-b8bd4042093b/mzaf_10930101146608886004.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%AD%E0%B8%94%E0%B9%83%E0%B8%99%E0%B9%83%E0%B8%88%20Billkin%20feat.%20JAYLERR",
+    "mood": "love",
+    "tags": [
+      "กอดในใจ",
+      "ระยะทาง",
+      "อบอุ่น"
+    ],
+    "bpm": "ปานกลาง (86 BPM)",
+    "lang": "th",
+    "animeId": 9,
+    "animeMatch": [
+      9,
+      14
+    ],
+    "reason": "แม้ห่างไกลแต่ยังกอดกันไว้ในใจเสมอ",
+    "typoIdea": "ตัวอักษรนุ่มนวลมีแสงโกลว์ไออุ่น"
+  },
+  {
+    "id": 591,
+    "title": "ไม่ปล่อยมือ (Coming of Age)",
+    "artist": "Billkin, PP Krit",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c4/dc/b6/c4dcb638-2416-6e58-f8ad-c2b90c5b1567/21UMGIM61775.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a6/77/76/a6777670-bd90-75f0-a033-08d9c2bb44fa/mzaf_4916823770698868084.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%9B%E0%B8%A5%E0%B9%88%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B7%E0%B8%AD%20(Coming%20of%20Age)%20Billkin%2C%20PP%20Krit",
+    "mood": "love",
+    "tags": [
+      "ไม่ปล่อยมือ",
+      "เติบโต",
+      "เพื่อนรัก"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14,
+      1
+    ],
+    "reason": "การจับมือเคียงข้างกันผ่านช่วงวัยแห่งการเติบโต",
+    "typoIdea": "ไอคอนจับมือเรืองแสงเชื่อมระหว่างตัวหนังสือ"
+  },
+  {
+    "id": 592,
+    "title": "ลังเล",
+    "artist": "PP Krit",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/40/b9/8c/40b98c41-ab92-b9e6-57f5-c0cc48370205/24UM1IM13328.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5e/a6/40/5ea6403c-56ff-f3db-a3b7-5d482583b0e0/mzaf_11997561428978750693.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B9%80%E0%B8%A5%20PP%20Krit",
+    "mood": "love",
+    "tags": [
+      "ลังเล",
+      "น่ารัก",
+      "ป็อป"
+    ],
+    "bpm": "ปานกลาง (102 BPM)",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14,
+      2
+    ],
+    "reason": "อาการลังเลที่น่ารัก เข้ากับฉากสารภาพรักในรั้วโรงเรียน",
+    "typoIdea": "ฟอนต์แนวเคป็อปสดใส เต้นดุ๊กดิ๊กตามจังหวะ"
+  },
+  {
+    "id": 593,
+    "title": "ห่างกันสักพัก (Break)",
+    "artist": "WAII",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4a/7c/af/4a7caf49-c618-fb88-d78d-c0c385d260bd/23UM1IM50668.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/32/41/17/324117f9-3401-500a-2733-320f5fd4688f/mzaf_16020532733471070569.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%AA%E0%B8%B1%E0%B8%81%E0%B8%9E%E0%B8%B1%E0%B8%81%20(Break)%20WAII",
+    "mood": "sad",
+    "tags": [
+      "กามิกาเซ่",
+      "ห่างกัน",
+      "อกหัก"
+    ],
+    "bpm": "ช้า (74 BPM)",
+    "lang": "th",
+    "animeId": 10,
+    "animeMatch": [
+      10,
+      8
+    ],
+    "reason": "คำว่าห่างกันสักพักที่แปลว่าเลิกกัน ยุคทองกามิกาเซ่",
+    "typoIdea": "ตัวอักษร Y2K ค่อยๆ แยกห่างออกจากกัน"
+  },
+  {
+    "id": 594,
+    "title": "แทงข้างหลัง..ทะลุถึงหัวใจ",
+    "artist": "อ๊อฟ ปองศักดิ์",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/41/a9/6741a98f-024b-8842-cdfe-af784a28d7da/888332966740.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/25/96/5f/25965f4d-d138-c88f-154d-c3fdfe1b24ab/mzaf_10490405995473748674.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%97%E0%B8%87%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87..%E0%B8%97%E0%B8%B0%E0%B8%A5%E0%B8%B8%E0%B8%96%E0%B8%B6%E0%B8%87%E0%B8%AB%E0%B8%B1%E0%B8%A7%E0%B9%83%E0%B8%88%20%E0%B8%AD%E0%B9%8A%E0%B8%AD%E0%B8%9F%20%E0%B8%9B%E0%B8%AD%E0%B8%87%E0%B8%A8%E0%B8%B1%E0%B8%81%E0%B8%94%E0%B8%B4%E0%B9%8C",
+    "mood": "sad",
+    "tags": [
+      "ทรยศ",
+      "เจ็บปวด",
+      "น้ำตา"
+    ],
+    "bpm": "ช้า (68 BPM)",
+    "lang": "th",
+    "animeId": 11,
+    "animeMatch": [
+      11,
+      47
+    ],
+    "reason": "ความเจ็บปวดจากการถูกทรยศหักหลัง เข้ากับฉากดาร์กแฟนตาซี",
+    "typoIdea": "ดาบสีเงินปักทะลุตัวหนังสือพร้อมหยดเลือด"
+  },
+  {
+    "id": 595,
+    "title": "เรื่องจริงยิ่งกว่านิยาย",
+    "artist": "อ๊อฟ ปองศักดิ์",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/41/a9/6741a98f-024b-8842-cdfe-af784a28d7da/888332966740.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/08/29/71082976-32c6-db69-3d32-73ec5b2cfac3/mzaf_10516639670581470556.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%87%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%81%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%99%E0%B8%B4%E0%B8%A2%E0%B8%B2%E0%B8%A2%20%E0%B8%AD%E0%B9%8A%E0%B8%AD%E0%B8%9F%20%E0%B8%9B%E0%B8%AD%E0%B8%87%E0%B8%A8%E0%B8%B1%E0%B8%81%E0%B8%94%E0%B8%B4%E0%B9%8C",
+    "mood": "sad",
+    "tags": [
+      "เรื่องจริง",
+      "ชะตากรรม",
+      "ดราม่า"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      1,
+      10
+    ],
+    "reason": "บทสรุปความรักที่เจ็บปวดเกินกว่านิยายเรื่องใด",
+    "typoIdea": "ตัวหนังสือพลิกหน้ากระดาษหนังสือเก่า"
+  },
+  {
+    "id": 596,
+    "title": "ช่างมัน",
+    "artist": "Cocktail",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/14/48/a4/1448a463-b2e6-6986-bab6-d4531a65ae40/888332946797.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7e/9a/2c/7e9a2cb5-db77-1b24-a898-3b93d22259da/mzaf_12749399247355596572.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%A1%E0%B8%B1%E0%B8%99%20Cocktail",
+    "mood": "sad",
+    "tags": [
+      "ช่างมัน",
+      "ปล่อยวาง",
+      "ร็อคดราม่า",
+      "อกหัก"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 11,
+    "animeMatch": [
+      11,
+      47,
+      24
+    ],
+    "reason": "ท่อนฮุกทรงพลัง 'ช่างมันเถอะความรัก ปล่อยให้มันพังทลาย' เข้ากับฉากความสูญเสีย สิ้นหวัง และการต่อสู้ที่ดุเดือดของ Attack on Titan",
+    "typoIdea": "ตัวหนังสือขอบหินแตก มีเปลวไฟและเศษธุลีลอยรอบคำว่า 'ช่างมัน' ย้อมสีแดงเลือดหมู"
+  },
+  {
+    "id": 597,
+    "title": "ช่างมัน (Whatever)",
+    "artist": "Somkiat",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4b/5d/3b/4b5d3bb4-6327-ff60-4be7-2443669640ae/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/d1/93/2ad193fc-38e4-6507-01c4-ecb338b1ceff/mzaf_7502905048072330752.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%8A%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%A1%E0%B8%B1%E0%B8%99%20Somkiat",
+    "mood": "chill",
+    "tags": [
+      "ช่างมัน",
+      "อินดี้ร็อค",
+      "ปล่อยใจ",
+      "ชีวิต"
+    ],
+    "bpm": "ปานกลาง (96 BPM)",
+    "lang": "th",
+    "animeId": 19,
+    "animeMatch": [
+      19,
+      14,
+      2
+    ],
+    "reason": "จังหวะอินดี้ร็อคเท่ๆ ปล่อยใจไม่คิดมาก เข้ากับความกวนและความชิลล์ของ Bocchi the Rock และ Horimiya",
+    "typoIdea": "ฟอนต์ตัดแปะสไตล์ Collage Indie เต้นโยกตามเบสพร้อมสติกเกอร์กราฟฟิตี้หลากสี"
+  },
+  {
+    "id": 598,
+    "title": "เหนื่อยหน่อยนะ (Someone's Tale)",
+    "artist": "Billkin",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ad/51/7a/ad517afe-4b83-d424-3595-50ef03a2cb22/056870981048.png/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/42/5e/6c/425e6c75-eb3f-75a5-9665-5928cf1b619f/mzaf_13059409262426465220.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%AB%E0%B8%99%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%A2%E0%B8%AB%E0%B8%99%E0%B9%88%E0%B8%AD%E0%B8%A2%E0%B8%99%E0%B8%B0%20(Someone's%20Tale)%20Billkin",
+    "mood": "sad",
+    "tags": [
+      "ให้กำลังใจ",
+      "ปลอบโยน",
+      "ฮีลใจ"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 352,
+    "animeMatch": [
+      352
+    ],
+    "reason": "บทเพลงปลอบประโลมหัวใจของคนที่พยายามทำตามความฝัน เหมาะอย่างยิ่งกับซีนตัดต่อเรื่อง Look Back ที่ทุ่มเทวาดภาพจนเหนื่อยล้า",
+    "typoIdea": "ใช้ฟอนต์ลายมือพลิ้วไหวสีครีมอบอุ่น ตัวหนังสือค่อยๆ ปรากฏทีละประโยคตามเสียงร้อง"
+  },
+  {
+    "id": 599,
+    "title": "ลบไม่ได้ช่วยให้ลืม (Erase)",
+    "artist": "INK WARUNTORN",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d9/58/d3/d958d398-1aec-0f5e-2d34-656df8184890/0840102420586_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/a5/51/aba5515b-36c4-4ec4-f376-4f886bfb5a56/mzaf_2464286645921122949.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%9A%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%A5%E0%B8%B7%E0%B8%A1%20(Erase)%20INK%20WARUNTORN",
+    "mood": "sad",
+    "tags": [
+      "ความทรงจำ",
+      "มูฟออนไม่ได้",
+      "คิดถึง"
+    ],
+    "bpm": "ปานกลาง (96 BPM)",
+    "lang": "th",
+    "animeId": 351,
+    "animeMatch": [
+      351
+    ],
+    "reason": "ความรู้สึกที่อยากลืมแต่ยิ่งจำ เข้ากับฉากความสัมพันธ์ที่ซับซ้อนใน Blue Box อย่างลงตัว",
+    "typoIdea": "เอฟเฟกต์เบลอแล้วเฟดตัวหนังสือจางลง สลับกับการตัดต่อช็อตมองตากันในโรงยิม"
+  },
+  {
+    "id": 600,
+    "title": "พิง (Ping)",
+    "artist": "NONT TANONT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/68/25/6668253c-aa17-85c5-4ad4-d112e0d7cd1e/mzaf_4161458375630754491.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%B4%E0%B8%87%20(Ping)%20NONT%20TANONT",
+    "mood": "love",
+    "tags": [
+      "ที่พักใจ",
+      "อบอุ่น",
+      "คลั่งรัก"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 356,
+    "animeMatch": [
+      356
+    ],
+    "reason": "เมโลดี้หวานซึ้งที่บอกว่าพร้อมเป็นที่พึ่งให้เธอเสมอ เหมาะกับฉากน่ารักๆ ระหว่างคุเซะกับอาเรีย",
+    "typoIdea": "ฟอนต์แนวโมเดิร์นโค้งมน เคลื่อนที่ลอยขึ้นช้าๆ พร้อมประกายวิบวับรอบตัวอักษร"
+  },
+  {
+    "id": 601,
+    "title": "นะหน้าทอง",
+    "artist": "โจอี้ ภูวศิษฐ์",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/cc/96/60cc96ee-d36d-201c-0ae7-a8f9d43d672e/mzaf_17220888096056606772.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%99%E0%B8%B0%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%97%E0%B8%AD%E0%B8%87%20%E0%B9%82%E0%B8%88%E0%B8%AD%E0%B8%B5%E0%B9%89%20%E0%B8%A0%E0%B8%B9%E0%B8%A7%E0%B8%A8%E0%B8%B4%E0%B8%A9%E0%B8%90%E0%B9%8C",
+    "mood": "love",
+    "tags": [
+      "หลงรัก",
+      "เสียงพิณ",
+      "คลั่งรักจัด"
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "lang": "th",
+    "animeId": 358,
+    "animeMatch": [
+      358
+    ],
+    "reason": "เพลงฮิตที่ร้อยเรียงคำหวาน ผสมกลิ่นอายเสียงพิณ เหมาะกับซีนความน่ารักของนางเอก Giji Harem ทุกเวอร์ชัน",
+    "typoIdea": "ตัวหนังสือสีทองแวววาว สไตล์ไทยโมเดิร์นตัดกับสีพื้นหลังสดใส"
+  },
+  {
+    "id": 602,
+    "title": "ดวงเดือน",
+    "artist": "JOEY PHUWASIT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/47/fd/90/47fd904b-7653-5f99-d915-19529a77c697/888332917681.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/64/31/d964312a-8619-ca7c-2580-1844e0fdf698/mzaf_8881744960688057961.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B9%80%E0%B8%94%E0%B8%B7%E0%B8%AD%E0%B8%99%20JOEY%20PHUWASIT",
+    "mood": "sad",
+    "tags": [
+      "ห่างไกล",
+      "พระจันทร์",
+      "คิดถึงคนไกล"
+    ],
+    "bpm": "ช้า (76 BPM)",
+    "lang": "th",
+    "animeId": 352,
+    "animeMatch": [
+      352
+    ],
+    "reason": "ความเหงาของการมองดวงจันทร์ดวงเดียวกัน เข้ากับมู้ดคิดถึงเพื่อนรักที่จากไปใน Look Back",
+    "typoIdea": "ฟอนต์มีขอบบางคม เรืองแสงสีนวลตาคล้ายแสงจันทร์ สลับกับภาพฝนตกและฤดูกาลเปลี่ยน"
+  },
+  {
+    "id": 603,
+    "title": "เลือดกรุ๊ปบี (B Blood Type)",
+    "artist": "Chrrissa Chotijirasathit",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/9f/64/86/9f6486f1-746c-d3b5-1569-3a6294cdfea0/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/ca/32/cb/ca32cbd3-6e00-5d33-72c4-7d71ee456d73/mzaf_15308886385266869376.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%94%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B9%8A%E0%B8%9B%E0%B8%9A%E0%B8%B5%20(B%20Blood%20Type)%20Chrrissa%20Chotijirasathit",
+    "mood": "chill",
+    "tags": [
+      "ไวรัลสนั่น",
+      "ตัดพ้อขำๆ",
+      "คนไร้คู่"
+    ],
+    "bpm": "ปานกลาง (100 BPM)",
+    "lang": "th",
+    "animeId": 353,
+    "animeMatch": [
+      353
+    ],
+    "reason": "เพลงไวรัลสุดฮาตัดพ้อโชคชะตา เหมาะอย่างยิ่งกับเหล่านางเอกแพ้รักใน Makeine",
+    "typoIdea": "ตัวหนังสือสไตล์ Pop Bubble สีชมพู-พาสเทล เด้งตามจังหวะชะชะช่ากวนๆ"
+  },
+  {
+    "id": 604,
+    "title": "วาสนาผู้ใด",
+    "artist": "Parkmalody",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/e3/b6/0de3b628-c320-81b3-b346-f42dbfb0588b/859778485225_cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/66/07/52/66075276-7468-d0bc-5a91-43cfeccafbe1/mzaf_1904391022478786864.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A7%E0%B8%B2%E0%B8%AA%E0%B8%99%E0%B8%B2%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B9%83%E0%B8%94%20Parkmalody",
+    "mood": "love",
+    "tags": [
+      "คลั่งรัก",
+      "น่ารักนุบนิบ",
+      "แฟนใครหนอ"
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "lang": "th",
+    "animeId": 360,
+    "animeMatch": [
+      360
+    ],
+    "reason": "เพลงฟีลกู้ดชื่นชมความน่ารัก เข้ากับฉากคอสเพลย์สดใสของริริสะแบบเต็มสิบ",
+    "typoIdea": "หัวใจสีชมพูลอยรอบฟอนต์ลายมือน่ารัก จังหวะข้อความปรากฏแบบป๊อปอัพ"
+  },
+  {
+    "id": 605,
+    "title": "ซูลู ปาก้า ตาปาเฮ้",
+    "artist": "THE TOYS",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d2/79/b2/d279b29d-e690-c1c4-41f8-381511e8034b/0.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b5/3f/0d/b53f0dc4-c082-5e94-936c-5091f4efd1cd/mzaf_8254291224798728399.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%8B%E0%B8%B9%E0%B8%A5%E0%B8%B9%20%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B9%89%E0%B8%B2%20%E0%B8%95%E0%B8%B2%E0%B8%9B%E0%B8%B2%E0%B9%80%E0%B8%AE%E0%B9%89%20THE%20TOYS",
+    "mood": "chill",
+    "tags": [
+      "อินดี้ชวนฝัน",
+      "ภาษาต่างดาว",
+      "ฟังสบาย"
+    ],
+    "bpm": "ปานกลาง (98 BPM)",
+    "lang": "th",
+    "animeId": 357,
+    "animeMatch": [
+      357
+    ],
+    "reason": "บีทสุดชิลล์ผสมมู้ดไซไฟอวกาศ เหมาะกับภาพเมืองที่มีเอเลี่ยนลอยฟ้าใน Dededede",
+    "typoIdea": "ตัวอักษรกลายร่างหรือหมุนเคว้งคว้างช้าๆ ตามเสียงดนตรีซินธ์ฟังสบาย"
+  },
+  {
+    "id": 606,
+    "title": "ยินดีด้วยนะ (Glad)",
+    "artist": "Ink Waruntorn",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2a/d6/c7/2ad6c7bc-3304-d588-9b12-5fda1540cbce/0849480039267_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6d/c9/00/6dc90011-a863-bdeb-be57-b9f297c4b82b/mzaf_12511109928019079134.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A2%E0%B8%B4%E0%B8%99%E0%B8%94%E0%B8%B5%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%99%E0%B8%B0%20(Glad)%20Ink%20Waruntorn",
+    "mood": "sad",
+    "tags": [
+      "ยินดีทั้งน้ำตา",
+      "มิตรภาพ",
+      "ปล่อยมือ"
+    ],
+    "bpm": "ปานกลาง (92 BPM)",
+    "lang": "th",
+    "animeId": 353,
+    "animeMatch": [
+      353
+    ],
+    "reason": "รอยยิ้มที่มอบให้พร้อมคราบน้ำตา เข้ากับความรู้สึกของนางเอกที่ยอมเป็นผู้แพ้ในความรัก",
+    "typoIdea": "ตัวหนังสือข้อความแชทที่ถูกส่ง แล้วค่อยๆ เลือนหายไปพร้อมข้อความอ่านแล้ว"
+  },
+  {
+    "id": 607,
+    "title": "ถ้าเธอรักใครคนหนึ่ง",
+    "artist": "INK WARUNTORN",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d4/22/b4/d422b40d-4edb-b2d1-327f-a670e09ccb1d/888332908498.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/20/52/4c/20524cf3-73b9-9c39-5204-2006ef9dfe78/mzaf_1394626490362469262.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%96%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%83%E0%B8%84%E0%B8%A3%E0%B8%84%E0%B8%99%E0%B8%AB%E0%B8%99%E0%B8%B6%E0%B9%88%E0%B8%87%20INK%20WARUNTORN",
+    "mood": "love",
+    "tags": [
+      "ความรักบริสุทธิ์",
+      "บุพเพสันนิวาส",
+      "ซึ้งกินใจ"
+    ],
+    "bpm": "ช้า (74 BPM)",
+    "lang": "th",
+    "animeId": 351,
+    "animeMatch": [
+      351
+    ],
+    "reason": "ความรู้สึกรักที่อยากเห็นเขามีความสุข ตรงกับความทุ่มเทของตัวละครใน Blue Box",
+    "typoIdea": "ฟอนต์ Elegant Serif สีขาวสะท้อนแสงไฟในยิมกีฬา ซ้อนภาพทับแบบ Double Exposure"
+  },
+  {
+    "id": 608,
+    "title": "ขอบคุณที่ร่วมทาง (Farewell)",
+    "artist": "TaitosmitH",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/60/6d/d1/606dd11d-947d-70d3-09b6-3d187186d34c/26UMGIM49514.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/86/bd/10/86bd1097-83e4-9634-8cb2-e1a4be8c4a3f/mzaf_4008416571366335940.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%82%E0%B8%AD%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A3%E0%B9%88%E0%B8%A7%E0%B8%A1%E0%B8%97%E0%B8%B2%E0%B8%87%20(Farewell)%20TaitosmitH",
+    "mood": "hype",
+    "tags": [
+      "อำลาอย่างยิ่งใหญ่",
+      "มิตรภาพลูกผู้ชาย",
+      "พลังใจ"
+    ],
+    "bpm": "เร็ว (120 BPM)",
+    "lang": "th",
+    "animeId": 365,
+    "animeMatch": [
+      365
+    ],
+    "reason": "เพลงร็อคส่งท้ายสุดยิ่งใหญ่ เหมาะกับฉากจบศึกกองขยะระหว่างคาราสึโนะกับเนโกมะ",
+    "typoIdea": "ฟอนต์แนวขรุขระ Grunge สั่นไหวตามเสียงกระแทกกลองสแนร์และกีตาร์ดิบ"
+  },
+  {
+    "id": 609,
+    "title": "รักแท้ (True Love)",
+    "artist": "NuNew",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e6/c3/94/e6c39457-6511-4a34-467b-a78c4b170f5d/888332907446.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d0/88/f8/d088f87c-1135-1816-2d69-c33e80f57088/mzaf_4799799825808235537.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%81%E0%B8%97%E0%B9%89%20(True%20Love)%20NuNew",
+    "mood": "love",
+    "tags": [
+      "หวานซึ้ง",
+      "อลังการ",
+      "รักเหนือกาลเวลา"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 356,
+    "animeMatch": [
+      356
+    ],
+    "reason": "เสียงร้องทรงพลังและเมโลดี้สุดอลังการ เหมาะกับฉากสารภาพรักอันน่าจดจำ",
+    "typoIdea": "ตัวอักษรพลิ้วไหวสีทองผสมประกายหิมะสีขาว ร่วงหล่นรอบคำว่ารักแท้"
+  },
+  {
+    "id": 610,
+    "title": "เมษา (MAYSA)",
+    "artist": "fellow fellow feat. BLACKSHEEP",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/73/8f/91/738f91e4-a3e7-6e77-741e-f20fff3fab9f/8859028150356.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fc/7e/e1/fc7ee125-53f3-23ca-4550-34ab2f8640f4/mzaf_11820125010527885603.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A1%E0%B8%A9%E0%B8%B2%20(MAYSA)%20fellow%20fellow%20feat.%20BLACKSHEEP",
+    "mood": "chill",
+    "tags": [
+      "หน้าร้อน",
+      "คิดถึง",
+      "ลมพัดผ่าน"
+    ],
+    "bpm": "ปานกลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 351,
+    "animeMatch": [
+      351
+    ],
+    "reason": "บรรยากาศลมร้อนและความทรงจำในฤดูร้อน สอดคล้องกับบรรยากาศค่ายฝึกกีฬาใน Blue Box",
+    "typoIdea": "ฟอนต์สีพาสเทลรับแดด มีประกายแสง Sun Flare วาบผ่านตัวอักษร"
+  },
+  {
+    "id": 611,
+    "title": "จม",
+    "artist": "NUM KALA",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/41/5c/f0/415cf087-9b9f-62a8-da40-4b2dd08eb418/888332916240.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ca/d9/87/cad98714-89c5-13fe-65f4-66c061e0839d/mzaf_3319053351117589959.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%88%E0%B8%A1%20NUM%20KALA",
+    "mood": "sad",
+    "tags": [
+      "ดำดิ่ง",
+      "เจ็บปวด",
+      "หมดแรง"
+    ],
+    "bpm": "ช้า (68 BPM)",
+    "lang": "th",
+    "animeId": 363,
+    "animeMatch": [
+      363
+    ],
+    "reason": "ความรู้สึกดำดิ่งสู่ห้วงลึกของความจริง สอดรับกับความทรมานของผู้แสวงหาความจริงใน Orb",
+    "typoIdea": "ตัวหนังสือจมลงสู่ด้านล่างหน้าจอช้าๆ เหมือนฟองอากาศใต้น้ำ"
+  },
+  {
+    "id": 612,
+    "title": "จำเลยรัก",
+    "artist": "F.HERO feat. Txrbo",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b5/ae/85/b5ae85b7-8b66-f8d5-81d2-e42162bbb01d/25UMGIM81833.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4e/a3/3b/4ea33b23-3c9b-abaf-35f7-1dc249a73043/mzaf_8654615123246201039.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%88%E0%B8%B3%E0%B9%80%E0%B8%A5%E0%B8%A2%E0%B8%A3%E0%B8%B1%E0%B8%81%20F.HERO%20feat.%20Txrbo",
+    "mood": "hype",
+    "tags": [
+      "แร็ปผสานลูกทุ่ง",
+      "ทาสรัก",
+      "บีทหนัก"
+    ],
+    "bpm": "ปานกลาง (94 BPM)",
+    "lang": "th",
+    "animeId": 355,
+    "animeMatch": [
+      355
+    ],
+    "reason": "ท่อนร้องสุดติดหูผสมแร็ปดุดัน เหมาะกับซีนต่อสู้ชิงไหวชิงพริบใน The Elusive Samurai",
+    "typoIdea": "ตัวหนังสือหมุนสะบัดฟันดาบ คมดาบตัดผ่านตัวอักษรจนแตกกระจาย"
+  },
+  {
+    "id": 613,
+    "title": "APT.",
+    "artist": "ROSE & Bruno Mars",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2d/1a/7d/2d1a7d91-587e-0ceb-d434-327bd66d9e86/075679628312.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7a/15/38/7a1538f3-f41a-a2eb-0f24-8eb6712ee043/mzaf_7740628412097685267.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/APT.%20ROSE%20%26%20Bruno%20Mars",
+    "mood": "hype",
+    "tags": [
+      "เมกะฮิตทั่วโลก",
+      "แดนซ์สุดเหวี่ยง",
+      "ติดหูขั้นสุด"
+    ],
+    "bpm": "เร็ว (149 BPM)",
+    "lang": "en",
+    "animeId": 364,
+    "animeMatch": [
+      364
+    ],
+    "reason": "เพลงไวรัลอันดับ 1 ของโลก จังหวะแดนซ์ร็อคสนุกซ่า เหมาะกับฉากโชว์สดของวง Kessoku Band ใน Bocchi the Rock",
+    "typoIdea": "ฟอนต์เรโทรนีออนสีชมพูช็อกกิ้งพิ้งค์ กระเด้งสลับตามจังหวะ 'อา-พา-ทึ' แบบ Snap Zoom"
+  },
+  {
+    "id": 614,
+    "title": "Please Please Please",
+    "artist": "Sabrina Carpenter",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c9/a3/e9/c9a3e987-3952-a6ac-7975-680f2033e660/25UMGIM10586.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/86/0b/54860b8b-0c3b-b16b-5b19-b00424af8b9b/mzaf_1272478887800630516.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Please%20Please%20Please%20Sabrina%20Carpenter",
+    "mood": "chill",
+    "tags": [
+      "ป็อปอินดี้",
+      "กวนแต่น่ารัก",
+      "ไวรัล"
+    ],
+    "bpm": "ปานกลาง (107 BPM)",
+    "lang": "en",
+    "animeId": 356,
+    "animeMatch": [
+      356
+    ],
+    "reason": "เมโลดี้หวานซ่อนความน่ารักปนประชดประชัน เข้ากับบุคลิกซึนเดเระของอาเรียโต๊ะข้างๆ",
+    "typoIdea": "ฟอนต์ลายเซ็นแนววินเทจสีฟ้าพาสเทล ตัวหนังสือขีดเส้นใต้พร้อมหัวใจกระพริบ"
+  },
+  {
+    "id": 615,
+    "title": "Good Luck, Babe!",
+    "artist": "Chappell Roan",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/29/a7/c4/29a7c478-351d-25eb-a116-3e68118cdab8/24UMGIM31246.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c3/6d/4f/c36d4f23-b87f-046d-7a0e-e3e05d180b2a/mzaf_17235999651335214399.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Good%20Luck%2C%20Babe!%20Chappell%20Roan",
+    "mood": "hype",
+    "tags": [
+      "ซินธ์ป็อป 80s",
+      "ร้องสะใจ",
+      "อารมณ์พุ่งพล่าน"
+    ],
+    "bpm": "เร็ว (118 BPM)",
+    "lang": "en",
+    "animeId": 353,
+    "animeMatch": [
+      353
+    ],
+    "reason": "เสียงร้องทรงพลังและดนตรีซินธ์เร้าใจ สื่อถึงความรู้สึกที่ไม่อาจปฏิเสธหัวใจตัวเอง",
+    "typoIdea": "ตัวหนังสือสไตล์ Billboard 80s มีสโตรกไฟนีออนกระพริบตามท่อนบริดจ์"
+  },
+  {
+    "id": 616,
+    "title": "Beautiful Things",
+    "artist": "Benson Boone",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/54/f4/92/54f49210-e260-b519-ebbd-f4f40ee710cd/054391342751.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4d/d5/00/4dd5006f-ee02-c3f1-94db-0ed4b8dd68f1/mzaf_14250561294796027079.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Beautiful%20Things%20Benson%20Boone",
+    "mood": "hype",
+    "tags": [
+      "ระเบิดอารมณ์",
+      "ทรงพลัง",
+      "ไวรัลร็อค"
+    ],
+    "bpm": "เร็ว (105 BPM)",
+    "lang": "en",
+    "animeId": 354,
+    "animeMatch": [
+      354
+    ],
+    "reason": "ท่อนดรอปที่ระเบิดพลังเสียงร็อคสุดขั้ว เข้ากับฉากฟันดาบปล่อยเวทมนตร์ของวิลใน Wistoria",
+    "typoIdea": "เอฟเฟกต์ Screen Shake พร้อมตัวหนังสือขยายใหญ่เต็มหน้าจอตอนท่อนคอรัสระเบิด"
+  },
+  {
+    "id": 617,
+    "title": "Too Sweet",
+    "artist": "Hozier",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/98/80/95/98809581-4a0e-68a6-04de-b72492e35939/196871908191.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a6/61/fc/a661fcaf-f8e5-03db-36f3-31f2e196b1a5/mzaf_18300083713037280538.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Too%20Sweet%20Hozier",
+    "mood": "chill",
+    "tags": [
+      "บลูส์เท่ๆ",
+      "เสียงทุ้มมีเสน่ห์",
+      "มู้ดกลางคืน"
+    ],
+    "bpm": "ปานกลาง (117 BPM)",
+    "lang": "en",
+    "animeId": 361,
+    "animeMatch": [
+      361
+    ],
+    "reason": "เสียงเบสหนึบและเสียงร้องดิบเท่ เข้ากับลุคคาวบอยไซไฟของ Vash the Stampede",
+    "typoIdea": "ฟอนต์ Sans Serif สีทองไหม้บนพื้นหลังมืด ค่อยๆ ไถลจากซ้ายไปขวาอย่างนุ่มนวล"
+  },
+  {
+    "id": 618,
+    "title": "End of Beginning",
+    "artist": "Djo",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/e5/94/31/e59431de-7591-58e6-c4d4-105b6373ad6a/5056494917336_1.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6e/df/af/6edfaf58-f901-e9b5-840b-9ac9e37f34b7/mzaf_8465065510938624101.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/End%20of%20Beginning%20Djo",
+    "mood": "chill",
+    "tags": [
+      "ย้อนวันวาน",
+      "ชวนคิดถึง",
+      "ชิคาโก้"
+    ],
+    "bpm": "ปานกลาง (160 BPM)",
+    "lang": "en",
+    "animeId": 352,
+    "animeMatch": [
+      352
+    ],
+    "reason": "ท่วงทำนองที่พาย้อนกลับไปยังสถานที่และความทรงจำเดิม สื่อถึงมิตรภาพใน Look Back อย่างลึกซึ้ง",
+    "typoIdea": "ตัวหนังสือพิมพ์ดีดแบบคลาสสิก ค่อยๆ พิมพ์ทีละตัวอักษรตามบีทเพลงดรีมป็อป"
+  },
+  {
+    "id": 619,
+    "title": "Glimpse of Us",
+    "artist": "Joji",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d0/2a/43/d02a433a-3ab8-9a94-b07d-1dc599b64966/93624864387.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/53/c2/0c53c240-300a-5ddf-fc86-3a54e1b73a78/mzaf_13555682862214742934.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Glimpse%20of%20Us%20Joji",
+    "mood": "sad",
+    "tags": [
+      "เปียโนบาดลึก",
+      "น้ำตาซึม",
+      "ไม่เคยลืมเธอ"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "en",
+    "animeId": 352,
+    "animeMatch": [
+      352
+    ],
+    "reason": "เสียงเปียโนและเสียงร้องสุดเหงา เข้ากับฉากนั่งวาดการ์ตูนคนเดียวท่ามกลางความเงียบ",
+    "typoIdea": "ตัวหนังสือสลายเป็นละอองฝน ค่อยๆ เบลอจางลงตามหยดน้ำตาบนหน้ากระดาษ"
+  },
+  {
+    "id": 620,
+    "title": "SLOW DANCING IN THE DARK",
+    "artist": "Joji",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/af/ee/e2/afeee208-5816-b700-f703-d4f46780c504/190296919015.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/11/b8/ff/11b8ff74-aaa5-41c6-91c3-7f19ebc374c4/mzaf_4419658226336232185.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/SLOW%20DANCING%20IN%20THE%20DARK%20Joji",
+    "mood": "sad",
+    "tags": [
+      "บัลลาดดาร์ก",
+      "ดนตรีบีบหัวใจ",
+      "เต้นรำในความมืด"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "en",
+    "animeId": 363,
+    "animeMatch": [
+      363
+    ],
+    "reason": "บทเพลงแห่งความมืดมิดและความพยายามที่ไร้ทางออก สอดรับกับความเชื่อในเรื่อง Orb",
+    "typoIdea": "แสงไฟสปอตไลต์ส่องตัวหนังสือกลางจอ พร้อมคลื่นเสียงเบสสั่นไหวในความมืด"
+  },
+  {
+    "id": 621,
+    "title": "Stereo Hearts",
+    "artist": "Gym Class Heroes feat. Adam Levine",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/53/c6/b4/53c6b4d2-c47a-ff5e-6473-1895f8c74026/mzi.zhootxes.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/68/5d/02685d3f-2980-3bae-219e-ae23a10d8b1c/mzaf_8880909857974608488.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Stereo%20Hearts%20Gym%20Class%20Heroes%20feat.%20Adam%20Levine",
+    "mood": "hype",
+    "tags": [
+      "คลาสสิกยุค 2010s",
+      "เสียงหัวใจเต้น",
+      "ฟังสบาย"
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "lang": "en",
+    "animeId": 360,
+    "animeMatch": [
+      360
+    ],
+    "reason": "เมโลดี้สดใสเปรียบหัวใจเป็นเสียงเพลง เข้ากับความหลงใหลในโลกคอสเพลย์ของ 2.5 มิติ",
+    "typoIdea": "กราฟฟิก Equalizer เสียงเต้นขึ้นลงเป็นจังหวะตามตัวอักษร Stereo"
+  },
+  {
+    "id": 622,
+    "title": "Sweater Weather",
+    "artist": "The Neighbourhood",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/28/71/00/287100fb-5c31-0195-5343-e6b3625886d0/886443969834.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/37/20/8c372047-2727-8054-9411-0e4867643dd8/mzaf_10169659262182214119.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Sweater%20Weather%20The%20Neighbourhood",
+    "mood": "chill",
+    "tags": [
+      "อินดี้ไอคอนิก",
+      "มู้ดฤดูหนาว",
+      "โรแมนติกคูลๆ"
+    ],
+    "bpm": "ปานกลาง (124 BPM)",
+    "lang": "en",
+    "animeId": 351,
+    "animeMatch": [
+      351
+    ],
+    "reason": "บรรยากาศหนาวเหน็บแต่หัวใจอุ่น เข้ากับฉากเดินกลับบ้านหลังซ้อมกีฬาใน Blue Box",
+    "typoIdea": "ฟอนต์สีขาวนวลบนฉากสีหม่น พร้อมเอฟเฟกต์หมอกควันเคลื่อนผ่านตัวอักษร"
+  },
+  {
+    "id": 623,
+    "title": "Softly",
+    "artist": "Clairo",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f2/47/06/f24706bc-a90c-f730-bd8a-586ddde8af3e/829299184631.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bf/24/ea/bf24ea08-17a7-49cc-260e-f3df961df89c/mzaf_18258349558984991426.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Softly%20Clairo",
+    "mood": "love",
+    "tags": [
+      "เบดรูมป็อป",
+      "กระซิบรัก",
+      "นุ่มละมุน"
+    ],
+    "bpm": "ปานกลาง (104 BPM)",
+    "lang": "en",
+    "animeId": 358,
+    "animeMatch": [
+      358
+    ],
+    "reason": "เสียงร้องแผ่วเบานุ่มนวลเหมือนกระซิบข้างหู เข้ากับฉากเขินอายใน Pseudo Harem",
+    "typoIdea": "ตัวหนังสือสไตล์มินิมอลสีพาสเทล ลอยตุ๊บป่องนุ่มนิ่มเหมือนก้อนเมฆ"
+  },
+  {
+    "id": 624,
+    "title": "Line Without a Hook",
+    "artist": "Ricky Montgomery",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/66/5d/d4/665dd470-e8c1-d82c-ecd6-ae83e3c9162f/093624883357.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/a5/3d/43a53dee-5e9f-96cc-f8ab-a9661972eee4/mzaf_9663192347484541720.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Line%20Without%20a%20Hook%20Ricky%20Montgomery",
+    "mood": "love",
+    "tags": [
+      "ไวรัลคลั่งรัก",
+      "เธอคือทุกอย่าง",
+      "ดนตรีสดใส"
+    ],
+    "bpm": "ปานกลาง (134 BPM)",
+    "lang": "en",
+    "animeId": 351,
+    "animeMatch": [
+      351
+    ],
+    "reason": "ความรู้สึกทุ่มเททุกอย่างเพื่อคนที่รัก ตรงกับความรู้สึกของไทกิที่มีต่อรุ่นพี่ชินัตสึ",
+    "typoIdea": "เส้นลายเบ็ดตกปลาลากเป็นตัวอักษรข้อความ เชื่อมต่อระหว่างสองหัวใจ"
+  },
+  {
+    "id": 625,
+    "title": "Starboy",
+    "artist": "The Weeknd feat. Daft Punk",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/b2/c0/1d/b2c01d38-2798-1bce-e6f3-8d0959ca51dd/23UMGIM22528.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/90/6e/2f906eee-4aa3-ddd3-121e-54dc6a71edfa/mzaf_2956542638534895059.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Starboy%20The%20Weeknd%20feat.%20Daft%20Punk",
+    "mood": "hype",
+    "tags": [
+      "เท่ดุดัน",
+      "เบสกระหึ่ม",
+      "บอสใหญ่"
+    ],
+    "bpm": "เร็ว (186 BPM)",
+    "lang": "en",
+    "animeId": 359,
+    "animeMatch": [
+      359
+    ],
+    "reason": "บีทอิเล็กทรอนิกส์ดาร์กสุดเท่ เข้ากับความอลังการของเหล่ายมทูตและควินซี่ใน Bleach TYBW",
+    "typoIdea": "ฟอนต์สีแดงเลือดตัดขอบดำ มีประกายไฟฟ้าสีฟ้าแลบผ่านตัวอักษรตามจังหวะเบส"
+  },
+  {
+    "id": 626,
+    "title": "Until I Found You (Duet Version)",
+    "artist": "Stephen Sanchez & Em Beihold",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/e0/71/6a/e0716a8a-b806-d313-4ed6-93bb485a65c5/22UMGIM38869.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/5a/c2/605ac23e-4f57-25e5-9224-e3c22770d10f/mzaf_8345102416234102950.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Until%20I%20Found%20You%20(Duet%20Version)%20Stephen%20Sanchez%20%26%20Em%20Beihold",
+    "mood": "love",
+    "tags": [
+      "เสียงประสานคู่",
+      "คลาสสิก 50s",
+      "รักแท้"
+    ],
+    "bpm": "ช้า (101 BPM)",
+    "lang": "en",
+    "animeId": 356,
+    "animeMatch": [
+      356
+    ],
+    "reason": "เสียงร้องประสานชายหญิงที่ลงตัวที่สุด เหมาะกับซีนโรแมนติกที่เปิดใจคุยกัน",
+    "typoIdea": "ตัวหนังสือสองสี (ชมพู-ฟ้า) ลอยเข้ามาประสานรวมกันตรงกลางจอ"
+  },
+  {
+    "id": 627,
+    "title": "golden hour (Fujii Kaze Remix)",
+    "artist": "JVKE & Fujii Kaze",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e9/19/1a/e9191aa1-bd40-8f63-fc06-367f02fc2d0c/197188552725.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/09/04/7b/09047bec-ff28-7ec9-b258-32f89fac43c8/mzaf_6620254559481912003.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/golden%20hour%20(Fujii%20Kaze%20Remix)%20JVKE%20%26%20Fujii%20Kaze",
+    "mood": "love",
+    "tags": [
+      "เปียโนเทพ",
+      "แสงสีทอง",
+      "ละมุนหัวใจ"
+    ],
+    "bpm": "ปานกลาง (94 BPM)",
+    "lang": "en",
+    "animeId": 351,
+    "animeMatch": [
+      351
+    ],
+    "reason": "เสียงเปียโนของฟูจิอิ คาเสะผสมกับเพลงสากล สร้างบรรยากาศแสงสีทองยามเย็นที่งดงามเกินบรรยาย",
+    "typoIdea": "ประกายละอองแสงสีทองวิบวับรอบฟอนต์ Serif สวยงามเปล่งประกาย"
+  },
+  {
+    "id": 628,
+    "title": "Same Blue",
+    "artist": "Official HIGE DANdism",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4b/c7/24/4bc72490-5bde-d9cf-f4a6-a503d2661573/28044.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cf/70/79/cf70799a-1688-c4aa-e2f0-fc1c2a493f1f/mzaf_7747040681457198945.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Same%20Blue%20Official%20HIGE%20DANdism",
+    "mood": "hype",
+    "tags": [
+      "เพลงเปิด Blue Box",
+      "พลังวัยรุ่น",
+      "สปอร์ตโรแมนซ์"
+    ],
+    "bpm": "เร็ว (150 BPM)",
+    "lang": "jp",
+    "animeId": 351,
+    "animeMatch": [
+      351
+    ],
+    "reason": "เพลงเปิดอนิเมะ Blue Box ประจำซีซั่น ท่วงทำนองเปียโนและกลองสดใสสะท้อนเหงื่อและความรักของวัยรุ่น",
+    "typoIdea": "ฟอนต์สีน้ำเงินสดสะท้อนแสงไฟคอร์ตแบดมินตัน ตัดจังหวะตามลูกตบสแมช"
+  },
+  {
+    "id": 629,
+    "title": "Fatal",
+    "artist": "GEMN",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5c/7d/ee/5c7dee68-889c-1439-6a73-b90027e72c88/198009802494.png/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/8e/12/c58e12b4-a58a-898c-5e3b-dcc69282f5c0/mzaf_9158672543126371901.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Fatal%20GEMN",
+    "mood": "hype",
+    "tags": [
+      "เพลงเปิด Oshi no Ko S2",
+      "ละครเวทีโตเกียวเบลด",
+      "ลึกลับ"
+    ],
+    "bpm": "เร็ว (132 BPM)",
+    "lang": "jp",
+    "animeId": 21,
+    "animeMatch": [
+      21
+    ],
+    "reason": "เพลงเปิดซีซั่น 2 ของลูกโอชิ ดนตรีดาร์กดุดันเข้ากับฉากการแสดงละครเวทีสุดเดือดของอควา",
+    "typoIdea": "ตัวอักษรกลิตช์สีแดง-ดำ พร้อมดวงตาดาวกระจายประกายวาบในความมืด"
+  },
+  {
+    "id": 630,
+    "title": "Burning",
+    "artist": "Hitsujibungaku",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/02/2d/0d022dfa-69b1-78b0-5394-ac7c771020f6/knzwKARAOKE_sg_0038.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/20/77/25/2077250b-c9e8-61c9-b84b-c9e9944e49ac/mzaf_8279845803522791840.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Burning%20Hitsujibungaku",
+    "mood": "chill",
+    "tags": [
+      "เพลงปิด Oshi no Ko S2",
+      "เสียงร้องลอย",
+      "อารมณ์คลั่ง"
+    ],
+    "bpm": "ปานกลาง (115 BPM)",
+    "lang": "jp",
+    "animeId": 21,
+    "animeMatch": [
+      21
+    ],
+    "reason": "เพลงปิดที่ผสมผสานความหลอนและความงดงาม สื่อถึงความแค้นและเปลวไฟในใจของตัวละคร",
+    "typoIdea": "เปลวไฟสีม่วงลุกไหม้ตัวหนังสือ ค่อยๆ เผาไหม้จากขอบเข้าไปยังใจกลางคำ"
+  },
+  {
+    "id": 631,
+    "title": "晴る (Haru)",
+    "artist": "Yorushika",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b5/22/db/b522dbf2-da18-3712-1c3c-4f947c9ff9e1/199999507703.png/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d5/33/90/d5339021-95a7-0c24-b303-576f386562fb/mzaf_6920451872994359221.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E6%99%B4%E3%82%8B%20(Haru)%20Yorushika",
+    "mood": "hype",
+    "tags": [
+      "เพลงเปิด Frieren",
+      "ท้องฟ้าแจ่มใส",
+      "สายลมแห่งความหวัง"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "jp",
+    "animeId": 22,
+    "animeMatch": [
+      22
+    ],
+    "reason": "เพลงเปิดท่อนสองของฟรีเรน กีตาร์โปร่งและจังหวะกลองกระฉับกระเฉงสะท้อนการเดินทางต่อของพวกพ้อง",
+    "typoIdea": "กลีบดอกไม้สีฟ้าลอยพัดพาตัวอักษรให้ปรากฏขึ้นและเลือนหายตามแรงลม"
+  },
+  {
+    "id": 632,
+    "title": "Nobody",
+    "artist": "OneRepublic",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6d/90/51/6d90513a-88ed-e5f2-20ab-669dd2aa6f7b/24UMGIM28945.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b5/9b/14/b59b1431-4908-3b7a-fd4d-bb86d193ca6a/mzaf_1746474897586183065.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Nobody%20OneRepublic",
+    "mood": "hype",
+    "tags": [
+      "เพลงปิด Kaiju No 8",
+      "ฟีลกู้ดมันส์ๆ",
+      "มิตรภาพทีม"
+    ],
+    "bpm": "เร็ว (135 BPM)",
+    "lang": "jp",
+    "animeId": 33,
+    "animeMatch": [
+      33
+    ],
+    "reason": "เพลงปิดสุดมันส์ของไคจูหมายเลข 8 จังหวะตบมือสนุกสะท้อนมิตรภาพหน่วยกองกำลังป้องกัน",
+    "typoIdea": "ตัวหนังสือสไตล์ Comic Book เด้งขึ้นตามจังหวะตบมือและเบสสนุกสนาน"
+  },
+  {
+    "id": 633,
+    "title": "夢幻 (Mugen)",
+    "artist": "MY FIRST STORY x HYDE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/68/20/bc/6820bcd8-6d2c-2a73-08ff-2d5bff9a5bd4/4547366683356.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1b/33/38/1b333810-3d0b-360e-4add-d0854d642931/mzaf_4459120395971724554.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E5%A4%A2%E5%B9%BB%20(Mugen)%20MY%20FIRST%20STORY%20x%20HYDE",
+    "mood": "hype",
+    "tags": [
+      "ดาบพิฆาตอสูร",
+      "การฝึกฝนของเสาหลัก",
+      "ร็อคสะเทือนจอ"
+    ],
+    "bpm": "เร็ว (170 BPM)",
+    "lang": "jp",
+    "animeId": 3,
+    "animeMatch": [
+      3
+    ],
+    "reason": "เพลงเปิดภาคล่าสุดของการรวมตัวเหล่าเสาหลัก เสียงร้องสองพลังร็อคผสานฉากแอคชั่นสะกดสายตา",
+    "typoIdea": "ตัวหนังสือฟอนต์พู่กันญี่ปุ่นสีเพลิง สลับกับประกายดาบฟาดฟันจอภาพ"
+  },
+  {
+    "id": 634,
+    "title": "Cry Baby",
+    "artist": "Official HIGE DANdism",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4b/c7/24/4bc72490-5bde-d9cf-f4a6-a503d2661573/28044.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4d/c3/fc/4dc3fc84-c80b-2f60-2b3c-9ad920c44e8d/mzaf_10847820846597239429.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Cry%20Baby%20Official%20HIGE%20DANdism",
+    "mood": "hype",
+    "tags": [
+      "โตเกียวรีเวนเจอร์ส",
+      "การเปลี่ยนคีย์สุดเทพ",
+      "ลูกผู้ชาย"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "jp",
+    "animeId": 10,
+    "animeMatch": [
+      10
+    ],
+    "reason": "เพลงเปิดไอคอนิกที่เปลี่ยนคีย์ดนตรีอย่างน่าทึ่ง สื่อถึงการย้อนเวลาเพื่อช่วยเพื่อน",
+    "typoIdea": "ตัวหนังสือสะท้อนคราบน้ำฝนและไฟนีออนข้างถนนโตเกียวยามค่ำคืน"
+  },
+  {
+    "id": 635,
+    "title": "Sparkle (Movie ver.)",
+    "artist": "RADWIMPS",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/7a/fa/2e/7afa2eba-1885-28eb-3ac3-38e094cab233/11394500.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/95/de/55/95de553b-420d-8bb6-c7df-6925f9ecf2a4/mzaf_7907396941802337040.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Sparkle%20(Movie%20ver.)%20RADWIMPS",
+    "mood": "sad",
+    "tags": [
+      "Your Name",
+      "เปียโนดาวตก",
+      "ปาฏิหาริย์แห่งรัก"
+    ],
+    "bpm": "ปานกลาง (124 BPM)",
+    "lang": "jp",
+    "animeId": 9,
+    "animeMatch": [
+      9
+    ],
+    "reason": "เพลงประกอบระดับตำนานที่ดังขึ้นพร้อมกับฉากดาวตกแตกกระจายเหนือท้องฟ้าเมืองอิโตโมริ",
+    "typoIdea": "แสงประกายประกายดาววิ่งผ่านรอยแยกของตัวอักษร ค่อยๆ ระเบิดเป็นละอองแสงสีฟ้า-ชมพู"
+  },
+  {
+    "id": 636,
+    "title": "Grand Escape",
+    "artist": "RADWIMPS feat. Toko Miura",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/a1/5b/48/a15b489c-4077-c87b-4499-88edff10f95d/12039600.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/58/93/5f/58935fbd-b426-719a-f7bf-49b36d09213c/mzaf_6723773549434137718.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Grand%20Escape%20RADWIMPS%20feat.%20Toko%20Miura",
+    "mood": "hype",
+    "tags": [
+      "Weathering With You",
+      "ทะยานสู่ท้องฟ้า",
+      "ปลดปล่อย"
+    ],
+    "bpm": "เร็ว (140 BPM)",
+    "lang": "jp",
+    "animeId": 9,
+    "animeMatch": [
+      9
+    ],
+    "reason": "ท่อนประสานเสียงที่ดังกึกก้องตอนดิ่งลงมาจากท้องฟ้าฝ่าม่านเมฆ เป็นซีนที่นักตัดต่อทุกคนต้องเคยใช้",
+    "typoIdea": "ตัวหนังสือพุ่งทะลุม่านเมฆขึ้นสู่ท้องฟ้าสีคราม พร้อมแสงแดดส่องกระทบตัวอักษร"
+  },
+  {
+    "id": 637,
+    "title": "Suzume",
+    "artist": "RADWIMPS feat. Toaka",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/9e/5b/f4/9e5bf443-7f1c-cc7a-6773-68e49248a387/22UM1IM07363.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/87/00/80870064-7c81-8ecb-fbf3-d7ce7d5d973c/mzaf_16030670600666092245.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Suzume%20RADWIMPS%20feat.%20Toaka",
+    "mood": "chill",
+    "tags": [
+      "การผนึกประตู",
+      "เสียงฮัมลึกลับ",
+      "อลังการ"
+    ],
+    "bpm": "ช้า (84 BPM)",
+    "lang": "jp",
+    "animeId": 9,
+    "animeMatch": [
+      9
+    ],
+    "reason": "เสียงฮัมอันเป็นเอกลักษณ์และดนตรีออร์เคสตราอันทรงพลัง เหมาะกับฉากปิดประตูมิติ",
+    "typoIdea": "ตัวหนังสือเป็นรูปบานประตูโบราณ ค่อยๆ ปิดลงพร้อมแสงสีทองเปล่งประกาย"
+  },
+  {
+    "id": 638,
+    "title": "絆ノ奇跡 (Kizuna no Kiseki)",
+    "artist": "MAN WITH A MISSION x milet",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ea/50/a1/ea50a147-5c73-a762-0650-d2a285d6fabd/4547366615807.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/83/37/d583377d-2838-c953-0d1d-9623715987b8/mzaf_3797477771085865228.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E7%B5%86%E3%83%8E%E5%A5%87%E8%B7%A1%20(Kizuna%20no%20Kiseki)%20MAN%20WITH%20A%20MISSION%20x%20milet",
+    "mood": "hype",
+    "tags": [
+      "หมู่บ้านช่างตีดาบ",
+      "พลังแห่งสายสัมพันธ์",
+      "ร็อคดุดัน"
+    ],
+    "bpm": "เร็ว (155 BPM)",
+    "lang": "jp",
+    "animeId": 3,
+    "animeMatch": [
+      3
+    ],
+    "reason": "การประสานพลังระหว่างวงหมาป่าร็อคกับเสียงร้องอันทรงเสน่ห์ของ milet ในศึกช่างตีดาบ",
+    "typoIdea": "ตัวหนังสือฟอนต์พู่กันซามูไร มีประกายไฟจากการตีดาบสาดกระจาย"
+  },
+  {
+    "id": 639,
+    "title": "青のすみか (Where Our Blue Is)",
+    "artist": "Tatsuya Kitani",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/65/74/62/65746244-f7e0-ee86-3020-3059dec75961/4547366633085.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/be/8d/8cbe8db3-d84c-8308-3253-a03202ce49a0/mzaf_5586218102364426317.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E9%9D%92%E3%81%AE%E3%81%99%E3%81%BF%E3%81%8B%20(Where%20Our%20Blue%20Is)%20Tatsuya%20Kitani",
+    "mood": "hype",
+    "tags": [
+      "มหาเวทย์ผนึกมาร",
+      "ช่วงเวลาวัยเยาว์",
+      "โกโจและเกะโท"
+    ],
+    "bpm": "เร็ว (152 BPM)",
+    "lang": "jp",
+    "animeId": 2,
+    "animeMatch": [
+      2
+    ],
+    "reason": "เพลงเปิดบทอดีตของโกโจและเกะโท เมโลดี้สดใสปนความเศร้าของฤดูร้อนที่ไม่หวนกลับมา",
+    "typoIdea": "ฟอนต์สีฟ้าครามสดใส สลับภาพท้องฟ้าและรอยยิ้มของสองเพื่อนรักก่อนแยกทาง"
+  },
+  {
+    "id": 640,
+    "title": "燈 (Akari)",
+    "artist": "Soshi Sakiyama",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a9/c5/c3/a9c5c397-ce1e-d9ce-8226-566876afe78f/4547366628203.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/96/12/b6/9612b695-297d-0297-144f-bee0ba802b9c/mzaf_12450084874172922637.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E7%87%88%20(Akari)%20Soshi%20Sakiyama",
+    "mood": "sad",
+    "tags": [
+      "เพลงปิดมหาเวทย์ผนึกมาร",
+      "โคมไฟแห่งความทรงจำ",
+      "ซึ้งกินใจ"
+    ],
+    "bpm": "ช้า (78 BPM)",
+    "lang": "jp",
+    "animeId": 2,
+    "animeMatch": [
+      2
+    ],
+    "reason": "เพลงปิดสุดซึ้งที่สะท้อนการตัดสินใจและรอยแยกในใจของเกะโท สึงุรุ",
+    "typoIdea": "ตัวหนังสือส่องแสงวอมไวท์เหมือนโคมไฟกระดาษ ค่อยๆ ดับมอดลงในสายฝน"
+  },
+  {
+    "id": 641,
+    "title": "SPECIALZ",
+    "artist": "King Gnu",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/aa/33/55/aa335541-9932-d73c-6b1e-62bd484fc83d/4547366642308.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/5d/57/045d57fb-d1c4-2979-31ef-485662a97783/mzaf_7661994685536659402.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/SPECIALZ%20King%20Gnu",
+    "mood": "hype",
+    "tags": [
+      "อุบัติการณ์ชิบูย่า",
+      "ความโกลาหล",
+      "เพลงชาติชิบูย่า"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "jp",
+    "animeId": 2,
+    "animeMatch": [
+      2
+    ],
+    "reason": "บีทสุดหลอนและดนตรีเดือดคลั่งของชิบูย่า หนึ่งในเพลงที่ถูกนำมาตัดต่อคลิปไทโปมากที่สุดในโลก",
+    "typoIdea": "ตัวหนังสือกลิตช์สีแดง-ดำ สั่นระรัวกระพริบตามจังหวะ 'You are my special' แบบคลั่งขีดสุด"
+  },
+  {
+    "id": 642,
+    "title": "FLY HIGH!!",
+    "artist": "BURNOUT SYNDROMES",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/6d/85/70/6d8570e7-c77f-0d6e-5134-d5116b49e6c6/jacket_ESCL04600B00Z_550.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1b/5d/ab/1b5dab29-26c4-7624-e206-9bb64e15f7a7/mzaf_12862643149759948167.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/FLY%20HIGH!!%20BURNOUT%20SYNDROMES",
+    "mood": "hype",
+    "tags": [
+      "ไฮคิว",
+      "ทะยานสู่ฟ้า",
+      "พลังใจเกินร้อย"
+    ],
+    "bpm": "เร็ว (160 BPM)",
+    "lang": "jp",
+    "animeId": 365,
+    "animeMatch": [
+      365
+    ],
+    "reason": "เพลงเปิดในตำนานของไฮคิว ท่อนฮุคทรงพลังเหมาะกับฉากตบลูกวอลเลย์บอลและฉากกระโดดสูงสุดฟ้า",
+    "typoIdea": "ตัวหนังสือพุ่งทะยานจากล่างขึ้นบนตามแรงกระโดดตบลูกยาง พร้อมขนนกสีดำลอยกระจาย"
+  },
+  {
+    "id": 643,
+    "title": "Gurenge",
+    "artist": "LiSA",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ff/4c/ae/ff4cae1c-04e5-8ce3-c1f2-1e67e3e6d44e/jacket.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/71/db/b6/71dbb60b-e44a-c0f1-4d11-0c24ec7b3d99/mzaf_17753826553208699234.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Gurenge%20LiSA%20Kimetsu",
+    "mood": "hype",
+    "tags": [
+      "OP",
+      "มันส์",
+      "ดาบพิฆาตอสูร",
+      "J-pop"
+    ],
+    "bpm": "เร็ว (148 BPM)",
+    "lang": "jp",
+    "animeId": 5,
+    "animeMatch": [
+      5,
+      11
+    ],
+    "reason": "เพลง OP ดาบพิฆาตอสูร ที่โด่งดังทั่วโลก",
+    "typoIdea": "ตัวหนังสือพุ่งในจังหวะเดียวกับ riff กีตาร์"
+  },
+  {
+    "id": 644,
+    "title": "Homura",
+    "artist": "LiSA",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/8a/2c/72/8a2c7290-cba3-05b7-7a48-8e42c2e39f2a/jacket.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8c/66/27/8c6627a6-1e50-de4b-c04f-c9c2f9bc38f7/mzaf_7889131785621773892.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Homura%20LiSA%20Mugen%20Train",
+    "mood": "hype",
+    "tags": [
+      "OP",
+      "เดือด",
+      "ดาบพิฆาตอสูร",
+      "Mugen Train"
+    ],
+    "bpm": "เร็ว (156 BPM)",
+    "lang": "jp",
+    "animeId": 5,
+    "animeMatch": [
+      5
+    ],
+    "reason": "เพลงปิดของ Mugen Train ฉากสู้สุดอีโมชั่น",
+    "typoIdea": "ตัวหนังสือลุกไหม้พร้อมเปลวเพลิงสีส้ม"
+  },
+  {
+    "id": 645,
+    "title": "Unravel",
+    "artist": "TK from Ling tosite sigure",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/0e/a5/7a/0ea57acf-5c0c-fb35-21c1-1e1e5ccf3e72/jacket.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/cd/6a/7e/cd6a7e97-7c4a-d5fc-3dba-04e6fdf05a60/mzaf_5095897777516990649.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Unravel%20TK%20Tokyo%20Ghoul",
+    "mood": "sad",
+    "tags": [
+      "OP",
+      "เศร้า",
+      "โตเกียวกูล",
+      "เข้มข้น"
+    ],
+    "bpm": "ปานกลาง (96 BPM)",
+    "lang": "jp",
+    "animeId": 17,
+    "animeMatch": [
+      17,
+      11
+    ],
+    "reason": "เพลง OP Tokyo Ghoul อารมณ์หนักและซับซ้อนมาก",
+    "typoIdea": "ตัวอักษรแตกร้าวและรวมตัวใหม่ตามจังหวะ"
+  },
+  {
+    "id": 646,
+    "title": "A Cruel Angel's Thesis",
+    "artist": "Yoko Takahashi",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/fb/f0/c5/fbf0c50a-fc58-b1f1-0d29-2e7dd92f82d9/jacket.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/59/88/d3/5988d3c1-15d4-f4c4-0b7e-d14e77a8c4a0/mzaf_14993085978337684076.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Cruel%20Angel%20Thesis%20Evangelion",
+    "mood": "hype",
+    "tags": [
+      "OP",
+      "คลาสสิก",
+      "Evangelion",
+      "ตำนาน"
+    ],
+    "bpm": "เร็ว (138 BPM)",
+    "lang": "jp",
+    "animeId": 20,
+    "animeMatch": [
+      20
+    ],
+    "reason": "เพลง OP Evangelion ในตำนาน ฮิตทุกยุคทุกสมัย",
+    "typoIdea": "ตัวอักษรบินผ่านในมุมกล้องแบบ Evangelion"
+  },
+  {
+    "id": 647,
+    "title": "Renai Circulation",
+    "artist": "Kana Hanazawa",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/2a/ee/d4/2aeed4f9-f7e2-e7ef-b7e4-0d68a5ca0640/jacket.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/33/2d/e8/332de8db-8cb5-ac1a-bc3e-64b25c4c5b94/mzaf_13088726680703296567.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Renai%20Circulation%20Bakemonogatari",
+    "mood": "love",
+    "tags": [
+      "OP",
+      "น่ารัก",
+      "Bakemonogatari",
+      "Kawaii"
+    ],
+    "bpm": "ปานกลาง (100 BPM)",
+    "lang": "jp",
+    "animeId": 21,
+    "animeMatch": [
+      21,
+      2
+    ],
+    "reason": "เพลง OP น่ารักและ catchy จาก Bakemonogatari",
+    "typoIdea": "ตัวอักษรหมุนเป็นวงกลมตามชื่อ Circulation"
+  },
+  {
+    "id": 648,
+    "title": "Tank!",
+    "artist": "Seatbelts",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/77/1b/5c/771b5c38-5c0c-2e36-6d63-e39dce8b92e3/jacket.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7c/00/f8/7c00f8f8-a3cf-c5f3-2e53-81b99b24f048/mzaf_3398869479064455459.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Tank%20Seatbelts%20Cowboy%20Bebop",
+    "mood": "hype",
+    "tags": [
+      "OP",
+      "Jazz",
+      "Cowboy Bebop",
+      "Swing"
+    ],
+    "bpm": "เร็ว (156 BPM)",
+    "lang": "jp",
+    "animeId": 22,
+    "animeMatch": [
+      22
+    ],
+    "reason": "เพลง OP Cowboy Bebop แนว Jazz ที่โด่งดังที่สุดในโลกอนิเมะ",
+    "typoIdea": "ตัวอักษรสไตล์ Noir เคลื่อนตามจังหวะแจ๊ส"
+  },
+  {
+    "id": 649,
+    "title": "ใจความสำคัญ",
+    "artist": "Scrubb",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5a/50/d6/5a50d630-e68f-93e4-0c49-b30b1dd8a0e4/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/3a/ce/71/3ace7194-3a19-0c25-7d3c-af7cce2ede80/mzaf_10429716613082682376.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/ใจความสำคัญ%20Scrubb",
+    "mood": "love",
+    "tags": [
+      "อบอุ่น",
+      "ความรัก",
+      "ซึ้ง"
+    ],
+    "bpm": "ปานกลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 9,
+    "animeMatch": [
+      9,
+      7
+    ],
+    "reason": "เพลงรักอบอุ่นจาก Scrubb เข้ากับฉากโรแมนติกใน Your Name",
+    "typoIdea": "ตัวอักษรนุ่มนวลเหมือนลมพัดในฉากรักกลางทุ่งดอกไม้"
+  },
+  {
+    "id": 650,
+    "title": "เพื่อน",
+    "artist": "POTATO",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/5a/47/9f/5a479f57-4cf7-1c96-2498-0d8f62c68e97/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/57/5c/a7/575ca7de-7765-e25a-7c70-c6bd1d11a3ed/mzaf_5388680891022793890.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/เพื่อน%20POTATO",
+    "mood": "sad",
+    "tags": [
+      "มิตรภาพ",
+      "ความทรงจำ",
+      "ซึ้ง"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 6,
+    "animeMatch": [
+      6,
+      1
+    ],
+    "reason": "เพลงมิตรภาพที่ซึ้งใจ เข้ากับฉากมิตรภาพใน Haikyuu",
+    "typoIdea": "ตัวอักษรค่อยๆ ปรากฏพร้อมภาพความทรงจำ"
+  },
+  {
+    "id": 651,
+    "title": "Beautiful Day",
+    "artist": "U2",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/6a/83/5f/6a835f90-f5f1-d53c-5cf8-11cfc9e1bf22/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f0/c8/e9/f0c8e9c2-9f3e-6cd4-1e96-e4e2b4e15e9a/mzaf_8024437820456918702.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Beautiful%20Day%20U2",
+    "mood": "hype",
+    "tags": [
+      "Rock",
+      "อบอุ่น",
+      "Motivate",
+      "สร้างแรงบันดาลใจ"
+    ],
+    "bpm": "เร็ว (137 BPM)",
+    "lang": "en",
+    "animeId": 6,
+    "animeMatch": [
+      6,
+      11
+    ],
+    "reason": "เพลงร็อคที่ให้พลังงาน เหมาะกับฉากสร้างแรงบันดาลใจ",
+    "typoIdea": "ตัวอักษรพุ่งขึ้นพร้อมแสงแดดจ้า"
+  },
+  {
+    "id": 652,
+    "title": "My Heart Will Go On",
+    "artist": "Celine Dion",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/18/5e/7d/185e7dfa-e6d0-3de9-ea22-3dba75c77f95/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/93/be/7d/93be7dce-f4c0-8d2c-0413-f9b3fe8be9dc/mzaf_3044624870609756380.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/My%20Heart%20Will%20Go%20On%20Celine%20Dion",
+    "mood": "sad",
+    "tags": [
+      "Classic",
+      "ซึ้ง",
+      "รักเศร้า",
+      "ตำนาน"
+    ],
+    "bpm": "ช้า (60 BPM)",
+    "lang": "en",
+    "animeId": 3,
+    "animeMatch": [
+      3,
+      10
+    ],
+    "reason": "เพลงรักอมตะเหมาะกับฉากอำลาและความรักที่ยิ่งใหญ่",
+    "typoIdea": "ตัวอักษรล่องลอยในมหาสมุทรยามค่ำ"
+  },
+  {
+    "id": 653,
+    "title": "Chiisana Koi no Uta",
+    "artist": "Alya (CV: Sumire Uesaka)",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e3/a4/55/e3a455aa-9e0b-0eb6-5d87-1e4b7fae8129/198009831142.png/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/c6/75/eac675cb-e4a7-def8-f700-6c4a51174fcb/mzaf_7221921401608111530.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Chiisana%20Koi%20no%20Uta%20Alya%20(CV%3A%20Sumire%20Uesaka)",
+    "mood": "love",
+    "tags": [
+      "อาเรียโต๊ะข้างๆ",
+      "เพลงรัก",
+      "น่ารัก"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "jp",
+    "animeId": 202,
+    "animeMatch": [
+      202
+    ]
+  },
+  {
+    "id": 654,
+    "title": "Kawaikute Gomen",
+    "artist": "HoneyWorks",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/01/58/28/01582865-5af1-c416-d228-c9f1b1d54dde/4580074477572.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f7/67/98/f76798ec-4edc-7000-56c8-1600863732d4/mzaf_15324636916996199344.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Kawaikute%20Gomen%20HoneyWorks",
+    "mood": "love",
+    "tags": [
+      "น่ารักเกินปุยมุ้ย",
+      "โมเอะ",
+      "สดใส"
+    ],
+    "bpm": "เร็ว (160 BPM)",
+    "lang": "jp",
+    "animeId": 202,
+    "animeMatch": [
+      202
+    ]
+  },
+  {
+    "id": 655,
+    "title": "Lilac",
+    "artist": "Mrs. GREEN APPLE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a0/cc/26/a0cc2636-c5ce-3058-fe52-7b65b90e8ec1/25UMGIM77456.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6f/59/4a/6f594a27-51be-c0ea-66b9-030312e1ca57/mzaf_2885817648755372249.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Lilac%20Mrs.%20GREEN%20APPLE",
+    "mood": "hype",
+    "tags": [
+      "วัยรุ่น",
+      "สดใส",
+      "พลังบวก"
+    ],
+    "bpm": "เร็ว (170 BPM)",
+    "lang": "jp",
+    "animeId": 231,
+    "animeMatch": [
+      231
+    ]
+  },
+  {
+    "id": 656,
+    "title": "Ao to Natsu",
+    "artist": "Mrs. GREEN APPLE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/56/81/97/568197c9-4829-6e87-5571-e52bd2717ce0/20UMGIM31113.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/e8/3c/a7/e83ca74d-7383-905f-362b-0303b31e468f/mzaf_14605142048126454937.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Ao%20to%20Natsu%20Mrs.%20GREEN%20APPLE",
+    "mood": "hype",
+    "tags": [
+      "ฤดูร้อน",
+      "รักวัยเรียน",
+      "สดใส"
+    ],
+    "bpm": "เร็ว (155 BPM)",
+    "lang": "jp",
+    "animeId": 1,
+    "animeMatch": [
+      1
+    ]
+  },
+  {
+    "id": 657,
+    "title": "Harehare Ya",
+    "artist": "Sou",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/16/a0/4d/16a04d0e-ae99-e2e9-9953-926d49fc625d/4560352494750_cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2c/cb/7f/2ccb7f0d-c728-81bc-3a87-72380a60d557/mzaf_8949857135922856533.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Harehare%20Ya%20Sou",
+    "mood": "chill",
+    "tags": [
+      "ญี่ปุ่นดั้งเดิม",
+      "เทศกาลฤดูร้อน",
+      "คิดถึง"
+    ],
+    "bpm": "ปานกลาง (120 BPM)",
+    "lang": "jp",
+    "animeId": 12,
+    "animeMatch": [
+      12
+    ]
+  },
+  {
+    "id": 658,
+    "title": "Sailor Song",
+    "artist": "Gigi Perez",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/25/d4/96/25d49699-acc0-401f-a7cc-d7697339a474/24UM1IM03751.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6d/fe/18/6dfe184e-7612-f171-0356-0b7a84112e9a/mzaf_9760607751711758843.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Sailor%20Song%20Gigi%20Perez",
+    "mood": "chill",
+    "tags": [
+      "TikTokไวรัล",
+      "อะคูสติก",
+      "ละมุนใจ"
+    ],
+    "bpm": "ปานกลาง (115 BPM)",
+    "lang": "en",
+    "animeId": 3,
+    "animeMatch": [
+      3
+    ]
+  },
+  {
+    "id": 659,
+    "title": "ชอบตัวเองตอนอยู่กับเธอ",
+    "artist": "Billkin",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f9/ac/9e/f9ac9ebb-36dc-48eb-9191-5b8b2650cef1/0840517260227_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1d/71/af/1d71af3b-270d-ccff-feaa-697581ebc9c0/mzaf_17608781590889087545.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%8A%E0%B8%AD%E0%B8%9A%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B9%80%E0%B8%AD%E0%B8%87%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B8%AD%E0%B8%A2%E0%B8%B9%E0%B9%88%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%98%E0%B8%AD%20Billkin",
+    "mood": "love",
+    "tags": [
+      "โรแมนติก",
+      "คลั่งรัก",
+      "อบอุ่น"
+    ],
+    "bpm": "ปานกลาง (110 BPM)",
+    "lang": "th",
+    "animeId": 202,
+    "animeMatch": [
+      202
+    ]
+  },
+  {
+    "id": 660,
+    "title": "เธอหมุนรอบฉัน ฉันหมุนรอบเธอ",
+    "artist": "Scrubb",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/d0/39/b8/d039b825-8cde-4362-2400-4c612097dd46/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/88/3a/c9883a4b-f2f0-b7e8-eb32-0200c7bf173c/mzaf_14032535726865829602.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%AB%E0%B8%A1%E0%B8%B8%E0%B8%99%E0%B8%A3%E0%B8%AD%E0%B8%9A%E0%B8%89%E0%B8%B1%E0%B8%99%20%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%AB%E0%B8%A1%E0%B8%B8%E0%B8%99%E0%B8%A3%E0%B8%AD%E0%B8%9A%E0%B9%80%E0%B8%98%E0%B8%AD%20Scrubb",
+    "mood": "chill",
+    "tags": [
+      "อินดี้ไทย",
+      "คลาสสิก",
+      "อบอุ่น"
+    ],
+    "bpm": "ปานกลาง (115 BPM)",
+    "lang": "th",
+    "animeId": 2,
+    "animeMatch": [
+      2
+    ]
+  },
+  {
+    "id": 661,
+    "title": "ล้น",
+    "artist": "fellow fellow",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/46/e4/45/46e445f2-f5e3-1669-ea34-c9feea558d47/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ae/d3/a6/aed3a6f8-916d-9ce9-5602-ff6294b71a26/mzaf_981122009904961005.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B9%89%E0%B8%99%20fellow%20fellow",
+    "mood": "love",
+    "tags": [
+      "ฟีลกู๊ด",
+      "ป็อปนุ่ม",
+      "คลั่งรัก"
+    ],
+    "bpm": "ปานกลาง (100 BPM)",
+    "lang": "th",
+    "animeId": 7,
+    "animeMatch": [
+      7
+    ]
+  },
+  {
+    "id": 662,
+    "title": "ซ่อนเธอไว้ในเพลง",
+    "artist": "Only Monday",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/40/aa/8a/40aa8a9f-41c6-5c51-d238-d0e63179fadd/888332889797.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/76/28/a6/7628a663-d067-b4f3-7e3b-6523b2400e2e/mzaf_221718954353100809.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%8B%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B9%84%E0%B8%A7%E0%B9%89%E0%B9%83%E0%B8%99%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%20Only%20Monday",
+    "mood": "sad",
+    "tags": [
+      "คิดถึง",
+      "อดีต",
+      "ซ่อน"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 22,
+    "animeMatch": [
+      22
+    ],
+    "reason": "เมโลดี้ละมุนกับเรื่องราวความทรงจำที่ตราตรึง",
+    "typoIdea": "ใช้ฟอนต์บางโทนอบอุ่น เฟดตัวอักษรช้าๆ พร้อมแสงแดดยามเย็น"
+  },
+  {
+    "id": 663,
+    "title": "โคตรพิเศษ (From  แปลรักฉันด้วยใจเธอ Original Soundtrack)",
+    "artist": "BILLKIN",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e4/ea/c8/e4eac88a-2469-8a22-261d-3a1326fc61b3/21UMGIM61782.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0d/40/5e/0d405e54-0350-2a85-5259-1e9e70c39e59/mzaf_9765378744840613670.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%82%E0%B8%84%E0%B8%95%E0%B8%A3%E0%B8%9E%E0%B8%B4%E0%B9%80%E0%B8%A8%E0%B8%A9%20(From%20%20%E0%B9%81%E0%B8%9B%E0%B8%A5%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B9%83%E0%B8%88%E0%B9%80%E0%B8%98%E0%B8%AD%20Original%20Soundtrack)%20BILLKIN",
+    "mood": "love",
+    "tags": [
+      "พิเศษ",
+      "รัก",
+      "รอยยิ้ม"
+    ],
+    "bpm": "ช้า (78 BPM)",
+    "lang": "th",
+    "animeId": 375,
+    "animeMatch": [
+      375
+    ],
+    "reason": "ความรู้สึกที่มองคนตรงหน้าแล้วรู้สึกว่าเขาคือคนพิเศษที่สุด",
+    "typoIdea": "แสงไฟนีออนนุ่มๆ พร้อมตัวหนังสือเด้งกระพริบเบาๆ"
+  },
+  {
+    "id": 664,
+    "title": "ทรงอย่างแบด",
+    "artist": "Paper Planes",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/90/a0/8c90a081-b8f8-8d89-acf7-3531400bd49d/mzaf_1875861912879165721.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%9A%E0%B8%94%20Paper%20Planes",
+    "mood": "hype",
+    "tags": [
+      "ร็อก",
+      "มันส์",
+      "วัยรุ่น"
+    ],
+    "bpm": "เร็ว (145 BPM)",
+    "lang": "th",
+    "animeId": 29,
+    "animeMatch": [
+      29
+    ],
+    "reason": "จังหวะร็อกพังค์ดุดันกับฉากต่อสู้ของเหล่านักเรียนนักเลง",
+    "typoIdea": "ฟอนต์กราฟิตี้กระแทกตามจังหวะเบสดรัมสีแดงไฟ"
+  },
+  {
+    "id": 665,
+    "title": "สลักจิต (feat. ดา เอ็นโดรฟิน)",
+    "artist": "Pop Pongkool",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8c/69/cb/8c69cba7-b440-a3b3-b9c0-8e409b8613f2/888332908481.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/6e/34/e66e34c2-c971-ef2c-2e0f-f8a99e220912/mzaf_7695861381642299193.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%88%E0%B8%B4%E0%B8%95%20(feat.%20%E0%B8%94%E0%B8%B2%20%E0%B9%80%E0%B8%AD%E0%B9%87%E0%B8%99%E0%B9%82%E0%B8%94%E0%B8%A3%E0%B8%9F%E0%B8%B4%E0%B8%99)%20Pop%20Pongkool",
+    "mood": "sad",
+    "tags": [
+      "คิดถึง",
+      "สลักจิต",
+      "ดนตรีไทย"
+    ],
+    "bpm": "ช้า (68 BPM)",
+    "lang": "th",
+    "animeId": 22,
+    "animeMatch": [
+      22
+    ],
+    "reason": "ความรักที่ถูกสลักลึกไว้ในก้นบึ้งของหัวใจตลอดกาล",
+    "typoIdea": "ฟอนต์คลาสสิกเรืองแสงบางเบาบนผิวน้ำ"
+  },
+  {
+    "id": 666,
+    "title": "เพื่อนสัมพันธ์",
+    "artist": "HYE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ae/7c/05/ae7c05b9-bb52-8b52-5f4b-43ad89de368a/888332914093.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/52/bd/46/52bd4682-5b2b-98d0-e477-2d914dd8f5c5/mzaf_2964818324831537261.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%AA%E0%B8%B1%E0%B8%A1%E0%B8%9E%E0%B8%B1%E0%B8%99%E0%B8%98%E0%B9%8C%20HYE",
+    "mood": "chill",
+    "tags": [
+      "ซิตี้ป๊อป",
+      "ชิลล์",
+      "เพื่อน"
+    ],
+    "bpm": "ปานกลาง (96 BPM)",
+    "lang": "th",
+    "animeId": 213,
+    "animeMatch": [
+      213
+    ],
+    "reason": "ดนตรีซิตี้ป๊อปฟังสบาย เหมาะกับบรรยากาศในโรงเรียนยามเย็น",
+    "typoIdea": "ตัวอักษรนีออนสีชมพู-ฟ้า สไตล์เรโทร 80s"
+  },
+  {
+    "id": 667,
+    "title": "สุขสันต์วันคิดถึง (Happily Missing You)",
+    "artist": "BUS",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/21/cb/fd/21cbfd18-e406-5d33-fb2a-98132f8a09f2/24UM1IM33014.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/f0/58/d5f05834-f793-0c7a-8c4a-b0e7cb363b0e/mzaf_7246401094002610027.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B8%E0%B8%82%E0%B8%AA%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%8C%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%96%E0%B8%B6%E0%B8%87%20(Happily%20Missing%20You)%20BUS",
+    "mood": "sad",
+    "tags": [
+      "คิดถึง",
+      "วันเกิด",
+      "คืนเหงา"
+    ],
+    "bpm": "ปานกลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 373,
+    "animeMatch": [
+      373
+    ],
+    "reason": "การส่งความยินดีผ่านสายลมในคืนที่เหงาที่สุด",
+    "typoIdea": "ฟอนต์โมเดิร์นสีขาวเรียบ เรืองแสงสีฟ้าอ่อนบนท้องฟ้ากลางคืน"
+  },
+  {
+    "id": 668,
+    "title": "オトノケ - Otonoke",
+    "artist": "Creepy Nuts",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f4/74/85/f47485b0-28e1-8439-9577-e19b41c43fd2/4547366731958.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/06/c3/95/06c395ae-e266-da88-d4bb-b6c56b0015d8/mzaf_4392772571132026109.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E3%82%AA%E3%83%88%E3%83%8E%E3%82%B1%20-%20Otonoke%20Creepy%20Nuts",
+    "mood": "hype",
+    "tags": [
+      "dandadan",
+      "turbo",
+      "fast"
+    ],
+    "bpm": "เร็ว (155 BPM)",
+    "lang": "jp",
+    "animeId": 32,
+    "animeMatch": [
+      32
+    ],
+    "reason": "Insane vocal speed and drum work from Dandadan theme",
+    "typoIdea": "Neon lightning trails outlining fast-scrolling punchy words"
+  },
+  {
+    "id": 669,
+    "title": "オレンジ",
+    "artist": "SPYAIR",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/79/0a/01/790a0111-75d7-06e5-cf3b-c5238031cc7d/4547366669541.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/26/db/e526dbbb-f107-57fb-8783-9feea7eb7844/mzaf_13628143605540446538.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8%20SPYAIR",
+    "mood": "hype",
+    "tags": [
+      "haikyuu",
+      "volleyball",
+      "orange"
+    ],
+    "bpm": "เร็ว (138 BPM)",
+    "lang": "jp",
+    "animeId": 242,
+    "animeMatch": [
+      242
+    ],
+    "reason": "Passionate arena rock celebrating rival friendship and match point drama",
+    "typoIdea": "Sunset orange font streaking like a spike across the net"
+  },
+  {
+    "id": 670,
+    "title": "แค่มีเธอไปเดินเตะคลื่นทะเลด้วยกัน",
+    "artist": "No One Else",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/fb/69/e2/fb69e2f2-775d-0eda-3045-3118c49a60c0/196922608872_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c2/d0/44/c2d0447d-dec9-edfb-1440-1ae1667f9a3e/mzaf_15424580955553615155.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%84%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B9%84%E0%B8%9B%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%99%E0%B9%80%E0%B8%95%E0%B8%B0%E0%B8%84%E0%B8%A5%E0%B8%B7%E0%B9%88%E0%B8%99%E0%B8%97%E0%B8%B0%E0%B9%80%E0%B8%A5%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%99%20No%20One%20Else",
+    "mood": "chill",
+    "tags": [
+      "ทะเล",
+      "คลื่น",
+      "ความสุข"
+    ],
+    "bpm": "ปานกลาง (92 BPM)",
+    "lang": "th",
+    "animeId": 7,
+    "animeMatch": [
+      7
+    ],
+    "reason": "ฟีลลิ่งเดินเล่นริมหาดทรายยามพระอาทิตย์ตกดิน",
+    "typoIdea": "คลื่นน้ำซัดผ่านตัวอักษรแล้วจางหายไป"
+  },
+  {
+    "id": 671,
+    "title": "ห้องกระจก",
+    "artist": "Safeplanet",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/15/d3/a4/15d3a4da-6ff7-7f7b-9927-5408d6e0f58e/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0b/a6/6e/0ba66e73-e888-a5cb-3a54-1b91502d8caa/mzaf_1229926869637758864.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%81%20Safeplanet",
+    "mood": "chill",
+    "tags": [
+      "กระจก",
+      "สะท้อน",
+      "อินดี้"
+    ],
+    "bpm": "ปานกลาง (100 BPM)",
+    "lang": "th",
+    "animeId": 26,
+    "animeMatch": [
+      26
+    ],
+    "reason": "บรรยากาศล่องลอยเหมือนอยู่ในมิติกระจกสะท้อนเงา",
+    "typoIdea": "เอฟเฟกต์กระจกสะท้อน Mirror ซ้อนเงาสามมิติ"
+  },
+  {
+    "id": 672,
+    "title": "คำตอบ",
+    "artist": "Safeplanet",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/40/12/43/4012436e-ee32-764c-be15-1e97c4b6047e/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/05/19/3e/05193e43-f441-9e42-5818-fb92c9c47414/mzaf_974226826442656002.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B3%E0%B8%95%E0%B8%AD%E0%B8%9A%20Safeplanet",
+    "mood": "chill",
+    "tags": [
+      "คำตอบ",
+      "ตามหา",
+      "สบาย"
+    ],
+    "bpm": "ปานกลาง (94 BPM)",
+    "lang": "th",
+    "animeId": 7,
+    "animeMatch": [
+      7
+    ],
+    "reason": "ดนตรีฟังสบายที่สื่อถึงการค้นพบคำตอบของชีวิตและหัวใจ",
+    "typoIdea": "ตัวอักษรค่อยๆ ชัดขึ้นจากการเบลอละมุนตา"
+  },
+  {
+    "id": 673,
+    "title": "เดาไม่เก่ง",
+    "artist": "Three Man Down",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/77/48/e7/7748e7c4-706b-3245-ce78-5feec5ef5461/888332917100.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a5/7a/0e/a57a0e4d-fd66-cf6f-fa77-ede8694f0a0e/mzaf_12582035404006697590.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%94%E0%B8%B2%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87%20Three%20Man%20Down",
+    "mood": "chill",
+    "tags": [
+      "เดา",
+      "น่ารัก",
+      "กวนๆ"
+    ],
+    "bpm": "ปานกลาง (108 BPM)",
+    "lang": "th",
+    "animeId": 2,
+    "animeMatch": [
+      2
+    ],
+    "reason": "ความในใจของคนที่ดูไม่ออกว่าเธอคิดยังไงกันแน่",
+    "typoIdea": "เครื่องหมายคำถาม (?) ปรากฏเด้งรอบๆ ตัวอักษรอย่างน่ารัก"
+  },
+  {
+    "id": 674,
+    "title": "ข้างกัน (City) [Live At Impact Arena 2023]",
+    "artist": "Three Man Down",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d1/b9/39/d1b939c6-6773-46ee-0bf9-bf6d458785a0/888332897631.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/e0/e6/15e0e629-690f-f58c-47e6-09c32bede6a8/mzaf_11114409508805636663.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B1%E0%B8%99%20(City)%20%5BLive%20At%20Impact%20Arena%202023%5D%20Three%20Man%20Down",
+    "mood": "love",
+    "tags": [
+      "ข้างกัน",
+      "อบอุ่น",
+      "คืนเหงา"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "th",
+    "animeId": 14,
+    "animeMatch": [
+      14
+    ],
+    "reason": "ความสุขเรียบง่ายเพียงแค่มีใครสักคนนั่งอยู่ข้างๆ",
+    "typoIdea": "ตัวอักษรสองฝั่งเลื่อนเข้ามาประกบคู่กันพอดี"
+  },
+  {
+    "id": 675,
+    "title": "新時代 (ウタ from ONE PIECE FILM RED)",
+    "artist": "Ado",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/22/1c/ec/221cec90-5ec0-422a-3ddd-1aeeac06bb59/22UMGIM51053.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6b/f3/59/6bf35909-9a90-8642-b4fc-0932fcd4f862/mzaf_9878820709909147000.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E6%96%B0%E6%99%82%E4%BB%A3%20(%E3%82%A6%E3%82%BF%20from%20ONE%20PIECE%20FILM%20RED)%20Ado",
+    "mood": "hype",
+    "tags": [
+      "onepiece",
+      "uta",
+      "diva"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "jp",
+    "animeId": 36,
+    "animeMatch": [
+      36
+    ],
+    "reason": "Uta's show-stopping vocal performance from One Piece Film Red",
+    "typoIdea": "Holographic multi-color luminous lettering radiating music waves"
+  },
+  {
+    "id": 676,
+    "title": "Mr. Everything",
+    "artist": "BILLKIN",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/73/93/e3/7393e32d-304f-7788-a185-9eb0b847e3a7/23UMGIM60408.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3e/a0/a8/3ea0a878-b4d7-3965-b0c0-22d3402af30f/mzaf_7540505257618307844.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Mr.%20Everything%20BILLKIN",
+    "mood": "love",
+    "tags": [
+      "คลั่งรัก",
+      "ฟีลกู๊ด",
+      "ป๊อปสดใส"
+    ],
+    "bpm": "ปานกลาง (104 BPM)",
+    "lang": "th",
+    "animeId": 385,
+    "animeMatch": [
+      385
+    ],
+    "reason": "เพลงป๊อปหวานอบอุ่นที่จะคอยดูแลทุกอย่าง เข้ากับเคมีเจ้าหญิงนีน่าและความรักที่จริงใจ",
+    "typoIdea": "ฟอนต์แนว Rounded Sans สีพาสเทลชมพู-ทอง สไลด์ข้อความจากข้างล่างขึ้นมาแบบสปริงนุ่มๆ"
+  },
+  {
+    "id": 677,
+    "title": "เกินต้าน",
+    "artist": "PiXXiE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/bb/01/fc/bb01fc97-9caf-ec49-0a7a-61d1b0ea7598/26UMGIM00065.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/37/6a/4f/376a4f6f-ad99-cb86-7fba-3c798efb3b2c/mzaf_7473281820794375284.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%81%E0%B8%B4%E0%B8%99%E0%B8%95%E0%B9%89%E0%B8%B2%E0%B8%99%20PiXXiE",
+    "mood": "love",
+    "tags": [
+      "เกินต้าน",
+      "น่ารัก",
+      "สดใส"
+    ],
+    "bpm": "ปานกลาง (112 BPM)",
+    "lang": "th",
+    "animeId": 2,
+    "animeMatch": [
+      2
+    ],
+    "reason": "ท่อนฮุกน่ารักสดใส เหมาะกับฉากหยอกล้อหรือซีนหวานแบบแอบเขินของคู่รัก",
+    "typoIdea": "ตัวหนังสือสไตล์ Pop Sticker เด้งขยายพร้อมเอฟเฟกต์หัวใจประกายสีชมพู"
+  },
+  {
+    "id": 678,
+    "title": "ไม่ได้ก็ไม่เอา (Whatever) [Live]",
+    "artist": "PiXXiE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f3/a4/fa/f3a4fa7c-c0cf-6c1a-d76c-dd734d02d278/26UMGIM49487.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/91/28/6f/91286f1e-9e7e-6ee2-0747-5f493e057a25/mzaf_9008441331403478524.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%81%E0%B9%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%AD%E0%B8%B2%20(Whatever)%20%5BLive%5D%20PiXXiE",
+    "mood": "chill",
+    "tags": [
+      "กวนๆ",
+      "ไม่แคร์",
+      "ป๊อปโมเดิร์น"
+    ],
+    "bpm": "ปานกลาง (105 BPM)",
+    "lang": "th",
+    "animeId": 27,
+    "animeMatch": [
+      27
+    ],
+    "reason": "บีทน่ารักกวนๆ มีความชิค เหมาะกับฉากความฮาและความน่ารักในครอบครัวฟอร์เจอร์",
+    "typoIdea": "ฟอนต์ตัวหนาลอยไปมา สลับสีตัดกัน ดรอปเงาแบบ Pop Comic"
+  },
+  {
+    "id": 679,
+    "title": "เจ็บเมื่อไหร่ (CALL ME)",
+    "artist": "KRIST",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ae/6a/96/ae6a967d-4b63-3bf4-da6d-494b2ea14334/888332905152.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/1f/0d/9a1f0ddc-9367-c333-dbb2-094912b27bb4/mzaf_10619988463794286601.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%88%E0%B9%87%E0%B8%9A%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B9%84%E0%B8%AB%E0%B8%A3%E0%B9%88%20(CALL%20ME)%20KRIST",
+    "mood": "love",
+    "tags": [
+      "พร้อมดูแล",
+      "อบอุ่น",
+      "ป๊อปอาร์แอนด์บี"
+    ],
+    "bpm": "ปานกลาง (115 BPM)",
+    "lang": "th",
+    "animeId": 376,
+    "animeMatch": [
+      376
+    ],
+    "reason": "เนื้อหาที่พร้อมอยู่ข้างเธอเสมอเมื่อเธอเจ็บ เข้ากับความผูกพันของเบลและท่านเฮสเทีย",
+    "typoIdea": "ข้อความคล้ายแชทข้อความมือถือ พร้อมคลื่นเสียงวิ่งตามเสียงร้อง"
+  },
+  {
+    "id": 680,
+    "title": "ข้างกัน (City) [Live At Impact Arena 2023]",
+    "artist": "Three Man Down",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d1/b9/39/d1b939c6-6773-46ee-0bf9-bf6d458785a0/888332897631.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/e0/e6/15e0e629-690f-f58c-47e6-09c32bede6a8/mzaf_11114409508805636663.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B1%E0%B8%99%20(City)%20%5BLive%20At%20Impact%20Arena%202023%5D%20Three%20Man%20Down",
+    "mood": "love",
+    "tags": [
+      "โรแมนติก",
+      "ไฟเมือง",
+      "ซินธ์ป๊อป"
+    ],
+    "bpm": "ปานกลาง (95 BPM)",
+    "lang": "th",
+    "animeId": 387,
+    "animeMatch": [
+      387
+    ],
+    "reason": "ซาวด์ซินธ์ป๊อปละมุนและบรรยากาศโรแมนติกในยามค่ำคืน เข้ากับฉากวิวเมืองและการเดินเคียงข้าง",
+    "typoIdea": "ตัวอักษรนีออนเรืองแสงสีม่วง-ส้ม เบลอฉากหลังสร้างโบเก้แสงไฟเมือง"
+  },
+  {
+    "id": 681,
+    "title": "ลืมแทบไม่ไหว (feat. Maimhon)",
+    "artist": "SARAN",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/b3/10/f7/b310f75e-2465-705c-7d55-0480dcce3b98/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ab/16/c1/ab16c133-7bdc-01e6-0e6c-f9ff0c8c9f41/mzaf_3282050872927801930.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B7%E0%B8%A1%E0%B9%81%E0%B8%97%E0%B8%9A%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%AB%E0%B8%A7%20(feat.%20Maimhon)%20SARAN",
+    "mood": "sad",
+    "tags": [
+      "ยอมปล่อย",
+      "ยินดีด้วยนะ",
+      "แร็ปดราม่า"
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      1
+    ],
+    "reason": "ความรู้สึกยินดีที่เห็นเธอมีความสุขแม้ไม่มีเรา สอดคล้องกับฉากการจากลาในฤดูใบไม้ผลิ",
+    "typoIdea": "ฟอนต์ขอบบางเรียบหรู ค่อยๆ แตกสลายตามคีย์เปียโนท่อนสุดท้าย"
+  },
+  {
+    "id": 682,
+    "title": "Dancing In The Flames (Live from São Paulo)",
+    "artist": "The Weeknd",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/22/b2/82/22b282b6-4121-3a1c-b080-0a3a9df8acd2/24UM1IM00939.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dc/9c/c9/dc9cc992-a72d-37aa-3b26-81735048837f/mzaf_7502433658121927367.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Dancing%20In%20The%20Flames%20(Live%20from%20S%C3%A3o%20Paulo)%20The%20Weeknd",
+    "mood": "hype",
+    "tags": [
+      "ซินธ์เวฟ",
+      "ไนท์ไดรฟ์",
+      "เดอะวีกเอนด์"
+    ],
+    "bpm": "เร็ว (120 BPM)",
+    "lang": "en",
+    "animeId": 383,
+    "animeMatch": [
+      383
+    ],
+    "reason": "จังหวะซินธ์เวฟขับรถยามค่ำคืนที่เร้าใจ เข้ากับการประลองความเร็วบนสนามเขาของ MF Ghost",
+    "typoIdea": "สปีดไลน์พุ่งผ่านตัวหนังสือ เรืองแสงสีส้มเปลวเพลิง ทรานสิชันแบบ Speed Cut"
+  },
+  {
+    "id": 683,
+    "title": "ライラック",
+    "artist": "Mrs. GREEN APPLE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4c/3b/b2/4c3bb247-3be8-0c57-aa9a-7f1775a7b7a8/24UMGIM32931.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0a/c4/5d/0ac45d4d-62ad-9609-4528-78c849392f49/mzaf_15781851599354670952.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E3%83%A9%E3%82%A4%E3%83%A9%E3%83%83%E3%82%AF%20Mrs.%20GREEN%20APPLE",
+    "mood": "hype",
+    "tags": [
+      "เพลงเปิดอนิเมะ",
+      "ไวรัลอันดับ1",
+      "พลังวัยรุ่น"
+    ],
+    "bpm": "เร็ว (155 BPM)",
+    "lang": "jp",
+    "animeId": 384,
+    "animeMatch": [
+      384
+    ],
+    "reason": "โซโลกีตาร์สุดมันส์และเมโลดี้เร็วทะยาน เหมาะกับฉากฝึกดาบและการต่อสู้ของซามูไรวัยหนุ่ม",
+    "typoIdea": "ตัวหนังสือสไตล์ Manga Action ลายเส้นสะบัดพู่กัน สลับสีม่วงไลแลคและขาว"
+  },
+  {
+    "id": 684,
+    "title": "タイムパラドックス",
+    "artist": "Vaundy",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3b/67/cf/3b67cfba-0b55-3bdc-1d5f-e26c9071c2f7/4547366661972.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6f/36/a4/6f36a4b7-ea9b-e37a-99da-8c04aefb8c22/mzaf_3698037756450034703.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%91%E3%83%A9%E3%83%89%E3%83%83%E3%82%AF%E3%82%B9%20Vaundy",
+    "mood": "chill",
+    "tags": [
+      "ฟีลกู๊ด",
+      "ป๊อปโซล",
+      "อบอุ่น"
+    ],
+    "bpm": "ปานกลาง (106 BPM)",
+    "lang": "jp",
+    "animeId": 187,
+    "animeMatch": [
+      187
+    ],
+    "reason": "เมโลดี้ฟีลกู๊ดและกรูฟนุ่มนวลสะท้อนความผูกพันและช่วงเวลาที่สวยงามในอดีต",
+    "typoIdea": "ฟอนต์มินิมอลญี่ปุ่นลอยละล่อง ซ้อนเงาบางๆ และมีแอนิเมชันพลิกหน้าสมุดวาดภาพ"
+  },
+  {
+    "id": 685,
+    "title": "毎日 - Every Day",
+    "artist": "米津玄師",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/13/30/e1/1330e1c2-be26-b960-8c94-896cbda4e6f4/4547366686784.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/eb/c5/77/ebc57714-88f6-d8e6-7d43-099f36fe0191/mzaf_14786411521429622565.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E6%AF%8E%E6%97%A5%20-%20Every%20Day%20%E7%B1%B3%E6%B4%A5%E7%8E%84%E5%B8%AB",
+    "mood": "hype",
+    "tags": [
+      "จังหวะสับ",
+      "มีพลัง",
+      "ติดหู"
+    ],
+    "bpm": "เร็ว (138 BPM)",
+    "lang": "jp",
+    "animeId": 379,
+    "animeMatch": [
+      379
+    ],
+    "reason": "จังหวะสนุกเร้าใจและลูกเล่นดนตรีที่คาดเดายาก เข้ากับฉากยิงปืนและความเร็วของเร็นใน GGO",
+    "typoIdea": "ตัวอักษรแนวเรขาคณิต กระโดดสลับขนาดตามเสียงบีทกระแทก"
+  },
+  {
+    "id": 686,
+    "title": "Sharon",
+    "artist": "Official髭男dism",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5e/35/b0/5e35b0e7-4c59-d77b-5856-5edc4413adae/PCCA_06304_A.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/5c/86/045c865a-7951-acd1-be9c-4e29e3a00618/mzaf_4853527130631578239.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Sharon%20Official%E9%AB%AD%E7%94%B7dism",
+    "mood": "sad",
+    "tags": [
+      "บัลลาดทรงพลัง",
+      "กินใจ",
+      "เสียงเปียโน"
+    ],
+    "bpm": "ปานกลาง (88 BPM)",
+    "lang": "jp",
+    "animeId": 382,
+    "animeMatch": [
+      382
+    ],
+    "reason": "บทเพลงแห่งการรำลึกและยืนหยัด เข้ากับฉากการเสียสละครั้งยิ่งใหญ่ในบาบิโลเนีย",
+    "typoIdea": "ฟอนต์ Serif สีทองโบราณ จางหายกลายเป็นละอองทองคำระยิบระยับ"
+  },
+  {
+    "id": 687,
+    "title": "チキチキバンバン",
+    "artist": "QUEENDOM",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/7e/50/d8/7e50d8ca-a7b7-833e-7585-8751b4ab7a03/ANTCD-A0000007754.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/dc/87/66/dc87661b-ebc0-309f-c92c-a6048ef45b10/mzaf_4980228624940024737.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E3%83%81%E3%82%AD%E3%83%81%E3%82%AD%E3%83%90%E3%83%B3%E3%83%90%E3%83%B3%20QUEENDOM",
+    "mood": "hype",
+    "tags": [
+      "ไวรัลเต้น",
+      "เพลงเปิดสุดฮิต",
+      "ยูโรบีท"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "jp",
+    "animeId": 378,
+    "animeMatch": [
+      378
+    ],
+    "reason": "เพลงเปิดสุดไวรัลที่ใครฟังก็ต้องโยกตาม เข้ากับซีนขงเบ้งและเอโกะอย่างที่สุด",
+    "typoIdea": "ลูกศรและป้ายไฟดิสโก้ ตัวหนังสือเด้งสเต็ปแดนซ์ แสงนีออนสลับสีเหลือง-ม่วง"
+  },
+  {
+    "id": 688,
+    "title": "Sing My Pleasure",
+    "artist": "ヴィヴィ(Vo.八木海莉)",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c6/0d/25/c60d25de-ba5a-4c9e-820f-59c41b94cbb7/4534530130419.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/1a/0b/e5/1a0be5ab-12e7-8bb3-2fa6-5724a3dda437/mzaf_13480818112944396654.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Sing%20My%20Pleasure%20%E3%83%B4%E3%82%A3%E3%83%B4%E3%82%A3(Vo.%E5%85%AB%E6%9C%A8%E6%B5%B7%E8%8E%89)",
+    "mood": "hype",
+    "tags": [
+      "เพลงระดับตำนาน",
+      "พลังเสียง",
+      "ไซไฟ"
+    ],
+    "bpm": "เร็ว (150 BPM)",
+    "lang": "jp",
+    "animeId": 377,
+    "animeMatch": [
+      377
+    ],
+    "reason": "เพลงเปิดระดับตำนานที่ผสมความไพเราะของเสียงร้องกับฉากแอคชั่นไซไฟระดับภาพยนตร์",
+    "typoIdea": "เส้นคลื่นเสียงดิจิทัลสีฟ้าไซอัน วิ่งเชื่อมโยงตัวหนังสือไทโปแบบล้ำยุค"
+  },
+  {
+    "id": 689,
+    "title": "Fatal - Gemn (Oshi No Ko)",
+    "artist": "Luxia Piano",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5c/7d/ee/5c7dee68-889c-1439-6a73-b90027e72c88/198009802494.png/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/8e/12/c58e12b4-a58a-898c-5e3b-dcc69282f5c0/mzaf_9158672543126371901.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Fatal%20-%20Gemn%20(Oshi%20No%20Ko)%20Luxia%20Piano",
+    "mood": "hype",
+    "tags": [
+      "โอชิโนะโกะ2",
+      "ดาร์กป๊อป",
+      "เสน่ห์ล้นหลาม"
+    ],
+    "bpm": "เร็ว (132 BPM)",
+    "lang": "jp",
+    "animeId": 21,
+    "animeMatch": [
+      21
+    ],
+    "reason": "เพลงเปิดดาร์กป๊อปที่มีเสน่ห์เย้ายวนและร้อนแรง สะท้อนละครเวทีโตเกียวเบลดและการแก้แค้น",
+    "typoIdea": "ตัวอักษรเงาสะท้อนสไตล์กระจกเงา เลือดและประกายตาดวงดาวกะพริบวิบวับ"
+  },
+  {
+    "id": 690,
+    "title": "MUKANJYO",
+    "artist": "Survive Said The Prophet",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/3b/e9/8c/3be98cfb-7c80-9343-3235-5f1a8a6d9b46/jacket_SRXX03194B00Z_550.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a0/e1/72/a0e172ae-4646-64c4-cde0-65480e4d0eb8/mzaf_8060636888207431771.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/MUKANJYO%20Survive%20Said%20The%20Prophet",
+    "mood": "hype",
+    "tags": [
+      "ไวกิ้ง",
+      "สครีมโมร็อก",
+      "เดือดสุดขีด"
+    ],
+    "bpm": "เร็ว (160 BPM)",
+    "lang": "jp",
+    "animeId": 48,
+    "animeMatch": [
+      48
+    ],
+    "reason": "เพลงเปิด Vinland Saga ที่แฟนสายตัดต่อยกย่อง ความเดือดของเสียงสครีมและท่อนโซโล่สะเทือนวิญญาณ",
+    "typoIdea": "รอยบากดาบฟันเฉือนตัวหนังสือแตกกระจาย ทรานสิชันคัตติ้งเร็วตามสปีดเสียงกลอง"
+  },
+  {
+    "id": 691,
+    "title": "hot2hot",
+    "artist": "4EVE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/51/db/19/51db1951-0212-b7a6-268d-2149fe32528d/25UMGIM35339.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/4c/58/264c5806-aefb-c654-a84a-174912847f64/mzaf_6329756877425482450.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/hot2hot%204EVE",
+    "mood": "hype",
+    "tags": [
+      "4EVE",
+      "ฮอตทูฮอต",
+      "แดนซ์ไฟลุก"
+    ],
+    "bpm": "เร็ว (125 BPM)",
+    "lang": "th",
+    "animeId": 85,
+    "animeMatch": [
+      85
+    ],
+    "reason": "บีทแดนซ์ไฟลุกสไตล์ทีป๊อปที่เร้าร้อน เข้ากับฉากยิงปืนและความเก่งกาจของสองสาว Lycoris",
+    "typoIdea": "ตัวอักษรสีแดงนีออนตัดเปลวไฟ สั่นกระตุกตามเสียงสแนร์และจังหวะเคาะสับ"
+  },
+  {
+    "id": 692,
+    "title": "FEAT",
+    "artist": "PiXXiE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d0/74/cf/d074cffa-c658-52b8-22f1-f29df4b7936b/26UMGIM00765.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/cf/1f/14cf1fba-4656-4ceb-3017-2b47a20a5fce/mzaf_18157140130715004938.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/FEAT%20PiXXiE",
+    "mood": "love",
+    "tags": [
+      "ชวนมาฟีท",
+      "น่ารัก",
+      "ป๊อปสดใส"
+    ],
+    "bpm": "ปานกลาง (110 BPM)",
+    "lang": "th",
+    "animeId": 2,
+    "animeMatch": [
+      2
+    ],
+    "reason": "เนื้อเพลงชวนมาร่วมรักร่วมฟีทเจอริ่ง เข้ากับเกมชิงรักหักเหลี่ยมแบบน่ารักของประธานและคางุยะ",
+    "typoIdea": "กล่องคำพูดการ์ตูนป๊อปอาร์ต เด้งสลับสีชมพู-เหลือง มีไอคอนหัวใจลอยขึ้นมา"
+  },
+  {
+    "id": 693,
+    "title": "Stand by หล่อ",
+    "artist": "NEW COUNTRY",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9d/38/68/9d3868cc-28a4-26e4-1b51-96af09e7a87e/888332906722.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/49/21/12/492112ac-2c0e-c0a5-e5b9-582e98e7d45f/mzaf_14139359607367364936.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Stand%20by%20%E0%B8%AB%E0%B8%A5%E0%B9%88%E0%B8%AD%20NEW%20COUNTRY",
+    "mood": "hype",
+    "tags": [
+      "โดนัทยังมีรู",
+      "ไวรัลทั่วไทย",
+      "คันทรี่ป๊อป"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "th",
+    "animeId": 53,
+    "animeMatch": [
+      53
+    ],
+    "reason": "ท่อนโดนัทยังมีรูสุดไวรัลที่ทุกคนจำได้ เข้ากับความกวนและความแข็งแกร่งของมัชชูครีม",
+    "typoIdea": "ตัวอักษร 3D ป๊อปหนา สีส้มคัสตาร์ด หมุนวนสลับท่วงท่าเต้น"
+  },
+  {
+    "id": 694,
+    "title": "greedy",
+    "artist": "Tate McRae",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/21/4a/c2/214ac20c-a66c-84a1-e357-f7e60b1932ca/196871542661.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8d/e0/e2/8de0e2ae-f88c-5056-c07d-fe04acbc1d58/mzaf_1974309867621262359.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/greedy%20Tate%20McRae",
+    "mood": "hype",
+    "tags": [
+      "ไวรัลแดนซ์",
+      "มั่นใจ",
+      "บีทหน่วง"
+    ],
+    "bpm": "ปานกลาง (111 BPM)",
+    "lang": "en",
+    "animeId": 5,
+    "animeMatch": [
+      5
+    ],
+    "reason": "บีทเบสแน่นกับท่อนฮุกที่มั่นใจ เข้ากับฉากโชว์สกิลไสยเวทแบบเหนือชั้น",
+    "typoIdea": "ตัวอักษร Chrome โลหะเงาวาว สะท้อนประกายแสงนีออนสีม่วง"
+  },
+  {
+    "id": 695,
+    "title": "drunk text",
+    "artist": "Henry Moodie",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/61/3d/a6/613da60e-5b3d-7305-19db-ed79f5aa0b05/196589768643.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/de/74/c1/de74c10e-379c-02a7-220c-944be269502f/mzaf_1726085011719977236.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/drunk%20text%20Henry%20Moodie",
+    "mood": "sad",
+    "tags": [
+      "แอบรัก",
+      "ส่งข้อความตอนเมา",
+      "บัลลาดซึ้ง"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "en",
+    "animeId": 1,
+    "animeMatch": [
+      1
+    ],
+    "reason": "บทเพลงแห่งความกลัวที่จะสูญเสียความเป็นเพื่อน เข้ากับความรู้สึกแอบรักที่ซ่อนไว้ในเพลงรักสองหัวใจ",
+    "typoIdea": "ข้อความแชทค่อยๆ ถูกพิมพ์และลบออก ตัวหนังสือจางหายตามหยดน้ำตา"
+  },
+  {
+    "id": 696,
+    "title": "Magnetic",
+    "artist": "ILLIT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/3e/49/1e/3e491e43-4961-21ab-2abe-37fb1c0feb40/196922879227_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e8/7e/67/e87e6795-4ada-2f65-d562-1fd2a3eddfdf/mzaf_11263458879279601822.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Magnetic%20ILLIT",
+    "mood": "love",
+    "tags": [
+      "ไวรัลระดับโลก",
+      "แรงดึงดูด",
+      "พลักแอนด์บีท"
+    ],
+    "bpm": "เร็ว (131 BPM)",
+    "lang": "en",
+    "animeId": 21,
+    "animeMatch": [
+      21
+    ],
+    "reason": "จังหวะพลักแอนด์บีทสุดน่ารักและไวรัลทั่วโลก สะท้อนเสน่ห์ของไอดอลที่ดึงดูดใจแฟนคลับทันที",
+    "typoIdea": "แม่เหล็กและประกายไฟรูปหัวใจ ตัวหนังสือกระโดดดูดเข้าหากันตามบีทเพลง"
+  },
+  {
+    "id": 697,
+    "title": "Supernova",
+    "artist": "aespa",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/50/7e/e0/507ee09f-ccfd-1e3c-af90-ca5e92b1221b/00888735949869_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f6/cc/58/f6cc5863-c60a-caac-e7f8-bd66b414a917/mzaf_8631809138360097160.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Supernova%20aespa",
+    "mood": "hype",
+    "tags": [
+      "ซูเปอร์โนวา",
+      "ไฮเปอร์ป๊อป",
+      "ทรงพลัง"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "en",
+    "animeId": 31,
+    "animeMatch": [
+      31
+    ],
+    "reason": "ซาวด์อิเล็กทรอนิกส์ไฮเปอร์ป๊อประดับทำลายล้าง เข้ากับฉากจินอูปราบมอนสเตอร์และอัปเกรดพลัง",
+    "typoIdea": "คลื่นกระแทก Shockwave ขยายออกจากตัวอักษร แสงสีฟ้านีออนสว่างวาบทั้งจอ"
+  },
+  {
+    "id": 698,
+    "title": "キセキ",
+    "artist": "GReeeeN",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/59/71/a5/5971a58d-9b81-1c64-195e-9e896c804d06/00044002897312.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a0/5f/f0/a05ff0df-cb6f-24ef-9463-0277e67762d8/mzaf_15748417024147230469.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E3%82%AD%E3%82%BB%E3%82%AD%20GReeeeN",
+    "mood": "love",
+    "tags": [
+      "ปาฏิหาริย์",
+      "มิตรภาพ",
+      "เพลงรักในตำนาน"
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "lang": "jp",
+    "animeId": 141,
+    "animeMatch": [
+      141
+    ],
+    "reason": "บทเพลงปาฏิหาริย์แห่งความผูกพันและรอยยิ้ม เข้ากับความพยายามในสนามวอลเลย์บอลของคาราสึโนะ",
+    "typoIdea": "ฟอนต์พู่กันญี่ปุ่นสีเขียวมิ้นต์ สาดละอองหมึกตามเสียงลูกตบลงพื้นคอร์ต"
+  }
+];
+
+const ANIME_PAIRS = [
+  {
+    "songId": 1,
+    "animeId": 9,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "เนื้อเพลงเล่าถึงความหวังที่จะได้เคียงข้างกันแม้ดาวหางจะมาเยือนเพียงครั้งเดียว เข้ากับฉากดาวตกและความรักข้ามมิติเวลาของ Your Name อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์สไตล์มินิมอลสีขาว มีแสง Glow นุ่มนวล เคลื่อนที่ลอยช้าๆ สลับกับฉากดาวตกบนท้องฟ้ายามค่ำคืน"
+  },
+  {
+    "songId": 2,
+    "animeId": 18,
+    "category": "sad",
+    "badge": "💔 ซ่อนหา & วิญญาณ",
+    "reason": "การซ่อนหากับวิญญาณและความทรงจำในเพลง ตรงกับเรื่องราวการตามหาเมนมะใน Anohana อย่างสมบูรณ์แบบ",
+    "typoIdea": "ฟอนต์สีขาวละลายขอบฟุ้งเหมือนวิญญาณ ค่อยๆ จางหายไปตามท่อนฮุค 'ซ่อนตัวอยู่ตรงนั้น'"
+  },
+  {
+    "songId": 3,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "อารมณ์เพลงที่ตัดพ้อถึงความทรงจำที่ไม่มีวันจางหาย สอดคล้องกับเรื่องราวเปียโนและจดหมายสุดท้ายใน Your Lie in April",
+    "typoIdea": "ใช้แอนิเมชันตัวหนังสือค่อยๆ จางหาย (Fade Out) สลับเบลอเมื่อถึงท่อน 'ลืมไปแล้ว' วางตรงกลางจังหวะเปียโน"
+  },
+  {
+    "songId": 4,
+    "animeId": 14,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "ดนตรีอบอุ่นละมุนหัวใจของ fellow fellow สะท้อนถึงความรักที่มั่นคงระหว่างมิยามุระและโฮริใน Horimiya",
+    "typoIdea": "ใช้ฟอนต์สไตล์ลายมือ (Handwritten) ขอบมน สีพาสเทลโทนชมพู-เบจ ขยับสไลด์เข้าออกนุ่มนวล"
+  },
+  {
+    "songId": 5,
+    "animeId": 4,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน",
+    "reason": "บรรยากาศชวนฝันและการเดินทางข้ามมิติ เข้ากับฉากรถไฟเหนือน้ำในตำนานของ Spirited Away ได้อย่างไร้ที่ติ",
+    "typoIdea": "จัดวางตัวหนังสือโค้งตามแนวขอบหน้าต่างรถไฟ ใช้เอฟเฟกต์ประกายละอองแสงระยิบระยับ"
+  },
+  {
+    "songId": 6,
+    "animeId": 201,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "ความน่ารักของการแอบมองคนที่ชอบจนใจละลาย เข้ากับลุคสาวแกลสุดเท่แต่แอบเขินรุ่นน้องใน 'รุ่นพี่ไฮมิยะ' สุดๆ",
+    "typoIdea": "แอนิเมชันตัวอักษรละลาย (Melt) เมื่อร้องคำว่า 'ละลาย' พร้อมซูมสายตาไฮมิยะตอนหน้าแดงแบบ Pop-up"
+  },
+  {
+    "songId": 7,
+    "animeId": 13,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "เมโลดี้ละมุนผสานเสียงฝนพรำ เข้ากับศาลาพักใจกลางสวนชินจูกุใน The Garden of Words ราวกับสร้างมาคู่กัน",
+    "typoIdea": "ตัวหนังสือสไตล์หมึกหยดซึม (Ink Bleed) ปรากฏขึ้นพร้อมระลอกคลื่นน้ำฝนบนผิวน้ำ"
+  },
+  {
+    "songId": 8,
+    "animeId": 10,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "ความรู้สึกยอมแพ้ต่อโชคชะตาและความเจ็บปวด เข้ากับประเด็นการให้อภัยและไถ่บาปใน A Silent Voice",
+    "typoIdea": "ใช้ฟอนต์สไตล์สะบัดพู่กัน สีขาวตัดดำ จังหวะกระแทกคำตรงกับบีทกลองเพื่อส่งอารมณ์บีบหัวใจ"
+  },
+  {
+    "songId": 9,
+    "animeId": 3,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "เพลงแห่งการสูญเสียที่ตราตรึง เข้ากับจดหมายแห่งความรักและความทรงจำของ ไวโอเล็ต เอเวอร์การ์เดน",
+    "typoIdea": "ใช้เอฟเฟกต์พิมพ์ดีด (Typewriter Effect) สลับกับตัวหนังสือลายมือเขียนลงบนกระดาษจดหมาย"
+  },
+  {
+    "songId": 10,
+    "animeId": 8,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "ความรู้สึกเริ่มแอบรักเพื่อนสนิทจนบานปลาย เข้ากับความสัมพันธ์ซึนเดเระของ ริวจิ และ ไทกะ ใน Toradora!",
+    "typoIdea": "ใช้ฟอนต์สไตล์นีออนโทนส้ม-ชมพู เด้งเข้าตามจังหวะพร้อมไอคอนอิโมจิหัวใจเล็กๆ"
+  },
+  {
+    "songId": 11,
+    "animeId": 17,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "ดนตรีโฟล์กร็อคผสมผสานมนต์เสน่ห์ความรัก เข้ากับเรื่องราวความรักระหว่างมนุษย์และเทพจิ้งจอกใน Kamisama Kiss",
+    "typoIdea": "ใช้ฟอนต์ตัวหนาแสงสีทองเปล่งประกาย สลับกับทรานซิชันไฟสีทองพวยพุ่งในท่อนฮุค"
+  },
+  {
+    "songId": 12,
+    "animeId": 12,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "การมองพระจันทร์ดวงเดียวกันเพื่อส่งความคิดถึง เข้ากับความรักที่ไม่อาจสัมผัสตัวกันได้ใน Hotarubi no Mori e",
+    "typoIdea": "วางตัวหนังสือโค้งรับกับทรงพระจันทร์เรืองแสง พร้อมเอฟเฟกต์หิ่งห้อยลอยผ่าน"
+  },
+  {
+    "songId": 13,
+    "animeId": 16,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "กลิ่นดอกไม้และความทรงจำที่ยังคงหอมหวาน เข้ากับเรื่องราวซากุระและไดอารี่ใน I Want to Eat Your Pancreas",
+    "typoIdea": "ใช้ฟอนต์สไตล์ละมุนโปร่งแสง มีกลีบดอกซากุระปลิวผ่านตัวหนังสืออย่างช้าๆ"
+  },
+  {
+    "songId": 14,
+    "animeId": 14,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน",
+    "reason": "จังหวะชิลล์ฟังสบายสื่อถึงการมองเธอแล้วอยากให้เธอพิจารณาใจ เข้ากับชีวิตวัยรุ่นแสนอบอุ่นใน Horimiya",
+    "typoIdea": "ใช้ข้อความสไตล์แชท Pop-up ค่อยๆ ลอยขึ้นตรงกลางหน้าจอตามจังหวะท่อนแร็พ"
+  },
+  {
+    "songId": 15,
+    "animeId": 18,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "บทเพลงรำลึกถึงมิตรภาพในวัยเด็กที่ไม่อาจย้อนกลับมา สื่อถึงกลุ่มเพื่อนและความทรงจำของเมมมะใน Anohana ได้ซาบซึ้งที่สุด",
+    "typoIdea": "ใช้ฟอนต์สไตล์ฟิล์มเก่าวินเทจ โทนภาพอบอุ่นพร้อม Grain บางๆ เพื่อให้ความรู้สึกคิดถึงวันวาน"
+  },
+  {
+    "songId": 16,
+    "animeId": 19,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน",
+    "reason": "เพลงอินดี้ป็อปสะท้อนความเคว้งคว้างของวัย 17 เข้ากับบุคลิกเก็บตัวและดนตรีร็อคของบ็อจจิใน Bocchi the Rock!",
+    "typoIdea": "ใช้ฟอนต์แนวโมเดิร์นคลีน วางสลับซ้ายขวาตามจังหวะเบส 8 บิต"
+  },
+  {
+    "songId": 17,
+    "animeId": 20,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "เสียงร้องหวานชวนฝันถ่ายทอดความรู้สึกรักแรกที่เบ่งบาน เข้ากับความรักอันบริสุทธิ์ของ ซาวาโกะ และ คาเซฮายะ ใน Kimi ni Todoke",
+    "typoIdea": "ใช้ฟอนต์สไตล์เรียบหรูสีขาวนวล พร้อมดอกไม้บานประกอบในท่อนคำว่า 'Blooming'"
+  },
+  {
+    "songId": 18,
+    "animeId": 18,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "ดนตรีร็อคระบายความอัดอั้น เข้ากับฉากแอคชั่นและความสูญเสียอันน่าสะเทือนใจใน Jujutsu Kaisen",
+    "typoIdea": "ใช้ฟอนต์ Cinematic ตัวกว้างสีแดง-ดำ พร้อมเอฟเฟกต์สั่นกระแทกจังหวะกลอง"
+  },
+  {
+    "songId": 19,
+    "animeId": 15,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "เนื้อเพลงสื่อถึงระยะทางและความรู้สึกคิดถึงที่ไม่อาจส่งไปถึง เข้ากับความห่างไกลใน 5 Centimeters per Second ได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "เล่นคำว่า 'คิด' แล้วเว้นจังหวะให้คำว่า 'แต่ไม่ถึง' ค่อยๆ โผล่ขึ้นมาในโทนสีฟ้าหม่น"
+  },
+  {
+    "songId": 20,
+    "animeId": 2,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "ความสนุกสนานและจังหวะกวนๆ ของการไม่อยากเป็นแค่เพื่อน เข้ากับคู่กัดใน Kaguya-sama อย่างที่สุด",
+    "typoIdea": "ใช้ฟอนต์สไตล์เรโทรขยับเด้ง (Bounce) ตามจังหวะแร็พของ MILLI พร้อมป้ายสัญลักษณ์ Warning โทนเหลือง-ดำ"
+  },
+  {
+    "songId": 21,
+    "animeId": 11,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ",
+    "reason": "ดนตรีโพสต์ฮาร์ดคอร์สุดเข้มข้นระเบิดอารมณ์ความเจ็บปวด เข้ากับฉากต่อสู้แห่งโชคชะตาใน Attack on Titan",
+    "typoIdea": "ใช้ฟอนต์แนวร็อคฉีกขาด (Distorted) สลับภาพเร็วตามจังหวะกระเดื่องกลองแบบสปีดแรป"
+  },
+  {
+    "songId": 22,
+    "animeId": 6,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ",
+    "reason": "เพลงพังค์ร็อคพลังล้นหลาม ปลุกเร้าความตื่นเต้น เหมาะมากกับฉากตบลูกยางสุดมันส์ใน Haikyuu!!",
+    "typoIdea": "ตัวอักษรขยายใหญ่กระแทกหน้าจอ (Explosion) พร้อมสีนีออนม่วง-ส้ม ตามบีทท่อนฮุค 'ทรงอย่างแบด แซดอย่างบ่อย'"
+  },
+  {
+    "songId": 23,
+    "animeId": 22,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "การรอคอยและการจากลาที่งดงาม เข้ากับคำอธิษฐานและความทรงจำของฟรีเรนใน Frieren อย่างสมบูรณ์",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏในหมอกควัน แล้วลอยขึ้นสู่ท้องฟ้าในท่อนฮุค 'ถ้าเราได้เจอกันอีก'"
+  },
+  {
+    "songId": 24,
+    "animeId": 20,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "ความอบอุ่นของการเป็นที่พึ่งพาให้คนที่เรารัก เข้ากับความอ่อนโยนของคาเซฮายะใน Kimi ni Todoke",
+    "typoIdea": "ใช้ฟอนต์สีพาสเทลขอบมน แอนิเมชันลอยเบาๆ เหมือนถูกโอบกอด"
+  },
+  {
+    "songId": 25,
+    "animeId": 17,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "ความรักที่ข้ามผ่านทุกอุปสรรคและโชคชะตา สอดคล้องกับความรักของนานามิและโทโมเอะใน Kamisama Kiss",
+    "typoIdea": "ตัวหนังสือสีทองเรืองรอง พร้อมกลีบดอกไม้โปรยปรายรอบข้อความ"
+  },
+  {
+    "songId": 26,
+    "animeId": 14,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "สายตาที่ไม่อาจโกหกความรู้สึกเวลาเผลอมองเธอ เข้ากับความน่ารักของโฮริและมิยามุระใน Horimiya",
+    "typoIdea": "ซูมตัวหนังสือพร้อมเอฟเฟกต์เบลอพื้นหลัง เน้นคำว่า 'สายตามันหลอกกันไม่ได้'"
+  },
+  {
+    "songId": 27,
+    "animeId": 9,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "ความรักแท้ที่อยู่เหนือกาลเวลาและมิติ เข้ากับสายใยผูกพันของทาคิและมิตสึฮะใน Your Name",
+    "typoIdea": "ตัวหนังสือสไตล์เส้นสายด้ายแดงแห่งโชคชะตา ค่อยๆ เชื่อมโยงเข้าหากัน"
+  },
+  {
+    "songId": 28,
+    "animeId": 27,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "ความอลหม่านและคอมเมดี้ชวนหัวเราะ เข้ากับครอบครัวฟอร์เจอร์สุดป่วนใน Spy x Family",
+    "typoIdea": "ตัวหนังสือป็อปอัปสไตล์หนังสือการ์ตูนคอมมิค สลับกรอบคำพูดน่ารักๆ"
+  },
+  {
+    "songId": 29,
+    "animeId": 1,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน",
+    "reason": "ความหนาวเหน็บและความทรงจำในฤดูกาลที่ผ่านไป เข้ากับบรรยากาศการจากลาใน Your Lie in April",
+    "typoIdea": "ตัวหนังสือมีเอฟเฟกต์ไอน้ำและละอองหิมะโปรยปราย"
+  },
+  {
+    "songId": 30,
+    "animeId": 7,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "การมีเธออยู่ข้างๆ แม้วันที่ฝนตกหรือท้องฟ้ามืดมน เข้ากับฮินะและโฮดากะใน Weathering With You",
+    "typoIdea": "วางข้อความสองฝั่งแล้ววิ่งเข้ามาประกบกันตรงกลางจังหวะเพลง"
+  },
+  {
+    "songId": 31,
+    "animeId": 13,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "ความคิดถึงที่พัดมาพร้อมกับสายฝน เข้ากับหยาดฝนแห่งสวนชินจูกุใน The Garden of Words",
+    "typoIdea": "ตัวหนังสือไล่ระดับความโปร่งใส คล้ายมองผ่านกระจกที่มีหยดน้ำฝนเกาะ"
+  },
+  {
+    "songId": 32,
+    "animeId": 10,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "ความเหงาและความเจ็บปวดในวันที่ไม่มีใครเคียงข้าง สอดคล้องกับความเดียวดายใน A Silent Voice",
+    "typoIdea": "ตัวหนังสือสีเทาหม่น ค่อยๆ ดับลงเหมือนแสงเทียนบนเค้กวันเกิด"
+  },
+  {
+    "songId": 33,
+    "animeId": 20,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "รอยยิ้มของเธอที่ทำให้โลกทั้งใบสดใส เข้ากับรอยยิ้มของซาวาโกะใน Kimi ni Todoke",
+    "typoIdea": "ตัวหนังสือสีชมพูส้มสว่างวาบขึ้นมา พร้อมเอฟเฟกต์ประกายดาววิ้งค์ๆ"
+  },
+  {
+    "songId": 34,
+    "animeId": 15,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "ความอาวรณ์และเสียดายช่วงเวลาที่ไม่อาจย้อนคืน เข้ากับความสัมพันธ์ระยะไกลใน 5 Centimeters per Second",
+    "typoIdea": "สไตล์ฟอนต์เรโทรย้อนยุค 80s แสงนีออนม่วงสลับชมพูสะท้อนความเหงา"
+  },
+  {
+    "songId": 35,
+    "animeId": 18,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "การกล่าวลาที่หวังว่าจะได้พบกันอีก เข้ากับฉากบอกลาทั้งน้ำตาของเมมมะใน Anohana",
+    "typoIdea": "ตัวหนังสือค่อยๆ จางหายไปพร้อมการโบกมือลาของตัวละคร"
+  },
+  {
+    "songId": 36,
+    "animeId": 12,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "กลิ่นหอมของความรักที่ต้องซ่อนไว้ในใจ สอดคล้องกับความรักในป่าหิ่งห้อยของ Hotarubi no Mori e",
+    "typoIdea": "ตัวหนังสือเลือนรางซ่อนอยู่ในเงามืดแล้วสว่างขึ้นตามจังหวะเคาะระนาด"
+  },
+  {
+    "songId": 37,
+    "animeId": 8,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "การมอบทั้งดวงใจให้คนที่รัก เข้ากับความทุ่มเทและการปกป้องของริวจิใน Toradora!",
+    "typoIdea": "ฟอนต์ลายมืออบอุ่น วางลอยบนฉากพระอาทิตย์ตกดิน"
+  },
+  {
+    "songId": 38,
+    "animeId": 4,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "การขอบคุณทุกช่วงเวลาที่ได้ร่วมเดินทางด้วยกัน เข้ากับการผจญภัยของจิฮิโระใน Spirited Away",
+    "typoIdea": "ตัวหนังสือไล่เฉดสีรุ้งอ่อนๆ ค่อยๆ ปรากฏพร้อมวิวทิวทัศน์กว้าง"
+  },
+  {
+    "songId": 39,
+    "animeId": 16,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "การยินดีที่ได้พบและรักเธอแม้เวลาจะแสนสั้น เข้ากับความทรงจำอันล้ำค่าใน I Want to Eat Your Pancreas",
+    "typoIdea": "ตัวหนังสือบางเรียบหรู ค่อยๆ เขียนขึ้นทีละตัวอักษรเหมือนไดอารี่"
+  },
+  {
+    "songId": 40,
+    "animeId": 2,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "ความน่ารักของการท้าให้เอาปากกามาวงจุดที่ไม่น่ารัก เข้ากับความซึนเดเระใน Kaguya-sama",
+    "typoIdea": "มีเอฟเฟกต์วงกลมปากกาสีแดงวงรอบคำสำคัญตามจังหวะเพลง"
+  },
+  {
+    "songId": 41,
+    "animeId": 14,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน",
+    "reason": "เพลงตัดพ้อสนุกๆ ของคนโสด เข้ากับโมเมนต์คอมเมดี้ใน Horimiya",
+    "typoIdea": "ตัวหนังสือขยับสลับสีสนุกสนาน พร้อมป้ายกรุ๊ปเลือด B ป๊อปอัป"
+  },
+  {
+    "songId": 42,
+    "animeId": 3,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "ความรักที่สลักลึกในจิตใจไม่อาจลบเลือน เข้ากับภารกิจส่งความในใจของไวโอเล็ตใน Violet Evergarden",
+    "typoIdea": "ตัวหนังสือแกะสลักเรืองแสงสีทองสว่างวาบบนฉากมืด"
+  },
+  {
+    "songId": 43,
+    "animeId": 18,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "การฝันถึงเรื่องราวเก่าๆ ที่ไม่มีวันกลับมา เข้ากับความผูกพันของกลุ่มบัสเตอส์ใน Anohana",
+    "typoIdea": "เอฟเฟกต์ตัวหนังสือเบลอแบบความฝัน (Dream Blur) สลับภาพย้อนอดีต"
+  },
+  {
+    "songId": 44,
+    "animeId": 9,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "แสงสีทองยามเย็นและเมโลดี้เปียโนอันวิจิตร เข้ากับฉาก Golden Hour บนยอดเขาใน Your Name อย่างไร้ที่ติ",
+    "typoIdea": "ตัวหนังสือสีทองแวววาวขยับพลิ้วไหวตามคอร์ดเปียโนระยิบระยับ"
+  },
+  {
+    "songId": 45,
+    "animeId": 17,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "บรรยากาศวินเทจโรแมนติกที่มั่นคง เข้ากับความรักนิรันดร์ของโทโมเอะใน Kamisama Kiss",
+    "typoIdea": "ตัวหนังสือสไตล์เรโทร 1950s สีครีม-ทอง สลับแสง Glow นุ่มนวล"
+  },
+  {
+    "songId": 46,
+    "animeId": 25,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "ความรักที่ยอมเคียงข้างกันจนวินาทีสุดท้าย แม้โลกจะพังทลาย เข้ากับฉากไคลแม็กซ์ของ Cyberpunk: Edgerunners",
+    "typoIdea": "ตัวหนังสือสไตล์ Cyberpunk แตกสลาย มีแสงนีออนสีฟ้า-ชมพูสลับกระพริบ"
+  },
+  {
+    "songId": 47,
+    "animeId": 12,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน",
+    "reason": "เพลงแห่งอดีตชาติและสายใยที่เชื่อมโยงกัน เข้ากับความรักต่างภพใน Hotarubi no Mori e",
+    "typoIdea": "ตัวหนังสือลอยละล่องเหมือนควันหมอกโปร่งใส ซ้อนทับฉากป่าไม้"
+  },
+  {
+    "songId": 48,
+    "animeId": 7,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน",
+    "reason": "บรรยากาศฤดูหนาวและไออุ่น เข้ากับโทนฝนตกและความหนาวเย็นใน Weathering With You",
+    "typoIdea": "ตัวหนังสือสไตล์อินดี้มินิมอล มีละอองความเย็นและควันจางๆ"
+  },
+  {
+    "songId": 49,
+    "animeId": 21,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "โทนดนตรีดาร์กเข้มข้นและความลับในความมืด เข้ากับปมดราม่าและการล้างแค้นใน Oshi no Ko",
+    "typoIdea": "ตัวหนังสือสีขาวตัดกับพื้นหลังสีดำสนิท ค่อยๆ สว่างขึ้นเมื่อถึงท่อน Daylight"
+  },
+  {
+    "songId": 50,
+    "animeId": 15,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "เสียงเปียโนบาดลึกที่ยังมองเห็นภาพเธอในตัวคนอื่น เข้ากับความเจ็บปวดใน 5 Centimeters per Second",
+    "typoIdea": "ตัวหนังสือค่อยๆ เบลอและมีรอยหยดน้ำตาไหลผ่านข้อความ"
+  },
+  {
+    "songId": 51,
+    "animeId": 25,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "ความหนักแน่นของการยอมสละทุกสิ่งเพื่อคนสำคัญ เข้ากับการต่อสู้สุดชีวิตใน Jujutsu Kaisen",
+    "typoIdea": "ตัวหนังสือหนาสไตล์ Cinematic กระแทกสั่นไหวตามจังหวะเสียงเบส"
+  },
+  {
+    "songId": 52,
+    "animeId": 20,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "คำอธิษฐานต่อดอกแดนดิไลออนเพื่อความรัก เข้ากับความหวานละมุนใน Kimi ni Todoke",
+    "typoIdea": "มีเกสรดอกแดนดิไลออนลอยปลิวผ่านตัวหนังสือที่สว่างสดใส"
+  },
+  {
+    "songId": 53,
+    "animeId": 14,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "ความรู้สึกใจเต้นแรงเวลาแอบมองเพื่อนสนิท เข้ากับความสัมพันธ์ของโฮริและมิยามุระใน Horimiya",
+    "typoIdea": "ตัวหนังสือสไลด์เข้าออกแบบ Double-vision สลับมองซ้ายขวา"
+  },
+  {
+    "songId": 54,
+    "animeId": 16,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "ความปรารถนาที่จะแก่เฒ่าไปด้วยกันแม้โชคชะตาจะใจร้าย เข้ากับ I Want to Eat Your Pancreas",
+    "typoIdea": "ตัวหนังสือเขียนช้าๆ บนสมุดบันทึกพร้อมแสงแดดอุ่นส่องผ่าน"
+  },
+  {
+    "songId": 55,
+    "animeId": 26,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "การผูกพันที่จะบินไปด้วยกัน เข้ากับการผจญภัยและสายใยใน Suzume",
+    "typoIdea": "ตัวหนังสือบินขึ้นเหมือนขนนก พร้อมสีสันสดใสชวนฝัน"
+  },
+  {
+    "songId": 56,
+    "animeId": 23,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ",
+    "reason": "บีทสุดเท่และพลังดาร์ก เข้ากับความบ้าคลั่งและการต่อสู้สุดมันส์ใน Chainsaw Man",
+    "typoIdea": "ฟอนต์ไฟนีออนสไตล์เรโทรเวฟ กระพริบตามจังหวะเพลงพร้อมแสงแฟลช"
+  },
+  {
+    "songId": 57,
+    "animeId": 9,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "การพยายามเขียนโชคชะตาใหม่เพื่อได้อยู่ด้วยกัน เข้ากับการท้าทายมิติเวลาใน Your Name",
+    "typoIdea": "ตัวหนังสือลอยอยู่ท่ามกลางกลุ่มดวงดาวระยิบระยับบนท้องฟ้ายามราตรี"
+  },
+  {
+    "songId": 58,
+    "animeId": 28,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ",
+    "reason": "ความเดือดของการต่อสู้ท่ามกลางศัตรูรอบตัว เข้ากับสงครามชิงความเป็นหนึ่งใน Blue Lock",
+    "typoIdea": "ฟอนต์สไตล์ดิบเถื่อน สีแดง-ดำ สั่นสะเทือนตามจังหวะบีทหนัก"
+  },
+  {
+    "songId": 59,
+    "animeId": 24,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ",
+    "reason": "พลังใจที่ไม่ยอมแพ้ต่อความเจ็บปวด เข้ากับการฝึกฝนและดาบพิฆาตอสูรของทันจิโร่ใน Demon Slayer",
+    "typoIdea": "ตัวหนังสือมีเปลวไฟลุกโชน กระแทกหน้าจอตามจังหวะกลอง"
+  },
+  {
+    "songId": 60,
+    "animeId": 21,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน",
+    "reason": "ความรู้สึกตัดพ้อที่ถูกมองเป็นแค่ของเล่น เข้ากับโลกวงการบันเทิงใน Oshi no Ko",
+    "typoIdea": "ตัวหนังสือสีพาสเทลน่ารักปนดาร์ก หมุนส่ายไปมาเหมือนของเล่น"
+  },
+  {
+    "songId": 61,
+    "animeId": 27,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "ความสดใสไร้เดียงสาและน่ารัก เข้ากับความน่ารักของน้องอาเนียใน Spy x Family",
+    "typoIdea": "ตัวหนังสือป๊อปอัปเด้งดึ๋งสีชมพู พร้อมลูกศรคิวปิดยิงผ่านหน้าจอ"
+  },
+  {
+    "songId": 62,
+    "animeId": 8,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "ความรู้สึกที่ยอมแพ้ใจให้เธอหมดทุกอย่าง เข้ากับความรักวุ่นๆ ใน Toradora!",
+    "typoIdea": "ตัวหนังสือหมุนวนสไตล์คลื่นน้ำ พร้อมเอฟเฟกต์เบ็ดตกปลาเกี่ยวคำสำคัญ"
+  },
+  {
+    "songId": 63,
+    "animeId": 10,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "การพยายามดีดนิ้วเพื่อลืมความเจ็บปวด เข้ากับการเอาชนะปมในใจของ A Silent Voice",
+    "typoIdea": "ตัวหนังสือระเบิดเป็นละอองดาวทุกครั้งที่ได้ยินเสียงดีดนิ้ว 'Snap'"
+  },
+  {
+    "songId": 64,
+    "animeId": 7,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน",
+    "reason": "เพลงนี้มีจังหวะและอารมณ์ที่เข้ากับมู้ดของอนิเมะเรื่องนี้ เหมาะมากสำหรับการทำคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ที่เข้ากับจังหวะดนตรี วางตัวหนังสือตามจังหวะบีทและเน้นท่อนฮุค"
+  },
+  {
+    "songId": 65,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "เพลงนี้มีจังหวะและอารมณ์ที่เข้ากับมู้ดของอนิเมะเรื่องนี้ เหมาะมากสำหรับการทำคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ที่เข้ากับจังหวะดนตรี วางตัวหนังสือตามจังหวะบีทและเน้นท่อนฮุค"
+  },
+  {
+    "songId": 66,
+    "animeId": 15,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "รักแรกที่ฝังลึกในใจและไม่อาจลืมเลือน เข้ากับความห่างไกลใน 5 Centimeters per Second",
+    "typoIdea": "ตัวหนังสือสไตล์ฟิล์มภาพยนตร์ ค่อยๆ เลือนรางสลับกับภาพซากุระร่วง"
+  },
+  {
+    "songId": 67,
+    "animeId": 2,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "การคิดถึงเธอทุกลมหายใจตั้งแต่วันจันทร์ถึงอาทิตย์ เข้ากับความคลั่งรักใน Kaguya-sama",
+    "typoIdea": "จัดเรียงชื่อวัน จันทร์-อาทิตย์ เด้งขึ้นทีละคำตามจังหวะเคาะบีท"
+  },
+  {
+    "songId": 68,
+    "animeId": 27,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "ความน่ารักกวนๆ สดใสชวนยิ้ม เข้ากับความน่ารักของน้องอาเนียใน Spy x Family",
+    "typoIdea": "ตัวหนังสือมีรูปฟันฉลามงับคำว่า 'งับคุณ' พร้อมแอนิเมชันเด้งดึ๋งสีพาสเทล"
+  },
+  {
+    "songId": 69,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "ความรู้สึกเจ็บปวดที่มองคนที่เรารักไปรักคนอื่น เข้ากับปมความรักสามเส้าใน Your Lie in April",
+    "typoIdea": "ตัวหนังสือสไตล์มินิมอลเขียนคำว่า 'Heather' ตัวหนาบนพื้นหลังโทนฟ้าหม่น"
+  },
+  {
+    "songId": 70,
+    "animeId": 20,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "การชอบตัวเองมากขึ้นเวลาได้อยู่เคียงข้างเธอ เข้ากับความเปลี่ยนแปลงของซาวาโกะใน Kimi ni Todoke",
+    "typoIdea": "ฟอนต์ตัวเขียนสไตล์โมเดิร์น ขยับสไลด์เข้าออกซิงค์กับบีทซินธ์น่ารัก"
+  },
+  {
+    "songId": 71,
+    "animeId": 25,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน",
+    "reason": "ความทรงจำที่วนเวียนในหัวช่วงค่ำคืน เข้ากับบรรยากาศแสงสีนีออนและน้ำตาใน Cyberpunk: Edgerunners",
+    "typoIdea": "ตัวหนังสือมีความสั่นไหวแบบคลื่นความร้อน (Heat Wave Distortion) สีเขียว-ม่วงนีออน"
+  },
+  {
+    "songId": 72,
+    "animeId": 18,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "หากไม่อาจได้ตัวเธอคืนมา ขอเพียงเงาความทรงจำก็ยังดี สื่อถึงเมมมะใน Anohana ได้ตรงหัวใจ",
+    "typoIdea": "ตัวหนังสือสีขาวโปร่งแสง ค่อยๆ ละลายเป็นละอองดาวเมื่อถึงท่อน 'Ghost of you'"
+  },
+  {
+    "songId": 73,
+    "animeId": 8,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "ความเขินจนพูดจาไม่รู้เรื่อง เข้ากับความน่ารักซึนเดเระของไทกะใน Toradora!",
+    "typoIdea": "ตัวหนังสือขยับหมุนวนและสลับขนาดตามท่อนร้องเร็วๆ พร้อมอิโมจิหัวใจป็อปอัป"
+  },
+  {
+    "songId": 74,
+    "animeId": 25,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "Cyberpunk ดำดิ่งในความรักยอมตายเพื่อเธอ",
+    "typoIdea": "ตัวหนังสือสไตล์หมึกพู่กันญี่ปุ่น สลับแสงสลัวโทนแดง-ดำตามจังหวะดนตรีทรงพลัง"
+  },
+  {
+    "songId": 75,
+    "animeId": 19,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน",
+    "reason": "จังหวะชวนโยกและดนตรีโมเดิร์นซิตี้ป็อป เข้ากับลีลากีตาร์และเสน่ห์ของ Bocchi the Rock!",
+    "typoIdea": "ฟอนต์นีออนสีชมพู-ม่วง ขยับสวิงซ้ายขวาตามจังหวะกรูฟเพลง"
+  },
+  {
+    "songId": 76,
+    "animeId": 21,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ",
+    "reason": "Oshi no Ko ไอดอลผู้สมบูรณ์แบบ",
+    "typoIdea": "ตัวหนังสือระเบิดแสงประกายดาวตาวิ้งค์ (Star Eyes Effect) สลับบีทแร็พเร็วสะใจ"
+  },
+  {
+    "songId": 77,
+    "animeId": 26,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน",
+    "reason": "Suzume ผนึกประตูแห่งภัยพิบัติ",
+    "typoIdea": "ตัวหนังสือเขียนแนวตั้งแบบญี่ปุ่นโบราณ ค่อยๆ เรืองแสงสีทองเหมือนบานประตูมิติ"
+  },
+  {
+    "songId": 78,
+    "animeId": 9,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "Your Name ซีนดาวตกเคียงคู่",
+    "typoIdea": "ตัวหนังสือตัวเรียวยาวเรืองแสงสีรุ้งระยิบระยับ ทะยานผ่านหน้าจอพร้อมอุกกาบาต"
+  },
+  {
+    "songId": 79,
+    "animeId": 23,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ",
+    "reason": "Chainsaw Man มนุษย์เลื่อยยนต์บ้าคลั่ง",
+    "typoIdea": "ตัวหนังสือขอบหนาฉีกขาดกระแทกหน้าจอตามจังหวะเสียงเลื่อยยนต์ติดเครื่อง"
+  },
+  {
+    "songId": 80,
+    "animeId": 5,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ",
+    "reason": "Jujutsu Kaisen ชิบูย่าโกลาหล",
+    "typoIdea": "ฟอนต์สไตล์ดิบเถื่อนโทนขาว-ดำ-แดง กระพริบตามจังหวะแร็พแบบ Strobe Effect"
+  },
+  {
+    "songId": 81,
+    "animeId": 3,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "songId": 82,
+    "animeId": 20,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "songId": 83,
+    "animeId": 27,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "songId": 84,
+    "animeId": 2,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "songId": 85,
+    "animeId": 8,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "songId": 86,
+    "animeId": 14,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "songId": 87,
+    "animeId": 22,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "songId": 88,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "songId": 89,
+    "animeId": 3,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "songId": 90,
+    "animeId": 2,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "songId": 91,
+    "animeId": 10,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "songId": 92,
+    "animeId": 15,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "songId": 93,
+    "animeId": 16,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "songId": 94,
+    "animeId": 20,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "songId": 95,
+    "animeId": 22,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "songId": 96,
+    "animeId": 2,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "songId": 97,
+    "animeId": 6,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ",
+    "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+  },
+  {
+    "songId": 98,
+    "animeId": 9,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "songId": 99,
+    "animeId": 17,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "songId": 100,
+    "animeId": 15,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "songId": 101,
+    "animeId": 27,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "songId": 102,
+    "animeId": 18,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "songId": 103,
+    "animeId": 8,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "songId": 104,
+    "animeId": 14,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "songId": 105,
+    "animeId": 19,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน",
+    "reason": "บรรยากาศเพลงนุ่มนวลชวนฝัน เข้ากับฉากชีวิตธรรมดาและความงามของวันๆ หนึ่งในอนิเมะ",
+    "typoIdea": "ฟอนต์สะอาดเรียบ ขยับเบาๆ พร้อมพื้นหลังเบลอนุ่ม สไตล์ Lo-Fi Aesthetic"
+  },
+  {
+    "songId": 106,
+    "animeId": 20,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "songId": 107,
+    "animeId": 10,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "songId": 108,
+    "animeId": 15,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "songId": 109,
+    "animeId": 28,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ",
+    "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+  },
+  {
+    "songId": 110,
+    "animeId": 29,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ",
+    "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+  },
+  {
+    "songId": 111,
+    "animeId": 22,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "songId": 112,
+    "animeId": 43,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ",
+    "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+  },
+  {
+    "songId": 113,
+    "animeId": 6,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ",
+    "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+  },
+  {
+    "songId": 114,
+    "animeId": 2,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "songId": 115,
+    "animeId": 10,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "songId": 116,
+    "animeId": 24,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ",
+    "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+  },
+  {
+    "songId": 117,
+    "animeId": 17,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ",
+    "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+  },
+  {
+    "songId": 118,
+    "animeId": 29,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ",
+    "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+  },
+  {
+    "songId": 119,
+    "animeId": 30,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ",
+    "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+  },
+  {
+    "songId": 120,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "songId": 121,
+    "animeId": 3,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "songId": 122,
+    "animeId": 11,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ",
+    "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+  },
+  {
+    "songId": 123,
+    "animeId": 10,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+  },
+  {
+    "songId": 124,
+    "animeId": 22,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน",
+    "reason": "บรรยากาศเพลงนุ่มนวลชวนฝัน เข้ากับฉากชีวิตธรรมดาและความงามของวันๆ หนึ่งในอนิเมะ",
+    "typoIdea": "ฟอนต์สะอาดเรียบ ขยับเบาๆ พร้อมพื้นหลังเบลอนุ่ม สไตล์ Lo-Fi Aesthetic"
+  },
+  {
+    "songId": 125,
+    "animeId": 5,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "Jujutsu Kaisen มิตรภาพโกโจ & เกะโท",
+    "typoIdea": "ฟอนต์สีฟ้า-ขาวตามชื่อเพลง กระพริบตามจังหวะกีตาร์ร็อค"
+  },
+  {
+    "songId": 126,
+    "animeId": 5,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "Jujutsu Kaisen OP1 ไสยเวทย์เดือด",
+    "typoIdea": "ตัวหนังสือสไตล์ดิบ ตัดขอบดำ แวบตามสปีดบีท"
+  },
+  {
+    "songId": 127,
+    "animeId": 25,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "จังหวะดนตรีเข้ากับฉากแอ็กชันหรือดราม่า",
+    "typoIdea": "ฟอนต์สีนีออนม่วง-ฟ้า เบลอขอบชวนฝันตามเสียงสังเคราะห์"
+  },
+  {
+    "songId": 128,
+    "animeId": 11,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "จังหวะดนตรีเข้ากับฉากแอ็กชันหรือดราม่า",
+    "typoIdea": "ฟอนต์สีเงินเมทัลลิก สั่นกระแทกเบสตอนท่อนดรอป"
+  },
+  {
+    "songId": 129,
+    "animeId": 23,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "จังหวะดนตรีเข้ากับฉากแอ็กชันหรือดราม่า",
+    "typoIdea": "ตัวหนังสือสีแดงสด แฟลชตัดขาวดำตามจังหวะเต้น"
+  },
+  {
+    "songId": 130,
+    "animeId": 34,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "จังหวะดนตรีเข้ากับฉากแอ็กชันหรือดราม่า",
+    "typoIdea": "ฟอนต์โกธิคสีดำขลิบแดง ซูมเข้าออกช้าๆ ให้ความรู้สึกลึกลับ"
+  },
+  {
+    "songId": 131,
+    "animeId": 30,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "จังหวะดนตรีเข้ากับฉากแอ็กชันหรือดราม่า",
+    "typoIdea": "ฟอนต์ตัวหนาขอบคม เบสกระแทกหน้าจอเขย่าตามท่อนฮุค"
+  },
+  {
+    "songId": 132,
+    "animeId": 3,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้ง",
+    "reason": "จังหวะดนตรีเข้ากับฉากแอ็กชันหรือดราม่า",
+    "typoIdea": "ฟอนต์เส้นบางสีขาวสว่าง ค่อยๆ ละลายหายไปตามเสียงร้องแผ่วเบา"
+  },
+  {
+    "songId": 133,
+    "animeId": 16,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้ง",
+    "reason": "จังหวะดนตรีเข้ากับฉากแอ็กชันหรือดราม่า",
+    "typoIdea": "ตัวหนังสือเขียนมือ ค่อยๆ ปรากฏทีละตัวอักษรอย่างช้าๆ"
+  },
+  {
+    "songId": 134,
+    "animeId": 24,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "Demon Slayer OP1 ดาบพิฆาตอสูร",
+    "typoIdea": "ฟอนต์พู่กันญี่ปุ่นสีแดงเพลิง กระแทกตามจังหวะสับดาบ"
+  },
+  {
+    "songId": 135,
+    "animeId": 24,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้ง",
+    "reason": "Demon Slayer Mugen Train น้ำตาตกใน",
+    "typoIdea": "ฟอนต์อบอุ่นสีส้มเปลวไฟ ค่อยๆ เลือนหายเป็นละอองดาว"
+  },
+  {
+    "songId": 136,
+    "animeId": 53,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "Mashle OP2 ท่าเต้นไวรัลทั่วโลก",
+    "typoIdea": "ตัวหนังสือเด้งดึ๋ง สลับตำแหน่งซ้ายขวาตามจังหวะบีทแดนซ์สุดกวน"
+  },
+  {
+    "songId": 137,
+    "animeId": 4,
+    "category": "chill",
+    "badge": "🌊 ฟีลชิลล์",
+    "reason": "จังหวะดนตรีเข้ากับฉากแอ็กชันหรือดราม่า",
+    "typoIdea": "ตัวหนังสือพลิ้วไหวโทนสีทอง-ส้ม ลอยขึ้นตามท่วงทำนองเครื่องเป่า"
+  },
+  {
+    "songId": 138,
+    "animeId": 9,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้ง",
+    "reason": "Your Name น้ำตาแห่งความทรงจำ",
+    "typoIdea": "ฟอนต์มินิมอลสีขาว โปร่งแสงลอยผ่านทิวทัศน์ท้องฟ้ายามเย็น"
+  },
+  {
+    "songId": 139,
+    "animeId": 29,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "จังหวะดนตรีเข้ากับฉากแอ็กชันหรือดราม่า",
+    "typoIdea": "ฟอนต์ป้ายไฟนีออนสไตล์ไทย สั่นกระพริบตามจังหวะตื๊ด 808"
+  },
+  {
+    "songId": 140,
+    "animeId": 14,
+    "category": "love",
+    "badge": "❤️ คลั่งรัก",
+    "reason": "จังหวะดนตรีเข้ากับฉากแอ็กชันหรือดราม่า",
+    "typoIdea": "ฟอนต์น่ารักมุมมน เด้งป๊อปอัพเป็นกล่องข้อความแชท"
+  },
+  {
+    "songId": 141,
+    "animeId": 15,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้ง",
+    "reason": "จังหวะดนตรีเข้ากับฉากแอ็กชันหรือดราม่า",
+    "typoIdea": "ตัวหนังสือสลายเป็นละอองฝุ่น คล้ายการกดปุ่ม Delete ความทรงจำ"
+  },
+  {
+    "songId": 142,
+    "animeId": 2,
+    "category": "love",
+    "badge": "❤️ คลั่งรัก",
+    "reason": "จังหวะดนตรีเข้ากับฉากแอ็กชันหรือดราม่า",
+    "typoIdea": "ฟอนต์ลายมือหวานละมุน โทนพาสเทลชมพู-ขาว ละมุนสายตา"
+  },
+  {
+    "songId": 143,
+    "animeId": 27,
+    "category": "love",
+    "badge": "❤️ คลั่งรัก",
+    "reason": "จังหวะดนตรีเข้ากับฉากแอ็กชันหรือดราม่า",
+    "typoIdea": "ฟอนต์สีน้ำตาลครีม ควันลอยกรุ่นคล้ายกลิ่นกาแฟหอมฟุ้ง"
+  },
+  {
+    "songId": 144,
+    "animeId": 28,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "จังหวะดนตรีเข้ากับฉากแอ็กชันหรือดราม่า",
+    "typoIdea": "ฟอนต์กราฟิตี้ สลับสีเหลือง-ดำ กระแทกตามจังหวะโฟลว์แร็พ"
+  },
+  {
+    "songId": 145,
+    "animeId": 20,
+    "category": "love",
+    "badge": "❤️ คลั่งรัก",
+    "reason": "จังหวะดนตรีเข้ากับฉากแอ็กชันหรือดราม่า",
+    "typoIdea": "ตัวหนังสือกระโดดดุ๊กดิ๊ก มีอิโมจิดอกไม้และหัวใจประดับ"
+  },
+  {
+    "songId": 146,
+    "animeId": 17,
+    "category": "love",
+    "badge": "❤️ คลั่งรัก",
+    "reason": "จังหวะดนตรีเข้ากับฉากแอ็กชันหรือดราม่า",
+    "typoIdea": "ตัวหนังสือเต้นตุบๆ ตามจังหวะหัวใจเต้น บีทกลองนุ่มหู"
+  },
+  {
+    "songId": 147,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้ง",
+    "reason": "จังหวะดนตรีเข้ากับฉากแอ็กชันหรือดราม่า",
+    "typoIdea": "ตัวหนังสือคมกริบสีขาวบนพื้นหลังมืด ไฮไลต์คำว่า ยินดี ด้วยน้ำตา"
+  },
+  {
+    "songId": 148,
+    "animeId": 8,
+    "category": "love",
+    "badge": "❤️ คลั่งรัก",
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ตัวหนังสือกระโดดดุ๊กดิ๊ก มีเส้นสายรอยยิ้มโค้งประดับคำว่า รอยยิ้ม"
+  },
+  {
+    "songId": 149,
+    "animeId": 20,
+    "category": "love",
+    "badge": "❤️ คลั่งรัก",
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์มินิมอลสีเขียวมิ้นต์ ลอยสอดประสานกัน 2 บรรทัด"
+  },
+  {
+    "songId": 150,
+    "animeId": 3,
+    "category": "love",
+    "badge": "❤️ คลั่งรัก",
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์ทองหรูหราขอบทอง เรืองแสงสง่างามตามเสียงออร์เคสตรา"
+  },
+  {
+    "songId": 151,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้ง",
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ตัวหนังสือสลายหล่นลงมาตามเสียงกีตาร์บาดลึก"
+  },
+  {
+    "songId": 152,
+    "animeId": 18,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้ง",
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ตัวหนังสือสีขาวบนพื้นหลังมืดสลัว ซูมเข้าหาคำว่า ขอให้โชคดี"
+  },
+  {
+    "songId": 153,
+    "animeId": 3,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้ง",
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์สีซีดคล้ายของเก่า ค่อยๆ สว่างขึ้นเมื่อได้รับความรัก"
+  },
+  {
+    "songId": 154,
+    "animeId": 15,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้ง",
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์โมเดิร์นสีขาว เด้งจังหวะชัตเตอร์กล้องถ่ายรูปย้อนอดีต"
+  },
+  {
+    "songId": 155,
+    "animeId": 12,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้ง",
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ จางหายไปที่กึ่งกลางจอ เลียนแบบการถูกทิ้งไว้กลางทาง"
+  },
+  {
+    "songId": 156,
+    "animeId": 2,
+    "category": "love",
+    "badge": "❤️ คลั่งรัก",
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์สไตล์วินเทจเรโทร เด้งตามจังหวะกีตาร์บอสซาโนวาพลิ้วไหว"
+  },
+  {
+    "songId": 157,
+    "animeId": 14,
+    "category": "love",
+    "badge": "❤️ คลั่งรัก",
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์ตัวเขียนพริ้วไหวสีทองอ่อน มีประกายวิ้งลอยขึ้นเบาๆ"
+  },
+  {
+    "songId": 158,
+    "animeId": 7,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้ง",
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์สไตล์นิทานวินเทจ หมอกควันบางๆ ลอยผ่านตัวอักษร"
+  },
+  {
+    "songId": 159,
+    "animeId": 9,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้ง",
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์สีทรายชายหาด ละลายไปกับคลื่นน้ำทะเลสีฟ้าคราม"
+  },
+  {
+    "songId": 160,
+    "animeId": 17,
+    "category": "love",
+    "badge": "❤️ คลั่งรัก",
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์สีชมพูนมพาสเทล ลอยหมุนเคว้งคว้างเหมือนเต้นรำในห้องนั่งเล่น"
+  },
+  {
+    "songId": 161,
+    "animeId": 16,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้ง",
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์สีขาวตัดกับไฟหน้ารถสีแดง สั่นเบลอตามหยดน้ำตา"
+  },
+  {
+    "songId": 162,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้ง",
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์ขอบคมสีดำ-แดง กระพริบตามท่อนกรีดร้องอันทรงพลัง"
+  },
+  {
+    "songId": 163,
+    "animeId": 26,
+    "category": "chill",
+    "badge": "🌊 ฟีลชิลล์",
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "เอฟเฟกต์ภาพซ้อน Glitch ซ้อนทับกันสองมิติคล้ายอาการเดจาวู"
+  },
+  {
+    "songId": 164,
+    "animeId": 9,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้ง",
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์สีนวลจันทร์ ส่องแสงเรืองรองบนท้องฟ้ามืดมิดยามค่ำคืน"
+  },
+  {
+    "songId": 165,
+    "animeId": 21,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ตัวหนังสือกระแทกจังหวะกลองและเบส สลับสีนีออนเขียว-ม่วง"
+  },
+  {
+    "songId": 166,
+    "animeId": 6,
+    "category": "chill",
+    "badge": "🌊 ฟีลชิลล์",
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์สีเหลืองดอกทานตะวัน ลอยพลิ้วไหวอย่างอิสระตามสายลม"
+  },
+  {
+    "songId": 167,
+    "animeId": 19,
+    "category": "chill",
+    "badge": "🌊 ฟีลชิลล์",
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ตัวหนังสือวิ่งวนเป็นวงกลมตามชื่อเพลง Circles อย่างมีสไตล์"
+  },
+  {
+    "songId": 168,
+    "animeId": 23,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ฟอนต์สีดำเลือดหมู ค่อยๆ จมดิ่งลงสู่ความมืดอย่างช้าๆ"
+  },
+  {
+    "songId": 169,
+    "animeId": 10,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้ง",
+    "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
+    "typoIdea": "ตัวหนังสือค่อยๆ พิกเซลแตกกระจายเหมือนความทรงจำที่ถูกลบเลือน"
+  },
+  {
+    "songId": 170,
+    "animeId": 21,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "เพลงเปียโนร็อควิ่งสู่อัศดง",
+    "typoIdea": "ตัวหนังสือพุ่งจากขอบจอเข้าหากลางจอตามสปีดนิ้วเปียโนไฟแลบ"
+  },
+  {
+    "songId": 171,
+    "animeId": 6,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "Haikyuu!! แรงบันดาลใจสีน้ำเงิน",
+    "typoIdea": "ฟอนต์สีน้ำเงินเข้มสะท้อนแสง ขยายใหญ่ตามท่อนประสานเสียงปลุกใจ"
+  },
+  {
+    "songId": 172,
+    "animeId": 54,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "Beastars OP บทความมืดในใจ",
+    "typoIdea": "ฟอนต์ขอบหนามสีม่วงเข้ม แฟลชสลับแดงตามจังหวะเบสสังเคราะห์ดิบๆ"
+  },
+  {
+    "songId": 173,
+    "animeId": 10,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้ง",
+    "reason": "A Silent Voice สื่อถึงการให้อภัยและเยียวยาใจ",
+    "typoIdea": "ฟอนต์สีเหลืองเลมอนตัดกับสีเทาหม่น ค่อยๆ ปรากฏทีละประโยคกินใจ"
+  },
+  {
+    "songId": 174,
+    "animeId": 51,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "Naruto Shippuden OP16 ในตำนาน",
+    "typoIdea": "ตัวหนังสือเงาสีดำสลับพื้นหลังสีส้มสดใส วิ่งไปข้างหน้าตามจังหวะกลอง"
+  },
+  {
+    "songId": 175,
+    "animeId": 51,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "Naruto Shippuden OP3 อมตะตลอดกาล",
+    "typoIdea": "ตัวหนังสือสยายปีก ลอยพุ่งขึ้นสู่ท้องฟ้าสีครามตามท่อนฮุคทรงพลัง"
+  },
+  {
+    "songId": 176,
+    "animeId": 52,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "Tokyo Ghoul OP1 กรีดร้องบาดลึก",
+    "typoIdea": "ฟอนต์สั่นระรัวแบบ Distortion ตัวอักษรบิดเบี้ยวตามเสียงร้องอันบาดลึก"
+  },
+  {
+    "songId": 177,
+    "animeId": 9,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "Your Name วิ่งข้ามกาลเวลา",
+    "typoIdea": "ฟอนต์พุ่งกระแทกตามจังหวะอินโทรสับคอร์ดกีตาร์ความเร็ว 190 BPM"
+  },
+  {
+    "songId": 178,
+    "animeId": 51,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "Naruto Shippuden OP6 บทจิไรยะ",
+    "typoIdea": "ฟอนต์สีส้มเพลิง กระแทกตามจังหวะริฟฟ์กีตาร์บาดอารมณ์"
+  },
+  {
+    "songId": 179,
+    "animeId": 51,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "Naruto OP4 วีอาร์ไฟท์ติ้งดรีมเมอร์",
+    "typoIdea": "ตัวหนังสือสลับสี แดง-เหลือง-ดำ กระโดดตามจังหวะกลองพาเหรด"
+  },
+  {
+    "songId": 180,
+    "animeId": 11,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "Attack on Titan Final Season เมทัลถล่มพิภพ",
+    "typoIdea": "ฟอนต์เหล็กหนาแตกระแหง สั่นสะเทือนตามเสียงสำรอกเฮฟวี่เมทัล"
+  },
+  {
+    "songId": 181,
+    "animeId": 24,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "Demon Slayer บท่านเริงรมย์ พลุไฟ",
+    "typoIdea": "ฟอนต์ประกายสีทอง ลอยระเบิดเหมือนดอกไม้ไฟยามราตรี"
+  },
+  {
+    "songId": 182,
+    "animeId": 5,
+    "category": "chill",
+    "badge": "🌊 ฟีลชิลล์",
+    "reason": "Jujutsu Kaisen ED1 แดนซ์สุดเท่",
+    "typoIdea": "ตัวหนังสือเต้นดุ๊กดิ๊ก หมุนตัวตามจังหวะเบสเดินอย่างมีคลาส"
+  },
+  {
+    "songId": 183,
+    "animeId": 55,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "One Punch Man OP1 หมัดเดียวจอด",
+    "typoIdea": "ตัวหนังสือสีเหลือง-แดง ขยายใหญ่เต็มจอในจังหวะ ONE PUNCH"
+  },
+  {
+    "songId": 184,
+    "animeId": 57,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "Death Parade OP ฟังก์ร็อคเปี่ยมรอยยิ้ม",
+    "typoIdea": "ฟอนต์เรโทรย้อนยุค สวิงซ้ายขวาตามจังหวะดีดนิ้วสุดเร้าใจ"
+  },
+  {
+    "songId": 185,
+    "animeId": 65,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "Fullmetal Alchemist: Brotherhood OP1 ในตำนาน",
+    "typoIdea": "ฟอนต์พู่กันสีเงิน กวาดเป็นวงกลมเวทมนตร์แปรธาตุตามท่อนฮุค"
+  },
+  {
+    "songId": 186,
+    "animeId": 64,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "Black Clover OP10 ดาร์กเปียโน",
+    "typoIdea": "ตัวหนังสือเงาสีดำ ค่อยๆ ถูกดูดกลืนลงสู่ความมืดมิด"
+  },
+  {
+    "songId": 187,
+    "animeId": 11,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "ฟอนต์สีเปลวไฟ วิ่งผ่านหน้าจอด้วยความเร็ว 180 BPM",
+    "typoIdea": "ฟอนต์สีเปลวไฟ วิ่งผ่านหน้าจอด้วยความเร็ว 180 BPM"
+  },
+  {
+    "songId": 188,
+    "animeId": 71,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "ฟอนต์สีดำสนิทขอบคม ค่อยๆ กลืนกินสีสันรอบตัวให้เป็นสีดำ",
+    "typoIdea": "ฟอนต์สีดำสนิทขอบคม ค่อยๆ กลืนกินสีสันรอบตัวให้เป็นสีดำ"
+  },
+  {
+    "songId": 189,
+    "animeId": 34,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "ฟอนต์สีเขียวพิษ กระพริบช้าๆ ในห้องขังแห่งความมืด",
+    "typoIdea": "ฟอนต์สีเขียวพิษ กระพริบช้าๆ ในห้องขังแห่งความมืด"
+  },
+  {
+    "songId": 190,
+    "animeId": 25,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "ฟอนต์สีนีออนม่วง-ชมพู เรืองแสงสะท้อนตึกระฟ้าแห่งอนาคต",
+    "typoIdea": "ฟอนต์สีนีออนม่วง-ชมพู เรืองแสงสะท้อนตึกระฟ้าแห่งอนาคต"
+  },
+  {
+    "songId": 191,
+    "animeId": 10,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้ง",
+    "reason": "ฟอนต์ตัวพิมพ์ดีดโบราณ พิมพ์ทีละตัวตามเสียงกล่องดนตรีไขลาน",
+    "typoIdea": "ฟอนต์ตัวพิมพ์ดีดโบราณ พิมพ์ทีละตัวตามเสียงกล่องดนตรีไขลาน"
+  },
+  {
+    "songId": 192,
+    "animeId": 3,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้ง",
+    "reason": "ตัวหนังสือสั่นไหวและแตกสลายตามเสียงตะโกนท่อนฮุค",
+    "typoIdea": "ตัวหนังสือสั่นไหวและแตกสลายตามเสียงตะโกนท่อนฮุค"
+  },
+  {
+    "songId": 193,
+    "animeId": 13,
+    "category": "chill",
+    "badge": "🌊 ฟีลชิลล์",
+    "reason": "ฟอนต์โปร่งแสงสีขาว ละอองฝนเกาะตัวหนังสืออย่างนุ่มนวล",
+    "typoIdea": "ฟอนต์โปร่งแสงสีขาว ละอองฝนเกาะตัวหนังสืออย่างนุ่มนวล"
+  },
+  {
+    "songId": 194,
+    "animeId": 14,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้ง",
+    "reason": "ตัวหนังสือกล่องคำพูด ซูมเข้าหาคำสำคัญในท่อนแร็พ",
+    "typoIdea": "ตัวหนังสือกล่องคำพูด ซูมเข้าหาคำสำคัญในท่อนแร็พ"
+  },
+  {
+    "songId": 195,
+    "animeId": 15,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ"
+  },
+  {
+    "songId": 196,
+    "animeId": 52,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ"
+  },
+  {
+    "songId": 197,
+    "animeId": 25,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน"
+  },
+  {
+    "songId": 198,
+    "animeId": 70,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ"
+  },
+  {
+    "songId": 199,
+    "animeId": 79,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน"
+  },
+  {
+    "songId": 200,
+    "animeId": 77,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ"
+  },
+  {
+    "songId": 201,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ"
+  },
+  {
+    "songId": 202,
+    "animeId": 9,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ"
+  },
+  {
+    "songId": 203,
+    "animeId": 18,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน"
+  },
+  {
+    "songId": 204,
+    "animeId": 14,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ"
+  },
+  {
+    "songId": 205,
+    "animeId": 10,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ"
+  },
+  {
+    "songId": 206,
+    "animeId": 15,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ"
+  },
+  {
+    "songId": 207,
+    "animeId": 12,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ"
+  },
+  {
+    "songId": 208,
+    "animeId": 7,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ"
+  },
+  {
+    "songId": 209,
+    "animeId": 70,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ"
+  },
+  {
+    "songId": 210,
+    "animeId": 25,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ"
+  },
+  {
+    "songId": 211,
+    "animeId": 20,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ"
+  },
+  {
+    "songId": 212,
+    "animeId": 16,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ"
+  },
+  {
+    "songId": 213,
+    "animeId": 38,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ"
+  },
+  {
+    "songId": 214,
+    "animeId": 32,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ"
+  },
+  {
+    "songId": 215,
+    "animeId": 24,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ"
+  },
+  {
+    "songId": 216,
+    "animeId": 33,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ"
+  },
+  {
+    "songId": 217,
+    "animeId": 81,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ"
+  },
+  {
+    "songId": 218,
+    "animeId": 41,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ"
+  },
+  {
+    "songId": 219,
+    "animeId": 30,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ"
+  },
+  {
+    "songId": 220,
+    "animeId": 12,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ"
+  },
+  {
+    "songId": 221,
+    "animeId": 25,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน"
+  },
+  {
+    "songId": 222,
+    "animeId": 14,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน"
+  },
+  {
+    "songId": 223,
+    "animeId": 28,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ"
+  },
+  {
+    "songId": 224,
+    "animeId": 20,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ"
+  },
+  {
+    "songId": 225,
+    "animeId": 70,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ"
+  },
+  {
+    "songId": 226,
+    "animeId": 48,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ"
+  },
+  {
+    "songId": 227,
+    "animeId": 52,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ"
+  },
+  {
+    "songId": 228,
+    "animeId": 79,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน"
+  },
+  {
+    "songId": 229,
+    "animeId": 25,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ"
+  },
+  {
+    "songId": 230,
+    "animeId": 7,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน"
+  },
+  {
+    "songId": 231,
+    "animeId": 9,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน"
+  },
+  {
+    "songId": 232,
+    "animeId": 10,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ"
+  },
+  {
+    "songId": 233,
+    "animeId": 18,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ"
+  },
+  {
+    "songId": 234,
+    "animeId": 15,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ"
+  },
+  {
+    "songId": 235,
+    "animeId": 52,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ"
+  },
+  {
+    "songId": 236,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ"
+  },
+  {
+    "songId": 237,
+    "animeId": 68,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ"
+  },
+  {
+    "songId": 238,
+    "animeId": 41,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ"
+  },
+  {
+    "songId": 239,
+    "animeId": 11,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน"
+  },
+  {
+    "songId": 240,
+    "animeId": 63,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ"
+  },
+  {
+    "songId": 241,
+    "animeId": 62,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ"
+  },
+  {
+    "songId": 242,
+    "animeId": 13,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ"
+  },
+  {
+    "songId": 243,
+    "animeId": 48,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน"
+  },
+  {
+    "songId": 244,
+    "animeId": 11,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ"
+  },
+  {
+    "songId": 245,
+    "animeId": 11,
+    "category": "hype",
+    "badge": "🔥 บีทเดือดสะใจ"
+  },
+  {
+    "songId": 246,
+    "animeId": 59,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ"
+  },
+  {
+    "songId": 247,
+    "animeId": 19,
+    "category": "chill",
+    "badge": "🌊 ชิลล์ชวนฝัน"
+  },
+  {
+    "songId": 248,
+    "animeId": 2,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ"
+  },
+  {
+    "songId": 249,
+    "animeId": 44,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ"
+  },
+  {
+    "songId": 250,
+    "animeId": 14,
+    "category": "love",
+    "badge": "❤️ คลั่งรักละมุนใจ"
+  },
+  {
+    "songId": 251,
+    "animeId": 18,
+    "category": "vibe",
+    "badge": "🌕 ชิลล์คลาสสิก ล่องลอย"
+  },
+  {
+    "songId": 252,
+    "animeId": 10,
+    "category": "hype",
+    "badge": "⚡ พลังใจ ฮาร์ดคัตเท่ๆ"
+  },
+  {
+    "songId": 253,
+    "animeId": 10,
+    "category": "sad",
+    "badge": "💔 น้ำตาซึม ดิ่งลึก"
+  },
+  {
+    "songId": 254,
+    "animeId": 9,
+    "category": "hype",
+    "badge": "🔥 สปีดรัน บีทหนักแน่น"
+  },
+  {
+    "songId": 255,
+    "animeId": 5,
+    "category": "hype",
+    "badge": "⚡ แอคชั่นระเบิด ฟันดาบเป๊ะ"
+  },
+  {
+    "songId": 256,
+    "animeId": 5,
+    "category": "sad",
+    "badge": "🥀 อาลัยอาวรณ์ ซึ้งกินใจ"
+  },
+  {
+    "songId": 257,
+    "animeId": 4,
+    "category": "sad",
+    "badge": "💔 โลกที่โหดร้ายแต่ยังรักเธอ"
+  },
+  {
+    "songId": 258,
+    "animeId": 4,
+    "category": "hype",
+    "badge": "⚔️ พลีชีพเพื่ออิสรภาพ"
+  },
+  {
+    "songId": 259,
+    "animeId": 4,
+    "category": "vibe",
+    "badge": "🕊️ บินสู่นภา กว้างใหญ่"
+  },
+  {
+    "songId": 260,
+    "animeId": 15,
+    "category": "hype",
+    "badge": "🎭 ดาร์กอลังการ ทวิสต์สะเทือน"
+  },
+  {
+    "songId": 261,
+    "animeId": 81,
+    "category": "vibe",
+    "badge": "✨ โฟลว์ชิลล์ โคตรมีสไตล์"
+  },
+  {
+    "songId": 262,
+    "animeId": 81,
+    "category": "hype",
+    "badge": "⚡ ร้องตะโกน ความเยาว์วัย"
+  },
+  {
+    "songId": 263,
+    "animeId": 2,
+    "category": "vibe",
+    "badge": "🧥 หนาวใจแต่มีเธอ โรแมนติก"
+  },
+  {
+    "songId": 264,
+    "animeId": 2,
+    "category": "love",
+    "badge": "🕰️ กาลเวลาเปลี่ยนแต่ใจไม่เปลี่ยน"
+  },
+  {
+    "songId": 265,
+    "animeId": 104,
+    "category": "vibe",
+    "badge": "🌀 เวิ้งว้าง ดำดิ่งจิตวิทยา"
+  },
+  {
+    "songId": 266,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "🥀 พยายามลบแต่ยิ่งจำ"
+  },
+  {
+    "songId": 267,
+    "animeId": 3,
+    "category": "love",
+    "badge": "👀 สบตาแล้วใจเต้นรัว"
+  },
+  {
+    "songId": 268,
+    "animeId": 44,
+    "category": "vibe",
+    "badge": "💬 สอนคนอื่นเก่ง เรื่องตัวเองพัง"
+  },
+  {
+    "songId": 269,
+    "animeId": 14,
+    "category": "sad",
+    "badge": "💔 คนที่ลืมไม่ลงตลอดกาล"
+  },
+  {
+    "songId": 270,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "🌧️ ยอมปล่อยให้เธอไปมีความสุข"
+  },
+  {
+    "songId": 271,
+    "animeId": 13,
+    "category": "love",
+    "badge": "💖 โลกสดใสเมื่อเห็นเธอยิ้ม"
+  },
+  {
+    "songId": 272,
+    "animeId": 8,
+    "category": "sad",
+    "badge": "🍷 ฉันยังคงคิดถึงเธอเสมอ"
+  },
+  {
+    "songId": 273,
+    "animeId": 2,
+    "category": "sad",
+    "badge": "👋 ลาก่อนแม้ใจยังรัก"
+  },
+  {
+    "songId": 274,
+    "animeId": 14,
+    "category": "sad",
+    "badge": "🥀 รักเพื่อนแต่พูดไม่ได้"
+  },
+  {
+    "songId": 275,
+    "animeId": 24,
+    "category": "sad",
+    "badge": "🍻 ดื่มย้อมใจให้ความทรงจำ"
+  },
+  {
+    "songId": 276,
+    "animeId": 43,
+    "category": "love",
+    "badge": "🌸 แอบชอบจนเลยเถิด"
+  },
+  {
+    "songId": 277,
+    "animeId": 3,
+    "category": "love",
+    "badge": "💌 ข้อความบอกรักน่ารักๆ"
+  },
+  {
+    "songId": 278,
+    "animeId": 44,
+    "category": "love",
+    "badge": "🏡 หัวใจฉันมีเธอเป็นเจ้าของ"
+  },
+  {
+    "songId": 279,
+    "animeId": 44,
+    "category": "vibe",
+    "badge": "🩸 โสดเพราะเลือดกรุ๊ปบีแน่ๆ"
+  },
+  {
+    "songId": 280,
+    "animeId": 8,
+    "category": "sad",
+    "badge": "🙂 ยิ้มส่งทั้งน้ำตา"
+  },
+  {
+    "songId": 281,
+    "animeId": 43,
+    "category": "love",
+    "badge": "🖊️ ตรงไหนไม่ชอบให้วง"
+  },
+  {
+    "songId": 282,
+    "animeId": 44,
+    "category": "love",
+    "badge": "☀️ อบอุ่นจนใจละลาย"
+  },
+  {
+    "songId": 283,
+    "animeId": 14,
+    "category": "love",
+    "badge": "🫂 คิดถึงจึงกอดไว้ในใจ"
+  },
+  {
+    "songId": 284,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "❓ การกระทำที่เธอไม่เคยชัดเจน"
+  },
+  {
+    "songId": 285,
+    "animeId": 2,
+    "category": "love",
+    "badge": "✨ คนที่พิเศษที่สุดในชีวิต"
+  },
+  {
+    "songId": 286,
+    "animeId": 13,
+    "category": "love",
+    "badge": "🎁 เป็นทุกอย่างให้เธอแล้ว"
+  },
+  {
+    "songId": 287,
+    "animeId": 8,
+    "category": "love",
+    "badge": "🛋️ เหนื่อยเมื่อไหร่ก็มาพิงฉัน"
+  },
+  {
+    "songId": 288,
+    "animeId": 3,
+    "category": "love",
+    "badge": "⏳ ทุกวินาทีมีค่าเมื่อมีเธอ"
+  },
+  {
+    "songId": 289,
+    "animeId": 14,
+    "category": "sad",
+    "badge": "🏳️ ยอมแพ้ต่อความรักของเธอ"
+  },
+  {
+    "songId": 290,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "💔 เจ็บจริงไม่ได้แกล้งทำ"
+  },
+  {
+    "songId": 291,
+    "animeId": 3,
+    "category": "hype",
+    "badge": "🎸 ร็อคเจ็บลึก บีทหนักสะใจ"
+  },
+  {
+    "songId": 292,
+    "animeId": 6,
+    "category": "hype",
+    "badge": "⚡ เพลงชาติวัยรุ่นฟันน้ำนม"
+  },
+  {
+    "songId": 293,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "🌙 มองจันทร์ดวงเดียวกัน"
+  },
+  {
+    "songId": 294,
+    "animeId": 7,
+    "category": "hype",
+    "badge": "🔥 ฟังก์ร็อคไทยร่วมสมัยสุดมันส์"
+  },
+  {
+    "songId": 295,
+    "animeId": 14,
+    "category": "vibe",
+    "badge": "🪜 อยู่ไกลเกินเอื้อมถึง"
+  },
+  {
+    "songId": 296,
+    "animeId": 2,
+    "category": "sad",
+    "badge": "🥀 จะพูดทำไมถ้าไม่ได้รัก"
+  },
+  {
+    "songId": 297,
+    "animeId": 3,
+    "category": "love",
+    "badge": "🥺 ขอร้องให้เธอหันมามอง"
+  },
+  {
+    "songId": 298,
+    "animeId": 44,
+    "category": "vibe",
+    "badge": "📱 อย่าปล่อยให้รอตอบแชท"
+  },
+  {
+    "songId": 299,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "🎙️ โฟลว์แร็ปบาดลึกถึงกระดูก"
+  },
+  {
+    "songId": 300,
+    "animeId": 8,
+    "category": "sad",
+    "badge": "🖤 สลักไว้ในหัวใจชั่วนิรันดร์"
+  },
+  {
+    "songId": 301,
+    "animeId": 124,
+    "category": "love",
+    "badge": "💍 เพลงคู่รักแห่งศตวรรษ"
+  },
+  {
+    "songId": 302,
+    "animeId": 121,
+    "category": "hype",
+    "badge": "🕺 บีทไวรัลโลก แดนซ์ไทโปสะบัด"
+  },
+  {
+    "songId": 303,
+    "animeId": 121,
+    "category": "hype",
+    "badge": "👻 เพลงเปิด Dandadan หลอนมันส์สะใจ"
+  },
+  {
+    "songId": 304,
+    "animeId": 126,
+    "category": "hype",
+    "badge": "⭐ เพลงระดับตำนาน เกิดใหม่เป็นลูกโอชิ"
+  },
+  {
+    "songId": 305,
+    "animeId": 124,
+    "category": "chill",
+    "badge": "🧝‍♀️ บทกวีผู้กล้าและความทรงจำของฟรีเรน"
+  },
+  {
+    "songId": 306,
+    "animeId": 125,
+    "category": "hype",
+    "badge": "⛓️ เลื่อยยนต์คลั่ง บีทระเบิดอารมณ์"
+  },
+  {
+    "songId": 307,
+    "animeId": 129,
+    "category": "hype",
+    "badge": "👁️ เพลงชาติชิบูย่า 'You are my special'"
+  },
+  {
+    "songId": 308,
+    "animeId": 122,
+    "category": "hype",
+    "badge": "🦖 ร็อคเปิดตัว ไคจูหมายเลข 8"
+  },
+  {
+    "songId": 309,
+    "animeId": 2,
+    "category": "love",
+    "badge": "☕ เธอฆ่าคนด้วยสายตา เพียงแค่เธอนั้นมองมา"
+  },
+  {
+    "songId": 310,
+    "animeId": 3,
+    "category": "sad",
+    "badge": "🕊️ ถ้าเราเจอกันอีก ในวันที่เราทั้งคู่เติบโต"
+  },
+  {
+    "songId": 311,
+    "animeId": 9,
+    "category": "sad",
+    "badge": "🥀 ความทรงจำไม่เคยจางหายไปไหน"
+  },
+  {
+    "songId": 312,
+    "animeId": 18,
+    "category": "chill",
+    "badge": "🌌 ปล่อยให้ดาวหมุนไปตามกาลเวลา"
+  },
+  {
+    "songId": 313,
+    "animeId": 127,
+    "category": "love",
+    "badge": "🎸 เธอคือคอร์ดโปรดที่ฉันอยากเล่นซ้ำๆ"
+  },
+  {
+    "songId": 314,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "🎨 ที่เธอเคยวาดไว้ กลับไม่มีเธออยู่ข้างใน"
+  },
+  {
+    "songId": 315,
+    "animeId": 18,
+    "category": "sad",
+    "badge": "🌸 กลิ่นหอมที่ซ่อนไว้ในใจตลอดกาล"
+  },
+  {
+    "songId": 316,
+    "animeId": 2,
+    "category": "love",
+    "badge": "🕊️ 'I want you to stay, 'til I'm in the grave'"
+  },
+  {
+    "songId": 317,
+    "animeId": 2,
+    "category": "hype",
+    "badge": "☕ 'Say you can't sleep, baby, I know That's that me espresso'"
+  },
+  {
+    "songId": 318,
+    "animeId": 20,
+    "category": "love",
+    "badge": "🌸 บอสซาโนวาแจ๊สแสนหวาน 'She's so perfect, blah, blah, blah'"
+  },
+  {
+    "songId": 319,
+    "animeId": 9,
+    "category": "love",
+    "badge": "🌅 แสงสีทองประกาย เปียโนระดับเวิลด์คลาส"
+  },
+  {
+    "songId": 320,
+    "animeId": 44,
+    "category": "love",
+    "badge": "🥀 รักเธอจนยอมตาย 'ตายซะยังจะดีกว่าถ้าต้องจากเธอ'"
+  },
+  {
+    "songId": 321,
+    "animeId": 194,
+    "category": "chill",
+    "badge": "✨ ผีเห็นผี"
+  },
+  {
+    "songId": 322,
+    "animeId": 153,
+    "category": "love",
+    "badge": "✨ ทราบแล้วเปลี่ยน"
+  },
+  {
+    "songId": 323,
+    "animeId": 155,
+    "category": "love",
+    "badge": "✨ บานปลาย"
+  },
+  {
+    "songId": 324,
+    "animeId": 159,
+    "category": "sad",
+    "badge": "✨ ลงใจ"
+  },
+  {
+    "songId": 325,
+    "animeId": 154,
+    "category": "love",
+    "badge": "✨ เพื่อนเล่น"
+  },
+  {
+    "songId": 326,
+    "animeId": 191,
+    "category": "sad",
+    "badge": "✨ ลู่วิ่ง"
+  },
+  {
+    "songId": 327,
+    "animeId": 182,
+    "category": "sad",
+    "badge": "✨ ฝนตกไหม"
+  },
+  {
+    "songId": 328,
+    "animeId": 193,
+    "category": "love",
+    "badge": "✨ น้อง"
+  },
+  {
+    "songId": 329,
+    "animeId": 190,
+    "category": "sad",
+    "badge": "✨ จำเก่ง"
+  },
+  {
+    "songId": 330,
+    "animeId": 144,
+    "category": "sad",
+    "badge": "✨ วันครบเลิก"
+  },
+  {
+    "songId": 331,
+    "animeId": 180,
+    "category": "sad",
+    "badge": "✨ ดึงดัน"
+  },
+  {
+    "songId": 332,
+    "animeId": 139,
+    "category": "hype",
+    "badge": "✨ คุกเข่า"
+  },
+  {
+    "songId": 333,
+    "animeId": 191,
+    "category": "sad",
+    "badge": "✨ หลอกกันทั้งนั้น"
+  },
+  {
+    "songId": 334,
+    "animeId": 156,
+    "category": "sad",
+    "badge": "✨ คนเก่าเขาทำไว้ดี"
+  },
+  {
+    "songId": 335,
+    "animeId": 189,
+    "category": "chill",
+    "badge": "✨ ไม่คิด"
+  },
+  {
+    "songId": 336,
+    "animeId": 187,
+    "category": "love",
+    "badge": "✨ ขอให้โลกนี้ใจดีกับเธอ"
+  },
+  {
+    "songId": 337,
+    "animeId": 192,
+    "category": "sad",
+    "badge": "✨ ลา ลา ลา"
+  },
+  {
+    "songId": 338,
+    "animeId": 183,
+    "category": "sad",
+    "badge": "✨ คงต้องบอกลา"
+  },
+  {
+    "songId": 339,
+    "animeId": 190,
+    "category": "chill",
+    "badge": "✨ ทิ้งไป"
+  },
+  {
+    "songId": 340,
+    "animeId": 185,
+    "category": "sad",
+    "badge": "✨ ภาพจำ"
+  },
+  {
+    "songId": 341,
+    "animeId": 146,
+    "category": "chill",
+    "badge": "✨ ปล่อย"
+  },
+  {
+    "songId": 342,
+    "animeId": 191,
+    "category": "sad",
+    "badge": "✨ ดูดี"
+  },
+  {
+    "songId": 343,
+    "animeId": 182,
+    "category": "sad",
+    "badge": "✨ เป็นเพราะฝน"
+  },
+  {
+    "songId": 344,
+    "animeId": 156,
+    "category": "sad",
+    "badge": "✨ มันเป็นใคร"
+  },
+  {
+    "songId": 345,
+    "animeId": 187,
+    "category": "sad",
+    "badge": "✨ ซ่อนเธอไว้ในเพลง"
+  },
+  {
+    "songId": 346,
+    "animeId": 154,
+    "category": "love",
+    "badge": "✨ หากจะเพียงขอ"
+  },
+  {
+    "songId": 347,
+    "animeId": 183,
+    "category": "sad",
+    "badge": "✨ ตอนเธอไม่อยู่"
+  },
+  {
+    "songId": 348,
+    "animeId": 155,
+    "category": "love",
+    "badge": "✨ ทักครับ"
+  },
+  {
+    "songId": 349,
+    "animeId": 156,
+    "category": "love",
+    "badge": "✨ อยากมีแฟนแล้ว"
+  },
+  {
+    "songId": 350,
+    "animeId": 153,
+    "category": "love",
+    "badge": "✨ ไปอยู่ที่ไหนมา"
+  },
+  {
+    "songId": 351,
+    "animeId": 192,
+    "category": "sad",
+    "badge": "✨ แฟนใหม่หน้าคุ้น"
+  },
+  {
+    "songId": 352,
+    "animeId": 185,
+    "category": "sad",
+    "badge": "✨ เก็บไว้ในใจไม่พอ"
+  },
+  {
+    "songId": 353,
+    "animeId": 154,
+    "category": "love",
+    "badge": "✨ Pink"
+  },
+  {
+    "songId": 354,
+    "animeId": 184,
+    "category": "love",
+    "badge": "✨ ไม่เปลี่ยนเลย"
+  },
+  {
+    "songId": 355,
+    "animeId": 160,
+    "category": "sad",
+    "badge": "✨ สลักจิต"
+  },
+  {
+    "songId": 356,
+    "animeId": 144,
+    "category": "sad",
+    "badge": "✨ ลืมแทบไม่ไหว"
+  },
+  {
+    "songId": 357,
+    "animeId": 139,
+    "category": "hype",
+    "badge": "✨ ใจเกเร"
+  },
+  {
+    "songId": 358,
+    "animeId": 155,
+    "category": "love",
+    "badge": "✨ Money Honey"
+  },
+  {
+    "songId": 359,
+    "animeId": 186,
+    "category": "love",
+    "badge": "✨ กอดในใจ"
+  },
+  {
+    "songId": 360,
+    "animeId": 180,
+    "category": "sad",
+    "badge": "✨ กีดกัน"
+  },
+  {
+    "songId": 361,
+    "animeId": 154,
+    "category": "love",
+    "badge": "✨ รู้งี้เป็นแฟนกันตั้งนานแล้ว"
+  },
+  {
+    "songId": 362,
+    "animeId": 156,
+    "category": "love",
+    "badge": "✨ ลังเล"
+  },
+  {
+    "songId": 363,
+    "animeId": 173,
+    "category": "hype",
+    "badge": "✨ Fire Boy"
+  },
+  {
+    "songId": 364,
+    "animeId": 182,
+    "category": "hype",
+    "badge": "✨ Grand Escape"
+  },
+  {
+    "songId": 365,
+    "animeId": 149,
+    "category": "hype",
+    "badge": "✨ Crossing Field"
+  },
+  {
+    "songId": 366,
+    "animeId": 149,
+    "category": "hype",
+    "badge": "✨ Catch the Moment"
+  },
+  {
+    "songId": 367,
+    "animeId": 129,
+    "category": "hype",
+    "badge": "✨ Kaikai Kitan"
+  },
+  {
+    "songId": 368,
+    "animeId": 129,
+    "category": "hype",
+    "badge": "✨ Ao no Sumika"
+  },
+  {
+    "songId": 369,
+    "animeId": 129,
+    "category": "sad",
+    "badge": "✨ Akari"
+  },
+  {
+    "songId": 370,
+    "animeId": 136,
+    "category": "hype",
+    "badge": "✨ Peace Sign"
+  },
+  {
+    "songId": 371,
+    "animeId": 187,
+    "category": "chill",
+    "badge": "✨ Spinning Globe"
+  },
+  {
+    "songId": 372,
+    "animeId": 153,
+    "category": "love",
+    "badge": "✨ Kataomoi"
+  },
+  {
+    "songId": 373,
+    "animeId": 165,
+    "category": "sad",
+    "badge": "✨ Akuma no Ko"
+  },
+  {
+    "songId": 374,
+    "animeId": 140,
+    "category": "hype",
+    "badge": "✨ Blue Bird"
+  },
+  {
+    "songId": 375,
+    "animeId": 140,
+    "category": "hype",
+    "badge": "✨ Haruka Kanata"
+  },
+  {
+    "songId": 376,
+    "animeId": 137,
+    "category": "hype",
+    "badge": "✨ After Dark"
+  },
+  {
+    "songId": 377,
+    "animeId": 137,
+    "category": "hype",
+    "badge": "✨ Velonica"
+  },
+  {
+    "songId": 378,
+    "animeId": 137,
+    "category": "chill",
+    "badge": "✨ Alones"
+  },
+  {
+    "songId": 379,
+    "animeId": 138,
+    "category": "hype",
+    "badge": "✨ Black Catcher"
+  },
+  {
+    "songId": 380,
+    "animeId": 139,
+    "category": "hype",
+    "badge": "✨ Cry Baby"
+  },
+  {
+    "songId": 381,
+    "animeId": 195,
+    "category": "hype",
+    "badge": "✨ Mixed Nuts"
+  },
+  {
+    "songId": 382,
+    "animeId": 153,
+    "category": "love",
+    "badge": "✨ I Love"
+  },
+  {
+    "songId": 383,
+    "animeId": 191,
+    "category": "sad",
+    "badge": "✨ Pretender"
+  },
+  {
+    "songId": 384,
+    "animeId": 184,
+    "category": "love",
+    "badge": "✨ Subtitle"
+  },
+  {
+    "songId": 385,
+    "animeId": 141,
+    "category": "hype",
+    "badge": "✨ Fly High"
+  },
+  {
+    "songId": 386,
+    "animeId": 141,
+    "category": "hype",
+    "badge": "✨ Hikariare"
+  },
+  {
+    "songId": 387,
+    "animeId": 141,
+    "category": "hype",
+    "badge": "✨ Imagination"
+  },
+  {
+    "songId": 388,
+    "animeId": 199,
+    "category": "hype",
+    "badge": "✨ Samurai Heart"
+  },
+  {
+    "songId": 389,
+    "animeId": 164,
+    "category": "hype",
+    "badge": "✨ Colors"
+  },
+  {
+    "songId": 390,
+    "animeId": 166,
+    "category": "sad",
+    "badge": "✨ Rain"
+  },
+  {
+    "songId": 391,
+    "animeId": 169,
+    "category": "hype",
+    "badge": "✨ Usseewa"
+  },
+  {
+    "songId": 392,
+    "animeId": 132,
+    "category": "hype",
+    "badge": "✨ Odo"
+  },
+  {
+    "songId": 393,
+    "animeId": 140,
+    "category": "hype",
+    "badge": "✨ New Genesis"
+  },
+  {
+    "songId": 394,
+    "animeId": 133,
+    "category": "hype",
+    "badge": "✨ Show"
+  },
+  {
+    "songId": 395,
+    "animeId": 167,
+    "category": "chill",
+    "badge": "✨ NIGHT DANCER"
+  },
+  {
+    "songId": 396,
+    "animeId": 189,
+    "category": "chill",
+    "badge": "✨ Nagisa"
+  },
+  {
+    "songId": 397,
+    "animeId": 190,
+    "category": "chill",
+    "badge": "✨ Tabun"
+  },
+  {
+    "songId": 398,
+    "animeId": 187,
+    "category": "hype",
+    "badge": "✨ Gunjou"
+  },
+  {
+    "songId": 399,
+    "animeId": 131,
+    "category": "hype",
+    "badge": "✨ Yoru ni Kakeru"
+  },
+  {
+    "songId": 400,
+    "animeId": 134,
+    "category": "hype",
+    "badge": "✨ Kaibutsu"
+  },
+  {
+    "songId": 401,
+    "animeId": 168,
+    "category": "hype",
+    "badge": "✨ The Blessing"
+  },
+  {
+    "songId": 402,
+    "animeId": 167,
+    "category": "chill",
+    "badge": "✨ Tokyo Flash"
+  },
+  {
+    "songId": 403,
+    "animeId": 125,
+    "category": "hype",
+    "badge": "✨ Chainsaw Blood"
+  },
+  {
+    "songId": 404,
+    "animeId": 142,
+    "category": "hype",
+    "badge": "✨ Dramaturgy"
+  },
+  {
+    "songId": 405,
+    "animeId": 143,
+    "category": "hype",
+    "badge": "✨ Okinimesumama"
+  },
+  {
+    "songId": 406,
+    "animeId": 134,
+    "category": "hype",
+    "badge": "✨ How to Eat Life"
+  },
+  {
+    "songId": 407,
+    "animeId": 157,
+    "category": "hype",
+    "badge": "✨ Anoko Secret"
+  },
+  {
+    "songId": 408,
+    "animeId": 127,
+    "category": "hype",
+    "badge": "✨ Kessoku Band"
+  },
+  {
+    "songId": 409,
+    "animeId": 127,
+    "category": "hype",
+    "badge": "✨ Ano Bando"
+  },
+  {
+    "songId": 410,
+    "animeId": 127,
+    "category": "hype",
+    "badge": "✨ Seishun Complex"
+  },
+  {
+    "songId": 411,
+    "animeId": 127,
+    "category": "chill",
+    "badge": "✨ Karakara"
+  },
+  {
+    "songId": 412,
+    "animeId": 127,
+    "category": "love",
+    "badge": "✨ Constellation"
+  },
+  {
+    "songId": 413,
+    "animeId": 153,
+    "category": "love",
+    "badge": "✨ Birds of a Feather"
+  },
+  {
+    "songId": 414,
+    "animeId": 155,
+    "category": "hype",
+    "badge": "✨ Taste"
+  },
+  {
+    "songId": 415,
+    "animeId": 156,
+    "category": "love",
+    "badge": "✨ Please Please Please"
+  },
+  {
+    "songId": 416,
+    "animeId": 154,
+    "category": "love",
+    "badge": "✨ From The Start"
+  },
+  {
+    "songId": 417,
+    "animeId": 159,
+    "category": "sad",
+    "badge": "✨ Promise"
+  },
+  {
+    "songId": 418,
+    "animeId": 181,
+    "category": "love",
+    "badge": "✨ Golden Hour"
+  },
+  {
+    "songId": 419,
+    "animeId": 153,
+    "category": "love",
+    "badge": "✨ Falling in Love"
+  },
+  {
+    "songId": 420,
+    "animeId": 184,
+    "category": "love",
+    "badge": "✨ Until I Found You"
+  },
+  {
+    "songId": 421,
+    "animeId": 185,
+    "category": "love",
+    "badge": "✨ Always"
+  },
+  {
+    "songId": 422,
+    "animeId": 154,
+    "category": "love",
+    "badge": "✨ Best Part"
+  },
+  {
+    "songId": 423,
+    "animeId": 167,
+    "category": "chill",
+    "badge": "✨ Japanese Denim"
+  },
+  {
+    "songId": 424,
+    "animeId": 155,
+    "category": "love",
+    "badge": "✨ Get You"
+  },
+  {
+    "songId": 425,
+    "animeId": 131,
+    "category": "sad",
+    "badge": "✨ Romantic Homicide"
+  },
+  {
+    "songId": 426,
+    "animeId": 181,
+    "category": "love",
+    "badge": "✨ Here With Me"
+  },
+  {
+    "songId": 427,
+    "animeId": 183,
+    "category": "sad",
+    "badge": "✨ Glimpse of Us"
+  },
+  {
+    "songId": 428,
+    "animeId": 131,
+    "category": "sad",
+    "badge": "✨ Slow Dancing"
+  },
+  {
+    "songId": 429,
+    "animeId": 148,
+    "category": "love",
+    "badge": "✨ Die For You"
+  },
+  {
+    "songId": 430,
+    "animeId": 191,
+    "category": "sad",
+    "badge": "✨ Save Your Tears"
+  },
+  {
+    "songId": 431,
+    "animeId": 131,
+    "category": "hype",
+    "badge": "✨ Blinding Lights"
+  },
+  {
+    "songId": 432,
+    "animeId": 196,
+    "category": "chill",
+    "badge": "✨ Watermelon Sugar"
+  },
+  {
+    "songId": 433,
+    "animeId": 185,
+    "category": "sad",
+    "badge": "✨ Falling"
+  },
+  {
+    "songId": 434,
+    "animeId": 132,
+    "category": "hype",
+    "badge": "✨ Cruel Summer"
+  },
+  {
+    "songId": 435,
+    "animeId": 197,
+    "category": "hype",
+    "badge": "✨ Flowers"
+  },
+  {
+    "songId": 436,
+    "animeId": 195,
+    "category": "chill",
+    "badge": "✨ Peaches"
+  },
+  {
+    "songId": 437,
+    "animeId": 133,
+    "category": "hype",
+    "badge": "✨ Levitating"
+  },
+  {
+    "songId": 438,
+    "animeId": 169,
+    "category": "hype",
+    "badge": "✨ Don't Start Now"
+  },
+  {
+    "songId": 439,
+    "animeId": 196,
+    "category": "hype",
+    "badge": "✨ Dance The Night"
+  },
+  {
+    "songId": 440,
+    "animeId": 169,
+    "category": "hype",
+    "badge": "✨ Good 4 U"
+  },
+  {
+    "songId": 441,
+    "animeId": 183,
+    "category": "sad",
+    "badge": "✨ Drivers License"
+  },
+  {
+    "songId": 442,
+    "animeId": 191,
+    "category": "sad",
+    "badge": "✨ Deja Vu"
+  },
+  {
+    "songId": 443,
+    "animeId": 167,
+    "category": "chill",
+    "badge": "✨ Heat Waves"
+  },
+  {
+    "songId": 444,
+    "animeId": 144,
+    "category": "sad",
+    "badge": "✨ Another Love"
+  },
+  {
+    "songId": 445,
+    "animeId": 181,
+    "category": "love",
+    "badge": "✨ Past Lives"
+  },
+  {
+    "songId": 446,
+    "animeId": 136,
+    "category": "hype",
+    "badge": "✨ Unstoppable"
+  },
+  {
+    "songId": 447,
+    "animeId": 184,
+    "category": "love",
+    "badge": "✨ Snowman"
+  },
+  {
+    "songId": 448,
+    "animeId": 160,
+    "category": "sad",
+    "badge": "✨ Somewhere Only We Know"
+  },
+  {
+    "songId": 449,
+    "animeId": 181,
+    "category": "love",
+    "badge": "✨ Yellow"
+  },
+  {
+    "songId": 450,
+    "animeId": 185,
+    "category": "sad",
+    "badge": "✨ Fix You"
+  },
+  {
+    "songId": 451,
+    "animeId": 164,
+    "category": "hype",
+    "badge": "✨ Viva La Vida"
+  },
+  {
+    "songId": 452,
+    "animeId": 181,
+    "category": "hype",
+    "badge": "✨ Sky Full of Stars"
+  },
+  {
+    "songId": 453,
+    "animeId": 172,
+    "category": "hype",
+    "badge": "✨ Counting Stars"
+  },
+  {
+    "songId": 454,
+    "animeId": 55,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 455,
+    "animeId": 56,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 456,
+    "animeId": 57,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 457,
+    "animeId": 58,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 458,
+    "animeId": 59,
+    "category": "chill",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 459,
+    "animeId": 60,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 460,
+    "animeId": 61,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 461,
+    "animeId": 62,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 462,
+    "animeId": 63,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 463,
+    "animeId": 64,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 464,
+    "animeId": 65,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 465,
+    "animeId": 66,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 466,
+    "animeId": 67,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 467,
+    "animeId": 68,
+    "category": "chill",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 468,
+    "animeId": 69,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 469,
+    "animeId": 70,
+    "category": "chill",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 470,
+    "animeId": 71,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 471,
+    "animeId": 72,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 472,
+    "animeId": 73,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 473,
+    "animeId": 74,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 474,
+    "animeId": 75,
+    "category": "hype",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 475,
+    "animeId": 76,
+    "category": "hype",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 476,
+    "animeId": 77,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 477,
+    "animeId": 78,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 478,
+    "animeId": 79,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 479,
+    "animeId": 80,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 480,
+    "animeId": 81,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 481,
+    "animeId": 82,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 482,
+    "animeId": 83,
+    "category": "chill",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 483,
+    "animeId": 84,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 484,
+    "animeId": 85,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 485,
+    "animeId": 86,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 486,
+    "animeId": 87,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 487,
+    "animeId": 88,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 488,
+    "animeId": 89,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 489,
+    "animeId": 90,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 490,
+    "animeId": 91,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 491,
+    "animeId": 92,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 492,
+    "animeId": 93,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 493,
+    "animeId": 94,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 494,
+    "animeId": 95,
+    "category": "chill",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 495,
+    "animeId": 96,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 496,
+    "animeId": 97,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 497,
+    "animeId": 98,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 498,
+    "animeId": 99,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 499,
+    "animeId": 100,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 500,
+    "animeId": 101,
+    "category": "chill",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 501,
+    "animeId": 245,
+    "category": "hype",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 502,
+    "animeId": 231,
+    "category": "hype",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 503,
+    "animeId": 233,
+    "category": "hype",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 504,
+    "animeId": 233,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 505,
+    "animeId": 232,
+    "category": "hype",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 506,
+    "animeId": 232,
+    "category": "chill",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 507,
+    "animeId": 236,
+    "category": "hype",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 508,
+    "animeId": 237,
+    "category": "hype",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 509,
+    "animeId": 238,
+    "category": "hype",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 510,
+    "animeId": 242,
+    "category": "hype",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 511,
+    "animeId": 243,
+    "category": "chill",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 512,
+    "animeId": 234,
+    "category": "chill",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 513,
+    "animeId": 240,
+    "category": "hype",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 514,
+    "animeId": 244,
+    "category": "hype",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 515,
+    "animeId": 239,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 516,
+    "animeId": 248,
+    "category": "hype",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 517,
+    "animeId": 250,
+    "category": "hype",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 518,
+    "animeId": 235,
+    "category": "hype",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 519,
+    "animeId": 233,
+    "category": "chill",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 520,
+    "animeId": 244,
+    "category": "hype",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 521,
+    "animeId": 239,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 522,
+    "animeId": 241,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 523,
+    "animeId": 243,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 524,
+    "animeId": 239,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 525,
+    "animeId": 239,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 526,
+    "animeId": 249,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 527,
+    "animeId": 241,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 528,
+    "animeId": 233,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 529,
+    "animeId": 243,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 530,
+    "animeId": 240,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 531,
+    "animeId": 243,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 532,
+    "animeId": 244,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 533,
+    "animeId": 241,
+    "category": "chill",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 534,
+    "animeId": 231,
+    "category": "hype",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 535,
+    "animeId": 240,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 536,
+    "animeId": 244,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 537,
+    "animeId": 241,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 538,
+    "animeId": 243,
+    "category": "hype",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 539,
+    "animeId": 239,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 540,
+    "animeId": 241,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 541,
+    "animeId": 249,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 542,
+    "animeId": 236,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 543,
+    "animeId": 244,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 544,
+    "animeId": 233,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 545,
+    "animeId": 233,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 546,
+    "animeId": 239,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 547,
+    "animeId": 234,
+    "category": "chill",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 548,
+    "animeId": 248,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 549,
+    "animeId": 235,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 550,
+    "animeId": 242,
+    "category": "hype",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 598,
+    "animeId": 352,
+    "category": "sad",
+    "badge": "💔 ซึ้งกินใจ",
+    "reason": "บทเพลงปลอบประโลมหัวใจของคนที่พยายามทำตามความฝัน เหมาะอย่างยิ่งกับซีนตัดต่อเรื่อง Look Back ที่ทุ่มเทวาดภาพจนเหนื่อยล้า",
+    "typoIdea": "ใช้ฟอนต์ลายมือพลิ้วไหวสีครีมอบอุ่น ตัวหนังสือค่อยๆ ปรากฏทีละประโยคตามเสียงร้อง"
+  },
+  {
+    "songId": 599,
+    "animeId": 351,
+    "category": "sad",
+    "badge": "💔 ซึ้งกินใจ",
+    "reason": "ความรู้สึกที่อยากลืมแต่ยิ่งจำ เข้ากับฉากความสัมพันธ์ที่ซับซ้อนใน Blue Box อย่างลงตัว",
+    "typoIdea": "เอฟเฟกต์เบลอแล้วเฟดตัวหนังสือจางลง สลับกับการตัดต่อช็อตมองตากันในโรงยิม"
+  },
+  {
+    "songId": 600,
+    "animeId": 356,
+    "category": "love",
+    "badge": "❤️ คลั่งรัก",
+    "reason": "เมโลดี้หวานซึ้งที่บอกว่าพร้อมเป็นที่พึ่งให้เธอเสมอ เหมาะกับฉากน่ารักๆ ระหว่างคุเซะกับอาเรีย",
+    "typoIdea": "ฟอนต์แนวโมเดิร์นโค้งมน เคลื่อนที่ลอยขึ้นช้าๆ พร้อมประกายวิบวับรอบตัวอักษร"
+  },
+  {
+    "songId": 601,
+    "animeId": 358,
+    "category": "love",
+    "badge": "❤️ คลั่งรัก",
+    "reason": "เพลงฮิตที่ร้อยเรียงคำหวาน ผสมกลิ่นอายเสียงพิณ เหมาะกับซีนความน่ารักของนางเอก Giji Harem ทุกเวอร์ชัน",
+    "typoIdea": "ตัวหนังสือสีทองแวววาว สไตล์ไทยโมเดิร์นตัดกับสีพื้นหลังสดใส"
+  },
+  {
+    "songId": 602,
+    "animeId": 352,
+    "category": "sad",
+    "badge": "💔 ซึ้งกินใจ",
+    "reason": "ความเหงาของการมองดวงจันทร์ดวงเดียวกัน เข้ากับมู้ดคิดถึงเพื่อนรักที่จากไปใน Look Back",
+    "typoIdea": "ฟอนต์มีขอบบางคม เรืองแสงสีนวลตาคล้ายแสงจันทร์ สลับกับภาพฝนตกและฤดูกาลเปลี่ยน"
+  },
+  {
+    "songId": 603,
+    "animeId": 353,
+    "category": "chill",
+    "badge": "🌊 อินดี้ชิลล์",
+    "reason": "เพลงไวรัลสุดฮาตัดพ้อโชคชะตา เหมาะอย่างยิ่งกับเหล่านางเอกแพ้รักใน Makeine",
+    "typoIdea": "ตัวหนังสือสไตล์ Pop Bubble สีชมพู-พาสเทล เด้งตามจังหวะชะชะช่ากวนๆ"
+  },
+  {
+    "songId": 604,
+    "animeId": 360,
+    "category": "love",
+    "badge": "❤️ คลั่งรัก",
+    "reason": "เพลงฟีลกู้ดชื่นชมความน่ารัก เข้ากับฉากคอสเพลย์สดใสของริริสะแบบเต็มสิบ",
+    "typoIdea": "หัวใจสีชมพูลอยรอบฟอนต์ลายมือน่ารัก จังหวะข้อความปรากฏแบบป๊อปอัพ"
+  },
+  {
+    "songId": 605,
+    "animeId": 357,
+    "category": "chill",
+    "badge": "🌊 อินดี้ชิลล์",
+    "reason": "บีทสุดชิลล์ผสมมู้ดไซไฟอวกาศ เหมาะกับภาพเมืองที่มีเอเลี่ยนลอยฟ้าใน Dededede",
+    "typoIdea": "ตัวอักษรกลายร่างหรือหมุนเคว้งคว้างช้าๆ ตามเสียงดนตรีซินธ์ฟังสบาย"
+  },
+  {
+    "songId": 606,
+    "animeId": 353,
+    "category": "sad",
+    "badge": "💔 ซึ้งกินใจ",
+    "reason": "รอยยิ้มที่มอบให้พร้อมคราบน้ำตา เข้ากับความรู้สึกของนางเอกที่ยอมเป็นผู้แพ้ในความรัก",
+    "typoIdea": "ตัวหนังสือข้อความแชทที่ถูกส่ง แล้วค่อยๆ เลือนหายไปพร้อมข้อความอ่านแล้ว"
+  },
+  {
+    "songId": 607,
+    "animeId": 351,
+    "category": "love",
+    "badge": "❤️ คลั่งรัก",
+    "reason": "ความรู้สึกรักที่อยากเห็นเขามีความสุข ตรงกับความทุ่มเทของตัวละครใน Blue Box",
+    "typoIdea": "ฟอนต์ Elegant Serif สีขาวสะท้อนแสงไฟในยิมกีฬา ซ้อนภาพทับแบบ Double Exposure"
+  },
+  {
+    "songId": 608,
+    "animeId": 365,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "เพลงร็อคส่งท้ายสุดยิ่งใหญ่ เหมาะกับฉากจบศึกกองขยะระหว่างคาราสึโนะกับเนโกมะ",
+    "typoIdea": "ฟอนต์แนวขรุขระ Grunge สั่นไหวตามเสียงกระแทกกลองสแนร์และกีตาร์ดิบ"
+  },
+  {
+    "songId": 609,
+    "animeId": 356,
+    "category": "love",
+    "badge": "❤️ คลั่งรัก",
+    "reason": "เสียงร้องทรงพลังและเมโลดี้สุดอลังการ เหมาะกับฉากสารภาพรักอันน่าจดจำ",
+    "typoIdea": "ตัวอักษรพลิ้วไหวสีทองผสมประกายหิมะสีขาว ร่วงหล่นรอบคำว่ารักแท้"
+  },
+  {
+    "songId": 610,
+    "animeId": 351,
+    "category": "chill",
+    "badge": "🌊 อินดี้ชิลล์",
+    "reason": "บรรยากาศลมร้อนและความทรงจำในฤดูร้อน สอดคล้องกับบรรยากาศค่ายฝึกกีฬาใน Blue Box",
+    "typoIdea": "ฟอนต์สีพาสเทลรับแดด มีประกายแสง Sun Flare วาบผ่านตัวอักษร"
+  },
+  {
+    "songId": 611,
+    "animeId": 363,
+    "category": "sad",
+    "badge": "💔 ซึ้งกินใจ",
+    "reason": "ความรู้สึกดำดิ่งสู่ห้วงลึกของความจริง สอดรับกับความทรมานของผู้แสวงหาความจริงใน Orb",
+    "typoIdea": "ตัวหนังสือจมลงสู่ด้านล่างหน้าจอช้าๆ เหมือนฟองอากาศใต้น้ำ"
+  },
+  {
+    "songId": 612,
+    "animeId": 355,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "ท่อนร้องสุดติดหูผสมแร็ปดุดัน เหมาะกับซีนต่อสู้ชิงไหวชิงพริบใน The Elusive Samurai",
+    "typoIdea": "ตัวหนังสือหมุนสะบัดฟันดาบ คมดาบตัดผ่านตัวอักษรจนแตกกระจาย"
+  },
+  {
+    "songId": 613,
+    "animeId": 364,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "เพลงไวรัลอันดับ 1 ของโลก จังหวะแดนซ์ร็อคสนุกซ่า เหมาะกับฉากโชว์สดของวง Kessoku Band ใน Bocchi the Rock",
+    "typoIdea": "ฟอนต์เรโทรนีออนสีชมพูช็อกกิ้งพิ้งค์ กระเด้งสลับตามจังหวะ 'อา-พา-ทึ' แบบ Snap Zoom"
+  },
+  {
+    "songId": 614,
+    "animeId": 356,
+    "category": "chill",
+    "badge": "🌊 อินดี้ชิลล์",
+    "reason": "เมโลดี้หวานซ่อนความน่ารักปนประชดประชัน เข้ากับบุคลิกซึนเดเระของอาเรียโต๊ะข้างๆ",
+    "typoIdea": "ฟอนต์ลายเซ็นแนววินเทจสีฟ้าพาสเทล ตัวหนังสือขีดเส้นใต้พร้อมหัวใจกระพริบ"
+  },
+  {
+    "songId": 615,
+    "animeId": 353,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "เสียงร้องทรงพลังและดนตรีซินธ์เร้าใจ สื่อถึงความรู้สึกที่ไม่อาจปฏิเสธหัวใจตัวเอง",
+    "typoIdea": "ตัวหนังสือสไตล์ Billboard 80s มีสโตรกไฟนีออนกระพริบตามท่อนบริดจ์"
+  },
+  {
+    "songId": 616,
+    "animeId": 354,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "ท่อนดรอปที่ระเบิดพลังเสียงร็อคสุดขั้ว เข้ากับฉากฟันดาบปล่อยเวทมนตร์ของวิลใน Wistoria",
+    "typoIdea": "เอฟเฟกต์ Screen Shake พร้อมตัวหนังสือขยายใหญ่เต็มหน้าจอตอนท่อนคอรัสระเบิด"
+  },
+  {
+    "songId": 617,
+    "animeId": 361,
+    "category": "chill",
+    "badge": "🌊 อินดี้ชิลล์",
+    "reason": "เสียงเบสหนึบและเสียงร้องดิบเท่ เข้ากับลุคคาวบอยไซไฟของ Vash the Stampede",
+    "typoIdea": "ฟอนต์ Sans Serif สีทองไหม้บนพื้นหลังมืด ค่อยๆ ไถลจากซ้ายไปขวาอย่างนุ่มนวล"
+  },
+  {
+    "songId": 618,
+    "animeId": 352,
+    "category": "chill",
+    "badge": "🌊 อินดี้ชิลล์",
+    "reason": "ท่วงทำนองที่พาย้อนกลับไปยังสถานที่และความทรงจำเดิม สื่อถึงมิตรภาพใน Look Back อย่างลึกซึ้ง",
+    "typoIdea": "ตัวหนังสือพิมพ์ดีดแบบคลาสสิก ค่อยๆ พิมพ์ทีละตัวอักษรตามบีทเพลงดรีมป็อป"
+  },
+  {
+    "songId": 619,
+    "animeId": 352,
+    "category": "sad",
+    "badge": "💔 ซึ้งกินใจ",
+    "reason": "เสียงเปียโนและเสียงร้องสุดเหงา เข้ากับฉากนั่งวาดการ์ตูนคนเดียวท่ามกลางความเงียบ",
+    "typoIdea": "ตัวหนังสือสลายเป็นละอองฝน ค่อยๆ เบลอจางลงตามหยดน้ำตาบนหน้ากระดาษ"
+  },
+  {
+    "songId": 620,
+    "animeId": 363,
+    "category": "sad",
+    "badge": "💔 ซึ้งกินใจ",
+    "reason": "บทเพลงแห่งความมืดมิดและความพยายามที่ไร้ทางออก สอดรับกับความเชื่อในเรื่อง Orb",
+    "typoIdea": "แสงไฟสปอตไลต์ส่องตัวหนังสือกลางจอ พร้อมคลื่นเสียงเบสสั่นไหวในความมืด"
+  },
+  {
+    "songId": 621,
+    "animeId": 360,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "เมโลดี้สดใสเปรียบหัวใจเป็นเสียงเพลง เข้ากับความหลงใหลในโลกคอสเพลย์ของ 2.5 มิติ",
+    "typoIdea": "กราฟฟิก Equalizer เสียงเต้นขึ้นลงเป็นจังหวะตามตัวอักษร Stereo"
+  },
+  {
+    "songId": 622,
+    "animeId": 351,
+    "category": "chill",
+    "badge": "🌊 อินดี้ชิลล์",
+    "reason": "บรรยากาศหนาวเหน็บแต่หัวใจอุ่น เข้ากับฉากเดินกลับบ้านหลังซ้อมกีฬาใน Blue Box",
+    "typoIdea": "ฟอนต์สีขาวนวลบนฉากสีหม่น พร้อมเอฟเฟกต์หมอกควันเคลื่อนผ่านตัวอักษร"
+  },
+  {
+    "songId": 623,
+    "animeId": 358,
+    "category": "love",
+    "badge": "❤️ คลั่งรัก",
+    "reason": "เสียงร้องแผ่วเบานุ่มนวลเหมือนกระซิบข้างหู เข้ากับฉากเขินอายใน Pseudo Harem",
+    "typoIdea": "ตัวหนังสือสไตล์มินิมอลสีพาสเทล ลอยตุ๊บป่องนุ่มนิ่มเหมือนก้อนเมฆ"
+  },
+  {
+    "songId": 624,
+    "animeId": 351,
+    "category": "love",
+    "badge": "❤️ คลั่งรัก",
+    "reason": "ความรู้สึกทุ่มเททุกอย่างเพื่อคนที่รัก ตรงกับความรู้สึกของไทกิที่มีต่อรุ่นพี่ชินัตสึ",
+    "typoIdea": "เส้นลายเบ็ดตกปลาลากเป็นตัวอักษรข้อความ เชื่อมต่อระหว่างสองหัวใจ"
+  },
+  {
+    "songId": 625,
+    "animeId": 359,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "บีทอิเล็กทรอนิกส์ดาร์กสุดเท่ เข้ากับความอลังการของเหล่ายมทูตและควินซี่ใน Bleach TYBW",
+    "typoIdea": "ฟอนต์สีแดงเลือดตัดขอบดำ มีประกายไฟฟ้าสีฟ้าแลบผ่านตัวอักษรตามจังหวะเบส"
+  },
+  {
+    "songId": 626,
+    "animeId": 356,
+    "category": "love",
+    "badge": "❤️ คลั่งรัก",
+    "reason": "เสียงร้องประสานชายหญิงที่ลงตัวที่สุด เหมาะกับซีนโรแมนติกที่เปิดใจคุยกัน",
+    "typoIdea": "ตัวหนังสือสองสี (ชมพู-ฟ้า) ลอยเข้ามาประสานรวมกันตรงกลางจอ"
+  },
+  {
+    "songId": 627,
+    "animeId": 351,
+    "category": "love",
+    "badge": "❤️ คลั่งรัก",
+    "reason": "เสียงเปียโนของฟูจิอิ คาเสะผสมกับเพลงสากล สร้างบรรยากาศแสงสีทองยามเย็นที่งดงามเกินบรรยาย",
+    "typoIdea": "ประกายละอองแสงสีทองวิบวับรอบฟอนต์ Serif สวยงามเปล่งประกาย"
+  },
+  {
+    "songId": 628,
+    "animeId": 351,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "เพลงเปิดอนิเมะ Blue Box ประจำซีซั่น ท่วงทำนองเปียโนและกลองสดใสสะท้อนเหงื่อและความรักของวัยรุ่น",
+    "typoIdea": "ฟอนต์สีน้ำเงินสดสะท้อนแสงไฟคอร์ตแบดมินตัน ตัดจังหวะตามลูกตบสแมช"
+  },
+  {
+    "songId": 629,
+    "animeId": 21,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "เพลงเปิดซีซั่น 2 ของลูกโอชิ ดนตรีดาร์กดุดันเข้ากับฉากการแสดงละครเวทีสุดเดือดของอควา",
+    "typoIdea": "ตัวอักษรกลิตช์สีแดง-ดำ พร้อมดวงตาดาวกระจายประกายวาบในความมืด"
+  },
+  {
+    "songId": 630,
+    "animeId": 21,
+    "category": "chill",
+    "badge": "🌊 อินดี้ชิลล์",
+    "reason": "เพลงปิดที่ผสมผสานความหลอนและความงดงาม สื่อถึงความแค้นและเปลวไฟในใจของตัวละคร",
+    "typoIdea": "เปลวไฟสีม่วงลุกไหม้ตัวหนังสือ ค่อยๆ เผาไหม้จากขอบเข้าไปยังใจกลางคำ"
+  },
+  {
+    "songId": 631,
+    "animeId": 22,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "เพลงเปิดท่อนสองของฟรีเรน กีตาร์โปร่งและจังหวะกลองกระฉับกระเฉงสะท้อนการเดินทางต่อของพวกพ้อง",
+    "typoIdea": "กลีบดอกไม้สีฟ้าลอยพัดพาตัวอักษรให้ปรากฏขึ้นและเลือนหายตามแรงลม"
+  },
+  {
+    "songId": 632,
+    "animeId": 33,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "เพลงปิดสุดมันส์ของไคจูหมายเลข 8 จังหวะตบมือสนุกสะท้อนมิตรภาพหน่วยกองกำลังป้องกัน",
+    "typoIdea": "ตัวหนังสือสไตล์ Comic Book เด้งขึ้นตามจังหวะตบมือและเบสสนุกสนาน"
+  },
+  {
+    "songId": 633,
+    "animeId": 3,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "เพลงเปิดภาคล่าสุดของการรวมตัวเหล่าเสาหลัก เสียงร้องสองพลังร็อคผสานฉากแอคชั่นสะกดสายตา",
+    "typoIdea": "ตัวหนังสือฟอนต์พู่กันญี่ปุ่นสีเพลิง สลับกับประกายดาบฟาดฟันจอภาพ"
+  },
+  {
+    "songId": 634,
+    "animeId": 10,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "เพลงเปิดไอคอนิกที่เปลี่ยนคีย์ดนตรีอย่างน่าทึ่ง สื่อถึงการย้อนเวลาเพื่อช่วยเพื่อน",
+    "typoIdea": "ตัวหนังสือสะท้อนคราบน้ำฝนและไฟนีออนข้างถนนโตเกียวยามค่ำคืน"
+  },
+  {
+    "songId": 635,
+    "animeId": 9,
+    "category": "sad",
+    "badge": "💔 ซึ้งกินใจ",
+    "reason": "เพลงประกอบระดับตำนานที่ดังขึ้นพร้อมกับฉากดาวตกแตกกระจายเหนือท้องฟ้าเมืองอิโตโมริ",
+    "typoIdea": "แสงประกายประกายดาววิ่งผ่านรอยแยกของตัวอักษร ค่อยๆ ระเบิดเป็นละอองแสงสีฟ้า-ชมพู"
+  },
+  {
+    "songId": 636,
+    "animeId": 9,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "ท่อนประสานเสียงที่ดังกึกก้องตอนดิ่งลงมาจากท้องฟ้าฝ่าม่านเมฆ เป็นซีนที่นักตัดต่อทุกคนต้องเคยใช้",
+    "typoIdea": "ตัวหนังสือพุ่งทะลุม่านเมฆขึ้นสู่ท้องฟ้าสีคราม พร้อมแสงแดดส่องกระทบตัวอักษร"
+  },
+  {
+    "songId": 637,
+    "animeId": 9,
+    "category": "chill",
+    "badge": "🌊 อินดี้ชิลล์",
+    "reason": "เสียงฮัมอันเป็นเอกลักษณ์และดนตรีออร์เคสตราอันทรงพลัง เหมาะกับฉากปิดประตูมิติ",
+    "typoIdea": "ตัวหนังสือเป็นรูปบานประตูโบราณ ค่อยๆ ปิดลงพร้อมแสงสีทองเปล่งประกาย"
+  },
+  {
+    "songId": 638,
+    "animeId": 3,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "การประสานพลังระหว่างวงหมาป่าร็อคกับเสียงร้องอันทรงเสน่ห์ของ milet ในศึกช่างตีดาบ",
+    "typoIdea": "ตัวหนังสือฟอนต์พู่กันซามูไร มีประกายไฟจากการตีดาบสาดกระจาย"
+  },
+  {
+    "songId": 639,
+    "animeId": 2,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "เพลงเปิดบทอดีตของโกโจและเกะโท เมโลดี้สดใสปนความเศร้าของฤดูร้อนที่ไม่หวนกลับมา",
+    "typoIdea": "ฟอนต์สีฟ้าครามสดใส สลับภาพท้องฟ้าและรอยยิ้มของสองเพื่อนรักก่อนแยกทาง"
+  },
+  {
+    "songId": 640,
+    "animeId": 2,
+    "category": "sad",
+    "badge": "💔 ซึ้งกินใจ",
+    "reason": "เพลงปิดสุดซึ้งที่สะท้อนการตัดสินใจและรอยแยกในใจของเกะโท สึงุรุ",
+    "typoIdea": "ตัวหนังสือส่องแสงวอมไวท์เหมือนโคมไฟกระดาษ ค่อยๆ ดับมอดลงในสายฝน"
+  },
+  {
+    "songId": 641,
+    "animeId": 2,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "บีทสุดหลอนและดนตรีเดือดคลั่งของชิบูย่า หนึ่งในเพลงที่ถูกนำมาตัดต่อคลิปไทโปมากที่สุดในโลก",
+    "typoIdea": "ตัวหนังสือกลิตช์สีแดง-ดำ สั่นระรัวกระพริบตามจังหวะ 'You are my special' แบบคลั่งขีดสุด"
+  },
+  {
+    "songId": 642,
+    "animeId": 365,
+    "category": "hype",
+    "badge": "🔥 เดือดมันส์",
+    "reason": "เพลงเปิดในตำนานของไฮคิว ท่อนฮุคทรงพลังเหมาะกับฉากตบลูกวอลเลย์บอลและฉากกระโดดสูงสุดฟ้า",
+    "typoIdea": "ตัวหนังสือพุ่งทะยานจากล่างขึ้นบนตามแรงกระโดดตบลูกยาง พร้อมขนนกสีดำลอยกระจาย"
+  },
+  {
+    "songId": 551,
+    "animeId": 9,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 552,
+    "animeId": 22,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 553,
+    "animeId": 10,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 554,
+    "animeId": 8,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 555,
+    "animeId": 18,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 556,
+    "animeId": 13,
+    "category": "chill",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 557,
+    "animeId": 15,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 558,
+    "animeId": 30,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 559,
+    "animeId": 3,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 560,
+    "animeId": 18,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 561,
+    "animeId": 14,
+    "category": "love",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 562,
+    "animeId": 14,
+    "category": "love",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 563,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 564,
+    "animeId": 14,
+    "category": "love",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 565,
+    "animeId": 21,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 566,
+    "animeId": 9,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 567,
+    "animeId": 23,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 568,
+    "animeId": 5,
+    "category": "hype",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 569,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 570,
+    "animeId": 13,
+    "category": "chill",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 571,
+    "animeId": 25,
+    "category": "chill",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 572,
+    "animeId": 12,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 573,
+    "animeId": 14,
+    "category": "love",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 574,
+    "animeId": 3,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 575,
+    "animeId": 20,
+    "category": "love",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 576,
+    "animeId": 8,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 577,
+    "animeId": 10,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 578,
+    "animeId": 18,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 579,
+    "animeId": 9,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 580,
+    "animeId": 14,
+    "category": "love",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 581,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 582,
+    "animeId": 3,
+    "category": "love",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 583,
+    "animeId": 9,
+    "category": "love",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 584,
+    "animeId": 10,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 585,
+    "animeId": 14,
+    "category": "chill",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 586,
+    "animeId": 2,
+    "category": "chill",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 587,
+    "animeId": 10,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 588,
+    "animeId": 2,
+    "category": "hype",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 589,
+    "animeId": 9,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 590,
+    "animeId": 9,
+    "category": "love",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 591,
+    "animeId": 14,
+    "category": "love",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 592,
+    "animeId": 14,
+    "category": "love",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 593,
+    "animeId": 10,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 594,
+    "animeId": 11,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 595,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 596,
+    "animeId": 11,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 597,
+    "animeId": 19,
+    "category": "chill",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 643,
+    "animeId": 5,
+    "category": "hype",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 644,
+    "animeId": 5,
+    "category": "hype",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 645,
+    "animeId": 17,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 646,
+    "animeId": 20,
+    "category": "hype",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 647,
+    "animeId": 21,
+    "category": "love",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 648,
+    "animeId": 22,
+    "category": "hype",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 649,
+    "animeId": 9,
+    "category": "love",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 650,
+    "animeId": 6,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 651,
+    "animeId": 6,
+    "category": "hype",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 652,
+    "animeId": 3,
+    "category": "sad",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 653,
+    "animeId": 202,
+    "category": "love",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 654,
+    "animeId": 202,
+    "category": "love",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 655,
+    "animeId": 231,
+    "category": "hype",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 656,
+    "animeId": 1,
+    "category": "hype",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 657,
+    "animeId": 12,
+    "category": "chill",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 658,
+    "animeId": 3,
+    "category": "chill",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 659,
+    "animeId": 202,
+    "category": "love",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 660,
+    "animeId": 2,
+    "category": "chill",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 661,
+    "animeId": 7,
+    "category": "love",
+    "badge": "🌸 แนะนำตัดต่อคู่กัน"
+  },
+  {
+    "songId": 662,
+    "animeId": 22,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "เมโลดี้ละมุนกับเรื่องราวความทรงจำที่ตราตรึง",
+    "typoIdea": "ใช้ฟอนต์บางโทนอบอุ่น เฟดตัวอักษรช้าๆ พร้อมแสงแดดยามเย็น"
+  },
+  {
+    "songId": 663,
+    "animeId": 375,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว",
+    "reason": "ความรู้สึกที่มองคนตรงหน้าแล้วรู้สึกว่าเขาคือคนพิเศษที่สุด",
+    "typoIdea": "แสงไฟนีออนนุ่มๆ พร้อมตัวหนังสือเด้งกระพริบเบาๆ"
+  },
+  {
+    "songId": 664,
+    "animeId": 29,
+    "category": "hype",
+    "badge": "🔥 ท่อนฮิตสายตัดต่อ",
+    "reason": "จังหวะร็อกพังค์ดุดันกับฉากต่อสู้ของเหล่านักเรียนนักเลง",
+    "typoIdea": "ฟอนต์กราฟิตี้กระแทกตามจังหวะเบสดรัมสีแดงไฟ"
+  },
+  {
+    "songId": 665,
+    "animeId": 22,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "ความรักที่ถูกสลักลึกไว้ในก้นบึ้งของหัวใจตลอดกาล",
+    "typoIdea": "ฟอนต์คลาสสิกเรืองแสงบางเบาบนผิวน้ำ"
+  },
+  {
+    "songId": 666,
+    "animeId": 213,
+    "category": "chill",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว",
+    "reason": "ดนตรีซิตี้ป๊อปฟังสบาย เหมาะกับบรรยากาศในโรงเรียนยามเย็น",
+    "typoIdea": "ตัวอักษรนีออนสีชมพู-ฟ้า สไตล์เรโทร 80s"
+  },
+  {
+    "songId": 667,
+    "animeId": 373,
+    "category": "sad",
+    "badge": "💔 อารมณ์ซึ้งกินใจ",
+    "reason": "การส่งความยินดีผ่านสายลมในคืนที่เหงาที่สุด",
+    "typoIdea": "ฟอนต์โมเดิร์นสีขาวเรียบ เรืองแสงสีฟ้าอ่อนบนท้องฟ้ากลางคืน"
+  },
+  {
+    "songId": 668,
+    "animeId": 32,
+    "category": "hype",
+    "badge": "🔥 ท่อนฮิตสายตัดต่อ",
+    "reason": "Insane vocal speed and drum work from Dandadan theme",
+    "typoIdea": "Neon lightning trails outlining fast-scrolling punchy words"
+  },
+  {
+    "songId": 669,
+    "animeId": 242,
+    "category": "hype",
+    "badge": "🔥 ท่อนฮิตสายตัดต่อ",
+    "reason": "Passionate arena rock celebrating rival friendship and match point drama",
+    "typoIdea": "Sunset orange font streaking like a spike across the net"
+  },
+  {
+    "songId": 670,
+    "animeId": 7,
+    "category": "chill",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว",
+    "reason": "ฟีลลิ่งเดินเล่นริมหาดทรายยามพระอาทิตย์ตกดิน",
+    "typoIdea": "คลื่นน้ำซัดผ่านตัวอักษรแล้วจางหายไป"
+  },
+  {
+    "songId": 671,
+    "animeId": 26,
+    "category": "chill",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว",
+    "reason": "บรรยากาศล่องลอยเหมือนอยู่ในมิติกระจกสะท้อนเงา",
+    "typoIdea": "เอฟเฟกต์กระจกสะท้อน Mirror ซ้อนเงาสามมิติ"
+  },
+  {
+    "songId": 672,
+    "animeId": 7,
+    "category": "chill",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว",
+    "reason": "ดนตรีฟังสบายที่สื่อถึงการค้นพบคำตอบของชีวิตและหัวใจ",
+    "typoIdea": "ตัวอักษรค่อยๆ ชัดขึ้นจากการเบลอละมุนตา"
+  },
+  {
+    "songId": 673,
+    "animeId": 2,
+    "category": "chill",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว",
+    "reason": "ความในใจของคนที่ดูไม่ออกว่าเธอคิดยังไงกันแน่",
+    "typoIdea": "เครื่องหมายคำถาม (?) ปรากฏเด้งรอบๆ ตัวอักษรอย่างน่ารัก"
+  },
+  {
+    "songId": 674,
+    "animeId": 14,
+    "category": "love",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว",
+    "reason": "ความสุขเรียบง่ายเพียงแค่มีใครสักคนนั่งอยู่ข้างๆ",
+    "typoIdea": "ตัวอักษรสองฝั่งเลื่อนเข้ามาประกบคู่กันพอดี"
+  },
+  {
+    "songId": 675,
+    "animeId": 36,
+    "category": "hype",
+    "badge": "🔥 ท่อนฮิตสายตัดต่อ",
+    "reason": "Uta's show-stopping vocal performance from One Piece Film Red",
+    "typoIdea": "Holographic multi-color luminous lettering radiating music waves"
+  },
+  {
+    "songId": 676,
+    "animeId": 385,
+    "category": "love",
+    "badge": "💖 คลั่งรักฟีลกู๊ด",
+    "reason": "เพลงป๊อปหวานอบอุ่นที่จะคอยดูแลทุกอย่าง เข้ากับเคมีเจ้าหญิงนีน่าและความรักที่จริงใจ",
+    "typoIdea": "ฟอนต์แนว Rounded Sans สีพาสเทลชมพู-ทอง สไลด์ข้อความจากข้างล่างขึ้นมาแบบสปริงนุ่มๆ"
+  },
+  {
+    "songId": 677,
+    "animeId": 2,
+    "category": "love",
+    "badge": "💖 น่ารักเกินต้าน",
+    "reason": "ท่อนฮุกน่ารักสดใส เหมาะกับฉากหยอกล้อหรือซีนหวานแบบแอบเขินของคู่รัก",
+    "typoIdea": "ตัวหนังสือสไตล์ Pop Sticker เด้งขยายพร้อมเอฟเฟกต์หัวใจประกายสีชมพู"
+  },
+  {
+    "songId": 678,
+    "animeId": 27,
+    "category": "chill",
+    "badge": "🌊 ชิลล์กวนๆ มีสไตล์",
+    "reason": "บีทน่ารักกวนๆ มีความชิค เหมาะกับฉากความฮาและความน่ารักในครอบครัวฟอร์เจอร์",
+    "typoIdea": "ฟอนต์ตัวหนาลอยไปมา สลับสีตัดกัน ดรอปเงาแบบ Pop Comic"
+  },
+  {
+    "songId": 679,
+    "animeId": 376,
+    "category": "love",
+    "badge": "❤️ ซัพพอร์ตเคียงข้าง",
+    "reason": "เนื้อหาที่พร้อมอยู่ข้างเธอเสมอเมื่อเธอเจ็บ เข้ากับความผูกพันของเบลและท่านเฮสเทีย",
+    "typoIdea": "ข้อความคล้ายแชทข้อความมือถือ พร้อมคลื่นเสียงวิ่งตามเสียงร้อง"
+  },
+  {
+    "songId": 680,
+    "animeId": 387,
+    "category": "love",
+    "badge": "💖 บรรยากาศอบอุ่นกลางเมือง",
+    "reason": "ซาวด์ซินธ์ป๊อปละมุนและบรรยากาศโรแมนติกในยามค่ำคืน เข้ากับฉากวิวเมืองและการเดินเคียงข้าง",
+    "typoIdea": "ตัวอักษรนีออนเรืองแสงสีม่วง-ส้ม เบลอฉากหลังสร้างโบเก้แสงไฟเมือง"
+  },
+  {
+    "songId": 681,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "💔 ยินดีทั้งน้ำตา",
+    "reason": "ความรู้สึกยินดีที่เห็นเธอมีความสุขแม้ไม่มีเรา สอดคล้องกับฉากการจากลาในฤดูใบไม้ผลิ",
+    "typoIdea": "ฟอนต์ขอบบางเรียบหรู ค่อยๆ แตกสลายตามคีย์เปียโนท่อนสุดท้าย"
+  },
+  {
+    "songId": 682,
+    "animeId": 383,
+    "category": "hype",
+    "badge": "🏎️ ซินธ์เวฟซิ่งทะลุเปลวไฟ",
+    "reason": "จังหวะซินธ์เวฟขับรถยามค่ำคืนที่เร้าใจ เข้ากับการประลองความเร็วบนสนามเขาของ MF Ghost",
+    "typoIdea": "สปีดไลน์พุ่งผ่านตัวหนังสือ เรืองแสงสีส้มเปลวเพลิง ทรานสิชันแบบ Speed Cut"
+  },
+  {
+    "songId": 683,
+    "animeId": 384,
+    "category": "hype",
+    "badge": "🔥 ร็อกสดใสสับแหลก",
+    "reason": "โซโลกีตาร์สุดมันส์และเมโลดี้เร็วทะยาน เหมาะกับฉากฝึกดาบและการต่อสู้ของซามูไรวัยหนุ่ม",
+    "typoIdea": "ตัวหนังสือสไตล์ Manga Action ลายเส้นสะบัดพู่กัน สลับสีม่วงไลแลคและขาว"
+  },
+  {
+    "songId": 684,
+    "animeId": 187,
+    "category": "chill",
+    "badge": "🌊 ท่วงทำนองย้อนเวลาละมุนใจ",
+    "reason": "เมโลดี้ฟีลกู๊ดและกรูฟนุ่มนวลสะท้อนความผูกพันและช่วงเวลาที่สวยงามในอดีต",
+    "typoIdea": "ฟอนต์มินิมอลญี่ปุ่นลอยละล่อง ซ้อนเงาบางๆ และมีแอนิเมชันพลิกหน้าสมุดวาดภาพ"
+  },
+  {
+    "songId": 685,
+    "animeId": 379,
+    "category": "hype",
+    "badge": "⚡ จังหวะกระโดดสับกระสุนไว",
+    "reason": "จังหวะสนุกเร้าใจและลูกเล่นดนตรีที่คาดเดายาก เข้ากับฉากยิงปืนและความเร็วของเร็นใน GGO",
+    "typoIdea": "ตัวอักษรแนวเรขาคณิต กระโดดสลับขนาดตามเสียงบีทกระแทก"
+  },
+  {
+    "songId": 686,
+    "animeId": 382,
+    "category": "sad",
+    "badge": "💔 โศกนาฏกรรมแห่งบาบิโลเนีย",
+    "reason": "บทเพลงแห่งการรำลึกและยืนหยัด เข้ากับฉากการเสียสละครั้งยิ่งใหญ่ในบาบิโลเนีย",
+    "typoIdea": "ฟอนต์ Serif สีทองโบราณ จางหายกลายเป็นละอองทองคำระยิบระยับ"
+  },
+  {
+    "songId": 687,
+    "animeId": 378,
+    "category": "hype",
+    "badge": "💃 เพลงไวรัลเต้นสับขงเบ้ง",
+    "reason": "เพลงเปิดสุดไวรัลที่ใครฟังก็ต้องโยกตาม เข้ากับซีนขงเบ้งและเอโกะอย่างที่สุด",
+    "typoIdea": "ลูกศรและป้ายไฟดิสโก้ ตัวหนังสือเด้งสเต็ปแดนซ์ แสงนีออนสลับสีเหลือง-ม่วง"
+  },
+  {
+    "songId": 688,
+    "animeId": 377,
+    "category": "hype",
+    "badge": "⚡ เพลงเปิดระดับมาสเตอร์พีซ",
+    "reason": "เพลงเปิดระดับตำนานที่ผสมความไพเราะของเสียงร้องกับฉากแอคชั่นไซไฟระดับภาพยนตร์",
+    "typoIdea": "เส้นคลื่นเสียงดิจิทัลสีฟ้าไซอัน วิ่งเชื่อมโยงตัวหนังสือไทโปแบบล้ำยุค"
+  },
+  {
+    "songId": 689,
+    "animeId": 21,
+    "category": "hype",
+    "badge": "🎭 เพลงเปิดเกิดใหม่เป็นลูกโอชิ ภาค 2",
+    "reason": "เพลงเปิดดาร์กป๊อปที่มีเสน่ห์เย้ายวนและร้อนแรง สะท้อนละครเวทีโตเกียวเบลดและการแก้แค้น",
+    "typoIdea": "ตัวอักษรเงาสะท้อนสไตล์กระจกเงา เลือดและประกายตาดวงดาวกะพริบวิบวับ"
+  },
+  {
+    "songId": 690,
+    "animeId": 48,
+    "category": "hype",
+    "badge": "⚔️ เพลงร็อกไวกิ้งเดือดทะลุปรอท",
+    "reason": "เพลงเปิด Vinland Saga ที่แฟนสายตัดต่อยกย่อง ความเดือดของเสียงสครีมและท่อนโซโล่สะเทือนวิญญาณ",
+    "typoIdea": "รอยบากดาบฟันเฉือนตัวหนังสือแตกกระจาย ทรานสิชันคัตติ้งเร็วตามสปีดเสียงกลอง"
+  },
+  {
+    "songId": 691,
+    "animeId": 85,
+    "category": "hype",
+    "badge": "🔥 แดนซ์ไฟลุก ท่าเป๊ะ",
+    "reason": "บีทแดนซ์ไฟลุกสไตล์ทีป๊อปที่เร้าร้อน เข้ากับฉากยิงปืนและความเก่งกาจของสองสาว Lycoris",
+    "typoIdea": "ตัวอักษรสีแดงนีออนตัดเปลวไฟ สั่นกระตุกตามเสียงสแนร์และจังหวะเคาะสับ"
+  },
+  {
+    "songId": 692,
+    "animeId": 2,
+    "category": "love",
+    "badge": "💖 แอบหยอด ชวนมาคู่กัน",
+    "reason": "เนื้อเพลงชวนมาร่วมรักร่วมฟีทเจอริ่ง เข้ากับเกมชิงรักหักเหลี่ยมแบบน่ารักของประธานและคางุยะ",
+    "typoIdea": "กล่องคำพูดการ์ตูนป๊อปอาร์ต เด้งสลับสีชมพู-เหลือง มีไอคอนหัวใจลอยขึ้นมา"
+  },
+  {
+    "songId": 693,
+    "animeId": 53,
+    "category": "hype",
+    "badge": "🍩 ไวรัลโดนัทยังมีรู สายแดนซ์กวนๆ",
+    "reason": "ท่อนโดนัทยังมีรูสุดไวรัลที่ทุกคนจำได้ เข้ากับความกวนและความแข็งแกร่งของมัชชูครีม",
+    "typoIdea": "ตัวอักษร 3D ป๊อปหนา สีส้มคัสตาร์ด หมุนวนสลับท่วงท่าเต้น"
+  },
+  {
+    "songId": 694,
+    "animeId": 5,
+    "category": "hype",
+    "badge": "🔥 บีทติดหู แดนซ์สับ มั่นใจเต็มร้อย",
+    "reason": "บีทเบสแน่นกับท่อนฮุกที่มั่นใจ เข้ากับฉากโชว์สกิลไสยเวทแบบเหนือชั้น",
+    "typoIdea": "ตัวอักษร Chrome โลหะเงาวาว สะท้อนประกายแสงนีออนสีม่วง"
+  },
+  {
+    "songId": 695,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "💔 ข้อความที่ไม่ได้ส่ง ความรู้สึกที่ซ่อนไว้",
+    "reason": "บทเพลงแห่งความกลัวที่จะสูญเสียความเป็นเพื่อน เข้ากับความรู้สึกแอบรักที่ซ่อนไว้ในเพลงรักสองหัวใจ",
+    "typoIdea": "ข้อความแชทค่อยๆ ถูกพิมพ์และลบออก ตัวหนังสือจางหายตามหยดน้ำตา"
+  },
+  {
+    "songId": 696,
+    "animeId": 21,
+    "category": "love",
+    "badge": "🧲 แรงดึงดูดของไอดอล สดใสติดหู",
+    "reason": "จังหวะพลักแอนด์บีทสุดน่ารักและไวรัลทั่วโลก สะท้อนเสน่ห์ของไอดอลที่ดึงดูดใจแฟนคลับทันที",
+    "typoIdea": "แม่เหล็กและประกายไฟรูปหัวใจ ตัวหนังสือกระโดดดูดเข้าหากันตามบีทเพลง"
+  },
+  {
+    "songId": 697,
+    "animeId": 31,
+    "category": "hype",
+    "badge": "💥 ซูเปอร์โนวาระเบิดพลังจักรวาล",
+    "reason": "ซาวด์อิเล็กทรอนิกส์ไฮเปอร์ป๊อประดับทำลายล้าง เข้ากับฉากจินอูปราบมอนสเตอร์และอัปเกรดพลัง",
+    "typoIdea": "คลื่นกระแทก Shockwave ขยายออกจากตัวอักษร แสงสีฟ้านีออนสว่างวาบทั้งจอ"
+  },
+  {
+    "songId": 698,
+    "animeId": 141,
+    "category": "love",
+    "badge": "🏐 ปาฏิหาริย์แห่งมิตรภาพและความรัก",
+    "reason": "บทเพลงปาฏิหาริย์แห่งความผูกพันและรอยยิ้ม เข้ากับความพยายามในสนามวอลเลย์บอลของคาราสึโนะ",
+    "typoIdea": "ฟอนต์พู่กันญี่ปุ่นสีเขียวมิ้นต์ สาดละอองหมึกตามเสียงลูกตบลงพื้นคอร์ต"
+  }
+];

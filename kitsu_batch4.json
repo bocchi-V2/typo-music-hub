@@ -1,0 +1,242 @@
+[
+  {
+    "name": "Fate/Zero",
+    "nameTH": "เฟท/ซีโร่",
+    "genre": [
+      "ดาร์กแฟนตาซี",
+      "แอคชั่น",
+      "สงครามจอกศักดิ์สิทธิ์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/6028/poster_image/large-e9b1ea8a2aee8fd902446d0c273f9eb4.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/6028/poster_image/medium-edd1c8af6e5c64750fcbc9f58389ed0c.jpeg",
+    "anifumeUrl": "https://anifume.com/anime/fate-zero"
+  },
+  {
+    "name": "Code Geass: Lelouch of the Rebellion",
+    "nameTH": "โค้ด กีอัส การปฏิวัติของลูลูช",
+    "genre": [
+      "หุ่นยนต์",
+      "สืบสวน",
+      "การเมือง"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1415/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/1415/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/code-geass-lelouch-of-the-rebellion"
+  },
+  {
+    "name": "Cowboy Bebop",
+    "nameTH": "คาวบอย บีบ๊อป",
+    "genre": [
+      "ไซไฟ",
+      "แจ๊ส",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/1/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/cowboy-bebop"
+  },
+  {
+    "name": "Monster",
+    "nameTH": "คนปีศาจ มอนสเตอร์",
+    "genre": [
+      "จิตวิทยา",
+      "สืบสวน",
+      "ระทึกขวัญ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/10/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/10/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/monster"
+  },
+  {
+    "name": "Hellsing Ultimate",
+    "nameTH": "เฮลซิ่ง อัลติเมท",
+    "genre": [
+      "แวมไพร์",
+      "แอคชั่น",
+      "โกธิค"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/695/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/695/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/hellsing-ultimate"
+  },
+  {
+    "name": "Psycho-Pass",
+    "nameTH": "ไซโค-พาส ถอดรหัสล่า",
+    "genre": [
+      "ไซไฟ",
+      "สืบสวน",
+      "ดิสโทเปีย"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7000/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7000/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/psycho-pass"
+  },
+  {
+    "name": "Kill la Kill",
+    "nameTH": "คิล ลา คิล",
+    "genre": [
+      "แอคชั่น",
+      "คอมเมดี้",
+      "หลุดโลก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7712/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7712/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/kill-la-kill"
+  },
+  {
+    "name": "Tengen Toppa Gurren Lagann",
+    "nameTH": "กุเรนลากันน์ อภิมหาทะลวงสวรรค์",
+    "genre": [
+      "หุ่นยนต์",
+      "ไฮป์",
+      "สู้ชีวิต"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1801/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/1801/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/tengen-toppa-gurren-lagann"
+  },
+  {
+    "name": "Fate/Apocrypha",
+    "nameTH": "เฟท/อโพคริฟา",
+    "genre": [
+      "แฟนตาซี",
+      "สงคราม",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13066/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/13066/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/fate-apocrypha"
+  },
+  {
+    "name": "Tokyo Ravens",
+    "nameTH": "โตเกียว เรเวนส์",
+    "genre": [
+      "องเมียวจิ",
+      "แอคชั่น",
+      "เวทมนตร์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7359/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7359/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/tokyo-ravens"
+  },
+  {
+    "name": "The Misfit of Demon King Academy",
+    "nameTH": "ใครว่าข้าไม่เหมาะเป็นจอมมาร",
+    "genre": [
+      "ต่างโลก",
+      "จอมมาร",
+      "พลังเทพ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/43005/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/43005/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/the-misfit-of-demon-king-academy"
+  },
+  {
+    "name": "Overlord",
+    "nameTH": "โอเวอร์ลอร์ด จอมมารพิชิตโลก",
+    "genre": [
+      "ต่างโลก",
+      "ดาร์กแฟนตาซี",
+      "วางแผน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/9965/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/9965/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/overlord"
+  },
+  {
+    "name": "The Rising of the Shield Hero",
+    "nameTH": "ผู้กล้าโล่ผงาด",
+    "genre": [
+      "ต่างโลก",
+      "แฟนตาซี",
+      "แก้แค้น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13593/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/13593/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/the-rising-of-the-shield-hero"
+  },
+  {
+    "name": "Darwin's Game",
+    "nameTH": "ดาร์วินส์เกม เกมนรก",
+    "genre": [
+      "เซอร์ไววัล",
+      "แอคชั่น",
+      "พลังจิต"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42260/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/42260/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/darwin-s-game"
+  },
+  {
+    "name": "Tomodachi Game",
+    "nameTH": "เกมมิตรภาพ",
+    "genre": [
+      "จิตวิทยา",
+      "หักมุม",
+      "มิตรภาพ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/45401/poster_image/large-0850c0cfa153c42d890ac90b014b78b6.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/45401/poster_image/medium-1024a5e6edb5ef307297eadcfc464a0d.jpeg",
+    "anifumeUrl": "https://anifume.com/anime/tomodachi-game"
+  },
+  {
+    "name": "Dororo (2019)",
+    "nameTH": "ดาบล่าพญามาร โดโรโระ 2019",
+    "genre": [
+      "ซามูไร",
+      "ดาร์ก",
+      "ปีศาจ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41083/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/41083/medium.jpg",
+    "anifumeUrl": "https://anifume.com/anime/dororo-2019-"
+  },
+  {
+    "name": "Wistoria: Wand and Sword",
+    "nameTH": "วิสตอเรีย ดาบและเวทมนตร์",
+    "genre": [
+      "เวทมนตร์",
+      "ดาบ",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48534/poster_image/large-703abd524d4c595bc05eaf5f3c3e1454.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/48534/poster_image/medium-c38c15266ae228974e8c2a00d776ea92.jpeg",
+    "anifumeUrl": "https://anifume.com/anime/wistoria-wand-and-sword"
+  },
+  {
+    "name": "Solo Leveling: Season 2",
+    "nameTH": "โซโลเลเวลลิง ซีซั่น 2",
+    "genre": [
+      "ฮันเตอร์",
+      "ดันเจี้ยน",
+      "เงา"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48671/poster_image/large-6156a7475d03dbb788ab1a9ce6c7f962.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/48671/poster_image/medium-31e96bc0e48dfb71f0bb6bc5cf84164f.jpeg",
+    "anifumeUrl": "https://anifume.com/anime/solo-leveling-season-2"
+  },
+  {
+    "name": "Kaiju No. 8 Season 2",
+    "nameTH": "ไคจูหมายเลข 8 ซีซั่น 2",
+    "genre": [
+      "สัตว์ประหลาด",
+      "หน่วยป้องกัน",
+      "แอคชั่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48994/poster_image/large-d66ad0518e3dcd862ffc4b734a85c432.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/48994/poster_image/medium-f9a6d85e03c0d0c0ce99f9fc04962b6c.jpeg",
+    "anifumeUrl": "https://anifume.com/anime/kaiju-no-8-season-2"
+  },
+  {
+    "name": "Sousou no Frieren Season 2",
+    "nameTH": "คำอธิษฐานในวันที่จากลา ฟรีเรน 2",
+    "genre": [
+      "การเดินทาง",
+      "เวทมนตร์",
+      "อบอุ่น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/49240/poster_image/large-5f1824cd76b6e829012dc75a2f51ec44.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/49240/poster_image/medium-cf744f274c2064efd1abfef4ecdfbd6d.jpeg",
+    "anifumeUrl": "https://anifume.com/anime/sousou-no-frieren-season-2"
+  }
+]

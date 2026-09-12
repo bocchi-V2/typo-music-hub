@@ -1,0 +1,25 @@
+{
+  "name": "typo-music-hub",
+  "version": "2.0.0",
+  "description": "ไทโปมิวสิค – คลังเพลงสำหรับคนตัดต่อคลิปไทโป พร้อมระบบสุ่มแยกโซน ปรับเสียง และจับคู่อนิเมะ",
+  "main": "serve.js",
+  "scripts": {
+    "start": "node serve.js",
+    "dev": "node serve.js",
+    "audit": "node manage_content.js audit",
+    "add:song": "node manage_content.js add-song",
+    "add:anime": "node manage_content.js add-anime",
+    "batch": "node batch_add_hits.js",
+    "deploy": "node manage_content.js deploy",
+    "check": "node -c app.js && node -c data.js && node manage_content.js audit"
+  },
+  "keywords": [
+    "typography",
+    "music",
+    "anime",
+    "editing",
+    "thai-music"
+  ],
+  "author": "",
+  "license": "MIT"
+}
