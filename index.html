@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ไทโปมิวสิค – คลังเพลงสำหรับคนตัดต่อคลิปไทโป</title>
-  <meta name="description" content="รวมเพลงไทย เพลงสากล และเพลงอนิเมะสำหรับตัดต่อคลิปไทโปกราฟี พร้อมระบบสุ่มแยกโซน ปรับระดับเสียง และจับคู่อนิเมะแนะนำ" />
+  <title id="page-title" data-i18n="siteTitle">ไทโปมิวสิค – คลังเพลงสำหรับคนตัดต่อคลิปไทโป</title>
+  <meta name="description" id="page-desc" content="รวมเพลงไทย เพลงสากล และเพลงอนิเมะสำหรับตัดต่อคลิปไทโปกราฟี พร้อมระบบสุ่มแยกโซน ปรับระดับเสียง และจับคู่อนิเมะแนะนำ" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -19,9 +19,9 @@
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
       <a href="#" class="nav-logo">
-        <img src="favicon-logo.jpg" alt="ไทโปมิวสิค" class="nav-logo-img" />
+        <img src="favicon-logo.jpg" alt="TypoMusic" class="nav-logo-img" />
         <span class="logo-badge">EDIT STUDIO</span>
-        <span class="logo-title">ไทโปมิวสิค</span>
+        <span class="logo-title" data-i18n="logoTitle">ไทโปมิวสิค</span>
       </a>
       <div class="nav-links">
         <a href="#" class="nav-link active-nav" onclick="switchStudioWorkspace('th', true); return false;" data-i18n="zoneTh">🇹🇭 เพลงไทย</a>
@@ -47,13 +47,13 @@
     <div class="hero-content">
       <div class="hero-badge">🎬 TYPOGRAPHY & VIDEO EDITING HUB</div>
       <h1 class="hero-title">
-        รวมเพลงตัดต่อคลิป<br/>
-        <span class="gradient-text">ไทย • สากล • อนิเมะ</span>
+        <span data-i18n="heroTitle1">รวมเพลงตัดต่อคลิป</span><br/>
+        <span class="gradient-text" data-i18n="heroTitle2">ไทย • สากล • อนิเมะ</span>
       </h1>
-      <p class="hero-desc">ค้นหาเพลงสำหรับทำคลิปไทโป พร้อมระบบสุ่มแยกโซน ปรับความดังเสียง และจับคู่ซีนอนิเมะที่เข้ากันที่สุด</p>
+      <p class="hero-desc" data-i18n="heroDesc">ค้นหาเพลงสำหรับทำคลิปไทโป พร้อมระบบสุ่มแยกโซน ปรับความดังเสียง และจับคู่ซีนอนิเมะที่เข้ากันที่สุด</p>
       <div class="hero-btns">
         <a href="#random" class="btn btn-primary" id="hero-random-btn" data-i18n="heroBtnRandom">🎲 ไปที่โซนสุ่มเพลง</a>
-        <a href="#songs" class="btn btn-ghost">🎵 สำรวจคลังเพลง (<span id="hero-song-count">698</span> เพลง)</a>
+        <a href="#songs" class="btn btn-ghost" id="hero-btn-songs">🎵 <span data-i18n="heroBtnSongs">สำรวจคลังเพลง</span> (<span id="hero-song-count">698</span> <span data-i18n="heroBtnSongsSuffix">เพลง</span>)</a>
       </div>
     </div>
     <div class="hero-visual">
@@ -94,7 +94,7 @@
   <div class="weekly-sync-banner">
     <div class="weekly-sync-left">
       <span class="weekly-pulse-dot"></span>
-      <span><strong>ระบบอัปเดตเพลง & อนิเมะอัตโนมัติ:</strong> เพิ่มเพลงใหม่ทุกๆ 7 วัน (Weekly Auto-Drop Sync)</span>
+      <span id="weekly-sync-title" data-i18n="weeklySyncLabel"><strong>ระบบอัปเดตเพลง & อนิเมะอัตโนมัติ:</strong> เพิ่มเพลงใหม่ทุกๆ 7 วัน (Weekly Auto-Drop Sync)</span>
     </div>
     <div class="weekly-sync-right" id="weekly-sync-status">
       ✨ อัปเดตรอบล่าสุด: 698 เพลง • 387 อนิเมะ (รอบถัดไปอีก 7 วัน)
@@ -136,7 +136,7 @@
         <span class="sz-icon">⚔️</span>
         <span class="sz-text">
           <strong class="sz-title" data-i18n="navVersus">ห้องโหวตเพลง</strong>
-          <small class="sz-sub">เปรียบเทียบมู้ด</small>
+          <small class="sz-sub" id="sz-sub-vs" data-i18n="wsVersusSub">เปรียบเทียบมู้ด</small>
         </span>
       </button>
       <button class="studio-zone-tab tab-saved" data-ws="saved" onclick="switchStudioWorkspace('saved')">
@@ -155,41 +155,41 @@
     <section class="section" id="random">
     <div class="section-header">
       <div class="section-kicker">RANDOM GENERATOR</div>
-      <h2 class="section-title">🎲 ระบบสุ่มเพลงแยกโซน & ปรับตัวเลือก</h2>
-      <p class="section-desc">เลือกโซนภาษาและสไตล์ที่ต้องการ สุ่มแบบไม่ซ้ำรอบ พร้อมชื่อและรูปอนิเมะแนะนำใต้เพลง</p>
+      <h2 class="section-title" data-i18n="randSectionTitle">🎲 ระบบสุ่มเพลงแยกโซน & ปรับตัวเลือก</h2>
+      <p class="section-desc" data-i18n="randSectionDesc">เลือกโซนภาษาและสไตล์ที่ต้องการ สุ่มแบบไม่ซ้ำรอบ พร้อมชื่อและรูปอนิเมะแนะนำใต้เพลง</p>
     </div>
 
     <div class="random-container">
       <!-- Zone Tabs -->
       <div class="zone-selector-wrap">
-        <div class="zone-selector-label">เลือกโซนเพลงที่ต้องการสุ่ม:</div>
+        <div class="zone-selector-label" data-i18n="randZoneSelectLabel">เลือกโซนเพลงที่ต้องการสุ่ม:</div>
         <div class="zone-tabs" id="zone-tabs">
           <button class="zone-tab-btn active" data-zone="th" onclick="selectZone('th', this)">
             <span class="zone-flag">🇹🇭</span>
             <div class="zone-tab-info">
-              <span class="zone-tab-title">โซนเพลงไทย</span>
+              <span class="zone-tab-title" data-i18n="randZoneTh">โซนเพลงไทย</span>
               <span class="zone-tab-count" id="zone-count-th">46 เพลง</span>
             </div>
           </button>
           <button class="zone-tab-btn" data-zone="en" onclick="selectZone('en', this)">
             <span class="zone-flag">🇬🇧</span>
             <div class="zone-tab-info">
-              <span class="zone-tab-title">โซนเพลงสากล (English)</span>
+              <span class="zone-tab-title" data-i18n="randZoneEn">โซนเพลงสากล (English)</span>
               <span class="zone-tab-count" id="zone-count-en">27 เพลง</span>
             </div>
           </button>
           <button class="zone-tab-btn" data-zone="jp" onclick="selectZone('jp', this)">
             <span class="zone-flag">🇯🇵</span>
             <div class="zone-tab-info">
-              <span class="zone-tab-title">โซนเพลงญี่ปุ่น / อนิเมะ</span>
+              <span class="zone-tab-title" data-i18n="randZoneJp">โซนเพลงญี่ปุ่น / อนิเมะ</span>
               <span class="zone-tab-count" id="zone-count-jp">7 เพลง</span>
             </div>
           </button>
           <button class="zone-tab-btn" data-zone="all" onclick="selectZone('all', this)">
             <span class="zone-flag">🌐</span>
             <div class="zone-tab-info">
-              <span class="zone-tab-title">สุ่มรวมทุกโซน</span>
-              <span class="zone-tab-count">80 เพลง</span>
+              <span class="zone-tab-title" data-i18n="randZoneAll">สุ่มรวมทุกโซน</span>
+              <span class="zone-tab-count" id="zone-count-all">698 เพลง</span>
             </div>
           </button>
         </div>
@@ -199,23 +199,23 @@
       <div class="zone-options-panel glass-card">
         <div class="options-row">
           <div class="options-group">
-            <label class="options-label">🎭 เลือกอารมณ์ / มู้ดเพลง:</label>
+            <label class="options-label" data-i18n="randMoodLabel">🎭 เลือกอารมณ์ / มู้ดเพลง:</label>
             <div class="option-pills" id="random-mood-pills">
-              <button class="pill-btn active" data-mood="all" onclick="setRandomMood('all', this)">ทั้งหมด</button>
-              <button class="pill-btn" data-mood="sad" onclick="setRandomMood('sad', this)">💔 เศร้า / ซึ้ง</button>
-              <button class="pill-btn" data-mood="love" onclick="setRandomMood('love', this)">❤️ คลั่งรัก / อบอุ่น</button>
-              <button class="pill-btn" data-mood="hype" onclick="setRandomMood('hype', this)">🔥 มันส์ / บีทเดือด</button>
-              <button class="pill-btn" data-mood="chill" onclick="setRandomMood('chill', this)">🌊 อินดี้ชิลล์</button>
+              <button class="pill-btn active" data-mood="all" onclick="setRandomMood('all', this)" data-i18n="randMoodAll">ทั้งหมด</button>
+              <button class="pill-btn" data-mood="sad" onclick="setRandomMood('sad', this)" data-i18n="randMoodSad">💔 เศร้า / ซึ้ง</button>
+              <button class="pill-btn" data-mood="love" onclick="setRandomMood('love', this)" data-i18n="randMoodLove">❤️ คลั่งรัก / อบอุ่น</button>
+              <button class="pill-btn" data-mood="hype" onclick="setRandomMood('hype', this)" data-i18n="randMoodHype">🔥 มันส์ / บีทเดือด</button>
+              <button class="pill-btn" data-mood="chill" onclick="setRandomMood('chill', this)" data-i18n="randMoodChill">🌊 อินดี้ชิลล์</button>
             </div>
           </div>
 
           <div class="options-group">
-            <label class="options-label">⚡ ระดับจังหวะ (BPM):</label>
+            <label class="options-label" data-i18n="randBpmLabel">⚡ ระดับจังหวะ (BPM):</label>
             <div class="option-pills" id="random-bpm-pills">
-              <button class="pill-btn active" data-bpm="all" onclick="setRandomBpm('all', this)">ทุกความเร็ว</button>
-              <button class="pill-btn" data-bpm="slow" onclick="setRandomBpm('slow', this)">🐢 ช้า (Slow)</button>
-              <button class="pill-btn" data-bpm="mid" onclick="setRandomBpm('mid', this)">🚶 ปานกลาง (Mid)</button>
-              <button class="pill-btn" data-bpm="fast" onclick="setRandomBpm('fast', this)">⚡ เร็ว (Fast)</button>
+              <button class="pill-btn active" data-bpm="all" onclick="setRandomBpm('all', this)" data-i18n="randBpmAll">ทุกความเร็ว</button>
+              <button class="pill-btn" data-bpm="slow" onclick="setRandomBpm('slow', this)" data-i18n="randBpmSlow">🐢 ช้า (Slow)</button>
+              <button class="pill-btn" data-bpm="mid" onclick="setRandomBpm('mid', this)" data-i18n="randBpmMid">🚶 ปานกลาง (Mid)</button>
+              <button class="pill-btn" data-bpm="fast" onclick="setRandomBpm('fast', this)" data-i18n="randBpmFast">⚡ เร็ว (Fast)</button>
             </div>
           </div>
         </div>
@@ -230,9 +230,7 @@
             <button class="btn-sfx-toggle active" id="sfx-toggle-btn" onclick="toggleDiceSfx()" title="เปิด/ปิดเสียงสุ่มลูกเต๋า (u_qpfzpy)">
               <span class="sfx-icon">🎲 🔊</span> <span class="sfx-text">เสียงลูกเต๋า: เปิด</span>
             </button>
-            <button class="btn-reset-shuffle" onclick="resetShuffleDeck()" title="ล้างประวัติการสุ่มและเริ่มสุ่มใหม่จากกองทั้งหมด">
-              🔄 เริ่มสุ่มรอบใหม่
-            </button>
+            <button class="btn-reset-shuffle" id="btn-reset-shuffle" onclick="resetShuffleDeck()" title="ล้างประวัติการสุ่มและเริ่มสุ่มใหม่จากกองทั้งหมด" data-i18n="resetDeckBtn">🔄 เริ่มสุ่มรอบใหม่</button>
           </div>
         </div>
       </div>
@@ -242,19 +240,19 @@
         <!-- Simple 2D Rolling Overlay -->
         <div class="random-rolling-overlay hidden" id="random-rolling-overlay">
           <div class="simple-spin-box">
-            <img src="favicon-logo.jpg" alt="กำลังสุ่ม" class="simple-spin-img" />
+            <img src="favicon-logo.jpg" alt="Rolling" class="simple-spin-img" />
             <span class="simple-spin-badge">🎲</span>
           </div>
           <div class="rolling-text-box">
-            <div class="rolling-title">🎲 กำลังสุ่มเพลง...</div>
-            <div class="rolling-subtitle">รอสักครู่ กำลังจับคู่เพลงกับอนิเมะให้คุณ ✨</div>
+            <div class="rolling-title" data-i18n="rollingTitle">🎲 กำลังสุ่มเพลง...</div>
+            <div class="rolling-subtitle" data-i18n="rollingSubtitle">รอสักครู่ กำลังจับคู่เพลงกับอนิเมะให้คุณ ✨</div>
           </div>
         </div>
 
         <div class="random-placeholder" id="random-placeholder">
           <div class="big-dice">🎲</div>
-          <p style="font-size:1.15rem;font-weight:600;color:#fff;margin-bottom:0.4rem;">เลือกโซนและอารมณ์เพลง แล้วกดปุ่มสุ่มด้านล่างได้เลย!</p>
-          <p style="font-size:0.9rem;color:var(--text-muted);">ระบบจะจับคู่เพลงกับอนิเมะให้ทันที พร้อมเสียงเอฟเฟกต์ทอยลูกเต๋า</p>
+          <p style="font-size:1.15rem;font-weight:600;color:#fff;margin-bottom:0.4rem;" data-i18n="randPromptTitle">เลือกโซนและอารมณ์เพลง แล้วกดปุ่มสุ่มด้านล่างได้เลย!</p>
+          <p style="font-size:0.9rem;color:var(--text-muted);" data-i18n="randPromptDesc">ระบบจะจับคู่เพลงกับอนิเมะให้ทันที พร้อมเสียงเอฟเฟกต์ทอยลูกเต๋า</p>
         </div>
         <div class="random-result hidden" id="random-result">
           <div id="random-showcase"></div>
@@ -262,9 +260,7 @@
       </div>
 
       <!-- Action Button -->
-      <button class="btn btn-primary btn-xl studio-action-btn" id="random-btn" onclick="randomSong()">
-        🎲 สุ่มเพลงในโซนนี้! (ไม่ซ้ำ)
-      </button>
+      <button class="btn btn-primary btn-xl studio-action-btn" id="random-btn" onclick="randomSong()" data-i18n="rollBtnAction">🎲 สุ่มเพลงในโซนนี้! (ไม่ซ้ำ)</button>
     </div>
   </section>
 
@@ -318,18 +314,18 @@
 
       <!-- Mood Tags -->
       <div class="filter-tags" id="filter-tags">
-        <button class="tag-btn active" data-mood="all" onclick="filterByMood('all', this)">ทุกอารมณ์</button>
-        <button class="tag-btn" data-mood="sad" onclick="filterByMood('sad', this)">💔 เศร้า</button>
-        <button class="tag-btn" data-mood="love" onclick="filterByMood('love', this)">❤️ รัก</button>
-        <button class="tag-btn" data-mood="hype" onclick="filterByMood('hype', this)">🔥 เร้าใจ</button>
-        <button class="tag-btn" data-mood="chill" onclick="filterByMood('chill', this)">🌊 ชิลล์</button>
+        <button class="tag-btn active" data-mood="all" onclick="filterByMood('all', this)" data-i18n="allMoods">ทุกอารมณ์</button>
+        <button class="tag-btn" data-mood="sad" onclick="filterByMood('sad', this)" data-i18n="moodSad">💔 เศร้า</button>
+        <button class="tag-btn" data-mood="love" onclick="filterByMood('love', this)" data-i18n="moodLove">❤️ รัก</button>
+        <button class="tag-btn" data-mood="hype" onclick="filterByMood('hype', this)" data-i18n="moodHype">🔥 เร้าใจ</button>
+        <button class="tag-btn" data-mood="chill" onclick="filterByMood('chill', this)" data-i18n="moodChill">🌊 ชิลล์</button>
       </div>
     </div>
 
     <div class="songs-grid" id="songs-grid"></div>
     <div class="load-more-wrap" id="load-more-wrap" style="text-align:center;margin-top:2rem;">
       <button class="btn btn-ghost load-more-btn" id="btn-load-more" onclick="loadMoreSongs()">
-        ⬇ แสดงเพลงเพิ่มเติม (<span id="load-more-count">+16 เพลง</span>)
+        <span data-i18n="loadMoreBtn">⬇ แสดงเพลงเพิ่มเติม</span> (<span id="load-more-count">+16 เพลง</span>)
       </button>
     </div>
   </section>
@@ -340,25 +336,19 @@
     <section class="section" id="saved-songs">
       <div class="section-header">
         <div class="section-kicker" data-i18n="savedSectionKicker">BOOKMARKED COLLECTION</div>
-        <h2 class="section-title">❤️ คลังเพลงที่บันทึกไว้สำหรับตัดต่อ</h2>
+        <h2 class="section-title" data-i18n="savedSectionTitle">❤️ คลังเพลงที่บันทึกไว้สำหรับตัดต่อ</h2>
         <p class="section-desc" data-i18n="savedSectionDesc">รวมเพลงที่คุณชื่นชอบสำหรับนำไปใช้ตัดต่อคลิปไทโป พร้อมซีนอนิเมะแนะนำ</p>
       </div>
 
       <div class="saved-toolbar glass-card">
         <div class="saved-toolbar-info">
           <span class="saved-count-pill" id="saved-count-pill">📌 บันทึกไว้แล้ว 0 เพลง</span>
-          <span class="saved-hint">💡 บันทึกอัตโนมัติในเบราว์เซอร์ของคุณ ไม่สูญหายแม้ปิดหรือรีเฟรชหน้าจอ</span>
+          <span class="saved-hint" data-i18n="savedHint">💡 บันทึกอัตโนมัติในเบราว์เซอร์ของคุณ ไม่สูญหายแม้ปิดหรือรีเฟรชหน้าจอ</span>
         </div>
         <div class="saved-toolbar-actions">
-          <button class="btn btn-primary btn-sm" onclick="shufflePlaySaved()">
-            🎲 สุ่มเล่นเพลงที่บันทึก
-          </button>
-          <button class="btn btn-ghost btn-sm" onclick="exportSavedSongsList()">
-            📋 คัดลอกรายชื่อไปตัดต่อ
-          </button>
-          <button class="btn btn-ghost btn-sm btn-danger-soft" onclick="clearAllSavedSongs()">
-            🗑️ ล้างทั้งหมด
-          </button>
+          <button class="btn btn-primary btn-sm" onclick="shufflePlaySaved()" data-i18n="savedBtnShuffle">🎲 สุ่มเล่นเพลงที่บันทึก</button>
+          <button class="btn btn-ghost btn-sm" onclick="exportSavedSongsList()" data-i18n="savedBtnCopy">📋 คัดลอกรายชื่อไปตัดต่อ</button>
+          <button class="btn btn-ghost btn-sm btn-danger-soft" onclick="clearAllSavedSongs()" data-i18n="savedBtnClear">🗑️ ล้างทั้งหมด</button>
         </div>
       </div>
 
@@ -371,26 +361,26 @@
     <!-- ANIME MATCH SECTION -->
     <section class="section alt-section" id="anime-match">
       <div class="section-header">
-        <div class="section-kicker">SCENE PAIRING</div>
-        <h2 class="section-title">🌸 คลังจับคู่เพลง × อนิเมะยอดฮิต</h2>
+        <div class="section-kicker" data-i18n="matchSectionKicker">SCENE PAIRING</div>
+        <h2 class="section-title" data-i18n="matchSectionTitle">🌸 คลังจับคู่เพลง × อนิเมะยอดฮิต</h2>
         <p class="section-desc" id="match-section-desc" data-i18n="matchSectionDesc">รวม 550 คู่เพลง และอนิเมะ 350 เรื่อง พร้อมภาพโปสเตอร์และตัวอย่างเพลงสำหรับตัดต่อ</p>
       </div>
 
       <!-- Quick Finder Tool -->
       <div class="match-finder-box glass-card">
-        <div class="finder-title">✨ ค้นหาคู่จับคู่ด่วน: เลือกเพลงหรืออนิเมะเพื่อไปยังคู่ที่แนะนำ</div>
+        <div class="finder-title" data-i18n="finderTitle">✨ ค้นหาคู่จับคู่ด่วน: เลือกเพลงหรืออนิเมะเพื่อไปยังคู่ที่แนะนำ</div>
         <div class="finder-controls">
           <div class="finder-field">
-            <label>🎵 เลือกเพลงที่ชอบ:</label>
+            <label data-i18n="finderSongLabel">🎵 เลือกเพลงที่ชอบ:</label>
             <select id="finder-song-select" class="finder-select" onchange="findPairBySong(this.value)">
-              <option value="">-- เลือกเพลงที่ชอบ --</option>
+              <option value="" data-i18n="finderSongPlaceholder">-- เลือกเพลงที่ชอบ --</option>
             </select>
           </div>
           <div class="finder-icon">⇄</div>
           <div class="finder-field">
-            <label>🌸 เลือกอนิเมะที่ต้องการตัดต่อ:</label>
+            <label data-i18n="finderAnimeLabel">🌸 เลือกอนิเมะที่ต้องการตัดต่อ:</label>
             <select id="finder-anime-select" class="finder-select" onchange="findPairByAnime(this.value)">
-              <option value="">-- เลือกอนิเมะที่ต้องการตัดต่อ --</option>
+              <option value="" data-i18n="finderAnimePlaceholder">-- เลือกอนิเมะที่ต้องการตัดต่อ --</option>
             </select>
           </div>
         </div>
@@ -398,11 +388,11 @@
 
       <!-- Category Filters -->
       <div class="match-filter-bar" id="match-filter-bar">
-        <button class="match-filter-btn active" data-filter="all" onclick="filterPairs('all', this)">🌟 ทุกคู่ (550 คู่)</button>
-        <button class="match-filter-btn" data-filter="sad" onclick="filterPairs('sad', this)">💔 เพลงเศร้า × ดราม่าซึ้ง</button>
-        <button class="match-filter-btn" data-filter="love" onclick="filterPairs('love', this)">❤️ คลั่งรัก × โรแมนติก</button>
-        <button class="match-filter-btn" data-filter="hype" onclick="filterPairs('hype', this)">🔥 เพลงเดือด × แอคชั่นมันส์</button>
-        <button class="match-filter-btn" data-filter="chill" onclick="filterPairs('chill', this)">🌊 อินดี้ชิลล์ × ชวนฝัน</button>
+        <button class="match-filter-btn active" data-filter="all" onclick="filterPairs('all', this)" id="filter-pair-all" data-i18n="filterPairAll">🌟 ทุกคู่ (698 คู่)</button>
+        <button class="match-filter-btn" data-filter="sad" onclick="filterPairs('sad', this)" data-i18n="filterPairSad">💔 เพลงเศร้า × ดราม่าซึ้ง</button>
+        <button class="match-filter-btn" data-filter="love" onclick="filterPairs('love', this)" data-i18n="filterPairLove">❤️ คลั่งรัก × โรแมนติก</button>
+        <button class="match-filter-btn" data-filter="hype" onclick="filterPairs('hype', this)" data-i18n="filterPairHype">🔥 เพลงเดือด × แอคชั่นมันส์</button>
+        <button class="match-filter-btn" data-filter="chill" onclick="filterPairs('chill', this)" data-i18n="filterPairChill">🌊 อินดี้ชิลล์ × ชวนฝัน</button>
       </div>
 
       <div class="anime-match-grid" id="anime-match-grid"></div>
@@ -414,40 +404,40 @@
     <!-- VERSUS SECTION -->
     <section class="section" id="versus">
       <div class="section-header">
-        <div class="section-kicker">SONG COMPARISON</div>
-        <h2 class="section-title">⚔️ โหวตเพลงเลือกมู้ดตัดต่อ</h2>
-        <p class="section-desc">เปรียบเทียบสองเพลงแล้วตัดสินใจเลือกเพลงที่เข้ากับคลิปของคุณที่สุด</p>
+        <div class="section-kicker" data-i18n="vsSectionKicker">SONG COMPARISON</div>
+        <h2 class="section-title" data-i18n="vsSectionTitle">⚔️ โหวตเพลงเลือกมู้ดตัดต่อ</h2>
+        <p class="section-desc" data-i18n="vsSectionDesc">เปรียบเทียบสองเพลงแล้วตัดสินใจเลือกเพลงที่เข้ากับคลิปของคุณที่สุด</p>
       </div>
       <div class="versus-wrap">
         <div class="versus-card glass-card" id="vs-left">
           <div class="vs-num">A</div>
-          <div class="vs-content" id="vs-left-content"><div class="vs-loading">กำลังโหลด...</div></div>
-          <button class="btn btn-vote" id="vote-a" onclick="vote('a')">👍 เลือกเพลงนี้!</button>
+          <div class="vs-content" id="vs-left-content"><div class="vs-loading" data-i18n="loading">กำลังโหลด...</div></div>
+          <button class="btn btn-vote" id="vote-a" onclick="vote('a')" data-i18n="vsVoteBtn">👍 เลือกเพลงนี้!</button>
         </div>
         <div class="vs-divider"><span class="vs-label">VS</span></div>
         <div class="versus-card glass-card" id="vs-right">
           <div class="vs-num">B</div>
-          <div class="vs-content" id="vs-right-content"><div class="vs-loading">กำลังโหลด...</div></div>
-          <button class="btn btn-vote" id="vote-b" onclick="vote('b')">👍 เลือกเพลงนี้!</button>
+          <div class="vs-content" id="vs-right-content"><div class="vs-loading" data-i18n="loading">กำลังโหลด...</div></div>
+          <button class="btn btn-vote" id="vote-b" onclick="vote('b')" data-i18n="vsVoteBtn">👍 เลือกเพลงนี้!</button>
         </div>
       </div>
       <div class="vs-result hidden" id="vs-result"></div>
       <div style="text-align:center;margin-top:1.5rem;">
-        <button class="btn btn-ghost" onclick="loadVersus()">🔀 สุ่มคู่เปรียบเทียบใหม่</button>
+        <button class="btn btn-ghost" id="btn-vs-reroll" onclick="loadVersus()" data-i18n="vsRerollBtn">🔀 สุ่มคู่เปรียบเทียบใหม่</button>
       </div>
     </section>
   </div>
 
   <footer class="footer">
     <div class="footer-inner">
-      <div class="footer-logo">ไทโปมิวสิค • EDIT STUDIO</div>
-      <p class="footer-desc">คลังรวบรวมเพลงและซีนอนิเมะสำหรับการตัดต่อวิดีโอและตัวหนังสือไทโปกราฟี</p>
+      <div class="footer-logo" data-i18n="footerLogo">ไทโปมิวสิค • EDIT STUDIO</div>
+      <p class="footer-desc" data-i18n="footerDesc">คลังรวบรวมเพลงและซีนอนิเมะสำหรับการตัดต่อวิดีโอและตัวหนังสือไทโปกราฟี</p>
       <div class="footer-links">
         <a href="https://open.spotify.com/" target="_blank" class="footer-link">🎧 Spotify</a>
         <a href="https://anifume.com/" target="_blank" class="footer-link">🌸 Anifume</a>
         <a href="https://music.apple.com/" target="_blank" class="footer-link">🍎 Apple Music</a>
       </div>
-      <p class="footer-copy">สร้างสรรค์ด้วยความใส่ใจเพื่อชุมชนนักตัดต่อคลิปและคนทำไทโป</p>
+      <p class="footer-copy" data-i18n="footerCopy">สร้างสรรค์ด้วยความใส่ใจเพื่อชุมชนนักตัดต่อคลิปและคนทำไทโป</p>
     </div>
   </footer>
 

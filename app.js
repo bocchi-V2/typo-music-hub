@@ -19,7 +19,7 @@ function animeImgTag(anime, cssClass, extraStyle = '', loadingMode = 'lazy', fet
   const src = anime.coverUrl || anime.coverFallback || 'favicon-logo.jpg';
   const fallback2 = (anime.coverFallback && anime.coverFallback !== src) ? anime.coverFallback : 'favicon-logo.jpg';
   const finalFallback = 'favicon-logo.jpg';
-  const alt = anime.nameTH || anime.name || 'Anime';
+  const alt = (currentAppLang === 'en' ? (anime.name || anime.nameTH) : (anime.nameTH || anime.name)) || 'Anime';
   const styleAttr = extraStyle ? ` style="${extraStyle}"` : '';
   const priorityAttr = fetchPriority !== 'auto' ? ` fetchpriority="${fetchPriority}"` : '';
   return `<img src="${src}" alt="${alt}" class="${cssClass} anime-cover-img" loading="${loadingMode}" decoding="async"${priorityAttr}${styleAttr} referrerpolicy="no-referrer" onerror="this._tries=(this._tries||0)+1;if(this._tries===1&&'${fallback2}'!=='${src}'){this.src='${fallback2}';}else if(this._tries===2){this.src='${finalFallback}';}" />`;
@@ -28,19 +28,57 @@ function animeImgTag(anime, cssClass, extraStyle = '', loadingMode = 'lazy', fet
 // ---- INTERNATIONALIZATION (i18n) ----
 const I18N = {
   th: {
+    siteTitle: "ไทโปมิวสิค – คลังเพลงสำหรับคนตัดต่อคลิปไทโป",
+    siteDesc: "รวมเพลงไทย เพลงสากล และเพลงอนิเมะสำหรับตัดต่อคลิปไทโปกราฟี พร้อมระบบสุ่มแยกโซน ปรับระดับเสียง และจับคู่อนิเมะแนะนำ",
+    logoBadge: "EDIT STUDIO",
+    logoTitle: "ไทโปมิวสิค",
     navRandom: "🎲 สุ่มเพลงแยกโซน",
     navSongs: "🎵 คลังเพลงแยกโซน",
     navVersus: "⚔️ โหวตเพลง",
     navAnimeMatch: "🌸 จับคู่อนิเมะ",
+    navSaved: "บันทึกไว้",
+    tabSavedTitle: "เพลงที่บันทึกไว้",
+    heroBadge: "🎬 TYPOGRAPHY & VIDEO EDITING HUB",
     heroTitle1: "รวมเพลงตัดต่อคลิป",
     heroTitle2: "ไทย • สากล • อนิเมะ",
-    heroDesc: "ค้นหาเพลงและไอเดียทำคลิปไทโป พร้อมระบบสุ่มแยกโซน ปรับความดังเสียง และจับคู่ซีนอนิเมะที่เข้ากันที่สุด",
+    heroDesc: "ค้นหาเพลงสำหรับทำคลิปไทโป พร้อมระบบสุ่มแยกโซน ปรับความดังเสียง และจับคู่ซีนอนิเมะที่เข้ากันที่สุด",
     heroBtnRandom: "🎲 ไปที่โซนสุ่มเพลง",
-    heroBtnSongs: "🎵 สำรวจคลังเพลง",
+    heroBtnSongs: "สำรวจคลังเพลง",
+    heroBtnSongsSuffix: "เพลง",
     statTotalSongs: "เพลงทั้งหมดในคลัง",
     statZones: "โซนภาษา (ไทย / สากล / ญี่ปุ่น)",
     statAnimes: "อนิเมะยอดฮิต",
     statPairs: "คู่แนะนำพร้อมทริคไทโป",
+    weeklySyncLabel: "<strong>ระบบอัปเดตเพลง & อนิเมะอัตโนมัติ:</strong> เพิ่มเพลงใหม่ทุกๆ 7 วัน (Weekly Auto-Drop Sync)",
+    wsVersusSub: "เปรียบเทียบมู้ด",
+    randSectionKicker: "RANDOM GENERATOR",
+    randSectionTitle: "🎲 ระบบสุ่มเพลงแยกโซน & ปรับตัวเลือก",
+    randSectionDesc: "เลือกโซนภาษาและสไตล์ที่ต้องการ สุ่มแบบไม่ซ้ำรอบ พร้อมชื่อและรูปอนิเมะแนะนำใต้เพลง",
+    randZoneSelectLabel: "เลือกโซนเพลงที่ต้องการสุ่ม:",
+    randZoneTh: "โซนเพลงไทย",
+    randZoneEn: "โซนเพลงสากล (English)",
+    randZoneJp: "โซนเพลงญี่ปุ่น / อนิเมะ",
+    randZoneAll: "สุ่มรวมทุกโซน",
+    randMoodLabel: "🎭 เลือกอารมณ์ / มู้ดเพลง:",
+    randMoodAll: "ทั้งหมด",
+    randMoodSad: "💔 เศร้า / ซึ้ง",
+    randMoodLove: "❤️ คลั่งรัก / อบอุ่น",
+    randMoodHype: "🔥 มันส์ / บีทเดือด",
+    randMoodChill: "🌊 อินดี้ชิลล์",
+    randBpmLabel: "⚡ ระดับจังหวะ (BPM):",
+    randBpmAll: "ทุกความเร็ว",
+    randBpmSlow: "🐢 ช้า (Slow)",
+    randBpmMid: "🚶 ปานกลาง (Mid)",
+    randBpmFast: "⚡ เร็ว (Fast)",
+    randReadyBadge: "🎯 พร้อมสุ่มเพลงในโซนที่เลือก",
+    sfxOn: "เสียงลูกเต๋า: เปิด",
+    sfxOff: "เสียงลูกเต๋า: ปิด",
+    resetDeckBtn: "🔄 เริ่มสุ่มรอบใหม่",
+    rollingTitle: "🎲 กำลังสุ่มเพลง...",
+    rollingSubtitle: "รอสักครู่ กำลังจับคู่เพลงกับอนิเมะให้คุณ ✨",
+    randPromptTitle: "เลือกโซนและอารมณ์เพลง แล้วกดปุ่มสุ่มด้านล่างได้เลย!",
+    randPromptDesc: "ระบบจะจับคู่เพลงกับอนิเมะให้ทันที พร้อมเสียงเอฟเฟกต์ทอยลูกเต๋า",
+    rollBtnAction: "🎲 สุ่มเพลงในโซนนี้! (ไม่ซ้ำ)",
     songsSectionKicker: "MUSIC CATALOGUE",
     songsSectionTitle: "🎵 คลังเพลงแยกตามโซน",
     songsSectionDesc: "เลือกโซนเพลงที่ต้องการ เพื่อดูเพลงเฉพาะโซนนั้น พร้อมซีนอนิเมะที่แนะนำให้ตัดต่อคู่กัน",
@@ -53,35 +91,98 @@ const I18N = {
     moodLove: "❤️ รัก",
     moodHype: "🔥 เร้าใจ",
     moodChill: "🌊 ชิลล์",
+    loadMoreBtn: "⬇ แสดงเพลงเพิ่มเติม",
     previewBtn: "ฟังตัวอย่าง 30s",
     playingBtn: "กำลังเล่น",
     pauseBtn: "หยุด",
     spotifyBtn: "Spotify",
     animeRecTitle: "🌸 แนะนำตัดกับอนิเมะ:",
     animeDetailsBtn: "🌸 รายละเอียดคู่",
-    rollBtn: "🎲 สุ่มเพลงใหม่ในโซนนี้!",
-    resetDeckBtn: "🔄 เริ่มสุ่มรอบใหม่",
+    animeMatchBtn: "🌸 จับคู่อนิเมะ",
     viewAnifume: "🌸 ดูข้อมูลบน Anifume →",
-    matchSectionDesc: "รวมคู่เพลงและอนิเมะยอดฮิต พร้อมภาพโปสเตอร์และตัวอย่างเพลงสำหรับตัดต่อ",
-    navSaved: "บันทึกไว้",
-    tabSavedTitle: "เพลงที่บันทึกไว้",
+    viewAnifumeShort: "🌸 ดูบน Anifume",
     savedSectionKicker: "BOOKMARKED COLLECTION",
-    savedSectionDesc: "รวมเพลงที่คุณชื่นชอบสำหรับนำไปใช้ตัดต่อคลิปไทโป พร้อมซีนอนิเมะแนะนำ"
+    savedSectionTitle: "❤️ คลังเพลงที่บันทึกไว้สำหรับตัดต่อ",
+    savedSectionDesc: "รวมเพลงที่คุณชื่นชอบสำหรับนำไปใช้ตัดต่อคลิปไทโป พร้อมซีนอนิเมะแนะนำ",
+    savedHint: "💡 บันทึกอัตโนมัติในเบราว์เซอร์ของคุณ ไม่สูญหายแม้ปิดหรือรีเฟรชหน้าจอ",
+    savedBtnShuffle: "🎲 สุ่มเล่นเพลงที่บันทึก",
+    savedBtnCopy: "📋 คัดลอกรายชื่อไปตัดต่อ",
+    savedBtnClear: "🗑️ ล้างทั้งหมด",
+    matchSectionKicker: "SCENE PAIRING",
+    matchSectionTitle: "🌸 คลังจับคู่เพลง × อนิเมะยอดฮิต",
+    matchSectionDesc: "รวมคู่เพลงและอนิเมะยอดฮิต พร้อมภาพโปสเตอร์และตัวอย่างเพลงสำหรับตัดต่อ",
+    finderTitle: "✨ ค้นหาคู่จับคู่ด่วน: เลือกเพลงหรืออนิเมะเพื่อไปยังคู่ที่แนะนำ",
+    finderSongLabel: "🎵 เลือกเพลงที่ชอบ:",
+    finderSongPlaceholder: "-- เลือกเพลงที่ชอบ --",
+    finderAnimeLabel: "🌸 เลือกอนิเมะที่ต้องการตัดต่อ:",
+    finderAnimePlaceholder: "-- เลือกอนิเมะที่ต้องการตัดต่อ --",
+    filterPairAll: "🌟 ทุกคู่",
+    filterPairSad: "💔 เพลงเศร้า × ดราม่าซึ้ง",
+    filterPairLove: "❤️ คลั่งรัก × โรแมนติก",
+    filterPairHype: "🔥 เพลงเดือด × แอคชั่นมันส์",
+    filterPairChill: "🌊 อินดี้ชิลล์ × ชวนฝัน",
+    vsSectionKicker: "SONG COMPARISON",
+    vsSectionTitle: "⚔️ โหวตเพลงเลือกมู้ดตัดต่อ",
+    vsSectionDesc: "เปรียบเทียบสองเพลงแล้วตัดสินใจเลือกเพลงที่เข้ากับคลิปของคุณที่สุด",
+    vsVoteBtn: "👍 เลือกเพลงนี้!",
+    vsRerollBtn: "🔀 สุ่มคู่เปรียบเทียบใหม่",
+    footerLogo: "ไทโปมิวสิค • EDIT STUDIO",
+    footerDesc: "คลังรวบรวมเพลงและซีนอนิเมะสำหรับการตัดต่อวิดีโอและตัวหนังสือไทโปกราฟี",
+    footerCopy: "สร้างสรรค์ด้วยความใส่ใจเพื่อชุมชนนักตัดต่อคลิปและคนทำไทโป",
+    loading: "กำลังโหลด..."
   },
   en: {
+    siteTitle: "TypoMusic – Curated Music & Anime Vault for Video Editors",
+    siteDesc: "Curated Thai, Global, and Anime songs for typography video editing with smart zone randomizer, volume control, and scene pairings.",
+    logoBadge: "EDIT STUDIO",
+    logoTitle: "TypoMusic",
     navRandom: "🎲 Zone Randomizer",
     navSongs: "🎵 Song Vault",
     navVersus: "⚔️ Song Battles",
     navAnimeMatch: "🌸 Anime Pairs",
+    navSaved: "Saved",
+    tabSavedTitle: "Saved Songs",
+    heroBadge: "🎬 TYPOGRAPHY & VIDEO EDITING HUB",
     heroTitle1: "Music for Typography Clips",
     heroTitle2: "Thai • Global • Anime",
     heroDesc: "Curated music library & typography video ideas with smart zone randomizer, volume controls, and anime scene pairings.",
     heroBtnRandom: "🎲 Launch Randomizer",
-    heroBtnSongs: "🎵 Explore Song Vault",
+    heroBtnSongs: "Explore Song Vault",
+    heroBtnSongsSuffix: "songs",
     statTotalSongs: "Total Verified Songs",
     statZones: "Language Zones (TH / EN / JP)",
     statAnimes: "Featured Anime",
     statPairs: "Curated Pairs & Typo Tips",
+    weeklySyncLabel: "<strong>Automated Music & Anime Sync:</strong> Fresh drops added every 7 days (Weekly Auto-Drop Sync)",
+    wsVersusSub: "Compare Vibe",
+    randSectionKicker: "RANDOM GENERATOR",
+    randSectionTitle: "🎲 Zone Randomizer & Customizer",
+    randSectionDesc: "Select language zone and style. Smart non-repeating shuffle with matched anime recommendations.",
+    randZoneSelectLabel: "Select song zone to roll:",
+    randZoneTh: "Thai Songs Zone",
+    randZoneEn: "Global Songs Zone (English)",
+    randZoneJp: "Japanese & Anime Zone",
+    randZoneAll: "All Combined Zones",
+    randMoodLabel: "🎭 Choose Mood / Vibe:",
+    randMoodAll: "All",
+    randMoodSad: "💔 Sad / Emotional",
+    randMoodLove: "❤️ Romantic / Warm",
+    randMoodHype: "🔥 Hype / Beat Drop",
+    randMoodChill: "🌊 Indie Chill",
+    randBpmLabel: "⚡ Tempo (BPM):",
+    randBpmAll: "All Speeds",
+    randBpmSlow: "🐢 Slow",
+    randBpmMid: "🚶 Medium (Mid)",
+    randBpmFast: "⚡ Fast",
+    randReadyBadge: "🎯 Ready to roll in selected zone",
+    sfxOn: "Dice SFX: ON",
+    sfxOff: "Dice SFX: OFF",
+    resetDeckBtn: "🔄 Reset Deck",
+    rollingTitle: "🎲 Rolling song...",
+    rollingSubtitle: "Pairing track with best anime scene for your edit... ✨",
+    randPromptTitle: "Select zone & mood, then hit Roll below!",
+    randPromptDesc: "System pairs track with anime scene instantly with dice roll sound.",
+    rollBtnAction: "🎲 Roll Song in This Zone! (Unique)",
     songsSectionKicker: "MUSIC CATALOGUE",
     songsSectionTitle: "🎵 Song Vault by Dedicated Zone",
     songsSectionDesc: "Select a zone to explore songs strictly within that category, complete with recommended anime scenes.",
@@ -94,20 +195,157 @@ const I18N = {
     moodLove: "❤️ Romantic",
     moodHype: "🔥 Hype",
     moodChill: "🌊 Chill",
+    loadMoreBtn: "⬇ Show More Songs",
     previewBtn: "Preview 30s",
     playingBtn: "Playing",
     pauseBtn: "Pause",
     spotifyBtn: "Spotify",
-    animeRecTitle: "🌸 Matched Anime Scene:",
+    animeRecTitle: "🌸 Matched Anime:",
     animeDetailsBtn: "🌸 Pair Details",
-    rollBtn: "🎲 Roll New in This Zone!",
-    resetDeckBtn: "🔄 Reset Deck",
+    animeMatchBtn: "🌸 Anime Match",
     viewAnifume: "🌸 View on Anifume →",
-    matchSectionDesc: "Curated song and anime scene pairs with posters and audio previews for editors",
-    navSaved: "Saved",
-    tabSavedTitle: "Saved Songs",
+    viewAnifumeShort: "🌸 View on Anifume",
     savedSectionKicker: "BOOKMARKED COLLECTION",
-    savedSectionDesc: "Your curated typography clip soundtracks with anime pairings"
+    savedSectionTitle: "❤️ Saved Songs for Editing",
+    savedSectionDesc: "Your curated typography clip soundtracks with anime pairings",
+    savedHint: "💡 Auto-saved in your browser, never lost even after closing or refreshing",
+    savedBtnShuffle: "🎲 Roll from Saved",
+    savedBtnCopy: "📋 Copy List for Editing",
+    savedBtnClear: "🗑️ Clear All",
+    matchSectionKicker: "SCENE PAIRING",
+    matchSectionTitle: "🌸 Curated Songs × Anime Scene Pairs",
+    matchSectionDesc: "Curated song and anime scene pairs with posters and audio previews for editors",
+    finderTitle: "✨ Quick Pair Finder: Pick a song or anime to view recommendation",
+    finderSongLabel: "🎵 Select a song you like:",
+    finderSongPlaceholder: "-- Select a song you like --",
+    finderAnimeLabel: "🌸 Select anime for editing:",
+    finderAnimePlaceholder: "-- Select anime for editing --",
+    filterPairAll: "🌟 All Pairs",
+    filterPairSad: "💔 Sad Song × Drama",
+    filterPairLove: "❤️ Romantic × Romance",
+    filterPairHype: "🔥 Hype Song × Action",
+    filterPairChill: "🌊 Indie Chill × Dreamy",
+    vsSectionKicker: "SONG COMPARISON",
+    vsSectionTitle: "⚔️ Song Battle: Choose Edit Vibe",
+    vsSectionDesc: "Compare two tracks and pick the best vibe for your typography clip",
+    vsVoteBtn: "👍 Choose this track!",
+    vsRerollBtn: "🔀 Roll New Matchup",
+    footerLogo: "TypoMusic • EDIT STUDIO",
+    footerDesc: "Curated music and anime scenes library for video editing and typography clips",
+    footerCopy: "Crafted with care for typography editors and video creators",
+    loading: "Loading..."
+  }
+};
+
+const GENRE_MAP = {
+  'แอคชั่น': 'Action', 'ผจญภัย': 'Adventure', 'แฟนตาซี': 'Fantasy', 'ดราม่า': 'Drama',
+  'โรแมนติก': 'Romance', 'ไซไฟ': 'Sci-Fi', 'คอมเมดี้': 'Comedy', 'ตลก': 'Comedy',
+  'ชีวิตประจำวัน': 'Slice of Life', 'ลึกลับ': 'Mystery', 'สยองขวัญ': 'Horror',
+  'เหนือธรรมชาติ': 'Supernatural', 'กีฬา': 'Sports', 'ดนตรี': 'Music', 'สงคราม': 'Military',
+  'หุ่นยนต์': 'Mecha', 'ย้อนยุค': 'Historical', 'จิตวิทยา': 'Psychological', 'อนิเมะ': 'Anime',
+  'ไทโป': 'Typography', 'แนะนำ': 'Featured', 'ฮิต': 'Hit', 'ไวรัล': 'Viral', 'มาแรง': 'Trending',
+  'สตูดิโอ': 'Studio', 'ตัดต่อ': 'Edit'
+};
+
+function translateGenre(g) {
+  if (currentAppLang === 'th') return g;
+  return GENRE_MAP[g] || g;
+}
+
+function getSongTagsForDisplay(song) {
+  if (currentAppLang === 'th') {
+    return (song.tags || []).slice(0, 3);
+  }
+  const rawTags = (song.tags || []);
+  const englishTags = [];
+  for (const t of rawTags) {
+    if (GENRE_MAP[t]) {
+      englishTags.push(GENRE_MAP[t]);
+    } else if (!/[\u0E00-\u0E7F]/.test(t)) {
+      englishTags.push(t);
+    }
+  }
+  if (englishTags.length < 2) {
+    const moodDefaults = {
+      sad: ['Sad Vibe', 'Melodic'],
+      love: ['Romantic', 'Sweet'],
+      hype: ['Energetic', 'Beat Drop'],
+      chill: ['Indie Chill', 'Atmospheric']
+    };
+    const defaults = moodDefaults[song.mood] || ['Trending', 'Typography'];
+    for (const d of defaults) {
+      if (!englishTags.includes(d)) englishTags.push(d);
+    }
+  }
+  return englishTags.slice(0, 3);
+}
+
+function translateTag(tag) {
+  if (currentAppLang === 'th') return tag;
+  return GENRE_MAP[tag] || tag;
+}
+
+function formatBpm(bpmStr) {
+  if (!bpmStr) return currentAppLang === 'th' ? 'ปานกลาง' : 'Mid Tempo';
+  if (currentAppLang === 'th') return bpmStr;
+  return bpmStr
+    .replace('ช้า', 'Slow')
+    .replace('ปานกลาง', 'Mid')
+    .replace('เร็ว', 'Fast');
+}
+
+function getAnimeDisplayName(anime) {
+  if (!anime) return '';
+  if (currentAppLang === 'en') {
+    return anime.name || anime.nameTH || 'Anime';
+  }
+  return anime.nameTH || anime.name || 'อนิเมะ';
+}
+
+function getAnimeSecondaryName(anime) {
+  if (!anime) return '';
+  if (currentAppLang === 'en') {
+    return (anime.genre || []).map(translateGenre).join(', ');
+  }
+  return anime.name ? `${anime.name} • ${(anime.genre || []).join(', ')}` : (anime.genre || []).join(', ');
+}
+
+function getZoneName(zone) {
+  if (currentAppLang === 'th') {
+    if (zone === 'th') return '🇹🇭 โซนเพลงไทย';
+    if (zone === 'en') return '🇬🇧 โซนเพลงสากล';
+    if (zone === 'jp') return '🇯🇵 โซนเพลงญี่ปุ่น / อนิเมะ';
+    return '🌐 สุ่มรวมทุกโซน';
+  } else {
+    if (zone === 'th') return '🇹🇭 Thai Songs Zone';
+    if (zone === 'en') return '🇬🇧 Global Songs Zone';
+    if (zone === 'jp') return '🇯🇵 Japanese & Anime Zone';
+    return '🌐 All Combined Zones';
+  }
+}
+
+// Backward compatibility alias
+function getZoneNameTH(zone) {
+  return getZoneName(zone);
+}
+
+const langPillText = l => {
+  if (currentAppLang === 'th') {
+    if (l === 'en') return '🇬🇧 สากล';
+    if (l === 'jp') return '🇯🇵 ญี่ปุ่น';
+    return '🇹🇭 ไทย';
+  } else {
+    if (l === 'en') return '🇬🇧 Global';
+    if (l === 'jp') return '🇯🇵 Japanese';
+    return '🇹🇭 Thai';
+  }
+};
+
+const moodLabel = m => {
+  if (currentAppLang === 'th') {
+    return ({ sad:'💔 เศร้า', love:'❤️ รัก', hype:'🔥 เร้าใจ', chill:'🌊 ชิลล์' }[m] || m);
+  } else {
+    return ({ sad:'💔 Sad', love:'❤️ Romantic', hype:'🔥 Hype', chill:'🌊 Chill' }[m] || m);
   }
 };
 
@@ -116,6 +354,13 @@ let currentAppLang = localStorage.getItem('typo_app_lang') || 'th';
 function setAppLanguage(lang) {
   currentAppLang = lang;
   localStorage.setItem('typo_app_lang', lang);
+  document.documentElement.lang = lang;
+
+  if (I18N[lang]) {
+    if (I18N[lang].siteTitle) document.title = I18N[lang].siteTitle;
+    const metaDesc = document.getElementById('page-desc');
+    if (metaDesc && I18N[lang].siteDesc) metaDesc.setAttribute('content', I18N[lang].siteDesc);
+  }
 
   const btnTh = document.getElementById('btn-lang-th');
   const btnEn = document.getElementById('btn-lang-en');
@@ -127,23 +372,40 @@ function setAppLanguage(lang) {
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.dataset.i18n;
     if (I18N[lang] && I18N[lang][key]) {
-      el.textContent = I18N[lang][key];
+      if (I18N[lang][key].includes('<')) {
+        el.innerHTML = I18N[lang][key];
+      } else {
+        el.textContent = I18N[lang][key];
+      }
     }
   });
 
   const searchInput = document.getElementById('search-input');
-  if (searchInput) {
+  if (searchInput && I18N[lang]) {
     searchInput.placeholder = I18N[lang].searchPlaceholder;
   }
 
   updateZoneBanner();
-  renderSongsGrid();
   updateStats();
+  updateDiceSfxUI();
+  updateZoneCounterUI();
+  updateSavedBadges();
+  renderSongsGrid();
+  renderSavedSongsView();
+  renderAnimeMatchGrid(currentPairCategory);
+  populateFinderDropdowns();
   initWeeklyUpdateTracker();
+  if (lastRandomSongId) {
+    const song = SONGS.find(s => s.id === lastRandomSongId);
+    if (song && document.getElementById('random-result') && !document.getElementById('random-result').classList.contains('hidden')) {
+      renderRandomShowcase(song);
+    }
+  }
   if (currentAudio) updateAudioUI(!currentAudio.paused);
+  if (currentWorkspace === 'versus') loadVersus();
 }
 
-// Helper: Hardware Studio Play Button
+
 function renderPlayButton(songId, isPlaying) {
   const label = isPlaying
     ? (currentAppLang === 'th' ? 'กำลังเล่น' : 'Playing')
@@ -191,19 +453,21 @@ function toggleDiceSfx() {
   updateDiceSfxUI();
   if (diceSfxEnabled) {
     playDiceSound();
-    showToast('🎲 🔊 เปิดเสียงทอยลูกเต๋า (u_qpfzpy) เรียบร้อยแล้ว');
+    showToast(currentAppLang === 'th' ? '🎲 🔊 เปิดเสียงทอยลูกเต๋าเรียบร้อยแล้ว' : '🎲 🔊 Dice roll sound enabled');
   } else {
-    showToast('🎲 🔇 ปิดเสียงทอยลูกเต๋าแล้ว');
+    showToast(currentAppLang === 'th' ? '🎲 🔇 ปิดเสียงทอยลูกเต๋าแล้ว' : '🎲 🔇 Dice roll sound disabled');
   }
 }
 
 function updateDiceSfxUI() {
   const btn = document.getElementById('sfx-toggle-btn');
   if (btn) {
-    btn.innerHTML = diceSfxEnabled
-      ? '<span class="sfx-icon">🎲 🔊</span> <span class="sfx-text">เสียงลูกเต๋า: เปิด</span>'
-      : '<span class="sfx-icon">🎲 🔇</span> <span class="sfx-text">เสียงลูกเต๋า: ปิด</span>';
+    const text = diceSfxEnabled
+      ? (currentAppLang === 'th' ? 'เสียงลูกเต๋า: เปิด' : 'Dice SFX: ON')
+      : (currentAppLang === 'th' ? 'เสียงลูกเต๋า: ปิด' : 'Dice SFX: OFF');
+    btn.innerHTML = `<span class="sfx-icon">🎲 ${diceSfxEnabled ? '🔊' : '🔇'}</span> <span class="sfx-text">${text}</span>`;
     btn.classList.toggle('active', diceSfxEnabled);
+    btn.title = currentAppLang === 'th' ? 'เปิด/ปิดเสียงสุ่มลูกเต๋า' : 'Toggle Dice Sound';
   }
 }
 
@@ -248,12 +512,12 @@ function toggleSaveSong(songId, event) {
 
   if (willSave) {
     saved.push(id);
-    const title = song ? `"${song.title}"` : 'เพลงนี้';
-    showToast(`❤️ บันทึก ${title} เข้าคลังเพลงโปรดแล้ว! ✨`);
+    const title = song ? `"${song.title}"` : (currentAppLang === 'th' ? 'เพลงนี้' : 'this track');
+    showToast(currentAppLang === 'th' ? `❤️ บันทึก ${title} เข้าคลังเพลงโปรดแล้ว! ✨` : `❤️ Added ${title} to your saved collection! ✨`);
   } else {
     saved.splice(index, 1);
-    const title = song ? `"${song.title}"` : 'เพลงนี้';
-    showToast(`🤍 นำ ${title} ออกจากคลังแล้ว`);
+    const title = song ? `"${song.title}"` : (currentAppLang === 'th' ? 'เพลงนี้' : 'this track');
+    showToast(currentAppLang === 'th' ? `🤍 นำ ${title} ออกจากคลังแล้ว` : `🤍 Removed ${title} from your saved collection`);
   }
 
   localStorage.setItem('typo_saved_songs', JSON.stringify(saved));
@@ -265,13 +529,13 @@ function toggleSaveSong(songId, event) {
     const icon = btn.querySelector('.bm-icon');
     if (icon) icon.textContent = willSave ? '❤️' : '🤍';
     if (btn.classList.contains('btn-bp-save')) {
-      btn.innerHTML = willSave ? '❤️ บันทึกแล้ว' : '🤍 บันทึกเพลง';
+      btn.innerHTML = willSave ? (currentAppLang === 'th' ? '❤️ บันทึกแล้ว' : '❤️ Saved') : (currentAppLang === 'th' ? '🤍 บันทึกเพลง' : '🤍 Save');
     }
     if (btn.classList.contains('btn-modal-save')) {
-      btn.innerHTML = willSave ? '❤️ บันทึกแล้ว' : '🤍 บันทึกเพลงนี้';
+      btn.innerHTML = willSave ? (currentAppLang === 'th' ? '❤️ บันทึกแล้ว' : '❤️ Saved') : (currentAppLang === 'th' ? '🤍 บันทึกเพลงนี้' : '🤍 Save this song');
     }
     if (btn.classList.contains('btn-showcase-save')) {
-      btn.innerHTML = willSave ? '❤️ บันทึกแล้ว' : '🤍 บันทึกเพลง';
+      btn.innerHTML = willSave ? (currentAppLang === 'th' ? '❤️ บันทึกแล้ว' : '❤️ Saved') : (currentAppLang === 'th' ? '🤍 บันทึกเพลง' : '🤍 Save');
     }
   });
 
@@ -298,7 +562,7 @@ function updateSavedBadges() {
 function clearAllSavedSongs() {
   const saved = getSavedSongIds();
   if (saved.length === 0) {
-    showToast('ยังไม่มีเพลงในคลังที่บันทึกไว้');
+    showToast(currentAppLang === 'th' ? 'ยังไม่มีเพลงในคลังที่บันทึกไว้' : 'No bookmarked songs in your collection yet');
     return;
   }
   const confirmMsg = currentAppLang === 'th'
@@ -313,50 +577,51 @@ function clearAllSavedSongs() {
       if (icon) icon.textContent = '🤍';
     });
     renderSavedSongsView();
-    showToast('🗑️ ล้างเพลงที่บันทึกไว้ทั้งหมดเรียบร้อยแล้ว');
+    showToast(currentAppLang === 'th' ? '🗑️ ล้างเพลงที่บันทึกไว้ทั้งหมดเรียบร้อยแล้ว' : '🗑️ Cleared all saved songs from collection');
   }
 }
 
 function exportSavedSongsList() {
   const savedIds = getSavedSongIds();
   if (savedIds.length === 0) {
-    showToast('ยังไม่มีเพลงที่บันทึกไว้ — กรุณากดปุ่ม ❤️ บนเพลงที่ต้องการ');
+    showToast(currentAppLang === 'th' ? 'ยังไม่มีเพลงที่บันทึกไว้ — กรุณากดปุ่ม ❤️ บนเพลงที่ต้องการ' : 'No saved songs — click ❤️ on any song to bookmark first');
     return;
   }
   const savedSongs = SONGS.filter(s => savedIds.includes(s.id));
-  let text = `🎵 คลังเพลงที่บันทึกไว้สำหรับตัดต่อคลิปไทโป (ไทโปมิวสิค Edit Studio)\n`;
-  text += `จำนวนทั้งหมด: ${savedSongs.length} เพลง\n`;
-  text += `==================================================\n\n`;
+  let text = currentAppLang === 'th'
+    ? `🎵 คลังเพลงที่บันทึกไว้สำหรับตัดต่อคลิปไทโป (ไทโปมิวสิค Edit Studio)\nจำนวนทั้งหมด: ${savedSongs.length} เพลง\n==================================================\n\n`
+    : `🎵 Bookmarked Tracks for Typography Video Editing (TypoMusic Edit Studio)\nTotal Tracks: ${savedSongs.length}\n==================================================\n\n`;
 
   savedSongs.forEach((s, idx) => {
     const anime = ANIMES.find(a => a.id === s.animeId);
-    text += `${idx + 1}. ${s.title} - ${s.artist} [${s.bpm || 'BPM ปานกลาง'} | ${moodLabel(s.mood)}]\n`;
-    if (anime) text += `   🌸 ซีนอนิเมะแนะนำ: ${anime.nameTH} (${anime.name})\n`;
-    text += `   🎧 ฟังบน Spotify: ${s.spotifyUrl}\n\n`;
+    const animeName = getAnimeDisplayName(anime);
+    text += `${idx + 1}. ${s.title} - ${s.artist} [${formatBpm(s.bpm)} | ${moodLabel(s.mood)}]\n`;
+    if (anime) text += `   🌸 ${currentAppLang === 'th' ? 'ซีนอนิเมะแนะนำ' : 'Matched Anime'}: ${animeName}\n`;
+    text += `   🎧 ${currentAppLang === 'th' ? 'ฟังบน Spotify' : 'Listen on Spotify'}: ${s.spotifyUrl}\n\n`;
   });
 
   if (navigator.clipboard && navigator.clipboard.writeText) {
     navigator.clipboard.writeText(text).then(() => {
-      showToast('📋 คัดลอกรายชื่อเพลงทั้งหมดลง Clipboard แล้ว!');
+      showToast(currentAppLang === 'th' ? '📋 คัดลอกรายชื่อเพลงทั้งหมดลง Clipboard แล้ว!' : '📋 Copied track list to clipboard!');
     }).catch(() => {
-      prompt('คัดลอกรายชื่อเพลงของคุณ:', text);
+      prompt(currentAppLang === 'th' ? 'คัดลอกรายชื่อเพลงของคุณ:' : 'Copy your track list:', text);
     });
   } else {
-    prompt('คัดลอกรายชื่อเพลงของคุณ:', text);
+    prompt(currentAppLang === 'th' ? 'คัดลอกรายชื่อเพลงของคุณ:' : 'Copy your track list:', text);
   }
 }
 
 function shufflePlaySaved() {
   const savedIds = getSavedSongIds();
   if (savedIds.length === 0) {
-    showToast('ยังไม่มีเพลงที่บันทึกไว้ กดไอคอน ❤️ บนเพลงที่ชอบเพื่อเก็บไว้ก่อน');
+    showToast(currentAppLang === 'th' ? 'ยังไม่มีเพลงที่บันทึกไว้ กดไอคอน ❤️ บนเพลงที่ชอบเพื่อเก็บไว้ก่อน' : 'No saved songs — click ❤️ to bookmark tracks first');
     return;
   }
   const randomId = savedIds[Math.floor(Math.random() * savedIds.length)];
   togglePlaySong(randomId);
   const song = SONGS.find(s => s.id === randomId);
   if (song) {
-    showToast(`🎲 สุ่มเล่นเพลงที่บันทึกไว้: "${song.title}"`);
+    showToast(currentAppLang === 'th' ? `🎲 สุ่มเล่นเพลงที่บันทึกไว้: "${song.title}"` : `🎲 Playing saved track: "${song.title}"`);
   }
 }
 
@@ -370,19 +635,19 @@ function renderSavedSongsView() {
     grid.innerHTML = `
       <div class="saved-empty-state glass-card">
         <div class="empty-icon">❤️</div>
-        <div class="empty-title">ยังไม่มีเพลงในคลังที่บันทึกไว้</div>
+        <div class="empty-title">${currentAppLang === 'th' ? 'ยังไม่มีเพลงในคลังที่บันทึกไว้' : 'No bookmarked songs in your collection yet'}</div>
         <div class="empty-desc">
-          คุณสามารถกดไอคอนหัวใจ 🤍 บนการ์ดเพลงใบใดก็ได้ เพื่อบันทึกเก็บไว้ใช้ตัดต่อคลิปไทโปในภายหลังได้ตลอดเวลา
+          ${currentAppLang === 'th' ? 'คุณสามารถกดไอคอนหัวใจ 🤍 บนการ์ดเพลงใบใดก็ได้ เพื่อบันทึกเก็บไว้ใช้ตัดต่อคลิปไทโปในภายหลังได้ตลอดเวลา' : 'Click the heart 🤍 icon on any song card to bookmark it for typography video editing anytime.'}
         </div>
         <div class="empty-actions">
           <button class="btn btn-primary" onclick="switchStudioWorkspace('th', true)">
-            🇹🇭 สำรวจเพลงไทย
+            ${currentAppLang === 'th' ? '🇹🇭 สำรวจเพลงไทย' : '🇹🇭 Explore Thai Songs'}
           </button>
           <button class="btn btn-ghost" onclick="switchStudioWorkspace('en', true)">
-            🇬🇧 สำรวจเพลงสากล
+            ${currentAppLang === 'th' ? '🇬🇧 สำรวจเพลงสากล' : '🇬🇧 Explore Global Songs'}
           </button>
           <button class="btn btn-ghost" onclick="switchStudioWorkspace('jp', true)">
-            🇯🇵 สำรวจเพลงอนิเมะ
+            ${currentAppLang === 'th' ? '🇯🇵 สำรวจเพลงอนิเมะ' : '🇯🇵 Explore Anime Songs'}
           </button>
         </div>
       </div>
@@ -465,8 +730,8 @@ function updateVolumeUI() {
 function togglePlaySong(songId) {
   const song = SONGS.find(s => s.id === songId);
   if (!song || !song.previewUrl) {
-    const songTitle = song ? `"${song.title}"` : 'เพลงนี้';
-    showToast(`🎧 ${songTitle} ยังไม่มีตัวอย่าง 30s ในระบบ — กดปุ่ม Spotify เพื่อฟังเพลงเต็ม`);
+    const songTitle = song ? `"${song.title}"` : (currentAppLang === 'th' ? 'เพลงนี้' : 'this track');
+  showToast(currentAppLang === 'th' ? `🎧 ${songTitle} ยังไม่มีตัวอย่าง 30s ในระบบ — กดปุ่ม Spotify เพื่อฟังเพลงเต็ม` : `🎧 30s preview not available for ${songTitle} — Open Spotify for full audio`);
     return;
   }
 
@@ -501,14 +766,14 @@ function togglePlaySong(songId) {
           updateAudioUI(true);
           showBottomPlayer(song);
         }).catch(() => {
-          showToast(`🎧 เสียงตัวอย่างโหลดไม่ได้ — กดปุ่ม Spotify เพื่อฟังเพลงเต็ม`);
+          showToast(currentAppLang === 'th' ? '🎧 เสียงตัวอย่างโหลดไม่ได้ — กดปุ่ม Spotify เพื่อฟังเพลงเต็ม' : '🎧 Could not load audio preview — Open Spotify for full audio');
           currentAudio = null;
           currentPlayingId = null;
           updateAudioUI(false);
         });
         return;
       }
-      showToast(`🎧 เสียงตัวอย่างโหลดไม่ได้ — กดปุ่ม Spotify เพื่อฟังเพลงเต็ม`);
+      showToast(currentAppLang === 'th' ? '🎧 เสียงตัวอย่างโหลดไม่ได้ — กดปุ่ม Spotify เพื่อฟังเพลงเต็ม' : '🎧 Could not load audio preview — Open Spotify for full audio');
       currentAudio = null;
       currentPlayingId = null;
       updateAudioUI(false);
@@ -530,9 +795,9 @@ function togglePlaySong(songId) {
     }).catch(err => {
       console.warn('Audio play() rejected:', err.message);
       if (err.name === 'NotAllowedError') {
-        showToast('🎧 กรุณาคลิกที่หน้าจอก่อนแล้วลองกดเล่นอีกครั้ง');
+        showToast(currentAppLang === 'th' ? '🎧 กรุณาคลิกที่หน้าจอก่อนแล้วลองกดเล่นอีกครั้ง' : '🎧 Please interact with the screen once, then try playing again');
       } else {
-        showToast(`🎧 ไม่สามารถเล่นเสียงได้ — กดปุ่ม Spotify เพื่อฟังเพลงเต็ม`);
+        showToast(currentAppLang === 'th' ? '🎧 ไม่สามารถเล่นเสียงได้ — กดปุ่ม Spotify เพื่อฟังเพลงเต็ม' : '🎧 Unable to play audio preview — Open Spotify for full audio');
       }
       currentAudio = null;
       currentPlayingId = null;
@@ -601,22 +866,31 @@ function updateAudioUI(isPlaying) {
 // ---- BOTTOM PLAYER WITH VOLUME SLIDER & CONTROLS ----
 function showBottomPlayer(song) {
   let player = document.getElementById('bottom-player');
-  if (!player) {
-    player = document.createElement('div');
-    player.id = 'bottom-player';
-    player.className = 'bottom-player';
-    document.body.appendChild(player);
-  }
+  if (!player) return;
 
+  const isSaved = isSongSaved(song.id);
   const percent = Math.round(currentVolume * 100);
   const icon = getVolumeIcon(currentVolume);
-  const isSaved = isSongSaved(song.id);
   const fallbackCover = getSongFallbackCover(song);
 
+  const playTooltip = currentAudio && !currentAudio.paused ? (currentAppLang === 'th' ? 'หยุดชั่วคราว' : 'Pause') : (currentAppLang === 'th' ? 'เล่นต่อ' : 'Play');
+  const muteTooltip = currentAppLang === 'th' ? 'เปิด/ปิดเสียง' : 'Mute / Unmute';
+  const volDownTooltip = currentAppLang === 'th' ? 'ลดเสียง 10%' : 'Volume Down 10%';
+  const volUpTooltip = currentAppLang === 'th' ? 'เพิ่มเสียง 10%' : 'Volume Up 10%';
+  const volSliderTooltip = currentAppLang === 'th' ? 'ปรับระดับเสียง' : 'Adjust Volume';
+  const saveTooltip = isSaved ? (currentAppLang === 'th' ? 'นำออกจากที่บันทึกไว้' : 'Remove from saved') : (currentAppLang === 'th' ? 'บันทึกเพลงนี้' : 'Save this song');
+  const saveLabel = isSaved ? (currentAppLang === 'th' ? '❤️ บันทึกแล้ว' : '❤️ Saved') : (currentAppLang === 'th' ? '🤍 บันทึกเพลง' : '🤍 Save');
+  const matchLabel = currentAppLang === 'th' ? '🌸 ดูคู่ตัดต่อ' : '🌸 View Pair';
+  const ytTooltip = currentAppLang === 'th' ? 'ค้นหาบน YouTube' : 'Search on YouTube';
+  const closeTooltip = currentAppLang === 'th' ? 'ปิดแถบเครื่องเล่น' : 'Close player';
+
   player.innerHTML = `
-    <div class="bp-content">
-      <div class="bp-track-box">
-        <img src="${song.coverUrl}" alt="${song.title}" class="bp-cover ${currentAudio && !currentAudio.paused ? 'spinning' : ''}" onerror="this.onerror=null;this.src='${fallbackCover}';" />
+    <div class="bp-inner">
+      <div class="bp-track">
+        <div class="bp-cover-box">
+          <img src="${song.coverUrl}" alt="${song.title}" class="bp-cover ${currentAudio && !currentAudio.paused ? 'spinning' : ''}" id="bp-cover-img"
+            onerror="this.onerror=null;this.src='${fallbackCover}';" />
+        </div>
         <div class="bp-info">
           <div class="bp-title-wrap" style="display:flex;align-items:center;gap:6px;">
             <div class="bp-title">${song.title}</div>
@@ -627,7 +901,7 @@ function showBottomPlayer(song) {
       </div>
 
       <div class="bp-controls">
-        <button class="bp-play-btn" id="bp-play-btn" onclick="togglePlaySong(${song.id})" title="${currentAudio && !currentAudio.paused ? 'หยุดชั่วคราว' : 'เล่นต่อ'}">
+        <button class="bp-play-btn" id="bp-play-btn" onclick="togglePlaySong(${song.id})" title="${playTooltip}">
           ${currentAudio && !currentAudio.paused
             ? '<svg width="15" height="15" viewBox="0 0 24 24" fill="#000"><rect x="5" y="3" width="4.5" height="18" rx="1.5"></rect><rect x="14.5" y="3" width="4.5" height="18" rx="1.5"></rect></svg>'
             : '<svg width="15" height="15" viewBox="0 0 24 24" fill="#000" style="margin-left:2px;"><polygon points="6 4 20 12 6 20"></polygon></svg>'
@@ -644,23 +918,23 @@ function showBottomPlayer(song) {
 
       <!-- Volume Controls -->
       <div class="bp-volume-panel">
-        <button class="bp-vol-btn" id="bp-mute-btn" onclick="toggleMute()" title="เปิด/ปิดเสียง">
+        <button class="bp-vol-btn" id="bp-mute-btn" onclick="toggleMute()" title="${muteTooltip}">
           ${icon}
         </button>
-        <button class="bp-vol-step-btn" onclick="adjustVolumeStep(-10)" title="ลดเสียง 10%">-</button>
-        <input type="range" min="0" max="100" value="${percent}" class="bp-vol-slider" id="bp-vol-slider" oninput="setVolume(this.value)" title="ปรับระดับเสียง" />
-        <button class="bp-vol-step-btn" onclick="adjustVolumeStep(10)" title="เพิ่มเสียง 10%">+</button>
+        <button class="bp-vol-step-btn" onclick="adjustVolumeStep(-10)" title="${volDownTooltip}">-</button>
+        <input type="range" min="0" max="100" value="${percent}" class="bp-vol-slider" id="bp-vol-slider" oninput="setVolume(this.value)" title="${volSliderTooltip}" />
+        <button class="bp-vol-step-btn" onclick="adjustVolumeStep(10)" title="${volUpTooltip}">+</button>
         <span class="bp-vol-percent" id="bp-vol-percent">${percent}%</span>
       </div>
 
       <div class="bp-actions">
-        <button class="btn-sm btn-bp-save ${isSaved ? 'saved' : ''}" data-save-id="${song.id}" onclick="toggleSaveSong(${song.id}, event)" title="${isSaved ? 'นำออกจากที่บันทึกไว้' : 'บันทึกเพลงนี้'}">
-          ${isSaved ? '❤️ บันทึกแล้ว' : '🤍 บันทึกเพลง'}
+        <button class="btn-sm btn-bp-save ${isSaved ? 'saved' : ''}" data-save-id="${song.id}" onclick="toggleSaveSong(${song.id}, event)" title="${saveTooltip}">
+          ${saveLabel}
         </button>
-        <button class="btn-sm btn-match" onclick="openAnimeMatchModal(${song.id})">🌸 ดูคู่ตัดต่อ</button>
+        <button class="btn-sm btn-match" onclick="openAnimeMatchModal(${song.id})">${matchLabel}</button>
         <a href="${song.spotifyUrl}" target="_blank" class="btn-sm btn-spotify">🎧 Spotify</a>
-        <a href="https://www.youtube.com/results?search_query=${encodeURIComponent(song.title + ' ' + song.artist)}" target="_blank" class="btn-sm btn-yt" title="ค้นหาบน YouTube">▶️ YouTube</a>
-        <button class="bp-close-btn" onclick="hideBottomPlayer()" title="ปิดแถบเครื่องเล่น">✕</button>
+        <a href="https://www.youtube.com/results?search_query=${encodeURIComponent(song.title + ' ' + song.artist)}" target="_blank" class="btn-sm btn-yt" title="${ytTooltip}">▶️ YouTube</a>
+        <button class="bp-close-btn" onclick="hideBottomPlayer()" title="${closeTooltip}">✕</button>
       </div>
     </div>
   `;
@@ -790,30 +1064,119 @@ function updateZoneCounterUI() {
   if (!counterEl) return;
 
   if (total === 0) {
-    counterEl.textContent = `⚠️ ไม่พบเพลงในตัวเลือกนี้ กรุณาลองเปลี่ยนมู้ดหรือความเร็ว BPM`;
+    counterEl.textContent = currentAppLang === 'th'
+      ? `⚠️ ไม่พบเพลงในตัวเลือกนี้ กรุณาลองเปลี่ยนมู้ดหรือความเร็ว BPM`
+      : `⚠️ No tracks found matching these filters. Try changing mood or BPM.`;
     return;
   }
 
   if (played === 0) {
-    counterEl.innerHTML = `${getZoneNameTH(selectedZone)}: พร้อมสุ่มทั้งหมด <strong>${total}</strong> เพลง (ระบบสับไพ่ไม่ซ้ำ)`;
+    counterEl.innerHTML = currentAppLang === 'th'
+      ? `${getZoneName(selectedZone)}: พร้อมสุ่มทั้งหมด <strong>${total}</strong> เพลง (ระบบสับไพ่ไม่ซ้ำ)`
+      : `${getZoneName(selectedZone)}: <strong>${total}</strong> songs ready to roll (non-repeating shuffle)`;
   } else {
-    counterEl.innerHTML = `${getZoneNameTH(selectedZone)}: สุ่มไปแล้ว <strong>${played} / ${total}</strong> เพลง (ไม่ซ้ำ)`;
+    counterEl.innerHTML = currentAppLang === 'th'
+      ? `${getZoneName(selectedZone)}: สุ่มไปแล้ว <strong>${played} / ${total}</strong> เพลง (ไม่ซ้ำ)`
+      : `${getZoneName(selectedZone)}: Rolled <strong>${played} / ${total}</strong> tracks (unique)`;
   }
 }
 
 // ---- RANDOM EXECUTION WITH DICE SFX & 3D TUMBLE ----
+function renderRandomShowcase(song) {
+  const pair = ANIME_PAIRS.find(p => p.songId === song.id);
+  const anime = ANIMES.find(a => a.id === song.animeId) || (pair ? ANIMES.find(a => a.id === pair.animeId) : ANIMES[0]);
+  const isPlaying = currentPlayingId === song.id && currentAudio && !currentAudio.paused;
+  const percent = Math.round(currentVolume * 100);
+  const icon = getVolumeIcon(currentVolume);
+  const animeDisplayName = getAnimeDisplayName(anime);
+  const animeSubName = getAnimeSecondaryName(anime);
+
+  const showcaseEl = document.getElementById('random-showcase');
+  if (!showcaseEl) return;
+
+  showcaseEl.innerHTML = `
+    <div class="studio-random-card studio-card-reveal">
+      <div class="studio-card-header">
+        <div class="studio-header-left">
+          <span class="studio-zone-badge">${getZoneName(song.lang || 'th')}</span>
+          <span class="studio-mood-badge ${moodClass(song.mood)}">${moodLabel(song.mood)}</span>
+          <span class="studio-roll-badge">🎲 ${currentAppLang === 'th' ? 'ผลการสุ่มรอบนี้' : 'Current Roll'}</span>
+        </div>
+        <div class="studio-bpm-tag">⚡ ${formatBpm(song.bpm)}</div>
+      </div>
+
+      <div class="studio-card-grid">
+        <!-- LEFT: SONG SHOWCASE -->
+        <div class="studio-subcard song-subcard">
+          <div class="subcard-title-row">
+            <span class="subcard-icon">🎵</span>
+            <span class="subcard-label">${currentAppLang === 'th' ? 'เพลงที่สุ่มได้' : 'Selected Track'}</span>
+          </div>
+
+          <div class="song-subcard-body">
+            <div class="song-cover-box">
+              <img src="${song.coverUrl}" alt="${song.title}" class="song-cover-main" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${getSongFallbackCover(song)}';" />
+            </div>
+            <div class="song-subcard-info">
+              <div class="song-main-name">${song.title}</div>
+              <div class="song-artist-name">${currentAppLang === 'th' ? 'โดย' : 'By'} ${song.artist} <span class="lang-pill-mini">${langPillText(song.lang)}</span></div>
+              <div class="song-tag-list">
+                ${getSongTagsForDisplay(song).map(t => `<span class="song-tag">${t}</span>`).join('')}
+              </div>
+            </div>
+          </div>
+
+          <!-- Studio Play & Volume Controls -->
+          <div class="subcard-player-strip">
+            <div class="showcase-player-actions">
+              ${renderPlayButton(song.id, isPlaying)}
+              <a href="${song.spotifyUrl}" target="_blank" class="btn-sm btn-spotify">🎧 Spotify</a>
+            </div>
+
+            <div class="showcase-volume-inline">
+              <button class="bp-vol-btn" id="showcase-mute-btn" onclick="toggleMute()" title="${currentAppLang === 'th' ? 'เปิด/ปิดเสียง' : 'Mute / Unmute'}">${icon}</button>
+              <input type="range" min="0" max="100" value="${percent}" class="bp-vol-slider" id="showcase-vol-slider" oninput="setVolume(this.value)" title="${currentAppLang === 'th' ? 'ปรับความดังเสียง' : 'Adjust Volume'}" />
+              <span class="bp-vol-percent" id="showcase-vol-percent">${percent}%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: ANIME MATCH SHOWCASE -->
+        <div class="studio-subcard anime-subcard">
+          <div class="subcard-title-row">
+            <span class="subcard-icon">🌸</span>
+            <span class="subcard-label">${currentAppLang === 'th' ? 'อนิเมะแนะนำสำหรับคลิปนี้' : 'Matched Anime for Editing'}</span>
+          </div>
+
+          <div class="anime-subcard-body">
+            ${animeImgTag(anime, 'anime-poster-main', '', 'eager', 'high')}
+            <div class="anime-subcard-info">
+              <div class="anime-name-th">${animeDisplayName}</div>
+              <div class="anime-name-en">${animeSubName}</div>
+            </div>
+          </div>
+
+          <div class="anime-subcard-footer">
+            <a href="${anime.anifumeUrl}" target="_blank" class="btn-sm btn-anifume">🌸 ${currentAppLang === 'th' ? 'ดูข้อมูลบน Anifume →' : 'View on Anifume →'}</a>
+            <button onclick="openAnimePicker(${song.id})" class="btn-sm btn-switch-anime" title="${currentAppLang === 'th' ? 'เลือกอนิเมะอื่นสำหรับเพลงนี้' : 'Choose another anime'}">🔄 ${currentAppLang === 'th' ? 'เปลี่ยนอนิเมะ' : 'Change Anime'}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
 async function randomSong() {
   const eligible = getEligibleSongsForZone();
   if (eligible.length === 0) {
-    alert('ไม่พบเพลงที่ตรงกับตัวเลือกของคุณ กรุณาปรับเปลี่ยนมู้ดหรือความเร็ว BPM');
+    alert(currentAppLang === 'th' ? 'ไม่พบเพลงที่ตรงกับตัวเลือกของคุณ กรุณาปรับเปลี่ยนมู้ดหรือความเร็ว BPM' : 'No songs match your filter. Please adjust mood or BPM.');
     return;
   }
 
   const btn = document.getElementById('random-btn');
-  btn.textContent = '🎲 กำลังสุ่มเพลง...';
+  btn.textContent = currentAppLang === 'th' ? '🎲 กำลังสุ่มเพลง...' : '🎲 Rolling song...';
   btn.disabled = true;
 
-  // Play dice sound (u_qpfzpy / dice-roll.mp3)
   playDiceSound();
 
   const card = document.getElementById('random-card');
@@ -831,95 +1194,14 @@ async function randomSong() {
   lastRandomSongId = song.id;
   updateZoneCounterUI();
 
-  const pair = ANIME_PAIRS.find(p => p.songId === song.id);
-  const anime = ANIMES.find(a => a.id === song.animeId) || (pair ? ANIMES.find(a => a.id === pair.animeId) : ANIMES[0]);
-
-  const isPlaying = currentPlayingId === song.id && currentAudio && !currentAudio.paused;
-  const percent = Math.round(currentVolume * 100);
-  const icon = getVolumeIcon(currentVolume);
-
-  // Render Dual Showcase Display with Typography Ideas & 1-Click Copy
-  const showcaseEl = document.getElementById('random-showcase');
-  showcaseEl.innerHTML = `
-    <div class="studio-random-card studio-card-reveal">
-      <div class="studio-card-header">
-        <div class="studio-header-left">
-          <span class="studio-zone-badge">${getZoneNameTH(song.lang || 'th')}</span>
-          <span class="studio-mood-badge ${moodClass(song.mood)}">${moodLabel(song.mood)}</span>
-          <span class="studio-roll-badge">🎲 ผลการสุ่มรอบนี้</span>
-        </div>
-        <div class="studio-bpm-tag">⚡ ${song.bpm || 'ปานกลาง'}</div>
-      </div>
-
-      <div class="studio-card-grid">
-        <!-- LEFT: SONG SHOWCASE -->
-        <div class="studio-subcard song-subcard">
-          <div class="subcard-title-row">
-            <span class="subcard-icon">🎵</span>
-            <span class="subcard-label">เพลงที่สุ่มได้</span>
-          </div>
-
-          <div class="song-subcard-body">
-            <div class="song-cover-box">
-              <img src="${song.coverUrl}" alt="${song.title}" class="song-cover-main" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${getSongFallbackCover(song)}';" />
-            </div>
-            <div class="song-subcard-info">
-              <div class="song-main-name">${song.title}</div>
-              <div class="song-artist-name">โดย ${song.artist} <span class="lang-pill-mini">${langPillText(song.lang)}</span></div>
-              <div class="song-tag-list">
-                ${(song.tags || []).map(t => `<span class="song-tag">${t}</span>`).join('')}
-              </div>
-            </div>
-          </div>
-
-          <!-- Studio Play & Volume Controls -->
-          <div class="subcard-player-strip">
-            <div class="showcase-player-actions">
-              ${renderPlayButton(song.id, isPlaying)}
-              <a href="${song.spotifyUrl}" target="_blank" class="btn-sm btn-spotify">🎧 Spotify</a>
-            </div>
-
-            <div class="showcase-volume-inline">
-              <button class="bp-vol-btn" id="showcase-mute-btn" onclick="toggleMute()" title="เปิด/ปิดเสียง">${icon}</button>
-              <input type="range" min="0" max="100" value="${percent}" class="bp-vol-slider" id="showcase-vol-slider" oninput="setVolume(this.value)" title="ปรับความดังเสียง" />
-              <span class="bp-vol-percent" id="showcase-vol-percent">${percent}%</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- RIGHT: ANIME MATCH SHOWCASE -->
-        <div class="studio-subcard anime-subcard">
-          <div class="subcard-title-row">
-            <span class="subcard-icon">🌸</span>
-            <span class="subcard-label">อนิเมะแนะนำสำหรับคลิปนี้</span>
-          </div>
-
-          <div class="anime-subcard-body">
-            ${animeImgTag(anime, 'anime-poster-main', '', 'eager', 'high')}
-            <div class="anime-subcard-info">
-              <div class="anime-name-th">${anime.nameTH}</div>
-              <div class="anime-name-en">${anime.name} • ${(anime.genre || []).join(', ')}</div>
-            </div>
-          </div>
-
-          <div class="anime-subcard-footer">
-            <a href="${anime.anifumeUrl}" target="_blank" class="btn-sm btn-anifume">🌸 ดูข้อมูลบน Anifume →</a>
-            <button onclick="openAnimePicker(${song.id})" class="btn-sm btn-switch-anime" title="เลือกอนิเมะอื่นสำหรับเพลงนี้">🔄 เปลี่ยนอนิเมะ</button>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-  `;
+  renderRandomShowcase(song);
 
   document.getElementById('random-placeholder').classList.add('hidden');
   document.getElementById('random-result').classList.remove('hidden');
 
-  btn.textContent = '🎲 สุ่มเพลงใหม่ในโซนนี้!';
+  btn.textContent = currentAppLang === 'th' ? '🎲 สุ่มเพลงใหม่ในโซนนี้!' : '🎲 Roll New in This Zone!';
   btn.disabled = false;
 
-  // Auto-play preview
   togglePlaySong(song.id);
   document.getElementById('random').scrollIntoView({ behavior: 'smooth' });
 }
@@ -929,14 +1211,7 @@ let currentLangFilter = 'th'; // 'all', 'th', 'en', 'jp'
 let currentMoodFilter = 'all';
 let currentSearchTerm = '';
 
-function langPillText(l) {
-  if (l === 'en') return '🇬🇧 สากล';
-  if (l === 'jp') return '🇯🇵 ญี่ปุ่น';
-  return '🇹🇭 ไทย';
-}
-
 const moodClass = m => ({ sad:'mood-sad', love:'mood-love', hype:'mood-hype', chill:'mood-chill' }[m] || 'mood-chill');
-const moodLabel = m => ({ sad:'💔 เศร้า', love:'❤️ รัก', hype:'🔥 เร้าใจ', chill:'🌊 ชิลล์' }[m] || m);
 
 // รายชื่อ genre และคำค้นที่ไม่เหมาะสม — กรองเฮนไท / เนื้อหาผู้ใหญ่ / 18+ ทั้งหมด
 const BLOCKED_GENRES = [
@@ -962,16 +1237,19 @@ function songCardHTML(song, index = 0) {
                 (ANIMES && ANIMES.find(a => a.id === song.animeId)) ||
                 (ANIMES && ANIMES.find(a => isAnimeAppropriate(a))) ||
                 (ANIMES && ANIMES[0]) || { name: '', nameTH: '', coverUrl: '', coverFallback: '', genre: [] };
-  const tags = (song.tags || []).map(t => `<span class="song-tag">${t}</span>`).join('');
+  const tags = getSongTagsForDisplay(song).map(t => `<span class="song-tag">${t}</span>`).join('');
   const isPlaying = currentPlayingId === song.id && currentAudio && !currentAudio.paused;
   const moodVal = song.mood || 'chill';
   const langVal = song.lang || 'th';
-  const bpmText = song.bpm ? `<span class="song-tag bpm-tag">⚡ ${song.bpm}</span>` : '';
+  const bpmText = song.bpm ? `<span class="song-tag bpm-tag">⚡ ${formatBpm(song.bpm)}</span>` : '';
   const isPriority = typeof index === 'number' && index < 18;
   const loadMode = isPriority ? 'eager' : 'lazy';
   const fetchPri = isPriority ? 'high' : 'auto';
   const priAttr = isPriority ? ' fetchpriority="high"' : '';
   const fallbackCover = getSongFallbackCover(song);
+
+  const animeDisplayName = getAnimeDisplayName(anime);
+  const animeSubName = getAnimeSecondaryName(anime);
 
   return `
     <div class="song-card ${isPlaying ? 'is-playing' : ''}" id="song-${song.id}" data-mood="${moodVal}" data-lang="${langVal}">
@@ -981,32 +1259,32 @@ function songCardHTML(song, index = 0) {
           <img src="${song.coverUrl || fallbackCover}" alt="${song.title}" class="song-cover" loading="${loadMode}" decoding="async"${priAttr} referrerpolicy="no-referrer"
             onload="this.previousElementSibling.style.display='none';this.style.opacity='1';"
             onerror="this.previousElementSibling.style.display='none';this.onerror=null;this.src='${fallbackCover}';this.style.opacity='1';" style="opacity:0;transition:opacity 0.3s;" />
-          <button class="song-play-overlay" onclick="togglePlaySong(${song.id})">
+          <button class="song-play-overlay" onclick="togglePlaySong(${song.id})" title="${isPlaying ? (currentAppLang === 'th' ? 'หยุด' : 'Pause') : (currentAppLang === 'th' ? 'เล่น' : 'Play')}">
             ${isPlaying ? '⏸️' : '▶️'}
           </button>
           ${renderBookmarkBtn(song.id)}
         </div>
-        <div class="song-card-info" onclick="openAnimeMatchModal(${song.id})" title="คลิกเพื่อดูรายละเอียดคู่ตัดต่ออนิเมะ" style="cursor:pointer;">
+        <div class="song-card-info" onclick="openAnimeMatchModal(${song.id})" title="${currentAppLang === 'th' ? 'คลิกเพื่อดูรายละเอียดคู่ตัดต่ออนิเมะ' : 'Click to view anime pairing details'}" style="cursor:pointer;">
           <div class="song-card-badges">
             <span class="song-mood ${moodClass(moodVal)}">${moodLabel(moodVal)}</span>
             <span class="song-lang-badge">${langPillText(langVal)}</span>
           </div>
           <div class="song-title">${song.title}</div>
-          <div class="song-artist">${song.artist}</div>
+          <div class="song-artist">${currentAppLang === 'th' ? 'โดย' : 'By'} ${song.artist}</div>
           <div class="song-tags">${tags}${bpmText}</div>
         </div>
       </div>
 
       <!-- Matched Anime Bar -->
-      <div class="song-anime-bar" onclick="openAnimeMatchModal(${song.id})" title="คลิกเพื่อดูรายละเอียดอนิเมะ">
+      <div class="song-anime-bar" onclick="openAnimeMatchModal(${song.id})" title="${currentAppLang === 'th' ? 'คลิกเพื่อดูรายละเอียดอนิเมะ' : 'Click to view anime details'}">
         <div class="anime-bar-img-wrap">
           <div class="img-skeleton img-skeleton-mini"></div>
           ${animeImgTag(anime, 'song-anime-poster-mini', 'opacity:0;transition:opacity 0.3s;', loadMode, fetchPri).replace('/>', ' onload="this.previousElementSibling.style.display=\'none\';this.style.opacity=\'1\';" onerror="this.previousElementSibling.style.display=\'none\';" />')}
         </div>
         <div class="song-anime-bar-info">
-          <div class="song-anime-bar-sub">🌸 แนะนำตัดกับอนิเมะ:</div>
-          <div class="song-anime-bar-name">${anime.nameTH}</div>
-          <div class="song-anime-bar-en">${anime.name}</div>
+          <div class="song-anime-bar-sub">${currentAppLang === 'th' ? '🌸 แนะนำตัดกับอนิเมะ:' : '🌸 Matched Anime:'}</div>
+          <div class="song-anime-bar-name">${animeDisplayName}</div>
+          <div class="song-anime-bar-en">${animeSubName}</div>
         </div>
         <span class="song-anime-bar-arrow">➔</span>
       </div>
@@ -1018,8 +1296,8 @@ function songCardHTML(song, index = 0) {
         <a href="${song.spotifyUrl}" target="_blank" class="btn-sm btn-spotify">
           🎧 Spotify
         </a>
-        <button class="btn-sm btn-anime-match" onclick="openAnimePicker(${song.id})" title="เปลี่ยนคู่ตัดต่ออนิเมะ">
-          🌸 จับคู่อนิเมะ
+        <button class="btn-sm btn-anime-match" onclick="openAnimePicker(${song.id})" title="${currentAppLang === 'th' ? 'เปลี่ยนคู่ตัดต่ออนิเมะ' : 'Switch matched anime'}">
+          ${currentAppLang === 'th' ? '🌸 จับคู่อนิเมะ' : '🌸 Anime Match'}
         </button>
       </div>
     </div>`;
@@ -1059,8 +1337,8 @@ function renderSongsGrid() {
   if (!filtered.length) {
     grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;color:var(--text-muted);padding:3.5rem;">
       <div style="font-size:2.5rem;margin-bottom:0.8rem;">🔍</div>
-      <div style="font-size:1.15rem;font-weight:600;color:#fff;margin-bottom:0.4rem;">ไม่พบเพลงที่ค้นหา</div>
-      <div style="font-size:0.9rem;">ลองค้นหาด้วยคำอื่น หรือกดปุ่ม "ทั้งหมด" เพื่อรีเซ็ตตัวกรอง</div>
+      <div style="font-size:1.15rem;font-weight:600;color:#fff;margin-bottom:0.4rem;">${currentAppLang === 'th' ? 'ไม่พบเพลงที่ค้นหา' : 'No songs found'}</div>
+      <div style="font-size:0.9rem;">${currentAppLang === 'th' ? 'ลองค้นหาด้วยคำอื่น หรือกดปุ่ม "ทั้งหมด" เพื่อรีเซ็ตตัวกรอง' : 'Try searching with different keywords or click "All" to reset filters.'}</div>
     </div>`;
     if (loadMoreWrap) loadMoreWrap.style.display = 'none';
     return;
@@ -1257,6 +1535,7 @@ function loadVersus() {
 
 function renderVsSide(containerId, song, side) {
   const anime = ANIMES.find(a => a.id === song.animeId) || ANIMES[0];
+  const animeDisplayName = getAnimeDisplayName(anime);
   const el = document.getElementById(containerId);
   el.innerHTML = `
     <div class="vs-cover-row">
@@ -1266,13 +1545,13 @@ function renderVsSide(containerId, song, side) {
       </div>
     </div>
     <div class="vs-song-title">${song.title}</div>
-    <div class="vs-song-artist">${song.artist}</div>
+    <div class="vs-song-artist">${currentAppLang === 'th' ? 'โดย' : 'By'} ${song.artist}</div>
     <div style="margin-bottom:0.6rem;display:flex;gap:0.4rem;justify-content:center;">
       <span class="song-mood ${moodClass(song.mood)}">${moodLabel(song.mood)}</span>
       <span class="song-lang-badge">${langPillText(song.lang)}</span>
     </div>
     <div class="vs-anime-hint">
-      🌸 อนิเมะแนะนำ: <strong>${anime.nameTH}</strong>
+      ${currentAppLang === 'th' ? '🌸 อนิเมะแนะนำ:' : '🌸 Matched Anime:'} <strong>${animeDisplayName}</strong>
     </div>
     ${renderPlayButton(song.id, currentPlayingId === song.id && currentAudio && !currentAudio.paused)}
   `;
@@ -1294,20 +1573,33 @@ function vote(side) {
 
   const resultEl = document.getElementById('vs-result');
   resultEl.classList.remove('hidden');
+
+  const winnerTitle = currentAppLang === 'th'
+    ? `🏆 คุณเลือก <strong>"${winner.title}"</strong> โดย ${winner.artist}!`
+    : `🏆 You chose <strong>"${winner.title}"</strong> by ${winner.artist}!`;
+
+  const winnerSub = currentAppLang === 'th'
+    ? `เพลงสไตล์ ${moodLabel(winner.mood)} (${langPillText(winner.lang)}) — เหมาะมากสำหรับการทำคลิปไทโป ✨`
+    : `${moodLabel(winner.mood)} vibe (${langPillText(winner.lang)}) — Outstanding choice for typography clips ✨`;
+
+  const animeRecHeader = currentAppLang === 'th'
+    ? '🌸 อนิเมะแนะนำให้เอาไปตัดต่อคู่กัน:'
+    : '🌸 Recommended anime scene for this track:';
+
+  const anifumeText = currentAppLang === 'th' ? '🌸 เปิดดูบน Anifume →' : '🌸 View on Anifume →';
+
   resultEl.innerHTML = `
-    <div style="font-size:1.35rem;margin-bottom:0.4rem;color:#fff;">🏆 คุณเลือก <strong>"${winner.title}"</strong> โดย ${winner.artist}!</div>
-    <div style="color:var(--text-muted);font-size:0.95rem;margin-bottom:1.2rem;">
-      เพลงสไตล์ ${moodLabel(winner.mood)} (${langPillText(winner.lang)}) — เหมาะมากสำหรับการทำคลิปไทโป ✨
-    </div>
+    <div style="font-size:1.35rem;margin-bottom:0.4rem;color:#fff;">${winnerTitle}</div>
+    <div style="color:var(--text-muted);font-size:0.95rem;margin-bottom:1.2rem;">${winnerSub}</div>
     ${anime ? `
       <div class="vs-anime-recommend">
-        <div style="font-weight:700;margin-bottom:0.8rem;color:var(--primary);font-size:1.05rem;">🌸 อนิเมะแนะนำให้เอาไปตัดต่อคู่กัน:</div>
+        <div style="font-weight:700;margin-bottom:0.8rem;color:var(--primary);font-size:1.05rem;">${animeRecHeader}</div>
         <div style="display:flex;gap:1.2rem;align-items:center;justify-content:center;flex-wrap:wrap;">
           ${animeImgTag(anime, 'vs-anime-img', 'width:90px;height:130px;object-fit:cover;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,0.6);')}
           <div style="text-align:left;max-width:420px;">
-            <div style="font-weight:700;font-size:1.15rem;color:#fff;">${anime.nameTH}</div>
-            <div style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.4rem;">${anime.name} • ${anime.genre.join(', ')}</div>
-            <a href="${anime.anifumeUrl}" target="_blank" class="random-anime-link" style="display:inline-block;margin-top:0.5rem;">🌸 เปิดดูบน Anifume →</a>
+            <div style="font-weight:700;font-size:1.15rem;color:#fff;">${getAnimeDisplayName(anime)}</div>
+            <div style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.4rem;">${getAnimeSecondaryName(anime)}</div>
+            <a href="${anime.anifumeUrl}" target="_blank" class="random-anime-link" style="display:inline-block;margin-top:0.5rem;">${anifumeText}</a>
           </div>
         </div>
       </div>
@@ -1337,6 +1629,8 @@ function renderAnimeMatchGrid(filterCategory = 'all') {
     const loadMode = isPriority ? 'eager' : 'lazy';
     const fetchPri = isPriority ? 'high' : 'auto';
     const priAttr = isPriority ? ' fetchpriority="high"' : '';
+    const badgeText = pair.badge ? (currentAppLang === 'th' ? pair.badge : '✨ Curated Match') : (currentAppLang === 'th' ? '✨ คู่แนะนำ' : '✨ Recommended Pair');
+    const anifumeLabel = currentAppLang === 'th' ? '🌸 ดูบน Anifume' : '🌸 View on Anifume';
 
     return `
       <div class="match-card" id="pair-${pair.songId}-${pair.animeId}">
@@ -1344,7 +1638,7 @@ function renderAnimeMatchGrid(filterCategory = 'all') {
           <div class="match-anime-half">
             ${animeImgTag(anime, 'match-anime-poster', '', loadMode, fetchPri)}
             <div class="match-anime-overlay"></div>
-            <div class="match-anime-tag">🌸 ${anime.nameTH}</div>
+            <div class="match-anime-tag">🌸 ${getAnimeDisplayName(anime)}</div>
           </div>
           
           <div class="match-energy-node">⇄</div>
@@ -1358,25 +1652,25 @@ function renderAnimeMatchGrid(filterCategory = 'all') {
 
         <div class="match-card-body">
           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:0.6rem;">
-            <span class="match-badge-chip">${pair.badge || '✨ คู่แนะนำ'}</span>
+            <span class="match-badge-chip">${badgeText}</span>
             <span class="song-lang-badge">${langPillText(song.lang)}</span>
           </div>
           
           <div class="match-titles-row">
             <div class="match-left-title">
-              <div class="anime-main-name">${anime.nameTH}</div>
-              <div class="anime-sub-name">${anime.name} • ${anime.genre.join(', ')}</div>
+              <div class="anime-main-name">${getAnimeDisplayName(anime)}</div>
+              <div class="anime-sub-name">${getAnimeSecondaryName(anime)}</div>
             </div>
             <div class="match-right-song">
               <div class="song-main-title">${song.title}</div>
-              <div class="song-artist-name">โดย ${song.artist} <span class="song-mood ${moodClass(song.mood)}" style="font-size:0.7rem;padding:0.1rem 0.5rem;">${moodLabel(song.mood)}</span></div>
+              <div class="song-artist-name">${currentAppLang === 'th' ? 'โดย' : 'By'} ${song.artist} <span class="song-mood ${moodClass(song.mood)}" style="font-size:0.7rem;padding:0.1rem 0.5rem;">${moodLabel(song.mood)}</span></div>
             </div>
           </div>
 
           <div class="match-card-footer">
             ${renderPlayButton(song.id, isPlaying)}
             <div style="display:flex;gap:0.5rem;">
-              <a href="${anime.anifumeUrl}" target="_blank" class="match-open-btn match-open-btn-alt">🌸 ดูบน Anifume</a>
+              <a href="${anime.anifumeUrl}" target="_blank" class="match-open-btn match-open-btn-alt">${anifumeLabel}</a>
               <a href="${song.spotifyUrl}" target="_blank" class="match-open-btn">🎧 Spotify</a>
             </div>
           </div>
@@ -1398,8 +1692,11 @@ function populateFinderDropdowns() {
   const animeSelect = document.getElementById('finder-anime-select');
   if (!songSelect || !animeSelect) return;
 
-  songSelect.innerHTML = '<option value="">-- เลือกเพลงที่ชอบ --</option>';
-  animeSelect.innerHTML = '<option value="">-- เลือกอนิเมะที่ต้องการตัดต่อ --</option>';
+  const songPlaceholder = currentAppLang === 'th' ? '-- เลือกเพลงที่ชอบ --' : '-- Select a song you like --';
+  const animePlaceholder = currentAppLang === 'th' ? '-- เลือกอนิเมะที่ต้องการตัดต่อ --' : '-- Select anime for editing --';
+
+  songSelect.innerHTML = `<option value="">${songPlaceholder}</option>`;
+  animeSelect.innerHTML = `<option value="">${animePlaceholder}</option>`;
 
   SONGS.forEach(s => {
     const opt = document.createElement('option');
@@ -1411,7 +1708,7 @@ function populateFinderDropdowns() {
   ANIMES.forEach(a => {
     const opt = document.createElement('option');
     opt.value = a.id;
-    opt.textContent = `${a.nameTH} (${a.name})`;
+    opt.textContent = getAnimeDisplayName(a);
     animeSelect.appendChild(opt);
   });
 }
@@ -1480,7 +1777,6 @@ function openAnimePicker(songId) {
   if (!song) return;
   _pickerSongId = songId;
 
-  // Find matching moods from this song to suggest animes (กรองเนื้อหาไม่เหมาะสมออก)
   const songMood = song.mood || 'chill';
   const safeAnimes = ANIMES.filter(a => isAnimeAppropriate(a));
   const matchedAnimes = safeAnimes.filter(a => a.mood === songMood).slice(0, 30);
@@ -1490,13 +1786,20 @@ function openAnimePicker(songId) {
   const content = document.getElementById('anime-picker-content');
   if (!content) return;
 
+  const promptText = currentAppLang === 'th'
+    ? `เลือกอนิเมะที่เข้ากับอารมณ์เพลงนี้ — อนิเมะมู้ด <span style="color:var(--primary);font-weight:700;">${moodLabel(songMood)}</span> แนะนำเป็นอันดับต้น`
+    : `Select an anime matching this song's vibe — <span style="color:var(--primary);font-weight:700;">${moodLabel(songMood)}</span> anime recommended first`;
+
+  const matchBadgeText = currentAppLang === 'th' ? '★ เข้ากัน' : '★ Match';
+  const cancelText = currentAppLang === 'th' ? 'ยกเลิก' : 'Cancel';
+
   content.innerHTML = `
     <div style="margin-bottom:1.4rem;">
       <div style="font-size:0.78rem;font-weight:700;color:var(--primary);letter-spacing:1px;text-transform:uppercase;margin-bottom:0.5rem;">ANIME PAIRING STUDIO</div>
       <div style="font-size:1.3rem;font-weight:800;color:#fff;margin-bottom:0.3rem;">🎵 ${song.title}</div>
-      <div style="color:var(--text-muted);font-size:0.9rem;margin-bottom:0.8rem;">โดย ${song.artist} • ${moodLabel(songMood)}</div>
+      <div style="color:var(--text-muted);font-size:0.9rem;margin-bottom:0.8rem;">${currentAppLang === 'th' ? 'โดย' : 'By'} ${song.artist} • ${moodLabel(songMood)}</div>
       <div style="font-size:0.95rem;color:var(--text-muted);">
-        เลือกอนิเมะที่เข้ากับอารมณ์เพลงนี้ — อนิเมะมู้ด <span style="color:var(--primary);font-weight:700;">${moodLabel(songMood)}</span> แนะนำเป็นอันดับต้น
+        ${promptText}
       </div>
     </div>
 
@@ -1504,19 +1807,19 @@ function openAnimePicker(songId) {
       ${suggestedAnimes.map(anime => {
         const isMoodMatch = anime.mood === songMood;
         return `
-          <div class="anime-picker-card ${isMoodMatch ? 'mood-match' : ''}" onclick="selectAnimePair(${song.id}, ${anime.id})" title="${anime.nameTH}">
+          <div class="anime-picker-card ${isMoodMatch ? 'mood-match' : ''}" onclick="selectAnimePair(${song.id}, ${anime.id})" title="${getAnimeDisplayName(anime)}">
             ${animeImgTag(anime, 'picker-anime-img')}
             <div class="picker-anime-info">
-              ${isMoodMatch ? '<span class="picker-match-badge">★ เข้ากัน</span>' : ''}
-              <div class="picker-anime-name">${anime.nameTH}</div>
-              <div class="picker-anime-en">${anime.name}</div>
+              ${isMoodMatch ? `<span class="picker-match-badge">${matchBadgeText}</span>` : ''}
+              <div class="picker-anime-name">${getAnimeDisplayName(anime)}</div>
+              <div class="picker-anime-en">${getAnimeSecondaryName(anime)}</div>
             </div>
           </div>`;
       }).join('')}
     </div>
 
     <div style="margin-top:1.2rem;padding-top:1rem;border-top:1px solid var(--glass-border);text-align:center;">
-      <button onclick="closeAnimePicker()" style="background:none;border:1px solid var(--glass-border);color:var(--text-muted);padding:0.5rem 1.5rem;border-radius:9999px;cursor:pointer;font-family:Kanit,sans-serif;">ยกเลิก</button>
+      <button onclick="closeAnimePicker()" style="background:none;border:1px solid var(--glass-border);color:var(--text-muted);padding:0.5rem 1.5rem;border-radius:9999px;cursor:pointer;font-family:Kanit,sans-serif;">${cancelText}</button>
     </div>
   `;
 
@@ -1537,8 +1840,16 @@ function selectAnimePair(songId, animeId) {
 
   const fallbackCover = getSongFallbackCover(song);
   const isPlaying = currentPlayingId === song.id && currentAudio && !currentAudio.paused;
+  const isSaved = isSongSaved(song.id);
 
-  // Show the full detail modal with this specific pairing (ไม่แสดง typoIdea)
+  const saveBtnText = isSaved
+    ? (currentAppLang === 'th' ? '❤️ บันทึกแล้ว' : '❤️ Saved')
+    : (currentAppLang === 'th' ? '🤍 บันทึกเพลงนี้' : '🤍 Save this song');
+
+  const anifumeBtnText = currentAppLang === 'th' ? '🌸 ดูข้อมูลและตอนที่ Anifume →' : '🌸 View details on Anifume →';
+  const switchAnimeText = currentAppLang === 'th' ? '🔄 เปลี่ยนอนิเมะ' : '🔄 Switch Anime';
+  const recAnimeHeader = currentAppLang === 'th' ? '✅ อนิเมะแนะนำสำหรับตัดต่อคู่กัน' : '✅ Recommended Anime Pairing for Editing';
+
   document.getElementById('modal-content').innerHTML = `
     <div style="margin-bottom:0.5rem;font-size:0.75rem;color:var(--primary);font-weight:700;letter-spacing:1px;">TYPO CLIP PAIRING</div>
     <div class="modal-header">
@@ -1546,32 +1857,32 @@ function selectAnimePair(songId, animeId) {
         onerror="this.onerror=null;this.src='${fallbackCover}';" />
       <div>
         <div class="modal-title">${song.title}</div>
-        <div class="modal-artist">โดย ${song.artist} <span class="song-lang-badge">${langPillText(song.lang)}</span></div>
+        <div class="modal-artist">${currentAppLang === 'th' ? 'โดย' : 'By'} ${song.artist} <span class="song-lang-badge">${langPillText(song.lang)}</span></div>
         <span class="song-mood ${moodClass(song.mood)}">${moodLabel(song.mood)}</span>
-        <span class="song-tag" style="margin-left:0.4rem;">⚡ ${song.bpm}</span>
+        <span class="song-tag" style="margin-left:0.4rem;">⚡ ${formatBpm(song.bpm)}</span>
         <div style="margin-top:0.8rem;display:flex;gap:0.6rem;flex-wrap:wrap;">
           ${renderPlayButton(song.id, isPlaying)}
-          <a href="${song.spotifyUrl}" target="_blank" class="btn-sm btn-spotify">🎧 ฟังเต็มบน Spotify</a>
-          <button class="btn-sm btn-modal-save ${isSongSaved(song.id) ? 'saved' : ''}" data-save-id="${song.id}" onclick="toggleSaveSong(${song.id}, event)">
-            ${isSongSaved(song.id) ? '❤️ บันทึกแล้ว' : '🤍 บันทึกเพลงนี้'}
+          <a href="${song.spotifyUrl}" target="_blank" class="btn-sm btn-spotify">${currentAppLang === 'th' ? '🎧 ฟังเต็มบน Spotify' : '🎧 Listen on Spotify'}</a>
+          <button class="btn-sm btn-modal-save ${isSaved ? 'saved' : ''}" data-save-id="${song.id}" onclick="toggleSaveSong(${song.id}, event)">
+            ${saveBtnText}
           </button>
         </div>
       </div>
     </div>
 
     <div style="margin-top:1.5rem;padding:1rem;background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.2);border-radius:12px;">
-      <div style="font-size:0.8rem;color:var(--primary);font-weight:700;margin-bottom:0.6rem;">✅ อนิเมะแนะนำสำหรับตัดต่อคู่กัน</div>
+      <div style="font-size:0.8rem;color:var(--primary);font-weight:700;margin-bottom:0.6rem;">${recAnimeHeader}</div>
       <div class="modal-anime-showcase">
         ${animeImgTag(anime, 'modal-anime-img')}
         <div class="modal-anime-info">
-          <div style="font-weight:700;color:var(--primary);font-size:1.25rem;">${anime.nameTH}</div>
-          <div style="color:var(--text-muted);font-size:0.85rem;margin-bottom:0.4rem;">${anime.name}</div>
+          <div style="font-weight:700;color:var(--primary);font-size:1.25rem;">${getAnimeDisplayName(anime)}</div>
+          <div style="color:var(--text-muted);font-size:0.85rem;margin-bottom:0.4rem;">${getAnimeSecondaryName(anime)}</div>
           <div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:0.8rem;">
-            ${(anime.genre || []).map(g => `<span style="background:rgba(255,255,255,0.08);padding:0.15rem 0.5rem;border-radius:6px;font-size:0.75rem;color:var(--text-muted);">${g}</span>`).join('')}
+            ${(anime.genre || []).map(g => `<span style="background:rgba(255,255,255,0.08);padding:0.15rem 0.5rem;border-radius:6px;font-size:0.75rem;color:var(--text-muted);">${translateGenre(g)}</span>`).join('')}
           </div>
           <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
-            <a href="${anime.anifumeUrl}" target="_blank" class="btn-sm btn-anifume">🌸 ดูข้อมูลและตอนที่ Anifume →</a>
-            <button onclick="openAnimePicker(${song.id})" class="btn-sm" style="background:rgba(99,102,241,0.15);border:1px solid rgba(99,102,241,0.3);color:#a5b4fc;cursor:pointer;border-radius:9999px;font-family:Kanit,sans-serif;">🔄 เปลี่ยนอนิเมะ</button>
+            <a href="${anime.anifumeUrl}" target="_blank" class="btn-sm btn-anifume">${anifumeBtnText}</a>
+            <button onclick="openAnimePicker(${song.id})" class="btn-sm" style="background:rgba(99,102,241,0.15);border:1px solid rgba(99,102,241,0.3);color:#a5b4fc;cursor:pointer;border-radius:9999px;font-family:Kanit,sans-serif;">${switchAnimeText}</button>
           </div>
         </div>
       </div>
@@ -1651,7 +1962,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function updateStats() {
-  updateSavedBadges();
   const songsCountEl = document.getElementById('stat-songs-count');
   const animeCountEl = document.getElementById('stat-anime-count');
   const pairsCountEl = document.getElementById('stat-pairs-count');
@@ -1666,10 +1976,13 @@ function updateStats() {
   const countTh = document.getElementById('zone-count-th');
   const countEn = document.getElementById('zone-count-en');
   const countJp = document.getElementById('zone-count-jp');
+  const countAll = document.getElementById('zone-count-all');
 
-  if (countTh) countTh.textContent = `${thCount} เพลง`;
-  if (countEn) countEn.textContent = `${enCount} เพลง`;
-  if (countJp) countJp.textContent = `${jpCount} เพลง`;
+  if (countTh) countTh.textContent = `${thCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (countEn) countEn.textContent = `${enCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (countJp) countJp.textContent = `${jpCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (countAll) countAll.textContent = `${SONGS.length} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+
   const hubTh = document.getElementById('hub-count-th');
   const hubEn = document.getElementById('hub-count-en');
   const hubJp = document.getElementById('hub-count-jp');
@@ -1685,34 +1998,17 @@ function updateStats() {
   if (szEn) szEn.textContent = `${enCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
   if (szJp) szJp.textContent = `${jpCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
   if (szPairs) szPairs.textContent = `${ANIMES.length} ${currentAppLang === 'th' ? 'เรื่อง' : 'titles'}`;
-  const heroExploreBtn = document.querySelector('a[href="#songs"].btn-ghost');
+
+  const filterPairAll = document.getElementById('filter-pair-all');
+  if (filterPairAll) {
+    filterPairAll.textContent = currentAppLang === 'th' ? `🌟 ทุกคู่ (${ANIME_PAIRS.length} คู่)` : `🌟 All Pairs (${ANIME_PAIRS.length})`;
+  }
+
+  const heroExploreBtn = document.getElementById('hero-btn-songs');
   if (heroExploreBtn) {
     heroExploreBtn.innerHTML = currentAppLang === 'th'
       ? `🎵 สำรวจคลังเพลง (<span id="hero-song-count">${SONGS.length}</span> เพลง)`
-      : `🎵 Explore Music (<span id="hero-song-count">${SONGS.length}</span> tracks)`;
-  }
-
-  const zoneTabAll = document.querySelector('.zone-tab-btn[data-zone="all"] .zone-tab-count');
-  if (zoneTabAll) zoneTabAll.textContent = `${SONGS.length} เพลง`;
-
-  const langAllBtn = document.querySelector('.lang-tab-btn[data-lang="all"]');
-  const langThBtn = document.querySelector('.lang-tab-btn[data-lang="th"]');
-  const langEnBtn = document.querySelector('.lang-tab-btn[data-lang="en"]');
-  const langJpBtn = document.querySelector('.lang-tab-btn[data-lang="jp"]');
-
-  if (langAllBtn) langAllBtn.textContent = `🌐 ทั้งหมด (${SONGS.length})`;
-  if (langThBtn) langThBtn.textContent = `🇹🇭 เพลงไทย (${thCount})`;
-  if (langEnBtn) langEnBtn.textContent = `🇬🇧 เพลงสากล English (${enCount})`;
-  if (langJpBtn) langJpBtn.textContent = `🇯🇵 ญี่ปุ่น & อนิเมะ (${jpCount})`;
-
-  const matchFilterAll = document.querySelector('.match-filter-btn[data-filter="all"]');
-  if (matchFilterAll) matchFilterAll.textContent = `🌟 ทุกคู่ (${ANIME_PAIRS.length} คู่)`;
-
-  const matchDesc = document.getElementById('match-section-desc');
-  if (matchDesc) {
-    matchDesc.textContent = currentAppLang === 'th'
-      ? `รวม ${ANIME_PAIRS.length} คู่เพลง และอนิเมะ ${ANIMES.length} เรื่อง พร้อมภาพโปสเตอร์และตัวอย่างเพลงสำหรับตัดต่อ`
-      : `Total ${ANIME_PAIRS.length} Song & Anime Pairs across ${ANIMES.length} titles with posters and music previews for editing`;
+      : `🎵 Explore Song Vault (<span id="hero-song-count">${SONGS.length}</span> songs)`;
   }
 }
 
