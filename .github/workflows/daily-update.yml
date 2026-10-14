@@ -1,0 +1,39 @@
+name: Daily Auto-Drop & Deploy
+
+on:
+  schedule:
+    # รันทุกวันเวลา 00:00 น. ตามเวลาไทย (17:00 UTC)
+    - cron: '0 17 * * *'
+  # สามารถกดปุ่ม Run Workflow ได้เองตลอดเวลาจากหน้าเว็บ GitHub
+  workflow_dispatch:
+
+jobs:
+  daily-update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 📥 ดึงโค้ดโปรเจกต์
+        uses: actions/checkout@v4
+
+      - name: ⚙️ ติดตั้ง Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 🎵 รันสคริปต์ดึงเพลงและอนิเมะประจำวัน
+        run: node auto_update_daily.js --force
+
+      - name: 💾 บันทึกและ Push เพลงใหม่กลับเข้าคลัง
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action Bot"
+          git add data.js .daily_sync.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(auto): Daily auto-drop new songs & anime [skip ci]" && git push)
+
+      - name: 🚀 Deploy ขึ้น Netlify Production ทันที
+        run: npx -y netlify-cli deploy --prod --dir .
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
