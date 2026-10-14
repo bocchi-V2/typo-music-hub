@@ -11,6 +11,9 @@
     "add:anime": "node manage_content.js add-anime",
     "batch": "node batch_add_hits.js",
     "deploy": "node manage_content.js deploy",
+    "daily": "node auto_update_daily.js",
+    "daily:force": "node auto_update_daily.js --force",
+    "daily:deploy": "node auto_update_daily.js --force --deploy",
     "check": "node -c app.js && node -c data.js && node manage_content.js audit"
   },
   "keywords": [

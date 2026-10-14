@@ -5478,6 +5478,272 @@ const ANIMES = [
     "coverFallback": "https://shikimori.one/system/animes/original/57706.jpg",
     "anifumeUrl": "https://anifume.com/?s=Monogatari%20Series%3A%20Off%20%26%20Monster%20Season",
     "mood": "chill"
+  },
+  {
+    "id": 388,
+    "name": "Demon Slayer: Kimetsu no Yaiba",
+    "nameTH": "ดาบพิฆาตอสูร",
+    "genre": [
+      "แอ็กชัน",
+      "ดราม่า",
+      "เหนือธรรมชาติ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42422/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/38000.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Demon%20Slayer",
+    "mood": "hype"
+  },
+  {
+    "id": 389,
+    "name": "Tokyo Ghoul",
+    "nameTH": "โตเกียวกูล",
+    "genre": [
+      "ดาร์กแฟนตาซี",
+      "จิตวิทยา",
+      "แอ็กชัน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7526/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/22319.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Tokyo%20Ghoul",
+    "mood": "sad"
+  },
+  {
+    "id": 390,
+    "name": "Fullmetal Alchemist: Brotherhood",
+    "nameTH": "แขนกลคนแปรธาตุ บราเธอร์ฮู้ด",
+    "genre": [
+      "แอ็กชัน",
+      "ผจญภัย",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/5114.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Fullmetal%20Alchemist%20Brotherhood",
+    "mood": "hype"
+  },
+  {
+    "id": 391,
+    "name": "Clannad",
+    "nameTH": "แคลนนาด",
+    "genre": [
+      "ดราม่า",
+      "ซึ้งกินใจ",
+      "โรแมนติก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1491/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/2167.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Clannad",
+    "mood": "sad"
+  },
+  {
+    "id": 392,
+    "name": "Sword Art Online",
+    "nameTH": "ซอร์ดอาร์ตออนไลน์",
+    "genre": [
+      "แอ็กชัน",
+      "ผจญภัย",
+      "โรแมนติก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/5447/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/11757.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Sword%20Art%20Online",
+    "mood": "hype"
+  },
+  {
+    "id": 393,
+    "name": "Naruto Shippuden",
+    "nameTH": "นารูโตะ ชิปปุเดน",
+    "genre": [
+      "แอ็กชัน",
+      "ผจญภัย",
+      "โชเน็น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/655/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/1735.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Naruto%20Shippuden",
+    "mood": "hype"
+  },
+  {
+    "id": 394,
+    "name": "Chainsaw Man",
+    "nameTH": "ชายนซอว์แมน",
+    "genre": [
+      "แอ็กชัน",
+      "ดาร์กแฟนตาซี",
+      "โชเน็น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46520/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/44511.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Chainsaw%20Man",
+    "mood": "hype"
+  },
+  {
+    "id": 395,
+    "name": "Oshi no Ko",
+    "nameTH": "โอชิโนโกะ ดาวในดวงใจ",
+    "genre": [
+      "ดราม่า",
+      "ลึกลับ",
+      "วงการบันเทิง"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/47195/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/52034.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Oshi+no+Ko",
+    "mood": "hype"
+  },
+  {
+    "id": 396,
+    "name": "Blue Lock",
+    "nameTH": "บลูล็อค เกมล่าแข้งอัจฉริยะ",
+    "genre": [
+      "กีฬา",
+      "โชเน็น",
+      "แข่งขัน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46572/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/49596.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Blue+Lock",
+    "mood": "hype"
+  },
+  {
+    "id": 397,
+    "name": "Bocchi the Rock!",
+    "nameTH": "บ็อคจิเดอะร็อค!",
+    "genre": [
+      "ดนตรี",
+      "คอมเมดี้",
+      "ชีวิตประจำวัน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46722/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/47917.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Bocchi+the+Rock",
+    "mood": "chill"
+  },
+  {
+    "id": 398,
+    "name": "Spy x Family",
+    "nameTH": "สายลับ x ครอบครัว",
+    "genre": [
+      "แอ็กชัน",
+      "คอมเมดี้",
+      "ครอบครัว"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/45622/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/50265.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Spy+x+Family",
+    "mood": "love"
+  },
+  {
+    "id": 399,
+    "name": "Frieren: Beyond Journey's End",
+    "nameTH": "ฟรีเรน นักเวทย์เหนือกาลเวลา",
+    "genre": [
+      "แฟนตาซี",
+      "ดราม่า",
+      "ผจญภัย"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/47390/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/52991.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Frieren",
+    "mood": "sad"
+  },
+  {
+    "id": 400,
+    "name": "Demon Slayer: Kimetsu no Yaiba",
+    "nameTH": "ดาบพิฆาตอสูร",
+    "genre": [
+      "แอ็กชัน",
+      "ดาร์กแฟนตาซี",
+      "โชเน็น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/43947/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/38000.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kimetsu+no+Yaiba",
+    "mood": "hype"
+  },
+  {
+    "id": 401,
+    "name": "Mushishi",
+    "nameTH": "มูชิชิ นักล่าวิญญาณลึกลับ",
+    "genre": [
+      "ลึกลับ",
+      "แฟนตาซี",
+      "ชีวิตประจำวัน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3702/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/457.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Mushishi",
+    "mood": "chill"
+  },
+  {
+    "id": 402,
+    "name": "One Piece",
+    "nameTH": "วันพีซ",
+    "genre": [
+      "แอ็กชัน",
+      "ผจญภัย",
+      "โชเน็น"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/12/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/21.jpg",
+    "anifumeUrl": "https://anifume.com/?s=One+Piece",
+    "mood": "hype"
+  },
+  {
+    "id": 403,
+    "name": "Neon Genesis Evangelion",
+    "nameTH": "ซีรีส์ Evangelion",
+    "genre": [
+      "หุ่นยนต์",
+      "จิตวิทยา",
+      "ดาร์กแฟนตาซี"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3519/medium.jpg",
+    "coverFallback": "https://shikimori.one/system/animes/original/30.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Evangelion",
+    "mood": "sad"
+  },
+  {
+    "id": 404,
+    "name": "Too Many Losing Heroines!",
+    "nameTH": "สาวขี้แพ้มีมากเกินไป!",
+    "genre": [
+      "โรแมนติก",
+      "คอมเมดี้",
+      "ชีวิตประจำวัน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48312/poster_image/medium-5a3bba84ddb645a765b4714655abf044.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/48312/poster_image/medium-5a3bba84ddb645a765b4714655abf044.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Too%20Many%20Losing%20Heroines!",
+    "mood": "love"
+  },
+  {
+    "id": 405,
+    "name": "Re:ZERO -Starting Life in Another World- Season 3",
+    "nameTH": "รีเซทชีวิต ฝ่าวิกฤติต่างโลก ซีซั่น 3",
+    "genre": [
+      "ดราม่า",
+      "แฟนตาซี",
+      "ระทึกขวัญ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/43613/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/43613/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Re%3AZERO%20-Starting%20Life%20in%20Another%20World-%20Season%203",
+    "mood": "hype"
+  },
+  {
+    "id": 406,
+    "name": "Lord of the Mysteries",
+    "nameTH": "ราชันเร้นลับ",
+    "genre": [
+      "แฟนตาซี",
+      "ลึกลับ",
+      "สตีมพังก์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/48233/poster_image/medium-e603ef5f8bac42574f7b48c0da994400.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/48233/poster_image/medium-e603ef5f8bac42574f7b48c0da994400.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Lord%20of%20the%20Mysteries",
+    "mood": "hype"
   }
 ];
 
@@ -20736,6 +21002,460 @@ const SONGS = [
     ],
     "reason": "บทเพลงปาฏิหาริย์แห่งความผูกพันและรอยยิ้ม เข้ากับความพยายามในสนามวอลเลย์บอลของคาราสึโนะ",
     "typoIdea": "ฟอนต์พู่กันญี่ปุ่นสีเขียวมิ้นต์ สาดละอองหมึกตามเสียงลูกตบลงพื้นคอร์ต"
+  },
+  {
+    "id": 699,
+    "title": "not love me",
+    "artist": "Jeremy Zucker",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/41/30/3e/41303e2d-6c4c-ddca-1fe2-48c24bdff3f3/191773553807.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/4c/fa/81/4cfa81de-6e3b-a88b-5b9e-9d9d4fb3a4c0/mzaf_12234678901234567890.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/not%20love%20me%20Jeremy%20Zucker",
+    "mood": "sad",
+    "tags": [
+      "เจ็บปวด",
+      "คนเดียว",
+      "ซึ้ง"
+    ],
+    "bpm": "ช้า (74 BPM)",
+    "lang": "en",
+    "animeId": 1,
+    "animeMatch": [
+      1,
+      391
+    ],
+    "reason": "เสียงร้องอันอ่อนแอและเนื้อเพลงที่เต็มไปด้วยความเจ็บปวดจากการไม่ได้รับรัก ตรงกับฉากซึ้งกินใจใน Your Lie in April และ Clannad ได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ตัวหนังสือสีขาวค่อยๆ จางหายไปพร้อมฝนตก ใช้ฟอนต์เบาบางสลับกับภาพเบลอสีเทา"
+  },
+  {
+    "id": 700,
+    "title": "Gurenge",
+    "artist": "LiSA",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/c5/82/be/c582be92-e8d8-09c9-a48a-62ce1a1d1568/20UMGIM15963.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/57/48/d8/5748d8e5-5edd-a4c8-a6b5-9ae3b0d16e98/mzaf_3674992988745827416.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Gurenge%20LiSA%20Demon%20Slayer",
+    "mood": "hype",
+    "tags": [
+      "เปิดอนิเมะ",
+      "ดาบพิฆาตอสูร",
+      "ร็อก"
+    ],
+    "bpm": "เร็ว (152 BPM)",
+    "lang": "jp",
+    "animeId": 388,
+    "animeMatch": [
+      388,
+      393
+    ],
+    "reason": "เพลงเปิดดาบพิฆาตอสูรที่เขย่าจิตใจ เสียงร้องอันทรงพลังของ LiSA เข้ากับฉากต่อสู้สุดอลังการได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ตัวอักษรสีแดงเลือดนกแตกกระจาย สาดออกพร้อมเปลวเพลิงสีส้มแดงตามจังหวะกลอง"
+  },
+  {
+    "id": 701,
+    "title": "Unravel",
+    "artist": "TK from Ling Tosite Sigure",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/17/02/74/170274aa-a7f4-db98-0df6-df5c50c7f3a7/jacket_WPZL-30990_550px.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f0/ca/9b/f0ca9bdb-f1c5-f4e4-1c50-4d1be9219413/mzaf_5419561698977396842.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Unravel%20TK%20Tokyo%20Ghoul",
+    "mood": "sad",
+    "tags": [
+      "โตเกียวกูล",
+      "อินดี้ร็อก",
+      "ระทม"
+    ],
+    "bpm": "ปานกลาง (96 BPM)",
+    "lang": "jp",
+    "animeId": 389,
+    "animeMatch": [
+      389,
+      3
+    ],
+    "reason": "เสียงกีตาร์อันแหลมคมและเนื้อร้องที่สะท้อนความเจ็บปวดภายใน เข้ากับการต้องซ่อนตัวตนของ Kaneki Ken ใน Tokyo Ghoul ได้อย่างลึกซึ้ง",
+    "typoIdea": "ตัวอักษรสีขาวบิดเบี้ยวแตกสลาย ฟอนต์สั่นระริกตามอารมณ์เพลง สไตล์กลีทช์ดาร์ก"
+  },
+  {
+    "id": 702,
+    "title": "Silhouette",
+    "artist": "KANA-BOON",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/26/28/e9/2628e9a2-1a95-d17a-38a8-4b5fb23bdec4/jacket_KSCL-2339_500px.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cd/a8/08/cda80840-e7e7-b703-c3e2-1df9e3f73e36/mzaf_7201734512876401822.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Silhouette%20KANA-BOON%20Naruto",
+    "mood": "hype",
+    "tags": [
+      "นารูโตะ",
+      "ร็อก",
+      "เปิดอนิเมะ"
+    ],
+    "bpm": "เร็ว (136 BPM)",
+    "lang": "jp",
+    "animeId": 393,
+    "animeMatch": [
+      393,
+      390
+    ],
+    "reason": "เพลงเปิดนารูโตะ ชิปปุเดนที่แฟนอนิเมะทั่วโลกรักใคร่ ท่อนฮุกติดหูและจังหวะที่พุ่งสูง เข้ากับฉากวิ่งและต่อสู้ระดับตำนาน",
+    "typoIdea": "เงาตัวอักษรสีดำบนพื้นหลังพระอาทิตย์ตก ตัวหนังสือเคลื่อนที่เร็วพร้อมเอฟเฟกต์ลม"
+  },
+  {
+    "id": 703,
+    "title": "Again",
+    "artist": "YUI",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/b0/3d/bb/b03dbbae-5afa-ba60-f1e6-1c4e3b51d9e8/jacket_SRCL-6786_500px.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/21/17/b7/2117b7c5-25e7-bd9c-9553-95be96e57acf/mzaf_9183647021456789123.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Again%20YUI%20Fullmetal%20Alchemist",
+    "mood": "sad",
+    "tags": [
+      "แขนกลคนแปรธาตุ",
+      "ป๊อปร็อก",
+      "ซึ้งใจ"
+    ],
+    "bpm": "ปานกลาง (102 BPM)",
+    "lang": "jp",
+    "animeId": 390,
+    "animeMatch": [
+      390,
+      389
+    ],
+    "reason": "เสียงร้องอันอ่อนหวานของ YUI เล่าถึงการเดินทางและความเจ็บปวดที่ต้องเผชิญอีกครั้ง เข้ากับการผจญภัยอันยากลำบากของ Edward ใน FMA Brotherhood",
+    "typoIdea": "ตัวอักษรสีทองและสีน้ำตาลแดง เคลื่อนที่ขึ้นลงเหมือนอัลเคมีแปรธาตุ มีเส้นวงจรอยู่เบื้องหลัง"
+  },
+  {
+    "id": 704,
+    "title": "Die For You",
+    "artist": "The Weeknd",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/46/6c/5b/466c5b2a-a6df-3f41-9af4-6a2aadee23e7/00602557940015.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/8b/f0/1a/8bf01a2c-0ac5-7bca-7edd-29c0254ea3e0/mzaf_8264913720948136290.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Die%20For%20You%20The%20Weeknd",
+    "mood": "love",
+    "tags": [
+      "รักลึก",
+      "อาร์แอนด์บี",
+      "ซึ้งกินใจ"
+    ],
+    "bpm": "ช้า (80 BPM)",
+    "lang": "en",
+    "animeId": 7,
+    "animeMatch": [
+      7,
+      2
+    ],
+    "reason": "เมโลดี้อันอ่อนโยนและเนื้อเพลงที่สื่อถึงความรักที่พร้อมพลีชีพ เข้ากับฉากโรแมนติกสุดซึ้งใน Weathering With You และ Kaguya-sama ได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ตัวอักษรสีทองลอยอยู่กลางสายฝน แสงนีออนสีชมพูและม่วงสาดพุ่งออกจากตัวหนังสือ"
+  },
+  {
+    "id": 705,
+    "title": "As It Was",
+    "artist": "Harry Styles",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/1e/cb/18/1ecb18b9-3a7c-1f47-7429-65a2e47e9f88/886449990146.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/06/22/27/06222725-0e21-3b68-1e31-0f1cec777e7b/mzaf_12791047380196720024.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/As%20It%20Was%20Harry%20Styles",
+    "mood": "sad",
+    "tags": [
+      "โนสตัลเจีย",
+      "ซินธ์ป๊อป",
+      "ติดหู"
+    ],
+    "bpm": "เร็ว (124 BPM)",
+    "lang": "en",
+    "animeId": 4,
+    "animeMatch": [
+      4,
+      7
+    ],
+    "reason": "จังหวะซินธ์สุดติดหูแต่เนื้อเพลงกลับซ่อนความเศร้าของการก้าวต่อไป เข้ากับฉากโนสตัลเจียและความทรงจำใน Spirited Away ได้งดงาม",
+    "typoIdea": "ตัวอักษรสีพาสเทลลอยอยู่ในอากาศ มีเส้นสีม่วงและชมพูพัดผ่านอย่างเบาบาง"
+  },
+  {
+    "id": 706,
+    "title": "Heat Waves",
+    "artist": "Glass Animals",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7f/99/73/7f9973ac-3929-0bfc-dfad-b59d34e09a2b/886448614769.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2d/3f/c3/2d3fc321-da9a-8a34-4dff-3a5a3e9a3d40/mzaf_1834760245089023412.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Heat%20Waves%20Glass%20Animals",
+    "mood": "chill",
+    "tags": [
+      "ชิลล์",
+      "ล่องลอย",
+      "อินดี้ป๊อป"
+    ],
+    "bpm": "ปานกลาง (80 BPM)",
+    "lang": "en",
+    "animeId": 3,
+    "animeMatch": [
+      3,
+      1
+    ],
+    "reason": "เสียงซินธ์ล่องลอยและอารมณ์คิดถึงใครสักคนในห้วงความฝัน เข้ากับฉากอันงดงามและอ้างว้างของ Violet Evergarden ได้อย่างสมบูรณ์",
+    "typoIdea": "ตัวอักษรโปร่งแสงสีฟ้าอมม่วง ลอยเหมือนความฝัน มีคลื่นความร้อนระยิบระยับรอบๆ"
+  },
+  {
+    "id": 707,
+    "title": "คนที่ไม่ใช่",
+    "artist": "Bowkylion",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/15/01/3c/15013c8a-92da-2e1a-97d3-cbf3f90df9ea/5059630590399.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c8/c8/23/c8c823b4-6a72-f234-77f2-db5abb7d8b90/mzaf_2091837461029384756.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/คนที่ไม่ใช่%20Bowkylion",
+    "mood": "sad",
+    "tags": [
+      "ไม่ใช่คนของกัน",
+      "เจ็บปวด",
+      "อาร์แอนด์บีไทย"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      1,
+      391
+    ],
+    "reason": "เสียงร้องอันซึ้งกินใจของ Bowkylion สื่อถึงความรักที่ไปไม่ถึง เข้ากับฉากความเจ็บปวดของความรักที่ไม่ลงตัวใน Your Lie in April และ Clannad",
+    "typoIdea": "ฟอนต์บางเบาสีขาวลอยอยู่กลางฝน ตัวหนังสือค่อยๆ เลือนหายพร้อมน้ำตา"
+  },
+  {
+    "id": 708,
+    "title": "Dango Daikazoku",
+    "artist": "Chata",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/8c/2f/77/8c2f7776-4dd7-4c4e-c3cd-c6f99c8db9a2/jacket_KSLA-0050_500px.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e4/d5/ae/e4d5aeec-fbd7-aaef-7b2e-b1a3a7a82de1/mzaf_8473619201834765981.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Dango%20Daikazoku%20Chata%20Clannad",
+    "mood": "sad",
+    "tags": [
+      "แคลนนาด",
+      "ซึ้งกินใจ",
+      "ตำนานอนิเมะ"
+    ],
+    "bpm": "ช้า (66 BPM)",
+    "lang": "jp",
+    "animeId": 391,
+    "animeMatch": [
+      391,
+      1
+    ],
+    "reason": "เพลงสัญลักษณ์ของ Clannad ที่ทำให้แฟนอนิเมะทั่วโลกร้องไห้ เสียงร้องอันบริสุทธิ์สื่อถึงความอบอุ่นของครอบครัวและความสูญเสีย",
+    "typoIdea": "ตัวอักษรสไตล์พู่กันญี่ปุ่นสีครีมอบอุ่น ลอยพร้อมดอกซากุระและแสงสีทอง"
+  },
+  {
+    "id": 709,
+    "title": "วาดไว้",
+    "artist": "BOWKYLION",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e4/97/68/e49768af-d0d8-dfea-32c5-51e6a3b9e25e/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/f0/2d/76f02d3a-4b61-f285-a84a-272aa2904c63/mzaf_2746150345781827060.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A7%E0%B8%B2%E0%B8%94%E0%B9%84%E0%B8%A7%E0%B9%89%20BOWKYLION",
+    "mood": "sad",
+    "tags": [
+      "เศร้าซึ้ง",
+      "ฮิต",
+      "อกหัก"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      1
+    ],
+    "reason": "เหมาะสำหรับตัดต่อคู่กับ Your Lie in April ด้วยมู้ดและจังหวะที่ลงตัว",
+    "typoIdea": "เล่นไทโปแบบตัวหนังสือเขียนทีละเส้นตามท่อนฮุก"
+  },
+  {
+    "id": 710,
+    "title": "ลืมไปแล้วว่าลืมยังไง",
+    "artist": "Jeff Satur",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/94/fd/69/94fd691b-d908-918a-6e07-e0b2265bca6e/5054197362491.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1c/13/a1/1c13a1c4-682c-a104-ce6f-b2394287c14f/mzaf_17818307861761409830.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B7%E0%B8%A1%E0%B9%84%E0%B8%9B%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%A5%E0%B8%B7%E0%B8%A1%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B9%84%E0%B8%87%20Jeff%20Satur",
+    "mood": "sad",
+    "tags": [
+      "ดราม่า",
+      "เสียงสูง",
+      "บาดลึก"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "th",
+    "animeId": 25,
+    "animeMatch": [
+      25
+    ],
+    "reason": "เหมาะสำหรับตัดต่อคู่กับ Cyberpunk: Edgerunners ด้วยมู้ดและจังหวะที่ลงตัว",
+    "typoIdea": "ไทโปนีออนสลัวๆ ท่ามกลางสายฝน"
+  },
+  {
+    "id": 711,
+    "title": "Not Like Us",
+    "artist": "Kendrick Lamar",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/31/3a/3f/313a3fbc-bb8f-80c7-b5a2-e226869a38cd/24UMGIM51924.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2d/e0/e8/2de0e874-cd0b-e9a9-e876-76be13a86662/mzaf_12385336780649591409.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Not%20Like%20Us%20Kendrick%20Lamar",
+    "mood": "hype",
+    "tags": [
+      "ฮิปฮอป",
+      "เบสหนัก",
+      "ดุเดือด"
+    ],
+    "bpm": "เร็ว (125 BPM)",
+    "lang": "en",
+    "animeId": 31,
+    "animeMatch": [
+      31
+    ],
+    "reason": "เหมาะสำหรับตัดต่อคู่กับ Solo Leveling ด้วยมู้ดและจังหวะที่ลงตัว",
+    "typoIdea": "ฉากซองจินอูปล่อยสกิลคู่กับบีทกระแทก"
+  },
+  {
+    "id": 712,
+    "title": "Otonoke (Dandadan OP)",
+    "artist": "Creepy Nuts",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2c/66/b5/2c66b5b5-a46f-1064-4802-fe82c0e56200/4547366705638.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/de/3c/55/de3c5508-301a-2aae-a8e6-069a1e2edb04/mzaf_14245211407965810210.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Otonoke%20(Dandadan%20OP)%20Creepy%20Nuts",
+    "mood": "hype",
+    "tags": [
+      "แร็ปญี่ปุ่น",
+      "สุดมันส์",
+      "อนิเมะฮิต"
+    ],
+    "bpm": "เร็ว (125 BPM)",
+    "lang": "jp",
+    "animeId": 32,
+    "animeMatch": [
+      32
+    ],
+    "reason": "เหมาะสำหรับตัดต่อคู่กับ Dandadan ด้วยมู้ดและจังหวะที่ลงตัว",
+    "typoIdea": "สปีดไทโปเร็วตามท่อนแร็ปสุดโฟลว์"
+  },
+  {
+    "id": 713,
+    "title": "Abyss (Kaiju No. 8 OP)",
+    "artist": "YUNGBLUD",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a7/7f/24/a77f24f6-d347-fe0c-05de-0528971e6027/24UMGIM26706.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/b0/ef/17b0ef44-1d0a-8ca4-7442-53a5fba773fb/mzaf_16206251573451214130.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Abyss%20(Kaiju%20No.%208%20OP)%20YUNGBLUD",
+    "mood": "hype",
+    "tags": [
+      "ร็อก",
+      "ทรงพลัง",
+      "อนิเมะ"
+    ],
+    "bpm": "เร็ว (125 BPM)",
+    "lang": "jp",
+    "animeId": 33,
+    "animeMatch": [
+      33
+    ],
+    "reason": "เหมาะสำหรับตัดต่อคู่กับ Kaiju No. 8 ด้วยมู้ดและจังหวะที่ลงตัว",
+    "typoIdea": "เอฟเฟกต์ glitch สีฟ้า-ดำสลับกับภาพแปลงร่าง"
+  },
+  {
+    "id": 714,
+    "title": "Fatal (Oshi no Ko S2 OP)",
+    "artist": "GEMN (Kento Nakajima x Tatsuya Kitani)",
+    "coverUrl": "favicon-logo.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/5f/a0/195fa0a8-5f36-1f01-fefc-ab45ddb203ba/mzaf_1909407659469478863.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Fatal%20(Oshi%20no%20Ko%20S2%20OP)%20GEMN%20(Kento%20Nakajima%20x%20Tatsuya%20Kitani)",
+    "mood": "hype",
+    "tags": [
+      "ดราม่า",
+      "เจป๊อป",
+      "เท่"
+    ],
+    "bpm": "เร็ว (125 BPM)",
+    "lang": "jp",
+    "animeId": 21,
+    "animeMatch": [
+      21
+    ],
+    "reason": "เหมาะสำหรับตัดต่อคู่กับ Oshi no Ko ด้วยมู้ดและจังหวะที่ลงตัว",
+    "typoIdea": "แสงไฟสปอตไลท์ส่องลงบนข้อความไทโป"
+  },
+  {
+    "id": 715,
+    "title": "Leaving (feat. BUMKEY)",
+    "artist": "B-Free",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/9b/31/79/9b317967-9fe8-924c-e219-f43b5391d9bf/8809484110241.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/09/4b/1f/094b1f73-a2b7-2c68-eb2f-19bee65ead17/mzaf_11035415505151694952.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Leaving%20(feat.%20BUMKEY)%20B-Free",
+    "mood": "chill",
+    "tags": [
+      "อาร์แอนด์บี",
+      "กรูฟนุ่ม",
+      "โรแมนติก",
+      "เพลงใหม่วันนี้",
+      "DailyDrop"
+    ],
+    "bpm": "ปานกลาง (100 BPM)",
+    "lang": "en",
+    "animeId": 351,
+    "animeMatch": [
+      351
+    ],
+    "reason": "เพลงใหม่ประจำวัน เหมาะตัดต่อคู่กับ Blue Box",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง"
+  },
+  {
+    "id": 716,
+    "title": "Idol",
+    "artist": "YOASOBI",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/46/67/a2/4667a2e3-2ed5-777e-ab44-38890d53ba0f/197189984693.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/09/89/ff/0989ff36-24f8-20e1-e814-e023f784e623/mzaf_7376653984110547507.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Idol%20YOASOBI",
+    "mood": "hype",
+    "tags": [
+      "เจป๊อป",
+      "ไฮป์สะใจ",
+      "ตำนาน",
+      "เพลงใหม่วันนี้",
+      "DailyDrop"
+    ],
+    "bpm": "เร็ว (120 BPM)",
+    "lang": "jp",
+    "animeId": 21,
+    "animeMatch": [
+      21
+    ],
+    "reason": "เพลงใหม่ประจำวัน เหมาะตัดต่อคู่กับ Oshi no Ko",
+    "typoIdea": "เอฟเฟกต์แสงไฟดิสโก้และดาวระยิบระยับ"
+  },
+  {
+    "id": 717,
+    "title": "We Are!",
+    "artist": "Hiroshi Kitadani",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/8f/24/81/8f24812e-465c-4499-bf29-bdd6c0bd13ff/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8f/24/81/8f24812e-465c-4499-bf29-bdd6c0bd13ff/mzaf_17985712931854519957.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/We%20Are%20Hiroshi%20Kitadani",
+    "mood": "hype",
+    "tags": [
+      "อนิเมะตำนาน",
+      "วันพีซ",
+      "ไฮป์"
+    ],
+    "bpm": "เร็ว (168 BPM)",
+    "lang": "jp",
+    "animeId": 402,
+    "animeMatch": [
+      402
+    ],
+    "reason": "เพลงตำนานแห่งการผจญภัย เข้ากับ Luffy และเหล่าลูกเรือ Straw Hat",
+    "typoIdea": "ตัวอักษรสีทองบนฉากทะเลสีคราม เอฟเฟกต์คลื่นทะเล"
+  },
+  {
+    "id": 718,
+    "title": "A Cruel Angel's Thesis",
+    "artist": "Yoko Takahashi",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bc/73/1b/bc731b20-2b4a-aa0a-08e3-cdead8d612bf/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bc/73/1b/bc731b20-2b4a-aa0a-08e3-cdead8d612bf/mzaf_2050640833676529854.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/A%20Cruel%20Angels%20Thesis%20Yoko%20Takahashi",
+    "mood": "hype",
+    "tags": [
+      "อนิเมะตำนาน",
+      "อีวานเกเลียน",
+      "ไฮป์"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "jp",
+    "animeId": 403,
+    "animeMatch": [
+      403
+    ],
+    "reason": "เพลงเปิดระดับขึ้นหิ้ง เข้ากับฉากแอ็กชันและอารมณ์ดราม่าของ Evangelion",
+    "typoIdea": "ตัวอักษรสีแดงบนฉากดำ ฟอนต์คมกริบแบบเรโทรอนิเมะ 90s"
   }
 ];
 
@@ -25479,5 +26199,709 @@ const ANIME_PAIRS = [
     "badge": "🏐 ปาฏิหาริย์แห่งมิตรภาพและความรัก",
     "reason": "บทเพลงปาฏิหาริย์แห่งความผูกพันและรอยยิ้ม เข้ากับความพยายามในสนามวอลเลย์บอลของคาราสึโนะ",
     "typoIdea": "ฟอนต์พู่กันญี่ปุ่นสีเขียวมิ้นต์ สาดละอองหมึกตามเสียงลูกตบลงพื้นคอร์ต"
+  },
+  {
+    "songId": 699,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "💔 not love me – ความรักที่ไม่ได้รับ",
+    "reason": "ท่วงทำนองอะคูสติกเบาบางแต่เจ็บลึกถึงขั้วหัวใจ เข้ากับความรู้สึกเหงาและระยะห่างของ Your Name",
+    "typoIdea": "ข้อความสลักบนฝ่ามือค่อยๆ จางหายไปพร้อมแสงดาวตก ตัวอักษรสีขาวซีดเลือนราง"
+  },
+  {
+    "songId": 700,
+    "animeId": 388,
+    "category": "hype",
+    "badge": "🔥 Gurenge – เพลงเปิดดาบพิฆาตสุดอลัง",
+    "reason": "พลังเสียง LiSA ผสานบีทร็อกเข้มข้น ดั่งเปลวเพลิงปราณเพลิงที่ฟาดฟันอสูรอย่างดุเดือด",
+    "typoIdea": "ประกายไฟสีส้มแดงลุกท่วมตัวหนังสือ ฟอนต์พู่กันญี่ปุ่นกระชากเข้าจังหวะกลอง"
+  },
+  {
+    "songId": 701,
+    "animeId": 389,
+    "category": "sad",
+    "badge": "🖤 Unravel – ความมืดภายในจิตใจ",
+    "reason": "เสียงร้องสูงอันเจ็บปวดกับการก้าวข้ามความเป็นมนุษย์ สู่ตัวตนครึ่งกูลอันแสนโดดเดี่ยว",
+    "typoIdea": "รอยแตกสไตล์กระจกเงาแตกร้าว อักษรบิดเบี้ยวกลายเป็นสีดำสลับแดงสด"
+  },
+  {
+    "songId": 702,
+    "animeId": 393,
+    "category": "hype",
+    "badge": "💨 Silhouette – วิ่งไม่หยุด นินจาตำนาน",
+    "reason": "เพลงเปิดระดับตำนานที่ฟังเมื่อไหร่ก็อยากกระโดดข้ามกิ่งไม้และวิ่งตามความฝัน",
+    "typoIdea": "เงาสีดำสลับพื้นหลังสีส้มสดใส ข้อความเคลื่อนที่เร็วด้วย Motion Blur สไตล์การ์ตูนโชเน็น"
+  },
+  {
+    "songId": 703,
+    "animeId": 390,
+    "category": "sad",
+    "badge": "⚙️ Again – เพลงเปิด FMA Brotherhood สุดซึ้ง",
+    "reason": "การเดินทางของสองพี่น้องกับการแลกเปลี่ยนที่เท่าเทียมและบาดแผลที่ไม่มีวันลืม",
+    "typoIdea": "วงแหวนแปรธาตุหมุนเรืองแสงรอบฟอนต์สีเงินเมทัลลิก เปลวไฟลุกไหม้เบาๆ ตอนท้าย"
+  },
+  {
+    "songId": 704,
+    "animeId": 7,
+    "category": "love",
+    "badge": "💖 Die For You – รักลึก พลีชีพเพื่อเธอ",
+    "reason": "R&B หวานเข้มหนักแน่น แสดงถึงความรักที่ยอมมอบชีวิตให้เหมือนที่สุบารุมีต่อเอมิเลีย",
+    "typoIdea": "เงาสีม่วงนีออนเรืองแสง หัวใจและควันหมอกมนต์ดำเคลื่อนไหวช้าๆ สุดโรแมนติก"
+  },
+  {
+    "songId": 705,
+    "animeId": 4,
+    "category": "sad",
+    "badge": "🌊 As It Was – ย้อนอดีต โนสตัลเจียจากซินธ์ป๊อป",
+    "reason": "จังหวะสนุกที่ซ่อนความเหงาและวันวานที่ไม่มีวันหวนกลับ เหมือนเมืองริมทะเลในโกสต์แอดแลนด์",
+    "typoIdea": "แสงแดดยามเย็นสะท้อนผิวน้ำ ฟอนต์เรโทรวินเทจสีเหลืองพาสเทลกระเพื่อมตามคลื่น"
+  },
+  {
+    "songId": 706,
+    "animeId": 3,
+    "category": "chill",
+    "badge": "🌊 Heat Waves – ล่องลอยในความฝัน Violet Evergarden",
+    "reason": "บรรยากาศอินดี้ป๊อปล่องลอย นึกถึงภาพความทรงจำอันงดงามและจดหมายที่เขียนด้วยหัวใจ",
+    "typoIdea": "ละอองน้ำระยิบระยับลอยละล่อง ตัวหนังสือโปร่งแสงซ้อนทับภาพวิวท้องฟ้าคราม"
+  },
+  {
+    "songId": 707,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "💔 คนที่ไม่ใช่ – ซึ้งทุกโน้ต",
+    "reason": "เพลงไทยช้ำรักระดับมาสเตอร์พีซ ความรักที่ทำดีแค่ไหนก็เป็นได้แค่คนที่เธอไม่เลือก",
+    "typoIdea": "หยดน้ำตาร่วงหล่นบนผิวน้ำ ข้อความค่อยๆ ละลายหายไปในสายฝนสีเทาหม่น"
+  },
+  {
+    "songId": 708,
+    "animeId": 391,
+    "category": "sad",
+    "badge": "🍡 Dango Daikazoku – เพลงร้องไห้อนิเมะตำนาน",
+    "reason": "บทเพลงครอบครัวดังโงะที่ตราตรึงในความทรงจำ เต็มไปด้วยความอบอุ่นและน้ำตาที่ท่วมท้น",
+    "typoIdea": "ตุ๊กตาดังโงะน่ารักกลิ้งเข้าฉาก ตัวหนังสือกลมนุ่มนวลสีพาสเทล อบอุ่นหัวใจ"
+  },
+  {
+    "songId": 709,
+    "animeId": 394,
+    "category": "hype",
+    "badge": "🔥 KICK BACK – เปิดด้วย Chainsaw Man แบบสุดมัน",
+    "reason": "เพลง KICK BACK ของ Kenshi Yonezu พลังงานระเบิด เข้ากับตัวละคร Denji ที่ต้องการมีชีวิตที่ดีกว่าเดิม",
+    "typoIdea": "ตัวอักษรสีส้มลุกไฟ บิดหมุนเหมือน chainsaw หมุน ฉากพื้นหลังสีแดง-ดำสลับ"
+  },
+  {
+    "songId": 710,
+    "animeId": 395,
+    "category": "hype",
+    "badge": "⭐ IDOL – เพลงเปิด Oshi no Ko สุดมหัศจรรย์",
+    "reason": "IDOL ของ YOASOBI ไวรัลไปทั่วโลก จังหวะเร็วพลัง เข้ากับโลกอุตสาหกรรมบันเทิงใน Oshi no Ko",
+    "typoIdea": "ตัวอักษรดาวระยิบระยับ สีทอง-ชมพู กระเด้งตามจังหวะ พื้นหลังไฟสปอตไลต์เวที"
+  },
+  {
+    "songId": 711,
+    "animeId": 396,
+    "category": "hype",
+    "badge": "⚽ Bluelock Anthem – สปิริตนักเตะอัจฉริยะ",
+    "reason": "พลังงานการแข่งขัน ความทะเยอทะยาน เข้ากับโลก Blue Lock ที่ต้องการนักเตะที่เป็นอัจฉริยะจอมเห็นแก่ตัว",
+    "typoIdea": "ตัวอักษรสีฟ้านีออนวิ่งแข่งกันบนสนาม ฟอนต์หนา ขอบไฟสีน้ำเงิน"
+  },
+  {
+    "songId": 712,
+    "animeId": 399,
+    "category": "sad",
+    "badge": "❄️ Frieren Theme – ความสูญเสียและกาลเวลา",
+    "reason": "เพลงแห่งความโศกเศร้าและการล่วงลับ เข้ากับนักเวทย์ Frieren ที่ดูโลกเปลี่ยนแปลงไปอย่างช้าๆ",
+    "typoIdea": "ตัวอักษรสีขาวเงาจางค่อยๆ เลือนหายไปในหิมะ ฟอนต์บางเบา"
+  },
+  {
+    "songId": 713,
+    "animeId": 397,
+    "category": "chill",
+    "badge": "🎸 Bocchi Theme – เสียงกีตาร์สาวขี้อาย",
+    "reason": "บรรยากาศดนตรีอบอุ่นและน่ารัก เข้ากับโลกของ Bocchi ที่ฝึกกีตาร์คนเดียวในห้อง",
+    "typoIdea": "ตัวอักษรโทนพาสเทลสีชมพู ลอยตามจังหวะกีตาร์อะคูสติก"
+  },
+  {
+    "songId": 714,
+    "animeId": 400,
+    "category": "hype",
+    "badge": "🔥 Gurenge DX – ดาบพิฆาตสุดเดือด",
+    "reason": "พลัง LiSA เข้มข้นกว่าเดิม เข้ากับการต่อสู้สุดมันส์ของ Tanjiro ใน Demon Slayer",
+    "typoIdea": "เปลวเพลิงสีส้มแดงล้อมตัวอักษร ฟอนต์พู่กันญี่ปุ่นเข้มข้น"
+  },
+  {
+    "songId": 715,
+    "animeId": 398,
+    "category": "love",
+    "badge": "❤️ Spy x Family Moments – ครอบครัวอบอุ่น",
+    "reason": "เพลงอบอุ่นหัวใจ เข้ากับภาพครอบครัว Forger ที่แอบรักกัน ทั้งที่ไม่ได้รู้ความจริง",
+    "typoIdea": "ตัวอักษรสไตล์ cartoon สีสดใส น่ารัก ลอยตามจังหวะสนุกสนาน"
+  },
+  {
+    "songId": 716,
+    "animeId": 401,
+    "category": "chill",
+    "badge": "🌿 Mushishi Atmosphere – เสียงธรรมชาติอันเงียบสงัด",
+    "reason": "เสียงอิเล็กทรอนิกส์ชิลล์ เข้ากับโลก Mushishi ที่ Ginko เดินเที่ยวในป่าเงียบสงัด",
+    "typoIdea": "ตัวอักษรสีเขียวมรกต ละอองแสงจากใบไม้ ฟอนต์บางเบาอ่อนโยน"
+  },
+  {
+    "songId": 717,
+    "animeId": 402,
+    "category": "hype",
+    "badge": "🏴‍☠️ We Are! – เพลงตำนาน One Piece",
+    "reason": "เพลงตำนานแห่งการผจญภัย เข้ากับ Luffy และเหล่าลูกเรือ Straw Hat ที่ออกเดินทางพิชิตทะเล",
+    "typoIdea": "ตัวอักษรสีทองบนฉากทะเลสีคราม เอฟเฟกต์คลื่นทะเล"
+  },
+  {
+    "songId": 718,
+    "animeId": 403,
+    "category": "sad",
+    "badge": "🌌 Evangelion Melancholy – ความว้าเหว่แห่งจิตใจ",
+    "reason": "บรรยากาศหดหู่และจิตวิทยา เข้ากับ Shinji ที่ดิ้นรนกับตัวเองและหน้าที่ในสงคราม",
+    "typoIdea": "ตัวอักษรสีแดงบนฉากดำ ฟอนต์บางสั่นเครือ เหมือนเส้นสัญญาณชีพ"
+  },
+  {
+    "songId": 709,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "🎬 ไทโปเข้ากันที่สุด",
+    "reason": "เหมาะสำหรับตัดต่อคู่กับ Your Lie in April ด้วยมู้ดและจังหวะที่ลงตัว",
+    "typoIdea": "เล่นไทโปแบบตัวหนังสือเขียนทีละเส้นตามท่อนฮุก"
+  },
+  {
+    "songId": 710,
+    "animeId": 25,
+    "category": "sad",
+    "badge": "🎬 ไทโปเข้ากันที่สุด",
+    "reason": "เหมาะสำหรับตัดต่อคู่กับ Cyberpunk: Edgerunners ด้วยมู้ดและจังหวะที่ลงตัว",
+    "typoIdea": "ไทโปนีออนสลัวๆ ท่ามกลางสายฝน"
+  },
+  {
+    "songId": 711,
+    "animeId": 31,
+    "category": "hype",
+    "badge": "🎬 ไทโปเข้ากันที่สุด",
+    "reason": "เหมาะสำหรับตัดต่อคู่กับ Solo Leveling ด้วยมู้ดและจังหวะที่ลงตัว",
+    "typoIdea": "ฉากซองจินอูปล่อยสกิลคู่กับบีทกระแทก"
+  },
+  {
+    "songId": 712,
+    "animeId": 32,
+    "category": "hype",
+    "badge": "🎬 ไทโปเข้ากันที่สุด",
+    "reason": "เหมาะสำหรับตัดต่อคู่กับ Dandadan ด้วยมู้ดและจังหวะที่ลงตัว",
+    "typoIdea": "สปีดไทโปเร็วตามท่อนแร็ปสุดโฟลว์"
+  },
+  {
+    "songId": 713,
+    "animeId": 33,
+    "category": "hype",
+    "badge": "🎬 ไทโปเข้ากันที่สุด",
+    "reason": "เหมาะสำหรับตัดต่อคู่กับ Kaiju No. 8 ด้วยมู้ดและจังหวะที่ลงตัว",
+    "typoIdea": "เอฟเฟกต์ glitch สีฟ้า-ดำสลับกับภาพแปลงร่าง"
+  },
+  {
+    "songId": 714,
+    "animeId": 21,
+    "category": "hype",
+    "badge": "🎬 ไทโปเข้ากันที่สุด",
+    "reason": "เหมาะสำหรับตัดต่อคู่กับ Oshi no Ko ด้วยมู้ดและจังหวะที่ลงตัว",
+    "typoIdea": "แสงไฟสปอตไลท์ส่องลงบนข้อความไทโป"
+  },
+  {
+    "songId": 715,
+    "animeId": 351,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงใหม่ประจำวัน เหมาะตัดต่อคู่กับ Blue Box",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง"
+  },
+  {
+    "songId": 716,
+    "animeId": 21,
+    "category": "hype",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงใหม่ประจำวัน เหมาะตัดต่อคู่กับ Oshi no Ko",
+    "typoIdea": "เอฟเฟกต์แสงไฟดิสโก้และดาวระยิบระยับ"
+  }
+];
+
+// ── FUNK SONGS COLLECTION ──────────────────────────────────────────────
+// เพลง Funk สำหรับตัดต่อคลิปไทโป – คลาสสิคถึงยุคใหม่
+const FUNK_SONGS = [
+  {
+    "id": 1,
+    "title": "September",
+    "artist": "Earth, Wind & Fire",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5c/8e/19/5c8e191d-b458-fc29-54ef-bd9367835044/886447618547.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/49/2d/44/492d441e-f0ce-5c3a-dcc6-3a892d2600f2/mzaf_2765278844043228646.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/September%20Earth%2C%20Wind%20%26%20Fire",
+    "mood": "hype",
+    "bpm": "เร็ว (126 BPM)",
+    "lang": "funk",
+    "animeId": 11,
+    "tags": [
+      "ดิสโก้",
+      "กรูฟ",
+      "คลาสสิค"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 2,
+    "title": "Uptown Funk",
+    "artist": "Mark Ronson ft. Bruno Mars",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7e/30/c5/7e30c572-aa47-5f7b-c6fd-42d50cd2c56d/886444959797.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/91/99/1f/91991fe5-aa77-87e4-edbc-6d68c95e5f18/mzaf_10685317694850942114.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Uptown%20Funk%20Mark%20Ronson%20ft.%20Bruno%20Mars",
+    "mood": "hype",
+    "bpm": "เร็ว (115 BPM)",
+    "lang": "funk",
+    "animeId": 14,
+    "tags": [
+      "ไวรัล",
+      "โมเดิร์นฟังก์",
+      "เต้น"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 3,
+    "title": "Superstition",
+    "artist": "Stevie Wonder",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/62/61/61/626161c0-f4d7-e6ff-8586-768340ef278f/00602537002382.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/59/4b/88/594b880c-4744-0510-775c-73d8b06567e8/mzaf_14855748840810986812.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Superstition%20Stevie%20Wonder",
+    "mood": "hype",
+    "bpm": "เร็ว (100 BPM)",
+    "lang": "funk",
+    "animeId": 20,
+    "tags": [
+      "คลาสสิค",
+      "โซลฟังก์",
+      "กรูฟแน่น"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 4,
+    "title": "Get Lucky",
+    "artist": "Daft Punk ft. Pharrell Williams",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/86/b1/92/86b192cf-ceb6-6e51-9361-dc4a35e95d22/196589921154.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/72/53/10/725310b8-0e82-9d20-8898-0f1fc47b4cd9/mzaf_13147817334462660235.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Get%20Lucky%20Daft%20Punk%20ft.%20Pharrell%20Williams",
+    "mood": "chill",
+    "bpm": "ปานกลาง (116 BPM)",
+    "lang": "funk",
+    "animeId": 7,
+    "tags": [
+      "ฟังก์โมเดิร์น",
+      "ดิสโก้",
+      "ชิลล์"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 5,
+    "title": "Virtual Insanity",
+    "artist": "Jamiroquai",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/a1/35/fe/a135fe18-654d-9f23-4235-c06614add855/886447942017.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/69/a8/60/69a860a4-22e0-acf2-ee5e-0ee2adc6911e/mzaf_13346004038842782241.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Virtual%20Insanity%20Jamiroquai",
+    "mood": "chill",
+    "bpm": "ปานกลาง (92 BPM)",
+    "lang": "funk",
+    "animeId": 17,
+    "tags": [
+      "แอซิดฟังก์",
+      "กรูฟเท่",
+      "ลื่นไหล"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 6,
+    "title": "Cosmic Girl",
+    "artist": "Jamiroquai",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/a1/35/fe/a135fe18-654d-9f23-4235-c06614add855/886447942017.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c7/4e/3b/c74e3b10-57d9-07af-c492-8682861a186b/mzaf_6575881690174330950.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Cosmic%20Girl%20Jamiroquai",
+    "mood": "hype",
+    "bpm": "เร็ว (120 BPM)",
+    "lang": "funk",
+    "animeId": 7,
+    "tags": [
+      "แอซิดฟังก์",
+      "ดิสโก้",
+      "จังหวะสนุก"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 7,
+    "title": "Treasure",
+    "artist": "Bruno Mars",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/15/63/53/156353b8-d45b-a17d-f553-2d125aeb3cb3/075679957474.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/d8/99/d5d899c9-f5a9-f5d9-f1c9-58b6245cccd6/mzaf_1563222331233911717.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Treasure%20Bruno%20Mars",
+    "mood": "love",
+    "bpm": "เร็ว (116 BPM)",
+    "lang": "funk",
+    "animeId": 7,
+    "tags": [
+      "หวานฟังก์",
+      "ดิสโก้ป๊อป",
+      "โรแมนติก"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 8,
+    "title": "24K Magic",
+    "artist": "Bruno Mars",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e3/47/a0/e347a0cc-87ce-5d05-d560-176c7d48f66e/075679904119.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/45/c4/cb/45c4cb28-670f-f1fe-9678-7fa1601bbb5a/mzaf_2006385778979520718.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/24K%20Magic%20Bruno%20Mars",
+    "mood": "hype",
+    "bpm": "เร็ว (106 BPM)",
+    "lang": "funk",
+    "animeId": 21,
+    "tags": [
+      "ปาร์ตี้",
+      "โมเดิร์นฟังก์",
+      "ไฮป์"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 9,
+    "title": "Leave The Door Open",
+    "artist": "Silk Sonic (Bruno Mars & Anderson .Paak)",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c5/33/dc/c533dc8e-2baa-94f9-22be-e6e28945f932/075679754134.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/43/f5/ba43f52f-2bb0-4cde-a5d0-89fc01ec14d7/mzaf_1992637601291938921.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Leave%20The%20Door%20Open%20Silk%20Sonic%20(Bruno%20Mars%20%26%20Anderson%20.Paak)",
+    "mood": "love",
+    "bpm": "ช้า (74 BPM)",
+    "lang": "funk",
+    "animeId": 21,
+    "tags": [
+      "โรแมนติก",
+      "วินเทจโซล",
+      "นุ่มนวล"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 10,
+    "title": "Le Freak",
+    "artist": "Chic",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/23/5b/b2/235bb2c3-abaa-22e2-753d-afa8b1806dfe/603497853588.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/18/dd/7618dd92-b61f-65c7-a1a5-6d08dc7d8b2d/mzaf_10536878235644314919.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Le%20Freak%20Chic",
+    "mood": "hype",
+    "bpm": "เร็ว (120 BPM)",
+    "lang": "funk",
+    "animeId": 9,
+    "tags": [
+      "ดิสโก้ฟังก์",
+      "คลาสสิค",
+      "เบสหนึบ"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 11,
+    "title": "Play That Funky Music",
+    "artist": "Wild Cherry",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/af/f6/0c/aff60ca6-7385-e47d-7681-e5f73910665c/mzi.fjlfxpyy.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/84/9a/e3/849ae35d-acdc-8f93-7c59-760d7594c406/mzaf_2143528349432358338.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Play%20That%20Funky%20Music%20Wild%20Cherry",
+    "mood": "hype",
+    "bpm": "เร็ว (109 BPM)",
+    "lang": "funk",
+    "animeId": 18,
+    "tags": [
+      "ร็อกฟังก์",
+      "ตำนาน",
+      "มันส์"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 12,
+    "title": "Celebration",
+    "artist": "Kool & The Gang",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ad/28/93/ad2893b3-364e-70d4-96df-e991092fc562/06UMGIM01158.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/08/a2/0b/08a20b4a-ec07-2efc-f000-bd23db36672c/mzaf_3503892147503876458.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Celebration%20Kool%20%26%20The%20Gang",
+    "mood": "hype",
+    "bpm": "เร็ว (122 BPM)",
+    "lang": "funk",
+    "animeId": 14,
+    "tags": [
+      "ฉลอง",
+      "ดิสโก้ฟังก์",
+      "สดใส"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 13,
+    "title": "Jungle Boogie",
+    "artist": "Kool & The Gang",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/ce/be/26/cebe26ba-c1f4-fb96-b218-eebecc6fbc00/06UMGIM14850.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/08/5f/0c/085f0cab-5662-b704-8c0c-73b6dae22082/mzaf_11806936662273139319.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Jungle%20Boogie%20Kool%20%26%20The%20Gang",
+    "mood": "hype",
+    "bpm": "เร็ว (107 BPM)",
+    "lang": "funk",
+    "animeId": 12,
+    "tags": [
+      "กรูฟดุดัน",
+      "เบสแน่น",
+      "คลาสสิค"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 14,
+    "title": "Give It to Me Baby",
+    "artist": "Rick James",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/5f/e4/43/5fe4433e-a9ef-ccd6-4220-86dfa5e34a61/00602527921600.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e4/62/a0/e462a063-95d2-92ca-1da7-884065e2c6e2/mzaf_1570778282964835780.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Give%20It%20to%20Me%20Baby%20Rick%20James",
+    "mood": "hype",
+    "bpm": "เร็ว (115 BPM)",
+    "lang": "funk",
+    "animeId": 16,
+    "tags": [
+      "พังค์ฟังก์",
+      "เบสกระชาก",
+      "ไฮป์"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 15,
+    "title": "Super Freak",
+    "artist": "Rick James",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/5f/e4/43/5fe4433e-a9ef-ccd6-4220-86dfa5e34a61/00602527921600.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/94/0b/61/940b6164-7f98-2f03-1a33-b06202af2902/mzaf_4976900656249650660.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Super%20Freak%20Rick%20James",
+    "mood": "hype",
+    "bpm": "เร็ว (132 BPM)",
+    "lang": "funk",
+    "animeId": 3,
+    "tags": [
+      "แดนซ์ฟังก์",
+      "เบสระดับตำนาน",
+      "เร้าใจ"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 16,
+    "title": "Let's Groove",
+    "artist": "Earth, Wind & Fire",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5d/66/3b/5d663b1f-dcc9-030d-0cf1-fc5d344d391d/886447618448.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/f3/94/99f3947c-5c7f-d4c8-d974-369fdc72be77/mzaf_7880397302369465444.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Let's%20Groove%20Earth%2C%20Wind%20%26%20Fire",
+    "mood": "hype",
+    "bpm": "เร็ว (125 BPM)",
+    "lang": "funk",
+    "animeId": 13,
+    "tags": [
+      "ดิสโก้ฟังก์",
+      "ซินธ์กรูฟ",
+      "แดนซ์"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 17,
+    "title": "Boogie Wonderland",
+    "artist": "Earth, Wind & Fire ft. The Emotions",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ed/e3/e9/ede3e969-cb82-ac64-bc03-af152cb454d5/886446991245.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/30/dd/b6/30ddb650-2819-d375-2d8c-00aa3d39ecaa/mzaf_17828687726294275586.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Boogie%20Wonderland%20Earth%2C%20Wind%20%26%20Fire%20ft.%20The%20Emotions",
+    "mood": "hype",
+    "bpm": "เร็ว (132 BPM)",
+    "lang": "funk",
+    "animeId": 13,
+    "tags": [
+      "ดิสโก้",
+      "แดนซ์กระจาย",
+      "วินเทจ"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 18,
+    "title": "Brick House",
+    "artist": "Commodores",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ae/9c/17/ae9c1700-324c-5599-071a-dc64f6b637ff/15UMGIM15842.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/62/ee/05/62ee050d-4d56-1a3b-2ee8-bf87988ee077/mzaf_8101796610617741971.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Brick%20House%20Commodores",
+    "mood": "chill",
+    "bpm": "ปานกลาง (108 BPM)",
+    "lang": "funk",
+    "animeId": 8,
+    "tags": [
+      "ฟังก์หนัก",
+      "เบสกรูฟ",
+      "คูล"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 19,
+    "title": "Good Times",
+    "artist": "Chic",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Features114/v4/49/e1/78/49e178f5-0d78-9ef5-4bc7-25a810dea995/dj.etkcfosv.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/52/26/59/522659a2-2991-2eea-7a6e-f69701f2193d/mzaf_13440004194978412277.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Good%20Times%20Chic",
+    "mood": "chill",
+    "bpm": "ปานกลาง (111 BPM)",
+    "lang": "funk",
+    "animeId": 21,
+    "tags": [
+      "เบสไลน์ระดับโลก",
+      "ดิสโก้ฟังก์",
+      "ชิลล์"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 20,
+    "title": "That's the Way (I Like It)",
+    "artist": "KC and The Sunshine Band",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/41/23/fd/4123fd3e-8362-835d-f431-3c5db1a826a2/603497904792.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f1/a0/d0/f1a0d006-a761-8e67-8aa1-98a8d754a929/mzaf_10082656111990187415.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/That's%20the%20Way%20(I%20Like%20It)%20KC%20and%20The%20Sunshine%20Band",
+    "mood": "hype",
+    "bpm": "เร็ว (109 BPM)",
+    "lang": "funk",
+    "animeId": 6,
+    "tags": [
+      "ดิสโก้",
+      "สดใส",
+      "ร้องตามง่าย"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 21,
+    "title": "Come and Get Your Love",
+    "artist": "Redbone",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/30/3c/aa/303caaab-ca00-00d5-38bc-566538727080/886446685496.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/97/ad/d6/97add60f-11c1-b4ba-bf80-0bf91d081cc5/mzaf_5554682491106040961.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Come%20and%20Get%20Your%20Love%20Redbone",
+    "mood": "love",
+    "bpm": "ปานกลาง (107 BPM)",
+    "lang": "funk",
+    "animeId": 3,
+    "tags": [
+      "ฟังก์ป๊อป",
+      "วินเทจ",
+      "รักกวนๆ"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 22,
+    "title": "Flash Light",
+    "artist": "Parliament",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/15/68/31/15683110-5d60-1a2a-e196-18be48cf5c30/00602567825920.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/0f/ae/b30fae51-ff94-ef3c-a985-982cbdc083c6/mzaf_5365387214449879649.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Flash%20Light%20Parliament",
+    "mood": "chill",
+    "bpm": "ปานกลาง (106 BPM)",
+    "lang": "funk",
+    "animeId": 9,
+    "tags": [
+      "พีฟังก์",
+      "ซินธ์เบส",
+      "ไซไฟ"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 23,
+    "title": "Sir Duke",
+    "artist": "Stevie Wonder",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/eb/1f/12/eb1f12ec-474c-63aa-43af-09282f423b9d/00602537004737.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/19/f1/cc/19f1ccc5-f10c-8b88-ddfa-b97acf5009b2/mzaf_16382814554090706144.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Sir%20Duke%20Stevie%20Wonder",
+    "mood": "hype",
+    "bpm": "เร็ว (106 BPM)",
+    "lang": "funk",
+    "animeId": 19,
+    "tags": [
+      "บราสแน่น",
+      "พลังบวก",
+      "แจ๊สฟังก์"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 24,
+    "title": "I Wish",
+    "artist": "Stevie Wonder",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/eb/1f/12/eb1f12ec-474c-63aa-43af-09282f423b9d/00602537004737.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/77/aa/9a/77aa9a1b-3f0e-6bc0-f168-22dd89576e33/mzaf_1828685946418356925.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/I%20Wish%20Stevie%20Wonder",
+    "mood": "hype",
+    "bpm": "เร็ว (105 BPM)",
+    "lang": "funk",
+    "animeId": 17,
+    "tags": [
+      "กรูฟจัด",
+      "เบสเดินมันส์",
+      "โซลฟังก์"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
+  },
+  {
+    "id": 25,
+    "title": "I Feel Good (I Got You)",
+    "artist": "James Brown",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/8a/76/04/8a760498-ce95-c1f3-4bff-958362821728/14UMGIM28794.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/65/1f/d9/651fd9c5-6b57-9d5f-41fd-c2355e05b0a6/mzaf_3513378879414462133.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/I%20Feel%20Good%20(I%20Got%20You)%20James%20Brown",
+    "mood": "hype",
+    "bpm": "เร็ว (144 BPM)",
+    "lang": "funk",
+    "animeId": 3,
+    "tags": [
+      "เจ้าพ่อเพลงฟังก์",
+      "ไฮป์สะใจ",
+      "ตะโกนสุดเสียง"
+    ],
+    "reason": "จังหวะ Funk สุดมันส์ เบสหนึบ เข้ากับคลิปตัดต่อสไตล์ดิสโก้/เรโทร",
+    "typoIdea": "ใช้เอฟเฟกต์ไฟนีออนเรโทร ซูมจังหวะตบเบสและเสียงบราส"
   }
 ];

@@ -40,7 +40,7 @@ const I18N = {
     tabSavedTitle: "เพลงที่บันทึกไว้",
     heroBadge: "🎬 TYPOGRAPHY & VIDEO EDITING HUB",
     heroTitle1: "รวมเพลงตัดต่อคลิป",
-    heroTitle2: "ไทย • สากล • อนิเมะ",
+    heroTitle2: "ไทย • สากล • อนิเมะ • Funk",
     heroDesc: "ค้นหาเพลงสำหรับทำคลิปไทโป พร้อมระบบสุ่มแยกโซน ปรับความดังเสียง และจับคู่ซีนอนิเมะที่เข้ากันที่สุด",
     heroBtnRandom: "🎲 ไปที่โซนสุ่มเพลง",
     heroBtnSongs: "สำรวจคลังเพลง",
@@ -144,7 +144,7 @@ const I18N = {
     tabSavedTitle: "Saved Songs",
     heroBadge: "🎬 TYPOGRAPHY & VIDEO EDITING HUB",
     heroTitle1: "Music for Typography Clips",
-    heroTitle2: "Thai • Global • Anime",
+    heroTitle2: "Thai • Global • Anime • Funk",
     heroDesc: "Curated music library & typography video ideas with smart zone randomizer, volume controls, and anime scene pairings.",
     heroBtnRandom: "🎲 Launch Randomizer",
     heroBtnSongs: "Explore Song Vault",
@@ -998,12 +998,13 @@ function getEligibleSongsForZone() {
     const matchMood = selectedRandomMood === 'all' || s.mood === selectedRandomMood;
 
     let matchBpm = true;
+    const bpmStr = s.bpm || '';
     if (selectedRandomBpm === 'slow') {
-      matchBpm = s.bpm.includes('ช้า') || parseInt(s.bpm.match(/\d+/)?.[0] || '100') < 78;
+      matchBpm = bpmStr.includes('ช้า') || parseInt(bpmStr.match(/\d+/)?.[0] || '100') < 78;
     } else if (selectedRandomBpm === 'mid') {
-      matchBpm = s.bpm.includes('ปานกลาง') || (parseInt(s.bpm.match(/\d+/)?.[0] || '100') >= 78 && parseInt(s.bpm.match(/\d+/)?.[0] || '100') <= 108);
+      matchBpm = bpmStr.includes('ปานกลาง') || (parseInt(bpmStr.match(/\d+/)?.[0] || '100') >= 78 && parseInt(bpmStr.match(/\d+/)?.[0] || '100') <= 108);
     } else if (selectedRandomBpm === 'fast') {
-      matchBpm = s.bpm.includes('เร็ว') || parseInt(s.bpm.match(/\d+/)?.[0] || '100') > 108;
+      matchBpm = bpmStr.includes('เร็ว') || parseInt(bpmStr.match(/\d+/)?.[0] || '100') > 108;
     }
 
     return matchZone && matchMood && matchBpm;
@@ -1207,7 +1208,9 @@ async function randomSong() {
 }
 
 // ---- ALL SONGS CATALOG FILTERING ----
-let currentLangFilter = 'th'; // 'all', 'th', 'en', 'jp'
+let currentLangFilter = 'th'; // 'all', 'th', 'en', 'jp', 'funk'
+let currentFunkMoodFilter = 'all';
+let funkShuffleHistory = [];
 let currentMoodFilter = 'all';
 let currentSearchTerm = '';
 
@@ -1367,8 +1370,17 @@ function updateZoneBanner() {
   const bannerText = document.getElementById('zone-banner-text');
   if (!bannerText) return;
 
-  const count = SONGS.filter(s => s.lang === currentLangFilter).length;
-  let zoneName = '';
+  let count, zoneName;
+  if (currentLangFilter === 'funk') {
+    count = typeof FUNK_SONGS !== 'undefined' ? FUNK_SONGS.length : 0;
+    zoneName = currentAppLang === 'th' ? 'โซนเพลง Funk' : 'Funk Music Zone';
+    bannerText.innerHTML = currentAppLang === 'th'
+      ? `📍 กำลังแสดง: <strong>${zoneName}</strong> (${count} เพลง) — ฟังค์คลาสสิคสุดยอด`
+      : `📍 Active: <strong>${zoneName}</strong> (${count} songs) — Classic to modern funk`;
+    return;
+  }
+
+  count = SONGS.filter(s => s.lang === currentLangFilter).length;
   if (currentAppLang === 'th') {
     if (currentLangFilter === 'th') zoneName = 'โซนเพลงไทย';
     else if (currentLangFilter === 'en') zoneName = 'โซนเพลงสากล (English)';
@@ -1403,12 +1415,13 @@ function switchStudioWorkspace(ws, smoothScroll = false) {
   const wsPairs = document.getElementById('workspace-pairs');
   const wsVersus = document.getElementById('workspace-versus');
   const wsSaved = document.getElementById('workspace-saved');
+  const wsFunk  = document.getElementById('workspace-funk');
+
+  // Hide all first
+  [wsMusic, wsPairs, wsVersus, wsSaved, wsFunk].forEach(w => w && w.classList.add('hidden'));
 
   if (ws === 'th' || ws === 'en' || ws === 'jp') {
     if (wsMusic) wsMusic.classList.remove('hidden');
-    if (wsPairs) wsPairs.classList.add('hidden');
-    if (wsVersus) wsVersus.classList.add('hidden');
-    if (wsSaved) wsSaved.classList.add('hidden');
 
     currentLangFilter = ws;
     visibleSongsCount = 18;
@@ -1431,21 +1444,26 @@ function switchStudioWorkspace(ws, smoothScroll = false) {
     if (smoothScroll && wsMusic) {
       wsMusic.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+  } else if (ws === 'funk') {
+    if (wsFunk) wsFunk.classList.remove('hidden');
+    currentLangFilter = 'funk';
+    // Keep zone hub buttons synced
+    document.querySelectorAll('.zone-hub-btn').forEach(b => {
+      b.classList.toggle('active', b.dataset.lang === 'funk');
+    });
+    renderFunkSongsGrid();
+    if (smoothScroll && wsFunk) {
+      wsFunk.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   } else if (ws === 'pairs') {
-    if (wsMusic) wsMusic.classList.add('hidden');
     if (wsPairs) wsPairs.classList.remove('hidden');
-    if (wsVersus) wsVersus.classList.add('hidden');
-    if (wsSaved) wsSaved.classList.add('hidden');
 
     renderAnimeMatchGrid();
     if (smoothScroll && wsPairs) {
       wsPairs.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   } else if (ws === 'versus') {
-    if (wsMusic) wsMusic.classList.add('hidden');
-    if (wsPairs) wsPairs.classList.add('hidden');
     if (wsVersus) wsVersus.classList.remove('hidden');
-    if (wsSaved) wsSaved.classList.add('hidden');
 
     if (!vsLeftSong || !vsRightSong) {
       loadVersus();
@@ -1454,9 +1472,6 @@ function switchStudioWorkspace(ws, smoothScroll = false) {
       wsVersus.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   } else if (ws === 'saved') {
-    if (wsMusic) wsMusic.classList.add('hidden');
-    if (wsPairs) wsPairs.classList.add('hidden');
-    if (wsVersus) wsVersus.classList.add('hidden');
     if (wsSaved) wsSaved.classList.remove('hidden');
 
     renderSavedSongsView();
@@ -1468,6 +1483,115 @@ function switchStudioWorkspace(ws, smoothScroll = false) {
 
 function filterByLang(lang, btn) {
   switchStudioWorkspace(lang, false);
+}
+
+// ── FUNK ZONE FUNCTIONS ──────────────────────────────────────────────
+
+function renderFunkSongsGrid(moodFilter) {
+  const grid = document.getElementById('funk-songs-grid');
+  if (!grid || typeof FUNK_SONGS === 'undefined') return;
+
+  const mood = moodFilter || currentFunkMoodFilter || 'all';
+  const filtered = FUNK_SONGS.filter(s => mood === 'all' || s.mood === mood);
+
+  if (!filtered.length) {
+    grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;color:var(--text-muted);padding:3rem;">
+      <div style="font-size:2.5rem;margin-bottom:0.8rem;">🎸</div>
+      <div style="font-size:1.1rem;font-weight:600;color:#fff;">ไม่พบเพลง Funk ในหมวดนี้</div>
+    </div>`;
+    return;
+  }
+
+  grid.innerHTML = filtered.map((song, idx) => funkSongCardHTML(song, idx)).join('');
+
+  // Update count
+  const fhsSongs = document.getElementById('fhs-songs');
+  if (fhsSongs) fhsSongs.textContent = FUNK_SONGS.length;
+}
+
+function funkSongCardHTML(song, idx) {
+  const anime = ANIMES.find(a => a.id === song.animeId);
+  const animeName = anime ? getAnimeDisplayName(anime) : '';
+  const isPlaying = currentPlayingId === song.id && currentAudio && !currentAudio.paused;
+  const delay = Math.min(idx * 0.05, 0.4);
+
+  return `<div class="song-card funk-card" id="funk-song-${song.id}" style="animation-delay:${delay}s">
+    <div class="song-card-cover">
+      <img src="${song.coverUrl}" alt="${song.title}" class="song-cover-img" loading="lazy" onerror="this.onerror=null;this.src='favicon-logo.jpg';" />
+      <div class="funk-card-overlay">
+        <div class="funk-vinyl-ring"></div>
+      </div>
+      <button class="song-play-overlay" onclick="togglePlayFunkSong(${song.id})">${isPlaying ? '⏸️' : '▶️'}</button>
+      <div class="funk-card-badge">🎸 FUNK</div>
+    </div>
+    <div class="song-card-body">
+      <div class="song-title">${song.title}</div>
+      <div class="song-artist">${song.artist}</div>
+      <div class="song-meta">
+        <span class="song-mood ${moodClass(song.mood)}">${moodLabel(song.mood)}</span>
+        <span class="song-bpm-pill">${song.bpm || ''}</span>
+      </div>
+      <div class="song-tags">${(song.tags || []).slice(0, 3).map(t => `<span class="song-tag">${t}</span>`).join('')}</div>
+      ${anime ? `<div class="song-anime-rec">
+        <span class="anime-rec-label">🌸 แนะนำคู่:</span>
+        <span class="anime-rec-name">${animeName}</span>
+      </div>` : ''}
+      <div class="song-card-actions">
+        ${song.previewUrl ? renderPlayButton(song.id, isPlaying) : `<button class="btn-play-preview" onclick="window.open('${song.spotifyUrl}','_blank')"><div class="play-left"><span class="play-label">🎵 ฟังบน Spotify</span></div></button>`}
+        <a href="${song.spotifyUrl}" target="_blank" class="btn-spotify" title="Spotify">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
+          Spotify
+        </a>
+      </div>
+    </div>
+  </div>`;
+}
+
+function togglePlayFunkSong(songId) {
+  const song = FUNK_SONGS && FUNK_SONGS.find(s => s.id === songId);
+  if (!song) return;
+  if (!song.previewUrl) {
+    window.open(song.spotifyUrl, '_blank');
+    return;
+  }
+  // Use the main toggle but pass a virtual song with the funk song data
+  if (currentPlayingId === `funk_${songId}` && currentAudio && !currentAudio.paused) {
+    currentAudio.pause();
+    updateAudioUI(false);
+    return;
+  }
+  if (currentAudio) { currentAudio.pause(); currentAudio.currentTime = 0; currentAudio = null; }
+  const audio = new Audio(song.previewUrl);
+  audio.volume = currentVolume;
+  currentAudio = audio;
+  currentPlayingId = `funk_${songId}`;
+  audio.onended = () => updateAudioUI(false);
+  audio.ontimeupdate = () => updateBottomPlayerProgress();
+  audio.play().then(() => {
+    showBottomPlayer({ ...song, id: `funk_${songId}`, spotifyUrl: song.spotifyUrl });
+    // Update overlay button
+    const overlayBtn = document.querySelector(`#funk-song-${songId} .song-play-overlay`);
+    if (overlayBtn) overlayBtn.innerHTML = '⏸️';
+  }).catch(() => window.open(song.spotifyUrl, '_blank'));
+}
+
+function filterFunkMood(mood, btn) {
+  currentFunkMoodFilter = mood;
+  document.querySelectorAll('#funk-mood-pills .funk-pill').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  renderFunkSongsGrid(mood);
+}
+
+function randomFunkSong() {
+  if (typeof FUNK_SONGS === 'undefined' || !FUNK_SONGS.length) return;
+  const available = FUNK_SONGS.filter(s => !funkShuffleHistory.includes(s.id));
+  const pool = available.length ? available : FUNK_SONGS;
+  const song = pool[Math.floor(Math.random() * pool.length)];
+  funkShuffleHistory.push(song.id);
+  if (funkShuffleHistory.length > FUNK_SONGS.length * 0.8) funkShuffleHistory = [];
+  showToast(`🎸 Funk สุ่มได้: "${song.title}" – ${song.artist}`);
+  if (song.previewUrl) togglePlayFunkSong(song.id);
+  else window.open(song.spotifyUrl, '_blank');
 }
 
 function filterByMood(mood, btn) {
@@ -1919,30 +2043,50 @@ function showToast(msg) {
 
 // Weekly Auto-Update Drop Tracker (Every 7 Days)
 function initWeeklyUpdateTracker() {
-  const WEEK_MS = 7 * 24 * 60 * 60 * 1000;
+  const DAY_MS = 24 * 60 * 60 * 1000;
+  const WEEK_MS = 7 * DAY_MS;
   const now = Date.now();
   let lastSync = parseInt(localStorage.getItem('typo_weekly_sync_time') || '0');
+  let lastDailyCheck = parseInt(localStorage.getItem('typo_daily_check') || '0');
 
   if (!lastSync) {
     lastSync = now;
     localStorage.setItem('typo_weekly_sync_time', lastSync.toString());
   }
 
+  // Daily check – show auto-refresh toast once per day
+  if (now - lastDailyCheck >= DAY_MS) {
+    localStorage.setItem('typo_daily_check', now.toString());
+    const funkCount = typeof FUNK_SONGS !== 'undefined' ? FUNK_SONGS.length : 0;
+    setTimeout(() => {
+      showToast(currentAppLang === 'th'
+        ? `🎵 อัปเดตรายวัน: ${SONGS.length} เพลง • ${ANIMES.length} อนิเมะ • ${funkCount} Funk ✨`
+        : `🎵 Daily refresh: ${SONGS.length} tracks • ${ANIMES.length} anime • ${funkCount} Funk ✨`
+      );
+    }, 2500);
+  }
+
   const elapsed = now - lastSync;
-  const daysLeft = Math.max(1, 7 - Math.floor(elapsed / (24 * 60 * 60 * 1000)));
+  const daysLeft = Math.max(1, 7 - Math.floor(elapsed / DAY_MS));
+  const funkCount = typeof FUNK_SONGS !== 'undefined' ? FUNK_SONGS.length : 0;
 
   const syncStatusEl = document.getElementById('weekly-sync-status');
   if (syncStatusEl) {
     if (elapsed >= WEEK_MS) {
+      localStorage.setItem('typo_weekly_sync_time', now.toString());
       syncStatusEl.innerHTML = currentAppLang === 'th'
-        ? `🎉 <strong>ถึงรอบอัปเดต 7 วันแล้ว!</strong> มีเพลง & อนิเมะชุดใหม่พร้อมใช้งาน`
-        : `🎉 <strong>Weekly Drop is live!</strong> Fresh songs & anime ready for typography editing`;
+        ? `🎉 <strong>อัปเดตใหม่สัปดาห์นี้!</strong> เพลง ${SONGS.length} • อนิเมะ ${ANIMES.length} • <span style="color:#f59e0b;">🎸 ${funkCount} Funk</span> – ลองเพลงใหม่!`
+        : `🎉 <strong>Weekly Drop is live!</strong> ${SONGS.length} tracks • ${ANIMES.length} anime • <span style="color:#f59e0b;">🎸 ${funkCount} Funk</span> – Try the Funk Zone!`;
     } else {
       syncStatusEl.innerHTML = currentAppLang === 'th'
-        ? `✨ อัปเดตล่าสุด: ${SONGS.length} เพลง • ${ANIMES.length} เรื่อง (รอบถัดไปอีก ${daysLeft} วัน)`
-        : `✨ Latest Update: ${SONGS.length} tracks • ${ANIMES.length} anime (next drop in ${daysLeft} days)`;
+        ? `✨ อัปเดตล่าสุด: ${SONGS.length} เพลง • ${ANIMES.length} อนิเมะ • <span style="color:#f59e0b;">🎸 ${funkCount} Funk</span> (รอบถัดไปอีก ${daysLeft} วัน)`
+        : `✨ Latest: ${SONGS.length} tracks • ${ANIMES.length} anime • <span style="color:#f59e0b;">🎸 ${funkCount} Funk</span> (next drop in ${daysLeft} days)`;
     }
   }
+
+  // Schedule daily re-check at midnight
+  const msUntilNextDay = DAY_MS - (now % DAY_MS) + 1000;
+  setTimeout(() => initWeeklyUpdateTracker(), Math.min(msUntilNextDay, DAY_MS));
 }
 
 // ---- INIT ----
@@ -1950,6 +2094,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setAppLanguage(currentAppLang);
   renderSongsGrid();
   renderAnimeMatchGrid();
+  renderFunkSongsGrid();
   populateFinderDropdowns();
   loadVersus();
   initScrollEffect();
@@ -1965,38 +2110,47 @@ function updateStats() {
   const songsCountEl = document.getElementById('stat-songs-count');
   const animeCountEl = document.getElementById('stat-anime-count');
   const pairsCountEl = document.getElementById('stat-pairs-count');
+  const funkCountEl  = document.getElementById('stat-funk-count');
   if (songsCountEl) songsCountEl.textContent = SONGS.length;
   if (animeCountEl) animeCountEl.textContent = ANIMES.length;
   if (pairsCountEl) pairsCountEl.textContent = ANIME_PAIRS.length;
+  if (funkCountEl && typeof FUNK_SONGS !== 'undefined') funkCountEl.textContent = FUNK_SONGS.length;
 
   const thCount = SONGS.filter(s => s.lang === 'th').length;
   const enCount = SONGS.filter(s => s.lang === 'en').length;
   const jpCount = SONGS.filter(s => s.lang === 'jp').length;
+  const funkCount = typeof FUNK_SONGS !== 'undefined' ? FUNK_SONGS.length : 0;
 
   const countTh = document.getElementById('zone-count-th');
   const countEn = document.getElementById('zone-count-en');
   const countJp = document.getElementById('zone-count-jp');
+  const countFunk = document.getElementById('zone-count-funk');
   const countAll = document.getElementById('zone-count-all');
 
   if (countTh) countTh.textContent = `${thCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
   if (countEn) countEn.textContent = `${enCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
   if (countJp) countJp.textContent = `${jpCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (countFunk) countFunk.textContent = `${funkCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
   if (countAll) countAll.textContent = `${SONGS.length} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
 
   const hubTh = document.getElementById('hub-count-th');
   const hubEn = document.getElementById('hub-count-en');
   const hubJp = document.getElementById('hub-count-jp');
+  const hubFunk = document.getElementById('hub-count-funk');
   if (hubTh) hubTh.textContent = `${thCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
   if (hubEn) hubEn.textContent = `${enCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
   if (hubJp) hubJp.textContent = `${jpCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (hubFunk) hubFunk.textContent = `${funkCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
 
   const szTh = document.getElementById('sz-sub-th');
   const szEn = document.getElementById('sz-sub-en');
   const szJp = document.getElementById('sz-sub-jp');
+  const szFunk = document.getElementById('sz-sub-funk');
   const szPairs = document.getElementById('sz-sub-pairs');
   if (szTh) szTh.textContent = `${thCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
   if (szEn) szEn.textContent = `${enCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
   if (szJp) szJp.textContent = `${jpCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (szFunk) szFunk.textContent = `${funkCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
   if (szPairs) szPairs.textContent = `${ANIMES.length} ${currentAppLang === 'th' ? 'เรื่อง' : 'titles'}`;
 
   const filterPairAll = document.getElementById('filter-pair-all');
@@ -2007,8 +2161,8 @@ function updateStats() {
   const heroExploreBtn = document.getElementById('hero-btn-songs');
   if (heroExploreBtn) {
     heroExploreBtn.innerHTML = currentAppLang === 'th'
-      ? `🎵 สำรวจคลังเพลง (<span id="hero-song-count">${SONGS.length}</span> เพลง)`
-      : `🎵 Explore Song Vault (<span id="hero-song-count">${SONGS.length}</span> songs)`;
+      ? `🎵 สำรวจคลังเพลง (<span id="hero-song-count">${SONGS.length}</span> เพลง + ${funkCount} Funk)`
+      : `🎵 Explore Song Vault (<span id="hero-song-count">${SONGS.length}</span> songs + ${funkCount} Funk)`;
   }
 }
 

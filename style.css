@@ -3050,3 +3050,411 @@ header#hero {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
+
+/* ══════════════════════════════════════════════════════
+   🎸 FUNK MUSIC ZONE – PREMIUM RETRO-NEON STYLING
+   ══════════════════════════════════════════════════════ */
+
+/* Nav button for Funk */
+.nav-funk-btn {
+  background: linear-gradient(135deg, rgba(255, 42, 133, 0.18), rgba(255, 184, 0, 0.18));
+  border: 1px solid rgba(255, 42, 133, 0.4);
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem !important;
+  color: #ffb800 !important;
+  font-weight: 600;
+  box-shadow: 0 0 12px rgba(255, 42, 133, 0.25);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-funk-btn:hover, .nav-funk-btn.active-nav {
+  background: linear-gradient(135deg, #ff2a85, #ffb800);
+  color: #0b0d17 !important;
+  border-color: #ffb800;
+  box-shadow: 0 0 20px rgba(255, 184, 0, 0.6), 0 0 35px rgba(255, 42, 133, 0.4);
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* Studio Zone Tab - Funk */
+.studio-zone-tab.tab-funk {
+  background: linear-gradient(135deg, rgba(255, 42, 133, 0.12), rgba(255, 184, 0, 0.08));
+  border-color: rgba(255, 42, 133, 0.35);
+}
+.studio-zone-tab.tab-funk:hover,
+.studio-zone-tab.tab-funk.active {
+  background: linear-gradient(135deg, rgba(255, 42, 133, 0.25), rgba(255, 184, 0, 0.2));
+  border-color: #ffb800;
+  box-shadow: 0 8px 25px rgba(255, 42, 133, 0.25), 0 0 15px rgba(255, 184, 0, 0.3);
+}
+.studio-zone-tab.tab-funk .sz-icon {
+  filter: drop-shadow(0 0 8px rgba(255, 184, 0, 0.6));
+  animation: funkIconWiggle 3s ease-in-out infinite;
+}
+
+@keyframes funkIconWiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-8deg) scale(1.08); }
+  75% { transform: rotate(8deg) scale(1.08); }
+}
+
+/* Zone Tab Bar & Hub Buttons for Funk */
+.zone-tab-btn.zone-tab-funk {
+  border-color: rgba(255, 42, 133, 0.35);
+}
+.zone-tab-btn.zone-tab-funk:hover,
+.zone-tab-btn.zone-tab-funk.active {
+  border-color: #ff2a85;
+  background: linear-gradient(135deg, rgba(255, 42, 133, 0.25), rgba(255, 184, 0, 0.15));
+  box-shadow: 0 4px 20px rgba(255, 42, 133, 0.3);
+}
+
+.zone-hub-btn.hub-funk {
+  background: linear-gradient(135deg, rgba(35, 15, 30, 0.8), rgba(20, 10, 30, 0.9));
+  border: 1px solid rgba(255, 42, 133, 0.3);
+}
+.zone-hub-btn.hub-funk:hover,
+.zone-hub-btn.hub-funk.active {
+  border-color: #ffb800;
+  box-shadow: 0 8px 25px rgba(255, 42, 133, 0.35), 0 0 15px rgba(255, 184, 0, 0.25);
+  transform: translateY(-3px);
+}
+.zone-hub-btn.hub-funk .hub-icon {
+  filter: drop-shadow(0 0 6px #ff2a85);
+}
+
+/* ══════════════════════════════════════════════════════
+   🎸 FUNK HERO BANNER
+   ══════════════════════════════════════════════════════ */
+.funk-section {
+  padding: 1.5rem 1rem 4rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.funk-hero-banner {
+  position: relative;
+  background: radial-gradient(circle at 80% 20%, rgba(255, 42, 133, 0.25), transparent 50%),
+              radial-gradient(circle at 20% 80%, rgba(255, 184, 0, 0.2), transparent 50%),
+              linear-gradient(135deg, #18091e 0%, #0d0614 60%, #160824 100%);
+  border: 1px solid rgba(255, 42, 133, 0.35);
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 42, 133, 0.15);
+  margin-bottom: 2.5rem;
+}
+
+.funk-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(rgba(255, 42, 133, 0.15) 1px, transparent 1px),
+    radial-gradient(rgba(255, 184, 0, 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.funk-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.funk-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  background: linear-gradient(135deg, rgba(255, 42, 133, 0.3), rgba(255, 184, 0, 0.25));
+  border: 1px solid rgba(255, 184, 0, 0.5);
+  border-radius: 999px;
+  color: #ffb800;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px rgba(255, 42, 133, 0.3);
+}
+
+.funk-hero-title {
+  font-family: 'Kanit', sans-serif;
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0 0 0.8rem;
+}
+
+.funk-gradient {
+  background: linear-gradient(135deg, #ff2a85 0%, #ff8a00 50%, #ffb800 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  filter: drop-shadow(0 2px 15px rgba(255, 42, 133, 0.4));
+}
+
+.funk-hero-desc {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+}
+
+.funk-hero-stats {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.fhs-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+  color: #fff;
+  font-weight: 600;
+}
+.fhs-item span {
+  color: #ffb800;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.fhs-divider {
+  width: 1px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* ══════════════════════════════════════════════════════
+   🪩 ANIMATED DISCO BALL
+   ══════════════════════════════════════════════════════ */
+.funk-disco-ball {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.disco-ball-inner {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #fff 0%, #cbd5e1 20%, #64748b 60%, #1e293b 100%);
+  box-shadow: 
+    inset -10px -10px 25px rgba(0, 0, 0, 0.8),
+    inset 8px 8px 15px rgba(255, 255, 255, 0.8),
+    0 0 40px rgba(255, 42, 133, 0.5),
+    0 0 80px rgba(255, 184, 0, 0.35);
+  position: relative;
+  animation: discoSpin 8s linear infinite;
+  overflow: hidden;
+}
+
+.disco-ball-inner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    repeating-linear-gradient(0deg, transparent 0px, transparent 7px, rgba(0, 0, 0, 0.35) 8px),
+    repeating-linear-gradient(90deg, transparent 0px, transparent 7px, rgba(255, 255, 255, 0.35) 8px);
+  mix-blend-mode: overlay;
+}
+
+.disco-rays {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg,
+    rgba(255, 42, 133, 0.35) 0deg,
+    transparent 45deg,
+    rgba(255, 184, 0, 0.35) 90deg,
+    transparent 135deg,
+    rgba(0, 223, 216, 0.35) 180deg,
+    transparent 225deg,
+    rgba(255, 42, 133, 0.35) 270deg,
+    transparent 315deg,
+    rgba(255, 184, 0, 0.35) 360deg
+  );
+  filter: blur(14px);
+  animation: discoRaySpin 12s linear infinite reverse;
+  pointer-events: none;
+}
+
+@keyframes discoSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes discoRaySpin {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.1); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+/* ══════════════════════════════════════════════════════
+   🎭 FUNK FILTER PILLS
+   ══════════════════════════════════════════════════════ */
+.funk-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  background: rgba(18, 10, 24, 0.7);
+  padding: 0.9rem 1.4rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 42, 133, 0.2);
+  backdrop-filter: blur(12px);
+}
+
+.funk-filter-label {
+  font-family: 'Kanit', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffb800;
+}
+
+.funk-filter-pills {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.funk-pill {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.funk-pill:hover {
+  background: rgba(255, 42, 133, 0.2);
+  border-color: rgba(255, 42, 133, 0.5);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.funk-pill.active {
+  background: linear-gradient(135deg, #ff2a85, #ff8a00);
+  border-color: #ffb800;
+  color: #0b0d17;
+  font-weight: 700;
+  box-shadow: 0 4px 15px rgba(255, 42, 133, 0.4);
+}
+
+/* ══════════════════════════════════════════════════════
+   🎸 FUNK SONG CARDS
+   ══════════════════════════════════════════════════════ */
+.song-card.funk-card {
+  position: relative;
+  background: linear-gradient(180deg, rgba(28, 14, 34, 0.85) 0%, rgba(14, 8, 20, 0.95) 100%);
+  border: 1px solid rgba(255, 42, 133, 0.25);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.song-card.funk-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 184, 0, 0.6);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 42, 133, 0.35);
+}
+
+.funk-card .funk-card-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(135deg, #ff2a85, #ff8a00);
+  color: #0b0d17;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  z-index: 3;
+}
+
+.funk-card-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.funk-vinyl-ring {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px dashed rgba(255, 184, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.6s ease;
+}
+
+.song-card.funk-card:hover .funk-vinyl-ring {
+  opacity: 1;
+  transform: rotate(180deg);
+}
+
+/* Funk Random Button */
+.funk-random-btn {
+  background: linear-gradient(135deg, #ff2a85 0%, #ff8a00 50%, #ffb800 100%);
+  color: #0b0d17 !important;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 0.9rem 2.2rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 30px rgba(255, 42, 133, 0.4), 0 0 20px rgba(255, 184, 0, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.funk-random-btn:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 12px 40px rgba(255, 42, 133, 0.6), 0 0 30px rgba(255, 184, 0, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .funk-hero-banner {
+    padding: 2rem 1.5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  .funk-hero-stats {
+    justify-content: center;
+  }
+  .funk-disco-ball {
+    margin-top: 1.5rem;
+  }
+  .funk-hero-title {
+    font-size: 2rem;
+  }
+  .funk-filter-bar {
+    justify-content: center;
+  }
+}
+
