@@ -21456,6 +21456,54 @@ const SONGS = [
     ],
     "reason": "เพลงเปิดระดับขึ้นหิ้ง เข้ากับฉากแอ็กชันและอารมณ์ดราม่าของ Evangelion",
     "typoIdea": "ตัวอักษรสีแดงบนฉากดำ ฟอนต์คมกริบแบบเรโทรอนิเมะ 90s"
+  },
+  {
+    "id": 719,
+    "title": "Leaving (feat. BUMKEY)",
+    "artist": "B-Free",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/9b/31/79/9b317967-9fe8-924c-e219-f43b5391d9bf/8809484110241.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/09/4b/1f/094b1f73-a2b7-2c68-eb2f-19bee65ead17/mzaf_11035415505151694952.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Leaving%20(feat.%20BUMKEY)%20B-Free",
+    "mood": "chill",
+    "tags": [
+      "อาร์แอนด์บี",
+      "กรูฟนุ่ม",
+      "โรแมนติก",
+      "เพลงใหม่วันนี้",
+      "DailyDrop"
+    ],
+    "bpm": "ปานกลาง (100 BPM)",
+    "lang": "en",
+    "animeId": 351,
+    "animeMatch": [
+      351
+    ],
+    "reason": "เพลงใหม่ประจำวัน เหมาะตัดต่อคู่กับ Blue Box",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง"
+  },
+  {
+    "id": 720,
+    "title": "Idol",
+    "artist": "YOASOBI",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/46/67/a2/4667a2e3-2ed5-777e-ab44-38890d53ba0f/197189984693.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/09/89/ff/0989ff36-24f8-20e1-e814-e023f784e623/mzaf_7376653984110547507.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Idol%20YOASOBI",
+    "mood": "hype",
+    "tags": [
+      "เจป๊อป",
+      "ไฮป์สะใจ",
+      "ตำนาน",
+      "เพลงใหม่วันนี้",
+      "DailyDrop"
+    ],
+    "bpm": "เร็ว (120 BPM)",
+    "lang": "jp",
+    "animeId": 21,
+    "animeMatch": [
+      21
+    ],
+    "reason": "เพลงใหม่ประจำวัน เหมาะตัดต่อคู่กับ Oshi no Ko",
+    "typoIdea": "เอฟเฟกต์แสงไฟดิสโก้และดาวระยิบระยับ"
   }
 ];
 
@@ -26418,6 +26466,22 @@ const ANIME_PAIRS = [
   },
   {
     "songId": 716,
+    "animeId": 21,
+    "category": "hype",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงใหม่ประจำวัน เหมาะตัดต่อคู่กับ Oshi no Ko",
+    "typoIdea": "เอฟเฟกต์แสงไฟดิสโก้และดาวระยิบระยับ"
+  },
+  {
+    "songId": 719,
+    "animeId": 351,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงใหม่ประจำวัน เหมาะตัดต่อคู่กับ Blue Box",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง"
+  },
+  {
+    "songId": 720,
     "animeId": 21,
     "category": "hype",
     "badge": "✨ ประจำวันใหม่",
