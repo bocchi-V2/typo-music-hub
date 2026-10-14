@@ -177,19 +177,44 @@ body::after {
   font-size: 0.92rem;
   font-weight: 500;
   transition: color 0.2s;
-  padding: 0.3rem 0;
+  padding: 0.35rem 0.75rem;
   position: relative;
+  border-radius: 999px;
 }
-.nav-link:hover { color: #fff; }
+.nav-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+}
 .nav-link::after {
   content: '';
   position: absolute;
-  bottom: 0; left: 0;
+  bottom: 2px; left: 50%;
+  transform: translateX(-50%);
   width: 0; height: 2px;
-  background: var(--primary);
+  background: linear-gradient(90deg, #10b981, #6366f1);
+  border-radius: 999px;
   transition: width 0.25s ease;
 }
-.nav-link:hover::after { width: 100%; }
+.nav-link:hover::after { width: 60%; }
+.nav-link.active-nav {
+  color: #fff !important;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.nav-link.active-nav::after { display: none; }
+.nav-saved-btn {
+  background: rgba(244, 63, 94, 0.12) !important;
+  border: 1px solid rgba(244, 63, 94, 0.3) !important;
+  color: #fb7185 !important;
+  font-weight: 600;
+}
+.nav-saved-btn:hover {
+  background: rgba(244, 63, 94, 0.22) !important;
+  border-color: #fb7185 !important;
+  box-shadow: 0 0 15px rgba(244, 63, 94, 0.35) !important;
+}
 /* ---- LANGUAGE SWITCHER ---- */
 .lang-switch-box {
   display: inline-flex;
@@ -3051,110 +3076,163 @@ header#hero {
   transform: translateX(-50%) translateY(0);
 }
 
-/* ══════════════════════════════════════════════════════
-   ✨ ULTRA-PREMIUM MODERN UI POLISH & REFINEMENT
-   ══════════════════════════════════════════════════════ */
+/* ══════════════════════════════════════════════════════════════════
+   💎 ULTRA-PREMIUM MODERN UI POLISH & STUDIO DESIGN UPGRADE
+   ══════════════════════════════════════════════════════════════════ */
 
-/* Hero Title & Animated Shimmer */
+/* ── 1. TYPOGRAPHY & HERO SHIMMER ── */
 .hero-title .gradient-text {
-  background: linear-gradient(135deg, #a78bfa 0%, #ec4899 50%, #f59e0b 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(135deg, #818cf8 0%, #c084fc 35%, #f472b6 70%, #fbbf24 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
   display: inline-block;
-  filter: drop-shadow(0 4px 20px rgba(167, 139, 250, 0.35));
-  animation: heroGlowPulse 6s ease-in-out infinite alternate;
+  filter: drop-shadow(0 4px 20px rgba(167, 139, 250, 0.4));
+  animation: heroTextGlow 6s ease-in-out infinite alternate;
 }
 
-@keyframes heroGlowPulse {
-  0% { filter: drop-shadow(0 4px 18px rgba(167, 139, 250, 0.25)); }
-  100% { filter: drop-shadow(0 6px 28px rgba(236, 72, 153, 0.45)); }
+@keyframes heroTextGlow {
+  0% { filter: drop-shadow(0 4px 18px rgba(129, 140, 248, 0.35)); }
+  50% { filter: drop-shadow(0 6px 28px rgba(192, 132, 252, 0.5)); }
+  100% { filter: drop-shadow(0 4px 22px rgba(244, 114, 182, 0.4)); }
 }
 
 .hero-badge {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(236, 72, 153, 0.15)) !important;
-  border: 1px solid rgba(167, 139, 250, 0.4) !important;
-  box-shadow: 0 0 20px rgba(99, 102, 241, 0.25) !important;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.22), rgba(236, 72, 153, 0.16)) !important;
+  border: 1px solid rgba(167, 139, 250, 0.45) !important;
+  box-shadow: 0 0 25px rgba(99, 102, 241, 0.3) !important;
   border-radius: 999px !important;
   letter-spacing: 0.12em !important;
+  color: #c084fc !important;
 }
 
-/* Hero Vinyl Floating Animation */
+/* Hero Vinyl Floating Animation with Luminous Halo */
 .vinyl-wrap {
+  position: relative;
   animation: vinylFloat 5s ease-in-out infinite;
+}
+
+.vinyl-wrap::before {
+  content: '';
+  position: absolute;
+  inset: -25px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(167, 139, 250, 0.28) 0%, rgba(16, 185, 129, 0.15) 50%, transparent 70%);
+  filter: blur(28px);
+  z-index: -1;
+  pointer-events: none;
 }
 
 @keyframes vinylFloat {
   0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-10px) rotate(1.5deg); }
+  50% { transform: translateY(-12px) rotate(1.5deg); }
 }
 
-/* Refined Stats Bar */
+/* ── 2. HERO BUTTONS & ACTIONS ── */
+.btn-primary {
+  background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%) !important;
+  color: #041019 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.03) !important;
+  box-shadow: 0 12px 35px rgba(16, 185, 129, 0.6), 0 0 25px rgba(6, 182, 212, 0.4) !important;
+}
+
+.btn-ghost {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  color: #f8fafc !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+  border-color: rgba(167, 139, 250, 0.5) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(167, 139, 250, 0.2) !important;
+}
+
+/* ── 3. FLOATING STATS BAR ── */
 .stats-bar {
-  background: rgba(15, 18, 30, 0.75) !important;
-  backdrop-filter: blur(20px) !important;
-  -webkit-backdrop-filter: blur(20px) !important;
+  background: rgba(15, 18, 30, 0.72) !important;
+  backdrop-filter: blur(24px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(180%) !important;
   border: 1px solid rgba(255, 255, 255, 0.09) !important;
-  border-radius: 20px !important;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+  border-radius: 22px !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
+  max-width: 1100px;
+  margin: 0 auto 2.5rem;
+  padding: 1.2rem 2.5rem !important;
 }
 
 .stat-item .stat-num {
-  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #94a3b8 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
   font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
-/* Studio Zone Navigation Tabs - High-End Studio Switchers */
+.stat-divider {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* ── 4. STUDIO ZONE NAVIGATION TABS ── */
 .studio-zone-nav {
-  background: rgba(14, 18, 32, 0.7);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 24px;
-  padding: 0.6rem;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+  background: rgba(13, 16, 30, 0.75) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+  border-radius: 24px !important;
+  padding: 0.55rem !important;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45) !important;
 }
 
 .studio-zone-tab {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 18px;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  background: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-radius: 18px !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
 .studio-zone-tab:hover {
-  background: rgba(255, 255, 255, 0.07);
-  border-color: rgba(167, 139, 250, 0.3);
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(167, 139, 250, 0.35) !important;
   transform: translateY(-2px);
 }
 
 .studio-zone-tab.active {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.22), rgba(168, 85, 247, 0.18)) !important;
-  border: 1px solid rgba(167, 139, 250, 0.55) !important;
-  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.25), rgba(168, 85, 247, 0.2)) !important;
+  border: 1px solid rgba(167, 139, 250, 0.6) !important;
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;
   transform: translateY(-2px);
 }
 
 .studio-zone-tab.active .sz-icon {
-  transform: scale(1.12);
-  filter: drop-shadow(0 0 10px rgba(167, 139, 250, 0.6));
+  transform: scale(1.15);
+  filter: drop-shadow(0 0 12px rgba(167, 139, 250, 0.7));
 }
 
-/* Song Cards Elevation */
+/* ── 5. SONG CARDS & COVER ELEVATION ── */
 .song-card {
-  background: linear-gradient(180deg, rgba(20, 24, 38, 0.85) 0%, rgba(13, 16, 26, 0.95) 100%) !important;
+  background: linear-gradient(180deg, rgba(20, 25, 42, 0.88) 0%, rgba(12, 15, 26, 0.96) 100%) !important;
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
   border-radius: 20px !important;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4) !important;
   overflow: hidden;
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
 .song-card:hover {
-  transform: translateY(-7px) !important;
-  border-color: rgba(167, 139, 250, 0.45) !important;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 30px rgba(99, 102, 241, 0.22) !important;
+  transform: translateY(-8px) scale(1.01) !important;
+  border-color: rgba(167, 139, 250, 0.5) !important;
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.65), 0 0 35px rgba(99, 102, 241, 0.25) !important;
 }
 
 .song-card-cover {
@@ -3164,96 +3242,141 @@ header#hero {
 }
 
 .song-card:hover .song-cover-img {
-  transform: scale(1.06);
+  transform: scale(1.07);
 }
 
 .song-cover-img {
   transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
-/* Play button overlay */
+.song-title {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* Glassmorphic Play Button */
 .song-play-overlay {
-  background: rgba(15, 18, 32, 0.82) !important;
-  backdrop-filter: blur(10px) !important;
-  -webkit-backdrop-filter: blur(10px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6), 0 0 20px rgba(99, 102, 241, 0.4) !important;
+  background: rgba(13, 16, 30, 0.84) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6), 0 0 25px rgba(99, 102, 241, 0.45) !important;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
 .song-play-overlay:hover {
-  transform: translate(-50%, -50%) scale(1.15) !important;
+  transform: translate(-50%, -50%) scale(1.18) !important;
   border-color: #a78bfa !important;
-  background: rgba(99, 102, 241, 0.9) !important;
+  background: rgba(99, 102, 241, 0.95) !important;
 }
 
-/* Clean Mood Pills */
+/* Mood Pills Refinement */
 .song-mood {
   font-weight: 600;
-  letter-spacing: 0.02em;
-  padding: 0.3rem 0.75rem !important;
+  padding: 0.3rem 0.8rem !important;
   border-radius: 999px !important;
 }
 
 .song-mood.mood-hype {
-  background: rgba(244, 63, 94, 0.15) !important;
+  background: rgba(244, 63, 94, 0.16) !important;
   color: #fb7185 !important;
-  border: 1px solid rgba(244, 63, 94, 0.3) !important;
+  border: 1px solid rgba(244, 63, 94, 0.35) !important;
+  box-shadow: 0 0 12px rgba(244, 63, 94, 0.2);
 }
 
 .song-mood.mood-chill {
-  background: rgba(14, 165, 233, 0.15) !important;
+  background: rgba(14, 165, 233, 0.16) !important;
   color: #38bdf8 !important;
-  border: 1px solid rgba(14, 165, 233, 0.3) !important;
+  border: 1px solid rgba(14, 165, 233, 0.35) !important;
+  box-shadow: 0 0 12px rgba(14, 165, 233, 0.2);
 }
 
 .song-mood.mood-love {
-  background: rgba(236, 72, 153, 0.15) !important;
+  background: rgba(236, 72, 153, 0.16) !important;
   color: #f472b6 !important;
-  border: 1px solid rgba(236, 72, 153, 0.3) !important;
+  border: 1px solid rgba(236, 72, 153, 0.35) !important;
+  box-shadow: 0 0 12px rgba(236, 72, 153, 0.2);
 }
 
 .song-mood.mood-sad {
-  background: rgba(148, 163, 184, 0.15) !important;
+  background: rgba(148, 163, 184, 0.16) !important;
   color: #cbd5e1 !important;
-  border: 1px solid rgba(148, 163, 184, 0.3) !important;
+  border: 1px solid rgba(148, 163, 184, 0.35) !important;
+  box-shadow: 0 0 12px rgba(148, 163, 184, 0.15);
 }
 
-/* Floating Bottom Player Capsule */
+/* ── 6. ANIME MATCH CARDS ── */
+.match-card {
+  background: linear-gradient(180deg, rgba(20, 24, 40, 0.88) 0%, rgba(13, 16, 28, 0.96) 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45) !important;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.match-card:hover {
+  transform: translateY(-7px) !important;
+  border-color: rgba(236, 72, 153, 0.4) !important;
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.65), 0 0 35px rgba(236, 72, 153, 0.2) !important;
+}
+
+.match-energy-node {
+  background: rgba(15, 18, 32, 0.85) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 0 20px rgba(167, 139, 250, 0.5) !important;
+}
+
+/* ── 7. FLOATING CAPSULE BOTTOM PLAYER ── */
 .bottom-player {
-  background: rgba(14, 18, 30, 0.9) !important;
-  backdrop-filter: blur(24px) !important;
-  -webkit-backdrop-filter: blur(24px) !important;
+  position: fixed !important;
+  bottom: 24px !important;
+  left: 50% !important;
+  right: auto !important;
+  transform: translateX(-50%) translateY(140px) !important;
+  width: calc(100% - 32px) !important;
+  max-width: 1040px !important;
+  background: rgba(12, 15, 28, 0.92) !important;
+  backdrop-filter: blur(28px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(200%) !important;
   border: 1px solid rgba(255, 255, 255, 0.12) !important;
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.7), 0 0 35px rgba(99, 102, 241, 0.25) !important;
   border-radius: 24px !important;
-  max-width: 900px !important;
-  margin: 0 auto !important;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.75), 0 0 35px rgba(99, 102, 241, 0.25) !important;
+  padding: 0.85rem 1.8rem !important;
+  z-index: 999 !important;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
-/* Search Bar Wrap */
+.bottom-player.visible {
+  transform: translateX(-50%) translateY(0) !important;
+}
+
+/* ── 8. SEARCH & FILTER BAR ── */
 .search-input-box {
-  background: rgba(15, 18, 30, 0.8) !important;
+  background: rgba(14, 18, 32, 0.82) !important;
   border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  border-radius: 16px !important;
-  transition: all 0.3s ease;
+  border-radius: 18px !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
 .search-input-box:focus-within {
-  border-color: #a78bfa !important;
-  box-shadow: 0 0 25px rgba(167, 139, 250, 0.25) !important;
+  border-color: #818cf8 !important;
+  box-shadow: 0 0 30px rgba(129, 140, 248, 0.3) !important;
 }
 
-/* Weekly Sync Banner */
+/* ── 9. WEEKLY SYNC BANNER ── */
 .weekly-sync-banner {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(6, 78, 59, 0.2)) !important;
-  border: 1px solid rgba(16, 185, 129, 0.35) !important;
-  border-radius: 16px !important;
-  backdrop-filter: blur(12px) !important;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.14), rgba(6, 78, 59, 0.22)) !important;
+  border: 1px solid rgba(16, 185, 129, 0.4) !important;
+  border-radius: 18px !important;
+  backdrop-filter: blur(14px) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), 0 0 20px rgba(16, 185, 129, 0.15) !important;
 }
 
 .weekly-pulse-dot {
   background: #10b981 !important;
-  box-shadow: 0 0 12px #10b981 !important;
+  box-shadow: 0 0 14px #10b981 !important;
 }
+
 
