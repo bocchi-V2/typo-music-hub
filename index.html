@@ -27,7 +27,6 @@
         <a href="#" class="nav-link active-nav" onclick="switchStudioWorkspace('th', true); return false;" data-i18n="zoneTh">🇹🇭 เพลงไทย</a>
         <a href="#" class="nav-link" onclick="switchStudioWorkspace('en', true); return false;" data-i18n="zoneEn">🇬🇧 เพลงสากล</a>
         <a href="#" class="nav-link" onclick="switchStudioWorkspace('jp', true); return false;" data-i18n="zoneJp">🇯🇵 เพลงญี่ปุ่น/อนิเมะ</a>
-        <a href="#" class="nav-link nav-funk-btn" onclick="switchStudioWorkspace('funk', true); return false;">🎸 เพลง Funk</a>
         <a href="#" class="nav-link" onclick="switchStudioWorkspace('pairs', true); return false;" data-i18n="navAnimeMatch">🌸 จับคู่อนิเมะ</a>
         <a href="#" class="nav-link" onclick="switchStudioWorkspace('versus', true); return false;" data-i18n="navVersus">⚔️ โหวตเพลง</a>
         <a href="#" class="nav-link nav-saved-btn" onclick="switchStudioWorkspace('saved', true); return false;">
@@ -49,7 +48,7 @@
       <div class="hero-badge">🎬 TYPOGRAPHY & VIDEO EDITING HUB</div>
       <h1 class="hero-title">
         <span data-i18n="heroTitle1">รวมเพลงตัดต่อคลิป</span><br/>
-        <span class="gradient-text" data-i18n="heroTitle2">ไทย • สากล • อนิเมะ • Funk</span>
+        <span class="gradient-text" data-i18n="heroTitle2">ไทย • สากล • อนิเมะ</span>
       </h1>
       <p class="hero-desc" data-i18n="heroDesc">ค้นหาเพลงสำหรับทำคลิปไทโป พร้อมระบบสุ่มแยกโซน ปรับความดังเสียง และจับคู่ซีนอนิเมะที่เข้ากันที่สุด</p>
       <div class="hero-btns">
@@ -76,13 +75,8 @@
     </div>
     <div class="stat-divider"></div>
     <div class="stat-item">
-      <span class="stat-num">4</span>
-      <span class="stat-label" data-i18n="statZones">โซน (ไทย / สากล / ญี่ปุ่น / Funk)</span>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat-item">
-      <span class="stat-num" id="stat-funk-count">12</span>
-      <span class="stat-label">เพลง Funk คลาสสิค</span>
+      <span class="stat-num">3</span>
+      <span class="stat-label" data-i18n="statZones">โซนภาษา (ไทย / สากล / ญี่ปุ่น)</span>
     </div>
     <div class="stat-divider"></div>
     <div class="stat-item">
@@ -129,13 +123,6 @@
         <span class="sz-text">
           <strong class="sz-title" data-i18n="zoneJp">โซนเพลงญี่ปุ่น / อนิเมะ</strong>
           <small class="sz-sub" id="sz-sub-jp">152 เพลง</small>
-        </span>
-      </button>
-      <button class="studio-zone-tab tab-funk" data-ws="funk" onclick="switchStudioWorkspace('funk')">
-        <span class="sz-icon">🎸</span>
-        <span class="sz-text">
-          <strong class="sz-title">โซนเพลง Funk</strong>
-          <small class="sz-sub" id="sz-sub-funk">12 เพลง</small>
         </span>
       </button>
       <button class="studio-zone-tab" data-ws="pairs" onclick="switchStudioWorkspace('pairs')">
@@ -196,13 +183,6 @@
             <div class="zone-tab-info">
               <span class="zone-tab-title" data-i18n="randZoneJp">โซนเพลงญี่ปุ่น / อนิเมะ</span>
               <span class="zone-tab-count" id="zone-count-jp">7 เพลง</span>
-            </div>
-          </button>
-          <button class="zone-tab-btn zone-tab-funk" data-zone="funk" onclick="selectZone('funk', this)">
-            <span class="zone-flag">🎸</span>
-            <div class="zone-tab-info">
-              <span class="zone-tab-title">โซนเพลง Funk</span>
-              <span class="zone-tab-count" id="zone-count-funk">12 เพลง</span>
             </div>
           </button>
           <button class="zone-tab-btn" data-zone="all" onclick="selectZone('all', this)">
@@ -316,13 +296,6 @@
             <span class="hub-count" id="hub-count-jp">53 เพลง</span>
           </div>
         </button>
-        <button class="zone-hub-btn hub-funk" data-lang="funk" onclick="filterByLang('funk', this)">
-          <span class="hub-icon">🎸</span>
-          <div class="hub-text">
-            <span class="hub-title">โซนเพลง Funk</span>
-            <span class="hub-count" id="hub-count-funk">12 เพลง</span>
-          </div>
-        </button>
       </div>
 
       <!-- Active Zone Banner -->
@@ -357,54 +330,6 @@
     </div>
   </section>
   </div> <!-- END WORKSPACE 1: MUSIC ZONE -->
-
-  <!-- WORKSPACE 5: FUNK ZONE -->
-  <div id="workspace-funk" class="studio-workspace hidden">
-    <section class="section funk-section" id="funk-zone">
-      <!-- FUNK HERO BANNER -->
-      <div class="funk-hero-banner">
-        <div class="funk-hero-bg"></div>
-        <div class="funk-hero-content">
-          <div class="funk-badge">🎸 FUNK MUSIC ZONE</div>
-          <h2 class="funk-hero-title">เพลง <span class="funk-gradient">Funk</span> คลาสสิค</h2>
-          <p class="funk-hero-desc">รวมเพลง Funk ระดับตำนาน ตั้งแต่ James Brown, Stevie Wonder จนถึง Bruno Mars<br/>เหมาะสำหรับทำคลิปไทโปสไตล์ Retro, Neon, Disco 🕺</p>
-          <div class="funk-hero-stats">
-            <div class="fhs-item"><span id="fhs-songs">12</span> เพลง Funk</div>
-            <div class="fhs-divider"></div>
-            <div class="fhs-item">🕺 Disco & Groove</div>
-            <div class="fhs-divider"></div>
-            <div class="fhs-item">🔥 Classic to Modern</div>
-          </div>
-        </div>
-        <!-- Animated disco ball -->
-        <div class="funk-disco-ball" aria-hidden="true">
-          <div class="disco-ball-inner"></div>
-          <div class="disco-rays"></div>
-        </div>
-      </div>
-
-      <!-- FUNK MOOD FILTER -->
-      <div class="funk-filter-bar">
-        <div class="funk-filter-label">🎭 กรองตามอารมณ์:</div>
-        <div class="funk-filter-pills" id="funk-mood-pills">
-          <button class="funk-pill active" data-mood="all" onclick="filterFunkMood('all', this)">ทั้งหมด</button>
-          <button class="funk-pill" data-mood="hype" onclick="filterFunkMood('hype', this)">🔥 มันส์ระเบิด</button>
-          <button class="funk-pill" data-mood="chill" onclick="filterFunkMood('chill', this)">🌊 ชิลล์กรูฟ</button>
-          <button class="funk-pill" data-mood="love" onclick="filterFunkMood('love', this)">❤️ หวาน-โรแมนติก</button>
-        </div>
-      </div>
-
-      <!-- FUNK SONGS GRID -->
-      <div class="songs-grid" id="funk-songs-grid"></div>
-
-      <!-- FUNK SHUFFLE BTN -->
-      <div style="text-align:center;margin-top:2.5rem;">
-        <button class="btn funk-random-btn" onclick="randomFunkSong()">
-          🎲 สุ่มเพลง Funk แบบไม่ซ้ำ
-        </button>
-      </div>
-    </section>
-  </div> <!-- END WORKSPACE 5: FUNK ZONE -->
 
   <!-- WORKSPACE 4: SAVED SONGS VAULT -->
   <div id="workspace-saved" class="studio-workspace hidden">

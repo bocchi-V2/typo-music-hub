@@ -3052,409 +3052,208 @@ header#hero {
 }
 
 /* ══════════════════════════════════════════════════════
-   🎸 FUNK MUSIC ZONE – PREMIUM RETRO-NEON STYLING
+   ✨ ULTRA-PREMIUM MODERN UI POLISH & REFINEMENT
    ══════════════════════════════════════════════════════ */
 
-/* Nav button for Funk */
-.nav-funk-btn {
-  background: linear-gradient(135deg, rgba(255, 42, 133, 0.18), rgba(255, 184, 0, 0.18));
-  border: 1px solid rgba(255, 42, 133, 0.4);
-  border-radius: 999px;
-  padding: 0.35rem 0.9rem !important;
-  color: #ffb800 !important;
-  font-weight: 600;
-  box-shadow: 0 0 12px rgba(255, 42, 133, 0.25);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.nav-funk-btn:hover, .nav-funk-btn.active-nav {
-  background: linear-gradient(135deg, #ff2a85, #ffb800);
-  color: #0b0d17 !important;
-  border-color: #ffb800;
-  box-shadow: 0 0 20px rgba(255, 184, 0, 0.6), 0 0 35px rgba(255, 42, 133, 0.4);
-  transform: translateY(-2px) scale(1.04);
-}
-
-/* Studio Zone Tab - Funk */
-.studio-zone-tab.tab-funk {
-  background: linear-gradient(135deg, rgba(255, 42, 133, 0.12), rgba(255, 184, 0, 0.08));
-  border-color: rgba(255, 42, 133, 0.35);
-}
-.studio-zone-tab.tab-funk:hover,
-.studio-zone-tab.tab-funk.active {
-  background: linear-gradient(135deg, rgba(255, 42, 133, 0.25), rgba(255, 184, 0, 0.2));
-  border-color: #ffb800;
-  box-shadow: 0 8px 25px rgba(255, 42, 133, 0.25), 0 0 15px rgba(255, 184, 0, 0.3);
-}
-.studio-zone-tab.tab-funk .sz-icon {
-  filter: drop-shadow(0 0 8px rgba(255, 184, 0, 0.6));
-  animation: funkIconWiggle 3s ease-in-out infinite;
-}
-
-@keyframes funkIconWiggle {
-  0%, 100% { transform: rotate(0deg); }
-  25% { transform: rotate(-8deg) scale(1.08); }
-  75% { transform: rotate(8deg) scale(1.08); }
-}
-
-/* Zone Tab Bar & Hub Buttons for Funk */
-.zone-tab-btn.zone-tab-funk {
-  border-color: rgba(255, 42, 133, 0.35);
-}
-.zone-tab-btn.zone-tab-funk:hover,
-.zone-tab-btn.zone-tab-funk.active {
-  border-color: #ff2a85;
-  background: linear-gradient(135deg, rgba(255, 42, 133, 0.25), rgba(255, 184, 0, 0.15));
-  box-shadow: 0 4px 20px rgba(255, 42, 133, 0.3);
-}
-
-.zone-hub-btn.hub-funk {
-  background: linear-gradient(135deg, rgba(35, 15, 30, 0.8), rgba(20, 10, 30, 0.9));
-  border: 1px solid rgba(255, 42, 133, 0.3);
-}
-.zone-hub-btn.hub-funk:hover,
-.zone-hub-btn.hub-funk.active {
-  border-color: #ffb800;
-  box-shadow: 0 8px 25px rgba(255, 42, 133, 0.35), 0 0 15px rgba(255, 184, 0, 0.25);
-  transform: translateY(-3px);
-}
-.zone-hub-btn.hub-funk .hub-icon {
-  filter: drop-shadow(0 0 6px #ff2a85);
-}
-
-/* ══════════════════════════════════════════════════════
-   🎸 FUNK HERO BANNER
-   ══════════════════════════════════════════════════════ */
-.funk-section {
-  padding: 1.5rem 1rem 4rem;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.funk-hero-banner {
-  position: relative;
-  background: radial-gradient(circle at 80% 20%, rgba(255, 42, 133, 0.25), transparent 50%),
-              radial-gradient(circle at 20% 80%, rgba(255, 184, 0, 0.2), transparent 50%),
-              linear-gradient(135deg, #18091e 0%, #0d0614 60%, #160824 100%);
-  border: 1px solid rgba(255, 42, 133, 0.35);
-  border-radius: 24px;
-  padding: 3rem 2.5rem;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 42, 133, 0.15);
-  margin-bottom: 2.5rem;
-}
-
-.funk-hero-bg {
-  position: absolute;
-  inset: 0;
-  background-image: 
-    radial-gradient(rgba(255, 42, 133, 0.15) 1px, transparent 1px),
-    radial-gradient(rgba(255, 184, 0, 0.1) 1px, transparent 1px);
-  background-size: 24px 24px;
-  background-position: 0 0, 12px 12px;
-  opacity: 0.6;
-  pointer-events: none;
-}
-
-.funk-hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 700px;
-}
-
-.funk-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.4rem 1rem;
-  background: linear-gradient(135deg, rgba(255, 42, 133, 0.3), rgba(255, 184, 0, 0.25));
-  border: 1px solid rgba(255, 184, 0, 0.5);
-  border-radius: 999px;
-  color: #ffb800;
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  box-shadow: 0 0 15px rgba(255, 42, 133, 0.3);
-}
-
-.funk-hero-title {
-  font-family: 'Kanit', sans-serif;
-  font-size: 2.6rem;
-  font-weight: 800;
-  line-height: 1.2;
-  color: #ffffff;
-  margin: 0 0 0.8rem;
-}
-
-.funk-gradient {
-  background: linear-gradient(135deg, #ff2a85 0%, #ff8a00 50%, #ffb800 100%);
+/* Hero Title & Animated Shimmer */
+.hero-title .gradient-text {
+  background: linear-gradient(135deg, #a78bfa 0%, #ec4899 50%, #f59e0b 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-  filter: drop-shadow(0 2px 15px rgba(255, 42, 133, 0.4));
+  filter: drop-shadow(0 4px 20px rgba(167, 139, 250, 0.35));
+  animation: heroGlowPulse 6s ease-in-out infinite alternate;
 }
 
-.funk-hero-desc {
-  font-size: 1.05rem;
-  color: rgba(255, 255, 255, 0.75);
-  line-height: 1.6;
-  margin: 0 0 1.5rem;
+@keyframes heroGlowPulse {
+  0% { filter: drop-shadow(0 4px 18px rgba(167, 139, 250, 0.25)); }
+  100% { filter: drop-shadow(0 6px 28px rgba(236, 72, 153, 0.45)); }
 }
 
-.funk-hero-stats {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  flex-wrap: wrap;
+.hero-badge {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(236, 72, 153, 0.15)) !important;
+  border: 1px solid rgba(167, 139, 250, 0.4) !important;
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.25) !important;
+  border-radius: 999px !important;
+  letter-spacing: 0.12em !important;
 }
 
-.fhs-item {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: 0.95rem;
-  color: #fff;
-  font-weight: 600;
+/* Hero Vinyl Floating Animation */
+.vinyl-wrap {
+  animation: vinylFloat 5s ease-in-out infinite;
 }
-.fhs-item span {
-  color: #ffb800;
-  font-size: 1.3rem;
+
+@keyframes vinylFloat {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1.5deg); }
+}
+
+/* Refined Stats Bar */
+.stats-bar {
+  background: rgba(15, 18, 30, 0.75) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.09) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+}
+
+.stat-item .stat-num {
+  background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 800;
 }
 
-.fhs-divider {
-  width: 1px;
-  height: 20px;
-  background: rgba(255, 255, 255, 0.2);
+/* Studio Zone Navigation Tabs - High-End Studio Switchers */
+.studio-zone-nav {
+  background: rgba(14, 18, 32, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 0.6rem;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
 }
 
-/* ══════════════════════════════════════════════════════
-   🪩 ANIMATED DISCO BALL
-   ══════════════════════════════════════════════════════ */
-.funk-disco-ball {
-  position: relative;
-  width: 160px;
-  height: 160px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.studio-zone-tab {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.disco-ball-inner {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 35% 35%, #fff 0%, #cbd5e1 20%, #64748b 60%, #1e293b 100%);
-  box-shadow: 
-    inset -10px -10px 25px rgba(0, 0, 0, 0.8),
-    inset 8px 8px 15px rgba(255, 255, 255, 0.8),
-    0 0 40px rgba(255, 42, 133, 0.5),
-    0 0 80px rgba(255, 184, 0, 0.35);
-  position: relative;
-  animation: discoSpin 8s linear infinite;
-  overflow: hidden;
-}
-
-.disco-ball-inner::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: 
-    repeating-linear-gradient(0deg, transparent 0px, transparent 7px, rgba(0, 0, 0, 0.35) 8px),
-    repeating-linear-gradient(90deg, transparent 0px, transparent 7px, rgba(255, 255, 255, 0.35) 8px);
-  mix-blend-mode: overlay;
-}
-
-.disco-rays {
-  position: absolute;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  background: conic-gradient(
-    from 0deg,
-    rgba(255, 42, 133, 0.35) 0deg,
-    transparent 45deg,
-    rgba(255, 184, 0, 0.35) 90deg,
-    transparent 135deg,
-    rgba(0, 223, 216, 0.35) 180deg,
-    transparent 225deg,
-    rgba(255, 42, 133, 0.35) 270deg,
-    transparent 315deg,
-    rgba(255, 184, 0, 0.35) 360deg
-  );
-  filter: blur(14px);
-  animation: discoRaySpin 12s linear infinite reverse;
-  pointer-events: none;
-}
-
-@keyframes discoSpin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-@keyframes discoRaySpin {
-  0% { transform: rotate(0deg) scale(1); }
-  50% { transform: rotate(180deg) scale(1.1); }
-  100% { transform: rotate(360deg) scale(1); }
-}
-
-/* ══════════════════════════════════════════════════════
-   🎭 FUNK FILTER PILLS
-   ══════════════════════════════════════════════════════ */
-.funk-filter-bar {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-  background: rgba(18, 10, 24, 0.7);
-  padding: 0.9rem 1.4rem;
-  border-radius: 16px;
-  border: 1px solid rgba(255, 42, 133, 0.2);
-  backdrop-filter: blur(12px);
-}
-
-.funk-filter-label {
-  font-family: 'Kanit', sans-serif;
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #ffb800;
-}
-
-.funk-filter-pills {
-  display: flex;
-  gap: 0.6rem;
-  flex-wrap: wrap;
-}
-
-.funk-pill {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: rgba(255, 255, 255, 0.8);
-  padding: 0.45rem 1.1rem;
-  border-radius: 999px;
-  font-size: 0.88rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.25s ease;
-}
-
-.funk-pill:hover {
-  background: rgba(255, 42, 133, 0.2);
-  border-color: rgba(255, 42, 133, 0.5);
-  color: #fff;
+.studio-zone-tab:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(167, 139, 250, 0.3);
   transform: translateY(-2px);
 }
 
-.funk-pill.active {
-  background: linear-gradient(135deg, #ff2a85, #ff8a00);
-  border-color: #ffb800;
-  color: #0b0d17;
-  font-weight: 700;
-  box-shadow: 0 4px 15px rgba(255, 42, 133, 0.4);
+.studio-zone-tab.active {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.22), rgba(168, 85, 247, 0.18)) !important;
+  border: 1px solid rgba(167, 139, 250, 0.55) !important;
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+  transform: translateY(-2px);
 }
 
-/* ══════════════════════════════════════════════════════
-   🎸 FUNK SONG CARDS
-   ══════════════════════════════════════════════════════ */
-.song-card.funk-card {
-  position: relative;
-  background: linear-gradient(180deg, rgba(28, 14, 34, 0.85) 0%, rgba(14, 8, 20, 0.95) 100%);
-  border: 1px solid rgba(255, 42, 133, 0.25);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+.studio-zone-tab.active .sz-icon {
+  transform: scale(1.12);
+  filter: drop-shadow(0 0 10px rgba(167, 139, 250, 0.6));
 }
 
-.song-card.funk-card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(255, 184, 0, 0.6);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(255, 42, 133, 0.35);
-}
-
-.funk-card .funk-card-badge {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: linear-gradient(135deg, #ff2a85, #ff8a00);
-  color: #0b0d17;
-  padding: 0.2rem 0.6rem;
-  border-radius: 6px;
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-  z-index: 3;
-}
-
-.funk-card-overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: none;
+/* Song Cards Elevation */
+.song-card {
+  background: linear-gradient(180deg, rgba(20, 24, 38, 0.85) 0%, rgba(13, 16, 26, 0.95) 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
   overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
-.funk-vinyl-ring {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  border: 2px dashed rgba(255, 184, 0, 0.4);
-  opacity: 0;
-  transition: opacity 0.3s ease, transform 0.6s ease;
+.song-card:hover {
+  transform: translateY(-7px) !important;
+  border-color: rgba(167, 139, 250, 0.45) !important;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 30px rgba(99, 102, 241, 0.22) !important;
 }
 
-.song-card.funk-card:hover .funk-vinyl-ring {
-  opacity: 1;
-  transform: rotate(180deg);
+.song-card-cover {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
 }
 
-/* Funk Random Button */
-.funk-random-btn {
-  background: linear-gradient(135deg, #ff2a85 0%, #ff8a00 50%, #ffb800 100%);
-  color: #0b0d17 !important;
-  font-size: 1.05rem;
-  font-weight: 700;
-  padding: 0.9rem 2.2rem;
-  border-radius: 999px;
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 8px 30px rgba(255, 42, 133, 0.4), 0 0 20px rgba(255, 184, 0, 0.3);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
+.song-card:hover .song-cover-img {
+  transform: scale(1.06);
 }
 
-.funk-random-btn:hover {
-  transform: translateY(-3px) scale(1.04);
-  box-shadow: 0 12px 40px rgba(255, 42, 133, 0.6), 0 0 30px rgba(255, 184, 0, 0.5);
+.song-cover-img {
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .funk-hero-banner {
-    padding: 2rem 1.5rem;
-    flex-direction: column;
-    text-align: center;
-  }
-  .funk-hero-stats {
-    justify-content: center;
-  }
-  .funk-disco-ball {
-    margin-top: 1.5rem;
-  }
-  .funk-hero-title {
-    font-size: 2rem;
-  }
-  .funk-filter-bar {
-    justify-content: center;
-  }
+/* Play button overlay */
+.song-play-overlay {
+  background: rgba(15, 18, 32, 0.82) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6), 0 0 20px rgba(99, 102, 241, 0.4) !important;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.song-play-overlay:hover {
+  transform: translate(-50%, -50%) scale(1.15) !important;
+  border-color: #a78bfa !important;
+  background: rgba(99, 102, 241, 0.9) !important;
+}
+
+/* Clean Mood Pills */
+.song-mood {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.3rem 0.75rem !important;
+  border-radius: 999px !important;
+}
+
+.song-mood.mood-hype {
+  background: rgba(244, 63, 94, 0.15) !important;
+  color: #fb7185 !important;
+  border: 1px solid rgba(244, 63, 94, 0.3) !important;
+}
+
+.song-mood.mood-chill {
+  background: rgba(14, 165, 233, 0.15) !important;
+  color: #38bdf8 !important;
+  border: 1px solid rgba(14, 165, 233, 0.3) !important;
+}
+
+.song-mood.mood-love {
+  background: rgba(236, 72, 153, 0.15) !important;
+  color: #f472b6 !important;
+  border: 1px solid rgba(236, 72, 153, 0.3) !important;
+}
+
+.song-mood.mood-sad {
+  background: rgba(148, 163, 184, 0.15) !important;
+  color: #cbd5e1 !important;
+  border: 1px solid rgba(148, 163, 184, 0.3) !important;
+}
+
+/* Floating Bottom Player Capsule */
+.bottom-player {
+  background: rgba(14, 18, 30, 0.9) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.7), 0 0 35px rgba(99, 102, 241, 0.25) !important;
+  border-radius: 24px !important;
+  max-width: 900px !important;
+  margin: 0 auto !important;
+}
+
+/* Search Bar Wrap */
+.search-input-box {
+  background: rgba(15, 18, 30, 0.8) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 16px !important;
+  transition: all 0.3s ease;
+}
+
+.search-input-box:focus-within {
+  border-color: #a78bfa !important;
+  box-shadow: 0 0 25px rgba(167, 139, 250, 0.25) !important;
+}
+
+/* Weekly Sync Banner */
+.weekly-sync-banner {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(6, 78, 59, 0.2)) !important;
+  border: 1px solid rgba(16, 185, 129, 0.35) !important;
+  border-radius: 16px !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+.weekly-pulse-dot {
+  background: #10b981 !important;
+  box-shadow: 0 0 12px #10b981 !important;
 }
 

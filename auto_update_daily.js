@@ -117,12 +117,11 @@ async function runDailyUpdate() {
 
   // Load data.js
   const code = fs.readFileSync('data.js', 'utf8');
-  const fn = new Function(code + '; return { ANIMES, SONGS, ANIME_PAIRS, FUNK_SONGS: typeof FUNK_SONGS !== "undefined" ? FUNK_SONGS : [] };');
+  const fn = new Function(code + '; return { ANIMES, SONGS, ANIME_PAIRS };');
   const db = fn();
   const { ANIMES, SONGS, ANIME_PAIRS } = db;
-  const FUNK_SONGS = db.FUNK_SONGS || [];
 
-  console.log(`📥 โหลดข้อมูลสำเร็จ: ${ANIMES.length} อนิเมะ | ${SONGS.length} เพลง | ${FUNK_SONGS.length} Funk`);
+  console.log(`📥 โหลดข้อมูลสำเร็จ: ${ANIMES.length} อนิเมะ | ${SONGS.length} เพลง`);
 
   let addedAnimes = 0;
   let addedSongs = 0;
@@ -195,7 +194,7 @@ async function runDailyUpdate() {
   }
 
   // Save data.js
-  const out = `const ANIMES = ${JSON.stringify(ANIMES, null, 2)};\n\nconst SONGS = ${JSON.stringify(SONGS, null, 2)};\n\nconst ANIME_PAIRS = ${JSON.stringify(ANIME_PAIRS, null, 2)};\n\n// ── FUNK SONGS COLLECTION ──────────────────────────────────────────────\n// เพลง Funk สำหรับตัดต่อคลิปไทโป – คลาสสิคถึงยุคใหม่\nconst FUNK_SONGS = ${JSON.stringify(FUNK_SONGS, null, 2)};\n`;
+  const out = `const ANIMES = ${JSON.stringify(ANIMES, null, 2)};\n\nconst SONGS = ${JSON.stringify(SONGS, null, 2)};\n\nconst ANIME_PAIRS = ${JSON.stringify(ANIME_PAIRS, null, 2)};\n`;
   fs.writeFileSync('data.js', out, 'utf8');
 
   // Update sync state
@@ -204,7 +203,6 @@ async function runDailyUpdate() {
   syncState.dayCount = (syncState.dayCount || 0) + 1;
   syncState.totalSongs = SONGS.length;
   syncState.totalAnimes = ANIMES.length;
-  syncState.totalFunk = FUNK_SONGS.length;
   syncState.history = syncState.history || [];
   syncState.history.unshift({
     date: new Date(now).toLocaleString('th-TH'),
@@ -219,7 +217,7 @@ async function runDailyUpdate() {
 
   console.log(`✅ บันทึกรอบอัปเดตประจำวันเรียบร้อย! (วันที่ ${syncState.dayCount})`);
   console.log(`📊 เพลงเพิ่มใหม่: +${addedSongs} | อนิเมะเพิ่มใหม่: +${addedAnimes}`);
-  console.log(`📁 คลังรวมปัจจุบัน: ${SONGS.length} เพลง | ${ANIMES.length} อนิเมะ | ${FUNK_SONGS.length} Funk`);
+  console.log(`📁 คลังรวมปัจจุบัน: ${SONGS.length} เพลง | ${ANIMES.length} อนิเมะ`);
 
   if (shouldDeploy) {
     console.log('🚀 กำลังดำเนินการ Deploy ไปยัง Netlify...');
