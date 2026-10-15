@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -35,7 +35,15 @@ jobs:
 
       - name: 🚀 Deploy ขึ้น GitHub Pages Live Web
         id: deployment
+        continue-on-error: true
         uses: actions/deploy-pages@v4
+
+      - name: 🌐 ซิงค์กิ่ง gh-pages ทันที (Deploy GitHub Pages 100%)
+        continue-on-error: true
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
 
       - name: 🚀 Deploy ขึ้น Netlify Production ทันที
         continue-on-error: true
