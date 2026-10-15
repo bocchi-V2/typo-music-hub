@@ -38,6 +38,13 @@ jobs:
         with:
           node-version: 20
 
+      - name: 📁 จัดเตรียมไฟล์เว็บสำหรับแอป (www Directory)
+        run: |
+          mkdir -p www
+          cp -r index.html style.css app.js data.js manifest.json sw.js splash-cover.jpg loading-chibi.jpg haimiya_yaho.mp3 haimiya_voice_full.mp3 favicon-logo.jpg dice-roll.mp3 www/
+          echo "✅ จัดเตรียม www directory เรียบร้อยแล้ว"
+          ls -la www/
+
       - name: 📦 ติดตั้ง Capacitor และสร้างโปรเจกต์ Android
         run: |
           npm install --save-dev @capacitor/core @capacitor/cli @capacitor/android
@@ -45,11 +52,8 @@ jobs:
           {
             "appId": "com.haimiya.typo",
             "appName": "Haimiya Typo",
-            "webDir": ".",
-            "bundledWebRuntime": false,
-            "server": {
-              "cleartext": true
-            }
+            "webDir": "www",
+            "bundledWebRuntime": false
           }
           EOF
           npx cap add android
@@ -79,8 +83,8 @@ jobs:
         uses: softprops/action-gh-release@v2
         if: github.ref == 'refs/heads/master'
         with:
-          tag_name: latest-apk
-          name: "📱 Haimiya Typo – Android APK (เวอร์ชันล่าสุด)"
+          tag_name: "v1.0.0"
+          name: "📱 Haimiya Typo – Android APK (v1.0.0)"
           body: |
             ### 🌸 Haimiya Typo (ไฮมิยะไทโป) สำหรับ Android
             
@@ -88,7 +92,7 @@ jobs:
             - 💙 หน้าจอโหลด Splash Screen พร้อมไอคอนสาวอนิเมะผมเงิน
             - 🌀 ตัวการ์ตูน Chibi หมุนตามหลอดโหลด (0% - 100%)
             - 🎙️ เสียงต้อนรับคำว่า "Yaho!" จากคุณไฮมิยะ
-            - 🎵 คลังเพลงตัดต่อไทโปและระบบซิงค์เพลงฮิตประจำวัน
+            - 🎵 คลังเพลงตัดต่อไทโป 723 เพลง พร้อมระบบดึงเพลงใหม่ทุกวัน
             
             **วิธีติดตั้ง:**
             1. ดาวน์โหลดไฟล์ `HaimiyaTypo.apk` ด้านล่างนี้
