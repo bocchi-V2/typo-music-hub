@@ -1993,7 +1993,6 @@ function initWeeklyUpdateTracker() {
 
 // ---- HAIMIYA YAHO AUDIO CLIP ----
 let haimiyaAudio = null;
-let audioUnlocked = false;
 
 function getHaimiyaAudio() {
   if (!haimiyaAudio) {
@@ -2009,89 +2008,27 @@ try {
   getHaimiyaAudio().load();
 } catch (e) {}
 
-// Pre-unlock audio on early user gesture (tap/click anywhere during load)
-function preUnlockAudio() {
-  if (audioUnlocked) return;
-  const audio = getHaimiyaAudio();
-  const p = audio.play();
-  if (p && p.then) {
-    p.then(() => {
-      audioUnlocked = true;
-      const progressBar = document.getElementById('splash-progress-bar');
-      const isComplete = progressBar && progressBar.style.width === '100%';
-      if (!isComplete) {
-        audio.pause();
-        audio.currentTime = 0;
-      } else {
-        updateAudioHintUI(true, false);
-      }
-    }).catch(() => {});
-  }
-}
-window.addEventListener('pointerdown', preUnlockAudio, { passive: true });
-window.addEventListener('touchstart', preUnlockAudio, { passive: true });
-window.addEventListener('click', preUnlockAudio, { passive: true });
-
-function updateAudioHintUI(isPlaying, isBlocked) {
-  const hintEl = document.getElementById('splash-audio-hint');
-  const greetingEl = document.querySelector('.splash-greeting-float');
-  
-  if (isPlaying) {
-    if (hintEl) {
-      hintEl.classList.remove('blocked');
-      hintEl.classList.add('playing');
-      hintEl.innerHTML = '<span class="hint-icon">🔊</span> <span>กำลังเล่นเสียงคุณไฮมิยะ...</span>';
-    }
-    if (greetingEl) {
-      greetingEl.classList.remove('need-tap');
-      greetingEl.innerHTML = '<span class="greeting-icon">🔊</span> <span class="greeting-jp">こんにちは！</span> <span class="greeting-sparkle">✨</span>';
-    }
-  } else if (isBlocked) {
-    if (hintEl) {
-      hintEl.classList.add('blocked');
-      hintEl.innerHTML = '<span class="hint-icon">🔊</span> <span>แตะหน้าจอเพื่อเปิดเสียงต้อนรับ</span>';
-    }
-    if (greetingEl) {
-      greetingEl.classList.add('need-tap');
-      greetingEl.innerHTML = '<span class="greeting-icon">🔊</span> <span class="greeting-jp">こんにちは (แตะฟังเสียง 🔊)</span> <span class="greeting-sparkle">✨</span>';
-    }
-  }
-}
-
-function playHaimiyaYaho(userInitiated = false) {
+function playHaimiyaYaho() {
   try {
     const audio = getHaimiyaAudio();
     audio.currentTime = 0;
     const playPromise = audio.play();
-    if (playPromise && playPromise.then) {
-      playPromise
-        .then(() => {
-          audioUnlocked = true;
-          updateAudioHintUI(true, false);
-        })
-        .catch((err) => {
-          console.warn('Audio autoplay blocked by browser policy:', err);
-          updateAudioHintUI(false, true);
-
-          // On next user touch or click anywhere, play immediately
-          const unlockHandler = () => {
-            audio.currentTime = 0;
-            audio.play().then(() => {
-              audioUnlocked = true;
-              updateAudioHintUI(true, false);
-            }).catch(() => {});
-            window.removeEventListener('click', unlockHandler);
-            window.removeEventListener('touchstart', unlockHandler);
-            window.removeEventListener('pointerdown', unlockHandler);
-          };
-          window.addEventListener('click', unlockHandler, { once: true });
-          window.addEventListener('touchstart', unlockHandler, { once: true, passive: true });
-          window.addEventListener('pointerdown', unlockHandler, { once: true, passive: true });
-        });
+    if (playPromise && playPromise.catch) {
+      playPromise.catch((err) => {
+        // If autoplay blocked by browser policy, play on the very next user tap anywhere
+        const onFirstGesture = () => {
+          audio.currentTime = 0;
+          audio.play().catch(() => {});
+          window.removeEventListener('pointerdown', onFirstGesture);
+          window.removeEventListener('touchstart', onFirstGesture);
+          window.removeEventListener('click', onFirstGesture);
+        };
+        window.addEventListener('pointerdown', onFirstGesture, { once: true });
+        window.addEventListener('touchstart', onFirstGesture, { once: true, passive: true });
+        window.addEventListener('click', onFirstGesture, { once: true });
+      });
     }
-  } catch (e) {
-    console.warn('playHaimiyaYaho exception:', e);
-  }
+  } catch (e) {}
 }
 
 // ---- SPLASH GREETING: FLOATING JAPANESE TEXT ----
@@ -2099,7 +2036,7 @@ function showSplashGreeting(splashEl) {
   if (!splashEl) return;
   if (splashEl.querySelector('.splash-greeting-float')) return;
   
-  // Create floating greeting element
+  // Create floating greeting element (Clean Japanese greeting, no notification text)
   const greeting = document.createElement('div');
   greeting.className = 'splash-greeting-float';
   greeting.innerHTML = `
@@ -2107,10 +2044,10 @@ function showSplashGreeting(splashEl) {
     <span class="greeting-jp">こんにちは</span>
     <span class="greeting-sparkle">✨</span>
   `;
-  greeting.title = 'Haimiya: こんにちは (แตะฟังเสียง Yaho!)';
+  greeting.title = 'Haimiya: こんにちは';
   greeting.addEventListener('click', (e) => {
     e.stopPropagation();
-    playHaimiyaYaho(true);
+    playHaimiyaYaho();
   });
   
   const avatarBox = splashEl.querySelector('.splash-avatar-box');
@@ -2138,10 +2075,10 @@ function initSplashScreen() {
 
   // Click or touch on splash screen also plays Haimiya Yaho sound
   splashEl.addEventListener('click', () => {
-    playHaimiyaYaho(true);
+    playHaimiyaYaho();
   });
   splashEl.addEventListener('touchstart', () => {
-    playHaimiyaYaho(true);
+    playHaimiyaYaho();
   }, { passive: true });
 
   // Register service worker if supported
@@ -2183,19 +2120,13 @@ function initSplashScreen() {
       // Show floating Japanese greeting "こんにちは" (Hello!)
       showSplashGreeting(splashEl);
 
-      // Smooth fade out after sound has played (3.5 seconds)
-      const fadeOutSplash = () => {
-        if (splashEl.dataset.fading) return;
-        splashEl.dataset.fading = 'true';
+      // Hold for 3 seconds then smoothly fade out
+      setTimeout(() => {
         splashEl.classList.add('fade-out');
         setTimeout(() => {
           splashEl.style.display = 'none';
         }, 700);
-      };
-
-      setTimeout(() => {
-        fadeOutSplash();
-      }, 3500);
+      }, 3000);
 
       return;
     }
