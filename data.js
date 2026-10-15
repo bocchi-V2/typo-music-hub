@@ -21504,6 +21504,81 @@ const SONGS = [
     ],
     "reason": "เพลงใหม่ประจำวัน เหมาะตัดต่อคู่กับ Oshi no Ko",
     "typoIdea": "เอฟเฟกต์แสงไฟดิสโก้และดาวระยิบระยับ"
+  },
+  {
+    "id": 721,
+    "title": "8/7",
+    "artist": "FirstOne",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/47/9f/e2/479fe231-6636-1e11-eb7a-e6055464fd8d/0840517271087_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/62/35/b3/6235b3e1-fb26-c9d5-8041-880a3cd77605/mzaf_14772041770765698626.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/8%2F7%20FirstOne",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตTH"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "th",
+    "animeId": 267,
+    "animeMatch": [
+      267
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Hunter x Hunter",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 722,
+    "title": "The Bloom",
+    "artist": "YOASOBI",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7a/32/9e/7a329e90-a8e5-cc05-4a8f-142811b9b095/885288733761.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b1/71/f2/b171f271-d59b-59d1-9b82-1a41c311765d/mzaf_13682368395713803404.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/The%20Bloom%20YOASOBI",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 337,
+    "animeMatch": [
+      337
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Hellsing Ultimate",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 723,
+    "title": "Ghosts",
+    "artist": "Staind",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d4/72/40/d4724078-b182-de3a-49f6-9c69f646fbf0/4099964296587.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/24/46/f8/2446f821-842b-a19f-9f15-6ee19bfcda8f/mzaf_2976992570670161849.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Ghosts%20Staind",
+    "mood": "hype",
+    "tags": [
+      "มันส์สะใจ",
+      "บีทกระแทก",
+      "ไวรัล",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตUS"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "en",
+    "animeId": 249,
+    "animeMatch": [
+      249
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ NieR:Automata Ver1.1a",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
   }
 ];
 
@@ -26487,5 +26562,29 @@ const ANIME_PAIRS = [
     "badge": "✨ ประจำวันใหม่",
     "reason": "เพลงใหม่ประจำวัน เหมาะตัดต่อคู่กับ Oshi no Ko",
     "typoIdea": "เอฟเฟกต์แสงไฟดิสโก้และดาวระยิบระยับ"
+  },
+  {
+    "songId": 721,
+    "animeId": 267,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Hunter x Hunter",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 722,
+    "animeId": 337,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Hellsing Ultimate",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 723,
+    "animeId": 249,
+    "category": "hype",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ NieR:Automata Ver1.1a",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
   }
 ];

@@ -33,6 +33,7 @@ jobs:
           git diff --quiet && git diff --staged --quiet || (git commit -m "chore(auto): Daily auto-drop new songs & anime [skip ci]" && git push)
 
       - name: 🚀 Deploy ขึ้น Netlify Production ทันที
+        continue-on-error: true
         run: npx -y netlify-cli deploy --prod --dir .
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
