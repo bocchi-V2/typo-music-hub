@@ -6,10 +6,24 @@
 // ---- ANIME COVER IMAGE HELPERS ----
 // สร้าง img tag ที่มี fallback URL อัตโนมัติกรณีรูปโหลดไม่ขึ้น พร้อมรองรับ eager/high priority
 
+// Fast O(1) Lookup Maps for instant rendering performance
+let ANIME_MAP = new Map();
+let SONG_MAP = new Map();
+
+function initDataMaps() {
+  if (typeof ANIMES !== 'undefined' && Array.isArray(ANIMES)) {
+    ANIME_MAP = new Map(ANIMES.map(a => [a.id, a]));
+  }
+  if (typeof SONGS !== 'undefined' && Array.isArray(SONGS)) {
+    SONG_MAP = new Map(SONGS.map(s => [s.id, s]));
+  }
+}
+initDataMaps();
+
 // Fallback cover helper: if song cover fails, fallback to matched anime poster or default mascot
 function getSongFallbackCover(song) {
-  if (song && song.animeId && typeof ANIMES !== 'undefined' && Array.isArray(ANIMES)) {
-    const a = ANIMES.find(item => item.id === song.animeId);
+  if (song && song.animeId) {
+    const a = ANIME_MAP.get(song.animeId) || (typeof ANIMES !== 'undefined' ? ANIMES.find(item => item.id === song.animeId) : null);
     if (a && a.coverUrl) return a.coverUrl;
   }
   return 'favicon-logo.jpg';
@@ -960,20 +974,24 @@ function showBottomPlayer(song) {
 
 function hideBottomPlayer() {
   if (currentAudio) {
-    currentAudio.pause();
-    currentAudio.currentTime = 0;
+    try {
+      currentAudio.pause();
+      currentAudio.currentTime = 0;
+    } catch (e) {
+      console.warn('Audio pause error:', e);
+    }
   }
   updateAudioUI(false);
   const player = document.getElementById('bottom-player');
   if (player) {
     player.classList.remove('visible');
-    // ซ่อนสนิทแบบ 100% ไม่ให้มีอะไรเหลือค้างหรือโผล่มาตรงขอบจอ
+    // ซ่อนสนิทแบบ 100% เลื่อนลงและล้างเนื้อหา
     setTimeout(() => {
       if (!player.classList.contains('visible')) {
         player.style.display = 'none';
         player.innerHTML = '';
       }
-    }, 350);
+    }, 280);
   }
   currentPlayingId = null;
   resumeRelaxBgm();
@@ -1349,8 +1367,8 @@ function renderSongsGrid() {
     const matchLang = s.lang === currentLangFilter;
     const matchMood = currentMoodFilter === 'all' || s.mood === currentMoodFilter;
 
-    const anime = ANIMES.find(a => a.id === s.animeId);
-    const animeNames = anime ? `${anime.nameTH} ${anime.name}`.toLowerCase() : '';
+    const anime = ANIME_MAP.get(s.animeId);
+    const animeNames = (term && anime) ? `${anime.nameTH} ${anime.name}`.toLowerCase() : '';
 
     const matchSearch = !term
       || s.title.toLowerCase().includes(term)
@@ -1498,13 +1516,19 @@ function filterByMood(mood, btn) {
   renderSongsGrid();
 }
 
+let searchDebounceTimer = null;
+
 function filterSongs() {
   const input = document.getElementById('search-input');
-  currentSearchTerm = input.value;
+  currentSearchTerm = input ? input.value : '';
   visibleSongsCount = 18;
   const clearBtn = document.getElementById('search-clear');
   if (clearBtn) clearBtn.style.display = currentSearchTerm ? 'block' : 'none';
-  renderSongsGrid();
+
+  clearTimeout(searchDebounceTimer);
+  searchDebounceTimer = setTimeout(() => {
+    renderSongsGrid();
+  }, 120);
 }
 
 function clearSearch() {
@@ -1629,6 +1653,12 @@ function vote(side) {
 
 // ---- ANIME MATCH GRID ----
 let currentPairCategory = 'all';
+let visiblePairsCount = 24;
+
+function loadMorePairs() {
+  visiblePairsCount += 24;
+  renderAnimeMatchGrid(currentPairCategory);
+}
 
 function renderAnimeMatchGrid(filterCategory = 'all') {
   const grid = document.getElementById('anime-match-grid');
@@ -1639,13 +1669,16 @@ function renderAnimeMatchGrid(filterCategory = 'all') {
     return p.category === filterCategory;
   });
 
-  grid.innerHTML = filteredPairs.map((pair, idx) => {
-    const song  = SONGS.find(s => s.id === pair.songId);
-    const anime = ANIMES.find(a => a.id === pair.animeId);
+  const totalPairs = filteredPairs.length;
+  const sliced = filteredPairs.slice(0, visiblePairsCount);
+
+  grid.innerHTML = sliced.map((pair, idx) => {
+    const song  = SONG_MAP.get(pair.songId) || SONGS.find(s => s.id === pair.songId);
+    const anime = ANIME_MAP.get(pair.animeId) || ANIMES.find(a => a.id === pair.animeId);
     if (!song || !anime) return '';
 
     const isPlaying = currentPlayingId === song.id && currentAudio && !currentAudio.paused;
-    const isPriority = idx < 12;
+    const isPriority = idx < 8;
     const loadMode = isPriority ? 'eager' : 'lazy';
     const fetchPri = isPriority ? 'high' : 'auto';
     const priAttr = isPriority ? ' fetchpriority="high"' : '';
@@ -1697,10 +1730,26 @@ function renderAnimeMatchGrid(filterCategory = 'all') {
         </div>
       </div>`;
   }).join('');
+
+  const loadMoreWrap = document.getElementById('pairs-load-more-wrap');
+  const loadMoreCount = document.getElementById('load-more-pairs-count');
+  if (loadMoreWrap) {
+    const remaining = totalPairs - sliced.length;
+    if (remaining > 0) {
+      loadMoreWrap.style.display = 'block';
+      const toShowNext = Math.min(24, remaining);
+      if (loadMoreCount) {
+        loadMoreCount.textContent = currentAppLang === 'th' ? `+${toShowNext} คู่ (เหลือ ${remaining})` : `+${toShowNext} pairs (${remaining} left)`;
+      }
+    } else {
+      loadMoreWrap.style.display = 'none';
+    }
+  }
 }
 
 function filterPairs(category, btn) {
   currentPairCategory = category;
+  visiblePairsCount = 24;
   document.querySelectorAll('.match-filter-btn').forEach(b => b.classList.remove('active'));
   if (btn) btn.classList.add('active');
   renderAnimeMatchGrid(category);
@@ -2380,7 +2429,7 @@ function initScrollEffect() {
   window.addEventListener('scroll', () => {
     const nav = document.getElementById('navbar');
     if (nav) nav.classList.toggle('scrolled', window.scrollY > 40);
-  });
+  }, { passive: true });
 }
 
 // Close mobile menu when clicking any nav link
