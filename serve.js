@@ -19,6 +19,19 @@ const mimeTypes = {
 };
 
 const server = http.createServer((req, res) => {
+  if (req.method === 'POST' && req.url === '/save-audio') {
+    const chunks = [];
+    req.on('data', c => chunks.push(c));
+    req.on('end', () => {
+      const buffer = Buffer.concat(chunks);
+      fs.writeFileSync(path.join(__dirname, 'haimiya_yaho.wav'), buffer);
+      console.log('Saved haimiya_yaho.wav size:', buffer.length);
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ ok: true, size: buffer.length }));
+    });
+    return;
+  }
+
   let safePath = path.normalize(decodeURIComponent(req.url.split('?')[0])).replace(/^(\.\.[\/\\])+/, '');
   if (safePath === '/' || safePath === '\\') safePath = '/index.html';
   const filePath = path.join(__dirname, safePath);
