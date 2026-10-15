@@ -5770,6 +5770,32 @@ const ANIMES = [
     "coverFallback": "https://media.kitsu.app/anime/45249/poster_image/medium-755db8403ce12850dbd8852430a6609a.jpeg",
     "anifumeUrl": "https://anifume.com/?s=Kimetsu%20no%20Yaiba%3A%20Mugen%20Ressha-hen",
     "mood": "hype"
+  },
+  {
+    "id": 409,
+    "name": "Made in Abyss: Fukaki Tamashii no Reimei",
+    "nameTH": "Made in Abyss: Fukaki Tamashii no Reimei",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/14027/poster_image/medium-2ccfd6de3c64f3e8340230e7758646a1.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/14027/poster_image/medium-2ccfd6de3c64f3e8340230e7758646a1.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Made%20in%20Abyss%3A%20Fukaki%20Tamashii%20no%20Reimei",
+    "mood": "hype"
+  },
+  {
+    "id": 410,
+    "name": "Kono Subarashii Sekai ni Shukufuku wo! OVA",
+    "nameTH": "Kono Subarashii Sekai ni Shukufuku wo! OVA",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/11752/poster_image/medium-6e7782dec9c8a72c2148369c288982ee.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/11752/poster_image/medium-6e7782dec9c8a72c2148369c288982ee.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Kono%20Subarashii%20Sekai%20ni%20Shukufuku%20wo!%20OVA",
+    "mood": "hype"
   }
 ];
 
@@ -21858,6 +21884,81 @@ const SONGS = [
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Akira",
     "typoIdea": "ฟอนต์มนละมุน ขยับเด้งน่ารักตามท่อนฮุก มีประกายหัวใจเบาๆ"
+  },
+  {
+    "id": 734,
+    "title": "The Bloom",
+    "artist": "YOASOBI",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7a/32/9e/7a329e90-a8e5-cc05-4a8f-142811b9b095/885288733761.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b1/71/f2/b171f271-d59b-59d1-9b82-1a41c311765d/mzaf_13682368395713803404.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/The%20Bloom%20YOASOBI",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 48,
+    "animeMatch": [
+      48
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Vinland Saga",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 735,
+    "title": "The Greatest Show On Earth",
+    "artist": "U2",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/19/6b/ac/196bac72-8c20-98c9-7fb4-5c66619cc0c3/26UMGIM93067.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a6/d7/72/a6d77269-f6b7-1f0d-4fd4-859e5d951a8c/mzaf_16339311253737403211.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/The%20Greatest%20Show%20On%20Earth%20U2",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตUS"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 125,
+    "animeMatch": [
+      125
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Chainsaw Man",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 736,
+    "title": "藍二乗",
+    "artist": "Yorushika",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/64/ab/ba/64abba45-d080-0e8a-c24b-313e597c63cb/PA00076158_0_91679_jacket.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/dc/d9/d9dcd9ea-f09d-ca08-bb1b-bf4ebd630ede/mzaf_6254279233344660048.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E8%97%8D%E4%BA%8C%E4%B9%97%20Yorushika",
+    "mood": "hype",
+    "tags": [
+      "มันส์สะใจ",
+      "บีทกระแทก",
+      "ไวรัล",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "jp",
+    "animeId": 265,
+    "animeMatch": [
+      265
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Steins;Gate",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
   }
 ];
 
@@ -26937,5 +27038,29 @@ const ANIME_PAIRS = [
     "badge": "✨ ประจำวันใหม่",
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Akira",
     "typoIdea": "ฟอนต์มนละมุน ขยับเด้งน่ารักตามท่อนฮุก มีประกายหัวใจเบาๆ"
+  },
+  {
+    "songId": 734,
+    "animeId": 48,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Vinland Saga",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 735,
+    "animeId": 125,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Chainsaw Man",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 736,
+    "animeId": 265,
+    "category": "hype",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Steins;Gate",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
   }
 ];
