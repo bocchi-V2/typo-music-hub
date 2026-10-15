@@ -9,10 +9,47 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/jpeg" href="favicon-logo.jpg" />
-  <link rel="apple-touch-icon" href="favicon-logo.jpg" />
+  <link rel="icon" type="image/jpeg" href="splash-cover.jpg" />
+  <link rel="apple-touch-icon" href="splash-cover.jpg" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#07090e" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 </head>
 <body>
+  <!-- APP & WEB SPLASH LOADING SCREEN -->
+  <div id="app-splash-screen" class="splash-screen" aria-label="Loading Screen">
+    <div class="splash-ambient-glow"></div>
+    <div class="splash-card">
+      <div class="splash-avatar-box">
+        <div class="splash-avatar-ring"></div>
+        <div class="splash-avatar-glow"></div>
+        <img src="splash-cover.jpg" alt="Typo Music Cover" class="splash-avatar-img" />
+      </div>
+      <div class="splash-info">
+        <div class="splash-badge">TYPO MUSIC STUDIO</div>
+        <h1 class="splash-title">ไทโปมิวสิค</h1>
+        <p class="splash-subtitle">Typography Music & Anime Matcher</p>
+      </div>
+
+      <!-- PROGRESS BAR WITH SPINNING CHIBI MASCOT -->
+      <div class="splash-progress-wrapper">
+        <div class="splash-progress-track">
+          <div class="splash-progress-bar" id="splash-progress-bar">
+            <!-- Chibi mascot spinning along the progress bar -->
+            <div class="splash-chibi-spinner" id="splash-chibi-spinner" title="Loading...">
+              <img src="loading-chibi.jpg" alt="Chibi Mascot" class="splash-chibi-icon" />
+            </div>
+          </div>
+        </div>
+        <div class="splash-progress-meta">
+          <span class="splash-status-text" id="splash-status-text">กำลังโหลดคลังเพลงและอนิเมะ...</span>
+          <span class="splash-percent-text" id="splash-percent-text">0%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- SITE-WIDE WATERMARK -->
   <div class="site-watermark" aria-hidden="true"></div>
 
@@ -32,6 +69,9 @@
         <a href="#" class="nav-link nav-saved-btn" onclick="switchStudioWorkspace('saved', true); return false;">
           ❤️ <span data-i18n="navSaved">บันทึกไว้</span> (<span id="nav-saved-count">0</span>)
         </a>
+        <button class="nav-link nav-app-btn" onclick="openAppModal(); return false;" style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(129, 140, 248, 0.2)); border: 1px solid rgba(56, 189, 248, 0.4); border-radius: 999px; cursor: pointer; color: #fff; font-weight: 600; padding: 0.35rem 0.9rem; margin-left: 0.3rem;">
+          📲 <span data-i18n="navInstallApp">ติดตั้งแอป / APK</span>
+        </button>
       </div>
       <div class="lang-switch-box">
         <button class="lang-toggle-btn active" id="btn-lang-th" onclick="setAppLanguage('th')">🇹🇭 TH</button>
@@ -54,6 +94,9 @@
       <div class="hero-btns">
         <a href="#random" class="btn btn-primary" id="hero-random-btn" data-i18n="heroBtnRandom">🎲 ไปที่โซนสุ่มเพลง</a>
         <a href="#songs" class="btn btn-ghost" id="hero-btn-songs">🎵 <span data-i18n="heroBtnSongs">สำรวจคลังเพลง</span> (<span id="hero-song-count">698</span> <span data-i18n="heroBtnSongsSuffix">เพลง</span>)</a>
+        <button class="btn btn-ghost" onclick="openAppModal()" style="border-color: rgba(56, 189, 248, 0.45); background: rgba(56, 189, 248, 0.1); color: #38bdf8;">
+          📲 ดาวน์โหลด APK / ติดตั้งแอป
+        </button>
       </div>
     </div>
     <div class="hero-visual">
@@ -457,7 +500,37 @@
     </div>
   </div>
 
+  <!-- APP DOWNLOAD & INSTALL MODAL -->
+  <div class="modal-overlay hidden" id="app-install-modal" onclick="closeAppModal()">
+    <div class="modal-box glass-card" onclick="event.stopPropagation()" style="max-width: 520px; text-align: center;">
+      <button class="modal-close" onclick="closeAppModal()">✕</button>
+      <div class="app-modal-inner" style="padding: 1.2rem 0.5rem;">
+        <div style="position: relative; width: 110px; height: 110px; margin: 0 auto 1.2rem; border-radius: 28px; overflow: hidden; box-shadow: 0 10px 35px rgba(56, 189, 248, 0.45); border: 2.5px solid rgba(56, 189, 248, 0.65);">
+          <img src="splash-cover.jpg" alt="App Icon" style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+        <h2 style="font-size: 1.65rem; font-weight: 800; color: #fff; margin-bottom: 0.35rem;">ไทโปมิวสิค สำหรับมือถือ</h2>
+        <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.5;">เปิดใช้งานแบบแอปเต็มจอ มี Splash Screen พร้อมตัวการ์ตูนหมุน และอัปเดตเพลงใหม่ทุกวัน</p>
 
+        <div style="display: flex; flex-direction: column; gap: 0.9rem;">
+          <!-- Option 1: PWA 1-Click Install -->
+          <button id="btn-pwa-install" class="btn btn-primary" onclick="installPWA()" style="width: 100%; justify-content: center; font-size: 1rem; padding: 0.95rem; box-shadow: 0 8px 24px rgba(56, 189, 248, 0.35);">
+            ⚡ ติดตั้งลงหน้าจอมือถือทันที (1 คลิก ไม่ต้องโหลดไฟล์)
+          </button>
+          
+          <!-- Option 2: Download APK -->
+          <a id="btn-apk-download" href="https://github.com/bocchi-V2/typo-music-hub/releases" target="_blank" class="btn btn-ghost" style="width: 100%; justify-content: center; font-size: 0.95rem; border-color: rgba(56, 189, 248, 0.5); color: #38bdf8; text-decoration: none; padding: 0.9rem;">
+            📥 ดาวน์โหลดไฟล์ APK สำหรับ Android (.apk)
+          </a>
+        </div>
+
+        <div style="margin-top: 1.4rem; padding: 0.9rem 1.1rem; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; font-size: 0.82rem; color: #94a3b8; text-align: left; line-height: 1.6;">
+          💡 <strong>วิธีติดตั้งบนมือถือ:</strong><br/>
+          • <strong>Android / iOS (ผ่านเบราว์เซอร์):</strong> กดปุ่ม <em>"ติดตั้งลงหน้าจอมือถือทันที"</em> หรือกดปุ่ม 3 จุดใน Chrome แล้วเลือก <em>"เพิ่มลงในหน้าจอหลัก (Install App)"</em><br/>
+          • <strong>ไฟล์ APK:</strong> กดปุ่ม <em>"ดาวน์โหลดไฟล์ APK"</em> เพื่อนำไฟล์ไปติดตั้งในเครื่อง Android ได้ทันที
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- BOTTOM PLAYER -->
   <div id="bottom-player" class="bottom-player"></div>

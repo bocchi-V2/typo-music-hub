@@ -37,6 +37,7 @@ const I18N = {
     navVersus: "⚔️ โหวตเพลง",
     navAnimeMatch: "🌸 จับคู่อนิเมะ",
     navSaved: "บันทึกไว้",
+    navInstallApp: "ติดตั้งแอป / APK",
     tabSavedTitle: "เพลงที่บันทึกไว้",
     heroBadge: "🎬 TYPOGRAPHY & VIDEO EDITING HUB",
     heroTitle1: "รวมเพลงตัดต่อคลิป",
@@ -141,6 +142,7 @@ const I18N = {
     navVersus: "⚔️ Song Battles",
     navAnimeMatch: "🌸 Anime Pairs",
     navSaved: "Saved",
+    navInstallApp: "Install App / APK",
     tabSavedTitle: "Saved Songs",
     heroBadge: "🎬 TYPOGRAPHY & VIDEO EDITING HUB",
     heroTitle1: "Music for Typography Clips",
@@ -1760,6 +1762,41 @@ function closeModal() {
   document.getElementById('modal-overlay').classList.add('hidden');
 }
 
+// ---- APP INSTALL & DOWNLOAD MODAL ----
+let deferredPrompt = null;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  const btn = document.getElementById('btn-pwa-install');
+  if (btn) btn.style.display = 'flex';
+});
+
+function openAppModal() {
+  const modal = document.getElementById('app-install-modal');
+  if (modal) modal.classList.remove('hidden');
+}
+
+function closeAppModal() {
+  const modal = document.getElementById('app-install-modal');
+  if (modal) modal.classList.add('hidden');
+}
+
+function installPWA() {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then((choiceResult) => {
+      if (choiceResult.outcome === 'accepted') {
+        console.log('User installed the app');
+      }
+      deferredPrompt = null;
+    });
+  } else {
+    alert(currentAppLang === 'th'
+      ? '💡 วิธีติดตั้งลงหน้าจอมือถือทันที:\n1. กดปุ่มตัวเลือก (จุด 3 จุด หรือปุ่มแชร์) ในเบราว์เซอร์\n2. เลือก "เพิ่มลงในหน้าจอหลัก" (Add to Home screen / Install App)\n3. เข้าใช้งานได้จากไอคอนหน้าจอมือถือได้ทันทีครับ!'
+      : '💡 How to install on mobile:\n1. Tap the browser menu (3 dots or Share icon)\n2. Select "Add to Home screen" or "Install App"\n3. Launch directly from your home screen!');
+  }
+}
+
 // ---- ANIME PICKER: เลือกเพลงแล้วเลือกอนิเมะที่เข้ากัน ----
 let _pickerSongId = null;
 
@@ -1954,8 +1991,75 @@ function initWeeklyUpdateTracker() {
   setTimeout(() => initWeeklyUpdateTracker(), Math.min(msUntilNextDay, DAY_MS));
 }
 
+// ---- SPLASH SCREEN WITH SMOOTH PROGRESS & ROTATING CHIBI MASCOT ----
+function initSplashScreen() {
+  const splashEl = document.getElementById('app-splash-screen');
+  const progressBar = document.getElementById('splash-progress-bar');
+  const percentText = document.getElementById('splash-percent-text');
+  const statusText = document.getElementById('splash-status-text');
+
+  if (!splashEl || !progressBar || !percentText) return;
+
+  // Register service worker if supported
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js').catch(() => {});
+    });
+  }
+
+  let currentPercent = 0;
+  const targetPercent = 100;
+  const duration = 1600; // 1.6 seconds smooth load
+  const interval = 25; // 25ms tick
+  const step = targetPercent / (duration / interval);
+
+  const statusStages = [
+    { at: 0, th: 'กำลังเตรียมคลังเพลง...', en: 'Preparing song vault...' },
+    { at: 28, th: 'เชื่อมต่อเสียงตัวอย่าง & ซีนอนิเมะ...', en: 'Connecting audio previews & anime...' },
+    { at: 62, th: 'จัดเตรียมคลังไอเดียทำคลิปไทโป...', en: 'Loading typography ideas & BPM...' },
+    { at: 90, th: 'โหลดข้อมูลสำเร็จเกือบครบแล้ว...', en: 'Finalizing studio modules...' },
+    { at: 100, th: '✨ พร้อมใช้งานแล้ว!', en: '✨ Ready to create!' }
+  ];
+
+  const timer = setInterval(() => {
+    const easeFactor = currentPercent < 70 ? 1.25 : 0.82;
+    currentPercent += step * easeFactor;
+
+    if (currentPercent >= 100) {
+      currentPercent = 100;
+      clearInterval(timer);
+
+      progressBar.style.width = '100%';
+      percentText.textContent = '100%';
+      if (statusText) statusText.textContent = currentAppLang === 'th' ? '✨ พร้อมใช้งานแล้ว!' : '✨ Ready to create!';
+
+      // Hold briefly then smoothly fade out
+      setTimeout(() => {
+        splashEl.classList.add('fade-out');
+        setTimeout(() => {
+          splashEl.style.display = 'none';
+        }, 700);
+      }, 350);
+      return;
+    }
+
+    progressBar.style.width = `${Math.min(currentPercent, 99.5)}%`;
+    percentText.textContent = `${Math.floor(currentPercent)}%`;
+
+    if (statusText) {
+      for (let i = statusStages.length - 1; i >= 0; i--) {
+        if (currentPercent >= statusStages[i].at) {
+          statusText.textContent = currentAppLang === 'th' ? statusStages[i].th : statusStages[i].en;
+          break;
+        }
+      }
+    }
+  }, interval);
+}
+
 // ---- INIT ----
 document.addEventListener('DOMContentLoaded', () => {
+  initSplashScreen();
   setAppLanguage(currentAppLang);
   renderSongsGrid();
   renderAnimeMatchGrid();
@@ -2044,6 +2148,7 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
     closeModal();
     closeAnimePicker();
+    closeAppModal();
     const navLinks = document.querySelector('.nav-links');
     if (navLinks && navLinks.classList.contains('open')) {
       navLinks.classList.remove('open');

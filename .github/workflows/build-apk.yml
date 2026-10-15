@@ -1,0 +1,96 @@
+name: Build Android APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+    paths:
+      - 'index.html'
+      - 'style.css'
+      - 'app.js'
+      - 'data.js'
+      - 'manifest.json'
+      - 'splash-cover.jpg'
+      - 'loading-chibi.jpg'
+      - '.github/workflows/build-apk.yml'
+
+jobs:
+  build-apk:
+    name: 📱 สร้างไฟล์ Android APK
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: 📥 ดึงโค้ดโปรเจกต์
+        uses: actions/checkout@v4
+
+      - name: ☕ ติดตั้ง Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: '17'
+
+      - name: ⚙️ ติดตั้ง Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 📦 ติดตั้ง Capacitor และสร้างโปรเจกต์ Android
+        run: |
+          npm install --save-dev @capacitor/core @capacitor/cli @capacitor/android
+          cat << 'EOF' > capacitor.config.json
+          {
+            "appId": "com.typomusic.hub",
+            "appName": "ไทโปมิวสิค",
+            "webDir": ".",
+            "bundledWebRuntime": false,
+            "server": {
+              "cleartext": true
+            }
+          }
+          EOF
+          npx cap add android
+          npx cap sync android
+
+      - name: 🔨 คอมไพล์ไฟล์ APK (Gradle Assemble)
+        run: |
+          cd android
+          chmod +x gradlew
+          ./gradlew assembleDebug --no-daemon
+
+      - name: 📦 คัดลอกและเปลี่ยนชื่อไฟล์ APK
+        run: |
+          mkdir -p dist-apk
+          cp android/app/build/outputs/apk/debug/app-debug.apk dist-apk/TypoMusicHub.apk
+          echo "✅ สร้างไฟล์ TypoMusicHub.apk สำเร็จ ขนาดไฟล์:"
+          ls -lh dist-apk/TypoMusicHub.apk
+
+      - name: 📤 อัปโหลด Artifact ให้ดาวน์โหลดได้จาก GitHub Actions
+        uses: actions/upload-artifact@v4
+        with:
+          name: TypoMusicHub-Android-APK
+          path: dist-apk/TypoMusicHub.apk
+          retention-days: 90
+
+      - name: 🚀 ปล่อยเวอร์ชันดาวน์โหลดใน GitHub Releases
+        uses: softprops/action-gh-release@v2
+        if: github.ref == 'refs/heads/master'
+        with:
+          tag_name: latest-apk
+          name: "📱 Typo Music Hub Android APK (เวอร์ชันล่าสุด)"
+          body: |
+            ### 🎵 ไทโปมิวสิค – Typo Music Hub สำหรับ Android
+            
+            ไฟล์ APK สำหรับติดตั้งลงสมาร์ตโฟนหรือแท็บเล็ต Android ได้โดยตรง
+            - ✨ มีหน้า Splash Screen พร้อมไอคอนสาวอนิเมะผมเงินเรืองแสง
+            - 🌀 มีตัวการ์ตูน Chibi หมุนตามหลอดโหลด (0% - 100%)
+            - 🔄 มีระบบดึงเพลงใหม่และชาร์ตเพลงฮิตประจำวันแบบเรียลไทม์
+            
+            **วิธีติดตั้ง:**
+            1. ดาวน์โหลดไฟล์ `TypoMusicHub.apk` ด้านล่าง
+            2. กดเปิดไฟล์บนเครื่อง Android และเลือก **"ติดตั้ง (Install)"**
+          files: dist-apk/TypoMusicHub.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
