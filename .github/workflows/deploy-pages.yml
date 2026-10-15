@@ -36,3 +36,10 @@ jobs:
       - name: 🚀 Deploy ขึ้น GitHub Pages Live Web
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: 🚀 Deploy ขึ้น Netlify Production ทันที
+        continue-on-error: true
+        run: npx -y netlify-cli deploy --prod --dir .
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID || '148fb849-b34a-4dfc-a4f5-cf3e8b05b893' }}
