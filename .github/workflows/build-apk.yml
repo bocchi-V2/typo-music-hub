@@ -60,10 +60,14 @@ jobs:
           npx cap sync android
 
       - name: 🔨 คอมไพล์ไฟล์ APK (Gradle Assemble)
+        env:
+          ANDROID_HOME: /usr/local/lib/android/sdk
         run: |
+          yes | /usr/local/lib/android/sdk/cmdline-tools/latest/bin/sdkmanager --licenses || true
           cd android
+          echo "sdk.dir=/usr/local/lib/android/sdk" > local.properties
           chmod +x gradlew
-          ./gradlew assembleDebug --no-daemon
+          ./gradlew assembleDebug --no-daemon --stacktrace
 
       - name: 📦 คัดลอกและเปลี่ยนชื่อไฟล์ APK
         run: |
