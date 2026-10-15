@@ -3715,6 +3715,63 @@ header#hero {
   text-shadow: 0 0 10px rgba(56, 189, 248, 0.6);
 }
 
+/* AUDIO HINT BUTTON ON SPLASH SCREEN */
+.splash-audio-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1.25rem;
+  padding: 6px 16px;
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.28);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #94a3b8;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.splash-audio-hint:hover {
+  background: rgba(56, 189, 248, 0.18);
+  border-color: rgba(56, 189, 248, 0.6);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(56, 189, 248, 0.35);
+}
+
+.splash-audio-hint.blocked {
+  background: rgba(56, 189, 248, 0.22);
+  border-color: #38bdf8;
+  color: #38bdf8;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+  animation: splashAudioHintPulse 1.2s ease-in-out infinite alternate;
+}
+
+.splash-audio-hint.playing {
+  background: rgba(34, 197, 94, 0.15);
+  border-color: rgba(34, 197, 94, 0.5);
+  color: #4ade80;
+}
+
+@keyframes splashAudioHintPulse {
+  0% { transform: scale(0.98); box-shadow: 0 0 10px rgba(56, 189, 248, 0.3); }
+  100% { transform: scale(1.04); box-shadow: 0 0 22px rgba(56, 189, 248, 0.8); }
+}
+
+.splash-greeting-float.need-tap {
+  border-color: #38bdf8 !important;
+  box-shadow: 0 0 22px rgba(56, 189, 248, 0.8) !important;
+  animation: splashGreetingNeedTap 1.1s ease-in-out infinite alternate !important;
+}
+
+@keyframes splashGreetingNeedTap {
+  0% { transform: translateX(-50%) scale(0.98); }
+  100% { transform: translateX(-50%) scale(1.06); }
+}
+
 @media (max-width: 480px) {
   .splash-avatar-box {
     width: 125px;

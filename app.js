@@ -1993,27 +1993,105 @@ function initWeeklyUpdateTracker() {
 
 // ---- HAIMIYA YAHO AUDIO CLIP ----
 let haimiyaAudio = null;
-function playHaimiyaYaho() {
+let audioUnlocked = false;
+
+function getHaimiyaAudio() {
+  if (!haimiyaAudio) {
+    haimiyaAudio = new Audio('haimiya_yaho.mp3');
+    haimiyaAudio.preload = 'auto';
+    haimiyaAudio.volume = 1.0;
+  }
+  return haimiyaAudio;
+}
+
+// Pre-load audio immediately on script load
+try {
+  getHaimiyaAudio().load();
+} catch (e) {}
+
+// Pre-unlock audio on early user gesture (tap/click anywhere during load)
+function preUnlockAudio() {
+  if (audioUnlocked) return;
+  const audio = getHaimiyaAudio();
+  const p = audio.play();
+  if (p && p.then) {
+    p.then(() => {
+      audioUnlocked = true;
+      const progressBar = document.getElementById('splash-progress-bar');
+      const isComplete = progressBar && progressBar.style.width === '100%';
+      if (!isComplete) {
+        audio.pause();
+        audio.currentTime = 0;
+      } else {
+        updateAudioHintUI(true, false);
+      }
+    }).catch(() => {});
+  }
+}
+window.addEventListener('pointerdown', preUnlockAudio, { passive: true });
+window.addEventListener('touchstart', preUnlockAudio, { passive: true });
+window.addEventListener('click', preUnlockAudio, { passive: true });
+
+function updateAudioHintUI(isPlaying, isBlocked) {
+  const hintEl = document.getElementById('splash-audio-hint');
+  const greetingEl = document.querySelector('.splash-greeting-float');
+  
+  if (isPlaying) {
+    if (hintEl) {
+      hintEl.classList.remove('blocked');
+      hintEl.classList.add('playing');
+      hintEl.innerHTML = '<span class="hint-icon">🔊</span> <span>กำลังเล่นเสียงคุณไฮมิยะ...</span>';
+    }
+    if (greetingEl) {
+      greetingEl.classList.remove('need-tap');
+      greetingEl.innerHTML = '<span class="greeting-icon">🔊</span> <span class="greeting-jp">こんにちは！</span> <span class="greeting-sparkle">✨</span>';
+    }
+  } else if (isBlocked) {
+    if (hintEl) {
+      hintEl.classList.add('blocked');
+      hintEl.innerHTML = '<span class="hint-icon">🔊</span> <span>แตะหน้าจอเพื่อเปิดเสียงต้อนรับ</span>';
+    }
+    if (greetingEl) {
+      greetingEl.classList.add('need-tap');
+      greetingEl.innerHTML = '<span class="greeting-icon">🔊</span> <span class="greeting-jp">こんにちは (แตะฟังเสียง 🔊)</span> <span class="greeting-sparkle">✨</span>';
+    }
+  }
+}
+
+function playHaimiyaYaho(userInitiated = false) {
   try {
-    if (!haimiyaAudio) {
-      haimiyaAudio = new Audio('haimiya_yaho.mp3');
-      haimiyaAudio.volume = 0.95;
+    const audio = getHaimiyaAudio();
+    audio.currentTime = 0;
+    const playPromise = audio.play();
+    if (playPromise && playPromise.then) {
+      playPromise
+        .then(() => {
+          audioUnlocked = true;
+          updateAudioHintUI(true, false);
+        })
+        .catch((err) => {
+          console.warn('Audio autoplay blocked by browser policy:', err);
+          updateAudioHintUI(false, true);
+
+          // On next user touch or click anywhere, play immediately
+          const unlockHandler = () => {
+            audio.currentTime = 0;
+            audio.play().then(() => {
+              audioUnlocked = true;
+              updateAudioHintUI(true, false);
+            }).catch(() => {});
+            window.removeEventListener('click', unlockHandler);
+            window.removeEventListener('touchstart', unlockHandler);
+            window.removeEventListener('pointerdown', unlockHandler);
+          };
+          window.addEventListener('click', unlockHandler, { once: true });
+          window.addEventListener('touchstart', unlockHandler, { once: true, passive: true });
+          window.addEventListener('pointerdown', unlockHandler, { once: true, passive: true });
+        });
     }
-    haimiyaAudio.currentTime = 0;
-    const p = haimiyaAudio.play();
-    if (p && p.catch) {
-      p.catch(() => {
-        // Fallback for strict browser autoplay: unlock and play on first touch or click
-        const unlockAudio = () => {
-          if (haimiyaAudio) haimiyaAudio.play().catch(() => {});
-          window.removeEventListener('click', unlockAudio);
-          window.removeEventListener('touchstart', unlockAudio);
-        };
-        window.addEventListener('click', unlockAudio, { once: true });
-        window.addEventListener('touchstart', unlockAudio, { once: true, passive: true });
-      });
-    }
-  } catch (e) {}
+  } catch (e) {
+    console.warn('playHaimiyaYaho exception:', e);
+  }
 }
 
 // ---- SPLASH GREETING: FLOATING JAPANESE TEXT ----
@@ -2029,10 +2107,10 @@ function showSplashGreeting(splashEl) {
     <span class="greeting-jp">こんにちは</span>
     <span class="greeting-sparkle">✨</span>
   `;
-  greeting.title = 'Haimiya: こんにちは (Yaho!)';
+  greeting.title = 'Haimiya: こんにちは (แตะฟังเสียง Yaho!)';
   greeting.addEventListener('click', (e) => {
     e.stopPropagation();
-    playHaimiyaYaho();
+    playHaimiyaYaho(true);
   });
   
   const avatarBox = splashEl.querySelector('.splash-avatar-box');
@@ -2060,10 +2138,10 @@ function initSplashScreen() {
 
   // Click or touch on splash screen also plays Haimiya Yaho sound
   splashEl.addEventListener('click', () => {
-    playHaimiyaYaho();
+    playHaimiyaYaho(true);
   });
   splashEl.addEventListener('touchstart', () => {
-    playHaimiyaYaho();
+    playHaimiyaYaho(true);
   }, { passive: true });
 
   // Register service worker if supported
@@ -2105,13 +2183,20 @@ function initSplashScreen() {
       // Show floating Japanese greeting "こんにちは" (Hello!)
       showSplashGreeting(splashEl);
 
-      // Hold for 3 seconds (let sound play fully) then smoothly fade out
-      setTimeout(() => {
+      // Smooth fade out after sound has played (3.5 seconds)
+      const fadeOutSplash = () => {
+        if (splashEl.dataset.fading) return;
+        splashEl.dataset.fading = 'true';
         splashEl.classList.add('fade-out');
         setTimeout(() => {
           splashEl.style.display = 'none';
         }, 700);
-      }, 3000);
+      };
+
+      setTimeout(() => {
+        fadeOutSplash();
+      }, 3500);
+
       return;
     }
 

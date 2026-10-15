@@ -64,6 +64,30 @@ jobs:
           npx cap add android
           npx cap sync android
 
+          # ปลดล็อกระบบบล็อกเสียงใน Android WebView (setMediaPlaybackRequiresUserGesture = false)
+          cat <<'EOF' > android/app/src/main/java/com/haimiya/typo/MainActivity.java
+          package com.haimiya.typo;
+
+          import android.os.Bundle;
+          import android.webkit.WebSettings;
+          import android.webkit.WebView;
+          import com.getcapacitor.BridgeActivity;
+
+          public class MainActivity extends BridgeActivity {
+              @Override
+              public void onCreate(Bundle savedInstanceState) {
+                  super.onCreate(savedInstanceState);
+                  try {
+                      WebView webView = getBridge().getWebView();
+                      if (webView != null) {
+                          WebSettings settings = webView.getSettings();
+                          settings.setMediaPlaybackRequiresUserGesture(false);
+                      }
+                  } catch (Exception e) {}
+              }
+          }
+          EOF
+
       - name: 🎨 ตั้งค่าไอคอนแอป (App Icon)
         run: |
           # ติดตั้ง ImageMagick (ไม่ได้มาพร้อม Ubuntu 24.04)
@@ -123,14 +147,16 @@ jobs:
         uses: softprops/action-gh-release@v2
         if: github.ref == 'refs/heads/master'
         with:
-          tag_name: "v1.2.0"
-          name: "📱 Haimiya Typo – Android APK (v1.2.0)"
+          tag_name: "v1.3.0"
+          name: "📱 Haimiya Typo – Android APK (v1.3.0)"
           body: |
-            ### 🌸 Haimiya Typo (ไฮมิยะไทโป) v1.2.0 สำหรับ Android
+            ### 🌸 Haimiya Typo (ไฮมิยะไทโป) v1.3.0 สำหรับ Android
             
             ไฟล์ APK สำหรับติดตั้งลงสมาร์ตโฟนหรือแท็บเล็ต Android ได้โดยตรง
-            - 🎙️ **เสียงต้อนรับตอนเปิดแอป 3 วินาที** – เสียง "Yaho!" ดังชัดเจนเมื่อเปิดแอปสำเร็จ
-            - 💬 **ข้อความทักทายภาษาญี่ปุ่น** – มีข้อความลอยลงมา "こんにちは ✨" (สวัสดี) เหนือรูปโปรไฟล์
+            - 🎙️ **เสียงต้อนรับตอนเปิดแอป 3 วินาที (แก้ปัญหาไม่มีเสียง)**:
+              - ปลดล็อก WebView ให้เล่นเสียง Autoplay อัตโนมัติทันทีที่เปิดแอปสำเร็จ (`setMediaPlaybackRequiresUserGesture = false`)
+              - ไฟล์เสียงตัวเต็ม 3 วินาทีชัดเจน (72KB)
+              - มีปุ่มแตะฟังเสียงพร้อมข้อความทักทายภาษาญี่ปุ่น "こんにちは ✨"
             - 💙 **หน้าจอ Splash Screen & ไอคอนแอป** – รูปสาวอนิเมะผมเงินตาฟ้าชุดดำ
             - 🌀 **ตัวการ์ตูน Chibi หมุนตามหลอดโหลด** – หมุนตามความคืบหน้า 0% ถึง 100%
             - 🎵 **คลังเพลงตัดต่อไทโป 723 เพลง** – ระบบสุ่มเพลง, จับคู่อนิเมะ และอัปเดตเพลงใหม่อัตโนมัติ
