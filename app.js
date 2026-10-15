@@ -1997,12 +1997,56 @@ function playHaimiyaYaho() {
   try {
     if (!haimiyaAudio) {
       haimiyaAudio = new Audio('haimiya_yaho.mp3');
-      haimiyaAudio.volume = 0.9;
+      haimiyaAudio.volume = 0.95;
     }
     haimiyaAudio.currentTime = 0;
     const p = haimiyaAudio.play();
-    if (p && p.catch) p.catch(() => {});
+    if (p && p.catch) {
+      p.catch(() => {
+        // Fallback for strict browser autoplay: unlock and play on first touch or click
+        const unlockAudio = () => {
+          if (haimiyaAudio) haimiyaAudio.play().catch(() => {});
+          window.removeEventListener('click', unlockAudio);
+          window.removeEventListener('touchstart', unlockAudio);
+        };
+        window.addEventListener('click', unlockAudio, { once: true });
+        window.addEventListener('touchstart', unlockAudio, { once: true, passive: true });
+      });
+    }
   } catch (e) {}
+}
+
+// ---- SPLASH GREETING: FLOATING JAPANESE TEXT ----
+function showSplashGreeting(splashEl) {
+  if (!splashEl) return;
+  if (splashEl.querySelector('.splash-greeting-float')) return;
+  
+  // Create floating greeting element
+  const greeting = document.createElement('div');
+  greeting.className = 'splash-greeting-float';
+  greeting.innerHTML = `
+    <span class="greeting-icon">💬</span>
+    <span class="greeting-jp">こんにちは</span>
+    <span class="greeting-sparkle">✨</span>
+  `;
+  greeting.title = 'Haimiya: こんにちは (Yaho!)';
+  greeting.addEventListener('click', (e) => {
+    e.stopPropagation();
+    playHaimiyaYaho();
+  });
+  
+  const avatarBox = splashEl.querySelector('.splash-avatar-box');
+  if (avatarBox) {
+    avatarBox.appendChild(greeting);
+  } else {
+    const splashCard = splashEl.querySelector('.splash-card') || splashEl;
+    splashCard.prepend(greeting);
+  }
+
+  // Trigger floating down animation
+  requestAnimationFrame(() => {
+    setTimeout(() => greeting.classList.add('visible'), 50);
+  });
 }
 
 // ---- SPLASH SCREEN WITH SMOOTH PROGRESS & ROTATING CHIBI MASCOT ----
@@ -2014,10 +2058,13 @@ function initSplashScreen() {
 
   if (!splashEl || !progressBar || !percentText) return;
 
-  // Click on splash screen also plays Haimiya Yaho sound
+  // Click or touch on splash screen also plays Haimiya Yaho sound
   splashEl.addEventListener('click', () => {
     playHaimiyaYaho();
   });
+  splashEl.addEventListener('touchstart', () => {
+    playHaimiyaYaho();
+  }, { passive: true });
 
   // Register service worker if supported
   if ('serviceWorker' in navigator) {
@@ -2055,13 +2102,16 @@ function initSplashScreen() {
       // Play Haimiya Yaho sound when ready!
       playHaimiyaYaho();
 
-      // Hold briefly then smoothly fade out
+      // Show floating Japanese greeting "こんにちは" (Hello!)
+      showSplashGreeting(splashEl);
+
+      // Hold for 3 seconds (let sound play fully) then smoothly fade out
       setTimeout(() => {
         splashEl.classList.add('fade-out');
         setTimeout(() => {
           splashEl.style.display = 'none';
         }, 700);
-      }, 500);
+      }, 3000);
       return;
     }
 
