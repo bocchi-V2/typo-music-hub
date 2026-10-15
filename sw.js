@@ -1,4 +1,4 @@
-const CACHE_NAME = 'haimiya-typo-v11';
+const CACHE_NAME = 'haimiya-typo-v12';
 
 // ไฟล์ที่ต้องแคชเพื่อให้แอพทำงานแบบ offline ได้ 100%
 const ASSETS_TO_CACHE = [

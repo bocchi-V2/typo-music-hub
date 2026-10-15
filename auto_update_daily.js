@@ -65,22 +65,33 @@ async function fetchChartSongs(country = 'th', limit = 35) {
   })).filter(s => s.title && s.artist);
 }
 
-// ดึงอนิเมะยอดนิยม / มาใหม่จาก Kitsu API
+// ดึงอนิเมะยอดนิยม / เรื่องใหม่ๆ จาก Kitsu API โดยหมุนเวียน offset เพื่อให้อนิเมะใหม่ไม่ซ้ำ
 async function fetchTrendingAnimeCandidates() {
-  const url = `https://kitsu.io/api/edge/anime?sort=-user_count&page[limit]=25`;
-  const json = await fetchJson(url, { 'Accept': 'application/vnd.api+json' });
-  if (!json || !json.data || !json.data.length) return [];
-  return json.data.map(item => {
-    const attr = item.attributes;
-    const cover = (attr.posterImage && (attr.posterImage.medium || attr.posterImage.large || attr.posterImage.original)) || 'favicon-logo.jpg';
-    return {
-      name: attr.canonicalTitle || '',
-      nameTH: (attr.titles && attr.titles.th) || attr.canonicalTitle || '',
-      coverUrl: cover,
-      genre: ['อนิเมะ', 'ยอดนิยม'],
-      synopsis: attr.synopsis || ''
-    };
-  }).filter(a => a.name);
+  const candidates = [];
+  const offsets = [
+    Math.floor(Math.random() * 400) + 20,
+    Math.floor(Math.random() * 600) + 100,
+    0
+  ];
+  for (const offset of offsets) {
+    const url = `https://kitsu.io/api/edge/anime?sort=-user_count&page[offset]=${offset}&page[limit]=20`;
+    const json = await fetchJson(url, { 'Accept': 'application/vnd.api+json' });
+    if (json && json.data && json.data.length) {
+      const items = json.data.map(item => {
+        const attr = item.attributes;
+        const cover = (attr.posterImage && (attr.posterImage.medium || attr.posterImage.large || attr.posterImage.original)) || 'favicon-logo.jpg';
+        return {
+          name: attr.canonicalTitle || '',
+          nameTH: (attr.titles && attr.titles.th) || attr.canonicalTitle || '',
+          coverUrl: cover,
+          genre: ['อนิเมะ', 'ยอดนิยม'],
+          synopsis: attr.synopsis || ''
+        };
+      }).filter(a => a.name);
+      candidates.push(...items);
+    }
+  }
+  return candidates;
 }
 
 // ตรวจจับภาษาของเพลง
@@ -145,12 +156,13 @@ async function runDailyUpdate() {
   }
 
   const now = Date.now();
-  const timeSinceLast = now - (syncState.lastSyncTime || 0);
+  const todayDateStr = new Date(now).toLocaleDateString('th-TH', { timeZone: 'Asia/Bangkok' });
+  const lastSyncDateStr = syncState.lastSyncDateStr || (syncState.history?.[0]?.date ? syncState.history[0].date.split(' ')[0] : '');
 
-  if (!isForce && timeSinceLast < ONE_DAY_MS) {
-    const hoursLeft = Math.ceil((ONE_DAY_MS - timeSinceLast) / (1000 * 60 * 60));
-    console.log(`ℹ️ วันนี้ได้รับการอัปเดตเพลงประจำวันแล้ว`);
-    console.log(`⏳ รอบถัดไปจะมาถึงในอีกประมาณ ${hoursLeft} ชั่วโมง`);
+  // ตรวจสอบว่าวันนี้ได้รันไปแล้วหรือยัง (ตามวันปฏิทินไทย ข้ามเที่ยงคืน = วันใหม่ทันที)
+  if (!isForce && lastSyncDateStr === todayDateStr) {
+    console.log(`ℹ️ วันนี้ (${todayDateStr}) ได้รับการอัปเดตเพลงและอนิเมะประจำวันแล้ว`);
+    console.log(`⏳ รอบถัดไปจะมาถึงเวลาเที่ยงคืน (00:00 น.)`);
     console.log(`💡 ใช้คำสั่ง 'node auto_update_daily.js --force' หากต้องการบังคับอัปเดตทันที`);
     return;
   }
@@ -166,11 +178,12 @@ async function runDailyUpdate() {
   let addedAnimes = 0;
   let addedSongs = 0;
 
-  // 1. เพิ่มอนิเมะใหม่ 1 เรื่องจาก Trending Kitsu (ถ้ายังไม่มีในคลัง)
+  // 1. เพิ่มอนิเมะใหม่ 1-2 เรื่องจาก Kitsu (ถ้ายังไม่มีในคลัง)
   try {
     const animeCandidates = await fetchTrendingAnimeCandidates();
     let nextAnimeId = Math.max(0, ...ANIMES.map(a => a.id)) + 1;
     for (const cand of animeCandidates) {
+      if (addedAnimes >= 2) break; // เพิ่มวันละ 1-2 เรื่อง
       const exists = ANIMES.some(a => a.name.toLowerCase() === cand.name.toLowerCase());
       if (!exists && cand.coverUrl) {
         console.log(`🌸 เพิ่มอนิเมะใหม่ประจำวัน: ${cand.name}...`);
@@ -184,8 +197,8 @@ async function runDailyUpdate() {
           anifumeUrl: `https://anifume.com/?s=${encodeURIComponent(cand.name)}`,
           mood: 'hype'
         });
+        nextAnimeId++;
         addedAnimes++;
-        break; // เพิ่มวันละ 1 เรื่องเพื่อความสดใหม่
       }
     }
   } catch (err) {
@@ -274,6 +287,7 @@ async function runDailyUpdate() {
   // บันทึกสถานะการซิงค์
   syncState.lastSyncTime = now;
   syncState.lastSyncDate = new Date(now).toISOString().split('T')[0];
+  syncState.lastSyncDateStr = todayDateStr;
   syncState.dayCount = (syncState.dayCount || 0) + 1;
   syncState.totalSongs = SONGS.length;
   syncState.totalAnimes = ANIMES.length;

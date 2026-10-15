@@ -5744,6 +5744,32 @@ const ANIMES = [
     "coverFallback": "https://media.kitsu.app/anime/48233/poster_image/medium-e603ef5f8bac42574f7b48c0da994400.jpeg",
     "anifumeUrl": "https://anifume.com/?s=Lord%20of%20the%20Mysteries",
     "mood": "hype"
+  },
+  {
+    "id": 407,
+    "name": "Kuroko no Basket",
+    "nameTH": "Kuroko no Basket",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/6595/poster_image/medium-6690f66d37de3ce038320a29a13bb09d.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/6595/poster_image/medium-6690f66d37de3ce038320a29a13bb09d.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Kuroko%20no%20Basket",
+    "mood": "hype"
+  },
+  {
+    "id": 408,
+    "name": "Kimetsu no Yaiba: Mugen Ressha-hen",
+    "nameTH": "Kimetsu no Yaiba: Mugen Ressha-hen",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/45249/poster_image/medium-755db8403ce12850dbd8852430a6609a.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/45249/poster_image/medium-755db8403ce12850dbd8852430a6609a.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Kimetsu%20no%20Yaiba%3A%20Mugen%20Ressha-hen",
+    "mood": "hype"
   }
 ];
 
@@ -21607,6 +21633,231 @@ const SONGS = [
     ],
     "reason": "ท่วงทำนองกีตาร์อะคูสติกนุ่มนวลและเสียงร้องชวนฝันของ yung kai สื่อถึงความรักที่เรียบง่ายแต่งดงาม เข้ากับบรรยากาศอันลึกซึ้งของ Your Name และ Horimiya",
     "typoIdea": "ใช้ตัวอักษร Sans มินิมอล โทนสีฟ้าพาสเทลและขาว ค่อยๆ Fade In ตามจังหวะคอร์ดกีตาร์ พร้อมเอฟเฟกต์ละอองแสงอบอุ่น"
+  },
+  {
+    "id": 725,
+    "title": "The Bloom",
+    "artist": "YOASOBI",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7a/32/9e/7a329e90-a8e5-cc05-4a8f-142811b9b095/885288733761.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b1/71/f2/b171f271-d59b-59d1-9b82-1a41c311765d/mzaf_13682368395713803404.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/The%20Bloom%20YOASOBI",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 11,
+    "animeMatch": [
+      11
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Attack on Titan",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 726,
+    "title": "NEON",
+    "artist": "A2O & A2O LITE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/47/9c/af/479caf36-9941-3b8e-51f5-98e761463502/888272190403_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/40/43/b8/4043b833-ec96-7807-fd8c-f74a62e777f3/mzaf_2462934578689260207.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/NEON%20A2O%20%26%20A2O%20LITE",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตTH"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "th",
+    "animeId": 146,
+    "animeMatch": [
+      146
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Slime Isekai",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 727,
+    "title": "藍二乗",
+    "artist": "Yorushika",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/64/ab/ba/64abba45-d080-0e8a-c24b-313e597c63cb/PA00076158_0_91679_jacket.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/dc/d9/d9dcd9ea-f09d-ca08-bb1b-bf4ebd630ede/mzaf_6254279233344660048.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E8%97%8D%E4%BA%8C%E4%B9%97%20Yorushika",
+    "mood": "hype",
+    "tags": [
+      "มันส์สะใจ",
+      "บีทกระแทก",
+      "ไวรัล",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "jp",
+    "animeId": 125,
+    "animeMatch": [
+      125
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Chainsaw Man",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "id": 728,
+    "title": "The Bloom",
+    "artist": "YOASOBI",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7a/32/9e/7a329e90-a8e5-cc05-4a8f-142811b9b095/885288733761.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b1/71/f2/b171f271-d59b-59d1-9b82-1a41c311765d/mzaf_13682368395713803404.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/The%20Bloom%20YOASOBI",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 35,
+    "animeMatch": [
+      35
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Bleach",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 729,
+    "title": "藍二乗",
+    "artist": "Yorushika",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/64/ab/ba/64abba45-d080-0e8a-c24b-313e597c63cb/PA00076158_0_91679_jacket.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/dc/d9/d9dcd9ea-f09d-ca08-bb1b-bf4ebd630ede/mzaf_6254279233344660048.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E8%97%8D%E4%BA%8C%E4%B9%97%20Yorushika",
+    "mood": "hype",
+    "tags": [
+      "มันส์สะใจ",
+      "บีทกระแทก",
+      "ไวรัล",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "jp",
+    "animeId": 17,
+    "animeMatch": [
+      17
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Kamisama Kiss",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "id": 730,
+    "title": "Choosin' Texas",
+    "artist": "Ella Langley",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e2/91/4d/e2914d0a-7f1d-f04c-fbf4-c50b38548838/196873638690.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/38/49/4c/38494cb4-f9e0-1db4-0b84-8c478cb55390/mzaf_4251933786704889664.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Choosin'%20Texas%20Ella%20Langley",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตUS"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 286,
+    "animeMatch": [
+      286
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ A Silent Voice",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 731,
+    "title": "The Bloom",
+    "artist": "YOASOBI",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7a/32/9e/7a329e90-a8e5-cc05-4a8f-142811b9b095/885288733761.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b1/71/f2/b171f271-d59b-59d1-9b82-1a41c311765d/mzaf_13682368395713803404.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/The%20Bloom%20YOASOBI",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 337,
+    "animeMatch": [
+      337
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Hellsing Ultimate",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 732,
+    "title": "藍二乗",
+    "artist": "Yorushika",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/64/ab/ba/64abba45-d080-0e8a-c24b-313e597c63cb/PA00076158_0_91679_jacket.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/dc/d9/d9dcd9ea-f09d-ca08-bb1b-bf4ebd630ede/mzaf_6254279233344660048.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E8%97%8D%E4%BA%8C%E4%B9%97%20Yorushika",
+    "mood": "hype",
+    "tags": [
+      "มันส์สะใจ",
+      "บีทกระแทก",
+      "ไวรัล",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "jp",
+    "animeId": 155,
+    "animeMatch": [
+      155
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ My Dress-Up Darling",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "id": 733,
+    "title": "เพลงจูบ (Safe Zone) [From \"รักสุดใจนายแฟนบอย Mr. Fanboy Series\"]",
+    "artist": "TLE MATIMUN",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/51/f1/65/51f165e7-706d-92a7-f3c2-01aa4b0a1121/0840517270721_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/02/0b/e3/020be3c3-6369-908d-3452-3d92bc8d99b8/mzaf_9235287156952992244.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%88%E0%B8%B9%E0%B8%9A%20(Safe%20Zone)%20%5BFrom%20%22%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B8%E0%B8%94%E0%B9%83%E0%B8%88%E0%B8%99%E0%B8%B2%E0%B8%A2%E0%B9%81%E0%B8%9F%E0%B8%99%E0%B8%9A%E0%B8%AD%E0%B8%A2%20Mr.%20Fanboy%20Series%22%5D%20TLE%20MATIMUN",
+    "mood": "love",
+    "tags": [
+      "หวานละมุน",
+      "โรแมนติก",
+      "คลั่งรัก",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตTH"
+    ],
+    "bpm": "ปานกลาง (100 BPM)",
+    "lang": "th",
+    "animeId": 316,
+    "animeMatch": [
+      316
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Akira",
+    "typoIdea": "ฟอนต์มนละมุน ขยับเด้งน่ารักตามท่อนฮุก มีประกายหัวใจเบาๆ"
   }
 ];
 
@@ -26614,5 +26865,77 @@ const ANIME_PAIRS = [
     "badge": "✨ ประจำวันใหม่",
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ NieR:Automata Ver1.1a",
     "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "songId": 725,
+    "animeId": 11,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Attack on Titan",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 726,
+    "animeId": 146,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Slime Isekai",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 727,
+    "animeId": 125,
+    "category": "hype",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Chainsaw Man",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "songId": 728,
+    "animeId": 35,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Bleach",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 729,
+    "animeId": 17,
+    "category": "hype",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Kamisama Kiss",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "songId": 730,
+    "animeId": 286,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ A Silent Voice",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 731,
+    "animeId": 337,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Hellsing Ultimate",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 732,
+    "animeId": 155,
+    "category": "hype",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ My Dress-Up Darling",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "songId": 733,
+    "animeId": 316,
+    "category": "love",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Akira",
+    "typoIdea": "ฟอนต์มนละมุน ขยับเด้งน่ารักตามท่อนฮุก มีประกายหัวใจเบาๆ"
   }
 ];
