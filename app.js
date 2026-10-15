@@ -454,7 +454,8 @@ function playDiceSound() {
   if (!diceSfxEnabled) return;
   try {
     diceAudio.currentTime = 0;
-    diceAudio.volume = Math.min(1, Math.max(0.35, currentVolume || 0.8));
+    // ปรับเสียงสุ่มเบาๆ นุ่มนวล ไม่ดังกระแทกหู (Soft & Gentle volume)
+    diceAudio.volume = Math.min(0.16, Math.max(0.06, (currentVolume || 0.8) * 0.18));
     diceAudio.play().catch(err => {
       console.log('Dice SFX auto-play notice:', err);
     });
@@ -759,6 +760,18 @@ function togglePlaySong(songId) {
     return;
   }
 
+  // If this same song was paused -> resume seamlessly (DO NOT RESET to 0!)
+  if (currentPlayingId === songId && currentAudio && currentAudio.paused) {
+    duckRelaxBgm();
+    currentAudio.play().then(() => {
+      updateAudioUI(true);
+      showBottomPlayer(song);
+    }).catch(err => {
+      console.warn('Audio resume error:', err);
+    });
+    return;
+  }
+
   // If playing another song -> stop old one
   if (currentAudio) {
     currentAudio.pause();
@@ -800,8 +813,14 @@ function togglePlaySong(songId) {
     };
 
     audio.onended = () => {
-      updateAudioUI(false);
-      resumeRelaxBgm();
+      // เมื่อเพลงเล่นต่อจนจบ ให้เริ่มเล่นใหม่ทันทีแบบลูป (Seamless Auto-Restart)
+      audio.currentTime = 0;
+      audio.play().then(() => {
+        updateAudioUI(true);
+      }).catch(() => {
+        updateAudioUI(false);
+        resumeRelaxBgm();
+      });
     };
 
     audio.ontimeupdate = () => {
