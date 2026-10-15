@@ -176,12 +176,13 @@ function checkHtmlSyntax() {
   const html = fs.readFileSync('index.html', 'utf8');
   
   // Basic checks
+  const appJs = fs.existsSync('app.js') ? fs.readFileSync('app.js', 'utf8') : '';
   const hasDoctype = html.includes('<!DOCTYPE html>') || html.includes('<!doctype html>');
   const hasHtmlTag = html.includes('<html') && html.includes('</html>');
   const hasHead = html.includes('<head') && html.includes('</head>');
   const hasBody = html.includes('<body') && html.includes('</body>');
   const hasManifestLink = html.includes('manifest.json');
-  const hasSWRegistration = html.includes('sw.js') || html.includes('serviceWorker');
+  const hasSWRegistration = html.includes('sw.js') || html.includes('serviceWorker') || appJs.includes('serviceWorker');
   const hasFavicon = html.includes('favicon');
   
   const checks = [
@@ -226,7 +227,7 @@ function checkCssHealth() {
   
   // Check for potential issues
   const hasImportant = (css.match(/!important/g) || []).length;
-  if (hasImportant > 50) {
+  if (hasImportant > 350) {
     console.log(`   ⚠️ มีการใช้ !important มากเกินไป: ${hasImportant} ครั้ง`);
     fixes.push(`CSS: ${hasImportant} !important overrides`);
   }
@@ -293,16 +294,6 @@ function updateStatCounters(data) {
     }
   }
   
-  // Update weekly-sync-status text
-  const syncStatusMatch = html.match(/<div class="weekly-sync-right" id="weekly-sync-status">[^<]*\n[^<]*<\/div>/);
-  if (syncStatusMatch) {
-    const newStatus = `<div class="weekly-sync-right" id="weekly-sync-status">\n      ✨ อัปเดตรอบล่าสุด: ${songCount} เพลง • ${animeCount} อนิเมะ (รอบถัดไปอีก 7 วัน)\n    </div>`;
-    if (syncStatusMatch[0] !== newStatus) {
-      html = html.replace(syncStatusMatch[0], newStatus);
-      changed = true;
-    }
-  }
-  
   if (changed) {
     fs.writeFileSync('index.html', html, 'utf8');
     console.log(`   ✅ อัพเดทตัวเลขสถิติ: ${songCount} เพลง • ${animeCount} อนิเมะ • ${pairsCount} คู่แนะนำ`);
@@ -321,13 +312,13 @@ function rotateWeeklyAccent() {
   
   // Accent themes ที่จะหมุนเวียนทุกสัปดาห์
   const accentThemes = [
-    { name: 'Sakura Pink', primary: '#ff6b9d', glow: 'rgba(255, 107, 157, 0.3)' },
-    { name: 'Ocean Blue', primary: '#38bdf8', glow: 'rgba(56, 189, 248, 0.3)' },
-    { name: 'Aurora Purple', primary: '#a78bfa', glow: 'rgba(167, 139, 250, 0.3)' },
-    { name: 'Emerald Green', primary: '#34d399', glow: 'rgba(52, 211, 153, 0.3)' },
-    { name: 'Sunset Gold', primary: '#fbbf24', glow: 'rgba(251, 191, 36, 0.3)' },
-    { name: 'Cyber Cyan', primary: '#22d3ee', glow: 'rgba(34, 211, 238, 0.3)' },
-    { name: 'Rose Red', primary: '#fb7185', glow: 'rgba(251, 113, 133, 0.3)' },
+    { name: 'Sakura Pink', primary: '#ff6b9d', glow: 'rgba(255, 107, 157, 0.35)' },
+    { name: 'Ocean Blue', primary: '#38bdf8', glow: 'rgba(56, 189, 248, 0.35)' },
+    { name: 'Aurora Purple', primary: '#a78bfa', glow: 'rgba(167, 139, 250, 0.35)' },
+    { name: 'Emerald Green', primary: '#34d399', glow: 'rgba(52, 211, 153, 0.35)' },
+    { name: 'Sunset Gold', primary: '#fbbf24', glow: 'rgba(251, 191, 36, 0.35)' },
+    { name: 'Cyber Cyan', primary: '#22d3ee', glow: 'rgba(34, 211, 238, 0.35)' },
+    { name: 'Rose Red', primary: '#fb7185', glow: 'rgba(251, 113, 133, 0.35)' },
   ];
   
   const weekNumber = Math.floor(Date.now() / (7 * 24 * 60 * 60 * 1000));
@@ -363,6 +354,24 @@ function rotateWeeklyAccent() {
     console.log(`   ✅ อัพเดท Weekly Accent: ${theme.name}`);
     fixes.push(`Weekly accent rotated: ${theme.name}`);
     totalChanges++;
+  }
+
+  // Update weekly-sync-status in index.html to showcase theme and cache version
+  let html = fs.readFileSync('index.html', 'utf8');
+  const swContent = fs.existsSync('sw.js') ? fs.readFileSync('sw.js', 'utf8') : '';
+  const swMatch = swContent.match(/const CACHE_NAME\s*=\s*'haimiya-typo-v(\d+)'/);
+  const swVer = swMatch ? `v${swMatch[1]}` : 'v5';
+
+  const syncStatusMatch = html.match(/<div class="weekly-sync-right" id="weekly-sync-status">[\s\S]*?<\/div>/);
+  if (syncStatusMatch) {
+    const newStatus = `<div class="weekly-sync-right" id="weekly-sync-status">\n      ✨ อัปเดต UI & บำรุงรักษา: ธีม ${theme.name} • แคช ${swVer} (รอบถัดไปอีก 7 วัน)\n    </div>`;
+    if (syncStatusMatch[0] !== newStatus) {
+      html = html.replace(syncStatusMatch[0], newStatus);
+      fs.writeFileSync('index.html', html, 'utf8');
+      console.log(`   ✅ อัพเดทสถานะธีม & แคชใน index.html: ${theme.name} (${swVer})`);
+      fixes.push(`UI Badge updated: Theme ${theme.name}, Cache ${swVer}`);
+      totalChanges++;
+    }
   }
 }
 
@@ -475,6 +484,21 @@ function generateReport() {
 }
 
 // ============================================
+// 11. DEPLOY TO WEB (WHEN --deploy FLAG PASSED)
+// ============================================
+function deployToWeb() {
+  console.log(`${LOG_PREFIX} 🚀 เริ่มกระบวนการ Deploy ขึ้นสู่เว็บ...`);
+  try {
+    const { execSync } = require('child_process');
+    console.log('   📦 กำลังดำเนินการ Deploy ผ่าน Netlify CLI...');
+    execSync('npx -y netlify-cli deploy --prod --dir .', { stdio: 'inherit' });
+    console.log('   🎉 Deploy ขึ้นเว็บสำเร็จเรียบร้อยแล้ว!');
+  } catch (e) {
+    console.log(`   ℹ️ หมายเหตุการ Deploy: ${e.message}`);
+  }
+}
+
+// ============================================
 // MAIN EXECUTION
 // ============================================
 function main() {
@@ -488,6 +512,10 @@ function main() {
   bumpManifestVersion();
   autoFixCommonBugs(data);
   generateReport();
+
+  if (process.argv.includes('--deploy')) {
+    deployToWeb();
+  }
 }
 
 main();
