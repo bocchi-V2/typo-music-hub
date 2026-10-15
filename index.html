@@ -21,14 +21,14 @@
   <div id="app-splash-screen" class="splash-screen" aria-label="Loading Screen">
     <div class="splash-ambient-glow"></div>
     <div class="splash-card">
-      <div class="splash-avatar-box">
+      <div class="splash-avatar-box" onclick="playHaimiyaYaho()" style="cursor: pointer;" title="คลิกเพื่อฟังเสียงไฮมิยะ (Yaho!)">
         <div class="splash-avatar-ring"></div>
         <div class="splash-avatar-glow"></div>
-        <img src="splash-cover.jpg" alt="Typo Music Cover" class="splash-avatar-img" />
+        <img src="splash-cover.jpg" alt="Haimiya Typo Cover" class="splash-avatar-img" />
       </div>
       <div class="splash-info">
-        <div class="splash-badge">TYPO MUSIC STUDIO</div>
-        <h1 class="splash-title">ไทโปมิวสิค</h1>
+        <div class="splash-badge">HAIMIYA TYPO STUDIO</div>
+        <h1 class="splash-title">Haimiya Typo</h1>
         <p class="splash-subtitle">Typography Music & Anime Matcher</p>
       </div>
 
@@ -37,7 +37,7 @@
         <div class="splash-progress-track">
           <div class="splash-progress-bar" id="splash-progress-bar">
             <!-- Chibi mascot spinning along the progress bar -->
-            <div class="splash-chibi-spinner" id="splash-chibi-spinner" title="Loading...">
+            <div class="splash-chibi-spinner" id="splash-chibi-spinner" title="Haimiya: Yaho~!" onclick="playHaimiyaYaho()">
               <img src="loading-chibi.jpg" alt="Chibi Mascot" class="splash-chibi-icon" />
             </div>
           </div>
@@ -55,10 +55,10 @@
 
   <nav class="navbar" id="navbar">
     <div class="nav-inner">
-      <a href="#" class="nav-logo">
-        <img src="favicon-logo.jpg" alt="TypoMusic" class="nav-logo-img" />
+      <a href="#" class="nav-logo" onclick="playHaimiyaYaho(); return false;" title="Haimiya Typo (คลิกเพื่อฟังเสียง)">
+        <img src="splash-cover.jpg" alt="Haimiya Typo" class="nav-logo-img" style="border-radius: 8px; object-fit: cover;" />
         <span class="logo-badge">EDIT STUDIO</span>
-        <span class="logo-title" data-i18n="logoTitle">ไทโปมิวสิค</span>
+        <span class="logo-title" data-i18n="logoTitle">Haimiya Typo</span>
       </a>
       <div class="nav-links">
         <a href="#" class="nav-link active-nav" onclick="switchStudioWorkspace('th', true); return false;" data-i18n="zoneTh">🇹🇭 เพลงไทย</a>
@@ -508,8 +508,8 @@
         <div style="position: relative; width: 110px; height: 110px; margin: 0 auto 1.2rem; border-radius: 28px; overflow: hidden; box-shadow: 0 10px 35px rgba(56, 189, 248, 0.45); border: 2.5px solid rgba(56, 189, 248, 0.65);">
           <img src="splash-cover.jpg" alt="App Icon" style="width: 100%; height: 100%; object-fit: cover;" />
         </div>
-        <h2 style="font-size: 1.65rem; font-weight: 800; color: #fff; margin-bottom: 0.35rem;">ไทโปมิวสิค สำหรับมือถือ</h2>
-        <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.5;">เปิดใช้งานแบบแอปเต็มจอ มี Splash Screen พร้อมตัวการ์ตูนหมุน และอัปเดตเพลงใหม่ทุกวัน</p>
+        <h2 style="font-size: 1.65rem; font-weight: 800; color: #fff; margin-bottom: 0.35rem;">Haimiya Typo สำหรับมือถือ</h2>
+        <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.5;">แอป Haimiya Typo พร้อมหน้าจอโหลดตัวการ์ตูนหมุน และเสียงต้อนรับ Yaho!</p>
 
         <div style="display: flex; flex-direction: column; gap: 0.9rem;">
           <!-- Option 1: PWA 1-Click Install -->

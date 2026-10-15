@@ -28,10 +28,10 @@ function animeImgTag(anime, cssClass, extraStyle = '', loadingMode = 'lazy', fet
 // ---- INTERNATIONALIZATION (i18n) ----
 const I18N = {
   th: {
-    siteTitle: "ไทโปมิวสิค – คลังเพลงสำหรับคนตัดต่อคลิปไทโป",
+    siteTitle: "Haimiya Typo – คลังเพลงสำหรับคนตัดต่อคลิปไทโป",
     siteDesc: "รวมเพลงไทย เพลงสากล และเพลงอนิเมะสำหรับตัดต่อคลิปไทโปกราฟี พร้อมระบบสุ่มแยกโซน ปรับระดับเสียง และจับคู่อนิเมะแนะนำ",
     logoBadge: "EDIT STUDIO",
-    logoTitle: "ไทโปมิวสิค",
+    logoTitle: "Haimiya Typo",
     navRandom: "🎲 สุ่มเพลงแยกโซน",
     navSongs: "🎵 คลังเพลงแยกโซน",
     navVersus: "⚔️ โหวตเพลง",
@@ -133,10 +133,10 @@ const I18N = {
     loading: "กำลังโหลด..."
   },
   en: {
-    siteTitle: "TypoMusic – Curated Music & Anime Vault for Video Editors",
+    siteTitle: "Haimiya Typo – Music & Anime Vault for Video Editors",
     siteDesc: "Curated Thai, Global, and Anime songs for typography video editing with smart zone randomizer, volume control, and scene pairings.",
     logoBadge: "EDIT STUDIO",
-    logoTitle: "TypoMusic",
+    logoTitle: "Haimiya Typo",
     navRandom: "🎲 Zone Randomizer",
     navSongs: "🎵 Song Vault",
     navVersus: "⚔️ Song Battles",
@@ -1991,6 +1991,20 @@ function initWeeklyUpdateTracker() {
   setTimeout(() => initWeeklyUpdateTracker(), Math.min(msUntilNextDay, DAY_MS));
 }
 
+// ---- HAIMIYA YAHO AUDIO CLIP ----
+let haimiyaAudio = null;
+function playHaimiyaYaho() {
+  try {
+    if (!haimiyaAudio) {
+      haimiyaAudio = new Audio('haimiya_yaho.mp3');
+      haimiyaAudio.volume = 0.9;
+    }
+    haimiyaAudio.currentTime = 0;
+    const p = haimiyaAudio.play();
+    if (p && p.catch) p.catch(() => {});
+  } catch (e) {}
+}
+
 // ---- SPLASH SCREEN WITH SMOOTH PROGRESS & ROTATING CHIBI MASCOT ----
 function initSplashScreen() {
   const splashEl = document.getElementById('app-splash-screen');
@@ -1999,6 +2013,11 @@ function initSplashScreen() {
   const statusText = document.getElementById('splash-status-text');
 
   if (!splashEl || !progressBar || !percentText) return;
+
+  // Click on splash screen also plays Haimiya Yaho sound
+  splashEl.addEventListener('click', () => {
+    playHaimiyaYaho();
+  });
 
   // Register service worker if supported
   if ('serviceWorker' in navigator) {
@@ -2033,13 +2052,16 @@ function initSplashScreen() {
       percentText.textContent = '100%';
       if (statusText) statusText.textContent = currentAppLang === 'th' ? '✨ พร้อมใช้งานแล้ว!' : '✨ Ready to create!';
 
+      // Play Haimiya Yaho sound when ready!
+      playHaimiyaYaho();
+
       // Hold briefly then smoothly fade out
       setTimeout(() => {
         splashEl.classList.add('fade-out');
         setTimeout(() => {
           splashEl.style.display = 'none';
         }, 700);
-      }, 350);
+      }, 500);
       return;
     }
 

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'typo-music-v1';
+const CACHE_NAME = 'haimiya-typo-v1';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -7,6 +7,7 @@ const ASSETS_TO_CACHE = [
   './data.js',
   './splash-cover.jpg',
   './loading-chibi.jpg',
+  './haimiya_yaho.mp3',
   './favicon-logo.jpg'
 ];
 
@@ -29,7 +30,6 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  // Allow network first, fallback to cache
   event.respondWith(
     fetch(event.request).catch(() => caches.match(event.request))
   );
