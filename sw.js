@@ -1,4 +1,4 @@
-const CACHE_NAME = 'haimiya-typo-v1';
+const CACHE_NAME = 'haimiya-typo-v2';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -8,7 +8,8 @@ const ASSETS_TO_CACHE = [
   './splash-cover.jpg',
   './loading-chibi.jpg',
   './haimiya_yaho.mp3',
-  './favicon-logo.jpg'
+  './favicon-logo.jpg',
+  './app-icon.jpg'
 ];
 
 self.addEventListener('install', (event) => {
