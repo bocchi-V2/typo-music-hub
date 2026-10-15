@@ -1577,15 +1577,16 @@ header#hero {
 }
 .bottom-player.visible { transform: translateY(0); }
 
-.bp-content {
+.bp-inner, .bp-content {
   max-width: 1320px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.8rem;
+  gap: 1.5rem;
+  width: 100%;
 }
-.bp-track-box {
+.bp-track, .bp-track-box {
   display: flex;
   align-items: center;
   gap: 0.85rem;
@@ -2473,20 +2474,118 @@ header#hero {
     margin-top: auto;
   }
 
-  /* Bottom Mini Audio Player */
+  /* Bottom Ultra-Slim Mini Audio Player for Mobile (Does NOT obstruct screen) */
   .bottom-player {
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
+    position: fixed !important;
+    left: 8px !important;
+    right: 8px !important;
+    bottom: 8px !important;
+    width: calc(100% - 16px) !important;
+    max-width: 100% !important;
+    border-radius: 14px !important;
+    padding: 0.35rem 0.65rem !important;
+    background: rgba(14, 18, 34, 0.96) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.85), 0 0 15px rgba(16, 185, 129, 0.25) !important;
+    transform: translateY(calc(100% + 30px)) !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease, visibility 0.3s !important;
+  }
+  .bottom-player.visible {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+  }
+  .bp-inner {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 0.5rem !important;
+    padding-top: 2px !important;
     width: 100% !important;
-    border-radius: 18px 18px 0 0 !important;
-    padding: 0.65rem 1rem !important;
+  }
+  .bp-track {
+    flex: 1 !important;
+    min-width: 0 !important;
+    gap: 0.5rem !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+  .bp-cover {
+    width: 34px !important;
+    height: 34px !important;
+    border-radius: 6px !important;
+    flex-shrink: 0 !important;
+  }
+  .bp-title {
+    font-size: 0.82rem !important;
+    max-width: 135px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    line-height: 1.2 !important;
+  }
+  .bp-artist {
+    font-size: 0.68rem !important;
+    max-width: 135px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    line-height: 1.2 !important;
+  }
+  .bp-controls {
+    flex: 0 0 auto !important;
+    min-width: auto !important;
+    max-width: none !important;
+    gap: 0.3rem !important;
+  }
+  .bp-progress-wrap {
+    display: none !important;
   }
   .bp-volume-panel {
     display: none !important;
   }
-  .bp-track-info {
-    max-width: 160px;
+  .bp-actions {
+    flex: 0 0 auto !important;
+    gap: 0.35rem !important;
+  }
+  .bp-actions .btn-bp-save,
+  .bp-actions .btn-match,
+  .bp-actions .btn-yt {
+    display: none !important;
+  }
+  .bp-actions .btn-spotify {
+    padding: 0.22rem 0.5rem !important;
+    font-size: 0.7rem !important;
+    border-radius: 999px !important;
+  }
+  .bp-play-btn {
+    width: 32px !important;
+    height: 32px !important;
+    box-shadow: 0 2px 10px rgba(16, 185, 129, 0.4) !important;
+  }
+  .bp-play-btn svg {
+    width: 12px !important;
+    height: 12px !important;
+  }
+  .bp-close-btn {
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #e2e8f0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 0.95rem !important;
+    padding: 0 !important;
+    border: none !important;
   }
 }
 
@@ -3492,25 +3591,52 @@ header#hero {
 /* ── 7. FLOATING CAPSULE BOTTOM PLAYER ── */
 .bottom-player {
   position: fixed !important;
-  bottom: 24px !important;
+  bottom: 20px !important;
   left: 50% !important;
   right: auto !important;
-  transform: translateX(-50%) translateY(140px) !important;
+  /* ซ่อนสนิทแบบ 100% เลื่อนลงจนพ้นหน้าจอ + ปิดความโปร่งใสและ Visibility ไม่ให้มีส่วนใดโผล่มา */
+  transform: translateX(-50%) translateY(calc(100% + 50px)) !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
   width: calc(100% - 32px) !important;
   max-width: 1040px !important;
-  background: rgba(12, 15, 28, 0.92) !important;
+  background: rgba(12, 15, 28, 0.95) !important;
   backdrop-filter: blur(28px) saturate(200%) !important;
   -webkit-backdrop-filter: blur(28px) saturate(200%) !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
-  border-radius: 24px !important;
+  border: 1px solid rgba(255, 255, 255, 0.14) !important;
+  border-radius: 20px !important;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.75), 0 0 35px rgba(99, 102, 241, 0.25) !important;
-  padding: 0.85rem 1.8rem !important;
+  padding: 0.75rem 1.6rem !important;
   z-index: 999 !important;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  overflow: hidden !important;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease, visibility 0.35s !important;
 }
 
 .bottom-player.visible {
   transform: translateX(-50%) translateY(0) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+}
+
+/* Top Progress Line across capsule */
+.bp-top-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  z-index: 10;
+}
+.bp-top-progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #10b981, #38bdf8);
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.8);
+  transition: width 0.1s linear;
 }
 
 /* ── 8. SEARCH & FILTER BAR ── */

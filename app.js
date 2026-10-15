@@ -894,6 +894,10 @@ function showBottomPlayer(song) {
   const closeTooltip = currentAppLang === 'th' ? 'ปิดแถบเครื่องเล่น' : 'Close player';
 
   player.innerHTML = `
+    <!-- Top Thin Progress Line for Mobile & Desktop -->
+    <div class="bp-top-progress" onclick="seekAudio(event)" title="เลื่อนช่วงเวลา">
+      <div class="bp-top-progress-fill" id="bp-top-progress-fill"></div>
+    </div>
     <div class="bp-inner">
       <div class="bp-track">
         <div class="bp-cover-box">
@@ -925,7 +929,7 @@ function showBottomPlayer(song) {
         </div>
       </div>
 
-      <!-- Volume Controls -->
+      <!-- Volume Controls (Desktop Only) -->
       <div class="bp-volume-panel">
         <button class="bp-vol-btn" id="bp-mute-btn" onclick="toggleMute()" title="${muteTooltip}">
           ${icon}
@@ -941,14 +945,17 @@ function showBottomPlayer(song) {
           ${saveLabel}
         </button>
         <button class="btn-sm btn-match" onclick="openAnimeMatchModal(${song.id})">${matchLabel}</button>
-        <a href="${song.spotifyUrl}" target="_blank" class="btn-sm btn-spotify">🎧 Spotify</a>
+        <a href="${song.spotifyUrl}" target="_blank" class="btn-sm btn-spotify" title="เปิดบน Spotify">🎧 Spotify</a>
         <a href="https://www.youtube.com/results?search_query=${encodeURIComponent(song.title + ' ' + song.artist)}" target="_blank" class="btn-sm btn-yt" title="${ytTooltip}">▶️ YouTube</a>
         <button class="bp-close-btn" onclick="hideBottomPlayer()" title="${closeTooltip}">✕</button>
       </div>
     </div>
   `;
 
-  player.classList.add('visible');
+  player.style.display = 'block';
+  requestAnimationFrame(() => {
+    player.classList.add('visible');
+  });
 }
 
 function hideBottomPlayer() {
@@ -958,7 +965,16 @@ function hideBottomPlayer() {
   }
   updateAudioUI(false);
   const player = document.getElementById('bottom-player');
-  if (player) player.classList.remove('visible');
+  if (player) {
+    player.classList.remove('visible');
+    // ซ่อนสนิทแบบ 100% ไม่ให้มีอะไรเหลือค้างหรือโผล่มาตรงขอบจอ
+    setTimeout(() => {
+      if (!player.classList.contains('visible')) {
+        player.style.display = 'none';
+        player.innerHTML = '';
+      }
+    }, 350);
+  }
   currentPlayingId = null;
   resumeRelaxBgm();
 }
@@ -967,10 +983,13 @@ function updateBottomPlayerProgress() {
   if (!currentAudio) return;
   const cur = currentAudio.currentTime || 0;
   const dur = currentAudio.duration || 30;
-  const pct = (cur / dur) * 100;
+  const pct = Math.min((cur / dur) * 100, 100);
 
   const fill = document.getElementById('bp-progress-fill');
   if (fill) fill.style.width = pct + '%';
+
+  const topFill = document.getElementById('bp-top-progress-fill');
+  if (topFill) topFill.style.width = pct + '%';
 
   const curEl = document.getElementById('bp-time-cur');
   if (curEl) {
