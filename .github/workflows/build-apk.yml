@@ -66,6 +66,8 @@ jobs:
 
       - name: 🎨 ตั้งค่าไอคอนแอป (App Icon)
         run: |
+          # ติดตั้ง ImageMagick (ไม่ได้มาพร้อม Ubuntu 24.04)
+          sudo apt-get update -qq && sudo apt-get install -y -qq imagemagick > /dev/null 2>&1
           # ใช้ ImageMagick แปลงรูป app-icon.jpg เป็นไอคอน Android ทุกขนาด
           ICON_SRC="app-icon.jpg"
           RES_DIR="android/app/src/main/res"
