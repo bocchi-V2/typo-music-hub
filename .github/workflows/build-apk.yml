@@ -1,6 +1,9 @@
 name: Build Android APK
 
 on:
+  schedule:
+    # บิลด์ APK ใหม่อัตโนมัติทุก 7 วัน (วันอาทิตย์ 01:00 น. ไทย = 18:00 UTC เสาร์)
+    - cron: '0 18 * * 6'
   workflow_dispatch:
   repository_dispatch:
     types: [weekly-maintenance-done]
