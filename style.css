@@ -5,6 +5,9 @@
    =================================== */
 
 :root {
+  /* Weekly Rotating Accent – Auto-updated by maintenance bot */
+  --weekly-accent: #a78bfa;
+  --weekly-glow: rgba(167, 139, 250, 0.3);
   --primary: #10b981;          /* Studio Emerald Green */
   --primary-hover: #059669;
   --accent: #6366f1;           /* Clean Iris Blue */
