@@ -741,6 +741,7 @@ function togglePlaySong(songId) {
   if (currentPlayingId === songId && currentAudio && !currentAudio.paused) {
     currentAudio.pause();
     updateAudioUI(false);
+    resumeRelaxBgm();
     return;
   }
 
@@ -765,6 +766,7 @@ function togglePlaySong(songId) {
         audio.src = fallbackUrl;
         audio.load();
         audio.play().then(() => {
+          duckRelaxBgm();
           updateAudioUI(true);
           showBottomPlayer(song);
         }).catch(() => {
@@ -772,6 +774,7 @@ function togglePlaySong(songId) {
           currentAudio = null;
           currentPlayingId = null;
           updateAudioUI(false);
+          resumeRelaxBgm();
         });
         return;
       }
@@ -779,10 +782,12 @@ function togglePlaySong(songId) {
       currentAudio = null;
       currentPlayingId = null;
       updateAudioUI(false);
+      resumeRelaxBgm();
     };
 
     audio.onended = () => {
       updateAudioUI(false);
+      resumeRelaxBgm();
     };
 
     audio.ontimeupdate = () => {
@@ -792,6 +797,7 @@ function togglePlaySong(songId) {
     audio.src = url;
     audio.load();
     audio.play().then(() => {
+      duckRelaxBgm();
       updateAudioUI(true);
       showBottomPlayer(song);
     }).catch(err => {
@@ -804,6 +810,7 @@ function togglePlaySong(songId) {
       currentAudio = null;
       currentPlayingId = null;
       updateAudioUI(false);
+      resumeRelaxBgm();
     });
   };
 
@@ -953,6 +960,7 @@ function hideBottomPlayer() {
   const player = document.getElementById('bottom-player');
   if (player) player.classList.remove('visible');
   currentPlayingId = null;
+  resumeRelaxBgm();
 }
 
 function updateBottomPlayerProgress() {
@@ -1991,14 +1999,15 @@ function initWeeklyUpdateTracker() {
   setTimeout(() => initWeeklyUpdateTracker(), Math.min(msUntilNextDay, DAY_MS));
 }
 
-// ---- HAIMIYA YAHO AUDIO CLIP ----
+// ---- HAIMIYA YAHO AUDIO CLIP (Softer Volume) ----
 let haimiyaAudio = null;
 
 function getHaimiyaAudio() {
   if (!haimiyaAudio) {
     haimiyaAudio = new Audio('haimiya_yaho.mp3');
     haimiyaAudio.preload = 'auto';
-    haimiyaAudio.volume = 1.0;
+    // ปรับระดับเสียงให้เบาลง นุ่มนวล สบายหู ไม่ตกใจ
+    haimiyaAudio.volume = 0.22;
   }
   return haimiyaAudio;
 }
@@ -2011,6 +2020,7 @@ try {
 function playHaimiyaYaho() {
   try {
     const audio = getHaimiyaAudio();
+    audio.volume = 0.22;
     audio.currentTime = 0;
     const playPromise = audio.play();
     if (playPromise && playPromise.catch) {
@@ -2018,6 +2028,7 @@ function playHaimiyaYaho() {
         // If autoplay blocked by browser policy, play on the very next user tap anywhere
         const onFirstGesture = () => {
           audio.currentTime = 0;
+          audio.volume = 0.22;
           audio.play().catch(() => {});
           window.removeEventListener('pointerdown', onFirstGesture);
           window.removeEventListener('touchstart', onFirstGesture);
@@ -2029,6 +2040,138 @@ function playHaimiyaYaho() {
       });
     }
   } catch (e) {}
+}
+
+// ---- RELAXING BACKGROUND AMBIENT MUSIC ("blue" by yung kai) ----
+let relaxBgmAudio = null;
+let isRelaxBgmEnabled = true;
+let isDuckMutedByPreview = false;
+// ปรับเสียงเบาจัดๆ (0.08) ให้เป็นดนตรีกล่อมอารมณ์ ผ่อนคลาย ไม่กวนการใช้งาน
+const RELAX_BGM_VOLUME = 0.08;
+
+function getRelaxBgmAudio() {
+  if (!relaxBgmAudio) {
+    relaxBgmAudio = new Audio('blue_relax.m4a');
+    relaxBgmAudio.preload = 'auto';
+    relaxBgmAudio.loop = true;
+    relaxBgmAudio.volume = RELAX_BGM_VOLUME;
+  }
+  return relaxBgmAudio;
+}
+
+function updateRelaxBgmUI(isPlaying) {
+  const btn = document.getElementById('relax-bgm-btn');
+  if (btn) {
+    if (isPlaying && isRelaxBgmEnabled && !isDuckMutedByPreview) {
+      btn.classList.add('playing');
+      btn.classList.remove('paused', 'ducked');
+      btn.title = currentAppLang === 'th' ? 'เพลงผ่อนคลายกำลังเล่น: blue - yung kai (คลิกเพื่อหยุด)' : 'Relax BGM playing: blue - yung kai (Click to pause)';
+    } else if (isDuckMutedByPreview) {
+      btn.classList.remove('playing');
+      btn.classList.add('ducked');
+      btn.title = currentAppLang === 'th' ? 'เพลงผ่อนคลายหยุดชั่วคราวขณะฟังตัวอย่างเพลง (จะเล่นต่อเมื่อเพลงจบ)' : 'Relax BGM ducked during preview';
+    } else {
+      btn.classList.remove('playing', 'ducked');
+      btn.classList.add('paused');
+      btn.title = currentAppLang === 'th' ? 'เพลงผ่อนคลายปิดอยู่ (คลิกเพื่อเล่น)' : 'Relax BGM paused (Click to play)';
+    }
+  }
+}
+
+function startRelaxBgm() {
+  if (!isRelaxBgmEnabled || isDuckMutedByPreview) return;
+  try {
+    const audio = getRelaxBgmAudio();
+    audio.volume = RELAX_BGM_VOLUME;
+    const playPromise = audio.play();
+    if (playPromise && playPromise.catch) {
+      playPromise.then(() => updateRelaxBgmUI(true)).catch(() => {
+        // Wait for user gesture anywhere on screen
+        const onFirstInteraction = () => {
+          if (isRelaxBgmEnabled && !isDuckMutedByPreview) {
+            audio.volume = RELAX_BGM_VOLUME;
+            audio.play().then(() => updateRelaxBgmUI(true)).catch(() => {});
+          }
+          window.removeEventListener('pointerdown', onFirstInteraction);
+          window.removeEventListener('click', onFirstInteraction);
+        };
+        window.addEventListener('pointerdown', onFirstInteraction, { once: true });
+        window.addEventListener('click', onFirstInteraction, { once: true });
+      });
+    } else {
+      updateRelaxBgmUI(true);
+    }
+  } catch (e) {}
+}
+
+function pauseRelaxBgm() {
+  if (!relaxBgmAudio) return;
+  try {
+    relaxBgmAudio.pause();
+    updateRelaxBgmUI(false);
+  } catch (e) {}
+}
+
+function duckRelaxBgm() {
+  // เมื่อผู้ใช้เลือกเพลงฟัง -> ดนตรีผ่อนคลายจะเงียบไป
+  isDuckMutedByPreview = true;
+  updateRelaxBgmUI(false);
+  if (relaxBgmAudio && !relaxBgmAudio.paused) {
+    let vol = relaxBgmAudio.volume;
+    const fadeTimer = setInterval(() => {
+      vol -= 0.02;
+      if (vol <= 0.01) {
+        clearInterval(fadeTimer);
+        relaxBgmAudio.pause();
+        relaxBgmAudio.volume = RELAX_BGM_VOLUME;
+      } else {
+        relaxBgmAudio.volume = vol;
+      }
+    }, 30);
+  }
+}
+
+function resumeRelaxBgm() {
+  // เมื่อเพลงที่เลือกฟังจบ หรือผู้ใช้หยุดเพลง -> เริ่มเล่นเพลงผ่อนคลายขึ้นมาใหม่
+  isDuckMutedByPreview = false;
+  if (!isRelaxBgmEnabled) return;
+  try {
+    const audio = getRelaxBgmAudio();
+    audio.currentTime = 0; // เริ่มเพลงใหม่ขึ้นมาเลย
+    audio.volume = 0.01;
+    const p = audio.play();
+    if (p && p.catch) {
+      p.then(() => {
+        let vol = 0.01;
+        const fadeTimer = setInterval(() => {
+          vol += 0.01;
+          if (vol >= RELAX_BGM_VOLUME) {
+            clearInterval(fadeTimer);
+            audio.volume = RELAX_BGM_VOLUME;
+          } else {
+            audio.volume = vol;
+          }
+        }, 50);
+        updateRelaxBgmUI(true);
+      }).catch(() => {});
+    }
+  } catch (e) {}
+}
+
+function toggleRelaxBgm() {
+  isRelaxBgmEnabled = !isRelaxBgmEnabled;
+  if (isRelaxBgmEnabled) {
+    if (!isDuckMutedByPreview) {
+      startRelaxBgm();
+      showToast(currentAppLang === 'th' ? '🎵 เปิดเพลงผ่อนคลาย: blue ~ yung kai' : '🎵 Relax BGM On: blue ~ yung kai');
+    } else {
+      showToast(currentAppLang === 'th' ? '🎵 เปิดเพลงผ่อนคลายแล้ว (จะเล่นต่อหลังฟังเพลงตัวอย่างจบ)' : '🎵 Relax BGM queued');
+    }
+  } else {
+    pauseRelaxBgm();
+    showToast(currentAppLang === 'th' ? '🔇 ปิดเพลงผ่อนคลายแล้ว' : '🔇 Relax BGM Off');
+  }
+  updateRelaxBgmUI(isRelaxBgmEnabled && !isDuckMutedByPreview);
 }
 
 // ---- SPLASH GREETING: FLOATING JAPANESE TEXT ----
@@ -2125,6 +2268,7 @@ function initSplashScreen() {
         splashEl.classList.add('fade-out');
         setTimeout(() => {
           splashEl.style.display = 'none';
+          startRelaxBgm();
         }, 700);
       }, 3000);
 

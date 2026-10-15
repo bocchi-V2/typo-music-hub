@@ -18,6 +18,7 @@ on:
       - 'haimiya_yaho.mp3'
       - 'app-icon.jpg'
       - 'bg-hero.jpg'
+      - 'blue_relax.m4a'
       - '.github/workflows/build-apk.yml'
 
 jobs:
@@ -45,7 +46,7 @@ jobs:
       - name: 📁 จัดเตรียมไฟล์เว็บสำหรับแอป (www Directory)
         run: |
           mkdir -p www
-          for f in index.html style.css app.js data.js manifest.json sw.js splash-cover.jpg loading-chibi.jpg haimiya_yaho.mp3 favicon-logo.jpg dice-roll.mp3 app-icon.jpg bg-hero.jpg; do
+          for f in index.html style.css app.js data.js manifest.json sw.js splash-cover.jpg loading-chibi.jpg haimiya_yaho.mp3 favicon-logo.jpg dice-roll.mp3 app-icon.jpg bg-hero.jpg blue_relax.m4a; do
             if [ -f "$f" ]; then cp "$f" www/; fi
           done
           # Copy optional files that might exist

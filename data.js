@@ -21579,6 +21579,34 @@ const SONGS = [
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ NieR:Automata Ver1.1a",
     "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "id": 724,
+    "title": "blue",
+    "artist": "yung kai",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/33/62/62/33626226-0cf3-ff64-3296-b2355de71fac/0748777703419.jpg/600x600bb.jpg",
+    "coverFallback": "favicon-logo.jpg",
+    "previewUrl": "blue_relax.m4a",
+    "previewUrlAlt": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/35/82/0f/35820f58-856a-3def-922c-d554152e0c0d/mzaf_3599226039290781217.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/3be9ACTxtcL6Zm4vJRUiPG",
+    "mood": "chill",
+    "tags": [
+      "สากล",
+      "yung kai",
+      "ผ่อนคลาย",
+      "โรแมนติก",
+      "อบอุ่น",
+      "ไทโป"
+    ],
+    "bpm": "ช้า (78 BPM)",
+    "lang": "en",
+    "animeId": 9,
+    "animeMatch": [
+      9,
+      14
+    ],
+    "reason": "ท่วงทำนองกีตาร์อะคูสติกนุ่มนวลและเสียงร้องชวนฝันของ yung kai สื่อถึงความรักที่เรียบง่ายแต่งดงาม เข้ากับบรรยากาศอันลึกซึ้งของ Your Name และ Horimiya",
+    "typoIdea": "ใช้ตัวอักษร Sans มินิมอล โทนสีฟ้าพาสเทลและขาว ค่อยๆ Fade In ตามจังหวะคอร์ดกีตาร์ พร้อมเอฟเฟกต์ละอองแสงอบอุ่น"
   }
 ];
 

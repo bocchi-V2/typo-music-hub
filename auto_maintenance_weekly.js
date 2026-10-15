@@ -79,7 +79,8 @@ function checkAssetIntegrity() {
     { file: 'bg-hero.jpg', minSize: 1000, desc: 'Background Image' },
     { file: 'loading-chibi.jpg', minSize: 1000, desc: 'Loading Chibi' },
     { file: 'haimiya_yaho.mp3', minSize: 5000, desc: 'Voice Clip' },
-    { file: 'dice-roll.mp3', minSize: 1000, desc: 'Dice Roll SFX' }
+    { file: 'dice-roll.mp3', minSize: 1000, desc: 'Dice Roll SFX' },
+    { file: 'blue_relax.m4a', minSize: 50000, desc: 'Relaxing Ambient BGM (blue - yung kai)' }
   ];
   
   let passed = 0;

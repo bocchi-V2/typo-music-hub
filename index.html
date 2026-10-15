@@ -73,6 +73,17 @@
           📲 <span data-i18n="navInstallApp">ติดตั้งแอป / APK</span>
         </button>
       </div>
+      <div class="relax-bgm-box">
+        <button class="relax-bgm-btn playing" id="relax-bgm-btn" onclick="toggleRelaxBgm()" title="เพลงผ่อนคลายเบาๆ: blue ~ yung kai (คลิกเพื่อเปิด/ปิด)">
+          <span class="relax-disc">💿</span>
+          <span class="relax-text">blue</span>
+          <span class="relax-equalizer" id="relax-equalizer">
+            <span class="eq-bar bar-1"></span>
+            <span class="eq-bar bar-2"></span>
+            <span class="eq-bar bar-3"></span>
+          </span>
+        </button>
+      </div>
       <div class="lang-switch-box">
         <button class="lang-toggle-btn active" id="btn-lang-th" onclick="setAppLanguage('th')">🇹🇭 TH</button>
         <span class="lang-divider">/</span>
@@ -93,7 +104,7 @@
       <p class="hero-desc" data-i18n="heroDesc">ค้นหาเพลงสำหรับทำคลิปไทโป พร้อมระบบสุ่มแยกโซน ปรับความดังเสียง และจับคู่ซีนอนิเมะที่เข้ากันที่สุด</p>
       <div class="hero-btns">
         <a href="#random" class="btn btn-primary" id="hero-random-btn" data-i18n="heroBtnRandom">🎲 ไปที่โซนสุ่มเพลง</a>
-        <a href="#songs" class="btn btn-ghost" id="hero-btn-songs">🎵 <span data-i18n="heroBtnSongs">สำรวจคลังเพลง</span> (<span id="hero-song-count">723</span> <span data-i18n="heroBtnSongsSuffix">เพลง</span>)</a>
+        <a href="#songs" class="btn btn-ghost" id="hero-btn-songs">🎵 <span data-i18n="heroBtnSongs">สำรวจคลังเพลง</span> (<span id="hero-song-count">724</span> <span data-i18n="heroBtnSongsSuffix">เพลง</span>)</a>
         <button class="btn btn-ghost" onclick="openAppModal()" style="border-color: rgba(56, 189, 248, 0.45); background: rgba(56, 189, 248, 0.1); color: #38bdf8;">
           📲 ดาวน์โหลด APK / ติดตั้งแอป
         </button>
@@ -113,7 +124,7 @@
 
   <div class="stats-bar">
     <div class="stat-item">
-      <span class="stat-num" id="stat-songs-count">723</span>
+      <span class="stat-num" id="stat-songs-count">724</span>
       <span class="stat-label" data-i18n="statTotalSongs">เพลงทั้งหมดในคลัง</span>
     </div>
     <div class="stat-divider"></div>
@@ -140,7 +151,7 @@
       <span id="weekly-sync-title" data-i18n="weeklySyncLabel"><strong>ระบบบำรุงรักษา UI & แก้บัคอัตโนมัติ:</strong> อัปเดตธีม UI, ปรับปรุงแคช, และแก้บัคทุกๆ 7 วัน (Weekly UI & Bug Maintenance + Auto-Deploy)</span>
     </div>
     <div class="weekly-sync-right" id="weekly-sync-status">
-      ✨ อัปเดต UI & บำรุงรักษา: ธีม Aurora Purple • แคช v6 (รอบถัดไปอีก 7 วัน)
+      ✨ อัปเดต UI & บำรุงรักษา: ธีม Aurora Purple • แคช v7 (รอบถัดไปอีก 7 วัน)
     </div>
   </div>
 

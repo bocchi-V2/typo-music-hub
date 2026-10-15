@@ -1,4 +1,4 @@
-const CACHE_NAME = 'haimiya-typo-v6';
+const CACHE_NAME = 'haimiya-typo-v7';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',

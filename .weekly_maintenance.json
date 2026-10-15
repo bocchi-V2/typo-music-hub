@@ -1,13 +1,26 @@
 {
-  "lastRun": 1792082546316,
-  "cycle": 3,
+  "lastRun": 1792083394559,
+  "cycle": 4,
   "fixes": [
-    "SW Cache bumped to v6",
+    "SW Cache bumped to v7",
+    "Stats updated: 724 songs, 406 anime",
     "Weekly accent rotated: Aurora Purple",
-    "UI Badge updated: Theme Aurora Purple, Cache v6",
+    "UI Badge updated: Theme Aurora Purple, Cache v7",
     "Manifest version: 2.0.20261015"
   ],
   "history": [
+    {
+      "date": "2026-10-15T16:56:34.559Z",
+      "cycle": 4,
+      "fixes": [
+        "SW Cache bumped to v7",
+        "Stats updated: 724 songs, 406 anime",
+        "Weekly accent rotated: Aurora Purple",
+        "UI Badge updated: Theme Aurora Purple, Cache v7",
+        "Manifest version: 2.0.20261015"
+      ],
+      "changes": 5
+    },
     {
       "date": "2026-10-15T16:42:26.316Z",
       "cycle": 3,
@@ -45,6 +58,6 @@
       "changes": 4
     }
   ],
-  "lastRunDate": "2026-10-15T16:42:26.316Z",
-  "totalChanges": 4
+  "lastRunDate": "2026-10-15T16:56:34.559Z",
+  "totalChanges": 5
 }

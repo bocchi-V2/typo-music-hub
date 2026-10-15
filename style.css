@@ -220,6 +220,90 @@ body::after {
   border-color: #fb7185 !important;
   box-shadow: 0 0 15px rgba(244, 63, 94, 0.35) !important;
 }
+
+/* ---- RELAXING AMBIENT BGM BUTTON ("blue" by yung kai) ---- */
+.relax-bgm-box {
+  display: inline-flex;
+  align-items: center;
+}
+.relax-bgm-btn {
+  background: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  color: #38bdf8;
+  font-family: 'Plus Jakarta Sans', 'Kanit', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.28rem 0.75rem;
+  border-radius: var(--radius-pill);
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  backdrop-filter: blur(8px);
+}
+.relax-bgm-btn:hover {
+  background: rgba(56, 189, 248, 0.16);
+  border-color: rgba(56, 189, 248, 0.45);
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.25);
+  transform: translateY(-1px);
+}
+.relax-disc {
+  font-size: 0.9rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.relax-bgm-btn.playing .relax-disc {
+  animation: spinRelaxDisc 4s linear infinite;
+}
+@keyframes spinRelaxDisc {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.relax-text {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-transform: lowercase;
+}
+.relax-equalizer {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 11px;
+}
+.eq-bar {
+  width: 2.5px;
+  background: #38bdf8;
+  border-radius: 2px;
+  transition: height 0.2s ease;
+}
+.relax-bgm-btn.playing .bar-1 { animation: eqBounce 0.9s ease-in-out infinite alternate; }
+.relax-bgm-btn.playing .bar-2 { animation: eqBounce 1.3s ease-in-out 0.2s infinite alternate; }
+.relax-bgm-btn.playing .bar-3 { animation: eqBounce 0.7s ease-in-out 0.4s infinite alternate; }
+@keyframes eqBounce {
+  0% { height: 3px; }
+  100% { height: 11px; }
+}
+.relax-bgm-btn.paused {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.12);
+  color: var(--text-dim);
+  opacity: 0.65;
+}
+.relax-bgm-btn.paused .eq-bar {
+  height: 2px !important;
+  animation: none !important;
+  background: var(--text-dim);
+}
+.relax-bgm-btn.ducked {
+  opacity: 0.45;
+  border-style: dashed;
+}
+.relax-bgm-btn.ducked .eq-bar {
+  height: 2px !important;
+  animation: none !important;
+}
+
 /* ---- LANGUAGE SWITCHER ---- */
 .lang-switch-box {
   display: inline-flex;
