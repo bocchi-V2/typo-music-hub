@@ -175,40 +175,65 @@ body::after {
   color: #fff;
   letter-spacing: -0.3px;
 }
-.nav-links { display: flex; gap: 1.8rem; align-items: center; }
+.nav-links {
+  display: flex;
+  gap: clamp(0.75rem, 1.4vw, 1.5rem);
+  align-items: center;
+  flex-wrap: nowrap;
+}
 .nav-link {
   color: var(--text-muted);
   text-decoration: none;
   font-size: 0.92rem;
   font-weight: 500;
-  transition: color 0.2s;
-  padding: 0.35rem 0.75rem;
+  transition: all 0.2s ease;
+  padding: 0.4rem 0.65rem;
   position: relative;
-  border-radius: 999px;
+  white-space: nowrap !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  flex-shrink: 0 !important;
+  border-radius: 8px;
+  background: transparent;
+  border: none;
 }
 .nav-link:hover {
   color: #fff;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.06);
 }
 .nav-link::after {
   content: '';
   position: absolute;
-  bottom: 2px; left: 50%;
+  bottom: -4px;
+  left: 50%;
   transform: translateX(-50%);
-  width: 0; height: 2px;
-  background: linear-gradient(90deg, #10b981, #6366f1);
+  width: 0;
+  height: 2.5px;
+  background: linear-gradient(90deg, var(--primary, #10b981), #38bdf8);
   border-radius: 999px;
-  transition: width 0.25s ease;
+  transition: width 0.25s ease, opacity 0.25s ease;
+  opacity: 0;
 }
-.nav-link:hover::after { width: 60%; }
+.nav-link:hover::after {
+  width: 50%;
+  opacity: 0.6;
+}
+/* เมนูแท็บที่เลือก (Active): ไม่มีกรอบหนาเป็นก้อนอัดกัน แต่มีเส้นไฮไลท์เรืองแสงเรียบหรูอยู่ด้านใต้ */
 .nav-link.active-nav {
   color: #fff !important;
-  font-weight: 600;
-  background: rgba(255, 255, 255, 0.1) !important;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  font-weight: 700 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
-.nav-link.active-nav::after { display: none; }
+.nav-link.active-nav::after {
+  display: block !important;
+  width: 85% !important;
+  height: 3px !important;
+  opacity: 1 !important;
+  background: linear-gradient(90deg, var(--primary, #10b981), #38bdf8) !important;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.8), 0 0 20px rgba(56, 189, 248, 0.4) !important;
+}
 .nav-saved-btn {
   background: rgba(244, 63, 94, 0.12) !important;
   border: 1px solid rgba(244, 63, 94, 0.3) !important;
