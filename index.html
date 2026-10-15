@@ -553,5 +553,63 @@
 
   <script src="data.js"></script>
   <script src="app.js"></script>
+
+  <!-- Service Worker Registration & Offline Support -->
+  <script>
+    // ลงทะเบียน Service Worker เพื่อให้แอพทำงานแบบ offline ได้
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then((reg) => {
+            console.log('✅ Service Worker ลงทะเบียนสำเร็จ – แอพพร้อมใช้งาน Offline!');
+            // เช็คอัปเดตใหม่ทุกครั้งที่เปิดแอพ (ถ้ามีเน็ต)
+            reg.update();
+          })
+          .catch((err) => console.warn('⚠️ SW registration failed:', err));
+      });
+
+      // แจ้งเตือนเมื่อมี SW ใหม่พร้อมใช้งาน
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        console.log('🔄 มีอัปเดตใหม่! กำลังโหลดข้อมูลล่าสุด...');
+      });
+    }
+
+    // แสดงสถานะ Online / Offline
+    function updateOnlineStatus() {
+      const badge = document.getElementById('offline-badge');
+      if (!badge) return;
+      if (navigator.onLine) {
+        badge.style.display = 'none';
+      } else {
+        badge.style.display = 'flex';
+      }
+    }
+    window.addEventListener('online', updateOnlineStatus);
+    window.addEventListener('offline', updateOnlineStatus);
+    window.addEventListener('load', updateOnlineStatus);
+  </script>
+
+  <!-- Offline Badge -->
+  <div id="offline-badge" style="
+    display: none;
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 99999;
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Kanit', sans-serif;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 12px rgba(239,68,68,0.4);
+    pointer-events: none;
+  ">
+    📡 ออฟไลน์โหมด
+  </div>
+
 </body>
 </html>

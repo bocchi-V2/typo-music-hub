@@ -1,6 +1,6 @@
 // ============================================
-//  AUTO_MAINTENANCE_WEEKLY.JS (ปัจจุบันรันทุกวัน)
-//  ระบบบำรุงรักษา UI, แก้บัค, ตรวจสอบ Asset อัตโนมัติทุกวัน
+//  AUTO_MAINTENANCE_WEEKLY.JS
+//  ระบบบำรุงรักษา UI, แก้บัค, ตรวจสอบ Asset อัตโนมัติทุก 7 วัน
 //  ⚠️ ไม่เกี่ยวกับการนำเข้าเพลงหรืออนิเมะ (ใช้ daily-update สำหรับเรื่องนั้น)
 //  สามารถรันด้วย: node auto_maintenance_weekly.js
 // ============================================
@@ -9,11 +9,11 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 
-const LOG_PREFIX = '🔧 [Daily Maintenance]';
+const LOG_PREFIX = '🔧 [Weekly Maintenance]';
 const MAINTENANCE_LOG_FILE = '.weekly_maintenance.json';
 
 console.log('════════════════════════════════════════════════════');
-console.log('🔧 Haimiya Typo – Daily UI & Bug Maintenance');
+console.log('🔧 Haimiya Typo – Weekly UI & Bug Maintenance');
 console.log('════════════════════════════════════════════════════');
 console.log(`📅 ${new Date().toLocaleString('th-TH', { timeZone: 'Asia/Bangkok' })}`);
 console.log('');
@@ -306,12 +306,12 @@ function updateStatCounters(data) {
 }
 
 // ============================================
-// 7. ROTATE DAILY ACCENT / THEME HIGHLIGHTS
+// 7. ROTATE WEEKLY ACCENT / THEME HIGHLIGHTS
 // ============================================
 function rotateWeeklyAccent() {
-  console.log(`${LOG_PREFIX} 7️⃣ หมุนเวียน Daily Accent Theme...`);
+  console.log(`${LOG_PREFIX} 7️⃣ หมุนเวียน Weekly Accent Theme...`);
   
-  // Accent themes ที่จะหมุนเวียนทุกวัน
+  // Accent themes ที่จะหมุนเวียนทุกสัปดาห์
   const accentThemes = [
     { name: 'Sakura Pink', primary: '#ff6b9d', glow: 'rgba(255, 107, 157, 0.35)' },
     { name: 'Ocean Blue', primary: '#38bdf8', glow: 'rgba(56, 189, 248, 0.35)' },
@@ -322,28 +322,28 @@ function rotateWeeklyAccent() {
     { name: 'Rose Red', primary: '#fb7185', glow: 'rgba(251, 113, 133, 0.35)' },
   ];
   
-  const dayNumber = Math.floor(Date.now() / (24 * 60 * 60 * 1000));
-  const themeIndex = dayNumber % accentThemes.length;
+  const weekNumber = Math.floor(Date.now() / (7 * 24 * 60 * 60 * 1000));
+  const themeIndex = weekNumber % accentThemes.length;
   const theme = accentThemes[themeIndex];
   
-  console.log(`   🎨 Theme วันนี้: ${theme.name} (${theme.primary})`);
+  console.log(`   🎨 Theme สัปดาห์นี้: ${theme.name} (${theme.primary})`);
   
-  // Update CSS custom property for daily accent in style.css
+  // Update CSS custom property for weekly accent in style.css
   let css = fs.readFileSync('style.css', 'utf8');
   
-  // Check if daily accent variables exist, if not add them
+  // Check if Weekly Accent variables exist, if not add them
   if (!css.includes('--weekly-accent')) {
-    // Add daily accent variables after :root opening
+    // Add weekly accent variables after :root opening
     const rootMatch = css.match(/:root\s*\{/);
     if (rootMatch) {
       const insertPos = css.indexOf(rootMatch[0]) + rootMatch[0].length;
       const accentVars = `
-  /* Daily Rotating Accent – Auto-updated by maintenance bot */
+  /* Weekly Rotating Accent – Auto-updated by maintenance bot */
   --weekly-accent: ${theme.primary};
   --weekly-glow: ${theme.glow};`;
       css = css.slice(0, insertPos) + accentVars + css.slice(insertPos);
       fs.writeFileSync('style.css', css, 'utf8');
-      console.log(`   ✅ เพิ่ม Daily Accent CSS Variables`);
+      console.log(`   ✅ เพิ่ม Weekly Accent CSS Variables`);
       fixes.push(`Added weekly accent: ${theme.name}`);
       totalChanges++;
     }
@@ -352,8 +352,8 @@ function rotateWeeklyAccent() {
     css = css.replace(/--weekly-accent:\s*[^;]+;/, `--weekly-accent: ${theme.primary};`);
     css = css.replace(/--weekly-glow:\s*[^;]+;/, `--weekly-glow: ${theme.glow};`);
     fs.writeFileSync('style.css', css, 'utf8');
-    console.log(`   ✅ อัพเดท Daily Accent: ${theme.name}`);
-    fixes.push(`Daily accent rotated: ${theme.name}`);
+    console.log(`   ✅ อัพเดท Weekly Accent: ${theme.name}`);
+    fixes.push(`Weekly Accent rotated: ${theme.name}`);
     totalChanges++;
   }
 
@@ -365,7 +365,7 @@ function rotateWeeklyAccent() {
 
   const syncStatusMatch = html.match(/<div class="weekly-sync-right" id="weekly-sync-status">[\s\S]*?<\/div>/);
   if (syncStatusMatch) {
-    const newStatus = `<div class="weekly-sync-right" id="weekly-sync-status">\n      ✨ อัปเดต UI & บำรุงรักษา: ธีม ${theme.name} • แคช ${swVer} (อัปเดตอัตโนมัติทุกวัน!)\n    </div>`;
+    const newStatus = `<div class="weekly-sync-right" id="weekly-sync-status">\n      ✨ อัปเดต UI & บำรุงรักษา: ธีม ${theme.name} • แคช ${swVer} (รอบถัดไปอีก 7 วัน)\n    </div>`;
     if (syncStatusMatch[0] !== newStatus) {
       html = html.replace(syncStatusMatch[0], newStatus);
       fs.writeFileSync('index.html', html, 'utf8');
@@ -447,7 +447,7 @@ function autoFixCommonBugs(data) {
 function generateReport() {
   console.log('');
   console.log('════════════════════════════════════════════════════');
-  console.log('📋 สรุปผลการบำรุงรักษาประจำวัน');
+  console.log('📋 สรุปผลการบำรุงรักษาประจำสัปดาห์');
   console.log('════════════════════════════════════════════════════');
   
   const now = Date.now();
@@ -480,7 +480,7 @@ function generateReport() {
     console.log(`   ✨ ไม่มีการเปลี่ยนแปลง – ระบบสมบูรณ์อยู่แล้ว!`);
   }
   console.log('════════════════════════════════════════════════════');
-  console.log(`✅ การบำรุงรักษาประจำวันเสร็จสมบูรณ์!`);
+  console.log(`✅ การบำรุงรักษาประจำสัปดาห์เสร็จสมบูรณ์!`);
   console.log('════════════════════════════════════════════════════');
 }
 
