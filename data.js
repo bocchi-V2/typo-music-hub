@@ -5853,7 +5853,9 @@ const SONGS = [
       3
     ],
     "reason": "เนื้อเพลงเล่าถึงความหวังที่จะได้เคียงข้างกันแม้ดาวหางจะมาเยือนเพียงครั้งเดียว เข้ากับฉากดาวตกและความรักข้ามมิติเวลาของ Your Name อย่างสมบูรณ์แบบ",
-    "typoIdea": "ใช้ฟอนต์สไตล์มินิมอลสีขาว มีแสง Glow นุ่มนวล เคลื่อนที่ลอยช้าๆ สลับกับฉากดาวตกบนท้องฟ้ายามค่ำคืน"
+    "typoIdea": "ใช้ฟอนต์สไตล์มินิมอลสีขาว มีแสง Glow นุ่มนวล เคลื่อนที่ลอยช้าๆ สลับกับฉากดาวตกบนท้องฟ้ายามค่ำคืน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a"
   },
   {
     "id": 2,
@@ -5876,7 +5878,9 @@ const SONGS = [
       12
     ],
     "reason": "พลังเสียงสะกดอารมณ์และเมโลดี้ทรงพลังของ Jeff Satur สื่อถึงความเจ็บปวดของการตามหาคนสำคัญในความทรงจำ เข้ากับมิติความสูญเสียใน Jujutsu Kaisen",
-    "typoIdea": "ฟอนต์สีขาวละลายขอบฟุ้งเหมือนวิญญาณ ค่อยๆ จางหายไปตามท่อนฮุค 'ซ่อนตัวอยู่ตรงนั้น' เลียนแบบฉากเล่นซ่อนหาของเมนมะใน Anohana"
+    "typoIdea": "ฟอนต์สีขาวละลายขอบฟุ้งเหมือนวิญญาณ ค่อยๆ จางหายไปตามท่อนฮุค 'ซ่อนตัวอยู่ตรงนั้น' เลียนแบบฉากเล่นซ่อนหาของเมนมะใน Anohana",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/be/ea/9c/beea9cc5-2f4a-657a-cda1-5e5ef382ba7a/mzaf_6797589711112840217.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/be/ea/9c/beea9cc5-2f4a-657a-cda1-5e5ef382ba7a/mzaf_6797589711112840217.plus.aac.p.m4a"
   },
   {
     "id": 3,
@@ -5899,7 +5903,9 @@ const SONGS = [
       7
     ],
     "reason": "อารมณ์เพลงที่ตัดพ้อถึงความทรงจำที่ไม่มีวันจางหาย สอดคล้องกับเรื่องราวเปียโนและจดหมายสุดท้ายใน Your Lie in April",
-    "typoIdea": "ใช้แอนิเมชันตัวหนังสือค่อยๆ จางหาย (Fade Out) สลับเบลอเมื่อถึงท่อน 'ลืมไปแล้ว' วางตรงกลางจังหวะเปียโน"
+    "typoIdea": "ใช้แอนิเมชันตัวหนังสือค่อยๆ จางหาย (Fade Out) สลับเบลอเมื่อถึงท่อน 'ลืมไปแล้ว' วางตรงกลางจังหวะเปียโน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/bf/53/33bf53d3-3a8b-c2a0-61d8-552a41cb0895/mzaf_17373431248148690542.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/bf/53/33bf53d3-3a8b-c2a0-61d8-552a41cb0895/mzaf_17373431248148690542.plus.aac.p.m4a"
   },
   {
     "id": 4,
@@ -5922,7 +5928,9 @@ const SONGS = [
       8
     ],
     "reason": "ดนตรีอบอุ่นละมุนหัวใจของ fellow fellow สะท้อนถึงความรักที่มั่นคงระหว่างมิยามุระและโฮริใน Horimiya",
-    "typoIdea": "ใช้ฟอนต์สไตล์ลายมือ (Handwritten) ขอบมน สีพาสเทลโทนชมพู-เบจ ขยับสไลด์เข้าออกนุ่มนวล"
+    "typoIdea": "ใช้ฟอนต์สไตล์ลายมือ (Handwritten) ขอบมน สีพาสเทลโทนชมพู-เบจ ขยับสไลด์เข้าออกนุ่มนวล",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/08/c8/af08c87c-8f9d-cc49-739a-7830f1567c00/mzaf_5128047126536625887.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/08/c8/af08c87c-8f9d-cc49-739a-7830f1567c00/mzaf_5128047126536625887.plus.aac.p.m4a"
   },
   {
     "id": 5,
@@ -5945,7 +5953,9 @@ const SONGS = [
       7
     ],
     "reason": "บรรยากาศชวนฝันและการเดินทางข้ามมิติ เข้ากับฉากรถไฟเหนือน้ำในตำนานของ Spirited Away ได้อย่างไร้ที่ติ",
-    "typoIdea": "จัดวางตัวหนังสือโค้งตามแนวขอบหน้าต่างรถไฟ ใช้เอฟเฟกต์ประกายละอองแสงระยิบระยับ"
+    "typoIdea": "จัดวางตัวหนังสือโค้งตามแนวขอบหน้าต่างรถไฟ ใช้เอฟเฟกต์ประกายละอองแสงระยิบระยับ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7b/b6/80/7bb68048-fb1d-84ed-bac7-ecc04eec0ed5/mzaf_4744985832839020218.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7b/b6/80/7bb68048-fb1d-84ed-bac7-ecc04eec0ed5/mzaf_4744985832839020218.plus.aac.p.m4a"
   },
   {
     "id": 6,
@@ -5969,7 +5979,9 @@ const SONGS = [
       14
     ],
     "reason": "ความน่ารักของการแอบมองคนที่ชอบจนใจละลาย เข้ากับลุคสาวแกลสุดเท่แต่แอบเขินรุ่นน้องใน 'รุ่นพี่ไฮมิยะ' สุดๆ",
-    "typoIdea": "แอนิเมชันตัวอักษรละลาย (Melt) เมื่อร้องคำว่า 'ละลาย' พร้อมซูมสายตาไฮมิยะตอนหน้าแดงแบบ Pop-up"
+    "typoIdea": "แอนิเมชันตัวอักษรละลาย (Melt) เมื่อร้องคำว่า 'ละลาย' พร้อมซูมสายตาไฮมิยะตอนหน้าแดงแบบ Pop-up",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/5f/f4/f45ff486-6fa0-9df5-9d58-8ed552c86140/mzaf_5412811150878921175.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/5f/f4/f45ff486-6fa0-9df5-9d58-8ed552c86140/mzaf_5412811150878921175.plus.aac.p.m4a"
   },
   {
     "id": 7,
@@ -5992,7 +6004,9 @@ const SONGS = [
       3
     ],
     "reason": "เมโลดี้ละมุนผสานเสียงฝนพรำ เข้ากับศาลาพักใจกลางสวนชินจูกุใน The Garden of Words ราวกับสร้างมาคู่กัน",
-    "typoIdea": "ตัวหนังสือสไตล์หมึกหยดซึม (Ink Bleed) ปรากฏขึ้นพร้อมระลอกคลื่นน้ำฝนบนผิวน้ำ"
+    "typoIdea": "ตัวหนังสือสไตล์หมึกหยดซึม (Ink Bleed) ปรากฏขึ้นพร้อมระลอกคลื่นน้ำฝนบนผิวน้ำ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/63/30/2a633070-c228-60ea-a557-590c7814f5f2/mzaf_6284737101935456326.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/63/30/2a633070-c228-60ea-a557-590c7814f5f2/mzaf_6284737101935456326.plus.aac.p.m4a"
   },
   {
     "id": 8,
@@ -6015,7 +6029,9 @@ const SONGS = [
       1
     ],
     "reason": "ความรู้สึกยอมแพ้ต่อโชคชะตาและความเจ็บปวด เข้ากับประเด็นการให้อภัยและไถ่บาปใน A Silent Voice",
-    "typoIdea": "ใช้ฟอนต์สไตล์สะบัดพู่กัน สีขาวตัดดำ จังหวะกระแทกคำตรงกับบีทกลองเพื่อส่งอารมณ์บีบหัวใจ"
+    "typoIdea": "ใช้ฟอนต์สไตล์สะบัดพู่กัน สีขาวตัดดำ จังหวะกระแทกคำตรงกับบีทกลองเพื่อส่งอารมณ์บีบหัวใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3f/be/b9/3fbeb9fa-3537-ee85-553c-c9992f3aa3ff/mzaf_11225322134181997478.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3f/be/b9/3fbeb9fa-3537-ee85-553c-c9992f3aa3ff/mzaf_11225322134181997478.plus.aac.p.m4a"
   },
   {
     "id": 9,
@@ -6038,7 +6054,9 @@ const SONGS = [
       5
     ],
     "reason": "เพลงแห่งการสูญเสียที่ตราตรึง เข้ากับจดหมายแห่งความรักและความทรงจำของ ไวโอเล็ต เอเวอร์การ์เดน",
-    "typoIdea": "ใช้เอฟเฟกต์พิมพ์ดีด (Typewriter Effect) สลับกับตัวหนังสือลายมือเขียนลงบนกระดาษจดหมาย"
+    "typoIdea": "ใช้เอฟเฟกต์พิมพ์ดีด (Typewriter Effect) สลับกับตัวหนังสือลายมือเขียนลงบนกระดาษจดหมาย",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/14/66/49/1466491a-b745-525c-7b96-321b4fd231d0/mzaf_16914207157708959097.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/14/66/49/1466491a-b745-525c-7b96-321b4fd231d0/mzaf_16914207157708959097.plus.aac.p.m4a"
   },
   {
     "id": 10,
@@ -6061,7 +6079,9 @@ const SONGS = [
       14
     ],
     "reason": "ความรู้สึกเริ่มแอบรักเพื่อนสนิทจนบานปลาย เข้ากับความสัมพันธ์ซึนเดเระของ ริวจิ และ ไทกะ ใน Toradora!",
-    "typoIdea": "ใช้ฟอนต์สไตล์นีออนโทนส้ม-ชมพู เด้งเข้าตามจังหวะพร้อมไอคอนอิโมจิหัวใจเล็กๆ"
+    "typoIdea": "ใช้ฟอนต์สไตล์นีออนโทนส้ม-ชมพู เด้งเข้าตามจังหวะพร้อมไอคอนอิโมจิหัวใจเล็กๆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5a/6c/c1/5a6cc1e5-af49-e7ce-1953-e70c9804ad3f/mzaf_8513941258598109632.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5a/6c/c1/5a6cc1e5-af49-e7ce-1953-e70c9804ad3f/mzaf_8513941258598109632.plus.aac.p.m4a"
   },
   {
     "id": 11,
@@ -6084,7 +6104,9 @@ const SONGS = [
       8
     ],
     "reason": "ดนตรีโฟล์กร็อคผสมผสานมนต์เสน่ห์ความรัก เข้ากับเรื่องราวความรักระหว่างมนุษย์และเทพจิ้งจอกใน Kamisama Kiss",
-    "typoIdea": "ใช้ฟอนต์ตัวหนาแสงสีทองเปล่งประกาย สลับกับทรานซิชันไฟสีทองพวยพุ่งในท่อนฮุค"
+    "typoIdea": "ใช้ฟอนต์ตัวหนาแสงสีทองเปล่งประกาย สลับกับทรานซิชันไฟสีทองพวยพุ่งในท่อนฮุค",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/cc/96/60cc96ee-d36d-201c-0ae7-a8f9d43d672e/mzaf_17220888096056606772.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/cc/96/60cc96ee-d36d-201c-0ae7-a8f9d43d672e/mzaf_17220888096056606772.plus.aac.p.m4a"
   },
   {
     "id": 12,
@@ -6107,7 +6129,9 @@ const SONGS = [
       4
     ],
     "reason": "การมองพระจันทร์ดวงเดียวกันเพื่อส่งความคิดถึง เข้ากับความรักที่ไม่อาจสัมผัสตัวกันได้ใน Hotarubi no Mori e",
-    "typoIdea": "วางตัวหนังสือโค้งรับกับทรงพระจันทร์เรืองแสง พร้อมเอฟเฟกต์หิ่งห้อยลอยผ่าน"
+    "typoIdea": "วางตัวหนังสือโค้งรับกับทรงพระจันทร์เรืองแสง พร้อมเอฟเฟกต์หิ่งห้อยลอยผ่าน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/64/31/d964312a-8619-ca7c-2580-1844e0fdf698/mzaf_8881744960688057961.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/64/31/d964312a-8619-ca7c-2580-1844e0fdf698/mzaf_8881744960688057961.plus.aac.p.m4a"
   },
   {
     "id": 13,
@@ -6130,7 +6154,9 @@ const SONGS = [
       3
     ],
     "reason": "กลิ่นดอกไม้และความทรงจำที่ยังคงหอมหวาน เข้ากับเรื่องราวซากุระและไดอารี่ใน I Want to Eat Your Pancreas",
-    "typoIdea": "ใช้ฟอนต์สไตล์ละมุนโปร่งแสง มีกลีบดอกซากุระปลิวผ่านตัวหนังสืออย่างช้าๆ"
+    "typoIdea": "ใช้ฟอนต์สไตล์ละมุนโปร่งแสง มีกลีบดอกซากุระปลิวผ่านตัวหนังสืออย่างช้าๆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/c3/a7/2ec3a7a1-78fb-efac-c3aa-5bc5220eab9e/mzaf_10494967788962621898.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/c3/a7/2ec3a7a1-78fb-efac-c3aa-5bc5220eab9e/mzaf_10494967788962621898.plus.aac.p.m4a"
   },
   {
     "id": 14,
@@ -6153,7 +6179,9 @@ const SONGS = [
       2
     ],
     "reason": "จังหวะชิลล์ฟังสบายสื่อถึงการมองเธอแล้วอยากให้เธอพิจารณาใจ เข้ากับชีวิตวัยรุ่นแสนอบอุ่นใน Horimiya",
-    "typoIdea": "ใช้ข้อความสไตล์แชท Pop-up ค่อยๆ ลอยขึ้นตรงกลางหน้าจอตามจังหวะท่อนแร็พ"
+    "typoIdea": "ใช้ข้อความสไตล์แชท Pop-up ค่อยๆ ลอยขึ้นตรงกลางหน้าจอตามจังหวะท่อนแร็พ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/c3/28/acc32878-a7bd-58a1-7d09-06fc124e8b50/mzaf_15257925916120333587.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/c3/28/acc32878-a7bd-58a1-7d09-06fc124e8b50/mzaf_15257925916120333587.plus.aac.p.m4a"
   },
   {
     "id": 15,
@@ -6176,7 +6204,9 @@ const SONGS = [
       7
     ],
     "reason": "บทเพลงรำลึกถึงมิตรภาพในวัยเด็กที่ไม่อาจย้อนกลับมา สื่อถึงกลุ่มเพื่อนและความทรงจำของเมมมะใน Anohana ได้ซาบซึ้งที่สุด",
-    "typoIdea": "ใช้ฟอนต์สไตล์ฟิล์มเก่าวินเทจ โทนภาพอบอุ่นพร้อม Grain บางๆ เพื่อให้ความรู้สึกคิดถึงวันวาน"
+    "typoIdea": "ใช้ฟอนต์สไตล์ฟิล์มเก่าวินเทจ โทนภาพอบอุ่นพร้อม Grain บางๆ เพื่อให้ความรู้สึกคิดถึงวันวาน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1e/80/dd/1e80dd0d-2ff6-7173-428c-c208f3e49074/mzaf_6392198639159685250.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1e/80/dd/1e80dd0d-2ff6-7173-428c-c208f3e49074/mzaf_6392198639159685250.plus.aac.p.m4a"
   },
   {
     "id": 16,
@@ -6199,7 +6229,9 @@ const SONGS = [
       6
     ],
     "reason": "เพลงอินดี้ป็อปสะท้อนความเคว้งคว้างของวัย 17 เข้ากับบุคลิกเก็บตัวและดนตรีร็อคของบ็อจจิใน Bocchi the Rock!",
-    "typoIdea": "ใช้ฟอนต์แนวโมเดิร์นคลีน วางสลับซ้ายขวาตามจังหวะเบส 8 บิต"
+    "typoIdea": "ใช้ฟอนต์แนวโมเดิร์นคลีน วางสลับซ้ายขวาตามจังหวะเบส 8 บิต",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/f3/15/20/f31520ce-a524-7764-6a2c-87c79333ec25/mzaf_8664520394720386170.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/f3/15/20/f31520ce-a524-7764-6a2c-87c79333ec25/mzaf_8664520394720386170.plus.aac.p.m4a"
   },
   {
     "id": 17,
@@ -6222,7 +6254,9 @@ const SONGS = [
       2
     ],
     "reason": "เสียงร้องหวานชวนฝันถ่ายทอดความรู้สึกรักแรกที่เบ่งบาน เข้ากับความรักอันบริสุทธิ์ของ ซาวาโกะ และ คาเซฮายะ ใน Kimi ni Todoke",
-    "typoIdea": "ใช้ฟอนต์สไตล์เรียบหรูสีขาวนวล พร้อมดอกไม้บานประกอบในท่อนคำว่า 'Blooming'"
+    "typoIdea": "ใช้ฟอนต์สไตล์เรียบหรูสีขาวนวล พร้อมดอกไม้บานประกอบในท่อนคำว่า 'Blooming'",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/ce/0a/70ce0a58-ce48-8f9f-8d43-a3bdd030d1b0/mzaf_17078307960515154041.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/ce/0a/70ce0a58-ce48-8f9f-8d43-a3bdd030d1b0/mzaf_17078307960515154041.plus.aac.p.m4a"
   },
   {
     "id": 18,
@@ -6244,7 +6278,9 @@ const SONGS = [
       18
     ],
     "reason": "ดนตรีร็อคระบายความอัดอั้น เข้ากับฉากแอคชั่นและความสูญเสียอันน่าสะเทือนใจใน Jujutsu Kaisen",
-    "typoIdea": "ใช้ฟอนต์ Cinematic ตัวกว้างสีแดง-ดำ พร้อมเอฟเฟกต์สั่นกระแทกจังหวะกลอง"
+    "typoIdea": "ใช้ฟอนต์ Cinematic ตัวกว้างสีแดง-ดำ พร้อมเอฟเฟกต์สั่นกระแทกจังหวะกลอง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/02/13/f4021324-132e-c5de-8b8e-8dca141c1880/mzaf_3517459293482534577.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/02/13/f4021324-132e-c5de-8b8e-8dca141c1880/mzaf_3517459293482534577.plus.aac.p.m4a"
   },
   {
     "id": 19,
@@ -6267,7 +6303,9 @@ const SONGS = [
       3
     ],
     "reason": "เนื้อเพลงสื่อถึงระยะทางและความรู้สึกคิดถึงที่ไม่อาจส่งไปถึง เข้ากับความห่างไกลใน 5 Centimeters per Second ได้อย่างสมบูรณ์แบบ",
-    "typoIdea": "เล่นคำว่า 'คิด' แล้วเว้นจังหวะให้คำว่า 'แต่ไม่ถึง' ค่อยๆ โผล่ขึ้นมาในโทนสีฟ้าหม่น"
+    "typoIdea": "เล่นคำว่า 'คิด' แล้วเว้นจังหวะให้คำว่า 'แต่ไม่ถึง' ค่อยๆ โผล่ขึ้นมาในโทนสีฟ้าหม่น",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/00/20/e500207c-a120-ad6f-7da9-c1ad1d7f6942/mzaf_640349242702877208.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/00/20/e500207c-a120-ad6f-7da9-c1ad1d7f6942/mzaf_640349242702877208.plus.aac.p.m4a"
   },
   {
     "id": 20,
@@ -6290,7 +6328,9 @@ const SONGS = [
       6
     ],
     "reason": "ความสนุกสนานและจังหวะกวนๆ ของการไม่อยากเป็นแค่เพื่อน เข้ากับคู่กัดใน Kaguya-sama อย่างที่สุด",
-    "typoIdea": "ใช้ฟอนต์สไตล์เรโทรขยับเด้ง (Bounce) ตามจังหวะแร็พของ MILLI พร้อมป้ายสัญลักษณ์ Warning โทนเหลือง-ดำ"
+    "typoIdea": "ใช้ฟอนต์สไตล์เรโทรขยับเด้ง (Bounce) ตามจังหวะแร็พของ MILLI พร้อมป้ายสัญลักษณ์ Warning โทนเหลือง-ดำ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/95/0a/8a/950a8a75-b236-bc32-e016-23fc81dd6af0/mzaf_15220071794383537599.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/95/0a/8a/950a8a75-b236-bc32-e016-23fc81dd6af0/mzaf_15220071794383537599.plus.aac.p.m4a"
   },
   {
     "id": 21,
@@ -6313,7 +6353,9 @@ const SONGS = [
       10
     ],
     "reason": "ดนตรีโพสต์ฮาร์ดคอร์สุดเข้มข้นระเบิดอารมณ์ความเจ็บปวด เข้ากับฉากต่อสู้แห่งโชคชะตาใน Attack on Titan",
-    "typoIdea": "ใช้ฟอนต์แนวร็อคฉีกขาด (Distorted) สลับภาพเร็วตามจังหวะกระเดื่องกลองแบบสปีดแรป"
+    "typoIdea": "ใช้ฟอนต์แนวร็อคฉีกขาด (Distorted) สลับภาพเร็วตามจังหวะกระเดื่องกลองแบบสปีดแรป",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e2/f4/8e/e2f48ee5-396c-5ba7-1869-6f7a0d571e7a/mzaf_16804993014002264430.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e2/f4/8e/e2f48ee5-396c-5ba7-1869-6f7a0d571e7a/mzaf_16804993014002264430.plus.aac.p.m4a"
   },
   {
     "id": 22,
@@ -6336,7 +6378,9 @@ const SONGS = [
       11
     ],
     "reason": "เพลงพังค์ร็อคพลังล้นหลาม ปลุกเร้าความตื่นเต้น เหมาะมากกับฉากตบลูกยางสุดมันส์ใน Haikyuu!!",
-    "typoIdea": "ตัวอักษรขยายใหญ่กระแทกหน้าจอ (Explosion) พร้อมสีนีออนม่วง-ส้ม ตามบีทท่อนฮุค 'ทรงอย่างแบด แซดอย่างบ่อย'"
+    "typoIdea": "ตัวอักษรขยายใหญ่กระแทกหน้าจอ (Explosion) พร้อมสีนีออนม่วง-ส้ม ตามบีทท่อนฮุค 'ทรงอย่างแบด แซดอย่างบ่อย'",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/90/a0/8c90a081-b8f8-8d89-acf7-3531400bd49d/mzaf_1875861912879165721.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/90/a0/8c90a081-b8f8-8d89-acf7-3531400bd49d/mzaf_1875861912879165721.plus.aac.p.m4a"
   },
   {
     "id": 23,
@@ -6358,7 +6402,9 @@ const SONGS = [
       22
     ],
     "reason": "การรอคอยและการจากลาที่งดงาม เข้ากับคำอธิษฐานและความทรงจำของฟรีเรนใน Frieren อย่างสมบูรณ์",
-    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏในหมอกควัน แล้วลอยขึ้นสู่ท้องฟ้าในท่อนฮุค 'ถ้าเราได้เจอกันอีก'"
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏในหมอกควัน แล้วลอยขึ้นสู่ท้องฟ้าในท่อนฮุค 'ถ้าเราได้เจอกันอีก'",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ef/40/e2/ef40e2a5-462d-3900-e800-ac36e02fc442/mzaf_2677602440669876174.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ef/40/e2/ef40e2a5-462d-3900-e800-ac36e02fc442/mzaf_2677602440669876174.plus.aac.p.m4a"
   },
   {
     "id": 24,
@@ -6380,7 +6426,9 @@ const SONGS = [
       20
     ],
     "reason": "ความอบอุ่นของการเป็นที่พึ่งพาให้คนที่เรารัก เข้ากับความอ่อนโยนของคาเซฮายะใน Kimi ni Todoke",
-    "typoIdea": "ใช้ฟอนต์สีพาสเทลขอบมน แอนิเมชันลอยเบาๆ เหมือนถูกโอบกอด"
+    "typoIdea": "ใช้ฟอนต์สีพาสเทลขอบมน แอนิเมชันลอยเบาๆ เหมือนถูกโอบกอด",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/68/25/6668253c-aa17-85c5-4ad4-d112e0d7cd1e/mzaf_4161458375630754491.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/68/25/6668253c-aa17-85c5-4ad4-d112e0d7cd1e/mzaf_4161458375630754491.plus.aac.p.m4a"
   },
   {
     "id": 25,
@@ -6402,7 +6450,9 @@ const SONGS = [
       17
     ],
     "reason": "ความรักที่ข้ามผ่านทุกอุปสรรคและโชคชะตา สอดคล้องกับความรักของนานามิและโทโมเอะใน Kamisama Kiss",
-    "typoIdea": "ตัวหนังสือสีทองเรืองรอง พร้อมกลีบดอกไม้โปรยปรายรอบข้อความ"
+    "typoIdea": "ตัวหนังสือสีทองเรืองรอง พร้อมกลีบดอกไม้โปรยปรายรอบข้อความ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d0/88/f8/d088f87c-1135-1816-2d69-c33e80f57088/mzaf_4799799825808235537.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d0/88/f8/d088f87c-1135-1816-2d69-c33e80f57088/mzaf_4799799825808235537.plus.aac.p.m4a"
   },
   {
     "id": 26,
@@ -6424,7 +6474,9 @@ const SONGS = [
       14
     ],
     "reason": "สายตาที่ไม่อาจโกหกความรู้สึกเวลาเผลอมองเธอ เข้ากับความน่ารักของโฮริและมิยามุระใน Horimiya",
-    "typoIdea": "ซูมตัวหนังสือพร้อมเอฟเฟกต์เบลอพื้นหลัง เน้นคำว่า 'สายตามันหลอกกันไม่ได้'"
+    "typoIdea": "ซูมตัวหนังสือพร้อมเอฟเฟกต์เบลอพื้นหลัง เน้นคำว่า 'สายตามันหลอกกันไม่ได้'",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/64/a6/db/64a6db06-8931-cd05-30a7-6ff976ed96ca/mzaf_1200240892676868907.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/64/a6/db/64a6db06-8931-cd05-30a7-6ff976ed96ca/mzaf_1200240892676868907.plus.aac.p.m4a"
   },
   {
     "id": 27,
@@ -6446,7 +6498,9 @@ const SONGS = [
       9
     ],
     "reason": "ความรักแท้ที่อยู่เหนือกาลเวลาและมิติ เข้ากับสายใยผูกพันของทาคิและมิตสึฮะใน Your Name",
-    "typoIdea": "ตัวหนังสือสไตล์เส้นสายด้ายแดงแห่งโชคชะตา ค่อยๆ เชื่อมโยงเข้าหากัน"
+    "typoIdea": "ตัวหนังสือสไตล์เส้นสายด้ายแดงแห่งโชคชะตา ค่อยๆ เชื่อมโยงเข้าหากัน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/20/52/4c/20524cf3-73b9-9c39-5204-2006ef9dfe78/mzaf_1394626490362469262.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/20/52/4c/20524cf3-73b9-9c39-5204-2006ef9dfe78/mzaf_1394626490362469262.plus.aac.p.m4a"
   },
   {
     "id": 28,
@@ -6468,7 +6522,9 @@ const SONGS = [
       27
     ],
     "reason": "ความอลหม่านและคอมเมดี้ชวนหัวเราะ เข้ากับครอบครัวฟอร์เจอร์สุดป่วนใน Spy x Family",
-    "typoIdea": "ตัวหนังสือป็อปอัปสไตล์หนังสือการ์ตูนคอมมิค สลับกรอบคำพูดน่ารักๆ"
+    "typoIdea": "ตัวหนังสือป็อปอัปสไตล์หนังสือการ์ตูนคอมมิค สลับกรอบคำพูดน่ารักๆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/21/0d/1e/210d1e32-0b9a-c77b-6ccd-ffd672277703/mzaf_15612215393812234031.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/21/0d/1e/210d1e32-0b9a-c77b-6ccd-ffd672277703/mzaf_15612215393812234031.plus.aac.p.m4a"
   },
   {
     "id": 29,
@@ -6490,7 +6546,9 @@ const SONGS = [
       1
     ],
     "reason": "ความหนาวเหน็บและความทรงจำในฤดูกาลที่ผ่านไป เข้ากับบรรยากาศการจากลาใน Your Lie in April",
-    "typoIdea": "ตัวหนังสือมีเอฟเฟกต์ไอน้ำและละอองหิมะโปรยปราย"
+    "typoIdea": "ตัวหนังสือมีเอฟเฟกต์ไอน้ำและละอองหิมะโปรยปราย",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c4/36/1c/c4361c0f-fcf7-d584-f136-21d681cd9ee4/mzaf_13703260627470484180.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c4/36/1c/c4361c0f-fcf7-d584-f136-21d681cd9ee4/mzaf_13703260627470484180.plus.aac.p.m4a"
   },
   {
     "id": 30,
@@ -6512,7 +6570,9 @@ const SONGS = [
       7
     ],
     "reason": "การมีเธออยู่ข้างๆ แม้วันที่ฝนตกหรือท้องฟ้ามืดมน เข้ากับฮินะและโฮดากะใน Weathering With You",
-    "typoIdea": "วางข้อความสองฝั่งแล้ววิ่งเข้ามาประกบกันตรงกลางจังหวะเพลง"
+    "typoIdea": "วางข้อความสองฝั่งแล้ววิ่งเข้ามาประกบกันตรงกลางจังหวะเพลง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/53/b1/2f53b12f-d984-4e4d-0235-e2041b5d3311/mzaf_632423543988720742.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/53/b1/2f53b12f-d984-4e4d-0235-e2041b5d3311/mzaf_632423543988720742.plus.aac.p.m4a"
   },
   {
     "id": 31,
@@ -6534,7 +6594,9 @@ const SONGS = [
       13
     ],
     "reason": "ความคิดถึงที่พัดมาพร้อมกับสายฝน เข้ากับหยาดฝนแห่งสวนชินจูกุใน The Garden of Words",
-    "typoIdea": "ตัวหนังสือไล่ระดับความโปร่งใส คล้ายมองผ่านกระจกที่มีหยดน้ำฝนเกาะ"
+    "typoIdea": "ตัวหนังสือไล่ระดับความโปร่งใส คล้ายมองผ่านกระจกที่มีหยดน้ำฝนเกาะ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/d2/65/34d2659e-148d-c029-0cc8-60d75ca37f13/mzaf_12794166550202757517.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/d2/65/34d2659e-148d-c029-0cc8-60d75ca37f13/mzaf_12794166550202757517.plus.aac.p.m4a"
   },
   {
     "id": 32,
@@ -6556,7 +6618,9 @@ const SONGS = [
       10
     ],
     "reason": "ความเหงาและความเจ็บปวดในวันที่ไม่มีใครเคียงข้าง สอดคล้องกับความเดียวดายใน A Silent Voice",
-    "typoIdea": "ตัวหนังสือสีเทาหม่น ค่อยๆ ดับลงเหมือนแสงเทียนบนเค้กวันเกิด"
+    "typoIdea": "ตัวหนังสือสีเทาหม่น ค่อยๆ ดับลงเหมือนแสงเทียนบนเค้กวันเกิด",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/37/b6/a6/37b6a6a3-1dca-1397-409c-cd4670b55122/mzaf_4887075626909576367.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/37/b6/a6/37b6a6a3-1dca-1397-409c-cd4670b55122/mzaf_4887075626909576367.plus.aac.p.m4a"
   },
   {
     "id": 33,
@@ -6578,7 +6642,9 @@ const SONGS = [
       20
     ],
     "reason": "รอยยิ้มของเธอที่ทำให้โลกทั้งใบสดใส เข้ากับรอยยิ้มของซาวาโกะใน Kimi ni Todoke",
-    "typoIdea": "ตัวหนังสือสีชมพูส้มสว่างวาบขึ้นมา พร้อมเอฟเฟกต์ประกายดาววิ้งค์ๆ"
+    "typoIdea": "ตัวหนังสือสีชมพูส้มสว่างวาบขึ้นมา พร้อมเอฟเฟกต์ประกายดาววิ้งค์ๆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2f/3f/ac/2f3fac81-9e83-4ae6-5171-841804b44c6f/mzaf_16866220623392363387.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2f/3f/ac/2f3fac81-9e83-4ae6-5171-841804b44c6f/mzaf_16866220623392363387.plus.aac.p.m4a"
   },
   {
     "id": 34,
@@ -6600,7 +6666,9 @@ const SONGS = [
       15
     ],
     "reason": "ความอาวรณ์และเสียดายช่วงเวลาที่ไม่อาจย้อนคืน เข้ากับความสัมพันธ์ระยะไกลใน 5 Centimeters per Second",
-    "typoIdea": "สไตล์ฟอนต์เรโทรย้อนยุค 80s แสงนีออนม่วงสลับชมพูสะท้อนความเหงา"
+    "typoIdea": "สไตล์ฟอนต์เรโทรย้อนยุค 80s แสงนีออนม่วงสลับชมพูสะท้อนความเหงา",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/5a/f7/e55af74d-5e28-ce04-ba12-c57fbe58af12/mzaf_9994674882709681890.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/5a/f7/e55af74d-5e28-ce04-ba12-c57fbe58af12/mzaf_9994674882709681890.plus.aac.p.m4a"
   },
   {
     "id": 35,
@@ -6622,7 +6690,9 @@ const SONGS = [
       18
     ],
     "reason": "การกล่าวลาที่หวังว่าจะได้พบกันอีก เข้ากับฉากบอกลาทั้งน้ำตาของเมมมะใน Anohana",
-    "typoIdea": "ตัวหนังสือค่อยๆ จางหายไปพร้อมการโบกมือลาของตัวละคร"
+    "typoIdea": "ตัวหนังสือค่อยๆ จางหายไปพร้อมการโบกมือลาของตัวละคร",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/db/c6/d7dbc6b7-df68-509b-393c-d2e7461e4782/mzaf_16441888389148470421.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/db/c6/d7dbc6b7-df68-509b-393c-d2e7461e4782/mzaf_16441888389148470421.plus.aac.p.m4a"
   },
   {
     "id": 36,
@@ -6644,7 +6714,9 @@ const SONGS = [
       12
     ],
     "reason": "กลิ่นหอมของความรักที่ต้องซ่อนไว้ในใจ สอดคล้องกับความรักในป่าหิ่งห้อยของ Hotarubi no Mori e",
-    "typoIdea": "ตัวหนังสือเลือนรางซ่อนอยู่ในเงามืดแล้วสว่างขึ้นตามจังหวะเคาะระนาด"
+    "typoIdea": "ตัวหนังสือเลือนรางซ่อนอยู่ในเงามืดแล้วสว่างขึ้นตามจังหวะเคาะระนาด",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/08/12/36/0812360d-4479-b29d-5275-931b1e541694/mzaf_5285055444520979895.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/08/12/36/0812360d-4479-b29d-5275-931b1e541694/mzaf_5285055444520979895.plus.aac.p.m4a"
   },
   {
     "id": 37,
@@ -6666,7 +6738,9 @@ const SONGS = [
       8
     ],
     "reason": "การมอบทั้งดวงใจให้คนที่รัก เข้ากับความทุ่มเทและการปกป้องของริวจิใน Toradora!",
-    "typoIdea": "ฟอนต์ลายมืออบอุ่น วางลอยบนฉากพระอาทิตย์ตกดิน"
+    "typoIdea": "ฟอนต์ลายมืออบอุ่น วางลอยบนฉากพระอาทิตย์ตกดิน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/6e/2d/806e2d43-db51-edb6-19ed-dfd13aa92f99/mzaf_5101326889103556069.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/6e/2d/806e2d43-db51-edb6-19ed-dfd13aa92f99/mzaf_5101326889103556069.plus.aac.p.m4a"
   },
   {
     "id": 38,
@@ -6688,7 +6762,9 @@ const SONGS = [
       4
     ],
     "reason": "การขอบคุณทุกช่วงเวลาที่ได้ร่วมเดินทางด้วยกัน เข้ากับการผจญภัยของจิฮิโระใน Spirited Away",
-    "typoIdea": "ตัวหนังสือไล่เฉดสีรุ้งอ่อนๆ ค่อยๆ ปรากฏพร้อมวิวทิวทัศน์กว้าง"
+    "typoIdea": "ตัวหนังสือไล่เฉดสีรุ้งอ่อนๆ ค่อยๆ ปรากฏพร้อมวิวทิวทัศน์กว้าง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/54/e7/1954e7f4-b211-849d-03a4-94a515c197df/mzaf_10611984984504241868.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/54/e7/1954e7f4-b211-849d-03a4-94a515c197df/mzaf_10611984984504241868.plus.aac.p.m4a"
   },
   {
     "id": 39,
@@ -6710,7 +6786,9 @@ const SONGS = [
       16
     ],
     "reason": "การยินดีที่ได้พบและรักเธอแม้เวลาจะแสนสั้น เข้ากับความทรงจำอันล้ำค่าใน I Want to Eat Your Pancreas",
-    "typoIdea": "ตัวหนังสือบางเรียบหรู ค่อยๆ เขียนขึ้นทีละตัวอักษรเหมือนไดอารี่"
+    "typoIdea": "ตัวหนังสือบางเรียบหรู ค่อยๆ เขียนขึ้นทีละตัวอักษรเหมือนไดอารี่",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/4a/bb/aa/4abbaad0-6911-aa8c-6b45-4a99f5c54773/mzaf_9453094306125921868.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/4a/bb/aa/4abbaad0-6911-aa8c-6b45-4a99f5c54773/mzaf_9453094306125921868.plus.aac.p.m4a"
   },
   {
     "id": 40,
@@ -6732,7 +6810,9 @@ const SONGS = [
       2
     ],
     "reason": "ความน่ารักของการท้าให้เอาปากกามาวงจุดที่ไม่น่ารัก เข้ากับความซึนเดเระใน Kaguya-sama",
-    "typoIdea": "มีเอฟเฟกต์วงกลมปากกาสีแดงวงรอบคำสำคัญตามจังหวะเพลง"
+    "typoIdea": "มีเอฟเฟกต์วงกลมปากกาสีแดงวงรอบคำสำคัญตามจังหวะเพลง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/29/08/db/2908db02-32cc-c24e-50a6-4583a85b5369/mzaf_5867430908003016888.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/29/08/db/2908db02-32cc-c24e-50a6-4583a85b5369/mzaf_5867430908003016888.plus.aac.p.m4a"
   },
   {
     "id": 41,
@@ -6754,7 +6834,9 @@ const SONGS = [
       14
     ],
     "reason": "เพลงตัดพ้อสนุกๆ ของคนโสด เข้ากับโมเมนต์คอมเมดี้ใน Horimiya",
-    "typoIdea": "ตัวหนังสือขยับสลับสีสนุกสนาน พร้อมป้ายกรุ๊ปเลือด B ป๊อปอัป"
+    "typoIdea": "ตัวหนังสือขยับสลับสีสนุกสนาน พร้อมป้ายกรุ๊ปเลือด B ป๊อปอัป",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/ca/32/cb/ca32cbd3-6e00-5d33-72c4-7d71ee456d73/mzaf_15308886385266869376.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/ca/32/cb/ca32cbd3-6e00-5d33-72c4-7d71ee456d73/mzaf_15308886385266869376.plus.aac.p.m4a"
   },
   {
     "id": 42,
@@ -6776,7 +6858,9 @@ const SONGS = [
       3
     ],
     "reason": "ความรักที่สลักลึกในจิตใจไม่อาจลบเลือน เข้ากับภารกิจส่งความในใจของไวโอเล็ตใน Violet Evergarden",
-    "typoIdea": "ตัวหนังสือแกะสลักเรืองแสงสีทองสว่างวาบบนฉากมืด"
+    "typoIdea": "ตัวหนังสือแกะสลักเรืองแสงสีทองสว่างวาบบนฉากมืด",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/6e/34/e66e34c2-c971-ef2c-2e0f-f8a99e220912/mzaf_7695861381642299193.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/6e/34/e66e34c2-c971-ef2c-2e0f-f8a99e220912/mzaf_7695861381642299193.plus.aac.p.m4a"
   },
   {
     "id": 43,
@@ -6798,7 +6882,9 @@ const SONGS = [
       18
     ],
     "reason": "การฝันถึงเรื่องราวเก่าๆ ที่ไม่มีวันกลับมา เข้ากับความผูกพันของกลุ่มบัสเตอส์ใน Anohana",
-    "typoIdea": "เอฟเฟกต์ตัวหนังสือเบลอแบบความฝัน (Dream Blur) สลับภาพย้อนอดีต"
+    "typoIdea": "เอฟเฟกต์ตัวหนังสือเบลอแบบความฝัน (Dream Blur) สลับภาพย้อนอดีต",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8a/75/33/8a75330f-429f-7069-6f3b-83061bd3d265/mzaf_2681671476093048229.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8a/75/33/8a75330f-429f-7069-6f3b-83061bd3d265/mzaf_2681671476093048229.plus.aac.p.m4a"
   },
   {
     "id": 44,
@@ -6820,7 +6906,9 @@ const SONGS = [
       9
     ],
     "reason": "แสงสีทองยามเย็นและเมโลดี้เปียโนอันวิจิตร เข้ากับฉาก Golden Hour บนยอดเขาใน Your Name อย่างไร้ที่ติ",
-    "typoIdea": "ตัวหนังสือสีทองแวววาวขยับพลิ้วไหวตามคอร์ดเปียโนระยิบระยับ"
+    "typoIdea": "ตัวหนังสือสีทองแวววาวขยับพลิ้วไหวตามคอร์ดเปียโนระยิบระยับ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/02/8c/30028c8a-a125-5466-bcc6-27a83b1c0135/mzaf_16911571635366913039.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/02/8c/30028c8a-a125-5466-bcc6-27a83b1c0135/mzaf_16911571635366913039.plus.aac.p.m4a"
   },
   {
     "id": 45,
@@ -6842,7 +6930,9 @@ const SONGS = [
       17
     ],
     "reason": "บรรยากาศวินเทจโรแมนติกที่มั่นคง เข้ากับความรักนิรันดร์ของโทโมเอะใน Kamisama Kiss",
-    "typoIdea": "ตัวหนังสือสไตล์เรโทร 1950s สีครีม-ทอง สลับแสง Glow นุ่มนวล"
+    "typoIdea": "ตัวหนังสือสไตล์เรโทร 1950s สีครีม-ทอง สลับแสง Glow นุ่มนวล",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/82/c1/5382c1d4-ddba-aa2b-90df-57268895fac9/mzaf_8926201202931541051.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/82/c1/5382c1d4-ddba-aa2b-90df-57268895fac9/mzaf_8926201202931541051.plus.aac.p.m4a"
   },
   {
     "id": 46,
@@ -6864,7 +6954,9 @@ const SONGS = [
       25
     ],
     "reason": "ความรักที่ยอมเคียงข้างกันจนวินาทีสุดท้าย แม้โลกจะพังทลาย เข้ากับฉากไคลแม็กซ์ของ Cyberpunk: Edgerunners",
-    "typoIdea": "ตัวหนังสือสไตล์ Cyberpunk แตกสลาย มีแสงนีออนสีฟ้า-ชมพูสลับกระพริบ"
+    "typoIdea": "ตัวหนังสือสไตล์ Cyberpunk แตกสลาย มีแสงนีออนสีฟ้า-ชมพูสลับกระพริบ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/6a/99/076a99ed-b946-431b-6f1f-54fa187ca5bd/mzaf_8102882277995122875.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/6a/99/076a99ed-b946-431b-6f1f-54fa187ca5bd/mzaf_8102882277995122875.plus.aac.p.m4a"
   },
   {
     "id": 47,
@@ -6886,7 +6978,9 @@ const SONGS = [
       12
     ],
     "reason": "เพลงแห่งอดีตชาติและสายใยที่เชื่อมโยงกัน เข้ากับความรักต่างภพใน Hotarubi no Mori e",
-    "typoIdea": "ตัวหนังสือลอยละล่องเหมือนควันหมอกโปร่งใส ซ้อนทับฉากป่าไม้"
+    "typoIdea": "ตัวหนังสือลอยละล่องเหมือนควันหมอกโปร่งใส ซ้อนทับฉากป่าไม้",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/b6/5b/bab65b54-b62b-afe7-7b2c-42d17c175479/mzaf_180048884343447783.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/b6/5b/bab65b54-b62b-afe7-7b2c-42d17c175479/mzaf_180048884343447783.plus.aac.p.m4a"
   },
   {
     "id": 48,
@@ -6908,7 +7002,9 @@ const SONGS = [
       7
     ],
     "reason": "บรรยากาศฤดูหนาวและไออุ่น เข้ากับโทนฝนตกและความหนาวเย็นใน Weathering With You",
-    "typoIdea": "ตัวหนังสือสไตล์อินดี้มินิมอล มีละอองความเย็นและควันจางๆ"
+    "typoIdea": "ตัวหนังสือสไตล์อินดี้มินิมอล มีละอองความเย็นและควันจางๆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/37/20/8c372047-2727-8054-9411-0e4867643dd8/mzaf_10169659262182214119.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/37/20/8c372047-2727-8054-9411-0e4867643dd8/mzaf_10169659262182214119.plus.aac.p.m4a"
   },
   {
     "id": 49,
@@ -6930,7 +7026,9 @@ const SONGS = [
       21
     ],
     "reason": "โทนดนตรีดาร์กเข้มข้นและความลับในความมืด เข้ากับปมดราม่าและการล้างแค้นใน Oshi no Ko",
-    "typoIdea": "ตัวหนังสือสีขาวตัดกับพื้นหลังสีดำสนิท ค่อยๆ สว่างขึ้นเมื่อถึงท่อน Daylight"
+    "typoIdea": "ตัวหนังสือสีขาวตัดกับพื้นหลังสีดำสนิท ค่อยๆ สว่างขึ้นเมื่อถึงท่อน Daylight",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/93/94/52/939452d5-e74e-a819-2f16-7c9148f3419a/mzaf_17998933934090835373.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/93/94/52/939452d5-e74e-a819-2f16-7c9148f3419a/mzaf_17998933934090835373.plus.aac.p.m4a"
   },
   {
     "id": 50,
@@ -6952,7 +7050,9 @@ const SONGS = [
       15
     ],
     "reason": "เสียงเปียโนบาดลึกที่ยังมองเห็นภาพเธอในตัวคนอื่น เข้ากับความเจ็บปวดใน 5 Centimeters per Second",
-    "typoIdea": "ตัวหนังสือค่อยๆ เบลอและมีรอยหยดน้ำตาไหลผ่านข้อความ"
+    "typoIdea": "ตัวหนังสือค่อยๆ เบลอและมีรอยหยดน้ำตาไหลผ่านข้อความ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/53/c2/0c53c240-300a-5ddf-fc86-3a54e1b73a78/mzaf_13555682862214742934.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/53/c2/0c53c240-300a-5ddf-fc86-3a54e1b73a78/mzaf_13555682862214742934.plus.aac.p.m4a"
   },
   {
     "id": 51,
@@ -6974,7 +7074,9 @@ const SONGS = [
       25
     ],
     "reason": "ความหนักแน่นของการยอมสละทุกสิ่งเพื่อคนสำคัญ เข้ากับการต่อสู้สุดชีวิตใน Jujutsu Kaisen",
-    "typoIdea": "ตัวหนังสือหนาสไตล์ Cinematic กระแทกสั่นไหวตามจังหวะเสียงเบส"
+    "typoIdea": "ตัวหนังสือหนาสไตล์ Cinematic กระแทกสั่นไหวตามจังหวะเสียงเบส",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/50/50/1a/50501a86-bd74-e90d-8a56-68c9b5e6e7d6/mzaf_4588197682084244913.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/50/50/1a/50501a86-bd74-e90d-8a56-68c9b5e6e7d6/mzaf_4588197682084244913.plus.aac.p.m4a"
   },
   {
     "id": 52,
@@ -6996,7 +7098,9 @@ const SONGS = [
       20
     ],
     "reason": "คำอธิษฐานต่อดอกแดนดิไลออนเพื่อความรัก เข้ากับความหวานละมุนใน Kimi ni Todoke",
-    "typoIdea": "มีเกสรดอกแดนดิไลออนลอยปลิวผ่านตัวหนังสือที่สว่างสดใส"
+    "typoIdea": "มีเกสรดอกแดนดิไลออนลอยปลิวผ่านตัวหนังสือที่สว่างสดใส",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bc/5a/88/bc5a881d-dc44-fc7f-92fd-376680957969/mzaf_10218454983981161930.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bc/5a/88/bc5a881d-dc44-fc7f-92fd-376680957969/mzaf_10218454983981161930.plus.aac.p.m4a"
   },
   {
     "id": 53,
@@ -7018,7 +7122,9 @@ const SONGS = [
       14
     ],
     "reason": "ความรู้สึกใจเต้นแรงเวลาแอบมองเพื่อนสนิท เข้ากับความสัมพันธ์ของโฮริและมิยามุระใน Horimiya",
-    "typoIdea": "ตัวหนังสือสไลด์เข้าออกแบบ Double-vision สลับมองซ้ายขวา"
+    "typoIdea": "ตัวหนังสือสไลด์เข้าออกแบบ Double-vision สลับมองซ้ายขวา",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/78/8b/ad/788bad05-971e-aa6e-2c00-f8885a8e333e/mzaf_3444595279441892744.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/78/8b/ad/788bad05-971e-aa6e-2c00-f8885a8e333e/mzaf_3444595279441892744.plus.aac.p.m4a"
   },
   {
     "id": 54,
@@ -7040,7 +7146,9 @@ const SONGS = [
       16
     ],
     "reason": "ความปรารถนาที่จะแก่เฒ่าไปด้วยกันแม้โชคชะตาจะใจร้าย เข้ากับ I Want to Eat Your Pancreas",
-    "typoIdea": "ตัวหนังสือเขียนช้าๆ บนสมุดบันทึกพร้อมแสงแดดอุ่นส่องผ่าน"
+    "typoIdea": "ตัวหนังสือเขียนช้าๆ บนสมุดบันทึกพร้อมแสงแดดอุ่นส่องผ่าน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bf/a3/6d/bfa36d9c-8e41-e05f-8a2b-970c9b21c695/mzaf_9987737564511061938.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bf/a3/6d/bfa36d9c-8e41-e05f-8a2b-970c9b21c695/mzaf_9987737564511061938.plus.aac.p.m4a"
   },
   {
     "id": 55,
@@ -7062,7 +7170,9 @@ const SONGS = [
       26
     ],
     "reason": "การผูกพันที่จะบินไปด้วยกัน เข้ากับการผจญภัยและสายใยใน Suzume",
-    "typoIdea": "ตัวหนังสือบินขึ้นเหมือนขนนก พร้อมสีสันสดใสชวนฝัน"
+    "typoIdea": "ตัวหนังสือบินขึ้นเหมือนขนนก พร้อมสีสันสดใสชวนฝัน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/31/d3/3431d34e-847f-5d66-df83-0bce688d997e/mzaf_18106743962423782018.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/31/d3/3431d34e-847f-5d66-df83-0bce688d997e/mzaf_18106743962423782018.plus.aac.p.m4a"
   },
   {
     "id": 56,
@@ -7084,7 +7194,9 @@ const SONGS = [
       23
     ],
     "reason": "บีทสุดเท่และพลังดาร์ก เข้ากับความบ้าคลั่งและการต่อสู้สุดมันส์ใน Chainsaw Man",
-    "typoIdea": "ฟอนต์ไฟนีออนสไตล์เรโทรเวฟ กระพริบตามจังหวะเพลงพร้อมแสงแฟลช"
+    "typoIdea": "ฟอนต์ไฟนีออนสไตล์เรโทรเวฟ กระพริบตามจังหวะเพลงพร้อมแสงแฟลช",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/11/71/d6/1171d6ad-3c96-e027-2af6-58028426588c/mzaf_15137631797407745471.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/11/71/d6/1171d6ad-3c96-e027-2af6-58028426588c/mzaf_15137631797407745471.plus.aac.p.m4a"
   },
   {
     "id": 57,
@@ -7106,7 +7218,9 @@ const SONGS = [
       9
     ],
     "reason": "การพยายามเขียนโชคชะตาใหม่เพื่อได้อยู่ด้วยกัน เข้ากับการท้าทายมิติเวลาใน Your Name",
-    "typoIdea": "ตัวหนังสือลอยอยู่ท่ามกลางกลุ่มดวงดาวระยิบระยับบนท้องฟ้ายามราตรี"
+    "typoIdea": "ตัวหนังสือลอยอยู่ท่ามกลางกลุ่มดวงดาวระยิบระยับบนท้องฟ้ายามราตรี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c9/ca/ac/c9caacde-3f18-01b2-7e20-49c5d9236d1c/mzaf_14026827879801528592.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c9/ca/ac/c9caacde-3f18-01b2-7e20-49c5d9236d1c/mzaf_14026827879801528592.plus.aac.p.m4a"
   },
   {
     "id": 58,
@@ -7128,7 +7242,9 @@ const SONGS = [
       28
     ],
     "reason": "ความเดือดของการต่อสู้ท่ามกลางศัตรูรอบตัว เข้ากับสงครามชิงความเป็นหนึ่งใน Blue Lock",
-    "typoIdea": "ฟอนต์สไตล์ดิบเถื่อน สีแดง-ดำ สั่นสะเทือนตามจังหวะบีทหนัก"
+    "typoIdea": "ฟอนต์สไตล์ดิบเถื่อน สีแดง-ดำ สั่นสะเทือนตามจังหวะบีทหนัก",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/8b/d9/f98bd9a6-96d2-b8fd-1848-0de12814aec6/mzaf_18165369050311284240.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/8b/d9/f98bd9a6-96d2-b8fd-1848-0de12814aec6/mzaf_18165369050311284240.plus.aac.p.m4a"
   },
   {
     "id": 59,
@@ -7150,7 +7266,9 @@ const SONGS = [
       24
     ],
     "reason": "พลังใจที่ไม่ยอมแพ้ต่อความเจ็บปวด เข้ากับการฝึกฝนและดาบพิฆาตอสูรของทันจิโร่ใน Demon Slayer",
-    "typoIdea": "ตัวหนังสือมีเปลวไฟลุกโชน กระแทกหน้าจอตามจังหวะกลอง"
+    "typoIdea": "ตัวหนังสือมีเปลวไฟลุกโชน กระแทกหน้าจอตามจังหวะกลอง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c0/3f/36/c03f367a-b66b-fd0a-a54c-30f8250c4410/mzaf_12768434238801682952.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c0/3f/36/c03f367a-b66b-fd0a-a54c-30f8250c4410/mzaf_12768434238801682952.plus.aac.p.m4a"
   },
   {
     "id": 60,
@@ -7172,7 +7290,9 @@ const SONGS = [
       21
     ],
     "reason": "ความรู้สึกตัดพ้อที่ถูกมองเป็นแค่ของเล่น เข้ากับโลกวงการบันเทิงใน Oshi no Ko",
-    "typoIdea": "ตัวหนังสือสีพาสเทลน่ารักปนดาร์ก หมุนส่ายไปมาเหมือนของเล่น"
+    "typoIdea": "ตัวหนังสือสีพาสเทลน่ารักปนดาร์ก หมุนส่ายไปมาเหมือนของเล่น",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/11/ff/7011ffad-84a1-9d58-4b01-7032d5c2a7fb/mzaf_13004071810449682860.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/11/ff/7011ffad-84a1-9d58-4b01-7032d5c2a7fb/mzaf_13004071810449682860.plus.aac.p.m4a"
   },
   {
     "id": 61,
@@ -7194,7 +7314,9 @@ const SONGS = [
       27
     ],
     "reason": "ความสดใสไร้เดียงสาและน่ารัก เข้ากับความน่ารักของน้องอาเนียใน Spy x Family",
-    "typoIdea": "ตัวหนังสือป๊อปอัปเด้งดึ๋งสีชมพู พร้อมลูกศรคิวปิดยิงผ่านหน้าจอ"
+    "typoIdea": "ตัวหนังสือป๊อปอัปเด้งดึ๋งสีชมพู พร้อมลูกศรคิวปิดยิงผ่านหน้าจอ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/62/ec/42/62ec4270-b631-2c1c-24d6-47a62c376f7f/mzaf_6864422965918305749.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/62/ec/42/62ec4270-b631-2c1c-24d6-47a62c376f7f/mzaf_6864422965918305749.plus.aac.p.m4a"
   },
   {
     "id": 62,
@@ -7216,7 +7338,9 @@ const SONGS = [
       8
     ],
     "reason": "ความรู้สึกที่ยอมแพ้ใจให้เธอหมดทุกอย่าง เข้ากับความรักวุ่นๆ ใน Toradora!",
-    "typoIdea": "ตัวหนังสือหมุนวนสไตล์คลื่นน้ำ พร้อมเอฟเฟกต์เบ็ดตกปลาเกี่ยวคำสำคัญ"
+    "typoIdea": "ตัวหนังสือหมุนวนสไตล์คลื่นน้ำ พร้อมเอฟเฟกต์เบ็ดตกปลาเกี่ยวคำสำคัญ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/40/1b/71/401b7185-ee3e-f425-bbe0-ec3f29d74b89/mzaf_13608855253971080269.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/40/1b/71/401b7185-ee3e-f425-bbe0-ec3f29d74b89/mzaf_13608855253971080269.plus.aac.p.m4a"
   },
   {
     "id": 63,
@@ -7238,7 +7362,9 @@ const SONGS = [
       10
     ],
     "reason": "การพยายามดีดนิ้วเพื่อลืมความเจ็บปวด เข้ากับการเอาชนะปมในใจของ A Silent Voice",
-    "typoIdea": "ตัวหนังสือระเบิดเป็นละอองดาวทุกครั้งที่ได้ยินเสียงดีดนิ้ว 'Snap'"
+    "typoIdea": "ตัวหนังสือระเบิดเป็นละอองดาวทุกครั้งที่ได้ยินเสียงดีดนิ้ว 'Snap'",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/fa/50/94fa5077-8434-5da0-f27f-9b8cf2504321/mzaf_6990351409112839530.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/fa/50/94fa5077-8434-5da0-f27f-9b8cf2504321/mzaf_6990351409112839530.plus.aac.p.m4a"
   },
   {
     "id": 64,
@@ -7260,7 +7386,9 @@ const SONGS = [
       7
     ],
     "reason": "เพลงนี้มีจังหวะและอารมณ์ที่เข้ากับมู้ดของอนิเมะเรื่องนี้ เหมาะมากสำหรับการทำคลิปไทโป",
-    "typoIdea": "ใช้ฟอนต์ที่เข้ากับจังหวะดนตรี วางตัวหนังสือตามจังหวะบีทและเน้นท่อนฮุค"
+    "typoIdea": "ใช้ฟอนต์ที่เข้ากับจังหวะดนตรี วางตัวหนังสือตามจังหวะบีทและเน้นท่อนฮุค",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/10/16/67101606-3869-ca44-6c03-e13d6322cb51/mzaf_1135399237022217274.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/10/16/67101606-3869-ca44-6c03-e13d6322cb51/mzaf_1135399237022217274.plus.aac.p.m4a"
   },
   {
     "id": 65,
@@ -7282,7 +7410,9 @@ const SONGS = [
       1
     ],
     "reason": "เพลงนี้มีจังหวะและอารมณ์ที่เข้ากับมู้ดของอนิเมะเรื่องนี้ เหมาะมากสำหรับการทำคลิปไทโป",
-    "typoIdea": "ใช้ฟอนต์ที่เข้ากับจังหวะดนตรี วางตัวหนังสือตามจังหวะบีทและเน้นท่อนฮุค"
+    "typoIdea": "ใช้ฟอนต์ที่เข้ากับจังหวะดนตรี วางตัวหนังสือตามจังหวะบีทและเน้นท่อนฮุค",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/fc/4f/6cfc4f89-f9b9-590f-744f-49173af0d9de/mzaf_13370105221544142821.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/fc/4f/6cfc4f89-f9b9-590f-744f-49173af0d9de/mzaf_13370105221544142821.plus.aac.p.m4a"
   },
   {
     "id": 66,
@@ -7304,7 +7434,9 @@ const SONGS = [
       15
     ],
     "reason": "รักแรกที่ฝังลึกในใจและไม่อาจลืมเลือน เข้ากับความห่างไกลใน 5 Centimeters per Second",
-    "typoIdea": "ตัวหนังสือสไตล์ฟิล์มภาพยนตร์ ค่อยๆ เลือนรางสลับกับภาพซากุระร่วง"
+    "typoIdea": "ตัวหนังสือสไตล์ฟิล์มภาพยนตร์ ค่อยๆ เลือนรางสลับกับภาพซากุระร่วง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dd/68/d2/dd68d249-fd10-8e2a-0c2e-486774533a60/mzaf_15793260015738384691.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dd/68/d2/dd68d249-fd10-8e2a-0c2e-486774533a60/mzaf_15793260015738384691.plus.aac.p.m4a"
   },
   {
     "id": 67,
@@ -7326,7 +7458,9 @@ const SONGS = [
       2
     ],
     "reason": "การคิดถึงเธอทุกลมหายใจตั้งแต่วันจันทร์ถึงอาทิตย์ เข้ากับความคลั่งรักใน Kaguya-sama",
-    "typoIdea": "จัดเรียงชื่อวัน จันทร์-อาทิตย์ เด้งขึ้นทีละคำตามจังหวะเคาะบีท"
+    "typoIdea": "จัดเรียงชื่อวัน จันทร์-อาทิตย์ เด้งขึ้นทีละคำตามจังหวะเคาะบีท",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/13/73/51/13735125-14f2-46a2-ad33-dcf0a2f107fc/mzaf_4006001298880379360.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/13/73/51/13735125-14f2-46a2-ad33-dcf0a2f107fc/mzaf_4006001298880379360.plus.aac.p.m4a"
   },
   {
     "id": 68,
@@ -7348,7 +7482,9 @@ const SONGS = [
       27
     ],
     "reason": "ความน่ารักกวนๆ สดใสชวนยิ้ม เข้ากับความน่ารักของน้องอาเนียใน Spy x Family",
-    "typoIdea": "ตัวหนังสือมีรูปฟันฉลามงับคำว่า 'งับคุณ' พร้อมแอนิเมชันเด้งดึ๋งสีพาสเทล"
+    "typoIdea": "ตัวหนังสือมีรูปฟันฉลามงับคำว่า 'งับคุณ' พร้อมแอนิเมชันเด้งดึ๋งสีพาสเทล",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3a/83/83/3a83836b-e462-1997-cf82-05ca00ba5525/mzaf_8049178132188694572.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3a/83/83/3a83836b-e462-1997-cf82-05ca00ba5525/mzaf_8049178132188694572.plus.aac.p.m4a"
   },
   {
     "id": 69,
@@ -7370,7 +7506,9 @@ const SONGS = [
       1
     ],
     "reason": "ความรู้สึกเจ็บปวดที่มองคนที่เรารักไปรักคนอื่น เข้ากับปมความรักสามเส้าใน Your Lie in April",
-    "typoIdea": "ตัวหนังสือสไตล์มินิมอลเขียนคำว่า 'Heather' ตัวหนาบนพื้นหลังโทนฟ้าหม่น"
+    "typoIdea": "ตัวหนังสือสไตล์มินิมอลเขียนคำว่า 'Heather' ตัวหนาบนพื้นหลังโทนฟ้าหม่น",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/df/b0/08/dfb008d8-bd86-4091-21d5-8216881e3414/mzaf_5288004330582456914.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/df/b0/08/dfb008d8-bd86-4091-21d5-8216881e3414/mzaf_5288004330582456914.plus.aac.p.m4a"
   },
   {
     "id": 70,
@@ -7392,7 +7530,9 @@ const SONGS = [
       20
     ],
     "reason": "การชอบตัวเองมากขึ้นเวลาได้อยู่เคียงข้างเธอ เข้ากับความเปลี่ยนแปลงของซาวาโกะใน Kimi ni Todoke",
-    "typoIdea": "ฟอนต์ตัวเขียนสไตล์โมเดิร์น ขยับสไลด์เข้าออกซิงค์กับบีทซินธ์น่ารัก"
+    "typoIdea": "ฟอนต์ตัวเขียนสไตล์โมเดิร์น ขยับสไลด์เข้าออกซิงค์กับบีทซินธ์น่ารัก",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/12/49/cc/1249cc81-a570-f4fe-ad01-c9d9fddf5601/mzaf_10704657862018478118.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/12/49/cc/1249cc81-a570-f4fe-ad01-c9d9fddf5601/mzaf_10704657862018478118.plus.aac.p.m4a"
   },
   {
     "id": 71,
@@ -7414,7 +7554,9 @@ const SONGS = [
       25
     ],
     "reason": "ความทรงจำที่วนเวียนในหัวช่วงค่ำคืน เข้ากับบรรยากาศแสงสีนีออนและน้ำตาใน Cyberpunk: Edgerunners",
-    "typoIdea": "ตัวหนังสือมีความสั่นไหวแบบคลื่นความร้อน (Heat Wave Distortion) สีเขียว-ม่วงนีออน"
+    "typoIdea": "ตัวหนังสือมีความสั่นไหวแบบคลื่นความร้อน (Heat Wave Distortion) สีเขียว-ม่วงนีออน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/4c/b9/a34cb911-40fc-5f0c-e862-14bd171a77aa/mzaf_384792072030970151.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/4c/b9/a34cb911-40fc-5f0c-e862-14bd171a77aa/mzaf_384792072030970151.plus.aac.p.m4a"
   },
   {
     "id": 72,
@@ -7436,7 +7578,9 @@ const SONGS = [
       18
     ],
     "reason": "หากไม่อาจได้ตัวเธอคืนมา ขอเพียงเงาความทรงจำก็ยังดี สื่อถึงเมมมะใน Anohana ได้ตรงหัวใจ",
-    "typoIdea": "ตัวหนังสือสีขาวโปร่งแสง ค่อยๆ ละลายเป็นละอองดาวเมื่อถึงท่อน 'Ghost of you'"
+    "typoIdea": "ตัวหนังสือสีขาวโปร่งแสง ค่อยๆ ละลายเป็นละอองดาวเมื่อถึงท่อน 'Ghost of you'",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/35/03/85/350385d9-e71f-4e23-49eb-9bbf812c6ffc/mzaf_18141129225761277085.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/35/03/85/350385d9-e71f-4e23-49eb-9bbf812c6ffc/mzaf_18141129225761277085.plus.aac.p.m4a"
   },
   {
     "id": 73,
@@ -7458,7 +7602,9 @@ const SONGS = [
       8
     ],
     "reason": "ความเขินจนพูดจาไม่รู้เรื่อง เข้ากับความน่ารักซึนเดเระของไทกะใน Toradora!",
-    "typoIdea": "ตัวหนังสือขยับหมุนวนและสลับขนาดตามท่อนร้องเร็วๆ พร้อมอิโมจิหัวใจป็อปอัป"
+    "typoIdea": "ตัวหนังสือขยับหมุนวนและสลับขนาดตามท่อนร้องเร็วๆ พร้อมอิโมจิหัวใจป็อปอัป",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/54/8a/71548ac3-92b8-3932-c41d-30d379482d1b/mzaf_8628578731558578514.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/54/8a/71548ac3-92b8-3932-c41d-30d379482d1b/mzaf_8628578731558578514.plus.aac.p.m4a"
   },
   {
     "id": 74,
@@ -7480,7 +7626,9 @@ const SONGS = [
       25
     ],
     "reason": "Cyberpunk ดำดิ่งในความรักยอมตายเพื่อเธอ",
-    "typoIdea": "ตัวหนังสือสไตล์หมึกพู่กันญี่ปุ่น สลับแสงสลัวโทนแดง-ดำตามจังหวะดนตรีทรงพลัง"
+    "typoIdea": "ตัวหนังสือสไตล์หมึกพู่กันญี่ปุ่น สลับแสงสลัวโทนแดง-ดำตามจังหวะดนตรีทรงพลัง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/27/a4/b127a427-710b-e65f-e734-ead910b94cbc/mzaf_692825803667967327.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/27/a4/b127a427-710b-e65f-e734-ead910b94cbc/mzaf_692825803667967327.plus.aac.p.m4a"
   },
   {
     "id": 75,
@@ -7502,7 +7650,9 @@ const SONGS = [
       19
     ],
     "reason": "จังหวะชวนโยกและดนตรีโมเดิร์นซิตี้ป็อป เข้ากับลีลากีตาร์และเสน่ห์ของ Bocchi the Rock!",
-    "typoIdea": "ฟอนต์นีออนสีชมพู-ม่วง ขยับสวิงซ้ายขวาตามจังหวะกรูฟเพลง"
+    "typoIdea": "ฟอนต์นีออนสีชมพู-ม่วง ขยับสวิงซ้ายขวาตามจังหวะกรูฟเพลง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/d4/05/b3d40599-79fe-8ae8-030b-c534dcbc2564/mzaf_13850105976352284754.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/d4/05/b3d40599-79fe-8ae8-030b-c534dcbc2564/mzaf_13850105976352284754.plus.aac.p.m4a"
   },
   {
     "id": 76,
@@ -7524,7 +7674,9 @@ const SONGS = [
       21
     ],
     "reason": "Oshi no Ko ไอดอลผู้สมบูรณ์แบบ",
-    "typoIdea": "ตัวหนังสือระเบิดแสงประกายดาวตาวิ้งค์ (Star Eyes Effect) สลับบีทแร็พเร็วสะใจ"
+    "typoIdea": "ตัวหนังสือระเบิดแสงประกายดาวตาวิ้งค์ (Star Eyes Effect) สลับบีทแร็พเร็วสะใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/db/16/f0db16be-457e-f10f-98b6-f30b11de34e4/mzaf_5189430943078523093.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/db/16/f0db16be-457e-f10f-98b6-f30b11de34e4/mzaf_5189430943078523093.plus.aac.p.m4a"
   },
   {
     "id": 77,
@@ -7546,7 +7698,9 @@ const SONGS = [
       26
     ],
     "reason": "Suzume ผนึกประตูแห่งภัยพิบัติ",
-    "typoIdea": "ตัวหนังสือเขียนแนวตั้งแบบญี่ปุ่นโบราณ ค่อยๆ เรืองแสงสีทองเหมือนบานประตูมิติ"
+    "typoIdea": "ตัวหนังสือเขียนแนวตั้งแบบญี่ปุ่นโบราณ ค่อยๆ เรืองแสงสีทองเหมือนบานประตูมิติ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1b/91/c6/1b91c682-1f1d-f678-6fb6-e16bffc22beb/mzaf_8572139935794413888.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1b/91/c6/1b91c682-1f1d-f678-6fb6-e16bffc22beb/mzaf_8572139935794413888.plus.aac.p.m4a"
   },
   {
     "id": 78,
@@ -7568,7 +7722,9 @@ const SONGS = [
       9
     ],
     "reason": "Your Name ซีนดาวตกเคียงคู่",
-    "typoIdea": "ตัวหนังสือตัวเรียวยาวเรืองแสงสีรุ้งระยิบระยับ ทะยานผ่านหน้าจอพร้อมอุกกาบาต"
+    "typoIdea": "ตัวหนังสือตัวเรียวยาวเรืองแสงสีรุ้งระยิบระยับ ทะยานผ่านหน้าจอพร้อมอุกกาบาต",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d8/fa/07/d8fa073d-c1ca-6928-b5ee-94a437af581f/mzaf_1898817050310855929.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d8/fa/07/d8fa073d-c1ca-6928-b5ee-94a437af581f/mzaf_1898817050310855929.plus.aac.p.m4a"
   },
   {
     "id": 79,
@@ -7590,7 +7746,9 @@ const SONGS = [
       23
     ],
     "reason": "Chainsaw Man มนุษย์เลื่อยยนต์บ้าคลั่ง",
-    "typoIdea": "ตัวหนังสือขอบหนาฉีกขาดกระแทกหน้าจอตามจังหวะเสียงเลื่อยยนต์ติดเครื่อง"
+    "typoIdea": "ตัวหนังสือขอบหนาฉีกขาดกระแทกหน้าจอตามจังหวะเสียงเลื่อยยนต์ติดเครื่อง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/2d/45/862d4572-805c-3a72-49a4-905a8c327888/mzaf_14805576631717868964.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/2d/45/862d4572-805c-3a72-49a4-905a8c327888/mzaf_14805576631717868964.plus.aac.p.m4a"
   },
   {
     "id": 80,
@@ -7612,7 +7770,9 @@ const SONGS = [
       5
     ],
     "reason": "Jujutsu Kaisen ชิบูย่าโกลาหล",
-    "typoIdea": "ฟอนต์สไตล์ดิบเถื่อนโทนขาว-ดำ-แดง กระพริบตามจังหวะแร็พแบบ Strobe Effect"
+    "typoIdea": "ฟอนต์สไตล์ดิบเถื่อนโทนขาว-ดำ-แดง กระพริบตามจังหวะแร็พแบบ Strobe Effect",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/5d/57/045d57fb-d1c4-2979-31ef-485662a97783/mzaf_7661994685536659402.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/5d/57/045d57fb-d1c4-2979-31ef-485662a97783/mzaf_7661994685536659402.plus.aac.p.m4a"
   },
   {
     "id": 81,
@@ -7634,7 +7794,9 @@ const SONGS = [
       3
     ],
     "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
-    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/46/6f/86/466f86e4-f739-1387-9767-44f1d86caa6e/mzaf_4703131653683967502.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/46/6f/86/466f86e4-f739-1387-9767-44f1d86caa6e/mzaf_4703131653683967502.plus.aac.p.m4a"
   },
   {
     "id": 82,
@@ -7656,7 +7818,9 @@ const SONGS = [
       20
     ],
     "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
-    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/02/02/ab020212-9417-6a77-a87b-84de784492a7/mzaf_8820936705586657082.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/02/02/ab020212-9417-6a77-a87b-84de784492a7/mzaf_8820936705586657082.plus.aac.p.m4a"
   },
   {
     "id": 83,
@@ -7678,7 +7842,9 @@ const SONGS = [
       27
     ],
     "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
-    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/55/13/ba551389-7a83-74bb-9e43-71c92cab7b26/mzaf_7320240883992052257.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/55/13/ba551389-7a83-74bb-9e43-71c92cab7b26/mzaf_7320240883992052257.plus.aac.p.m4a"
   },
   {
     "id": 84,
@@ -7700,7 +7866,9 @@ const SONGS = [
       2
     ],
     "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
-    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/c3/28/acc32878-a7bd-58a1-7d09-06fc124e8b50/mzaf_15257925916120333587.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/c3/28/acc32878-a7bd-58a1-7d09-06fc124e8b50/mzaf_15257925916120333587.plus.aac.p.m4a"
   },
   {
     "id": 85,
@@ -7722,7 +7890,9 @@ const SONGS = [
       8
     ],
     "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
-    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/b3/34/2fb3340c-64f2-441d-ebf7-e69e27efc7e3/mzaf_8332993460271125080.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/b3/34/2fb3340c-64f2-441d-ebf7-e69e27efc7e3/mzaf_8332993460271125080.plus.aac.p.m4a"
   },
   {
     "id": 86,
@@ -7744,7 +7914,9 @@ const SONGS = [
       14
     ],
     "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
-    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8b/13/cb/8b13cb5f-6c44-c309-aae6-6e3488105008/mzaf_13672026115046699824.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8b/13/cb/8b13cb5f-6c44-c309-aae6-6e3488105008/mzaf_13672026115046699824.plus.aac.p.m4a"
   },
   {
     "id": 87,
@@ -7766,7 +7938,9 @@ const SONGS = [
       22
     ],
     "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
-    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/88/4d/d4884d9d-0aa3-721c-0551-595999e96455/mzaf_9472551012657096850.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/88/4d/d4884d9d-0aa3-721c-0551-595999e96455/mzaf_9472551012657096850.plus.aac.p.m4a"
   },
   {
     "id": 88,
@@ -7788,7 +7962,9 @@ const SONGS = [
       1
     ],
     "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
-    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/63/07/ac630782-afe1-c472-8c22-aa07eafe42df/mzaf_8898300112891044083.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/63/07/ac630782-afe1-c472-8c22-aa07eafe42df/mzaf_8898300112891044083.plus.aac.p.m4a"
   },
   {
     "id": 89,
@@ -7810,7 +7986,9 @@ const SONGS = [
       3
     ],
     "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
-    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c7/03/b8/c703b819-2a38-d124-89e6-3ea4d86e3e96/mzaf_11766523748585566107.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c7/03/b8/c703b819-2a38-d124-89e6-3ea4d86e3e96/mzaf_11766523748585566107.plus.aac.p.m4a"
   },
   {
     "id": 90,
@@ -7832,7 +8010,9 @@ const SONGS = [
       2
     ],
     "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
-    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/e9/7b/dae97b5f-cb85-8910-caee-26ce9b5fafdf/mzaf_630246643534627193.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/e9/7b/dae97b5f-cb85-8910-caee-26ce9b5fafdf/mzaf_630246643534627193.plus.aac.p.m4a"
   },
   {
     "id": 91,
@@ -7854,7 +8034,9 @@ const SONGS = [
       10
     ],
     "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
-    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6a/92/f4/6a92f429-6518-e7f0-44e4-b7b52cc8d6c2/mzaf_11734889890409221379.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6a/92/f4/6a92f429-6518-e7f0-44e4-b7b52cc8d6c2/mzaf_11734889890409221379.plus.aac.p.m4a"
   },
   {
     "id": 92,
@@ -7876,7 +8058,9 @@ const SONGS = [
       15
     ],
     "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
-    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a6/63/73/a66373b2-ba05-ec2a-0dcb-f2ce5ad32179/mzaf_1841564492072968913.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a6/63/73/a66373b2-ba05-ec2a-0dcb-f2ce5ad32179/mzaf_1841564492072968913.plus.aac.p.m4a"
   },
   {
     "id": 93,
@@ -7898,7 +8082,9 @@ const SONGS = [
       16
     ],
     "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
-    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e0/93/63/e093632d-d40c-f8e7-168a-479b1b378c52/mzaf_17193656136888010802.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e0/93/63/e093632d-d40c-f8e7-168a-479b1b378c52/mzaf_17193656136888010802.plus.aac.p.m4a"
   },
   {
     "id": 94,
@@ -7920,7 +8106,9 @@ const SONGS = [
       20
     ],
     "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
-    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8a/a3/bc/8aa3bca0-858e-44af-3463-4e9711815007/mzaf_12552687340167890494.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8a/a3/bc/8aa3bca0-858e-44af-3463-4e9711815007/mzaf_12552687340167890494.plus.aac.p.m4a"
   },
   {
     "id": 95,
@@ -7942,7 +8130,9 @@ const SONGS = [
       22
     ],
     "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
-    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/f7/2a/c8/f72ac8bd-0c8f-2eb5-5afa-530d5154b7cd/mzaf_2375630059108178408.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/f7/2a/c8/f72ac8bd-0c8f-2eb5-5afa-530d5154b7cd/mzaf_2375630059108178408.plus.aac.p.m4a"
   },
   {
     "id": 96,
@@ -7964,7 +8154,9 @@ const SONGS = [
       2
     ],
     "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
-    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0a/c4/e6/0ac4e68b-d4e6-cf86-b6f1-c6f9790f4f6b/mzaf_16103964413119376973.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0a/c4/e6/0ac4e68b-d4e6-cf86-b6f1-c6f9790f4f6b/mzaf_16103964413119376973.plus.aac.p.m4a"
   },
   {
     "id": 97,
@@ -7986,7 +8178,9 @@ const SONGS = [
       6
     ],
     "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
-    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2e/46/5c/2e465cf8-23b6-4fae-3b38-60d75b93a7ac/mzaf_5125915226626374346.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2e/46/5c/2e465cf8-23b6-4fae-3b38-60d75b93a7ac/mzaf_5125915226626374346.plus.aac.p.m4a"
   },
   {
     "id": 98,
@@ -8008,7 +8202,9 @@ const SONGS = [
       9
     ],
     "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
-    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/29/21/68/292168d3-0e9b-cc42-4cbd-8770cd67c29e/mzaf_12166436641514699840.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/29/21/68/292168d3-0e9b-cc42-4cbd-8770cd67c29e/mzaf_12166436641514699840.plus.aac.p.m4a"
   },
   {
     "id": 99,
@@ -8030,7 +8226,9 @@ const SONGS = [
       17
     ],
     "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
-    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7c/e4/35/7ce435b4-56e1-7f32-7173-fbd2f81928ac/mzaf_1589506648924429724.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7c/e4/35/7ce435b4-56e1-7f32-7173-fbd2f81928ac/mzaf_1589506648924429724.plus.aac.p.m4a"
   },
   {
     "id": 100,
@@ -8052,7 +8250,9 @@ const SONGS = [
       15
     ],
     "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
-    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/40/ea/5e/40ea5eb5-d6f3-fd6b-73e0-e6e86b6ed1f1/mzaf_14119099734476362879.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/40/ea/5e/40ea5eb5-d6f3-fd6b-73e0-e6e86b6ed1f1/mzaf_14119099734476362879.plus.aac.p.m4a"
   },
   {
     "id": 101,
@@ -8074,7 +8274,9 @@ const SONGS = [
       27
     ],
     "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
-    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/da/a7/1fdaa7c3-9af3-bd5f-9048-406a31e21c1d/mzaf_14744732617925969794.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/da/a7/1fdaa7c3-9af3-bd5f-9048-406a31e21c1d/mzaf_14744732617925969794.plus.aac.p.m4a"
   },
   {
     "id": 102,
@@ -8096,7 +8298,9 @@ const SONGS = [
       18
     ],
     "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
-    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/7b/3a/347b3a84-2534-9bdf-c329-96d573242277/mzaf_13581029785097585222.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/7b/3a/347b3a84-2534-9bdf-c329-96d573242277/mzaf_13581029785097585222.plus.aac.p.m4a"
   },
   {
     "id": 103,
@@ -8118,7 +8322,9 @@ const SONGS = [
       8
     ],
     "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
-    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/29/eb/09/29eb0912-35dd-cf43-6e5b-28d446040adf/mzaf_2346313121230373536.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/29/eb/09/29eb0912-35dd-cf43-6e5b-28d446040adf/mzaf_2346313121230373536.plus.aac.p.m4a"
   },
   {
     "id": 104,
@@ -8140,7 +8346,9 @@ const SONGS = [
       14
     ],
     "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
-    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8d/c2/4d/8dc24df1-477d-6ec1-e0e4-6e5a67a00c54/mzaf_14319771143472837228.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8d/c2/4d/8dc24df1-477d-6ec1-e0e4-6e5a67a00c54/mzaf_14319771143472837228.plus.aac.p.m4a"
   },
   {
     "id": 105,
@@ -8162,7 +8370,9 @@ const SONGS = [
       19
     ],
     "reason": "บรรยากาศเพลงนุ่มนวลชวนฝัน เข้ากับฉากชีวิตธรรมดาและความงามของวันๆ หนึ่งในอนิเมะ",
-    "typoIdea": "ฟอนต์สะอาดเรียบ ขยับเบาๆ พร้อมพื้นหลังเบลอนุ่ม สไตล์ Lo-Fi Aesthetic"
+    "typoIdea": "ฟอนต์สะอาดเรียบ ขยับเบาๆ พร้อมพื้นหลังเบลอนุ่ม สไตล์ Lo-Fi Aesthetic",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9b/a1/37/9ba137ed-330d-09e6-7449-e0557dfbe85d/mzaf_14863385354373294620.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9b/a1/37/9ba137ed-330d-09e6-7449-e0557dfbe85d/mzaf_14863385354373294620.plus.aac.p.m4a"
   },
   {
     "id": 106,
@@ -8184,7 +8394,9 @@ const SONGS = [
       20
     ],
     "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
-    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1f/74/f9/1f74f9d0-b2a1-bd45-fba2-da633fcfc2b5/mzaf_10858955049314603202.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1f/74/f9/1f74f9d0-b2a1-bd45-fba2-da633fcfc2b5/mzaf_10858955049314603202.plus.aac.p.m4a"
   },
   {
     "id": 107,
@@ -8206,7 +8418,9 @@ const SONGS = [
       10
     ],
     "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
-    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/48/20/8d/48208dcc-58c1-565b-1020-1ec3be3bf985/mzaf_12253333339341324916.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/48/20/8d/48208dcc-58c1-565b-1020-1ec3be3bf985/mzaf_12253333339341324916.plus.aac.p.m4a"
   },
   {
     "id": 108,
@@ -8228,7 +8442,9 @@ const SONGS = [
       15
     ],
     "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
-    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/97/e1/23/97e123bf-1358-d66a-8638-2dd8206906a9/mzaf_2878869473299301002.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/97/e1/23/97e123bf-1358-d66a-8638-2dd8206906a9/mzaf_2878869473299301002.plus.aac.p.m4a"
   },
   {
     "id": 109,
@@ -8250,7 +8466,9 @@ const SONGS = [
       28
     ],
     "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
-    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/52/94/f9/5294f90f-fe1f-b5c2-ae83-47fcf74ee933/mzaf_6241981034637010530.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/52/94/f9/5294f90f-fe1f-b5c2-ae83-47fcf74ee933/mzaf_6241981034637010530.plus.aac.p.m4a"
   },
   {
     "id": 110,
@@ -8272,7 +8490,9 @@ const SONGS = [
       29
     ],
     "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
-    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/48/14/5f/48145fa9-a5b6-32a0-45e8-05af48e52b9c/mzaf_6315924685303002328.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/48/14/5f/48145fa9-a5b6-32a0-45e8-05af48e52b9c/mzaf_6315924685303002328.plus.aac.p.m4a"
   },
   {
     "id": 111,
@@ -8294,7 +8514,9 @@ const SONGS = [
       22
     ],
     "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
-    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1d/56/2a/1d562a07-dc5f-a9c0-1f36-2051a8c14eb7/mzaf_7214829135431340590.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1d/56/2a/1d562a07-dc5f-a9c0-1f36-2051a8c14eb7/mzaf_7214829135431340590.plus.aac.p.m4a"
   },
   {
     "id": 112,
@@ -8316,7 +8538,9 @@ const SONGS = [
       43
     ],
     "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
-    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c8/ac/68/c8ac6803-8916-b71a-955d-da3026d74058/mzaf_4702470268666228750.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c8/ac/68/c8ac6803-8916-b71a-955d-da3026d74058/mzaf_4702470268666228750.plus.aac.p.m4a"
   },
   {
     "id": 113,
@@ -8338,7 +8562,9 @@ const SONGS = [
       6
     ],
     "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
-    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/eb/47/1f/eb471f8e-1cb7-7b2b-7933-778499bebbc9/mzaf_9607257104137505664.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/eb/47/1f/eb471f8e-1cb7-7b2b-7933-778499bebbc9/mzaf_9607257104137505664.plus.aac.p.m4a"
   },
   {
     "id": 114,
@@ -8360,7 +8586,9 @@ const SONGS = [
       2
     ],
     "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
-    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/af/75/85/af7585a3-5361-70e3-692b-436b7d3b08e3/mzaf_2104452874915302284.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/af/75/85/af7585a3-5361-70e3-692b-436b7d3b08e3/mzaf_2104452874915302284.plus.aac.p.m4a"
   },
   {
     "id": 115,
@@ -8382,7 +8610,9 @@ const SONGS = [
       10
     ],
     "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
-    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/2f/a6/702fa6b5-946c-7a8e-2dba-03de25c732d3/mzaf_12764345117177639836.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/2f/a6/702fa6b5-946c-7a8e-2dba-03de25c732d3/mzaf_12764345117177639836.plus.aac.p.m4a"
   },
   {
     "id": 116,
@@ -8404,7 +8634,9 @@ const SONGS = [
       24
     ],
     "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
-    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/44/af/81/44af8168-9609-1b85-5048-ada08dceacf3/mzaf_1341699644335558812.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/44/af/81/44af8168-9609-1b85-5048-ada08dceacf3/mzaf_1341699644335558812.plus.aac.p.m4a"
   },
   {
     "id": 117,
@@ -8426,7 +8658,9 @@ const SONGS = [
       17
     ],
     "reason": "จังหวะและเนื้อเพลงสื่อถึงความรักที่อบอุ่นและความผูกพัน เข้ากับฉากโรแมนติกและช่วงเวลาดีๆ ในอนิเมะ",
-    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี"
+    "typoIdea": "ใช้ฟอนต์ลายมือ (Handwritten) สีโทนชมพูนวล ขยับลอยเบาๆ ตามจังหวะดนตรี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8b/4c/b3/8b4cb3a5-b1d1-c82c-e6ab-48cc3969d4ff/mzaf_858711921713575608.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8b/4c/b3/8b4cb3a5-b1d1-c82c-e6ab-48cc3969d4ff/mzaf_858711921713575608.plus.aac.p.m4a"
   },
   {
     "id": 118,
@@ -8448,7 +8682,9 @@ const SONGS = [
       29
     ],
     "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
-    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f7/18/af/f718afd0-1a4f-410d-bafa-809d548edb34/mzaf_10394250021096638941.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f7/18/af/f718afd0-1a4f-410d-bafa-809d548edb34/mzaf_10394250021096638941.plus.aac.p.m4a"
   },
   {
     "id": 119,
@@ -8470,7 +8706,9 @@ const SONGS = [
       30
     ],
     "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
-    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/19/60/b0196060-7786-24c0-8c56-8f628fe89f52/mzaf_12479456646715449366.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/19/60/b0196060-7786-24c0-8c56-8f628fe89f52/mzaf_12479456646715449366.plus.aac.p.m4a"
   },
   {
     "id": 120,
@@ -8492,7 +8730,9 @@ const SONGS = [
       1
     ],
     "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
-    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ae/a6/27/aea62715-e6ae-9562-ba81-1f969a2ee2fa/mzaf_9054259057357054559.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ae/a6/27/aea62715-e6ae-9562-ba81-1f969a2ee2fa/mzaf_9054259057357054559.plus.aac.p.m4a"
   },
   {
     "id": 121,
@@ -8514,7 +8754,9 @@ const SONGS = [
       3
     ],
     "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
-    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cc/7c/82/cc7c82b6-0f0c-a362-952f-6389dbc603ba/mzaf_15156534524546439842.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cc/7c/82/cc7c82b6-0f0c-a362-952f-6389dbc603ba/mzaf_15156534524546439842.plus.aac.p.m4a"
   },
   {
     "id": 122,
@@ -8536,7 +8778,9 @@ const SONGS = [
       11
     ],
     "reason": "พลังงานดนตรีเข้มข้นและจังหวะเดือดสุดขีด เหมาะกับฉากต่อสู้และไคลแม็กซ์สุดมันส์ในอนิเมะ",
-    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop"
+    "typoIdea": "ตัวหนังสือขนาดใหญ่กระแทกหน้าจอ Glitch Effect สีนีออน ตามจังหวะ Beat Drop",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/84/ab/e5/84abe549-c9d6-3de2-cdd0-90e9256a637e/mzaf_7958095177960014950.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/84/ab/e5/84abe549-c9d6-3de2-cdd0-90e9256a637e/mzaf_7958095177960014950.plus.aac.p.m4a"
   },
   {
     "id": 123,
@@ -8558,7 +8802,9 @@ const SONGS = [
       10
     ],
     "reason": "อารมณ์เพลงสื่อถึงความรู้สึกเจ็บปวดและการสูญเสีย เหมาะกับฉากน้ำตาและการจากลาในอนิเมะ",
-    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ"
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏพร้อมเอฟเฟกต์ Fade In สีขาวซีด บนพื้นมืด บีบหัวใจและซึ้งกินใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4c/08/30/4c08305e-0556-30a1-d1ba-2f916b56d62c/mzaf_10419822985277809788.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4c/08/30/4c08305e-0556-30a1-d1ba-2f916b56d62c/mzaf_10419822985277809788.plus.aac.p.m4a"
   },
   {
     "id": 124,
@@ -8580,7 +8826,9 @@ const SONGS = [
       22
     ],
     "reason": "บรรยากาศเพลงนุ่มนวลชวนฝัน เข้ากับฉากชีวิตธรรมดาและความงามของวันๆ หนึ่งในอนิเมะ",
-    "typoIdea": "ฟอนต์สะอาดเรียบ ขยับเบาๆ พร้อมพื้นหลังเบลอนุ่ม สไตล์ Lo-Fi Aesthetic"
+    "typoIdea": "ฟอนต์สะอาดเรียบ ขยับเบาๆ พร้อมพื้นหลังเบลอนุ่ม สไตล์ Lo-Fi Aesthetic",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/25/54/81/255481c0-1ef2-c1bc-f3b3-ea2b1419c1f1/mzaf_5289557126888202047.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/25/54/81/255481c0-1ef2-c1bc-f3b3-ea2b1419c1f1/mzaf_5289557126888202047.plus.aac.p.m4a"
   },
   {
     "id": 125,
@@ -8603,7 +8851,9 @@ const SONGS = [
       5
     ],
     "reason": "Jujutsu Kaisen มิตรภาพโกโจ & เกะโท",
-    "typoIdea": "ฟอนต์สีฟ้า-ขาวตามชื่อเพลง กระพริบตามจังหวะกีตาร์ร็อค"
+    "typoIdea": "ฟอนต์สีฟ้า-ขาวตามชื่อเพลง กระพริบตามจังหวะกีตาร์ร็อค",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/be/8d/8cbe8db3-d84c-8308-3253-a03202ce49a0/mzaf_5586218102364426317.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/be/8d/8cbe8db3-d84c-8308-3253-a03202ce49a0/mzaf_5586218102364426317.plus.aac.p.m4a"
   },
   {
     "id": 126,
@@ -8625,7 +8875,9 @@ const SONGS = [
       5
     ],
     "reason": "Jujutsu Kaisen OP1 ไสยเวทย์เดือด",
-    "typoIdea": "ตัวหนังสือสไตล์ดิบ ตัดขอบดำ แวบตามสปีดบีท"
+    "typoIdea": "ตัวหนังสือสไตล์ดิบ ตัดขอบดำ แวบตามสปีดบีท",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/b9/99/b1b999d6-2533-85f0-7eda-3b51122f5fdc/mzaf_5590574589561084646.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/b9/99/b1b999d6-2533-85f0-7eda-3b51122f5fdc/mzaf_5590574589561084646.plus.aac.p.m4a"
   },
   {
     "id": 127,
@@ -8647,7 +8899,9 @@ const SONGS = [
       25
     ],
     "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
-    "typoIdea": "ฟอนต์สีนีออนม่วง-ฟ้า เบลอขอบชวนฝันตามเสียงสังเคราะห์"
+    "typoIdea": "ฟอนต์สีนีออนม่วง-ฟ้า เบลอขอบชวนฝันตามเสียงสังเคราะห์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3e/cb/52/3ecb5294-5ea1-e392-7262-1b10cc67a299/mzaf_17548677748266742699.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3e/cb/52/3ecb5294-5ea1-e392-7262-1b10cc67a299/mzaf_17548677748266742699.plus.aac.p.m4a"
   },
   {
     "id": 128,
@@ -8669,7 +8923,9 @@ const SONGS = [
       11
     ],
     "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
-    "typoIdea": "ฟอนต์สีเงินเมทัลลิก สั่นกระแทกเบสตอนท่อนดรอป"
+    "typoIdea": "ฟอนต์สีเงินเมทัลลิก สั่นกระแทกเบสตอนท่อนดรอป",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9e/c6/c5/9ec6c5ce-022d-8bbd-0de1-534d8362fe11/mzaf_12030472432441091994.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9e/c6/c5/9ec6c5ce-022d-8bbd-0de1-534d8362fe11/mzaf_12030472432441091994.plus.aac.p.m4a"
   },
   {
     "id": 129,
@@ -8691,7 +8947,9 @@ const SONGS = [
       23
     ],
     "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
-    "typoIdea": "ตัวหนังสือสีแดงสด แฟลชตัดขาวดำตามจังหวะเต้น"
+    "typoIdea": "ตัวหนังสือสีแดงสด แฟลชตัดขาวดำตามจังหวะเต้น",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0c/43/75/0c437569-cb18-d647-b887-150e8ac8f76e/mzaf_4164071903328598127.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0c/43/75/0c437569-cb18-d647-b887-150e8ac8f76e/mzaf_4164071903328598127.plus.aac.p.m4a"
   },
   {
     "id": 130,
@@ -8713,7 +8971,9 @@ const SONGS = [
       34
     ],
     "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
-    "typoIdea": "ฟอนต์โกธิคสีดำขลิบแดง ซูมเข้าออกช้าๆ ให้ความรู้สึกลึกลับ"
+    "typoIdea": "ฟอนต์โกธิคสีดำขลิบแดง ซูมเข้าออกช้าๆ ให้ความรู้สึกลึกลับ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a9/d9/fd/a9d9fdbe-0718-8d5e-fd2a-91bf05bbcc4c/mzaf_6014557621905797616.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a9/d9/fd/a9d9fdbe-0718-8d5e-fd2a-91bf05bbcc4c/mzaf_6014557621905797616.plus.aac.p.m4a"
   },
   {
     "id": 131,
@@ -8735,7 +8995,9 @@ const SONGS = [
       30
     ],
     "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
-    "typoIdea": "ฟอนต์ตัวหนาขอบคม เบสกระแทกหน้าจอเขย่าตามท่อนฮุค"
+    "typoIdea": "ฟอนต์ตัวหนาขอบคม เบสกระแทกหน้าจอเขย่าตามท่อนฮุค",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0b/70/c8/0b70c898-ec23-3131-5d17-aa7417045013/mzaf_3059117378996578649.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0b/70/c8/0b70c898-ec23-3131-5d17-aa7417045013/mzaf_3059117378996578649.plus.aac.p.m4a"
   },
   {
     "id": 132,
@@ -8757,7 +9019,9 @@ const SONGS = [
       3
     ],
     "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
-    "typoIdea": "ฟอนต์เส้นบางสีขาวสว่าง ค่อยๆ ละลายหายไปตามเสียงร้องแผ่วเบา"
+    "typoIdea": "ฟอนต์เส้นบางสีขาวสว่าง ค่อยๆ ละลายหายไปตามเสียงร้องแผ่วเบา",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1e/d8/8d/1ed88d91-fb06-b3f2-5391-afd732cc2ff9/mzaf_18444937225262929488.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1e/d8/8d/1ed88d91-fb06-b3f2-5391-afd732cc2ff9/mzaf_18444937225262929488.plus.aac.p.m4a"
   },
   {
     "id": 133,
@@ -8779,7 +9043,9 @@ const SONGS = [
       16
     ],
     "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
-    "typoIdea": "ตัวหนังสือเขียนมือ ค่อยๆ ปรากฏทีละตัวอักษรอย่างช้าๆ"
+    "typoIdea": "ตัวหนังสือเขียนมือ ค่อยๆ ปรากฏทีละตัวอักษรอย่างช้าๆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/16/69/77/16697701-c8c4-6d9c-4491-7423e3fde6e8/mzaf_13139724549993369958.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/16/69/77/16697701-c8c4-6d9c-4491-7423e3fde6e8/mzaf_13139724549993369958.plus.aac.p.m4a"
   },
   {
     "id": 134,
@@ -8801,7 +9067,9 @@ const SONGS = [
       24
     ],
     "reason": "Demon Slayer OP1 ดาบพิฆาตอสูร",
-    "typoIdea": "ฟอนต์พู่กันญี่ปุ่นสีแดงเพลิง กระแทกตามจังหวะสับดาบ"
+    "typoIdea": "ฟอนต์พู่กันญี่ปุ่นสีแดงเพลิง กระแทกตามจังหวะสับดาบ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/9f/31/029f31d9-865f-8238-795d-0a69106cd7bd/mzaf_4087349157470098609.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/9f/31/029f31d9-865f-8238-795d-0a69106cd7bd/mzaf_4087349157470098609.plus.aac.p.m4a"
   },
   {
     "id": 135,
@@ -8823,7 +9091,9 @@ const SONGS = [
       24
     ],
     "reason": "Demon Slayer Mugen Train น้ำตาตกใน",
-    "typoIdea": "ฟอนต์อบอุ่นสีส้มเปลวไฟ ค่อยๆ เลือนหายเป็นละอองดาว"
+    "typoIdea": "ฟอนต์อบอุ่นสีส้มเปลวไฟ ค่อยๆ เลือนหายเป็นละอองดาว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0b/4a/47/0b4a47b3-159e-fdb0-c2a2-608a1c3a8bb1/mzaf_4434592051303284611.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0b/4a/47/0b4a47b3-159e-fdb0-c2a2-608a1c3a8bb1/mzaf_4434592051303284611.plus.aac.p.m4a"
   },
   {
     "id": 136,
@@ -8845,7 +9115,9 @@ const SONGS = [
       53
     ],
     "reason": "Mashle OP2 ท่าเต้นไวรัลทั่วโลก",
-    "typoIdea": "ตัวหนังสือเด้งดึ๋ง สลับตำแหน่งซ้ายขวาตามจังหวะบีทแดนซ์สุดกวน"
+    "typoIdea": "ตัวหนังสือเด้งดึ๋ง สลับตำแหน่งซ้ายขวาตามจังหวะบีทแดนซ์สุดกวน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/54/5e/5c545e9a-c8ca-c673-f85d-a74b14c2c882/mzaf_2313943576213161760.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/54/5e/5c545e9a-c8ca-c673-f85d-a74b14c2c882/mzaf_2313943576213161760.plus.aac.p.m4a"
   },
   {
     "id": 137,
@@ -8867,7 +9139,9 @@ const SONGS = [
       4
     ],
     "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
-    "typoIdea": "ตัวหนังสือพลิ้วไหวโทนสีทอง-ส้ม ลอยขึ้นตามท่วงทำนองเครื่องเป่า"
+    "typoIdea": "ตัวหนังสือพลิ้วไหวโทนสีทอง-ส้ม ลอยขึ้นตามท่วงทำนองเครื่องเป่า",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ea/94/89/ea94893f-8f02-943e-6b91-611a9b611a5b/mzaf_5437217620758333068.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ea/94/89/ea94893f-8f02-943e-6b91-611a9b611a5b/mzaf_5437217620758333068.plus.aac.p.m4a"
   },
   {
     "id": 138,
@@ -8889,7 +9163,9 @@ const SONGS = [
       9
     ],
     "reason": "Your Name น้ำตาแห่งความทรงจำ",
-    "typoIdea": "ฟอนต์มินิมอลสีขาว โปร่งแสงลอยผ่านทิวทัศน์ท้องฟ้ายามเย็น"
+    "typoIdea": "ฟอนต์มินิมอลสีขาว โปร่งแสงลอยผ่านทิวทัศน์ท้องฟ้ายามเย็น",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1b/d9/14/1bd91428-b6ee-cfbf-57e6-274b8f5dde02/mzaf_8596295425982043448.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1b/d9/14/1bd91428-b6ee-cfbf-57e6-274b8f5dde02/mzaf_8596295425982043448.plus.aac.p.m4a"
   },
   {
     "id": 139,
@@ -8911,7 +9187,9 @@ const SONGS = [
       29
     ],
     "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
-    "typoIdea": "ฟอนต์ป้ายไฟนีออนสไตล์ไทย สั่นกระพริบตามจังหวะตื๊ด 808"
+    "typoIdea": "ฟอนต์ป้ายไฟนีออนสไตล์ไทย สั่นกระพริบตามจังหวะตื๊ด 808",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/05/e7/a105e710-5fe5-4348-ec91-a14916a5ad93/mzaf_8141032513242893609.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/05/e7/a105e710-5fe5-4348-ec91-a14916a5ad93/mzaf_8141032513242893609.plus.aac.p.m4a"
   },
   {
     "id": 140,
@@ -8933,7 +9211,9 @@ const SONGS = [
       14
     ],
     "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
-    "typoIdea": "ฟอนต์น่ารักมุมมน เด้งป๊อปอัพเป็นกล่องข้อความแชท"
+    "typoIdea": "ฟอนต์น่ารักมุมมน เด้งป๊อปอัพเป็นกล่องข้อความแชท",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e0/c2/a3/e0c2a3bb-aef0-43bd-922d-cbc01fa0d3b2/mzaf_6637886844505349168.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e0/c2/a3/e0c2a3bb-aef0-43bd-922d-cbc01fa0d3b2/mzaf_6637886844505349168.plus.aac.p.m4a"
   },
   {
     "id": 141,
@@ -8955,7 +9235,9 @@ const SONGS = [
       15
     ],
     "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
-    "typoIdea": "ตัวหนังสือสลายเป็นละอองฝุ่น คล้ายการกดปุ่ม Delete ความทรงจำ"
+    "typoIdea": "ตัวหนังสือสลายเป็นละอองฝุ่น คล้ายการกดปุ่ม Delete ความทรงจำ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/a5/51/aba5515b-36c4-4ec4-f376-4f886bfb5a56/mzaf_2464286645921122949.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/a5/51/aba5515b-36c4-4ec4-f376-4f886bfb5a56/mzaf_2464286645921122949.plus.aac.p.m4a"
   },
   {
     "id": 142,
@@ -8977,7 +9259,9 @@ const SONGS = [
       2
     ],
     "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
-    "typoIdea": "ฟอนต์ลายมือหวานละมุน โทนพาสเทลชมพู-ขาว ละมุนสายตา"
+    "typoIdea": "ฟอนต์ลายมือหวานละมุน โทนพาสเทลชมพู-ขาว ละมุนสายตา",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/7e/2f/cd/7e2fcdd5-162f-8a2b-6276-1f7816e7e131/mzaf_17567992105568955058.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/7e/2f/cd/7e2fcdd5-162f-8a2b-6276-1f7816e7e131/mzaf_17567992105568955058.plus.aac.p.m4a"
   },
   {
     "id": 143,
@@ -8999,7 +9283,9 @@ const SONGS = [
       27
     ],
     "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
-    "typoIdea": "ฟอนต์สีน้ำตาลครีม ควันลอยกรุ่นคล้ายกลิ่นกาแฟหอมฟุ้ง"
+    "typoIdea": "ฟอนต์สีน้ำตาลครีม ควันลอยกรุ่นคล้ายกลิ่นกาแฟหอมฟุ้ง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/61/5c/fa/615cfac1-ae77-eba0-641a-638e4cf53908/mzaf_12830498071402364966.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/61/5c/fa/615cfac1-ae77-eba0-641a-638e4cf53908/mzaf_12830498071402364966.plus.aac.p.m4a"
   },
   {
     "id": 144,
@@ -9021,7 +9307,9 @@ const SONGS = [
       28
     ],
     "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
-    "typoIdea": "ฟอนต์กราฟิตี้ สลับสีเหลือง-ดำ กระแทกตามจังหวะโฟลว์แร็พ"
+    "typoIdea": "ฟอนต์กราฟิตี้ สลับสีเหลือง-ดำ กระแทกตามจังหวะโฟลว์แร็พ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4d/ed/db/4deddbe7-6fbc-278d-68a5-70af0469ae51/mzaf_14081093176846582709.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4d/ed/db/4deddbe7-6fbc-278d-68a5-70af0469ae51/mzaf_14081093176846582709.plus.aac.p.m4a"
   },
   {
     "id": 145,
@@ -9043,7 +9331,9 @@ const SONGS = [
       20
     ],
     "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
-    "typoIdea": "ตัวหนังสือกระโดดดุ๊กดิ๊ก มีอิโมจิดอกไม้และหัวใจประดับ"
+    "typoIdea": "ตัวหนังสือกระโดดดุ๊กดิ๊ก มีอิโมจิดอกไม้และหัวใจประดับ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/66/07/52/66075276-7468-d0bc-5a91-43cfeccafbe1/mzaf_1904391022478786864.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/66/07/52/66075276-7468-d0bc-5a91-43cfeccafbe1/mzaf_1904391022478786864.plus.aac.p.m4a"
   },
   {
     "id": 146,
@@ -9065,7 +9355,9 @@ const SONGS = [
       17
     ],
     "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
-    "typoIdea": "ตัวหนังสือเต้นตุบๆ ตามจังหวะหัวใจเต้น บีทกลองนุ่มหู"
+    "typoIdea": "ตัวหนังสือเต้นตุบๆ ตามจังหวะหัวใจเต้น บีทกลองนุ่มหู",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5d/9a/52/5d9a5214-1d19-b5f8-0956-260767121429/mzaf_12920634546527175307.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5d/9a/52/5d9a5214-1d19-b5f8-0956-260767121429/mzaf_12920634546527175307.plus.aac.p.m4a"
   },
   {
     "id": 147,
@@ -9087,7 +9379,9 @@ const SONGS = [
       1
     ],
     "reason": "เข้ากันได้ดีกับจังหวะและมู้ดของภาพอนิเมะ",
-    "typoIdea": "ตัวหนังสือคมกริบสีขาวบนพื้นหลังมืด ไฮไลต์คำว่า ยินดี ด้วยน้ำตา"
+    "typoIdea": "ตัวหนังสือคมกริบสีขาวบนพื้นหลังมืด ไฮไลต์คำว่า ยินดี ด้วยน้ำตา",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6d/c9/00/6dc90011-a863-bdeb-be57-b9f297c4b82b/mzaf_12511109928019079134.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6d/c9/00/6dc90011-a863-bdeb-be57-b9f297c4b82b/mzaf_12511109928019079134.plus.aac.p.m4a"
   },
   {
     "id": 148,
@@ -9109,7 +9403,9 @@ const SONGS = [
       8
     ],
     "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
-    "typoIdea": "ตัวหนังสือกระโดดดุ๊กดิ๊ก มีเส้นสายรอยยิ้มโค้งประดับคำว่า รอยยิ้ม"
+    "typoIdea": "ตัวหนังสือกระโดดดุ๊กดิ๊ก มีเส้นสายรอยยิ้มโค้งประดับคำว่า รอยยิ้ม",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/90/87/86/90878668-186c-2671-b0ab-7e47b9717f5c/mzaf_1288087794164117295.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/90/87/86/90878668-186c-2671-b0ab-7e47b9717f5c/mzaf_1288087794164117295.plus.aac.p.m4a"
   },
   {
     "id": 149,
@@ -9131,7 +9427,9 @@ const SONGS = [
       20
     ],
     "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
-    "typoIdea": "ฟอนต์มินิมอลสีเขียวมิ้นต์ ลอยสอดประสานกัน 2 บรรทัด"
+    "typoIdea": "ฟอนต์มินิมอลสีเขียวมิ้นต์ ลอยสอดประสานกัน 2 บรรทัด",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6c/ea/c7/6ceac720-ef2d-afa7-b911-cb39bf7c7ba8/mzaf_5357215185813458890.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6c/ea/c7/6ceac720-ef2d-afa7-b911-cb39bf7c7ba8/mzaf_5357215185813458890.plus.aac.p.m4a"
   },
   {
     "id": 150,
@@ -9153,7 +9451,9 @@ const SONGS = [
       3
     ],
     "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
-    "typoIdea": "ฟอนต์ทองหรูหราขอบทอง เรืองแสงสง่างามตามเสียงออร์เคสตรา"
+    "typoIdea": "ฟอนต์ทองหรูหราขอบทอง เรืองแสงสง่างามตามเสียงออร์เคสตรา",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/a4/a4/c9a4a4d0-c4ce-c322-17ba-3d7fa6d7f7d8/mzaf_4706791527223213954.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/a4/a4/c9a4a4d0-c4ce-c322-17ba-3d7fa6d7f7d8/mzaf_4706791527223213954.plus.aac.p.m4a"
   },
   {
     "id": 151,
@@ -9175,7 +9475,9 @@ const SONGS = [
       1
     ],
     "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
-    "typoIdea": "ตัวหนังสือสลายหล่นลงมาตามเสียงกีตาร์บาดลึก"
+    "typoIdea": "ตัวหนังสือสลายหล่นลงมาตามเสียงกีตาร์บาดลึก",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/40/45/304045a6-7545-6344-d0ec-f18fb71375d5/mzaf_5601595833484110834.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/40/45/304045a6-7545-6344-d0ec-f18fb71375d5/mzaf_5601595833484110834.plus.aac.p.m4a"
   },
   {
     "id": 152,
@@ -9197,7 +9499,9 @@ const SONGS = [
       18
     ],
     "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
-    "typoIdea": "ตัวหนังสือสีขาวบนพื้นหลังมืดสลัว ซูมเข้าหาคำว่า ขอให้โชคดี"
+    "typoIdea": "ตัวหนังสือสีขาวบนพื้นหลังมืดสลัว ซูมเข้าหาคำว่า ขอให้โชคดี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9b/0d/25/9b0d2539-6aaf-7c9e-2486-bc7874ac5122/mzaf_7280392792458901469.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9b/0d/25/9b0d2539-6aaf-7c9e-2486-bc7874ac5122/mzaf_7280392792458901469.plus.aac.p.m4a"
   },
   {
     "id": 153,
@@ -9219,7 +9523,9 @@ const SONGS = [
       3
     ],
     "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
-    "typoIdea": "ฟอนต์สีซีดคล้ายของเก่า ค่อยๆ สว่างขึ้นเมื่อได้รับความรัก"
+    "typoIdea": "ฟอนต์สีซีดคล้ายของเก่า ค่อยๆ สว่างขึ้นเมื่อได้รับความรัก",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/8b/5d/678b5d00-7a2c-2cc3-c96e-e7b18526c98d/mzaf_1385378532326019552.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/8b/5d/678b5d00-7a2c-2cc3-c96e-e7b18526c98d/mzaf_1385378532326019552.plus.aac.p.m4a"
   },
   {
     "id": 154,
@@ -9241,7 +9547,9 @@ const SONGS = [
       15
     ],
     "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
-    "typoIdea": "ฟอนต์โมเดิร์นสีขาว เด้งจังหวะชัตเตอร์กล้องถ่ายรูปย้อนอดีต"
+    "typoIdea": "ฟอนต์โมเดิร์นสีขาว เด้งจังหวะชัตเตอร์กล้องถ่ายรูปย้อนอดีต",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/95/f9/15/95f915ba-c692-0a8f-4153-aa2a97ee4e3a/mzaf_18159072783949803297.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/95/f9/15/95f915ba-c692-0a8f-4153-aa2a97ee4e3a/mzaf_18159072783949803297.plus.aac.p.m4a"
   },
   {
     "id": 155,
@@ -9263,7 +9571,9 @@ const SONGS = [
       12
     ],
     "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
-    "typoIdea": "ตัวหนังสือค่อยๆ จางหายไปที่กึ่งกลางจอ เลียนแบบการถูกทิ้งไว้กลางทาง"
+    "typoIdea": "ตัวหนังสือค่อยๆ จางหายไปที่กึ่งกลางจอ เลียนแบบการถูกทิ้งไว้กลางทาง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/ae/1d/67ae1d8c-3045-d82e-b543-9b5379ff0bbe/mzaf_9763511802935788780.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/ae/1d/67ae1d8c-3045-d82e-b543-9b5379ff0bbe/mzaf_9763511802935788780.plus.aac.p.m4a"
   },
   {
     "id": 156,
@@ -9285,7 +9595,9 @@ const SONGS = [
       2
     ],
     "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
-    "typoIdea": "ฟอนต์สไตล์วินเทจเรโทร เด้งตามจังหวะกีตาร์บอสซาโนวาพลิ้วไหว"
+    "typoIdea": "ฟอนต์สไตล์วินเทจเรโทร เด้งตามจังหวะกีตาร์บอสซาโนวาพลิ้วไหว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b0/8c/e1/b08ce131-3860-fdbd-43a9-dc4bf1ec78f8/mzaf_18185086236351287888.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b0/8c/e1/b08ce131-3860-fdbd-43a9-dc4bf1ec78f8/mzaf_18185086236351287888.plus.aac.p.m4a"
   },
   {
     "id": 157,
@@ -9307,7 +9619,9 @@ const SONGS = [
       14
     ],
     "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
-    "typoIdea": "ฟอนต์ตัวเขียนพริ้วไหวสีทองอ่อน มีประกายวิ้งลอยขึ้นเบาๆ"
+    "typoIdea": "ฟอนต์ตัวเขียนพริ้วไหวสีทองอ่อน มีประกายวิ้งลอยขึ้นเบาๆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/23/b6/1423b64e-6e16-84bc-baa3-b8ac6f66c01c/mzaf_11947839376803206443.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/23/b6/1423b64e-6e16-84bc-baa3-b8ac6f66c01c/mzaf_11947839376803206443.plus.aac.p.m4a"
   },
   {
     "id": 158,
@@ -9329,7 +9643,9 @@ const SONGS = [
       7
     ],
     "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
-    "typoIdea": "ฟอนต์สไตล์นิทานวินเทจ หมอกควันบางๆ ลอยผ่านตัวอักษร"
+    "typoIdea": "ฟอนต์สไตล์นิทานวินเทจ หมอกควันบางๆ ลอยผ่านตัวอักษร",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/00/b3/f2/00b3f2a0-3228-b65f-7189-91eb26f5adf6/mzaf_3535055549125623460.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/00/b3/f2/00b3f2a0-3228-b65f-7189-91eb26f5adf6/mzaf_3535055549125623460.plus.aac.p.m4a"
   },
   {
     "id": 159,
@@ -9351,7 +9667,9 @@ const SONGS = [
       9
     ],
     "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
-    "typoIdea": "ฟอนต์สีทรายชายหาด ละลายไปกับคลื่นน้ำทะเลสีฟ้าคราม"
+    "typoIdea": "ฟอนต์สีทรายชายหาด ละลายไปกับคลื่นน้ำทะเลสีฟ้าคราม",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/9f/fd/ba9ffdbe-e2d8-f0f2-3e64-dc0ad2429a05/mzaf_7780705505584561681.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/9f/fd/ba9ffdbe-e2d8-f0f2-3e64-dc0ad2429a05/mzaf_7780705505584561681.plus.aac.p.m4a"
   },
   {
     "id": 160,
@@ -9373,7 +9691,9 @@ const SONGS = [
       17
     ],
     "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
-    "typoIdea": "ฟอนต์สีชมพูนมพาสเทล ลอยหมุนเคว้งคว้างเหมือนเต้นรำในห้องนั่งเล่น"
+    "typoIdea": "ฟอนต์สีชมพูนมพาสเทล ลอยหมุนเคว้งคว้างเหมือนเต้นรำในห้องนั่งเล่น",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e0/db/47/e0db47b0-7f70-0631-0414-cd4777d2fb3e/mzaf_6362891154838442638.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e0/db/47/e0db47b0-7f70-0631-0414-cd4777d2fb3e/mzaf_6362891154838442638.plus.aac.p.m4a"
   },
   {
     "id": 161,
@@ -9395,7 +9715,9 @@ const SONGS = [
       16
     ],
     "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
-    "typoIdea": "ฟอนต์สีขาวตัดกับไฟหน้ารถสีแดง สั่นเบลอตามหยดน้ำตา"
+    "typoIdea": "ฟอนต์สีขาวตัดกับไฟหน้ารถสีแดง สั่นเบลอตามหยดน้ำตา",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/36/62/61/366261be-0996-d73d-de6f-03417867c800/mzaf_8201528327761821135.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/36/62/61/366261be-0996-d73d-de6f-03417867c800/mzaf_8201528327761821135.plus.aac.p.m4a"
   },
   {
     "id": 162,
@@ -9417,7 +9739,9 @@ const SONGS = [
       1
     ],
     "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
-    "typoIdea": "ฟอนต์ขอบคมสีดำ-แดง กระพริบตามท่อนกรีดร้องอันทรงพลัง"
+    "typoIdea": "ฟอนต์ขอบคมสีดำ-แดง กระพริบตามท่อนกรีดร้องอันทรงพลัง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4f/ae/6c/4fae6c93-6bb3-d320-00bf-f32310705b3f/mzaf_16796881619991035581.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4f/ae/6c/4fae6c93-6bb3-d320-00bf-f32310705b3f/mzaf_16796881619991035581.plus.aac.p.m4a"
   },
   {
     "id": 163,
@@ -9439,7 +9763,9 @@ const SONGS = [
       26
     ],
     "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
-    "typoIdea": "เอฟเฟกต์ภาพซ้อน Glitch ซ้อนทับกันสองมิติคล้ายอาการเดจาวู"
+    "typoIdea": "เอฟเฟกต์ภาพซ้อน Glitch ซ้อนทับกันสองมิติคล้ายอาการเดจาวู",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/5a/c2/835ac220-f31a-006f-b6a9-2acd29eb60d0/mzaf_13621843495437485054.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/5a/c2/835ac220-f31a-006f-b6a9-2acd29eb60d0/mzaf_13621843495437485054.plus.aac.p.m4a"
   },
   {
     "id": 164,
@@ -9461,7 +9787,9 @@ const SONGS = [
       9
     ],
     "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
-    "typoIdea": "ฟอนต์สีนวลจันทร์ ส่องแสงเรืองรองบนท้องฟ้ามืดมิดยามค่ำคืน"
+    "typoIdea": "ฟอนต์สีนวลจันทร์ ส่องแสงเรืองรองบนท้องฟ้ามืดมิดยามค่ำคืน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c4/ce/e8/c4cee8c1-ac62-b308-9c8f-df0c9bb69383/mzaf_1726042899961262714.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c4/ce/e8/c4cee8c1-ac62-b308-9c8f-df0c9bb69383/mzaf_1726042899961262714.plus.aac.p.m4a"
   },
   {
     "id": 165,
@@ -9483,7 +9811,9 @@ const SONGS = [
       21
     ],
     "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
-    "typoIdea": "ตัวหนังสือกระแทกจังหวะกลองและเบส สลับสีนีออนเขียว-ม่วง"
+    "typoIdea": "ตัวหนังสือกระแทกจังหวะกลองและเบส สลับสีนีออนเขียว-ม่วง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/05/04/d5050434-1278-6b8e-9cd8-6261ea319fd1/mzaf_9746689865251353718.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/05/04/d5050434-1278-6b8e-9cd8-6261ea319fd1/mzaf_9746689865251353718.plus.aac.p.m4a"
   },
   {
     "id": 166,
@@ -9505,7 +9835,9 @@ const SONGS = [
       6
     ],
     "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
-    "typoIdea": "ฟอนต์สีเหลืองดอกทานตะวัน ลอยพลิ้วไหวอย่างอิสระตามสายลม"
+    "typoIdea": "ฟอนต์สีเหลืองดอกทานตะวัน ลอยพลิ้วไหวอย่างอิสระตามสายลม",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/98/f0/d6/98f0d67e-f8bf-762d-cac7-1c6b3b6b35dd/mzaf_4543283896248560946.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/98/f0/d6/98f0d67e-f8bf-762d-cac7-1c6b3b6b35dd/mzaf_4543283896248560946.plus.aac.p.m4a"
   },
   {
     "id": 167,
@@ -9527,7 +9859,9 @@ const SONGS = [
       19
     ],
     "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
-    "typoIdea": "ตัวหนังสือวิ่งวนเป็นวงกลมตามชื่อเพลง Circles อย่างมีสไตล์"
+    "typoIdea": "ตัวหนังสือวิ่งวนเป็นวงกลมตามชื่อเพลง Circles อย่างมีสไตล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f9/b1/aa/f9b1aaed-3e24-227f-153d-99969f8b8464/mzaf_6272498007975402144.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f9/b1/aa/f9b1aaed-3e24-227f-153d-99969f8b8464/mzaf_6272498007975402144.plus.aac.p.m4a"
   },
   {
     "id": 168,
@@ -9549,7 +9883,9 @@ const SONGS = [
       23
     ],
     "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
-    "typoIdea": "ฟอนต์สีดำเลือดหมู ค่อยๆ จมดิ่งลงสู่ความมืดอย่างช้าๆ"
+    "typoIdea": "ฟอนต์สีดำเลือดหมู ค่อยๆ จมดิ่งลงสู่ความมืดอย่างช้าๆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/f5/40/a1f5405d-408f-d84e-1775-b87b30174067/mzaf_5384372198207712281.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/f5/40/a1f5405d-408f-d84e-1775-b87b30174067/mzaf_5384372198207712281.plus.aac.p.m4a"
   },
   {
     "id": 169,
@@ -9571,7 +9907,9 @@ const SONGS = [
       10
     ],
     "reason": "อารมณ์และจังหวะของเพลงเข้ากันได้ดีกับบรรยากาศภาพของอนิเมะ",
-    "typoIdea": "ตัวหนังสือค่อยๆ พิกเซลแตกกระจายเหมือนความทรงจำที่ถูกลบเลือน"
+    "typoIdea": "ตัวหนังสือค่อยๆ พิกเซลแตกกระจายเหมือนความทรงจำที่ถูกลบเลือน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/63/f1/45/63f1452d-5087-18b1-4426-52cd1f10bc06/mzaf_5211000209678891014.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/63/f1/45/63f1452d-5087-18b1-4426-52cd1f10bc06/mzaf_5211000209678891014.plus.aac.p.m4a"
   },
   {
     "id": 170,
@@ -9593,7 +9931,9 @@ const SONGS = [
       21
     ],
     "reason": "เพลงเปียโนร็อควิ่งสู่อัศดง",
-    "typoIdea": "ตัวหนังสือพุ่งจากขอบจอเข้าหากลางจอตามสปีดนิ้วเปียโนไฟแลบ"
+    "typoIdea": "ตัวหนังสือพุ่งจากขอบจอเข้าหากลางจอตามสปีดนิ้วเปียโนไฟแลบ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/04/c0/bc/04c0bcbf-399f-b668-4c1a-8eb37f63d6e3/mzaf_8386400470233731365.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/04/c0/bc/04c0bcbf-399f-b668-4c1a-8eb37f63d6e3/mzaf_8386400470233731365.plus.aac.p.m4a"
   },
   {
     "id": 171,
@@ -9615,7 +9955,9 @@ const SONGS = [
       6
     ],
     "reason": "Haikyuu!! แรงบันดาลใจสีน้ำเงิน",
-    "typoIdea": "ฟอนต์สีน้ำเงินเข้มสะท้อนแสง ขยายใหญ่ตามท่อนประสานเสียงปลุกใจ"
+    "typoIdea": "ฟอนต์สีน้ำเงินเข้มสะท้อนแสง ขยายใหญ่ตามท่อนประสานเสียงปลุกใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/e8/18/29/e81829b6-fd8a-b228-ab7f-ccfc9f0b7230/mzaf_9996233948634453819.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/e8/18/29/e81829b6-fd8a-b228-ab7f-ccfc9f0b7230/mzaf_9996233948634453819.plus.aac.p.m4a"
   },
   {
     "id": 172,
@@ -9637,7 +9979,9 @@ const SONGS = [
       54
     ],
     "reason": "Beastars OP บทความมืดในใจ",
-    "typoIdea": "ฟอนต์ขอบหนามสีม่วงเข้ม แฟลชสลับแดงตามจังหวะเบสสังเคราะห์ดิบๆ"
+    "typoIdea": "ฟอนต์ขอบหนามสีม่วงเข้ม แฟลชสลับแดงตามจังหวะเบสสังเคราะห์ดิบๆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1e/44/0e/1e440e47-679c-3d3b-ed0d-0a0afd90851a/mzaf_13732518623443303361.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/1e/44/0e/1e440e47-679c-3d3b-ed0d-0a0afd90851a/mzaf_13732518623443303361.plus.aac.p.m4a"
   },
   {
     "id": 173,
@@ -9659,7 +10003,9 @@ const SONGS = [
       10
     ],
     "reason": "A Silent Voice สื่อถึงการให้อภัยและเยียวยาใจ",
-    "typoIdea": "ฟอนต์สีเหลืองเลมอนตัดกับสีเทาหม่น ค่อยๆ ปรากฏทีละประโยคกินใจ"
+    "typoIdea": "ฟอนต์สีเหลืองเลมอนตัดกับสีเทาหม่น ค่อยๆ ปรากฏทีละประโยคกินใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/27/17/9b/27179b15-2153-25e8-d035-35fdb4d059d8/mzaf_757024838235216109.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/27/17/9b/27179b15-2153-25e8-d035-35fdb4d059d8/mzaf_757024838235216109.plus.aac.p.m4a"
   },
   {
     "id": 174,
@@ -9681,7 +10027,9 @@ const SONGS = [
       51
     ],
     "reason": "Naruto Shippuden OP16 ในตำนาน",
-    "typoIdea": "ตัวหนังสือเงาสีดำสลับพื้นหลังสีส้มสดใส วิ่งไปข้างหน้าตามจังหวะกลอง"
+    "typoIdea": "ตัวหนังสือเงาสีดำสลับพื้นหลังสีส้มสดใส วิ่งไปข้างหน้าตามจังหวะกลอง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/46/f6/8b/46f68b4a-fb0f-b118-4f1f-6b464e5e6579/mzaf_11941046521694916490.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/46/f6/8b/46f68b4a-fb0f-b118-4f1f-6b464e5e6579/mzaf_11941046521694916490.plus.aac.p.m4a"
   },
   {
     "id": 175,
@@ -9703,7 +10051,9 @@ const SONGS = [
       51
     ],
     "reason": "Naruto Shippuden OP3 อมตะตลอดกาล",
-    "typoIdea": "ตัวหนังสือสยายปีก ลอยพุ่งขึ้นสู่ท้องฟ้าสีครามตามท่อนฮุคทรงพลัง"
+    "typoIdea": "ตัวหนังสือสยายปีก ลอยพุ่งขึ้นสู่ท้องฟ้าสีครามตามท่อนฮุคทรงพลัง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/a5/c3/9aa5c3d6-b763-a852-e3f2-60f5270f196e/mzaf_13214537326205111491.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/a5/c3/9aa5c3d6-b763-a852-e3f2-60f5270f196e/mzaf_13214537326205111491.plus.aac.p.m4a"
   },
   {
     "id": 176,
@@ -9725,7 +10075,9 @@ const SONGS = [
       52
     ],
     "reason": "Tokyo Ghoul OP1 กรีดร้องบาดลึก",
-    "typoIdea": "ฟอนต์สั่นระรัวแบบ Distortion ตัวอักษรบิดเบี้ยวตามเสียงร้องอันบาดลึก"
+    "typoIdea": "ฟอนต์สั่นระรัวแบบ Distortion ตัวอักษรบิดเบี้ยวตามเสียงร้องอันบาดลึก",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3e/6b/f2/3e6bf2a5-f547-f33f-615f-7b8a37d5bbed/mzaf_13110023540909055333.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3e/6b/f2/3e6bf2a5-f547-f33f-615f-7b8a37d5bbed/mzaf_13110023540909055333.plus.aac.p.m4a"
   },
   {
     "id": 177,
@@ -9747,7 +10099,9 @@ const SONGS = [
       9
     ],
     "reason": "Your Name วิ่งข้ามกาลเวลา",
-    "typoIdea": "ฟอนต์พุ่งกระแทกตามจังหวะอินโทรสับคอร์ดกีตาร์ความเร็ว 190 BPM"
+    "typoIdea": "ฟอนต์พุ่งกระแทกตามจังหวะอินโทรสับคอร์ดกีตาร์ความเร็ว 190 BPM",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f8/fd/9f/f8fd9f88-67e8-ce12-f44d-1b4fe421f1f9/mzaf_5313510550820503304.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f8/fd/9f/f8fd9f88-67e8-ce12-f44d-1b4fe421f1f9/mzaf_5313510550820503304.plus.aac.p.m4a"
   },
   {
     "id": 178,
@@ -9769,7 +10123,9 @@ const SONGS = [
       51
     ],
     "reason": "Naruto Shippuden OP6 บทจิไรยะ",
-    "typoIdea": "ฟอนต์สีส้มเพลิง กระแทกตามจังหวะริฟฟ์กีตาร์บาดอารมณ์"
+    "typoIdea": "ฟอนต์สีส้มเพลิง กระแทกตามจังหวะริฟฟ์กีตาร์บาดอารมณ์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5d/a7/c3/5da7c37b-7516-eeeb-4f9c-a65ffcc33189/mzaf_961849683140294438.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5d/a7/c3/5da7c37b-7516-eeeb-4f9c-a65ffcc33189/mzaf_961849683140294438.plus.aac.p.m4a"
   },
   {
     "id": 179,
@@ -9791,7 +10147,9 @@ const SONGS = [
       51
     ],
     "reason": "Naruto OP4 วีอาร์ไฟท์ติ้งดรีมเมอร์",
-    "typoIdea": "ตัวหนังสือสลับสี แดง-เหลือง-ดำ กระโดดตามจังหวะกลองพาเหรด"
+    "typoIdea": "ตัวหนังสือสลับสี แดง-เหลือง-ดำ กระโดดตามจังหวะกลองพาเหรด",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9c/64/09/9c64099b-9459-325a-7ef1-506108e8f8da/mzaf_12308580034832000273.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9c/64/09/9c64099b-9459-325a-7ef1-506108e8f8da/mzaf_12308580034832000273.plus.aac.p.m4a"
   },
   {
     "id": 180,
@@ -9813,7 +10171,9 @@ const SONGS = [
       11
     ],
     "reason": "Attack on Titan Final Season เมทัลถล่มพิภพ",
-    "typoIdea": "ฟอนต์เหล็กหนาแตกระแหง สั่นสะเทือนตามเสียงสำรอกเฮฟวี่เมทัล"
+    "typoIdea": "ฟอนต์เหล็กหนาแตกระแหง สั่นสะเทือนตามเสียงสำรอกเฮฟวี่เมทัล",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/42/81/ee/4281ee26-10b9-b596-0b33-eede676753eb/mzaf_11152246900383586621.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/42/81/ee/4281ee26-10b9-b596-0b33-eede676753eb/mzaf_11152246900383586621.plus.aac.p.m4a"
   },
   {
     "id": 181,
@@ -9835,7 +10195,9 @@ const SONGS = [
       24
     ],
     "reason": "Demon Slayer บท่านเริงรมย์ พลุไฟ",
-    "typoIdea": "ฟอนต์ประกายสีทอง ลอยระเบิดเหมือนดอกไม้ไฟยามราตรี"
+    "typoIdea": "ฟอนต์ประกายสีทอง ลอยระเบิดเหมือนดอกไม้ไฟยามราตรี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e7/65/bc/e765bc4b-7710-5c13-c35d-8cd30d7bcacd/mzaf_5473058310448658183.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e7/65/bc/e765bc4b-7710-5c13-c35d-8cd30d7bcacd/mzaf_5473058310448658183.plus.aac.p.m4a"
   },
   {
     "id": 182,
@@ -9857,7 +10219,9 @@ const SONGS = [
       5
     ],
     "reason": "Jujutsu Kaisen ED1 แดนซ์สุดเท่",
-    "typoIdea": "ตัวหนังสือเต้นดุ๊กดิ๊ก หมุนตัวตามจังหวะเบสเดินอย่างมีคลาส"
+    "typoIdea": "ตัวหนังสือเต้นดุ๊กดิ๊ก หมุนตัวตามจังหวะเบสเดินอย่างมีคลาส",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f3/50/5a/f3505a8e-6547-e3bb-33bd-95521ddfeec9/mzaf_7361094109626562212.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f3/50/5a/f3505a8e-6547-e3bb-33bd-95521ddfeec9/mzaf_7361094109626562212.plus.aac.p.m4a"
   },
   {
     "id": 183,
@@ -9879,7 +10243,9 @@ const SONGS = [
       55
     ],
     "reason": "One Punch Man OP1 หมัดเดียวจอด",
-    "typoIdea": "ตัวหนังสือสีเหลือง-แดง ขยายใหญ่เต็มจอในจังหวะ ONE PUNCH"
+    "typoIdea": "ตัวหนังสือสีเหลือง-แดง ขยายใหญ่เต็มจอในจังหวะ ONE PUNCH",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e0/01/96/e00196d1-46c9-fd80-8f33-7e49ca4a7652/mzaf_6574669169551309082.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e0/01/96/e00196d1-46c9-fd80-8f33-7e49ca4a7652/mzaf_6574669169551309082.plus.aac.p.m4a"
   },
   {
     "id": 184,
@@ -9901,7 +10267,9 @@ const SONGS = [
       57
     ],
     "reason": "Death Parade OP ฟังก์ร็อคเปี่ยมรอยยิ้ม",
-    "typoIdea": "ฟอนต์เรโทรย้อนยุค สวิงซ้ายขวาตามจังหวะดีดนิ้วสุดเร้าใจ"
+    "typoIdea": "ฟอนต์เรโทรย้อนยุค สวิงซ้ายขวาตามจังหวะดีดนิ้วสุดเร้าใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/44/92/e6/4492e6a7-e737-9a8b-ba37-6107d51dc37c/mzaf_940610776988081801.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/44/92/e6/4492e6a7-e737-9a8b-ba37-6107d51dc37c/mzaf_940610776988081801.plus.aac.p.m4a"
   },
   {
     "id": 185,
@@ -9923,7 +10291,9 @@ const SONGS = [
       65
     ],
     "reason": "Fullmetal Alchemist: Brotherhood OP1 ในตำนาน",
-    "typoIdea": "ฟอนต์พู่กันสีเงิน กวาดเป็นวงกลมเวทมนตร์แปรธาตุตามท่อนฮุค"
+    "typoIdea": "ฟอนต์พู่กันสีเงิน กวาดเป็นวงกลมเวทมนตร์แปรธาตุตามท่อนฮุค",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/48/2f/4f/482f4fca-6848-9ab5-4f6a-e76cee5a6c98/mzaf_17040137880719986209.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/48/2f/4f/482f4fca-6848-9ab5-4f6a-e76cee5a6c98/mzaf_17040137880719986209.plus.aac.p.m4a"
   },
   {
     "id": 186,
@@ -9945,7 +10315,9 @@ const SONGS = [
       64
     ],
     "reason": "Black Clover OP10 ดาร์กเปียโน",
-    "typoIdea": "ตัวหนังสือเงาสีดำ ค่อยๆ ถูกดูดกลืนลงสู่ความมืดมิด"
+    "typoIdea": "ตัวหนังสือเงาสีดำ ค่อยๆ ถูกดูดกลืนลงสู่ความมืดมิด",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/72/1f/81/721f8150-9e02-bc81-ae38-004baf64bd2a/mzaf_13307220116577833618.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/72/1f/81/721f8150-9e02-bc81-ae38-004baf64bd2a/mzaf_13307220116577833618.plus.aac.p.m4a"
   },
   {
     "id": 187,
@@ -9967,7 +10339,9 @@ const SONGS = [
       11
     ],
     "reason": "ฟอนต์สีเปลวไฟ วิ่งผ่านหน้าจอด้วยความเร็ว 180 BPM",
-    "typoIdea": "ฟอนต์สีเปลวไฟ วิ่งผ่านหน้าจอด้วยความเร็ว 180 BPM"
+    "typoIdea": "ฟอนต์สีเปลวไฟ วิ่งผ่านหน้าจอด้วยความเร็ว 180 BPM",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/86/b9/e2/86b9e295-d9f1-d53d-c4f5-5335ac7127b2/mzaf_13409156314119121134.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/86/b9/e2/86b9e295-d9f1-d53d-c4f5-5335ac7127b2/mzaf_13409156314119121134.plus.aac.p.m4a"
   },
   {
     "id": 188,
@@ -9989,7 +10363,9 @@ const SONGS = [
       71
     ],
     "reason": "ฟอนต์สีดำสนิทขอบคม ค่อยๆ กลืนกินสีสันรอบตัวให้เป็นสีดำ",
-    "typoIdea": "ฟอนต์สีดำสนิทขอบคม ค่อยๆ กลืนกินสีสันรอบตัวให้เป็นสีดำ"
+    "typoIdea": "ฟอนต์สีดำสนิทขอบคม ค่อยๆ กลืนกินสีสันรอบตัวให้เป็นสีดำ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/82/a9/36/82a936f6-cc74-9df6-bf75-19c1483b8e5b/mzaf_1315194188082064730.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/82/a9/36/82a936f6-cc74-9df6-bf75-19c1483b8e5b/mzaf_1315194188082064730.plus.aac.p.m4a"
   },
   {
     "id": 189,
@@ -10011,7 +10387,9 @@ const SONGS = [
       34
     ],
     "reason": "ฟอนต์สีเขียวพิษ กระพริบช้าๆ ในห้องขังแห่งความมืด",
-    "typoIdea": "ฟอนต์สีเขียวพิษ กระพริบช้าๆ ในห้องขังแห่งความมืด"
+    "typoIdea": "ฟอนต์สีเขียวพิษ กระพริบช้าๆ ในห้องขังแห่งความมืด",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/85/cb/b1/85cbb14b-149c-8344-fbc9-432c623fda47/mzaf_5195826988206544126.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/85/cb/b1/85cbb14b-149c-8344-fbc9-432c623fda47/mzaf_5195826988206544126.plus.aac.p.m4a"
   },
   {
     "id": 190,
@@ -10033,7 +10411,9 @@ const SONGS = [
       25
     ],
     "reason": "ฟอนต์สีนีออนม่วง-ชมพู เรืองแสงสะท้อนตึกระฟ้าแห่งอนาคต",
-    "typoIdea": "ฟอนต์สีนีออนม่วง-ชมพู เรืองแสงสะท้อนตึกระฟ้าแห่งอนาคต"
+    "typoIdea": "ฟอนต์สีนีออนม่วง-ชมพู เรืองแสงสะท้อนตึกระฟ้าแห่งอนาคต",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/11/71/d6/1171d6ad-3c96-e027-2af6-58028426588c/mzaf_15137631797407745471.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/11/71/d6/1171d6ad-3c96-e027-2af6-58028426588c/mzaf_15137631797407745471.plus.aac.p.m4a"
   },
   {
     "id": 191,
@@ -10055,7 +10435,9 @@ const SONGS = [
       10
     ],
     "reason": "ฟอนต์ตัวพิมพ์ดีดโบราณ พิมพ์ทีละตัวตามเสียงกล่องดนตรีไขลาน",
-    "typoIdea": "ฟอนต์ตัวพิมพ์ดีดโบราณ พิมพ์ทีละตัวตามเสียงกล่องดนตรีไขลาน"
+    "typoIdea": "ฟอนต์ตัวพิมพ์ดีดโบราณ พิมพ์ทีละตัวตามเสียงกล่องดนตรีไขลาน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/01/02/04/010204d9-0ec4-9f71-586c-4776a579b1cb/mzaf_6978124395926668013.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/01/02/04/010204d9-0ec4-9f71-586c-4776a579b1cb/mzaf_6978124395926668013.plus.aac.p.m4a"
   },
   {
     "id": 192,
@@ -10077,7 +10459,9 @@ const SONGS = [
       3
     ],
     "reason": "ตัวหนังสือสั่นไหวและแตกสลายตามเสียงตะโกนท่อนฮุค",
-    "typoIdea": "ตัวหนังสือสั่นไหวและแตกสลายตามเสียงตะโกนท่อนฮุค"
+    "typoIdea": "ตัวหนังสือสั่นไหวและแตกสลายตามเสียงตะโกนท่อนฮุค",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/0d/8d/2a0d8d48-f74a-236e-ec23-24a958f5649d/mzaf_16143782915340700495.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/0d/8d/2a0d8d48-f74a-236e-ec23-24a958f5649d/mzaf_16143782915340700495.plus.aac.p.m4a"
   },
   {
     "id": 193,
@@ -10099,7 +10483,9 @@ const SONGS = [
       13
     ],
     "reason": "ฟอนต์โปร่งแสงสีขาว ละอองฝนเกาะตัวหนังสืออย่างนุ่มนวล",
-    "typoIdea": "ฟอนต์โปร่งแสงสีขาว ละอองฝนเกาะตัวหนังสืออย่างนุ่มนวล"
+    "typoIdea": "ฟอนต์โปร่งแสงสีขาว ละอองฝนเกาะตัวหนังสืออย่างนุ่มนวล",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/b3/ed/c9b3ed28-4209-f550-3170-e633b200f105/mzaf_7244198289293517571.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/b3/ed/c9b3ed28-4209-f550-3170-e633b200f105/mzaf_7244198289293517571.plus.aac.p.m4a"
   },
   {
     "id": 194,
@@ -10121,7 +10507,9 @@ const SONGS = [
       14
     ],
     "reason": "ตัวหนังสือกล่องคำพูด ซูมเข้าหาคำสำคัญในท่อนแร็พ",
-    "typoIdea": "ตัวหนังสือกล่องคำพูด ซูมเข้าหาคำสำคัญในท่อนแร็พ"
+    "typoIdea": "ตัวหนังสือกล่องคำพูด ซูมเข้าหาคำสำคัญในท่อนแร็พ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4a/ad/9f/4aad9f93-e194-4557-fae6-37ce5f3dc61b/mzaf_5243675828192966992.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4a/ad/9f/4aad9f93-e194-4557-fae6-37ce5f3dc61b/mzaf_5243675828192966992.plus.aac.p.m4a"
   },
   {
     "id": 195,
@@ -10142,7 +10530,9 @@ const SONGS = [
     "animeId": 15,
     "animeMatch": [
       15
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ec/37/ce/ec37ce72-fdaa-1333-c2aa-7c1334c77fa7/mzaf_13475738661062503563.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ec/37/ce/ec37ce72-fdaa-1333-c2aa-7c1334c77fa7/mzaf_13475738661062503563.plus.aac.p.m4a"
   },
   {
     "id": 196,
@@ -10163,7 +10553,9 @@ const SONGS = [
     "animeId": 52,
     "animeMatch": [
       52
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/48/14/0d/48140d82-bafe-05c3-3d2e-30be6bde7ff5/mzaf_13152390124138197259.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/48/14/0d/48140d82-bafe-05c3-3d2e-30be6bde7ff5/mzaf_13152390124138197259.plus.aac.p.m4a"
   },
   {
     "id": 197,
@@ -10184,7 +10576,9 @@ const SONGS = [
     "animeId": 25,
     "animeMatch": [
       25
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ac/25/c6/ac25c644-057b-1421-ff7c-bdd4a0114459/mzaf_9368654034340652874.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ac/25/c6/ac25c644-057b-1421-ff7c-bdd4a0114459/mzaf_9368654034340652874.plus.aac.p.m4a"
   },
   {
     "id": 198,
@@ -10205,7 +10599,9 @@ const SONGS = [
     "animeId": 70,
     "animeMatch": [
       70
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/9f/31/029f31d9-865f-8238-795d-0a69106cd7bd/mzaf_4087349157470098609.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/9f/31/029f31d9-865f-8238-795d-0a69106cd7bd/mzaf_4087349157470098609.plus.aac.p.m4a"
   },
   {
     "id": 199,
@@ -10226,7 +10622,9 @@ const SONGS = [
     "animeId": 79,
     "animeMatch": [
       79
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/d4/05/b3d40599-79fe-8ae8-030b-c534dcbc2564/mzaf_13850105976352284754.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/d4/05/b3d40599-79fe-8ae8-030b-c534dcbc2564/mzaf_13850105976352284754.plus.aac.p.m4a"
   },
   {
     "id": 200,
@@ -10247,7 +10645,9 @@ const SONGS = [
     "animeId": 77,
     "animeMatch": [
       77
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/54/e7/1954e7f4-b211-849d-03a4-94a515c197df/mzaf_10611984984504241868.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/54/e7/1954e7f4-b211-849d-03a4-94a515c197df/mzaf_10611984984504241868.plus.aac.p.m4a"
   },
   {
     "id": 201,
@@ -10267,7 +10667,9 @@ const SONGS = [
     "animeId": 1,
     "animeMatch": [
       1
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/f0/2d/76f02d3a-4b61-f285-a84a-272aa2904c63/mzaf_2746150345781827060.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/f0/2d/76f02d3a-4b61-f285-a84a-272aa2904c63/mzaf_2746150345781827060.plus.aac.p.m4a"
   },
   {
     "id": 202,
@@ -10287,7 +10689,9 @@ const SONGS = [
     "animeId": 9,
     "animeMatch": [
       9
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/37/ff/7337ff2d-c4c8-4190-1f92-5fdca53ce282/mzaf_5262209305244392518.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/37/ff/7337ff2d-c4c8-4190-1f92-5fdca53ce282/mzaf_5262209305244392518.plus.aac.p.m4a"
   },
   {
     "id": 203,
@@ -10307,7 +10711,9 @@ const SONGS = [
     "animeId": 18,
     "animeMatch": [
       18
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/c3/a7/2ec3a7a1-78fb-efac-c3aa-5bc5220eab9e/mzaf_10494967788962621898.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/c3/a7/2ec3a7a1-78fb-efac-c3aa-5bc5220eab9e/mzaf_10494967788962621898.plus.aac.p.m4a"
   },
   {
     "id": 204,
@@ -10327,7 +10733,9 @@ const SONGS = [
     "animeId": 14,
     "animeMatch": [
       14
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4a/ad/9f/4aad9f93-e194-4557-fae6-37ce5f3dc61b/mzaf_5243675828192966992.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4a/ad/9f/4aad9f93-e194-4557-fae6-37ce5f3dc61b/mzaf_5243675828192966992.plus.aac.p.m4a"
   },
   {
     "id": 205,
@@ -10347,7 +10755,9 @@ const SONGS = [
     "animeId": 10,
     "animeMatch": [
       10
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/a5/51/aba5515b-36c4-4ec4-f376-4f886bfb5a56/mzaf_2464286645921122949.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/a5/51/aba5515b-36c4-4ec4-f376-4f886bfb5a56/mzaf_2464286645921122949.plus.aac.p.m4a"
   },
   {
     "id": 206,
@@ -10367,7 +10777,9 @@ const SONGS = [
     "animeId": 15,
     "animeMatch": [
       15
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/1b/5c/021b5c1f-dd10-80f6-f78b-8d338c1af224/mzaf_9496894947285646060.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/1b/5c/021b5c1f-dd10-80f6-f78b-8d338c1af224/mzaf_9496894947285646060.plus.aac.p.m4a"
   },
   {
     "id": 207,
@@ -10387,7 +10799,9 @@ const SONGS = [
     "animeId": 12,
     "animeMatch": [
       12
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/08/12/36/0812360d-4479-b29d-5275-931b1e541694/mzaf_5285055444520979895.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/08/12/36/0812360d-4479-b29d-5275-931b1e541694/mzaf_5285055444520979895.plus.aac.p.m4a"
   },
   {
     "id": 208,
@@ -10407,7 +10821,9 @@ const SONGS = [
     "animeId": 7,
     "animeMatch": [
       7
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/02/8c/30028c8a-a125-5466-bcc6-27a83b1c0135/mzaf_16911571635366913039.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/02/8c/30028c8a-a125-5466-bcc6-27a83b1c0135/mzaf_16911571635366913039.plus.aac.p.m4a"
   },
   {
     "id": 209,
@@ -10427,7 +10843,9 @@ const SONGS = [
     "animeId": 70,
     "animeMatch": [
       70
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/82/c1/5382c1d4-ddba-aa2b-90df-57268895fac9/mzaf_8926201202931541051.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/82/c1/5382c1d4-ddba-aa2b-90df-57268895fac9/mzaf_8926201202931541051.plus.aac.p.m4a"
   },
   {
     "id": 210,
@@ -10447,7 +10865,9 @@ const SONGS = [
     "animeId": 25,
     "animeMatch": [
       25
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/f5/40/a1f5405d-408f-d84e-1775-b87b30174067/mzaf_5384372198207712281.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/f5/40/a1f5405d-408f-d84e-1775-b87b30174067/mzaf_5384372198207712281.plus.aac.p.m4a"
   },
   {
     "id": 211,
@@ -10467,7 +10887,9 @@ const SONGS = [
     "animeId": 20,
     "animeMatch": [
       20
-    ]
+    ],
+    "audioUrl": "https://video-ssl.itunes.apple.com/itunes-assets/Video122/v4/c6/3e/51/c63e514d-55d5-9a6a-3b81-92a38f121e4f/mzvf_1502976068911400270.1920w.h264lc.U.p.m4v",
+    "audioFallback": "https://video-ssl.itunes.apple.com/itunes-assets/Video122/v4/c6/3e/51/c63e514d-55d5-9a6a-3b81-92a38f121e4f/mzvf_1502976068911400270.1920w.h264lc.U.p.m4v"
   },
   {
     "id": 212,
@@ -10487,7 +10909,9 @@ const SONGS = [
     "animeId": 16,
     "animeMatch": [
       16
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/53/c2/0c53c240-300a-5ddf-fc86-3a54e1b73a78/mzaf_13555682862214742934.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/53/c2/0c53c240-300a-5ddf-fc86-3a54e1b73a78/mzaf_13555682862214742934.plus.aac.p.m4a"
   },
   {
     "id": 213,
@@ -10507,7 +10931,9 @@ const SONGS = [
     "animeId": 38,
     "animeMatch": [
       38
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/93/94/52/939452d5-e74e-a819-2f16-7c9148f3419a/mzaf_17998933934090835373.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/93/94/52/939452d5-e74e-a819-2f16-7c9148f3419a/mzaf_17998933934090835373.plus.aac.p.m4a"
   },
   {
     "id": 214,
@@ -10527,7 +10953,9 @@ const SONGS = [
     "animeId": 32,
     "animeMatch": [
       32
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/de/3c/55/de3c5508-301a-2aae-a8e6-069a1e2edb04/mzaf_14245211407965810210.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/de/3c/55/de3c5508-301a-2aae-a8e6-069a1e2edb04/mzaf_14245211407965810210.plus.aac.p.m4a"
   },
   {
     "id": 215,
@@ -10547,7 +10975,9 @@ const SONGS = [
     "animeId": 24,
     "animeMatch": [
       24
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/c3/c8/66c3c8a9-846c-e4b5-9a5d-c1d961f14644/mzaf_7312965873766517511.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/c3/c8/66c3c8a9-846c-e4b5-9a5d-c1d961f14644/mzaf_7312965873766517511.plus.aac.p.m4a"
   },
   {
     "id": 216,
@@ -10567,7 +10997,9 @@ const SONGS = [
     "animeId": 33,
     "animeMatch": [
       33
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/b0/ef/17b0ef44-1d0a-8ca4-7442-53a5fba773fb/mzaf_16206251573451214130.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/b0/ef/17b0ef44-1d0a-8ca4-7442-53a5fba773fb/mzaf_16206251573451214130.plus.aac.p.m4a"
   },
   {
     "id": 217,
@@ -10587,7 +11019,9 @@ const SONGS = [
     "animeId": 81,
     "animeMatch": [
       81
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/c0/17/acc017cc-c110-03bb-c94a-8195e6568698/mzaf_17290573489629338079.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/c0/17/acc017cc-c110-03bb-c94a-8195e6568698/mzaf_17290573489629338079.plus.aac.p.m4a"
   },
   {
     "id": 218,
@@ -10607,7 +11041,9 @@ const SONGS = [
     "animeId": 41,
     "animeMatch": [
       41
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/55/c0/aa/55c0aaf3-d74d-9b62-4126-63d9c0345561/mzaf_6612008514607888435.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/55/c0/aa/55c0aaf3-d74d-9b62-4126-63d9c0345561/mzaf_6612008514607888435.plus.aac.p.m4a"
   },
   {
     "id": 219,
@@ -10627,7 +11063,9 @@ const SONGS = [
     "animeId": 30,
     "animeMatch": [
       30
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3b/fb/b9/3bfbb919-71d2-7358-a0c8-f39b6381a442/mzaf_8987359075267074414.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3b/fb/b9/3bfbb919-71d2-7358-a0c8-f39b6381a442/mzaf_8987359075267074414.plus.aac.p.m4a"
   },
   {
     "id": 220,
@@ -10648,7 +11086,9 @@ const SONGS = [
     "animeId": 12,
     "animeMatch": [
       12
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bc/5a/88/bc5a881d-dc44-fc7f-92fd-376680957969/mzaf_10218454983981161930.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bc/5a/88/bc5a881d-dc44-fc7f-92fd-376680957969/mzaf_10218454983981161930.plus.aac.p.m4a"
   },
   {
     "id": 221,
@@ -10669,7 +11109,9 @@ const SONGS = [
     "animeId": 25,
     "animeMatch": [
       25
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/4c/b9/a34cb911-40fc-5f0c-e862-14bd171a77aa/mzaf_384792072030970151.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/4c/b9/a34cb911-40fc-5f0c-e862-14bd171a77aa/mzaf_384792072030970151.plus.aac.p.m4a"
   },
   {
     "id": 222,
@@ -10690,7 +11132,9 @@ const SONGS = [
     "animeId": 14,
     "animeMatch": [
       14
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/10/16/67101606-3869-ca44-6c03-e13d6322cb51/mzaf_1135399237022217274.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/10/16/67101606-3869-ca44-6c03-e13d6322cb51/mzaf_1135399237022217274.plus.aac.p.m4a"
   },
   {
     "id": 223,
@@ -10711,7 +11155,9 @@ const SONGS = [
     "animeId": 28,
     "animeMatch": [
       28
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d7/4a/84/d74a84d5-9afa-761e-b632-baab55c2a23b/mzaf_11865500880477235553.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d7/4a/84/d74a84d5-9afa-761e-b632-baab55c2a23b/mzaf_11865500880477235553.plus.aac.p.m4a"
   },
   {
     "id": 224,
@@ -10732,7 +11178,9 @@ const SONGS = [
     "animeId": 20,
     "animeMatch": [
       20
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/31/d3/3431d34e-847f-5d66-df83-0bce688d997e/mzaf_18106743962423782018.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/31/d3/3431d34e-847f-5d66-df83-0bce688d997e/mzaf_18106743962423782018.plus.aac.p.m4a"
   },
   {
     "id": 225,
@@ -10753,7 +11201,9 @@ const SONGS = [
     "animeId": 70,
     "animeMatch": [
       70
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/4d/02/e94d0230-11ee-ef94-d2cf-a5d547bd73f4/mzaf_554140808559155562.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/4d/02/e94d0230-11ee-ef94-d2cf-a5d547bd73f4/mzaf_554140808559155562.plus.aac.p.m4a"
   },
   {
     "id": 226,
@@ -10774,7 +11224,9 @@ const SONGS = [
     "animeId": 48,
     "animeMatch": [
       48
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4d/d5/00/4dd5006f-ee02-c3f1-94db-0ed4b8dd68f1/mzaf_14250561294796027079.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4d/d5/00/4dd5006f-ee02-c3f1-94db-0ed4b8dd68f1/mzaf_14250561294796027079.plus.aac.p.m4a"
   },
   {
     "id": 227,
@@ -10795,7 +11247,9 @@ const SONGS = [
     "animeId": 52,
     "animeMatch": [
       52
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9f/65/d6/9f65d67d-db40-d7da-c954-9a23d28dfe1a/mzaf_7625794503195542708.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9f/65/d6/9f65d67d-db40-d7da-c954-9a23d28dfe1a/mzaf_7625794503195542708.plus.aac.p.m4a"
   },
   {
     "id": 228,
@@ -10816,7 +11270,9 @@ const SONGS = [
     "animeId": 79,
     "animeMatch": [
       79
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a6/61/fc/a661fcaf-f8e5-03db-36f3-31f2e196b1a5/mzaf_18300083713037280538.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a6/61/fc/a661fcaf-f8e5-03db-36f3-31f2e196b1a5/mzaf_18300083713037280538.plus.aac.p.m4a"
   },
   {
     "id": 229,
@@ -10837,7 +11293,9 @@ const SONGS = [
     "animeId": 25,
     "animeMatch": [
       25
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/6a/99/076a99ed-b946-431b-6f1f-54fa187ca5bd/mzaf_8102882277995122875.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/6a/99/076a99ed-b946-431b-6f1f-54fa187ca5bd/mzaf_8102882277995122875.plus.aac.p.m4a"
   },
   {
     "id": 230,
@@ -10858,7 +11316,9 @@ const SONGS = [
     "animeId": 7,
     "animeMatch": [
       7
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6f/9c/78/6f9c787e-ec52-6842-8773-a71e48aa3712/mzaf_754096951661057381.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6f/9c/78/6f9c787e-ec52-6842-8773-a71e48aa3712/mzaf_754096951661057381.plus.aac.p.m4a"
   },
   {
     "id": 231,
@@ -10879,7 +11339,9 @@ const SONGS = [
     "animeId": 9,
     "animeMatch": [
       9
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/eb/d7/57/ebd757cd-f9aa-342d-c6f0-2f3221526aab/mzaf_8667682640341965635.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/eb/d7/57/ebd757cd-f9aa-342d-c6f0-2f3221526aab/mzaf_8667682640341965635.plus.aac.p.m4a"
   },
   {
     "id": 232,
@@ -10900,7 +11362,9 @@ const SONGS = [
     "animeMatch": [
       10
     ],
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/42/5e/6c/425e6c75-eb3f-75a5-9665-5928cf1b619f/mzaf_13059409262426465220.plus.aac.p.m4a"
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/42/5e/6c/425e6c75-eb3f-75a5-9665-5928cf1b619f/mzaf_13059409262426465220.plus.aac.p.m4a",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/42/5e/6c/425e6c75-eb3f-75a5-9665-5928cf1b619f/mzaf_13059409262426465220.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/42/5e/6c/425e6c75-eb3f-75a5-9665-5928cf1b619f/mzaf_13059409262426465220.plus.aac.p.m4a"
   },
   {
     "id": 233,
@@ -10921,7 +11385,9 @@ const SONGS = [
     "animeId": 18,
     "animeMatch": [
       18
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fd/a5/a1/fda5a19d-716d-60ad-5ef6-34835a4a0654/mzaf_6568920496921364930.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fd/a5/a1/fda5a19d-716d-60ad-5ef6-34835a4a0654/mzaf_6568920496921364930.plus.aac.p.m4a"
   },
   {
     "id": 234,
@@ -10942,7 +11408,9 @@ const SONGS = [
     "animeId": 15,
     "animeMatch": [
       15
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0d/68/cc/0d68cc88-b494-f054-6cbe-213e54e74127/mzaf_5126607641999438681.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0d/68/cc/0d68cc88-b494-f054-6cbe-213e54e74127/mzaf_5126607641999438681.plus.aac.p.m4a"
   },
   {
     "id": 235,
@@ -10963,7 +11431,9 @@ const SONGS = [
     "animeId": 52,
     "animeMatch": [
       52
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/ad/60/d7ad604f-ba67-0eac-f6cb-7b3944a7e369/mzaf_10206650190114843736.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/ad/60/d7ad604f-ba67-0eac-f6cb-7b3944a7e369/mzaf_10206650190114843736.plus.aac.p.m4a"
   },
   {
     "id": 236,
@@ -10984,7 +11454,9 @@ const SONGS = [
     "animeId": 1,
     "animeMatch": [
       1
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f7/12/f2/f712f235-db5a-8f21-25be-bbfb4ba72b7f/mzaf_13242668168382438329.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f7/12/f2/f712f235-db5a-8f21-25be-bbfb4ba72b7f/mzaf_13242668168382438329.plus.aac.p.m4a"
   },
   {
     "id": 237,
@@ -11005,7 +11477,9 @@ const SONGS = [
     "animeId": 68,
     "animeMatch": [
       68
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7b/98/f8/7b98f82c-21e1-e719-88ed-a94812bf02c7/mzaf_4584398930797681924.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7b/98/f8/7b98f82c-21e1-e719-88ed-a94812bf02c7/mzaf_4584398930797681924.plus.aac.p.m4a"
   },
   {
     "id": 238,
@@ -11026,7 +11500,9 @@ const SONGS = [
     "animeId": 41,
     "animeMatch": [
       41
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b9/7d/21/b97d213d-3ee4-a141-c922-5968ff854a35/mzaf_9170763121409795607.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b9/7d/21/b97d213d-3ee4-a141-c922-5968ff854a35/mzaf_9170763121409795607.plus.aac.p.m4a"
   },
   {
     "id": 239,
@@ -11047,7 +11523,9 @@ const SONGS = [
     "animeId": 11,
     "animeMatch": [
       11
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/a5/21/aba521b2-1931-2ff6-5d2a-40953a757993/mzaf_10633737123938191815.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/a5/21/aba521b2-1931-2ff6-5d2a-40953a757993/mzaf_10633737123938191815.plus.aac.p.m4a"
   },
   {
     "id": 240,
@@ -11068,7 +11546,9 @@ const SONGS = [
     "animeId": 63,
     "animeMatch": [
       63
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8d/78/90/8d78901b-a8b5-4ab1-c2c6-0141684afc33/mzaf_16192309365366931650.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8d/78/90/8d78901b-a8b5-4ab1-c2c6-0141684afc33/mzaf_16192309365366931650.plus.aac.p.m4a"
   },
   {
     "id": 241,
@@ -11089,7 +11569,9 @@ const SONGS = [
     "animeId": 62,
     "animeMatch": [
       62
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/23/3d/22/233d22af-2b53-2732-e88c-db95ce330988/mzaf_8454975281954723147.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/23/3d/22/233d22af-2b53-2732-e88c-db95ce330988/mzaf_8454975281954723147.plus.aac.p.m4a"
   },
   {
     "id": 242,
@@ -11110,7 +11592,9 @@ const SONGS = [
     "animeId": 13,
     "animeMatch": [
       13
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ae/0a/60/ae0a6018-a1e3-746c-0a98-be5852d53c18/mzaf_1817107385756081440.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ae/0a/60/ae0a6018-a1e3-746c-0a98-be5852d53c18/mzaf_1817107385756081440.plus.aac.p.m4a"
   },
   {
     "id": 243,
@@ -11131,7 +11615,9 @@ const SONGS = [
     "animeId": 48,
     "animeMatch": [
       48
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5a/e9/3a/5ae93a65-f30f-e43a-3b4c-df187b0b7ae3/mzaf_16162367997657350789.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5a/e9/3a/5ae93a65-f30f-e43a-3b4c-df187b0b7ae3/mzaf_16162367997657350789.plus.aac.p.m4a"
   },
   {
     "id": 244,
@@ -11152,7 +11638,9 @@ const SONGS = [
     "animeId": 11,
     "animeMatch": [
       11
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8e/d3/23/8ed323de-3b4a-5978-63e8-e8da11cc8403/mzaf_13830835556296346443.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8e/d3/23/8ed323de-3b4a-5978-63e8-e8da11cc8403/mzaf_13830835556296346443.plus.aac.p.m4a"
   },
   {
     "id": 245,
@@ -11173,7 +11661,9 @@ const SONGS = [
     "animeId": 11,
     "animeMatch": [
       11
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d6/a4/11/d6a411db-7be8-5dcf-1a32-63898c89a724/mzaf_8962357708499511048.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d6/a4/11/d6a411db-7be8-5dcf-1a32-63898c89a724/mzaf_8962357708499511048.plus.aac.p.m4a"
   },
   {
     "id": 246,
@@ -11194,7 +11684,9 @@ const SONGS = [
     "animeId": 59,
     "animeMatch": [
       59
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/ca/d9/a1/cad9a1aa-0a8e-9bdb-0e11-2c84a31c8d50/mzaf_12905940124585217075.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/ca/d9/a1/cad9a1aa-0a8e-9bdb-0e11-2c84a31c8d50/mzaf_12905940124585217075.plus.aac.p.m4a"
   },
   {
     "id": 247,
@@ -11215,7 +11707,9 @@ const SONGS = [
     "animeId": 19,
     "animeMatch": [
       19
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/a8/c8/fb/a8c8fb69-3017-0c74-a38c-df5e5e17d51e/mzaf_15919099609777833075.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/a8/c8/fb/a8c8fb69-3017-0c74-a38c-df5e5e17d51e/mzaf_15919099609777833075.plus.aac.p.m4a"
   },
   {
     "id": 248,
@@ -11236,7 +11730,9 @@ const SONGS = [
     "animeId": 2,
     "animeMatch": [
       2
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b8/48/af/b848af45-7b72-d06b-6033-309867539ffb/mzaf_17383963494548662878.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b8/48/af/b848af45-7b72-d06b-6033-309867539ffb/mzaf_17383963494548662878.plus.aac.p.m4a"
   },
   {
     "id": 249,
@@ -11257,7 +11753,9 @@ const SONGS = [
     "animeId": 44,
     "animeMatch": [
       44
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d6/ec/c2/d6ecc268-758f-9dcd-1947-5904a100ea92/mzaf_17788436145576609307.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d6/ec/c2/d6ecc268-758f-9dcd-1947-5904a100ea92/mzaf_17788436145576609307.plus.aac.p.m4a"
   },
   {
     "id": 250,
@@ -11278,7 +11776,9 @@ const SONGS = [
     "animeId": 14,
     "animeMatch": [
       14
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5d/9a/52/5d9a5214-1d19-b5f8-0956-260767121429/mzaf_12920634546527175307.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5d/9a/52/5d9a5214-1d19-b5f8-0956-260767121429/mzaf_12920634546527175307.plus.aac.p.m4a"
   },
   {
     "id": 251,
@@ -11302,7 +11802,9 @@ const SONGS = [
       "chill",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/Fly%20Me%20to%20the%20Moon%20Claire%20Littley"
+    "spotifyUrl": "https://open.spotify.com/search/Fly%20Me%20to%20the%20Moon%20Claire%20Littley",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0f/0a/12/0f0a1265-54d6-960a-3e73-c42501f62d70/mzaf_13856329359304122037.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0f/0a/12/0f0a1265-54d6-960a-3e73-c42501f62d70/mzaf_13856329359304122037.plus.aac.p.m4a"
   },
   {
     "id": 252,
@@ -11326,7 +11828,9 @@ const SONGS = [
       "hype",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/Blue%20Bird%20Ikimonogakari"
+    "spotifyUrl": "https://open.spotify.com/search/Blue%20Bird%20Ikimonogakari",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/a5/c3/9aa5c3d6-b763-a852-e3f2-60f5270f196e/mzaf_13214537326205111491.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/a5/c3/9aa5c3d6-b763-a852-e3f2-60f5270f196e/mzaf_13214537326205111491.plus.aac.p.m4a"
   },
   {
     "id": 253,
@@ -11350,7 +11854,9 @@ const SONGS = [
       "sad",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/Sign%20FLOW"
+    "spotifyUrl": "https://open.spotify.com/search/Sign%20FLOW",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/24/c8/93/24c89307-77b9-49ae-d703-cd6bb6b5cc4c/mzaf_16738229274062920705.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/24/c8/93/24c89307-77b9-49ae-d703-cd6bb6b5cc4c/mzaf_16738229274062920705.plus.aac.p.m4a"
   },
   {
     "id": 254,
@@ -11374,7 +11880,9 @@ const SONGS = [
       "hype",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/Again%20YUI"
+    "spotifyUrl": "https://open.spotify.com/search/Again%20YUI",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/48/2f/4f/482f4fca-6848-9ab5-4f6a-e76cee5a6c98/mzaf_17040137880719986209.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/48/2f/4f/482f4fca-6848-9ab5-4f6a-e76cee5a6c98/mzaf_17040137880719986209.plus.aac.p.m4a"
   },
   {
     "id": 255,
@@ -11398,7 +11906,9 @@ const SONGS = [
       "hype",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/Gurenge%20LiSA"
+    "spotifyUrl": "https://open.spotify.com/search/Gurenge%20LiSA",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/9f/31/029f31d9-865f-8238-795d-0a69106cd7bd/mzaf_4087349157470098609.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/9f/31/029f31d9-865f-8238-795d-0a69106cd7bd/mzaf_4087349157470098609.plus.aac.p.m4a"
   },
   {
     "id": 256,
@@ -11422,7 +11932,9 @@ const SONGS = [
       "sad",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/Homura%20LiSA"
+    "spotifyUrl": "https://open.spotify.com/search/Homura%20LiSA",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0b/4a/47/0b4a47b3-159e-fdb0-c2a2-608a1c3a8bb1/mzaf_4434592051303284611.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0b/4a/47/0b4a47b3-159e-fdb0-c2a2-608a1c3a8bb1/mzaf_4434592051303284611.plus.aac.p.m4a"
   },
   {
     "id": 257,
@@ -11446,7 +11958,9 @@ const SONGS = [
       "sad",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/Akuma%20no%20Ko%20Ai%20Higuchi"
+    "spotifyUrl": "https://open.spotify.com/search/Akuma%20no%20Ko%20Ai%20Higuchi",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4c/89/a6/4c89a6f6-89d7-957c-bee0-d4ff622a56ee/mzaf_15664807686809922181.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4c/89/a6/4c89a6f6-89d7-957c-bee0-d4ff622a56ee/mzaf_15664807686809922181.plus.aac.p.m4a"
   },
   {
     "id": 258,
@@ -11470,7 +11984,9 @@ const SONGS = [
       "hype",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/Shinzou%20wo%20Sasageyo!%20Linked%20Horizon"
+    "spotifyUrl": "https://open.spotify.com/search/Shinzou%20wo%20Sasageyo!%20Linked%20Horizon",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d6/a4/11/d6a411db-7be8-5dcf-1a32-63898c89a724/mzaf_8962357708499511048.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/d6/a4/11/d6a411db-7be8-5dcf-1a32-63898c89a724/mzaf_8962357708499511048.plus.aac.p.m4a"
   },
   {
     "id": 259,
@@ -11494,7 +12010,9 @@ const SONGS = [
       "chill",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/Red%20Swan%20YOSHIKI%20feat.%20HYDE"
+    "spotifyUrl": "https://open.spotify.com/search/Red%20Swan%20YOSHIKI%20feat.%20HYDE",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/a5/21/aba521b2-1931-2ff6-5d2a-40953a757993/mzaf_10633737123938191815.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/a5/21/aba521b2-1931-2ff6-5d2a-40953a757993/mzaf_10633737123938191815.plus.aac.p.m4a"
   },
   {
     "id": 260,
@@ -11518,7 +12036,9 @@ const SONGS = [
       "hype",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/Mephisto%20Queen%20Bee"
+    "spotifyUrl": "https://open.spotify.com/search/Mephisto%20Queen%20Bee",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/94/f8/ab94f80e-df3a-5f12-8bda-36ffda3ee208/mzaf_18055957024459030175.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/94/f8/ab94f80e-df3a-5f12-8bda-36ffda3ee208/mzaf_18055957024459030175.plus.aac.p.m4a"
   },
   {
     "id": 261,
@@ -11542,7 +12062,9 @@ const SONGS = [
       "chill",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/odoriko%20Vaundy"
+    "spotifyUrl": "https://open.spotify.com/search/odoriko%20Vaundy",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/1c/69/ba1c690e-5187-1fbe-829c-cbb36d013d1c/mzaf_16225330016265705451.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/1c/69/ba1c690e-5187-1fbe-829c-cbb36d013d1c/mzaf_16225330016265705451.plus.aac.p.m4a"
   },
   {
     "id": 262,
@@ -11566,7 +12088,9 @@ const SONGS = [
       "hype",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/Kaijuu%20no%20Hanauta%20Vaundy"
+    "spotifyUrl": "https://open.spotify.com/search/Kaijuu%20no%20Hanauta%20Vaundy",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/9a/ec/c59aec70-94cd-1bac-884e-2cd8c1401abf/mzaf_17538645848549560384.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/9a/ec/c59aec70-94cd-1bac-884e-2cd8c1401abf/mzaf_17538645848549560384.plus.aac.p.m4a"
   },
   {
     "id": 263,
@@ -11590,7 +12114,9 @@ const SONGS = [
       "chill",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/Sweater%20Weather%20The%20Neighbourhood"
+    "spotifyUrl": "https://open.spotify.com/search/Sweater%20Weather%20The%20Neighbourhood",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/37/20/8c372047-2727-8054-9411-0e4867643dd8/mzaf_10169659262182214119.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/37/20/8c372047-2727-8054-9411-0e4867643dd8/mzaf_10169659262182214119.plus.aac.p.m4a"
   },
   {
     "id": 264,
@@ -11614,7 +12140,9 @@ const SONGS = [
       "love",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/Night%20Changes%20One%20Direction"
+    "spotifyUrl": "https://open.spotify.com/search/Night%20Changes%20One%20Direction",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ec/0b/95/ec0b9501-fa6e-a789-ef22-aa6b64c54329/mzaf_15278239933131766406.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ec/0b/95/ec0b9501-fa6e-a789-ef22-aa6b64c54329/mzaf_15278239933131766406.plus.aac.p.m4a"
   },
   {
     "id": 265,
@@ -11638,7 +12166,9 @@ const SONGS = [
       "chill",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/Duvet%20b%C3%B4a"
+    "spotifyUrl": "https://open.spotify.com/search/Duvet%20b%C3%B4a",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8a/f5/82/8af582c2-c361-9494-327a-d3075068d740/mzaf_17099126382276763793.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8a/f5/82/8af582c2-c361-9494-327a-d3075068d740/mzaf_17099126382276763793.plus.aac.p.m4a"
   },
   {
     "id": 266,
@@ -11662,7 +12192,9 @@ const SONGS = [
       "sad",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%9A%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%A5%E0%B8%B7%E0%B8%A1%20(Erase)%20Ink%20Waruntorn"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%9A%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%A5%E0%B8%B7%E0%B8%A1%20(Erase)%20Ink%20Waruntorn",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/25/82/87/25828778-7153-a4c7-d122-57e428450466/mzaf_5411916731022249839.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/25/82/87/25828778-7153-a4c7-d122-57e428450466/mzaf_5411916731022249839.plus.aac.p.m4a"
   },
   {
     "id": 267,
@@ -11686,7 +12218,9 @@ const SONGS = [
       "love",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%95%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%AD%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%20Ink%20Waruntorn"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%95%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%AD%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%20Ink%20Waruntorn",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/64/a6/db/64a6db06-8931-cd05-30a7-6ff976ed96ca/mzaf_1200240892676868907.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/64/a6/db/64a6db06-8931-cd05-30a7-6ff976ed96ca/mzaf_1200240892676868907.plus.aac.p.m4a"
   },
   {
     "id": 268,
@@ -11710,7 +12244,9 @@ const SONGS = [
       "chill",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87%E0%B9%81%E0%B8%95%E0%B9%88%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B8%99%E0%B8%AD%E0%B8%B7%E0%B9%88%E0%B8%99%20Ink%20Waruntorn%20feat.%20Sprite"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87%E0%B9%81%E0%B8%95%E0%B9%88%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B8%99%E0%B8%AD%E0%B8%B7%E0%B9%88%E0%B8%99%20Ink%20Waruntorn%20feat.%20Sprite",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1b/99/3a/1b993a9f-7b34-df23-707b-4f03f6feb157/mzaf_6608298572200764123.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1b/99/3a/1b993a9f-7b34-df23-707b-4f03f6feb157/mzaf_6608298572200764123.plus.aac.p.m4a"
   },
   {
     "id": 269,
@@ -11734,7 +12270,9 @@ const SONGS = [
       "sad",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%9F%E0%B8%99%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%B2%E0%B8%84%E0%B8%99%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B8%94%20SLAPKISS"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%9F%E0%B8%99%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%B2%E0%B8%84%E0%B8%99%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B8%94%20SLAPKISS",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9f/d1/57/9fd157f8-f92d-70e3-68b7-122d726b8d80/mzaf_604165407385122578.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9f/d1/57/9fd157f8-f92d-70e3-68b7-122d726b8d80/mzaf_604165407385122578.plus.aac.p.m4a"
   },
   {
     "id": 270,
@@ -11758,7 +12296,9 @@ const SONGS = [
       "sad",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%80%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%94%E0%B8%B9%E0%B9%81%E0%B8%A5%E0%B9%80%E0%B8%98%E0%B8%AD%20Three%20Man%20Down"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%80%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%94%E0%B8%B9%E0%B9%81%E0%B8%A5%E0%B9%80%E0%B8%98%E0%B8%AD%20Three%20Man%20Down",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/81/51/1c/81511c9e-378d-4053-2565-28d81c970bbf/mzaf_14411542490329709246.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/81/51/1c/81511c9e-378d-4053-2565-28d81c970bbf/mzaf_14411542490329709246.plus.aac.p.m4a"
   },
   {
     "id": 271,
@@ -11782,7 +12322,9 @@ const SONGS = [
       "love",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%A2%E0%B8%B4%E0%B9%89%E0%B8%A1%20POLYCAT"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%A2%E0%B8%B4%E0%B9%89%E0%B8%A1%20POLYCAT",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2f/3f/ac/2f3fac81-9e83-4ae6-5171-841804b44c6f/mzaf_16866220623392363387.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2f/3f/ac/2f3fac81-9e83-4ae6-5171-841804b44c6f/mzaf_16866220623392363387.plus.aac.p.m4a"
   },
   {
     "id": 272,
@@ -11806,7 +12348,9 @@ const SONGS = [
       "sad",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%93%E0%B9%8C%20(I%20Want%20You)%20POLYCAT"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%93%E0%B9%8C%20(I%20Want%20You)%20POLYCAT",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/5a/f7/e55af74d-5e28-ce04-ba12-c57fbe58af12/mzaf_9994674882709681890.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/5a/f7/e55af74d-5e28-ce04-ba12-c57fbe58af12/mzaf_9994674882709681890.plus.aac.p.m4a"
   },
   {
     "id": 273,
@@ -11830,7 +12374,9 @@ const SONGS = [
       "sad",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%9A%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%3F%20(So%20Long)%20POLYCAT"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%9A%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%3F%20(So%20Long)%20POLYCAT",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/db/c6/d7dbc6b7-df68-509b-393c-d2e7461e4782/mzaf_16441888389148470421.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/db/c6/d7dbc6b7-df68-509b-393c-d2e7461e4782/mzaf_16441888389148470421.plus.aac.p.m4a"
   },
   {
     "id": 274,
@@ -11854,7 +12400,9 @@ const SONGS = [
       "sad",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%A3%E0%B8%B1%E0%B8%81%20(Dear%20Friend)%20The%20Parkinson"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%A3%E0%B8%B1%E0%B8%81%20(Dear%20Friend)%20The%20Parkinson",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/27/11/ba/2711baa9-8b79-9a14-4eef-1415e1d0ea18/mzaf_6442225337578644867.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/27/11/ba/2711baa9-8b79-9a14-4eef-1415e1d0ea18/mzaf_6442225337578644867.plus.aac.p.m4a"
   },
   {
     "id": 275,
@@ -11878,7 +12426,9 @@ const SONGS = [
       "sad",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%A1%E0%B8%94%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7%20(Cheers)%20The%20Parkinson"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%A1%E0%B8%94%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7%20(Cheers)%20The%20Parkinson",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/98/ce/8398ce0f-bee4-06c1-2466-ad1e6ca33e50/mzaf_928090392430032362.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/98/ce/8398ce0f-bee4-06c1-2466-ad1e6ca33e50/mzaf_928090392430032362.plus.aac.p.m4a"
   },
   {
     "id": 276,
@@ -11902,7 +12452,9 @@ const SONGS = [
       "love",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9A%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%A2%20(Best%20Wishes)%20Bowkylion"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9A%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%A2%20(Best%20Wishes)%20Bowkylion",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/1b/29/831b29ed-6124-a13a-fb5e-1641f3b26631/mzaf_11183248487603969900.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/1b/29/831b29ed-6124-a13a-fb5e-1641f3b26631/mzaf_11183248487603969900.plus.aac.p.m4a"
   },
   {
     "id": 277,
@@ -11926,7 +12478,9 @@ const SONGS = [
       "love",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%20(Post-it)%20Bowkylion"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%20(Post-it)%20Bowkylion",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/1b/29/831b29ed-6124-a13a-fb5e-1641f3b26631/mzaf_11183248487603969900.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/1b/29/831b29ed-6124-a13a-fb5e-1641f3b26631/mzaf_11183248487603969900.plus.aac.p.m4a"
   },
   {
     "id": 278,
@@ -11950,7 +12504,9 @@ const SONGS = [
       "love",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88%20Mirrr"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88%20Mirrr",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/a7/ab/b7a7ab8a-2c84-2218-01ae-cca4b110346d/mzaf_12733890203505854122.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/a7/ab/b7a7ab8a-2c84-2218-01ae-cca4b110346d/mzaf_12733890203505854122.plus.aac.p.m4a"
   },
   {
     "id": 279,
@@ -11974,7 +12530,9 @@ const SONGS = [
       "chill",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%94%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B9%8A%E0%B8%9B%E0%B8%9A%E0%B8%B5%20Chrrissa%20Chot"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%94%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B9%8A%E0%B8%9B%E0%B8%9A%E0%B8%B5%20Chrrissa%20Chot",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/ca/32/cb/ca32cbd3-6e00-5d33-72c4-7d71ee456d73/mzaf_15308886385266869376.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/ca/32/cb/ca32cbd3-6e00-5d33-72c4-7d71ee456d73/mzaf_15308886385266869376.plus.aac.p.m4a"
   },
   {
     "id": 280,
@@ -11998,7 +12556,9 @@ const SONGS = [
       "sad",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A2%E0%B8%B4%E0%B8%99%E0%B8%94%E0%B8%B5%20(Happy%20For%20You)%20Sarah%20Salola"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A2%E0%B8%B4%E0%B8%99%E0%B8%94%E0%B8%B5%20(Happy%20For%20You)%20Sarah%20Salola",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/4a/bb/aa/4abbaad0-6911-aa8c-6b45-4a99f5c54773/mzaf_9453094306125921868.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/4a/bb/aa/4abbaad0-6911-aa8c-6b45-4a99f5c54773/mzaf_9453094306125921868.plus.aac.p.m4a"
   },
   {
     "id": 281,
@@ -12022,7 +12582,9 @@ const SONGS = [
       "love",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%AD%E0%B8%B2%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%81%E0%B8%B2%E0%B8%A1%E0%B8%B2%E0%B8%A7%E0%B8%87%20Bell%20Warisara"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%AD%E0%B8%B2%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%81%E0%B8%B2%E0%B8%A1%E0%B8%B2%E0%B8%A7%E0%B8%87%20Bell%20Warisara",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/29/08/db/2908db02-32cc-c24e-50a6-4583a85b5369/mzaf_5867430908003016888.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/29/08/db/2908db02-32cc-c24e-50a6-4583a85b5369/mzaf_5867430908003016888.plus.aac.p.m4a"
   },
   {
     "id": 282,
@@ -12046,7 +12608,9 @@ const SONGS = [
       "love",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%99%E0%B8%AB%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B9%84%E0%B8%A1%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B9%80%E0%B8%A7%E0%B8%9F%20(Microwave)%20Bell%20Warisara"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%99%E0%B8%AB%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B9%84%E0%B8%A1%E0%B9%82%E0%B8%84%E0%B8%A3%E0%B9%80%E0%B8%A7%E0%B8%9F%20(Microwave)%20Bell%20Warisara",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8b/31/d3/8b31d3fe-4318-789a-23a5-acfdfd032642/mzaf_10671997517877613953.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8b/31/d3/8b31d3fe-4318-789a-23a5-acfdfd032642/mzaf_10671997517877613953.plus.aac.p.m4a"
   },
   {
     "id": 283,
@@ -12070,7 +12634,9 @@ const SONGS = [
       "love",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%AD%E0%B8%94%E0%B9%83%E0%B8%99%E0%B9%83%E0%B8%88%20(One%20Ok)%20Billkin%20feat.%20Jaylerr"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%AD%E0%B8%94%E0%B9%83%E0%B8%99%E0%B9%83%E0%B8%88%20(One%20Ok)%20Billkin%20feat.%20Jaylerr",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/07/c3/01/07c3017c-4ecf-5a35-7ba7-7ce3ddcd2e9e/mzaf_3428982367352057917.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/07/c3/01/07c3017c-4ecf-5a35-7ba7-7ce3ddcd2e9e/mzaf_3428982367352057917.plus.aac.p.m4a"
   },
   {
     "id": 284,
@@ -12094,7 +12660,9 @@ const SONGS = [
       "sad",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%9B%E0%B8%A5%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%AD%E0%B8%AD%E0%B8%81%20Billkin"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%9B%E0%B8%A5%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%AD%E0%B8%AD%E0%B8%81%20Billkin",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/07/c3/01/07c3017c-4ecf-5a35-7ba7-7ce3ddcd2e9e/mzaf_3428982367352057917.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/07/c3/01/07c3017c-4ecf-5a35-7ba7-7ce3ddcd2e9e/mzaf_3428982367352057917.plus.aac.p.m4a"
   },
   {
     "id": 285,
@@ -12118,7 +12686,9 @@ const SONGS = [
       "love",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%82%E0%B8%84%E0%B8%95%E0%B8%A3%E0%B8%9E%E0%B8%B4%E0%B9%80%E0%B8%A8%E0%B8%A9%20Billkin"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%82%E0%B8%84%E0%B8%95%E0%B8%A3%E0%B8%9E%E0%B8%B4%E0%B9%80%E0%B8%A8%E0%B8%A9%20Billkin",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b4/f4/b4/b4f4b491-0fb8-b419-8eb7-14903a2c6a67/mzaf_9538742581248410138.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b4/f4/b4/b4f4b491-0fb8-b419-8eb7-14903a2c6a67/mzaf_9538742581248410138.plus.aac.p.m4a"
   },
   {
     "id": 286,
@@ -12142,7 +12712,9 @@ const SONGS = [
       "love",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/Mr.%20Everything%20Billkin"
+    "spotifyUrl": "https://open.spotify.com/search/Mr.%20Everything%20Billkin",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/88/60/93/88609322-b09d-210b-b46d-89492aaec126/mzaf_193115905557089572.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/88/60/93/88609322-b09d-210b-b46d-89492aaec126/mzaf_193115905557089572.plus.aac.p.m4a"
   },
   {
     "id": 287,
@@ -12166,7 +12738,9 @@ const SONGS = [
       "love",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%B4%E0%B8%87%20NONT%20TANONT"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%B4%E0%B8%87%20NONT%20TANONT",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/68/25/6668253c-aa17-85c5-4ad4-d112e0d7cd1e/mzaf_4161458375630754491.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/68/25/6668253c-aa17-85c5-4ad4-d112e0d7cd1e/mzaf_4161458375630754491.plus.aac.p.m4a"
   },
   {
     "id": 288,
@@ -12190,7 +12764,9 @@ const SONGS = [
       "love",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%B8%E0%B8%81%E0%B8%99%E0%B8%B2%E0%B8%97%E0%B8%B5%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AA%E0%B8%A7%E0%B8%A2%E0%B8%87%E0%B8%B2%E0%B8%A1%20(Always%20With%20Me)%20NONT%20TANONT"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%B8%E0%B8%81%E0%B8%99%E0%B8%B2%E0%B8%97%E0%B8%B5%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AA%E0%B8%A7%E0%B8%A2%E0%B8%87%E0%B8%B2%E0%B8%A1%20(Always%20With%20Me)%20NONT%20TANONT",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/54/e7/1954e7f4-b211-849d-03a4-94a515c197df/mzaf_10611984984504241868.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/54/e7/1954e7f4-b211-849d-03a4-94a515c197df/mzaf_10611984984504241868.plus.aac.p.m4a"
   },
   {
     "id": 289,
@@ -12214,7 +12790,9 @@ const SONGS = [
       "sad",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%88%E0%B8%B3%E0%B8%99%E0%B8%99%20(White%20Flag)%20NONT%20TANONT"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%88%E0%B8%B3%E0%B8%99%E0%B8%99%20(White%20Flag)%20NONT%20TANONT",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3f/be/b9/3fbeb9fa-3537-ee85-553c-c9992f3aa3ff/mzaf_11225322134181997478.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3f/be/b9/3fbeb9fa-3537-ee85-553c-c9992f3aa3ff/mzaf_11225322134181997478.plus.aac.p.m4a"
   },
   {
     "id": 290,
@@ -12238,7 +12816,9 @@ const SONGS = [
       "sad",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%88%E0%B9%87%E0%B8%9A%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%87%20NONT%20TANONT"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%88%E0%B9%87%E0%B8%9A%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%87%20NONT%20TANONT",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/88/7a/86/887a8612-f04c-9e99-2244-338d8dd47b1d/mzaf_7382844161794732783.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/88/7a/86/887a8612-f04c-9e99-2244-338d8dd47b1d/mzaf_7382844161794732783.plus.aac.p.m4a"
   },
   {
     "id": 291,
@@ -12262,7 +12842,9 @@ const SONGS = [
       "hype",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%AA%E0%B9%81%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%87%20(Pretend)%20Paper%20Planes%20feat.%20MOON"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%AA%E0%B9%81%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%87%20(Pretend)%20Paper%20Planes%20feat.%20MOON",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/c2/ee/17c2ee1a-86fe-9824-3fb0-317616b49045/mzaf_10653722034220541901.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/c2/ee/17c2ee1a-86fe-9824-3fb0-317616b49045/mzaf_10653722034220541901.plus.aac.p.m4a"
   },
   {
     "id": 292,
@@ -12286,7 +12868,9 @@ const SONGS = [
       "hype",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%9A%E0%B8%94%20(Bad%20Boy)%20Paper%20Planes"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%A3%E0%B8%87%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%9A%E0%B8%94%20(Bad%20Boy)%20Paper%20Planes",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/90/a0/8c90a081-b8f8-8d89-acf7-3531400bd49d/mzaf_1875861912879165721.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/90/a0/8c90a081-b8f8-8d89-acf7-3531400bd49d/mzaf_1875861912879165721.plus.aac.p.m4a"
   },
   {
     "id": 293,
@@ -12310,7 +12894,9 @@ const SONGS = [
       "sad",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B9%80%E0%B8%94%E0%B8%B7%E0%B8%AD%E0%B8%99%20JOEY%20PHUWASIT"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B9%80%E0%B8%94%E0%B8%B7%E0%B8%AD%E0%B8%99%20JOEY%20PHUWASIT",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/64/31/d964312a-8619-ca7c-2580-1844e0fdf698/mzaf_8881744960688057961.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/64/31/d964312a-8619-ca7c-2580-1844e0fdf698/mzaf_8881744960688057961.plus.aac.p.m4a"
   },
   {
     "id": 294,
@@ -12334,7 +12920,9 @@ const SONGS = [
       "hype",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A5%E0%B8%B4%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%AD%E0%B8%87%20Paper%20Planes%20x%20Joey%20Phuwasit"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2%E0%B8%A5%E0%B8%B4%E0%B9%89%E0%B8%99%E0%B8%97%E0%B8%AD%E0%B8%87%20Paper%20Planes%20x%20Joey%20Phuwasit",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0f/9b/d6/0f9bd6dd-9e87-36fc-1f0a-788c5d41369d/mzaf_13961912807424325430.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0f/9b/d6/0f9bd6dd-9e87-36fc-1f0a-788c5d41369d/mzaf_13961912807424325430.plus.aac.p.m4a"
   },
   {
     "id": 295,
@@ -12358,7 +12946,9 @@ const SONGS = [
       "chill",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%99%E0%B8%A5%E0%B8%B0%E0%B8%8A%E0%B8%B1%E0%B9%89%E0%B8%99%20Jaonaay"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%99%E0%B8%A5%E0%B8%B0%E0%B8%8A%E0%B8%B1%E0%B9%89%E0%B8%99%20Jaonaay",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e7/4c/f3/e74cf32f-7036-4023-cfec-b0bd55c67247/mzaf_1897628885734558985.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e7/4c/f3/e74cf32f-7036-4023-cfec-b0bd55c67247/mzaf_1897628885734558985.plus.aac.p.m4a"
   },
   {
     "id": 296,
@@ -12382,7 +12972,9 @@ const SONGS = [
       "sad",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%B9%E0%B8%94%E0%B8%97%E0%B8%B3%E0%B9%84%E0%B8%A1%20%E0%B8%95%E0%B8%B9%E0%B9%88%20%E0%B8%A0%E0%B8%9E%E0%B8%98%E0%B8%A3"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%B9%E0%B8%94%E0%B8%97%E0%B8%B3%E0%B9%84%E0%B8%A1%20%E0%B8%95%E0%B8%B9%E0%B9%88%20%E0%B8%A0%E0%B8%9E%E0%B8%98%E0%B8%A3",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d5/53/f1/d553f1c4-9beb-e70c-ad8e-eaac26810153/mzaf_13309458600547057550.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d5/53/f1/d553f1c4-9beb-e70c-ad8e-eaac26810153/mzaf_13309458600547057550.plus.aac.p.m4a"
   },
   {
     "id": 297,
@@ -12406,7 +12998,9 @@ const SONGS = [
       "love",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B8%94%E0%B9%80%E0%B8%96%E0%B8%AD%E0%B8%B0%20%E0%B9%81%E0%B8%9E%E0%B8%A3%E0%B8%A7%20%E0%B8%84%E0%B8%93%E0%B8%B4%E0%B8%95%E0%B8%81%E0%B8%B8%E0%B8%A5"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B8%94%E0%B9%80%E0%B8%96%E0%B8%AD%E0%B8%B0%20%E0%B9%81%E0%B8%9E%E0%B8%A3%E0%B8%A7%20%E0%B8%84%E0%B8%93%E0%B8%B4%E0%B8%95%E0%B8%81%E0%B8%B8%E0%B8%A5",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/41/4d/94/414d94b3-c3c0-570f-a98c-60c21d614836/mzaf_12675013831786128287.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/41/4d/94/414d94b3-c3c0-570f-a98c-60c21d614836/mzaf_12675013831786128287.plus.aac.p.m4a"
   },
   {
     "id": 298,
@@ -12430,7 +13024,9 @@ const SONGS = [
       "chill",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%88%E0%B8%81%E0%B9%87%E0%B8%97%E0%B8%B1%E0%B8%81%E0%B8%A1%E0%B8%B2%20Jeff%20Satur"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%88%E0%B8%81%E0%B9%87%E0%B8%97%E0%B8%B1%E0%B8%81%E0%B8%A1%E0%B8%B2%20Jeff%20Satur",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/a7/ab/b7a7ab8a-2c84-2218-01ae-cca4b110346d/mzaf_12733890203505854122.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/a7/ab/b7a7ab8a-2c84-2218-01ae-cca4b110346d/mzaf_12733890203505854122.plus.aac.p.m4a"
   },
   {
     "id": 299,
@@ -12454,7 +13050,9 @@ const SONGS = [
       "sad",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B7%E0%B8%A1%E0%B9%81%E0%B8%97%E0%B8%9A%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%AB%E0%B8%A7%20SARAN%20feat.%20Maimhon"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B7%E0%B8%A1%E0%B9%81%E0%B8%97%E0%B8%9A%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%AB%E0%B8%A7%20SARAN%20feat.%20Maimhon",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ab/16/c1/ab16c133-7bdc-01e6-0e6c-f9ff0c8c9f41/mzaf_3282050872927801930.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ab/16/c1/ab16c133-7bdc-01e6-0e6c-f9ff0c8c9f41/mzaf_3282050872927801930.plus.aac.p.m4a"
   },
   {
     "id": 300,
@@ -12478,7 +13076,9 @@ const SONGS = [
       "sad",
       "Typography Edit"
     ],
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%88%E0%B8%B4%E0%B8%95%20Pop%20Pongkool%20x%20Da%20Endorphine"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%88%E0%B8%B4%E0%B8%95%20Pop%20Pongkool%20x%20Da%20Endorphine",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/6e/34/e66e34c2-c971-ef2c-2e0f-f8a99e220912/mzaf_7695861381642299193.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/6e/34/e66e34c2-c971-ef2c-2e0f-f8a99e220912/mzaf_7695861381642299193.plus.aac.p.m4a"
   },
   {
     "id": 301,
@@ -12498,7 +13098,9 @@ const SONGS = [
       "Romantic",
       "Typography Edit"
     ],
-    "badge": "💍 เพลงคู่รักแห่งศตวรรษ"
+    "badge": "💍 เพลงคู่รักแห่งศตวรรษ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/6a/99/076a99ed-b946-431b-6f1f-54fa187ca5bd/mzaf_8102882277995122875.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/6a/99/076a99ed-b946-431b-6f1f-54fa187ca5bd/mzaf_8102882277995122875.plus.aac.p.m4a"
   },
   {
     "id": 302,
@@ -12518,7 +13120,9 @@ const SONGS = [
       "Dance",
       "Fast Cut"
     ],
-    "badge": "🕺 บีทไวรัลโลก แดนซ์ไทโปสะบัด"
+    "badge": "🕺 บีทไวรัลโลก แดนซ์ไทโปสะบัด",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/54/5e/5c545e9a-c8ca-c673-f85d-a74b14c2c882/mzaf_2313943576213161760.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/54/5e/5c545e9a-c8ca-c673-f85d-a74b14c2c882/mzaf_2313943576213161760.plus.aac.p.m4a"
   },
   {
     "id": 303,
@@ -12538,7 +13142,9 @@ const SONGS = [
       "Supernatural",
       "Hype"
     ],
-    "badge": "👻 เพลงเปิด Dandadan หลอนมันส์สะใจ"
+    "badge": "👻 เพลงเปิด Dandadan หลอนมันส์สะใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/54/5e/5c545e9a-c8ca-c673-f85d-a74b14c2c882/mzaf_2313943576213161760.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/54/5e/5c545e9a-c8ca-c673-f85d-a74b14c2c882/mzaf_2313943576213161760.plus.aac.p.m4a"
   },
   {
     "id": 304,
@@ -12558,7 +13164,9 @@ const SONGS = [
       "Viral",
       "Anime OP"
     ],
-    "badge": "⭐ เพลงระดับตำนาน เกิดใหม่เป็นลูกโอชิ"
+    "badge": "⭐ เพลงระดับตำนาน เกิดใหม่เป็นลูกโอชิ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/db/16/f0db16be-457e-f10f-98b6-f30b11de34e4/mzaf_5189430943078523093.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/db/16/f0db16be-457e-f10f-98b6-f30b11de34e4/mzaf_5189430943078523093.plus.aac.p.m4a"
   },
   {
     "id": 305,
@@ -12578,7 +13186,9 @@ const SONGS = [
       "Fantasy",
       "Story"
     ],
-    "badge": "🧝‍♀️ บทกวีผู้กล้าและความทรงจำของฟรีเรน"
+    "badge": "🧝‍♀️ บทกวีผู้กล้าและความทรงจำของฟรีเรน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/db/16/f0db16be-457e-f10f-98b6-f30b11de34e4/mzaf_5189430943078523093.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/db/16/f0db16be-457e-f10f-98b6-f30b11de34e4/mzaf_5189430943078523093.plus.aac.p.m4a"
   },
   {
     "id": 306,
@@ -12598,7 +13208,9 @@ const SONGS = [
       "Rock",
       "Madness"
     ],
-    "badge": "⛓️ เลื่อยยนต์คลั่ง บีทระเบิดอารมณ์"
+    "badge": "⛓️ เลื่อยยนต์คลั่ง บีทระเบิดอารมณ์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/2d/45/862d4572-805c-3a72-49a4-905a8c327888/mzaf_14805576631717868964.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/2d/45/862d4572-805c-3a72-49a4-905a8c327888/mzaf_14805576631717868964.plus.aac.p.m4a"
   },
   {
     "id": 307,
@@ -12618,7 +13230,9 @@ const SONGS = [
       "Shibuya Incident",
       "Chaos"
     ],
-    "badge": "👁️ เพลงชาติชิบูย่า 'You are my special'"
+    "badge": "👁️ เพลงชาติชิบูย่า 'You are my special'",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/5d/57/045d57fb-d1c4-2979-31ef-485662a97783/mzaf_7661994685536659402.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/5d/57/045d57fb-d1c4-2979-31ef-485662a97783/mzaf_7661994685536659402.plus.aac.p.m4a"
   },
   {
     "id": 308,
@@ -12637,7 +13251,9 @@ const SONGS = [
       "Kaiju No. 8",
       "Alternative Rock"
     ],
-    "badge": "🦖 ร็อคเปิดตัว ไคจูหมายเลข 8"
+    "badge": "🦖 ร็อคเปิดตัว ไคจูหมายเลข 8",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/b0/ef/17b0ef44-1d0a-8ca4-7442-53a5fba773fb/mzaf_16206251573451214130.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/b0/ef/17b0ef44-1d0a-8ca4-7442-53a5fba773fb/mzaf_16206251573451214130.plus.aac.p.m4a"
   },
   {
     "id": 309,
@@ -12657,7 +13273,9 @@ const SONGS = [
       "คลั่งรัก",
       "Romantic"
     ],
-    "badge": "☕ เธอฆ่าคนด้วยสายตา เพียงแค่เธอนั้นมองมา"
+    "badge": "☕ เธอฆ่าคนด้วยสายตา เพียงแค่เธอนั้นมองมา",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/5f/f4/f45ff486-6fa0-9df5-9d58-8ed552c86140/mzaf_5412811150878921175.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/5f/f4/f45ff486-6fa0-9df5-9d58-8ed552c86140/mzaf_5412811150878921175.plus.aac.p.m4a"
   },
   {
     "id": 310,
@@ -12677,7 +13295,9 @@ const SONGS = [
       "ซึ้งกินใจ",
       "Sad"
     ],
-    "badge": "🕊️ ถ้าเราเจอกันอีก ในวันที่เราทั้งคู่เติบโต"
+    "badge": "🕊️ ถ้าเราเจอกันอีก ในวันที่เราทั้งคู่เติบโต",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/1b/5c/021b5c1f-dd10-80f6-f78b-8d338c1af224/mzaf_9496894947285646060.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/1b/5c/021b5c1f-dd10-80f6-f78b-8d338c1af224/mzaf_9496894947285646060.plus.aac.p.m4a"
   },
   {
     "id": 311,
@@ -12697,7 +13317,9 @@ const SONGS = [
       "น้ำตาซึม",
       "อินดี้ป็อป"
     ],
-    "badge": "🥀 ความทรงจำไม่เคยจางหายไปไหน"
+    "badge": "🥀 ความทรงจำไม่เคยจางหายไปไหน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1c/13/a1/1c13a1c4-682c-a104-ce6f-b2394287c14f/mzaf_17818307861761409830.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1c/13/a1/1c13a1c4-682c-a104-ce6f-b2394287c14f/mzaf_17818307861761409830.plus.aac.p.m4a"
   },
   {
     "id": 312,
@@ -12717,7 +13339,9 @@ const SONGS = [
       "อินดี้",
       "อบอุ่น"
     ],
-    "badge": "🌌 ปล่อยให้ดาวหมุนไปตามกาลเวลา"
+    "badge": "🌌 ปล่อยให้ดาวหมุนไปตามกาลเวลา",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/92/21/e2/9221e21b-2b41-fcea-d53e-4b1be1a81397/mzaf_4002739893091787783.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/92/21/e2/9221e21b-2b41-fcea-d53e-4b1be1a81397/mzaf_4002739893091787783.plus.aac.p.m4a"
   },
   {
     "id": 313,
@@ -12737,7 +13361,9 @@ const SONGS = [
       "อคูสติก",
       "น่ารัก"
     ],
-    "badge": "🎸 เธอคือคอร์ดโปรดที่ฉันอยากเล่นซ้ำๆ"
+    "badge": "🎸 เธอคือคอร์ดโปรดที่ฉันอยากเล่นซ้ำๆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/65/1a/b2/651ab205-304c-9a22-9cf2-fc03970fec54/mzaf_4705519762718674207.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/65/1a/b2/651ab205-304c-9a22-9cf2-fc03970fec54/mzaf_4705519762718674207.plus.aac.p.m4a"
   },
   {
     "id": 314,
@@ -12757,7 +13383,9 @@ const SONGS = [
       "น้ำตาแตก",
       "Sad"
     ],
-    "badge": "🎨 ที่เธอเคยวาดไว้ กลับไม่มีเธออยู่ข้างใน"
+    "badge": "🎨 ที่เธอเคยวาดไว้ กลับไม่มีเธออยู่ข้างใน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/f0/2d/76f02d3a-4b61-f285-a84a-272aa2904c63/mzaf_2746150345781827060.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/f0/2d/76f02d3a-4b61-f285-a84a-272aa2904c63/mzaf_2746150345781827060.plus.aac.p.m4a"
   },
   {
     "id": 315,
@@ -12777,7 +13405,9 @@ const SONGS = [
       "คลาสสิกไทย",
       "Vintage"
     ],
-    "badge": "🌸 กลิ่นหอมที่ซ่อนไว้ในใจตลอดกาล"
+    "badge": "🌸 กลิ่นหอมที่ซ่อนไว้ในใจตลอดกาล",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/08/12/36/0812360d-4479-b29d-5275-931b1e541694/mzaf_5285055444520979895.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/08/12/36/0812360d-4479-b29d-5275-931b1e541694/mzaf_5285055444520979895.plus.aac.p.m4a"
   },
   {
     "id": 316,
@@ -12797,7 +13427,9 @@ const SONGS = [
       "Love",
       "Dreamy"
     ],
-    "badge": "🕊️ 'I want you to stay, 'til I'm in the grave'"
+    "badge": "🕊️ 'I want you to stay, 'til I'm in the grave'",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/31/d3/3431d34e-847f-5d66-df83-0bce688d997e/mzaf_18106743962423782018.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/31/d3/3431d34e-847f-5d66-df83-0bce688d997e/mzaf_18106743962423782018.plus.aac.p.m4a"
   },
   {
     "id": 317,
@@ -12817,7 +13449,9 @@ const SONGS = [
       "Dance",
       "Catchy"
     ],
-    "badge": "☕ 'Say you can't sleep, baby, I know That's that me espresso'"
+    "badge": "☕ 'Say you can't sleep, baby, I know That's that me espresso'",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/4d/02/e94d0230-11ee-ef94-d2cf-a5d547bd73f4/mzaf_554140808559155562.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/4d/02/e94d0230-11ee-ef94-d2cf-a5d547bd73f4/mzaf_554140808559155562.plus.aac.p.m4a"
   },
   {
     "id": 318,
@@ -12837,7 +13471,9 @@ const SONGS = [
       "Jazz Pop",
       "Crush"
     ],
-    "badge": "🌸 บอสซาโนวาแจ๊สแสนหวาน 'She's so perfect, blah, blah, blah'"
+    "badge": "🌸 บอสซาโนวาแจ๊สแสนหวาน 'She's so perfect, blah, blah, blah'",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b0/8c/e1/b08ce131-3860-fdbd-43a9-dc4bf1ec78f8/mzaf_18185086236351287888.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b0/8c/e1/b08ce131-3860-fdbd-43a9-dc4bf1ec78f8/mzaf_18185086236351287888.plus.aac.p.m4a"
   },
   {
     "id": 319,
@@ -12857,7 +13493,9 @@ const SONGS = [
       "Cinematic",
       "Glow"
     ],
-    "badge": "🌅 แสงสีทองประกาย เปียโนระดับเวิลด์คลาส"
+    "badge": "🌅 แสงสีทองประกาย เปียโนระดับเวิลด์คลาส",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/02/8c/30028c8a-a125-5466-bcc6-27a83b1c0135/mzaf_16911571635366913039.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/02/8c/30028c8a-a125-5466-bcc6-27a83b1c0135/mzaf_16911571635366913039.plus.aac.p.m4a"
   },
   {
     "id": 320,
@@ -12877,7 +13515,9 @@ const SONGS = [
       "Devotion",
       "Aesthetic"
     ],
-    "badge": "🥀 รักเธอจนยอมตาย 'ตายซะยังจะดีกว่าถ้าต้องจากเธอ'"
+    "badge": "🥀 รักเธอจนยอมตาย 'ตายซะยังจะดีกว่าถ้าต้องจากเธอ'",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/27/a4/b127a427-710b-e65f-e734-ead910b94cbc/mzaf_692825803667967327.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/27/a4/b127a427-710b-e65f-e734-ead910b94cbc/mzaf_692825803667967327.plus.aac.p.m4a"
   },
   {
     "id": 321,
@@ -12898,7 +13538,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/07/43/df/0743dfa2-dfe5-0732-a84b-5a1a2cd7fbb4/dj.kjzyigvy.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/ab/de/e6abde00-0b67-1f59-cb5b-b5d8d4b7e449/mzaf_8805488840482688838.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9C%E0%B8%B5%E0%B9%80%E0%B8%AB%E0%B9%87%E0%B8%99%E0%B8%9C%E0%B8%B5%20Lipta"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9C%E0%B8%B5%E0%B9%80%E0%B8%AB%E0%B9%87%E0%B8%99%E0%B8%9C%E0%B8%B5%20Lipta",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/ab/de/e6abde00-0b67-1f59-cb5b-b5d8d4b7e449/mzaf_8805488840482688838.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/ab/de/e6abde00-0b67-1f59-cb5b-b5d8d4b7e449/mzaf_8805488840482688838.plus.aac.p.m4a"
   },
   {
     "id": 322,
@@ -12919,7 +13561,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/40/31/d6/4031d6e5-6c14-72cb-3ac0-9f238dc74726/859732364931_cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/19/ac/b6/19acb60d-7e8f-6d46-13bc-4969c35694c2/mzaf_15103463905261313447.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%20BOWKYLION"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%20BOWKYLION",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/19/ac/b6/19acb60d-7e8f-6d46-13bc-4969c35694c2/mzaf_15103463905261313447.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/19/ac/b6/19acb60d-7e8f-6d46-13bc-4969c35694c2/mzaf_15103463905261313447.plus.aac.p.m4a"
   },
   {
     "id": 323,
@@ -12940,7 +13584,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/00/41/f0/0041f0ec-4159-56a4-3333-527314493446/888332884709.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/75/da/29/75da2914-b0d0-079c-fab3-74f9c9bce832/mzaf_5007088629268930493.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9A%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%A2%20BOWKYLION"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9A%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%A2%20BOWKYLION",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/75/da/29/75da2914-b0d0-079c-fab3-74f9c9bce832/mzaf_5007088629268930493.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/75/da/29/75da2914-b0d0-079c-fab3-74f9c9bce832/mzaf_5007088629268930493.plus.aac.p.m4a"
   },
   {
     "id": 324,
@@ -12961,7 +13607,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/88/8e/f6/888ef696-be19-993b-627c-37e07dadc264/3617053329292.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/3d/d0/a13dd0f3-d279-2dbb-6b8c-a202ac679a95/mzaf_14155678883415832162.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Boy%20Pablo%20(feat.%20BOWKYLION)%20MILLI"
+    "spotifyUrl": "https://open.spotify.com/search/Boy%20Pablo%20(feat.%20BOWKYLION)%20MILLI",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/3d/d0/a13dd0f3-d279-2dbb-6b8c-a202ac679a95/mzaf_14155678883415832162.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/3d/d0/a13dd0f3-d279-2dbb-6b8c-a202ac679a95/mzaf_14155678883415832162.plus.aac.p.m4a"
   },
   {
     "id": 325,
@@ -12982,7 +13630,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3a/d1/4c/3ad14c38-72fa-5cbc-558b-7ee6ef9d101e/888332916318.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/95/0a/8a/950a8a75-b236-bc32-e016-23fc81dd6af0/mzaf_15220071794383537599.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%99%20%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%99%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%20(Just%20Being%20Friendly)%20%5Bfeat.%20MILLI%5D%20Tilly%20Birds"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%99%20%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B9%88%E0%B8%99%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99%20(Just%20Being%20Friendly)%20%5Bfeat.%20MILLI%5D%20Tilly%20Birds",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/95/0a/8a/950a8a75-b236-bc32-e016-23fc81dd6af0/mzaf_15220071794383537599.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/95/0a/8a/950a8a75-b236-bc32-e016-23fc81dd6af0/mzaf_15220071794383537599.plus.aac.p.m4a"
   },
   {
     "id": 326,
@@ -13003,7 +13653,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6d/28/32/6d2832e0-2f44-16ed-ca20-9c98aadb2cf9/888332914994.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/a0/d5/15a0d550-d86f-c65f-5e15-3d7dc704b179/mzaf_2230048146146833751.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B9%E0%B9%88%E0%B8%A7%E0%B8%B4%E0%B9%88%E0%B8%87%20Tilly%20Birds"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B9%E0%B9%88%E0%B8%A7%E0%B8%B4%E0%B9%88%E0%B8%87%20Tilly%20Birds",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/a0/d5/15a0d550-d86f-c65f-5e15-3d7dc704b179/mzaf_2230048146146833751.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/a0/d5/15a0d550-d86f-c65f-5e15-3d7dc704b179/mzaf_2230048146146833751.plus.aac.p.m4a"
   },
   {
     "id": 327,
@@ -13024,7 +13676,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d1/b9/39/d1b939c6-6773-46ee-0bf9-bf6d458785a0/888332897631.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/79/9d/95/799d95af-1979-bf4a-2fdf-63729b996e8d/mzaf_13867197414949145128.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9D%E0%B8%99%E0%B8%95%E0%B8%81%E0%B9%84%E0%B8%AB%E0%B8%A1%20(Live%20At%20Impact%20Arena%202023)%20Three%20Man%20Down"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9D%E0%B8%99%E0%B8%95%E0%B8%81%E0%B9%84%E0%B8%AB%E0%B8%A1%20(Live%20At%20Impact%20Arena%202023)%20Three%20Man%20Down",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/79/9d/95/799d95af-1979-bf4a-2fdf-63729b996e8d/mzaf_13867197414949145128.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/79/9d/95/799d95af-1979-bf4a-2fdf-63729b996e8d/mzaf_13867197414949145128.plus.aac.p.m4a"
   },
   {
     "id": 328,
@@ -13045,7 +13699,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/74/35/93/74359389-10ad-9c7b-b397-ff226fc92890/888332906746.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/07/4e/f9074e99-418d-e2e8-81cf-4f062294c200/mzaf_13515487952562679555.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%87%20(Nong)%20%5Bfeat.%20UrboyTJ%5D%20Three%20Man%20Down"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%87%20(Nong)%20%5Bfeat.%20UrboyTJ%5D%20Three%20Man%20Down",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/07/4e/f9074e99-418d-e2e8-81cf-4f062294c200/mzaf_13515487952562679555.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/07/4e/f9074e99-418d-e2e8-81cf-4f062294c200/mzaf_13515487952562679555.plus.aac.p.m4a"
   },
   {
     "id": 329,
@@ -13066,7 +13722,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/8c/5d/7c/8c5d7c27-6d75-0ac9-3520-e25865bb53cb/197188388676.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/95/a8/3d/95a83de3-ad7c-5109-4eb3-ebb8b24c66e6/mzaf_16124769710809171100.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%88%E0%B8%B3%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87%20F.HERO%20Tilly%20Birds"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%88%E0%B8%B3%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87%20F.HERO%20Tilly%20Birds",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/95/a8/3d/95a83de3-ad7c-5109-4eb3-ebb8b24c66e6/mzaf_16124769710809171100.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/95/a8/3d/95a83de3-ad7c-5109-4eb3-ebb8b24c66e6/mzaf_16124769710809171100.plus.aac.p.m4a"
   },
   {
     "id": 330,
@@ -13087,7 +13745,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c5/e1/e0/c5e1e0ce-5779-6423-8dd6-e883cf02ba6f/cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a5/f4/2a/a5f42aa9-6607-61bc-5a54-aff133f4d3e3/mzaf_14507165370451016819.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%20(UNNIVERSARY)%20NONT%20TANONT"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%20(UNNIVERSARY)%20NONT%20TANONT",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a5/f4/2a/a5f42aa9-6607-61bc-5a54-aff133f4d3e3/mzaf_14507165370451016819.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a5/f4/2a/a5f42aa9-6607-61bc-5a54-aff133f4d3e3/mzaf_14507165370451016819.plus.aac.p.m4a"
   },
   {
     "id": 331,
@@ -13108,7 +13768,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a7/01/11/a7011103-04f0-9206-cc5d-3b9e522812ba/888332918909.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7c/aa/43/7caa4305-5199-043b-5840-04c553a8856e/mzaf_15947743532366797810.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%B6%E0%B8%87%E0%B8%94%E0%B8%B1%E0%B8%99%20Cocktail%20%26%20Tuk%20Siriporn"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%B6%E0%B8%87%E0%B8%94%E0%B8%B1%E0%B8%99%20Cocktail%20%26%20Tuk%20Siriporn",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7c/aa/43/7caa4305-5199-043b-5840-04c553a8856e/mzaf_15947743532366797810.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7c/aa/43/7caa4305-5199-043b-5840-04c553a8856e/mzaf_15947743532366797810.plus.aac.p.m4a"
   },
   {
     "id": 332,
@@ -13129,7 +13791,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9d/40/33/9d40332f-9fa7-cc6e-c1de-e2e7cb6f6e05/888332997744.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/63/7a/9d/637a9d4f-47b5-d41d-5a75-c2366055c1ad/mzaf_10696006268171849383.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B8%E0%B8%81%E0%B9%80%E0%B8%82%E0%B9%88%E0%B8%B2%20Cocktail"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B8%E0%B8%81%E0%B9%80%E0%B8%82%E0%B9%88%E0%B8%B2%20Cocktail",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/63/7a/9d/637a9d4f-47b5-d41d-5a75-c2366055c1ad/mzaf_10696006268171849383.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/63/7a/9d/637a9d4f-47b5-d41d-5a75-c2366055c1ad/mzaf_10696006268171849383.plus.aac.p.m4a"
   },
   {
     "id": 333,
@@ -13150,7 +13814,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/31/20/5d/31205d25-b029-0a52-2eb7-ccb52d5f06da/197338216385.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/99/d8/5c/99d85cc7-1b70-f98f-a3ac-943cc98655a4/mzaf_12184586061060778773.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%A5%E0%B8%AD%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%99%E0%B8%B1%E0%B9%89%E0%B8%99%20Chilling%20Sunday"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%A5%E0%B8%AD%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%99%E0%B8%B1%E0%B9%89%E0%B8%99%20Chilling%20Sunday",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/99/d8/5c/99d85cc7-1b70-f98f-a3ac-943cc98655a4/mzaf_12184586061060778773.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/99/d8/5c/99d85cc7-1b70-f98f-a3ac-943cc98655a4/mzaf_12184586061060778773.plus.aac.p.m4a"
   },
   {
     "id": 334,
@@ -13171,7 +13837,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/57/95/e6/5795e648-ecaa-f604-50ad-305c2a24319e/8859028150936.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bd/ee/9a/bdee9a13-1826-8e9f-e0c5-c43ca4fe9c67/mzaf_533430522273910553.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%99%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%97%E0%B8%B3%E0%B9%84%E0%B8%A7%E0%B9%89%E0%B8%94%E0%B8%B5%20(Can't%20win)%20Chilling%20Sunday"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%99%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%B2%E0%B9%80%E0%B8%82%E0%B8%B2%E0%B8%97%E0%B8%B3%E0%B9%84%E0%B8%A7%E0%B9%89%E0%B8%94%E0%B8%B5%20(Can't%20win)%20Chilling%20Sunday",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bd/ee/9a/bdee9a13-1826-8e9f-e0c5-c43ca4fe9c67/mzaf_533430522273910553.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bd/ee/9a/bdee9a13-1826-8e9f-e0c5-c43ca4fe9c67/mzaf_533430522273910553.plus.aac.p.m4a"
   },
   {
     "id": 335,
@@ -13192,7 +13860,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/01/2a/21/012a21bb-cfab-6a0c-cc70-2af5ee8b7276/cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/68/53/22/685322f3-b14e-3a0c-e61e-2090e14debcf/mzaf_12539373086656692962.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Kab%20Rod%20Len%20Anatomy%20Rabbit"
+    "spotifyUrl": "https://open.spotify.com/search/Kab%20Rod%20Len%20Anatomy%20Rabbit",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/68/53/22/685322f3-b14e-3a0c-e61e-2090e14debcf/mzaf_12539373086656692962.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/68/53/22/685322f3-b14e-3a0c-e61e-2090e14debcf/mzaf_12539373086656692962.plus.aac.p.m4a"
   },
   {
     "id": 336,
@@ -13213,7 +13883,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/0c/9d/de/0c9ddefa-2444-5404-ef55-cac1fe6aa3d2/cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/52/9c/e8/529ce800-9bdd-57d7-969b-5e73b0112e12/mzaf_15372456788368335050.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%82%E0%B8%AD%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%83%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%98%E0%B8%AD%20Anatomy%20Rabbit"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%82%E0%B8%AD%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B9%83%E0%B8%88%E0%B8%94%E0%B8%B5%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%98%E0%B8%AD%20Anatomy%20Rabbit",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/52/9c/e8/529ce800-9bdd-57d7-969b-5e73b0112e12/mzaf_15372456788368335050.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/52/9c/e8/529ce800-9bdd-57d7-969b-5e73b0112e12/mzaf_15372456788368335050.plus.aac.p.m4a"
   },
   {
     "id": 337,
@@ -13234,7 +13906,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/f5/63/d1/f563d107-7691-64db-6c7c-fc2b628721a5/cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cf/d8/8f/cfd88fca-dea9-956f-58b8-a3b5b80cc028/mzaf_679471082992934543.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B2%20%E0%B8%A5%E0%B8%B2%20%E0%B8%A5%E0%B8%B2%20Dept"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B2%20%E0%B8%A5%E0%B8%B2%20%E0%B8%A5%E0%B8%B2%20Dept",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cf/d8/8f/cfd88fca-dea9-956f-58b8-a3b5b80cc028/mzaf_679471082992934543.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cf/d8/8f/cfd88fca-dea9-956f-58b8-a3b5b80cc028/mzaf_679471082992934543.plus.aac.p.m4a"
   },
   {
     "id": 338,
@@ -13255,7 +13929,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/c1/ee/75/c1ee752f-6650-5137-7d17-e17c89cdd046/cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/68/b5/7668b5e7-7c13-c9e1-7c02-ad2c42f0cf36/mzaf_1856077144740014777.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%87%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%20Dept"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%87%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%20Dept",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/68/b5/7668b5e7-7c13-c9e1-7c02-ad2c42f0cf36/mzaf_1856077144740014777.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/68/b5/7668b5e7-7c13-c9e1-7c02-ad2c42f0cf36/mzaf_1856077144740014777.plus.aac.p.m4a"
   },
   {
     "id": 339,
@@ -13276,7 +13952,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/43/c8/9f/43c89f4b-d109-b3ef-6f8d-e3a0eda02b22/cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f5/cf/00/f5cf00e7-489a-7734-882a-a20450d316b0/mzaf_1049112818015024624.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%9E%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%99%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B9%80%E0%B8%AB%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%99%E0%B8%94%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%97%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%83%E0%B8%9A%20Dept"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%9E%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%99%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B9%80%E0%B8%AB%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%99%E0%B8%94%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B9%82%E0%B8%A5%E0%B8%81%E0%B8%97%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%83%E0%B8%9A%20Dept",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f5/cf/00/f5cf00e7-489a-7734-882a-a20450d316b0/mzaf_1049112818015024624.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f5/cf/00/f5cf00e7-489a-7734-882a-a20450d316b0/mzaf_1049112818015024624.plus.aac.p.m4a"
   },
   {
     "id": 340,
@@ -13297,7 +13975,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c9/c1/6c/c9c16c5e-e99d-c08f-6c88-d5b13d0f03dd/888332936224.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/92/51/36/925136e1-f8c8-815a-b222-dd512ea87501/mzaf_1228418370768204602.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%88%E0%B8%B3%20Pop%20Pongkool"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%88%E0%B8%B3%20Pop%20Pongkool",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/92/51/36/925136e1-f8c8-815a-b222-dd512ea87501/mzaf_1228418370768204602.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/92/51/36/925136e1-f8c8-815a-b222-dd512ea87501/mzaf_1228418370768204602.plus.aac.p.m4a"
   },
   {
     "id": 341,
@@ -13318,7 +13998,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/84/c4/ad/84c4ad75-e4a8-4901-a265-f83e80660476/888332948876.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dd/b5/ee/ddb5ee24-a6b2-1559-3fd3-dceefb1e3d65/mzaf_2222975055897583397.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9B%E0%B8%A5%E0%B9%88%E0%B8%AD%E0%B8%A2%20Pop%20Pongkool"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9B%E0%B8%A5%E0%B9%88%E0%B8%AD%E0%B8%A2%20Pop%20Pongkool",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dd/b5/ee/ddb5ee24-a6b2-1559-3fd3-dceefb1e3d65/mzaf_2222975055897583397.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dd/b5/ee/ddb5ee24-a6b2-1559-3fd3-dceefb1e3d65/mzaf_2222975055897583397.plus.aac.p.m4a"
   },
   {
     "id": 342,
@@ -13339,7 +14021,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/5a/ed/86/5aed8692-6895-d9b2-638b-30a8676b888e/cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1c/a9/ab/1ca9ab9c-8156-e074-0bc9-5b55b03cac81/mzaf_635483027260507020.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%B9%E0%B8%94%E0%B8%B5%20(Pretty%20...Good)%20Polycat"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%B9%E0%B8%94%E0%B8%B5%20(Pretty%20...Good)%20Polycat",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1c/a9/ab/1ca9ab9c-8156-e074-0bc9-5b55b03cac81/mzaf_635483027260507020.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1c/a9/ab/1ca9ab9c-8156-e074-0bc9-5b55b03cac81/mzaf_635483027260507020.plus.aac.p.m4a"
   },
   {
     "id": 343,
@@ -13360,7 +14044,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/83/11/6f/83116f31-73a4-3df3-6c5f-6658aabbea49/cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2c/12/ef/2c12ef51-d9e3-3e8e-95c0-3ccde7456caa/mzaf_17810438549414752579.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B9%80%E0%B8%9E%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B8%9D%E0%B8%99%20Polycat"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B9%80%E0%B8%9E%E0%B8%A3%E0%B8%B2%E0%B8%B0%E0%B8%9D%E0%B8%99%20Polycat",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2c/12/ef/2c12ef51-d9e3-3e8e-95c0-3ccde7456caa/mzaf_17810438549414752579.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2c/12/ef/2c12ef51-d9e3-3e8e-95c0-3ccde7456caa/mzaf_17810438549414752579.plus.aac.p.m4a"
   },
   {
     "id": 344,
@@ -13381,7 +14067,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/83/11/6f/83116f31-73a4-3df3-6c5f-6658aabbea49/cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/ca/46/daca46e3-64af-7b7e-e951-4e7dc70fd7a1/mzaf_15328664495680037062.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A1%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B9%83%E0%B8%84%E0%B8%A3%20Polycat"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A1%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B9%83%E0%B8%84%E0%B8%A3%20Polycat",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/ca/46/daca46e3-64af-7b7e-e951-4e7dc70fd7a1/mzaf_15328664495680037062.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/ca/46/daca46e3-64af-7b7e-e951-4e7dc70fd7a1/mzaf_15328664495680037062.plus.aac.p.m4a"
   },
   {
     "id": 345,
@@ -13402,7 +14090,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8e/a0/1e/8ea01eb5-ba25-3eb1-4301-29256070a4dd/888332890656.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4d/77/fa/4d77fa57-d974-be9e-a0b9-4a25b148a7e6/mzaf_6917187748366600878.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%8B%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B9%84%E0%B8%A7%E0%B9%89%E0%B9%83%E0%B8%99%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%20PURPEECH"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%8B%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B9%84%E0%B8%A7%E0%B9%89%E0%B9%83%E0%B8%99%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%20PURPEECH",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4d/77/fa/4d77fa57-d974-be9e-a0b9-4a25b148a7e6/mzaf_6917187748366600878.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4d/77/fa/4d77fa57-d974-be9e-a0b9-4a25b148a7e6/mzaf_6917187748366600878.plus.aac.p.m4a"
   },
   {
     "id": 346,
@@ -13423,7 +14113,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/07/76/ee/0776ee3c-4c2c-1a9a-0cce-ffd3a32c78cc/cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7a/29/4e/7a294eee-ab93-0027-1820-6171f9a403c4/mzaf_14245151415795228477.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%B2%E0%B8%81%E0%B8%88%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%82%E0%B8%AD%20PURPEECH"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%B2%E0%B8%81%E0%B8%88%E0%B8%B0%E0%B9%80%E0%B8%9E%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%82%E0%B8%AD%20PURPEECH",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7a/29/4e/7a294eee-ab93-0027-1820-6171f9a403c4/mzaf_14245151415795228477.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7a/29/4e/7a294eee-ab93-0027-1820-6171f9a403c4/mzaf_14245151415795228477.plus.aac.p.m4a"
   },
   {
     "id": 347,
@@ -13444,7 +14136,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4d/f4/f3/4df4f383-80db-cf29-ceee-7a3db092830e/cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ca/a6/9e/caa69e01-7afa-6795-302c-02fe2e4c9ab7/mzaf_5602172392199194521.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/I'm%20here%20PURPEECH"
+    "spotifyUrl": "https://open.spotify.com/search/I'm%20here%20PURPEECH",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ca/a6/9e/caa69e01-7afa-6795-302c-02fe2e4c9ab7/mzaf_5602172392199194521.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ca/a6/9e/caa69e01-7afa-6795-302c-02fe2e4c9ab7/mzaf_5602172392199194521.plus.aac.p.m4a"
   },
   {
     "id": 348,
@@ -13465,7 +14159,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/03/05/78/0305781f-f8ef-04a9-8eb6-3b9de0574051/cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f7/45/b6/f745b644-d98a-e02d-bf0b-525d4f3d7589/mzaf_13381419881567407789.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/TUK%20KRUB%20(feat.%20GUYGEEGEE)%20Lipta"
+    "spotifyUrl": "https://open.spotify.com/search/TUK%20KRUB%20(feat.%20GUYGEEGEE)%20Lipta",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f7/45/b6/f745b644-d98a-e02d-bf0b-525d4f3d7589/mzaf_13381419881567407789.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f7/45/b6/f745b644-d98a-e02d-bf0b-525d4f3d7589/mzaf_13381419881567407789.plus.aac.p.m4a"
   },
   {
     "id": 349,
@@ -13486,7 +14182,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/07/ba/1b/07ba1bf3-244a-0ad2-aeb0-7a365a16d8d4/cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/a1/85/8f/a1858f85-de3f-039a-bb21-6f1c074693ee/mzaf_11868268795591292553.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%A1%E0%B8%B5%E0%B9%81%E0%B8%9F%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%20LIPTA"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%A1%E0%B8%B5%E0%B9%81%E0%B8%9F%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%20LIPTA",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/a1/85/8f/a1858f85-de3f-039a-bb21-6f1c074693ee/mzaf_11868268795591292553.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/a1/85/8f/a1858f85-de3f-039a-bb21-6f1c074693ee/mzaf_11868268795591292553.plus.aac.p.m4a"
   },
   {
     "id": 350,
@@ -13507,7 +14205,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/08/53/86/08538631-8724-07ce-01d1-d2ff44da686c/cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/65/2c/9b/652c9be2-bf64-007d-c34d-9095e3e2ffc5/mzaf_7952602862305013001.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%9B%E0%B8%AD%E0%B8%A2%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%AB%E0%B8%99%E0%B8%A1%E0%B8%B2%20LIPTA"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%9B%E0%B8%AD%E0%B8%A2%E0%B8%B9%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%AB%E0%B8%99%E0%B8%A1%E0%B8%B2%20LIPTA",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/65/2c/9b/652c9be2-bf64-007d-c34d-9095e3e2ffc5/mzaf_7952602862305013001.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/65/2c/9b/652c9be2-bf64-007d-c34d-9095e3e2ffc5/mzaf_7952602862305013001.plus.aac.p.m4a"
   },
   {
     "id": 351,
@@ -13528,7 +14228,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/96/33/6e/96336e1e-b1b4-9008-87e5-4fd3928cb619/3616554625872.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e3/9a/89/e39a89dc-3ff0-012c-5271-a1d6fe0b18d0/mzaf_7860819482062022940.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%9F%E0%B8%99%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%84%E0%B8%B8%E0%B9%89%E0%B8%99%20(feat.%20MILLI)%20Maiyarap"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%9F%E0%B8%99%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%84%E0%B8%B8%E0%B9%89%E0%B8%99%20(feat.%20MILLI)%20Maiyarap",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e3/9a/89/e39a89dc-3ff0-012c-5271-a1d6fe0b18d0/mzaf_7860819482062022940.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e3/9a/89/e39a89dc-3ff0-012c-5271-a1d6fe0b18d0/mzaf_7860819482062022940.plus.aac.p.m4a"
   },
   {
     "id": 352,
@@ -13549,7 +14251,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/96/33/6e/96336e1e-b1b4-9008-87e5-4fd3928cb619/3616554625872.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ee/7a/47/ee7a47b4-ba80-a6c5-f574-18be049b1381/mzaf_5457147984436058917.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%9A%E0%B9%84%E0%B8%A7%E0%B9%89%E0%B9%83%E0%B8%99%E0%B9%83%E0%B8%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%9E%E0%B8%AD%20MAIYARAP"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%81%E0%B9%87%E0%B8%9A%E0%B9%84%E0%B8%A7%E0%B9%89%E0%B9%83%E0%B8%99%E0%B9%83%E0%B8%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%9E%E0%B8%AD%20MAIYARAP",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ee/7a/47/ee7a47b4-ba80-a6c5-f574-18be049b1381/mzaf_5457147984436058917.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ee/7a/47/ee7a47b4-ba80-a6c5-f574-18be049b1381/mzaf_5457147984436058917.plus.aac.p.m4a"
   },
   {
     "id": 353,
@@ -13570,7 +14274,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8b/a8/69/8ba869c4-8771-0a97-23c9-4a265c991573/White_Noise_Artwork_Tinnitus_2026.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5e/9c/65/5e9c65d0-b906-f933-b530-de9abf0046b0/mzaf_12826950011932518019.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%B4%E0%B8%87%E0%B8%84%E0%B9%8C%20(Pink)fellow%20fellow"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%B4%E0%B8%87%E0%B8%84%E0%B9%8C%20(Pink)fellow%20fellow",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5e/9c/65/5e9c65d0-b906-f933-b530-de9abf0046b0/mzaf_12826950011932518019.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5e/9c/65/5e9c65d0-b906-f933-b530-de9abf0046b0/mzaf_12826950011932518019.plus.aac.p.m4a"
   },
   {
     "id": 354,
@@ -13591,7 +14297,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/6f/be/f9/6fbef931-6eee-0c8d-6d90-f17301061daf/cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/08/c8/af08c87c-8f9d-cc49-739a-7830f1567c00/mzaf_5128047126536625887.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B9%80%E0%B8%A5%E0%B8%A2%20fellow%20fellow"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%E0%B9%80%E0%B8%A5%E0%B8%A2%20fellow%20fellow",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/08/c8/af08c87c-8f9d-cc49-739a-7830f1567c00/mzaf_5128047126536625887.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/08/c8/af08c87c-8f9d-cc49-739a-7830f1567c00/mzaf_5128047126536625887.plus.aac.p.m4a"
   },
   {
     "id": 355,
@@ -13612,7 +14320,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/31/84/4a/31844a10-9719-5ecb-b3ab-0e01d15860d7/888332904940.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/98/9c/7c/989c7c73-b7c0-95b8-6656-c7e55ed7cc2f/mzaf_2851323882635172201.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%88%E0%B8%B4%E0%B8%95%20(feat.%20Da%20Endorphine)%20Pop%20Pongkool"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%A5%E0%B8%B1%E0%B8%81%E0%B8%88%E0%B8%B4%E0%B8%95%20(feat.%20Da%20Endorphine)%20Pop%20Pongkool",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/98/9c/7c/989c7c73-b7c0-95b8-6656-c7e55ed7cc2f/mzaf_2851323882635172201.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/98/9c/7c/989c7c73-b7c0-95b8-6656-c7e55ed7cc2f/mzaf_2851323882635172201.plus.aac.p.m4a"
   },
   {
     "id": 356,
@@ -13633,7 +14343,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/b3/10/f7/b310f75e-2465-705c-7d55-0480dcce3b98/cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ab/16/c1/ab16c133-7bdc-01e6-0e6c-f9ff0c8c9f41/mzaf_3282050872927801930.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B7%E0%B8%A1%E0%B9%81%E0%B8%97%E0%B8%9A%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%AB%E0%B8%A7%20(feat.%20Maimhon)%20SARAN"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B7%E0%B8%A1%E0%B9%81%E0%B8%97%E0%B8%9A%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%AB%E0%B8%A7%20(feat.%20Maimhon)%20SARAN",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ab/16/c1/ab16c133-7bdc-01e6-0e6c-f9ff0c8c9f41/mzaf_3282050872927801930.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ab/16/c1/ab16c133-7bdc-01e6-0e6c-f9ff0c8c9f41/mzaf_3282050872927801930.plus.aac.p.m4a"
   },
   {
     "id": 357,
@@ -13654,7 +14366,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/46/8d/49/468d49ff-4f3e-c258-3ef0-60777a20806d/cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2b/26/4b/2b264b7b-0c6d-6e30-805d-482bcb35f20c/mzaf_14199327013781287539.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%95%E0%B9%88%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B8%9A%20(feat.%20F.HERO)%20Lipta"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%95%E0%B9%88%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B8%9A%20(feat.%20F.HERO)%20Lipta",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2b/26/4b/2b264b7b-0c6d-6e30-805d-482bcb35f20c/mzaf_14199327013781287539.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2b/26/4b/2b264b7b-0c6d-6e30-805d-482bcb35f20c/mzaf_14199327013781287539.plus.aac.p.m4a"
   },
   {
     "id": 358,
@@ -13675,7 +14389,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c0/4c/b7/c04cb75d-d98a-6880-eeb8-92457ce34fd8/cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d5/8d/40/d58d4072-fc06-f85b-ed56-641e03a98533/mzaf_2706977307100101456.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Money%20Honey%20F.HERO%20URBOYTJ"
+    "spotifyUrl": "https://open.spotify.com/search/Money%20Honey%20F.HERO%20URBOYTJ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d5/8d/40/d58d4072-fc06-f85b-ed56-641e03a98533/mzaf_2706977307100101456.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d5/8d/40/d58d4072-fc06-f85b-ed56-641e03a98533/mzaf_2706977307100101456.plus.aac.p.m4a"
   },
   {
     "id": 359,
@@ -13696,7 +14412,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ad/51/7a/ad517afe-4b83-d424-3595-50ef03a2cb22/056870981048.png/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/ac/32/c5ac3266-f71a-9ea9-e111-ec0ab24128b9/mzaf_5420595864084864596.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%AD%E0%B8%94%E0%B9%83%E0%B8%99%E0%B9%83%E0%B8%88%20Billkin"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%AD%E0%B8%94%E0%B9%83%E0%B8%99%E0%B9%83%E0%B8%88%20Billkin",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/ac/32/c5ac3266-f71a-9ea9-e111-ec0ab24128b9/mzaf_5420595864084864596.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/ac/32/c5ac3266-f71a-9ea9-e111-ec0ab24128b9/mzaf_5420595864084864596.plus.aac.p.m4a"
   },
   {
     "id": 360,
@@ -13717,7 +14435,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/5b/3e/99/5b3e9978-cc69-4ff9-bf1a-500e5ebf464e/cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/2e/15/2d/2e152d27-d70a-a9a1-3fc6-74ee343fab74/mzaf_15413016550361418281.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%B5%E0%B8%94%E0%B8%81%E0%B8%B1%E0%B8%99%20Billkin"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%B5%E0%B8%94%E0%B8%81%E0%B8%B1%E0%B8%99%20Billkin",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/2e/15/2d/2e152d27-d70a-a9a1-3fc6-74ee343fab74/mzaf_15413016550361418281.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/2e/15/2d/2e152d27-d70a-a9a1-3fc6-74ee343fab74/mzaf_15413016550361418281.plus.aac.p.m4a"
   },
   {
     "id": 361,
@@ -13738,7 +14458,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/68/58/fe/6858fedb-418f-4954-cc3e-7518fee27753/21UMGIM55046.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/19/9e/d3/199ed3d9-89c4-9083-2ea0-bf0cc74f2475/mzaf_5416351774261439958.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%87%E0%B8%B5%E0%B9%89%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B9%81%E0%B8%9F%E0%B8%99%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%20Billkin%20PP%20Krit"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%87%E0%B8%B5%E0%B9%89%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B9%81%E0%B8%9F%E0%B8%99%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%20Billkin%20PP%20Krit",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/19/9e/d3/199ed3d9-89c4-9083-2ea0-bf0cc74f2475/mzaf_5416351774261439958.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/19/9e/d3/199ed3d9-89c4-9083-2ea0-bf0cc74f2475/mzaf_5416351774261439958.plus.aac.p.m4a"
   },
   {
     "id": 362,
@@ -13759,7 +14481,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/46/e6/c6/46e6c640-72f6-39d9-1533-b59f538a26bc/888332982351.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0a/7d/e8/0a7de860-ed2f-a287-e069-0b7f67f8ad08/mzaf_17642865150197446962.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B9%80%E0%B8%A5%20PP%20Krit"
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B9%80%E0%B8%A5%20PP%20Krit",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0a/7d/e8/0a7de860-ed2f-a287-e069-0b7f67f8ad08/mzaf_17642865150197446962.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0a/7d/e8/0a7de860-ed2f-a287-e069-0b7f67f8ad08/mzaf_17642865150197446962.plus.aac.p.m4a"
   },
   {
     "id": 363,
@@ -13780,7 +14504,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Video221/v4/d3/de/90/d3de9003-790c-95f1-5aba-42f800f830bc/22UM1IM28456.crop.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/search/FIRE%20BOY%20PP%20KRIT",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cb/a3/dd/cba3dd7e-e4a2-9ce7-38ab-51409640bb4e/mzaf_11843253337762537405.plus.aac.p.m4a"
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cb/a3/dd/cba3dd7e-e4a2-9ce7-38ab-51409640bb4e/mzaf_11843253337762537405.plus.aac.p.m4a",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cb/a3/dd/cba3dd7e-e4a2-9ce7-38ab-51409640bb4e/mzaf_11843253337762537405.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cb/a3/dd/cba3dd7e-e4a2-9ce7-38ab-51409640bb4e/mzaf_11843253337762537405.plus.aac.p.m4a"
   },
   {
     "id": 364,
@@ -13800,7 +14526,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/ad/03/6b/ad036bed-1b09-562b-6026-384b37a9251d/0602508485701_cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0f/be/ca/0fbeca14-fb58-cb5b-28e5-fce72308e6c1/mzaf_10126865951010148236.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Grand%20Escape%20RADWIMPS%20Toko%20Miura"
+    "spotifyUrl": "https://open.spotify.com/search/Grand%20Escape%20RADWIMPS%20Toko%20Miura",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0f/be/ca/0fbeca14-fb58-cb5b-28e5-fce72308e6c1/mzaf_10126865951010148236.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0f/be/ca/0fbeca14-fb58-cb5b-28e5-fce72308e6c1/mzaf_10126865951010148236.plus.aac.p.m4a"
   },
   {
     "id": 365,
@@ -13821,7 +14549,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/bc/b1/d0/bcb1d0bc-8736-61ac-cb16-51c623c2b0bc/jacket_SVWC07875B00Z_550.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7b/98/f8/7b98f82c-21e1-e719-88ed-a94812bf02c7/mzaf_4584398930797681924.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Crossing%20Field%20LiSA"
+    "spotifyUrl": "https://open.spotify.com/search/Crossing%20Field%20LiSA",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7b/98/f8/7b98f82c-21e1-e719-88ed-a94812bf02c7/mzaf_4584398930797681924.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7b/98/f8/7b98f82c-21e1-e719-88ed-a94812bf02c7/mzaf_4584398930797681924.plus.aac.p.m4a"
   },
   {
     "id": 366,
@@ -13841,7 +14571,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/11/05/ad/1105adba-1ede-4f31-f5cd-25f74c01b8ef/4547366312348.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3e/eb/b0/3eebb096-8539-e3b8-cf06-9d4237c84d67/mzaf_17083840174941586540.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Catch%20the%20Moment%20LiSA"
+    "spotifyUrl": "https://open.spotify.com/search/Catch%20the%20Moment%20LiSA",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3e/eb/b0/3eebb096-8539-e3b8-cf06-9d4237c84d67/mzaf_17083840174941586540.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3e/eb/b0/3eebb096-8539-e3b8-cf06-9d4237c84d67/mzaf_17083840174941586540.plus.aac.p.m4a"
   },
   {
     "id": 367,
@@ -13862,7 +14594,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/cb/e7/4a/cbe74ac2-3dba-c282-5be6-5cc1c71ccf82/4988061912912.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/b9/99/b1b999d6-2533-85f0-7eda-3b51122f5fdc/mzaf_5590574589561084646.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Kaikai%20Kitan%20Eve"
+    "spotifyUrl": "https://open.spotify.com/search/Kaikai%20Kitan%20Eve",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/b9/99/b1b999d6-2533-85f0-7eda-3b51122f5fdc/mzaf_5590574589561084646.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/b9/99/b1b999d6-2533-85f0-7eda-3b51122f5fdc/mzaf_5590574589561084646.plus.aac.p.m4a"
   },
   {
     "id": 368,
@@ -13883,7 +14617,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/65/74/62/65746244-f7e0-ee86-3020-3059dec75961/4547366633085.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/be/8d/8cbe8db3-d84c-8308-3253-a03202ce49a0/mzaf_5586218102364426317.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Ao%20no%20Sumika%20Tatsuya%20Kitani"
+    "spotifyUrl": "https://open.spotify.com/search/Ao%20no%20Sumika%20Tatsuya%20Kitani",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/be/8d/8cbe8db3-d84c-8308-3253-a03202ce49a0/mzaf_5586218102364426317.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/be/8d/8cbe8db3-d84c-8308-3253-a03202ce49a0/mzaf_5586218102364426317.plus.aac.p.m4a"
   },
   {
     "id": 369,
@@ -13904,7 +14640,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/a9/c5/c3/a9c5c397-ce1e-d9ce-8226-566876afe78f/4547366628203.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/96/12/b6/9612b695-297d-0297-144f-bee0ba802b9c/mzaf_12450084874172922637.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Akari%20Soshi%20Sakiyama"
+    "spotifyUrl": "https://open.spotify.com/search/Akari%20Soshi%20Sakiyama",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/96/12/b6/9612b695-297d-0297-144f-bee0ba802b9c/mzaf_12450084874172922637.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/96/12/b6/9612b695-297d-0297-144f-bee0ba802b9c/mzaf_12450084874172922637.plus.aac.p.m4a"
   },
   {
     "id": 370,
@@ -13925,7 +14663,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/1b/7a/5e/1b7a5e77-b0c4-6e32-f3ee-c09c70f8378e/jacket_SRCL09571B00Z_550.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/55/c0/aa/55c0aaf3-d74d-9b62-4126-63d9c0345561/mzaf_6612008514607888435.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Peace%20Sign%20Kenshi%20Yonezu"
+    "spotifyUrl": "https://open.spotify.com/search/Peace%20Sign%20Kenshi%20Yonezu",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/55/c0/aa/55c0aaf3-d74d-9b62-4126-63d9c0345561/mzaf_6612008514607888435.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/55/c0/aa/55c0aaf3-d74d-9b62-4126-63d9c0345561/mzaf_6612008514607888435.plus.aac.p.m4a"
   },
   {
     "id": 371,
@@ -13946,7 +14686,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/02/3f/95/023f957e-fe3e-129d-10ff-a1f6040f8386/4511820-76105.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fa/f3/fd/faf3fd1d-5397-e5b3-f7ac-2e49a249679f/mzaf_2467322249630047899.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/CHIKYUUGI%20kanon"
+    "spotifyUrl": "https://open.spotify.com/search/CHIKYUUGI%20kanon",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fa/f3/fd/faf3fd1d-5397-e5b3-f7ac-2e49a249679f/mzaf_2467322249630047899.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fa/f3/fd/faf3fd1d-5397-e5b3-f7ac-2e49a249679f/mzaf_2467322249630047899.plus.aac.p.m4a"
   },
   {
     "id": 372,
@@ -13967,7 +14709,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/46/4a/84/464a843d-14cc-e5e2-a9d6-763eb558e104/4547366270358.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/22/c6/fb/22c6fb53-4fa7-2735-243a-b566fcd54b93/mzaf_5886088748348953599.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Kataomoi%20Aimer"
+    "spotifyUrl": "https://open.spotify.com/search/Kataomoi%20Aimer",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/22/c6/fb/22c6fb53-4fa7-2735-243a-b566fcd54b93/mzaf_5886088748348953599.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/22/c6/fb/22c6fb53-4fa7-2735-243a-b566fcd54b93/mzaf_5886088748348953599.plus.aac.p.m4a"
   },
   {
     "id": 373,
@@ -13988,7 +14732,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/da/34/aa/da34aa4e-963d-da81-973a-c4baf699c03d/PCSP_03907_A.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4c/89/a6/4c89a6f6-89d7-957c-bee0-d4ff622a56ee/mzaf_15664807686809922181.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Akuma%20no%20Ko%20Ai%20Higuchi"
+    "spotifyUrl": "https://open.spotify.com/search/Akuma%20no%20Ko%20Ai%20Higuchi",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4c/89/a6/4c89a6f6-89d7-957c-bee0-d4ff622a56ee/mzaf_15664807686809922181.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4c/89/a6/4c89a6f6-89d7-957c-bee0-d4ff622a56ee/mzaf_15664807686809922181.plus.aac.p.m4a"
   },
   {
     "id": 374,
@@ -14009,7 +14755,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/48/f2/f7/48f2f77a-1229-2f65-87da-5efa9dab85b1/886445760033.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/a5/c3/9aa5c3d6-b763-a852-e3f2-60f5270f196e/mzaf_13214537326205111491.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Blue%20Bird%20Ikimonogakari"
+    "spotifyUrl": "https://open.spotify.com/search/Blue%20Bird%20Ikimonogakari",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/a5/c3/9aa5c3d6-b763-a852-e3f2-60f5270f196e/mzaf_13214537326205111491.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/a5/c3/9aa5c3d6-b763-a852-e3f2-60f5270f196e/mzaf_13214537326205111491.plus.aac.p.m4a"
   },
   {
     "id": 375,
@@ -14030,7 +14778,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/48/96/3e/48963e5a-75d7-7a8b-132c-233f26ebd70d/jacket_KSCL01917B00Z_550.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/de/ff/43deffe5-2364-7450-f3cc-f4e88fa55a3c/mzaf_11108385612711234952.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Haruka%20Kanata%20ASIAN%20KUNG-FU%20GENERATION"
+    "spotifyUrl": "https://open.spotify.com/search/Haruka%20Kanata%20ASIAN%20KUNG-FU%20GENERATION",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/de/ff/43deffe5-2364-7450-f3cc-f4e88fa55a3c/mzaf_11108385612711234952.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/de/ff/43deffe5-2364-7450-f3cc-f4e88fa55a3c/mzaf_11108385612711234952.plus.aac.p.m4a"
   },
   {
     "id": 376,
@@ -14050,7 +14800,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/48/96/3e/48963e5a-75d7-7a8b-132c-233f26ebd70d/jacket_KSCL01917B00Z_550.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ed/0d/6f/ed0d6ff0-d645-8698-b5b2-23feee3860c1/mzaf_10500902622289664662.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/After%20Dark%20ASIAN%20KUNG-FU%20GENERATION"
+    "spotifyUrl": "https://open.spotify.com/search/After%20Dark%20ASIAN%20KUNG-FU%20GENERATION",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ed/0d/6f/ed0d6ff0-d645-8698-b5b2-23feee3860c1/mzaf_10500902622289664662.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ed/0d/6f/ed0d6ff0-d645-8698-b5b2-23feee3860c1/mzaf_10500902622289664662.plus.aac.p.m4a"
   },
   {
     "id": 377,
@@ -14071,7 +14823,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/b8/c9/63/b8c963b1-4f29-8e76-0101-c6c1d6cc1425/4988010034696.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b3/50/87/b3508796-5f70-bf76-0eb0-7a7bb2966533/mzaf_17965121025001590398.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Velonica%20Aqua%20Timez"
+    "spotifyUrl": "https://open.spotify.com/search/Velonica%20Aqua%20Timez",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b3/50/87/b3508796-5f70-bf76-0eb0-7a7bb2966533/mzaf_17965121025001590398.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b3/50/87/b3508796-5f70-bf76-0eb0-7a7bb2966533/mzaf_17965121025001590398.plus.aac.p.m4a"
   },
   {
     "id": 378,
@@ -14092,7 +14846,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/7b/3e/d7/7b3ed7eb-f3ec-9c01-4218-61d084599b7b/886443575615.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/59/7d/2c/597d2c20-c873-ae19-daee-a1c2d834f936/mzaf_3726616331021906684.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Alones%20Aqua%20Timez"
+    "spotifyUrl": "https://open.spotify.com/search/Alones%20Aqua%20Timez",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/59/7d/2c/597d2c20-c873-ae19-daee-a1c2d834f936/mzaf_3726616331021906684.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/59/7d/2c/597d2c20-c873-ae19-daee-a1c2d834f936/mzaf_3726616331021906684.plus.aac.p.m4a"
   },
   {
     "id": 379,
@@ -14113,7 +14869,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/69/1b/6f/691b6ff6-a5d9-c11f-0f83-411b6e020eff/ANTCD-A0000000841.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/72/1f/81/721f8150-9e02-bc81-ae38-004baf64bd2a/mzaf_13307220116577833618.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Black%20Catcher%20Vickeblanka"
+    "spotifyUrl": "https://open.spotify.com/search/Black%20Catcher%20Vickeblanka",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/72/1f/81/721f8150-9e02-bc81-ae38-004baf64bd2a/mzaf_13307220116577833618.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/72/1f/81/721f8150-9e02-bc81-ae38-004baf64bd2a/mzaf_13307220116577833618.plus.aac.p.m4a"
   },
   {
     "id": 380,
@@ -14134,7 +14892,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e5/06/f2/e506f2a5-ebde-dd12-b347-7cf322d40644/PCSP_03508_A.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3b/fb/b9/3bfbb919-71d2-7358-a0c8-f39b6381a442/mzaf_8987359075267074414.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Cry%20Baby%20Official%20HIGE%20DANdism"
+    "spotifyUrl": "https://open.spotify.com/search/Cry%20Baby%20Official%20HIGE%20DANdism",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3b/fb/b9/3bfbb919-71d2-7358-a0c8-f39b6381a442/mzaf_8987359075267074414.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3b/fb/b9/3bfbb919-71d2-7358-a0c8-f39b6381a442/mzaf_8987359075267074414.plus.aac.p.m4a"
   },
   {
     "id": 381,
@@ -14155,7 +14915,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/24/f7/82/24f782af-5aea-55e7-bf67-2f4e62664fe8/886446439341.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/89/f0/c1/89f0c1e6-e720-21af-8512-a32f2bc7a80a/mzaf_946015838213934721.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Mixed%20Nuts%20Official%20HIGE%20DANdism"
+    "spotifyUrl": "https://open.spotify.com/search/Mixed%20Nuts%20Official%20HIGE%20DANdism",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/89/f0/c1/89f0c1e6-e720-21af-8512-a32f2bc7a80a/mzaf_946015838213934721.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/89/f0/c1/89f0c1e6-e720-21af-8512-a32f2bc7a80a/mzaf_946015838213934721.plus.aac.p.m4a"
   },
   {
     "id": 382,
@@ -14176,7 +14938,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music69/v4/1f/57/08/1f57082e-ee7e-dcb7-a73e-ba1f3468211d/093624920496.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/15/71/af/1571af0b-19e7-00a2-452d-8c146b88bab3/mzaf_1010696746274902629.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/I%20Love...%20Official%20HIGE%20DANdism"
+    "spotifyUrl": "https://open.spotify.com/search/I%20Love...%20Official%20HIGE%20DANdism",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/15/71/af/1571af0b-19e7-00a2-452d-8c146b88bab3/mzaf_1010696746274902629.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/15/71/af/1571af0b-19e7-00a2-452d-8c146b88bab3/mzaf_1010696746274902629.plus.aac.p.m4a"
   },
   {
     "id": 383,
@@ -14196,7 +14960,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/1f/b6/36/1fb6364f-77fc-7653-3750-811631832ee9/PCCA_04785.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/95/8d/6b/958d6b1a-b4f1-0c72-039b-ddb2fbf6489b/mzaf_170812766685279849.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Pretender%20Official%20HIGE%20DANdism"
+    "spotifyUrl": "https://open.spotify.com/search/Pretender%20Official%20HIGE%20DANdism",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/95/8d/6b/958d6b1a-b4f1-0c72-039b-ddb2fbf6489b/mzaf_170812766685279849.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/95/8d/6b/958d6b1a-b4f1-0c72-039b-ddb2fbf6489b/mzaf_170812766685279849.plus.aac.p.m4a"
   },
   {
     "id": 384,
@@ -14217,7 +14983,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/53/0c/17/530c1752-6dce-d4bc-98d1-784141b1703e/PCSP_04565_A.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e1/e1/78/e1e1784d-ec42-bdc5-b40a-9eedda88668d/mzaf_1015486412126374844.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Subtitles%20Official%20HIGE%20DANdism"
+    "spotifyUrl": "https://open.spotify.com/search/Subtitles%20Official%20HIGE%20DANdism",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e1/e1/78/e1e1784d-ec42-bdc5-b40a-9eedda88668d/mzaf_1015486412126374844.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e1/e1/78/e1e1784d-ec42-bdc5-b40a-9eedda88668d/mzaf_1015486412126374844.plus.aac.p.m4a"
   },
   {
     "id": 385,
@@ -14238,7 +15006,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/23/c8/b9/23c8b96b-32d8-e3f6-6df1-bc275d46ab27/jacket_ESCL04734B00Z_550.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2b/63/06/2b630674-1776-769d-cdba-078df1ae8769/mzaf_18210322045745467564.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Fly%20High%20BURNOUT%20SYNDROMES"
+    "spotifyUrl": "https://open.spotify.com/search/Fly%20High%20BURNOUT%20SYNDROMES",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2b/63/06/2b630674-1776-769d-cdba-078df1ae8769/mzaf_18210322045745467564.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2b/63/06/2b630674-1776-769d-cdba-078df1ae8769/mzaf_18210322045745467564.plus.aac.p.m4a"
   },
   {
     "id": 386,
@@ -14259,7 +15029,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/e5/1c/e6/e51ce672-9edd-70c4-b912-27ac14d62329/jacket_ESCL04719B00Z_550.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/1b/d1/d71bd12d-c065-80bb-2165-0bc55997b5d6/mzaf_1782369243265149974.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Hikariare%20BURNOUT%20SYNDROMES"
+    "spotifyUrl": "https://open.spotify.com/search/Hikariare%20BURNOUT%20SYNDROMES",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/1b/d1/d71bd12d-c065-80bb-2165-0bc55997b5d6/mzaf_1782369243265149974.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/1b/d1/d71bd12d-c065-80bb-2165-0bc55997b5d6/mzaf_1782369243265149974.plus.aac.p.m4a"
   },
   {
     "id": 387,
@@ -14280,7 +15052,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/c3/87/11/c3871157-a2a6-c5c6-2f00-e96beebf1386/886444581486.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b9/25/ef/b925efce-0f71-71b8-e529-641fd8232f51/mzaf_17420806842691141247.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Imagination%20SPYAIR"
+    "spotifyUrl": "https://open.spotify.com/search/Imagination%20SPYAIR",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b9/25/ef/b925efce-0f71-71b8-e529-641fd8232f51/mzaf_17420806842691141247.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b9/25/ef/b925efce-0f71-71b8-e529-641fd8232f51/mzaf_17420806842691141247.plus.aac.p.m4a"
   },
   {
     "id": 388,
@@ -14301,7 +15075,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b6/51/58/b65158b9-4c51-f529-e416-c4b65580a320/4547366842838.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/b1/6a/73b16a3f-874c-91f5-3ca5-01e579472480/mzaf_7345399253431740454.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Samurai%20Heart%20SPYAIR"
+    "spotifyUrl": "https://open.spotify.com/search/Samurai%20Heart%20SPYAIR",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/b1/6a/73b16a3f-874c-91f5-3ca5-01e579472480/mzaf_7345399253431740454.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/b1/6a/73b16a3f-874c-91f5-3ca5-01e579472480/mzaf_7345399253431740454.plus.aac.p.m4a"
   },
   {
     "id": 389,
@@ -14322,7 +15098,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/cd/ca/89/cdca8927-8181-fe15-976c-e4ece60f53ea/jacket_KSCL03035B00Z_550.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/09/e7/9a/09e79aee-4a40-6651-979e-034daab2d26f/mzaf_17363127222195917506.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Colors%20FLOW"
+    "spotifyUrl": "https://open.spotify.com/search/Colors%20FLOW",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/09/e7/9a/09e79aee-4a40-6651-979e-034daab2d26f/mzaf_17363127222195917506.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/09/e7/9a/09e79aee-4a40-6651-979e-034daab2d26f/mzaf_17363127222195917506.plus.aac.p.m4a"
   },
   {
     "id": 390,
@@ -14343,7 +15121,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/66/59/3a/66593ad9-1f8a-035c-f8c5-86769e93782e/jacket_KSCL01597B00Z_550.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ae/0a/60/ae0a6018-a1e3-746c-0a98-be5852d53c18/mzaf_1817107385756081440.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Rain%20SID"
+    "spotifyUrl": "https://open.spotify.com/search/Rain%20SID",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ae/0a/60/ae0a6018-a1e3-746c-0a98-be5852d53c18/mzaf_1817107385756081440.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ae/0a/60/ae0a6018-a1e3-746c-0a98-be5852d53c18/mzaf_1817107385756081440.plus.aac.p.m4a"
   },
   {
     "id": 391,
@@ -14364,7 +15144,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/cb/82/41/cb8241a3-5324-bbaa-8da2-33c5b29b1c7d/20UMGIM76771.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/8d/33/0c8d339b-db50-ce5a-8f20-bdbec6df3f6c/mzaf_10409401370931580642.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Usseewa%20Ado"
+    "spotifyUrl": "https://open.spotify.com/search/Usseewa%20Ado",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/8d/33/0c8d339b-db50-ce5a-8f20-bdbec6df3f6c/mzaf_10409401370931580642.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/8d/33/0c8d339b-db50-ce5a-8f20-bdbec6df3f6c/mzaf_10409401370931580642.plus.aac.p.m4a"
   },
   {
     "id": 392,
@@ -14385,7 +15167,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/24/e9/c2/24e9c269-bee0-62e0-6de6-257db163ee5a/21UM1IM54074.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/02/8c/30028c8a-a125-5466-bcc6-27a83b1c0135/mzaf_16911571635366913039.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Odo%20Ado"
+    "spotifyUrl": "https://open.spotify.com/search/Odo%20Ado",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/02/8c/30028c8a-a125-5466-bcc6-27a83b1c0135/mzaf_16911571635366913039.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/02/8c/30028c8a-a125-5466-bcc6-27a83b1c0135/mzaf_16911571635366913039.plus.aac.p.m4a"
   },
   {
     "id": 393,
@@ -14406,7 +15190,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/42/a3/cc/42a3cc35-fdb7-2ae7-02f3-e5a90f32eb8e/22UMGIM74128.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/99/c7/ba99c7c7-e89f-925f-3a40-6b078f3dd182/mzaf_9096013844103066202.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/New%20Genesis%20Ado"
+    "spotifyUrl": "https://open.spotify.com/search/New%20Genesis%20Ado",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/99/c7/ba99c7c7-e89f-925f-3a40-6b078f3dd182/mzaf_9096013844103066202.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/99/c7/ba99c7c7-e89f-925f-3a40-6b078f3dd182/mzaf_9096013844103066202.plus.aac.p.m4a"
   },
   {
     "id": 394,
@@ -14427,7 +15213,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/80/e8/82/80e8826c-f877-9a74-0e7b-a142108feda0/23UMGIM92958.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cb/3c/81/cb3c81aa-7e19-61a3-5aaa-fc521b81d27a/mzaf_11772413152923766264.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Show%20Ado"
+    "spotifyUrl": "https://open.spotify.com/search/Show%20Ado",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cb/3c/81/cb3c81aa-7e19-61a3-5aaa-fc521b81d27a/mzaf_11772413152923766264.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cb/3c/81/cb3c81aa-7e19-61a3-5aaa-fc521b81d27a/mzaf_11772413152923766264.plus.aac.p.m4a"
   },
   {
     "id": 395,
@@ -14448,7 +15236,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/c2/49/87/c249873f-fa61-9d61-52aa-a7e1d780c8b3/22UMGIM81500.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/d4/05/b3d40599-79fe-8ae8-030b-c534dcbc2564/mzaf_13850105976352284754.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/NIGHT%20DANCER%20imase"
+    "spotifyUrl": "https://open.spotify.com/search/NIGHT%20DANCER%20imase",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/d4/05/b3d40599-79fe-8ae8-030b-c534dcbc2564/mzaf_13850105976352284754.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/d4/05/b3d40599-79fe-8ae8-030b-c534dcbc2564/mzaf_13850105976352284754.plus.aac.p.m4a"
   },
   {
     "id": 396,
@@ -14469,7 +15259,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/ac/51/59/ac51598a-ad30-6286-ed59-c2f9e4213d58/artwork.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ea/bc/35/eabc359d-258b-45bc-07e2-c5717ab382f2/mzaf_10400850224631037623.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Nagisa%20imase"
+    "spotifyUrl": "https://open.spotify.com/search/Nagisa%20imase",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ea/bc/35/eabc359d-258b-45bc-07e2-c5717ab382f2/mzaf_10400850224631037623.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/ea/bc/35/eabc359d-258b-45bc-07e2-c5717ab382f2/mzaf_10400850224631037623.plus.aac.p.m4a"
   },
   {
     "id": 397,
@@ -14490,7 +15282,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/bf/1c/3b/bf1c3bdd-a128-2843-776a-35bf3c879d98/195081850498.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/90/2f/a7/902fa7eb-a6f2-2ea4-6fc8-ea609b5a69bd/mzaf_8772585538653242854.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Tabun%20YOASOBI"
+    "spotifyUrl": "https://open.spotify.com/search/Tabun%20YOASOBI",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/90/2f/a7/902fa7eb-a6f2-2ea4-6fc8-ea609b5a69bd/mzaf_8772585538653242854.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/90/2f/a7/902fa7eb-a6f2-2ea4-6fc8-ea609b5a69bd/mzaf_8772585538653242854.plus.aac.p.m4a"
   },
   {
     "id": 398,
@@ -14511,7 +15305,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ae/7e/4a/ae7e4a28-fd46-9617-1066-fcbd124303d6/195497105656.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e0/8e/24/e08e24a4-b067-e60e-b2e6-e029d97bf1ea/mzaf_8308864448558061764.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Gunjou%20YOASOBI"
+    "spotifyUrl": "https://open.spotify.com/search/Gunjou%20YOASOBI",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e0/8e/24/e08e24a4-b067-e60e-b2e6-e029d97bf1ea/mzaf_8308864448558061764.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e0/8e/24/e08e24a4-b067-e60e-b2e6-e029d97bf1ea/mzaf_8308864448558061764.plus.aac.p.m4a"
   },
   {
     "id": 399,
@@ -14532,7 +15328,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/4c/53/dc/4c53dc1c-deff-2a49-0c68-636a9917a291/7ffb0b7b-cfb1-4b6f-8e63-5f42d01bd421.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fe/f8/f7/fef8f703-72dc-18d0-a731-62999dec1c76/mzaf_11227056274961701165.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Racing%20Into%20The%20Night%20YOASOBI"
+    "spotifyUrl": "https://open.spotify.com/search/Racing%20Into%20The%20Night%20YOASOBI",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fe/f8/f7/fef8f703-72dc-18d0-a731-62999dec1c76/mzaf_11227056274961701165.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fe/f8/f7/fef8f703-72dc-18d0-a731-62999dec1c76/mzaf_11227056274961701165.plus.aac.p.m4a"
   },
   {
     "id": 400,
@@ -14553,7 +15351,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9e/ab/2c/9eab2c24-8289-1bd7-548d-e6b871fcf169/195497732630.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ed/35/8f/ed358f20-baf2-7b27-d1e5-eeb9fa4f4498/mzaf_2838285223197932486.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Monster%20YOASOBI"
+    "spotifyUrl": "https://open.spotify.com/search/Monster%20YOASOBI",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ed/35/8f/ed358f20-baf2-7b27-d1e5-eeb9fa4f4498/mzaf_2838285223197932486.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ed/35/8f/ed358f20-baf2-7b27-d1e5-eeb9fa4f4498/mzaf_2838285223197932486.plus.aac.p.m4a"
   },
   {
     "id": 401,
@@ -14574,7 +15374,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/cc/d5/b3/ccd5b3db-b344-ba47-341c-6d4a9c8f3a88/4571416824093.png/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5f/3a/3b/5f3a3bc8-0d8a-db17-c1ff-7d881011f716/mzaf_1668049474924266874.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Shukufuku%20YOASOBI"
+    "spotifyUrl": "https://open.spotify.com/search/Shukufuku%20YOASOBI",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5f/3a/3b/5f3a3bc8-0d8a-db17-c1ff-7d881011f716/mzaf_1668049474924266874.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5f/3a/3b/5f3a3bc8-0d8a-db17-c1ff-7d881011f716/mzaf_1668049474924266874.plus.aac.p.m4a"
   },
   {
     "id": 402,
@@ -14595,7 +15397,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6c/96/f8/6c96f8bc-6f70-175d-07eb-fe6f49cbef5d/4547366525175.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/11/71/d6/1171d6ad-3c96-e027-2af6-58028426588c/mzaf_15137631797407745471.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Tokyo%20Flash%20Vaundy"
+    "spotifyUrl": "https://open.spotify.com/search/Tokyo%20Flash%20Vaundy",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/11/71/d6/1171d6ad-3c96-e027-2af6-58028426588c/mzaf_15137631797407745471.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/11/71/d6/1171d6ad-3c96-e027-2af6-58028426588c/mzaf_15137631797407745471.plus.aac.p.m4a"
   },
   {
     "id": 403,
@@ -14615,7 +15419,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/c9/de/16/c9de1632-3d12-19c3-2699-22090b4bfcc1/4547366588620.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e1/13/8b/e1138b12-ad1b-45e6-3545-8c4f8765ce8b/mzaf_16193442776413626505.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Chainsaw%20Blood%20Vaundy"
+    "spotifyUrl": "https://open.spotify.com/search/Chainsaw%20Blood%20Vaundy",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e1/13/8b/e1138b12-ad1b-45e6-3545-8c4f8765ce8b/mzaf_16193442776413626505.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e1/13/8b/e1138b12-ad1b-45e6-3545-8c4f8765ce8b/mzaf_16193442776413626505.plus.aac.p.m4a"
   },
   {
     "id": 404,
@@ -14636,7 +15442,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/95/4f/a7/954fa762-540c-afd0-50b1-2fc52d920cb1/4988004145858_cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5f/a9/6d/5fa96ddc-feb6-9a06-5ae7-f6ba91d4fb97/mzaf_7282977440251524074.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Dramaturgy%20Eve"
+    "spotifyUrl": "https://open.spotify.com/search/Dramaturgy%20Eve",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5f/a9/6d/5fa96ddc-feb6-9a06-5ae7-f6ba91d4fb97/mzaf_7282977440251524074.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5f/a9/6d/5fa96ddc-feb6-9a06-5ae7-f6ba91d4fb97/mzaf_7282977440251524074.plus.aac.p.m4a"
   },
   {
     "id": 405,
@@ -14656,7 +15464,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/95/4f/a7/954fa762-540c-afd0-50b1-2fc52d920cb1/4988004145858_cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/71/80/3c/71803c37-bdc8-27db-5d54-972bcd16da35/mzaf_12059103177066323948.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/As%20You%20Like%20It%20Eve"
+    "spotifyUrl": "https://open.spotify.com/search/As%20You%20Like%20It%20Eve",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/71/80/3c/71803c37-bdc8-27db-5d54-972bcd16da35/mzaf_12059103177066323948.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/71/80/3c/71803c37-bdc8-27db-5d54-972bcd16da35/mzaf_12059103177066323948.plus.aac.p.m4a"
   },
   {
     "id": 406,
@@ -14676,7 +15486,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/cd/6c/55/cd6c55b7-f18d-a251-e4c8-295cef9ce351/4988061913001.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/b9/99/b1b999d6-2533-85f0-7eda-3b51122f5fdc/mzaf_5590574589561084646.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Inochi%20no%20Tabekata%20Eve"
+    "spotifyUrl": "https://open.spotify.com/search/Inochi%20no%20Tabekata%20Eve",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/b9/99/b1b999d6-2533-85f0-7eda-3b51122f5fdc/mzaf_5590574589561084646.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/b9/99/b1b999d6-2533-85f0-7eda-3b51122f5fdc/mzaf_5590574589561084646.plus.aac.p.m4a"
   },
   {
     "id": 407,
@@ -14696,7 +15508,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/2a/84/07/2a8407ff-01ef-b4df-a29b-c63e192aa51a/195497876488.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c0/8d/e7/c08de75e-4207-987c-8745-e95c96ad5b80/mzaf_9522592722553102254.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Anoko%20Secret%20Eve"
+    "spotifyUrl": "https://open.spotify.com/search/Anoko%20Secret%20Eve",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c0/8d/e7/c08de75e-4207-987c-8745-e95c96ad5b80/mzaf_9522592722553102254.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c0/8d/e7/c08de75e-4207-987c-8745-e95c96ad5b80/mzaf_9522592722553102254.plus.aac.p.m4a"
   },
   {
     "id": 408,
@@ -14717,7 +15531,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/51/3b/00/513b003d-5583-4533-168b-f213c245b53f/4534530141828.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/5c/99/d95c9928-7a84-80d8-f666-9e139bb55618/mzaf_3451712062174813596.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Guitar%2C%20Loneliness%20and%20Blue%20Planet%20Kessoku%20Band"
+    "spotifyUrl": "https://open.spotify.com/search/Guitar%2C%20Loneliness%20and%20Blue%20Planet%20Kessoku%20Band",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/5c/99/d95c9928-7a84-80d8-f666-9e139bb55618/mzaf_3451712062174813596.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/5c/99/d95c9928-7a84-80d8-f666-9e139bb55618/mzaf_3451712062174813596.plus.aac.p.m4a"
   },
   {
     "id": 409,
@@ -14737,7 +15553,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/b9/0a/b4/b90ab45a-07b1-0bcc-331c-c496a21d07e4/10UMGIM01134.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/ec/53/8cec5388-2a61-1ab8-192d-520c59e05580/mzaf_15063474702584342169.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/That%20Band%20Kessoku%20Band"
+    "spotifyUrl": "https://open.spotify.com/search/That%20Band%20Kessoku%20Band",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/ec/53/8cec5388-2a61-1ab8-192d-520c59e05580/mzaf_15063474702584342169.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/ec/53/8cec5388-2a61-1ab8-192d-520c59e05580/mzaf_15063474702584342169.plus.aac.p.m4a"
   },
   {
     "id": 410,
@@ -14757,7 +15575,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/10/38/b1/1038b1be-83d4-c006-b612-e6156498da35/4534530140661.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/10/3d/8a/103d8aa8-a696-60c7-55f8-de6ec4a478e5/mzaf_2506909169539581190.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Seishun%20Complex%20Kessoku%20Band"
+    "spotifyUrl": "https://open.spotify.com/search/Seishun%20Complex%20Kessoku%20Band",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/10/3d/8a/103d8aa8-a696-60c7-55f8-de6ec4a478e5/mzaf_2506909169539581190.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/10/3d/8a/103d8aa8-a696-60c7-55f8-de6ec4a478e5/mzaf_2506909169539581190.plus.aac.p.m4a"
   },
   {
     "id": 411,
@@ -14777,7 +15597,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/51/3b/00/513b003d-5583-4533-168b-f213c245b53f/4534530141828.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/08/e5/95/08e5955b-5e35-810a-af21-c5ea627b9e62/mzaf_14523279170137656585.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Karakara%20Kessoku%20Band"
+    "spotifyUrl": "https://open.spotify.com/search/Karakara%20Kessoku%20Band",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/08/e5/95/08e5955b-5e35-810a-af21-c5ea627b9e62/mzaf_14523279170137656585.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/08/e5/95/08e5955b-5e35-810a-af21-c5ea627b9e62/mzaf_14523279170137656585.plus.aac.p.m4a"
   },
   {
     "id": 412,
@@ -14798,7 +15620,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/51/3b/00/513b003d-5583-4533-168b-f213c245b53f/4534530141828.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6c/1d/2e/6c1d2e47-1a3d-ac8a-19d2-a5ab01a4fecf/mzaf_4077582503102929951.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/If%20I%20could%20be%20a%20constellation%20Kessoku%20Band"
+    "spotifyUrl": "https://open.spotify.com/search/If%20I%20could%20be%20a%20constellation%20Kessoku%20Band",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6c/1d/2e/6c1d2e47-1a3d-ac8a-19d2-a5ab01a4fecf/mzaf_4077582503102929951.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6c/1d/2e/6c1d2e47-1a3d-ac8a-19d2-a5ab01a4fecf/mzaf_4077582503102929951.plus.aac.p.m4a"
   },
   {
     "id": 413,
@@ -14818,7 +15642,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/9f/69/929f69f1-9977-3a44-d674-11f70c852d1b/24UMGIM36186.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/31/d3/3431d34e-847f-5d66-df83-0bce688d997e/mzaf_18106743962423782018.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Birds%20of%20a%20Feather%20Billie%20Eilish"
+    "spotifyUrl": "https://open.spotify.com/search/Birds%20of%20a%20Feather%20Billie%20Eilish",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/31/d3/3431d34e-847f-5d66-df83-0bce688d997e/mzaf_18106743962423782018.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/31/d3/3431d34e-847f-5d66-df83-0bce688d997e/mzaf_18106743962423782018.plus.aac.p.m4a"
   },
   {
     "id": 414,
@@ -14838,7 +15664,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f6/15/d0/f615d0ab-e0c4-575d-907e-1cc084642357/24UMGIM61704.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/57/a6/2657a620-c596-e0e4-efa2-e814f3572d1c/mzaf_5475540510703120797.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Taste%20Sabrina%20Carpenter"
+    "spotifyUrl": "https://open.spotify.com/search/Taste%20Sabrina%20Carpenter",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/57/a6/2657a620-c596-e0e4-efa2-e814f3572d1c/mzaf_5475540510703120797.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/57/a6/2657a620-c596-e0e4-efa2-e814f3572d1c/mzaf_5475540510703120797.plus.aac.p.m4a"
   },
   {
     "id": 415,
@@ -14858,7 +15686,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c9/a3/e9/c9a3e987-3952-a6ac-7975-680f2033e660/25UMGIM10586.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/86/0b/54860b8b-0c3b-b16b-5b19-b00424af8b9b/mzaf_1272478887800630516.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Please%20Please%20Please%20Sabrina%20Carpenter"
+    "spotifyUrl": "https://open.spotify.com/search/Please%20Please%20Please%20Sabrina%20Carpenter",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/86/0b/54860b8b-0c3b-b16b-5b19-b00424af8b9b/mzaf_1272478887800630516.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/86/0b/54860b8b-0c3b-b16b-5b19-b00424af8b9b/mzaf_1272478887800630516.plus.aac.p.m4a"
   },
   {
     "id": 416,
@@ -14879,7 +15709,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/8b/8b/20/8b8b2083-c8a3-a1a6-1f9e-a4da5bf45d5d/197188679637.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b0/8c/e1/b08ce131-3860-fdbd-43a9-dc4bf1ec78f8/mzaf_18185086236351287888.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/From%20The%20Start%20Laufey"
+    "spotifyUrl": "https://open.spotify.com/search/From%20The%20Start%20Laufey",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b0/8c/e1/b08ce131-3860-fdbd-43a9-dc4bf1ec78f8/mzaf_18185086236351287888.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b0/8c/e1/b08ce131-3860-fdbd-43a9-dc4bf1ec78f8/mzaf_18185086236351287888.plus.aac.p.m4a"
   },
   {
     "id": 417,
@@ -14900,7 +15732,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/27/19/89/271989d3-9d33-d962-2a0a-d1abdf126f9d/mzi.ogvyuvet.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4d/f1/62/4df16272-e2f3-398d-b27f-81211315d6ae/mzaf_16626351907053427853.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Promise%20Laufey"
+    "spotifyUrl": "https://open.spotify.com/search/Promise%20Laufey",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4d/f1/62/4df16272-e2f3-398d-b27f-81211315d6ae/mzaf_16626351907053427853.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4d/f1/62/4df16272-e2f3-398d-b27f-81211315d6ae/mzaf_16626351907053427853.plus.aac.p.m4a"
   },
   {
     "id": 418,
@@ -14921,7 +15755,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8d/1a/7b/8d1a7b44-316f-7c7f-4380-935673fb697a/5056167175650.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/02/8c/30028c8a-a125-5466-bcc6-27a83b1c0135/mzaf_16911571635366913039.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Golden%20Hour%20JVKE"
+    "spotifyUrl": "https://open.spotify.com/search/Golden%20Hour%20JVKE",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/02/8c/30028c8a-a125-5466-bcc6-27a83b1c0135/mzaf_16911571635366913039.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/02/8c/30028c8a-a125-5466-bcc6-27a83b1c0135/mzaf_16911571635366913039.plus.aac.p.m4a"
   },
   {
     "id": 419,
@@ -14941,7 +15777,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0f/6b/0d/0f6b0d9e-686c-9cca-ae0b-442f649224ac/5056167166535_1.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/23/28/c7/2328c7a9-24fe-7bab-8024-c8c67828164b/mzaf_7087381778902583194.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/This%20Is%20What%20Falling%20in%20Love%20Feels%20Like%20JVKE"
+    "spotifyUrl": "https://open.spotify.com/search/This%20Is%20What%20Falling%20in%20Love%20Feels%20Like%20JVKE",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/23/28/c7/2328c7a9-24fe-7bab-8024-c8c67828164b/mzaf_7087381778902583194.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/23/28/c7/2328c7a9-24fe-7bab-8024-c8c67828164b/mzaf_7087381778902583194.plus.aac.p.m4a"
   },
   {
     "id": 420,
@@ -14962,7 +15800,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/64/d2/c5/64d2c511-67f4-ae09-5153-d39c3da413a3/21UMGIM75467.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/82/c1/5382c1d4-ddba-aa2b-90df-57268895fac9/mzaf_8926201202931541051.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Until%20I%20Found%20You%20Stephen%20Sanchez"
+    "spotifyUrl": "https://open.spotify.com/search/Until%20I%20Found%20You%20Stephen%20Sanchez",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/82/c1/5382c1d4-ddba-aa2b-90df-57268895fac9/mzaf_8926201202931541051.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/82/c1/5382c1d4-ddba-aa2b-90df-57268895fac9/mzaf_8926201202931541051.plus.aac.p.m4a"
   },
   {
     "id": 421,
@@ -14983,7 +15823,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/91/30/85/9130858b-bc2c-ec38-cf9f-864befea4374/23UMGIM38673.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/29/94/e4/2994e49b-8613-f5bb-8533-7cf13de92630/mzaf_12958362463531140094.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Always%20Daniel%20Caesar"
+    "spotifyUrl": "https://open.spotify.com/search/Always%20Daniel%20Caesar",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/29/94/e4/2994e49b-8613-f5bb-8533-7cf13de92630/mzaf_12958362463531140094.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/29/94/e4/2994e49b-8613-f5bb-8533-7cf13de92630/mzaf_12958362463531140094.plus.aac.p.m4a"
   },
   {
     "id": 422,
@@ -15004,7 +15846,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b6/cd/1a/b6cd1a5b-83af-a1e2-0ad7-ea530fcf2522/859722261219.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/52/e4/4f/52e44f76-2397-114f-e749-ea7b9cd18a3c/mzaf_7907771188147988307.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Best%20Part%20Daniel%20Caesar%20H.E.R."
+    "spotifyUrl": "https://open.spotify.com/search/Best%20Part%20Daniel%20Caesar%20H.E.R.",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/52/e4/4f/52e44f76-2397-114f-e749-ea7b9cd18a3c/mzaf_7907771188147988307.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/52/e4/4f/52e44f76-2397-114f-e749-ea7b9cd18a3c/mzaf_7907771188147988307.plus.aac.p.m4a"
   },
   {
     "id": 423,
@@ -15025,7 +15869,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/24/4f/ec/244fec58-ea20-e0b0-eea6-e06c6aff948b/23UMGIM14483.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2d/2b/61/2d2b6102-157b-dd97-f5a9-1e6014b40dfc/mzaf_14408745609786889918.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Japanese%20Denim%20Daniel%20Caesar"
+    "spotifyUrl": "https://open.spotify.com/search/Japanese%20Denim%20Daniel%20Caesar",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2d/2b/61/2d2b6102-157b-dd97-f5a9-1e6014b40dfc/mzaf_14408745609786889918.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2d/2b/61/2d2b6102-157b-dd97-f5a9-1e6014b40dfc/mzaf_14408745609786889918.plus.aac.p.m4a"
   },
   {
     "id": 424,
@@ -15045,7 +15891,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/63/92/46/639246a5-9e39-69cf-c2f4-543621d76cfe/859722598605.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/98/10/91/981091a4-bb55-dc1b-6750-881210b1ea4e/mzaf_6781837645961347219.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Get%20You%20Daniel%20Caesar%20Kali%20Uchis"
+    "spotifyUrl": "https://open.spotify.com/search/Get%20You%20Daniel%20Caesar%20Kali%20Uchis",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/98/10/91/981091a4-bb55-dc1b-6750-881210b1ea4e/mzaf_6781837645961347219.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/98/10/91/981091a4-bb55-dc1b-6750-881210b1ea4e/mzaf_6781837645961347219.plus.aac.p.m4a"
   },
   {
     "id": 425,
@@ -15066,7 +15914,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/4e/0c/82/4e0c82e8-7970-25f5-bfd6-6f0faec83dcb/22UMGIM94151.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/f5/40/a1f5405d-408f-d84e-1775-b87b30174067/mzaf_5384372198207712281.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Romantic%20Homicide%20d4vd"
+    "spotifyUrl": "https://open.spotify.com/search/Romantic%20Homicide%20d4vd",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/f5/40/a1f5405d-408f-d84e-1775-b87b30174067/mzaf_5384372198207712281.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/f5/40/a1f5405d-408f-d84e-1775-b87b30174067/mzaf_5384372198207712281.plus.aac.p.m4a"
   },
   {
     "id": 426,
@@ -15087,7 +15937,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d6/83/1a/d6831a94-4e8f-5b23-df44-a313eb358257/23UMGIM33457.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bf/a3/6d/bfa36d9c-8e41-e05f-8a2b-970c9b21c695/mzaf_9987737564511061938.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Here%20With%20Me%20d4vd"
+    "spotifyUrl": "https://open.spotify.com/search/Here%20With%20Me%20d4vd",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bf/a3/6d/bfa36d9c-8e41-e05f-8a2b-970c9b21c695/mzaf_9987737564511061938.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bf/a3/6d/bfa36d9c-8e41-e05f-8a2b-970c9b21c695/mzaf_9987737564511061938.plus.aac.p.m4a"
   },
   {
     "id": 427,
@@ -15108,7 +15960,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d0/2a/43/d02a433a-3ab8-9a94-b07d-1dc599b64966/93624864387.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/53/c2/0c53c240-300a-5ddf-fc86-3a54e1b73a78/mzaf_13555682862214742934.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Glimpse%20of%20Us%20Joji"
+    "spotifyUrl": "https://open.spotify.com/search/Glimpse%20of%20Us%20Joji",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/53/c2/0c53c240-300a-5ddf-fc86-3a54e1b73a78/mzaf_13555682862214742934.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/53/c2/0c53c240-300a-5ddf-fc86-3a54e1b73a78/mzaf_13555682862214742934.plus.aac.p.m4a"
   },
   {
     "id": 428,
@@ -15128,7 +15982,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/af/ee/e2/afeee208-5816-b700-f703-d4f46780c504/190296919015.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/11/b8/ff/11b8ff74-aaa5-41c6-91c3-7f19ebc374c4/mzaf_4419658226336232185.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Slow%20Dancing%20in%20the%20Dark%20Joji"
+    "spotifyUrl": "https://open.spotify.com/search/Slow%20Dancing%20in%20the%20Dark%20Joji",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/11/b8/ff/11b8ff74-aaa5-41c6-91c3-7f19ebc374c4/mzaf_4419658226336232185.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/11/b8/ff/11b8ff74-aaa5-41c6-91c3-7f19ebc374c4/mzaf_4419658226336232185.plus.aac.p.m4a"
   },
   {
     "id": 429,
@@ -15148,7 +16004,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e2/61/f8/e261f8c1-73db-9a7a-c89e-1068f19970e0/16UMGIM67863.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/50/50/1a/50501a86-bd74-e90d-8a56-68c9b5e6e7d6/mzaf_4588197682084244913.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Die%20For%20You%20The%20Weeknd"
+    "spotifyUrl": "https://open.spotify.com/search/Die%20For%20You%20The%20Weeknd",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/50/50/1a/50501a86-bd74-e90d-8a56-68c9b5e6e7d6/mzaf_4588197682084244913.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/50/50/1a/50501a86-bd74-e90d-8a56-68c9b5e6e7d6/mzaf_4588197682084244913.plus.aac.p.m4a"
   },
   {
     "id": 430,
@@ -15168,7 +16026,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/83/3a/f7/833af71b-2e0c-3303-24f5-8f5c546c073b/20UMGIM21167.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8b/38/17/8b3817e4-c0e9-7e02-2654-3e2ecee93603/mzaf_18415642125637540903.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Save%20Your%20Tears%20The%20Weeknd"
+    "spotifyUrl": "https://open.spotify.com/search/Save%20Your%20Tears%20The%20Weeknd",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8b/38/17/8b3817e4-c0e9-7e02-2654-3e2ecee93603/mzaf_18415642125637540903.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8b/38/17/8b3817e4-c0e9-7e02-2654-3e2ecee93603/mzaf_18415642125637540903.plus.aac.p.m4a"
   },
   {
     "id": 431,
@@ -15189,7 +16049,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/61/e7/3f/61e73f94-018d-5f50-50ec-8521952bc72e/20UM1IM11629.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/12/73/ca/1273ca46-233a-5331-189b-25ac1d656533/mzaf_976341070785891411.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Blinding%20Lights%20The%20Weeknd"
+    "spotifyUrl": "https://open.spotify.com/search/Blinding%20Lights%20The%20Weeknd",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/12/73/ca/1273ca46-233a-5331-189b-25ac1d656533/mzaf_976341070785891411.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/12/73/ca/1273ca46-233a-5331-189b-25ac1d656533/mzaf_976341070785891411.plus.aac.p.m4a"
   },
   {
     "id": 432,
@@ -15209,7 +16071,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2b/c4/c9/2bc4c9d4-3bc6-ab13-3f71-df0b89b173de/886448022213.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/25/54/81/255481c0-1ef2-c1bc-f3b3-ea2b1419c1f1/mzaf_5289557126888202047.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Watermelon%20Sugar%20Harry%20Styles"
+    "spotifyUrl": "https://open.spotify.com/search/Watermelon%20Sugar%20Harry%20Styles",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/25/54/81/255481c0-1ef2-c1bc-f3b3-ea2b1419c1f1/mzaf_5289557126888202047.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/25/54/81/255481c0-1ef2-c1bc-f3b3-ea2b1419c1f1/mzaf_5289557126888202047.plus.aac.p.m4a"
   },
   {
     "id": 433,
@@ -15230,7 +16094,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2b/c4/c9/2bc4c9d4-3bc6-ab13-3f71-df0b89b173de/886448022213.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c9/0f/88/c90f88a8-df5d-96bf-fd25-43d554a2e897/mzaf_6453555596864780419.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Falling%20Harry%20Styles"
+    "spotifyUrl": "https://open.spotify.com/search/Falling%20Harry%20Styles",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c9/0f/88/c90f88a8-df5d-96bf-fd25-43d554a2e897/mzaf_6453555596864780419.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c9/0f/88/c90f88a8-df5d-96bf-fd25-43d554a2e897/mzaf_6453555596864780419.plus.aac.p.m4a"
   },
   {
     "id": 434,
@@ -15251,7 +16117,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/49/3d/ab/493dab54-f920-9043-6181-80993b8116c9/19UMGIM53909.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/44/af/81/44af8168-9609-1b85-5048-ada08dceacf3/mzaf_1341699644335558812.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Cruel%20Summer%20Taylor%20Swift"
+    "spotifyUrl": "https://open.spotify.com/search/Cruel%20Summer%20Taylor%20Swift",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/44/af/81/44af8168-9609-1b85-5048-ada08dceacf3/mzaf_1341699644335558812.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/44/af/81/44af8168-9609-1b85-5048-ada08dceacf3/mzaf_1341699644335558812.plus.aac.p.m4a"
   },
   {
     "id": 435,
@@ -15272,7 +16140,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/8c/67/ff/8c67ff91-31c3-3fef-1884-ce3ec89f3af4/196589946874.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/68/9e/f7/689ef7fe-14fe-a846-c87f-7d3b2d6344b1/mzaf_4167137058064023087.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Flowers%20Miley%20Cyrus"
+    "spotifyUrl": "https://open.spotify.com/search/Flowers%20Miley%20Cyrus",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/68/9e/f7/689ef7fe-14fe-a846-c87f-7d3b2d6344b1/mzaf_4167137058064023087.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/68/9e/f7/689ef7fe-14fe-a846-c87f-7d3b2d6344b1/mzaf_4167137058064023087.plus.aac.p.m4a"
   },
   {
     "id": 436,
@@ -15292,7 +16162,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e0/92/da/e092da2d-9f6d-11dc-7843-2021e95a2b61/21UMGIM17518.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/6d/b1/c96db138-df15-d3d1-ef9d-98ef9d350960/mzaf_9411021956242812289.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Peaches%20Justin%20Bieber"
+    "spotifyUrl": "https://open.spotify.com/search/Peaches%20Justin%20Bieber",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/6d/b1/c96db138-df15-d3d1-ef9d-98ef9d350960/mzaf_9411021956242812289.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/6d/b1/c96db138-df15-d3d1-ef9d-98ef9d350960/mzaf_9411021956242812289.plus.aac.p.m4a"
   },
   {
     "id": 437,
@@ -15313,7 +16185,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/6c/11/d6/6c11d681-aa3a-d59e-4c2e-f77e181026ab/190295092665.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/59/dc/4d/59dc4dda-93ff-8f1c-c536-f005f6ea6af5/mzaf_3066686759813252385.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Levitating%20Dua%20Lipa"
+    "spotifyUrl": "https://open.spotify.com/search/Levitating%20Dua%20Lipa",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/59/dc/4d/59dc4dda-93ff-8f1c-c536-f005f6ea6af5/mzaf_3066686759813252385.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/59/dc/4d/59dc4dda-93ff-8f1c-c536-f005f6ea6af5/mzaf_3066686759813252385.plus.aac.p.m4a"
   },
   {
     "id": 438,
@@ -15334,7 +16208,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/b6/80/3c/b6803c18-1285-3c66-ec98-5e423e7268f8/886445447828.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/12/f8/63/12f86376-9b16-4206-fe19-bc74c6d77113/mzaf_15220743029863562895.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Don't%20Start%20Now%20Dua%20Lipa"
+    "spotifyUrl": "https://open.spotify.com/search/Don't%20Start%20Now%20Dua%20Lipa",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/12/f8/63/12f86376-9b16-4206-fe19-bc74c6d77113/mzaf_15220743029863562895.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/12/f8/63/12f86376-9b16-4206-fe19-bc74c6d77113/mzaf_15220743029863562895.plus.aac.p.m4a"
   },
   {
     "id": 439,
@@ -15354,7 +16230,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/c0/54/97/c05497aa-c19f-bf4f-de29-71edf30fbefb/075679688767.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9d/9f/56/9d9f566f-abf6-5f10-bcdb-09e14dcace42/mzaf_10277018989080903908.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Dance%20The%20Night%20Dua%20Lipa"
+    "spotifyUrl": "https://open.spotify.com/search/Dance%20The%20Night%20Dua%20Lipa",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9d/9f/56/9d9f566f-abf6-5f10-bcdb-09e14dcace42/mzaf_10277018989080903908.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9d/9f/56/9d9f566f-abf6-5f10-bcdb-09e14dcace42/mzaf_10277018989080903908.plus.aac.p.m4a"
   },
   {
     "id": 440,
@@ -15375,7 +16253,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ae/a7/fe/aea7fe21-19ab-9568-8576-5b95a9df3a5b/Workout_Music_Summer_2021_-_The_Ultimate_Treino_Cardio_Fitness_Gym_Music_Playlist.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/db/36/26/db362607-1a96-0b60-b9bf-6d94a71f10c8/mzaf_579761103735086595.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Good%204%20U%20Olivia%20Rodrigo"
+    "spotifyUrl": "https://open.spotify.com/search/Good%204%20U%20Olivia%20Rodrigo",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/db/36/26/db362607-1a96-0b60-b9bf-6d94a71f10c8/mzaf_579761103735086595.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/db/36/26/db362607-1a96-0b60-b9bf-6d94a71f10c8/mzaf_579761103735086595.plus.aac.p.m4a"
   },
   {
     "id": 441,
@@ -15395,7 +16275,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/02/ed/8c/02ed8cab-c089-2fdd-7ce6-ab334a9a4e19/21UMGIM26093.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/36/62/61/366261be-0996-d73d-de6f-03417867c800/mzaf_8201528327761821135.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Drivers%20License%20Olivia%20Rodrigo"
+    "spotifyUrl": "https://open.spotify.com/search/Drivers%20License%20Olivia%20Rodrigo",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/36/62/61/366261be-0996-d73d-de6f-03417867c800/mzaf_8201528327761821135.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/36/62/61/366261be-0996-d73d-de6f-03417867c800/mzaf_8201528327761821135.plus.aac.p.m4a"
   },
   {
     "id": 442,
@@ -15416,7 +16298,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/02/ed/8c/02ed8cab-c089-2fdd-7ce6-ab334a9a4e19/21UMGIM26093.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/5a/c2/835ac220-f31a-006f-b6a9-2acd29eb60d0/mzaf_13621843495437485054.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Deja%20Vu%20Olivia%20Rodrigo"
+    "spotifyUrl": "https://open.spotify.com/search/Deja%20Vu%20Olivia%20Rodrigo",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/5a/c2/835ac220-f31a-006f-b6a9-2acd29eb60d0/mzaf_13621843495437485054.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/5a/c2/835ac220-f31a-006f-b6a9-2acd29eb60d0/mzaf_13621843495437485054.plus.aac.p.m4a"
   },
   {
     "id": 443,
@@ -15437,7 +16321,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/da/8b/77/da8b7731-6f4f-eacf-5e74-8b23389eefa1/20UMGIM03371.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/4c/b9/a34cb911-40fc-5f0c-e862-14bd171a77aa/mzaf_384792072030970151.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Heat%20Waves%20Glass%20Animals"
+    "spotifyUrl": "https://open.spotify.com/search/Heat%20Waves%20Glass%20Animals",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/4c/b9/a34cb911-40fc-5f0c-e862-14bd171a77aa/mzaf_384792072030970151.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/4c/b9/a34cb911-40fc-5f0c-e862-14bd171a77aa/mzaf_384792072030970151.plus.aac.p.m4a"
   },
   {
     "id": 444,
@@ -15458,7 +16344,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/20/ac/68/20ac6879-1846-84df-7189-d8745c1bef93/196589135537.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/0d/8d/2a0d8d48-f74a-236e-ec23-24a958f5649d/mzaf_16143782915340700495.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Another%20Love%20Tom%20Odell"
+    "spotifyUrl": "https://open.spotify.com/search/Another%20Love%20Tom%20Odell",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/0d/8d/2a0d8d48-f74a-236e-ec23-24a958f5649d/mzaf_16143782915340700495.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/0d/8d/2a0d8d48-f74a-236e-ec23-24a958f5649d/mzaf_16143782915340700495.plus.aac.p.m4a"
   },
   {
     "id": 445,
@@ -15479,7 +16367,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/07/37/8e/07378ef3-7950-ba76-4280-9acb0e5d032a/15UMGIM42534.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/b6/5b/bab65b54-b62b-afe7-7b2c-42d17c175479/mzaf_180048884343447783.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Past%20Lives%20B%C3%98RNS"
+    "spotifyUrl": "https://open.spotify.com/search/Past%20Lives%20B%C3%98RNS",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/b6/5b/bab65b54-b62b-afe7-7b2c-42d17c175479/mzaf_180048884343447783.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/b6/5b/bab65b54-b62b-afe7-7b2c-42d17c175479/mzaf_180048884343447783.plus.aac.p.m4a"
   },
   {
     "id": 446,
@@ -15500,7 +16390,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bc/13/27/bc13275c-8b26-802d-771b-d15ae00fb530/mzm.hvpwjsvi.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bb/dd/6a/bbdd6a92-b322-1c35-8dc7-8eb7d84f72b8/mzaf_14355345747730153074.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Unstoppable%20Sia"
+    "spotifyUrl": "https://open.spotify.com/search/Unstoppable%20Sia",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bb/dd/6a/bbdd6a92-b322-1c35-8dc7-8eb7d84f72b8/mzaf_14355345747730153074.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bb/dd/6a/bbdd6a92-b322-1c35-8dc7-8eb7d84f72b8/mzaf_14355345747730153074.plus.aac.p.m4a"
   },
   {
     "id": 447,
@@ -15521,7 +16413,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/85/c3/21/85c32113-1c4c-571c-7602-88f568d8081c/075679861016.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2e/4c/43/2e4c43fb-efc6-4ea4-ffd2-141511e9a69e/mzaf_11409859438872626218.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Snowman%20Sia"
+    "spotifyUrl": "https://open.spotify.com/search/Snowman%20Sia",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2e/4c/43/2e4c43fb-efc6-4ea4-ffd2-141511e9a69e/mzaf_11409859438872626218.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2e/4c/43/2e4c43fb-efc6-4ea4-ffd2-141511e9a69e/mzaf_11409859438872626218.plus.aac.p.m4a"
   },
   {
     "id": 448,
@@ -15541,7 +16435,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/89/a6/f7/89a6f7be-a0e0-2524-a13b-6b5df7b7534a/06UMGIM24399.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/fc/4f/6cfc4f89-f9b9-590f-744f-49173af0d9de/mzaf_13370105221544142821.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Somewhere%20Only%20We%20Know%20Keane"
+    "spotifyUrl": "https://open.spotify.com/search/Somewhere%20Only%20We%20Know%20Keane",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/fc/4f/6cfc4f89-f9b9-590f-744f-49173af0d9de/mzaf_13370105221544142821.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/fc/4f/6cfc4f89-f9b9-590f-744f-49173af0d9de/mzaf_13370105221544142821.plus.aac.p.m4a"
   },
   {
     "id": 449,
@@ -15562,7 +16458,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f5/93/8c/f5938c49-964c-31d1-4b33-78b634f71fb7/190295978075.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/f3/1a/66f31a76-a6ed-cb4c-f353-23310a7ae9a8/mzaf_10593596652344378873.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Yellow%20Coldplay"
+    "spotifyUrl": "https://open.spotify.com/search/Yellow%20Coldplay",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/f3/1a/66f31a76-a6ed-cb4c-f353-23310a7ae9a8/mzaf_10593596652344378873.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/f3/1a/66f31a76-a6ed-cb4c-f353-23310a7ae9a8/mzaf_10593596652344378873.plus.aac.p.m4a"
   },
   {
     "id": 450,
@@ -15583,7 +16481,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0c/82/48/0c8248a8-4a5b-d30d-8056-f32d650d2fc9/190295978068.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/42/e3/e542e340-a45c-695e-e0b8-6155e222ebc0/mzaf_14955746616030397665.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Fix%20You%20Coldplay"
+    "spotifyUrl": "https://open.spotify.com/search/Fix%20You%20Coldplay",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/42/e3/e542e340-a45c-695e-e0b8-6155e222ebc0/mzaf_14955746616030397665.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/42/e3/e542e340-a45c-695e-e0b8-6155e222ebc0/mzaf_14955746616030397665.plus.aac.p.m4a"
   },
   {
     "id": 451,
@@ -15604,7 +16504,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/52/aa/85/52aa851f-15b7-6322-f91f-df84b15b7b19/190295978044.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/19/60/b0196060-7786-24c0-8c56-8f628fe89f52/mzaf_12479456646715449366.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Viva%20La%20Vida%20Coldplay"
+    "spotifyUrl": "https://open.spotify.com/search/Viva%20La%20Vida%20Coldplay",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/19/60/b0196060-7786-24c0-8c56-8f628fe89f52/mzaf_12479456646715449366.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/19/60/b0196060-7786-24c0-8c56-8f628fe89f52/mzaf_12479456646715449366.plus.aac.p.m4a"
   },
   {
     "id": 452,
@@ -15625,7 +16527,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Features125/v4/60/90/ad/6090adc3-8863-861d-afcc-23c55c6fe5da/dj.vmtulfyu.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f1/24/d0/f124d058-5d43-73ca-79e4-36f5eb42b172/mzaf_12358370529108063354.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/A%20Sky%20Full%20of%20Stars%20Coldplay"
+    "spotifyUrl": "https://open.spotify.com/search/A%20Sky%20Full%20of%20Stars%20Coldplay",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f1/24/d0/f124d058-5d43-73ca-79e4-36f5eb42b172/mzaf_12358370529108063354.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f1/24/d0/f124d058-5d43-73ca-79e4-36f5eb42b172/mzaf_12358370529108063354.plus.aac.p.m4a"
   },
   {
     "id": 453,
@@ -15646,7 +16550,9 @@ const SONGS = [
     ],
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/25/46/a7/2546a71a-b2bb-b4c9-4c52-a4daa3ae23ca/13UMGIM15076.rgb.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/db/7f/b0db7fbe-f8ff-1f67-fe72-ca8185ffbca2/mzaf_15298650366584767800.plus.aac.p.m4a",
-    "spotifyUrl": "https://open.spotify.com/search/Counting%20Stars%20OneRepublic"
+    "spotifyUrl": "https://open.spotify.com/search/Counting%20Stars%20OneRepublic",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/db/7f/b0db7fbe-f8ff-1f67-fe72-ca8185ffbca2/mzaf_15298650366584767800.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/db/7f/b0db7fbe-f8ff-1f67-fe72-ca8185ffbca2/mzaf_15298650366584767800.plus.aac.p.m4a"
   },
   {
     "id": 454,
@@ -15668,7 +16574,9 @@ const SONGS = [
       55
     ],
     "reason": "เนื้อเพลงเล่าถึงความหวังที่จะได้เคียงข้างกันแม้ดาวหางจะมาเยือนเพียงครั้งเดียว เข้ากับฉากดาวตกและความรักข้ามมิติเวลาของ Your Name อย่างสมบูรณ์แบบ",
-    "typoIdea": "ใช้ฟอนต์สไตล์มินิมอลสีขาว มีแสง Glow นุ่มนวล เคลื่อนที่ลอยช้าๆ สลับกับฉากดาวตกบนท้องฟ้ายามค่ำคืน"
+    "typoIdea": "ใช้ฟอนต์สไตล์มินิมอลสีขาว มีแสง Glow นุ่มนวล เคลื่อนที่ลอยช้าๆ สลับกับฉากดาวตกบนท้องฟ้ายามค่ำคืน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a"
   },
   {
     "id": 455,
@@ -15690,7 +16598,9 @@ const SONGS = [
       56
     ],
     "reason": "พลังเสียงสะกดอารมณ์และเมโลดี้ทรงพลังของ Jeff Satur สื่อถึงความเจ็บปวดของการตามหาคนสำคัญในความทรงจำ เข้ากับมิติความสูญเสียใน Jujutsu Kaisen",
-    "typoIdea": "ฟอนต์สีขาวละลายขอบฟุ้งเหมือนวิญญาณ ค่อยๆ จางหายไปตามท่อนฮุค 'ซ่อนตัวอยู่ตรงนั้น' เลียนแบบฉากเล่นซ่อนหาของเมนมะใน Anohana"
+    "typoIdea": "ฟอนต์สีขาวละลายขอบฟุ้งเหมือนวิญญาณ ค่อยๆ จางหายไปตามท่อนฮุค 'ซ่อนตัวอยู่ตรงนั้น' เลียนแบบฉากเล่นซ่อนหาของเมนมะใน Anohana",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/be/ea/9c/beea9cc5-2f4a-657a-cda1-5e5ef382ba7a/mzaf_6797589711112840217.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/be/ea/9c/beea9cc5-2f4a-657a-cda1-5e5ef382ba7a/mzaf_6797589711112840217.plus.aac.p.m4a"
   },
   {
     "id": 456,
@@ -15712,7 +16622,9 @@ const SONGS = [
       57
     ],
     "reason": "อารมณ์เพลงที่ตัดพ้อถึงความทรงจำที่ไม่มีวันจางหาย สอดคล้องกับเรื่องราวเปียโนและจดหมายสุดท้ายใน Your Lie in April",
-    "typoIdea": "ใช้แอนิเมชันตัวหนังสือค่อยๆ จางหาย (Fade Out) สลับเบลอเมื่อถึงท่อน 'ลืมไปแล้ว' วางตรงกลางจังหวะเปียโน"
+    "typoIdea": "ใช้แอนิเมชันตัวหนังสือค่อยๆ จางหาย (Fade Out) สลับเบลอเมื่อถึงท่อน 'ลืมไปแล้ว' วางตรงกลางจังหวะเปียโน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/bf/53/33bf53d3-3a8b-c2a0-61d8-552a41cb0895/mzaf_17373431248148690542.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/bf/53/33bf53d3-3a8b-c2a0-61d8-552a41cb0895/mzaf_17373431248148690542.plus.aac.p.m4a"
   },
   {
     "id": 457,
@@ -15734,7 +16646,9 @@ const SONGS = [
       58
     ],
     "reason": "ดนตรีอบอุ่นละมุนหัวใจของ fellow fellow สะท้อนถึงความรักที่มั่นคงระหว่างมิยามุระและโฮริใน Horimiya",
-    "typoIdea": "ใช้ฟอนต์สไตล์ลายมือ (Handwritten) ขอบมน สีพาสเทลโทนชมพู-เบจ ขยับสไลด์เข้าออกนุ่มนวล"
+    "typoIdea": "ใช้ฟอนต์สไตล์ลายมือ (Handwritten) ขอบมน สีพาสเทลโทนชมพู-เบจ ขยับสไลด์เข้าออกนุ่มนวล",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/08/c8/af08c87c-8f9d-cc49-739a-7830f1567c00/mzaf_5128047126536625887.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/08/c8/af08c87c-8f9d-cc49-739a-7830f1567c00/mzaf_5128047126536625887.plus.aac.p.m4a"
   },
   {
     "id": 458,
@@ -15756,7 +16670,9 @@ const SONGS = [
       59
     ],
     "reason": "บรรยากาศชวนฝันและการเดินทางข้ามมิติ เข้ากับฉากรถไฟเหนือน้ำในตำนานของ Spirited Away ได้อย่างไร้ที่ติ",
-    "typoIdea": "จัดวางตัวหนังสือโค้งตามแนวขอบหน้าต่างรถไฟ ใช้เอฟเฟกต์ประกายละอองแสงระยิบระยับ"
+    "typoIdea": "จัดวางตัวหนังสือโค้งตามแนวขอบหน้าต่างรถไฟ ใช้เอฟเฟกต์ประกายละอองแสงระยิบระยับ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7b/b6/80/7bb68048-fb1d-84ed-bac7-ecc04eec0ed5/mzaf_4744985832839020218.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7b/b6/80/7bb68048-fb1d-84ed-bac7-ecc04eec0ed5/mzaf_4744985832839020218.plus.aac.p.m4a"
   },
   {
     "id": 459,
@@ -15778,7 +16694,9 @@ const SONGS = [
       60
     ],
     "reason": "ความน่ารักของการแอบมองคนที่ชอบจนใจละลาย เข้ากับสงครามจิตวิทยาความรักสุดฮาใน Kaguya-sama อย่างยิ่ง",
-    "typoIdea": "แอนิเมชันตัวอักษรละลาย (Melt) เมื่อร้องคำว่า 'ละลาย' พร้อมซูมสายตาตัวละครแบบ Pop-up"
+    "typoIdea": "แอนิเมชันตัวอักษรละลาย (Melt) เมื่อร้องคำว่า 'ละลาย' พร้อมซูมสายตาตัวละครแบบ Pop-up",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/5f/f4/f45ff486-6fa0-9df5-9d58-8ed552c86140/mzaf_5412811150878921175.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/5f/f4/f45ff486-6fa0-9df5-9d58-8ed552c86140/mzaf_5412811150878921175.plus.aac.p.m4a"
   },
   {
     "id": 460,
@@ -15800,7 +16718,9 @@ const SONGS = [
       61
     ],
     "reason": "เมโลดี้ละมุนผสานเสียงฝนพรำ เข้ากับศาลาพักใจกลางสวนชินจูกุใน The Garden of Words ราวกับสร้างมาคู่กัน",
-    "typoIdea": "ตัวหนังสือสไตล์หมึกหยดซึม (Ink Bleed) ปรากฏขึ้นพร้อมระลอกคลื่นน้ำฝนบนผิวน้ำ"
+    "typoIdea": "ตัวหนังสือสไตล์หมึกหยดซึม (Ink Bleed) ปรากฏขึ้นพร้อมระลอกคลื่นน้ำฝนบนผิวน้ำ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/63/30/2a633070-c228-60ea-a557-590c7814f5f2/mzaf_6284737101935456326.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/63/30/2a633070-c228-60ea-a557-590c7814f5f2/mzaf_6284737101935456326.plus.aac.p.m4a"
   },
   {
     "id": 461,
@@ -15822,7 +16742,9 @@ const SONGS = [
       62
     ],
     "reason": "ความรู้สึกยอมแพ้ต่อโชคชะตาและความเจ็บปวด เข้ากับประเด็นการให้อภัยและไถ่บาปใน A Silent Voice",
-    "typoIdea": "ใช้ฟอนต์สไตล์สะบัดพู่กัน สีขาวตัดดำ จังหวะกระแทกคำตรงกับบีทกลองเพื่อส่งอารมณ์บีบหัวใจ"
+    "typoIdea": "ใช้ฟอนต์สไตล์สะบัดพู่กัน สีขาวตัดดำ จังหวะกระแทกคำตรงกับบีทกลองเพื่อส่งอารมณ์บีบหัวใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3f/be/b9/3fbeb9fa-3537-ee85-553c-c9992f3aa3ff/mzaf_11225322134181997478.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3f/be/b9/3fbeb9fa-3537-ee85-553c-c9992f3aa3ff/mzaf_11225322134181997478.plus.aac.p.m4a"
   },
   {
     "id": 462,
@@ -15844,7 +16766,9 @@ const SONGS = [
       63
     ],
     "reason": "เพลงแห่งการสูญเสียที่ตราตรึง เข้ากับจดหมายแห่งความรักและความทรงจำของ ไวโอเล็ต เอเวอร์การ์เดน",
-    "typoIdea": "ใช้เอฟเฟกต์พิมพ์ดีด (Typewriter Effect) สลับกับตัวหนังสือลายมือเขียนลงบนกระดาษจดหมาย"
+    "typoIdea": "ใช้เอฟเฟกต์พิมพ์ดีด (Typewriter Effect) สลับกับตัวหนังสือลายมือเขียนลงบนกระดาษจดหมาย",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/14/66/49/1466491a-b745-525c-7b96-321b4fd231d0/mzaf_16914207157708959097.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/14/66/49/1466491a-b745-525c-7b96-321b4fd231d0/mzaf_16914207157708959097.plus.aac.p.m4a"
   },
   {
     "id": 463,
@@ -15866,7 +16790,9 @@ const SONGS = [
       64
     ],
     "reason": "ความรู้สึกเริ่มแอบรักเพื่อนสนิทจนบานปลาย เข้ากับความสัมพันธ์ซึนเดเระของ ริวจิ และ ไทกะ ใน Toradora!",
-    "typoIdea": "ใช้ฟอนต์สไตล์นีออนโทนส้ม-ชมพู เด้งเข้าตามจังหวะพร้อมไอคอนอิโมจิหัวใจเล็กๆ"
+    "typoIdea": "ใช้ฟอนต์สไตล์นีออนโทนส้ม-ชมพู เด้งเข้าตามจังหวะพร้อมไอคอนอิโมจิหัวใจเล็กๆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5a/6c/c1/5a6cc1e5-af49-e7ce-1953-e70c9804ad3f/mzaf_8513941258598109632.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5a/6c/c1/5a6cc1e5-af49-e7ce-1953-e70c9804ad3f/mzaf_8513941258598109632.plus.aac.p.m4a"
   },
   {
     "id": 464,
@@ -15888,7 +16814,9 @@ const SONGS = [
       65
     ],
     "reason": "ดนตรีโฟล์กร็อคผสมผสานมนต์เสน่ห์ความรัก เข้ากับเรื่องราวความรักระหว่างมนุษย์และเทพจิ้งจอกใน Kamisama Kiss",
-    "typoIdea": "ใช้ฟอนต์ตัวหนาแสงสีทองเปล่งประกาย สลับกับทรานซิชันไฟสีทองพวยพุ่งในท่อนฮุค"
+    "typoIdea": "ใช้ฟอนต์ตัวหนาแสงสีทองเปล่งประกาย สลับกับทรานซิชันไฟสีทองพวยพุ่งในท่อนฮุค",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/cc/96/60cc96ee-d36d-201c-0ae7-a8f9d43d672e/mzaf_17220888096056606772.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/cc/96/60cc96ee-d36d-201c-0ae7-a8f9d43d672e/mzaf_17220888096056606772.plus.aac.p.m4a"
   },
   {
     "id": 465,
@@ -15910,7 +16838,9 @@ const SONGS = [
       66
     ],
     "reason": "การมองพระจันทร์ดวงเดียวกันเพื่อส่งความคิดถึง เข้ากับความรักที่ไม่อาจสัมผัสตัวกันได้ใน Hotarubi no Mori e",
-    "typoIdea": "วางตัวหนังสือโค้งรับกับทรงพระจันทร์เรืองแสง พร้อมเอฟเฟกต์หิ่งห้อยลอยผ่าน"
+    "typoIdea": "วางตัวหนังสือโค้งรับกับทรงพระจันทร์เรืองแสง พร้อมเอฟเฟกต์หิ่งห้อยลอยผ่าน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/64/31/d964312a-8619-ca7c-2580-1844e0fdf698/mzaf_8881744960688057961.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/64/31/d964312a-8619-ca7c-2580-1844e0fdf698/mzaf_8881744960688057961.plus.aac.p.m4a"
   },
   {
     "id": 466,
@@ -15932,7 +16862,9 @@ const SONGS = [
       67
     ],
     "reason": "กลิ่นดอกไม้และความทรงจำที่ยังคงหอมหวาน เข้ากับเรื่องราวซากุระและไดอารี่ใน I Want to Eat Your Pancreas",
-    "typoIdea": "ใช้ฟอนต์สไตล์ละมุนโปร่งแสง มีกลีบดอกซากุระปลิวผ่านตัวหนังสืออย่างช้าๆ"
+    "typoIdea": "ใช้ฟอนต์สไตล์ละมุนโปร่งแสง มีกลีบดอกซากุระปลิวผ่านตัวหนังสืออย่างช้าๆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/c3/a7/2ec3a7a1-78fb-efac-c3aa-5bc5220eab9e/mzaf_10494967788962621898.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/c3/a7/2ec3a7a1-78fb-efac-c3aa-5bc5220eab9e/mzaf_10494967788962621898.plus.aac.p.m4a"
   },
   {
     "id": 467,
@@ -15954,7 +16886,9 @@ const SONGS = [
       68
     ],
     "reason": "จังหวะชิลล์ฟังสบายสื่อถึงการมองเธอแล้วอยากให้เธอพิจารณาใจ เข้ากับชีวิตวัยรุ่นแสนอบอุ่นใน Horimiya",
-    "typoIdea": "ใช้ข้อความสไตล์แชท Pop-up ค่อยๆ ลอยขึ้นตรงกลางหน้าจอตามจังหวะท่อนแร็พ"
+    "typoIdea": "ใช้ข้อความสไตล์แชท Pop-up ค่อยๆ ลอยขึ้นตรงกลางหน้าจอตามจังหวะท่อนแร็พ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/c3/28/acc32878-a7bd-58a1-7d09-06fc124e8b50/mzaf_15257925916120333587.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/c3/28/acc32878-a7bd-58a1-7d09-06fc124e8b50/mzaf_15257925916120333587.plus.aac.p.m4a"
   },
   {
     "id": 468,
@@ -15976,7 +16910,9 @@ const SONGS = [
       69
     ],
     "reason": "บทเพลงรำลึกถึงมิตรภาพในวัยเด็กที่ไม่อาจย้อนกลับมา สื่อถึงกลุ่มเพื่อนและความทรงจำของเมมมะใน Anohana ได้ซาบซึ้งที่สุด",
-    "typoIdea": "ใช้ฟอนต์สไตล์ฟิล์มเก่าวินเทจ โทนภาพอบอุ่นพร้อม Grain บางๆ เพื่อให้ความรู้สึกคิดถึงวันวาน"
+    "typoIdea": "ใช้ฟอนต์สไตล์ฟิล์มเก่าวินเทจ โทนภาพอบอุ่นพร้อม Grain บางๆ เพื่อให้ความรู้สึกคิดถึงวันวาน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1e/80/dd/1e80dd0d-2ff6-7173-428c-c208f3e49074/mzaf_6392198639159685250.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1e/80/dd/1e80dd0d-2ff6-7173-428c-c208f3e49074/mzaf_6392198639159685250.plus.aac.p.m4a"
   },
   {
     "id": 469,
@@ -15998,7 +16934,9 @@ const SONGS = [
       70
     ],
     "reason": "เพลงอินดี้ป็อปสะท้อนความเคว้งคว้างของวัย 17 เข้ากับบุคลิกเก็บตัวและดนตรีร็อคของบ็อจจิใน Bocchi the Rock!",
-    "typoIdea": "ใช้ฟอนต์แนวโมเดิร์นคลีน วางสลับซ้ายขวาตามจังหวะเบส 8 บิต"
+    "typoIdea": "ใช้ฟอนต์แนวโมเดิร์นคลีน วางสลับซ้ายขวาตามจังหวะเบส 8 บิต",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/f3/15/20/f31520ce-a524-7764-6a2c-87c79333ec25/mzaf_8664520394720386170.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/f3/15/20/f31520ce-a524-7764-6a2c-87c79333ec25/mzaf_8664520394720386170.plus.aac.p.m4a"
   },
   {
     "id": 470,
@@ -16020,7 +16958,9 @@ const SONGS = [
       71
     ],
     "reason": "เสียงร้องหวานชวนฝันถ่ายทอดความรู้สึกรักแรกที่เบ่งบาน เข้ากับความรักอันบริสุทธิ์ของ ซาวาโกะ และ คาเซฮายะ ใน Kimi ni Todoke",
-    "typoIdea": "ใช้ฟอนต์สไตล์เรียบหรูสีขาวนวล พร้อมดอกไม้บานประกอบในท่อนคำว่า 'Blooming'"
+    "typoIdea": "ใช้ฟอนต์สไตล์เรียบหรูสีขาวนวล พร้อมดอกไม้บานประกอบในท่อนคำว่า 'Blooming'",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/ce/0a/70ce0a58-ce48-8f9f-8d43-a3bdd030d1b0/mzaf_17078307960515154041.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/ce/0a/70ce0a58-ce48-8f9f-8d43-a3bdd030d1b0/mzaf_17078307960515154041.plus.aac.p.m4a"
   },
   {
     "id": 471,
@@ -16042,7 +16982,9 @@ const SONGS = [
       72
     ],
     "reason": "ดนตรีร็อคระบายความอัดอั้น เข้ากับฉากแอคชั่นและความสูญเสียอันน่าสะเทือนใจใน Jujutsu Kaisen",
-    "typoIdea": "ใช้ฟอนต์ Cinematic ตัวกว้างสีแดง-ดำ พร้อมเอฟเฟกต์สั่นกระแทกจังหวะกลอง"
+    "typoIdea": "ใช้ฟอนต์ Cinematic ตัวกว้างสีแดง-ดำ พร้อมเอฟเฟกต์สั่นกระแทกจังหวะกลอง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/02/13/f4021324-132e-c5de-8b8e-8dca141c1880/mzaf_3517459293482534577.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/02/13/f4021324-132e-c5de-8b8e-8dca141c1880/mzaf_3517459293482534577.plus.aac.p.m4a"
   },
   {
     "id": 472,
@@ -16064,7 +17006,9 @@ const SONGS = [
       73
     ],
     "reason": "เนื้อเพลงสื่อถึงระยะทางและความรู้สึกคิดถึงที่ไม่อาจส่งไปถึง เข้ากับความห่างไกลใน 5 Centimeters per Second ได้อย่างสมบูรณ์แบบ",
-    "typoIdea": "เล่นคำว่า 'คิด' แล้วเว้นจังหวะให้คำว่า 'แต่ไม่ถึง' ค่อยๆ โผล่ขึ้นมาในโทนสีฟ้าหม่น"
+    "typoIdea": "เล่นคำว่า 'คิด' แล้วเว้นจังหวะให้คำว่า 'แต่ไม่ถึง' ค่อยๆ โผล่ขึ้นมาในโทนสีฟ้าหม่น",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/00/20/e500207c-a120-ad6f-7da9-c1ad1d7f6942/mzaf_640349242702877208.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/00/20/e500207c-a120-ad6f-7da9-c1ad1d7f6942/mzaf_640349242702877208.plus.aac.p.m4a"
   },
   {
     "id": 473,
@@ -16086,7 +17030,9 @@ const SONGS = [
       74
     ],
     "reason": "ความสนุกสนานและจังหวะกวนๆ ของการไม่อยากเป็นแค่เพื่อน เข้ากับคู่กัดใน Kaguya-sama อย่างที่สุด",
-    "typoIdea": "ใช้ฟอนต์สไตล์เรโทรขยับเด้ง (Bounce) ตามจังหวะแร็พของ MILLI พร้อมป้ายสัญลักษณ์ Warning โทนเหลือง-ดำ"
+    "typoIdea": "ใช้ฟอนต์สไตล์เรโทรขยับเด้ง (Bounce) ตามจังหวะแร็พของ MILLI พร้อมป้ายสัญลักษณ์ Warning โทนเหลือง-ดำ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/95/0a/8a/950a8a75-b236-bc32-e016-23fc81dd6af0/mzaf_15220071794383537599.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/95/0a/8a/950a8a75-b236-bc32-e016-23fc81dd6af0/mzaf_15220071794383537599.plus.aac.p.m4a"
   },
   {
     "id": 474,
@@ -16108,7 +17054,9 @@ const SONGS = [
       75
     ],
     "reason": "ดนตรีโพสต์ฮาร์ดคอร์สุดเข้มข้นระเบิดอารมณ์ความเจ็บปวด เข้ากับฉากต่อสู้แห่งโชคชะตาใน Attack on Titan",
-    "typoIdea": "ใช้ฟอนต์แนวร็อคฉีกขาด (Distorted) สลับภาพเร็วตามจังหวะกระเดื่องกลองแบบสปีดแรป"
+    "typoIdea": "ใช้ฟอนต์แนวร็อคฉีกขาด (Distorted) สลับภาพเร็วตามจังหวะกระเดื่องกลองแบบสปีดแรป",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e2/f4/8e/e2f48ee5-396c-5ba7-1869-6f7a0d571e7a/mzaf_16804993014002264430.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e2/f4/8e/e2f48ee5-396c-5ba7-1869-6f7a0d571e7a/mzaf_16804993014002264430.plus.aac.p.m4a"
   },
   {
     "id": 475,
@@ -16130,7 +17078,9 @@ const SONGS = [
       76
     ],
     "reason": "เพลงพังค์ร็อคพลังล้นหลาม ปลุกเร้าความตื่นเต้น เหมาะมากกับฉากตบลูกยางสุดมันส์ใน Haikyuu!!",
-    "typoIdea": "ตัวอักษรขยายใหญ่กระแทกหน้าจอ (Explosion) พร้อมสีนีออนม่วง-ส้ม ตามบีทท่อนฮุค 'ทรงอย่างแบด แซดอย่างบ่อย'"
+    "typoIdea": "ตัวอักษรขยายใหญ่กระแทกหน้าจอ (Explosion) พร้อมสีนีออนม่วง-ส้ม ตามบีทท่อนฮุค 'ทรงอย่างแบด แซดอย่างบ่อย'",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/90/a0/8c90a081-b8f8-8d89-acf7-3531400bd49d/mzaf_1875861912879165721.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/90/a0/8c90a081-b8f8-8d89-acf7-3531400bd49d/mzaf_1875861912879165721.plus.aac.p.m4a"
   },
   {
     "id": 476,
@@ -16152,7 +17102,9 @@ const SONGS = [
       77
     ],
     "reason": "การรอคอยและการจากลาที่งดงาม เข้ากับคำอธิษฐานและความทรงจำของฟรีเรนใน Frieren อย่างสมบูรณ์",
-    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏในหมอกควัน แล้วลอยขึ้นสู่ท้องฟ้าในท่อนฮุค 'ถ้าเราได้เจอกันอีก'"
+    "typoIdea": "ตัวหนังสือค่อยๆ ปรากฏในหมอกควัน แล้วลอยขึ้นสู่ท้องฟ้าในท่อนฮุค 'ถ้าเราได้เจอกันอีก'",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ef/40/e2/ef40e2a5-462d-3900-e800-ac36e02fc442/mzaf_2677602440669876174.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ef/40/e2/ef40e2a5-462d-3900-e800-ac36e02fc442/mzaf_2677602440669876174.plus.aac.p.m4a"
   },
   {
     "id": 477,
@@ -16174,7 +17126,9 @@ const SONGS = [
       78
     ],
     "reason": "ความอบอุ่นของการเป็นที่พึ่งพาให้คนที่เรารัก เข้ากับความอ่อนโยนของคาเซฮายะใน Kimi ni Todoke",
-    "typoIdea": "ใช้ฟอนต์สีพาสเทลขอบมน แอนิเมชันลอยเบาๆ เหมือนถูกโอบกอด"
+    "typoIdea": "ใช้ฟอนต์สีพาสเทลขอบมน แอนิเมชันลอยเบาๆ เหมือนถูกโอบกอด",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/68/25/6668253c-aa17-85c5-4ad4-d112e0d7cd1e/mzaf_4161458375630754491.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/68/25/6668253c-aa17-85c5-4ad4-d112e0d7cd1e/mzaf_4161458375630754491.plus.aac.p.m4a"
   },
   {
     "id": 478,
@@ -16196,7 +17150,9 @@ const SONGS = [
       79
     ],
     "reason": "ความรักที่ข้ามผ่านทุกอุปสรรคและโชคชะตา สอดคล้องกับความรักของนานามิและโทโมเอะใน Kamisama Kiss",
-    "typoIdea": "ตัวหนังสือสีทองเรืองรอง พร้อมกลีบดอกไม้โปรยปรายรอบข้อความ"
+    "typoIdea": "ตัวหนังสือสีทองเรืองรอง พร้อมกลีบดอกไม้โปรยปรายรอบข้อความ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d0/88/f8/d088f87c-1135-1816-2d69-c33e80f57088/mzaf_4799799825808235537.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d0/88/f8/d088f87c-1135-1816-2d69-c33e80f57088/mzaf_4799799825808235537.plus.aac.p.m4a"
   },
   {
     "id": 479,
@@ -16218,7 +17174,9 @@ const SONGS = [
       80
     ],
     "reason": "สายตาที่ไม่อาจโกหกความรู้สึกเวลาเผลอมองเธอ เข้ากับความน่ารักของโฮริและมิยามุระใน Horimiya",
-    "typoIdea": "ซูมตัวหนังสือพร้อมเอฟเฟกต์เบลอพื้นหลัง เน้นคำว่า 'สายตามันหลอกกันไม่ได้'"
+    "typoIdea": "ซูมตัวหนังสือพร้อมเอฟเฟกต์เบลอพื้นหลัง เน้นคำว่า 'สายตามันหลอกกันไม่ได้'",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/64/a6/db/64a6db06-8931-cd05-30a7-6ff976ed96ca/mzaf_1200240892676868907.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/64/a6/db/64a6db06-8931-cd05-30a7-6ff976ed96ca/mzaf_1200240892676868907.plus.aac.p.m4a"
   },
   {
     "id": 480,
@@ -16240,7 +17198,9 @@ const SONGS = [
       81
     ],
     "reason": "ความรักแท้ที่อยู่เหนือกาลเวลาและมิติ เข้ากับสายใยผูกพันของทาคิและมิตสึฮะใน Your Name",
-    "typoIdea": "ตัวหนังสือสไตล์เส้นสายด้ายแดงแห่งโชคชะตา ค่อยๆ เชื่อมโยงเข้าหากัน"
+    "typoIdea": "ตัวหนังสือสไตล์เส้นสายด้ายแดงแห่งโชคชะตา ค่อยๆ เชื่อมโยงเข้าหากัน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/20/52/4c/20524cf3-73b9-9c39-5204-2006ef9dfe78/mzaf_1394626490362469262.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/20/52/4c/20524cf3-73b9-9c39-5204-2006ef9dfe78/mzaf_1394626490362469262.plus.aac.p.m4a"
   },
   {
     "id": 481,
@@ -16262,7 +17222,9 @@ const SONGS = [
       82
     ],
     "reason": "ความอลหม่านและคอมเมดี้ชวนหัวเราะ เข้ากับครอบครัวฟอร์เจอร์สุดป่วนใน Spy x Family",
-    "typoIdea": "ตัวหนังสือป็อปอัปสไตล์หนังสือการ์ตูนคอมมิค สลับกรอบคำพูดน่ารักๆ"
+    "typoIdea": "ตัวหนังสือป็อปอัปสไตล์หนังสือการ์ตูนคอมมิค สลับกรอบคำพูดน่ารักๆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/21/0d/1e/210d1e32-0b9a-c77b-6ccd-ffd672277703/mzaf_15612215393812234031.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/21/0d/1e/210d1e32-0b9a-c77b-6ccd-ffd672277703/mzaf_15612215393812234031.plus.aac.p.m4a"
   },
   {
     "id": 482,
@@ -16284,7 +17246,9 @@ const SONGS = [
       83
     ],
     "reason": "ความหนาวเหน็บและความทรงจำในฤดูกาลที่ผ่านไป เข้ากับบรรยากาศการจากลาใน Your Lie in April",
-    "typoIdea": "ตัวหนังสือมีเอฟเฟกต์ไอน้ำและละอองหิมะโปรยปราย"
+    "typoIdea": "ตัวหนังสือมีเอฟเฟกต์ไอน้ำและละอองหิมะโปรยปราย",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c4/36/1c/c4361c0f-fcf7-d584-f136-21d681cd9ee4/mzaf_13703260627470484180.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c4/36/1c/c4361c0f-fcf7-d584-f136-21d681cd9ee4/mzaf_13703260627470484180.plus.aac.p.m4a"
   },
   {
     "id": 483,
@@ -16306,7 +17270,9 @@ const SONGS = [
       84
     ],
     "reason": "การมีเธออยู่ข้างๆ แม้วันที่ฝนตกหรือท้องฟ้ามืดมน เข้ากับฮินะและโฮดากะใน Weathering With You",
-    "typoIdea": "วางข้อความสองฝั่งแล้ววิ่งเข้ามาประกบกันตรงกลางจังหวะเพลง"
+    "typoIdea": "วางข้อความสองฝั่งแล้ววิ่งเข้ามาประกบกันตรงกลางจังหวะเพลง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/53/b1/2f53b12f-d984-4e4d-0235-e2041b5d3311/mzaf_632423543988720742.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/53/b1/2f53b12f-d984-4e4d-0235-e2041b5d3311/mzaf_632423543988720742.plus.aac.p.m4a"
   },
   {
     "id": 484,
@@ -16328,7 +17294,9 @@ const SONGS = [
       85
     ],
     "reason": "ความคิดถึงที่พัดมาพร้อมกับสายฝน เข้ากับหยาดฝนแห่งสวนชินจูกุใน The Garden of Words",
-    "typoIdea": "ตัวหนังสือไล่ระดับความโปร่งใส คล้ายมองผ่านกระจกที่มีหยดน้ำฝนเกาะ"
+    "typoIdea": "ตัวหนังสือไล่ระดับความโปร่งใส คล้ายมองผ่านกระจกที่มีหยดน้ำฝนเกาะ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/d2/65/34d2659e-148d-c029-0cc8-60d75ca37f13/mzaf_12794166550202757517.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/d2/65/34d2659e-148d-c029-0cc8-60d75ca37f13/mzaf_12794166550202757517.plus.aac.p.m4a"
   },
   {
     "id": 485,
@@ -16350,7 +17318,9 @@ const SONGS = [
       86
     ],
     "reason": "ความเหงาและความเจ็บปวดในวันที่ไม่มีใครเคียงข้าง สอดคล้องกับความเดียวดายใน A Silent Voice",
-    "typoIdea": "ตัวหนังสือสีเทาหม่น ค่อยๆ ดับลงเหมือนแสงเทียนบนเค้กวันเกิด"
+    "typoIdea": "ตัวหนังสือสีเทาหม่น ค่อยๆ ดับลงเหมือนแสงเทียนบนเค้กวันเกิด",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/37/b6/a6/37b6a6a3-1dca-1397-409c-cd4670b55122/mzaf_4887075626909576367.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/37/b6/a6/37b6a6a3-1dca-1397-409c-cd4670b55122/mzaf_4887075626909576367.plus.aac.p.m4a"
   },
   {
     "id": 486,
@@ -16372,7 +17342,9 @@ const SONGS = [
       87
     ],
     "reason": "รอยยิ้มของเธอที่ทำให้โลกทั้งใบสดใส เข้ากับรอยยิ้มของซาวาโกะใน Kimi ni Todoke",
-    "typoIdea": "ตัวหนังสือสีชมพูส้มสว่างวาบขึ้นมา พร้อมเอฟเฟกต์ประกายดาววิ้งค์ๆ"
+    "typoIdea": "ตัวหนังสือสีชมพูส้มสว่างวาบขึ้นมา พร้อมเอฟเฟกต์ประกายดาววิ้งค์ๆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2f/3f/ac/2f3fac81-9e83-4ae6-5171-841804b44c6f/mzaf_16866220623392363387.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2f/3f/ac/2f3fac81-9e83-4ae6-5171-841804b44c6f/mzaf_16866220623392363387.plus.aac.p.m4a"
   },
   {
     "id": 487,
@@ -16394,7 +17366,9 @@ const SONGS = [
       88
     ],
     "reason": "ความอาวรณ์และเสียดายช่วงเวลาที่ไม่อาจย้อนคืน เข้ากับความสัมพันธ์ระยะไกลใน 5 Centimeters per Second",
-    "typoIdea": "สไตล์ฟอนต์เรโทรย้อนยุค 80s แสงนีออนม่วงสลับชมพูสะท้อนความเหงา"
+    "typoIdea": "สไตล์ฟอนต์เรโทรย้อนยุค 80s แสงนีออนม่วงสลับชมพูสะท้อนความเหงา",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/5a/f7/e55af74d-5e28-ce04-ba12-c57fbe58af12/mzaf_9994674882709681890.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/5a/f7/e55af74d-5e28-ce04-ba12-c57fbe58af12/mzaf_9994674882709681890.plus.aac.p.m4a"
   },
   {
     "id": 488,
@@ -16416,7 +17390,9 @@ const SONGS = [
       89
     ],
     "reason": "การกล่าวลาที่หวังว่าจะได้พบกันอีก เข้ากับฉากบอกลาทั้งน้ำตาของเมมมะใน Anohana",
-    "typoIdea": "ตัวหนังสือค่อยๆ จางหายไปพร้อมการโบกมือลาของตัวละคร"
+    "typoIdea": "ตัวหนังสือค่อยๆ จางหายไปพร้อมการโบกมือลาของตัวละคร",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/db/c6/d7dbc6b7-df68-509b-393c-d2e7461e4782/mzaf_16441888389148470421.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d7/db/c6/d7dbc6b7-df68-509b-393c-d2e7461e4782/mzaf_16441888389148470421.plus.aac.p.m4a"
   },
   {
     "id": 489,
@@ -16438,7 +17414,9 @@ const SONGS = [
       90
     ],
     "reason": "กลิ่นหอมของความรักที่ต้องซ่อนไว้ในใจ สอดคล้องกับความรักในป่าหิ่งห้อยของ Hotarubi no Mori e",
-    "typoIdea": "ตัวหนังสือเลือนรางซ่อนอยู่ในเงามืดแล้วสว่างขึ้นตามจังหวะเคาะระนาด"
+    "typoIdea": "ตัวหนังสือเลือนรางซ่อนอยู่ในเงามืดแล้วสว่างขึ้นตามจังหวะเคาะระนาด",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/08/12/36/0812360d-4479-b29d-5275-931b1e541694/mzaf_5285055444520979895.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/08/12/36/0812360d-4479-b29d-5275-931b1e541694/mzaf_5285055444520979895.plus.aac.p.m4a"
   },
   {
     "id": 490,
@@ -16460,7 +17438,9 @@ const SONGS = [
       91
     ],
     "reason": "การมอบทั้งดวงใจให้คนที่รัก เข้ากับความทุ่มเทและการปกป้องของริวจิใน Toradora!",
-    "typoIdea": "ฟอนต์ลายมืออบอุ่น วางลอยบนฉากพระอาทิตย์ตกดิน"
+    "typoIdea": "ฟอนต์ลายมืออบอุ่น วางลอยบนฉากพระอาทิตย์ตกดิน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/6e/2d/806e2d43-db51-edb6-19ed-dfd13aa92f99/mzaf_5101326889103556069.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/6e/2d/806e2d43-db51-edb6-19ed-dfd13aa92f99/mzaf_5101326889103556069.plus.aac.p.m4a"
   },
   {
     "id": 491,
@@ -16482,7 +17462,9 @@ const SONGS = [
       92
     ],
     "reason": "การขอบคุณทุกช่วงเวลาที่ได้ร่วมเดินทางด้วยกัน เข้ากับการผจญภัยของจิฮิโระใน Spirited Away",
-    "typoIdea": "ตัวหนังสือไล่เฉดสีรุ้งอ่อนๆ ค่อยๆ ปรากฏพร้อมวิวทิวทัศน์กว้าง"
+    "typoIdea": "ตัวหนังสือไล่เฉดสีรุ้งอ่อนๆ ค่อยๆ ปรากฏพร้อมวิวทิวทัศน์กว้าง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/54/e7/1954e7f4-b211-849d-03a4-94a515c197df/mzaf_10611984984504241868.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/54/e7/1954e7f4-b211-849d-03a4-94a515c197df/mzaf_10611984984504241868.plus.aac.p.m4a"
   },
   {
     "id": 492,
@@ -16504,7 +17486,9 @@ const SONGS = [
       93
     ],
     "reason": "การยินดีที่ได้พบและรักเธอแม้เวลาจะแสนสั้น เข้ากับความทรงจำอันล้ำค่าใน I Want to Eat Your Pancreas",
-    "typoIdea": "ตัวหนังสือบางเรียบหรู ค่อยๆ เขียนขึ้นทีละตัวอักษรเหมือนไดอารี่"
+    "typoIdea": "ตัวหนังสือบางเรียบหรู ค่อยๆ เขียนขึ้นทีละตัวอักษรเหมือนไดอารี่",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/4a/bb/aa/4abbaad0-6911-aa8c-6b45-4a99f5c54773/mzaf_9453094306125921868.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/4a/bb/aa/4abbaad0-6911-aa8c-6b45-4a99f5c54773/mzaf_9453094306125921868.plus.aac.p.m4a"
   },
   {
     "id": 493,
@@ -16526,7 +17510,9 @@ const SONGS = [
       94
     ],
     "reason": "ความน่ารักของการท้าให้เอาปากกามาวงจุดที่ไม่น่ารัก เข้ากับความซึนเดเระใน Kaguya-sama",
-    "typoIdea": "มีเอฟเฟกต์วงกลมปากกาสีแดงวงรอบคำสำคัญตามจังหวะเพลง"
+    "typoIdea": "มีเอฟเฟกต์วงกลมปากกาสีแดงวงรอบคำสำคัญตามจังหวะเพลง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/29/08/db/2908db02-32cc-c24e-50a6-4583a85b5369/mzaf_5867430908003016888.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/29/08/db/2908db02-32cc-c24e-50a6-4583a85b5369/mzaf_5867430908003016888.plus.aac.p.m4a"
   },
   {
     "id": 494,
@@ -16548,7 +17534,9 @@ const SONGS = [
       95
     ],
     "reason": "เพลงตัดพ้อสนุกๆ ของคนโสด เข้ากับโมเมนต์คอมเมดี้ใน Horimiya",
-    "typoIdea": "ตัวหนังสือขยับสลับสีสนุกสนาน พร้อมป้ายกรุ๊ปเลือด B ป๊อปอัป"
+    "typoIdea": "ตัวหนังสือขยับสลับสีสนุกสนาน พร้อมป้ายกรุ๊ปเลือด B ป๊อปอัป",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/ca/32/cb/ca32cbd3-6e00-5d33-72c4-7d71ee456d73/mzaf_15308886385266869376.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/ca/32/cb/ca32cbd3-6e00-5d33-72c4-7d71ee456d73/mzaf_15308886385266869376.plus.aac.p.m4a"
   },
   {
     "id": 495,
@@ -16570,7 +17558,9 @@ const SONGS = [
       96
     ],
     "reason": "ความรักที่สลักลึกในจิตใจไม่อาจลบเลือน เข้ากับภารกิจส่งความในใจของไวโอเล็ตใน Violet Evergarden",
-    "typoIdea": "ตัวหนังสือแกะสลักเรืองแสงสีทองสว่างวาบบนฉากมืด"
+    "typoIdea": "ตัวหนังสือแกะสลักเรืองแสงสีทองสว่างวาบบนฉากมืด",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/6e/34/e66e34c2-c971-ef2c-2e0f-f8a99e220912/mzaf_7695861381642299193.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/6e/34/e66e34c2-c971-ef2c-2e0f-f8a99e220912/mzaf_7695861381642299193.plus.aac.p.m4a"
   },
   {
     "id": 496,
@@ -16592,7 +17582,9 @@ const SONGS = [
       97
     ],
     "reason": "การฝันถึงเรื่องราวเก่าๆ ที่ไม่มีวันกลับมา เข้ากับความผูกพันของกลุ่มบัสเตอส์ใน Anohana",
-    "typoIdea": "เอฟเฟกต์ตัวหนังสือเบลอแบบความฝัน (Dream Blur) สลับภาพย้อนอดีต"
+    "typoIdea": "เอฟเฟกต์ตัวหนังสือเบลอแบบความฝัน (Dream Blur) สลับภาพย้อนอดีต",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8a/75/33/8a75330f-429f-7069-6f3b-83061bd3d265/mzaf_2681671476093048229.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8a/75/33/8a75330f-429f-7069-6f3b-83061bd3d265/mzaf_2681671476093048229.plus.aac.p.m4a"
   },
   {
     "id": 497,
@@ -16614,7 +17606,9 @@ const SONGS = [
       98
     ],
     "reason": "แสงสีทองยามเย็นและเมโลดี้เปียโนอันวิจิตร เข้ากับฉาก Golden Hour บนยอดเขาใน Your Name อย่างไร้ที่ติ",
-    "typoIdea": "ตัวหนังสือสีทองแวววาวขยับพลิ้วไหวตามคอร์ดเปียโนระยิบระยับ"
+    "typoIdea": "ตัวหนังสือสีทองแวววาวขยับพลิ้วไหวตามคอร์ดเปียโนระยิบระยับ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/02/8c/30028c8a-a125-5466-bcc6-27a83b1c0135/mzaf_16911571635366913039.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/02/8c/30028c8a-a125-5466-bcc6-27a83b1c0135/mzaf_16911571635366913039.plus.aac.p.m4a"
   },
   {
     "id": 498,
@@ -16636,7 +17630,9 @@ const SONGS = [
       99
     ],
     "reason": "บรรยากาศวินเทจโรแมนติกที่มั่นคง เข้ากับความรักนิรันดร์ของโทโมเอะใน Kamisama Kiss",
-    "typoIdea": "ตัวหนังสือสไตล์เรโทร 1950s สีครีม-ทอง สลับแสง Glow นุ่มนวล"
+    "typoIdea": "ตัวหนังสือสไตล์เรโทร 1950s สีครีม-ทอง สลับแสง Glow นุ่มนวล",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/82/c1/5382c1d4-ddba-aa2b-90df-57268895fac9/mzaf_8926201202931541051.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/82/c1/5382c1d4-ddba-aa2b-90df-57268895fac9/mzaf_8926201202931541051.plus.aac.p.m4a"
   },
   {
     "id": 499,
@@ -16658,7 +17654,9 @@ const SONGS = [
       100
     ],
     "reason": "ความรักที่ยอมเคียงข้างกันจนวินาทีสุดท้าย แม้โลกจะพังทลาย เข้ากับฉากไคลแม็กซ์ของ Cyberpunk: Edgerunners",
-    "typoIdea": "ตัวหนังสือสไตล์ Cyberpunk แตกสลาย มีแสงนีออนสีฟ้า-ชมพูสลับกระพริบ"
+    "typoIdea": "ตัวหนังสือสไตล์ Cyberpunk แตกสลาย มีแสงนีออนสีฟ้า-ชมพูสลับกระพริบ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/6a/99/076a99ed-b946-431b-6f1f-54fa187ca5bd/mzaf_8102882277995122875.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/6a/99/076a99ed-b946-431b-6f1f-54fa187ca5bd/mzaf_8102882277995122875.plus.aac.p.m4a"
   },
   {
     "id": 500,
@@ -16680,7 +17678,9 @@ const SONGS = [
       101
     ],
     "reason": "เพลงแห่งอดีตชาติและสายใยที่เชื่อมโยงกัน เข้ากับความรักต่างภพใน Hotarubi no Mori e",
-    "typoIdea": "ตัวหนังสือลอยละล่องเหมือนควันหมอกโปร่งใส ซ้อนทับฉากป่าไม้"
+    "typoIdea": "ตัวหนังสือลอยละล่องเหมือนควันหมอกโปร่งใส ซ้อนทับฉากป่าไม้",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/b6/5b/bab65b54-b62b-afe7-7b2c-42d17c175479/mzaf_180048884343447783.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ba/b6/5b/bab65b54-b62b-afe7-7b2c-42d17c175479/mzaf_180048884343447783.plus.aac.p.m4a"
   },
   {
     "id": 501,
@@ -16702,7 +17702,9 @@ const SONGS = [
       245
     ],
     "reason": "เพลงไวรัลเปิดโลกเวทมนตร์ด้วยจังหวะเจอร์ซีย์คลับ เหมาะกับฉากโชว์พลังหรือเต้นกวนๆ",
-    "typoIdea": "ใช้ฟอนต์สไตล์ Bold Pop เด้งตามบีทกลองซอยยี่ แอนิเมชัน Zoom Shake"
+    "typoIdea": "ใช้ฟอนต์สไตล์ Bold Pop เด้งตามบีทกลองซอยยี่ แอนิเมชัน Zoom Shake",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/54/5e/5c545e9a-c8ca-c673-f85d-a74b14c2c882/mzaf_2313943576213161760.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/54/5e/5c545e9a-c8ca-c673-f85d-a74b14c2c882/mzaf_2313943576213161760.plus.aac.p.m4a"
   },
   {
     "id": 502,
@@ -16724,7 +17726,9 @@ const SONGS = [
       231
     ],
     "reason": "เพลงเปิดสุดไฮป์แห่งปี จังหวะสับและลื่นไหล เข้ากับฉากวิ่งหนีผีเอเลี่ยนแบบสุดโต่ง",
-    "typoIdea": "ตัวอักษรแนวกลิตช์นีออนสีม่วง-เขียว สลับสีสโตรกตามสปีดการแร็ป"
+    "typoIdea": "ตัวอักษรแนวกลิตช์นีออนสีม่วง-เขียว สลับสีสโตรกตามสปีดการแร็ป",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/de/3c/55/de3c5508-301a-2aae-a8e6-069a1e2edb04/mzaf_14245211407965810210.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/de/3c/55/de3c5508-301a-2aae-a8e6-069a1e2edb04/mzaf_14245211407965810210.plus.aac.p.m4a"
   },
   {
     "id": 503,
@@ -16746,7 +17750,9 @@ const SONGS = [
       233
     ],
     "reason": "บทเพลงสรรเสริญผู้กล้าฮิมเมล ความเร็วและเมโลดี้ทรงพลังสะท้อนการผจญภัย",
-    "typoIdea": "ฟอนต์แนว Serif โบราณ เรืองแสงสีทอง สลับคัตติ้งซีนต่อสู้กับฉากยิ้มอบอุ่น"
+    "typoIdea": "ฟอนต์แนว Serif โบราณ เรืองแสงสีทอง สลับคัตติ้งซีนต่อสู้กับฉากยิ้มอบอุ่น",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c0/3c/c9/c03cc970-0f43-1ea8-2928-624b47a92df6/mzaf_14834841731697041590.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c0/3c/c9/c03cc970-0f43-1ea8-2928-624b47a92df6/mzaf_14834841731697041590.plus.aac.p.m4a"
   },
   {
     "id": 504,
@@ -16768,7 +17774,9 @@ const SONGS = [
       233
     ],
     "reason": "เสียงร้องที่โอบกอดหัวใจและความรู้สึกที่คงอยู่ตลอดไป แม้กาลเวลาจะผ่านไปนับร้อยปี",
-    "typoIdea": "ตัวหนังสือสลายเป็นละอองดาว ค่อยๆ ปรากฏและเลือนหายตามลมหายใจ"
+    "typoIdea": "ตัวหนังสือสลายเป็นละอองดาว ค่อยๆ ปรากฏและเลือนหายตามลมหายใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5e/37/bc/5e37bc4d-24f4-2bb8-9167-03ff36eff3ef/mzaf_12019400102538358885.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5e/37/bc/5e37bc4d-24f4-2bb8-9167-03ff36eff3ef/mzaf_12019400102538358885.plus.aac.p.m4a"
   },
   {
     "id": 505,
@@ -16790,7 +17798,9 @@ const SONGS = [
       232
     ],
     "reason": "เพลงร็อคระเบิดพลังแห่งการต่อสู้เพื่อความฝันในวัยผู้ใหญ่ เข้ากับไคจูหมายเลข 8 เต็มพิกัด",
-    "typoIdea": "สไตล์ Heavy Grunge ตัวหนังสือแตกกระจาย มีประกายสายฟ้าและเอฟเฟกต์เบสบูสต์"
+    "typoIdea": "สไตล์ Heavy Grunge ตัวหนังสือแตกกระจาย มีประกายสายฟ้าและเอฟเฟกต์เบสบูสต์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/b0/ef/17b0ef44-1d0a-8ca4-7442-53a5fba773fb/mzaf_16206251573451214130.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/b0/ef/17b0ef44-1d0a-8ca4-7442-53a5fba773fb/mzaf_16206251573451214130.plus.aac.p.m4a"
   },
   {
     "id": 506,
@@ -16812,7 +17822,9 @@ const SONGS = [
       232
     ],
     "reason": "เพลงจบสุดชิลล์ มู้ดสดใสของเหล่าหน่วยปราบไคจูในยามพักผ่อน",
-    "typoIdea": "ตัวอักษร Pop Art มี Drop Shadow สดใส เลื่อนไหลตามจังหวะเดินสบายๆ"
+    "typoIdea": "ตัวอักษร Pop Art มี Drop Shadow สดใส เลื่อนไหลตามจังหวะเดินสบายๆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b5/9b/14/b59b1431-4908-3b7a-fd4d-bb86d193ca6a/mzaf_1746474897586183065.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b5/9b/14/b59b1431-4908-3b7a-fd4d-bb86d193ca6a/mzaf_1746474897586183065.plus.aac.p.m4a"
   },
   {
     "id": 507,
@@ -16834,7 +17846,9 @@ const SONGS = [
       236
     ],
     "reason": "ซาวด์ดนตรีสไตล์ซาวาโนะผนวกกับเสียงร้องเร้าใจ เข้ากับฉากซองจินอูตื่นขึ้นมาผงาด",
-    "typoIdea": "เอฟเฟกต์หน้าต่างสถานะสีน้ำเงิน เรืองแสง ตัวหนังสือคมกริบแบบมีดสั้น"
+    "typoIdea": "เอฟเฟกต์หน้าต่างสถานะสีน้ำเงิน เรืองแสง ตัวหนังสือคมกริบแบบมีดสั้น",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c7/7d/7e/c77d7e26-2150-abf1-ded3-01167033630f/mzaf_7806321940178359695.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c7/7d/7e/c77d7e26-2150-abf1-ded3-01167033630f/mzaf_7806321940178359695.plus.aac.p.m4a"
   },
   {
     "id": 508,
@@ -16856,7 +17870,9 @@ const SONGS = [
       237
     ],
     "reason": "เมโลดี้ทรงเสน่ห์น่าค้นหา เปี่ยมด้วยไหวพริบเข้ากับตัวตนของเหมาเหมาในวังหลวง",
-    "typoIdea": "ตัวอักษรพริ้วไหวแซมกลีบดอกไม้และควันยาพิษสีม่วง คัตติ้งรวดเร็วตามเสียงเปียโน"
+    "typoIdea": "ตัวอักษรพริ้วไหวแซมกลีบดอกไม้และควันยาพิษสีม่วง คัตติ้งรวดเร็วตามเสียงเปียโน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ce/96/79/ce9679b3-82cc-6ddc-eff2-431f1caaf1de/mzaf_9002925095666019880.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ce/96/79/ce9679b3-82cc-6ddc-eff2-431f1caaf1de/mzaf_9002925095666019880.plus.aac.p.m4a"
   },
   {
     "id": 509,
@@ -16878,7 +17894,9 @@ const SONGS = [
       238
     ],
     "reason": "ความลับและไฟแค้นที่ปะทุบนเวทีการแสดง เสียงประสานทรงพลังดุดัน",
-    "typoIdea": "ดวงตาดาวสีขาวสลับดำ ฟอนต์คมสองเฉดสี ตัดกับแสงไฟสปอตไลท์โรงละคร"
+    "typoIdea": "ดวงตาดาวสีขาวสลับดำ ฟอนต์คมสองเฉดสี ตัดกับแสงไฟสปอตไลท์โรงละคร",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8f/2b/7a/8f2b7a50-583a-2194-be0d-9cb52d470a90/mzaf_14695686469368549754.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8f/2b/7a/8f2b7a50-583a-2194-be0d-9cb52d470a90/mzaf_14695686469368549754.plus.aac.p.m4a"
   },
   {
     "id": 510,
@@ -16900,7 +17918,9 @@ const SONGS = [
       242
     ],
     "reason": "เพลงประกอบศึกกองขยะ คาราสึโนะปะทะเนโกมะ สื่อถึงมิตรภาพและการแข่งขันที่ไม่อยากให้จบ",
-    "typoIdea": "แสงแดดสีส้มตกกระทบพื้นคอร์ท ตัวหนังสือสไตล์ Brush สาดหมึกอย่างมีพลัง"
+    "typoIdea": "แสงแดดสีส้มตกกระทบพื้นคอร์ท ตัวหนังสือสไตล์ Brush สาดหมึกอย่างมีพลัง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/26/db/e526dbbb-f107-57fb-8783-9feea7eb7844/mzaf_13628143605540446538.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/26/db/e526dbbb-f107-57fb-8783-9feea7eb7844/mzaf_13628143605540446538.plus.aac.p.m4a"
   },
   {
     "id": 511,
@@ -16922,7 +17942,9 @@ const SONGS = [
       243
     ],
     "reason": "ยอมตายดีกว่าต้องพรากจากเธอ เมโลดี้สไตล์ R&B ญี่ปุ่นที่สะกดคนฟังทั้งโลก",
-    "typoIdea": "ฟอนต์แนว Mincho คลาสสิก ย้อมโทนสีซีเปียอบอุ่น มีเกรนฟิล์มเบาๆ"
+    "typoIdea": "ฟอนต์แนว Mincho คลาสสิก ย้อมโทนสีซีเปียอบอุ่น มีเกรนฟิล์มเบาๆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/27/a4/b127a427-710b-e65f-e734-ead910b94cbc/mzaf_692825803667967327.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/27/a4/b127a427-710b-e65f-e734-ead910b94cbc/mzaf_692825803667967327.plus.aac.p.m4a"
   },
   {
     "id": 512,
@@ -16944,7 +17966,9 @@ const SONGS = [
       234
     ],
     "reason": "บทเพลงแห่งการเฉลิมฉลองชีวิตและปล่อยวางความทุกข์ เหมือนนั่งล้อมวงกินอาหารในดันเจี้ยน",
-    "typoIdea": "ตัวหนังสือสไตล์งานวัดญี่ปุ่น โทนสีทองและแดง ค่อยๆ หมุนคลายความตึงเครียด"
+    "typoIdea": "ตัวหนังสือสไตล์งานวัดญี่ปุ่น โทนสีทองและแดง ค่อยๆ หมุนคลายความตึงเครียด",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ea/94/89/ea94893f-8f02-943e-6b91-611a9b611a5b/mzaf_5437217620758333068.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ea/94/89/ea94893f-8f02-943e-6b91-611a9b611a5b/mzaf_5437217620758333068.plus.aac.p.m4a"
   },
   {
     "id": 513,
@@ -16966,7 +17990,9 @@ const SONGS = [
       240
     ],
     "reason": "เพลงเปิดสุดป่วนสดใสที่ทำให้เวียนหัวด้วยความน่ารักและความวุ่นวายของครอบครัวฟอร์เจอร์",
-    "typoIdea": "ข้อความกระโดดดึ๋งไปมา หมุน 360 องศา พร้อมไอคอนหน้าตกใจน่ารักๆ"
+    "typoIdea": "ข้อความกระโดดดึ๋งไปมา หมุน 360 องศา พร้อมไอคอนหน้าตกใจน่ารักๆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/f5/7c/1ff57c55-c4fb-b3f9-5c47-c30113eae7b0/mzaf_4586119715915097532.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/f5/7c/1ff57c55-c4fb-b3f9-5c47-c30113eae7b0/mzaf_4586119715915097532.plus.aac.p.m4a"
   },
   {
     "id": 514,
@@ -16988,7 +18014,9 @@ const SONGS = [
       244
     ],
     "reason": "บีท EDM เดือดสะบัดและลูกคอสุดคลั่งของ Ado เข้ากับฉากบู๊ระเบิดเมือง",
-    "typoIdea": "ฟอนต์นีออนสีชมพูกระพริบไฟสโตรบ แอนิเมชันปาดคำซ้อนกันอย่างรวดเร็ว"
+    "typoIdea": "ฟอนต์นีออนสีชมพูกระพริบไฟสโตรบ แอนิเมชันปาดคำซ้อนกันอย่างรวดเร็ว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cb/3c/81/cb3c81aa-7e19-61a3-5aaa-fc521b81d27a/mzaf_11772413152923766264.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cb/3c/81/cb3c81aa-7e19-61a3-5aaa-fc521b81d27a/mzaf_11772413152923766264.plus.aac.p.m4a"
   },
   {
     "id": 515,
@@ -17010,7 +18038,9 @@ const SONGS = [
       239
     ],
     "reason": "เสียงฮัมเปิดเพลงที่เป็นเอกลักษณ์ สื่อถึงความทรงจำที่ไม่อาจลืมเลือนและการเยียวยาจิตใจ",
-    "typoIdea": "ฟอนต์มินิมอลสีขาวสะท้อนแสงน้ำ คลื่นเสียงสั่นตามจังหวะ รูรู รูรูรูรู"
+    "typoIdea": "ฟอนต์มินิมอลสีขาวสะท้อนแสงน้ำ คลื่นเสียงสั่นตามจังหวะ รูรู รูรูรูรู",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1b/91/c6/1b91c682-1f1d-f678-6fb6-e16bffc22beb/mzaf_8572139935794413888.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1b/91/c6/1b91c682-1f1d-f678-6fb6-e16bffc22beb/mzaf_8572139935794413888.plus.aac.p.m4a"
   },
   {
     "id": 516,
@@ -17032,7 +18062,9 @@ const SONGS = [
       248
     ],
     "reason": "เพลงอนิเมะระดับตำนานที่ทุกคนต้องรู้จัก ท่อนคอรัสทรงพลังที่เข้ากับทุกฉากไคลแม็กซ์",
-    "typoIdea": "ข้อความจัดกึ่งกลางสไตล์ Evangelion typography ฟอนต์ Serif ตัวหนาแถบดำ"
+    "typoIdea": "ข้อความจัดกึ่งกลางสไตล์ Evangelion typography ฟอนต์ Serif ตัวหนาแถบดำ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bc/73/1b/bc731b20-2b4a-aa0a-08e3-cdead8d612bf/mzaf_2050640833676529854.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bc/73/1b/bc731b20-2b4a-aa0a-08e3-cdead8d612bf/mzaf_2050640833676529854.plus.aac.p.m4a"
   },
   {
     "id": 517,
@@ -17054,7 +18086,9 @@ const SONGS = [
       250
     ],
     "reason": "ความผสมผสานระหว่างดนตรีอว็อง-การ์ดกับเสียงร้องอันเป็นเอกลักษณ์ในเกาะมรณะ",
-    "typoIdea": "ตัวอักษรสีแดงชาดตัดดำ มีรอยป้ายพู่กันจีนและเอฟเฟกต์เบลอโมชัน"
+    "typoIdea": "ตัวอักษรสีแดงชาดตัดดำ มีรอยป้ายพู่กันจีนและเอฟเฟกต์เบลอโมชัน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/63/cc/cb/63cccb43-283a-3ec1-46cc-23943f70b4bf/mzaf_10447331168631135086.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/63/cc/cb/63cccb43-283a-3ec1-46cc-23943f70b4bf/mzaf_10447331168631135086.plus.aac.p.m4a"
   },
   {
     "id": 518,
@@ -17076,7 +18110,9 @@ const SONGS = [
       235
     ],
     "reason": "เวอร์ชันความเร็วพิเศษยอดฮิตบน TikTok เหมาะกับคลิปไทโปตัดต่อกระชับฉับไว",
-    "typoIdea": "ตัวหนังสือสับสเกลขึ้นลงอย่างบ้าคลั่ง สลับซูมเข้าหน้าตัวละครตามจังหวะเตะต่อย"
+    "typoIdea": "ตัวหนังสือสับสเกลขึ้นลงอย่างบ้าคลั่ง สลับซูมเข้าหน้าตัวละครตามจังหวะเตะต่อย",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7e/df/95/7edf9517-4ea4-9d22-7bdd-6d754076514a/mzaf_13929503387910019248.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7e/df/95/7edf9517-4ea4-9d22-7bdd-6d754076514a/mzaf_13929503387910019248.plus.aac.p.m4a"
   },
   {
     "id": 519,
@@ -17098,7 +18134,9 @@ const SONGS = [
       233
     ],
     "reason": "เพลงเปิดซีซั่นสองของโยรุชิกะ ให้ความรู้สึกถึงแสงแดดอันอบอุ่นและการก้าวต่อไปข้างหน้า",
-    "typoIdea": "โทนสีพาสเทลเขียวมิ้นต์และชมพูดอกไม้ ตัวหนังสือลอยไปทางขวาตามสายลม"
+    "typoIdea": "โทนสีพาสเทลเขียวมิ้นต์และชมพูดอกไม้ ตัวหนังสือลอยไปทางขวาตามสายลม",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d5/33/90/d5339021-95a7-0c24-b303-576f386562fb/mzaf_6920451872994359221.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d5/33/90/d5339021-95a7-0c24-b303-576f386562fb/mzaf_6920451872994359221.plus.aac.p.m4a"
   },
   {
     "id": 520,
@@ -17120,7 +18158,9 @@ const SONGS = [
       244
     ],
     "reason": "บีทสุดหน่วงและท่อน 'You are my special' สำหรับฉากต่อสู้ในเมืองอันมืดมิด",
-    "typoIdea": "ตัวหนังสือตัวเอียงขอบคมกริบ สีแดงนีออนปนควันดำ มีการซ้อนทับภาพสั่นไหว"
+    "typoIdea": "ตัวหนังสือตัวเอียงขอบคมกริบ สีแดงนีออนปนควันดำ มีการซ้อนทับภาพสั่นไหว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/5d/57/045d57fb-d1c4-2979-31ef-485662a97783/mzaf_7661994685536659402.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/5d/57/045d57fb-d1c4-2979-31ef-485662a97783/mzaf_7661994685536659402.plus.aac.p.m4a"
   },
   {
     "id": 521,
@@ -17142,7 +18182,9 @@ const SONGS = [
       239
     ],
     "reason": "เพลงรักอภิมหาฮิตที่สื่อถึงความรักที่รอคอยได้ แม้จะนานเท่าวงโคจรดาวหาง",
-    "typoIdea": "ตัวหนังสือลากเส้นแสงประกายดาวหาง ตัวอักษรโค้งมนละมุนตาบนท้องฟ้าราตรี"
+    "typoIdea": "ตัวหนังสือลากเส้นแสงประกายดาวหาง ตัวอักษรโค้งมนละมุนตาบนท้องฟ้าราตรี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/37/ff/7337ff2d-c4c8-4190-1f92-5fdca53ce282/mzaf_5262209305244392518.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/37/ff/7337ff2d-c4c8-4190-1f92-5fdca53ce282/mzaf_5262209305244392518.plus.aac.p.m4a"
   },
   {
     "id": 522,
@@ -17164,7 +18206,9 @@ const SONGS = [
       241
     ],
     "reason": "ไม่ว่าเวลาจะผ่านไปนานแค่ไหน ใจก็ยังเลือกเธอคนเดิมเสมอ เหมาะกับซีนสคูลไลฟ์",
-    "typoIdea": "ตัวพิมพ์ลายมือน่ารัก มีไฮไลท์สีพาสเทลขีดเน้นคำสำคัญแบบสมุดไดอารี่"
+    "typoIdea": "ตัวพิมพ์ลายมือน่ารัก มีไฮไลท์สีพาสเทลขีดเน้นคำสำคัญแบบสมุดไดอารี่",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/08/c8/af08c87c-8f9d-cc49-739a-7830f1567c00/mzaf_5128047126536625887.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/08/c8/af08c87c-8f9d-cc49-739a-7830f1567c00/mzaf_5128047126536625887.plus.aac.p.m4a"
   },
   {
     "id": 523,
@@ -17186,7 +18230,9 @@ const SONGS = [
       243
     ],
     "reason": "ความน่ารักที่ทำให้ใจละลายเหมือนโดนสะกดจิต เพียงแค่เห็นเธอนั่งอยู่ตรงโต๊ะริม",
-    "typoIdea": "คำว่า 'ละลาย' ค่อยๆ ไหลเยิ้มลงมาเป็นเอฟเฟกต์นุ่มนวล พร้อมอิโมจิหัวใจสีชมพู"
+    "typoIdea": "คำว่า 'ละลาย' ค่อยๆ ไหลเยิ้มลงมาเป็นเอฟเฟกต์นุ่มนวล พร้อมอิโมจิหัวใจสีชมพู",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b9/bf/45/b9bf45d8-91c6-4b76-17d4-3d7db300b78c/mzaf_15414683918025641305.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b9/bf/45/b9bf45d8-91c6-4b76-17d4-3d7db300b78c/mzaf_15414683918025641305.plus.aac.p.m4a"
   },
   {
     "id": 524,
@@ -17208,7 +18254,9 @@ const SONGS = [
       239
     ],
     "reason": "ความทรงจำของรักแรกที่ไม่เคยจางหายไปจากใจ เรียกน้ำตาและรอยยิ้มได้พร้อมกัน",
-    "typoIdea": "ฟอนต์มีหัวสไตล์วินเทจ เคลื่อนที่ช้าๆ ซ้อนทับฉากฝนตกหรือแสงแดดส่องยามเย็น"
+    "typoIdea": "ฟอนต์มีหัวสไตล์วินเทจ เคลื่อนที่ช้าๆ ซ้อนทับฉากฝนตกหรือแสงแดดส่องยามเย็น",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dd/68/d2/dd68d249-fd10-8e2a-0c2e-486774533a60/mzaf_15793260015738384691.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dd/68/d2/dd68d249-fd10-8e2a-0c2e-486774533a60/mzaf_15793260015738384691.plus.aac.p.m4a"
   },
   {
     "id": 525,
@@ -17230,7 +18278,9 @@ const SONGS = [
       239
     ],
     "reason": "ภาพที่เคยวาดไว้ด้วยกันในวันวาน เพลงระดับปรากฏการณ์ที่บีบหัวใจทุกคนที่เคยสูญเสีย",
-    "typoIdea": "ตัวอักษรปรากฏเหมือนปลายพู่กันวาดลงบนกระดาษ แล้วค่อยๆ โดนสีน้ำชะล้าง"
+    "typoIdea": "ตัวอักษรปรากฏเหมือนปลายพู่กันวาดลงบนกระดาษ แล้วค่อยๆ โดนสีน้ำชะล้าง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/f0/2d/76f02d3a-4b61-f285-a84a-272aa2904c63/mzaf_2746150345781827060.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/f0/2d/76f02d3a-4b61-f285-a84a-272aa2904c63/mzaf_2746150345781827060.plus.aac.p.m4a"
   },
   {
     "id": 526,
@@ -17252,7 +18302,9 @@ const SONGS = [
       249
     ],
     "reason": "เสียงร้องทรงพลังที่ถ่ายทอดความเจ็บปวดของการติดอยู่ในวังวนความคิดถึง",
-    "typoIdea": "ตัวหนังสือสลายตัวแบบ Glitch & Dissolve พร้อมเรนจ์สีขาว-ครามเย็นชา"
+    "typoIdea": "ตัวหนังสือสลายตัวแบบ Glitch & Dissolve พร้อมเรนจ์สีขาว-ครามเย็นชา",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1c/13/a1/1c13a1c4-682c-a104-ce6f-b2394287c14f/mzaf_17818307861761409830.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1c/13/a1/1c13a1c4-682c-a104-ce6f-b2394287c14f/mzaf_17818307861761409830.plus.aac.p.m4a"
   },
   {
     "id": 527,
@@ -17274,7 +18326,9 @@ const SONGS = [
       241
     ],
     "reason": "ความรักที่เปรียบดั่งประกายดอกไม้ไฟ แม้จะเป็นช่วงเวลาสั้นๆ แต่งดงามที่สุดในความทรงจำ",
-    "typoIdea": "ตัวหนังสือแตกประกายไฟสีทองและส้ม มีอนุภาคสะเก็ดไฟระยิบระยับ"
+    "typoIdea": "ตัวหนังสือแตกประกายไฟสีทองและส้ม มีอนุภาคสะเก็ดไฟระยิบระยับ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fc/bf/3a/fcbf3a31-1277-ebf6-daeb-19d303c99478/mzaf_4431898585055530236.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fc/bf/3a/fcbf3a31-1277-ebf6-daeb-19d303c99478/mzaf_4431898585055530236.plus.aac.p.m4a"
   },
   {
     "id": 528,
@@ -17296,7 +18350,9 @@ const SONGS = [
       233
     ],
     "reason": "เพลงแห่งความคิดถึงที่หอมหวลแต่แฝงความเหงา สอดคล้องกับการรำลึกอดีตของเอลฟ์ผู้ยืนยาว",
-    "typoIdea": "ตัวหนังสือพริ้วไหวเหมือนควันกำยาน ค่อยๆ จางลงตามระนาดและสายลม"
+    "typoIdea": "ตัวหนังสือพริ้วไหวเหมือนควันกำยาน ค่อยๆ จางลงตามระนาดและสายลม",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/08/12/36/0812360d-4479-b29d-5275-931b1e541694/mzaf_5285055444520979895.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/08/12/36/0812360d-4479-b29d-5275-931b1e541694/mzaf_5285055444520979895.plus.aac.p.m4a"
   },
   {
     "id": 529,
@@ -17318,7 +18374,9 @@ const SONGS = [
       243
     ],
     "reason": "บทเพลงรักแสนหวานที่บอกว่าหากรักใครสักคน ก็ขอให้รักหมดหัวใจและดูแลเขาให้ดีที่สุด",
-    "typoIdea": "ตัวหนังสือฟอนต์หวานสไตล์ Modern Calligraphy ลอยประดับด้วยกลีบดอกไม้ขาว"
+    "typoIdea": "ตัวหนังสือฟอนต์หวานสไตล์ Modern Calligraphy ลอยประดับด้วยกลีบดอกไม้ขาว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/20/52/4c/20524cf3-73b9-9c39-5204-2006ef9dfe78/mzaf_1394626490362469262.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/20/52/4c/20524cf3-73b9-9c39-5204-2006ef9dfe78/mzaf_1394626490362469262.plus.aac.p.m4a"
   },
   {
     "id": 530,
@@ -17340,7 +18398,9 @@ const SONGS = [
       240
     ],
     "reason": "การอวยพรให้คนที่เรารักได้มีความสุขกับคนที่เขาเลือก แม้คนข้างกายจะไม่ใช่เรา",
-    "typoIdea": "ข้อความแบ่งสองฝั่ง 'ยินดีด้วยนะ' ชัดเจน แต่ข้อความซ่อนเบื้องหลังเบลอจาง"
+    "typoIdea": "ข้อความแบ่งสองฝั่ง 'ยินดีด้วยนะ' ชัดเจน แต่ข้อความซ่อนเบื้องหลังเบลอจาง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cc/1e/85/cc1e8593-514b-8acd-7d85-ef89c8e0904b/mzaf_9241957827263325243.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cc/1e/85/cc1e8593-514b-8acd-7d85-ef89c8e0904b/mzaf_9241957827263325243.plus.aac.p.m4a"
   },
   {
     "id": 531,
@@ -17362,7 +18422,9 @@ const SONGS = [
       243
     ],
     "reason": "เพลงป๊อปสุดน่ารัก อาการเขินเมื่ออยู่ใกล้คนที่ชอบจนกลายเป็นคนไม่พูดไม่จา",
-    "typoIdea": "กล่องแชทข้อความเด้ง Typing Bubble สลับกับสติ๊กเกอร์เครื่องหมายคำถามน่ารัก"
+    "typoIdea": "กล่องแชทข้อความเด้ง Typing Bubble สลับกับสติ๊กเกอร์เครื่องหมายคำถามน่ารัก",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e0/c2/a3/e0c2a3bb-aef0-43bd-922d-cbc01fa0d3b2/mzaf_6637886844505349168.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e0/c2/a3/e0c2a3bb-aef0-43bd-922d-cbc01fa0d3b2/mzaf_6637886844505349168.plus.aac.p.m4a"
   },
   {
     "id": 532,
@@ -17384,7 +18446,9 @@ const SONGS = [
       244
     ],
     "reason": "การขอความชัดเจนในความสัมพันธ์ ท่อนแร็ปของ MAIYARAP เสริมอารมณ์ตัดพ้อได้อย่างเจ็บแสบ",
-    "typoIdea": "แอนิเมชันปั๊มตรายางคำว่า 'พิจารณา' ลงบนพื้นหลังเอกสารคัตติ้งดุดัน"
+    "typoIdea": "แอนิเมชันปั๊มตรายางคำว่า 'พิจารณา' ลงบนพื้นหลังเอกสารคัตติ้งดุดัน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/c3/28/acc32878-a7bd-58a1-7d09-06fc124e8b50/mzaf_15257925916120333587.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/c3/28/acc32878-a7bd-58a1-7d09-06fc124e8b50/mzaf_15257925916120333587.plus.aac.p.m4a"
   },
   {
     "id": 533,
@@ -17406,7 +18470,9 @@ const SONGS = [
       241
     ],
     "reason": "โมเมนต์แอบหวังให้ฝนตกนานๆ เพื่อจะได้ยืนติดฝนอยู่ใต้ร่มคันเดียวกันกับเธอ",
-    "typoIdea": "หยดน้ำฝนไหลเกาะกระจก ตัวหนังสือใสสะท้อนแสงไฟนีออนริมถนนยามเย็น"
+    "typoIdea": "หยดน้ำฝนไหลเกาะกระจก ตัวหนังสือใสสะท้อนแสงไฟนีออนริมถนนยามเย็น",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7c/c3/80/7cc38052-0428-c41e-5d70-d5d072ff0201/mzaf_15626711221296127212.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7c/c3/80/7cc38052-0428-c41e-5d70-d5d072ff0201/mzaf_15626711221296127212.plus.aac.p.m4a"
   },
   {
     "id": 534,
@@ -17428,7 +18494,9 @@ const SONGS = [
       231
     ],
     "reason": "ขอพรสิ่งศักดิ์สิทธิ์ให้เธอหันมารัก จังหวะสนุก ท่อนฮุคติดหู เต้นตามได้ทันที",
-    "typoIdea": "ยันต์สายมูและประกายเวทมนตร์สีชมพู ตัวหนังสือหมุนวนเหมือนกำลังร่ายคาถา"
+    "typoIdea": "ยันต์สายมูและประกายเวทมนตร์สีชมพู ตัวหนังสือหมุนวนเหมือนกำลังร่ายคาถา",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/d1/d2/1fd1d205-e88c-b3a6-3cfe-95e882d6edc2/mzaf_1867053330668459966.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/d1/d2/1fd1d205-e88c-b3a6-3cfe-95e882d6edc2/mzaf_1867053330668459966.plus.aac.p.m4a"
   },
   {
     "id": 535,
@@ -17450,7 +18518,9 @@ const SONGS = [
       240
     ],
     "reason": "เพลงจีบสุดน่ารักที่เป็นไวรัลเต้นทั่วบ้านทั่วเมือง 'ถ้าหากฉลามชอบงับคุณ ผมก็ชอบคุณงับ'",
-    "typoIdea": "ไอคอนครีบฉลามแหวกว่าย ตัวหนังสือกัดงับเด้งไปมาอย่างขี้เล่น"
+    "typoIdea": "ไอคอนครีบฉลามแหวกว่าย ตัวหนังสือกัดงับเด้งไปมาอย่างขี้เล่น",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3a/83/83/3a83836b-e462-1997-cf82-05ca00ba5525/mzaf_8049178132188694572.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3a/83/83/3a83836b-e462-1997-cf82-05ca00ba5525/mzaf_8049178132188694572.plus.aac.p.m4a"
   },
   {
     "id": 536,
@@ -17472,7 +18542,9 @@ const SONGS = [
       244
     ],
     "reason": "เพลงดูเอทแห่งทศวรรษ ถ้าโลกจะต้องอวสาน ขอแค่ได้ตายเคียงข้างเธอด้วยรอยยิ้ม",
-    "typoIdea": "สไตล์เรโทร 70s ไฟนีออนสีน้ำเงินอมส้ม ฟอนต์คลาสสิกตัวหนาพุ่งตามเสียงเปียโน"
+    "typoIdea": "สไตล์เรโทร 70s ไฟนีออนสีน้ำเงินอมส้ม ฟอนต์คลาสสิกตัวหนาพุ่งตามเสียงเปียโน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/6a/99/076a99ed-b946-431b-6f1f-54fa187ca5bd/mzaf_8102882277995122875.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/6a/99/076a99ed-b946-431b-6f1f-54fa187ca5bd/mzaf_8102882277995122875.plus.aac.p.m4a"
   },
   {
     "id": 537,
@@ -17494,7 +18566,9 @@ const SONGS = [
       241
     ],
     "reason": "ความรักที่ผูกพันกันเหมือนนกที่บินไปด้วยกันจนกว่าจะถึงวันสิ้นลมหายใจ",
-    "typoIdea": "ขนนกลอยละล่อง ตัวหนังสือมินิมอลสีครีม สะอาดตาและมีแสงฟุ้งอบอุ่น"
+    "typoIdea": "ขนนกลอยละล่อง ตัวหนังสือมินิมอลสีครีม สะอาดตาและมีแสงฟุ้งอบอุ่น",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/31/d3/3431d34e-847f-5d66-df83-0bce688d997e/mzaf_18106743962423782018.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/31/d3/3431d34e-847f-5d66-df83-0bce688d997e/mzaf_18106743962423782018.plus.aac.p.m4a"
   },
   {
     "id": 538,
@@ -17516,7 +18590,9 @@ const SONGS = [
       243
     ],
     "reason": "เพลงแดนซ์ป๊อปไวรัลอันดับหนึ่งของโลก เสน่ห์ที่ทำให้ใครๆ ก็นอนไม่หลับเหมือนดื่มเอสเปรสโซ",
-    "typoIdea": "แก้วกาแฟและแว่นกันแดดยุค 80s สไตล์ฟอนต์ลายมือสนุกสนานพร้อมจังหวะเบสหนึบ"
+    "typoIdea": "แก้วกาแฟและแว่นกันแดดยุค 80s สไตล์ฟอนต์ลายมือสนุกสนานพร้อมจังหวะเบสหนึบ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/4d/02/e94d0230-11ee-ef94-d2cf-a5d547bd73f4/mzaf_554140808559155562.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/4d/02/e94d0230-11ee-ef94-d2cf-a5d547bd73f4/mzaf_554140808559155562.plus.aac.p.m4a"
   },
   {
     "id": 539,
@@ -17538,7 +18614,9 @@ const SONGS = [
       239
     ],
     "reason": "ท่อนเปียโนพริ้วไหวที่พาผู้ฟังล่องลอยสู่ช่วงเวลาทองคำแห่งการตกหลุมรัก",
-    "typoIdea": "แสงอาทิตย์สีทองทะลุผ่านละอองฝุ่น ตัวหนังสือสีทองคำเรืองรองระยับตา"
+    "typoIdea": "แสงอาทิตย์สีทองทะลุผ่านละอองฝุ่น ตัวหนังสือสีทองคำเรืองรองระยับตา",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/02/8c/30028c8a-a125-5466-bcc6-27a83b1c0135/mzaf_16911571635366913039.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/02/8c/30028c8a-a125-5466-bcc6-27a83b1c0135/mzaf_16911571635366913039.plus.aac.p.m4a"
   },
   {
     "id": 540,
@@ -17560,7 +18638,9 @@ const SONGS = [
       241
     ],
     "reason": "บทเพลงดูว็อปกลิ่นอายคลาสสิกที่ทำให้รู้สึกว่าโลกใบนี้มีความหมายขึ้นมาเมื่อเจอเธอ",
-    "typoIdea": "สไตล์โปสเตอร์หนังรักยุค 1950s ฟอนต์ Script หรูหราและขอบเฟรมสีงาช้าง"
+    "typoIdea": "สไตล์โปสเตอร์หนังรักยุค 1950s ฟอนต์ Script หรูหราและขอบเฟรมสีงาช้าง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/82/c1/5382c1d4-ddba-aa2b-90df-57268895fac9/mzaf_8926201202931541051.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/82/c1/5382c1d4-ddba-aa2b-90df-57268895fac9/mzaf_8926201202931541051.plus.aac.p.m4a"
   },
   {
     "id": 541,
@@ -17582,7 +18662,9 @@ const SONGS = [
       249
     ],
     "reason": "อยู่กับคนใหม่แต่ในแววตายังเห็นเพียงภาพเงาของเธอคนเก่า บาดลึกเข้าขั้วหัวใจ",
-    "typoIdea": "ภาพซ้อนโปร่งแสงของความทรงจำ ตัวหนังสือสีขาวหม่นซีดจาง ค่อยๆ ละลายหายไป"
+    "typoIdea": "ภาพซ้อนโปร่งแสงของความทรงจำ ตัวหนังสือสีขาวหม่นซีดจาง ค่อยๆ ละลายหายไป",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/53/c2/0c53c240-300a-5ddf-fc86-3a54e1b73a78/mzaf_13555682862214742934.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/53/c2/0c53c240-300a-5ddf-fc86-3a54e1b73a78/mzaf_13555682862214742934.plus.aac.p.m4a"
   },
   {
     "id": 542,
@@ -17604,7 +18686,9 @@ const SONGS = [
       236
     ],
     "reason": "เสียงเบสทุ้มต่ำและเปียโนมืดหม่น ดั่งการวิ่งหนีความมืดมิดในใจไปสู่แสงตะวัน",
-    "typoIdea": "ตัวหนังสือสไตล์โบสถ์กอธิค ละอองหมอกสีเทาดำ และแสงลำส่องลงมาจากเบื้องบน"
+    "typoIdea": "ตัวหนังสือสไตล์โบสถ์กอธิค ละอองหมอกสีเทาดำ และแสงลำส่องลงมาจากเบื้องบน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/93/94/52/939452d5-e74e-a819-2f16-7c9148f3419a/mzaf_17998933934090835373.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/93/94/52/939452d5-e74e-a819-2f16-7c9148f3419a/mzaf_17998933934090835373.plus.aac.p.m4a"
   },
   {
     "id": 543,
@@ -17626,7 +18710,9 @@ const SONGS = [
       244
     ],
     "reason": "'In the back of my mind, I killed you' การบอกลาความรู้สึกเก่าแบบเด็ดขาดแต่เจ็บปวด",
-    "typoIdea": "โทนสีแดงเลือดหมูตัดดำ ตัวหนังสือแนว Typewriter กระตุกตามคอร์ดกีตาร์โปร่ง"
+    "typoIdea": "โทนสีแดงเลือดหมูตัดดำ ตัวหนังสือแนว Typewriter กระตุกตามคอร์ดกีตาร์โปร่ง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/f5/40/a1f5405d-408f-d84e-1775-b87b30174067/mzaf_5384372198207712281.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/f5/40/a1f5405d-408f-d84e-1775-b87b30174067/mzaf_5384372198207712281.plus.aac.p.m4a"
   },
   {
     "id": 544,
@@ -17648,7 +18734,9 @@ const SONGS = [
       233
     ],
     "reason": "ความหวังที่จะได้อยู่เคียงข้างเธอจนกระทั่งแก่เฒ่า เข้ากับเรื่องราวของเวลาและความทรงจำ",
-    "typoIdea": "เกรนฟิล์ม 8mm แอนิเมชันตัวอักษรลายมือ เขียนลงบนกระดาษจดหมายเก่า"
+    "typoIdea": "เกรนฟิล์ม 8mm แอนิเมชันตัวอักษรลายมือ เขียนลงบนกระดาษจดหมายเก่า",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bf/a3/6d/bfa36d9c-8e41-e05f-8a2b-970c9b21c695/mzaf_9987737564511061938.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bf/a3/6d/bfa36d9c-8e41-e05f-8a2b-970c9b21c695/mzaf_9987737564511061938.plus.aac.p.m4a"
   },
   {
     "id": 545,
@@ -17670,7 +18758,9 @@ const SONGS = [
       233
     ],
     "reason": "เป่าเกสรดอกแดนดิไลออนเพื่ออธิษฐานให้ได้รักเธอ เมโลดี้สดใสเปี่ยมความหวัง",
-    "typoIdea": "เกสรดอกไม้สีขาวปลิวว่อน ตัวหนังสือพริ้วละมุนมีแสงสะท้อนระยิบระยับ"
+    "typoIdea": "เกสรดอกไม้สีขาวปลิวว่อน ตัวหนังสือพริ้วละมุนมีแสงสะท้อนระยิบระยับ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bc/5a/88/bc5a881d-dc44-fc7f-92fd-376680957969/mzaf_10218454983981161930.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bc/5a/88/bc5a881d-dc44-fc7f-92fd-376680957969/mzaf_10218454983981161930.plus.aac.p.m4a"
   },
   {
     "id": 546,
@@ -17692,7 +18782,9 @@ const SONGS = [
       239
     ],
     "reason": "ถ้าหากแตะต้องตัวจริงไม่ได้ ขอเก็บเพียงเงาความทรงจำไว้กอดก็ยังดี",
-    "typoIdea": "ฟิลเตอร์กระจกฝ้ามัว ตัวหนังสือซ้อนทับภาพความทรงจำที่วิ่งผ่านไปอย่างรวดเร็ว"
+    "typoIdea": "ฟิลเตอร์กระจกฝ้ามัว ตัวหนังสือซ้อนทับภาพความทรงจำที่วิ่งผ่านไปอย่างรวดเร็ว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/35/03/85/350385d9-e71f-4e23-49eb-9bbf812c6ffc/mzaf_18141129225761277085.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/35/03/85/350385d9-e71f-4e23-49eb-9bbf812c6ffc/mzaf_18141129225761277085.plus.aac.p.m4a"
   },
   {
     "id": 547,
@@ -17714,7 +18806,9 @@ const SONGS = [
       234
     ],
     "reason": "จังหวะซินธ์ป๊อปเต้นรำแต่เนื้อหากล่าวถึงการเปลี่ยนแปลงและความโดดเดี่ยว",
-    "typoIdea": "ตัวอักษรกลมมินิมอล หมุนตามแป้นหมุนเสียงดนตรี คุมโทนสีฟ้า แดง และเหลืองสดใส"
+    "typoIdea": "ตัวอักษรกลมมินิมอล หมุนตามแป้นหมุนเสียงดนตรี คุมโทนสีฟ้า แดง และเหลืองสดใส",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/10/16/67101606-3869-ca44-6c03-e13d6322cb51/mzaf_1135399237022217274.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/10/16/67101606-3869-ca44-6c03-e13d6322cb51/mzaf_1135399237022217274.plus.aac.p.m4a"
   },
   {
     "id": 548,
@@ -17736,7 +18830,9 @@ const SONGS = [
       248
     ],
     "reason": "ความเหนื่อยล้าจนแทบไม่มีแรงจะรักใครได้อีก บทเพลงที่ยอดนิยมในการตัดคลิปสะเทือนอารมณ์",
-    "typoIdea": "ตัวหนังสือสั่นไหวและแตกกระจายเมื่อเสียงกลองไคลแม็กซ์ระเบิดขึ้น"
+    "typoIdea": "ตัวหนังสือสั่นไหวและแตกกระจายเมื่อเสียงกลองไคลแม็กซ์ระเบิดขึ้น",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/0d/8d/2a0d8d48-f74a-236e-ec23-24a958f5649d/mzaf_16143782915340700495.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/0d/8d/2a0d8d48-f74a-236e-ec23-24a958f5649d/mzaf_16143782915340700495.plus.aac.p.m4a"
   },
   {
     "id": 549,
@@ -17758,7 +18854,9 @@ const SONGS = [
       235
     ],
     "reason": "เสียงกล่องดนตรีกล่อมเด็กกับไรม์แร็ปสุดจริงใจของผู้เป็นพ่อ ไวรัลตลอดกาลสำหรับซีนปกป้องคนสำคัญ",
-    "typoIdea": "ฟอนต์แบบสตรีทแต่มีเส้นแสงนุ่มนวล ค่อยๆ พิมพ์ขึ้นตามความเร็วในการเล่าเรื่อง"
+    "typoIdea": "ฟอนต์แบบสตรีทแต่มีเส้นแสงนุ่มนวล ค่อยๆ พิมพ์ขึ้นตามความเร็วในการเล่าเรื่อง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/c5/39/b3c5394b-cf7a-7114-d938-943c93374fce/mzaf_8824293284590733612.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b3/c5/39/b3c5394b-cf7a-7114-d938-943c93374fce/mzaf_8824293284590733612.plus.aac.p.m4a"
   },
   {
     "id": 550,
@@ -17780,7 +18878,9 @@ const SONGS = [
       242
     ],
     "reason": "เพลงพลังบวกสุดมันส์ จังหวะตบมือและเปียโนสปีดสูง เหมาะกับช็อตชิงชัยชนะในวินาทีสุดท้าย",
-    "typoIdea": "ตัวหนังสือ Extra Bold กระแทกตามจังหวะปรบมือ หมุนมุมกล้อง 3D กระตุ้นอะดรีนาลีน"
+    "typoIdea": "ตัวหนังสือ Extra Bold กระแทกตามจังหวะปรบมือ หมุนมุมกล้อง 3D กระตุ้นอะดรีนาลีน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/bb/72/71bb7251-2e3c-0e02-8cd6-8e4a0218c398/mzaf_17925527612221098407.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/bb/72/71bb7251-2e3c-0e02-8cd6-8e4a0218c398/mzaf_17925527612221098407.plus.aac.p.m4a"
   },
   {
     "id": 551,
@@ -17804,7 +18904,9 @@ const SONGS = [
       18
     ],
     "reason": "เนื้อเพลงสะท้อนถึงวันเวลาที่หมุนเปลี่ยนเวียนไป ทุกสิ่งเปลี่ยนผัน เข้ากับฉากความทรงจำและการพลัดพรากของ Your Name และ Frieren อย่างลึกซึ้ง",
-    "typoIdea": "ฟอนต์ Serif เรียบหรู ย้อมแสงอุ่น Fade In-Out สโลว์โมชั่นตามจังหวะเวลาเดิน"
+    "typoIdea": "ฟอนต์ Serif เรียบหรู ย้อมแสงอุ่น Fade In-Out สโลว์โมชั่นตามจังหวะเวลาเดิน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/14/a9/f5/14a9f543-1cd8-5d71-ff27-e521137a7ef6/mzaf_18039583278245734306.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/14/a9/f5/14a9f543-1cd8-5d71-ff27-e521137a7ef6/mzaf_18039583278245734306.plus.aac.p.m4a"
   },
   {
     "id": 552,
@@ -17827,7 +18929,9 @@ const SONGS = [
       18
     ],
     "reason": "บรรยากาศโฟล์กซึ้งๆ ถ่ายทอดความเหงาและความผูกพันเมื่อเวลาล่วงเลยไป",
-    "typoIdea": "ฟอนต์ลายมือเบาๆ ขึ้นทีละตัวอักษรพร้อมเอฟเฟกต์ฟิล์มเกรนย้อนยุค"
+    "typoIdea": "ฟอนต์ลายมือเบาๆ ขึ้นทีละตัวอักษรพร้อมเอฟเฟกต์ฟิล์มเกรนย้อนยุค",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a3/d6/6e/a3d66e52-caeb-0038-4bda-6c6da56d5b16/mzaf_1208238290972712910.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a3/d6/6e/a3d66e52-caeb-0038-4bda-6c6da56d5b16/mzaf_1208238290972712910.plus.aac.p.m4a"
   },
   {
     "id": 553,
@@ -17850,7 +18954,9 @@ const SONGS = [
       14
     ],
     "reason": "ความรู้สึกที่แม้ทุกอย่างจะเปลี่ยนไป แต่ข้างในยังคงเดิม เหมาะกับฉากดราม่าความรู้สึกวัยรุ่น",
-    "typoIdea": "ใช้ฟอนต์สไตล์มินิมอลตัดขอบสีหม่น เคลื่อนที่แบบ Slide Up ช้าๆ"
+    "typoIdea": "ใช้ฟอนต์สไตล์มินิมอลตัดขอบสีหม่น เคลื่อนที่แบบ Slide Up ช้าๆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f8/5c/11/f85c1174-0261-5c2c-779f-a1f2200861e1/mzaf_9405486884806381771.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f8/5c/11/f85c1174-0261-5c2c-779f-a1f2200861e1/mzaf_9405486884806381771.plus.aac.p.m4a"
   },
   {
     "id": 554,
@@ -17873,7 +18979,9 @@ const SONGS = [
       14
     ],
     "reason": "ท่อน วันเวลาเปลี่ยนไป อะไรอะไรเปลี่ยนไปได้ทุกอย่าง สื่อถึงความไม่มั่นใจในความสัมพันธ์",
-    "typoIdea": "ตัวหนังสือสีขาวเรืองแสงเบาๆ ขยายขนาดเข้าหาคนดูตามท่อนฮุก"
+    "typoIdea": "ตัวหนังสือสีขาวเรืองแสงเบาๆ ขยายขนาดเข้าหาคนดูตามท่อนฮุก",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/56/8d/2b/568d2b23-c70a-4604-f96e-f6d5b6a2566f/mzaf_7384032267805770698.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/56/8d/2b/568d2b23-c70a-4604-f96e-f6d5b6a2566f/mzaf_7384032267805770698.plus.aac.p.m4a"
   },
   {
     "id": 555,
@@ -17896,7 +19004,9 @@ const SONGS = [
       9
     ],
     "reason": "ถ่ายทอดความว่างเปล่าเมื่อคนข้างๆ ไม่เหมือนเดิม เข้ากับฉากฝนตกและน้ำตา",
-    "typoIdea": "ฟอนต์ลายมือกึ่งหวัด มีเอฟเฟกต์ Blur ก่อนจะชัดเมื่อตรงคำร้อง"
+    "typoIdea": "ฟอนต์ลายมือกึ่งหวัด มีเอฟเฟกต์ Blur ก่อนจะชัดเมื่อตรงคำร้อง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c6/e2/46/c6e2466f-f1ff-708a-31e7-cf952c33fb28/mzaf_3280385960187477393.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c6/e2/46/c6e2466f-f1ff-708a-31e7-cf952c33fb28/mzaf_3280385960187477393.plus.aac.p.m4a"
   },
   {
     "id": 556,
@@ -17919,7 +19029,9 @@ const SONGS = [
       19
     ],
     "reason": "เมโลดี้อินดี้ป็อปฟังสบายแต่แฝงความคิดถึงวันเก่าๆ",
-    "typoIdea": "ตัวอักษรแบบโมเดิร์นโค้งมน เด้งนุ่มนวลตามเบสกีตาร์"
+    "typoIdea": "ตัวอักษรแบบโมเดิร์นโค้งมน เด้งนุ่มนวลตามเบสกีตาร์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b7/06/04/b70604e1-a932-2586-664c-0c867445567e/mzaf_2877329538197016337.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b7/06/04/b70604e1-a932-2586-664c-0c867445567e/mzaf_2877329538197016337.plus.aac.p.m4a"
   },
   {
     "id": 557,
@@ -17942,7 +19054,9 @@ const SONGS = [
       9
     ],
     "reason": "ชื่อเพลงสุดโรแมนติกและเศร้า เข้ากับฉากหิมะตกของ 5 Centimeters per Second อย่างสมบูรณ์",
-    "typoIdea": "ตัวอักษรสีขาวบางเฉียบ เลื่อนลอยเหมือนละอองหิมะที่ค่อยๆ ละลาย"
+    "typoIdea": "ตัวอักษรสีขาวบางเฉียบ เลื่อนลอยเหมือนละอองหิมะที่ค่อยๆ ละลาย",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/23/e9/a9/23e9a988-bbad-ea1d-00c1-3e81ba712efb/mzaf_8537939197615000529.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/23/e9/a9/23e9a988-bbad-ea1d-00c1-3e81ba712efb/mzaf_8537939197615000529.plus.aac.p.m4a"
   },
   {
     "id": 558,
@@ -17965,7 +19079,9 @@ const SONGS = [
       11
     ],
     "reason": "บีทฮิปฮอปผสมกลิ่นอายเพื่อชีวิต ท่อนแร็ปบาดใจเข้ากับฉากย้อนอดีตดราม่าต่อสู้",
-    "typoIdea": "ตัวหนังสือตัวหนาสไตล์ Kinetic Typo พุ่งกระแทกตามจังหวะคิกและสแนร์"
+    "typoIdea": "ตัวหนังสือตัวหนาสไตล์ Kinetic Typo พุ่งกระแทกตามจังหวะคิกและสแนร์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ab/16/c1/ab16c133-7bdc-01e6-0e6c-f9ff0c8c9f41/mzaf_3282050872927801930.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ab/16/c1/ab16c133-7bdc-01e6-0e6c-f9ff0c8c9f41/mzaf_3282050872927801930.plus.aac.p.m4a"
   },
   {
     "id": 559,
@@ -17988,7 +19104,9 @@ const SONGS = [
       18
     ],
     "reason": "เพลงไวรัลแห่งชาติ ที่วาดไว้ในฝันแต่ความเป็นจริงคือจากลา เข้ากับ Violet Evergarden ที่สุด",
-    "typoIdea": "ฟอนต์หรูหราคมกริบ ค่อยๆ วาดเส้นเป็นตัวอักษรทีละเส้นคล้ายพู่กัน"
+    "typoIdea": "ฟอนต์หรูหราคมกริบ ค่อยๆ วาดเส้นเป็นตัวอักษรทีละเส้นคล้ายพู่กัน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/14/66/49/1466491a-b745-525c-7b96-321b4fd231d0/mzaf_16914207157708959097.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/14/66/49/1466491a-b745-525c-7b96-321b4fd231d0/mzaf_16914207157708959097.plus.aac.p.m4a"
   },
   {
     "id": 560,
@@ -18011,7 +19129,9 @@ const SONGS = [
       22
     ],
     "reason": "คำสัญญาที่หวังว่าจะได้เจอกันอีกที่ไหนสักแห่ง ยอดฮิตในคลิปไทโปตัดพ้อชีวิต",
-    "typoIdea": "เอฟเฟกต์ Glitch เบาๆ แล้วสว่างวาบในท่อนฮุก"
+    "typoIdea": "เอฟเฟกต์ Glitch เบาๆ แล้วสว่างวาบในท่อนฮุก",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ef/40/e2/ef40e2a5-462d-3900-e800-ac36e02fc442/mzaf_2677602440669876174.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ef/40/e2/ef40e2a5-462d-3900-e800-ac36e02fc442/mzaf_2677602440669876174.plus.aac.p.m4a"
   },
   {
     "id": 561,
@@ -18034,7 +19154,9 @@ const SONGS = [
       2
     ],
     "reason": "ความรู้สึกใจละลายเมื่อมองเธอจากโต๊ะริม เข้ากับฉากโรแมนติกคอมเมดี้",
-    "typoIdea": "ฟอนต์น่ารัก สีพาสเทล ละลายหยดลงตามคำร้อง melt"
+    "typoIdea": "ฟอนต์น่ารัก สีพาสเทล ละลายหยดลงตามคำร้อง melt",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/5f/f4/f45ff486-6fa0-9df5-9d58-8ed552c86140/mzaf_5412811150878921175.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/5f/f4/f45ff486-6fa0-9df5-9d58-8ed552c86140/mzaf_5412811150878921175.plus.aac.p.m4a"
   },
   {
     "id": 562,
@@ -18057,7 +19179,9 @@ const SONGS = [
       3
     ],
     "reason": "พร้อมจะเป็นที่พักพิงให้เธอเสมอ ซึ้งและอบอุ่นหัวใจ",
-    "typoIdea": "ฟอนต์โค้งมน อบอุ่น มีแสงโกลว์สีทองนุ่มลอยรองหลัง"
+    "typoIdea": "ฟอนต์โค้งมน อบอุ่น มีแสงโกลว์สีทองนุ่มลอยรองหลัง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/68/25/6668253c-aa17-85c5-4ad4-d112e0d7cd1e/mzaf_4161458375630754491.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/68/25/6668253c-aa17-85c5-4ad4-d112e0d7cd1e/mzaf_4161458375630754491.plus.aac.p.m4a"
   },
   {
     "id": 563,
@@ -18080,7 +19204,9 @@ const SONGS = [
       10
     ],
     "reason": "การจำนนต่อความรักที่ไม่มีวันสมหวัง บาดลึกหัวใจ",
-    "typoIdea": "ตัวอักษรแตกร้าว ค่อยๆ ร่วงหล่นลงด้านล่างจอ"
+    "typoIdea": "ตัวอักษรแตกร้าว ค่อยๆ ร่วงหล่นลงด้านล่างจอ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3f/be/b9/3fbeb9fa-3537-ee85-553c-c9992f3aa3ff/mzaf_11225322134181997478.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3f/be/b9/3fbeb9fa-3537-ee85-553c-c9992f3aa3ff/mzaf_11225322134181997478.plus.aac.p.m4a"
   },
   {
     "id": 564,
@@ -18103,7 +19229,9 @@ const SONGS = [
       20
     ],
     "reason": "โชคดีแค่ไหนที่ได้รักเธอ และความรู้สึกไม่เคยเปลี่ยนไป",
-    "typoIdea": "ฟอนต์มินิมอล มีหัวใจดวงเล็กๆ ลอยผ่านตัวอักษร"
+    "typoIdea": "ฟอนต์มินิมอล มีหัวใจดวงเล็กๆ ลอยผ่านตัวอักษร",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/08/c8/af08c87c-8f9d-cc49-739a-7830f1567c00/mzaf_5128047126536625887.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/08/c8/af08c87c-8f9d-cc49-739a-7830f1567c00/mzaf_5128047126536625887.plus.aac.p.m4a"
   },
   {
     "id": 565,
@@ -18126,7 +19254,9 @@ const SONGS = [
       10
     ],
     "reason": "เพลงช้าที่ทรงพลังที่สุดของ 4EVE เข้ากับฉากไอดอลและน้ำตาใน Oshi no Ko",
-    "typoIdea": "ตัวหนังสือแก้วโปร่งแสง มีประกายน้ำตาสะท้อนแสง"
+    "typoIdea": "ตัวหนังสือแก้วโปร่งแสง มีประกายน้ำตาสะท้อนแสง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/18/1b/99/181b999e-aa4f-575d-e6d0-7da603756bd0/mzaf_6537050579275792757.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/18/1b/99/181b999e-aa4f-575d-e6d0-7da603756bd0/mzaf_6537050579275792757.plus.aac.p.m4a"
   },
   {
     "id": 566,
@@ -18149,7 +19279,9 @@ const SONGS = [
       1
     ],
     "reason": "ภาพจำยังชัดเจนประหนึ่งเพิ่งเกิดขึ้นเมื่อวาน ยอดฮิตตลอดกาลของคลิปอนิเมะ",
-    "typoIdea": "ตัวหนังสือค่อยๆ สลักลงบนจอเหมือนภาพถ่ายโพลารอยด์"
+    "typoIdea": "ตัวหนังสือค่อยๆ สลักลงบนจอเหมือนภาพถ่ายโพลารอยด์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/92/51/36/925136e1-f8c8-815a-b222-dd512ea87501/mzaf_1228418370768204602.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/92/51/36/925136e1-f8c8-815a-b222-dd512ea87501/mzaf_1228418370768204602.plus.aac.p.m4a"
   },
   {
     "id": 567,
@@ -18172,7 +19304,9 @@ const SONGS = [
       11
     ],
     "reason": "เสียงร้องกังวานและเสียงพิณสุดจับใจ ส่งความถึงคนอยู่ไกลใต้ดวงจันทร์ดวงเดียวกัน",
-    "typoIdea": "ฟอนต์สีเงินประกายจันทรา ส่องแสงวาบเป็นจังหวะ"
+    "typoIdea": "ฟอนต์สีเงินประกายจันทรา ส่องแสงวาบเป็นจังหวะ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/64/31/d964312a-8619-ca7c-2580-1844e0fdf698/mzaf_8881744960688057961.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/64/31/d964312a-8619-ca7c-2580-1844e0fdf698/mzaf_8881744960688057961.plus.aac.p.m4a"
   },
   {
     "id": 568,
@@ -18195,7 +19329,9 @@ const SONGS = [
       24
     ],
     "reason": "บีทกระแทกใจ ผสมมนต์เสน่ห์ เข้ากับฉากแอคชั่นตัดต่อเร็วๆ",
-    "typoIdea": "ฟอนต์สีทองอร่าม กระตุกและสั่นไหวแบบ Shake Effect"
+    "typoIdea": "ฟอนต์สีทองอร่าม กระตุกและสั่นไหวแบบ Shake Effect",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/cc/96/60cc96ee-d36d-201c-0ae7-a8f9d43d672e/mzaf_17220888096056606772.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/cc/96/60cc96ee-d36d-201c-0ae7-a8f9d43d672e/mzaf_17220888096056606772.plus.aac.p.m4a"
   },
   {
     "id": 569,
@@ -18218,7 +19354,9 @@ const SONGS = [
       9
     ],
     "reason": "ความทรงจำในเดือนเมษาที่อบอุ่นแต่เจ็บปวด",
-    "typoIdea": "ฟอนต์บางเบา สีส้มอ่อนของแสงแดดยามเย็น ลอยผ่านหน้าจอ"
+    "typoIdea": "ฟอนต์บางเบา สีส้มอ่อนของแสงแดดยามเย็น ลอยผ่านหน้าจอ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fc/7e/e1/fc7ee125-53f3-23ca-4550-34ab2f8640f4/mzaf_11820125010527885603.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fc/7e/e1/fc7ee125-53f3-23ca-4550-34ab2f8640f4/mzaf_11820125010527885603.plus.aac.p.m4a"
   },
   {
     "id": 570,
@@ -18241,7 +19379,9 @@ const SONGS = [
       20
     ],
     "reason": "ความรู้สึกชิลล์ยามค่ำคืนกับเสียงร้องนุ่มๆ",
-    "typoIdea": "ตัวหนังสือโปร่งแสง ลอยฟุ้งกลางละอองดาว"
+    "typoIdea": "ตัวหนังสือโปร่งแสง ลอยฟุ้งกลางละอองดาว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1a/89/b6/1a89b60c-dfb8-44c1-3dc9-abec9bf5e29a/mzaf_11321530818193066067.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1a/89/b6/1a89b60c-dfb8-44c1-3dc9-abec9bf5e29a/mzaf_11321530818193066067.plus.aac.p.m4a"
   },
   {
     "id": 571,
@@ -18264,7 +19404,9 @@ const SONGS = [
       9
     ],
     "reason": "บรรยากาศมองพระจันทร์กับความทรงจำของคนสองคน เข้ากับ Edgerunners อย่างน่าทึ่ง",
-    "typoIdea": "ตัวหนังสือสีเหลืองนวล เคลื่อนที่แบบ Orbit รอบองค์ประกอบ"
+    "typoIdea": "ตัวหนังสือสีเหลืองนวล เคลื่อนที่แบบ Orbit รอบองค์ประกอบ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3f/d9/ca/3fd9ca56-4ff6-0a85-3c6c-f5489d84c219/mzaf_1735759782933162554.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/3f/d9/ca/3fd9ca56-4ff6-0a85-3c6c-f5489d84c219/mzaf_1735759782933162554.plus.aac.p.m4a"
   },
   {
     "id": 572,
@@ -18287,7 +19429,9 @@ const SONGS = [
       18
     ],
     "reason": "กลิ่นหอมที่พาหวนคิดถึงวันวาน เข้ากับฉากป่าไม้และวิญญาณของ Hotarubi no Mori e",
-    "typoIdea": "ฟอนต์ลายมือพลิ้วไหว กลีบดอกไม้โปรยปรายรอบข้อความ"
+    "typoIdea": "ฟอนต์ลายมือพลิ้วไหว กลีบดอกไม้โปรยปรายรอบข้อความ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/c3/a7/2ec3a7a1-78fb-efac-c3aa-5bc5220eab9e/mzaf_10494967788962621898.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/c3/a7/2ec3a7a1-78fb-efac-c3aa-5bc5220eab9e/mzaf_10494967788962621898.plus.aac.p.m4a"
   },
   {
     "id": 573,
@@ -18310,7 +19454,9 @@ const SONGS = [
       2
     ],
     "reason": "เพลงแอบรักฟีลกู๊ด อบอุ่นหัวใจ เหมาะกับคลิปหวานๆ ในรั้วโรงเรียน",
-    "typoIdea": "ฟอนต์น่ารักเด้งไปมาแบบ Bounce เล็กน้อย"
+    "typoIdea": "ฟอนต์น่ารักเด้งไปมาแบบ Bounce เล็กน้อย",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/c8/d0/ed/c8d0ed77-4e8e-e07b-b312-3c72dac18109/mzaf_16314888132155269219.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/c8/d0/ed/c8d0ed77-4e8e-e07b-b312-3c72dac18109/mzaf_16314888132155269219.plus.aac.p.m4a"
   },
   {
     "id": 574,
@@ -18333,7 +19479,9 @@ const SONGS = [
       9
     ],
     "reason": "ชื่อเธอสลักอยู่ในจิตใจ แม้เวลาจะผ่านไปนานแค่ไหนก็ลบไม่ออก",
-    "typoIdea": "ตัวอักษรแกะสลักเรืองแสงสีชาด ค่อยๆ ปรากฏขึ้น"
+    "typoIdea": "ตัวอักษรแกะสลักเรืองแสงสีชาด ค่อยๆ ปรากฏขึ้น",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/6e/34/e66e34c2-c971-ef2c-2e0f-f8a99e220912/mzaf_7695861381642299193.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/6e/34/e66e34c2-c971-ef2c-2e0f-f8a99e220912/mzaf_7695861381642299193.plus.aac.p.m4a"
   },
   {
     "id": 575,
@@ -18356,7 +19504,9 @@ const SONGS = [
       14
     ],
     "reason": "เพลงรักแรกที่ตรึงใจคนทั้งประเทศ เข้ากับบรรยากาศมัธยมปลาย",
-    "typoIdea": "ฟอนต์เรียบหรูสไตล์โน้ตสมุดเรียน ย้อนวันวาน"
+    "typoIdea": "ฟอนต์เรียบหรูสไตล์โน้ตสมุดเรียน ย้อนวันวาน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dd/68/d2/dd68d249-fd10-8e2a-0c2e-486774533a60/mzaf_15793260015738384691.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dd/68/d2/dd68d249-fd10-8e2a-0c2e-486774533a60/mzaf_15793260015738384691.plus.aac.p.m4a"
   },
   {
     "id": 576,
@@ -18379,7 +19529,9 @@ const SONGS = [
       14
     ],
     "reason": "เส้นแบ่งระหว่างเพื่อนกับคนรักที่ก้าวข้ามไม่ได้",
-    "typoIdea": "เส้นตรงบางๆ ขีดคั่นระหว่างคำ ก่อนจะค่อยๆ แตกกระจาย"
+    "typoIdea": "เส้นตรงบางๆ ขีดคั่นระหว่างคำ ก่อนจะค่อยๆ แตกกระจาย",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8b/b6/f9/8bb6f9dd-7a14-44ce-c441-7cce25877660/mzaf_13562693385241554759.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8b/b6/f9/8bb6f9dd-7a14-44ce-c441-7cce25877660/mzaf_13562693385241554759.plus.aac.p.m4a"
   },
   {
     "id": 577,
@@ -18402,7 +19554,9 @@ const SONGS = [
       8
     ],
     "reason": "ถ้าเธอรักฉันจริง ได้โปรดทิ้งฉันไป เพื่อให้เธอได้เจอสิ่งที่ดีกว่า",
-    "typoIdea": "ตัวอักษรเน้นคำเด่นด้วยสีแดงสด สลับฉากตัดเร็ว"
+    "typoIdea": "ตัวอักษรเน้นคำเด่นด้วยสีแดงสด สลับฉากตัดเร็ว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/02/13/f4021324-132e-c5de-8b8e-8dca141c1880/mzaf_3517459293482534577.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/02/13/f4021324-132e-c5de-8b8e-8dca141c1880/mzaf_3517459293482534577.plus.aac.p.m4a"
   },
   {
     "id": 578,
@@ -18425,7 +19579,9 @@ const SONGS = [
       10
     ],
     "reason": "ของขวัญวันเกิดชิ้นเดียวที่อยากได้คือเธอ ขอพรให้เธอกลับมา",
-    "typoIdea": "เทียนวันเกิดริบหรี่ ควันเทียนลอยขึ้นเป็นรูปตัวหนังสือ"
+    "typoIdea": "เทียนวันเกิดริบหรี่ ควันเทียนลอยขึ้นเป็นรูปตัวหนังสือ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/37/b6/a6/37b6a6a3-1dca-1397-409c-cd4670b55122/mzaf_4887075626909576367.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/37/b6/a6/37b6a6a3-1dca-1397-409c-cd4670b55122/mzaf_4887075626909576367.plus.aac.p.m4a"
   },
   {
     "id": 579,
@@ -18448,7 +19604,9 @@ const SONGS = [
       3
     ],
     "reason": "แม้เส้นขอบฟ้าจะขวางกั้น ก็ไม่อาจกั้นความรักของเราได้",
-    "typoIdea": "เส้นขอบฟ้าสีทองพาดกลางจอ ตัวอักษรสะท้อนผิวน้ำ"
+    "typoIdea": "เส้นขอบฟ้าสีทองพาดกลางจอ ตัวอักษรสะท้อนผิวน้ำ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6e/61/4d/6e614df7-ce9a-5f08-911e-44fd4e572e6b/mzaf_6336853943153832577.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6e/61/4d/6e614df7-ce9a-5f08-911e-44fd4e572e6b/mzaf_6336853943153832577.plus.aac.p.m4a"
   },
   {
     "id": 580,
@@ -18471,7 +19629,9 @@ const SONGS = [
       20
     ],
     "reason": "เพราะเธอคือคนที่โคตรพิเศษในชีวิต",
-    "typoIdea": "ประกายดาววิบวับรอบคำว่า พิเศษ"
+    "typoIdea": "ประกายดาววิบวับรอบคำว่า พิเศษ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0d/40/5e/0d405e54-0350-2a85-5259-1e9e70c39e59/mzaf_9765378744840613670.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0d/40/5e/0d405e54-0350-2a85-5259-1e9e70c39e59/mzaf_9765378744840613670.plus.aac.p.m4a"
   },
   {
     "id": 581,
@@ -18494,7 +19654,9 @@ const SONGS = [
       10
     ],
     "reason": "เพลงอกหักระดับตำนาน ยิ้มทั้งน้ำตาเพื่อยินดีกับความสุขของเธอ",
-    "typoIdea": "ตัวหนังสือขอบดำพื้นขาว กระพริบตามจังหวะเปียโน"
+    "typoIdea": "ตัวหนังสือขอบดำพื้นขาว กระพริบตามจังหวะเปียโน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9b/0d/25/9b0d2539-6aaf-7c9e-2486-bc7874ac5122/mzaf_7280392792458901469.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9b/0d/25/9b0d2539-6aaf-7c9e-2486-bc7874ac5122/mzaf_7280392792458901469.plus.aac.p.m4a"
   },
   {
     "id": 582,
@@ -18517,7 +19679,9 @@ const SONGS = [
       10
     ],
     "reason": "จากสิ่งของที่ไม่มีค่า เธอกลับมองเห็นและเก็บมารักษา",
-    "typoIdea": "ชิ้นส่วนตัวหนังสือค่อยๆ ต่อประกอบกันจนสมบูรณ์"
+    "typoIdea": "ชิ้นส่วนตัวหนังสือค่อยๆ ต่อประกอบกันจนสมบูรณ์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/8b/5d/678b5d00-7a2c-2cc3-c96e-e7b18526c98d/mzaf_1385378532326019552.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/8b/5d/678b5d00-7a2c-2cc3-c96e-e7b18526c98d/mzaf_1385378532326019552.plus.aac.p.m4a"
   },
   {
     "id": 583,
@@ -18540,7 +19704,9 @@ const SONGS = [
       15
     ],
     "reason": "ตรงกับธีมกาลเวลา เมื่อรักแท้ไม่สนว่าเวลาจะผ่านไปนานเพียงใด",
-    "typoIdea": "เข็มนาฬิกาหมุนวนรอบข้อความ แล้วหยุดนิ่งตรงเวลาปัจจุบัน"
+    "typoIdea": "เข็มนาฬิกาหมุนวนรอบข้อความ แล้วหยุดนิ่งตรงเวลาปัจจุบัน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/18/d3/ee/18d3ee17-c832-271c-c922-3b64ef7f6e24/mzaf_2241832353594298933.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/18/d3/ee/18d3ee17-c832-271c-c922-3b64ef7f6e24/mzaf_2241832353594298933.plus.aac.p.m4a"
   },
   {
     "id": 584,
@@ -18563,7 +19729,9 @@ const SONGS = [
       18
     ],
     "reason": "เธอเก่งที่ทำให้ฉันคิดถึงเธอได้ตลอดเวลา",
-    "typoIdea": "ตัวหนังสือเงียบสงบ Fade ช้าๆ ดึงอารมณ์ดิ่ง"
+    "typoIdea": "ตัวหนังสือเงียบสงบ Fade ช้าๆ ดึงอารมณ์ดิ่ง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/96/39/16/963916f0-ce01-aad7-e227-4b3a8c3d02c6/mzaf_12779033532088526221.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/96/39/16/963916f0-ce01-aad7-e227-4b3a8c3d02c6/mzaf_12779033532088526221.plus.aac.p.m4a"
   },
   {
     "id": 585,
@@ -18586,7 +19754,9 @@ const SONGS = [
       2
     ],
     "reason": "เพลงฟังสบายๆ ชวนทบทวนเรื่องราวดีๆ ระหว่างเรา",
-    "typoIdea": "ฟอนต์มินิมอล มีเส้นใต้ลากผ่านคำร้อง"
+    "typoIdea": "ฟอนต์มินิมอล มีเส้นใต้ลากผ่านคำร้อง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/c3/28/acc32878-a7bd-58a1-7d09-06fc124e8b50/mzaf_15257925916120333587.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/c3/28/acc32878-a7bd-58a1-7d09-06fc124e8b50/mzaf_15257925916120333587.plus.aac.p.m4a"
   },
   {
     "id": 586,
@@ -18609,7 +19779,9 @@ const SONGS = [
       19
     ],
     "reason": "เพลงไวรัลสุดฮิต ตัดต่อคู่กับซีนขายขำในอนิเมะโรแมนติกคอมเมดี้",
-    "typoIdea": "ฟอนต์ป๊อปน่ารัก สติกเกอร์หยดเลือดสีแดงสดใส"
+    "typoIdea": "ฟอนต์ป๊อปน่ารัก สติกเกอร์หยดเลือดสีแดงสดใส",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/ca/32/cb/ca32cbd3-6e00-5d33-72c4-7d71ee456d73/mzaf_15308886385266869376.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/ca/32/cb/ca32cbd3-6e00-5d33-72c4-7d71ee456d73/mzaf_15308886385266869376.plus.aac.p.m4a"
   },
   {
     "id": 587,
@@ -18632,7 +19804,9 @@ const SONGS = [
       8
     ],
     "reason": "ความรู้สึกพังทลายเมื่อถูกทิ้ง เข้ากับฉากร้องไห้กลางสายฝน",
-    "typoIdea": "ตัวอักษรแตกร้าวสลายเป็นเศษผง"
+    "typoIdea": "ตัวอักษรแตกร้าวสลายเป็นเศษผง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/aa/c4/ce/aac4cec7-5062-2b24-1ef3-97d622568bf8/mzaf_14666153690779455863.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/aa/c4/ce/aac4cec7-5062-2b24-1ef3-97d622568bf8/mzaf_14666153690779455863.plus.aac.p.m4a"
   },
   {
     "id": 588,
@@ -18655,7 +19829,9 @@ const SONGS = [
       14
     ],
     "reason": "เพลงเร็วสุดกวน เหมาะกับคลิปไทโปตัดต่อจังหวะเร็ว",
-    "typoIdea": "ตัวหนังสือพุ่งจากหลังมาหน้าจอตามบีท"
+    "typoIdea": "ตัวหนังสือพุ่งจากหลังมาหน้าจอตามบีท",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/07/4e/f9074e99-418d-e2e8-81cf-4f062294c200/mzaf_13515487952562679555.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/07/4e/f9074e99-418d-e2e8-81cf-4f062294c200/mzaf_13515487952562679555.plus.aac.p.m4a"
   },
   {
     "id": 589,
@@ -18678,7 +19854,9 @@ const SONGS = [
       18
     ],
     "reason": "ความปรารถนาดีที่ส่งไปถึงคนรักเก่าแม้ไม่ได้คุยกันแล้ว",
-    "typoIdea": "ฟอนต์แชทข้อความลอยขึ้นมาทีละบรรทัด"
+    "typoIdea": "ฟอนต์แชทข้อความลอยขึ้นมาทีละบรรทัด",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/93/23/ab/9323abc8-d5fc-0bd8-9f14-0e0be14ce735/mzaf_6046384343602072316.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/93/23/ab/9323abc8-d5fc-0bd8-9f14-0e0be14ce735/mzaf_6046384343602072316.plus.aac.p.m4a"
   },
   {
     "id": 590,
@@ -18701,7 +19879,9 @@ const SONGS = [
       14
     ],
     "reason": "แม้ห่างไกลแต่ยังกอดกันไว้ในใจเสมอ",
-    "typoIdea": "ตัวอักษรนุ่มนวลมีแสงโกลว์ไออุ่น"
+    "typoIdea": "ตัวอักษรนุ่มนวลมีแสงโกลว์ไออุ่น",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b6/4c/04/b64c0494-122a-2c86-4d77-b8bd4042093b/mzaf_10930101146608886004.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/b6/4c/04/b64c0494-122a-2c86-4d77-b8bd4042093b/mzaf_10930101146608886004.plus.aac.p.m4a"
   },
   {
     "id": 591,
@@ -18724,7 +19904,9 @@ const SONGS = [
       1
     ],
     "reason": "การจับมือเคียงข้างกันผ่านช่วงวัยแห่งการเติบโต",
-    "typoIdea": "ไอคอนจับมือเรืองแสงเชื่อมระหว่างตัวหนังสือ"
+    "typoIdea": "ไอคอนจับมือเรืองแสงเชื่อมระหว่างตัวหนังสือ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a6/77/76/a6777670-bd90-75f0-a033-08d9c2bb44fa/mzaf_4916823770698868084.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a6/77/76/a6777670-bd90-75f0-a033-08d9c2bb44fa/mzaf_4916823770698868084.plus.aac.p.m4a"
   },
   {
     "id": 592,
@@ -18747,7 +19929,9 @@ const SONGS = [
       2
     ],
     "reason": "อาการลังเลที่น่ารัก เข้ากับฉากสารภาพรักในรั้วโรงเรียน",
-    "typoIdea": "ฟอนต์แนวเคป็อปสดใส เต้นดุ๊กดิ๊กตามจังหวะ"
+    "typoIdea": "ฟอนต์แนวเคป็อปสดใส เต้นดุ๊กดิ๊กตามจังหวะ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5e/a6/40/5ea6403c-56ff-f3db-a3b7-5d482583b0e0/mzaf_11997561428978750693.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5e/a6/40/5ea6403c-56ff-f3db-a3b7-5d482583b0e0/mzaf_11997561428978750693.plus.aac.p.m4a"
   },
   {
     "id": 593,
@@ -18770,7 +19954,9 @@ const SONGS = [
       8
     ],
     "reason": "คำว่าห่างกันสักพักที่แปลว่าเลิกกัน ยุคทองกามิกาเซ่",
-    "typoIdea": "ตัวอักษร Y2K ค่อยๆ แยกห่างออกจากกัน"
+    "typoIdea": "ตัวอักษร Y2K ค่อยๆ แยกห่างออกจากกัน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/32/41/17/324117f9-3401-500a-2733-320f5fd4688f/mzaf_16020532733471070569.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/32/41/17/324117f9-3401-500a-2733-320f5fd4688f/mzaf_16020532733471070569.plus.aac.p.m4a"
   },
   {
     "id": 594,
@@ -18793,7 +19979,9 @@ const SONGS = [
       47
     ],
     "reason": "ความเจ็บปวดจากการถูกทรยศหักหลัง เข้ากับฉากดาร์กแฟนตาซี",
-    "typoIdea": "ดาบสีเงินปักทะลุตัวหนังสือพร้อมหยดเลือด"
+    "typoIdea": "ดาบสีเงินปักทะลุตัวหนังสือพร้อมหยดเลือด",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/25/96/5f/25965f4d-d138-c88f-154d-c3fdfe1b24ab/mzaf_10490405995473748674.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/25/96/5f/25965f4d-d138-c88f-154d-c3fdfe1b24ab/mzaf_10490405995473748674.plus.aac.p.m4a"
   },
   {
     "id": 595,
@@ -18816,7 +20004,9 @@ const SONGS = [
       10
     ],
     "reason": "บทสรุปความรักที่เจ็บปวดเกินกว่านิยายเรื่องใด",
-    "typoIdea": "ตัวหนังสือพลิกหน้ากระดาษหนังสือเก่า"
+    "typoIdea": "ตัวหนังสือพลิกหน้ากระดาษหนังสือเก่า",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/08/29/71082976-32c6-db69-3d32-73ec5b2cfac3/mzaf_10516639670581470556.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/08/29/71082976-32c6-db69-3d32-73ec5b2cfac3/mzaf_10516639670581470556.plus.aac.p.m4a"
   },
   {
     "id": 596,
@@ -18841,7 +20031,9 @@ const SONGS = [
       24
     ],
     "reason": "ท่อนฮุกทรงพลัง 'ช่างมันเถอะความรัก ปล่อยให้มันพังทลาย' เข้ากับฉากความสูญเสีย สิ้นหวัง และการต่อสู้ที่ดุเดือดของ Attack on Titan",
-    "typoIdea": "ตัวหนังสือขอบหินแตก มีเปลวไฟและเศษธุลีลอยรอบคำว่า 'ช่างมัน' ย้อมสีแดงเลือดหมู"
+    "typoIdea": "ตัวหนังสือขอบหินแตก มีเปลวไฟและเศษธุลีลอยรอบคำว่า 'ช่างมัน' ย้อมสีแดงเลือดหมู",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7e/9a/2c/7e9a2cb5-db77-1b24-a898-3b93d22259da/mzaf_12749399247355596572.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7e/9a/2c/7e9a2cb5-db77-1b24-a898-3b93d22259da/mzaf_12749399247355596572.plus.aac.p.m4a"
   },
   {
     "id": 597,
@@ -18866,7 +20058,9 @@ const SONGS = [
       2
     ],
     "reason": "จังหวะอินดี้ร็อคเท่ๆ ปล่อยใจไม่คิดมาก เข้ากับความกวนและความชิลล์ของ Bocchi the Rock และ Horimiya",
-    "typoIdea": "ฟอนต์ตัดแปะสไตล์ Collage Indie เต้นโยกตามเบสพร้อมสติกเกอร์กราฟฟิตี้หลากสี"
+    "typoIdea": "ฟอนต์ตัดแปะสไตล์ Collage Indie เต้นโยกตามเบสพร้อมสติกเกอร์กราฟฟิตี้หลากสี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/d1/93/2ad193fc-38e4-6507-01c4-ecb338b1ceff/mzaf_7502905048072330752.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2a/d1/93/2ad193fc-38e4-6507-01c4-ecb338b1ceff/mzaf_7502905048072330752.plus.aac.p.m4a"
   },
   {
     "id": 598,
@@ -18888,7 +20082,9 @@ const SONGS = [
       352
     ],
     "reason": "บทเพลงปลอบประโลมหัวใจของคนที่พยายามทำตามความฝัน เหมาะอย่างยิ่งกับซีนตัดต่อเรื่อง Look Back ที่ทุ่มเทวาดภาพจนเหนื่อยล้า",
-    "typoIdea": "ใช้ฟอนต์ลายมือพลิ้วไหวสีครีมอบอุ่น ตัวหนังสือค่อยๆ ปรากฏทีละประโยคตามเสียงร้อง"
+    "typoIdea": "ใช้ฟอนต์ลายมือพลิ้วไหวสีครีมอบอุ่น ตัวหนังสือค่อยๆ ปรากฏทีละประโยคตามเสียงร้อง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/42/5e/6c/425e6c75-eb3f-75a5-9665-5928cf1b619f/mzaf_13059409262426465220.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/42/5e/6c/425e6c75-eb3f-75a5-9665-5928cf1b619f/mzaf_13059409262426465220.plus.aac.p.m4a"
   },
   {
     "id": 599,
@@ -18910,7 +20106,9 @@ const SONGS = [
       351
     ],
     "reason": "ความรู้สึกที่อยากลืมแต่ยิ่งจำ เข้ากับฉากความสัมพันธ์ที่ซับซ้อนใน Blue Box อย่างลงตัว",
-    "typoIdea": "เอฟเฟกต์เบลอแล้วเฟดตัวหนังสือจางลง สลับกับการตัดต่อช็อตมองตากันในโรงยิม"
+    "typoIdea": "เอฟเฟกต์เบลอแล้วเฟดตัวหนังสือจางลง สลับกับการตัดต่อช็อตมองตากันในโรงยิม",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/a5/51/aba5515b-36c4-4ec4-f376-4f886bfb5a56/mzaf_2464286645921122949.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/a5/51/aba5515b-36c4-4ec4-f376-4f886bfb5a56/mzaf_2464286645921122949.plus.aac.p.m4a"
   },
   {
     "id": 600,
@@ -18932,7 +20130,9 @@ const SONGS = [
       356
     ],
     "reason": "เมโลดี้หวานซึ้งที่บอกว่าพร้อมเป็นที่พึ่งให้เธอเสมอ เหมาะกับฉากน่ารักๆ ระหว่างคุเซะกับอาเรีย",
-    "typoIdea": "ฟอนต์แนวโมเดิร์นโค้งมน เคลื่อนที่ลอยขึ้นช้าๆ พร้อมประกายวิบวับรอบตัวอักษร"
+    "typoIdea": "ฟอนต์แนวโมเดิร์นโค้งมน เคลื่อนที่ลอยขึ้นช้าๆ พร้อมประกายวิบวับรอบตัวอักษร",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/68/25/6668253c-aa17-85c5-4ad4-d112e0d7cd1e/mzaf_4161458375630754491.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/68/25/6668253c-aa17-85c5-4ad4-d112e0d7cd1e/mzaf_4161458375630754491.plus.aac.p.m4a"
   },
   {
     "id": 601,
@@ -18954,7 +20154,9 @@ const SONGS = [
       358
     ],
     "reason": "เพลงฮิตที่ร้อยเรียงคำหวาน ผสมกลิ่นอายเสียงพิณ เหมาะกับซีนความน่ารักของนางเอก Giji Harem ทุกเวอร์ชัน",
-    "typoIdea": "ตัวหนังสือสีทองแวววาว สไตล์ไทยโมเดิร์นตัดกับสีพื้นหลังสดใส"
+    "typoIdea": "ตัวหนังสือสีทองแวววาว สไตล์ไทยโมเดิร์นตัดกับสีพื้นหลังสดใส",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/cc/96/60cc96ee-d36d-201c-0ae7-a8f9d43d672e/mzaf_17220888096056606772.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/cc/96/60cc96ee-d36d-201c-0ae7-a8f9d43d672e/mzaf_17220888096056606772.plus.aac.p.m4a"
   },
   {
     "id": 602,
@@ -18976,7 +20178,9 @@ const SONGS = [
       352
     ],
     "reason": "ความเหงาของการมองดวงจันทร์ดวงเดียวกัน เข้ากับมู้ดคิดถึงเพื่อนรักที่จากไปใน Look Back",
-    "typoIdea": "ฟอนต์มีขอบบางคม เรืองแสงสีนวลตาคล้ายแสงจันทร์ สลับกับภาพฝนตกและฤดูกาลเปลี่ยน"
+    "typoIdea": "ฟอนต์มีขอบบางคม เรืองแสงสีนวลตาคล้ายแสงจันทร์ สลับกับภาพฝนตกและฤดูกาลเปลี่ยน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/64/31/d964312a-8619-ca7c-2580-1844e0fdf698/mzaf_8881744960688057961.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/64/31/d964312a-8619-ca7c-2580-1844e0fdf698/mzaf_8881744960688057961.plus.aac.p.m4a"
   },
   {
     "id": 603,
@@ -18998,7 +20202,9 @@ const SONGS = [
       353
     ],
     "reason": "เพลงไวรัลสุดฮาตัดพ้อโชคชะตา เหมาะอย่างยิ่งกับเหล่านางเอกแพ้รักใน Makeine",
-    "typoIdea": "ตัวหนังสือสไตล์ Pop Bubble สีชมพู-พาสเทล เด้งตามจังหวะชะชะช่ากวนๆ"
+    "typoIdea": "ตัวหนังสือสไตล์ Pop Bubble สีชมพู-พาสเทล เด้งตามจังหวะชะชะช่ากวนๆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/ca/32/cb/ca32cbd3-6e00-5d33-72c4-7d71ee456d73/mzaf_15308886385266869376.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview123/v4/ca/32/cb/ca32cbd3-6e00-5d33-72c4-7d71ee456d73/mzaf_15308886385266869376.plus.aac.p.m4a"
   },
   {
     "id": 604,
@@ -19020,7 +20226,9 @@ const SONGS = [
       360
     ],
     "reason": "เพลงฟีลกู้ดชื่นชมความน่ารัก เข้ากับฉากคอสเพลย์สดใสของริริสะแบบเต็มสิบ",
-    "typoIdea": "หัวใจสีชมพูลอยรอบฟอนต์ลายมือน่ารัก จังหวะข้อความปรากฏแบบป๊อปอัพ"
+    "typoIdea": "หัวใจสีชมพูลอยรอบฟอนต์ลายมือน่ารัก จังหวะข้อความปรากฏแบบป๊อปอัพ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/66/07/52/66075276-7468-d0bc-5a91-43cfeccafbe1/mzaf_1904391022478786864.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/66/07/52/66075276-7468-d0bc-5a91-43cfeccafbe1/mzaf_1904391022478786864.plus.aac.p.m4a"
   },
   {
     "id": 605,
@@ -19042,7 +20250,9 @@ const SONGS = [
       357
     ],
     "reason": "บีทสุดชิลล์ผสมมู้ดไซไฟอวกาศ เหมาะกับภาพเมืองที่มีเอเลี่ยนลอยฟ้าใน Dededede",
-    "typoIdea": "ตัวอักษรกลายร่างหรือหมุนเคว้งคว้างช้าๆ ตามเสียงดนตรีซินธ์ฟังสบาย"
+    "typoIdea": "ตัวอักษรกลายร่างหรือหมุนเคว้งคว้างช้าๆ ตามเสียงดนตรีซินธ์ฟังสบาย",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b5/3f/0d/b53f0dc4-c082-5e94-936c-5091f4efd1cd/mzaf_8254291224798728399.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b5/3f/0d/b53f0dc4-c082-5e94-936c-5091f4efd1cd/mzaf_8254291224798728399.plus.aac.p.m4a"
   },
   {
     "id": 606,
@@ -19064,7 +20274,9 @@ const SONGS = [
       353
     ],
     "reason": "รอยยิ้มที่มอบให้พร้อมคราบน้ำตา เข้ากับความรู้สึกของนางเอกที่ยอมเป็นผู้แพ้ในความรัก",
-    "typoIdea": "ตัวหนังสือข้อความแชทที่ถูกส่ง แล้วค่อยๆ เลือนหายไปพร้อมข้อความอ่านแล้ว"
+    "typoIdea": "ตัวหนังสือข้อความแชทที่ถูกส่ง แล้วค่อยๆ เลือนหายไปพร้อมข้อความอ่านแล้ว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6d/c9/00/6dc90011-a863-bdeb-be57-b9f297c4b82b/mzaf_12511109928019079134.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6d/c9/00/6dc90011-a863-bdeb-be57-b9f297c4b82b/mzaf_12511109928019079134.plus.aac.p.m4a"
   },
   {
     "id": 607,
@@ -19086,7 +20298,9 @@ const SONGS = [
       351
     ],
     "reason": "ความรู้สึกรักที่อยากเห็นเขามีความสุข ตรงกับความทุ่มเทของตัวละครใน Blue Box",
-    "typoIdea": "ฟอนต์ Elegant Serif สีขาวสะท้อนแสงไฟในยิมกีฬา ซ้อนภาพทับแบบ Double Exposure"
+    "typoIdea": "ฟอนต์ Elegant Serif สีขาวสะท้อนแสงไฟในยิมกีฬา ซ้อนภาพทับแบบ Double Exposure",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/20/52/4c/20524cf3-73b9-9c39-5204-2006ef9dfe78/mzaf_1394626490362469262.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/20/52/4c/20524cf3-73b9-9c39-5204-2006ef9dfe78/mzaf_1394626490362469262.plus.aac.p.m4a"
   },
   {
     "id": 608,
@@ -19108,7 +20322,9 @@ const SONGS = [
       365
     ],
     "reason": "เพลงร็อคส่งท้ายสุดยิ่งใหญ่ เหมาะกับฉากจบศึกกองขยะระหว่างคาราสึโนะกับเนโกมะ",
-    "typoIdea": "ฟอนต์แนวขรุขระ Grunge สั่นไหวตามเสียงกระแทกกลองสแนร์และกีตาร์ดิบ"
+    "typoIdea": "ฟอนต์แนวขรุขระ Grunge สั่นไหวตามเสียงกระแทกกลองสแนร์และกีตาร์ดิบ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/86/bd/10/86bd1097-83e4-9634-8cb2-e1a4be8c4a3f/mzaf_4008416571366335940.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/86/bd/10/86bd1097-83e4-9634-8cb2-e1a4be8c4a3f/mzaf_4008416571366335940.plus.aac.p.m4a"
   },
   {
     "id": 609,
@@ -19130,7 +20346,9 @@ const SONGS = [
       356
     ],
     "reason": "เสียงร้องทรงพลังและเมโลดี้สุดอลังการ เหมาะกับฉากสารภาพรักอันน่าจดจำ",
-    "typoIdea": "ตัวอักษรพลิ้วไหวสีทองผสมประกายหิมะสีขาว ร่วงหล่นรอบคำว่ารักแท้"
+    "typoIdea": "ตัวอักษรพลิ้วไหวสีทองผสมประกายหิมะสีขาว ร่วงหล่นรอบคำว่ารักแท้",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d0/88/f8/d088f87c-1135-1816-2d69-c33e80f57088/mzaf_4799799825808235537.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d0/88/f8/d088f87c-1135-1816-2d69-c33e80f57088/mzaf_4799799825808235537.plus.aac.p.m4a"
   },
   {
     "id": 610,
@@ -19152,7 +20370,9 @@ const SONGS = [
       351
     ],
     "reason": "บรรยากาศลมร้อนและความทรงจำในฤดูร้อน สอดคล้องกับบรรยากาศค่ายฝึกกีฬาใน Blue Box",
-    "typoIdea": "ฟอนต์สีพาสเทลรับแดด มีประกายแสง Sun Flare วาบผ่านตัวอักษร"
+    "typoIdea": "ฟอนต์สีพาสเทลรับแดด มีประกายแสง Sun Flare วาบผ่านตัวอักษร",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fc/7e/e1/fc7ee125-53f3-23ca-4550-34ab2f8640f4/mzaf_11820125010527885603.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fc/7e/e1/fc7ee125-53f3-23ca-4550-34ab2f8640f4/mzaf_11820125010527885603.plus.aac.p.m4a"
   },
   {
     "id": 611,
@@ -19174,7 +20394,9 @@ const SONGS = [
       363
     ],
     "reason": "ความรู้สึกดำดิ่งสู่ห้วงลึกของความจริง สอดรับกับความทรมานของผู้แสวงหาความจริงใน Orb",
-    "typoIdea": "ตัวหนังสือจมลงสู่ด้านล่างหน้าจอช้าๆ เหมือนฟองอากาศใต้น้ำ"
+    "typoIdea": "ตัวหนังสือจมลงสู่ด้านล่างหน้าจอช้าๆ เหมือนฟองอากาศใต้น้ำ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ca/d9/87/cad98714-89c5-13fe-65f4-66c061e0839d/mzaf_3319053351117589959.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ca/d9/87/cad98714-89c5-13fe-65f4-66c061e0839d/mzaf_3319053351117589959.plus.aac.p.m4a"
   },
   {
     "id": 612,
@@ -19196,7 +20418,9 @@ const SONGS = [
       355
     ],
     "reason": "ท่อนร้องสุดติดหูผสมแร็ปดุดัน เหมาะกับซีนต่อสู้ชิงไหวชิงพริบใน The Elusive Samurai",
-    "typoIdea": "ตัวหนังสือหมุนสะบัดฟันดาบ คมดาบตัดผ่านตัวอักษรจนแตกกระจาย"
+    "typoIdea": "ตัวหนังสือหมุนสะบัดฟันดาบ คมดาบตัดผ่านตัวอักษรจนแตกกระจาย",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4e/a3/3b/4ea33b23-3c9b-abaf-35f7-1dc249a73043/mzaf_8654615123246201039.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4e/a3/3b/4ea33b23-3c9b-abaf-35f7-1dc249a73043/mzaf_8654615123246201039.plus.aac.p.m4a"
   },
   {
     "id": 613,
@@ -19218,7 +20442,9 @@ const SONGS = [
       364
     ],
     "reason": "เพลงไวรัลอันดับ 1 ของโลก จังหวะแดนซ์ร็อคสนุกซ่า เหมาะกับฉากโชว์สดของวง Kessoku Band ใน Bocchi the Rock",
-    "typoIdea": "ฟอนต์เรโทรนีออนสีชมพูช็อกกิ้งพิ้งค์ กระเด้งสลับตามจังหวะ 'อา-พา-ทึ' แบบ Snap Zoom"
+    "typoIdea": "ฟอนต์เรโทรนีออนสีชมพูช็อกกิ้งพิ้งค์ กระเด้งสลับตามจังหวะ 'อา-พา-ทึ' แบบ Snap Zoom",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7a/15/38/7a1538f3-f41a-a2eb-0f24-8eb6712ee043/mzaf_7740628412097685267.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7a/15/38/7a1538f3-f41a-a2eb-0f24-8eb6712ee043/mzaf_7740628412097685267.plus.aac.p.m4a"
   },
   {
     "id": 614,
@@ -19240,7 +20466,9 @@ const SONGS = [
       356
     ],
     "reason": "เมโลดี้หวานซ่อนความน่ารักปนประชดประชัน เข้ากับบุคลิกซึนเดเระของอาเรียโต๊ะข้างๆ",
-    "typoIdea": "ฟอนต์ลายเซ็นแนววินเทจสีฟ้าพาสเทล ตัวหนังสือขีดเส้นใต้พร้อมหัวใจกระพริบ"
+    "typoIdea": "ฟอนต์ลายเซ็นแนววินเทจสีฟ้าพาสเทล ตัวหนังสือขีดเส้นใต้พร้อมหัวใจกระพริบ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/86/0b/54860b8b-0c3b-b16b-5b19-b00424af8b9b/mzaf_1272478887800630516.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/86/0b/54860b8b-0c3b-b16b-5b19-b00424af8b9b/mzaf_1272478887800630516.plus.aac.p.m4a"
   },
   {
     "id": 615,
@@ -19262,7 +20490,9 @@ const SONGS = [
       353
     ],
     "reason": "เสียงร้องทรงพลังและดนตรีซินธ์เร้าใจ สื่อถึงความรู้สึกที่ไม่อาจปฏิเสธหัวใจตัวเอง",
-    "typoIdea": "ตัวหนังสือสไตล์ Billboard 80s มีสโตรกไฟนีออนกระพริบตามท่อนบริดจ์"
+    "typoIdea": "ตัวหนังสือสไตล์ Billboard 80s มีสโตรกไฟนีออนกระพริบตามท่อนบริดจ์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c3/6d/4f/c36d4f23-b87f-046d-7a0e-e3e05d180b2a/mzaf_17235999651335214399.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c3/6d/4f/c36d4f23-b87f-046d-7a0e-e3e05d180b2a/mzaf_17235999651335214399.plus.aac.p.m4a"
   },
   {
     "id": 616,
@@ -19284,7 +20514,9 @@ const SONGS = [
       354
     ],
     "reason": "ท่อนดรอปที่ระเบิดพลังเสียงร็อคสุดขั้ว เข้ากับฉากฟันดาบปล่อยเวทมนตร์ของวิลใน Wistoria",
-    "typoIdea": "เอฟเฟกต์ Screen Shake พร้อมตัวหนังสือขยายใหญ่เต็มหน้าจอตอนท่อนคอรัสระเบิด"
+    "typoIdea": "เอฟเฟกต์ Screen Shake พร้อมตัวหนังสือขยายใหญ่เต็มหน้าจอตอนท่อนคอรัสระเบิด",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4d/d5/00/4dd5006f-ee02-c3f1-94db-0ed4b8dd68f1/mzaf_14250561294796027079.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4d/d5/00/4dd5006f-ee02-c3f1-94db-0ed4b8dd68f1/mzaf_14250561294796027079.plus.aac.p.m4a"
   },
   {
     "id": 617,
@@ -19306,7 +20538,9 @@ const SONGS = [
       361
     ],
     "reason": "เสียงเบสหนึบและเสียงร้องดิบเท่ เข้ากับลุคคาวบอยไซไฟของ Vash the Stampede",
-    "typoIdea": "ฟอนต์ Sans Serif สีทองไหม้บนพื้นหลังมืด ค่อยๆ ไถลจากซ้ายไปขวาอย่างนุ่มนวล"
+    "typoIdea": "ฟอนต์ Sans Serif สีทองไหม้บนพื้นหลังมืด ค่อยๆ ไถลจากซ้ายไปขวาอย่างนุ่มนวล",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a6/61/fc/a661fcaf-f8e5-03db-36f3-31f2e196b1a5/mzaf_18300083713037280538.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a6/61/fc/a661fcaf-f8e5-03db-36f3-31f2e196b1a5/mzaf_18300083713037280538.plus.aac.p.m4a"
   },
   {
     "id": 618,
@@ -19328,7 +20562,9 @@ const SONGS = [
       352
     ],
     "reason": "ท่วงทำนองที่พาย้อนกลับไปยังสถานที่และความทรงจำเดิม สื่อถึงมิตรภาพใน Look Back อย่างลึกซึ้ง",
-    "typoIdea": "ตัวหนังสือพิมพ์ดีดแบบคลาสสิก ค่อยๆ พิมพ์ทีละตัวอักษรตามบีทเพลงดรีมป็อป"
+    "typoIdea": "ตัวหนังสือพิมพ์ดีดแบบคลาสสิก ค่อยๆ พิมพ์ทีละตัวอักษรตามบีทเพลงดรีมป็อป",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6e/df/af/6edfaf58-f901-e9b5-840b-9ac9e37f34b7/mzaf_8465065510938624101.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6e/df/af/6edfaf58-f901-e9b5-840b-9ac9e37f34b7/mzaf_8465065510938624101.plus.aac.p.m4a"
   },
   {
     "id": 619,
@@ -19350,7 +20586,9 @@ const SONGS = [
       352
     ],
     "reason": "เสียงเปียโนและเสียงร้องสุดเหงา เข้ากับฉากนั่งวาดการ์ตูนคนเดียวท่ามกลางความเงียบ",
-    "typoIdea": "ตัวหนังสือสลายเป็นละอองฝน ค่อยๆ เบลอจางลงตามหยดน้ำตาบนหน้ากระดาษ"
+    "typoIdea": "ตัวหนังสือสลายเป็นละอองฝน ค่อยๆ เบลอจางลงตามหยดน้ำตาบนหน้ากระดาษ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/53/c2/0c53c240-300a-5ddf-fc86-3a54e1b73a78/mzaf_13555682862214742934.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0c/53/c2/0c53c240-300a-5ddf-fc86-3a54e1b73a78/mzaf_13555682862214742934.plus.aac.p.m4a"
   },
   {
     "id": 620,
@@ -19372,7 +20610,9 @@ const SONGS = [
       363
     ],
     "reason": "บทเพลงแห่งความมืดมิดและความพยายามที่ไร้ทางออก สอดรับกับความเชื่อในเรื่อง Orb",
-    "typoIdea": "แสงไฟสปอตไลต์ส่องตัวหนังสือกลางจอ พร้อมคลื่นเสียงเบสสั่นไหวในความมืด"
+    "typoIdea": "แสงไฟสปอตไลต์ส่องตัวหนังสือกลางจอ พร้อมคลื่นเสียงเบสสั่นไหวในความมืด",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/11/b8/ff/11b8ff74-aaa5-41c6-91c3-7f19ebc374c4/mzaf_4419658226336232185.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/11/b8/ff/11b8ff74-aaa5-41c6-91c3-7f19ebc374c4/mzaf_4419658226336232185.plus.aac.p.m4a"
   },
   {
     "id": 621,
@@ -19394,7 +20634,9 @@ const SONGS = [
       360
     ],
     "reason": "เมโลดี้สดใสเปรียบหัวใจเป็นเสียงเพลง เข้ากับความหลงใหลในโลกคอสเพลย์ของ 2.5 มิติ",
-    "typoIdea": "กราฟฟิก Equalizer เสียงเต้นขึ้นลงเป็นจังหวะตามตัวอักษร Stereo"
+    "typoIdea": "กราฟฟิก Equalizer เสียงเต้นขึ้นลงเป็นจังหวะตามตัวอักษร Stereo",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/68/5d/02685d3f-2980-3bae-219e-ae23a10d8b1c/mzaf_8880909857974608488.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/68/5d/02685d3f-2980-3bae-219e-ae23a10d8b1c/mzaf_8880909857974608488.plus.aac.p.m4a"
   },
   {
     "id": 622,
@@ -19416,7 +20658,9 @@ const SONGS = [
       351
     ],
     "reason": "บรรยากาศหนาวเหน็บแต่หัวใจอุ่น เข้ากับฉากเดินกลับบ้านหลังซ้อมกีฬาใน Blue Box",
-    "typoIdea": "ฟอนต์สีขาวนวลบนฉากสีหม่น พร้อมเอฟเฟกต์หมอกควันเคลื่อนผ่านตัวอักษร"
+    "typoIdea": "ฟอนต์สีขาวนวลบนฉากสีหม่น พร้อมเอฟเฟกต์หมอกควันเคลื่อนผ่านตัวอักษร",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/37/20/8c372047-2727-8054-9411-0e4867643dd8/mzaf_10169659262182214119.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/37/20/8c372047-2727-8054-9411-0e4867643dd8/mzaf_10169659262182214119.plus.aac.p.m4a"
   },
   {
     "id": 623,
@@ -19438,7 +20682,9 @@ const SONGS = [
       358
     ],
     "reason": "เสียงร้องแผ่วเบานุ่มนวลเหมือนกระซิบข้างหู เข้ากับฉากเขินอายใน Pseudo Harem",
-    "typoIdea": "ตัวหนังสือสไตล์มินิมอลสีพาสเทล ลอยตุ๊บป่องนุ่มนิ่มเหมือนก้อนเมฆ"
+    "typoIdea": "ตัวหนังสือสไตล์มินิมอลสีพาสเทล ลอยตุ๊บป่องนุ่มนิ่มเหมือนก้อนเมฆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bf/24/ea/bf24ea08-17a7-49cc-260e-f3df961df89c/mzaf_18258349558984991426.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bf/24/ea/bf24ea08-17a7-49cc-260e-f3df961df89c/mzaf_18258349558984991426.plus.aac.p.m4a"
   },
   {
     "id": 624,
@@ -19460,7 +20706,9 @@ const SONGS = [
       351
     ],
     "reason": "ความรู้สึกทุ่มเททุกอย่างเพื่อคนที่รัก ตรงกับความรู้สึกของไทกิที่มีต่อรุ่นพี่ชินัตสึ",
-    "typoIdea": "เส้นลายเบ็ดตกปลาลากเป็นตัวอักษรข้อความ เชื่อมต่อระหว่างสองหัวใจ"
+    "typoIdea": "เส้นลายเบ็ดตกปลาลากเป็นตัวอักษรข้อความ เชื่อมต่อระหว่างสองหัวใจ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/a5/3d/43a53dee-5e9f-96cc-f8ab-a9661972eee4/mzaf_9663192347484541720.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/a5/3d/43a53dee-5e9f-96cc-f8ab-a9661972eee4/mzaf_9663192347484541720.plus.aac.p.m4a"
   },
   {
     "id": 625,
@@ -19482,7 +20730,9 @@ const SONGS = [
       359
     ],
     "reason": "บีทอิเล็กทรอนิกส์ดาร์กสุดเท่ เข้ากับความอลังการของเหล่ายมทูตและควินซี่ใน Bleach TYBW",
-    "typoIdea": "ฟอนต์สีแดงเลือดตัดขอบดำ มีประกายไฟฟ้าสีฟ้าแลบผ่านตัวอักษรตามจังหวะเบส"
+    "typoIdea": "ฟอนต์สีแดงเลือดตัดขอบดำ มีประกายไฟฟ้าสีฟ้าแลบผ่านตัวอักษรตามจังหวะเบส",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/90/6e/2f906eee-4aa3-ddd3-121e-54dc6a71edfa/mzaf_2956542638534895059.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/90/6e/2f906eee-4aa3-ddd3-121e-54dc6a71edfa/mzaf_2956542638534895059.plus.aac.p.m4a"
   },
   {
     "id": 626,
@@ -19504,7 +20754,9 @@ const SONGS = [
       356
     ],
     "reason": "เสียงร้องประสานชายหญิงที่ลงตัวที่สุด เหมาะกับซีนโรแมนติกที่เปิดใจคุยกัน",
-    "typoIdea": "ตัวหนังสือสองสี (ชมพู-ฟ้า) ลอยเข้ามาประสานรวมกันตรงกลางจอ"
+    "typoIdea": "ตัวหนังสือสองสี (ชมพู-ฟ้า) ลอยเข้ามาประสานรวมกันตรงกลางจอ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/5a/c2/605ac23e-4f57-25e5-9224-e3c22770d10f/mzaf_8345102416234102950.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/5a/c2/605ac23e-4f57-25e5-9224-e3c22770d10f/mzaf_8345102416234102950.plus.aac.p.m4a"
   },
   {
     "id": 627,
@@ -19526,7 +20778,9 @@ const SONGS = [
       351
     ],
     "reason": "เสียงเปียโนของฟูจิอิ คาเสะผสมกับเพลงสากล สร้างบรรยากาศแสงสีทองยามเย็นที่งดงามเกินบรรยาย",
-    "typoIdea": "ประกายละอองแสงสีทองวิบวับรอบฟอนต์ Serif สวยงามเปล่งประกาย"
+    "typoIdea": "ประกายละอองแสงสีทองวิบวับรอบฟอนต์ Serif สวยงามเปล่งประกาย",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/09/04/7b/09047bec-ff28-7ec9-b258-32f89fac43c8/mzaf_6620254559481912003.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/09/04/7b/09047bec-ff28-7ec9-b258-32f89fac43c8/mzaf_6620254559481912003.plus.aac.p.m4a"
   },
   {
     "id": 628,
@@ -19548,7 +20802,9 @@ const SONGS = [
       351
     ],
     "reason": "เพลงเปิดอนิเมะ Blue Box ประจำซีซั่น ท่วงทำนองเปียโนและกลองสดใสสะท้อนเหงื่อและความรักของวัยรุ่น",
-    "typoIdea": "ฟอนต์สีน้ำเงินสดสะท้อนแสงไฟคอร์ตแบดมินตัน ตัดจังหวะตามลูกตบสแมช"
+    "typoIdea": "ฟอนต์สีน้ำเงินสดสะท้อนแสงไฟคอร์ตแบดมินตัน ตัดจังหวะตามลูกตบสแมช",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cf/70/79/cf70799a-1688-c4aa-e2f0-fc1c2a493f1f/mzaf_7747040681457198945.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cf/70/79/cf70799a-1688-c4aa-e2f0-fc1c2a493f1f/mzaf_7747040681457198945.plus.aac.p.m4a"
   },
   {
     "id": 629,
@@ -19570,7 +20826,9 @@ const SONGS = [
       21
     ],
     "reason": "เพลงเปิดซีซั่น 2 ของลูกโอชิ ดนตรีดาร์กดุดันเข้ากับฉากการแสดงละครเวทีสุดเดือดของอควา",
-    "typoIdea": "ตัวอักษรกลิตช์สีแดง-ดำ พร้อมดวงตาดาวกระจายประกายวาบในความมืด"
+    "typoIdea": "ตัวอักษรกลิตช์สีแดง-ดำ พร้อมดวงตาดาวกระจายประกายวาบในความมืด",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/8e/12/c58e12b4-a58a-898c-5e3b-dcc69282f5c0/mzaf_9158672543126371901.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/8e/12/c58e12b4-a58a-898c-5e3b-dcc69282f5c0/mzaf_9158672543126371901.plus.aac.p.m4a"
   },
   {
     "id": 630,
@@ -19592,7 +20850,9 @@ const SONGS = [
       21
     ],
     "reason": "เพลงปิดที่ผสมผสานความหลอนและความงดงาม สื่อถึงความแค้นและเปลวไฟในใจของตัวละคร",
-    "typoIdea": "เปลวไฟสีม่วงลุกไหม้ตัวหนังสือ ค่อยๆ เผาไหม้จากขอบเข้าไปยังใจกลางคำ"
+    "typoIdea": "เปลวไฟสีม่วงลุกไหม้ตัวหนังสือ ค่อยๆ เผาไหม้จากขอบเข้าไปยังใจกลางคำ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/20/77/25/2077250b-c9e8-61c9-b84b-c9e9944e49ac/mzaf_8279845803522791840.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/20/77/25/2077250b-c9e8-61c9-b84b-c9e9944e49ac/mzaf_8279845803522791840.plus.aac.p.m4a"
   },
   {
     "id": 631,
@@ -19614,7 +20874,9 @@ const SONGS = [
       22
     ],
     "reason": "เพลงเปิดท่อนสองของฟรีเรน กีตาร์โปร่งและจังหวะกลองกระฉับกระเฉงสะท้อนการเดินทางต่อของพวกพ้อง",
-    "typoIdea": "กลีบดอกไม้สีฟ้าลอยพัดพาตัวอักษรให้ปรากฏขึ้นและเลือนหายตามแรงลม"
+    "typoIdea": "กลีบดอกไม้สีฟ้าลอยพัดพาตัวอักษรให้ปรากฏขึ้นและเลือนหายตามแรงลม",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d5/33/90/d5339021-95a7-0c24-b303-576f386562fb/mzaf_6920451872994359221.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d5/33/90/d5339021-95a7-0c24-b303-576f386562fb/mzaf_6920451872994359221.plus.aac.p.m4a"
   },
   {
     "id": 632,
@@ -19636,7 +20898,9 @@ const SONGS = [
       33
     ],
     "reason": "เพลงปิดสุดมันส์ของไคจูหมายเลข 8 จังหวะตบมือสนุกสะท้อนมิตรภาพหน่วยกองกำลังป้องกัน",
-    "typoIdea": "ตัวหนังสือสไตล์ Comic Book เด้งขึ้นตามจังหวะตบมือและเบสสนุกสนาน"
+    "typoIdea": "ตัวหนังสือสไตล์ Comic Book เด้งขึ้นตามจังหวะตบมือและเบสสนุกสนาน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b5/9b/14/b59b1431-4908-3b7a-fd4d-bb86d193ca6a/mzaf_1746474897586183065.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b5/9b/14/b59b1431-4908-3b7a-fd4d-bb86d193ca6a/mzaf_1746474897586183065.plus.aac.p.m4a"
   },
   {
     "id": 633,
@@ -19658,7 +20922,9 @@ const SONGS = [
       3
     ],
     "reason": "เพลงเปิดภาคล่าสุดของการรวมตัวเหล่าเสาหลัก เสียงร้องสองพลังร็อคผสานฉากแอคชั่นสะกดสายตา",
-    "typoIdea": "ตัวหนังสือฟอนต์พู่กันญี่ปุ่นสีเพลิง สลับกับประกายดาบฟาดฟันจอภาพ"
+    "typoIdea": "ตัวหนังสือฟอนต์พู่กันญี่ปุ่นสีเพลิง สลับกับประกายดาบฟาดฟันจอภาพ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1b/33/38/1b333810-3d0b-360e-4add-d0854d642931/mzaf_4459120395971724554.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1b/33/38/1b333810-3d0b-360e-4add-d0854d642931/mzaf_4459120395971724554.plus.aac.p.m4a"
   },
   {
     "id": 634,
@@ -19680,7 +20946,9 @@ const SONGS = [
       10
     ],
     "reason": "เพลงเปิดไอคอนิกที่เปลี่ยนคีย์ดนตรีอย่างน่าทึ่ง สื่อถึงการย้อนเวลาเพื่อช่วยเพื่อน",
-    "typoIdea": "ตัวหนังสือสะท้อนคราบน้ำฝนและไฟนีออนข้างถนนโตเกียวยามค่ำคืน"
+    "typoIdea": "ตัวหนังสือสะท้อนคราบน้ำฝนและไฟนีออนข้างถนนโตเกียวยามค่ำคืน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4d/c3/fc/4dc3fc84-c80b-2f60-2b3c-9ad920c44e8d/mzaf_10847820846597239429.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4d/c3/fc/4dc3fc84-c80b-2f60-2b3c-9ad920c44e8d/mzaf_10847820846597239429.plus.aac.p.m4a"
   },
   {
     "id": 635,
@@ -19702,7 +20970,9 @@ const SONGS = [
       9
     ],
     "reason": "เพลงประกอบระดับตำนานที่ดังขึ้นพร้อมกับฉากดาวตกแตกกระจายเหนือท้องฟ้าเมืองอิโตโมริ",
-    "typoIdea": "แสงประกายประกายดาววิ่งผ่านรอยแยกของตัวอักษร ค่อยๆ ระเบิดเป็นละอองแสงสีฟ้า-ชมพู"
+    "typoIdea": "แสงประกายประกายดาววิ่งผ่านรอยแยกของตัวอักษร ค่อยๆ ระเบิดเป็นละอองแสงสีฟ้า-ชมพู",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/95/de/55/95de553b-420d-8bb6-c7df-6925f9ecf2a4/mzaf_7907396941802337040.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/95/de/55/95de553b-420d-8bb6-c7df-6925f9ecf2a4/mzaf_7907396941802337040.plus.aac.p.m4a"
   },
   {
     "id": 636,
@@ -19724,7 +20994,9 @@ const SONGS = [
       9
     ],
     "reason": "ท่อนประสานเสียงที่ดังกึกก้องตอนดิ่งลงมาจากท้องฟ้าฝ่าม่านเมฆ เป็นซีนที่นักตัดต่อทุกคนต้องเคยใช้",
-    "typoIdea": "ตัวหนังสือพุ่งทะลุม่านเมฆขึ้นสู่ท้องฟ้าสีคราม พร้อมแสงแดดส่องกระทบตัวอักษร"
+    "typoIdea": "ตัวหนังสือพุ่งทะลุม่านเมฆขึ้นสู่ท้องฟ้าสีคราม พร้อมแสงแดดส่องกระทบตัวอักษร",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/58/93/5f/58935fbd-b426-719a-f7bf-49b36d09213c/mzaf_6723773549434137718.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/58/93/5f/58935fbd-b426-719a-f7bf-49b36d09213c/mzaf_6723773549434137718.plus.aac.p.m4a"
   },
   {
     "id": 637,
@@ -19746,7 +21018,9 @@ const SONGS = [
       9
     ],
     "reason": "เสียงฮัมอันเป็นเอกลักษณ์และดนตรีออร์เคสตราอันทรงพลัง เหมาะกับฉากปิดประตูมิติ",
-    "typoIdea": "ตัวหนังสือเป็นรูปบานประตูโบราณ ค่อยๆ ปิดลงพร้อมแสงสีทองเปล่งประกาย"
+    "typoIdea": "ตัวหนังสือเป็นรูปบานประตูโบราณ ค่อยๆ ปิดลงพร้อมแสงสีทองเปล่งประกาย",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/87/00/80870064-7c81-8ecb-fbf3-d7ce7d5d973c/mzaf_16030670600666092245.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/87/00/80870064-7c81-8ecb-fbf3-d7ce7d5d973c/mzaf_16030670600666092245.plus.aac.p.m4a"
   },
   {
     "id": 638,
@@ -19768,7 +21042,9 @@ const SONGS = [
       3
     ],
     "reason": "การประสานพลังระหว่างวงหมาป่าร็อคกับเสียงร้องอันทรงเสน่ห์ของ milet ในศึกช่างตีดาบ",
-    "typoIdea": "ตัวหนังสือฟอนต์พู่กันซามูไร มีประกายไฟจากการตีดาบสาดกระจาย"
+    "typoIdea": "ตัวหนังสือฟอนต์พู่กันซามูไร มีประกายไฟจากการตีดาบสาดกระจาย",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/83/37/d583377d-2838-c953-0d1d-9623715987b8/mzaf_3797477771085865228.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/83/37/d583377d-2838-c953-0d1d-9623715987b8/mzaf_3797477771085865228.plus.aac.p.m4a"
   },
   {
     "id": 639,
@@ -19790,7 +21066,9 @@ const SONGS = [
       2
     ],
     "reason": "เพลงเปิดบทอดีตของโกโจและเกะโท เมโลดี้สดใสปนความเศร้าของฤดูร้อนที่ไม่หวนกลับมา",
-    "typoIdea": "ฟอนต์สีฟ้าครามสดใส สลับภาพท้องฟ้าและรอยยิ้มของสองเพื่อนรักก่อนแยกทาง"
+    "typoIdea": "ฟอนต์สีฟ้าครามสดใส สลับภาพท้องฟ้าและรอยยิ้มของสองเพื่อนรักก่อนแยกทาง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/be/8d/8cbe8db3-d84c-8308-3253-a03202ce49a0/mzaf_5586218102364426317.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/be/8d/8cbe8db3-d84c-8308-3253-a03202ce49a0/mzaf_5586218102364426317.plus.aac.p.m4a"
   },
   {
     "id": 640,
@@ -19812,7 +21090,9 @@ const SONGS = [
       2
     ],
     "reason": "เพลงปิดสุดซึ้งที่สะท้อนการตัดสินใจและรอยแยกในใจของเกะโท สึงุรุ",
-    "typoIdea": "ตัวหนังสือส่องแสงวอมไวท์เหมือนโคมไฟกระดาษ ค่อยๆ ดับมอดลงในสายฝน"
+    "typoIdea": "ตัวหนังสือส่องแสงวอมไวท์เหมือนโคมไฟกระดาษ ค่อยๆ ดับมอดลงในสายฝน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/96/12/b6/9612b695-297d-0297-144f-bee0ba802b9c/mzaf_12450084874172922637.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/96/12/b6/9612b695-297d-0297-144f-bee0ba802b9c/mzaf_12450084874172922637.plus.aac.p.m4a"
   },
   {
     "id": 641,
@@ -19834,7 +21114,9 @@ const SONGS = [
       2
     ],
     "reason": "บีทสุดหลอนและดนตรีเดือดคลั่งของชิบูย่า หนึ่งในเพลงที่ถูกนำมาตัดต่อคลิปไทโปมากที่สุดในโลก",
-    "typoIdea": "ตัวหนังสือกลิตช์สีแดง-ดำ สั่นระรัวกระพริบตามจังหวะ 'You are my special' แบบคลั่งขีดสุด"
+    "typoIdea": "ตัวหนังสือกลิตช์สีแดง-ดำ สั่นระรัวกระพริบตามจังหวะ 'You are my special' แบบคลั่งขีดสุด",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/5d/57/045d57fb-d1c4-2979-31ef-485662a97783/mzaf_7661994685536659402.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/5d/57/045d57fb-d1c4-2979-31ef-485662a97783/mzaf_7661994685536659402.plus.aac.p.m4a"
   },
   {
     "id": 642,
@@ -19856,7 +21138,9 @@ const SONGS = [
       365
     ],
     "reason": "เพลงเปิดในตำนานของไฮคิว ท่อนฮุคทรงพลังเหมาะกับฉากตบลูกวอลเลย์บอลและฉากกระโดดสูงสุดฟ้า",
-    "typoIdea": "ตัวหนังสือพุ่งทะยานจากล่างขึ้นบนตามแรงกระโดดตบลูกยาง พร้อมขนนกสีดำลอยกระจาย"
+    "typoIdea": "ตัวหนังสือพุ่งทะยานจากล่างขึ้นบนตามแรงกระโดดตบลูกยาง พร้อมขนนกสีดำลอยกระจาย",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1b/5d/ab/1b5dab29-26c4-7624-e206-9bb64e15f7a7/mzaf_12862643149759948167.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/1b/5d/ab/1b5dab29-26c4-7624-e206-9bb64e15f7a7/mzaf_12862643149759948167.plus.aac.p.m4a"
   },
   {
     "id": 643,
@@ -19880,7 +21164,9 @@ const SONGS = [
       11
     ],
     "reason": "เพลง OP ดาบพิฆาตอสูร ที่โด่งดังทั่วโลก",
-    "typoIdea": "ตัวหนังสือพุ่งในจังหวะเดียวกับ riff กีตาร์"
+    "typoIdea": "ตัวหนังสือพุ่งในจังหวะเดียวกับ riff กีตาร์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/71/db/b6/71dbb60b-e44a-c0f1-4d11-0c24ec7b3d99/mzaf_17753826553208699234.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/71/db/b6/71dbb60b-e44a-c0f1-4d11-0c24ec7b3d99/mzaf_17753826553208699234.plus.aac.p.m4a"
   },
   {
     "id": 644,
@@ -19903,7 +21189,9 @@ const SONGS = [
       5
     ],
     "reason": "เพลงปิดของ Mugen Train ฉากสู้สุดอีโมชั่น",
-    "typoIdea": "ตัวหนังสือลุกไหม้พร้อมเปลวเพลิงสีส้ม"
+    "typoIdea": "ตัวหนังสือลุกไหม้พร้อมเปลวเพลิงสีส้ม",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8c/66/27/8c6627a6-1e50-de4b-c04f-c9c2f9bc38f7/mzaf_7889131785621773892.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/8c/66/27/8c6627a6-1e50-de4b-c04f-c9c2f9bc38f7/mzaf_7889131785621773892.plus.aac.p.m4a"
   },
   {
     "id": 645,
@@ -19927,7 +21215,9 @@ const SONGS = [
       11
     ],
     "reason": "เพลง OP Tokyo Ghoul อารมณ์หนักและซับซ้อนมาก",
-    "typoIdea": "ตัวอักษรแตกร้าวและรวมตัวใหม่ตามจังหวะ"
+    "typoIdea": "ตัวอักษรแตกร้าวและรวมตัวใหม่ตามจังหวะ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/cd/6a/7e/cd6a7e97-7c4a-d5fc-3dba-04e6fdf05a60/mzaf_5095897777516990649.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview71/v4/cd/6a/7e/cd6a7e97-7c4a-d5fc-3dba-04e6fdf05a60/mzaf_5095897777516990649.plus.aac.p.m4a"
   },
   {
     "id": 646,
@@ -19950,7 +21240,9 @@ const SONGS = [
       20
     ],
     "reason": "เพลง OP Evangelion ในตำนาน ฮิตทุกยุคทุกสมัย",
-    "typoIdea": "ตัวอักษรบินผ่านในมุมกล้องแบบ Evangelion"
+    "typoIdea": "ตัวอักษรบินผ่านในมุมกล้องแบบ Evangelion",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/59/88/d3/5988d3c1-15d4-f4c4-0b7e-d14e77a8c4a0/mzaf_14993085978337684076.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/59/88/d3/5988d3c1-15d4-f4c4-0b7e-d14e77a8c4a0/mzaf_14993085978337684076.plus.aac.p.m4a"
   },
   {
     "id": 647,
@@ -19974,7 +21266,9 @@ const SONGS = [
       2
     ],
     "reason": "เพลง OP น่ารักและ catchy จาก Bakemonogatari",
-    "typoIdea": "ตัวอักษรหมุนเป็นวงกลมตามชื่อ Circulation"
+    "typoIdea": "ตัวอักษรหมุนเป็นวงกลมตามชื่อ Circulation",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/33/2d/e8/332de8db-8cb5-ac1a-bc3e-64b25c4c5b94/mzaf_13088726680703296567.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/33/2d/e8/332de8db-8cb5-ac1a-bc3e-64b25c4c5b94/mzaf_13088726680703296567.plus.aac.p.m4a"
   },
   {
     "id": 648,
@@ -19997,7 +21291,9 @@ const SONGS = [
       22
     ],
     "reason": "เพลง OP Cowboy Bebop แนว Jazz ที่โด่งดังที่สุดในโลกอนิเมะ",
-    "typoIdea": "ตัวอักษรสไตล์ Noir เคลื่อนตามจังหวะแจ๊ส"
+    "typoIdea": "ตัวอักษรสไตล์ Noir เคลื่อนตามจังหวะแจ๊ส",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7c/00/f8/7c00f8f8-a3cf-c5f3-2e53-81b99b24f048/mzaf_3398869479064455459.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7c/00/f8/7c00f8f8-a3cf-c5f3-2e53-81b99b24f048/mzaf_3398869479064455459.plus.aac.p.m4a"
   },
   {
     "id": 649,
@@ -20020,7 +21316,9 @@ const SONGS = [
       7
     ],
     "reason": "เพลงรักอบอุ่นจาก Scrubb เข้ากับฉากโรแมนติกใน Your Name",
-    "typoIdea": "ตัวอักษรนุ่มนวลเหมือนลมพัดในฉากรักกลางทุ่งดอกไม้"
+    "typoIdea": "ตัวอักษรนุ่มนวลเหมือนลมพัดในฉากรักกลางทุ่งดอกไม้",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/3a/ce/71/3ace7194-3a19-0c25-7d3c-af7cce2ede80/mzaf_10429716613082682376.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/3a/ce/71/3ace7194-3a19-0c25-7d3c-af7cce2ede80/mzaf_10429716613082682376.plus.aac.p.m4a"
   },
   {
     "id": 650,
@@ -20043,7 +21341,9 @@ const SONGS = [
       1
     ],
     "reason": "เพลงมิตรภาพที่ซึ้งใจ เข้ากับฉากมิตรภาพใน Haikyuu",
-    "typoIdea": "ตัวอักษรค่อยๆ ปรากฏพร้อมภาพความทรงจำ"
+    "typoIdea": "ตัวอักษรค่อยๆ ปรากฏพร้อมภาพความทรงจำ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/57/5c/a7/575ca7de-7765-e25a-7c70-c6bd1d11a3ed/mzaf_5388680891022793890.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/57/5c/a7/575ca7de-7765-e25a-7c70-c6bd1d11a3ed/mzaf_5388680891022793890.plus.aac.p.m4a"
   },
   {
     "id": 651,
@@ -20067,7 +21367,9 @@ const SONGS = [
       11
     ],
     "reason": "เพลงร็อคที่ให้พลังงาน เหมาะกับฉากสร้างแรงบันดาลใจ",
-    "typoIdea": "ตัวอักษรพุ่งขึ้นพร้อมแสงแดดจ้า"
+    "typoIdea": "ตัวอักษรพุ่งขึ้นพร้อมแสงแดดจ้า",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f0/c8/e9/f0c8e9c2-9f3e-6cd4-1e96-e4e2b4e15e9a/mzaf_8024437820456918702.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/f0/c8/e9/f0c8e9c2-9f3e-6cd4-1e96-e4e2b4e15e9a/mzaf_8024437820456918702.plus.aac.p.m4a"
   },
   {
     "id": 652,
@@ -20091,7 +21393,9 @@ const SONGS = [
       10
     ],
     "reason": "เพลงรักอมตะเหมาะกับฉากอำลาและความรักที่ยิ่งใหญ่",
-    "typoIdea": "ตัวอักษรล่องลอยในมหาสมุทรยามค่ำ"
+    "typoIdea": "ตัวอักษรล่องลอยในมหาสมุทรยามค่ำ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/93/be/7d/93be7dce-f4c0-8d2c-0413-f9b3fe8be9dc/mzaf_3044624870609756380.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/93/be/7d/93be7dce-f4c0-8d2c-0413-f9b3fe8be9dc/mzaf_3044624870609756380.plus.aac.p.m4a"
   },
   {
     "id": 653,
@@ -20111,7 +21415,9 @@ const SONGS = [
     "animeId": 202,
     "animeMatch": [
       202
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/c6/75/eac675cb-e4a7-def8-f700-6c4a51174fcb/mzaf_7221921401608111530.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/c6/75/eac675cb-e4a7-def8-f700-6c4a51174fcb/mzaf_7221921401608111530.plus.aac.p.m4a"
   },
   {
     "id": 654,
@@ -20131,7 +21437,9 @@ const SONGS = [
     "animeId": 202,
     "animeMatch": [
       202
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f7/67/98/f76798ec-4edc-7000-56c8-1600863732d4/mzaf_15324636916996199344.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f7/67/98/f76798ec-4edc-7000-56c8-1600863732d4/mzaf_15324636916996199344.plus.aac.p.m4a"
   },
   {
     "id": 655,
@@ -20151,7 +21459,9 @@ const SONGS = [
     "animeId": 231,
     "animeMatch": [
       231
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6f/59/4a/6f594a27-51be-c0ea-66b9-030312e1ca57/mzaf_2885817648755372249.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6f/59/4a/6f594a27-51be-c0ea-66b9-030312e1ca57/mzaf_2885817648755372249.plus.aac.p.m4a"
   },
   {
     "id": 656,
@@ -20171,7 +21481,9 @@ const SONGS = [
     "animeId": 1,
     "animeMatch": [
       1
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/e8/3c/a7/e83ca74d-7383-905f-362b-0303b31e468f/mzaf_14605142048126454937.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview113/v4/e8/3c/a7/e83ca74d-7383-905f-362b-0303b31e468f/mzaf_14605142048126454937.plus.aac.p.m4a"
   },
   {
     "id": 657,
@@ -20191,7 +21503,9 @@ const SONGS = [
     "animeId": 12,
     "animeMatch": [
       12
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2c/cb/7f/2ccb7f0d-c728-81bc-3a87-72380a60d557/mzaf_8949857135922856533.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2c/cb/7f/2ccb7f0d-c728-81bc-3a87-72380a60d557/mzaf_8949857135922856533.plus.aac.p.m4a"
   },
   {
     "id": 658,
@@ -20211,7 +21525,9 @@ const SONGS = [
     "animeId": 3,
     "animeMatch": [
       3
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6d/fe/18/6dfe184e-7612-f171-0356-0b7a84112e9a/mzaf_9760607751711758843.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6d/fe/18/6dfe184e-7612-f171-0356-0b7a84112e9a/mzaf_9760607751711758843.plus.aac.p.m4a"
   },
   {
     "id": 659,
@@ -20231,7 +21547,9 @@ const SONGS = [
     "animeId": 202,
     "animeMatch": [
       202
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1d/71/af/1d71af3b-270d-ccff-feaa-697581ebc9c0/mzaf_17608781590889087545.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1d/71/af/1d71af3b-270d-ccff-feaa-697581ebc9c0/mzaf_17608781590889087545.plus.aac.p.m4a"
   },
   {
     "id": 660,
@@ -20251,7 +21569,9 @@ const SONGS = [
     "animeId": 2,
     "animeMatch": [
       2
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/88/3a/c9883a4b-f2f0-b7e8-eb32-0200c7bf173c/mzaf_14032535726865829602.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/88/3a/c9883a4b-f2f0-b7e8-eb32-0200c7bf173c/mzaf_14032535726865829602.plus.aac.p.m4a"
   },
   {
     "id": 661,
@@ -20271,7 +21591,9 @@ const SONGS = [
     "animeId": 7,
     "animeMatch": [
       7
-    ]
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ae/d3/a6/aed3a6f8-916d-9ce9-5602-ff6294b71a26/mzaf_981122009904961005.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ae/d3/a6/aed3a6f8-916d-9ce9-5602-ff6294b71a26/mzaf_981122009904961005.plus.aac.p.m4a"
   },
   {
     "id": 662,
@@ -20293,7 +21615,9 @@ const SONGS = [
       22
     ],
     "reason": "เมโลดี้ละมุนกับเรื่องราวความทรงจำที่ตราตรึง",
-    "typoIdea": "ใช้ฟอนต์บางโทนอบอุ่น เฟดตัวอักษรช้าๆ พร้อมแสงแดดยามเย็น"
+    "typoIdea": "ใช้ฟอนต์บางโทนอบอุ่น เฟดตัวอักษรช้าๆ พร้อมแสงแดดยามเย็น",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/76/28/a6/7628a663-d067-b4f3-7e3b-6523b2400e2e/mzaf_221718954353100809.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/76/28/a6/7628a663-d067-b4f3-7e3b-6523b2400e2e/mzaf_221718954353100809.plus.aac.p.m4a"
   },
   {
     "id": 663,
@@ -20315,7 +21639,9 @@ const SONGS = [
       375
     ],
     "reason": "ความรู้สึกที่มองคนตรงหน้าแล้วรู้สึกว่าเขาคือคนพิเศษที่สุด",
-    "typoIdea": "แสงไฟนีออนนุ่มๆ พร้อมตัวหนังสือเด้งกระพริบเบาๆ"
+    "typoIdea": "แสงไฟนีออนนุ่มๆ พร้อมตัวหนังสือเด้งกระพริบเบาๆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0d/40/5e/0d405e54-0350-2a85-5259-1e9e70c39e59/mzaf_9765378744840613670.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/0d/40/5e/0d405e54-0350-2a85-5259-1e9e70c39e59/mzaf_9765378744840613670.plus.aac.p.m4a"
   },
   {
     "id": 664,
@@ -20337,7 +21663,9 @@ const SONGS = [
       29
     ],
     "reason": "จังหวะร็อกพังค์ดุดันกับฉากต่อสู้ของเหล่านักเรียนนักเลง",
-    "typoIdea": "ฟอนต์กราฟิตี้กระแทกตามจังหวะเบสดรัมสีแดงไฟ"
+    "typoIdea": "ฟอนต์กราฟิตี้กระแทกตามจังหวะเบสดรัมสีแดงไฟ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/90/a0/8c90a081-b8f8-8d89-acf7-3531400bd49d/mzaf_1875861912879165721.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/90/a0/8c90a081-b8f8-8d89-acf7-3531400bd49d/mzaf_1875861912879165721.plus.aac.p.m4a"
   },
   {
     "id": 665,
@@ -20359,7 +21687,9 @@ const SONGS = [
       22
     ],
     "reason": "ความรักที่ถูกสลักลึกไว้ในก้นบึ้งของหัวใจตลอดกาล",
-    "typoIdea": "ฟอนต์คลาสสิกเรืองแสงบางเบาบนผิวน้ำ"
+    "typoIdea": "ฟอนต์คลาสสิกเรืองแสงบางเบาบนผิวน้ำ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/6e/34/e66e34c2-c971-ef2c-2e0f-f8a99e220912/mzaf_7695861381642299193.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e6/6e/34/e66e34c2-c971-ef2c-2e0f-f8a99e220912/mzaf_7695861381642299193.plus.aac.p.m4a"
   },
   {
     "id": 666,
@@ -20381,7 +21711,9 @@ const SONGS = [
       213
     ],
     "reason": "ดนตรีซิตี้ป๊อปฟังสบาย เหมาะกับบรรยากาศในโรงเรียนยามเย็น",
-    "typoIdea": "ตัวอักษรนีออนสีชมพู-ฟ้า สไตล์เรโทร 80s"
+    "typoIdea": "ตัวอักษรนีออนสีชมพู-ฟ้า สไตล์เรโทร 80s",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/52/bd/46/52bd4682-5b2b-98d0-e477-2d914dd8f5c5/mzaf_2964818324831537261.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/52/bd/46/52bd4682-5b2b-98d0-e477-2d914dd8f5c5/mzaf_2964818324831537261.plus.aac.p.m4a"
   },
   {
     "id": 667,
@@ -20403,7 +21735,9 @@ const SONGS = [
       373
     ],
     "reason": "การส่งความยินดีผ่านสายลมในคืนที่เหงาที่สุด",
-    "typoIdea": "ฟอนต์โมเดิร์นสีขาวเรียบ เรืองแสงสีฟ้าอ่อนบนท้องฟ้ากลางคืน"
+    "typoIdea": "ฟอนต์โมเดิร์นสีขาวเรียบ เรืองแสงสีฟ้าอ่อนบนท้องฟ้ากลางคืน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/f0/58/d5f05834-f793-0c7a-8c4a-b0e7cb363b0e/mzaf_7246401094002610027.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/f0/58/d5f05834-f793-0c7a-8c4a-b0e7cb363b0e/mzaf_7246401094002610027.plus.aac.p.m4a"
   },
   {
     "id": 668,
@@ -20425,7 +21759,9 @@ const SONGS = [
       32
     ],
     "reason": "Insane vocal speed and drum work from Dandadan theme",
-    "typoIdea": "Neon lightning trails outlining fast-scrolling punchy words"
+    "typoIdea": "Neon lightning trails outlining fast-scrolling punchy words",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/06/c3/95/06c395ae-e266-da88-d4bb-b6c56b0015d8/mzaf_4392772571132026109.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/06/c3/95/06c395ae-e266-da88-d4bb-b6c56b0015d8/mzaf_4392772571132026109.plus.aac.p.m4a"
   },
   {
     "id": 669,
@@ -20447,7 +21783,9 @@ const SONGS = [
       242
     ],
     "reason": "Passionate arena rock celebrating rival friendship and match point drama",
-    "typoIdea": "Sunset orange font streaking like a spike across the net"
+    "typoIdea": "Sunset orange font streaking like a spike across the net",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/26/db/e526dbbb-f107-57fb-8783-9feea7eb7844/mzaf_13628143605540446538.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/26/db/e526dbbb-f107-57fb-8783-9feea7eb7844/mzaf_13628143605540446538.plus.aac.p.m4a"
   },
   {
     "id": 670,
@@ -20469,7 +21807,9 @@ const SONGS = [
       7
     ],
     "reason": "ฟีลลิ่งเดินเล่นริมหาดทรายยามพระอาทิตย์ตกดิน",
-    "typoIdea": "คลื่นน้ำซัดผ่านตัวอักษรแล้วจางหายไป"
+    "typoIdea": "คลื่นน้ำซัดผ่านตัวอักษรแล้วจางหายไป",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c2/d0/44/c2d0447d-dec9-edfb-1440-1ae1667f9a3e/mzaf_15424580955553615155.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c2/d0/44/c2d0447d-dec9-edfb-1440-1ae1667f9a3e/mzaf_15424580955553615155.plus.aac.p.m4a"
   },
   {
     "id": 671,
@@ -20491,7 +21831,9 @@ const SONGS = [
       26
     ],
     "reason": "บรรยากาศล่องลอยเหมือนอยู่ในมิติกระจกสะท้อนเงา",
-    "typoIdea": "เอฟเฟกต์กระจกสะท้อน Mirror ซ้อนเงาสามมิติ"
+    "typoIdea": "เอฟเฟกต์กระจกสะท้อน Mirror ซ้อนเงาสามมิติ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0b/a6/6e/0ba66e73-e888-a5cb-3a54-1b91502d8caa/mzaf_1229926869637758864.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0b/a6/6e/0ba66e73-e888-a5cb-3a54-1b91502d8caa/mzaf_1229926869637758864.plus.aac.p.m4a"
   },
   {
     "id": 672,
@@ -20513,7 +21855,9 @@ const SONGS = [
       7
     ],
     "reason": "ดนตรีฟังสบายที่สื่อถึงการค้นพบคำตอบของชีวิตและหัวใจ",
-    "typoIdea": "ตัวอักษรค่อยๆ ชัดขึ้นจากการเบลอละมุนตา"
+    "typoIdea": "ตัวอักษรค่อยๆ ชัดขึ้นจากการเบลอละมุนตา",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/05/19/3e/05193e43-f441-9e42-5818-fb92c9c47414/mzaf_974226826442656002.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/05/19/3e/05193e43-f441-9e42-5818-fb92c9c47414/mzaf_974226826442656002.plus.aac.p.m4a"
   },
   {
     "id": 673,
@@ -20535,7 +21879,9 @@ const SONGS = [
       2
     ],
     "reason": "ความในใจของคนที่ดูไม่ออกว่าเธอคิดยังไงกันแน่",
-    "typoIdea": "เครื่องหมายคำถาม (?) ปรากฏเด้งรอบๆ ตัวอักษรอย่างน่ารัก"
+    "typoIdea": "เครื่องหมายคำถาม (?) ปรากฏเด้งรอบๆ ตัวอักษรอย่างน่ารัก",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a5/7a/0e/a57a0e4d-fd66-cf6f-fa77-ede8694f0a0e/mzaf_12582035404006697590.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a5/7a/0e/a57a0e4d-fd66-cf6f-fa77-ede8694f0a0e/mzaf_12582035404006697590.plus.aac.p.m4a"
   },
   {
     "id": 674,
@@ -20557,7 +21903,9 @@ const SONGS = [
       14
     ],
     "reason": "ความสุขเรียบง่ายเพียงแค่มีใครสักคนนั่งอยู่ข้างๆ",
-    "typoIdea": "ตัวอักษรสองฝั่งเลื่อนเข้ามาประกบคู่กันพอดี"
+    "typoIdea": "ตัวอักษรสองฝั่งเลื่อนเข้ามาประกบคู่กันพอดี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/e0/e6/15e0e629-690f-f58c-47e6-09c32bede6a8/mzaf_11114409508805636663.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/e0/e6/15e0e629-690f-f58c-47e6-09c32bede6a8/mzaf_11114409508805636663.plus.aac.p.m4a"
   },
   {
     "id": 675,
@@ -20579,7 +21927,9 @@ const SONGS = [
       36
     ],
     "reason": "Uta's show-stopping vocal performance from One Piece Film Red",
-    "typoIdea": "Holographic multi-color luminous lettering radiating music waves"
+    "typoIdea": "Holographic multi-color luminous lettering radiating music waves",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6b/f3/59/6bf35909-9a90-8642-b4fc-0932fcd4f862/mzaf_9878820709909147000.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6b/f3/59/6bf35909-9a90-8642-b4fc-0932fcd4f862/mzaf_9878820709909147000.plus.aac.p.m4a"
   },
   {
     "id": 676,
@@ -20601,7 +21951,9 @@ const SONGS = [
       385
     ],
     "reason": "เพลงป๊อปหวานอบอุ่นที่จะคอยดูแลทุกอย่าง เข้ากับเคมีเจ้าหญิงนีน่าและความรักที่จริงใจ",
-    "typoIdea": "ฟอนต์แนว Rounded Sans สีพาสเทลชมพู-ทอง สไลด์ข้อความจากข้างล่างขึ้นมาแบบสปริงนุ่มๆ"
+    "typoIdea": "ฟอนต์แนว Rounded Sans สีพาสเทลชมพู-ทอง สไลด์ข้อความจากข้างล่างขึ้นมาแบบสปริงนุ่มๆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3e/a0/a8/3ea0a878-b4d7-3965-b0c0-22d3402af30f/mzaf_7540505257618307844.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3e/a0/a8/3ea0a878-b4d7-3965-b0c0-22d3402af30f/mzaf_7540505257618307844.plus.aac.p.m4a"
   },
   {
     "id": 677,
@@ -20623,7 +21975,9 @@ const SONGS = [
       2
     ],
     "reason": "ท่อนฮุกน่ารักสดใส เหมาะกับฉากหยอกล้อหรือซีนหวานแบบแอบเขินของคู่รัก",
-    "typoIdea": "ตัวหนังสือสไตล์ Pop Sticker เด้งขยายพร้อมเอฟเฟกต์หัวใจประกายสีชมพู"
+    "typoIdea": "ตัวหนังสือสไตล์ Pop Sticker เด้งขยายพร้อมเอฟเฟกต์หัวใจประกายสีชมพู",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/37/6a/4f/376a4f6f-ad99-cb86-7fba-3c798efb3b2c/mzaf_7473281820794375284.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/37/6a/4f/376a4f6f-ad99-cb86-7fba-3c798efb3b2c/mzaf_7473281820794375284.plus.aac.p.m4a"
   },
   {
     "id": 678,
@@ -20645,7 +21999,9 @@ const SONGS = [
       27
     ],
     "reason": "บีทน่ารักกวนๆ มีความชิค เหมาะกับฉากความฮาและความน่ารักในครอบครัวฟอร์เจอร์",
-    "typoIdea": "ฟอนต์ตัวหนาลอยไปมา สลับสีตัดกัน ดรอปเงาแบบ Pop Comic"
+    "typoIdea": "ฟอนต์ตัวหนาลอยไปมา สลับสีตัดกัน ดรอปเงาแบบ Pop Comic",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/91/28/6f/91286f1e-9e7e-6ee2-0747-5f493e057a25/mzaf_9008441331403478524.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/91/28/6f/91286f1e-9e7e-6ee2-0747-5f493e057a25/mzaf_9008441331403478524.plus.aac.p.m4a"
   },
   {
     "id": 679,
@@ -20667,7 +22023,9 @@ const SONGS = [
       376
     ],
     "reason": "เนื้อหาที่พร้อมอยู่ข้างเธอเสมอเมื่อเธอเจ็บ เข้ากับความผูกพันของเบลและท่านเฮสเทีย",
-    "typoIdea": "ข้อความคล้ายแชทข้อความมือถือ พร้อมคลื่นเสียงวิ่งตามเสียงร้อง"
+    "typoIdea": "ข้อความคล้ายแชทข้อความมือถือ พร้อมคลื่นเสียงวิ่งตามเสียงร้อง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/1f/0d/9a1f0ddc-9367-c333-dbb2-094912b27bb4/mzaf_10619988463794286601.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/1f/0d/9a1f0ddc-9367-c333-dbb2-094912b27bb4/mzaf_10619988463794286601.plus.aac.p.m4a"
   },
   {
     "id": 680,
@@ -20689,7 +22047,9 @@ const SONGS = [
       387
     ],
     "reason": "ซาวด์ซินธ์ป๊อปละมุนและบรรยากาศโรแมนติกในยามค่ำคืน เข้ากับฉากวิวเมืองและการเดินเคียงข้าง",
-    "typoIdea": "ตัวอักษรนีออนเรืองแสงสีม่วง-ส้ม เบลอฉากหลังสร้างโบเก้แสงไฟเมือง"
+    "typoIdea": "ตัวอักษรนีออนเรืองแสงสีม่วง-ส้ม เบลอฉากหลังสร้างโบเก้แสงไฟเมือง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/e0/e6/15e0e629-690f-f58c-47e6-09c32bede6a8/mzaf_11114409508805636663.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/e0/e6/15e0e629-690f-f58c-47e6-09c32bede6a8/mzaf_11114409508805636663.plus.aac.p.m4a"
   },
   {
     "id": 681,
@@ -20711,7 +22071,9 @@ const SONGS = [
       1
     ],
     "reason": "ความรู้สึกยินดีที่เห็นเธอมีความสุขแม้ไม่มีเรา สอดคล้องกับฉากการจากลาในฤดูใบไม้ผลิ",
-    "typoIdea": "ฟอนต์ขอบบางเรียบหรู ค่อยๆ แตกสลายตามคีย์เปียโนท่อนสุดท้าย"
+    "typoIdea": "ฟอนต์ขอบบางเรียบหรู ค่อยๆ แตกสลายตามคีย์เปียโนท่อนสุดท้าย",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ab/16/c1/ab16c133-7bdc-01e6-0e6c-f9ff0c8c9f41/mzaf_3282050872927801930.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ab/16/c1/ab16c133-7bdc-01e6-0e6c-f9ff0c8c9f41/mzaf_3282050872927801930.plus.aac.p.m4a"
   },
   {
     "id": 682,
@@ -20733,7 +22095,9 @@ const SONGS = [
       383
     ],
     "reason": "จังหวะซินธ์เวฟขับรถยามค่ำคืนที่เร้าใจ เข้ากับการประลองความเร็วบนสนามเขาของ MF Ghost",
-    "typoIdea": "สปีดไลน์พุ่งผ่านตัวหนังสือ เรืองแสงสีส้มเปลวเพลิง ทรานสิชันแบบ Speed Cut"
+    "typoIdea": "สปีดไลน์พุ่งผ่านตัวหนังสือ เรืองแสงสีส้มเปลวเพลิง ทรานสิชันแบบ Speed Cut",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dc/9c/c9/dc9cc992-a72d-37aa-3b26-81735048837f/mzaf_7502433658121927367.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dc/9c/c9/dc9cc992-a72d-37aa-3b26-81735048837f/mzaf_7502433658121927367.plus.aac.p.m4a"
   },
   {
     "id": 683,
@@ -20755,7 +22119,9 @@ const SONGS = [
       384
     ],
     "reason": "โซโลกีตาร์สุดมันส์และเมโลดี้เร็วทะยาน เหมาะกับฉากฝึกดาบและการต่อสู้ของซามูไรวัยหนุ่ม",
-    "typoIdea": "ตัวหนังสือสไตล์ Manga Action ลายเส้นสะบัดพู่กัน สลับสีม่วงไลแลคและขาว"
+    "typoIdea": "ตัวหนังสือสไตล์ Manga Action ลายเส้นสะบัดพู่กัน สลับสีม่วงไลแลคและขาว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0a/c4/5d/0ac45d4d-62ad-9609-4528-78c849392f49/mzaf_15781851599354670952.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0a/c4/5d/0ac45d4d-62ad-9609-4528-78c849392f49/mzaf_15781851599354670952.plus.aac.p.m4a"
   },
   {
     "id": 684,
@@ -20777,7 +22143,9 @@ const SONGS = [
       187
     ],
     "reason": "เมโลดี้ฟีลกู๊ดและกรูฟนุ่มนวลสะท้อนความผูกพันและช่วงเวลาที่สวยงามในอดีต",
-    "typoIdea": "ฟอนต์มินิมอลญี่ปุ่นลอยละล่อง ซ้อนเงาบางๆ และมีแอนิเมชันพลิกหน้าสมุดวาดภาพ"
+    "typoIdea": "ฟอนต์มินิมอลญี่ปุ่นลอยละล่อง ซ้อนเงาบางๆ และมีแอนิเมชันพลิกหน้าสมุดวาดภาพ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6f/36/a4/6f36a4b7-ea9b-e37a-99da-8c04aefb8c22/mzaf_3698037756450034703.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6f/36/a4/6f36a4b7-ea9b-e37a-99da-8c04aefb8c22/mzaf_3698037756450034703.plus.aac.p.m4a"
   },
   {
     "id": 685,
@@ -20799,7 +22167,9 @@ const SONGS = [
       379
     ],
     "reason": "จังหวะสนุกเร้าใจและลูกเล่นดนตรีที่คาดเดายาก เข้ากับฉากยิงปืนและความเร็วของเร็นใน GGO",
-    "typoIdea": "ตัวอักษรแนวเรขาคณิต กระโดดสลับขนาดตามเสียงบีทกระแทก"
+    "typoIdea": "ตัวอักษรแนวเรขาคณิต กระโดดสลับขนาดตามเสียงบีทกระแทก",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/eb/c5/77/ebc57714-88f6-d8e6-7d43-099f36fe0191/mzaf_14786411521429622565.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/eb/c5/77/ebc57714-88f6-d8e6-7d43-099f36fe0191/mzaf_14786411521429622565.plus.aac.p.m4a"
   },
   {
     "id": 686,
@@ -20821,7 +22191,9 @@ const SONGS = [
       382
     ],
     "reason": "บทเพลงแห่งการรำลึกและยืนหยัด เข้ากับฉากการเสียสละครั้งยิ่งใหญ่ในบาบิโลเนีย",
-    "typoIdea": "ฟอนต์ Serif สีทองโบราณ จางหายกลายเป็นละอองทองคำระยิบระยับ"
+    "typoIdea": "ฟอนต์ Serif สีทองโบราณ จางหายกลายเป็นละอองทองคำระยิบระยับ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/5c/86/045c865a-7951-acd1-be9c-4e29e3a00618/mzaf_4853527130631578239.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/5c/86/045c865a-7951-acd1-be9c-4e29e3a00618/mzaf_4853527130631578239.plus.aac.p.m4a"
   },
   {
     "id": 687,
@@ -20843,7 +22215,9 @@ const SONGS = [
       378
     ],
     "reason": "เพลงเปิดสุดไวรัลที่ใครฟังก็ต้องโยกตาม เข้ากับซีนขงเบ้งและเอโกะอย่างที่สุด",
-    "typoIdea": "ลูกศรและป้ายไฟดิสโก้ ตัวหนังสือเด้งสเต็ปแดนซ์ แสงนีออนสลับสีเหลือง-ม่วง"
+    "typoIdea": "ลูกศรและป้ายไฟดิสโก้ ตัวหนังสือเด้งสเต็ปแดนซ์ แสงนีออนสลับสีเหลือง-ม่วง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/dc/87/66/dc87661b-ebc0-309f-c92c-a6048ef45b10/mzaf_4980228624940024737.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview112/v4/dc/87/66/dc87661b-ebc0-309f-c92c-a6048ef45b10/mzaf_4980228624940024737.plus.aac.p.m4a"
   },
   {
     "id": 688,
@@ -20865,7 +22239,9 @@ const SONGS = [
       377
     ],
     "reason": "เพลงเปิดระดับตำนานที่ผสมความไพเราะของเสียงร้องกับฉากแอคชั่นไซไฟระดับภาพยนตร์",
-    "typoIdea": "เส้นคลื่นเสียงดิจิทัลสีฟ้าไซอัน วิ่งเชื่อมโยงตัวหนังสือไทโปแบบล้ำยุค"
+    "typoIdea": "เส้นคลื่นเสียงดิจิทัลสีฟ้าไซอัน วิ่งเชื่อมโยงตัวหนังสือไทโปแบบล้ำยุค",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/1a/0b/e5/1a0be5ab-12e7-8bb3-2fa6-5724a3dda437/mzaf_13480818112944396654.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/1a/0b/e5/1a0be5ab-12e7-8bb3-2fa6-5724a3dda437/mzaf_13480818112944396654.plus.aac.p.m4a"
   },
   {
     "id": 689,
@@ -20887,7 +22263,9 @@ const SONGS = [
       21
     ],
     "reason": "เพลงเปิดดาร์กป๊อปที่มีเสน่ห์เย้ายวนและร้อนแรง สะท้อนละครเวทีโตเกียวเบลดและการแก้แค้น",
-    "typoIdea": "ตัวอักษรเงาสะท้อนสไตล์กระจกเงา เลือดและประกายตาดวงดาวกะพริบวิบวับ"
+    "typoIdea": "ตัวอักษรเงาสะท้อนสไตล์กระจกเงา เลือดและประกายตาดวงดาวกะพริบวิบวับ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/8e/12/c58e12b4-a58a-898c-5e3b-dcc69282f5c0/mzaf_9158672543126371901.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c5/8e/12/c58e12b4-a58a-898c-5e3b-dcc69282f5c0/mzaf_9158672543126371901.plus.aac.p.m4a"
   },
   {
     "id": 690,
@@ -20909,7 +22287,9 @@ const SONGS = [
       48
     ],
     "reason": "เพลงเปิด Vinland Saga ที่แฟนสายตัดต่อยกย่อง ความเดือดของเสียงสครีมและท่อนโซโล่สะเทือนวิญญาณ",
-    "typoIdea": "รอยบากดาบฟันเฉือนตัวหนังสือแตกกระจาย ทรานสิชันคัตติ้งเร็วตามสปีดเสียงกลอง"
+    "typoIdea": "รอยบากดาบฟันเฉือนตัวหนังสือแตกกระจาย ทรานสิชันคัตติ้งเร็วตามสปีดเสียงกลอง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a0/e1/72/a0e172ae-4646-64c4-cde0-65480e4d0eb8/mzaf_8060636888207431771.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a0/e1/72/a0e172ae-4646-64c4-cde0-65480e4d0eb8/mzaf_8060636888207431771.plus.aac.p.m4a"
   },
   {
     "id": 691,
@@ -20931,7 +22311,9 @@ const SONGS = [
       85
     ],
     "reason": "บีทแดนซ์ไฟลุกสไตล์ทีป๊อปที่เร้าร้อน เข้ากับฉากยิงปืนและความเก่งกาจของสองสาว Lycoris",
-    "typoIdea": "ตัวอักษรสีแดงนีออนตัดเปลวไฟ สั่นกระตุกตามเสียงสแนร์และจังหวะเคาะสับ"
+    "typoIdea": "ตัวอักษรสีแดงนีออนตัดเปลวไฟ สั่นกระตุกตามเสียงสแนร์และจังหวะเคาะสับ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/4c/58/264c5806-aefb-c654-a84a-174912847f64/mzaf_6329756877425482450.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/4c/58/264c5806-aefb-c654-a84a-174912847f64/mzaf_6329756877425482450.plus.aac.p.m4a"
   },
   {
     "id": 692,
@@ -20953,7 +22335,9 @@ const SONGS = [
       2
     ],
     "reason": "เนื้อเพลงชวนมาร่วมรักร่วมฟีทเจอริ่ง เข้ากับเกมชิงรักหักเหลี่ยมแบบน่ารักของประธานและคางุยะ",
-    "typoIdea": "กล่องคำพูดการ์ตูนป๊อปอาร์ต เด้งสลับสีชมพู-เหลือง มีไอคอนหัวใจลอยขึ้นมา"
+    "typoIdea": "กล่องคำพูดการ์ตูนป๊อปอาร์ต เด้งสลับสีชมพู-เหลือง มีไอคอนหัวใจลอยขึ้นมา",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/cf/1f/14cf1fba-4656-4ceb-3017-2b47a20a5fce/mzaf_18157140130715004938.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/cf/1f/14cf1fba-4656-4ceb-3017-2b47a20a5fce/mzaf_18157140130715004938.plus.aac.p.m4a"
   },
   {
     "id": 693,
@@ -20975,7 +22359,9 @@ const SONGS = [
       53
     ],
     "reason": "ท่อนโดนัทยังมีรูสุดไวรัลที่ทุกคนจำได้ เข้ากับความกวนและความแข็งแกร่งของมัชชูครีม",
-    "typoIdea": "ตัวอักษร 3D ป๊อปหนา สีส้มคัสตาร์ด หมุนวนสลับท่วงท่าเต้น"
+    "typoIdea": "ตัวอักษร 3D ป๊อปหนา สีส้มคัสตาร์ด หมุนวนสลับท่วงท่าเต้น",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/49/21/12/492112ac-2c0e-c0a5-e5b9-582e98e7d45f/mzaf_14139359607367364936.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/49/21/12/492112ac-2c0e-c0a5-e5b9-582e98e7d45f/mzaf_14139359607367364936.plus.aac.p.m4a"
   },
   {
     "id": 694,
@@ -20997,7 +22383,9 @@ const SONGS = [
       5
     ],
     "reason": "บีทเบสแน่นกับท่อนฮุกที่มั่นใจ เข้ากับฉากโชว์สกิลไสยเวทแบบเหนือชั้น",
-    "typoIdea": "ตัวอักษร Chrome โลหะเงาวาว สะท้อนประกายแสงนีออนสีม่วง"
+    "typoIdea": "ตัวอักษร Chrome โลหะเงาวาว สะท้อนประกายแสงนีออนสีม่วง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8d/e0/e2/8de0e2ae-f88c-5056-c07d-fe04acbc1d58/mzaf_1974309867621262359.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8d/e0/e2/8de0e2ae-f88c-5056-c07d-fe04acbc1d58/mzaf_1974309867621262359.plus.aac.p.m4a"
   },
   {
     "id": 695,
@@ -21019,7 +22407,9 @@ const SONGS = [
       1
     ],
     "reason": "บทเพลงแห่งความกลัวที่จะสูญเสียความเป็นเพื่อน เข้ากับความรู้สึกแอบรักที่ซ่อนไว้ในเพลงรักสองหัวใจ",
-    "typoIdea": "ข้อความแชทค่อยๆ ถูกพิมพ์และลบออก ตัวหนังสือจางหายตามหยดน้ำตา"
+    "typoIdea": "ข้อความแชทค่อยๆ ถูกพิมพ์และลบออก ตัวหนังสือจางหายตามหยดน้ำตา",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/de/74/c1/de74c10e-379c-02a7-220c-944be269502f/mzaf_1726085011719977236.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/de/74/c1/de74c10e-379c-02a7-220c-944be269502f/mzaf_1726085011719977236.plus.aac.p.m4a"
   },
   {
     "id": 696,
@@ -21041,7 +22431,9 @@ const SONGS = [
       21
     ],
     "reason": "จังหวะพลักแอนด์บีทสุดน่ารักและไวรัลทั่วโลก สะท้อนเสน่ห์ของไอดอลที่ดึงดูดใจแฟนคลับทันที",
-    "typoIdea": "แม่เหล็กและประกายไฟรูปหัวใจ ตัวหนังสือกระโดดดูดเข้าหากันตามบีทเพลง"
+    "typoIdea": "แม่เหล็กและประกายไฟรูปหัวใจ ตัวหนังสือกระโดดดูดเข้าหากันตามบีทเพลง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e8/7e/67/e87e6795-4ada-2f65-d562-1fd2a3eddfdf/mzaf_11263458879279601822.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e8/7e/67/e87e6795-4ada-2f65-d562-1fd2a3eddfdf/mzaf_11263458879279601822.plus.aac.p.m4a"
   },
   {
     "id": 697,
@@ -21063,7 +22455,9 @@ const SONGS = [
       31
     ],
     "reason": "ซาวด์อิเล็กทรอนิกส์ไฮเปอร์ป๊อประดับทำลายล้าง เข้ากับฉากจินอูปราบมอนสเตอร์และอัปเกรดพลัง",
-    "typoIdea": "คลื่นกระแทก Shockwave ขยายออกจากตัวอักษร แสงสีฟ้านีออนสว่างวาบทั้งจอ"
+    "typoIdea": "คลื่นกระแทก Shockwave ขยายออกจากตัวอักษร แสงสีฟ้านีออนสว่างวาบทั้งจอ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f6/cc/58/f6cc5863-c60a-caac-e7f8-bd66b414a917/mzaf_8631809138360097160.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f6/cc/58/f6cc5863-c60a-caac-e7f8-bd66b414a917/mzaf_8631809138360097160.plus.aac.p.m4a"
   },
   {
     "id": 698,
@@ -21085,7 +22479,9 @@ const SONGS = [
       141
     ],
     "reason": "บทเพลงปาฏิหาริย์แห่งความผูกพันและรอยยิ้ม เข้ากับความพยายามในสนามวอลเลย์บอลของคาราสึโนะ",
-    "typoIdea": "ฟอนต์พู่กันญี่ปุ่นสีเขียวมิ้นต์ สาดละอองหมึกตามเสียงลูกตบลงพื้นคอร์ต"
+    "typoIdea": "ฟอนต์พู่กันญี่ปุ่นสีเขียวมิ้นต์ สาดละอองหมึกตามเสียงลูกตบลงพื้นคอร์ต",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a0/5f/f0/a05ff0df-cb6f-24ef-9463-0277e67762d8/mzaf_15748417024147230469.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a0/5f/f0/a05ff0df-cb6f-24ef-9463-0277e67762d8/mzaf_15748417024147230469.plus.aac.p.m4a"
   },
   {
     "id": 699,
@@ -21108,7 +22504,9 @@ const SONGS = [
       391
     ],
     "reason": "เสียงร้องอันอ่อนแอและเนื้อเพลงที่เต็มไปด้วยความเจ็บปวดจากการไม่ได้รับรัก ตรงกับฉากซึ้งกินใจใน Your Lie in April และ Clannad ได้อย่างสมบูรณ์แบบ",
-    "typoIdea": "ตัวหนังสือสีขาวค่อยๆ จางหายไปพร้อมฝนตก ใช้ฟอนต์เบาบางสลับกับภาพเบลอสีเทา"
+    "typoIdea": "ตัวหนังสือสีขาวค่อยๆ จางหายไปพร้อมฝนตก ใช้ฟอนต์เบาบางสลับกับภาพเบลอสีเทา",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/4c/fa/81/4cfa81de-6e3b-a88b-5b9e-9d9d4fb3a4c0/mzaf_12234678901234567890.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/4c/fa/81/4cfa81de-6e3b-a88b-5b9e-9d9d4fb3a4c0/mzaf_12234678901234567890.plus.aac.p.m4a"
   },
   {
     "id": 700,
@@ -21131,7 +22529,9 @@ const SONGS = [
       393
     ],
     "reason": "เพลงเปิดดาบพิฆาตอสูรที่เขย่าจิตใจ เสียงร้องอันทรงพลังของ LiSA เข้ากับฉากต่อสู้สุดอลังการได้อย่างสมบูรณ์แบบ",
-    "typoIdea": "ตัวอักษรสีแดงเลือดนกแตกกระจาย สาดออกพร้อมเปลวเพลิงสีส้มแดงตามจังหวะกลอง"
+    "typoIdea": "ตัวอักษรสีแดงเลือดนกแตกกระจาย สาดออกพร้อมเปลวเพลิงสีส้มแดงตามจังหวะกลอง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/57/48/d8/5748d8e5-5edd-a4c8-a6b5-9ae3b0d16e98/mzaf_3674992988745827416.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/57/48/d8/5748d8e5-5edd-a4c8-a6b5-9ae3b0d16e98/mzaf_3674992988745827416.plus.aac.p.m4a"
   },
   {
     "id": 701,
@@ -21154,7 +22554,9 @@ const SONGS = [
       3
     ],
     "reason": "เสียงกีตาร์อันแหลมคมและเนื้อร้องที่สะท้อนความเจ็บปวดภายใน เข้ากับการต้องซ่อนตัวตนของ Kaneki Ken ใน Tokyo Ghoul ได้อย่างลึกซึ้ง",
-    "typoIdea": "ตัวอักษรสีขาวบิดเบี้ยวแตกสลาย ฟอนต์สั่นระริกตามอารมณ์เพลง สไตล์กลีทช์ดาร์ก"
+    "typoIdea": "ตัวอักษรสีขาวบิดเบี้ยวแตกสลาย ฟอนต์สั่นระริกตามอารมณ์เพลง สไตล์กลีทช์ดาร์ก",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f0/ca/9b/f0ca9bdb-f1c5-f4e4-1c50-4d1be9219413/mzaf_5419561698977396842.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/f0/ca/9b/f0ca9bdb-f1c5-f4e4-1c50-4d1be9219413/mzaf_5419561698977396842.plus.aac.p.m4a"
   },
   {
     "id": 702,
@@ -21177,7 +22579,9 @@ const SONGS = [
       390
     ],
     "reason": "เพลงเปิดนารูโตะ ชิปปุเดนที่แฟนอนิเมะทั่วโลกรักใคร่ ท่อนฮุกติดหูและจังหวะที่พุ่งสูง เข้ากับฉากวิ่งและต่อสู้ระดับตำนาน",
-    "typoIdea": "เงาตัวอักษรสีดำบนพื้นหลังพระอาทิตย์ตก ตัวหนังสือเคลื่อนที่เร็วพร้อมเอฟเฟกต์ลม"
+    "typoIdea": "เงาตัวอักษรสีดำบนพื้นหลังพระอาทิตย์ตก ตัวหนังสือเคลื่อนที่เร็วพร้อมเอฟเฟกต์ลม",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cd/a8/08/cda80840-e7e7-b703-c3e2-1df9e3f73e36/mzaf_7201734512876401822.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/cd/a8/08/cda80840-e7e7-b703-c3e2-1df9e3f73e36/mzaf_7201734512876401822.plus.aac.p.m4a"
   },
   {
     "id": 703,
@@ -21200,7 +22604,9 @@ const SONGS = [
       389
     ],
     "reason": "เสียงร้องอันอ่อนหวานของ YUI เล่าถึงการเดินทางและความเจ็บปวดที่ต้องเผชิญอีกครั้ง เข้ากับการผจญภัยอันยากลำบากของ Edward ใน FMA Brotherhood",
-    "typoIdea": "ตัวอักษรสีทองและสีน้ำตาลแดง เคลื่อนที่ขึ้นลงเหมือนอัลเคมีแปรธาตุ มีเส้นวงจรอยู่เบื้องหลัง"
+    "typoIdea": "ตัวอักษรสีทองและสีน้ำตาลแดง เคลื่อนที่ขึ้นลงเหมือนอัลเคมีแปรธาตุ มีเส้นวงจรอยู่เบื้องหลัง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/21/17/b7/2117b7c5-25e7-bd9c-9553-95be96e57acf/mzaf_9183647021456789123.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/21/17/b7/2117b7c5-25e7-bd9c-9553-95be96e57acf/mzaf_9183647021456789123.plus.aac.p.m4a"
   },
   {
     "id": 704,
@@ -21223,7 +22629,9 @@ const SONGS = [
       2
     ],
     "reason": "เมโลดี้อันอ่อนโยนและเนื้อเพลงที่สื่อถึงความรักที่พร้อมพลีชีพ เข้ากับฉากโรแมนติกสุดซึ้งใน Weathering With You และ Kaguya-sama ได้อย่างสมบูรณ์แบบ",
-    "typoIdea": "ตัวอักษรสีทองลอยอยู่กลางสายฝน แสงนีออนสีชมพูและม่วงสาดพุ่งออกจากตัวหนังสือ"
+    "typoIdea": "ตัวอักษรสีทองลอยอยู่กลางสายฝน แสงนีออนสีชมพูและม่วงสาดพุ่งออกจากตัวหนังสือ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/8b/f0/1a/8bf01a2c-0ac5-7bca-7edd-29c0254ea3e0/mzaf_8264913720948136290.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/8b/f0/1a/8bf01a2c-0ac5-7bca-7edd-29c0254ea3e0/mzaf_8264913720948136290.plus.aac.p.m4a"
   },
   {
     "id": 705,
@@ -21246,7 +22654,9 @@ const SONGS = [
       7
     ],
     "reason": "จังหวะซินธ์สุดติดหูแต่เนื้อเพลงกลับซ่อนความเศร้าของการก้าวต่อไป เข้ากับฉากโนสตัลเจียและความทรงจำใน Spirited Away ได้งดงาม",
-    "typoIdea": "ตัวอักษรสีพาสเทลลอยอยู่ในอากาศ มีเส้นสีม่วงและชมพูพัดผ่านอย่างเบาบาง"
+    "typoIdea": "ตัวอักษรสีพาสเทลลอยอยู่ในอากาศ มีเส้นสีม่วงและชมพูพัดผ่านอย่างเบาบาง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/06/22/27/06222725-0e21-3b68-1e31-0f1cec777e7b/mzaf_12791047380196720024.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview122/v4/06/22/27/06222725-0e21-3b68-1e31-0f1cec777e7b/mzaf_12791047380196720024.plus.aac.p.m4a"
   },
   {
     "id": 706,
@@ -21269,7 +22679,9 @@ const SONGS = [
       1
     ],
     "reason": "เสียงซินธ์ล่องลอยและอารมณ์คิดถึงใครสักคนในห้วงความฝัน เข้ากับฉากอันงดงามและอ้างว้างของ Violet Evergarden ได้อย่างสมบูรณ์",
-    "typoIdea": "ตัวอักษรโปร่งแสงสีฟ้าอมม่วง ลอยเหมือนความฝัน มีคลื่นความร้อนระยิบระยับรอบๆ"
+    "typoIdea": "ตัวอักษรโปร่งแสงสีฟ้าอมม่วง ลอยเหมือนความฝัน มีคลื่นความร้อนระยิบระยับรอบๆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2d/3f/c3/2d3fc321-da9a-8a34-4dff-3a5a3e9a3d40/mzaf_1834760245089023412.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/2d/3f/c3/2d3fc321-da9a-8a34-4dff-3a5a3e9a3d40/mzaf_1834760245089023412.plus.aac.p.m4a"
   },
   {
     "id": 707,
@@ -21292,7 +22704,9 @@ const SONGS = [
       391
     ],
     "reason": "เสียงร้องอันซึ้งกินใจของ Bowkylion สื่อถึงความรักที่ไปไม่ถึง เข้ากับฉากความเจ็บปวดของความรักที่ไม่ลงตัวใน Your Lie in April และ Clannad",
-    "typoIdea": "ฟอนต์บางเบาสีขาวลอยอยู่กลางฝน ตัวหนังสือค่อยๆ เลือนหายพร้อมน้ำตา"
+    "typoIdea": "ฟอนต์บางเบาสีขาวลอยอยู่กลางฝน ตัวหนังสือค่อยๆ เลือนหายพร้อมน้ำตา",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c8/c8/23/c8c823b4-6a72-f234-77f2-db5abb7d8b90/mzaf_2091837461029384756.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c8/c8/23/c8c823b4-6a72-f234-77f2-db5abb7d8b90/mzaf_2091837461029384756.plus.aac.p.m4a"
   },
   {
     "id": 708,
@@ -21315,7 +22729,9 @@ const SONGS = [
       1
     ],
     "reason": "เพลงสัญลักษณ์ของ Clannad ที่ทำให้แฟนอนิเมะทั่วโลกร้องไห้ เสียงร้องอันบริสุทธิ์สื่อถึงความอบอุ่นของครอบครัวและความสูญเสีย",
-    "typoIdea": "ตัวอักษรสไตล์พู่กันญี่ปุ่นสีครีมอบอุ่น ลอยพร้อมดอกซากุระและแสงสีทอง"
+    "typoIdea": "ตัวอักษรสไตล์พู่กันญี่ปุ่นสีครีมอบอุ่น ลอยพร้อมดอกซากุระและแสงสีทอง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e4/d5/ae/e4d5aeec-fbd7-aaef-7b2e-b1a3a7a82de1/mzaf_8473619201834765981.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/e4/d5/ae/e4d5aeec-fbd7-aaef-7b2e-b1a3a7a82de1/mzaf_8473619201834765981.plus.aac.p.m4a"
   },
   {
     "id": 709,
@@ -21337,7 +22753,9 @@ const SONGS = [
       1
     ],
     "reason": "เหมาะสำหรับตัดต่อคู่กับ Your Lie in April ด้วยมู้ดและจังหวะที่ลงตัว",
-    "typoIdea": "เล่นไทโปแบบตัวหนังสือเขียนทีละเส้นตามท่อนฮุก"
+    "typoIdea": "เล่นไทโปแบบตัวหนังสือเขียนทีละเส้นตามท่อนฮุก",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/f0/2d/76f02d3a-4b61-f285-a84a-272aa2904c63/mzaf_2746150345781827060.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/f0/2d/76f02d3a-4b61-f285-a84a-272aa2904c63/mzaf_2746150345781827060.plus.aac.p.m4a"
   },
   {
     "id": 710,
@@ -21359,7 +22777,9 @@ const SONGS = [
       25
     ],
     "reason": "เหมาะสำหรับตัดต่อคู่กับ Cyberpunk: Edgerunners ด้วยมู้ดและจังหวะที่ลงตัว",
-    "typoIdea": "ไทโปนีออนสลัวๆ ท่ามกลางสายฝน"
+    "typoIdea": "ไทโปนีออนสลัวๆ ท่ามกลางสายฝน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1c/13/a1/1c13a1c4-682c-a104-ce6f-b2394287c14f/mzaf_17818307861761409830.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1c/13/a1/1c13a1c4-682c-a104-ce6f-b2394287c14f/mzaf_17818307861761409830.plus.aac.p.m4a"
   },
   {
     "id": 711,
@@ -21381,7 +22801,9 @@ const SONGS = [
       31
     ],
     "reason": "เหมาะสำหรับตัดต่อคู่กับ Solo Leveling ด้วยมู้ดและจังหวะที่ลงตัว",
-    "typoIdea": "ฉากซองจินอูปล่อยสกิลคู่กับบีทกระแทก"
+    "typoIdea": "ฉากซองจินอูปล่อยสกิลคู่กับบีทกระแทก",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2d/e0/e8/2de0e874-cd0b-e9a9-e876-76be13a86662/mzaf_12385336780649591409.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2d/e0/e8/2de0e874-cd0b-e9a9-e876-76be13a86662/mzaf_12385336780649591409.plus.aac.p.m4a"
   },
   {
     "id": 712,
@@ -21403,7 +22825,9 @@ const SONGS = [
       32
     ],
     "reason": "เหมาะสำหรับตัดต่อคู่กับ Dandadan ด้วยมู้ดและจังหวะที่ลงตัว",
-    "typoIdea": "สปีดไทโปเร็วตามท่อนแร็ปสุดโฟลว์"
+    "typoIdea": "สปีดไทโปเร็วตามท่อนแร็ปสุดโฟลว์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/de/3c/55/de3c5508-301a-2aae-a8e6-069a1e2edb04/mzaf_14245211407965810210.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/de/3c/55/de3c5508-301a-2aae-a8e6-069a1e2edb04/mzaf_14245211407965810210.plus.aac.p.m4a"
   },
   {
     "id": 713,
@@ -21425,7 +22849,9 @@ const SONGS = [
       33
     ],
     "reason": "เหมาะสำหรับตัดต่อคู่กับ Kaiju No. 8 ด้วยมู้ดและจังหวะที่ลงตัว",
-    "typoIdea": "เอฟเฟกต์ glitch สีฟ้า-ดำสลับกับภาพแปลงร่าง"
+    "typoIdea": "เอฟเฟกต์ glitch สีฟ้า-ดำสลับกับภาพแปลงร่าง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/b0/ef/17b0ef44-1d0a-8ca4-7442-53a5fba773fb/mzaf_16206251573451214130.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/b0/ef/17b0ef44-1d0a-8ca4-7442-53a5fba773fb/mzaf_16206251573451214130.plus.aac.p.m4a"
   },
   {
     "id": 714,
@@ -21447,7 +22873,9 @@ const SONGS = [
       21
     ],
     "reason": "เหมาะสำหรับตัดต่อคู่กับ Oshi no Ko ด้วยมู้ดและจังหวะที่ลงตัว",
-    "typoIdea": "แสงไฟสปอตไลท์ส่องลงบนข้อความไทโป"
+    "typoIdea": "แสงไฟสปอตไลท์ส่องลงบนข้อความไทโป",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/5f/a0/195fa0a8-5f36-1f01-fefc-ab45ddb203ba/mzaf_1909407659469478863.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/5f/a0/195fa0a8-5f36-1f01-fefc-ab45ddb203ba/mzaf_1909407659469478863.plus.aac.p.m4a"
   },
   {
     "id": 715,
@@ -21471,7 +22899,9 @@ const SONGS = [
       351
     ],
     "reason": "เพลงใหม่ประจำวัน เหมาะตัดต่อคู่กับ Blue Box",
-    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง"
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/09/4b/1f/094b1f73-a2b7-2c68-eb2f-19bee65ead17/mzaf_11035415505151694952.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/09/4b/1f/094b1f73-a2b7-2c68-eb2f-19bee65ead17/mzaf_11035415505151694952.plus.aac.p.m4a"
   },
   {
     "id": 716,
@@ -21495,7 +22925,9 @@ const SONGS = [
       21
     ],
     "reason": "เพลงใหม่ประจำวัน เหมาะตัดต่อคู่กับ Oshi no Ko",
-    "typoIdea": "เอฟเฟกต์แสงไฟดิสโก้และดาวระยิบระยับ"
+    "typoIdea": "เอฟเฟกต์แสงไฟดิสโก้และดาวระยิบระยับ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/09/89/ff/0989ff36-24f8-20e1-e814-e023f784e623/mzaf_7376653984110547507.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/09/89/ff/0989ff36-24f8-20e1-e814-e023f784e623/mzaf_7376653984110547507.plus.aac.p.m4a"
   },
   {
     "id": 717,
@@ -21517,7 +22949,9 @@ const SONGS = [
       402
     ],
     "reason": "เพลงตำนานแห่งการผจญภัย เข้ากับ Luffy และเหล่าลูกเรือ Straw Hat",
-    "typoIdea": "ตัวอักษรสีทองบนฉากทะเลสีคราม เอฟเฟกต์คลื่นทะเล"
+    "typoIdea": "ตัวอักษรสีทองบนฉากทะเลสีคราม เอฟเฟกต์คลื่นทะเล",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8f/24/81/8f24812e-465c-4499-bf29-bdd6c0bd13ff/mzaf_17985712931854519957.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8f/24/81/8f24812e-465c-4499-bf29-bdd6c0bd13ff/mzaf_17985712931854519957.plus.aac.p.m4a"
   },
   {
     "id": 718,
@@ -21539,7 +22973,9 @@ const SONGS = [
       403
     ],
     "reason": "เพลงเปิดระดับขึ้นหิ้ง เข้ากับฉากแอ็กชันและอารมณ์ดราม่าของ Evangelion",
-    "typoIdea": "ตัวอักษรสีแดงบนฉากดำ ฟอนต์คมกริบแบบเรโทรอนิเมะ 90s"
+    "typoIdea": "ตัวอักษรสีแดงบนฉากดำ ฟอนต์คมกริบแบบเรโทรอนิเมะ 90s",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bc/73/1b/bc731b20-2b4a-aa0a-08e3-cdead8d612bf/mzaf_2050640833676529854.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bc/73/1b/bc731b20-2b4a-aa0a-08e3-cdead8d612bf/mzaf_2050640833676529854.plus.aac.p.m4a"
   },
   {
     "id": 719,
@@ -21563,7 +22999,9 @@ const SONGS = [
       351
     ],
     "reason": "เพลงใหม่ประจำวัน เหมาะตัดต่อคู่กับ Blue Box",
-    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง"
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/09/4b/1f/094b1f73-a2b7-2c68-eb2f-19bee65ead17/mzaf_11035415505151694952.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/09/4b/1f/094b1f73-a2b7-2c68-eb2f-19bee65ead17/mzaf_11035415505151694952.plus.aac.p.m4a"
   },
   {
     "id": 720,
@@ -21587,7 +23025,9 @@ const SONGS = [
       21
     ],
     "reason": "เพลงใหม่ประจำวัน เหมาะตัดต่อคู่กับ Oshi no Ko",
-    "typoIdea": "เอฟเฟกต์แสงไฟดิสโก้และดาวระยิบระยับ"
+    "typoIdea": "เอฟเฟกต์แสงไฟดิสโก้และดาวระยิบระยับ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/09/89/ff/0989ff36-24f8-20e1-e814-e023f784e623/mzaf_7376653984110547507.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/09/89/ff/0989ff36-24f8-20e1-e814-e023f784e623/mzaf_7376653984110547507.plus.aac.p.m4a"
   },
   {
     "id": 721,
@@ -21612,7 +23052,9 @@ const SONGS = [
       267
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Hunter x Hunter",
-    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/62/35/b3/6235b3e1-fb26-c9d5-8041-880a3cd77605/mzaf_14772041770765698626.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/62/35/b3/6235b3e1-fb26-c9d5-8041-880a3cd77605/mzaf_14772041770765698626.plus.aac.p.m4a"
   },
   {
     "id": 722,
@@ -21637,7 +23079,9 @@ const SONGS = [
       337
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Hellsing Ultimate",
-    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b1/71/f2/b171f271-d59b-59d1-9b82-1a41c311765d/mzaf_13682368395713803404.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b1/71/f2/b171f271-d59b-59d1-9b82-1a41c311765d/mzaf_13682368395713803404.plus.aac.p.m4a"
   },
   {
     "id": 723,
@@ -21662,7 +23106,9 @@ const SONGS = [
       249
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ NieR:Automata Ver1.1a",
-    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/24/46/f8/2446f821-842b-a19f-9f15-6ee19bfcda8f/mzaf_2976992570670161849.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/24/46/f8/2446f821-842b-a19f-9f15-6ee19bfcda8f/mzaf_2976992570670161849.plus.aac.p.m4a"
   },
   {
     "id": 724,
@@ -21690,7 +23136,9 @@ const SONGS = [
       14
     ],
     "reason": "ท่วงทำนองกีตาร์อะคูสติกนุ่มนวลและเสียงร้องชวนฝันของ yung kai สื่อถึงความรักที่เรียบง่ายแต่งดงาม เข้ากับบรรยากาศอันลึกซึ้งของ Your Name และ Horimiya",
-    "typoIdea": "ใช้ตัวอักษร Sans มินิมอล โทนสีฟ้าพาสเทลและขาว ค่อยๆ Fade In ตามจังหวะคอร์ดกีตาร์ พร้อมเอฟเฟกต์ละอองแสงอบอุ่น"
+    "typoIdea": "ใช้ตัวอักษร Sans มินิมอล โทนสีฟ้าพาสเทลและขาว ค่อยๆ Fade In ตามจังหวะคอร์ดกีตาร์ พร้อมเอฟเฟกต์ละอองแสงอบอุ่น",
+    "audioUrl": "blue_relax.m4a",
+    "audioFallback": "blue_relax.m4a"
   },
   {
     "id": 725,
@@ -21715,7 +23163,9 @@ const SONGS = [
       11
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Attack on Titan",
-    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b1/71/f2/b171f271-d59b-59d1-9b82-1a41c311765d/mzaf_13682368395713803404.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b1/71/f2/b171f271-d59b-59d1-9b82-1a41c311765d/mzaf_13682368395713803404.plus.aac.p.m4a"
   },
   {
     "id": 726,
@@ -21740,7 +23190,9 @@ const SONGS = [
       146
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Slime Isekai",
-    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/40/43/b8/4043b833-ec96-7807-fd8c-f74a62e777f3/mzaf_2462934578689260207.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/40/43/b8/4043b833-ec96-7807-fd8c-f74a62e777f3/mzaf_2462934578689260207.plus.aac.p.m4a"
   },
   {
     "id": 727,
@@ -21765,7 +23217,9 @@ const SONGS = [
       125
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Chainsaw Man",
-    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/dc/d9/d9dcd9ea-f09d-ca08-bb1b-bf4ebd630ede/mzaf_6254279233344660048.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/dc/d9/d9dcd9ea-f09d-ca08-bb1b-bf4ebd630ede/mzaf_6254279233344660048.plus.aac.p.m4a"
   },
   {
     "id": 728,
@@ -21790,7 +23244,9 @@ const SONGS = [
       35
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Bleach",
-    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b1/71/f2/b171f271-d59b-59d1-9b82-1a41c311765d/mzaf_13682368395713803404.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b1/71/f2/b171f271-d59b-59d1-9b82-1a41c311765d/mzaf_13682368395713803404.plus.aac.p.m4a"
   },
   {
     "id": 729,
@@ -21815,7 +23271,9 @@ const SONGS = [
       17
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Kamisama Kiss",
-    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/dc/d9/d9dcd9ea-f09d-ca08-bb1b-bf4ebd630ede/mzaf_6254279233344660048.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/dc/d9/d9dcd9ea-f09d-ca08-bb1b-bf4ebd630ede/mzaf_6254279233344660048.plus.aac.p.m4a"
   },
   {
     "id": 730,
@@ -21840,7 +23298,9 @@ const SONGS = [
       286
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ A Silent Voice",
-    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/38/49/4c/38494cb4-f9e0-1db4-0b84-8c478cb55390/mzaf_4251933786704889664.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/38/49/4c/38494cb4-f9e0-1db4-0b84-8c478cb55390/mzaf_4251933786704889664.plus.aac.p.m4a"
   },
   {
     "id": 731,
@@ -21865,7 +23325,9 @@ const SONGS = [
       337
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Hellsing Ultimate",
-    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b1/71/f2/b171f271-d59b-59d1-9b82-1a41c311765d/mzaf_13682368395713803404.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b1/71/f2/b171f271-d59b-59d1-9b82-1a41c311765d/mzaf_13682368395713803404.plus.aac.p.m4a"
   },
   {
     "id": 732,
@@ -21890,7 +23352,9 @@ const SONGS = [
       155
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ My Dress-Up Darling",
-    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/dc/d9/d9dcd9ea-f09d-ca08-bb1b-bf4ebd630ede/mzaf_6254279233344660048.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/dc/d9/d9dcd9ea-f09d-ca08-bb1b-bf4ebd630ede/mzaf_6254279233344660048.plus.aac.p.m4a"
   },
   {
     "id": 733,
@@ -21915,7 +23379,9 @@ const SONGS = [
       316
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Akira",
-    "typoIdea": "ฟอนต์มนละมุน ขยับเด้งน่ารักตามท่อนฮุก มีประกายหัวใจเบาๆ"
+    "typoIdea": "ฟอนต์มนละมุน ขยับเด้งน่ารักตามท่อนฮุก มีประกายหัวใจเบาๆ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/02/0b/e3/020be3c3-6369-908d-3452-3d92bc8d99b8/mzaf_9235287156952992244.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/02/0b/e3/020be3c3-6369-908d-3452-3d92bc8d99b8/mzaf_9235287156952992244.plus.aac.p.m4a"
   },
   {
     "id": 734,
@@ -21940,7 +23406,9 @@ const SONGS = [
       48
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Vinland Saga",
-    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b1/71/f2/b171f271-d59b-59d1-9b82-1a41c311765d/mzaf_13682368395713803404.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b1/71/f2/b171f271-d59b-59d1-9b82-1a41c311765d/mzaf_13682368395713803404.plus.aac.p.m4a"
   },
   {
     "id": 735,
@@ -21965,7 +23433,9 @@ const SONGS = [
       125
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Chainsaw Man",
-    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a6/d7/72/a6d77269-f6b7-1f0d-4fd4-859e5d951a8c/mzaf_16339311253737403211.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a6/d7/72/a6d77269-f6b7-1f0d-4fd4-859e5d951a8c/mzaf_16339311253737403211.plus.aac.p.m4a"
   },
   {
     "id": 736,
@@ -21990,7 +23460,9 @@ const SONGS = [
       265
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Steins;Gate",
-    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/dc/d9/d9dcd9ea-f09d-ca08-bb1b-bf4ebd630ede/mzaf_6254279233344660048.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/dc/d9/d9dcd9ea-f09d-ca08-bb1b-bf4ebd630ede/mzaf_6254279233344660048.plus.aac.p.m4a"
   },
   {
     "id": 737,
@@ -22016,7 +23488,9 @@ const SONGS = [
       412
     ],
     "reason": "ตื่นขึ้นมาจากฝันดีๆ ในตอนตีสี่... เมโลดี้ R&B นุ่มละมุนปนความคิดถึง เข้ากับบรรยากาศราตรียันเช้าของ Call of the Night และ Insomniacs After School",
-    "typoIdea": "ฟอนต์นีออนสีม่วง-น้ำเงินเรืองแสง ค่อยๆ กระพริบเลือนรางตามจังหวะค่ำคืนจนถึงแสงแรกของเช้าวันใหม่"
+    "typoIdea": "ฟอนต์นีออนสีม่วง-น้ำเงินเรืองแสง ค่อยๆ กระพริบเลือนรางตามจังหวะค่ำคืนจนถึงแสงแรกของเช้าวันใหม่",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6c/e9/b0/6ce9b034-49d8-4278-31bd-052fbd0833cd/mzaf_2272073077264678738.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6c/e9/b0/6ce9b034-49d8-4278-31bd-052fbd0833cd/mzaf_2272073077264678738.plus.aac.p.m4a"
   },
   {
     "id": 738,
@@ -22040,7 +23514,9 @@ const SONGS = [
       411
     ],
     "reason": "เพลงเปิดสุดไฮป์ประจำอนิเมะ Call of the Night บีทแจ๊ส-ฮิปฮอปสุดจัดจ้าน ถ่ายทอดความสนุกของการท่องราตรีโต้รุ่งยันเช้า",
-    "typoIdea": "ไทโปตัวหนังสือสะบัดพุ่งสไตล์ไดนามิก สลับเอฟเฟกต์ Glitch นีออนม่วง-ชมพูสะท้อนแสงไฟตึกสูง"
+    "typoIdea": "ไทโปตัวหนังสือสะบัดพุ่งสไตล์ไดนามิก สลับเอฟเฟกต์ Glitch นีออนม่วง-ชมพูสะท้อนแสงไฟตึกสูง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/da/87/9d/da879d4d-4806-74d6-b8d8-e716204649ff/mzaf_16999557806437919111.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/da/87/9d/da879d4d-4806-74d6-b8d8-e716204649ff/mzaf_16999557806437919111.plus.aac.p.m4a"
   },
   {
     "id": 739,
@@ -22064,7 +23540,9 @@ const SONGS = [
       411
     ],
     "reason": "เพลงธีมตัวจริงของเหล่าคนนอนดึก ปล่อยใจให้เป็นอิสระจากกรอบชีวิตเดิมๆ ท่องราตรีสนุกสุดเหวี่ยงยันเช้าตรู่",
-    "typoIdea": "ฟอนต์แนว Street Graffiti มีเส้นสปีดไลน์เคลื่อนไหวตามกรูฟกลองและเบส"
+    "typoIdea": "ฟอนต์แนว Street Graffiti มีเส้นสปีดไลน์เคลื่อนไหวตามกรูฟกลองและเบส",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/b3/f9/acb3f9aa-7d12-f397-8f41-ae7e73a125a3/mzaf_146352262475079128.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/b3/f9/acb3f9aa-7d12-f397-8f41-ae7e73a125a3/mzaf_146352262475079128.plus.aac.p.m4a"
   },
   {
     "id": 740,
@@ -22089,7 +23567,9 @@ const SONGS = [
       411
     ],
     "reason": "บรรยากาศชิลล์ๆ กับท่อนฮุกที่พาเราล่องลอยไปในค่ำคืน อยู่คุยกันยาวๆ ยันเช้า เข้ากับ Insomniacs After School สุดๆ",
-    "typoIdea": "ฟอนต์โมเดิร์นมินิมอลพร้อมละอองดาวระยิบระยับ ลอยเลื่อนขึ้นช้าๆ ตามแสงจันทร์"
+    "typoIdea": "ฟอนต์โมเดิร์นมินิมอลพร้อมละอองดาวระยิบระยับ ลอยเลื่อนขึ้นช้าๆ ตามแสงจันทร์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/9f/4e/6c9f4eeb-bcb4-80db-8f18-79e0581435c1/mzaf_8934017963094519038.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/9f/4e/6c9f4eeb-bcb4-80db-8f18-79e0581435c1/mzaf_8934017963094519038.plus.aac.p.m4a"
   },
   {
     "id": 741,
@@ -22113,7 +23593,9 @@ const SONGS = [
       411
     ],
     "reason": "เพลงฮิตแนวอินดี้โฟล์ก-ฮิปฮอป สไตล์ลุยปาร์ตี้ข้ามคืนยันฟ้าสว่าง ยามตี 4 เข้ากับมู้ดปล่อยใจในค่ำคืน",
-    "typoIdea": "ไทโปตัวเขียนลายมือน่ารัก มีคลื่นควันบางเบาและลูกเล่นตัวหนังสือโคลงเคลงชวนยิ้ม"
+    "typoIdea": "ไทโปตัวเขียนลายมือน่ารัก มีคลื่นควันบางเบาและลูกเล่นตัวหนังสือโคลงเคลงชวนยิ้ม",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7f/fb/f4/7ffbf4ef-51d8-ed37-c777-a8784a2dfb81/mzaf_2618784592756367652.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7f/fb/f4/7ffbf4ef-51d8-ed37-c777-a8784a2dfb81/mzaf_2618784592756367652.plus.aac.p.m4a"
   },
   {
     "id": 742,
@@ -22133,7 +23615,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/dd/30/c9dd30b4-b8ac-6ee3-fe02-6d93bf886dee/mzaf_15854359036982624408.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/dd/30/c9dd30b4-b8ac-6ee3-fe02-6d93bf886dee/mzaf_15854359036982624408.plus.aac.p.m4a"
   },
   {
     "id": 743,
@@ -22153,7 +23637,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/f5/ee/eaf5ee2d-e0f7-d481-7a0f-b4388f5abdac/mzaf_7936407186743025334.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/f5/ee/eaf5ee2d-e0f7-d481-7a0f-b4388f5abdac/mzaf_7936407186743025334.plus.aac.p.m4a"
   },
   {
     "id": 744,
@@ -22173,7 +23659,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e2/b2/c9/e2b2c9ac-e1e4-084c-d621-117a190dd3e8/mzaf_1346176268504402550.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e2/b2/c9/e2b2c9ac-e1e4-084c-d621-117a190dd3e8/mzaf_1346176268504402550.plus.aac.p.m4a"
   },
   {
     "id": 745,
@@ -22193,7 +23681,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/71/a9/5371a964-499e-874b-bb63-a6bbe1c9c428/mzaf_10249536140027054501.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/71/a9/5371a964-499e-874b-bb63-a6bbe1c9c428/mzaf_10249536140027054501.plus.aac.p.m4a"
   },
   {
     "id": 746,
@@ -22213,7 +23703,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dc/8d/97/dc8d9715-4e54-604e-273c-1a07ddfdab2e/mzaf_10727110099502275504.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dc/8d/97/dc8d9715-4e54-604e-273c-1a07ddfdab2e/mzaf_10727110099502275504.plus.aac.p.m4a"
   },
   {
     "id": 747,
@@ -22233,7 +23725,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ ฟอนต์หวาน สีชมพู"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ ฟอนต์หวาน สีชมพู",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a0/64/97/a064973f-fea9-7982-2bf0-6b83faeb46cc/mzaf_17277847388732219295.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a0/64/97/a064973f-fea9-7982-2bf0-6b83faeb46cc/mzaf_17277847388732219295.plus.aac.p.m4a"
   },
   {
     "id": 748,
@@ -22253,7 +23747,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/92/bb/e4/92bbe445-4284-d8df-2c73-90d551f630a0/mzaf_5384350559150970376.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/92/bb/e4/92bbe445-4284-d8df-2c73-90d551f630a0/mzaf_5384350559150970376.plus.aac.p.m4a"
   },
   {
     "id": 749,
@@ -22273,7 +23769,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e4/ea/d2/e4ead29a-0b32-28c7-7df3-9e4ece9ee7ab/mzaf_1361630635760947107.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e4/ea/d2/e4ead29a-0b32-28c7-7df3-9e4ece9ee7ab/mzaf_1361630635760947107.plus.aac.p.m4a"
   },
   {
     "id": 750,
@@ -22293,7 +23791,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6f/d0/7b/6fd07bff-5426-ac08-0adc-1e6fc20f557e/mzaf_17236008428747487421.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6f/d0/7b/6fd07bff-5426-ac08-0adc-1e6fc20f557e/mzaf_17236008428747487421.plus.aac.p.m4a"
   },
   {
     "id": 751,
@@ -22313,7 +23813,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/80/af/de/80afdec2-ad91-7288-b3c7-8182dabcc31f/mzaf_3469517637653637933.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/80/af/de/80afdec2-ad91-7288-b3c7-8182dabcc31f/mzaf_3469517637653637933.plus.aac.p.m4a"
   },
   {
     "id": 752,
@@ -22333,7 +23835,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/25/5d/71/255d7171-5d89-f6d6-bc32-ea38d31124bc/mzaf_15430778916933330531.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/25/5d/71/255d7171-5d89-f6d6-bc32-ea38d31124bc/mzaf_15430778916933330531.plus.aac.p.m4a"
   },
   {
     "id": 753,
@@ -22353,7 +23857,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cd/eb/3d/cdeb3d6e-65c8-fa74-0768-595b244be22b/mzaf_5790344453641681003.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cd/eb/3d/cdeb3d6e-65c8-fa74-0768-595b244be22b/mzaf_5790344453641681003.plus.aac.p.m4a"
   },
   {
     "id": 754,
@@ -22373,7 +23879,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ ฟอนต์หวาน สีชมพู"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ ฟอนต์หวาน สีชมพู",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f0/7a/08/f07a0811-b5a0-df86-28c3-3f4a0a90f147/mzaf_4236562777567106456.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f0/7a/08/f07a0811-b5a0-df86-28c3-3f4a0a90f147/mzaf_4236562777567106456.plus.aac.p.m4a"
   },
   {
     "id": 755,
@@ -22393,7 +23901,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/a1/f9/67a1f9af-5229-a414-4044-f5ffc1d8d262/mzaf_4984701379491265077.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/a1/f9/67a1f9af-5229-a414-4044-f5ffc1d8d262/mzaf_4984701379491265077.plus.aac.p.m4a"
   },
   {
     "id": 756,
@@ -22413,7 +23923,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4e/fa/f6/4efaf669-cf77-5887-d4a6-44436c53f3fc/mzaf_15282692727862104995.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4e/fa/f6/4efaf669-cf77-5887-d4a6-44436c53f3fc/mzaf_15282692727862104995.plus.aac.p.m4a"
   },
   {
     "id": 757,
@@ -22433,7 +23945,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/22/c6/af22c6be-ba72-9cae-9c80-68e703bf9581/mzaf_11438110753569836265.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/22/c6/af22c6be-ba72-9cae-9c80-68e703bf9581/mzaf_11438110753569836265.plus.aac.p.m4a"
   },
   {
     "id": 758,
@@ -22453,7 +23967,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d7/c6/39/d7c63948-abb6-82c6-25f7-6be5afa4a57f/mzaf_17079661940064198175.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d7/c6/39/d7c63948-abb6-82c6-25f7-6be5afa4a57f/mzaf_17079661940064198175.plus.aac.p.m4a"
   },
   {
     "id": 759,
@@ -22473,7 +23989,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/eb/f0/f4ebf070-5e87-e772-0156-13b713c05a5e/mzaf_6968130843318243083.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/eb/f0/f4ebf070-5e87-e772-0156-13b713c05a5e/mzaf_6968130843318243083.plus.aac.p.m4a"
   },
   {
     "id": 760,
@@ -22493,7 +24011,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ef/27/0f/ef270fbf-0cff-6724-4035-046ea2396f95/mzaf_11885892406439594825.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ef/27/0f/ef270fbf-0cff-6724-4035-046ea2396f95/mzaf_11885892406439594825.plus.aac.p.m4a"
   },
   {
     "id": 761,
@@ -22513,7 +24033,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/37/03/d8/3703d822-030b-9967-4b5b-342a4a12f11b/mzaf_16117951247685812466.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/37/03/d8/3703d822-030b-9967-4b5b-342a4a12f11b/mzaf_16117951247685812466.plus.aac.p.m4a"
   },
   {
     "id": 762,
@@ -22533,7 +24055,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/aa/76/ba/aa76ba69-45df-b7ec-9318-932875629174/mzaf_5860887620436262026.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/aa/76/ba/aa76ba69-45df-b7ec-9318-932875629174/mzaf_5860887620436262026.plus.aac.p.m4a"
   },
   {
     "id": 763,
@@ -22553,7 +24077,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/e6/03/43e6031d-2a3f-5e1d-02d7-7fa0c18a2617/mzaf_11018376454518067814.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/e6/03/43e6031d-2a3f-5e1d-02d7-7fa0c18a2617/mzaf_11018376454518067814.plus.aac.p.m4a"
   },
   {
     "id": 764,
@@ -22573,7 +24099,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fe/0a/8e/fe0a8e88-fc48-c984-7351-7b6ffb6d8132/mzaf_10994495992297371317.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fe/0a/8e/fe0a8e88-fc48-c984-7351-7b6ffb6d8132/mzaf_10994495992297371317.plus.aac.p.m4a"
   },
   {
     "id": 765,
@@ -22593,7 +24121,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/eb/fb/02ebfb40-3fc3-6bc8-0c26-e79fa52d2684/mzaf_8476212096974290629.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/eb/fb/02ebfb40-3fc3-6bc8-0c26-e79fa52d2684/mzaf_8476212096974290629.plus.aac.p.m4a"
   },
   {
     "id": 766,
@@ -22613,7 +24143,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/01/f3/36/01f33673-ee7b-f763-6dfb-888c55213c2f/mzaf_11965646094989380620.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/01/f3/36/01f33673-ee7b-f763-6dfb-888c55213c2f/mzaf_11965646094989380620.plus.aac.p.m4a"
   },
   {
     "id": 767,
@@ -22633,7 +24165,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/25/67/e0/2567e0a7-9a47-327f-05f2-cc5d19888706/mzaf_6596826622686709509.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/25/67/e0/2567e0a7-9a47-327f-05f2-cc5d19888706/mzaf_6596826622686709509.plus.aac.p.m4a"
   },
   {
     "id": 768,
@@ -22653,7 +24187,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dd/12/05/dd1205ed-a6d5-8e38-4548-e0982b0d45ca/mzaf_2041069238779738631.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dd/12/05/dd1205ed-a6d5-8e38-4548-e0982b0d45ca/mzaf_2041069238779738631.plus.aac.p.m4a"
   },
   {
     "id": 769,
@@ -22673,7 +24209,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ ฟอนต์หวาน สีชมพู"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ ฟอนต์หวาน สีชมพู",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/a7/d0/e5a7d05d-e972-6f57-92a6-d5f523200b1e/mzaf_10944828570353523593.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/a7/d0/e5a7d05d-e972-6f57-92a6-d5f523200b1e/mzaf_10944828570353523593.plus.aac.p.m4a"
   },
   {
     "id": 770,
@@ -22693,7 +24231,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6a/d4/55/6ad45548-1576-90a0-44dc-47accb7c0da3/mzaf_3849601935908759236.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6a/d4/55/6ad45548-1576-90a0-44dc-47accb7c0da3/mzaf_3849601935908759236.plus.aac.p.m4a"
   },
   {
     "id": 771,
@@ -22713,7 +24253,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/03/b1/e0/03b1e04e-673b-e68f-30a4-aa9194f74547/mzaf_8986324198495773485.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/03/b1/e0/03b1e04e-673b-e68f-30a4-aa9194f74547/mzaf_8986324198495773485.plus.aac.p.m4a"
   },
   {
     "id": 772,
@@ -22733,7 +24275,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/dc/2a/30dc2a16-dceb-dc07-b21c-53d1f62bb167/mzaf_13893881310842754528.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/dc/2a/30dc2a16-dceb-dc07-b21c-53d1f62bb167/mzaf_13893881310842754528.plus.aac.p.m4a"
   },
   {
     "id": 773,
@@ -22753,7 +24297,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/44/8b/89/448b898c-7c3c-c3ff-13ca-83ee5a6c3d9d/mzaf_8506767936684723668.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/44/8b/89/448b898c-7c3c-c3ff-13ca-83ee5a6c3d9d/mzaf_8506767936684723668.plus.aac.p.m4a"
   },
   {
     "id": 774,
@@ -22773,7 +24319,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/d7/8c/43d78ce1-3f83-2ce9-4c8b-b2fbc9938421/mzaf_15711171385798487682.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/d7/8c/43d78ce1-3f83-2ce9-4c8b-b2fbc9938421/mzaf_15711171385798487682.plus.aac.p.m4a"
   },
   {
     "id": 775,
@@ -22793,7 +24341,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6b/57/e6/6b57e675-32cd-5b37-f9a9-e56f793ee137/mzaf_5063477486710446396.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6b/57/e6/6b57e675-32cd-5b37-f9a9-e56f793ee137/mzaf_5063477486710446396.plus.aac.p.m4a"
   },
   {
     "id": 776,
@@ -22813,7 +24363,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f8/17/8b/f8178b2b-930c-456e-fcd9-aabdafce9cc7/mzaf_12689149830172858352.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f8/17/8b/f8178b2b-930c-456e-fcd9-aabdafce9cc7/mzaf_12689149830172858352.plus.aac.p.m4a"
   },
   {
     "id": 777,
@@ -22833,7 +24385,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/15/36/66/153666f9-ff83-a220-caae-d2af2245314b/mzaf_15359120974379622577.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/15/36/66/153666f9-ff83-a220-caae-d2af2245314b/mzaf_15359120974379622577.plus.aac.p.m4a"
   },
   {
     "id": 778,
@@ -22853,7 +24407,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d1/15/9d/d1159d37-7b16-8bd8-031c-9114911d5521/mzaf_4137370624561210609.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d1/15/9d/d1159d37-7b16-8bd8-031c-9114911d5521/mzaf_4137370624561210609.plus.aac.p.m4a"
   },
   {
     "id": 779,
@@ -22873,7 +24429,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/a4/a0/33a4a0ea-e81b-4817-682b-2bbcbf9105ca/mzaf_14166506513150631014.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/a4/a0/33a4a0ea-e81b-4817-682b-2bbcbf9105ca/mzaf_14166506513150631014.plus.aac.p.m4a"
   },
   {
     "id": 780,
@@ -22893,7 +24451,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/55/d3/ab/55d3ab2f-4de6-4609-2fea-eb9c03e564e9/mzaf_1436593295599319657.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/55/d3/ab/55d3ab2f-4de6-4609-2fea-eb9c03e564e9/mzaf_1436593295599319657.plus.aac.p.m4a"
   },
   {
     "id": 781,
@@ -22913,7 +24473,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ ฟอนต์หวาน สีชมพู"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ ฟอนต์หวาน สีชมพู",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/da/4d/67da4d29-7511-dfb6-25cb-461d7055664f/mzaf_247838951175896680.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/da/4d/67da4d29-7511-dfb6-25cb-461d7055664f/mzaf_247838951175896680.plus.aac.p.m4a"
   },
   {
     "id": 782,
@@ -22933,7 +24495,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0f/36/d7/0f36d7b2-81c6-8e5b-0b0f-ba78ea33049b/mzaf_8371118327475872535.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0f/36/d7/0f36d7b2-81c6-8e5b-0b0f-ba78ea33049b/mzaf_8371118327475872535.plus.aac.p.m4a"
   },
   {
     "id": 783,
@@ -22953,7 +24517,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ ฟอนต์บางเบา สีซีด"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ ฟอนต์บางเบา สีซีด",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/12/b3/9912b360-7040-8e4c-cbf9-edeed2b99d48/mzaf_9031679410111996319.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/12/b3/9912b360-7040-8e4c-cbf9-edeed2b99d48/mzaf_9031679410111996319.plus.aac.p.m4a"
   },
   {
     "id": 784,
@@ -22973,7 +24539,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/a6/c1/2ea6c113-6aaa-3f5a-1260-95b08769e662/mzaf_13582935407674362909.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/a6/c1/2ea6c113-6aaa-3f5a-1260-95b08769e662/mzaf_13582935407674362909.plus.aac.p.m4a"
   },
   {
     "id": 785,
@@ -22993,7 +24561,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6e/75/a8/6e75a842-5472-f209-978d-3dad5750e00f/mzaf_1091641576649248016.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6e/75/a8/6e75a842-5472-f209-978d-3dad5750e00f/mzaf_1091641576649248016.plus.aac.p.m4a"
   },
   {
     "id": 786,
@@ -23013,7 +24583,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f5/02/32/f50232fa-51d7-1513-e4be-48b257935596/mzaf_18022672252504758696.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f5/02/32/f50232fa-51d7-1513-e4be-48b257935596/mzaf_18022672252504758696.plus.aac.p.m4a"
   },
   {
     "id": 787,
@@ -23033,7 +24605,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ ฟอนต์บางเบา สีซีด"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ ฟอนต์บางเบา สีซีด",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3c/bc/4c/3cbc4c79-a184-f932-35b0-ae3a1b99ccde/mzaf_13088205336276081772.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3c/bc/4c/3cbc4c79-a184-f932-35b0-ae3a1b99ccde/mzaf_13088205336276081772.plus.aac.p.m4a"
   },
   {
     "id": 788,
@@ -23053,7 +24627,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/61/6d/80616d56-8057-743f-b1d5-40c6926b1ad0/mzaf_15310435543583230596.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/61/6d/80616d56-8057-743f-b1d5-40c6926b1ad0/mzaf_15310435543583230596.plus.aac.p.m4a"
   },
   {
     "id": 789,
@@ -23073,7 +24649,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/93/70/70/93707025-3f91-f004-cb92-150551b0ab0f/mzaf_13778511972454284920.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/93/70/70/93707025-3f91-f004-cb92-150551b0ab0f/mzaf_13778511972454284920.plus.aac.p.m4a"
   },
   {
     "id": 790,
@@ -23093,7 +24671,9 @@ const SONGS = [
     "animeId": null,
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
-    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1f/62/3b/1f623b46-ea69-724d-6229-e5aa3a70cdfb/mzaf_6872857763352366671.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1f/62/3b/1f623b46-ea69-724d-6229-e5aa3a70cdfb/mzaf_6872857763352366671.plus.aac.p.m4a"
   },
   {
     "id": 791,
@@ -23112,7 +24692,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/0f748c6a2a7c1e351530b67d74b360564b6d6f36",
     "coverUrl": "https://media.kitsu.app/anime/1816/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0dlZBJfbNGMfAKYV5SHskT",
-    "animeId": 168
+    "animeId": 168,
+    "previewUrl": "https://p.scdn.co/mp3-preview/0f748c6a2a7c1e351530b67d74b360564b6d6f36"
   },
   {
     "id": 792,
@@ -23131,7 +24712,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/ad26f59a5098ea1ff9961cf134ceaa5aa8d77238",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/df/fb/ac/mzi.sdzdumkl.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4wlmpwdyng4B4bObMnP3OS",
-    "animeId": 229
+    "animeId": 229,
+    "previewUrl": "https://p.scdn.co/mp3-preview/ad26f59a5098ea1ff9961cf134ceaa5aa8d77238"
   },
   {
     "id": 793,
@@ -23150,7 +24732,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/a5c7f456a7f639d0a0306b3e9cb419306dad805c",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/35/c2/77/35c2772c-1a0b-7fdd-a601-52b4baaa2134/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0tyYfrsTTiqK04TipBrIrg",
-    "animeId": 170
+    "animeId": 170,
+    "previewUrl": "https://p.scdn.co/mp3-preview/a5c7f456a7f639d0a0306b3e9cb419306dad805c"
   },
   {
     "id": 794,
@@ -23169,7 +24752,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/01fcc57bf406d3bded2fc96fd19838cc7880439a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/93/ee/6193eed8-37b0-4e7a-69c5-a3edede1c645/0.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5b2OC2aaioNReqHlQs1TbR",
-    "animeId": 147
+    "animeId": 147,
+    "previewUrl": "https://p.scdn.co/mp3-preview/01fcc57bf406d3bded2fc96fd19838cc7880439a"
   },
   {
     "id": 795,
@@ -23188,7 +24772,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/1905634993803cdaa141e3fb6f8016d9b22266c8",
     "coverUrl": "https://media.kitsu.app/anime/47454/poster_image/medium-647eca310356254a1840a496f41ea57c.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/4Vbacl2YjS6F56K4TeIqMD",
-    "animeId": 208
+    "animeId": 208,
+    "previewUrl": "https://p.scdn.co/mp3-preview/1905634993803cdaa141e3fb6f8016d9b22266c8"
   },
   {
     "id": 796,
@@ -23207,7 +24792,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/19ee43e5d7cab66735671c737967f896051c6c42",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c6/e1/63/c6e1632b-e81b-e67a-a21f-79fb450bf96a/5054197946035.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1LV7y6Foa5JFMOUc0qyj4b",
-    "animeId": 35
+    "animeId": 35,
+    "previewUrl": "https://p.scdn.co/mp3-preview/19ee43e5d7cab66735671c737967f896051c6c42"
   },
   {
     "id": 797,
@@ -23226,7 +24812,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/7bc49e3833737721db69e1ad33638fdfe3478cfc",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/17/78/67177823-eea6-843e-2fd6-1cb45da0fa62/888332917599.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3yv2kSszlg31Ga5dWng3CQ",
-    "animeId": 81
+    "animeId": 81,
+    "previewUrl": "https://p.scdn.co/mp3-preview/7bc49e3833737721db69e1ad33638fdfe3478cfc"
   },
   {
     "id": 798,
@@ -23245,7 +24832,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/9623b462e27080706bc17174c85bef9d4c285d50",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/68/13/1a/68131a5d-89df-7df3-34ad-f3346732c39e/199513361088.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5fxHRVRuOMxLYlbrHYVMVK",
-    "animeId": 312
+    "animeId": 312,
+    "previewUrl": "https://p.scdn.co/mp3-preview/9623b462e27080706bc17174c85bef9d4c285d50"
   },
   {
     "id": 799,
@@ -23264,7 +24852,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/5e374f012af1cfe37d8771481b9c9f3ef1e017c8",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/43/49/29/43492942-3e96-6b69-2bc7-7baedcb818bb/3617394257797_cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3CjkBvz3xuRZ0m1jWTuZhV",
-    "animeId": 20
+    "animeId": 20,
+    "previewUrl": "https://p.scdn.co/mp3-preview/5e374f012af1cfe37d8771481b9c9f3ef1e017c8"
   },
   {
     "id": 800,
@@ -23283,7 +24872,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/c8c9ec45072081cfe70f54d8610141f41d93a5a7",
     "coverUrl": "https://media.kitsu.app/anime/45598/poster_image/medium-c9bf66231c51a0a552fbce2d91bb3a20.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/3qllosM3e50u675h2Ftdwu",
-    "animeId": 373
+    "animeId": 373,
+    "previewUrl": "https://p.scdn.co/mp3-preview/c8c9ec45072081cfe70f54d8610141f41d93a5a7"
   },
   {
     "id": 801,
@@ -23302,7 +24892,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d920bd182d23811d8008ca61c48ade5a020d9e4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/13/90/81/13908186-c931-d749-8d05-9307ed125b3a/0.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3TtftKwIo17gntTHPKoACL",
-    "animeId": 237
+    "animeId": 237,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d920bd182d23811d8008ca61c48ade5a020d9e4a"
   },
   {
     "id": 802,
@@ -23321,7 +24912,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/5d6b3b72408b975a8f9098b42242bb09ee55cfca",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/9d/a2/c4/9da2c4c2-e3a0-a29e-3c5e-83764deb627c/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3YEVZESw8sgG0NLKO0QldM",
-    "animeId": 289
+    "animeId": 289,
+    "previewUrl": "https://p.scdn.co/mp3-preview/5d6b3b72408b975a8f9098b42242bb09ee55cfca"
   },
   {
     "id": 803,
@@ -23340,7 +24932,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/a4e72a39337d2f5c1bab7db6e7667c3b92619181",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/8271/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0DLs7wKjVzMxsA7YelQby4",
-    "animeId": 52
+    "animeId": 52,
+    "previewUrl": "https://p.scdn.co/mp3-preview/a4e72a39337d2f5c1bab7db6e7667c3b92619181"
   },
   {
     "id": 804,
@@ -23359,7 +24952,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/a8580b937cc92c7ac7699f522c6460f58b5c9495",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/11614/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4N0LiJT8lMajHnLv5F5Iho",
-    "animeId": 9
+    "animeId": 9,
+    "previewUrl": "https://p.scdn.co/mp3-preview/a8580b937cc92c7ac7699f522c6460f58b5c9495"
   },
   {
     "id": 805,
@@ -23378,7 +24972,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/17aa5c4670d6988b092940c2a5c6ba5edc2f169d",
     "coverUrl": "https://media.kitsu.app/anime/46214/poster_image/medium-576598f2a2b60146ac60300c89339f25.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/0gvk6fOtFaSfJYV2KU6XtJ",
-    "animeId": 363
+    "animeId": 363,
+    "previewUrl": "https://p.scdn.co/mp3-preview/17aa5c4670d6988b092940c2a5c6ba5edc2f169d"
   },
   {
     "id": 806,
@@ -23397,7 +24992,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/96e21aa72b1dad1af68abbf5c1a927e78b106769",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/cd/d6/ea/cdd6ea6a-c821-1a74-7b5f-791431f329bd/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3UwrAJaeOqVCm0irEWcxy7",
-    "animeId": 394
+    "animeId": 394,
+    "previewUrl": "https://p.scdn.co/mp3-preview/96e21aa72b1dad1af68abbf5c1a927e78b106769"
   },
   {
     "id": 807,
@@ -23416,7 +25012,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/f4f7864c8aa6ea6f8496109665c332c5bb889eba",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c5/80/db/c580dbe2-3498-f681-c932-a3427553ed58/859779123379_cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4T7OcRER8SG3d9fwASDSCo",
-    "animeId": 144
+    "animeId": 144,
+    "previewUrl": "https://p.scdn.co/mp3-preview/f4f7864c8aa6ea6f8496109665c332c5bb889eba"
   },
   {
     "id": 808,
@@ -23435,7 +25032,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/4cd95d3b182d9d2abd12408013ed7b68969f0000",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/42260/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6gf3gCFZloUNpXnrZZd15z",
-    "animeId": 114
+    "animeId": 114,
+    "previewUrl": "https://p.scdn.co/mp3-preview/4cd95d3b182d9d2abd12408013ed7b68969f0000"
   },
   {
     "id": 809,
@@ -23454,7 +25052,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/a65831698f8f9288607e289578ba9a95f2ea3509",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/69/25/e3/6925e350-8b5f-f593-4447-6d0daac59b84/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6Mm77XGJld1QxvKyMrYbFj",
-    "animeId": 17
+    "animeId": 17,
+    "previewUrl": "https://p.scdn.co/mp3-preview/a65831698f8f9288607e289578ba9a95f2ea3509"
   },
   {
     "id": 810,
@@ -23473,7 +25072,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/e051387563abb68d0ce1d211e842f47c688e67bb",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/74/59/b0/7459b064-30ad-b59e-ef94-f2f89a8906f6/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5u8iqPNTa3ryOqeiNdgi6o",
-    "animeId": 300
+    "animeId": 300,
+    "previewUrl": "https://p.scdn.co/mp3-preview/e051387563abb68d0ce1d211e842f47c688e67bb"
   },
   {
     "id": 811,
@@ -23492,7 +25092,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/4134bbf70982962a4fa1212a50d7cf3e82bd67ea",
     "coverUrl": "https://media.kitsu.app/anime/46299/poster_image/medium-3e61ff8c6d376eb1c28c8fc029a59cf6.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/6koztzfSaFalbFxpiaFpjk",
-    "animeId": 130
+    "animeId": 130,
+    "previewUrl": "https://p.scdn.co/mp3-preview/4134bbf70982962a4fa1212a50d7cf3e82bd67ea"
   },
   {
     "id": 812,
@@ -23511,7 +25112,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/acd309db4d2adbfc9864b4f9b3d2debc8b17d9f3",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/149/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1U7FBWOEucYeC3OdDemnI2",
-    "animeId": 344
+    "animeId": 344,
+    "previewUrl": "https://p.scdn.co/mp3-preview/acd309db4d2adbfc9864b4f9b3d2debc8b17d9f3"
   },
   {
     "id": 813,
@@ -23530,7 +25132,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/5967f89f64446fd7008691d68fe05e6ca4e3dc4e",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/38/e2/30/38e2306a-9640-991c-418e-84159655e67d/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/021QfEXbcQjwwUHmXuDswD",
-    "animeId": 186
+    "animeId": 186,
+    "previewUrl": "https://p.scdn.co/mp3-preview/5967f89f64446fd7008691d68fe05e6ca4e3dc4e"
   },
   {
     "id": 814,
@@ -23549,7 +25152,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/cd152d71e7a5f5534748f4d567b6f9a95099d2a2",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ae/d8/94/aed89411-9e29-a8d4-9cab-17e24d21b5ef/199066666579.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0YRvcIlETPNLdasQYkJabY",
-    "animeId": 10
+    "animeId": 10,
+    "previewUrl": "https://p.scdn.co/mp3-preview/cd152d71e7a5f5534748f4d567b6f9a95099d2a2"
   },
   {
     "id": 815,
@@ -23568,7 +25172,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/60b64ab9d4e6c30b4fd89368f080c7edd908a2a2",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/13503/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4s7oibu54IVPJo66oIe68r",
-    "animeId": 43
+    "animeId": 43,
+    "previewUrl": "https://p.scdn.co/mp3-preview/60b64ab9d4e6c30b4fd89368f080c7edd908a2a2"
   },
   {
     "id": 816,
@@ -23587,7 +25192,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/654482c6ba0055a5220b42fe25deaeadef14536f",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/e3/58/69/e358696c-6c66-c47b-9c3e-698e54b7ac0d/8859028151148.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6KRj0vz2JEk8Ykt1Q0KKZX",
-    "animeId": 135
+    "animeId": 135,
+    "previewUrl": "https://p.scdn.co/mp3-preview/654482c6ba0055a5220b42fe25deaeadef14536f"
   },
   {
     "id": 817,
@@ -23606,7 +25212,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/7d8ef1e5609d0c8369239851cb4be52ab22b7592",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/15/07/07/150707ae-c6c6-d8bc-4d18-bd0ddfa0f8b4/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1uFvvFnus5WZFizuRH02Q0",
-    "animeId": 38
+    "animeId": 38,
+    "previewUrl": "https://p.scdn.co/mp3-preview/7d8ef1e5609d0c8369239851cb4be52ab22b7592"
   },
   {
     "id": 818,
@@ -23625,7 +25232,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/ffc3b29f5f3b647aa8a11ab0eb2ef90b99a24e0f",
     "coverUrl": "https://media.kitsu.app/anime/47454/poster_image/medium-647eca310356254a1840a496f41ea57c.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/1jan7lM5FsAiDDTNUVUNec",
-    "animeId": 208
+    "animeId": 208,
+    "previewUrl": "https://p.scdn.co/mp3-preview/ffc3b29f5f3b647aa8a11ab0eb2ef90b99a24e0f"
   },
   {
     "id": 819,
@@ -23644,7 +25252,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/9490b9492226fae3c20f5296a73dbdef5c86781e",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5e/a2/f3/5ea2f3a1-e4ff-c5e1-7f42-c7fadbb73654/199806684856.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0Eqm1msB6wpMo9PgMOsAIx",
-    "animeId": 262
+    "animeId": 262,
+    "previewUrl": "https://p.scdn.co/mp3-preview/9490b9492226fae3c20f5296a73dbdef5c86781e"
   },
   {
     "id": 820,
@@ -23663,7 +25272,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/64eb7bf836ee301826dfc368f8f0f186979eeb2b",
     "coverUrl": "https://media.kitsu.app/anime/44032/poster_image/large-5b1626fbfbc64e8c4a4a2a2874be2afd.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/2cIhhuWvVhDHi6tKyN5Ln8",
-    "animeId": 84
+    "animeId": 84,
+    "previewUrl": "https://p.scdn.co/mp3-preview/64eb7bf836ee301826dfc368f8f0f186979eeb2b"
   },
   {
     "id": 821,
@@ -23682,7 +25292,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/576181e08b0fae95262a9efd9c37f45f85d84d3a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4f/3c/82/4f3c8259-5f22-4771-18cb-cc2066d3ee7a/5026854029924.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4YkPsxVBXkM4jBgMTAxtFz",
-    "animeId": 45
+    "animeId": 45,
+    "previewUrl": "https://p.scdn.co/mp3-preview/576181e08b0fae95262a9efd9c37f45f85d84d3a"
   },
   {
     "id": 822,
@@ -23701,7 +25312,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/c7ffdd28de265739e29d4b2417d71027876f0f7c",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d9/6b/3f/d96b3f26-3aa9-84ee-1a69-c2e7f9816cbd/199520022088.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5kphwAzHksSZrkrQbQdfXy",
-    "animeId": 246
+    "animeId": 246,
+    "previewUrl": "https://p.scdn.co/mp3-preview/c7ffdd28de265739e29d4b2417d71027876f0f7c"
   },
   {
     "id": 823,
@@ -23720,7 +25332,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/ee4db4e22d6f82f7294e572c21806d51cf7bf433",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/d7/7a/9f/d77a9f52-361c-ee0a-3029-f73801702328/197189375064.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7qzgSY999Nke2lWLb609pO",
-    "animeId": 278
+    "animeId": 278,
+    "previewUrl": "https://p.scdn.co/mp3-preview/ee4db4e22d6f82f7294e572c21806d51cf7bf433"
   },
   {
     "id": 824,
@@ -23739,7 +25352,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/1043a187154734f6ac9f02a53841bdc81d0258b6",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/3853/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5HhygQkxcB1EdY4kyQh425",
-    "animeId": 259
+    "animeId": 259,
+    "previewUrl": "https://p.scdn.co/mp3-preview/1043a187154734f6ac9f02a53841bdc81d0258b6"
   },
   {
     "id": 825,
@@ -23758,7 +25372,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/2ba342b9292cffe3b0ad5d3671f8b558bd7bb817",
     "coverUrl": "https://media.kitsu.app/anime/18/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1wIHZS46ZS4Ibaj3Pu3tT5",
-    "animeId": 200
+    "animeId": 200,
+    "previewUrl": "https://p.scdn.co/mp3-preview/2ba342b9292cffe3b0ad5d3671f8b558bd7bb817"
   },
   {
     "id": 826,
@@ -23777,7 +25392,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/127515b9e86d9b8adfdadd22538bcbebefcdc394",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/13925/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1wZWYCb3Lyhk4TuSnuThkK",
-    "animeId": 271
+    "animeId": 271,
+    "previewUrl": "https://p.scdn.co/mp3-preview/127515b9e86d9b8adfdadd22538bcbebefcdc394"
   },
   {
     "id": 827,
@@ -23796,7 +25412,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/524c094d63505a66d2d4b74ef5771feba4975be2",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/00/c5/f0/00c5f03a-df27-b29f-37cd-a8719b6be7ea/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2luYdyxKSSxuC3cSW8N6A0",
-    "animeId": 34
+    "animeId": 34,
+    "previewUrl": "https://p.scdn.co/mp3-preview/524c094d63505a66d2d4b74ef5771feba4975be2"
   },
   {
     "id": 828,
@@ -23815,7 +25432,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/0cd12974de71773bb9173250cbac16dc0b45f418",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1f/90/79/1f9079bf-ee9b-2879-4cec-caf1a4be5569/888332897877.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0KPwJv67axQ02t6gI2sw2X",
-    "animeId": 143
+    "animeId": 143,
+    "previewUrl": "https://p.scdn.co/mp3-preview/0cd12974de71773bb9173250cbac16dc0b45f418"
   },
   {
     "id": 829,
@@ -23834,7 +25452,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/9372bb578c4a6f99602fb4dd9c9bcadcb1dba3fb",
     "coverUrl": "https://media.kitsu.app/anime/45715/poster_image/medium-775439626fef38f5ca5fe646a095dcb5.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/2LCF0vtFyZ5BHaAU3KUSq2",
-    "animeId": 228
+    "animeId": 228,
+    "previewUrl": "https://p.scdn.co/mp3-preview/9372bb578c4a6f99602fb4dd9c9bcadcb1dba3fb"
   },
   {
     "id": 830,
@@ -23853,7 +25472,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/51961cf8faf6daed95de5019c070ab56479aae0f",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ce/89/66/ce89667f-0976-4aff-4cc3-1cb7a8052aaf/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6Nriu467fTQICLSlP0Ufqo",
-    "animeId": 332
+    "animeId": 332,
+    "previewUrl": "https://p.scdn.co/mp3-preview/51961cf8faf6daed95de5019c070ab56479aae0f"
   },
   {
     "id": 831,
@@ -23872,7 +25492,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/edb591e7a48b245ec5a155d612bbbd31f5c6d829",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/42/c2/c0/42c2c031-1b32-19cc-f4a0-58db88c7f87a/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4JVHa8eTUOEN0zS1zrA2j5",
-    "animeId": 137
+    "animeId": 137,
+    "previewUrl": "https://p.scdn.co/mp3-preview/edb591e7a48b245ec5a155d612bbbd31f5c6d829"
   },
   {
     "id": 832,
@@ -23891,7 +25512,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/f64bcb6a16751757d51032f8d8b63178ad29d17e",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a8/a5/51/a8a55109-5a16-7633-b953-48d91bedfd70/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2wyjOiDh07ISNq0oq69G4e",
-    "animeId": 36
+    "animeId": 36,
+    "previewUrl": "https://p.scdn.co/mp3-preview/f64bcb6a16751757d51032f8d8b63178ad29d17e"
   },
   {
     "id": 833,
@@ -23910,7 +25532,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/4db7408d51580c06c9c1e250ec464cbfbbcb665c",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5e/64/1f/5e641fe9-fb27-6e42-1f82-c035b99f5061/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7vZFov5R0OZVG9gtDUCJsr",
-    "animeId": 367
+    "animeId": 367,
+    "previewUrl": "https://p.scdn.co/mp3-preview/4db7408d51580c06c9c1e250ec464cbfbbcb665c"
   },
   {
     "id": 834,
@@ -23929,7 +25552,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/4938cc03b1426704c38e1e235582df4c18f34fe2",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/42/c2/c0/42c2c031-1b32-19cc-f4a0-58db88c7f87a/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4ZU069vAYkr7soRzdzNdjF",
-    "animeId": 233
+    "animeId": 233,
+    "previewUrl": "https://p.scdn.co/mp3-preview/4938cc03b1426704c38e1e235582df4c18f34fe2"
   },
   {
     "id": 835,
@@ -23948,7 +25572,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/3d8abdc210e6e10ad6dc983478f294449b3fb989",
     "coverUrl": "https://media.kitsu.app/anime/41984/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4nUxyQ6GjIOCZRjR7KFeVb",
-    "animeId": 172
+    "animeId": 172,
+    "previewUrl": "https://p.scdn.co/mp3-preview/3d8abdc210e6e10ad6dc983478f294449b3fb989"
   },
   {
     "id": 836,
@@ -23967,7 +25592,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/11bea8a5f65906a2e65f30b430f8479fdf6989a8",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2d/84/61/2d8461ee-c49b-94da-632c-2ae15f4f5519/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/77rZWogLvZ2NOf248oMd6N",
-    "animeId": 295
+    "animeId": 295,
+    "previewUrl": "https://p.scdn.co/mp3-preview/11bea8a5f65906a2e65f30b430f8479fdf6989a8"
   },
   {
     "id": 837,
@@ -23986,7 +25612,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/38db17acf03a124181618daedaa6e2e3ef2cc5bb",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/13672/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2obHilJeVz2oAQIgs3F9oU",
-    "animeId": 300
+    "animeId": 300,
+    "previewUrl": "https://p.scdn.co/mp3-preview/38db17acf03a124181618daedaa6e2e3ef2cc5bb"
   },
   {
     "id": 838,
@@ -24005,7 +25632,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/57612566a68d53ab8d2002d2944182b0c1f5e629",
     "coverUrl": "https://media.kitsu.app/anime/46945/poster_image/medium-3e8cf2cca6c7c9ad7a93bc4c0d5d6a6b.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/3XdMxcFQF7ytBctzX1b7GW",
-    "animeId": 285
+    "animeId": 285,
+    "previewUrl": "https://p.scdn.co/mp3-preview/57612566a68d53ab8d2002d2944182b0c1f5e629"
   },
   {
     "id": 839,
@@ -24024,7 +25652,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/eb6bac1e18cedaf53b421d5058a3da17513f1c45",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/eb/e9/68/ebe968a2-a403-9f63-202e-1b0153adcd61/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0yKr4gsqBjdZqrWhQp5Kny",
-    "animeId": 145
+    "animeId": 145,
+    "previewUrl": "https://p.scdn.co/mp3-preview/eb6bac1e18cedaf53b421d5058a3da17513f1c45"
   },
   {
     "id": 840,
@@ -24043,7 +25672,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/3949e120ef8170dfd179ce5fa105aa55c4c0f761",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/13284/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3XmwAZpIMNpTJy8faw3ajD",
-    "animeId": 286
+    "animeId": 286,
+    "previewUrl": "https://p.scdn.co/mp3-preview/3949e120ef8170dfd179ce5fa105aa55c4c0f761"
   },
   {
     "id": 841,
@@ -24062,7 +25692,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/68bc3cb0611cfe6569ce56eeb025359233168a69",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/53/c6/9a/53c69a6a-d1c4-0983-a20c-a67dceae554f/26UMGIM82372.rgb.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/70cHKK8bHAfJrOGVnfRG9J",
-    "animeId": 337
+    "animeId": 337,
+    "previewUrl": "https://p.scdn.co/mp3-preview/68bc3cb0611cfe6569ce56eeb025359233168a69"
   },
   {
     "id": 842,
@@ -24081,7 +25712,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/8a374e33d78679e1143d7a07797ddfa0225f8586",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b7/55/7a/b7557aef-bb0a-cc57-25bf-979eee194f16/075679571403.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3zOYmiNOuyDL0ClxJcEJ0T",
-    "animeId": 99
+    "animeId": 99,
+    "previewUrl": "https://p.scdn.co/mp3-preview/8a374e33d78679e1143d7a07797ddfa0225f8586"
   },
   {
     "id": 843,
@@ -24100,7 +25732,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/3b622221c4b4a6c28ef70ed256b47ef825108142",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a0/dd/fd/a0ddfd72-ee9e-f046-6466-a5dbefc696fa/26UM1IM21436.rgb.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/11hcBLPtbMp4aQI6zGQLub",
-    "animeId": 327
+    "animeId": 327,
+    "previewUrl": "https://p.scdn.co/mp3-preview/3b622221c4b4a6c28ef70ed256b47ef825108142"
   },
   {
     "id": 844,
@@ -24119,7 +25752,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/20a1469df9f65a51878811bbe49979c418abc1b7",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d0/06/1f/d0061f04-bcae-f9a1-8126-830c04fa32db/196871971188.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0eAuGrXyGFYwur9ARUe7LJ",
-    "animeId": 265
+    "animeId": 265,
+    "previewUrl": "https://p.scdn.co/mp3-preview/20a1469df9f65a51878811bbe49979c418abc1b7"
   },
   {
     "id": 845,
@@ -24138,7 +25772,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/f6ab45a8375c5bcf6f03161edd9f44c1fad501c8",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr",
-    "animeId": 195
+    "animeId": 195,
+    "previewUrl": "https://p.scdn.co/mp3-preview/f6ab45a8375c5bcf6f03161edd9f44c1fad501c8"
   },
   {
     "id": 846,
@@ -24157,7 +25792,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/724b097d9dc53e0541de27d199adfe3f610944ba",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2b/96/2b/2b962b77-3a04-5650-aefd-37ecfce04b03/196874840146.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2sFepQNyl1WjpROruP8bJ0",
-    "animeId": 114
+    "animeId": 114,
+    "previewUrl": "https://p.scdn.co/mp3-preview/724b097d9dc53e0541de27d199adfe3f610944ba"
   },
   {
     "id": 847,
@@ -24176,7 +25812,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/0015e9347a45b62215447eba657b2fc3ce279d2d",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/57/6f/a2/576fa272-91c5-658d-9d05-88d9787c0f1d/196873662978.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7bxaFZ1O3cHkgLKMsdC3xR",
-    "animeId": 362
+    "animeId": 362,
+    "previewUrl": "https://p.scdn.co/mp3-preview/0015e9347a45b62215447eba657b2fc3ce279d2d"
   },
   {
     "id": 848,
@@ -24195,7 +25832,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/9fb8e09c9facc2d9443b6e57ae36d47bf83c01b8",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/56/f4/96/56f49612-02dd-83f4-44fe-d2118cc70707/26UMGIM51129.rgb.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/20jbSiX29FDX4oQxBXyUEi",
-    "animeId": 47
+    "animeId": 47,
+    "previewUrl": "https://p.scdn.co/mp3-preview/9fb8e09c9facc2d9443b6e57ae36d47bf83c01b8"
   },
   {
     "id": 849,
@@ -24214,7 +25852,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/a6955a6725dcf614e9915396987847ea0b509580",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/61/49/8d/61498ded-f0dc-227d-cd1d-2051b5d9f195/196874328590.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0kosUz0jePvjiz4ctmR6wL",
-    "animeId": 285
+    "animeId": 285,
+    "previewUrl": "https://p.scdn.co/mp3-preview/a6955a6725dcf614e9915396987847ea0b509580"
   },
   {
     "id": 850,
@@ -24233,7 +25872,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/7559346825a2233855b5fc77e84a954606de3444",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b9/92/51/b9925128-dac6-2cef-5674-d5ebbe1a4e83/26UMGIM75556.rgb.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4EoJ151oQ5jY48z4RhSE96",
-    "animeId": 359
+    "animeId": 359,
+    "previewUrl": "https://p.scdn.co/mp3-preview/7559346825a2233855b5fc77e84a954606de3444"
   },
   {
     "id": 851,
@@ -24252,7 +25892,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/65040556453e4f1c76bcefebf54a718521588331",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e2/28/92/e22892a7-fe88-72cf-ecba-691030dfcf7e/26UMGIM41151.rgb.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3ouNEk0tv5TTi8VWMe1xbX",
-    "animeId": 158
+    "animeId": 158,
+    "previewUrl": "https://p.scdn.co/mp3-preview/65040556453e4f1c76bcefebf54a718521588331"
   },
   {
     "id": 852,
@@ -24271,7 +25912,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/98af5b6b77831ad55b6d1129148745705a311973",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/43321/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4qW3BbQAwZsrnu8a3ZRdyT",
-    "animeId": 30
+    "animeId": 30,
+    "previewUrl": "https://p.scdn.co/mp3-preview/98af5b6b77831ad55b6d1129148745705a311973"
   },
   {
     "id": 853,
@@ -24290,7 +25932,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/bf5ab98492256120bd9c48658e9c899c8692f77f",
     "coverUrl": "https://media.kitsu.app/anime/5993/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7yNf9YjeO5JXUE3JEBgnYc",
-    "animeId": 162
+    "animeId": 162,
+    "previewUrl": "https://p.scdn.co/mp3-preview/bf5ab98492256120bd9c48658e9c899c8692f77f"
   },
   {
     "id": 854,
@@ -24309,7 +25952,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/a3d0119e3182fbb19636c2a44737fa3e0b71f939",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/53/c6/9a/53c69a6a-d1c4-0983-a20c-a67dceae554f/26UMGIM82372.rgb.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/02HyFYmpzt02VJ8k0CqxKj",
-    "animeId": 190
+    "animeId": 190,
+    "previewUrl": "https://p.scdn.co/mp3-preview/a3d0119e3182fbb19636c2a44737fa3e0b71f939"
   },
   {
     "id": 855,
@@ -24328,7 +25972,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/0a36635f94b4e44e6e4f5b7edb3f501d458812d9",
     "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/1qbmS6ep2hbBRaEZFpn7BX",
-    "animeId": 241
+    "animeId": 241,
+    "previewUrl": "https://p.scdn.co/mp3-preview/0a36635f94b4e44e6e4f5b7edb3f501d458812d9"
   },
   {
     "id": 856,
@@ -24347,7 +25992,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/f82f2f3e714a66934fc309e357cbf249ad045f62",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/10/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7ujApz6iFP3PmKIDGcaGbe",
-    "animeId": 104
+    "animeId": 104,
+    "previewUrl": "https://p.scdn.co/mp3-preview/f82f2f3e714a66934fc309e357cbf249ad045f62"
   },
   {
     "id": 857,
@@ -24366,7 +26012,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/894b272aa0422aeebe856825b55e5c736a9bc5ee",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1d/1b/f9/1d1bf9b1-44c6-9a6c-6ffb-c158488c06ce/26UMGIM39303.rgb.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4LfCY65LvojKjWEnU7fNN4",
-    "animeId": 173
+    "animeId": 173,
+    "previewUrl": "https://p.scdn.co/mp3-preview/894b272aa0422aeebe856825b55e5c736a9bc5ee"
   },
   {
     "id": 858,
@@ -24385,7 +26032,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/72b6457625435b7f64c345e86930e5f0071c559c",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1c/b2/46/1cb246db-afae-a599-d377-44a7ea7267fa/196874346976.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/22NHkFYbgxB2Zirj29Gbp8",
-    "animeId": 235
+    "animeId": 235,
+    "previewUrl": "https://p.scdn.co/mp3-preview/72b6457625435b7f64c345e86930e5f0071c559c"
   },
   {
     "id": 859,
@@ -24404,7 +26052,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/3f175c1a53a23119bfe50c9ca04e68d27d3131a5",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f9/aa/69/f9aa6992-40ca-a756-85ca-b27c48f7c720/26UMGIM02802.rgb.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4W6yulge3h7FSy0zGFrNKs",
-    "animeId": 101
+    "animeId": 101,
+    "previewUrl": "https://p.scdn.co/mp3-preview/3f175c1a53a23119bfe50c9ca04e68d27d3131a5"
   },
   {
     "id": 860,
@@ -24423,7 +26072,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/e41ce6b82410d81c08baacca2a7169e5ace4287d",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e7/3d/ca/e73dca71-449b-7c65-bbe6-6d3f1edee4cc/1155852.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3sK8wGT43QFpWrvNQsrQya",
-    "animeId": 374
+    "animeId": 374,
+    "previewUrl": "https://p.scdn.co/mp3-preview/e41ce6b82410d81c08baacca2a7169e5ace4287d"
   },
   {
     "id": 861,
@@ -24442,7 +26092,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/369b246146e99c2f6ebabf5dfb9e20df98b8fe65",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/1376/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0FZd4IaxB12sUTKSUUGwWq",
-    "animeId": 263
+    "animeId": 263,
+    "previewUrl": "https://p.scdn.co/mp3-preview/369b246146e99c2f6ebabf5dfb9e20df98b8fe65"
   },
   {
     "id": 862,
@@ -24461,7 +26112,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/1de9b315e1aa811aedaf905b1058b668b2d3146e",
     "coverUrl": "https://media.kitsu.app/anime/46336/poster_image/medium-162a579fe7a25c1b188532bb8aaa7129.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/514joG57v4yKTsfQmz7stz",
-    "animeId": 242
+    "animeId": 242,
+    "previewUrl": "https://p.scdn.co/mp3-preview/1de9b315e1aa811aedaf905b1058b668b2d3146e"
   },
   {
     "id": 863,
@@ -24480,7 +26132,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/f1e7acbb1c04e8ba21d08d2402cf069a8eed8f96",
     "coverUrl": "https://media.kitsu.app/anime/45532/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2oWFJJW9d1bIra3zHjR6GO",
-    "animeId": 181
+    "animeId": 181,
+    "previewUrl": "https://p.scdn.co/mp3-preview/f1e7acbb1c04e8ba21d08d2402cf069a8eed8f96"
   },
   {
     "id": 864,
@@ -24499,7 +26152,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/2467ff71a7508c57a62112ee5beb996bd6b9e957",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ed/46/bf/ed46bf4e-7cb9-965a-54f3-03059977fe6c/075679589293.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5y2ijHECwFYWqcAHKTZgzD",
-    "animeId": 82
+    "animeId": 82,
+    "previewUrl": "https://p.scdn.co/mp3-preview/2467ff71a7508c57a62112ee5beb996bd6b9e957"
   },
   {
     "id": 865,
@@ -24518,7 +26172,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/6c85f9e4507e93478ee4adb7782f1a35a9d0e1ce",
     "coverUrl": "https://media.kitsu.app/anime/48534/poster_image/medium-c38c15266ae228974e8c2a00d776ea92.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/7MZHqgTVTnN6xZGYAcEEAf",
-    "animeId": 246
+    "animeId": 246,
+    "previewUrl": "https://p.scdn.co/mp3-preview/6c85f9e4507e93478ee4adb7782f1a35a9d0e1ce"
   },
   {
     "id": 866,
@@ -24537,7 +26192,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/7d860804d259f81b4a7bc04900a5410d99995fd4",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/46722/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3oTuTpF1F3A7rEC6RKsMRz",
-    "animeId": 397
+    "animeId": 397,
+    "previewUrl": "https://p.scdn.co/mp3-preview/7d860804d259f81b4a7bc04900a5410d99995fd4"
   },
   {
     "id": 867,
@@ -24556,7 +26212,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/4feadd4524eee165380031ed90bdff09daacb902",
     "coverUrl": "https://media.kitsu.app/anime/44196/poster_image/medium-a7b52a1e9cea5a04b29ee6878fbff923.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/4IAWZw00ZI9DLKDjesx86u",
-    "animeId": 364
+    "animeId": 364,
+    "previewUrl": "https://p.scdn.co/mp3-preview/4feadd4524eee165380031ed90bdff09daacb902"
   },
   {
     "id": 868,
@@ -24575,7 +26232,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d990a355be1d84adc0882bda733862fba7767e70",
     "coverUrl": "https://media.kitsu.app/anime/46481/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5BZsQlgw21vDOAjoqkNgKb",
-    "animeId": 196
+    "animeId": 196,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d990a355be1d84adc0882bda733862fba7767e70"
   },
   {
     "id": 869,
@@ -24594,7 +26252,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/c5bbc379559c92c9d07e2cebf4a1e14029d01331",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/719/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/37UCSVSqiPGdR1DijOFyYY",
-    "animeId": 337
+    "animeId": 337,
+    "previewUrl": "https://p.scdn.co/mp3-preview/c5bbc379559c92c9d07e2cebf4a1e14029d01331"
   },
   {
     "id": 870,
@@ -24613,7 +26272,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/3f5b29adf9f673b9f985c1976c26f5820649d711",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/de/b3/1c/deb31ca3-1670-7bf1-7d02-5cc60d11c882/196874742235.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1VWiDyYTrqQhhmnWANWkFa",
-    "animeId": 103
+    "animeId": 103,
+    "previewUrl": "https://p.scdn.co/mp3-preview/3f5b29adf9f673b9f985c1976c26f5820649d711"
   },
   {
     "id": 871,
@@ -24632,7 +26292,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/0194ff4186a1f53bff2cdf6d7660289ca8eb0e7e",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/1415/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/55lijDD6OAjLFFUHU9tcDm",
-    "animeId": 102
+    "animeId": 102,
+    "previewUrl": "https://p.scdn.co/mp3-preview/0194ff4186a1f53bff2cdf6d7660289ca8eb0e7e"
   },
   {
     "id": 872,
@@ -24651,7 +26312,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/7600d81f153683eb1265f92aa5567cc313658481",
     "coverUrl": "https://media.kitsu.app/anime/41979/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6QKpHmO41jkd9pTp0FfmHs",
-    "animeId": 173
+    "animeId": 173,
+    "previewUrl": "https://p.scdn.co/mp3-preview/7600d81f153683eb1265f92aa5567cc313658481"
   },
   {
     "id": 873,
@@ -24670,7 +26332,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/4e369f5cce22a4bcc212166ee320dc8679ce9c79",
     "coverUrl": "https://media.kitsu.app/anime/47687/poster_image/medium-1b60c7e721df919140c4dd564810afd5.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/5KTcGJKm4HgLhLt8Tc7EQ5",
-    "animeId": 222
+    "animeId": 222,
+    "previewUrl": "https://p.scdn.co/mp3-preview/4e369f5cce22a4bcc212166ee320dc8679ce9c79"
   },
   {
     "id": 874,
@@ -24689,7 +26352,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/03a64c71a3d7477335cd39a069e0e175e65798b6",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/45561/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0QPdjsMOUhwouq1NS3HwfQ",
-    "animeId": 328
+    "animeId": 328,
+    "previewUrl": "https://p.scdn.co/mp3-preview/03a64c71a3d7477335cd39a069e0e175e65798b6"
   },
   {
     "id": 875,
@@ -24708,7 +26372,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/37c21b6b0df9b7156527d0729a58b6db37c88a0a",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/2026/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/42UBPzRMh5yyz0EDPr6fr1",
-    "animeId": 341
+    "animeId": 341,
+    "previewUrl": "https://p.scdn.co/mp3-preview/37c21b6b0df9b7156527d0729a58b6db37c88a0a"
   },
   {
     "id": 876,
@@ -24727,7 +26392,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/7ffa15bbf70382813f8661408e976cc41655b367",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7c/de/5e/7cde5e7a-612d-9714-d34c-1eb234c85ebb/810129961546.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/36idurZmYRjJ56KQ8JD9bN",
-    "animeId": 8
+    "animeId": 8,
+    "previewUrl": "https://p.scdn.co/mp3-preview/7ffa15bbf70382813f8661408e976cc41655b367"
   },
   {
     "id": 877,
@@ -24746,7 +26412,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/cc3201e7ed85d09f1683e591fd2eb964ea7247a6",
     "coverUrl": "https://media.kitsu.app/anime/48618/poster_image/medium-3ef7ecfe0da23a4d4ee757d46dfcd1db.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/1DwscornXpj8fmOmYVlqZt",
-    "animeId": 211
+    "animeId": 211,
+    "previewUrl": "https://p.scdn.co/mp3-preview/cc3201e7ed85d09f1683e591fd2eb964ea7247a6"
   },
   {
     "id": 878,
@@ -24765,7 +26432,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/e0ea7353932017364bdb12dc776e89b360abac42",
     "coverUrl": "https://media.kitsu.app/anime/13670/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6sGIMrtIzQjdzNndVxe397",
-    "animeId": 197
+    "animeId": 197,
+    "previewUrl": "https://p.scdn.co/mp3-preview/e0ea7353932017364bdb12dc776e89b360abac42"
   },
   {
     "id": 879,
@@ -24784,7 +26452,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d3b9a6318dcc942387b69c677a80377044856d69",
     "coverUrl": "https://media.kitsu.app/anime/12976/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/12bYYQaLqHliSXvRIYlq8G",
-    "animeId": 138
+    "animeId": 138,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d3b9a6318dcc942387b69c677a80377044856d69"
   },
   {
     "id": 880,
@@ -24803,7 +26472,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/30dc1adb43c170165bb8091e788b55f26f2fc672",
     "coverUrl": "https://media.kitsu.app/anime/46874/poster_image/medium-77ce4d83e28e24e71cf7fdcbe0df8e28.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/70pVCVMGjmIWPbWXDwf11e",
-    "animeId": 292
+    "animeId": 292,
+    "previewUrl": "https://p.scdn.co/mp3-preview/30dc1adb43c170165bb8091e788b55f26f2fc672"
   },
   {
     "id": 881,
@@ -24822,7 +26492,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d46acdc8f94c6fa471388c7a10c619bb08c88197",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/11110/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7tICCrK3CcyRFKza7yrR0z",
-    "animeId": 59
+    "animeId": 59,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d46acdc8f94c6fa471388c7a10c619bb08c88197"
   },
   {
     "id": 882,
@@ -24841,7 +26512,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/90e14dd98b61140a5259ce400de788704d406742",
     "coverUrl": "https://media.kitsu.app/anime/42070/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7e4zDInS6tA2jwzphvs2Ay",
-    "animeId": 182
+    "animeId": 182,
+    "previewUrl": "https://p.scdn.co/mp3-preview/90e14dd98b61140a5259ce400de788704d406742"
   },
   {
     "id": 883,
@@ -24860,7 +26532,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/5fada77b20c9b592ea707bf74334195c2b8a125f",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/10740/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2LSmH4vxyRhkJ2pPqcmkXw",
-    "animeId": 55
+    "animeId": 55,
+    "previewUrl": "https://p.scdn.co/mp3-preview/5fada77b20c9b592ea707bf74334195c2b8a125f"
   },
   {
     "id": 884,
@@ -24879,7 +26552,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b90cdabeb3093431041841713c812e70bafb1478",
     "coverUrl": "https://media.kitsu.app/anime/46415/poster_image/medium-09a8e8a7b821309beba30e1b49a5369e.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/6oUUmBcUbZa5O48V5pjgAD",
-    "animeId": 227
+    "animeId": 227,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b90cdabeb3093431041841713c812e70bafb1478"
   },
   {
     "id": 885,
@@ -24898,7 +26572,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/4c09f53084e36b6c85f8b2a44893c226a3194f42",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/7700/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5ViLKrbyL3HD6wsq3AB9eI",
-    "animeId": 91
+    "animeId": 91,
+    "previewUrl": "https://p.scdn.co/mp3-preview/4c09f53084e36b6c85f8b2a44893c226a3194f42"
   },
   {
     "id": 886,
@@ -24917,7 +26592,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b55c8fa4e31192a3e35ad53d3e889733f9cd9da1",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/41312/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0kl6Ozan3fuUdCl6TlB15v",
-    "animeId": 76
+    "animeId": 76,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b55c8fa4e31192a3e35ad53d3e889733f9cd9da1"
   },
   {
     "id": 887,
@@ -24936,7 +26612,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/acafb81cc609de53b9687a40f214f79d828b6947",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/42/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/68lbSrXDORS51pmyjZv712",
-    "animeId": 336
+    "animeId": 336,
+    "previewUrl": "https://p.scdn.co/mp3-preview/acafb81cc609de53b9687a40f214f79d828b6947"
   },
   {
     "id": 888,
@@ -24955,7 +26632,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2b/88/13/2b881365-2d60-5621-1518-eada52b2a6c4/mzaf_15565970966828706113.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/17/ed/eb/17edebc5-3235-068f-b8e9-861f9299c4e7/artwork.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%A1%E0%B8%B5%E0%B8%A3%E0%B8%AD%E0%B8%A2%E0%B8%A2%E0%B8%B4%E0%B9%89%E0%B8%A1%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AD%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%A2%20qcw1688z",
-    "animeId": 374
+    "animeId": 374,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2b/88/13/2b881365-2d60-5621-1518-eada52b2a6c4/mzaf_15565970966828706113.plus.aac.p.m4a"
   },
   {
     "id": 889,
@@ -24974,7 +26652,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a4/b9/b0/a4b9b0a3-f3f9-9f28-e74e-f56cad33184b/mzaf_17614794177634834006.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f5/f4/e9/f5f4e95f-4876-da83-7b93-b8b672873193/cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%A1%E0%B8%B2%E0%B8%81%E0%B8%81%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%81%E0%B9%87%E0%B8%9E%E0%B8%AD%20(Jealous)%20%5Bfeat.%20Violette%20Wautier%5D%20GAVIN%3AD",
-    "animeId": 366
+    "animeId": 366,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a4/b9/b0/a4b9b0a3-f3f9-9f28-e74e-f56cad33184b/mzaf_17614794177634834006.plus.aac.p.m4a"
   },
   {
     "id": 890,
@@ -24993,7 +26672,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9e/2f/1f/9e2f1f11-20a8-767a-0e33-9029028a7024/mzaf_1603981766065362477.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/db/28/e7/db28e7c3-f53a-76c8-eaa4-d92a22e4f160/23UMGIM72115.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/One%20Of%20The%20Girls%20The%20Weeknd%2C%20JENNIE%20%26%20Lily%20Rose%20Depp",
-    "animeId": 25
+    "animeId": 25,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9e/2f/1f/9e2f1f11-20a8-767a-0e33-9029028a7024/mzaf_1603981766065362477.plus.aac.p.m4a"
   },
   {
     "id": 891,
@@ -25012,7 +26692,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/78/ec/7d/78ec7dcf-a10d-4e83-a92e-f749123d38f5/mzaf_10110903787098474977.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d4/ee/12/d4ee1209-ff69-0a0c-0b5b-e13cf758b5f2/26UM1IM20084.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A3%E0%B8%AD%20SIS%20(TER)%20DICEBLUE%20%26%20DICE",
-    "animeId": 138
+    "animeId": 138,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/78/ec/7d/78ec7dcf-a10d-4e83-a92e-f749123d38f5/mzaf_10110903787098474977.plus.aac.p.m4a"
   },
   {
     "id": 892,
@@ -25031,7 +26712,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cc/23/00/cc2300d8-844d-a22d-cb14-8fc30d58510c/mzaf_13796157886013267579.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1f/6e/26/1f6e26a6-f165-3785-f1a4-1a54c6e6ddf7/26UM1IM26484.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%A7%20%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%87%20%E0%B9%81%E0%B8%94%E0%B8%87%20(Get%20high)%20PUN%20%26%20THE%20TOYS",
-    "animeId": 406
+    "animeId": 406,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cc/23/00/cc2300d8-844d-a22d-cb14-8fc30d58510c/mzaf_13796157886013267579.plus.aac.p.m4a"
   },
   {
     "id": 893,
@@ -25050,7 +26732,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/aa/9f/19aa9f3f-809c-8e33-0938-064ceb6eeee7/mzaf_17532341792860802121.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e4/f1/66/e4f1660c-2362-a934-8bb8-064c86c998bf/cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%B4%E0%B8%A3%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%20(Love%20Over%20Magic)%20Gun%20Napat",
-    "animeId": 341
+    "animeId": 341,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/aa/9f/19aa9f3f-809c-8e33-0938-064ceb6eeee7/mzaf_17532341792860802121.plus.aac.p.m4a"
   },
   {
     "id": 894,
@@ -25069,7 +26752,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f7/9d/ae/f79daeca-5bc2-231e-cf76-92566191b0b2/mzaf_14146632327103131521.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7d/74/a3/7d74a39b-906e-d336-29f9-ece2b00ee6f0/0840517265833_Cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%E0%B9%80%E0%B8%A5%E0%B8%A7%E0%B8%82%E0%B8%99%E0%B8%B2%E0%B8%94%E0%B8%99%E0%B8%B1%E0%B9%89%E0%B8%99%20PORZAX",
-    "animeId": 338
+    "animeId": 338,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f7/9d/ae/f79daeca-5bc2-231e-cf76-92566191b0b2/mzaf_14146632327103131521.plus.aac.p.m4a"
   },
   {
     "id": 895,
@@ -25088,7 +26772,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/13/c6/c6/13c6c693-65ba-1d89-e1c5-ea96475f9ee3/mzaf_6838341267688397747.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/65/ce/69/65ce6958-e0c1-908b-e53e-5924a61cd000/26UMGIM86682.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%82%E0%B8%B6%E0%B9%89%E0%B8%99%E0%B9%83%E0%B8%88%20(3am%20call)%20%5Bfeat.%20BLVCKHEART%5D%20Mirrr",
-    "animeId": 136
+    "animeId": 136,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/13/c6/c6/13c6c693-65ba-1d89-e1c5-ea96475f9ee3/mzaf_6838341267688397747.plus.aac.p.m4a"
   },
   {
     "id": 896,
@@ -25107,7 +26792,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4a/a3/26/4aa32650-a31e-6778-728d-51454a4f7b8e/mzaf_3984893366824954544.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/72/32/79/7232794e-cc4a-e043-f70a-09b62ce8005d/26UMGIM95601.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%9B%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B9%84%E0%B8%AB%E0%B8%A7%20%E0%B9%84%E0%B8%9B%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B9%84%E0%B8%AB%E0%B8%A1%20(GO%20ON)%20%5Bfeat.%20HYE%5D%20BENZKHAOKHWAN",
-    "animeId": 386
+    "animeId": 386,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4a/a3/26/4aa32650-a31e-6778-728d-51454a4f7b8e/mzaf_3984893366824954544.plus.aac.p.m4a"
   },
   {
     "id": 897,
@@ -25126,7 +26812,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/af/07/73/af077308-f5f5-01c0-4be9-a0434e4bf1ea/mzaf_8840133973617771352.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c7/cc/15/c7cc1534-12d9-d560-e469-b79c12024c76/8800388639999_cover.png/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Star%20Trace%20PLAVE",
-    "animeId": 296
+    "animeId": 296,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/af/07/73/af077308-f5f5-01c0-4be9-a0434e4bf1ea/mzaf_8840133973617771352.plus.aac.p.m4a"
   },
   {
     "id": 898,
@@ -25145,7 +26832,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cc/d6/6b/ccd66b6e-562d-a18e-112e-e3dec30c27d5/mzaf_7692596870033857178.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/10/13/75/10137570-1383-a197-4c5a-0f6ece5eefcb/888332883054.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%96%E0%B8%B9%E0%B8%81%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%9E%E0%B8%9A%20(Finally%20She%20Found.)%20FREEHAND",
-    "animeId": 193
+    "animeId": 193,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cc/d6/6b/ccd66b6e-562d-a18e-112e-e3dec30c27d5/mzaf_7692596870033857178.plus.aac.p.m4a"
   },
   {
     "id": 899,
@@ -25164,7 +26852,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7d/f5/0f/7df50f3b-c48b-0681-e053-a7e651b534ae/mzaf_446467508770010834.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/78/9f/91/789f916e-9706-5060-58b4-aafbd2ee2c26/888332880787.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%A3%E0%B8%AD%E0%B8%9A%E0%B9%84%E0%B8%9B%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%99%20(Counting%20Till%20I%20Die)%20KRIST",
-    "animeId": 119
+    "animeId": 119,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7d/f5/0f/7df50f3b-c48b-0681-e053-a7e651b534ae/mzaf_446467508770010834.plus.aac.p.m4a"
   },
   {
     "id": 900,
@@ -25183,7 +26872,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/7a/0c/8c7a0c2c-8ddd-1fae-e310-3b95ac2a4995/mzaf_1126555595574238858.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/1d/a5/f5/1da5f53d-8f09-ff12-9180-2f13e67ed1ff/886447381564.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Older%20Sasha%20Alex%20Sloan",
-    "animeId": 356
+    "animeId": 356,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/7a/0c/8c7a0c2c-8ddd-1fae-e310-3b95ac2a4995/mzaf_1126555595574238858.plus.aac.p.m4a"
   },
   {
     "id": 901,
@@ -25202,7 +26892,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7f/de/aa/7fdeaaac-834b-1575-0901-457edbdb00d2/mzaf_8225621756041304030.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7e/49/12/7e4912b1-5411-e0cb-8d2b-a1dff9842da7/1200220222322.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/ONE%20THING%20I%20CAN'T%20LIVE%20WITHOUT%20SVRN",
-    "animeId": 292
+    "animeId": 292,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7f/de/aa/7fdeaaac-834b-1575-0901-457edbdb00d2/mzaf_8225621756041304030.plus.aac.p.m4a"
   },
   {
     "id": 902,
@@ -25221,7 +26912,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/19/d6/60/19d660ff-e3a9-8377-15a3-ce4b28e89cac/mzaf_18422426156481158187.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bc/e6/6fbce6c4-c38c-72d8-4fd0-66cfff32f679/20UMGIM12176.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Blinding%20Lights%20The%20Weeknd",
-    "animeId": 267
+    "animeId": 267,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/19/d6/60/19d660ff-e3a9-8377-15a3-ce4b28e89cac/mzaf_18422426156481158187.plus.aac.p.m4a"
   },
   {
     "id": 903,
@@ -25240,7 +26932,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0e/1d/af/0e1daf97-b476-4466-af9b-e12594b67528/mzaf_9553858399737326748.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5a/42/0d/5a420d26-a339-7aea-d03a-68d87c752d3d/cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%94%E0%B9%89%E0%B9%81%E0%B8%84%E0%B9%88%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%99%E0%B8%A1%E0%B8%B2%E0%B8%AA%E0%B9%88%E0%B8%87%20(The%20Last%20Walk)%20%5Bfeat.%20BLVCKHEART%5D%20GAVIN%3AD",
-    "animeId": 70
+    "animeId": 70,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0e/1d/af/0e1daf97-b476-4466-af9b-e12594b67528/mzaf_9553858399737326748.plus.aac.p.m4a"
   },
   {
     "id": 904,
@@ -25259,7 +26952,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/10/26/fd/1026fd75-15bb-c097-0fc7-e2d4dfb69e93/mzaf_10496844790047044131.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/78/64/52/78645258-d0cb-05c4-eb75-12afdc7e5511/26UMGIM82670.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%99%E0%B8%B2%E0%B8%AC%E0%B8%B4%E0%B8%81%EF%BF%BD%EF%BF%BD%EF%BF%BD%E0%B8%97%E0%B8%A3%E0%B8%B2%E0%B8%A2%20(sign)%20BOWKYLION",
-    "animeId": 176
+    "animeId": 176,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/10/26/fd/1026fd75-15bb-c097-0fc7-e2d4dfb69e93/mzaf_10496844790047044131.plus.aac.p.m4a"
   },
   {
     "id": 905,
@@ -25278,7 +26972,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/27/81/83278188-9775-4d19-b789-7893d772ebbe/mzaf_17151674138567502760.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/80/bc/be/80bcbe8e-bc15-26df-69f2-d38fead61200/888272190533_Cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Every%20Moment%20Of%20You%20D.O.",
-    "animeId": 119
+    "animeId": 119,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/27/81/83278188-9775-4d19-b789-7893d772ebbe/mzaf_17151674138567502760.plus.aac.p.m4a"
   },
   {
     "id": 906,
@@ -25297,7 +26992,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/10/2a/bf/102abf16-638c-c7ec-b694-f8c204225170/mzaf_13776698927589962918.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/86/dd/5a/86dd5ac4-85ce-a768-6755-47f141600f80/0840517268575_Cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A1%E0%B8%B2%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%AA%E0%B8%B1%E0%B8%8D%E0%B8%8D%E0%B8%B2%20TAITOSMITH",
-    "animeId": 276
+    "animeId": 276,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/10/2a/bf/102abf16-638c-c7ec-b694-f8c204225170/mzaf_13776698927589962918.plus.aac.p.m4a"
   },
   {
     "id": 907,
@@ -25316,7 +27012,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a8/87/16/a88716e2-9474-ec4e-06d6-d3a9a3ba96c8/mzaf_6258558385119267725.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/82/89/15/828915ea-d716-61c4-3de7-ef00c1f800fb/5054197853630.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Training%20Season%20Dua%20Lipa",
-    "animeId": 37
+    "animeId": 37,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a8/87/16/a88716e2-9474-ec4e-06d6-d3a9a3ba96c8/mzaf_6258558385119267725.plus.aac.p.m4a"
   },
   {
     "id": 908,
@@ -25335,7 +27032,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e5/a1/00/e5a100b9-8eda-42a9-5dcf-96ec930866b1/mzaf_1784491838834250903.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6e/55/4b/6e554be3-3309-4969-244e-43e5a1814a67/888332880718.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%AB%E0%B8%A7%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%20(Officially)%20%5Bfeat.%20JAOKHUN%5D%20FOURTH",
-    "animeId": 59
+    "animeId": 59,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e5/a1/00/e5a100b9-8eda-42a9-5dcf-96ec930866b1/mzaf_1784491838834250903.plus.aac.p.m4a"
   },
   {
     "id": 909,
@@ -25354,7 +27052,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/4e/88/264e8827-d813-ce85-cd4b-3431a317841e/mzaf_5079607853993950776.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/60/bd/b7/60bdb702-c863-0c5e-21c6-273e44e607d0/26UM1IM19593.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%9F%E0%B8%99%E0%B9%83%E0%B8%84%E0%B8%A3%E0%B8%9B%E0%B8%B0%E0%B8%84%E0%B8%B0%20(Final%20Call)%20PP%20KRIT%20%26%20Girly%20Berry",
-    "animeId": 345
+    "animeId": 345,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/4e/88/264e8827-d813-ce85-cd4b-3431a317841e/mzaf_5079607853993950776.plus.aac.p.m4a"
   },
   {
     "id": 910,
@@ -25373,7 +27072,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/69/91/f3/6991f368-8dd3-c583-33d7-8d8e0a79b103/mzaf_7941384460246325532.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/91/55/19/915519e2-38ea-5202-5c9d-377fe8494ded/888272190397_Cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/SUPERSTAR%20A2O%20%26%20A2O%20SOUL",
-    "animeId": 374
+    "animeId": 374,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/69/91/f3/6991f368-8dd3-c583-33d7-8d8e0a79b103/mzaf_7941384460246325532.plus.aac.p.m4a"
   },
   {
     "id": 911,
@@ -25392,7 +27092,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/79/b8/43/79b84369-15c3-5a5a-fb72-2334b00826e6/mzaf_4381874253449656759.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2f/22/a9/2f22a9a6-5af1-5846-a44e-ba016724ed69/21UM1IM58860.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Out%20of%20Time%20The%20Weeknd",
-    "animeId": 255
+    "animeId": 255,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/79/b8/43/79b84369-15c3-5a5a-fb72-2334b00826e6/mzaf_4381874253449656759.plus.aac.p.m4a"
   },
   {
     "id": 912,
@@ -25411,7 +27112,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/13/08/9a1308eb-4d27-8e89-a19d-b12ade1a3e2c/mzaf_11871633852448725063.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2a/c4/35/2ac43524-1807-dec1-9ae7-a6e609a826e1/888332881838.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%20Lek%20Ratchamet",
-    "animeId": 26
+    "animeId": 26,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/13/08/9a1308eb-4d27-8e89-a19d-b12ade1a3e2c/mzaf_11871633852448725063.plus.aac.p.m4a"
   },
   {
     "id": 913,
@@ -25430,7 +27132,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b2/87/67/b2876745-6506-4e4e-e90e-9c6802749b7d/mzaf_5149942407270761606.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5a/42/0d/5a420d26-a339-7aea-d03a-68d87c752d3d/cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%A1%E0%B8%B2%E0%B8%81%E0%B8%81%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%81%E0%B9%87%E0%B8%9E%E0%B8%AD%20(Jealous)%20GAVIN%3AD",
-    "animeId": 236
+    "animeId": 236,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b2/87/67/b2876745-6506-4e4e-e90e-9c6802749b7d/mzaf_5149942407270761606.plus.aac.p.m4a"
   },
   {
     "id": 914,
@@ -25449,7 +27152,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/af/e0/71afe07f-aae7-c4f0-db02-c05be07591d2/mzaf_5960554915698764959.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e2/61/f8/e261f8c1-73db-9a7a-c89e-1068f19970e0/16UMGIM67863.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/I%20Feel%20It%20Coming%20(feat.%20Daft%20Punk)%20The%20Weeknd",
-    "animeId": 58
+    "animeId": 58,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/af/e0/71afe07f-aae7-c4f0-db02-c05be07591d2/mzaf_5960554915698764959.plus.aac.p.m4a"
   },
   {
     "id": 915,
@@ -25468,7 +27172,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/44/68/37/446837c4-4864-dfeb-df23-81e2ba421a9d/mzaf_9218264281673773734.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8a/02/18/8a021835-9d4e-07e7-5cf4-4eec2d8f76cc/191953585369.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/UNDEAD%20SUNGHANBIN",
-    "animeId": 55
+    "animeId": 55,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/44/68/37/446837c4-4864-dfeb-df23-81e2ba421a9d/mzaf_9218264281673773734.plus.aac.p.m4a"
   },
   {
     "id": 916,
@@ -25487,7 +27192,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9b/94/a1/9b94a1de-cce5-f851-3b56-acd4e7e308cc/mzaf_4836943516681109227.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4c/bf/5f/4cbf5fb1-45a5-d939-db28-8d8313ef800d/26UM1IM02383.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Loverboy%20(feat.%20Ludacris%20%26%20Da%20Brat)%20%5BRemix%5D%20Mariah%20Carey",
-    "animeId": 17
+    "animeId": 17,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9b/94/a1/9b94a1de-cce5-f851-3b56-acd4e7e308cc/mzaf_4836943516681109227.plus.aac.p.m4a"
   },
   {
     "id": 917,
@@ -25506,7 +27212,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/d3/71/66d371b7-ded9-afcd-6f1d-4585d1d7c4e4/mzaf_580222172941075229.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/18/24/3f/18243fd0-4531-dfca-0b32-a5e4046d0c8a/859741332921_cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/I'm%20Falling%20for%20You%20Canruby",
-    "animeId": 346
+    "animeId": 346,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/d3/71/66d371b7-ded9-afcd-6f1d-4585d1d7c4e4/mzaf_580222172941075229.plus.aac.p.m4a"
   },
   {
     "id": 918,
@@ -25525,7 +27232,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/63/fc/89/63fc89a6-4f01-2bd4-d273-0416a563812a/mzaf_1427039531191848331.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c4/21/00/c42100f9-f329-aad4-7535-9055429efc3f/mzi.tbskuyey.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Afterlife%20Avenged%20Sevenfold",
-    "animeId": 144
+    "animeId": 144,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/63/fc/89/63fc89a6-4f01-2bd4-d273-0416a563812a/mzaf_1427039531191848331.plus.aac.p.m4a"
   },
   {
     "id": 919,
@@ -25544,7 +27252,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ef/71/64/ef7164e4-43bd-9e9e-4f86-fcc75cf97be8/mzaf_15178633795940396878.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e1/0a/30/e10a308b-e1b7-f4ad-6ea1-9332841d1dc4/cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%AD%E0%B9%8A%E0%B8%94%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%B2%E0%B8%A7%20(feat.%20YOUNGGU)%20GUNNER",
-    "animeId": 335
+    "animeId": 335,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ef/71/64/ef7164e4-43bd-9e9e-4f86-fcc75cf97be8/mzaf_15178633795940396878.plus.aac.p.m4a"
   },
   {
     "id": 920,
@@ -25563,7 +27272,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7a/a1/d7/7aa1d754-74e9-c65b-32e1-39f27004c459/mzaf_16278336930201220822.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cc/07/9a/cc079ab1-0ed4-8f46-debe-1f42908f1783/26UM1IM17902.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%99%20(Too%20Late)%20PiXXiE",
-    "animeId": 372
+    "animeId": 372,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7a/a1/d7/7aa1d754-74e9-c65b-32e1-39f27004c459/mzaf_16278336930201220822.plus.aac.p.m4a"
   },
   {
     "id": 921,
@@ -25582,7 +27292,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fd/d9/5a/fdd95a82-997c-f324-8216-8e9f1b26c044/mzaf_381087619991890197.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b3/e1/ae/b3e1aeae-d935-b073-5ac4-7d17ca7f95ce/cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Moonlight%20BADI%20Z",
-    "animeId": 284
+    "animeId": 284,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fd/d9/5a/fdd95a82-997c-f324-8216-8e9f1b26c044/mzaf_381087619991890197.plus.aac.p.m4a"
   },
   {
     "id": 922,
@@ -25601,7 +27312,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/65/af/80/65af80c1-f6ba-1fc2-c9c0-7e119f20afda/mzaf_15862813715917904983.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/33/fe/34/33fe34b4-f45e-fc6c-eec2-163f3633e106/196872806434.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Dream%20LISA",
-    "animeId": 275
+    "animeId": 275,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/65/af/80/65af80c1-f6ba-1fc2-c9c0-7e119f20afda/mzaf_15862813715917904983.plus.aac.p.m4a"
   },
   {
     "id": 923,
@@ -25620,7 +27332,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/33/36/86333617-dbb7-79f6-4ad3-b6e511920d77/mzaf_11636240313032146292.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/57/47/5b/57475b13-d205-5d5b-8175-9d5281673111/4896043569002.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Galaxy%20Far%20Far%20Away%20Neo",
-    "animeId": 154
+    "animeId": 154,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/33/36/86333617-dbb7-79f6-4ad3-b6e511920d77/mzaf_11636240313032146292.plus.aac.p.m4a"
   },
   {
     "id": 924,
@@ -25639,7 +27352,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8e/68/bc/8e68bcef-e9ee-6f4e-1cf6-6a144f7d4255/mzaf_5372283877988363674.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f8/70/dc/f870dcfd-a1b4-5e29-1e1e-7764a802d90a/s07.sotroeja.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Bat%20Country%20Avenged%20Sevenfold",
-    "animeId": 78
+    "animeId": 78,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8e/68/bc/8e68bcef-e9ee-6f4e-1cf6-6a144f7d4255/mzaf_5372283877988363674.plus.aac.p.m4a"
   },
   {
     "id": 925,
@@ -25658,7 +27372,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7f/50/03/7f50032e-ded2-9abe-ec9d-4f0d8a5f080a/mzaf_4962111821730513969.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d2/3c/b2/d23cb283-5f3e-7433-bc41-86c7d77c4503/26UM1IM29619.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/expectations%20Olivia%20Rodrigo%20%26%20Chappell%20Roan",
-    "animeId": 103
+    "animeId": 103,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7f/50/03/7f50032e-ded2-9abe-ec9d-4f0d8a5f080a/mzaf_4962111821730513969.plus.aac.p.m4a"
   },
   {
     "id": 926,
@@ -25677,7 +27392,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/10/f7/b0/10f7b0d7-874c-83ee-6ac9-2af89b2e616b/mzaf_15749990930963238356.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/da/34/21/da342137-0489-acd3-35b5-c66e454e63a5/26UMGIM34735.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%82%E0%B8%AD%E0%B9%81%E0%B8%84%E0%B9%88%E0%B8%99%E0%B8%B5%E0%B9%89%20(Forever%20n%20ever)%20PUN",
-    "animeId": 135
+    "animeId": 135,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/10/f7/b0/10f7b0d7-874c-83ee-6ac9-2af89b2e616b/mzaf_15749990930963238356.plus.aac.p.m4a"
   },
   {
     "id": 927,
@@ -25696,7 +27412,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c0/e2/7e/c0e27e45-d9bd-0d01-e977-68726d066fa0/mzaf_1415464860944209003.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2f/22/a9/2f22a9a6-5af1-5846-a44e-ba016724ed69/21UM1IM58860.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Less%20Than%20Zero%20The%20Weeknd",
-    "animeId": 83
+    "animeId": 83,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c0/e2/7e/c0e27e45-d9bd-0d01-e977-68726d066fa0/mzaf_1415464860944209003.plus.aac.p.m4a"
   },
   {
     "id": 928,
@@ -25715,7 +27432,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/d2/66/76d266ce-0c97-84da-13aa-3fe0f9c19150/mzaf_15366532853111745243.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2b/80/30/2b8030e7-032c-1bdc-2ebf-cb9687c391e4/cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%9D%E0%B8%B1%E0%B8%99%20(This%20Far)%20Slapkiss",
-    "animeId": 122
+    "animeId": 122,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/d2/66/76d266ce-0c97-84da-13aa-3fe0f9c19150/mzaf_15366532853111745243.plus.aac.p.m4a"
   },
   {
     "id": 929,
@@ -25734,7 +27452,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b3/bf/d6/b3bfd64d-b4e0-d335-0a13-68857e9fb03e/mzaf_6870541979313627088.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/46/dc/f4/46dcf4eb-b73f-c2cf-fcf4-92af7e60aecb/5034644571225.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/First%20Love%20FirstOne",
-    "animeId": 106
+    "animeId": 106,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b3/bf/d6/b3bfd64d-b4e0-d335-0a13-68857e9fb03e/mzaf_6870541979313627088.plus.aac.p.m4a"
   },
   {
     "id": 930,
@@ -25753,7 +27472,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e8/8a/41/e88a416f-5189-0102-b6c4-2d0a597e4a98/mzaf_7601858378610860594.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fd/ef/02/fdef0213-f877-b78e-3822-e8cc253a56ce/888332881395.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/This%20Is%20Your%20Boy%20PERMPOON",
-    "animeId": 189
+    "animeId": 189,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e8/8a/41/e88a416f-5189-0102-b6c4-2d0a597e4a98/mzaf_7601858378610860594.plus.aac.p.m4a"
   },
   {
     "id": 931,
@@ -25772,7 +27492,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6f/d0/02/6fd00264-e7eb-06b8-45a0-6bcedd3233d1/mzaf_11485556225229211792.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8d/60/cd/8d60cd42-016a-4424-174d-7f8b543dba97/888332989770.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%99%E0%B8%AA%E0%B8%B8%E0%B8%94%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%A2%20Asanee%20%26%20Wasan",
-    "animeId": 189
+    "animeId": 189,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6f/d0/02/6fd00264-e7eb-06b8-45a0-6bcedd3233d1/mzaf_11485556225229211792.plus.aac.p.m4a"
   },
   {
     "id": 932,
@@ -25791,7 +27512,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/58/65/a6/5865a619-be90-6b11-9977-71c784038be0/mzaf_7060474033803842147.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/e7/bd/1ee7bd2e-f822-1aef-a82d-01934cb1ff89/888332881708.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%E0%B8%94%E0%B8%A7%E0%B8%87%20KLEAR",
-    "animeId": 213
+    "animeId": 213,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/58/65/a6/5865a619-be90-6b11-9977-71c784038be0/mzaf_7060474033803842147.plus.aac.p.m4a"
   },
   {
     "id": 933,
@@ -25810,7 +27532,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1d/62/29/1d622990-e5ad-d74b-6439-05c71a589a80/mzaf_13578014174964605373.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/78/af/ea/78afeaaa-7739-05ac-76f6-018fb837dda5/cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/A%20Rocket%20to%20the%20Moon%20GAVIN%3AD",
-    "animeId": 72
+    "animeId": 72,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1d/62/29/1d622990-e5ad-d74b-6439-05c71a589a80/mzaf_13578014174964605373.plus.aac.p.m4a"
   },
   {
     "id": 934,
@@ -25829,7 +27552,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/47/47/9b/47479b61-6003-b5a1-bb07-6b6f6b56cafe/mzaf_5634454733980376540.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c2/2c/d7/c22cd795-2fd1-be17-e4de-efa1ac3f2aaf/0840517244197_Cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%A5%E0%B8%B4%E0%B9%88%E0%B8%99%E0%B8%9D%E0%B8%99%20(When%20It%20Rains)%20TLE%20MATIMUN%20%26%20FirstOne",
-    "animeId": 124
+    "animeId": 124,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/47/47/9b/47479b61-6003-b5a1-bb07-6b6f6b56cafe/mzaf_5634454733980376540.plus.aac.p.m4a"
   },
   {
     "id": 935,
@@ -25848,7 +27572,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8d/1a/94/8d1a94aa-1570-c009-b628-0d6646bfdce8/mzaf_3192107662253632545.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/96/75/f3/9675f355-71c4-72e2-2f7c-d161e1576bf6/0849480072431_Cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%A7%E0%B8%87%20Earth%20Patravee",
-    "animeId": 317
+    "animeId": 317,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8d/1a/94/8d1a94aa-1570-c009-b628-0d6646bfdce8/mzaf_3192107662253632545.plus.aac.p.m4a"
   },
   {
     "id": 936,
@@ -25867,7 +27592,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/eb/e0/afebe0f1-df10-ef1e-e909-956c1027e663/mzaf_15575926717433163140.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4c/f3/e8/4cf3e846-90a3-a703-b73a-433e82f9ffa5/888735957147.png/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/I%20SPY%20NCT%20WISH",
-    "animeId": 286
+    "animeId": 286,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/eb/e0/afebe0f1-df10-ef1e-e909-956c1027e663/mzaf_15575926717433163140.plus.aac.p.m4a"
   },
   {
     "id": 937,
@@ -25886,7 +27612,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/42/a9/ea42a9cb-e0eb-8b86-33f8-5dbb3539b95f/mzaf_8260034990749471675.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d9/ce/e8/d9cee8c5-7228-1c04-476e-0ac04df1f835/23UM1IM50635.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/We%20Will%20Love%20U.%20Four-Mod",
-    "animeId": 179
+    "animeId": 179,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/42/a9/ea42a9cb-e0eb-8b86-33f8-5dbb3539b95f/mzaf_8260034990749471675.plus.aac.p.m4a"
   },
   {
     "id": 938,
@@ -25905,7 +27632,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/2b/61/542b6133-80f7-f30f-4dcf-059490db9d84/mzaf_1539067797902127760.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bc/e6/6fbce6c4-c38c-72d8-4fd0-66cfff32f679/20UMGIM12176.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/After%20Hours%20The%20Weeknd",
-    "animeId": 280
+    "animeId": 280,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/2b/61/542b6133-80f7-f30f-4dcf-059490db9d84/mzaf_1539067797902127760.plus.aac.p.m4a"
   },
   {
     "id": 939,
@@ -25924,7 +27652,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/45/85/6e/45856ef5-815f-debc-f5f0-0395a4f2e0b9/mzaf_8050535093065822332.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c9/0f/f6/c90ff63e-c6bf-def4-893e-8f523887f75b/885288757118.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Love%20Again%20POW",
-    "animeId": 144
+    "animeId": 144,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/45/85/6e/45856ef5-815f-debc-f5f0-0395a4f2e0b9/mzaf_8050535093065822332.plus.aac.p.m4a"
   },
   {
     "id": 940,
@@ -25943,7 +27672,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/80/4f/be/804fbe34-c386-b4f0-e782-21f72239d0d9/mzaf_15041069719491707680.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/84/1e/1b/841e1ba9-120d-491f-4be6-6c943f19d907/mzi.jjswxbfu.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/So%20Far%20Away%20Avenged%20Sevenfold",
-    "animeId": 34
+    "animeId": 34,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/80/4f/be/804fbe34-c386-b4f0-e782-21f72239d0d9/mzaf_15041069719491707680.plus.aac.p.m4a"
   },
   {
     "id": 941,
@@ -25962,7 +27692,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d1/e6/a7/d1e6a783-c41d-f5db-9a66-dc32cf1b0397/mzaf_8578862161573166847.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/a5/39/86/a5398609-ad90-50d3-57ad-0f87a4df5ac4/14UMGIM28138.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Love%20Me%20Harder%20Ariana%20Grande%20%26%20The%20Weeknd",
-    "animeId": 86
+    "animeId": 86,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d1/e6/a7/d1e6a783-c41d-f5db-9a66-dc32cf1b0397/mzaf_8578862161573166847.plus.aac.p.m4a"
   },
   {
     "id": 942,
@@ -25981,7 +27712,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0e/8a/6d/0e8a6dbd-feb2-0e55-149e-72b08d48d950/mzaf_15766175317704968405.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0e/c1/57/0ec1575f-5153-ac4b-d578-c5fa3a90bfe1/5021732511676.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Training%20Season%20(Live%20from%20the%20Royal%20Albert%20Hall)%20Dua%20Lipa",
-    "animeId": 122
+    "animeId": 122,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0e/8a/6d/0e8a6dbd-feb2-0e55-149e-72b08d48d950/mzaf_15766175317704968405.plus.aac.p.m4a"
   },
   {
     "id": 943,
@@ -26000,7 +27732,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f8/79/34/f87934db-10f6-67fa-d81e-a55b3ea00407/mzaf_15168986142630380619.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/43/13/85/43138525-bb5d-092b-0dd0-c20c205631ee/cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%88%E0%B8%B0%E0%B9%84%E0%B8%9B%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%98%E0%B8%AD%20BNK48%20%26%20CGM48",
-    "animeId": 314
+    "animeId": 314,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f8/79/34/f87934db-10f6-67fa-d81e-a55b3ea00407/mzaf_15168986142630380619.plus.aac.p.m4a"
   },
   {
     "id": 944,
@@ -26019,7 +27752,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/93/2b/8e/932b8e55-4d89-456c-cc98-08d600edb288/mzaf_2513728666222235598.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/46/20/cb/4620cb89-d601-98bf-4720-869a384d5f7e/cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Unholy%20Confessions%20Avenged%20Sevenfold",
-    "animeId": 9
+    "animeId": 9,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/93/2b/8e/932b8e55-4d89-456c-cc98-08d600edb288/mzaf_2513728666222235598.plus.aac.p.m4a"
   },
   {
     "id": 945,
@@ -26038,7 +27772,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e2/7e/fe/e27efe98-f2a0-2831-20a0-679018d50279/mzaf_3973855336410046668.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e3/df/d2/e3dfd21c-ecaf-e543-653d-4e49b97d2c12/888332881111.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%87%E0%B8%97%E0%B8%B2%E0%B8%A2%E0%B9%83%E0%B8%95%E0%B9%89%E0%B9%81%E0%B8%AA%E0%B8%87%E0%B8%94%E0%B8%B2%E0%B8%A7%20(feat.%20NuNew)%20Paowalee%20Pornpimon",
-    "animeId": 372
+    "animeId": 372,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e2/7e/fe/e27efe98-f2a0-2831-20a0-679018d50279/mzaf_3973855336410046668.plus.aac.p.m4a"
   },
   {
     "id": 946,
@@ -26057,7 +27792,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/48/41/c2/4841c2f7-fc59-1b03-1453-71717d3bcf8b/mzaf_15509582734864349031.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6a/67/fa/6a67fa67-6337-0843-171e-bf3a23cc6479/888332880770.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%8A%E0%B8%B1%E0%B9%88%E0%B8%A7%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A7%E0%B8%AB%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B8%95%E0%B8%A5%E0%B8%AD%E0%B8%94%E0%B9%84%E0%B8%9B%20Emi%20Thasorn%20%26%20Bonnie%20Pattraphus",
-    "animeId": 228
+    "animeId": 228,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/48/41/c2/4841c2f7-fc59-1b03-1453-71717d3bcf8b/mzaf_15509582734864349031.plus.aac.p.m4a"
   },
   {
     "id": 947,
@@ -26076,7 +27812,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1c/e3/c5/1ce3c55a-1ae0-8fa4-418f-02db435fd558/mzaf_17948679865354598166.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ab/74/e1/ab74e151-3d34-0ada-3944-8505072b0a76/0840517268759.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%96%E0%B9%88%E0%B8%A7%E0%B8%87%20Jumbo1991",
-    "animeId": 390
+    "animeId": 390,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1c/e3/c5/1ce3c55a-1ae0-8fa4-418f-02db435fd558/mzaf_17948679865354598166.plus.aac.p.m4a"
   },
   {
     "id": 948,
@@ -26095,7 +27832,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e1/f1/bf/e1f1bfa9-2d0f-598a-d8c9-44b94cb27db8/mzaf_12336457113324327096.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/bc/7a/0bbc7a76-9441-bc53-21f3-87bf1660c828/8800388636530_Cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/GO%20HARD%20MEOVV",
-    "animeId": 101
+    "animeId": 101,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e1/f1/bf/e1f1bfa9-2d0f-598a-d8c9-44b94cb27db8/mzaf_12336457113324327096.plus.aac.p.m4a"
   },
   {
     "id": 949,
@@ -26114,7 +27852,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8e/6b/ef/8e6befa4-f2ed-9f87-f085-390406502cab/mzaf_16759334619212229378.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/1c/79/b31c795d-f5f0-d0e3-2ab5-8ef0deed4ecf/888272190069_Cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Bloom%20FLARE%20U",
-    "animeId": 259
+    "animeId": 259,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8e/6b/ef/8e6befa4-f2ed-9f87-f085-390406502cab/mzaf_16759334619212229378.plus.aac.p.m4a"
   },
   {
     "id": 950,
@@ -26133,7 +27872,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/7d/05/a77d0566-3ecd-1554-b4a4-92496b01583d/mzaf_11156349365383873731.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/df/92/8b/df928bcb-6091-1313-a0ab-94b6326f6ac3/888332882927.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%A1%E0%B9%89%E0%B8%AD%E0%B8%AB%E0%B8%B8%E0%B8%87%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7%20(feat.%20%E0%B8%9E%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B8%8A%E0%B9%8C%20%E0%B8%A7%E0%B8%A3%E0%B8%81%E0%B8%B2%E0%B8%8D%E0%B8%88%E0%B8%99%E0%B9%8C)%20Joey%20Phuwasit",
-    "animeId": 52
+    "animeId": 52,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/7d/05/a77d0566-3ecd-1554-b4a4-92496b01583d/mzaf_11156349365383873731.plus.aac.p.m4a"
   },
   {
     "id": 951,
@@ -26152,7 +27892,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/17/bc/e9/17bce94e-c59d-dc85-14f3-6244546fdcb3/mzaf_1127024067519407847.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b7/38/00/b73800d6-c29e-cbc0-7654-f4c83e333474/888332881920.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%9B%E0%B8%A5%E0%B8%AD%E0%B8%94%E0%B8%A0%E0%B8%B1%E0%B8%A2%20Yes'sir%20days",
-    "animeId": 222
+    "animeId": 222,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/17/bc/e9/17bce94e-c59d-dc85-14f3-6244546fdcb3/mzaf_1127024067519407847.plus.aac.p.m4a"
   },
   {
     "id": 952,
@@ -26171,7 +27912,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/28/18/b028185b-57fc-e97e-0929-24e2aec6eda6/mzaf_12656883306776802696.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d7/43/55/d743550d-d25b-824f-5741-bc019f816c43/885288481419.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Nightlight%20(feat.%20MILLI)%20Mark%20Tuan",
-    "animeId": 58
+    "animeId": 58,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/28/18/b028185b-57fc-e97e-0929-24e2aec6eda6/mzaf_12656883306776802696.plus.aac.p.m4a"
   },
   {
     "id": 953,
@@ -26190,7 +27932,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d4/48/aa/d448aad0-bc1c-9499-f914-04ed59374a75/mzaf_11775791556167084665.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/40/ac/fc/40acfc41-065e-0f49-d5f1-b01bbca0d6c4/cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B9%84%E0%B8%AB%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%96%E0%B8%B6%E0%B8%87%20(starlost.)%20PURPEECH",
-    "animeId": 94
+    "animeId": 94,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d4/48/aa/d448aad0-bc1c-9499-f914-04ed59374a75/mzaf_11775791556167084665.plus.aac.p.m4a"
   },
   {
     "id": 954,
@@ -26209,7 +27952,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/b4/da/eab4da01-c422-c640-1ac3-97d746c5871c/mzaf_12363686639555987211.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/73/08/1a/73081a96-0f7c-b5f8-2757-5c17fb714323/12UMGIM31899.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Beauty%20and%20a%20Beat%20(feat.%20Nicki%20Minaj)%20Justin%20Bieber",
-    "animeId": 218
+    "animeId": 218,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/b4/da/eab4da01-c422-c640-1ac3-97d746c5871c/mzaf_12363686639555987211.plus.aac.p.m4a"
   },
   {
     "id": 955,
@@ -26228,7 +27972,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/12/fb/c1/12fbc1da-b03c-506a-38ec-319359bbe2ba/mzaf_4242912617805951712.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a5/1f/ff/a51fffd0-8ccf-a9ea-424f-9a7f240c9e3b/888332881227.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Butterflies%20KRIST%20%26%20Pup%20Potato",
-    "animeId": 17
+    "animeId": 17,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/12/fb/c1/12fbc1da-b03c-506a-38ec-319359bbe2ba/mzaf_4242912617805951712.plus.aac.p.m4a"
   },
   {
     "id": 956,
@@ -26247,7 +27992,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/42/96/f4/4296f432-e5d6-0140-69d8-a5b04b3c76ef/mzaf_10931383762807216921.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c7/cc/15/c7cc1534-12d9-d560-e469-b79c12024c76/8800388639999_cover.png/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/GGUN%20PLAVE",
-    "animeId": 9
+    "animeId": 9,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/42/96/f4/4296f432-e5d6-0140-69d8-a5b04b3c76ef/mzaf_10931383762807216921.plus.aac.p.m4a"
   },
   {
     "id": 957,
@@ -26266,7 +28012,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/47/70/f447709d-bbc4-cf7b-c6cc-81ce4baae597/mzaf_13362692329187378715.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/14/43/11/14431117-a504-f6f5-2f8d-0805e77ba809/075679792013.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/At%20My%20Worst%20(feat.%20Kehlani)%20Pink%20Sweat%24",
-    "animeId": 251
+    "animeId": 251,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/47/70/f447709d-bbc4-cf7b-c6cc-81ce4baae597/mzaf_13362692329187378715.plus.aac.p.m4a"
   },
   {
     "id": 958,
@@ -26285,7 +28032,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/77/a3/5f/77a35f7f-b81e-87e0-1d98-9fe987a9da74/mzaf_2294823491095522908.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/49/9b/6e/499b6e2d-648f-1a4e-31b8-fb7f06a8123c/25UMGIM09490.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Take%20Me%20Back%20To%20LA%20The%20Weeknd",
-    "animeId": 127
+    "animeId": 127,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/77/a3/5f/77a35f7f-b81e-87e0-1d98-9fe987a9da74/mzaf_2294823491095522908.plus.aac.p.m4a"
   },
   {
     "id": 959,
@@ -26304,7 +28052,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cc/3f/c0/cc3fc0a3-189b-e573-7a27-ef972a0a052f/mzaf_12618051951401122126.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/74/3b/39/743b390b-9af5-191b-e742-05044f9be215/artwork.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%82%E0%B8%AD%E0%B8%9A%E0%B9%83%E0%B8%88%E0%B8%97%E0%B8%B5%E0%B9%88...%20%E0%B9%80%E0%B8%9E%E0%B8%97%E0%B8%B2%E0%B8%A2%20%E0%B8%9E%E0%B8%A5%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B8%84%E0%B9%88%E0%B8%B2",
-    "animeId": 48
+    "animeId": 48,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cc/3f/c0/cc3fc0a3-189b-e573-7a27-ef972a0a052f/mzaf_12618051951401122126.plus.aac.p.m4a"
   },
   {
     "id": 960,
@@ -26323,7 +28072,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/8a/b0/148ab045-5981-e512-0f1b-0af43aad3aa2/mzaf_17953848829139440971.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c4/21/00/c42100f9-f329-aad4-7535-9055429efc3f/mzi.tbskuyey.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Dear%20God%20Avenged%20Sevenfold",
-    "animeId": 196
+    "animeId": 196,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/8a/b0/148ab045-5981-e512-0f1b-0af43aad3aa2/mzaf_17953848829139440971.plus.aac.p.m4a"
   },
   {
     "id": 961,
@@ -26342,7 +28092,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3d/dd/16/3ddd16b7-badd-4530-9f24-931c6f3503eb/mzaf_692489716756665006.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8c/b7/76/8cb7768c-e4a9-7fbe-5c3b-cdce9359f75d/4896016160618.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E6%88%91%E4%BB%AC%E4%BF%A9%20(RNB%E5%BE%8B%E5%8A%A8%E7%89%88)%20%E6%9E%81%E9%9F%B3%E9%98%81%20%26%20%E8%90%A7%E6%B3%BD",
-    "animeId": 161
+    "animeId": 161,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3d/dd/16/3ddd16b7-badd-4530-9f24-931c6f3503eb/mzaf_692489716756665006.plus.aac.p.m4a"
   },
   {
     "id": 962,
@@ -26361,7 +28112,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9f/92/c3/9f92c34b-29d3-b814-41e1-581dd1038a4c/mzaf_13977056005677750958.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/13/68/c5/1368c531-43b7-50f5-579a-c0383a1912fb/26UM1IM08739.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/CHEST%20VOICE%20BUS",
-    "animeId": 65
+    "animeId": 65,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9f/92/c3/9f92c34b-29d3-b814-41e1-581dd1038a4c/mzaf_13977056005677750958.plus.aac.p.m4a"
   },
   {
     "id": 963,
@@ -26380,7 +28132,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d3/b8/2a/d3b82a70-2254-0e9d-c5f3-482397f30872/mzaf_10509952806283123605.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5c/02/f2/5c02f274-0139-5864-0220-b25f97a92fab/888332883184.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%83%E0%B8%88%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%AD%E0%B9%8B%E0%B8%A2%20(%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%A5%E0%B8%B0%E0%B8%84%E0%B8%A3%20%22%E0%B8%AA%E0%B8%AD%E0%B8%94%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B2%E0%B8%A5%E0%B8%B2%22)%20MABELZ%20PiXXiE",
-    "animeId": 383
+    "animeId": 383,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d3/b8/2a/d3b82a70-2254-0e9d-c5f3-482397f30872/mzaf_10509952806283123605.plus.aac.p.m4a"
   },
   {
     "id": 964,
@@ -26399,7 +28152,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/41/e2/1741e2b3-ac89-1c23-ba1f-5b5de48f58e6/mzaf_11357443247325326525.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c0/9e/4f/c09e4f86-9bdc-063d-5baa-fd4f573040d9/cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%A5%E0%B8%B1%E0%B8%A7%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%88%E0%B8%B0%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B9%83%E0%B8%88%20(Fear)%20PURPEECH",
-    "animeId": 184
+    "animeId": 184,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/41/e2/1741e2b3-ac89-1c23-ba1f-5b5de48f58e6/mzaf_11357443247325326525.plus.aac.p.m4a"
   },
   {
     "id": 965,
@@ -26418,7 +28172,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/df/ff/d9/dfffd906-365a-dd12-ed09-6e459a49c69a/mzaf_872231920401838684.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ed/f2/36/edf236d5-4773-2ad5-94ce-42f1f400b296/ANTCD-A0000020993.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/It's%20not%20a%20bad%20life%20BE%3AFIRST",
-    "animeId": 71
+    "animeId": 71,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/df/ff/d9/dfffd906-365a-dd12-ed09-6e459a49c69a/mzaf_872231920401838684.plus.aac.p.m4a"
   },
   {
     "id": 966,
@@ -26437,7 +28192,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3b/07/af/3b07af44-4da2-a2f8-7161-24d699092dfa/mzaf_4925687564998409389.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4f/1d/04/4f1d04f7-9c39-93f9-56f4-de8aa25d2db1/29378.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Everything%20I%20Need%20ELLEGARDEN",
-    "animeId": 282
+    "animeId": 282,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3b/07/af/3b07af44-4da2-a2f8-7161-24d699092dfa/mzaf_4925687564998409389.plus.aac.p.m4a"
   },
   {
     "id": 967,
@@ -26456,7 +28212,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/39/62/9d/39629dcc-19ec-c194-5280-6fd45a888d3c/mzaf_17349075655288308567.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/52/90/295290eb-1ffc-1990-33e2-c754c6d3f361/4570199893418.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/3XL%20Number_i",
-    "animeId": 102
+    "animeId": 102,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/39/62/9d/39629dcc-19ec-c194-5280-6fd45a888d3c/mzaf_17349075655288308567.plus.aac.p.m4a"
   },
   {
     "id": 968,
@@ -26475,7 +28232,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/0f/28/ea0f28d8-1f6a-e4c5-2047-1c2e3fc14f1c/mzaf_13558941889552139260.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6b/da/d9/6bdad980-a723-2291-d36a-10c56cd30223/26UM1IM15358.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/EGO%20Travis%20Japan",
-    "animeId": 157
+    "animeId": 157,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/0f/28/ea0f28d8-1f6a-e4c5-2047-1c2e3fc14f1c/mzaf_13558941889552139260.plus.aac.p.m4a"
   },
   {
     "id": 969,
@@ -26494,7 +28252,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cd/79/be/cd79be32-f54b-04e6-17b2-325355bccec1/mzaf_8632127513620888782.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fc/db/a6/fcdba60e-6b10-6bbf-a86e-ac96bb806cef/26UM1IM12682.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Raven%20Sky%20Ado",
-    "animeId": 13
+    "animeId": 13,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cd/79/be/cd79be32-f54b-04e6-17b2-325355bccec1/mzaf_8632127513620888782.plus.aac.p.m4a"
   },
   {
     "id": 970,
@@ -26513,7 +28272,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/34/ca/da/34cadad5-c0be-7909-a08a-d0ba07013059/mzaf_661550860744885801.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cc/76/26/cc76262a-dc2e-0746-ed85-070a56d23d40/26UMGIM46377.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/It's%20Me%20ILLIT",
-    "animeId": 294
+    "animeId": 294,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/34/ca/da/34cadad5-c0be-7909-a08a-d0ba07013059/mzaf_661550860744885801.plus.aac.p.m4a"
   },
   {
     "id": 971,
@@ -26532,7 +28292,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e2/cf/9f/e2cf9fff-f89a-b83d-95d6-0d0fbc69279d/mzaf_17741390110945722224.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a4/db/f8/a4dbf830-ec1e-e5af-723a-2ef5e4dac674/4580789774065.png/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Yes!%20%E6%9D%B1%E4%BA%AC%20(feat.%20SUPER%E2%98%85DRAGON%2C%20Sakurashimeji%2C%20ONE%20N'%20ONLY%2C%20BUDDiiS%2C%20ICEx%20%26%20Lienel)%20EBiDAN%20(%E6%81%B5%E6%AF%94%E5%AF%BF%E5%AD%A6%E5%9C%92%E7%94%B7%E5%AD%90%E9%83%A8)%2C%20%E8%B6%85%E7%89%B9%E6%80%A5%2C%20M!LK%20%26%20%E5%8E%9F%E5%9B%A0%E3%81%AF%E8%87%AA%E5%88%86%E3%81%AB%E3%81%82%E3%82%8B%E3%80%82",
-    "animeId": 77
+    "animeId": 77,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e2/cf/9f/e2cf9fff-f89a-b83d-95d6-0d0fbc69279d/mzaf_17741390110945722224.plus.aac.p.m4a"
   },
   {
     "id": 972,
@@ -26551,7 +28312,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f1/da/3e/f1da3e12-d280-1787-3c1b-c1b1823972e7/mzaf_12140783115020634748.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fa/d5/a6/fad5a6d5-60b1-4ba3-3da9-be47bb3b7d68/4550759798070_cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E3%81%82%E3%82%8A%E3%81%B5%E3%82%8C%E3%81%9F%E4%B8%96%E7%95%8C%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB%20(feat.%20Awich%2C%20CHICO%20CARLITO%2C%20ONE%20OK%20ROCK%20%26%20Paledusk)%20YAO",
-    "animeId": 348
+    "animeId": 348,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f1/da/3e/f1da3e12-d280-1787-3c1b-c1b1823972e7/mzaf_12140783115020634748.plus.aac.p.m4a"
   },
   {
     "id": 973,
@@ -26570,7 +28332,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bf/25/a8/bf25a847-1a06-2c77-84d3-c4914b05ca6d/mzaf_10707312544545621497.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/04/02/2d/04022dc2-0a7f-d853-75f7-471e59b5afb2/UZCL-2271_72.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/VIVANT%20%3CMain%20theme%3E%20%E5%8D%83%E4%BD%8F%E6%98%8E",
-    "animeId": 234
+    "animeId": 234,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bf/25/a8/bf25a847-1a06-2c77-84d3-c4914b05ca6d/mzaf_10707312544545621497.plus.aac.p.m4a"
   },
   {
     "id": 974,
@@ -26589,7 +28352,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/44/8f/19448f83-ced3-9a94-43b6-13de28cc2c8d/mzaf_6171244371185627644.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1b/15/4f/1b154f5e-0870-2f74-2b71-4aac3c8716fe/4547366855944.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Period%20iri",
-    "animeId": 42
+    "animeId": 42,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/44/8f/19448f83-ced3-9a94-43b6-13de28cc2c8d/mzaf_6171244371185627644.plus.aac.p.m4a"
   },
   {
     "id": 975,
@@ -26608,7 +28372,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e2/f0/ea/e2f0eaa6-4911-28fd-6468-3de37a053819/mzaf_16801486631126109079.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/99/b9/d3/99b9d3dd-b465-78d5-33d0-a441b43c4228/25UMGIM89662.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Notes'n'Words%20ONE%20OK%20ROCK",
-    "animeId": 246
+    "animeId": 246,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e2/f0/ea/e2f0eaa6-4911-28fd-6468-3de37a053819/mzaf_16801486631126109079.plus.aac.p.m4a"
   },
   {
     "id": 976,
@@ -26627,7 +28392,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bd/c8/35/bdc83546-79b7-a25a-1536-f0b0950fb6e2/mzaf_255096294134719100.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d8/bc/cb/d8bccb1e-16c2-c314-28ce-fe69c9f10434/26UM1IM27215.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/MUJO%20%E5%90%89%E4%BA%95%E5%92%8C%E5%93%89",
-    "animeId": 60
+    "animeId": 60,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bd/c8/35/bdc83546-79b7-a25a-1536-f0b0950fb6e2/mzaf_255096294134719100.plus.aac.p.m4a"
   },
   {
     "id": 977,
@@ -26646,7 +28412,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/0f/4d/860f4d15-9f6a-7675-aac4-b154aa36f460/mzaf_3930328419742329412.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/04/8e/94/048e9483-51e7-46c4-1b33-50d0d87478e5/4547366858808.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E6%84%9BMUST%20BE%20%E6%AB%BB%E5%9D%8246",
-    "animeId": 198
+    "animeId": 198,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/0f/4d/860f4d15-9f6a-7675-aac4-b154aa36f460/mzaf_3930328419742329412.plus.aac.p.m4a"
   },
   {
     "id": 978,
@@ -26665,7 +28432,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a2/a3/b9/a2a3b97f-966f-1220-3671-aeaa2bf95038/mzaf_8962814783714493433.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8e/97/88/8e97883f-a1c7-4ac8-3982-de71a9988f2c/4582109079195.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/IGNITE%20JO1",
-    "animeId": 303
+    "animeId": 303,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a2/a3/b9/a2a3b97f-966f-1220-3671-aeaa2bf95038/mzaf_8962814783714493433.plus.aac.p.m4a"
   },
   {
     "id": 979,
@@ -26684,7 +28452,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/8c/04/9a8c0413-92d0-123b-f981-2e8ceaf47109/mzaf_2163786138777330682.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/20/a5/ab/20a5ab13-7ae3-4e34-aa40-5eb6e9c421c5/ANTCD-A0000021126.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/DEMON'S%20SHOT%20Aiobahn%20%2B81%20%26%20DEMONDICE",
-    "animeId": 90
+    "animeId": 90,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/8c/04/9a8c0413-92d0-123b-f981-2e8ceaf47109/mzaf_2163786138777330682.plus.aac.p.m4a"
   },
   {
     "id": 980,
@@ -26703,7 +28472,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/45/c9/f6/45c9f6cf-8d88-9ebe-dc08-ecfcd29fc1ff/mzaf_13035464495773497616.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cd/ae/c0/cdaec0be-2156-0e9c-2eec-612cc4e3eaab/4550795379042_cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/SEASONS%20(feat.%20ayumi%20hamasaki)%20AK-69",
-    "animeId": 56
+    "animeId": 56,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/45/c9/f6/45c9f6cf-8d88-9ebe-dc08-ecfcd29fc1ff/mzaf_13035464495773497616.plus.aac.p.m4a"
   },
   {
     "id": 981,
@@ -26722,7 +28492,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8e/91/03/8e910332-cce9-67b8-dbd5-14f9b3845a98/mzaf_15988515699966728713.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5a/23/35/5a233580-10ac-9d28-0213-2dd916446f1d/26UM1IM06803.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/So%20Strawberry%20MAZZEL",
-    "animeId": 390
+    "animeId": 390,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8e/91/03/8e910332-cce9-67b8-dbd5-14f9b3845a98/mzaf_15988515699966728713.plus.aac.p.m4a"
   },
   {
     "id": 982,
@@ -26741,7 +28512,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1e/1a/8e/1e1a8e3d-5249-1e67-6a45-1a8520756653/mzaf_16789981099640879663.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/66/89/10/668910f4-2f09-12c7-200a-104eee77cb48/4547366827767.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E7%83%8F%20-%20Raven%20%E7%B1%B3%E6%B4%A5%E7%8E%84%E5%B8%AB",
-    "animeId": 114
+    "animeId": 114,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1e/1a/8e/1e1a8e3d-5249-1e67-6a45-1a8520756653/mzaf_16789981099640879663.plus.aac.p.m4a"
   },
   {
     "id": 983,
@@ -26760,7 +28532,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/52/23/a35223f7-edda-ebaf-4e17-6d6780769a21/mzaf_4970044458396585182.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/31/47/7c/31477ced-6d71-93ce-ac7d-66b69dc13cd2/4547366856347.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Firestarter%20MAN%20WITH%20A%20MISSION",
-    "animeId": 2
+    "animeId": 2,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/52/23/a35223f7-edda-ebaf-4e17-6d6780769a21/mzaf_4970044458396585182.plus.aac.p.m4a"
   },
   {
     "id": 984,
@@ -26779,7 +28552,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/18/b4/b018b427-e910-2d46-ad96-b7e40fd830b8/mzaf_8364305176090011792.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4b/bf/52/4bbf52a7-8cfc-9174-b85d-efc473c6c80a/28688.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/SPIN%20Kroi",
-    "animeId": 279
+    "animeId": 279,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/18/b4/b018b427-e910-2d46-ad96-b7e40fd830b8/mzaf_8364305176090011792.plus.aac.p.m4a"
   },
   {
     "id": 985,
@@ -26798,7 +28572,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d6/fd/5e/d6fd5e28-2c9f-c4eb-e363-c628dec7b87a/mzaf_12301423629181964084.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/06/d2/2a/06d22a18-e316-a33e-0402-da219c5cdae8/26UM1IM20169.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/LIKE%20LIKE%20LIKE%20%E5%85%AB%E6%9C%A8%E5%8B%87%E5%BE%81",
-    "animeId": 17
+    "animeId": 17,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d6/fd/5e/d6fd5e28-2c9f-c4eb-e363-c628dec7b87a/mzaf_12301423629181964084.plus.aac.p.m4a"
   },
   {
     "id": 986,
@@ -26817,7 +28592,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8a/00/80/8a00805d-7588-0c13-3f7d-bd6b8b080d2d/mzaf_14911017563797911177.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d0/de/75/d0de7553-b6e5-1440-107a-d99dbda257c2/4580883423616_art.png/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Grave%20of%20Halo%20%E3%82%A2%E3%82%AD%E3%83%BB%E3%83%AD%E3%83%BC%E3%82%BC%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%AB",
-    "animeId": 400
+    "animeId": 400,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8a/00/80/8a00805d-7588-0c13-3f7d-bd6b8b080d2d/mzaf_14911017563797911177.plus.aac.p.m4a"
   },
   {
     "id": 987,
@@ -26836,7 +28612,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/90/85/cb/9085cb94-33c8-78bc-b8a6-4750232a210d/mzaf_5526054165895597852.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/f9/f1/e0f9f1f3-a088-b28d-6760-a28accabc705/4547366775181.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/IRIS%20OUT%20%E7%B1%B3%E6%B4%A5%E7%8E%84%E5%B8%AB",
-    "animeId": 117
+    "animeId": 117,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/90/85/cb/9085cb94-33c8-78bc-b8a6-4750232a210d/mzaf_5526054165895597852.plus.aac.p.m4a"
   },
   {
     "id": 988,
@@ -26855,7 +28632,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/91/9d/02919d45-e9c3-e60f-ac9b-b45d1173aecd/mzaf_4507834398239403482.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a2/7c/6b/a27c6b19-fd28-8d99-2fae-c324213515d0/4573623373876.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/AIYOU%20Eve",
-    "animeId": 142
+    "animeId": 142,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/91/9d/02919d45-e9c3-e60f-ac9b-b45d1173aecd/mzaf_4507834398239403482.plus.aac.p.m4a"
   },
   {
     "id": 989,
@@ -26874,7 +28652,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fe/bb/a5/febba5d6-e4ec-1329-3839-1ebf42c2d772/mzaf_14166656642604232216.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/75/4f/58/754f582c-d1fd-e35d-c622-f83ee6ed1fae/25UM2IM06914.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Zoo%20%EF%BD%9E%E5%90%9B%E3%81%8C%E3%81%84%E3%82%8B%E3%81%8B%E3%82%89%EF%BD%9E%20(From%20%E3%80%8E%E3%82%BA%E3%83%BC%E3%83%88%E3%83%94%E3%82%A22%E3%80%8F%2F%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88)%20Dream%20Ami",
-    "animeId": 104
+    "animeId": 104,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fe/bb/a5/febba5d6-e4ec-1329-3839-1ebf42c2d772/mzaf_14166656642604232216.plus.aac.p.m4a"
   },
   {
     "id": 990,
@@ -26893,7 +28672,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2c/12/dd/2c12dd4f-e633-d172-a317-fad5833c185d/mzaf_7003659723601078413.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/05/77/28/05772817-1d81-ee8e-8224-a225f74a310b/820200234377.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Five%20%E5%B5%90",
-    "animeId": 206
+    "animeId": 206,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2c/12/dd/2c12dd4f-e633-d172-a317-fad5833c185d/mzaf_7003659723601078413.plus.aac.p.m4a"
   },
   {
     "id": 991,
@@ -26912,7 +28692,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/f7/7b/99f77b0e-a52c-051a-5cf0-36c5fcbe0b6d/mzaf_12899519500165902587.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/35/13/27/3513279b-cfda-d57c-b2ce-18cb99dd1d1f/26UMGIM98181.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Fortress%20Defense%2010-FEET",
-    "animeId": 173
+    "animeId": 173,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/f7/7b/99f77b0e-a52c-051a-5cf0-36c5fcbe0b6d/mzaf_12899519500165902587.plus.aac.p.m4a"
   },
   {
     "id": 992,
@@ -26931,7 +28712,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/41/8f/34418f0f-165e-3ebb-176d-fef7a901edf1/mzaf_13558426490549170409.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/10/40/1e1040ad-de98-2e54-1465-9c5201ba2f65/4547366856354.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Nightmare%20Syndrome%E2%99%A1%20Special%20for%20Princess!",
-    "animeId": 268
+    "animeId": 268,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/41/8f/34418f0f-165e-3ebb-176d-fef7a901edf1/mzaf_13558426490549170409.plus.aac.p.m4a"
   },
   {
     "id": 993,
@@ -26950,7 +28732,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8d/9d/e1/8d9de148-da69-7d45-16a4-17e75b6b8499/mzaf_3622309126687450676.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/06/3f/48063f55-8c24-92e6-2bbe-ffb3a638420b/075679555984.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/new%20trick%20ROS%C3%89",
-    "animeId": 246
+    "animeId": 246,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8d/9d/e1/8d9de148-da69-7d45-16a4-17e75b6b8499/mzaf_3622309126687450676.plus.aac.p.m4a"
   },
   {
     "id": 994,
@@ -26969,7 +28752,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/89/de/6689dea1-a5dc-e55f-48bd-45f370c12c71/mzaf_12999197832781478573.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f3/79/0e/f3790e51-5cb6-4fa7-91f4-8ba8ffad59cb/4540774750863.png/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/AIKATSU!%C3%97%20AIKATSU!%20%EF%BD%9E%E3%81%84%E3%81%A1%E3%81%94%20%26%20%E3%81%82%E3%81%8A%E3%81%84%20%26%20%E8%98%AD%20Ver.%EF%BD%9E%20%E3%82%8F%E3%81%8B%2C%20%E3%81%B5%E3%81%86%E3%82%8A%20%26%20%E3%82%86%E3%81%AA",
-    "animeId": 35
+    "animeId": 35,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/89/de/6689dea1-a5dc-e55f-48bd-45f370c12c71/mzaf_12999197832781478573.plus.aac.p.m4a"
   },
   {
     "id": 995,
@@ -26988,7 +28772,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7a/94/f5/7a94f5e2-9a37-319c-1319-a61bec4b7a5a/mzaf_11101122309477964551.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9b/4d/46/9b4d4680-ab20-2ce4-c89f-be96e38d9d41/4547366800814.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Honto%20sumika",
-    "animeId": 326
+    "animeId": 326,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7a/94/f5/7a94f5e2-9a37-319c-1319-a61bec4b7a5a/mzaf_11101122309477964551.plus.aac.p.m4a"
   },
   {
     "id": 996,
@@ -27007,7 +28792,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5b/59/6a/5b596a80-8ed2-b2c7-3902-439b9c6086e9/mzaf_16485688784469254111.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/75/7c/a4/757ca41d-8888-1e50-5eb7-f5bd5e67c52e/4540774750856.png/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E3%82%A2%E3%82%A4%E3%82%AB%E3%83%84!INVITATION%20%E3%82%8F%E3%81%8B%2C%20%E3%81%B5%E3%81%86%E3%82%8A%2C%20%E3%82%86%E3%81%AA%2C%20%E3%82%8C%E3%81%BF%2C%20%E3%81%88%E3%82%8A%20%26%20%E3%82%8A%E3%81%99%E3%81%93",
-    "animeId": 412
+    "animeId": 412,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5b/59/6a/5b596a80-8ed2-b2c7-3902-439b9c6086e9/mzaf_16485688784469254111.plus.aac.p.m4a"
   },
   {
     "id": 997,
@@ -27026,7 +28812,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e7/cc/64/e7cc64b9-f1bd-454f-1632-60014d0c8083/mzaf_14347820585037570997.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3a/0a/ca/3a0aca57-45c1-7aca-1be1-9755d549ffb9/EPM-10001.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Walking%20with%20you%20Novelbright",
-    "animeId": 381
+    "animeId": 381,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e7/cc/64/e7cc64b9-f1bd-454f-1632-60014d0c8083/mzaf_14347820585037570997.plus.aac.p.m4a"
   },
   {
     "id": 998,
@@ -27045,7 +28832,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7d/2e/b7/7d2eb766-03ac-6897-8f8b-a79392aa0a5b/mzaf_5230869230407404945.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f3/b1/13/f3b11306-f2ad-f33f-67ec-b63147ffd358/PA00229432_0_255513_jacket.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Agitato%20%E5%88%9D%E6%98%9F%E5%AD%A6%E5%9C%92",
-    "animeId": 337
+    "animeId": 337,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7d/2e/b7/7d2eb766-03ac-6897-8f8b-a79392aa0a5b/mzaf_5230869230407404945.plus.aac.p.m4a"
   },
   {
     "id": 999,
@@ -27064,7 +28852,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3a/f6/00/3af60019-4319-4f3c-8183-983c9c4e55d9/mzaf_11855037906783799062.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/e1/ec/d4/e1ecd4b4-4f2f-c49e-fa95-958c6b4cf7ab/22UM1IM16537.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Soranji%20Mrs.%20GREEN%20APPLE",
-    "animeId": 391
+    "animeId": 391,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3a/f6/00/3af60019-4319-4f3c-8183-983c9c4e55d9/mzaf_11855037906783799062.plus.aac.p.m4a"
   },
   {
     "id": 1000,
@@ -27083,7 +28872,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b5/94/11/b59411d9-986a-ba04-f305-935f249a835f/mzaf_6316876655859296881.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/47/f3/49/47f3490b-4395-28ba-e6a9-88c9dd7be8fa/4547366841732.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/GO%20GHOST%20King%20Gnu",
-    "animeId": 238
+    "animeId": 238,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b5/94/11/b59411d9-986a-ba04-f305-935f249a835f/mzaf_6316876655859296881.plus.aac.p.m4a"
   },
   {
     "id": 1001,
@@ -27102,7 +28892,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4d/9f/5f/4d9f5f06-3e20-9ce6-f3e0-fbe4e5fc40a1/mzaf_6745694631041190913.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0c/57/00/0c570009-660c-0faa-c53b-8f06ce2b04ea/25UM2IM10507.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/lulu.%20Mrs.%20GREEN%20APPLE",
-    "animeId": 104
+    "animeId": 104,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4d/9f/5f/4d9f5f06-3e20-9ce6-f3e0-fbe4e5fc40a1/mzaf_6745694631041190913.plus.aac.p.m4a"
   },
   {
     "id": 1002,
@@ -27121,7 +28912,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b2/1b/49/b21b498a-3fbf-9aaa-a25e-c76238cfd418/mzaf_10537927864764173928.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/04/8e/94/048e9483-51e7-46c4-1b33-50d0d87478e5/4547366858808.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/I%E2%80%99m%20the%20law%20%E6%AB%BB%E5%9D%8246",
-    "animeId": 232
+    "animeId": 232,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b2/1b/49/b21b498a-3fbf-9aaa-a25e-c76238cfd418/mzaf_10537927864764173928.plus.aac.p.m4a"
   },
   {
     "id": 1003,
@@ -27140,7 +28932,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/38/e2/0738e2cb-2830-6160-c9e3-24044ba6a8bf/mzaf_10845101867025141529.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d8/86/f4/d886f4ca-7322-5fc9-089c-6657f40d30d3/26UM1IM29306.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E3%83%8A%E3%82%AE%E3%82%A4%E3%83%81%20(%EF%BD%9Eall%20members%202026%EF%BD%9E)%20NMB48",
-    "animeId": 69
+    "animeId": 69,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/38/e2/0738e2cb-2830-6160-c9e3-24044ba6a8bf/mzaf_10845101867025141529.plus.aac.p.m4a"
   },
   {
     "id": 1004,
@@ -27159,7 +28952,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9c/fc/b3/9cfcb377-3b90-d2ff-c9c9-7305d9a0090d/mzaf_8407642499488424263.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/67/03/c9/6703c973-c9da-1bd8-cc81-fe315b951231/4582649065306.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/%E6%99%A9%E9%A4%90%E6%AD%8C%20-%20Bansanka%20tuki.",
-    "animeId": 176
+    "animeId": 176,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9c/fc/b3/9cfcb377-3b90-d2ff-c9c9-7305d9a0090d/mzaf_8407642499488424263.plus.aac.p.m4a"
   },
   {
     "id": 1005,
@@ -27178,7 +28972,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3e/88/d8/3e88d82f-98e6-b072-5be5-dd8dece5f890/mzaf_741413637878726715.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/41/9c/9b/419c9be8-8025-7d48-af84-fd528f7fbaf0/inaba-0238.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/RIZAN%20%E7%A8%B2%E8%91%89%E6%B5%A9%E5%BF%97",
-    "animeId": 258
+    "animeId": 258,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3e/88/d8/3e88d82f-98e6-b072-5be5-dd8dece5f890/mzaf_741413637878726715.plus.aac.p.m4a"
   },
   {
     "id": 1006,
@@ -27197,7 +28992,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/78/eb/50/78eb50a1-7fe5-0d0c-4854-d11ea5402565/mzaf_2293213266022903634.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ef/c0/d4/efc0d4c7-557d-e255-849a-ae1c0c3a6ac2/26UM1IM31398.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Patient%20Zero%20(Piano%20Version)%20Taylor%20Swift",
-    "animeId": 401
+    "animeId": 401,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/78/eb/50/78eb50a1-7fe5-0d0c-4854-d11ea5402565/mzaf_2293213266022903634.plus.aac.p.m4a"
   },
   {
     "id": 1007,
@@ -27216,7 +29012,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/79/6c/e9/796ce961-9c5b-8f48-dd6d-9ee1ff38dc58/mzaf_3288254996312096641.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d5/ad/da/d5adda6b-65f4-755a-05ab-f33a4e0e4cdd/artwork.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/BAD%20TIMES%20Imael%20Angel",
-    "animeId": 101
+    "animeId": 101,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/79/6c/e9/796ce961-9c5b-8f48-dd6d-9ee1ff38dc58/mzaf_3288254996312096641.plus.aac.p.m4a"
   },
   {
     "id": 1008,
@@ -27235,7 +29032,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/27/03/72/27037276-e6fa-d11d-0841-aac6d1b88faf/mzaf_6983783438891540807.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/ce/a2/48cea289-289a-0d95-a67f-e562f804d518/0843930149803.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/If%20I%20Don't%20Leave%20I%E2%80%99m%20Gonna%20Stay%20Carly%20Pearce%20%26%20Riley%20Green",
-    "animeId": 65
+    "animeId": 65,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/27/03/72/27037276-e6fa-d11d-0841-aac6d1b88faf/mzaf_6983783438891540807.plus.aac.p.m4a"
   },
   {
     "id": 1009,
@@ -27254,7 +29052,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cf/fc/38/cffc38e7-ccf6-499a-2a93-eb98de0d936b/mzaf_3294710183099291572.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/08/03/7f/08037f7d-6173-9348-991d-5966f0686539/artwork.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Bad%20Times%20(Extended%20Version)%20Imael%20Angel",
-    "animeId": 186
+    "animeId": 186,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cf/fc/38/cffc38e7-ccf6-499a-2a93-eb98de0d936b/mzaf_3294710183099291572.plus.aac.p.m4a"
   },
   {
     "id": 1010,
@@ -27273,7 +29072,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/17/c2/f417c2be-5557-4835-8a07-3e8f3eb02899/mzaf_14765043756596089844.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/66/d9/ad/66d9ad66-7a21-5de5-bad0-3130997a7057/26UM1IM31399.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Patient%20Zero%20(Acoustic%20Version)%20Taylor%20Swift",
-    "animeId": 328
+    "animeId": 328,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/17/c2/f417c2be-5557-4835-8a07-3e8f3eb02899/mzaf_14765043756596089844.plus.aac.p.m4a"
   },
   {
     "id": 1011,
@@ -27292,7 +29092,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/04/33/f5/0433f5b3-d831-1935-08e2-86e233973e02/mzaf_16615932387163717675.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/bf/ee/c5bfee6e-9cf9-4e02-a3c6-38a69d3e0a9e/5056556187486_cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Flower%20In%20A%20Hurricane%20%5Bfrom%20GTAVI%5D%20Justice%2C%20Tame%20Impala%2C%20SZA%20%26%20King%20Gizzard%20%26%20The%20Lizard%20Wizard",
-    "animeId": 103
+    "animeId": 103,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/04/33/f5/0433f5b3-d831-1935-08e2-86e233973e02/mzaf_16615932387163717675.plus.aac.p.m4a"
   },
   {
     "id": 1012,
@@ -27311,7 +29112,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d8/70/d9/d870d9e0-9689-7f11-1ef5-f03a96e92ac8/mzaf_11610334708035576652.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cd/92/3f/cd923fbb-21e8-3a9f-fa0f-3c2e47ad4ad1/artwork.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/My%20Years%20With%20You%20RUSTIC%20DRIFTER",
-    "animeId": 208
+    "animeId": 208,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d8/70/d9/d870d9e0-9689-7f11-1ef5-f03a96e92ac8/mzaf_11610334708035576652.plus.aac.p.m4a"
   },
   {
     "id": 1013,
@@ -27330,7 +29132,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a6/35/6ca635bf-5556-933f-a2de-cf441db29152/mzaf_7854810682514136041.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/d3/1c/5dd31c9c-1e1c-0bbc-104f-4a42e2bb4c59/075679556424.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Last%20Thing%20You%20Need%20Morgan%20Wallen",
-    "animeId": 54
+    "animeId": 54,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a6/35/6ca635bf-5556-933f-a2de-cf441db29152/mzaf_7854810682514136041.plus.aac.p.m4a"
   },
   {
     "id": 1014,
@@ -27349,7 +29152,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a5/a3/34/a5a3343d-c45b-e68f-c876-89aea90e1ff2/mzaf_1568137949511285806.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/57/2d/51/572d51b6-0451-bca9-3282-c1195785b5fa/701486082329.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/One%20more%20day%20Rocky%20B",
-    "animeId": 101
+    "animeId": 101,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a5/a3/34/a5a3343d-c45b-e68f-c876-89aea90e1ff2/mzaf_1568137949511285806.plus.aac.p.m4a"
   },
   {
     "id": 1015,
@@ -27368,7 +29172,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/88/96/4b/88964ba3-344f-48fa-d2c9-a2ab1421511a/mzaf_3619284133913526200.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/25/fb/18/25fb1804-5862-1936-9d98-d8e7b5513413/24BMR0005677.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Don't%20Mind%20If%20I%20Do%20(feat.%20Ella%20Langley)%20Riley%20Green",
-    "animeId": 167
+    "animeId": 167,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/88/96/4b/88964ba3-344f-48fa-d2c9-a2ab1421511a/mzaf_3619284133913526200.plus.aac.p.m4a"
   },
   {
     "id": 1016,
@@ -27387,7 +29192,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/58/8c/cb/588ccb9a-ab79-4a38-43b5-d4c24ea42859/mzaf_2083607504726567992.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/32/4f/fd/324ffda2-9e51-8f6a-0c2d-c6fd2b41ac55/074643811224.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Thriller%20Michael%20Jackson",
-    "animeId": 395
+    "animeId": 395,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/58/8c/cb/588ccb9a-ab79-4a38-43b5-d4c24ea42859/mzaf_2083607504726567992.plus.aac.p.m4a"
   },
   {
     "id": 1017,
@@ -27406,7 +29212,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/50/44/33504469-4c99-34d8-7007-a8914f797b6e/mzaf_16435298363564041945.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fc/9d/d0/fc9dd019-e8fd-456c-d547-03f44da97434/5064090696357_cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Too%20Slick%20(Remix)%20%5Bfeat.%20Method%20Man%5D%20Pete%20%26%20Bas",
-    "animeId": 254
+    "animeId": 254,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/50/44/33504469-4c99-34d8-7007-a8914f797b6e/mzaf_16435298363564041945.plus.aac.p.m4a"
   },
   {
     "id": 1018,
@@ -27425,7 +29232,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/8e/e7/d48ee7e8-0c76-ca27-7222-aa4d2b048dc2/mzaf_11704984347411785772.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9f/8d/52/9f8d52a0-b6d9-d038-327b-4fe58bedce67/26UMGIM94572.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Been%20By%20Now%20Morgan%20Wallen",
-    "animeId": 15
+    "animeId": 15,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/8e/e7/d48ee7e8-0c76-ca27-7222-aa4d2b048dc2/mzaf_11704984347411785772.plus.aac.p.m4a"
   },
   {
     "id": 1019,
@@ -27444,7 +29252,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/51/44/72/514472ff-965d-5f3e-278a-97325472f878/mzaf_14091192429569533013.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9f/0f/64/9f0f64ae-7d9c-ed4c-254d-f114ad76d454/794558052566.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/TRENCHES%20(feat.%20Switchfoot)%20Anberlin",
-    "animeId": 264
+    "animeId": 264,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/51/44/72/514472ff-965d-5f3e-278a-97325472f878/mzaf_14091192429569533013.plus.aac.p.m4a"
   },
   {
     "id": 1020,
@@ -27463,7 +29272,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/92/07/4c/92074ca4-7f88-7ed7-ae79-9950c7000969/mzaf_6849252024047969715.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/51/42/01/51420110-806a-86c5-7025-5016e5a2bd57/196873750729.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/God%20I'm%20Just%20Grateful%20Elevation%20Worship%20%26%20Chandler%20Moore",
-    "animeId": 395
+    "animeId": 395,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/92/07/4c/92074ca4-7f88-7ed7-ae79-9950c7000969/mzaf_6849252024047969715.plus.aac.p.m4a"
   },
   {
     "id": 1021,
@@ -27482,7 +29292,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/2a/ae/942aae1b-16ec-7de9-4a1a-247e06ab8e5b/mzaf_13001702980669412928.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/05/71/cf/0571cf88-b7fc-b762-d646-8a4b3a598953/artwork.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Mama%2C%20Don't%20Close%20Your%20Eyes%20Bjorn%20Bonebreaker",
-    "animeId": 342
+    "animeId": 342,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/2a/ae/942aae1b-16ec-7de9-4a1a-247e06ab8e5b/mzaf_13001702980669412928.plus.aac.p.m4a"
   },
   {
     "id": 1022,
@@ -27501,7 +29312,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/94/f7/e2/94f7e2cc-b182-cb75-7a31-7e88eee2191e/mzaf_12920756836197900992.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c1/09/7e/c1097e38-0d2e-d389-2be7-0762979bb43a/ticket.easjqfbg.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Jaded%20Koe%20Wetzel%20%26%20Ella%20Langley",
-    "animeId": 217
+    "animeId": 217,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/94/f7/e2/94f7e2cc-b182-cb75-7a31-7e88eee2191e/mzaf_12920756836197900992.plus.aac.p.m4a"
   },
   {
     "id": 1023,
@@ -27520,7 +29332,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/21/ad/f7/21adf7b6-b08c-c70c-299b-ea84d917b9e5/mzaf_15604830368049679307.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/75/d9/dc/75d9dc73-fbe8-ba62-5cb0-adbbdbd8baa8/820233976039.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/You%20Wouldn't%20Know%20Stephen%20Day",
-    "animeId": 227
+    "animeId": 227,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/21/ad/f7/21adf7b6-b08c-c70c-299b-ea84d917b9e5/mzaf_15604830368049679307.plus.aac.p.m4a"
   },
   {
     "id": 1024,
@@ -27539,7 +29352,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d6/56/b8/d656b8e9-28a5-5313-28d3-06282cb7da64/mzaf_8128067240056507632.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/74/60/09/74600943-c67a-5335-4f8c-bad8b3e5d2a8/26BMR0007851.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/My%20Way%20Riley%20Green",
-    "animeId": 140
+    "animeId": 140,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d6/56/b8/d656b8e9-28a5-5313-28d3-06282cb7da64/mzaf_8128067240056507632.plus.aac.p.m4a"
   },
   {
     "id": 1025,
@@ -27558,7 +29372,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/01/da/52/01da5221-fd43-f0ab-14d3-9e0609fb175c/mzaf_14246889338466723842.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f6/70/d7/f670d7c9-7587-8cbf-fed1-9be01f7d3c7b/00076732573723.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/On%20My%20Own%20Patti%20LaBelle%20%26%20Michael%20McDonald",
-    "animeId": 406
+    "animeId": 406,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/01/da/52/01da5221-fd43-f0ab-14d3-9e0609fb175c/mzaf_14246889338466723842.plus.aac.p.m4a"
   },
   {
     "id": 1026,
@@ -27577,7 +29392,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/82/fd/d9/82fdd99a-beae-d37a-cae2-ea3d9c149b61/mzaf_18418741231256215877.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/19/6b/ac/196bac72-8c20-98c9-7fb4-5c66619cc0c3/26UMGIM93067.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Street%20Of%20Dreams%20U2",
-    "animeId": 45
+    "animeId": 45,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/82/fd/d9/82fdd99a-beae-d37a-cae2-ea3d9c149b61/mzaf_18418741231256215877.plus.aac.p.m4a"
   },
   {
     "id": 1027,
@@ -27596,7 +29412,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1a/68/7f/1a687f1d-68fa-2c6d-7f84-3cc6ba56e058/mzaf_14873767130143969472.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/be/24/30/be243026-a149-dc9d-ef3b-d01fef6da03f/075679957535.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/3%20am%20Matchbox%20Twenty",
-    "animeId": 410
+    "animeId": 410,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1a/68/7f/1a687f1d-68fa-2c6d-7f84-3cc6ba56e058/mzaf_14873767130143969472.plus.aac.p.m4a"
   },
   {
     "id": 1028,
@@ -27615,7 +29432,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c3/a5/5a/c3a55a5f-1bf2-c4fe-3922-53f3b4a522b3/mzaf_10566100918819137331.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c0/ac/d3/c0acd3d3-2eea-3d02-e06d-2497bf7b8fc3/075679556769.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Dirty%20Bird%20Helluva%20Boss%2C%20Bryce%20Pinkham%20%26%20Brandon%20Rogers",
-    "animeId": 100
+    "animeId": 100,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c3/a5/5a/c3a55a5f-1bf2-c4fe-3922-53f3b4a522b3/mzaf_10566100918819137331.plus.aac.p.m4a"
   },
   {
     "id": 1029,
@@ -27634,7 +29452,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/19/a4/8619a4b3-be3d-5b3f-a096-0062b5916ba8/mzaf_16392985772859659739.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4e/ed/3a/4eed3a01-4766-f854-19a2-55d325c4df17/artwork.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Jesus%20Is%20Coming%20George%20Paul",
-    "animeId": 331
+    "animeId": 331,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/19/a4/8619a4b3-be3d-5b3f-a096-0062b5916ba8/mzaf_16392985772859659739.plus.aac.p.m4a"
   },
   {
     "id": 1030,
@@ -27653,7 +29472,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/5d/31/715d3169-5fba-a0b7-da24-2aefc83796cf/mzaf_8089500935177582820.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/36/be/b4/36beb41f-c644-55cb-9fbb-bf0622a66653/196873644783.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Dracula%20Tame%20Impala",
-    "animeId": 29
+    "animeId": 29,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/5d/31/715d3169-5fba-a0b7-da24-2aefc83796cf/mzaf_8089500935177582820.plus.aac.p.m4a"
   },
   {
     "id": 1031,
@@ -27672,7 +29492,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ac/1e/45/ac1e4508-6a0c-ded2-c3e0-715df9e27e58/mzaf_1451444538093662860.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/96/4e/2e/964e2e34-975a-f9da-ea23-326fdce09941/07UMGIM07880.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Monster%20Mash%20Bobby%20%22Boris%22%20Pickett%20%26%20The%20Crypt-Kickers",
-    "animeId": 76
+    "animeId": 76,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ac/1e/45/ac1e4508-6a0c-ded2-c3e0-715df9e27e58/mzaf_1451444538093662860.plus.aac.p.m4a"
   },
   {
     "id": 1032,
@@ -27691,7 +29512,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/f8/fc/f9f8fc76-efd6-a84c-58a6-199dca9430af/mzaf_1794227461374329739.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3f/82/90/3f8290ba-b6cd-2028-0fc1-844e25bf0389/196874252284.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/The%20Jesus%20I%20Know%20Now%20Brandon%20Lake%20%26%20Lainey%20Wilson",
-    "animeId": 143
+    "animeId": 143,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/f8/fc/f9f8fc76-efd6-a84c-58a6-199dca9430af/mzaf_1794227461374329739.plus.aac.p.m4a"
   },
   {
     "id": 1033,
@@ -27710,7 +29532,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1d/bf/35/1dbf3531-4434-a183-7552-4d8eba15e756/mzaf_17703032666608891166.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/26/35/03/26350323-d656-4817-49e6-4d658af8363a/196874332917.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/I%20Can't%20Love%20You%20Anymore%20Ella%20Langley%20%26%20Morgan%20Wallen",
-    "animeId": 264
+    "animeId": 264,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1d/bf/35/1dbf3531-4434-a183-7552-4d8eba15e756/mzaf_17703032666608891166.plus.aac.p.m4a"
   },
   {
     "id": 1034,
@@ -27729,7 +29552,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/2f/82/f42f82e5-e164-dd14-4f9a-2767d0215bae/mzaf_2512873933120069750.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/46/78/fb/4678fb84-d19e-f11b-93ff-4dc17660bff8/075679619075.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Ordinary%20Alex%20Warren",
-    "animeId": 72
+    "animeId": 72,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/2f/82/f42f82e5-e164-dd14-4f9a-2767d0215bae/mzaf_2512873933120069750.plus.aac.p.m4a"
   },
   {
     "id": 1035,
@@ -27748,7 +29572,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/f6/be/14f6bec3-f232-2211-042c-743d933c9c02/mzaf_7434264055963505924.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/62/33/40/62334080-6129-4d0c-086b-921cc956cb7a/196872090895.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/you%20look%20like%20you%20love%20me%20Ella%20Langley%20%26%20Riley%20Green",
-    "animeId": 169
+    "animeId": 169,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/f6/be/14f6bec3-f232-2211-042c-743d933c9c02/mzaf_7434264055963505924.plus.aac.p.m4a"
   },
   {
     "id": 1036,
@@ -27767,7 +29592,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1b/ed/e0/1bede00e-5137-7cab-77db-dcde025e6d7a/mzaf_11614365294874107987.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4c/22/ef/4c22efe8-9ad8-35ca-5946-b53bc872cc6a/artwork.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Take%20a%20Little%20Jaxson%20Blue",
-    "animeId": 280
+    "animeId": 280,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1b/ed/e0/1bede00e-5137-7cab-77db-dcde025e6d7a/mzaf_11614365294874107987.plus.aac.p.m4a"
   },
   {
     "id": 1037,
@@ -27786,7 +29612,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4a/56/08/4a560811-a602-6740-ac36-430097a3f196/mzaf_14024246248573843144.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/fd/c5/6cfdc554-120d-c093-2a7a-1dc0b09abfd7/artwork.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/I%20Did%20It%20Tired%20Kara%20Holt",
-    "animeId": 47
+    "animeId": 47,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4a/56/08/4a560811-a602-6740-ac36-430097a3f196/mzaf_14024246248573843144.plus.aac.p.m4a"
   },
   {
     "id": 1038,
@@ -27805,7 +29632,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/39/42/5b/39425b91-27b1-4b37-2f57-6f704fa5d8a6/mzaf_158326623628930700.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a0/dd/fd/a0ddfd72-ee9e-f046-6466-a5dbefc696fa/26UM1IM21436.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Cleveland!%20Taylor%20Swift",
-    "animeId": 240
+    "animeId": 240,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/39/42/5b/39425b91-27b1-4b37-2f57-6f704fa5d8a6/mzaf_158326623628930700.plus.aac.p.m4a"
   },
   {
     "id": 1039,
@@ -27824,7 +29652,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a9/d2/09/a9d209b4-55a5-67e8-2e15-949cb00e716d/mzaf_11935934741751979581.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/96/61/7a/96617ab5-51da-7cfc-97e5-c5a6a893c210/1087654.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Movin'%20To%20The%20Sun%20HUGEL%2C%20Imael%20Angel%20%26%20Ultra%20Nat%C3%A9",
-    "animeId": 112
+    "animeId": 112,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a9/d2/09/a9d209b4-55a5-67e8-2e15-949cb00e716d/mzaf_11935934741751979581.plus.aac.p.m4a"
   },
   {
     "id": 1040,
@@ -27843,7 +29672,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/b3/e0/76b3e0d2-54e7-cf85-5acd-7e80842965b8/mzaf_15197962862081974235.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e2/4b/60/e24b6016-8278-bb18-cf5d-d44bf68371da/00602547223838.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Tennessee%20Whiskey%20Chris%20Stapleton",
-    "animeId": 296
+    "animeId": 296,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/b3/e0/76b3e0d2-54e7-cf85-5acd-7e80842965b8/mzaf_15197962862081974235.plus.aac.p.m4a"
   },
   {
     "id": 1041,
@@ -27862,7 +29692,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1e/17/be/1e17bede-a54d-380e-c84d-19b02e8ba743/mzaf_10915469612348480374.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b8/b0/66/b8b06683-b734-08eb-eac7-788e63db3358/26SYMIM35305.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Waste%20My%20Time%20Marc%20Atlas",
-    "animeId": 302
+    "animeId": 302,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1e/17/be/1e17bede-a54d-380e-c84d-19b02e8ba743/mzaf_10915469612348480374.plus.aac.p.m4a"
   },
   {
     "id": 1042,
@@ -27881,7 +29712,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c8/7c/d4/c87cd4df-1197-1d1d-a07c-c5139d59a58f/mzaf_8671653320488087674.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a1/ba/64/a1ba6484-f462-1b88-ddff-d4c014d5f265/196874018361.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Be%20Her%20Ella%20Langley",
-    "animeId": 157
+    "animeId": 157,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c8/7c/d4/c87cd4df-1197-1d1d-a07c-c5139d59a58f/mzaf_8671653320488087674.plus.aac.p.m4a"
   },
   {
     "id": 1043,
@@ -27900,7 +29732,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/f4/bc/a7f4bcc1-e5d7-b359-992f-2c26204aed21/mzaf_8985768031688914813.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3c/f5/ce/3cf5ce7f-0eb7-ab67-d641-924cb9f96aef/7300349535632_cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/VALHALLA%20CALLING%20Ragal%20Ironbull",
-    "animeId": 142
+    "animeId": 142,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/f4/bc/a7f4bcc1-e5d7-b359-992f-2c26204aed21/mzaf_8985768031688914813.plus.aac.p.m4a"
   },
   {
     "id": 1044,
@@ -27919,7 +29752,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c1/b3/92/c1b392f5-6498-4b20-5adb-ab8c28d2e06b/mzaf_15006075300477439725.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a9/79/dc/a979dc04-be66-92a4-60d5-5ce4dd7414b7/24BMR0005137.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Worst%20Way%20Riley%20Green",
-    "animeId": 46
+    "animeId": 46,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c1/b3/92/c1b392f5-6498-4b20-5adb-ab8c28d2e06b/mzaf_15006075300477439725.plus.aac.p.m4a"
   },
   {
     "id": 1045,
@@ -27938,7 +29772,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/58/f2/54/58f254a3-25aa-0542-bf46-4627c8f2e06b/mzaf_5527018976386911832.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a0/dd/fd/a0ddfd72-ee9e-f046-6466-a5dbefc696fa/26UM1IM21436.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Babylon%20Taylor%20Swift",
-    "animeId": 327
+    "animeId": 327,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/58/f2/54/58f254a3-25aa-0542-bf46-4627c8f2e06b/mzaf_5527018976386911832.plus.aac.p.m4a"
   },
   {
     "id": 1046,
@@ -27957,7 +29792,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1e/88/d5/1e88d560-253f-3fa2-87a0-2f83b9681948/mzaf_11928544907491655022.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a0/dd/fd/a0ddfd72-ee9e-f046-6466-a5dbefc696fa/26UM1IM21436.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Pink%20Clouding%20Taylor%20Swift",
-    "animeId": 223
+    "animeId": 223,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1e/88/d5/1e88d560-253f-3fa2-87a0-2f83b9681948/mzaf_11928544907491655022.plus.aac.p.m4a"
   },
   {
     "id": 1047,
@@ -27976,7 +29812,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/10/25/68/10256857-d091-2376-8535-3745e624cdfb/mzaf_4355177103005991043.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d0/3e/25/d03e255d-e205-0e66-20f6-01e251896c25/14UMGIM27076.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/She%20Will%20Be%20Loved%20Maroon%205",
-    "animeId": 348
+    "animeId": 348,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/10/25/68/10256857-d091-2376-8535-3745e624cdfb/mzaf_4355177103005991043.plus.aac.p.m4a"
   },
   {
     "id": 1048,
@@ -27995,7 +29832,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/8a/fc/538afc1c-b9cd-24ab-b401-2fa8c81abc46/mzaf_3160131754964321707.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2e/94/95/2e9495d7-dfe3-ddc8-87ef-6ef797a60218/850007452056.png/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Enter%20Sandman%20Metallica",
-    "animeId": 168
+    "animeId": 168,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/8a/fc/538afc1c-b9cd-24ab-b401-2fa8c81abc46/mzaf_3160131754964321707.plus.aac.p.m4a"
   },
   {
     "id": 1049,
@@ -28014,7 +29852,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/5b/8c/ce5b8cc7-6aa4-2981-f9d8-4db3c152a57b/mzaf_11226441772870571870.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/26/a7/62/26a762fb-b712-0629-d24f-14a7296e8f9f/artwork.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/God%20Didn%E2%80%99t%20Let%20Me%20Break%20Still%20Heals",
-    "animeId": 395
+    "animeId": 395,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/5b/8c/ce5b8cc7-6aa4-2981-f9d8-4db3c152a57b/mzaf_11226441772870571870.plus.aac.p.m4a"
   },
   {
     "id": 1050,
@@ -28033,7 +29872,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0e/5f/09/0e5f09a2-fca5-8a3f-c25b-223753c335ce/mzaf_1177458365066239026.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/26/25/3b/26253b51-f8be-094a-abbf-8c7348be0bcc/26BMR0008455.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Alabama%20Vs.%20Tennessee%20(feat.%20Peyton%20Manning)%20Riley%20Green",
-    "animeId": 64
+    "animeId": 64,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0e/5f/09/0e5f09a2-fca5-8a3f-c25b-223753c335ce/mzaf_1177458365066239026.plus.aac.p.m4a"
   },
   {
     "id": 1051,
@@ -28052,7 +29892,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/c4/72/d5c472a3-2cea-e2fd-a94a-5a9290667075/mzaf_15343141215451287660.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/b4/0c/98/mzi.vhowcacb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Iris%20The%20Goo%20Goo%20Dolls",
-    "animeId": 179
+    "animeId": 179,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/c4/72/d5c472a3-2cea-e2fd-a94a-5a9290667075/mzaf_15343141215451287660.plus.aac.p.m4a"
   },
   {
     "id": 1052,
@@ -28071,7 +29912,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5b/0e/a0/5b0ea0ab-1105-615c-96b7-cb00d9799fd3/mzaf_4223696966788393692.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/be/24/30/be243026-a149-dc9d-ef3b-d01fef6da03f/075679957535.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Push%20Matchbox%20Twenty",
-    "animeId": 121
+    "animeId": 121,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5b/0e/a0/5b0ea0ab-1105-615c-96b7-cb00d9799fd3/mzaf_4223696966788393692.plus.aac.p.m4a"
   },
   {
     "id": 1053,
@@ -28090,7 +29932,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/83/42/7183429b-c504-9261-f5cb-5f41e3a532bc/mzaf_12589133056404920978.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/37/fa/d1/mzi.ecmonpil.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/9%20to%205%20Dolly%20Parton",
-    "animeId": 222
+    "animeId": 222,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/83/42/7183429b-c504-9261-f5cb-5f41e3a532bc/mzaf_12589133056404920978.plus.aac.p.m4a"
   },
   {
     "id": 1054,
@@ -28109,7 +29952,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a1/c4/4e/a1c44e2d-443a-f580-c5cf-22d43c16b580/mzaf_546894429644437007.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ff/48/54/ff4854c9-0cf3-b3c0-8126-6dacfbe50c82/00077779884551.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Just%20Another%20Day%20Jon%20Secada",
-    "animeId": 16
+    "animeId": 16,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a1/c4/4e/a1c44e2d-443a-f580-c5cf-22d43c16b580/mzaf_546894429644437007.plus.aac.p.m4a"
   },
   {
     "id": 1055,
@@ -28128,7 +29972,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a2/da/20/a2da2086-03e8-7648-18eb-8fc616933112/mzaf_9839735523133651328.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1b/de/5c/1bde5c6a-05ba-c591-ff95-a34194541a7d/196874664483.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/How%20Good%20God%20Is%20Brandon%20Lake",
-    "animeId": 33
+    "animeId": 33,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a2/da/20/a2da2086-03e8-7648-18eb-8fc616933112/mzaf_9839735523133651328.plus.aac.p.m4a"
   },
   {
     "id": 1056,
@@ -28147,7 +29992,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cd/f7/c9/cdf7c910-e4c6-9828-c83a-9e7a215bb70c/mzaf_1496635585165093785.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a1/ba/64/a1ba6484-f462-1b88-ddff-d4c014d5f265/196874018361.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Loving%20Life%20Again%20Ella%20Langley",
-    "animeId": 411
+    "animeId": 411,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cd/f7/c9/cdf7c910-e4c6-9828-c83a-9e7a215bb70c/mzaf_1496635585165093785.plus.aac.p.m4a"
   },
   {
     "id": 1057,
@@ -28166,7 +30012,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/1f/f1/701ff165-58e2-75eb-464b-fec3483f93bd/mzaf_15159076127980316987.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/9a/70/43/9a704362-976d-ec4b-0367-54d368cb0ef8/886445902204.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Ghostbusters%20Ray%20Parker%20Jr.",
-    "animeId": 200
+    "animeId": 200,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/1f/f1/701ff165-58e2-75eb-464b-fec3483f93bd/mzaf_15159076127980316987.plus.aac.p.m4a"
   },
   {
     "id": 1058,
@@ -28185,7 +30032,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dc/bc/8a/dcbc8a3e-4ce1-c00d-cc02-eda2212053c7/mzaf_8347559338388601510.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/32/4f/fd/324ffda2-9e51-8f6a-0c2d-c6fd2b41ac55/074643811224.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Billie%20Jean%20Michael%20Jackson",
-    "animeId": 304
+    "animeId": 304,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dc/bc/8a/dcbc8a3e-4ce1-c00d-cc02-eda2212053c7/mzaf_8347559338388601510.plus.aac.p.m4a"
   },
   {
     "id": 1059,
@@ -28204,7 +30052,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/76/42/737642e6-c478-bed7-f11f-efee96072450/mzaf_5163950318414409594.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/34/35/6c/34356cb4-bd0b-3bac-b118-1a6d7264dc64/26UMGIM69942.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/I%20Knew%20It%2C%20I%20Knew%20You%20(From%20%22Toy%20Story%205%22)%20Taylor%20Swift",
-    "animeId": 249
+    "animeId": 249,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/76/42/737642e6-c478-bed7-f11f-efee96072450/mzaf_5163950318414409594.plus.aac.p.m4a"
   },
   {
     "id": 1060,
@@ -28223,7 +30072,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f2/76/cd/f276cd0b-d440-4190-7caa-afe359b27a7b/mzaf_6396399126209223363.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Features114/v4/fc/c2/f8/fcc2f850-1d81-7440-c0a0-de7fcef1e911/dj.rrgizfic.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Thunderstruck%20AC%2FDC",
-    "animeId": 388
+    "animeId": 388,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f2/76/cd/f276cd0b-d440-4190-7caa-afe359b27a7b/mzaf_6396399126209223363.plus.aac.p.m4a"
   },
   {
     "id": 1061,
@@ -28242,7 +30092,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e3/13/7c/e3137c3b-ce05-ab93-33e6-dfe8de227086/mzaf_15448089015110236396.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5b/73/3a/5b733a6d-4234-abbb-4c82-5282657b5c2d/193436473040.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/The%20JAWN%20Jerri",
-    "animeId": 74
+    "animeId": 74,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e3/13/7c/e3137c3b-ce05-ab93-33e6-dfe8de227086/mzaf_15448089015110236396.plus.aac.p.m4a"
   },
   {
     "id": 1062,
@@ -28261,7 +30112,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a2/e9/c8/a2e9c8fb-e282-9e9d-b5f9-d44fadb07e1e/mzaf_13939222705716798166.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5c/15/9b/5c159b27-95ca-b9a7-84e3-28e795fffd39/dj.kvkrpptq.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Stairway%20to%20Heaven%20Led%20Zeppelin",
-    "animeId": 364
+    "animeId": 364,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a2/e9/c8/a2e9c8fb-e282-9e9d-b5f9-d44fadb07e1e/mzaf_13939222705716798166.plus.aac.p.m4a"
   },
   {
     "id": 1063,
@@ -28280,7 +30132,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/76/5e/43765e97-ad21-c645-51b1-3a8a547263d9/mzaf_10428659719463428925.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/83/28/f0/8328f03c-30eb-b8fe-523a-c5a8aa4c7850/843563106761.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Halloween%20Theme%20John%20Carpenter%2C%20Cody%20Carpenter%20%26%20Daniel%20Davies",
-    "animeId": 308
+    "animeId": 308,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/76/5e/43765e97-ad21-c645-51b1-3a8a547263d9/mzaf_10428659719463428925.plus.aac.p.m4a"
   },
   {
     "id": 1064,
@@ -28299,7 +30152,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4a/9d/a1/4a9da1c4-096f-8f45-4a3b-c883c45ca451/mzaf_3059921854949935161.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e1/15/42/e1154273-8ecd-5702-e6e6-597f28001681/25UMGIM82363.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Golden%20HUNTR%2FX%2C%20EJAE%2C%20AUDREY%20NUNA%2C%20REI%20AMI%20%26%20KPop%20Demon%20Hunters%20Cast",
-    "animeId": 174
+    "animeId": 174,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4a/9d/a1/4a9da1c4-096f-8f45-4a3b-c883c45ca451/mzaf_3059921854949935161.plus.aac.p.m4a"
   },
   {
     "id": 1065,
@@ -28318,7 +30172,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/46/4d/57/464d5705-4743-6bba-4c46-648840fd98fd/mzaf_11249565173953527441.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ad/69/3c/ad693c39-5e30-97ea-1159-61da7170d7c7/artwork.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Radical%20Shunned%20at%20a%20Funeral",
-    "animeId": 227
+    "animeId": 227,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/46/4d/57/464d5705-4743-6bba-4c46-648840fd98fd/mzaf_11249565173953527441.plus.aac.p.m4a"
   },
   {
     "id": 1066,
@@ -28337,7 +30192,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/94/f4/da94f49d-8d7c-5b6b-194c-737ff6e4e945/mzaf_6692330061210041993.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/00/a9/eb/00a9ebdb-af5e-2234-b584-35346f861b3d/26CRGIM56006.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Hey%20There%20Delilah%20(feat.%20L%C3%98L%C3%98)%20Plain%20White%20T's",
-    "animeId": 250
+    "animeId": 250,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/94/f4/da94f49d-8d7c-5b6b-194c-737ff6e4e945/mzaf_6692330061210041993.plus.aac.p.m4a"
   },
   {
     "id": 1067,
@@ -28356,7 +30212,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6b/98/87/6b98879c-5091-bcaa-24c9-07c69252db8c/mzaf_12123656044443906655.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2c/b0/de/2cb0de7b-4559-d885-36f8-271c950cba34/886443562097.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Just%20Give%20Me%20a%20Reason%20(feat.%20Nate%20Ruess)%20P!nk",
-    "animeId": 153
+    "animeId": 153,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6b/98/87/6b98879c-5091-bcaa-24c9-07c69252db8c/mzaf_12123656044443906655.plus.aac.p.m4a"
   },
   {
     "id": 1068,
@@ -28375,7 +30232,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0b/18/85/0b188592-3068-8145-9738-df2b8f2bef1b/mzaf_16641958280343600565.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/68/fe/0b/68fe0bdf-5e89-5fca-1952-7e44e8dddef0/artwork.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/When%20Heaven%20Calls%20Me%20Home%20Home%20Grown%20Country",
-    "animeId": 19
+    "animeId": 19,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0b/18/85/0b188592-3068-8145-9738-df2b8f2bef1b/mzaf_16641958280343600565.plus.aac.p.m4a"
   },
   {
     "id": 1069,
@@ -28394,7 +30252,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0d/a1/c8/0da1c8a9-0d67-2371-e7be-6264c347fc63/mzaf_221260799457447256.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c0/ac/d3/c0acd3d3-2eea-3d02-e06d-2497bf7b8fc3/075679556769.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/I'm%20Sorry!%20(Court-Ordered%20Apology)%20Helluva%20Boss%2C%20ian%20hecox%20%26%20Anthony%20Padilla",
-    "animeId": 8
+    "animeId": 8,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0d/a1/c8/0da1c8a9-0d67-2371-e7be-6264c347fc63/mzaf_221260799457447256.plus.aac.p.m4a"
   },
   {
     "id": 1070,
@@ -28413,7 +30272,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4c/db/e8/4cdbe88c-b737-617d-0c1c-35ba36445750/mzaf_4038354414747356567.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/0f/03/ea/0f03ead1-d1eb-27fd-0734-b257b515692f/13UABIM59278.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Fade%20into%20You%20Mazzy%20Star",
-    "animeId": 268
+    "animeId": 268,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4c/db/e8/4cdbe88c-b737-617d-0c1c-35ba36445750/mzaf_4038354414747356567.plus.aac.p.m4a"
   },
   {
     "id": 1071,
@@ -28432,7 +30292,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/44/e1/b3/44e1b370-4d29-c686-d332-008ac5fe26d7/mzaf_12505497198581622728.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/37/fa/d1/mzi.ecmonpil.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Islands%20In%20the%20Stream%20Dolly%20Parton%20%26%20Kenny%20Rogers",
-    "animeId": 51
+    "animeId": 51,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/44/e1/b3/44e1b370-4d29-c686-d332-008ac5fe26d7/mzaf_12505497198581622728.plus.aac.p.m4a"
   },
   {
     "id": 1072,
@@ -28451,7 +30312,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e7/5c/22/e75c22b4-f44a-b9a8-d401-63197cb75191/mzaf_18113839483971952063.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/aa/2b/c5aa2b28-7860-b387-fec4-4cefd5096150/712132026161_cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Mi%20Chico%20(Jason%20Derulo%20x%20Melody%20Version)%20DJ%20Goja%2C%20Jason%20Derulo%20%26%20Melody",
-    "animeId": 412
+    "animeId": 412,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e7/5c/22/e75c22b4-f44a-b9a8-d401-63197cb75191/mzaf_18113839483971952063.plus.aac.p.m4a"
   },
   {
     "id": 1073,
@@ -28470,7 +30332,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/aa/06/99aa06cf-ee64-7022-bc3c-bacb5d696869/mzaf_12695967465468457006.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d0/cf/22/d0cf226c-607d-d97c-61d4-26eabde51f1d/886443002371_Cover.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Broken%20Window%20Serenade%20Whiskey%20Myers",
-    "animeId": 97
+    "animeId": 97,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/aa/06/99aa06cf-ee64-7022-bc3c-bacb5d696869/mzaf_12695967465468457006.plus.aac.p.m4a"
   },
   {
     "id": 1074,
@@ -28489,7 +30352,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/30/06/1730066d-13fb-6803-0e52-46d4762b94e0/mzaf_8068080726527063383.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/88/16/2c/88162c3d-46db-8321-61f3-3a47404cfe76/075596050920.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Hotel%20California%20Eagles",
-    "animeId": 369
+    "animeId": 369,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/30/06/1730066d-13fb-6803-0e52-46d4762b94e0/mzaf_8068080726527063383.plus.aac.p.m4a"
   },
   {
     "id": 1075,
@@ -28508,7 +30372,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/39/22/fc/3922fc64-45f0-dbbd-bb73-3a7c9c56df89/mzaf_13063874552116068608.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ea/35/a1/ea35a127-b30c-0c76-941a-16db9757bea6/075679958501.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Unwell%20Matchbox%20Twenty",
-    "animeId": 368
+    "animeId": 368,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/39/22/fc/3922fc64-45f0-dbbd-bb73-3a7c9c56df89/mzaf_13063874552116068608.plus.aac.p.m4a"
   },
   {
     "id": 1076,
@@ -28527,7 +30392,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8b/66/e2/8b66e2c2-73bb-1041-3e37-648c54eb0073/mzaf_10721864796995191648.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7e/fb/0b/7efb0b1b-8e34-5bd0-99ee-eafc83b8d5c7/054391217349.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Mr.%20Know%20It%20All%20Teddy%20Swims",
-    "animeId": 316
+    "animeId": 316,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8b/66/e2/8b66e2c2-73bb-1041-3e37-648c54eb0073/mzaf_10721864796995191648.plus.aac.p.m4a"
   },
   {
     "id": 1077,
@@ -28546,7 +30412,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5a/c8/77/5ac877dd-735f-54e2-cd35-1ecf8e58e9f3/mzaf_9636314184134924144.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/de/a0/db/dea0db01-b9a7-173e-ccb2-c07c31f634bb/26UM1IM10359.rgb.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Draw%20You%20Out%20Noah%20Kahan%20%26%20The%20Hunger%20Games",
-    "animeId": 385
+    "animeId": 385,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5a/c8/77/5ac877dd-735f-54e2-cd35-1ecf8e58e9f3/mzaf_9636314184134924144.plus.aac.p.m4a"
   },
   {
     "id": 1078,
@@ -28565,7 +30432,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/42/a1/b5/42a1b5af-4a4c-d71e-3973-21bdf79a081b/mzaf_6895652892767264084.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/46/02/77/460277d5-052b-e4f1-98bf-837b37013caf/196874695463.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Lonely%20Boy%20Emily%20Ann%20Roberts",
-    "animeId": 234
+    "animeId": 234,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/42/a1/b5/42a1b5af-4a4c-d71e-3973-21bdf79a081b/mzaf_6895652892767264084.plus.aac.p.m4a"
   },
   {
     "id": 1079,
@@ -28584,7 +30452,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a1/3a/eb/a13aeb88-1a04-0f07-c062-02f1b18b8392/mzaf_7787513642053136740.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4c/b6/e5/4cb6e5b1-2db0-88c0-f025-b79cad3b8fab/196873832111.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Be%20By%20You%20Luke%20Combs",
-    "animeId": 241
+    "animeId": 241,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a1/3a/eb/a13aeb88-1a04-0f07-c062-02f1b18b8392/mzaf_7787513642053136740.plus.aac.p.m4a"
   },
   {
     "id": 1080,
@@ -28603,7 +30472,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/6b/3c/b16b3c77-ac12-55f6-c9ef-abe3a0548322/mzaf_13143599158828062444.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/24/ab/07/24ab076d-9e33-b2ea-8cf7-5e7308320b00/00602537902187.rgb.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/search/Lost%20Stars",
-    "animeId": 90
+    "animeId": 90,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/6b/3c/b16b3c77-ac12-55f6-c9ef-abe3a0548322/mzaf_13143599158828062444.plus.aac.p.m4a"
   },
   {
     "id": 1081,
@@ -28622,7 +30492,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0a/6a/1f/0a6a1f18-2491-067b-e651-31bfa1709074/mzaf_10380728647006168598.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ef/dc/0d/efdc0d6d-bd07-afa8-2800-f07be51ab971/196833229227.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/search/Baby%20Girl",
-    "animeId": 85
+    "animeId": 85,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0a/6a/1f/0a6a1f18-2491-067b-e651-31bfa1709074/mzaf_10380728647006168598.plus.aac.p.m4a"
   },
   {
     "id": 1082,
@@ -28641,7 +30512,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/71/a6/f071a600-bd66-2949-0b93-63c28bb22c49/mzaf_6879655568928320662.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2a/3f/5d/2a3f5d4f-99a9-ca8d-98f5-6bf98a092cbc/888332929301.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%9B%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B9%84%E0%B8%AB%E0%B8%A7%20%E0%B9%84%E0%B8%9B%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B9%84%E0%B8%AB%E0%B8%A1%20(GO%20ON)",
-    "animeId": 299
+    "animeId": 299,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/71/a6/f071a600-bd66-2949-0b93-63c28bb22c49/mzaf_6879655568928320662.plus.aac.p.m4a"
   },
   {
     "id": 1083,
@@ -28660,7 +30532,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/4d/fd/c7/4dfdc752-4b2c-8e44-fbcc-e416b4869567/mzaf_3200876839899019336.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e1/31/61/e13161f7-6bbb-35ec-a2f2-07eb3b649126/3610158629472.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%95%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%9B%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7",
-    "animeId": 47
+    "animeId": 47,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/4d/fd/c7/4dfdc752-4b2c-8e44-fbcc-e416b4869567/mzaf_3200876839899019336.plus.aac.p.m4a"
   },
   {
     "id": 1084,
@@ -28679,7 +30552,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/56/c9/5f/56c95f45-73fd-e340-be22-89d0ef08f4ed/mzaf_9117645186798178786.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e4/fb/6c/e4fb6c75-8266-67c1-057f-029749c4c6fa/5026854240657.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/search/Airdrop",
-    "animeId": 168
+    "animeId": 168,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/56/c9/5f/56c95f45-73fd-e340-be22-89d0ef08f4ed/mzaf_9117645186798178786.plus.aac.p.m4a"
   },
   {
     "id": 1085,
@@ -28698,7 +30572,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/89/08/78/89087840-b3fa-5e5e-3cd0-496d79b3ccc9/mzaf_9787207031653174658.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/10/66/21/10662121-3841-19f3-a5f4-75d925680b23/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%99%20(Too%20Late)",
-    "animeId": 168
+    "animeId": 168,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/89/08/78/89087840-b3fa-5e5e-3cd0-496d79b3ccc9/mzaf_9787207031653174658.plus.aac.p.m4a"
   },
   {
     "id": 1086,
@@ -28717,7 +30592,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/aa/4e/0a/aa4e0a1f-7767-495a-452c-e1e63e1addab/mzaf_4197044483667610283.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/91/31/df/9131dffd-8c9a-18bd-3d8f-65e9dadc8c1d/196871848824.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/search/Moth%20To%20A%20Flame",
-    "animeId": 299
+    "animeId": 299,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/aa/4e/0a/aa4e0a1f-7767-495a-452c-e1e63e1addab/mzaf_4197044483667610283.plus.aac.p.m4a"
   },
   {
     "id": 1087,
@@ -28736,7 +30612,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/ed/3c/2fed3c9b-225b-f7e9-9f5b-3ccb79c2f9b6/mzaf_3449415005599912430.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c0/fc/d5/c0fcd539-187d-e427-95dc-368cab981124/artwork.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%A7%20%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%87%20%E0%B9%81%E0%B8%94%E0%B8%87%20(Get%20high)",
-    "animeId": 104
+    "animeId": 104,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/ed/3c/2fed3c9b-225b-f7e9-9f5b-3ccb79c2f9b6/mzaf_3449415005599912430.plus.aac.p.m4a"
   },
   {
     "id": 1088,
@@ -28755,7 +30632,8 @@ const SONGS = [
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b2/87/67/b2876745-6506-4e4e-e90e-9c6802749b7d/mzaf_5149942407270761606.plus.aac.p.m4a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5a/42/0d/5a420d26-a339-7aea-d03a-68d87c752d3d/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%A1%E0%B8%B2%E0%B8%81%E0%B8%81%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%81%E0%B9%87%E0%B8%9E%E0%B8%AD%20(Jealous)",
-    "animeId": 75
+    "animeId": 75,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b2/87/67/b2876745-6506-4e4e-e90e-9c6802749b7d/mzaf_5149942407270761606.plus.aac.p.m4a"
   },
   {
     "id": 1089,
@@ -28774,7 +30652,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/cd063b7aca9fac2dae86bfe4cae7cc081c78ad0c",
     "coverUrl": "https://media.kitsu.app/anime/46140/poster_image/medium-09c31317676fc3251c6543b5936780c1.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/36OWvhv70Cu3LGC92N79qs",
-    "animeId": 123
+    "animeId": 123,
+    "previewUrl": "https://p.scdn.co/mp3-preview/cd063b7aca9fac2dae86bfe4cae7cc081c78ad0c"
   },
   {
     "id": 1090,
@@ -28793,7 +30672,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/1e2443ceb985b151b3630067bebea9cdbe286241",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/90/16/489016a7-a11d-b2ac-4457-35154bbe8c6a/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7L3sb4eqF8zfQU8nAekHPm",
-    "animeId": 186
+    "animeId": 186,
+    "previewUrl": "https://p.scdn.co/mp3-preview/1e2443ceb985b151b3630067bebea9cdbe286241"
   },
   {
     "id": 1091,
@@ -28812,7 +30692,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/dc769b3d5fa1379b7146e184324ed7dcbb0b206e",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5a/42/0d/5a420d26-a339-7aea-d03a-68d87c752d3d/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1FhxX1Su9kwKFEqM4qqEJ6",
-    "animeId": 48
+    "animeId": 48,
+    "previewUrl": "https://p.scdn.co/mp3-preview/dc769b3d5fa1379b7146e184324ed7dcbb0b206e"
   },
   {
     "id": 1092,
@@ -28831,7 +30712,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b9e5ee738804630c933f51e5d7b61d88b5aebde0",
     "coverUrl": "https://media.kitsu.app/anime/14027/poster_image/medium-2ccfd6de3c64f3e8340230e7758646a1.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/5F6Zfgz34H4UtJkCcDUlPs",
-    "animeId": 409
+    "animeId": 409,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b9e5ee738804630c933f51e5d7b61d88b5aebde0"
   },
   {
     "id": 1093,
@@ -28850,7 +30732,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/aec94d4e39ea741d6389d1796ac89043dba51b24",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c0/9e/4f/c09e4f86-9bdc-063d-5baa-fd4f573040d9/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4ntIPuXf6DpvrZExXrn5QA",
-    "animeId": 232
+    "animeId": 232,
+    "previewUrl": "https://p.scdn.co/mp3-preview/aec94d4e39ea741d6389d1796ac89043dba51b24"
   },
   {
     "id": 1094,
@@ -28869,7 +30752,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/9c66fd711b4a285d14a956bf40ac0e3298d83315",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/65/ce/a5/65cea5d9-c4bb-a02b-1e84-fdc41f379d1a/803680204122.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0ze2gwpSfT2leQALslUXId",
-    "animeId": 344
+    "animeId": 344,
+    "previewUrl": "https://p.scdn.co/mp3-preview/9c66fd711b4a285d14a956bf40ac0e3298d83315"
   },
   {
     "id": 1095,
@@ -28888,7 +30772,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/e68118342c941686a5f2a6e51b7c829a130da235",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ea/bd/42/eabd4243-63f0-900a-8559-f01d523ed6fa/artwork.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4S0zJwuiJF9ImbGYUbGrNT",
-    "animeId": 345
+    "animeId": 345,
+    "previewUrl": "https://p.scdn.co/mp3-preview/e68118342c941686a5f2a6e51b7c829a130da235"
   },
   {
     "id": 1096,
@@ -28907,7 +30792,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/1e767bbdd135315abfd846afcb1562fbca24e977",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/2d/fc/7d/2dfc7d57-c3e4-909a-8369-b1480ac9ac60/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0jmSojJLnjiQpGGM3HHlYS",
-    "animeId": 295
+    "animeId": 295,
+    "previewUrl": "https://p.scdn.co/mp3-preview/1e767bbdd135315abfd846afcb1562fbca24e977"
   },
   {
     "id": 1097,
@@ -28926,7 +30812,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b1609e355a7e422917723a61ca2d044a898fe494",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/10/13/75/10137570-1383-a197-4c5a-0f6ece5eefcb/888332883054.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7q9cMJ0oDZFZSnqatZNabo",
-    "animeId": 295
+    "animeId": 295,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b1609e355a7e422917723a61ca2d044a898fe494"
   },
   {
     "id": 1098,
@@ -28945,7 +30832,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/548dbac80c34a3d6f28942cbe549ebfccd6f9d9b",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/7359/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2L54tWSpB5yeAYvienaKTT",
-    "animeId": 110
+    "animeId": 110,
+    "previewUrl": "https://p.scdn.co/mp3-preview/548dbac80c34a3d6f28942cbe549ebfccd6f9d9b"
   },
   {
     "id": 1099,
@@ -28964,7 +30852,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/62b5b4c2dbff5dd85271f4b337af97a0f44173c5",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d8/eb/4d/d8eb4d0b-610d-fd86-56d2-e7de71fd7264/888332888240.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/198pPjDG0juHRjechZrWer",
-    "animeId": 226
+    "animeId": 226,
+    "previewUrl": "https://p.scdn.co/mp3-preview/62b5b4c2dbff5dd85271f4b337af97a0f44173c5"
   },
   {
     "id": 1100,
@@ -28983,7 +30872,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/c6fa96bc8bb235b417931776890c3a14166f72cf",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ec/ac/01/ecac0102-78d5-51e0-6be2-bd3495deb655/199329091001.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/45VmbHRJywi2mNaIGvHs44",
-    "animeId": 236
+    "animeId": 236,
+    "previewUrl": "https://p.scdn.co/mp3-preview/c6fa96bc8bb235b417931776890c3a14166f72cf"
   },
   {
     "id": 1101,
@@ -29002,7 +30892,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/94d76fce2f0aba93ce4c6dad855347a5f7f2e580",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/a8/28/6fa82851-7172-19a0-0fdf-a523da31fc9f/888332982016.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6uS1yKSfktHNN7o4AradRV",
-    "animeId": 13
+    "animeId": 13,
+    "previewUrl": "https://p.scdn.co/mp3-preview/94d76fce2f0aba93ce4c6dad855347a5f7f2e580"
   },
   {
     "id": 1102,
@@ -29021,7 +30912,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/552a60410118a450f470a5c77d0f5169c8e90559",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music127/v4/6e/19/d3/6e19d3a9-57a0-1d45-f689-d8319bf46fc9/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1RIcNj56JKuH0WB9AyNARB",
-    "animeId": 2
+    "animeId": 2,
+    "previewUrl": "https://p.scdn.co/mp3-preview/552a60410118a450f470a5c77d0f5169c8e90559"
   },
   {
     "id": 1103,
@@ -29040,7 +30932,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/78cfa23a756995cb67c14c39cb78fe91da4f411c",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/47743/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6vn8nzgxByxZDKLmIKYAkn",
-    "animeId": 384
+    "animeId": 384,
+    "previewUrl": "https://p.scdn.co/mp3-preview/78cfa23a756995cb67c14c39cb78fe91da4f411c"
   },
   {
     "id": 1104,
@@ -29059,7 +30952,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/55dde7e9b2033bce730c879947bec3bd19d7c334",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e5/4e/89/e54e89df-de38-f965-a6a3-59dcf57980ef/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7LSUaVDiEO3W6Fp67yKumm",
-    "animeId": 87
+    "animeId": 87,
+    "previewUrl": "https://p.scdn.co/mp3-preview/55dde7e9b2033bce730c879947bec3bd19d7c334"
   },
   {
     "id": 1105,
@@ -29078,7 +30972,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/40cd236640508d1d94522f08bdd2bf437c0d0b30",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c4/9a/86/c49a86d4-1801-1f66-17c8-697ee0a80a09/00602508246159_Cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1MkgN3lRBf5mXbxY6CWU9s",
-    "animeId": 120
+    "animeId": 120,
+    "previewUrl": "https://p.scdn.co/mp3-preview/40cd236640508d1d94522f08bdd2bf437c0d0b30"
   },
   {
     "id": 1106,
@@ -29097,7 +30992,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d4f3f591ee17a09a39c66bfa32d8273e81a258b3",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/58/0d/ac/580dace1-b5c1-a189-cdf8-e1c9167af526/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/04nwoRnWqFYhFLaRNWuNw5",
-    "animeId": 359
+    "animeId": 359,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d4f3f591ee17a09a39c66bfa32d8273e81a258b3"
   },
   {
     "id": 1107,
@@ -29116,7 +31012,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b74ae57cfb00d828a27920ac7ff93348e20590db",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/b6/0a/6cb60a82-6f8b-4df3-886e-a92f8d6cd352/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/52ijTzD9HujnkPswlVPGrF",
-    "animeId": 354
+    "animeId": 354,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b74ae57cfb00d828a27920ac7ff93348e20590db"
   },
   {
     "id": 1108,
@@ -29135,7 +31032,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/4ffd793ace42e7745fc50dd1f2a433b5bb55a44f",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/50/e9/24/50e924ea-4f36-01cf-56e3-7db0184f1f20/859711351884_cover.tif/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6OtTqu9t1RitlU1RjUfEXe",
-    "animeId": 17
+    "animeId": 17,
+    "previewUrl": "https://p.scdn.co/mp3-preview/4ffd793ace42e7745fc50dd1f2a433b5bb55a44f"
   },
   {
     "id": 1109,
@@ -29154,7 +31052,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d09e6e7e0390571405550db8361442310021feab",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6b/26/27/6b2627ad-9ad3-00ba-db1d-4b557c74d00b/888332889773.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3ZxGBncHdyXG7Mxa7d429r",
-    "animeId": 365
+    "animeId": 365,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d09e6e7e0390571405550db8361442310021feab"
   },
   {
     "id": 1110,
@@ -29173,7 +31072,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b443b75a3242b21c3b98c768c654fb6d0dfbdb4c",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/42551/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5QxNmQBXpLPemzpDvsuiLM",
-    "animeId": 386
+    "animeId": 386,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b443b75a3242b21c3b98c768c654fb6d0dfbdb4c"
   },
   {
     "id": 1111,
@@ -29192,7 +31092,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/15253f10569dc3602e1ddabf2b46d2294a370d76",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/6c/a8/78/6ca878ad-c181-32f4-4cb0-b5367a1b842f/8859028150158.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6FngEZyo8Gg5P4fzckJeX4",
-    "animeId": 68
+    "animeId": 68,
+    "previewUrl": "https://p.scdn.co/mp3-preview/15253f10569dc3602e1ddabf2b46d2294a370d76"
   },
   {
     "id": 1112,
@@ -29211,7 +31112,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/ecafbe9b27518427a826ebe3251a83734940b156",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/43/6c/39/436c39c9-7362-2920-cf00-428d41128c11/888332994071.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0JG4BZohRtuj6AE09xW7AC",
-    "animeId": 158
+    "animeId": 158,
+    "previewUrl": "https://p.scdn.co/mp3-preview/ecafbe9b27518427a826ebe3251a83734940b156"
   },
   {
     "id": 1113,
@@ -29230,7 +31132,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/689f21b74b5772dfb1af7582a56525ca807656af",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f1/2e/05/f12e05db-eabe-85dc-e767-757f425c0097/888332901406.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5MZe9NqyaSvtoaZKCeyGee",
-    "animeId": 221
+    "animeId": 221,
+    "previewUrl": "https://p.scdn.co/mp3-preview/689f21b74b5772dfb1af7582a56525ca807656af"
   },
   {
     "id": 1114,
@@ -29249,7 +31152,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/49532c968b6e16c3639b0790dab3f34d175c048e",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/11110/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5G9QIsPENzaSjyipcQQAqL",
-    "animeId": 59
+    "animeId": 59,
+    "previewUrl": "https://p.scdn.co/mp3-preview/49532c968b6e16c3639b0790dab3f34d175c048e"
   },
   {
     "id": 1115,
@@ -29268,7 +31172,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/95bfb15a5c3e5efebccffa18d49104ca26bda6cd",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/42792/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5XhAqG6dRhLYJb2QF6WhL4",
-    "animeId": 332
+    "animeId": 332,
+    "previewUrl": "https://p.scdn.co/mp3-preview/95bfb15a5c3e5efebccffa18d49104ca26bda6cd"
   },
   {
     "id": 1116,
@@ -29287,7 +31192,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/fc12e89f9a44005e3b1ea63b0ec2845fbe527176",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ab/80/f3/ab80f332-efa1-3a88-5a79-93ac8ff9b096/888332982948.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4KZRjuldIGTS7AQUPbUvbs",
-    "animeId": 276
+    "animeId": 276,
+    "previewUrl": "https://p.scdn.co/mp3-preview/fc12e89f9a44005e3b1ea63b0ec2845fbe527176"
   },
   {
     "id": 1117,
@@ -29306,7 +31212,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/8278e3f61d1c2aa7e7578087a88f85d8b6b4f203",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/97/3d/cc/973dcc2d-ad7d-c6e0-e5b9-1de790b348ad/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2m7as7aD1JAEUSOJCNoeHT",
-    "animeId": 3
+    "animeId": 3,
+    "previewUrl": "https://p.scdn.co/mp3-preview/8278e3f61d1c2aa7e7578087a88f85d8b6b4f203"
   },
   {
     "id": 1118,
@@ -29325,7 +31232,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/bd3a7d9ae0449fb03fbc578ddf2ab9ca6885d2bb",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7c/8a/31/7c8a31a7-e16e-6714-23b7-18bc328e4554/888332972390.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5djtarcayWp2DK6DQ1Z9P6",
-    "animeId": 201
+    "animeId": 201,
+    "previewUrl": "https://p.scdn.co/mp3-preview/bd3a7d9ae0449fb03fbc578ddf2ab9ca6885d2bb"
   },
   {
     "id": 1119,
@@ -29344,7 +31252,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/7ad8a701ca910a982a899f4d43ab4bdff9b89e19",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/19/f0/46/19f0463e-387c-1b67-d60b-b3525fd63cb1/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2LVF7xkMkTD0fiv9Gqownk",
-    "animeId": 114
+    "animeId": 114,
+    "previewUrl": "https://p.scdn.co/mp3-preview/7ad8a701ca910a982a899f4d43ab4bdff9b89e19"
   },
   {
     "id": 1120,
@@ -29363,7 +31272,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/ade925ceabe6d98644211717d2a29d20bfffed89",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/03/09/38/0309385e-ff92-45d1-f676-b30131d08738/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7yjcs9C5m0nRVfc6D2xAJG",
-    "animeId": 5
+    "animeId": 5,
+    "previewUrl": "https://p.scdn.co/mp3-preview/ade925ceabe6d98644211717d2a29d20bfffed89"
   },
   {
     "id": 1121,
@@ -29382,7 +31292,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/f70f445701d607a2caacfa666872098c564ca423",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/0d/67/37/0d673744-de94-55ec-e5d5-06b3277620f9/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/24VfUtHxbkCrscWC00toom",
-    "animeId": 276
+    "animeId": 276,
+    "previewUrl": "https://p.scdn.co/mp3-preview/f70f445701d607a2caacfa666872098c564ca423"
   },
   {
     "id": 1122,
@@ -29401,7 +31312,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/5e6bd2179116f3a623fa50691d6abc7082476ffa",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0e/c8/88/0ec88823-e6f7-3e25-870a-0c50a2f61554/888332896740.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3HlTt5df6OrvtwTvO6iFla",
-    "animeId": 2
+    "animeId": 2,
+    "previewUrl": "https://p.scdn.co/mp3-preview/5e6bd2179116f3a623fa50691d6abc7082476ffa"
   },
   {
     "id": 1123,
@@ -29420,7 +31332,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/9562c07dfa8211a5c4812bf279f3e775c2277145",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/13995/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/24wXz2WuaF02y0mrKNPMsN",
-    "animeId": 268
+    "animeId": 268,
+    "previewUrl": "https://p.scdn.co/mp3-preview/9562c07dfa8211a5c4812bf279f3e775c2277145"
   },
   {
     "id": 1124,
@@ -29439,7 +31352,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b6a5ef61cadfcfaaa618d54334da5f3b5d2b6d49",
     "coverUrl": "https://media.kitsu.app/anime/41277/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1OGSYElgBhsVzc1SPIVOQY",
-    "animeId": 144
+    "animeId": 144,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b6a5ef61cadfcfaaa618d54334da5f3b5d2b6d49"
   },
   {
     "id": 1125,
@@ -29458,7 +31372,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b9e5ee738804630c933f51e5d7b61d88b5aebde0",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/7882/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5F6Zfgz34H4UtJkCcDUlPs",
-    "animeId": 62
+    "animeId": 62,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b9e5ee738804630c933f51e5d7b61d88b5aebde0"
   },
   {
     "id": 1126,
@@ -29477,7 +31392,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/e5bb7776aff44435b938eb084b2eca23e6c7f5ed",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/2a/75/7c/2a757c4d-659e-dd5d-bcce-16800fa6b031/23UM1IM62083.rgb.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7CyPwkp0oE8Ro9Dd5CUDjW",
-    "animeId": 329
+    "animeId": 329,
+    "previewUrl": "https://p.scdn.co/mp3-preview/e5bb7776aff44435b938eb084b2eca23e6c7f5ed"
   },
   {
     "id": 1127,
@@ -29496,7 +31412,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/02687a01e9ec00f4e947f39e910c7e0c6fa83e10",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/94/b5/84/94b58450-a0cd-ab97-2f30-0ed3608b5e24/196922987588_Cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7tI8dRuH2Yc6RuoTjxo4dU",
-    "animeId": 188
+    "animeId": 188,
+    "previewUrl": "https://p.scdn.co/mp3-preview/02687a01e9ec00f4e947f39e910c7e0c6fa83e10"
   },
   {
     "id": 1128,
@@ -29515,7 +31432,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/666747f5dec01283e49cd05e2f557e8f719462c4",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/66/2a/4b/662a4b5e-bc4f-94bf-bc9b-e10fbfedbabc/06PNDIM00970.rgb.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5mcCatVvcUeNQpli4Mpaxl",
-    "animeId": 276
+    "animeId": 276,
+    "previewUrl": "https://p.scdn.co/mp3-preview/666747f5dec01283e49cd05e2f557e8f719462c4"
   },
   {
     "id": 1129,
@@ -29534,7 +31452,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/3c7706f760ed4cab80256cbfe337cb93fe0b1c49",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/37/21/f7/3721f715-89ea-32cc-f3d5-05b7aaeff973/888332908559.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4MEn5CNtwf4VVEfmZVcpTC",
-    "animeId": 258
+    "animeId": 258,
+    "previewUrl": "https://p.scdn.co/mp3-preview/3c7706f760ed4cab80256cbfe337cb93fe0b1c49"
   },
   {
     "id": 1130,
@@ -29553,7 +31472,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/4c37249b9fc2962f5ef829e216314e9caeaee367",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/6169/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2009X8GyWTqyxIdzAEYW6N",
-    "animeId": 12
+    "animeId": 12,
+    "previewUrl": "https://p.scdn.co/mp3-preview/4c37249b9fc2962f5ef829e216314e9caeaee367"
   },
   {
     "id": 1131,
@@ -29572,7 +31492,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/daf5f9aeeab319f4cf5c17682d75c18cc1e2ae93",
     "coverUrl": "https://media.kitsu.app/anime/13017/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7qjZnBKE73H4Oxkopwulqe",
-    "animeId": 176
+    "animeId": 176,
+    "previewUrl": "https://p.scdn.co/mp3-preview/daf5f9aeeab319f4cf5c17682d75c18cc1e2ae93"
   },
   {
     "id": 1132,
@@ -29591,7 +31512,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/c660e524e84990f7687728af3ba09f9e071e585d",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/41724/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4WFgvKVfEhb3IUAFGrutTR",
-    "animeId": 305
+    "animeId": 305,
+    "previewUrl": "https://p.scdn.co/mp3-preview/c660e524e84990f7687728af3ba09f9e071e585d"
   },
   {
     "id": 1133,
@@ -29610,7 +31532,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/964acb3eecee3568fb10baf97d094b34887fb292",
     "coverUrl": "https://media.kitsu.app/anime/46954/poster_image/medium-42b1d7dde1b056e21b1a96c48df5a64c.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/3QGsuHI8jO1Rx4JWLUh9jd",
-    "animeId": 225
+    "animeId": 225,
+    "previewUrl": "https://p.scdn.co/mp3-preview/964acb3eecee3568fb10baf97d094b34887fb292"
   },
   {
     "id": 1134,
@@ -29629,7 +31552,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/04815fdb32f409e135fbdbcaf8ddb70858a8a7f2",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/6437/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2lpygKqzPFtItQ4ss3cgfb",
-    "animeId": 288
+    "animeId": 288,
+    "previewUrl": "https://p.scdn.co/mp3-preview/04815fdb32f409e135fbdbcaf8ddb70858a8a7f2"
   },
   {
     "id": 1135,
@@ -29648,7 +31572,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/08d084852368db5ef64c30ae9281d66a610b0605",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/42068/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/53iuhJlwXhSER5J2IYYv1W",
-    "animeId": 81
+    "animeId": 81,
+    "previewUrl": "https://p.scdn.co/mp3-preview/08d084852368db5ef64c30ae9281d66a610b0605"
   },
   {
     "id": 1136,
@@ -29667,7 +31592,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/20284474537394c92c98e543b21efe174ff2599d",
     "coverUrl": "https://media.kitsu.app/anime/7158/poster_image/medium-dc5b9aa567da90538903f8b0b329d585.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/7ygpwy2qP3NbrxVkHvUhXY",
-    "animeId": 66
+    "animeId": 66,
+    "previewUrl": "https://p.scdn.co/mp3-preview/20284474537394c92c98e543b21efe174ff2599d"
   },
   {
     "id": 1137,
@@ -29686,7 +31612,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/848b1bd5544e82f62f9cfcec65362d0f5369781f",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/11469/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/003vvx7Niy0yvhvHt4a68B",
-    "animeId": 274
+    "animeId": 274,
+    "previewUrl": "https://p.scdn.co/mp3-preview/848b1bd5544e82f62f9cfcec65362d0f5369781f"
   },
   {
     "id": 1138,
@@ -29705,7 +31632,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/7d860804d259f81b4a7bc04900a5410d99995fd4",
     "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/3oTuTpF1F3A7rEC6RKsMRz",
-    "animeId": 241
+    "animeId": 241,
+    "previewUrl": "https://p.scdn.co/mp3-preview/7d860804d259f81b4a7bc04900a5410d99995fd4"
   },
   {
     "id": 1139,
@@ -29724,7 +31652,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/92d7997134bb18b99eb5fdc65926e4ef613f9781",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/3128/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1JSTJqkT5qHq8MDJnJbRE1",
-    "animeId": 83
+    "animeId": 83,
+    "previewUrl": "https://p.scdn.co/mp3-preview/92d7997134bb18b99eb5fdc65926e4ef613f9781"
   },
   {
     "id": 1140,
@@ -29743,7 +31672,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/4acb20a0f0bbca4a57a351dd94674a27b8c7714e",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1d/1b/f9/1d1bf9b1-44c6-9a6c-6ffb-c158488c06ce/26UMGIM39303.rgb.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3fRCAPMMZ8l8P9YKI6OCzD",
-    "animeId": 274
+    "animeId": 274,
+    "previewUrl": "https://p.scdn.co/mp3-preview/4acb20a0f0bbca4a57a351dd94674a27b8c7714e"
   },
   {
     "id": 1141,
@@ -29762,7 +31692,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/8f4f290fa153a0235bd689140a17c89063095f15",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/4a/c9/7f/4ac97f30-465f-c85b-4dfd-d911a8750fa1/886443581159.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1mKXFLRA179hdOWQBwUk9e",
-    "animeId": 80
+    "animeId": 80,
+    "previewUrl": "https://p.scdn.co/mp3-preview/8f4f290fa153a0235bd689140a17c89063095f15"
   },
   {
     "id": 1142,
@@ -29781,7 +31712,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/f3d864283774529a2378100c912bfacb614db751",
     "coverUrl": "https://media.kitsu.app/anime/44012/poster_image/medium-b7adf5b796a614ae3630153229fe4469.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/70LcF31zb1H0PyJoS1Sx1r",
-    "animeId": 224
+    "animeId": 224,
+    "previewUrl": "https://p.scdn.co/mp3-preview/f3d864283774529a2378100c912bfacb614db751"
   },
   {
     "id": 1143,
@@ -29800,7 +31732,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/ac9e92e0be540fba0672949205955fe682862b3b",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/10740/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0JXXNGljqupsJaZsgSbMZV",
-    "animeId": 55
+    "animeId": 55,
+    "previewUrl": "https://p.scdn.co/mp3-preview/ac9e92e0be540fba0672949205955fe682862b3b"
   },
   {
     "id": 1144,
@@ -29819,7 +31752,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/4feadd4524eee165380031ed90bdff09daacb902",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/176/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4IAWZw00ZI9DLKDjesx86u",
-    "animeId": 4
+    "animeId": 4,
+    "previewUrl": "https://p.scdn.co/mp3-preview/4feadd4524eee165380031ed90bdff09daacb902"
   },
   {
     "id": 1145,
@@ -29838,7 +31772,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/07de30bde8363d9ff78b72339245c151f67af451",
     "coverUrl": "https://media.kitsu.app/anime/48312/poster_image/medium-5a3bba84ddb645a765b4714655abf044.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/5XeFesFbtLpXzIVDNQP22n",
-    "animeId": 203
+    "animeId": 203,
+    "previewUrl": "https://p.scdn.co/mp3-preview/07de30bde8363d9ff78b72339245c151f67af451"
   },
   {
     "id": 1146,
@@ -29857,7 +31792,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/3f677086b8a90e1b9affde439d2ba55c77044799",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3d/5e/aa/3d5eaaa3-9a86-c264-5cd5-7fac83f99a59/886446451978.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5Ohxk2dO5COHF1krpoPigN",
-    "animeId": 144
+    "animeId": 144,
+    "previewUrl": "https://p.scdn.co/mp3-preview/3f677086b8a90e1b9affde439d2ba55c77044799"
   },
   {
     "id": 1147,
@@ -29876,7 +31812,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/e0ea7353932017364bdb12dc776e89b360abac42",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/08/e2/21/08e22164-7c0b-1522-818f-e0e74f62dc49/25UMGIM69703.rgb.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6sGIMrtIzQjdzNndVxe397",
-    "animeId": 190
+    "animeId": 190,
+    "previewUrl": "https://p.scdn.co/mp3-preview/e0ea7353932017364bdb12dc776e89b360abac42"
   },
   {
     "id": 1148,
@@ -29895,7 +31832,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/a388632e697278d1c9efc11a05f6fb2c8bc56c03",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/55/ac/80/55ac8010-26ff-2719-6218-e5419e64b127/1200220202775.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1uDn0nbzeGPVw97jp7SvzR",
-    "animeId": 337
+    "animeId": 337,
+    "previewUrl": "https://p.scdn.co/mp3-preview/a388632e697278d1c9efc11a05f6fb2c8bc56c03"
   },
   {
     "id": 1149,
@@ -29914,7 +31852,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/ab7acea907be9cbe03bba9964765aa889f53d238",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/9f/69/929f69f1-9977-3a44-d674-11f70c852d1b/24UMGIM36186.rgb.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3QaPy1KgI7nu9FJEQUgn6h",
-    "animeId": 206
+    "animeId": 206,
+    "previewUrl": "https://p.scdn.co/mp3-preview/ab7acea907be9cbe03bba9964765aa889f53d238"
   },
   {
     "id": 1150,
@@ -29933,7 +31872,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/9f853ffba75ea5bd4cd48b1cf994a47f65fa52c4",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f0/53/d1/f053d15c-e4b0-7577-dc4d-2ab7d192e1b9/25UM1IM42518.rgb.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7gkZNvBHfI30qG7hA0eopT",
-    "animeId": 201
+    "animeId": 201,
+    "previewUrl": "https://p.scdn.co/mp3-preview/9f853ffba75ea5bd4cd48b1cf994a47f65fa52c4"
   },
   {
     "id": 1151,
@@ -29952,7 +31892,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b8108103b0259fa95d6071f5cd9d12a0e6bd8482",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a2/19/a9/a219a918-7b1a-c854-e111-1a2adfb42343/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/56V7nzrqr6Sq1uFym4odwa",
-    "animeId": 297
+    "animeId": 297,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b8108103b0259fa95d6071f5cd9d12a0e6bd8482"
   },
   {
     "id": 1152,
@@ -29971,7 +31912,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/aebd86e7d75964051459c1134f97b8f4cb6f98df",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/74/e6/3b/74e63bb4-d593-f926-85c7-df3ca43fcf3f/886446183473.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1rIKgCH4H52lrvDcz50hS8",
-    "animeId": 223
+    "animeId": 223,
+    "previewUrl": "https://p.scdn.co/mp3-preview/aebd86e7d75964051459c1134f97b8f4cb6f98df"
   },
   {
     "id": 1153,
@@ -29990,7 +31932,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/05f62bc72e65a0b89b5b7544b4fe6efc2f363061",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/32/4f/fd/324ffda2-9e51-8f6a-0c2d-c6fd2b41ac55/074643811224.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3BovdzfaX4jb5KFQwoPfAw",
-    "animeId": 187
+    "animeId": 187,
+    "previewUrl": "https://p.scdn.co/mp3-preview/05f62bc72e65a0b89b5b7544b4fe6efc2f363061"
   },
   {
     "id": 1154,
@@ -30009,7 +31952,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/31078ee4e5d1705665fa46d8b68afc297031f54f",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4c/07/eb/4c07eb8b-5f17-7460-4840-850065aa7113/artwork.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2lTm559tuIvatlT1u0JYG2",
-    "animeId": 329
+    "animeId": 329,
+    "previewUrl": "https://p.scdn.co/mp3-preview/31078ee4e5d1705665fa46d8b68afc297031f54f"
   },
   {
     "id": 1155,
@@ -30028,7 +31972,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/53a6217761f8fdfcff92189cafbbd1cc21fdb813",
     "coverUrl": "https://media.kitsu.app/anime/48312/poster_image/medium-5a3bba84ddb645a765b4714655abf044.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/1IHWl5LamUGEuP4ozKQSXZ",
-    "animeId": 240
+    "animeId": 240,
+    "previewUrl": "https://p.scdn.co/mp3-preview/53a6217761f8fdfcff92189cafbbd1cc21fdb813"
   },
   {
     "id": 1156,
@@ -30047,7 +31992,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/7a3b57ab0ac75e0b0b46072bea45826de80b7e1a",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/90/5e/7e/905e7ed5-a8fa-a8f3-cd06-0028fdf3afaa/199066342442.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5TFD2bmFKGhoCRbX61nXY5",
-    "animeId": 125
+    "animeId": 125,
+    "previewUrl": "https://p.scdn.co/mp3-preview/7a3b57ab0ac75e0b0b46072bea45826de80b7e1a"
   },
   {
     "id": 1157,
@@ -30066,7 +32012,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/08df96b9536f855e703d8503770a348387b65025",
     "coverUrl": "https://media.kitsu.app/anime/46300/poster_image/medium-c1c025bbee42bed048e628b1eae278c0.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/5nEdwtSv0qqeE0l4o1lR4q",
-    "animeId": 232
+    "animeId": 232,
+    "previewUrl": "https://p.scdn.co/mp3-preview/08df96b9536f855e703d8503770a348387b65025"
   },
   {
     "id": 1158,
@@ -30085,7 +32032,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/273838848cd631b92cce79f1e22d154860a5975b",
     "coverUrl": "https://media.kitsu.app/anime/48312/poster_image/medium-5a3bba84ddb645a765b4714655abf044.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/6J5kc12BW5HuP3d7C3vvx8",
-    "animeId": 404
+    "animeId": 404,
+    "previewUrl": "https://p.scdn.co/mp3-preview/273838848cd631b92cce79f1e22d154860a5975b"
   },
   {
     "id": 1159,
@@ -30104,7 +32052,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/f731c1c9ad9342d29a15fb571b5078457ea0ed4f",
     "coverUrl": "https://anifume.com/images/48/Horimiya-Piece.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1xOqGUkyxGQRdCvGpvWKmL",
-    "animeId": 153
+    "animeId": 153,
+    "previewUrl": "https://p.scdn.co/mp3-preview/f731c1c9ad9342d29a15fb571b5078457ea0ed4f"
   },
   {
     "id": 1160,
@@ -30123,7 +32072,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/2e6e2753fa6ff7e93b3f975b1585de80f1148f03",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/48366/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5BKKy9fIJL5uM9fz1SnqyP",
-    "animeId": 331
+    "animeId": 331,
+    "previewUrl": "https://p.scdn.co/mp3-preview/2e6e2753fa6ff7e93b3f975b1585de80f1148f03"
   },
   {
     "id": 1161,
@@ -30142,7 +32092,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/5c5c401b6ca3b301e70897576dcf50272295560f",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/12/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4ek0oGBCJal4Gxz8zEnMjn",
-    "animeId": 402
+    "animeId": 402,
+    "previewUrl": "https://p.scdn.co/mp3-preview/5c5c401b6ca3b301e70897576dcf50272295560f"
   },
   {
     "id": 1162,
@@ -30161,7 +32112,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/631b9cec18551169382ef4be4f01e40bc5523441",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/11606/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5yvVYFDUpbnjcnRBgjwTzM",
-    "animeId": 276
+    "animeId": 276,
+    "previewUrl": "https://p.scdn.co/mp3-preview/631b9cec18551169382ef4be4f01e40bc5523441"
   },
   {
     "id": 1163,
@@ -30180,7 +32132,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/93046e987d8c5bfdbeea2768ac1a8ecea17bd7e0",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/47625/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0KKkJNfGyhkQ5aFogxQAPU",
-    "animeId": 350
+    "animeId": 350,
+    "previewUrl": "https://p.scdn.co/mp3-preview/93046e987d8c5bfdbeea2768ac1a8ecea17bd7e0"
   },
   {
     "id": 1164,
@@ -30199,7 +32152,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/a4069cd6bf3c81860e7e532efa344df07707e040",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/42438/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3C0nOe05EIt1390bVABLyN",
-    "animeId": 298
+    "animeId": 298,
+    "previewUrl": "https://p.scdn.co/mp3-preview/a4069cd6bf3c81860e7e532efa344df07707e040"
   },
   {
     "id": 1165,
@@ -30218,7 +32172,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/a90ca82468d0612991195e07a87c628d86b3a932",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/41446/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0myRViRgmQ3J8izICXEAVO",
-    "animeId": 382
+    "animeId": 382,
+    "previewUrl": "https://p.scdn.co/mp3-preview/a90ca82468d0612991195e07a87c628d86b3a932"
   },
   {
     "id": 1166,
@@ -30237,7 +32192,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d318a788a3a6a1ecb8cd0f1c924cef18832ff8d2",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/149/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0COqiPhxzoWICwFCS4eZcp",
-    "animeId": 344
+    "animeId": 344,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d318a788a3a6a1ecb8cd0f1c924cef18832ff8d2"
   },
   {
     "id": 1167,
@@ -30256,7 +32212,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/6688701f422f0aa9747b387d3db26381337798bc",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/148/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6fl4Gu0lJm5hc8FM5JzCZD",
-    "animeId": 75
+    "animeId": 75,
+    "previewUrl": "https://p.scdn.co/mp3-preview/6688701f422f0aa9747b387d3db26381337798bc"
   },
   {
     "id": 1168,
@@ -30275,7 +32232,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/6732c1a991a5b86cb440bd31d837709cc43e4d7b",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/41724/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4xoY4lZNoTjEuHsSmhgF1G",
-    "animeId": 305
+    "animeId": 305,
+    "previewUrl": "https://p.scdn.co/mp3-preview/6732c1a991a5b86cb440bd31d837709cc43e4d7b"
   },
   {
     "id": 1169,
@@ -30294,7 +32252,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d86751b48a612271609b69f011dde00d003010b0",
     "coverUrl": "https://media.kitsu.app/anime/47454/poster_image/medium-647eca310356254a1840a496f41ea57c.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/1j15Ar0qGDzIR0v3CQv3JL",
-    "animeId": 208
+    "animeId": 208,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d86751b48a612271609b69f011dde00d003010b0"
   },
   {
     "id": 1170,
@@ -30313,7 +32272,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/6f57db4d7d782298f0d2de9097a45f4671cb2fd6",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/1799/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6epn3r7S14KUqlReYr77hA",
-    "animeId": 318
+    "animeId": 318,
+    "previewUrl": "https://p.scdn.co/mp3-preview/6f57db4d7d782298f0d2de9097a45f4671cb2fd6"
   },
   {
     "id": 1171,
@@ -30332,7 +32292,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/363e18f745939a46e00a67355fbd7ee1364a2fd6",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/41312/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4KmkJjHTNlr1jFY56Lyz4E",
-    "animeId": 76
+    "animeId": 76,
+    "previewUrl": "https://p.scdn.co/mp3-preview/363e18f745939a46e00a67355fbd7ee1364a2fd6"
   },
   {
     "id": 1172,
@@ -30351,7 +32312,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/42b143f2fd5aca293b037a6586fda816f3f30778",
     "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4kX7xkopoXZCfE1D6fNwl2",
-    "animeId": 252
+    "animeId": 252,
+    "previewUrl": "https://p.scdn.co/mp3-preview/42b143f2fd5aca293b037a6586fda816f3f30778"
   },
   {
     "id": 1173,
@@ -30370,7 +32332,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b5126c67a4973b633b4a95c3359206fa9122bc92",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/1990/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3nqqDo8CcCLke3ZoTgiOKf",
-    "animeId": 333
+    "animeId": 333,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b5126c67a4973b633b4a95c3359206fa9122bc92"
   },
   {
     "id": 1174,
@@ -30389,7 +32352,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/7339548839a263fd721d01eb3364a848cad16fa7",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/419/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7qiZfU4dY1lWllzX7mPBI3",
-    "animeId": 294
+    "animeId": 294,
+    "previewUrl": "https://p.scdn.co/mp3-preview/7339548839a263fd721d01eb3364a848cad16fa7"
   },
   {
     "id": 1175,
@@ -30408,7 +32372,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b13a1bb2d8a04132982a49b6efee933cc9d67c7e",
     "coverUrl": "https://media.kitsu.app/anime/48534/poster_image/medium-c38c15266ae228974e8c2a00d776ea92.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/0d28khcov6AiegSCpG5TuT",
-    "animeId": 246
+    "animeId": 246,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b13a1bb2d8a04132982a49b6efee933cc9d67c7e"
   },
   {
     "id": 1176,
@@ -30427,7 +32392,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/4cfc5831a30fb9f86107637914818fcf844ddbf5",
     "coverUrl": "https://anifume.com/images/54/Tokidoki-Bosotto-Russia-go.jpg",
     "spotifyUrl": "https://open.spotify.com/track/46eu3SBuFCXWsPT39Yg3tJ",
-    "animeId": 356
+    "animeId": 356,
+    "previewUrl": "https://p.scdn.co/mp3-preview/4cfc5831a30fb9f86107637914818fcf844ddbf5"
   },
   {
     "id": 1177,
@@ -30446,7 +32412,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/561e75e2fa3fa0eb661559c424ac56cc688d1823",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/244/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2uXlHCUbq9OMUwx3hrk06o",
-    "animeId": 35
+    "animeId": 35,
+    "previewUrl": "https://p.scdn.co/mp3-preview/561e75e2fa3fa0eb661559c424ac56cc688d1823"
   },
   {
     "id": 1178,
@@ -30465,7 +32432,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/6531864966b2fc846a74a9bc161d9bf4563ec2e9",
     "coverUrl": "https://media.kitsu.app/anime/11757/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3B4cjvGlPvyBLNG3AzEgkZ",
-    "animeId": 143
+    "animeId": 143,
+    "previewUrl": "https://p.scdn.co/mp3-preview/6531864966b2fc846a74a9bc161d9bf4563ec2e9"
   },
   {
     "id": 1179,
@@ -30484,7 +32452,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/159fc05584217baa99581c4821f52d04670db6b2",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/1434/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0B7wvvmu9EISAwZnOpjhNI",
-    "animeId": 264
+    "animeId": 264,
+    "previewUrl": "https://p.scdn.co/mp3-preview/159fc05584217baa99581c4821f52d04670db6b2"
   },
   {
     "id": 1180,
@@ -30503,7 +32472,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/eca5a32b13f68f700b06e06ffdc8110e61e232ce",
     "coverUrl": "https://media.kitsu.app/anime/46571/poster_image/medium-ea8832a82d6fa830d9cbff53f56eb72f.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/09CtPGIpYB4BrO8qb1RGsF",
-    "animeId": 375
+    "animeId": 375,
+    "previewUrl": "https://p.scdn.co/mp3-preview/eca5a32b13f68f700b06e06ffdc8110e61e232ce"
   },
   {
     "id": 1181,
@@ -30522,7 +32492,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b750d9609aa454adb23284b1504d962a6ff9bb07",
     "coverUrl": "https://media.kitsu.app/anime/1/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/50kpGaPAhYJ3sGmk6vplg0",
-    "animeId": 167
+    "animeId": 167,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b750d9609aa454adb23284b1504d962a6ff9bb07"
   },
   {
     "id": 1182,
@@ -30541,7 +32512,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/81bd92ac70dc7b6dd32aabfb186fe67857147834",
     "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1uvyZBs4IZYRebHIB1747m",
-    "animeId": 244
+    "animeId": 244,
+    "previewUrl": "https://p.scdn.co/mp3-preview/81bd92ac70dc7b6dd32aabfb186fe67857147834"
   },
   {
     "id": 1183,
@@ -30560,7 +32532,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b5ee275ca337899f762b1c1883c11e24a04075b0",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/13593/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/60a0Rd6pjrkxjPbaKzXjfq",
-    "animeId": 113
+    "animeId": 113,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b5ee275ca337899f762b1c1883c11e24a04075b0"
   },
   {
     "id": 1184,
@@ -30579,7 +32552,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/adb1ea6ef8ac4d8111d8222ed3355794689a8d76",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/176/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3cZajhyr8LmtPfHZ9296tj",
-    "animeId": 314
+    "animeId": 314,
+    "previewUrl": "https://p.scdn.co/mp3-preview/adb1ea6ef8ac4d8111d8222ed3355794689a8d76"
   },
   {
     "id": 1185,
@@ -30598,7 +32572,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/0ee5843f6060102ce4ac239c856c452439e3d9d2",
     "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/1zi7xx7UVEFkmKfv06H8x0",
-    "animeId": 204
+    "animeId": 204,
+    "previewUrl": "https://p.scdn.co/mp3-preview/0ee5843f6060102ce4ac239c856c452439e3d9d2"
   },
   {
     "id": 1186,
@@ -30617,7 +32592,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/695ea23e689a1816b09a8ac6f0874af0f5c38420",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/5681/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6DH13QYXK7lKkYHSU88N48",
-    "animeId": 261
+    "animeId": 261,
+    "previewUrl": "https://p.scdn.co/mp3-preview/695ea23e689a1816b09a8ac6f0874af0f5c38420"
   },
   {
     "id": 1187,
@@ -30636,7 +32612,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/6da9d2d9c70066c8052a8b4b0b66d3c447cdf33c",
     "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/2nMeu6UenVvwUktBCpLMK9",
-    "animeId": 241
+    "animeId": 241,
+    "previewUrl": "https://p.scdn.co/mp3-preview/6da9d2d9c70066c8052a8b4b0b66d3c447cdf33c"
   },
   {
     "id": 1188,
@@ -30655,7 +32632,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/91219ebc0d0505a1001c4b854f8b2451fcec95b8",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/13284/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0gucTLf7trAf37Ua1uAyAu",
-    "animeId": 286
+    "animeId": 286,
+    "previewUrl": "https://p.scdn.co/mp3-preview/91219ebc0d0505a1001c4b854f8b2451fcec95b8"
   },
   {
     "id": 1189,
@@ -30674,7 +32652,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/6a46c302864c157a79346b485621a36305ceaaa2",
     "coverUrl": "https://media.kitsu.app/anime/4802/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3d0WouFnFmr0K3kjeza3fF",
-    "animeId": 160
+    "animeId": 160,
+    "previewUrl": "https://p.scdn.co/mp3-preview/6a46c302864c157a79346b485621a36305ceaaa2"
   },
   {
     "id": 1190,
@@ -30693,7 +32672,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/7e48f0a50a4b64aaa56e9dab7259670b1e6fc278",
     "coverUrl": "https://media.kitsu.app/anime/46336/poster_image/medium-162a579fe7a25c1b188532bb8aaa7129.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/3wuCCNCnBhJlwkIJTBZFiv",
-    "animeId": 365
+    "animeId": 365,
+    "previewUrl": "https://p.scdn.co/mp3-preview/7e48f0a50a4b64aaa56e9dab7259670b1e6fc278"
   },
   {
     "id": 1191,
@@ -30712,7 +32692,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/aed073ed2859447c5b275cd7bace28302330b629",
     "coverUrl": "https://media.kitsu.app/anime/7074/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7ne4VBA60CxGM75vw0EYad",
-    "animeId": 170
+    "animeId": 170,
+    "previewUrl": "https://p.scdn.co/mp3-preview/aed073ed2859447c5b275cd7bace28302330b629"
   },
   {
     "id": 1192,
@@ -30731,7 +32712,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/80995b893ffd82da8c0b2df113b80fc9b5fcec57",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/10028/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5T7ywazdGIydr6JCW6t02j",
-    "animeId": 10
+    "animeId": 10,
+    "previewUrl": "https://p.scdn.co/mp3-preview/80995b893ffd82da8c0b2df113b80fc9b5fcec57"
   },
   {
     "id": 1193,
@@ -30750,7 +32732,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/4e30857a3c7da3f8891483643e310bb233afadd2",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/3702/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0tgVpDi06FyKpA1z0VMD4v",
-    "animeId": 401
+    "animeId": 401,
+    "previewUrl": "https://p.scdn.co/mp3-preview/4e30857a3c7da3f8891483643e310bb233afadd2"
   },
   {
     "id": 1194,
@@ -30769,7 +32752,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/1cc8166a133df8a913e37b37b58c9511a1486464",
     "coverUrl": "https://media.kitsu.app/anime/18/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0nUOnbRTWEAOVRu4FRQENe",
-    "animeId": 200
+    "animeId": 200,
+    "previewUrl": "https://p.scdn.co/mp3-preview/1cc8166a133df8a913e37b37b58c9511a1486464"
   },
   {
     "id": 1195,
@@ -30788,7 +32772,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/2a5d2e8e233cefd201bd079ffaa7d6764b403cb7",
     "coverUrl": "https://media.kitsu.app/anime/782/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3georCIpP8OEGQkggOhuZw",
-    "animeId": 198
+    "animeId": 198,
+    "previewUrl": "https://p.scdn.co/mp3-preview/2a5d2e8e233cefd201bd079ffaa7d6764b403cb7"
   },
   {
     "id": 1196,
@@ -30807,7 +32792,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/6d8ea0db9b28f0a42a7946f74a2f407373581660",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/5981/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2xnAn7xxR2Ohxt1UuQudpC",
-    "animeId": 18
+    "animeId": 18,
+    "previewUrl": "https://p.scdn.co/mp3-preview/6d8ea0db9b28f0a42a7946f74a2f407373581660"
   },
   {
     "id": 1197,
@@ -30826,7 +32812,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/cb7723570790116ae877082f8e4dcd16cc113f7d",
     "coverUrl": "https://media.kitsu.app/anime/782/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2yDEfRpX5tRUcAo4VM0wFA",
-    "animeId": 198
+    "animeId": 198,
+    "previewUrl": "https://p.scdn.co/mp3-preview/cb7723570790116ae877082f8e4dcd16cc113f7d"
   },
   {
     "id": 1198,
@@ -30845,7 +32832,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/a289d6d1da6bb20a7485e29d416932366b86073e",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/13284/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2WUOvMjK5zOGO9gBHQ89Su",
-    "animeId": 286
+    "animeId": 286,
+    "previewUrl": "https://p.scdn.co/mp3-preview/a289d6d1da6bb20a7485e29d416932366b86073e"
   },
   {
     "id": 1199,
@@ -30864,7 +32852,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/737715080edad809d845796971b53046a13400b2",
     "coverUrl": "https://media.kitsu.app/anime/11757/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1nmdJTwB575vxvNm6PdXHq",
-    "animeId": 143
+    "animeId": 143,
+    "previewUrl": "https://p.scdn.co/mp3-preview/737715080edad809d845796971b53046a13400b2"
   },
   {
     "id": 1200,
@@ -30883,7 +32872,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b0fae9c7b73f820581228f07946d2cff38f97b14",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/6421/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0vDGaRsL0TqWDgyL6kfdoG",
-    "animeId": 262
+    "animeId": 262,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b0fae9c7b73f820581228f07946d2cff38f97b14"
   },
   {
     "id": 1201,
@@ -30902,7 +32892,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/6b3237a031f76ea1008c5d8f444b6c87ae2bf64d",
     "coverUrl": "https://media.kitsu.app/anime/42147/poster_image/medium-e17accdc782f75a56fb5c9167ec2652b.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/22US1fP1mxEwddQ6QumKe8",
-    "animeId": 54
+    "animeId": 54,
+    "previewUrl": "https://p.scdn.co/mp3-preview/6b3237a031f76ea1008c5d8f444b6c87ae2bf64d"
   },
   {
     "id": 1202,
@@ -30921,7 +32912,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/e9539922a95413c19cd199e21c3d2e068102c9e6",
     "coverUrl": "https://media.kitsu.app/anime/46004/poster_image/medium-b5e9b4b5a0e2e4d3d7dc8fd2f7d3af10.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/69oSlabbavmcnZOqeQX4fM",
-    "animeId": 291
+    "animeId": 291,
+    "previewUrl": "https://p.scdn.co/mp3-preview/e9539922a95413c19cd199e21c3d2e068102c9e6"
   },
   {
     "id": 1203,
@@ -30940,7 +32932,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/cc21b2426e2f53f7d7a01f7fbcce0f1d54ddf30c",
     "coverUrl": "https://media.kitsu.app/anime/9963/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6oPqaiLKPdQj2ecBpMgM07",
-    "animeId": 159
+    "animeId": 159,
+    "previewUrl": "https://p.scdn.co/mp3-preview/cc21b2426e2f53f7d7a01f7fbcce0f1d54ddf30c"
   },
   {
     "id": 1204,
@@ -30959,7 +32952,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/5a6d644d2c1acc76b00e18153b9aa3fd9a279bda",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/43321/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1xcsj9VvAJ9PDpNIaMEVlo",
-    "animeId": 30
+    "animeId": 30,
+    "previewUrl": "https://p.scdn.co/mp3-preview/5a6d644d2c1acc76b00e18153b9aa3fd9a279bda"
   },
   {
     "id": 1205,
@@ -30978,7 +32972,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/a3e02736cda7512db2dfab7456e262603dfed1d0",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/13672/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0zRI8jHpxsK2ArBW07pj7E",
-    "animeId": 300
+    "animeId": 300,
+    "previewUrl": "https://p.scdn.co/mp3-preview/a3e02736cda7512db2dfab7456e262603dfed1d0"
   },
   {
     "id": 1206,
@@ -30997,7 +32992,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/23d14be966bd1a81cd95522b866a2e60ee003ed5",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/10028/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/22A3EEXoniinp3n7BlVlxT",
-    "animeId": 10
+    "animeId": 10,
+    "previewUrl": "https://p.scdn.co/mp3-preview/23d14be966bd1a81cd95522b866a2e60ee003ed5"
   },
   {
     "id": 1207,
@@ -31016,7 +33012,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/6735dcbd72e9d1b35b96991fc7a08ebd0063e3f6",
     "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/2Eg9TOQA5lUlSHeezowSgy",
-    "animeId": 204
+    "animeId": 204,
+    "previewUrl": "https://p.scdn.co/mp3-preview/6735dcbd72e9d1b35b96991fc7a08ebd0063e3f6"
   },
   {
     "id": 1208,
@@ -31035,7 +33032,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/46c2d6687fca240e9a4371c573ae2e7099f9e340",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/7578/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4l7LboEqEOMV1UPHoZ0KA9",
-    "animeId": 267
+    "animeId": 267,
+    "previewUrl": "https://p.scdn.co/mp3-preview/46c2d6687fca240e9a4371c573ae2e7099f9e340"
   },
   {
     "id": 1209,
@@ -31054,7 +33052,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/1c8e689022f4b74dbcc5a8a23b67410f60a8f2ac",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/4240/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5ohrCO36AXXXOxqxZbo0Gz",
-    "animeId": 67
+    "animeId": 67,
+    "previewUrl": "https://p.scdn.co/mp3-preview/1c8e689022f4b74dbcc5a8a23b67410f60a8f2ac"
   },
   {
     "id": 1210,
@@ -31073,7 +33072,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/80682b69ab737bc126e9d459d7f0f8fb158709a4",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/47/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0NrdH75exgYJWrF5M7fblm",
-    "animeId": 316
+    "animeId": 316,
+    "previewUrl": "https://p.scdn.co/mp3-preview/80682b69ab737bc126e9d459d7f0f8fb158709a4"
   },
   {
     "id": 1211,
@@ -31092,7 +33092,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d5626f626ed5828be9c6d2b2c67e161ada2db525",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/149/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3PqDjbOyw6VV6ifq7FzepJ",
-    "animeId": 344
+    "animeId": 344,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d5626f626ed5828be9c6d2b2c67e161ada2db525"
   },
   {
     "id": 1212,
@@ -31111,7 +33112,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/f8650a087aed5f9a7f8cfba625fea67f0bfa4a08",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/47953/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2ZFfpiG3pZ2nzTkOr4YnwO",
-    "animeId": 348
+    "animeId": 348,
+    "previewUrl": "https://p.scdn.co/mp3-preview/f8650a087aed5f9a7f8cfba625fea67f0bfa4a08"
   },
   {
     "id": 1213,
@@ -31130,7 +33132,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/c190f2460bf776bfbb6281cce6d9e20a4cc173c8",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/10427/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2eVtNxoyXATwLzKz4jmbLN",
-    "animeId": 306
+    "animeId": 306,
+    "previewUrl": "https://p.scdn.co/mp3-preview/c190f2460bf776bfbb6281cce6d9e20a4cc173c8"
   },
   {
     "id": 1214,
@@ -31149,7 +33152,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/6ea052b581f42a10b81480ab773e719c419be11d",
     "coverUrl": "https://media.kitsu.app/anime/47899/poster_image/medium-7c2a90df27e51f03bc70a0e86d79d88e.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/6V7y6ItkLqcwwA6Bw4PAj6",
-    "animeId": 284
+    "animeId": 284,
+    "previewUrl": "https://p.scdn.co/mp3-preview/6ea052b581f42a10b81480ab773e719c419be11d"
   },
   {
     "id": 1215,
@@ -31168,7 +33172,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/80823e5a9df098ff403ede1257a07ad6cbccf36a",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/224/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0JAkZ44a75QTFXXsB2c7Ol",
-    "animeId": 73
+    "animeId": 73,
+    "previewUrl": "https://p.scdn.co/mp3-preview/80823e5a9df098ff403ede1257a07ad6cbccf36a"
   },
   {
     "id": 1216,
@@ -31187,7 +33192,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/e2aa23875e4cc61cbf483139912bf2bfdd41ee66",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/3128/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/78J1VVEL8OpjJZJAwqRocN",
-    "animeId": 83
+    "animeId": 83,
+    "previewUrl": "https://p.scdn.co/mp3-preview/e2aa23875e4cc61cbf483139912bf2bfdd41ee66"
   },
   {
     "id": 1217,
@@ -31206,7 +33212,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/73ea853524cae61437cf618f420f89c088bbca8b",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/148/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1JHQ4rCY6gFdHE5AGmv7uP",
-    "animeId": 75
+    "animeId": 75,
+    "previewUrl": "https://p.scdn.co/mp3-preview/73ea853524cae61437cf618f420f89c088bbca8b"
   },
   {
     "id": 1218,
@@ -31225,7 +33232,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/67242ac51dad508d505ffdfc91bb15c4f6b930ef",
     "coverUrl": "https://media.kitsu.app/anime/45398/poster_image/medium-f2f30d957a12e8269655c6036b460c90.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/3IjALgWp4y7hbuA3QjnrfR",
-    "animeId": 27
+    "animeId": 27,
+    "previewUrl": "https://p.scdn.co/mp3-preview/67242ac51dad508d505ffdfc91bb15c4f6b930ef"
   },
   {
     "id": 1219,
@@ -31244,7 +33252,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/493d3b932bc4f2cb110bc595c715bf2f7ddcdaf3",
     "coverUrl": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5MYNy4t1MaaEcU5pjiWq6u",
-    "animeId": 233
+    "animeId": 233,
+    "previewUrl": "https://p.scdn.co/mp3-preview/493d3b932bc4f2cb110bc595c715bf2f7ddcdaf3"
   },
   {
     "id": 1220,
@@ -31263,7 +33272,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/2e4072614f6f136b1ccc7912c485ea8b23c8e704",
     "coverUrl": "https://media.kitsu.app/anime/47296/poster_image/medium-c324bf5d5fcccf17986a04ab494dd9d7.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/5H5lzj0pDLXwaUOutzEjMF",
-    "animeId": 358
+    "animeId": 358,
+    "previewUrl": "https://p.scdn.co/mp3-preview/2e4072614f6f136b1ccc7912c485ea8b23c8e704"
   },
   {
     "id": 1221,
@@ -31282,7 +33292,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/55c4bd43b0ae16e39436553e45086f6f8f30a39f",
     "coverUrl": "https://media.kitsu.app/anime/14027/poster_image/medium-2ccfd6de3c64f3e8340230e7758646a1.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/65b9tN8CyvSFYscKE7EOkm",
-    "animeId": 409
+    "animeId": 409,
+    "previewUrl": "https://p.scdn.co/mp3-preview/55c4bd43b0ae16e39436553e45086f6f8f30a39f"
   },
   {
     "id": 1222,
@@ -31301,7 +33312,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/6e352290d8dd8faad1d5ef160513f3569310ac82",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/11209/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7Lq79sDOgD0eEPxczcY2DH",
-    "animeId": 40
+    "animeId": 40,
+    "previewUrl": "https://p.scdn.co/mp3-preview/6e352290d8dd8faad1d5ef160513f3569310ac82"
   },
   {
     "id": 1223,
@@ -31320,7 +33332,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/08269ae15de830185acafe7f31e7212b2cbe86dd",
     "coverUrl": "https://media.kitsu.app/anime/44358/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7GjqSpwg1VradInL571Bxf",
-    "animeId": 134
+    "animeId": 134,
+    "previewUrl": "https://p.scdn.co/mp3-preview/08269ae15de830185acafe7f31e7212b2cbe86dd"
   },
   {
     "id": 1224,
@@ -31339,7 +33352,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b12d0d0310bc277346ff948db3702b727ebb2939",
     "coverUrl": "https://media.kitsu.app/anime/45517/poster_image/medium-55342a19ef9eb98db5dfd17c9b83b38c.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/3nbsIp2Y1mYQ2RqAtxMwoA",
-    "animeId": 370
+    "animeId": 370,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b12d0d0310bc277346ff948db3702b727ebb2939"
   },
   {
     "id": 1225,
@@ -31358,7 +33372,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/9be1d11d923bc54344dac4531c00a098801c016b",
     "coverUrl": "https://media.kitsu.app/anime/8017/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2O9sWy5etvogpiZbY3eJcO",
-    "animeId": 179
+    "animeId": 179,
+    "previewUrl": "https://p.scdn.co/mp3-preview/9be1d11d923bc54344dac4531c00a098801c016b"
   },
   {
     "id": 1226,
@@ -31377,7 +33392,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/a142e67bd373066cfdc0db1ab2839141ed693752",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/344/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0fI3D07OFfLLYks0YRymKc",
-    "animeId": 329
+    "animeId": 329,
+    "previewUrl": "https://p.scdn.co/mp3-preview/a142e67bd373066cfdc0db1ab2839141ed693752"
   },
   {
     "id": 1227,
@@ -31396,7 +33412,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/6ed69e4cfb6dda2511b09f9ac77c287adfd8f3ca",
     "coverUrl": "https://media.kitsu.app/anime/6045/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5ILPWem0xm3v85WeXqrTKP",
-    "animeId": 180
+    "animeId": 180,
+    "previewUrl": "https://p.scdn.co/mp3-preview/6ed69e4cfb6dda2511b09f9ac77c287adfd8f3ca"
   },
   {
     "id": 1228,
@@ -31415,7 +33432,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/ab46465767c90e70795c5d164f98ce86f6733048",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/236/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7lKAYYnqO6KFCc5xokoNc9",
-    "animeId": 313
+    "animeId": 313,
+    "previewUrl": "https://p.scdn.co/mp3-preview/ab46465767c90e70795c5d164f98ce86f6733048"
   },
   {
     "id": 1229,
@@ -31434,7 +33452,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/9b00fe447978e824ebf767d1d0e949463c79c06e",
     "coverUrl": "https://media.kitsu.app/anime/44426/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5UbABVhLmmXgrKa9vASvwS",
-    "animeId": 155
+    "animeId": 155,
+    "previewUrl": "https://p.scdn.co/mp3-preview/9b00fe447978e824ebf767d1d0e949463c79c06e"
   },
   {
     "id": 1230,
@@ -31453,7 +33472,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/ff612c57179201ffb45fdc9b8ffb574926a97111",
     "coverUrl": "https://media.kitsu.app/anime/142/poster_image/large-bf3297058b86c1ef19cefb5b9c38c99e.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/3LEj9qnPBKYUUFTU6fwR9e",
-    "animeId": 89
+    "animeId": 89,
+    "previewUrl": "https://p.scdn.co/mp3-preview/ff612c57179201ffb45fdc9b8ffb574926a97111"
   },
   {
     "id": 1231,
@@ -31472,7 +33492,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/119987030df6e87134b7e6008fc2247efcfea645",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/41199/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/06Aiy9Au1BwL0F34Xbzj3M",
-    "animeId": 308
+    "animeId": 308,
+    "previewUrl": "https://p.scdn.co/mp3-preview/119987030df6e87134b7e6008fc2247efcfea645"
   },
   {
     "id": 1232,
@@ -31491,7 +33512,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/3730e64219ecaac00c35e3df977dfdcddeb5d679",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/12230/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2TwqhSZO59BPQW7cBJ1e4s",
-    "animeId": 3
+    "animeId": 3,
+    "previewUrl": "https://p.scdn.co/mp3-preview/3730e64219ecaac00c35e3df977dfdcddeb5d679"
   },
   {
     "id": 1233,
@@ -31510,7 +33532,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d008345c51e3352fbe26b2a9fa9d11dfcad70b12",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/11469/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4a4JRc2KsOQC8j5nGo3DnQ",
-    "animeId": 274
+    "animeId": 274,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d008345c51e3352fbe26b2a9fa9d11dfcad70b12"
   },
   {
     "id": 1234,
@@ -31529,7 +33552,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/462b3d98499f36e3212a89909d36126e14ceb31a",
     "coverUrl": "https://media.kitsu.app/anime/46369/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1zcTYmnzY8kqC2EdYNh0pL",
-    "animeId": 154
+    "animeId": 154,
+    "previewUrl": "https://p.scdn.co/mp3-preview/462b3d98499f36e3212a89909d36126e14ceb31a"
   },
   {
     "id": 1235,
@@ -31548,7 +33572,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/c662f410bc86ff11e78d9d8691c9f69ba0253b36",
     "coverUrl": "https://anifume.com/images/48/Horimiya-Piece.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5EEzfZN0YApCTponvjdM4v",
-    "animeId": 214
+    "animeId": 214,
+    "previewUrl": "https://p.scdn.co/mp3-preview/c662f410bc86ff11e78d9d8691c9f69ba0253b36"
   },
   {
     "id": 1236,
@@ -31567,7 +33592,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/369f964648295901b928157a0ca44f9ba418cc39",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/7000/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2v6By6eLbmlQ04Dia8BZ5o",
-    "animeId": 106
+    "animeId": 106,
+    "previewUrl": "https://p.scdn.co/mp3-preview/369f964648295901b928157a0ca44f9ba418cc39"
   },
   {
     "id": 1237,
@@ -31586,7 +33612,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/ad663acd7a2df08eb6bb313ebbae598c8ba39d0c",
     "coverUrl": "https://media.kitsu.app/anime/49205/poster_image/medium-26bbae139e3a0869dece52e864b93052.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/2tbdOk7IBfH7tfci91WFHe",
-    "animeId": 205
+    "animeId": 205,
+    "previewUrl": "https://p.scdn.co/mp3-preview/ad663acd7a2df08eb6bb313ebbae598c8ba39d0c"
   },
   {
     "id": 1238,
@@ -31605,7 +33632,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/e2df4bfa382e37a330e7631a5c670a8a65a14da8",
     "coverUrl": "https://media.kitsu.app/anime/47687/poster_image/medium-1b60c7e721df919140c4dd564810afd5.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/0WCdXhtkz6PNTF3hXARTYd",
-    "animeId": 222
+    "animeId": 222,
+    "previewUrl": "https://p.scdn.co/mp3-preview/e2df4bfa382e37a330e7631a5c670a8a65a14da8"
   },
   {
     "id": 1239,
@@ -31624,7 +33652,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/55e409c27aef443544235247b2556e97131013b6",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/11209/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/19qYzhwsVrKi8ZDAfF8lnc",
-    "animeId": 40
+    "animeId": 40,
+    "previewUrl": "https://p.scdn.co/mp3-preview/55e409c27aef443544235247b2556e97131013b6"
   },
   {
     "id": 1240,
@@ -31643,7 +33672,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/18698b64c7d24f7d60672f017f36e1066a508035",
     "coverUrl": "https://media.kitsu.app/anime/44382/poster_image/large-8ffc8ea9b6a1f9e79bc626e03baab167.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/5twbYCAzFHdOYo14Y1pWaZ",
-    "animeId": 70
+    "animeId": 70,
+    "previewUrl": "https://p.scdn.co/mp3-preview/18698b64c7d24f7d60672f017f36e1066a508035"
   },
   {
     "id": 1241,
@@ -31662,7 +33692,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/c310bb61f3f591e2e6fc79b67cc4dec4862a7ad4",
     "coverUrl": "https://media.kitsu.app/anime/44980/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/32M6YQye8nPUQRTTkDQuMv",
-    "animeId": 195
+    "animeId": 195,
+    "previewUrl": "https://p.scdn.co/mp3-preview/c310bb61f3f591e2e6fc79b67cc4dec4862a7ad4"
   },
   {
     "id": 1242,
@@ -31681,7 +33712,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/6ddef23ee6a87e6566ce45969905439130a36d3e",
     "coverUrl": "https://media.kitsu.app/anime/48981/poster_image/medium-abfe4d8f087bdfef4385faeb830873d4.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/5XVSufZLgQGku5bsGyJp5X",
-    "animeId": 219
+    "animeId": 219,
+    "previewUrl": "https://p.scdn.co/mp3-preview/6ddef23ee6a87e6566ce45969905439130a36d3e"
   },
   {
     "id": 1243,
@@ -31700,7 +33732,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/651abd0ee3527e5434d2211d646c5720b47b4c21",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/13066/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3e9HZxeyfWwjeyPAMmWSSQ",
-    "animeId": 109
+    "animeId": 109,
+    "previewUrl": "https://p.scdn.co/mp3-preview/651abd0ee3527e5434d2211d646c5720b47b4c21"
   },
   {
     "id": 1244,
@@ -31719,7 +33752,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/111eb776b2884b2940e31b769f5dd99e8cc6ce6c",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/192/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1oFAF1hdPOickyHgbuRjyX",
-    "animeId": 293
+    "animeId": 293,
+    "previewUrl": "https://p.scdn.co/mp3-preview/111eb776b2884b2940e31b769f5dd99e8cc6ce6c"
   },
   {
     "id": 1245,
@@ -31738,7 +33772,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/e6f9a45cb4bf45d8d041d999f5904ed1d248cc15",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/11469/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0puf9yIluy9W0vpMEUoAnN",
-    "animeId": 274
+    "animeId": 274,
+    "previewUrl": "https://p.scdn.co/mp3-preview/e6f9a45cb4bf45d8d041d999f5904ed1d248cc15"
   },
   {
     "id": 1246,
@@ -31757,7 +33792,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/0e1f4d14825f1a67b816669d4fd15131c097f056",
     "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium-0233bf77af3e0ab7303ae7099209d58a.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/7ju97lgwC2rKQ6wwsf9no9",
-    "animeId": 245
+    "animeId": 245,
+    "previewUrl": "https://p.scdn.co/mp3-preview/0e1f4d14825f1a67b816669d4fd15131c097f056"
   },
   {
     "id": 1247,
@@ -31776,7 +33812,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/ca9861da5f23408c70c43350db4bc4f375d5d45e",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/47953/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4rwqrKdwlFWJ6LvPYaOtgn",
-    "animeId": 348
+    "animeId": 348,
+    "previewUrl": "https://p.scdn.co/mp3-preview/ca9861da5f23408c70c43350db4bc4f375d5d45e"
   },
   {
     "id": 1248,
@@ -31795,7 +33832,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/e5b04ad7398a7c8f5c4c788f4ab43f3f4cef150a",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/13524/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2qT1uLXPVPzGgFOx4jtEuo",
-    "animeId": 303
+    "animeId": 303,
+    "previewUrl": "https://p.scdn.co/mp3-preview/e5b04ad7398a7c8f5c4c788f4ab43f3f4cef150a"
   },
   {
     "id": 1249,
@@ -31814,7 +33852,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/f1d24e8a12e82dba75f9dd181d623bcb97879868",
     "coverUrl": "https://media.kitsu.app/anime/14027/poster_image/medium-2ccfd6de3c64f3e8340230e7758646a1.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/2NjO87HyT80fsgejd3PLYW",
-    "animeId": 409
+    "animeId": 409,
+    "previewUrl": "https://p.scdn.co/mp3-preview/f1d24e8a12e82dba75f9dd181d623bcb97879868"
   },
   {
     "id": 1250,
@@ -31833,7 +33872,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/c116054968b46f75f473e7ac49ca52cbca68f3e0",
     "coverUrl": "https://media.kitsu.app/anime/42147/poster_image/medium-e17accdc782f75a56fb5c9167ec2652b.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/4yyX2Iu4xJjW9xMvBZKSBi",
-    "animeId": 54
+    "animeId": 54,
+    "previewUrl": "https://p.scdn.co/mp3-preview/c116054968b46f75f473e7ac49ca52cbca68f3e0"
   },
   {
     "id": 1251,
@@ -31852,7 +33892,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/f42601f180da3ee934b3efb415ac5a69137f227d",
     "coverUrl": "https://media.kitsu.app/anime/47454/poster_image/medium-647eca310356254a1840a496f41ea57c.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/3L4GsGLgxpHieVQH86H8bv",
-    "animeId": 208
+    "animeId": 208,
+    "previewUrl": "https://p.scdn.co/mp3-preview/f42601f180da3ee934b3efb415ac5a69137f227d"
   },
   {
     "id": 1252,
@@ -31871,7 +33912,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/12489dbf9e313aa5a42dcf6e1d145df9b04db8dd",
     "coverUrl": "https://media.kitsu.app/anime/4802/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/76FZM38RC8XaAjJ77CVTNe",
-    "animeId": 160
+    "animeId": 160,
+    "previewUrl": "https://p.scdn.co/mp3-preview/12489dbf9e313aa5a42dcf6e1d145df9b04db8dd"
   },
   {
     "id": 1253,
@@ -31890,7 +33932,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/64353aa29b9b3a34b353ab9df27334778e3a261e",
     "coverUrl": "https://media.kitsu.app/anime/47271/poster_image/medium-90a981a5a5570ba5fdb809a3152c8348.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/4W4fNrZYkobj539TOWsLO2",
-    "animeId": 235
+    "animeId": 235,
+    "previewUrl": "https://p.scdn.co/mp3-preview/64353aa29b9b3a34b353ab9df27334778e3a261e"
   },
   {
     "id": 1254,
@@ -31909,7 +33952,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/63008585ef71ff70ab62bd93f1f4435d55fc3028",
     "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/6ouhsRJ7gExB7LCYjITk4Y",
-    "animeId": 351
+    "animeId": 351,
+    "previewUrl": "https://p.scdn.co/mp3-preview/63008585ef71ff70ab62bd93f1f4435d55fc3028"
   },
   {
     "id": 1255,
@@ -31928,7 +33972,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/3bbe7de0de838a4487495fd55422b0919c20a58b",
     "coverUrl": "https://media.kitsu.app/anime/46183/poster_image/medium-5f704e2d6d86c0666d81e140d2c9f6a0.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/61uyGDPJ06MkxJtHgPmuyO",
-    "animeId": 221
+    "animeId": 221,
+    "previewUrl": "https://p.scdn.co/mp3-preview/3bbe7de0de838a4487495fd55422b0919c20a58b"
   },
   {
     "id": 1256,
@@ -31947,7 +33992,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/1bb88e5873fb6d94cfecbd561074f2eaa84c490e",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/755/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/35mvY5S1H3J2QZyna3TFe0",
-    "animeId": 90
+    "animeId": 90,
+    "previewUrl": "https://p.scdn.co/mp3-preview/1bb88e5873fb6d94cfecbd561074f2eaa84c490e"
   },
   {
     "id": 1257,
@@ -31966,7 +34012,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/080522816e8a7998ce0bfa8d027867e50f3c95b1",
     "coverUrl": "https://media.kitsu.app/anime/44196/poster_image/medium-a7b52a1e9cea5a04b29ee6878fbff923.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/18V7Vm71WAsWL4I0DytbnK",
-    "animeId": 364
+    "animeId": 364,
+    "previewUrl": "https://p.scdn.co/mp3-preview/080522816e8a7998ce0bfa8d027867e50f3c95b1"
   },
   {
     "id": 1258,
@@ -31985,7 +34032,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/de31a24cbcc8246073c873d09f5469d33a259202",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/13723/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0UHB9METy4VCXNgkcGqHqS",
-    "animeId": 16
+    "animeId": 16,
+    "previewUrl": "https://p.scdn.co/mp3-preview/de31a24cbcc8246073c873d09f5469d33a259202"
   },
   {
     "id": 1259,
@@ -32004,7 +34052,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/f29963023285c89b00b3b870e2be3b56b1fc7c68",
     "coverUrl": "https://anifume.com/images/19/Jujutsu-Kaisen-3.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1Qrg8KqiBpW07V7PNxwwwL",
-    "animeId": 92
+    "animeId": 92,
+    "previewUrl": "https://p.scdn.co/mp3-preview/f29963023285c89b00b3b870e2be3b56b1fc7c68"
   },
   {
     "id": 1260,
@@ -32023,7 +34072,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d612db4620fc05498ff3d49098a494a153c6d4bf",
     "coverUrl": "https://media.kitsu.app/anime/45598/poster_image/medium-c9bf66231c51a0a552fbce2d91bb3a20.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/2xJCMIJfcNYDc5iR0sAm2O",
-    "animeId": 373
+    "animeId": 373,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d612db4620fc05498ff3d49098a494a153c6d4bf"
   },
   {
     "id": 1261,
@@ -32042,7 +34092,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/2b53e5e3a36eb548503bc0ba0393e4e5a45698d3",
     "coverUrl": "https://media.kitsu.app/anime/46231/poster_image/medium-d75b57ef0c9056044cc0e277ac34d6e5.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/1Rweq7vNjK4kZBbGrmxQsl",
-    "animeId": 31
+    "animeId": 31,
+    "previewUrl": "https://p.scdn.co/mp3-preview/2b53e5e3a36eb548503bc0ba0393e4e5a45698d3"
   },
   {
     "id": 1262,
@@ -32061,7 +34112,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/9480983bd8b6901987f59d21049d2e68b3c266b9",
     "coverUrl": "https://media.kitsu.app/anime/47356/poster_image/medium-5abbbd782206cfd20df5125c75baf298.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/3Cl3uNEcYu5SDhLLXN5yhi",
-    "animeId": 210
+    "animeId": 210,
+    "previewUrl": "https://p.scdn.co/mp3-preview/9480983bd8b6901987f59d21049d2e68b3c266b9"
   },
   {
     "id": 1263,
@@ -32080,7 +34132,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/5ed0bbbc40dda2bce0e008fe02949cd254f0ea69",
     "coverUrl": "https://media.kitsu.app/anime/48541/poster_image/medium-996392db10718d6b3177f11982f8b975.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/0ug5NqcwcFR2xrfTkc7k8e",
-    "animeId": 352
+    "animeId": 352,
+    "previewUrl": "https://p.scdn.co/mp3-preview/5ed0bbbc40dda2bce0e008fe02949cd254f0ea69"
   },
   {
     "id": 1264,
@@ -32099,7 +34152,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/ff8d1a8198f7e7fd12831bffea8b9c95bc62d6ec",
     "coverUrl": "https://cdn.myanimelist.net/images/anime/11/75274l.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5OCJzvD7sykQEKHH7qAC3C",
-    "animeId": 367
+    "animeId": 367,
+    "previewUrl": "https://p.scdn.co/mp3-preview/ff8d1a8198f7e7fd12831bffea8b9c95bc62d6ec"
   },
   {
     "id": 1265,
@@ -32118,7 +34172,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/8dadd95d60bd846553323371cb7bc1df72e3d844",
     "coverUrl": "https://media.kitsu.app/anime/46577/poster_image/medium-8ef6409549f257f8623b0dfb2f293933.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/1Ydy1j4ooUkDvQYSvwxjoy",
-    "animeId": 371
+    "animeId": 371,
+    "previewUrl": "https://p.scdn.co/mp3-preview/8dadd95d60bd846553323371cb7bc1df72e3d844"
   },
   {
     "id": 1266,
@@ -32137,7 +34192,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/1821193ee39cf7327d3bc0f3fe6941421c2a1c66",
     "coverUrl": "https://media.kitsu.app/anime/44368/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6czM6UMQD9qE5GAUp68oud",
-    "animeId": 194
+    "animeId": 194,
+    "previewUrl": "https://p.scdn.co/mp3-preview/1821193ee39cf7327d3bc0f3fe6941421c2a1c66"
   },
   {
     "id": 1267,
@@ -32156,7 +34212,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/bab837f54a64e389b42693562957feef358fbaf3",
     "coverUrl": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
     "spotifyUrl": "https://open.spotify.com/track/66wkCYWlXzSTQAfnsPBptt",
-    "animeId": 120
+    "animeId": 120,
+    "previewUrl": "https://p.scdn.co/mp3-preview/bab837f54a64e389b42693562957feef358fbaf3"
   },
   {
     "id": 1268,
@@ -32175,7 +34232,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/36266634f966dba5dbb8ead6f20d1e534af3d5c4",
     "coverUrl": "https://media.kitsu.app/anime/48618/poster_image/medium-3ef7ecfe0da23a4d4ee757d46dfcd1db.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/040I32EKLxQrkuxQu1pqvT",
-    "animeId": 211
+    "animeId": 211,
+    "previewUrl": "https://p.scdn.co/mp3-preview/36266634f966dba5dbb8ead6f20d1e534af3d5c4"
   },
   {
     "id": 1269,
@@ -32194,7 +34252,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/0309e5ff0851780b194e6c2fff4b7c009773add0",
     "coverUrl": "https://anifume.com/images/19/Jujutsu-Kaisen-3.jpg",
     "spotifyUrl": "https://open.spotify.com/track/142PiXzA84lmEw2RstFHFa",
-    "animeId": 92
+    "animeId": 92,
+    "previewUrl": "https://p.scdn.co/mp3-preview/0309e5ff0851780b194e6c2fff4b7c009773add0"
   },
   {
     "id": 1270,
@@ -32213,7 +34272,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/29c3e2fad1bece04c7d8ab6e5ad4bee5a13485b5",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/13066/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3uwnnTQcHM1rDqSfA4gQNz",
-    "animeId": 109
+    "animeId": 109,
+    "previewUrl": "https://p.scdn.co/mp3-preview/29c3e2fad1bece04c7d8ab6e5ad4bee5a13485b5"
   },
   {
     "id": 1271,
@@ -32232,7 +34292,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/ef6b86fbadc7685789a55202523f0ab0ef1830ac",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/44207/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4YMsS8OqXICdQXF5HNUxFq",
-    "animeId": 72
+    "animeId": 72,
+    "previewUrl": "https://p.scdn.co/mp3-preview/ef6b86fbadc7685789a55202523f0ab0ef1830ac"
   },
   {
     "id": 1272,
@@ -32251,7 +34312,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/8a8fcaf9ddf050562048d1632ddc880c9ce7c972",
     "coverUrl": "https://media.kitsu.app/anime/13767/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5mHdCZtVyb4DcJw8799hZp",
-    "animeId": 185
+    "animeId": 185,
+    "previewUrl": "https://p.scdn.co/mp3-preview/8a8fcaf9ddf050562048d1632ddc880c9ce7c972"
   },
   {
     "id": 1273,
@@ -32270,7 +34332,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/0cfcc895f05ea04c01524612069d8f5c3754c141",
     "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6ocbgoVGwYJhOv1GgI9NsF",
-    "animeId": 23
+    "animeId": 23,
+    "previewUrl": "https://p.scdn.co/mp3-preview/0cfcc895f05ea04c01524612069d8f5c3754c141"
   },
   {
     "id": 1274,
@@ -32289,7 +34352,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/92479d43666b31ca72b7e2a4fad74568f98ee41e",
     "coverUrl": "https://media.kitsu.app/anime/48312/poster_image/medium-5a3bba84ddb645a765b4714655abf044.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/5aIVCx5tnk0ntmdiinnYvw",
-    "animeId": 404
+    "animeId": 404,
+    "previewUrl": "https://p.scdn.co/mp3-preview/92479d43666b31ca72b7e2a4fad74568f98ee41e"
   },
   {
     "id": 1275,
@@ -32308,7 +34372,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/012f502192036813357d6dd32457f5340a6de4c8",
     "coverUrl": "https://media.kitsu.app/anime/47192/poster_image/medium-671e94191e8d931769dfa6d8a73e6491.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/0Lmbke3KNVFXtoH2mMSHCw",
-    "animeId": 243
+    "animeId": 243,
+    "previewUrl": "https://p.scdn.co/mp3-preview/012f502192036813357d6dd32457f5340a6de4c8"
   },
   {
     "id": 1276,
@@ -32327,7 +34392,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/86149322849514c1cf6851726dd85cebc981fb2e",
     "coverUrl": "https://media.kitsu.app/anime/41979/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4PMqSO5qyjpvzhlLI5GnID",
-    "animeId": 173
+    "animeId": 173,
+    "previewUrl": "https://p.scdn.co/mp3-preview/86149322849514c1cf6851726dd85cebc981fb2e"
   },
   {
     "id": 1277,
@@ -32346,7 +34412,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/330c6d6e5bfcc1bc831b6948b57ce9c98e7558bf",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/44053/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3GCdLUSnKSMJhs4Tj6CV3s",
-    "animeId": 302
+    "animeId": 302,
+    "previewUrl": "https://p.scdn.co/mp3-preview/330c6d6e5bfcc1bc831b6948b57ce9c98e7558bf"
   },
   {
     "id": 1278,
@@ -32365,7 +34432,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/ad0ec2e355ef837a144be2a258dbc5f4bcbb55c8",
     "coverUrl": "https://anifume.com/images/48/Horimiya-Piece.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6Im9k8u9iIzKMrmV7BWtlF",
-    "animeId": 14
+    "animeId": 14,
+    "previewUrl": "https://p.scdn.co/mp3-preview/ad0ec2e355ef837a144be2a258dbc5f4bcbb55c8"
   },
   {
     "id": 1279,
@@ -32384,7 +34452,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/daeff67b1e3e674c77bca3107e54c532c4a403b2",
     "coverUrl": "https://media.kitsu.app/anime/48541/poster_image/medium-996392db10718d6b3177f11982f8b975.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/4pAl7FkDMNBsjykPXo91B3",
-    "animeId": 209
+    "animeId": 209,
+    "previewUrl": "https://p.scdn.co/mp3-preview/daeff67b1e3e674c77bca3107e54c532c4a403b2"
   },
   {
     "id": 1280,
@@ -32403,7 +34472,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/82d8c7dbb14aad1b405f02fd83ccb84174284208",
     "coverUrl": "https://media.kitsu.app/anime/44980/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6NFyWDv5CjfwuzoCkw47Xf",
-    "animeId": 195
+    "animeId": 195,
+    "previewUrl": "https://p.scdn.co/mp3-preview/82d8c7dbb14aad1b405f02fd83ccb84174284208"
   },
   {
     "id": 1281,
@@ -32422,7 +34492,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/2350702484f0e449ef5e9827ac8b937f78e7490d",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/428/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7cgu4JBW3hq1GwTM1ilkKQ",
-    "animeId": 317
+    "animeId": 317,
+    "previewUrl": "https://p.scdn.co/mp3-preview/2350702484f0e449ef5e9827ac8b937f78e7490d"
   },
   {
     "id": 1282,
@@ -32441,7 +34512,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/91ba9904b64660602747a030e5b6a7070bf1eabe",
     "coverUrl": "https://media.kitsu.app/anime/11100/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2S7N1rHJg0UO1lckCIA6sJ",
-    "animeId": 161
+    "animeId": 161,
+    "previewUrl": "https://p.scdn.co/mp3-preview/91ba9904b64660602747a030e5b6a7070bf1eabe"
   },
   {
     "id": 1283,
@@ -32460,7 +34532,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/c88fe4044f2a0e86ea2d7d783b83a117386673e8",
     "coverUrl": "https://media.kitsu.app/anime/48312/poster_image/medium-5a3bba84ddb645a765b4714655abf044.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/6d9rWFahtOYiNblK9dvqK2",
-    "animeId": 404
+    "animeId": 404,
+    "previewUrl": "https://p.scdn.co/mp3-preview/c88fe4044f2a0e86ea2d7d783b83a117386673e8"
   },
   {
     "id": 1284,
@@ -32479,7 +34552,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/529024678ab0e582337bea70f5a238c0b10dcfe3",
     "coverUrl": "https://media.kitsu.app/anime/47899/poster_image/medium-7c2a90df27e51f03bc70a0e86d79d88e.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/3DPWP2aAMbGoMvT84zGQyO",
-    "animeId": 284
+    "animeId": 284,
+    "previewUrl": "https://p.scdn.co/mp3-preview/529024678ab0e582337bea70f5a238c0b10dcfe3"
   },
   {
     "id": 1285,
@@ -32498,7 +34572,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/6c3539d39dfd7756322d6bb0df5d5c5ce16a331e",
     "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium-0233bf77af3e0ab7303ae7099209d58a.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/0j97ePncGbPw30LBs5bZtD",
-    "animeId": 53
+    "animeId": 53,
+    "previewUrl": "https://p.scdn.co/mp3-preview/6c3539d39dfd7756322d6bb0df5d5c5ce16a331e"
   },
   {
     "id": 1286,
@@ -32517,7 +34592,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/5c9d05795fbda318086a52067e68e93d3e3a1c6d",
     "coverUrl": "https://media.kitsu.app/anime/47271/poster_image/medium-90a981a5a5570ba5fdb809a3152c8348.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/2xveLw2dsbQMj8HUcH9GWP",
-    "animeId": 29
+    "animeId": 29,
+    "previewUrl": "https://p.scdn.co/mp3-preview/5c9d05795fbda318086a52067e68e93d3e3a1c6d"
   },
   {
     "id": 1287,
@@ -32536,7 +34612,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/2933e079a323afea4f8efb95e007a63680336b99",
     "coverUrl": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
     "spotifyUrl": "https://open.spotify.com/track/72lQlMz3wTL0tr3Dz6zHRm",
-    "animeId": 233
+    "animeId": 233,
+    "previewUrl": "https://p.scdn.co/mp3-preview/2933e079a323afea4f8efb95e007a63680336b99"
   },
   {
     "id": 1288,
@@ -32555,7 +34632,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/f254557cc9aae7a666a8a88d740ffb511dd30cfc",
     "coverUrl": "https://media.kitsu.app/anime/48395/poster_image/medium-c4a572327a49c03c814cd66d263e3b1f.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/4t5CY6etAmuBvAmRqCq0II",
-    "animeId": 217
+    "animeId": 217,
+    "previewUrl": "https://p.scdn.co/mp3-preview/f254557cc9aae7a666a8a88d740ffb511dd30cfc"
   },
   {
     "id": 1289,
@@ -32574,7 +34652,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d57a69269c9db2c02f4124a3239bb701e67fc96f",
     "coverUrl": "https://media.kitsu.app/anime/45401/poster_image/large-0850c0cfa153c42d890ac90b014b78b6.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/0hWwie1UWHJEQzog6dWvJw",
-    "animeId": 115
+    "animeId": 115,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d57a69269c9db2c02f4124a3239bb701e67fc96f"
   },
   {
     "id": 1290,
@@ -32593,7 +34672,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/429b3816aa4b6e677b8af9d01a6f583f29f74e83",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/48270/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/00iXDvNwpdmGvakQUTRICZ",
-    "animeId": 383
+    "animeId": 383,
+    "previewUrl": "https://p.scdn.co/mp3-preview/429b3816aa4b6e677b8af9d01a6f583f29f74e83"
   },
   {
     "id": 1291,
@@ -32612,7 +34692,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/6c42d0cf3754d2704f7c8875f98e9036acc39b68",
     "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium-0233bf77af3e0ab7303ae7099209d58a.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/65so6Rw9HeHGLAE45WqNz5",
-    "animeId": 245
+    "animeId": 245,
+    "previewUrl": "https://p.scdn.co/mp3-preview/6c42d0cf3754d2704f7c8875f98e9036acc39b68"
   },
   {
     "id": 1292,
@@ -32631,7 +34712,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/e809162d7ce597fe907b5c04ee45bbc279498dc1",
     "coverUrl": "https://media.kitsu.app/anime/48233/poster_image/medium-e603ef5f8bac42574f7b48c0da994400.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/135pqmiywjoHxMHUSauO7n",
-    "animeId": 406
+    "animeId": 406,
+    "previewUrl": "https://p.scdn.co/mp3-preview/e809162d7ce597fe907b5c04ee45bbc279498dc1"
   },
   {
     "id": 1293,
@@ -32650,7 +34732,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/baba908e1dd4422854e2f7882714e5ecea479daa",
     "coverUrl": "https://media.kitsu.app/anime/44426/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4qdbiKsZ80DNh765HKopCj",
-    "animeId": 155
+    "animeId": 155,
+    "previewUrl": "https://p.scdn.co/mp3-preview/baba908e1dd4422854e2f7882714e5ecea479daa"
   },
   {
     "id": 1294,
@@ -32669,7 +34752,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/53fca5694440732c5baa0bbe7ee515734abe65bb",
     "coverUrl": "https://media.kitsu.app/anime/48946/poster_image/medium-0e314e0d6ebfb67ed53d173c7b9d1287.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/1ScnC2q4xnTeUfB2awBFX1",
-    "animeId": 215
+    "animeId": 215,
+    "previewUrl": "https://p.scdn.co/mp3-preview/53fca5694440732c5baa0bbe7ee515734abe65bb"
   },
   {
     "id": 1295,
@@ -32688,7 +34772,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/9dec1f50bedf68b91126b58e59943f056669c72d",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/41024/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/59QeyJ5oFyiNDKroRfW2oQ",
-    "animeId": 86
+    "animeId": 86,
+    "previewUrl": "https://p.scdn.co/mp3-preview/9dec1f50bedf68b91126b58e59943f056669c72d"
   },
   {
     "id": 1296,
@@ -32707,7 +34792,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d09ec8def584fba1108478ac8e96084b6854a28d",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/5681/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5okqgcXfKkDTYIB4Lor3Oo",
-    "animeId": 261
+    "animeId": 261,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d09ec8def584fba1108478ac8e96084b6854a28d"
   },
   {
     "id": 1297,
@@ -32726,7 +34812,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/5dc87a53c20dd8309d0d08053256120e8fa4555d",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/44551/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0f2N22ZC9S9fAPuxcENBYM",
-    "animeId": 44
+    "animeId": 44,
+    "previewUrl": "https://p.scdn.co/mp3-preview/5dc87a53c20dd8309d0d08053256120e8fa4555d"
   },
   {
     "id": 1298,
@@ -32745,7 +34832,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/32a4744c20534e7a6c0e25aa80be5d521d53c1c0",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/43947/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/39Cyu9hc503gPF4dM0JLjx",
-    "animeId": 400
+    "animeId": 400,
+    "previewUrl": "https://p.scdn.co/mp3-preview/32a4744c20534e7a6c0e25aa80be5d521d53c1c0"
   },
   {
     "id": 1299,
@@ -32764,7 +34852,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/fcdddf03f604751b1fc2e8d5dba8a147a2056f6e",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/13612/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0OAFYu1INAKOSr9BPF6rzX",
-    "animeId": 99
+    "animeId": 99,
+    "previewUrl": "https://p.scdn.co/mp3-preview/fcdddf03f604751b1fc2e8d5dba8a147a2056f6e"
   },
   {
     "id": 1300,
@@ -32783,7 +34872,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/9c72f15586c19c490e66c4d65f7224c121eb49a9",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/7712/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7oyCjfiQnXflMq0IEGJaAP",
-    "animeId": 107
+    "animeId": 107,
+    "previewUrl": "https://p.scdn.co/mp3-preview/9c72f15586c19c490e66c4d65f7224c121eb49a9"
   },
   {
     "id": 1301,
@@ -32802,7 +34892,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/f1552f10e66454176c16250b7ec71809f9b4082d",
     "coverUrl": "https://media.kitsu.app/anime/42070/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/77sdG3mDmWtUduaSKGxihq",
-    "animeId": 182
+    "animeId": 182,
+    "previewUrl": "https://p.scdn.co/mp3-preview/f1552f10e66454176c16250b7ec71809f9b4082d"
   },
   {
     "id": 1302,
@@ -32821,7 +34912,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/924ad925eb073aab78a10d3911677eb5f485e17c",
     "coverUrl": "https://anifume.com/images/08/Dandadan-2.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0hBStgCjIuKpiyPEfBYXZV",
-    "animeId": 231
+    "animeId": 231,
+    "previewUrl": "https://p.scdn.co/mp3-preview/924ad925eb073aab78a10d3911677eb5f485e17c"
   },
   {
     "id": 1303,
@@ -32840,7 +34932,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/c08112af6551b7d888ef8d65eced2f3985cce882",
     "coverUrl": "https://media.kitsu.app/anime/48994/poster_image/large-d66ad0518e3dcd862ffc4b734a85c432.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/5V5MJ8GiMoVwuR1hIFdFE2",
-    "animeId": 119
+    "animeId": 119,
+    "previewUrl": "https://p.scdn.co/mp3-preview/c08112af6551b7d888ef8d65eced2f3985cce882"
   },
   {
     "id": 1304,
@@ -32859,7 +34952,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/fdec2ec4097dee70b6c1c7672c066a413f986919",
     "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium-0233bf77af3e0ab7303ae7099209d58a.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/0npTO9teAMcgu4m1MLAhbH",
-    "animeId": 53
+    "animeId": 53,
+    "previewUrl": "https://p.scdn.co/mp3-preview/fdec2ec4097dee70b6c1c7672c066a413f986919"
   },
   {
     "id": 1305,
@@ -32878,7 +34972,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/3e7a6514391136b591e743dfe983cbaad68cdea8",
     "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium-0233bf77af3e0ab7303ae7099209d58a.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/2qzXI1saohfjZBgeEzPDI2",
-    "animeId": 245
+    "animeId": 245,
+    "previewUrl": "https://p.scdn.co/mp3-preview/3e7a6514391136b591e743dfe983cbaad68cdea8"
   },
   {
     "id": 1306,
@@ -32897,7 +34992,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/e183e26f35d8af4abab7204b775c84692658a892",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/7000/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7pNT355inrl67CnWPDRAYG",
-    "animeId": 106
+    "animeId": 106,
+    "previewUrl": "https://p.scdn.co/mp3-preview/e183e26f35d8af4abab7204b775c84692658a892"
   },
   {
     "id": 1307,
@@ -32916,7 +35012,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/0478c33984837a2cd2554a97030dfa2cf39b887f",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/6448/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0kjF9oTDWTBWFB3jssI2SH",
-    "animeId": 37
+    "animeId": 37,
+    "previewUrl": "https://p.scdn.co/mp3-preview/0478c33984837a2cd2554a97030dfa2cf39b887f"
   },
   {
     "id": 1308,
@@ -32935,7 +35032,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/fbd08be488d2f4c4dfb4d026c8d6cde78f653f08",
     "coverUrl": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4zqJbswvwYmL1lAFdYJcAx",
-    "animeId": 120
+    "animeId": 120,
+    "previewUrl": "https://p.scdn.co/mp3-preview/fbd08be488d2f4c4dfb4d026c8d6cde78f653f08"
   },
   {
     "id": 1309,
@@ -32954,7 +35052,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/64f4ae1029814ab96d9e8c3bbc1ebf38a01809f5",
     "coverUrl": "https://media.kitsu.app/anime/44917/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4EuCaTCoEycMKhS9cgwU9Z",
-    "animeId": 131
+    "animeId": 131,
+    "previewUrl": "https://p.scdn.co/mp3-preview/64f4ae1029814ab96d9e8c3bbc1ebf38a01809f5"
   },
   {
     "id": 1310,
@@ -32973,7 +35072,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/9dae8528856689cd6ef3700980ca7344aef395b3",
     "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
     "spotifyUrl": "https://open.spotify.com/track/069JaCJqZk3T63e7KxVqfH",
-    "animeId": 126
+    "animeId": 126,
+    "previewUrl": "https://p.scdn.co/mp3-preview/9dae8528856689cd6ef3700980ca7344aef395b3"
   },
   {
     "id": 1311,
@@ -32992,7 +35092,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/96c529286defb84f9a40c648169adb171a55d55b",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/3936/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4XaJuCQuIPM4Xz8O6csrdZ",
-    "animeId": 65
+    "animeId": 65,
+    "previewUrl": "https://p.scdn.co/mp3-preview/96c529286defb84f9a40c648169adb171a55d55b"
   },
   {
     "id": 1312,
@@ -33011,7 +35112,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/43d654cd2c034cf83c0997f0dcc8c8aa35531376",
     "coverUrl": "https://media.kitsu.app/anime/13369/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2a78JDp7YVCyEydtRiHOn7",
-    "animeId": 192
+    "animeId": 192,
+    "previewUrl": "https://p.scdn.co/mp3-preview/43d654cd2c034cf83c0997f0dcc8c8aa35531376"
   },
   {
     "id": 1313,
@@ -33030,7 +35132,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/37b61ca856df6883f97825c43b0c6693877694f4",
     "coverUrl": "https://media.kitsu.app/anime/44196/poster_image/medium-a7b52a1e9cea5a04b29ee6878fbff923.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/5W2IYA5Su42XiI90GDdscj",
-    "animeId": 19
+    "animeId": 19,
+    "previewUrl": "https://p.scdn.co/mp3-preview/37b61ca856df6883f97825c43b0c6693877694f4"
   },
   {
     "id": 1314,
@@ -33049,7 +35152,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/681321eea061120f36d4b2520f2474f25615c5c0",
     "coverUrl": "https://media.kitsu.app/anime/47899/poster_image/medium-7c2a90df27e51f03bc70a0e86d79d88e.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/4jyfcb5s4H3hKl0CJXjYei",
-    "animeId": 284
+    "animeId": 284,
+    "previewUrl": "https://p.scdn.co/mp3-preview/681321eea061120f36d4b2520f2474f25615c5c0"
   },
   {
     "id": 1315,
@@ -33068,7 +35172,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/c94276a662d36fd467869e069e49e740daa402ba",
     "coverUrl": "https://anifume.com/images/48/Horimiya-Piece.jpg",
     "spotifyUrl": "https://open.spotify.com/track/15Xn4r9FY3725iHIfyq5hE",
-    "animeId": 14
+    "animeId": 14,
+    "previewUrl": "https://p.scdn.co/mp3-preview/c94276a662d36fd467869e069e49e740daa402ba"
   },
   {
     "id": 1316,
@@ -33087,7 +35192,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/a52f50f466dd2de7cc91fc167668ee9afcaf41a7",
     "coverUrl": "https://media.kitsu.app/anime/42929/poster_image/medium-c14f69d5c2cdb13e27b0ef03dde95248.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/0UlTAkFyXcBBs1HjtICAsD",
-    "animeId": 297
+    "animeId": 297,
+    "previewUrl": "https://p.scdn.co/mp3-preview/a52f50f466dd2de7cc91fc167668ee9afcaf41a7"
   },
   {
     "id": 1317,
@@ -33106,7 +35212,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/3974b416ce7a3ee240ff76db170fa18a53306120",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/42260/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7pvu8UPXXIex1bChP4yyiS",
-    "animeId": 114
+    "animeId": 114,
+    "previewUrl": "https://p.scdn.co/mp3-preview/3974b416ce7a3ee240ff76db170fa18a53306120"
   },
   {
     "id": 1318,
@@ -33125,7 +35232,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/7a2c9ccd6e1bab08f10e64e3ea8487188e467a23",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/8147/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5q2xUSTyggCisITlHEvtB1",
-    "animeId": 58
+    "animeId": 58,
+    "previewUrl": "https://p.scdn.co/mp3-preview/7a2c9ccd6e1bab08f10e64e3ea8487188e467a23"
   },
   {
     "id": 1319,
@@ -33144,7 +35252,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/78fc2f9219049b48d28661e13a2108da117d2191",
     "coverUrl": "https://media.kitsu.app/anime/8133/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2ETxIqlSgtlh8nnfVeKJld",
-    "animeId": 141
+    "animeId": 141,
+    "previewUrl": "https://p.scdn.co/mp3-preview/78fc2f9219049b48d28661e13a2108da117d2191"
   },
   {
     "id": 1320,
@@ -33163,7 +35272,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/f6efebe49dd2dcf0d9d99ccdea4f76aa4278831b",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/7645/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/47RntmKRiQvjLTpSefhGUP",
-    "animeId": 281
+    "animeId": 281,
+    "previewUrl": "https://p.scdn.co/mp3-preview/f6efebe49dd2dcf0d9d99ccdea4f76aa4278831b"
   },
   {
     "id": 1321,
@@ -33182,7 +35292,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/833e1be60f1da2440d1370241bd6c43d22161ec8",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/11606/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5GwXBrY91rDCB18cwpjsBz",
-    "animeId": 276
+    "animeId": 276,
+    "previewUrl": "https://p.scdn.co/mp3-preview/833e1be60f1da2440d1370241bd6c43d22161ec8"
   },
   {
     "id": 1322,
@@ -33201,7 +35312,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/e9df20caf82ee35245e5ad5908f3f5ad35876c70",
     "coverUrl": "https://media.kitsu.app/anime/41277/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5BRsrxiZkFkOl7YotaLQEp",
-    "animeId": 144
+    "animeId": 144,
+    "previewUrl": "https://p.scdn.co/mp3-preview/e9df20caf82ee35245e5ad5908f3f5ad35876c70"
   },
   {
     "id": 1323,
@@ -33220,7 +35332,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d1171bab285a321d336bddeeb7bce2861c4ae4fb",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/43896/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3iTOd09b4Dsz1QucpGMivX",
-    "animeId": 324
+    "animeId": 324,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d1171bab285a321d336bddeeb7bce2861c4ae4fb"
   },
   {
     "id": 1324,
@@ -33239,7 +35352,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d621f4f018041325e92da4e95a7b642f08b8700b",
     "coverUrl": "https://media.kitsu.app/anime/45532/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4rmspWmdoJIjw6Rm3cEvGm",
-    "animeId": 181
+    "animeId": 181,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d621f4f018041325e92da4e95a7b642f08b8700b"
   },
   {
     "id": 1325,
@@ -33258,7 +35372,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/c8b19ec1dc0d71dc3efad8067a07dce578f5cb49",
     "coverUrl": "https://media.kitsu.app/anime/13569/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4psph4gNDqUnGvBSq6UwwE",
-    "animeId": 151
+    "animeId": 151,
+    "previewUrl": "https://p.scdn.co/mp3-preview/c8b19ec1dc0d71dc3efad8067a07dce578f5cb49"
   },
   {
     "id": 1326,
@@ -33277,7 +35392,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b0eb9120884a683f3b834cfb52247e0b3bc06609",
     "coverUrl": "https://media.kitsu.app/anime/18/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2Lvp0KYwXrU1L9OHQNA5Be",
-    "animeId": 200
+    "animeId": 200,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b0eb9120884a683f3b834cfb52247e0b3bc06609"
   },
   {
     "id": 1327,
@@ -33296,7 +35412,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/21b88e68a64f19897056ed7fdc9bdc30d62e00b4",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/46722/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3gxK6ehmktiz8QRElreh5S",
-    "animeId": 397
+    "animeId": 397,
+    "previewUrl": "https://p.scdn.co/mp3-preview/21b88e68a64f19897056ed7fdc9bdc30d62e00b4"
   },
   {
     "id": 1328,
@@ -33315,7 +35432,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/9704d06df9d985bf320388c83c860af4f78eff0d",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/149/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4c17U06F2ngjTOF5z70Yyy",
-    "animeId": 344
+    "animeId": 344,
+    "previewUrl": "https://p.scdn.co/mp3-preview/9704d06df9d985bf320388c83c860af4f78eff0d"
   },
   {
     "id": 1329,
@@ -33334,7 +35452,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/14ccd3586aa81542359be4e4925f810a05f3fe42",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/6437/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1us1N0XEToufNnmzyhJPm5",
-    "animeId": 288
+    "animeId": 288,
+    "previewUrl": "https://p.scdn.co/mp3-preview/14ccd3586aa81542359be4e4925f810a05f3fe42"
   },
   {
     "id": 1330,
@@ -33353,7 +35472,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/970e58a77c0316791c46af1f0ea1b4b36c5748fe",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/7157/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/01rXepgii5VjwHUaajNMmm",
-    "animeId": 17
+    "animeId": 17,
+    "previewUrl": "https://p.scdn.co/mp3-preview/970e58a77c0316791c46af1f0ea1b4b36c5748fe"
   },
   {
     "id": 1331,
@@ -33372,7 +35492,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/52898bfcae941ed2990842d56878593e8c7e8dbb",
     "coverUrl": "https://media.kitsu.app/anime/7983/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6j3Nhz3FGomL4UJoJQI9Pc",
-    "animeId": 178
+    "animeId": 178,
+    "previewUrl": "https://p.scdn.co/mp3-preview/52898bfcae941ed2990842d56878593e8c7e8dbb"
   },
   {
     "id": 1332,
@@ -33391,7 +35512,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/e0a7212efebc07f6590a6b47e507ce5d578a9d7d",
     "coverUrl": "https://media.kitsu.app/anime/42929/poster_image/medium-c14f69d5c2cdb13e27b0ef03dde95248.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/3AfxHHhvIyHW4fEvCG9qLY",
-    "animeId": 297
+    "animeId": 297,
+    "previewUrl": "https://p.scdn.co/mp3-preview/e0a7212efebc07f6590a6b47e507ce5d578a9d7d"
   },
   {
     "id": 1333,
@@ -33410,7 +35532,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/408c94747017852f3f6772ab0891c432031b66d2",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/3128/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7BqBn9nzAq8spo5e7cZ0dJ",
-    "animeId": 83
+    "animeId": 83,
+    "previewUrl": "https://p.scdn.co/mp3-preview/408c94747017852f3f6772ab0891c432031b66d2"
   },
   {
     "id": 1334,
@@ -33429,7 +35552,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/67ea20051d23a47d74becbe982285c5320dbe577",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/44551/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/32OlwWuMpZ6b0aN2RZOeMS",
-    "animeId": 44
+    "animeId": 44,
+    "previewUrl": "https://p.scdn.co/mp3-preview/67ea20051d23a47d74becbe982285c5320dbe577"
   },
   {
     "id": 1335,
@@ -33448,7 +35572,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/02f41843308e75503161cfce28114902b9e072fa",
     "coverUrl": "https://media.kitsu.app/anime/46183/poster_image/large-18f01df516283259a59ae88e549918de.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/2qPUnoasNe4Ep43emVXEig",
-    "animeId": 80
+    "animeId": 80,
+    "previewUrl": "https://p.scdn.co/mp3-preview/02f41843308e75503161cfce28114902b9e072fa"
   },
   {
     "id": 1336,
@@ -33467,7 +35592,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/2ba8a14b311c1f4ad446b94b71da3f507d555193",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/8536/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/59dLtGBS26x7kc0rHbaPrq",
-    "animeId": 340
+    "animeId": 340,
+    "previewUrl": "https://p.scdn.co/mp3-preview/2ba8a14b311c1f4ad446b94b71da3f507d555193"
   },
   {
     "id": 1337,
@@ -33486,7 +35612,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/c7ead2fb0d0be4004af5b912846138692b1fc0f9",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/176/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6YbhspuOar1D9WSSnfe7ds",
-    "animeId": 314
+    "animeId": 314,
+    "previewUrl": "https://p.scdn.co/mp3-preview/c7ead2fb0d0be4004af5b912846138692b1fc0f9"
   },
   {
     "id": 1338,
@@ -33505,7 +35632,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/7b5d54ffb3c4e5c28adafe19532de22508d62851",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/5447/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1Slwb6dOYkBlWal1PGtnNg",
-    "animeId": 392
+    "animeId": 392,
+    "previewUrl": "https://p.scdn.co/mp3-preview/7b5d54ffb3c4e5c28adafe19532de22508d62851"
   },
   {
     "id": 1339,
@@ -33524,7 +35652,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/350ab6582ccc6eebbf6e7e0227be5e356e043c91",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/10028/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6SKwQghsR8AISlxhcwyA9R",
-    "animeId": 10
+    "animeId": 10,
+    "previewUrl": "https://p.scdn.co/mp3-preview/350ab6582ccc6eebbf6e7e0227be5e356e043c91"
   },
   {
     "id": 1340,
@@ -33543,7 +35672,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/8959d5e6580b9d00fefd87bbbbf0dac0940a9d51",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/43896/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5QM0SsyzmBM0pbFY52Xj1X",
-    "animeId": 324
+    "animeId": 324,
+    "previewUrl": "https://p.scdn.co/mp3-preview/8959d5e6580b9d00fefd87bbbbf0dac0940a9d51"
   },
   {
     "id": 1341,
@@ -33562,7 +35692,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/3abcba42a4cb3566c4840c29fd6695459065b1ae",
     "coverUrl": "https://media.kitsu.app/anime/42886/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4cluDES4hQEUhmXj6TXkSo",
-    "animeId": 156
+    "animeId": 156,
+    "previewUrl": "https://p.scdn.co/mp3-preview/3abcba42a4cb3566c4840c29fd6695459065b1ae"
   },
   {
     "id": 1342,
@@ -33581,7 +35712,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/0952568e496914bb61383588ac417ec70abefc1d",
     "coverUrl": "https://media.kitsu.app/anime/11100/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1EzrEOXmMH3G43AXT1y7pA",
-    "animeId": 161
+    "animeId": 161,
+    "previewUrl": "https://p.scdn.co/mp3-preview/0952568e496914bb61383588ac417ec70abefc1d"
   },
   {
     "id": 1343,
@@ -33600,7 +35732,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/34d92e8aa5786233d5a0abb1b1d9b8325d7e9fd6",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/818/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2A5YAFeEwGi7KlGMYRf5dX",
-    "animeId": 74
+    "animeId": 74,
+    "previewUrl": "https://p.scdn.co/mp3-preview/34d92e8aa5786233d5a0abb1b1d9b8325d7e9fd6"
   },
   {
     "id": 1344,
@@ -33619,7 +35752,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/3e82b61946a5ddb0fd77ceec97c002b28f58003b",
     "coverUrl": "https://media.kitsu.app/anime/44426/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3avYqdwHKEq8beXbeWCKqJ",
-    "animeId": 155
+    "animeId": 155,
+    "previewUrl": "https://p.scdn.co/mp3-preview/3e82b61946a5ddb0fd77ceec97c002b28f58003b"
   },
   {
     "id": 1345,
@@ -33638,7 +35772,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/6316f6cf12631da62c5b786421b25e66c3ab4ea6",
     "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2tpWsVSb9UEmDRxAl1zhX1",
-    "animeId": 238
+    "animeId": 238,
+    "previewUrl": "https://p.scdn.co/mp3-preview/6316f6cf12631da62c5b786421b25e66c3ab4ea6"
   },
   {
     "id": 1346,
@@ -33657,7 +35792,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/f6e266d1ac2fe28e40f2e13ebc85231db65412c6",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/7359/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4lLtanYk6tkMvooU0tWzG8",
-    "animeId": 110
+    "animeId": 110,
+    "previewUrl": "https://p.scdn.co/mp3-preview/f6e266d1ac2fe28e40f2e13ebc85231db65412c6"
   },
   {
     "id": 1347,
@@ -33676,7 +35812,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d531fa5b94ad57fb9c2286d8b2374be1740fd9d3",
     "coverUrl": "https://media.kitsu.app/anime/45401/poster_image/large-0850c0cfa153c42d890ac90b014b78b6.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/4rHZZAmHpZrA3iH5zx8frV",
-    "animeId": 115
+    "animeId": 115,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d531fa5b94ad57fb9c2286d8b2374be1740fd9d3"
   },
   {
     "id": 1348,
@@ -33695,7 +35832,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/2d1fd54c4a4147b43e1eb79c00380e36818a2546",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/43005/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3XVBdLihbNbxUwZosxcGuJ",
-    "animeId": 111
+    "animeId": 111,
+    "previewUrl": "https://p.scdn.co/mp3-preview/2d1fd54c4a4147b43e1eb79c00380e36818a2546"
   },
   {
     "id": 1349,
@@ -33714,7 +35852,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b2ba87ea556f5c9f44c947b176ccec21da3e612f",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/41083/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3E7dfMvvCLUddWissuqMwr",
-    "animeId": 116
+    "animeId": 116,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b2ba87ea556f5c9f44c947b176ccec21da3e612f"
   },
   {
     "id": 1350,
@@ -33733,7 +35872,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/ebf0e42b2eb2acb22639c23b74d49f07038e5887",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/8270/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3U4isOIWM3VvDubwSI3y7a",
-    "animeId": 82
+    "animeId": 82,
+    "previewUrl": "https://p.scdn.co/mp3-preview/ebf0e42b2eb2acb22639c23b74d49f07038e5887"
   },
   {
     "id": 1351,
@@ -33752,7 +35892,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/f5452ebf843f4c126eacc038fbfdc9502bf0a9b5",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/13066/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4r6eNCsrZnQWJzzvFh4nlg",
-    "animeId": 109
+    "animeId": 109,
+    "previewUrl": "https://p.scdn.co/mp3-preview/f5452ebf843f4c126eacc038fbfdc9502bf0a9b5"
   },
   {
     "id": 1352,
@@ -33771,7 +35912,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/518c823cf0f8b862bed0fa45e34cc63db5ea58e4",
     "coverUrl": "https://media.kitsu.app/anime/47271/poster_image/medium-90a981a5a5570ba5fdb809a3152c8348.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/4HlFJV71xXKIGcU3kRyttv",
-    "animeId": 29
+    "animeId": 29,
+    "previewUrl": "https://p.scdn.co/mp3-preview/518c823cf0f8b862bed0fa45e34cc63db5ea58e4"
   },
   {
     "id": 1353,
@@ -33790,7 +35932,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/1bd8a2c97ed26b8d8c6db3b0f74fc329f74c9207",
     "coverUrl": "https://cdn.myanimelist.net/images/anime/4/19644l.jpg",
     "spotifyUrl": "https://open.spotify.com/track/386RUes7n1uM1yfzgeUuwp",
-    "animeId": 368
+    "animeId": 368,
+    "previewUrl": "https://p.scdn.co/mp3-preview/1bd8a2c97ed26b8d8c6db3b0f74fc329f74c9207"
   },
   {
     "id": 1354,
@@ -33809,7 +35952,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d90f4e5f15d8ed411307945560b1db8cca6b253b",
     "coverUrl": "https://media.kitsu.app/anime/11578/poster_image/medium-9ace4ac709f334cc96d244c15fe7d4d0.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/6fxVffaTuwjgEk5h9QyRjy",
-    "animeId": 56
+    "animeId": 56,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d90f4e5f15d8ed411307945560b1db8cca6b253b"
   },
   {
     "id": 1355,
@@ -33828,7 +35972,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/abf52d96f3f35554fcc0ea7005d9e1ce848efd77",
     "coverUrl": "https://anifume.com/images/54/Tokidoki-Bosotto-Russia-go.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6JV2JOEocMgcZxYSZelKcc",
-    "animeId": 202
+    "animeId": 202,
+    "previewUrl": "https://p.scdn.co/mp3-preview/abf52d96f3f35554fcc0ea7005d9e1ce848efd77"
   },
   {
     "id": 1356,
@@ -33847,7 +35992,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/e58475d2391025fe032cba6b5282c71a6141223e",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/1491/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2yPoXCs7BSIUrucMdK5PzV",
-    "animeId": 391
+    "animeId": 391,
+    "previewUrl": "https://p.scdn.co/mp3-preview/e58475d2391025fe032cba6b5282c71a6141223e"
   },
   {
     "id": 1357,
@@ -33866,7 +36012,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/2265c5b16b2e19f65da045df41cf2b4b8fd66ea3",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/47390/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4G2Hbfwvn3oH7LxxPXjjGn",
-    "animeId": 399
+    "animeId": 399,
+    "previewUrl": "https://p.scdn.co/mp3-preview/2265c5b16b2e19f65da045df41cf2b4b8fd66ea3"
   },
   {
     "id": 1358,
@@ -33885,7 +36032,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/f0adc30b06534f10629df897c1684193f340677b",
     "coverUrl": "https://media.kitsu.app/anime/48534/poster_image/medium-c38c15266ae228974e8c2a00d776ea92.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/4nVBt6MZDDP6tRVdQTgxJg",
-    "animeId": 207
+    "animeId": 207,
+    "previewUrl": "https://p.scdn.co/mp3-preview/f0adc30b06534f10629df897c1684193f340677b"
   },
   {
     "id": 1359,
@@ -33904,7 +36052,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/2e2100af8cd386f628684caafb50662b67656de0",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/3505/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1mXVgsBdtIVeCLJnSnmtdV",
-    "animeId": 45
+    "animeId": 45,
+    "previewUrl": "https://p.scdn.co/mp3-preview/2e2100af8cd386f628684caafb50662b67656de0"
   },
   {
     "id": 1360,
@@ -33923,7 +36072,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/af23e81c3bcd8cf1b3bdc5fdb42bd9c89eb0e89d",
     "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5uCax9HTNlzGybIStD3vDh",
-    "animeId": 238
+    "animeId": 238,
+    "previewUrl": "https://p.scdn.co/mp3-preview/af23e81c3bcd8cf1b3bdc5fdb42bd9c89eb0e89d"
   },
   {
     "id": 1361,
@@ -33942,7 +36092,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/c4a7b5e8b012344e607dc50991a32b4a00326739",
     "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
     "spotifyUrl": "https://open.spotify.com/track/20I6sIOMTCkB6w7ryavxtO",
-    "animeId": 23
+    "animeId": 23,
+    "previewUrl": "https://p.scdn.co/mp3-preview/c4a7b5e8b012344e607dc50991a32b4a00326739"
   },
   {
     "id": 1362,
@@ -33961,7 +36112,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b4e70a4b9cfc7e25c2ac9c6ec4325524ec84c1d1",
     "coverUrl": "https://media.kitsu.app/anime/46300/poster_image/medium-c1c025bbee42bed048e628b1eae278c0.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/4rMNgxEwGWoPHIUcvB5BrB",
-    "animeId": 232
+    "animeId": 232,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b4e70a4b9cfc7e25c2ac9c6ec4325524ec84c1d1"
   },
   {
     "id": 1363,
@@ -33980,7 +36132,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/71b3faabe9cf3b0d5613ba1dd110cbbbfde88e03",
     "coverUrl": "https://media.kitsu.app/anime/48618/poster_image/medium-3ef7ecfe0da23a4d4ee757d46dfcd1db.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/6tl840rz5kY1ybVjv1jre2",
-    "animeId": 211
+    "animeId": 211,
+    "previewUrl": "https://p.scdn.co/mp3-preview/71b3faabe9cf3b0d5613ba1dd110cbbbfde88e03"
   },
   {
     "id": 1364,
@@ -33999,7 +36152,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/5faf8a082e1cb3f18c10cc6aa85eeca1c7014263",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/8270/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/60nZcImufyMA1MKQY3dcCH",
-    "animeId": 82
+    "animeId": 82,
+    "previewUrl": "https://p.scdn.co/mp3-preview/5faf8a082e1cb3f18c10cc6aa85eeca1c7014263"
   },
   {
     "id": 1365,
@@ -34018,7 +36172,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/a6673e86dccaf0232ab041314ec716e03e2f34fc",
     "coverUrl": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5MxWTfmlmRDx6VZHvB9xV8",
-    "animeId": 22
+    "animeId": 22,
+    "previewUrl": "https://p.scdn.co/mp3-preview/a6673e86dccaf0232ab041314ec716e03e2f34fc"
   },
   {
     "id": 1366,
@@ -34037,7 +36192,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/7157fc5b99c54f5e11803b888d20fdbb9e731949",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/8536/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7j4OmvkjRz0PrjFADlHfQx",
-    "animeId": 340
+    "animeId": 340,
+    "previewUrl": "https://p.scdn.co/mp3-preview/7157fc5b99c54f5e11803b888d20fdbb9e731949"
   },
   {
     "id": 1367,
@@ -34056,7 +36212,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d4f23f96eec1b542cd2e12fa758d3560137c4aa1",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/13503/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0cCf8UpRfjOB7yp1yqzMHM",
-    "animeId": 43
+    "animeId": 43,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d4f23f96eec1b542cd2e12fa758d3560137c4aa1"
   },
   {
     "id": 1368,
@@ -34075,7 +36232,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/fba762cc2183add5fcca91232a8f40237bee546c",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/7578/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6IALh7qtVXOlYXDDQ84Fr1",
-    "animeId": 267
+    "animeId": 267,
+    "previewUrl": "https://p.scdn.co/mp3-preview/fba762cc2183add5fcca91232a8f40237bee546c"
   },
   {
     "id": 1369,
@@ -34094,7 +36252,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/9a34c049025dc4271dadf3b805073ca87b238c31",
     "coverUrl": "https://media.kitsu.app/anime/26/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/21jWrW7qGdX5xXO5FPhLSM",
-    "animeId": 165
+    "animeId": 165,
+    "previewUrl": "https://p.scdn.co/mp3-preview/9a34c049025dc4271dadf3b805073ca87b238c31"
   },
   {
     "id": 1370,
@@ -34113,7 +36272,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/263ff4c9c7b26aad7dfae56bc2734cf5c92a47df",
     "coverUrl": "https://media.kitsu.app/anime/4249/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7iXscKdrUdBqLmzBv1i9Ad",
-    "animeId": 189
+    "animeId": 189,
+    "previewUrl": "https://p.scdn.co/mp3-preview/263ff4c9c7b26aad7dfae56bc2734cf5c92a47df"
   },
   {
     "id": 1371,
@@ -34132,7 +36292,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/112df6520544173fd52b95b91b1070c865b5e8ff",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/8270/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7f1BKoVl0ZJhGMcnvyrHlt",
-    "animeId": 82
+    "animeId": 82,
+    "previewUrl": "https://p.scdn.co/mp3-preview/112df6520544173fd52b95b91b1070c865b5e8ff"
   },
   {
     "id": 1372,
@@ -34151,7 +36312,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/dd01f8338fef39671eb97247cd1652109122780a",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/13612/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/60qEvumYWNZTXYnU0BrPda",
-    "animeId": 99
+    "animeId": 99,
+    "previewUrl": "https://p.scdn.co/mp3-preview/dd01f8338fef39671eb97247cd1652109122780a"
   },
   {
     "id": 1373,
@@ -34170,7 +36332,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/e4f05861b0470667317bc5f4033496dae5cf320f",
     "coverUrl": "https://media.kitsu.app/anime/12976/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7vnw2nU0xpc9RABEgc3pxQ",
-    "animeId": 138
+    "animeId": 138,
+    "previewUrl": "https://p.scdn.co/mp3-preview/e4f05861b0470667317bc5f4033496dae5cf320f"
   },
   {
     "id": 1374,
@@ -34189,7 +36352,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d07c1d45b22c333196e6ce3909ef9318df79af99",
     "coverUrl": "https://media.kitsu.app/anime/45598/poster_image/medium-c9bf66231c51a0a552fbce2d91bb3a20.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/3DKdtwZkiqr5zvhrRpEd23",
-    "animeId": 373
+    "animeId": 373,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d07c1d45b22c333196e6ce3909ef9318df79af99"
   },
   {
     "id": 1375,
@@ -34208,7 +36372,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/a7602b37cf5825e3aa5b6f40174595ecb751237d",
     "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/6R7HEq0CsyPImro1uDhUcx",
-    "animeId": 204
+    "animeId": 204,
+    "previewUrl": "https://p.scdn.co/mp3-preview/a7602b37cf5825e3aa5b6f40174595ecb751237d"
   },
   {
     "id": 1376,
@@ -34227,7 +36392,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/99e6d64392c575a507e9e39b9f413a89d625f4c1",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/10356/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/79qhHPvit6BeOVu2wNnLgJ",
-    "animeId": 272
+    "animeId": 272,
+    "previewUrl": "https://p.scdn.co/mp3-preview/99e6d64392c575a507e9e39b9f413a89d625f4c1"
   },
   {
     "id": 1377,
@@ -34246,7 +36412,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/98a8c80d65df698b6c9efdcaf0bfa6299f75db12",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/176/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2OULHL0yM3KbaHC1vlTffC",
-    "animeId": 314
+    "animeId": 314,
+    "previewUrl": "https://p.scdn.co/mp3-preview/98a8c80d65df698b6c9efdcaf0bfa6299f75db12"
   },
   {
     "id": 1378,
@@ -34265,7 +36432,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/92b3626154540a14b3b74f61a941b30cb001b368",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/48624/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4iQTpRoRZUvXRdgZtI3KUi",
-    "animeId": 349
+    "animeId": 349,
+    "previewUrl": "https://p.scdn.co/mp3-preview/92b3626154540a14b3b74f61a941b30cb001b368"
   },
   {
     "id": 1379,
@@ -34284,7 +36452,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/23f01d7f8a719c391ded83753b0b46ecc58c5ac5",
     "coverUrl": "https://cdn.myanimelist.net/images/anime/1792/143588l.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6bYp3cjdAGKJNSxRTSgNOD",
-    "animeId": 362
+    "animeId": 362,
+    "previewUrl": "https://p.scdn.co/mp3-preview/23f01d7f8a719c391ded83753b0b46ecc58c5ac5"
   },
   {
     "id": 1380,
@@ -34303,7 +36472,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/3c808dbb1062f2eb28b41a9e937bb5fda265524a",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/1376/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/06DPpk0hUJEgpzl5cuWNI6",
-    "animeId": 34
+    "animeId": 34,
+    "previewUrl": "https://p.scdn.co/mp3-preview/3c808dbb1062f2eb28b41a9e937bb5fda265524a"
   },
   {
     "id": 1381,
@@ -34322,7 +36492,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/665f508733a2fb8b837c89729e4e015b5c9705fc",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/47195/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2ezfWejKhD3CJS0qLNJKkQ",
-    "animeId": 395
+    "animeId": 395,
+    "previewUrl": "https://p.scdn.co/mp3-preview/665f508733a2fb8b837c89729e4e015b5c9705fc"
   },
   {
     "id": 1382,
@@ -34341,7 +36512,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/fd78c035d2084266fdebdc2b5144380f01b699de",
     "coverUrl": "https://media.kitsu.app/anime/46603/poster_image/medium-c71c4c11b6099b25be248eb847326ea0.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/5Ssjl0BJRFKtjxbgZlnoj9",
-    "animeId": 374
+    "animeId": 374,
+    "previewUrl": "https://p.scdn.co/mp3-preview/fd78c035d2084266fdebdc2b5144380f01b699de"
   },
   {
     "id": 1383,
@@ -34360,7 +36532,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/f4368a458764fe8ccafd9bff3f5192ff2374bbdf",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/14312/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6VzhAqu1DImWLGpCjyaReG",
-    "animeId": 287
+    "animeId": 287,
+    "previewUrl": "https://p.scdn.co/mp3-preview/f4368a458764fe8ccafd9bff3f5192ff2374bbdf"
   },
   {
     "id": 1384,
@@ -34379,7 +36552,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/ab5170afba82a20e7a043181dcc79865028e136e",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/4397/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0R5Xy2nx62fEA0ImqfHf4L",
-    "animeId": 20
+    "animeId": 20,
+    "previewUrl": "https://p.scdn.co/mp3-preview/ab5170afba82a20e7a043181dcc79865028e136e"
   },
   {
     "id": 1385,
@@ -34398,7 +36572,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/ee7c9a7be43a730317016b6bd600deb0e9569b7a",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/6462/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/166ZalajmAfOUqDg9EeXJ7",
-    "animeId": 343
+    "animeId": 343,
+    "previewUrl": "https://p.scdn.co/mp3-preview/ee7c9a7be43a730317016b6bd600deb0e9569b7a"
   },
   {
     "id": 1386,
@@ -34417,7 +36592,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/8f29a0b5056124d02d95806a524369e10738a46e",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/44551/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1EUhTdMoXsmFFe5wGG03vj",
-    "animeId": 44
+    "animeId": 44,
+    "previewUrl": "https://p.scdn.co/mp3-preview/8f29a0b5056124d02d95806a524369e10738a46e"
   },
   {
     "id": 1387,
@@ -34436,7 +36612,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/530554aa3b5f09a9b0a6c567bf342bb6835b1204",
     "coverUrl": "https://media.kitsu.app/anime/7307/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/60ZuPJ8kseTn6isqhyxpCi",
-    "animeId": 191
+    "animeId": 191,
+    "previewUrl": "https://p.scdn.co/mp3-preview/530554aa3b5f09a9b0a6c567bf342bb6835b1204"
   },
   {
     "id": 1388,
@@ -34455,7 +36632,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/4d562880c9f85e1f38e6a868a99a52c3355ea746",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/7515/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5WEc7rmyL9K2djBfF6yX2G",
-    "animeId": 13
+    "animeId": 13,
+    "previewUrl": "https://p.scdn.co/mp3-preview/4d562880c9f85e1f38e6a868a99a52c3355ea746"
   },
   {
     "id": 1389,
@@ -34474,7 +36652,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/e006143e6dd9b5781927b59ca0ac74ee2e698eb9",
     "coverUrl": "https://media.kitsu.app/anime/41334/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5VY8UJBCIa7RgzLBculPuv",
-    "animeId": 177
+    "animeId": 177,
+    "previewUrl": "https://p.scdn.co/mp3-preview/e006143e6dd9b5781927b59ca0ac74ee2e698eb9"
   },
   {
     "id": 1390,
@@ -34493,7 +36672,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/59a6a90f73cd5a6f081a11a417c9693af757240d",
     "coverUrl": "https://media.kitsu.app/anime/41334/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2Y26aMWTIvcIEQEGuTLhNR",
-    "animeId": 177
+    "animeId": 177,
+    "previewUrl": "https://p.scdn.co/mp3-preview/59a6a90f73cd5a6f081a11a417c9693af757240d"
   },
   {
     "id": 1391,
@@ -34512,7 +36692,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/8d491d34aafd6eeb7e181faf5c5b94e917731575",
     "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7AKVPaALvAvrJPTDmEg3tT",
-    "animeId": 238
+    "animeId": 238,
+    "previewUrl": "https://p.scdn.co/mp3-preview/8d491d34aafd6eeb7e181faf5c5b94e917731575"
   },
   {
     "id": 1392,
@@ -34531,7 +36712,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/58d5f019715dce42d844868d9798dc8111195be0",
     "coverUrl": "https://media.kitsu.app/anime/44382/poster_image/large-8ffc8ea9b6a1f9e79bc626e03baab167.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/7CFEgj1Fn9XRRV3H2WWJke",
-    "animeId": 70
+    "animeId": 70,
+    "previewUrl": "https://p.scdn.co/mp3-preview/58d5f019715dce42d844868d9798dc8111195be0"
   },
   {
     "id": 1393,
@@ -34550,7 +36732,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/1b34a3feb897ffb8acccbb135bd9a2f4ef1ba408",
     "coverUrl": "https://media.kitsu.app/anime/47192/poster_image/medium-671e94191e8d931769dfa6d8a73e6491.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/1dDzDZADzctY4uZFhy9afh",
-    "animeId": 243
+    "animeId": 243,
+    "previewUrl": "https://p.scdn.co/mp3-preview/1b34a3feb897ffb8acccbb135bd9a2f4ef1ba408"
   },
   {
     "id": 1394,
@@ -34569,7 +36752,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/739ec75b9e4e73e7e5d96924fdc2b842a7ccb5a9",
     "coverUrl": "https://media.kitsu.app/anime/9991/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6cWbOlreslaWQp8JVOhqcm",
-    "animeId": 145
+    "animeId": 145,
+    "previewUrl": "https://p.scdn.co/mp3-preview/739ec75b9e4e73e7e5d96924fdc2b842a7ccb5a9"
   },
   {
     "id": 1395,
@@ -34588,7 +36772,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/2803966e6bf164b58ea99ec145b095e3043a6e11",
     "coverUrl": "https://media.kitsu.app/anime/13369/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/51EN90GQ1JhX7n1noAB0s4",
-    "animeId": 192
+    "animeId": 192,
+    "previewUrl": "https://p.scdn.co/mp3-preview/2803966e6bf164b58ea99ec145b095e3043a6e11"
   },
   {
     "id": 1396,
@@ -34607,7 +36792,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/4c2d7f05f5406e3c81a4b2f50004b1f7a7f10e88",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/45059/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6yFMBM4QavlNFUTGZ3cpI6",
-    "animeId": 290
+    "animeId": 290,
+    "previewUrl": "https://p.scdn.co/mp3-preview/4c2d7f05f5406e3c81a4b2f50004b1f7a7f10e88"
   },
   {
     "id": 1397,
@@ -34626,7 +36812,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/1d45de65b330e0ca1006fc06fabf0ba16e18e7cc",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/444/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5YoPPNj47iZSZEWum0ajUo",
-    "animeId": 309
+    "animeId": 309,
+    "previewUrl": "https://p.scdn.co/mp3-preview/1d45de65b330e0ca1006fc06fabf0ba16e18e7cc"
   },
   {
     "id": 1398,
@@ -34645,7 +36832,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b140387e9b8d8e535040abc64b0c533098493570",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/8778/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4kvBebTWC2UmFevtoG0BXy",
-    "animeId": 277
+    "animeId": 277,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b140387e9b8d8e535040abc64b0c533098493570"
   },
   {
     "id": 1399,
@@ -34664,7 +36852,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/e15f9ab330238bac5b9dfe8fe7a865bcddd3fa55",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/7881/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3tO60AUMSHnVioIi8sij5H",
-    "animeId": 49
+    "animeId": 49,
+    "previewUrl": "https://p.scdn.co/mp3-preview/e15f9ab330238bac5b9dfe8fe7a865bcddd3fa55"
   },
   {
     "id": 1400,
@@ -34683,7 +36872,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/78741f1e22a748d33d35fb9b8a42e18ff813ba34",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/41870/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/156vW59aySrZRah9fGpNJk",
-    "animeId": 381
+    "animeId": 381,
+    "previewUrl": "https://p.scdn.co/mp3-preview/78741f1e22a748d33d35fb9b8a42e18ff813ba34"
   },
   {
     "id": 1401,
@@ -34702,7 +36892,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/8123704beef76611a7af4f3e74b2e247dbf214da",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/1434/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/07ZIrtR00m3t9AcmeRZ7vQ",
-    "animeId": 264
+    "animeId": 264,
+    "previewUrl": "https://p.scdn.co/mp3-preview/8123704beef76611a7af4f3e74b2e247dbf214da"
   },
   {
     "id": 1402,
@@ -34721,7 +36912,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/4cc8703231dc8a4f6b41a7ca5bf44adae7cd5793",
     "coverUrl": "https://media.kitsu.app/anime/4802/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1fBIWQh21BNWLhuhXDMog1",
-    "animeId": 160
+    "animeId": 160,
+    "previewUrl": "https://p.scdn.co/mp3-preview/4cc8703231dc8a4f6b41a7ca5bf44adae7cd5793"
   },
   {
     "id": 1403,
@@ -34740,7 +36932,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/775a3af16fdffe76ca8a710ea818298e64c5ff23",
     "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2eoRByVEfnVlvBzjdhT7NX",
-    "animeId": 252
+    "animeId": 252,
+    "previewUrl": "https://p.scdn.co/mp3-preview/775a3af16fdffe76ca8a710ea818298e64c5ff23"
   },
   {
     "id": 1404,
@@ -34759,7 +36952,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/28f9c3823533416ca733fe8d1a2674c6e9463985",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/13723/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6z56u8jPSSroDFrJVD5cMf",
-    "animeId": 98
+    "animeId": 98,
+    "previewUrl": "https://p.scdn.co/mp3-preview/28f9c3823533416ca733fe8d1a2674c6e9463985"
   },
   {
     "id": 1405,
@@ -34778,7 +36972,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/012aec17d33ff5468ddf4c771daaa2471eb9f9ce",
     "coverUrl": "https://media.kitsu.app/anime/46004/poster_image/medium-b5e9b4b5a0e2e4d3d7dc8fd2f7d3af10.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/6pTSm2Sw6fEEO4iKfOJqTL",
-    "animeId": 291
+    "animeId": 291,
+    "previewUrl": "https://p.scdn.co/mp3-preview/012aec17d33ff5468ddf4c771daaa2471eb9f9ce"
   },
   {
     "id": 1406,
@@ -34797,7 +36992,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b5e38304bbf2f595fc051ee14993221e61ab67c0",
     "coverUrl": "https://media.kitsu.app/anime/13569/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7ArmHy7HS14hkfmZYOTwd6",
-    "animeId": 151
+    "animeId": 151,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b5e38304bbf2f595fc051ee14993221e61ab67c0"
   },
   {
     "id": 1407,
@@ -34816,7 +37012,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/8822e5ec9f5cd8e9f496f62e6ee0b3cc090475cd",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/8271/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7Iu9RvbMi1jShosg1b5mxt",
-    "animeId": 52
+    "animeId": 52,
+    "previewUrl": "https://p.scdn.co/mp3-preview/8822e5ec9f5cd8e9f496f62e6ee0b3cc090475cd"
   },
   {
     "id": 1408,
@@ -34835,7 +37032,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/894ca323627f55eccfbb38d2357bc513e473783d",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/47743/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1QbP49w60Db4mrhYbsQ8bg",
-    "animeId": 384
+    "animeId": 384,
+    "previewUrl": "https://p.scdn.co/mp3-preview/894ca323627f55eccfbb38d2357bc513e473783d"
   },
   {
     "id": 1409,
@@ -34854,7 +37052,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/46c449c10ded57572abe9f7ece24ed0665eb4ddf",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/3853/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5zXYZPPSVH3lp0qGbmKT2Q",
-    "animeId": 259
+    "animeId": 259,
+    "previewUrl": "https://p.scdn.co/mp3-preview/46c449c10ded57572abe9f7ece24ed0665eb4ddf"
   },
   {
     "id": 1410,
@@ -34873,7 +37072,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/c40e0e99f1888109998d13461ec5e9a764208ded",
     "coverUrl": "https://media.kitsu.app/anime/45517/poster_image/medium-55342a19ef9eb98db5dfd17c9b83b38c.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/0jxzVn8rr59knZFALDokLy",
-    "animeId": 370
+    "animeId": 370,
+    "previewUrl": "https://p.scdn.co/mp3-preview/c40e0e99f1888109998d13461ec5e9a764208ded"
   },
   {
     "id": 1411,
@@ -34892,7 +37092,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b631104a2bf2942e95ad811fe9103caa2db0ab9f",
     "coverUrl": "https://media.kitsu.app/anime/46481/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3jQEXiy7AtzDMiilrYlO0H",
-    "animeId": 196
+    "animeId": 196,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b631104a2bf2942e95ad811fe9103caa2db0ab9f"
   },
   {
     "id": 1412,
@@ -34911,7 +37112,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/6655f40f95d28d7b8e7cdb6cb8901445b11bfa03",
     "coverUrl": "https://media.kitsu.app/anime/42886/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/28WxTxO0DM9PyKBhvb8Vb0",
-    "animeId": 156
+    "animeId": 156,
+    "previewUrl": "https://p.scdn.co/mp3-preview/6655f40f95d28d7b8e7cdb6cb8901445b11bfa03"
   },
   {
     "id": 1413,
@@ -34930,7 +37132,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/ba8c525d86469815abfc79d561b6cb290ced011f",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/818/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5kWEorPV6WHYf5htPXONcL",
-    "animeId": 74
+    "animeId": 74,
+    "previewUrl": "https://p.scdn.co/mp3-preview/ba8c525d86469815abfc79d561b6cb290ced011f"
   },
   {
     "id": 1414,
@@ -34949,7 +37152,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/ce6b8535d69603a0673da1e64cb633998c7b5afe",
     "coverUrl": "https://media.kitsu.app/anime/46603/poster_image/medium-c71c4c11b6099b25be248eb847326ea0.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/4njC4CPPqAQZ5bo6eEjP0e",
-    "animeId": 374
+    "animeId": 374,
+    "previewUrl": "https://p.scdn.co/mp3-preview/ce6b8535d69603a0673da1e64cb633998c7b5afe"
   },
   {
     "id": 1415,
@@ -34968,7 +37172,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/c88dd85d0b8b708d70d60cf3f02ed5bf6b3d3b8d",
     "coverUrl": "https://media.kitsu.app/anime/782/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4Ug0zzRkHD9tJPgx7iy9z2",
-    "animeId": 198
+    "animeId": 198,
+    "previewUrl": "https://p.scdn.co/mp3-preview/c88dd85d0b8b708d70d60cf3f02ed5bf6b3d3b8d"
   },
   {
     "id": 1416,
@@ -34987,7 +37192,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d0bc0649f21f20f1e5dd473bdfd22d27fb868f35",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/1491/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2HY5NVPfvygwTBM1x6jwvH",
-    "animeId": 391
+    "animeId": 391,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d0bc0649f21f20f1e5dd473bdfd22d27fb868f35"
   },
   {
     "id": 1417,
@@ -35006,7 +37212,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/f2db5a24d011e415b604779537c0b5986e83bda8",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/428/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2wyMhqD3UtR8Ucg59UZhZd",
-    "animeId": 317
+    "animeId": 317,
+    "previewUrl": "https://p.scdn.co/mp3-preview/f2db5a24d011e415b604779537c0b5986e83bda8"
   },
   {
     "id": 1418,
@@ -35025,7 +37232,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b967f549f0b74d919e75fcbc32e0f94a13b15ba2",
     "coverUrl": "https://media.kitsu.app/anime/46415/poster_image/medium-09a8e8a7b821309beba30e1b49a5369e.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/1XdaaI0bz0ILJzl1oBq2In",
-    "animeId": 227
+    "animeId": 227,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b967f549f0b74d919e75fcbc32e0f94a13b15ba2"
   },
   {
     "id": 1419,
@@ -35044,7 +37252,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/8801d2604e582fc33199c706faa7bc942a16d7ff",
     "coverUrl": "https://media.kitsu.app/anime/46183/poster_image/medium-5f704e2d6d86c0666d81e140d2c9f6a0.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/3Vkzgf11Ubecqccu8Wxu8w",
-    "animeId": 221
+    "animeId": 221,
+    "previewUrl": "https://p.scdn.co/mp3-preview/8801d2604e582fc33199c706faa7bc942a16d7ff"
   },
   {
     "id": 1420,
@@ -35063,7 +37272,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/885f7fffb482fdeea30050325bfc0330634a2118",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/6169/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/11sWcMeRIGlUR5rwvV6IS3",
-    "animeId": 12
+    "animeId": 12,
+    "previewUrl": "https://p.scdn.co/mp3-preview/885f7fffb482fdeea30050325bfc0330634a2118"
   },
   {
     "id": 1421,
@@ -35082,7 +37292,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/ac5d1be3b4200ec287f4cc0858ef94259551de94",
     "coverUrl": "https://media.kitsu.app/anime/48946/poster_image/medium-0e314e0d6ebfb67ed53d173c7b9d1287.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/5XGTehBbNk1y0KrdkI1qsK",
-    "animeId": 215
+    "animeId": 215,
+    "previewUrl": "https://p.scdn.co/mp3-preview/ac5d1be3b4200ec287f4cc0858ef94259551de94"
   },
   {
     "id": 1422,
@@ -35101,7 +37312,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/9bb099940da050089e21ad9a27d6be2dd83f9bd0",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/11469/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0HOJpNiOpY13dZzzmObZAH",
-    "animeId": 274
+    "animeId": 274,
+    "previewUrl": "https://p.scdn.co/mp3-preview/9bb099940da050089e21ad9a27d6be2dd83f9bd0"
   },
   {
     "id": 1423,
@@ -35120,7 +37332,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/918e5fb60435f51424fe50a2f15edb35aa6ef602",
     "coverUrl": "https://anifume.com/images/08/Dandadan-2.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5pbD2zRUQmzhzqHTp97K19",
-    "animeId": 32
+    "animeId": 32,
+    "previewUrl": "https://p.scdn.co/mp3-preview/918e5fb60435f51424fe50a2f15edb35aa6ef602"
   },
   {
     "id": 1424,
@@ -35139,7 +37352,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/03c55c01b0bd689d0a74cab2c01a78ff378fc3e7",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/4255/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5bxUcO8wPndPdgxIbgGzqc",
-    "animeId": 342
+    "animeId": 342,
+    "previewUrl": "https://p.scdn.co/mp3-preview/03c55c01b0bd689d0a74cab2c01a78ff378fc3e7"
   },
   {
     "id": 1425,
@@ -35158,7 +37372,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/f7d754a6e6646aebb424cc16913fca892b01d849",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/3702/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/08oX4H0Td1Fza9eBXzmojN",
-    "animeId": 401
+    "animeId": 401,
+    "previewUrl": "https://p.scdn.co/mp3-preview/f7d754a6e6646aebb424cc16913fca892b01d849"
   },
   {
     "id": 1426,
@@ -35177,7 +37392,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/3020af7feab1a6d1e35e42fede55fa1388155d3f",
     "coverUrl": "https://media.kitsu.app/anime/45517/poster_image/medium-55342a19ef9eb98db5dfd17c9b83b38c.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/4uAry3GWAv0Cz7JaCzGVPA",
-    "animeId": 370
+    "animeId": 370,
+    "previewUrl": "https://p.scdn.co/mp3-preview/3020af7feab1a6d1e35e42fede55fa1388155d3f"
   },
   {
     "id": 1427,
@@ -35196,7 +37412,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/60e7c724ba5f397a9c7aab3456f8bfc185c2f9e4",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/8147/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0b9JDLbAgCazIwPSWj6DNL",
-    "animeId": 58
+    "animeId": 58,
+    "previewUrl": "https://p.scdn.co/mp3-preview/60e7c724ba5f397a9c7aab3456f8bfc185c2f9e4"
   },
   {
     "id": 1428,
@@ -35215,7 +37432,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/17f6ffb6c7ea4ae758c38a6f7227e48dbbfb43bf",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/10740/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3Sg7fg4KhVZpgZaC91jFX2",
-    "animeId": 55
+    "animeId": 55,
+    "previewUrl": "https://p.scdn.co/mp3-preview/17f6ffb6c7ea4ae758c38a6f7227e48dbbfb43bf"
   },
   {
     "id": 1429,
@@ -35234,7 +37452,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/524c094d63505a66d2d4b74ef5771feba4975be2",
     "coverUrl": "https://media.kitsu.app/anime/3639/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2luYdyxKSSxuC3cSW8N6A0",
-    "animeId": 157
+    "animeId": 157,
+    "previewUrl": "https://p.scdn.co/mp3-preview/524c094d63505a66d2d4b74ef5771feba4975be2"
   },
   {
     "id": 1430,
@@ -35253,7 +37472,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/ac4410e53155aa5366ac89cbbbfc7beb311020a7",
     "coverUrl": "https://media.kitsu.app/anime/777/poster_image/medium-838bd2659fa6198a6626d175be3e967b.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/2hxfN5UiyW4RfTmfTQxzap",
-    "animeId": 60
+    "animeId": 60,
+    "previewUrl": "https://p.scdn.co/mp3-preview/ac4410e53155aa5366ac89cbbbfc7beb311020a7"
   },
   {
     "id": 1431,
@@ -35272,7 +37492,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/cda5c9898e844650bce705de3232ba707041973c",
     "coverUrl": "https://media.kitsu.app/anime/48671/poster_image/large-6156a7475d03dbb788ab1a9ce6c7f962.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/0y5F68On9PEG726OipJXP5",
-    "animeId": 118
+    "animeId": 118,
+    "previewUrl": "https://p.scdn.co/mp3-preview/cda5c9898e844650bce705de3232ba707041973c"
   },
   {
     "id": 1432,
@@ -35291,7 +37512,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/548f92d38ae56c46a3e4c089b64ab4622b5f5434",
     "coverUrl": "https://media.kitsu.app/anime/48233/poster_image/medium-e603ef5f8bac42574f7b48c0da994400.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/7nSkSqb1WDtZ7hY2dVEvWY",
-    "animeId": 406
+    "animeId": 406,
+    "previewUrl": "https://p.scdn.co/mp3-preview/548f92d38ae56c46a3e4c089b64ab4622b5f5434"
   },
   {
     "id": 1433,
@@ -35310,7 +37532,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/c91c460ac3c7f83aafa3c276978007178d7785bd",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/4255/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4I0F3ItogIEpgH9qbjCiQz",
-    "animeId": 342
+    "animeId": 342,
+    "previewUrl": "https://p.scdn.co/mp3-preview/c91c460ac3c7f83aafa3c276978007178d7785bd"
   },
   {
     "id": 1434,
@@ -35329,7 +37552,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/442327cb63b65b49791cff02a8be10e15710550f",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/47195/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4pBwZlClhq6vV6qdSkyf00",
-    "animeId": 395
+    "animeId": 395,
+    "previewUrl": "https://p.scdn.co/mp3-preview/442327cb63b65b49791cff02a8be10e15710550f"
   },
   {
     "id": 1435,
@@ -35348,7 +37572,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/dd41b428f653d46f898ba0c94ff30640ab93f97d",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/43088/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2KFr9apKEJ1qvJT23boCyb",
-    "animeId": 301
+    "animeId": 301,
+    "previewUrl": "https://p.scdn.co/mp3-preview/dd41b428f653d46f898ba0c94ff30640ab93f97d"
   },
   {
     "id": 1436,
@@ -35367,7 +37592,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/1614248b0ac39017171b6e0656e5891ed441d979",
     "coverUrl": "https://media.kitsu.app/anime/44196/poster_image/medium-a7b52a1e9cea5a04b29ee6878fbff923.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/4RKdCN2AoogXeIqiQmDxNy",
-    "animeId": 364
+    "animeId": 364,
+    "previewUrl": "https://p.scdn.co/mp3-preview/1614248b0ac39017171b6e0656e5891ed441d979"
   },
   {
     "id": 1437,
@@ -35386,7 +37612,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/dfcf4342b69c6939b1280691fc35dbb830ed0d6d",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/43613/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/57NV6TzzYS473R7OgmDepf",
-    "animeId": 405
+    "animeId": 405,
+    "previewUrl": "https://p.scdn.co/mp3-preview/dfcf4342b69c6939b1280691fc35dbb830ed0d6d"
   },
   {
     "id": 1438,
@@ -35405,7 +37632,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/0b9767cf4dc94f251046b45f5f2b98ae3dfa8e27",
     "coverUrl": "https://media.kitsu.app/anime/46857/poster_image/medium-4f810148ad4a0d922a901bf9e62fe46d.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/2LNa62xLKJ07ssTscpL5V6",
-    "animeId": 372
+    "animeId": 372,
+    "previewUrl": "https://p.scdn.co/mp3-preview/0b9767cf4dc94f251046b45f5f2b98ae3dfa8e27"
   },
   {
     "id": 1439,
@@ -35424,7 +37652,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/28926f9fc9e87abf26bcf707f325c2bed2b12ec3",
     "coverUrl": "https://media.kitsu.app/anime/847/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2cn4X3qXv6KcQYHr67st6T",
-    "animeId": 199
+    "animeId": 199,
+    "previewUrl": "https://p.scdn.co/mp3-preview/28926f9fc9e87abf26bcf707f325c2bed2b12ec3"
   },
   {
     "id": 1440,
@@ -35443,7 +37672,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/3972a7078f05626bcb32657d740fa67060f42e0c",
     "coverUrl": "https://media.kitsu.app/anime/48671/poster_image/large-6156a7475d03dbb788ab1a9ce6c7f962.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/36czGZFR3xI0F38AiZ0Xdq",
-    "animeId": 118
+    "animeId": 118,
+    "previewUrl": "https://p.scdn.co/mp3-preview/3972a7078f05626bcb32657d740fa67060f42e0c"
   },
   {
     "id": 1441,
@@ -35462,7 +37692,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/3122be31fa4067f3609def60876a7683e64f36db",
     "coverUrl": "https://media.kitsu.app/anime/13767/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6txFY13f4QqZb7btS5bMA3",
-    "animeId": 185
+    "animeId": 185,
+    "previewUrl": "https://p.scdn.co/mp3-preview/3122be31fa4067f3609def60876a7683e64f36db"
   },
   {
     "id": 1442,
@@ -35481,7 +37712,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/c1193c419e1cb246318d64b50b3ca8876ab45dcd",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/11339/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1Uirva9dJEp3Ctq3p6ejFQ",
-    "animeId": 46
+    "animeId": 46,
+    "previewUrl": "https://p.scdn.co/mp3-preview/c1193c419e1cb246318d64b50b3ca8876ab45dcd"
   },
   {
     "id": 1443,
@@ -35500,7 +37732,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/62545fd6fc08a0c8b04d0fb7a6b2a12e19478c71",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/8270/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0huk2WyhWhIfdKaWqwKmgd",
-    "animeId": 82
+    "animeId": 82,
+    "previewUrl": "https://p.scdn.co/mp3-preview/62545fd6fc08a0c8b04d0fb7a6b2a12e19478c71"
   },
   {
     "id": 1444,
@@ -35519,7 +37752,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/4eb5e485d5418467d91e10ea865876a65717bf0c",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/5482/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5Tvycz8M6zpI4QX8ls2HAx",
-    "animeId": 320
+    "animeId": 320,
+    "previewUrl": "https://p.scdn.co/mp3-preview/4eb5e485d5418467d91e10ea865876a65717bf0c"
   },
   {
     "id": 1445,
@@ -35538,7 +37772,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/35f53636c6bbd8a61f8566eb10ea861a2d57cdb2",
     "coverUrl": "https://media.kitsu.app/anime/48671/poster_image/large-6156a7475d03dbb788ab1a9ce6c7f962.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/3BK6m6yU8BAW5z71FnU3nu",
-    "animeId": 118
+    "animeId": 118,
+    "previewUrl": "https://p.scdn.co/mp3-preview/35f53636c6bbd8a61f8566eb10ea861a2d57cdb2"
   },
   {
     "id": 1446,
@@ -35557,7 +37792,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d756287d2d3c8938f6b4594c14377e0a9a6566f5",
     "coverUrl": "https://media.kitsu.app/anime/47192/poster_image/medium-671e94191e8d931769dfa6d8a73e6491.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/45yQbNjWEAWt1IQ8XMROrp",
-    "animeId": 243
+    "animeId": 243,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d756287d2d3c8938f6b4594c14377e0a9a6566f5"
   },
   {
     "id": 1447,
@@ -35576,7 +37812,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/aa0701f0b519aed11eded89b63e525bab5268c36",
     "coverUrl": "https://media.kitsu.app/anime/46842/poster_image/medium-3171a2ed1cb9c882f40ac196841a84ba.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/4vp7mnOPf13fLUztFDqp2a",
-    "animeId": 360
+    "animeId": 360,
+    "previewUrl": "https://p.scdn.co/mp3-preview/aa0701f0b519aed11eded89b63e525bab5268c36"
   },
   {
     "id": 1448,
@@ -35595,7 +37832,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/18805d2d9fd6b9f9b93d634cdab269f9e83fa8bc",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/41083/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0KnDJSGxu03x8idlKLKKki",
-    "animeId": 50
+    "animeId": 50,
+    "previewUrl": "https://p.scdn.co/mp3-preview/18805d2d9fd6b9f9b93d634cdab269f9e83fa8bc"
   },
   {
     "id": 1449,
@@ -35614,7 +37852,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/8e5df2726af45977d2e5e8cf7a85446a5093cf7b",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/41024/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2qVu9tYn0WzH9GxtpGzvbK",
-    "animeId": 86
+    "animeId": 86,
+    "previewUrl": "https://p.scdn.co/mp3-preview/8e5df2726af45977d2e5e8cf7a85446a5093cf7b"
   },
   {
     "id": 1450,
@@ -35633,7 +37872,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/3ee8cbe3cc7699c7b3ab6b300bc44f460a7c0e2e",
     "coverUrl": "https://media.kitsu.app/anime/42490/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5orIQnWm5K5RJ08CTYXgPb",
-    "animeId": 147
+    "animeId": 147,
+    "previewUrl": "https://p.scdn.co/mp3-preview/3ee8cbe3cc7699c7b3ab6b300bc44f460a7c0e2e"
   },
   {
     "id": 1451,
@@ -35652,7 +37892,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/5b09285daea5b3078d7b08fd75c2e72165d2be66",
     "coverUrl": "https://media.kitsu.app/anime/142/poster_image/large-bf3297058b86c1ef19cefb5b9c38c99e.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/30CRjTYAXaJf5YBsNQHIvG",
-    "animeId": 89
+    "animeId": 89,
+    "previewUrl": "https://p.scdn.co/mp3-preview/5b09285daea5b3078d7b08fd75c2e72165d2be66"
   },
   {
     "id": 1452,
@@ -35671,7 +37912,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/43715f423b8114ac48fd4aa731ddbcc299b63836",
     "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5TEm69BZqijWNrp78ilqsC",
-    "animeId": 126
+    "animeId": 126,
+    "previewUrl": "https://p.scdn.co/mp3-preview/43715f423b8114ac48fd4aa731ddbcc299b63836"
   },
   {
     "id": 1453,
@@ -35690,7 +37932,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/2beb83587a207cd8ae20aa8d2fe1a18cd6bdf899",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/12325/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1jtuHmrw7em28FdbhfFVP0",
-    "animeId": 97
+    "animeId": 97,
+    "previewUrl": "https://p.scdn.co/mp3-preview/2beb83587a207cd8ae20aa8d2fe1a18cd6bdf899"
   },
   {
     "id": 1454,
@@ -35709,7 +37952,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/91fa19db611c7cecb83fef58e74b5de24b58a6b5",
     "coverUrl": "https://media.kitsu.app/anime/46529/poster_image/medium-86099eeb5036c415a65a02d7e142017e.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/3b8x0Bu8Pxwze3op9EwTk2",
-    "animeId": 229
+    "animeId": 229,
+    "previewUrl": "https://p.scdn.co/mp3-preview/91fa19db611c7cecb83fef58e74b5de24b58a6b5"
   },
   {
     "id": 1455,
@@ -35728,7 +37972,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/f747840d6403a68db43274062b99fa22d65a58da",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/48316/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5F4fAhzhdHtaQ8nNqWAufl",
-    "animeId": 387
+    "animeId": 387,
+    "previewUrl": "https://p.scdn.co/mp3-preview/f747840d6403a68db43274062b99fa22d65a58da"
   },
   {
     "id": 1456,
@@ -35747,7 +37992,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/809502cb8617fcd5b61ef52ee7ee3bd6cd983582",
     "coverUrl": "https://media.kitsu.app/anime/44426/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2xGRrcajSvRlBbAXds2l7u",
-    "animeId": 155
+    "animeId": 155,
+    "previewUrl": "https://p.scdn.co/mp3-preview/809502cb8617fcd5b61ef52ee7ee3bd6cd983582"
   },
   {
     "id": 1457,
@@ -35766,7 +38012,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/9272a5d617d47646cec6bfd4bebe1d884d483c07",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/42080/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7cepLDSROBQyq0HmV5iYtz",
-    "animeId": 63
+    "animeId": 63,
+    "previewUrl": "https://p.scdn.co/mp3-preview/9272a5d617d47646cec6bfd4bebe1d884d483c07"
   },
   {
     "id": 1458,
@@ -35785,7 +38032,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/3b9e35684301d570cebd44e902a08a1f35b50ea8",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/8270/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/40yAIwct6vt6ToQFvtVNxH",
-    "animeId": 82
+    "animeId": 82,
+    "previewUrl": "https://p.scdn.co/mp3-preview/3b9e35684301d570cebd44e902a08a1f35b50ea8"
   },
   {
     "id": 1459,
@@ -35804,7 +38052,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/70536bf5bf2bf662423caf6c30b70a86e6097cf1",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/6421/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3ClMHvxx2Me7d3aDhVcjYa",
-    "animeId": 262
+    "animeId": 262,
+    "previewUrl": "https://p.scdn.co/mp3-preview/70536bf5bf2bf662423caf6c30b70a86e6097cf1"
   },
   {
     "id": 1460,
@@ -35823,7 +38072,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b0bd1f1050405ebfb786bb35bf5c9788399ce8a7",
     "coverUrl": "https://media.kitsu.app/anime/1410/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5nvdbRKg9fOixXotcZIQuF",
-    "animeId": 164
+    "animeId": 164,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b0bd1f1050405ebfb786bb35bf5c9788399ce8a7"
   },
   {
     "id": 1461,
@@ -35842,7 +38092,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b578b645b3c5cf395966ba747b03114abfe74b6a",
     "coverUrl": "https://media.kitsu.app/anime/45249/poster_image/medium-755db8403ce12850dbd8852430a6609a.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/4AmLTDjGWE5HqRhiX383bF",
-    "animeId": 408
+    "animeId": 408,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b578b645b3c5cf395966ba747b03114abfe74b6a"
   },
   {
     "id": 1462,
@@ -35861,7 +38112,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/c255d00bd461c22569f8d502db3cfc7e4ac6ab6e",
     "coverUrl": "https://media.kitsu.app/anime/43078/poster_image/medium-c33a4b2e827f0e99ea57f831af0adabd.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/4c720ne6FrhbC0qrfsjWb7",
-    "animeId": 359
+    "animeId": 359,
+    "previewUrl": "https://p.scdn.co/mp3-preview/c255d00bd461c22569f8d502db3cfc7e4ac6ab6e"
   },
   {
     "id": 1463,
@@ -35880,7 +38132,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/737993652bd146b63d8c3c657517068044767ca3",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/42/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1rLOXc95uK1Xo6Cjtw2wNK",
-    "animeId": 336
+    "animeId": 336,
+    "previewUrl": "https://p.scdn.co/mp3-preview/737993652bd146b63d8c3c657517068044767ca3"
   },
   {
     "id": 1464,
@@ -35899,7 +38152,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/2cf75219d060e4945faf2e434ac69e8c8ca1e2ec",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/4604/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6g7cdlMt3AUV99D6CgYcV7",
-    "animeId": 88
+    "animeId": 88,
+    "previewUrl": "https://p.scdn.co/mp3-preview/2cf75219d060e4945faf2e434ac69e8c8ca1e2ec"
   },
   {
     "id": 1465,
@@ -35918,7 +38172,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/8c9a8bc31d34bf60645533ae9bcbebf21580fb61",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/41450/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2cwIT2wUaf82BrYsqfyhzX",
-    "animeId": 100
+    "animeId": 100,
+    "previewUrl": "https://p.scdn.co/mp3-preview/8c9a8bc31d34bf60645533ae9bcbebf21580fb61"
   },
   {
     "id": 1466,
@@ -35937,7 +38192,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/30e8e098e414e2a615c2545fc2bc1fe2b8668053",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/12/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5OmghyPhtlR5yXJ62HxSNR",
-    "animeId": 402
+    "animeId": 402,
+    "previewUrl": "https://p.scdn.co/mp3-preview/30e8e098e414e2a615c2545fc2bc1fe2b8668053"
   },
   {
     "id": 1467,
@@ -35956,7 +38212,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/6131977690f695ecbf41f2a8f5af327b13d5e5e6",
     "coverUrl": "https://media.kitsu.app/anime/42490/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2ewrA9zGxvXrWSt6sLkqZx",
-    "animeId": 147
+    "animeId": 147,
+    "previewUrl": "https://p.scdn.co/mp3-preview/6131977690f695ecbf41f2a8f5af327b13d5e5e6"
   },
   {
     "id": 1468,
@@ -35975,7 +38232,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/9d60439561c8c6cf0942bb155dc8af71ba9a4cff",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/42080/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4OtZU4aveZuVONxmExrdpK",
-    "animeId": 63
+    "animeId": 63,
+    "previewUrl": "https://p.scdn.co/mp3-preview/9d60439561c8c6cf0942bb155dc8af71ba9a4cff"
   },
   {
     "id": 1469,
@@ -35994,7 +38252,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/8ffda73c31e8e7661f6f7aac963ffcd1822883c3",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/719/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4SJxHEJlKUjRisEWHAlt7X",
-    "animeId": 337
+    "animeId": 337,
+    "previewUrl": "https://p.scdn.co/mp3-preview/8ffda73c31e8e7661f6f7aac963ffcd1822883c3"
   },
   {
     "id": 1470,
@@ -36013,7 +38272,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/95e2be0192d47c14cbb740ec576aa4ff39155723",
     "coverUrl": "https://media.kitsu.app/anime/9987/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/362Ufr9KkITy2WOyhAtoh0",
-    "animeId": 184
+    "animeId": 184,
+    "previewUrl": "https://p.scdn.co/mp3-preview/95e2be0192d47c14cbb740ec576aa4ff39155723"
   },
   {
     "id": 1471,
@@ -36032,7 +38292,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/16b2b5feaf5db6a43247de4420f92754b9380bf9",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/14312/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4CglACwqStBIcYrjNLtDPk",
-    "animeId": 287
+    "animeId": 287,
+    "previewUrl": "https://p.scdn.co/mp3-preview/16b2b5feaf5db6a43247de4420f92754b9380bf9"
   },
   {
     "id": 1472,
@@ -36051,7 +38312,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/534828c0a56e5bdbb9d373c0786333a7192fcaec",
     "coverUrl": "https://media.kitsu.app/anime/6028/poster_image/large-e9b1ea8a2aee8fd902446d0c273f9eb4.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/3jVDgRritOKnWLFatI0rsW",
-    "animeId": 101
+    "animeId": 101,
+    "previewUrl": "https://p.scdn.co/mp3-preview/534828c0a56e5bdbb9d373c0786333a7192fcaec"
   },
   {
     "id": 1473,
@@ -36070,7 +38332,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/ca091daade85de57ccf84f3f20a54a8ce67a2a65",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/10028/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/43JyEMmiEB4LJDwMDnIqvz",
-    "animeId": 10
+    "animeId": 10,
+    "previewUrl": "https://p.scdn.co/mp3-preview/ca091daade85de57ccf84f3f20a54a8ce67a2a65"
   },
   {
     "id": 1474,
@@ -36089,7 +38352,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/46c878801e28b74e3af50c06cd3518323656956c",
     "coverUrl": "https://media.kitsu.app/anime/24/poster_image/large-8b69ef8e3f4f4359af304e9b664eef0f.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/790RoH3bJQEuvNrCcRMPGT",
-    "animeId": 71
+    "animeId": 71,
+    "previewUrl": "https://p.scdn.co/mp3-preview/46c878801e28b74e3af50c06cd3518323656956c"
   },
   {
     "id": 1475,
@@ -36108,7 +38372,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/964d1dc0bbdd581cf8f16ff329495c60c91cb5b2",
     "coverUrl": "https://media.kitsu.app/anime/7983/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/69xpGSSOrI69Wq90Dy2foB",
-    "animeId": 178
+    "animeId": 178,
+    "previewUrl": "https://p.scdn.co/mp3-preview/964d1dc0bbdd581cf8f16ff329495c60c91cb5b2"
   },
   {
     "id": 1476,
@@ -36127,7 +38392,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/fdb5a0e5b3c92191be174c101f8d56149884a794",
     "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6b2nmFsOb2sDumvHLMFLA1",
-    "animeId": 126
+    "animeId": 126,
+    "previewUrl": "https://p.scdn.co/mp3-preview/fdb5a0e5b3c92191be174c101f8d56149884a794"
   },
   {
     "id": 1477,
@@ -36146,7 +38412,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d594a3f4c531f67eb1ee4fd61689d57ecdd14a70",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/8536/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3UpL5TX7uakHUrs5EXlKPC",
-    "animeId": 340
+    "animeId": 340,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d594a3f4c531f67eb1ee4fd61689d57ecdd14a70"
   },
   {
     "id": 1478,
@@ -36165,7 +38432,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/ef60273d4f33a4b4052192150d41e3b8404a16df",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/9018/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6lk2oNywUGQfvbSRDlXYl9",
-    "animeId": 278
+    "animeId": 278,
+    "previewUrl": "https://p.scdn.co/mp3-preview/ef60273d4f33a4b4052192150d41e3b8404a16df"
   },
   {
     "id": 1479,
@@ -36184,7 +38452,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/2162f7a52e18395317a3a06c9c167a25cd9b4c56",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/1491/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3fDm1Sy2emiu2DUrvdf7w0",
-    "animeId": 391
+    "animeId": 391,
+    "previewUrl": "https://p.scdn.co/mp3-preview/2162f7a52e18395317a3a06c9c167a25cd9b4c56"
   },
   {
     "id": 1480,
@@ -36203,7 +38472,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b6f6b12c4fe3b78366ef47b23ca8978fbebbda24",
     "coverUrl": "https://media.kitsu.app/anime/14027/poster_image/medium-2ccfd6de3c64f3e8340230e7758646a1.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/78gIW7yTjpAHfPN3YbIC2g",
-    "animeId": 409
+    "animeId": 409,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b6f6b12c4fe3b78366ef47b23ca8978fbebbda24"
   },
   {
     "id": 1481,
@@ -36222,7 +38492,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/30b397556c84a57b9d60437c9373a92c320095e2",
     "coverUrl": "https://media.kitsu.app/anime/9963/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/39aGL9R7WtF4xOdeH95wiM",
-    "animeId": 159
+    "animeId": 159,
+    "previewUrl": "https://p.scdn.co/mp3-preview/30b397556c84a57b9d60437c9373a92c320095e2"
   },
   {
     "id": 1482,
@@ -36241,7 +38512,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/c347c4f28f86a46cf9fb86bbe44cde1beca2c283",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/4604/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1kq7lepc85UzvUxO9Hi7hI",
-    "animeId": 88
+    "animeId": 88,
+    "previewUrl": "https://p.scdn.co/mp3-preview/c347c4f28f86a46cf9fb86bbe44cde1beca2c283"
   },
   {
     "id": 1483,
@@ -36260,7 +38532,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/fb8c16f4186990bee95c1a831f8695e0c873e7a3",
     "coverUrl": "https://media.kitsu.app/anime/46140/poster_image/medium-09c31317676fc3251c6543b5936780c1.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/6VMjJauJ9YaHtj50MiIJv6",
-    "animeId": 123
+    "animeId": 123,
+    "previewUrl": "https://p.scdn.co/mp3-preview/fb8c16f4186990bee95c1a831f8695e0c873e7a3"
   },
   {
     "id": 1484,
@@ -36279,7 +38552,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d719d9276d56c87e357e8a8c7bc643635083afc8",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/1799/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5fFFW9SAfeMfHbBYNC0AMI",
-    "animeId": 318
+    "animeId": 318,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d719d9276d56c87e357e8a8c7bc643635083afc8"
   },
   {
     "id": 1485,
@@ -36298,7 +38572,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/8dbb5a1b57636ebeafc784d404c1033d7466f2b7",
     "coverUrl": "https://media.kitsu.app/anime/13369/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3YGcFaTdMkC9Q6rkpUdkuR",
-    "animeId": 192
+    "animeId": 192,
+    "previewUrl": "https://p.scdn.co/mp3-preview/8dbb5a1b57636ebeafc784d404c1033d7466f2b7"
   },
   {
     "id": 1486,
@@ -36317,7 +38592,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/1b3aa4468828c137c1a7b9d357ac7ca0679df58c",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/13995/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3XnYfbyjlv9LME2UB3O1N7",
-    "animeId": 268
+    "animeId": 268,
+    "previewUrl": "https://p.scdn.co/mp3-preview/1b3aa4468828c137c1a7b9d357ac7ca0679df58c"
   },
   {
     "id": 1487,
@@ -36336,7 +38612,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/2118899d6d284598e31c028c7bf98a60308da5d4",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/43088/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7DHmhtNeqVWCInyJS0UUTk",
-    "animeId": 301
+    "animeId": 301,
+    "previewUrl": "https://p.scdn.co/mp3-preview/2118899d6d284598e31c028c7bf98a60308da5d4"
   },
   {
     "id": 1488,
@@ -36355,7 +38632,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/c1862c0368ee88ada10da414995ae1e2bbf07548",
     "coverUrl": "https://media.kitsu.app/anime/48892/poster_image/medium-66e6fb051c762862c540598bd99b3e6b.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/59NGTfD1tU474YBrJzOHbc",
-    "animeId": 357
+    "animeId": 357,
+    "previewUrl": "https://p.scdn.co/mp3-preview/c1862c0368ee88ada10da414995ae1e2bbf07548"
   },
   {
     "id": 1489,
@@ -36374,7 +38652,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/851a07b40181627b910f93d4d8abca4d2ee89810",
     "coverUrl": "https://media.kitsu.app/anime/46320/poster_image/medium-feb3c7544b2d91902c9c6a38bf1f5944.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/27DFZqwQsjO4JFkKT2XX1J",
-    "animeId": 234
+    "animeId": 234,
+    "previewUrl": "https://p.scdn.co/mp3-preview/851a07b40181627b910f93d4d8abca4d2ee89810"
   },
   {
     "id": 1490,
@@ -36393,7 +38672,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/92e7320695e17b4f021618d2a7fc9240d17ac7a9",
     "coverUrl": "https://anifume.com/images/08/Dandadan-2.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0ylwMFPomfd4kGcZYWh7fH",
-    "animeId": 32
+    "animeId": 32,
+    "previewUrl": "https://p.scdn.co/mp3-preview/92e7320695e17b4f021618d2a7fc9240d17ac7a9"
   },
   {
     "id": 1491,
@@ -36412,7 +38692,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/007430f17dbd59162b903fb28f4a9bcafb3c08c5",
     "coverUrl": "https://media.kitsu.app/anime/48534/poster_image/medium-c38c15266ae228974e8c2a00d776ea92.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/2FOmKMvMA4h5jGn36dvHIP",
-    "animeId": 246
+    "animeId": 246,
+    "previewUrl": "https://p.scdn.co/mp3-preview/007430f17dbd59162b903fb28f4a9bcafb3c08c5"
   },
   {
     "id": 1492,
@@ -36431,7 +38712,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/66ce2f68283975e1fa7e759c0557054aa9e3fad9",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/47625/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2E0yUWqMmTVdoUgRfFYEYi",
-    "animeId": 350
+    "animeId": 350,
+    "previewUrl": "https://p.scdn.co/mp3-preview/66ce2f68283975e1fa7e759c0557054aa9e3fad9"
   },
   {
     "id": 1493,
@@ -36450,7 +38732,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d84cf7c61ea1fbdf819f7b13f55bacbc19b06652",
     "coverUrl": "https://media.kitsu.app/anime/45746/poster_image/medium-b260279a55588269f2a466f2b9603023.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/3LjGTnItDSgLgL6e326dEO",
-    "animeId": 412
+    "animeId": 412,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d84cf7c61ea1fbdf819f7b13f55bacbc19b06652"
   },
   {
     "id": 1494,
@@ -36469,7 +38752,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/a28947dfb2a0497f297ae344d6035d0a6a5c0c51",
     "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium-0233bf77af3e0ab7303ae7099209d58a.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/1DDHcYWlWtJx8ubS8KZmq0",
-    "animeId": 53
+    "animeId": 53,
+    "previewUrl": "https://p.scdn.co/mp3-preview/a28947dfb2a0497f297ae344d6035d0a6a5c0c51"
   },
   {
     "id": 1495,
@@ -36488,7 +38772,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/4eefa823d5e3e6fbe180cae08afc12b0fd4624fb",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/41443/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/25a2Lu7yr7UiZjGhCsZBE0",
-    "animeId": 339
+    "animeId": 339,
+    "previewUrl": "https://p.scdn.co/mp3-preview/4eefa823d5e3e6fbe180cae08afc12b0fd4624fb"
   },
   {
     "id": 1496,
@@ -36507,7 +38792,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/9ce5deb99c49e19ba4f5d3e419ea23ecb79d536f",
     "coverUrl": "https://media.kitsu.app/anime/41144/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6FksgLVg7KJujKZbJzyA2D",
-    "animeId": 146
+    "animeId": 146,
+    "previewUrl": "https://p.scdn.co/mp3-preview/9ce5deb99c49e19ba4f5d3e419ea23ecb79d536f"
   },
   {
     "id": 1497,
@@ -36526,7 +38812,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/7661bfb0352df0e3e360965ff94fb0957bd1d099",
     "coverUrl": "https://media.kitsu.app/anime/11578/poster_image/medium-9ace4ac709f334cc96d244c15fe7d4d0.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/255m82ckZPE7SzyEJIjrYC",
-    "animeId": 56
+    "animeId": 56,
+    "previewUrl": "https://p.scdn.co/mp3-preview/7661bfb0352df0e3e360965ff94fb0957bd1d099"
   },
   {
     "id": 1498,
@@ -36545,7 +38832,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/c8ebc0e5a17a7e7a18c554f024e4af55f91dbae4",
     "coverUrl": "https://media.kitsu.app/anime/46320/poster_image/medium-feb3c7544b2d91902c9c6a38bf1f5944.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/4upAINYWEBe0ek0g6U2CHV",
-    "animeId": 212
+    "animeId": 212,
+    "previewUrl": "https://p.scdn.co/mp3-preview/c8ebc0e5a17a7e7a18c554f024e4af55f91dbae4"
   },
   {
     "id": 1499,
@@ -36564,7 +38852,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/98bc9e658e2eb935d66944a2f2236d9e3378bd56",
     "coverUrl": "https://media.kitsu.app/anime/11752/poster_image/medium-6e7782dec9c8a72c2148369c288982ee.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/1wImSUHR1tP6y003NHku7e",
-    "animeId": 410
+    "animeId": 410,
+    "previewUrl": "https://p.scdn.co/mp3-preview/98bc9e658e2eb935d66944a2f2236d9e3378bd56"
   },
   {
     "id": 1500,
@@ -36583,7 +38872,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/cb6f09edf0677cc542e7255d6691f3aea53ffd74",
     "coverUrl": "https://media.kitsu.app/anime/48541/poster_image/medium-996392db10718d6b3177f11982f8b975.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/25n8diXqpb6LKyL0Dwzwoy",
-    "animeId": 352
+    "animeId": 352,
+    "previewUrl": "https://p.scdn.co/mp3-preview/cb6f09edf0677cc542e7255d6691f3aea53ffd74"
   },
   {
     "id": 1501,
@@ -36602,7 +38892,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/5a3d1b157375765f2b1355c87d2d97051799f75a",
     "coverUrl": "https://media.kitsu.app/anime/44032/poster_image/large-5b1626fbfbc64e8c4a4a2a2874be2afd.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/6xvpGt4j3pvxAkfRENsHtF",
-    "animeId": 84
+    "animeId": 84,
+    "previewUrl": "https://p.scdn.co/mp3-preview/5a3d1b157375765f2b1355c87d2d97051799f75a"
   },
   {
     "id": 1502,
@@ -36621,7 +38912,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/a866489a444231e2fa4602d581fd3cd50f156d07",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/7680/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/15Shj1AlcYizQWhtsDoYyE",
-    "animeId": 327
+    "animeId": 327,
+    "previewUrl": "https://p.scdn.co/mp3-preview/a866489a444231e2fa4602d581fd3cd50f156d07"
   },
   {
     "id": 1503,
@@ -36640,7 +38932,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/af6fd7850cc57577dfb3fe113cf7c2e7593c7a3c",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/419/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4v3vzLPk1b8xMPo722HCcl",
-    "animeId": 294
+    "animeId": 294,
+    "previewUrl": "https://p.scdn.co/mp3-preview/af6fd7850cc57577dfb3fe113cf7c2e7593c7a3c"
   },
   {
     "id": 1504,
@@ -36659,7 +38952,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/7ff64d350cd58cc82704554006766281f016a038",
     "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
     "spotifyUrl": "https://open.spotify.com/track/37BOGNFiFipyHllBoQz1mt",
-    "animeId": 251
+    "animeId": 251,
+    "previewUrl": "https://p.scdn.co/mp3-preview/7ff64d350cd58cc82704554006766281f016a038"
   },
   {
     "id": 1505,
@@ -36678,7 +38972,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/be22dabad4df17810d7321fe78948bae458e6792",
     "coverUrl": "https://media.kitsu.app/anime/13768/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/30ho6wAl9w53sCtcqzHVMA",
-    "animeId": 175
+    "animeId": 175,
+    "previewUrl": "https://p.scdn.co/mp3-preview/be22dabad4df17810d7321fe78948bae458e6792"
   },
   {
     "id": 1506,
@@ -36697,7 +38992,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/11bea8a5f65906a2e65f30b430f8479fdf6989a8",
     "coverUrl": "https://media.kitsu.app/anime/11370/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/77rZWogLvZ2NOf248oMd6N",
-    "animeId": 148
+    "animeId": 148,
+    "previewUrl": "https://p.scdn.co/mp3-preview/11bea8a5f65906a2e65f30b430f8479fdf6989a8"
   },
   {
     "id": 1507,
@@ -36716,7 +39012,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/15966453b50e59e580a0ce64376a1e925ece7aaf",
     "coverUrl": "https://media.kitsu.app/anime/11100/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1X3VD4oXVFe314hJ9AcvVy",
-    "animeId": 161
+    "animeId": 161,
+    "previewUrl": "https://p.scdn.co/mp3-preview/15966453b50e59e580a0ce64376a1e925ece7aaf"
   },
   {
     "id": 1508,
@@ -36735,7 +39032,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/a91aa6b11680229886455cb81345494adc931d7d",
     "coverUrl": "https://media.kitsu.app/anime/48443/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/45FSW9JohxF1SMTGWLw8Ue",
-    "animeId": 187
+    "animeId": 187,
+    "previewUrl": "https://p.scdn.co/mp3-preview/a91aa6b11680229886455cb81345494adc931d7d"
   },
   {
     "id": 1509,
@@ -36754,7 +39052,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d39fb852e9ade790c51681aa8b51bc9312054f96",
     "coverUrl": "https://media.kitsu.app/anime/47196/poster_image/medium-f1b3a9c68b72af0e02b2b6e3a8dc1c0b.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/0ZapAgVfHzTxqDPweLPUyu",
-    "animeId": 283
+    "animeId": 283,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d39fb852e9ade790c51681aa8b51bc9312054f96"
   },
   {
     "id": 1510,
@@ -36773,7 +39072,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/4f69cdfd8d946c0a125607f325ea7b3c12fba407",
     "coverUrl": "https://media.kitsu.app/anime/7957/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0nomhjBvCoJdvWc8aOqjqa",
-    "animeId": 150
+    "animeId": 150,
+    "previewUrl": "https://p.scdn.co/mp3-preview/4f69cdfd8d946c0a125607f325ea7b3c12fba407"
   },
   {
     "id": 1511,
@@ -36792,7 +39092,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/bd3b8d3c3c1b99c62d8db957ab486442be80a788",
     "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4ZmR5PLHDE4zFEskU8Otzc",
-    "animeId": 133
+    "animeId": 133,
+    "previewUrl": "https://p.scdn.co/mp3-preview/bd3b8d3c3c1b99c62d8db957ab486442be80a788"
   },
   {
     "id": 1512,
@@ -36811,7 +39112,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d28523b5766b3f8c5fd5ccc5e410caeb4ae170ac",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/8778/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4eABL6biW8QZOSvGMaX18M",
-    "animeId": 277
+    "animeId": 277,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d28523b5766b3f8c5fd5ccc5e410caeb4ae170ac"
   },
   {
     "id": 1513,
@@ -36830,7 +39132,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/788263659d31b4a8b153fd5e982a4f6d7d984220",
     "coverUrl": "https://media.kitsu.app/anime/49205/poster_image/medium-26bbae139e3a0869dece52e864b93052.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/1yuoX9zSvJAYpF0wJe4f9k",
-    "animeId": 205
+    "animeId": 205,
+    "previewUrl": "https://p.scdn.co/mp3-preview/788263659d31b4a8b153fd5e982a4f6d7d984220"
   },
   {
     "id": 1514,
@@ -36849,7 +39152,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/78557f7a9e97292f37bb67d61ce5a25a3661817c",
     "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3G6Tk9y0tF3p00XGeLzTUP",
-    "animeId": 125
+    "animeId": 125,
+    "previewUrl": "https://p.scdn.co/mp3-preview/78557f7a9e97292f37bb67d61ce5a25a3661817c"
   },
   {
     "id": 1515,
@@ -36868,7 +39172,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/0de0512074fdf884dd8b7f6f2c3e95ef7bfffcb3",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/176/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0lOkdvblBAwRWlb9Y5j632",
-    "animeId": 314
+    "animeId": 314,
+    "previewUrl": "https://p.scdn.co/mp3-preview/0de0512074fdf884dd8b7f6f2c3e95ef7bfffcb3"
   },
   {
     "id": 1516,
@@ -36887,7 +39192,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/4db5e9a51d804cfd8251113840ca7fa2267542f6",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/428/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6VUNGU1vkjmo3IY1XBUi5L",
-    "animeId": 317
+    "animeId": 317,
+    "previewUrl": "https://p.scdn.co/mp3-preview/4db5e9a51d804cfd8251113840ca7fa2267542f6"
   },
   {
     "id": 1517,
@@ -36906,7 +39212,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/29839a3f48fe0ead6a228465c96bf64a1e9ea6ae",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/818/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1Z5QAcDHYZgRANOTCtkcnj",
-    "animeId": 74
+    "animeId": 74,
+    "previewUrl": "https://p.scdn.co/mp3-preview/29839a3f48fe0ead6a228465c96bf64a1e9ea6ae"
   },
   {
     "id": 1518,
@@ -36925,7 +39232,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/6294ced0ba030a778254e86b10aa4044269253fc",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/12325/large.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7Mpsf4OLTP8OLb9VpLF4a4",
-    "animeId": 97
+    "animeId": 97,
+    "previewUrl": "https://p.scdn.co/mp3-preview/6294ced0ba030a778254e86b10aa4044269253fc"
   },
   {
     "id": 1519,
@@ -36944,7 +39252,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/fa4a36149ff867cc23dad27cb317eae2db7db020",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/8230/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0v4XjyFGrAke94WnkQDwBE",
-    "animeId": 280
+    "animeId": 280,
+    "previewUrl": "https://p.scdn.co/mp3-preview/fa4a36149ff867cc23dad27cb317eae2db7db020"
   },
   {
     "id": 1520,
@@ -36963,7 +39272,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/5efa9606216f4a1f8ce37612eefd01a20d1ea727",
     "coverUrl": "https://media.kitsu.app/anime/48443/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6CQkLg1Yqn0YBtsLG4BKeZ",
-    "animeId": 187
+    "animeId": 187,
+    "previewUrl": "https://p.scdn.co/mp3-preview/5efa9606216f4a1f8ce37612eefd01a20d1ea727"
   },
   {
     "id": 1521,
@@ -36982,7 +39292,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/456830669e7640799db22dce66d7646cf45c171a",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/12/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/61yUWrmETaNJdoLYCUwhQl",
-    "animeId": 36
+    "animeId": 36,
+    "previewUrl": "https://p.scdn.co/mp3-preview/456830669e7640799db22dce66d7646cf45c171a"
   },
   {
     "id": 1522,
@@ -37001,7 +39312,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/58565b557ce18dd040d6e74c1c8e217911dacc7b",
     "coverUrl": "https://media.kitsu.app/anime/44382/poster_image/large-8ffc8ea9b6a1f9e79bc626e03baab167.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/50D7ptFXhgR9GZ9g7G20SF",
-    "animeId": 70
+    "animeId": 70,
+    "previewUrl": "https://p.scdn.co/mp3-preview/58565b557ce18dd040d6e74c1c8e217911dacc7b"
   },
   {
     "id": 1523,
@@ -37020,7 +39332,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/27afd06e1643f5d887d1a1663212d813d5c98090",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/48624/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0eHTM1Udi2NLiOJ3ja63nh",
-    "animeId": 349
+    "animeId": 349,
+    "previewUrl": "https://p.scdn.co/mp3-preview/27afd06e1643f5d887d1a1663212d813d5c98090"
   },
   {
     "id": 1524,
@@ -37039,7 +39352,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/2ab6792407b1133d67d5a4db9c2e7f04cffa72be",
     "coverUrl": "https://anifume.com/images/45/Blue-Lock.jpg",
     "spotifyUrl": "https://open.spotify.com/track/01GuLWTbdSAw9sfO8KMOYP",
-    "animeId": 93
+    "animeId": 93,
+    "previewUrl": "https://p.scdn.co/mp3-preview/2ab6792407b1133d67d5a4db9c2e7f04cffa72be"
   },
   {
     "id": 1525,
@@ -37058,7 +39372,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/240c424b6ab49ecb69e363f4c87131bcff3eb621",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/14350/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5Vrgm4B3gBS7PZvUnCCcbp",
-    "animeId": 270
+    "animeId": 270,
+    "previewUrl": "https://p.scdn.co/mp3-preview/240c424b6ab49ecb69e363f4c87131bcff3eb621"
   },
   {
     "id": 1526,
@@ -37077,7 +39392,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/35593cbe7377869f82ec9f545b36eb457c34f1b6",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/7645/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2W17wDsmVimJMMGT8UgVfi",
-    "animeId": 281
+    "animeId": 281,
+    "previewUrl": "https://p.scdn.co/mp3-preview/35593cbe7377869f82ec9f545b36eb457c34f1b6"
   },
   {
     "id": 1527,
@@ -37096,7 +39412,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/d85d3837a8e2837df19ff51d132364dc6ba37d58",
     "coverUrl": "https://media.kitsu.app/anime/4388/poster_image/medium.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6UNKgaAyZtVf6IsONUmi9E",
-    "animeId": 166
+    "animeId": 166,
+    "previewUrl": "https://p.scdn.co/mp3-preview/d85d3837a8e2837df19ff51d132364dc6ba37d58"
   },
   {
     "id": 1528,
@@ -37115,7 +39432,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/caa1bb951bb5de09758505ec388b340d00d12460",
     "coverUrl": "https://media.kitsu.app/anime/47271/poster_image/medium-90a981a5a5570ba5fdb809a3152c8348.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/09beOtPEjTgYLXNzYFjfLU",
-    "animeId": 29
+    "animeId": 29,
+    "previewUrl": "https://p.scdn.co/mp3-preview/caa1bb951bb5de09758505ec388b340d00d12460"
   },
   {
     "id": 1529,
@@ -37134,7 +39452,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/40d4df338173be02630f837eca72b2355d838714",
     "coverUrl": "https://media.kitsu.app/anime/44012/poster_image/medium-b7adf5b796a614ae3630153229fe4469.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/3r6iaXYV9mTnjm7qXcWNUD",
-    "animeId": 250
+    "animeId": 250,
+    "previewUrl": "https://p.scdn.co/mp3-preview/40d4df338173be02630f837eca72b2355d838714"
   },
   {
     "id": 1530,
@@ -37153,7 +39472,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/b618cdf44a8ca30c84a9fbaf65e1153d54095b35",
     "coverUrl": "https://media.kitsu.app/anime/45547/poster_image/medium-ecff21462bacc73bbf9e1a60a6ec3e91.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/4xG4w3JJixwCUftaOWEhy6",
-    "animeId": 255
+    "animeId": 255,
+    "previewUrl": "https://p.scdn.co/mp3-preview/b618cdf44a8ca30c84a9fbaf65e1153d54095b35"
   },
   {
     "id": 1531,
@@ -37172,7 +39492,8 @@ const SONGS = [
     "audioFallback": "https://p.scdn.co/mp3-preview/77cffb9057120e5eb9df5b4a61d72f5553f09b85",
     "coverUrl": "https://media.kitsu.app/anime/46140/poster_image/medium-09c31317676fc3251c6543b5936780c1.jpeg",
     "spotifyUrl": "https://open.spotify.com/track/3e6ZmmMHtwiJla27wlR9kO",
-    "animeId": 123
+    "animeId": 123,
+    "previewUrl": "https://p.scdn.co/mp3-preview/77cffb9057120e5eb9df5b4a61d72f5553f09b85"
   }
 ];
 

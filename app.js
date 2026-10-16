@@ -837,7 +837,8 @@ async function initOfflineAudioVault() {
 
 function togglePlaySong(songId) {
   const song = SONGS.find(s => s.id === songId);
-  if (!song || !song.previewUrl) {
+  const audioSrc = song ? (song.previewUrl || song.audioUrl || song.audioFallback) : null;
+  if (!song || !audioSrc) {
     const songTitle = song ? `"${song.title}"` : (currentAppLang === 'th' ? 'เพลงนี้' : 'this track');
     showToast(currentAppLang === 'th' ? `🎧 ${songTitle} ยังไม่มีตัวอย่าง 30s ในระบบ — กดปุ่ม Spotify เพื่อฟังเพลงเต็ม` : `🎧 30s preview not available for ${songTitle} — Open Spotify for full audio`);
     return;
@@ -960,7 +961,7 @@ function togglePlaySong(songId) {
     });
   };
 
-  tryPlay(song.previewUrl, song.previewUrlAlt || null);
+  tryPlay(audioSrc, song.audioFallback || song.previewUrlAlt || null);
 }
 
 function updateAudioUI(isPlaying) {
@@ -2250,8 +2251,8 @@ let isRelaxBgmEnabled = true;
 let isDuckMutedByPreview = false;
 let wasRelaxBgmPlayingBeforeBackground = false;
 let wasPreviewPlayingBeforeBackground = false;
-// ปรับระดับเสียงให้ชัดเจน ฟังสบาย ผ่อนคลายกำลังดี (0.35) ไม่อู้อี้หรือเบาเกินไป
-const RELAX_BGM_VOLUME = 0.35;
+// ปรับระดับเสียงเพลง blue ให้ดังกังวาน ชัดเจน ไพเราะ ฟังสบาย ไม่เบาไป (0.85)
+const RELAX_BGM_VOLUME = 0.85;
 
 function getRelaxBgmAudio() {
   if (!relaxBgmAudio) {
@@ -2324,46 +2325,29 @@ function pauseRelaxBgm() {
 }
 
 function duckRelaxBgm() {
-  // เมื่อผู้ใช้เลือกเพลงฟัง -> ดนตรีผ่อนคลายจะเงียบไป
+  // เมื่อผู้ใช้เลือกเพลงฟัง -> ดนตรีผ่อนคลายจะหยุดทันที เพื่อไม่ให้เสียงตีกันและตัดปัญหาเสียงกระตุก
   isDuckMutedByPreview = true;
   updateRelaxBgmUI(false);
   if (relaxBgmAudio && !relaxBgmAudio.paused) {
-    let vol = relaxBgmAudio.volume;
-    const fadeTimer = setInterval(() => {
-      vol -= 0.04;
-      if (vol <= 0.02) {
-        clearInterval(fadeTimer);
-        relaxBgmAudio.pause();
-        relaxBgmAudio.volume = RELAX_BGM_VOLUME;
-      } else {
-        relaxBgmAudio.volume = Math.max(0, vol);
-      }
-    }, 25);
+    try {
+      relaxBgmAudio.pause();
+    } catch (e) {}
   }
 }
 
 function resumeRelaxBgm() {
-  // เมื่อเพลงที่เลือกฟังจบ หรือผู้ใช้หยุดเพลง -> เริ่มเล่นเพลงผ่อนคลายขึ้นมาใหม่
+  // เมื่อเพลงที่เลือกฟังจบ หรือผู้ใช้หยุดเพลง -> เล่นเพลงผ่อนคลาย blue ต่อทันทีด้วยระดับเสียงที่ชัดเจน
   isDuckMutedByPreview = false;
   if (!isRelaxBgmEnabled) return;
   try {
     const audio = getRelaxBgmAudio();
-    audio.currentTime = 0; // เริ่มเพลงใหม่ขึ้นมาเลย
-    audio.volume = 0.02;
+    audio.currentTime = 0;
+    audio.volume = RELAX_BGM_VOLUME;
     const p = audio.play();
     if (p && p.catch) {
       p.then(() => {
-        let vol = 0.02;
-        const fadeTimer = setInterval(() => {
-          vol += 0.03;
-          if (vol >= RELAX_BGM_VOLUME) {
-            clearInterval(fadeTimer);
-            audio.volume = RELAX_BGM_VOLUME;
-          } else {
-            audio.volume = vol;
-          }
-        }, 40);
         updateRelaxBgmUI(true);
+        updateMediaSession({ title: 'blue', artist: 'yung kai', coverUrl: 'splash-cover.jpg' }, true);
       }).catch(() => {});
     }
   } catch (e) {}
@@ -2431,16 +2415,16 @@ function updateMediaSession(track, isRelaxBgm = false) {
     navigator.mediaSession.setActionHandler('previoustrack', () => {
       if (currentPlayingId) {
         const idx = SONGS.findIndex(s => s.id === currentPlayingId);
-        if (idx > 0) playPreview(SONGS[idx - 1].id);
-        else if (SONGS.length > 0) playPreview(SONGS[SONGS.length - 1].id);
+        if (idx > 0) togglePlaySong(SONGS[idx - 1].id);
+        else if (SONGS.length > 0) togglePlaySong(SONGS[SONGS.length - 1].id);
       }
     });
 
     navigator.mediaSession.setActionHandler('nexttrack', () => {
       if (currentPlayingId) {
         const idx = SONGS.findIndex(s => s.id === currentPlayingId);
-        if (idx >= 0 && idx < SONGS.length - 1) playPreview(SONGS[idx + 1].id);
-        else if (SONGS.length > 0) playPreview(SONGS[0].id);
+        if (idx >= 0 && idx < SONGS.length - 1) togglePlaySong(SONGS[idx + 1].id);
+        else if (SONGS.length > 0) togglePlaySong(SONGS[0].id);
       }
     });
   } catch (e) {
@@ -2803,9 +2787,13 @@ async function checkApkAppUpdate() {
         }
         if (btnEl) {
           const apkAsset = (release.assets || []).find(a => a.name.endsWith('.apk'));
-          if (apkAsset && apkAsset.browser_download_url) {
-            btnEl.href = apkAsset.browser_download_url;
-          }
+          const apkUrl = (apkAsset && apkAsset.browser_download_url) ? apkAsset.browser_download_url : `https://github.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/releases/latest/download/HaimiyaTypo.apk`;
+          btnEl.href = apkUrl;
+          btnEl.onclick = (e) => {
+            e.preventDefault();
+            showToast(currentAppLang === 'th' ? '🚀 กำลังเริ่มดาวน์โหลดไฟล์อัปเดตเพื่อติดตั้งทันที...' : '🚀 Downloading update...');
+            window.open(apkUrl, '_system');
+          };
         }
         banner.style.display = 'block';
       }
