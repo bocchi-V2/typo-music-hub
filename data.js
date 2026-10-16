@@ -22115,6 +22115,987 @@ const SONGS = [
     "reason": "เพลงฮิตแนวอินดี้โฟล์ก-ฮิปฮอป สไตล์ลุยปาร์ตี้ข้ามคืนยันฟ้าสว่าง ยามตี 4 เข้ากับมู้ดปล่อยใจในค่ำคืน",
     "typoIdea": "ไทโปตัวเขียนลายมือน่ารัก มีคลื่นควันบางเบาและลูกเล่นตัวหนังสือโคลงเคลงชวนยิ้ม"
   }
+,
+  {
+    "id": 742,
+    "title": "Ka La Ya (กัลยา)",
+    "artist": "SON NPY",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5a/bc/9b/5abc9b70-9cf2-3787-c4f1-925b409e7512/0840102455717_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/dd/30/c9dd30b4-b8ac-6ee3-fe02-6d93bf886dee/mzaf_15854359036982624408.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Ka%20La%20Ya%20SON%20NPY",
+    "mood": "happy",
+    "tags": [
+      "ป๊อป",
+      "สดใส",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 743,
+    "title": "Hurry Up!",
+    "artist": "Superfruit",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/07/99/ed/0799edd8-b38b-ec04-91ac-4a6660ed05f7/886446598963.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/f5/ee/eaf5ee2d-e0f7-d481-7a0f-b4388f5abdac/mzaf_7936407186743025334.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/6i03vhoaUZxi3MfICeF3s9",
+    "mood": "happy",
+    "tags": [
+      "ป๊อป",
+      "สดใส",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "en",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 744,
+    "title": "Part-Time (feat. Rheehab & NAVY)",
+    "artist": "Austn",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/29/57/48/2957480a-b3a7-d8a0-d100-e41e64e9cc79/8809633568558.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e2/b2/c9/e2b2c9ac-e1e4-084c-d621-117a190dd3e8/mzaf_1346176268504402550.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/0dlZBJfbNGMfAKYV5SHskT",
+    "mood": "happy",
+    "tags": [
+      "ป๊อป",
+      "สดใส",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "en",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 745,
+    "title": "เจิดจรัส",
+    "artist": "YOUNGOHM",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/20/82/b2/2082b201-c0e8-2023-68ad-911b2cd332b2/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/71/a9/5371a964-499e-874b-bb63-a6bbe1c9c428/mzaf_10249536140027054501.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/3xyNRloMm2i6sNAlnnxLFA",
+    "mood": "happy",
+    "tags": [
+      "ป๊อป",
+      "สดใส",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 746,
+    "title": "เท่ไป",
+    "artist": "PUNYARB",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/20/7f/db/207fdbf3-0960-60f2-2483-cab0389b7c14/0840102434149_cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/dc/8d/97/dc8d9715-4e54-604e-273c-1a07ddfdab2e/mzaf_10727110099502275504.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/27iUCXDMHJOHd4jkwFtSgi",
+    "mood": "chill",
+    "tags": [
+      "อารมณ์",
+      "ชิลล์",
+      "R&B"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 747,
+    "title": "อยากจะกอดเธอนาน ๆ (HAVE A GOOD TIME)",
+    "artist": "BLVCKHEART",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1f/ec/2c/1fec2c09-412d-ab68-5e38-8f95245f36a9/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a0/64/97/a064973f-fea9-7982-2bf0-6b83faeb46cc/mzaf_17277847388732219295.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/63oA4hG0SqvsUFfaEhgqVX",
+    "mood": "romantic",
+    "tags": [
+      "ความรัก",
+      "โรแมนติก",
+      "หวาน"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ ฟอนต์หวาน สีชมพู"
+  },
+  {
+    "id": 748,
+    "title": "LIKE DAMN (feat. FXYGO & Papzilla)",
+    "artist": "YungMew",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/cf/fe/80/cffe8023-4f31-4de9-a298-bb847740facf/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/92/bb/e4/92bbe445-4284-d8df-2c73-90d551f630a0/mzaf_5384350559150970376.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/4wlmpwdyng4B4bObMnP3OS",
+    "mood": "chill",
+    "tags": [
+      "อารมณ์",
+      "ชิลล์",
+      "R&B"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "en",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 749,
+    "title": "โลกแห่งความฝัน (feat. Z9 & Sexski)",
+    "artist": "RIFLE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/35/c2/77/35c2772c-1a0b-7fdd-a601-52b4baaa2134/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e4/ea/d2/e4ead29a-0b32-28c7-7df3-9e4ece9ee7ab/mzaf_1361630635760947107.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/0tyYfrsTTiqK04TipBrIrg",
+    "mood": "hype",
+    "tags": [
+      "แรป",
+      "ฮิปฮอป",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+  },
+  {
+    "id": 750,
+    "title": "1 OF 1",
+    "artist": "P6ICK & SURIYA MQT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/52/ac/1e/52ac1e33-45fc-0ecb-8c86-8398d000a0e1/0.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6f/d0/7b/6fd07bff-5426-ac08-0adc-1e6fc20f557e/mzaf_17236008428747487421.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/7wEWayecQuw6YBcWZLukM0",
+    "mood": "hype",
+    "tags": [
+      "แรป",
+      "ฮิปฮอป",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "en",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+  },
+  {
+    "id": 751,
+    "title": "Faded (feat. Z9) [Special Version]",
+    "artist": "2Ectasy",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/93/ee/6193eed8-37b0-4e7a-69c5-a3edede1c645/0.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/80/af/de/80afdec2-ad91-7288-b3c7-8182dabcc31f/mzaf_3469517637653637933.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/5b2OC2aaioNReqHlQs1TbR",
+    "mood": "chill",
+    "tags": [
+      "อารมณ์",
+      "ชิลล์",
+      "R&B"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "en",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 752,
+    "title": "Nevermind (feat. PATCHARA & DS_Punyazzz)",
+    "artist": "JARNJAME",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c1/f3/19/c1f31930-ee25-f7b3-8895-30dfb4db31b1/5034644564067.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/25/5d/71/255d7171-5d89-f6d6-bc32-ea38d31124bc/mzaf_15430778916933330531.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/4Vbacl2YjS6F56K4TeIqMD",
+    "mood": "happy",
+    "tags": [
+      "ป๊อป",
+      "สดใส",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "en",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 753,
+    "title": "SHE IS TOTALLY OUT OF MY LEAGUE (feat. Z9)",
+    "artist": "P6ICK",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4b/de/5e/4bde5ee1-e86d-cc47-681b-231ca392dfca/196872471991.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cd/eb/3d/cdeb3d6e-65c8-fa74-0768-595b244be22b/mzaf_5790344453641681003.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/2UzdM3S5SrnjLCwQsleGrM",
+    "mood": "happy",
+    "tags": [
+      "ป๊อป",
+      "สดใส",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "en",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 754,
+    "title": "เคยรัก (feat. 2k) [Love Version]",
+    "artist": "9tokyo",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/68/13/1a/68131a5d-89df-7df3-34ad-f3346732c39e/199513361088.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f0/7a/08/f07a0811-b5a0-df86-28c3-3f4a0a90f147/mzaf_4236562777567106456.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/5fxHRVRuOMxLYlbrHYVMVK",
+    "mood": "romantic",
+    "tags": [
+      "ความรัก",
+      "โรแมนติก",
+      "หวาน"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ ฟอนต์หวาน สีชมพู"
+  },
+  {
+    "id": 755,
+    "title": "จีบ (Remastered 2025)",
+    "artist": "QLER",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6b/52/08/6b52081a-60b7-38f0-bcb9-4b711ca23023/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/a1/f9/67a1f9af-5229-a414-4044-f5ffc1d8d262/mzaf_4984701379491265077.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/0IkBGE1GVvDk5r6NOEcEmM",
+    "mood": "happy",
+    "tags": [
+      "ป๊อป",
+      "สดใส",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 756,
+    "title": "จิตแพทย์",
+    "artist": "TangBadVoice",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c5/6b/5e/c56b5ec5-be8f-4e92-7a49-9fdeeca89054/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4e/fa/f6/4efaf669-cf77-5887-d4a6-44436c53f3fc/mzaf_15282692727862104995.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/3qllosM3e50u675h2Ftdwu",
+    "mood": "hype",
+    "tags": [
+      "แรป",
+      "ฮิปฮอป",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+  },
+  {
+    "id": 757,
+    "title": "Victoria's Secret",
+    "artist": "Jax",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8a/ba/cd/8abacd14-46c1-bcc9-94a1-65a2e830f3f6/075679645463.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/22/c6/af22c6be-ba72-9cae-9c80-68e703bf9581/mzaf_11438110753569836265.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/6fON5gco8TNy1di0oBUr1Y",
+    "mood": "happy",
+    "tags": [
+      "ป๊อป",
+      "สดใส",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "en",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 758,
+    "title": "หลง",
+    "artist": "JODAI",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/60/99/d4/6099d4fc-15e8-439a-9168-b4a87ebfa4d2/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d7/c6/39/d7c63948-abb6-82c6-25f7-6be5afa4a57f/mzaf_17079661940064198175.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/3PsB1HkYkzegKJfz4I5q4e",
+    "mood": "happy",
+    "tags": [
+      "ป๊อป",
+      "สดใส",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 759,
+    "title": "BU",
+    "artist": "SURIYA MQT & P6ICK",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6e/b7/9e/6eb79eda-54e6-5b2c-1154-fca9f1cf1af8/0.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f4/eb/f0/f4ebf070-5e87-e772-0156-13b713c05a5e/mzaf_6968130843318243083.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/3X5Kco6l9HuvtO9CLCtzzq",
+    "mood": "hype",
+    "tags": [
+      "แรป",
+      "ฮิปฮอป",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "en",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+  },
+  {
+    "id": 760,
+    "title": "เจอเธอ (feat. pY-1 & Saraki)",
+    "artist": "7Vibes",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/13/90/81/13908186-c931-d749-8d05-9307ed125b3a/0.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ef/27/0f/ef270fbf-0cff-6724-4035-046ea2396f95/mzaf_11885892406439594825.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/3TtftKwIo17gntTHPKoACL",
+    "mood": "chill",
+    "tags": [
+      "ฟังสบาย",
+      "ชิลล์",
+      "ผ่อนคลาย"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 761,
+    "title": "คนนี้ครับ (feat. PLATHONG, 1KONG & Atlas)",
+    "artist": "Z9",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/9d/a2/c4/9da2c4c2-e3a0-a29e-3c5e-83764deb627c/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/37/03/d8/3703d822-030b-9967-4b5b-342a4a12f11b/mzaf_16117951247685812466.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/3YEVZESw8sgG0NLKO0QldM",
+    "mood": "hype",
+    "tags": [
+      "แรป",
+      "ฮิปฮอป",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+  },
+  {
+    "id": 762,
+    "title": "Og Hak Eek Laew",
+    "artist": "TAEKYS",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0c/4f/c9/0c4fc9e6-7fe7-5b25-bdd1-ced17fdea0ee/0840410432790_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/aa/76/ba/aa76ba69-45df-b7ec-9318-932875629174/mzaf_5860887620436262026.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/0DLs7wKjVzMxsA7YelQby4",
+    "mood": "happy",
+    "tags": [
+      "ป๊อป",
+      "สดใส",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "en",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 763,
+    "title": "Nobody Knows",
+    "artist": "KISS OF LIFE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/83/40/88/834088da-6387-50e3-a1ad-cc092acdbb65/cover_KM0018390_1.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/e6/03/43e6031d-2a3f-5e1d-02d7-7fa0c18a2617/mzaf_11018376454518067814.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/4N0LiJT8lMajHnLv5F5Iho",
+    "mood": "happy",
+    "tags": [
+      "ป๊อป",
+      "สดใส",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "en",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 764,
+    "title": "I Need A Girl (Feat. MdSponx) I Need A Girl (feat. MdSponx)",
+    "artist": "ILLSLICK",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/3b/93/56/3b9356b3-0920-f2a6-538c-7a5f23adcf59/825646428717.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fe/0a/8e/fe0a8e88-fc48-c984-7351-7b6ffb6d8132/mzaf_10994495992297371317.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/0gvk6fOtFaSfJYV2KU6XtJ",
+    "mood": "happy",
+    "tags": [
+      "ป๊อป",
+      "สดใส",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "en",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 765,
+    "title": "Missed Call",
+    "artist": "2Ectasy",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/21/06/3a/21063af3-af02-c1c1-3f9b-39c23218944c/0.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/eb/fb/02ebfb40-3fc3-6bc8-0c26-e79fa52d2684/mzaf_8476212096974290629.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/1fNr9IOJ7mMsWorMQFlsW8",
+    "mood": "happy",
+    "tags": [
+      "ป๊อป",
+      "สดใส",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "en",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 766,
+    "title": "ให้ตาย...",
+    "artist": "MaxMillor",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/bd/90/a5/bd90a5c2-8a48-85ac-75e4-b88623492ca2/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/01/f3/36/01f33673-ee7b-f763-6dfb-888c55213c2f/mzaf_11965646094989380620.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/4f3E47ZCVuJSknDc0uiS5t",
+    "mood": "chill",
+    "tags": [
+      "อารมณ์",
+      "ชิลล์",
+      "R&B"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 767,
+    "title": "จะรีบไปไหนทำไมไม่นอนนี่ (feat. DAW)",
+    "artist": "RIFLE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/cd/d6/ea/cdd6ea6a-c821-1a74-7b5f-791431f329bd/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/25/67/e0/2567e0a7-9a47-327f-05f2-cc5d19888706/mzaf_6596826622686709509.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/3UwrAJaeOqVCm0irEWcxy7",
+    "mood": "chill",
+    "tags": [
+      "อารมณ์",
+      "ชิลล์",
+      "R&B"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 768,
+    "title": "จดหมายถึงคนพิเศษ",
+    "artist": "Pondering, OZEEOOS & WHALJAY",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/4c/87/bf/4c87bf10-096a-e570-0c92-42f1c23f7f53/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dd/12/05/dd1205ed-a6d5-8e38-4548-e0982b0d45ca/mzaf_2041069238779738631.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/5yHGOpFgKmBsKSycQji6uZ",
+    "mood": "hype",
+    "tags": [
+      "แรป",
+      "ฮิปฮอป",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+  },
+  {
+    "id": 769,
+    "title": "หัวใจสีดำ",
+    "artist": "YOUNGOHM",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b8/ce/a5/b8cea5de-4bb6-fc81-22aa-6c8deebf543b/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e5/a7/d0/e5a7d05d-e972-6f57-92a6-d5f523200b1e/mzaf_10944828570353523593.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/5gbEGJJXjbF73DQQa2UQQE",
+    "mood": "romantic",
+    "tags": [
+      "ความรัก",
+      "โรแมนติก",
+      "หวาน"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ ฟอนต์หวาน สีชมพู"
+  },
+  {
+    "id": 770,
+    "title": "Benz ดำ",
+    "artist": "YOUNGOHM",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b8/ce/a5/b8cea5de-4bb6-fc81-22aa-6c8deebf543b/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6a/d4/55/6ad45548-1576-90a0-44dc-47accb7c0da3/mzaf_3849601935908759236.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/3RPiQqgZbe4jFNMIZtGoaU",
+    "mood": "hype",
+    "tags": [
+      "แรป",
+      "ฮิปฮอป",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+  },
+  {
+    "id": 771,
+    "title": "Legends of a Love Story (feat. Gavin D)",
+    "artist": "YOUNGOHM",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/42/c2/c0/42c2c031-1b32-19cc-f4a0-58db88c7f87a/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/03/b1/e0/03b1e04e-673b-e68f-30a4-aa9194f74547/mzaf_8986324198495773485.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/4JVHa8eTUOEN0zS1zrA2j5",
+    "mood": "hype",
+    "tags": [
+      "แรป",
+      "ฮิปฮอป",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "en",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+  },
+  {
+    "id": 772,
+    "title": "เด็กอินเตอร์ (ไม่กล้าจีบ)",
+    "artist": "BloodNova",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b2/c7/56/b2c756ad-d2bc-3a77-695b-49579c81e3c0/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/30/dc/2a/30dc2a16-dceb-dc07-b21c-53d1f62bb167/mzaf_13893881310842754528.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/6koztzfSaFalbFxpiaFpjk",
+    "mood": "happy",
+    "tags": [
+      "ป๊อป",
+      "สดใส",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 773,
+    "title": "Nakorn Dara",
+    "artist": "YOUNGOHM",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a8/a5/51/a8a55109-5a16-7633-b953-48d91bedfd70/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/44/8b/89/448b898c-7c3c-c3ff-13ca-83ee5a6c3d9d/mzaf_8506767936684723668.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/2wyjOiDh07ISNq0oq69G4e",
+    "mood": "hype",
+    "tags": [
+      "แรป",
+      "ฮิปฮอป",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "en",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+  },
+  {
+    "id": 774,
+    "title": "เรื่องธรรมดา",
+    "artist": "Cocktail",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/77/23/b9/7723b9a0-2048-ca4b-6432-753532dba41b/888332913850.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/d7/8c/43d78ce1-3f83-2ce9-4c8b-b2fbc9938421/mzaf_15711171385798487682.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/7vZFov5R0OZVG9gtDUCJsr",
+    "mood": "happy",
+    "tags": [
+      "ป๊อป",
+      "สดใส",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 775,
+    "title": "ใจฉันตามเธอไป",
+    "artist": "YOUNGOHM",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b8/ce/a5/b8cea5de-4bb6-fc81-22aa-6c8deebf543b/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6b/57/e6/6b57e675-32cd-5b37-f9a9-e56f793ee137/mzaf_5063477486710446396.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/75mFrseCKSI6Nz8WANXq90",
+    "mood": "hype",
+    "tags": [
+      "แรป",
+      "ฮิปฮอป",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+  },
+  {
+    "id": 776,
+    "title": "Cold Fire",
+    "artist": "YOUNGOHM",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/42/c2/c0/42c2c031-1b32-19cc-f4a0-58db88c7f87a/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f8/17/8b/f8178b2b-930c-456e-fcd9-aabdafce9cc7/mzaf_12689149830172858352.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/4ZU069vAYkr7soRzdzNdjF",
+    "mood": "chill",
+    "tags": [
+      "อารมณ์",
+      "ชิลล์",
+      "R&B"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "en",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 777,
+    "title": "กรุงเทพมหานคร",
+    "artist": "YOUNGOHM",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b8/ce/a5/b8cea5de-4bb6-fc81-22aa-6c8deebf543b/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/15/36/66/153666f9-ff83-a220-caae-d2af2245314b/mzaf_15359120974379622577.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/4nUxyQ6GjIOCZRjR7KFeVb",
+    "mood": "hype",
+    "tags": [
+      "แรป",
+      "ฮิปฮอป",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+  },
+  {
+    "id": 778,
+    "title": "Sunset In Pattaya",
+    "artist": "YOUNGOHM",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b8/ce/a5/b8cea5de-4bb6-fc81-22aa-6c8deebf543b/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d1/15/9d/d1159d37-7b16-8bd8-031c-9114911d5521/mzaf_4137370624561210609.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/3xAsJQO4g5ZBUL6U6k5CzW",
+    "mood": "hype",
+    "tags": [
+      "แรป",
+      "ฮิปฮอป",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "en",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+  },
+  {
+    "id": 779,
+    "title": "มอง 2568",
+    "artist": "YOUNGOHM",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b8/ce/a5/b8cea5de-4bb6-fc81-22aa-6c8deebf543b/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/a4/a0/33a4a0ea-e81b-4817-682b-2bbcbf9105ca/mzaf_14166506513150631014.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/4oOSJiNmrvZzhvr1OQPln2",
+    "mood": "hype",
+    "tags": [
+      "แรป",
+      "ฮิปฮอป",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+  },
+  {
+    "id": 780,
+    "title": "สถานีปลายทาง",
+    "artist": "SARAN & THAOWAN",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/52/86/45/5286455b-a557-252c-43a9-653737710f6e/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/55/d3/ab/55d3ab2f-4de6-4609-2fea-eb9c03e564e9/mzaf_1436593295599319657.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/6n94W9lpFtuOI0jD7ZJk5B",
+    "mood": "happy",
+    "tags": [
+      "ป๊อป",
+      "สดใส",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 781,
+    "title": "CURSE (รักใครไม่เป็น) [feat. 2K & Saran]",
+    "artist": "Z9",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2d/84/61/2d8461ee-c49b-94da-632c-2ae15f4f5519/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/da/4d/67da4d29-7511-dfb6-25cb-461d7055664f/mzaf_247838951175896680.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/77rZWogLvZ2NOf248oMd6N",
+    "mood": "romantic",
+    "tags": [
+      "ความรัก",
+      "โรแมนติก",
+      "หวาน"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ ฟอนต์หวาน สีชมพู"
+  },
+  {
+    "id": 782,
+    "title": "เดินทางโดยสวัสดิภาพ",
+    "artist": "SARAN & THAOWAN",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/52/86/45/5286455b-a557-252c-43a9-653737710f6e/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0f/36/d7/0f36d7b2-81c6-8e5b-0b0f-ba78ea33049b/mzaf_8371118327475872535.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/5xEtdOxQ3z18NWmDhG98N5",
+    "mood": "happy",
+    "tags": [
+      "ป๊อป",
+      "สดใส",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 783,
+    "title": "ใจพัง (feat. GTK) [Hidden World Live Session]",
+    "artist": "SARAN",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a2/d6/e7/a2d6e7ef-0e8d-0fad-d04a-5d56d5093d6d/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/12/b3/9912b360-7040-8e4c-cbf9-edeed2b99d48/mzaf_9031679410111996319.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/2obHilJeVz2oAQIgs3F9oU",
+    "mood": "sad",
+    "tags": [
+      "เศร้า",
+      "เจ็บปวด",
+      "อ้อมกอด"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ ฟอนต์บางเบา สีซีด"
+  },
+  {
+    "id": 784,
+    "title": "Everyday",
+    "artist": "P9D",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/83/e9/48/83e94820-015d-4cbe-d667-770f434313c7/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2e/a6/c1/2ea6c113-6aaa-3f5a-1260-95b08769e662/mzaf_13582935407674362909.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/7BrgCe7oLFfYTKgtJfBYUo",
+    "mood": "hype",
+    "tags": [
+      "แรป",
+      "ฮิปฮอป",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "en",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+  },
+  {
+    "id": 785,
+    "title": "รสชาติชีวิต",
+    "artist": "LITTLE JOHN",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1c/5e/3b/1c5e3ba5-569d-4f2c-436e-f3b4cda3eaf3/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6e/75/a8/6e75a842-5472-f209-978d-3dad5750e00f/mzaf_1091641576649248016.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/3S16LqUZZibsrTeG59kH4M",
+    "mood": "hype",
+    "tags": [
+      "ร็อค",
+      "พลังงาน",
+      "สนุก"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+  },
+  {
+    "id": 786,
+    "title": "PLEASE",
+    "artist": "Atom Chanakan",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e5/0d/ba/e50dba9c-86f9-9ce7-8981-b62ab1e36951/888332937771.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f5/02/32/f50232fa-51d7-1513-e4be-48b257935596/mzaf_18022672252504758696.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/3Ohb6hLc9rdw63nq8NMC17",
+    "mood": "happy",
+    "tags": [
+      "ป๊อป",
+      "สดใส",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "en",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ มินิมอล ชิลล์"
+  },
+  {
+    "id": 787,
+    "title": "โลกหลังความเศร้า (feat. ก้อง ห้วยไร่) [เพลงประกอบภาพยนตร์ \"สัปเหร่อ2\"]",
+    "artist": "Joey Phuwasit",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c6/cf/7a/c6cf7a7b-a93e-0c38-0e9d-390d4d4839b7/888332884570.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3c/bc/4c/3cbc4c79-a184-f932-35b0-ae3a1b99ccde/mzaf_13088205336276081772.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/3KlQLqqqPp2wNm5qR2TvAX",
+    "mood": "sad",
+    "tags": [
+      "เศร้า",
+      "เจ็บปวด",
+      "อ้อมกอด"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ ฟอนต์บางเบา สีซีด"
+  },
+  {
+    "id": 788,
+    "title": "Cinnamon Girl",
+    "artist": "Lana Del Rey",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c6/5f/b9/c65fb9eb-da2f-89a9-b640-2fff1fc3a660/19UMGIM61350.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/61/6d/80616d56-8057-743f-b1d5-40c6926b1ad0/mzaf_15310435543583230596.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/2mdEsXPu8ZmkHRRtAdC09e",
+    "mood": "hype",
+    "tags": [
+      "ร็อค",
+      "พลังงาน",
+      "สนุก"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "en",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+  },
+  {
+    "id": 789,
+    "title": "นิดหน่อย",
+    "artist": "Joey Phuwasit",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e3/0f/06/e30f0661-5ed5-add2-61f8-2b293e321782/888332894517.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/93/70/70/93707025-3f91-f004-cb92-150551b0ab0f/mzaf_13778511972454284920.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/080lNvZIDOF7xnJ7MwOE1k",
+    "mood": "hype",
+    "tags": [
+      "ร็อค",
+      "พลังงาน",
+      "สนุก"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+  },
+  {
+    "id": 790,
+    "title": "ของตาย",
+    "artist": "Joey Phuwasit",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/80/ee/88/80ee8860-5b8d-d103-44ea-2972fff70e54/888332884488.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1f/62/3b/1f623b46-ea69-724d-6229-e5aa3a70cdfb/mzaf_6872857763352366671.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/track/7zj80Zr7PN40hxNwnTMqPh",
+    "mood": "hype",
+    "tags": [
+      "ร็อค",
+      "พลังงาน",
+      "สนุก"
+    ],
+    "bpm": "ปานกลาง (100-120 BPM)",
+    "lang": "th",
+    "animeId": null,
+    "animeMatch": [],
+    "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
+    "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+  }
 ];
 
 const ANIME_PAIRS = [
