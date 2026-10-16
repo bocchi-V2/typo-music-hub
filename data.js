@@ -28585,6 +28585,8594 @@ const SONGS = [
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4c/b6/e5/4cb6e5b1-2db0-88c0-f025-b79cad3b8fab/196873832111.jpg/600x600bb.png",
     "spotifyUrl": "https://open.spotify.com/search/Be%20By%20You%20Luke%20Combs",
     "animeId": 241
+  },
+  {
+    "id": 1080,
+    "title": "Lost Stars",
+    "artist": "Adam Levine",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 122,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/6b/3c/b16b3c77-ac12-55f6-c9ef-abe3a0548322/mzaf_13143599158828062444.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b1/6b/3c/b16b3c77-ac12-55f6-c9ef-abe3a0548322/mzaf_13143599158828062444.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/24/ab/07/24ab076d-9e33-b2ea-8cf7-5e7308320b00/00602537902187.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/Lost%20Stars",
+    "animeId": 90
+  },
+  {
+    "id": 1081,
+    "title": "Baby Girl",
+    "artist": "Disco Lines",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 115,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0a/6a/1f/0a6a1f18-2491-067b-e651-31bfa1709074/mzaf_10380728647006168598.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0a/6a/1f/0a6a1f18-2491-067b-e651-31bfa1709074/mzaf_10380728647006168598.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/ef/dc/0d/efdc0d6d-bd07-afa8-2800-f07be51ab971/196833229227.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/Baby%20Girl",
+    "animeId": 85
+  },
+  {
+    "id": 1082,
+    "title": "ไปต่อไหว ไปต่อไหม",
+    "artist": "Atom Chanakan",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 114,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/71/a6/f071a600-bd66-2949-0b93-63c28bb22c49/mzaf_6879655568928320662.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/71/a6/f071a600-bd66-2949-0b93-63c28bb22c49/mzaf_6879655568928320662.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2a/3f/5d/2a3f5d4f-99a9-ca8d-98f5-6bf98a092cbc/888332929301.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%9B%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B9%84%E0%B8%AB%E0%B8%A7%20%E0%B9%84%E0%B8%9B%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B9%84%E0%B8%AB%E0%B8%A1%20(GO%20ON)",
+    "animeId": 299
+  },
+  {
+    "id": 1083,
+    "title": "ตายไปแล้ว",
+    "artist": "พงษ์พัฒน์ วชิรบรรจง",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 104,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/4d/fd/c7/4dfdc752-4b2c-8e44-fbcc-e416b4869567/mzaf_3200876839899019336.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/4d/fd/c7/4dfdc752-4b2c-8e44-fbcc-e416b4869567/mzaf_3200876839899019336.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e1/31/61/e13161f7-6bbb-35ec-a2f2-07eb3b649126/3610158629472.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%95%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%9B%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7",
+    "animeId": 47
+  },
+  {
+    "id": 1084,
+    "title": "Airdrop",
+    "artist": "Young Jonn",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 113,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/56/c9/5f/56c95f45-73fd-e340-be22-89d0ef08f4ed/mzaf_9117645186798178786.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/56/c9/5f/56c95f45-73fd-e340-be22-89d0ef08f4ed/mzaf_9117645186798178786.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e4/fb/6c/e4fb6c75-8266-67c1-057f-029749c4c6fa/5026854240657.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/Airdrop",
+    "animeId": 168
+  },
+  {
+    "id": 1085,
+    "title": "รักกันตอนเลิกกัน",
+    "artist": "MEAN Band",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 138,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/89/08/78/89087840-b3fa-5e5e-3cd0-496d79b3ccc9/mzaf_9787207031653174658.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/89/08/78/89087840-b3fa-5e5e-3cd0-496d79b3ccc9/mzaf_9787207031653174658.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/10/66/21/10662121-3841-19f3-a5f4-75d925680b23/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%99%20(Too%20Late)",
+    "animeId": 168
+  },
+  {
+    "id": 1086,
+    "title": "Moth To A Flame",
+    "artist": "Morgan Wade",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 105,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/aa/4e/0a/aa4e0a1f-7767-495a-452c-e1e63e1addab/mzaf_4197044483667610283.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/aa/4e/0a/aa4e0a1f-7767-495a-452c-e1e63e1addab/mzaf_4197044483667610283.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/91/31/df/9131dffd-8c9a-18bd-3d8f-65e9dadc8c1d/196871848824.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/Moth%20To%20A%20Flame",
+    "animeId": 299
+  },
+  {
+    "id": 1087,
+    "title": "เขียว เหลือง แดง",
+    "artist": "KN Records Music",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 107,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/ed/3c/2fed3c9b-225b-f7e9-9f5b-3ccb79c2f9b6/mzaf_3449415005599912430.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2f/ed/3c/2fed3c9b-225b-f7e9-9f5b-3ccb79c2f9b6/mzaf_3449415005599912430.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c0/fc/d5/c0fcd539-187d-e427-95dc-368cab981124/artwork.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%A7%20%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%87%20%E0%B9%81%E0%B8%94%E0%B8%87%20(Get%20high)",
+    "animeId": 104
+  },
+  {
+    "id": 1088,
+    "title": "อย่ามากกว่าฉันก็พอ",
+    "artist": "GAVIN:D",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 103,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b2/87/67/b2876745-6506-4e4e-e90e-9c6802749b7d/mzaf_5149942407270761606.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b2/87/67/b2876745-6506-4e4e-e90e-9c6802749b7d/mzaf_5149942407270761606.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5a/42/0d/5a420d26-a339-7aea-d03a-68d87c752d3d/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%A1%E0%B8%B2%E0%B8%81%E0%B8%81%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%81%E0%B9%87%E0%B8%9E%E0%B8%AD%20(Jealous)",
+    "animeId": 75
+  },
+  {
+    "id": 1089,
+    "title": "ขึ้นใจ",
+    "artist": "Mirrr, BLVCKHEART",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 97,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/cd063b7aca9fac2dae86bfe4cae7cc081c78ad0c",
+    "audioFallback": "https://p.scdn.co/mp3-preview/cd063b7aca9fac2dae86bfe4cae7cc081c78ad0c",
+    "coverUrl": "https://media.kitsu.app/anime/46140/poster_image/medium-09c31317676fc3251c6543b5936780c1.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/36OWvhv70Cu3LGC92N79qs",
+    "animeId": 123
+  },
+  {
+    "id": 1090,
+    "title": "เมื่อไหร่จะมี",
+    "artist": "BLVCKHEART",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 134,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/1e2443ceb985b151b3630067bebea9cdbe286241",
+    "audioFallback": "https://p.scdn.co/mp3-preview/1e2443ceb985b151b3630067bebea9cdbe286241",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/90/16/489016a7-a11d-b2ac-4457-35154bbe8c6a/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7L3sb4eqF8zfQU8nAekHPm",
+    "animeId": 186
+  },
+  {
+    "id": 1091,
+    "title": "ได้แค่เดินมาส่ง",
+    "artist": "GAVIN:D, BLVCKHEART",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 118,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/dc769b3d5fa1379b7146e184324ed7dcbb0b206e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/dc769b3d5fa1379b7146e184324ed7dcbb0b206e",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5a/42/0d/5a420d26-a339-7aea-d03a-68d87c752d3d/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1FhxX1Su9kwKFEqM4qqEJ6",
+    "animeId": 48
+  },
+  {
+    "id": 1092,
+    "title": "ไม่รักดีกว่��",
+    "artist": "Z9",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 134,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b9e5ee738804630c933f51e5d7b61d88b5aebde0",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b9e5ee738804630c933f51e5d7b61d88b5aebde0",
+    "coverUrl": "https://media.kitsu.app/anime/14027/poster_image/medium-2ccfd6de3c64f3e8340230e7758646a1.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/5F6Zfgz34H4UtJkCcDUlPs",
+    "animeId": 409
+  },
+  {
+    "id": 1093,
+    "title": "กลัวว่าฉันจะไม่เสียใจ",
+    "artist": "PURPEECH",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 131,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/aec94d4e39ea741d6389d1796ac89043dba51b24",
+    "audioFallback": "https://p.scdn.co/mp3-preview/aec94d4e39ea741d6389d1796ac89043dba51b24",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c0/9e/4f/c09e4f86-9bdc-063d-5baa-fd4f573040d9/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4ntIPuXf6DpvrZExXrn5QA",
+    "animeId": 232
+  },
+  {
+    "id": 1094,
+    "title": "Living Death",
+    "artist": "PUN",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 111,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/9c66fd711b4a285d14a956bf40ac0e3298d83315",
+    "audioFallback": "https://p.scdn.co/mp3-preview/9c66fd711b4a285d14a956bf40ac0e3298d83315",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/65/ce/a5/65cea5d9-c4bb-a02b-1e84-fdc41f379d1a/803680204122.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0ze2gwpSfT2leQALslUXId",
+    "animeId": 344
+  },
+  {
+    "id": 1095,
+    "title": "นาฬิกาทราย",
+    "artist": "BOWKYLION",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 131,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/e68118342c941686a5f2a6e51b7c829a130da235",
+    "audioFallback": "https://p.scdn.co/mp3-preview/e68118342c941686a5f2a6e51b7c829a130da235",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ea/bd/42/eabd4243-63f0-900a-8559-f01d523ed6fa/artwork.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4S0zJwuiJF9ImbGYUbGrNT",
+    "animeId": 345
+  },
+  {
+    "id": 1096,
+    "title": "รักให้เธอได้รู้",
+    "artist": "PUN",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 108,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/1e767bbdd135315abfd846afcb1562fbca24e977",
+    "audioFallback": "https://p.scdn.co/mp3-preview/1e767bbdd135315abfd846afcb1562fbca24e977",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/2d/fc/7d/2dfc7d57-c3e4-909a-8369-b1480ac9ac60/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0jmSojJLnjiQpGGM3HHlYS",
+    "animeId": 295
+  },
+  {
+    "id": 1097,
+    "title": "เมื่อถูกค้นพบ",
+    "artist": "FREEHAND",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 112,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b1609e355a7e422917723a61ca2d044a898fe494",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b1609e355a7e422917723a61ca2d044a898fe494",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/10/13/75/10137570-1383-a197-4c5a-0f6ece5eefcb/888332883054.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7q9cMJ0oDZFZSnqatZNabo",
+    "animeId": 295
+  },
+  {
+    "id": 1098,
+    "title": "ไม่มีวันไหนที่ไม่คิดถึง",
+    "artist": "PURPEECH",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 134,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/548dbac80c34a3d6f28942cbe549ebfccd6f9d9b",
+    "audioFallback": "https://p.scdn.co/mp3-preview/548dbac80c34a3d6f28942cbe549ebfccd6f9d9b",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7359/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2L54tWSpB5yeAYvienaKTT",
+    "animeId": 110
+  },
+  {
+    "id": 1099,
+    "title": "ฝากให้เขารัก",
+    "artist": "Yes'sir Days",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 129,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/62b5b4c2dbff5dd85271f4b337af97a0f44173c5",
+    "audioFallback": "https://p.scdn.co/mp3-preview/62b5b4c2dbff5dd85271f4b337af97a0f44173c5",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d8/eb/4d/d8eb4d0b-610d-fd86-56d2-e7de71fd7264/888332888240.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/198pPjDG0juHRjechZrWer",
+    "animeId": 226
+  },
+  {
+    "id": 1100,
+    "title": "สายไป",
+    "artist": "9tokyo, BLVCKHEART",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 127,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/c6fa96bc8bb235b417931776890c3a14166f72cf",
+    "audioFallback": "https://p.scdn.co/mp3-preview/c6fa96bc8bb235b417931776890c3a14166f72cf",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ec/ac/01/ecac0102-78d5-51e0-6be2-bd3495deb655/199329091001.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/45VmbHRJywi2mNaIGvHs44",
+    "animeId": 236
+  },
+  {
+    "id": 1101,
+    "title": "ขอแค่นี้",
+    "artist": "PUN",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 122,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/94d76fce2f0aba93ce4c6dad855347a5f7f2e580",
+    "audioFallback": "https://p.scdn.co/mp3-preview/94d76fce2f0aba93ce4c6dad855347a5f7f2e580",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6f/a8/28/6fa82851-7172-19a0-0fdf-a523da31fc9f/888332982016.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6uS1yKSfktHNN7o4AradRV",
+    "animeId": 13
+  },
+  {
+    "id": 1102,
+    "title": "9 นาฬิกา",
+    "artist": "SPF",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 140,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/552a60410118a450f470a5c77d0f5169c8e90559",
+    "audioFallback": "https://p.scdn.co/mp3-preview/552a60410118a450f470a5c77d0f5169c8e90559",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music127/v4/6e/19/d3/6e19d3a9-57a0-1d45-f689-d8319bf46fc9/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1RIcNj56JKuH0WB9AyNARB",
+    "animeId": 2
+  },
+  {
+    "id": 1103,
+    "title": "ที่คั่นหนังสือ",
+    "artist": "BOWKYLION, NONT TANONT",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 97,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/78cfa23a756995cb67c14c39cb78fe91da4f411c",
+    "audioFallback": "https://p.scdn.co/mp3-preview/78cfa23a756995cb67c14c39cb78fe91da4f411c",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/47743/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6vn8nzgxByxZDKLmIKYAkn",
+    "animeId": 384
+  },
+  {
+    "id": 1104,
+    "title": "จากกันโดยสมบูรณ์",
+    "artist": "guncharlie",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 117,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/55dde7e9b2033bce730c879947bec3bd19d7c334",
+    "audioFallback": "https://p.scdn.co/mp3-preview/55dde7e9b2033bce730c879947bec3bd19d7c334",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e5/4e/89/e54e89df-de38-f965-a6a3-59dcf57980ef/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7LSUaVDiEO3W6Fp67yKumm",
+    "animeId": 87
+  },
+  {
+    "id": 1105,
+    "title": "ซาโยนาระ",
+    "artist": "Mild",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 134,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/40cd236640508d1d94522f08bdd2bf437c0d0b30",
+    "audioFallback": "https://p.scdn.co/mp3-preview/40cd236640508d1d94522f08bdd2bf437c0d0b30",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c4/9a/86/c49a86d4-1801-1f66-17c8-697ee0a80a09/00602508246159_Cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1MkgN3lRBf5mXbxY6CWU9s",
+    "animeId": 120
+  },
+  {
+    "id": 1106,
+    "title": "ขี้แง",
+    "artist": "PROXIE",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 137,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d4f3f591ee17a09a39c66bfa32d8273e81a258b3",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d4f3f591ee17a09a39c66bfa32d8273e81a258b3",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/58/0d/ac/580dace1-b5c1-a189-cdf8-e1c9167af526/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/04nwoRnWqFYhFLaRNWuNw5",
+    "animeId": 359
+  },
+  {
+    "id": 1107,
+    "title": "กลัวความเสียใจ",
+    "artist": "Saran, Pearpilincys",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 133,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b74ae57cfb00d828a27920ac7ff93348e20590db",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b74ae57cfb00d828a27920ac7ff93348e20590db",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/b6/0a/6cb60a82-6f8b-4df3-886e-a92f8d6cd352/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/52ijTzD9HujnkPswlVPGrF",
+    "animeId": 354
+  },
+  {
+    "id": 1108,
+    "title": "กอดไม่ได้",
+    "artist": "Bedroom Audio",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 116,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/4ffd793ace42e7745fc50dd1f2a433b5bb55a44f",
+    "audioFallback": "https://p.scdn.co/mp3-preview/4ffd793ace42e7745fc50dd1f2a433b5bb55a44f",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/50/e9/24/50e924ea-4f36-01cf-56e3-7db0184f1f20/859711351884_cover.tif/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6OtTqu9t1RitlU1RjUfEXe",
+    "animeId": 17
+  },
+  {
+    "id": 1109,
+    "title": "รักใครไม่ไหว",
+    "artist": "Three Man Down",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 137,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d09e6e7e0390571405550db8361442310021feab",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d09e6e7e0390571405550db8361442310021feab",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6b/26/27/6b2627ad-9ad3-00ba-db1d-4b557c74d00b/888332889773.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3ZxGBncHdyXG7Mxa7d429r",
+    "animeId": 365
+  },
+  {
+    "id": 1110,
+    "title": "DAY ONE",
+    "artist": "PUN",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 123,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b443b75a3242b21c3b98c768c654fb6d0dfbdb4c",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b443b75a3242b21c3b98c768c654fb6d0dfbdb4c",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42551/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5QxNmQBXpLPemzpDvsuiLM",
+    "animeId": 386
+  },
+  {
+    "id": 1111,
+    "title": "รักมือสอง",
+    "artist": "Bedroom Audio",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 143,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/15253f10569dc3602e1ddabf2b46d2294a370d76",
+    "audioFallback": "https://p.scdn.co/mp3-preview/15253f10569dc3602e1ddabf2b46d2294a370d76",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/6c/a8/78/6ca878ad-c181-32f4-4cb0-b5367a1b842f/8859028150158.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6FngEZyo8Gg5P4fzckJeX4",
+    "animeId": 68
+  },
+  {
+    "id": 1112,
+    "title": "สิ่งที่มันกำลังเกิด (feat. วง PAUSE) - From \"อันโกะ กลรักสตรอว์เบอร์รี่\"",
+    "artist": "เอ๊ะ จิรากร",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 98,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/ecafbe9b27518427a826ebe3251a83734940b156",
+    "audioFallback": "https://p.scdn.co/mp3-preview/ecafbe9b27518427a826ebe3251a83734940b156",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/43/6c/39/436c39c9-7362-2920-cf00-428d41128c11/888332994071.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0JG4BZohRtuj6AE09xW7AC",
+    "animeId": 158
+  },
+  {
+    "id": 1113,
+    "title": "ขอ",
+    "artist": "Lomosonic",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 111,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/689f21b74b5772dfb1af7582a56525ca807656af",
+    "audioFallback": "https://p.scdn.co/mp3-preview/689f21b74b5772dfb1af7582a56525ca807656af",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f1/2e/05/f12e05db-eabe-85dc-e767-757f425c0097/888332901406.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5MZe9NqyaSvtoaZKCeyGee",
+    "animeId": 221
+  },
+  {
+    "id": 1114,
+    "title": "คืนจันทร์",
+    "artist": "Loso",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 113,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/49532c968b6e16c3639b0790dab3f34d175c048e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/49532c968b6e16c3639b0790dab3f34d175c048e",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11110/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5G9QIsPENzaSjyipcQQAqL",
+    "animeId": 59
+  },
+  {
+    "id": 1115,
+    "title": "นาฬิกาตาย",
+    "artist": "Bodyslam",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 121,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/95bfb15a5c3e5efebccffa18d49104ca26bda6cd",
+    "audioFallback": "https://p.scdn.co/mp3-preview/95bfb15a5c3e5efebccffa18d49104ca26bda6cd",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42792/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5XhAqG6dRhLYJb2QF6WhL4",
+    "animeId": 332
+  },
+  {
+    "id": 1116,
+    "title": "ที่เดิม",
+    "artist": "PUN",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 113,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/fc12e89f9a44005e3b1ea63b0ec2845fbe527176",
+    "audioFallback": "https://p.scdn.co/mp3-preview/fc12e89f9a44005e3b1ea63b0ec2845fbe527176",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ab/80/f3/ab80f332-efa1-3a88-5a79-93ac8ff9b096/888332982948.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4KZRjuldIGTS7AQUPbUvbs",
+    "animeId": 276
+  },
+  {
+    "id": 1117,
+    "title": "ไม่ได้ลืมแค่ไม่ได้เจอ - Flashback",
+    "artist": "guncharlie",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 128,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/8278e3f61d1c2aa7e7578087a88f85d8b6b4f203",
+    "audioFallback": "https://p.scdn.co/mp3-preview/8278e3f61d1c2aa7e7578087a88f85d8b6b4f203",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/97/3d/cc/973dcc2d-ad7d-c6e0-e5b9-1de790b348ad/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2m7as7aD1JAEUSOJCNoeHT",
+    "animeId": 3
+  },
+  {
+    "id": 1118,
+    "title": "ความรัก",
+    "artist": "Bodyslam",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 138,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/bd3a7d9ae0449fb03fbc578ddf2ab9ca6885d2bb",
+    "audioFallback": "https://p.scdn.co/mp3-preview/bd3a7d9ae0449fb03fbc578ddf2ab9ca6885d2bb",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7c/8a/31/7c8a31a7-e16e-6714-23b7-18bc328e4554/888332972390.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5djtarcayWp2DK6DQ1Z9P6",
+    "animeId": 201
+  },
+  {
+    "id": 1119,
+    "title": "มันดีกว่าที่คิด - จาก \"ละคร อกเกือบหักแอบรักคุณสามี\"",
+    "artist": "Singto Numchok",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 135,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/7ad8a701ca910a982a899f4d43ab4bdff9b89e19",
+    "audioFallback": "https://p.scdn.co/mp3-preview/7ad8a701ca910a982a899f4d43ab4bdff9b89e19",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/19/f0/46/19f0463e-387c-1b67-d60b-b3525fd63cb1/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2LVF7xkMkTD0fiv9Gqownk",
+    "animeId": 114
+  },
+  {
+    "id": 1120,
+    "title": "ตุ๋ยดุ๋ย",
+    "artist": "YENTED",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 119,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/ade925ceabe6d98644211717d2a29d20bfffed89",
+    "audioFallback": "https://p.scdn.co/mp3-preview/ade925ceabe6d98644211717d2a29d20bfffed89",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/03/09/38/0309385e-ff92-45d1-f676-b30131d08738/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7yjcs9C5m0nRVfc6D2xAJG",
+    "animeId": 5
+  },
+  {
+    "id": 1121,
+    "title": "ความทรงจำ",
+    "artist": "Musketeers",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 101,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/f70f445701d607a2caacfa666872098c564ca423",
+    "audioFallback": "https://p.scdn.co/mp3-preview/f70f445701d607a2caacfa666872098c564ca423",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/0d/67/37/0d673744-de94-55ec-e5d5-06b3277620f9/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/24VfUtHxbkCrscWC00toom",
+    "animeId": 276
+  },
+  {
+    "id": 1122,
+    "title": "เธอ",
+    "artist": "Cocktail",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 107,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/5e6bd2179116f3a623fa50691d6abc7082476ffa",
+    "audioFallback": "https://p.scdn.co/mp3-preview/5e6bd2179116f3a623fa50691d6abc7082476ffa",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0e/c8/88/0ec88823-e6f7-3e25-870a-0c50a2f61554/888332896740.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3HlTt5df6OrvtwTvO6iFla",
+    "animeId": 2
+  },
+  {
+    "id": 1123,
+    "title": "รออยู่อย่างนั้น",
+    "artist": "Saran, Z9, SIMON",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 104,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/9562c07dfa8211a5c4812bf279f3e775c2277145",
+    "audioFallback": "https://p.scdn.co/mp3-preview/9562c07dfa8211a5c4812bf279f3e775c2277145",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13995/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/24wXz2WuaF02y0mrKNPMsN",
+    "animeId": 268
+  },
+  {
+    "id": 1124,
+    "title": "มันก็เป็นแค่ครั้งหนึ่ง",
+    "artist": "MaxMillor, SURIYA MQT",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 115,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b6a5ef61cadfcfaaa618d54334da5f3b5d2b6d49",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b6a5ef61cadfcfaaa618d54334da5f3b5d2b6d49",
+    "coverUrl": "https://media.kitsu.app/anime/41277/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1OGSYElgBhsVzc1SPIVOQY",
+    "animeId": 144
+  },
+  {
+    "id": 1125,
+    "title": "ไม่รักดีกว่า",
+    "artist": "Z9",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 112,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b9e5ee738804630c933f51e5d7b61d88b5aebde0",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b9e5ee738804630c933f51e5d7b61d88b5aebde0",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7882/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5F6Zfgz34H4UtJkCcDUlPs",
+    "animeId": 62
+  },
+  {
+    "id": 1126,
+    "title": "One Of The Girls",
+    "artist": "The Weeknd, JENNIE, Lily-Rose Depp",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 129,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/e5bb7776aff44435b938eb084b2eca23e6c7f5ed",
+    "audioFallback": "https://p.scdn.co/mp3-preview/e5bb7776aff44435b938eb084b2eca23e6c7f5ed",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/2a/75/7c/2a757c4d-659e-dd5d-bcce-16800fa6b031/23UM1IM62083.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7CyPwkp0oE8Ro9Dd5CUDjW",
+    "animeId": 329
+  },
+  {
+    "id": 1127,
+    "title": "Who",
+    "artist": "Jimin",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 131,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/02687a01e9ec00f4e947f39e910c7e0c6fa83e10",
+    "audioFallback": "https://p.scdn.co/mp3-preview/02687a01e9ec00f4e947f39e910c7e0c6fa83e10",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/94/b5/84/94b58450-a0cd-ab97-2f30-0ed3608b5e24/196922987588_Cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7tI8dRuH2Yc6RuoTjxo4dU",
+    "animeId": 188
+  },
+  {
+    "id": 1128,
+    "title": "ใจเหลือเหลือ",
+    "artist": "Dr.Fuu",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 105,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/666747f5dec01283e49cd05e2f557e8f719462c4",
+    "audioFallback": "https://p.scdn.co/mp3-preview/666747f5dec01283e49cd05e2f557e8f719462c4",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/66/2a/4b/662a4b5e-bc4f-94bf-bc9b-e10fbfedbabc/06PNDIM00970.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5mcCatVvcUeNQpli4Mpaxl",
+    "animeId": 276
+  },
+  {
+    "id": 1129,
+    "title": "ทิ้งไป",
+    "artist": "Only Monday",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 112,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/3c7706f760ed4cab80256cbfe337cb93fe0b1c49",
+    "audioFallback": "https://p.scdn.co/mp3-preview/3c7706f760ed4cab80256cbfe337cb93fe0b1c49",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/37/21/f7/3721f715-89ea-32cc-f3d5-05b7aaeff973/888332908559.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4MEn5CNtwf4VVEfmZVcpTC",
+    "animeId": 258
+  },
+  {
+    "id": 1130,
+    "title": "The One That Got Away",
+    "artist": "Katy Perry",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 140,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/4c37249b9fc2962f5ef829e216314e9caeaee367",
+    "audioFallback": "https://p.scdn.co/mp3-preview/4c37249b9fc2962f5ef829e216314e9caeaee367",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6169/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2009X8GyWTqyxIdzAEYW6N",
+    "animeId": 12
+  },
+  {
+    "id": 1131,
+    "title": "back to friends",
+    "artist": "sombr",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 101,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/daf5f9aeeab319f4cf5c17682d75c18cc1e2ae93",
+    "audioFallback": "https://p.scdn.co/mp3-preview/daf5f9aeeab319f4cf5c17682d75c18cc1e2ae93",
+    "coverUrl": "https://media.kitsu.app/anime/13017/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7qjZnBKE73H4Oxkopwulqe",
+    "animeId": 176
+  },
+  {
+    "id": 1132,
+    "title": "Love Me Not",
+    "artist": "Ravyn Lenae",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 109,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/c660e524e84990f7687728af3ba09f9e071e585d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/c660e524e84990f7687728af3ba09f9e071e585d",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41724/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4WFgvKVfEhb3IUAFGrutTR",
+    "animeId": 305
+  },
+  {
+    "id": 1133,
+    "title": "Treat You Better",
+    "artist": "Shawn Mendes",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 122,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/964acb3eecee3568fb10baf97d094b34887fb292",
+    "audioFallback": "https://p.scdn.co/mp3-preview/964acb3eecee3568fb10baf97d094b34887fb292",
+    "coverUrl": "https://media.kitsu.app/anime/46954/poster_image/medium-42b1d7dde1b056e21b1a96c48df5a64c.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/3QGsuHI8jO1Rx4JWLUh9jd",
+    "animeId": 225
+  },
+  {
+    "id": 1134,
+    "title": "Cinderella",
+    "artist": "Mac Miller, Ty Dolla $ign",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 97,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/04815fdb32f409e135fbdbcaf8ddb70858a8a7f2",
+    "audioFallback": "https://p.scdn.co/mp3-preview/04815fdb32f409e135fbdbcaf8ddb70858a8a7f2",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6437/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2lpygKqzPFtItQ4ss3cgfb",
+    "animeId": 288
+  },
+  {
+    "id": 1135,
+    "title": "The Fate of Ophelia",
+    "artist": "Taylor Swift",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 99,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/08d084852368db5ef64c30ae9281d66a610b0605",
+    "audioFallback": "https://p.scdn.co/mp3-preview/08d084852368db5ef64c30ae9281d66a610b0605",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42068/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/53iuhJlwXhSER5J2IYYv1W",
+    "animeId": 81
+  },
+  {
+    "id": 1136,
+    "title": "Wonderwall - Remastered",
+    "artist": "Oasis",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 120,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/20284474537394c92c98e543b21efe174ff2599d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/20284474537394c92c98e543b21efe174ff2599d",
+    "coverUrl": "https://media.kitsu.app/anime/7158/poster_image/medium-dc5b9aa567da90538903f8b0b329d585.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/7ygpwy2qP3NbrxVkHvUhXY",
+    "animeId": 66
+  },
+  {
+    "id": 1137,
+    "title": "Mr. Brightside",
+    "artist": "The Killers",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 122,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/848b1bd5544e82f62f9cfcec65362d0f5369781f",
+    "audioFallback": "https://p.scdn.co/mp3-preview/848b1bd5544e82f62f9cfcec65362d0f5369781f",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11469/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/003vvx7Niy0yvhvHt4a68B",
+    "animeId": 274
+  },
+  {
+    "id": 1138,
+    "title": "Raindance",
+    "artist": "Dave, Tems",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 109,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/7d860804d259f81b4a7bc04900a5410d99995fd4",
+    "audioFallback": "https://p.scdn.co/mp3-preview/7d860804d259f81b4a7bc04900a5410d99995fd4",
+    "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/3oTuTpF1F3A7rEC6RKsMRz",
+    "animeId": 241
+  },
+  {
+    "id": 1139,
+    "title": "Every Breath You Take",
+    "artist": "The Police",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 118,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/92d7997134bb18b99eb5fdc65926e4ef613f9781",
+    "audioFallback": "https://p.scdn.co/mp3-preview/92d7997134bb18b99eb5fdc65926e4ef613f9781",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3128/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1JSTJqkT5qHq8MDJnJbRE1",
+    "animeId": 83
+  },
+  {
+    "id": 1140,
+    "title": "drop dead",
+    "artist": "Olivia Rodrigo",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 117,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/4acb20a0f0bbca4a57a351dd94674a27b8c7714e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/4acb20a0f0bbca4a57a351dd94674a27b8c7714e",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1d/1b/f9/1d1bf9b1-44c6-9a6c-6ffb-c158488c06ce/26UMGIM39303.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3fRCAPMMZ8l8P9YKI6OCzD",
+    "animeId": 274
+  },
+  {
+    "id": 1141,
+    "title": "Just Give Me a Reason",
+    "artist": "P!nk, Nate Ruess",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 112,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/8f4f290fa153a0235bd689140a17c89063095f15",
+    "audioFallback": "https://p.scdn.co/mp3-preview/8f4f290fa153a0235bd689140a17c89063095f15",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/4a/c9/7f/4ac97f30-465f-c85b-4dfd-d911a8750fa1/886443581159.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1mKXFLRA179hdOWQBwUk9e",
+    "animeId": 80
+  },
+  {
+    "id": 1142,
+    "title": "Creep",
+    "artist": "Radiohead",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 116,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/f3d864283774529a2378100c912bfacb614db751",
+    "audioFallback": "https://p.scdn.co/mp3-preview/f3d864283774529a2378100c912bfacb614db751",
+    "coverUrl": "https://media.kitsu.app/anime/44012/poster_image/medium-b7adf5b796a614ae3630153229fe4469.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/70LcF31zb1H0PyJoS1Sx1r",
+    "animeId": 224
+  },
+  {
+    "id": 1143,
+    "title": "Sure Thing",
+    "artist": "Miguel",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 142,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/ac9e92e0be540fba0672949205955fe682862b3b",
+    "audioFallback": "https://p.scdn.co/mp3-preview/ac9e92e0be540fba0672949205955fe682862b3b",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/10740/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0JXXNGljqupsJaZsgSbMZV",
+    "animeId": 55
+  },
+  {
+    "id": 1144,
+    "title": "Solar Eclipse",
+    "artist": "Drake, Don Toliver",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 122,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/4feadd4524eee165380031ed90bdff09daacb902",
+    "audioFallback": "https://p.scdn.co/mp3-preview/4feadd4524eee165380031ed90bdff09daacb902",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/176/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4IAWZw00ZI9DLKDjesx86u",
+    "animeId": 4
+  },
+  {
+    "id": 1145,
+    "title": "I Wanna Be Yours",
+    "artist": "Arctic Monkeys",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 122,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/07de30bde8363d9ff78b72339245c151f67af451",
+    "audioFallback": "https://p.scdn.co/mp3-preview/07de30bde8363d9ff78b72339245c151f67af451",
+    "coverUrl": "https://media.kitsu.app/anime/48312/poster_image/medium-5a3bba84ddb645a765b4714655abf044.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/5XeFesFbtLpXzIVDNQP22n",
+    "animeId": 203
+  },
+  {
+    "id": 1146,
+    "title": "Sign of the Times",
+    "artist": "Harry Styles",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 120,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/3f677086b8a90e1b9affde439d2ba55c77044799",
+    "audioFallback": "https://p.scdn.co/mp3-preview/3f677086b8a90e1b9affde439d2ba55c77044799",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3d/5e/aa/3d5eaaa3-9a86-c264-5cd5-7fac83f99a59/886446451978.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5Ohxk2dO5COHF1krpoPigN",
+    "animeId": 144
+  },
+  {
+    "id": 1147,
+    "title": "So Easy",
+    "artist": "Olivia Dean",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 129,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/e0ea7353932017364bdb12dc776e89b360abac42",
+    "audioFallback": "https://p.scdn.co/mp3-preview/e0ea7353932017364bdb12dc776e89b360abac42",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/08/e2/21/08e22164-7c0b-1522-818f-e0e74f62dc49/25UMGIM69703.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6sGIMrtIzQjdzNndVxe397",
+    "animeId": 190
+  },
+  {
+    "id": 1148,
+    "title": "Pós - Ao Vivo",
+    "artist": "Felipe e Rodrigo",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 110,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/a388632e697278d1c9efc11a05f6fb2c8bc56c03",
+    "audioFallback": "https://p.scdn.co/mp3-preview/a388632e697278d1c9efc11a05f6fb2c8bc56c03",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/55/ac/80/55ac8010-26ff-2719-6218-e5419e64b127/1200220202775.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1uDn0nbzeGPVw97jp7SvzR",
+    "animeId": 337
+  },
+  {
+    "id": 1149,
+    "title": "WILDFLOWER",
+    "artist": "Billie Eilish",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 124,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/ab7acea907be9cbe03bba9964765aa889f53d238",
+    "audioFallback": "https://p.scdn.co/mp3-preview/ab7acea907be9cbe03bba9964765aa889f53d238",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/9f/69/929f69f1-9977-3a44-d674-11f70c852d1b/24UMGIM36186.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3QaPy1KgI7nu9FJEQUgn6h",
+    "animeId": 206
+  },
+  {
+    "id": 1150,
+    "title": "Die On This Hill",
+    "artist": "SIENNA SPIRO",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 138,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/9f853ffba75ea5bd4cd48b1cf994a47f65fa52c4",
+    "audioFallback": "https://p.scdn.co/mp3-preview/9f853ffba75ea5bd4cd48b1cf994a47f65fa52c4",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f0/53/d1/f053d15c-e4b0-7577-dc4d-2ab7d192e1b9/25UM1IM42518.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7gkZNvBHfI30qG7hA0eopT",
+    "animeId": 201
+  },
+  {
+    "id": 1151,
+    "title": "Cuando No Era Cantante RMX - Remix",
+    "artist": "El Bogueto, Anuel AA, Fuerza Regida, Yung Beef",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 118,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b8108103b0259fa95d6071f5cd9d12a0e6bd8482",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b8108103b0259fa95d6071f5cd9d12a0e6bd8482",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a2/19/a9/a219a918-7b1a-c854-e111-1a2adfb42343/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/56V7nzrqr6Sq1uFym4odwa",
+    "animeId": 297
+  },
+  {
+    "id": 1152,
+    "title": "Lush Life",
+    "artist": "Zara Larsson",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 105,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/aebd86e7d75964051459c1134f97b8f4cb6f98df",
+    "audioFallback": "https://p.scdn.co/mp3-preview/aebd86e7d75964051459c1134f97b8f4cb6f98df",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/74/e6/3b/74e63bb4-d593-f926-85c7-df3ca43fcf3f/886446183473.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1rIKgCH4H52lrvDcz50hS8",
+    "animeId": 223
+  },
+  {
+    "id": 1153,
+    "title": "Beat It",
+    "artist": "Michael Jackson",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 119,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/05f62bc72e65a0b89b5b7544b4fe6efc2f363061",
+    "audioFallback": "https://p.scdn.co/mp3-preview/05f62bc72e65a0b89b5b7544b4fe6efc2f363061",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/32/4f/fd/324ffda2-9e51-8f6a-0c2d-c6fd2b41ac55/074643811224.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3BovdzfaX4jb5KFQwoPfAw",
+    "animeId": 187
+  },
+  {
+    "id": 1154,
+    "title": "BAILE INoLVIDABLE",
+    "artist": "Bad Bunny",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 142,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/31078ee4e5d1705665fa46d8b68afc297031f54f",
+    "audioFallback": "https://p.scdn.co/mp3-preview/31078ee4e5d1705665fa46d8b68afc297031f54f",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4c/07/eb/4c07eb8b-5f17-7460-4840-850065aa7113/artwork.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2lTm559tuIvatlT1u0JYG2",
+    "animeId": 329
+  },
+  {
+    "id": 1155,
+    "title": "Tití Me Preguntó",
+    "artist": "Bad Bunny",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 119,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/53a6217761f8fdfcff92189cafbbd1cc21fdb813",
+    "audioFallback": "https://p.scdn.co/mp3-preview/53a6217761f8fdfcff92189cafbbd1cc21fdb813",
+    "coverUrl": "https://media.kitsu.app/anime/48312/poster_image/medium-5a3bba84ddb645a765b4714655abf044.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/1IHWl5LamUGEuP4ozKQSXZ",
+    "animeId": 240
+  },
+  {
+    "id": 1156,
+    "title": "NUEVAYoL",
+    "artist": "Bad Bunny",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 103,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/7a3b57ab0ac75e0b0b46072bea45826de80b7e1a",
+    "audioFallback": "https://p.scdn.co/mp3-preview/7a3b57ab0ac75e0b0b46072bea45826de80b7e1a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/90/5e/7e/905e7ed5-a8fa-a8f3-cd06-0028fdf3afaa/199066342442.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5TFD2bmFKGhoCRbX61nXY5",
+    "animeId": 125
+  },
+  {
+    "id": 1157,
+    "title": "(When You Gonna) Give It Up to Me - Radio Version",
+    "artist": "Sean Paul, Keyshia Cole",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 119,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/08df96b9536f855e703d8503770a348387b65025",
+    "audioFallback": "https://p.scdn.co/mp3-preview/08df96b9536f855e703d8503770a348387b65025",
+    "coverUrl": "https://media.kitsu.app/anime/46300/poster_image/medium-c1c025bbee42bed048e628b1eae278c0.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/5nEdwtSv0qqeE0l4o1lR4q",
+    "animeId": 232
+  },
+  {
+    "id": 1158,
+    "title": "EoO",
+    "artist": "Bad Bunny",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 131,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/273838848cd631b92cce79f1e22d154860a5975b",
+    "audioFallback": "https://p.scdn.co/mp3-preview/273838848cd631b92cce79f1e22d154860a5975b",
+    "coverUrl": "https://media.kitsu.app/anime/48312/poster_image/medium-5a3bba84ddb645a765b4714655abf044.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/6J5kc12BW5HuP3d7C3vvx8",
+    "animeId": 404
+  },
+  {
+    "id": 1159,
+    "title": "Gabriela",
+    "artist": "KATSEYE",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 102,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/f731c1c9ad9342d29a15fb571b5078457ea0ed4f",
+    "audioFallback": "https://p.scdn.co/mp3-preview/f731c1c9ad9342d29a15fb571b5078457ea0ed4f",
+    "coverUrl": "https://anifume.com/images/48/Horimiya-Piece.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1xOqGUkyxGQRdCvGpvWKmL",
+    "animeId": 153
+  },
+  {
+    "id": 1160,
+    "title": "Chicago",
+    "artist": "Michael Jackson",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 135,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/2e6e2753fa6ff7e93b3f975b1585de80f1148f03",
+    "audioFallback": "https://p.scdn.co/mp3-preview/2e6e2753fa6ff7e93b3f975b1585de80f1148f03",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/48366/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5BKKy9fIJL5uM9fz1SnqyP",
+    "animeId": 331
+  },
+  {
+    "id": 1161,
+    "title": "iloveitiloveitiloveit",
+    "artist": "Bella Kay",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 141,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/5c5c401b6ca3b301e70897576dcf50272295560f",
+    "audioFallback": "https://p.scdn.co/mp3-preview/5c5c401b6ca3b301e70897576dcf50272295560f",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/12/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4ek0oGBCJal4Gxz8zEnMjn",
+    "animeId": 402
+  },
+  {
+    "id": 1162,
+    "title": "Dracula",
+    "artist": "Tame Impala, JENNIE",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 108,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/631b9cec18551169382ef4be4f01e40bc5523441",
+    "audioFallback": "https://p.scdn.co/mp3-preview/631b9cec18551169382ef4be4f01e40bc5523441",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11606/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5yvVYFDUpbnjcnRBgjwTzM",
+    "animeId": 276
+  },
+  {
+    "id": 1163,
+    "title": "That's What I Like",
+    "artist": "Bruno Mars",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 100,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/93046e987d8c5bfdbeea2768ac1a8ecea17bd7e0",
+    "audioFallback": "https://p.scdn.co/mp3-preview/93046e987d8c5bfdbeea2768ac1a8ecea17bd7e0",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/47625/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0KKkJNfGyhkQ5aFogxQAPU",
+    "animeId": 350
+  },
+  {
+    "id": 1164,
+    "title": "On The Floor",
+    "artist": "Jennifer Lopez, Pitbull",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 112,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/a4069cd6bf3c81860e7e532efa344df07707e040",
+    "audioFallback": "https://p.scdn.co/mp3-preview/a4069cd6bf3c81860e7e532efa344df07707e040",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42438/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3C0nOe05EIt1390bVABLyN",
+    "animeId": 298
+  },
+  {
+    "id": 1165,
+    "title": "I Thought I Saw Your Face Today",
+    "artist": "She & Him",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 100,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/a90ca82468d0612991195e07a87c628d86b3a932",
+    "audioFallback": "https://p.scdn.co/mp3-preview/a90ca82468d0612991195e07a87c628d86b3a932",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41446/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0myRViRgmQ3J8izICXEAVO",
+    "animeId": 382
+  },
+  {
+    "id": 1166,
+    "title": "Bring Me To Life",
+    "artist": "Evanescence",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 121,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d318a788a3a6a1ecb8cd0f1c924cef18832ff8d2",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d318a788a3a6a1ecb8cd0f1c924cef18832ff8d2",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/149/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0COqiPhxzoWICwFCS4eZcp",
+    "animeId": 344
+  },
+  {
+    "id": 1167,
+    "title": "ICONIC BY MISTAKE",
+    "artist": "LE SSERAFIM, ILLIT, KATSEYE",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 139,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/6688701f422f0aa9747b387d3db26381337798bc",
+    "audioFallback": "https://p.scdn.co/mp3-preview/6688701f422f0aa9747b387d3db26381337798bc",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/148/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6fl4Gu0lJm5hc8FM5JzCZD",
+    "animeId": 75
+  },
+  {
+    "id": 1168,
+    "title": "Sesi Potret",
+    "artist": "eńau, Ari Lesmana",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 136,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/6732c1a991a5b86cb440bd31d837709cc43e4d7b",
+    "audioFallback": "https://p.scdn.co/mp3-preview/6732c1a991a5b86cb440bd31d837709cc43e4d7b",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41724/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4xoY4lZNoTjEuHsSmhgF1G",
+    "animeId": 305
+  },
+  {
+    "id": 1169,
+    "title": "Gnarly",
+    "artist": "KATSEYE",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 121,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d86751b48a612271609b69f011dde00d003010b0",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d86751b48a612271609b69f011dde00d003010b0",
+    "coverUrl": "https://media.kitsu.app/anime/47454/poster_image/medium-647eca310356254a1840a496f41ea57c.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/1j15Ar0qGDzIR0v3CQv3JL",
+    "animeId": 208
+  },
+  {
+    "id": 1170,
+    "title": "Baby",
+    "artist": "Justin Bieber, Ludacris",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 125,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/6f57db4d7d782298f0d2de9097a45f4671cb2fd6",
+    "audioFallback": "https://p.scdn.co/mp3-preview/6f57db4d7d782298f0d2de9097a45f4671cb2fd6",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1799/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6epn3r7S14KUqlReYr77hA",
+    "animeId": 318
+  },
+  {
+    "id": 1171,
+    "title": "PINKY UP",
+    "artist": "KATSEYE",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 126,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/363e18f745939a46e00a67355fbd7ee1364a2fd6",
+    "audioFallback": "https://p.scdn.co/mp3-preview/363e18f745939a46e00a67355fbd7ee1364a2fd6",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41312/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4KmkJjHTNlr1jFY56Lyz4E",
+    "animeId": 76
+  },
+  {
+    "id": 1172,
+    "title": "honeybee",
+    "artist": "Olivia Rodrigo",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 101,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/42b143f2fd5aca293b037a6586fda816f3f30778",
+    "audioFallback": "https://p.scdn.co/mp3-preview/42b143f2fd5aca293b037a6586fda816f3f30778",
+    "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4kX7xkopoXZCfE1D6fNwl2",
+    "animeId": 252
+  },
+  {
+    "id": 1173,
+    "title": "The Man Who Can't Be Moved",
+    "artist": "The Script",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 99,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b5126c67a4973b633b4a95c3359206fa9122bc92",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b5126c67a4973b633b4a95c3359206fa9122bc92",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1990/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3nqqDo8CcCLke3ZoTgiOKf",
+    "animeId": 333
+  },
+  {
+    "id": 1174,
+    "title": "Shape of You",
+    "artist": "Ed Sheeran",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 141,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/7339548839a263fd721d01eb3364a848cad16fa7",
+    "audioFallback": "https://p.scdn.co/mp3-preview/7339548839a263fd721d01eb3364a848cad16fa7",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/419/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7qiZfU4dY1lWllzX7mPBI3",
+    "animeId": 294
+  },
+  {
+    "id": 1175,
+    "title": "Feel Good Inc.",
+    "artist": "Gorillaz, De La Soul",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 97,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b13a1bb2d8a04132982a49b6efee933cc9d67c7e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b13a1bb2d8a04132982a49b6efee933cc9d67c7e",
+    "coverUrl": "https://media.kitsu.app/anime/48534/poster_image/medium-c38c15266ae228974e8c2a00d776ea92.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/0d28khcov6AiegSCpG5TuT",
+    "animeId": 246
+  },
+  {
+    "id": 1176,
+    "title": "Don't Stop 'Til You Get Enough",
+    "artist": "Michael Jackson",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 111,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/4cfc5831a30fb9f86107637914818fcf844ddbf5",
+    "audioFallback": "https://p.scdn.co/mp3-preview/4cfc5831a30fb9f86107637914818fcf844ddbf5",
+    "coverUrl": "https://anifume.com/images/54/Tokidoki-Bosotto-Russia-go.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/46eu3SBuFCXWsPT39Yg3tJ",
+    "animeId": 356
+  },
+  {
+    "id": 1177,
+    "title": "Riptide",
+    "artist": "Vance Joy",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 121,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/561e75e2fa3fa0eb661559c424ac56cc688d1823",
+    "audioFallback": "https://p.scdn.co/mp3-preview/561e75e2fa3fa0eb661559c424ac56cc688d1823",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/244/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2uXlHCUbq9OMUwx3hrk06o",
+    "animeId": 35
+  },
+  {
+    "id": 1178,
+    "title": "E85",
+    "artist": "Don Toliver",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 130,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/6531864966b2fc846a74a9bc161d9bf4563ec2e9",
+    "audioFallback": "https://p.scdn.co/mp3-preview/6531864966b2fc846a74a9bc161d9bf4563ec2e9",
+    "coverUrl": "https://media.kitsu.app/anime/11757/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3B4cjvGlPvyBLNG3AzEgkZ",
+    "animeId": 143
+  },
+  {
+    "id": 1179,
+    "title": "When I Was Your Man",
+    "artist": "Bruno Mars",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 110,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/159fc05584217baa99581c4821f52d04670db6b2",
+    "audioFallback": "https://p.scdn.co/mp3-preview/159fc05584217baa99581c4821f52d04670db6b2",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1434/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0B7wvvmu9EISAwZnOpjhNI",
+    "animeId": 264
+  },
+  {
+    "id": 1180,
+    "title": "Sorry",
+    "artist": "Justin Bieber",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 143,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/eca5a32b13f68f700b06e06ffdc8110e61e232ce",
+    "audioFallback": "https://p.scdn.co/mp3-preview/eca5a32b13f68f700b06e06ffdc8110e61e232ce",
+    "coverUrl": "https://media.kitsu.app/anime/46571/poster_image/medium-ea8832a82d6fa830d9cbff53f56eb72f.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/09CtPGIpYB4BrO8qb1RGsF",
+    "animeId": 375
+  },
+  {
+    "id": 1181,
+    "title": "Love Yourself",
+    "artist": "Justin Bieber",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 126,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b750d9609aa454adb23284b1504d962a6ff9bb07",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b750d9609aa454adb23284b1504d962a6ff9bb07",
+    "coverUrl": "https://media.kitsu.app/anime/1/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/50kpGaPAhYJ3sGmk6vplg0",
+    "animeId": 167
+  },
+  {
+    "id": 1182,
+    "title": "Purple Rain",
+    "artist": "Prince",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 135,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/81bd92ac70dc7b6dd32aabfb186fe67857147834",
+    "audioFallback": "https://p.scdn.co/mp3-preview/81bd92ac70dc7b6dd32aabfb186fe67857147834",
+    "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1uvyZBs4IZYRebHIB1747m",
+    "animeId": 244
+  },
+  {
+    "id": 1183,
+    "title": "In the End",
+    "artist": "Linkin Park",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 100,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b5ee275ca337899f762b1c1883c11e24a04075b0",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b5ee275ca337899f762b1c1883c11e24a04075b0",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13593/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/60a0Rd6pjrkxjPbaKzXjfq",
+    "animeId": 113
+  },
+  {
+    "id": 1184,
+    "title": "No Broke Boys",
+    "artist": "Disco Lines, Tinashe",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 114,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/adb1ea6ef8ac4d8111d8222ed3355794689a8d76",
+    "audioFallback": "https://p.scdn.co/mp3-preview/adb1ea6ef8ac4d8111d8222ed3355794689a8d76",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/176/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3cZajhyr8LmtPfHZ9296tj",
+    "animeId": 314
+  },
+  {
+    "id": 1185,
+    "title": "One Dance",
+    "artist": "Drake, Wizkid, Kyla",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 97,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/0ee5843f6060102ce4ac239c856c452439e3d9d2",
+    "audioFallback": "https://p.scdn.co/mp3-preview/0ee5843f6060102ce4ac239c856c452439e3d9d2",
+    "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/1zi7xx7UVEFkmKfv06H8x0",
+    "animeId": 204
+  },
+  {
+    "id": 1186,
+    "title": "Who Knows",
+    "artist": "Daniel Caesar",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 122,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/695ea23e689a1816b09a8ac6f0874af0f5c38420",
+    "audioFallback": "https://p.scdn.co/mp3-preview/695ea23e689a1816b09a8ac6f0874af0f5c38420",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/5681/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6DH13QYXK7lKkYHSU88N48",
+    "animeId": 261
+  },
+  {
+    "id": 1187,
+    "title": "Young And Beautiful",
+    "artist": "Lana Del Rey",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 121,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/6da9d2d9c70066c8052a8b4b0b66d3c447cdf33c",
+    "audioFallback": "https://p.scdn.co/mp3-preview/6da9d2d9c70066c8052a8b4b0b66d3c447cdf33c",
+    "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/2nMeu6UenVvwUktBCpLMK9",
+    "animeId": 241
+  },
+  {
+    "id": 1188,
+    "title": "Smells Like Teen Spirit - Remastered",
+    "artist": "Nirvana",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 141,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/91219ebc0d0505a1001c4b854f8b2451fcec95b8",
+    "audioFallback": "https://p.scdn.co/mp3-preview/91219ebc0d0505a1001c4b854f8b2451fcec95b8",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13284/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0gucTLf7trAf37Ua1uAyAu",
+    "animeId": 286
+  },
+  {
+    "id": 1189,
+    "title": "Hips Don't Lie",
+    "artist": "Shakira, Wyclef Jean",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 97,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/6a46c302864c157a79346b485621a36305ceaaa2",
+    "audioFallback": "https://p.scdn.co/mp3-preview/6a46c302864c157a79346b485621a36305ceaaa2",
+    "coverUrl": "https://media.kitsu.app/anime/4802/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3d0WouFnFmr0K3kjeza3fF",
+    "animeId": 160
+  },
+  {
+    "id": 1190,
+    "title": "They Don't Care About Us",
+    "artist": "Michael Jackson",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 128,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/7e48f0a50a4b64aaa56e9dab7259670b1e6fc278",
+    "audioFallback": "https://p.scdn.co/mp3-preview/7e48f0a50a4b64aaa56e9dab7259670b1e6fc278",
+    "coverUrl": "https://media.kitsu.app/anime/46336/poster_image/medium-162a579fe7a25c1b188532bb8aaa7129.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/3wuCCNCnBhJlwkIJTBZFiv",
+    "animeId": 365
+  },
+  {
+    "id": 1191,
+    "title": "That’s So True",
+    "artist": "Gracie Abrams",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 108,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/aed073ed2859447c5b275cd7bace28302330b629",
+    "audioFallback": "https://p.scdn.co/mp3-preview/aed073ed2859447c5b275cd7bace28302330b629",
+    "coverUrl": "https://media.kitsu.app/anime/7074/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7ne4VBA60CxGM75vw0EYad",
+    "animeId": 170
+  },
+  {
+    "id": 1192,
+    "title": "Smooth Criminal - 2012 Remaster",
+    "artist": "Michael Jackson",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 122,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/80995b893ffd82da8c0b2df113b80fc9b5fcec57",
+    "audioFallback": "https://p.scdn.co/mp3-preview/80995b893ffd82da8c0b2df113b80fc9b5fcec57",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/10028/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5T7ywazdGIydr6JCW6t02j",
+    "animeId": 10
+  },
+  {
+    "id": 1193,
+    "title": "Perfect",
+    "artist": "Ed Sheeran",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 122,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/4e30857a3c7da3f8891483643e310bb233afadd2",
+    "audioFallback": "https://p.scdn.co/mp3-preview/4e30857a3c7da3f8891483643e310bb233afadd2",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3702/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0tgVpDi06FyKpA1z0VMD4v",
+    "animeId": 401
+  },
+  {
+    "id": 1194,
+    "title": "น้ำลาย",
+    "artist": "Silly Fools",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 101,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/1cc8166a133df8a913e37b37b58c9511a1486464",
+    "audioFallback": "https://p.scdn.co/mp3-preview/1cc8166a133df8a913e37b37b58c9511a1486464",
+    "coverUrl": "https://media.kitsu.app/anime/18/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0nUOnbRTWEAOVRu4FRQENe",
+    "animeId": 200
+  },
+  {
+    "id": 1195,
+    "title": "พยายามกี่ครั้งก็ตามแต่...",
+    "artist": "HANGMAN",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 100,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/2a5d2e8e233cefd201bd079ffaa7d6764b403cb7",
+    "audioFallback": "https://p.scdn.co/mp3-preview/2a5d2e8e233cefd201bd079ffaa7d6764b403cb7",
+    "coverUrl": "https://media.kitsu.app/anime/782/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3georCIpP8OEGQkggOhuZw",
+    "animeId": 198
+  },
+  {
+    "id": 1196,
+    "title": "ตาสว่าง",
+    "artist": "Moderndog",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 133,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/6d8ea0db9b28f0a42a7946f74a2f407373581660",
+    "audioFallback": "https://p.scdn.co/mp3-preview/6d8ea0db9b28f0a42a7946f74a2f407373581660",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/5981/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2xnAn7xxR2Ohxt1UuQudpC",
+    "animeId": 18
+  },
+  {
+    "id": 1197,
+    "title": "เสียดายของ",
+    "artist": "Basher",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 128,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/cb7723570790116ae877082f8e4dcd16cc113f7d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/cb7723570790116ae877082f8e4dcd16cc113f7d",
+    "coverUrl": "https://media.kitsu.app/anime/782/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2yDEfRpX5tRUcAo4VM0wFA",
+    "animeId": 198
+  },
+  {
+    "id": 1198,
+    "title": "แค่นั้นเอง",
+    "artist": "Taxi",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 98,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/a289d6d1da6bb20a7485e29d416932366b86073e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/a289d6d1da6bb20a7485e29d416932366b86073e",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13284/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2WUOvMjK5zOGO9gBHQ89Su",
+    "animeId": 286
+  },
+  {
+    "id": 1199,
+    "title": "ขี้หึง",
+    "artist": "Silly Fools",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 95,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/737715080edad809d845796971b53046a13400b2",
+    "audioFallback": "https://p.scdn.co/mp3-preview/737715080edad809d845796971b53046a13400b2",
+    "coverUrl": "https://media.kitsu.app/anime/11757/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1nmdJTwB575vxvNm6PdXHq",
+    "animeId": 143
+  },
+  {
+    "id": 1200,
+    "title": "อากาศ",
+    "artist": "Pang Nakarin",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 137,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b0fae9c7b73f820581228f07946d2cff38f97b14",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b0fae9c7b73f820581228f07946d2cff38f97b14",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6421/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0vDGaRsL0TqWDgyL6kfdoG",
+    "animeId": 262
+  },
+  {
+    "id": 1201,
+    "title": "หลงกล",
+    "artist": "Stone Metal Fire",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 144,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/6b3237a031f76ea1008c5d8f444b6c87ae2bf64d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/6b3237a031f76ea1008c5d8f444b6c87ae2bf64d",
+    "coverUrl": "https://media.kitsu.app/anime/42147/poster_image/medium-e17accdc782f75a56fb5c9167ec2652b.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/22US1fP1mxEwddQ6QumKe8",
+    "animeId": 54
+  },
+  {
+    "id": 1202,
+    "title": "อย่าเข้ามา",
+    "artist": "Smile Buffalo",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 102,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/e9539922a95413c19cd199e21c3d2e068102c9e6",
+    "audioFallback": "https://p.scdn.co/mp3-preview/e9539922a95413c19cd199e21c3d2e068102c9e6",
+    "coverUrl": "https://media.kitsu.app/anime/46004/poster_image/medium-b5e9b4b5a0e2e4d3d7dc8fd2f7d3af10.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/69oSlabbavmcnZOqeQX4fM",
+    "animeId": 291
+  },
+  {
+    "id": 1203,
+    "title": "กระเป๋าแบนแฟนยิ้ม",
+    "artist": "The Richman Toy",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 112,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/cc21b2426e2f53f7d7a01f7fbcce0f1d54ddf30c",
+    "audioFallback": "https://p.scdn.co/mp3-preview/cc21b2426e2f53f7d7a01f7fbcce0f1d54ddf30c",
+    "coverUrl": "https://media.kitsu.app/anime/9963/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6oPqaiLKPdQj2ecBpMgM07",
+    "animeId": 159
+  },
+  {
+    "id": 1204,
+    "title": "เพลงนี้เกี่ยวกับความรัก",
+    "artist": "Silly Fools",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 102,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/5a6d644d2c1acc76b00e18153b9aa3fd9a279bda",
+    "audioFallback": "https://p.scdn.co/mp3-preview/5a6d644d2c1acc76b00e18153b9aa3fd9a279bda",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/43321/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1xcsj9VvAJ9PDpNIaMEVlo",
+    "animeId": 30
+  },
+  {
+    "id": 1205,
+    "title": "สิ่งที่ฉันเป็น",
+    "artist": "Ebola",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 111,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/a3e02736cda7512db2dfab7456e262603dfed1d0",
+    "audioFallback": "https://p.scdn.co/mp3-preview/a3e02736cda7512db2dfab7456e262603dfed1d0",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13672/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0zRI8jHpxsK2ArBW07pj7E",
+    "animeId": 300
+  },
+  {
+    "id": 1206,
+    "title": "รักเธอหัวทิ่มบ่อ",
+    "artist": "HANGMAN",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 143,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/23d14be966bd1a81cd95522b866a2e60ee003ed5",
+    "audioFallback": "https://p.scdn.co/mp3-preview/23d14be966bd1a81cd95522b866a2e60ee003ed5",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/10028/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/22A3EEXoniinp3n7BlVlxT",
+    "animeId": 10
+  },
+  {
+    "id": 1207,
+    "title": "Remind",
+    "artist": "Moderndog",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 121,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/6735dcbd72e9d1b35b96991fc7a08ebd0063e3f6",
+    "audioFallback": "https://p.scdn.co/mp3-preview/6735dcbd72e9d1b35b96991fc7a08ebd0063e3f6",
+    "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/2Eg9TOQA5lUlSHeezowSgy",
+    "animeId": 204
+  },
+  {
+    "id": 1208,
+    "title": "ที่ว่าง",
+    "artist": "Pause",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 99,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/46c2d6687fca240e9a4371c573ae2e7099f9e340",
+    "audioFallback": "https://p.scdn.co/mp3-preview/46c2d6687fca240e9a4371c573ae2e7099f9e340",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7578/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4l7LboEqEOMV1UPHoZ0KA9",
+    "animeId": 267
+  },
+  {
+    "id": 1209,
+    "title": "วัดใจ",
+    "artist": "Silly Fools",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 129,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/1c8e689022f4b74dbcc5a8a23b67410f60a8f2ac",
+    "audioFallback": "https://p.scdn.co/mp3-preview/1c8e689022f4b74dbcc5a8a23b67410f60a8f2ac",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/4240/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5ohrCO36AXXXOxqxZbo0Gz",
+    "animeId": 67
+  },
+  {
+    "id": 1210,
+    "title": "คิดถึงฉันไหมเวลาที่เธอ...",
+    "artist": "Taxi",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 140,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/80682b69ab737bc126e9d459d7f0f8fb158709a4",
+    "audioFallback": "https://p.scdn.co/mp3-preview/80682b69ab737bc126e9d459d7f0f8fb158709a4",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/47/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0NrdH75exgYJWrF5M7fblm",
+    "animeId": 316
+  },
+  {
+    "id": 1211,
+    "title": "ทำอะไรสักอย่าง",
+    "artist": "Pang Nakarin",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 133,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d5626f626ed5828be9c6d2b2c67e161ada2db525",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d5626f626ed5828be9c6d2b2c67e161ada2db525",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/149/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3PqDjbOyw6VV6ifq7FzepJ",
+    "animeId": 344
+  },
+  {
+    "id": 1212,
+    "title": "คิดไปเอง",
+    "artist": "Stone Metal Fire",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 97,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/f8650a087aed5f9a7f8cfba625fea67f0bfa4a08",
+    "audioFallback": "https://p.scdn.co/mp3-preview/f8650a087aed5f9a7f8cfba625fea67f0bfa4a08",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/47953/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2ZFfpiG3pZ2nzTkOr4YnwO",
+    "animeId": 348
+  },
+  {
+    "id": 1213,
+    "title": "ดีเกินไป",
+    "artist": "Smile Buffalo",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 133,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/c190f2460bf776bfbb6281cce6d9e20a4cc173c8",
+    "audioFallback": "https://p.scdn.co/mp3-preview/c190f2460bf776bfbb6281cce6d9e20a4cc173c8",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/10427/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2eVtNxoyXATwLzKz4jmbLN",
+    "animeId": 306
+  },
+  {
+    "id": 1214,
+    "title": "จิ๊จ๊ะ",
+    "artist": "Silly Fools",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 106,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/6ea052b581f42a10b81480ab773e719c419be11d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/6ea052b581f42a10b81480ab773e719c419be11d",
+    "coverUrl": "https://media.kitsu.app/anime/47899/poster_image/medium-7c2a90df27e51f03bc70a0e86d79d88e.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/6V7y6ItkLqcwwA6Bw4PAj6",
+    "animeId": 284
+  },
+  {
+    "id": 1215,
+    "title": "ฤดูที่ฉั��เหงา",
+    "artist": "Flure",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 131,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/80823e5a9df098ff403ede1257a07ad6cbccf36a",
+    "audioFallback": "https://p.scdn.co/mp3-preview/80823e5a9df098ff403ede1257a07ad6cbccf36a",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/224/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0JAkZ44a75QTFXXsB2c7Ol",
+    "animeId": 73
+  },
+  {
+    "id": 1216,
+    "title": "ทุ้มอยู่ในใจ - เพลงประกอบภาพยนตร์ \"SuckSeed ห่วยขั้นเทพ\"",
+    "artist": "อ๊อฟ Big Ass",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 120,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/e2aa23875e4cc61cbf483139912bf2bfdd41ee66",
+    "audioFallback": "https://p.scdn.co/mp3-preview/e2aa23875e4cc61cbf483139912bf2bfdd41ee66",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3128/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/78J1VVEL8OpjJZJAwqRocN",
+    "animeId": 83
+  },
+  {
+    "id": 1217,
+    "title": "ดอกไม้กับหัวใจ",
+    "artist": "I-Zax",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 134,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/73ea853524cae61437cf618f420f89c088bbca8b",
+    "audioFallback": "https://p.scdn.co/mp3-preview/73ea853524cae61437cf618f420f89c088bbca8b",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/148/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1JHQ4rCY6gFdHE5AGmv7uP",
+    "animeId": 75
+  },
+  {
+    "id": 1218,
+    "title": "ศึกษานารี",
+    "artist": "Labanoon",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 103,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/67242ac51dad508d505ffdfc91bb15c4f6b930ef",
+    "audioFallback": "https://p.scdn.co/mp3-preview/67242ac51dad508d505ffdfc91bb15c4f6b930ef",
+    "coverUrl": "https://media.kitsu.app/anime/45398/poster_image/medium-f2f30d957a12e8269655c6036b460c90.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/3IjALgWp4y7hbuA3QjnrfR",
+    "animeId": 27
+  },
+  {
+    "id": 1219,
+    "title": "ไม่หวั่นแม้วันมามาก",
+    "artist": "Silly Fools",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 95,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/493d3b932bc4f2cb110bc595c715bf2f7ddcdaf3",
+    "audioFallback": "https://p.scdn.co/mp3-preview/493d3b932bc4f2cb110bc595c715bf2f7ddcdaf3",
+    "coverUrl": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5MYNy4t1MaaEcU5pjiWq6u",
+    "animeId": 233
+  },
+  {
+    "id": 1220,
+    "title": "เพลงสีดำ",
+    "artist": "HANGMAN",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 98,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/2e4072614f6f136b1ccc7912c485ea8b23c8e704",
+    "audioFallback": "https://p.scdn.co/mp3-preview/2e4072614f6f136b1ccc7912c485ea8b23c8e704",
+    "coverUrl": "https://media.kitsu.app/anime/47296/poster_image/medium-c324bf5d5fcccf17986a04ab494dd9d7.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/5H5lzj0pDLXwaUOutzEjMF",
+    "animeId": 358
+  },
+  {
+    "id": 1221,
+    "title": "นางฟ้ากับควาย",
+    "artist": "Taxi",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 122,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/55c4bd43b0ae16e39436553e45086f6f8f30a39f",
+    "audioFallback": "https://p.scdn.co/mp3-preview/55c4bd43b0ae16e39436553e45086f6f8f30a39f",
+    "coverUrl": "https://media.kitsu.app/anime/14027/poster_image/medium-2ccfd6de3c64f3e8340230e7758646a1.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/65b9tN8CyvSFYscKE7EOkm",
+    "animeId": 409
+  },
+  {
+    "id": 1222,
+    "title": "คบไม่ได้",
+    "artist": "Pang Nakarin",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 141,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/6e352290d8dd8faad1d5ef160513f3569310ac82",
+    "audioFallback": "https://p.scdn.co/mp3-preview/6e352290d8dd8faad1d5ef160513f3569310ac82",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11209/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7Lq79sDOgD0eEPxczcY2DH",
+    "animeId": 40
+  },
+  {
+    "id": 1223,
+    "title": "พลังรัก",
+    "artist": "Stone Metal Fire",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 127,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/08269ae15de830185acafe7f31e7212b2cbe86dd",
+    "audioFallback": "https://p.scdn.co/mp3-preview/08269ae15de830185acafe7f31e7212b2cbe86dd",
+    "coverUrl": "https://media.kitsu.app/anime/44358/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7GjqSpwg1VradInL571Bxf",
+    "animeId": 134
+  },
+  {
+    "id": 1224,
+    "title": "แกล้ง",
+    "artist": "Silly Fools",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 99,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b12d0d0310bc277346ff948db3702b727ebb2939",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b12d0d0310bc277346ff948db3702b727ebb2939",
+    "coverUrl": "https://media.kitsu.app/anime/45517/poster_image/medium-55342a19ef9eb98db5dfd17c9b83b38c.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/3nbsIp2Y1mYQ2RqAtxMwoA",
+    "animeId": 370
+  },
+  {
+    "id": 1225,
+    "title": "ธิดาประจำอำเภอ",
+    "artist": "The Richman Toy",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 101,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/9be1d11d923bc54344dac4531c00a098801c016b",
+    "audioFallback": "https://p.scdn.co/mp3-preview/9be1d11d923bc54344dac4531c00a098801c016b",
+    "coverUrl": "https://media.kitsu.app/anime/8017/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2O9sWy5etvogpiZbY3eJcO",
+    "animeId": 179
+  },
+  {
+    "id": 1226,
+    "title": "เรื่องขี้หมา",
+    "artist": "Y Not 7",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 110,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/a142e67bd373066cfdc0db1ab2839141ed693752",
+    "audioFallback": "https://p.scdn.co/mp3-preview/a142e67bd373066cfdc0db1ab2839141ed693752",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/344/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0fI3D07OFfLLYks0YRymKc",
+    "animeId": 329
+  },
+  {
+    "id": 1227,
+    "title": "เล่นของสูง",
+    "artist": "Big Ass",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 138,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/6ed69e4cfb6dda2511b09f9ac77c287adfd8f3ca",
+    "audioFallback": "https://p.scdn.co/mp3-preview/6ed69e4cfb6dda2511b09f9ac77c287adfd8f3ca",
+    "coverUrl": "https://media.kitsu.app/anime/6045/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5ILPWem0xm3v85WeXqrTKP",
+    "animeId": 180
+  },
+  {
+    "id": 1228,
+    "title": "บางสิ่ง",
+    "artist": "Moderndog",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 143,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/ab46465767c90e70795c5d164f98ce86f6733048",
+    "audioFallback": "https://p.scdn.co/mp3-preview/ab46465767c90e70795c5d164f98ce86f6733048",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/236/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7lKAYYnqO6KFCc5xokoNc9",
+    "animeId": 313
+  },
+  {
+    "id": 1229,
+    "title": "ฟังดูง่ายง่าย",
+    "artist": "Silly Fools",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 104,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/9b00fe447978e824ebf767d1d0e949463c79c06e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/9b00fe447978e824ebf767d1d0e949463c79c06e",
+    "coverUrl": "https://media.kitsu.app/anime/44426/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5UbABVhLmmXgrKa9vASvwS",
+    "animeId": 155
+  },
+  {
+    "id": 1230,
+    "title": "เลี้ยงส่ง",
+    "artist": "So Cool",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 97,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/ff612c57179201ffb45fdc9b8ffb574926a97111",
+    "audioFallback": "https://p.scdn.co/mp3-preview/ff612c57179201ffb45fdc9b8ffb574926a97111",
+    "coverUrl": "https://media.kitsu.app/anime/142/poster_image/large-bf3297058b86c1ef19cefb5b9c38c99e.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/3LEj9qnPBKYUUFTU6fwR9e",
+    "animeId": 89
+  },
+  {
+    "id": 1231,
+    "title": "หมดเงินหมดใจ",
+    "artist": "HANGMAN",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 126,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/119987030df6e87134b7e6008fc2247efcfea645",
+    "audioFallback": "https://p.scdn.co/mp3-preview/119987030df6e87134b7e6008fc2247efcfea645",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41199/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/06Aiy9Au1BwL0F34Xbzj3M",
+    "animeId": 308
+  },
+  {
+    "id": 1232,
+    "title": "หากตอนนี้เธอยังไม่เกิด",
+    "artist": "Taxi",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 125,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/3730e64219ecaac00c35e3df977dfdcddeb5d679",
+    "audioFallback": "https://p.scdn.co/mp3-preview/3730e64219ecaac00c35e3df977dfdcddeb5d679",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/12230/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2TwqhSZO59BPQW7cBJ1e4s",
+    "animeId": 3
+  },
+  {
+    "id": 1233,
+    "title": "กรรม",
+    "artist": "Pang Nakarin",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 95,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d008345c51e3352fbe26b2a9fa9d11dfcad70b12",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d008345c51e3352fbe26b2a9fa9d11dfcad70b12",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11469/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4a4JRc2KsOQC8j5nGo3DnQ",
+    "animeId": 274
+  },
+  {
+    "id": 1234,
+    "title": "คนที่ฆ่าฉัน",
+    "artist": "Silly Fools",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 97,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/462b3d98499f36e3212a89909d36126e14ceb31a",
+    "audioFallback": "https://p.scdn.co/mp3-preview/462b3d98499f36e3212a89909d36126e14ceb31a",
+    "coverUrl": "https://media.kitsu.app/anime/46369/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1zcTYmnzY8kqC2EdYNh0pL",
+    "animeId": 154
+  },
+  {
+    "id": 1235,
+    "title": "191",
+    "artist": "Labanoon",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 115,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/c662f410bc86ff11e78d9d8691c9f69ba0253b36",
+    "audioFallback": "https://p.scdn.co/mp3-preview/c662f410bc86ff11e78d9d8691c9f69ba0253b36",
+    "coverUrl": "https://anifume.com/images/48/Horimiya-Piece.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5EEzfZN0YApCTponvjdM4v",
+    "animeId": 214
+  },
+  {
+    "id": 1236,
+    "title": "สุดแต่ใจจะไขว่คว้า",
+    "artist": "LITTLE JOHN",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 100,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/369f964648295901b928157a0ca44f9ba418cc39",
+    "audioFallback": "https://p.scdn.co/mp3-preview/369f964648295901b928157a0ca44f9ba418cc39",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7000/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2v6By6eLbmlQ04Dia8BZ5o",
+    "animeId": 106
+  },
+  {
+    "id": 1237,
+    "title": "ขาดความอบอุ่น",
+    "artist": "เสือใหญ่",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 100,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/ad663acd7a2df08eb6bb313ebbae598c8ba39d0c",
+    "audioFallback": "https://p.scdn.co/mp3-preview/ad663acd7a2df08eb6bb313ebbae598c8ba39d0c",
+    "coverUrl": "https://media.kitsu.app/anime/49205/poster_image/medium-26bbae139e3a0869dece52e864b93052.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/2tbdOk7IBfH7tfci91WFHe",
+    "animeId": 205
+  },
+  {
+    "id": 1238,
+    "title": "เพียงรัก",
+    "artist": "Silly Fools",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 121,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/e2df4bfa382e37a330e7631a5c670a8a65a14da8",
+    "audioFallback": "https://p.scdn.co/mp3-preview/e2df4bfa382e37a330e7631a5c670a8a65a14da8",
+    "coverUrl": "https://media.kitsu.app/anime/47687/poster_image/medium-1b60c7e721df919140c4dd564810afd5.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/0WCdXhtkz6PNTF3hXARTYd",
+    "animeId": 222
+  },
+  {
+    "id": 1239,
+    "title": "โปรดส่งใครมารักฉันที",
+    "artist": "Instinct",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 97,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/55e409c27aef443544235247b2556e97131013b6",
+    "audioFallback": "https://p.scdn.co/mp3-preview/55e409c27aef443544235247b2556e97131013b6",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11209/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/19qYzhwsVrKi8ZDAfF8lnc",
+    "animeId": 40
+  },
+  {
+    "id": 1240,
+    "title": "แค่บางคำ",
+    "artist": "Musketeers",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 119,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/18698b64c7d24f7d60672f017f36e1066a508035",
+    "audioFallback": "https://p.scdn.co/mp3-preview/18698b64c7d24f7d60672f017f36e1066a508035",
+    "coverUrl": "https://media.kitsu.app/anime/44382/poster_image/large-8ffc8ea9b6a1f9e79bc626e03baab167.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/5twbYCAzFHdOYo14Y1pWaZ",
+    "animeId": 70
+  },
+  {
+    "id": 1241,
+    "title": "Chocolate",
+    "artist": "HANGMAN",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 142,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/c310bb61f3f591e2e6fc79b67cc4dec4862a7ad4",
+    "audioFallback": "https://p.scdn.co/mp3-preview/c310bb61f3f591e2e6fc79b67cc4dec4862a7ad4",
+    "coverUrl": "https://media.kitsu.app/anime/44980/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/32M6YQye8nPUQRTTkDQuMv",
+    "animeId": 195
+  },
+  {
+    "id": 1242,
+    "title": "อรวรรณ",
+    "artist": "Taxi",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 115,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/6ddef23ee6a87e6566ce45969905439130a36d3e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/6ddef23ee6a87e6566ce45969905439130a36d3e",
+    "coverUrl": "https://media.kitsu.app/anime/48981/poster_image/medium-abfe4d8f087bdfef4385faeb830873d4.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/5XVSufZLgQGku5bsGyJp5X",
+    "animeId": 219
+  },
+  {
+    "id": 1243,
+    "title": "thank u, next",
+    "artist": "Ariana Grande",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 142,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/651abd0ee3527e5434d2211d646c5720b47b4c21",
+    "audioFallback": "https://p.scdn.co/mp3-preview/651abd0ee3527e5434d2211d646c5720b47b4c21",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13066/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3e9HZxeyfWwjeyPAMmWSSQ",
+    "animeId": 109
+  },
+  {
+    "id": 1244,
+    "title": "Save Your Tears (Remix) (with Ariana Grande) - Bonus Track",
+    "artist": "The Weeknd, Ariana Grande",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 119,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/111eb776b2884b2940e31b769f5dd99e8cc6ce6c",
+    "audioFallback": "https://p.scdn.co/mp3-preview/111eb776b2884b2940e31b769f5dd99e8cc6ce6c",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/192/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1oFAF1hdPOickyHgbuRjyX",
+    "animeId": 293
+  },
+  {
+    "id": 1245,
+    "title": "Bang Bang",
+    "artist": "Jessie J, Ariana Grande, Nicki Minaj",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 122,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/e6f9a45cb4bf45d8d041d999f5904ed1d248cc15",
+    "audioFallback": "https://p.scdn.co/mp3-preview/e6f9a45cb4bf45d8d041d999f5904ed1d248cc15",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11469/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0puf9yIluy9W0vpMEUoAnN",
+    "animeId": 274
+  },
+  {
+    "id": 1246,
+    "title": "Rain On Me",
+    "artist": "Lady Gaga, Ariana Grande",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 132,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/0e1f4d14825f1a67b816669d4fd15131c097f056",
+    "audioFallback": "https://p.scdn.co/mp3-preview/0e1f4d14825f1a67b816669d4fd15131c097f056",
+    "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium-0233bf77af3e0ab7303ae7099209d58a.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/7ju97lgwC2rKQ6wwsf9no9",
+    "animeId": 245
+  },
+  {
+    "id": 1247,
+    "title": "Quit",
+    "artist": "Cashmere Cat, Ariana Grande",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 136,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/ca9861da5f23408c70c43350db4bc4f375d5d45e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/ca9861da5f23408c70c43350db4bc4f375d5d45e",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/47953/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4rwqrKdwlFWJ6LvPYaOtgn",
+    "animeId": 348
+  },
+  {
+    "id": 1248,
+    "title": "no tears left to cry",
+    "artist": "Ariana Grande",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 99,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/e5b04ad7398a7c8f5c4c788f4ab43f3f4cef150a",
+    "audioFallback": "https://p.scdn.co/mp3-preview/e5b04ad7398a7c8f5c4c788f4ab43f3f4cef150a",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13524/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2qT1uLXPVPzGgFOx4jtEuo",
+    "animeId": 303
+  },
+  {
+    "id": 1249,
+    "title": "Dance To This",
+    "artist": "Troye Sivan, Ariana Grande",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 131,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/f1d24e8a12e82dba75f9dd181d623bcb97879868",
+    "audioFallback": "https://p.scdn.co/mp3-preview/f1d24e8a12e82dba75f9dd181d623bcb97879868",
+    "coverUrl": "https://media.kitsu.app/anime/14027/poster_image/medium-2ccfd6de3c64f3e8340230e7758646a1.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/2NjO87HyT80fsgejd3PLYW",
+    "animeId": 409
+  },
+  {
+    "id": 1250,
+    "title": "Met Him Last Night",
+    "artist": "Demi Lovato, Ariana Grande",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 98,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/c116054968b46f75f473e7ac49ca52cbca68f3e0",
+    "audioFallback": "https://p.scdn.co/mp3-preview/c116054968b46f75f473e7ac49ca52cbca68f3e0",
+    "coverUrl": "https://media.kitsu.app/anime/42147/poster_image/medium-e17accdc782f75a56fb5c9167ec2652b.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/4yyX2Iu4xJjW9xMvBZKSBi",
+    "animeId": 54
+  },
+  {
+    "id": 1251,
+    "title": "Bed",
+    "artist": "Nicki Minaj, Ariana Grande",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 125,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/f42601f180da3ee934b3efb415ac5a69137f227d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/f42601f180da3ee934b3efb415ac5a69137f227d",
+    "coverUrl": "https://media.kitsu.app/anime/47454/poster_image/medium-647eca310356254a1840a496f41ea57c.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/3L4GsGLgxpHieVQH86H8bv",
+    "animeId": 208
+  },
+  {
+    "id": 1252,
+    "title": "Into You",
+    "artist": "Ariana Grande",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 137,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/12489dbf9e313aa5a42dcf6e1d145df9b04db8dd",
+    "audioFallback": "https://p.scdn.co/mp3-preview/12489dbf9e313aa5a42dcf6e1d145df9b04db8dd",
+    "coverUrl": "https://media.kitsu.app/anime/4802/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/76FZM38RC8XaAjJ77CVTNe",
+    "animeId": 160
+  },
+  {
+    "id": 1253,
+    "title": "Die For You (with Ariana Grande) - Remix",
+    "artist": "The Weeknd, Ariana Grande",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 135,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/64353aa29b9b3a34b353ab9df27334778e3a261e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/64353aa29b9b3a34b353ab9df27334778e3a261e",
+    "coverUrl": "https://media.kitsu.app/anime/47271/poster_image/medium-90a981a5a5570ba5fdb809a3152c8348.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/4W4fNrZYkobj539TOWsLO2",
+    "animeId": 235
+  },
+  {
+    "id": 1254,
+    "title": "Diet Pepsi",
+    "artist": "Addison Rae",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 105,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/63008585ef71ff70ab62bd93f1f4435d55fc3028",
+    "audioFallback": "https://p.scdn.co/mp3-preview/63008585ef71ff70ab62bd93f1f4435d55fc3028",
+    "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/6ouhsRJ7gExB7LCYjITk4Y",
+    "animeId": 351
+  },
+  {
+    "id": 1255,
+    "title": "Company",
+    "artist": "Justin Bieber",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 106,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/3bbe7de0de838a4487495fd55422b0919c20a58b",
+    "audioFallback": "https://p.scdn.co/mp3-preview/3bbe7de0de838a4487495fd55422b0919c20a58b",
+    "coverUrl": "https://media.kitsu.app/anime/46183/poster_image/medium-5f704e2d6d86c0666d81e140d2c9f6a0.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/61uyGDPJ06MkxJtHgPmuyO",
+    "animeId": 221
+  },
+  {
+    "id": 1256,
+    "title": "positions",
+    "artist": "Ariana Grande",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 134,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/1bb88e5873fb6d94cfecbd561074f2eaa84c490e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/1bb88e5873fb6d94cfecbd561074f2eaa84c490e",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/755/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/35mvY5S1H3J2QZyna3TFe0",
+    "animeId": 90
+  },
+  {
+    "id": 1257,
+    "title": "Adore",
+    "artist": "Cashmere Cat, Ariana Grande",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 138,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/080522816e8a7998ce0bfa8d027867e50f3c95b1",
+    "audioFallback": "https://p.scdn.co/mp3-preview/080522816e8a7998ce0bfa8d027867e50f3c95b1",
+    "coverUrl": "https://media.kitsu.app/anime/44196/poster_image/medium-a7b52a1e9cea5a04b29ee6878fbff923.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/18V7Vm71WAsWL4I0DytbnK",
+    "animeId": 364
+  },
+  {
+    "id": 1258,
+    "title": "Kiss It Better",
+    "artist": "Rihanna",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 118,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/de31a24cbcc8246073c873d09f5469d33a259202",
+    "audioFallback": "https://p.scdn.co/mp3-preview/de31a24cbcc8246073c873d09f5469d33a259202",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13723/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0UHB9METy4VCXNgkcGqHqS",
+    "animeId": 16
+  },
+  {
+    "id": 1259,
+    "title": "Kill Bill",
+    "artist": "SZA",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 120,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/f29963023285c89b00b3b870e2be3b56b1fc7c68",
+    "audioFallback": "https://p.scdn.co/mp3-preview/f29963023285c89b00b3b870e2be3b56b1fc7c68",
+    "coverUrl": "https://anifume.com/images/19/Jujutsu-Kaisen-3.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1Qrg8KqiBpW07V7PNxwwwL",
+    "animeId": 92
+  },
+  {
+    "id": 1260,
+    "title": "New Rules",
+    "artist": "Dua Lipa",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 123,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d612db4620fc05498ff3d49098a494a153c6d4bf",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d612db4620fc05498ff3d49098a494a153c6d4bf",
+    "coverUrl": "https://media.kitsu.app/anime/45598/poster_image/medium-c9bf66231c51a0a552fbce2d91bb3a20.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/2xJCMIJfcNYDc5iR0sAm2O",
+    "animeId": 373
+  },
+  {
+    "id": 1261,
+    "title": "bye",
+    "artist": "Ariana Grande",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 136,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/2b53e5e3a36eb548503bc0ba0393e4e5a45698d3",
+    "audioFallback": "https://p.scdn.co/mp3-preview/2b53e5e3a36eb548503bc0ba0393e4e5a45698d3",
+    "coverUrl": "https://media.kitsu.app/anime/46231/poster_image/medium-d75b57ef0c9056044cc0e277ac34d6e5.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/1Rweq7vNjK4kZBbGrmxQsl",
+    "animeId": 31
+  },
+  {
+    "id": 1262,
+    "title": "Get On Your Knees",
+    "artist": "Nicki Minaj, Ariana Grande",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 131,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/9480983bd8b6901987f59d21049d2e68b3c266b9",
+    "audioFallback": "https://p.scdn.co/mp3-preview/9480983bd8b6901987f59d21049d2e68b3c266b9",
+    "coverUrl": "https://media.kitsu.app/anime/47356/poster_image/medium-5abbbd782206cfd20df5125c75baf298.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/3Cl3uNEcYu5SDhLLXN5yhi",
+    "animeId": 210
+  },
+  {
+    "id": 1263,
+    "title": "Style",
+    "artist": "Taylor Swift",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 111,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/5ed0bbbc40dda2bce0e008fe02949cd254f0ea69",
+    "audioFallback": "https://p.scdn.co/mp3-preview/5ed0bbbc40dda2bce0e008fe02949cd254f0ea69",
+    "coverUrl": "https://media.kitsu.app/anime/48541/poster_image/medium-996392db10718d6b3177f11982f8b975.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/0ug5NqcwcFR2xrfTkc7k8e",
+    "animeId": 352
+  },
+  {
+    "id": 1264,
+    "title": "God is a woman",
+    "artist": "Ariana Grande",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 108,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/ff8d1a8198f7e7fd12831bffea8b9c95bc62d6ec",
+    "audioFallback": "https://p.scdn.co/mp3-preview/ff8d1a8198f7e7fd12831bffea8b9c95bc62d6ec",
+    "coverUrl": "https://cdn.myanimelist.net/images/anime/11/75274l.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5OCJzvD7sykQEKHH7qAC3C",
+    "animeId": 367
+  },
+  {
+    "id": 1265,
+    "title": "Please Me",
+    "artist": "Cardi B, Bruno Mars",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 102,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/8dadd95d60bd846553323371cb7bc1df72e3d844",
+    "audioFallback": "https://p.scdn.co/mp3-preview/8dadd95d60bd846553323371cb7bc1df72e3d844",
+    "coverUrl": "https://media.kitsu.app/anime/46577/poster_image/medium-8ef6409549f257f8623b0dfb2f293933.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/1Ydy1j4ooUkDvQYSvwxjoy",
+    "animeId": 371
+  },
+  {
+    "id": 1266,
+    "title": "Confident - Single Version",
+    "artist": "Justin Bieber, Chance the Rapper",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 119,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/1821193ee39cf7327d3bc0f3fe6941421c2a1c66",
+    "audioFallback": "https://p.scdn.co/mp3-preview/1821193ee39cf7327d3bc0f3fe6941421c2a1c66",
+    "coverUrl": "https://media.kitsu.app/anime/44368/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6czM6UMQD9qE5GAUp68oud",
+    "animeId": 194
+  },
+  {
+    "id": 1267,
+    "title": "My Favorite Part",
+    "artist": "Mac Miller, Ariana Grande",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 125,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/bab837f54a64e389b42693562957feef358fbaf3",
+    "audioFallback": "https://p.scdn.co/mp3-preview/bab837f54a64e389b42693562957feef358fbaf3",
+    "coverUrl": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/66wkCYWlXzSTQAfnsPBptt",
+    "animeId": 120
+  },
+  {
+    "id": 1268,
+    "title": "Saturn",
+    "artist": "SZA",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 118,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/36266634f966dba5dbb8ead6f20d1e534af3d5c4",
+    "audioFallback": "https://p.scdn.co/mp3-preview/36266634f966dba5dbb8ead6f20d1e534af3d5c4",
+    "coverUrl": "https://media.kitsu.app/anime/48618/poster_image/medium-3ef7ecfe0da23a4d4ee757d46dfcd1db.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/040I32EKLxQrkuxQu1pqvT",
+    "animeId": 211
+  },
+  {
+    "id": 1269,
+    "title": "supernatural",
+    "artist": "Ariana Grande",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 95,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/0309e5ff0851780b194e6c2fff4b7c009773add0",
+    "audioFallback": "https://p.scdn.co/mp3-preview/0309e5ff0851780b194e6c2fff4b7c009773add0",
+    "coverUrl": "https://anifume.com/images/19/Jujutsu-Kaisen-3.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/142PiXzA84lmEw2RstFHFa",
+    "animeId": 92
+  },
+  {
+    "id": 1270,
+    "title": "Cool for the Summer",
+    "artist": "Demi Lovato",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 118,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/29c3e2fad1bece04c7d8ab6e5ad4bee5a13485b5",
+    "audioFallback": "https://p.scdn.co/mp3-preview/29c3e2fad1bece04c7d8ab6e5ad4bee5a13485b5",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13066/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3uwnnTQcHM1rDqSfA4gQNz",
+    "animeId": 109
+  },
+  {
+    "id": 1271,
+    "title": "make you mine",
+    "artist": "Madison Beer",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 135,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/ef6b86fbadc7685789a55202523f0ab0ef1830ac",
+    "audioFallback": "https://p.scdn.co/mp3-preview/ef6b86fbadc7685789a55202523f0ab0ef1830ac",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/44207/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4YMsS8OqXICdQXF5HNUxFq",
+    "animeId": 72
+  },
+  {
+    "id": 1272,
+    "title": "Escapism.",
+    "artist": "RAYE, 070 Shake",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 95,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/8a8fcaf9ddf050562048d1632ddc880c9ce7c972",
+    "audioFallback": "https://p.scdn.co/mp3-preview/8a8fcaf9ddf050562048d1632ddc880c9ce7c972",
+    "coverUrl": "https://media.kitsu.app/anime/13767/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5mHdCZtVyb4DcJw8799hZp",
+    "animeId": 185
+  },
+  {
+    "id": 1273,
+    "title": "7 rings",
+    "artist": "Ariana Grande",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 124,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/0cfcc895f05ea04c01524612069d8f5c3754c141",
+    "audioFallback": "https://p.scdn.co/mp3-preview/0cfcc895f05ea04c01524612069d8f5c3754c141",
+    "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6ocbgoVGwYJhOv1GgI9NsF",
+    "animeId": 23
+  },
+  {
+    "id": 1274,
+    "title": "Water",
+    "artist": "Tyla",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 122,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/92479d43666b31ca72b7e2a4fad74568f98ee41e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/92479d43666b31ca72b7e2a4fad74568f98ee41e",
+    "coverUrl": "https://media.kitsu.app/anime/48312/poster_image/medium-5a3bba84ddb645a765b4714655abf044.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/5aIVCx5tnk0ntmdiinnYvw",
+    "animeId": 404
+  },
+  {
+    "id": 1275,
+    "title": "the boy is mine",
+    "artist": "Ariana Grande",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 112,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/012f502192036813357d6dd32457f5340a6de4c8",
+    "audioFallback": "https://p.scdn.co/mp3-preview/012f502192036813357d6dd32457f5340a6de4c8",
+    "coverUrl": "https://media.kitsu.app/anime/47192/poster_image/medium-671e94191e8d931769dfa6d8a73e6491.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/0Lmbke3KNVFXtoH2mMSHCw",
+    "animeId": 243
+  },
+  {
+    "id": 1276,
+    "title": "Good Days",
+    "artist": "SZA",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 120,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/86149322849514c1cf6851726dd85cebc981fb2e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/86149322849514c1cf6851726dd85cebc981fb2e",
+    "coverUrl": "https://media.kitsu.app/anime/41979/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4PMqSO5qyjpvzhlLI5GnID",
+    "animeId": 173
+  },
+  {
+    "id": 1277,
+    "title": "All The Stars (with SZA) - From \"Black Panther: The Album\"",
+    "artist": "Kendrick Lamar, SZA",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 106,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/330c6d6e5bfcc1bc831b6948b57ce9c98e7558bf",
+    "audioFallback": "https://p.scdn.co/mp3-preview/330c6d6e5bfcc1bc831b6948b57ce9c98e7558bf",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/44053/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3GCdLUSnKSMJhs4Tj6CV3s",
+    "animeId": 302
+  },
+  {
+    "id": 1278,
+    "title": "34+35",
+    "artist": "Ariana Grande",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 140,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/ad0ec2e355ef837a144be2a258dbc5f4bcbb55c8",
+    "audioFallback": "https://p.scdn.co/mp3-preview/ad0ec2e355ef837a144be2a258dbc5f4bcbb55c8",
+    "coverUrl": "https://anifume.com/images/48/Horimiya-Piece.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6Im9k8u9iIzKMrmV7BWtlF",
+    "animeId": 14
+  },
+  {
+    "id": 1279,
+    "title": "Needed Me",
+    "artist": "Rihanna",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 118,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/daeff67b1e3e674c77bca3107e54c532c4a403b2",
+    "audioFallback": "https://p.scdn.co/mp3-preview/daeff67b1e3e674c77bca3107e54c532c4a403b2",
+    "coverUrl": "https://media.kitsu.app/anime/48541/poster_image/medium-996392db10718d6b3177f11982f8b975.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/4pAl7FkDMNBsjykPXo91B3",
+    "animeId": 209
+  },
+  {
+    "id": 1280,
+    "title": "Delicate",
+    "artist": "Taylor Swift",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 103,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/82d8c7dbb14aad1b405f02fd83ccb84174284208",
+    "audioFallback": "https://p.scdn.co/mp3-preview/82d8c7dbb14aad1b405f02fd83ccb84174284208",
+    "coverUrl": "https://media.kitsu.app/anime/44980/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6NFyWDv5CjfwuzoCkw47Xf",
+    "animeId": 195
+  },
+  {
+    "id": 1281,
+    "title": "Talking Body",
+    "artist": "Tove Lo",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 121,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/2350702484f0e449ef5e9827ac8b937f78e7490d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/2350702484f0e449ef5e9827ac8b937f78e7490d",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/428/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7cgu4JBW3hq1GwTM1ilkKQ",
+    "animeId": 317
+  },
+  {
+    "id": 1282,
+    "title": "รักคนมีเจ้าของ",
+    "artist": "I..Nam",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 100,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/91ba9904b64660602747a030e5b6a7070bf1eabe",
+    "audioFallback": "https://p.scdn.co/mp3-preview/91ba9904b64660602747a030e5b6a7070bf1eabe",
+    "coverUrl": "https://media.kitsu.app/anime/11100/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2S7N1rHJg0UO1lckCIA6sJ",
+    "animeId": 161
+  },
+  {
+    "id": 1283,
+    "title": "คำตอบสุดท้าย",
+    "artist": "AirBorne",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 134,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/c88fe4044f2a0e86ea2d7d783b83a117386673e8",
+    "audioFallback": "https://p.scdn.co/mp3-preview/c88fe4044f2a0e86ea2d7d783b83a117386673e8",
+    "coverUrl": "https://media.kitsu.app/anime/48312/poster_image/medium-5a3bba84ddb645a765b4714655abf044.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/6d9rWFahtOYiNblK9dvqK2",
+    "animeId": 404
+  },
+  {
+    "id": 1284,
+    "title": "คนทางนั้น",
+    "artist": "Gift My Project",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 99,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/529024678ab0e582337bea70f5a238c0b10dcfe3",
+    "audioFallback": "https://p.scdn.co/mp3-preview/529024678ab0e582337bea70f5a238c0b10dcfe3",
+    "coverUrl": "https://media.kitsu.app/anime/47899/poster_image/medium-7c2a90df27e51f03bc70a0e86d79d88e.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/3DPWP2aAMbGoMvT84zGQyO",
+    "animeId": 284
+  },
+  {
+    "id": 1285,
+    "title": "หมากเกมนี้",
+    "artist": "Inca",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 108,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/6c3539d39dfd7756322d6bb0df5d5c5ce16a331e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/6c3539d39dfd7756322d6bb0df5d5c5ce16a331e",
+    "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium-0233bf77af3e0ab7303ae7099209d58a.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/0j97ePncGbPw30LBs5bZtD",
+    "animeId": 53
+  },
+  {
+    "id": 1286,
+    "title": "โรงเรียนผู้ชาย",
+    "artist": "Bang Kaew",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 117,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/5c9d05795fbda318086a52067e68e93d3e3a1c6d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/5c9d05795fbda318086a52067e68e93d3e3a1c6d",
+    "coverUrl": "https://media.kitsu.app/anime/47271/poster_image/medium-90a981a5a5570ba5fdb809a3152c8348.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/2xveLw2dsbQMj8HUcH9GWP",
+    "animeId": 29
+  },
+  {
+    "id": 1287,
+    "title": "ที่หนึ่งไม่ไหว",
+    "artist": "I..Nam",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 143,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/2933e079a323afea4f8efb95e007a63680336b99",
+    "audioFallback": "https://p.scdn.co/mp3-preview/2933e079a323afea4f8efb95e007a63680336b99",
+    "coverUrl": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/72lQlMz3wTL0tr3Dz6zHRm",
+    "animeId": 233
+  },
+  {
+    "id": 1288,
+    "title": "เธอมีจริง",
+    "artist": "Pang Nakarin",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 144,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/f254557cc9aae7a666a8a88d740ffb511dd30cfc",
+    "audioFallback": "https://p.scdn.co/mp3-preview/f254557cc9aae7a666a8a88d740ffb511dd30cfc",
+    "coverUrl": "https://media.kitsu.app/anime/48395/poster_image/medium-c4a572327a49c03c814cd66d263e3b1f.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/4t5CY6etAmuBvAmRqCq0II",
+    "animeId": 217
+  },
+  {
+    "id": 1289,
+    "title": "คนเจียมตัว",
+    "artist": "So Cool",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 113,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d57a69269c9db2c02f4124a3239bb701e67fc96f",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d57a69269c9db2c02f4124a3239bb701e67fc96f",
+    "coverUrl": "https://media.kitsu.app/anime/45401/poster_image/large-0850c0cfa153c42d890ac90b014b78b6.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/0hWwie1UWHJEQzog6dWvJw",
+    "animeId": 115
+  },
+  {
+    "id": 1290,
+    "title": "ทุกคนเคยร้องไห้",
+    "artist": "Pang Nakarin",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 112,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/429b3816aa4b6e677b8af9d01a6f583f29f74e83",
+    "audioFallback": "https://p.scdn.co/mp3-preview/429b3816aa4b6e677b8af9d01a6f583f29f74e83",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/48270/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/00iXDvNwpdmGvakQUTRICZ",
+    "animeId": 383
+  },
+  {
+    "id": 1291,
+    "title": "ดูโง่โง่",
+    "artist": "Suer Thanapon",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 114,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/6c42d0cf3754d2704f7c8875f98e9036acc39b68",
+    "audioFallback": "https://p.scdn.co/mp3-preview/6c42d0cf3754d2704f7c8875f98e9036acc39b68",
+    "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium-0233bf77af3e0ab7303ae7099209d58a.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/65so6Rw9HeHGLAE45WqNz5",
+    "animeId": 245
+  },
+  {
+    "id": 1292,
+    "title": "ใจหมา",
+    "artist": "T_T",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 122,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/e809162d7ce597fe907b5c04ee45bbc279498dc1",
+    "audioFallback": "https://p.scdn.co/mp3-preview/e809162d7ce597fe907b5c04ee45bbc279498dc1",
+    "coverUrl": "https://media.kitsu.app/anime/48233/poster_image/medium-e603ef5f8bac42574f7b48c0da994400.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/135pqmiywjoHxMHUSauO7n",
+    "animeId": 406
+  },
+  {
+    "id": 1293,
+    "title": "ปอดแหก",
+    "artist": "Pang Nakarin",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 115,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/baba908e1dd4422854e2f7882714e5ecea479daa",
+    "audioFallback": "https://p.scdn.co/mp3-preview/baba908e1dd4422854e2f7882714e5ecea479daa",
+    "coverUrl": "https://media.kitsu.app/anime/44426/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4qdbiKsZ80DNh765HKopCj",
+    "animeId": 155
+  },
+  {
+    "id": 1294,
+    "title": "พูดแล้วอยากจะร้องไห้",
+    "artist": "Dr.Fuu",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 141,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/53fca5694440732c5baa0bbe7ee515734abe65bb",
+    "audioFallback": "https://p.scdn.co/mp3-preview/53fca5694440732c5baa0bbe7ee515734abe65bb",
+    "coverUrl": "https://media.kitsu.app/anime/48946/poster_image/medium-0e314e0d6ebfb67ed53d173c7b9d1287.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/1ScnC2q4xnTeUfB2awBFX1",
+    "animeId": 215
+  },
+  {
+    "id": 1295,
+    "title": "กลับตัวกลับใจ",
+    "artist": "Dax Rock Rider",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 96,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/9dec1f50bedf68b91126b58e59943f056669c72d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/9dec1f50bedf68b91126b58e59943f056669c72d",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41024/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/59QeyJ5oFyiNDKroRfW2oQ",
+    "animeId": 86
+  },
+  {
+    "id": 1296,
+    "title": "แกว่งเท้าหาเสี้ยน",
+    "artist": "Pramote Vilepana",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 117,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d09ec8def584fba1108478ac8e96084b6854a28d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d09ec8def584fba1108478ac8e96084b6854a28d",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/5681/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5okqgcXfKkDTYIB4Lor3Oo",
+    "animeId": 261
+  },
+  {
+    "id": 1297,
+    "title": "ภูมิแพ้กรุงเทพ",
+    "artist": "Pang Nakarin",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 114,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/5dc87a53c20dd8309d0d08053256120e8fa4555d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/5dc87a53c20dd8309d0d08053256120e8fa4555d",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/44551/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0f2N22ZC9S9fAPuxcENBYM",
+    "animeId": 44
+  },
+  {
+    "id": 1298,
+    "title": "ทิ้งรักลงแม่น้ำ",
+    "artist": "Y Not 7",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 96,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/32a4744c20534e7a6c0e25aa80be5d521d53c1c0",
+    "audioFallback": "https://p.scdn.co/mp3-preview/32a4744c20534e7a6c0e25aa80be5d521d53c1c0",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/43947/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/39Cyu9hc503gPF4dM0JLjx",
+    "animeId": 400
+  },
+  {
+    "id": 1299,
+    "title": "18 ฝน",
+    "artist": "SUEA THANAPON",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 140,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/fcdddf03f604751b1fc2e8d5dba8a147a2056f6e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/fcdddf03f604751b1fc2e8d5dba8a147a2056f6e",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13612/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0OAFYu1INAKOSr9BPF6rzX",
+    "animeId": 99
+  },
+  {
+    "id": 1300,
+    "title": "ซ้ำ",
+    "artist": "Pang Nakarin",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 120,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/9c72f15586c19c490e66c4d65f7224c121eb49a9",
+    "audioFallback": "https://p.scdn.co/mp3-preview/9c72f15586c19c490e66c4d65f7224c121eb49a9",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7712/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7oyCjfiQnXflMq0IEGJaAP",
+    "animeId": 107
+  },
+  {
+    "id": 1301,
+    "title": "ช่องว่างในหัวใจ",
+    "artist": "Suer Thanapon",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 106,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/f1552f10e66454176c16250b7ec71809f9b4082d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/f1552f10e66454176c16250b7ec71809f9b4082d",
+    "coverUrl": "https://media.kitsu.app/anime/42070/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/77sdG3mDmWtUduaSKGxihq",
+    "animeId": 182
+  },
+  {
+    "id": 1302,
+    "title": "แอบเหงา",
+    "artist": "Saynahhoy",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 99,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/924ad925eb073aab78a10d3911677eb5f485e17c",
+    "audioFallback": "https://p.scdn.co/mp3-preview/924ad925eb073aab78a10d3911677eb5f485e17c",
+    "coverUrl": "https://anifume.com/images/08/Dandadan-2.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0hBStgCjIuKpiyPEfBYXZV",
+    "animeId": 231
+  },
+  {
+    "id": 1303,
+    "title": "แค่บอกว่ารักเธอ - Light Version",
+    "artist": "Pramote Vilepana",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 135,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/c08112af6551b7d888ef8d65eced2f3985cce882",
+    "audioFallback": "https://p.scdn.co/mp3-preview/c08112af6551b7d888ef8d65eced2f3985cce882",
+    "coverUrl": "https://media.kitsu.app/anime/48994/poster_image/large-d66ad0518e3dcd862ffc4b734a85c432.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/5V5MJ8GiMoVwuR1hIFdFE2",
+    "animeId": 119
+  },
+  {
+    "id": 1304,
+    "title": "เจ็บปวดที่งดงาม",
+    "artist": "Pang Nakarin",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 106,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/fdec2ec4097dee70b6c1c7672c066a413f986919",
+    "audioFallback": "https://p.scdn.co/mp3-preview/fdec2ec4097dee70b6c1c7672c066a413f986919",
+    "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium-0233bf77af3e0ab7303ae7099209d58a.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/0npTO9teAMcgu4m1MLAhbH",
+    "animeId": 53
+  },
+  {
+    "id": 1305,
+    "title": "กรุณาฟังให้จบ",
+    "artist": "Cham Chamrum",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 106,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/3e7a6514391136b591e743dfe983cbaad68cdea8",
+    "audioFallback": "https://p.scdn.co/mp3-preview/3e7a6514391136b591e743dfe983cbaad68cdea8",
+    "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium-0233bf77af3e0ab7303ae7099209d58a.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/2qzXI1saohfjZBgeEzPDI2",
+    "animeId": 245
+  },
+  {
+    "id": 1306,
+    "title": "ปวดใจ",
+    "artist": "I-Zax",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 118,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/e183e26f35d8af4abab7204b775c84692658a892",
+    "audioFallback": "https://p.scdn.co/mp3-preview/e183e26f35d8af4abab7204b775c84692658a892",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7000/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7pNT355inrl67CnWPDRAYG",
+    "animeId": 106
+  },
+  {
+    "id": 1307,
+    "title": "เจียมตัว",
+    "artist": "Syam",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 128,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/0478c33984837a2cd2554a97030dfa2cf39b887f",
+    "audioFallback": "https://p.scdn.co/mp3-preview/0478c33984837a2cd2554a97030dfa2cf39b887f",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6448/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0kjF9oTDWTBWFB3jssI2SH",
+    "animeId": 37
+  },
+  {
+    "id": 1308,
+    "title": "Milky Way",
+    "artist": "fellow fellow, PUN",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 144,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/fbd08be488d2f4c4dfb4d026c8d6cde78f653f08",
+    "audioFallback": "https://p.scdn.co/mp3-preview/fbd08be488d2f4c4dfb4d026c8d6cde78f653f08",
+    "coverUrl": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4zqJbswvwYmL1lAFdYJcAx",
+    "animeId": 120
+  },
+  {
+    "id": 1309,
+    "title": "ขอโทษละกัน (friend to friend) - No More Friends Version",
+    "artist": "PP KRIT, PUN",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 95,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/64f4ae1029814ab96d9e8c3bbc1ebf38a01809f5",
+    "audioFallback": "https://p.scdn.co/mp3-preview/64f4ae1029814ab96d9e8c3bbc1ebf38a01809f5",
+    "coverUrl": "https://media.kitsu.app/anime/44917/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4EuCaTCoEycMKhS9cgwU9Z",
+    "animeId": 131
+  },
+  {
+    "id": 1310,
+    "title": "แพ้ก็แค่พอ (Just Give Up) Feat. PUN",
+    "artist": "MEAN Band, PUN",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 139,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/9dae8528856689cd6ef3700980ca7344aef395b3",
+    "audioFallback": "https://p.scdn.co/mp3-preview/9dae8528856689cd6ef3700980ca7344aef395b3",
+    "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/069JaCJqZk3T63e7KxVqfH",
+    "animeId": 126
+  },
+  {
+    "id": 1311,
+    "title": "วิงวอน",
+    "artist": "BOWKYLION",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 99,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/96c529286defb84f9a40c648169adb171a55d55b",
+    "audioFallback": "https://p.scdn.co/mp3-preview/96c529286defb84f9a40c648169adb171a55d55b",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3936/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4XaJuCQuIPM4Xz8O6csrdZ",
+    "animeId": 65
+  },
+  {
+    "id": 1312,
+    "title": "I Just Wanna Know",
+    "artist": "PUN",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 121,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/43d654cd2c034cf83c0997f0dcc8c8aa35531376",
+    "audioFallback": "https://p.scdn.co/mp3-preview/43d654cd2c034cf83c0997f0dcc8c8aa35531376",
+    "coverUrl": "https://media.kitsu.app/anime/13369/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2a78JDp7YVCyEydtRiHOn7",
+    "animeId": 192
+  },
+  {
+    "id": 1313,
+    "title": "Yours Ever",
+    "artist": "Cocktail, Q Flure",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 140,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/37b61ca856df6883f97825c43b0c6693877694f4",
+    "audioFallback": "https://p.scdn.co/mp3-preview/37b61ca856df6883f97825c43b0c6693877694f4",
+    "coverUrl": "https://media.kitsu.app/anime/44196/poster_image/medium-a7b52a1e9cea5a04b29ee6878fbff923.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/5W2IYA5Su42XiI90GDdscj",
+    "animeId": 19
+  },
+  {
+    "id": 1314,
+    "title": "Proud",
+    "artist": "fellow fellow",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 118,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/681321eea061120f36d4b2520f2474f25615c5c0",
+    "audioFallback": "https://p.scdn.co/mp3-preview/681321eea061120f36d4b2520f2474f25615c5c0",
+    "coverUrl": "https://media.kitsu.app/anime/47899/poster_image/medium-7c2a90df27e51f03bc70a0e86d79d88e.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/4jyfcb5s4H3hKl0CJXjYei",
+    "animeId": 284
+  },
+  {
+    "id": 1315,
+    "title": "คำถาม",
+    "artist": "PUNYARB",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 114,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/c94276a662d36fd467869e069e49e740daa402ba",
+    "audioFallback": "https://p.scdn.co/mp3-preview/c94276a662d36fd467869e069e49e740daa402ba",
+    "coverUrl": "https://anifume.com/images/48/Horimiya-Piece.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/15Xn4r9FY3725iHIfyq5hE",
+    "animeId": 14
+  },
+  {
+    "id": 1316,
+    "title": "เผื่อวันไหนเธอจะกลับมา",
+    "artist": "guncharlie",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 141,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/a52f50f466dd2de7cc91fc167668ee9afcaf41a7",
+    "audioFallback": "https://p.scdn.co/mp3-preview/a52f50f466dd2de7cc91fc167668ee9afcaf41a7",
+    "coverUrl": "https://media.kitsu.app/anime/42929/poster_image/medium-c14f69d5c2cdb13e27b0ef03dde95248.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/0UlTAkFyXcBBs1HjtICAsD",
+    "animeId": 297
+  },
+  {
+    "id": 1317,
+    "title": "ล้มแชมป์",
+    "artist": "Tilly Birds, Polycat",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 137,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/3974b416ce7a3ee240ff76db170fa18a53306120",
+    "audioFallback": "https://p.scdn.co/mp3-preview/3974b416ce7a3ee240ff76db170fa18a53306120",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42260/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7pvu8UPXXIex1bChP4yyiS",
+    "animeId": 114
+  },
+  {
+    "id": 1318,
+    "title": "ติดเธอซะก่อน",
+    "artist": "Jaonaay",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 100,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/7a2c9ccd6e1bab08f10e64e3ea8487188e467a23",
+    "audioFallback": "https://p.scdn.co/mp3-preview/7a2c9ccd6e1bab08f10e64e3ea8487188e467a23",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8147/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5q2xUSTyggCisITlHEvtB1",
+    "animeId": 58
+  },
+  {
+    "id": 1319,
+    "title": "เพียงหนึ่งครั้ง",
+    "artist": "Txrbo, PUN",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 102,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/78fc2f9219049b48d28661e13a2108da117d2191",
+    "audioFallback": "https://p.scdn.co/mp3-preview/78fc2f9219049b48d28661e13a2108da117d2191",
+    "coverUrl": "https://media.kitsu.app/anime/8133/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2ETxIqlSgtlh8nnfVeKJld",
+    "animeId": 141
+  },
+  {
+    "id": 1320,
+    "title": "โรแมนติก",
+    "artist": "Musketeers, PUN",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 98,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/f6efebe49dd2dcf0d9d99ccdea4f76aa4278831b",
+    "audioFallback": "https://p.scdn.co/mp3-preview/f6efebe49dd2dcf0d9d99ccdea4f76aa4278831b",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7645/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/47RntmKRiQvjLTpSefhGUP",
+    "animeId": 281
+  },
+  {
+    "id": 1321,
+    "title": "หนึ่งคนตรงนี้",
+    "artist": "PURPEECH",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 128,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/833e1be60f1da2440d1370241bd6c43d22161ec8",
+    "audioFallback": "https://p.scdn.co/mp3-preview/833e1be60f1da2440d1370241bd6c43d22161ec8",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11606/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5GwXBrY91rDCB18cwpjsBz",
+    "animeId": 276
+  },
+  {
+    "id": 1322,
+    "title": "ส่วนต่าง",
+    "artist": "BOWKYLION",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 139,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/e9df20caf82ee35245e5ad5908f3f5ad35876c70",
+    "audioFallback": "https://p.scdn.co/mp3-preview/e9df20caf82ee35245e5ad5908f3f5ad35876c70",
+    "coverUrl": "https://media.kitsu.app/anime/41277/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5BRsrxiZkFkOl7YotaLQEp",
+    "animeId": 144
+  },
+  {
+    "id": 1323,
+    "title": "See You Somewhere - From ซองแดงแต่งผี",
+    "artist": "BILLKIN",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 126,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d1171bab285a321d336bddeeb7bce2861c4ae4fb",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d1171bab285a321d336bddeeb7bce2861c4ae4fb",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/43896/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3iTOd09b4Dsz1QucpGMivX",
+    "animeId": 324
+  },
+  {
+    "id": 1324,
+    "title": "ตั้งแต่มีเธอฉันมีความสุข",
+    "artist": "Violette Wautier",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 116,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d621f4f018041325e92da4e95a7b642f08b8700b",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d621f4f018041325e92da4e95a7b642f08b8700b",
+    "coverUrl": "https://media.kitsu.app/anime/45532/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4rmspWmdoJIjw6Rm3cEvGm",
+    "animeId": 181
+  },
+  {
+    "id": 1325,
+    "title": "ฝากไว้ให้ Kiss",
+    "artist": "JayQ, BLVCKHEART",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 100,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/c8b19ec1dc0d71dc3efad8067a07dce578f5cb49",
+    "audioFallback": "https://p.scdn.co/mp3-preview/c8b19ec1dc0d71dc3efad8067a07dce578f5cb49",
+    "coverUrl": "https://media.kitsu.app/anime/13569/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4psph4gNDqUnGvBSq6UwwE",
+    "animeId": 151
+  },
+  {
+    "id": 1326,
+    "title": "ได้โปรดอยู่ตรงนี้",
+    "artist": "BLVCKHEART, PUN",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 110,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b0eb9120884a683f3b834cfb52247e0b3bc06609",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b0eb9120884a683f3b834cfb52247e0b3bc06609",
+    "coverUrl": "https://media.kitsu.app/anime/18/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2Lvp0KYwXrU1L9OHQNA5Be",
+    "animeId": 200
+  },
+  {
+    "id": 1327,
+    "title": "อารมณ์สีเทา",
+    "artist": "SEA., Saran",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 114,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/21b88e68a64f19897056ed7fdc9bdc30d62e00b4",
+    "audioFallback": "https://p.scdn.co/mp3-preview/21b88e68a64f19897056ed7fdc9bdc30d62e00b4",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46722/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3gxK6ehmktiz8QRElreh5S",
+    "animeId": 397
+  },
+  {
+    "id": 1328,
+    "title": "หล่น",
+    "artist": "PUN",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 140,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/9704d06df9d985bf320388c83c860af4f78eff0d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/9704d06df9d985bf320388c83c860af4f78eff0d",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/149/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4c17U06F2ngjTOF5z70Yyy",
+    "animeId": 344
+  },
+  {
+    "id": 1329,
+    "title": "สักวันฉันจะหายดี",
+    "artist": "Ink Waruntorn",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 136,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/14ccd3586aa81542359be4e4925f810a05f3fe42",
+    "audioFallback": "https://p.scdn.co/mp3-preview/14ccd3586aa81542359be4e4925f810a05f3fe42",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6437/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1us1N0XEToufNnmzyhJPm5",
+    "animeId": 288
+  },
+  {
+    "id": 1330,
+    "title": "Goodbye",
+    "artist": "PUN",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 101,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/970e58a77c0316791c46af1f0ea1b4b36c5748fe",
+    "audioFallback": "https://p.scdn.co/mp3-preview/970e58a77c0316791c46af1f0ea1b4b36c5748fe",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7157/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/01rXepgii5VjwHUaajNMmm",
+    "animeId": 17
+  },
+  {
+    "id": 1331,
+    "title": "เดินมาส่ง",
+    "artist": "First Anuwat, Saran",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 122,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/52898bfcae941ed2990842d56878593e8c7e8dbb",
+    "audioFallback": "https://p.scdn.co/mp3-preview/52898bfcae941ed2990842d56878593e8c7e8dbb",
+    "coverUrl": "https://media.kitsu.app/anime/7983/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6j3Nhz3FGomL4UJoJQI9Pc",
+    "animeId": 178
+  },
+  {
+    "id": 1332,
+    "title": "ฉันคือความทรงจำดีๆของเธอรึเปล่า",
+    "artist": "fellow fellow, guncharlie",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 106,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/e0a7212efebc07f6590a6b47e507ce5d578a9d7d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/e0a7212efebc07f6590a6b47e507ce5d578a9d7d",
+    "coverUrl": "https://media.kitsu.app/anime/42929/poster_image/medium-c14f69d5c2cdb13e27b0ef03dde95248.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/3AfxHHhvIyHW4fEvCG9qLY",
+    "animeId": 297
+  },
+  {
+    "id": 1333,
+    "title": "Just the Way You Are",
+    "artist": "Bruno Mars",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 103,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/408c94747017852f3f6772ab0891c432031b66d2",
+    "audioFallback": "https://p.scdn.co/mp3-preview/408c94747017852f3f6772ab0891c432031b66d2",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3128/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7BqBn9nzAq8spo5e7cZ0dJ",
+    "animeId": 83
+  },
+  {
+    "id": 1334,
+    "title": "Uptown Funk",
+    "artist": "Mark Ronson, Bruno Mars",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 126,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/67ea20051d23a47d74becbe982285c5320dbe577",
+    "audioFallback": "https://p.scdn.co/mp3-preview/67ea20051d23a47d74becbe982285c5320dbe577",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/44551/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/32OlwWuMpZ6b0aN2RZOeMS",
+    "animeId": 44
+  },
+  {
+    "id": 1335,
+    "title": "Billionaire",
+    "artist": "Travie McCoy, Bruno Mars",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 122,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/02f41843308e75503161cfce28114902b9e072fa",
+    "audioFallback": "https://p.scdn.co/mp3-preview/02f41843308e75503161cfce28114902b9e072fa",
+    "coverUrl": "https://media.kitsu.app/anime/46183/poster_image/large-18f01df516283259a59ae88e549918de.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/2qPUnoasNe4Ep43emVXEig",
+    "animeId": 80
+  },
+  {
+    "id": 1336,
+    "title": "Nothin' on You",
+    "artist": "B.o.B, Bruno Mars",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 101,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/2ba8a14b311c1f4ad446b94b71da3f507d555193",
+    "audioFallback": "https://p.scdn.co/mp3-preview/2ba8a14b311c1f4ad446b94b71da3f507d555193",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8536/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/59dLtGBS26x7kc0rHbaPrq",
+    "animeId": 340
+  },
+  {
+    "id": 1337,
+    "title": "Young, Wild & Free",
+    "artist": "Snoop Dogg, Wiz Khalifa, Bruno Mars",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 102,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/c7ead2fb0d0be4004af5b912846138692b1fc0f9",
+    "audioFallback": "https://p.scdn.co/mp3-preview/c7ead2fb0d0be4004af5b912846138692b1fc0f9",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/176/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6YbhspuOar1D9WSSnfe7ds",
+    "animeId": 314
+  },
+  {
+    "id": 1338,
+    "title": "Thinking out Loud",
+    "artist": "Ed Sheeran",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 126,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/7b5d54ffb3c4e5c28adafe19532de22508d62851",
+    "audioFallback": "https://p.scdn.co/mp3-preview/7b5d54ffb3c4e5c28adafe19532de22508d62851",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/5447/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1Slwb6dOYkBlWal1PGtnNg",
+    "animeId": 392
+  },
+  {
+    "id": 1339,
+    "title": "Marry You",
+    "artist": "Bruno Mars",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 131,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/350ab6582ccc6eebbf6e7e0227be5e356e043c91",
+    "audioFallback": "https://p.scdn.co/mp3-preview/350ab6582ccc6eebbf6e7e0227be5e356e043c91",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/10028/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6SKwQghsR8AISlxhcwyA9R",
+    "animeId": 10
+  },
+  {
+    "id": 1340,
+    "title": "I'm Not The Only One",
+    "artist": "Sam Smith",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 128,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/8959d5e6580b9d00fefd87bbbbf0dac0940a9d51",
+    "audioFallback": "https://p.scdn.co/mp3-preview/8959d5e6580b9d00fefd87bbbbf0dac0940a9d51",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/43896/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5QM0SsyzmBM0pbFY52Xj1X",
+    "animeId": 324
+  },
+  {
+    "id": 1341,
+    "title": "What Makes You Beautiful",
+    "artist": "One Direction",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 120,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/3abcba42a4cb3566c4840c29fd6695459065b1ae",
+    "audioFallback": "https://p.scdn.co/mp3-preview/3abcba42a4cb3566c4840c29fd6695459065b1ae",
+    "coverUrl": "https://media.kitsu.app/anime/42886/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4cluDES4hQEUhmXj6TXkSo",
+    "animeId": 156
+  },
+  {
+    "id": 1342,
+    "title": "I'm Yours",
+    "artist": "Jason Mraz",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 100,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/0952568e496914bb61383588ac417ec70abefc1d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/0952568e496914bb61383588ac417ec70abefc1d",
+    "coverUrl": "https://media.kitsu.app/anime/11100/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1EzrEOXmMH3G43AXT1y7pA",
+    "animeId": 161
+  },
+  {
+    "id": 1343,
+    "title": "Nothing on You",
+    "artist": "B.o.B, Bruno Mars",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 126,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/34d92e8aa5786233d5a0abb1b1d9b8325d7e9fd6",
+    "audioFallback": "https://p.scdn.co/mp3-preview/34d92e8aa5786233d5a0abb1b1d9b8325d7e9fd6",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/818/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2A5YAFeEwGi7KlGMYRf5dX",
+    "animeId": 74
+  },
+  {
+    "id": 1344,
+    "title": "Last Friday Night",
+    "artist": "Katy Perry",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 113,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/3e82b61946a5ddb0fd77ceec97c002b28f58003b",
+    "audioFallback": "https://p.scdn.co/mp3-preview/3e82b61946a5ddb0fd77ceec97c002b28f58003b",
+    "coverUrl": "https://media.kitsu.app/anime/44426/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3avYqdwHKEq8beXbeWCKqJ",
+    "animeId": 155
+  },
+  {
+    "id": 1345,
+    "title": "Counting Stars",
+    "artist": "OneRepublic",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 118,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/6316f6cf12631da62c5b786421b25e66c3ab4ea6",
+    "audioFallback": "https://p.scdn.co/mp3-preview/6316f6cf12631da62c5b786421b25e66c3ab4ea6",
+    "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2tpWsVSb9UEmDRxAl1zhX1",
+    "animeId": 238
+  },
+  {
+    "id": 1346,
+    "title": "Grenade",
+    "artist": "Bruno Mars",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 111,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/f6e266d1ac2fe28e40f2e13ebc85231db65412c6",
+    "audioFallback": "https://p.scdn.co/mp3-preview/f6e266d1ac2fe28e40f2e13ebc85231db65412c6",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7359/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4lLtanYk6tkMvooU0tWzG8",
+    "animeId": 110
+  },
+  {
+    "id": 1347,
+    "title": "Mirrors",
+    "artist": "Justin Timberlake",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 107,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d531fa5b94ad57fb9c2286d8b2374be1740fd9d3",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d531fa5b94ad57fb9c2286d8b2374be1740fd9d3",
+    "coverUrl": "https://media.kitsu.app/anime/45401/poster_image/large-0850c0cfa153c42d890ac90b014b78b6.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/4rHZZAmHpZrA3iH5zx8frV",
+    "animeId": 115
+  },
+  {
+    "id": 1348,
+    "title": "If I Ain't Got You",
+    "artist": "Alicia Keys",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 140,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/2d1fd54c4a4147b43e1eb79c00380e36818a2546",
+    "audioFallback": "https://p.scdn.co/mp3-preview/2d1fd54c4a4147b43e1eb79c00380e36818a2546",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/43005/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3XVBdLihbNbxUwZosxcGuJ",
+    "animeId": 111
+  },
+  {
+    "id": 1349,
+    "title": "Party In The U.S.A.",
+    "artist": "Miley Cyrus",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 96,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b2ba87ea556f5c9f44c947b176ccec21da3e612f",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b2ba87ea556f5c9f44c947b176ccec21da3e612f",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41083/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3E7dfMvvCLUddWissuqMwr",
+    "animeId": 116
+  },
+  {
+    "id": 1350,
+    "title": "All of Me",
+    "artist": "John Legend",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 98,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/ebf0e42b2eb2acb22639c23b74d49f07038e5887",
+    "audioFallback": "https://p.scdn.co/mp3-preview/ebf0e42b2eb2acb22639c23b74d49f07038e5887",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8270/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3U4isOIWM3VvDubwSI3y7a",
+    "animeId": 82
+  },
+  {
+    "id": 1351,
+    "title": "Firework",
+    "artist": "Katy Perry",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 131,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/f5452ebf843f4c126eacc038fbfdc9502bf0a9b5",
+    "audioFallback": "https://p.scdn.co/mp3-preview/f5452ebf843f4c126eacc038fbfdc9502bf0a9b5",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13066/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4r6eNCsrZnQWJzzvFh4nlg",
+    "animeId": 109
+  },
+  {
+    "id": 1352,
+    "title": "Hey, Soul Sister",
+    "artist": "Train",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 104,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/518c823cf0f8b862bed0fa45e34cc63db5ea58e4",
+    "audioFallback": "https://p.scdn.co/mp3-preview/518c823cf0f8b862bed0fa45e34cc63db5ea58e4",
+    "coverUrl": "https://media.kitsu.app/anime/47271/poster_image/medium-90a981a5a5570ba5fdb809a3152c8348.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/4HlFJV71xXKIGcU3kRyttv",
+    "animeId": 29
+  },
+  {
+    "id": 1353,
+    "title": "The Lazy Song",
+    "artist": "Bruno Mars",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 130,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/1bd8a2c97ed26b8d8c6db3b0f74fc329f74c9207",
+    "audioFallback": "https://p.scdn.co/mp3-preview/1bd8a2c97ed26b8d8c6db3b0f74fc329f74c9207",
+    "coverUrl": "https://cdn.myanimelist.net/images/anime/4/19644l.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/386RUes7n1uM1yfzgeUuwp",
+    "animeId": 368
+  },
+  {
+    "id": 1354,
+    "title": "Photograph",
+    "artist": "Ed Sheeran",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 144,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d90f4e5f15d8ed411307945560b1db8cca6b253b",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d90f4e5f15d8ed411307945560b1db8cca6b253b",
+    "coverUrl": "https://media.kitsu.app/anime/11578/poster_image/medium-9ace4ac709f334cc96d244c15fe7d4d0.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/6fxVffaTuwjgEk5h9QyRjy",
+    "animeId": 56
+  },
+  {
+    "id": 1355,
+    "title": "CAN'T STOP THE FEELING!",
+    "artist": "Justin Timberlake",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 115,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/abf52d96f3f35554fcc0ea7005d9e1ce848efd77",
+    "audioFallback": "https://p.scdn.co/mp3-preview/abf52d96f3f35554fcc0ea7005d9e1ce848efd77",
+    "coverUrl": "https://anifume.com/images/54/Tokidoki-Bosotto-Russia-go.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6JV2JOEocMgcZxYSZelKcc",
+    "animeId": 202
+  },
+  {
+    "id": 1356,
+    "title": "Umbrella",
+    "artist": "Rihanna, JAŸ-Z",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 136,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/e58475d2391025fe032cba6b5282c71a6141223e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/e58475d2391025fe032cba6b5282c71a6141223e",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1491/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2yPoXCs7BSIUrucMdK5PzV",
+    "animeId": 391
+  },
+  {
+    "id": 1357,
+    "title": "Treasure",
+    "artist": "Bruno Mars",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 133,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/2265c5b16b2e19f65da045df41cf2b4b8fd66ea3",
+    "audioFallback": "https://p.scdn.co/mp3-preview/2265c5b16b2e19f65da045df41cf2b4b8fd66ea3",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/47390/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4G2Hbfwvn3oH7LxxPXjjGn",
+    "animeId": 399
+  },
+  {
+    "id": 1358,
+    "title": "Story of My Life",
+    "artist": "One Direction",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 115,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/f0adc30b06534f10629df897c1684193f340677b",
+    "audioFallback": "https://p.scdn.co/mp3-preview/f0adc30b06534f10629df897c1684193f340677b",
+    "coverUrl": "https://media.kitsu.app/anime/48534/poster_image/medium-c38c15266ae228974e8c2a00d776ea92.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/4nVBt6MZDDP6tRVdQTgxJg",
+    "animeId": 207
+  },
+  {
+    "id": 1359,
+    "title": "Too Good At Goodbyes",
+    "artist": "Sam Smith",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 137,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/2e2100af8cd386f628684caafb50662b67656de0",
+    "audioFallback": "https://p.scdn.co/mp3-preview/2e2100af8cd386f628684caafb50662b67656de0",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3505/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1mXVgsBdtIVeCLJnSnmtdV",
+    "animeId": 45
+  },
+  {
+    "id": 1360,
+    "title": "Say You Won't Let Go",
+    "artist": "James Arthur",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 125,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/af23e81c3bcd8cf1b3bdc5fdb42bd9c89eb0e89d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/af23e81c3bcd8cf1b3bdc5fdb42bd9c89eb0e89d",
+    "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5uCax9HTNlzGybIStD3vDh",
+    "animeId": 238
+  },
+  {
+    "id": 1361,
+    "title": "Call Me Maybe",
+    "artist": "Carly Rae Jepsen",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 104,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/c4a7b5e8b012344e607dc50991a32b4a00326739",
+    "audioFallback": "https://p.scdn.co/mp3-preview/c4a7b5e8b012344e607dc50991a32b4a00326739",
+    "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/20I6sIOMTCkB6w7ryavxtO",
+    "animeId": 23
+  },
+  {
+    "id": 1362,
+    "title": "It Will Rain",
+    "artist": "Bruno Mars",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 101,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b4e70a4b9cfc7e25c2ac9c6ec4325524ec84c1d1",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b4e70a4b9cfc7e25c2ac9c6ec4325524ec84c1d1",
+    "coverUrl": "https://media.kitsu.app/anime/46300/poster_image/medium-c1c025bbee42bed048e628b1eae278c0.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/4rMNgxEwGWoPHIUcvB5BrB",
+    "animeId": 232
+  },
+  {
+    "id": 1363,
+    "title": "Price Tag",
+    "artist": "Jessie J, B.o.B",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 137,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/71b3faabe9cf3b0d5613ba1dd110cbbbfde88e03",
+    "audioFallback": "https://p.scdn.co/mp3-preview/71b3faabe9cf3b0d5613ba1dd110cbbbfde88e03",
+    "coverUrl": "https://media.kitsu.app/anime/48618/poster_image/medium-3ef7ecfe0da23a4d4ee757d46dfcd1db.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/6tl840rz5kY1ybVjv1jre2",
+    "animeId": 211
+  },
+  {
+    "id": 1364,
+    "title": "Happy - From \"Despicable Me 2\"",
+    "artist": "Pharrell Williams",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 98,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/5faf8a082e1cb3f18c10cc6aa85eeca1c7014263",
+    "audioFallback": "https://p.scdn.co/mp3-preview/5faf8a082e1cb3f18c10cc6aa85eeca1c7014263",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8270/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/60nZcImufyMA1MKQY3dcCH",
+    "animeId": 82
+  },
+  {
+    "id": 1365,
+    "title": "Stay With Me",
+    "artist": "Sam Smith",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 112,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/a6673e86dccaf0232ab041314ec716e03e2f34fc",
+    "audioFallback": "https://p.scdn.co/mp3-preview/a6673e86dccaf0232ab041314ec716e03e2f34fc",
+    "coverUrl": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5MxWTfmlmRDx6VZHvB9xV8",
+    "animeId": 22
+  },
+  {
+    "id": 1366,
+    "title": "Set Fire to the Rain",
+    "artist": "Adele",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 100,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/7157fc5b99c54f5e11803b888d20fdbb9e731949",
+    "audioFallback": "https://p.scdn.co/mp3-preview/7157fc5b99c54f5e11803b888d20fdbb9e731949",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8536/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7j4OmvkjRz0PrjFADlHfQx",
+    "animeId": 340
+  },
+  {
+    "id": 1367,
+    "title": "ชอบตัวเองตอนอยู่กับเธอ",
+    "artist": "BILLKIN",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 106,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d4f23f96eec1b542cd2e12fa758d3560137c4aa1",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d4f23f96eec1b542cd2e12fa758d3560137c4aa1",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13503/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0cCf8UpRfjOB7yp1yqzMHM",
+    "animeId": 43
+  },
+  {
+    "id": 1368,
+    "title": "กำแพงหัวใจ",
+    "artist": "Mirrr",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 132,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/fba762cc2183add5fcca91232a8f40237bee546c",
+    "audioFallback": "https://p.scdn.co/mp3-preview/fba762cc2183add5fcca91232a8f40237bee546c",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7578/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6IALh7qtVXOlYXDDQ84Fr1",
+    "animeId": 267
+  },
+  {
+    "id": 1369,
+    "title": "หยุดได้แล้ว - #playwithmean",
+    "artist": "MEAN Band, NONT TANONT",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 121,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/9a34c049025dc4271dadf3b805073ca87b238c31",
+    "audioFallback": "https://p.scdn.co/mp3-preview/9a34c049025dc4271dadf3b805073ca87b238c31",
+    "coverUrl": "https://media.kitsu.app/anime/26/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/21jWrW7qGdX5xXO5FPhLSM",
+    "animeId": 165
+  },
+  {
+    "id": 1370,
+    "title": "หรือฉันคิดไปเอง",
+    "artist": "Zom Marie",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 131,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/263ff4c9c7b26aad7dfae56bc2734cf5c92a47df",
+    "audioFallback": "https://p.scdn.co/mp3-preview/263ff4c9c7b26aad7dfae56bc2734cf5c92a47df",
+    "coverUrl": "https://media.kitsu.app/anime/4249/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7iXscKdrUdBqLmzBv1i9Ad",
+    "animeId": 189
+  },
+  {
+    "id": 1371,
+    "title": "ฝืนตัวเองไม่เป็น",
+    "artist": "NONT TANONT",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 109,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/112df6520544173fd52b95b91b1070c865b5e8ff",
+    "audioFallback": "https://p.scdn.co/mp3-preview/112df6520544173fd52b95b91b1070c865b5e8ff",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8270/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7f1BKoVl0ZJhGMcnvyrHlt",
+    "animeId": 82
+  },
+  {
+    "id": 1372,
+    "title": "แปะหัวใจ",
+    "artist": "Jaonaay, Juné",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 118,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/dd01f8338fef39671eb97247cd1652109122780a",
+    "audioFallback": "https://p.scdn.co/mp3-preview/dd01f8338fef39671eb97247cd1652109122780a",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13612/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/60qEvumYWNZTXYnU0BrPda",
+    "animeId": 99
+  },
+  {
+    "id": 1373,
+    "title": "โคตรพิเศษ - From แปลรักฉันด้วยใจเธอ",
+    "artist": "BILLKIN",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 103,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/e4f05861b0470667317bc5f4033496dae5cf320f",
+    "audioFallback": "https://p.scdn.co/mp3-preview/e4f05861b0470667317bc5f4033496dae5cf320f",
+    "coverUrl": "https://media.kitsu.app/anime/12976/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7vnw2nU0xpc9RABEgc3pxQ",
+    "animeId": 138
+  },
+  {
+    "id": 1374,
+    "title": "เจ้าของที่",
+    "artist": "Mirrr",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 130,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d07c1d45b22c333196e6ce3909ef9318df79af99",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d07c1d45b22c333196e6ce3909ef9318df79af99",
+    "coverUrl": "https://media.kitsu.app/anime/45598/poster_image/medium-c9bf66231c51a0a552fbce2d91bb3a20.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/3DKdtwZkiqr5zvhrRpEd23",
+    "animeId": 373
+  },
+  {
+    "id": 1375,
+    "title": "คลั่งเธอ",
+    "artist": "NONT TANONT",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 116,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/a7602b37cf5825e3aa5b6f40174595ecb751237d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/a7602b37cf5825e3aa5b6f40174595ecb751237d",
+    "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/6R7HEq0CsyPImro1uDhUcx",
+    "animeId": 204
+  },
+  {
+    "id": 1376,
+    "title": "Onlyfan",
+    "artist": "The Parkinson",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 142,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/99e6d64392c575a507e9e39b9f413a89d625f4c1",
+    "audioFallback": "https://p.scdn.co/mp3-preview/99e6d64392c575a507e9e39b9f413a89d625f4c1",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/10356/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/79qhHPvit6BeOVu2wNnLgJ",
+    "animeId": 272
+  },
+  {
+    "id": 1377,
+    "title": "The Trouble is..ปัญหาของฉัน - From \"หนึ่งในร้อย\"",
+    "artist": "Violette Wautier",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 116,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/98a8c80d65df698b6c9efdcaf0bfa6299f75db12",
+    "audioFallback": "https://p.scdn.co/mp3-preview/98a8c80d65df698b6c9efdcaf0bfa6299f75db12",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/176/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2OULHL0yM3KbaHC1vlTffC",
+    "animeId": 314
+  },
+  {
+    "id": 1378,
+    "title": "หมายความว่าอะไร",
+    "artist": "MEAN Band",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 105,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/92b3626154540a14b3b74f61a941b30cb001b368",
+    "audioFallback": "https://p.scdn.co/mp3-preview/92b3626154540a14b3b74f61a941b30cb001b368",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/48624/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4iQTpRoRZUvXRdgZtI3KUi",
+    "animeId": 349
+  },
+  {
+    "id": 1379,
+    "title": "First Love - from My Precious Original Soundtrack",
+    "artist": "NONT TANONT",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 122,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/23f01d7f8a719c391ded83753b0b46ecc58c5ac5",
+    "audioFallback": "https://p.scdn.co/mp3-preview/23f01d7f8a719c391ded83753b0b46ecc58c5ac5",
+    "coverUrl": "https://cdn.myanimelist.net/images/anime/1792/143588l.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6bYp3cjdAGKJNSxRTSgNOD",
+    "animeId": 362
+  },
+  {
+    "id": 1380,
+    "title": "เวลาเธอยิ้ม",
+    "artist": "Polycat",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 127,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/3c808dbb1062f2eb28b41a9e937bb5fda265524a",
+    "audioFallback": "https://p.scdn.co/mp3-preview/3c808dbb1062f2eb28b41a9e937bb5fda265524a",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1376/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/06DPpk0hUJEgpzl5cuWNI6",
+    "animeId": 34
+  },
+  {
+    "id": 1381,
+    "title": "เมื่อไหร่จะบอก",
+    "artist": "ETC., The Parkinson",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 98,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/665f508733a2fb8b837c89729e4e015b5c9705fc",
+    "audioFallback": "https://p.scdn.co/mp3-preview/665f508733a2fb8b837c89729e4e015b5c9705fc",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/47195/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2ezfWejKhD3CJS0qLNJKkQ",
+    "animeId": 395
+  },
+  {
+    "id": 1382,
+    "title": "ฤดูของเธอ",
+    "artist": "NuNew",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 135,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/fd78c035d2084266fdebdc2b5144380f01b699de",
+    "audioFallback": "https://p.scdn.co/mp3-preview/fd78c035d2084266fdebdc2b5144380f01b699de",
+    "coverUrl": "https://media.kitsu.app/anime/46603/poster_image/medium-c71c4c11b6099b25be248eb847326ea0.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/5Ssjl0BJRFKtjxbgZlnoj9",
+    "animeId": 374
+  },
+  {
+    "id": 1383,
+    "title": "ลงใจ",
+    "artist": "BOWKYLION",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 101,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/f4368a458764fe8ccafd9bff3f5192ff2374bbdf",
+    "audioFallback": "https://p.scdn.co/mp3-preview/f4368a458764fe8ccafd9bff3f5192ff2374bbdf",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/14312/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6VzhAqu1DImWLGpCjyaReG",
+    "animeId": 287
+  },
+  {
+    "id": 1384,
+    "title": "พูดลาสักคำ",
+    "artist": "The Parkinson",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 104,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/ab5170afba82a20e7a043181dcc79865028e136e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/ab5170afba82a20e7a043181dcc79865028e136e",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/4397/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0R5Xy2nx62fEA0ImqfHf4L",
+    "animeId": 20
+  },
+  {
+    "id": 1385,
+    "title": "มีผลต่อหัวใจ",
+    "artist": "NONT TANONT",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 105,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/ee7c9a7be43a730317016b6bd600deb0e9569b7a",
+    "audioFallback": "https://p.scdn.co/mp3-preview/ee7c9a7be43a730317016b6bd600deb0e9569b7a",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6462/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/166ZalajmAfOUqDg9EeXJ7",
+    "animeId": 343
+  },
+  {
+    "id": 1386,
+    "title": "Written by Love",
+    "artist": "Amp Achariya, NONT TANONT",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 96,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/8f29a0b5056124d02d95806a524369e10738a46e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/8f29a0b5056124d02d95806a524369e10738a46e",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/44551/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1EUhTdMoXsmFFe5wGG03vj",
+    "animeId": 44
+  },
+  {
+    "id": 1387,
+    "title": "โต๊ะริม",
+    "artist": "NONT TANONT",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 99,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/530554aa3b5f09a9b0a6c567bf342bb6835b1204",
+    "audioFallback": "https://p.scdn.co/mp3-preview/530554aa3b5f09a9b0a6c567bf342bb6835b1204",
+    "coverUrl": "https://media.kitsu.app/anime/7307/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/60ZuPJ8kseTn6isqhyxpCi",
+    "animeId": 191
+  },
+  {
+    "id": 1388,
+    "title": "พี่คงไม่ชอบผมหรอก",
+    "artist": "PONCHET, VARINZ",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 106,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/4d562880c9f85e1f38e6a868a99a52c3355ea746",
+    "audioFallback": "https://p.scdn.co/mp3-preview/4d562880c9f85e1f38e6a868a99a52c3355ea746",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7515/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5WEc7rmyL9K2djBfF6yX2G",
+    "animeId": 13
+  },
+  {
+    "id": 1389,
+    "title": "แค่ไหนแค่นั้น",
+    "artist": "BUS",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 128,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/e006143e6dd9b5781927b59ca0ac74ee2e698eb9",
+    "audioFallback": "https://p.scdn.co/mp3-preview/e006143e6dd9b5781927b59ca0ac74ee2e698eb9",
+    "coverUrl": "https://media.kitsu.app/anime/41334/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5VY8UJBCIa7RgzLBculPuv",
+    "animeId": 177
+  },
+  {
+    "id": 1390,
+    "title": "ความรักกำลังก่อตัว",
+    "artist": "NONT TANONT",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 118,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/59a6a90f73cd5a6f081a11a417c9693af757240d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/59a6a90f73cd5a6f081a11a417c9693af757240d",
+    "coverUrl": "https://media.kitsu.app/anime/41334/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2Y26aMWTIvcIEQEGuTLhNR",
+    "animeId": 177
+  },
+  {
+    "id": 1391,
+    "title": "ใครเพื่อนแก",
+    "artist": "bamm",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 139,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/8d491d34aafd6eeb7e181faf5c5b94e917731575",
+    "audioFallback": "https://p.scdn.co/mp3-preview/8d491d34aafd6eeb7e181faf5c5b94e917731575",
+    "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7AKVPaALvAvrJPTDmEg3tT",
+    "animeId": 238
+  },
+  {
+    "id": 1392,
+    "title": "พอเถอะ",
+    "artist": "MEAN Band",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 100,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/58d5f019715dce42d844868d9798dc8111195be0",
+    "audioFallback": "https://p.scdn.co/mp3-preview/58d5f019715dce42d844868d9798dc8111195be0",
+    "coverUrl": "https://media.kitsu.app/anime/44382/poster_image/large-8ffc8ea9b6a1f9e79bc626e03baab167.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/7CFEgj1Fn9XRRV3H2WWJke",
+    "animeId": 70
+  },
+  {
+    "id": 1393,
+    "title": "เกินต้าน",
+    "artist": "PiXXiE",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 96,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/1b34a3feb897ffb8acccbb135bd9a2f4ef1ba408",
+    "audioFallback": "https://p.scdn.co/mp3-preview/1b34a3feb897ffb8acccbb135bd9a2f4ef1ba408",
+    "coverUrl": "https://media.kitsu.app/anime/47192/poster_image/medium-671e94191e8d931769dfa6d8a73e6491.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/1dDzDZADzctY4uZFhy9afh",
+    "animeId": 243
+  },
+  {
+    "id": 1394,
+    "title": "วันครบเลิก",
+    "artist": "NONT TANONT",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 123,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/739ec75b9e4e73e7e5d96924fdc2b842a7ccb5a9",
+    "audioFallback": "https://p.scdn.co/mp3-preview/739ec75b9e4e73e7e5d96924fdc2b842a7ccb5a9",
+    "coverUrl": "https://media.kitsu.app/anime/9991/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6cWbOlreslaWQp8JVOhqcm",
+    "animeId": 145
+  },
+  {
+    "id": 1395,
+    "title": "ยิ้มง่าย (Better Together) - เพลงจากซีรีส์ \"9 Years of you แต่ละปีที่มีเธอ\"",
+    "artist": "fellow fellow",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 107,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/2803966e6bf164b58ea99ec145b095e3043a6e11",
+    "audioFallback": "https://p.scdn.co/mp3-preview/2803966e6bf164b58ea99ec145b095e3043a6e11",
+    "coverUrl": "https://media.kitsu.app/anime/13369/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/51EN90GQ1JhX7n1noAB0s4",
+    "animeId": 192
+  },
+  {
+    "id": 1396,
+    "title": "แอบบอกรัก",
+    "artist": "Jaonaay",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 101,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/4c2d7f05f5406e3c81a4b2f50004b1f7a7f10e88",
+    "audioFallback": "https://p.scdn.co/mp3-preview/4c2d7f05f5406e3c81a4b2f50004b1f7a7f10e88",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/45059/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6yFMBM4QavlNFUTGZ3cpI6",
+    "animeId": 290
+  },
+  {
+    "id": 1397,
+    "title": "คิดถึงแต่",
+    "artist": "BOWKYLION",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 114,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/1d45de65b330e0ca1006fc06fabf0ba16e18e7cc",
+    "audioFallback": "https://p.scdn.co/mp3-preview/1d45de65b330e0ca1006fc06fabf0ba16e18e7cc",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/444/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5YoPPNj47iZSZEWum0ajUo",
+    "animeId": 309
+  },
+  {
+    "id": 1398,
+    "title": "จดจำ",
+    "artist": "Only Monday",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 108,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b140387e9b8d8e535040abc64b0c533098493570",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b140387e9b8d8e535040abc64b0c533098493570",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8778/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4kvBebTWC2UmFevtoG0BXy",
+    "animeId": 277
+  },
+  {
+    "id": 1399,
+    "title": "เงา",
+    "artist": "WANYAi",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 99,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/e15f9ab330238bac5b9dfe8fe7a865bcddd3fa55",
+    "audioFallback": "https://p.scdn.co/mp3-preview/e15f9ab330238bac5b9dfe8fe7a865bcddd3fa55",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7881/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3tO60AUMSHnVioIi8sij5H",
+    "animeId": 49
+  },
+  {
+    "id": 1400,
+    "title": "ไม่เป็นรอง",
+    "artist": "Cocktail",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 127,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/78741f1e22a748d33d35fb9b8a42e18ff813ba34",
+    "audioFallback": "https://p.scdn.co/mp3-preview/78741f1e22a748d33d35fb9b8a42e18ff813ba34",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41870/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/156vW59aySrZRah9fGpNJk",
+    "animeId": 381
+  },
+  {
+    "id": 1401,
+    "title": "ไกล",
+    "artist": "Musketeers",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 111,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/8123704beef76611a7af4f3e74b2e247dbf214da",
+    "audioFallback": "https://p.scdn.co/mp3-preview/8123704beef76611a7af4f3e74b2e247dbf214da",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1434/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/07ZIrtR00m3t9AcmeRZ7vQ",
+    "animeId": 264
+  },
+  {
+    "id": 1402,
+    "title": "ทุกความทรงจำ",
+    "artist": "Only Monday",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 120,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/4cc8703231dc8a4f6b41a7ca5bf44adae7cd5793",
+    "audioFallback": "https://p.scdn.co/mp3-preview/4cc8703231dc8a4f6b41a7ca5bf44adae7cd5793",
+    "coverUrl": "https://media.kitsu.app/anime/4802/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1fBIWQh21BNWLhuhXDMog1",
+    "animeId": 160
+  },
+  {
+    "id": 1403,
+    "title": "ไปได้ดี",
+    "artist": "WANYAi",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 123,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/775a3af16fdffe76ca8a710ea818298e64c5ff23",
+    "audioFallback": "https://p.scdn.co/mp3-preview/775a3af16fdffe76ca8a710ea818298e64c5ff23",
+    "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2eoRByVEfnVlvBzjdhT7NX",
+    "animeId": 252
+  },
+  {
+    "id": 1404,
+    "title": "ร่มสีเทา",
+    "artist": "Whatcharawalee",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 116,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/28f9c3823533416ca733fe8d1a2674c6e9463985",
+    "audioFallback": "https://p.scdn.co/mp3-preview/28f9c3823533416ca733fe8d1a2674c6e9463985",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13723/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6z56u8jPSSroDFrJVD5cMf",
+    "animeId": 98
+  },
+  {
+    "id": 1405,
+    "title": "จางหาย",
+    "artist": "Goy Arachaporn",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 135,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/012aec17d33ff5468ddf4c771daaa2471eb9f9ce",
+    "audioFallback": "https://p.scdn.co/mp3-preview/012aec17d33ff5468ddf4c771daaa2471eb9f9ce",
+    "coverUrl": "https://media.kitsu.app/anime/46004/poster_image/medium-b5e9b4b5a0e2e4d3d7dc8fd2f7d3af10.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/6pTSm2Sw6fEEO4iKfOJqTL",
+    "animeId": 291
+  },
+  {
+    "id": 1406,
+    "title": "เจ็บจนพอ",
+    "artist": "WANYAi",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 101,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b5e38304bbf2f595fc051ee14993221e61ab67c0",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b5e38304bbf2f595fc051ee14993221e61ab67c0",
+    "coverUrl": "https://media.kitsu.app/anime/13569/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7ArmHy7HS14hkfmZYOTwd6",
+    "animeId": 151
+  },
+  {
+    "id": 1407,
+    "title": "เรื่องที่ขอ",
+    "artist": "Lula",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 124,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/8822e5ec9f5cd8e9f496f62e6ee0b3cc090475cd",
+    "audioFallback": "https://p.scdn.co/mp3-preview/8822e5ec9f5cd8e9f496f62e6ee0b3cc090475cd",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8271/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7Iu9RvbMi1jShosg1b5mxt",
+    "animeId": 52
+  },
+  {
+    "id": 1408,
+    "title": "อาจเป็นเพราะฉันเอง",
+    "artist": "PURPEECH",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 139,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/894ca323627f55eccfbb38d2357bc513e473783d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/894ca323627f55eccfbb38d2357bc513e473783d",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/47743/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1QbP49w60Db4mrhYbsQ8bg",
+    "animeId": 384
+  },
+  {
+    "id": 1409,
+    "title": "งานเต้นรำในคืนพระจันทร์เต็มดวง",
+    "artist": "Cocktail, นิว นภัสสร",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 108,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/46c449c10ded57572abe9f7ece24ed0665eb4ddf",
+    "audioFallback": "https://p.scdn.co/mp3-preview/46c449c10ded57572abe9f7ece24ed0665eb4ddf",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3853/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5zXYZPPSVH3lp0qGbmKT2Q",
+    "animeId": 259
+  },
+  {
+    "id": 1410,
+    "title": "ทางของฝุ่น",
+    "artist": "atom chanakan",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 111,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/c40e0e99f1888109998d13461ec5e9a764208ded",
+    "audioFallback": "https://p.scdn.co/mp3-preview/c40e0e99f1888109998d13461ec5e9a764208ded",
+    "coverUrl": "https://media.kitsu.app/anime/45517/poster_image/medium-55342a19ef9eb98db5dfd17c9b83b38c.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/0jxzVn8rr59knZFALDokLy",
+    "animeId": 370
+  },
+  {
+    "id": 1411,
+    "title": "งานเต้นรำ",
+    "artist": "Musketeers",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 115,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b631104a2bf2942e95ad811fe9103caa2db0ab9f",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b631104a2bf2942e95ad811fe9103caa2db0ab9f",
+    "coverUrl": "https://media.kitsu.app/anime/46481/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3jQEXiy7AtzDMiilrYlO0H",
+    "animeId": 196
+  },
+  {
+    "id": 1412,
+    "title": "บรรยากาศ",
+    "artist": "Only Monday",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 127,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/6655f40f95d28d7b8e7cdb6cb8901445b11bfa03",
+    "audioFallback": "https://p.scdn.co/mp3-preview/6655f40f95d28d7b8e7cdb6cb8901445b11bfa03",
+    "coverUrl": "https://media.kitsu.app/anime/42886/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/28WxTxO0DM9PyKBhvb8Vb0",
+    "animeId": 156
+  },
+  {
+    "id": 1413,
+    "title": "ถ้าฉันเป็นเขา",
+    "artist": "Indigo",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 126,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/ba8c525d86469815abfc79d561b6cb290ced011f",
+    "audioFallback": "https://p.scdn.co/mp3-preview/ba8c525d86469815abfc79d561b6cb290ced011f",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/818/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5kWEorPV6WHYf5htPXONcL",
+    "animeId": 74
+  },
+  {
+    "id": 1414,
+    "title": "หากจะเพียงขอ",
+    "artist": "PURPEECH",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 136,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/ce6b8535d69603a0673da1e64cb633998c7b5afe",
+    "audioFallback": "https://p.scdn.co/mp3-preview/ce6b8535d69603a0673da1e64cb633998c7b5afe",
+    "coverUrl": "https://media.kitsu.app/anime/46603/poster_image/medium-c71c4c11b6099b25be248eb847326ea0.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/4njC4CPPqAQZ5bo6eEjP0e",
+    "animeId": 374
+  },
+  {
+    "id": 1415,
+    "title": "น้ำตาสุดท้าย",
+    "artist": "Cocktail",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 108,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/c88dd85d0b8b708d70d60cf3f02ed5bf6b3d3b8d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/c88dd85d0b8b708d70d60cf3f02ed5bf6b3d3b8d",
+    "coverUrl": "https://media.kitsu.app/anime/782/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4Ug0zzRkHD9tJPgx7iy9z2",
+    "animeId": 198
+  },
+  {
+    "id": 1416,
+    "title": "วันนี้ปีที่แล้ว",
+    "artist": "MEYOU",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 119,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d0bc0649f21f20f1e5dd473bdfd22d27fb868f35",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d0bc0649f21f20f1e5dd473bdfd22d27fb868f35",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1491/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2HY5NVPfvygwTBM1x6jwvH",
+    "animeId": 391
+  },
+  {
+    "id": 1417,
+    "title": "Loop",
+    "artist": "ASIA7",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 114,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/f2db5a24d011e415b604779537c0b5986e83bda8",
+    "audioFallback": "https://p.scdn.co/mp3-preview/f2db5a24d011e415b604779537c0b5986e83bda8",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/428/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2wyMhqD3UtR8Ucg59UZhZd",
+    "animeId": 317
+  },
+  {
+    "id": 1418,
+    "title": "สนิทใจ - เพลงจากละคร \"รักร้าย\"",
+    "artist": "Palmy",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 107,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b967f549f0b74d919e75fcbc32e0f94a13b15ba2",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b967f549f0b74d919e75fcbc32e0f94a13b15ba2",
+    "coverUrl": "https://media.kitsu.app/anime/46415/poster_image/medium-09a8e8a7b821309beba30e1b49a5369e.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/1XdaaI0bz0ILJzl1oBq2In",
+    "animeId": 227
+  },
+  {
+    "id": 1419,
+    "title": "ความคาดหวัง",
+    "artist": "Cocktail, ตูน BODYSLAM, ปั๊บ Potato",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 132,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/8801d2604e582fc33199c706faa7bc942a16d7ff",
+    "audioFallback": "https://p.scdn.co/mp3-preview/8801d2604e582fc33199c706faa7bc942a16d7ff",
+    "coverUrl": "https://media.kitsu.app/anime/46183/poster_image/medium-5f704e2d6d86c0666d81e140d2c9f6a0.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/3Vkzgf11Ubecqccu8Wxu8w",
+    "animeId": 221
+  },
+  {
+    "id": 1420,
+    "title": "นิทาน",
+    "artist": "Musketeers",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 137,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/885f7fffb482fdeea30050325bfc0330634a2118",
+    "audioFallback": "https://p.scdn.co/mp3-preview/885f7fffb482fdeea30050325bfc0330634a2118",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6169/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/11sWcMeRIGlUR5rwvV6IS3",
+    "animeId": 12
+  },
+  {
+    "id": 1421,
+    "title": "ท้ายปี",
+    "artist": "Only Monday",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 126,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/ac5d1be3b4200ec287f4cc0858ef94259551de94",
+    "audioFallback": "https://p.scdn.co/mp3-preview/ac5d1be3b4200ec287f4cc0858ef94259551de94",
+    "coverUrl": "https://media.kitsu.app/anime/48946/poster_image/medium-0e314e0d6ebfb67ed53d173c7b9d1287.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/5XGTehBbNk1y0KrdkI1qsK",
+    "animeId": 215
+  },
+  {
+    "id": 1422,
+    "title": "ลืมไป (Blind)",
+    "artist": "WANYAi, ปู่จ๋าน ลองไมค์",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 137,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/9bb099940da050089e21ad9a27d6be2dd83f9bd0",
+    "audioFallback": "https://p.scdn.co/mp3-preview/9bb099940da050089e21ad9a27d6be2dd83f9bd0",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11469/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0HOJpNiOpY13dZzzmObZAH",
+    "animeId": 274
+  },
+  {
+    "id": 1423,
+    "title": "KIMINOTO",
+    "artist": "SPRITE, YOUNGOHM",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 102,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/918e5fb60435f51424fe50a2f15edb35aa6ef602",
+    "audioFallback": "https://p.scdn.co/mp3-preview/918e5fb60435f51424fe50a2f15edb35aa6ef602",
+    "coverUrl": "https://anifume.com/images/08/Dandadan-2.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5pbD2zRUQmzhzqHTp97K19",
+    "animeId": 32
+  },
+  {
+    "id": 1424,
+    "title": "แสนว่างเปล่า",
+    "artist": "ALREADY DEADD, FIIXD, YOUNGOHM",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 126,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/03c55c01b0bd689d0a74cab2c01a78ff378fc3e7",
+    "audioFallback": "https://p.scdn.co/mp3-preview/03c55c01b0bd689d0a74cab2c01a78ff378fc3e7",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/4255/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5bxUcO8wPndPdgxIbgGzqc",
+    "animeId": 342
+  },
+  {
+    "id": 1425,
+    "title": "Bye Bye",
+    "artist": "P-Hot, YOUNGOHM",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 138,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/f7d754a6e6646aebb424cc16913fca892b01d849",
+    "audioFallback": "https://p.scdn.co/mp3-preview/f7d754a6e6646aebb424cc16913fca892b01d849",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3702/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/08oX4H0Td1Fza9eBXzmojN",
+    "animeId": 401
+  },
+  {
+    "id": 1426,
+    "title": "อย่าจับเลย",
+    "artist": "Twopee Southside, YOUNGOHM",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 108,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/3020af7feab1a6d1e35e42fede55fa1388155d3f",
+    "audioFallback": "https://p.scdn.co/mp3-preview/3020af7feab1a6d1e35e42fede55fa1388155d3f",
+    "coverUrl": "https://media.kitsu.app/anime/45517/poster_image/medium-55342a19ef9eb98db5dfd17c9b83b38c.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/4uAry3GWAv0Cz7JaCzGVPA",
+    "animeId": 370
+  },
+  {
+    "id": 1427,
+    "title": "อยู่ดีๆก็…",
+    "artist": "Wonderframe, YOUNGOHM",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 144,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/60e7c724ba5f397a9c7aab3456f8bfc185c2f9e4",
+    "audioFallback": "https://p.scdn.co/mp3-preview/60e7c724ba5f397a9c7aab3456f8bfc185c2f9e4",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8147/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0b9JDLbAgCazIwPSWj6DNL",
+    "animeId": 58
+  },
+  {
+    "id": 1428,
+    "title": "เสือสิ้นลาย",
+    "artist": "F.HERO, YOUNGOHM, P-HOT, FYMME",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 117,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/17f6ffb6c7ea4ae758c38a6f7227e48dbbfb43bf",
+    "audioFallback": "https://p.scdn.co/mp3-preview/17f6ffb6c7ea4ae758c38a6f7227e48dbbfb43bf",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/10740/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3Sg7fg4KhVZpgZaC91jFX2",
+    "animeId": 55
+  },
+  {
+    "id": 1429,
+    "title": "สมดุลรัก",
+    "artist": "SEA., Sexski",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 113,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/524c094d63505a66d2d4b74ef5771feba4975be2",
+    "audioFallback": "https://p.scdn.co/mp3-preview/524c094d63505a66d2d4b74ef5771feba4975be2",
+    "coverUrl": "https://media.kitsu.app/anime/3639/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2luYdyxKSSxuC3cSW8N6A0",
+    "animeId": 157
+  },
+  {
+    "id": 1430,
+    "title": "ทั้งจำทั้งปรับ feat. YOUNGOHM, KARN The Parkinson",
+    "artist": "Stamp, YOUNGOHM, Karn The Parkinson",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 112,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/ac4410e53155aa5366ac89cbbbfc7beb311020a7",
+    "audioFallback": "https://p.scdn.co/mp3-preview/ac4410e53155aa5366ac89cbbbfc7beb311020a7",
+    "coverUrl": "https://media.kitsu.app/anime/777/poster_image/medium-838bd2659fa6198a6626d175be3e967b.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/2hxfN5UiyW4RfTmfTQxzap",
+    "animeId": 60
+  },
+  {
+    "id": 1431,
+    "title": "ไม่เหมือนใคร",
+    "artist": "CHUNWEN, YOUNGOHM, PEE CLOCK",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 108,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/cda5c9898e844650bce705de3232ba707041973c",
+    "audioFallback": "https://p.scdn.co/mp3-preview/cda5c9898e844650bce705de3232ba707041973c",
+    "coverUrl": "https://media.kitsu.app/anime/48671/poster_image/large-6156a7475d03dbb788ab1a9ce6c7f962.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/0y5F68On9PEG726OipJXP5",
+    "animeId": 118
+  },
+  {
+    "id": 1432,
+    "title": "Rain Zone",
+    "artist": "Maiyarap, Z9",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 142,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/548f92d38ae56c46a3e4c089b64ab4622b5f5434",
+    "audioFallback": "https://p.scdn.co/mp3-preview/548f92d38ae56c46a3e4c089b64ab4622b5f5434",
+    "coverUrl": "https://media.kitsu.app/anime/48233/poster_image/medium-e603ef5f8bac42574f7b48c0da994400.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/7nSkSqb1WDtZ7hY2dVEvWY",
+    "animeId": 406
+  },
+  {
+    "id": 1433,
+    "title": "คนสวย",
+    "artist": "BETAYOURBITCH, N0RMA1, BARON",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 126,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/c91c460ac3c7f83aafa3c276978007178d7785bd",
+    "audioFallback": "https://p.scdn.co/mp3-preview/c91c460ac3c7f83aafa3c276978007178d7785bd",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/4255/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4I0F3ItogIEpgH9qbjCiQz",
+    "animeId": 342
+  },
+  {
+    "id": 1434,
+    "title": "ริมหาดทราย",
+    "artist": "Z9, GLAR, 2T FLOW",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 130,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/442327cb63b65b49791cff02a8be10e15710550f",
+    "audioFallback": "https://p.scdn.co/mp3-preview/442327cb63b65b49791cff02a8be10e15710550f",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/47195/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4pBwZlClhq6vV6qdSkyf00",
+    "animeId": 395
+  },
+  {
+    "id": 1435,
+    "title": "หอมปากหอมคอ",
+    "artist": "iluvujayjay",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 101,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/dd41b428f653d46f898ba0c94ff30640ab93f97d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/dd41b428f653d46f898ba0c94ff30640ab93f97d",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/43088/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2KFr9apKEJ1qvJT23boCyb",
+    "animeId": 301
+  },
+  {
+    "id": 1436,
+    "title": "ฉันยังอยู่",
+    "artist": "Saran, The BESTS",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 115,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/1614248b0ac39017171b6e0656e5891ed441d979",
+    "audioFallback": "https://p.scdn.co/mp3-preview/1614248b0ac39017171b6e0656e5891ed441d979",
+    "coverUrl": "https://media.kitsu.app/anime/44196/poster_image/medium-a7b52a1e9cea5a04b29ee6878fbff923.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/4RKdCN2AoogXeIqiQmDxNy",
+    "animeId": 364
+  },
+  {
+    "id": 1437,
+    "title": "ก่อนนอนคืนนี้",
+    "artist": "YOUNGOHM",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 107,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/dfcf4342b69c6939b1280691fc35dbb830ed0d6d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/dfcf4342b69c6939b1280691fc35dbb830ed0d6d",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/43613/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/57NV6TzzYS473R7OgmDepf",
+    "animeId": 405
+  },
+  {
+    "id": 1438,
+    "title": "เบื่อ เบื่อ เบื่อ",
+    "artist": "Noth Getsunova, YOUNGOHM",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 132,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/0b9767cf4dc94f251046b45f5f2b98ae3dfa8e27",
+    "audioFallback": "https://p.scdn.co/mp3-preview/0b9767cf4dc94f251046b45f5f2b98ae3dfa8e27",
+    "coverUrl": "https://media.kitsu.app/anime/46857/poster_image/medium-4f810148ad4a0d922a901bf9e62fe46d.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/2LNa62xLKJ07ssTscpL5V6",
+    "animeId": 372
+  },
+  {
+    "id": 1439,
+    "title": "ต่อยให้",
+    "artist": "Txrbo",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 137,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/28926f9fc9e87abf26bcf707f325c2bed2b12ec3",
+    "audioFallback": "https://p.scdn.co/mp3-preview/28926f9fc9e87abf26bcf707f325c2bed2b12ec3",
+    "coverUrl": "https://media.kitsu.app/anime/847/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2cn4X3qXv6KcQYHr67st6T",
+    "animeId": 199
+  },
+  {
+    "id": 1440,
+    "title": "ที่สุดเลย",
+    "artist": "Rifle, Saran",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 120,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/3972a7078f05626bcb32657d740fa67060f42e0c",
+    "audioFallback": "https://p.scdn.co/mp3-preview/3972a7078f05626bcb32657d740fa67060f42e0c",
+    "coverUrl": "https://media.kitsu.app/anime/48671/poster_image/large-6156a7475d03dbb788ab1a9ce6c7f962.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/36czGZFR3xI0F38AiZ0Xdq",
+    "animeId": 118
+  },
+  {
+    "id": 1441,
+    "title": "เอาแต่เมา",
+    "artist": "PEE CLOCK, YOUNGOHM",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 144,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/3122be31fa4067f3609def60876a7683e64f36db",
+    "audioFallback": "https://p.scdn.co/mp3-preview/3122be31fa4067f3609def60876a7683e64f36db",
+    "coverUrl": "https://media.kitsu.app/anime/13767/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6txFY13f4QqZb7btS5bMA3",
+    "animeId": 185
+  },
+  {
+    "id": 1442,
+    "title": "อะไรฉันก็ยอม",
+    "artist": "Saran, Pondering, WHALJAY, SLOWVXNZ",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 125,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/c1193c419e1cb246318d64b50b3ca8876ab45dcd",
+    "audioFallback": "https://p.scdn.co/mp3-preview/c1193c419e1cb246318d64b50b3ca8876ab45dcd",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11339/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1Uirva9dJEp3Ctq3p6ejFQ",
+    "animeId": 46
+  },
+  {
+    "id": 1443,
+    "title": "รู้มือ^^",
+    "artist": "iluvujayjay",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 95,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/62545fd6fc08a0c8b04d0fb7a6b2a12e19478c71",
+    "audioFallback": "https://p.scdn.co/mp3-preview/62545fd6fc08a0c8b04d0fb7a6b2a12e19478c71",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8270/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0huk2WyhWhIfdKaWqwKmgd",
+    "animeId": 82
+  },
+  {
+    "id": 1444,
+    "title": "จำเลยรัก",
+    "artist": "F.HERO, Txrbo",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 104,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/4eb5e485d5418467d91e10ea865876a65717bf0c",
+    "audioFallback": "https://p.scdn.co/mp3-preview/4eb5e485d5418467d91e10ea865876a65717bf0c",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/5482/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5Tvycz8M6zpI4QX8ls2HAx",
+    "animeId": 320
+  },
+  {
+    "id": 1445,
+    "title": "ธารารัตน์",
+    "artist": "YOUNGOHM",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 127,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/35f53636c6bbd8a61f8566eb10ea861a2d57cdb2",
+    "audioFallback": "https://p.scdn.co/mp3-preview/35f53636c6bbd8a61f8566eb10ea861a2d57cdb2",
+    "coverUrl": "https://media.kitsu.app/anime/48671/poster_image/large-6156a7475d03dbb788ab1a9ce6c7f962.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/3BK6m6yU8BAW5z71FnU3nu",
+    "animeId": 118
+  },
+  {
+    "id": 1446,
+    "title": "Dirtytalk",
+    "artist": "GUZT, YUNGTARR",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 118,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d756287d2d3c8938f6b4594c14377e0a9a6566f5",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d756287d2d3c8938f6b4594c14377e0a9a6566f5",
+    "coverUrl": "https://media.kitsu.app/anime/47192/poster_image/medium-671e94191e8d931769dfa6d8a73e6491.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/45yQbNjWEAWt1IQ8XMROrp",
+    "animeId": 243
+  },
+  {
+    "id": 1447,
+    "title": "เพียงเธอ",
+    "artist": "FIIXD, YOUNGOHM, Zeesky",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 136,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/aa0701f0b519aed11eded89b63e525bab5268c36",
+    "audioFallback": "https://p.scdn.co/mp3-preview/aa0701f0b519aed11eded89b63e525bab5268c36",
+    "coverUrl": "https://media.kitsu.app/anime/46842/poster_image/medium-3171a2ed1cb9c882f40ac196841a84ba.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/4vp7mnOPf13fLUztFDqp2a",
+    "animeId": 360
+  },
+  {
+    "id": 1448,
+    "title": "รู้ทั้งรู้",
+    "artist": "OG-ANIC",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 99,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/18805d2d9fd6b9f9b93d634cdab269f9e83fa8bc",
+    "audioFallback": "https://p.scdn.co/mp3-preview/18805d2d9fd6b9f9b93d634cdab269f9e83fa8bc",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41083/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0KnDJSGxu03x8idlKLKKki",
+    "animeId": 50
+  },
+  {
+    "id": 1449,
+    "title": "ได้มั้ย",
+    "artist": "Saran, P6ICK",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 106,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/8e5df2726af45977d2e5e8cf7a85446a5093cf7b",
+    "audioFallback": "https://p.scdn.co/mp3-preview/8e5df2726af45977d2e5e8cf7a85446a5093cf7b",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41024/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2qVu9tYn0WzH9GxtpGzvbK",
+    "animeId": 86
+  },
+  {
+    "id": 1450,
+    "title": "จำเก่ง",
+    "artist": "F.HERO, Tilly Birds",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 135,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/3ee8cbe3cc7699c7b3ab6b300bc44f460a7c0e2e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/3ee8cbe3cc7699c7b3ab6b300bc44f460a7c0e2e",
+    "coverUrl": "https://media.kitsu.app/anime/42490/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5orIQnWm5K5RJ08CTYXgPb",
+    "animeId": 147
+  },
+  {
+    "id": 1451,
+    "title": "ลามปาม",
+    "artist": "BOWKYLION, Jeff Satur",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 99,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/5b09285daea5b3078d7b08fd75c2e72165d2be66",
+    "audioFallback": "https://p.scdn.co/mp3-preview/5b09285daea5b3078d7b08fd75c2e72165d2be66",
+    "coverUrl": "https://media.kitsu.app/anime/142/poster_image/large-bf3297058b86c1ef19cefb5b9c38c99e.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/30CRjTYAXaJf5YBsNQHIvG",
+    "animeId": 89
+  },
+  {
+    "id": 1452,
+    "title": "Time Flies",
+    "artist": "NONT TANONT, Jeff Satur",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 111,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/43715f423b8114ac48fd4aa731ddbcc299b63836",
+    "audioFallback": "https://p.scdn.co/mp3-preview/43715f423b8114ac48fd4aa731ddbcc299b63836",
+    "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5TEm69BZqijWNrp78ilqsC",
+    "animeId": 126
+  },
+  {
+    "id": 1453,
+    "title": "ความเงียบคือคำตอบ",
+    "artist": "MEAN Band, Jeff Satur",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 123,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/2beb83587a207cd8ae20aa8d2fe1a18cd6bdf899",
+    "audioFallback": "https://p.scdn.co/mp3-preview/2beb83587a207cd8ae20aa8d2fe1a18cd6bdf899",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/12325/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1jtuHmrw7em28FdbhfFVP0",
+    "animeId": 97
+  },
+  {
+    "id": 1454,
+    "title": "Far",
+    "artist": "SILVY, Jeff Satur",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 104,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/91fa19db611c7cecb83fef58e74b5de24b58a6b5",
+    "audioFallback": "https://p.scdn.co/mp3-preview/91fa19db611c7cecb83fef58e74b5de24b58a6b5",
+    "coverUrl": "https://media.kitsu.app/anime/46529/poster_image/medium-86099eeb5036c415a65a02d7e142017e.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/3b8x0Bu8Pxwze3op9EwTk2",
+    "animeId": 229
+  },
+  {
+    "id": 1455,
+    "title": "เหมือนวิวาห์ (Rain wedding) [From \"วิมานหนาม\"]",
+    "artist": "Jeff Satur",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 130,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/f747840d6403a68db43274062b99fa22d65a58da",
+    "audioFallback": "https://p.scdn.co/mp3-preview/f747840d6403a68db43274062b99fa22d65a58da",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/48316/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5F4fAhzhdHtaQ8nNqWAufl",
+    "animeId": 387
+  },
+  {
+    "id": 1456,
+    "title": "Steal The Show",
+    "artist": "SHAUN, Jeff Satur",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 130,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/809502cb8617fcd5b61ef52ee7ee3bd6cd983582",
+    "audioFallback": "https://p.scdn.co/mp3-preview/809502cb8617fcd5b61ef52ee7ee3bd6cd983582",
+    "coverUrl": "https://media.kitsu.app/anime/44426/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2xGRrcajSvRlBbAXds2l7u",
+    "animeId": 155
+  },
+  {
+    "id": 1457,
+    "title": "Last Twilight - from Last Twilight Original Soundtrack",
+    "artist": "William Jakrapatr",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 142,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/9272a5d617d47646cec6bfd4bebe1d884d483c07",
+    "audioFallback": "https://p.scdn.co/mp3-preview/9272a5d617d47646cec6bfd4bebe1d884d483c07",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42080/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7cepLDSROBQyq0HmV5iYtz",
+    "animeId": 63
+  },
+  {
+    "id": 1458,
+    "title": "แผลเป็น",
+    "artist": "Bodyslam, Jeff Satur",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 129,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/3b9e35684301d570cebd44e902a08a1f35b50ea8",
+    "audioFallback": "https://p.scdn.co/mp3-preview/3b9e35684301d570cebd44e902a08a1f35b50ea8",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8270/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/40yAIwct6vt6ToQFvtVNxH",
+    "animeId": 82
+  },
+  {
+    "id": 1459,
+    "title": "มนตรา (Mantra) - From \"เขมจิราต้องรอด\"",
+    "artist": "KENG HARIT",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 125,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/70536bf5bf2bf662423caf6c30b70a86e6097cf1",
+    "audioFallback": "https://p.scdn.co/mp3-preview/70536bf5bf2bf662423caf6c30b70a86e6097cf1",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6421/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3ClMHvxx2Me7d3aDhVcjYa",
+    "animeId": 262
+  },
+  {
+    "id": 1460,
+    "title": "ซ่อน(ไ��่)หา",
+    "artist": "Jeff Satur",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 141,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b0bd1f1050405ebfb786bb35bf5c9788399ce8a7",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b0bd1f1050405ebfb786bb35bf5c9788399ce8a7",
+    "coverUrl": "https://media.kitsu.app/anime/1410/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5nvdbRKg9fOixXotcZIQuF",
+    "animeId": 164
+  },
+  {
+    "id": 1461,
+    "title": "ละลาย",
+    "artist": "Daou Pittaya",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 115,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b578b645b3c5cf395966ba747b03114abfe74b6a",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b578b645b3c5cf395966ba747b03114abfe74b6a",
+    "coverUrl": "https://media.kitsu.app/anime/45249/poster_image/medium-755db8403ce12850dbd8852430a6609a.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/4AmLTDjGWE5HqRhiX383bF",
+    "animeId": 408
+  },
+  {
+    "id": 1462,
+    "title": "How You Feel - From \"��ิ่งเฮียก็หาว่าซื่อ cutie pie series\"",
+    "artist": "NuNew",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 106,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/c255d00bd461c22569f8d502db3cfc7e4ac6ab6e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/c255d00bd461c22569f8d502db3cfc7e4ac6ab6e",
+    "coverUrl": "https://media.kitsu.app/anime/43078/poster_image/medium-c33a4b2e827f0e99ea57f831af0adabd.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/4c720ne6FrhbC0qrfsjWb7",
+    "animeId": 359
+  },
+  {
+    "id": 1463,
+    "title": "แอบรักไม่ทำให้ใครตาย",
+    "artist": "LYKN",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 136,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/737993652bd146b63d8c3c657517068044767ca3",
+    "audioFallback": "https://p.scdn.co/mp3-preview/737993652bd146b63d8c3c657517068044767ca3",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1rLOXc95uK1Xo6Cjtw2wNK",
+    "animeId": 336
+  },
+  {
+    "id": 1464,
+    "title": "แค่เธอ (Why Don't You Stay) [From KinnPorsche The Series]",
+    "artist": "Jeff Satur",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 98,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/2cf75219d060e4945faf2e434ac69e8c8ca1e2ec",
+    "audioFallback": "https://p.scdn.co/mp3-preview/2cf75219d060e4945faf2e434ac69e8c8ca1e2ec",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/4604/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6g7cdlMt3AUV99D6CgYcV7",
+    "animeId": 88
+  },
+  {
+    "id": 1465,
+    "title": "จำนน (White Flag) - Live Session",
+    "artist": "NONT TANONT, Jeff Satur",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 106,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/8c9a8bc31d34bf60645533ae9bcbebf21580fb61",
+    "audioFallback": "https://p.scdn.co/mp3-preview/8c9a8bc31d34bf60645533ae9bcbebf21580fb61",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41450/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2cwIT2wUaf82BrYsqfyhzX",
+    "animeId": 100
+  },
+  {
+    "id": 1466,
+    "title": "วันเกิดเธอ",
+    "artist": "Phuwin",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 127,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/30e8e098e414e2a615c2545fc2bc1fe2b8668053",
+    "audioFallback": "https://p.scdn.co/mp3-preview/30e8e098e414e2a615c2545fc2bc1fe2b8668053",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/12/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5OmghyPhtlR5yXJ62HxSNR",
+    "animeId": 402
+  },
+  {
+    "id": 1467,
+    "title": "ปีใหม่ปีนี้",
+    "artist": "Saran, Jeff Satur",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 138,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/6131977690f695ecbf41f2a8f5af327b13d5e5e6",
+    "audioFallback": "https://p.scdn.co/mp3-preview/6131977690f695ecbf41f2a8f5af327b13d5e5e6",
+    "coverUrl": "https://media.kitsu.app/anime/42490/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2ewrA9zGxvXrWSt6sLkqZx",
+    "animeId": 147
+  },
+  {
+    "id": 1468,
+    "title": "My Starlight - from Star In My Mind Original Soundtrack",
+    "artist": "Joong Archen",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 121,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/9d60439561c8c6cf0942bb155dc8af71ba9a4cff",
+    "audioFallback": "https://p.scdn.co/mp3-preview/9d60439561c8c6cf0942bb155dc8af71ba9a4cff",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42080/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4OtZU4aveZuVONxmExrdpK",
+    "animeId": 63
+  },
+  {
+    "id": 1469,
+    "title": "ก่อนที่เธอจะลืมฝัน",
+    "artist": "Jeff Satur",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 98,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/8ffda73c31e8e7661f6f7aac963ffcd1822883c3",
+    "audioFallback": "https://p.scdn.co/mp3-preview/8ffda73c31e8e7661f6f7aac963ffcd1822883c3",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/719/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4SJxHEJlKUjRisEWHAlt7X",
+    "animeId": 337
+  },
+  {
+    "id": 1470,
+    "title": "ใกล้เกิน",
+    "artist": "GEMINI",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 124,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/95e2be0192d47c14cbb740ec576aa4ff39155723",
+    "audioFallback": "https://p.scdn.co/mp3-preview/95e2be0192d47c14cbb740ec576aa4ff39155723",
+    "coverUrl": "https://media.kitsu.app/anime/9987/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/362Ufr9KkITy2WOyhAtoh0",
+    "animeId": 184
+  },
+  {
+    "id": 1471,
+    "title": "Over The Moon - from The ECLIPSE Original Soundtrack",
+    "artist": "Khaotung Thanawat",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 119,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/16b2b5feaf5db6a43247de4420f92754b9380bf9",
+    "audioFallback": "https://p.scdn.co/mp3-preview/16b2b5feaf5db6a43247de4420f92754b9380bf9",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/14312/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4CglACwqStBIcYrjNLtDPk",
+    "animeId": 287
+  },
+  {
+    "id": 1472,
+    "title": "5CM - from Thame-Po HEART THAT SKIPS A BEAT Original Soundtrack",
+    "artist": "William Jakrapatr",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 123,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/534828c0a56e5bdbb9d373c0786333a7192fcaec",
+    "audioFallback": "https://p.scdn.co/mp3-preview/534828c0a56e5bdbb9d373c0786333a7192fcaec",
+    "coverUrl": "https://media.kitsu.app/anime/6028/poster_image/large-e9b1ea8a2aee8fd902446d0c273f9eb4.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/3jVDgRritOKnWLFatI0rsW",
+    "animeId": 101
+  },
+  {
+    "id": 1473,
+    "title": "ของขวัญปีใหม่",
+    "artist": "Jeff Satur",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 126,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/ca091daade85de57ccf84f3f20a54a8ce67a2a65",
+    "audioFallback": "https://p.scdn.co/mp3-preview/ca091daade85de57ccf84f3f20a54a8ce67a2a65",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/10028/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/43JyEMmiEB4LJDwMDnIqvz",
+    "animeId": 10
+  },
+  {
+    "id": 1474,
+    "title": "Living For You - from Never Let Me Go Original Soundtrack",
+    "artist": "Phuwin",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 105,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/46c878801e28b74e3af50c06cd3518323656956c",
+    "audioFallback": "https://p.scdn.co/mp3-preview/46c878801e28b74e3af50c06cd3518323656956c",
+    "coverUrl": "https://media.kitsu.app/anime/24/poster_image/large-8b69ef8e3f4f4359af304e9b664eef0f.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/790RoH3bJQEuvNrCcRMPGT",
+    "animeId": 71
+  },
+  {
+    "id": 1475,
+    "title": "Just Friend? - from BAD BUDDY SERIES Original Soundtrack",
+    "artist": "NANON",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 130,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/964d1dc0bbdd581cf8f16ff329495c60c91cb5b2",
+    "audioFallback": "https://p.scdn.co/mp3-preview/964d1dc0bbdd581cf8f16ff329495c60c91cb5b2",
+    "coverUrl": "https://media.kitsu.app/anime/7983/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/69xpGSSOrI69Wq90Dy2foB",
+    "animeId": 178
+  },
+  {
+    "id": 1476,
+    "title": "Dum Dum",
+    "artist": "Jeff Satur",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 117,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/fdb5a0e5b3c92191be174c101f8d56149884a794",
+    "audioFallback": "https://p.scdn.co/mp3-preview/fdb5a0e5b3c92191be174c101f8d56149884a794",
+    "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6b2nmFsOb2sDumvHLMFLA1",
+    "animeId": 126
+  },
+  {
+    "id": 1477,
+    "title": "Truth In The Eyes - from We Are Original Soundtrack",
+    "artist": "Pond Naravit, Phuwin",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 133,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d594a3f4c531f67eb1ee4fd61689d57ecdd14a70",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d594a3f4c531f67eb1ee4fd61689d57ecdd14a70",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8536/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3UpL5TX7uakHUrs5EXlKPC",
+    "animeId": 340
+  },
+  {
+    "id": 1478,
+    "title": "เพลงรัก (Hook) - เพลงประกอบซีรีส์ \"แฟนผมเป็นประธานนักเรียน My School President\"",
+    "artist": "GEMINI",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 137,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/ef60273d4f33a4b4052192150d41e3b8404a16df",
+    "audioFallback": "https://p.scdn.co/mp3-preview/ef60273d4f33a4b4052192150d41e3b8404a16df",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/9018/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6lk2oNywUGQfvbSRDlXYl9",
+    "animeId": 278
+  },
+  {
+    "id": 1479,
+    "title": "เป็นไรมั้ย",
+    "artist": "Daou Pittaya",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 113,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/2162f7a52e18395317a3a06c9c167a25cd9b4c56",
+    "audioFallback": "https://p.scdn.co/mp3-preview/2162f7a52e18395317a3a06c9c167a25cd9b4c56",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1491/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3fDm1Sy2emiu2DUrvdf7w0",
+    "animeId": 391
+  },
+  {
+    "id": 1480,
+    "title": "ค้างคา (Doubt) - เพลงประกอบซีรีส์ \"Dare You To Death ไขคดีเป็น เห็นคดีตาย\"",
+    "artist": "Joong Archen",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 96,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b6f6b12c4fe3b78366ef47b23ca8978fbebbda24",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b6f6b12c4fe3b78366ef47b23ca8978fbebbda24",
+    "coverUrl": "https://media.kitsu.app/anime/14027/poster_image/medium-2ccfd6de3c64f3e8340230e7758646a1.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/78gIW7yTjpAHfPN3YbIC2g",
+    "animeId": 409
+  },
+  {
+    "id": 1481,
+    "title": "Goodbye Not Goodbye - Thai",
+    "artist": "Jeff Satur",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 111,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/30b397556c84a57b9d60437c9373a92c320095e2",
+    "audioFallback": "https://p.scdn.co/mp3-preview/30b397556c84a57b9d60437c9373a92c320095e2",
+    "coverUrl": "https://media.kitsu.app/anime/9963/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/39aGL9R7WtF4xOdeH95wiM",
+    "animeId": 159
+  },
+  {
+    "id": 1482,
+    "title": "จะรักฉันอยู่ไหม - Original soundtrack from \"นิ่งเฮียก็หาว่าซื่อ\" cutie pie series",
+    "artist": "NuNew",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 142,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/c347c4f28f86a46cf9fb86bbe44cde1beca2c283",
+    "audioFallback": "https://p.scdn.co/mp3-preview/c347c4f28f86a46cf9fb86bbe44cde1beca2c283",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/4604/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1kq7lepc85UzvUxO9Hi7hI",
+    "animeId": 88
+  },
+  {
+    "id": 1483,
+    "title": "All I Need - เพลงประกอบซีรีส์ \"Thame-Po HEART THAT SKIPS A BEAT\"",
+    "artist": "LYKN",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 97,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/fb8c16f4186990bee95c1a831f8695e0c873e7a3",
+    "audioFallback": "https://p.scdn.co/mp3-preview/fb8c16f4186990bee95c1a831f8695e0c873e7a3",
+    "coverUrl": "https://media.kitsu.app/anime/46140/poster_image/medium-09c31317676fc3251c6543b5936780c1.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/6VMjJauJ9YaHtj50MiIJv6",
+    "animeId": 123
+  },
+  {
+    "id": 1484,
+    "title": "เพียงนิทาน - เพลงจากซีรีส์ \"การุณยฆาต\"",
+    "artist": "NONT TANONT",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 126,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d719d9276d56c87e357e8a8c7bc643635083afc8",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d719d9276d56c87e357e8a8c7bc643635083afc8",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1799/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5fFFW9SAfeMfHbBYNC0AMI",
+    "animeId": 318
+  },
+  {
+    "id": 1485,
+    "title": "แค่เงา",
+    "artist": "Jeff Satur",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 122,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/8dbb5a1b57636ebeafc784d404c1033d7466f2b7",
+    "audioFallback": "https://p.scdn.co/mp3-preview/8dbb5a1b57636ebeafc784d404c1033d7466f2b7",
+    "coverUrl": "https://media.kitsu.app/anime/13369/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3YGcFaTdMkC9Q6rkpUdkuR",
+    "animeId": 192
+  },
+  {
+    "id": 1486,
+    "title": "ระหว่างทาง (Good Time) [เพลงประกอบซีรีส์ Thame-Po HEART THAT SKIPS A BEAT]",
+    "artist": "William Jakrapatr, Est Supha",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 136,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/1b3aa4468828c137c1a7b9d357ac7ca0679df58c",
+    "audioFallback": "https://p.scdn.co/mp3-preview/1b3aa4468828c137c1a7b9d357ac7ca0679df58c",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13995/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3XnYfbyjlv9LME2UB3O1N7",
+    "animeId": 268
+  },
+  {
+    "id": 1487,
+    "title": "We Are Forever - from We Are Original Soundtrack",
+    "artist": "Phuwin",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 134,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/2118899d6d284598e31c028c7bf98a60308da5d4",
+    "audioFallback": "https://p.scdn.co/mp3-preview/2118899d6d284598e31c028c7bf98a60308da5d4",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/43088/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7DHmhtNeqVWCInyJS0UUTk",
+    "animeId": 301
+  },
+  {
+    "id": 1488,
+    "title": "ลบยัง (Re-Move On) - เพลงประกอบซีรีส์ \"My Love Mix-Up! เขียนรักด้วยยางลบ\"",
+    "artist": "GEMINI, FOURTH",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 137,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/c1862c0368ee88ada10da414995ae1e2bbf07548",
+    "audioFallback": "https://p.scdn.co/mp3-preview/c1862c0368ee88ada10da414995ae1e2bbf07548",
+    "coverUrl": "https://media.kitsu.app/anime/48892/poster_image/medium-66e6fb051c762862c540598bd99b3e6b.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/59NGTfD1tU474YBrJzOHbc",
+    "animeId": 357
+  },
+  {
+    "id": 1489,
+    "title": "ทุกชาติพบ (Never Apart) - Original Soundtrack from \"เขมจิราต้องรอด\"",
+    "artist": "KENG HARIT, Namping",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 126,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/851a07b40181627b910f93d4d8abca4d2ee89810",
+    "audioFallback": "https://p.scdn.co/mp3-preview/851a07b40181627b910f93d4d8abca4d2ee89810",
+    "coverUrl": "https://media.kitsu.app/anime/46320/poster_image/medium-feb3c7544b2d91902c9c6a38bf1f5944.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/27DFZqwQsjO4JFkKT2XX1J",
+    "animeId": 234
+  },
+  {
+    "id": 1490,
+    "title": "แค่เธออยู่ - From ครั้งหนึ่งเราเคยรักกัน Love Area The Series",
+    "artist": "Jeff Satur",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 122,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/92e7320695e17b4f021618d2a7fc9240d17ac7a9",
+    "audioFallback": "https://p.scdn.co/mp3-preview/92e7320695e17b4f021618d2a7fc9240d17ac7a9",
+    "coverUrl": "https://anifume.com/images/08/Dandadan-2.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0ylwMFPomfd4kGcZYWh7fH",
+    "animeId": 32
+  },
+  {
+    "id": 1491,
+    "title": "Destined - from Thame-Po HEART THAT SKIPS A BEAT Original Soundtrack",
+    "artist": "TuiChayatorn",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 113,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/007430f17dbd59162b903fb28f4a9bcafb3c08c5",
+    "audioFallback": "https://p.scdn.co/mp3-preview/007430f17dbd59162b903fb28f4a9bcafb3c08c5",
+    "coverUrl": "https://media.kitsu.app/anime/48534/poster_image/medium-c38c15266ae228974e8c2a00d776ea92.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/2FOmKMvMA4h5jGn36dvHIP",
+    "animeId": 246
+  },
+  {
+    "id": 1492,
+    "title": "ไอ้คนน่ารัก - from \"My Cutie Pie\"",
+    "artist": "NuNew",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 105,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/66ce2f68283975e1fa7e759c0557054aa9e3fad9",
+    "audioFallback": "https://p.scdn.co/mp3-preview/66ce2f68283975e1fa7e759c0557054aa9e3fad9",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/47625/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2E0yUWqMmTVdoUgRfFYEYi",
+    "animeId": 350
+  },
+  {
+    "id": 1493,
+    "title": "Fly High",
+    "artist": "LYKN",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 104,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d84cf7c61ea1fbdf819f7b13f55bacbc19b06652",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d84cf7c61ea1fbdf819f7b13f55bacbc19b06652",
+    "coverUrl": "https://media.kitsu.app/anime/45746/poster_image/medium-b260279a55588269f2a466f2b9603023.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/3LjGTnItDSgLgL6e326dEO",
+    "animeId": 412
+  },
+  {
+    "id": 1494,
+    "title": "ไม่อาจเปลี่ยนใจ",
+    "artist": "Thurs Garden Music, Ozone Garden Music, Jeff Satur",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 125,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/a28947dfb2a0497f297ae344d6035d0a6a5c0c51",
+    "audioFallback": "https://p.scdn.co/mp3-preview/a28947dfb2a0497f297ae344d6035d0a6a5c0c51",
+    "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium-0233bf77af3e0ab7303ae7099209d58a.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/1DDHcYWlWtJx8ubS8KZmq0",
+    "animeId": 53
+  },
+  {
+    "id": 1495,
+    "title": "อยากให้เธออยู่ตรงนี้",
+    "artist": "The BESTS, Saran, BLVCKHEART, SLOWVXNZ, -",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 132,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/4eefa823d5e3e6fbe180cae08afc12b0fd4624fb",
+    "audioFallback": "https://p.scdn.co/mp3-preview/4eefa823d5e3e6fbe180cae08afc12b0fd4624fb",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41443/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/25a2Lu7yr7UiZjGhCsZBE0",
+    "animeId": 339
+  },
+  {
+    "id": 1496,
+    "title": "แด่เธอ",
+    "artist": "DIEOUT, Saran, P6ICK, SUMDONG",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 133,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/9ce5deb99c49e19ba4f5d3e419ea23ecb79d536f",
+    "audioFallback": "https://p.scdn.co/mp3-preview/9ce5deb99c49e19ba4f5d3e419ea23ecb79d536f",
+    "coverUrl": "https://media.kitsu.app/anime/41144/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6FksgLVg7KJujKZbJzyA2D",
+    "animeId": 146
+  },
+  {
+    "id": 1497,
+    "title": "ฤดูเศร้า",
+    "artist": "THAOWAN, G-Bear, Saran, Rifle",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 131,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/7661bfb0352df0e3e360965ff94fb0957bd1d099",
+    "audioFallback": "https://p.scdn.co/mp3-preview/7661bfb0352df0e3e360965ff94fb0957bd1d099",
+    "coverUrl": "https://media.kitsu.app/anime/11578/poster_image/medium-9ace4ac709f334cc96d244c15fe7d4d0.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/255m82ckZPE7SzyEJIjrYC",
+    "animeId": 56
+  },
+  {
+    "id": 1498,
+    "title": "เก็บข้าวของ",
+    "artist": "2T FLOW, HANXPOND, Saran",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 99,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/c8ebc0e5a17a7e7a18c554f024e4af55f91dbae4",
+    "audioFallback": "https://p.scdn.co/mp3-preview/c8ebc0e5a17a7e7a18c554f024e4af55f91dbae4",
+    "coverUrl": "https://media.kitsu.app/anime/46320/poster_image/medium-feb3c7544b2d91902c9c6a38bf1f5944.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/4upAINYWEBe0ek0g6U2CHV",
+    "animeId": 212
+  },
+  {
+    "id": 1499,
+    "title": "หนีความจริง",
+    "artist": "BLVCKHEART, Saran",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 120,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/98bc9e658e2eb935d66944a2f2236d9e3378bd56",
+    "audioFallback": "https://p.scdn.co/mp3-preview/98bc9e658e2eb935d66944a2f2236d9e3378bd56",
+    "coverUrl": "https://media.kitsu.app/anime/11752/poster_image/medium-6e7782dec9c8a72c2148369c288982ee.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/1wImSUHR1tP6y003NHku7e",
+    "animeId": 410
+  },
+  {
+    "id": 1500,
+    "title": "Promethazine",
+    "artist": "Saran, BLVCKHEART, Pondering",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 130,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/cb6f09edf0677cc542e7255d6691f3aea53ffd74",
+    "audioFallback": "https://p.scdn.co/mp3-preview/cb6f09edf0677cc542e7255d6691f3aea53ffd74",
+    "coverUrl": "https://media.kitsu.app/anime/48541/poster_image/medium-996392db10718d6b3177f11982f8b975.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/25n8diXqpb6LKyL0Dwzwoy",
+    "animeId": 352
+  },
+  {
+    "id": 1501,
+    "title": "ฝันกลางวัน",
+    "artist": "PUNYARB, Saran",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 133,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/5a3d1b157375765f2b1355c87d2d97051799f75a",
+    "audioFallback": "https://p.scdn.co/mp3-preview/5a3d1b157375765f2b1355c87d2d97051799f75a",
+    "coverUrl": "https://media.kitsu.app/anime/44032/poster_image/large-5b1626fbfbc64e8c4a4a2a2874be2afd.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/6xvpGt4j3pvxAkfRENsHtF",
+    "animeId": 84
+  },
+  {
+    "id": 1502,
+    "title": "เรากลับมาเป็นเหมือนเดิม",
+    "artist": "The BESTS, Saran",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 137,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/a866489a444231e2fa4602d581fd3cd50f156d07",
+    "audioFallback": "https://p.scdn.co/mp3-preview/a866489a444231e2fa4602d581fd3cd50f156d07",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7680/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/15Shj1AlcYizQWhtsDoYyE",
+    "animeId": 327
+  },
+  {
+    "id": 1503,
+    "title": "ใจเธอ",
+    "artist": "DXRIW, Saran",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 113,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/af6fd7850cc57577dfb3fe113cf7c2e7593c7a3c",
+    "audioFallback": "https://p.scdn.co/mp3-preview/af6fd7850cc57577dfb3fe113cf7c2e7593c7a3c",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/419/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4v3vzLPk1b8xMPo722HCcl",
+    "animeId": 294
+  },
+  {
+    "id": 1504,
+    "title": "พี่ก็รู้",
+    "artist": "Rifle, Saran",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 111,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/7ff64d350cd58cc82704554006766281f016a038",
+    "audioFallback": "https://p.scdn.co/mp3-preview/7ff64d350cd58cc82704554006766281f016a038",
+    "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/37BOGNFiFipyHllBoQz1mt",
+    "animeId": 251
+  },
+  {
+    "id": 1505,
+    "title": "ใจพัง",
+    "artist": "Saran, GTK",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 129,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/be22dabad4df17810d7321fe78948bae458e6792",
+    "audioFallback": "https://p.scdn.co/mp3-preview/be22dabad4df17810d7321fe78948bae458e6792",
+    "coverUrl": "https://media.kitsu.app/anime/13768/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/30ho6wAl9w53sCtcqzHVMA",
+    "animeId": 175
+  },
+  {
+    "id": 1506,
+    "title": "CURSE",
+    "artist": "Z9, 2K, Saran",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 119,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/11bea8a5f65906a2e65f30b430f8479fdf6989a8",
+    "audioFallback": "https://p.scdn.co/mp3-preview/11bea8a5f65906a2e65f30b430f8479fdf6989a8",
+    "coverUrl": "https://media.kitsu.app/anime/11370/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/77rZWogLvZ2NOf248oMd6N",
+    "animeId": 148
+  },
+  {
+    "id": 1507,
+    "title": "กอดกัน",
+    "artist": "K6Y, Lazyloxy, Jayrun",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 101,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/15966453b50e59e580a0ce64376a1e925ece7aaf",
+    "audioFallback": "https://p.scdn.co/mp3-preview/15966453b50e59e580a0ce64376a1e925ece7aaf",
+    "coverUrl": "https://media.kitsu.app/anime/11100/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1X3VD4oXVFe314hJ9AcvVy",
+    "animeId": 161
+  },
+  {
+    "id": 1508,
+    "title": "เติบโต",
+    "artist": "Saran, BLVCKHEART, DAVIDBOII",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 112,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/a91aa6b11680229886455cb81345494adc931d7d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/a91aa6b11680229886455cb81345494adc931d7d",
+    "coverUrl": "https://media.kitsu.app/anime/48443/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/45FSW9JohxF1SMTGWLw8Ue",
+    "animeId": 187
+  },
+  {
+    "id": 1509,
+    "title": "ไร้รัก",
+    "artist": "Highhot",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 114,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d39fb852e9ade790c51681aa8b51bc9312054f96",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d39fb852e9ade790c51681aa8b51bc9312054f96",
+    "coverUrl": "https://media.kitsu.app/anime/47196/poster_image/medium-f1b3a9c68b72af0e02b2b6e3a8dc1c0b.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/0ZapAgVfHzTxqDPweLPUyu",
+    "animeId": 283
+  },
+  {
+    "id": 1510,
+    "title": "เลือกที่จะไป",
+    "artist": "The BESTS, Saran, GTK",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 110,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/4f69cdfd8d946c0a125607f325ea7b3c12fba407",
+    "audioFallback": "https://p.scdn.co/mp3-preview/4f69cdfd8d946c0a125607f325ea7b3c12fba407",
+    "coverUrl": "https://media.kitsu.app/anime/7957/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0nomhjBvCoJdvWc8aOqjqa",
+    "animeId": 150
+  },
+  {
+    "id": 1511,
+    "title": "Hope",
+    "artist": "2K, Saran",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 108,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/bd3b8d3c3c1b99c62d8db957ab486442be80a788",
+    "audioFallback": "https://p.scdn.co/mp3-preview/bd3b8d3c3c1b99c62d8db957ab486442be80a788",
+    "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4ZmR5PLHDE4zFEskU8Otzc",
+    "animeId": 133
+  },
+  {
+    "id": 1512,
+    "title": "Airplane Mode",
+    "artist": "Saran, Z9",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 101,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d28523b5766b3f8c5fd5ccc5e410caeb4ae170ac",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d28523b5766b3f8c5fd5ccc5e410caeb4ae170ac",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8778/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4eABL6biW8QZOSvGMaX18M",
+    "animeId": 277
+  },
+  {
+    "id": 1513,
+    "title": "DIARY",
+    "artist": "BLVCKHEART, Saran, THAOWANZ",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 102,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/788263659d31b4a8b153fd5e982a4f6d7d984220",
+    "audioFallback": "https://p.scdn.co/mp3-preview/788263659d31b4a8b153fd5e982a4f6d7d984220",
+    "coverUrl": "https://media.kitsu.app/anime/49205/poster_image/medium-26bbae139e3a0869dece52e864b93052.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/1yuoX9zSvJAYpF0wJe4f9k",
+    "animeId": 205
+  },
+  {
+    "id": 1514,
+    "title": "หาย",
+    "artist": "THAOWAN, Saran",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 131,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/78557f7a9e97292f37bb67d61ce5a25a3661817c",
+    "audioFallback": "https://p.scdn.co/mp3-preview/78557f7a9e97292f37bb67d61ce5a25a3661817c",
+    "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3G6Tk9y0tF3p00XGeLzTUP",
+    "animeId": 125
+  },
+  {
+    "id": 1515,
+    "title": "แจกันดอกไม้",
+    "artist": "Z9, Blackheart, Medkit.z",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 121,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/0de0512074fdf884dd8b7f6f2c3e95ef7bfffcb3",
+    "audioFallback": "https://p.scdn.co/mp3-preview/0de0512074fdf884dd8b7f6f2c3e95ef7bfffcb3",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/176/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0lOkdvblBAwRWlb9Y5j632",
+    "animeId": 314
+  },
+  {
+    "id": 1516,
+    "title": "ตัดทิ้ง",
+    "artist": "BABYBIGBENG, Saran",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 106,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/4db5e9a51d804cfd8251113840ca7fa2267542f6",
+    "audioFallback": "https://p.scdn.co/mp3-preview/4db5e9a51d804cfd8251113840ca7fa2267542f6",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/428/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6VUNGU1vkjmo3IY1XBUi5L",
+    "animeId": 317
+  },
+  {
+    "id": 1517,
+    "title": "ความรัก ลมหายใจ",
+    "artist": "Saran",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 129,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/29839a3f48fe0ead6a228465c96bf64a1e9ea6ae",
+    "audioFallback": "https://p.scdn.co/mp3-preview/29839a3f48fe0ead6a228465c96bf64a1e9ea6ae",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/818/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1Z5QAcDHYZgRANOTCtkcnj",
+    "animeId": 74
+  },
+  {
+    "id": 1518,
+    "title": "Daydream",
+    "artist": "Pondering, Cloud Cadet",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 129,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/6294ced0ba030a778254e86b10aa4044269253fc",
+    "audioFallback": "https://p.scdn.co/mp3-preview/6294ced0ba030a778254e86b10aa4044269253fc",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/12325/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7Mpsf4OLTP8OLb9VpLF4a4",
+    "animeId": 97
+  },
+  {
+    "id": 1519,
+    "title": "หนึ่งวันของชีวิต",
+    "artist": "DIEOUT, Hp blingz, THAOWANZ, Saran",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 106,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/fa4a36149ff867cc23dad27cb317eae2db7db020",
+    "audioFallback": "https://p.scdn.co/mp3-preview/fa4a36149ff867cc23dad27cb317eae2db7db020",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8230/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0v4XjyFGrAke94WnkQDwBE",
+    "animeId": 280
+  },
+  {
+    "id": 1520,
+    "title": "สำมะเรเทเมา",
+    "artist": "YOUNGOHM",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 104,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/5efa9606216f4a1f8ce37612eefd01a20d1ea727",
+    "audioFallback": "https://p.scdn.co/mp3-preview/5efa9606216f4a1f8ce37612eefd01a20d1ea727",
+    "coverUrl": "https://media.kitsu.app/anime/48443/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6CQkLg1Yqn0YBtsLG4BKeZ",
+    "animeId": 187
+  },
+  {
+    "id": 1521,
+    "title": "ดีไม่พอหรือเธอไม่รัก",
+    "artist": "PURE KANIN, Saran",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 136,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/456830669e7640799db22dce66d7646cf45c171a",
+    "audioFallback": "https://p.scdn.co/mp3-preview/456830669e7640799db22dce66d7646cf45c171a",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/12/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/61yUWrmETaNJdoLYCUwhQl",
+    "animeId": 36
+  },
+  {
+    "id": 1522,
+    "title": "2AM",
+    "artist": "Saran, BLVCKHEART, Rifle",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 116,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/58565b557ce18dd040d6e74c1c8e217911dacc7b",
+    "audioFallback": "https://p.scdn.co/mp3-preview/58565b557ce18dd040d6e74c1c8e217911dacc7b",
+    "coverUrl": "https://media.kitsu.app/anime/44382/poster_image/large-8ffc8ea9b6a1f9e79bc626e03baab167.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/50D7ptFXhgR9GZ9g7G20SF",
+    "animeId": 70
+  },
+  {
+    "id": 1523,
+    "title": "สิ้นสุดความพยายาม",
+    "artist": "PORZAX",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 113,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/27afd06e1643f5d887d1a1663212d813d5c98090",
+    "audioFallback": "https://p.scdn.co/mp3-preview/27afd06e1643f5d887d1a1663212d813d5c98090",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/48624/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0eHTM1Udi2NLiOJ3ja63nh",
+    "animeId": 349
+  },
+  {
+    "id": 1524,
+    "title": "แฮปปี้เบิร์ดเดย์นะ",
+    "artist": "Sunny-K, Saran, Blackheart",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 129,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/2ab6792407b1133d67d5a4db9c2e7f04cffa72be",
+    "audioFallback": "https://p.scdn.co/mp3-preview/2ab6792407b1133d67d5a4db9c2e7f04cffa72be",
+    "coverUrl": "https://anifume.com/images/45/Blue-Lock.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/01GuLWTbdSAw9sfO8KMOYP",
+    "animeId": 93
+  },
+  {
+    "id": 1525,
+    "title": "ถ้าไม่รบกวน",
+    "artist": "Z9, Saran, 1ST",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 121,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/240c424b6ab49ecb69e363f4c87131bcff3eb621",
+    "audioFallback": "https://p.scdn.co/mp3-preview/240c424b6ab49ecb69e363f4c87131bcff3eb621",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/14350/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5Vrgm4B3gBS7PZvUnCCcbp",
+    "animeId": 270
+  },
+  {
+    "id": 1526,
+    "title": "ห้องที่ว่างเปล่า",
+    "artist": "Saran",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 134,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/35593cbe7377869f82ec9f545b36eb457c34f1b6",
+    "audioFallback": "https://p.scdn.co/mp3-preview/35593cbe7377869f82ec9f545b36eb457c34f1b6",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7645/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2W17wDsmVimJMMGT8UgVfi",
+    "animeId": 281
+  },
+  {
+    "id": 1527,
+    "title": "KOD BAD",
+    "artist": "SLOWVXNZ, SUMDONG, 1ST, Saran, DXR!W",
+    "lang": "en",
+    "genre": "Global Hits / Spotify",
+    "bpm": 139,
+    "mood": "Trending Pop / Chill",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d85d3837a8e2837df19ff51d132364dc6ba37d58",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d85d3837a8e2837df19ff51d132364dc6ba37d58",
+    "coverUrl": "https://media.kitsu.app/anime/4388/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6UNKgaAyZtVf6IsONUmi9E",
+    "animeId": 166
+  },
+  {
+    "id": 1528,
+    "title": "เพลงนี้ผมเขียนให้เธอ",
+    "artist": "Pondering",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 122,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/caa1bb951bb5de09758505ec388b340d00d12460",
+    "audioFallback": "https://p.scdn.co/mp3-preview/caa1bb951bb5de09758505ec388b340d00d12460",
+    "coverUrl": "https://media.kitsu.app/anime/47271/poster_image/medium-90a981a5a5570ba5fdb809a3152c8348.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/09beOtPEjTgYLXNzYFjfLU",
+    "animeId": 29
+  },
+  {
+    "id": 1529,
+    "title": "ไม่เคย",
+    "artist": "BABYBIGBENG, Saran, P6ICK, CN",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 140,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/40d4df338173be02630f837eca72b2355d838714",
+    "audioFallback": "https://p.scdn.co/mp3-preview/40d4df338173be02630f837eca72b2355d838714",
+    "coverUrl": "https://media.kitsu.app/anime/44012/poster_image/medium-b7adf5b796a614ae3630153229fe4469.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/3r6iaXYV9mTnjm7qXcWNUD",
+    "animeId": 250
+  },
+  {
+    "id": 1530,
+    "title": "ใครไม่รักแต่เค้ารัก",
+    "artist": "PORZAX",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 102,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b618cdf44a8ca30c84a9fbaf65e1153d54095b35",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b618cdf44a8ca30c84a9fbaf65e1153d54095b35",
+    "coverUrl": "https://media.kitsu.app/anime/45547/poster_image/medium-ecff21462bacc73bbf9e1a60a6ec3e91.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/4xG4w3JJixwCUftaOWEhy6",
+    "animeId": 255
+  },
+  {
+    "id": 1531,
+    "title": "โลมีโอ",
+    "artist": "Medkit.z, S.Y.F., ZOUL, Lilpeet, D-Day",
+    "lang": "th",
+    "genre": "Thai Pop / Spotify Hits",
+    "bpm": 129,
+    "mood": "เพลงฮิต Spotify Thailand / ไทโป",
+    "tags": [
+      "SpotifyTH",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/77cffb9057120e5eb9df5b4a61d72f5553f09b85",
+    "audioFallback": "https://p.scdn.co/mp3-preview/77cffb9057120e5eb9df5b4a61d72f5553f09b85",
+    "coverUrl": "https://media.kitsu.app/anime/46140/poster_image/medium-09c31317676fc3251c6543b5936780c1.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/3e6ZmmMHtwiJla27wlR9kO",
+    "animeId": 123
   }
 ];
 
