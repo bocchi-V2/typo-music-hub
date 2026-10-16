@@ -2926,42 +2926,76 @@ function sendUpdatePushNotification(versionTag, songCount) {
   }
 }
 
-// เล่นเสียงผู้หญิงน่ารักพูด "อัปเดตด้วยนะคะ" ด้วย Web Speech Synthesis
+// เล่นเสียงผู้หญิงน่ารักพูด "อัปเดตด้วยนะคะ" — ใช้ไฟล์เสียงจริง update_voice.mp3 เป็นหลัก
+// ถ้าไฟล์โหลดไม่ได้จะ fallback ไปใช้ Web Speech Synthesis
+let _updateVoiceAudio = null;
+
+function getUpdateVoiceAudio() {
+  if (!_updateVoiceAudio) {
+    _updateVoiceAudio = new Audio('update_voice.mp3');
+    _updateVoiceAudio.preload = 'auto';
+    _updateVoiceAudio.volume = 0.9;
+  }
+  return _updateVoiceAudio;
+}
+
+// Pre-load เสียงแจ้งเตือนอัปเดตทันทีตอนเปิดแอป
+try {
+  getUpdateVoiceAudio().load();
+} catch(e) {}
+
 function playUpdateVoiceAlert() {
   try {
-    // ใช้ Web Speech Synthesis API สร้างเสียงผู้หญิงพูดภาษาไทยน่ารักๆ
+    // 1. ลองเล่นไฟล์เสียงจริงก่อน (update_voice.mp3)
+    const audio = getUpdateVoiceAudio();
+    audio.currentTime = 0;
+    audio.volume = 0.9;
+    const playPromise = audio.play();
+
+    if (playPromise && playPromise.then) {
+      playPromise.then(() => {
+        console.log('🎀 เล่นเสียง "อัปเดตด้วยนะคะ" จากไฟล์เสียงจริงสำเร็จ');
+      }).catch(() => {
+        // 2. ถ้าไฟล์เสียงเล่นไม่ได้ ใช้ Speech Synthesis เป็น fallback
+        playUpdateVoiceFallback();
+      });
+    }
+  } catch(e) {
+    // fallback ไป Speech Synthesis
+    playUpdateVoiceFallback();
+  }
+}
+
+// Fallback: ใช้ Web Speech Synthesis ถ้าไฟล์เสียงเล่นไม่ได้
+function playUpdateVoiceFallback() {
+  try {
     if ('speechSynthesis' in window) {
-      // หยุดเสียงอื่นก่อน
       window.speechSynthesis.cancel();
 
       const utterance = new SpeechSynthesisUtterance('อัปเดตด้วยนะคะ');
       utterance.lang = 'th-TH';
-      utterance.rate = 0.95;  // ช้าลงนิดให้น่ารัก
-      utterance.pitch = 1.4;  // เสียงสูงขึ้นให้น่ารัก
+      utterance.rate = 0.95;
+      utterance.pitch = 1.4;
       utterance.volume = 0.85;
 
-      // เลือกเสียงผู้หญิงไทย
       const voices = window.speechSynthesis.getVoices();
-      const thaiFemalVoice = voices.find(v => 
+      const thaiVoice = voices.find(v => 
         (v.lang === 'th-TH' || v.lang === 'th') && 
         (v.name.toLowerCase().includes('female') || v.name.includes('นารี') || v.name.includes('Nari') || !v.name.toLowerCase().includes('male'))
       ) || voices.find(v => v.lang === 'th-TH' || v.lang === 'th');
 
-      if (thaiFemalVoice) {
-        utterance.voice = thaiFemalVoice;
-      }
-
+      if (thaiVoice) utterance.voice = thaiVoice;
       window.speechSynthesis.speak(utterance);
     }
   } catch(e) {
-    console.warn('Voice alert error:', e);
+    console.warn('Voice fallback error:', e);
   }
 }
 
 // โหลด voices เมื่อพร้อม (บาง browser โหลดแบบ async)
 if ('speechSynthesis' in window) {
   window.speechSynthesis.onvoiceschanged = () => {
-    window.speechSynthesis.getVoices(); // cache voices
+    window.speechSynthesis.getVoices();
   };
   try { window.speechSynthesis.getVoices(); } catch(e) {}
 }

@@ -17,7 +17,8 @@ const ASSETS_TO_CACHE = [
   './loading-chibi.jpg',
   './haimiya_yaho.mp3',
   './dice-roll.mp3',
-  './blue_relax.m4a'
+  './blue_relax.m4a',
+  './update_voice.mp3'
 ];
 
 // ติดตั้ง SW: แคชไฟล์ทั้งหมดทันที
