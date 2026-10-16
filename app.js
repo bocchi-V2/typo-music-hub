@@ -2954,12 +2954,13 @@ function startMiniPlayerProgressLoop() {
   }
 }
 
-// Picture-in-Picture Mode
-function togglePictureInPictureMode() {
-  // สำหรับ Android native: ใช้ JavaScript Bridge เรียก PiP ผ่าน Java
-  if (window.AndroidBridge && typeof window.AndroidBridge.enterPiP === 'function') {
+// Picture-in-Picture Mode (รองรับทั้ง Android Native APK, Document PiP บนเบราว์เซอร์ และ Floating Overlay)
+async function togglePictureInPictureMode() {
+  // 1. สำหรับ Android native: ใช้ JavaScript Bridge เรียก PiP ผ่าน Java (ตรวจทั้ง enterPip และ enterPiP)
+  if (window.AndroidBridge && (typeof window.AndroidBridge.enterPip === 'function' || typeof window.AndroidBridge.enterPiP === 'function')) {
     try {
-      window.AndroidBridge.enterPiP();
+      const enterFn = window.AndroidBridge.enterPip || window.AndroidBridge.enterPiP;
+      enterFn.call(window.AndroidBridge);
       showMiniPlayer();
       document.body.classList.add('pip-mode');
       return;
@@ -2968,17 +2969,68 @@ function togglePictureInPictureMode() {
     }
   }
 
-  // สำหรับ Capacitor / WebView
+  // 2. สำหรับเบราว์เซอร์ที่รองรับ Document Picture-in-Picture API (Chrome 116+ Desktop/Android)
+  if ('documentPictureInPicture' in window) {
+    try {
+      if (window.documentPictureInPicture.window) {
+        window.documentPictureInPicture.window.close();
+        return;
+      }
+      const pipWindow = await window.documentPictureInPicture.requestWindow({
+        width: 340,
+        height: 480
+      });
+
+      // คัดลอก style sheets เข้าไปใน pipWindow เพื่อให้ดีไซน์สวยงามครบถ้วน
+      [...document.styleSheets].forEach(styleSheet => {
+        try {
+          if (styleSheet.href) {
+            const link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = styleSheet.href;
+            pipWindow.document.head.appendChild(link);
+          } else if (styleSheet.cssRules) {
+            const style = document.createElement('style');
+            [...styleSheet.cssRules].forEach(rule => {
+              style.appendChild(document.createTextNode(rule.cssText));
+            });
+            pipWindow.document.head.appendChild(style);
+          }
+        } catch (e) {}
+      });
+
+      const fmp = document.getElementById('floating-mini-player');
+      if (fmp) {
+        showMiniPlayer();
+        fmp.style.position = 'static';
+        fmp.style.transform = 'none';
+        fmp.style.width = '100%';
+        pipWindow.document.body.appendChild(fmp);
+      }
+
+      pipWindow.addEventListener('pagehide', () => {
+        if (fmp) {
+          fmp.style.position = '';
+          fmp.style.transform = '';
+          fmp.style.width = '';
+          document.body.appendChild(fmp);
+        }
+      });
+      return;
+    } catch (e) {
+      console.warn('Document PiP request failed:', e);
+    }
+  }
+
+  // 3. สำหรับ Capacitor / WebView
   if (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.App) {
     try {
-      // ย่อหน้าจอเพื่อ trigger Android PiP จาก onUserLeaveHint
       window.Capacitor.Plugins.App.minimizeApp();
     } catch (e) {}
   }
 
-  // Web fallback: แสดง mini-player ลอย
+  // 4. Web fallback: แสดง floating mini-player ลอยในหน้าจอเว็บ
   if (document.body.classList.contains('pip-mode')) {
-    // ออกจาก PiP mode
     document.body.classList.remove('pip-mode');
     closeMiniPlayer();
   } else {
@@ -3200,8 +3252,8 @@ function initSplashScreen() {
 //  ระบบซิงค์เพลง/อนิเมะสดอัตโนมัติ และอัปเดตแอป APK ทับของเดิมได้ 100% ไม่ต้องลบแอปเก่า
 // ============================================
 
-const CURRENT_APP_VERSION = 'v2.20261016.1200';
-const CURRENT_VERSION_CODE = 1792152000;
+const CURRENT_APP_VERSION = 'v2.20261016.22';
+const CURRENT_VERSION_CODE = 1792161000;
 const GITHUB_REPO_OWNER = 'bocchi-V2';
 const GITHUB_REPO_NAME = 'typo-music-hub';
 const GITHUB_PAGES_BASE = 'https://bocchi-v2.github.io/typo-music-hub';

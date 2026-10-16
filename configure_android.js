@@ -106,6 +106,46 @@ if (fs.existsSync(mainActPath)) {
   console.log(`✅ อัปเดต MainActivity.java CURRENT_VERSION_CODE: ${versionCode}`);
 }
 
+// ปรับแต่ง AndroidManifest.xml เพื่อเปิดใช้งาน Picture-in-Picture และเพิ่ม Permissions ที่จำเป็น
+const manifestPath = path.join(__dirname, 'android', 'app', 'src', 'main', 'AndroidManifest.xml');
+if (fs.existsSync(manifestPath)) {
+  let manifest = fs.readFileSync(manifestPath, 'utf8');
+
+  const permissionsToAdd = [
+    '<uses-permission android:name="android.permission.WAKE_LOCK" />',
+    '<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />',
+    '<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />',
+    '<uses-permission android:name="android.permission.INTERNET" />',
+    '<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />'
+  ];
+
+  permissionsToAdd.forEach(p => {
+    if (!manifest.includes(p)) {
+      manifest = manifest.replace('</manifest>', `    ${p}\n</manifest>`);
+    }
+  });
+
+  // เพิ่ม android:supportsPictureInPicture="true" และ resizeableActivity ใน <activity
+  if (!manifest.includes('android:supportsPictureInPicture="true"')) {
+    manifest = manifest.replace(
+      /<activity\b([^>]*)>/,
+      (match, attrs) => {
+        let newAttrs = attrs;
+        if (!newAttrs.includes('android:supportsPictureInPicture')) {
+          newAttrs += ' android:supportsPictureInPicture="true"';
+        }
+        if (!newAttrs.includes('android:resizeableActivity')) {
+          newAttrs += ' android:resizeableActivity="true"';
+        }
+        return `<activity${newAttrs}>`;
+      }
+    );
+    console.log('✅ เพิ่ม android:supportsPictureInPicture="true" ใน AndroidManifest.xml สำเร็จ');
+  }
+
+  fs.writeFileSync(manifestPath, manifest, 'utf8');
+}
+
 // บันทึก .build_version ให้ GitHub Actions ใช้เป็น tag_name ของ Release
 fs.writeFileSync(path.join(__dirname, '.build_version'), versionName, 'utf8');
 console.log(`✅ บันทึก .build_version: ${versionName}`);

@@ -46129,6 +46129,6010 @@ const SONGS = [
     "reason": "ท่อนฮุกติดหูคู่กับท่อนแร็ปสะเทือนใจเรื่องความทรงจำที่ลืมไม่ลง",
     "typoIdea": "ฟิล์มภาพถ่ายเก่าๆ หมุนวนรอบข้อความตัวพิมพ์ดีด"
   }
+,
+  {
+    "id": 1830,
+    "title": "ผิดที่ไว้ใจ",
+    "artist": "MILLI",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000078e96bd0/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9C%E0%B8%B4%E0%B8%94%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A7",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9C%E0%B8%B4%E0%B8%94%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A7%E0%B9%89%E0%B9%83%E0%B8%88%20MILLI",
+    "mood": "sad",
+    "tags": [
+      "เจ็บ",
+      "ทรยศ",
+      "เปลี่ยว"
+    ],
+    "bpm": "กลาง (90 BPM)",
+    "lang": "th",
+    "animeId": 8,
+    "animeMatch": [
+      15,
+      6
+    ],
+    "reason": "เพลง \"ผิดที่ไว้ใจ\" โดย MILLI เข้ากับมู้ด sad ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1831,
+    "title": "กอดได้ไหม",
+    "artist": "Tilly Birds",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000371cdaf5/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%81%E0%B8%AD%E0%B8%94%E0%B9%84%E0%B8%94%E0%B9%89%E0%B9%84%E0%B8%AB",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%AD%E0%B8%94%E0%B9%84%E0%B8%94%E0%B9%89%E0%B9%84%E0%B8%AB%E0%B8%A1%20Tilly%20Birds",
+    "mood": "love",
+    "tags": [
+      "อ้อนรัก",
+      "ใกล้ชิด",
+      "ละมุน"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "th",
+    "animeId": 4,
+    "animeMatch": [
+      4,
+      9
+    ],
+    "reason": "เพลง \"กอดได้ไหม\" โดย Tilly Birds เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1832,
+    "title": "วันนี้วันดี",
+    "artist": "Polycat",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004a723228/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B8%A7%E0%B8%B1",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%94%E0%B8%B5%20Polycat",
+    "mood": "happy",
+    "tags": [
+      "ร่าเริง",
+      "สนุก",
+      "มีสุข"
+    ],
+    "bpm": "เร็ว (120 BPM)",
+    "lang": "th",
+    "animeId": 100,
+    "animeMatch": [
+      5,
+      6
+    ],
+    "reason": "เพลง \"วันนี้วันดี\" โดย Polycat เข้ากับมู้ด happy ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1833,
+    "title": "รักเธอเท่าที่เธอไม่รัก",
+    "artist": "Getsunova",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000a86cd52/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B9%80%E0%B8%97",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B9%80%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A3%E0%B8%B1%E0%B8%81%20Getsunova",
+    "mood": "sad",
+    "tags": [
+      "เจ็บ",
+      "รักข้างเดียว",
+      "คิดถึง"
+    ],
+    "bpm": "กลาง (85 BPM)",
+    "lang": "th",
+    "animeId": 100,
+    "animeMatch": [
+      200,
+      4,
+      2
+    ],
+    "reason": "เพลง \"รักเธอเท่าที่เธอไม่รัก\" โดย Getsunova เข้ากับมู้ด sad ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1834,
+    "title": "ไม่เคยลืม",
+    "artist": "25 Hours",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000001e56602e/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%84%E0%B8%A2%E0%B8%A5%E0%B8%B7",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%84%E0%B8%A2%E0%B8%A5%E0%B8%B7%E0%B8%A1%2025%20Hours",
+    "mood": "sad",
+    "tags": [
+      "จำ",
+      "ทรงจำ",
+      "เศร้า"
+    ],
+    "bpm": "กลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 15,
+    "animeMatch": [
+      200,
+      30,
+      7
+    ],
+    "reason": "เพลง \"ไม่เคยลืม\" โดย 25 Hours เข้ากับมู้ด sad ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1835,
+    "title": "คนที่ถูกรัก",
+    "artist": "Three Man Down",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006778c074/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%96%E0%B8%B9%E0%B8%81",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%96%E0%B8%B9%E0%B8%81%E0%B8%A3%E0%B8%B1%E0%B8%81%20Three%20Man%20Down",
+    "mood": "love",
+    "tags": [
+      "รัก",
+      "สัญญา",
+      "ฟิน"
+    ],
+    "bpm": "กลาง (95 BPM)",
+    "lang": "th",
+    "animeId": 30,
+    "animeMatch": [
+      8,
+      200
+    ],
+    "reason": "เพลง \"คนที่ถูกรัก\" โดย Three Man Down เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1836,
+    "title": "ไม่มีใครรู้",
+    "artist": "BOWKYLION",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000055aa743c/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%84%E0%B8%A3",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B8%B9%E0%B9%89%20BOWKYLION",
+    "mood": "chill",
+    "tags": [
+      "ลึก",
+      "คิดเอง",
+      "เงียบๆ"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 3,
+    "animeMatch": [
+      10,
+      2
+    ],
+    "reason": "เพลง \"ไม่มีใครรู้\" โดย BOWKYLION เข้ากับมู้ด chill ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์มินิมอล Thin สีฟ้าอ่อน ไหลช้าๆ ราวกับลอยอยู่บนน้ำ ผสม grain texture สไตล์ Lo-Fi",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1837,
+    "title": "อีกนานแค่ไหน",
+    "artist": "MEAN",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000031153839/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AD%E0%B8%B5%E0%B8%81%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%84",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%B5%E0%B8%81%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%84%E0%B9%88%E0%B9%84%E0%B8%AB%E0%B8%99%20MEAN",
+    "mood": "sad",
+    "tags": [
+      "รอคอย",
+      "คิดถึง",
+      "ทน"
+    ],
+    "bpm": "กลาง (82 BPM)",
+    "lang": "th",
+    "animeId": 7,
+    "animeMatch": [
+      1,
+      150
+    ],
+    "reason": "เพลง \"อีกนานแค่ไหน\" โดย MEAN เข้ากับมู้ด sad ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1838,
+    "title": "บอกฉันทีว่ายังรักกัน",
+    "artist": "SEASON FIVE",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002388e151/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B5",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%99%20SEASON%20FIVE",
+    "mood": "love",
+    "tags": [
+      "ถาม",
+      "รัก",
+      "มั่นคง"
+    ],
+    "bpm": "กลาง (92 BPM)",
+    "lang": "th",
+    "animeId": 2,
+    "animeMatch": [
+      100,
+      15
+    ],
+    "reason": "เพลง \"บอกฉันทีว่ายังรักกัน\" โดย SEASON FIVE เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1839,
+    "title": "ยิ่งไกลยิ่งใกล้",
+    "artist": "Da Endorphine",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000001949445d/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B9%84%E0%B8%81%E0%B8%A5%E0%B8%A2",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B9%84%E0%B8%81%E0%B8%A5%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B9%83%E0%B8%81%E0%B8%A5%E0%B9%89%20Da%20Endorphine",
+    "mood": "love",
+    "tags": [
+      "ไกล",
+      "คิดถึง",
+      "ผูกพัน"
+    ],
+    "bpm": "ช้า (78 BPM)",
+    "lang": "th",
+    "animeId": 15,
+    "animeMatch": [
+      25,
+      7,
+      6
+    ],
+    "reason": "เพลง \"ยิ่งไกลยิ่งใกล้\" โดย Da Endorphine เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1840,
+    "title": "คือเธอ",
+    "artist": "COCKTAIL",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000070048ba1/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%B7%E0%B8%AD%E0%B9%80%E0%B8%98%E0%B8%AD",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B7%E0%B8%AD%E0%B9%80%E0%B8%98%E0%B8%AD%20COCKTAIL",
+    "mood": "love",
+    "tags": [
+      "รัก",
+      "เธอ",
+      "จริงใจ"
+    ],
+    "bpm": "กลาง (90 BPM)",
+    "lang": "th",
+    "animeId": 7,
+    "animeMatch": [
+      2,
+      25
+    ],
+    "reason": "เพลง \"คือเธอ\" โดย COCKTAIL เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1841,
+    "title": "อยากให้รู้ว่ารักเธอ",
+    "artist": "Potato",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000680c9fa4/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AD%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%A3",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%98%E0%B8%AD%20Potato",
+    "mood": "love",
+    "tags": [
+      "สารภาพ",
+      "รัก",
+      "ซื่อสัตย์"
+    ],
+    "bpm": "กลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 150,
+    "animeMatch": [
+      30,
+      2
+    ],
+    "reason": "เพลง \"อยากให้รู้ว่ารักเธอ\" โดย Potato เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1842,
+    "title": "ผ่าน",
+    "artist": "Atom ชนกันต์",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000694968eb/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9C%E0%B9%88%E0%B8%B2%E0%B8%99",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9C%E0%B9%88%E0%B8%B2%E0%B8%99%20Atom%20%E0%B8%8A%E0%B8%99%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%8C",
+    "mood": "sad",
+    "tags": [
+      "เศร้า",
+      "ผ่านไป",
+      "ปล่อยวาง"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 5,
+    "animeMatch": [
+      30,
+      7,
+      100
+    ],
+    "reason": "เพลง \"ผ่าน\" โดย Atom ชนกันต์ เข้ากับมู้ด sad ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1843,
+    "title": "โปรดเถิดรัก",
+    "artist": "Hugo",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000c1b62c8/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B8%94%E0%B9%80%E0%B8%96%E0%B8%B4%E0%B8%94",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B8%94%E0%B9%80%E0%B8%96%E0%B8%B4%E0%B8%94%E0%B8%A3%E0%B8%B1%E0%B8%81%20Hugo",
+    "mood": "love",
+    "tags": [
+      "ร้องขอ",
+      "รัก",
+      "ละมุน"
+    ],
+    "bpm": "ช้า (65 BPM)",
+    "lang": "th",
+    "animeId": 150,
+    "animeMatch": [
+      50,
+      5
+    ],
+    "reason": "เพลง \"โปรดเถิดรัก\" โดย Hugo เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1844,
+    "title": "คืนข้างแรม",
+    "artist": "ป๊อบ ปองกูล",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002ad99e81/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B9%81",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%A3%E0%B8%A1%20%E0%B8%9B%E0%B9%8A%E0%B8%AD%E0%B8%9A%20%E0%B8%9B%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B9%E0%B8%A5",
+    "mood": "sad",
+    "tags": [
+      "เหงา",
+      "คืน",
+      "คิดถึง"
+    ],
+    "bpm": "ช้า (68 BPM)",
+    "lang": "th",
+    "animeId": 7,
+    "animeMatch": [
+      9,
+      1,
+      30
+    ],
+    "reason": "เพลง \"คืนข้างแรม\" โดย ป๊อบ ปองกูล เข้ากับมู้ด sad ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1845,
+    "title": "ยิ่งไม่รู้ ยิ่งต้องทำ",
+    "artist": "SERIOUS BACON",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000c4d2545/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A3",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A3%E0%B8%B9%E0%B9%89%20%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%B3%20SERIOUS%20BACON",
+    "mood": "hype",
+    "tags": [
+      "กำลังใจ",
+      "สู้",
+      "ลุยเลย"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "th",
+    "animeId": 2,
+    "animeMatch": [
+      9,
+      15
+    ],
+    "reason": "เพลง \"ยิ่งไม่รู้ ยิ่งต้องทำ\" โดย SERIOUS BACON เข้ากับมู้ด hype ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1846,
+    "title": "พูดไม่ค่อยถูก",
+    "artist": "TRINITY",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000024583438/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9E%E0%B8%B9%E0%B8%94%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%84%E0%B9%88",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%B9%E0%B8%94%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%84%E0%B9%88%E0%B8%AD%E0%B8%A2%E0%B8%96%E0%B8%B9%E0%B8%81%20TRINITY",
+    "mood": "love",
+    "tags": [
+      "อ้อน",
+      "ขี้อาย",
+      "น่ารัก"
+    ],
+    "bpm": "กลาง (100 BPM)",
+    "lang": "th",
+    "animeId": 7,
+    "animeMatch": [
+      4,
+      50,
+      9
+    ],
+    "reason": "เพลง \"พูดไม่ค่อยถูก\" โดย TRINITY เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1847,
+    "title": "ให้ฉันดูแลเธอ",
+    "artist": "BIG ASS",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000064c2f27b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%94%E0%B8%B9",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%94%E0%B8%B9%E0%B9%81%E0%B8%A5%E0%B9%80%E0%B8%98%E0%B8%AD%20BIG%20ASS",
+    "mood": "love",
+    "tags": [
+      "ดูแล",
+      "ปกป้อง",
+      "แข็งแกร่ง"
+    ],
+    "bpm": "กลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 9,
+    "animeMatch": [
+      4,
+      9
+    ],
+    "reason": "เพลง \"ให้ฉันดูแลเธอ\" โดย BIG ASS เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1848,
+    "title": "ขอบคุณที่รักกัน",
+    "artist": "Potato",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000462c5109/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%82%E0%B8%AD%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%97%E0%B8%B5",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%82%E0%B8%AD%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%99%20Potato",
+    "mood": "love",
+    "tags": [
+      "ขอบคุณ",
+      "คู่รัก",
+      "อบอุ่น"
+    ],
+    "bpm": "ช้า (76 BPM)",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      3,
+      5,
+      7
+    ],
+    "reason": "เพลง \"ขอบคุณที่รักกัน\" โดย Potato เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1849,
+    "title": "ทั้งที่ผิด ก็ยังรักเธออยู่",
+    "artist": "NUM KALA",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000011057839/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%97%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%9C",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%9C%E0%B8%B4%E0%B8%94%20%E0%B8%81%E0%B9%87%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%AD%E0%B8%A2%E0%B8%B9%E0%B9%88%20NUM%20KALA",
+    "mood": "sad",
+    "tags": [
+      "ผิด",
+      "รัก",
+      "ทนทุกข์"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 20,
+    "animeMatch": [
+      200,
+      100
+    ],
+    "reason": "เพลง \"ทั้งที่ผิด ก็ยังรักเธออยู่\" โดย NUM KALA เข้ากับมู้ด sad ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1850,
+    "title": "พอ",
+    "artist": "SCRUBB",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000df9a35e/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9E%E0%B8%AD",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%AD%20SCRUBB",
+    "mood": "sad",
+    "tags": [
+      "เพียงพอ",
+      "หยุด",
+      "เจ็บ"
+    ],
+    "bpm": "กลาง (85 BPM)",
+    "lang": "th",
+    "animeId": 100,
+    "animeMatch": [
+      30,
+      8,
+      50
+    ],
+    "reason": "เพลง \"พอ\" โดย SCRUBB เข้ากับมู้ด sad ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1851,
+    "title": "เพลงสุดท้าย",
+    "artist": "BODYSLAM",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000008088c4f/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%AA%E0%B8%B8%E0%B8%94%E0%B8%97",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%AA%E0%B8%B8%E0%B8%94%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%A2%20BODYSLAM",
+    "mood": "epic",
+    "tags": [
+      "อำลา",
+      "ยิ่งใหญ่",
+      "ตราตรึง"
+    ],
+    "bpm": "กลาง (95 BPM)",
+    "lang": "th",
+    "animeId": 2,
+    "animeMatch": [
+      150,
+      10
+    ],
+    "reason": "เพลง \"เพลงสุดท้าย\" โดย BODYSLAM เข้ากับมู้ด epic ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Cinematic สีทอง มีแสง Lens Flare ตามตัวอักษร ค่อยๆ ขยายเต็มจอ พร้อม Particle dust ปลิว",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1852,
+    "title": "ข้ามเวลาหาเธอ",
+    "artist": "Tilly Birds",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000065f65aa6/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B9%80%E0%B8%98%E0%B8%AD%20Tilly%20Birds",
+    "mood": "love",
+    "tags": [
+      "ข้ามเวลา",
+      "คิดถึง",
+      "โรแมนติก"
+    ],
+    "bpm": "กลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 6,
+    "animeMatch": [
+      200,
+      30,
+      20
+    ],
+    "reason": "เพลง \"ข้ามเวลาหาเธอ\" โดย Tilly Birds เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1853,
+    "title": "เมื่อคืนนี้",
+    "artist": "Paradox",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000001bc9ac6b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%84%E0%B8%B7%E0%B8%99",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B8%99%E0%B8%B5%E0%B9%89%20Paradox",
+    "mood": "love",
+    "tags": [
+      "คืน",
+      "ความรู้สึก",
+      "ใกล้ชิด"
+    ],
+    "bpm": "กลาง (100 BPM)",
+    "lang": "th",
+    "animeId": 4,
+    "animeMatch": [
+      25,
+      5,
+      2
+    ],
+    "reason": "เพลง \"เมื่อคืนนี้\" โดย Paradox เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1854,
+    "title": "คนมีเสน่ห์",
+    "artist": "Whal & Dolph",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002400daa2/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%99%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%AA%E0%B8%99%E0%B9%88",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%99%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%AA%E0%B8%99%E0%B9%88%E0%B8%AB%E0%B9%8C%20Whal%20%26%20Dolph",
+    "mood": "happy",
+    "tags": [
+      "เสน่ห์",
+      "มั่นใจ",
+      "เก๋"
+    ],
+    "bpm": "เร็ว (115 BPM)",
+    "lang": "th",
+    "animeId": 30,
+    "animeMatch": [
+      6,
+      10,
+      15
+    ],
+    "reason": "เพลง \"คนมีเสน่ห์\" โดย Whal & Dolph เข้ากับมู้ด happy ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1855,
+    "title": "หมดห่วง",
+    "artist": "LUSS",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007f433c5c/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AB%E0%B8%A1%E0%B8%94%E0%B8%AB%E0%B9%88%E0%B8%A7%E0%B8%87",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%A1%E0%B8%94%E0%B8%AB%E0%B9%88%E0%B8%A7%E0%B8%87%20LUSS",
+    "mood": "chill",
+    "tags": [
+      "ไม่ห่วง",
+      "สบาย",
+      "ชิลล์"
+    ],
+    "bpm": "กลาง (90 BPM)",
+    "lang": "th",
+    "animeId": 100,
+    "animeMatch": [
+      8,
+      3
+    ],
+    "reason": "เพลง \"หมดห่วง\" โดย LUSS เข้ากับมู้ด chill ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์มินิมอล Thin สีฟ้าอ่อน ไหลช้าๆ ราวกับลอยอยู่บนน้ำ ผสม grain texture สไตล์ Lo-Fi",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1856,
+    "title": "ไม่หายไปไหน",
+    "artist": "Getsunova",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000436b5c07/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%AB%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%9B",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%AB%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%9B%E0%B9%84%E0%B8%AB%E0%B8%99%20Getsunova",
+    "mood": "love",
+    "tags": [
+      "อยู่ตรงนี้",
+      "มั่นคง",
+      "รัก"
+    ],
+    "bpm": "กลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 150,
+    "animeMatch": [
+      9,
+      30
+    ],
+    "reason": "เพลง \"ไม่หายไปไหน\" โดย Getsunova เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1857,
+    "title": "สิ่งเดียวที่ไม่เปลี่ยน",
+    "artist": "Instinct",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003ec5b8ae/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B8%A2",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B8%A7%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%20Instinct",
+    "mood": "love",
+    "tags": [
+      "มั่นคง",
+      "รัก",
+      "สัญญา"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      2,
+      20,
+      4
+    ],
+    "reason": "เพลง \"สิ่งเดียวที่ไม่เปลี่ยน\" โดย Instinct เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1858,
+    "title": "ลบไม่ได้ช่วยให้ลืม",
+    "artist": "COCKTAIL",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000110cf512/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A5%E0%B8%9A%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%9A%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%A5%E0%B8%B7%E0%B8%A1%20COCKTAIL",
+    "mood": "sad",
+    "tags": [
+      "ลืมไม่ได้",
+      "เศร้า",
+      "จำ"
+    ],
+    "bpm": "กลาง (85 BPM)",
+    "lang": "th",
+    "animeId": 9,
+    "animeMatch": [
+      1,
+      7,
+      9
+    ],
+    "reason": "เพลง \"ลบไม่ได้ช่วยให้ลืม\" โดย COCKTAIL เข้ากับมู้ด sad ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1859,
+    "title": "ที่ว่างข้างๆ ตัว",
+    "artist": "Musketeers",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000936de3b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%82",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B9%86%20%E0%B8%95%E0%B8%B1%E0%B8%A7%20Musketeers",
+    "mood": "love",
+    "tags": [
+      "ข้างกาย",
+      "รัก",
+      "อบอุ่น"
+    ],
+    "bpm": "ช้า (78 BPM)",
+    "lang": "th",
+    "animeId": 4,
+    "animeMatch": [
+      15,
+      8,
+      7
+    ],
+    "reason": "เพลง \"ที่ว่างข้างๆ ตัว\" โดย Musketeers เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1860,
+    "title": "ไม่บอกเธอ",
+    "artist": "Bedroom Audio",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000072cab240/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B9%80%E0%B8%98",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B9%80%E0%B8%98%E0%B8%AD%20Bedroom%20Audio",
+    "mood": "sad",
+    "tags": [
+      "เก็บรัก",
+      "ไม่กล้า",
+      "เจ็บ"
+    ],
+    "bpm": "กลาง (90 BPM)",
+    "lang": "th",
+    "animeId": 8,
+    "animeMatch": [
+      6,
+      2,
+      20
+    ],
+    "reason": "เพลง \"ไม่บอกเธอ\" โดย Bedroom Audio เข้ากับมู้ด sad ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1861,
+    "title": "คิดถึงเธอทุกที",
+    "artist": "Labanoon",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000001e5b49e0/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%96%E0%B8%B6%E0%B8%87%E0%B9%80%E0%B8%98",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%96%E0%B8%B6%E0%B8%87%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%97%E0%B8%B8%E0%B8%81%E0%B8%97%E0%B8%B5%20Labanoon",
+    "mood": "love",
+    "tags": [
+      "คิดถึง",
+      "ทุกวัน",
+      "รัก"
+    ],
+    "bpm": "เร็ว (118 BPM)",
+    "lang": "th",
+    "animeId": 10,
+    "animeMatch": [
+      15,
+      150
+    ],
+    "reason": "เพลง \"คิดถึงเธอทุกที\" โดย Labanoon เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1862,
+    "title": "สบตา",
+    "artist": "Clash",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000019cd2980/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%9A%E0%B8%95%E0%B8%B2",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%9A%E0%B8%95%E0%B8%B2%20Clash",
+    "mood": "love",
+    "tags": [
+      "สบตา",
+      "แรกพบ",
+      "หัวใจ"
+    ],
+    "bpm": "เร็ว (120 BPM)",
+    "lang": "th",
+    "animeId": 5,
+    "animeMatch": [
+      9,
+      5
+    ],
+    "reason": "เพลง \"สบตา\" โดย Clash เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1863,
+    "title": "คนเดิม",
+    "artist": "SILLY FOOLS",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000079fe7606/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%99%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%A1",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%99%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%A1%20SILLY%20FOOLS",
+    "mood": "sad",
+    "tags": [
+      "คนเดิม",
+      "เปลี่ยน",
+      "ผิดหวัง"
+    ],
+    "bpm": "กลาง (100 BPM)",
+    "lang": "th",
+    "animeId": 25,
+    "animeMatch": [
+      7,
+      30
+    ],
+    "reason": "เพลง \"คนเดิม\" โดย SILLY FOOLS เข้ากับมู้ด sad ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1864,
+    "title": "ดอกไม้ให้คุณ",
+    "artist": "Palmy",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000031e71065/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B9%83%E0%B8%AB",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%84%E0%B8%B8%E0%B8%93%20Palmy",
+    "mood": "love",
+    "tags": [
+      "ดอกไม้",
+      "ให้",
+      "น่ารัก"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "th",
+    "animeId": 4,
+    "animeMatch": [
+      10,
+      30
+    ],
+    "reason": "เพลง \"ดอกไม้ให้คุณ\" โดย Palmy เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1865,
+    "title": "ยิ่งรักยิ่งเจ็บ",
+    "artist": "ETC",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004af67906/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%A2",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B9%80%E0%B8%88%E0%B9%87%E0%B8%9A%20ETC",
+    "mood": "sad",
+    "tags": [
+      "เจ็บ",
+      "รัก",
+      "ทนไม่ไหว"
+    ],
+    "bpm": "กลาง (92 BPM)",
+    "lang": "th",
+    "animeId": 2,
+    "animeMatch": [
+      9,
+      7,
+      50
+    ],
+    "reason": "เพลง \"ยิ่งรักยิ่งเจ็บ\" โดย ETC เข้ากับมู้ด sad ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1866,
+    "title": "ฝืน",
+    "artist": "KLEAR",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000001c70e3f6/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9D%E0%B8%B7%E0%B8%99",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9D%E0%B8%B7%E0%B8%99%20KLEAR",
+    "mood": "sad",
+    "tags": [
+      "ฝืน",
+      "ทนทุกข์",
+      "รักเจ็บ"
+    ],
+    "bpm": "กลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 150,
+    "animeMatch": [
+      7,
+      25,
+      50
+    ],
+    "reason": "เพลง \"ฝืน\" โดย KLEAR เข้ากับมู้ด sad ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1867,
+    "title": "เวลาเดิน",
+    "artist": "Tattoo Colour",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004f032412/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%99",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%99%20Tattoo%20Colour",
+    "mood": "chill",
+    "tags": [
+      "เวลา",
+      "เดิน",
+      "ชิลล์"
+    ],
+    "bpm": "กลาง (95 BPM)",
+    "lang": "th",
+    "animeId": 20,
+    "animeMatch": [
+      2,
+      20
+    ],
+    "reason": "เพลง \"เวลาเดิน\" โดย Tattoo Colour เข้ากับมู้ด chill ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์มินิมอล Thin สีฟ้าอ่อน ไหลช้าๆ ราวกับลอยอยู่บนน้ำ ผสม grain texture สไตล์ Lo-Fi",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1868,
+    "title": "ใจเย็นเย็น",
+    "artist": "MEAN",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003031796e/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%83%E0%B8%88%E0%B9%80%E0%B8%A2%E0%B9%87%E0%B8%99%E0%B9%80%E0%B8%A2",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%83%E0%B8%88%E0%B9%80%E0%B8%A2%E0%B9%87%E0%B8%99%E0%B9%80%E0%B8%A2%E0%B9%87%E0%B8%99%20MEAN",
+    "mood": "chill",
+    "tags": [
+      "สบายๆ",
+      "ใจเย็น",
+      "ชิลล์"
+    ],
+    "bpm": "กลาง (90 BPM)",
+    "lang": "th",
+    "animeId": 6,
+    "animeMatch": [
+      2,
+      10
+    ],
+    "reason": "เพลง \"ใจเย็นเย็น\" โดย MEAN เข้ากับมู้ด chill ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์มินิมอล Thin สีฟ้าอ่อน ไหลช้าๆ ราวกับลอยอยู่บนน้ำ ผสม grain texture สไตล์ Lo-Fi",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1869,
+    "title": "รักคงยังไม่พอ",
+    "artist": "Crescendo",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000483b3a62/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%84%E0%B8%87%E0%B8%A2%E0%B8%B1%E0%B8%87",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%84%E0%B8%87%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%9E%E0%B8%AD%20Crescendo",
+    "mood": "sad",
+    "tags": [
+      "ไม่พอ",
+      "รัก",
+      "อ่อนล้า"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      6,
+      7,
+      3
+    ],
+    "reason": "เพลง \"รักคงยังไม่พอ\" โดย Crescendo เข้ากับมู้ด sad ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1870,
+    "title": "ถามจริง ไม่ได้โกรธ",
+    "artist": "The TOYS",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000275f404d/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%96%E0%B8%B2%E0%B8%A1%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%87%20",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%96%E0%B8%B2%E0%B8%A1%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%87%20%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%E0%B9%82%E0%B8%81%E0%B8%A3%E0%B8%98%20The%20TOYS",
+    "mood": "love",
+    "tags": [
+      "ถาม",
+      "น่ารัก",
+      "อ้อน"
+    ],
+    "bpm": "กลาง (100 BPM)",
+    "lang": "th",
+    "animeId": 3,
+    "animeMatch": [
+      3,
+      10,
+      2
+    ],
+    "reason": "เพลง \"ถามจริง ไม่ได้โกรธ\" โดย The TOYS เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1871,
+    "title": "ไม่เดียงสา",
+    "artist": "SILLY FOOLS",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002206168d/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B8%87",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%AA%E0%B8%B2%20SILLY%20FOOLS",
+    "mood": "hype",
+    "tags": [
+      "ร็อค",
+      "มัน",
+      "กระชากใจ"
+    ],
+    "bpm": "เร็ว (140 BPM)",
+    "lang": "th",
+    "animeId": 20,
+    "animeMatch": [
+      1,
+      150
+    ],
+    "reason": "เพลง \"ไม่เดียงสา\" โดย SILLY FOOLS เข้ากับมู้ด hype ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1872,
+    "title": "สิ่งที่ตามหา",
+    "artist": "SCRUBB",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002e4515bd/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%95",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%AB%E0%B8%B2%20SCRUBB",
+    "mood": "love",
+    "tags": [
+      "ตามหา",
+      "ค้นพบ",
+      "รัก"
+    ],
+    "bpm": "กลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 8,
+    "animeMatch": [
+      9,
+      15
+    ],
+    "reason": "เพลง \"สิ่งที่ตามหา\" โดย SCRUBB เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1873,
+    "title": "ฝันดี",
+    "artist": "BOWKYLION",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007d984ad2/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9D%E0%B8%B1%E0%B8%99%E0%B8%94%E0%B8%B5",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9D%E0%B8%B1%E0%B8%99%E0%B8%94%E0%B8%B5%20BOWKYLION",
+    "mood": "chill",
+    "tags": [
+      "ราตรี",
+      "ฝัน",
+      "นุ่ม"
+    ],
+    "bpm": "ช้า (68 BPM)",
+    "lang": "th",
+    "animeId": 100,
+    "animeMatch": [
+      9,
+      4
+    ],
+    "reason": "เพลง \"ฝันดี\" โดย BOWKYLION เข้ากับมู้ด chill ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์มินิมอล Thin สีฟ้าอ่อน ไหลช้าๆ ราวกับลอยอยู่บนน้ำ ผสม grain texture สไตล์ Lo-Fi",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1874,
+    "title": "ฉันรักเธอ",
+    "artist": "COCKTAIL",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000da3bf57/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%98",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%98%E0%B8%AD%20COCKTAIL",
+    "mood": "love",
+    "tags": [
+      "สารภาพ",
+      "รัก",
+      "ตรงไปตรงมา"
+    ],
+    "bpm": "กลาง (92 BPM)",
+    "lang": "th",
+    "animeId": 50,
+    "animeMatch": [
+      15,
+      5,
+      3
+    ],
+    "reason": "เพลง \"ฉันรักเธอ\" โดย COCKTAIL เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1875,
+    "title": "ปลิว",
+    "artist": "PALMY x MINDSET",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002a214c92/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9B%E0%B8%A5%E0%B8%B4%E0%B8%A7",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9B%E0%B8%A5%E0%B8%B4%E0%B8%A7%20PALMY%20x%20MINDSET",
+    "mood": "chill",
+    "tags": [
+      "ลอย",
+      "เบาๆ",
+      "ปลิว"
+    ],
+    "bpm": "กลาง (95 BPM)",
+    "lang": "th",
+    "animeId": 200,
+    "animeMatch": [
+      25,
+      7
+    ],
+    "reason": "เพลง \"ปลิว\" โดย PALMY x MINDSET เข้ากับมู้ด chill ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์มินิมอล Thin สีฟ้าอ่อน ไหลช้าๆ ราวกับลอยอยู่บนน้ำ ผสม grain texture สไตล์ Lo-Fi",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1876,
+    "title": "ลมหายใจ",
+    "artist": "SEASON FIVE",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000074e0bf6b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A5%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A2%E0%B9%83%E0%B8%88",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A2%E0%B9%83%E0%B8%88%20SEASON%20FIVE",
+    "mood": "love",
+    "tags": [
+      "หายใจ",
+      "ใกล้ชิด",
+      "อบอุ่น"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "th",
+    "animeId": 3,
+    "animeMatch": [
+      9,
+      150,
+      25
+    ],
+    "reason": "เพลง \"ลมหายใจ\" โดย SEASON FIVE เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1877,
+    "title": "THE GREATEST",
+    "artist": "Billie Eilish",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000513d8cb/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=THE%20GREA",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/THE%20GREATEST%20Billie%20Eilish",
+    "mood": "sad",
+    "tags": [
+      "devotion",
+      "epic",
+      "emotional"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "en",
+    "animeId": 25,
+    "animeMatch": [
+      9,
+      100,
+      10
+    ],
+    "reason": "\"THE GREATEST\" by Billie Eilish brings a sad atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1878,
+    "title": "Levii's Jeans",
+    "artist": "Beyoncé ft. Post Malone",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000265f04d5/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Levii's%20",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Levii's%20Jeans%20Beyonc%C3%A9%20ft.%20Post%20Malone",
+    "mood": "chill",
+    "tags": [
+      "country",
+      "vibe",
+      "relaxed"
+    ],
+    "bpm": "กลาง (90 BPM)",
+    "lang": "en",
+    "animeId": 1,
+    "animeMatch": [
+      5,
+      25
+    ],
+    "reason": "\"Levii's Jeans\" by Beyoncé ft. Post Malone brings a chill atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์มินิมอล Thin สีฟ้าอ่อน ไหลช้าๆ ราวกับลอยอยู่บนน้ำ ผสม grain texture สไตล์ Lo-Fi",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1879,
+    "title": "TEXAS HOLD 'EM",
+    "artist": "Beyoncé",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004784031a/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=TEXAS%20HO",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/TEXAS%20HOLD%20'EM%20Beyonc%C3%A9",
+    "mood": "happy",
+    "tags": [
+      "country",
+      "dance",
+      "anthem"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "en",
+    "animeId": 5,
+    "animeMatch": [
+      4,
+      3
+    ],
+    "reason": "\"TEXAS HOLD 'EM\" by Beyoncé brings a happy atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1880,
+    "title": "HOT TO GO!",
+    "artist": "Chappell Roan",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002a1663a6/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=HOT%20TO%20G",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/HOT%20TO%20GO!%20Chappell%20Roan",
+    "mood": "hype",
+    "tags": [
+      "dance",
+      "anthem",
+      "party"
+    ],
+    "bpm": "เร็ว (135 BPM)",
+    "lang": "en",
+    "animeId": 6,
+    "animeMatch": [
+      4,
+      15,
+      3
+    ],
+    "reason": "\"HOT TO GO!\" by Chappell Roan brings a hype atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1881,
+    "title": "Fortnight",
+    "artist": "Taylor Swift ft. Post Malone",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000077e7f12f/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Fortnigh",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Fortnight%20Taylor%20Swift%20ft.%20Post%20Malone",
+    "mood": "sad",
+    "tags": [
+      "longing",
+      "haunting",
+      "reflective"
+    ],
+    "bpm": "กลาง (95 BPM)",
+    "lang": "en",
+    "animeId": 50,
+    "animeMatch": [
+      15,
+      100,
+      25
+    ],
+    "reason": "\"Fortnight\" by Taylor Swift ft. Post Malone brings a sad atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1882,
+    "title": "I Can Do It With a Broken Heart",
+    "artist": "Taylor Swift",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000007306323/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=I%20Can%20Do",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/I%20Can%20Do%20It%20With%20a%20Broken%20Heart%20Taylor%20Swift",
+    "mood": "sad",
+    "tags": [
+      "resilience",
+      "mask",
+      "bittersweet"
+    ],
+    "bpm": "เร็ว (125 BPM)",
+    "lang": "en",
+    "animeId": 2,
+    "animeMatch": [
+      2,
+      200
+    ],
+    "reason": "\"I Can Do It With a Broken Heart\" by Taylor Swift brings a sad atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1883,
+    "title": "Summertime Sadness",
+    "artist": "Lana Del Rey",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004f06febe/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Summerti",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Summertime%20Sadness%20Lana%20Del%20Rey",
+    "mood": "sad",
+    "tags": [
+      "nostalgic",
+      "dreamy",
+      "melancholic"
+    ],
+    "bpm": "กลาง (100 BPM)",
+    "lang": "en",
+    "animeId": 30,
+    "animeMatch": [
+      9,
+      50,
+      200
+    ],
+    "reason": "\"Summertime Sadness\" by Lana Del Rey brings a sad atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1884,
+    "title": "A Thousand Years",
+    "artist": "Christina Perri",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004dcfafc0/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=A%20Thousa",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/A%20Thousand%20Years%20Christina%20Perri",
+    "mood": "love",
+    "tags": [
+      "wedding",
+      "eternal",
+      "twilight"
+    ],
+    "bpm": "ช้า (66 BPM)",
+    "lang": "en",
+    "animeId": 150,
+    "animeMatch": [
+      6,
+      20,
+      3
+    ],
+    "reason": "\"A Thousand Years\" by Christina Perri brings a love atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1885,
+    "title": "good 4 u",
+    "artist": "Olivia Rodrigo",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003ed2ecf2/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=good%204%20u",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/good%204%20u%20Olivia%20Rodrigo",
+    "mood": "hype",
+    "tags": [
+      "angry",
+      "punk",
+      "revenge"
+    ],
+    "bpm": "เร็ว (166 BPM)",
+    "lang": "en",
+    "animeId": 9,
+    "animeMatch": [
+      20,
+      200,
+      30
+    ],
+    "reason": "\"good 4 u\" by Olivia Rodrigo brings a hype atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1886,
+    "title": "Don't Start Now",
+    "artist": "Dua Lipa",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000296cc7e6/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Don't%20St",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Don't%20Start%20Now%20Dua%20Lipa",
+    "mood": "happy",
+    "tags": [
+      "disco",
+      "dance",
+      "moving-on"
+    ],
+    "bpm": "เร็ว (124 BPM)",
+    "lang": "en",
+    "animeId": 7,
+    "animeMatch": [
+      25,
+      7
+    ],
+    "reason": "\"Don't Start Now\" by Dua Lipa brings a happy atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1887,
+    "title": "Houdini",
+    "artist": "Dua Lipa",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007e0a7ccc/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Houdini",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Houdini%20Dua%20Lipa",
+    "mood": "happy",
+    "tags": [
+      "magic",
+      "dance",
+      "pop"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "en",
+    "animeId": 200,
+    "animeMatch": [
+      200,
+      20,
+      6
+    ],
+    "reason": "\"Houdini\" by Dua Lipa brings a happy atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1888,
+    "title": "Arcade",
+    "artist": "Duncan Laurence",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000795ae3a/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Arcade",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Arcade%20Duncan%20Laurence",
+    "mood": "sad",
+    "tags": [
+      "loss",
+      "bittersweet",
+      "cinematic"
+    ],
+    "bpm": "กลาง (95 BPM)",
+    "lang": "en",
+    "animeId": 30,
+    "animeMatch": [
+      15,
+      20
+    ],
+    "reason": "\"Arcade\" by Duncan Laurence brings a sad atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1889,
+    "title": "Someone You Loved",
+    "artist": "Lewis Capaldi",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000046b048d9/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Someone%20",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Someone%20You%20Loved%20Lewis%20Capaldi",
+    "mood": "sad",
+    "tags": [
+      "loss",
+      "ballad",
+      "emotional"
+    ],
+    "bpm": "เร็ว (110 BPM)",
+    "lang": "en",
+    "animeId": 8,
+    "animeMatch": [
+      25,
+      5
+    ],
+    "reason": "\"Someone You Loved\" by Lewis Capaldi brings a sad atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1890,
+    "title": "Before You Go",
+    "artist": "Lewis Capaldi",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000b24cc00/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Before%20Y",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Before%20You%20Go%20Lewis%20Capaldi",
+    "mood": "sad",
+    "tags": [
+      "regret",
+      "mental-health",
+      "raw"
+    ],
+    "bpm": "เร็ว (112 BPM)",
+    "lang": "en",
+    "animeId": 30,
+    "animeMatch": [
+      10,
+      3,
+      20
+    ],
+    "reason": "\"Before You Go\" by Lewis Capaldi brings a sad atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1891,
+    "title": "Chandelier",
+    "artist": "Sia",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000020af8152/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Chandeli",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Chandelier%20Sia",
+    "mood": "epic",
+    "tags": [
+      "raw",
+      "powerful",
+      "dance"
+    ],
+    "bpm": "กลาง (83 BPM)",
+    "lang": "en",
+    "animeId": 10,
+    "animeMatch": [
+      7,
+      30,
+      8
+    ],
+    "reason": "\"Chandelier\" by Sia brings a epic atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Cinematic สีทอง มีแสง Lens Flare ตามตัวอักษร ค่อยๆ ขยายเต็มจอ พร้อม Particle dust ปลิว",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1892,
+    "title": "Let Her Go",
+    "artist": "Passenger",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006082a3a2/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Let%20Her%20",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Let%20Her%20Go%20Passenger",
+    "mood": "sad",
+    "tags": [
+      "loss",
+      "realization",
+      "acoustic"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "en",
+    "animeId": 15,
+    "animeMatch": [
+      6,
+      1,
+      5
+    ],
+    "reason": "\"Let Her Go\" by Passenger brings a sad atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1893,
+    "title": "Apologize",
+    "artist": "OneRepublic",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000519818ce/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Apologiz",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Apologize%20OneRepublic",
+    "mood": "sad",
+    "tags": [
+      "regret",
+      "too-late",
+      "piano"
+    ],
+    "bpm": "ช้า (58 BPM)",
+    "lang": "en",
+    "animeId": 8,
+    "animeMatch": [
+      2,
+      50,
+      5
+    ],
+    "reason": "\"Apologize\" by OneRepublic brings a sad atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1894,
+    "title": "Reckless",
+    "artist": "Madison Beer",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006683ed95/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Reckless",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Reckless%20Madison%20Beer",
+    "mood": "love",
+    "tags": [
+      "vulnerable",
+      "pop",
+      "emotional"
+    ],
+    "bpm": "กลาง (98 BPM)",
+    "lang": "en",
+    "animeId": 25,
+    "animeMatch": [
+      100,
+      2,
+      5
+    ],
+    "reason": "\"Reckless\" by Madison Beer brings a love atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1895,
+    "title": "505",
+    "artist": "Arctic Monkeys",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000346b70aa/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=505",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/505%20Arctic%20Monkeys",
+    "mood": "sad",
+    "tags": [
+      "longing",
+      "rock",
+      "intense"
+    ],
+    "bpm": "กลาง (93 BPM)",
+    "lang": "en",
+    "animeId": 100,
+    "animeMatch": [
+      8,
+      150
+    ],
+    "reason": "\"505\" by Arctic Monkeys brings a sad atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1896,
+    "title": "Do I Wanna Know?",
+    "artist": "Arctic Monkeys",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007293429b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Do%20I%20Wan",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Do%20I%20Wanna%20Know%3F%20Arctic%20Monkeys",
+    "mood": "chill",
+    "tags": [
+      "desire",
+      "rock",
+      "seductive"
+    ],
+    "bpm": "ช้า (85 BPM)",
+    "lang": "en",
+    "animeId": 15,
+    "animeMatch": [
+      25,
+      5
+    ],
+    "reason": "\"Do I Wanna Know?\" by Arctic Monkeys brings a chill atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์มินิมอล Thin สีฟ้าอ่อน ไหลช้าๆ ราวกับลอยอยู่บนน้ำ ผสม grain texture สไตล์ Lo-Fi",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1897,
+    "title": "Clarity",
+    "artist": "Zedd ft. Foxes",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000056363abc/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Clarity",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Clarity%20Zedd%20ft.%20Foxes",
+    "mood": "epic",
+    "tags": [
+      "EDM",
+      "emotional",
+      "powerful"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "en",
+    "animeId": 200,
+    "animeMatch": [
+      6,
+      20
+    ],
+    "reason": "\"Clarity\" by Zedd ft. Foxes brings a epic atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Cinematic สีทอง มีแสง Lens Flare ตามตัวอักษร ค่อยๆ ขยายเต็มจอ พร้อม Particle dust ปลิว",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1898,
+    "title": "Titanium",
+    "artist": "David Guetta ft. Sia",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005f7a4816/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Titanium",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Titanium%20David%20Guetta%20ft.%20Sia",
+    "mood": "hype",
+    "tags": [
+      "powerful",
+      "EDM",
+      "anthem"
+    ],
+    "bpm": "เร็ว (126 BPM)",
+    "lang": "en",
+    "animeId": 7,
+    "animeMatch": [
+      25,
+      6,
+      2
+    ],
+    "reason": "\"Titanium\" by David Guetta ft. Sia brings a hype atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1899,
+    "title": "Faded",
+    "artist": "Alan Walker",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000bbe0e8a/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Faded",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Faded%20Alan%20Walker",
+    "mood": "sad",
+    "tags": [
+      "EDM",
+      "lost",
+      "atmospheric"
+    ],
+    "bpm": "เร็ว (90 BPM)",
+    "lang": "en",
+    "animeId": 5,
+    "animeMatch": [
+      30,
+      200,
+      100
+    ],
+    "reason": "\"Faded\" by Alan Walker brings a sad atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1900,
+    "title": "Alone",
+    "artist": "Alan Walker",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007855495d/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Alone",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Alone%20Alan%20Walker",
+    "mood": "sad",
+    "tags": [
+      "EDM",
+      "lonely",
+      "dark"
+    ],
+    "bpm": "เร็ว (97 BPM)",
+    "lang": "en",
+    "animeId": 25,
+    "animeMatch": [
+      9,
+      100
+    ],
+    "reason": "\"Alone\" by Alan Walker brings a sad atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1901,
+    "title": "Darkside",
+    "artist": "Alan Walker",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006a758bb1/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Darkside",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Darkside%20Alan%20Walker",
+    "mood": "epic",
+    "tags": [
+      "dark",
+      "EDM",
+      "journey"
+    ],
+    "bpm": "เร็ว (85 BPM)",
+    "lang": "en",
+    "animeId": 5,
+    "animeMatch": [
+      150,
+      6
+    ],
+    "reason": "\"Darkside\" by Alan Walker brings a epic atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Cinematic สีทอง มีแสง Lens Flare ตามตัวอักษร ค่อยๆ ขยายเต็มจอ พร้อม Particle dust ปลิว",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1902,
+    "title": "On My Way",
+    "artist": "Alan Walker",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000032599682/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=On%20My%20Wa",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/On%20My%20Way%20Alan%20Walker",
+    "mood": "hype",
+    "tags": [
+      "adventure",
+      "EDM",
+      "gaming"
+    ],
+    "bpm": "เร็ว (174 BPM)",
+    "lang": "en",
+    "animeId": 5,
+    "animeMatch": [
+      150,
+      2
+    ],
+    "reason": "\"On My Way\" by Alan Walker brings a hype atmosphere that perfectly complements anime scenes for typography edits",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1903,
+    "title": "勇者 (Yuusha)",
+    "artist": "YOASOBI",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000032fd5c3e/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E5%8B%87%E8%80%85%20(Yuus",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E5%8B%87%E8%80%85%20(Yuusha)%20YOASOBI",
+    "mood": "hype",
+    "tags": [
+      "frieren",
+      "hero",
+      "epic"
+    ],
+    "bpm": "เร็ว (136 BPM)",
+    "lang": "jp",
+    "animeId": 80,
+    "animeMatch": [
+      40,
+      9
+    ],
+    "reason": "\"勇者 (Yuusha)\" (YOASOBI) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด hype ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1904,
+    "title": "夜に駆ける (Racing into the Night)",
+    "artist": "YOASOBI",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000534a38e7/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E5%A4%9C%E3%81%AB%E9%A7%86%E3%81%91%E3%82%8B%20(R",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E5%A4%9C%E3%81%AB%E9%A7%86%E3%81%91%E3%82%8B%20(Racing%20into%20the%20Night)%20YOASOBI",
+    "mood": "hype",
+    "tags": [
+      "night",
+      "running",
+      "iconic"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "jp",
+    "animeId": 100,
+    "animeMatch": [
+      25,
+      40,
+      80
+    ],
+    "reason": "\"夜に駆ける (Racing into the Night)\" (YOASOBI) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด hype ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1905,
+    "title": "群青 (Gunjou)",
+    "artist": "YOASOBI",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006db18aab/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E7%BE%A4%E9%9D%92%20(Gunj",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E7%BE%A4%E9%9D%92%20(Gunjou)%20YOASOBI",
+    "mood": "hype",
+    "tags": [
+      "blue",
+      "inspiring",
+      "youth"
+    ],
+    "bpm": "เร็ว (131 BPM)",
+    "lang": "jp",
+    "animeId": 5,
+    "animeMatch": [
+      6,
+      1,
+      17
+    ],
+    "reason": "\"群青 (Gunjou)\" (YOASOBI) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด hype ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1906,
+    "title": "祝福 (Shukufuku)",
+    "artist": "YOASOBI",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000007699d2/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E7%A5%9D%E7%A6%8F%20(Shuk",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E7%A5%9D%E7%A6%8F%20(Shukufuku)%20YOASOBI",
+    "mood": "epic",
+    "tags": [
+      "gundam",
+      "blessing",
+      "majestic"
+    ],
+    "bpm": "เร็ว (138 BPM)",
+    "lang": "jp",
+    "animeId": 80,
+    "animeMatch": [
+      8,
+      1
+    ],
+    "reason": "\"祝福 (Shukufuku)\" (YOASOBI) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด epic ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Cinematic สีทอง มีแสง Lens Flare ตามตัวอักษร ค่อยๆ ขยายเต็มจอ พร้อม Particle dust ปลิว",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1907,
+    "title": "怪獣の花唄 (Kaijuu no Hanautai)",
+    "artist": "Vaundy",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000053e0eb37/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E6%80%AA%E7%8D%A3%E3%81%AE%E8%8A%B1%E5%94%84%20(K",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E6%80%AA%E7%8D%A3%E3%81%AE%E8%8A%B1%E5%94%84%20(Kaijuu%20no%20Hanautai)%20Vaundy",
+    "mood": "hype",
+    "tags": [
+      "monster",
+      "rock",
+      "catchy"
+    ],
+    "bpm": "เร็ว (142 BPM)",
+    "lang": "jp",
+    "animeId": 150,
+    "animeMatch": [
+      40,
+      1
+    ],
+    "reason": "\"怪獣の花唄 (Kaijuu no Hanautai)\" (Vaundy) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด hype ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1908,
+    "title": "花になって (Hana ni Natte)",
+    "artist": "Ryokuoushoku Shakai",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005c235248/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E8%8A%B1%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%A6%20(H",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E8%8A%B1%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%A6%20(Hana%20ni%20Natte)%20Ryokuoushoku%20Shakai",
+    "mood": "love",
+    "tags": [
+      "flower",
+      "sweet",
+      "warm"
+    ],
+    "bpm": "กลาง (98 BPM)",
+    "lang": "jp",
+    "animeId": 9,
+    "animeMatch": [
+      10,
+      60
+    ],
+    "reason": "\"花になって (Hana ni Natte)\" (Ryokuoushoku Shakai) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด love ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1909,
+    "title": "可愛くてごめん (Kawaikute Gomen)",
+    "artist": "HoneyWorks",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005cdc1e37/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E5%8F%AF%E6%84%9B%E3%81%8F%E3%81%A6%E3%81%94%E3%82%81%E3%82%93%20",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E5%8F%AF%E6%84%9B%E3%81%8F%E3%81%A6%E3%81%94%E3%82%81%E3%82%93%20(Kawaikute%20Gomen)%20HoneyWorks",
+    "mood": "happy",
+    "tags": [
+      "cute",
+      "apology",
+      "sweet"
+    ],
+    "bpm": "เร็ว (150 BPM)",
+    "lang": "jp",
+    "animeId": 50,
+    "animeMatch": [
+      1,
+      20,
+      2
+    ],
+    "reason": "\"可愛くてごめん (Kawaikute Gomen)\" (HoneyWorks) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด happy ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1910,
+    "title": "ピースサイン (Peace Sign)",
+    "artist": "Kenshi Yonezu",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000015598409/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%83%94%E3%83%BC%E3%82%B9%E3%82%B5%E3%82%A4%E3%83%B3%20(",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E3%83%94%E3%83%BC%E3%82%B9%E3%82%B5%E3%82%A4%E3%83%B3%20(Peace%20Sign)%20Kenshi%20Yonezu",
+    "mood": "hype",
+    "tags": [
+      "hero",
+      "academia",
+      "inspiring"
+    ],
+    "bpm": "เร็ว (154 BPM)",
+    "lang": "jp",
+    "animeId": 60,
+    "animeMatch": [
+      20,
+      10,
+      11
+    ],
+    "reason": "\"ピースサイン (Peace Sign)\" (Kenshi Yonezu) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด hype ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1911,
+    "title": "打上花火 (Uchiage Hanabi)",
+    "artist": "DAOKO × Kenshi Yonezu",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000048ff2e68/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E6%89%93%E4%B8%8A%E8%8A%B1%E7%81%AB%20(Uc",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E6%89%93%E4%B8%8A%E8%8A%B1%E7%81%AB%20(Uchiage%20Hanabi)%20DAOKO%20%C3%97%20Kenshi%20Yonezu",
+    "mood": "love",
+    "tags": [
+      "fireworks",
+      "summer",
+      "nostalgic"
+    ],
+    "bpm": "กลาง (96 BPM)",
+    "lang": "jp",
+    "animeId": 10,
+    "animeMatch": [
+      200,
+      40,
+      25
+    ],
+    "reason": "\"打上花火 (Uchiage Hanabi)\" (DAOKO × Kenshi Yonezu) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด love ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1912,
+    "title": "死ぬのがいいわ (Full Version)",
+    "artist": "Fujii Kaze",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000626ba260/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E6%AD%BB%E3%81%AC%E3%81%AE%E3%81%8C%E3%81%84%E3%81%84%E3%82%8F%20",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E6%AD%BB%E3%81%AC%E3%81%AE%E3%81%8C%E3%81%84%E3%81%84%E3%82%8F%20(Full%20Version)%20Fujii%20Kaze",
+    "mood": "love",
+    "tags": [
+      "romantic",
+      "jazz",
+      "retro"
+    ],
+    "bpm": "กลาง (100 BPM)",
+    "lang": "jp",
+    "animeId": 30,
+    "animeMatch": [
+      1,
+      15,
+      25
+    ],
+    "reason": "\"死ぬのがいいわ (Full Version)\" (Fujii Kaze) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด love ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1913,
+    "title": "きらり (Kirari)",
+    "artist": "Fujii Kaze",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000079178c4b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%81%8D%E3%82%89%E3%82%8A%20(Kir",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E3%81%8D%E3%82%89%E3%82%8A%20(Kirari)%20Fujii%20Kaze",
+    "mood": "happy",
+    "tags": [
+      "sparkle",
+      "summer",
+      "catchy"
+    ],
+    "bpm": "เร็ว (108 BPM)",
+    "lang": "jp",
+    "animeId": 3,
+    "animeMatch": [
+      200,
+      25
+    ],
+    "reason": "\"きらり (Kirari)\" (Fujii Kaze) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด happy ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1914,
+    "title": "ドラマツルギー (Dramaturgy)",
+    "artist": "Eve",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000717a0e9e/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%83%89%E3%83%A9%E3%83%9E%E3%83%84%E3%83%AB%E3%82%AE%E3%83%BC%20",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E3%83%89%E3%83%A9%E3%83%9E%E3%83%84%E3%83%AB%E3%82%AE%E3%83%BC%20(Dramaturgy)%20Eve",
+    "mood": "hype",
+    "tags": [
+      "theatre",
+      "drama",
+      "rock"
+    ],
+    "bpm": "เร็ว (160 BPM)",
+    "lang": "jp",
+    "animeId": 80,
+    "animeMatch": [
+      9,
+      8,
+      40
+    ],
+    "reason": "\"ドラマツルギー (Dramaturgy)\" (Eve) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด hype ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1915,
+    "title": "残響散歌 (Zankyousanka)",
+    "artist": "Aimer",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000107f49d7/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E6%AE%8B%E9%9F%BF%E6%95%A3%E6%AD%8C%20(Za",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E6%AE%8B%E9%9F%BF%E6%95%A3%E6%AD%8C%20(Zankyousanka)%20Aimer",
+    "mood": "epic",
+    "tags": [
+      "demon-slayer",
+      "fierce",
+      "powerful"
+    ],
+    "bpm": "เร็ว (155 BPM)",
+    "lang": "jp",
+    "animeId": 50,
+    "animeMatch": [
+      40,
+      9
+    ],
+    "reason": "\"残響散歌 (Zankyousanka)\" (Aimer) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด epic ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Cinematic สีทอง มีแสง Lens Flare ตามตัวอักษร ค่อยๆ ขยายเต็มจอ พร้อม Particle dust ปลิว",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1916,
+    "title": "カタオモイ (Kataomoi)",
+    "artist": "Aimer",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000bad7adc/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%82%AB%E3%82%BF%E3%82%AA%E3%83%A2%E3%82%A4%20(K",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E3%82%AB%E3%82%BF%E3%82%AA%E3%83%A2%E3%82%A4%20(Kataomoi)%20Aimer",
+    "mood": "love",
+    "tags": [
+      "one-sided",
+      "tender",
+      "beautiful"
+    ],
+    "bpm": "ช้า (73 BPM)",
+    "lang": "jp",
+    "animeId": 30,
+    "animeMatch": [
+      30,
+      11,
+      8
+    ],
+    "reason": "\"カタオモイ (Kataomoi)\" (Aimer) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด love ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1917,
+    "title": "紅蓮華 (Gurenge)",
+    "artist": "LiSA",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002cc5f6d7/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E7%B4%85%E8%93%AE%E8%8F%AF%20(Gur",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E7%B4%85%E8%93%AE%E8%8F%AF%20(Gurenge)%20LiSA",
+    "mood": "hype",
+    "tags": [
+      "demon-slayer",
+      "flame",
+      "battle"
+    ],
+    "bpm": "เร็ว (138 BPM)",
+    "lang": "jp",
+    "animeId": 20,
+    "animeMatch": [
+      80,
+      2,
+      60
+    ],
+    "reason": "\"紅蓮華 (Gurenge)\" (LiSA) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด hype ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1918,
+    "title": "炎 (Homura)",
+    "artist": "LiSA",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000cf87f40/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E7%82%8E%20(Homur",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E7%82%8E%20(Homura)%20LiSA",
+    "mood": "epic",
+    "tags": [
+      "demon-slayer",
+      "movie",
+      "emotional"
+    ],
+    "bpm": "กลาง (95 BPM)",
+    "lang": "jp",
+    "animeId": 17,
+    "animeMatch": [
+      1,
+      25,
+      40
+    ],
+    "reason": "\"炎 (Homura)\" (LiSA) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด epic ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Cinematic สีทอง มีแสง Lens Flare ตามตัวอักษร ค่อยๆ ขยายเต็มจอ พร้อม Particle dust ปลิว",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1919,
+    "title": "明け星 (Akeboshi)",
+    "artist": "LiSA",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000064625a04/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E6%98%8E%E3%81%91%E6%98%9F%20(Ake",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E6%98%8E%E3%81%91%E6%98%9F%20(Akeboshi)%20LiSA",
+    "mood": "epic",
+    "tags": [
+      "demon-slayer",
+      "sunrise",
+      "hope"
+    ],
+    "bpm": "เร็ว (125 BPM)",
+    "lang": "jp",
+    "animeId": 40,
+    "animeMatch": [
+      70,
+      8
+    ],
+    "reason": "\"明け星 (Akeboshi)\" (LiSA) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด epic ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Cinematic สีทอง มีแสง Lens Flare ตามตัวอักษร ค่อยๆ ขยายเต็มจอ พร้อม Particle dust ปลิว",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1920,
+    "title": "ウタカタララバイ (Utakata Lullaby)",
+    "artist": "Ado",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003f429092/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%82%A6%E3%82%BF%E3%82%AB%E3%82%BF%E3%83%A9%E3%83%A9%E3%83%90%E3%82%A4",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E3%82%A6%E3%82%BF%E3%82%AB%E3%82%BF%E3%83%A9%E3%83%A9%E3%83%90%E3%82%A4%20(Utakata%20Lullaby)%20Ado",
+    "mood": "epic",
+    "tags": [
+      "one-piece",
+      "lullaby",
+      "powerful"
+    ],
+    "bpm": "กลาง (100 BPM)",
+    "lang": "jp",
+    "animeId": 60,
+    "animeMatch": [
+      60,
+      12
+    ],
+    "reason": "\"ウタカタララバイ (Utakata Lullaby)\" (Ado) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด epic ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Cinematic สีทอง มีแสง Lens Flare ตามตัวอักษร ค่อยๆ ขยายเต็มจอ พร้อม Particle dust ปลิว",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1921,
+    "title": "新時代 (New Genesis)",
+    "artist": "Ado",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000431d3732/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E6%96%B0%E6%99%82%E4%BB%A3%20(New",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E6%96%B0%E6%99%82%E4%BB%A3%20(New%20Genesis)%20Ado",
+    "mood": "hype",
+    "tags": [
+      "one-piece",
+      "new-era",
+      "explosive"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "jp",
+    "animeId": 3,
+    "animeMatch": [
+      70,
+      150
+    ],
+    "reason": "\"新時代 (New Genesis)\" (Ado) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด hype ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1922,
+    "title": "私は最強 (I'm Invincible)",
+    "artist": "Ado",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006976c960/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E7%A7%81%E3%81%AF%E6%9C%80%E5%BC%B7%20(I'",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E7%A7%81%E3%81%AF%E6%9C%80%E5%BC%B7%20(I'm%20Invincible)%20Ado",
+    "mood": "hype",
+    "tags": [
+      "one-piece",
+      "powerful",
+      "queen"
+    ],
+    "bpm": "เร็ว (170 BPM)",
+    "lang": "jp",
+    "animeId": 1,
+    "animeMatch": [
+      80,
+      9
+    ],
+    "reason": "\"私は最強 (I'm Invincible)\" (Ado) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด hype ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1923,
+    "title": "唱 (Show)",
+    "artist": "Ado",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000001293e459/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E5%94%B1%20(Show)",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E5%94%B1%20(Show)%20Ado",
+    "mood": "hype",
+    "tags": [
+      "dance",
+      "powerful",
+      "viral"
+    ],
+    "bpm": "เร็ว (140 BPM)",
+    "lang": "jp",
+    "animeId": 6,
+    "animeMatch": [
+      10,
+      50,
+      3
+    ],
+    "reason": "\"唱 (Show)\" (Ado) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด hype ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1924,
+    "title": "Subtitle",
+    "artist": "Official HIGE DANdism",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000072d754cc/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Subtitle",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Subtitle%20Official%20HIGE%20DANdism",
+    "mood": "love",
+    "tags": [
+      "drama",
+      "tender",
+      "emotional"
+    ],
+    "bpm": "กลาง (96 BPM)",
+    "lang": "jp",
+    "animeId": 12,
+    "animeMatch": [
+      150,
+      60
+    ],
+    "reason": "\"Subtitle\" (Official HIGE DANdism) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด love ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1925,
+    "title": "ミックスナッツ (Mixed Nuts)",
+    "artist": "Official HIGE DANdism",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002a5808f5/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9%E3%83%8A%E3%83%83%E3%83%84%20",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9%E3%83%8A%E3%83%83%E3%83%84%20(Mixed%20Nuts)%20Official%20HIGE%20DANdism",
+    "mood": "happy",
+    "tags": [
+      "spy-family",
+      "fun",
+      "quirky"
+    ],
+    "bpm": "เร็ว (150 BPM)",
+    "lang": "jp",
+    "animeId": 17,
+    "animeMatch": [
+      70,
+      1
+    ],
+    "reason": "\"ミックスナッツ (Mixed Nuts)\" (Official HIGE DANdism) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด happy ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1926,
+    "title": "再会 (Saikai)",
+    "artist": "LiSA × Uru",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000309edd36/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E5%86%8D%E4%BC%9A%20(Saik",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E5%86%8D%E4%BC%9A%20(Saikai)%20LiSA%20%C3%97%20Uru",
+    "mood": "sad",
+    "tags": [
+      "reunion",
+      "drama",
+      "emotional"
+    ],
+    "bpm": "ช้า (73 BPM)",
+    "lang": "jp",
+    "animeId": 17,
+    "animeMatch": [
+      30,
+      150,
+      40
+    ],
+    "reason": "\"再会 (Saikai)\" (LiSA × Uru) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด sad ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1927,
+    "title": "春泥棒 (Haru Dorobou)",
+    "artist": "Yorushika",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005749d2be/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E6%98%A5%E6%B3%A5%E6%A3%92%20(Har",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E6%98%A5%E6%B3%A5%E6%A3%92%20(Haru%20Dorobou)%20Yorushika",
+    "mood": "chill",
+    "tags": [
+      "spring",
+      "thief",
+      "gentle"
+    ],
+    "bpm": "กลาง (96 BPM)",
+    "lang": "jp",
+    "animeId": 40,
+    "animeMatch": [
+      15,
+      12,
+      1
+    ],
+    "reason": "\"春泥棒 (Haru Dorobou)\" (Yorushika) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด chill ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์มินิมอล Thin สีฟ้าอ่อน ไหลช้าๆ ราวกับลอยอยู่บนน้ำ ผสม grain texture สไตล์ Lo-Fi",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1928,
+    "title": "ただ君に晴れ (Tada Kimi ni Hare)",
+    "artist": "Yorushika",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000f37bfb8/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%81%9F%E3%81%A0%E5%90%9B%E3%81%AB%E6%99%B4%E3%82%8C%20(",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E3%81%9F%E3%81%A0%E5%90%9B%E3%81%AB%E6%99%B4%E3%82%8C%20(Tada%20Kimi%20ni%20Hare)%20Yorushika",
+    "mood": "chill",
+    "tags": [
+      "clear-sky",
+      "youth",
+      "fresh"
+    ],
+    "bpm": "กลาง (95 BPM)",
+    "lang": "jp",
+    "animeId": 20,
+    "animeMatch": [
+      3,
+      9,
+      17
+    ],
+    "reason": "\"ただ君に晴れ (Tada Kimi ni Hare)\" (Yorushika) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด chill ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์มินิมอล Thin สีฟ้าอ่อน ไหลช้าๆ ราวกับลอยอยู่บนน้ำ ผสม grain texture สไตล์ Lo-Fi",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1929,
+    "title": "風のゆくえ (Kaze no Yukue)",
+    "artist": "Fujii Kaze × Kenshi Yonezu",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004bd37270/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E9%A2%A8%E3%81%AE%E3%82%86%E3%81%8F%E3%81%88%20(K",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E9%A2%A8%E3%81%AE%E3%82%86%E3%81%8F%E3%81%88%20(Kaze%20no%20Yukue)%20Fujii%20Kaze%20%C3%97%20Kenshi%20Yonezu",
+    "mood": "chill",
+    "tags": [
+      "wind",
+      "journey",
+      "peaceful"
+    ],
+    "bpm": "กลาง (92 BPM)",
+    "lang": "jp",
+    "animeId": 20,
+    "animeMatch": [
+      20,
+      1
+    ],
+    "reason": "\"風のゆくえ (Kaze no Yukue)\" (Fujii Kaze × Kenshi Yonezu) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด chill ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์มินิมอล Thin สีฟ้าอ่อน ไหลช้าๆ ราวกับลอยอยู่บนน้ำ ผสม grain texture สไตล์ Lo-Fi",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1930,
+    "title": "すずめ (Suzume)",
+    "artist": "RADWIMPS ft. Toaka",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002fe50b8f/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%81%99%E3%81%9A%E3%82%81%20(Suz",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E3%81%99%E3%81%9A%E3%82%81%20(Suzume)%20RADWIMPS%20ft.%20Toaka",
+    "mood": "epic",
+    "tags": [
+      "suzume",
+      "movie",
+      "emotional"
+    ],
+    "bpm": "กลาง (97 BPM)",
+    "lang": "jp",
+    "animeId": 200,
+    "animeMatch": [
+      5,
+      11,
+      12
+    ],
+    "reason": "\"すずめ (Suzume)\" (RADWIMPS ft. Toaka) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด epic ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Cinematic สีทอง มีแสง Lens Flare ตามตัวอักษร ค่อยๆ ขยายเต็มจอ พร้อม Particle dust ปลิว",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1931,
+    "title": "カナタハルカ (Kanata Halca)",
+    "artist": "RADWIMPS",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000163260f4/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%82%AB%E3%83%8A%E3%82%BF%E3%83%8F%E3%83%AB%E3%82%AB%20(",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E3%82%AB%E3%83%8A%E3%82%BF%E3%83%8F%E3%83%AB%E3%82%AB%20(Kanata%20Halca)%20RADWIMPS",
+    "mood": "sad",
+    "tags": [
+      "suzume",
+      "distant",
+      "longing"
+    ],
+    "bpm": "ช้า (78 BPM)",
+    "lang": "jp",
+    "animeId": 25,
+    "animeMatch": [
+      20,
+      25
+    ],
+    "reason": "\"カナタハルカ (Kanata Halca)\" (RADWIMPS) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด sad ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1932,
+    "title": "前前前世 (Zenzenzense)",
+    "artist": "RADWIMPS",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004982464e/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E5%89%8D%E5%89%8D%E5%89%8D%E4%B8%96%20(Ze",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E5%89%8D%E5%89%8D%E5%89%8D%E4%B8%96%20(Zenzenzense)%20RADWIMPS",
+    "mood": "hype",
+    "tags": [
+      "your-name",
+      "past-lives",
+      "iconic"
+    ],
+    "bpm": "เร็ว (190 BPM)",
+    "lang": "jp",
+    "animeId": 100,
+    "animeMatch": [
+      80,
+      10,
+      8
+    ],
+    "reason": "\"前前前世 (Zenzenzense)\" (RADWIMPS) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด hype ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1933,
+    "title": "スパークル (Sparkle)",
+    "artist": "RADWIMPS",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000012912504/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%82%B9%E3%83%91%E3%83%BC%E3%82%AF%E3%83%AB%20(S",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E3%82%B9%E3%83%91%E3%83%BC%E3%82%AF%E3%83%AB%20(Sparkle)%20RADWIMPS",
+    "mood": "love",
+    "tags": [
+      "your-name",
+      "sparkle",
+      "emotional"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "jp",
+    "animeId": 60,
+    "animeMatch": [
+      70,
+      30,
+      20
+    ],
+    "reason": "\"スパークル (Sparkle)\" (RADWIMPS) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด love ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1934,
+    "title": "なんでもないや (Nandemonaiya)",
+    "artist": "RADWIMPS",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000002aabe7c/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%81%AA%E3%82%93%E3%81%A7%E3%82%82%E3%81%AA%E3%81%84%E3%82%84%20",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E3%81%AA%E3%82%93%E3%81%A7%E3%82%82%E3%81%AA%E3%81%84%E3%82%84%20(Nandemonaiya)%20RADWIMPS",
+    "mood": "sad",
+    "tags": [
+      "your-name",
+      "nothing",
+      "tears"
+    ],
+    "bpm": "กลาง (95 BPM)",
+    "lang": "jp",
+    "animeId": 9,
+    "animeMatch": [
+      8,
+      60
+    ],
+    "reason": "\"なんでもないや (Nandemonaiya)\" (RADWIMPS) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด sad ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1935,
+    "title": "オレンジ (Orange)",
+    "artist": "SPYAIR",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000660dc7a6/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8%20(Or",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8%20(Orange)%20SPYAIR",
+    "mood": "sad",
+    "tags": [
+      "haikyuu",
+      "graduation",
+      "farewell"
+    ],
+    "bpm": "กลาง (88 BPM)",
+    "lang": "jp",
+    "animeId": 11,
+    "animeMatch": [
+      2,
+      30,
+      12
+    ],
+    "reason": "\"オレンジ (Orange)\" (SPYAIR) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด sad ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1936,
+    "title": "名前のない怪物 (Namae no Nai Kaibutsu)",
+    "artist": "EGOIST",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003a80231e/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E5%90%8D%E5%89%8D%E3%81%AE%E3%81%AA%E3%81%84%E6%80%AA%E7%89%A9%20",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E5%90%8D%E5%89%8D%E3%81%AE%E3%81%AA%E3%81%84%E6%80%AA%E7%89%A9%20(Namae%20no%20Nai%20Kaibutsu)%20EGOIST",
+    "mood": "sad",
+    "tags": [
+      "psycho-pass",
+      "monster",
+      "dark"
+    ],
+    "bpm": "กลาง (93 BPM)",
+    "lang": "jp",
+    "animeId": 17,
+    "animeMatch": [
+      15,
+      25
+    ],
+    "reason": "\"名前のない怪物 (Namae no Nai Kaibutsu)\" (EGOIST) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด sad ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1937,
+    "title": "僕の戦争 (Boku no Sensou)",
+    "artist": "Shinsei Kamattechan",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004462b248/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E5%83%95%E3%81%AE%E6%88%A6%E4%BA%89%20(Bo",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E5%83%95%E3%81%AE%E6%88%A6%E4%BA%89%20(Boku%20no%20Sensou)%20Shinsei%20Kamattechan",
+    "mood": "epic",
+    "tags": [
+      "aot",
+      "war",
+      "dark"
+    ],
+    "bpm": "เร็ว (135 BPM)",
+    "lang": "jp",
+    "animeId": 6,
+    "animeMatch": [
+      150,
+      100,
+      1
+    ],
+    "reason": "\"僕の戦争 (Boku no Sensou)\" (Shinsei Kamattechan) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด epic ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Cinematic สีทอง มีแสง Lens Flare ตามตัวอักษร ค่อยๆ ขยายเต็มจอ พร้อม Particle dust ปลิว",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1938,
+    "title": "点描の唄 (Tenbyo no Uta)",
+    "artist": "Mrs. GREEN APPLE ft. Kinoue Airu",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000660501b2/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E7%82%B9%E6%8F%8F%E3%81%AE%E5%94%84%20(Te",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E7%82%B9%E6%8F%8F%E3%81%AE%E5%94%84%20(Tenbyo%20no%20Uta)%20Mrs.%20GREEN%20APPLE%20ft.%20Kinoue%20Airu",
+    "mood": "love",
+    "tags": [
+      "painting",
+      "tender",
+      "beautiful"
+    ],
+    "bpm": "ช้า (78 BPM)",
+    "lang": "jp",
+    "animeId": 60,
+    "animeMatch": [
+      1,
+      25,
+      3
+    ],
+    "reason": "\"点描の唄 (Tenbyo no Uta)\" (Mrs. GREEN APPLE ft. Kinoue Airu) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด love ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1939,
+    "title": "コロンブス (Columbus)",
+    "artist": "Mrs. GREEN APPLE",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005f959b5a/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%82%B3%E3%83%AD%E3%83%B3%E3%83%96%E3%82%B9%20(C",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E3%82%B3%E3%83%AD%E3%83%B3%E3%83%96%E3%82%B9%20(Columbus)%20Mrs.%20GREEN%20APPLE",
+    "mood": "happy",
+    "tags": [
+      "adventure",
+      "catchy",
+      "upbeat"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "jp",
+    "animeId": 150,
+    "animeMatch": [
+      3,
+      5
+    ],
+    "reason": "\"コロンブス (Columbus)\" (Mrs. GREEN APPLE) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด happy ของอนิเมะได้อย่างสมบูรณ์แบบ",
+    "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1940,
+    "title": "Whiplash",
+    "artist": "aespa",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007bc2ca22/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Whiplash",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Whiplash%20aespa",
+    "mood": "hype",
+    "tags": [
+      "kpop",
+      "fierce",
+      "girl-crush"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "kr",
+    "animeId": 10,
+    "animeMatch": [
+      6,
+      200
+    ],
+    "reason": "\"Whiplash\" (aespa) เพลง K-Pop ที่มีจังหวะ เร็ว (130 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1941,
+    "title": "Drama",
+    "artist": "aespa",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000077615919/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Drama",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Drama%20aespa",
+    "mood": "hype",
+    "tags": [
+      "kpop",
+      "theatrical",
+      "bold"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "kr",
+    "animeId": 6,
+    "animeMatch": [
+      150,
+      20
+    ],
+    "reason": "\"Drama\" (aespa) เพลง K-Pop ที่มีจังหวะ เร็ว (128 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1942,
+    "title": "Shopper",
+    "artist": "IU",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000005096a4d/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Shopper",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Shopper%20IU",
+    "mood": "happy",
+    "tags": [
+      "shopping",
+      "cute",
+      "catchy"
+    ],
+    "bpm": "เร็ว (118 BPM)",
+    "lang": "kr",
+    "animeId": 10,
+    "animeMatch": [
+      5,
+      25,
+      4
+    ],
+    "reason": "\"Shopper\" (IU) เพลง K-Pop ที่มีจังหวะ เร็ว (118 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1943,
+    "title": "Celebrity",
+    "artist": "IU",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000015ccb9d1/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Celebrit",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Celebrity%20IU",
+    "mood": "happy",
+    "tags": [
+      "self-love",
+      "pop",
+      "catchy"
+    ],
+    "bpm": "เร็ว (125 BPM)",
+    "lang": "kr",
+    "animeId": 100,
+    "animeMatch": [
+      4,
+      7
+    ],
+    "reason": "\"Celebrity\" (IU) เพลง K-Pop ที่มีจังหวะ เร็ว (125 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1944,
+    "title": "EASY",
+    "artist": "LE SSERAFIM",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000075f7261b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=EASY",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/EASY%20LE%20SSERAFIM",
+    "mood": "hype",
+    "tags": [
+      "confident",
+      "girl-crush",
+      "fierce"
+    ],
+    "bpm": "เร็ว (125 BPM)",
+    "lang": "kr",
+    "animeId": 25,
+    "animeMatch": [
+      7,
+      1,
+      150
+    ],
+    "reason": "\"EASY\" (LE SSERAFIM) เพลง K-Pop ที่มีจังหวะ เร็ว (125 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1945,
+    "title": "UNFORGIVEN",
+    "artist": "LE SSERAFIM",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000125bdf50/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=UNFORGIV",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/UNFORGIVEN%20LE%20SSERAFIM",
+    "mood": "hype",
+    "tags": [
+      "dark",
+      "powerful",
+      "fierce"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "kr",
+    "animeId": 5,
+    "animeMatch": [
+      10,
+      20,
+      9
+    ],
+    "reason": "\"UNFORGIVEN\" (LE SSERAFIM) เพลง K-Pop ที่มีจังหวะ เร็ว (130 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1946,
+    "title": "Super Shy",
+    "artist": "NewJeans",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003b1db776/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Super%20Sh",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Super%20Shy%20NewJeans",
+    "mood": "love",
+    "tags": [
+      "shy",
+      "cute",
+      "fresh"
+    ],
+    "bpm": "เร็ว (120 BPM)",
+    "lang": "kr",
+    "animeId": 20,
+    "animeMatch": [
+      10,
+      1
+    ],
+    "reason": "\"Super Shy\" (NewJeans) เพลง K-Pop ที่มีจังหวะ เร็ว (120 BPM) เข้ากับอนิเมะมู้ด love ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1947,
+    "title": "Hype Boy",
+    "artist": "NewJeans",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007d6b6763/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Hype%20Boy",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Hype%20Boy%20NewJeans",
+    "mood": "happy",
+    "tags": [
+      "energetic",
+      "fresh",
+      "teen"
+    ],
+    "bpm": "เร็ว (114 BPM)",
+    "lang": "kr",
+    "animeId": 7,
+    "animeMatch": [
+      3,
+      8
+    ],
+    "reason": "\"Hype Boy\" (NewJeans) เพลง K-Pop ที่มีจังหวะ เร็ว (114 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1948,
+    "title": "OMG",
+    "artist": "NewJeans",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000001f9719ac/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=OMG",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/OMG%20NewJeans",
+    "mood": "happy",
+    "tags": [
+      "surprise",
+      "cute",
+      "catchy"
+    ],
+    "bpm": "เร็ว (127 BPM)",
+    "lang": "kr",
+    "animeId": 10,
+    "animeMatch": [
+      2,
+      25
+    ],
+    "reason": "\"OMG\" (NewJeans) เพลง K-Pop ที่มีจังหวะ เร็ว (127 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1949,
+    "title": "How Sweet",
+    "artist": "NewJeans",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000009c6980b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=How%20Swee",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/How%20Sweet%20NewJeans",
+    "mood": "love",
+    "tags": [
+      "sweet",
+      "cute",
+      "dreamy"
+    ],
+    "bpm": "กลาง (100 BPM)",
+    "lang": "kr",
+    "animeId": 8,
+    "animeMatch": [
+      50,
+      30
+    ],
+    "reason": "\"How Sweet\" (NewJeans) เพลง K-Pop ที่มีจังหวะ กลาง (100 BPM) เข้ากับอนิเมะมู้ด love ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1950,
+    "title": "SHEESH",
+    "artist": "BABYMONSTER",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000647fd51a/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=SHEESH",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/SHEESH%20BABYMONSTER",
+    "mood": "hype",
+    "tags": [
+      "fierce",
+      "girl-crush",
+      "debut"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "kr",
+    "animeId": 6,
+    "animeMatch": [
+      50,
+      9
+    ],
+    "reason": "\"SHEESH\" (BABYMONSTER) เพลง K-Pop ที่มีจังหวะ เร็ว (130 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1951,
+    "title": "DRIP",
+    "artist": "BABYMONSTER",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000028c2cf31/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=DRIP",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/DRIP%20BABYMONSTER",
+    "mood": "hype",
+    "tags": [
+      "powerful",
+      "swag",
+      "fierce"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "kr",
+    "animeId": 150,
+    "animeMatch": [
+      8,
+      6
+    ],
+    "reason": "\"DRIP\" (BABYMONSTER) เพลง K-Pop ที่มีจังหวะ เร็ว (128 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1952,
+    "title": "MANTRA",
+    "artist": "JENNIE",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006a2205e0/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=MANTRA",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/MANTRA%20JENNIE",
+    "mood": "hype",
+    "tags": [
+      "solo",
+      "fierce",
+      "queen"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "kr",
+    "animeId": 10,
+    "animeMatch": [
+      8,
+      1,
+      6
+    ],
+    "reason": "\"MANTRA\" (JENNIE) เพลง K-Pop ที่มีจังหวะ เร็ว (128 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1953,
+    "title": "SOLO",
+    "artist": "JENNIE",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005ef4dfca/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=SOLO",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/SOLO%20JENNIE",
+    "mood": "hype",
+    "tags": [
+      "independent",
+      "queen",
+      "iconic"
+    ],
+    "bpm": "เร็ว (126 BPM)",
+    "lang": "kr",
+    "animeId": 7,
+    "animeMatch": [
+      25,
+      150,
+      4
+    ],
+    "reason": "\"SOLO\" (JENNIE) เพลง K-Pop ที่มีจังหวะ เร็ว (126 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1954,
+    "title": "Shut Down",
+    "artist": "BLACKPINK",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005f5e6c07/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Shut%20Dow",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Shut%20Down%20BLACKPINK",
+    "mood": "hype",
+    "tags": [
+      "classical",
+      "fierce",
+      "iconic"
+    ],
+    "bpm": "เร็ว (140 BPM)",
+    "lang": "kr",
+    "animeId": 150,
+    "animeMatch": [
+      50,
+      1,
+      20
+    ],
+    "reason": "\"Shut Down\" (BLACKPINK) เพลง K-Pop ที่มีจังหวะ เร็ว (140 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1955,
+    "title": "Pink Venom",
+    "artist": "BLACKPINK",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000001e043b5e/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Pink%20Ven",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Pink%20Venom%20BLACKPINK",
+    "mood": "hype",
+    "tags": [
+      "dangerous",
+      "dark",
+      "fierce"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "kr",
+    "animeId": 50,
+    "animeMatch": [
+      50,
+      25
+    ],
+    "reason": "\"Pink Venom\" (BLACKPINK) เพลง K-Pop ที่มีจังหวะ เร็ว (130 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1956,
+    "title": "How You Like That",
+    "artist": "BLACKPINK",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000150bc10a/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=How%20You%20",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/How%20You%20Like%20That%20BLACKPINK",
+    "mood": "hype",
+    "tags": [
+      "comeback",
+      "fierce",
+      "anthem"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "kr",
+    "animeId": 15,
+    "animeMatch": [
+      3,
+      100
+    ],
+    "reason": "\"How You Like That\" (BLACKPINK) เพลง K-Pop ที่มีจังหวะ เร็ว (130 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1957,
+    "title": "Lovesick Girls",
+    "artist": "BLACKPINK",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005316d332/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Lovesick",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Lovesick%20Girls%20BLACKPINK",
+    "mood": "sad",
+    "tags": [
+      "heartbreak",
+      "anthem",
+      "emotional"
+    ],
+    "bpm": "เร็ว (124 BPM)",
+    "lang": "kr",
+    "animeId": 15,
+    "animeMatch": [
+      4,
+      1
+    ],
+    "reason": "\"Lovesick Girls\" (BLACKPINK) เพลง K-Pop ที่มีจังหวะ เร็ว (124 BPM) เข้ากับอนิเมะมู้ด sad ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1958,
+    "title": "Dynamite",
+    "artist": "BTS",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000054f54bec/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Dynamite",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Dynamite%20BTS",
+    "mood": "happy",
+    "tags": [
+      "disco",
+      "fun",
+      "bright"
+    ],
+    "bpm": "เร็ว (114 BPM)",
+    "lang": "kr",
+    "animeId": 5,
+    "animeMatch": [
+      3,
+      1
+    ],
+    "reason": "\"Dynamite\" (BTS) เพลง K-Pop ที่มีจังหวะ เร็ว (114 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1959,
+    "title": "Butter",
+    "artist": "BTS",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000077973c21/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Butter",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Butter%20BTS",
+    "mood": "happy",
+    "tags": [
+      "smooth",
+      "summer",
+      "groovy"
+    ],
+    "bpm": "เร็ว (110 BPM)",
+    "lang": "kr",
+    "animeId": 150,
+    "animeMatch": [
+      9,
+      6,
+      200
+    ],
+    "reason": "\"Butter\" (BTS) เพลง K-Pop ที่มีจังหวะ เร็ว (110 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1960,
+    "title": "Spring Day",
+    "artist": "BTS",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003674ed68/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Spring%20D",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Spring%20Day%20BTS",
+    "mood": "sad",
+    "tags": [
+      "longing",
+      "winter",
+      "emotional"
+    ],
+    "bpm": "เร็ว (105 BPM)",
+    "lang": "kr",
+    "animeId": 1,
+    "animeMatch": [
+      30,
+      1,
+      9
+    ],
+    "reason": "\"Spring Day\" (BTS) เพลง K-Pop ที่มีจังหวะ เร็ว (105 BPM) เข้ากับอนิเมะมู้ด sad ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1961,
+    "title": "Fake Love",
+    "artist": "BTS",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006c7c183c/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Fake%20Lov",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Fake%20Love%20BTS",
+    "mood": "sad",
+    "tags": [
+      "dark",
+      "emotional",
+      "rock"
+    ],
+    "bpm": "เร็ว (101 BPM)",
+    "lang": "kr",
+    "animeId": 15,
+    "animeMatch": [
+      100,
+      25
+    ],
+    "reason": "\"Fake Love\" (BTS) เพลง K-Pop ที่มีจังหวะ เร็ว (101 BPM) เข้ากับอนิเมะมู้ด sad ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1962,
+    "title": "Boy With Luv",
+    "artist": "BTS ft. Halsey",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007f6098ba/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Boy%20With",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Boy%20With%20Luv%20BTS%20ft.%20Halsey",
+    "mood": "happy",
+    "tags": [
+      "colorful",
+      "sweet",
+      "catchy"
+    ],
+    "bpm": "เร็ว (107 BPM)",
+    "lang": "kr",
+    "animeId": 6,
+    "animeMatch": [
+      8,
+      10,
+      3
+    ],
+    "reason": "\"Boy With Luv\" (BTS ft. Halsey) เพลง K-Pop ที่มีจังหวะ เร็ว (107 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1963,
+    "title": "Cupid",
+    "artist": "FIFTY FIFTY",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005f54abd7/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Cupid",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Cupid%20FIFTY%20FIFTY",
+    "mood": "love",
+    "tags": [
+      "cute",
+      "viral",
+      "sweet"
+    ],
+    "bpm": "เร็ว (117 BPM)",
+    "lang": "kr",
+    "animeId": 200,
+    "animeMatch": [
+      50,
+      6,
+      3
+    ],
+    "reason": "\"Cupid\" (FIFTY FIFTY) เพลง K-Pop ที่มีจังหวะ เร็ว (117 BPM) เข้ากับอนิเมะมู้ด love ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1964,
+    "title": "GODS",
+    "artist": "NewJeans",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005f4dfda2/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=GODS",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/GODS%20NewJeans",
+    "mood": "epic",
+    "tags": [
+      "league",
+      "anthem",
+      "powerful"
+    ],
+    "bpm": "เร็ว (135 BPM)",
+    "lang": "kr",
+    "animeId": 20,
+    "animeMatch": [
+      8,
+      7
+    ],
+    "reason": "\"GODS\" (NewJeans) เพลง K-Pop ที่มีจังหวะ เร็ว (135 BPM) เข้ากับอนิเมะมู้ด epic ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Cinematic สีทอง มีแสง Lens Flare ตามตัวอักษร ค่อยๆ ขยายเต็มจอ พร้อม Particle dust ปลิว",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1965,
+    "title": "LALISA",
+    "artist": "LISA",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000056f827f5/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=LALISA",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/LALISA%20LISA",
+    "mood": "hype",
+    "tags": [
+      "solo",
+      "queen",
+      "powerful"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "kr",
+    "animeId": 100,
+    "animeMatch": [
+      150,
+      50,
+      15
+    ],
+    "reason": "\"LALISA\" (LISA) เพลง K-Pop ที่มีจังหวะ เร็ว (130 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1966,
+    "title": "MONEY",
+    "artist": "LISA",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004000812b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=MONEY",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/MONEY%20LISA",
+    "mood": "hype",
+    "tags": [
+      "flex",
+      "badass",
+      "iconic"
+    ],
+    "bpm": "เร็ว (125 BPM)",
+    "lang": "kr",
+    "animeId": 9,
+    "animeMatch": [
+      20,
+      6,
+      5
+    ],
+    "reason": "\"MONEY\" (LISA) เพลง K-Pop ที่มีจังหวะ เร็ว (125 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1967,
+    "title": "ROCKSTAR",
+    "artist": "LISA",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000045de7042/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=ROCKSTAR",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/ROCKSTAR%20LISA",
+    "mood": "hype",
+    "tags": [
+      "rock",
+      "fierce",
+      "2024"
+    ],
+    "bpm": "เร็ว (135 BPM)",
+    "lang": "kr",
+    "animeId": 150,
+    "animeMatch": [
+      4,
+      6
+    ],
+    "reason": "\"ROCKSTAR\" (LISA) เพลง K-Pop ที่มีจังหวะ เร็ว (135 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1968,
+    "title": "Seven",
+    "artist": "Jung Kook ft. Latto",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000001261e57/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Seven",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Seven%20Jung%20Kook%20ft.%20Latto",
+    "mood": "love",
+    "tags": [
+      "everyday",
+      "devotion",
+      "catchy"
+    ],
+    "bpm": "เร็ว (125 BPM)",
+    "lang": "kr",
+    "animeId": 6,
+    "animeMatch": [
+      3,
+      1,
+      10
+    ],
+    "reason": "\"Seven\" (Jung Kook ft. Latto) เพลง K-Pop ที่มีจังหวะ เร็ว (125 BPM) เข้ากับอนิเมะมู้ด love ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1969,
+    "title": "Standing Next to You",
+    "artist": "Jung Kook",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000050510129/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Standing",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Standing%20Next%20to%20You%20Jung%20Kook",
+    "mood": "happy",
+    "tags": [
+      "disco",
+      "dance",
+      "retro"
+    ],
+    "bpm": "เร็ว (107 BPM)",
+    "lang": "kr",
+    "animeId": 6,
+    "animeMatch": [
+      15,
+      30
+    ],
+    "reason": "\"Standing Next to You\" (Jung Kook) เพลง K-Pop ที่มีจังหวะ เร็ว (107 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1970,
+    "title": "Love Lee",
+    "artist": "AKMU",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000534728b0/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Love%20Lee",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Love%20Lee%20AKMU",
+    "mood": "love",
+    "tags": [
+      "sweet",
+      "acoustic",
+      "warm"
+    ],
+    "bpm": "กลาง (98 BPM)",
+    "lang": "kr",
+    "animeId": 25,
+    "animeMatch": [
+      150,
+      30,
+      1
+    ],
+    "reason": "\"Love Lee\" (AKMU) เพลง K-Pop ที่มีจังหวะ กลาง (98 BPM) เข้ากับอนิเมะมู้ด love ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1971,
+    "title": "ANTIFRAGILE",
+    "artist": "LE SSERAFIM",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000065442411/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=ANTIFRAG",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/ANTIFRAGILE%20LE%20SSERAFIM",
+    "mood": "hype",
+    "tags": [
+      "tough",
+      "girl-crush",
+      "anthem"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "kr",
+    "animeId": 30,
+    "animeMatch": [
+      8,
+      4
+    ],
+    "reason": "\"ANTIFRAGILE\" (LE SSERAFIM) เพลง K-Pop ที่มีจังหวะ เร็ว (128 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1972,
+    "title": "FEARLESS",
+    "artist": "LE SSERAFIM",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000380770f4/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=FEARLESS",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/FEARLESS%20LE%20SSERAFIM",
+    "mood": "hype",
+    "tags": [
+      "brave",
+      "debut",
+      "fierce"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "kr",
+    "animeId": 9,
+    "animeMatch": [
+      9,
+      3
+    ],
+    "reason": "\"FEARLESS\" (LE SSERAFIM) เพลง K-Pop ที่มีจังหวะ เร็ว (128 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1973,
+    "title": "After LIKE",
+    "artist": "IVE",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004f8d10a3/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=After%20LI",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/After%20LIKE%20IVE",
+    "mood": "happy",
+    "tags": [
+      "retro",
+      "fun",
+      "catchy"
+    ],
+    "bpm": "เร็ว (136 BPM)",
+    "lang": "kr",
+    "animeId": 30,
+    "animeMatch": [
+      100,
+      3
+    ],
+    "reason": "\"After LIKE\" (IVE) เพลง K-Pop ที่มีจังหวะ เร็ว (136 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1974,
+    "title": "LOVE DIVE",
+    "artist": "IVE",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000032d6546a/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=LOVE%20DIV",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/LOVE%20DIVE%20IVE",
+    "mood": "love",
+    "tags": [
+      "narcissist",
+      "mysterious",
+      "catchy"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "kr",
+    "animeId": 15,
+    "animeMatch": [
+      6,
+      15
+    ],
+    "reason": "\"LOVE DIVE\" (IVE) เพลง K-Pop ที่มีจังหวะ เร็ว (128 BPM) เข้ากับอนิเมะมู้ด love ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1975,
+    "title": "Kitsch",
+    "artist": "IVE",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003264702a/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Kitsch",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Kitsch%20IVE",
+    "mood": "happy",
+    "tags": [
+      "confident",
+      "pop",
+      "catchy"
+    ],
+    "bpm": "เร็ว (120 BPM)",
+    "lang": "kr",
+    "animeId": 5,
+    "animeMatch": [
+      2,
+      200,
+      25
+    ],
+    "reason": "\"Kitsch\" (IVE) เพลง K-Pop ที่มีจังหวะ เร็ว (120 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1976,
+    "title": "ETA",
+    "artist": "NewJeans",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000043e1689d/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=ETA",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/ETA%20NewJeans",
+    "mood": "happy",
+    "tags": [
+      "fun",
+      "fresh",
+      "dance"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "kr",
+    "animeId": 15,
+    "animeMatch": [
+      5,
+      15,
+      200
+    ],
+    "reason": "\"ETA\" (NewJeans) เพลง K-Pop ที่มีจังหวะ เร็ว (130 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1977,
+    "title": "Attention",
+    "artist": "NewJeans",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007a3cafd7/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Attentio",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Attention%20NewJeans",
+    "mood": "chill",
+    "tags": [
+      "debut",
+      "fresh",
+      "lo-fi"
+    ],
+    "bpm": "กลาง (105 BPM)",
+    "lang": "kr",
+    "animeId": 7,
+    "animeMatch": [
+      50,
+      3,
+      6
+    ],
+    "reason": "\"Attention\" (NewJeans) เพลง K-Pop ที่มีจังหวะ กลาง (105 BPM) เข้ากับอนิเมะมู้ด chill ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์มินิมอล Thin สีฟ้าอ่อน ไหลช้าๆ ราวกับลอยอยู่บนน้ำ ผสม grain texture สไตล์ Lo-Fi",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1978,
+    "title": "Nxde",
+    "artist": "(G)I-DLE",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000401e7d7a/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Nxde",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Nxde%20(G)I-DLE",
+    "mood": "hype",
+    "tags": [
+      "bold",
+      "fierce",
+      "artistic"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "kr",
+    "animeId": 1,
+    "animeMatch": [
+      20,
+      25,
+      5
+    ],
+    "reason": "\"Nxde\" ((G)I-DLE) เพลง K-Pop ที่มีจังหวะ เร็ว (128 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1979,
+    "title": "Queencard",
+    "artist": "(G)I-DLE",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000d535857/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Queencar",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Queencard%20(G)I-DLE",
+    "mood": "happy",
+    "tags": [
+      "confident",
+      "queen",
+      "catchy"
+    ],
+    "bpm": "เร็ว (127 BPM)",
+    "lang": "kr",
+    "animeId": 2,
+    "animeMatch": [
+      3,
+      20
+    ],
+    "reason": "\"Queencard\" ((G)I-DLE) เพลง K-Pop ที่มีจังหวะ เร็ว (127 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1980,
+    "title": "Super",
+    "artist": "(G)I-DLE",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006ab8b716/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Super",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/Super%20(G)I-DLE",
+    "mood": "hype",
+    "tags": [
+      "fierce",
+      "rock",
+      "powerful"
+    ],
+    "bpm": "เร็ว (132 BPM)",
+    "lang": "kr",
+    "animeId": 150,
+    "animeMatch": [
+      9,
+      4
+    ],
+    "reason": "\"Super\" ((G)I-DLE) เพลง K-Pop ที่มีจังหวะ เร็ว (132 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1981,
+    "title": "ສັນຍາກັນໄວ້",
+    "artist": "Alexandra",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004f0c96cc/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%BA%AA%E0%BA%B1%E0%BA%99%E0%BA%8D%E0%BA%B2%E0%BA%81%E0%BA%B1%E0%BA%99",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%BA%AA%E0%BA%B1%E0%BA%99%E0%BA%8D%E0%BA%B2%E0%BA%81%E0%BA%B1%E0%BA%99%E0%BB%84%E0%BA%A7%E0%BB%89%20Alexandra",
+    "mood": "love",
+    "tags": [
+      "สัญญา",
+      "ลาว",
+      "อีสาน"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "lao",
+    "animeId": 5,
+    "animeMatch": [
+      200,
+      20
+    ],
+    "reason": "\"ສັນຍາກັນໄວ້\" โดย Alexandra เพลงลาว/อีสาน มู้ด love เข้ากับซีนอนิเมะได้อย่างลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1982,
+    "title": "ຮັກບໍ່ໄດ້ບອກ",
+    "artist": "PoP Pongkool (Lao Ver.)",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000016c553c4/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BA%9A%E0%BB%8D%E0%BB%88%E0%BB%84%E0%BA%94",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BA%9A%E0%BB%8D%E0%BB%88%E0%BB%84%E0%BA%94%E0%BB%89%E0%BA%9A%E0%BA%AD%E0%BA%81%20PoP%20Pongkool%20(Lao%20Ver.)",
+    "mood": "sad",
+    "tags": [
+      "รักเงียบ",
+      "ลาว",
+      "เจ็บ"
+    ],
+    "bpm": "กลาง (88 BPM)",
+    "lang": "lao",
+    "animeId": 100,
+    "animeMatch": [
+      50,
+      100
+    ],
+    "reason": "\"ຮັກບໍ່ໄດ້ບອກ\" โดย PoP Pongkool (Lao Ver.) เพลงลาว/อีสาน มู้ด sad เข้ากับซีนอนิเมะได้อย่างลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1983,
+    "title": "ໃຈມັນຮັກ",
+    "artist": "Cells",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000151ae509/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%BB%83%E0%BA%88%E0%BA%A1%E0%BA%B1%E0%BA%99%E0%BA%AE%E0%BA%B1%E0%BA%81",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%BB%83%E0%BA%88%E0%BA%A1%E0%BA%B1%E0%BA%99%E0%BA%AE%E0%BA%B1%E0%BA%81%20Cells",
+    "mood": "love",
+    "tags": [
+      "หัวใจ",
+      "ลาว",
+      "รัก"
+    ],
+    "bpm": "กลาง (95 BPM)",
+    "lang": "lao",
+    "animeId": 25,
+    "animeMatch": [
+      20,
+      1,
+      10
+    ],
+    "reason": "\"ໃຈມັນຮັກ\" โดย Cells เพลงลาว/อีสาน มู้ด love เข้ากับซีนอนิเมะได้อย่างลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1984,
+    "title": "ບໍ່ມີໃຜ",
+    "artist": "Tik Shiro (Lao Cover)",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000001eaa4b5b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%BA%9A%E0%BB%8D%E0%BB%88%E0%BA%A1%E0%BA%B5%E0%BB%83%E0%BA%9C",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%BA%9A%E0%BB%8D%E0%BB%88%E0%BA%A1%E0%BA%B5%E0%BB%83%E0%BA%9C%20Tik%20Shiro%20(Lao%20Cover)",
+    "mood": "sad",
+    "tags": [
+      "เหงา",
+      "ลาว",
+      "คนเดียว"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "lao",
+    "animeId": 200,
+    "animeMatch": [
+      20,
+      25
+    ],
+    "reason": "\"ບໍ່ມີໃຜ\" โดย Tik Shiro (Lao Cover) เพลงลาว/อีสาน มู้ด sad เข้ากับซีนอนิเมะได้อย่างลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1985,
+    "title": "ມີແຕ່ເຈົ້າ",
+    "artist": "Ting Nong",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000001b62e2f0/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%BA%A1%E0%BA%B5%E0%BB%81%E0%BA%95%E0%BB%88%E0%BB%80%E0%BA%88%E0%BA%BB",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%BA%A1%E0%BA%B5%E0%BB%81%E0%BA%95%E0%BB%88%E0%BB%80%E0%BA%88%E0%BA%BB%E0%BB%89%E0%BA%B2%20Ting%20Nong",
+    "mood": "love",
+    "tags": [
+      "มีแต่เธอ",
+      "ลาว",
+      "รัก"
+    ],
+    "bpm": "กลาง (90 BPM)",
+    "lang": "lao",
+    "animeId": 7,
+    "animeMatch": [
+      4,
+      8,
+      7
+    ],
+    "reason": "\"ມີແຕ່ເຈົ້າ\" โดย Ting Nong เพลงลาว/อีสาน มู้ด love เข้ากับซีนอนิเมะได้อย่างลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1986,
+    "title": "ອ້ອນບໍ່ເກ່ງ",
+    "artist": "Beer Pharadonphol (Lao)",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000002d10c5a/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%BA%AD%E0%BB%89%E0%BA%AD%E0%BA%99%E0%BA%9A%E0%BB%8D%E0%BB%88%E0%BB%80",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%BA%AD%E0%BB%89%E0%BA%AD%E0%BA%99%E0%BA%9A%E0%BB%8D%E0%BB%88%E0%BB%80%E0%BA%81%E0%BB%88%E0%BA%87%20Beer%20Pharadonphol%20(Lao)",
+    "mood": "love",
+    "tags": [
+      "อ้อน",
+      "ลาว",
+      "น่ารัก"
+    ],
+    "bpm": "กลาง (98 BPM)",
+    "lang": "lao",
+    "animeId": 50,
+    "animeMatch": [
+      8,
+      25,
+      4
+    ],
+    "reason": "\"ອ້ອນບໍ່ເກ່ງ\" โดย Beer Pharadonphol (Lao) เพลงลาว/อีสาน มู้ด love เข้ากับซีนอนิเมะได้อย่างลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1987,
+    "title": "ສາວອີສານ",
+    "artist": "Kai Rattanaporn",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000354c6f89/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BA%AD%E0%BA%B5%E0%BA%AA%E0%BA%B2%E0%BA%99",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BA%AD%E0%BA%B5%E0%BA%AA%E0%BA%B2%E0%BA%99%20Kai%20Rattanaporn",
+    "mood": "happy",
+    "tags": [
+      "สาว",
+      "อีสาน",
+      "สนุก"
+    ],
+    "bpm": "เร็ว (115 BPM)",
+    "lang": "lao",
+    "animeId": 7,
+    "animeMatch": [
+      2,
+      30,
+      1
+    ],
+    "reason": "\"ສາວອີສານ\" โดย Kai Rattanaporn เพลงลาว/อีสาน มู้ด happy เข้ากับซีนอนิเมะได้อย่างลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1988,
+    "title": "ບ້ານນາ",
+    "artist": "Molam Lao Band",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006552892c/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%BA%9A%E0%BB%89%E0%BA%B2%E0%BA%99%E0%BA%99%E0%BA%B2",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%BA%9A%E0%BB%89%E0%BA%B2%E0%BA%99%E0%BA%99%E0%BA%B2%20Molam%20Lao%20Band",
+    "mood": "chill",
+    "tags": [
+      "บ้านนา",
+      "ลาว",
+      "ทุ่งนา"
+    ],
+    "bpm": "กลาง (90 BPM)",
+    "lang": "lao",
+    "animeId": 25,
+    "animeMatch": [
+      9,
+      200,
+      10
+    ],
+    "reason": "\"ບ້ານນາ\" โดย Molam Lao Band เพลงลาว/อีสาน มู้ด chill เข้ากับซีนอนิเมะได้อย่างลงตัว",
+    "typoIdea": "ใช้ฟอนต์มินิมอล Thin สีฟ้าอ่อน ไหลช้าๆ ราวกับลอยอยู่บนน้ำ ผสม grain texture สไตล์ Lo-Fi",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1989,
+    "title": "ຄິດฮອดเจ้າ",
+    "artist": "Kratae RSiam (Lao)",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000057ba6875/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%BA%84%E0%BA%B4%E0%BA%94%E0%B8%AE%E0%BA%AD%E0%B8%94%E0%B9%80%E0%B8%88",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%BA%84%E0%BA%B4%E0%BA%94%E0%B8%AE%E0%BA%AD%E0%B8%94%E0%B9%80%E0%B8%88%E0%B9%89%E0%BA%B2%20Kratae%20RSiam%20(Lao)",
+    "mood": "sad",
+    "tags": [
+      "คิดถึง",
+      "อีสาน",
+      "ห่างไกล"
+    ],
+    "bpm": "ช้า (78 BPM)",
+    "lang": "lao",
+    "animeId": 8,
+    "animeMatch": [
+      2,
+      6
+    ],
+    "reason": "\"ຄິດฮອดเจ้າ\" โดย Kratae RSiam (Lao) เพลงลาว/อีสาน มู้ด sad เข้ากับซีนอนิเมะได้อย่างลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1990,
+    "title": "ลำเพลินภูไท",
+    "artist": "มนต์แคน แก่นคูน",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000159966b0/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A5%E0%B8%B3%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%B4%E0%B8%99%E0%B8%A0",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B3%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%B4%E0%B8%99%E0%B8%A0%E0%B8%B9%E0%B9%84%E0%B8%97%20%E0%B8%A1%E0%B8%99%E0%B8%95%E0%B9%8C%E0%B9%81%E0%B8%84%E0%B8%99%20%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99%E0%B8%84%E0%B8%B9%E0%B8%99",
+    "mood": "happy",
+    "tags": [
+      "หมอลำ",
+      "ภูไท",
+      "สนุก"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "lao",
+    "animeId": 10,
+    "animeMatch": [
+      15,
+      6,
+      9
+    ],
+    "reason": "\"ลำเพลินภูไท\" โดย มนต์แคน แก่นคูน เพลงลาว/อีสาน มู้ด happy เข้ากับซีนอนิเมะได้อย่างลงตัว",
+    "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
+    "audioUrl": "",
+    "audioFallback": ""
+  }
+,
+  {
+    "id": 1991,
+    "title": "หวาน (ຫວານ)",
+    "artist": "Cells",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002cf60cf6/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AB%E0%B8%A7%E0%B8%B2%E0%B8%99%20(%E0%BA%AB%E0%BA%A7",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%A7%E0%B8%B2%E0%B8%99%20(%E0%BA%AB%E0%BA%A7%E0%BA%B2%E0%BA%99)%20Cells",
+    "mood": "love",
+    "tags": [
+      "ร็อค",
+      "ลาว",
+      "หวาน",
+      "อบอุ่น"
+    ],
+    "bpm": "กลาง (92 BPM)",
+    "lang": "lao",
+    "animeId": 192,
+    "animeMatch": [
+      200,
+      2,
+      10
+    ],
+    "reason": "เพลงหวานละมุน \"หวาน (ຫວານ)\" โดย Cells เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1992,
+    "title": "เรื่องขี้หมา (ເລື່ອງຂີ້ໝາ)",
+    "artist": "Cells",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004e3b5447/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%82%E0%B8%B5",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%82%E0%B8%B5%E0%B9%89%E0%B8%AB%E0%B8%A1%E0%B8%B2%20(%E0%BB%80%E0%BA%A5%E0%BA%B7%E0%BB%88%E0%BA%AD%E0%BA%87%E0%BA%82%E0%BA%B5%E0%BB%89%E0%BB%9D%E0%BA%B2)%20Cells",
+    "mood": "sad",
+    "tags": [
+      "ร็อค",
+      "ลาว",
+      "อกหัก",
+      "เจ็บ"
+    ],
+    "bpm": "กลาง (88 BPM)",
+    "lang": "lao",
+    "animeId": 193,
+    "animeMatch": [
+      20,
+      50
+    ],
+    "reason": "เพลงลาวสุดซึ้ง \"เรื่องขี้หมา (ເລື່ອງຂີ້ໝາ)\" (Cells) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
+    "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1993,
+    "title": "กอด (ກອດ)",
+    "artist": "Cells",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005e6078e0/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%81%E0%B8%AD%E0%B8%94%20(%E0%BA%81%E0%BA%AD%E0%BA%94",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%AD%E0%B8%94%20(%E0%BA%81%E0%BA%AD%E0%BA%94)%20Cells",
+    "mood": "love",
+    "tags": [
+      "อบอุ่น",
+      "ลาว",
+      "กอด",
+      "คิดถึง"
+    ],
+    "bpm": "ช้า (74 BPM)",
+    "lang": "lao",
+    "animeId": 194,
+    "animeMatch": [
+      4,
+      20,
+      7
+    ],
+    "reason": "เพลงหวานละมุน \"กอด (ກອດ)\" โดย Cells เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1994,
+    "title": "คนขี้คุย (ຄົນຂີ້ຄຸຍ)",
+    "artist": "Cells",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006cf79e28/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%99%E0%B8%82%E0%B8%B5%E0%B9%89%E0%B8%84%E0%B8%B8%E0%B8%A2",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%99%E0%B8%82%E0%B8%B5%E0%B9%89%E0%B8%84%E0%B8%B8%E0%B8%A2%20(%E0%BA%84%E0%BA%BB%E0%BA%99%E0%BA%82%E0%BA%B5%E0%BB%89%E0%BA%84%E0%BA%B8%E0%BA%8D)%20Cells",
+    "mood": "happy",
+    "tags": [
+      "กวนๆ",
+      "ร่าเริง",
+      "ลาว",
+      "สนุก"
+    ],
+    "bpm": "เร็ว (120 BPM)",
+    "lang": "lao",
+    "animeId": 195,
+    "animeMatch": [
+      5,
+      3
+    ],
+    "reason": "เพลงจังหวะสนุกสนาน \"คนขี้คุย (ຄົນຂີ້ຄຸຍ)\" (Cells) นำความสดใสมีชีวิตชีวามาใส่ในคลิปตัดต่อได้อย่างลงตัว",
+    "typoIdea": "ใช้ฟอนต์หนาสีส้มสดใส กระโดดตามจังหวะบีท พร้อมประกายแสงดาววิบวับรอบตัวอักษร",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1995,
+    "title": "ยังรัก (ຍັງຮັກ)",
+    "artist": "Cells",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000068555ee6/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81%20(",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81%20(%E0%BA%8D%E0%BA%B1%E0%BA%87%E0%BA%AE%E0%BA%B1%E0%BA%81)%20Cells",
+    "mood": "sad",
+    "tags": [
+      "ยังรัก",
+      "ลาว",
+      "ลืมไม่ลง"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "lao",
+    "animeId": 196,
+    "animeMatch": [
+      1,
+      6,
+      3
+    ],
+    "reason": "เพลงลาวสุดซึ้ง \"ยังรัก (ຍັງຮັກ)\" (Cells) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
+    "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1996,
+    "title": "เสียดาย (ເສຍດາຍ)",
+    "artist": "Cells",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000246a2e37/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%94%E0%B8%B2%E0%B8%A2%20",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%94%E0%B8%B2%E0%B8%A2%20(%E0%BB%80%E0%BA%AA%E0%BA%8D%E0%BA%94%E0%BA%B2%E0%BA%8D)%20Cells",
+    "mood": "sad",
+    "tags": [
+      "เสียดาย",
+      "ลาว",
+      "อดีต"
+    ],
+    "bpm": "กลาง (85 BPM)",
+    "lang": "lao",
+    "animeId": 197,
+    "animeMatch": [
+      2,
+      6,
+      7
+    ],
+    "reason": "เพลงลาวสุดซึ้ง \"เสียดาย (ເສຍດາຍ)\" (Cells) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
+    "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1997,
+    "title": "บ่ลืม (ບໍ່ລືມ)",
+    "artist": "Cells",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000016a538b5/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9A%E0%B9%88%E0%B8%A5%E0%B8%B7%E0%B8%A1%20(%E0%BA%9A",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9A%E0%B9%88%E0%B8%A5%E0%B8%B7%E0%B8%A1%20(%E0%BA%9A%E0%BB%8D%E0%BB%88%E0%BA%A5%E0%BA%B7%E0%BA%A1)%20Cells",
+    "mood": "sad",
+    "tags": [
+      "ไม่ลืม",
+      "ลาว",
+      "ทรงจำ"
+    ],
+    "bpm": "กลาง (80 BPM)",
+    "lang": "lao",
+    "animeId": 198,
+    "animeMatch": [
+      50,
+      10
+    ],
+    "reason": "เพลงลาวสุดซึ้ง \"บ่ลืม (ບໍ່ລືມ)\" (Cells) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
+    "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1998,
+    "title": "อย่ายิ้มเด้อ (ຢ່າຢິ້ມເດີ້)",
+    "artist": "SOPHANA ft. GX2",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000b859fed/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B8%B4%E0%B9%89%E0%B8%A1",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B8%B4%E0%B9%89%E0%B8%A1%E0%B9%80%E0%B8%94%E0%B9%89%E0%B8%AD%20(%E0%BA%A2%E0%BB%88%E0%BA%B2%E0%BA%A2%E0%BA%B4%E0%BB%89%E0%BA%A1%E0%BB%80%E0%BA%94%E0%BA%B5%E0%BB%89)%20SOPHANA%20ft.%20GX2",
+    "mood": "love",
+    "tags": [
+      "น่ารัก",
+      "ยิ้ม",
+      "ไวรัล",
+      "ลาว"
+    ],
+    "bpm": "กลาง (98 BPM)",
+    "lang": "lao",
+    "animeId": 199,
+    "animeMatch": [
+      30,
+      20
+    ],
+    "reason": "เพลงหวานละมุน \"อย่ายิ้มเด้อ (ຢ່າຢິ້ມເດີ້)\" โดย SOPHANA ft. GX2 เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 1999,
+    "title": "อยากเป็นลูกเขย",
+    "artist": "SOPHANA ft. Bigyai",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002180471b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AD%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B9%80%E0%B8%82%E0%B8%A2%20SOPHANA%20ft.%20Bigyai",
+    "mood": "happy",
+    "tags": [
+      "ลูกเขย",
+      "ฮิตTikTok",
+      "ลาว",
+      "สนุก"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "lao",
+    "animeId": 200,
+    "animeMatch": [
+      10,
+      3
+    ],
+    "reason": "เพลงจังหวะสนุกสนาน \"อยากเป็นลูกเขย\" (SOPHANA ft. Bigyai) นำความสดใสมีชีวิตชีวามาใส่ในคลิปตัดต่อได้อย่างลงตัว",
+    "typoIdea": "ใช้ฟอนต์หนาสีส้มสดใส กระโดดตามจังหวะบีท พร้อมประกายแสงดาววิบวับรอบตัวอักษร",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2000,
+    "title": "บ่แม่นหมาวัด (ບໍ່ແມ່ນໝາວັດ)",
+    "artist": "SOPHANA ft. T'JAME",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000067dec919/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9A%E0%B9%88%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B8%AB%E0%B8%A1",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9A%E0%B9%88%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A7%E0%B8%B1%E0%B8%94%20(%E0%BA%9A%E0%BB%8D%E0%BB%88%E0%BB%81%E0%BA%A1%E0%BB%88%E0%BA%99%E0%BB%9D%E0%BA%B2%E0%BA%A7%E0%BA%B1%E0%BA%94)%20SOPHANA%20ft.%20T'JAME",
+    "mood": "hype",
+    "tags": [
+      "แร็ป",
+      "ลาว",
+      "เดือด",
+      "สู้"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "lao",
+    "animeId": 1,
+    "animeMatch": [
+      25,
+      150
+    ],
+    "reason": "บีทเดือดสะใจ \"บ่แม่นหมาวัด (ບໍ່ແມ່ນໝາວັດ)\" โดย SOPHANA ft. T'JAME ท่อนฮุกกระแทกอารมณ์ ปลุกพลังให้คลิปอนิเมะแอกชันได้อย่างยอดเยี่ยม",
+    "typoIdea": "ใช้ฟอนต์ Impact สีแดงเพลิง กระตุกสั่นตามจังหวะกลองและเบส มีเส้นไฟนีออนพุ่งผ่านตัวหนังสือ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2001,
+    "title": "ปล่อยอ้ายไปเถาะ (ປ່ອຍອ້າຍໄປເຖາະ)",
+    "artist": "SOPHANA",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000693cfef8/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9B%E0%B8%A5%E0%B9%88%E0%B8%AD%E0%B8%A2%E0%B8%AD%E0%B9%89%E0%B8%B2",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9B%E0%B8%A5%E0%B9%88%E0%B8%AD%E0%B8%A2%E0%B8%AD%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%9B%E0%B9%80%E0%B8%96%E0%B8%B2%E0%B8%B0%20(%E0%BA%9B%E0%BB%88%E0%BA%AD%E0%BA%8D%E0%BA%AD%E0%BB%89%E0%BA%B2%E0%BA%8D%E0%BB%84%E0%BA%9B%E0%BB%80%E0%BA%96%E0%BA%B2%E0%BA%B0)%20SOPHANA",
+    "mood": "sad",
+    "tags": [
+      "ปล่อยวาง",
+      "ลาว",
+      "ยอมเจ็บ"
+    ],
+    "bpm": "ช้า (76 BPM)",
+    "lang": "lao",
+    "animeId": 2,
+    "animeMatch": [
+      30,
+      9,
+      200
+    ],
+    "reason": "เพลงลาวสุดซึ้ง \"ปล่อยอ้ายไปเถาะ (ປ່ອຍອ້າຍໄປເຖາະ)\" (SOPHANA) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
+    "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2002,
+    "title": "หลงฮักเมียเขา (ຫຼົງຮັກເມຍເຂົາ)",
+    "artist": "SOPHANA",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000073636e54/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AB%E0%B8%A5%E0%B8%87%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%A5%E0%B8%87%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B5%E0%B8%A2%E0%B9%80%E0%B8%82%E0%B8%B2%20(%E0%BA%AB%E0%BA%BC%E0%BA%BB%E0%BA%87%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BB%80%E0%BA%A1%E0%BA%8D%E0%BB%80%E0%BA%82%E0%BA%BB%E0%BA%B2)%20SOPHANA",
+    "mood": "sad",
+    "tags": [
+      "เจ็บใจ",
+      "ลาว",
+      "ผิดหวัง"
+    ],
+    "bpm": "กลาง (88 BPM)",
+    "lang": "lao",
+    "animeId": 3,
+    "animeMatch": [
+      15,
+      7,
+      6
+    ],
+    "reason": "เพลงลาวสุดซึ้ง \"หลงฮักเมียเขา (ຫຼົງຮັກເມຍເຂົາ)\" (SOPHANA) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
+    "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2003,
+    "title": "สาวเมืองกาญจน์",
+    "artist": "SOPHANA",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006080fb50/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%8D%E0%B8%88%E0%B8%99%E0%B9%8C%20SOPHANA",
+    "mood": "love",
+    "tags": [
+      "สาวงาม",
+      "รักต่างแดน",
+      "ลาว"
+    ],
+    "bpm": "กลาง (95 BPM)",
+    "lang": "lao",
+    "animeId": 4,
+    "animeMatch": [
+      2,
+      4,
+      10
+    ],
+    "reason": "เพลงหวานละมุน \"สาวเมืองกาญจน์\" โดย SOPHANA เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2004,
+    "title": "สายแนน (Sai Nan)",
+    "artist": "SOPHANA x GX2 x T'JAME",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000001350400d/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B9%81%E0%B8%99%E0%B8%99%20(",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B9%81%E0%B8%99%E0%B8%99%20(Sai%20Nan)%20SOPHANA%20x%20GX2%20x%20T'JAME",
+    "mood": "love",
+    "tags": [
+      "พรหมลิขิต",
+      "สายแนน",
+      "หวานซึ้ง"
+    ],
+    "bpm": "กลาง (90 BPM)",
+    "lang": "lao",
+    "animeId": 5,
+    "animeMatch": [
+      6,
+      50,
+      10
+    ],
+    "reason": "เพลงหวานละมุน \"สายแนน (Sai Nan)\" โดย SOPHANA x GX2 x T'JAME เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2005,
+    "title": "ดาวดวงเก่า (ດາວດວງເກົ່າ)",
+    "artist": "GX2",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003c18e773/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%94%E0%B8%B2%E0%B8%A7%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B9%80%E0%B8%81",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%B2%E0%B8%A7%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%B2%20(%E0%BA%94%E0%BA%B2%E0%BA%A7%E0%BA%94%E0%BA%A7%E0%BA%87%E0%BB%80%E0%BA%81%E0%BA%BB%E0%BB%88%E0%BA%B2)%20GX2",
+    "mood": "sad",
+    "tags": [
+      "ดวงดาว",
+      "เหงา",
+      "ลาว",
+      "คิดถึง"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "lao",
+    "animeId": 6,
+    "animeMatch": [
+      50,
+      5,
+      3
+    ],
+    "reason": "เพลงลาวสุดซึ้ง \"ดาวดวงเก่า (ດາວດວງເກົ່າ)\" (GX2) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
+    "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2006,
+    "title": "ยิ้ม (ຍິ້ມ)",
+    "artist": "GX2",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000066f1be69/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A2%E0%B8%B4%E0%B9%89%E0%B8%A1%20(%E0%BA%8D%E0%BA%B4",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A2%E0%B8%B4%E0%B9%89%E0%B8%A1%20(%E0%BA%8D%E0%BA%B4%E0%BB%89%E0%BA%A1)%20GX2",
+    "mood": "love",
+    "tags": [
+      "รอยยิ้ม",
+      "ละมุน",
+      "ลาว",
+      "อบอุ่น"
+    ],
+    "bpm": "กลาง (92 BPM)",
+    "lang": "lao",
+    "animeId": 7,
+    "animeMatch": [
+      150,
+      4
+    ],
+    "reason": "เพลงหวานละมุน \"ยิ้ม (ຍິ້ມ)\" โดย GX2 เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2007,
+    "title": "ขอโทษที่ข้อยจน (ຂໍໂທດທີ່ຂ້ອຍຈົນ)",
+    "artist": "GX2",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005a3beb2b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%82%E0%B8%AD%E0%B9%82%E0%B8%97%E0%B8%A9%E0%B8%97%E0%B8%B5%E0%B9%88",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%82%E0%B8%AD%E0%B9%82%E0%B8%97%E0%B8%A9%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B8%88%E0%B8%99%20(%E0%BA%82%E0%BB%8D%E0%BB%82%E0%BA%97%E0%BA%94%E0%BA%97%E0%BA%B5%E0%BB%88%E0%BA%82%E0%BB%89%E0%BA%AD%E0%BA%8D%E0%BA%88%E0%BA%BB%E0%BA%99)%20GX2",
+    "mood": "sad",
+    "tags": [
+      "จนใจ",
+      "ตัดพ้อ",
+      "ลาว",
+      "เศร้า"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "lao",
+    "animeId": 8,
+    "animeMatch": [
+      1,
+      25
+    ],
+    "reason": "เพลงลาวสุดซึ้ง \"ขอโทษที่ข้อยจน (ຂໍໂທດທີ່ຂ້ອຍຈົນ)\" (GX2) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
+    "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2008,
+    "title": "เจ้าอย่าใจฮ้าย (ເຈົ້າຢ່າໃຈຮ້າຍ)",
+    "artist": "GX2",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000041557c35/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%88%E0%B8%AE%E0%B9%89%E0%B8%B2%E0%B8%A2%20(%E0%BB%80%E0%BA%88%E0%BA%BB%E0%BB%89%E0%BA%B2%E0%BA%A2%E0%BB%88%E0%BA%B2%E0%BB%83%E0%BA%88%E0%BA%AE%E0%BB%89%E0%BA%B2%E0%BA%8D)%20GX2",
+    "mood": "love",
+    "tags": [
+      "ง้อ",
+      "อ้อน",
+      "น่ารัก",
+      "ลาว"
+    ],
+    "bpm": "กลาง (96 BPM)",
+    "lang": "lao",
+    "animeId": 9,
+    "animeMatch": [
+      200,
+      100
+    ],
+    "reason": "เพลงหวานละมุน \"เจ้าอย่าใจฮ้าย (ເຈົ້າຢ່າໃຈຮ້າຍ)\" โดย GX2 เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2009,
+    "title": "คิดฮอดเขา (ຄິດຮອດເຂົາ)",
+    "artist": "GX2",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000074915d37/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%AE%E0%B8%AD%E0%B8%94%E0%B9%80%E0%B8%82",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%AE%E0%B8%AD%E0%B8%94%E0%B9%80%E0%B8%82%E0%B8%B2%20(%E0%BA%84%E0%BA%B4%E0%BA%94%E0%BA%AE%E0%BA%AD%E0%BA%94%E0%BB%80%E0%BA%82%E0%BA%BB%E0%BA%B2)%20GX2",
+    "mood": "sad",
+    "tags": [
+      "คิดถึง",
+      "เจ็บ",
+      "น้ำตา",
+      "ลาว"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "lao",
+    "animeId": 10,
+    "animeMatch": [
+      2,
+      5,
+      4
+    ],
+    "reason": "เพลงลาวสุดซึ้ง \"คิดฮอดเขา (ຄິດຮອດເຂົາ)\" (GX2) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
+    "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2010,
+    "title": "อยู่ไกลกะคิดฮอด (ຢູ່ໄກກໍຄິດຮອດ)",
+    "artist": "GX2",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003d466449/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AD%E0%B8%A2%E0%B8%B9%E0%B9%88%E0%B9%84%E0%B8%81%E0%B8%A5%E0%B8%81",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B8%B9%E0%B9%88%E0%B9%84%E0%B8%81%E0%B8%A5%E0%B8%81%E0%B8%B0%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%AE%E0%B8%AD%E0%B8%94%20(%E0%BA%A2%E0%BA%B9%E0%BB%88%E0%BB%84%E0%BA%81%E0%BA%81%E0%BB%8D%E0%BA%84%E0%BA%B4%E0%BA%94%E0%BA%AE%E0%BA%AD%E0%BA%94)%20GX2",
+    "mood": "love",
+    "tags": [
+      "ระยะทาง",
+      "ความคิดถึง",
+      "ลาว"
+    ],
+    "bpm": "กลาง (88 BPM)",
+    "lang": "lao",
+    "animeId": 11,
+    "animeMatch": [
+      100,
+      30,
+      4
+    ],
+    "reason": "เพลงหวานละมุน \"อยู่ไกลกะคิดฮอด (ຢູ່ໄກກໍຄິດຮອດ)\" โดย GX2 เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2011,
+    "title": "น้องคนงาม (ນ້ອງຄົນງາມ)",
+    "artist": "GX2",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000034321aeb/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B8%99%E0%B8%87%E0%B8%B2",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B8%99%E0%B8%87%E0%B8%B2%E0%B8%A1%20(%E0%BA%99%E0%BB%89%E0%BA%AD%E0%BA%87%E0%BA%84%E0%BA%BB%E0%BA%99%E0%BA%87%E0%BA%B2%E0%BA%A1)%20GX2",
+    "mood": "love",
+    "tags": [
+      "ชื่นชม",
+      "สาวงาม",
+      "หวาน"
+    ],
+    "bpm": "กลาง (94 BPM)",
+    "lang": "lao",
+    "animeId": 12,
+    "animeMatch": [
+      50,
+      6,
+      200
+    ],
+    "reason": "เพลงหวานละมุน \"น้องคนงาม (ນ້ອງຄົນງາມ)\" โดย GX2 เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2012,
+    "title": "ใจพัง (ໃຈພັງ)",
+    "artist": "GX2",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003baee730/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%83%E0%B8%88%E0%B8%9E%E0%B8%B1%E0%B8%87%20(%E0%BB%83",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%83%E0%B8%88%E0%B8%9E%E0%B8%B1%E0%B8%87%20(%E0%BB%83%E0%BA%88%E0%BA%9E%E0%BA%B1%E0%BA%87)%20GX2",
+    "mood": "sad",
+    "tags": [
+      "ใจสลาย",
+      "มืดมน",
+      "ลาว"
+    ],
+    "bpm": "ช้า (68 BPM)",
+    "lang": "lao",
+    "animeId": 13,
+    "animeMatch": [
+      30,
+      200
+    ],
+    "reason": "เพลงลาวสุดซึ้ง \"ใจพัง (ໃຈພັງ)\" (GX2) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
+    "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2013,
+    "title": "หัวใจสะออน (ຫົວໃຈສະອອນ)",
+    "artist": "T'JAME Uno",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000040e9f52b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AB%E0%B8%B1%E0%B8%A7%E0%B9%83%E0%B8%88%E0%B8%AA%E0%B8%B0%E0%B8%AD",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%B1%E0%B8%A7%E0%B9%83%E0%B8%88%E0%B8%AA%E0%B8%B0%E0%B8%AD%E0%B8%AD%E0%B8%99%20(%E0%BA%AB%E0%BA%BB%E0%BA%A7%E0%BB%83%E0%BA%88%E0%BA%AA%E0%BA%B0%E0%BA%AD%E0%BA%AD%E0%BA%99)%20T'JAME%20Uno",
+    "mood": "love",
+    "tags": [
+      "หัวใจ",
+      "สะออน",
+      "ลาว",
+      "หวาน"
+    ],
+    "bpm": "กลาง (90 BPM)",
+    "lang": "lao",
+    "animeId": 14,
+    "animeMatch": [
+      7,
+      30,
+      4
+    ],
+    "reason": "เพลงหวานละมุน \"หัวใจสะออน (ຫົວໃຈສະອອນ)\" โดย T'JAME Uno เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2014,
+    "title": "แพ้ทางสาวลาว",
+    "artist": "T'JAME Uno",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000046cc7a4d/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%81%E0%B8%9E%E0%B9%89%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%AA%E0%B8%B2",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%9E%E0%B9%89%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%A7%20T'JAME%20Uno",
+    "mood": "happy",
+    "tags": [
+      "แพ้ทาง",
+      "สาวลาว",
+      "น่ารัก"
+    ],
+    "bpm": "เร็ว (115 BPM)",
+    "lang": "lao",
+    "animeId": 15,
+    "animeMatch": [
+      150,
+      8,
+      50
+    ],
+    "reason": "เพลงจังหวะสนุกสนาน \"แพ้ทางสาวลาว\" (T'JAME Uno) นำความสดใสมีชีวิตชีวามาใส่ในคลิปตัดต่อได้อย่างลงตัว",
+    "typoIdea": "ใช้ฟอนต์หนาสีส้มสดใส กระโดดตามจังหวะบีท พร้อมประกายแสงดาววิบวับรอบตัวอักษร",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2015,
+    "title": "อ้ายมันจน (ອ້າຍມັນຈົນ)",
+    "artist": "T'JAME Uno",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005f0b7069/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AD%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%A1%E0%B8%B1%E0%B8%99%E0%B8%88",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%A1%E0%B8%B1%E0%B8%99%E0%B8%88%E0%B8%99%20(%E0%BA%AD%E0%BB%89%E0%BA%B2%E0%BA%8D%E0%BA%A1%E0%BA%B1%E0%BA%99%E0%BA%88%E0%BA%BB%E0%BA%99)%20T'JAME%20Uno",
+    "mood": "sad",
+    "tags": [
+      "คนจน",
+      "เจียมตัว",
+      "ลาว"
+    ],
+    "bpm": "กลาง (82 BPM)",
+    "lang": "lao",
+    "animeId": 16,
+    "animeMatch": [
+      200,
+      2,
+      15
+    ],
+    "reason": "เพลงลาวสุดซึ้ง \"อ้ายมันจน (ອ້າຍມັນຈົນ)\" (T'JAME Uno) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
+    "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2016,
+    "title": "ฮักสาวฝั่งของ",
+    "artist": "T'JAME Uno",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000058a962a0/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%9D%E0%B8%B1",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%9D%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%AD%E0%B8%87%20T'JAME%20Uno",
+    "mood": "love",
+    "tags": [
+      "แม่น้ำโขง",
+      "สาวฝั่งโขง",
+      "รัก"
+    ],
+    "bpm": "กลาง (92 BPM)",
+    "lang": "lao",
+    "animeId": 17,
+    "animeMatch": [
+      8,
+      100
+    ],
+    "reason": "เพลงหวานละมุน \"ฮักสาวฝั่งของ\" โดย T'JAME Uno เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2017,
+    "title": "บ่มีไผฮัก (ບໍ່ມີໃຜຮັກ)",
+    "artist": "T'JAME Uno",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000033437427/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9A%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%84%E0%B8%9C%E0%B8%AE%E0%B8%B1",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9A%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%84%E0%B8%9C%E0%B8%AE%E0%B8%B1%E0%B8%81%20(%E0%BA%9A%E0%BB%8D%E0%BB%88%E0%BA%A1%E0%BA%B5%E0%BB%83%E0%BA%9C%E0%BA%AE%E0%BA%B1%E0%BA%81)%20T'JAME%20Uno",
+    "mood": "sad",
+    "tags": [
+      "ไม่มีใคร",
+      "เดียวดาย",
+      "ลาว"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "lao",
+    "animeId": 18,
+    "animeMatch": [
+      25,
+      9
+    ],
+    "reason": "เพลงลาวสุดซึ้ง \"บ่มีไผฮัก (ບໍ່ມີໃຜຮັກ)\" (T'JAME Uno) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
+    "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2018,
+    "title": "อยากเป็นคนฮักของเจ้า (ຢາກເປັນຄົນຮັກຂອງເຈົ້າ)",
+    "artist": "Taiy Akard",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002d1f7f5c/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AD%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%84%E0%B8%99%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%20(%E0%BA%A2%E0%BA%B2%E0%BA%81%E0%BB%80%E0%BA%9B%E0%BA%B1%E0%BA%99%E0%BA%84%E0%BA%BB%E0%BA%99%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BA%82%E0%BA%AD%E0%BA%87%E0%BB%80%E0%BA%88%E0%BA%BB%E0%BB%89%E0%BA%B2)%20Taiy%20Akard",
+    "mood": "love",
+    "tags": [
+      "สารภาพรัก",
+      "ลาว",
+      "ละมุน"
+    ],
+    "bpm": "กลาง (88 BPM)",
+    "lang": "lao",
+    "animeId": 19,
+    "animeMatch": [
+      25,
+      150
+    ],
+    "reason": "เพลงหวานละมุน \"อยากเป็นคนฮักของเจ้า (ຢາກເປັນຄົນຮັກຂອງເຈົ້າ)\" โดย Taiy Akard เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2019,
+    "title": "บอกข้อยแด่ (ບອກຂ້ອຍແດ່)",
+    "artist": "Taiy Akard",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003aa20264/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B9%81",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B9%81%E0%B8%94%E0%B9%88%20(%E0%BA%9A%E0%BA%AD%E0%BA%81%E0%BA%82%E0%BB%89%E0%BA%AD%E0%BA%8D%E0%BB%81%E0%BA%94%E0%BB%88)%20Taiy%20Akard",
+    "mood": "love",
+    "tags": [
+      "บอกฉันที",
+      "อ้อน",
+      "ลาว"
+    ],
+    "bpm": "กลาง (92 BPM)",
+    "lang": "lao",
+    "animeId": 20,
+    "animeMatch": [
+      50,
+      150
+    ],
+    "reason": "เพลงหวานละมุน \"บอกข้อยแด่ (ບອກຂ້ອຍແດ່)\" โดย Taiy Akard เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2020,
+    "title": "ฮักเจ้าเบิดใจ (ຮັກເຈົ້າເບີດໃຈ)",
+    "artist": "Taiy Akard",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006922dfa3/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%80",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%9A%E0%B8%B4%E0%B8%94%E0%B9%83%E0%B8%88%20(%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BB%80%E0%BA%88%E0%BA%BB%E0%BB%89%E0%BA%B2%E0%BB%80%E0%BA%9A%E0%BA%B5%E0%BA%94%E0%BB%83%E0%BA%88)%20Taiy%20Akard",
+    "mood": "love",
+    "tags": [
+      "หมดใจ",
+      "รักแท้",
+      "ลาว"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "lao",
+    "animeId": 21,
+    "animeMatch": [
+      50,
+      20
+    ],
+    "reason": "เพลงหวานละมุน \"ฮักเจ้าเบิดใจ (ຮັກເຈົ້າເບີດໃຈ)\" โดย Taiy Akard เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2021,
+    "title": "ปาฏิหาริย์ (ປາຕິຫານ)",
+    "artist": "Taiy Akard",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000013afb239/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9B%E0%B8%B2%E0%B8%8F%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%B4",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9B%E0%B8%B2%E0%B8%8F%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%B4%E0%B8%A2%E0%B9%8C%20(%E0%BA%9B%E0%BA%B2%E0%BA%95%E0%BA%B4%E0%BA%AB%E0%BA%B2%E0%BA%99)%20Taiy%20Akard",
+    "mood": "epic",
+    "tags": [
+      "ปาฏิหาริย์",
+      "หวัง",
+      "ลาว"
+    ],
+    "bpm": "กลาง (95 BPM)",
+    "lang": "lao",
+    "animeId": 22,
+    "animeMatch": [
+      7,
+      6
+    ],
+    "reason": "เพลงทรงพลัง \"ปาฏิหาริย์ (ປາຕິຫານ)\" (Taiy Akard) มีเมโลดี้ที่ยิ่งใหญ่และตราตรึง เหมาะกับฉากไคลแม็กซ์ของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์สไตล์ศิลาจารึกสีทองอร่าม ขยายช้าๆ จากกึ่งกลางหน้าจอ พร้อมประกายละอองแสงพวยพุ่ง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2022,
+    "title": "ขอเวลาลืม (ຂໍເວລາລືມ)",
+    "artist": "Taiy Akard",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002480ed09/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%82%E0%B8%AD%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%A5%E0%B8%B7",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%82%E0%B8%AD%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%A5%E0%B8%B7%E0%B8%A1%20(%E0%BA%82%E0%BB%8D%E0%BB%80%E0%BA%A7%E0%BA%A5%E0%BA%B2%E0%BA%A5%E0%BA%B7%E0%BA%A1)%20Taiy%20Akard",
+    "mood": "sad",
+    "tags": [
+      "ขอเวลา",
+      "ตัดใจ",
+      "ลาว"
+    ],
+    "bpm": "ช้า (69 BPM)",
+    "lang": "lao",
+    "animeId": 23,
+    "animeMatch": [
+      1,
+      100
+    ],
+    "reason": "เพลงลาวสุดซึ้ง \"ขอเวลาลืม (ຂໍເວລາລືມ)\" (Taiy Akard) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
+    "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2023,
+    "title": "คิดฮอด (ຄິດຮອດ)",
+    "artist": "Aluna",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000072b6b05e/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%AE%E0%B8%AD%E0%B8%94%20(",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%AE%E0%B8%AD%E0%B8%94%20(%E0%BA%84%E0%BA%B4%E0%BA%94%E0%BA%AE%E0%BA%AD%E0%BA%94)%20Aluna",
+    "mood": "love",
+    "tags": [
+      "คิดถึง",
+      "ลาวสากล",
+      "ซึ้ง"
+    ],
+    "bpm": "ช้า (78 BPM)",
+    "lang": "lao",
+    "animeId": 24,
+    "animeMatch": [
+      7,
+      200
+    ],
+    "reason": "เพลงหวานละมุน \"คิดฮอด (ຄິດຮອດ)\" โดย Aluna เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2024,
+    "title": "เจ้าอยู่ไส (ເຈົ້າຢູ່ໃສ)",
+    "artist": "Aluna",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000476a7813/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AD%E0%B8%A2%E0%B8%B9%E0%B9%88",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AD%E0%B8%A2%E0%B8%B9%E0%B9%88%E0%B9%84%E0%B8%AA%20(%E0%BB%80%E0%BA%88%E0%BA%BB%E0%BB%89%E0%BA%B2%E0%BA%A2%E0%BA%B9%E0%BB%88%E0%BB%83%E0%BA%AA)%20Aluna",
+    "mood": "sad",
+    "tags": [
+      "ตามหา",
+      "เธออยู่ที่ไหน",
+      "ลาว"
+    ],
+    "bpm": "กลาง (85 BPM)",
+    "lang": "lao",
+    "animeId": 25,
+    "animeMatch": [
+      1,
+      6
+    ],
+    "reason": "เพลงลาวสุดซึ้ง \"เจ้าอยู่ไส (ເຈົ້າຢູ່ໃສ)\" (Aluna) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
+    "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2025,
+    "title": "โชคดีเด้อ (ໂຊກດີເດີ້)",
+    "artist": "Aluna",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000493bf4b9/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%82%E0%B8%8A%E0%B8%84%E0%B8%94%E0%B8%B5%E0%B9%80%E0%B8%94%E0%B9%89",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%82%E0%B8%8A%E0%B8%84%E0%B8%94%E0%B8%B5%E0%B9%80%E0%B8%94%E0%B9%89%E0%B8%AD%20(%E0%BB%82%E0%BA%8A%E0%BA%81%E0%BA%94%E0%BA%B5%E0%BB%80%E0%BA%94%E0%BA%B5%E0%BB%89)%20Aluna",
+    "mood": "chill",
+    "tags": [
+      "อวยพร",
+      "ยินดี",
+      "ลาว"
+    ],
+    "bpm": "กลาง (90 BPM)",
+    "lang": "lao",
+    "animeId": 26,
+    "animeMatch": [
+      9,
+      5
+    ],
+    "reason": "เสียงเพลงสบายๆ สไตล์ฝั่งโขง \"โชคดีเด้อ (ໂຊກດີເດີ້)\" จาก Aluna ให้มู้ดผ่อนคลาย เหมาะกับคลิปไทโปแนว Lo-Fi ธรรมชาติ",
+    "typoIdea": "ใช้ฟอนต์มินิมอลโปร่งสบาย สีเขียวใบตองหรือฟ้าคราม ค่อยๆ เลื่อนช้าๆ ดุจระลอกคลื่นแม่น้ำโขง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2026,
+    "title": "สาวลาวเวียง (ສາວລາວວຽງ)",
+    "artist": "Aluna",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000151c856a/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%A7",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%A7%E0%B8%B5%E0%B8%A2%E0%B8%87%20(%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BA%A5%E0%BA%B2%E0%BA%A7%E0%BA%A7%E0%BA%BD%E0%BA%87)%20Aluna",
+    "mood": "happy",
+    "tags": [
+      "เวียงจันทน์",
+      "สาวงาม",
+      "สดใส"
+    ],
+    "bpm": "เร็ว (110 BPM)",
+    "lang": "lao",
+    "animeId": 27,
+    "animeMatch": [
+      5,
+      4
+    ],
+    "reason": "เพลงจังหวะสนุกสนาน \"สาวลาวเวียง (ສາວລາວວຽງ)\" (Aluna) นำความสดใสมีชีวิตชีวามาใส่ในคลิปตัดต่อได้อย่างลงตัว",
+    "typoIdea": "ใช้ฟอนต์หนาสีส้มสดใส กระโดดตามจังหวะบีท พร้อมประกายแสงดาววิบวับรอบตัวอักษร",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2027,
+    "title": "กุหลาบเวียงจันทน์ (ກຸຫຼາບວຽງຈັນ)",
+    "artist": "Aluna",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000985f17f/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%81%E0%B8%B8%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%9A%E0%B9%80%E0%B8%A7",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%B8%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%9A%E0%B9%80%E0%B8%A7%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%99%E0%B9%8C%20(%E0%BA%81%E0%BA%B8%E0%BA%AB%E0%BA%BC%E0%BA%B2%E0%BA%9A%E0%BA%A7%E0%BA%BD%E0%BA%87%E0%BA%88%E0%BA%B1%E0%BA%99)%20Aluna",
+    "mood": "love",
+    "tags": [
+      "กุหลาบ",
+      "เวียงจันทน์",
+      "ละมุน"
+    ],
+    "bpm": "ช้า (74 BPM)",
+    "lang": "lao",
+    "animeId": 28,
+    "animeMatch": [
+      4,
+      10,
+      100
+    ],
+    "reason": "เพลงหวานละมุน \"กุหลาบเวียงจันทน์ (ກຸຫຼາບວຽງຈັນ)\" โดย Aluna เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2028,
+    "title": "ฮักแท้ (ຮັກແທ້)",
+    "artist": "Nutdao",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004f68bdbc/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B9%81%E0%B8%97%E0%B9%89%20(",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B9%81%E0%B8%97%E0%B9%89%20(%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BB%81%E0%BA%97%E0%BB%89)%20Nutdao",
+    "mood": "love",
+    "tags": [
+      "รักแท้",
+      "มั่นคง",
+      "ลาว"
+    ],
+    "bpm": "กลาง (86 BPM)",
+    "lang": "lao",
+    "animeId": 29,
+    "animeMatch": [
+      4,
+      7,
+      9
+    ],
+    "reason": "เพลงหวานละมุน \"ฮักแท้ (ຮັກແທ້)\" โดย Nutdao เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2029,
+    "title": "เจ้าคนเดียว (ເຈົ້າຄົນດຽວ)",
+    "artist": "Nutdao",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000115e5a9e/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%84%E0%B8%99%E0%B9%80%E0%B8%94",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%84%E0%B8%99%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B8%A7%20(%E0%BB%80%E0%BA%88%E0%BA%BB%E0%BB%89%E0%BA%B2%E0%BA%84%E0%BA%BB%E0%BA%99%E0%BA%94%E0%BA%BD%E0%BA%A7)%20Nutdao",
+    "mood": "love",
+    "tags": [
+      "คนเดียว",
+      "ใจเดียว",
+      "ลาว"
+    ],
+    "bpm": "กลาง (92 BPM)",
+    "lang": "lao",
+    "animeId": 30,
+    "animeMatch": [
+      6,
+      5
+    ],
+    "reason": "เพลงหวานละมุน \"เจ้าคนเดียว (ເຈົ້າຄົນດຽວ)\" โดย Nutdao เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2030,
+    "title": "รอคอย (ລໍຄອຍ)",
+    "artist": "Nutdao",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000744bed69/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A3%E0%B8%AD%E0%B8%84%E0%B8%AD%E0%B8%A2%20(%E0%BA%A5",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A3%E0%B8%AD%E0%B8%84%E0%B8%AD%E0%B8%A2%20(%E0%BA%A5%E0%BB%8D%E0%BA%84%E0%BA%AD%E0%BA%8D)%20Nutdao",
+    "mood": "sad",
+    "tags": [
+      "รอ",
+      "เฝ้ารอ",
+      "ลาว"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "lao",
+    "animeId": 31,
+    "animeMatch": [
+      6,
+      5
+    ],
+    "reason": "เพลงลาวสุดซึ้ง \"รอคอย (ລໍຄອຍ)\" (Nutdao) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
+    "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2031,
+    "title": "อย่าถิ่มอ้ายเด้อ (ຢ່າຖິ້ມອ້າຍເດີ້)",
+    "artist": "Tar A'Pacts",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000003a447fa/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%96%E0%B8%B4%E0%B9%88%E0%B8%A1",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%96%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%AD%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%94%E0%B9%89%E0%B8%AD%20(%E0%BA%A2%E0%BB%88%E0%BA%B2%E0%BA%96%E0%BA%B4%E0%BB%89%E0%BA%A1%E0%BA%AD%E0%BB%89%E0%BA%B2%E0%BA%8D%E0%BB%80%E0%BA%94%E0%BA%B5%E0%BB%89)%20Tar%20A'Pacts",
+    "mood": "sad",
+    "tags": [
+      "อย่าทิ้ง",
+      "อ้อนวอน",
+      "ลาว"
+    ],
+    "bpm": "กลาง (84 BPM)",
+    "lang": "lao",
+    "animeId": 32,
+    "animeMatch": [
+      100,
+      10
+    ],
+    "reason": "เพลงลาวสุดซึ้ง \"อย่าถิ่มอ้ายเด้อ (ຢ່າຖິ້ມອ້າຍເດີ້)\" (Tar A'Pacts) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
+    "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2032,
+    "title": "ฮักหลาย (ຮັກຫຼາຍ)",
+    "artist": "Tar A'Pacts",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002684c881/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%A2%20",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%A2%20(%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BA%AB%E0%BA%BC%E0%BA%B2%E0%BA%8D)%20Tar%20A'Pacts",
+    "mood": "love",
+    "tags": [
+      "รักมาก",
+      "จริงใจ",
+      "ลาว"
+    ],
+    "bpm": "กลาง (90 BPM)",
+    "lang": "lao",
+    "animeId": 33,
+    "animeMatch": [
+      8,
+      150
+    ],
+    "reason": "เพลงหวานละมุน \"ฮักหลาย (ຮັກຫຼາຍ)\" โดย Tar A'Pacts เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2033,
+    "title": "น้ำตาชายคา (ນ້ຳຕາຊາຍຄາ)",
+    "artist": "Tar A'Pacts",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005ae60a76/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B8%B2%E0%B8%8A%E0%B8%B2%E0%B8%A2",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B8%B2%E0%B8%8A%E0%B8%B2%E0%B8%A2%E0%B8%84%E0%B8%B2%20(%E0%BA%99%E0%BB%89%E0%BA%B3%E0%BA%95%E0%BA%B2%E0%BA%8A%E0%BA%B2%E0%BA%8D%E0%BA%84%E0%BA%B2)%20Tar%20A'Pacts",
+    "mood": "sad",
+    "tags": [
+      "น้ำตา",
+      "รันทด",
+      "ลาว"
+    ],
+    "bpm": "ช้า (68 BPM)",
+    "lang": "lao",
+    "animeId": 34,
+    "animeMatch": [
+      20,
+      15,
+      150
+    ],
+    "reason": "เพลงลาวสุดซึ้ง \"น้ำตาชายคา (ນ້ຳຕາຊາຍຄາ)\" (Tar A'Pacts) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
+    "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2034,
+    "title": "คนมีประวัติ (ຄົນມີປະຫວັດ)",
+    "artist": "Sam Intharaphithak",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003b02d658/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%99%E0%B8%A1%E0%B8%B5%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%A7",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%99%E0%B8%A1%E0%B8%B5%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%A7%E0%B8%B1%E0%B8%95%E0%B8%B4%20(%E0%BA%84%E0%BA%BB%E0%BA%99%E0%BA%A1%E0%BA%B5%E0%BA%9B%E0%BA%B0%E0%BA%AB%E0%BA%A7%E0%BA%B1%E0%BA%94)%20Sam%20Intharaphithak",
+    "mood": "chill",
+    "tags": [
+      "อดีต",
+      "R&B",
+      "ลาว"
+    ],
+    "bpm": "กลาง (95 BPM)",
+    "lang": "lao",
+    "animeId": 35,
+    "animeMatch": [
+      6,
+      20,
+      2
+    ],
+    "reason": "เสียงเพลงสบายๆ สไตล์ฝั่งโขง \"คนมีประวัติ (ຄົນມີປະຫວັດ)\" จาก Sam Intharaphithak ให้มู้ดผ่อนคลาย เหมาะกับคลิปไทโปแนว Lo-Fi ธรรมชาติ",
+    "typoIdea": "ใช้ฟอนต์มินิมอลโปร่งสบาย สีเขียวใบตองหรือฟ้าคราม ค่อยๆ เลื่อนช้าๆ ดุจระลอกคลื่นแม่น้ำโขง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2035,
+    "title": "ฮัก (ຮັກ)",
+    "artist": "Sam Intharaphithak",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000333b4556/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AE%E0%B8%B1%E0%B8%81%20(%E0%BA%AE%E0%BA%B1%E0%BA%81",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AE%E0%B8%B1%E0%B8%81%20(%E0%BA%AE%E0%BA%B1%E0%BA%81)%20Sam%20Intharaphithak",
+    "mood": "love",
+    "tags": [
+      "รัก",
+      "R&Bลาว",
+      "นุ่มนวล"
+    ],
+    "bpm": "ช้า (76 BPM)",
+    "lang": "lao",
+    "animeId": 36,
+    "animeMatch": [
+      2,
+      6
+    ],
+    "reason": "เพลงหวานละมุน \"ฮัก (ຮັກ)\" โดย Sam Intharaphithak เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2036,
+    "title": "เพลงรัก (ເພງຮັກ)",
+    "artist": "Sam Intharaphithak",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005b5985ae/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81%20",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81%20(%E0%BB%80%E0%BA%9E%E0%BA%87%E0%BA%AE%E0%BA%B1%E0%BA%81)%20Sam%20Intharaphithak",
+    "mood": "love",
+    "tags": [
+      "บทเพลง",
+      "สารภาพ",
+      "ลาว"
+    ],
+    "bpm": "กลาง (88 BPM)",
+    "lang": "lao",
+    "animeId": 37,
+    "animeMatch": [
+      9,
+      4,
+      15
+    ],
+    "reason": "เพลงหวานละมุน \"เพลงรัก (ເພງຮັກ)\" โดย Sam Intharaphithak เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2037,
+    "title": "คิดถึงเสมอ (ຄິດຮອດສະເໝີ)",
+    "artist": "Sam Intharaphithak",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006e965a22/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%96%E0%B8%B6%E0%B8%87%E0%B9%80%E0%B8%AA",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%96%E0%B8%B6%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%A1%E0%B8%AD%20(%E0%BA%84%E0%BA%B4%E0%BA%94%E0%BA%AE%E0%BA%AD%E0%BA%94%E0%BA%AA%E0%BA%B0%E0%BB%80%E0%BB%9D%E0%BA%B5)%20Sam%20Intharaphithak",
+    "mood": "love",
+    "tags": [
+      "คิดถึง",
+      "อบอุ่น",
+      "ลาว"
+    ],
+    "bpm": "ช้า (75 BPM)",
+    "lang": "lao",
+    "animeId": 38,
+    "animeMatch": [
+      3,
+      9,
+      150
+    ],
+    "reason": "เพลงหวานละมุน \"คิดถึงเสมอ (ຄິດຮອດສະເໝີ)\" โดย Sam Intharaphithak เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2038,
+    "title": "กุหลาบปากซัน (ກຸຫຼາບປາກຊັນ)",
+    "artist": "ก. วิเสส",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000012e2e9e7/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%81%E0%B8%B8%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%9A%E0%B8%9B%E0%B8%B2",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%B8%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%9A%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%8B%E0%B8%B1%E0%B8%99%20(%E0%BA%81%E0%BA%B8%E0%BA%AB%E0%BA%BC%E0%BA%B2%E0%BA%9A%E0%BA%9B%E0%BA%B2%E0%BA%81%E0%BA%8A%E0%BA%B1%E0%BA%99)%20%E0%B8%81.%20%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%AA%E0%B8%AA",
+    "mood": "love",
+    "tags": [
+      "คลาสสิก",
+      "ปากซัน",
+      "ตำนาน",
+      "ลาว"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "lao",
+    "animeId": 39,
+    "animeMatch": [
+      9,
+      15
+    ],
+    "reason": "เพลงหวานละมุน \"กุหลาบปากซัน (ກຸຫຼາບປາກຊັນ)\" โดย ก. วิเสส เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2039,
+    "title": "ดวงจำปา (ດວງຈຳປາ)",
+    "artist": "ศิลปินแห่งชาติลาว",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000006fe5772/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%B3%E0%B8%9B%E0%B8%B2%20",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%B3%E0%B8%9B%E0%B8%B2%20(%E0%BA%94%E0%BA%A7%E0%BA%87%E0%BA%88%E0%BA%B3%E0%BA%9B%E0%BA%B2)%20%E0%B8%A8%E0%B8%B4%E0%B8%A5%E0%B8%9B%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A5%E0%B8%B2%E0%B8%A7",
+    "mood": "chill",
+    "tags": [
+      "จำปา",
+      "เพลงประจำชาติ",
+      "คลาสสิก"
+    ],
+    "bpm": "ช้า (65 BPM)",
+    "lang": "lao",
+    "animeId": 40,
+    "animeMatch": [
+      7,
+      8,
+      15
+    ],
+    "reason": "เสียงเพลงสบายๆ สไตล์ฝั่งโขง \"ดวงจำปา (ດວງຈຳປາ)\" จาก ศิลปินแห่งชาติลาว ให้มู้ดผ่อนคลาย เหมาะกับคลิปไทโปแนว Lo-Fi ธรรมชาติ",
+    "typoIdea": "ใช้ฟอนต์มินิมอลโปร่งสบาย สีเขียวใบตองหรือฟ้าคราม ค่อยๆ เลื่อนช้าๆ ดุจระลอกคลื่นแม่น้ำโขง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2040,
+    "title": "สาวดงดอกไม้ (ສາວດົງດອກໄມ້)",
+    "artist": "แสงสุรีย์",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000535bd49e/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%94%E0%B8%87%E0%B8%94%E0%B8%AD%E0%B8%81",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%94%E0%B8%87%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B9%84%E0%B8%A1%E0%B9%89%20(%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BA%94%E0%BA%BB%E0%BA%87%E0%BA%94%E0%BA%AD%E0%BA%81%E0%BB%84%E0%BA%A1%E0%BB%89)%20%E0%B9%81%E0%B8%AA%E0%B8%87%E0%B8%AA%E0%B8%B8%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B9%8C",
+    "mood": "happy",
+    "tags": [
+      "ดอกไม้",
+      "ธรรมชาติ",
+      "สดชื่น"
+    ],
+    "bpm": "กลาง (100 BPM)",
+    "lang": "lao",
+    "animeId": 41,
+    "animeMatch": [
+      7,
+      8,
+      4
+    ],
+    "reason": "เพลงจังหวะสนุกสนาน \"สาวดงดอกไม้ (ສາວດົງດອກໄມ້)\" (แสงสุรีย์) นำความสดใสมีชีวิตชีวามาใส่ในคลิปตัดต่อได้อย่างลงตัว",
+    "typoIdea": "ใช้ฟอนต์หนาสีส้มสดใส กระโดดตามจังหวะบีท พร้อมประกายแสงดาววิบวับรอบตัวอักษร",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2041,
+    "title": "สาวบ่อแก้ว (ສາວບໍ່ແກ້ວ)",
+    "artist": "บัวเงิน ซาพูวง",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000345e116b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%9A%E0%B9%88%E0%B8%AD%E0%B9%81%E0%B8%81",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%9A%E0%B9%88%E0%B8%AD%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7%20(%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BA%9A%E0%BB%8D%E0%BB%88%E0%BB%81%E0%BA%81%E0%BB%89%E0%BA%A7)%20%E0%B8%9A%E0%B8%B1%E0%B8%A7%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%20%E0%B8%8B%E0%B8%B2%E0%B8%9E%E0%B8%B9%E0%B8%A7%E0%B8%87",
+    "mood": "love",
+    "tags": [
+      "บ่อแก้ว",
+      "สาวงาม",
+      "หวาน"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "lao",
+    "animeId": 42,
+    "animeMatch": [
+      30,
+      50,
+      5
+    ],
+    "reason": "เพลงหวานละมุน \"สาวบ่อแก้ว (ສາວບໍ່ແກ້ວ)\" โดย บัวเงิน ซาพูวง เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2042,
+    "title": "สาวหลวงพระบาง (ສາວຫຼວງພະບາງ)",
+    "artist": "สุลิยา",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007525b4dc/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B8%9E",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B2%E0%B8%87%20(%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BA%AB%E0%BA%BC%E0%BA%A7%E0%BA%87%E0%BA%9E%E0%BA%B0%E0%BA%9A%E0%BA%B2%E0%BA%87)%20%E0%B8%AA%E0%B8%B8%E0%B8%A5%E0%B8%B4%E0%B8%A2%E0%B8%B2",
+    "mood": "chill",
+    "tags": [
+      "หลวงพระบาง",
+      "มรดกโลก",
+      "สงบ"
+    ],
+    "bpm": "กลาง (85 BPM)",
+    "lang": "lao",
+    "animeId": 43,
+    "animeMatch": [
+      50,
+      8
+    ],
+    "reason": "เสียงเพลงสบายๆ สไตล์ฝั่งโขง \"สาวหลวงพระบาง (ສາວຫຼວງພະບາງ)\" จาก สุลิยา ให้มู้ดผ่อนคลาย เหมาะกับคลิปไทโปแนว Lo-Fi ธรรมชาติ",
+    "typoIdea": "ใช้ฟอนต์มินิมอลโปร่งสบาย สีเขียวใบตองหรือฟ้าคราม ค่อยๆ เลื่อนช้าๆ ดุจระลอกคลื่นแม่น้ำโขง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2043,
+    "title": "อ้ายฮักเจ้าแฮง (ອ້າຍຮັກເຈົ້າແຮງ)",
+    "artist": "เต๊ะ ตระกูลตอ ft. ลาว",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000036c1e35f/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AD%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B9%80",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%81%E0%B8%AE%E0%B8%87%20(%E0%BA%AD%E0%BB%89%E0%BA%B2%E0%BA%8D%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BB%80%E0%BA%88%E0%BA%BB%E0%BB%89%E0%BA%B2%E0%BB%81%E0%BA%AE%E0%BA%87)%20%E0%B9%80%E0%B8%95%E0%B9%8A%E0%B8%B0%20%E0%B8%95%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B9%E0%B8%A5%E0%B8%95%E0%B8%AD%20ft.%20%E0%B8%A5%E0%B8%B2%E0%B8%A7",
+    "mood": "love",
+    "tags": [
+      "รักแรง",
+      "อีสานลาว",
+      "ฮิต"
+    ],
+    "bpm": "กลาง (94 BPM)",
+    "lang": "lao",
+    "animeId": 44,
+    "animeMatch": [
+      2,
+      6,
+      25
+    ],
+    "reason": "เพลงหวานละมุน \"อ้ายฮักเจ้าแฮง (ອ້າຍຮັກເຈົ້າແຮງ)\" โดย เต๊ะ ตระกูลตอ ft. ลาว เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2044,
+    "title": "เซิ้งบั้งไฟพญานาค (ເຊິ້ງບັ້ງໄຟ)",
+    "artist": "หมอลำลาวคณะใหญ่",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000030220ae9/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%8B%E0%B8%B4%E0%B9%89%E0%B8%87%E0%B8%9A%E0%B8%B1%E0%B9%89",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%8B%E0%B8%B4%E0%B9%89%E0%B8%87%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%84%E0%B8%9F%E0%B8%9E%E0%B8%8D%E0%B8%B2%E0%B8%99%E0%B8%B2%E0%B8%84%20(%E0%BB%80%E0%BA%8A%E0%BA%B4%E0%BB%89%E0%BA%87%E0%BA%9A%E0%BA%B1%E0%BB%89%E0%BA%87%E0%BB%84%E0%BA%9F)%20%E0%B8%AB%E0%B8%A1%E0%B8%AD%E0%B8%A5%E0%B8%B3%E0%B8%A5%E0%B8%B2%E0%B8%A7%E0%B8%84%E0%B8%93%E0%B8%B0%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88",
+    "mood": "hype",
+    "tags": [
+      "เซิ้ง",
+      "บั้งไฟ",
+      "มันส์",
+      "หมอลำ"
+    ],
+    "bpm": "เร็ว (142 BPM)",
+    "lang": "lao",
+    "animeId": 45,
+    "animeMatch": [
+      15,
+      7
+    ],
+    "reason": "บีทเดือดสะใจ \"เซิ้งบั้งไฟพญานาค (ເຊິ້ງບັ້ງໄຟ)\" โดย หมอลำลาวคณะใหญ่ ท่อนฮุกกระแทกอารมณ์ ปลุกพลังให้คลิปอนิเมะแอกชันได้อย่างยอดเยี่ยม",
+    "typoIdea": "ใช้ฟอนต์ Impact สีแดงเพลิง กระตุกสั่นตามจังหวะกลองและเบส มีเส้นไฟนีออนพุ่งผ่านตัวหนังสือ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2045,
+    "title": "ลำตังหวาย (ລຳຕັງຫວาย)",
+    "artist": "ศิลปินพื้นบ้านลาวใต้",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000fd5a94c/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A5%E0%B8%B3%E0%B8%95%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B2",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B3%E0%B8%95%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B2%E0%B8%A2%20(%E0%BA%A5%E0%BA%B3%E0%BA%95%E0%BA%B1%E0%BA%87%E0%BA%AB%E0%BA%A7%E0%B8%B2%E0%B8%A2)%20%E0%B8%A8%E0%B8%B4%E0%B8%A5%E0%B8%9B%E0%B8%B4%E0%B8%99%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%A5%E0%B8%B2%E0%B8%A7%E0%B9%83%E0%B8%95%E0%B9%89",
+    "mood": "happy",
+    "tags": [
+      "ตังหวาย",
+      "ฟ้อนรำ",
+      "ประเพณี"
+    ],
+    "bpm": "เร็ว (126 BPM)",
+    "lang": "lao",
+    "animeId": 46,
+    "animeMatch": [
+      1,
+      5
+    ],
+    "reason": "เพลงจังหวะสนุกสนาน \"ลำตังหวาย (ລຳຕັງຫວาย)\" (ศิลปินพื้นบ้านลาวใต้) นำความสดใสมีชีวิตชีวามาใส่ในคลิปตัดต่อได้อย่างลงตัว",
+    "typoIdea": "ใช้ฟอนต์หนาสีส้มสดใส กระโดดตามจังหวะบีท พร้อมประกายแสงดาววิบวับรอบตัวอักษร",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2046,
+    "title": "สายตาหลอกกันไม่ได้ (Lao Ver.)",
+    "artist": "ติ้งหน่อง & ผองเพื่อน",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000074f14bf0/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%95%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%AD",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%95%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%AD%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%20(Lao%20Ver.)%20%E0%B8%95%E0%B8%B4%E0%B9%89%E0%B8%87%E0%B8%AB%E0%B8%99%E0%B9%88%E0%B8%AD%E0%B8%87%20%26%20%E0%B8%9C%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99",
+    "mood": "love",
+    "tags": [
+      "สายตา",
+      "หวาน",
+      "ลาวเวอร์ชั่น"
+    ],
+    "bpm": "กลาง (95 BPM)",
+    "lang": "lao",
+    "animeId": 47,
+    "animeMatch": [
+      7,
+      25
+    ],
+    "reason": "เพลงหวานละมุน \"สายตาหลอกกันไม่ได้ (Lao Ver.)\" โดย ติ้งหน่อง & ผองเพื่อน เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2047,
+    "title": "กลิ่นจำปา (ກິ່ນຈຳປາ)",
+    "artist": "วงดนตรีร่วมสมัยเวียงจันทน์",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000142ed89c/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%81%E0%B8%A5%E0%B8%B4%E0%B9%88%E0%B8%99%E0%B8%88%E0%B8%B3%E0%B8%9B",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%A5%E0%B8%B4%E0%B9%88%E0%B8%99%E0%B8%88%E0%B8%B3%E0%B8%9B%E0%B8%B2%20(%E0%BA%81%E0%BA%B4%E0%BB%88%E0%BA%99%E0%BA%88%E0%BA%B3%E0%BA%9B%E0%BA%B2)%20%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5%E0%B8%A3%E0%B9%88%E0%B8%A7%E0%B8%A1%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%A2%E0%B9%80%E0%B8%A7%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%99%E0%B9%8C",
+    "mood": "chill",
+    "tags": [
+      "จำปา",
+      "กลิ่นหอม",
+      "ลอยล่อง"
+    ],
+    "bpm": "ช้า (68 BPM)",
+    "lang": "lao",
+    "animeId": 48,
+    "animeMatch": [
+      9,
+      200
+    ],
+    "reason": "เสียงเพลงสบายๆ สไตล์ฝั่งโขง \"กลิ่นจำปา (ກິ່ນຈຳປາ)\" จาก วงดนตรีร่วมสมัยเวียงจันทน์ ให้มู้ดผ่อนคลาย เหมาะกับคลิปไทโปแนว Lo-Fi ธรรมชาติ",
+    "typoIdea": "ใช้ฟอนต์มินิมอลโปร่งสบาย สีเขียวใบตองหรือฟ้าคราม ค่อยๆ เลื่อนช้าๆ ดุจระลอกคลื่นแม่น้ำโขง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2048,
+    "title": "คิดฮอดบ้านเกิด (ຄິດຮອດບ້ານເກີດ)",
+    "artist": "วงดอกจำปา",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003f292318/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%AE%E0%B8%AD%E0%B8%94%E0%B8%9A%E0%B9%89",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%AE%E0%B8%AD%E0%B8%94%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B9%80%E0%B8%81%E0%B8%B4%E0%B8%94%20(%E0%BA%84%E0%BA%B4%E0%BA%94%E0%BA%AE%E0%BA%AD%E0%BA%94%E0%BA%9A%E0%BB%89%E0%BA%B2%E0%BA%99%E0%BB%80%E0%BA%81%E0%BA%B5%E0%BA%94)%20%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B8%88%E0%B8%B3%E0%B8%9B%E0%B8%B2",
+    "mood": "sad",
+    "tags": [
+      "บ้านเกิด",
+      "ไกลบ้าน",
+      "คิดถึง"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "lao",
+    "animeId": 49,
+    "animeMatch": [
+      6,
+      25
+    ],
+    "reason": "เพลงลาวสุดซึ้ง \"คิดฮอดบ้านเกิด (ຄິດຮອດບ້ານເກີດ)\" (วงดอกจำปา) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
+    "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2049,
+    "title": "สัจจะลูกผู้ชาย (ສັດຈະລູກຜູ້ຊາຍ)",
+    "artist": "ไก่ ปากเซ",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007c773dc2/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B1%E0%B8%88%E0%B8%88%E0%B8%B0%E0%B8%A5%E0%B8%B9%E0%B8%81",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B1%E0%B8%88%E0%B8%88%E0%B8%B0%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B8%8A%E0%B8%B2%E0%B8%A2%20(%E0%BA%AA%E0%BA%B1%E0%BA%94%E0%BA%88%E0%BA%B0%E0%BA%A5%E0%BA%B9%E0%BA%81%E0%BA%9C%E0%BA%B9%E0%BB%89%E0%BA%8A%E0%BA%B2%E0%BA%8D)%20%E0%B9%84%E0%B8%81%E0%B9%88%20%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B9%80%E0%B8%8B",
+    "mood": "hype",
+    "tags": [
+      "ลูกผู้ชาย",
+      "สัญญา",
+      "หนักแน่น"
+    ],
+    "bpm": "เร็ว (118 BPM)",
+    "lang": "lao",
+    "animeId": 50,
+    "animeMatch": [
+      150,
+      4,
+      5
+    ],
+    "reason": "บีทเดือดสะใจ \"สัจจะลูกผู้ชาย (ສັດຈະລູກຜູ້ຊາຍ)\" โดย ไก่ ปากเซ ท่อนฮุกกระแทกอารมณ์ ปลุกพลังให้คลิปอนิเมะแอกชันได้อย่างยอดเยี่ยม",
+    "typoIdea": "ใช้ฟอนต์ Impact สีแดงเพลิง กระตุกสั่นตามจังหวะกลองและเบส มีเส้นไฟนีออนพุ่งผ่านตัวหนังสือ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2050,
+    "title": "คืนเดือนหงายริมของ (ຄືນເດືອນຫງາຍ)",
+    "artist": "ดาวเรือง",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000056d43805/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B9%80%E0%B8%94%E0%B8%B7%E0%B8%AD%E0%B8%99",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B9%80%E0%B8%94%E0%B8%B7%E0%B8%AD%E0%B8%99%E0%B8%AB%E0%B8%87%E0%B8%B2%E0%B8%A2%E0%B8%A3%E0%B8%B4%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%20(%E0%BA%84%E0%BA%B7%E0%BA%99%E0%BB%80%E0%BA%94%E0%BA%B7%E0%BA%AD%E0%BA%99%E0%BA%AB%E0%BA%87%E0%BA%B2%E0%BA%8D)%20%E0%B8%94%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B8%87",
+    "mood": "chill",
+    "tags": [
+      "แม่น้ำโขง",
+      "คืนเพ็ญ",
+      "โรแมนติก"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "lao",
+    "animeId": 51,
+    "animeMatch": [
+      5,
+      10
+    ],
+    "reason": "เสียงเพลงสบายๆ สไตล์ฝั่งโขง \"คืนเดือนหงายริมของ (ຄືນເດືອນຫງາຍ)\" จาก ดาวเรือง ให้มู้ดผ่อนคลาย เหมาะกับคลิปไทโปแนว Lo-Fi ธรรมชาติ",
+    "typoIdea": "ใช้ฟอนต์มินิมอลโปร่งสบาย สีเขียวใบตองหรือฟ้าคราม ค่อยๆ เลื่อนช้าๆ ดุจระลอกคลื่นแม่น้ำโขง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2051,
+    "title": "ฮักสาวเซโน (ຮັກສາວເຊໂນ)",
+    "artist": "ท้าววันดี",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000008ef1953/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%8B",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%8B%E0%B9%82%E0%B8%99%20(%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BB%80%E0%BA%8A%E0%BB%82%E0%BA%99)%20%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%94%E0%B8%B5",
+    "mood": "love",
+    "tags": [
+      "เซโน",
+      "สะหวันเขต",
+      "รักสาว"
+    ],
+    "bpm": "กลาง (90 BPM)",
+    "lang": "lao",
+    "animeId": 52,
+    "animeMatch": [
+      200,
+      9,
+      30
+    ],
+    "reason": "เพลงหวานละมุน \"ฮักสาวเซโน (ຮັກສາວເຊໂນ)\" โดย ท้าววันดี เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2052,
+    "title": "เวียงจันทน์เวียงใจ (ວຽງຈັນວຽງໃຈ)",
+    "artist": "วงเสียงพิณลาว",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007df8ecf8/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%A7%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%99",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A7%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%99%E0%B9%8C%E0%B9%80%E0%B8%A7%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%88%20(%E0%BA%A7%E0%BA%BD%E0%BA%87%E0%BA%88%E0%BA%B1%E0%BA%99%E0%BA%A7%E0%BA%BD%E0%BA%87%E0%BB%83%E0%BA%88)%20%E0%B8%A7%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%9E%E0%B8%B4%E0%B8%93%E0%B8%A5%E0%B8%B2%E0%B8%A7",
+    "mood": "love",
+    "tags": [
+      "เวียงจันทน์",
+      "นครหลวง",
+      "ผูกพัน"
+    ],
+    "bpm": "กลาง (92 BPM)",
+    "lang": "lao",
+    "animeId": 53,
+    "animeMatch": [
+      30,
+      150
+    ],
+    "reason": "เพลงหวานละมุน \"เวียงจันทน์เวียงใจ (ວຽງຈັນວຽງໃຈ)\" โดย วงเสียงพิณลาว เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2053,
+    "title": "เสียงแคนแดนลาว (ສຽງແຄນແດນลาວ)",
+    "artist": "หมอแคนลาว",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006c80b416/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%81%E0%B8%84%E0%B8%99",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%81%E0%B8%84%E0%B8%99%E0%B9%81%E0%B8%94%E0%B8%99%E0%B8%A5%E0%B8%B2%E0%B8%A7%20(%E0%BA%AA%E0%BA%BD%E0%BA%87%E0%BB%81%E0%BA%84%E0%BA%99%E0%BB%81%E0%BA%94%E0%BA%99%E0%B8%A5%E0%B8%B2%E0%BA%A7)%20%E0%B8%AB%E0%B8%A1%E0%B8%AD%E0%B9%81%E0%B8%84%E0%B8%99%E0%B8%A5%E0%B8%B2%E0%B8%A7",
+    "mood": "happy",
+    "tags": [
+      "เสียงแคน",
+      "พื้นบ้าน",
+      "เอกลักษณ์"
+    ],
+    "bpm": "เร็ว (125 BPM)",
+    "lang": "lao",
+    "animeId": 54,
+    "animeMatch": [
+      1,
+      30,
+      200
+    ],
+    "reason": "เพลงจังหวะสนุกสนาน \"เสียงแคนแดนลาว (ສຽງແຄນແດນลาວ)\" (หมอแคนลาว) นำความสดใสมีชีวิตชีวามาใส่ในคลิปตัดต่อได้อย่างลงตัว",
+    "typoIdea": "ใช้ฟอนต์หนาสีส้มสดใส กระโดดตามจังหวะบีท พร้อมประกายแสงดาววิบวับรอบตัวอักษร",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2054,
+    "title": "สาวสะหวันเขต (ສາວສະຫວັນນະເຂດ)",
+    "artist": "บัวเงิน",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000494d4729/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%AA%E0%B8%B0%E0%B8%AB%E0%B8%A7%E0%B8%B1",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%AA%E0%B8%B0%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%82%E0%B8%95%20(%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BA%AA%E0%BA%B0%E0%BA%AB%E0%BA%A7%E0%BA%B1%E0%BA%99%E0%BA%99%E0%BA%B0%E0%BB%80%E0%BA%82%E0%BA%94)%20%E0%B8%9A%E0%B8%B1%E0%B8%A7%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99",
+    "mood": "love",
+    "tags": [
+      "สะหวันเขต",
+      "แม่หญิง",
+      "น่ารัก"
+    ],
+    "bpm": "กลาง (88 BPM)",
+    "lang": "lao",
+    "animeId": 55,
+    "animeMatch": [
+      10,
+      150
+    ],
+    "reason": "เพลงหวานละมุน \"สาวสะหวันเขต (ສາວສະຫວັນນະເຂດ)\" โดย บัวเงิน เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2055,
+    "title": "สาวปากเซ (ສາວປາກເຊ)",
+    "artist": "ไก่ แก่นสาร",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000020e62941/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B9%80%E0%B8%8B",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B9%80%E0%B8%8B%20(%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BA%9B%E0%BA%B2%E0%BA%81%E0%BB%80%E0%BA%8A)%20%E0%B9%84%E0%B8%81%E0%B9%88%20%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99%E0%B8%AA%E0%B8%B2%E0%B8%A3",
+    "mood": "happy",
+    "tags": [
+      "ปากเซ",
+      "ลาวใต้",
+      "คึกคัก"
+    ],
+    "bpm": "เร็ว (112 BPM)",
+    "lang": "lao",
+    "animeId": 56,
+    "animeMatch": [
+      3,
+      7
+    ],
+    "reason": "เพลงจังหวะสนุกสนาน \"สาวปากเซ (ສາວປາກເຊ)\" (ไก่ แก่นสาร) นำความสดใสมีชีวิตชีวามาใส่ในคลิปตัดต่อได้อย่างลงตัว",
+    "typoIdea": "ใช้ฟอนต์หนาสีส้มสดใส กระโดดตามจังหวะบีท พร้อมประกายแสงดาววิบวับรอบตัวอักษร",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2056,
+    "title": "กุหลาบแดงแห่งเวียงจันทน์ (ກຸຫຼາບແດງ)",
+    "artist": "สมจิต",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004a7194c4/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%81%E0%B8%B8%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%9A%E0%B9%81%E0%B8%94",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%B8%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%9A%E0%B9%81%E0%B8%94%E0%B8%87%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B9%80%E0%B8%A7%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%99%E0%B9%8C%20(%E0%BA%81%E0%BA%B8%E0%BA%AB%E0%BA%BC%E0%BA%B2%E0%BA%9A%E0%BB%81%E0%BA%94%E0%BA%87)%20%E0%B8%AA%E0%B8%A1%E0%B8%88%E0%B8%B4%E0%B8%95",
+    "mood": "love",
+    "tags": [
+      "กุหลาบแดง",
+      "รักแรก",
+      "ซึ้ง"
+    ],
+    "bpm": "ช้า (74 BPM)",
+    "lang": "lao",
+    "animeId": 57,
+    "animeMatch": [
+      2,
+      9,
+      3
+    ],
+    "reason": "เพลงหวานละมุน \"กุหลาบแดงแห่งเวียงจันทน์ (ກຸຫຼາບແດງ)\" โดย สมจิต เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2057,
+    "title": "มนต์รักแม่น้ำโขง (ມົນຮັກແມ່ນ້ຳຂອງ)",
+    "artist": "ศิลปินสองฝั่งโขง",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003cf42072/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A1%E0%B8%99%E0%B8%95%E0%B9%8C%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%81",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A1%E0%B8%99%E0%B8%95%E0%B9%8C%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B9%82%E0%B8%82%E0%B8%87%20(%E0%BA%A1%E0%BA%BB%E0%BA%99%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BB%81%E0%BA%A1%E0%BB%88%E0%BA%99%E0%BB%89%E0%BA%B3%E0%BA%82%E0%BA%AD%E0%BA%87)%20%E0%B8%A8%E0%B8%B4%E0%B8%A5%E0%B8%9B%E0%B8%B4%E0%B8%99%E0%B8%AA%E0%B8%AD%E0%B8%87%E0%B8%9D%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B9%82%E0%B8%82%E0%B8%87",
+    "mood": "love",
+    "tags": [
+      "สายน้ำ",
+      "สองฝั่งโขง",
+      "มิตรภาพ"
+    ],
+    "bpm": "กลาง (90 BPM)",
+    "lang": "lao",
+    "animeId": 58,
+    "animeMatch": [
+      15,
+      1
+    ],
+    "reason": "เพลงหวานละมุน \"มนต์รักแม่น้ำโขง (ມົນຮັກແມ່ນ້ຳຂອງ)\" โดย ศิลปินสองฝั่งโขง เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2058,
+    "title": "สาวน้ำงึม (ສາວນ້ຳງື່ມ)",
+    "artist": "ป๊อปลาวรุ่นใหม่",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000538484b4/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%87%E0%B8%B6",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%87%E0%B8%B6%E0%B8%A1%20(%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BA%99%E0%BB%89%E0%BA%B3%E0%BA%87%E0%BA%B7%E0%BB%88%E0%BA%A1)%20%E0%B8%9B%E0%B9%8A%E0%B8%AD%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%B8%E0%B9%88%E0%B8%99%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88",
+    "mood": "chill",
+    "tags": [
+      "น้ำงึม",
+      "เขื่อน",
+      "สายลม"
+    ],
+    "bpm": "กลาง (88 BPM)",
+    "lang": "lao",
+    "animeId": 59,
+    "animeMatch": [
+      10,
+      30,
+      1
+    ],
+    "reason": "เสียงเพลงสบายๆ สไตล์ฝั่งโขง \"สาวน้ำงึม (ສາວນ້ຳງື່ມ)\" จาก ป๊อปลาวรุ่นใหม่ ให้มู้ดผ่อนคลาย เหมาะกับคลิปไทโปแนว Lo-Fi ธรรมชาติ",
+    "typoIdea": "ใช้ฟอนต์มินิมอลโปร่งสบาย สีเขียวใบตองหรือฟ้าคราม ค่อยๆ เลื่อนช้าๆ ดุจระลอกคลื่นแม่น้ำโขง",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2059,
+    "title": "ฮักสาวเมืองโพน (ຮັກສາວເມືອງໂພນ)",
+    "artist": "ท้าวแก้ว",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000075eec6aa/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%A1",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%9E%E0%B8%99%20(%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BB%80%E0%BA%A1%E0%BA%B7%E0%BA%AD%E0%BA%87%E0%BB%82%E0%BA%9E%E0%BA%99)%20%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7",
+    "mood": "love",
+    "tags": [
+      "เมืองโพน",
+      "จริงใจ",
+      "น่ารัก"
+    ],
+    "bpm": "กลาง (92 BPM)",
+    "lang": "lao",
+    "animeId": 60,
+    "animeMatch": [
+      150,
+      15,
+      10
+    ],
+    "reason": "เพลงหวานละมุน \"ฮักสาวเมืองโพน (ຮັກສາວເມືອງໂພນ)\" โดย ท้าวแก้ว เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2060,
+    "title": "บ่าวลาวสาวไทย (ບ່າວລາວສາວໄທ)",
+    "artist": "ศิลปินมิตรภาพสองฝั่ง",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005a8d7892/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9A%E0%B9%88%E0%B8%B2%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%A7%E0%B8%AA",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9A%E0%B9%88%E0%B8%B2%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%A7%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B9%84%E0%B8%97%E0%B8%A2%20(%E0%BA%9A%E0%BB%88%E0%BA%B2%E0%BA%A7%E0%BA%A5%E0%BA%B2%E0%BA%A7%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BB%84%E0%BA%97)%20%E0%B8%A8%E0%B8%B4%E0%B8%A5%E0%B8%9B%E0%B8%B4%E0%B8%99%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%AA%E0%B8%AD%E0%B8%87%E0%B8%9D%E0%B8%B1%E0%B9%88%E0%B8%87",
+    "mood": "happy",
+    "tags": [
+      "ความรัก",
+      "มิตรภาพ",
+      "อบอุ่น"
+    ],
+    "bpm": "เร็ว (116 BPM)",
+    "lang": "lao",
+    "animeId": 61,
+    "animeMatch": [
+      2,
+      15
+    ],
+    "reason": "เพลงจังหวะสนุกสนาน \"บ่าวลาวสาวไทย (ບ່າວລາວສາວໄທ)\" (ศิลปินมิตรภาพสองฝั่ง) นำความสดใสมีชีวิตชีวามาใส่ในคลิปตัดต่อได้อย่างลงตัว",
+    "typoIdea": "ใช้ฟอนต์หนาสีส้มสดใส กระโดดตามจังหวะบีท พร้อมประกายแสงดาววิบวับรอบตัวอักษร",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2061,
+    "title": "ฮักน้องผู้เดียว (ຮັກນ້ອງຜູ້ດຽວ)",
+    "artist": "สายย่อลาว EDM",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000062e298e2/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%9C",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B8%A7%20(%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BA%99%E0%BB%89%E0%BA%AD%E0%BA%87%E0%BA%9C%E0%BA%B9%E0%BB%89%E0%BA%94%E0%BA%BD%E0%BA%A7)%20%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%A2%E0%B9%88%E0%B8%AD%E0%B8%A5%E0%B8%B2%E0%B8%A7%20EDM",
+    "mood": "hype",
+    "tags": [
+      "สายตื๊ด",
+      "EDMลาว",
+      "สนุกสนาน"
+    ],
+    "bpm": "เร็ว (132 BPM)",
+    "lang": "lao",
+    "animeId": 62,
+    "animeMatch": [
+      30,
+      4,
+      20
+    ],
+    "reason": "บีทเดือดสะใจ \"ฮักน้องผู้เดียว (ຮັກນ້ອງຜູ້ດຽວ)\" โดย สายย่อลาว EDM ท่อนฮุกกระแทกอารมณ์ ปลุกพลังให้คลิปอนิเมะแอกชันได้อย่างยอดเยี่ยม",
+    "typoIdea": "ใช้ฟอนต์ Impact สีแดงเพลิง กระตุกสั่นตามจังหวะกลองและเบส มีเส้นไฟนีออนพุ่งผ่านตัวหนังสือ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2062,
+    "title": "ฝากใจไปฝั่งซ้าย (ຝາກໃຈໄປຝັ່ງຊ້າຍ)",
+    "artist": "ศรชัย บ่าวฝั่งขวา",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007a711aae/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9D%E0%B8%B2%E0%B8%81%E0%B9%83%E0%B8%88%E0%B9%84%E0%B8%9B%E0%B8%9D",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9D%E0%B8%B2%E0%B8%81%E0%B9%83%E0%B8%88%E0%B9%84%E0%B8%9B%E0%B8%9D%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B8%8B%E0%B9%89%E0%B8%B2%E0%B8%A2%20(%E0%BA%9D%E0%BA%B2%E0%BA%81%E0%BB%83%E0%BA%88%E0%BB%84%E0%BA%9B%E0%BA%9D%E0%BA%B1%E0%BB%88%E0%BA%87%E0%BA%8A%E0%BB%89%E0%BA%B2%E0%BA%8D)%20%E0%B8%A8%E0%B8%A3%E0%B8%8A%E0%B8%B1%E0%B8%A2%20%E0%B8%9A%E0%B9%88%E0%B8%B2%E0%B8%A7%E0%B8%9D%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%A7%E0%B8%B2",
+    "mood": "sad",
+    "tags": [
+      "ฝั่งซ้าย",
+      "ข้ามแม่น้ำ",
+      "คิดถึง"
+    ],
+    "bpm": "ช้า (70 BPM)",
+    "lang": "lao",
+    "animeId": 63,
+    "animeMatch": [
+      30,
+      4
+    ],
+    "reason": "เพลงลาวสุดซึ้ง \"ฝากใจไปฝั่งซ้าย (ຝາກໃຈໄປຝັ່ງຊ້າຍ)\" (ศรชัย บ่าวฝั่งขวา) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
+    "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2063,
+    "title": "สาวจำปาสัก (ສາວຈຳປາສັກ)",
+    "artist": "ดาวน้อย",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007ad62aa1/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%88%E0%B8%B3%E0%B8%9B%E0%B8%B2%E0%B8%AA",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%88%E0%B8%B3%E0%B8%9B%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%81%20(%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BA%88%E0%BA%B3%E0%BA%9B%E0%BA%B2%E0%BA%AA%E0%BA%B1%E0%BA%81)%20%E0%B8%94%E0%B8%B2%E0%B8%A7%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2",
+    "mood": "love",
+    "tags": [
+      "จำปาสัก",
+      "วัดพู",
+      "สาวงาม"
+    ],
+    "bpm": "กลาง (86 BPM)",
+    "lang": "lao",
+    "animeId": 64,
+    "animeMatch": [
+      25,
+      150,
+      20
+    ],
+    "reason": "เพลงหวานละมุน \"สาวจำปาสัก (ສາວຈຳປາສັກ)\" โดย ดาวน้อย เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
+    "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
+    "audioUrl": "",
+    "audioFallback": ""
+  },
+  {
+    "id": 2064,
+    "title": "ดอกลีลาวดี (ດອກລີລາວະດີ)",
+    "artist": "ปิ่นแก้ว",
+    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000055573c73/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B8%A5%E0%B8%B5%E0%B8%A5%E0%B8%B2%E0%B8%A7",
+    "previewUrl": "",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B8%A5%E0%B8%B5%E0%B8%A5%E0%B8%B2%E0%B8%A7%E0%B8%94%E0%B8%B5%20(%E0%BA%94%E0%BA%AD%E0%BA%81%E0%BA%A5%E0%BA%B5%E0%BA%A5%E0%BA%B2%E0%BA%A7%E0%BA%B0%E0%BA%94%E0%BA%B5)%20%E0%B8%9B%E0%B8%B4%E0%B9%88%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7",
+    "mood": "chill",
+    "tags": [
+      "ลีลาวดี",
+      "หอมกรุ่น",
+      "สงบ"
+    ],
+    "bpm": "ช้า (72 BPM)",
+    "lang": "lao",
+    "animeId": 65,
+    "animeMatch": [
+      2,
+      100
+    ],
+    "reason": "เสียงเพลงสบายๆ สไตล์ฝั่งโขง \"ดอกลีลาวดี (ດອກລີລາວະດີ)\" จาก ปิ่นแก้ว ให้มู้ดผ่อนคลาย เหมาะกับคลิปไทโปแนว Lo-Fi ธรรมชาติ",
+    "typoIdea": "ใช้ฟอนต์มินิมอลโปร่งสบาย สีเขียวใบตองหรือฟ้าคราม ค่อยๆ เลื่อนช้าๆ ดุจระลอกคลื่นแม่น้ำโขง",
+    "audioUrl": "",
+    "audioFallback": ""
+  }
 ];
 
 const ANIME_PAIRS = [
