@@ -57,7 +57,7 @@ jobs:
       - name: 📁 จัดเตรียมไฟล์เว็บสำหรับแอป (www Directory)
         run: |
           mkdir -p www
-          for f in index.html style.css app.js data.js version.json manifest.json sw.js splash-cover.jpg notification-mascot.jpg loading-chibi.jpg haimiya_yaho.wav haimiya_yaho.mp3 favicon-logo.jpg dice-roll.mp3 app-icon.jpg bg-hero.jpg blue_relax.m4a update_voice.wav update_voice.m4a update_voice.mp4 update_voice.mp3; do
+          for f in index.html style.css app.js data.js version.json manifest.json sw.js splash-cover.jpg notification-mascot.jpg loading-chibi.jpg haimiya_yaho.wav haimiya_yaho.mp3 favicon-logo.jpg dice-roll.mp3 app-icon.jpg bg-hero.jpg blue_relax.m4a update_voice.wav update_voice.m4a update_voice.mp4 update_voice.mp3 haimiya-typo.mobileconfig; do
             if [ -f "$f" ]; then cp "$f" www/; fi
           done
           # Copy optional files that might exist
@@ -512,6 +512,8 @@ jobs:
             **วิธีติดตั้ง / อัปเดต:**
             1. ดาวน์โหลดไฟล์ `HaimiyaTypo.apk` ด้านล่างนี้
             2. กดเปิดไฟล์บนเครื่อง Android และเลือก **"ติดตั้ง / อัปเดต (Install/Update)"** ได้ทันทีโดยไม่ต้องลบแอปเก่า!
-          files: dist-apk/HaimiyaTypo.apk
+          files: |
+            dist-apk/HaimiyaTypo.apk
+            haimiya-typo.mobileconfig
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

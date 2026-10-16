@@ -2292,9 +2292,58 @@ window.addEventListener('beforeinstallprompt', (e) => {
   if (btn) btn.style.display = 'flex';
 });
 
+function switchInstallTab(platform) {
+  const tabIos = document.getElementById('tab-btn-ios');
+  const tabAndroid = document.getElementById('tab-btn-android');
+  const panelIos = document.getElementById('install-panel-ios');
+  const panelAndroid = document.getElementById('install-panel-android');
+
+  if (platform === 'ios') {
+    if (tabIos) {
+      tabIos.classList.add('active');
+      tabIos.style.background = 'linear-gradient(135deg, #38bdf8, #818cf8)';
+      tabIos.style.color = '#fff';
+      tabIos.style.boxShadow = '0 4px 14px rgba(56, 189, 248, 0.4)';
+    }
+    if (tabAndroid) {
+      tabAndroid.classList.remove('active');
+      tabAndroid.style.background = 'transparent';
+      tabAndroid.style.color = '#94a3b8';
+      tabAndroid.style.boxShadow = 'none';
+    }
+    if (panelIos) panelIos.style.display = 'block';
+    if (panelAndroid) panelAndroid.style.display = 'none';
+  } else {
+    if (tabAndroid) {
+      tabAndroid.classList.add('active');
+      tabAndroid.style.background = 'linear-gradient(135deg, #38bdf8, #818cf8)';
+      tabAndroid.style.color = '#fff';
+      tabAndroid.style.boxShadow = '0 4px 14px rgba(56, 189, 248, 0.4)';
+    }
+    if (tabIos) {
+      tabIos.classList.remove('active');
+      tabIos.style.background = 'transparent';
+      tabIos.style.color = '#94a3b8';
+      tabIos.style.boxShadow = 'none';
+    }
+    if (panelAndroid) panelAndroid.style.display = 'block';
+    if (panelIos) panelIos.style.display = 'none';
+  }
+}
+
 function openAppModal() {
   const modal = document.getElementById('app-install-modal');
-  if (modal) modal.classList.remove('hidden');
+  if (modal) {
+    modal.classList.remove('hidden');
+
+    // ตรวจสอบอัตโนมัติว่าเป็นเครื่อง iOS (iPhone / iPad) หรือ Android
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    if (isIOS) {
+      switchInstallTab('ios');
+    } else {
+      switchInstallTab('android');
+    }
+  }
 }
 
 function closeAppModal() {
