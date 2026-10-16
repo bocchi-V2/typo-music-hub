@@ -2796,8 +2796,8 @@ function initSplashScreen() {
 //  ระบบซิงค์เพลง/อนิเมะสดอัตโนมัติ และอัปเดตแอป APK ทับของเดิมได้ 100% ไม่ต้องลบแอปเก่า
 // ============================================
 
-const CURRENT_APP_VERSION = 'v2.20261016.17';
-const CURRENT_VERSION_CODE = 1792137500;
+const CURRENT_APP_VERSION = 'v2.20261016.0840';
+const CURRENT_VERSION_CODE = 1792138800;
 const GITHUB_REPO_OWNER = 'bocchi-V2';
 const GITHUB_REPO_NAME = 'typo-music-hub';
 const GITHUB_PAGES_BASE = 'https://bocchi-v2.github.io/typo-music-hub';
@@ -2999,47 +2999,55 @@ function sendUpdatePushNotification(versionTag, songCount) {
   }
 }
 
-// เล่นเสียงผู้หญิงน่ารักพูด "อัปเดตด้วยนะคะ" — ใช้ไฟล์เสียงจริง update_voice.mp3 เป็นหลัก
-// ถ้าไฟล์โหลดไม่ได้จะ fallback ไปใช้ Web Speech Synthesis
+// เล่นเสียงแจ้งเตือนอัปเดตจากไฟล์เสียงที่คุณเลือก (Google Drive)
 let _updateVoiceAudio = null;
 let _pendingVoiceOnInteraction = false;
 
 function getUpdateVoiceAudio() {
   if (!_updateVoiceAudio) {
-    _updateVoiceAudio = new Audio('update_voice.mp3');
-    _updateVoiceAudio.preload = 'auto';
-    _updateVoiceAudio.volume = 0.95;
-    // ปรับความเร็ว 1.05 เพื่อให้น้ำเสียงน่ารัก สดใส และเป็นธรรมชาติ
-    _updateVoiceAudio.playbackRate = 1.05;
+    const audio = new Audio();
+    // รองรับทั้ง M4A, MP4 และ MP3 ตามที่อุปกรณ์รองรับ
+    if (audio.canPlayType('audio/mp4') || audio.canPlayType('video/mp4')) {
+      audio.src = 'update_voice.m4a';
+    } else {
+      audio.src = 'update_voice.mp3';
+    }
+    audio.preload = 'auto';
+    audio.volume = 1.0;
+    _updateVoiceAudio = audio;
   }
   return _updateVoiceAudio;
 }
 
-// Pre-load เสียงแจ้งเตือนอัปเดตทันทีตอนเปิดแอป
+// Pre-load เสียงแจ้งเตือนอัปเดตทันที
 try {
   getUpdateVoiceAudio().load();
 } catch(e) {}
 
 function playUpdateVoiceAlert(isUserInitiated = false) {
   try {
-    // 1. ลองเล่นไฟล์เสียงจริงก่อน (update_voice.mp3)
     const audio = getUpdateVoiceAudio();
     audio.currentTime = 0;
-    audio.volume = 0.95;
-    audio.playbackRate = 1.05;
-    const playPromise = audio.play();
+    audio.volume = 1.0;
 
+    const playPromise = audio.play();
     if (playPromise && playPromise.then) {
       playPromise.then(() => {
-        console.log('🎀 เล่นเสียง "อัปเดตด้วยนะคะ" สำเร็จ');
+        console.log('🎀 เล่นเสียงแจ้งเตือนอัปเดตจากไฟล์เสียงที่คุณส่งมาสำเร็จ');
         const voiceBtn = document.getElementById('btn-banner-voice');
         if (voiceBtn) {
-          voiceBtn.style.transform = 'scale(1.08)';
-          setTimeout(() => { if (voiceBtn) voiceBtn.style.transform = ''; }, 300);
+          voiceBtn.style.transform = 'scale(1.15)';
+          voiceBtn.style.boxShadow = '0 0 18px rgba(236, 72, 153, 0.85)';
+          setTimeout(() => {
+            if (voiceBtn) {
+              voiceBtn.style.transform = '';
+              voiceBtn.style.boxShadow = '';
+            }
+          }, 450);
         }
       }).catch((err) => {
-        console.warn('Audio play autoplay restricted:', err);
-        // หากบราวเซอร์บล็อก autoplay ตอนเปิดแอปอัตโนมัติ ให้เล่นทันทีเมื่อผู้ใช้แตะหน้าจอครั้งแรก!
+        console.warn('Autoplay restricted audio play:', err);
+        // หากบราวเซอร์บล็อก autoplay ตอนเปิดอัตโนมัติ ให้รอผู้ใช้สัมผัสหน้าจอครั้งแรกแล้วเล่นทันที
         if (!isUserInitiated && !_pendingVoiceOnInteraction) {
           _pendingVoiceOnInteraction = true;
           const onFirstTouch = () => {
@@ -3047,20 +3055,19 @@ function playUpdateVoiceAlert(isUserInitiated = false) {
             window.removeEventListener('pointerdown', onFirstTouch);
             window.removeEventListener('touchstart', onFirstTouch);
             window.removeEventListener('click', onFirstTouch);
-            setTimeout(() => {
-              playUpdateVoiceAlert(true);
-            }, 100);
+            playUpdateVoiceAlert(true);
           };
           window.addEventListener('pointerdown', onFirstTouch, { once: true });
           window.addEventListener('touchstart', onFirstTouch, { once: true });
           window.addEventListener('click', onFirstTouch, { once: true });
         } else {
-          // ถ้าเล่นไฟล์เสียงไม่ได้ ให้ fallback ไป Speech Synthesis
+          // หากเล่นไฟล์เสียงไม่ได้จริง ให้ fallback ไปยัง Speech Synthesis
           playUpdateVoiceFallback();
         }
       });
     }
-  } catch(e) {
+  } catch (err) {
+    console.warn('playUpdateVoiceAlert error:', err);
     playUpdateVoiceFallback();
   }
 }
@@ -3073,9 +3080,9 @@ function playUpdateVoiceFallback() {
 
       const utterance = new SpeechSynthesisUtterance('อัปเดตด้วยนะคะ');
       utterance.lang = 'th-TH';
-      utterance.rate = 0.95;
-      utterance.pitch = 1.4;
-      utterance.volume = 0.85;
+      utterance.rate = 1.02;
+      utterance.pitch = 1.65;
+      utterance.volume = 0.95;
 
       const voices = window.speechSynthesis.getVoices();
       const thaiVoice = voices.find(v => 
@@ -3115,16 +3122,21 @@ if ('speechSynthesis' in window) {
   try { window.speechSynthesis.getVoices(); } catch(e) {}
 }
 
-// 3. ตรวจสอบเวอร์ชันและแจ้งเตือนอัปเดตทุกเวอร์ชัน (ทั้งในแอปและบนเว็บ)
-// พร้อม Push Notification + เสียง "อัปเดตด้วยนะคะ" เสียงผู้หญิงน่ารัก
+// 3. ตรวจสอบเวอร์ชันและแจ้งเตือนอัปเดต (แจ้งเตือนเฉพาะเมื่อมีอัปเดตใหม่จริงเท่านั้น ไม่แจ้งซ้ำซาก)
 async function checkApkAppUpdate(isManualTrigger = false) {
   if (!navigator.onLine) return;
   if (!isManualTrigger && sessionStorage.getItem('dismissed_apk_banner') === 'true') return;
 
+  const isNativeApp = window.Capacitor && typeof window.Capacitor.isNativePlatform === 'function' && window.Capacitor.isNativePlatform();
+
+  // บน Web Browser: ไม่ต้องแจ้งเตือนอัปเดตไฟล์ APK ตอนโหลดหน้าเว็บ (เพราะผู้ใช้เว็บกำลังใช้งานเวอร์ชันล่าสุดบนเว็บอยู่แล้ว)
+  // แจ้งเตือนเฉพาะเมื่อผู้ใช้เปิดผ่านแอป Android APK หรือกดปุ่มตรวจสอบอัปเดตด้วยตนเอง
+  if (!isNativeApp && !isManualTrigger) {
+    return;
+  }
+
   // ขอสิทธิ์ Notification ล่วงหน้า
   await requestNotificationPermission();
-
-  const isNativeApp = window.Capacitor && typeof window.Capacitor.isNativePlatform === 'function' && window.Capacitor.isNativePlatform();
 
   try {
     let remoteVersionData = null;
@@ -3159,11 +3171,19 @@ async function checkApkAppUpdate(isManualTrigger = false) {
       const descEl = document.getElementById('update-banner-desc');
       const btnEl = document.getElementById('btn-banner-update');
 
-      // 🔔 ส่ง Push Notification ขึ้นบนมือถือโดยตรง!
-      sendUpdatePushNotification(releaseTag || remoteVersionTag, remoteSongs || SONGS.length);
+      // เช็คว่าเวอร์ชันนี้เคยแจ้งเตือนไปแล้วหรือยัง (เล่นเสียงเตือนเฉพาะครั้งแรกที่ตรวจพบอัปเดตใหม่เท่านั้น ไม่เล่นซ้ำซาก)
+      const lastNotifiedVer = localStorage.getItem('haimiya_last_notified_update_version');
+      const isBrandNewUpdate = lastNotifiedVer !== releaseTag;
 
-      // 🎀 เล่นเสียงผู้หญิงน่ารักพูด "อัปเดตด้วยนะคะ" หลังจาก banner ขึ้น
-      setTimeout(() => playUpdateVoiceAlert(), 800);
+      if (isBrandNewUpdate || isManualTrigger) {
+        localStorage.setItem('haimiya_last_notified_update_version', releaseTag);
+
+        // 🔔 ส่ง Push Notification ขึ้นบนมือถือโดยตรง!
+        sendUpdatePushNotification(releaseTag || remoteVersionTag, remoteSongs || SONGS.length);
+
+        // 🎀 เล่นเสียงน่ารัก แปลงจากเสียงคุณไฮมิยะ + กระดิ่งระยิบระยับ + "อัปเดตด้วยนะคะ"
+        setTimeout(() => playUpdateVoiceAlert(), 600);
+      }
 
       if (banner && titleEl) {
         if (isNativeApp) {
