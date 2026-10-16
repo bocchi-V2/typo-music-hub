@@ -5828,6 +5828,32 @@ const ANIMES = [
     "coverFallback": "https://shikimori.one/system/animes/original/50796.jpg?1711940396",
     "anifumeUrl": "https://anifume.com/?s=Insomniacs%20After%20School",
     "mood": "chill"
+  },
+  {
+    "id": 413,
+    "name": "Nanatsu no Taizai Movie: Tenkuu no Torawarebito",
+    "nameTH": "Nanatsu no Taizai Movie: Tenkuu no Torawarebito",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13647/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/13647/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Nanatsu%20no%20Taizai%20Movie%3A%20Tenkuu%20no%20Torawarebito",
+    "mood": "hype"
+  },
+  {
+    "id": 414,
+    "name": "The Disappearance of Haruhi Suzumiya",
+    "nameTH": "The Disappearance of Haruhi Suzumiya",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/4938/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/4938/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20Disappearance%20of%20Haruhi%20Suzumiya",
+    "mood": "hype"
   }
 ];
 
@@ -45579,6 +45605,176 @@ const SONGS = [
     "spotifyUrl": "https://www.deezer.com/track/3105737911",
     "animeId": 158,
     "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/a/9/0/0/a90b094e86b4d4973b49c0a0688c32c5.mp3?hdnea=exp=1792137847~acl=/api/1/1/a/9/0/0/a90b094e86b4d4973b49c0a0688c32c5.mp3*~data=user_id=0,application_id=42~hmac=a93e9c5e82d601d97e64cc863c508191963a4447bbfd50b4663c4d45d30ee834"
+  },
+  {
+    "id": 1807,
+    "title": "The Bloom",
+    "artist": "YOASOBI",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7a/32/9e/7a329e90-a8e5-cc05-4a8f-142811b9b095/885288733761.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b1/71/f2/b171f271-d59b-59d1-9b82-1a41c311765d/mzaf_13682368395713803404.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/The%20Bloom%20YOASOBI",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 173,
+    "animeMatch": [
+      173
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Fire Force",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 1808,
+    "title": "藍二乗",
+    "artist": "Yorushika",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/64/ab/ba/64abba45-d080-0e8a-c24b-313e597c63cb/PA00076158_0_91679_jacket.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/dc/d9/d9dcd9ea-f09d-ca08-bb1b-bf4ebd630ede/mzaf_6254279233344660048.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E8%97%8D%E4%BA%8C%E4%B9%97%20Yorushika",
+    "mood": "hype",
+    "tags": [
+      "มันส์สะใจ",
+      "บีทกระแทก",
+      "ไวรัล",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "jp",
+    "animeId": 107,
+    "animeMatch": [
+      107
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Kill la Kill",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "id": 1809,
+    "title": "Uraraka",
+    "artist": "Da-iCE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/99/27/1d/99271d70-4bc4-c7f9-5efc-d85d0de3a276/ANTCD-A0000021068.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4e/21/e3/4e21e3a7-3162-bc69-985c-658ea1cad9b4/mzaf_8188692877296719167.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Uraraka%20Da-iCE",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 225,
+    "animeMatch": [
+      225
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Zom 100: Zombie ni Naru made ni Shitai 100 no Koto",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 1810,
+    "title": "ปล่อยให้เวลา (Broken Clock)",
+    "artist": "Three Man Down",
+    "lang": "th",
+    "mood": "sad",
+    "animeId": 407,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/40/a2/57/40a2577c-0a76-08d6-8f8d-26ea5550fd68/mzaf_831955649841831040.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ac/83/88/ac83882e-1cfc-54ee-a041-4c5734f125c6/888332907514.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9B%E0%B8%A5%E0%B9%88%E0%B8%AD%E0%B8%A2%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%20(Broken%20Clock)%20Three%20Man%20Down",
+    "tags": [
+      "คิดถึง",
+      "อารมณ์ดิ่ง",
+      "ฮิต"
+    ],
+    "bpm": "ปานกลาง (90 BPM)",
+    "typoIdea": "ข้อความค่อยๆ เลือนราง คุมโทนสีน้ำเงินหม่น",
+    "cutGuide": "มาร์กจุดดรอปของบีท แล้วตัดสลับฉากให้ตรงจังหวะคำร้องหลัก"
+  },
+  {
+    "id": 1811,
+    "title": "Michi Teyu Ku (Overflowing)",
+    "artist": "Fujii Kaze",
+    "lang": "en",
+    "mood": "chill",
+    "animeId": 387,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/97/3e/32/973e3246-62f8-08ff-4ccb-0852fa1858db/mzaf_11501753756350634732.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/d0/f4/ad/d0f4ad92-2a6c-6a02-34c5-d45b93f767d9/24UMGIM15199.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/Michi%20Teyu%20Ku%20(Overflowing)%20Fujii%20Kaze",
+    "tags": [
+      "อบอุ่น",
+      "ฟีลกู๊ด",
+      "ซึ้ง"
+    ],
+    "bpm": "ปานกลาง (82 BPM)",
+    "typoIdea": "ตัวหนังสือสีครีมละมุน แสงโกลว์เรืองรอง",
+    "cutGuide": "มาร์กจุดดรอปของบีท แล้วตัดสลับฉากให้ตรงจังหวะคำร้องหลัก"
+  },
+  {
+    "id": 1812,
+    "title": "Sparks",
+    "artist": "Coldplay",
+    "lang": "en",
+    "mood": "sad",
+    "animeId": 4,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/47/db/ce/47dbce82-d89c-0897-0da7-26d06ae7e2f2/mzaf_14852507599380441353.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f5/93/8c/f5938c49-964c-31d1-4b33-78b634f71fb7/190295978075.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/Sparks%20Coldplay",
+    "tags": [
+      "คลาสสิกสากล",
+      "คิดถึง",
+      "อบอุ่น"
+    ],
+    "bpm": "ช้าซึ้ง (78 BPM)",
+    "typoIdea": "โทนฟิล์มเกรน อักษรสีขาวเรียบง่าย",
+    "cutGuide": "มาร์กจุดดรอปของบีท แล้วตัดสลับฉากให้ตรงจังหวะคำร้องหลัก"
+  },
+  {
+    "id": 1813,
+    "title": "Ditto",
+    "artist": "NewJeans",
+    "lang": "en",
+    "mood": "chill",
+    "animeId": 213,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/85/72/66/8572665a-d35f-ce5d-43c5-9ae4b69b4b46/mzaf_2317272666428796662.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/f6/29/42/f629426e-92fe-535c-cbe4-76e70850819b/196922287107_Cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/Ditto%20NewJeans",
+    "tags": [
+      "เคป๊อปไวรัล",
+      "กลิ่นอายฤดูหนาว",
+      "ฟิลกู๊ด"
+    ],
+    "bpm": "มีจังหวะ (134 BPM)",
+    "typoIdea": "กล้อง Camcorder ยุค 90s ตัวหนังสือฟอนต์พิมพ์ดีด",
+    "cutGuide": "มาร์กจุดดรอปของบีท แล้วตัดสลับฉากให้ตรงจังหวะคำร้องหลัก"
+  },
+  {
+    "id": 1814,
+    "title": "Halley's Comet",
+    "artist": "fellow fellow",
+    "lang": "en",
+    "mood": "chill",
+    "animeId": 88,
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/f1/fd/59/f1fd59e5-09ce-dde1-077e-d568ece0cee0/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/Halley's%20Comet%20fellow%20fellow",
+    "tags": [
+      "รักชั่วนิรันดร์",
+      "หวานซึ้ง",
+      "เพลงแต่งงาน"
+    ],
+    "bpm": "ปานกลาง (85 BPM)",
+    "typoIdea": "ประกายดาวตก ลากหางแสงตามตัวหนังสือ",
+    "cutGuide": "มาร์กจุดดรอปของบีท แล้วตัดสลับฉากให้ตรงจังหวะคำร้องหลัก"
   }
 ];
 
@@ -51202,5 +51398,59 @@ const ANIME_PAIRS = [
     "badge": "🇰🇷 K-Pop สเตจสุดปัง",
     "reason": "บีทจัดจ้านและโฟลว์การร้องทรงพลัง เข้ากับความแฟนตาซีและความคมชัดของ ฝากใจไปถึงเธอ",
     "typoIdea": "ไทโปตัวหนังสือสะบัดนีออน คมชัด เคลื่อนไหวรวดเร็วตามจังหวะเต้นและดรอปเบส"
+  },
+  {
+    "songId": 1807,
+    "animeId": 173,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Fire Force",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 1808,
+    "animeId": 107,
+    "category": "hype",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Kill la Kill",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "songId": 1809,
+    "animeId": 225,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Zom 100: Zombie ni Naru made ni Shitai 100 no Koto",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 1810,
+    "animeId": 407,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 1811,
+    "animeId": 387,
+    "category": "chill",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 1812,
+    "animeId": 4,
+    "category": "sad",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 1813,
+    "animeId": 213,
+    "category": "chill",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 1814,
+    "animeId": 88,
+    "category": "chill",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
   }
 ];
