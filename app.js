@@ -2796,8 +2796,8 @@ function initSplashScreen() {
 //  ระบบซิงค์เพลง/อนิเมะสดอัตโนมัติ และอัปเดตแอป APK ทับของเดิมได้ 100% ไม่ต้องลบแอปเก่า
 // ============================================
 
-const CURRENT_APP_VERSION = 'v2.20261016.0840';
-const CURRENT_VERSION_CODE = 1792138800;
+const CURRENT_APP_VERSION = 'v2.20261016.1115';
+const CURRENT_VERSION_CODE = 1792149300;
 const GITHUB_REPO_OWNER = 'bocchi-V2';
 const GITHUB_REPO_NAME = 'typo-music-hub';
 const GITHUB_PAGES_BASE = 'https://bocchi-v2.github.io/typo-music-hub';
@@ -2999,7 +2999,150 @@ function sendUpdatePushNotification(versionTag, songCount) {
   }
 }
 
-// เล่นเสียงแจ้งเตือนอัปเดตจากไฟล์เสียงที่คุณเลือก (Google Drive)
+// ============================================
+//  NOTIFICATION CHIME SOUND (Web Audio API)
+//  เสียงแจ้งเตือนกระดิ่งหวานๆ ก่อนเล่นเสียงพูด
+// ============================================
+
+function playNotificationChime() {
+  return new Promise((resolve) => {
+    try {
+      const ctx = new (window.AudioContext || window.webkitAudioContext)();
+      const now = ctx.currentTime;
+
+      // สร้างเสียงกระดิ่ง 3 โน้ต (C5, E5, G5) ทำนองน่ารัก
+      const notes = [
+        { freq: 523.25, start: 0, dur: 0.18 },     // C5
+        { freq: 659.25, start: 0.15, dur: 0.18 },   // E5
+        { freq: 783.99, start: 0.30, dur: 0.25 },   // G5
+        { freq: 1046.5, start: 0.50, dur: 0.35 },   // C6 (ยาวหน่อย)
+      ];
+
+      notes.forEach(n => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(n.freq, now + n.start);
+        gain.gain.setValueAtTime(0, now + n.start);
+        gain.gain.linearRampToValueAtTime(0.35, now + n.start + 0.03);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + n.start + n.dur);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start(now + n.start);
+        osc.stop(now + n.start + n.dur + 0.05);
+      });
+
+      // เสียง shimmer / sparkle ระยิบระยับ
+      for (let i = 0; i < 3; i++) {
+        const osc2 = ctx.createOscillator();
+        const g2 = ctx.createGain();
+        osc2.type = 'triangle';
+        osc2.frequency.setValueAtTime(2000 + i * 500, now + 0.6 + i * 0.08);
+        g2.gain.setValueAtTime(0, now + 0.6 + i * 0.08);
+        g2.gain.linearRampToValueAtTime(0.12, now + 0.62 + i * 0.08);
+        g2.gain.exponentialRampToValueAtTime(0.001, now + 0.75 + i * 0.08);
+        osc2.connect(g2);
+        g2.connect(ctx.destination);
+        osc2.start(now + 0.6 + i * 0.08);
+        osc2.stop(now + 0.85 + i * 0.08);
+      }
+
+      setTimeout(() => {
+        ctx.close().catch(() => {});
+        resolve();
+      }, 1100);
+    } catch(e) {
+      console.warn('Chime error:', e);
+      resolve();
+    }
+  });
+}
+
+// ============================================
+//  FLOATING NOTIFICATION POPUP WITH MASCOT
+//  กล่องข้อความลอยลงมาพร้อมรูปมาสคอตและ animation สั่น
+// ============================================
+
+function showFloatingNotification(title, message, options = {}) {
+  // ลบ popup เก่าถ้ามี
+  const existing = document.getElementById('haimiya-floating-notif');
+  if (existing) existing.remove();
+
+  // สร้าง element
+  const popup = document.createElement('div');
+  popup.id = 'haimiya-floating-notif';
+  popup.className = 'haimiya-floating-notif';
+  popup.innerHTML = `
+    <div class="notif-inner">
+      <div class="notif-mascot-wrap">
+        <img src="notification-mascot.jpg" alt="Haimiya Mascot" class="notif-mascot-img" onerror="this.src='splash-cover.jpg';" />
+        <span class="notif-mascot-ring"></span>
+      </div>
+      <div class="notif-content">
+        <div class="notif-title">${title || '🔔 Haimiya Typo'}</div>
+        <div class="notif-message">${message || 'มีการแจ้งเตือนใหม่!'}</div>
+      </div>
+      <button class="notif-close-btn" onclick="closeFloatingNotification()" aria-label="ปิด">✕</button>
+    </div>
+    <div class="notif-progress-bar"></div>
+  `;
+
+  document.body.appendChild(popup);
+
+  // เสียงกระดิ่ง
+  playNotificationChime();
+
+  // สั่นอุปกรณ์ (ถ้ารองรับ)
+  triggerNotifVibration();
+
+  // Animation: ลอยลงมา + สั่นเล็กน้อย
+  requestAnimationFrame(() => {
+    popup.classList.add('notif-visible');
+    // สั่นเล็กน้อย
+    setTimeout(() => {
+      popup.classList.add('notif-shake');
+      setTimeout(() => popup.classList.remove('notif-shake'), 600);
+    }, 400);
+  });
+
+  // Auto dismiss หลัง 8 วินาที
+  const autoDismiss = options.duration || 8000;
+  const timer = setTimeout(() => closeFloatingNotification(), autoDismiss);
+  popup._dismissTimer = timer;
+
+  // กดที่ popup เพื่อเปิด banner อัปเดต (ถ้ามี)
+  popup.querySelector('.notif-inner').addEventListener('click', (e) => {
+    if (e.target.classList.contains('notif-close-btn')) return;
+    const banner = document.getElementById('in-app-update-banner');
+    if (banner && banner.style.display !== 'none') {
+      banner.scrollIntoView({ behavior: 'smooth' });
+    }
+    closeFloatingNotification();
+  });
+}
+
+function closeFloatingNotification() {
+  const popup = document.getElementById('haimiya-floating-notif');
+  if (!popup) return;
+  if (popup._dismissTimer) clearTimeout(popup._dismissTimer);
+  popup.classList.remove('notif-visible');
+  popup.classList.add('notif-hiding');
+  setTimeout(() => popup.remove(), 400);
+}
+
+// สั่นอุปกรณ์
+function triggerNotifVibration() {
+  try {
+    if (navigator.vibrate) {
+      navigator.vibrate([120, 60, 120, 60, 80]);
+    }
+  } catch(e) {}
+}
+
+// ============================================
+//  VOICE ALERT SYSTEM (เสียงพูดแจ้งเตือน)
+// ============================================
+
 let _updateVoiceAudio = null;
 let _pendingVoiceOnInteraction = false;
 
@@ -3026,46 +3169,64 @@ try {
 
 function playUpdateVoiceAlert(isUserInitiated = false) {
   try {
-    const audio = getUpdateVoiceAudio();
-    audio.currentTime = 0;
-    audio.volume = 1.0;
+    // เล่นเสียงกระดิ่งก่อน แล้วค่อยเล่นเสียงพูด
+    playNotificationChime();
 
-    const playPromise = audio.play();
-    if (playPromise && playPromise.then) {
-      playPromise.then(() => {
-        console.log('🎀 เล่นเสียงแจ้งเตือนอัปเดตจากไฟล์เสียงที่คุณส่งมาสำเร็จ');
-        const voiceBtn = document.getElementById('btn-banner-voice');
-        if (voiceBtn) {
-          voiceBtn.style.transform = 'scale(1.15)';
-          voiceBtn.style.boxShadow = '0 0 18px rgba(236, 72, 153, 0.85)';
+    // แสดงกล่องแจ้งเตือนลอยลงมาพร้อมรูปมาสคอต
+    showFloatingNotification(
+      '🔔 แจ้งเตือนจาก Haimiya Typo',
+      currentAppLang === 'th'
+        ? '✨ อัปเดตด้วยนะคะ~ มีเพลงใหม่เพิ่มเข้ามาแล้ว!'
+        : '✨ Update available! New songs have been added!',
+      { duration: 8000 }
+    );
+
+    // สั่นอุปกรณ์
+    triggerNotifVibration();
+
+    // เล่นเสียงพูดหลังเสียงกระดิ่งจบ (~1.2 วินาที)
+    setTimeout(() => {
+      const audio = getUpdateVoiceAudio();
+      audio.currentTime = 0;
+      audio.volume = 1.0;
+
+      const playPromise = audio.play();
+      if (playPromise && playPromise.then) {
+        playPromise.then(() => {
+          console.log('🎀 เล่นเสียงแจ้งเตือนอัปเดตสำเร็จ');
+          const buttons = document.querySelectorAll('#btn-banner-voice, #btn-floating-voice-test, .btn-hero-voice-test, .nav-voice-btn');
+          buttons.forEach(btn => {
+            btn.classList.add('voice-playing');
+            btn.style.transform = 'scale(1.08)';
+            btn.style.boxShadow = '0 0 20px rgba(236, 72, 153, 0.9)';
+          });
           setTimeout(() => {
-            if (voiceBtn) {
-              voiceBtn.style.transform = '';
-              voiceBtn.style.boxShadow = '';
-            }
-          }, 450);
-        }
-      }).catch((err) => {
-        console.warn('Autoplay restricted audio play:', err);
-        // หากบราวเซอร์บล็อก autoplay ตอนเปิดอัตโนมัติ ให้รอผู้ใช้สัมผัสหน้าจอครั้งแรกแล้วเล่นทันที
-        if (!isUserInitiated && !_pendingVoiceOnInteraction) {
-          _pendingVoiceOnInteraction = true;
-          const onFirstTouch = () => {
-            _pendingVoiceOnInteraction = false;
-            window.removeEventListener('pointerdown', onFirstTouch);
-            window.removeEventListener('touchstart', onFirstTouch);
-            window.removeEventListener('click', onFirstTouch);
-            playUpdateVoiceAlert(true);
-          };
-          window.addEventListener('pointerdown', onFirstTouch, { once: true });
-          window.addEventListener('touchstart', onFirstTouch, { once: true });
-          window.addEventListener('click', onFirstTouch, { once: true });
-        } else {
-          // หากเล่นไฟล์เสียงไม่ได้จริง ให้ fallback ไปยัง Speech Synthesis
-          playUpdateVoiceFallback();
-        }
-      });
-    }
+            buttons.forEach(btn => {
+              btn.classList.remove('voice-playing');
+              btn.style.transform = '';
+              btn.style.boxShadow = '';
+            });
+          }, 3500);
+        }).catch((err) => {
+          console.warn('Autoplay restricted audio play:', err);
+          if (!isUserInitiated && !_pendingVoiceOnInteraction) {
+            _pendingVoiceOnInteraction = true;
+            const onFirstTouch = () => {
+              _pendingVoiceOnInteraction = false;
+              window.removeEventListener('pointerdown', onFirstTouch);
+              window.removeEventListener('touchstart', onFirstTouch);
+              window.removeEventListener('click', onFirstTouch);
+              playUpdateVoiceAlert(true);
+            };
+            window.addEventListener('pointerdown', onFirstTouch, { once: true });
+            window.addEventListener('touchstart', onFirstTouch, { once: true });
+            window.addEventListener('click', onFirstTouch, { once: true });
+          } else {
+            playUpdateVoiceFallback();
+          }
+        });
+      }
+    }, 1200);
   } catch (err) {
     console.warn('playUpdateVoiceAlert error:', err);
     playUpdateVoiceFallback();

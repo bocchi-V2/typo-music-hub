@@ -26,7 +26,7 @@ const https = require('https');
 const { execSync } = require('child_process');
 
 const EXACT_ADULT_WORDS = [
-  /\bhentai\b/i, /\becchi\b/i, /\berotica\b/i, /\br-?18\b/i, /\b\+?18\+?\b/i,
+  /\bhentai\b/i, /\becchi\b/i, /\berotica\b/i, /\br-?18\+?\b/i, /\b18\+/i, /\+18\b/i, /\b18\s*plus\b/i,
   /\badult\b/i, /\bsmut\b/i, /\byaoi\b/i, /\byuri\b/i, /\bsex\b/i, /\bporn\b/i,
   /\bnsfw\b/i, /\bxxx\b/i
 ];
