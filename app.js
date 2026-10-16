@@ -942,6 +942,7 @@ function togglePlaySong(songId) {
       duckRelaxBgm();
       updateAudioUI(true);
       showBottomPlayer(song);
+      updateMediaSession(song, false);
       if (!navigator.onLine) {
         showToast(currentAppLang === 'th' ? '⚡ เล่นจากคลังเพลงออฟไลน์ในเครื่อง' : '⚡ Playing from offline storage');
       }
@@ -2384,49 +2385,87 @@ function toggleRelaxBgm() {
   updateRelaxBgmUI(isRelaxBgmEnabled && !isDuckMutedByPreview);
 }
 
-// ---- APP LIFECYCLE & BACKGROUND AUDIO SUPPRESSION ----
-// ป้องกันปัญหาเสียงเล่นค้างหรือกระตุกติดๆ ขัดๆ เมื่อผู้ใช้กดออกจากแอป หรือสลับไปหน้าจออื่น (Android WebView / Browser)
+// ---- MEDIA SESSION & BACKGROUND AUDIO PLAYBACK ----
+// รองรับการเล่นเพลงต่อเนื่องในพื้นหลัง (Background Playback) แม้ล็อกหน้าจอหรือสลับแอป พร้อมปุ่มควบคุม Lock Screen
+function updateMediaSession(track, isRelaxBgm = false) {
+  if (!('mediaSession' in navigator) || !track) return;
+  try {
+    const title = track.title || (isRelaxBgm ? 'blue' : 'Haimiya Typo Track');
+    const artist = track.artist || (isRelaxBgm ? 'yung kai' : 'Haimiya Studio');
+    const artworkUrl = track.coverUrl || 'app-icon.jpg';
+
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: title,
+      artist: artist,
+      album: 'Haimiya Typo Studio',
+      artwork: [
+        { src: artworkUrl, sizes: '512x512', type: 'image/jpeg' },
+        { src: 'app-icon.jpg', sizes: '192x192', type: 'image/jpeg' }
+      ]
+    });
+
+    navigator.mediaSession.playbackState = 'playing';
+
+    navigator.mediaSession.setActionHandler('play', () => {
+      if (currentAudio && currentAudio.paused) {
+        currentAudio.play();
+        navigator.mediaSession.playbackState = 'playing';
+        updateAudioUI(true);
+      } else if (relaxBgmAudio && relaxBgmAudio.paused && isRelaxBgmEnabled) {
+        startRelaxBgm();
+        navigator.mediaSession.playbackState = 'playing';
+      }
+    });
+
+    navigator.mediaSession.setActionHandler('pause', () => {
+      if (currentAudio && !currentAudio.paused) {
+        currentAudio.pause();
+        navigator.mediaSession.playbackState = 'paused';
+        updateAudioUI(false);
+      } else if (relaxBgmAudio && !relaxBgmAudio.paused) {
+        pauseRelaxBgm();
+        navigator.mediaSession.playbackState = 'paused';
+      }
+    });
+
+    navigator.mediaSession.setActionHandler('previoustrack', () => {
+      if (currentPlayingId) {
+        const idx = SONGS.findIndex(s => s.id === currentPlayingId);
+        if (idx > 0) playPreview(SONGS[idx - 1].id);
+        else if (SONGS.length > 0) playPreview(SONGS[SONGS.length - 1].id);
+      }
+    });
+
+    navigator.mediaSession.setActionHandler('nexttrack', () => {
+      if (currentPlayingId) {
+        const idx = SONGS.findIndex(s => s.id === currentPlayingId);
+        if (idx >= 0 && idx < SONGS.length - 1) playPreview(SONGS[idx + 1].id);
+        else if (SONGS.length > 0) playPreview(SONGS[0].id);
+      }
+    });
+  } catch (e) {
+    console.warn('⚠️ MediaSession error:', e);
+  }
+}
+
 function handleAppGoingBackground() {
-  // 1. หยุดเพลง BGM ผ่อนคลายถ้ากำลังเล่นอยู่
-  if (relaxBgmAudio && !relaxBgmAudio.paused) {
-    wasRelaxBgmPlayingBeforeBackground = true;
-    try {
-      relaxBgmAudio.pause();
-    } catch (e) {}
-    updateRelaxBgmUI(false);
-  } else {
-    wasRelaxBgmPlayingBeforeBackground = false;
-  }
-
-  // 2. หยุดเพลงตัวอย่าง (preview audio) ทันทีถ้ากำลังเล่นอยู่ เพื่อไม่ให้เสียงกระตุกในพื้นหลัง
-  if (currentAudio && !currentAudio.paused) {
-    wasPreviewPlayingBeforeBackground = true;
-    try {
-      currentAudio.pause();
-    } catch (e) {}
-    updateAudioUI(false);
-  } else {
-    wasPreviewPlayingBeforeBackground = false;
-  }
-
-  // 3. หยุดเสียงเอฟเฟกต์อื่นๆ ถ้ามี
+  // ให้เพลงเล่นต่อเนื่องในพื้นหลังได้อย่างราบรื่น ไม่สั่ง pause()
+  // หยุดเฉพาะเสียงพูดทักทายหรือลูกเต๋าถ้าค้างอยู่
   if (haimiyaAudio && !haimiyaAudio.paused) {
     try { haimiyaAudio.pause(); } catch (e) {}
+  }
+  if (diceAudio && !diceAudio.paused) {
+    try { diceAudio.pause(); } catch (e) {}
   }
 }
 
 function handleAppReturningForeground() {
-  // เมื่อผู้ใช้เปิดแอปกลับขึ้นมา
-  // ถ้าเดิมเพลงผ่อนคลายเปิดเล่นอยู่ และไม่ได้มีเพลงตัวอย่างค้างอยู่ ให้เล่นต่ออย่างราบรื่น
-  if (wasRelaxBgmPlayingBeforeBackground && isRelaxBgmEnabled && !isDuckMutedByPreview) {
-    try {
-      const audio = getRelaxBgmAudio();
-      audio.volume = RELAX_BGM_VOLUME;
-      audio.play().then(() => updateRelaxBgmUI(true)).catch(() => {});
-    } catch (e) {}
+  // ซิงค์สถานะ UI เมื่อผู้ใช้เปิดแอปกลับขึ้นมา
+  if (currentAudio && !currentAudio.paused) {
+    updateAudioUI(true);
+  } else if (relaxBgmAudio && !relaxBgmAudio.paused) {
+    updateRelaxBgmUI(true);
   }
-  wasRelaxBgmPlayingBeforeBackground = false;
-  wasPreviewPlayingBeforeBackground = false;
 }
 
 // ดักจับเมื่อหน้าจอถูกพับ ย่อ สลับแท็บ หรือกดออกจากแอป
@@ -2571,9 +2610,221 @@ function initSplashScreen() {
   }, interval);
 }
 
+// ============================================
+//  LIVE AUTO-UPDATE & IN-APP APK UPGRADER (OTA)
+//  ระบบซิงค์เพลง/อนิเมะสดอัตโนมัติ และอัปเดตแอป APK ทับของเดิมได้ 100% ไม่ต้องลบแอปเก่า
+// ============================================
+
+const CURRENT_APP_VERSION = 'v2.20261016.1232';
+const CURRENT_VERSION_CODE = 9212872;
+const GITHUB_REPO_OWNER = 'bocchi-V2';
+const GITHUB_REPO_NAME = 'typo-music-hub';
+const GITHUB_PAGES_BASE = 'https://bocchi-v2.github.io/typo-music-hub';
+const GITHUB_RAW_BASE = 'https://raw.githubusercontent.com/bocchi-V2/typo-music-hub/master';
+
+const HAIMIYA_DB_NAME = 'HaimiyaTypoDB';
+const HAIMIYA_DB_VERSION = 1;
+const HAIMIYA_STORE_NAME = 'synced_data';
+
+function openHaimiyaDB() {
+  return new Promise((resolve) => {
+    if (!window.indexedDB) return resolve(null);
+    try {
+      const req = indexedDB.open(HAIMIYA_DB_NAME, HAIMIYA_DB_VERSION);
+      req.onupgradeneeded = (e) => {
+        const db = e.target.result;
+        if (!db.objectStoreNames.contains(HAIMIYA_STORE_NAME)) {
+          db.createObjectStore(HAIMIYA_STORE_NAME);
+        }
+      };
+      req.onsuccess = () => resolve(req.result);
+      req.onerror = () => resolve(null);
+    } catch (e) {
+      resolve(null);
+    }
+  });
+}
+
+async function getHaimiyaDB(key) {
+  try {
+    const db = await openHaimiyaDB();
+    if (!db) return null;
+    return new Promise((resolve) => {
+      const tx = db.transaction(HAIMIYA_STORE_NAME, 'readonly');
+      const store = tx.objectStore(HAIMIYA_STORE_NAME);
+      const req = store.get(key);
+      req.onsuccess = () => resolve(req.result || null);
+      req.onerror = () => resolve(null);
+    });
+  } catch (e) {
+    return null;
+  }
+}
+
+async function setHaimiyaDB(key, val) {
+  try {
+    const db = await openHaimiyaDB();
+    if (!db) return false;
+    return new Promise((resolve) => {
+      const tx = db.transaction(HAIMIYA_STORE_NAME, 'readwrite');
+      const store = tx.objectStore(HAIMIYA_STORE_NAME);
+      store.put(val, key);
+      tx.oncomplete = () => resolve(true);
+      tx.onerror = () => resolve(false);
+    });
+  } catch (e) {
+    return false;
+  }
+}
+
+function replaceArrayInPlace(target, source) {
+  if (!Array.isArray(target) || !Array.isArray(source)) return;
+  target.length = 0;
+  for (let i = 0; i < source.length; i += 500) {
+    target.push(...source.slice(i, i + 500));
+  }
+}
+
+// 1. โหลดข้อมูลที่แคชไว้จากรอบก่อนหน้า (ทำงานได้แบบ Offline 100%)
+async function loadCachedDatabase() {
+  try {
+    const cachedSongs = await getHaimiyaDB('synced_songs');
+    const cachedAnimes = await getHaimiyaDB('synced_animes');
+    const cachedPairs = await getHaimiyaDB('synced_pairs');
+    if (cachedSongs && Array.isArray(cachedSongs) && cachedSongs.length > SONGS.length) {
+      replaceArrayInPlace(SONGS, cachedSongs);
+      if (cachedAnimes && Array.isArray(cachedAnimes)) replaceArrayInPlace(ANIMES, cachedAnimes);
+      if (cachedPairs && Array.isArray(cachedPairs)) replaceArrayInPlace(ANIME_PAIRS, cachedPairs);
+      initDataMaps();
+      console.log(`⚡ [IndexedDB] โหลดฐานข้อมูลเพลงแคชสำเร็จ: ${SONGS.length} เพลง | ${ANIMES.length} อนิเมะ`);
+    }
+  } catch (e) {
+    console.warn('⚠️ loadCachedDatabase:', e);
+  }
+}
+
+// 2. เช็คการอัปเดตเพลงและอนิเมะสดทางอินเทอร์เน็ต (Live OTA Content Sync)
+async function checkLiveContentUpdate() {
+  if (!navigator.onLine) return;
+  try {
+    let remoteVersion = null;
+    const endpoints = [
+      `${GITHUB_PAGES_BASE}/version.json?_t=${Date.now()}`,
+      `${GITHUB_RAW_BASE}/version.json?_t=${Date.now()}`
+    ];
+    for (const url of endpoints) {
+      try {
+        const res = await fetch(url, { cache: 'no-store' });
+        if (res.ok) {
+          remoteVersion = await res.json();
+          break;
+        }
+      } catch (e) {}
+    }
+    if (!remoteVersion) return;
+
+    const localCode = parseInt(await getHaimiyaDB('synced_version_code') || '0', 10);
+    const hasMoreSongs = remoteVersion.songCount && remoteVersion.songCount > SONGS.length;
+    const isNewerCode = remoteVersion.versionCode && remoteVersion.versionCode > Math.max(CURRENT_VERSION_CODE, localCode);
+
+    if (hasMoreSongs || isNewerCode) {
+      console.log(`🔄 พบข้อมูลใหม่! เครื่อง: ${SONGS.length} เพลง -> คลาวด์: ${remoteVersion.songCount} เพลง กำลังซิงค์...`);
+      let dataText = null;
+      const dataEndpoints = [
+        `${GITHUB_PAGES_BASE}/data.js?_t=${Date.now()}`,
+        `${GITHUB_RAW_BASE}/data.js?_t=${Date.now()}`
+      ];
+      for (const url of dataEndpoints) {
+        try {
+          const res = await fetch(url, { cache: 'no-store' });
+          if (res.ok) {
+            dataText = await res.text();
+            break;
+          }
+        } catch (e) {}
+      }
+      if (!dataText) return;
+
+      const parseFn = new Function(dataText + '; return { songs: typeof SONGS !== "undefined" ? SONGS : [], animes: typeof ANIMES !== "undefined" ? ANIMES : [], pairs: typeof ANIME_PAIRS !== "undefined" ? ANIME_PAIRS : [] };');
+      const parsed = parseFn();
+      if (parsed && Array.isArray(parsed.songs) && parsed.songs.length >= SONGS.length) {
+        replaceArrayInPlace(SONGS, parsed.songs);
+        if (parsed.animes && parsed.animes.length) replaceArrayInPlace(ANIMES, parsed.animes);
+        if (parsed.pairs && parsed.pairs.length) replaceArrayInPlace(ANIME_PAIRS, parsed.pairs);
+
+        await setHaimiyaDB('synced_songs', parsed.songs);
+        await setHaimiyaDB('synced_animes', parsed.animes);
+        await setHaimiyaDB('synced_pairs', parsed.pairs);
+        await setHaimiyaDB('synced_version_code', remoteVersion.versionCode || Date.now());
+
+        initDataMaps();
+        if (typeof updateStats === 'function') updateStats();
+        if (typeof renderSongsGrid === 'function') renderSongsGrid();
+        if (typeof renderAnimeMatchGrid === 'function') renderAnimeMatchGrid();
+        if (typeof populateFinderDropdowns === 'function') populateFinderDropdowns();
+
+        showToast(currentAppLang === 'th'
+          ? `🎉 ซิงค์ข้อมูลล่าสุดอัตโนมัติสำเร็จ! คลังเพลงเป็นเวอร์ชันล่าสุด ${SONGS.length} เพลงแล้ว ✨`
+          : `🎉 Auto-synced latest tracks! Library now has ${SONGS.length} songs ✨`
+        );
+      }
+    }
+  } catch (err) {
+    console.warn('⚠️ checkLiveContentUpdate:', err);
+  }
+}
+
+// 3. ตรวจสอบเวอร์ชันไฟล์ APK จาก GitHub Releases เพื่อแจ้งเตือนให้อัปเดตทันที
+async function checkApkAppUpdate() {
+  if (!navigator.onLine) return;
+  if (sessionStorage.getItem('dismissed_apk_banner') === 'true') return;
+  try {
+    const res = await fetch(`https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/releases/latest`, {
+      headers: { 'Accept': 'application/vnd.github.v3+json' }
+    });
+    if (!res.ok) return;
+    const release = await res.json();
+    if (!release || !release.tag_name) return;
+
+    if (release.tag_name !== CURRENT_APP_VERSION && !release.draft && !release.prerelease) {
+      const banner = document.getElementById('in-app-update-banner');
+      const titleEl = document.getElementById('update-banner-title');
+      const descEl = document.getElementById('update-banner-desc');
+      const btnEl = document.getElementById('btn-banner-update');
+
+      if (banner && titleEl) {
+        titleEl.textContent = currentAppLang === 'th'
+          ? `มีอัปเดต Haimiya Typo (${release.tag_name}) พร้อมใช้งาน!`
+          : `New Haimiya Typo (${release.tag_name}) is available!`;
+        if (descEl) {
+          descEl.textContent = currentAppLang === 'th'
+            ? 'ติดตั้งทับเวอร์ชันเดิมได้ทันที 100% โดยไม่ต้องถอนการติดตั้ง ข้อมูลไม่หาย'
+            : 'Install directly over existing app without uninstalling. Data preserved.';
+        }
+        if (btnEl) {
+          const apkAsset = (release.assets || []).find(a => a.name.endsWith('.apk'));
+          if (apkAsset && apkAsset.browser_download_url) {
+            btnEl.href = apkAsset.browser_download_url;
+          }
+        }
+        banner.style.display = 'block';
+      }
+    }
+  } catch (e) {
+    console.warn('⚠️ checkApkAppUpdate:', e);
+  }
+}
+
+function dismissUpdateBanner() {
+  const banner = document.getElementById('in-app-update-banner');
+  if (banner) banner.style.display = 'none';
+  sessionStorage.setItem('dismissed_apk_banner', 'true');
+}
+
 // ---- INIT ----
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   initSplashScreen();
+  await loadCachedDatabase();
   setAppLanguage(currentAppLang);
   renderSongsGrid();
   renderAnimeMatchGrid();
@@ -2587,6 +2838,17 @@ document.addEventListener('DOMContentLoaded', () => {
   initWeeklyUpdateTracker();
   updateSavedBadges();
   initOfflineAudioVault();
+
+  // Background live checks after UI render
+  setTimeout(() => {
+    checkLiveContentUpdate();
+    checkApkAppUpdate();
+  }, 3500);
+
+  window.addEventListener('online', () => {
+    checkLiveContentUpdate();
+    checkApkAppUpdate();
+  });
 });
 
 function updateStats() {

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'haimiya-typo-v13';
+const CACHE_NAME = 'haimiya-typo-v14';
 const AUDIO_CACHE_NAME = 'haimiya-audio-vault';
 
 // ไฟล์ที่ต้องแคชเพื่อให้แอพทำงานแบบ offline ได้ 100%
@@ -8,6 +8,7 @@ const ASSETS_TO_CACHE = [
   './style.css',
   './app.js',
   './data.js',
+  './version.json',
   './manifest.json',
   './favicon-logo.jpg',
   './app-icon.jpg',
@@ -118,7 +119,19 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // 2. สำหรับ external URL (เช่น รูปปก) ใช้ cache-first หรือ network-first
+  // 2. สำหรับ version.json หรือ request ที่มี _t (Live Content Sync) ให้ดึงสดจากเน็ตก่อนเสมอ (Network-First)
+  if (url.pathname.endsWith('version.json') || url.searchParams.has('_t')) {
+    event.respondWith(
+      fetch(event.request).then((networkRes) => {
+        if (networkRes && networkRes.status === 200) {
+          const clone = networkRes.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone));
+        }
+        return networkRes;
+      }).catch(() => caches.match(event.request))
+    );
+    return;
+  }
   if (!url.origin.includes(self.location.origin)) {
     event.respondWith(
       caches.match(event.request).then((cached) => {
