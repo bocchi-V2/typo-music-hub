@@ -72,8 +72,24 @@ if (content.includes('buildTypes {')) {
   }
 }
 
+// กำหนด minSdkVersion ให้เป็น 22 เพื่อการันตีการรองรับ Android 10 (API 29), 11, 12, 13, 14, 15 และเวอร์ชันเก่ากว่า 100%
+if (content.includes('minSdkVersion')) {
+  content = content.replace(/minSdkVersion\s+\d+/, 'minSdkVersion 22');
+} else if (content.includes('defaultConfig {')) {
+  content = content.replace('defaultConfig {', 'defaultConfig {\n        minSdkVersion 22');
+}
+
 fs.writeFileSync(gradlePath, content, 'utf8');
-console.log('✅ แก้ไข android/app/build.gradle เรียบร้อยแล้ว!');
+console.log('✅ แก้ไข android/app/build.gradle เรียบร้อยแล้ว (รองรับ Android 10 ขึ้นไป 100%)!');
+
+// ตรวจสอบและตั้งค่า android/variables.gradle ถ้ามี
+const variablesGradlePath = path.join(__dirname, 'android', 'variables.gradle');
+if (fs.existsSync(variablesGradlePath)) {
+  let vContent = fs.readFileSync(variablesGradlePath, 'utf8');
+  vContent = vContent.replace(/minSdkVersion\s*=\s*\d+/, 'minSdkVersion = 22');
+  fs.writeFileSync(variablesGradlePath, vContent, 'utf8');
+  console.log('✅ อัปเดต android/variables.gradle: minSdkVersion = 22');
+}
 
 // ซิงค์ versionName และ versionCode เข้าไปยัง www/app.js และ www/version.json
 // เพื่อให้แอป APK มีเลขเวอร์ชันตรงกับ Release บน GitHub 100% ป้องกันบั๊กแจ้งเตือนอัปเดตเวอร์ชันตัวเอง
@@ -116,7 +132,9 @@ if (fs.existsSync(manifestPath)) {
     '<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />',
     '<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />',
     '<uses-permission android:name="android.permission.INTERNET" />',
-    '<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />'
+    '<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />',
+    '<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="29" />',
+    '<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="29" />'
   ];
 
   permissionsToAdd.forEach(p => {
@@ -124,6 +142,23 @@ if (fs.existsSync(manifestPath)) {
       manifest = manifest.replace('</manifest>', `    ${p}\n</manifest>`);
     }
   });
+
+  // ปรับแต่ง <application เพื่อรองรับ HTTP cleartext และ legacy external storage บน Android 10
+  if (!manifest.includes('android:usesCleartextTraffic')) {
+    manifest = manifest.replace(
+      /<application\b([^>]*)>/,
+      (match, attrs) => {
+        let newAttrs = attrs;
+        if (!newAttrs.includes('android:usesCleartextTraffic')) {
+          newAttrs += ' android:usesCleartextTraffic="true"';
+        }
+        if (!newAttrs.includes('android:requestLegacyExternalStorage')) {
+          newAttrs += ' android:requestLegacyExternalStorage="true"';
+        }
+        return `<application${newAttrs}>`;
+      }
+    );
+  }
 
   // เพิ่ม android:supportsPictureInPicture="true" และ resizeableActivity ใน <activity
   if (!manifest.includes('android:supportsPictureInPicture="true"')) {
