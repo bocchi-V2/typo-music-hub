@@ -261,10 +261,14 @@ jobs:
           path: dist-apk/HaimiyaTypo.apk
           retention-days: 90
 
-      - name: 📆 สร้างเลขเวอร์ชันอัตโนมัติ
+      - name: 📆 กำหนดเลขเวอร์ชันสำหรับ Release (ตรงกับตัวแอป 100%)
         id: version
         run: |
-          VERSION="v2.$(date +'%Y%m%d.%H%M')"
+          if [ -f ".build_version" ]; then
+            VERSION=$(cat .build_version)
+          else
+            VERSION="v2.$(date +'%Y%m%d.%H%M')"
+          fi
           echo "tag=$VERSION" >> $GITHUB_OUTPUT
           echo "📌 Version: $VERSION"
 

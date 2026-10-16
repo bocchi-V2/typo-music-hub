@@ -74,3 +74,31 @@ if (content.includes('buildTypes {')) {
 
 fs.writeFileSync(gradlePath, content, 'utf8');
 console.log('✅ แก้ไข android/app/build.gradle เรียบร้อยแล้ว!');
+
+// ซิงค์ versionName และ versionCode เข้าไปยัง www/app.js และ www/version.json
+// เพื่อให้แอป APK มีเลขเวอร์ชันตรงกับ Release บน GitHub 100% ป้องกันบั๊กแจ้งเตือนอัปเดตเวอร์ชันตัวเอง
+const wwwAppJs = path.join(__dirname, 'www', 'app.js');
+if (fs.existsSync(wwwAppJs)) {
+  let js = fs.readFileSync(wwwAppJs, 'utf8');
+  js = js.replace(/const CURRENT_APP_VERSION = '[^']+';/, `const CURRENT_APP_VERSION = '${versionName}';`);
+  js = js.replace(/const CURRENT_VERSION_CODE = \d+;/, `const CURRENT_VERSION_CODE = ${versionCode};`);
+  fs.writeFileSync(wwwAppJs, js, 'utf8');
+  console.log(`✅ อัปเดต www/app.js ให้ตรงกับเวอร์ชัน APK: ${versionName} (${versionCode})`);
+}
+
+const wwwVersionJson = path.join(__dirname, 'www', 'version.json');
+if (fs.existsSync(wwwVersionJson)) {
+  try {
+    const vData = JSON.parse(fs.readFileSync(wwwVersionJson, 'utf8'));
+    vData.version = versionName.replace(/^v/, '');
+    vData.versionCode = versionCode;
+    vData.updatedAt = new Date().toISOString();
+    fs.writeFileSync(wwwVersionJson, JSON.stringify(vData, null, 2), 'utf8');
+    console.log(`✅ อัปเดต www/version.json ให้ตรงกับเวอร์ชัน APK: ${vData.version}`);
+  } catch(e) {}
+}
+
+// บันทึก .build_version ให้ GitHub Actions ใช้เป็น tag_name ของ Release
+fs.writeFileSync(path.join(__dirname, '.build_version'), versionName, 'utf8');
+console.log(`✅ บันทึก .build_version: ${versionName}`);
+
