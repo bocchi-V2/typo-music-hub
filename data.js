@@ -46128,14 +46128,13 @@ const SONGS = [
     "matchingAnime": "5 Centimeters per Second",
     "reason": "ท่อนฮุกติดหูคู่กับท่อนแร็ปสะเทือนใจเรื่องความทรงจำที่ลืมไม่ลง",
     "typoIdea": "ฟิล์มภาพถ่ายเก่าๆ หมุนวนรอบข้อความตัวพิมพ์ดีด"
-  }
-,
+  },
   {
     "id": 1830,
     "title": "ผิดที่ไว้ใจ",
-    "artist": "MILLI",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000078e96bd0/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9C%E0%B8%B4%E0%B8%94%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A7",
-    "previewUrl": "",
+    "artist": "Silly Fools",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/48/bd/19/48bd19a2-c2d0-43f2-a5f2-d4e7943c0241/888332994392.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/48/2c/95/482c95c7-3169-9fdf-6f84-95163f1ac309/mzaf_14792285075013650927.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9C%E0%B8%B4%E0%B8%94%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A7%E0%B9%89%E0%B9%83%E0%B8%88%20MILLI",
     "mood": "sad",
     "tags": [
@@ -46158,9 +46157,9 @@ const SONGS = [
   {
     "id": 1831,
     "title": "กอดได้ไหม",
-    "artist": "Tilly Birds",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000371cdaf5/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%81%E0%B8%AD%E0%B8%94%E0%B9%84%E0%B8%94%E0%B9%89%E0%B9%84%E0%B8%AB",
-    "previewUrl": "",
+    "artist": "URBOYTJ",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/8b/31/9c/8b319ce5-70f6-98f0-af23-04f8899eab16/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/de/46/9d/de469d08-4fc7-ceea-972a-7985c6a65c8a/mzaf_18297339689017587232.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%AD%E0%B8%94%E0%B9%84%E0%B8%94%E0%B9%89%E0%B9%84%E0%B8%AB%E0%B8%A1%20Tilly%20Birds",
     "mood": "love",
     "tags": [
@@ -46182,10 +46181,10 @@ const SONGS = [
   },
   {
     "id": 1832,
-    "title": "วันนี้วันดี",
-    "artist": "Polycat",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004a723228/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B8%A7%E0%B8%B1",
-    "previewUrl": "",
+    "title": "วันนี้วันดี (บรเทศ)",
+    "artist": "ดาวรุ่งสุนทราภรณ์",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music1/v4/86/bf/e5/86bfe576-44eb-4914-1a3b-5f5b1ef770d7/1400.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/c8/f0/d8/c8f0d84f-7457-ad1c-c4b7-55bffb6bc420/mzaf_64315252569995250.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%99%E0%B8%B5%E0%B9%89%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%94%E0%B8%B5%20Polycat",
     "mood": "happy",
     "tags": [
@@ -46207,10 +46206,10 @@ const SONGS = [
   },
   {
     "id": 1833,
-    "title": "รักเธอเท่าที่เธอไม่รัก",
-    "artist": "Getsunova",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000a86cd52/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B9%80%E0%B8%97",
-    "previewUrl": "",
+    "title": "นักเดินทาง",
+    "artist": "getsunova",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fc/73/9d/fc739d38-f89c-ad63-91f0-a89ed5dec2e9/888332941990.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6e/de/37/6ede37f0-eceb-1187-d9be-94d1dd4c8753/mzaf_3921861828487518977.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B9%80%E0%B8%97%E0%B9%88%E0%B8%B2%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A3%E0%B8%B1%E0%B8%81%20Getsunova",
     "mood": "sad",
     "tags": [
@@ -46233,10 +46232,10 @@ const SONGS = [
   },
   {
     "id": 1834,
-    "title": "ไม่เคยลืม",
+    "title": "ไม่เคย",
     "artist": "25 Hours",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000001e56602e/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%84%E0%B8%A2%E0%B8%A5%E0%B8%B7",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e3/8f/d8/e38fd899-9556-6464-71d5-65f1b48a310b/888332960809.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/88/36/1a/88361a5c-900a-ed14-185d-f20ce54be1c2/mzaf_2916132918993983440.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%84%E0%B8%A2%E0%B8%A5%E0%B8%B7%E0%B8%A1%2025%20Hours",
     "mood": "sad",
     "tags": [
@@ -46260,9 +46259,9 @@ const SONGS = [
   {
     "id": 1835,
     "title": "คนที่ถูกรัก",
-    "artist": "Three Man Down",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006778c074/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%96%E0%B8%B9%E0%B8%81",
-    "previewUrl": "",
+    "artist": "Bodyslam",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8a/3e/91/8a3e919a-4fe2-32d1-3f90-4027efabb012/888332962742.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e4/8a/d2/e48ad259-9c52-c881-6879-c6c78ca72846/mzaf_11762122744534310092.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%96%E0%B8%B9%E0%B8%81%E0%B8%A3%E0%B8%B1%E0%B8%81%20Three%20Man%20Down",
     "mood": "love",
     "tags": [
@@ -46285,9 +46284,9 @@ const SONGS = [
   {
     "id": 1836,
     "title": "ไม่มีใครรู้",
-    "artist": "BOWKYLION",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000055aa743c/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%84%E0%B8%A3",
-    "previewUrl": "",
+    "artist": "Peck Palitchoke",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d3/b8/f5/d3b8f570-dc02-5ac4-0fc7-2683af6bec5e/888332979092.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/aa/39/be/aa39be64-f24a-74e5-fdfc-1636ce8e8d26/mzaf_3100356967053674657.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%83%E0%B8%84%E0%B8%A3%E0%B8%A3%E0%B8%B9%E0%B9%89%20BOWKYLION",
     "mood": "chill",
     "tags": [
@@ -46309,10 +46308,10 @@ const SONGS = [
   },
   {
     "id": 1837,
-    "title": "อีกนานแค่ไหน",
-    "artist": "MEAN",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000031153839/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AD%E0%B8%B5%E0%B8%81%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%84",
-    "previewUrl": "",
+    "title": "Emptiness",
+    "artist": "Nann",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music71/v4/e9/71/5d/e9715d57-3e3c-afaa-1f1d-c3a0c15abc42/itune_3000.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/a5/55/17/a55517ce-461d-00be-03d8-bd644c321493/mzaf_8935383670399341905.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%B5%E0%B8%81%E0%B8%99%E0%B8%B2%E0%B8%99%E0%B9%81%E0%B8%84%E0%B9%88%E0%B9%84%E0%B8%AB%E0%B8%99%20MEAN",
     "mood": "sad",
     "tags": [
@@ -46334,10 +46333,10 @@ const SONGS = [
   },
   {
     "id": 1838,
-    "title": "บอกฉันทีว่ายังรักกัน",
-    "artist": "SEASON FIVE",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002388e151/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B5",
-    "previewUrl": "",
+    "title": "Kidding?",
+    "artist": "Zom Marie",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/64/6c/02/646c0271-eaba-f847-81dc-0fea4cc037c5/00602508859588_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8b/f8/ab/8bf8abd9-9537-7a4a-9ed1-4d9a59130eb9/mzaf_4566440410886225018.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%99%20SEASON%20FIVE",
     "mood": "love",
     "tags": [
@@ -46359,10 +46358,10 @@ const SONGS = [
   },
   {
     "id": 1839,
-    "title": "ยิ่งไกลยิ่งใกล้",
-    "artist": "Da Endorphine",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000001949445d/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B9%84%E0%B8%81%E0%B8%A5%E0%B8%A2",
-    "previewUrl": "",
+    "title": "Muen Derm",
+    "artist": "POK & Da Endorphine",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/50/7d/35/507d3562-449c-d79d-3675-4265e74fe237/0840102451788_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/63/91/ce63914f-012f-5f6a-e094-04028fa07eec/mzaf_4687926351095429069.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B9%84%E0%B8%81%E0%B8%A5%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B9%83%E0%B8%81%E0%B8%A5%E0%B9%89%20Da%20Endorphine",
     "mood": "love",
     "tags": [
@@ -46385,10 +46384,10 @@ const SONGS = [
   },
   {
     "id": 1840,
-    "title": "คือเธอ",
-    "artist": "COCKTAIL",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000070048ba1/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%B7%E0%B8%AD%E0%B9%80%E0%B8%98%E0%B8%AD",
-    "previewUrl": "",
+    "title": "เธอ",
+    "artist": "Cocktail",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/29/cd/39/29cd39a0-fa27-ecf6-3d20-3da8adc3ccd1/888332999007.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b2/f1/7b/b2f17b7e-b6dd-1120-6dcb-9ed34b8ea7bb/mzaf_10700042842919562248.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B7%E0%B8%AD%E0%B9%80%E0%B8%98%E0%B8%AD%20COCKTAIL",
     "mood": "love",
     "tags": [
@@ -46411,9 +46410,9 @@ const SONGS = [
   {
     "id": 1841,
     "title": "อยากให้รู้ว่ารักเธอ",
-    "artist": "Potato",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000680c9fa4/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AD%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%A3",
-    "previewUrl": "",
+    "artist": "Joni Anwar",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1d/e5/5f/1de55fc5-f7a0-a67d-9a2d-be2c2c03c49a/23UM1IM49027.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0e/9e/83/0e9e8371-d56c-ab53-43fe-6c4095accef5/mzaf_14259054976847889755.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%A3%E0%B8%B9%E0%B9%89%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%98%E0%B8%AD%20Potato",
     "mood": "love",
     "tags": [
@@ -46435,10 +46434,10 @@ const SONGS = [
   },
   {
     "id": 1842,
-    "title": "ผ่าน",
-    "artist": "Atom ชนกันต์",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000694968eb/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9C%E0%B9%88%E0%B8%B2%E0%B8%99",
-    "previewUrl": "",
+    "title": "Yesterday",
+    "artist": "Slot Machine",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/fb/34/ff/fb34fff8-2f17-1822-f3e4-f0218e5b7965/886444393690.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1e/d8/dc/1ed8dc19-90d6-d460-4d26-ac09a2cb96e3/mzaf_9318184082869344120.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9C%E0%B9%88%E0%B8%B2%E0%B8%99%20Atom%20%E0%B8%8A%E0%B8%99%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B9%8C",
     "mood": "sad",
     "tags": [
@@ -46462,9 +46461,9 @@ const SONGS = [
   {
     "id": 1843,
     "title": "โปรดเถิดรัก",
-    "artist": "Hugo",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000c1b62c8/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B8%94%E0%B9%80%E0%B8%96%E0%B8%B4%E0%B8%94",
-    "previewUrl": "",
+    "artist": "Cocktail",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9d/40/33/9d40332f-9fa7-cc6e-c1de-e2e7cb6f6e05/888332997744.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ed/52/03/ed52039c-0522-116d-cf0c-b3d803701ba6/mzaf_17684012342092675467.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B8%94%E0%B9%80%E0%B8%96%E0%B8%B4%E0%B8%94%E0%B8%A3%E0%B8%B1%E0%B8%81%20Hugo",
     "mood": "love",
     "tags": [
@@ -46486,10 +46485,10 @@ const SONGS = [
   },
   {
     "id": 1844,
-    "title": "คืนข้างแรม",
-    "artist": "ป๊อบ ปองกูล",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002ad99e81/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B9%81",
-    "previewUrl": "",
+    "title": "คืนข้ามปี",
+    "artist": "Pop Pongkool",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6a/ef/89/6aef893a-1632-882c-f15b-1f13163bd3a7/888332968607.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/ce/6e/14ce6eb8-b0cb-5922-6a05-92403c4c0ca6/mzaf_17358777512382150688.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B9%81%E0%B8%A3%E0%B8%A1%20%E0%B8%9B%E0%B9%8A%E0%B8%AD%E0%B8%9A%20%E0%B8%9B%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B9%E0%B8%A5",
     "mood": "sad",
     "tags": [
@@ -46513,9 +46512,9 @@ const SONGS = [
   {
     "id": 1845,
     "title": "ยิ่งไม่รู้ ยิ่งต้องทำ",
-    "artist": "SERIOUS BACON",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000c4d2545/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A3",
-    "previewUrl": "",
+    "artist": "Pop Pongkool",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5f/e5/71/5fe571b4-e100-dbd1-2315-e8f38ecd4be7/888332993234.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/09/2f/29/092f2982-a68a-7911-37bd-035b99eae375/mzaf_677040125602885804.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A3%E0%B8%B9%E0%B9%89%20%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%95%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%97%E0%B8%B3%20SERIOUS%20BACON",
     "mood": "hype",
     "tags": [
@@ -46538,9 +46537,9 @@ const SONGS = [
   {
     "id": 1846,
     "title": "พูดไม่ค่อยถูก",
-    "artist": "TRINITY",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000024583438/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9E%E0%B8%B9%E0%B8%94%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%84%E0%B9%88",
-    "previewUrl": "",
+    "artist": "Kwang ABnormal",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/18/b9/55/18b955a0-4286-8993-339d-44623a9de647/888332894494.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/77/d9/de/77d9de36-d58c-a545-aecd-42266973613c/mzaf_18198172604955919865.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%B9%E0%B8%94%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%84%E0%B9%88%E0%B8%AD%E0%B8%A2%E0%B8%96%E0%B8%B9%E0%B8%81%20TRINITY",
     "mood": "love",
     "tags": [
@@ -46563,10 +46562,10 @@ const SONGS = [
   },
   {
     "id": 1847,
-    "title": "ให้ฉันดูแลเธอ",
-    "artist": "BIG ASS",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000064c2f27b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%94%E0%B8%B9",
-    "previewUrl": "",
+    "title": "จีบ...(May I)",
+    "artist": "Namm Ronnadet",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/30/c7/ef/30c7efaf-377d-9794-4d2e-a016948acc28/0849480019696_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bd/40/6b/bd406b59-b9cf-5c40-575e-ab91ccb6e57d/mzaf_16119851385403870168.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%94%E0%B8%B9%E0%B9%81%E0%B8%A5%E0%B9%80%E0%B8%98%E0%B8%AD%20BIG%20ASS",
     "mood": "love",
     "tags": [
@@ -46588,10 +46587,10 @@ const SONGS = [
   },
   {
     "id": 1848,
-    "title": "ขอบคุณที่รักกัน",
+    "title": "ขอบคุณที่รักกัน (Acoustic Version)",
     "artist": "Potato",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000462c5109/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%82%E0%B8%AD%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%97%E0%B8%B5",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ae/96/c1/ae96c1b8-5604-c550-47ba-d00eb27f5707/888332979047.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/88/8b/9a/888b9a80-bd08-ceb4-c1a6-c77629db9824/mzaf_7717620349479086440.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%82%E0%B8%AD%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%99%20Potato",
     "mood": "love",
     "tags": [
@@ -46614,10 +46613,10 @@ const SONGS = [
   },
   {
     "id": 1849,
-    "title": "ทั้งที่ผิด ก็ยังรักเธออยู่",
-    "artist": "NUM KALA",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000011057839/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%97%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%9C",
-    "previewUrl": "",
+    "title": "ทั้งที่ผิดก็ยังรัก",
+    "artist": "Kwang ABnormal",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/74/3c/9b/743c9bda-eb70-6891-481a-d65fcac847c3/888332895040.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1a/ad/7e/1aad7e4a-df49-0c17-218a-435bd812d570/mzaf_13560216486907068532.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%9C%E0%B8%B4%E0%B8%94%20%E0%B8%81%E0%B9%87%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%AD%E0%B8%A2%E0%B8%B9%E0%B9%88%20NUM%20KALA",
     "mood": "sad",
     "tags": [
@@ -46641,8 +46640,8 @@ const SONGS = [
     "id": 1850,
     "title": "พอ",
     "artist": "SCRUBB",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000df9a35e/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9E%E0%B8%AD",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f8/01/ca/f801ca38-2a84-7734-2366-becbdfa0989a/886443628472.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a6/30/ec/a630ec22-8413-e113-3f26-8d48ad6235d6/mzaf_12674363255505517166.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%AD%20SCRUBB",
     "mood": "sad",
     "tags": [
@@ -46665,10 +46664,10 @@ const SONGS = [
   },
   {
     "id": 1851,
-    "title": "เพลงสุดท้าย",
-    "artist": "BODYSLAM",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000008088c4f/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%AA%E0%B8%B8%E0%B8%94%E0%B8%97",
-    "previewUrl": "",
+    "title": "แสงสุดท้าย",
+    "artist": "Bodyslam",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7c/8a/31/7c8a31a7-e16e-6714-23b7-18bc328e4554/888332972390.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/63/a3/bc/63a3bc00-e278-4b11-6b2d-425d5eaa0092/mzaf_11582245637568324144.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%AA%E0%B8%B8%E0%B8%94%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%A2%20BODYSLAM",
     "mood": "epic",
     "tags": [
@@ -46690,10 +46689,10 @@ const SONGS = [
   },
   {
     "id": 1852,
-    "title": "ข้ามเวลาหาเธอ",
-    "artist": "Tilly Birds",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000065f65aa6/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2",
-    "previewUrl": "",
+    "title": "ที่คั่นหนังสือ (Sometimes) [feat. NONT TANONT]",
+    "artist": "BOWKYLION",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6b/39/f0/6b39f021-a558-caba-f937-5e2505691b2a/25UMGIM82152.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/48/20/8d/48208dcc-58c1-565b-1020-1ec3be3bf985/mzaf_12253333339341324916.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A1%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B9%80%E0%B8%98%E0%B8%AD%20Tilly%20Birds",
     "mood": "love",
     "tags": [
@@ -46716,10 +46715,10 @@ const SONGS = [
   },
   {
     "id": 1853,
-    "title": "เมื่อคืนนี้",
-    "artist": "Paradox",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000001bc9ac6b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%84%E0%B8%B7%E0%B8%99",
-    "previewUrl": "",
+    "title": "Mua Kuen (feat. The Parkinson)",
+    "artist": "Season Five",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/84/f4/b8/84f4b885-e82b-0b2e-72d3-01dd7aea36a1/0849480040393_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a6/63/73/a66373b2-ba05-ec2a-0dcb-f2ce5ad32179/mzaf_1841564492072968913.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B8%99%E0%B8%B5%E0%B9%89%20Paradox",
     "mood": "love",
     "tags": [
@@ -46743,9 +46742,9 @@ const SONGS = [
   {
     "id": 1854,
     "title": "คนมีเสน่ห์",
-    "artist": "Whal & Dolph",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002400daa2/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%99%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%AA%E0%B8%99%E0%B9%88",
-    "previewUrl": "",
+    "artist": "Pang Nakarin",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e8/de/58/e8de58fe-6b32-0ae4-8ca8-0e2e59e0a16f/888332946278.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ee/ae/a4/eeaea41f-8dc8-3081-63fc-5e6a7223f78e/mzaf_9094837553761924953.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%99%E0%B8%A1%E0%B8%B5%E0%B9%80%E0%B8%AA%E0%B8%99%E0%B9%88%E0%B8%AB%E0%B9%8C%20Whal%20%26%20Dolph",
     "mood": "happy",
     "tags": [
@@ -46768,10 +46767,10 @@ const SONGS = [
   },
   {
     "id": 1855,
-    "title": "หมดห่วง",
-    "artist": "LUSS",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007f433c5c/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AB%E0%B8%A1%E0%B8%94%E0%B8%AB%E0%B9%88%E0%B8%A7%E0%B8%87",
-    "previewUrl": "",
+    "title": "สาวรำวง",
+    "artist": "ตั๊ก ศิริพร อยู่ยอด",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/78/71/20/787120f4-1204-39d3-768f-8b858d62d96b/4000.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/97/69/f5/9769f5bf-5eb9-43a1-d97f-0690ecf5af98/mzaf_11074290828127519264.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%A1%E0%B8%94%E0%B8%AB%E0%B9%88%E0%B8%A7%E0%B8%87%20LUSS",
     "mood": "chill",
     "tags": [
@@ -46793,10 +46792,10 @@ const SONGS = [
   },
   {
     "id": 1856,
-    "title": "ไม่หายไปไหน",
-    "artist": "Getsunova",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000436b5c07/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%AB%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%9B",
-    "previewUrl": "",
+    "title": "พระเอกจำลอง (เพลงประกอบละคร \"ทฤษฎีจีบเธอ Theory of love\")",
+    "artist": "getsunova",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/50/aa/ab/50aaabf8-de63-8675-c30d-2faaae08eef8/888332926379.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8b/77/c0/8b77c02d-ab2d-2417-db04-162fc34aa947/mzaf_3168218764806198697.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%AB%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%9B%E0%B9%84%E0%B8%AB%E0%B8%99%20Getsunova",
     "mood": "love",
     "tags": [
@@ -46818,10 +46817,10 @@ const SONGS = [
   },
   {
     "id": 1857,
-    "title": "สิ่งเดียวที่ไม่เปลี่ยน",
-    "artist": "Instinct",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003ec5b8ae/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B8%A2",
-    "previewUrl": "",
+    "title": "The Maze",
+    "artist": "Safeplanet",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/9f/c1/20/9fc1200f-da47-8afa-8098-f262dad5de1b/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/63/2a/65/632a6532-d0a4-8928-a124-bbafcd86b46a/mzaf_9191160770889362173.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B8%A7%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%9B%E0%B8%A5%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%99%20Instinct",
     "mood": "love",
     "tags": [
@@ -46844,10 +46843,10 @@ const SONGS = [
   },
   {
     "id": 1858,
-    "title": "ลบไม่ได้ช่วยให้ลืม",
-    "artist": "COCKTAIL",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000110cf512/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A5%E0%B8%9A%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89",
-    "previewUrl": "",
+    "title": "ลบไม่ได้ช่วยให้ลืม (Erase)",
+    "artist": "Ink Waruntorn",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d9/58/d3/d958d398-1aec-0f5e-2d34-656df8184890/0840102420586_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/a5/51/aba5515b-36c4-4ec4-f376-4f886bfb5a56/mzaf_2464286645921122949.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%9A%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%8A%E0%B9%88%E0%B8%A7%E0%B8%A2%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%A5%E0%B8%B7%E0%B8%A1%20COCKTAIL",
     "mood": "sad",
     "tags": [
@@ -46871,9 +46870,9 @@ const SONGS = [
   {
     "id": 1859,
     "title": "ที่ว่างข้างๆ ตัว",
-    "artist": "Musketeers",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000936de3b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%82",
-    "previewUrl": "",
+    "artist": "Neung Apiwat",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music117/v4/3f/b7/e6/3fb7e65e-ab08-f468-496a-64f42f7f9288/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/c7/3c/91/c73c91e2-85ae-0b69-49ea-7fa380aba358/mzaf_923895784415396805.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B9%86%20%E0%B8%95%E0%B8%B1%E0%B8%A7%20Musketeers",
     "mood": "love",
     "tags": [
@@ -46898,8 +46897,8 @@ const SONGS = [
     "id": 1860,
     "title": "ไม่บอกเธอ",
     "artist": "Bedroom Audio",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000072cab240/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B9%80%E0%B8%98",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/19/e3/04/19e304c7-6541-708a-74a7-ce1e7d342674/8859056404322.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/75/20/d9/7520d94d-8b3e-a658-e1d3-f7b46e2d349c/mzaf_11148528717443191082.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B9%80%E0%B8%98%E0%B8%AD%20Bedroom%20Audio",
     "mood": "sad",
     "tags": [
@@ -46922,10 +46921,10 @@ const SONGS = [
   },
   {
     "id": 1861,
-    "title": "คิดถึงเธอทุกที",
-    "artist": "Labanoon",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000001e5b49e0/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%96%E0%B8%B6%E0%B8%87%E0%B9%80%E0%B8%98",
-    "previewUrl": "",
+    "title": "คิดถึงเธอทุกที(ที่อยู่คนเดียว)",
+    "artist": "Jennifer Kim",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/bf/49/45/bf494592-10ed-b405-7183-05539972ea0b/888332985079.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/75/e7/e7/75e7e7de-3039-e26b-5824-e8cb8014ca8e/mzaf_3872247372694585630.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%96%E0%B8%B6%E0%B8%87%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%97%E0%B8%B8%E0%B8%81%E0%B8%97%E0%B8%B5%20Labanoon",
     "mood": "love",
     "tags": [
@@ -46948,9 +46947,9 @@ const SONGS = [
   {
     "id": 1862,
     "title": "สบตา",
-    "artist": "Clash",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000019cd2980/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%9A%E0%B8%95%E0%B8%B2",
-    "previewUrl": "",
+    "artist": "แอนเดรีย สวอเรซ",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/85/44/cc/8544cc54-f58d-f437-75b2-75dceb9a1ae8/3610158746506.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c7/7c/c7/c77cc7e9-9165-f66f-c4bf-0cd2561e46c2/mzaf_14707346788692112679.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%9A%E0%B8%95%E0%B8%B2%20Clash",
     "mood": "love",
     "tags": [
@@ -46973,9 +46972,9 @@ const SONGS = [
   {
     "id": 1863,
     "title": "คนเดิม",
-    "artist": "SILLY FOOLS",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000079fe7606/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%99%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%A1",
-    "previewUrl": "",
+    "artist": "Stoondio",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/9d/cd/a1/9dcda1ba-d6d5-4be9-5e2b-7622eef06ae7/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/d2/9e/aa/d29eaa32-4963-7b66-8276-c366df82f925/mzaf_13292342935710940484.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%99%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%A1%20SILLY%20FOOLS",
     "mood": "sad",
     "tags": [
@@ -46997,10 +46996,10 @@ const SONGS = [
   },
   {
     "id": 1864,
-    "title": "ดอกไม้ให้คุณ",
-    "artist": "Palmy",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000031e71065/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B9%83%E0%B8%AB",
-    "previewUrl": "",
+    "title": "ดอกไม้ให้คุณ (บรรเลง แซคโซโฟน)",
+    "artist": "คาราวาน",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/a5/ed/2ba5ed3e-ecce-35d9-b0c9-70dc457040e5/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/df/d4/5c/dfd45ceb-af88-4474-f61b-cedb808656a4/mzaf_5375574923484551391.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B9%84%E0%B8%A1%E0%B9%89%E0%B9%83%E0%B8%AB%E0%B9%89%E0%B8%84%E0%B8%B8%E0%B8%93%20Palmy",
     "mood": "love",
     "tags": [
@@ -47023,9 +47022,9 @@ const SONGS = [
   {
     "id": 1865,
     "title": "ยิ่งรักยิ่งเจ็บ",
-    "artist": "ETC",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004af67906/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%A2",
-    "previewUrl": "",
+    "artist": "Golf & Mike",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4b/fc/92/4bfc9241-482e-b5b0-65ed-f4f601a22f4e/888332995313.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e8/1f/7b/e81f7b78-dd66-3fee-6f87-aef1b52abdbf/mzaf_17297587720106177669.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%A2%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B9%80%E0%B8%88%E0%B9%87%E0%B8%9A%20ETC",
     "mood": "sad",
     "tags": [
@@ -47049,9 +47048,9 @@ const SONGS = [
   {
     "id": 1866,
     "title": "ฝืน",
-    "artist": "KLEAR",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000001c70e3f6/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9D%E0%B8%B7%E0%B8%99",
-    "previewUrl": "",
+    "artist": "Greasy Cafe'",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/87/ed/45/87ed4583-0b8a-788b-f3a4-d611889b25a9/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/10/94/16/1094167b-3cd8-3fcf-358f-aa3e68f0b5a0/mzaf_14497828938554519767.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9D%E0%B8%B7%E0%B8%99%20KLEAR",
     "mood": "sad",
     "tags": [
@@ -47074,10 +47073,10 @@ const SONGS = [
   },
   {
     "id": 1867,
-    "title": "เวลาเดิน",
-    "artist": "Tattoo Colour",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004f032412/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%99",
-    "previewUrl": "",
+    "title": "Kab Rod Len",
+    "artist": "Anatomy Rabbit",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/01/2a/21/012a21bb-cfab-6a0c-cc70-2af5ee8b7276/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/00/04/7d/00047d92-7603-7dd4-b15e-12341ad0ecce/mzaf_1494003615256558264.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%99%20Tattoo%20Colour",
     "mood": "chill",
     "tags": [
@@ -47100,9 +47099,9 @@ const SONGS = [
   {
     "id": 1868,
     "title": "ใจเย็นเย็น",
-    "artist": "MEAN",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003031796e/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%83%E0%B8%88%E0%B9%80%E0%B8%A2%E0%B9%87%E0%B8%99%E0%B9%80%E0%B8%A2",
-    "previewUrl": "",
+    "artist": "Clash",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/05/54/45/0554454d-1194-8d9f-1015-0c712e3ab3a6/888332932769.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fa/c9/ff/fac9ffc4-8269-7dce-baae-cc01e198effb/mzaf_10656375194227841378.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%83%E0%B8%88%E0%B9%80%E0%B8%A2%E0%B9%87%E0%B8%99%E0%B9%80%E0%B8%A2%E0%B9%87%E0%B8%99%20MEAN",
     "mood": "chill",
     "tags": [
@@ -47125,9 +47124,9 @@ const SONGS = [
   {
     "id": 1869,
     "title": "รักคงยังไม่พอ",
-    "artist": "Crescendo",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000483b3a62/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%84%E0%B8%87%E0%B8%A2%E0%B8%B1%E0%B8%87",
-    "previewUrl": "",
+    "artist": "SUEA THANAPON",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/57/b0/d0/57b0d06c-a2f6-42ba-47a9-c8f87a202db1/23UM1IM50328.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/0a/e3/1f0ae380-8e20-e534-c13c-01d93fb1bcf2/mzaf_8542043733854295079.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%84%E0%B8%87%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%9E%E0%B8%AD%20Crescendo",
     "mood": "sad",
     "tags": [
@@ -47150,10 +47149,10 @@ const SONGS = [
   },
   {
     "id": 1870,
-    "title": "ถามจริง ไม่ได้โกรธ",
-    "artist": "The TOYS",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000275f404d/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%96%E0%B8%B2%E0%B8%A1%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%87%20",
-    "previewUrl": "",
+    "title": "แล้วแต่เธอ (feat. TL)",
+    "artist": "P9D",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music117/v4/d2/bc/70/d2bc7001-01da-714a-8146-dff0d0820ceb/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cb/55/3f/cb553f2e-f2fa-bb07-db48-b72782e12c76/mzaf_17739210275335745939.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%96%E0%B8%B2%E0%B8%A1%E0%B8%88%E0%B8%A3%E0%B8%B4%E0%B8%87%20%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%E0%B9%82%E0%B8%81%E0%B8%A3%E0%B8%98%20The%20TOYS",
     "mood": "love",
     "tags": [
@@ -47177,9 +47176,9 @@ const SONGS = [
   {
     "id": 1871,
     "title": "ไม่เดียงสา",
-    "artist": "SILLY FOOLS",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002206168d/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B8%87",
-    "previewUrl": "",
+    "artist": "Big Ass",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/24/ff/5324ff49-9bb2-46ad-6a00-8502cb671389/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%AA%E0%B8%B2%20SILLY%20FOOLS",
     "mood": "hype",
     "tags": [
@@ -47197,14 +47196,14 @@ const SONGS = [
     "reason": "เพลง \"ไม่เดียงสา\" โดย SILLY FOOLS เข้ากับมู้ด hype ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 1872,
     "title": "สิ่งที่ตามหา",
-    "artist": "SCRUBB",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002e4515bd/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%95",
-    "previewUrl": "",
+    "artist": "getsunova",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fc/aa/21/fcaa21de-c240-445c-ddeb-6bc62a1c1446/888332946544.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f9/21/2b/f9212bf2-7f96-8beb-8460-b0f9da3305b5/mzaf_5438107473374352139.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%AB%E0%B8%B2%20SCRUBB",
     "mood": "love",
     "tags": [
@@ -47226,10 +47225,10 @@ const SONGS = [
   },
   {
     "id": 1873,
-    "title": "ฝันดี",
-    "artist": "BOWKYLION",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007d984ad2/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9D%E0%B8%B1%E0%B8%99%E0%B8%94%E0%B8%B5",
-    "previewUrl": "",
+    "title": "Dream",
+    "artist": "Slot Machine",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music62/v4/18/01/7e/18017ec1-a3e0-ac15-883f-649f7be281a3/dj.rhezxadq.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/e8/01/60/e8016008-afed-d6e0-e08d-61c0ec20912b/mzaf_12250896626260965308.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9D%E0%B8%B1%E0%B8%99%E0%B8%94%E0%B8%B5%20BOWKYLION",
     "mood": "chill",
     "tags": [
@@ -47252,9 +47251,9 @@ const SONGS = [
   {
     "id": 1874,
     "title": "ฉันรักเธอ",
-    "artist": "COCKTAIL",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000da3bf57/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%98",
-    "previewUrl": "",
+    "artist": "Tilly Birds",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%98%E0%B8%AD%20COCKTAIL",
     "mood": "love",
     "tags": [
@@ -47273,14 +47272,14 @@ const SONGS = [
     "reason": "เพลง \"ฉันรักเธอ\" โดย COCKTAIL เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 1875,
     "title": "ปลิว",
-    "artist": "PALMY x MINDSET",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002a214c92/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9B%E0%B8%A5%E0%B8%B4%E0%B8%A7",
-    "previewUrl": "",
+    "artist": "Ploychompoo",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/bc/b0/0b/bcb00b50-b14d-ab13-163c-85a86764457f/888332948074.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2b/83/8e/2b838e4f-a89a-09ba-3214-fe1a417e6fec/mzaf_8182288926763191952.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9B%E0%B8%A5%E0%B8%B4%E0%B8%A7%20PALMY%20x%20MINDSET",
     "mood": "chill",
     "tags": [
@@ -47303,9 +47302,9 @@ const SONGS = [
   {
     "id": 1876,
     "title": "ลมหายใจ",
-    "artist": "SEASON FIVE",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000074e0bf6b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A5%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A2%E0%B9%83%E0%B8%88",
-    "previewUrl": "",
+    "artist": "บอย โกสิยพงษ์",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%A2%E0%B9%83%E0%B8%88%20SEASON%20FIVE",
     "mood": "love",
     "tags": [
@@ -47324,14 +47323,14 @@ const SONGS = [
     "reason": "เพลง \"ลมหายใจ\" โดย SEASON FIVE เข้ากับมู้ด love ของอนิเมะ สร้างอารมณ์ร่วมได้ดีมากสำหรับคลิปไทโป",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 1877,
     "title": "THE GREATEST",
     "artist": "Billie Eilish",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000513d8cb/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=THE%20GREA",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/24/ff/5324ff49-9bb2-46ad-6a00-8502cb671389/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/THE%20GREATEST%20Billie%20Eilish",
     "mood": "sad",
     "tags": [
@@ -47350,14 +47349,14 @@ const SONGS = [
     "reason": "\"THE GREATEST\" by Billie Eilish brings a sad atmosphere that perfectly complements anime scenes for typography edits",
     "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 1878,
-    "title": "Levii's Jeans",
-    "artist": "Beyoncé ft. Post Malone",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000265f04d5/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Levii's%20",
-    "previewUrl": "",
+    "title": "LEVII'S JEANS",
+    "artist": "Beyoncé & Post Malone",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c6/9c/17/c69c17df-1835-77e7-58c1-ca04d44a0611/196871853736.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9e/df/82/9edf8216-61b2-6458-4f6c-b704330f8395/mzaf_4418366214198060935.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Levii's%20Jeans%20Beyonc%C3%A9%20ft.%20Post%20Malone",
     "mood": "chill",
     "tags": [
@@ -47381,8 +47380,8 @@ const SONGS = [
     "id": 1879,
     "title": "TEXAS HOLD 'EM",
     "artist": "Beyoncé",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004784031a/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=TEXAS%20HO",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/TEXAS%20HOLD%20'EM%20Beyonc%C3%A9",
     "mood": "happy",
     "tags": [
@@ -47400,14 +47399,14 @@ const SONGS = [
     "reason": "\"TEXAS HOLD 'EM\" by Beyoncé brings a happy atmosphere that perfectly complements anime scenes for typography edits",
     "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 1880,
     "title": "HOT TO GO!",
     "artist": "Chappell Roan",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002a1663a6/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=HOT%20TO%20G",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/42/a0/c5/42a0c5e6-6b98-f1f9-7d6b-6d6c61aba562/23UMGIM84225.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a0/71/90/a0719058-463b-3010-88f5-35b69062a46d/mzaf_18297740068141332062.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/HOT%20TO%20GO!%20Chappell%20Roan",
     "mood": "hype",
     "tags": [
@@ -47430,10 +47429,10 @@ const SONGS = [
   },
   {
     "id": 1881,
-    "title": "Fortnight",
-    "artist": "Taylor Swift ft. Post Malone",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000077e7f12f/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Fortnigh",
-    "previewUrl": "",
+    "title": "Fortnight (feat. Post Malone)",
+    "artist": "Taylor Swift",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a8/45/fd/a845fd82-d5c1-bffe-806a-ed0700b1c589/24UMGIM29563.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/81/dd/8c/81dd8cab-d9ef-2f39-3d7b-69ad2c9510eb/mzaf_3608641701483306759.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Fortnight%20Taylor%20Swift%20ft.%20Post%20Malone",
     "mood": "sad",
     "tags": [
@@ -47458,8 +47457,8 @@ const SONGS = [
     "id": 1882,
     "title": "I Can Do It With a Broken Heart",
     "artist": "Taylor Swift",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000007306323/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=I%20Can%20Do",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/I%20Can%20Do%20It%20With%20a%20Broken%20Heart%20Taylor%20Swift",
     "mood": "sad",
     "tags": [
@@ -47477,14 +47476,14 @@ const SONGS = [
     "reason": "\"I Can Do It With a Broken Heart\" by Taylor Swift brings a sad atmosphere that perfectly complements anime scenes for typography edits",
     "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 1883,
     "title": "Summertime Sadness",
     "artist": "Lana Del Rey",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004f06febe/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Summerti",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/24/ff/5324ff49-9bb2-46ad-6a00-8502cb671389/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Summertime%20Sadness%20Lana%20Del%20Rey",
     "mood": "sad",
     "tags": [
@@ -47503,14 +47502,14 @@ const SONGS = [
     "reason": "\"Summertime Sadness\" by Lana Del Rey brings a sad atmosphere that perfectly complements anime scenes for typography edits",
     "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 1884,
     "title": "A Thousand Years",
     "artist": "Christina Perri",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004dcfafc0/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=A%20Thousa",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/f5/2e/83/f52e8357-9cf4-e644-c365-3c21839f85ac/mzi.staekbjw.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8e/3a/e7/8e3ae749-5e13-a9ca-fef6-61d615bc3087/mzaf_5415208554281396500.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/A%20Thousand%20Years%20Christina%20Perri",
     "mood": "love",
     "tags": [
@@ -47535,8 +47534,8 @@ const SONGS = [
     "id": 1885,
     "title": "good 4 u",
     "artist": "Olivia Rodrigo",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003ed2ecf2/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=good%204%20u",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/good%204%20u%20Olivia%20Rodrigo",
     "mood": "hype",
     "tags": [
@@ -47555,14 +47554,14 @@ const SONGS = [
     "reason": "\"good 4 u\" by Olivia Rodrigo brings a hype atmosphere that perfectly complements anime scenes for typography edits",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
   },
   {
     "id": 1886,
     "title": "Don't Start Now",
     "artist": "Dua Lipa",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000296cc7e6/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Don't%20St",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/41/ee/66/41ee66fa-f8dd-7e82-155a-3a1b360dc562/190295322175.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/24/3d/34/243d3413-a0fc-b229-f54a-1715ebd3a9ca/mzaf_11578996572221800393.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Don't%20Start%20Now%20Dua%20Lipa",
     "mood": "happy",
     "tags": [
@@ -47586,8 +47585,8 @@ const SONGS = [
     "id": 1887,
     "title": "Houdini",
     "artist": "Dua Lipa",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007e0a7ccc/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Houdini",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/dd/af/ea/ddafeab5-797a-5b6f-7735-f96c537b45e0/5054197894091.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2c/da/b5/2cdab5c6-04a8-5231-c697-00101e876479/mzaf_5586859405346659517.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Houdini%20Dua%20Lipa",
     "mood": "happy",
     "tags": [
@@ -47612,8 +47611,8 @@ const SONGS = [
     "id": 1888,
     "title": "Arcade",
     "artist": "Duncan Laurence",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000795ae3a/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Arcade",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Arcade%20Duncan%20Laurence",
     "mood": "sad",
     "tags": [
@@ -47631,14 +47630,14 @@ const SONGS = [
     "reason": "\"Arcade\" by Duncan Laurence brings a sad atmosphere that perfectly complements anime scenes for typography edits",
     "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 1889,
     "title": "Someone You Loved",
     "artist": "Lewis Capaldi",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000046b048d9/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Someone%20",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/05/f7/af/05f7af37-526e-5e6e-e4cd-9e4bc3da0756/18UMGIM52528.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/95/7f/3c/957f3c65-d179-e26e-6517-ebf2b10eaeb8/mzaf_8568102570237224733.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Someone%20You%20Loved%20Lewis%20Capaldi",
     "mood": "sad",
     "tags": [
@@ -47662,8 +47661,8 @@ const SONGS = [
     "id": 1890,
     "title": "Before You Go",
     "artist": "Lewis Capaldi",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000b24cc00/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Before%20Y",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/9f/58/7c/9f587c97-f0e9-e335-d8e2-60b8e2d62bad/19UMGIM90850.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/60/b9/cc/60b9cc69-2e37-f867-bc15-91e2ce767b4a/mzaf_18421692819209045993.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Before%20You%20Go%20Lewis%20Capaldi",
     "mood": "sad",
     "tags": [
@@ -47688,8 +47687,8 @@ const SONGS = [
     "id": 1891,
     "title": "Chandelier",
     "artist": "Sia",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000020af8152/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Chandeli",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Chandelier%20Sia",
     "mood": "epic",
     "tags": [
@@ -47708,14 +47707,14 @@ const SONGS = [
     "reason": "\"Chandelier\" by Sia brings a epic atmosphere that perfectly complements anime scenes for typography edits",
     "typoIdea": "ใช้ฟอนต์ Cinematic สีทอง มีแสง Lens Flare ตามตัวอักษร ค่อยๆ ขยายเต็มจอ พร้อม Particle dust ปลิว",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 1892,
     "title": "Let Her Go",
     "artist": "Passenger",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006082a3a2/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Let%20Her%20",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/9b/7e/28/9b7e2896-e049-1663-6791-e0111690ffc1/067003051361.png/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/90/0f/26900f61-d88a-a558-6f4d-b0dec8ba5262/mzaf_6952636564970959693.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Let%20Her%20Go%20Passenger",
     "mood": "sad",
     "tags": [
@@ -47738,10 +47737,10 @@ const SONGS = [
   },
   {
     "id": 1893,
-    "title": "Apologize",
+    "title": "Apologize (iTunes Session)",
     "artist": "OneRepublic",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000519818ce/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Apologiz",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/2d/1e/bb/2d1ebb31-91a9-a465-97a4-0a2e74b6fca3/00602537201457.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/51/37/33/513733ff-35ad-3c3b-ec9b-58bca043cdcf/mzaf_16105026195794716754.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Apologize%20OneRepublic",
     "mood": "sad",
     "tags": [
@@ -47766,8 +47765,8 @@ const SONGS = [
     "id": 1894,
     "title": "Reckless",
     "artist": "Madison Beer",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006683ed95/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Reckless",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Reckless%20Madison%20Beer",
     "mood": "love",
     "tags": [
@@ -47786,14 +47785,14 @@ const SONGS = [
     "reason": "\"Reckless\" by Madison Beer brings a love atmosphere that perfectly complements anime scenes for typography edits",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 1895,
     "title": "505",
     "artist": "Arctic Monkeys",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000346b70aa/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=505",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/82/90/14/829014ad-a301-62ab-bee6-f4cca4457411/mzi.hozudery.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d1/0d/ab/d10dabc8-cceb-e718-401f-01516b009460/mzaf_13845311225859403599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/505%20Arctic%20Monkeys",
     "mood": "sad",
     "tags": [
@@ -47817,8 +47816,8 @@ const SONGS = [
     "id": 1896,
     "title": "Do I Wanna Know?",
     "artist": "Arctic Monkeys",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007293429b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Do%20I%20Wan",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4d/65/c8/4d65c86c-7eee-dec4-6eb4-f25c64d5b92f/888332981538.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Do%20I%20Wanna%20Know%3F%20Arctic%20Monkeys",
     "mood": "chill",
     "tags": [
@@ -47836,14 +47835,14 @@ const SONGS = [
     "reason": "\"Do I Wanna Know?\" by Arctic Monkeys brings a chill atmosphere that perfectly complements anime scenes for typography edits",
     "typoIdea": "ใช้ฟอนต์มินิมอล Thin สีฟ้าอ่อน ไหลช้าๆ ราวกับลอยอยู่บนน้ำ ผสม grain texture สไตล์ Lo-Fi",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 1897,
     "title": "Clarity",
     "artist": "Zedd ft. Foxes",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000056363abc/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Clarity",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Clarity%20Zedd%20ft.%20Foxes",
     "mood": "epic",
     "tags": [
@@ -47861,14 +47860,14 @@ const SONGS = [
     "reason": "\"Clarity\" by Zedd ft. Foxes brings a epic atmosphere that perfectly complements anime scenes for typography edits",
     "typoIdea": "ใช้ฟอนต์ Cinematic สีทอง มีแสง Lens Flare ตามตัวอักษร ค่อยๆ ขยายเต็มจอ พร้อม Particle dust ปลิว",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 1898,
-    "title": "Titanium",
-    "artist": "David Guetta ft. Sia",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005f7a4816/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Titanium",
-    "previewUrl": "",
+    "title": "Titanium (feat. Sia)",
+    "artist": "David Guetta",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/99/b4/7b/99b47bd8-2b22-e1ef-2e60-c5147f27a861/dj.thrvmjqj.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/45/dd/8f/45dd8ffc-0164-1f70-c53d-bf91a1d80b1a/mzaf_3092057092144618662.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Titanium%20David%20Guetta%20ft.%20Sia",
     "mood": "hype",
     "tags": [
@@ -47893,8 +47892,8 @@ const SONGS = [
     "id": 1899,
     "title": "Faded",
     "artist": "Alan Walker",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000bbe0e8a/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Faded",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/0d/a3/1a/0da31af7-d0ff-9bee-c427-1b6d0336f6fc/886446321981.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/18/d9/ab18d9e9-01f0-27ea-3a51-6e08585a0072/mzaf_14299744081264843911.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Faded%20Alan%20Walker",
     "mood": "sad",
     "tags": [
@@ -47918,9 +47917,9 @@ const SONGS = [
   {
     "id": 1900,
     "title": "Alone",
-    "artist": "Alan Walker",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007855495d/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Alone",
-    "previewUrl": "",
+    "artist": "Heart",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/2b/d4/d5/2bd4d595-6839-5d35-a601-a74045f1f7b1/00724352680351.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8b/f9/99/8bf9995e-6a0f-fb40-d1d7-6b7ce97080dc/mzaf_13640551311416068827.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Alone%20Alan%20Walker",
     "mood": "sad",
     "tags": [
@@ -47944,8 +47943,8 @@ const SONGS = [
     "id": 1901,
     "title": "Darkside",
     "artist": "Alan Walker",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006a758bb1/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Darkside",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/24/ff/5324ff49-9bb2-46ad-6a00-8502cb671389/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Darkside%20Alan%20Walker",
     "mood": "epic",
     "tags": [
@@ -47963,14 +47962,14 @@ const SONGS = [
     "reason": "\"Darkside\" by Alan Walker brings a epic atmosphere that perfectly complements anime scenes for typography edits",
     "typoIdea": "ใช้ฟอนต์ Cinematic สีทอง มีแสง Lens Flare ตามตัวอักษร ค่อยๆ ขยายเต็มจอ พร้อม Particle dust ปลิว",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 1902,
     "title": "On My Way",
     "artist": "Alan Walker",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000032599682/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=On%20My%20Wa",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4d/65/c8/4d65c86c-7eee-dec4-6eb4-f25c64d5b92f/888332981538.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/On%20My%20Way%20Alan%20Walker",
     "mood": "hype",
     "tags": [
@@ -47988,14 +47987,14 @@ const SONGS = [
     "reason": "\"On My Way\" by Alan Walker brings a hype atmosphere that perfectly complements anime scenes for typography edits",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 1903,
     "title": "勇者 (Yuusha)",
     "artist": "YOASOBI",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000032fd5c3e/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E5%8B%87%E8%80%85%20(Yuus",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E5%8B%87%E8%80%85%20(Yuusha)%20YOASOBI",
     "mood": "hype",
     "tags": [
@@ -48013,14 +48012,14 @@ const SONGS = [
     "reason": "\"勇者 (Yuusha)\" (YOASOBI) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด hype ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 1904,
     "title": "夜に駆ける (Racing into the Night)",
     "artist": "YOASOBI",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000534a38e7/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E5%A4%9C%E3%81%AB%E9%A7%86%E3%81%91%E3%82%8B%20(R",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E5%A4%9C%E3%81%AB%E9%A7%86%E3%81%91%E3%82%8B%20(Racing%20into%20the%20Night)%20YOASOBI",
     "mood": "hype",
     "tags": [
@@ -48039,14 +48038,14 @@ const SONGS = [
     "reason": "\"夜に駆ける (Racing into the Night)\" (YOASOBI) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด hype ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 1905,
     "title": "群青 (Gunjou)",
     "artist": "YOASOBI",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006db18aab/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E7%BE%A4%E9%9D%92%20(Gunj",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E7%BE%A4%E9%9D%92%20(Gunjou)%20YOASOBI",
     "mood": "hype",
     "tags": [
@@ -48065,14 +48064,14 @@ const SONGS = [
     "reason": "\"群青 (Gunjou)\" (YOASOBI) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด hype ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
   },
   {
     "id": 1906,
     "title": "祝福 (Shukufuku)",
     "artist": "YOASOBI",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000007699d2/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E7%A5%9D%E7%A6%8F%20(Shuk",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E7%A5%9D%E7%A6%8F%20(Shukufuku)%20YOASOBI",
     "mood": "epic",
     "tags": [
@@ -48090,14 +48089,14 @@ const SONGS = [
     "reason": "\"祝福 (Shukufuku)\" (YOASOBI) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด epic ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Cinematic สีทอง มีแสง Lens Flare ตามตัวอักษร ค่อยๆ ขยายเต็มจอ พร้อม Particle dust ปลิว",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 1907,
     "title": "怪獣の花唄 (Kaijuu no Hanautai)",
     "artist": "Vaundy",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000053e0eb37/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E6%80%AA%E7%8D%A3%E3%81%AE%E8%8A%B1%E5%94%84%20(K",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/24/ff/5324ff49-9bb2-46ad-6a00-8502cb671389/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E6%80%AA%E7%8D%A3%E3%81%AE%E8%8A%B1%E5%94%84%20(Kaijuu%20no%20Hanautai)%20Vaundy",
     "mood": "hype",
     "tags": [
@@ -48115,14 +48114,14 @@ const SONGS = [
     "reason": "\"怪獣の花唄 (Kaijuu no Hanautai)\" (Vaundy) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด hype ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 1908,
     "title": "花になって (Hana ni Natte)",
     "artist": "Ryokuoushoku Shakai",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005c235248/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E8%8A%B1%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%A6%20(H",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4d/65/c8/4d65c86c-7eee-dec4-6eb4-f25c64d5b92f/888332981538.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E8%8A%B1%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%A6%20(Hana%20ni%20Natte)%20Ryokuoushoku%20Shakai",
     "mood": "love",
     "tags": [
@@ -48140,14 +48139,14 @@ const SONGS = [
     "reason": "\"花になって (Hana ni Natte)\" (Ryokuoushoku Shakai) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด love ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 1909,
     "title": "可愛くてごめん (Kawaikute Gomen)",
     "artist": "HoneyWorks",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005cdc1e37/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E5%8F%AF%E6%84%9B%E3%81%8F%E3%81%A6%E3%81%94%E3%82%81%E3%82%93%20",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E5%8F%AF%E6%84%9B%E3%81%8F%E3%81%A6%E3%81%94%E3%82%81%E3%82%93%20(Kawaikute%20Gomen)%20HoneyWorks",
     "mood": "happy",
     "tags": [
@@ -48166,14 +48165,14 @@ const SONGS = [
     "reason": "\"可愛くてごめん (Kawaikute Gomen)\" (HoneyWorks) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด happy ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 1910,
     "title": "ピースサイン (Peace Sign)",
     "artist": "Kenshi Yonezu",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000015598409/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%83%94%E3%83%BC%E3%82%B9%E3%82%B5%E3%82%A4%E3%83%B3%20(",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E3%83%94%E3%83%BC%E3%82%B9%E3%82%B5%E3%82%A4%E3%83%B3%20(Peace%20Sign)%20Kenshi%20Yonezu",
     "mood": "hype",
     "tags": [
@@ -48192,14 +48191,14 @@ const SONGS = [
     "reason": "\"ピースサイン (Peace Sign)\" (Kenshi Yonezu) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด hype ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
   },
   {
     "id": 1911,
     "title": "打上花火 (Uchiage Hanabi)",
     "artist": "DAOKO × Kenshi Yonezu",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000048ff2e68/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E6%89%93%E4%B8%8A%E8%8A%B1%E7%81%AB%20(Uc",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E6%89%93%E4%B8%8A%E8%8A%B1%E7%81%AB%20(Uchiage%20Hanabi)%20DAOKO%20%C3%97%20Kenshi%20Yonezu",
     "mood": "love",
     "tags": [
@@ -48218,14 +48217,14 @@ const SONGS = [
     "reason": "\"打上花火 (Uchiage Hanabi)\" (DAOKO × Kenshi Yonezu) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด love ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 1912,
     "title": "死ぬのがいいわ (Full Version)",
     "artist": "Fujii Kaze",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000626ba260/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E6%AD%BB%E3%81%AC%E3%81%AE%E3%81%8C%E3%81%84%E3%81%84%E3%82%8F%20",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E6%AD%BB%E3%81%AC%E3%81%AE%E3%81%8C%E3%81%84%E3%81%84%E3%82%8F%20(Full%20Version)%20Fujii%20Kaze",
     "mood": "love",
     "tags": [
@@ -48244,14 +48243,14 @@ const SONGS = [
     "reason": "\"死ぬのがいいわ (Full Version)\" (Fujii Kaze) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด love ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 1913,
     "title": "きらり (Kirari)",
     "artist": "Fujii Kaze",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000079178c4b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%81%8D%E3%82%89%E3%82%8A%20(Kir",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/24/ff/5324ff49-9bb2-46ad-6a00-8502cb671389/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E3%81%8D%E3%82%89%E3%82%8A%20(Kirari)%20Fujii%20Kaze",
     "mood": "happy",
     "tags": [
@@ -48269,14 +48268,14 @@ const SONGS = [
     "reason": "\"きらり (Kirari)\" (Fujii Kaze) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด happy ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 1914,
     "title": "ドラマツルギー (Dramaturgy)",
     "artist": "Eve",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000717a0e9e/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%83%89%E3%83%A9%E3%83%9E%E3%83%84%E3%83%AB%E3%82%AE%E3%83%BC%20",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4d/65/c8/4d65c86c-7eee-dec4-6eb4-f25c64d5b92f/888332981538.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E3%83%89%E3%83%A9%E3%83%9E%E3%83%84%E3%83%AB%E3%82%AE%E3%83%BC%20(Dramaturgy)%20Eve",
     "mood": "hype",
     "tags": [
@@ -48295,14 +48294,14 @@ const SONGS = [
     "reason": "\"ドラマツルギー (Dramaturgy)\" (Eve) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด hype ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 1915,
     "title": "残響散歌 (Zankyousanka)",
     "artist": "Aimer",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000107f49d7/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E6%AE%8B%E9%9F%BF%E6%95%A3%E6%AD%8C%20(Za",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E6%AE%8B%E9%9F%BF%E6%95%A3%E6%AD%8C%20(Zankyousanka)%20Aimer",
     "mood": "epic",
     "tags": [
@@ -48320,14 +48319,14 @@ const SONGS = [
     "reason": "\"残響散歌 (Zankyousanka)\" (Aimer) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด epic ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Cinematic สีทอง มีแสง Lens Flare ตามตัวอักษร ค่อยๆ ขยายเต็มจอ พร้อม Particle dust ปลิว",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
   },
   {
     "id": 1916,
     "title": "カタオモイ (Kataomoi)",
     "artist": "Aimer",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000bad7adc/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%82%AB%E3%82%BF%E3%82%AA%E3%83%A2%E3%82%A4%20(K",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E3%82%AB%E3%82%BF%E3%82%AA%E3%83%A2%E3%82%A4%20(Kataomoi)%20Aimer",
     "mood": "love",
     "tags": [
@@ -48346,14 +48345,14 @@ const SONGS = [
     "reason": "\"カタオモイ (Kataomoi)\" (Aimer) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด love ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 1917,
     "title": "紅蓮華 (Gurenge)",
     "artist": "LiSA",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002cc5f6d7/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E7%B4%85%E8%93%AE%E8%8F%AF%20(Gur",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E7%B4%85%E8%93%AE%E8%8F%AF%20(Gurenge)%20LiSA",
     "mood": "hype",
     "tags": [
@@ -48372,14 +48371,14 @@ const SONGS = [
     "reason": "\"紅蓮華 (Gurenge)\" (LiSA) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด hype ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 1918,
     "title": "炎 (Homura)",
     "artist": "LiSA",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000cf87f40/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E7%82%8E%20(Homur",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E7%82%8E%20(Homura)%20LiSA",
     "mood": "epic",
     "tags": [
@@ -48398,14 +48397,14 @@ const SONGS = [
     "reason": "\"炎 (Homura)\" (LiSA) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด epic ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Cinematic สีทอง มีแสง Lens Flare ตามตัวอักษร ค่อยๆ ขยายเต็มจอ พร้อม Particle dust ปลิว",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 1919,
     "title": "明け星 (Akeboshi)",
     "artist": "LiSA",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000064625a04/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E6%98%8E%E3%81%91%E6%98%9F%20(Ake",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/24/ff/5324ff49-9bb2-46ad-6a00-8502cb671389/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E6%98%8E%E3%81%91%E6%98%9F%20(Akeboshi)%20LiSA",
     "mood": "epic",
     "tags": [
@@ -48423,14 +48422,14 @@ const SONGS = [
     "reason": "\"明け星 (Akeboshi)\" (LiSA) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด epic ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Cinematic สีทอง มีแสง Lens Flare ตามตัวอักษร ค่อยๆ ขยายเต็มจอ พร้อม Particle dust ปลิว",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 1920,
     "title": "ウタカタララバイ (Utakata Lullaby)",
     "artist": "Ado",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003f429092/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%82%A6%E3%82%BF%E3%82%AB%E3%82%BF%E3%83%A9%E3%83%A9%E3%83%90%E3%82%A4",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4d/65/c8/4d65c86c-7eee-dec4-6eb4-f25c64d5b92f/888332981538.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E3%82%A6%E3%82%BF%E3%82%AB%E3%82%BF%E3%83%A9%E3%83%A9%E3%83%90%E3%82%A4%20(Utakata%20Lullaby)%20Ado",
     "mood": "epic",
     "tags": [
@@ -48448,14 +48447,14 @@ const SONGS = [
     "reason": "\"ウタカタララバイ (Utakata Lullaby)\" (Ado) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด epic ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Cinematic สีทอง มีแสง Lens Flare ตามตัวอักษร ค่อยๆ ขยายเต็มจอ พร้อม Particle dust ปลิว",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
   },
   {
     "id": 1921,
     "title": "新時代 (New Genesis)",
     "artist": "Ado",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000431d3732/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E6%96%B0%E6%99%82%E4%BB%A3%20(New",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E6%96%B0%E6%99%82%E4%BB%A3%20(New%20Genesis)%20Ado",
     "mood": "hype",
     "tags": [
@@ -48473,14 +48472,14 @@ const SONGS = [
     "reason": "\"新時代 (New Genesis)\" (Ado) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด hype ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 1922,
     "title": "私は最強 (I'm Invincible)",
     "artist": "Ado",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006976c960/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E7%A7%81%E3%81%AF%E6%9C%80%E5%BC%B7%20(I'",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E7%A7%81%E3%81%AF%E6%9C%80%E5%BC%B7%20(I'm%20Invincible)%20Ado",
     "mood": "hype",
     "tags": [
@@ -48498,14 +48497,14 @@ const SONGS = [
     "reason": "\"私は最強 (I'm Invincible)\" (Ado) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด hype ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 1923,
     "title": "唱 (Show)",
     "artist": "Ado",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000001293e459/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E5%94%B1%20(Show)",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E5%94%B1%20(Show)%20Ado",
     "mood": "hype",
     "tags": [
@@ -48524,14 +48523,14 @@ const SONGS = [
     "reason": "\"唱 (Show)\" (Ado) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด hype ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 1924,
     "title": "Subtitle",
     "artist": "Official HIGE DANdism",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000072d754cc/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Subtitle",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Subtitle%20Official%20HIGE%20DANdism",
     "mood": "love",
     "tags": [
@@ -48549,14 +48548,14 @@ const SONGS = [
     "reason": "\"Subtitle\" (Official HIGE DANdism) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด love ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 1925,
     "title": "ミックスナッツ (Mixed Nuts)",
     "artist": "Official HIGE DANdism",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002a5808f5/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9%E3%83%8A%E3%83%83%E3%83%84%20",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/24/ff/5324ff49-9bb2-46ad-6a00-8502cb671389/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9%E3%83%8A%E3%83%83%E3%83%84%20(Mixed%20Nuts)%20Official%20HIGE%20DANdism",
     "mood": "happy",
     "tags": [
@@ -48574,14 +48573,14 @@ const SONGS = [
     "reason": "\"ミックスナッツ (Mixed Nuts)\" (Official HIGE DANdism) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด happy ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
   },
   {
     "id": 1926,
     "title": "再会 (Saikai)",
     "artist": "LiSA × Uru",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000309edd36/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E5%86%8D%E4%BC%9A%20(Saik",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4d/65/c8/4d65c86c-7eee-dec4-6eb4-f25c64d5b92f/888332981538.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E5%86%8D%E4%BC%9A%20(Saikai)%20LiSA%20%C3%97%20Uru",
     "mood": "sad",
     "tags": [
@@ -48600,14 +48599,14 @@ const SONGS = [
     "reason": "\"再会 (Saikai)\" (LiSA × Uru) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด sad ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 1927,
     "title": "春泥棒 (Haru Dorobou)",
     "artist": "Yorushika",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005749d2be/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E6%98%A5%E6%B3%A5%E6%A3%92%20(Har",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E6%98%A5%E6%B3%A5%E6%A3%92%20(Haru%20Dorobou)%20Yorushika",
     "mood": "chill",
     "tags": [
@@ -48626,14 +48625,14 @@ const SONGS = [
     "reason": "\"春泥棒 (Haru Dorobou)\" (Yorushika) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด chill ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์มินิมอล Thin สีฟ้าอ่อน ไหลช้าๆ ราวกับลอยอยู่บนน้ำ ผสม grain texture สไตล์ Lo-Fi",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 1928,
     "title": "ただ君に晴れ (Tada Kimi ni Hare)",
     "artist": "Yorushika",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000f37bfb8/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%81%9F%E3%81%A0%E5%90%9B%E3%81%AB%E6%99%B4%E3%82%8C%20(",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E3%81%9F%E3%81%A0%E5%90%9B%E3%81%AB%E6%99%B4%E3%82%8C%20(Tada%20Kimi%20ni%20Hare)%20Yorushika",
     "mood": "chill",
     "tags": [
@@ -48652,14 +48651,14 @@ const SONGS = [
     "reason": "\"ただ君に晴れ (Tada Kimi ni Hare)\" (Yorushika) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด chill ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์มินิมอล Thin สีฟ้าอ่อน ไหลช้าๆ ราวกับลอยอยู่บนน้ำ ผสม grain texture สไตล์ Lo-Fi",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 1929,
     "title": "風のゆくえ (Kaze no Yukue)",
     "artist": "Fujii Kaze × Kenshi Yonezu",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004bd37270/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E9%A2%A8%E3%81%AE%E3%82%86%E3%81%8F%E3%81%88%20(K",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E9%A2%A8%E3%81%AE%E3%82%86%E3%81%8F%E3%81%88%20(Kaze%20no%20Yukue)%20Fujii%20Kaze%20%C3%97%20Kenshi%20Yonezu",
     "mood": "chill",
     "tags": [
@@ -48677,14 +48676,14 @@ const SONGS = [
     "reason": "\"風のゆくえ (Kaze no Yukue)\" (Fujii Kaze × Kenshi Yonezu) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด chill ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์มินิมอล Thin สีฟ้าอ่อน ไหลช้าๆ ราวกับลอยอยู่บนน้ำ ผสม grain texture สไตล์ Lo-Fi",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 1930,
     "title": "すずめ (Suzume)",
     "artist": "RADWIMPS ft. Toaka",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002fe50b8f/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%81%99%E3%81%9A%E3%82%81%20(Suz",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E3%81%99%E3%81%9A%E3%82%81%20(Suzume)%20RADWIMPS%20ft.%20Toaka",
     "mood": "epic",
     "tags": [
@@ -48703,14 +48702,14 @@ const SONGS = [
     "reason": "\"すずめ (Suzume)\" (RADWIMPS ft. Toaka) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด epic ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Cinematic สีทอง มีแสง Lens Flare ตามตัวอักษร ค่อยๆ ขยายเต็มจอ พร้อม Particle dust ปลิว",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
   },
   {
     "id": 1931,
     "title": "カナタハルカ (Kanata Halca)",
     "artist": "RADWIMPS",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000163260f4/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%82%AB%E3%83%8A%E3%82%BF%E3%83%8F%E3%83%AB%E3%82%AB%20(",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/24/ff/5324ff49-9bb2-46ad-6a00-8502cb671389/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E3%82%AB%E3%83%8A%E3%82%BF%E3%83%8F%E3%83%AB%E3%82%AB%20(Kanata%20Halca)%20RADWIMPS",
     "mood": "sad",
     "tags": [
@@ -48728,14 +48727,14 @@ const SONGS = [
     "reason": "\"カナタハルカ (Kanata Halca)\" (RADWIMPS) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด sad ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 1932,
     "title": "前前前世 (Zenzenzense)",
     "artist": "RADWIMPS",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004982464e/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E5%89%8D%E5%89%8D%E5%89%8D%E4%B8%96%20(Ze",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4d/65/c8/4d65c86c-7eee-dec4-6eb4-f25c64d5b92f/888332981538.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E5%89%8D%E5%89%8D%E5%89%8D%E4%B8%96%20(Zenzenzense)%20RADWIMPS",
     "mood": "hype",
     "tags": [
@@ -48754,14 +48753,14 @@ const SONGS = [
     "reason": "\"前前前世 (Zenzenzense)\" (RADWIMPS) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด hype ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 1933,
     "title": "スパークル (Sparkle)",
     "artist": "RADWIMPS",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000012912504/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%82%B9%E3%83%91%E3%83%BC%E3%82%AF%E3%83%AB%20(S",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E3%82%B9%E3%83%91%E3%83%BC%E3%82%AF%E3%83%AB%20(Sparkle)%20RADWIMPS",
     "mood": "love",
     "tags": [
@@ -48780,14 +48779,14 @@ const SONGS = [
     "reason": "\"スパークル (Sparkle)\" (RADWIMPS) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด love ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 1934,
     "title": "なんでもないや (Nandemonaiya)",
     "artist": "RADWIMPS",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000002aabe7c/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%81%AA%E3%82%93%E3%81%A7%E3%82%82%E3%81%AA%E3%81%84%E3%82%84%20",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E3%81%AA%E3%82%93%E3%81%A7%E3%82%82%E3%81%AA%E3%81%84%E3%82%84%20(Nandemonaiya)%20RADWIMPS",
     "mood": "sad",
     "tags": [
@@ -48805,14 +48804,14 @@ const SONGS = [
     "reason": "\"なんでもないや (Nandemonaiya)\" (RADWIMPS) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด sad ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 1935,
     "title": "オレンジ (Orange)",
     "artist": "SPYAIR",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000660dc7a6/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8%20(Or",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E3%82%AA%E3%83%AC%E3%83%B3%E3%82%B8%20(Orange)%20SPYAIR",
     "mood": "sad",
     "tags": [
@@ -48831,14 +48830,14 @@ const SONGS = [
     "reason": "\"オレンジ (Orange)\" (SPYAIR) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด sad ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
   },
   {
     "id": 1936,
     "title": "名前のない怪物 (Namae no Nai Kaibutsu)",
     "artist": "EGOIST",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003a80231e/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E5%90%8D%E5%89%8D%E3%81%AE%E3%81%AA%E3%81%84%E6%80%AA%E7%89%A9%20",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E5%90%8D%E5%89%8D%E3%81%AE%E3%81%AA%E3%81%84%E6%80%AA%E7%89%A9%20(Namae%20no%20Nai%20Kaibutsu)%20EGOIST",
     "mood": "sad",
     "tags": [
@@ -48856,14 +48855,14 @@ const SONGS = [
     "reason": "\"名前のない怪物 (Namae no Nai Kaibutsu)\" (EGOIST) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด sad ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 1937,
     "title": "僕の戦争 (Boku no Sensou)",
     "artist": "Shinsei Kamattechan",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004462b248/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E5%83%95%E3%81%AE%E6%88%A6%E4%BA%89%20(Bo",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/24/ff/5324ff49-9bb2-46ad-6a00-8502cb671389/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E5%83%95%E3%81%AE%E6%88%A6%E4%BA%89%20(Boku%20no%20Sensou)%20Shinsei%20Kamattechan",
     "mood": "epic",
     "tags": [
@@ -48882,14 +48881,14 @@ const SONGS = [
     "reason": "\"僕の戦争 (Boku no Sensou)\" (Shinsei Kamattechan) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด epic ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Cinematic สีทอง มีแสง Lens Flare ตามตัวอักษร ค่อยๆ ขยายเต็มจอ พร้อม Particle dust ปลิว",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 1938,
     "title": "点描の唄 (Tenbyo no Uta)",
     "artist": "Mrs. GREEN APPLE ft. Kinoue Airu",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000660501b2/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E7%82%B9%E6%8F%8F%E3%81%AE%E5%94%84%20(Te",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4d/65/c8/4d65c86c-7eee-dec4-6eb4-f25c64d5b92f/888332981538.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E7%82%B9%E6%8F%8F%E3%81%AE%E5%94%84%20(Tenbyo%20no%20Uta)%20Mrs.%20GREEN%20APPLE%20ft.%20Kinoue%20Airu",
     "mood": "love",
     "tags": [
@@ -48908,14 +48907,14 @@ const SONGS = [
     "reason": "\"点描の唄 (Tenbyo no Uta)\" (Mrs. GREEN APPLE ft. Kinoue Airu) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด love ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 1939,
     "title": "コロンブス (Columbus)",
     "artist": "Mrs. GREEN APPLE",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005f959b5a/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E3%82%B3%E3%83%AD%E3%83%B3%E3%83%96%E3%82%B9%20(C",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E3%82%B3%E3%83%AD%E3%83%B3%E3%83%96%E3%82%B9%20(Columbus)%20Mrs.%20GREEN%20APPLE",
     "mood": "happy",
     "tags": [
@@ -48933,14 +48932,14 @@ const SONGS = [
     "reason": "\"コロンブス (Columbus)\" (Mrs. GREEN APPLE) อนิเมะซาวด์แทร็ค/J-Pop ที่มีพลังเข้ากับฉากมู้ด happy ของอนิเมะได้อย่างสมบูรณ์แบบ",
     "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 1940,
     "title": "Whiplash",
     "artist": "aespa",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007bc2ca22/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Whiplash",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Whiplash%20aespa",
     "mood": "hype",
     "tags": [
@@ -48958,14 +48957,14 @@ const SONGS = [
     "reason": "\"Whiplash\" (aespa) เพลง K-Pop ที่มีจังหวะ เร็ว (130 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
   },
   {
     "id": 1941,
     "title": "Drama",
     "artist": "aespa",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000077615919/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Drama",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Drama%20aespa",
     "mood": "hype",
     "tags": [
@@ -48983,14 +48982,14 @@ const SONGS = [
     "reason": "\"Drama\" (aespa) เพลง K-Pop ที่มีจังหวะ เร็ว (128 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 1942,
     "title": "Shopper",
     "artist": "IU",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000005096a4d/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Shopper",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Shopper%20IU",
     "mood": "happy",
     "tags": [
@@ -49009,14 +49008,14 @@ const SONGS = [
     "reason": "\"Shopper\" (IU) เพลง K-Pop ที่มีจังหวะ เร็ว (118 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 1943,
     "title": "Celebrity",
     "artist": "IU",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000015ccb9d1/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Celebrit",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/24/ff/5324ff49-9bb2-46ad-6a00-8502cb671389/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Celebrity%20IU",
     "mood": "happy",
     "tags": [
@@ -49034,14 +49033,14 @@ const SONGS = [
     "reason": "\"Celebrity\" (IU) เพลง K-Pop ที่มีจังหวะ เร็ว (125 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 1944,
     "title": "EASY",
     "artist": "LE SSERAFIM",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000075f7261b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=EASY",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4d/65/c8/4d65c86c-7eee-dec4-6eb4-f25c64d5b92f/888332981538.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/EASY%20LE%20SSERAFIM",
     "mood": "hype",
     "tags": [
@@ -49060,14 +49059,14 @@ const SONGS = [
     "reason": "\"EASY\" (LE SSERAFIM) เพลง K-Pop ที่มีจังหวะ เร็ว (125 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 1945,
     "title": "UNFORGIVEN",
     "artist": "LE SSERAFIM",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000125bdf50/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=UNFORGIV",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/UNFORGIVEN%20LE%20SSERAFIM",
     "mood": "hype",
     "tags": [
@@ -49086,14 +49085,14 @@ const SONGS = [
     "reason": "\"UNFORGIVEN\" (LE SSERAFIM) เพลง K-Pop ที่มีจังหวะ เร็ว (130 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
   },
   {
     "id": 1946,
     "title": "Super Shy",
     "artist": "NewJeans",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003b1db776/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Super%20Sh",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Super%20Shy%20NewJeans",
     "mood": "love",
     "tags": [
@@ -49111,14 +49110,14 @@ const SONGS = [
     "reason": "\"Super Shy\" (NewJeans) เพลง K-Pop ที่มีจังหวะ เร็ว (120 BPM) เข้ากับอนิเมะมู้ด love ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 1947,
     "title": "Hype Boy",
     "artist": "NewJeans",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007d6b6763/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Hype%20Boy",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Hype%20Boy%20NewJeans",
     "mood": "happy",
     "tags": [
@@ -49136,14 +49135,14 @@ const SONGS = [
     "reason": "\"Hype Boy\" (NewJeans) เพลง K-Pop ที่มีจังหวะ เร็ว (114 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 1948,
     "title": "OMG",
     "artist": "NewJeans",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000001f9719ac/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=OMG",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/OMG%20NewJeans",
     "mood": "happy",
     "tags": [
@@ -49161,14 +49160,14 @@ const SONGS = [
     "reason": "\"OMG\" (NewJeans) เพลง K-Pop ที่มีจังหวะ เร็ว (127 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 1949,
     "title": "How Sweet",
     "artist": "NewJeans",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000009c6980b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=How%20Swee",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/24/ff/5324ff49-9bb2-46ad-6a00-8502cb671389/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/How%20Sweet%20NewJeans",
     "mood": "love",
     "tags": [
@@ -49186,14 +49185,14 @@ const SONGS = [
     "reason": "\"How Sweet\" (NewJeans) เพลง K-Pop ที่มีจังหวะ กลาง (100 BPM) เข้ากับอนิเมะมู้ด love ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 1950,
     "title": "SHEESH",
     "artist": "BABYMONSTER",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000647fd51a/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=SHEESH",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4d/65/c8/4d65c86c-7eee-dec4-6eb4-f25c64d5b92f/888332981538.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/SHEESH%20BABYMONSTER",
     "mood": "hype",
     "tags": [
@@ -49211,14 +49210,14 @@ const SONGS = [
     "reason": "\"SHEESH\" (BABYMONSTER) เพลง K-Pop ที่มีจังหวะ เร็ว (130 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
   },
   {
     "id": 1951,
     "title": "DRIP",
     "artist": "BABYMONSTER",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000028c2cf31/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=DRIP",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/DRIP%20BABYMONSTER",
     "mood": "hype",
     "tags": [
@@ -49236,14 +49235,14 @@ const SONGS = [
     "reason": "\"DRIP\" (BABYMONSTER) เพลง K-Pop ที่มีจังหวะ เร็ว (128 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 1952,
     "title": "MANTRA",
     "artist": "JENNIE",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006a2205e0/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=MANTRA",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/MANTRA%20JENNIE",
     "mood": "hype",
     "tags": [
@@ -49262,14 +49261,14 @@ const SONGS = [
     "reason": "\"MANTRA\" (JENNIE) เพลง K-Pop ที่มีจังหวะ เร็ว (128 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 1953,
     "title": "SOLO",
     "artist": "JENNIE",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005ef4dfca/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=SOLO",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/SOLO%20JENNIE",
     "mood": "hype",
     "tags": [
@@ -49288,14 +49287,14 @@ const SONGS = [
     "reason": "\"SOLO\" (JENNIE) เพลง K-Pop ที่มีจังหวะ เร็ว (126 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 1954,
     "title": "Shut Down",
     "artist": "BLACKPINK",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005f5e6c07/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Shut%20Dow",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Shut%20Down%20BLACKPINK",
     "mood": "hype",
     "tags": [
@@ -49314,14 +49313,14 @@ const SONGS = [
     "reason": "\"Shut Down\" (BLACKPINK) เพลง K-Pop ที่มีจังหวะ เร็ว (140 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 1955,
     "title": "Pink Venom",
     "artist": "BLACKPINK",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000001e043b5e/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Pink%20Ven",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/24/ff/5324ff49-9bb2-46ad-6a00-8502cb671389/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Pink%20Venom%20BLACKPINK",
     "mood": "hype",
     "tags": [
@@ -49339,14 +49338,14 @@ const SONGS = [
     "reason": "\"Pink Venom\" (BLACKPINK) เพลง K-Pop ที่มีจังหวะ เร็ว (130 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
   },
   {
     "id": 1956,
     "title": "How You Like That",
     "artist": "BLACKPINK",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000150bc10a/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=How%20You%20",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4d/65/c8/4d65c86c-7eee-dec4-6eb4-f25c64d5b92f/888332981538.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/How%20You%20Like%20That%20BLACKPINK",
     "mood": "hype",
     "tags": [
@@ -49364,14 +49363,14 @@ const SONGS = [
     "reason": "\"How You Like That\" (BLACKPINK) เพลง K-Pop ที่มีจังหวะ เร็ว (130 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 1957,
     "title": "Lovesick Girls",
     "artist": "BLACKPINK",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005316d332/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Lovesick",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Lovesick%20Girls%20BLACKPINK",
     "mood": "sad",
     "tags": [
@@ -49389,14 +49388,14 @@ const SONGS = [
     "reason": "\"Lovesick Girls\" (BLACKPINK) เพลง K-Pop ที่มีจังหวะ เร็ว (124 BPM) เข้ากับอนิเมะมู้ด sad ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 1958,
     "title": "Dynamite",
     "artist": "BTS",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000054f54bec/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Dynamite",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Dynamite%20BTS",
     "mood": "happy",
     "tags": [
@@ -49414,14 +49413,14 @@ const SONGS = [
     "reason": "\"Dynamite\" (BTS) เพลง K-Pop ที่มีจังหวะ เร็ว (114 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 1959,
     "title": "Butter",
     "artist": "BTS",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000077973c21/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Butter",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Butter%20BTS",
     "mood": "happy",
     "tags": [
@@ -49440,14 +49439,14 @@ const SONGS = [
     "reason": "\"Butter\" (BTS) เพลง K-Pop ที่มีจังหวะ เร็ว (110 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 1960,
     "title": "Spring Day",
     "artist": "BTS",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003674ed68/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Spring%20D",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Spring%20Day%20BTS",
     "mood": "sad",
     "tags": [
@@ -49466,14 +49465,14 @@ const SONGS = [
     "reason": "\"Spring Day\" (BTS) เพลง K-Pop ที่มีจังหวะ เร็ว (105 BPM) เข้ากับอนิเมะมู้ด sad ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
   },
   {
     "id": 1961,
     "title": "Fake Love",
     "artist": "BTS",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006c7c183c/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Fake%20Lov",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/24/ff/5324ff49-9bb2-46ad-6a00-8502cb671389/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Fake%20Love%20BTS",
     "mood": "sad",
     "tags": [
@@ -49491,14 +49490,14 @@ const SONGS = [
     "reason": "\"Fake Love\" (BTS) เพลง K-Pop ที่มีจังหวะ เร็ว (101 BPM) เข้ากับอนิเมะมู้ด sad ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 1962,
     "title": "Boy With Luv",
     "artist": "BTS ft. Halsey",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007f6098ba/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Boy%20With",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4d/65/c8/4d65c86c-7eee-dec4-6eb4-f25c64d5b92f/888332981538.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Boy%20With%20Luv%20BTS%20ft.%20Halsey",
     "mood": "happy",
     "tags": [
@@ -49517,14 +49516,14 @@ const SONGS = [
     "reason": "\"Boy With Luv\" (BTS ft. Halsey) เพลง K-Pop ที่มีจังหวะ เร็ว (107 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 1963,
     "title": "Cupid",
     "artist": "FIFTY FIFTY",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005f54abd7/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Cupid",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Cupid%20FIFTY%20FIFTY",
     "mood": "love",
     "tags": [
@@ -49543,14 +49542,14 @@ const SONGS = [
     "reason": "\"Cupid\" (FIFTY FIFTY) เพลง K-Pop ที่มีจังหวะ เร็ว (117 BPM) เข้ากับอนิเมะมู้ด love ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 1964,
     "title": "GODS",
     "artist": "NewJeans",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005f4dfda2/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=GODS",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/GODS%20NewJeans",
     "mood": "epic",
     "tags": [
@@ -49568,14 +49567,14 @@ const SONGS = [
     "reason": "\"GODS\" (NewJeans) เพลง K-Pop ที่มีจังหวะ เร็ว (135 BPM) เข้ากับอนิเมะมู้ด epic ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Cinematic สีทอง มีแสง Lens Flare ตามตัวอักษร ค่อยๆ ขยายเต็มจอ พร้อม Particle dust ปลิว",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 1965,
     "title": "LALISA",
     "artist": "LISA",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000056f827f5/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=LALISA",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/LALISA%20LISA",
     "mood": "hype",
     "tags": [
@@ -49594,14 +49593,14 @@ const SONGS = [
     "reason": "\"LALISA\" (LISA) เพลง K-Pop ที่มีจังหวะ เร็ว (130 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
   },
   {
     "id": 1966,
     "title": "MONEY",
     "artist": "LISA",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004000812b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=MONEY",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/MONEY%20LISA",
     "mood": "hype",
     "tags": [
@@ -49620,14 +49619,14 @@ const SONGS = [
     "reason": "\"MONEY\" (LISA) เพลง K-Pop ที่มีจังหวะ เร็ว (125 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 1967,
     "title": "ROCKSTAR",
     "artist": "LISA",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000045de7042/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=ROCKSTAR",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/24/ff/5324ff49-9bb2-46ad-6a00-8502cb671389/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/ROCKSTAR%20LISA",
     "mood": "hype",
     "tags": [
@@ -49645,14 +49644,14 @@ const SONGS = [
     "reason": "\"ROCKSTAR\" (LISA) เพลง K-Pop ที่มีจังหวะ เร็ว (135 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 1968,
     "title": "Seven",
     "artist": "Jung Kook ft. Latto",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000001261e57/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Seven",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4d/65/c8/4d65c86c-7eee-dec4-6eb4-f25c64d5b92f/888332981538.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Seven%20Jung%20Kook%20ft.%20Latto",
     "mood": "love",
     "tags": [
@@ -49671,14 +49670,14 @@ const SONGS = [
     "reason": "\"Seven\" (Jung Kook ft. Latto) เพลง K-Pop ที่มีจังหวะ เร็ว (125 BPM) เข้ากับอนิเมะมู้ด love ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 1969,
     "title": "Standing Next to You",
     "artist": "Jung Kook",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000050510129/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Standing",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Standing%20Next%20to%20You%20Jung%20Kook",
     "mood": "happy",
     "tags": [
@@ -49696,14 +49695,14 @@ const SONGS = [
     "reason": "\"Standing Next to You\" (Jung Kook) เพลง K-Pop ที่มีจังหวะ เร็ว (107 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 1970,
     "title": "Love Lee",
     "artist": "AKMU",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000534728b0/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Love%20Lee",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Love%20Lee%20AKMU",
     "mood": "love",
     "tags": [
@@ -49722,14 +49721,14 @@ const SONGS = [
     "reason": "\"Love Lee\" (AKMU) เพลง K-Pop ที่มีจังหวะ กลาง (98 BPM) เข้ากับอนิเมะมู้ด love ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
   },
   {
     "id": 1971,
     "title": "ANTIFRAGILE",
     "artist": "LE SSERAFIM",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000065442411/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=ANTIFRAG",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/ANTIFRAGILE%20LE%20SSERAFIM",
     "mood": "hype",
     "tags": [
@@ -49747,14 +49746,14 @@ const SONGS = [
     "reason": "\"ANTIFRAGILE\" (LE SSERAFIM) เพลง K-Pop ที่มีจังหวะ เร็ว (128 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 1972,
     "title": "FEARLESS",
     "artist": "LE SSERAFIM",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000380770f4/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=FEARLESS",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/FEARLESS%20LE%20SSERAFIM",
     "mood": "hype",
     "tags": [
@@ -49772,14 +49771,14 @@ const SONGS = [
     "reason": "\"FEARLESS\" (LE SSERAFIM) เพลง K-Pop ที่มีจังหวะ เร็ว (128 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 1973,
     "title": "After LIKE",
     "artist": "IVE",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004f8d10a3/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=After%20LI",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/24/ff/5324ff49-9bb2-46ad-6a00-8502cb671389/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/After%20LIKE%20IVE",
     "mood": "happy",
     "tags": [
@@ -49797,14 +49796,14 @@ const SONGS = [
     "reason": "\"After LIKE\" (IVE) เพลง K-Pop ที่มีจังหวะ เร็ว (136 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 1974,
     "title": "LOVE DIVE",
     "artist": "IVE",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000032d6546a/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=LOVE%20DIV",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4d/65/c8/4d65c86c-7eee-dec4-6eb4-f25c64d5b92f/888332981538.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/LOVE%20DIVE%20IVE",
     "mood": "love",
     "tags": [
@@ -49822,14 +49821,14 @@ const SONGS = [
     "reason": "\"LOVE DIVE\" (IVE) เพลง K-Pop ที่มีจังหวะ เร็ว (128 BPM) เข้ากับอนิเมะมู้ด love ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 1975,
     "title": "Kitsch",
     "artist": "IVE",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003264702a/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Kitsch",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Kitsch%20IVE",
     "mood": "happy",
     "tags": [
@@ -49848,14 +49847,14 @@ const SONGS = [
     "reason": "\"Kitsch\" (IVE) เพลง K-Pop ที่มีจังหวะ เร็ว (120 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
   },
   {
     "id": 1976,
     "title": "ETA",
     "artist": "NewJeans",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000043e1689d/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=ETA",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/ETA%20NewJeans",
     "mood": "happy",
     "tags": [
@@ -49874,14 +49873,14 @@ const SONGS = [
     "reason": "\"ETA\" (NewJeans) เพลง K-Pop ที่มีจังหวะ เร็ว (130 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 1977,
     "title": "Attention",
     "artist": "NewJeans",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007a3cafd7/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Attentio",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Attention%20NewJeans",
     "mood": "chill",
     "tags": [
@@ -49900,14 +49899,14 @@ const SONGS = [
     "reason": "\"Attention\" (NewJeans) เพลง K-Pop ที่มีจังหวะ กลาง (105 BPM) เข้ากับอนิเมะมู้ด chill ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์มินิมอล Thin สีฟ้าอ่อน ไหลช้าๆ ราวกับลอยอยู่บนน้ำ ผสม grain texture สไตล์ Lo-Fi",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 1978,
     "title": "Nxde",
     "artist": "(G)I-DLE",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000401e7d7a/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Nxde",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Nxde%20(G)I-DLE",
     "mood": "hype",
     "tags": [
@@ -49926,14 +49925,14 @@ const SONGS = [
     "reason": "\"Nxde\" ((G)I-DLE) เพลง K-Pop ที่มีจังหวะ เร็ว (128 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 1979,
     "title": "Queencard",
     "artist": "(G)I-DLE",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000d535857/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Queencar",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/24/ff/5324ff49-9bb2-46ad-6a00-8502cb671389/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Queencard%20(G)I-DLE",
     "mood": "happy",
     "tags": [
@@ -49951,14 +49950,14 @@ const SONGS = [
     "reason": "\"Queencard\" ((G)I-DLE) เพลง K-Pop ที่มีจังหวะ เร็ว (127 BPM) เข้ากับอนิเมะมู้ด happy ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 1980,
     "title": "Super",
     "artist": "(G)I-DLE",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006ab8b716/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=Super",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4d/65/c8/4d65c86c-7eee-dec4-6eb4-f25c64d5b92f/888332981538.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Super%20(G)I-DLE",
     "mood": "hype",
     "tags": [
@@ -49976,14 +49975,14 @@ const SONGS = [
     "reason": "\"Super\" ((G)I-DLE) เพลง K-Pop ที่มีจังหวะ เร็ว (132 BPM) เข้ากับอนิเมะมู้ด hype ได้ลงตัว",
     "typoIdea": "ใช้ฟอนต์ Impact หนาจัด สีแดง/ส้ม พร้อมแสง Neon กระพริบ สั่นตามจังหวะดรอป มี Glitch effect",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
   },
   {
     "id": 1981,
     "title": "ສັນຍາກັນໄວ້",
     "artist": "Alexandra",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004f0c96cc/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%BA%AA%E0%BA%B1%E0%BA%99%E0%BA%8D%E0%BA%B2%E0%BA%81%E0%BA%B1%E0%BA%99",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%BA%AA%E0%BA%B1%E0%BA%99%E0%BA%8D%E0%BA%B2%E0%BA%81%E0%BA%B1%E0%BA%99%E0%BB%84%E0%BA%A7%E0%BB%89%20Alexandra",
     "mood": "love",
     "tags": [
@@ -50001,14 +50000,14 @@ const SONGS = [
     "reason": "\"ສັນຍາກັນໄວ້\" โดย Alexandra เพลงลาว/อีสาน มู้ด love เข้ากับซีนอนิเมะได้อย่างลงตัว",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 1982,
     "title": "ຮັກບໍ່ໄດ້ບອກ",
     "artist": "PoP Pongkool (Lao Ver.)",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000016c553c4/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BA%9A%E0%BB%8D%E0%BB%88%E0%BB%84%E0%BA%94",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BA%9A%E0%BB%8D%E0%BB%88%E0%BB%84%E0%BA%94%E0%BB%89%E0%BA%9A%E0%BA%AD%E0%BA%81%20PoP%20Pongkool%20(Lao%20Ver.)",
     "mood": "sad",
     "tags": [
@@ -50026,14 +50025,14 @@ const SONGS = [
     "reason": "\"ຮັກບໍ່ໄດ້ບອກ\" โดย PoP Pongkool (Lao Ver.) เพลงลาว/อีสาน มู้ด sad เข้ากับซีนอนิเมะได้อย่างลงตัว",
     "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 1983,
     "title": "ໃຈມັນຮັກ",
     "artist": "Cells",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000151ae509/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%BB%83%E0%BA%88%E0%BA%A1%E0%BA%B1%E0%BA%99%E0%BA%AE%E0%BA%B1%E0%BA%81",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%BB%83%E0%BA%88%E0%BA%A1%E0%BA%B1%E0%BA%99%E0%BA%AE%E0%BA%B1%E0%BA%81%20Cells",
     "mood": "love",
     "tags": [
@@ -50052,14 +50051,14 @@ const SONGS = [
     "reason": "\"ໃຈມັນຮັກ\" โดย Cells เพลงลาว/อีสาน มู้ด love เข้ากับซีนอนิเมะได้อย่างลงตัว",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 1984,
-    "title": "ບໍ່ມີໃຜ",
-    "artist": "Tik Shiro (Lao Cover)",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000001eaa4b5b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%BA%9A%E0%BB%8D%E0%BB%88%E0%BA%A1%E0%BA%B5%E0%BB%83%E0%BA%9C",
-    "previewUrl": "",
+    "title": "ບໍ່ມີໃຜທຽບເຈົ້າໄດ້ (ไม่มีใครเทียบคุณได้)",
+    "artist": "YOUD SALAVAN",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/9dd49dab6d85b33c3950554ec1a6d3b9/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/0/f/e/0/0fe6b5389283fb0e252910c423a3e657.mp3?hdnea=exp=1792162103~acl=/api/1/1/0/f/e/0/0fe6b5389283fb0e252910c423a3e657.mp3*~data=user_id=0,application_id=42~hmac=b8b41a9ec5f09f72c76eb1f53a6ebfe9691e46c1b1f15aabffa1efa45c671661",
     "spotifyUrl": "https://open.spotify.com/search/%E0%BA%9A%E0%BB%8D%E0%BB%88%E0%BA%A1%E0%BA%B5%E0%BB%83%E0%BA%9C%20Tik%20Shiro%20(Lao%20Cover)",
     "mood": "sad",
     "tags": [
@@ -50081,10 +50080,10 @@ const SONGS = [
   },
   {
     "id": 1985,
-    "title": "ມີແຕ່ເຈົ້າ",
-    "artist": "Ting Nong",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000001b62e2f0/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%BA%A1%E0%BA%B5%E0%BB%81%E0%BA%95%E0%BB%88%E0%BB%80%E0%BA%88%E0%BA%BB",
-    "previewUrl": "",
+    "title": "ມີແຕ່ເຈົ້າ (Only You)",
+    "artist": "Aimaimaimusic",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/95fb317d1a84525006e0634a53276ca6/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/c/8/9/0/c89cb1d0a2b42f63edb7ad0762b39815.mp3?hdnea=exp=1792162104~acl=/api/1/1/c/8/9/0/c89cb1d0a2b42f63edb7ad0762b39815.mp3*~data=user_id=0,application_id=42~hmac=19f827ac7a67c7879b8a4fc4063891fd274027feab995449cb01f15f6c650674",
     "spotifyUrl": "https://open.spotify.com/search/%E0%BA%A1%E0%BA%B5%E0%BB%81%E0%BA%95%E0%BB%88%E0%BB%80%E0%BA%88%E0%BA%BB%E0%BB%89%E0%BA%B2%20Ting%20Nong",
     "mood": "love",
     "tags": [
@@ -50109,8 +50108,8 @@ const SONGS = [
     "id": 1986,
     "title": "ອ້ອນບໍ່ເກ່ງ",
     "artist": "Beer Pharadonphol (Lao)",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000002d10c5a/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%BA%AD%E0%BB%89%E0%BA%AD%E0%BA%99%E0%BA%9A%E0%BB%8D%E0%BB%88%E0%BB%80",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4d/65/c8/4d65c86c-7eee-dec4-6eb4-f25c64d5b92f/888332981538.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%BA%AD%E0%BB%89%E0%BA%AD%E0%BA%99%E0%BA%9A%E0%BB%8D%E0%BB%88%E0%BB%80%E0%BA%81%E0%BB%88%E0%BA%87%20Beer%20Pharadonphol%20(Lao)",
     "mood": "love",
     "tags": [
@@ -50129,14 +50128,14 @@ const SONGS = [
     "reason": "\"ອ້ອນບໍ່ເກ່ງ\" โดย Beer Pharadonphol (Lao) เพลงลาว/อีสาน มู้ด love เข้ากับซีนอนิเมะได้อย่างลงตัว",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูอ่อน พร้อมหัวใจเล็กๆ ลอยล้อมรอบ ค่อยๆ ซูมเข้าตามจังหวะเบส",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 1987,
     "title": "ສາວອີສານ",
     "artist": "Kai Rattanaporn",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000354c6f89/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BA%AD%E0%BA%B5%E0%BA%AA%E0%BA%B2%E0%BA%99",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BA%AD%E0%BA%B5%E0%BA%AA%E0%BA%B2%E0%BA%99%20Kai%20Rattanaporn",
     "mood": "happy",
     "tags": [
@@ -50155,14 +50154,14 @@ const SONGS = [
     "reason": "\"ສາວອີສານ\" โดย Kai Rattanaporn เพลงลาว/อีสาน มู้ด happy เข้ากับซีนอนิเมะได้อย่างลงตัว",
     "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 1988,
-    "title": "ບ້ານນາ",
-    "artist": "Molam Lao Band",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006552892c/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%BA%9A%E0%BB%89%E0%BA%B2%E0%BA%99%E0%BA%99%E0%BA%B2",
-    "previewUrl": "",
+    "title": "ເຊັນເຫຼົ້າເຂົ້າຂຽວ",
+    "artist": "Baodueang Bannar",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/03a7d79639d88f4f122bee934ce6dc6f/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/a/5/6/0/a566416a7e6e090f3acfdff2ddab3b0f.mp3?hdnea=exp=1792162108~acl=/api/1/1/a/5/6/0/a566416a7e6e090f3acfdff2ddab3b0f.mp3*~data=user_id=0,application_id=42~hmac=263dad09ee1680268f97644dd129c8da0929898411da1c699924d3281eff5cf6",
     "spotifyUrl": "https://open.spotify.com/search/%E0%BA%9A%E0%BB%89%E0%BA%B2%E0%BA%99%E0%BA%99%E0%BA%B2%20Molam%20Lao%20Band",
     "mood": "chill",
     "tags": [
@@ -50187,8 +50186,8 @@ const SONGS = [
     "id": 1989,
     "title": "ຄິດฮອดเจ้າ",
     "artist": "Kratae RSiam (Lao)",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000057ba6875/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%BA%84%E0%BA%B4%E0%BA%94%E0%B8%AE%E0%BA%AD%E0%B8%94%E0%B9%80%E0%B8%88",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%BA%84%E0%BA%B4%E0%BA%94%E0%B8%AE%E0%BA%AD%E0%B8%94%E0%B9%80%E0%B8%88%E0%B9%89%E0%BA%B2%20Kratae%20RSiam%20(Lao)",
     "mood": "sad",
     "tags": [
@@ -50206,14 +50205,14 @@ const SONGS = [
     "reason": "\"ຄິດฮອดเจ้າ\" โดย Kratae RSiam (Lao) เพลงลาว/อีสาน มู้ด sad เข้ากับซีนอนิเมะได้อย่างลงตัว",
     "typoIdea": "ใช้ฟอนต์ Serif สีขาว พร้อม Glow นุ่มนวล ลอยช้าๆ จางหายพร้อมน้ำตา fade-out ตามจังหวะเพลง",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 1990,
     "title": "ลำเพลินภูไท",
     "artist": "มนต์แคน แก่นคูน",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000159966b0/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A5%E0%B8%B3%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%B4%E0%B8%99%E0%B8%A0",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B3%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%B4%E0%B8%99%E0%B8%A0%E0%B8%B9%E0%B9%84%E0%B8%97%20%E0%B8%A1%E0%B8%99%E0%B8%95%E0%B9%8C%E0%B9%81%E0%B8%84%E0%B8%99%20%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99%E0%B8%84%E0%B8%B9%E0%B8%99",
     "mood": "happy",
     "tags": [
@@ -50232,15 +50231,14 @@ const SONGS = [
     "reason": "\"ลำเพลินภูไท\" โดย มนต์แคน แก่นคูน เพลงลาว/อีสาน มู้ด happy เข้ากับซีนอนิเมะได้อย่างลงตัว",
     "typoIdea": "ใช้ฟอนต์ Sans-Serif สีสดใส ตัวหนา กระโดดสนุกตามจังหวะ ใส่ Confetti particle ให้มีชีวิตชีวา",
     "audioUrl": "",
-    "audioFallback": ""
-  }
-,
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
+  },
   {
     "id": 1991,
     "title": "หวาน (ຫວານ)",
-    "artist": "Cells",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002cf60cf6/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AB%E0%B8%A7%E0%B8%B2%E0%B8%99%20(%E0%BA%AB%E0%BA%A7",
-    "previewUrl": "",
+    "artist": "Pramote Vilepana",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/846a0a59ac459c1e18f2ea875fd4ef90/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/5/d/3/0/5d3ed9602d1e96c8acd795c865144481.mp3?hdnea=exp=1792162113~acl=/api/1/1/5/d/3/0/5d3ed9602d1e96c8acd795c865144481.mp3*~data=user_id=0,application_id=42~hmac=98c5df0549b1c99c59a6803359235f2de62788354766fa880879e230dbfe8090",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%A7%E0%B8%B2%E0%B8%99%20(%E0%BA%AB%E0%BA%A7%E0%BA%B2%E0%BA%99)%20Cells",
     "mood": "love",
     "tags": [
@@ -50265,9 +50263,9 @@ const SONGS = [
   {
     "id": 1992,
     "title": "เรื่องขี้หมา (ເລື່ອງຂີ້ໝາ)",
-    "artist": "Cells",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004e3b5447/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%82%E0%B8%B5",
-    "previewUrl": "",
+    "artist": "Y Not 7",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e46ab27eb3c526bfd99f0a5a0dba5b5d/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/3/4/c/0/34c6ff999519a38eb6a1a0f674741edc.mp3?hdnea=exp=1792162114~acl=/api/1/1/3/4/c/0/34c6ff999519a38eb6a1a0f674741edc.mp3*~data=user_id=0,application_id=42~hmac=37c15c157e75b040dffffae03f18e4fa184c8de93ed50fe3a5e874c7340b9e64",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%82%E0%B8%B5%E0%B9%89%E0%B8%AB%E0%B8%A1%E0%B8%B2%20(%E0%BB%80%E0%BA%A5%E0%BA%B7%E0%BB%88%E0%BA%AD%E0%BA%87%E0%BA%82%E0%BA%B5%E0%BB%89%E0%BB%9D%E0%BA%B2)%20Cells",
     "mood": "sad",
     "tags": [
@@ -50291,9 +50289,9 @@ const SONGS = [
   {
     "id": 1993,
     "title": "กอด (ກອດ)",
-    "artist": "Cells",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005e6078e0/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%81%E0%B8%AD%E0%B8%94%20(%E0%BA%81%E0%BA%AD%E0%BA%94",
-    "previewUrl": "",
+    "artist": "กัน นภัทร อินทร์ใจเอื้อ",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/29f0f14ebd7c657b4ee882fd0c22a73b/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/a/c/2/0/ac2e3046f0e6dd6535a42ce006abdb98.mp3?hdnea=exp=1792162115~acl=/api/1/1/a/c/2/0/ac2e3046f0e6dd6535a42ce006abdb98.mp3*~data=user_id=0,application_id=42~hmac=3d0a9d760d3d8cc388b4d92840bdf8fb5533246a76686fe296d245a7b638c8fd",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%AD%E0%B8%94%20(%E0%BA%81%E0%BA%AD%E0%BA%94)%20Cells",
     "mood": "love",
     "tags": [
@@ -50318,9 +50316,9 @@ const SONGS = [
   {
     "id": 1994,
     "title": "คนขี้คุย (ຄົນຂີ້ຄຸຍ)",
-    "artist": "Cells",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006cf79e28/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%99%E0%B8%82%E0%B8%B5%E0%B9%89%E0%B8%84%E0%B8%B8%E0%B8%A2",
-    "previewUrl": "",
+    "artist": "Dom",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/c1064d4547adf791bf3618afd2be2b97/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/b/5/b/0/b5b8d63574303b1787815330e56d7c2a.mp3?hdnea=exp=1792162116~acl=/api/1/1/b/5/b/0/b5b8d63574303b1787815330e56d7c2a.mp3*~data=user_id=0,application_id=42~hmac=ce8d9946b19aa3f5f0a664cf9d52cb50700c79f444025d12329238bc9fb06843",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%99%E0%B8%82%E0%B8%B5%E0%B9%89%E0%B8%84%E0%B8%B8%E0%B8%A2%20(%E0%BA%84%E0%BA%BB%E0%BA%99%E0%BA%82%E0%BA%B5%E0%BB%89%E0%BA%84%E0%BA%B8%E0%BA%8D)%20Cells",
     "mood": "happy",
     "tags": [
@@ -50344,9 +50342,9 @@ const SONGS = [
   {
     "id": 1995,
     "title": "ยังรัก (ຍັງຮັກ)",
-    "artist": "Cells",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000068555ee6/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81%20(",
-    "previewUrl": "",
+    "artist": "BUS",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/965a193082dd0355d472d6c730b90138/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/4/a/d/0/4adb220fd5c751e3a97fe677df67f68b.mp3?hdnea=exp=1792162117~acl=/api/1/1/4/a/d/0/4adb220fd5c751e3a97fe677df67f68b.mp3*~data=user_id=0,application_id=42~hmac=be2010ea9d420bf0f6ad10de71e90a1c5527d0f16c9d9518e56aa2f3535240eb",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81%20(%E0%BA%8D%E0%BA%B1%E0%BA%87%E0%BA%AE%E0%BA%B1%E0%BA%81)%20Cells",
     "mood": "sad",
     "tags": [
@@ -50370,9 +50368,9 @@ const SONGS = [
   {
     "id": 1996,
     "title": "เสียดาย (ເສຍດາຍ)",
-    "artist": "Cells",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000246a2e37/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%94%E0%B8%B2%E0%B8%A2%20",
-    "previewUrl": "",
+    "artist": "Stoondio",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e0339b261d61bebbd40f1b17415e0640/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/4/1/0/0/410a92de8c13555b51a86bfdc79434b6.mp3?hdnea=exp=1792162119~acl=/api/1/1/4/1/0/0/410a92de8c13555b51a86bfdc79434b6.mp3*~data=user_id=0,application_id=42~hmac=9dc1200c4cfd1f418f251dbcaf7f8f1dda1fe0f060991c7c6dfaae87cb34c8ea",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%94%E0%B8%B2%E0%B8%A2%20(%E0%BB%80%E0%BA%AA%E0%BA%8D%E0%BA%94%E0%BA%B2%E0%BA%8D)%20Cells",
     "mood": "sad",
     "tags": [
@@ -50396,9 +50394,9 @@ const SONGS = [
   {
     "id": 1997,
     "title": "บ่ลืม (ບໍ່ລືມ)",
-    "artist": "Cells",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000016a538b5/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9A%E0%B9%88%E0%B8%A5%E0%B8%B7%E0%B8%A1%20(%E0%BA%9A",
-    "previewUrl": "",
+    "artist": "Anu Ray",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/589d528b968dde27d19f86e7521f7adc/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/d/a/3/0/da3f29c8a1b53aa0b5c0735700cc91a8.mp3?hdnea=exp=1792162120~acl=/api/1/1/d/a/3/0/da3f29c8a1b53aa0b5c0735700cc91a8.mp3*~data=user_id=0,application_id=42~hmac=34310c0a278a695630e41713b7be594a37864510051fd8abdda3cd9d1219c854",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9A%E0%B9%88%E0%B8%A5%E0%B8%B7%E0%B8%A1%20(%E0%BA%9A%E0%BB%8D%E0%BB%88%E0%BA%A5%E0%BA%B7%E0%BA%A1)%20Cells",
     "mood": "sad",
     "tags": [
@@ -50422,8 +50420,8 @@ const SONGS = [
     "id": 1998,
     "title": "อย่ายิ้มเด้อ (ຢ່າຢິ້ມເດີ້)",
     "artist": "SOPHANA ft. GX2",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000b859fed/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B8%B4%E0%B9%89%E0%B8%A1",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4d/65/c8/4d65c86c-7eee-dec4-6eb4-f25c64d5b92f/888332981538.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%A2%E0%B8%B4%E0%B9%89%E0%B8%A1%E0%B9%80%E0%B8%94%E0%B9%89%E0%B8%AD%20(%E0%BA%A2%E0%BB%88%E0%BA%B2%E0%BA%A2%E0%BA%B4%E0%BB%89%E0%BA%A1%E0%BB%80%E0%BA%94%E0%BA%B5%E0%BB%89)%20SOPHANA%20ft.%20GX2",
     "mood": "love",
     "tags": [
@@ -50442,14 +50440,14 @@ const SONGS = [
     "reason": "เพลงหวานละมุน \"อย่ายิ้มเด้อ (ຢ່າຢິ້ມເດີ້)\" โดย SOPHANA ft. GX2 เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 1999,
-    "title": "อยากเป็นลูกเขย",
-    "artist": "SOPHANA ft. Bigyai",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002180471b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AD%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99",
-    "previewUrl": "",
+    "title": "อยากเป็นลูกเขย (Live)",
+    "artist": "Sophana",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/7141957938354426c98849efeac1b107/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/3/1/7/0/317e05a2c455dedab9e4c9441cac0112.mp3?hdnea=exp=1792162123~acl=/api/1/1/3/1/7/0/317e05a2c455dedab9e4c9441cac0112.mp3*~data=user_id=0,application_id=42~hmac=8e4ca41f64fd56653063d9b2e5a067d91ecd89df44e89c9aecf790c39237ea2b",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B9%80%E0%B8%82%E0%B8%A2%20SOPHANA%20ft.%20Bigyai",
     "mood": "happy",
     "tags": [
@@ -50474,8 +50472,8 @@ const SONGS = [
     "id": 2000,
     "title": "บ่แม่นหมาวัด (ບໍ່ແມ່ນໝາວັດ)",
     "artist": "SOPHANA ft. T'JAME",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000067dec919/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9A%E0%B9%88%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B8%AB%E0%B8%A1",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9A%E0%B9%88%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A7%E0%B8%B1%E0%B8%94%20(%E0%BA%9A%E0%BB%8D%E0%BB%88%E0%BB%81%E0%BA%A1%E0%BB%88%E0%BA%99%E0%BB%9D%E0%BA%B2%E0%BA%A7%E0%BA%B1%E0%BA%94)%20SOPHANA%20ft.%20T'JAME",
     "mood": "hype",
     "tags": [
@@ -50494,14 +50492,14 @@ const SONGS = [
     "reason": "บีทเดือดสะใจ \"บ่แม่นหมาวัด (ບໍ່ແມ່ນໝາວັດ)\" โดย SOPHANA ft. T'JAME ท่อนฮุกกระแทกอารมณ์ ปลุกพลังให้คลิปอนิเมะแอกชันได้อย่างยอดเยี่ยม",
     "typoIdea": "ใช้ฟอนต์ Impact สีแดงเพลิง กระตุกสั่นตามจังหวะกลองและเบส มีเส้นไฟนีออนพุ่งผ่านตัวหนังสือ",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
   },
   {
     "id": 2001,
     "title": "ปล่อยอ้ายไปเถาะ (ປ່ອຍອ້າຍໄປເຖາະ)",
     "artist": "SOPHANA",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000693cfef8/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9B%E0%B8%A5%E0%B9%88%E0%B8%AD%E0%B8%A2%E0%B8%AD%E0%B9%89%E0%B8%B2",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9B%E0%B8%A5%E0%B9%88%E0%B8%AD%E0%B8%A2%E0%B8%AD%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B9%84%E0%B8%9B%E0%B9%80%E0%B8%96%E0%B8%B2%E0%B8%B0%20(%E0%BA%9B%E0%BB%88%E0%BA%AD%E0%BA%8D%E0%BA%AD%E0%BB%89%E0%BA%B2%E0%BA%8D%E0%BB%84%E0%BA%9B%E0%BB%80%E0%BA%96%E0%BA%B2%E0%BA%B0)%20SOPHANA",
     "mood": "sad",
     "tags": [
@@ -50520,14 +50518,14 @@ const SONGS = [
     "reason": "เพลงลาวสุดซึ้ง \"ปล่อยอ้ายไปเถาะ (ປ່ອຍອ້າຍໄປເຖາະ)\" (SOPHANA) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
     "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 2002,
     "title": "หลงฮักเมียเขา (ຫຼົງຮັກເມຍເຂົາ)",
-    "artist": "SOPHANA",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000073636e54/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AB%E0%B8%A5%E0%B8%87%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1",
-    "previewUrl": "",
+    "artist": "FILMI",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d9a786c1a11f35df37fe0a3c9fc16ef2/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/5/0/3/0/503019e2546e2fb334b9477f3f131158.mp3?hdnea=exp=1792162126~acl=/api/1/1/5/0/3/0/503019e2546e2fb334b9477f3f131158.mp3*~data=user_id=0,application_id=42~hmac=50a6ab5956351cd7a961d266e1b64c38ee25525b0fc95c9bc113e8e5fe76373a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%A5%E0%B8%87%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%A1%E0%B8%B5%E0%B8%A2%E0%B9%80%E0%B8%82%E0%B8%B2%20(%E0%BA%AB%E0%BA%BC%E0%BA%BB%E0%BA%87%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BB%80%E0%BA%A1%E0%BA%8D%E0%BB%80%E0%BA%82%E0%BA%BB%E0%BA%B2)%20SOPHANA",
     "mood": "sad",
     "tags": [
@@ -50551,9 +50549,9 @@ const SONGS = [
   {
     "id": 2003,
     "title": "สาวเมืองกาญจน์",
-    "artist": "SOPHANA",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006080fb50/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87",
-    "previewUrl": "",
+    "artist": "สุระชัย สมบัติเจริญ",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/42d96e0b71bd41c81287bd695ba05f11/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/f/3/1/0/f31c3b9d553f2be6b93da895f4238b0d.mp3?hdnea=exp=1792162128~acl=/api/1/1/f/3/1/0/f31c3b9d553f2be6b93da895f4238b0d.mp3*~data=user_id=0,application_id=42~hmac=47ed69e642a7113b8d75a7621bd31f3164eb846f2f2b161770a043451a5be81a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%8D%E0%B8%88%E0%B8%99%E0%B9%8C%20SOPHANA",
     "mood": "love",
     "tags": [
@@ -50577,9 +50575,9 @@ const SONGS = [
   {
     "id": 2004,
     "title": "สายแนน (Sai Nan)",
-    "artist": "SOPHANA x GX2 x T'JAME",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000001350400d/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B9%81%E0%B8%99%E0%B8%99%20(",
-    "previewUrl": "",
+    "artist": "จำรัส เศวตาภรณ์",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/f5323231acd23549d05bd9dabc3a8b64/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/2/5/d/0/25df6292eb4b8af3c230752dc27a2058.mp3?hdnea=exp=1792162129~acl=/api/1/1/2/5/d/0/25df6292eb4b8af3c230752dc27a2058.mp3*~data=user_id=0,application_id=42~hmac=bd3424cfb735445a533a2a8c8d9f63a3b6951f636b6eb6f9966f12543ffe7737",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B9%81%E0%B8%99%E0%B8%99%20(Sai%20Nan)%20SOPHANA%20x%20GX2%20x%20T'JAME",
     "mood": "love",
     "tags": [
@@ -50604,8 +50602,8 @@ const SONGS = [
     "id": 2005,
     "title": "ดาวดวงเก่า (ດາວດວງເກົ່າ)",
     "artist": "GX2",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003c18e773/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%94%E0%B8%B2%E0%B8%A7%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B9%80%E0%B8%81",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%B2%E0%B8%A7%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%B2%20(%E0%BA%94%E0%BA%B2%E0%BA%A7%E0%BA%94%E0%BA%A7%E0%BA%87%E0%BB%80%E0%BA%81%E0%BA%BB%E0%BB%88%E0%BA%B2)%20GX2",
     "mood": "sad",
     "tags": [
@@ -50625,14 +50623,14 @@ const SONGS = [
     "reason": "เพลงลาวสุดซึ้ง \"ดาวดวงเก่า (ດາວດວງເກົ່າ)\" (GX2) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
     "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
   },
   {
     "id": 2006,
     "title": "ยิ้ม (ຍິ້ມ)",
-    "artist": "GX2",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000066f1be69/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A2%E0%B8%B4%E0%B9%89%E0%B8%A1%20(%E0%BA%8D%E0%BA%B4",
-    "previewUrl": "",
+    "artist": "OUT",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a652cf97a4babaa2387e5478fc2a05b4/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/8/d/b/0/8db10ef975eb78e0887c2ce9349105fb.mp3?hdnea=exp=1792162131~acl=/api/1/1/8/d/b/0/8db10ef975eb78e0887c2ce9349105fb.mp3*~data=user_id=0,application_id=42~hmac=72ff251b452d5820381d8c75765e50540c6bf80943dd5fe421951a065adb590d",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A2%E0%B8%B4%E0%B9%89%E0%B8%A1%20(%E0%BA%8D%E0%BA%B4%E0%BB%89%E0%BA%A1)%20GX2",
     "mood": "love",
     "tags": [
@@ -50657,8 +50655,8 @@ const SONGS = [
     "id": 2007,
     "title": "ขอโทษที่ข้อยจน (ຂໍໂທດທີ່ຂ້ອຍຈົນ)",
     "artist": "GX2",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005a3beb2b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%82%E0%B8%AD%E0%B9%82%E0%B8%97%E0%B8%A9%E0%B8%97%E0%B8%B5%E0%B9%88",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%82%E0%B8%AD%E0%B9%82%E0%B8%97%E0%B8%A9%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B8%88%E0%B8%99%20(%E0%BA%82%E0%BB%8D%E0%BB%82%E0%BA%97%E0%BA%94%E0%BA%97%E0%BA%B5%E0%BB%88%E0%BA%82%E0%BB%89%E0%BA%AD%E0%BA%8D%E0%BA%88%E0%BA%BB%E0%BA%99)%20GX2",
     "mood": "sad",
     "tags": [
@@ -50677,14 +50675,14 @@ const SONGS = [
     "reason": "เพลงลาวสุดซึ้ง \"ขอโทษที่ข้อยจน (ຂໍໂທດທີ່ຂ້ອຍຈົນ)\" (GX2) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
     "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 2008,
     "title": "เจ้าอย่าใจฮ้าย (ເຈົ້າຢ່າໃຈຮ້າຍ)",
     "artist": "GX2",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000041557c35/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B9%83%E0%B8%88%E0%B8%AE%E0%B9%89%E0%B8%B2%E0%B8%A2%20(%E0%BB%80%E0%BA%88%E0%BA%BB%E0%BB%89%E0%BA%B2%E0%BA%A2%E0%BB%88%E0%BA%B2%E0%BB%83%E0%BA%88%E0%BA%AE%E0%BB%89%E0%BA%B2%E0%BA%8D)%20GX2",
     "mood": "love",
     "tags": [
@@ -50703,14 +50701,14 @@ const SONGS = [
     "reason": "เพลงหวานละมุน \"เจ้าอย่าใจฮ้าย (ເຈົ້າຢ່າໃຈຮ້າຍ)\" โดย GX2 เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 2009,
     "title": "คิดฮอดเขา (ຄິດຮອດເຂົາ)",
-    "artist": "GX2",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000074915d37/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%AE%E0%B8%AD%E0%B8%94%E0%B9%80%E0%B8%82",
-    "previewUrl": "",
+    "artist": "ลูกแพร อุไรพร - ไหมไทย อุไรพร ( เสียงอิสาน ท็อปไลน์ )",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/db9708f749dc409eb0c40ffce7dbb518/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/b/b/d/0/bbd057cc66aa5a06237198667bd6bba8.mp3?hdnea=exp=1792162136~acl=/api/1/1/b/b/d/0/bbd057cc66aa5a06237198667bd6bba8.mp3*~data=user_id=0,application_id=42~hmac=1af78271ffd120ebf391b6ea357b3f9d0f73b152ef2baa1106b7e3cef0969416",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%AE%E0%B8%AD%E0%B8%94%E0%B9%80%E0%B8%82%E0%B8%B2%20(%E0%BA%84%E0%BA%B4%E0%BA%94%E0%BA%AE%E0%BA%AD%E0%BA%94%E0%BB%80%E0%BA%82%E0%BA%BB%E0%BA%B2)%20GX2",
     "mood": "sad",
     "tags": [
@@ -50736,8 +50734,8 @@ const SONGS = [
     "id": 2010,
     "title": "อยู่ไกลกะคิดฮอด (ຢູ່ໄກກໍຄິດຮອດ)",
     "artist": "GX2",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003d466449/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AD%E0%B8%A2%E0%B8%B9%E0%B9%88%E0%B9%84%E0%B8%81%E0%B8%A5%E0%B8%81",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4d/65/c8/4d65c86c-7eee-dec4-6eb4-f25c64d5b92f/888332981538.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B8%B9%E0%B9%88%E0%B9%84%E0%B8%81%E0%B8%A5%E0%B8%81%E0%B8%B0%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%AE%E0%B8%AD%E0%B8%94%20(%E0%BA%A2%E0%BA%B9%E0%BB%88%E0%BB%84%E0%BA%81%E0%BA%81%E0%BB%8D%E0%BA%84%E0%BA%B4%E0%BA%94%E0%BA%AE%E0%BA%AD%E0%BA%94)%20GX2",
     "mood": "love",
     "tags": [
@@ -50756,14 +50754,14 @@ const SONGS = [
     "reason": "เพลงหวานละมุน \"อยู่ไกลกะคิดฮอด (ຢູ່ໄກກໍຄິດຮອດ)\" โดย GX2 เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
   },
   {
     "id": 2011,
     "title": "น้องคนงาม (ນ້ອງຄົນງາມ)",
-    "artist": "GX2",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000034321aeb/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B8%99%E0%B8%87%E0%B8%B2",
-    "previewUrl": "",
+    "artist": "Aha",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/cacdae8eb4b8c227cc7bbb8850929086/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/7/0/d/0/70d570a8f3b3fc94db83387197647974.mp3?hdnea=exp=1792162138~acl=/api/1/1/7/0/d/0/70d570a8f3b3fc94db83387197647974.mp3*~data=user_id=0,application_id=42~hmac=e2017ab53bdf471441682161ac1e618b2623c7cbda79b226b4dbe4872aa63124",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%84%E0%B8%99%E0%B8%87%E0%B8%B2%E0%B8%A1%20(%E0%BA%99%E0%BB%89%E0%BA%AD%E0%BA%87%E0%BA%84%E0%BA%BB%E0%BA%99%E0%BA%87%E0%BA%B2%E0%BA%A1)%20GX2",
     "mood": "love",
     "tags": [
@@ -50787,9 +50785,9 @@ const SONGS = [
   {
     "id": 2012,
     "title": "ใจพัง (ໃຈພັງ)",
-    "artist": "GX2",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003baee730/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%83%E0%B8%88%E0%B8%9E%E0%B8%B1%E0%B8%87%20(%E0%BB%83",
-    "previewUrl": "",
+    "artist": "Saran",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ec5511e1c7b55d05f2f3af8caab1c956/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/0/7/3/0/07320b098580ec6d066f95e7ad5d4041.mp3?hdnea=exp=1792162139~acl=/api/1/1/0/7/3/0/07320b098580ec6d066f95e7ad5d4041.mp3*~data=user_id=0,application_id=42~hmac=260bd02dc6d6274435249ec25be4048531b0a69d321b60255bb4f844347992a8",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%83%E0%B8%88%E0%B8%9E%E0%B8%B1%E0%B8%87%20(%E0%BB%83%E0%BA%88%E0%BA%9E%E0%BA%B1%E0%BA%87)%20GX2",
     "mood": "sad",
     "tags": [
@@ -50812,9 +50810,9 @@ const SONGS = [
   {
     "id": 2013,
     "title": "หัวใจสะออน (ຫົວໃຈສະອອນ)",
-    "artist": "T'JAME Uno",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000040e9f52b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AB%E0%B8%B1%E0%B8%A7%E0%B9%83%E0%B8%88%E0%B8%AA%E0%B8%B0%E0%B8%AD",
-    "previewUrl": "",
+    "artist": "อัสนี & วสันต์",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/937700038aca65c976017529a1f7518d/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/1/1/e/0/11ef04c44dd937df726a1f4312f6bfbd.mp3?hdnea=exp=1792162141~acl=/api/1/1/1/1/e/0/11ef04c44dd937df726a1f4312f6bfbd.mp3*~data=user_id=0,application_id=42~hmac=18e03754ddc479ee6b7db9c55478dd714ce072c87df92a993be0215199429aa4",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%B1%E0%B8%A7%E0%B9%83%E0%B8%88%E0%B8%AA%E0%B8%B0%E0%B8%AD%E0%B8%AD%E0%B8%99%20(%E0%BA%AB%E0%BA%BB%E0%BA%A7%E0%BB%83%E0%BA%88%E0%BA%AA%E0%BA%B0%E0%BA%AD%E0%BA%AD%E0%BA%99)%20T'JAME%20Uno",
     "mood": "love",
     "tags": [
@@ -50840,8 +50838,8 @@ const SONGS = [
     "id": 2014,
     "title": "แพ้ทางสาวลาว",
     "artist": "T'JAME Uno",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000046cc7a4d/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%81%E0%B8%9E%E0%B9%89%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%AA%E0%B8%B2",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%9E%E0%B9%89%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%A7%20T'JAME%20Uno",
     "mood": "happy",
     "tags": [
@@ -50860,14 +50858,14 @@ const SONGS = [
     "reason": "เพลงจังหวะสนุกสนาน \"แพ้ทางสาวลาว\" (T'JAME Uno) นำความสดใสมีชีวิตชีวามาใส่ในคลิปตัดต่อได้อย่างลงตัว",
     "typoIdea": "ใช้ฟอนต์หนาสีส้มสดใส กระโดดตามจังหวะบีท พร้อมประกายแสงดาววิบวับรอบตัวอักษร",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 2015,
     "title": "อ้ายมันจน (ອ້າຍມັນຈົນ)",
-    "artist": "T'JAME Uno",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005f0b7069/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AD%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%A1%E0%B8%B1%E0%B8%99%E0%B8%88",
-    "previewUrl": "",
+    "artist": "มอส คำหมากบิน",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/6f52ff4789e4b2aa6b9652d0a1228ba3/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/7/0/f/0/70f18d9f5b51500e68fbbae61259840b.mp3?hdnea=exp=1792162143~acl=/api/1/1/7/0/f/0/70f18d9f5b51500e68fbbae61259840b.mp3*~data=user_id=0,application_id=42~hmac=d5f60629442bca24b458e27fb06f7b7184ca2646c71d037b5051609f2cb1b8d7",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%A1%E0%B8%B1%E0%B8%99%E0%B8%88%E0%B8%99%20(%E0%BA%AD%E0%BB%89%E0%BA%B2%E0%BA%8D%E0%BA%A1%E0%BA%B1%E0%BA%99%E0%BA%88%E0%BA%BB%E0%BA%99)%20T'JAME%20Uno",
     "mood": "sad",
     "tags": [
@@ -50892,8 +50890,8 @@ const SONGS = [
     "id": 2016,
     "title": "ฮักสาวฝั่งของ",
     "artist": "T'JAME Uno",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000058a962a0/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%9D%E0%B8%B1",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4d/65/c8/4d65c86c-7eee-dec4-6eb4-f25c64d5b92f/888332981538.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%9D%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%AD%E0%B8%87%20T'JAME%20Uno",
     "mood": "love",
     "tags": [
@@ -50911,14 +50909,14 @@ const SONGS = [
     "reason": "เพลงหวานละมุน \"ฮักสาวฝั่งของ\" โดย T'JAME Uno เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 2017,
     "title": "บ่มีไผฮัก (ບໍ່ມີໃຜຮັກ)",
-    "artist": "T'JAME Uno",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000033437427/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9A%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%84%E0%B8%9C%E0%B8%AE%E0%B8%B1",
-    "previewUrl": "",
+    "artist": "PHUKABERT CHANNEL",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/9745e41940ca9ac84ac6361c7d221243/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/1/7/d/0/17d747a6af689b9d6c9666823dc8f4c5.mp3?hdnea=exp=1792162146~acl=/api/1/1/1/7/d/0/17d747a6af689b9d6c9666823dc8f4c5.mp3*~data=user_id=0,application_id=42~hmac=e5220914d9be188b5809f6213a8c1e9b434b0e75c13ffc0082847f0ba08ce224",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9A%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B9%84%E0%B8%9C%E0%B8%AE%E0%B8%B1%E0%B8%81%20(%E0%BA%9A%E0%BB%8D%E0%BB%88%E0%BA%A1%E0%BA%B5%E0%BB%83%E0%BA%9C%E0%BA%AE%E0%BA%B1%E0%BA%81)%20T'JAME%20Uno",
     "mood": "sad",
     "tags": [
@@ -50942,8 +50940,8 @@ const SONGS = [
     "id": 2018,
     "title": "อยากเป็นคนฮักของเจ้า (ຢາກເປັນຄົນຮັກຂອງເຈົ້າ)",
     "artist": "Taiy Akard",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002d1f7f5c/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AD%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B9%80%E0%B8%9B%E0%B9%87%E0%B8%99%E0%B8%84%E0%B8%99%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%20(%E0%BA%A2%E0%BA%B2%E0%BA%81%E0%BB%80%E0%BA%9B%E0%BA%B1%E0%BA%99%E0%BA%84%E0%BA%BB%E0%BA%99%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BA%82%E0%BA%AD%E0%BA%87%E0%BB%80%E0%BA%88%E0%BA%BB%E0%BB%89%E0%BA%B2)%20Taiy%20Akard",
     "mood": "love",
     "tags": [
@@ -50961,14 +50959,14 @@ const SONGS = [
     "reason": "เพลงหวานละมุน \"อยากเป็นคนฮักของเจ้า (ຢາກເປັນຄົນຮັກຂອງເຈົ້າ)\" โดย Taiy Akard เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 2019,
     "title": "บอกข้อยแด่ (ບອກຂ້ອຍແດ່)",
     "artist": "Taiy Akard",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003aa20264/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B9%81",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9A%E0%B8%AD%E0%B8%81%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B9%81%E0%B8%94%E0%B9%88%20(%E0%BA%9A%E0%BA%AD%E0%BA%81%E0%BA%82%E0%BB%89%E0%BA%AD%E0%BA%8D%E0%BB%81%E0%BA%94%E0%BB%88)%20Taiy%20Akard",
     "mood": "love",
     "tags": [
@@ -50986,14 +50984,14 @@ const SONGS = [
     "reason": "เพลงหวานละมุน \"บอกข้อยแด่ (ບອກຂ້ອຍແດ່)\" โดย Taiy Akard เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 2020,
     "title": "ฮักเจ้าเบิดใจ (ຮັກເຈົ້າເບີດໃຈ)",
-    "artist": "Taiy Akard",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006922dfa3/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%80",
-    "previewUrl": "",
+    "artist": "Nana Vox Studio",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/002fadb352eb9b85a0a2932db03799b5/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/6/a/1/0/6a12434a832723853d504a18eb33ffc0.mp3?hdnea=exp=1792162149~acl=/api/1/1/6/a/1/0/6a12434a832723853d504a18eb33ffc0.mp3*~data=user_id=0,application_id=42~hmac=a849083907233060443406f1adc47be1dd11c9113f26f1abf8d391d63ca099c9",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%9A%E0%B8%B4%E0%B8%94%E0%B9%83%E0%B8%88%20(%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BB%80%E0%BA%88%E0%BA%BB%E0%BB%89%E0%BA%B2%E0%BB%80%E0%BA%9A%E0%BA%B5%E0%BA%94%E0%BB%83%E0%BA%88)%20Taiy%20Akard",
     "mood": "love",
     "tags": [
@@ -51016,9 +51014,9 @@ const SONGS = [
   {
     "id": 2021,
     "title": "ปาฏิหาริย์ (ປາຕິຫານ)",
-    "artist": "Taiy Akard",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000013afb239/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9B%E0%B8%B2%E0%B8%8F%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%B4",
-    "previewUrl": "",
+    "artist": "ป๊อบ ปองกูล",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/addc2971b09b313e0370b34b8a1647eb/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/d/9/f/0/d9fd10603fbd7fbd826f78554d44e3c7.mp3?hdnea=exp=1792162150~acl=/api/1/1/d/9/f/0/d9fd10603fbd7fbd826f78554d44e3c7.mp3*~data=user_id=0,application_id=42~hmac=4553e90690bdab7c7490dea6a1509b64b52761d2a91951cdbf738afe7ec18da1",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9B%E0%B8%B2%E0%B8%8F%E0%B8%B4%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%B4%E0%B8%A2%E0%B9%8C%20(%E0%BA%9B%E0%BA%B2%E0%BA%95%E0%BA%B4%E0%BA%AB%E0%BA%B2%E0%BA%99)%20Taiy%20Akard",
     "mood": "epic",
     "tags": [
@@ -51041,9 +51039,9 @@ const SONGS = [
   {
     "id": 2022,
     "title": "ขอเวลาลืม (ຂໍເວລາລືມ)",
-    "artist": "Taiy Akard",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002480ed09/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%82%E0%B8%AD%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%A5%E0%B8%B7",
-    "previewUrl": "",
+    "artist": "Aun Feeble Hart",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/fab8d4e48a9169ed6bf5fbfe477538fa/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/9/6/2/0/962cd6ff9975c90166cac61976b1b3ee.mp3?hdnea=exp=1792162152~acl=/api/1/1/9/6/2/0/962cd6ff9975c90166cac61976b1b3ee.mp3*~data=user_id=0,application_id=42~hmac=8e3e3019842de5b9926db7f4229786f127d5cbff286c82ae1e44d0a7164f70f2",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%82%E0%B8%AD%E0%B9%80%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%A5%E0%B8%B7%E0%B8%A1%20(%E0%BA%82%E0%BB%8D%E0%BB%80%E0%BA%A7%E0%BA%A5%E0%BA%B2%E0%BA%A5%E0%BA%B7%E0%BA%A1)%20Taiy%20Akard",
     "mood": "sad",
     "tags": [
@@ -51066,9 +51064,9 @@ const SONGS = [
   {
     "id": 2023,
     "title": "คิดฮอด (ຄິດຮອດ)",
-    "artist": "Aluna",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000072b6b05e/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%AE%E0%B8%AD%E0%B8%94%20(",
-    "previewUrl": "",
+    "artist": "Bodyslam",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/031f534b1332b8171ac2b65f9b3a0f7f/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/4/1/e/0/41eee053a3a1f56df6935ec4799a6aa4.mp3?hdnea=exp=1792162153~acl=/api/1/1/4/1/e/0/41eee053a3a1f56df6935ec4799a6aa4.mp3*~data=user_id=0,application_id=42~hmac=92ff76f9c86a13a60646289a8929b37f6f275089f605f6a122c3e11682dadfba",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%AE%E0%B8%AD%E0%B8%94%20(%E0%BA%84%E0%BA%B4%E0%BA%94%E0%BA%AE%E0%BA%AD%E0%BA%94)%20Aluna",
     "mood": "love",
     "tags": [
@@ -51091,9 +51089,9 @@ const SONGS = [
   {
     "id": 2024,
     "title": "เจ้าอยู่ไส (ເຈົ້າຢູ່ໃສ)",
-    "artist": "Aluna",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000476a7813/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AD%E0%B8%A2%E0%B8%B9%E0%B9%88",
-    "previewUrl": "",
+    "artist": "เคมอส พีอาร์วาย",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a027d27ed55b3de9ccf3e1656b9fedd9/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/e/0/d/0/e0dcb91329f1fd5ee817fc01a0788685.mp3?hdnea=exp=1792162154~acl=/api/1/1/e/0/d/0/e0dcb91329f1fd5ee817fc01a0788685.mp3*~data=user_id=0,application_id=42~hmac=598541cf4460987c1729fd10087622648884684996124e11ef83c7bfeb816d17",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%AD%E0%B8%A2%E0%B8%B9%E0%B9%88%E0%B9%84%E0%B8%AA%20(%E0%BB%80%E0%BA%88%E0%BA%BB%E0%BB%89%E0%BA%B2%E0%BA%A2%E0%BA%B9%E0%BB%88%E0%BB%83%E0%BA%AA)%20Aluna",
     "mood": "sad",
     "tags": [
@@ -51116,9 +51114,9 @@ const SONGS = [
   {
     "id": 2025,
     "title": "โชคดีเด้อ (ໂຊກດີເດີ້)",
-    "artist": "Aluna",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000493bf4b9/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%82%E0%B8%8A%E0%B8%84%E0%B8%94%E0%B8%B5%E0%B9%80%E0%B8%94%E0%B9%89",
-    "previewUrl": "",
+    "artist": "ตูนจักรภัทร",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/01a163971e6e9babd0bdff82cd4632b0/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/e/9/3/0/e936bb3f2dbf58a1c8386311f03eba1a.mp3?hdnea=exp=1792162155~acl=/api/1/1/e/9/3/0/e936bb3f2dbf58a1c8386311f03eba1a.mp3*~data=user_id=0,application_id=42~hmac=1ae0e66accdf8d2a5d79cb1e4a095071e8cbb413476b0b049a6b30631beb4294",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%82%E0%B8%8A%E0%B8%84%E0%B8%94%E0%B8%B5%E0%B9%80%E0%B8%94%E0%B9%89%E0%B8%AD%20(%E0%BB%82%E0%BA%8A%E0%BA%81%E0%BA%94%E0%BA%B5%E0%BB%80%E0%BA%94%E0%BA%B5%E0%BB%89)%20Aluna",
     "mood": "chill",
     "tags": [
@@ -51142,8 +51140,8 @@ const SONGS = [
     "id": 2026,
     "title": "สาวลาวเวียง (ສາວລາວວຽງ)",
     "artist": "Aluna",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000151c856a/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%A7",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%A7%E0%B8%B5%E0%B8%A2%E0%B8%87%20(%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BA%A5%E0%BA%B2%E0%BA%A7%E0%BA%A7%E0%BA%BD%E0%BA%87)%20Aluna",
     "mood": "happy",
     "tags": [
@@ -51161,14 +51159,14 @@ const SONGS = [
     "reason": "เพลงจังหวะสนุกสนาน \"สาวลาวเวียง (ສາວລາວວຽງ)\" (Aluna) นำความสดใสมีชีวิตชีวามาใส่ในคลิปตัดต่อได้อย่างลงตัว",
     "typoIdea": "ใช้ฟอนต์หนาสีส้มสดใส กระโดดตามจังหวะบีท พร้อมประกายแสงดาววิบวับรอบตัวอักษร",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 2027,
     "title": "กุหลาบเวียงจันทน์ (ກຸຫຼາບວຽງຈັນ)",
-    "artist": "Aluna",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000985f17f/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%81%E0%B8%B8%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%9A%E0%B9%80%E0%B8%A7",
-    "previewUrl": "",
+    "artist": "ปอง ปรีดา",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/47e43eb02c0451b9cf35371e6ab0c85a/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/d/9/8/0/d98de73a98dbb0963025a7494f52ad43.mp3?hdnea=exp=1792162158~acl=/api/1/1/d/9/8/0/d98de73a98dbb0963025a7494f52ad43.mp3*~data=user_id=0,application_id=42~hmac=aece4186b8f1453f0fc42408f77d780d08471bfceb8eb7806ce5a6eea79201e2",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%B8%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%9A%E0%B9%80%E0%B8%A7%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%99%E0%B9%8C%20(%E0%BA%81%E0%BA%B8%E0%BA%AB%E0%BA%BC%E0%BA%B2%E0%BA%9A%E0%BA%A7%E0%BA%BD%E0%BA%87%E0%BA%88%E0%BA%B1%E0%BA%99)%20Aluna",
     "mood": "love",
     "tags": [
@@ -51192,9 +51190,9 @@ const SONGS = [
   {
     "id": 2028,
     "title": "ฮักแท้ (ຮັກແທ້)",
-    "artist": "Nutdao",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004f68bdbc/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B9%81%E0%B8%97%E0%B9%89%20(",
-    "previewUrl": "",
+    "artist": "ปอยฝ้าย มาลัยพร ( เสียงอิสาน ท็อปไลน์ )",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b47ce29dcdefc6693d7f7d80371a701f/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/6/2/e/0/62eb4b4995a4668a30a87aa7d727310f.mp3?hdnea=exp=1792162159~acl=/api/1/1/6/2/e/0/62eb4b4995a4668a30a87aa7d727310f.mp3*~data=user_id=0,application_id=42~hmac=621f98cb35ed37fecb6cea72ff14ae0fbea59ff69512ae03736db9f65c561748",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B9%81%E0%B8%97%E0%B9%89%20(%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BB%81%E0%BA%97%E0%BB%89)%20Nutdao",
     "mood": "love",
     "tags": [
@@ -51218,9 +51216,9 @@ const SONGS = [
   {
     "id": 2029,
     "title": "เจ้าคนเดียว (ເຈົ້າຄົນດຽວ)",
-    "artist": "Nutdao",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000115e5a9e/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%84%E0%B8%99%E0%B9%80%E0%B8%94",
-    "previewUrl": "",
+    "artist": "Timethai",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/6cbc1343650ac662ac09dac4cd85e772/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/1/f/7/0/1f73ab4b561b8cbc581f1700945fa2e4.mp3?hdnea=exp=1792162160~acl=/api/1/1/1/f/7/0/1f73ab4b561b8cbc581f1700945fa2e4.mp3*~data=user_id=0,application_id=42~hmac=06454fac0146e2292a9892fbf7ee2659d9577c9f2734bc72be053cf56979efe4",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B8%84%E0%B8%99%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B8%A7%20(%E0%BB%80%E0%BA%88%E0%BA%BB%E0%BB%89%E0%BA%B2%E0%BA%84%E0%BA%BB%E0%BA%99%E0%BA%94%E0%BA%BD%E0%BA%A7)%20Nutdao",
     "mood": "love",
     "tags": [
@@ -51243,9 +51241,9 @@ const SONGS = [
   {
     "id": 2030,
     "title": "รอคอย (ລໍຄອຍ)",
-    "artist": "Nutdao",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000744bed69/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A3%E0%B8%AD%E0%B8%84%E0%B8%AD%E0%B8%A2%20(%E0%BA%A5",
-    "previewUrl": "",
+    "artist": "Saran",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ccaf6031b10cf0eeabbdd96eb4244ae7/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/5/7/f/0/57f7308a5b4ac084c5b46553af558c12.mp3?hdnea=exp=1792162161~acl=/api/1/1/5/7/f/0/57f7308a5b4ac084c5b46553af558c12.mp3*~data=user_id=0,application_id=42~hmac=1016c192b2d8f26a2ae12ff195966f7d26fcf3a867a6fffac278fcc5da94e712",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A3%E0%B8%AD%E0%B8%84%E0%B8%AD%E0%B8%A2%20(%E0%BA%A5%E0%BB%8D%E0%BA%84%E0%BA%AD%E0%BA%8D)%20Nutdao",
     "mood": "sad",
     "tags": [
@@ -51269,8 +51267,8 @@ const SONGS = [
     "id": 2031,
     "title": "อย่าถิ่มอ้ายเด้อ (ຢ່າຖິ້ມອ້າຍເດີ້)",
     "artist": "Tar A'Pacts",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000003a447fa/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%96%E0%B8%B4%E0%B9%88%E0%B8%A1",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%96%E0%B8%B4%E0%B9%88%E0%B8%A1%E0%B8%AD%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B9%80%E0%B8%94%E0%B9%89%E0%B8%AD%20(%E0%BA%A2%E0%BB%88%E0%BA%B2%E0%BA%96%E0%BA%B4%E0%BB%89%E0%BA%A1%E0%BA%AD%E0%BB%89%E0%BA%B2%E0%BA%8D%E0%BB%80%E0%BA%94%E0%BA%B5%E0%BB%89)%20Tar%20A'Pacts",
     "mood": "sad",
     "tags": [
@@ -51288,14 +51286,14 @@ const SONGS = [
     "reason": "เพลงลาวสุดซึ้ง \"อย่าถิ่มอ้ายเด้อ (ຢ່າຖິ້ມອ້າຍເດີ້)\" (Tar A'Pacts) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
     "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 2032,
     "title": "ฮักหลาย (ຮັກຫຼາຍ)",
-    "artist": "Tar A'Pacts",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000002684c881/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%A2%20",
-    "previewUrl": "",
+    "artist": "Snack Ajcharee",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/7ca109ed9bfe2f4b7842438c2c5ddbed/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/c/6/1/0/c615423beb39051726f3efe8989c6407.mp3?hdnea=exp=1792162164~acl=/api/1/1/c/6/1/0/c615423beb39051726f3efe8989c6407.mp3*~data=user_id=0,application_id=42~hmac=6483eca8fd19ddfe5664b23f318db7491a15b13d3a6b78bd7d3878cd88f059ae",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%A2%20(%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BA%AB%E0%BA%BC%E0%BA%B2%E0%BA%8D)%20Tar%20A'Pacts",
     "mood": "love",
     "tags": [
@@ -51318,9 +51316,9 @@ const SONGS = [
   {
     "id": 2033,
     "title": "น้ำตาชายคา (ນ້ຳຕາຊາຍຄາ)",
-    "artist": "Tar A'Pacts",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005ae60a76/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B8%B2%E0%B8%8A%E0%B8%B2%E0%B8%A2",
-    "previewUrl": "",
+    "artist": "รุ่งเพชร แหลมสิงห์",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/60a5e51d650c9c1995dc7570b5f27b2b/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/9/f/2/0/9f298b3e053908828d2eba076bccbd1a.mp3?hdnea=exp=1792162165~acl=/api/1/1/9/f/2/0/9f298b3e053908828d2eba076bccbd1a.mp3*~data=user_id=0,application_id=42~hmac=978b45efb5a78095e6b2fe6a84ccc6d05a60d781c3cf87253cd78e4439771179",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%95%E0%B8%B2%E0%B8%8A%E0%B8%B2%E0%B8%A2%E0%B8%84%E0%B8%B2%20(%E0%BA%99%E0%BB%89%E0%BA%B3%E0%BA%95%E0%BA%B2%E0%BA%8A%E0%BA%B2%E0%BA%8D%E0%BA%84%E0%BA%B2)%20Tar%20A'Pacts",
     "mood": "sad",
     "tags": [
@@ -51344,9 +51342,9 @@ const SONGS = [
   {
     "id": 2034,
     "title": "คนมีประวัติ (ຄົນມີປະຫວັດ)",
-    "artist": "Sam Intharaphithak",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003b02d658/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%99%E0%B8%A1%E0%B8%B5%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%A7",
-    "previewUrl": "",
+    "artist": "หลวงไก่ อาร์ สยาม",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/82250574b67a75a9ee345aac9b7d4db3/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/e/d/c/0/edc8712f5cba7aebbdf2ee11dcd0ae02.mp3?hdnea=exp=1792162166~acl=/api/1/1/e/d/c/0/edc8712f5cba7aebbdf2ee11dcd0ae02.mp3*~data=user_id=0,application_id=42~hmac=4cae1ada54238db5d20d70b494a7cbb670b1baddd47d7b7df214a1a778a13c40",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%99%E0%B8%A1%E0%B8%B5%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%A7%E0%B8%B1%E0%B8%95%E0%B8%B4%20(%E0%BA%84%E0%BA%BB%E0%BA%99%E0%BA%A1%E0%BA%B5%E0%BA%9B%E0%BA%B0%E0%BA%AB%E0%BA%A7%E0%BA%B1%E0%BA%94)%20Sam%20Intharaphithak",
     "mood": "chill",
     "tags": [
@@ -51370,9 +51368,9 @@ const SONGS = [
   {
     "id": 2035,
     "title": "ฮัก (ຮັກ)",
-    "artist": "Sam Intharaphithak",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000333b4556/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AE%E0%B8%B1%E0%B8%81%20(%E0%BA%AE%E0%BA%B1%E0%BA%81",
-    "previewUrl": "",
+    "artist": "Prang Prangthip",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/1988d65bee77637d9f9f595401108fbf/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/d/1/5/0/d152e4e755a7dd373b9b1d86ca925812.mp3?hdnea=exp=1792162167~acl=/api/1/1/d/1/5/0/d152e4e755a7dd373b9b1d86ca925812.mp3*~data=user_id=0,application_id=42~hmac=03e9c057612ecd50aab2e2219d80bdea6c0abea253da4f3383db509ecaf704c9",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AE%E0%B8%B1%E0%B8%81%20(%E0%BA%AE%E0%BA%B1%E0%BA%81)%20Sam%20Intharaphithak",
     "mood": "love",
     "tags": [
@@ -51395,9 +51393,9 @@ const SONGS = [
   {
     "id": 2036,
     "title": "เพลงรัก (ເພງຮັກ)",
-    "artist": "Sam Intharaphithak",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005b5985ae/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81%20",
-    "previewUrl": "",
+    "artist": "Gemini",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/121c578d68479a5a3796d1fa49090c3f/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/3/7/c/0/37c2a4143d69a1e9ccb61e558c4a39bb.mp3?hdnea=exp=1792162168~acl=/api/1/1/3/7/c/0/37c2a4143d69a1e9ccb61e558c4a39bb.mp3*~data=user_id=0,application_id=42~hmac=844d9d4d2cfcb5cfe97f3ca96dc3d1cb7e5ce5cbad5cd96e454bb50dcfa82cd4",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%A3%E0%B8%B1%E0%B8%81%20(%E0%BB%80%E0%BA%9E%E0%BA%87%E0%BA%AE%E0%BA%B1%E0%BA%81)%20Sam%20Intharaphithak",
     "mood": "love",
     "tags": [
@@ -51421,9 +51419,9 @@ const SONGS = [
   {
     "id": 2037,
     "title": "คิดถึงเสมอ (ຄິດຮອດສະເໝີ)",
-    "artist": "Sam Intharaphithak",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006e965a22/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%96%E0%B8%B6%E0%B8%87%E0%B9%80%E0%B8%AA",
-    "previewUrl": "",
+    "artist": "Lil Tan",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/51140a825263c6a0d4213f3dcbe76c90/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/3/9/a/0/39a590c2bf2f62d7be4c0245f3dcb682.mp3?hdnea=exp=1792162169~acl=/api/1/1/3/9/a/0/39a590c2bf2f62d7be4c0245f3dcb682.mp3*~data=user_id=0,application_id=42~hmac=eb2a3bc9a5820fe94c2642d5499d66b7c3d551c3088878e0e814cf1dd8619dd3",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%96%E0%B8%B6%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%A1%E0%B8%AD%20(%E0%BA%84%E0%BA%B4%E0%BA%94%E0%BA%AE%E0%BA%AD%E0%BA%94%E0%BA%AA%E0%BA%B0%E0%BB%80%E0%BB%9D%E0%BA%B5)%20Sam%20Intharaphithak",
     "mood": "love",
     "tags": [
@@ -51447,9 +51445,9 @@ const SONGS = [
   {
     "id": 2038,
     "title": "กุหลาบปากซัน (ກຸຫຼາບປາກຊັນ)",
-    "artist": "ก. วิเสส",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000012e2e9e7/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%81%E0%B8%B8%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%9A%E0%B8%9B%E0%B8%B2",
-    "previewUrl": "",
+    "artist": "คนด่านเกวียน",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/f764eefbeece5a400c0ab256274e0165/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/3/5/9/0/359046be4397f9637ce979918976ba54.mp3?hdnea=exp=1792162170~acl=/api/1/1/3/5/9/0/359046be4397f9637ce979918976ba54.mp3*~data=user_id=0,application_id=42~hmac=1d0d13d52e9be0e55f90d5a1a8d3a52f8119c3828044d57976a606e67fc984c2",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%B8%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%9A%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B8%8B%E0%B8%B1%E0%B8%99%20(%E0%BA%81%E0%BA%B8%E0%BA%AB%E0%BA%BC%E0%BA%B2%E0%BA%9A%E0%BA%9B%E0%BA%B2%E0%BA%81%E0%BA%8A%E0%BA%B1%E0%BA%99)%20%E0%B8%81.%20%E0%B8%A7%E0%B8%B4%E0%B9%80%E0%B8%AA%E0%B8%AA",
     "mood": "love",
     "tags": [
@@ -51473,9 +51471,9 @@ const SONGS = [
   {
     "id": 2039,
     "title": "ดวงจำปา (ດວງຈຳປາ)",
-    "artist": "ศิลปินแห่งชาติลาว",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000006fe5772/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%B3%E0%B8%9B%E0%B8%B2%20",
-    "previewUrl": "",
+    "artist": "นิก กอไผ่",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/5d68436611701171044362a9d6d411f0/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/2/7/1/0/2713c653bc1d4f115116cddb82374d87.mp3?hdnea=exp=1792162172~acl=/api/1/1/2/7/1/0/2713c653bc1d4f115116cddb82374d87.mp3*~data=user_id=0,application_id=42~hmac=42f6b75a3d1bfc91470f2d6add63284c23686094d2cf257da08d4895d8dec62d",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%A7%E0%B8%87%E0%B8%88%E0%B8%B3%E0%B8%9B%E0%B8%B2%20(%E0%BA%94%E0%BA%A7%E0%BA%87%E0%BA%88%E0%BA%B3%E0%BA%9B%E0%BA%B2)%20%E0%B8%A8%E0%B8%B4%E0%B8%A5%E0%B8%9B%E0%B8%B4%E0%B8%99%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B8%8A%E0%B8%B2%E0%B8%95%E0%B8%B4%E0%B8%A5%E0%B8%B2%E0%B8%A7",
     "mood": "chill",
     "tags": [
@@ -51499,9 +51497,9 @@ const SONGS = [
   {
     "id": 2040,
     "title": "สาวดงดอกไม้ (ສາວດົງດອກໄມ້)",
-    "artist": "แสงสุรีย์",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000535bd49e/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%94%E0%B8%87%E0%B8%94%E0%B8%AD%E0%B8%81",
-    "previewUrl": "",
+    "artist": "จิมมี้ สิดทิพน",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/2aa1bdadfdb20cf4635ceb4b0c1c1446/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/2/c/0/0/2c0ddb6b82998ad9a4332419329162bf.mp3?hdnea=exp=1792162173~acl=/api/1/1/2/c/0/0/2c0ddb6b82998ad9a4332419329162bf.mp3*~data=user_id=0,application_id=42~hmac=88711266cd95788c1ae3bb441d1b577e12eebe70e5a74cc561a241c5dd3faedb",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%94%E0%B8%87%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B9%84%E0%B8%A1%E0%B9%89%20(%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BA%94%E0%BA%BB%E0%BA%87%E0%BA%94%E0%BA%AD%E0%BA%81%E0%BB%84%E0%BA%A1%E0%BB%89)%20%E0%B9%81%E0%B8%AA%E0%B8%87%E0%B8%AA%E0%B8%B8%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B9%8C",
     "mood": "happy",
     "tags": [
@@ -51525,9 +51523,9 @@ const SONGS = [
   {
     "id": 2041,
     "title": "สาวบ่อแก้ว (ສາວບໍ່ແກ້ວ)",
-    "artist": "บัวเงิน ซาพูวง",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000345e116b/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%9A%E0%B9%88%E0%B8%AD%E0%B9%81%E0%B8%81",
-    "previewUrl": "",
+    "artist": "Sengdaovy",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d5b77208e64e3b83d6c697bf01c56836/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/0/b/2/0/0b2520a4f5dc9929a6010edc45b06b3f.mp3?hdnea=exp=1792162174~acl=/api/1/1/0/b/2/0/0b2520a4f5dc9929a6010edc45b06b3f.mp3*~data=user_id=0,application_id=42~hmac=11bc89c6d1cb82e25def975ef3fe1b8674970377fdef867c798d2c920b53f3e8",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%9A%E0%B9%88%E0%B8%AD%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7%20(%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BA%9A%E0%BB%8D%E0%BB%88%E0%BB%81%E0%BA%81%E0%BB%89%E0%BA%A7)%20%E0%B8%9A%E0%B8%B1%E0%B8%A7%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99%20%E0%B8%8B%E0%B8%B2%E0%B8%9E%E0%B8%B9%E0%B8%A7%E0%B8%87",
     "mood": "love",
     "tags": [
@@ -51552,8 +51550,8 @@ const SONGS = [
     "id": 2042,
     "title": "สาวหลวงพระบาง (ສາວຫຼວງພະບາງ)",
     "artist": "สุลิยา",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007525b4dc/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B8%9E",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%AB%E0%B8%A5%E0%B8%A7%E0%B8%87%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B2%E0%B8%87%20(%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BA%AB%E0%BA%BC%E0%BA%A7%E0%BA%87%E0%BA%9E%E0%BA%B0%E0%BA%9A%E0%BA%B2%E0%BA%87)%20%E0%B8%AA%E0%B8%B8%E0%B8%A5%E0%B8%B4%E0%B8%A2%E0%B8%B2",
     "mood": "chill",
     "tags": [
@@ -51571,14 +51569,14 @@ const SONGS = [
     "reason": "เสียงเพลงสบายๆ สไตล์ฝั่งโขง \"สาวหลวงพระบาง (ສາວຫຼວງພະບາງ)\" จาก สุลิยา ให้มู้ดผ่อนคลาย เหมาะกับคลิปไทโปแนว Lo-Fi ธรรมชาติ",
     "typoIdea": "ใช้ฟอนต์มินิมอลโปร่งสบาย สีเขียวใบตองหรือฟ้าคราม ค่อยๆ เลื่อนช้าๆ ดุจระลอกคลื่นแม่น้ำโขง",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 2043,
     "title": "อ้ายฮักเจ้าแฮง (ອ້າຍຮັກເຈົ້າແຮງ)",
-    "artist": "เต๊ะ ตระกูลตอ ft. ลาว",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000036c1e35f/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AD%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B9%80",
-    "previewUrl": "",
+    "artist": "Supoj Thitiprasert",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/de32dc6a968956f8c6d9e4dd97421ff4/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/1/6/b/0/16be0524c505983044e911d83b3b026b.mp3?hdnea=exp=1792162177~acl=/api/1/1/1/6/b/0/16be0524c505983044e911d83b3b026b.mp3*~data=user_id=0,application_id=42~hmac=7f4183a5a315e6dc81d214c2d31089f49bfce053794065f5adecb0f79fba1a99",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B9%89%E0%B8%B2%E0%B8%A2%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%81%E0%B8%AE%E0%B8%87%20(%E0%BA%AD%E0%BB%89%E0%BA%B2%E0%BA%8D%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BB%80%E0%BA%88%E0%BA%BB%E0%BB%89%E0%BA%B2%E0%BB%81%E0%BA%AE%E0%BA%87)%20%E0%B9%80%E0%B8%95%E0%B9%8A%E0%B8%B0%20%E0%B8%95%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B9%E0%B8%A5%E0%B8%95%E0%B8%AD%20ft.%20%E0%B8%A5%E0%B8%B2%E0%B8%A7",
     "mood": "love",
     "tags": [
@@ -51603,8 +51601,8 @@ const SONGS = [
     "id": 2044,
     "title": "เซิ้งบั้งไฟพญานาค (ເຊິ້ງບັ້ງໄຟ)",
     "artist": "หมอลำลาวคณะใหญ่",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000030220ae9/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%8B%E0%B8%B4%E0%B9%89%E0%B8%87%E0%B8%9A%E0%B8%B1%E0%B9%89",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%8B%E0%B8%B4%E0%B9%89%E0%B8%87%E0%B8%9A%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%84%E0%B8%9F%E0%B8%9E%E0%B8%8D%E0%B8%B2%E0%B8%99%E0%B8%B2%E0%B8%84%20(%E0%BB%80%E0%BA%8A%E0%BA%B4%E0%BB%89%E0%BA%87%E0%BA%9A%E0%BA%B1%E0%BB%89%E0%BA%87%E0%BB%84%E0%BA%9F)%20%E0%B8%AB%E0%B8%A1%E0%B8%AD%E0%B8%A5%E0%B8%B3%E0%B8%A5%E0%B8%B2%E0%B8%A7%E0%B8%84%E0%B8%93%E0%B8%B0%E0%B9%83%E0%B8%AB%E0%B8%8D%E0%B9%88",
     "mood": "hype",
     "tags": [
@@ -51623,14 +51621,14 @@ const SONGS = [
     "reason": "บีทเดือดสะใจ \"เซิ้งบั้งไฟพญานาค (ເຊິ້ງບັ້ງໄຟ)\" โดย หมอลำลาวคณะใหญ่ ท่อนฮุกกระแทกอารมณ์ ปลุกพลังให้คลิปอนิเมะแอกชันได้อย่างยอดเยี่ยม",
     "typoIdea": "ใช้ฟอนต์ Impact สีแดงเพลิง กระตุกสั่นตามจังหวะกลองและเบส มีเส้นไฟนีออนพุ่งผ่านตัวหนังสือ",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 2045,
     "title": "ลำตังหวาย (ລຳຕັງຫວาย)",
-    "artist": "ศิลปินพื้นบ้านลาวใต้",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000000fd5a94c/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A5%E0%B8%B3%E0%B8%95%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B2",
-    "previewUrl": "",
+    "artist": "แลนดี้ สีสุพอน",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/69033b0c8e23e329c0257abcaa8c5403/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/c/3/0/0/c30ccd6b641afbf851d86e4abf1a1431.mp3?hdnea=exp=1792162179~acl=/api/1/1/c/3/0/0/c30ccd6b641afbf851d86e4abf1a1431.mp3*~data=user_id=0,application_id=42~hmac=a022bf6ea28c250478f12d67d4f1959dacb4a29964fae8e6bd4db46334642d00",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A5%E0%B8%B3%E0%B8%95%E0%B8%B1%E0%B8%87%E0%B8%AB%E0%B8%A7%E0%B8%B2%E0%B8%A2%20(%E0%BA%A5%E0%BA%B3%E0%BA%95%E0%BA%B1%E0%BA%87%E0%BA%AB%E0%BA%A7%E0%B8%B2%E0%B8%A2)%20%E0%B8%A8%E0%B8%B4%E0%B8%A5%E0%B8%9B%E0%B8%B4%E0%B8%99%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%A5%E0%B8%B2%E0%B8%A7%E0%B9%83%E0%B8%95%E0%B9%89",
     "mood": "happy",
     "tags": [
@@ -51653,9 +51651,9 @@ const SONGS = [
   {
     "id": 2046,
     "title": "สายตาหลอกกันไม่ได้ (Lao Ver.)",
-    "artist": "ติ้งหน่อง & ผองเพื่อน",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000074f14bf0/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%95%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%AD",
-    "previewUrl": "",
+    "artist": "Ink Waruntorn",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b5ef41fba6f2b066b598b4833fef856b/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/f/1/3/0/f134f1a0d01fad78b183a5c17eb84510.mp3?hdnea=exp=1792162180~acl=/api/1/1/f/1/3/0/f134f1a0d01fad78b183a5c17eb84510.mp3*~data=user_id=0,application_id=42~hmac=3e429cb21c38734984087a5f9e289d3074f6a20391297f457b27dd6671e85f25",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%95%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%AD%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%20(Lao%20Ver.)%20%E0%B8%95%E0%B8%B4%E0%B9%89%E0%B8%87%E0%B8%AB%E0%B8%99%E0%B9%88%E0%B8%AD%E0%B8%87%20%26%20%E0%B8%9C%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%9E%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%99",
     "mood": "love",
     "tags": [
@@ -51679,8 +51677,8 @@ const SONGS = [
     "id": 2047,
     "title": "กลิ่นจำปา (ກິ່ນຈຳປາ)",
     "artist": "วงดนตรีร่วมสมัยเวียงจันทน์",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000142ed89c/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%81%E0%B8%A5%E0%B8%B4%E0%B9%88%E0%B8%99%E0%B8%88%E0%B8%B3%E0%B8%9B",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%A5%E0%B8%B4%E0%B9%88%E0%B8%99%E0%B8%88%E0%B8%B3%E0%B8%9B%E0%B8%B2%20(%E0%BA%81%E0%BA%B4%E0%BB%88%E0%BA%99%E0%BA%88%E0%BA%B3%E0%BA%9B%E0%BA%B2)%20%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B5%E0%B8%A3%E0%B9%88%E0%B8%A7%E0%B8%A1%E0%B8%AA%E0%B8%A1%E0%B8%B1%E0%B8%A2%E0%B9%80%E0%B8%A7%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%99%E0%B9%8C",
     "mood": "chill",
     "tags": [
@@ -51698,14 +51696,14 @@ const SONGS = [
     "reason": "เสียงเพลงสบายๆ สไตล์ฝั่งโขง \"กลิ่นจำปา (ກິ່ນຈຳປາ)\" จาก วงดนตรีร่วมสมัยเวียงจันทน์ ให้มู้ดผ่อนคลาย เหมาะกับคลิปไทโปแนว Lo-Fi ธรรมชาติ",
     "typoIdea": "ใช้ฟอนต์มินิมอลโปร่งสบาย สีเขียวใบตองหรือฟ้าคราม ค่อยๆ เลื่อนช้าๆ ดุจระลอกคลื่นแม่น้ำโขง",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 2048,
     "title": "คิดฮอดบ้านเกิด (ຄິດຮອດບ້ານເກີດ)",
-    "artist": "วงดอกจำปา",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003f292318/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%AE%E0%B8%AD%E0%B8%94%E0%B8%9A%E0%B9%89",
-    "previewUrl": "",
+    "artist": "มงคล อุทก",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/928718327aec20004e2d7be6da3372c8/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/6/f/8/0/6f81e2c6e232702cdf3c1ba5c60ea04f.mp3?hdnea=exp=1792162182~acl=/api/1/1/6/f/8/0/6f81e2c6e232702cdf3c1ba5c60ea04f.mp3*~data=user_id=0,application_id=42~hmac=33d4d655a64c46453594f6c4603f1728e1dee224583f5b4b7bd2b2d5ef35b685",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%AE%E0%B8%AD%E0%B8%94%E0%B8%9A%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B9%80%E0%B8%81%E0%B8%B4%E0%B8%94%20(%E0%BA%84%E0%BA%B4%E0%BA%94%E0%BA%AE%E0%BA%AD%E0%BA%94%E0%BA%9A%E0%BB%89%E0%BA%B2%E0%BA%99%E0%BB%80%E0%BA%81%E0%BA%B5%E0%BA%94)%20%E0%B8%A7%E0%B8%87%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B8%88%E0%B8%B3%E0%B8%9B%E0%B8%B2",
     "mood": "sad",
     "tags": [
@@ -51729,8 +51727,8 @@ const SONGS = [
     "id": 2049,
     "title": "สัจจะลูกผู้ชาย (ສັດຈະລູກຜູ້ຊາຍ)",
     "artist": "ไก่ ปากเซ",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007c773dc2/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B1%E0%B8%88%E0%B8%88%E0%B8%B0%E0%B8%A5%E0%B8%B9%E0%B8%81",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B1%E0%B8%88%E0%B8%88%E0%B8%B0%E0%B8%A5%E0%B8%B9%E0%B8%81%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B8%8A%E0%B8%B2%E0%B8%A2%20(%E0%BA%AA%E0%BA%B1%E0%BA%94%E0%BA%88%E0%BA%B0%E0%BA%A5%E0%BA%B9%E0%BA%81%E0%BA%9C%E0%BA%B9%E0%BB%89%E0%BA%8A%E0%BA%B2%E0%BA%8D)%20%E0%B9%84%E0%B8%81%E0%B9%88%20%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B9%80%E0%B8%8B",
     "mood": "hype",
     "tags": [
@@ -51749,14 +51747,14 @@ const SONGS = [
     "reason": "บีทเดือดสะใจ \"สัจจะลูกผู้ชาย (ສັດຈະລູກຜູ້ຊາຍ)\" โดย ไก่ ปากเซ ท่อนฮุกกระแทกอารมณ์ ปลุกพลังให้คลิปอนิเมะแอกชันได้อย่างยอดเยี่ยม",
     "typoIdea": "ใช้ฟอนต์ Impact สีแดงเพลิง กระตุกสั่นตามจังหวะกลองและเบส มีเส้นไฟนีออนพุ่งผ่านตัวหนังสือ",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 2050,
     "title": "คืนเดือนหงายริมของ (ຄືນເດືອນຫງາຍ)",
     "artist": "ดาวเรือง",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000056d43805/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B9%80%E0%B8%94%E0%B8%B7%E0%B8%AD%E0%B8%99",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B9%80%E0%B8%94%E0%B8%B7%E0%B8%AD%E0%B8%99%E0%B8%AB%E0%B8%87%E0%B8%B2%E0%B8%A2%E0%B8%A3%E0%B8%B4%E0%B8%A1%E0%B8%82%E0%B8%AD%E0%B8%87%20(%E0%BA%84%E0%BA%B7%E0%BA%99%E0%BB%80%E0%BA%94%E0%BA%B7%E0%BA%AD%E0%BA%99%E0%BA%AB%E0%BA%87%E0%BA%B2%E0%BA%8D)%20%E0%B8%94%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B8%87",
     "mood": "chill",
     "tags": [
@@ -51774,14 +51772,14 @@ const SONGS = [
     "reason": "เสียงเพลงสบายๆ สไตล์ฝั่งโขง \"คืนเดือนหงายริมของ (ຄືນເດືອນຫງາຍ)\" จาก ดาวเรือง ให้มู้ดผ่อนคลาย เหมาะกับคลิปไทโปแนว Lo-Fi ธรรมชาติ",
     "typoIdea": "ใช้ฟอนต์มินิมอลโปร่งสบาย สีเขียวใบตองหรือฟ้าคราม ค่อยๆ เลื่อนช้าๆ ดุจระลอกคลื่นแม่น้ำโขง",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
   },
   {
     "id": 2051,
     "title": "ฮักสาวเซโน (ຮັກສາວເຊໂນ)",
-    "artist": "ท้าววันดี",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000008ef1953/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%8B",
-    "previewUrl": "",
+    "artist": "ไมค์ ภิรมย์พร",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/7491b01ff4b2f5f8107ff0860b236ee8/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/9/e/9/0/9e94bb2b67bc84335b1d87133a613686.mp3?hdnea=exp=1792162186~acl=/api/1/1/9/e/9/0/9e94bb2b67bc84335b1d87133a613686.mp3*~data=user_id=0,application_id=42~hmac=66acc54ce5d4768b45263ada950d746a6175850132031484b2f3cd769b27d67b",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%8B%E0%B9%82%E0%B8%99%20(%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BB%80%E0%BA%8A%E0%BB%82%E0%BA%99)%20%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B8%94%E0%B8%B5",
     "mood": "love",
     "tags": [
@@ -51805,9 +51803,9 @@ const SONGS = [
   {
     "id": 2052,
     "title": "เวียงจันทน์เวียงใจ (ວຽງຈັນວຽງໃຈ)",
-    "artist": "วงเสียงพิณลาว",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007df8ecf8/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%A7%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%99",
-    "previewUrl": "",
+    "artist": "ชัวร์ชะชะช่า",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/52124f0ffce45d261afaaeb6f86b9eae/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/5/c/8/0/5c8db6fa328da55aae2fa93a5e82073e.mp3?hdnea=exp=1792162187~acl=/api/1/1/5/c/8/0/5c8db6fa328da55aae2fa93a5e82073e.mp3*~data=user_id=0,application_id=42~hmac=4ecdac1536900c41e2ac38671610deb799bc112e5226a85ad53d9971a1b90003",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A7%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%99%E0%B9%8C%E0%B9%80%E0%B8%A7%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%83%E0%B8%88%20(%E0%BA%A7%E0%BA%BD%E0%BA%87%E0%BA%88%E0%BA%B1%E0%BA%99%E0%BA%A7%E0%BA%BD%E0%BA%87%E0%BB%83%E0%BA%88)%20%E0%B8%A7%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%9E%E0%B8%B4%E0%B8%93%E0%B8%A5%E0%B8%B2%E0%B8%A7",
     "mood": "love",
     "tags": [
@@ -51831,8 +51829,8 @@ const SONGS = [
     "id": 2053,
     "title": "เสียงแคนแดนลาว (ສຽງແຄນແດນลาວ)",
     "artist": "หมอแคนลาว",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000006c80b416/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%81%E0%B8%84%E0%B8%99",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B9%81%E0%B8%84%E0%B8%99%E0%B9%81%E0%B8%94%E0%B8%99%E0%B8%A5%E0%B8%B2%E0%B8%A7%20(%E0%BA%AA%E0%BA%BD%E0%BA%87%E0%BB%81%E0%BA%84%E0%BA%99%E0%BB%81%E0%BA%94%E0%BA%99%E0%B8%A5%E0%B8%B2%E0%BA%A7)%20%E0%B8%AB%E0%B8%A1%E0%B8%AD%E0%B9%81%E0%B8%84%E0%B8%99%E0%B8%A5%E0%B8%B2%E0%B8%A7",
     "mood": "happy",
     "tags": [
@@ -51851,14 +51849,14 @@ const SONGS = [
     "reason": "เพลงจังหวะสนุกสนาน \"เสียงแคนแดนลาว (ສຽງແຄນແດນลาວ)\" (หมอแคนลาว) นำความสดใสมีชีวิตชีวามาใส่ในคลิปตัดต่อได้อย่างลงตัว",
     "typoIdea": "ใช้ฟอนต์หนาสีส้มสดใส กระโดดตามจังหวะบีท พร้อมประกายแสงดาววิบวับรอบตัวอักษร",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 2054,
     "title": "สาวสะหวันเขต (ສາວສະຫວັນນະເຂດ)",
     "artist": "บัวเงิน",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000494d4729/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%AA%E0%B8%B0%E0%B8%AB%E0%B8%A7%E0%B8%B1",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%AA%E0%B8%B0%E0%B8%AB%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%82%E0%B8%95%20(%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BA%AA%E0%BA%B0%E0%BA%AB%E0%BA%A7%E0%BA%B1%E0%BA%99%E0%BA%99%E0%BA%B0%E0%BB%80%E0%BA%82%E0%BA%94)%20%E0%B8%9A%E0%B8%B1%E0%B8%A7%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99",
     "mood": "love",
     "tags": [
@@ -51876,14 +51874,14 @@ const SONGS = [
     "reason": "เพลงหวานละมุน \"สาวสะหวันเขต (ສາວສະຫວັນນະເຂດ)\" โดย บัวเงิน เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 2055,
     "title": "สาวปากเซ (ສາວປາກເຊ)",
     "artist": "ไก่ แก่นสาร",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000020e62941/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B9%80%E0%B8%8B",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/00/f3/6100f3a3-619f-69fd-658b-560b78b15a29/888332907217.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%9B%E0%B8%B2%E0%B8%81%E0%B9%80%E0%B8%8B%20(%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BA%9B%E0%BA%B2%E0%BA%81%E0%BB%80%E0%BA%8A)%20%E0%B9%84%E0%B8%81%E0%B9%88%20%E0%B9%81%E0%B8%81%E0%B9%88%E0%B8%99%E0%B8%AA%E0%B8%B2%E0%B8%A3",
     "mood": "happy",
     "tags": [
@@ -51901,14 +51899,14 @@ const SONGS = [
     "reason": "เพลงจังหวะสนุกสนาน \"สาวปากเซ (ສາວປາກເຊ)\" (ไก่ แก่นสาร) นำความสดใสมีชีวิตชีวามาใส่ในคลิปตัดต่อได้อย่างลงตัว",
     "typoIdea": "ใช้ฟอนต์หนาสีส้มสดใส กระโดดตามจังหวะบีท พร้อมประกายแสงดาววิบวับรอบตัวอักษร",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
   },
   {
     "id": 2056,
     "title": "กุหลาบแดงแห่งเวียงจันทน์ (ກຸຫຼາບແດງ)",
     "artist": "สมจิต",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000004a7194c4/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%81%E0%B8%B8%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%9A%E0%B9%81%E0%B8%94",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%B8%E0%B8%AB%E0%B8%A5%E0%B8%B2%E0%B8%9A%E0%B9%81%E0%B8%94%E0%B8%87%E0%B9%81%E0%B8%AB%E0%B9%88%E0%B8%87%E0%B9%80%E0%B8%A7%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%99%E0%B9%8C%20(%E0%BA%81%E0%BA%B8%E0%BA%AB%E0%BA%BC%E0%BA%B2%E0%BA%9A%E0%BB%81%E0%BA%94%E0%BA%87)%20%E0%B8%AA%E0%B8%A1%E0%B8%88%E0%B8%B4%E0%B8%95",
     "mood": "love",
     "tags": [
@@ -51927,14 +51925,14 @@ const SONGS = [
     "reason": "เพลงหวานละมุน \"กุหลาบแดงแห่งเวียงจันทน์ (ກຸຫຼາບແດງ)\" โดย สมจิต เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a"
   },
   {
     "id": 2057,
     "title": "มนต์รักแม่น้ำโขง (ມົນຮັກແມ່ນ້ຳຂອງ)",
     "artist": "ศิลปินสองฝั่งโขง",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000003cf42072/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%A1%E0%B8%99%E0%B8%95%E0%B9%8C%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%81",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/24/ff/5324ff49-9bb2-46ad-6a00-8502cb671389/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A1%E0%B8%99%E0%B8%95%E0%B9%8C%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B9%81%E0%B8%A1%E0%B9%88%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B9%82%E0%B8%82%E0%B8%87%20(%E0%BA%A1%E0%BA%BB%E0%BA%99%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BB%81%E0%BA%A1%E0%BB%88%E0%BA%99%E0%BB%89%E0%BA%B3%E0%BA%82%E0%BA%AD%E0%BA%87)%20%E0%B8%A8%E0%B8%B4%E0%B8%A5%E0%B8%9B%E0%B8%B4%E0%B8%99%E0%B8%AA%E0%B8%AD%E0%B8%87%E0%B8%9D%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B9%82%E0%B8%82%E0%B8%87",
     "mood": "love",
     "tags": [
@@ -51952,14 +51950,14 @@ const SONGS = [
     "reason": "เพลงหวานละมุน \"มนต์รักแม่น้ำโขง (ມົນຮັກແມ່ນ້ຳຂອງ)\" โดย ศิลปินสองฝั่งโขง เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 2058,
     "title": "สาวน้ำงึม (ສາວນ້ຳງື່ມ)",
     "artist": "ป๊อปลาวรุ่นใหม่",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/000000000000000000000000538484b4/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%87%E0%B8%B6",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4d/65/c8/4d65c86c-7eee-dec4-6eb4-f25c64d5b92f/888332981538.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%87%E0%B8%B6%E0%B8%A1%20(%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BA%99%E0%BB%89%E0%BA%B3%E0%BA%87%E0%BA%B7%E0%BB%88%E0%BA%A1)%20%E0%B8%9B%E0%B9%8A%E0%B8%AD%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%A7%E0%B8%A3%E0%B8%B8%E0%B9%88%E0%B8%99%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88",
     "mood": "chill",
     "tags": [
@@ -51978,14 +51976,14 @@ const SONGS = [
     "reason": "เสียงเพลงสบายๆ สไตล์ฝั่งโขง \"สาวน้ำงึม (ສາວນ້ຳງື່ມ)\" จาก ป๊อปลาวรุ่นใหม่ ให้มู้ดผ่อนคลาย เหมาะกับคลิปไทโปแนว Lo-Fi ธรรมชาติ",
     "typoIdea": "ใช้ฟอนต์มินิมอลโปร่งสบาย สีเขียวใบตองหรือฟ้าคราม ค่อยๆ เลื่อนช้าๆ ดุจระลอกคลื่นแม่น้ำโขง",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 2059,
     "title": "ฮักสาวเมืองโพน (ຮັກສາວເມືອງໂພນ)",
     "artist": "ท้าวแก้ว",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000075eec6aa/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%A1",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/25UMGIM80861.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%9E%E0%B8%99%20(%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BB%80%E0%BA%A1%E0%BA%B7%E0%BA%AD%E0%BA%87%E0%BB%82%E0%BA%9E%E0%BA%99)%20%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%A7%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7",
     "mood": "love",
     "tags": [
@@ -52004,14 +52002,14 @@ const SONGS = [
     "reason": "เพลงหวานละมุน \"ฮักสาวเมืองโพน (ຮັກສາວເມືອງໂພນ)\" โดย ท้าวแก้ว เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   },
   {
     "id": 2060,
     "title": "บ่าวลาวสาวไทย (ບ່າວລາວສາວໄທ)",
     "artist": "ศิลปินมิตรภาพสองฝั่ง",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000005a8d7892/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9A%E0%B9%88%E0%B8%B2%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%A7%E0%B8%AA",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/888332908993.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9A%E0%B9%88%E0%B8%B2%E0%B8%A7%E0%B8%A5%E0%B8%B2%E0%B8%A7%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B9%84%E0%B8%97%E0%B8%A2%20(%E0%BA%9A%E0%BB%88%E0%BA%B2%E0%BA%A7%E0%BA%A5%E0%BA%B2%E0%BA%A7%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BB%84%E0%BA%97)%20%E0%B8%A8%E0%B8%B4%E0%B8%A5%E0%B8%9B%E0%B8%B4%E0%B8%99%E0%B8%A1%E0%B8%B4%E0%B8%95%E0%B8%A3%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%AA%E0%B8%AD%E0%B8%87%E0%B8%9D%E0%B8%B1%E0%B9%88%E0%B8%87",
     "mood": "happy",
     "tags": [
@@ -52029,14 +52027,14 @@ const SONGS = [
     "reason": "เพลงจังหวะสนุกสนาน \"บ่าวลาวสาวไทย (ບ່າວລາວສາວໄທ)\" (ศิลปินมิตรภาพสองฝั่ง) นำความสดใสมีชีวิตชีวามาใส่ในคลิปตัดต่อได้อย่างลงตัว",
     "typoIdea": "ใช้ฟอนต์หนาสีส้มสดใส กระโดดตามจังหวะบีท พร้อมประกายแสงดาววิบวับรอบตัวอักษร",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a8/1a/6ca81ac5-d121-06a3-8e12-d4844e43c862/mzaf_8008041947493223572.plus.aac.p.m4a"
   },
   {
     "id": 2061,
     "title": "ฮักน้องผู้เดียว (ຮັກນ້ອງຜູ້ດຽວ)",
-    "artist": "สายย่อลาว EDM",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000062e298e2/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%9C",
-    "previewUrl": "",
+    "artist": "DaddyIX Studio",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/56446a01a4682dea59e22eec23deef76/500x500-000000-80-0-0.jpg",
+    "previewUrl": "https://cdnt-preview.dzcdn.net/api/1/1/7/d/4/0/7d4727d228f03625097b2768a1603ddf.mp3?hdnea=exp=1792162198~acl=/api/1/1/7/d/4/0/7d4727d228f03625097b2768a1603ddf.mp3*~data=user_id=0,application_id=42~hmac=dd92612c8661b9a309c91443f54679ccf2f5f5664034093a3700bb3333489668",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AE%E0%B8%B1%E0%B8%81%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%87%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B9%80%E0%B8%94%E0%B8%B5%E0%B8%A2%E0%B8%A7%20(%E0%BA%AE%E0%BA%B1%E0%BA%81%E0%BA%99%E0%BB%89%E0%BA%AD%E0%BA%87%E0%BA%9C%E0%BA%B9%E0%BB%89%E0%BA%94%E0%BA%BD%E0%BA%A7)%20%E0%B8%AA%E0%B8%B2%E0%B8%A2%E0%B8%A2%E0%B9%88%E0%B8%AD%E0%B8%A5%E0%B8%B2%E0%B8%A7%20EDM",
     "mood": "hype",
     "tags": [
@@ -52061,8 +52059,8 @@ const SONGS = [
     "id": 2062,
     "title": "ฝากใจไปฝั่งซ้าย (ຝາກໃຈໄປຝັ່ງຊ້າຍ)",
     "artist": "ศรชัย บ่าวฝั่งขวา",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007a711aae/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%9D%E0%B8%B2%E0%B8%81%E0%B9%83%E0%B8%88%E0%B9%84%E0%B8%9B%E0%B8%9D",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/92/0d/48920d26-75b5-0b52-47ca-237fb5b844e2/888332914338.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b7/8b/65/b78b658d-f88b-1dd1-30cb-5c79b7648c65/mzaf_14879268220787160222.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9D%E0%B8%B2%E0%B8%81%E0%B9%83%E0%B8%88%E0%B9%84%E0%B8%9B%E0%B8%9D%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B8%8B%E0%B9%89%E0%B8%B2%E0%B8%A2%20(%E0%BA%9D%E0%BA%B2%E0%BA%81%E0%BB%83%E0%BA%88%E0%BB%84%E0%BA%9B%E0%BA%9D%E0%BA%B1%E0%BB%88%E0%BA%87%E0%BA%8A%E0%BB%89%E0%BA%B2%E0%BA%8D)%20%E0%B8%A8%E0%B8%A3%E0%B8%8A%E0%B8%B1%E0%B8%A2%20%E0%B8%9A%E0%B9%88%E0%B8%B2%E0%B8%A7%E0%B8%9D%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B8%82%E0%B8%A7%E0%B8%B2",
     "mood": "sad",
     "tags": [
@@ -52080,14 +52078,14 @@ const SONGS = [
     "reason": "เพลงลาวสุดซึ้ง \"ฝากใจไปฝั่งซ้าย (ຝາກໃຈໄປຝັ່ງຊ້າຍ)\" (ศรชัย บ่าวฝั่งขวา) ถ่ายทอดความรู้สึกเหงาและคิดถึงได้อย่างลึกซึ้ง เหมาะมากกับซีนอนิเมะดราม่าอกหัก",
     "typoIdea": "ใช้ฟอนต์ตัวเขียนพริ้วไหว สีขาวนวล สลับอักษรภาษาลาวและไทย มีไอหมอกจางๆ ลอยผ่านตัวหนังสือตามเสียงแคน",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a"
   },
   {
     "id": 2063,
     "title": "สาวจำปาสัก (ສາວຈຳປາສັກ)",
     "artist": "ดาวน้อย",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/0000000000000000000000007ad62aa1/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%88%E0%B8%B3%E0%B8%9B%E0%B8%B2%E0%B8%AA",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/53/24/ff/5324ff49-9bb2-46ad-6a00-8502cb671389/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/67/40/40/67404052-23d4-b18a-2b6a-215fdaac94b6/mzaf_12856385750372179723.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%A7%E0%B8%88%E0%B8%B3%E0%B8%9B%E0%B8%B2%E0%B8%AA%E0%B8%B1%E0%B8%81%20(%E0%BA%AA%E0%BA%B2%E0%BA%A7%E0%BA%88%E0%BA%B3%E0%BA%9B%E0%BA%B2%E0%BA%AA%E0%BA%B1%E0%BA%81)%20%E0%B8%94%E0%B8%B2%E0%B8%A7%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2",
     "mood": "love",
     "tags": [
@@ -52106,14 +52104,14 @@ const SONGS = [
     "reason": "เพลงหวานละมุน \"สาวจำปาสัก (ສາວຈຳປາສັກ)\" โดย ดาวน้อย เมโลดี้ภาษาลาวที่นุ่มนวล เข้ากับซีนสารภาพรักและโมเมนต์โรแมนติกของอนิเมะ",
     "typoIdea": "ใช้ฟอนต์ Script สีชมพูทอง แสงเรืองรองนุ่มนวล พร้อมหัวใจและกลีบดอกจำปาลอยหมุนวนรอบข้อความ",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
   },
   {
     "id": 2064,
     "title": "ดอกลีลาวดี (ດອກລີລາວະດີ)",
     "artist": "ปิ่นแก้ว",
-    "coverUrl": "https://wsrv.nl/?url=https://e-cdns-images.dzcdn.net/images/cover/00000000000000000000000055573c73/500x500-000000-80-0-0.jpg&w=300&h=300&fit=cover&default=https://via.placeholder.com/300/1e1b4b/38bdf8?text=%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B8%A5%E0%B8%B5%E0%B8%A5%E0%B8%B2%E0%B8%A7",
-    "previewUrl": "",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4d/65/c8/4d65c86c-7eee-dec4-6eb4-f25c64d5b92f/888332981538.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%94%E0%B8%AD%E0%B8%81%E0%B8%A5%E0%B8%B5%E0%B8%A5%E0%B8%B2%E0%B8%A7%E0%B8%94%E0%B8%B5%20(%E0%BA%94%E0%BA%AD%E0%BA%81%E0%BA%A5%E0%BA%B5%E0%BA%A5%E0%BA%B2%E0%BA%A7%E0%BA%B0%E0%BA%94%E0%BA%B5)%20%E0%B8%9B%E0%B8%B4%E0%B9%88%E0%B8%99%E0%B9%81%E0%B8%81%E0%B9%89%E0%B8%A7",
     "mood": "chill",
     "tags": [
@@ -52131,7 +52129,7 @@ const SONGS = [
     "reason": "เสียงเพลงสบายๆ สไตล์ฝั่งโขง \"ดอกลีลาวดี (ດອກລີລາວະດີ)\" จาก ปิ่นแก้ว ให้มู้ดผ่อนคลาย เหมาะกับคลิปไทโปแนว Lo-Fi ธรรมชาติ",
     "typoIdea": "ใช้ฟอนต์มินิมอลโปร่งสบาย สีเขียวใบตองหรือฟ้าคราม ค่อยๆ เลื่อนช้าๆ ดุจระลอกคลื่นแม่น้ำโขง",
     "audioUrl": "",
-    "audioFallback": ""
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/8d/89/568d89ae-43f0-eef6-8e82-855c3a6c4ca7/mzaf_17650892221996939599.plus.aac.p.m4a"
   }
 ];
 

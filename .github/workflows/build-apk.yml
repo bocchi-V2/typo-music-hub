@@ -148,7 +148,7 @@ jobs:
               private ScheduledExecutorService updateScheduler;
               private static final String CHANNEL_ID = "haimiya_system_updates";
               private static final int NOTIF_ID = 20261016;
-              public static int CURRENT_VERSION_CODE = 1792161500;
+              public static int CURRENT_VERSION_CODE = 1792162000;
 
               @Override
               public void onCreate(Bundle savedInstanceState) {
