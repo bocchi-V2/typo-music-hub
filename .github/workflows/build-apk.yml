@@ -89,6 +89,10 @@ jobs:
                       if (webView != null) {
                           WebSettings settings = webView.getSettings();
                           settings.setMediaPlaybackRequiresUserGesture(false);
+                          settings.setDomStorageEnabled(true);
+                          settings.setDatabaseEnabled(true);
+                          settings.setAllowFileAccess(true);
+                          settings.setAllowContentAccess(true);
                       }
                   } catch (Exception e) {}
               }

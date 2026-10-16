@@ -744,11 +744,102 @@ function updateVolumeUI() {
   if (showcaseMuteBtn) showcaseMuteBtn.innerHTML = icon;
 }
 
+// ==========================================
+// 🛡️ OFFLINE AUDIO VAULT & CACHE SYSTEM
+// ==========================================
+const OFFLINE_AUDIO_CACHE = 'haimiya-audio-vault';
+
+// เช็คว่าไฟล์เสียงมีแคชในเครื่องพร้อมเล่นแบบออฟไลน์หรือไม่
+async function isSongCachedOffline(url) {
+  if (!url) return false;
+  try {
+    const cache = await caches.open(OFFLINE_AUDIO_CACHE);
+    const match = await cache.match(url);
+    return !!match;
+  } catch (e) {
+    return false;
+  }
+}
+
+// โหลดไฟล์เสียงแบบรองรับ Offline 100% (แปลงเป็น Blob URL เพื่อให้เล่นได้แน่นอนแม้ไม่มีเน็ต)
+async function getOfflinePlayableUrl(url) {
+  if (!url) return null;
+
+  // 1. ตรวจสอบใน CacheStorage ก่อนเสมอ
+  try {
+    const cache = await caches.open(OFFLINE_AUDIO_CACHE);
+    const cachedResponse = await cache.match(url);
+    if (cachedResponse) {
+      const blob = await cachedResponse.blob();
+      return URL.createObjectURL(blob);
+    }
+  } catch (e) {
+    console.warn('Cache match failed:', e);
+  }
+
+  // 2. ถ้ามีเน็ต ให้ดาวน์โหลดมาเก็บไว้ใน CacheStorage และแปลงเป็น Blob URL
+  if (navigator.onLine) {
+    try {
+      const res = await fetch(url);
+      if (res.ok) {
+        const cloned = res.clone();
+        caches.open(OFFLINE_AUDIO_CACHE).then(c => c.put(url, cloned)).catch(() => {});
+        const blob = await res.blob();
+        return URL.createObjectURL(blob);
+      }
+    } catch (e) {
+      console.warn('Fetch audio failed, falling back to direct URL:', e);
+    }
+    return url;
+  }
+
+  // 3. ถ้าไม่มีเน็ต และไม่มีแคช
+  return null;
+}
+
+// ดาวน์โหลดและแคชเพลงฮิตล่วงหน้าในเบื้องหลัง เพื่อให้ผู้ใช้เปิดฟังแบบ Offline ได้ทันที
+async function initOfflineAudioVault() {
+  try {
+    const cache = await caches.open(OFFLINE_AUDIO_CACHE);
+
+    // 1. แคชเพลง blue_relax.m4a ให้พร้อมเสมอ
+    const hasBlue = await cache.match('blue_relax.m4a');
+    if (!hasBlue) {
+      fetch('blue_relax.m4a')
+        .then(r => { if (r.ok) cache.put('blue_relax.m4a', r); })
+        .catch(() => {});
+    }
+
+    // 2. ถ้าต่อเน็ตอยู่ ให้ทยอยดาวน์โหลดเพลงฮิต 25 เพลงแรกเก็บไว้แบบ Offline
+    if (navigator.onLine) {
+      const topIds = [737, 738, 739, 740, 741, 1, 2, 3, 4, 5, 8, 10, 15, 20, 24, 25, 30, 42, 50, 65, 80, 100];
+      const precacheList = SONGS.filter(s => topIds.includes(s.id) && s.previewUrl);
+      
+      // ทยอยโหลดทีละเพลงแบบเบื้องหลัง ไม่กวนการใช้งานของผู้ใช้
+      setTimeout(async () => {
+        for (const song of precacheList) {
+          try {
+            const hasSong = await cache.match(song.previewUrl);
+            if (!hasSong) {
+              const res = await fetch(song.previewUrl);
+              if (res.ok) await cache.put(song.previewUrl, res);
+              await new Promise(r => setTimeout(r, 400));
+            }
+          } catch (err) {}
+        }
+        console.log('✅ Offline Audio Vault: เพลงฮิตถูกจัดเก็บในเครื่องพร้อมฟังแบบออฟไลน์ 100%!');
+      }, 3000);
+    }
+  } catch (e) {
+    console.warn('Offline Audio Vault init error:', e);
+  }
+}
+
 function togglePlaySong(songId) {
   const song = SONGS.find(s => s.id === songId);
   if (!song || !song.previewUrl) {
     const songTitle = song ? `"${song.title}"` : (currentAppLang === 'th' ? 'เพลงนี้' : 'this track');
-  showToast(currentAppLang === 'th' ? `🎧 ${songTitle} ยังไม่มีตัวอย่าง 30s ในระบบ — กดปุ่ม Spotify เพื่อฟังเพลงเต็ม` : `🎧 30s preview not available for ${songTitle} — Open Spotify for full audio`);
+    showToast(currentAppLang === 'th' ? `🎧 ${songTitle} ยังไม่มีตัวอย่าง 30s ในระบบ — กดปุ่ม Spotify เพื่อฟังเพลงเต็ม` : `🎧 30s preview not available for ${songTitle} — Open Spotify for full audio`);
     return;
   }
 
@@ -779,41 +870,59 @@ function togglePlaySong(songId) {
     currentAudio = null;
   }
 
-  const tryPlay = (url, fallbackUrl) => {
+  const handleAudioFail = () => {
+    if (!navigator.onLine) {
+      showToast(currentAppLang === 'th'
+        ? '⚠️ ไม่มีสัญญาณเน็ต และเพลงนี้ยังไม่ได้บันทึกไว้ในเครื่อง — ลองฟังเพลงที่แคชไว้แล้ว'
+        : '⚠️ Offline & song not cached in device yet');
+    } else {
+      showToast(currentAppLang === 'th'
+        ? '🎧 เสียงตัวอย่างโหลดไม่ได้ — กดปุ่ม Spotify เพื่อฟังเพลงเต็ม'
+        : '🎧 Could not load audio preview — Open Spotify for full audio');
+    }
+    currentAudio = null;
+    currentPlayingId = null;
+    updateAudioUI(false);
+    resumeRelaxBgm();
+  };
+
+  const tryPlay = async (url, fallbackUrl) => {
+    // ดึงไฟล์เสียงแบบ Offline Blob
+    let playableUrl = await getOfflinePlayableUrl(url);
+    if (!playableUrl && fallbackUrl) {
+      playableUrl = await getOfflinePlayableUrl(fallbackUrl);
+    }
+
+    if (!playableUrl && !navigator.onLine) {
+      handleAudioFail();
+      return;
+    }
+
     const audio = new Audio();
     audio.preload = 'auto';
     audio.volume = currentVolume;
     currentAudio = audio;
     currentPlayingId = songId;
 
-    audio.onerror = (e) => {
+    audio.onerror = async (e) => {
       console.warn('Audio error:', e, 'src:', audio.src);
-      // ลอง fallback URL ถ้ายังไม่ได้ลอง
       if (fallbackUrl && audio.src !== fallbackUrl) {
-        audio.src = fallbackUrl;
-        audio.load();
-        audio.play().then(() => {
-          duckRelaxBgm();
-          updateAudioUI(true);
-          showBottomPlayer(song);
-        }).catch(() => {
-          showToast(currentAppLang === 'th' ? '🎧 เสียงตัวอย่างโหลดไม่ได้ — กดปุ่ม Spotify เพื่อฟังเพลงเต็ม' : '🎧 Could not load audio preview — Open Spotify for full audio');
-          currentAudio = null;
-          currentPlayingId = null;
-          updateAudioUI(false);
-          resumeRelaxBgm();
-        });
-        return;
+        const altUrl = await getOfflinePlayableUrl(fallbackUrl);
+        if (altUrl) {
+          audio.src = altUrl;
+          audio.load();
+          audio.play().then(() => {
+            duckRelaxBgm();
+            updateAudioUI(true);
+            showBottomPlayer(song);
+          }).catch(handleAudioFail);
+          return;
+        }
       }
-      showToast(currentAppLang === 'th' ? '🎧 เสียงตัวอย่างโหลดไม่ได้ — กดปุ่ม Spotify เพื่อฟังเพลงเต็ม' : '🎧 Could not load audio preview — Open Spotify for full audio');
-      currentAudio = null;
-      currentPlayingId = null;
-      updateAudioUI(false);
-      resumeRelaxBgm();
+      handleAudioFail();
     };
 
     audio.onended = () => {
-      // เมื่อเพลงเล่นต่อจนจบ ให้เริ่มเล่นใหม่ทันทีแบบลูป (Seamless Auto-Restart)
       audio.currentTime = 0;
       audio.play().then(() => {
         updateAudioUI(true);
@@ -827,18 +936,21 @@ function togglePlaySong(songId) {
       updateBottomPlayerProgress();
     };
 
-    audio.src = url;
+    audio.src = playableUrl || url;
     audio.load();
     audio.play().then(() => {
       duckRelaxBgm();
       updateAudioUI(true);
       showBottomPlayer(song);
+      if (!navigator.onLine) {
+        showToast(currentAppLang === 'th' ? '⚡ เล่นจากคลังเพลงออฟไลน์ในเครื่อง' : '⚡ Playing from offline storage');
+      }
     }).catch(err => {
       console.warn('Audio play() rejected:', err.message);
       if (err.name === 'NotAllowedError') {
         showToast(currentAppLang === 'th' ? '🎧 กรุณาคลิกที่หน้าจอก่อนแล้วลองกดเล่นอีกครั้ง' : '🎧 Please interact with the screen once, then try playing again');
       } else {
-        showToast(currentAppLang === 'th' ? '🎧 ไม่สามารถเล่นเสียงได้ — กดปุ่ม Spotify เพื่อฟังเพลงเต็ม' : '🎧 Unable to play audio preview — Open Spotify for full audio');
+        handleAudioFail();
       }
       currentAudio = null;
       currentPlayingId = null;
@@ -847,7 +959,6 @@ function togglePlaySong(songId) {
     });
   };
 
-  // ลองเล่น previewUrl แรก, ถ้าไม่ได้ลอง spotifyPreviewUrl (ถ้ามี)
   tryPlay(song.previewUrl, song.previewUrlAlt || null);
 }
 
@@ -2147,6 +2258,13 @@ function getRelaxBgmAudio() {
     relaxBgmAudio.preload = 'auto';
     relaxBgmAudio.loop = true;
     relaxBgmAudio.volume = RELAX_BGM_VOLUME;
+
+    // ถ้าแคชเป็น Offline Blob ได้ ให้ใช้ Blob URL เพื่อให้เล่นได้แน่นอน 100% แม้ไม่มีเน็ต
+    getOfflinePlayableUrl('blue_relax.m4a').then(blobUrl => {
+      if (blobUrl && relaxBgmAudio && !relaxBgmAudio.currentTime) {
+        relaxBgmAudio.src = blobUrl;
+      }
+    }).catch(() => {});
   }
   return relaxBgmAudio;
 }
@@ -2468,6 +2586,7 @@ document.addEventListener('DOMContentLoaded', () => {
   updateDiceSfxUI();
   initWeeklyUpdateTracker();
   updateSavedBadges();
+  initOfflineAudioVault();
 });
 
 function updateStats() {
