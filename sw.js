@@ -183,3 +183,54 @@ self.addEventListener('fetch', (event) => {
     })
   );
 });
+
+// ============================================
+//  REAL SYSTEM PUSH NOTIFICATIONS & CLICKS
+//  รองรับการแจ้งเตือนบนแถบแจ้งเตือนจริงของโทรศัพท์ (Lock Screen / Notification Bar)
+// ============================================
+self.addEventListener('notificationclick', (event) => {
+  event.notification.close();
+  const targetUrl = (event.notification.data && event.notification.data.url) || './index.html';
+
+  if (event.action === 'download' && event.notification.data && event.notification.data.url) {
+    event.waitUntil(clients.openWindow(event.notification.data.url));
+    return;
+  }
+
+  event.waitUntil(
+    clients.matchAll({ type: 'window', includeUncontrolled: true }).then((windowClients) => {
+      for (const client of windowClients) {
+        if ('focus' in client) {
+          return client.focus();
+        }
+      }
+      if (clients.openWindow) {
+        return clients.openWindow('./index.html');
+      }
+    })
+  );
+});
+
+// ตรวจสอบอัปเดตอัตโนมัติในเบื้องหลังผ่าน Background Periodic Sync แม้ผู้ใช้ไม่ได้เปิดแอป
+self.addEventListener('periodicsync', (event) => {
+  if (event.tag === 'haimiya-update-check') {
+    event.waitUntil(
+      fetch('version.json?_t=' + Date.now())
+        .then((res) => res.json())
+        .then((data) => {
+          if (data && data.version) {
+            self.registration.showNotification('🚀 Haimiya Typo – มีอัปเดตใหม่!', {
+              body: `✨ อัปเดต ${data.version} พร้อมแล้ว! มีเพลงใหม่เพิ่มเข้ามา แตะเพื่ออัปเดตทันที`,
+              icon: 'app-icon.jpg',
+              badge: 'favicon-logo.jpg',
+              image: 'notification-mascot.jpg',
+              requireInteraction: true,
+              tag: 'haimiya-update-' + data.version,
+              data: { url: data.releaseUrl || './index.html' }
+            });
+          }
+        })
+        .catch(() => {})
+    );
+  }
+});

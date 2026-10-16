@@ -590,6 +590,48 @@
     </div>
   </div>
 
+  <!-- FLOATING RESIZABLE MINI-PLAYER WIDGET (ป๊อปอัปย่อส่วนลอยได้ ปรับขนาดได้ แก้ปัญหาเสียงกระตุก เล่นต่อเนื่อง) -->
+  <div id="floating-mini-player" class="floating-mini-player" style="display: none;">
+    <div class="fmp-drag-header" id="fmp-drag-header" title="ลากเพื่อย้ายตำแหน่ง">
+      <div class="fmp-title-wrap">
+        <span class="fmp-badge">🌸 MINI PLAYER</span>
+        <span class="fmp-drag-hint">⋮⋮</span>
+      </div>
+      <div class="fmp-header-actions">
+        <button class="fmp-btn-icon" id="fmp-btn-pip" onclick="togglePictureInPictureMode()" title="เปิดโหมดป๊อปอัป Picture-in-Picture">📺</button>
+        <button class="fmp-btn-icon" id="fmp-btn-collapse" onclick="toggleMiniPlayerCollapse()" title="ย่อเป็นฟองสบู่">➖</button>
+        <button class="fmp-btn-icon" id="fmp-btn-close" onclick="closeMiniPlayer()" title="ปิดมินิเพลเยอร์">✕</button>
+      </div>
+    </div>
+    <div class="fmp-body">
+      <div class="fmp-cover-box" onclick="togglePlayFromMini()">
+        <img id="fmp-cover-img" src="splash-cover.jpg" alt="Cover" class="fmp-cover" onerror="this.src='app-icon.jpg'" />
+        <div class="fmp-play-overlay" id="fmp-play-overlay">▶</div>
+      </div>
+      <div class="fmp-info">
+        <div class="fmp-song-title" id="fmp-song-title">Haimiya Typo</div>
+        <div class="fmp-song-artist" id="fmp-song-artist">Studio Player</div>
+        <div class="fmp-progress-bar" onclick="seekAudio(event)">
+          <div class="fmp-progress-fill" id="fmp-progress-fill"></div>
+        </div>
+        <div class="fmp-controls">
+          <button class="fmp-ctrl-btn" onclick="playPreviousSong()" title="เพลงก่อนหน้า">⏮️</button>
+          <button class="fmp-ctrl-btn fmp-play-toggle" id="fmp-play-toggle" onclick="togglePlayFromMini()" title="เล่น/หยุด">▶</button>
+          <button class="fmp-ctrl-btn" onclick="playNextSong()" title="เพลงถัดไป">⏭️</button>
+        </div>
+      </div>
+    </div>
+    <!-- Resize Grip Indicator -->
+    <div class="fmp-resize-grip" title="ลากมุมนี้เพื่อปรับขนาดป๊อปอัป">◢</div>
+  </div>
+
+  <!-- FLOATING MINI BUBBLE (เมื่อย่อเป็นฟองสบู่กลมๆ กะทัดรัด) -->
+  <div id="floating-mascot-bubble" class="floating-mascot-bubble" style="display: none;" onclick="expandMiniPlayer()" title="แตะเพื่อเปิดเครื่องเล่น">
+    <img src="app-icon.jpg" alt="Haimiya" class="fmb-avatar" />
+    <div class="fmb-pulse"></div>
+    <span class="fmb-note">🎵</span>
+  </div>
+
   <!-- BOTTOM PLAYER -->
   <div id="bottom-player" class="bottom-player"></div>
 

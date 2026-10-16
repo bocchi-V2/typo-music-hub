@@ -98,6 +98,14 @@ if (fs.existsSync(wwwVersionJson)) {
   } catch(e) {}
 }
 
+const mainActPath = path.join(__dirname, 'android', 'app', 'src', 'main', 'java', 'com', 'haimiya', 'typo', 'MainActivity.java');
+if (fs.existsSync(mainActPath)) {
+  let javaContent = fs.readFileSync(mainActPath, 'utf8');
+  javaContent = javaContent.replace(/public static int CURRENT_VERSION_CODE = \d+;/, `public static int CURRENT_VERSION_CODE = ${versionCode};`);
+  fs.writeFileSync(mainActPath, javaContent, 'utf8');
+  console.log(`✅ อัปเดต MainActivity.java CURRENT_VERSION_CODE: ${versionCode}`);
+}
+
 // บันทึก .build_version ให้ GitHub Actions ใช้เป็น tag_name ของ Release
 fs.writeFileSync(path.join(__dirname, '.build_version'), versionName, 'utf8');
 console.log(`✅ บันทึก .build_version: ${versionName}`);

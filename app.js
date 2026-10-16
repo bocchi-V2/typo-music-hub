@@ -1331,6 +1331,7 @@ function showBottomPlayer(song) {
       <!-- Actions & Volume Panel (Responsive for Desktop & Mobile) -->
       <div class="bp-actions-panel">
         <div class="bp-actions">
+          <button class="btn-sm btn-pip" onclick="togglePictureInPictureMode()" title="เปิดโหมดป๊อปอัปย่อส่วน (Picture-in-Picture) ลอยได้บนหน้าจอ">📺 ป๊อปอัป PiP</button>
           <button class="btn-sm btn-match" onclick="openAnimeMatchModal(${song.id})">${matchLabel}</button>
           <button class="btn-sm btn-bp-save ${isSaved ? 'saved' : ''}" data-save-id="${song.id}" onclick="toggleSaveSong(${song.id}, event)" title="${saveTooltip}">
             ${saveLabel}
@@ -2816,6 +2817,263 @@ if (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.App
     });
   } catch (e) {}
 }
+
+// ============================================
+//  FLOATING MINI-PLAYER / PICTURE-IN-PICTURE MODE
+//  ป๊อปอัปย่อส่วนลอยได้ + PiP สำหรับเล่นเพลงต่อเนื่องเมื่อออกจากแอป
+// ============================================
+
+let _miniPlayerVisible = false;
+let _miniPlayerCollapsed = false;
+let _fmpDragOffset = { x: 0, y: 0 };
+let _fmpDragging = false;
+
+// เปิด/ปิดมินิเพลเยอร์ลอย
+function showMiniPlayer() {
+  const fmp = document.getElementById('floating-mini-player');
+  if (!fmp) return;
+  fmp.style.display = 'flex';
+  _miniPlayerVisible = true;
+  _miniPlayerCollapsed = false;
+  syncMiniPlayerInfo();
+
+  // ซ่อน mascot bubble
+  const bubble = document.getElementById('floating-mascot-bubble');
+  if (bubble) bubble.style.display = 'none';
+}
+
+function closeMiniPlayer() {
+  const fmp = document.getElementById('floating-mini-player');
+  if (fmp) fmp.style.display = 'none';
+  _miniPlayerVisible = false;
+  _miniPlayerCollapsed = false;
+
+  const bubble = document.getElementById('floating-mascot-bubble');
+  if (bubble) bubble.style.display = 'none';
+
+  // ออกจาก PiP mode ถ้าเปิดอยู่
+  document.body.classList.remove('pip-mode');
+}
+
+function toggleMiniPlayerCollapse() {
+  const fmp = document.getElementById('floating-mini-player');
+  const bubble = document.getElementById('floating-mascot-bubble');
+  if (!fmp || !bubble) return;
+
+  if (!_miniPlayerCollapsed) {
+    // ย่อเป็นฟองสบู่
+    fmp.style.display = 'none';
+    bubble.style.display = 'block';
+    _miniPlayerCollapsed = true;
+  } else {
+    expandMiniPlayer();
+  }
+}
+
+function expandMiniPlayer() {
+  const fmp = document.getElementById('floating-mini-player');
+  const bubble = document.getElementById('floating-mascot-bubble');
+  if (fmp) fmp.style.display = 'flex';
+  if (bubble) bubble.style.display = 'none';
+  _miniPlayerVisible = true;
+  _miniPlayerCollapsed = false;
+  syncMiniPlayerInfo();
+}
+
+// สลับเล่น/หยุดจากมินิเพลเยอร์
+function togglePlayFromMini() {
+  if (currentAudio) {
+    if (currentAudio.paused) {
+      currentAudio.play().catch(() => {});
+      updateAudioUI(true);
+    } else {
+      currentAudio.pause();
+      updateAudioUI(false);
+    }
+    syncMiniPlayerPlayState();
+  } else if (currentPlayingId) {
+    togglePlaySong(currentPlayingId);
+  }
+}
+
+// ซิงค์ข้อมูลเพลงปัจจุบันลงมินิเพลเยอร์
+function syncMiniPlayerInfo() {
+  if (!_miniPlayerVisible) return;
+  const titleEl = document.getElementById('fmp-song-title');
+  const artistEl = document.getElementById('fmp-song-artist');
+  const coverEl = document.getElementById('fmp-cover-img');
+
+  if (currentPlayingId) {
+    const song = SONG_MAP.get(currentPlayingId) || SONGS.find(s => s.id === currentPlayingId);
+    if (song) {
+      if (titleEl) titleEl.textContent = song.title || 'Haimiya Typo';
+      if (artistEl) artistEl.textContent = song.artist || 'Studio Player';
+      if (coverEl) {
+        coverEl.src = song.coverUrl || 'splash-cover.jpg';
+        coverEl.onerror = function() { this.src = getSongFallbackCover(song); };
+      }
+    }
+  }
+  syncMiniPlayerPlayState();
+}
+
+function syncMiniPlayerPlayState() {
+  const toggle = document.getElementById('fmp-play-toggle');
+  const overlay = document.getElementById('fmp-play-overlay');
+  const coverImg = document.getElementById('fmp-cover-img');
+  const isPlaying = currentAudio && !currentAudio.paused;
+
+  if (toggle) toggle.textContent = isPlaying ? '⏸' : '▶';
+  if (overlay) overlay.textContent = isPlaying ? '⏸' : '▶';
+  if (coverImg) {
+    if (isPlaying) {
+      coverImg.classList.add('spinning');
+    } else {
+      coverImg.classList.remove('spinning');
+    }
+  }
+}
+
+// อัปเดต progress bar ของมินิเพลเยอร์ (เรียกจาก requestAnimationFrame)
+function updateMiniPlayerProgress() {
+  if (!_miniPlayerVisible || !currentAudio) return;
+  const fill = document.getElementById('fmp-progress-fill');
+  if (fill && currentAudio.duration) {
+    const pct = (currentAudio.currentTime / currentAudio.duration) * 100;
+    fill.style.width = pct + '%';
+  }
+  if (_miniPlayerVisible) {
+    requestAnimationFrame(updateMiniPlayerProgress);
+  }
+}
+
+// เริ่มอัปเดต progress ของมินิเพลเยอร์เมื่อมีเพลงเล่น
+function startMiniPlayerProgressLoop() {
+  if (_miniPlayerVisible) {
+    requestAnimationFrame(updateMiniPlayerProgress);
+  }
+}
+
+// Picture-in-Picture Mode
+function togglePictureInPictureMode() {
+  // สำหรับ Android native: ใช้ JavaScript Bridge เรียก PiP ผ่าน Java
+  if (window.AndroidBridge && typeof window.AndroidBridge.enterPiP === 'function') {
+    try {
+      window.AndroidBridge.enterPiP();
+      showMiniPlayer();
+      document.body.classList.add('pip-mode');
+      return;
+    } catch (e) {
+      console.warn('Native PiP failed, using web fallback:', e);
+    }
+  }
+
+  // สำหรับ Capacitor / WebView
+  if (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.App) {
+    try {
+      // ย่อหน้าจอเพื่อ trigger Android PiP จาก onUserLeaveHint
+      window.Capacitor.Plugins.App.minimizeApp();
+    } catch (e) {}
+  }
+
+  // Web fallback: แสดง mini-player ลอย
+  if (document.body.classList.contains('pip-mode')) {
+    // ออกจาก PiP mode
+    document.body.classList.remove('pip-mode');
+    closeMiniPlayer();
+  } else {
+    showMiniPlayer();
+    document.body.classList.add('pip-mode');
+    startMiniPlayerProgressLoop();
+  }
+}
+
+// ลาก Mini-Player (Drag support)
+(function initMiniPlayerDrag() {
+  document.addEventListener('pointerdown', (e) => {
+    const header = document.getElementById('fmp-drag-header');
+    if (!header || !header.contains(e.target)) return;
+    // ไม่ลากถ้าคลิกปุ่ม
+    if (e.target.closest('.fmp-btn-icon')) return;
+
+    const fmp = document.getElementById('floating-mini-player');
+    if (!fmp) return;
+
+    _fmpDragging = true;
+    const rect = fmp.getBoundingClientRect();
+    _fmpDragOffset.x = e.clientX - rect.left;
+    _fmpDragOffset.y = e.clientY - rect.top;
+    fmp.style.transition = 'none';
+    e.preventDefault();
+  });
+
+  document.addEventListener('pointermove', (e) => {
+    if (!_fmpDragging) return;
+    const fmp = document.getElementById('floating-mini-player');
+    if (!fmp) return;
+
+    const x = e.clientX - _fmpDragOffset.x;
+    const y = e.clientY - _fmpDragOffset.y;
+
+    // จำกัดไม่ให้ลากหลุดออกจากหน้าจอ
+    const maxX = window.innerWidth - 60;
+    const maxY = window.innerHeight - 40;
+    fmp.style.left = Math.max(0, Math.min(x, maxX)) + 'px';
+    fmp.style.top = Math.max(0, Math.min(y, maxY)) + 'px';
+    fmp.style.right = 'auto';
+    fmp.style.bottom = 'auto';
+  });
+
+  document.addEventListener('pointerup', () => {
+    if (_fmpDragging) {
+      _fmpDragging = false;
+      const fmp = document.getElementById('floating-mini-player');
+      if (fmp) fmp.style.transition = '';
+    }
+  });
+})();
+
+// ซิงค์มินิเพลเยอร์ทุกครั้งที่เพลงเปลี่ยน
+const _origUpdateAudioUI = typeof updateAudioUI === 'function' ? updateAudioUI : null;
+if (_origUpdateAudioUI) {
+  // Patch updateAudioUI ให้ซิงค์มินิเพลเยอร์ด้วย
+  const _patchedUpdateAudioUI = updateAudioUI;
+  // เราใช้วิธีอื่น: ฟัง event timeupdate แทน
+}
+
+// ฟัง audio events เพื่อซิงค์มินิเพลเยอร์
+setInterval(() => {
+  if (_miniPlayerVisible) {
+    syncMiniPlayerPlayState();
+    if (currentAudio && currentAudio.duration) {
+      const fill = document.getElementById('fmp-progress-fill');
+      if (fill) {
+        fill.style.width = ((currentAudio.currentTime / currentAudio.duration) * 100) + '%';
+      }
+    }
+  }
+}, 500);
+
+// เมื่อ visibility change กลับมา ให้ซิงค์มินิเพลเยอร์
+document.addEventListener('visibilitychange', () => {
+  if (!document.hidden && _miniPlayerVisible) {
+    syncMiniPlayerInfo();
+    startMiniPlayerProgressLoop();
+  }
+});
+
+// ฟังก์ชันที่ Android Java เรียกเมื่อเข้า/ออก PiP mode จริง (จาก onPictureInPictureModeChanged)
+window.setPipUIMode = function(isInPiP) {
+  if (isInPiP) {
+    document.body.classList.add('pip-mode');
+    showMiniPlayer();
+    startMiniPlayerProgressLoop();
+  } else {
+    document.body.classList.remove('pip-mode');
+    // ไม่ปิด mini-player เพื่อให้ผู้ใช้ยังเห็นได้ แต่ถ้าอยากปิดก็กด X ได้
+    syncMiniPlayerInfo();
+  }
+};
 
 // ---- SPLASH GREETING: FLOATING JAPANESE TEXT ----
 function showSplashGreeting(splashEl) {
