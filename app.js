@@ -852,12 +852,27 @@ async function initOfflineAudioVault() {
 }
 
 let _sharedAudioPlayer = null;
+let _lastBlobUrl = null;
 function getSharedAudioPlayer() {
   if (!_sharedAudioPlayer) {
     _sharedAudioPlayer = new Audio();
     _sharedAudioPlayer.preload = 'auto';
+    // ตั้งค่า crossOrigin เพื่อลดปัญหา CORS audio stutter
+    _sharedAudioPlayer.crossOrigin = 'anonymous';
+    // ตั้งค่า buffer ขนาดใหญ่เพื่อลด audio stutter
+    try {
+      _sharedAudioPlayer.mozAudioChannelType = 'content';
+    } catch(e) {}
   }
   return _sharedAudioPlayer;
+}
+
+// ล้าง Blob URL เก่าเพื่อคืนหน่วยความจำและป้องกัน audio buffer leak
+function cleanupOldBlobUrl() {
+  if (_lastBlobUrl && _lastBlobUrl.startsWith('blob:')) {
+    try { URL.revokeObjectURL(_lastBlobUrl); } catch(e) {}
+    _lastBlobUrl = null;
+  }
 }
 
 let isLoopTrack = false;
@@ -941,6 +956,9 @@ function togglePlaySong(songId) {
     // ดับเพลงผ่อนคลายทันทีเพื่อไม่ให้เสียงชนกัน
     duckRelaxBgm();
 
+    // ล้าง Blob URL เก่าเพื่อคืนหน่วยความจำ
+    cleanupOldBlobUrl();
+
     // ดึงไฟล์เสียงแบบ Offline Blob
     let playableUrl = await getOfflinePlayableUrl(url);
     if (!playableUrl && fallbackUrl) {
@@ -953,6 +971,13 @@ function togglePlaySong(songId) {
     }
 
     const audio = getSharedAudioPlayer();
+    // หยุดเสียงเก่าก่อนอย่างสมบูรณ์เพื่อป้องกัน audio buffer ค้าง
+    try {
+      audio.pause();
+      audio.removeAttribute('src');
+      audio.load(); // Reset internal buffer
+    } catch(e) {}
+
     audio.volume = currentVolume;
     currentAudio = audio;
     currentPlayingId = songId;
@@ -962,6 +987,8 @@ function togglePlaySong(songId) {
       if (fallbackUrl && audio.src !== fallbackUrl) {
         const altUrl = await getOfflinePlayableUrl(fallbackUrl);
         if (altUrl) {
+          cleanupOldBlobUrl();
+          _lastBlobUrl = altUrl;
           audio.src = altUrl;
           audio.load();
           audio.play().then(() => {
@@ -982,25 +1009,40 @@ function togglePlaySong(songId) {
           resumeRelaxBgm();
         });
       } else {
-        playNextSong();
+        // ใช้ setTimeout เล็กน้อยเพื่อให้ audio buffer ล้างก่อนเปลี่ยนเพลง ลด stutter
+        setTimeout(() => playNextSong(), 50);
       }
     };
 
     // Throttle timeupdate to reduce UI jank and audio stuttering on low-end devices
+    // เพิ่ม interval เป็น 350ms เพื่อลดภาระ CPU บนมือถือ
     let _lastProgressUpdate = 0;
     audio.ontimeupdate = () => {
       const now = performance.now();
-      if (now - _lastProgressUpdate > 250) {
+      if (now - _lastProgressUpdate > 350) {
         _lastProgressUpdate = now;
-        updateBottomPlayerProgress();
+        requestAnimationFrame(() => updateBottomPlayerProgress());
       }
     };
 
     const targetSrc = playableUrl || url;
-    if (audio.src !== targetSrc) {
-      audio.src = targetSrc;
-      audio.load();
-    }
+    _lastBlobUrl = targetSrc;
+    audio.src = targetSrc;
+    audio.load();
+
+    // รอให้ audio buffer โหลดพอก่อนเล่น เพื่อลด stutter ตอนเริ่มเพลง
+    const waitForBuffer = () => new Promise((resolve) => {
+      const onCanPlay = () => {
+        audio.removeEventListener('canplaythrough', onCanPlay);
+        resolve();
+      };
+      audio.addEventListener('canplaythrough', onCanPlay, { once: true });
+      // Timeout fallback 2s กรณีเน็ตช้า
+      setTimeout(resolve, 2000);
+    });
+
+    await waitForBuffer();
+
     audio.play().then(() => {
       updateAudioUI(true);
       showBottomPlayer(song);
@@ -2519,6 +2561,10 @@ function handleAppGoingBackground() {
   if (diceAudio && !diceAudio.paused) {
     try { diceAudio.pause(); } catch (e) {}
   }
+  // หยุด SpeechSynthesis ถ้าค้างอยู่ เพื่อไม่ให้เสียงค้างในพื้นหลัง
+  if ('speechSynthesis' in window) {
+    try { window.speechSynthesis.cancel(); } catch(e) {}
+  }
 }
 
 function handleAppReturningForeground() {
@@ -2677,8 +2723,8 @@ function initSplashScreen() {
 //  ระบบซิงค์เพลง/อนิเมะสดอัตโนมัติ และอัปเดตแอป APK ทับของเดิมได้ 100% ไม่ต้องลบแอปเก่า
 // ============================================
 
-const CURRENT_APP_VERSION = 'v2.20261016.16';
-const CURRENT_VERSION_CODE = 1792136947;
+const CURRENT_APP_VERSION = 'v2.20261016.17';
+const CURRENT_VERSION_CODE = 1792137500;
 const GITHUB_REPO_OWNER = 'bocchi-V2';
 const GITHUB_REPO_NAME = 'typo-music-hub';
 const GITHUB_PAGES_BASE = 'https://bocchi-v2.github.io/typo-music-hub';
@@ -2836,10 +2882,98 @@ async function checkLiveContentUpdate() {
   }
 }
 
+// ---- PUSH NOTIFICATION & VOICE ALERT SYSTEM ----
+// ระบบแจ้งเตือนอัปเดตบนโทรศัพท์โดยตรง พร้อมเสียงผู้หญิงน่ารักพูด "อัปเดตด้วยนะคะ"
+
+// ขอสิทธิ์การแจ้งเตือน (Notification Permission)
+async function requestNotificationPermission() {
+  if (!('Notification' in window)) return false;
+  if (Notification.permission === 'granted') return true;
+  if (Notification.permission === 'denied') return false;
+  try {
+    const result = await Notification.requestPermission();
+    return result === 'granted';
+  } catch(e) {
+    return false;
+  }
+}
+
+// ส่ง Push Notification ขึ้นบนมือถือโดยตรง
+function sendUpdatePushNotification(versionTag, songCount) {
+  if (!('Notification' in window) || Notification.permission !== 'granted') return;
+  try {
+    const title = '🚀 Haimiya Typo อัปเดตใหม่!';
+    const body = `เวอร์ชัน ${versionTag} พร้อมแล้ว! รวม ${songCount} เพลง — กดเพื่ออัปเดตทันที 💫`;
+    const notification = new Notification(title, {
+      body: body,
+      icon: 'app-icon.jpg',
+      badge: 'favicon-logo.jpg',
+      tag: 'haimiya-update-' + versionTag,
+      renotify: true,
+      requireInteraction: true,
+      vibrate: [200, 100, 200, 100, 200],
+      silent: false
+    });
+    notification.onclick = () => {
+      window.focus();
+      notification.close();
+      // เปิด banner อัปเดต
+      const banner = document.getElementById('in-app-update-banner');
+      if (banner) banner.scrollIntoView({ behavior: 'smooth' });
+    };
+  } catch(e) {
+    console.warn('Notification error:', e);
+  }
+}
+
+// เล่นเสียงผู้หญิงน่ารักพูด "อัปเดตด้วยนะคะ" ด้วย Web Speech Synthesis
+function playUpdateVoiceAlert() {
+  try {
+    // ใช้ Web Speech Synthesis API สร้างเสียงผู้หญิงพูดภาษาไทยน่ารักๆ
+    if ('speechSynthesis' in window) {
+      // หยุดเสียงอื่นก่อน
+      window.speechSynthesis.cancel();
+
+      const utterance = new SpeechSynthesisUtterance('อัปเดตด้วยนะคะ');
+      utterance.lang = 'th-TH';
+      utterance.rate = 0.95;  // ช้าลงนิดให้น่ารัก
+      utterance.pitch = 1.4;  // เสียงสูงขึ้นให้น่ารัก
+      utterance.volume = 0.85;
+
+      // เลือกเสียงผู้หญิงไทย
+      const voices = window.speechSynthesis.getVoices();
+      const thaiFemalVoice = voices.find(v => 
+        (v.lang === 'th-TH' || v.lang === 'th') && 
+        (v.name.toLowerCase().includes('female') || v.name.includes('นารี') || v.name.includes('Nari') || !v.name.toLowerCase().includes('male'))
+      ) || voices.find(v => v.lang === 'th-TH' || v.lang === 'th');
+
+      if (thaiFemalVoice) {
+        utterance.voice = thaiFemalVoice;
+      }
+
+      window.speechSynthesis.speak(utterance);
+    }
+  } catch(e) {
+    console.warn('Voice alert error:', e);
+  }
+}
+
+// โหลด voices เมื่อพร้อม (บาง browser โหลดแบบ async)
+if ('speechSynthesis' in window) {
+  window.speechSynthesis.onvoiceschanged = () => {
+    window.speechSynthesis.getVoices(); // cache voices
+  };
+  try { window.speechSynthesis.getVoices(); } catch(e) {}
+}
+
 // 3. ตรวจสอบเวอร์ชันและแจ้งเตือนอัปเดตทุกเวอร์ชัน (ทั้งในแอปและบนเว็บ)
+// พร้อม Push Notification + เสียง "อัปเดตด้วยนะคะ" เสียงผู้หญิงน่ารัก
 async function checkApkAppUpdate(isManualTrigger = false) {
   if (!navigator.onLine) return;
   if (!isManualTrigger && sessionStorage.getItem('dismissed_apk_banner') === 'true') return;
+
+  // ขอสิทธิ์ Notification ล่วงหน้า
+  await requestNotificationPermission();
 
   const isNativeApp = window.Capacitor && typeof window.Capacitor.isNativePlatform === 'function' && window.Capacitor.isNativePlatform();
 
@@ -2873,6 +3007,12 @@ async function checkApkAppUpdate(isManualTrigger = false) {
       const titleEl = document.getElementById('update-banner-title');
       const descEl = document.getElementById('update-banner-desc');
       const btnEl = document.getElementById('btn-banner-update');
+
+      // 🔔 ส่ง Push Notification ขึ้นบนมือถือโดยตรง!
+      sendUpdatePushNotification(releaseTag || remoteVersionTag, remoteSongs || SONGS.length);
+
+      // 🎀 เล่นเสียงผู้หญิงน่ารักพูด "อัปเดตด้วยนะคะ" หลังจาก banner ขึ้น
+      setTimeout(() => playUpdateVoiceAlert(), 800);
 
       if (banner && titleEl) {
         if (isNativeApp) {
@@ -2921,6 +3061,8 @@ async function checkApkAppUpdate(isManualTrigger = false) {
           }
         }
         banner.style.display = 'block';
+        // Animate banner slide in
+        requestAnimationFrame(() => banner.classList.add('visible'));
       }
     } else if (isManualTrigger) {
       showToast(currentAppLang === 'th' ? `✨ คุณกำลังใช้งาน Haimiya Typo เวอร์ชันล่าสุดแล้วครับ! (${SONGS.length} เพลง)` : `✨ You are on the latest version! (${SONGS.length} songs)`);
@@ -2932,7 +3074,10 @@ async function checkApkAppUpdate(isManualTrigger = false) {
 
 function dismissUpdateBanner() {
   const banner = document.getElementById('in-app-update-banner');
-  if (banner) banner.style.display = 'none';
+  if (banner) {
+    banner.classList.remove('visible');
+    setTimeout(() => { banner.style.display = 'none'; }, 300);
+  }
   sessionStorage.setItem('dismissed_apk_banner', 'true');
 }
 
