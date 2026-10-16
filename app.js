@@ -3194,7 +3194,7 @@ function playUpdateVoiceAlert(isUserInitiated = false) {
       if (playPromise && playPromise.then) {
         playPromise.then(() => {
           console.log('🎀 เล่นเสียงแจ้งเตือนอัปเดตสำเร็จ');
-          const buttons = document.querySelectorAll('#btn-banner-voice, #btn-floating-voice-test, .btn-hero-voice-test, .nav-voice-btn');
+          const buttons = document.querySelectorAll('#btn-banner-voice');
           buttons.forEach(btn => {
             btn.classList.add('voice-playing');
             btn.style.transform = 'scale(1.08)';

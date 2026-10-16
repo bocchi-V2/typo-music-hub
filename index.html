@@ -74,9 +74,6 @@
         <button class="nav-link nav-app-btn" onclick="openAppModal(); return false;" style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(129, 140, 248, 0.2)); border: 1px solid rgba(56, 189, 248, 0.4); border-radius: 999px; cursor: pointer; color: #fff; font-weight: 600; padding: 0.35rem 0.9rem; margin-left: 0.3rem;">
           📲 <span data-i18n="navInstallApp">ติดตั้งแอป / APK</span>
         </button>
-        <button class="nav-link nav-voice-btn" onclick="playUpdateVoiceAlert(true); return false;" style="background: rgba(236, 72, 153, 0.18); border: 1px solid rgba(236, 72, 153, 0.5); border-radius: 999px; cursor: pointer; color: #f472b6; font-weight: 700; padding: 0.35rem 0.85rem; margin-left: 0.3rem;" title="กดลองฟังเสียงแจ้งเตือนอัปเดต">
-          🔔 ฟังเสียงเตือน
-        </button>
       </div>
       <div class="relax-bgm-box">
         <button class="relax-bgm-btn playing" id="relax-bgm-btn" onclick="toggleRelaxBgm()" title="เพลงผ่อนคลายเบาๆ: blue ~ yung kai (คลิกเพื่อเปิด/ปิด)">
@@ -134,9 +131,6 @@
         <a href="#songs" class="btn btn-ghost" id="hero-btn-songs">🎵 <span data-i18n="heroBtnSongs">สำรวจคลังเพลง</span> (<span id="hero-song-count">741</span> <span data-i18n="heroBtnSongsSuffix">เพลง</span>)</a>
         <button class="btn btn-ghost" onclick="openAppModal()" style="border-color: rgba(56, 189, 248, 0.45); background: rgba(56, 189, 248, 0.1); color: #38bdf8;">
           📲 ดาวน์โหลด APK / ติดตั้งแอป
-        </button>
-        <button class="btn btn-ghost btn-hero-voice-test" onclick="playUpdateVoiceAlert(true)" style="border-color: rgba(236, 72, 153, 0.65); background: rgba(236, 72, 153, 0.16); color: #f472b6; font-weight: 700;" title="คลิกเพื่อทดลองฟังเสียงแจ้งเตือน (Google Drive: ABox.mp4)">
-          🔔 กดฟังเสียงแจ้งเตือน
         </button>
       </div>
     </div>
@@ -655,16 +649,6 @@
     pointer-events: none;
   ">
     📡 ออฟไลน์โหมด
-  </div>
-
-  <!-- TEMPORARY NOTIFICATION SOUND TEST WIDGET (สำหรับทดสอบเสียงแจ้งเตือนชั่วคราวตามคำขอ) -->
-  <div id="temp-voice-tester" class="temp-voice-tester">
-    <div class="voice-tester-badge">ทดสอบเสียงแจ้งเตือน (ชั่วคราว)</div>
-    <button id="btn-floating-voice-test" class="btn-voice-pill" onclick="playUpdateVoiceAlert(true)" title="คลิกเพื่อฟังเสียงแจ้งเตือนจาก Google Drive (ABox.mp4)">
-      <span class="voice-wave-anim">🔔</span>
-      <span>กดฟังเสียงแจ้งเตือน</span>
-      <span class="voice-tag">ABox.mp4</span>
-    </button>
   </div>
 
 </body>
