@@ -851,6 +851,40 @@ async function initOfflineAudioVault() {
   }
 }
 
+let _sharedAudioPlayer = null;
+function getSharedAudioPlayer() {
+  if (!_sharedAudioPlayer) {
+    _sharedAudioPlayer = new Audio();
+    _sharedAudioPlayer.preload = 'auto';
+  }
+  return _sharedAudioPlayer;
+}
+
+let isLoopTrack = false;
+function toggleLoopTrack() {
+  isLoopTrack = !isLoopTrack;
+  const loopBtn = document.getElementById('bp-loop-btn');
+  if (loopBtn) {
+    loopBtn.style.color = isLoopTrack ? 'var(--primary)' : 'rgba(255,255,255,0.45)';
+    loopBtn.style.background = isLoopTrack ? 'rgba(56, 189, 248, 0.15)' : 'none';
+  }
+  showToast(isLoopTrack ? '🔁 เปิดเล่นวนซ้ำเพลงเดิม' : '➡️ เปิดเล่นเพลงถัดไปอัตโนมัติ');
+}
+
+function playNextSong() {
+  if (!currentPlayingId || !SONGS.length) return;
+  const idx = SONGS.findIndex(s => s.id === currentPlayingId);
+  const nextIdx = (idx >= 0 && idx < SONGS.length - 1) ? idx + 1 : 0;
+  togglePlaySong(SONGS[nextIdx].id);
+}
+
+function playPreviousSong() {
+  if (!currentPlayingId || !SONGS.length) return;
+  const idx = SONGS.findIndex(s => s.id === currentPlayingId);
+  const prevIdx = idx > 0 ? idx - 1 : SONGS.length - 1;
+  togglePlaySong(SONGS[prevIdx].id);
+}
+
 function togglePlaySong(songId) {
   const song = SONGS.find(s => s.id === songId);
   const audioSrc = song ? (song.previewUrl || song.audioUrl || song.audioFallback) : null;
@@ -882,9 +916,9 @@ function togglePlaySong(songId) {
 
   // If playing another song -> stop old one
   if (currentAudio) {
-    currentAudio.pause();
-    currentAudio.currentTime = 0;
-    currentAudio = null;
+    try {
+      currentAudio.pause();
+    } catch (e) {}
   }
 
   const handleAudioFail = () => {
@@ -904,6 +938,9 @@ function togglePlaySong(songId) {
   };
 
   const tryPlay = async (url, fallbackUrl) => {
+    // ดับเพลงผ่อนคลายทันทีเพื่อไม่ให้เสียงชนกัน
+    duckRelaxBgm();
+
     // ดึงไฟล์เสียงแบบ Offline Blob
     let playableUrl = await getOfflinePlayableUrl(url);
     if (!playableUrl && fallbackUrl) {
@@ -915,8 +952,7 @@ function togglePlaySong(songId) {
       return;
     }
 
-    const audio = new Audio();
-    audio.preload = 'auto';
+    const audio = getSharedAudioPlayer();
     audio.volume = currentVolume;
     currentAudio = audio;
     currentPlayingId = songId;
@@ -929,7 +965,6 @@ function togglePlaySong(songId) {
           audio.src = altUrl;
           audio.load();
           audio.play().then(() => {
-            duckRelaxBgm();
             updateAudioUI(true);
             showBottomPlayer(song);
           }).catch(handleAudioFail);
@@ -940,13 +975,15 @@ function togglePlaySong(songId) {
     };
 
     audio.onended = () => {
-      audio.currentTime = 0;
-      audio.play().then(() => {
-        updateAudioUI(true);
-      }).catch(() => {
-        updateAudioUI(false);
-        resumeRelaxBgm();
-      });
+      if (isLoopTrack) {
+        audio.currentTime = 0;
+        audio.play().then(() => updateAudioUI(true)).catch(() => {
+          updateAudioUI(false);
+          resumeRelaxBgm();
+        });
+      } else {
+        playNextSong();
+      }
     };
 
     // Throttle timeupdate to reduce UI jank and audio stuttering on low-end devices
@@ -959,10 +996,12 @@ function togglePlaySong(songId) {
       }
     };
 
-    audio.src = playableUrl || url;
-    audio.load();
+    const targetSrc = playableUrl || url;
+    if (audio.src !== targetSrc) {
+      audio.src = targetSrc;
+      audio.load();
+    }
     audio.play().then(() => {
-      duckRelaxBgm();
       updateAudioUI(true);
       showBottomPlayer(song);
       updateMediaSession(song, false);
@@ -1082,12 +1121,23 @@ function showBottomPlayer(song) {
       </div>
 
       <div class="bp-controls">
-        <button class="bp-play-btn" id="bp-play-btn" onclick="togglePlaySong(${song.id})" title="${playTooltip}">
-          ${currentAudio && !currentAudio.paused
-            ? '<svg width="15" height="15" viewBox="0 0 24 24" fill="#000"><rect x="5" y="3" width="4.5" height="18" rx="1.5"></rect><rect x="14.5" y="3" width="4.5" height="18" rx="1.5"></rect></svg>'
-            : '<svg width="15" height="15" viewBox="0 0 24 24" fill="#000" style="margin-left:2px;"><polygon points="6 4 20 12 6 20"></polygon></svg>'
-          }
-        </button>
+        <div class="bp-controls-row" style="display:flex;align-items:center;gap:10px;justify-content:center;margin-bottom:4px;">
+          <button class="bp-skip-btn" onclick="playPreviousSong()" title="เพลงก่อนหน้า" style="background:none;border:none;color:#fff;font-size:1.1rem;cursor:pointer;padding:4px 6px;border-radius:6px;transition:transform 0.15s;" onmousedown="this.style.transform='scale(0.9)'" onmouseup="this.style.transform='scale(1)'">
+            ⏮️
+          </button>
+          <button class="bp-play-btn" id="bp-play-btn" onclick="togglePlaySong(${song.id})" title="${playTooltip}">
+            ${currentAudio && !currentAudio.paused
+              ? '<svg width="15" height="15" viewBox="0 0 24 24" fill="#000"><rect x="5" y="3" width="4.5" height="18" rx="1.5"></rect><rect x="14.5" y="3" width="4.5" height="18" rx="1.5"></rect></svg>'
+              : '<svg width="15" height="15" viewBox="0 0 24 24" fill="#000" style="margin-left:2px;"><polygon points="6 4 20 12 6 20"></polygon></svg>'
+            }
+          </button>
+          <button class="bp-skip-btn" onclick="playNextSong()" title="เพลงถัดไป" style="background:none;border:none;color:#fff;font-size:1.1rem;cursor:pointer;padding:4px 6px;border-radius:6px;transition:transform 0.15s;" onmousedown="this.style.transform='scale(0.9)'" onmouseup="this.style.transform='scale(1)'">
+            ⏭️
+          </button>
+          <button class="bp-loop-btn" id="bp-loop-btn" onclick="toggleLoopTrack()" title="วนซ้ำเพลงนี้" style="background:${isLoopTrack ? 'rgba(56, 189, 248, 0.2)' : 'none'};border:none;color:${isLoopTrack ? 'var(--primary)' : 'rgba(255,255,255,0.45)'};font-size:1rem;cursor:pointer;padding:4px 6px;border-radius:6px;">
+            🔁
+          </button>
+        </div>
         <div class="bp-progress-wrap">
           <span class="bp-time" id="bp-time-cur">0:00</span>
           <div class="bp-progress-bar" onclick="seekAudio(event)">
@@ -1460,10 +1510,8 @@ function songCardHTML(song, index = 0) {
     <div class="song-card ${isPlaying ? 'is-playing' : ''}" id="song-${song.id}" data-mood="${moodVal}" data-lang="${langVal}">
       <div class="song-card-top">
         <div class="song-cover-wrapper">
-          <div class="img-skeleton"></div>
           <img src="${song.coverUrl || fallbackCover}" alt="${song.title}" class="song-cover" loading="${loadMode}" decoding="async"${priAttr} referrerpolicy="no-referrer"
-            onload="this.previousElementSibling.style.display='none';this.style.opacity='1';"
-            onerror="this.previousElementSibling.style.display='none';this.onerror=null;this.src='${fallbackCover}';this.style.opacity='1';" style="opacity:0;transition:opacity 0.3s;" />
+            onerror="this.onerror=null;this.src='${fallbackCover}';" />
           <button class="song-play-overlay" onclick="togglePlaySong(${song.id})" title="${isPlaying ? (currentAppLang === 'th' ? 'หยุด' : 'Pause') : (currentAppLang === 'th' ? 'เล่น' : 'Play')}">
             ${isPlaying ? '⏸️' : '▶️'}
           </button>
@@ -1483,8 +1531,7 @@ function songCardHTML(song, index = 0) {
       <!-- Matched Anime Bar -->
       <div class="song-anime-bar" onclick="openAnimeMatchModal(${song.id})" title="${currentAppLang === 'th' ? 'คลิกเพื่อดูรายละเอียดอนิเมะ' : 'Click to view anime details'}">
         <div class="anime-bar-img-wrap">
-          <div class="img-skeleton img-skeleton-mini"></div>
-          ${animeImgTag(anime, 'song-anime-poster-mini', 'opacity:0;transition:opacity 0.3s;', loadMode, fetchPri).replace('/>', ' onload="this.previousElementSibling.style.display=\'none\';this.style.opacity=\'1\';" onerror="this.previousElementSibling.style.display=\'none\';" />')}
+          ${animeImgTag(anime, 'song-anime-poster-mini', '', loadMode, fetchPri)}
         </div>
         <div class="song-anime-bar-info">
           <div class="song-anime-bar-sub">${currentAppLang === 'th' ? '🌸 แนะนำตัดกับอนิเมะ:' : '🌸 Matched Anime:'}</div>
@@ -2630,8 +2677,8 @@ function initSplashScreen() {
 //  ระบบซิงค์เพลง/อนิเมะสดอัตโนมัติ และอัปเดตแอป APK ทับของเดิมได้ 100% ไม่ต้องลบแอปเก่า
 // ============================================
 
-const CURRENT_APP_VERSION = 'v2.20261016.0624';
-const CURRENT_VERSION_CODE = 1792130765;
+const CURRENT_APP_VERSION = 'v2.20261016.15';
+const CURRENT_VERSION_CODE = 1792136153;
 const GITHUB_REPO_OWNER = 'bocchi-V2';
 const GITHUB_REPO_NAME = 'typo-music-hub';
 const GITHUB_PAGES_BASE = 'https://bocchi-v2.github.io/typo-music-hub';
@@ -2789,10 +2836,15 @@ async function checkLiveContentUpdate() {
   }
 }
 
-// 3. ตรวจสอบเวอร์ชันไฟล์ APK จาก GitHub Releases เพื่อแจ้งเตือนให้อัปเดตทันที
-async function checkApkAppUpdate() {
+// 3. ตรวจสอบเวอร์ชันไฟล์ APK จาก GitHub Releases เพื่อแจ้งเตือนให้อัปเดต
+async function checkApkAppUpdate(isManualTrigger = false) {
   if (!navigator.onLine) return;
-  if (sessionStorage.getItem('dismissed_apk_banner') === 'true') return;
+  const isNativeApp = window.Capacitor && typeof window.Capacitor.isNativePlatform === 'function' && window.Capacitor.isNativePlatform();
+
+  // ไม่แสดงแบนเนอร์แจ้งเตือน APK บนหน้าเว็บบราวเซอร์โดยอัตโนมัติ (แสดงเฉพาะในแอป Android หรือเมื่อกดตรวจสอบด้วยตนเอง)
+  if (!isNativeApp && !isManualTrigger) return;
+  if (!isManualTrigger && sessionStorage.getItem('dismissed_apk_banner') === 'true') return;
+
   try {
     const res = await fetch(`https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/releases/latest`, {
       headers: { 'Accept': 'application/vnd.github.v3+json' }
@@ -2801,7 +2853,19 @@ async function checkApkAppUpdate() {
     const release = await res.json();
     if (!release || !release.tag_name) return;
 
-    if (release.tag_name !== CURRENT_APP_VERSION && !release.draft && !release.prerelease) {
+    // ตรวจสอบกับ version.json เพื่อดู versionCode ตัวเลขจริง
+    let remoteCode = 0;
+    try {
+      const vRes = await fetch(`${GITHUB_RAW_BASE}/version.json?_t=${Date.now()}`);
+      if (vRes.ok) {
+        const vData = await vRes.json();
+        remoteCode = vData.versionCode || 0;
+      }
+    } catch (ve) {}
+
+    const hasNewerVersion = (remoteCode > CURRENT_VERSION_CODE) || (isManualTrigger && release.tag_name !== CURRENT_APP_VERSION);
+
+    if (hasNewerVersion && !release.draft && !release.prerelease) {
       const banner = document.getElementById('in-app-update-banner');
       const titleEl = document.getElementById('update-banner-title');
       const descEl = document.getElementById('update-banner-desc');
@@ -2821,13 +2885,13 @@ async function checkApkAppUpdate() {
           const apkUrl = (apkAsset && apkAsset.browser_download_url) ? apkAsset.browser_download_url : `https://github.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/releases/latest/download/HaimiyaTypo.apk`;
           btnEl.href = apkUrl;
           btnEl.onclick = (e) => {
-            e.preventDefault();
             showToast(currentAppLang === 'th' ? '🚀 กำลังเริ่มดาวน์โหลดไฟล์อัปเดตเพื่อติดตั้งทันที...' : '🚀 Downloading update...');
-            window.open(apkUrl, '_system');
           };
         }
         banner.style.display = 'block';
       }
+    } else if (isManualTrigger) {
+      showToast(currentAppLang === 'th' ? '✨ คุณกำลังใช้งาน Haimiya Typo เวอร์ชันล่าสุดแล้วครับ!' : '✨ You are on the latest version!');
     }
   } catch (e) {
     console.warn('⚠️ checkApkAppUpdate:', e);

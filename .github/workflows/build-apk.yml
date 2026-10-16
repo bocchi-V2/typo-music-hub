@@ -156,11 +156,25 @@ jobs:
               @Override
               public void onPause() {
                   super.onPause();
-                  // บังคับให้ webView ยังคงทำงาน timers ต่อเนื่อง เพื่อไม่ให้เสียงเพลงกระตุกเมื่อพับหน้าจอ
+                  // บังคับให้ webView ยังคงทำงาน timers และ audio engine ต่อเนื่อง เพื่อไม่ให้เสียงเพลงกระตุกเมื่อพับหน้าจอ
                   try {
                       WebView webView = getBridge().getWebView();
                       if (webView != null) {
                           webView.resumeTimers();
+                          webView.onResume();
+                      }
+                  } catch (Exception e) {}
+              }
+
+              @Override
+              public void onStop() {
+                  super.onStop();
+                  // ป้องกัน Android ปิด audio stream เมื่อกดออกจากแอปหรือล็อกหน้าจอ
+                  try {
+                      WebView webView = getBridge().getWebView();
+                      if (webView != null) {
+                          webView.resumeTimers();
+                          webView.onResume();
                       }
                   } catch (Exception e) {}
               }
@@ -172,6 +186,7 @@ jobs:
                       WebView webView = getBridge().getWebView();
                       if (webView != null) {
                           webView.resumeTimers();
+                          webView.onResume();
                       }
                   } catch (Exception e) {}
               }

@@ -24690,7 +24690,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/0f748c6a2a7c1e351530b67d74b360564b6d6f36",
     "audioFallback": "https://p.scdn.co/mp3-preview/0f748c6a2a7c1e351530b67d74b360564b6d6f36",
-    "coverUrl": "https://media.kitsu.app/anime/1816/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/c8b3b2670a888395daad0e6aad6992ff/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0dlZBJfbNGMfAKYV5SHskT",
     "animeId": 168,
     "previewUrl": "https://p.scdn.co/mp3-preview/0f748c6a2a7c1e351530b67d74b360564b6d6f36"
@@ -24770,7 +24770,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/1905634993803cdaa141e3fb6f8016d9b22266c8",
     "audioFallback": "https://p.scdn.co/mp3-preview/1905634993803cdaa141e3fb6f8016d9b22266c8",
-    "coverUrl": "https://media.kitsu.app/anime/47454/poster_image/medium-647eca310356254a1840a496f41ea57c.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/1ff901574a16f5a1c2789d7cf12a0c57/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4Vbacl2YjS6F56K4TeIqMD",
     "animeId": 208,
     "previewUrl": "https://p.scdn.co/mp3-preview/1905634993803cdaa141e3fb6f8016d9b22266c8"
@@ -24870,7 +24870,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/c8c9ec45072081cfe70f54d8610141f41d93a5a7",
     "audioFallback": "https://p.scdn.co/mp3-preview/c8c9ec45072081cfe70f54d8610141f41d93a5a7",
-    "coverUrl": "https://media.kitsu.app/anime/45598/poster_image/medium-c9bf66231c51a0a552fbce2d91bb3a20.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/50f5acec9a1c5844e6ad3e0c4c44fdc2/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3qllosM3e50u675h2Ftdwu",
     "animeId": 373,
     "previewUrl": "https://p.scdn.co/mp3-preview/c8c9ec45072081cfe70f54d8610141f41d93a5a7"
@@ -24930,7 +24930,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/a4e72a39337d2f5c1bab7db6e7667c3b92619181",
     "audioFallback": "https://p.scdn.co/mp3-preview/a4e72a39337d2f5c1bab7db6e7667c3b92619181",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8271/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/bd683946b5543f5f1379ae8e831a98c5/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0DLs7wKjVzMxsA7YelQby4",
     "animeId": 52,
     "previewUrl": "https://p.scdn.co/mp3-preview/a4e72a39337d2f5c1bab7db6e7667c3b92619181"
@@ -24950,7 +24950,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/a8580b937cc92c7ac7699f522c6460f58b5c9495",
     "audioFallback": "https://p.scdn.co/mp3-preview/a8580b937cc92c7ac7699f522c6460f58b5c9495",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/11614/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e7f174493948d8c77326e39d1a3dc042/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4N0LiJT8lMajHnLv5F5Iho",
     "animeId": 9,
     "previewUrl": "https://p.scdn.co/mp3-preview/a8580b937cc92c7ac7699f522c6460f58b5c9495"
@@ -24970,7 +24970,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/17aa5c4670d6988b092940c2a5c6ba5edc2f169d",
     "audioFallback": "https://p.scdn.co/mp3-preview/17aa5c4670d6988b092940c2a5c6ba5edc2f169d",
-    "coverUrl": "https://media.kitsu.app/anime/46214/poster_image/medium-576598f2a2b60146ac60300c89339f25.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/0ae06c4f5666a23734c8ec248d08b969/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0gvk6fOtFaSfJYV2KU6XtJ",
     "animeId": 363,
     "previewUrl": "https://p.scdn.co/mp3-preview/17aa5c4670d6988b092940c2a5c6ba5edc2f169d"
@@ -25030,7 +25030,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/4cd95d3b182d9d2abd12408013ed7b68969f0000",
     "audioFallback": "https://p.scdn.co/mp3-preview/4cd95d3b182d9d2abd12408013ed7b68969f0000",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/42260/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/69be9640573136285b110200c29c1edb/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6gf3gCFZloUNpXnrZZd15z",
     "animeId": 114,
     "previewUrl": "https://p.scdn.co/mp3-preview/4cd95d3b182d9d2abd12408013ed7b68969f0000"
@@ -25090,7 +25090,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/4134bbf70982962a4fa1212a50d7cf3e82bd67ea",
     "audioFallback": "https://p.scdn.co/mp3-preview/4134bbf70982962a4fa1212a50d7cf3e82bd67ea",
-    "coverUrl": "https://media.kitsu.app/anime/46299/poster_image/medium-3e61ff8c6d376eb1c28c8fc029a59cf6.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ebe838c9d334ced670e901ecc00443b6/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6koztzfSaFalbFxpiaFpjk",
     "animeId": 130,
     "previewUrl": "https://p.scdn.co/mp3-preview/4134bbf70982962a4fa1212a50d7cf3e82bd67ea"
@@ -25110,7 +25110,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/acd309db4d2adbfc9864b4f9b3d2debc8b17d9f3",
     "audioFallback": "https://p.scdn.co/mp3-preview/acd309db4d2adbfc9864b4f9b3d2debc8b17d9f3",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/149/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/bca69583b74747f5bad7c0d16b16b915/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1U7FBWOEucYeC3OdDemnI2",
     "animeId": 344,
     "previewUrl": "https://p.scdn.co/mp3-preview/acd309db4d2adbfc9864b4f9b3d2debc8b17d9f3"
@@ -25170,7 +25170,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/60b64ab9d4e6c30b4fd89368f080c7edd908a2a2",
     "audioFallback": "https://p.scdn.co/mp3-preview/60b64ab9d4e6c30b4fd89368f080c7edd908a2a2",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13503/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/bb75f931d3eb6d7d545fc49c9bc88fc8/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4s7oibu54IVPJo66oIe68r",
     "animeId": 43,
     "previewUrl": "https://p.scdn.co/mp3-preview/60b64ab9d4e6c30b4fd89368f080c7edd908a2a2"
@@ -25230,7 +25230,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/ffc3b29f5f3b647aa8a11ab0eb2ef90b99a24e0f",
     "audioFallback": "https://p.scdn.co/mp3-preview/ffc3b29f5f3b647aa8a11ab0eb2ef90b99a24e0f",
-    "coverUrl": "https://media.kitsu.app/anime/47454/poster_image/medium-647eca310356254a1840a496f41ea57c.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/c6835b14a8a2b290d996928f44a99195/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1jan7lM5FsAiDDTNUVUNec",
     "animeId": 208,
     "previewUrl": "https://p.scdn.co/mp3-preview/ffc3b29f5f3b647aa8a11ab0eb2ef90b99a24e0f"
@@ -25270,7 +25270,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/64eb7bf836ee301826dfc368f8f0f186979eeb2b",
     "audioFallback": "https://p.scdn.co/mp3-preview/64eb7bf836ee301826dfc368f8f0f186979eeb2b",
-    "coverUrl": "https://media.kitsu.app/anime/44032/poster_image/large-5b1626fbfbc64e8c4a4a2a2874be2afd.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/44652151821c4dea23417e2346df196f/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2cIhhuWvVhDHi6tKyN5Ln8",
     "animeId": 84,
     "previewUrl": "https://p.scdn.co/mp3-preview/64eb7bf836ee301826dfc368f8f0f186979eeb2b"
@@ -25350,7 +25350,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/1043a187154734f6ac9f02a53841bdc81d0258b6",
     "audioFallback": "https://p.scdn.co/mp3-preview/1043a187154734f6ac9f02a53841bdc81d0258b6",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/3853/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/50f5acec9a1c5844e6ad3e0c4c44fdc2/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5HhygQkxcB1EdY4kyQh425",
     "animeId": 259,
     "previewUrl": "https://p.scdn.co/mp3-preview/1043a187154734f6ac9f02a53841bdc81d0258b6"
@@ -25370,7 +25370,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/2ba342b9292cffe3b0ad5d3671f8b558bd7bb817",
     "audioFallback": "https://p.scdn.co/mp3-preview/2ba342b9292cffe3b0ad5d3671f8b558bd7bb817",
-    "coverUrl": "https://media.kitsu.app/anime/18/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/065fec115c2bfa77452879cd75efffc3/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1wIHZS46ZS4Ibaj3Pu3tT5",
     "animeId": 200,
     "previewUrl": "https://p.scdn.co/mp3-preview/2ba342b9292cffe3b0ad5d3671f8b558bd7bb817"
@@ -25390,7 +25390,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/127515b9e86d9b8adfdadd22538bcbebefcdc394",
     "audioFallback": "https://p.scdn.co/mp3-preview/127515b9e86d9b8adfdadd22538bcbebefcdc394",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13925/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/2c363496df03aae9455a09bf637a4e47/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1wZWYCb3Lyhk4TuSnuThkK",
     "animeId": 271,
     "previewUrl": "https://p.scdn.co/mp3-preview/127515b9e86d9b8adfdadd22538bcbebefcdc394"
@@ -25450,7 +25450,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/9372bb578c4a6f99602fb4dd9c9bcadcb1dba3fb",
     "audioFallback": "https://p.scdn.co/mp3-preview/9372bb578c4a6f99602fb4dd9c9bcadcb1dba3fb",
-    "coverUrl": "https://media.kitsu.app/anime/45715/poster_image/medium-775439626fef38f5ca5fe646a095dcb5.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/108bb02eaa4199700a0ca9a085401051/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2LCF0vtFyZ5BHaAU3KUSq2",
     "animeId": 228,
     "previewUrl": "https://p.scdn.co/mp3-preview/9372bb578c4a6f99602fb4dd9c9bcadcb1dba3fb"
@@ -25570,7 +25570,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/3d8abdc210e6e10ad6dc983478f294449b3fb989",
     "audioFallback": "https://p.scdn.co/mp3-preview/3d8abdc210e6e10ad6dc983478f294449b3fb989",
-    "coverUrl": "https://media.kitsu.app/anime/41984/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/7e143aade34b1189cb6a0c5fa8755287/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4nUxyQ6GjIOCZRjR7KFeVb",
     "animeId": 172,
     "previewUrl": "https://p.scdn.co/mp3-preview/3d8abdc210e6e10ad6dc983478f294449b3fb989"
@@ -25610,7 +25610,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/38db17acf03a124181618daedaa6e2e3ef2cc5bb",
     "audioFallback": "https://p.scdn.co/mp3-preview/38db17acf03a124181618daedaa6e2e3ef2cc5bb",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13672/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/89e5975a5a12ad76e53333468a3fb937/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2obHilJeVz2oAQIgs3F9oU",
     "animeId": 300,
     "previewUrl": "https://p.scdn.co/mp3-preview/38db17acf03a124181618daedaa6e2e3ef2cc5bb"
@@ -25630,7 +25630,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/57612566a68d53ab8d2002d2944182b0c1f5e629",
     "audioFallback": "https://p.scdn.co/mp3-preview/57612566a68d53ab8d2002d2944182b0c1f5e629",
-    "coverUrl": "https://media.kitsu.app/anime/46945/poster_image/medium-3e8cf2cca6c7c9ad7a93bc4c0d5d6a6b.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b95cf6d1bd92eed1e1cc026e0285d00d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3XdMxcFQF7ytBctzX1b7GW",
     "animeId": 285,
     "previewUrl": "https://p.scdn.co/mp3-preview/57612566a68d53ab8d2002d2944182b0c1f5e629"
@@ -25670,7 +25670,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/3949e120ef8170dfd179ce5fa105aa55c4c0f761",
     "audioFallback": "https://p.scdn.co/mp3-preview/3949e120ef8170dfd179ce5fa105aa55c4c0f761",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13284/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/07d6896c8afea3a87dcf9381c3d0e6c7/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3XmwAZpIMNpTJy8faw3ajD",
     "animeId": 286,
     "previewUrl": "https://p.scdn.co/mp3-preview/3949e120ef8170dfd179ce5fa105aa55c4c0f761"
@@ -25910,7 +25910,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/98af5b6b77831ad55b6d1129148745705a311973",
     "audioFallback": "https://p.scdn.co/mp3-preview/98af5b6b77831ad55b6d1129148745705a311973",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/43321/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/4e803aeb014d512c960b5cc7ccaa1800/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4qW3BbQAwZsrnu8a3ZRdyT",
     "animeId": 30,
     "previewUrl": "https://p.scdn.co/mp3-preview/98af5b6b77831ad55b6d1129148745705a311973"
@@ -25930,7 +25930,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/bf5ab98492256120bd9c48658e9c899c8692f77f",
     "audioFallback": "https://p.scdn.co/mp3-preview/bf5ab98492256120bd9c48658e9c899c8692f77f",
-    "coverUrl": "https://media.kitsu.app/anime/5993/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/fea07231e297ee0c926aad963fc333bd/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7yNf9YjeO5JXUE3JEBgnYc",
     "animeId": 162,
     "previewUrl": "https://p.scdn.co/mp3-preview/bf5ab98492256120bd9c48658e9c899c8692f77f"
@@ -25970,7 +25970,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/0a36635f94b4e44e6e4f5b7edb3f501d458812d9",
     "audioFallback": "https://p.scdn.co/mp3-preview/0a36635f94b4e44e6e4f5b7edb3f501d458812d9",
-    "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/73eb46e655061c72096b67f70a8dc609/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1qbmS6ep2hbBRaEZFpn7BX",
     "animeId": 241,
     "previewUrl": "https://p.scdn.co/mp3-preview/0a36635f94b4e44e6e4f5b7edb3f501d458812d9"
@@ -25990,7 +25990,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/f82f2f3e714a66934fc309e357cbf249ad045f62",
     "audioFallback": "https://p.scdn.co/mp3-preview/f82f2f3e714a66934fc309e357cbf249ad045f62",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/10/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/829561655b52dcf1525d4deb452b0986/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7ujApz6iFP3PmKIDGcaGbe",
     "animeId": 104,
     "previewUrl": "https://p.scdn.co/mp3-preview/f82f2f3e714a66934fc309e357cbf249ad045f62"
@@ -26090,7 +26090,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/369b246146e99c2f6ebabf5dfb9e20df98b8fe65",
     "audioFallback": "https://p.scdn.co/mp3-preview/369b246146e99c2f6ebabf5dfb9e20df98b8fe65",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/1376/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ea9782202a27ecb386625846177f8f30/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0FZd4IaxB12sUTKSUUGwWq",
     "animeId": 263,
     "previewUrl": "https://p.scdn.co/mp3-preview/369b246146e99c2f6ebabf5dfb9e20df98b8fe65"
@@ -26110,7 +26110,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/1de9b315e1aa811aedaf905b1058b668b2d3146e",
     "audioFallback": "https://p.scdn.co/mp3-preview/1de9b315e1aa811aedaf905b1058b668b2d3146e",
-    "coverUrl": "https://media.kitsu.app/anime/46336/poster_image/medium-162a579fe7a25c1b188532bb8aaa7129.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/cccf5e9af10b6aae96f5cdd5a27c2aff/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/514joG57v4yKTsfQmz7stz",
     "animeId": 242,
     "previewUrl": "https://p.scdn.co/mp3-preview/1de9b315e1aa811aedaf905b1058b668b2d3146e"
@@ -26130,7 +26130,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/f1e7acbb1c04e8ba21d08d2402cf069a8eed8f96",
     "audioFallback": "https://p.scdn.co/mp3-preview/f1e7acbb1c04e8ba21d08d2402cf069a8eed8f96",
-    "coverUrl": "https://media.kitsu.app/anime/45532/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a373d43175c979ba4b843d993eefd700/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2oWFJJW9d1bIra3zHjR6GO",
     "animeId": 181,
     "previewUrl": "https://p.scdn.co/mp3-preview/f1e7acbb1c04e8ba21d08d2402cf069a8eed8f96"
@@ -26170,7 +26170,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/6c85f9e4507e93478ee4adb7782f1a35a9d0e1ce",
     "audioFallback": "https://p.scdn.co/mp3-preview/6c85f9e4507e93478ee4adb7782f1a35a9d0e1ce",
-    "coverUrl": "https://media.kitsu.app/anime/48534/poster_image/medium-c38c15266ae228974e8c2a00d776ea92.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/58427e55d8d80f5c748937a1bdb7ed49/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7MZHqgTVTnN6xZGYAcEEAf",
     "animeId": 246,
     "previewUrl": "https://p.scdn.co/mp3-preview/6c85f9e4507e93478ee4adb7782f1a35a9d0e1ce"
@@ -26190,7 +26190,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/7d860804d259f81b4a7bc04900a5410d99995fd4",
     "audioFallback": "https://p.scdn.co/mp3-preview/7d860804d259f81b4a7bc04900a5410d99995fd4",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/46722/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/83ac3f92f396e73b7f6633bfeb516056/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3oTuTpF1F3A7rEC6RKsMRz",
     "animeId": 397,
     "previewUrl": "https://p.scdn.co/mp3-preview/7d860804d259f81b4a7bc04900a5410d99995fd4"
@@ -26210,7 +26210,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/4feadd4524eee165380031ed90bdff09daacb902",
     "audioFallback": "https://p.scdn.co/mp3-preview/4feadd4524eee165380031ed90bdff09daacb902",
-    "coverUrl": "https://media.kitsu.app/anime/44196/poster_image/medium-a7b52a1e9cea5a04b29ee6878fbff923.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/327e5092efa34fbcf4760be0d0056825/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4IAWZw00ZI9DLKDjesx86u",
     "animeId": 364,
     "previewUrl": "https://p.scdn.co/mp3-preview/4feadd4524eee165380031ed90bdff09daacb902"
@@ -26230,7 +26230,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d990a355be1d84adc0882bda733862fba7767e70",
     "audioFallback": "https://p.scdn.co/mp3-preview/d990a355be1d84adc0882bda733862fba7767e70",
-    "coverUrl": "https://media.kitsu.app/anime/46481/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/323416544881c058d541423ca28b7c8f/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5BZsQlgw21vDOAjoqkNgKb",
     "animeId": 196,
     "previewUrl": "https://p.scdn.co/mp3-preview/d990a355be1d84adc0882bda733862fba7767e70"
@@ -26250,7 +26250,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/c5bbc379559c92c9d07e2cebf4a1e14029d01331",
     "audioFallback": "https://p.scdn.co/mp3-preview/c5bbc379559c92c9d07e2cebf4a1e14029d01331",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/719/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/569b5b455a27016ba50939e53df884a2/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/37UCSVSqiPGdR1DijOFyYY",
     "animeId": 337,
     "previewUrl": "https://p.scdn.co/mp3-preview/c5bbc379559c92c9d07e2cebf4a1e14029d01331"
@@ -26290,7 +26290,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/0194ff4186a1f53bff2cdf6d7660289ca8eb0e7e",
     "audioFallback": "https://p.scdn.co/mp3-preview/0194ff4186a1f53bff2cdf6d7660289ca8eb0e7e",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/1415/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/93d6f96697c7742525cdc245fab5d9a9/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/55lijDD6OAjLFFUHU9tcDm",
     "animeId": 102,
     "previewUrl": "https://p.scdn.co/mp3-preview/0194ff4186a1f53bff2cdf6d7660289ca8eb0e7e"
@@ -26310,7 +26310,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/7600d81f153683eb1265f92aa5567cc313658481",
     "audioFallback": "https://p.scdn.co/mp3-preview/7600d81f153683eb1265f92aa5567cc313658481",
-    "coverUrl": "https://media.kitsu.app/anime/41979/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/cca6dba02653fbdf9694ae7bc8d6a195/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6QKpHmO41jkd9pTp0FfmHs",
     "animeId": 173,
     "previewUrl": "https://p.scdn.co/mp3-preview/7600d81f153683eb1265f92aa5567cc313658481"
@@ -26330,7 +26330,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/4e369f5cce22a4bcc212166ee320dc8679ce9c79",
     "audioFallback": "https://p.scdn.co/mp3-preview/4e369f5cce22a4bcc212166ee320dc8679ce9c79",
-    "coverUrl": "https://media.kitsu.app/anime/47687/poster_image/medium-1b60c7e721df919140c4dd564810afd5.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ac276a8bb3f6e7045b3579258499b8bb/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5KTcGJKm4HgLhLt8Tc7EQ5",
     "animeId": 222,
     "previewUrl": "https://p.scdn.co/mp3-preview/4e369f5cce22a4bcc212166ee320dc8679ce9c79"
@@ -26350,7 +26350,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/03a64c71a3d7477335cd39a069e0e175e65798b6",
     "audioFallback": "https://p.scdn.co/mp3-preview/03a64c71a3d7477335cd39a069e0e175e65798b6",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/45561/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/fee004942feff253f7bbca63740ab519/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0QPdjsMOUhwouq1NS3HwfQ",
     "animeId": 328,
     "previewUrl": "https://p.scdn.co/mp3-preview/03a64c71a3d7477335cd39a069e0e175e65798b6"
@@ -26370,7 +26370,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/37c21b6b0df9b7156527d0729a58b6db37c88a0a",
     "audioFallback": "https://p.scdn.co/mp3-preview/37c21b6b0df9b7156527d0729a58b6db37c88a0a",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/2026/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/272cc67ce5d91682cc7281f171241f6c/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/42UBPzRMh5yyz0EDPr6fr1",
     "animeId": 341,
     "previewUrl": "https://p.scdn.co/mp3-preview/37c21b6b0df9b7156527d0729a58b6db37c88a0a"
@@ -26410,7 +26410,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/cc3201e7ed85d09f1683e591fd2eb964ea7247a6",
     "audioFallback": "https://p.scdn.co/mp3-preview/cc3201e7ed85d09f1683e591fd2eb964ea7247a6",
-    "coverUrl": "https://media.kitsu.app/anime/48618/poster_image/medium-3ef7ecfe0da23a4d4ee757d46dfcd1db.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/f2be3085c69d623de17f54115c31514e/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1DwscornXpj8fmOmYVlqZt",
     "animeId": 211,
     "previewUrl": "https://p.scdn.co/mp3-preview/cc3201e7ed85d09f1683e591fd2eb964ea7247a6"
@@ -26430,7 +26430,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/e0ea7353932017364bdb12dc776e89b360abac42",
     "audioFallback": "https://p.scdn.co/mp3-preview/e0ea7353932017364bdb12dc776e89b360abac42",
-    "coverUrl": "https://media.kitsu.app/anime/13670/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b7aaad0f696b5dbfe7f1ebf2c72346a5/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6sGIMrtIzQjdzNndVxe397",
     "animeId": 197,
     "previewUrl": "https://p.scdn.co/mp3-preview/e0ea7353932017364bdb12dc776e89b360abac42"
@@ -26450,7 +26450,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d3b9a6318dcc942387b69c677a80377044856d69",
     "audioFallback": "https://p.scdn.co/mp3-preview/d3b9a6318dcc942387b69c677a80377044856d69",
-    "coverUrl": "https://media.kitsu.app/anime/12976/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d68fc5f1f260273691180b9f4b77b354/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/12bYYQaLqHliSXvRIYlq8G",
     "animeId": 138,
     "previewUrl": "https://p.scdn.co/mp3-preview/d3b9a6318dcc942387b69c677a80377044856d69"
@@ -26470,7 +26470,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/30dc1adb43c170165bb8091e788b55f26f2fc672",
     "audioFallback": "https://p.scdn.co/mp3-preview/30dc1adb43c170165bb8091e788b55f26f2fc672",
-    "coverUrl": "https://media.kitsu.app/anime/46874/poster_image/medium-77ce4d83e28e24e71cf7fdcbe0df8e28.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d7353e7f013511372451627aed94c974/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/70pVCVMGjmIWPbWXDwf11e",
     "animeId": 292,
     "previewUrl": "https://p.scdn.co/mp3-preview/30dc1adb43c170165bb8091e788b55f26f2fc672"
@@ -26490,7 +26490,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d46acdc8f94c6fa471388c7a10c619bb08c88197",
     "audioFallback": "https://p.scdn.co/mp3-preview/d46acdc8f94c6fa471388c7a10c619bb08c88197",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/11110/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/49d177885b51542d73344ce2359ca1d5/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7tICCrK3CcyRFKza7yrR0z",
     "animeId": 59,
     "previewUrl": "https://p.scdn.co/mp3-preview/d46acdc8f94c6fa471388c7a10c619bb08c88197"
@@ -26510,7 +26510,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/90e14dd98b61140a5259ce400de788704d406742",
     "audioFallback": "https://p.scdn.co/mp3-preview/90e14dd98b61140a5259ce400de788704d406742",
-    "coverUrl": "https://media.kitsu.app/anime/42070/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/48508c979e3b80e675c0f90ee052a43d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7e4zDInS6tA2jwzphvs2Ay",
     "animeId": 182,
     "previewUrl": "https://p.scdn.co/mp3-preview/90e14dd98b61140a5259ce400de788704d406742"
@@ -26530,7 +26530,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/5fada77b20c9b592ea707bf74334195c2b8a125f",
     "audioFallback": "https://p.scdn.co/mp3-preview/5fada77b20c9b592ea707bf74334195c2b8a125f",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/10740/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/c0653659b83b9f42e2476d7990e2b4b2/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2LSmH4vxyRhkJ2pPqcmkXw",
     "animeId": 55,
     "previewUrl": "https://p.scdn.co/mp3-preview/5fada77b20c9b592ea707bf74334195c2b8a125f"
@@ -26550,7 +26550,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/b90cdabeb3093431041841713c812e70bafb1478",
     "audioFallback": "https://p.scdn.co/mp3-preview/b90cdabeb3093431041841713c812e70bafb1478",
-    "coverUrl": "https://media.kitsu.app/anime/46415/poster_image/medium-09a8e8a7b821309beba30e1b49a5369e.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/5386f47fd2360d8de97854fb57540010/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6oUUmBcUbZa5O48V5pjgAD",
     "animeId": 227,
     "previewUrl": "https://p.scdn.co/mp3-preview/b90cdabeb3093431041841713c812e70bafb1478"
@@ -26570,7 +26570,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/4c09f53084e36b6c85f8b2a44893c226a3194f42",
     "audioFallback": "https://p.scdn.co/mp3-preview/4c09f53084e36b6c85f8b2a44893c226a3194f42",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7700/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/17740f41f75d6c7af202fbf4b6dc6782/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5ViLKrbyL3HD6wsq3AB9eI",
     "animeId": 91,
     "previewUrl": "https://p.scdn.co/mp3-preview/4c09f53084e36b6c85f8b2a44893c226a3194f42"
@@ -26590,7 +26590,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/b55c8fa4e31192a3e35ad53d3e889733f9cd9da1",
     "audioFallback": "https://p.scdn.co/mp3-preview/b55c8fa4e31192a3e35ad53d3e889733f9cd9da1",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/41312/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ab1abe2d073bf5a55943ccc6dff8bcdc/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0kl6Ozan3fuUdCl6TlB15v",
     "animeId": 76,
     "previewUrl": "https://p.scdn.co/mp3-preview/b55c8fa4e31192a3e35ad53d3e889733f9cd9da1"
@@ -26610,7 +26610,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/acafb81cc609de53b9687a40f214f79d828b6947",
     "audioFallback": "https://p.scdn.co/mp3-preview/acafb81cc609de53b9687a40f214f79d828b6947",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/42/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a3b8e9462db0c02e082c706c624f9811/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/68lbSrXDORS51pmyjZv712",
     "animeId": 336,
     "previewUrl": "https://p.scdn.co/mp3-preview/acafb81cc609de53b9687a40f214f79d828b6947"
@@ -30650,7 +30650,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/cd063b7aca9fac2dae86bfe4cae7cc081c78ad0c",
     "audioFallback": "https://p.scdn.co/mp3-preview/cd063b7aca9fac2dae86bfe4cae7cc081c78ad0c",
-    "coverUrl": "https://media.kitsu.app/anime/46140/poster_image/medium-09c31317676fc3251c6543b5936780c1.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/49a6125cebcb0daf8df19bce1133a033/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/36OWvhv70Cu3LGC92N79qs",
     "animeId": 123,
     "previewUrl": "https://p.scdn.co/mp3-preview/cd063b7aca9fac2dae86bfe4cae7cc081c78ad0c"
@@ -30710,7 +30710,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/b9e5ee738804630c933f51e5d7b61d88b5aebde0",
     "audioFallback": "https://p.scdn.co/mp3-preview/b9e5ee738804630c933f51e5d7b61d88b5aebde0",
-    "coverUrl": "https://media.kitsu.app/anime/14027/poster_image/medium-2ccfd6de3c64f3e8340230e7758646a1.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/0a08373d1250b2ffed5fd2236e12a14d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5F6Zfgz34H4UtJkCcDUlPs",
     "animeId": 409,
     "previewUrl": "https://p.scdn.co/mp3-preview/b9e5ee738804630c933f51e5d7b61d88b5aebde0"
@@ -30830,7 +30830,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/548dbac80c34a3d6f28942cbe549ebfccd6f9d9b",
     "audioFallback": "https://p.scdn.co/mp3-preview/548dbac80c34a3d6f28942cbe549ebfccd6f9d9b",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7359/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/80ed41dc6b6d9c176625779eeefc227e/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2L54tWSpB5yeAYvienaKTT",
     "animeId": 110,
     "previewUrl": "https://p.scdn.co/mp3-preview/548dbac80c34a3d6f28942cbe549ebfccd6f9d9b"
@@ -30930,7 +30930,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/78cfa23a756995cb67c14c39cb78fe91da4f411c",
     "audioFallback": "https://p.scdn.co/mp3-preview/78cfa23a756995cb67c14c39cb78fe91da4f411c",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/47743/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/8e13f82c32b1d8dc025b7d349a54c6fd/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6vn8nzgxByxZDKLmIKYAkn",
     "animeId": 384,
     "previewUrl": "https://p.scdn.co/mp3-preview/78cfa23a756995cb67c14c39cb78fe91da4f411c"
@@ -31070,7 +31070,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/b443b75a3242b21c3b98c768c654fb6d0dfbdb4c",
     "audioFallback": "https://p.scdn.co/mp3-preview/b443b75a3242b21c3b98c768c654fb6d0dfbdb4c",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/42551/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/addc99f5946374008719d85230a8405d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5QxNmQBXpLPemzpDvsuiLM",
     "animeId": 386,
     "previewUrl": "https://p.scdn.co/mp3-preview/b443b75a3242b21c3b98c768c654fb6d0dfbdb4c"
@@ -31150,7 +31150,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/49532c968b6e16c3639b0790dab3f34d175c048e",
     "audioFallback": "https://p.scdn.co/mp3-preview/49532c968b6e16c3639b0790dab3f34d175c048e",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/11110/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/9b85023e946ae3b1dd79f5f9f2e576be/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5G9QIsPENzaSjyipcQQAqL",
     "animeId": 59,
     "previewUrl": "https://p.scdn.co/mp3-preview/49532c968b6e16c3639b0790dab3f34d175c048e"
@@ -31170,7 +31170,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/95bfb15a5c3e5efebccffa18d49104ca26bda6cd",
     "audioFallback": "https://p.scdn.co/mp3-preview/95bfb15a5c3e5efebccffa18d49104ca26bda6cd",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/42792/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ed165868487a2a73820b2306736102e2/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5XhAqG6dRhLYJb2QF6WhL4",
     "animeId": 332,
     "previewUrl": "https://p.scdn.co/mp3-preview/95bfb15a5c3e5efebccffa18d49104ca26bda6cd"
@@ -31330,7 +31330,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/9562c07dfa8211a5c4812bf279f3e775c2277145",
     "audioFallback": "https://p.scdn.co/mp3-preview/9562c07dfa8211a5c4812bf279f3e775c2277145",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13995/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ccaf6031b10cf0eeabbdd96eb4244ae7/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/24wXz2WuaF02y0mrKNPMsN",
     "animeId": 268,
     "previewUrl": "https://p.scdn.co/mp3-preview/9562c07dfa8211a5c4812bf279f3e775c2277145"
@@ -31350,7 +31350,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/b6a5ef61cadfcfaaa618d54334da5f3b5d2b6d49",
     "audioFallback": "https://p.scdn.co/mp3-preview/b6a5ef61cadfcfaaa618d54334da5f3b5d2b6d49",
-    "coverUrl": "https://media.kitsu.app/anime/41277/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/f4860dd474f5325ce99ae3000e7ef08b/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1OGSYElgBhsVzc1SPIVOQY",
     "animeId": 144,
     "previewUrl": "https://p.scdn.co/mp3-preview/b6a5ef61cadfcfaaa618d54334da5f3b5d2b6d49"
@@ -31370,7 +31370,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/b9e5ee738804630c933f51e5d7b61d88b5aebde0",
     "audioFallback": "https://p.scdn.co/mp3-preview/b9e5ee738804630c933f51e5d7b61d88b5aebde0",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7882/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/0a08373d1250b2ffed5fd2236e12a14d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5F6Zfgz34H4UtJkCcDUlPs",
     "animeId": 62,
     "previewUrl": "https://p.scdn.co/mp3-preview/b9e5ee738804630c933f51e5d7b61d88b5aebde0"
@@ -31470,7 +31470,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/4c37249b9fc2962f5ef829e216314e9caeaee367",
     "audioFallback": "https://p.scdn.co/mp3-preview/4c37249b9fc2962f5ef829e216314e9caeaee367",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6169/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/99578b0bb8c838383c414a5b62b5e15d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2009X8GyWTqyxIdzAEYW6N",
     "animeId": 12,
     "previewUrl": "https://p.scdn.co/mp3-preview/4c37249b9fc2962f5ef829e216314e9caeaee367"
@@ -31490,7 +31490,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/daf5f9aeeab319f4cf5c17682d75c18cc1e2ae93",
     "audioFallback": "https://p.scdn.co/mp3-preview/daf5f9aeeab319f4cf5c17682d75c18cc1e2ae93",
-    "coverUrl": "https://media.kitsu.app/anime/13017/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/37a20b62f754b7ff5a9a29a8f2fe9d27/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7qjZnBKE73H4Oxkopwulqe",
     "animeId": 176,
     "previewUrl": "https://p.scdn.co/mp3-preview/daf5f9aeeab319f4cf5c17682d75c18cc1e2ae93"
@@ -31510,7 +31510,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/c660e524e84990f7687728af3ba09f9e071e585d",
     "audioFallback": "https://p.scdn.co/mp3-preview/c660e524e84990f7687728af3ba09f9e071e585d",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/41724/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/05589991c61f6a7305e78aec8414b5ac/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4WFgvKVfEhb3IUAFGrutTR",
     "animeId": 305,
     "previewUrl": "https://p.scdn.co/mp3-preview/c660e524e84990f7687728af3ba09f9e071e585d"
@@ -31530,7 +31530,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/964acb3eecee3568fb10baf97d094b34887fb292",
     "audioFallback": "https://p.scdn.co/mp3-preview/964acb3eecee3568fb10baf97d094b34887fb292",
-    "coverUrl": "https://media.kitsu.app/anime/46954/poster_image/medium-42b1d7dde1b056e21b1a96c48df5a64c.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/13257668a9231947a74dcbd41c6e3933/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3QGsuHI8jO1Rx4JWLUh9jd",
     "animeId": 225,
     "previewUrl": "https://p.scdn.co/mp3-preview/964acb3eecee3568fb10baf97d094b34887fb292"
@@ -31550,7 +31550,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/04815fdb32f409e135fbdbcaf8ddb70858a8a7f2",
     "audioFallback": "https://p.scdn.co/mp3-preview/04815fdb32f409e135fbdbcaf8ddb70858a8a7f2",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6437/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/3b2bfb1e50c0f46868e1aa6c4c1dd072/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2lpygKqzPFtItQ4ss3cgfb",
     "animeId": 288,
     "previewUrl": "https://p.scdn.co/mp3-preview/04815fdb32f409e135fbdbcaf8ddb70858a8a7f2"
@@ -31570,7 +31570,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/08d084852368db5ef64c30ae9281d66a610b0605",
     "audioFallback": "https://p.scdn.co/mp3-preview/08d084852368db5ef64c30ae9281d66a610b0605",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/42068/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d0bed55a0efb3c5c3ddb3dacda67d9b3/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/53iuhJlwXhSER5J2IYYv1W",
     "animeId": 81,
     "previewUrl": "https://p.scdn.co/mp3-preview/08d084852368db5ef64c30ae9281d66a610b0605"
@@ -31590,7 +31590,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/20284474537394c92c98e543b21efe174ff2599d",
     "audioFallback": "https://p.scdn.co/mp3-preview/20284474537394c92c98e543b21efe174ff2599d",
-    "coverUrl": "https://media.kitsu.app/anime/7158/poster_image/medium-dc5b9aa567da90538903f8b0b329d585.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d63b6ce2589b96cee3e6aa85d996023a/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7ygpwy2qP3NbrxVkHvUhXY",
     "animeId": 66,
     "previewUrl": "https://p.scdn.co/mp3-preview/20284474537394c92c98e543b21efe174ff2599d"
@@ -31610,7 +31610,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/848b1bd5544e82f62f9cfcec65362d0f5369781f",
     "audioFallback": "https://p.scdn.co/mp3-preview/848b1bd5544e82f62f9cfcec65362d0f5369781f",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/11469/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ecff532dd84c6538099b58baefccb8fb/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/003vvx7Niy0yvhvHt4a68B",
     "animeId": 274,
     "previewUrl": "https://p.scdn.co/mp3-preview/848b1bd5544e82f62f9cfcec65362d0f5369781f"
@@ -31630,7 +31630,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/7d860804d259f81b4a7bc04900a5410d99995fd4",
     "audioFallback": "https://p.scdn.co/mp3-preview/7d860804d259f81b4a7bc04900a5410d99995fd4",
-    "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/83ac3f92f396e73b7f6633bfeb516056/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3oTuTpF1F3A7rEC6RKsMRz",
     "animeId": 241,
     "previewUrl": "https://p.scdn.co/mp3-preview/7d860804d259f81b4a7bc04900a5410d99995fd4"
@@ -31650,7 +31650,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/92d7997134bb18b99eb5fdc65926e4ef613f9781",
     "audioFallback": "https://p.scdn.co/mp3-preview/92d7997134bb18b99eb5fdc65926e4ef613f9781",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/3128/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/316afdaed93c4a18cf730389648d03d6/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1JSTJqkT5qHq8MDJnJbRE1",
     "animeId": 83,
     "previewUrl": "https://p.scdn.co/mp3-preview/92d7997134bb18b99eb5fdc65926e4ef613f9781"
@@ -31710,7 +31710,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/f3d864283774529a2378100c912bfacb614db751",
     "audioFallback": "https://p.scdn.co/mp3-preview/f3d864283774529a2378100c912bfacb614db751",
-    "coverUrl": "https://media.kitsu.app/anime/44012/poster_image/medium-b7adf5b796a614ae3630153229fe4469.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/1dd56fd8824492e1a5106c99a00a85ec/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/70LcF31zb1H0PyJoS1Sx1r",
     "animeId": 224,
     "previewUrl": "https://p.scdn.co/mp3-preview/f3d864283774529a2378100c912bfacb614db751"
@@ -31730,7 +31730,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/ac9e92e0be540fba0672949205955fe682862b3b",
     "audioFallback": "https://p.scdn.co/mp3-preview/ac9e92e0be540fba0672949205955fe682862b3b",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/10740/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/23f94611c678b0c16b2a8336fa420e3f/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0JXXNGljqupsJaZsgSbMZV",
     "animeId": 55,
     "previewUrl": "https://p.scdn.co/mp3-preview/ac9e92e0be540fba0672949205955fe682862b3b"
@@ -31750,7 +31750,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/4feadd4524eee165380031ed90bdff09daacb902",
     "audioFallback": "https://p.scdn.co/mp3-preview/4feadd4524eee165380031ed90bdff09daacb902",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/176/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/327e5092efa34fbcf4760be0d0056825/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4IAWZw00ZI9DLKDjesx86u",
     "animeId": 4,
     "previewUrl": "https://p.scdn.co/mp3-preview/4feadd4524eee165380031ed90bdff09daacb902"
@@ -31770,7 +31770,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/07de30bde8363d9ff78b72339245c151f67af451",
     "audioFallback": "https://p.scdn.co/mp3-preview/07de30bde8363d9ff78b72339245c151f67af451",
-    "coverUrl": "https://media.kitsu.app/anime/48312/poster_image/medium-5a3bba84ddb645a765b4714655abf044.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/64e54e307bd5e2bdb27ffeb662fd910d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5XeFesFbtLpXzIVDNQP22n",
     "animeId": 203,
     "previewUrl": "https://p.scdn.co/mp3-preview/07de30bde8363d9ff78b72339245c151f67af451"
@@ -31970,7 +31970,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/53a6217761f8fdfcff92189cafbbd1cc21fdb813",
     "audioFallback": "https://p.scdn.co/mp3-preview/53a6217761f8fdfcff92189cafbbd1cc21fdb813",
-    "coverUrl": "https://media.kitsu.app/anime/48312/poster_image/medium-5a3bba84ddb645a765b4714655abf044.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b29d1070377b784384c2456093f96a66/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1IHWl5LamUGEuP4ozKQSXZ",
     "animeId": 240,
     "previewUrl": "https://p.scdn.co/mp3-preview/53a6217761f8fdfcff92189cafbbd1cc21fdb813"
@@ -32010,7 +32010,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/08df96b9536f855e703d8503770a348387b65025",
     "audioFallback": "https://p.scdn.co/mp3-preview/08df96b9536f855e703d8503770a348387b65025",
-    "coverUrl": "https://media.kitsu.app/anime/46300/poster_image/medium-c1c025bbee42bed048e628b1eae278c0.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e4420de91f9390e543b5f5495a389cab/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5nEdwtSv0qqeE0l4o1lR4q",
     "animeId": 232,
     "previewUrl": "https://p.scdn.co/mp3-preview/08df96b9536f855e703d8503770a348387b65025"
@@ -32030,7 +32030,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/273838848cd631b92cce79f1e22d154860a5975b",
     "audioFallback": "https://p.scdn.co/mp3-preview/273838848cd631b92cce79f1e22d154860a5975b",
-    "coverUrl": "https://media.kitsu.app/anime/48312/poster_image/medium-5a3bba84ddb645a765b4714655abf044.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d98eaccfbb945bdf68241d6de7fe6a49/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6J5kc12BW5HuP3d7C3vvx8",
     "animeId": 404,
     "previewUrl": "https://p.scdn.co/mp3-preview/273838848cd631b92cce79f1e22d154860a5975b"
@@ -32050,7 +32050,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/f731c1c9ad9342d29a15fb571b5078457ea0ed4f",
     "audioFallback": "https://p.scdn.co/mp3-preview/f731c1c9ad9342d29a15fb571b5078457ea0ed4f",
-    "coverUrl": "https://anifume.com/images/48/Horimiya-Piece.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/1494eab6b5e209bbaeeab5bbdfc1a9fa/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1xOqGUkyxGQRdCvGpvWKmL",
     "animeId": 153,
     "previewUrl": "https://p.scdn.co/mp3-preview/f731c1c9ad9342d29a15fb571b5078457ea0ed4f"
@@ -32070,7 +32070,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/2e6e2753fa6ff7e93b3f975b1585de80f1148f03",
     "audioFallback": "https://p.scdn.co/mp3-preview/2e6e2753fa6ff7e93b3f975b1585de80f1148f03",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/48366/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/8d0164d7161ac43452ec58201e56e3a4/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5BKKy9fIJL5uM9fz1SnqyP",
     "animeId": 331,
     "previewUrl": "https://p.scdn.co/mp3-preview/2e6e2753fa6ff7e93b3f975b1585de80f1148f03"
@@ -32090,7 +32090,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/5c5c401b6ca3b301e70897576dcf50272295560f",
     "audioFallback": "https://p.scdn.co/mp3-preview/5c5c401b6ca3b301e70897576dcf50272295560f",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/12/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/9da56c4f33a825f16a6ed3db0cd123f9/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4ek0oGBCJal4Gxz8zEnMjn",
     "animeId": 402,
     "previewUrl": "https://p.scdn.co/mp3-preview/5c5c401b6ca3b301e70897576dcf50272295560f"
@@ -32110,7 +32110,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/631b9cec18551169382ef4be4f01e40bc5523441",
     "audioFallback": "https://p.scdn.co/mp3-preview/631b9cec18551169382ef4be4f01e40bc5523441",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/11606/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b868399da682f34dcd7d98af1c0de80b/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5yvVYFDUpbnjcnRBgjwTzM",
     "animeId": 276,
     "previewUrl": "https://p.scdn.co/mp3-preview/631b9cec18551169382ef4be4f01e40bc5523441"
@@ -32130,7 +32130,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/93046e987d8c5bfdbeea2768ac1a8ecea17bd7e0",
     "audioFallback": "https://p.scdn.co/mp3-preview/93046e987d8c5bfdbeea2768ac1a8ecea17bd7e0",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/47625/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/012b27906b430a37ec1d8f793d5c4fa6/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0KKkJNfGyhkQ5aFogxQAPU",
     "animeId": 350,
     "previewUrl": "https://p.scdn.co/mp3-preview/93046e987d8c5bfdbeea2768ac1a8ecea17bd7e0"
@@ -32150,7 +32150,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/a4069cd6bf3c81860e7e532efa344df07707e040",
     "audioFallback": "https://p.scdn.co/mp3-preview/a4069cd6bf3c81860e7e532efa344df07707e040",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/42438/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/91a0ad607c0ed67831326f055f66afdf/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3C0nOe05EIt1390bVABLyN",
     "animeId": 298,
     "previewUrl": "https://p.scdn.co/mp3-preview/a4069cd6bf3c81860e7e532efa344df07707e040"
@@ -32170,7 +32170,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/a90ca82468d0612991195e07a87c628d86b3a932",
     "audioFallback": "https://p.scdn.co/mp3-preview/a90ca82468d0612991195e07a87c628d86b3a932",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/41446/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/81045a8cf4b276512a24923c8a70103a/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0myRViRgmQ3J8izICXEAVO",
     "animeId": 382,
     "previewUrl": "https://p.scdn.co/mp3-preview/a90ca82468d0612991195e07a87c628d86b3a932"
@@ -32190,7 +32190,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d318a788a3a6a1ecb8cd0f1c924cef18832ff8d2",
     "audioFallback": "https://p.scdn.co/mp3-preview/d318a788a3a6a1ecb8cd0f1c924cef18832ff8d2",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/149/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/56c02d3764f5a078ceecd27b64b7d789/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0COqiPhxzoWICwFCS4eZcp",
     "animeId": 344,
     "previewUrl": "https://p.scdn.co/mp3-preview/d318a788a3a6a1ecb8cd0f1c924cef18832ff8d2"
@@ -32210,7 +32210,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/6688701f422f0aa9747b387d3db26381337798bc",
     "audioFallback": "https://p.scdn.co/mp3-preview/6688701f422f0aa9747b387d3db26381337798bc",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/148/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/0c22c441eb7f5519886c8a386a963e7c/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6fl4Gu0lJm5hc8FM5JzCZD",
     "animeId": 75,
     "previewUrl": "https://p.scdn.co/mp3-preview/6688701f422f0aa9747b387d3db26381337798bc"
@@ -32230,7 +32230,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/6732c1a991a5b86cb440bd31d837709cc43e4d7b",
     "audioFallback": "https://p.scdn.co/mp3-preview/6732c1a991a5b86cb440bd31d837709cc43e4d7b",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/41724/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/fb3c19c1e1e0ce209e3e0ebe6967f509/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4xoY4lZNoTjEuHsSmhgF1G",
     "animeId": 305,
     "previewUrl": "https://p.scdn.co/mp3-preview/6732c1a991a5b86cb440bd31d837709cc43e4d7b"
@@ -32250,7 +32250,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d86751b48a612271609b69f011dde00d003010b0",
     "audioFallback": "https://p.scdn.co/mp3-preview/d86751b48a612271609b69f011dde00d003010b0",
-    "coverUrl": "https://media.kitsu.app/anime/47454/poster_image/medium-647eca310356254a1840a496f41ea57c.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/4ac0f6eeb7811cd74057972466df48a0/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1j15Ar0qGDzIR0v3CQv3JL",
     "animeId": 208,
     "previewUrl": "https://p.scdn.co/mp3-preview/d86751b48a612271609b69f011dde00d003010b0"
@@ -32270,7 +32270,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/6f57db4d7d782298f0d2de9097a45f4671cb2fd6",
     "audioFallback": "https://p.scdn.co/mp3-preview/6f57db4d7d782298f0d2de9097a45f4671cb2fd6",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/1799/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/2617c23bf074ce73c0c3a05afaddb6f2/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6epn3r7S14KUqlReYr77hA",
     "animeId": 318,
     "previewUrl": "https://p.scdn.co/mp3-preview/6f57db4d7d782298f0d2de9097a45f4671cb2fd6"
@@ -32290,7 +32290,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/363e18f745939a46e00a67355fbd7ee1364a2fd6",
     "audioFallback": "https://p.scdn.co/mp3-preview/363e18f745939a46e00a67355fbd7ee1364a2fd6",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/41312/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/fb89c8f40240245a7f58aa63bd7dd4ff/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4KmkJjHTNlr1jFY56Lyz4E",
     "animeId": 76,
     "previewUrl": "https://p.scdn.co/mp3-preview/363e18f745939a46e00a67355fbd7ee1364a2fd6"
@@ -32310,7 +32310,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/42b143f2fd5aca293b037a6586fda816f3f30778",
     "audioFallback": "https://p.scdn.co/mp3-preview/42b143f2fd5aca293b037a6586fda816f3f30778",
-    "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/07d6896c8afea3a87dcf9381c3d0e6c7/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4kX7xkopoXZCfE1D6fNwl2",
     "animeId": 252,
     "previewUrl": "https://p.scdn.co/mp3-preview/42b143f2fd5aca293b037a6586fda816f3f30778"
@@ -32330,7 +32330,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/b5126c67a4973b633b4a95c3359206fa9122bc92",
     "audioFallback": "https://p.scdn.co/mp3-preview/b5126c67a4973b633b4a95c3359206fa9122bc92",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/1990/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e7e25a59b44e7e6430f7f7637ae2bb00/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3nqqDo8CcCLke3ZoTgiOKf",
     "animeId": 333,
     "previewUrl": "https://p.scdn.co/mp3-preview/b5126c67a4973b633b4a95c3359206fa9122bc92"
@@ -32350,7 +32350,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/7339548839a263fd721d01eb3364a848cad16fa7",
     "audioFallback": "https://p.scdn.co/mp3-preview/7339548839a263fd721d01eb3364a848cad16fa7",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/419/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/107c2b43f10c249077c1f7618563bb63/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7qiZfU4dY1lWllzX7mPBI3",
     "animeId": 294,
     "previewUrl": "https://p.scdn.co/mp3-preview/7339548839a263fd721d01eb3364a848cad16fa7"
@@ -32370,7 +32370,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/b13a1bb2d8a04132982a49b6efee933cc9d67c7e",
     "audioFallback": "https://p.scdn.co/mp3-preview/b13a1bb2d8a04132982a49b6efee933cc9d67c7e",
-    "coverUrl": "https://media.kitsu.app/anime/48534/poster_image/medium-c38c15266ae228974e8c2a00d776ea92.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/3dc29a565149240729afc08e1f251b46/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0d28khcov6AiegSCpG5TuT",
     "animeId": 246,
     "previewUrl": "https://p.scdn.co/mp3-preview/b13a1bb2d8a04132982a49b6efee933cc9d67c7e"
@@ -32390,7 +32390,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/4cfc5831a30fb9f86107637914818fcf844ddbf5",
     "audioFallback": "https://p.scdn.co/mp3-preview/4cfc5831a30fb9f86107637914818fcf844ddbf5",
-    "coverUrl": "https://anifume.com/images/54/Tokidoki-Bosotto-Russia-go.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/9a1084ee1062fd9cd8dbeb1a8978351d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/46eu3SBuFCXWsPT39Yg3tJ",
     "animeId": 356,
     "previewUrl": "https://p.scdn.co/mp3-preview/4cfc5831a30fb9f86107637914818fcf844ddbf5"
@@ -32410,7 +32410,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/561e75e2fa3fa0eb661559c424ac56cc688d1823",
     "audioFallback": "https://p.scdn.co/mp3-preview/561e75e2fa3fa0eb661559c424ac56cc688d1823",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/244/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d3f67e81d134e4036fd2e68a062210c4/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2uXlHCUbq9OMUwx3hrk06o",
     "animeId": 35,
     "previewUrl": "https://p.scdn.co/mp3-preview/561e75e2fa3fa0eb661559c424ac56cc688d1823"
@@ -32430,7 +32430,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/6531864966b2fc846a74a9bc161d9bf4563ec2e9",
     "audioFallback": "https://p.scdn.co/mp3-preview/6531864966b2fc846a74a9bc161d9bf4563ec2e9",
-    "coverUrl": "https://media.kitsu.app/anime/11757/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/123eb0268dfea84370a28c4a2114dc28/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3B4cjvGlPvyBLNG3AzEgkZ",
     "animeId": 143,
     "previewUrl": "https://p.scdn.co/mp3-preview/6531864966b2fc846a74a9bc161d9bf4563ec2e9"
@@ -32450,7 +32450,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/159fc05584217baa99581c4821f52d04670db6b2",
     "audioFallback": "https://p.scdn.co/mp3-preview/159fc05584217baa99581c4821f52d04670db6b2",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/1434/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/2ae8e9f1714cc6cc9393f7873008f45c/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0B7wvvmu9EISAwZnOpjhNI",
     "animeId": 264,
     "previewUrl": "https://p.scdn.co/mp3-preview/159fc05584217baa99581c4821f52d04670db6b2"
@@ -32470,7 +32470,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/eca5a32b13f68f700b06e06ffdc8110e61e232ce",
     "audioFallback": "https://p.scdn.co/mp3-preview/eca5a32b13f68f700b06e06ffdc8110e61e232ce",
-    "coverUrl": "https://media.kitsu.app/anime/46571/poster_image/medium-ea8832a82d6fa830d9cbff53f56eb72f.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/340283aafac320864b207c420124ee46/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/09CtPGIpYB4BrO8qb1RGsF",
     "animeId": 375,
     "previewUrl": "https://p.scdn.co/mp3-preview/eca5a32b13f68f700b06e06ffdc8110e61e232ce"
@@ -32490,7 +32490,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/b750d9609aa454adb23284b1504d962a6ff9bb07",
     "audioFallback": "https://p.scdn.co/mp3-preview/b750d9609aa454adb23284b1504d962a6ff9bb07",
-    "coverUrl": "https://media.kitsu.app/anime/1/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/340283aafac320864b207c420124ee46/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/50kpGaPAhYJ3sGmk6vplg0",
     "animeId": 167,
     "previewUrl": "https://p.scdn.co/mp3-preview/b750d9609aa454adb23284b1504d962a6ff9bb07"
@@ -32510,7 +32510,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/81bd92ac70dc7b6dd32aabfb186fe67857147834",
     "audioFallback": "https://p.scdn.co/mp3-preview/81bd92ac70dc7b6dd32aabfb186fe67857147834",
-    "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/8cc37398de3ee92bd31d286f30e7972d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1uvyZBs4IZYRebHIB1747m",
     "animeId": 244,
     "previewUrl": "https://p.scdn.co/mp3-preview/81bd92ac70dc7b6dd32aabfb186fe67857147834"
@@ -32530,7 +32530,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/b5ee275ca337899f762b1c1883c11e24a04075b0",
     "audioFallback": "https://p.scdn.co/mp3-preview/b5ee275ca337899f762b1c1883c11e24a04075b0",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13593/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/033a271b5ec10842c287827c39244fb5/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/60a0Rd6pjrkxjPbaKzXjfq",
     "animeId": 113,
     "previewUrl": "https://p.scdn.co/mp3-preview/b5ee275ca337899f762b1c1883c11e24a04075b0"
@@ -32550,7 +32550,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/adb1ea6ef8ac4d8111d8222ed3355794689a8d76",
     "audioFallback": "https://p.scdn.co/mp3-preview/adb1ea6ef8ac4d8111d8222ed3355794689a8d76",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/176/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/87001d51243fd7164a02a74cb38e2e4c/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3cZajhyr8LmtPfHZ9296tj",
     "animeId": 314,
     "previewUrl": "https://p.scdn.co/mp3-preview/adb1ea6ef8ac4d8111d8222ed3355794689a8d76"
@@ -32570,7 +32570,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/0ee5843f6060102ce4ac239c856c452439e3d9d2",
     "audioFallback": "https://p.scdn.co/mp3-preview/0ee5843f6060102ce4ac239c856c452439e3d9d2",
-    "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/56bdb7a86a27fadb96332c0c8f1b8e81/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1zi7xx7UVEFkmKfv06H8x0",
     "animeId": 204,
     "previewUrl": "https://p.scdn.co/mp3-preview/0ee5843f6060102ce4ac239c856c452439e3d9d2"
@@ -32590,7 +32590,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/695ea23e689a1816b09a8ac6f0874af0f5c38420",
     "audioFallback": "https://p.scdn.co/mp3-preview/695ea23e689a1816b09a8ac6f0874af0f5c38420",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/5681/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/7bb834c5a9024844641b7ffe1ce297ef/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6DH13QYXK7lKkYHSU88N48",
     "animeId": 261,
     "previewUrl": "https://p.scdn.co/mp3-preview/695ea23e689a1816b09a8ac6f0874af0f5c38420"
@@ -32610,7 +32610,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/6da9d2d9c70066c8052a8b4b0b66d3c447cdf33c",
     "audioFallback": "https://p.scdn.co/mp3-preview/6da9d2d9c70066c8052a8b4b0b66d3c447cdf33c",
-    "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/f9491aac152ced794d866ea80c935cd4/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2nMeu6UenVvwUktBCpLMK9",
     "animeId": 241,
     "previewUrl": "https://p.scdn.co/mp3-preview/6da9d2d9c70066c8052a8b4b0b66d3c447cdf33c"
@@ -32630,7 +32630,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/91219ebc0d0505a1001c4b854f8b2451fcec95b8",
     "audioFallback": "https://p.scdn.co/mp3-preview/91219ebc0d0505a1001c4b854f8b2451fcec95b8",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13284/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/6293cc4ae87ae387fdb11e0bf44f4511/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0gucTLf7trAf37Ua1uAyAu",
     "animeId": 286,
     "previewUrl": "https://p.scdn.co/mp3-preview/91219ebc0d0505a1001c4b854f8b2451fcec95b8"
@@ -32650,7 +32650,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/6a46c302864c157a79346b485621a36305ceaaa2",
     "audioFallback": "https://p.scdn.co/mp3-preview/6a46c302864c157a79346b485621a36305ceaaa2",
-    "coverUrl": "https://media.kitsu.app/anime/4802/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/0e4b8c4332328521ec4ed16b4b9e26b1/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3d0WouFnFmr0K3kjeza3fF",
     "animeId": 160,
     "previewUrl": "https://p.scdn.co/mp3-preview/6a46c302864c157a79346b485621a36305ceaaa2"
@@ -32670,7 +32670,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/7e48f0a50a4b64aaa56e9dab7259670b1e6fc278",
     "audioFallback": "https://p.scdn.co/mp3-preview/7e48f0a50a4b64aaa56e9dab7259670b1e6fc278",
-    "coverUrl": "https://media.kitsu.app/anime/46336/poster_image/medium-162a579fe7a25c1b188532bb8aaa7129.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a0ad67d1beb761f2cb9f8b60e5bcf07a/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3wuCCNCnBhJlwkIJTBZFiv",
     "animeId": 365,
     "previewUrl": "https://p.scdn.co/mp3-preview/7e48f0a50a4b64aaa56e9dab7259670b1e6fc278"
@@ -32690,7 +32690,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/aed073ed2859447c5b275cd7bace28302330b629",
     "audioFallback": "https://p.scdn.co/mp3-preview/aed073ed2859447c5b275cd7bace28302330b629",
-    "coverUrl": "https://media.kitsu.app/anime/7074/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/967769c4612d74e8f5c7da8798b28e13/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7ne4VBA60CxGM75vw0EYad",
     "animeId": 170,
     "previewUrl": "https://p.scdn.co/mp3-preview/aed073ed2859447c5b275cd7bace28302330b629"
@@ -32710,7 +32710,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/80995b893ffd82da8c0b2df113b80fc9b5fcec57",
     "audioFallback": "https://p.scdn.co/mp3-preview/80995b893ffd82da8c0b2df113b80fc9b5fcec57",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/10028/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/fb0a49a91ab8137ec9d028c4dbb04021/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5T7ywazdGIydr6JCW6t02j",
     "animeId": 10,
     "previewUrl": "https://p.scdn.co/mp3-preview/80995b893ffd82da8c0b2df113b80fc9b5fcec57"
@@ -32730,7 +32730,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/4e30857a3c7da3f8891483643e310bb233afadd2",
     "audioFallback": "https://p.scdn.co/mp3-preview/4e30857a3c7da3f8891483643e310bb233afadd2",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/3702/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/000a9228cecfcc7c2093d9cd7bb66447/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0tgVpDi06FyKpA1z0VMD4v",
     "animeId": 401,
     "previewUrl": "https://p.scdn.co/mp3-preview/4e30857a3c7da3f8891483643e310bb233afadd2"
@@ -32750,7 +32750,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/1cc8166a133df8a913e37b37b58c9511a1486464",
     "audioFallback": "https://p.scdn.co/mp3-preview/1cc8166a133df8a913e37b37b58c9511a1486464",
-    "coverUrl": "https://media.kitsu.app/anime/18/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ba70fcb85685eeb8ca9e23a9096cc6b8/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0nUOnbRTWEAOVRu4FRQENe",
     "animeId": 200,
     "previewUrl": "https://p.scdn.co/mp3-preview/1cc8166a133df8a913e37b37b58c9511a1486464"
@@ -32770,7 +32770,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/2a5d2e8e233cefd201bd079ffaa7d6764b403cb7",
     "audioFallback": "https://p.scdn.co/mp3-preview/2a5d2e8e233cefd201bd079ffaa7d6764b403cb7",
-    "coverUrl": "https://media.kitsu.app/anime/782/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/347c863b57f0822011498d1667186fec/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3georCIpP8OEGQkggOhuZw",
     "animeId": 198,
     "previewUrl": "https://p.scdn.co/mp3-preview/2a5d2e8e233cefd201bd079ffaa7d6764b403cb7"
@@ -32790,7 +32790,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/6d8ea0db9b28f0a42a7946f74a2f407373581660",
     "audioFallback": "https://p.scdn.co/mp3-preview/6d8ea0db9b28f0a42a7946f74a2f407373581660",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/5981/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/c2de0e728e7c46bf56abcb81fa77b51a/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2xnAn7xxR2Ohxt1UuQudpC",
     "animeId": 18,
     "previewUrl": "https://p.scdn.co/mp3-preview/6d8ea0db9b28f0a42a7946f74a2f407373581660"
@@ -32810,7 +32810,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/cb7723570790116ae877082f8e4dcd16cc113f7d",
     "audioFallback": "https://p.scdn.co/mp3-preview/cb7723570790116ae877082f8e4dcd16cc113f7d",
-    "coverUrl": "https://media.kitsu.app/anime/782/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/3e6e19e56b63ed169c1499f4827a1892/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2yDEfRpX5tRUcAo4VM0wFA",
     "animeId": 198,
     "previewUrl": "https://p.scdn.co/mp3-preview/cb7723570790116ae877082f8e4dcd16cc113f7d"
@@ -32830,7 +32830,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/a289d6d1da6bb20a7485e29d416932366b86073e",
     "audioFallback": "https://p.scdn.co/mp3-preview/a289d6d1da6bb20a7485e29d416932366b86073e",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13284/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/3cb5e72eda465bf40eaa2e709aaaf021/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2WUOvMjK5zOGO9gBHQ89Su",
     "animeId": 286,
     "previewUrl": "https://p.scdn.co/mp3-preview/a289d6d1da6bb20a7485e29d416932366b86073e"
@@ -32850,7 +32850,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/737715080edad809d845796971b53046a13400b2",
     "audioFallback": "https://p.scdn.co/mp3-preview/737715080edad809d845796971b53046a13400b2",
-    "coverUrl": "https://media.kitsu.app/anime/11757/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/da4f60af4755b72d841c6ede4b17f8b7/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1nmdJTwB575vxvNm6PdXHq",
     "animeId": 143,
     "previewUrl": "https://p.scdn.co/mp3-preview/737715080edad809d845796971b53046a13400b2"
@@ -32870,7 +32870,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/b0fae9c7b73f820581228f07946d2cff38f97b14",
     "audioFallback": "https://p.scdn.co/mp3-preview/b0fae9c7b73f820581228f07946d2cff38f97b14",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6421/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/f665fa8224b88c50cf4b12e25635948a/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0vDGaRsL0TqWDgyL6kfdoG",
     "animeId": 262,
     "previewUrl": "https://p.scdn.co/mp3-preview/b0fae9c7b73f820581228f07946d2cff38f97b14"
@@ -32890,7 +32890,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/6b3237a031f76ea1008c5d8f444b6c87ae2bf64d",
     "audioFallback": "https://p.scdn.co/mp3-preview/6b3237a031f76ea1008c5d8f444b6c87ae2bf64d",
-    "coverUrl": "https://media.kitsu.app/anime/42147/poster_image/medium-e17accdc782f75a56fb5c9167ec2652b.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/f0b0dd5ab36707ced65fabc01f501dc1/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/22US1fP1mxEwddQ6QumKe8",
     "animeId": 54,
     "previewUrl": "https://p.scdn.co/mp3-preview/6b3237a031f76ea1008c5d8f444b6c87ae2bf64d"
@@ -32910,7 +32910,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/e9539922a95413c19cd199e21c3d2e068102c9e6",
     "audioFallback": "https://p.scdn.co/mp3-preview/e9539922a95413c19cd199e21c3d2e068102c9e6",
-    "coverUrl": "https://media.kitsu.app/anime/46004/poster_image/medium-b5e9b4b5a0e2e4d3d7dc8fd2f7d3af10.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/60e2b8d010db16e717e2103c72436857/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/69oSlabbavmcnZOqeQX4fM",
     "animeId": 291,
     "previewUrl": "https://p.scdn.co/mp3-preview/e9539922a95413c19cd199e21c3d2e068102c9e6"
@@ -32930,7 +32930,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/cc21b2426e2f53f7d7a01f7fbcce0f1d54ddf30c",
     "audioFallback": "https://p.scdn.co/mp3-preview/cc21b2426e2f53f7d7a01f7fbcce0f1d54ddf30c",
-    "coverUrl": "https://media.kitsu.app/anime/9963/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/f9166facc23ba42f8a37a6ead67f6b23/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6oPqaiLKPdQj2ecBpMgM07",
     "animeId": 159,
     "previewUrl": "https://p.scdn.co/mp3-preview/cc21b2426e2f53f7d7a01f7fbcce0f1d54ddf30c"
@@ -32950,7 +32950,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/5a6d644d2c1acc76b00e18153b9aa3fd9a279bda",
     "audioFallback": "https://p.scdn.co/mp3-preview/5a6d644d2c1acc76b00e18153b9aa3fd9a279bda",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/43321/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ba70fcb85685eeb8ca9e23a9096cc6b8/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1xcsj9VvAJ9PDpNIaMEVlo",
     "animeId": 30,
     "previewUrl": "https://p.scdn.co/mp3-preview/5a6d644d2c1acc76b00e18153b9aa3fd9a279bda"
@@ -32970,7 +32970,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/a3e02736cda7512db2dfab7456e262603dfed1d0",
     "audioFallback": "https://p.scdn.co/mp3-preview/a3e02736cda7512db2dfab7456e262603dfed1d0",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13672/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/017d45a6615f0d31f7406470d1137e20/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0zRI8jHpxsK2ArBW07pj7E",
     "animeId": 300,
     "previewUrl": "https://p.scdn.co/mp3-preview/a3e02736cda7512db2dfab7456e262603dfed1d0"
@@ -32990,7 +32990,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/23d14be966bd1a81cd95522b866a2e60ee003ed5",
     "audioFallback": "https://p.scdn.co/mp3-preview/23d14be966bd1a81cd95522b866a2e60ee003ed5",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/10028/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/347c863b57f0822011498d1667186fec/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/22A3EEXoniinp3n7BlVlxT",
     "animeId": 10,
     "previewUrl": "https://p.scdn.co/mp3-preview/23d14be966bd1a81cd95522b866a2e60ee003ed5"
@@ -33010,7 +33010,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/6735dcbd72e9d1b35b96991fc7a08ebd0063e3f6",
     "audioFallback": "https://p.scdn.co/mp3-preview/6735dcbd72e9d1b35b96991fc7a08ebd0063e3f6",
-    "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/2b5346a46542350ca2b14cc0c9191aa2/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2Eg9TOQA5lUlSHeezowSgy",
     "animeId": 204,
     "previewUrl": "https://p.scdn.co/mp3-preview/6735dcbd72e9d1b35b96991fc7a08ebd0063e3f6"
@@ -33030,7 +33030,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/46c2d6687fca240e9a4371c573ae2e7099f9e340",
     "audioFallback": "https://p.scdn.co/mp3-preview/46c2d6687fca240e9a4371c573ae2e7099f9e340",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7578/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ffba9c258b589fbed4ad24620fcbbc4f/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4l7LboEqEOMV1UPHoZ0KA9",
     "animeId": 267,
     "previewUrl": "https://p.scdn.co/mp3-preview/46c2d6687fca240e9a4371c573ae2e7099f9e340"
@@ -33050,7 +33050,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/1c8e689022f4b74dbcc5a8a23b67410f60a8f2ac",
     "audioFallback": "https://p.scdn.co/mp3-preview/1c8e689022f4b74dbcc5a8a23b67410f60a8f2ac",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/4240/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ba70fcb85685eeb8ca9e23a9096cc6b8/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5ohrCO36AXXXOxqxZbo0Gz",
     "animeId": 67,
     "previewUrl": "https://p.scdn.co/mp3-preview/1c8e689022f4b74dbcc5a8a23b67410f60a8f2ac"
@@ -33070,7 +33070,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/80682b69ab737bc126e9d459d7f0f8fb158709a4",
     "audioFallback": "https://p.scdn.co/mp3-preview/80682b69ab737bc126e9d459d7f0f8fb158709a4",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/47/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/df5f262bb5f0d520f778e161cea158b3/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0NrdH75exgYJWrF5M7fblm",
     "animeId": 316,
     "previewUrl": "https://p.scdn.co/mp3-preview/80682b69ab737bc126e9d459d7f0f8fb158709a4"
@@ -33090,7 +33090,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d5626f626ed5828be9c6d2b2c67e161ada2db525",
     "audioFallback": "https://p.scdn.co/mp3-preview/d5626f626ed5828be9c6d2b2c67e161ada2db525",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/149/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a726325f9dc2886d999d52daeb0d14a6/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3PqDjbOyw6VV6ifq7FzepJ",
     "animeId": 344,
     "previewUrl": "https://p.scdn.co/mp3-preview/d5626f626ed5828be9c6d2b2c67e161ada2db525"
@@ -33110,7 +33110,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/f8650a087aed5f9a7f8cfba625fea67f0bfa4a08",
     "audioFallback": "https://p.scdn.co/mp3-preview/f8650a087aed5f9a7f8cfba625fea67f0bfa4a08",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/47953/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/f0b0dd5ab36707ced65fabc01f501dc1/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2ZFfpiG3pZ2nzTkOr4YnwO",
     "animeId": 348,
     "previewUrl": "https://p.scdn.co/mp3-preview/f8650a087aed5f9a7f8cfba625fea67f0bfa4a08"
@@ -33130,7 +33130,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/c190f2460bf776bfbb6281cce6d9e20a4cc173c8",
     "audioFallback": "https://p.scdn.co/mp3-preview/c190f2460bf776bfbb6281cce6d9e20a4cc173c8",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/10427/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/770b718755b6e71289ccdab71a5b96b8/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2eVtNxoyXATwLzKz4jmbLN",
     "animeId": 306,
     "previewUrl": "https://p.scdn.co/mp3-preview/c190f2460bf776bfbb6281cce6d9e20a4cc173c8"
@@ -33150,7 +33150,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/6ea052b581f42a10b81480ab773e719c419be11d",
     "audioFallback": "https://p.scdn.co/mp3-preview/6ea052b581f42a10b81480ab773e719c419be11d",
-    "coverUrl": "https://media.kitsu.app/anime/47899/poster_image/medium-7c2a90df27e51f03bc70a0e86d79d88e.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ba70fcb85685eeb8ca9e23a9096cc6b8/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6V7y6ItkLqcwwA6Bw4PAj6",
     "animeId": 284,
     "previewUrl": "https://p.scdn.co/mp3-preview/6ea052b581f42a10b81480ab773e719c419be11d"
@@ -33170,7 +33170,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/80823e5a9df098ff403ede1257a07ad6cbccf36a",
     "audioFallback": "https://p.scdn.co/mp3-preview/80823e5a9df098ff403ede1257a07ad6cbccf36a",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/224/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/fa8e39a77d8e65075be1d04c5308a2d1/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0JAkZ44a75QTFXXsB2c7Ol",
     "animeId": 73,
     "previewUrl": "https://p.scdn.co/mp3-preview/80823e5a9df098ff403ede1257a07ad6cbccf36a"
@@ -33190,7 +33190,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/e2aa23875e4cc61cbf483139912bf2bfdd41ee66",
     "audioFallback": "https://p.scdn.co/mp3-preview/e2aa23875e4cc61cbf483139912bf2bfdd41ee66",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/3128/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b45c72dcc2a2f8d9993e4e4d98759b08/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/78J1VVEL8OpjJZJAwqRocN",
     "animeId": 83,
     "previewUrl": "https://p.scdn.co/mp3-preview/e2aa23875e4cc61cbf483139912bf2bfdd41ee66"
@@ -33210,7 +33210,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/73ea853524cae61437cf618f420f89c088bbca8b",
     "audioFallback": "https://p.scdn.co/mp3-preview/73ea853524cae61437cf618f420f89c088bbca8b",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/148/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/1085d0a634bfeeaff83f8b60e2afe5b2/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1JHQ4rCY6gFdHE5AGmv7uP",
     "animeId": 75,
     "previewUrl": "https://p.scdn.co/mp3-preview/73ea853524cae61437cf618f420f89c088bbca8b"
@@ -33230,7 +33230,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/67242ac51dad508d505ffdfc91bb15c4f6b930ef",
     "audioFallback": "https://p.scdn.co/mp3-preview/67242ac51dad508d505ffdfc91bb15c4f6b930ef",
-    "coverUrl": "https://media.kitsu.app/anime/45398/poster_image/medium-f2f30d957a12e8269655c6036b460c90.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d8b24c20b41eb36002846d6fdf9c0e4f/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3IjALgWp4y7hbuA3QjnrfR",
     "animeId": 27,
     "previewUrl": "https://p.scdn.co/mp3-preview/67242ac51dad508d505ffdfc91bb15c4f6b930ef"
@@ -33250,7 +33250,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/493d3b932bc4f2cb110bc595c715bf2f7ddcdaf3",
     "audioFallback": "https://p.scdn.co/mp3-preview/493d3b932bc4f2cb110bc595c715bf2f7ddcdaf3",
-    "coverUrl": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/766ac49995fefaa4577b0e78ebbd1a0c/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5MYNy4t1MaaEcU5pjiWq6u",
     "animeId": 233,
     "previewUrl": "https://p.scdn.co/mp3-preview/493d3b932bc4f2cb110bc595c715bf2f7ddcdaf3"
@@ -33270,7 +33270,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/2e4072614f6f136b1ccc7912c485ea8b23c8e704",
     "audioFallback": "https://p.scdn.co/mp3-preview/2e4072614f6f136b1ccc7912c485ea8b23c8e704",
-    "coverUrl": "https://media.kitsu.app/anime/47296/poster_image/medium-c324bf5d5fcccf17986a04ab494dd9d7.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/347c863b57f0822011498d1667186fec/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5H5lzj0pDLXwaUOutzEjMF",
     "animeId": 358,
     "previewUrl": "https://p.scdn.co/mp3-preview/2e4072614f6f136b1ccc7912c485ea8b23c8e704"
@@ -33290,7 +33290,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/55c4bd43b0ae16e39436553e45086f6f8f30a39f",
     "audioFallback": "https://p.scdn.co/mp3-preview/55c4bd43b0ae16e39436553e45086f6f8f30a39f",
-    "coverUrl": "https://media.kitsu.app/anime/14027/poster_image/medium-2ccfd6de3c64f3e8340230e7758646a1.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/8d1824309ccf15c9fd63aca5b4267f42/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/65b9tN8CyvSFYscKE7EOkm",
     "animeId": 409,
     "previewUrl": "https://p.scdn.co/mp3-preview/55c4bd43b0ae16e39436553e45086f6f8f30a39f"
@@ -33310,7 +33310,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/6e352290d8dd8faad1d5ef160513f3569310ac82",
     "audioFallback": "https://p.scdn.co/mp3-preview/6e352290d8dd8faad1d5ef160513f3569310ac82",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/11209/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b5a8ecaa2806d33a6c3a01dc8992af32/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7Lq79sDOgD0eEPxczcY2DH",
     "animeId": 40,
     "previewUrl": "https://p.scdn.co/mp3-preview/6e352290d8dd8faad1d5ef160513f3569310ac82"
@@ -33330,7 +33330,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/08269ae15de830185acafe7f31e7212b2cbe86dd",
     "audioFallback": "https://p.scdn.co/mp3-preview/08269ae15de830185acafe7f31e7212b2cbe86dd",
-    "coverUrl": "https://media.kitsu.app/anime/44358/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/cb4287be6ff7036483b90270c58966b9/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7GjqSpwg1VradInL571Bxf",
     "animeId": 134,
     "previewUrl": "https://p.scdn.co/mp3-preview/08269ae15de830185acafe7f31e7212b2cbe86dd"
@@ -33350,7 +33350,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/b12d0d0310bc277346ff948db3702b727ebb2939",
     "audioFallback": "https://p.scdn.co/mp3-preview/b12d0d0310bc277346ff948db3702b727ebb2939",
-    "coverUrl": "https://media.kitsu.app/anime/45517/poster_image/medium-55342a19ef9eb98db5dfd17c9b83b38c.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/da4f60af4755b72d841c6ede4b17f8b7/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3nbsIp2Y1mYQ2RqAtxMwoA",
     "animeId": 370,
     "previewUrl": "https://p.scdn.co/mp3-preview/b12d0d0310bc277346ff948db3702b727ebb2939"
@@ -33370,7 +33370,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/9be1d11d923bc54344dac4531c00a098801c016b",
     "audioFallback": "https://p.scdn.co/mp3-preview/9be1d11d923bc54344dac4531c00a098801c016b",
-    "coverUrl": "https://media.kitsu.app/anime/8017/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/457b15661a9f184edf1288d21a3c7fd6/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2O9sWy5etvogpiZbY3eJcO",
     "animeId": 179,
     "previewUrl": "https://p.scdn.co/mp3-preview/9be1d11d923bc54344dac4531c00a098801c016b"
@@ -33390,7 +33390,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/a142e67bd373066cfdc0db1ab2839141ed693752",
     "audioFallback": "https://p.scdn.co/mp3-preview/a142e67bd373066cfdc0db1ab2839141ed693752",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/344/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e46ab27eb3c526bfd99f0a5a0dba5b5d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0fI3D07OFfLLYks0YRymKc",
     "animeId": 329,
     "previewUrl": "https://p.scdn.co/mp3-preview/a142e67bd373066cfdc0db1ab2839141ed693752"
@@ -33410,7 +33410,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/6ed69e4cfb6dda2511b09f9ac77c287adfd8f3ca",
     "audioFallback": "https://p.scdn.co/mp3-preview/6ed69e4cfb6dda2511b09f9ac77c287adfd8f3ca",
-    "coverUrl": "https://media.kitsu.app/anime/6045/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/fad7e4a15324669cafd9d0bc86936602/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5ILPWem0xm3v85WeXqrTKP",
     "animeId": 180,
     "previewUrl": "https://p.scdn.co/mp3-preview/6ed69e4cfb6dda2511b09f9ac77c287adfd8f3ca"
@@ -33430,7 +33430,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/ab46465767c90e70795c5d164f98ce86f6733048",
     "audioFallback": "https://p.scdn.co/mp3-preview/ab46465767c90e70795c5d164f98ce86f6733048",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/236/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/5436732a8944fafb9552c201a78ec462/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7lKAYYnqO6KFCc5xokoNc9",
     "animeId": 313,
     "previewUrl": "https://p.scdn.co/mp3-preview/ab46465767c90e70795c5d164f98ce86f6733048"
@@ -33450,7 +33450,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/9b00fe447978e824ebf767d1d0e949463c79c06e",
     "audioFallback": "https://p.scdn.co/mp3-preview/9b00fe447978e824ebf767d1d0e949463c79c06e",
-    "coverUrl": "https://media.kitsu.app/anime/44426/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/c4cd6c01685a7612facb993a04051d7e/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5UbABVhLmmXgrKa9vASvwS",
     "animeId": 155,
     "previewUrl": "https://p.scdn.co/mp3-preview/9b00fe447978e824ebf767d1d0e949463c79c06e"
@@ -33470,7 +33470,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/ff612c57179201ffb45fdc9b8ffb574926a97111",
     "audioFallback": "https://p.scdn.co/mp3-preview/ff612c57179201ffb45fdc9b8ffb574926a97111",
-    "coverUrl": "https://media.kitsu.app/anime/142/poster_image/large-bf3297058b86c1ef19cefb5b9c38c99e.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/c1c15d14a3a10020e5c97e96562ed796/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3LEj9qnPBKYUUFTU6fwR9e",
     "animeId": 89,
     "previewUrl": "https://p.scdn.co/mp3-preview/ff612c57179201ffb45fdc9b8ffb574926a97111"
@@ -33490,7 +33490,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/119987030df6e87134b7e6008fc2247efcfea645",
     "audioFallback": "https://p.scdn.co/mp3-preview/119987030df6e87134b7e6008fc2247efcfea645",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/41199/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/347c863b57f0822011498d1667186fec/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/06Aiy9Au1BwL0F34Xbzj3M",
     "animeId": 308,
     "previewUrl": "https://p.scdn.co/mp3-preview/119987030df6e87134b7e6008fc2247efcfea645"
@@ -33510,7 +33510,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/3730e64219ecaac00c35e3df977dfdcddeb5d679",
     "audioFallback": "https://p.scdn.co/mp3-preview/3730e64219ecaac00c35e3df977dfdcddeb5d679",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/12230/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/3cb5e72eda465bf40eaa2e709aaaf021/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2TwqhSZO59BPQW7cBJ1e4s",
     "animeId": 3,
     "previewUrl": "https://p.scdn.co/mp3-preview/3730e64219ecaac00c35e3df977dfdcddeb5d679"
@@ -33530,7 +33530,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d008345c51e3352fbe26b2a9fa9d11dfcad70b12",
     "audioFallback": "https://p.scdn.co/mp3-preview/d008345c51e3352fbe26b2a9fa9d11dfcad70b12",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/11469/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e77e69e400a48793cc112d5303bad335/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4a4JRc2KsOQC8j5nGo3DnQ",
     "animeId": 274,
     "previewUrl": "https://p.scdn.co/mp3-preview/d008345c51e3352fbe26b2a9fa9d11dfcad70b12"
@@ -33550,7 +33550,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/462b3d98499f36e3212a89909d36126e14ceb31a",
     "audioFallback": "https://p.scdn.co/mp3-preview/462b3d98499f36e3212a89909d36126e14ceb31a",
-    "coverUrl": "https://media.kitsu.app/anime/46369/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/766ac49995fefaa4577b0e78ebbd1a0c/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1zcTYmnzY8kqC2EdYNh0pL",
     "animeId": 154,
     "previewUrl": "https://p.scdn.co/mp3-preview/462b3d98499f36e3212a89909d36126e14ceb31a"
@@ -33570,7 +33570,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/c662f410bc86ff11e78d9d8691c9f69ba0253b36",
     "audioFallback": "https://p.scdn.co/mp3-preview/c662f410bc86ff11e78d9d8691c9f69ba0253b36",
-    "coverUrl": "https://anifume.com/images/48/Horimiya-Piece.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/7c079fe6655d2bad61337a2e288fd38c/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5EEzfZN0YApCTponvjdM4v",
     "animeId": 214,
     "previewUrl": "https://p.scdn.co/mp3-preview/c662f410bc86ff11e78d9d8691c9f69ba0253b36"
@@ -33590,7 +33590,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/369f964648295901b928157a0ca44f9ba418cc39",
     "audioFallback": "https://p.scdn.co/mp3-preview/369f964648295901b928157a0ca44f9ba418cc39",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7000/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e7fc0a2ff08cfe3cca5b40b0c156b7a9/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2v6By6eLbmlQ04Dia8BZ5o",
     "animeId": 106,
     "previewUrl": "https://p.scdn.co/mp3-preview/369f964648295901b928157a0ca44f9ba418cc39"
@@ -33610,7 +33610,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/ad663acd7a2df08eb6bb313ebbae598c8ba39d0c",
     "audioFallback": "https://p.scdn.co/mp3-preview/ad663acd7a2df08eb6bb313ebbae598c8ba39d0c",
-    "coverUrl": "https://media.kitsu.app/anime/49205/poster_image/medium-26bbae139e3a0869dece52e864b93052.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/76630e415b76fa4cc46133223a5dbbea/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2tbdOk7IBfH7tfci91WFHe",
     "animeId": 205,
     "previewUrl": "https://p.scdn.co/mp3-preview/ad663acd7a2df08eb6bb313ebbae598c8ba39d0c"
@@ -33630,7 +33630,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/e2df4bfa382e37a330e7631a5c670a8a65a14da8",
     "audioFallback": "https://p.scdn.co/mp3-preview/e2df4bfa382e37a330e7631a5c670a8a65a14da8",
-    "coverUrl": "https://media.kitsu.app/anime/47687/poster_image/medium-1b60c7e721df919140c4dd564810afd5.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ba70fcb85685eeb8ca9e23a9096cc6b8/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0WCdXhtkz6PNTF3hXARTYd",
     "animeId": 222,
     "previewUrl": "https://p.scdn.co/mp3-preview/e2df4bfa382e37a330e7631a5c670a8a65a14da8"
@@ -33650,7 +33650,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/55e409c27aef443544235247b2556e97131013b6",
     "audioFallback": "https://p.scdn.co/mp3-preview/55e409c27aef443544235247b2556e97131013b6",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/11209/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/c0aacf25ad6e2eb5bfb880ab0dc911b1/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/19qYzhwsVrKi8ZDAfF8lnc",
     "animeId": 40,
     "previewUrl": "https://p.scdn.co/mp3-preview/55e409c27aef443544235247b2556e97131013b6"
@@ -33670,7 +33670,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/18698b64c7d24f7d60672f017f36e1066a508035",
     "audioFallback": "https://p.scdn.co/mp3-preview/18698b64c7d24f7d60672f017f36e1066a508035",
-    "coverUrl": "https://media.kitsu.app/anime/44382/poster_image/large-8ffc8ea9b6a1f9e79bc626e03baab167.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/5033c4870b6cef068dc0742b989c8100/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5twbYCAzFHdOYo14Y1pWaZ",
     "animeId": 70,
     "previewUrl": "https://p.scdn.co/mp3-preview/18698b64c7d24f7d60672f017f36e1066a508035"
@@ -33690,7 +33690,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/c310bb61f3f591e2e6fc79b67cc4dec4862a7ad4",
     "audioFallback": "https://p.scdn.co/mp3-preview/c310bb61f3f591e2e6fc79b67cc4dec4862a7ad4",
-    "coverUrl": "https://media.kitsu.app/anime/44980/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/347c863b57f0822011498d1667186fec/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/32M6YQye8nPUQRTTkDQuMv",
     "animeId": 195,
     "previewUrl": "https://p.scdn.co/mp3-preview/c310bb61f3f591e2e6fc79b67cc4dec4862a7ad4"
@@ -33710,7 +33710,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/6ddef23ee6a87e6566ce45969905439130a36d3e",
     "audioFallback": "https://p.scdn.co/mp3-preview/6ddef23ee6a87e6566ce45969905439130a36d3e",
-    "coverUrl": "https://media.kitsu.app/anime/48981/poster_image/medium-abfe4d8f087bdfef4385faeb830873d4.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/df5f262bb5f0d520f778e161cea158b3/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5XVSufZLgQGku5bsGyJp5X",
     "animeId": 219,
     "previewUrl": "https://p.scdn.co/mp3-preview/6ddef23ee6a87e6566ce45969905439130a36d3e"
@@ -33730,7 +33730,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/651abd0ee3527e5434d2211d646c5720b47b4c21",
     "audioFallback": "https://p.scdn.co/mp3-preview/651abd0ee3527e5434d2211d646c5720b47b4c21",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13066/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/49e86e935da829b44cb5ffae16826e55/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3e9HZxeyfWwjeyPAMmWSSQ",
     "animeId": 109,
     "previewUrl": "https://p.scdn.co/mp3-preview/651abd0ee3527e5434d2211d646c5720b47b4c21"
@@ -33750,7 +33750,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/111eb776b2884b2940e31b769f5dd99e8cc6ce6c",
     "audioFallback": "https://p.scdn.co/mp3-preview/111eb776b2884b2940e31b769f5dd99e8cc6ce6c",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/192/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/3af7869f1acf0f94c760812888acd01d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1oFAF1hdPOickyHgbuRjyX",
     "animeId": 293,
     "previewUrl": "https://p.scdn.co/mp3-preview/111eb776b2884b2940e31b769f5dd99e8cc6ce6c"
@@ -33770,7 +33770,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/e6f9a45cb4bf45d8d041d999f5904ed1d248cc15",
     "audioFallback": "https://p.scdn.co/mp3-preview/e6f9a45cb4bf45d8d041d999f5904ed1d248cc15",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/11469/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e436fcd3350dc5fe2adbf59516f6cbe7/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0puf9yIluy9W0vpMEUoAnN",
     "animeId": 274,
     "previewUrl": "https://p.scdn.co/mp3-preview/e6f9a45cb4bf45d8d041d999f5904ed1d248cc15"
@@ -33790,7 +33790,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/0e1f4d14825f1a67b816669d4fd15131c097f056",
     "audioFallback": "https://p.scdn.co/mp3-preview/0e1f4d14825f1a67b816669d4fd15131c097f056",
-    "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium-0233bf77af3e0ab7303ae7099209d58a.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/0ff66025c4cf061cd13c266dde4b6819/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7ju97lgwC2rKQ6wwsf9no9",
     "animeId": 245,
     "previewUrl": "https://p.scdn.co/mp3-preview/0e1f4d14825f1a67b816669d4fd15131c097f056"
@@ -33810,7 +33810,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/ca9861da5f23408c70c43350db4bc4f375d5d45e",
     "audioFallback": "https://p.scdn.co/mp3-preview/ca9861da5f23408c70c43350db4bc4f375d5d45e",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/47953/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/96c490cc67b95b697003620254262cd2/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4rwqrKdwlFWJ6LvPYaOtgn",
     "animeId": 348,
     "previewUrl": "https://p.scdn.co/mp3-preview/ca9861da5f23408c70c43350db4bc4f375d5d45e"
@@ -33830,7 +33830,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/e5b04ad7398a7c8f5c4c788f4ab43f3f4cef150a",
     "audioFallback": "https://p.scdn.co/mp3-preview/e5b04ad7398a7c8f5c4c788f4ab43f3f4cef150a",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13524/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/8a5d4fa5c1b97100bf128909d766f06f/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2qT1uLXPVPzGgFOx4jtEuo",
     "animeId": 303,
     "previewUrl": "https://p.scdn.co/mp3-preview/e5b04ad7398a7c8f5c4c788f4ab43f3f4cef150a"
@@ -33850,7 +33850,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/f1d24e8a12e82dba75f9dd181d623bcb97879868",
     "audioFallback": "https://p.scdn.co/mp3-preview/f1d24e8a12e82dba75f9dd181d623bcb97879868",
-    "coverUrl": "https://media.kitsu.app/anime/14027/poster_image/medium-2ccfd6de3c64f3e8340230e7758646a1.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/0be7837c3339df62564ac6c296d6ae4b/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2NjO87HyT80fsgejd3PLYW",
     "animeId": 409,
     "previewUrl": "https://p.scdn.co/mp3-preview/f1d24e8a12e82dba75f9dd181d623bcb97879868"
@@ -33870,7 +33870,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/c116054968b46f75f473e7ac49ca52cbca68f3e0",
     "audioFallback": "https://p.scdn.co/mp3-preview/c116054968b46f75f473e7ac49ca52cbca68f3e0",
-    "coverUrl": "https://media.kitsu.app/anime/42147/poster_image/medium-e17accdc782f75a56fb5c9167ec2652b.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/da8b82a86c46082a3630a19184791ea7/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4yyX2Iu4xJjW9xMvBZKSBi",
     "animeId": 54,
     "previewUrl": "https://p.scdn.co/mp3-preview/c116054968b46f75f473e7ac49ca52cbca68f3e0"
@@ -33890,7 +33890,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/f42601f180da3ee934b3efb415ac5a69137f227d",
     "audioFallback": "https://p.scdn.co/mp3-preview/f42601f180da3ee934b3efb415ac5a69137f227d",
-    "coverUrl": "https://media.kitsu.app/anime/47454/poster_image/medium-647eca310356254a1840a496f41ea57c.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/c2589471cf573703d56075440c2a1412/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3L4GsGLgxpHieVQH86H8bv",
     "animeId": 208,
     "previewUrl": "https://p.scdn.co/mp3-preview/f42601f180da3ee934b3efb415ac5a69137f227d"
@@ -33910,7 +33910,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/12489dbf9e313aa5a42dcf6e1d145df9b04db8dd",
     "audioFallback": "https://p.scdn.co/mp3-preview/12489dbf9e313aa5a42dcf6e1d145df9b04db8dd",
-    "coverUrl": "https://media.kitsu.app/anime/4802/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/1a8f399e9ddbb8ec2530232c0dfd953f/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/76FZM38RC8XaAjJ77CVTNe",
     "animeId": 160,
     "previewUrl": "https://p.scdn.co/mp3-preview/12489dbf9e313aa5a42dcf6e1d145df9b04db8dd"
@@ -33930,7 +33930,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/64353aa29b9b3a34b353ab9df27334778e3a261e",
     "audioFallback": "https://p.scdn.co/mp3-preview/64353aa29b9b3a34b353ab9df27334778e3a261e",
-    "coverUrl": "https://media.kitsu.app/anime/47271/poster_image/medium-90a981a5a5570ba5fdb809a3152c8348.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/0db788703d94ee38e59f238965646406/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4W4fNrZYkobj539TOWsLO2",
     "animeId": 235,
     "previewUrl": "https://p.scdn.co/mp3-preview/64353aa29b9b3a34b353ab9df27334778e3a261e"
@@ -33950,7 +33950,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/63008585ef71ff70ab62bd93f1f4435d55fc3028",
     "audioFallback": "https://p.scdn.co/mp3-preview/63008585ef71ff70ab62bd93f1f4435d55fc3028",
-    "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ee890cf16d00c684be76b0087c7108c4/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6ouhsRJ7gExB7LCYjITk4Y",
     "animeId": 351,
     "previewUrl": "https://p.scdn.co/mp3-preview/63008585ef71ff70ab62bd93f1f4435d55fc3028"
@@ -33970,7 +33970,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/3bbe7de0de838a4487495fd55422b0919c20a58b",
     "audioFallback": "https://p.scdn.co/mp3-preview/3bbe7de0de838a4487495fd55422b0919c20a58b",
-    "coverUrl": "https://media.kitsu.app/anime/46183/poster_image/medium-5f704e2d6d86c0666d81e140d2c9f6a0.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/340283aafac320864b207c420124ee46/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/61uyGDPJ06MkxJtHgPmuyO",
     "animeId": 221,
     "previewUrl": "https://p.scdn.co/mp3-preview/3bbe7de0de838a4487495fd55422b0919c20a58b"
@@ -33990,7 +33990,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/1bb88e5873fb6d94cfecbd561074f2eaa84c490e",
     "audioFallback": "https://p.scdn.co/mp3-preview/1bb88e5873fb6d94cfecbd561074f2eaa84c490e",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/755/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/82043641a4e2852b1794110b74a302e8/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/35mvY5S1H3J2QZyna3TFe0",
     "animeId": 90,
     "previewUrl": "https://p.scdn.co/mp3-preview/1bb88e5873fb6d94cfecbd561074f2eaa84c490e"
@@ -34010,7 +34010,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/080522816e8a7998ce0bfa8d027867e50f3c95b1",
     "audioFallback": "https://p.scdn.co/mp3-preview/080522816e8a7998ce0bfa8d027867e50f3c95b1",
-    "coverUrl": "https://media.kitsu.app/anime/44196/poster_image/medium-a7b52a1e9cea5a04b29ee6878fbff923.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/644a259b32e169468c9f874e8a4fb822/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/18V7Vm71WAsWL4I0DytbnK",
     "animeId": 364,
     "previewUrl": "https://p.scdn.co/mp3-preview/080522816e8a7998ce0bfa8d027867e50f3c95b1"
@@ -34030,7 +34030,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/de31a24cbcc8246073c873d09f5469d33a259202",
     "audioFallback": "https://p.scdn.co/mp3-preview/de31a24cbcc8246073c873d09f5469d33a259202",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13723/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/4fc5f387624c25de0ec96b4719e3a36d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0UHB9METy4VCXNgkcGqHqS",
     "animeId": 16,
     "previewUrl": "https://p.scdn.co/mp3-preview/de31a24cbcc8246073c873d09f5469d33a259202"
@@ -34050,7 +34050,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/f29963023285c89b00b3b870e2be3b56b1fc7c68",
     "audioFallback": "https://p.scdn.co/mp3-preview/f29963023285c89b00b3b870e2be3b56b1fc7c68",
-    "coverUrl": "https://anifume.com/images/19/Jujutsu-Kaisen-3.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/328d68300e654b21831b261e413780e0/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1Qrg8KqiBpW07V7PNxwwwL",
     "animeId": 92,
     "previewUrl": "https://p.scdn.co/mp3-preview/f29963023285c89b00b3b870e2be3b56b1fc7c68"
@@ -34070,7 +34070,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d612db4620fc05498ff3d49098a494a153c6d4bf",
     "audioFallback": "https://p.scdn.co/mp3-preview/d612db4620fc05498ff3d49098a494a153c6d4bf",
-    "coverUrl": "https://media.kitsu.app/anime/45598/poster_image/medium-c9bf66231c51a0a552fbce2d91bb3a20.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/0ce25be244d0f09009da83b66b080bc4/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2xJCMIJfcNYDc5iR0sAm2O",
     "animeId": 373,
     "previewUrl": "https://p.scdn.co/mp3-preview/d612db4620fc05498ff3d49098a494a153c6d4bf"
@@ -34090,7 +34090,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/2b53e5e3a36eb548503bc0ba0393e4e5a45698d3",
     "audioFallback": "https://p.scdn.co/mp3-preview/2b53e5e3a36eb548503bc0ba0393e4e5a45698d3",
-    "coverUrl": "https://media.kitsu.app/anime/46231/poster_image/medium-d75b57ef0c9056044cc0e277ac34d6e5.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/9349b2fcb4bd060060a33f054a619e83/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1Rweq7vNjK4kZBbGrmxQsl",
     "animeId": 31,
     "previewUrl": "https://p.scdn.co/mp3-preview/2b53e5e3a36eb548503bc0ba0393e4e5a45698d3"
@@ -34110,7 +34110,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/9480983bd8b6901987f59d21049d2e68b3c266b9",
     "audioFallback": "https://p.scdn.co/mp3-preview/9480983bd8b6901987f59d21049d2e68b3c266b9",
-    "coverUrl": "https://media.kitsu.app/anime/47356/poster_image/medium-5abbbd782206cfd20df5125c75baf298.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/9c7a83a79ec78cfa0e4d93839d065557/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3Cl3uNEcYu5SDhLLXN5yhi",
     "animeId": 210,
     "previewUrl": "https://p.scdn.co/mp3-preview/9480983bd8b6901987f59d21049d2e68b3c266b9"
@@ -34130,7 +34130,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/5ed0bbbc40dda2bce0e008fe02949cd254f0ea69",
     "audioFallback": "https://p.scdn.co/mp3-preview/5ed0bbbc40dda2bce0e008fe02949cd254f0ea69",
-    "coverUrl": "https://media.kitsu.app/anime/48541/poster_image/medium-996392db10718d6b3177f11982f8b975.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/68b4e986958b17f05b062ffa8d7ae114/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0ug5NqcwcFR2xrfTkc7k8e",
     "animeId": 352,
     "previewUrl": "https://p.scdn.co/mp3-preview/5ed0bbbc40dda2bce0e008fe02949cd254f0ea69"
@@ -34170,7 +34170,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/8dadd95d60bd846553323371cb7bc1df72e3d844",
     "audioFallback": "https://p.scdn.co/mp3-preview/8dadd95d60bd846553323371cb7bc1df72e3d844",
-    "coverUrl": "https://media.kitsu.app/anime/46577/poster_image/medium-8ef6409549f257f8623b0dfb2f293933.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/06c24af0b3cc699a329eada8a42aa76f/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1Ydy1j4ooUkDvQYSvwxjoy",
     "animeId": 371,
     "previewUrl": "https://p.scdn.co/mp3-preview/8dadd95d60bd846553323371cb7bc1df72e3d844"
@@ -34190,7 +34190,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/1821193ee39cf7327d3bc0f3fe6941421c2a1c66",
     "audioFallback": "https://p.scdn.co/mp3-preview/1821193ee39cf7327d3bc0f3fe6941421c2a1c66",
-    "coverUrl": "https://media.kitsu.app/anime/44368/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/37706dd41752fb9afcb3b0ffead56e6a/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6czM6UMQD9qE5GAUp68oud",
     "animeId": 194,
     "previewUrl": "https://p.scdn.co/mp3-preview/1821193ee39cf7327d3bc0f3fe6941421c2a1c66"
@@ -34210,7 +34210,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/bab837f54a64e389b42693562957feef358fbaf3",
     "audioFallback": "https://p.scdn.co/mp3-preview/bab837f54a64e389b42693562957feef358fbaf3",
-    "coverUrl": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/c99d72b9296825a0e1073a3a8481bd9a/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/66wkCYWlXzSTQAfnsPBptt",
     "animeId": 120,
     "previewUrl": "https://p.scdn.co/mp3-preview/bab837f54a64e389b42693562957feef358fbaf3"
@@ -34230,7 +34230,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/36266634f966dba5dbb8ead6f20d1e534af3d5c4",
     "audioFallback": "https://p.scdn.co/mp3-preview/36266634f966dba5dbb8ead6f20d1e534af3d5c4",
-    "coverUrl": "https://media.kitsu.app/anime/48618/poster_image/medium-3ef7ecfe0da23a4d4ee757d46dfcd1db.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/24965bc58fb4d1524b5615f9295c802c/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/040I32EKLxQrkuxQu1pqvT",
     "animeId": 211,
     "previewUrl": "https://p.scdn.co/mp3-preview/36266634f966dba5dbb8ead6f20d1e534af3d5c4"
@@ -34250,7 +34250,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/0309e5ff0851780b194e6c2fff4b7c009773add0",
     "audioFallback": "https://p.scdn.co/mp3-preview/0309e5ff0851780b194e6c2fff4b7c009773add0",
-    "coverUrl": "https://anifume.com/images/19/Jujutsu-Kaisen-3.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/9349b2fcb4bd060060a33f054a619e83/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/142PiXzA84lmEw2RstFHFa",
     "animeId": 92,
     "previewUrl": "https://p.scdn.co/mp3-preview/0309e5ff0851780b194e6c2fff4b7c009773add0"
@@ -34270,7 +34270,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/29c3e2fad1bece04c7d8ab6e5ad4bee5a13485b5",
     "audioFallback": "https://p.scdn.co/mp3-preview/29c3e2fad1bece04c7d8ab6e5ad4bee5a13485b5",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13066/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/7e559086c775eece3bd9db9175db553d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3uwnnTQcHM1rDqSfA4gQNz",
     "animeId": 109,
     "previewUrl": "https://p.scdn.co/mp3-preview/29c3e2fad1bece04c7d8ab6e5ad4bee5a13485b5"
@@ -34290,7 +34290,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/ef6b86fbadc7685789a55202523f0ab0ef1830ac",
     "audioFallback": "https://p.scdn.co/mp3-preview/ef6b86fbadc7685789a55202523f0ab0ef1830ac",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/44207/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/f86d3f4568027fbdd9766f3369eed26e/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4YMsS8OqXICdQXF5HNUxFq",
     "animeId": 72,
     "previewUrl": "https://p.scdn.co/mp3-preview/ef6b86fbadc7685789a55202523f0ab0ef1830ac"
@@ -34310,7 +34310,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/8a8fcaf9ddf050562048d1632ddc880c9ce7c972",
     "audioFallback": "https://p.scdn.co/mp3-preview/8a8fcaf9ddf050562048d1632ddc880c9ce7c972",
-    "coverUrl": "https://media.kitsu.app/anime/13767/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/87d3870a44a28f2ba5695e12059072b0/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5mHdCZtVyb4DcJw8799hZp",
     "animeId": 185,
     "previewUrl": "https://p.scdn.co/mp3-preview/8a8fcaf9ddf050562048d1632ddc880c9ce7c972"
@@ -34330,7 +34330,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/0cfcc895f05ea04c01524612069d8f5c3754c141",
     "audioFallback": "https://p.scdn.co/mp3-preview/0cfcc895f05ea04c01524612069d8f5c3754c141",
-    "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/49e86e935da829b44cb5ffae16826e55/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6ocbgoVGwYJhOv1GgI9NsF",
     "animeId": 23,
     "previewUrl": "https://p.scdn.co/mp3-preview/0cfcc895f05ea04c01524612069d8f5c3754c141"
@@ -34350,7 +34350,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/92479d43666b31ca72b7e2a4fad74568f98ee41e",
     "audioFallback": "https://p.scdn.co/mp3-preview/92479d43666b31ca72b7e2a4fad74568f98ee41e",
-    "coverUrl": "https://media.kitsu.app/anime/48312/poster_image/medium-5a3bba84ddb645a765b4714655abf044.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b246276eba02e22c9e08605924395480/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5aIVCx5tnk0ntmdiinnYvw",
     "animeId": 404,
     "previewUrl": "https://p.scdn.co/mp3-preview/92479d43666b31ca72b7e2a4fad74568f98ee41e"
@@ -34370,7 +34370,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/012f502192036813357d6dd32457f5340a6de4c8",
     "audioFallback": "https://p.scdn.co/mp3-preview/012f502192036813357d6dd32457f5340a6de4c8",
-    "coverUrl": "https://media.kitsu.app/anime/47192/poster_image/medium-671e94191e8d931769dfa6d8a73e6491.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b1672bf98c796fc6a078977f402b75e6/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0Lmbke3KNVFXtoH2mMSHCw",
     "animeId": 243,
     "previewUrl": "https://p.scdn.co/mp3-preview/012f502192036813357d6dd32457f5340a6de4c8"
@@ -34390,7 +34390,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/86149322849514c1cf6851726dd85cebc981fb2e",
     "audioFallback": "https://p.scdn.co/mp3-preview/86149322849514c1cf6851726dd85cebc981fb2e",
-    "coverUrl": "https://media.kitsu.app/anime/41979/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/8aafccd5fc82acdebc88372bd1bef371/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4PMqSO5qyjpvzhlLI5GnID",
     "animeId": 173,
     "previewUrl": "https://p.scdn.co/mp3-preview/86149322849514c1cf6851726dd85cebc981fb2e"
@@ -34410,7 +34410,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/330c6d6e5bfcc1bc831b6948b57ce9c98e7558bf",
     "audioFallback": "https://p.scdn.co/mp3-preview/330c6d6e5bfcc1bc831b6948b57ce9c98e7558bf",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/44053/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/85a8f14b8f104b4d617cff2efd0e2e35/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3GCdLUSnKSMJhs4Tj6CV3s",
     "animeId": 302,
     "previewUrl": "https://p.scdn.co/mp3-preview/330c6d6e5bfcc1bc831b6948b57ce9c98e7558bf"
@@ -34430,7 +34430,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/ad0ec2e355ef837a144be2a258dbc5f4bcbb55c8",
     "audioFallback": "https://p.scdn.co/mp3-preview/ad0ec2e355ef837a144be2a258dbc5f4bcbb55c8",
-    "coverUrl": "https://anifume.com/images/48/Horimiya-Piece.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/82043641a4e2852b1794110b74a302e8/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6Im9k8u9iIzKMrmV7BWtlF",
     "animeId": 14,
     "previewUrl": "https://p.scdn.co/mp3-preview/ad0ec2e355ef837a144be2a258dbc5f4bcbb55c8"
@@ -34450,7 +34450,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/daeff67b1e3e674c77bca3107e54c532c4a403b2",
     "audioFallback": "https://p.scdn.co/mp3-preview/daeff67b1e3e674c77bca3107e54c532c4a403b2",
-    "coverUrl": "https://media.kitsu.app/anime/48541/poster_image/medium-996392db10718d6b3177f11982f8b975.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/4fc5f387624c25de0ec96b4719e3a36d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4pAl7FkDMNBsjykPXo91B3",
     "animeId": 209,
     "previewUrl": "https://p.scdn.co/mp3-preview/daeff67b1e3e674c77bca3107e54c532c4a403b2"
@@ -34470,7 +34470,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/82d8c7dbb14aad1b405f02fd83ccb84174284208",
     "audioFallback": "https://p.scdn.co/mp3-preview/82d8c7dbb14aad1b405f02fd83ccb84174284208",
-    "coverUrl": "https://media.kitsu.app/anime/44980/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e6f3afd8a5c3d8ea797f458694166e47/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6NFyWDv5CjfwuzoCkw47Xf",
     "animeId": 195,
     "previewUrl": "https://p.scdn.co/mp3-preview/82d8c7dbb14aad1b405f02fd83ccb84174284208"
@@ -34490,7 +34490,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/2350702484f0e449ef5e9827ac8b937f78e7490d",
     "audioFallback": "https://p.scdn.co/mp3-preview/2350702484f0e449ef5e9827ac8b937f78e7490d",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/428/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/bca07a0bfaaf112657e078b3cbc48d82/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7cgu4JBW3hq1GwTM1ilkKQ",
     "animeId": 317,
     "previewUrl": "https://p.scdn.co/mp3-preview/2350702484f0e449ef5e9827ac8b937f78e7490d"
@@ -34510,7 +34510,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/91ba9904b64660602747a030e5b6a7070bf1eabe",
     "audioFallback": "https://p.scdn.co/mp3-preview/91ba9904b64660602747a030e5b6a7070bf1eabe",
-    "coverUrl": "https://media.kitsu.app/anime/11100/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/f0b867fc60202a8990b91d5b8eeef646/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2S7N1rHJg0UO1lckCIA6sJ",
     "animeId": 161,
     "previewUrl": "https://p.scdn.co/mp3-preview/91ba9904b64660602747a030e5b6a7070bf1eabe"
@@ -34530,7 +34530,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/c88fe4044f2a0e86ea2d7d783b83a117386673e8",
     "audioFallback": "https://p.scdn.co/mp3-preview/c88fe4044f2a0e86ea2d7d783b83a117386673e8",
-    "coverUrl": "https://media.kitsu.app/anime/48312/poster_image/medium-5a3bba84ddb645a765b4714655abf044.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/31510cd5e75b9bdb80e56270c3cdeeb1/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6d9rWFahtOYiNblK9dvqK2",
     "animeId": 404,
     "previewUrl": "https://p.scdn.co/mp3-preview/c88fe4044f2a0e86ea2d7d783b83a117386673e8"
@@ -34550,7 +34550,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/529024678ab0e582337bea70f5a238c0b10dcfe3",
     "audioFallback": "https://p.scdn.co/mp3-preview/529024678ab0e582337bea70f5a238c0b10dcfe3",
-    "coverUrl": "https://media.kitsu.app/anime/47899/poster_image/medium-7c2a90df27e51f03bc70a0e86d79d88e.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e2ecda12d3962a9263321b96f8f2b2a1/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3DPWP2aAMbGoMvT84zGQyO",
     "animeId": 284,
     "previewUrl": "https://p.scdn.co/mp3-preview/529024678ab0e582337bea70f5a238c0b10dcfe3"
@@ -34570,7 +34570,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/6c3539d39dfd7756322d6bb0df5d5c5ce16a331e",
     "audioFallback": "https://p.scdn.co/mp3-preview/6c3539d39dfd7756322d6bb0df5d5c5ce16a331e",
-    "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium-0233bf77af3e0ab7303ae7099209d58a.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d21c34e7dfbac4b00074d837d51f841a/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0j97ePncGbPw30LBs5bZtD",
     "animeId": 53,
     "previewUrl": "https://p.scdn.co/mp3-preview/6c3539d39dfd7756322d6bb0df5d5c5ce16a331e"
@@ -34590,7 +34590,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/5c9d05795fbda318086a52067e68e93d3e3a1c6d",
     "audioFallback": "https://p.scdn.co/mp3-preview/5c9d05795fbda318086a52067e68e93d3e3a1c6d",
-    "coverUrl": "https://media.kitsu.app/anime/47271/poster_image/medium-90a981a5a5570ba5fdb809a3152c8348.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b584c58364932956b0f9adf28bc66573/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2xveLw2dsbQMj8HUcH9GWP",
     "animeId": 29,
     "previewUrl": "https://p.scdn.co/mp3-preview/5c9d05795fbda318086a52067e68e93d3e3a1c6d"
@@ -34610,7 +34610,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/2933e079a323afea4f8efb95e007a63680336b99",
     "audioFallback": "https://p.scdn.co/mp3-preview/2933e079a323afea4f8efb95e007a63680336b99",
-    "coverUrl": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/580e566cfaa40415358f398f5a9f83f4/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/72lQlMz3wTL0tr3Dz6zHRm",
     "animeId": 233,
     "previewUrl": "https://p.scdn.co/mp3-preview/2933e079a323afea4f8efb95e007a63680336b99"
@@ -34630,7 +34630,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/f254557cc9aae7a666a8a88d740ffb511dd30cfc",
     "audioFallback": "https://p.scdn.co/mp3-preview/f254557cc9aae7a666a8a88d740ffb511dd30cfc",
-    "coverUrl": "https://media.kitsu.app/anime/48395/poster_image/medium-c4a572327a49c03c814cd66d263e3b1f.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a726325f9dc2886d999d52daeb0d14a6/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4t5CY6etAmuBvAmRqCq0II",
     "animeId": 217,
     "previewUrl": "https://p.scdn.co/mp3-preview/f254557cc9aae7a666a8a88d740ffb511dd30cfc"
@@ -34650,7 +34650,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d57a69269c9db2c02f4124a3239bb701e67fc96f",
     "audioFallback": "https://p.scdn.co/mp3-preview/d57a69269c9db2c02f4124a3239bb701e67fc96f",
-    "coverUrl": "https://media.kitsu.app/anime/45401/poster_image/large-0850c0cfa153c42d890ac90b014b78b6.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/c5b044fa05c9115ceea41f3b3971fda7/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0hWwie1UWHJEQzog6dWvJw",
     "animeId": 115,
     "previewUrl": "https://p.scdn.co/mp3-preview/d57a69269c9db2c02f4124a3239bb701e67fc96f"
@@ -34670,7 +34670,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/429b3816aa4b6e677b8af9d01a6f583f29f74e83",
     "audioFallback": "https://p.scdn.co/mp3-preview/429b3816aa4b6e677b8af9d01a6f583f29f74e83",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/48270/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e4f725958451b08fff05f82a907e6b20/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/00iXDvNwpdmGvakQUTRICZ",
     "animeId": 383,
     "previewUrl": "https://p.scdn.co/mp3-preview/429b3816aa4b6e677b8af9d01a6f583f29f74e83"
@@ -34690,7 +34690,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/6c42d0cf3754d2704f7c8875f98e9036acc39b68",
     "audioFallback": "https://p.scdn.co/mp3-preview/6c42d0cf3754d2704f7c8875f98e9036acc39b68",
-    "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium-0233bf77af3e0ab7303ae7099209d58a.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b87d7fe216fdaeeae7918fa81b05c2d2/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/65so6Rw9HeHGLAE45WqNz5",
     "animeId": 245,
     "previewUrl": "https://p.scdn.co/mp3-preview/6c42d0cf3754d2704f7c8875f98e9036acc39b68"
@@ -34710,7 +34710,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/e809162d7ce597fe907b5c04ee45bbc279498dc1",
     "audioFallback": "https://p.scdn.co/mp3-preview/e809162d7ce597fe907b5c04ee45bbc279498dc1",
-    "coverUrl": "https://media.kitsu.app/anime/48233/poster_image/medium-e603ef5f8bac42574f7b48c0da994400.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/54e41bb51cd503c7f91eaea5270064d4/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/135pqmiywjoHxMHUSauO7n",
     "animeId": 406,
     "previewUrl": "https://p.scdn.co/mp3-preview/e809162d7ce597fe907b5c04ee45bbc279498dc1"
@@ -34730,7 +34730,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/baba908e1dd4422854e2f7882714e5ecea479daa",
     "audioFallback": "https://p.scdn.co/mp3-preview/baba908e1dd4422854e2f7882714e5ecea479daa",
-    "coverUrl": "https://media.kitsu.app/anime/44426/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a726325f9dc2886d999d52daeb0d14a6/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4qdbiKsZ80DNh765HKopCj",
     "animeId": 155,
     "previewUrl": "https://p.scdn.co/mp3-preview/baba908e1dd4422854e2f7882714e5ecea479daa"
@@ -34750,7 +34750,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/53fca5694440732c5baa0bbe7ee515734abe65bb",
     "audioFallback": "https://p.scdn.co/mp3-preview/53fca5694440732c5baa0bbe7ee515734abe65bb",
-    "coverUrl": "https://media.kitsu.app/anime/48946/poster_image/medium-0e314e0d6ebfb67ed53d173c7b9d1287.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e4d31c7d166e6c6f3bb95e5b7c1f31a2/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1ScnC2q4xnTeUfB2awBFX1",
     "animeId": 215,
     "previewUrl": "https://p.scdn.co/mp3-preview/53fca5694440732c5baa0bbe7ee515734abe65bb"
@@ -34770,7 +34770,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/9dec1f50bedf68b91126b58e59943f056669c72d",
     "audioFallback": "https://p.scdn.co/mp3-preview/9dec1f50bedf68b91126b58e59943f056669c72d",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/41024/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/5eda531711d8b2a3763407960dc3d11d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/59QeyJ5oFyiNDKroRfW2oQ",
     "animeId": 86,
     "previewUrl": "https://p.scdn.co/mp3-preview/9dec1f50bedf68b91126b58e59943f056669c72d"
@@ -34790,7 +34790,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d09ec8def584fba1108478ac8e96084b6854a28d",
     "audioFallback": "https://p.scdn.co/mp3-preview/d09ec8def584fba1108478ac8e96084b6854a28d",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/5681/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d7580ca222b18c91159754d94f31a34e/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5okqgcXfKkDTYIB4Lor3Oo",
     "animeId": 261,
     "previewUrl": "https://p.scdn.co/mp3-preview/d09ec8def584fba1108478ac8e96084b6854a28d"
@@ -34810,7 +34810,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/5dc87a53c20dd8309d0d08053256120e8fa4555d",
     "audioFallback": "https://p.scdn.co/mp3-preview/5dc87a53c20dd8309d0d08053256120e8fa4555d",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/44551/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a726325f9dc2886d999d52daeb0d14a6/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0f2N22ZC9S9fAPuxcENBYM",
     "animeId": 44,
     "previewUrl": "https://p.scdn.co/mp3-preview/5dc87a53c20dd8309d0d08053256120e8fa4555d"
@@ -34830,7 +34830,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/32a4744c20534e7a6c0e25aa80be5d521d53c1c0",
     "audioFallback": "https://p.scdn.co/mp3-preview/32a4744c20534e7a6c0e25aa80be5d521d53c1c0",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/43947/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/cc12a3bef6f08ca24ee9488ae2fef5c2/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/39Cyu9hc503gPF4dM0JLjx",
     "animeId": 400,
     "previewUrl": "https://p.scdn.co/mp3-preview/32a4744c20534e7a6c0e25aa80be5d521d53c1c0"
@@ -34850,7 +34850,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/fcdddf03f604751b1fc2e8d5dba8a147a2056f6e",
     "audioFallback": "https://p.scdn.co/mp3-preview/fcdddf03f604751b1fc2e8d5dba8a147a2056f6e",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13612/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b675a8b827023d5d718378faa1492bda/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0OAFYu1INAKOSr9BPF6rzX",
     "animeId": 99,
     "previewUrl": "https://p.scdn.co/mp3-preview/fcdddf03f604751b1fc2e8d5dba8a147a2056f6e"
@@ -34870,7 +34870,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/9c72f15586c19c490e66c4d65f7224c121eb49a9",
     "audioFallback": "https://p.scdn.co/mp3-preview/9c72f15586c19c490e66c4d65f7224c121eb49a9",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7712/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/6038264b8f9d5e94dcf523858b900b76/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7oyCjfiQnXflMq0IEGJaAP",
     "animeId": 107,
     "previewUrl": "https://p.scdn.co/mp3-preview/9c72f15586c19c490e66c4d65f7224c121eb49a9"
@@ -34890,7 +34890,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/f1552f10e66454176c16250b7ec71809f9b4082d",
     "audioFallback": "https://p.scdn.co/mp3-preview/f1552f10e66454176c16250b7ec71809f9b4082d",
-    "coverUrl": "https://media.kitsu.app/anime/42070/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/97774ce5e3ac6652fa19f79bc1d70f57/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/77sdG3mDmWtUduaSKGxihq",
     "animeId": 182,
     "previewUrl": "https://p.scdn.co/mp3-preview/f1552f10e66454176c16250b7ec71809f9b4082d"
@@ -34910,7 +34910,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/924ad925eb073aab78a10d3911677eb5f485e17c",
     "audioFallback": "https://p.scdn.co/mp3-preview/924ad925eb073aab78a10d3911677eb5f485e17c",
-    "coverUrl": "https://anifume.com/images/08/Dandadan-2.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/9067a6310ec2f9da2f585b5737cea11d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0hBStgCjIuKpiyPEfBYXZV",
     "animeId": 231,
     "previewUrl": "https://p.scdn.co/mp3-preview/924ad925eb073aab78a10d3911677eb5f485e17c"
@@ -34930,7 +34930,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/c08112af6551b7d888ef8d65eced2f3985cce882",
     "audioFallback": "https://p.scdn.co/mp3-preview/c08112af6551b7d888ef8d65eced2f3985cce882",
-    "coverUrl": "https://media.kitsu.app/anime/48994/poster_image/large-d66ad0518e3dcd862ffc4b734a85c432.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/72e33d6d9acb64d39c568aa81578d389/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5V5MJ8GiMoVwuR1hIFdFE2",
     "animeId": 119,
     "previewUrl": "https://p.scdn.co/mp3-preview/c08112af6551b7d888ef8d65eced2f3985cce882"
@@ -34950,7 +34950,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/fdec2ec4097dee70b6c1c7672c066a413f986919",
     "audioFallback": "https://p.scdn.co/mp3-preview/fdec2ec4097dee70b6c1c7672c066a413f986919",
-    "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium-0233bf77af3e0ab7303ae7099209d58a.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/0fb00adeb193805db04d4237a29593e6/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0npTO9teAMcgu4m1MLAhbH",
     "animeId": 53,
     "previewUrl": "https://p.scdn.co/mp3-preview/fdec2ec4097dee70b6c1c7672c066a413f986919"
@@ -34970,7 +34970,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/3e7a6514391136b591e743dfe983cbaad68cdea8",
     "audioFallback": "https://p.scdn.co/mp3-preview/3e7a6514391136b591e743dfe983cbaad68cdea8",
-    "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium-0233bf77af3e0ab7303ae7099209d58a.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/21b69a2b807fb3a7d53a0218cbff1264/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2qzXI1saohfjZBgeEzPDI2",
     "animeId": 245,
     "previewUrl": "https://p.scdn.co/mp3-preview/3e7a6514391136b591e743dfe983cbaad68cdea8"
@@ -34990,7 +34990,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/e183e26f35d8af4abab7204b775c84692658a892",
     "audioFallback": "https://p.scdn.co/mp3-preview/e183e26f35d8af4abab7204b775c84692658a892",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7000/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d982e7333a15d96dfce1168d949bcdef/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7pNT355inrl67CnWPDRAYG",
     "animeId": 106,
     "previewUrl": "https://p.scdn.co/mp3-preview/e183e26f35d8af4abab7204b775c84692658a892"
@@ -35010,7 +35010,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/0478c33984837a2cd2554a97030dfa2cf39b887f",
     "audioFallback": "https://p.scdn.co/mp3-preview/0478c33984837a2cd2554a97030dfa2cf39b887f",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6448/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b33c5c8b6edfb00ed64d5a6c012432af/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0kjF9oTDWTBWFB3jssI2SH",
     "animeId": 37,
     "previewUrl": "https://p.scdn.co/mp3-preview/0478c33984837a2cd2554a97030dfa2cf39b887f"
@@ -35030,7 +35030,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/fbd08be488d2f4c4dfb4d026c8d6cde78f653f08",
     "audioFallback": "https://p.scdn.co/mp3-preview/fbd08be488d2f4c4dfb4d026c8d6cde78f653f08",
-    "coverUrl": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/fa223125b4c4b9f1ba50bb303730e902/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4zqJbswvwYmL1lAFdYJcAx",
     "animeId": 120,
     "previewUrl": "https://p.scdn.co/mp3-preview/fbd08be488d2f4c4dfb4d026c8d6cde78f653f08"
@@ -35050,7 +35050,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/64f4ae1029814ab96d9e8c3bbc1ebf38a01809f5",
     "audioFallback": "https://p.scdn.co/mp3-preview/64f4ae1029814ab96d9e8c3bbc1ebf38a01809f5",
-    "coverUrl": "https://media.kitsu.app/anime/44917/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/486c2c77183af6d472b1cae01700c398/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4EuCaTCoEycMKhS9cgwU9Z",
     "animeId": 131,
     "previewUrl": "https://p.scdn.co/mp3-preview/64f4ae1029814ab96d9e8c3bbc1ebf38a01809f5"
@@ -35070,7 +35070,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/9dae8528856689cd6ef3700980ca7344aef395b3",
     "audioFallback": "https://p.scdn.co/mp3-preview/9dae8528856689cd6ef3700980ca7344aef395b3",
-    "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
+    "coverUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format&fit=crop&q=80",
     "spotifyUrl": "https://open.spotify.com/track/069JaCJqZk3T63e7KxVqfH",
     "animeId": 126,
     "previewUrl": "https://p.scdn.co/mp3-preview/9dae8528856689cd6ef3700980ca7344aef395b3"
@@ -35090,7 +35090,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/96c529286defb84f9a40c648169adb171a55d55b",
     "audioFallback": "https://p.scdn.co/mp3-preview/96c529286defb84f9a40c648169adb171a55d55b",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/3936/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d84b0434a449013cbedce158ef0b968e/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4XaJuCQuIPM4Xz8O6csrdZ",
     "animeId": 65,
     "previewUrl": "https://p.scdn.co/mp3-preview/96c529286defb84f9a40c648169adb171a55d55b"
@@ -35110,7 +35110,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/43d654cd2c034cf83c0997f0dcc8c8aa35531376",
     "audioFallback": "https://p.scdn.co/mp3-preview/43d654cd2c034cf83c0997f0dcc8c8aa35531376",
-    "coverUrl": "https://media.kitsu.app/anime/13369/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/1c30f8744ab64b12158cba002b440ee1/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2a78JDp7YVCyEydtRiHOn7",
     "animeId": 192,
     "previewUrl": "https://p.scdn.co/mp3-preview/43d654cd2c034cf83c0997f0dcc8c8aa35531376"
@@ -35130,7 +35130,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/37b61ca856df6883f97825c43b0c6693877694f4",
     "audioFallback": "https://p.scdn.co/mp3-preview/37b61ca856df6883f97825c43b0c6693877694f4",
-    "coverUrl": "https://media.kitsu.app/anime/44196/poster_image/medium-a7b52a1e9cea5a04b29ee6878fbff923.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/8abe1b62823dc98523909f1e4ede3def/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5W2IYA5Su42XiI90GDdscj",
     "animeId": 19,
     "previewUrl": "https://p.scdn.co/mp3-preview/37b61ca856df6883f97825c43b0c6693877694f4"
@@ -35150,7 +35150,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/681321eea061120f36d4b2520f2474f25615c5c0",
     "audioFallback": "https://p.scdn.co/mp3-preview/681321eea061120f36d4b2520f2474f25615c5c0",
-    "coverUrl": "https://media.kitsu.app/anime/47899/poster_image/medium-7c2a90df27e51f03bc70a0e86d79d88e.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/8c055882c454a180689be8a7394d56c5/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4jyfcb5s4H3hKl0CJXjYei",
     "animeId": 284,
     "previewUrl": "https://p.scdn.co/mp3-preview/681321eea061120f36d4b2520f2474f25615c5c0"
@@ -35170,7 +35170,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/c94276a662d36fd467869e069e49e740daa402ba",
     "audioFallback": "https://p.scdn.co/mp3-preview/c94276a662d36fd467869e069e49e740daa402ba",
-    "coverUrl": "https://anifume.com/images/48/Horimiya-Piece.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/638361a932dc469fc37e74ec594a191c/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/15Xn4r9FY3725iHIfyq5hE",
     "animeId": 14,
     "previewUrl": "https://p.scdn.co/mp3-preview/c94276a662d36fd467869e069e49e740daa402ba"
@@ -35190,7 +35190,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/a52f50f466dd2de7cc91fc167668ee9afcaf41a7",
     "audioFallback": "https://p.scdn.co/mp3-preview/a52f50f466dd2de7cc91fc167668ee9afcaf41a7",
-    "coverUrl": "https://media.kitsu.app/anime/42929/poster_image/medium-c14f69d5c2cdb13e27b0ef03dde95248.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/069e3abb23aaa286c97c454c4b64e9f1/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0UlTAkFyXcBBs1HjtICAsD",
     "animeId": 297,
     "previewUrl": "https://p.scdn.co/mp3-preview/a52f50f466dd2de7cc91fc167668ee9afcaf41a7"
@@ -35210,7 +35210,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/3974b416ce7a3ee240ff76db170fa18a53306120",
     "audioFallback": "https://p.scdn.co/mp3-preview/3974b416ce7a3ee240ff76db170fa18a53306120",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/42260/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b8be4116b4d3775d72a0b416bb34c28c/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7pvu8UPXXIex1bChP4yyiS",
     "animeId": 114,
     "previewUrl": "https://p.scdn.co/mp3-preview/3974b416ce7a3ee240ff76db170fa18a53306120"
@@ -35230,7 +35230,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/7a2c9ccd6e1bab08f10e64e3ea8487188e467a23",
     "audioFallback": "https://p.scdn.co/mp3-preview/7a2c9ccd6e1bab08f10e64e3ea8487188e467a23",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8147/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/c893ecd92816fca435b8e8590840c7cc/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5q2xUSTyggCisITlHEvtB1",
     "animeId": 58,
     "previewUrl": "https://p.scdn.co/mp3-preview/7a2c9ccd6e1bab08f10e64e3ea8487188e467a23"
@@ -35250,7 +35250,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/78fc2f9219049b48d28661e13a2108da117d2191",
     "audioFallback": "https://p.scdn.co/mp3-preview/78fc2f9219049b48d28661e13a2108da117d2191",
-    "coverUrl": "https://media.kitsu.app/anime/8133/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/85257ee6a3690d36a55c0953e48320b6/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2ETxIqlSgtlh8nnfVeKJld",
     "animeId": 141,
     "previewUrl": "https://p.scdn.co/mp3-preview/78fc2f9219049b48d28661e13a2108da117d2191"
@@ -35270,7 +35270,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/f6efebe49dd2dcf0d9d99ccdea4f76aa4278831b",
     "audioFallback": "https://p.scdn.co/mp3-preview/f6efebe49dd2dcf0d9d99ccdea4f76aa4278831b",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7645/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/4433f1350780500f17564d18286b6008/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/47RntmKRiQvjLTpSefhGUP",
     "animeId": 281,
     "previewUrl": "https://p.scdn.co/mp3-preview/f6efebe49dd2dcf0d9d99ccdea4f76aa4278831b"
@@ -35290,7 +35290,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/833e1be60f1da2440d1370241bd6c43d22161ec8",
     "audioFallback": "https://p.scdn.co/mp3-preview/833e1be60f1da2440d1370241bd6c43d22161ec8",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/11606/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/8d4d2ef7491d78b59fcf4f91967dd571/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5GwXBrY91rDCB18cwpjsBz",
     "animeId": 276,
     "previewUrl": "https://p.scdn.co/mp3-preview/833e1be60f1da2440d1370241bd6c43d22161ec8"
@@ -35310,7 +35310,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/e9df20caf82ee35245e5ad5908f3f5ad35876c70",
     "audioFallback": "https://p.scdn.co/mp3-preview/e9df20caf82ee35245e5ad5908f3f5ad35876c70",
-    "coverUrl": "https://media.kitsu.app/anime/41277/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d84b0434a449013cbedce158ef0b968e/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5BRsrxiZkFkOl7YotaLQEp",
     "animeId": 144,
     "previewUrl": "https://p.scdn.co/mp3-preview/e9df20caf82ee35245e5ad5908f3f5ad35876c70"
@@ -35330,7 +35330,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d1171bab285a321d336bddeeb7bce2861c4ae4fb",
     "audioFallback": "https://p.scdn.co/mp3-preview/d1171bab285a321d336bddeeb7bce2861c4ae4fb",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/43896/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/fee0239d1ae15dd22c8df8b92c9f0ff9/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3iTOd09b4Dsz1QucpGMivX",
     "animeId": 324,
     "previewUrl": "https://p.scdn.co/mp3-preview/d1171bab285a321d336bddeeb7bce2861c4ae4fb"
@@ -35350,7 +35350,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d621f4f018041325e92da4e95a7b642f08b8700b",
     "audioFallback": "https://p.scdn.co/mp3-preview/d621f4f018041325e92da4e95a7b642f08b8700b",
-    "coverUrl": "https://media.kitsu.app/anime/45532/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/5059e2cb48a042832e33233128fc7216/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4rmspWmdoJIjw6Rm3cEvGm",
     "animeId": 181,
     "previewUrl": "https://p.scdn.co/mp3-preview/d621f4f018041325e92da4e95a7b642f08b8700b"
@@ -35370,7 +35370,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/c8b19ec1dc0d71dc3efad8067a07dce578f5cb49",
     "audioFallback": "https://p.scdn.co/mp3-preview/c8b19ec1dc0d71dc3efad8067a07dce578f5cb49",
-    "coverUrl": "https://media.kitsu.app/anime/13569/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/1feabc34f4a358826b7bb4e61314f0f7/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4psph4gNDqUnGvBSq6UwwE",
     "animeId": 151,
     "previewUrl": "https://p.scdn.co/mp3-preview/c8b19ec1dc0d71dc3efad8067a07dce578f5cb49"
@@ -35390,7 +35390,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/b0eb9120884a683f3b834cfb52247e0b3bc06609",
     "audioFallback": "https://p.scdn.co/mp3-preview/b0eb9120884a683f3b834cfb52247e0b3bc06609",
-    "coverUrl": "https://media.kitsu.app/anime/18/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/f8abd094d304aa4c6d37710cfdab0fa2/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2Lvp0KYwXrU1L9OHQNA5Be",
     "animeId": 200,
     "previewUrl": "https://p.scdn.co/mp3-preview/b0eb9120884a683f3b834cfb52247e0b3bc06609"
@@ -35410,7 +35410,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/21b88e68a64f19897056ed7fdc9bdc30d62e00b4",
     "audioFallback": "https://p.scdn.co/mp3-preview/21b88e68a64f19897056ed7fdc9bdc30d62e00b4",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/46722/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/5315df58b947b014bf629da5be492b14/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3gxK6ehmktiz8QRElreh5S",
     "animeId": 397,
     "previewUrl": "https://p.scdn.co/mp3-preview/21b88e68a64f19897056ed7fdc9bdc30d62e00b4"
@@ -35430,7 +35430,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/9704d06df9d985bf320388c83c860af4f78eff0d",
     "audioFallback": "https://p.scdn.co/mp3-preview/9704d06df9d985bf320388c83c860af4f78eff0d",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/149/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/cc351bfa4bb4cf608a0a3e2ff401b677/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4c17U06F2ngjTOF5z70Yyy",
     "animeId": 344,
     "previewUrl": "https://p.scdn.co/mp3-preview/9704d06df9d985bf320388c83c860af4f78eff0d"
@@ -35450,7 +35450,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/14ccd3586aa81542359be4e4925f810a05f3fe42",
     "audioFallback": "https://p.scdn.co/mp3-preview/14ccd3586aa81542359be4e4925f810a05f3fe42",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6437/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/c73d05afb935688078e3351822ce62ae/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1us1N0XEToufNnmzyhJPm5",
     "animeId": 288,
     "previewUrl": "https://p.scdn.co/mp3-preview/14ccd3586aa81542359be4e4925f810a05f3fe42"
@@ -35470,7 +35470,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/970e58a77c0316791c46af1f0ea1b4b36c5748fe",
     "audioFallback": "https://p.scdn.co/mp3-preview/970e58a77c0316791c46af1f0ea1b4b36c5748fe",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7157/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/83a9a81e185233daab9cdc3f6e8b5708/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/01rXepgii5VjwHUaajNMmm",
     "animeId": 17,
     "previewUrl": "https://p.scdn.co/mp3-preview/970e58a77c0316791c46af1f0ea1b4b36c5748fe"
@@ -35490,7 +35490,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/52898bfcae941ed2990842d56878593e8c7e8dbb",
     "audioFallback": "https://p.scdn.co/mp3-preview/52898bfcae941ed2990842d56878593e8c7e8dbb",
-    "coverUrl": "https://media.kitsu.app/anime/7983/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/88ad87be3a35cb1be01e43bd79794e9a/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6j3Nhz3FGomL4UJoJQI9Pc",
     "animeId": 178,
     "previewUrl": "https://p.scdn.co/mp3-preview/52898bfcae941ed2990842d56878593e8c7e8dbb"
@@ -35510,7 +35510,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/e0a7212efebc07f6590a6b47e507ce5d578a9d7d",
     "audioFallback": "https://p.scdn.co/mp3-preview/e0a7212efebc07f6590a6b47e507ce5d578a9d7d",
-    "coverUrl": "https://media.kitsu.app/anime/42929/poster_image/medium-c14f69d5c2cdb13e27b0ef03dde95248.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e9de657eabcbc33ba7447cf1705bb8d4/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3AfxHHhvIyHW4fEvCG9qLY",
     "animeId": 297,
     "previewUrl": "https://p.scdn.co/mp3-preview/e0a7212efebc07f6590a6b47e507ce5d578a9d7d"
@@ -35530,7 +35530,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/408c94747017852f3f6772ab0891c432031b66d2",
     "audioFallback": "https://p.scdn.co/mp3-preview/408c94747017852f3f6772ab0891c432031b66d2",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/3128/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/9334963153030e6fb74acbdb26cf1b65/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7BqBn9nzAq8spo5e7cZ0dJ",
     "animeId": 83,
     "previewUrl": "https://p.scdn.co/mp3-preview/408c94747017852f3f6772ab0891c432031b66d2"
@@ -35550,7 +35550,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/67ea20051d23a47d74becbe982285c5320dbe577",
     "audioFallback": "https://p.scdn.co/mp3-preview/67ea20051d23a47d74becbe982285c5320dbe577",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/44551/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/3734366a73152d0367a83a4b09fd163f/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/32OlwWuMpZ6b0aN2RZOeMS",
     "animeId": 44,
     "previewUrl": "https://p.scdn.co/mp3-preview/67ea20051d23a47d74becbe982285c5320dbe577"
@@ -35570,7 +35570,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/02f41843308e75503161cfce28114902b9e072fa",
     "audioFallback": "https://p.scdn.co/mp3-preview/02f41843308e75503161cfce28114902b9e072fa",
-    "coverUrl": "https://media.kitsu.app/anime/46183/poster_image/large-18f01df516283259a59ae88e549918de.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/12caf219559ac479b9f7ead9de3d43e5/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2qPUnoasNe4Ep43emVXEig",
     "animeId": 80,
     "previewUrl": "https://p.scdn.co/mp3-preview/02f41843308e75503161cfce28114902b9e072fa"
@@ -35590,7 +35590,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/2ba8a14b311c1f4ad446b94b71da3f507d555193",
     "audioFallback": "https://p.scdn.co/mp3-preview/2ba8a14b311c1f4ad446b94b71da3f507d555193",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8536/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/fa7df5ad2466a0d8b837188407457666/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/59dLtGBS26x7kc0rHbaPrq",
     "animeId": 340,
     "previewUrl": "https://p.scdn.co/mp3-preview/2ba8a14b311c1f4ad446b94b71da3f507d555193"
@@ -35610,7 +35610,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/c7ead2fb0d0be4004af5b912846138692b1fc0f9",
     "audioFallback": "https://p.scdn.co/mp3-preview/c7ead2fb0d0be4004af5b912846138692b1fc0f9",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/176/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e38dc3b732af18dde99c07953dd9a22c/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6YbhspuOar1D9WSSnfe7ds",
     "animeId": 314,
     "previewUrl": "https://p.scdn.co/mp3-preview/c7ead2fb0d0be4004af5b912846138692b1fc0f9"
@@ -35630,7 +35630,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/7b5d54ffb3c4e5c28adafe19532de22508d62851",
     "audioFallback": "https://p.scdn.co/mp3-preview/7b5d54ffb3c4e5c28adafe19532de22508d62851",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/5447/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b1d763da698c38bde6a526c8220ca0ea/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1Slwb6dOYkBlWal1PGtnNg",
     "animeId": 392,
     "previewUrl": "https://p.scdn.co/mp3-preview/7b5d54ffb3c4e5c28adafe19532de22508d62851"
@@ -35650,7 +35650,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/350ab6582ccc6eebbf6e7e0227be5e356e043c91",
     "audioFallback": "https://p.scdn.co/mp3-preview/350ab6582ccc6eebbf6e7e0227be5e356e043c91",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/10028/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b47375a569d2ebe68380f273c98f92dd/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6SKwQghsR8AISlxhcwyA9R",
     "animeId": 10,
     "previewUrl": "https://p.scdn.co/mp3-preview/350ab6582ccc6eebbf6e7e0227be5e356e043c91"
@@ -35670,7 +35670,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/8959d5e6580b9d00fefd87bbbbf0dac0940a9d51",
     "audioFallback": "https://p.scdn.co/mp3-preview/8959d5e6580b9d00fefd87bbbbf0dac0940a9d51",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/43896/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/231c66c0ed260c708163eff3bb8458da/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5QM0SsyzmBM0pbFY52Xj1X",
     "animeId": 324,
     "previewUrl": "https://p.scdn.co/mp3-preview/8959d5e6580b9d00fefd87bbbbf0dac0940a9d51"
@@ -35690,7 +35690,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/3abcba42a4cb3566c4840c29fd6695459065b1ae",
     "audioFallback": "https://p.scdn.co/mp3-preview/3abcba42a4cb3566c4840c29fd6695459065b1ae",
-    "coverUrl": "https://media.kitsu.app/anime/42886/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/95f254f5a4b63ed50250e64386343ec8/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4cluDES4hQEUhmXj6TXkSo",
     "animeId": 156,
     "previewUrl": "https://p.scdn.co/mp3-preview/3abcba42a4cb3566c4840c29fd6695459065b1ae"
@@ -35710,7 +35710,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/0952568e496914bb61383588ac417ec70abefc1d",
     "audioFallback": "https://p.scdn.co/mp3-preview/0952568e496914bb61383588ac417ec70abefc1d",
-    "coverUrl": "https://media.kitsu.app/anime/11100/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/14afa8e767482283a4bd57ceae31eb80/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1EzrEOXmMH3G43AXT1y7pA",
     "animeId": 161,
     "previewUrl": "https://p.scdn.co/mp3-preview/0952568e496914bb61383588ac417ec70abefc1d"
@@ -35730,7 +35730,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/34d92e8aa5786233d5a0abb1b1d9b8325d7e9fd6",
     "audioFallback": "https://p.scdn.co/mp3-preview/34d92e8aa5786233d5a0abb1b1d9b8325d7e9fd6",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/818/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b9bc22abc42702fc1b1833f0c0b997a2/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2A5YAFeEwGi7KlGMYRf5dX",
     "animeId": 74,
     "previewUrl": "https://p.scdn.co/mp3-preview/34d92e8aa5786233d5a0abb1b1d9b8325d7e9fd6"
@@ -35750,7 +35750,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/3e82b61946a5ddb0fd77ceec97c002b28f58003b",
     "audioFallback": "https://p.scdn.co/mp3-preview/3e82b61946a5ddb0fd77ceec97c002b28f58003b",
-    "coverUrl": "https://media.kitsu.app/anime/44426/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/99578b0bb8c838383c414a5b62b5e15d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3avYqdwHKEq8beXbeWCKqJ",
     "animeId": 155,
     "previewUrl": "https://p.scdn.co/mp3-preview/3e82b61946a5ddb0fd77ceec97c002b28f58003b"
@@ -35770,7 +35770,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/6316f6cf12631da62c5b786421b25e66c3ab4ea6",
     "audioFallback": "https://p.scdn.co/mp3-preview/6316f6cf12631da62c5b786421b25e66c3ab4ea6",
-    "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/63bb716faf92942d967f5c053fc8720c/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2tpWsVSb9UEmDRxAl1zhX1",
     "animeId": 238,
     "previewUrl": "https://p.scdn.co/mp3-preview/6316f6cf12631da62c5b786421b25e66c3ab4ea6"
@@ -35790,7 +35790,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/f6e266d1ac2fe28e40f2e13ebc85231db65412c6",
     "audioFallback": "https://p.scdn.co/mp3-preview/f6e266d1ac2fe28e40f2e13ebc85231db65412c6",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7359/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/12ac2e58b173d8704718b48a0e91b349/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4lLtanYk6tkMvooU0tWzG8",
     "animeId": 110,
     "previewUrl": "https://p.scdn.co/mp3-preview/f6e266d1ac2fe28e40f2e13ebc85231db65412c6"
@@ -35810,7 +35810,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d531fa5b94ad57fb9c2286d8b2374be1740fd9d3",
     "audioFallback": "https://p.scdn.co/mp3-preview/d531fa5b94ad57fb9c2286d8b2374be1740fd9d3",
-    "coverUrl": "https://media.kitsu.app/anime/45401/poster_image/large-0850c0cfa153c42d890ac90b014b78b6.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/f409c33ab781a565ab46f06ba3415a31/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4rHZZAmHpZrA3iH5zx8frV",
     "animeId": 115,
     "previewUrl": "https://p.scdn.co/mp3-preview/d531fa5b94ad57fb9c2286d8b2374be1740fd9d3"
@@ -35830,7 +35830,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/2d1fd54c4a4147b43e1eb79c00380e36818a2546",
     "audioFallback": "https://p.scdn.co/mp3-preview/2d1fd54c4a4147b43e1eb79c00380e36818a2546",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/43005/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/cef30c1c2a5a63c773d26d56049c81e5/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3XVBdLihbNbxUwZosxcGuJ",
     "animeId": 111,
     "previewUrl": "https://p.scdn.co/mp3-preview/2d1fd54c4a4147b43e1eb79c00380e36818a2546"
@@ -35850,7 +35850,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/b2ba87ea556f5c9f44c947b176ccec21da3e612f",
     "audioFallback": "https://p.scdn.co/mp3-preview/b2ba87ea556f5c9f44c947b176ccec21da3e612f",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/41083/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/5eb7bf3d5a9e623f2f74536dbb197dfa/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3E7dfMvvCLUddWissuqMwr",
     "animeId": 116,
     "previewUrl": "https://p.scdn.co/mp3-preview/b2ba87ea556f5c9f44c947b176ccec21da3e612f"
@@ -35870,7 +35870,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/ebf0e42b2eb2acb22639c23b74d49f07038e5887",
     "audioFallback": "https://p.scdn.co/mp3-preview/ebf0e42b2eb2acb22639c23b74d49f07038e5887",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8270/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e9a170ca0ae06918f9baa6cb109fb321/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3U4isOIWM3VvDubwSI3y7a",
     "animeId": 82,
     "previewUrl": "https://p.scdn.co/mp3-preview/ebf0e42b2eb2acb22639c23b74d49f07038e5887"
@@ -35890,7 +35890,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/f5452ebf843f4c126eacc038fbfdc9502bf0a9b5",
     "audioFallback": "https://p.scdn.co/mp3-preview/f5452ebf843f4c126eacc038fbfdc9502bf0a9b5",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13066/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/90f3459a16d4b4ee6d15df2973ba6afd/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4r6eNCsrZnQWJzzvFh4nlg",
     "animeId": 109,
     "previewUrl": "https://p.scdn.co/mp3-preview/f5452ebf843f4c126eacc038fbfdc9502bf0a9b5"
@@ -35910,7 +35910,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/518c823cf0f8b862bed0fa45e34cc63db5ea58e4",
     "audioFallback": "https://p.scdn.co/mp3-preview/518c823cf0f8b862bed0fa45e34cc63db5ea58e4",
-    "coverUrl": "https://media.kitsu.app/anime/47271/poster_image/medium-90a981a5a5570ba5fdb809a3152c8348.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/90989ab8998af9d5957b43bae748788d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4HlFJV71xXKIGcU3kRyttv",
     "animeId": 29,
     "previewUrl": "https://p.scdn.co/mp3-preview/518c823cf0f8b862bed0fa45e34cc63db5ea58e4"
@@ -35950,7 +35950,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d90f4e5f15d8ed411307945560b1db8cca6b253b",
     "audioFallback": "https://p.scdn.co/mp3-preview/d90f4e5f15d8ed411307945560b1db8cca6b253b",
-    "coverUrl": "https://media.kitsu.app/anime/11578/poster_image/medium-9ace4ac709f334cc96d244c15fe7d4d0.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b1d763da698c38bde6a526c8220ca0ea/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6fxVffaTuwjgEk5h9QyRjy",
     "animeId": 56,
     "previewUrl": "https://p.scdn.co/mp3-preview/d90f4e5f15d8ed411307945560b1db8cca6b253b"
@@ -35970,7 +35970,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/abf52d96f3f35554fcc0ea7005d9e1ce848efd77",
     "audioFallback": "https://p.scdn.co/mp3-preview/abf52d96f3f35554fcc0ea7005d9e1ce848efd77",
-    "coverUrl": "https://anifume.com/images/54/Tokidoki-Bosotto-Russia-go.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/209aa560e3b5fbe679e91887fc0c7332/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6JV2JOEocMgcZxYSZelKcc",
     "animeId": 202,
     "previewUrl": "https://p.scdn.co/mp3-preview/abf52d96f3f35554fcc0ea7005d9e1ce848efd77"
@@ -35990,7 +35990,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/e58475d2391025fe032cba6b5282c71a6141223e",
     "audioFallback": "https://p.scdn.co/mp3-preview/e58475d2391025fe032cba6b5282c71a6141223e",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/1491/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/1985182d891e8ff33f7da7cb0a903ce0/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2yPoXCs7BSIUrucMdK5PzV",
     "animeId": 391,
     "previewUrl": "https://p.scdn.co/mp3-preview/e58475d2391025fe032cba6b5282c71a6141223e"
@@ -36010,7 +36010,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/2265c5b16b2e19f65da045df41cf2b4b8fd66ea3",
     "audioFallback": "https://p.scdn.co/mp3-preview/2265c5b16b2e19f65da045df41cf2b4b8fd66ea3",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/47390/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/2ae8e9f1714cc6cc9393f7873008f45c/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4G2Hbfwvn3oH7LxxPXjjGn",
     "animeId": 399,
     "previewUrl": "https://p.scdn.co/mp3-preview/2265c5b16b2e19f65da045df41cf2b4b8fd66ea3"
@@ -36030,7 +36030,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/f0adc30b06534f10629df897c1684193f340677b",
     "audioFallback": "https://p.scdn.co/mp3-preview/f0adc30b06534f10629df897c1684193f340677b",
-    "coverUrl": "https://media.kitsu.app/anime/48534/poster_image/medium-c38c15266ae228974e8c2a00d776ea92.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/620bcd9a3310b1bfaba639b060b54abf/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4nVBt6MZDDP6tRVdQTgxJg",
     "animeId": 207,
     "previewUrl": "https://p.scdn.co/mp3-preview/f0adc30b06534f10629df897c1684193f340677b"
@@ -36050,7 +36050,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/2e2100af8cd386f628684caafb50662b67656de0",
     "audioFallback": "https://p.scdn.co/mp3-preview/2e2100af8cd386f628684caafb50662b67656de0",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/3505/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d159abf10c91611bd3c3b2789c96535f/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1mXVgsBdtIVeCLJnSnmtdV",
     "animeId": 45,
     "previewUrl": "https://p.scdn.co/mp3-preview/2e2100af8cd386f628684caafb50662b67656de0"
@@ -36070,7 +36070,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/af23e81c3bcd8cf1b3bdc5fdb42bd9c89eb0e89d",
     "audioFallback": "https://p.scdn.co/mp3-preview/af23e81c3bcd8cf1b3bdc5fdb42bd9c89eb0e89d",
-    "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/c80a5faa09d5e77071217ad3fcfd699e/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5uCax9HTNlzGybIStD3vDh",
     "animeId": 238,
     "previewUrl": "https://p.scdn.co/mp3-preview/af23e81c3bcd8cf1b3bdc5fdb42bd9c89eb0e89d"
@@ -36090,7 +36090,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/c4a7b5e8b012344e607dc50991a32b4a00326739",
     "audioFallback": "https://p.scdn.co/mp3-preview/c4a7b5e8b012344e607dc50991a32b4a00326739",
-    "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d59ba2295d91292a8bcb372bad9d88be/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/20I6sIOMTCkB6w7ryavxtO",
     "animeId": 23,
     "previewUrl": "https://p.scdn.co/mp3-preview/c4a7b5e8b012344e607dc50991a32b4a00326739"
@@ -36110,7 +36110,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/b4e70a4b9cfc7e25c2ac9c6ec4325524ec84c1d1",
     "audioFallback": "https://p.scdn.co/mp3-preview/b4e70a4b9cfc7e25c2ac9c6ec4325524ec84c1d1",
-    "coverUrl": "https://media.kitsu.app/anime/46300/poster_image/medium-c1c025bbee42bed048e628b1eae278c0.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/698998a533376e1a22c171fa5339f3bb/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4rMNgxEwGWoPHIUcvB5BrB",
     "animeId": 232,
     "previewUrl": "https://p.scdn.co/mp3-preview/b4e70a4b9cfc7e25c2ac9c6ec4325524ec84c1d1"
@@ -36130,7 +36130,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/71b3faabe9cf3b0d5613ba1dd110cbbbfde88e03",
     "audioFallback": "https://p.scdn.co/mp3-preview/71b3faabe9cf3b0d5613ba1dd110cbbbfde88e03",
-    "coverUrl": "https://media.kitsu.app/anime/48618/poster_image/medium-3ef7ecfe0da23a4d4ee757d46dfcd1db.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/887f5a609bafc8cf2983953a16428a56/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6tl840rz5kY1ybVjv1jre2",
     "animeId": 211,
     "previewUrl": "https://p.scdn.co/mp3-preview/71b3faabe9cf3b0d5613ba1dd110cbbbfde88e03"
@@ -36150,7 +36150,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/5faf8a082e1cb3f18c10cc6aa85eeca1c7014263",
     "audioFallback": "https://p.scdn.co/mp3-preview/5faf8a082e1cb3f18c10cc6aa85eeca1c7014263",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8270/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a1939a9a40dc97ed404cc4597c6a32bc/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/60nZcImufyMA1MKQY3dcCH",
     "animeId": 82,
     "previewUrl": "https://p.scdn.co/mp3-preview/5faf8a082e1cb3f18c10cc6aa85eeca1c7014263"
@@ -36170,7 +36170,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/a6673e86dccaf0232ab041314ec716e03e2f34fc",
     "audioFallback": "https://p.scdn.co/mp3-preview/a6673e86dccaf0232ab041314ec716e03e2f34fc",
-    "coverUrl": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/231c66c0ed260c708163eff3bb8458da/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5MxWTfmlmRDx6VZHvB9xV8",
     "animeId": 22,
     "previewUrl": "https://p.scdn.co/mp3-preview/a6673e86dccaf0232ab041314ec716e03e2f34fc"
@@ -36190,7 +36190,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/7157fc5b99c54f5e11803b888d20fdbb9e731949",
     "audioFallback": "https://p.scdn.co/mp3-preview/7157fc5b99c54f5e11803b888d20fdbb9e731949",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8536/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/dc1ce848d830ecc93521be5a78350364/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7j4OmvkjRz0PrjFADlHfQx",
     "animeId": 340,
     "previewUrl": "https://p.scdn.co/mp3-preview/7157fc5b99c54f5e11803b888d20fdbb9e731949"
@@ -36210,7 +36210,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d4f23f96eec1b542cd2e12fa758d3560137c4aa1",
     "audioFallback": "https://p.scdn.co/mp3-preview/d4f23f96eec1b542cd2e12fa758d3560137c4aa1",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13503/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/f53532575f7bbda0e6357cff05e33e3b/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0cCf8UpRfjOB7yp1yqzMHM",
     "animeId": 43,
     "previewUrl": "https://p.scdn.co/mp3-preview/d4f23f96eec1b542cd2e12fa758d3560137c4aa1"
@@ -36230,7 +36230,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/fba762cc2183add5fcca91232a8f40237bee546c",
     "audioFallback": "https://p.scdn.co/mp3-preview/fba762cc2183add5fcca91232a8f40237bee546c",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7578/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e12383afa947313b38bf2f69390c0f2d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6IALh7qtVXOlYXDDQ84Fr1",
     "animeId": 267,
     "previewUrl": "https://p.scdn.co/mp3-preview/fba762cc2183add5fcca91232a8f40237bee546c"
@@ -36250,7 +36250,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/9a34c049025dc4271dadf3b805073ca87b238c31",
     "audioFallback": "https://p.scdn.co/mp3-preview/9a34c049025dc4271dadf3b805073ca87b238c31",
-    "coverUrl": "https://media.kitsu.app/anime/26/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/3ba7e50d1f8f1db7e1838f390aec8691/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/21jWrW7qGdX5xXO5FPhLSM",
     "animeId": 165,
     "previewUrl": "https://p.scdn.co/mp3-preview/9a34c049025dc4271dadf3b805073ca87b238c31"
@@ -36270,7 +36270,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/263ff4c9c7b26aad7dfae56bc2734cf5c92a47df",
     "audioFallback": "https://p.scdn.co/mp3-preview/263ff4c9c7b26aad7dfae56bc2734cf5c92a47df",
-    "coverUrl": "https://media.kitsu.app/anime/4249/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/1747b930b646eb8dca1dd439bdb8885a/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7iXscKdrUdBqLmzBv1i9Ad",
     "animeId": 189,
     "previewUrl": "https://p.scdn.co/mp3-preview/263ff4c9c7b26aad7dfae56bc2734cf5c92a47df"
@@ -36290,7 +36290,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/112df6520544173fd52b95b91b1070c865b5e8ff",
     "audioFallback": "https://p.scdn.co/mp3-preview/112df6520544173fd52b95b91b1070c865b5e8ff",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8270/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/02e661550e10230a154f7a3d4cf8f614/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7f1BKoVl0ZJhGMcnvyrHlt",
     "animeId": 82,
     "previewUrl": "https://p.scdn.co/mp3-preview/112df6520544173fd52b95b91b1070c865b5e8ff"
@@ -36310,7 +36310,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/dd01f8338fef39671eb97247cd1652109122780a",
     "audioFallback": "https://p.scdn.co/mp3-preview/dd01f8338fef39671eb97247cd1652109122780a",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13612/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d6887b244c774856d1beac0521d5e573/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/60qEvumYWNZTXYnU0BrPda",
     "animeId": 99,
     "previewUrl": "https://p.scdn.co/mp3-preview/dd01f8338fef39671eb97247cd1652109122780a"
@@ -36330,7 +36330,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/e4f05861b0470667317bc5f4033496dae5cf320f",
     "audioFallback": "https://p.scdn.co/mp3-preview/e4f05861b0470667317bc5f4033496dae5cf320f",
-    "coverUrl": "https://media.kitsu.app/anime/12976/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/7fc5ae691651dede507db14103faa564/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7vnw2nU0xpc9RABEgc3pxQ",
     "animeId": 138,
     "previewUrl": "https://p.scdn.co/mp3-preview/e4f05861b0470667317bc5f4033496dae5cf320f"
@@ -36350,7 +36350,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d07c1d45b22c333196e6ce3909ef9318df79af99",
     "audioFallback": "https://p.scdn.co/mp3-preview/d07c1d45b22c333196e6ce3909ef9318df79af99",
-    "coverUrl": "https://media.kitsu.app/anime/45598/poster_image/medium-c9bf66231c51a0a552fbce2d91bb3a20.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b9003bac74a45e2e6223c65cac932d77/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3DKdtwZkiqr5zvhrRpEd23",
     "animeId": 373,
     "previewUrl": "https://p.scdn.co/mp3-preview/d07c1d45b22c333196e6ce3909ef9318df79af99"
@@ -36370,7 +36370,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/a7602b37cf5825e3aa5b6f40174595ecb751237d",
     "audioFallback": "https://p.scdn.co/mp3-preview/a7602b37cf5825e3aa5b6f40174595ecb751237d",
-    "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d6c6fb8945207a699070c3caa84f0c13/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6R7HEq0CsyPImro1uDhUcx",
     "animeId": 204,
     "previewUrl": "https://p.scdn.co/mp3-preview/a7602b37cf5825e3aa5b6f40174595ecb751237d"
@@ -36390,7 +36390,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/99e6d64392c575a507e9e39b9f413a89d625f4c1",
     "audioFallback": "https://p.scdn.co/mp3-preview/99e6d64392c575a507e9e39b9f413a89d625f4c1",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/10356/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/bdc8b9f20f289de107d35e1f759d94d8/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/79qhHPvit6BeOVu2wNnLgJ",
     "animeId": 272,
     "previewUrl": "https://p.scdn.co/mp3-preview/99e6d64392c575a507e9e39b9f413a89d625f4c1"
@@ -36410,7 +36410,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/98a8c80d65df698b6c9efdcaf0bfa6299f75db12",
     "audioFallback": "https://p.scdn.co/mp3-preview/98a8c80d65df698b6c9efdcaf0bfa6299f75db12",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/176/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/53211aadd0af44128eb50f0fcc8bad4f/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2OULHL0yM3KbaHC1vlTffC",
     "animeId": 314,
     "previewUrl": "https://p.scdn.co/mp3-preview/98a8c80d65df698b6c9efdcaf0bfa6299f75db12"
@@ -36430,7 +36430,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/92b3626154540a14b3b74f61a941b30cb001b368",
     "audioFallback": "https://p.scdn.co/mp3-preview/92b3626154540a14b3b74f61a941b30cb001b368",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/48624/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/4f8a63aac6b6c0acf82591fbe3efc641/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4iQTpRoRZUvXRdgZtI3KUi",
     "animeId": 349,
     "previewUrl": "https://p.scdn.co/mp3-preview/92b3626154540a14b3b74f61a941b30cb001b368"
@@ -36470,7 +36470,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/3c808dbb1062f2eb28b41a9e937bb5fda265524a",
     "audioFallback": "https://p.scdn.co/mp3-preview/3c808dbb1062f2eb28b41a9e937bb5fda265524a",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/1376/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/139dec40acee3cb1d6c23849170419ee/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/06DPpk0hUJEgpzl5cuWNI6",
     "animeId": 34,
     "previewUrl": "https://p.scdn.co/mp3-preview/3c808dbb1062f2eb28b41a9e937bb5fda265524a"
@@ -36490,7 +36490,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/665f508733a2fb8b837c89729e4e015b5c9705fc",
     "audioFallback": "https://p.scdn.co/mp3-preview/665f508733a2fb8b837c89729e4e015b5c9705fc",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/47195/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/19d3e17232bd41b1e2fae44620a30222/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2ezfWejKhD3CJS0qLNJKkQ",
     "animeId": 395,
     "previewUrl": "https://p.scdn.co/mp3-preview/665f508733a2fb8b837c89729e4e015b5c9705fc"
@@ -36510,7 +36510,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/fd78c035d2084266fdebdc2b5144380f01b699de",
     "audioFallback": "https://p.scdn.co/mp3-preview/fd78c035d2084266fdebdc2b5144380f01b699de",
-    "coverUrl": "https://media.kitsu.app/anime/46603/poster_image/medium-c71c4c11b6099b25be248eb847326ea0.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/cdfeee946992c68d312ee9021ae86e39/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5Ssjl0BJRFKtjxbgZlnoj9",
     "animeId": 374,
     "previewUrl": "https://p.scdn.co/mp3-preview/fd78c035d2084266fdebdc2b5144380f01b699de"
@@ -36530,7 +36530,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/f4368a458764fe8ccafd9bff3f5192ff2374bbdf",
     "audioFallback": "https://p.scdn.co/mp3-preview/f4368a458764fe8ccafd9bff3f5192ff2374bbdf",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/14312/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e0e206cc40ba656a7d52d35dd4548e9f/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6VzhAqu1DImWLGpCjyaReG",
     "animeId": 287,
     "previewUrl": "https://p.scdn.co/mp3-preview/f4368a458764fe8ccafd9bff3f5192ff2374bbdf"
@@ -36550,7 +36550,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/ab5170afba82a20e7a043181dcc79865028e136e",
     "audioFallback": "https://p.scdn.co/mp3-preview/ab5170afba82a20e7a043181dcc79865028e136e",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/4397/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/5268f0694fa49fe229ee7de131a344c6/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0R5Xy2nx62fEA0ImqfHf4L",
     "animeId": 20,
     "previewUrl": "https://p.scdn.co/mp3-preview/ab5170afba82a20e7a043181dcc79865028e136e"
@@ -36570,7 +36570,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/ee7c9a7be43a730317016b6bd600deb0e9569b7a",
     "audioFallback": "https://p.scdn.co/mp3-preview/ee7c9a7be43a730317016b6bd600deb0e9569b7a",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6462/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/02e661550e10230a154f7a3d4cf8f614/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/166ZalajmAfOUqDg9EeXJ7",
     "animeId": 343,
     "previewUrl": "https://p.scdn.co/mp3-preview/ee7c9a7be43a730317016b6bd600deb0e9569b7a"
@@ -36590,7 +36590,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/8f29a0b5056124d02d95806a524369e10738a46e",
     "audioFallback": "https://p.scdn.co/mp3-preview/8f29a0b5056124d02d95806a524369e10738a46e",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/44551/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b1307b0405436d60bdb494ef4965bfcb/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1EUhTdMoXsmFFe5wGG03vj",
     "animeId": 44,
     "previewUrl": "https://p.scdn.co/mp3-preview/8f29a0b5056124d02d95806a524369e10738a46e"
@@ -36610,7 +36610,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/530554aa3b5f09a9b0a6c567bf342bb6835b1204",
     "audioFallback": "https://p.scdn.co/mp3-preview/530554aa3b5f09a9b0a6c567bf342bb6835b1204",
-    "coverUrl": "https://media.kitsu.app/anime/7307/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/45892bf4a08d4e63d9618449025c8896/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/60ZuPJ8kseTn6isqhyxpCi",
     "animeId": 191,
     "previewUrl": "https://p.scdn.co/mp3-preview/530554aa3b5f09a9b0a6c567bf342bb6835b1204"
@@ -36630,7 +36630,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/4d562880c9f85e1f38e6a868a99a52c3355ea746",
     "audioFallback": "https://p.scdn.co/mp3-preview/4d562880c9f85e1f38e6a868a99a52c3355ea746",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7515/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/8b867f315d0073cbe6f97033dadbd464/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5WEc7rmyL9K2djBfF6yX2G",
     "animeId": 13,
     "previewUrl": "https://p.scdn.co/mp3-preview/4d562880c9f85e1f38e6a868a99a52c3355ea746"
@@ -36650,7 +36650,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/e006143e6dd9b5781927b59ca0ac74ee2e698eb9",
     "audioFallback": "https://p.scdn.co/mp3-preview/e006143e6dd9b5781927b59ca0ac74ee2e698eb9",
-    "coverUrl": "https://media.kitsu.app/anime/41334/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/dc05ec72a84638207cd9570fceeae4a8/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5VY8UJBCIa7RgzLBculPuv",
     "animeId": 177,
     "previewUrl": "https://p.scdn.co/mp3-preview/e006143e6dd9b5781927b59ca0ac74ee2e698eb9"
@@ -36670,7 +36670,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/59a6a90f73cd5a6f081a11a417c9693af757240d",
     "audioFallback": "https://p.scdn.co/mp3-preview/59a6a90f73cd5a6f081a11a417c9693af757240d",
-    "coverUrl": "https://media.kitsu.app/anime/41334/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/02e661550e10230a154f7a3d4cf8f614/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2Y26aMWTIvcIEQEGuTLhNR",
     "animeId": 177,
     "previewUrl": "https://p.scdn.co/mp3-preview/59a6a90f73cd5a6f081a11a417c9693af757240d"
@@ -36690,7 +36690,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/8d491d34aafd6eeb7e181faf5c5b94e917731575",
     "audioFallback": "https://p.scdn.co/mp3-preview/8d491d34aafd6eeb7e181faf5c5b94e917731575",
-    "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d3814e3aaf666d41525373c09aa58ea2/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7AKVPaALvAvrJPTDmEg3tT",
     "animeId": 238,
     "previewUrl": "https://p.scdn.co/mp3-preview/8d491d34aafd6eeb7e181faf5c5b94e917731575"
@@ -36710,7 +36710,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/58d5f019715dce42d844868d9798dc8111195be0",
     "audioFallback": "https://p.scdn.co/mp3-preview/58d5f019715dce42d844868d9798dc8111195be0",
-    "coverUrl": "https://media.kitsu.app/anime/44382/poster_image/large-8ffc8ea9b6a1f9e79bc626e03baab167.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/1de34e05cd90d956804149f799b7ffed/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7CFEgj1Fn9XRRV3H2WWJke",
     "animeId": 70,
     "previewUrl": "https://p.scdn.co/mp3-preview/58d5f019715dce42d844868d9798dc8111195be0"
@@ -36730,7 +36730,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/1b34a3feb897ffb8acccbb135bd9a2f4ef1ba408",
     "audioFallback": "https://p.scdn.co/mp3-preview/1b34a3feb897ffb8acccbb135bd9a2f4ef1ba408",
-    "coverUrl": "https://media.kitsu.app/anime/47192/poster_image/medium-671e94191e8d931769dfa6d8a73e6491.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d6caf99d35edadfce953b4841f36637b/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1dDzDZADzctY4uZFhy9afh",
     "animeId": 243,
     "previewUrl": "https://p.scdn.co/mp3-preview/1b34a3feb897ffb8acccbb135bd9a2f4ef1ba408"
@@ -36750,7 +36750,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/739ec75b9e4e73e7e5d96924fdc2b842a7ccb5a9",
     "audioFallback": "https://p.scdn.co/mp3-preview/739ec75b9e4e73e7e5d96924fdc2b842a7ccb5a9",
-    "coverUrl": "https://media.kitsu.app/anime/9991/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/53e9bc93386c730c47c86e94b69e93c4/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6cWbOlreslaWQp8JVOhqcm",
     "animeId": 145,
     "previewUrl": "https://p.scdn.co/mp3-preview/739ec75b9e4e73e7e5d96924fdc2b842a7ccb5a9"
@@ -36770,7 +36770,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/2803966e6bf164b58ea99ec145b095e3043a6e11",
     "audioFallback": "https://p.scdn.co/mp3-preview/2803966e6bf164b58ea99ec145b095e3043a6e11",
-    "coverUrl": "https://media.kitsu.app/anime/13369/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/6eebd68a7413a379fa4c0f9aa3a7fef1/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/51EN90GQ1JhX7n1noAB0s4",
     "animeId": 192,
     "previewUrl": "https://p.scdn.co/mp3-preview/2803966e6bf164b58ea99ec145b095e3043a6e11"
@@ -36790,7 +36790,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/4c2d7f05f5406e3c81a4b2f50004b1f7a7f10e88",
     "audioFallback": "https://p.scdn.co/mp3-preview/4c2d7f05f5406e3c81a4b2f50004b1f7a7f10e88",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/45059/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/42497c73ec648262aaa44d0f127da28e/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6yFMBM4QavlNFUTGZ3cpI6",
     "animeId": 290,
     "previewUrl": "https://p.scdn.co/mp3-preview/4c2d7f05f5406e3c81a4b2f50004b1f7a7f10e88"
@@ -36810,7 +36810,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/1d45de65b330e0ca1006fc06fabf0ba16e18e7cc",
     "audioFallback": "https://p.scdn.co/mp3-preview/1d45de65b330e0ca1006fc06fabf0ba16e18e7cc",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/444/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/7716d491159d44a95b970842e45a1c95/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5YoPPNj47iZSZEWum0ajUo",
     "animeId": 309,
     "previewUrl": "https://p.scdn.co/mp3-preview/1d45de65b330e0ca1006fc06fabf0ba16e18e7cc"
@@ -36830,7 +36830,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/b140387e9b8d8e535040abc64b0c533098493570",
     "audioFallback": "https://p.scdn.co/mp3-preview/b140387e9b8d8e535040abc64b0c533098493570",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8778/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/f20a4438d1787e706e891f3a6c710bfe/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4kvBebTWC2UmFevtoG0BXy",
     "animeId": 277,
     "previewUrl": "https://p.scdn.co/mp3-preview/b140387e9b8d8e535040abc64b0c533098493570"
@@ -36850,7 +36850,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/e15f9ab330238bac5b9dfe8fe7a865bcddd3fa55",
     "audioFallback": "https://p.scdn.co/mp3-preview/e15f9ab330238bac5b9dfe8fe7a865bcddd3fa55",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7881/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/762b6955e583869b191a9bf453c691d5/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3tO60AUMSHnVioIi8sij5H",
     "animeId": 49,
     "previewUrl": "https://p.scdn.co/mp3-preview/e15f9ab330238bac5b9dfe8fe7a865bcddd3fa55"
@@ -36870,7 +36870,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/78741f1e22a748d33d35fb9b8a42e18ff813ba34",
     "audioFallback": "https://p.scdn.co/mp3-preview/78741f1e22a748d33d35fb9b8a42e18ff813ba34",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/41870/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/8abe1b62823dc98523909f1e4ede3def/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/156vW59aySrZRah9fGpNJk",
     "animeId": 381,
     "previewUrl": "https://p.scdn.co/mp3-preview/78741f1e22a748d33d35fb9b8a42e18ff813ba34"
@@ -36890,7 +36890,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/8123704beef76611a7af4f3e74b2e247dbf214da",
     "audioFallback": "https://p.scdn.co/mp3-preview/8123704beef76611a7af4f3e74b2e247dbf214da",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/1434/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/5033c4870b6cef068dc0742b989c8100/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/07ZIrtR00m3t9AcmeRZ7vQ",
     "animeId": 264,
     "previewUrl": "https://p.scdn.co/mp3-preview/8123704beef76611a7af4f3e74b2e247dbf214da"
@@ -36910,7 +36910,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/4cc8703231dc8a4f6b41a7ca5bf44adae7cd5793",
     "audioFallback": "https://p.scdn.co/mp3-preview/4cc8703231dc8a4f6b41a7ca5bf44adae7cd5793",
-    "coverUrl": "https://media.kitsu.app/anime/4802/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/7c9b0f07fae82c1cc580e6b3dc15e46f/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1fBIWQh21BNWLhuhXDMog1",
     "animeId": 160,
     "previewUrl": "https://p.scdn.co/mp3-preview/4cc8703231dc8a4f6b41a7ca5bf44adae7cd5793"
@@ -36930,7 +36930,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/775a3af16fdffe76ca8a710ea818298e64c5ff23",
     "audioFallback": "https://p.scdn.co/mp3-preview/775a3af16fdffe76ca8a710ea818298e64c5ff23",
-    "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/2bfc05346198e6e8e99d4ec9ff6bcdab/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2eoRByVEfnVlvBzjdhT7NX",
     "animeId": 252,
     "previewUrl": "https://p.scdn.co/mp3-preview/775a3af16fdffe76ca8a710ea818298e64c5ff23"
@@ -36950,7 +36950,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/28f9c3823533416ca733fe8d1a2674c6e9463985",
     "audioFallback": "https://p.scdn.co/mp3-preview/28f9c3823533416ca733fe8d1a2674c6e9463985",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13723/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/301b7216b90d8c00f006a8d8d8da6e1b/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6z56u8jPSSroDFrJVD5cMf",
     "animeId": 98,
     "previewUrl": "https://p.scdn.co/mp3-preview/28f9c3823533416ca733fe8d1a2674c6e9463985"
@@ -36970,7 +36970,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/012aec17d33ff5468ddf4c771daaa2471eb9f9ce",
     "audioFallback": "https://p.scdn.co/mp3-preview/012aec17d33ff5468ddf4c771daaa2471eb9f9ce",
-    "coverUrl": "https://media.kitsu.app/anime/46004/poster_image/medium-b5e9b4b5a0e2e4d3d7dc8fd2f7d3af10.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/723fa0f86d8e6b4159bda1d6c83e6087/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6pTSm2Sw6fEEO4iKfOJqTL",
     "animeId": 291,
     "previewUrl": "https://p.scdn.co/mp3-preview/012aec17d33ff5468ddf4c771daaa2471eb9f9ce"
@@ -36990,7 +36990,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/b5e38304bbf2f595fc051ee14993221e61ab67c0",
     "audioFallback": "https://p.scdn.co/mp3-preview/b5e38304bbf2f595fc051ee14993221e61ab67c0",
-    "coverUrl": "https://media.kitsu.app/anime/13569/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/640d3ba45ea45a216aaaf58f38e70b27/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7ArmHy7HS14hkfmZYOTwd6",
     "animeId": 151,
     "previewUrl": "https://p.scdn.co/mp3-preview/b5e38304bbf2f595fc051ee14993221e61ab67c0"
@@ -37010,7 +37010,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/8822e5ec9f5cd8e9f496f62e6ee0b3cc090475cd",
     "audioFallback": "https://p.scdn.co/mp3-preview/8822e5ec9f5cd8e9f496f62e6ee0b3cc090475cd",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8271/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/47ea88fdd703b1572c9ade39c3e55485/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7Iu9RvbMi1jShosg1b5mxt",
     "animeId": 52,
     "previewUrl": "https://p.scdn.co/mp3-preview/8822e5ec9f5cd8e9f496f62e6ee0b3cc090475cd"
@@ -37030,7 +37030,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/894ca323627f55eccfbb38d2357bc513e473783d",
     "audioFallback": "https://p.scdn.co/mp3-preview/894ca323627f55eccfbb38d2357bc513e473783d",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/47743/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/dcbeb37d66d5c1a97ccd4ecdbe5e3fee/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1QbP49w60Db4mrhYbsQ8bg",
     "animeId": 384,
     "previewUrl": "https://p.scdn.co/mp3-preview/894ca323627f55eccfbb38d2357bc513e473783d"
@@ -37050,7 +37050,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/46c449c10ded57572abe9f7ece24ed0665eb4ddf",
     "audioFallback": "https://p.scdn.co/mp3-preview/46c449c10ded57572abe9f7ece24ed0665eb4ddf",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/3853/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/7e4608de57c72e593eb9f098faf38071/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5zXYZPPSVH3lp0qGbmKT2Q",
     "animeId": 259,
     "previewUrl": "https://p.scdn.co/mp3-preview/46c449c10ded57572abe9f7ece24ed0665eb4ddf"
@@ -37070,7 +37070,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/c40e0e99f1888109998d13461ec5e9a764208ded",
     "audioFallback": "https://p.scdn.co/mp3-preview/c40e0e99f1888109998d13461ec5e9a764208ded",
-    "coverUrl": "https://media.kitsu.app/anime/45517/poster_image/medium-55342a19ef9eb98db5dfd17c9b83b38c.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/65b9718b6d13a6dfa6d4bce140605085/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0jxzVn8rr59knZFALDokLy",
     "animeId": 370,
     "previewUrl": "https://p.scdn.co/mp3-preview/c40e0e99f1888109998d13461ec5e9a764208ded"
@@ -37090,7 +37090,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/b631104a2bf2942e95ad811fe9103caa2db0ab9f",
     "audioFallback": "https://p.scdn.co/mp3-preview/b631104a2bf2942e95ad811fe9103caa2db0ab9f",
-    "coverUrl": "https://media.kitsu.app/anime/46481/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d41dd388acb1a04ba410c4c9a3681578/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3jQEXiy7AtzDMiilrYlO0H",
     "animeId": 196,
     "previewUrl": "https://p.scdn.co/mp3-preview/b631104a2bf2942e95ad811fe9103caa2db0ab9f"
@@ -37110,7 +37110,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/6655f40f95d28d7b8e7cdb6cb8901445b11bfa03",
     "audioFallback": "https://p.scdn.co/mp3-preview/6655f40f95d28d7b8e7cdb6cb8901445b11bfa03",
-    "coverUrl": "https://media.kitsu.app/anime/42886/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/f20a4438d1787e706e891f3a6c710bfe/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/28WxTxO0DM9PyKBhvb8Vb0",
     "animeId": 156,
     "previewUrl": "https://p.scdn.co/mp3-preview/6655f40f95d28d7b8e7cdb6cb8901445b11bfa03"
@@ -37130,7 +37130,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/ba8c525d86469815abfc79d561b6cb290ced011f",
     "audioFallback": "https://p.scdn.co/mp3-preview/ba8c525d86469815abfc79d561b6cb290ced011f",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/818/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/f20a9dbb2b615a5ce7f293b81e5e7634/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5kWEorPV6WHYf5htPXONcL",
     "animeId": 74,
     "previewUrl": "https://p.scdn.co/mp3-preview/ba8c525d86469815abfc79d561b6cb290ced011f"
@@ -37150,7 +37150,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/ce6b8535d69603a0673da1e64cb633998c7b5afe",
     "audioFallback": "https://p.scdn.co/mp3-preview/ce6b8535d69603a0673da1e64cb633998c7b5afe",
-    "coverUrl": "https://media.kitsu.app/anime/46603/poster_image/medium-c71c4c11b6099b25be248eb847326ea0.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/62566fb70712f5ec7055b4c3ea28c71e/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4njC4CPPqAQZ5bo6eEjP0e",
     "animeId": 374,
     "previewUrl": "https://p.scdn.co/mp3-preview/ce6b8535d69603a0673da1e64cb633998c7b5afe"
@@ -37170,7 +37170,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/c88dd85d0b8b708d70d60cf3f02ed5bf6b3d3b8d",
     "audioFallback": "https://p.scdn.co/mp3-preview/c88dd85d0b8b708d70d60cf3f02ed5bf6b3d3b8d",
-    "coverUrl": "https://media.kitsu.app/anime/782/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/2283655d9c4a0564ae5ad39c2bcff0e6/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4Ug0zzRkHD9tJPgx7iy9z2",
     "animeId": 198,
     "previewUrl": "https://p.scdn.co/mp3-preview/c88dd85d0b8b708d70d60cf3f02ed5bf6b3d3b8d"
@@ -37190,7 +37190,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d0bc0649f21f20f1e5dd473bdfd22d27fb868f35",
     "audioFallback": "https://p.scdn.co/mp3-preview/d0bc0649f21f20f1e5dd473bdfd22d27fb868f35",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/1491/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e35f1fbf873728bba2e67b1e58537a0b/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2HY5NVPfvygwTBM1x6jwvH",
     "animeId": 391,
     "previewUrl": "https://p.scdn.co/mp3-preview/d0bc0649f21f20f1e5dd473bdfd22d27fb868f35"
@@ -37210,7 +37210,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/f2db5a24d011e415b604779537c0b5986e83bda8",
     "audioFallback": "https://p.scdn.co/mp3-preview/f2db5a24d011e415b604779537c0b5986e83bda8",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/428/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ad41c1b3e532723c1419f4c26f3b6e8c/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2wyMhqD3UtR8Ucg59UZhZd",
     "animeId": 317,
     "previewUrl": "https://p.scdn.co/mp3-preview/f2db5a24d011e415b604779537c0b5986e83bda8"
@@ -37230,7 +37230,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/b967f549f0b74d919e75fcbc32e0f94a13b15ba2",
     "audioFallback": "https://p.scdn.co/mp3-preview/b967f549f0b74d919e75fcbc32e0f94a13b15ba2",
-    "coverUrl": "https://media.kitsu.app/anime/46415/poster_image/medium-09a8e8a7b821309beba30e1b49a5369e.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/1ccfcc2bbf86caa88f3470f7e390f9b2/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1XdaaI0bz0ILJzl1oBq2In",
     "animeId": 227,
     "previewUrl": "https://p.scdn.co/mp3-preview/b967f549f0b74d919e75fcbc32e0f94a13b15ba2"
@@ -37250,7 +37250,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/8801d2604e582fc33199c706faa7bc942a16d7ff",
     "audioFallback": "https://p.scdn.co/mp3-preview/8801d2604e582fc33199c706faa7bc942a16d7ff",
-    "coverUrl": "https://media.kitsu.app/anime/46183/poster_image/medium-5f704e2d6d86c0666d81e140d2c9f6a0.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/8abe1b62823dc98523909f1e4ede3def/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3Vkzgf11Ubecqccu8Wxu8w",
     "animeId": 221,
     "previewUrl": "https://p.scdn.co/mp3-preview/8801d2604e582fc33199c706faa7bc942a16d7ff"
@@ -37270,7 +37270,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/885f7fffb482fdeea30050325bfc0330634a2118",
     "audioFallback": "https://p.scdn.co/mp3-preview/885f7fffb482fdeea30050325bfc0330634a2118",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6169/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d41dd388acb1a04ba410c4c9a3681578/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/11sWcMeRIGlUR5rwvV6IS3",
     "animeId": 12,
     "previewUrl": "https://p.scdn.co/mp3-preview/885f7fffb482fdeea30050325bfc0330634a2118"
@@ -37290,7 +37290,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/ac5d1be3b4200ec287f4cc0858ef94259551de94",
     "audioFallback": "https://p.scdn.co/mp3-preview/ac5d1be3b4200ec287f4cc0858ef94259551de94",
-    "coverUrl": "https://media.kitsu.app/anime/48946/poster_image/medium-0e314e0d6ebfb67ed53d173c7b9d1287.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/2a36d20a2fa422323da9ddf97ddd0eff/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5XGTehBbNk1y0KrdkI1qsK",
     "animeId": 215,
     "previewUrl": "https://p.scdn.co/mp3-preview/ac5d1be3b4200ec287f4cc0858ef94259551de94"
@@ -37310,7 +37310,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/9bb099940da050089e21ad9a27d6be2dd83f9bd0",
     "audioFallback": "https://p.scdn.co/mp3-preview/9bb099940da050089e21ad9a27d6be2dd83f9bd0",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/11469/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/1d22a2ef2d9415aecbea552b1739e0de/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0HOJpNiOpY13dZzzmObZAH",
     "animeId": 274,
     "previewUrl": "https://p.scdn.co/mp3-preview/9bb099940da050089e21ad9a27d6be2dd83f9bd0"
@@ -37330,7 +37330,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/918e5fb60435f51424fe50a2f15edb35aa6ef602",
     "audioFallback": "https://p.scdn.co/mp3-preview/918e5fb60435f51424fe50a2f15edb35aa6ef602",
-    "coverUrl": "https://anifume.com/images/08/Dandadan-2.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/c2f2493da2ce32a79888018ae386542d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5pbD2zRUQmzhzqHTp97K19",
     "animeId": 32,
     "previewUrl": "https://p.scdn.co/mp3-preview/918e5fb60435f51424fe50a2f15edb35aa6ef602"
@@ -37350,7 +37350,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/03c55c01b0bd689d0a74cab2c01a78ff378fc3e7",
     "audioFallback": "https://p.scdn.co/mp3-preview/03c55c01b0bd689d0a74cab2c01a78ff378fc3e7",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/4255/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/6f218a3eda132efaac17148fa6ae8bc0/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5bxUcO8wPndPdgxIbgGzqc",
     "animeId": 342,
     "previewUrl": "https://p.scdn.co/mp3-preview/03c55c01b0bd689d0a74cab2c01a78ff378fc3e7"
@@ -37370,7 +37370,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/f7d754a6e6646aebb424cc16913fca892b01d849",
     "audioFallback": "https://p.scdn.co/mp3-preview/f7d754a6e6646aebb424cc16913fca892b01d849",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/3702/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/74af43c8fb8790816ee26427d82f98ca/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/08oX4H0Td1Fza9eBXzmojN",
     "animeId": 401,
     "previewUrl": "https://p.scdn.co/mp3-preview/f7d754a6e6646aebb424cc16913fca892b01d849"
@@ -37390,7 +37390,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/3020af7feab1a6d1e35e42fede55fa1388155d3f",
     "audioFallback": "https://p.scdn.co/mp3-preview/3020af7feab1a6d1e35e42fede55fa1388155d3f",
-    "coverUrl": "https://media.kitsu.app/anime/45517/poster_image/medium-55342a19ef9eb98db5dfd17c9b83b38c.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/7471fab757f91d2becaa33b1e74532bc/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4uAry3GWAv0Cz7JaCzGVPA",
     "animeId": 370,
     "previewUrl": "https://p.scdn.co/mp3-preview/3020af7feab1a6d1e35e42fede55fa1388155d3f"
@@ -37410,7 +37410,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/60e7c724ba5f397a9c7aab3456f8bfc185c2f9e4",
     "audioFallback": "https://p.scdn.co/mp3-preview/60e7c724ba5f397a9c7aab3456f8bfc185c2f9e4",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8147/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/42498d905e883fbb51ac756f60816b04/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0b9JDLbAgCazIwPSWj6DNL",
     "animeId": 58,
     "previewUrl": "https://p.scdn.co/mp3-preview/60e7c724ba5f397a9c7aab3456f8bfc185c2f9e4"
@@ -37430,7 +37430,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/17f6ffb6c7ea4ae758c38a6f7227e48dbbfb43bf",
     "audioFallback": "https://p.scdn.co/mp3-preview/17f6ffb6c7ea4ae758c38a6f7227e48dbbfb43bf",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/10740/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/619d1d493c95a28b07b58c6f88fed83b/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3Sg7fg4KhVZpgZaC91jFX2",
     "animeId": 55,
     "previewUrl": "https://p.scdn.co/mp3-preview/17f6ffb6c7ea4ae758c38a6f7227e48dbbfb43bf"
@@ -37450,7 +37450,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/524c094d63505a66d2d4b74ef5771feba4975be2",
     "audioFallback": "https://p.scdn.co/mp3-preview/524c094d63505a66d2d4b74ef5771feba4975be2",
-    "coverUrl": "https://media.kitsu.app/anime/3639/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/dd4849fc3630cb9a304f884c0d2d1fff/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2luYdyxKSSxuC3cSW8N6A0",
     "animeId": 157,
     "previewUrl": "https://p.scdn.co/mp3-preview/524c094d63505a66d2d4b74ef5771feba4975be2"
@@ -37470,7 +37470,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/ac4410e53155aa5366ac89cbbbfc7beb311020a7",
     "audioFallback": "https://p.scdn.co/mp3-preview/ac4410e53155aa5366ac89cbbbfc7beb311020a7",
-    "coverUrl": "https://media.kitsu.app/anime/777/poster_image/medium-838bd2659fa6198a6626d175be3e967b.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b50e58d7b949126f607d41cc29a12fc5/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2hxfN5UiyW4RfTmfTQxzap",
     "animeId": 60,
     "previewUrl": "https://p.scdn.co/mp3-preview/ac4410e53155aa5366ac89cbbbfc7beb311020a7"
@@ -37490,7 +37490,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/cda5c9898e844650bce705de3232ba707041973c",
     "audioFallback": "https://p.scdn.co/mp3-preview/cda5c9898e844650bce705de3232ba707041973c",
-    "coverUrl": "https://media.kitsu.app/anime/48671/poster_image/large-6156a7475d03dbb788ab1a9ce6c7f962.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/0c5567dec8d02244e5141837c209c24b/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0y5F68On9PEG726OipJXP5",
     "animeId": 118,
     "previewUrl": "https://p.scdn.co/mp3-preview/cda5c9898e844650bce705de3232ba707041973c"
@@ -37510,7 +37510,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/548f92d38ae56c46a3e4c089b64ab4622b5f5434",
     "audioFallback": "https://p.scdn.co/mp3-preview/548f92d38ae56c46a3e4c089b64ab4622b5f5434",
-    "coverUrl": "https://media.kitsu.app/anime/48233/poster_image/medium-e603ef5f8bac42574f7b48c0da994400.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/2c68362f4843bb9c226c757057662ad3/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7nSkSqb1WDtZ7hY2dVEvWY",
     "animeId": 406,
     "previewUrl": "https://p.scdn.co/mp3-preview/548f92d38ae56c46a3e4c089b64ab4622b5f5434"
@@ -37530,7 +37530,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/c91c460ac3c7f83aafa3c276978007178d7785bd",
     "audioFallback": "https://p.scdn.co/mp3-preview/c91c460ac3c7f83aafa3c276978007178d7785bd",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/4255/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/4a5c61911685152ca2e064c0e3c9b3f6/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4I0F3ItogIEpgH9qbjCiQz",
     "animeId": 342,
     "previewUrl": "https://p.scdn.co/mp3-preview/c91c460ac3c7f83aafa3c276978007178d7785bd"
@@ -37550,7 +37550,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/442327cb63b65b49791cff02a8be10e15710550f",
     "audioFallback": "https://p.scdn.co/mp3-preview/442327cb63b65b49791cff02a8be10e15710550f",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/47195/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/6c666331c9b14d9bbc85a6c1e8ad02c9/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4pBwZlClhq6vV6qdSkyf00",
     "animeId": 395,
     "previewUrl": "https://p.scdn.co/mp3-preview/442327cb63b65b49791cff02a8be10e15710550f"
@@ -37570,7 +37570,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/dd41b428f653d46f898ba0c94ff30640ab93f97d",
     "audioFallback": "https://p.scdn.co/mp3-preview/dd41b428f653d46f898ba0c94ff30640ab93f97d",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/43088/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/2b88a24cf8fb6504fb7e8ee81429524d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2KFr9apKEJ1qvJT23boCyb",
     "animeId": 301,
     "previewUrl": "https://p.scdn.co/mp3-preview/dd41b428f653d46f898ba0c94ff30640ab93f97d"
@@ -37590,7 +37590,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/1614248b0ac39017171b6e0656e5891ed441d979",
     "audioFallback": "https://p.scdn.co/mp3-preview/1614248b0ac39017171b6e0656e5891ed441d979",
-    "coverUrl": "https://media.kitsu.app/anime/44196/poster_image/medium-a7b52a1e9cea5a04b29ee6878fbff923.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/dcfa01ba7e5d811c7238ca89372a0270/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4RKdCN2AoogXeIqiQmDxNy",
     "animeId": 364,
     "previewUrl": "https://p.scdn.co/mp3-preview/1614248b0ac39017171b6e0656e5891ed441d979"
@@ -37610,7 +37610,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/dfcf4342b69c6939b1280691fc35dbb830ed0d6d",
     "audioFallback": "https://p.scdn.co/mp3-preview/dfcf4342b69c6939b1280691fc35dbb830ed0d6d",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/43613/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/66e32a3a877009cfefae58a49279c3ba/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/57NV6TzzYS473R7OgmDepf",
     "animeId": 405,
     "previewUrl": "https://p.scdn.co/mp3-preview/dfcf4342b69c6939b1280691fc35dbb830ed0d6d"
@@ -37630,7 +37630,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/0b9767cf4dc94f251046b45f5f2b98ae3dfa8e27",
     "audioFallback": "https://p.scdn.co/mp3-preview/0b9767cf4dc94f251046b45f5f2b98ae3dfa8e27",
-    "coverUrl": "https://media.kitsu.app/anime/46857/poster_image/medium-4f810148ad4a0d922a901bf9e62fe46d.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d044962d4b303cf4d3166174519de751/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2LNa62xLKJ07ssTscpL5V6",
     "animeId": 372,
     "previewUrl": "https://p.scdn.co/mp3-preview/0b9767cf4dc94f251046b45f5f2b98ae3dfa8e27"
@@ -37650,7 +37650,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/28926f9fc9e87abf26bcf707f325c2bed2b12ec3",
     "audioFallback": "https://p.scdn.co/mp3-preview/28926f9fc9e87abf26bcf707f325c2bed2b12ec3",
-    "coverUrl": "https://media.kitsu.app/anime/847/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/50a5fc7fd764b36c5b8244b6f90822f4/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2cn4X3qXv6KcQYHr67st6T",
     "animeId": 199,
     "previewUrl": "https://p.scdn.co/mp3-preview/28926f9fc9e87abf26bcf707f325c2bed2b12ec3"
@@ -37670,7 +37670,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/3972a7078f05626bcb32657d740fa67060f42e0c",
     "audioFallback": "https://p.scdn.co/mp3-preview/3972a7078f05626bcb32657d740fa67060f42e0c",
-    "coverUrl": "https://media.kitsu.app/anime/48671/poster_image/large-6156a7475d03dbb788ab1a9ce6c7f962.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/f921ae1a2861940148bddc4d21a29f4c/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/36czGZFR3xI0F38AiZ0Xdq",
     "animeId": 118,
     "previewUrl": "https://p.scdn.co/mp3-preview/3972a7078f05626bcb32657d740fa67060f42e0c"
@@ -37690,7 +37690,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/3122be31fa4067f3609def60876a7683e64f36db",
     "audioFallback": "https://p.scdn.co/mp3-preview/3122be31fa4067f3609def60876a7683e64f36db",
-    "coverUrl": "https://media.kitsu.app/anime/13767/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/1dcf83b2d2b0cf3d24e268a80f6b9944/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6txFY13f4QqZb7btS5bMA3",
     "animeId": 185,
     "previewUrl": "https://p.scdn.co/mp3-preview/3122be31fa4067f3609def60876a7683e64f36db"
@@ -37710,7 +37710,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/c1193c419e1cb246318d64b50b3ca8876ab45dcd",
     "audioFallback": "https://p.scdn.co/mp3-preview/c1193c419e1cb246318d64b50b3ca8876ab45dcd",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/11339/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/728842c182e50e6f5086d6bcf2d20eac/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1Uirva9dJEp3Ctq3p6ejFQ",
     "animeId": 46,
     "previewUrl": "https://p.scdn.co/mp3-preview/c1193c419e1cb246318d64b50b3ca8876ab45dcd"
@@ -37730,7 +37730,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/62545fd6fc08a0c8b04d0fb7a6b2a12e19478c71",
     "audioFallback": "https://p.scdn.co/mp3-preview/62545fd6fc08a0c8b04d0fb7a6b2a12e19478c71",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8270/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/6a1cc5b1357194d5d7fa03535dad25c9/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0huk2WyhWhIfdKaWqwKmgd",
     "animeId": 82,
     "previewUrl": "https://p.scdn.co/mp3-preview/62545fd6fc08a0c8b04d0fb7a6b2a12e19478c71"
@@ -37750,7 +37750,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/4eb5e485d5418467d91e10ea865876a65717bf0c",
     "audioFallback": "https://p.scdn.co/mp3-preview/4eb5e485d5418467d91e10ea865876a65717bf0c",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/5482/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/40fb5ed15ab2834a2355737a22e815ca/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5Tvycz8M6zpI4QX8ls2HAx",
     "animeId": 320,
     "previewUrl": "https://p.scdn.co/mp3-preview/4eb5e485d5418467d91e10ea865876a65717bf0c"
@@ -37770,7 +37770,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/35f53636c6bbd8a61f8566eb10ea861a2d57cdb2",
     "audioFallback": "https://p.scdn.co/mp3-preview/35f53636c6bbd8a61f8566eb10ea861a2d57cdb2",
-    "coverUrl": "https://media.kitsu.app/anime/48671/poster_image/large-6156a7475d03dbb788ab1a9ce6c7f962.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/73fcafb821762ed6860012b99dff59b0/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3BK6m6yU8BAW5z71FnU3nu",
     "animeId": 118,
     "previewUrl": "https://p.scdn.co/mp3-preview/35f53636c6bbd8a61f8566eb10ea861a2d57cdb2"
@@ -37790,7 +37790,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d756287d2d3c8938f6b4594c14377e0a9a6566f5",
     "audioFallback": "https://p.scdn.co/mp3-preview/d756287d2d3c8938f6b4594c14377e0a9a6566f5",
-    "coverUrl": "https://media.kitsu.app/anime/47192/poster_image/medium-671e94191e8d931769dfa6d8a73e6491.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/53a7f7f478a6c5d57449ce23f779232b/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/45yQbNjWEAWt1IQ8XMROrp",
     "animeId": 243,
     "previewUrl": "https://p.scdn.co/mp3-preview/d756287d2d3c8938f6b4594c14377e0a9a6566f5"
@@ -37810,7 +37810,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/aa0701f0b519aed11eded89b63e525bab5268c36",
     "audioFallback": "https://p.scdn.co/mp3-preview/aa0701f0b519aed11eded89b63e525bab5268c36",
-    "coverUrl": "https://media.kitsu.app/anime/46842/poster_image/medium-3171a2ed1cb9c882f40ac196841a84ba.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/99eb7c59b5fb58fb54729192ba7107a8/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4vp7mnOPf13fLUztFDqp2a",
     "animeId": 360,
     "previewUrl": "https://p.scdn.co/mp3-preview/aa0701f0b519aed11eded89b63e525bab5268c36"
@@ -37830,7 +37830,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/18805d2d9fd6b9f9b93d634cdab269f9e83fa8bc",
     "audioFallback": "https://p.scdn.co/mp3-preview/18805d2d9fd6b9f9b93d634cdab269f9e83fa8bc",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/41083/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/0295daadff32d7f3103390e3b5a94af6/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0KnDJSGxu03x8idlKLKKki",
     "animeId": 50,
     "previewUrl": "https://p.scdn.co/mp3-preview/18805d2d9fd6b9f9b93d634cdab269f9e83fa8bc"
@@ -37850,7 +37850,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/8e5df2726af45977d2e5e8cf7a85446a5093cf7b",
     "audioFallback": "https://p.scdn.co/mp3-preview/8e5df2726af45977d2e5e8cf7a85446a5093cf7b",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/41024/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/9fba523f621496fa2546d6f6a7eb126d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2qVu9tYn0WzH9GxtpGzvbK",
     "animeId": 86,
     "previewUrl": "https://p.scdn.co/mp3-preview/8e5df2726af45977d2e5e8cf7a85446a5093cf7b"
@@ -37870,7 +37870,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/3ee8cbe3cc7699c7b3ab6b300bc44f460a7c0e2e",
     "audioFallback": "https://p.scdn.co/mp3-preview/3ee8cbe3cc7699c7b3ab6b300bc44f460a7c0e2e",
-    "coverUrl": "https://media.kitsu.app/anime/42490/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/61dd52b648ac644dd3d4887d7d003848/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5orIQnWm5K5RJ08CTYXgPb",
     "animeId": 147,
     "previewUrl": "https://p.scdn.co/mp3-preview/3ee8cbe3cc7699c7b3ab6b300bc44f460a7c0e2e"
@@ -37890,7 +37890,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/5b09285daea5b3078d7b08fd75c2e72165d2be66",
     "audioFallback": "https://p.scdn.co/mp3-preview/5b09285daea5b3078d7b08fd75c2e72165d2be66",
-    "coverUrl": "https://media.kitsu.app/anime/142/poster_image/large-bf3297058b86c1ef19cefb5b9c38c99e.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/168516eeea430dd432cf888e2fbb4889/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/30CRjTYAXaJf5YBsNQHIvG",
     "animeId": 89,
     "previewUrl": "https://p.scdn.co/mp3-preview/5b09285daea5b3078d7b08fd75c2e72165d2be66"
@@ -37910,7 +37910,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/43715f423b8114ac48fd4aa731ddbcc299b63836",
     "audioFallback": "https://p.scdn.co/mp3-preview/43715f423b8114ac48fd4aa731ddbcc299b63836",
-    "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/bd51cc18e35080e0aec9d17a869282b2/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5TEm69BZqijWNrp78ilqsC",
     "animeId": 126,
     "previewUrl": "https://p.scdn.co/mp3-preview/43715f423b8114ac48fd4aa731ddbcc299b63836"
@@ -37930,7 +37930,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/2beb83587a207cd8ae20aa8d2fe1a18cd6bdf899",
     "audioFallback": "https://p.scdn.co/mp3-preview/2beb83587a207cd8ae20aa8d2fe1a18cd6bdf899",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/12325/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/93167daa403256924295a91e0f55c250/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1jtuHmrw7em28FdbhfFVP0",
     "animeId": 97,
     "previewUrl": "https://p.scdn.co/mp3-preview/2beb83587a207cd8ae20aa8d2fe1a18cd6bdf899"
@@ -37950,7 +37950,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/91fa19db611c7cecb83fef58e74b5de24b58a6b5",
     "audioFallback": "https://p.scdn.co/mp3-preview/91fa19db611c7cecb83fef58e74b5de24b58a6b5",
-    "coverUrl": "https://media.kitsu.app/anime/46529/poster_image/medium-86099eeb5036c415a65a02d7e142017e.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/032e42157538293c15d7eb32307099b6/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3b8x0Bu8Pxwze3op9EwTk2",
     "animeId": 229,
     "previewUrl": "https://p.scdn.co/mp3-preview/91fa19db611c7cecb83fef58e74b5de24b58a6b5"
@@ -37970,7 +37970,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/f747840d6403a68db43274062b99fa22d65a58da",
     "audioFallback": "https://p.scdn.co/mp3-preview/f747840d6403a68db43274062b99fa22d65a58da",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/48316/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ab638a724551512cdf621d6846c3149e/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5F4fAhzhdHtaQ8nNqWAufl",
     "animeId": 387,
     "previewUrl": "https://p.scdn.co/mp3-preview/f747840d6403a68db43274062b99fa22d65a58da"
@@ -37990,7 +37990,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/809502cb8617fcd5b61ef52ee7ee3bd6cd983582",
     "audioFallback": "https://p.scdn.co/mp3-preview/809502cb8617fcd5b61ef52ee7ee3bd6cd983582",
-    "coverUrl": "https://media.kitsu.app/anime/44426/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/2faeadeefb752e5084e389fc5f032f29/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2xGRrcajSvRlBbAXds2l7u",
     "animeId": 155,
     "previewUrl": "https://p.scdn.co/mp3-preview/809502cb8617fcd5b61ef52ee7ee3bd6cd983582"
@@ -38010,7 +38010,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/9272a5d617d47646cec6bfd4bebe1d884d483c07",
     "audioFallback": "https://p.scdn.co/mp3-preview/9272a5d617d47646cec6bfd4bebe1d884d483c07",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/42080/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/de68f725fdb46320e6debb70985396aa/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7cepLDSROBQyq0HmV5iYtz",
     "animeId": 63,
     "previewUrl": "https://p.scdn.co/mp3-preview/9272a5d617d47646cec6bfd4bebe1d884d483c07"
@@ -38030,7 +38030,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/3b9e35684301d570cebd44e902a08a1f35b50ea8",
     "audioFallback": "https://p.scdn.co/mp3-preview/3b9e35684301d570cebd44e902a08a1f35b50ea8",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8270/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d85aaee3ee382696e34eaa2c85c61a19/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/40yAIwct6vt6ToQFvtVNxH",
     "animeId": 82,
     "previewUrl": "https://p.scdn.co/mp3-preview/3b9e35684301d570cebd44e902a08a1f35b50ea8"
@@ -38050,7 +38050,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/70536bf5bf2bf662423caf6c30b70a86e6097cf1",
     "audioFallback": "https://p.scdn.co/mp3-preview/70536bf5bf2bf662423caf6c30b70a86e6097cf1",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6421/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b47ab6fde5bae39e8a6e91fc8dc0a5d7/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3ClMHvxx2Me7d3aDhVcjYa",
     "animeId": 262,
     "previewUrl": "https://p.scdn.co/mp3-preview/70536bf5bf2bf662423caf6c30b70a86e6097cf1"
@@ -38070,7 +38070,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/b0bd1f1050405ebfb786bb35bf5c9788399ce8a7",
     "audioFallback": "https://p.scdn.co/mp3-preview/b0bd1f1050405ebfb786bb35bf5c9788399ce8a7",
-    "coverUrl": "https://media.kitsu.app/anime/1410/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/5d49d67abbcf372f52ca7ace9e03acb7/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5nvdbRKg9fOixXotcZIQuF",
     "animeId": 164,
     "previewUrl": "https://p.scdn.co/mp3-preview/b0bd1f1050405ebfb786bb35bf5c9788399ce8a7"
@@ -38090,7 +38090,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/b578b645b3c5cf395966ba747b03114abfe74b6a",
     "audioFallback": "https://p.scdn.co/mp3-preview/b578b645b3c5cf395966ba747b03114abfe74b6a",
-    "coverUrl": "https://media.kitsu.app/anime/45249/poster_image/medium-755db8403ce12850dbd8852430a6609a.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/284bf580c81c1b00887cbbdcee42ee30/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4AmLTDjGWE5HqRhiX383bF",
     "animeId": 408,
     "previewUrl": "https://p.scdn.co/mp3-preview/b578b645b3c5cf395966ba747b03114abfe74b6a"
@@ -38110,7 +38110,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/c255d00bd461c22569f8d502db3cfc7e4ac6ab6e",
     "audioFallback": "https://p.scdn.co/mp3-preview/c255d00bd461c22569f8d502db3cfc7e4ac6ab6e",
-    "coverUrl": "https://media.kitsu.app/anime/43078/poster_image/medium-c33a4b2e827f0e99ea57f831af0adabd.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/3d5f5af6af6f7a0dacd335dfb274e131/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4c720ne6FrhbC0qrfsjWb7",
     "animeId": 359,
     "previewUrl": "https://p.scdn.co/mp3-preview/c255d00bd461c22569f8d502db3cfc7e4ac6ab6e"
@@ -38130,7 +38130,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/737993652bd146b63d8c3c657517068044767ca3",
     "audioFallback": "https://p.scdn.co/mp3-preview/737993652bd146b63d8c3c657517068044767ca3",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/42/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/8f8ffeabe5eaea5c4c6c691e545c954e/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1rLOXc95uK1Xo6Cjtw2wNK",
     "animeId": 336,
     "previewUrl": "https://p.scdn.co/mp3-preview/737993652bd146b63d8c3c657517068044767ca3"
@@ -38150,7 +38150,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/2cf75219d060e4945faf2e434ac69e8c8ca1e2ec",
     "audioFallback": "https://p.scdn.co/mp3-preview/2cf75219d060e4945faf2e434ac69e8c8ca1e2ec",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/4604/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/8912add51b1224f389cdefc831ad37c8/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6g7cdlMt3AUV99D6CgYcV7",
     "animeId": 88,
     "previewUrl": "https://p.scdn.co/mp3-preview/2cf75219d060e4945faf2e434ac69e8c8ca1e2ec"
@@ -38170,7 +38170,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/8c9a8bc31d34bf60645533ae9bcbebf21580fb61",
     "audioFallback": "https://p.scdn.co/mp3-preview/8c9a8bc31d34bf60645533ae9bcbebf21580fb61",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/41450/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/97366d61d8706c80611a5c71f9c32e5b/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2cwIT2wUaf82BrYsqfyhzX",
     "animeId": 100,
     "previewUrl": "https://p.scdn.co/mp3-preview/8c9a8bc31d34bf60645533ae9bcbebf21580fb61"
@@ -38190,7 +38190,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/30e8e098e414e2a615c2545fc2bc1fe2b8668053",
     "audioFallback": "https://p.scdn.co/mp3-preview/30e8e098e414e2a615c2545fc2bc1fe2b8668053",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/12/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/4cd655bc9c42e5029871aab1a6e7f0ce/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5OmghyPhtlR5yXJ62HxSNR",
     "animeId": 402,
     "previewUrl": "https://p.scdn.co/mp3-preview/30e8e098e414e2a615c2545fc2bc1fe2b8668053"
@@ -38210,7 +38210,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/6131977690f695ecbf41f2a8f5af327b13d5e5e6",
     "audioFallback": "https://p.scdn.co/mp3-preview/6131977690f695ecbf41f2a8f5af327b13d5e5e6",
-    "coverUrl": "https://media.kitsu.app/anime/42490/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/25f7a5cbf5d84f7596c12717c94276a3/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2ewrA9zGxvXrWSt6sLkqZx",
     "animeId": 147,
     "previewUrl": "https://p.scdn.co/mp3-preview/6131977690f695ecbf41f2a8f5af327b13d5e5e6"
@@ -38230,7 +38230,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/9d60439561c8c6cf0942bb155dc8af71ba9a4cff",
     "audioFallback": "https://p.scdn.co/mp3-preview/9d60439561c8c6cf0942bb155dc8af71ba9a4cff",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/42080/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/65e08fdd73d1cd6e87121c9b6599acdd/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4OtZU4aveZuVONxmExrdpK",
     "animeId": 63,
     "previewUrl": "https://p.scdn.co/mp3-preview/9d60439561c8c6cf0942bb155dc8af71ba9a4cff"
@@ -38250,7 +38250,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/8ffda73c31e8e7661f6f7aac963ffcd1822883c3",
     "audioFallback": "https://p.scdn.co/mp3-preview/8ffda73c31e8e7661f6f7aac963ffcd1822883c3",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/719/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/c98814423b56314704f5396d6797303a/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4SJxHEJlKUjRisEWHAlt7X",
     "animeId": 337,
     "previewUrl": "https://p.scdn.co/mp3-preview/8ffda73c31e8e7661f6f7aac963ffcd1822883c3"
@@ -38270,7 +38270,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/95e2be0192d47c14cbb740ec576aa4ff39155723",
     "audioFallback": "https://p.scdn.co/mp3-preview/95e2be0192d47c14cbb740ec576aa4ff39155723",
-    "coverUrl": "https://media.kitsu.app/anime/9987/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/8d7e8bc24a953393917b8f6cec2f1855/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/362Ufr9KkITy2WOyhAtoh0",
     "animeId": 184,
     "previewUrl": "https://p.scdn.co/mp3-preview/95e2be0192d47c14cbb740ec576aa4ff39155723"
@@ -38290,7 +38290,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/16b2b5feaf5db6a43247de4420f92754b9380bf9",
     "audioFallback": "https://p.scdn.co/mp3-preview/16b2b5feaf5db6a43247de4420f92754b9380bf9",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/14312/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/4254777c0769120d0c892278d3866836/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4CglACwqStBIcYrjNLtDPk",
     "animeId": 287,
     "previewUrl": "https://p.scdn.co/mp3-preview/16b2b5feaf5db6a43247de4420f92754b9380bf9"
@@ -38310,7 +38310,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/534828c0a56e5bdbb9d373c0786333a7192fcaec",
     "audioFallback": "https://p.scdn.co/mp3-preview/534828c0a56e5bdbb9d373c0786333a7192fcaec",
-    "coverUrl": "https://media.kitsu.app/anime/6028/poster_image/large-e9b1ea8a2aee8fd902446d0c273f9eb4.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/b1221e4b61c6d80482aac65332f1b43d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3jVDgRritOKnWLFatI0rsW",
     "animeId": 101,
     "previewUrl": "https://p.scdn.co/mp3-preview/534828c0a56e5bdbb9d373c0786333a7192fcaec"
@@ -38330,7 +38330,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/ca091daade85de57ccf84f3f20a54a8ce67a2a65",
     "audioFallback": "https://p.scdn.co/mp3-preview/ca091daade85de57ccf84f3f20a54a8ce67a2a65",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/10028/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/29c154c5374b472e633137605bfcc1c9/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/43JyEMmiEB4LJDwMDnIqvz",
     "animeId": 10,
     "previewUrl": "https://p.scdn.co/mp3-preview/ca091daade85de57ccf84f3f20a54a8ce67a2a65"
@@ -38350,7 +38350,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/46c878801e28b74e3af50c06cd3518323656956c",
     "audioFallback": "https://p.scdn.co/mp3-preview/46c878801e28b74e3af50c06cd3518323656956c",
-    "coverUrl": "https://media.kitsu.app/anime/24/poster_image/large-8b69ef8e3f4f4359af304e9b664eef0f.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/145263cecc5d66f2040d22e7af6d6d29/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/790RoH3bJQEuvNrCcRMPGT",
     "animeId": 71,
     "previewUrl": "https://p.scdn.co/mp3-preview/46c878801e28b74e3af50c06cd3518323656956c"
@@ -38370,7 +38370,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/964d1dc0bbdd581cf8f16ff329495c60c91cb5b2",
     "audioFallback": "https://p.scdn.co/mp3-preview/964d1dc0bbdd581cf8f16ff329495c60c91cb5b2",
-    "coverUrl": "https://media.kitsu.app/anime/7983/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/3506565e4f53a2f14d9b3e17069f0cc3/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/69xpGSSOrI69Wq90Dy2foB",
     "animeId": 178,
     "previewUrl": "https://p.scdn.co/mp3-preview/964d1dc0bbdd581cf8f16ff329495c60c91cb5b2"
@@ -38390,7 +38390,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/fdb5a0e5b3c92191be174c101f8d56149884a794",
     "audioFallback": "https://p.scdn.co/mp3-preview/fdb5a0e5b3c92191be174c101f8d56149884a794",
-    "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/9868828f982bbc7815c2a2d1977d7d81/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6b2nmFsOb2sDumvHLMFLA1",
     "animeId": 126,
     "previewUrl": "https://p.scdn.co/mp3-preview/fdb5a0e5b3c92191be174c101f8d56149884a794"
@@ -38410,7 +38410,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d594a3f4c531f67eb1ee4fd61689d57ecdd14a70",
     "audioFallback": "https://p.scdn.co/mp3-preview/d594a3f4c531f67eb1ee4fd61689d57ecdd14a70",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8536/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/bcc6c6d7aa8d2509a3c6050aff143f2c/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3UpL5TX7uakHUrs5EXlKPC",
     "animeId": 340,
     "previewUrl": "https://p.scdn.co/mp3-preview/d594a3f4c531f67eb1ee4fd61689d57ecdd14a70"
@@ -38430,7 +38430,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/ef60273d4f33a4b4052192150d41e3b8404a16df",
     "audioFallback": "https://p.scdn.co/mp3-preview/ef60273d4f33a4b4052192150d41e3b8404a16df",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/9018/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/121c578d68479a5a3796d1fa49090c3f/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6lk2oNywUGQfvbSRDlXYl9",
     "animeId": 278,
     "previewUrl": "https://p.scdn.co/mp3-preview/ef60273d4f33a4b4052192150d41e3b8404a16df"
@@ -38450,7 +38450,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/2162f7a52e18395317a3a06c9c167a25cd9b4c56",
     "audioFallback": "https://p.scdn.co/mp3-preview/2162f7a52e18395317a3a06c9c167a25cd9b4c56",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/1491/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/22ceda80b3bf47ab69a54bc9321fab07/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3fDm1Sy2emiu2DUrvdf7w0",
     "animeId": 391,
     "previewUrl": "https://p.scdn.co/mp3-preview/2162f7a52e18395317a3a06c9c167a25cd9b4c56"
@@ -38470,7 +38470,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/b6f6b12c4fe3b78366ef47b23ca8978fbebbda24",
     "audioFallback": "https://p.scdn.co/mp3-preview/b6f6b12c4fe3b78366ef47b23ca8978fbebbda24",
-    "coverUrl": "https://media.kitsu.app/anime/14027/poster_image/medium-2ccfd6de3c64f3e8340230e7758646a1.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/97ed2f45b6e934e20ee523026831477b/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/78gIW7yTjpAHfPN3YbIC2g",
     "animeId": 409,
     "previewUrl": "https://p.scdn.co/mp3-preview/b6f6b12c4fe3b78366ef47b23ca8978fbebbda24"
@@ -38490,7 +38490,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/30b397556c84a57b9d60437c9373a92c320095e2",
     "audioFallback": "https://p.scdn.co/mp3-preview/30b397556c84a57b9d60437c9373a92c320095e2",
-    "coverUrl": "https://media.kitsu.app/anime/9963/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/103645d36b0cf6387490225b7e2dbc82/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/39aGL9R7WtF4xOdeH95wiM",
     "animeId": 159,
     "previewUrl": "https://p.scdn.co/mp3-preview/30b397556c84a57b9d60437c9373a92c320095e2"
@@ -38510,7 +38510,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/c347c4f28f86a46cf9fb86bbe44cde1beca2c283",
     "audioFallback": "https://p.scdn.co/mp3-preview/c347c4f28f86a46cf9fb86bbe44cde1beca2c283",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/4604/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/6c79fd544632ef522fba888519f6c8d0/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1kq7lepc85UzvUxO9Hi7hI",
     "animeId": 88,
     "previewUrl": "https://p.scdn.co/mp3-preview/c347c4f28f86a46cf9fb86bbe44cde1beca2c283"
@@ -38530,7 +38530,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/fb8c16f4186990bee95c1a831f8695e0c873e7a3",
     "audioFallback": "https://p.scdn.co/mp3-preview/fb8c16f4186990bee95c1a831f8695e0c873e7a3",
-    "coverUrl": "https://media.kitsu.app/anime/46140/poster_image/medium-09c31317676fc3251c6543b5936780c1.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/62d7626e0a874bd09c1f253ad6dbbfb3/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6VMjJauJ9YaHtj50MiIJv6",
     "animeId": 123,
     "previewUrl": "https://p.scdn.co/mp3-preview/fb8c16f4186990bee95c1a831f8695e0c873e7a3"
@@ -38550,7 +38550,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d719d9276d56c87e357e8a8c7bc643635083afc8",
     "audioFallback": "https://p.scdn.co/mp3-preview/d719d9276d56c87e357e8a8c7bc643635083afc8",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/1799/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e268dadec9b5e4b0cca7dcf034de5b3e/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5fFFW9SAfeMfHbBYNC0AMI",
     "animeId": 318,
     "previewUrl": "https://p.scdn.co/mp3-preview/d719d9276d56c87e357e8a8c7bc643635083afc8"
@@ -38570,7 +38570,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/8dbb5a1b57636ebeafc784d404c1033d7466f2b7",
     "audioFallback": "https://p.scdn.co/mp3-preview/8dbb5a1b57636ebeafc784d404c1033d7466f2b7",
-    "coverUrl": "https://media.kitsu.app/anime/13369/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/efb66ec7e7a392536e4b5c919f3f0e9d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3YGcFaTdMkC9Q6rkpUdkuR",
     "animeId": 192,
     "previewUrl": "https://p.scdn.co/mp3-preview/8dbb5a1b57636ebeafc784d404c1033d7466f2b7"
@@ -38590,7 +38590,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/1b3aa4468828c137c1a7b9d357ac7ca0679df58c",
     "audioFallback": "https://p.scdn.co/mp3-preview/1b3aa4468828c137c1a7b9d357ac7ca0679df58c",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13995/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/296123376153fc199684bb440e9319a0/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3XnYfbyjlv9LME2UB3O1N7",
     "animeId": 268,
     "previewUrl": "https://p.scdn.co/mp3-preview/1b3aa4468828c137c1a7b9d357ac7ca0679df58c"
@@ -38610,7 +38610,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/2118899d6d284598e31c028c7bf98a60308da5d4",
     "audioFallback": "https://p.scdn.co/mp3-preview/2118899d6d284598e31c028c7bf98a60308da5d4",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/43088/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/97bea9402bdf1d0de26a040b54fdaafa/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7DHmhtNeqVWCInyJS0UUTk",
     "animeId": 301,
     "previewUrl": "https://p.scdn.co/mp3-preview/2118899d6d284598e31c028c7bf98a60308da5d4"
@@ -38630,7 +38630,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/c1862c0368ee88ada10da414995ae1e2bbf07548",
     "audioFallback": "https://p.scdn.co/mp3-preview/c1862c0368ee88ada10da414995ae1e2bbf07548",
-    "coverUrl": "https://media.kitsu.app/anime/48892/poster_image/medium-66e6fb051c762862c540598bd99b3e6b.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/71093374eadaa3c057df8d1567f08520/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/59NGTfD1tU474YBrJzOHbc",
     "animeId": 357,
     "previewUrl": "https://p.scdn.co/mp3-preview/c1862c0368ee88ada10da414995ae1e2bbf07548"
@@ -38650,7 +38650,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/851a07b40181627b910f93d4d8abca4d2ee89810",
     "audioFallback": "https://p.scdn.co/mp3-preview/851a07b40181627b910f93d4d8abca4d2ee89810",
-    "coverUrl": "https://media.kitsu.app/anime/46320/poster_image/medium-feb3c7544b2d91902c9c6a38bf1f5944.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/c4a23af6089b5aef77a3da980364708d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/27DFZqwQsjO4JFkKT2XX1J",
     "animeId": 234,
     "previewUrl": "https://p.scdn.co/mp3-preview/851a07b40181627b910f93d4d8abca4d2ee89810"
@@ -38670,7 +38670,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/92e7320695e17b4f021618d2a7fc9240d17ac7a9",
     "audioFallback": "https://p.scdn.co/mp3-preview/92e7320695e17b4f021618d2a7fc9240d17ac7a9",
-    "coverUrl": "https://anifume.com/images/08/Dandadan-2.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/185ce6c764361f7a509e2f882f48e8cf/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0ylwMFPomfd4kGcZYWh7fH",
     "animeId": 32,
     "previewUrl": "https://p.scdn.co/mp3-preview/92e7320695e17b4f021618d2a7fc9240d17ac7a9"
@@ -38690,7 +38690,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/007430f17dbd59162b903fb28f4a9bcafb3c08c5",
     "audioFallback": "https://p.scdn.co/mp3-preview/007430f17dbd59162b903fb28f4a9bcafb3c08c5",
-    "coverUrl": "https://media.kitsu.app/anime/48534/poster_image/medium-c38c15266ae228974e8c2a00d776ea92.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/f551d82a505bba32c893fe00363f6126/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2FOmKMvMA4h5jGn36dvHIP",
     "animeId": 246,
     "previewUrl": "https://p.scdn.co/mp3-preview/007430f17dbd59162b903fb28f4a9bcafb3c08c5"
@@ -38710,7 +38710,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/66ce2f68283975e1fa7e759c0557054aa9e3fad9",
     "audioFallback": "https://p.scdn.co/mp3-preview/66ce2f68283975e1fa7e759c0557054aa9e3fad9",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/47625/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/75efae4cc97a538e0bc9f7515d9f2334/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2E0yUWqMmTVdoUgRfFYEYi",
     "animeId": 350,
     "previewUrl": "https://p.scdn.co/mp3-preview/66ce2f68283975e1fa7e759c0557054aa9e3fad9"
@@ -38730,7 +38730,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d84cf7c61ea1fbdf819f7b13f55bacbc19b06652",
     "audioFallback": "https://p.scdn.co/mp3-preview/d84cf7c61ea1fbdf819f7b13f55bacbc19b06652",
-    "coverUrl": "https://media.kitsu.app/anime/45746/poster_image/medium-b260279a55588269f2a466f2b9603023.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a444f9b8395db99130163f749706220c/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3LjGTnItDSgLgL6e326dEO",
     "animeId": 412,
     "previewUrl": "https://p.scdn.co/mp3-preview/d84cf7c61ea1fbdf819f7b13f55bacbc19b06652"
@@ -38750,7 +38750,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/a28947dfb2a0497f297ae344d6035d0a6a5c0c51",
     "audioFallback": "https://p.scdn.co/mp3-preview/a28947dfb2a0497f297ae344d6035d0a6a5c0c51",
-    "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium-0233bf77af3e0ab7303ae7099209d58a.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/2183b6890b5bed4a821bdc0794e9edf7/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1DDHcYWlWtJx8ubS8KZmq0",
     "animeId": 53,
     "previewUrl": "https://p.scdn.co/mp3-preview/a28947dfb2a0497f297ae344d6035d0a6a5c0c51"
@@ -38770,7 +38770,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/4eefa823d5e3e6fbe180cae08afc12b0fd4624fb",
     "audioFallback": "https://p.scdn.co/mp3-preview/4eefa823d5e3e6fbe180cae08afc12b0fd4624fb",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/41443/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/8178d9e90e686badeba9b5fd3eeee93b/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/25a2Lu7yr7UiZjGhCsZBE0",
     "animeId": 339,
     "previewUrl": "https://p.scdn.co/mp3-preview/4eefa823d5e3e6fbe180cae08afc12b0fd4624fb"
@@ -38790,7 +38790,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/9ce5deb99c49e19ba4f5d3e419ea23ecb79d536f",
     "audioFallback": "https://p.scdn.co/mp3-preview/9ce5deb99c49e19ba4f5d3e419ea23ecb79d536f",
-    "coverUrl": "https://media.kitsu.app/anime/41144/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/bb85e8ddfee29c9c1296a44ad0541eed/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6FksgLVg7KJujKZbJzyA2D",
     "animeId": 146,
     "previewUrl": "https://p.scdn.co/mp3-preview/9ce5deb99c49e19ba4f5d3e419ea23ecb79d536f"
@@ -38810,7 +38810,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/7661bfb0352df0e3e360965ff94fb0957bd1d099",
     "audioFallback": "https://p.scdn.co/mp3-preview/7661bfb0352df0e3e360965ff94fb0957bd1d099",
-    "coverUrl": "https://media.kitsu.app/anime/11578/poster_image/medium-9ace4ac709f334cc96d244c15fe7d4d0.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d3653c38e54db9ae4c5b9c2c50076a88/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/255m82ckZPE7SzyEJIjrYC",
     "animeId": 56,
     "previewUrl": "https://p.scdn.co/mp3-preview/7661bfb0352df0e3e360965ff94fb0957bd1d099"
@@ -38830,7 +38830,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/c8ebc0e5a17a7e7a18c554f024e4af55f91dbae4",
     "audioFallback": "https://p.scdn.co/mp3-preview/c8ebc0e5a17a7e7a18c554f024e4af55f91dbae4",
-    "coverUrl": "https://media.kitsu.app/anime/46320/poster_image/medium-feb3c7544b2d91902c9c6a38bf1f5944.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/3c675a4acd29e8073d4eda9b6ed6b303/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4upAINYWEBe0ek0g6U2CHV",
     "animeId": 212,
     "previewUrl": "https://p.scdn.co/mp3-preview/c8ebc0e5a17a7e7a18c554f024e4af55f91dbae4"
@@ -38850,7 +38850,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/98bc9e658e2eb935d66944a2f2236d9e3378bd56",
     "audioFallback": "https://p.scdn.co/mp3-preview/98bc9e658e2eb935d66944a2f2236d9e3378bd56",
-    "coverUrl": "https://media.kitsu.app/anime/11752/poster_image/medium-6e7782dec9c8a72c2148369c288982ee.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/cedec422ab9b7c9cb176375b836ccdf7/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1wImSUHR1tP6y003NHku7e",
     "animeId": 410,
     "previewUrl": "https://p.scdn.co/mp3-preview/98bc9e658e2eb935d66944a2f2236d9e3378bd56"
@@ -38870,7 +38870,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/cb6f09edf0677cc542e7255d6691f3aea53ffd74",
     "audioFallback": "https://p.scdn.co/mp3-preview/cb6f09edf0677cc542e7255d6691f3aea53ffd74",
-    "coverUrl": "https://media.kitsu.app/anime/48541/poster_image/medium-996392db10718d6b3177f11982f8b975.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d40e5680d8b21a0d34020f4ed04b419a/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/25n8diXqpb6LKyL0Dwzwoy",
     "animeId": 352,
     "previewUrl": "https://p.scdn.co/mp3-preview/cb6f09edf0677cc542e7255d6691f3aea53ffd74"
@@ -38890,7 +38890,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/5a3d1b157375765f2b1355c87d2d97051799f75a",
     "audioFallback": "https://p.scdn.co/mp3-preview/5a3d1b157375765f2b1355c87d2d97051799f75a",
-    "coverUrl": "https://media.kitsu.app/anime/44032/poster_image/large-5b1626fbfbc64e8c4a4a2a2874be2afd.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/481299e546d903b4e3baed48c6af9593/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6xvpGt4j3pvxAkfRENsHtF",
     "animeId": 84,
     "previewUrl": "https://p.scdn.co/mp3-preview/5a3d1b157375765f2b1355c87d2d97051799f75a"
@@ -38910,7 +38910,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/a866489a444231e2fa4602d581fd3cd50f156d07",
     "audioFallback": "https://p.scdn.co/mp3-preview/a866489a444231e2fa4602d581fd3cd50f156d07",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7680/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/7b7f2eced40528fb2e4b75290449e9b1/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/15Shj1AlcYizQWhtsDoYyE",
     "animeId": 327,
     "previewUrl": "https://p.scdn.co/mp3-preview/a866489a444231e2fa4602d581fd3cd50f156d07"
@@ -38930,7 +38930,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/af6fd7850cc57577dfb3fe113cf7c2e7593c7a3c",
     "audioFallback": "https://p.scdn.co/mp3-preview/af6fd7850cc57577dfb3fe113cf7c2e7593c7a3c",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/419/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/a2fc0fba0d4d4bbb6cb36946e39bdc15/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4v3vzLPk1b8xMPo722HCcl",
     "animeId": 294,
     "previewUrl": "https://p.scdn.co/mp3-preview/af6fd7850cc57577dfb3fe113cf7c2e7593c7a3c"
@@ -38950,7 +38950,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/7ff64d350cd58cc82704554006766281f016a038",
     "audioFallback": "https://p.scdn.co/mp3-preview/7ff64d350cd58cc82704554006766281f016a038",
-    "coverUrl": "https://anifume.com/images/20/Oshi-no-Ko-3.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/581edab3c303b2436532c71fc8f92032/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/37BOGNFiFipyHllBoQz1mt",
     "animeId": 251,
     "previewUrl": "https://p.scdn.co/mp3-preview/7ff64d350cd58cc82704554006766281f016a038"
@@ -38970,7 +38970,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/be22dabad4df17810d7321fe78948bae458e6792",
     "audioFallback": "https://p.scdn.co/mp3-preview/be22dabad4df17810d7321fe78948bae458e6792",
-    "coverUrl": "https://media.kitsu.app/anime/13768/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ec5511e1c7b55d05f2f3af8caab1c956/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/30ho6wAl9w53sCtcqzHVMA",
     "animeId": 175,
     "previewUrl": "https://p.scdn.co/mp3-preview/be22dabad4df17810d7321fe78948bae458e6792"
@@ -38990,7 +38990,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/11bea8a5f65906a2e65f30b430f8479fdf6989a8",
     "audioFallback": "https://p.scdn.co/mp3-preview/11bea8a5f65906a2e65f30b430f8479fdf6989a8",
-    "coverUrl": "https://media.kitsu.app/anime/11370/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/db020f226da9dcba22abf62be8e7f63d/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/77rZWogLvZ2NOf248oMd6N",
     "animeId": 148,
     "previewUrl": "https://p.scdn.co/mp3-preview/11bea8a5f65906a2e65f30b430f8479fdf6989a8"
@@ -39010,7 +39010,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/15966453b50e59e580a0ce64376a1e925ece7aaf",
     "audioFallback": "https://p.scdn.co/mp3-preview/15966453b50e59e580a0ce64376a1e925ece7aaf",
-    "coverUrl": "https://media.kitsu.app/anime/11100/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/81970dad183cb7cdf7c444c325b09444/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1X3VD4oXVFe314hJ9AcvVy",
     "animeId": 161,
     "previewUrl": "https://p.scdn.co/mp3-preview/15966453b50e59e580a0ce64376a1e925ece7aaf"
@@ -39030,7 +39030,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/a91aa6b11680229886455cb81345494adc931d7d",
     "audioFallback": "https://p.scdn.co/mp3-preview/a91aa6b11680229886455cb81345494adc931d7d",
-    "coverUrl": "https://media.kitsu.app/anime/48443/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/0020998d2a912fa4f336948f82a37b58/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/45FSW9JohxF1SMTGWLw8Ue",
     "animeId": 187,
     "previewUrl": "https://p.scdn.co/mp3-preview/a91aa6b11680229886455cb81345494adc931d7d"
@@ -39050,7 +39050,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d39fb852e9ade790c51681aa8b51bc9312054f96",
     "audioFallback": "https://p.scdn.co/mp3-preview/d39fb852e9ade790c51681aa8b51bc9312054f96",
-    "coverUrl": "https://media.kitsu.app/anime/47196/poster_image/medium-f1b3a9c68b72af0e02b2b6e3a8dc1c0b.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/91601db8892b712d88066578a14f3d30/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0ZapAgVfHzTxqDPweLPUyu",
     "animeId": 283,
     "previewUrl": "https://p.scdn.co/mp3-preview/d39fb852e9ade790c51681aa8b51bc9312054f96"
@@ -39070,7 +39070,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/4f69cdfd8d946c0a125607f325ea7b3c12fba407",
     "audioFallback": "https://p.scdn.co/mp3-preview/4f69cdfd8d946c0a125607f325ea7b3c12fba407",
-    "coverUrl": "https://media.kitsu.app/anime/7957/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/218e3f3c02bb5b31c7eb8919f106fd94/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0nomhjBvCoJdvWc8aOqjqa",
     "animeId": 150,
     "previewUrl": "https://p.scdn.co/mp3-preview/4f69cdfd8d946c0a125607f325ea7b3c12fba407"
@@ -39090,7 +39090,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/bd3b8d3c3c1b99c62d8db957ab486442be80a788",
     "audioFallback": "https://p.scdn.co/mp3-preview/bd3b8d3c3c1b99c62d8db957ab486442be80a788",
-    "coverUrl": "https://media.kitsu.app/anime/46229/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/9b6da786cd3ca8b286a04186b3c9079c/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4ZmR5PLHDE4zFEskU8Otzc",
     "animeId": 133,
     "previewUrl": "https://p.scdn.co/mp3-preview/bd3b8d3c3c1b99c62d8db957ab486442be80a788"
@@ -39110,7 +39110,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d28523b5766b3f8c5fd5ccc5e410caeb4ae170ac",
     "audioFallback": "https://p.scdn.co/mp3-preview/d28523b5766b3f8c5fd5ccc5e410caeb4ae170ac",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8778/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/f8c5288ee4603d62e6406a2ff6abdfbf/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4eABL6biW8QZOSvGMaX18M",
     "animeId": 277,
     "previewUrl": "https://p.scdn.co/mp3-preview/d28523b5766b3f8c5fd5ccc5e410caeb4ae170ac"
@@ -39130,7 +39130,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/788263659d31b4a8b153fd5e982a4f6d7d984220",
     "audioFallback": "https://p.scdn.co/mp3-preview/788263659d31b4a8b153fd5e982a4f6d7d984220",
-    "coverUrl": "https://media.kitsu.app/anime/49205/poster_image/medium-26bbae139e3a0869dece52e864b93052.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/cef30c1c2a5a63c773d26d56049c81e5/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1yuoX9zSvJAYpF0wJe4f9k",
     "animeId": 205,
     "previewUrl": "https://p.scdn.co/mp3-preview/788263659d31b4a8b153fd5e982a4f6d7d984220"
@@ -39150,7 +39150,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/78557f7a9e97292f37bb67d61ce5a25a3661817c",
     "audioFallback": "https://p.scdn.co/mp3-preview/78557f7a9e97292f37bb67d61ce5a25a3661817c",
-    "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/e4eb6b31cc13e5b42bf6221af41754aa/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3G6Tk9y0tF3p00XGeLzTUP",
     "animeId": 125,
     "previewUrl": "https://p.scdn.co/mp3-preview/78557f7a9e97292f37bb67d61ce5a25a3661817c"
@@ -39170,7 +39170,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/0de0512074fdf884dd8b7f6f2c3e95ef7bfffcb3",
     "audioFallback": "https://p.scdn.co/mp3-preview/0de0512074fdf884dd8b7f6f2c3e95ef7bfffcb3",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/176/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/00bbf5bd1fd67f643ecad7978c5c1e50/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0lOkdvblBAwRWlb9Y5j632",
     "animeId": 314,
     "previewUrl": "https://p.scdn.co/mp3-preview/0de0512074fdf884dd8b7f6f2c3e95ef7bfffcb3"
@@ -39190,7 +39190,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/4db5e9a51d804cfd8251113840ca7fa2267542f6",
     "audioFallback": "https://p.scdn.co/mp3-preview/4db5e9a51d804cfd8251113840ca7fa2267542f6",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/428/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/5b57c5e483fe620ee93a6cbbeda41f42/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6VUNGU1vkjmo3IY1XBUi5L",
     "animeId": 317,
     "previewUrl": "https://p.scdn.co/mp3-preview/4db5e9a51d804cfd8251113840ca7fa2267542f6"
@@ -39210,7 +39210,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/29839a3f48fe0ead6a228465c96bf64a1e9ea6ae",
     "audioFallback": "https://p.scdn.co/mp3-preview/29839a3f48fe0ead6a228465c96bf64a1e9ea6ae",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/818/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/9fc31702a93e1ec52646e0944012975a/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/1Z5QAcDHYZgRANOTCtkcnj",
     "animeId": 74,
     "previewUrl": "https://p.scdn.co/mp3-preview/29839a3f48fe0ead6a228465c96bf64a1e9ea6ae"
@@ -39230,7 +39230,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/6294ced0ba030a778254e86b10aa4044269253fc",
     "audioFallback": "https://p.scdn.co/mp3-preview/6294ced0ba030a778254e86b10aa4044269253fc",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/12325/large.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/5aec5e7d139471841bb065498a6595ef/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/7Mpsf4OLTP8OLb9VpLF4a4",
     "animeId": 97,
     "previewUrl": "https://p.scdn.co/mp3-preview/6294ced0ba030a778254e86b10aa4044269253fc"
@@ -39250,7 +39250,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/fa4a36149ff867cc23dad27cb317eae2db7db020",
     "audioFallback": "https://p.scdn.co/mp3-preview/fa4a36149ff867cc23dad27cb317eae2db7db020",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8230/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/7c62746fbf2195c2f428869ae32afc06/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0v4XjyFGrAke94WnkQDwBE",
     "animeId": 280,
     "previewUrl": "https://p.scdn.co/mp3-preview/fa4a36149ff867cc23dad27cb317eae2db7db020"
@@ -39270,7 +39270,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/5efa9606216f4a1f8ce37612eefd01a20d1ea727",
     "audioFallback": "https://p.scdn.co/mp3-preview/5efa9606216f4a1f8ce37612eefd01a20d1ea727",
-    "coverUrl": "https://media.kitsu.app/anime/48443/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/ebe838c9d334ced670e901ecc00443b6/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6CQkLg1Yqn0YBtsLG4BKeZ",
     "animeId": 187,
     "previewUrl": "https://p.scdn.co/mp3-preview/5efa9606216f4a1f8ce37612eefd01a20d1ea727"
@@ -39290,7 +39290,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/456830669e7640799db22dce66d7646cf45c171a",
     "audioFallback": "https://p.scdn.co/mp3-preview/456830669e7640799db22dce66d7646cf45c171a",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/12/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/6bb5cde8734bec01f340c8f9f7b8c2f6/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/61yUWrmETaNJdoLYCUwhQl",
     "animeId": 36,
     "previewUrl": "https://p.scdn.co/mp3-preview/456830669e7640799db22dce66d7646cf45c171a"
@@ -39310,7 +39310,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/58565b557ce18dd040d6e74c1c8e217911dacc7b",
     "audioFallback": "https://p.scdn.co/mp3-preview/58565b557ce18dd040d6e74c1c8e217911dacc7b",
-    "coverUrl": "https://media.kitsu.app/anime/44382/poster_image/large-8ffc8ea9b6a1f9e79bc626e03baab167.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d43ceb2d4c244de2d4f72fa2f3476524/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/50D7ptFXhgR9GZ9g7G20SF",
     "animeId": 70,
     "previewUrl": "https://p.scdn.co/mp3-preview/58565b557ce18dd040d6e74c1c8e217911dacc7b"
@@ -39330,7 +39330,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/27afd06e1643f5d887d1a1663212d813d5c98090",
     "audioFallback": "https://p.scdn.co/mp3-preview/27afd06e1643f5d887d1a1663212d813d5c98090",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/48624/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/50de9c3ce69e7d6b1074fe51d068ac3a/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/0eHTM1Udi2NLiOJ3ja63nh",
     "animeId": 349,
     "previewUrl": "https://p.scdn.co/mp3-preview/27afd06e1643f5d887d1a1663212d813d5c98090"
@@ -39350,7 +39350,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/2ab6792407b1133d67d5a4db9c2e7f04cffa72be",
     "audioFallback": "https://p.scdn.co/mp3-preview/2ab6792407b1133d67d5a4db9c2e7f04cffa72be",
-    "coverUrl": "https://anifume.com/images/45/Blue-Lock.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/d31d30ac1938fd6a12954e11f3c9481e/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/01GuLWTbdSAw9sfO8KMOYP",
     "animeId": 93,
     "previewUrl": "https://p.scdn.co/mp3-preview/2ab6792407b1133d67d5a4db9c2e7f04cffa72be"
@@ -39370,7 +39370,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/240c424b6ab49ecb69e363f4c87131bcff3eb621",
     "audioFallback": "https://p.scdn.co/mp3-preview/240c424b6ab49ecb69e363f4c87131bcff3eb621",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/14350/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/3adea49bf33814e5da38d0f41cd65a56/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5Vrgm4B3gBS7PZvUnCCcbp",
     "animeId": 270,
     "previewUrl": "https://p.scdn.co/mp3-preview/240c424b6ab49ecb69e363f4c87131bcff3eb621"
@@ -39390,7 +39390,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/35593cbe7377869f82ec9f545b36eb457c34f1b6",
     "audioFallback": "https://p.scdn.co/mp3-preview/35593cbe7377869f82ec9f545b36eb457c34f1b6",
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7645/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/6a527e299d5fa0b18cf5510a4a028adc/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/2W17wDsmVimJMMGT8UgVfi",
     "animeId": 281,
     "previewUrl": "https://p.scdn.co/mp3-preview/35593cbe7377869f82ec9f545b36eb457c34f1b6"
@@ -39410,7 +39410,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/d85d3837a8e2837df19ff51d132364dc6ba37d58",
     "audioFallback": "https://p.scdn.co/mp3-preview/d85d3837a8e2837df19ff51d132364dc6ba37d58",
-    "coverUrl": "https://media.kitsu.app/anime/4388/poster_image/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/8b39b03bcfc9dd5c09bf1c3b901b4aac/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6UNKgaAyZtVf6IsONUmi9E",
     "animeId": 166,
     "previewUrl": "https://p.scdn.co/mp3-preview/d85d3837a8e2837df19ff51d132364dc6ba37d58"
@@ -39430,7 +39430,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/caa1bb951bb5de09758505ec388b340d00d12460",
     "audioFallback": "https://p.scdn.co/mp3-preview/caa1bb951bb5de09758505ec388b340d00d12460",
-    "coverUrl": "https://media.kitsu.app/anime/47271/poster_image/medium-90a981a5a5570ba5fdb809a3152c8348.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/4d62ee654c07ba30238c0242567c76de/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/09beOtPEjTgYLXNzYFjfLU",
     "animeId": 29,
     "previewUrl": "https://p.scdn.co/mp3-preview/caa1bb951bb5de09758505ec388b340d00d12460"
@@ -39450,7 +39450,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/40d4df338173be02630f837eca72b2355d838714",
     "audioFallback": "https://p.scdn.co/mp3-preview/40d4df338173be02630f837eca72b2355d838714",
-    "coverUrl": "https://media.kitsu.app/anime/44012/poster_image/medium-b7adf5b796a614ae3630153229fe4469.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/90f2f89f1a499a0a710558d9ee55ff06/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3r6iaXYV9mTnjm7qXcWNUD",
     "animeId": 250,
     "previewUrl": "https://p.scdn.co/mp3-preview/40d4df338173be02630f837eca72b2355d838714"
@@ -39470,7 +39470,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/b618cdf44a8ca30c84a9fbaf65e1153d54095b35",
     "audioFallback": "https://p.scdn.co/mp3-preview/b618cdf44a8ca30c84a9fbaf65e1153d54095b35",
-    "coverUrl": "https://media.kitsu.app/anime/45547/poster_image/medium-ecff21462bacc73bbf9e1a60a6ec3e91.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/0e087c633aa628b234584071bc9f85fc/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/4xG4w3JJixwCUftaOWEhy6",
     "animeId": 255,
     "previewUrl": "https://p.scdn.co/mp3-preview/b618cdf44a8ca30c84a9fbaf65e1153d54095b35"
@@ -39490,7 +39490,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/77cffb9057120e5eb9df5b4a61d72f5553f09b85",
     "audioFallback": "https://p.scdn.co/mp3-preview/77cffb9057120e5eb9df5b4a61d72f5553f09b85",
-    "coverUrl": "https://media.kitsu.app/anime/46140/poster_image/medium-09c31317676fc3251c6543b5936780c1.jpeg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/363fd53452dd60f9737006536d41cbc7/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/track/3e6ZmmMHtwiJla27wlR9kO",
     "animeId": 123,
     "previewUrl": "https://p.scdn.co/mp3-preview/77cffb9057120e5eb9df5b4a61d72f5553f09b85"
@@ -39621,7 +39621,7 @@ const SONGS = [
       "ฮักเจ้าหลาย",
       "รักมาก"
     ],
-    "coverUrl": "https://anifume.com/images/48/Horimiya-Piece.jpg",
+    "coverUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format&fit=crop&q=80",
     "spotifyUrl": "https://open.spotify.com/search/ฮักเจ้าหลาย%20TP%20Sakorn",
     "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
@@ -39659,7 +39659,7 @@ const SONGS = [
       "สนุก",
       "ปาร์ตี้"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/4397/medium.jpg",
+    "coverUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format&fit=crop&q=80",
     "spotifyUrl": "https://open.spotify.com/search/จืนจ่ม%20Pheng%20Lao",
     "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
@@ -39697,7 +39697,7 @@ const SONGS = [
       "สิ้นสุด",
       "จบรัก"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8403/medium.jpg",
+    "coverUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format&fit=crop&q=80",
     "spotifyUrl": "https://open.spotify.com/search/สิ้นสุด%20ตั๊กแตน%20ชลธี",
     "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
@@ -39716,7 +39716,7 @@ const SONGS = [
       "รักแพง",
       "คนอีสาน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/12230/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/033739ff476205f5270a15074e0009d6/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/search/ฮักแพง%20ตั๊กแตน%20ชลธี",
     "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
@@ -39811,7 +39811,7 @@ const SONGS = [
       "มันส์",
       "หมอลำ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/4397/medium.jpg",
+    "coverUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format&fit=crop&q=80",
     "spotifyUrl": "https://open.spotify.com/search/บักซิง%20ตั๊กแตน%20ชลธี",
     "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
@@ -39849,7 +39849,7 @@ const SONGS = [
       "เหี่ยว",
       "เศร้า"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8403/medium.jpg",
+    "coverUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format&fit=crop&q=80",
     "spotifyUrl": "https://open.spotify.com/search/เหี่ยว%20Pheng%20Lao",
     "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
@@ -39963,7 +39963,7 @@ const SONGS = [
       "ฝน",
       "คิดถึง"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8403/medium.jpg",
+    "coverUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format&fit=crop&q=80",
     "spotifyUrl": "https://open.spotify.com/search/ฝนตกไหมที่นั่น%20เจ้านาง",
     "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
@@ -40039,7 +40039,7 @@ const SONGS = [
       "อ้ายมา",
       "สนุก"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/4397/medium.jpg",
+    "coverUrl": "https://cdn-images.dzcdn.net/images/cover/6f52ff4789e4b2aa6b9652d0a1228ba3/500x500-000000-80-0-0.jpg",
     "spotifyUrl": "https://open.spotify.com/search/อ้ายมา%20TP%20Sakorn",
     "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
