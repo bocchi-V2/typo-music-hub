@@ -2513,14 +2513,20 @@ function initWeeklyUpdateTracker() {
 
 // ---- HAIMIYA YAHO AUDIO CLIP (Softer Volume) ----
 let haimiyaAudio = null;
-
 let _isHaimiyaPlaying = false;
 
 function getHaimiyaAudio() {
   if (!haimiyaAudio) {
-    haimiyaAudio = new Audio('haimiya_yaho.mp3');
-    haimiyaAudio.preload = 'auto';
-    haimiyaAudio.volume = 0.90;
+    const audio = new Audio();
+    // ใช้ไฟล์ WAV ที่ตัดความเงียบ 3.39 วิ ออกแล้ว ทำให้เสียงพูดเริ่มทันที 0s จบประโยคสมบูรณ์
+    if (audio.canPlayType('audio/wav')) {
+      audio.src = 'haimiya_yaho.wav';
+    } else {
+      audio.src = 'haimiya_yaho.mp3';
+    }
+    audio.preload = 'auto';
+    audio.volume = 1.0;
+    haimiyaAudio = audio;
   }
   return haimiyaAudio;
 }
@@ -2533,22 +2539,24 @@ try {
 function playHaimiyaYaho() {
   try {
     const audio = getHaimiyaAudio();
-    // ถ้ากำลังเล่นอยู่แล้ว ห้ามตัดจบ ให้เล่นต่อจนจบประโยคสมบูรณ์
-    if (_isHaimiyaPlaying && !audio.paused && audio.currentTime > 0.05) {
+    // ถ้ากำลังเล่นอยู่แล้ว ห้ามตัดจบ ห้ามเล่นซ้อน ให้เล่นต่อจนจบประโยคสมบูรณ์ 100%
+    if (_isHaimiyaPlaying) {
       return;
     }
 
     _isHaimiyaPlaying = true;
-    audio.volume = 0.90;
+    audio.volume = 1.0;
     audio.currentTime = 0;
 
-    audio.onended = () => {
+    const onAudioFinished = () => {
       _isHaimiyaPlaying = false;
+      audio.removeEventListener('ended', onAudioFinished);
       // เมื่อเสียงทักทายพูดจบประโยคครบถ้วนแล้ว จึงเริ่มเพลงผ่อนคลายเบาๆ
       if (typeof startRelaxBgm === 'function') {
         startRelaxBgm();
       }
     };
+    audio.addEventListener('ended', onAudioFinished);
 
     const playPromise = audio.play();
     if (playPromise && playPromise.catch) {
@@ -2898,14 +2906,19 @@ function initSplashScreen() {
       // Show floating Japanese greeting "こんにちは" (Hello!)
       showSplashGreeting(splashEl);
 
-      // Hold for 3 seconds then smoothly fade out
-      setTimeout(() => {
+      // รอดูจนกว่าเสียงพูดของคุณไฮมิยะจะจบสมบูรณ์ แล้วจึง fade out
+      const tryDismissSplash = () => {
+        if (_isHaimiyaPlaying) {
+          setTimeout(tryDismissSplash, 200);
+          return;
+        }
         splashEl.classList.add('fade-out');
         setTimeout(() => {
           splashEl.style.display = 'none';
           startRelaxBgm();
-        }, 700);
-      }, 3000);
+        }, 600);
+      };
+      setTimeout(tryDismissSplash, 2400);
 
       return;
     }
@@ -3284,8 +3297,10 @@ let _voiceAudioBuffer = null;
 function getUpdateVoiceAudio() {
   if (!_updateVoiceAudio) {
     const audio = new Audio();
-    // รองรับทั้ง M4A, MP4 และ MP3 ตามที่อุปกรณ์รองรับ
-    if (audio.canPlayType('audio/mp4') || audio.canPlayType('video/mp4')) {
+    // ไฟล์ update_voice.wav ได้รับการ Boost Normalization ความดังเพิ่มขึ้น 21.6 เท่า (2,160%) เต็มสเกล
+    if (audio.canPlayType('audio/wav')) {
+      audio.src = 'update_voice.wav';
+    } else if (audio.canPlayType('audio/mp4') || audio.canPlayType('video/mp4')) {
       audio.src = 'update_voice.m4a';
     } else {
       audio.src = 'update_voice.mp3';
@@ -3300,7 +3315,7 @@ function getUpdateVoiceAudio() {
 let _voiceMediaElementSource = null;
 let _voiceGainNode = null;
 
-// ฟังก์ชันเล่นเสียงแจ้งเตือนแบบ Boost Volume ขยายความดังขึ้น 3.6 เท่า (360%)
+// ฟังก์ชันเล่นเสียงแจ้งเตือนแบบ Boost Volume ขยายความดังและผ่านไดนามิกส์คอมเพรสเซอร์
 function playAmplifiedVoiceAudio() {
   return new Promise((resolve) => {
     try {
@@ -3321,12 +3336,12 @@ function playAmplifiedVoiceAudio() {
           try {
             _voiceMediaElementSource = _voiceAudioCtx.createMediaElementSource(audio);
             _voiceGainNode = _voiceAudioCtx.createGain();
-            _voiceGainNode.gain.setValueAtTime(3.6, _voiceAudioCtx.currentTime); // 360% Volume Boost!
+            _voiceGainNode.gain.setValueAtTime(2.2, _voiceAudioCtx.currentTime); // 220% Additional Boost!
 
             const comp = _voiceAudioCtx.createDynamicsCompressor();
-            comp.threshold.setValueAtTime(-12, _voiceAudioCtx.currentTime);
-            comp.knee.setValueAtTime(30, _voiceAudioCtx.currentTime);
-            comp.ratio.setValueAtTime(12, _voiceAudioCtx.currentTime);
+            comp.threshold.setValueAtTime(-10, _voiceAudioCtx.currentTime);
+            comp.knee.setValueAtTime(24, _voiceAudioCtx.currentTime);
+            comp.ratio.setValueAtTime(10, _voiceAudioCtx.currentTime);
             comp.attack.setValueAtTime(0.003, _voiceAudioCtx.currentTime);
             comp.release.setValueAtTime(0.25, _voiceAudioCtx.currentTime);
 
@@ -3337,7 +3352,7 @@ function playAmplifiedVoiceAudio() {
             console.warn('MediaElementSource attach error:', e);
           }
         } else if (_voiceGainNode) {
-          _voiceGainNode.gain.setValueAtTime(3.6, _voiceAudioCtx.currentTime);
+          _voiceGainNode.gain.setValueAtTime(2.2, _voiceAudioCtx.currentTime);
         }
       }
 
@@ -3379,25 +3394,12 @@ function playUpdateVoiceAlert(isUserInitiated = false) {
     // สั่นอุปกรณ์
     triggerNotifVibration();
 
-    // เล่นเสียงพูดที่ขยายความดังแล้วหลังเสียงกระดิ่งจบ (~1.2 วินาที)
+    // เล่นเสียงพูดที่ขยายความดังแล้วหลังเสียงกระดิ่งจบ (~1.0 วินาที)
     setTimeout(() => {
       const playPromise = playAmplifiedVoiceAudio();
       if (playPromise && playPromise.then) {
         playPromise.then(() => {
-          console.log('🎀 เล่นเสียงแจ้งเตือนอัปเดตสำเร็จ (ขยายความดัง 280%)');
-          const buttons = document.querySelectorAll('#btn-banner-voice');
-          buttons.forEach(btn => {
-            btn.classList.add('voice-playing');
-            btn.style.transform = 'scale(1.08)';
-            btn.style.boxShadow = '0 0 20px rgba(236, 72, 153, 0.9)';
-          });
-          setTimeout(() => {
-            buttons.forEach(btn => {
-              btn.classList.remove('voice-playing');
-              btn.style.transform = '';
-              btn.style.boxShadow = '';
-            });
-          }, 3500);
+          console.log('🎀 เล่นเสียงแจ้งเตือนอัปเดตสำเร็จ (ขยายความดังชัดเจน)');
         }).catch((err) => {
           console.warn('Autoplay restricted audio play:', err);
           if (!isUserInitiated && !_pendingVoiceOnInteraction) {
@@ -3417,7 +3419,7 @@ function playUpdateVoiceAlert(isUserInitiated = false) {
           }
         });
       }
-    }, 1200);
+    }, 1000);
   } catch (err) {
     console.warn('playUpdateVoiceAlert error:', err);
     playUpdateVoiceFallback();

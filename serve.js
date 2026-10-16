@@ -19,15 +19,26 @@ const mimeTypes = {
 };
 
 const server = http.createServer((req, res) => {
-  if (req.method === 'POST' && req.url === '/save-audio') {
+  if (req.method === 'POST' && req.url === '/save-analysis') {
     const chunks = [];
     req.on('data', c => chunks.push(c));
     req.on('end', () => {
-      const buffer = Buffer.concat(chunks);
-      fs.writeFileSync(path.join(__dirname, 'haimiya_yaho.wav'), buffer);
-      console.log('Saved haimiya_yaho.wav size:', buffer.length);
+      fs.writeFileSync(path.join(__dirname, 'audio_analysis.json'), Buffer.concat(chunks));
+      console.log('Saved audio_analysis.json');
       res.writeHead(200, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify({ ok: true, size: buffer.length }));
+      res.end(JSON.stringify({ ok: true }));
+    });
+    return;
+  }
+  if (req.method === 'POST' && req.url.startsWith('/save-file?')) {
+    const fname = new URL(req.url, 'http://localhost').searchParams.get('name') || 'output.bin';
+    const chunks = [];
+    req.on('data', c => chunks.push(c));
+    req.on('end', () => {
+      fs.writeFileSync(path.join(__dirname, fname), Buffer.concat(chunks));
+      console.log('Saved file:', fname);
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ ok: true }));
     });
     return;
   }

@@ -5854,6 +5854,41 @@ const ANIMES = [
     "coverFallback": "https://media.kitsu.app/anime/poster_images/4938/medium.jpg",
     "anifumeUrl": "https://anifume.com/?s=The%20Disappearance%20of%20Haruhi%20Suzumiya",
     "mood": "hype"
+  },
+  {
+    "id": 415,
+    "name": "FLCL",
+    "nameTH": "FLCL",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/202/poster_image/medium-f261ccc182544a2d6f9702af68f4bf8a.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/202/poster_image/medium-f261ccc182544a2d6f9702af68f4bf8a.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=FLCL",
+    "mood": "hype"
+  },
+  {
+    "id": 416,
+    "name": "Date A Live",
+    "nameTH": "Date A Live",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7278/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7278/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Date%20A%20Live",
+    "mood": "hype"
+  },
+  {
+    "id": 417,
+    "name": "Dan Da Dan",
+    "nameTH": "ดันดาดัน",
+    "genre": "แอ็กชัน, เหนือธรรมชาติ, ไซไฟ, คอมเมดี้",
+    "mood": "hype",
+    "desc": "โมโมะ สาวมัธยมที่เชื่อเรื่องผี และโอคารุน หนุ่มเนิร์ดที่เชื่อเรื่องเอเลี่ยน ต้องร่วมมือกันต่อสู้กับสิ่งลี้ลับสุดพิศดาร",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/47833/original.jpg"
   }
 ];
 
@@ -45775,6 +45810,324 @@ const SONGS = [
     "bpm": "ปานกลาง (85 BPM)",
     "typoIdea": "ประกายดาวตก ลากหางแสงตามตัวหนังสือ",
     "cutGuide": "มาร์กจุดดรอปของบีท แล้วตัดสลับฉากให้ตรงจังหวะคำร้องหลัก"
+  },
+  {
+    "id": 1815,
+    "title": "The Bloom",
+    "artist": "YOASOBI",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7a/32/9e/7a329e90-a8e5-cc05-4a8f-142811b9b095/885288733761.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b1/71/f2/b171f271-d59b-59d1-9b82-1a41c311765d/mzaf_13682368395713803404.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/The%20Bloom%20YOASOBI",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 74,
+    "animeMatch": [
+      74
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Gintama",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 1816,
+    "title": "藍二乗",
+    "artist": "Yorushika",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/64/ab/ba/64abba45-d080-0e8a-c24b-313e597c63cb/PA00076158_0_91679_jacket.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/dc/d9/d9dcd9ea-f09d-ca08-bb1b-bf4ebd630ede/mzaf_6254279233344660048.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E8%97%8D%E4%BA%8C%E4%B9%97%20Yorushika",
+    "mood": "hype",
+    "tags": [
+      "มันส์สะใจ",
+      "บีทกระแทก",
+      "ไวรัล",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "jp",
+    "animeId": 109,
+    "animeMatch": [
+      109
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Fate/Apocrypha",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "id": 1817,
+    "title": "Uraraka",
+    "artist": "Da-iCE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/99/27/1d/99271d70-4bc4-c7f9-5efc-d85d0de3a276/ANTCD-A0000021068.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4e/21/e3/4e21e3a7-3162-bc69-985c-658ea1cad9b4/mzaf_8188692877296719167.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Uraraka%20Da-iCE",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 168,
+    "animeMatch": [
+      168
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Gurren Lagann",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 1818,
+    "title": "SPECIALZ (King Gnu Dome Tour THE GREATEST UNKNOWN at TOKYO DOME)",
+    "artist": "King Gnu",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/06/58/ed/0658ed8e-c987-1e86-9b9b-ad36dc14f83e/4547366711691.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d0/f6/61/d0f661d4-627f-40cb-1445-29f1bea90e9d/mzaf_15775621272963553701.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/SPECIALZ%20(King%20Gnu%20Dome%20Tour%20THE%20GREATEST%20UNKNOWN%20at%20TOKYO%20DOME)%20King%20Gnu",
+    "mood": "hype",
+    "tags": [
+      "shibuya",
+      "jjk",
+      "curse"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "jp",
+    "animeId": 5,
+    "animeMatch": [
+      5
+    ],
+    "reason": "Iconic Shibuya Incident opening that exudes menacing hype energy",
+    "typoIdea": "Distorted brutalist red-and-black typography shaking violently"
+  },
+  {
+    "id": 1819,
+    "title": "地球儀 - Spinning Globe",
+    "artist": "米津玄師",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/45/5a/c9/455ac9fc-e38b-09c2-7e8f-79beeca04375/4547366634242.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8f/51/47/8f51474f-e527-46b9-9755-07d0b409129e/mzaf_13829245682652945491.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E5%9C%B0%E7%90%83%E5%84%80%20-%20Spinning%20Globe%20%E7%B1%B3%E6%B4%A5%E7%8E%84%E5%B8%AB",
+    "mood": "chill",
+    "tags": [
+      "ghibli",
+      "nostalgia",
+      "piano"
+    ],
+    "bpm": "ช้า (76 BPM)",
+    "lang": "jp",
+    "animeId": 292,
+    "animeMatch": [
+      292
+    ],
+    "reason": "Gentle philosophical masterpiece celebrating life and youth",
+    "typoIdea": "Soft watercolor strokes forming quiet comforting words"
+  },
+  {
+    "id": 1820,
+    "title": "怪物 (Piano Ver.)",
+    "artist": "Piano Echoes",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/d6/27/31/d6273110-d1c4-9d9e-e284-2ca8d215af9a/Tribute_to_YOASOBI.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/21/d0/02/21d0022e-5a93-36bc-61e8-747ce9e944f5/mzaf_12825324297342088578.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E6%80%AA%E7%89%A9%20(Piano%20Ver.)%20Piano%20Echoes",
+    "mood": "hype",
+    "tags": [
+      "yoasobi",
+      "beast",
+      "electro"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "jp",
+    "animeId": 54,
+    "animeMatch": [
+      54
+    ],
+    "reason": "Driving electro-pop thrill ride exploring inner duality",
+    "typoIdea": "Sharp claw-slash typography slicing across dark neon scenes"
+  },
+  {
+    "id": 1821,
+    "title": "群青",
+    "artist": "椿屋四重奏",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/c4/9e/7e/mzi.ucvsfwcr.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/16/18/75/16187584-32be-7298-6c92-7c68859813ea/mzaf_8744347333926008140.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E7%BE%A4%E9%9D%92%20%E6%A4%BF%E5%B1%8B%E5%9B%9B%E9%87%8D%E5%A5%8F",
+    "mood": "hype",
+    "tags": [
+      "art",
+      "passion",
+      "choir"
+    ],
+    "bpm": "เร็ว (135 BPM)",
+    "lang": "jp",
+    "animeId": 78,
+    "animeMatch": [
+      78
+    ],
+    "reason": "Massive gospel-choir climax praising passionate artistic creation",
+    "typoIdea": "Deep ultramarine blue paintbrush typography splashing boldly"
+  },
+  {
+    "id": 1822,
+    "title": "勇者(カラオケ)",
+    "artist": "POPS HIT MANIA",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/79/b0/b9/79b0b90b-2d80-7be1-ab2a-ea9532805775/4580789594816.png/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/63/7b/49/637b4945-ebe9-86c4-62a1-3c98de156f7f/mzaf_13746608695695803764.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E5%8B%87%E8%80%85(%E3%82%AB%E3%83%A9%E3%82%AA%E3%82%B1)%20POPS%20HIT%20MANIA",
+    "mood": "hype",
+    "tags": [
+      "hero",
+      "frieren",
+      "adventure"
+    ],
+    "bpm": "เร็ว (140 BPM)",
+    "lang": "jp",
+    "animeId": 22,
+    "animeMatch": [
+      22
+    ],
+    "reason": "Electrifying tribute to Himmel the Hero and timeless adventure",
+    "typoIdea": "Gleaming silver sword typography slicing on beat drops"
+  },
+  {
+    "id": 1823,
+    "title": "แฟนเก่าคนโปรด (My Fav Ex)",
+    "artist": "Slapkiss",
+    "lang": "th",
+    "mood": "sad",
+    "bpm": "ปานกลาง (98 BPM)",
+    "tags": [
+      "แฟนเก่า",
+      "คิดถึง",
+      "อกหัก"
+    ],
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9f/d1/57/9fd157f8-f92d-70e3-68b7-122d726b8d80/mzaf_604165407385122578.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/35/1c/35/351c35ca-0e17-f202-cbcc-c3090bd0c5da/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%9F%E0%B8%99%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%B2%E0%B8%84%E0%B8%99%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B8%94%20(My%20Fav%20Ex)%20Slapkiss",
+    "matchingAnime": "Toradora!",
+    "reason": "เพลงฮิตที่พูดถึงคนในอดีตที่ยังคงครองตำแหน่งคนโปรดในใจเสมอ",
+    "typoIdea": "ข้อความแชตเก่าๆ เด้งขึ้นมาพร้อมตัวอักษรพิมพ์ดีด"
+  },
+  {
+    "id": 1824,
+    "title": "青のすみか",
+    "artist": "キタニタツヤ",
+    "lang": "jp",
+    "mood": "hype",
+    "bpm": "เร็ว (142 BPM)",
+    "tags": [
+      "gojo",
+      "summer",
+      "youth"
+    ],
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/be/8d/8cbe8db3-d84c-8308-3253-a03202ce49a0/mzaf_5586218102364426317.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/65/74/62/65746244-f7e0-ee86-3020-3059dec75961/4547366633085.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/%E9%9D%92%E3%81%AE%E3%81%99%E3%81%BF%E3%81%8B%20%E3%82%AD%E3%82%BF%E3%83%8B%E3%82%BF%E3%83%84%E3%83%A4",
+    "matchingAnime": "Jujutsu Kaisen",
+    "reason": "Nostalgic blue summer sky guitar rock exploring youth and friendship",
+    "typoIdea": "Sky-blue text slashing across azure blue lens flares"
+  },
+  {
+    "id": 1825,
+    "title": "クラクラ",
+    "artist": "Ado",
+    "lang": "jp",
+    "mood": "hype",
+    "bpm": "เร็ว (145 BPM)",
+    "tags": [
+      "ado",
+      "jazz",
+      "spyxfamily"
+    ],
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/f5/7c/1ff57c55-c4fb-b3f9-5c47-c30113eae7b0/mzaf_4586119715915097532.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/b0/cb/ad/b0cbad88-e4ad-d171-2bff-522798da6565/23UM1IM05243.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/%E3%82%AF%E3%83%A9%E3%82%AF%E3%83%A9%20Ado",
+    "matchingAnime": "Spy x Family",
+    "reason": "Dazzling electro-swing big band tune bursting with stylish charisma",
+    "typoIdea": "Spinning comic book bubble typography bursting with confetti"
+  },
+  {
+    "id": 1826,
+    "title": "I Really Want to Stay at Your House",
+    "artist": "Rosa Walton & Hallie Coggins",
+    "lang": "en",
+    "mood": "sad",
+    "bpm": "ปานกลาง (115 BPM)",
+    "tags": [
+      "cyberpunk",
+      "tragedy",
+      "synthpop"
+    ],
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/41/34/56/4134564c-7b29-3107-55d8-9efe67b3d305/mzaf_6935030530292179362.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/1b/41/2b/1b412bef-ba81-3173-6d26-41128c0f366c/780163581720.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/I%20Really%20Want%20to%20Stay%20at%20Your%20House%20Rosa%20Walton%20%26%20Hallie%20Coggins",
+    "matchingAnime": "Cyberpunk: Edgerunners",
+    "reason": "The tragic cyberpunk anthem of Moon dreams and lost love that broke everyone's hearts",
+    "typoIdea": "Neon teal and crimson hologram lettering glitching across city skyline"
+  },
+  {
+    "id": 1827,
+    "title": "ALIVE -season 03-",
+    "artist": "ClariS",
+    "lang": "jp",
+    "mood": "hype",
+    "bpm": "เร็ว (144 BPM)",
+    "tags": [
+      "lycoris",
+      "action",
+      "dynamic"
+    ],
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d8/d5/45/d8d545fe-989c-735a-c148-96cb36a4dcbe/mzaf_8008041947493223572.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/47/81/f3/4781f323-406a-2e33-4ebb-be818c25afdf/4547366743753.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/ALIVE%20-season%2003-%20ClariS",
+    "matchingAnime": "Lycoris Recoil",
+    "reason": "High-octane energetic opening matching gun-fu action and heartwarming teamwork",
+    "typoIdea": "Dual red and blue laser streaks carving sharp sleek typography"
+  },
+  {
+    "id": 1828,
+    "title": "ซ่อนหา",
+    "artist": "Tattoo Colour",
+    "lang": "th",
+    "mood": "sad",
+    "bpm": "ช้า (70 BPM)",
+    "tags": [
+      "ซ่อนหา",
+      "เหงา",
+      "คิดถึง"
+    ],
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/09/78/15097896-9495-50f1-6f35-f8294cea5787/mzaf_12856385750372179723.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/71/92/c5719260-75b7-b01c-338c-fbf89d6bdfdd/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%8B%E0%B9%88%E0%B8%AD%E0%B8%99%E0%B8%AB%E0%B8%B2%20Tattoo%20Colour",
+    "matchingAnime": "Weathering with You",
+    "reason": "เพลงช้าทรงคุณค่าที่เปรียบเทียบการตามหาใครสักคนที่ไม่รู้ว่าซ่อนอยู่ที่ไหน",
+    "typoIdea": "คำว่า 'ซ่อน' เลื่อนหลบหลังหมอกควันสีเทาอ่อน"
+  },
+  {
+    "id": 1829,
+    "title": "จำเก่ง (Slipped Your Mind) [feat. Tilly Birds]",
+    "artist": "F.HERO",
+    "lang": "th",
+    "mood": "sad",
+    "bpm": "ปานกลาง (85 BPM)",
+    "tags": [
+      "จำเก่ง",
+      "แร็ป",
+      "ความจำ"
+    ],
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d9/80/8e/d9808ee9-1e6c-9a58-91c0-0cc5e63b1d64/25UMGIM81991.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%88%E0%B8%B3%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%87%20(Slipped%20Your%20Mind)%20%5Bfeat.%20Tilly%20Birds%5D%20F.HERO",
+    "matchingAnime": "5 Centimeters per Second",
+    "reason": "ท่อนฮุกติดหูคู่กับท่อนแร็ปสะเทือนใจเรื่องความทรงจำที่ลืมไม่ลง",
+    "typoIdea": "ฟิล์มภาพถ่ายเก่าๆ หมุนวนรอบข้อความตัวพิมพ์ดีด"
   }
 ];
 
@@ -51452,5 +51805,167 @@ const ANIME_PAIRS = [
     "animeId": 88,
     "category": "chill",
     "badge": "🎬 ตัดต่อไทโปสุดลงตัว"
+  },
+  {
+    "songId": 1815,
+    "animeId": 74,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Gintama",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 1816,
+    "animeId": 109,
+    "category": "hype",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Fate/Apocrypha",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "songId": 1817,
+    "animeId": 168,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Gurren Lagann",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 1818,
+    "animeId": 5,
+    "category": "hype",
+    "badge": "🔥 ท่อนฮิตสายตัดต่อ",
+    "reason": "Iconic Shibuya Incident opening that exudes menacing hype energy",
+    "typoIdea": "Distorted brutalist red-and-black typography shaking violently"
+  },
+  {
+    "songId": 1819,
+    "animeId": 292,
+    "category": "chill",
+    "badge": "🎬 ตัดต่อไทโปสุดลงตัว",
+    "reason": "Gentle philosophical masterpiece celebrating life and youth",
+    "typoIdea": "Soft watercolor strokes forming quiet comforting words"
+  },
+  {
+    "songId": 1820,
+    "animeId": 54,
+    "category": "hype",
+    "badge": "🔥 ท่อนฮิตสายตัดต่อ",
+    "reason": "Driving electro-pop thrill ride exploring inner duality",
+    "typoIdea": "Sharp claw-slash typography slicing across dark neon scenes"
+  },
+  {
+    "songId": 1821,
+    "animeId": 78,
+    "category": "hype",
+    "badge": "🔥 ท่อนฮิตสายตัดต่อ",
+    "reason": "Massive gospel-choir climax praising passionate artistic creation",
+    "typoIdea": "Deep ultramarine blue paintbrush typography splashing boldly"
+  },
+  {
+    "songId": 1822,
+    "animeId": 22,
+    "category": "hype",
+    "badge": "🔥 ท่อนฮิตสายตัดต่อ",
+    "reason": "Electrifying tribute to Himmel the Hero and timeless adventure",
+    "typoIdea": "Gleaming silver sword typography slicing on beat drops"
+  },
+  {
+    "id": 825,
+    "anime": "Toradora!",
+    "songTitle": "แฟนเก่าคนโปรด (My Fav Ex)",
+    "songArtist": "Slapkiss",
+    "mood": "sad",
+    "bpm": "ปานกลาง (98 BPM)",
+    "reason": "เพลงฮิตที่พูดถึงคนในอดีตที่ยังคงครองตำแหน่งคนโปรดในใจเสมอ",
+    "typoIdea": "ข้อความแชตเก่าๆ เด้งขึ้นมาพร้อมตัวอักษรพิมพ์ดีด",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9f/d1/57/9fd157f8-f92d-70e3-68b7-122d726b8d80/mzaf_604165407385122578.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/35/1c/35/351c35ca-0e17-f202-cbcc-c3090bd0c5da/cover.jpg/600x600bb.jpg",
+    "songId": 1823,
+    "animeId": 259
+  },
+  {
+    "id": 826,
+    "anime": "Jujutsu Kaisen",
+    "songTitle": "青のすみか",
+    "songArtist": "キタニタツヤ",
+    "mood": "hype",
+    "bpm": "เร็ว (142 BPM)",
+    "reason": "Nostalgic blue summer sky guitar rock exploring youth and friendship",
+    "typoIdea": "Sky-blue text slashing across azure blue lens flares",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/be/8d/8cbe8db3-d84c-8308-3253-a03202ce49a0/mzaf_5586218102364426317.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/65/74/62/65746244-f7e0-ee86-3020-3059dec75961/4547366633085.jpg/600x600bb.jpg",
+    "songId": 1824,
+    "animeId": 5
+  },
+  {
+    "id": 827,
+    "anime": "Spy x Family",
+    "songTitle": "クラクラ",
+    "songArtist": "Ado",
+    "mood": "hype",
+    "bpm": "เร็ว (145 BPM)",
+    "reason": "Dazzling electro-swing big band tune bursting with stylish charisma",
+    "typoIdea": "Spinning comic book bubble typography bursting with confetti",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1f/f5/7c/1ff57c55-c4fb-b3f9-5c47-c30113eae7b0/mzaf_4586119715915097532.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/b0/cb/ad/b0cbad88-e4ad-d171-2bff-522798da6565/23UM1IM05243.rgb.jpg/600x600bb.jpg",
+    "songId": 1825,
+    "animeId": 398
+  },
+  {
+    "id": 828,
+    "anime": "Cyberpunk: Edgerunners",
+    "songTitle": "I Really Want to Stay at Your House",
+    "songArtist": "Rosa Walton & Hallie Coggins",
+    "mood": "sad",
+    "bpm": "ปานกลาง (115 BPM)",
+    "reason": "The tragic cyberpunk anthem of Moon dreams and lost love that broke everyone's hearts",
+    "typoIdea": "Neon teal and crimson hologram lettering glitching across city skyline",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/41/34/56/4134564c-7b29-3107-55d8-9efe67b3d305/mzaf_6935030530292179362.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/1b/41/2b/1b412bef-ba81-3173-6d26-41128c0f366c/780163581720.jpg/600x600bb.jpg",
+    "songId": 1826,
+    "animeId": 131
+  },
+  {
+    "id": 829,
+    "anime": "Lycoris Recoil",
+    "songTitle": "ALIVE -season 03-",
+    "songArtist": "ClariS",
+    "mood": "hype",
+    "bpm": "เร็ว (144 BPM)",
+    "reason": "High-octane energetic opening matching gun-fu action and heartwarming teamwork",
+    "typoIdea": "Dual red and blue laser streaks carving sharp sleek typography",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d8/d5/45/d8d545fe-989c-735a-c148-96cb36a4dcbe/mzaf_8008041947493223572.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/47/81/f3/4781f323-406a-2e33-4ebb-be818c25afdf/4547366743753.jpg/600x600bb.jpg",
+    "songId": 1827,
+    "animeId": 132
+  },
+  {
+    "id": 830,
+    "anime": "Weathering with You",
+    "songTitle": "ซ่อนหา",
+    "songArtist": "Tattoo Colour",
+    "mood": "sad",
+    "bpm": "ช้า (70 BPM)",
+    "reason": "เพลงช้าทรงคุณค่าที่เปรียบเทียบการตามหาใครสักคนที่ไม่รู้ว่าซ่อนอยู่ที่ไหน",
+    "typoIdea": "คำว่า 'ซ่อน' เลื่อนหลบหลังหมอกควันสีเทาอ่อน",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/15/09/78/15097896-9495-50f1-6f35-f8294cea5787/mzaf_12856385750372179723.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/71/92/c5719260-75b7-b01c-338c-fbf89d6bdfdd/cover.jpg/600x600bb.jpg",
+    "songId": 1828,
+    "animeId": 290
+  },
+  {
+    "id": 831,
+    "anime": "5 Centimeters per Second",
+    "songTitle": "จำเก่ง (Slipped Your Mind) [feat. Tilly Birds]",
+    "songArtist": "F.HERO",
+    "mood": "sad",
+    "bpm": "ปานกลาง (85 BPM)",
+    "reason": "ท่อนฮุกติดหูคู่กับท่อนแร็ปสะเทือนใจเรื่องความทรงจำที่ลืมไม่ลง",
+    "typoIdea": "ฟิล์มภาพถ่ายเก่าๆ หมุนวนรอบข้อความตัวพิมพ์ดีด",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d9/80/8e/d9808ee9-1e6c-9a58-91c0-0cc5e63b1d64/25UMGIM81991.rgb.jpg/600x600bb.jpg",
+    "songId": 1829,
+    "animeId": 183
   }
 ];

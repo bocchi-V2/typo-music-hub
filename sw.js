@@ -1,4 +1,4 @@
-const CACHE_NAME = 'haimiya-typo-v23';
+const CACHE_NAME = 'haimiya-typo-v24';
 const AUDIO_CACHE_NAME = 'haimiya-audio-vault';
 
 // ไฟล์ที่ต้องแคชเพื่อให้แอพทำงานแบบ offline ได้ 100%
@@ -16,9 +16,11 @@ const ASSETS_TO_CACHE = [
   './notification-mascot.jpg',
   './bg-hero.jpg',
   './loading-chibi.jpg',
+  './haimiya_yaho.wav',
   './haimiya_yaho.mp3',
   './dice-roll.mp3',
   './blue_relax.m4a',
+  './update_voice.wav',
   './update_voice.m4a',
   './update_voice.mp4',
   './update_voice.mp3'
@@ -92,6 +94,7 @@ async function handleAudioRangeRequest(request) {
 
       const contentType = response.headers.get('content-type') || 
         (request.url.includes('.m4a') ? 'audio/mp4' : 
+         request.url.includes('.wav') ? 'audio/wav' :
          request.url.includes('.mp3') ? 'audio/mpeg' : 'audio/mp4');
 
       return new Response(chunk, {
@@ -115,8 +118,9 @@ self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
   const url = new URL(event.request.url);
 
-  // 1. ตรวจสอบไฟล์เสียงที่มี Range Header หรือไฟล์เพลง .m4a / .mp3 / itunes audio preview
+  // 1. ตรวจสอบไฟล์เสียงที่มี Range Header หรือไฟล์เพลง .m4a / .wav / .mp3 / itunes audio preview
   const isAudioFile = url.pathname.endsWith('.m4a') || 
+                      url.pathname.endsWith('.wav') || 
                       url.pathname.endsWith('.mp3') || 
                       url.hostname.includes('apple.com') ||
                       event.request.headers.get('range');
