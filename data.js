@@ -22883,7 +22883,7 @@ const SONGS = [
     "id": 714,
     "title": "Fatal (Oshi no Ko S2 OP)",
     "artist": "GEMN (Kento Nakajima x Tatsuya Kitani)",
-    "coverUrl": "favicon-logo.jpg",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f6/50/0e/f6500ed2-3b50-b4ba-37c6-5632fabba148/4547366693607.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/5f/a0/195fa0a8-5f36-1f01-fefc-ab45ddb203ba/mzaf_1909407659469478863.plus.aac.p.m4a",
     "spotifyUrl": "https://open.spotify.com/search/Fatal%20(Oshi%20no%20Ko%20S2%20OP)%20GEMN%20(Kento%20Nakajima%20x%20Tatsuya%20Kitani)",
     "mood": "hype",
@@ -34176,7 +34176,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/ff8d1a8198f7e7fd12831bffea8b9c95bc62d6ec",
     "audioFallback": "https://p.scdn.co/mp3-preview/ff8d1a8198f7e7fd12831bffea8b9c95bc62d6ec",
-    "coverUrl": "https://cdn.myanimelist.net/images/anime/11/75274l.jpg",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/70/53/76/705376dc-d0dc-6945-7fb2-415038e3aafa/18UMGIM36925.rgb.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/5OCJzvD7sykQEKHH7qAC3C",
     "animeId": 367,
     "previewUrl": "https://p.scdn.co/mp3-preview/ff8d1a8198f7e7fd12831bffea8b9c95bc62d6ec"
@@ -35096,7 +35096,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/9dae8528856689cd6ef3700980ca7344aef395b3",
     "audioFallback": "https://p.scdn.co/mp3-preview/9dae8528856689cd6ef3700980ca7344aef395b3",
-    "coverUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format&fit=crop&q=80",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/d5/c7/fa/d5c7fa6f-5b2c-3bdb-5535-67c67b53a9ff/cover.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/069JaCJqZk3T63e7KxVqfH",
     "animeId": 126,
     "previewUrl": "https://p.scdn.co/mp3-preview/9dae8528856689cd6ef3700980ca7344aef395b3"
@@ -35956,7 +35956,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/1bd8a2c97ed26b8d8c6db3b0f74fc329f74c9207",
     "audioFallback": "https://p.scdn.co/mp3-preview/1bd8a2c97ed26b8d8c6db3b0f74fc329f74c9207",
-    "coverUrl": "https://cdn.myanimelist.net/images/anime/4/19644l.jpg",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/98/ae/c2/98aec2e1-3be4-0311-1b44-69348fc87abb/075679956484.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/386RUes7n1uM1yfzgeUuwp",
     "animeId": 368,
     "previewUrl": "https://p.scdn.co/mp3-preview/1bd8a2c97ed26b8d8c6db3b0f74fc329f74c9207"
@@ -36476,7 +36476,7 @@ const SONGS = [
     ],
     "audioUrl": "https://p.scdn.co/mp3-preview/23f01d7f8a719c391ded83753b0b46ecc58c5ac5",
     "audioFallback": "https://p.scdn.co/mp3-preview/23f01d7f8a719c391ded83753b0b46ecc58c5ac5",
-    "coverUrl": "https://cdn.myanimelist.net/images/anime/1792/143588l.jpg",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4a/b0/fb/4ab0fb88-6e1e-aa92-1073-3328de938f11/888332904681.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/track/6bYp3cjdAGKJNSxRTSgNOD",
     "animeId": 362,
     "previewUrl": "https://p.scdn.co/mp3-preview/23f01d7f8a719c391ded83753b0b46ecc58c5ac5"
@@ -39685,7 +39685,7 @@ const SONGS = [
       "สนุก",
       "ปาร์ตี้"
     ],
-    "coverUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format&fit=crop&q=80",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music49/v4/f3/19/0f/f3190f33-90f8-a2dc-4a01-3fcc9d7c2086/190374078368.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/search/จืนจ่ม%20Pheng%20Lao",
     "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
@@ -39723,7 +39723,7 @@ const SONGS = [
       "สิ้นสุด",
       "จบรัก"
     ],
-    "coverUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format&fit=crop&q=80",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4d/c8/b0/4dc8b043-4abc-e220-9065-c90ae453d5b3/888332995344.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/search/สิ้นสุด%20ตั๊กแตน%20ชลธี",
     "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
@@ -39837,7 +39837,7 @@ const SONGS = [
       "มันส์",
       "หมอลำ"
     ],
-    "coverUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format&fit=crop&q=80",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4d/c8/b0/4dc8b043-4abc-e220-9065-c90ae453d5b3/888332995344.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/search/บักซิง%20ตั๊กแตน%20ชลธี",
     "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
@@ -39875,7 +39875,7 @@ const SONGS = [
       "เหี่ยว",
       "เศร้า"
     ],
-    "coverUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format&fit=crop&q=80",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music49/v4/f3/19/0f/f3190f33-90f8-a2dc-4a01-3fcc9d7c2086/190374078368.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/search/เหี่ยว%20Pheng%20Lao",
     "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
@@ -39989,7 +39989,7 @@ const SONGS = [
       "ฝน",
       "คิดถึง"
     ],
-    "coverUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&auto=format&fit=crop&q=80",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fc/22/ba/fc22ba00-0d93-66cd-dce0-ded6923c8537/888332922777.jpg/600x600bb.jpg",
     "spotifyUrl": "https://open.spotify.com/search/ฝนตกไหมที่นั่น%20เจ้านาง",
     "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",

@@ -24,19 +24,19 @@ initDataMaps();
 function getSongFallbackCover(song) {
   if (song && song.animeId) {
     const a = ANIME_MAP.get(song.animeId) || (typeof ANIMES !== 'undefined' ? ANIMES.find(item => item.id === song.animeId) : null);
-    if (a && a.coverUrl) return a.coverUrl;
+    if (a && a.coverUrl && !a.coverUrl.includes('favicon')) return a.coverUrl;
   }
-  return 'favicon-logo.jpg';
+  return 'splash-cover.jpg';
 }
 
 function animeImgTag(anime, cssClass, extraStyle = '', loadingMode = 'lazy', fetchPriority = 'auto') {
-  const src = anime.coverUrl || anime.coverFallback || 'favicon-logo.jpg';
-  const fallback2 = (anime.coverFallback && anime.coverFallback !== src) ? anime.coverFallback : 'favicon-logo.jpg';
-  const finalFallback = 'favicon-logo.jpg';
+  const src = anime.coverUrl || anime.coverFallback || 'splash-cover.jpg';
+  const fallback2 = (anime.coverFallback && anime.coverFallback !== src) ? anime.coverFallback : 'splash-cover.jpg';
+  const finalFallback = 'splash-cover.jpg';
   const alt = (currentAppLang === 'en' ? (anime.name || anime.nameTH) : (anime.nameTH || anime.name)) || 'Anime';
   const styleAttr = extraStyle ? ` style="${extraStyle}"` : '';
   const priorityAttr = fetchPriority !== 'auto' ? ` fetchpriority="${fetchPriority}"` : '';
-  return `<img src="${src}" alt="${alt}" class="${cssClass} anime-cover-img" loading="${loadingMode}" decoding="async"${priorityAttr}${styleAttr} referrerpolicy="no-referrer" onerror="this._tries=(this._tries||0)+1;if(this._tries===1&&'${fallback2}'!=='${src}'){this.src='${fallback2}';}else if(this._tries===2){this.src='${finalFallback}';}" />`;
+  return `<img src="${src}" alt="${alt}" class="${cssClass} anime-cover-img" loading="${loadingMode}" decoding="async"${priorityAttr}${styleAttr} referrerpolicy="no-referrer" onerror="this._tries=(this._tries||0)+1;if(this._tries===1&&'${fallback2}'!=='${src}'){this.src='${fallback2}';}else if(this._tries===2){this.src='${finalFallback}';}else{this.onerror=null;this.src='favicon-logo.jpg';}" />`;
 }
 
 // ---- INTERNATIONALIZATION (i18n) ----
@@ -807,7 +807,7 @@ async function getOfflinePlayableUrl(url) {
   // 1. ตรวจสอบใน CacheStorage ก่อนเสมอ
   try {
     const cache = await caches.open(OFFLINE_AUDIO_CACHE);
-    const cachedResponse = await cache.match(url);
+    const cachedResponse = await cache.match(url, { ignoreSearch: true });
     if (cachedResponse) {
       const blob = await cachedResponse.blob();
       return URL.createObjectURL(blob);
@@ -819,7 +819,7 @@ async function getOfflinePlayableUrl(url) {
   // 2. ถ้ามีเน็ต ให้ดาวน์โหลดมาเก็บไว้ใน CacheStorage และแปลงเป็น Blob URL
   if (navigator.onLine) {
     try {
-      const res = await fetch(url);
+      const res = await fetch(url, { mode: 'cors' });
       if (res.ok) {
         const cloned = res.clone();
         caches.open(OFFLINE_AUDIO_CACHE).then(c => c.put(url, cloned)).catch(() => {});
@@ -832,11 +832,34 @@ async function getOfflinePlayableUrl(url) {
     return url;
   }
 
-  // 3. ถ้าไม่มีเน็ต และไม่มีแคช
+  // 3. ถ้าไม่มีเน็ต: ดึงเพลงอื่นในเครื่องที่เคยแคชไว้แล้วมาเล่นแทน ไม่ปล่อยให้เงียบ
+  try {
+    const cache = await caches.open(OFFLINE_AUDIO_CACHE);
+    const keys = await cache.keys();
+    // กรองเฉพาะ key ที่เป็นไฟล์เพลง
+    const audioKeys = keys.filter(k => k.url.includes('.m4a') || k.url.includes('.mp3') || k.url.includes('apple.com'));
+    if (audioKeys.length > 0) {
+      const randomKey = audioKeys[Math.floor(Math.random() * audioKeys.length)];
+      const fallbackRes = await cache.match(randomKey);
+      if (fallbackRes) {
+        showToast(currentAppLang === 'th' ? '📡 ออฟไลน์: กำลังเล่นเพลงฮิตที่บันทึกไว้ในเครื่อง' : '📡 Offline: Playing cached hit song');
+        const blob = await fallbackRes.blob();
+        return URL.createObjectURL(blob);
+      }
+    }
+    // สำรองด้วย blue_relax.m4a
+    const blueRes = await cache.match('blue_relax.m4a');
+    if (blueRes) {
+      showToast(currentAppLang === 'th' ? '📡 ออฟไลน์: กำลังเล่นเพลงผ่อนคลาย (blue)' : '📡 Offline: Playing blue (relax bgm)');
+      const blob = await blueRes.blob();
+      return URL.createObjectURL(blob);
+    }
+  } catch(e) {}
+
   return null;
 }
 
-// ดาวน์โหลดและแคชเพลงฮิตล่วงหน้าในเบื้องหลัง เพื่อให้ผู้ใช้เปิดฟังแบบ Offline ได้ทันที
+// ดาวน์โหลดและแคชเพลงฮิตจำนวนมากล่วงหน้าในเบื้องหลัง เพื่อให้ผู้ใช้เปิดฟังแบบ Offline ได้ทันที 100%
 async function initOfflineAudioVault() {
   try {
     const cache = await caches.open(OFFLINE_AUDIO_CACHE);
@@ -849,28 +872,84 @@ async function initOfflineAudioVault() {
         .catch(() => {});
     }
 
-    // 2. ถ้าต่อเน็ตอยู่ ให้ทยอยดาวน์โหลดเพลงฮิต 25 เพลงแรกเก็บไว้แบบ Offline
+    // 2. ถ้าต่อเน็ตอยู่ ให้ทยอยดาวน์โหลดเพลงฮิต 50 เพลงครอบคลุมทุกหมวดเก็บไว้แบบ Offline
     if (navigator.onLine) {
-      const topIds = [737, 738, 739, 740, 741, 1, 2, 3, 4, 5, 8, 10, 15, 20, 24, 25, 30, 42, 50, 65, 80, 100];
+      const topIds = [
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 20, 22, 24, 25, 29, 30, 42, 50,
+        714, 737, 738, 739, 740, 741, 1264, 1310, 1353, 1379,
+        1800, 1801, 1802, 1803, 1804, 1805, 1806, 1807, 1808, 1809, 1810, 1811, 1812, 1813, 1814
+      ];
       const precacheList = SONGS.filter(s => topIds.includes(s.id) && s.previewUrl);
-      
-      // ทยอยโหลดทีละเพลงแบบเบื้องหลัง ไม่กวนการใช้งานของผู้ใช้
+
+      // ทยอยโหลดทีละเพลงแบบเบื้องหลัง
       setTimeout(async () => {
+        let cachedCount = 0;
         for (const song of precacheList) {
           try {
-            const hasSong = await cache.match(song.previewUrl);
+            const hasSong = await cache.match(song.previewUrl, { ignoreSearch: true });
             if (!hasSong) {
-              const res = await fetch(song.previewUrl);
-              if (res.ok) await cache.put(song.previewUrl, res);
-              await new Promise(r => setTimeout(r, 400));
+              const res = await fetch(song.previewUrl, { mode: 'cors' });
+              if (res.ok) {
+                await cache.put(song.previewUrl, res);
+                cachedCount++;
+              }
+              await new Promise(r => setTimeout(r, 350));
+            } else {
+              cachedCount++;
             }
           } catch (err) {}
         }
-        console.log('✅ Offline Audio Vault: เพลงฮิตถูกจัดเก็บในเครื่องพร้อมฟังแบบออฟไลน์ 100%!');
+        console.log(`✅ Offline Audio Vault: มีเพลงพร้อมฟังแบบออฟไลน์ทั้งหมด ${cachedCount} เพลง!`);
       }, 3000);
     }
   } catch (e) {
     console.warn('Offline Audio Vault init error:', e);
+  }
+}
+
+// ฟังก์ชันให้ผู้ใช้กดดาวน์โหลดคลังเพลงออฟไลน์ 50 เพลงลงเครื่องได้ด้วยตนเอง
+async function downloadOfflineMusicPack() {
+  const btn = document.getElementById('btn-offline-pack');
+  if (!navigator.onLine) {
+    showToast('⚠️ กรุณาเชื่อมต่ออินเทอร์เน็ตเพื่อดาวน์โหลดเพลงไว้ฟังออฟไลน์');
+    return;
+  }
+  if (btn) {
+    btn.disabled = true;
+    btn.innerHTML = '⏳ กำลังเตรียมบันทึกเพลงลงเครื่อง...';
+  }
+  try {
+    const cache = await caches.open(OFFLINE_AUDIO_CACHE);
+    const downloadList = SONGS.slice(0, 60).filter(s => s.previewUrl);
+    let downloaded = 0;
+    for (let i = 0; i < downloadList.length; i++) {
+      const song = downloadList[i];
+      try {
+        const hasSong = await cache.match(song.previewUrl, { ignoreSearch: true });
+        if (!hasSong) {
+          const res = await fetch(song.previewUrl, { mode: 'cors' });
+          if (res.ok) {
+            await cache.put(song.previewUrl, res);
+            downloaded++;
+          }
+        } else {
+          downloaded++;
+        }
+      } catch (e) {}
+      if (btn) {
+        btn.innerHTML = `⏳ บันทึกเพลงลงเครื่อง (${downloaded}/${downloadList.length})...`;
+      }
+    }
+    showToast(`✅ บันทึกคลังเพลงลงเครื่องเรียบร้อยแล้ว ${downloaded} เพลง! เปิดฟังได้ 100% แม้ไม่มีเน็ต`);
+    if (btn) {
+      btn.innerHTML = `✅ บันทึกแล้ว ${downloaded} เพลง (พร้อมฟังออฟไลน์)`;
+    }
+  } catch (err) {
+    showToast('❌ การบันทึกเพลงขัดข้อง: ' + err.message);
+    if (btn) {
+      btn.disabled = false;
+      btn.innerHTML = '🎧 บันทึกคลังเพลงฮิตไว้ฟังออฟไลน์ (ฟังได้แม้ไม่มีเน็ต)';
+    }
   }
 }
 
@@ -1626,7 +1705,7 @@ function songCardHTML(song, index = 0) {
       <div class="song-card-top">
         <div class="song-cover-wrapper">
           <img src="${song.coverUrl || fallbackCover}" alt="${song.title}" class="song-cover" loading="${loadMode}" decoding="async"${priAttr} referrerpolicy="no-referrer"
-            onerror="this.onerror=null;this.src='${fallbackCover}';" />
+            onerror="if(!this._tries){this._tries=1;this.src='${fallbackCover}';}else if(this._tries===1){this._tries=2;this.src='splash-cover.jpg';}else{this.onerror=null;this.src='favicon-logo.jpg';}" />
           <button class="song-play-overlay" onclick="togglePlaySong(${song.id})" title="${isPlaying ? (currentAppLang === 'th' ? 'หยุด' : 'Pause') : (currentAppLang === 'th' ? 'เล่น' : 'Play')}">
             ${isPlaying ? '⏸️' : '▶️'}
           </button>
@@ -2796,8 +2875,8 @@ function initSplashScreen() {
 //  ระบบซิงค์เพลง/อนิเมะสดอัตโนมัติ และอัปเดตแอป APK ทับของเดิมได้ 100% ไม่ต้องลบแอปเก่า
 // ============================================
 
-const CURRENT_APP_VERSION = 'v2.20261016.1115';
-const CURRENT_VERSION_CODE = 1792149300;
+const CURRENT_APP_VERSION = 'v2.20261016.1145';
+const CURRENT_VERSION_CODE = 1792151100;
 const GITHUB_REPO_OWNER = 'bocchi-V2';
 const GITHUB_REPO_NAME = 'typo-music-hub';
 const GITHUB_PAGES_BASE = 'https://bocchi-v2.github.io/typo-music-hub';
@@ -3140,11 +3219,13 @@ function triggerNotifVibration() {
 }
 
 // ============================================
-//  VOICE ALERT SYSTEM (เสียงพูดแจ้งเตือน)
+//  VOICE ALERT SYSTEM (เสียงพูดแจ้งเตือนแบบขยายเสียง 280%)
 // ============================================
 
 let _updateVoiceAudio = null;
 let _pendingVoiceOnInteraction = false;
+let _voiceAudioCtx = null;
+let _voiceAudioBuffer = null;
 
 function getUpdateVoiceAudio() {
   if (!_updateVoiceAudio) {
@@ -3160,6 +3241,69 @@ function getUpdateVoiceAudio() {
     _updateVoiceAudio = audio;
   }
   return _updateVoiceAudio;
+}
+
+// โหลดไฟล์เสียงแจ้งเตือนแปลงเป็น AudioBuffer เพื่อขยายเสียงได้มากกว่า 100%
+async function getAmplifiedVoiceBuffer(ctx) {
+  if (_voiceAudioBuffer) return _voiceAudioBuffer;
+  try {
+    const res = await fetch('update_voice.mp3');
+    if (!res.ok) return null;
+    const arrayBuffer = await res.arrayBuffer();
+    _voiceAudioBuffer = await ctx.decodeAudioData(arrayBuffer);
+    return _voiceAudioBuffer;
+  } catch(e) {
+    console.warn('Failed to decode voice audio:', e);
+    return null;
+  }
+}
+
+// ฟังก์ชันเล่นเสียงแจ้งเตือนแบบ Boost Volume ขยายความดังขึ้น 2.8 เท่า (280%)
+async function playAmplifiedVoiceAudio() {
+  const AudioCtx = window.AudioContext || window.webkitAudioContext;
+  if (!AudioCtx) {
+    const audio = getUpdateVoiceAudio();
+    audio.currentTime = 0;
+    audio.volume = 1.0;
+    return audio.play();
+  }
+
+  if (!_voiceAudioCtx || _voiceAudioCtx.state === 'closed') {
+    _voiceAudioCtx = new AudioCtx();
+  }
+  if (_voiceAudioCtx.state === 'suspended') {
+    await _voiceAudioCtx.resume();
+  }
+
+  const buf = await getAmplifiedVoiceBuffer(_voiceAudioCtx);
+  if (!buf) {
+    const audio = getUpdateVoiceAudio();
+    audio.currentTime = 0;
+    audio.volume = 1.0;
+    return audio.play();
+  }
+
+  const src = _voiceAudioCtx.createBufferSource();
+  src.buffer = buf;
+
+  // เพิ่มความดังเสียงแจ้งเตือนขึ้น 2.8 เท่า (280% Volume Boost)
+  const gain = _voiceAudioCtx.createGain();
+  gain.gain.setValueAtTime(2.8, _voiceAudioCtx.currentTime);
+
+  // Dynamic Compressor เพื่อให้เสียงดังกระหึ่ม คมชัด ไม่แตกพร่า
+  const comp = _voiceAudioCtx.createDynamicsCompressor();
+  comp.threshold.setValueAtTime(-12, _voiceAudioCtx.currentTime);
+  comp.knee.setValueAtTime(30, _voiceAudioCtx.currentTime);
+  comp.ratio.setValueAtTime(12, _voiceAudioCtx.currentTime);
+  comp.attack.setValueAtTime(0.003, _voiceAudioCtx.currentTime);
+  comp.release.setValueAtTime(0.25, _voiceAudioCtx.currentTime);
+
+  src.connect(gain);
+  gain.connect(comp);
+  comp.connect(_voiceAudioCtx.destination);
+
+  src.start(0);
+  return Promise.resolve();
 }
 
 // Pre-load เสียงแจ้งเตือนอัปเดตทันที
@@ -3184,16 +3328,12 @@ function playUpdateVoiceAlert(isUserInitiated = false) {
     // สั่นอุปกรณ์
     triggerNotifVibration();
 
-    // เล่นเสียงพูดหลังเสียงกระดิ่งจบ (~1.2 วินาที)
+    // เล่นเสียงพูดที่ขยายความดังแล้วหลังเสียงกระดิ่งจบ (~1.2 วินาที)
     setTimeout(() => {
-      const audio = getUpdateVoiceAudio();
-      audio.currentTime = 0;
-      audio.volume = 1.0;
-
-      const playPromise = audio.play();
+      const playPromise = playAmplifiedVoiceAudio();
       if (playPromise && playPromise.then) {
         playPromise.then(() => {
-          console.log('🎀 เล่นเสียงแจ้งเตือนอัปเดตสำเร็จ');
+          console.log('🎀 เล่นเสียงแจ้งเตือนอัปเดตสำเร็จ (ขยายความดัง 280%)');
           const buttons = document.querySelectorAll('#btn-banner-voice');
           buttons.forEach(btn => {
             btn.classList.add('voice-playing');
