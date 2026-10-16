@@ -2929,12 +2929,15 @@ function sendUpdatePushNotification(versionTag, songCount) {
 // เล่นเสียงผู้หญิงน่ารักพูด "อัปเดตด้วยนะคะ" — ใช้ไฟล์เสียงจริง update_voice.mp3 เป็นหลัก
 // ถ้าไฟล์โหลดไม่ได้จะ fallback ไปใช้ Web Speech Synthesis
 let _updateVoiceAudio = null;
+let _pendingVoiceOnInteraction = false;
 
 function getUpdateVoiceAudio() {
   if (!_updateVoiceAudio) {
     _updateVoiceAudio = new Audio('update_voice.mp3');
     _updateVoiceAudio.preload = 'auto';
-    _updateVoiceAudio.volume = 0.9;
+    _updateVoiceAudio.volume = 0.95;
+    // ปรับความเร็ว 1.05 เพื่อให้น้ำเสียงน่ารัก สดใส และเป็นธรรมชาติ
+    _updateVoiceAudio.playbackRate = 1.05;
   }
   return _updateVoiceAudio;
 }
@@ -2944,24 +2947,47 @@ try {
   getUpdateVoiceAudio().load();
 } catch(e) {}
 
-function playUpdateVoiceAlert() {
+function playUpdateVoiceAlert(isUserInitiated = false) {
   try {
     // 1. ลองเล่นไฟล์เสียงจริงก่อน (update_voice.mp3)
     const audio = getUpdateVoiceAudio();
     audio.currentTime = 0;
-    audio.volume = 0.9;
+    audio.volume = 0.95;
+    audio.playbackRate = 1.05;
     const playPromise = audio.play();
 
     if (playPromise && playPromise.then) {
       playPromise.then(() => {
-        console.log('🎀 เล่นเสียง "อัปเดตด้วยนะคะ" จากไฟล์เสียงจริงสำเร็จ');
-      }).catch(() => {
-        // 2. ถ้าไฟล์เสียงเล่นไม่ได้ ใช้ Speech Synthesis เป็น fallback
-        playUpdateVoiceFallback();
+        console.log('🎀 เล่นเสียง "อัปเดตด้วยนะคะ" สำเร็จ');
+        const voiceBtn = document.getElementById('btn-banner-voice');
+        if (voiceBtn) {
+          voiceBtn.style.transform = 'scale(1.08)';
+          setTimeout(() => { if (voiceBtn) voiceBtn.style.transform = ''; }, 300);
+        }
+      }).catch((err) => {
+        console.warn('Audio play autoplay restricted:', err);
+        // หากบราวเซอร์บล็อก autoplay ตอนเปิดแอปอัตโนมัติ ให้เล่นทันทีเมื่อผู้ใช้แตะหน้าจอครั้งแรก!
+        if (!isUserInitiated && !_pendingVoiceOnInteraction) {
+          _pendingVoiceOnInteraction = true;
+          const onFirstTouch = () => {
+            _pendingVoiceOnInteraction = false;
+            window.removeEventListener('pointerdown', onFirstTouch);
+            window.removeEventListener('touchstart', onFirstTouch);
+            window.removeEventListener('click', onFirstTouch);
+            setTimeout(() => {
+              playUpdateVoiceAlert(true);
+            }, 100);
+          };
+          window.addEventListener('pointerdown', onFirstTouch, { once: true });
+          window.addEventListener('touchstart', onFirstTouch, { once: true });
+          window.addEventListener('click', onFirstTouch, { once: true });
+        } else {
+          // ถ้าเล่นไฟล์เสียงไม่ได้ ให้ fallback ไป Speech Synthesis
+          playUpdateVoiceFallback();
+        }
       });
     }
   } catch(e) {
-    // fallback ไป Speech Synthesis
     playUpdateVoiceFallback();
   }
 }
@@ -2990,6 +3016,22 @@ function playUpdateVoiceFallback() {
   } catch(e) {
     console.warn('Voice fallback error:', e);
   }
+}
+
+// ฟังก์ชันแปลงเลขเวอร์ชันสำหรับเปรียบเทียบความใหม่ (Semver Score) ป้องกันแจ้งเตือนอัปเดตเวอร์ชันเดิมซ้ำ
+function parseAppVersionScore(vStr) {
+  if (!vStr) return 0;
+  const cleaned = String(vStr).replace(/^v/i, '').trim();
+  const parts = cleaned.split('.').map(p => parseInt(p, 10) || 0);
+  let score = 0;
+  if (parts.length >= 3) {
+    score = parts[0] * 1000000000000 + parts[1] * 100000 + parts[2];
+  } else if (parts.length === 2) {
+    score = parts[0] * 1000000000000 + parts[1] * 100000;
+  } else if (parts.length === 1) {
+    score = parts[0] * 1000000000000;
+  }
+  return score;
 }
 
 // โหลด voices เมื่อพร้อม (บาง browser โหลดแบบ async)
@@ -3032,9 +3074,11 @@ async function checkApkAppUpdate(isManualTrigger = false) {
     } catch (re) {}
 
     const releaseTag = release?.tag_name || remoteVersionTag;
+    const currentScore = parseAppVersionScore(CURRENT_APP_VERSION);
+    const remoteScore = parseAppVersionScore(releaseTag);
     const hasNewerVersion = (remoteCode > CURRENT_VERSION_CODE) || 
-                            (release && releaseTag && releaseTag !== CURRENT_APP_VERSION) ||
-                            (isManualTrigger && remoteCode !== CURRENT_VERSION_CODE);
+                            (remoteScore > currentScore) ||
+                            (isManualTrigger && (remoteCode !== CURRENT_VERSION_CODE || remoteScore !== currentScore));
 
     if (hasNewerVersion && (!release || (!release.draft && !release.prerelease))) {
       const banner = document.getElementById('in-app-update-banner');
@@ -3234,3 +3278,15 @@ document.addEventListener('keydown', e => {
     }
   }
 });
+
+// Mascot Voice Tap Interaction (คลิกมาสคอตแผ่นเสียง Haimiya ในหน้าแรกเพื่อฟังเสียงทักทาย)
+const vinylHeroEl = document.getElementById('vinyl-hero');
+if (vinylHeroEl) {
+  vinylHeroEl.style.cursor = 'pointer';
+  vinylHeroEl.title = 'คลิกเพื่อทักทายคุณไฮมิยะ ✨';
+  vinylHeroEl.addEventListener('click', () => {
+    playHaimiyaYaho();
+    vinylHeroEl.classList.add('mascot-bounce');
+    setTimeout(() => vinylHeroEl.classList.remove('mascot-bounce'), 600);
+  });
+}
