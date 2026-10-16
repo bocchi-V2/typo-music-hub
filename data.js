@@ -5796,6 +5796,38 @@ const ANIMES = [
     "coverFallback": "https://media.kitsu.app/anime/11752/poster_image/medium-6e7782dec9c8a72c2148369c288982ee.jpeg",
     "anifumeUrl": "https://anifume.com/?s=Kono%20Subarashii%20Sekai%20ni%20Shukufuku%20wo!%20OVA",
     "mood": "hype"
+  },
+  {
+    "id": 411,
+    "name": "Call of the Night",
+    "nameTH": "เพลงรักมนุษย์ค้างคาว (Yofukashi no Uta)",
+    "genre": [
+      "โรแมนติก",
+      "เหนือธรรมชาติ",
+      "ค่ำคืน",
+      "แวมไพร์",
+      "โต้รุ่งยันเช้า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/45483/poster_image/medium-f7a68d33db4d288fdb7f1ba3f35b756f.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/50346.jpg?1713755325",
+    "anifumeUrl": "https://anifume.com/?s=Call%20of%20the%20Night",
+    "mood": "chill"
+  },
+  {
+    "id": 412,
+    "name": "Insomniacs After School",
+    "nameTH": "คืนนอนไม่หลับของสองเรา (Kimi wa Houkago Insomnia)",
+    "genre": [
+      "โรแมนติก",
+      "โรงเรียน",
+      "ดาราศาสตร์",
+      "ค่ำคืน",
+      "นอนไม่หลับ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/45746/poster_image/medium-b260279a55588269f2a466f2b9603023.jpeg",
+    "coverFallback": "https://shikimori.one/system/animes/original/50796.jpg?1711940396",
+    "anifumeUrl": "https://anifume.com/?s=Insomniacs%20After%20School",
+    "mood": "chill"
   }
 ];
 
@@ -21959,6 +21991,129 @@ const SONGS = [
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Steins;Gate",
     "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "id": 737,
+    "title": "4:00 (ตีสี่)",
+    "artist": "THE TOYS",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7d/e9/ab/7de9abba-b228-efde-9f85-a9f77e6a63d1/25UMGIM87761.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6c/e9/b0/6ce9b034-49d8-4278-31bd-052fbd0833cd/mzaf_2272073077264678738.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/4%3A00%20THE%20TOYS",
+    "mood": "chill",
+    "tags": [
+      "ตี 4",
+      "เหงา",
+      "คิดถึง",
+      "นอนไม่หลับ",
+      "ยันเช้า",
+      "R&B"
+    ],
+    "bpm": "ช้า (78 BPM)",
+    "lang": "th",
+    "animeId": 411,
+    "animeMatch": [
+      411,
+      412
+    ],
+    "reason": "ตื่นขึ้นมาจากฝันดีๆ ในตอนตีสี่... เมโลดี้ R&B นุ่มละมุนปนความคิดถึง เข้ากับบรรยากาศราตรียันเช้าของ Call of the Night และ Insomniacs After School",
+    "typoIdea": "ฟอนต์นีออนสีม่วง-น้ำเงินเรืองแสง ค่อยๆ กระพริบเลือนรางตามจังหวะค่ำคืนจนถึงแสงแรกของเช้าวันใหม่"
+  },
+  {
+    "id": 738,
+    "title": "Daten (堕天)",
+    "artist": "Creepy Nuts",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/b8/6d/53/b86d535e-ad97-faec-20f2-5e24573ae2be/4547366572964.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/da/87/9d/da879d4d-4806-74d6-b8d8-e716204649ff/mzaf_16999557806437919111.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Daten%20Creepy%20Nuts",
+    "mood": "hype",
+    "tags": [
+      "ค่ำคืน",
+      "ยันเช้า",
+      "แวมไพร์",
+      "ตี 4",
+      "บินบนฟ้า"
+    ],
+    "bpm": "เร็ว (130 BPM)",
+    "lang": "jp",
+    "animeId": 411,
+    "animeMatch": [
+      411
+    ],
+    "reason": "เพลงเปิดสุดไฮป์ประจำอนิเมะ Call of the Night บีทแจ๊ส-ฮิปฮอปสุดจัดจ้าน ถ่ายทอดความสนุกของการท่องราตรีโต้รุ่งยันเช้า",
+    "typoIdea": "ไทโปตัวหนังสือสะบัดพุ่งสไตล์ไดนามิก สลับเอฟเฟกต์ Glitch นีออนม่วง-ชมพูสะท้อนแสงไฟตึกสูง"
+  },
+  {
+    "id": 739,
+    "title": "Yofukashi no Uta (よふかしのうた)",
+    "artist": "Creepy Nuts",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/e3/f7/82/e3f782dd-efcb-0124-c92d-6ef3821a1fcd/jacket_AIXX01598B00Z_550.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ac/b3/f9/acb3f9aa-7d12-f397-8f41-ae7e73a125a3/mzaf_146352262475079128.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Yofukashino%20Uta%20Creepy%20Nuts",
+    "mood": "hype",
+    "tags": [
+      "ท่องราตรี",
+      "นอนดึก",
+      "ยันเช้า",
+      "ตี 4",
+      "อิสระ"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "jp",
+    "animeId": 411,
+    "animeMatch": [
+      411
+    ],
+    "reason": "เพลงธีมตัวจริงของเหล่าคนนอนดึก ปล่อยใจให้เป็นอิสระจากกรอบชีวิตเดิมๆ ท่องราตรีสนุกสุดเหวี่ยงยันเช้าตรู่",
+    "typoIdea": "ฟอนต์แนว Street Graffiti มีเส้นสปีดไลน์เคลื่อนไหวตามกรูฟกลองและเบส"
+  },
+  {
+    "id": 740,
+    "title": "อยู่ยันเช้า (All Night Long)",
+    "artist": "FIZZIE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/da/19/b8/da19b8b0-bea5-dfe5-a7cb-28c43d172dcf/199350262333.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/9f/4e/6c9f4eeb-bcb4-80db-8f18-79e0581435c1/mzaf_8934017963094519038.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B8%B9%E0%B9%88%E0%B8%A2%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%8A%E0%B9%89%E0%B8%B2%20FIZZIE",
+    "mood": "chill",
+    "tags": [
+      "อยู่ยันเช้า",
+      "โต้รุ่ง",
+      "กลางคืน",
+      "ชิลล์",
+      "ตี 4"
+    ],
+    "bpm": "ปานกลาง (95 BPM)",
+    "lang": "th",
+    "animeId": 412,
+    "animeMatch": [
+      412,
+      411
+    ],
+    "reason": "บรรยากาศชิลล์ๆ กับท่อนฮุกที่พาเราล่องลอยไปในค่ำคืน อยู่คุยกันยาวๆ ยันเช้า เข้ากับ Insomniacs After School สุดๆ",
+    "typoIdea": "ฟอนต์โมเดิร์นมินิมอลพร้อมละอองดาวระยิบระยับ ลอยเลื่อนขึ้นช้าๆ ตามแสงจันทร์"
+  },
+  {
+    "id": 741,
+    "title": "แค่เมาไปยันเช้า",
+    "artist": "ตาเนม feat. STAMP-ST",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music128/v4/92/89/b9/9289b9fc-7936-2058-e7af-50344ed6d659/859728236457_cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/7f/fb/f4/7ffbf4ef-51d8-ed37-c777-a8784a2dfb81/mzaf_2618784592756367652.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%84%E0%B9%88%E0%B9%80%E0%B8%A1%E0%B8%B2%E0%B9%81%E0%B8%9B%E0%B8%A2%E0%B8%B1%E0%B8%99%E0%B9%80%E0%B8%8A%E0%B9%89%E0%B8%B2%20%E0%B8%95%E0%B8%B2%E0%B9%80%E0%B8%A1%E0%B8%A2",
+    "mood": "chill",
+    "tags": [
+      "ยันเช้า",
+      "เมา",
+      "สังสรรค์",
+      "ตี 4",
+      "ดนตรีโฟล์ก"
+    ],
+    "bpm": "ปานกลาง (88 BPM)",
+    "lang": "th",
+    "animeId": 411,
+    "animeMatch": [
+      411
+    ],
+    "reason": "เพลงฮิตแนวอินดี้โฟล์ก-ฮิปฮอป สไตล์ลุยปาร์ตี้ข้ามคืนยันฟ้าสว่าง ยามตี 4 เข้ากับมู้ดปล่อยใจในค่ำคืน",
+    "typoIdea": "ไทโปตัวเขียนลายมือน่ารัก มีคลื่นควันบางเบาและลูกเล่นตัวหนังสือโคลงเคลงชวนยิ้ม"
   }
 ];
 
@@ -27062,5 +27217,45 @@ const ANIME_PAIRS = [
     "badge": "✨ ประจำวันใหม่",
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Steins;Gate",
     "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "songId": 737,
+    "animeId": 411,
+    "category": "chill",
+    "badge": "🌙 ธีมตี 4 ยันเช้า",
+    "reason": "ตื่นตอนตีสี่กับความคิดถึงสุดหัวใจ เข้ากันลงตัวกับค่ำคืนที่ไม่มีวันหลับใหลของ Call of the Night",
+    "typoIdea": "ฟอนต์นีออนสีม่วง-น้ำเงินเรืองแสง ค่อยๆ กระพริบเลือนรางตามจังหวะค่ำคืนจนถึงแสงแรกของเช้าวันใหม่"
+  },
+  {
+    "songId": 738,
+    "animeId": 411,
+    "category": "hype",
+    "badge": "🦇 เพลงเปิด Call of the Night",
+    "reason": "เพลงเปิดสุดเดือดของ Call of the Night ถ่ายทอดความมันส์ของการท่องราตรีโต้รุ่งยันเช้าตรู่",
+    "typoIdea": "ไทโปตัวหนังสือสะบัดพุ่งสไตล์ไดนามิก สลับเอฟเฟกต์ Glitch นีออนม่วง-ชมพูสะท้อนแสงไฟตึกสูง"
+  },
+  {
+    "songId": 739,
+    "animeId": 411,
+    "category": "hype",
+    "badge": "🌃 ท่องราตรียันเช้า",
+    "reason": "เพลงธีมคนนอนดึกระดับมาสเตอร์พีซ ปลดปล่อยตัวตนสู่ราตรีกาล โต้รุ่งยันตี 4 ตี 5",
+    "typoIdea": "ฟอนต์แนว Street Graffiti มีเส้นสปีดไลน์เคลื่อนไหวตามกรูฟกลองและเบส"
+  },
+  {
+    "songId": 740,
+    "animeId": 412,
+    "category": "chill",
+    "badge": "🔭 โรแมนติกยันเช้า",
+    "reason": "ดนตรีชิลล์อบอุ่นของการอยู่เคียงข้างกันยันเช้า เข้ากับชมรมดาราศาสตร์ใน Insomniacs After School",
+    "typoIdea": "ฟอนต์โมเดิร์นมินิมอลพร้อมละอองดาวระยิบระยับ ลอยเลื่อนขึ้นช้าๆ ตามแสงจันทร์"
+  },
+  {
+    "songId": 741,
+    "animeId": 411,
+    "category": "chill",
+    "badge": "✨ ยันฟ้าสว่าง",
+    "reason": "ฟีลสบายๆ ปาร์ตี้กับเพื่อนยันเช้าตรู่ ไม่ต้องรีบกลับบ้าน ปล่อยใจในราตรี",
+    "typoIdea": "ไทโปตัวเขียนลายมือน่ารัก มีคลื่นควันบางเบาและลูกเล่นตัวหนังสือโคลงเคลงชวนยิ้ม"
   }
 ];

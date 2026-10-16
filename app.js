@@ -2136,8 +2136,10 @@ function playHaimiyaYaho() {
 let relaxBgmAudio = null;
 let isRelaxBgmEnabled = true;
 let isDuckMutedByPreview = false;
-// ปรับเสียงเบาจัดๆ (0.08) ให้เป็นดนตรีกล่อมอารมณ์ ผ่อนคลาย ไม่กวนการใช้งาน
-const RELAX_BGM_VOLUME = 0.08;
+let wasRelaxBgmPlayingBeforeBackground = false;
+let wasPreviewPlayingBeforeBackground = false;
+// ปรับระดับเสียงให้ชัดเจน ฟังสบาย ผ่อนคลายกำลังดี (0.35) ไม่อู้อี้หรือเบาเกินไป
+const RELAX_BGM_VOLUME = 0.35;
 
 function getRelaxBgmAudio() {
   if (!relaxBgmAudio) {
@@ -2209,15 +2211,15 @@ function duckRelaxBgm() {
   if (relaxBgmAudio && !relaxBgmAudio.paused) {
     let vol = relaxBgmAudio.volume;
     const fadeTimer = setInterval(() => {
-      vol -= 0.02;
-      if (vol <= 0.01) {
+      vol -= 0.04;
+      if (vol <= 0.02) {
         clearInterval(fadeTimer);
         relaxBgmAudio.pause();
         relaxBgmAudio.volume = RELAX_BGM_VOLUME;
       } else {
-        relaxBgmAudio.volume = vol;
+        relaxBgmAudio.volume = Math.max(0, vol);
       }
-    }, 30);
+    }, 25);
   }
 }
 
@@ -2228,20 +2230,20 @@ function resumeRelaxBgm() {
   try {
     const audio = getRelaxBgmAudio();
     audio.currentTime = 0; // เริ่มเพลงใหม่ขึ้นมาเลย
-    audio.volume = 0.01;
+    audio.volume = 0.02;
     const p = audio.play();
     if (p && p.catch) {
       p.then(() => {
-        let vol = 0.01;
+        let vol = 0.02;
         const fadeTimer = setInterval(() => {
-          vol += 0.01;
+          vol += 0.03;
           if (vol >= RELAX_BGM_VOLUME) {
             clearInterval(fadeTimer);
             audio.volume = RELAX_BGM_VOLUME;
           } else {
             audio.volume = vol;
           }
-        }, 50);
+        }, 40);
         updateRelaxBgmUI(true);
       }).catch(() => {});
     }
@@ -2262,6 +2264,78 @@ function toggleRelaxBgm() {
     showToast(currentAppLang === 'th' ? '🔇 ปิดเพลงผ่อนคลายแล้ว' : '🔇 Relax BGM Off');
   }
   updateRelaxBgmUI(isRelaxBgmEnabled && !isDuckMutedByPreview);
+}
+
+// ---- APP LIFECYCLE & BACKGROUND AUDIO SUPPRESSION ----
+// ป้องกันปัญหาเสียงเล่นค้างหรือกระตุกติดๆ ขัดๆ เมื่อผู้ใช้กดออกจากแอป หรือสลับไปหน้าจออื่น (Android WebView / Browser)
+function handleAppGoingBackground() {
+  // 1. หยุดเพลง BGM ผ่อนคลายถ้ากำลังเล่นอยู่
+  if (relaxBgmAudio && !relaxBgmAudio.paused) {
+    wasRelaxBgmPlayingBeforeBackground = true;
+    try {
+      relaxBgmAudio.pause();
+    } catch (e) {}
+    updateRelaxBgmUI(false);
+  } else {
+    wasRelaxBgmPlayingBeforeBackground = false;
+  }
+
+  // 2. หยุดเพลงตัวอย่าง (preview audio) ทันทีถ้ากำลังเล่นอยู่ เพื่อไม่ให้เสียงกระตุกในพื้นหลัง
+  if (currentAudio && !currentAudio.paused) {
+    wasPreviewPlayingBeforeBackground = true;
+    try {
+      currentAudio.pause();
+    } catch (e) {}
+    updateAudioUI(false);
+  } else {
+    wasPreviewPlayingBeforeBackground = false;
+  }
+
+  // 3. หยุดเสียงเอฟเฟกต์อื่นๆ ถ้ามี
+  if (haimiyaAudio && !haimiyaAudio.paused) {
+    try { haimiyaAudio.pause(); } catch (e) {}
+  }
+}
+
+function handleAppReturningForeground() {
+  // เมื่อผู้ใช้เปิดแอปกลับขึ้นมา
+  // ถ้าเดิมเพลงผ่อนคลายเปิดเล่นอยู่ และไม่ได้มีเพลงตัวอย่างค้างอยู่ ให้เล่นต่ออย่างราบรื่น
+  if (wasRelaxBgmPlayingBeforeBackground && isRelaxBgmEnabled && !isDuckMutedByPreview) {
+    try {
+      const audio = getRelaxBgmAudio();
+      audio.volume = RELAX_BGM_VOLUME;
+      audio.play().then(() => updateRelaxBgmUI(true)).catch(() => {});
+    } catch (e) {}
+  }
+  wasRelaxBgmPlayingBeforeBackground = false;
+  wasPreviewPlayingBeforeBackground = false;
+}
+
+// ดักจับเมื่อหน้าจอถูกพับ ย่อ สลับแท็บ หรือกดออกจากแอป
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) {
+    handleAppGoingBackground();
+  } else {
+    handleAppReturningForeground();
+  }
+});
+
+// ดักจับ Lifecycle Event ของ Capacitor / Cordova และ Mobile Browser
+window.addEventListener('pagehide', handleAppGoingBackground);
+document.addEventListener('pause', handleAppGoingBackground, false);
+document.addEventListener('resume', handleAppReturningForeground, false);
+
+// ดักจับ Capacitor App Native State (ถ้ามี)
+if (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.App) {
+  try {
+    window.Capacitor.Plugins.App.addListener('appStateChange', (state) => {
+      if (!state.isActive) {
+        handleAppGoingBackground();
+      } else {
+        handleAppReturningForeground();
+      }
+    });
+  } catch (e) {}
 }
 
 // ---- SPLASH GREETING: FLOATING JAPANESE TEXT ----

@@ -71,7 +71,7 @@ jobs:
           npx cap add android
           npx cap sync android
 
-          # ปลดล็อกระบบบล็อกเสียงใน Android WebView (setMediaPlaybackRequiresUserGesture = false)
+          # ปลดล็อกระบบบล็อกเสียงใน Android WebView และหยุดการทำงานเสียง/ตัวจับเวลาเมื่อกดออกจากแอป
           cat <<'EOF' > android/app/src/main/java/com/haimiya/typo/MainActivity.java
           package com.haimiya.typo;
 
@@ -89,6 +89,28 @@ jobs:
                       if (webView != null) {
                           WebSettings settings = webView.getSettings();
                           settings.setMediaPlaybackRequiresUserGesture(false);
+                      }
+                  } catch (Exception e) {}
+              }
+
+              @Override
+              protected void onPause() {
+                  super.onPause();
+                  try {
+                      WebView webView = getBridge().getWebView();
+                      if (webView != null) {
+                          webView.onPause();
+                      }
+                  } catch (Exception e) {}
+              }
+
+              @Override
+              protected void onResume() {
+                  super.onResume();
+                  try {
+                      WebView webView = getBridge().getWebView();
+                      if (webView != null) {
+                          webView.onResume();
                       }
                   } catch (Exception e) {}
               }
