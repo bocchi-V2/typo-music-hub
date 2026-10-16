@@ -4689,3 +4689,335 @@ header#hero {
     font-size: 0.76rem;
   }
 }
+
+/* ===================================
+   FLOATING RESIZABLE MINI-PLAYER
+   ป๊อปอัปย่อส่วนลอยได้ ปรับขนาดได้ แก้ปัญหาเสียงกระตุก 100%
+   =================================== */
+
+.floating-mini-player {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 290px;
+  min-width: 210px;
+  max-width: 90vw;
+  min-height: 110px;
+  max-height: 360px;
+  resize: both;
+  overflow: hidden;
+  z-index: 999990;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.94), rgba(30, 27, 75, 0.94));
+  backdrop-filter: blur(20px) saturate(1.8);
+  -webkit-backdrop-filter: blur(20px) saturate(1.8);
+  border: 1.5px solid rgba(56, 189, 248, 0.45);
+  border-radius: 16px;
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.65),
+    0 0 35px rgba(56, 189, 248, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  transition: box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.floating-mini-player:hover {
+  border-color: rgba(56, 189, 248, 0.7);
+  box-shadow: 
+    0 16px 50px rgba(0, 0, 0, 0.75),
+    0 0 45px rgba(56, 189, 248, 0.35);
+}
+
+.fmp-drag-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: grab;
+}
+
+.fmp-drag-header:active {
+  cursor: grabbing;
+}
+
+.fmp-title-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.fmp-badge {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  color: #38bdf8;
+  text-shadow: 0 0 8px rgba(56, 189, 248, 0.5);
+}
+
+.fmp-drag-hint {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 0.8rem;
+}
+
+.fmp-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.fmp-btn-icon {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  padding: 2px 6px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.15s ease;
+}
+
+.fmp-btn-icon:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.fmp-body {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px 12px;
+  flex: 1;
+}
+
+.fmp-cover-box {
+  position: relative;
+  width: 58px;
+  height: 58px;
+  min-width: 58px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.fmp-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.fmp-cover.spinning {
+  animation: fmpSpin 10s linear infinite;
+  border-radius: 50%;
+}
+
+@keyframes fmpSpin {
+  100% { transform: rotate(360deg); }
+}
+
+.fmp-play-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.1rem;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.fmp-cover-box:hover .fmp-play-overlay {
+  opacity: 1;
+}
+
+.fmp-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fmp-song-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #f8fafc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fmp-song-artist {
+  font-size: 0.72rem;
+  color: #94a3b8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fmp-progress-bar {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 3px 0;
+}
+
+.fmp-progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #38bdf8, #ec4899);
+  border-radius: 4px;
+  transition: width 0.1s linear;
+}
+
+.fmp-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fmp-ctrl-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 0.85rem;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.fmp-ctrl-btn:hover {
+  background: rgba(56, 189, 248, 0.25);
+  border-color: #38bdf8;
+  transform: scale(1.08);
+}
+
+.fmp-play-toggle {
+  background: #38bdf8;
+  color: #0f172a;
+  border-color: #38bdf8;
+  font-weight: 800;
+  width: 30px;
+  height: 30px;
+}
+
+.fmp-play-toggle:hover {
+  background: #7dd3fc;
+  color: #000;
+}
+
+.fmp-resize-grip {
+  position: absolute;
+  right: 2px;
+  bottom: 0px;
+  color: rgba(56, 189, 248, 0.5);
+  font-size: 0.75rem;
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* FLOATING MASCOT BUBBLE */
+.floating-mascot-bubble {
+  position: fixed;
+  bottom: 95px;
+  right: 20px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #38bdf8, #a855f7);
+  padding: 3px;
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.45);
+  cursor: pointer;
+  z-index: 999980;
+  animation: fmbFloat 3s ease-in-out infinite;
+  transition: transform 0.2s ease;
+}
+
+.floating-mascot-bubble:hover {
+  transform: scale(1.12);
+}
+
+@keyframes fmbFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.fmb-avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.fmb-note {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: #ec4899;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+/* BUTTON IN BOTTOM PLAYER */
+.btn-pip {
+  background: rgba(56, 189, 248, 0.15) !important;
+  color: #38bdf8 !important;
+  border: 1px solid rgba(56, 189, 248, 0.35) !important;
+  font-weight: 600;
+}
+
+.btn-pip:hover {
+  background: rgba(56, 189, 248, 0.3) !important;
+  color: #fff !important;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+}
+
+/* ANDROID PICTURE-IN-PICTURE BODY OVERRIDE */
+body.pip-mode {
+  background: #0f172a !important;
+  overflow: hidden !important;
+}
+
+body.pip-mode nav,
+body.pip-mode header,
+body.pip-mode main,
+body.pip-mode footer,
+body.pip-mode #bottom-player,
+body.pip-mode .hero {
+  display: none !important;
+}
+
+body.pip-mode .floating-mini-player {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  border-radius: 0 !important;
+  border: none !important;
+  resize: none !important;
+  display: flex !important;
+}
+

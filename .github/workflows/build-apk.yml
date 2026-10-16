@@ -107,30 +107,59 @@ jobs:
           node configure_android.js
 
           # ปลดล็อกระบบเสียงเบื้องหลัง (Background Audio) ให้เล่นต่อเนื่อง ไม่กระตุก เมื่อกดออกจากแอป และรองรับการกดดาวน์โหลด/ติดตั้ง APK ทันที
+          # ปลดล็อก Picture-in-Picture (PiP ป๊อปอัปย่อส่วนลอยได้ แก้เสียงกระตุก 100%) + ระบบแจ้งเตือนในเครื่องจริง (Heads-Up Push Notification)
           cat <<'EOF' > android/app/src/main/java/com/haimiya/typo/MainActivity.java
           package com.haimiya.typo;
 
           import android.os.Bundle;
           import android.os.PowerManager;
+          import android.os.Build;
+          import android.os.Handler;
+          import android.os.Looper;
           import android.content.Context;
           import android.content.Intent;
+          import android.content.SharedPreferences;
+          import android.content.res.Configuration;
           import android.net.Uri;
+          import android.app.NotificationChannel;
+          import android.app.NotificationManager;
+          import android.app.PendingIntent;
+          import android.app.PictureInPictureParams;
+          import android.util.Rational;
           import android.webkit.DownloadListener;
+          import android.webkit.JavascriptInterface;
           import android.webkit.WebSettings;
           import android.webkit.WebView;
+          import androidx.core.app.NotificationCompat;
+          import androidx.core.app.NotificationManagerCompat;
           import com.getcapacitor.BridgeActivity;
+
+          import java.io.BufferedReader;
+          import java.io.InputStreamReader;
+          import java.net.HttpURLConnection;
+          import java.net.URL;
+          import java.util.concurrent.Executors;
+          import java.util.concurrent.ScheduledExecutorService;
+          import java.util.concurrent.TimeUnit;
+          import org.json.JSONObject;
 
           public class MainActivity extends BridgeActivity {
               private PowerManager.WakeLock wakeLock;
+              private ScheduledExecutorService updateScheduler;
+              private static final String CHANNEL_ID = "haimiya_system_updates";
+              private static final int NOTIF_ID = 20261016;
+              public static int CURRENT_VERSION_CODE = 1792160500;
 
               @Override
               public void onCreate(Bundle savedInstanceState) {
                   super.onCreate(savedInstanceState);
+                  createNotificationChannel();
+
                   try {
                       PowerManager powerManager = (PowerManager) getSystemService(Context.POWER_SERVICE);
                       if (powerManager != null) {
                           wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "HaimiyaTypo::BgAudioWakeLock");
-                          wakeLock.acquire(12 * 60 * 60 * 1000L);
+                          wakeLock.acquire(24 * 60 * 60 * 1000L);
                       }
                   } catch (Exception e) {}
 
@@ -144,6 +173,9 @@ jobs:
                           settings.setAllowFileAccess(true);
                           settings.setAllowContentAccess(true);
 
+                          // เชื่อมต่อ JavaScript Bridge สำหรับโหมด PiP และการแจ้งเตือน
+                          webView.addJavascriptInterface(new WebAppInterface(this), "AndroidBridge");
+
                           // ดักจับการกดดาวน์โหลดไฟล์ .apk ให้เปิด Package Installer ทันที
                           webView.setDownloadListener(new DownloadListener() {
                               @Override
@@ -155,6 +187,140 @@ jobs:
                                   } catch (Exception ex) {}
                               }
                           });
+                      }
+                  } catch (Exception e) {}
+
+                  // เริ่มระบบตรวจสอบการอัปเดตในเบื้องหลัง แม้ไม่ได้เปิดแอป (Periodic Background Update Checker)
+                  startBackgroundUpdateChecker();
+              }
+
+              private void createNotificationChannel() {
+                  if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                      CharSequence name = "Haimiya Typo Updates";
+                      String description = "การแจ้งเตือนอัปเดตเพลงและแอปใหม่จาก Haimiya Typo";
+                      int importance = NotificationManager.IMPORTANCE_HIGH; // Heads-up notification banner
+                      NotificationChannel channel = new NotificationChannel(CHANNEL_ID, name, importance);
+                      channel.setDescription(description);
+                      channel.enableVibration(true);
+                      channel.setVibrationPattern(new long[]{0, 250, 150, 250});
+                      channel.setLockscreenVisibility(NotificationCompat.VISIBILITY_PUBLIC);
+
+                      NotificationManager notificationManager = getSystemService(NotificationManager.class);
+                      if (notificationManager != null) {
+                          notificationManager.createNotificationChannel(channel);
+                      }
+                  }
+              }
+
+              public void triggerSystemNotification(String title, String message, String actionUrl) {
+                  try {
+                      Intent intent;
+                      if (actionUrl != null && !actionUrl.isEmpty()) {
+                          intent = new Intent(Intent.ACTION_VIEW, Uri.parse(actionUrl));
+                      } else {
+                          intent = new Intent(this, MainActivity.class);
+                          intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                      }
+
+                      int flags = PendingIntent.FLAG_UPDATE_CURRENT;
+                      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                          flags |= PendingIntent.FLAG_IMMUTABLE;
+                      }
+                      PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, flags);
+
+                      int appIconRes = getApplicationInfo().icon;
+                      if (appIconRes == 0) appIconRes = android.R.drawable.ic_dialog_info;
+
+                      NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
+                              .setSmallIcon(appIconRes)
+                              .setContentTitle(title)
+                              .setContentText(message)
+                              .setStyle(new NotificationCompat.BigTextStyle().bigText(message))
+                              .setPriority(NotificationCompat.PRIORITY_HIGH)
+                              .setDefaults(NotificationCompat.DEFAULT_ALL)
+                              .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
+                              .setAutoCancel(true)
+                              .setContentIntent(pendingIntent);
+
+                      NotificationManagerCompat manager = NotificationManagerCompat.from(this);
+                      manager.notify(NOTIF_ID, builder.build());
+                  } catch (Exception e) {}
+              }
+
+              private void startBackgroundUpdateChecker() {
+                  if (updateScheduler != null && !updateScheduler.isShutdown()) return;
+                  updateScheduler = Executors.newSingleThreadScheduledExecutor();
+                  // ตรวจสอบทันทีหลังเปิดแอป 15 วินาที และตรวจซ้ำทุก 30 นาที
+                  updateScheduler.scheduleWithFixedDelay(this::checkRemoteUpdate, 15, 1800, TimeUnit.SECONDS);
+              }
+
+              private void checkRemoteUpdate() {
+                  try {
+                      URL url = new URL("https://raw.githubusercontent.com/bocchi-V2/typo-music-hub/master/version.json");
+                      HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                      conn.setRequestMethod("GET");
+                      conn.setConnectTimeout(8000);
+                      conn.setReadTimeout(8000);
+                      conn.setRequestProperty("Cache-Control", "no-cache");
+
+                      if (conn.getResponseCode() == 200) {
+                          BufferedReader reader = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+                          StringBuilder sb = new StringBuilder();
+                          String line;
+                          while ((line = reader.readLine()) != null) sb.append(line);
+                          reader.close();
+
+                          JSONObject json = new JSONObject(sb.toString());
+                          int remoteVersionCode = json.optInt("versionCode", 0);
+                          String remoteVersion = json.optString("version", "new");
+                          int songCount = json.optInt("songCount", 0);
+
+                          SharedPreferences prefs = getSharedPreferences("haimiya_prefs", Context.MODE_PRIVATE);
+                          int lastNotifiedCode = prefs.getInt("last_notified_code", CURRENT_VERSION_CODE);
+
+                          if (remoteVersionCode > CURRENT_VERSION_CODE && remoteVersionCode > lastNotifiedCode) {
+                              prefs.edit().putInt("last_notified_code", remoteVersionCode).apply();
+
+                              String title = "🚀 Haimiya Typo – มีอัปเดตใหม่!";
+                              String msg = "✨ อัปเดต v" + remoteVersion + " พร้อมแล้ว (เพลง " + songCount + " เพลง) — แตะเพื่ออัปเดตทันที";
+                              String dlUrl = "https://github.com/bocchi-V2/typo-music-hub/releases/latest/download/HaimiyaTypo.apk";
+
+                              new Handler(Looper.getMainLooper()).post(() -> {
+                                  triggerSystemNotification(title, msg, dlUrl);
+                              });
+                          }
+                      }
+                      conn.disconnect();
+                  } catch (Exception e) {}
+              }
+
+              // Picture-in-Picture: เมื่อกดปุ่ม Home หรือออกจากแอป ให้กลายเป็นป๊อปอัปเล็กๆ ลอยบนหน้าจออัตโนมัติ
+              @Override
+              protected void onUserLeaveHint() {
+                  super.onUserLeaveHint();
+                  enterAppPictureInPicture();
+              }
+
+              public void enterAppPictureInPicture() {
+                  try {
+                      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                          PictureInPictureParams.Builder pipBuilder = new PictureInPictureParams.Builder();
+                          // อัตราส่วนหน้าต่างป๊อปอัปแนวตั้งกะทัดรัด (9:16)
+                          Rational aspectRatio = new Rational(9, 16);
+                          pipBuilder.setAspectRatio(aspectRatio);
+                          enterPictureInPictureMode(pipBuilder.build());
+                      }
+                  } catch (Exception e) {}
+              }
+
+              @Override
+              public void onPictureInPictureModeChanged(boolean isInPictureInPictureMode, Configuration newConfig) {
+                  super.onPictureInPictureModeChanged(isInPictureInPictureMode, newConfig);
+                  try {
+                      WebView webView = getBridge().getWebView();
+                      if (webView != null) {
+                          String script = "if (window.setPipUIMode) window.setPipUIMode(" + isInPictureInPictureMode + ");";
+                          webView.evaluateJavascript(script, null);
                       }
                   } catch (Exception e) {}
               }
@@ -175,7 +341,6 @@ jobs:
               @Override
               public void onStop() {
                   super.onStop();
-                  // ป้องกัน Android ปิด audio stream เมื่อกดออกจากแอปหรือล็อกหน้าจอ
                   try {
                       WebView webView = getBridge().getWebView();
                       if (webView != null) {
@@ -201,16 +366,36 @@ jobs:
               public void onDestroy() {
                   super.onDestroy();
                   try {
-                      if (wakeLock != null && wakeLock.isHeld()) {
-                          wakeLock.release();
-                      }
+                      if (wakeLock != null && wakeLock.isHeld()) wakeLock.release();
+                      if (updateScheduler != null) updateScheduler.shutdown();
                   } catch (Exception e) {}
+              }
+
+              public class WebAppInterface {
+                  Context mContext;
+                  WebAppInterface(Context c) { mContext = c; }
+
+                  @JavascriptInterface
+                  public void enterPip() {
+                      new Handler(Looper.getMainLooper()).post(() -> enterAppPictureInPicture());
+                  }
+
+                  @JavascriptInterface
+                  public void showSystemNotification(String title, String message, String actionUrl) {
+                      new Handler(Looper.getMainLooper()).post(() -> triggerSystemNotification(title, message, actionUrl));
+                  }
+
+                  @JavascriptInterface
+                  public boolean isPipSupported() {
+                      return Build.VERSION.SDK_INT >= Build.VERSION_CODES.O;
+                  }
               }
           }
           EOF
 
-          # เพิ่มสิทธิ์ WAKE_LOCK และ FOREGROUND_SERVICE ใน AndroidManifest.xml เพื่อการเล่นเพลงเบื้องหลังที่เสถียร
-          sed -i 's/<\/manifest>/    <uses-permission android:name="android.permission.WAKE_LOCK" \/>\n    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" \/>\n<\/manifest>/g' android/app/src/main/AndroidManifest.xml
+          # เพิ่มสิทธิ์ WAKE_LOCK, FOREGROUND_SERVICE, POST_NOTIFICATIONS, INTERNET และตั้งค่า Picture-in-Picture ใน AndroidManifest.xml
+          sed -i 's/<\/manifest>/    <uses-permission android:name="android.permission.WAKE_LOCK" \/>\n    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" \/>\n    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" \/>\n    <uses-permission android:name="android.permission.INTERNET" \/>\n    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" \/>\n<\/manifest>/g' android/app/src/main/AndroidManifest.xml
+          sed -i 's/<activity android:name="com.haimiya.typo.MainActivity"/<activity android:name="com.haimiya.typo.MainActivity" android:supportsPictureInPicture="true" android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation" android:resizeableActivity="true"/g' android/app/src/main/AndroidManifest.xml
 
       - name: 🎨 ตั้งค่าไอคอนแอป (App Icon)
         run: |
