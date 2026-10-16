@@ -140,7 +140,8 @@ function runAudit() {
 
   // 1. ตรวจสอบ 18+ ในอนิเมะ (ห้ามมีเนื้อหา 18+, เฮนไท, เอจจิ, ลามก เด็ดขาด 100%)
   ANIMES.forEach(a => {
-    const text = `${a.name} ${a.nameTH || ''} ${(a.genre || []).join(' ')} ${a.synopsis || ''}`.toLowerCase();
+    const genreStr = Array.isArray(a.genre) ? a.genre.join(' ') : (a.genre || '');
+    const text = `${a.name} ${a.nameTH || ''} ${genreStr} ${a.synopsis || a.desc || ''}`.toLowerCase();
     const matched = check18Plus(text);
     if (matched) {
       console.warn(`❌ พบคำต้องห้าม 18+ ในอนิเมะ ID ${a.id} (${a.name}): "${matched}"`);
