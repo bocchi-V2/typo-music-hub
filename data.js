@@ -5889,6 +5889,32 @@ const ANIMES = [
     "mood": "hype",
     "desc": "โมโมะ สาวมัธยมที่เชื่อเรื่องผี และโอคารุน หนุ่มเนิร์ดที่เชื่อเรื่องเอเลี่ยน ต้องร่วมมือกันต่อสู้กับสิ่งลี้ลับสุดพิศดาร",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/47833/original.jpg"
+  },
+  {
+    "id": 418,
+    "name": "Nisemonogatari",
+    "nameTH": "Nisemonogatari",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6546/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/6546/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Nisemonogatari",
+    "mood": "hype"
+  },
+  {
+    "id": 419,
+    "name": "Barakamon",
+    "nameTH": "Barakamon",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8026/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/8026/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Barakamon",
+    "mood": "hype"
   }
 ];
 
@@ -76514,6 +76540,81 @@ const SONGS = [
     "typoIdea": "ใช้ฟอนต์ Impact จัดจ้าน สีแดง/ส้มนีออน กระตุกสั่นตามจังหวะกลองและดรอป มี Glitch Effect สะบัด",
     "audioUrl": "https://cdnt-preview.dzcdn.net/api/1/1/1/f/1/0/1f1a720999cf719b3739d4c588d82d39.mp3?hdnea=exp=1792163024~acl=/api/1/1/1/f/1/0/1f1a720999cf719b3739d4c588d82d39.mp3*~data=user_id=0,application_id=42~hmac=0a7cbaf6156f694d8dcebb1a29ea44b0a16dff73836c92e398bd2d3608992fe8",
     "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/4e/76/ce4e767e-eaff-7ff6-7ae8-f9e02c42fa97/mzaf_8190763396037790306.plus.aac.p.m4a"
+  },
+  {
+    "id": 3021,
+    "title": "Uraraka",
+    "artist": "Da-iCE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/99/27/1d/99271d70-4bc4-c7f9-5efc-d85d0de3a276/ANTCD-A0000021068.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4e/21/e3/4e21e3a7-3162-bc69-985c-658ea1cad9b4/mzaf_8188692877296719167.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Uraraka%20Da-iCE",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 410,
+    "animeMatch": [
+      410
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Kono Subarashii Sekai ni Shukufuku wo! OVA",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 3022,
+    "title": "藍二乗",
+    "artist": "Yorushika",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/64/ab/ba/64abba45-d080-0e8a-c24b-313e597c63cb/PA00076158_0_91679_jacket.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d9/dc/d9/d9dcd9ea-f09d-ca08-bb1b-bf4ebd630ede/mzaf_6254279233344660048.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E8%97%8D%E4%BA%8C%E4%B9%97%20Yorushika",
+    "mood": "hype",
+    "tags": [
+      "มันส์สะใจ",
+      "บีทกระแทก",
+      "ไวรัล",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "jp",
+    "animeId": 99,
+    "animeMatch": [
+      99
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Maquia: When the Promised Flower Blooms",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "id": 3023,
+    "title": "KOYSAR",
+    "artist": "Kings of Leon",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c2/84/79/c2847988-ab33-0de8-0dc3-ebf0c6cbd0b4/00823375343684_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/74/bd/c5/74bdc572-0f05-9f48-487e-3e7b575c1eab/mzaf_4126106322779787554.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/KOYSAR%20Kings%20of%20Leon",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตUS"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 183,
+    "animeMatch": [
+      183
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ 5 Centimeters per Second",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
   }
 ];
 
@@ -82353,5 +82454,29 @@ const ANIME_PAIRS = [
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d9/80/8e/d9808ee9-1e6c-9a58-91c0-0cc5e63b1d64/25UMGIM81991.rgb.jpg/600x600bb.jpg",
     "songId": 1829,
     "animeId": 183
+  },
+  {
+    "songId": 3021,
+    "animeId": 410,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Kono Subarashii Sekai ni Shukufuku wo! OVA",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 3022,
+    "animeId": 99,
+    "category": "hype",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Maquia: When the Promised Flower Blooms",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "songId": 3023,
+    "animeId": 183,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ 5 Centimeters per Second",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
   }
 ];
