@@ -148,7 +148,7 @@ jobs:
               private ScheduledExecutorService updateScheduler;
               private static final String CHANNEL_ID = "haimiya_system_updates";
               private static final int NOTIF_ID = 20261016;
-              public static int CURRENT_VERSION_CODE = 1792160500;
+              public static int CURRENT_VERSION_CODE = 1792161000;
 
               @Override
               public void onCreate(Bundle savedInstanceState) {
@@ -308,6 +308,9 @@ jobs:
                           // อัตราส่วนหน้าต่างป๊อปอัปแนวตั้งกะทัดรัด (9:16)
                           Rational aspectRatio = new Rational(9, 16);
                           pipBuilder.setAspectRatio(aspectRatio);
+                          if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                              pipBuilder.setAutoEnterEnabled(true);
+                          }
                           enterPictureInPictureMode(pipBuilder.build());
                       }
                   } catch (Exception e) {}
@@ -354,6 +357,14 @@ jobs:
               public void onResume() {
                   super.onResume();
                   try {
+                      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                          PictureInPictureParams.Builder pipBuilder = new PictureInPictureParams.Builder();
+                          pipBuilder.setAspectRatio(new Rational(9, 16));
+                          pipBuilder.setAutoEnterEnabled(true);
+                          setPictureInPictureParams(pipBuilder.build());
+                      }
+                  } catch (Exception e) {}
+                  try {
                       WebView webView = getBridge().getWebView();
                       if (webView != null) {
                           webView.resumeTimers();
@@ -381,6 +392,11 @@ jobs:
                   }
 
                   @JavascriptInterface
+                  public void enterPiP() {
+                      new Handler(Looper.getMainLooper()).post(() -> enterAppPictureInPicture());
+                  }
+
+                  @JavascriptInterface
                   public void showSystemNotification(String title, String message, String actionUrl) {
                       new Handler(Looper.getMainLooper()).post(() -> triggerSystemNotification(title, message, actionUrl));
                   }
@@ -395,7 +411,7 @@ jobs:
 
           # เพิ่มสิทธิ์ WAKE_LOCK, FOREGROUND_SERVICE, POST_NOTIFICATIONS, INTERNET และตั้งค่า Picture-in-Picture ใน AndroidManifest.xml
           sed -i 's/<\/manifest>/    <uses-permission android:name="android.permission.WAKE_LOCK" \/>\n    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" \/>\n    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" \/>\n    <uses-permission android:name="android.permission.INTERNET" \/>\n    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" \/>\n<\/manifest>/g' android/app/src/main/AndroidManifest.xml
-          sed -i 's/<activity android:name="com.haimiya.typo.MainActivity"/<activity android:name="com.haimiya.typo.MainActivity" android:supportsPictureInPicture="true" android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation" android:resizeableActivity="true"/g' android/app/src/main/AndroidManifest.xml
+          sed -i 's/<activity /<activity android:supportsPictureInPicture="true" android:resizeableActivity="true" /g' android/app/src/main/AndroidManifest.xml
 
       - name: 🎨 ตั้งค่าไอคอนแอป (App Icon)
         run: |
