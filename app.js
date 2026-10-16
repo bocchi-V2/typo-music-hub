@@ -2677,8 +2677,8 @@ function initSplashScreen() {
 //  ระบบซิงค์เพลง/อนิเมะสดอัตโนมัติ และอัปเดตแอป APK ทับของเดิมได้ 100% ไม่ต้องลบแอปเก่า
 // ============================================
 
-const CURRENT_APP_VERSION = 'v2.20261016.15';
-const CURRENT_VERSION_CODE = 1792136153;
+const CURRENT_APP_VERSION = 'v2.20261016.16';
+const CURRENT_VERSION_CODE = 1792136947;
 const GITHUB_REPO_OWNER = 'bocchi-V2';
 const GITHUB_REPO_NAME = 'typo-music-hub';
 const GITHUB_PAGES_BASE = 'https://bocchi-v2.github.io/typo-music-hub';
@@ -2836,62 +2836,94 @@ async function checkLiveContentUpdate() {
   }
 }
 
-// 3. ตรวจสอบเวอร์ชันไฟล์ APK จาก GitHub Releases เพื่อแจ้งเตือนให้อัปเดต
+// 3. ตรวจสอบเวอร์ชันและแจ้งเตือนอัปเดตทุกเวอร์ชัน (ทั้งในแอปและบนเว็บ)
 async function checkApkAppUpdate(isManualTrigger = false) {
   if (!navigator.onLine) return;
-  const isNativeApp = window.Capacitor && typeof window.Capacitor.isNativePlatform === 'function' && window.Capacitor.isNativePlatform();
-
-  // ไม่แสดงแบนเนอร์แจ้งเตือน APK บนหน้าเว็บบราวเซอร์โดยอัตโนมัติ (แสดงเฉพาะในแอป Android หรือเมื่อกดตรวจสอบด้วยตนเอง)
-  if (!isNativeApp && !isManualTrigger) return;
   if (!isManualTrigger && sessionStorage.getItem('dismissed_apk_banner') === 'true') return;
 
-  try {
-    const res = await fetch(`https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/releases/latest`, {
-      headers: { 'Accept': 'application/vnd.github.v3+json' }
-    });
-    if (!res.ok) return;
-    const release = await res.json();
-    if (!release || !release.tag_name) return;
+  const isNativeApp = window.Capacitor && typeof window.Capacitor.isNativePlatform === 'function' && window.Capacitor.isNativePlatform();
 
-    // ตรวจสอบกับ version.json เพื่อดู versionCode ตัวเลขจริง
-    let remoteCode = 0;
+  try {
+    let remoteVersionData = null;
     try {
       const vRes = await fetch(`${GITHUB_RAW_BASE}/version.json?_t=${Date.now()}`);
-      if (vRes.ok) {
-        const vData = await vRes.json();
-        remoteCode = vData.versionCode || 0;
-      }
+      if (vRes.ok) remoteVersionData = await vRes.json();
     } catch (ve) {}
 
-    const hasNewerVersion = (remoteCode > CURRENT_VERSION_CODE) || (isManualTrigger && release.tag_name !== CURRENT_APP_VERSION);
+    const remoteCode = remoteVersionData?.versionCode || 0;
+    const remoteVersionTag = remoteVersionData?.version ? `v${remoteVersionData.version}` : '';
+    const remoteSongs = remoteVersionData?.songCount || 0;
 
-    if (hasNewerVersion && !release.draft && !release.prerelease) {
+    // ตรวจสอบ Release ล่าสุดจาก GitHub
+    let release = null;
+    try {
+      const res = await fetch(`https://api.github.com/repos/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/releases/latest`, {
+        headers: { 'Accept': 'application/vnd.github.v3+json' }
+      });
+      if (res.ok) release = await res.json();
+    } catch (re) {}
+
+    const releaseTag = release?.tag_name || remoteVersionTag;
+    const hasNewerVersion = (remoteCode > CURRENT_VERSION_CODE) || 
+                            (release && releaseTag && releaseTag !== CURRENT_APP_VERSION) ||
+                            (isManualTrigger && remoteCode !== CURRENT_VERSION_CODE);
+
+    if (hasNewerVersion && (!release || (!release.draft && !release.prerelease))) {
       const banner = document.getElementById('in-app-update-banner');
       const titleEl = document.getElementById('update-banner-title');
       const descEl = document.getElementById('update-banner-desc');
       const btnEl = document.getElementById('btn-banner-update');
 
       if (banner && titleEl) {
-        titleEl.textContent = currentAppLang === 'th'
-          ? `มีอัปเดต Haimiya Typo (${release.tag_name}) พร้อมใช้งาน!`
-          : `New Haimiya Typo (${release.tag_name}) is available!`;
-        if (descEl) {
-          descEl.textContent = currentAppLang === 'th'
-            ? 'ติดตั้งทับเวอร์ชันเดิมได้ทันที 100% โดยไม่ต้องถอนการติดตั้ง ข้อมูลไม่หาย'
-            : 'Install directly over existing app without uninstalling. Data preserved.';
-        }
-        if (btnEl) {
-          const apkAsset = (release.assets || []).find(a => a.name.endsWith('.apk'));
-          const apkUrl = (apkAsset && apkAsset.browser_download_url) ? apkAsset.browser_download_url : `https://github.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/releases/latest/download/HaimiyaTypo.apk`;
-          btnEl.href = apkUrl;
-          btnEl.onclick = (e) => {
-            showToast(currentAppLang === 'th' ? '🚀 กำลังเริ่มดาวน์โหลดไฟล์อัปเดตเพื่อติดตั้งทันที...' : '🚀 Downloading update...');
-          };
+        if (isNativeApp) {
+          titleEl.textContent = currentAppLang === 'th'
+            ? `🚀 มีอัปเดตแอป APK ใหม่ (${releaseTag || CURRENT_APP_VERSION})!`
+            : `🚀 New APK update (${releaseTag || CURRENT_APP_VERSION}) is ready!`;
+          if (descEl) {
+            descEl.textContent = currentAppLang === 'th'
+              ? `อัปเดตคลังเพลงใหม่รวม ${remoteSongs || SONGS.length} เพลง — ติดตั้งทับแอปเดิมได้ทันที 100% ข้อมูลไม่หาย`
+              : `Updated to ${remoteSongs || SONGS.length} songs. Install over existing app without losing data.`;
+          }
+          if (btnEl) {
+            const apkAsset = (release?.assets || []).find(a => a.name.endsWith('.apk'));
+            const apkUrl = (apkAsset && apkAsset.browser_download_url) ? apkAsset.browser_download_url : `https://github.com/${GITHUB_REPO_OWNER}/${GITHUB_REPO_NAME}/releases/latest/download/HaimiyaTypo.apk`;
+            btnEl.href = apkUrl;
+            btnEl.innerHTML = '⚡ ดาวน์โหลดและติดตั้งอัปเดต (APK)';
+            btnEl.onclick = () => {
+              showToast(currentAppLang === 'th' ? '🚀 กำลังเริ่มดาวน์โหลดไฟล์อัปเดตเพื่อติดตั้งทันที...' : '🚀 Downloading update...');
+            };
+          }
+        } else {
+          // บนเว็บบราวเซอร์ / PWA
+          titleEl.textContent = currentAppLang === 'th'
+            ? `🎉 มีอัปเดตเวอร์ชันใหม่ (${releaseTag || remoteVersionTag || CURRENT_APP_VERSION})!`
+            : `🎉 New version (${releaseTag || remoteVersionTag || CURRENT_APP_VERSION}) is available!`;
+          if (descEl) {
+            descEl.textContent = currentAppLang === 'th'
+              ? `เพิ่มเพลงฮิต 2026 ใหม่ล่าสุดรวม ${remoteSongs || SONGS.length} เพลง! กดรีเฟรชเพื่อเริ่มใช้งานทันที`
+              : `Added new 2026 trending tracks (${remoteSongs || SONGS.length} songs)! Click refresh to load now.`;
+          }
+          if (btnEl) {
+            btnEl.href = '#';
+            btnEl.innerHTML = '🔄 รีเฟรชเพื่ออัปเดตทันที';
+            btnEl.onclick = (e) => {
+              e.preventDefault();
+              showToast(currentAppLang === 'th' ? '⚡ กำลังรีเฟรชเพื่อโหลดเวอร์ชันล่าสุด...' : '⚡ Reloading latest version...');
+              if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.getRegistrations().then(regs => {
+                  for (let r of regs) r.update();
+                }).catch(() => {});
+              }
+              setTimeout(() => {
+                window.location.reload(true);
+              }, 400);
+            };
+          }
         }
         banner.style.display = 'block';
       }
     } else if (isManualTrigger) {
-      showToast(currentAppLang === 'th' ? '✨ คุณกำลังใช้งาน Haimiya Typo เวอร์ชันล่าสุดแล้วครับ!' : '✨ You are on the latest version!');
+      showToast(currentAppLang === 'th' ? `✨ คุณกำลังใช้งาน Haimiya Typo เวอร์ชันล่าสุดแล้วครับ! (${SONGS.length} เพลง)` : `✨ You are on the latest version! (${SONGS.length} songs)`);
     }
   } catch (e) {
     console.warn('⚠️ checkApkAppUpdate:', e);
