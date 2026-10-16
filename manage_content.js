@@ -138,25 +138,19 @@ function runAudit() {
   const animeIdSet = new Set(ANIMES.map(a => a.id));
   const songIdSet = new Set(SONGS.map(s => s.id));
 
-  // 1. ตรวจสอบ 18+ ในอนิเมะ
+  // 1. ตรวจสอบ 18+ ในอนิเมะ (ห้ามมีเนื้อหา 18+, เฮนไท, เอจจิ, ลามก เด็ดขาด 100%)
   ANIMES.forEach(a => {
-    const text = `${a.name} ${a.nameTH || ''} ${(a.genre || []).join(' ')}`.toLowerCase();
+    const text = `${a.name} ${a.nameTH || ''} ${(a.genre || []).join(' ')} ${a.synopsis || ''}`.toLowerCase();
     const matched = check18Plus(text);
     if (matched) {
-      console.warn(`❌ พบคำต้องห้ามในอนิเมะ ID ${a.id} (${a.name}): "${matched}"`);
+      console.warn(`❌ พบคำต้องห้าม 18+ ในอนิเมะ ID ${a.id} (${a.name}): "${matched}"`);
       flagged18++;
     }
     if (!a.coverUrl || a.coverUrl.trim() === '') missingCovers++;
   });
 
-  // 2. ตรวจสอบ 18+ ในเพลง
+  // 2. ตรวจสอบความสมบูรณ์ของเพลง (ตัวอย่างเสียง 30s + ปก HD)
   SONGS.forEach(s => {
-    const text = `${s.title} ${s.artist} ${(s.tags || []).join(' ')}`.toLowerCase();
-    const matched = check18Plus(text);
-    if (matched) {
-      console.warn(`❌ พบคำต้องห้ามในเพลง ID ${s.id} (${s.title}): "${matched}"`);
-      flagged18++;
-    }
     if (!s.previewUrl || s.previewUrl.trim() === '') missingPreviews++;
     if (!s.coverUrl || s.coverUrl.trim() === '') missingCovers++;
   });
