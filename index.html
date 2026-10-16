@@ -64,6 +64,8 @@
         <a href="#" class="nav-link active-nav" onclick="switchStudioWorkspace('th', true); return false;" data-i18n="zoneTh">🇹🇭 เพลงไทย</a>
         <a href="#" class="nav-link" onclick="switchStudioWorkspace('en', true); return false;" data-i18n="zoneEn">🇬🇧 เพลงสากล</a>
         <a href="#" class="nav-link" onclick="switchStudioWorkspace('jp', true); return false;" data-i18n="zoneJp">🇯🇵 เพลงญี่ปุ่น/อนิเมะ</a>
+        <a href="#" class="nav-link" onclick="switchStudioWorkspace('lao', true); return false;" data-i18n="zoneLao">🇱🇦 เพลงลาว</a>
+        <a href="#" class="nav-link" onclick="switchStudioWorkspace('kr', true); return false;" data-i18n="zoneKr">🇰🇷 K-Pop</a>
         <a href="#" class="nav-link" onclick="switchStudioWorkspace('pairs', true); return false;" data-i18n="navAnimeMatch">🌸 จับคู่อนิเมะ</a>
         <a href="#" class="nav-link" onclick="switchStudioWorkspace('versus', true); return false;" data-i18n="navVersus">⚔️ โหวตเพลง</a>
         <a href="#" class="nav-link nav-saved-btn" onclick="switchStudioWorkspace('saved', true); return false;">
@@ -149,8 +151,8 @@
     </div>
     <div class="stat-divider"></div>
     <div class="stat-item">
-      <span class="stat-num">3</span>
-      <span class="stat-label" data-i18n="statZones">โซนภาษา (ไทย / สากล / ญี่ปุ่น)</span>
+      <span class="stat-num">5</span>
+      <span class="stat-label" data-i18n="statZones">5 โซนภาษา (ไทย / สากล / ญี่ปุ่น / ลาว / K-Pop)</span>
     </div>
     <div class="stat-divider"></div>
     <div class="stat-item">
@@ -197,6 +199,20 @@
         <span class="sz-text">
           <strong class="sz-title" data-i18n="zoneJp">โซนเพลงญี่ปุ่น / อนิเมะ</strong>
           <small class="sz-sub" id="sz-sub-jp">152 เพลง</small>
+        </span>
+      </button>
+      <button class="studio-zone-tab" data-ws="lao" onclick="switchStudioWorkspace('lao')">
+        <span class="sz-icon">🇱🇦</span>
+        <span class="sz-text">
+          <strong class="sz-title" data-i18n="zoneLao">โซนเพลงลาว / อีสาน</strong>
+          <small class="sz-sub" id="sz-sub-lao">30 เพลง</small>
+        </span>
+      </button>
+      <button class="studio-zone-tab" data-ws="kr" onclick="switchStudioWorkspace('kr')">
+        <span class="sz-icon">🇰🇷</span>
+        <span class="sz-text">
+          <strong class="sz-title" data-i18n="zoneKr">โซนเพลง K-Pop / เกาหลี</strong>
+          <small class="sz-sub" id="sz-sub-kr">6 เพลง</small>
         </span>
       </button>
       <button class="studio-zone-tab" data-ws="pairs" onclick="switchStudioWorkspace('pairs')">

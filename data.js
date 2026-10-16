@@ -39494,6 +39494,1146 @@ const SONGS = [
     "spotifyUrl": "https://open.spotify.com/track/3e6ZmmMHtwiJla27wlR9kO",
     "animeId": 123,
     "previewUrl": "https://p.scdn.co/mp3-preview/77cffb9057120e5eb9df5b4a61d72f5553f09b85"
+  },
+  {
+    "id": 1532,
+    "title": "ສັນຍາບ່ອນໃດ (Sanya Bon Dai)",
+    "artist": "ก้อง ห้วยไร่",
+    "lang": "lao",
+    "mood": "sad",
+    "bpm": "ช้า (72 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "อีสาน",
+      "คิดถึง"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2b/a6/1a/2ba61a9a-d777-5a60-9f13-0abbe100e7b2/888332886055.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/สัญญาบ่อนใด%20ก้อง%20ห้วยไร่",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/13/2a/80132abc-3314-4031-b275-68d2a1c9f49f/mzaf_4827305836911106149.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/13/2a/80132abc-3314-4031-b275-68d2a1c9f49f/mzaf_4827305836911106149.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/13/2a/80132abc-3314-4031-b275-68d2a1c9f49f/mzaf_4827305836911106149.plus.aac.p.m4a",
+    "animeId": 1
+  },
+  {
+    "id": 1533,
+    "title": "ບ່ຮູ້ວ່າໃຜ (Bor Hu Wa Phai)",
+    "artist": "ก้อง ห้วยไร่",
+    "lang": "lao",
+    "mood": "sad",
+    "bpm": "ช้า (78 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "อีสาน",
+      "เศร้า"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2b/a6/1a/2ba61a9a-d777-5a60-9f13-0abbe100e7b2/888332886055.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/บ่ฮู้ว่าใผ%20ก้อง%20ห้วยไร่",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/13/2a/80132abc-3314-4031-b275-68d2a1c9f49f/mzaf_4827305836911106149.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/13/2a/80132abc-3314-4031-b275-68d2a1c9f49f/mzaf_4827305836911106149.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/13/2a/80132abc-3314-4031-b275-68d2a1c9f49f/mzaf_4827305836911106149.plus.aac.p.m4a",
+    "animeId": 3
+  },
+  {
+    "id": 1534,
+    "title": "ຄິດນຳບໍ (Kit Num Bor)",
+    "artist": "Alexandra",
+    "lang": "lao",
+    "mood": "love",
+    "bpm": "กลาง (95 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "ป็อบลาว",
+      "รักหวาน"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7b/65/d3/7b65d37c-44dc-d96f-be55-ef0db3483c42/24UMGIM05250.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/คิดนำบ่%20Alexandra",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5a/05/45/5a0545c6-3228-e07d-a983-b5f5cfe5cf1e/mzaf_13839737125323608593.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5a/05/45/5a0545c6-3228-e07d-a983-b5f5cfe5cf1e/mzaf_13839737125323608593.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5a/05/45/5a0545c6-3228-e07d-a983-b5f5cfe5cf1e/mzaf_13839737125323608593.plus.aac.p.m4a",
+    "animeId": 2
+  },
+  {
+    "id": 1535,
+    "title": "ຂໍໂທດ (Khor Thot)",
+    "artist": "Cells",
+    "lang": "lao",
+    "mood": "sad",
+    "bpm": "ช้า (70 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "ขอโทษ",
+      "เจ็บปวด"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/c2/a0/cb/c2a0cbdb-efef-ab34-494a-ece74fda1cfe/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/ขอโทด%20Cells%20Lao",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8f/7f/16/8f7f16bc-4a83-b59e-5129-c191e8413613/mzaf_5086122907317826490.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8f/7f/16/8f7f16bc-4a83-b59e-5129-c191e8413613/mzaf_5086122907317826490.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8f/7f/16/8f7f16bc-4a83-b59e-5129-c191e8413613/mzaf_5086122907317826490.plus.aac.p.m4a",
+    "animeId": 18
+  },
+  {
+    "id": 1536,
+    "title": "ໃຈຮ້າຍ (Jai Hai)",
+    "artist": "Lao Stoner",
+    "lang": "lao",
+    "mood": "sad",
+    "bpm": "ช้า (68 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "ใจร้าย",
+      "เศร้า"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c2/13/f7/c213f7fe-d7dc-91f5-27ba-075c152120a3/074646768525.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/ใจฮ้าย%20Lao%20Stoner",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ec/ba/a4/ecbaa46d-f4b4-f42f-1a73-ddd6940fe70b/mzaf_11029564969896829872.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ec/ba/a4/ecbaa46d-f4b4-f42f-1a73-ddd6940fe70b/mzaf_11029564969896829872.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ec/ba/a4/ecbaa46d-f4b4-f42f-1a73-ddd6940fe70b/mzaf_11029564969896829872.plus.aac.p.m4a",
+    "animeId": 9
+  },
+  {
+    "id": 1537,
+    "title": "ບໍ່ເປັນຫຍັງ (Bor Pen Nyang)",
+    "artist": "Aluna",
+    "lang": "lao",
+    "mood": "chill",
+    "bpm": "กลาง (88 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "ไม่เป็นหยัง",
+      "ชิลล์"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/11/24/671124b5-7b83-672c-46fc-92245524db3d/00198704643033_Cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/บ่เป็นหยัง%20Aluna%20Lao",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a4/2c/84/a42c8416-5263-fd48-7db6-841b9caa8773/mzaf_14711802372851084172.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a4/2c/84/a42c8416-5263-fd48-7db6-841b9caa8773/mzaf_14711802372851084172.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a4/2c/84/a42c8416-5263-fd48-7db6-841b9caa8773/mzaf_14711802372851084172.plus.aac.p.m4a",
+    "animeId": 5
+  },
+  {
+    "id": 1538,
+    "title": "ຮັກເຈົ້າຫຼາຍ (Huk Jao Lai)",
+    "artist": "TP Sakorn",
+    "lang": "lao",
+    "mood": "love",
+    "bpm": "กลาง (92 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "ฮักเจ้าหลาย",
+      "รักมาก"
+    ],
+    "coverUrl": "https://anifume.com/images/48/Horimiya-Piece.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/ฮักเจ้าหลาย%20TP%20Sakorn",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "animeId": 14
+  },
+  {
+    "id": 1539,
+    "title": "ອ້າຍບໍ່ຫຼໍ (Ai Bor Lor)",
+    "artist": "ก้อง ห้วยไร่",
+    "lang": "lao",
+    "mood": "chill",
+    "bpm": "กลาง (100 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "ไม่หล่อ",
+      "ตลก"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2b/a6/1a/2ba61a9a-d777-5a60-9f13-0abbe100e7b2/888332886055.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/อ้ายบ่หล่อ%20ก้อง%20ห้วยไร่",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/13/2a/80132abc-3314-4031-b275-68d2a1c9f49f/mzaf_4827305836911106149.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/13/2a/80132abc-3314-4031-b275-68d2a1c9f49f/mzaf_4827305836911106149.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/13/2a/80132abc-3314-4031-b275-68d2a1c9f49f/mzaf_4827305836911106149.plus.aac.p.m4a",
+    "animeId": 2
+  },
+  {
+    "id": 1540,
+    "title": "ຈືນຈົ່ມ (Jun Jom)",
+    "artist": "Pheng Lao Band",
+    "lang": "lao",
+    "mood": "hype",
+    "bpm": "เร็ว (128 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "สนุก",
+      "ปาร์ตี้"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/4397/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/จืนจ่ม%20Pheng%20Lao",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "animeId": 20
+  },
+  {
+    "id": 1541,
+    "title": "ສາວສວຍ (Sao Suay)",
+    "artist": "Ketsana",
+    "lang": "lao",
+    "mood": "love",
+    "bpm": "กลาง (96 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "สาวสวย",
+      "โรแมนติก"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/64/fc/37/64fc3745-b102-be78-3f89-06a35f103398/859730346403_cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/สาวสวย%20Ketsana%20Lao",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cf/08/a0/cf08a098-6d8e-9f65-91f7-2ab85cabd2c8/mzaf_9919067151755462214.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cf/08/a0/cf08a098-6d8e-9f65-91f7-2ab85cabd2c8/mzaf_9919067151755462214.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cf/08/a0/cf08a098-6d8e-9f65-91f7-2ab85cabd2c8/mzaf_9919067151755462214.plus.aac.p.m4a",
+    "animeId": 14
+  },
+  {
+    "id": 1542,
+    "title": "ສິ້ນສຸດ (Sin Sut)",
+    "artist": "Takkatan Chonlathee",
+    "lang": "lao",
+    "mood": "sad",
+    "bpm": "ช้า (74 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "สิ้นสุด",
+      "จบรัก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8403/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/สิ้นสุด%20ตั๊กแตน%20ชลธี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "animeId": 1
+  },
+  {
+    "id": 1543,
+    "title": "ຮັກແພງ (Huk Phaeng)",
+    "artist": "Takkatan Chonlathee",
+    "lang": "lao",
+    "mood": "love",
+    "bpm": "กลาง (90 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "รักแพง",
+      "คนอีสาน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/12230/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/ฮักแพง%20ตั๊กแตน%20ชลธี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "animeId": 3
+  },
+  {
+    "id": 1544,
+    "title": "ວິນລົມ (Win Lom)",
+    "artist": "Lao Pop Stars",
+    "lang": "lao",
+    "mood": "chill",
+    "bpm": "ช้า (82 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "ลมหนาว",
+      "ชิลล์"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f8/45/5a/f8455a71-8307-aa9a-9c95-3d22efe0804f/886446326146.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/วินลม%20Lao%20Pop",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5f/94/d3/5f94d349-800e-c878-1945-a6d1377a2cc0/mzaf_5669537568659983313.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5f/94/d3/5f94d349-800e-c878-1945-a6d1377a2cc0/mzaf_5669537568659983313.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5f/94/d3/5f94d349-800e-c878-1945-a6d1377a2cc0/mzaf_5669537568659983313.plus.aac.p.m4a",
+    "animeId": 5
+  },
+  {
+    "id": 1545,
+    "title": "ກັບມາ (Kub Ma)",
+    "artist": "Cells",
+    "lang": "lao",
+    "mood": "sad",
+    "bpm": "ช้า (76 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "กลับมา",
+      "คิดถึง"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/c2/a0/cb/c2a0cbdb-efef-ab34-494a-ece74fda1cfe/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/กับมา%20Cells%20Lao",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8f/7f/16/8f7f16bc-4a83-b59e-5129-c191e8413613/mzaf_5086122907317826490.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8f/7f/16/8f7f16bc-4a83-b59e-5129-c191e8413613/mzaf_5086122907317826490.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8f/7f/16/8f7f16bc-4a83-b59e-5129-c191e8413613/mzaf_5086122907317826490.plus.aac.p.m4a",
+    "animeId": 9
+  },
+  {
+    "id": 1546,
+    "title": "ນຳ້ຕາໃຜ (Nam Ta Phai)",
+    "artist": "Alexandra",
+    "lang": "lao",
+    "mood": "sad",
+    "bpm": "ช้า (66 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "น้ำตา",
+      "เศร้า"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/58/61/8f/58618fa5-9db2-df84-8942-8065083b471a/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/น้ำตาใผ%20Alexandra%20Lao",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5d/2a/00/5d2a0051-b3e2-b15d-cd88-655922f9895d/mzaf_17003260729882630128.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5d/2a/00/5d2a0051-b3e2-b15d-cd88-655922f9895d/mzaf_17003260729882630128.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5d/2a/00/5d2a0051-b3e2-b15d-cd88-655922f9895d/mzaf_17003260729882630128.plus.aac.p.m4a",
+    "animeId": 3
+  },
+  {
+    "id": 1547,
+    "title": "ໃຈດຳ (Jai Dum)",
+    "artist": "Sai Yong",
+    "lang": "lao",
+    "mood": "sad",
+    "bpm": "กลาง (85 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "ใจดำ",
+      "เจ็บ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/62/1a/68/621a6834-423c-cc6e-7f7d-a1593a81d308/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/ใจดำ%20Sai%20Yong%20Lao",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/05/e7/a105e710-5fe5-4348-ec91-a14916a5ad93/mzaf_8141032513242893609.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/05/e7/a105e710-5fe5-4348-ec91-a14916a5ad93/mzaf_8141032513242893609.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/05/e7/a105e710-5fe5-4348-ec91-a14916a5ad93/mzaf_8141032513242893609.plus.aac.p.m4a",
+    "animeId": 18
+  },
+  {
+    "id": 1548,
+    "title": "ບັກຊິງ (Bak Sing)",
+    "artist": "Takkatan Chonlathee",
+    "lang": "lao",
+    "mood": "hype",
+    "bpm": "เร็ว (130 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "มันส์",
+      "หมอลำ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/4397/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/บักซิง%20ตั๊กแตน%20ชลธี",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "animeId": 20
+  },
+  {
+    "id": 1549,
+    "title": "ຮັກເບິ່ງໃດ (Huk Bung Dai)",
+    "artist": "Aluna",
+    "lang": "lao",
+    "mood": "love",
+    "bpm": "กลาง (94 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "รักเบิ่งได",
+      "น่ารัก"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/11/24/671124b5-7b83-672c-46fc-92245524db3d/00198704643033_Cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/ฮักเบิ่งได%20Aluna%20Lao",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a4/2c/84/a42c8416-5263-fd48-7db6-841b9caa8773/mzaf_14711802372851084172.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a4/2c/84/a42c8416-5263-fd48-7db6-841b9caa8773/mzaf_14711802372851084172.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a4/2c/84/a42c8416-5263-fd48-7db6-841b9caa8773/mzaf_14711802372851084172.plus.aac.p.m4a",
+    "animeId": 14
+  },
+  {
+    "id": 1550,
+    "title": "ຫ່ຽວ (Hiew)",
+    "artist": "Pheng Lao Band",
+    "lang": "lao",
+    "mood": "sad",
+    "bpm": "ช้า (70 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "เหี่ยว",
+      "เศร้า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8403/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/เหี่ยว%20Pheng%20Lao",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "animeId": 1
+  },
+  {
+    "id": 1551,
+    "title": "ວ່າງ (Wang)",
+    "artist": "Lao Stoner",
+    "lang": "lao",
+    "mood": "chill",
+    "bpm": "ช้า (80 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "ว่าง",
+      "โลนลี่"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/c2/13/f7/c213f7fe-d7dc-91f5-27ba-075c152120a3/074646768525.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/ว่าง%20Lao%20Stoner",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ec/ba/a4/ecbaa46d-f4b4-f42f-1a73-ddd6940fe70b/mzaf_11029564969896829872.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ec/ba/a4/ecbaa46d-f4b4-f42f-1a73-ddd6940fe70b/mzaf_11029564969896829872.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ec/ba/a4/ecbaa46d-f4b4-f42f-1a73-ddd6940fe70b/mzaf_11029564969896829872.plus.aac.p.m4a",
+    "animeId": 5
+  },
+  {
+    "id": 1552,
+    "title": "คิดฮอดเจ้า",
+    "artist": "มนต์แคน แก่นคูน",
+    "lang": "lao",
+    "mood": "sad",
+    "bpm": "ช้า (72 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "อีสาน",
+      "คิดถึง"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ff/8f/de/ff8fde58-d16a-54bb-b062-3a2eae57a111/888332944113.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/คิดฮอดเจ้า%20มนต์แคน",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/d0/3c/56d03c44-61c2-1751-c9e0-fc7e951c3407/mzaf_8525460564171432513.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/d0/3c/56d03c44-61c2-1751-c9e0-fc7e951c3407/mzaf_8525460564171432513.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/56/d0/3c/56d03c44-61c2-1751-c9e0-fc7e951c3407/mzaf_8525460564171432513.plus.aac.p.m4a",
+    "animeId": 9
+  },
+  {
+    "id": 1553,
+    "title": "ผู้สาวขาเลาะ",
+    "artist": "ลำไย ไหทองคำ",
+    "lang": "lao",
+    "mood": "hype",
+    "bpm": "เร็ว (135 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "สนุก",
+      "สาวเลาะ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7c/7f/43/7c7f43d4-488d-4f0c-e75d-50cd2df7534e/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/ผู้สาวขาเลาะ%20ลำไย",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/28/61/c3/2861c3e7-6c1e-60fc-2718-6b70d3424686/mzaf_12690881355298732464.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/28/61/c3/2861c3e7-6c1e-60fc-2718-6b70d3424686/mzaf_12690881355298732464.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/28/61/c3/2861c3e7-6c1e-60fc-2718-6b70d3424686/mzaf_12690881355298732464.plus.aac.p.m4a",
+    "animeId": 20
+  },
+  {
+    "id": 1554,
+    "title": "ดอกฟ้าในมือคนจน",
+    "artist": "ไผ่ พงศธร",
+    "lang": "lao",
+    "mood": "sad",
+    "bpm": "ช้า (68 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "ดอกฟ้า",
+      "คนจน"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/ac/18/33/ac18332a-b261-e582-2beb-1e781e4e82bd/Cover_-.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/ดอกฟ้าในมือคนจน%20ไผ่%20พงศธร",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fb/be/4b/fbbe4b25-2b41-77c6-fe4e-838de58107ff/mzaf_11462242500464231233.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fb/be/4b/fbbe4b25-2b41-77c6-fe4e-838de58107ff/mzaf_11462242500464231233.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fb/be/4b/fbbe4b25-2b41-77c6-fe4e-838de58107ff/mzaf_11462242500464231233.plus.aac.p.m4a",
+    "animeId": 3
+  },
+  {
+    "id": 1555,
+    "title": "ส่งเสียงบอกรัก",
+    "artist": "ปรีชา ปัดภัย",
+    "lang": "lao",
+    "mood": "love",
+    "bpm": "กลาง (88 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "บอกรัก",
+      "อีสาน"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5b/f9/47/5bf94732-fd26-a235-0698-13913e09c0e5/25UMGIM86799.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/ส่งเสียงบอกรัก%20ปรีชา%20ปัดภัย",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ad/ab/45/adab4534-1eac-97c3-7448-268903114d36/mzaf_16561018669349687253.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ad/ab/45/adab4534-1eac-97c3-7448-268903114d36/mzaf_16561018669349687253.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ad/ab/45/adab4534-1eac-97c3-7448-268903114d36/mzaf_16561018669349687253.plus.aac.p.m4a",
+    "animeId": 14
+  },
+  {
+    "id": 1556,
+    "title": "ฝนตกไหมที่นั่น",
+    "artist": "เจ้านาง",
+    "lang": "lao",
+    "mood": "sad",
+    "bpm": "ช้า (74 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "ฝน",
+      "คิดถึง"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8403/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/ฝนตกไหมที่นั่น%20เจ้านาง",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "animeId": 1
+  },
+  {
+    "id": 1557,
+    "title": "ອ້ອນ (On)",
+    "artist": "Ketsana",
+    "lang": "lao",
+    "mood": "love",
+    "bpm": "กลาง (96 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "อ้อน",
+      "น่ารัก"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/43/09/a8/4309a87f-cc56-c30e-c87d-2d00072e45e2/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/อ้อน%20Ketsana%20Lao",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/77/02/3a/77023a45-8cf4-0b3e-3c0a-ac7035891c4c/mzaf_3476510464903502870.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/77/02/3a/77023a45-8cf4-0b3e-3c0a-ac7035891c4c/mzaf_3476510464903502870.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/77/02/3a/77023a45-8cf4-0b3e-3c0a-ac7035891c4c/mzaf_3476510464903502870.plus.aac.p.m4a",
+    "animeId": 2
+  },
+  {
+    "id": 1558,
+    "title": "ເບິ່ງແຍງ (Bung Yaeng)",
+    "artist": "Sai Yong",
+    "lang": "lao",
+    "mood": "chill",
+    "bpm": "ช้า (80 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "เบิ่งแยง",
+      "ดูแล"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/62/1a/68/621a6834-423c-cc6e-7f7d-a1593a81d308/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/เบิ่งแยง%20Sai%20Yong%20Lao",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/05/e7/a105e710-5fe5-4348-ec91-a14916a5ad93/mzaf_8141032513242893609.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/05/e7/a105e710-5fe5-4348-ec91-a14916a5ad93/mzaf_8141032513242893609.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a1/05/e7/a105e710-5fe5-4348-ec91-a14916a5ad93/mzaf_8141032513242893609.plus.aac.p.m4a",
+    "animeId": 5
+  },
+  {
+    "id": 1559,
+    "title": "ບໍ່ມີວັນລືມ (Bor Mi Wan Leum)",
+    "artist": "Cells",
+    "lang": "lao",
+    "mood": "sad",
+    "bpm": "ช้า (72 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "ไม่มีวันลืม",
+      "ทรงจำ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2a/46/7c/2a467c8d-eddc-d7dd-7137-693c8c1dbfc9/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/บ่มีวันลืม%20Cells%20Lao",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4f/75/88/4f758879-40ba-2387-7889-faf9c03a9071/mzaf_12934059676944125468.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4f/75/88/4f758879-40ba-2387-7889-faf9c03a9071/mzaf_12934059676944125468.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4f/75/88/4f758879-40ba-2387-7889-faf9c03a9071/mzaf_12934059676944125468.plus.aac.p.m4a",
+    "animeId": 9
+  },
+  {
+    "id": 1560,
+    "title": "ອ້າຍມາ (Ai Ma)",
+    "artist": "TP Sakorn",
+    "lang": "lao",
+    "mood": "hype",
+    "bpm": "เร็ว (126 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "อ้ายมา",
+      "สนุก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/4397/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/อ้ายมา%20TP%20Sakorn",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/55/d6/9a55d64f-050d-c74e-2b7f-d4b69e8a9b22/mzaf_18302778701445472334.plus.aac.p.m4a",
+    "animeId": 20
+  },
+  {
+    "id": 1561,
+    "title": "ແພ້ (Phae)",
+    "artist": "Aluna",
+    "lang": "lao",
+    "mood": "sad",
+    "bpm": "ช้า (66 BPM)",
+    "tags": [
+      "เพลงลาว",
+      "แพ้",
+      "ยอมแพ้"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3a/27/2f/3a272ff6-6204-92fe-f088-bfd491fc225e/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/แพ้%20Aluna%20Lao",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/98/d8/0f/98d80ffc-ef1f-91b2-c3c5-cb836ab0abae/mzaf_13718445832419512023.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/98/d8/0f/98d80ffc-ef1f-91b2-c3c5-cb836ab0abae/mzaf_13718445832419512023.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/98/d8/0f/98d80ffc-ef1f-91b2-c3c5-cb836ab0abae/mzaf_13718445832419512023.plus.aac.p.m4a",
+    "animeId": 18
+  },
+  {
+    "id": 1562,
+    "title": "Espresso",
+    "artist": "Sabrina Carpenter",
+    "lang": "en",
+    "mood": "hype",
+    "bpm": "เร็ว (104 BPM)",
+    "tags": [
+      "Trending",
+      "Pop",
+      "TikTok"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/57/e8/7b/57e87ba0-5057-9bb9-c247-ce7dbe426e89/24UMGIM55213.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2qSkIjg1o9h3YT9RAgYN75",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/4d/02/e94d0230-11ee-ef94-d2cf-a5d547bd73f4/mzaf_554140808559155562.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/4d/02/e94d0230-11ee-ef94-d2cf-a5d547bd73f4/mzaf_554140808559155562.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e9/4d/02/e94d0230-11ee-ef94-d2cf-a5d547bd73f4/mzaf_554140808559155562.plus.aac.p.m4a",
+    "animeId": 20
+  },
+  {
+    "id": 1563,
+    "title": "Birds of a Feather",
+    "artist": "Billie Eilish",
+    "lang": "en",
+    "mood": "love",
+    "bpm": "กลาง (105 BPM)",
+    "tags": [
+      "Trending",
+      "Alt-Pop",
+      "Billie"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/9f/69/929f69f1-9977-3a44-d674-11f70c852d1b/24UMGIM36186.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6dOtVTDdiauQNBQEDOtlAB",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/31/d3/3431d34e-847f-5d66-df83-0bce688d997e/mzaf_18106743962423782018.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/31/d3/3431d34e-847f-5d66-df83-0bce688d997e/mzaf_18106743962423782018.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/31/d3/3431d34e-847f-5d66-df83-0bce688d997e/mzaf_18106743962423782018.plus.aac.p.m4a",
+    "animeId": 2
+  },
+  {
+    "id": 1564,
+    "title": "LUNCH",
+    "artist": "Billie Eilish",
+    "lang": "en",
+    "mood": "chill",
+    "bpm": "กลาง (100 BPM)",
+    "tags": [
+      "Trending",
+      "Alt-Pop",
+      "Billie"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/9f/69/929f69f1-9977-3a44-d674-11f70c852d1b/24UMGIM36186.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2bX0JVKjKHjbpFOS0MIHqf",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9d/3e/43/9d3e43aa-682a-7979-8547-d339956c409b/mzaf_710286407585135494.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9d/3e/43/9d3e43aa-682a-7979-8547-d339956c409b/mzaf_710286407585135494.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9d/3e/43/9d3e43aa-682a-7979-8547-d339956c409b/mzaf_710286407585135494.plus.aac.p.m4a",
+    "animeId": 5
+  },
+  {
+    "id": 1565,
+    "title": "Please Please Please",
+    "artist": "Sabrina Carpenter",
+    "lang": "en",
+    "mood": "love",
+    "bpm": "กลาง (107 BPM)",
+    "tags": [
+      "Trending",
+      "Pop",
+      "TikTok"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c9/a3/e9/c9a3e987-3952-a6ac-7975-680f2033e660/25UMGIM10586.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5N3hjp1WNayUPZrA8kJmJP",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/86/0b/54860b8b-0c3b-b16b-5b19-b00424af8b9b/mzaf_1272478887800630516.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/86/0b/54860b8b-0c3b-b16b-5b19-b00424af8b9b/mzaf_1272478887800630516.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/86/0b/54860b8b-0c3b-b16b-5b19-b00424af8b9b/mzaf_1272478887800630516.plus.aac.p.m4a",
+    "animeId": 14
+  },
+  {
+    "id": 1566,
+    "title": "APT.",
+    "artist": "ROSÉ, Bruno Mars",
+    "lang": "en",
+    "mood": "hype",
+    "bpm": "เร็ว (149 BPM)",
+    "tags": [
+      "Trending",
+      "K-Pop",
+      "BLACKPINK"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2d/1a/7d/2d1a7d91-587e-0ceb-d434-327bd66d9e86/075679628312.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5vNRhkKd0yEAg8suGBkbiN",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7a/15/38/7a1538f3-f41a-a2eb-0f24-8eb6712ee043/mzaf_7740628412097685267.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7a/15/38/7a1538f3-f41a-a2eb-0f24-8eb6712ee043/mzaf_7740628412097685267.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7a/15/38/7a1538f3-f41a-a2eb-0f24-8eb6712ee043/mzaf_7740628412097685267.plus.aac.p.m4a",
+    "animeId": 20
+  },
+  {
+    "id": 1567,
+    "title": "Die With A Smile",
+    "artist": "Lady Gaga, Bruno Mars",
+    "lang": "en",
+    "mood": "love",
+    "bpm": "ช้า (76 BPM)",
+    "tags": [
+      "Trending",
+      "Pop",
+      "Ballad"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/11/ae/f2/11aef294-f57c-bab9-c9fc-529162984e62/24UMGIM85348.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2plbrEY59IikOBgBGLjaoe",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/6a/99/076a99ed-b946-431b-6f1f-54fa187ca5bd/mzaf_8102882277995122875.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/6a/99/076a99ed-b946-431b-6f1f-54fa187ca5bd/mzaf_8102882277995122875.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/6a/99/076a99ed-b946-431b-6f1f-54fa187ca5bd/mzaf_8102882277995122875.plus.aac.p.m4a",
+    "animeId": 1
+  },
+  {
+    "id": 1568,
+    "title": "Taste",
+    "artist": "Sabrina Carpenter",
+    "lang": "en",
+    "mood": "hype",
+    "bpm": "เร็ว (130 BPM)",
+    "tags": [
+      "Trending",
+      "Pop",
+      "Viral"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f6/15/d0/f615d0ab-e0c4-575d-907e-1cc084642357/24UMGIM61704.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/19fjXpRYjPkCLMcqBMJXVH",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/57/a6/2657a620-c596-e0e4-efa2-e814f3572d1c/mzaf_5475540510703120797.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/57/a6/2657a620-c596-e0e4-efa2-e814f3572d1c/mzaf_5475540510703120797.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/57/a6/2657a620-c596-e0e4-efa2-e814f3572d1c/mzaf_5475540510703120797.plus.aac.p.m4a",
+    "animeId": 2
+  },
+  {
+    "id": 1569,
+    "title": "Good Luck, Babe!",
+    "artist": "Chappell Roan",
+    "lang": "en",
+    "mood": "hype",
+    "bpm": "เร็ว (134 BPM)",
+    "tags": [
+      "Trending",
+      "Pop",
+      "Queer"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/29/a7/c4/29a7c478-351d-25eb-a116-3e68118cdab8/24UMGIM31246.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0WbMK4wrZ1wFStyxN8IUbZ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c3/6d/4f/c36d4f23-b87f-046d-7a0e-e3e05d180b2a/mzaf_17235999651335214399.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c3/6d/4f/c36d4f23-b87f-046d-7a0e-e3e05d180b2a/mzaf_17235999651335214399.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c3/6d/4f/c36d4f23-b87f-046d-7a0e-e3e05d180b2a/mzaf_17235999651335214399.plus.aac.p.m4a",
+    "animeId": 20
+  },
+  {
+    "id": 1570,
+    "title": "A Bar Song (Tipsy)",
+    "artist": "Shaboozey",
+    "lang": "en",
+    "mood": "chill",
+    "bpm": "กลาง (96 BPM)",
+    "tags": [
+      "Trending",
+      "Country",
+      "Viral"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/be/db/81/bedb81c3-ca23-a1b9-f275-59e46ae4fdb1/197342625517_cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2FDTHlrBguDzQkp7PVj16Q",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/46/6f/7f/466f7f67-0365-ddf8-16c2-e033371d2f7e/mzaf_3764341442720608698.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/46/6f/7f/466f7f67-0365-ddf8-16c2-e033371d2f7e/mzaf_3764341442720608698.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/46/6f/7f/466f7f67-0365-ddf8-16c2-e033371d2f7e/mzaf_3764341442720608698.plus.aac.p.m4a",
+    "animeId": 5
+  },
+  {
+    "id": 1571,
+    "title": "Not Like Us",
+    "artist": "Kendrick Lamar",
+    "lang": "en",
+    "mood": "hype",
+    "bpm": "เร็ว (101 BPM)",
+    "tags": [
+      "Trending",
+      "Hip-Hop",
+      "Diss"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/31/3a/3f/313a3fbc-bb8f-80c7-b5a2-e226869a38cd/24UMGIM51924.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6AI3ezQ4o3HUoP6Dhudph3",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2d/e0/e8/2de0e874-cd0b-e9a9-e876-76be13a86662/mzaf_12385336780649591409.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2d/e0/e8/2de0e874-cd0b-e9a9-e876-76be13a86662/mzaf_12385336780649591409.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/2d/e0/e8/2de0e874-cd0b-e9a9-e876-76be13a86662/mzaf_12385336780649591409.plus.aac.p.m4a",
+    "animeId": 20
+  },
+  {
+    "id": 1572,
+    "title": "Beautiful Things",
+    "artist": "Benson Boone",
+    "lang": "en",
+    "mood": "sad",
+    "bpm": "กลาง (100 BPM)",
+    "tags": [
+      "Trending",
+      "Pop",
+      "Emotional"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/54/f4/92/54f49210-e260-b519-ebbd-f4f40ee710cd/054391342751.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6tNQ70jh4OwmPGpYy6R2o9",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4d/d5/00/4dd5006f-ee02-c3f1-94db-0ed4b8dd68f1/mzaf_14250561294796027079.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4d/d5/00/4dd5006f-ee02-c3f1-94db-0ed4b8dd68f1/mzaf_14250561294796027079.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4d/d5/00/4dd5006f-ee02-c3f1-94db-0ed4b8dd68f1/mzaf_14250561294796027079.plus.aac.p.m4a",
+    "animeId": 1
+  },
+  {
+    "id": 1573,
+    "title": "Austin",
+    "artist": "Dasha",
+    "lang": "en",
+    "mood": "love",
+    "bpm": "กลาง (88 BPM)",
+    "tags": [
+      "Trending",
+      "Country-Pop",
+      "TikTok"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1c/0c/9a/1c0c9aaa-5019-2342-a86b-de770adcf563/054391262639.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5y98sMhLwHxUu8bS4aUO1G",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/eb/ae/14ebaeff-c972-8508-a5b6-5a3fa2d99576/mzaf_9068818715347627274.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/eb/ae/14ebaeff-c972-8508-a5b6-5a3fa2d99576/mzaf_9068818715347627274.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/eb/ae/14ebaeff-c972-8508-a5b6-5a3fa2d99576/mzaf_9068818715347627274.plus.aac.p.m4a",
+    "animeId": 14
+  },
+  {
+    "id": 1574,
+    "title": "Too Sweet",
+    "artist": "Hozier",
+    "lang": "en",
+    "mood": "chill",
+    "bpm": "กลาง (84 BPM)",
+    "tags": [
+      "Trending",
+      "Indie",
+      "Hozier"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/75/43/b9/7543b9da-b57f-4378-7eaf-1e02b49f5cc5/24UMGIM21983.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0WbMK4wrZ1wFStyxN8IUbZ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/1f/13/d41f1325-a2ec-0448-0ea0-47de649f5388/mzaf_8737528034350759698.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/1f/13/d41f1325-a2ec-0448-0ea0-47de649f5388/mzaf_8737528034350759698.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/1f/13/d41f1325-a2ec-0448-0ea0-47de649f5388/mzaf_8737528034350759698.plus.aac.p.m4a",
+    "animeId": 5
+  },
+  {
+    "id": 1575,
+    "title": "Saturn",
+    "artist": "SZA",
+    "lang": "en",
+    "mood": "chill",
+    "bpm": "ช้า (78 BPM)",
+    "tags": [
+      "Trending",
+      "R&B",
+      "SZA"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/0f/90/a8/0f90a856-0447-d846-fa7b-b9c937e72310/196871881180.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5SqRjlEFjif29LBIvkpOsY",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7c/28/b3/7c28b3ed-9aa9-6454-92c6-e46d20849bed/mzaf_518591709818271733.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7c/28/b3/7c28b3ed-9aa9-6454-92c6-e46d20849bed/mzaf_518591709818271733.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7c/28/b3/7c28b3ed-9aa9-6454-92c6-e46d20849bed/mzaf_518591709818271733.plus.aac.p.m4a",
+    "animeId": 9
+  },
+  {
+    "id": 1576,
+    "title": "Lose Control",
+    "artist": "Teddy Swims",
+    "lang": "en",
+    "mood": "love",
+    "bpm": "กลาง (98 BPM)",
+    "tags": [
+      "Trending",
+      "Pop-Soul",
+      "TikTok"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/36/19/66/36196640-1561-dc5e-c6bc-1e5f4befa583/093624856771.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3nAq2hCr1oWsIU54tS98pL",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9f/65/d6/9f65d67d-db40-d7da-c954-9a23d28dfe1a/mzaf_7625794503195542708.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9f/65/d6/9f65d67d-db40-d7da-c954-9a23d28dfe1a/mzaf_7625794503195542708.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9f/65/d6/9f65d67d-db40-d7da-c954-9a23d28dfe1a/mzaf_7625794503195542708.plus.aac.p.m4a",
+    "animeId": 14
+  },
+  {
+    "id": 1577,
+    "title": "Timeless",
+    "artist": "The Weeknd, Playboi Carti",
+    "lang": "en",
+    "mood": "hype",
+    "bpm": "เร็ว (131 BPM)",
+    "tags": [
+      "Trending",
+      "Pop",
+      "Weeknd"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/af/04/83/af048357-131d-1ca3-fe8a-d7ef3dda68ec/24UM1IM04062.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6UUXMIaJJMbYMyvGPNMPng",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/d4/f0/9ad4f06c-bf08-255f-8498-8e3d1d17e743/mzaf_7983135672228712033.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/d4/f0/9ad4f06c-bf08-255f-8498-8e3d1d17e743/mzaf_7983135672228712033.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9a/d4/f0/9ad4f06c-bf08-255f-8498-8e3d1d17e743/mzaf_7983135672228712033.plus.aac.p.m4a",
+    "animeId": 20
+  },
+  {
+    "id": 1578,
+    "title": "Juno",
+    "artist": "Sabrina Carpenter",
+    "lang": "en",
+    "mood": "hype",
+    "bpm": "เร็ว (120 BPM)",
+    "tags": [
+      "Trending",
+      "Pop",
+      "Sabrina"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/07/ef/6a/07ef6a69-ee75-ae04-f6a2-971be4b53828/22UMGIM63572.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/22vMdXT2J8UZqpV2i3Slzj",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/7a/e9/c97ae984-f992-fdb0-332b-eb8392fb776e/mzaf_12737184066124332296.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/7a/e9/c97ae984-f992-fdb0-332b-eb8392fb776e/mzaf_12737184066124332296.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/7a/e9/c97ae984-f992-fdb0-332b-eb8392fb776e/mzaf_12737184066124332296.plus.aac.p.m4a",
+    "animeId": 2
+  },
+  {
+    "id": 1579,
+    "title": "Pink Pony Club",
+    "artist": "Chappell Roan",
+    "lang": "en",
+    "mood": "hype",
+    "bpm": "เร็ว (134 BPM)",
+    "tags": [
+      "Trending",
+      "Pop",
+      "LGBTQ"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/41/bc/fb/41bcfb43-91d5-931d-5747-fb381803143f/23UMGIM21715.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6Gs2hl0kpRcaBEB60BTOx4",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fc/52/be/fc52be82-306b-6da5-286b-61056757c008/mzaf_1618848737251148796.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fc/52/be/fc52be82-306b-6da5-286b-61056757c008/mzaf_1618848737251148796.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/fc/52/be/fc52be82-306b-6da5-286b-61056757c008/mzaf_1618848737251148796.plus.aac.p.m4a",
+    "animeId": 20
+  },
+  {
+    "id": 1580,
+    "title": "Stick Season",
+    "artist": "Noah Kahan",
+    "lang": "en",
+    "mood": "sad",
+    "bpm": "กลาง (98 BPM)",
+    "tags": [
+      "Trending",
+      "Folk-Pop",
+      "Noah"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/8d/25/8e/8d258e09-7395-998f-23ed-82b0433b0518/22UMGIM71396.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0mflMxspEfB0VbI1kyLiAv",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bb/fe/50/bbfe507c-5bd3-ed20-fe06-77cffac61ecb/mzaf_18017284793316301216.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bb/fe/50/bbfe507c-5bd3-ed20-fe06-77cffac61ecb/mzaf_18017284793316301216.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/bb/fe/50/bbfe507c-5bd3-ed20-fe06-77cffac61ecb/mzaf_18017284793316301216.plus.aac.p.m4a",
+    "animeId": 1
+  },
+  {
+    "id": 1581,
+    "title": "Feather",
+    "artist": "Sabrina Carpenter",
+    "lang": "en",
+    "mood": "chill",
+    "bpm": "กลาง (108 BPM)",
+    "tags": [
+      "Trending",
+      "Pop",
+      "Carefree"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/73/ae/bc/73aebca9-6c0c-4392-e083-71913b6b590d/23UMGIM16393.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4Baf9F6Fwrv97bfB8neQrJ",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/4b/f1/074bf191-a02c-1d76-5d94-49256f99af6f/mzaf_7725821736642193910.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/4b/f1/074bf191-a02c-1d76-5d94-49256f99af6f/mzaf_7725821736642193910.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/4b/f1/074bf191-a02c-1d76-5d94-49256f99af6f/mzaf_7725821736642193910.plus.aac.p.m4a",
+    "animeId": 5
+  },
+  {
+    "id": 1582,
+    "title": "Magnetic",
+    "artist": "ILLIT",
+    "lang": "kr",
+    "mood": "love",
+    "bpm": "เร็ว (120 BPM)",
+    "tags": [
+      "Trending",
+      "K-Pop",
+      "ILLIT"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/3e/49/1e/3e491e43-4961-21ab-2abe-37fb1c0feb40/196922879227_Cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2MhFjEAHGPNzd9RLhGj0Wm",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e8/7e/67/e87e6795-4ada-2f65-d562-1fd2a3eddfdf/mzaf_11263458879279601822.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e8/7e/67/e87e6795-4ada-2f65-d562-1fd2a3eddfdf/mzaf_11263458879279601822.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e8/7e/67/e87e6795-4ada-2f65-d562-1fd2a3eddfdf/mzaf_11263458879279601822.plus.aac.p.m4a",
+    "animeId": 2
+  },
+  {
+    "id": 1583,
+    "title": "Supernova",
+    "artist": "aespa",
+    "lang": "kr",
+    "mood": "hype",
+    "bpm": "เร็ว (138 BPM)",
+    "tags": [
+      "Trending",
+      "K-Pop",
+      "aespa"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/50/7e/e0/507ee09f-ccfd-1e3c-af90-ca5e92b1221b/00888735949869_Cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5sdQOyqq2IDhvceU5yBAFt",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f6/cc/58/f6cc5863-c60a-caac-e7f8-bd66b414a917/mzaf_8631809138360097160.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f6/cc/58/f6cc5863-c60a-caac-e7f8-bd66b414a917/mzaf_8631809138360097160.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f6/cc/58/f6cc5863-c60a-caac-e7f8-bd66b414a917/mzaf_8631809138360097160.plus.aac.p.m4a",
+    "animeId": 20
+  },
+  {
+    "id": 1584,
+    "title": "SPOT!",
+    "artist": "ZICO ft. JENNIE",
+    "lang": "kr",
+    "mood": "hype",
+    "bpm": "เร็ว (128 BPM)",
+    "tags": [
+      "Trending",
+      "K-Pop",
+      "Zico"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2e/2c/9c/2e2c9cb1-7352-867a-013c-9c885a9f7f4e/196922944741_Cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1KVui7pEhVP0M4CBizbsRp",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6e/c5/04/6ec5043a-f032-9803-f6c2-55956d0da9f9/mzaf_7311793964113917388.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6e/c5/04/6ec5043a-f032-9803-f6c2-55956d0da9f9/mzaf_7311793964113917388.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/6e/c5/04/6ec5043a-f032-9803-f6c2-55956d0da9f9/mzaf_7311793964113917388.plus.aac.p.m4a",
+    "animeId": 20
+  },
+  {
+    "id": 1585,
+    "title": "アイドル (Idol)",
+    "artist": "YOASOBI",
+    "lang": "jp",
+    "mood": "hype",
+    "bpm": "เร็ว (166 BPM)",
+    "tags": [
+      "Trending",
+      "J-Pop",
+      "Oshi no Ko"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/3a/17/eb/3a17eb30-eacb-82eb-51df-d1321dbb55bc/197188492205.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4ZtFanR9U6ndgddUvNcjcG",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/db/16/f0db16be-457e-f10f-98b6-f30b11de34e4/mzaf_5189430943078523093.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/db/16/f0db16be-457e-f10f-98b6-f30b11de34e4/mzaf_5189430943078523093.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/db/16/f0db16be-457e-f10f-98b6-f30b11de34e4/mzaf_5189430943078523093.plus.aac.p.m4a",
+    "animeId": 20
+  },
+  {
+    "id": 1586,
+    "title": "晩餐歌 (Bansan Uta)",
+    "artist": "tuki.",
+    "lang": "jp",
+    "mood": "chill",
+    "bpm": "กลาง (95 BPM)",
+    "tags": [
+      "Trending",
+      "J-Pop",
+      "TikTok"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/67/03/c9/6703c973-c9da-1bd8-cc81-fe315b951231/4582649065306.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4VXIryQMWpIdGoEQVO4Was",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9c/fc/b3/9cfcb377-3b90-d2ff-c9c9-7305d9a0090d/mzaf_8407642499488424263.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9c/fc/b3/9cfcb377-3b90-d2ff-c9c9-7305d9a0090d/mzaf_8407642499488424263.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9c/fc/b3/9cfcb377-3b90-d2ff-c9c9-7305d9a0090d/mzaf_8407642499488424263.plus.aac.p.m4a",
+    "animeId": 5
+  },
+  {
+    "id": 1587,
+    "title": "Bling-Bang-Bang-Born",
+    "artist": "Creepy Nuts",
+    "lang": "jp",
+    "mood": "hype",
+    "bpm": "เร็ว (157 BPM)",
+    "tags": [
+      "Trending",
+      "J-Rap",
+      "Mashle"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/12/81/dc/1281dc28-48e6-5ff7-642d-6cf4d487d9e0/4547366660890.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3i86yOFjNsKnTzaMWnYBBX",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/54/5e/5c545e9a-c8ca-c673-f85d-a74b14c2c882/mzaf_2313943576213161760.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/54/5e/5c545e9a-c8ca-c673-f85d-a74b14c2c882/mzaf_2313943576213161760.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/54/5e/5c545e9a-c8ca-c673-f85d-a74b14c2c882/mzaf_2313943576213161760.plus.aac.p.m4a",
+    "animeId": 20
+  },
+  {
+    "id": 1588,
+    "title": "はいよろこんで (Hai Yorokonde)",
+    "artist": "Kocchi no Kento",
+    "lang": "jp",
+    "mood": "chill",
+    "bpm": "กลาง (93 BPM)",
+    "tags": [
+      "Trending",
+      "J-Pop",
+      "Viral"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1d/0c/47/1d0c4791-7f6a-9b41-4acb-ea3e8794324e/0198448350686_cover.png/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7eLiEZOePEWajVMEqTQOEe",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b6/99/f7/b699f76a-81eb-d93b-4a9f-14b402d6e0e0/mzaf_1396513204317123483.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b6/99/f7/b699f76a-81eb-d93b-4a9f-14b402d6e0e0/mzaf_1396513204317123483.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b6/99/f7/b699f76a-81eb-d93b-4a9f-14b402d6e0e0/mzaf_1396513204317123483.plus.aac.p.m4a",
+    "animeId": 5
+  },
+  {
+    "id": 1589,
+    "title": "Love wins all",
+    "artist": "IU",
+    "lang": "kr",
+    "mood": "love",
+    "bpm": "ช้า (74 BPM)",
+    "tags": [
+      "Trending",
+      "K-Pop",
+      "IU"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/e3/56/1e/e3561eb5-de12-790d-569b-53fa22e6b491/cover_KM0019422_1.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3qonjMwHBNTHa7MnzSEzwt",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/79/f5/9479f56a-ac54-6449-3603-0645090bb3c1/mzaf_7391528050042328078.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/79/f5/9479f56a-ac54-6449-3603-0645090bb3c1/mzaf_7391528050042328078.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/79/f5/9479f56a-ac54-6449-3603-0645090bb3c1/mzaf_7391528050042328078.plus.aac.p.m4a",
+    "animeId": 1
+  },
+  {
+    "id": 1590,
+    "title": "Supernatural",
+    "artist": "NewJeans",
+    "lang": "kr",
+    "mood": "chill",
+    "bpm": "กลาง (100 BPM)",
+    "tags": [
+      "Trending",
+      "K-Pop",
+      "NewJeans"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ab/ce/d6/abced6f6-2b90-c230-eb4b-e146734a3a22/196922907821_Cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5ocSQhiZleU2Q3f3r0FBnM",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/41/ce/f9/41cef96a-6b48-2ddd-72a8-f479e7a1c752/mzaf_5570335600994446876.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/41/ce/f9/41cef96a-6b48-2ddd-72a8-f479e7a1c752/mzaf_5570335600994446876.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/41/ce/f9/41cef96a-6b48-2ddd-72a8-f479e7a1c752/mzaf_5570335600994446876.plus.aac.p.m4a",
+    "animeId": 2
+  },
+  {
+    "id": 1591,
+    "title": "POWER",
+    "artist": "G-DRAGON",
+    "lang": "kr",
+    "mood": "hype",
+    "bpm": "เร็ว (140 BPM)",
+    "tags": [
+      "Trending",
+      "K-Pop",
+      "GD"
+    ],
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/36/fa/03/36fa0306-b040-b01b-36d3-181256366615/197342805353_cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/search/POWER%20G-DRAGON",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/16/52/16/16521669-d835-c2db-f3d0-f2d97f893a6e/mzaf_683883611835103898.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/16/52/16/16521669-d835-c2db-f3d0-f2d97f893a6e/mzaf_683883611835103898.plus.aac.p.m4a",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/16/52/16/16521669-d835-c2db-f3d0-f2d97f893a6e/mzaf_683883611835103898.plus.aac.p.m4a",
+    "animeId": 20
   }
 ];
 
@@ -44637,5 +45777,485 @@ const ANIME_PAIRS = [
     "badge": "✨ ยันฟ้าสว่าง",
     "reason": "ฟีลสบายๆ ปาร์ตี้กับเพื่อนยันเช้าตรู่ ไม่ต้องรีบกลับบ้าน ปล่อยใจในราตรี",
     "typoIdea": "ไทโปตัวเขียนลายมือน่ารัก มีคลื่นควันบางเบาและลูกเล่นตัวหนังสือโคลงเคลงชวนยิ้ม"
+  },
+  {
+    "songId": 1532,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน เพลงรักสองหัวใจ",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1533,
+    "animeId": 3,
+    "category": "sad",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน ไวโอเล็ต เอเวอร์การ์เดน",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1534,
+    "animeId": 2,
+    "category": "love",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน สารภาพรักกับคุณคางุยะซะดีๆ",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1535,
+    "animeId": 18,
+    "category": "sad",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน ดอกไม้ มิตรภาพ และความทรงจำ",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1536,
+    "animeId": 9,
+    "category": "sad",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน หลับตาฝัน ถึงชื่อเธอ",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1537,
+    "animeId": 5,
+    "category": "chill",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน มหาเวทย์ผนึกมาร",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1538,
+    "animeId": 14,
+    "category": "love",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน โฮริมิยะ สาวมั่นกับนายมืดมน",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1539,
+    "animeId": 2,
+    "category": "chill",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน สารภาพรักกับคุณคางุยะซะดีๆ",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1540,
+    "animeId": 20,
+    "category": "hype",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน ฝากใจไปถึงเธอ",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1541,
+    "animeId": 14,
+    "category": "love",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน โฮริมิยะ สาวมั่นกับนายมืดมน",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1542,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน เพลงรักสองหัวใจ",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1543,
+    "animeId": 3,
+    "category": "love",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน ไวโอเล็ต เอเวอร์การ์เดน",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1544,
+    "animeId": 5,
+    "category": "chill",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน มหาเวทย์ผนึกมาร",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1545,
+    "animeId": 9,
+    "category": "sad",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน หลับตาฝัน ถึงชื่อเธอ",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1546,
+    "animeId": 3,
+    "category": "sad",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน ไวโอเล็ต เอเวอร์การ์เดน",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1547,
+    "animeId": 18,
+    "category": "sad",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน ดอกไม้ มิตรภาพ และความทรงจำ",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1548,
+    "animeId": 20,
+    "category": "hype",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน ฝากใจไปถึงเธอ",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1549,
+    "animeId": 14,
+    "category": "love",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน โฮริมิยะ สาวมั่นกับนายมืดมน",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1550,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน เพลงรักสองหัวใจ",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1551,
+    "animeId": 5,
+    "category": "chill",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน มหาเวทย์ผนึกมาร",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1552,
+    "animeId": 9,
+    "category": "sad",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน หลับตาฝัน ถึงชื่อเธอ",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1553,
+    "animeId": 20,
+    "category": "hype",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน ฝากใจไปถึงเธอ",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1554,
+    "animeId": 3,
+    "category": "sad",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน ไวโอเล็ต เอเวอร์การ์เดน",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1555,
+    "animeId": 14,
+    "category": "love",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน โฮริมิยะ สาวมั่นกับนายมืดมน",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1556,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน เพลงรักสองหัวใจ",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1557,
+    "animeId": 2,
+    "category": "love",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน สารภาพรักกับคุณคางุยะซะดีๆ",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1558,
+    "animeId": 5,
+    "category": "chill",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน มหาเวทย์ผนึกมาร",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1559,
+    "animeId": 9,
+    "category": "sad",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน หลับตาฝัน ถึงชื่อเธอ",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1560,
+    "animeId": 20,
+    "category": "hype",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน ฝากใจไปถึงเธอ",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1561,
+    "animeId": 18,
+    "category": "sad",
+    "badge": "🇱🇦 ม่วนคักสไตล์ลาว",
+    "reason": "กลิ่นอายดนตรีลาว-อีสาน ผสมความจริงใจ เข้ากับเรื่องราวชีวิตและความผูกพันใน ดอกไม้ มิตรภาพ และความทรงจำ",
+    "typoIdea": "ฟอนต์ลายมือพื้นบ้าน มีเส้นสายพริ้วไหวและโทนสีอบอุ่นสไตล์อินดี้ธรรมชาติ"
+  },
+  {
+    "songId": 1562,
+    "animeId": 20,
+    "category": "hype",
+    "badge": "🔥 แอคชั่นเดือด",
+    "reason": "จังหวะเร้าใจระเบิดพลัง เข้ากับการต่อสู้สุดดุเดือดของ ฝากใจไปถึงเธอ",
+    "typoIdea": "ฟอนต์ตัวหนาขอบคม มีเอฟเฟกต์ไฟลุกและสั่นสะเทือนตามเสียงกระแทกกลอง"
+  },
+  {
+    "songId": 1563,
+    "animeId": 2,
+    "category": "love",
+    "badge": "✨ เพลงฮิตไทโป",
+    "reason": "ท่อนฮุคและเมโลดี้เข้ากับบรรยากาศของ สารภาพรักกับคุณคางุยะซะดีๆ",
+    "typoIdea": "ตัวอักษรเคลื่อนไหวตามจังหวะเบส พร้อมเอฟเฟกต์แสงเงาสะท้อนอารมณ์เพลง"
+  },
+  {
+    "songId": 1564,
+    "animeId": 5,
+    "category": "chill",
+    "badge": "✨ เพลงฮิตไทโป",
+    "reason": "ท่อนฮุคและเมโลดี้เข้ากับบรรยากาศของ มหาเวทย์ผนึกมาร",
+    "typoIdea": "ตัวอักษรเคลื่อนไหวตามจังหวะเบส พร้อมเอฟเฟกต์แสงเงาสะท้อนอารมณ์เพลง"
+  },
+  {
+    "songId": 1565,
+    "animeId": 14,
+    "category": "love",
+    "badge": "✨ เพลงฮิตไทโป",
+    "reason": "ท่อนฮุคและเมโลดี้เข้ากับบรรยากาศของ โฮริมิยะ สาวมั่นกับนายมืดมน",
+    "typoIdea": "ตัวอักษรเคลื่อนไหวตามจังหวะเบส พร้อมเอฟเฟกต์แสงเงาสะท้อนอารมณ์เพลง"
+  },
+  {
+    "songId": 1566,
+    "animeId": 20,
+    "category": "hype",
+    "badge": "🔥 แอคชั่นเดือด",
+    "reason": "จังหวะเร้าใจระเบิดพลัง เข้ากับการต่อสู้สุดดุเดือดของ ฝากใจไปถึงเธอ",
+    "typoIdea": "ฟอนต์ตัวหนาขอบคม มีเอฟเฟกต์ไฟลุกและสั่นสะเทือนตามเสียงกระแทกกลอง"
+  },
+  {
+    "songId": 1567,
+    "animeId": 1,
+    "category": "love",
+    "badge": "✨ เพลงฮิตไทโป",
+    "reason": "ท่อนฮุคและเมโลดี้เข้ากับบรรยากาศของ เพลงรักสองหัวใจ",
+    "typoIdea": "ตัวอักษรเคลื่อนไหวตามจังหวะเบส พร้อมเอฟเฟกต์แสงเงาสะท้อนอารมณ์เพลง"
+  },
+  {
+    "songId": 1568,
+    "animeId": 2,
+    "category": "hype",
+    "badge": "🔥 แอคชั่นเดือด",
+    "reason": "จังหวะเร้าใจระเบิดพลัง เข้ากับการต่อสู้สุดดุเดือดของ สารภาพรักกับคุณคางุยะซะดีๆ",
+    "typoIdea": "ฟอนต์ตัวหนาขอบคม มีเอฟเฟกต์ไฟลุกและสั่นสะเทือนตามเสียงกระแทกกลอง"
+  },
+  {
+    "songId": 1569,
+    "animeId": 20,
+    "category": "hype",
+    "badge": "🔥 แอคชั่นเดือด",
+    "reason": "จังหวะเร้าใจระเบิดพลัง เข้ากับการต่อสู้สุดดุเดือดของ ฝากใจไปถึงเธอ",
+    "typoIdea": "ฟอนต์ตัวหนาขอบคม มีเอฟเฟกต์ไฟลุกและสั่นสะเทือนตามเสียงกระแทกกลอง"
+  },
+  {
+    "songId": 1570,
+    "animeId": 5,
+    "category": "chill",
+    "badge": "✨ เพลงฮิตไทโป",
+    "reason": "ท่อนฮุคและเมโลดี้เข้ากับบรรยากาศของ มหาเวทย์ผนึกมาร",
+    "typoIdea": "ตัวอักษรเคลื่อนไหวตามจังหวะเบส พร้อมเอฟเฟกต์แสงเงาสะท้อนอารมณ์เพลง"
+  },
+  {
+    "songId": 1571,
+    "animeId": 20,
+    "category": "hype",
+    "badge": "🔥 แอคชั่นเดือด",
+    "reason": "จังหวะเร้าใจระเบิดพลัง เข้ากับการต่อสู้สุดดุเดือดของ ฝากใจไปถึงเธอ",
+    "typoIdea": "ฟอนต์ตัวหนาขอบคม มีเอฟเฟกต์ไฟลุกและสั่นสะเทือนตามเสียงกระแทกกลอง"
+  },
+  {
+    "songId": 1572,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "💔 ดราม่าบีบหัวใจ",
+    "reason": "อารมณ์เพลงเศร้าลึกซึ้ง ส่งต่อความรู้สึกของการสูญเสียและความคิดถึงเข้ากับ เพลงรักสองหัวใจ",
+    "typoIdea": "ตัวหนังสือสไตล์มินิมอล ค่อยๆ จางหายไปในหมอกควันและหยดน้ำตา"
+  },
+  {
+    "songId": 1573,
+    "animeId": 14,
+    "category": "love",
+    "badge": "✨ เพลงฮิตไทโป",
+    "reason": "ท่อนฮุคและเมโลดี้เข้ากับบรรยากาศของ โฮริมิยะ สาวมั่นกับนายมืดมน",
+    "typoIdea": "ตัวอักษรเคลื่อนไหวตามจังหวะเบส พร้อมเอฟเฟกต์แสงเงาสะท้อนอารมณ์เพลง"
+  },
+  {
+    "songId": 1574,
+    "animeId": 5,
+    "category": "chill",
+    "badge": "✨ เพลงฮิตไทโป",
+    "reason": "ท่อนฮุคและเมโลดี้เข้ากับบรรยากาศของ มหาเวทย์ผนึกมาร",
+    "typoIdea": "ตัวอักษรเคลื่อนไหวตามจังหวะเบส พร้อมเอฟเฟกต์แสงเงาสะท้อนอารมณ์เพลง"
+  },
+  {
+    "songId": 1575,
+    "animeId": 9,
+    "category": "chill",
+    "badge": "✨ เพลงฮิตไทโป",
+    "reason": "ท่อนฮุคและเมโลดี้เข้ากับบรรยากาศของ หลับตาฝัน ถึงชื่อเธอ",
+    "typoIdea": "ตัวอักษรเคลื่อนไหวตามจังหวะเบส พร้อมเอฟเฟกต์แสงเงาสะท้อนอารมณ์เพลง"
+  },
+  {
+    "songId": 1576,
+    "animeId": 14,
+    "category": "love",
+    "badge": "✨ เพลงฮิตไทโป",
+    "reason": "ท่อนฮุคและเมโลดี้เข้ากับบรรยากาศของ โฮริมิยะ สาวมั่นกับนายมืดมน",
+    "typoIdea": "ตัวอักษรเคลื่อนไหวตามจังหวะเบส พร้อมเอฟเฟกต์แสงเงาสะท้อนอารมณ์เพลง"
+  },
+  {
+    "songId": 1577,
+    "animeId": 20,
+    "category": "hype",
+    "badge": "🔥 แอคชั่นเดือด",
+    "reason": "จังหวะเร้าใจระเบิดพลัง เข้ากับการต่อสู้สุดดุเดือดของ ฝากใจไปถึงเธอ",
+    "typoIdea": "ฟอนต์ตัวหนาขอบคม มีเอฟเฟกต์ไฟลุกและสั่นสะเทือนตามเสียงกระแทกกลอง"
+  },
+  {
+    "songId": 1578,
+    "animeId": 2,
+    "category": "hype",
+    "badge": "🔥 แอคชั่นเดือด",
+    "reason": "จังหวะเร้าใจระเบิดพลัง เข้ากับการต่อสู้สุดดุเดือดของ สารภาพรักกับคุณคางุยะซะดีๆ",
+    "typoIdea": "ฟอนต์ตัวหนาขอบคม มีเอฟเฟกต์ไฟลุกและสั่นสะเทือนตามเสียงกระแทกกลอง"
+  },
+  {
+    "songId": 1579,
+    "animeId": 20,
+    "category": "hype",
+    "badge": "🔥 แอคชั่นเดือด",
+    "reason": "จังหวะเร้าใจระเบิดพลัง เข้ากับการต่อสู้สุดดุเดือดของ ฝากใจไปถึงเธอ",
+    "typoIdea": "ฟอนต์ตัวหนาขอบคม มีเอฟเฟกต์ไฟลุกและสั่นสะเทือนตามเสียงกระแทกกลอง"
+  },
+  {
+    "songId": 1580,
+    "animeId": 1,
+    "category": "sad",
+    "badge": "💔 ดราม่าบีบหัวใจ",
+    "reason": "อารมณ์เพลงเศร้าลึกซึ้ง ส่งต่อความรู้สึกของการสูญเสียและความคิดถึงเข้ากับ เพลงรักสองหัวใจ",
+    "typoIdea": "ตัวหนังสือสไตล์มินิมอล ค่อยๆ จางหายไปในหมอกควันและหยดน้ำตา"
+  },
+  {
+    "songId": 1581,
+    "animeId": 5,
+    "category": "chill",
+    "badge": "✨ เพลงฮิตไทโป",
+    "reason": "ท่อนฮุคและเมโลดี้เข้ากับบรรยากาศของ มหาเวทย์ผนึกมาร",
+    "typoIdea": "ตัวอักษรเคลื่อนไหวตามจังหวะเบส พร้อมเอฟเฟกต์แสงเงาสะท้อนอารมณ์เพลง"
+  },
+  {
+    "songId": 1582,
+    "animeId": 2,
+    "category": "love",
+    "badge": "🇰🇷 K-Pop สเตจสุดปัง",
+    "reason": "บีทจัดจ้านและโฟลว์การร้องทรงพลัง เข้ากับความแฟนตาซีและความคมชัดของ สารภาพรักกับคุณคางุยะซะดีๆ",
+    "typoIdea": "ไทโปตัวหนังสือสะบัดนีออน คมชัด เคลื่อนไหวรวดเร็วตามจังหวะเต้นและดรอปเบส"
+  },
+  {
+    "songId": 1583,
+    "animeId": 20,
+    "category": "hype",
+    "badge": "🇰🇷 K-Pop สเตจสุดปัง",
+    "reason": "บีทจัดจ้านและโฟลว์การร้องทรงพลัง เข้ากับความแฟนตาซีและความคมชัดของ ฝากใจไปถึงเธอ",
+    "typoIdea": "ไทโปตัวหนังสือสะบัดนีออน คมชัด เคลื่อนไหวรวดเร็วตามจังหวะเต้นและดรอปเบส"
+  },
+  {
+    "songId": 1584,
+    "animeId": 20,
+    "category": "hype",
+    "badge": "🇰🇷 K-Pop สเตจสุดปัง",
+    "reason": "บีทจัดจ้านและโฟลว์การร้องทรงพลัง เข้ากับความแฟนตาซีและความคมชัดของ ฝากใจไปถึงเธอ",
+    "typoIdea": "ไทโปตัวหนังสือสะบัดนีออน คมชัด เคลื่อนไหวรวดเร็วตามจังหวะเต้นและดรอปเบส"
+  },
+  {
+    "songId": 1585,
+    "animeId": 20,
+    "category": "hype",
+    "badge": "🔥 แอคชั่นเดือด",
+    "reason": "จังหวะเร้าใจระเบิดพลัง เข้ากับการต่อสู้สุดดุเดือดของ ฝากใจไปถึงเธอ",
+    "typoIdea": "ฟอนต์ตัวหนาขอบคม มีเอฟเฟกต์ไฟลุกและสั่นสะเทือนตามเสียงกระแทกกลอง"
+  },
+  {
+    "songId": 1586,
+    "animeId": 5,
+    "category": "chill",
+    "badge": "✨ เพลงฮิตไทโป",
+    "reason": "ท่อนฮุคและเมโลดี้เข้ากับบรรยากาศของ มหาเวทย์ผนึกมาร",
+    "typoIdea": "ตัวอักษรเคลื่อนไหวตามจังหวะเบส พร้อมเอฟเฟกต์แสงเงาสะท้อนอารมณ์เพลง"
+  },
+  {
+    "songId": 1587,
+    "animeId": 20,
+    "category": "hype",
+    "badge": "🔥 แอคชั่นเดือด",
+    "reason": "จังหวะเร้าใจระเบิดพลัง เข้ากับการต่อสู้สุดดุเดือดของ ฝากใจไปถึงเธอ",
+    "typoIdea": "ฟอนต์ตัวหนาขอบคม มีเอฟเฟกต์ไฟลุกและสั่นสะเทือนตามเสียงกระแทกกลอง"
+  },
+  {
+    "songId": 1588,
+    "animeId": 5,
+    "category": "chill",
+    "badge": "✨ เพลงฮิตไทโป",
+    "reason": "ท่อนฮุคและเมโลดี้เข้ากับบรรยากาศของ มหาเวทย์ผนึกมาร",
+    "typoIdea": "ตัวอักษรเคลื่อนไหวตามจังหวะเบส พร้อมเอฟเฟกต์แสงเงาสะท้อนอารมณ์เพลง"
+  },
+  {
+    "songId": 1589,
+    "animeId": 1,
+    "category": "love",
+    "badge": "🇰🇷 K-Pop สเตจสุดปัง",
+    "reason": "บีทจัดจ้านและโฟลว์การร้องทรงพลัง เข้ากับความแฟนตาซีและความคมชัดของ เพลงรักสองหัวใจ",
+    "typoIdea": "ไทโปตัวหนังสือสะบัดนีออน คมชัด เคลื่อนไหวรวดเร็วตามจังหวะเต้นและดรอปเบส"
+  },
+  {
+    "songId": 1590,
+    "animeId": 2,
+    "category": "chill",
+    "badge": "🇰🇷 K-Pop สเตจสุดปัง",
+    "reason": "บีทจัดจ้านและโฟลว์การร้องทรงพลัง เข้ากับความแฟนตาซีและความคมชัดของ สารภาพรักกับคุณคางุยะซะดีๆ",
+    "typoIdea": "ไทโปตัวหนังสือสะบัดนีออน คมชัด เคลื่อนไหวรวดเร็วตามจังหวะเต้นและดรอปเบส"
+  },
+  {
+    "songId": 1591,
+    "animeId": 20,
+    "category": "hype",
+    "badge": "🇰🇷 K-Pop สเตจสุดปัง",
+    "reason": "บีทจัดจ้านและโฟลว์การร้องทรงพลัง เข้ากับความแฟนตาซีและความคมชัดของ ฝากใจไปถึงเธอ",
+    "typoIdea": "ไทโปตัวหนังสือสะบัดนีออน คมชัด เคลื่อนไหวรวดเร็วตามจังหวะเต้นและดรอปเบส"
   }
 ];
