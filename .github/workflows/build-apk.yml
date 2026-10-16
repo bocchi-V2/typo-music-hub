@@ -148,7 +148,7 @@ jobs:
               private ScheduledExecutorService updateScheduler;
               private static final String CHANNEL_ID = "haimiya_system_updates";
               private static final int NOTIF_ID = 20261016;
-              public static int CURRENT_VERSION_CODE = 1792161000;
+              public static int CURRENT_VERSION_CODE = 1792161500;
 
               @Override
               public void onCreate(Bundle savedInstanceState) {
@@ -312,8 +312,17 @@ jobs:
                               pipBuilder.setAutoEnterEnabled(true);
                           }
                           enterPictureInPictureMode(pipBuilder.build());
+                      } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                          enterPictureInPictureMode();
                       }
-                  } catch (Exception e) {}
+                  } catch (Exception e) {
+                      // Fallback สำหรับ Android 10 หรืออุปกรณ์ที่จำกัดสัดส่วน aspect ratio
+                      try {
+                          if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                              enterPictureInPictureMode();
+                          }
+                      } catch (Exception ex) {}
+                  }
               }
 
               @Override
@@ -357,10 +366,12 @@ jobs:
               public void onResume() {
                   super.onResume();
                   try {
-                      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                      if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                           PictureInPictureParams.Builder pipBuilder = new PictureInPictureParams.Builder();
                           pipBuilder.setAspectRatio(new Rational(9, 16));
-                          pipBuilder.setAutoEnterEnabled(true);
+                          if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+                              pipBuilder.setAutoEnterEnabled(true);
+                          }
                           setPictureInPictureParams(pipBuilder.build());
                       }
                   } catch (Exception e) {}
