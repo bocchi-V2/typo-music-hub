@@ -4296,4 +4296,159 @@ header#hero {
   }
 }
 
+/* ===================================
+   IN-APP UPDATE NOTIFICATION BANNER
+   =================================== */
+.in-app-update-banner {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  max-width: 1200px;
+  margin: 75px auto 0 auto;
+  padding: 0 1rem;
+  animation: slideDownUpdate 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideDownUpdate {
+  from {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.update-banner-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.94), rgba(30, 41, 59, 0.94));
+  border: 1.5px solid rgba(56, 189, 248, 0.55);
+  box-shadow: 0 8px 30px rgba(56, 189, 248, 0.25), 0 0 20px rgba(99, 102, 241, 0.2);
+  border-radius: 16px;
+  padding: 0.85rem 1.3rem;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.update-banner-left {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.update-banner-icon {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(56, 189, 248, 0.15);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  flex-shrink: 0;
+  animation: pulseRocket 2s infinite ease-in-out;
+}
+
+@keyframes pulseRocket {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.8)); }
+}
+
+.update-banner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.update-banner-text strong {
+  font-size: 0.95rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.update-banner-text span {
+  font-size: 0.82rem;
+  color: #94a3b8;
+  line-height: 1.4;
+}
+
+.update-banner-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.btn-banner-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  font-family: 'Kanit', sans-serif;
+  color: #fff;
+  background: linear-gradient(135deg, #0284c7, #38bdf8);
+  border: none;
+  box-shadow: 0 4px 16px rgba(56, 189, 248, 0.4);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+}
+
+.btn-banner-download:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.6);
+  color: #fff;
+}
+
+.btn-banner-close {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #94a3b8;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.btn-banner-close:hover {
+  background: rgba(239, 68, 68, 0.25);
+  color: #ef4444;
+  border-color: rgba(239, 68, 68, 0.4);
+}
+
+@media (max-width: 768px) {
+  .in-app-update-banner {
+    margin-top: 65px;
+    padding: 0 0.75rem;
+  }
+  .update-banner-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    padding: 0.9rem 1rem;
+  }
+  .update-banner-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .btn-banner-download {
+    flex: 1;
+  }
+}
+
 

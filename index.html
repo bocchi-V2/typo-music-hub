@@ -93,6 +93,25 @@
     </div>
   </nav>
 
+  <!-- IN-APP UPDATE NOTIFICATION BANNER (แจ้งเตือนอัปเดตแอปโดยไม่ต้องลบแอปเก่า) -->
+  <div id="in-app-update-banner" class="in-app-update-banner" style="display: none;">
+    <div class="update-banner-inner">
+      <div class="update-banner-left">
+        <span class="update-banner-icon">🚀</span>
+        <div class="update-banner-text">
+          <strong id="update-banner-title">มีอัปเดต Haimiya Typo เวอร์ชันใหม่!</strong>
+          <span id="update-banner-desc">อัปเดตทับแอปเดิมได้ทันที 100% ข้อมูลไม่หาย (ไม่ต้องลบแอปเก่า)</span>
+        </div>
+      </div>
+      <div class="update-banner-actions">
+        <a id="btn-banner-update" href="https://github.com/bocchi-V2/typo-music-hub/releases/latest/download/HaimiyaTypo.apk" class="btn btn-sm btn-primary" target="_blank">
+          ⚡ ดาวน์โหลดและติดตั้งอัปเดต
+        </a>
+        <button class="btn-banner-close" onclick="dismissUpdateBanner()" aria-label="ปิดการแจ้งเตือน">✕</button>
+      </div>
+    </div>
+  </div>
+
   <header class="hero" id="hero">
     <div class="hero-bg-overlay"></div>
     <div class="hero-content">
@@ -535,15 +554,16 @@
           </button>
           
           <!-- Option 2: Download APK -->
-          <a id="btn-apk-download" href="https://github.com/bocchi-V2/typo-music-hub/releases" target="_blank" class="btn btn-ghost" style="width: 100%; justify-content: center; font-size: 0.95rem; border-color: rgba(56, 189, 248, 0.5); color: #38bdf8; text-decoration: none; padding: 0.9rem;">
-            📥 ดาวน์โหลดไฟล์ APK สำหรับ Android (.apk)
+          <a id="btn-apk-download" href="https://github.com/bocchi-V2/typo-music-hub/releases/latest/download/HaimiyaTypo.apk" target="_blank" class="btn btn-ghost" style="width: 100%; justify-content: center; font-size: 0.95rem; border-color: rgba(56, 189, 248, 0.5); color: #38bdf8; text-decoration: none; padding: 0.9rem;">
+            📥 ดาวน์โหลดไฟล์ APK สำหรับ Android (อัปเดตทับได้ทันที)
           </a>
         </div>
 
         <div style="margin-top: 1.4rem; padding: 0.9rem 1.1rem; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; font-size: 0.82rem; color: #94a3b8; text-align: left; line-height: 1.6;">
-          💡 <strong>วิธีติดตั้งบนมือถือ:</strong><br/>
-          • <strong>Android / iOS (ผ่านเบราว์เซอร์):</strong> กดปุ่ม <em>"ติดตั้งลงหน้าจอมือถือทันที"</em> หรือกดปุ่ม 3 จุดใน Chrome แล้วเลือก <em>"เพิ่มลงในหน้าจอหลัก (Install App)"</em><br/>
-          • <strong>ไฟล์ APK:</strong> กดปุ่ม <em>"ดาวน์โหลดไฟล์ APK"</em> เพื่อนำไฟล์ไปติดตั้งในเครื่อง Android ได้ทันที
+          💡 <strong>วิธีติดตั้งและอัปเดต:</strong><br/>
+          • <strong>ติดตั้งทับได้ทันที:</strong> สามารถกดติดตั้งไฟล์ APK ทับของเดิมได้เลย <u>ไม่ต้องลบแอปเก่า</u> ข้อมูลและเพลงที่บันทึกไว้จะไม่หาย<br/>
+          • <strong>ซิงค์เพลงสดอัตโนมัติ (OTA):</strong> เมื่อมีเพลงหรืออนิเมะใหม่ แอปจะซิงค์ให้อัตโนมัติเมื่อเชื่อมต่อเน็ต โดยไม่ต้องโหลด APK ใหม่ทุกครั้ง<br/>
+          • <strong>เว็บแอป (PWA):</strong> กดปุ่ม <em>"ติดตั้งลงหน้าจอมือถือทันที"</em> เพื่อเปิดเป็นแอปบนเครื่องได้เลย
         </div>
       </div>
     </div>

@@ -433,6 +433,18 @@ function autoFixCommonBugs(data) {
     // Save fixed data
     const output = `const ANIMES = ${JSON.stringify(ANIMES, null, 2)};\n\nconst SONGS = ${JSON.stringify(SONGS, null, 2)};\n\nconst ANIME_PAIRS = ${JSON.stringify(ANIME_PAIRS, null, 2)};\n`;
     fs.writeFileSync('data.js', output, 'utf8');
+
+    const vData = {
+      version: `2.${new Date().toISOString().slice(0, 10).replace(/-/g, '')}.${new Date().getHours()}`,
+      versionCode: Math.floor(Date.now() / 1000),
+      songCount: SONGS.length,
+      animeCount: ANIMES.length,
+      updatedAt: new Date().toISOString(),
+      appName: "Haimiya Typo",
+      releaseUrl: "https://github.com/bocchi-V2/typo-music-hub/releases/latest"
+    };
+    fs.writeFileSync('version.json', JSON.stringify(vData, null, 2), 'utf8');
+
     console.log(`   ✅ แก้ไขบัคข้อมูล ${fixCount} รายการ`);
     fixes.push(`Auto-fixed ${fixCount} data bugs`);
     totalChanges++;

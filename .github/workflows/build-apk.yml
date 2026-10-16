@@ -22,6 +22,8 @@ on:
       - 'app-icon.jpg'
       - 'bg-hero.jpg'
       - 'blue_relax.m4a'
+      - 'version.json'
+      - 'configure_android.js'
       - '.github/workflows/build-apk.yml'
 
 jobs:
@@ -49,7 +51,7 @@ jobs:
       - name: 📁 จัดเตรียมไฟล์เว็บสำหรับแอป (www Directory)
         run: |
           mkdir -p www
-          for f in index.html style.css app.js data.js manifest.json sw.js splash-cover.jpg loading-chibi.jpg haimiya_yaho.mp3 favicon-logo.jpg dice-roll.mp3 app-icon.jpg bg-hero.jpg blue_relax.m4a; do
+          for f in index.html style.css app.js data.js version.json manifest.json sw.js splash-cover.jpg loading-chibi.jpg haimiya_yaho.mp3 favicon-logo.jpg dice-roll.mp3 app-icon.jpg bg-hero.jpg blue_relax.m4a; do
             if [ -f "$f" ]; then cp "$f" www/; fi
           done
           # Copy optional files that might exist
@@ -71,19 +73,58 @@ jobs:
           npx cap add android
           npx cap sync android
 
-          # ปลดล็อกระบบบล็อกเสียงใน Android WebView และหยุดการทำงานเสียง/ตัวจับเวลาเมื่อกดออกจากแอป
+      - name: 🔑 จัดเตรียม Android Signing Keystore ถาวร (ป้องกันปัญหาต้องลบแอปเพื่อลงใหม่)
+        run: |
+          if [ ! -f "haimiya.keystore" ]; then
+            echo "⚙️ กำลังสร้าง haimiya.keystore ถาวรชุดแรก..."
+            keytool -genkeypair -v \
+              -keystore haimiya.keystore \
+              -alias haimiya \
+              -keyalg RSA \
+              -keysize 2048 \
+              -validity 10000 \
+              -storepass "HaimiyaTypo2026" \
+              -keypass "HaimiyaTypo2026" \
+              -dname "CN=Haimiya Typo, OU=Mobile, O=Haimiya Studio, L=Bangkok, ST=Bangkok, C=TH"
+            
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add haimiya.keystore
+            git commit -m "chore: persist permanent keystore for seamless APK update without uninstall [skip ci]" || true
+            git push origin master || true
+          fi
+          cp haimiya.keystore android/app/haimiya.keystore
+          echo "✅ คัดลอก haimiya.keystore ไปยัง android/app/ สำเร็จ"
+
+      - name: ⚙️ ปรับแต่ง build.gradle (VersionCode เพิ่มตลอดเวลา + Signing ถาวร)
+        run: |
+          node configure_android.js
+
+          # ปลดล็อกระบบเสียงเบื้องหลัง (Background Audio) ให้เล่นต่อเนื่อง ไม่กระตุก เมื่อกดออกจากแอปหรือพักหน้าจอ
           cat <<'EOF' > android/app/src/main/java/com/haimiya/typo/MainActivity.java
           package com.haimiya.typo;
 
           import android.os.Bundle;
+          import android.os.PowerManager;
+          import android.content.Context;
           import android.webkit.WebSettings;
           import android.webkit.WebView;
           import com.getcapacitor.BridgeActivity;
 
           public class MainActivity extends BridgeActivity {
+              private PowerManager.WakeLock wakeLock;
+
               @Override
               public void onCreate(Bundle savedInstanceState) {
                   super.onCreate(savedInstanceState);
+                  try {
+                      PowerManager powerManager = (PowerManager) getSystemService(Context.POWER_SERVICE);
+                      if (powerManager != null) {
+                          wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "HaimiyaTypo::BgAudioWakeLock");
+                          wakeLock.acquire(12 * 60 * 60 * 1000L);
+                      }
+                  } catch (Exception e) {}
+
                   try {
                       WebView webView = getBridge().getWebView();
                       if (webView != null) {
@@ -100,26 +141,28 @@ jobs:
               @Override
               public void onPause() {
                   super.onPause();
-                  try {
-                      WebView webView = getBridge().getWebView();
-                      if (webView != null) {
-                          webView.onPause();
-                      }
-                  } catch (Exception e) {}
+                  // ไม่เรียก webView.onPause() เพื่อให้เพลงเล่นเบื้องหลังได้อย่างต่อเนื่อง ราบรื่น ไม่กระตุก
               }
 
               @Override
               public void onResume() {
                   super.onResume();
+              }
+
+              @Override
+              public void onDestroy() {
+                  super.onDestroy();
                   try {
-                      WebView webView = getBridge().getWebView();
-                      if (webView != null) {
-                          webView.onResume();
+                      if (wakeLock != null && wakeLock.isHeld()) {
+                          wakeLock.release();
                       }
                   } catch (Exception e) {}
               }
           }
           EOF
+
+          # เพิ่มสิทธิ์ WAKE_LOCK และ FOREGROUND_SERVICE ใน AndroidManifest.xml เพื่อการเล่นเพลงเบื้องหลังที่เสถียร
+          sed -i 's/<\/manifest>/    <uses-permission android:name="android.permission.WAKE_LOCK" \/>\n    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" \/>\n<\/manifest>/g' android/app/src/main/AndroidManifest.xml
 
       - name: 🎨 ตั้งค่าไอคอนแอป (App Icon)
         run: |
@@ -193,17 +236,18 @@ jobs:
             ### 🌸 Haimiya Typo (ไฮมิยะไทโป) ${{ steps.version.outputs.tag }} สำหรับ Android
             
             ไฟล์ APK สำหรับติดตั้งลงสมาร์ตโฟนหรือแท็บเล็ต Android ได้โดยตรง
+            - 🔄 **อัปเดตทับได้ทันที:** ติดตั้งทับแอปเดิมได้ทันทีโดยไม่ต้องถอนการติดตั้ง ข้อมูลที่บันทึกไว้จะไม่หาย
+            - ⚡ **ซิงค์เพลงสด (OTA Live Sync):** มีเพลงใหม่ซิงค์เข้าแอปอัตโนมัติเมื่อต่อเน็ต ไม่จำเป็นต้องโหลด APK ใหม่ทุกครั้ง
             - 🎙️ เสียงต้อนรับ "Yaho!" จากคุณไฮมิยะ เล่นอัตโนมัติ
             - 🖼️ ภาพพื้นหลัง Splash Screen + หน้าหลัก
             - 💬 ข้อความทักทาย "こんにちは ✨" ลอยลงมา
             - 💙 ไอคอนสาวอนิเมะผมเงินตาฟ้า
             - 🌀 ตัวการ์ตูน Chibi หมุนตามหลอดโหลด
             - 🎵 คลังเพลงตัดต่อไทโปอัพเดทล่าสุด
-            - 🔧 บำรุงรักษา UI อัตโนมัติทุก 7 วัน
             
-            **วิธีติดตั้ง:**
+            **วิธีติดตั้ง / อัปเดต:**
             1. ดาวน์โหลดไฟล์ `HaimiyaTypo.apk` ด้านล่างนี้
-            2. กดเปิดไฟล์บนเครื่อง Android และเลือก **"ติดตั้ง (Install)"**
+            2. กดเปิดไฟล์บนเครื่อง Android และเลือก **"ติดตั้ง / อัปเดต (Install/Update)"** ได้ทันทีโดยไม่ต้องลบแอปเก่า!
           files: dist-apk/HaimiyaTypo.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -284,6 +284,18 @@ async function runDailyUpdate() {
   const out = `const ANIMES = ${JSON.stringify(ANIMES, null, 2)};\n\nconst SONGS = ${JSON.stringify(SONGS, null, 2)};\n\nconst ANIME_PAIRS = ${JSON.stringify(ANIME_PAIRS, null, 2)};\n`;
   fs.writeFileSync('data.js', out, 'utf8');
 
+  // บันทึก version.json เพื่อให้แอพมือถือและเว็บซิงค์ข้อมูลใหม่ได้อัตโนมัติ (OTA Sync)
+  const versionData = {
+    version: `2.${new Date(now).toISOString().slice(0, 10).replace(/-/g, '')}.${new Date(now).getHours()}`,
+    versionCode: Math.floor(now / 1000),
+    songCount: SONGS.length,
+    animeCount: ANIMES.length,
+    updatedAt: new Date(now).toISOString(),
+    appName: "Haimiya Typo",
+    releaseUrl: "https://github.com/bocchi-V2/typo-music-hub/releases/latest"
+  };
+  fs.writeFileSync('version.json', JSON.stringify(versionData, null, 2), 'utf8');
+
   // บันทึกสถานะการซิงค์
   syncState.lastSyncTime = now;
   syncState.lastSyncDate = new Date(now).toISOString().split('T')[0];

@@ -22114,8 +22114,7 @@ const SONGS = [
     ],
     "reason": "เพลงฮิตแนวอินดี้โฟล์ก-ฮิปฮอป สไตล์ลุยปาร์ตี้ข้ามคืนยันฟ้าสว่าง ยามตี 4 เข้ากับมู้ดปล่อยใจในค่ำคืน",
     "typoIdea": "ไทโปตัวเขียนลายมือน่ารัก มีคลื่นควันบางเบาและลูกเล่นตัวหนังสือโคลงเคลงชวนยิ้ม"
-  }
-,
+  },
   {
     "id": 742,
     "title": "Ka La Ya (กัลยา)",
@@ -23095,6 +23094,5497 @@ const SONGS = [
     "animeMatch": [],
     "reason": "เพลงฮิตจากเพลย์ลิสต์ Spotify ที่เข้ากับการตัดคลิปไทโป",
     "typoIdea": "ใช้เอฟเฟกต์ข้อความ พลังงานสูง แฟลชเร็ว"
+  },
+  {
+    "id": 791,
+    "title": "Part Time",
+    "artist": "Cxpy, APE FREDDA",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 141,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/0f748c6a2a7c1e351530b67d74b360564b6d6f36",
+    "audioFallback": "https://p.scdn.co/mp3-preview/0f748c6a2a7c1e351530b67d74b360564b6d6f36",
+    "coverUrl": "https://media.kitsu.app/anime/1816/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0dlZBJfbNGMfAKYV5SHskT",
+    "animeId": 168
+  },
+  {
+    "id": 792,
+    "title": "Like Damn",
+    "artist": "Z9, The BESTS",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 140,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/ad26f59a5098ea1ff9961cf134ceaa5aa8d77238",
+    "audioFallback": "https://p.scdn.co/mp3-preview/ad26f59a5098ea1ff9961cf134ceaa5aa8d77238",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/df/fb/ac/mzi.sdzdumkl.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4wlmpwdyng4B4bObMnP3OS",
+    "animeId": 229
+  },
+  {
+    "id": 793,
+    "title": "โลกแห่งความฝัน",
+    "artist": "Rifle, Z9, Sexski",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 108,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/a5c7f456a7f639d0a0306b3e9cb419306dad805c",
+    "audioFallback": "https://p.scdn.co/mp3-preview/a5c7f456a7f639d0a0306b3e9cb419306dad805c",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/35/c2/77/35c2772c-1a0b-7fdd-a601-52b4baaa2134/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0tyYfrsTTiqK04TipBrIrg",
+    "animeId": 170
+  },
+  {
+    "id": 794,
+    "title": "Faded - Special Version",
+    "artist": "2Ectasy, Z9",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 142,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/01fcc57bf406d3bded2fc96fd19838cc7880439a",
+    "audioFallback": "https://p.scdn.co/mp3-preview/01fcc57bf406d3bded2fc96fd19838cc7880439a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/61/93/ee/6193eed8-37b0-4e7a-69c5-a3edede1c645/0.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5b2OC2aaioNReqHlQs1TbR",
+    "animeId": 147
+  },
+  {
+    "id": 795,
+    "title": "BABY SEXY",
+    "artist": "TEAMOST, YUNGTARR, DS_Punyazzz, PATCHARA, 4SIX",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 140,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/1905634993803cdaa141e3fb6f8016d9b22266c8",
+    "audioFallback": "https://p.scdn.co/mp3-preview/1905634993803cdaa141e3fb6f8016d9b22266c8",
+    "coverUrl": "https://media.kitsu.app/anime/47454/poster_image/medium-647eca310356254a1840a496f41ea57c.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/4Vbacl2YjS6F56K4TeIqMD",
+    "animeId": 208
+  },
+  {
+    "id": 796,
+    "title": "รักรักรักรักรักรักรัก",
+    "artist": "D Gerrard",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 114,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/19ee43e5d7cab66735671c737967f896051c6c42",
+    "audioFallback": "https://p.scdn.co/mp3-preview/19ee43e5d7cab66735671c737967f896051c6c42",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c6/e1/63/c6e1632b-e81b-e67a-a21f-79fb450bf96a/5054197946035.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1LV7y6Foa5JFMOUc0qyj4b",
+    "animeId": 35
+  },
+  {
+    "id": 797,
+    "title": "ฉันจะรีบบอกรักเธอ",
+    "artist": "T!NE",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 105,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/7bc49e3833737721db69e1ad33638fdfe3478cfc",
+    "audioFallback": "https://p.scdn.co/mp3-preview/7bc49e3833737721db69e1ad33638fdfe3478cfc",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/67/17/78/67177823-eea6-843e-2fd6-1cb45da0fa62/888332917599.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3yv2kSszlg31Ga5dWng3CQ",
+    "animeId": 81
+  },
+  {
+    "id": 798,
+    "title": "เคยรัก - Love Version",
+    "artist": "9tokyo, 2K",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 136,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/9623b462e27080706bc17174c85bef9d4c285d50",
+    "audioFallback": "https://p.scdn.co/mp3-preview/9623b462e27080706bc17174c85bef9d4c285d50",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/68/13/1a/68131a5d-89df-7df3-34ad-f3346732c39e/199513361088.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5fxHRVRuOMxLYlbrHYVMVK",
+    "animeId": 312
+  },
+  {
+    "id": 799,
+    "title": "Sunflower",
+    "artist": "ISLANDBOII, MASKETEER, 2K",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 130,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/5e374f012af1cfe37d8771481b9c9f3ef1e017c8",
+    "audioFallback": "https://p.scdn.co/mp3-preview/5e374f012af1cfe37d8771481b9c9f3ef1e017c8",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/43/49/29/43492942-3e96-6b69-2bc7-7baedcb818bb/3617394257797_cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3CjkBvz3xuRZ0m1jWTuZhV",
+    "animeId": 20
+  },
+  {
+    "id": 800,
+    "title": "มั่นใจหน่อยดิว่ะ",
+    "artist": "YUNGTARR",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 139,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/c8c9ec45072081cfe70f54d8610141f41d93a5a7",
+    "audioFallback": "https://p.scdn.co/mp3-preview/c8c9ec45072081cfe70f54d8610141f41d93a5a7",
+    "coverUrl": "https://media.kitsu.app/anime/45598/poster_image/medium-c9bf66231c51a0a552fbce2d91bb3a20.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/3qllosM3e50u675h2Ftdwu",
+    "animeId": 373
+  },
+  {
+    "id": 801,
+    "title": "เจอเธอ",
+    "artist": "7Vibes, pY-1, Saraki",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 141,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d920bd182d23811d8008ca61c48ade5a020d9e4a",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d920bd182d23811d8008ca61c48ade5a020d9e4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/13/90/81/13908186-c931-d749-8d05-9307ed125b3a/0.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3TtftKwIo17gntTHPKoACL",
+    "animeId": 237
+  },
+  {
+    "id": 802,
+    "title": "คนนี้ครับ",
+    "artist": "Z9, PLATHONG, 1KONG, ATLAS",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 129,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/5d6b3b72408b975a8f9098b42242bb09ee55cfca",
+    "audioFallback": "https://p.scdn.co/mp3-preview/5d6b3b72408b975a8f9098b42242bb09ee55cfca",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/9d/a2/c4/9da2c4c2-e3a0-a29e-3c5e-83764deb627c/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3YEVZESw8sgG0NLKO0QldM",
+    "animeId": 289
+  },
+  {
+    "id": 803,
+    "title": "เอาเป็นว่าฉันรักใครไม่เป็น",
+    "artist": "Jigsaw",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 113,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/a4e72a39337d2f5c1bab7db6e7667c3b92619181",
+    "audioFallback": "https://p.scdn.co/mp3-preview/a4e72a39337d2f5c1bab7db6e7667c3b92619181",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8271/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0DLs7wKjVzMxsA7YelQby4",
+    "animeId": 52
+  },
+  {
+    "id": 804,
+    "title": "Kiss for luv",
+    "artist": "Kennocha, Jungji, Migbizzy",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 122,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/a8580b937cc92c7ac7699f522c6460f58b5c9495",
+    "audioFallback": "https://p.scdn.co/mp3-preview/a8580b937cc92c7ac7699f522c6460f58b5c9495",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11614/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4N0LiJT8lMajHnLv5F5Iho",
+    "animeId": 9
+  },
+  {
+    "id": 805,
+    "title": "I Need A Girl",
+    "artist": "ILLSlick, MDSponx",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 128,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/17aa5c4670d6988b092940c2a5c6ba5edc2f169d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/17aa5c4670d6988b092940c2a5c6ba5edc2f169d",
+    "coverUrl": "https://media.kitsu.app/anime/46214/poster_image/medium-576598f2a2b60146ac60300c89339f25.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/0gvk6fOtFaSfJYV2KU6XtJ",
+    "animeId": 363
+  },
+  {
+    "id": 806,
+    "title": "จะรีบไปไหนทำไมไม่นอนนี่",
+    "artist": "Rifle, DAW",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 142,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/96e21aa72b1dad1af68abbf5c1a927e78b106769",
+    "audioFallback": "https://p.scdn.co/mp3-preview/96e21aa72b1dad1af68abbf5c1a927e78b106769",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/cd/d6/ea/cdd6ea6a-c821-1a74-7b5f-791431f329bd/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3UwrAJaeOqVCm0irEWcxy7",
+    "animeId": 394
+  },
+  {
+    "id": 807,
+    "title": "Stay Around Me",
+    "artist": "mind, 2Ectasy",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 141,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/f4f7864c8aa6ea6f8496109665c332c5bb889eba",
+    "audioFallback": "https://p.scdn.co/mp3-preview/f4f7864c8aa6ea6f8496109665c332c5bb889eba",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/c5/80/db/c580dbe2-3498-f681-c932-a3427553ed58/859779123379_cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4T7OcRER8SG3d9fwASDSCo",
+    "animeId": 144
+  },
+  {
+    "id": 808,
+    "title": "Vivienne Westwood",
+    "artist": "2Ectasy",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 128,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/4cd95d3b182d9d2abd12408013ed7b68969f0000",
+    "audioFallback": "https://p.scdn.co/mp3-preview/4cd95d3b182d9d2abd12408013ed7b68969f0000",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42260/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6gf3gCFZloUNpXnrZZd15z",
+    "animeId": 114
+  },
+  {
+    "id": 809,
+    "title": "One Of My Life",
+    "artist": "BLVCKHEART, K6Y",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 123,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/a65831698f8f9288607e289578ba9a95f2ea3509",
+    "audioFallback": "https://p.scdn.co/mp3-preview/a65831698f8f9288607e289578ba9a95f2ea3509",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/69/25/e3/6925e350-8b5f-f593-4447-6d0daac59b84/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6Mm77XGJld1QxvKyMrYbFj",
+    "animeId": 17
+  },
+  {
+    "id": 810,
+    "title": "แค่คุณ",
+    "artist": "Musketeers",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 132,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/e051387563abb68d0ce1d211e842f47c688e67bb",
+    "audioFallback": "https://p.scdn.co/mp3-preview/e051387563abb68d0ce1d211e842f47c688e67bb",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/74/59/b0/7459b064-30ad-b59e-ef94-f2f89a8906f6/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5u8iqPNTa3ryOqeiNdgi6o",
+    "animeId": 300
+  },
+  {
+    "id": 811,
+    "title": "เด็กอินเตอร์",
+    "artist": "YOUNGOHM",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 144,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/4134bbf70982962a4fa1212a50d7cf3e82bd67ea",
+    "audioFallback": "https://p.scdn.co/mp3-preview/4134bbf70982962a4fa1212a50d7cf3e82bd67ea",
+    "coverUrl": "https://media.kitsu.app/anime/46299/poster_image/medium-3e61ff8c6d376eb1c28c8fc029a59cf6.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/6koztzfSaFalbFxpiaFpjk",
+    "animeId": 130
+  },
+  {
+    "id": 812,
+    "title": "pretty girl",
+    "artist": "Kennocha, 2Ectasy",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 111,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/acd309db4d2adbfc9864b4f9b3d2debc8b17d9f3",
+    "audioFallback": "https://p.scdn.co/mp3-preview/acd309db4d2adbfc9864b4f9b3d2debc8b17d9f3",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/149/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1U7FBWOEucYeC3OdDemnI2",
+    "animeId": 344
+  },
+  {
+    "id": 813,
+    "title": "ONE GIRL",
+    "artist": "Saran, 2T FLOW, BLVCKHEART",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 123,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/5967f89f64446fd7008691d68fe05e6ca4e3dc4e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/5967f89f64446fd7008691d68fe05e6ca4e3dc4e",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/38/e2/30/38e2306a-9640-991c-418e-84159655e67d/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/021QfEXbcQjwwUHmXuDswD",
+    "animeId": 186
+  },
+  {
+    "id": 814,
+    "title": "Baby Tee",
+    "artist": "GALCHANIE",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 144,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/cd152d71e7a5f5534748f4d567b6f9a95099d2a2",
+    "audioFallback": "https://p.scdn.co/mp3-preview/cd152d71e7a5f5534748f4d567b6f9a95099d2a2",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ae/d8/94/aed89411-9e29-a8d4-9cab-17e24d21b5ef/199066666579.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0YRvcIlETPNLdasQYkJabY",
+    "animeId": 10
+  },
+  {
+    "id": 815,
+    "title": "If You",
+    "artist": "Sukid458",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 126,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/60b64ab9d4e6c30b4fd89368f080c7edd908a2a2",
+    "audioFallback": "https://p.scdn.co/mp3-preview/60b64ab9d4e6c30b4fd89368f080c7edd908a2a2",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13503/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4s7oibu54IVPJo66oIe68r",
+    "animeId": 43
+  },
+  {
+    "id": 816,
+    "title": "เพลงที่เธอไม่ฟัง",
+    "artist": "Bedroom Audio",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 133,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/654482c6ba0055a5220b42fe25deaeadef14536f",
+    "audioFallback": "https://p.scdn.co/mp3-preview/654482c6ba0055a5220b42fe25deaeadef14536f",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/e3/58/69/e358696c-6c66-c47b-9c3e-698e54b7ac0d/8859028151148.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6KRj0vz2JEk8Ykt1Q0KKZX",
+    "animeId": 135
+  },
+  {
+    "id": 817,
+    "title": "กุหลาบ",
+    "artist": "F.HERO, Kantong Tungngern, Saran",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 129,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/7d8ef1e5609d0c8369239851cb4be52ab22b7592",
+    "audioFallback": "https://p.scdn.co/mp3-preview/7d8ef1e5609d0c8369239851cb4be52ab22b7592",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/15/07/07/150707ae-c6c6-d8bc-4d18-bd0ddfa0f8b4/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1uFvvFnus5WZFizuRH02Q0",
+    "animeId": 38
+  },
+  {
+    "id": 818,
+    "title": "เธอไม่ชอบเด็ก ก.ท. เธอชอบแต่เด็กอัสสัมชัญ",
+    "artist": "Kakagoesbackhome",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 109,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/ffc3b29f5f3b647aa8a11ab0eb2ef90b99a24e0f",
+    "audioFallback": "https://p.scdn.co/mp3-preview/ffc3b29f5f3b647aa8a11ab0eb2ef90b99a24e0f",
+    "coverUrl": "https://media.kitsu.app/anime/47454/poster_image/medium-647eca310356254a1840a496f41ea57c.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/1jan7lM5FsAiDDTNUVUNec",
+    "animeId": 208
+  },
+  {
+    "id": 819,
+    "title": "Satin",
+    "artist": "YUNGTARR",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 135,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/9490b9492226fae3c20f5296a73dbdef5c86781e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/9490b9492226fae3c20f5296a73dbdef5c86781e",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5e/a2/f3/5ea2f3a1-e4ff-c5e1-7f42-c7fadbb73654/199806684856.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0Eqm1msB6wpMo9PgMOsAIx",
+    "animeId": 262
+  },
+  {
+    "id": 820,
+    "title": "take it off nail",
+    "artist": "YUNGTARR, yungkillie",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 131,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/64eb7bf836ee301826dfc368f8f0f186979eeb2b",
+    "audioFallback": "https://p.scdn.co/mp3-preview/64eb7bf836ee301826dfc368f8f0f186979eeb2b",
+    "coverUrl": "https://media.kitsu.app/anime/44032/poster_image/large-5b1626fbfbc64e8c4a4a2a2874be2afd.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/2cIhhuWvVhDHi6tKyN5Ln8",
+    "animeId": 84
+  },
+  {
+    "id": 821,
+    "title": "ดาวตก (Wish) [feat. Z9]",
+    "artist": "WANYAi, Z9",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 122,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/576181e08b0fae95262a9efd9c37f45f85d84d3a",
+    "audioFallback": "https://p.scdn.co/mp3-preview/576181e08b0fae95262a9efd9c37f45f85d84d3a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4f/3c/82/4f3c8259-5f22-4771-18cb-cc2066d3ee7a/5026854029924.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4YkPsxVBXkM4jBgMTAxtFz",
+    "animeId": 45
+  },
+  {
+    "id": 822,
+    "title": "เคยรัก",
+    "artist": "9tokyo, 2K",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 110,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/c7ffdd28de265739e29d4b2417d71027876f0f7c",
+    "audioFallback": "https://p.scdn.co/mp3-preview/c7ffdd28de265739e29d4b2417d71027876f0f7c",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d9/6b/3f/d96b3f26-3aa9-84ee-1a69-c2e7f9816cbd/199520022088.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5kphwAzHksSZrkrQbQdfXy",
+    "animeId": 246
+  },
+  {
+    "id": 823,
+    "title": "มีร่มให้ยืม",
+    "artist": "YUNGTARR",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 115,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/ee4db4e22d6f82f7294e572c21806d51cf7bf433",
+    "audioFallback": "https://p.scdn.co/mp3-preview/ee4db4e22d6f82f7294e572c21806d51cf7bf433",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/d7/7a/9f/d77a9f52-361c-ee0a-3029-f73801702328/197189375064.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7qzgSY999Nke2lWLb609pO",
+    "animeId": 278
+  },
+  {
+    "id": 824,
+    "title": "เข้าใจในส่วนผสม",
+    "artist": "YUNGTARR",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 119,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/1043a187154734f6ac9f02a53841bdc81d0258b6",
+    "audioFallback": "https://p.scdn.co/mp3-preview/1043a187154734f6ac9f02a53841bdc81d0258b6",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3853/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5HhygQkxcB1EdY4kyQh425",
+    "animeId": 259
+  },
+  {
+    "id": 825,
+    "title": "โคมไฟระย้า",
+    "artist": "YUNGTARR",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 117,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/2ba342b9292cffe3b0ad5d3671f8b558bd7bb817",
+    "audioFallback": "https://p.scdn.co/mp3-preview/2ba342b9292cffe3b0ad5d3671f8b558bd7bb817",
+    "coverUrl": "https://media.kitsu.app/anime/18/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1wIHZS46ZS4Ibaj3Pu3tT5",
+    "animeId": 200
+  },
+  {
+    "id": 826,
+    "title": "Seaside",
+    "artist": "YUNGTARR, SHOGUN®",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 144,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/127515b9e86d9b8adfdadd22538bcbebefcdc394",
+    "audioFallback": "https://p.scdn.co/mp3-preview/127515b9e86d9b8adfdadd22538bcbebefcdc394",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13925/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1wZWYCb3Lyhk4TuSnuThkK",
+    "animeId": 271
+  },
+  {
+    "id": 827,
+    "title": "สมดุลรัก",
+    "artist": "SEA., Sexski",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 130,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/524c094d63505a66d2d4b74ef5771feba4975be2",
+    "audioFallback": "https://p.scdn.co/mp3-preview/524c094d63505a66d2d4b74ef5771feba4975be2",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/00/c5/f0/00c5f03a-df27-b29f-37cd-a8719b6be7ea/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2luYdyxKSSxuC3cSW8N6A0",
+    "animeId": 34
+  },
+  {
+    "id": 828,
+    "title": "Loop",
+    "artist": "ASIA7",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 105,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/0cd12974de71773bb9173250cbac16dc0b45f418",
+    "audioFallback": "https://p.scdn.co/mp3-preview/0cd12974de71773bb9173250cbac16dc0b45f418",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1f/90/79/1f9079bf-ee9b-2879-4cec-caf1a4be5569/888332897877.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0KPwJv67axQ02t6gI2sw2X",
+    "animeId": 143
+  },
+  {
+    "id": 829,
+    "title": "บุษบา",
+    "artist": "เมนทอล",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 109,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/9372bb578c4a6f99602fb4dd9c9bcadcb1dba3fb",
+    "audioFallback": "https://p.scdn.co/mp3-preview/9372bb578c4a6f99602fb4dd9c9bcadcb1dba3fb",
+    "coverUrl": "https://media.kitsu.app/anime/45715/poster_image/medium-775439626fef38f5ca5fe646a095dcb5.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/2LCF0vtFyZ5BHaAU3KUSq2",
+    "animeId": 228
+  },
+  {
+    "id": 830,
+    "title": "ปาณิศา",
+    "artist": "KRK, N/A",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 113,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/51961cf8faf6daed95de5019c070ab56479aae0f",
+    "audioFallback": "https://p.scdn.co/mp3-preview/51961cf8faf6daed95de5019c070ab56479aae0f",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ce/89/66/ce89667f-0976-4aff-4cc3-1cb7a8052aaf/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6Nriu467fTQICLSlP0Ufqo",
+    "animeId": 332
+  },
+  {
+    "id": 831,
+    "title": "เรื่องราวความรักในตำนาน",
+    "artist": "YOUNGOHM, GAVIN:D",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 114,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/edb591e7a48b245ec5a155d612bbbd31f5c6d829",
+    "audioFallback": "https://p.scdn.co/mp3-preview/edb591e7a48b245ec5a155d612bbbd31f5c6d829",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/42/c2/c0/42c2c031-1b32-19cc-f4a0-58db88c7f87a/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4JVHa8eTUOEN0zS1zrA2j5",
+    "animeId": 137
+  },
+  {
+    "id": 832,
+    "title": "นครดารา",
+    "artist": "YOUNGOHM",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 143,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/f64bcb6a16751757d51032f8d8b63178ad29d17e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/f64bcb6a16751757d51032f8d8b63178ad29d17e",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a8/a5/51/a8a55109-5a16-7633-b953-48d91bedfd70/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2wyjOiDh07ISNq0oq69G4e",
+    "animeId": 36
+  },
+  {
+    "id": 833,
+    "title": "ธรรมดา",
+    "artist": "DIAMOND MQT",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 119,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/4db7408d51580c06c9c1e250ec464cbfbbcb665c",
+    "audioFallback": "https://p.scdn.co/mp3-preview/4db7408d51580c06c9c1e250ec464cbfbbcb665c",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/5e/64/1f/5e641fe9-fb27-6e42-1f82-c035b99f5061/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7vZFov5R0OZVG9gtDUCJsr",
+    "animeId": 367
+  },
+  {
+    "id": 834,
+    "title": "ไฟเย็น",
+    "artist": "YOUNGOHM",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 120,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/4938cc03b1426704c38e1e235582df4c18f34fe2",
+    "audioFallback": "https://p.scdn.co/mp3-preview/4938cc03b1426704c38e1e235582df4c18f34fe2",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/42/c2/c0/42c2c031-1b32-19cc-f4a0-58db88c7f87a/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4ZU069vAYkr7soRzdzNdjF",
+    "animeId": 233
+  },
+  {
+    "id": 835,
+    "title": "ไฟกลางคืน",
+    "artist": "YOUNGOHM",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 126,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/3d8abdc210e6e10ad6dc983478f294449b3fb989",
+    "audioFallback": "https://p.scdn.co/mp3-preview/3d8abdc210e6e10ad6dc983478f294449b3fb989",
+    "coverUrl": "https://media.kitsu.app/anime/41984/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4nUxyQ6GjIOCZRjR7KFeVb",
+    "animeId": 172
+  },
+  {
+    "id": 836,
+    "title": "CURSE",
+    "artist": "Z9, 2K, Saran",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 138,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/11bea8a5f65906a2e65f30b430f8479fdf6989a8",
+    "audioFallback": "https://p.scdn.co/mp3-preview/11bea8a5f65906a2e65f30b430f8479fdf6989a8",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2d/84/61/2d8461ee-c49b-94da-632c-2ae15f4f5519/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/77rZWogLvZ2NOf248oMd6N",
+    "animeId": 295
+  },
+  {
+    "id": 837,
+    "title": "ใจพัง - Hidden World Live Session",
+    "artist": "Saran, GTK",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 120,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/38db17acf03a124181618daedaa6e2e3ef2cc5bb",
+    "audioFallback": "https://p.scdn.co/mp3-preview/38db17acf03a124181618daedaa6e2e3ef2cc5bb",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13672/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2obHilJeVz2oAQIgs3F9oU",
+    "animeId": 300
+  },
+  {
+    "id": 838,
+    "title": "เจ้าบ่ประสงค์อ้าย",
+    "artist": "เบียร์ พร้อมพงษ์",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 131,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/57612566a68d53ab8d2002d2944182b0c1f5e629",
+    "audioFallback": "https://p.scdn.co/mp3-preview/57612566a68d53ab8d2002d2944182b0c1f5e629",
+    "coverUrl": "https://media.kitsu.app/anime/46945/poster_image/medium-3e8cf2cca6c7c9ad7a93bc4c0d5d6a6b.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/3XdMxcFQF7ytBctzX1b7GW",
+    "animeId": 285
+  },
+  {
+    "id": 839,
+    "title": "ผมมีหัวใจจริงๆ",
+    "artist": "T!NE",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 126,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/eb6bac1e18cedaf53b421d5058a3da17513f1c45",
+    "audioFallback": "https://p.scdn.co/mp3-preview/eb6bac1e18cedaf53b421d5058a3da17513f1c45",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/eb/e9/68/ebe968a2-a403-9f63-202e-1b0153adcd61/cover.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0yKr4gsqBjdZqrWhQp5Kny",
+    "animeId": 145
+  },
+  {
+    "id": 840,
+    "title": "expectations",
+    "artist": "Olivia Rodrigo, Chappell Roan",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 101,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/3949e120ef8170dfd179ce5fa105aa55c4c0f761",
+    "audioFallback": "https://p.scdn.co/mp3-preview/3949e120ef8170dfd179ce5fa105aa55c4c0f761",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13284/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3XmwAZpIMNpTJy8faw3ajD",
+    "animeId": 286
+  },
+  {
+    "id": 841,
+    "title": "Nicole Kidman",
+    "artist": "ADÉLA",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 123,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/68bc3cb0611cfe6569ce56eeb025359233168a69",
+    "audioFallback": "https://p.scdn.co/mp3-preview/68bc3cb0611cfe6569ce56eeb025359233168a69",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/53/c6/9a/53c69a6a-d1c4-0983-a20c-a67dceae554f/26UMGIM82372.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/70cHKK8bHAfJrOGVnfRG9J",
+    "animeId": 337
+  },
+  {
+    "id": 842,
+    "title": "Stop The Wedding!",
+    "artist": "Ashe",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 135,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/8a374e33d78679e1143d7a07797ddfa0225f8586",
+    "audioFallback": "https://p.scdn.co/mp3-preview/8a374e33d78679e1143d7a07797ddfa0225f8586",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b7/55/7a/b7557aef-bb0a-cc57-25bf-979eee194f16/075679571403.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3zOYmiNOuyDL0ClxJcEJ0T",
+    "animeId": 99
+  },
+  {
+    "id": 843,
+    "title": "Patient Zero",
+    "artist": "Taylor Swift",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 122,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/3b622221c4b4a6c28ef70ed256b47ef825108142",
+    "audioFallback": "https://p.scdn.co/mp3-preview/3b622221c4b4a6c28ef70ed256b47ef825108142",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a0/dd/fd/a0ddfd72-ee9e-f046-6466-a5dbefc696fa/26UM1IM21436.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/11hcBLPtbMp4aQI6zGQLub",
+    "animeId": 327
+  },
+  {
+    "id": 844,
+    "title": "Earrings",
+    "artist": "Malcolm Todd",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 114,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/20a1469df9f65a51878811bbe49979c418abc1b7",
+    "audioFallback": "https://p.scdn.co/mp3-preview/20a1469df9f65a51878811bbe49979c418abc1b7",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d0/06/1f/d0061f04-bcae-f9a1-8126-830c04fa32db/196871971188.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0eAuGrXyGFYwur9ARUe7LJ",
+    "animeId": 265
+  },
+  {
+    "id": 845,
+    "title": "BbY WOW",
+    "artist": "KAROL G, Judeline, rusowsky",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 113,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/f6ab45a8375c5bcf6f03161edd9f44c1fad501c8",
+    "audioFallback": "https://p.scdn.co/mp3-preview/f6ab45a8375c5bcf6f03161edd9f44c1fad501c8",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr",
+    "animeId": 195
+  },
+  {
+    "id": 846,
+    "title": "Housewife",
+    "artist": "Tate McRae",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 134,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/724b097d9dc53e0541de27d199adfe3f610944ba",
+    "audioFallback": "https://p.scdn.co/mp3-preview/724b097d9dc53e0541de27d199adfe3f610944ba",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2b/96/2b/2b962b77-3a04-5650-aefd-37ecfce04b03/196874840146.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2sFepQNyl1WjpROruP8bJ0",
+    "animeId": 114
+  },
+  {
+    "id": 847,
+    "title": "Loser",
+    "artist": "Tame Impala",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 105,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/0015e9347a45b62215447eba657b2fc3ce279d2d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/0015e9347a45b62215447eba657b2fc3ce279d2d",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/57/6f/a2/576fa272-91c5-658d-9d05-88d9787c0f1d/196873662978.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7bxaFZ1O3cHkgLKMsdC3xR",
+    "animeId": 362
+  },
+  {
+    "id": 848,
+    "title": "hate that i made you love me",
+    "artist": "Ariana Grande",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 115,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/9fb8e09c9facc2d9443b6e57ae36d47bf83c01b8",
+    "audioFallback": "https://p.scdn.co/mp3-preview/9fb8e09c9facc2d9443b6e57ae36d47bf83c01b8",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/56/f4/96/56f49612-02dd-83f4-44fe-d2118cc70707/26UMGIM51129.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/20jbSiX29FDX4oQxBXyUEi",
+    "animeId": 47
+  },
+  {
+    "id": 849,
+    "title": "Dai Dai",
+    "artist": "Shakira, Burna Boy",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 116,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/a6955a6725dcf614e9915396987847ea0b509580",
+    "audioFallback": "https://p.scdn.co/mp3-preview/a6955a6725dcf614e9915396987847ea0b509580",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/61/49/8d/61498ded-f0dc-227d-cd1d-2051b5d9f195/196874328590.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0kosUz0jePvjiz4ctmR6wL",
+    "animeId": 285
+  },
+  {
+    "id": 850,
+    "title": "the cure",
+    "artist": "Olivia Rodrigo",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 133,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/7559346825a2233855b5fc77e84a954606de3444",
+    "audioFallback": "https://p.scdn.co/mp3-preview/7559346825a2233855b5fc77e84a954606de3444",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b9/92/51/b9925128-dac6-2cef-5674-d5ebbe1a4e83/26UMGIM75556.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4EoJ151oQ5jY48z4RhSE96",
+    "animeId": 359
+  },
+  {
+    "id": 851,
+    "title": "Animal",
+    "artist": "KATSEYE",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 117,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/65040556453e4f1c76bcefebf54a718521588331",
+    "audioFallback": "https://p.scdn.co/mp3-preview/65040556453e4f1c76bcefebf54a718521588331",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e2/28/92/e22892a7-fe88-72cf-ecba-691030dfcf7e/26UMGIM41151.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3ouNEk0tv5TTi8VWMe1xbX",
+    "animeId": 158
+  },
+  {
+    "id": 852,
+    "title": "Self Aware",
+    "artist": "Temper City",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 121,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/98af5b6b77831ad55b6d1129148745705a311973",
+    "audioFallback": "https://p.scdn.co/mp3-preview/98af5b6b77831ad55b6d1129148745705a311973",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/43321/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4qW3BbQAwZsrnu8a3ZRdyT",
+    "animeId": 30
+  },
+  {
+    "id": 853,
+    "title": "Babydoll",
+    "artist": "Dominic Fike",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 103,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/bf5ab98492256120bd9c48658e9c899c8692f77f",
+    "audioFallback": "https://p.scdn.co/mp3-preview/bf5ab98492256120bd9c48658e9c899c8692f77f",
+    "coverUrl": "https://media.kitsu.app/anime/5993/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7yNf9YjeO5JXUE3JEBgnYc",
+    "animeId": 162
+  },
+  {
+    "id": 854,
+    "title": "Ain't In LA",
+    "artist": "ADÉLA",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 131,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/a3d0119e3182fbb19636c2a44737fa3e0b71f939",
+    "audioFallback": "https://p.scdn.co/mp3-preview/a3d0119e3182fbb19636c2a44737fa3e0b71f939",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/53/c6/9a/53c69a6a-d1c4-0983-a20c-a67dceae554f/26UMGIM82372.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/02HyFYmpzt02VJ8k0CqxKj",
+    "animeId": 190
+  },
+  {
+    "id": 855,
+    "title": "Man I Need",
+    "artist": "Olivia Dean",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 117,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/0a36635f94b4e44e6e4f5b7edb3f501d458812d9",
+    "audioFallback": "https://p.scdn.co/mp3-preview/0a36635f94b4e44e6e4f5b7edb3f501d458812d9",
+    "coverUrl": "https://media.kitsu.app/anime/48239/poster_image/medium-4653e38d1bfe79ce7af766adf8e8d56e.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/1qbmS6ep2hbBRaEZFpn7BX",
+    "animeId": 241
+  },
+  {
+    "id": 856,
+    "title": "Great Expectation",
+    "artist": "SIENNA SPIRO",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 124,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/f82f2f3e714a66934fc309e357cbf249ad045f62",
+    "audioFallback": "https://p.scdn.co/mp3-preview/f82f2f3e714a66934fc309e357cbf249ad045f62",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/10/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7ujApz6iFP3PmKIDGcaGbe",
+    "animeId": 104
+  },
+  {
+    "id": 857,
+    "title": "stupid song",
+    "artist": "Olivia Rodrigo",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 141,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/894b272aa0422aeebe856825b55e5c736a9bc5ee",
+    "audioFallback": "https://p.scdn.co/mp3-preview/894b272aa0422aeebe856825b55e5c736a9bc5ee",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1d/1b/f9/1d1bf9b1-44c6-9a6c-6ffb-c158488c06ce/26UMGIM39303.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4LfCY65LvojKjWEnU7fNN4",
+    "animeId": 173
+  },
+  {
+    "id": 858,
+    "title": "oh yeah?",
+    "artist": "Steve Lacy",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 108,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/72b6457625435b7f64c345e86930e5f0071c559c",
+    "audioFallback": "https://p.scdn.co/mp3-preview/72b6457625435b7f64c345e86930e5f0071c559c",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1c/b2/46/1cb246db-afae-a599-d377-44a7ea7267fa/196874346976.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/22NHkFYbgxB2Zirj29Gbp8",
+    "animeId": 235
+  },
+  {
+    "id": 859,
+    "title": "Orbiter",
+    "artist": "Noah Kahan",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 109,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/3f175c1a53a23119bfe50c9ca04e68d27d3131a5",
+    "audioFallback": "https://p.scdn.co/mp3-preview/3f175c1a53a23119bfe50c9ca04e68d27d3131a5",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f9/aa/69/f9aa6992-40ca-a756-85ca-b27c48f7c720/26UMGIM02802.rgb.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/4W6yulge3h7FSy0zGFrNKs",
+    "animeId": 101
+  },
+  {
+    "id": 860,
+    "title": "DtMF",
+    "artist": "Bad Bunny",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 120,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/e41ce6b82410d81c08baacca2a7169e5ace4287d",
+    "audioFallback": "https://p.scdn.co/mp3-preview/e41ce6b82410d81c08baacca2a7169e5ace4287d",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e7/3d/ca/e73dca71-449b-7c65-bbe6-6d3f1edee4cc/1155852.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3sK8wGT43QFpWrvNQsrQya",
+    "animeId": 374
+  },
+  {
+    "id": 861,
+    "title": "STORM II",
+    "artist": "GENER8ION, Yung Lean",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 124,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/369b246146e99c2f6ebabf5dfb9e20df98b8fe65",
+    "audioFallback": "https://p.scdn.co/mp3-preview/369b246146e99c2f6ebabf5dfb9e20df98b8fe65",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1376/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0FZd4IaxB12sUTKSUUGwWq",
+    "animeId": 263
+  },
+  {
+    "id": 862,
+    "title": "Janice STFU",
+    "artist": "Drake",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 142,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/1de9b315e1aa811aedaf905b1058b668b2d3146e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/1de9b315e1aa811aedaf905b1058b668b2d3146e",
+    "coverUrl": "https://media.kitsu.app/anime/46336/poster_image/medium-162a579fe7a25c1b188532bb8aaa7129.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/514joG57v4yKTsfQmz7stz",
+    "animeId": 242
+  },
+  {
+    "id": 863,
+    "title": "bloodstream",
+    "artist": "Alyssa Grace",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 130,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/f1e7acbb1c04e8ba21d08d2402cf069a8eed8f96",
+    "audioFallback": "https://p.scdn.co/mp3-preview/f1e7acbb1c04e8ba21d08d2402cf069a8eed8f96",
+    "coverUrl": "https://media.kitsu.app/anime/45532/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2oWFJJW9d1bIra3zHjR6GO",
+    "animeId": 181
+  },
+  {
+    "id": 864,
+    "title": "Risk It All",
+    "artist": "Bruno Mars",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 101,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/2467ff71a7508c57a62112ee5beb996bd6b9e957",
+    "audioFallback": "https://p.scdn.co/mp3-preview/2467ff71a7508c57a62112ee5beb996bd6b9e957",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ed/46/bf/ed46bf4e-7cb9-965a-54f3-03059977fe6c/075679589293.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5y2ijHECwFYWqcAHKTZgzD",
+    "animeId": 82
+  },
+  {
+    "id": 865,
+    "title": "Rein Me In",
+    "artist": "Sam Fender, Olivia Dean",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 106,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/6c85f9e4507e93478ee4adb7782f1a35a9d0e1ce",
+    "audioFallback": "https://p.scdn.co/mp3-preview/6c85f9e4507e93478ee4adb7782f1a35a9d0e1ce",
+    "coverUrl": "https://media.kitsu.app/anime/48534/poster_image/medium-c38c15266ae228974e8c2a00d776ea92.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/7MZHqgTVTnN6xZGYAcEEAf",
+    "animeId": 246
+  },
+  {
+    "id": 866,
+    "title": "Raindance",
+    "artist": "Dave, Tems",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 138,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/7d860804d259f81b4a7bc04900a5410d99995fd4",
+    "audioFallback": "https://p.scdn.co/mp3-preview/7d860804d259f81b4a7bc04900a5410d99995fd4",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46722/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/3oTuTpF1F3A7rEC6RKsMRz",
+    "animeId": 397
+  },
+  {
+    "id": 867,
+    "title": "Solar Eclipse",
+    "artist": "Drake, Don Toliver",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 110,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/4feadd4524eee165380031ed90bdff09daacb902",
+    "audioFallback": "https://p.scdn.co/mp3-preview/4feadd4524eee165380031ed90bdff09daacb902",
+    "coverUrl": "https://media.kitsu.app/anime/44196/poster_image/medium-a7b52a1e9cea5a04b29ee6878fbff923.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/4IAWZw00ZI9DLKDjesx86u",
+    "animeId": 364
+  },
+  {
+    "id": 868,
+    "title": "DAISIES",
+    "artist": "Justin Bieber",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 102,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d990a355be1d84adc0882bda733862fba7767e70",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d990a355be1d84adc0882bda733862fba7767e70",
+    "coverUrl": "https://media.kitsu.app/anime/46481/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5BZsQlgw21vDOAjoqkNgKb",
+    "animeId": 196
+  },
+  {
+    "id": 869,
+    "title": "Midnight Sun",
+    "artist": "Zara Larsson",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 137,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/c5bbc379559c92c9d07e2cebf4a1e14029d01331",
+    "audioFallback": "https://p.scdn.co/mp3-preview/c5bbc379559c92c9d07e2cebf4a1e14029d01331",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/719/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/37UCSVSqiPGdR1DijOFyYY",
+    "animeId": 337
+  },
+  {
+    "id": 870,
+    "title": "SaWaDiKa",
+    "artist": "LISA",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 123,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/3f5b29adf9f673b9f985c1976c26f5820649d711",
+    "audioFallback": "https://p.scdn.co/mp3-preview/3f5b29adf9f673b9f985c1976c26f5820649d711",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/de/b3/1c/deb31ca3-1670-7bf1-7d02-5cc60d11c882/196874742235.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/1VWiDyYTrqQhhmnWANWkFa",
+    "animeId": 103
+  },
+  {
+    "id": 871,
+    "title": "WHERE IS MY HUSBAND!",
+    "artist": "RAYE",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 125,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/0194ff4186a1f53bff2cdf6d7660289ca8eb0e7e",
+    "audioFallback": "https://p.scdn.co/mp3-preview/0194ff4186a1f53bff2cdf6d7660289ca8eb0e7e",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1415/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/55lijDD6OAjLFFUHU9tcDm",
+    "animeId": 102
+  },
+  {
+    "id": 872,
+    "title": "UNETHICAL",
+    "artist": "Faouzia",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 131,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/7600d81f153683eb1265f92aa5567cc313658481",
+    "audioFallback": "https://p.scdn.co/mp3-preview/7600d81f153683eb1265f92aa5567cc313658481",
+    "coverUrl": "https://media.kitsu.app/anime/41979/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6QKpHmO41jkd9pTp0FfmHs",
+    "animeId": 173
+  },
+  {
+    "id": 873,
+    "title": "Draw You Out - From The Hunger Games: Sunrise on the Reaping - The Album",
+    "artist": "Noah Kahan, The Hunger Games",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 122,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/4e369f5cce22a4bcc212166ee320dc8679ce9c79",
+    "audioFallback": "https://p.scdn.co/mp3-preview/4e369f5cce22a4bcc212166ee320dc8679ce9c79",
+    "coverUrl": "https://media.kitsu.app/anime/47687/poster_image/medium-1b60c7e721df919140c4dd564810afd5.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/5KTcGJKm4HgLhLt8Tc7EQ5",
+    "animeId": 222
+  },
+  {
+    "id": 874,
+    "title": "Coming Up Roses",
+    "artist": "Harry Styles",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 130,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/03a64c71a3d7477335cd39a069e0e175e65798b6",
+    "audioFallback": "https://p.scdn.co/mp3-preview/03a64c71a3d7477335cd39a069e0e175e65798b6",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/45561/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0QPdjsMOUhwouq1NS3HwfQ",
+    "animeId": 328
+  },
+  {
+    "id": 875,
+    "title": "Manchild",
+    "artist": "Sabrina Carpenter",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 120,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/37c21b6b0df9b7156527d0729a58b6db37c88a0a",
+    "audioFallback": "https://p.scdn.co/mp3-preview/37c21b6b0df9b7156527d0729a58b6db37c88a0a",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/2026/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/42UBPzRMh5yyz0EDPr6fr1",
+    "animeId": 341
+  },
+  {
+    "id": 876,
+    "title": "Boston",
+    "artist": "STELLA LEFTY",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 141,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/7ffa15bbf70382813f8661408e976cc41655b367",
+    "audioFallback": "https://p.scdn.co/mp3-preview/7ffa15bbf70382813f8661408e976cc41655b367",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7c/de/5e/7cde5e7a-612d-9714-d34c-1eb234c85ebb/810129961546.jpg/600x600bb.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/36idurZmYRjJ56KQ8JD9bN",
+    "animeId": 8
+  },
+  {
+    "id": 877,
+    "title": "Stateside + Zara Larsson",
+    "artist": "PinkPantheress, Zara Larsson",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 130,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/cc3201e7ed85d09f1683e591fd2eb964ea7247a6",
+    "audioFallback": "https://p.scdn.co/mp3-preview/cc3201e7ed85d09f1683e591fd2eb964ea7247a6",
+    "coverUrl": "https://media.kitsu.app/anime/48618/poster_image/medium-3ef7ecfe0da23a4d4ee757d46dfcd1db.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/1DwscornXpj8fmOmYVlqZt",
+    "animeId": 211
+  },
+  {
+    "id": 878,
+    "title": "So Easy",
+    "artist": "Olivia Dean",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 133,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/e0ea7353932017364bdb12dc776e89b360abac42",
+    "audioFallback": "https://p.scdn.co/mp3-preview/e0ea7353932017364bdb12dc776e89b360abac42",
+    "coverUrl": "https://media.kitsu.app/anime/13670/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/6sGIMrtIzQjdzNndVxe397",
+    "animeId": 197
+  },
+  {
+    "id": 879,
+    "title": "I Just Might",
+    "artist": "Bruno Mars",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 109,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d3b9a6318dcc942387b69c677a80377044856d69",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d3b9a6318dcc942387b69c677a80377044856d69",
+    "coverUrl": "https://media.kitsu.app/anime/12976/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/12bYYQaLqHliSXvRIYlq8G",
+    "animeId": 138
+  },
+  {
+    "id": 880,
+    "title": "petal",
+    "artist": "Ariana Grande",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 116,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/30dc1adb43c170165bb8091e788b55f26f2fc672",
+    "audioFallback": "https://p.scdn.co/mp3-preview/30dc1adb43c170165bb8091e788b55f26f2fc672",
+    "coverUrl": "https://media.kitsu.app/anime/46874/poster_image/medium-77ce4d83e28e24e71cf7fdcbe0df8e28.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/70pVCVMGjmIWPbWXDwf11e",
+    "animeId": 292
+  },
+  {
+    "id": 881,
+    "title": "Homewrecker",
+    "artist": "sombr",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 107,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/d46acdc8f94c6fa471388c7a10c619bb08c88197",
+    "audioFallback": "https://p.scdn.co/mp3-preview/d46acdc8f94c6fa471388c7a10c619bb08c88197",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11110/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7tICCrK3CcyRFKza7yrR0z",
+    "animeId": 59
+  },
+  {
+    "id": 882,
+    "title": "Jamaican",
+    "artist": "HUGEL, SOLTO (FR)",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 131,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/90e14dd98b61140a5259ce400de788704d406742",
+    "audioFallback": "https://p.scdn.co/mp3-preview/90e14dd98b61140a5259ce400de788704d406742",
+    "coverUrl": "https://media.kitsu.app/anime/42070/poster_image/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/7e4zDInS6tA2jwzphvs2Ay",
+    "animeId": 182
+  },
+  {
+    "id": 883,
+    "title": "NOBLE",
+    "artist": "F3miii",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 100,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/5fada77b20c9b592ea707bf74334195c2b8a125f",
+    "audioFallback": "https://p.scdn.co/mp3-preview/5fada77b20c9b592ea707bf74334195c2b8a125f",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/10740/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/2LSmH4vxyRhkJ2pPqcmkXw",
+    "animeId": 55
+  },
+  {
+    "id": 884,
+    "title": "Hootie Frutti",
+    "artist": "KATSEYE",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 100,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b90cdabeb3093431041841713c812e70bafb1478",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b90cdabeb3093431041841713c812e70bafb1478",
+    "coverUrl": "https://media.kitsu.app/anime/46415/poster_image/medium-09a8e8a7b821309beba30e1b49a5369e.jpeg",
+    "spotifyUrl": "https://open.spotify.com/track/6oUUmBcUbZa5O48V5pjgAD",
+    "animeId": 227
+  },
+  {
+    "id": 885,
+    "title": "White Keys",
+    "artist": "Dominic Fike",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 122,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/4c09f53084e36b6c85f8b2a44893c226a3194f42",
+    "audioFallback": "https://p.scdn.co/mp3-preview/4c09f53084e36b6c85f8b2a44893c226a3194f42",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7700/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/5ViLKrbyL3HD6wsq3AB9eI",
+    "animeId": 91
+  },
+  {
+    "id": 886,
+    "title": "Talk To You",
+    "artist": "ANOTR, 54 Ultra",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 127,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/b55c8fa4e31192a3e35ad53d3e889733f9cd9da1",
+    "audioFallback": "https://p.scdn.co/mp3-preview/b55c8fa4e31192a3e35ad53d3e889733f9cd9da1",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41312/large.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/0kl6Ozan3fuUdCl6TlB15v",
+    "animeId": 76
+  },
+  {
+    "id": 887,
+    "title": "SWIM",
+    "artist": "BTS",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 132,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://p.scdn.co/mp3-preview/acafb81cc609de53b9687a40f214f79d828b6947",
+    "audioFallback": "https://p.scdn.co/mp3-preview/acafb81cc609de53b9687a40f214f79d828b6947",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42/medium.jpg",
+    "spotifyUrl": "https://open.spotify.com/track/68lbSrXDORS51pmyjZv712",
+    "animeId": 336
+  },
+  {
+    "id": 888,
+    "title": "เธอมีรอยยิ้มที่อันตราย",
+    "artist": "qcw1688z",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 114,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2b/88/13/2b881365-2d60-5621-1518-eada52b2a6c4/mzaf_15565970966828706113.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2b/88/13/2b881365-2d60-5621-1518-eada52b2a6c4/mzaf_15565970966828706113.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/17/ed/eb/17edebc5-3235-068f-b8e9-861f9299c4e7/artwork.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%98%E0%B8%AD%E0%B8%A1%E0%B8%B5%E0%B8%A3%E0%B8%AD%E0%B8%A2%E0%B8%A2%E0%B8%B4%E0%B9%89%E0%B8%A1%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%AD%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%A3%E0%B8%B2%E0%B8%A2%20qcw1688z",
+    "animeId": 374
+  },
+  {
+    "id": 889,
+    "title": "อย่ามากกว่าฉันก็พอ (Jealous) [feat. Violette Wautier]",
+    "artist": "GAVIN:D",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 126,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a4/b9/b0/a4b9b0a3-f3f9-9f28-e74e-f56cad33184b/mzaf_17614794177634834006.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a4/b9/b0/a4b9b0a3-f3f9-9f28-e74e-f56cad33184b/mzaf_17614794177634834006.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f5/f4/e9/f5f4e95f-4876-da83-7b93-b8b672873193/cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%A1%E0%B8%B2%E0%B8%81%E0%B8%81%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%81%E0%B9%87%E0%B8%9E%E0%B8%AD%20(Jealous)%20%5Bfeat.%20Violette%20Wautier%5D%20GAVIN%3AD",
+    "animeId": 366
+  },
+  {
+    "id": 890,
+    "title": "One Of The Girls",
+    "artist": "The Weeknd, JENNIE & Lily Rose Depp",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 114,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9e/2f/1f/9e2f1f11-20a8-767a-0e33-9029028a7024/mzaf_1603981766065362477.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9e/2f/1f/9e2f1f11-20a8-767a-0e33-9029028a7024/mzaf_1603981766065362477.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/db/28/e7/db28e7c3-f53a-76c8-eaa4-d92a22e4f160/23UMGIM72115.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/One%20Of%20The%20Girls%20The%20Weeknd%2C%20JENNIE%20%26%20Lily%20Rose%20Depp",
+    "animeId": 25
+  },
+  {
+    "id": 891,
+    "title": "รอ SIS",
+    "artist": "DICEBLUE & DICE",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 109,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/78/ec/7d/78ec7dcf-a10d-4e83-a92e-f749123d38f5/mzaf_10110903787098474977.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/78/ec/7d/78ec7dcf-a10d-4e83-a92e-f749123d38f5/mzaf_10110903787098474977.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d4/ee/12/d4ee1209-ff69-0a0c-0b5b-e13cf758b5f2/26UM1IM20084.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A3%E0%B8%AD%20SIS%20(TER)%20DICEBLUE%20%26%20DICE",
+    "animeId": 138
+  },
+  {
+    "id": 892,
+    "title": "เขียว เหลือง แดง",
+    "artist": "PUN & THE TOYS",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 115,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cc/23/00/cc2300d8-844d-a22d-cb14-8fc30d58510c/mzaf_13796157886013267579.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cc/23/00/cc2300d8-844d-a22d-cb14-8fc30d58510c/mzaf_13796157886013267579.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1f/6e/26/1f6e26a6-f165-3785-f1a4-1a54c6e6ddf7/26UM1IM26484.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%A7%20%E0%B9%80%E0%B8%AB%E0%B8%A5%E0%B8%B7%E0%B8%AD%E0%B8%87%20%E0%B9%81%E0%B8%94%E0%B8%87%20(Get%20high)%20PUN%20%26%20THE%20TOYS",
+    "animeId": 406
+  },
+  {
+    "id": 893,
+    "title": "พิราลัย",
+    "artist": "Gun Napat",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 143,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/aa/9f/19aa9f3f-809c-8e33-0938-064ceb6eeee7/mzaf_17532341792860802121.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/aa/9f/19aa9f3f-809c-8e33-0938-064ceb6eeee7/mzaf_17532341792860802121.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e4/f1/66/e4f1660c-2362-a934-8bb8-064c86c998bf/cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%B4%E0%B8%A3%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%20(Love%20Over%20Magic)%20Gun%20Napat",
+    "animeId": 341
+  },
+  {
+    "id": 894,
+    "title": "ไม่ได้เลวขนาดนั้น",
+    "artist": "PORZAX",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 124,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f7/9d/ae/f79daeca-5bc2-231e-cf76-92566191b0b2/mzaf_14146632327103131521.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f7/9d/ae/f79daeca-5bc2-231e-cf76-92566191b0b2/mzaf_14146632327103131521.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7d/74/a3/7d74a39b-906e-d336-29f9-ece2b00ee6f0/0840517265833_Cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%E0%B9%80%E0%B8%A5%E0%B8%A7%E0%B8%82%E0%B8%99%E0%B8%B2%E0%B8%94%E0%B8%99%E0%B8%B1%E0%B9%89%E0%B8%99%20PORZAX",
+    "animeId": 338
+  },
+  {
+    "id": 895,
+    "title": "ขึ้นใจ (3am call) [feat. BLVCKHEART]",
+    "artist": "Mirrr",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 103,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/13/c6/c6/13c6c693-65ba-1d89-e1c5-ea96475f9ee3/mzaf_6838341267688397747.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/13/c6/c6/13c6c693-65ba-1d89-e1c5-ea96475f9ee3/mzaf_6838341267688397747.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/65/ce/69/65ce6958-e0c1-908b-e53e-5924a61cd000/26UMGIM86682.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%82%E0%B8%B6%E0%B9%89%E0%B8%99%E0%B9%83%E0%B8%88%20(3am%20call)%20%5Bfeat.%20BLVCKHEART%5D%20Mirrr",
+    "animeId": 136
+  },
+  {
+    "id": 896,
+    "title": "ไปต่อไหว ไปต่อไหม (GO ON) [feat. HYE]",
+    "artist": "BENZKHAOKHWAN",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 140,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4a/a3/26/4aa32650-a31e-6778-728d-51454a4f7b8e/mzaf_3984893366824954544.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4a/a3/26/4aa32650-a31e-6778-728d-51454a4f7b8e/mzaf_3984893366824954544.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/72/32/79/7232794e-cc4a-e043-f70a-09b62ce8005d/26UMGIM95601.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%9B%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B9%84%E0%B8%AB%E0%B8%A7%20%E0%B9%84%E0%B8%9B%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B9%84%E0%B8%AB%E0%B8%A1%20(GO%20ON)%20%5Bfeat.%20HYE%5D%20BENZKHAOKHWAN",
+    "animeId": 386
+  },
+  {
+    "id": 897,
+    "title": "Star Trace",
+    "artist": "PLAVE",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 136,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/af/07/73/af077308-f5f5-01c0-4be9-a0434e4bf1ea/mzaf_8840133973617771352.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/af/07/73/af077308-f5f5-01c0-4be9-a0434e4bf1ea/mzaf_8840133973617771352.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c7/cc/15/c7cc1534-12d9-d560-e469-b79c12024c76/8800388639999_cover.png/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Star%20Trace%20PLAVE",
+    "animeId": 296
+  },
+  {
+    "id": 898,
+    "title": "เมื่อถูกค้นพบ",
+    "artist": "FREEHAND",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 139,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cc/d6/6b/ccd66b6e-562d-a18e-112e-e3dec30c27d5/mzaf_7692596870033857178.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cc/d6/6b/ccd66b6e-562d-a18e-112e-e3dec30c27d5/mzaf_7692596870033857178.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/10/13/75/10137570-1383-a197-4c5a-0f6ece5eefcb/888332883054.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%A1%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%96%E0%B8%B9%E0%B8%81%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%9E%E0%B8%9A%20(Finally%20She%20Found.)%20FREEHAND",
+    "animeId": 193
+  },
+  {
+    "id": 899,
+    "title": "ครบรอบไปด้วยกัน",
+    "artist": "KRIST",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 125,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7d/f5/0f/7df50f3b-c48b-0681-e053-a7e651b534ae/mzaf_446467508770010834.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7d/f5/0f/7df50f3b-c48b-0681-e053-a7e651b534ae/mzaf_446467508770010834.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/78/9f/91/789f916e-9706-5060-58b4-aafbd2ee2c26/888332880787.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%A3%E0%B8%9A%E0%B8%A3%E0%B8%AD%E0%B8%9A%E0%B9%84%E0%B8%9B%E0%B8%94%E0%B9%89%E0%B8%A7%E0%B8%A2%E0%B8%81%E0%B8%B1%E0%B8%99%20(Counting%20Till%20I%20Die)%20KRIST",
+    "animeId": 119
+  },
+  {
+    "id": 900,
+    "title": "Older",
+    "artist": "Sasha Alex Sloan",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 137,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/7a/0c/8c7a0c2c-8ddd-1fae-e310-3b95ac2a4995/mzaf_1126555595574238858.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8c/7a/0c/8c7a0c2c-8ddd-1fae-e310-3b95ac2a4995/mzaf_1126555595574238858.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/1d/a5/f5/1da5f53d-8f09-ff12-9180-2f13e67ed1ff/886447381564.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Older%20Sasha%20Alex%20Sloan",
+    "animeId": 356
+  },
+  {
+    "id": 901,
+    "title": "ONE THING I CAN'T LIVE WITHOUT",
+    "artist": "SVRN",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 115,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7f/de/aa/7fdeaaac-834b-1575-0901-457edbdb00d2/mzaf_8225621756041304030.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7f/de/aa/7fdeaaac-834b-1575-0901-457edbdb00d2/mzaf_8225621756041304030.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7e/49/12/7e4912b1-5411-e0cb-8d2b-a1dff9842da7/1200220222322.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/ONE%20THING%20I%20CAN'T%20LIVE%20WITHOUT%20SVRN",
+    "animeId": 292
+  },
+  {
+    "id": 902,
+    "title": "Blinding Lights",
+    "artist": "The Weeknd",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 114,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/19/d6/60/19d660ff-e3a9-8377-15a3-ce4b28e89cac/mzaf_18422426156481158187.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/19/d6/60/19d660ff-e3a9-8377-15a3-ce4b28e89cac/mzaf_18422426156481158187.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bc/e6/6fbce6c4-c38c-72d8-4fd0-66cfff32f679/20UMGIM12176.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Blinding%20Lights%20The%20Weeknd",
+    "animeId": 267
+  },
+  {
+    "id": 903,
+    "title": "ได้แค่เดินมาส่ง (The Last Walk) [feat. BLVCKHEART]",
+    "artist": "GAVIN:D",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 144,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0e/1d/af/0e1daf97-b476-4466-af9b-e12594b67528/mzaf_9553858399737326748.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0e/1d/af/0e1daf97-b476-4466-af9b-e12594b67528/mzaf_9553858399737326748.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5a/42/0d/5a420d26-a339-7aea-d03a-68d87c752d3d/cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%94%E0%B9%89%E0%B9%81%E0%B8%84%E0%B9%88%E0%B9%80%E0%B8%94%E0%B8%B4%E0%B8%99%E0%B8%A1%E0%B8%B2%E0%B8%AA%E0%B9%88%E0%B8%87%20(The%20Last%20Walk)%20%5Bfeat.%20BLVCKHEART%5D%20GAVIN%3AD",
+    "animeId": 70
+  },
+  {
+    "id": 904,
+    "title": "นาฬิก���ทราย",
+    "artist": "BOWKYLION",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 100,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/10/26/fd/1026fd75-15bb-c097-0fc7-e2d4dfb69e93/mzaf_10496844790047044131.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/10/26/fd/1026fd75-15bb-c097-0fc7-e2d4dfb69e93/mzaf_10496844790047044131.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/78/64/52/78645258-d0cb-05c4-eb75-12afdc7e5511/26UMGIM82670.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%99%E0%B8%B2%E0%B8%AC%E0%B8%B4%E0%B8%81%EF%BF%BD%EF%BF%BD%EF%BF%BD%E0%B8%97%E0%B8%A3%E0%B8%B2%E0%B8%A2%20(sign)%20BOWKYLION",
+    "animeId": 176
+  },
+  {
+    "id": 905,
+    "title": "Every Moment Of You",
+    "artist": "D.O.",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 113,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/27/81/83278188-9775-4d19-b789-7893d772ebbe/mzaf_17151674138567502760.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/27/81/83278188-9775-4d19-b789-7893d772ebbe/mzaf_17151674138567502760.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/80/bc/be/80bcbe8e-bc15-26df-69f2-d38fead61200/888272190533_Cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Every%20Moment%20Of%20You%20D.O.",
+    "animeId": 119
+  },
+  {
+    "id": 906,
+    "title": "มาตามสัญญา",
+    "artist": "TAITOSMITH",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 143,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/10/2a/bf/102abf16-638c-c7ec-b694-f8c204225170/mzaf_13776698927589962918.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/10/2a/bf/102abf16-638c-c7ec-b694-f8c204225170/mzaf_13776698927589962918.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/86/dd/5a/86dd5ac4-85ce-a768-6755-47f141600f80/0840517268575_Cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A1%E0%B8%B2%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%AA%E0%B8%B1%E0%B8%8D%E0%B8%8D%E0%B8%B2%20TAITOSMITH",
+    "animeId": 276
+  },
+  {
+    "id": 907,
+    "title": "Training Season",
+    "artist": "Dua Lipa",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 144,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a8/87/16/a88716e2-9474-ec4e-06d6-d3a9a3ba96c8/mzaf_6258558385119267725.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a8/87/16/a88716e2-9474-ec4e-06d6-d3a9a3ba96c8/mzaf_6258558385119267725.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/82/89/15/828915ea-d716-61c4-3de7-ef00c1f800fb/5054197853630.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Training%20Season%20Dua%20Lipa",
+    "animeId": 37
+  },
+  {
+    "id": 908,
+    "title": "ไม่ไหวแล้ว (Officially) [feat. JAOKHUN]",
+    "artist": "FOURTH",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 126,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e5/a1/00/e5a100b9-8eda-42a9-5dcf-96ec930866b1/mzaf_1784491838834250903.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e5/a1/00/e5a100b9-8eda-42a9-5dcf-96ec930866b1/mzaf_1784491838834250903.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6e/55/4b/6e554be3-3309-4969-244e-43e5a1814a67/888332880718.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%AB%E0%B8%A7%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%20(Officially)%20%5Bfeat.%20JAOKHUN%5D%20FOURTH",
+    "animeId": 59
+  },
+  {
+    "id": 909,
+    "title": "แฟนใครปะคะ",
+    "artist": "PP KRIT & Girly Berry",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 110,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/4e/88/264e8827-d813-ce85-cd4b-3431a317841e/mzaf_5079607853993950776.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/4e/88/264e8827-d813-ce85-cd4b-3431a317841e/mzaf_5079607853993950776.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/60/bd/b7/60bdb702-c863-0c5e-21c6-273e44e607d0/26UM1IM19593.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%9F%E0%B8%99%E0%B9%83%E0%B8%84%E0%B8%A3%E0%B8%9B%E0%B8%B0%E0%B8%84%E0%B8%B0%20(Final%20Call)%20PP%20KRIT%20%26%20Girly%20Berry",
+    "animeId": 345
+  },
+  {
+    "id": 910,
+    "title": "SUPERSTAR",
+    "artist": "A2O & A2O SOUL",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 119,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/69/91/f3/6991f368-8dd3-c583-33d7-8d8e0a79b103/mzaf_7941384460246325532.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/69/91/f3/6991f368-8dd3-c583-33d7-8d8e0a79b103/mzaf_7941384460246325532.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/91/55/19/915519e2-38ea-5202-5c9d-377fe8494ded/888272190397_Cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/SUPERSTAR%20A2O%20%26%20A2O%20SOUL",
+    "animeId": 374
+  },
+  {
+    "id": 911,
+    "title": "Out of Time",
+    "artist": "The Weeknd",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 112,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/79/b8/43/79b84369-15c3-5a5a-fb72-2334b00826e6/mzaf_4381874253449656759.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/79/b8/43/79b84369-15c3-5a5a-fb72-2334b00826e6/mzaf_4381874253449656759.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2f/22/a9/2f22a9a6-5af1-5846-a44e-ba016724ed69/21UM1IM58860.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Out%20of%20Time%20The%20Weeknd",
+    "animeId": 255
+  },
+  {
+    "id": 912,
+    "title": "กลางมหาสมุทร",
+    "artist": "Lek Ratchamet",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 104,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/13/08/9a1308eb-4d27-8e89-a19d-b12ade1a3e2c/mzaf_11871633852448725063.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/13/08/9a1308eb-4d27-8e89-a19d-b12ade1a3e2c/mzaf_11871633852448725063.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2a/c4/35/2ac43524-1807-dec1-9ae7-a6e609a826e1/888332881838.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%A5%E0%B8%B2%E0%B8%87%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%AA%E0%B8%A1%E0%B8%B8%E0%B8%97%E0%B8%A3%20Lek%20Ratchamet",
+    "animeId": 26
+  },
+  {
+    "id": 913,
+    "title": "อย่ามากกว่าฉันก็พอ",
+    "artist": "GAVIN:D",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 113,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b2/87/67/b2876745-6506-4e4e-e90e-9c6802749b7d/mzaf_5149942407270761606.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b2/87/67/b2876745-6506-4e4e-e90e-9c6802749b7d/mzaf_5149942407270761606.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5a/42/0d/5a420d26-a339-7aea-d03a-68d87c752d3d/cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%A1%E0%B8%B2%E0%B8%81%E0%B8%81%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%81%E0%B9%87%E0%B8%9E%E0%B8%AD%20(Jealous)%20GAVIN%3AD",
+    "animeId": 236
+  },
+  {
+    "id": 914,
+    "title": "I Feel It Coming",
+    "artist": "The Weeknd",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 144,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/af/e0/71afe07f-aae7-c4f0-db02-c05be07591d2/mzaf_5960554915698764959.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/af/e0/71afe07f-aae7-c4f0-db02-c05be07591d2/mzaf_5960554915698764959.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e2/61/f8/e261f8c1-73db-9a7a-c89e-1068f19970e0/16UMGIM67863.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/I%20Feel%20It%20Coming%20(feat.%20Daft%20Punk)%20The%20Weeknd",
+    "animeId": 58
+  },
+  {
+    "id": 915,
+    "title": "UNDEAD",
+    "artist": "SUNGHANBIN",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 104,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/44/68/37/446837c4-4864-dfeb-df23-81e2ba421a9d/mzaf_9218264281673773734.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/44/68/37/446837c4-4864-dfeb-df23-81e2ba421a9d/mzaf_9218264281673773734.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8a/02/18/8a021835-9d4e-07e7-5cf4-4eec2d8f76cc/191953585369.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/UNDEAD%20SUNGHANBIN",
+    "animeId": 55
+  },
+  {
+    "id": 916,
+    "title": "Loverboy (feat. Ludacris & Da Brat) [Remix]",
+    "artist": "Mariah Carey",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 113,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9b/94/a1/9b94a1de-cce5-f851-3b56-acd4e7e308cc/mzaf_4836943516681109227.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9b/94/a1/9b94a1de-cce5-f851-3b56-acd4e7e308cc/mzaf_4836943516681109227.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4c/bf/5f/4cbf5fb1-45a5-d939-db28-8d8313ef800d/26UM1IM02383.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Loverboy%20(feat.%20Ludacris%20%26%20Da%20Brat)%20%5BRemix%5D%20Mariah%20Carey",
+    "animeId": 17
+  },
+  {
+    "id": 917,
+    "title": "I'm Falling for You",
+    "artist": "Canruby",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 109,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/d3/71/66d371b7-ded9-afcd-6f1d-4585d1d7c4e4/mzaf_580222172941075229.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/d3/71/66d371b7-ded9-afcd-6f1d-4585d1d7c4e4/mzaf_580222172941075229.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/18/24/3f/18243fd0-4531-dfca-0b32-a5e4046d0c8a/859741332921_cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/I'm%20Falling%20for%20You%20Canruby",
+    "animeId": 346
+  },
+  {
+    "id": 918,
+    "title": "Afterlife",
+    "artist": "Avenged Sevenfold",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 114,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/63/fc/89/63fc89a6-4f01-2bd4-d273-0416a563812a/mzaf_1427039531191848331.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/63/fc/89/63fc89a6-4f01-2bd4-d273-0416a563812a/mzaf_1427039531191848331.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c4/21/00/c42100f9-f329-aad4-7535-9055429efc3f/mzi.tbskuyey.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Afterlife%20Avenged%20Sevenfold",
+    "animeId": 144
+  },
+  {
+    "id": 919,
+    "title": "แอ๊ดคาราบาว",
+    "artist": "GUNNER",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 100,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ef/71/64/ef7164e4-43bd-9e9e-4f86-fcc75cf97be8/mzaf_15178633795940396878.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ef/71/64/ef7164e4-43bd-9e9e-4f86-fcc75cf97be8/mzaf_15178633795940396878.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e1/0a/30/e10a308b-e1b7-f4ad-6ea1-9332841d1dc4/cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%81%E0%B8%AD%E0%B9%8A%E0%B8%94%E0%B8%84%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%9A%E0%B8%B2%E0%B8%A7%20(feat.%20YOUNGGU)%20GUNNER",
+    "animeId": 335
+  },
+  {
+    "id": 920,
+    "title": "รักกันตอนเลิกกัน",
+    "artist": "PiXXiE",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 102,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7a/a1/d7/7aa1d754-74e9-c65b-32e1-39f27004c459/mzaf_16278336930201220822.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7a/a1/d7/7aa1d754-74e9-c65b-32e1-39f27004c459/mzaf_16278336930201220822.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cc/07/9a/cc079ab1-0ed4-8f46-debe-1f42908f1783/26UM1IM17902.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%A3%E0%B8%B1%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%A5%E0%B8%B4%E0%B8%81%E0%B8%81%E0%B8%B1%E0%B8%99%20(Too%20Late)%20PiXXiE",
+    "animeId": 372
+  },
+  {
+    "id": 921,
+    "title": "Moonlight",
+    "artist": "BADI Z",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 103,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fd/d9/5a/fdd95a82-997c-f324-8216-8e9f1b26c044/mzaf_381087619991890197.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fd/d9/5a/fdd95a82-997c-f324-8216-8e9f1b26c044/mzaf_381087619991890197.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b3/e1/ae/b3e1aeae-d935-b073-5ac4-7d17ca7f95ce/cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Moonlight%20BADI%20Z",
+    "animeId": 284
+  },
+  {
+    "id": 922,
+    "title": "Dream",
+    "artist": "LISA",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 135,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/65/af/80/65af80c1-f6ba-1fc2-c9c0-7e119f20afda/mzaf_15862813715917904983.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/65/af/80/65af80c1-f6ba-1fc2-c9c0-7e119f20afda/mzaf_15862813715917904983.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/33/fe/34/33fe34b4-f45e-fc6c-eec2-163f3633e106/196872806434.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Dream%20LISA",
+    "animeId": 275
+  },
+  {
+    "id": 923,
+    "title": "Galaxy Far Far Away",
+    "artist": "Neo",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 116,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/33/36/86333617-dbb7-79f6-4ad3-b6e511920d77/mzaf_11636240313032146292.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/33/36/86333617-dbb7-79f6-4ad3-b6e511920d77/mzaf_11636240313032146292.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/57/47/5b/57475b13-d205-5d5b-8175-9d5281673111/4896043569002.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Galaxy%20Far%20Far%20Away%20Neo",
+    "animeId": 154
+  },
+  {
+    "id": 924,
+    "title": "Bat Country",
+    "artist": "Avenged Sevenfold",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 106,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8e/68/bc/8e68bcef-e9ee-6f4e-1cf6-6a144f7d4255/mzaf_5372283877988363674.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8e/68/bc/8e68bcef-e9ee-6f4e-1cf6-6a144f7d4255/mzaf_5372283877988363674.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f8/70/dc/f870dcfd-a1b4-5e29-1e1e-7764a802d90a/s07.sotroeja.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Bat%20Country%20Avenged%20Sevenfold",
+    "animeId": 78
+  },
+  {
+    "id": 925,
+    "title": "expectations",
+    "artist": "Olivia Rodrigo & Chappell Roan",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 144,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7f/50/03/7f50032e-ded2-9abe-ec9d-4f0d8a5f080a/mzaf_4962111821730513969.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7f/50/03/7f50032e-ded2-9abe-ec9d-4f0d8a5f080a/mzaf_4962111821730513969.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d2/3c/b2/d23cb283-5f3e-7433-bc41-86c7d77c4503/26UM1IM29619.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/expectations%20Olivia%20Rodrigo%20%26%20Chappell%20Roan",
+    "animeId": 103
+  },
+  {
+    "id": 926,
+    "title": "ขอแค่นี้",
+    "artist": "PUN",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 105,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/10/f7/b0/10f7b0d7-874c-83ee-6ac9-2af89b2e616b/mzaf_15749990930963238356.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/10/f7/b0/10f7b0d7-874c-83ee-6ac9-2af89b2e616b/mzaf_15749990930963238356.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/da/34/21/da342137-0489-acd3-35b5-c66e454e63a5/26UMGIM34735.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%82%E0%B8%AD%E0%B9%81%E0%B8%84%E0%B9%88%E0%B8%99%E0%B8%B5%E0%B9%89%20(Forever%20n%20ever)%20PUN",
+    "animeId": 135
+  },
+  {
+    "id": 927,
+    "title": "Less Than Zero",
+    "artist": "The Weeknd",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 101,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c0/e2/7e/c0e27e45-d9bd-0d01-e977-68726d066fa0/mzaf_1415464860944209003.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c0/e2/7e/c0e27e45-d9bd-0d01-e977-68726d066fa0/mzaf_1415464860944209003.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2f/22/a9/2f22a9a6-5af1-5846-a44e-ba016724ed69/21UM1IM58860.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Less%20Than%20Zero%20The%20Weeknd",
+    "animeId": 83
+  },
+  {
+    "id": 928,
+    "title": "ปลายความฝัน",
+    "artist": "Slapkiss",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 122,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/d2/66/76d266ce-0c97-84da-13aa-3fe0f9c19150/mzaf_15366532853111745243.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/d2/66/76d266ce-0c97-84da-13aa-3fe0f9c19150/mzaf_15366532853111745243.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/2b/80/30/2b8030e7-032c-1bdc-2ebf-cb9687c391e4/cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%A2%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%9D%E0%B8%B1%E0%B8%99%20(This%20Far)%20Slapkiss",
+    "animeId": 122
+  },
+  {
+    "id": 929,
+    "title": "First Love",
+    "artist": "FirstOne",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 133,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b3/bf/d6/b3bfd64d-b4e0-d335-0a13-68857e9fb03e/mzaf_6870541979313627088.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b3/bf/d6/b3bfd64d-b4e0-d335-0a13-68857e9fb03e/mzaf_6870541979313627088.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/46/dc/f4/46dcf4eb-b73f-c2cf-fcf4-92af7e60aecb/5034644571225.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/First%20Love%20FirstOne",
+    "animeId": 106
+  },
+  {
+    "id": 930,
+    "title": "This Is Your Boy",
+    "artist": "PERMPOON",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 128,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e8/8a/41/e88a416f-5189-0102-b6c4-2d0a597e4a98/mzaf_7601858378610860594.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e8/8a/41/e88a416f-5189-0102-b6c4-2d0a597e4a98/mzaf_7601858378610860594.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fd/ef/02/fdef0213-f877-b78e-3822-e8cc253a56ce/888332881395.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/This%20Is%20Your%20Boy%20PERMPOON",
+    "animeId": 189
+  },
+  {
+    "id": 931,
+    "title": "คนสุดท้าย",
+    "artist": "Asanee & Wasan",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 108,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6f/d0/02/6fd00264-e7eb-06b8-45a0-6bcedd3233d1/mzaf_11485556225229211792.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6f/d0/02/6fd00264-e7eb-06b8-45a0-6bcedd3233d1/mzaf_11485556225229211792.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8d/60/cd/8d60cd42-016a-4424-174d-7f8b543dba97/888332989770.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%99%E0%B8%AA%E0%B8%B8%E0%B8%94%E0%B8%97%E0%B9%89%E0%B8%B2%E0%B8%A2%20Asanee%20%26%20Wasan",
+    "animeId": 189
+  },
+  {
+    "id": 932,
+    "title": "พระจันทร์ที่ไม่เต็มดวง",
+    "artist": "KLEAR",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 112,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/58/65/a6/5865a619-be90-6b11-9977-71c784038be0/mzaf_7060474033803842147.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/58/65/a6/5865a619-be90-6b11-9977-71c784038be0/mzaf_7060474033803842147.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/e7/bd/1ee7bd2e-f822-1aef-a82d-01934cb1ff89/888332881708.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%9E%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B1%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%95%E0%B9%87%E0%B8%A1%E0%B8%94%E0%B8%A7%E0%B8%87%20KLEAR",
+    "animeId": 213
+  },
+  {
+    "id": 933,
+    "title": "A Rocket to the Moon",
+    "artist": "GAVIN:D",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 116,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1d/62/29/1d622990-e5ad-d74b-6439-05c71a589a80/mzaf_13578014174964605373.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1d/62/29/1d622990-e5ad-d74b-6439-05c71a589a80/mzaf_13578014174964605373.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music113/v4/78/af/ea/78afeaaa-7739-05ac-76f6-018fb837dda5/cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/A%20Rocket%20to%20the%20Moon%20GAVIN%3AD",
+    "animeId": 72
+  },
+  {
+    "id": 934,
+    "title": "กลิ่นฝน",
+    "artist": "TLE MATIMUN & FirstOne",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 121,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/47/47/9b/47479b61-6003-b5a1-bb07-6b6f6b56cafe/mzaf_5634454733980376540.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/47/47/9b/47479b61-6003-b5a1-bb07-6b6f6b56cafe/mzaf_5634454733980376540.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c2/2c/d7/c22cd795-2fd1-be17-e4de-efa1ac3f2aaf/0840517244197_Cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%A5%E0%B8%B4%E0%B9%88%E0%B8%99%E0%B8%9D%E0%B8%99%20(When%20It%20Rains)%20TLE%20MATIMUN%20%26%20FirstOne",
+    "animeId": 124
+  },
+  {
+    "id": 935,
+    "title": "หวง",
+    "artist": "Earth Patravee",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 139,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8d/1a/94/8d1a94aa-1570-c009-b628-0d6646bfdce8/mzaf_3192107662253632545.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8d/1a/94/8d1a94aa-1570-c009-b628-0d6646bfdce8/mzaf_3192107662253632545.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/96/75/f3/9675f355-71c4-72e2-2f7c-d161e1576bf6/0849480072431_Cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%A7%E0%B8%87%20Earth%20Patravee",
+    "animeId": 317
+  },
+  {
+    "id": 936,
+    "title": "I SPY",
+    "artist": "NCT WISH",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 134,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/eb/e0/afebe0f1-df10-ef1e-e909-956c1027e663/mzaf_15575926717433163140.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/af/eb/e0/afebe0f1-df10-ef1e-e909-956c1027e663/mzaf_15575926717433163140.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4c/f3/e8/4cf3e846-90a3-a703-b73a-433e82f9ffa5/888735957147.png/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/I%20SPY%20NCT%20WISH",
+    "animeId": 286
+  },
+  {
+    "id": 937,
+    "title": "We Will Love U.",
+    "artist": "Four-Mod",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 109,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/42/a9/ea42a9cb-e0eb-8b86-33f8-5dbb3539b95f/mzaf_8260034990749471675.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/42/a9/ea42a9cb-e0eb-8b86-33f8-5dbb3539b95f/mzaf_8260034990749471675.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d9/ce/e8/d9cee8c5-7228-1c04-476e-0ac04df1f835/23UM1IM50635.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/We%20Will%20Love%20U.%20Four-Mod",
+    "animeId": 179
+  },
+  {
+    "id": 938,
+    "title": "After Hours",
+    "artist": "The Weeknd",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 110,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/2b/61/542b6133-80f7-f30f-4dcf-059490db9d84/mzaf_1539067797902127760.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/54/2b/61/542b6133-80f7-f30f-4dcf-059490db9d84/mzaf_1539067797902127760.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/6f/bc/e6/6fbce6c4-c38c-72d8-4fd0-66cfff32f679/20UMGIM12176.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/After%20Hours%20The%20Weeknd",
+    "animeId": 280
+  },
+  {
+    "id": 939,
+    "title": "Love Again",
+    "artist": "POW",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 122,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/45/85/6e/45856ef5-815f-debc-f5f0-0395a4f2e0b9/mzaf_8050535093065822332.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/45/85/6e/45856ef5-815f-debc-f5f0-0395a4f2e0b9/mzaf_8050535093065822332.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c9/0f/f6/c90ff63e-c6bf-def4-893e-8f523887f75b/885288757118.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Love%20Again%20POW",
+    "animeId": 144
+  },
+  {
+    "id": 940,
+    "title": "So Far Away",
+    "artist": "Avenged Sevenfold",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 121,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/80/4f/be/804fbe34-c386-b4f0-e782-21f72239d0d9/mzaf_15041069719491707680.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/80/4f/be/804fbe34-c386-b4f0-e782-21f72239d0d9/mzaf_15041069719491707680.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/84/1e/1b/841e1ba9-120d-491f-4be6-6c943f19d907/mzi.jjswxbfu.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/So%20Far%20Away%20Avenged%20Sevenfold",
+    "animeId": 34
+  },
+  {
+    "id": 941,
+    "title": "Love Me Harder",
+    "artist": "Ariana Grande & The Weeknd",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 105,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d1/e6/a7/d1e6a783-c41d-f5db-9a66-dc32cf1b0397/mzaf_8578862161573166847.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d1/e6/a7/d1e6a783-c41d-f5db-9a66-dc32cf1b0397/mzaf_8578862161573166847.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/a5/39/86/a5398609-ad90-50d3-57ad-0f87a4df5ac4/14UMGIM28138.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Love%20Me%20Harder%20Ariana%20Grande%20%26%20The%20Weeknd",
+    "animeId": 86
+  },
+  {
+    "id": 942,
+    "title": "Training Season",
+    "artist": "Dua Lipa",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 138,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0e/8a/6d/0e8a6dbd-feb2-0e55-149e-72b08d48d950/mzaf_15766175317704968405.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0e/8a/6d/0e8a6dbd-feb2-0e55-149e-72b08d48d950/mzaf_15766175317704968405.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0e/c1/57/0ec1575f-5153-ac4b-d578-c5fa3a90bfe1/5021732511676.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Training%20Season%20(Live%20from%20the%20Royal%20Albert%20Hall)%20Dua%20Lipa",
+    "animeId": 122
+  },
+  {
+    "id": 943,
+    "title": "อยากจะไปกับเธอ",
+    "artist": "BNK48 & CGM48",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 143,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f8/79/34/f87934db-10f6-67fa-d81e-a55b3ea00407/mzaf_15168986142630380619.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f8/79/34/f87934db-10f6-67fa-d81e-a55b3ea00407/mzaf_15168986142630380619.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/43/13/85/43138525-bb5d-092b-0dd0-c20c205631ee/cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AD%E0%B8%A2%E0%B8%B2%E0%B8%81%E0%B8%88%E0%B8%B0%E0%B9%84%E0%B8%9B%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%98%E0%B8%AD%20BNK48%20%26%20CGM48",
+    "animeId": 314
+  },
+  {
+    "id": 944,
+    "title": "Unholy Confessions",
+    "artist": "Avenged Sevenfold",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 103,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/93/2b/8e/932b8e55-4d89-456c-cc98-08d600edb288/mzaf_2513728666222235598.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/93/2b/8e/932b8e55-4d89-456c-cc98-08d600edb288/mzaf_2513728666222235598.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/46/20/cb/4620cb89-d601-98bf-4720-869a384d5f7e/cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Unholy%20Confessions%20Avenged%20Sevenfold",
+    "animeId": 9
+  },
+  {
+    "id": 945,
+    "title": "เสี่ยงทายใต้แสงดาว",
+    "artist": "Paowalee Pornpimon",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 134,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e2/7e/fe/e27efe98-f2a0-2831-20a0-679018d50279/mzaf_3973855336410046668.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e2/7e/fe/e27efe98-f2a0-2831-20a0-679018d50279/mzaf_3973855336410046668.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e3/df/d2/e3dfd21c-ecaf-e543-653d-4e49b97d2c12/888332881111.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%87%E0%B8%97%E0%B8%B2%E0%B8%A2%E0%B9%83%E0%B8%95%E0%B9%89%E0%B9%81%E0%B8%AA%E0%B8%87%E0%B8%94%E0%B8%B2%E0%B8%A7%20(feat.%20NuNew)%20Paowalee%20Pornpimon",
+    "animeId": 372
+  },
+  {
+    "id": 946,
+    "title": "ชั่วคราวหรือค้างคืนตลอดไป",
+    "artist": "Emi Thasorn & Bonnie Pattraphus",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 124,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/48/41/c2/4841c2f7-fc59-1b03-1453-71717d3bcf8b/mzaf_15509582734864349031.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/48/41/c2/4841c2f7-fc59-1b03-1453-71717d3bcf8b/mzaf_15509582734864349031.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6a/67/fa/6a67fa67-6337-0843-171e-bf3a23cc6479/888332880770.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%8A%E0%B8%B1%E0%B9%88%E0%B8%A7%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A7%E0%B8%AB%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B8%84%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B8%95%E0%B8%A5%E0%B8%AD%E0%B8%94%E0%B9%84%E0%B8%9B%20Emi%20Thasorn%20%26%20Bonnie%20Pattraphus",
+    "animeId": 228
+  },
+  {
+    "id": 947,
+    "title": "ตัวถ่วง",
+    "artist": "Jumbo1991",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 131,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1c/e3/c5/1ce3c55a-1ae0-8fa4-418f-02db435fd558/mzaf_17948679865354598166.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1c/e3/c5/1ce3c55a-1ae0-8fa4-418f-02db435fd558/mzaf_17948679865354598166.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ab/74/e1/ab74e151-3d34-0ada-3944-8505072b0a76/0840517268759.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%95%E0%B8%B1%E0%B8%A7%E0%B8%96%E0%B9%88%E0%B8%A7%E0%B8%87%20Jumbo1991",
+    "animeId": 390
+  },
+  {
+    "id": 948,
+    "title": "GO HARD",
+    "artist": "MEOVV",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 128,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e1/f1/bf/e1f1bfa9-2d0f-598a-d8c9-44b94cb27db8/mzaf_12336457113324327096.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e1/f1/bf/e1f1bfa9-2d0f-598a-d8c9-44b94cb27db8/mzaf_12336457113324327096.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0b/bc/7a/0bbc7a76-9441-bc53-21f3-87bf1660c828/8800388636530_Cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/GO%20HARD%20MEOVV",
+    "animeId": 101
+  },
+  {
+    "id": 949,
+    "title": "Bloom",
+    "artist": "FLARE U",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 103,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8e/6b/ef/8e6befa4-f2ed-9f87-f085-390406502cab/mzaf_16759334619212229378.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8e/6b/ef/8e6befa4-f2ed-9f87-f085-390406502cab/mzaf_16759334619212229378.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/1c/79/b31c795d-f5f0-d0e3-2ab5-8ef0deed4ecf/888272190069_Cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Bloom%20FLARE%20U",
+    "animeId": 259
+  },
+  {
+    "id": 950,
+    "title": "หม้อหุงข้าว",
+    "artist": "Joey Phuwasit",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 118,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/7d/05/a77d0566-3ecd-1554-b4a4-92496b01583d/mzaf_11156349365383873731.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/7d/05/a77d0566-3ecd-1554-b4a4-92496b01583d/mzaf_11156349365383873731.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/df/92/8b/df928bcb-6091-1313-a0ab-94b6326f6ac3/888332882927.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AB%E0%B8%A1%E0%B9%89%E0%B8%AD%E0%B8%AB%E0%B8%B8%E0%B8%87%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%A7%20(feat.%20%E0%B8%9E%E0%B8%B1%E0%B9%89%E0%B8%99%E0%B8%8A%E0%B9%8C%20%E0%B8%A7%E0%B8%A3%E0%B8%81%E0%B8%B2%E0%B8%8D%E0%B8%88%E0%B8%99%E0%B9%8C)%20Joey%20Phuwasit",
+    "animeId": 52
+  },
+  {
+    "id": 951,
+    "title": "ที่ที่ปลอดภัย",
+    "artist": "Yes'sir days",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 135,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/17/bc/e9/17bce94e-c59d-dc85-14f3-6244546fdcb3/mzaf_1127024067519407847.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/17/bc/e9/17bce94e-c59d-dc85-14f3-6244546fdcb3/mzaf_1127024067519407847.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b7/38/00/b73800d6-c29e-cbc0-7654-f4c83e333474/888332881920.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%9B%E0%B8%A5%E0%B8%AD%E0%B8%94%E0%B8%A0%E0%B8%B1%E0%B8%A2%20Yes'sir%20days",
+    "animeId": 222
+  },
+  {
+    "id": 952,
+    "title": "Nightlight",
+    "artist": "Mark Tuan",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 131,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/28/18/b028185b-57fc-e97e-0929-24e2aec6eda6/mzaf_12656883306776802696.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/28/18/b028185b-57fc-e97e-0929-24e2aec6eda6/mzaf_12656883306776802696.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d7/43/55/d743550d-d25b-824f-5741-bc019f816c43/885288481419.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Nightlight%20(feat.%20MILLI)%20Mark%20Tuan",
+    "animeId": 58
+  },
+  {
+    "id": 953,
+    "title": "ไม่มีวันไหนที่ไม่คิดถึง",
+    "artist": "PURPEECH",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 123,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d4/48/aa/d448aad0-bc1c-9499-f914-04ed59374a75/mzaf_11775791556167084665.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d4/48/aa/d448aad0-bc1c-9499-f914-04ed59374a75/mzaf_11775791556167084665.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/40/ac/fc/40acfc41-065e-0f49-d5f1-b01bbca0d6c4/cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%A1%E0%B8%B5%E0%B8%A7%E0%B8%B1%E0%B8%99%E0%B9%84%E0%B8%AB%E0%B8%99%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%96%E0%B8%B6%E0%B8%87%20(starlost.)%20PURPEECH",
+    "animeId": 94
+  },
+  {
+    "id": 954,
+    "title": "Beauty and a Beat",
+    "artist": "Justin Bieber",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 141,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/b4/da/eab4da01-c422-c640-1ac3-97d746c5871c/mzaf_12363686639555987211.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/b4/da/eab4da01-c422-c640-1ac3-97d746c5871c/mzaf_12363686639555987211.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/73/08/1a/73081a96-0f7c-b5f8-2757-5c17fb714323/12UMGIM31899.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Beauty%20and%20a%20Beat%20(feat.%20Nicki%20Minaj)%20Justin%20Bieber",
+    "animeId": 218
+  },
+  {
+    "id": 955,
+    "title": "Butterflies",
+    "artist": "KRIST & Pup Potato",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 119,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/12/fb/c1/12fbc1da-b03c-506a-38ec-319359bbe2ba/mzaf_4242912617805951712.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/12/fb/c1/12fbc1da-b03c-506a-38ec-319359bbe2ba/mzaf_4242912617805951712.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a5/1f/ff/a51fffd0-8ccf-a9ea-424f-9a7f240c9e3b/888332881227.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Butterflies%20KRIST%20%26%20Pup%20Potato",
+    "animeId": 17
+  },
+  {
+    "id": 956,
+    "title": "GGUN",
+    "artist": "PLAVE",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 107,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/42/96/f4/4296f432-e5d6-0140-69d8-a5b04b3c76ef/mzaf_10931383762807216921.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/42/96/f4/4296f432-e5d6-0140-69d8-a5b04b3c76ef/mzaf_10931383762807216921.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c7/cc/15/c7cc1534-12d9-d560-e469-b79c12024c76/8800388639999_cover.png/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/GGUN%20PLAVE",
+    "animeId": 9
+  },
+  {
+    "id": 957,
+    "title": "At My Worst",
+    "artist": "Pink Sweat$",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 101,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/47/70/f447709d-bbc4-cf7b-c6cc-81ce4baae597/mzaf_13362692329187378715.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/47/70/f447709d-bbc4-cf7b-c6cc-81ce4baae597/mzaf_13362692329187378715.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/14/43/11/14431117-a504-f6f5-2f8d-0805e77ba809/075679792013.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/At%20My%20Worst%20(feat.%20Kehlani)%20Pink%20Sweat%24",
+    "animeId": 251
+  },
+  {
+    "id": 958,
+    "title": "Take Me Back To LA",
+    "artist": "The Weeknd",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 110,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/77/a3/5f/77a35f7f-b81e-87e0-1d98-9fe987a9da74/mzaf_2294823491095522908.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/77/a3/5f/77a35f7f-b81e-87e0-1d98-9fe987a9da74/mzaf_2294823491095522908.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/49/9b/6e/499b6e2d-648f-1a4e-31b8-fb7f06a8123c/25UMGIM09490.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Take%20Me%20Back%20To%20LA%20The%20Weeknd",
+    "animeId": 127
+  },
+  {
+    "id": 959,
+    "title": "ขอบใจที่...",
+    "artist": "เพทาย พลอยมีค่า",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 110,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cc/3f/c0/cc3fc0a3-189b-e573-7a27-ef972a0a052f/mzaf_12618051951401122126.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cc/3f/c0/cc3fc0a3-189b-e573-7a27-ef972a0a052f/mzaf_12618051951401122126.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/74/3b/39/743b390b-9af5-191b-e742-05044f9be215/artwork.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%82%E0%B8%AD%E0%B8%9A%E0%B9%83%E0%B8%88%E0%B8%97%E0%B8%B5%E0%B9%88...%20%E0%B9%80%E0%B8%9E%E0%B8%97%E0%B8%B2%E0%B8%A2%20%E0%B8%9E%E0%B8%A5%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B5%E0%B8%84%E0%B9%88%E0%B8%B2",
+    "animeId": 48
+  },
+  {
+    "id": 960,
+    "title": "Dear God",
+    "artist": "Avenged Sevenfold",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 129,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/8a/b0/148ab045-5981-e512-0f1b-0af43aad3aa2/mzaf_17953848829139440971.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/8a/b0/148ab045-5981-e512-0f1b-0af43aad3aa2/mzaf_17953848829139440971.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c4/21/00/c42100f9-f329-aad4-7535-9055429efc3f/mzi.tbskuyey.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Dear%20God%20Avenged%20Sevenfold",
+    "animeId": 196
+  },
+  {
+    "id": 961,
+    "title": "我们俩",
+    "artist": "极音阁 & 萧泽",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 143,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3d/dd/16/3ddd16b7-badd-4530-9f24-931c6f3503eb/mzaf_692489716756665006.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3d/dd/16/3ddd16b7-badd-4530-9f24-931c6f3503eb/mzaf_692489716756665006.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8c/b7/76/8cb7768c-e4a9-7fbe-5c3b-cdce9359f75d/4896016160618.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E6%88%91%E4%BB%AC%E4%BF%A9%20(RNB%E5%BE%8B%E5%8A%A8%E7%89%88)%20%E6%9E%81%E9%9F%B3%E9%98%81%20%26%20%E8%90%A7%E6%B3%BD",
+    "animeId": 161
+  },
+  {
+    "id": 962,
+    "title": "CHEST VOICE",
+    "artist": "BUS",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 111,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9f/92/c3/9f92c34b-29d3-b814-41e1-581dd1038a4c/mzaf_13977056005677750958.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9f/92/c3/9f92c34b-29d3-b814-41e1-581dd1038a4c/mzaf_13977056005677750958.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/13/68/c5/1368c531-43b7-50f5-579a-c0383a1912fb/26UM1IM08739.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/CHEST%20VOICE%20BUS",
+    "animeId": 65
+  },
+  {
+    "id": 963,
+    "title": "ใจเจ้าเอ๋ย",
+    "artist": "MABELZ PiXXiE",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 121,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d3/b8/2a/d3b82a70-2254-0e9d-c5f3-482397f30872/mzaf_10509952806283123605.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d3/b8/2a/d3b82a70-2254-0e9d-c5f3-482397f30872/mzaf_10509952806283123605.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5c/02/f2/5c02f274-0139-5864-0220-b25f97a92fab/888332883184.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B9%83%E0%B8%88%E0%B9%80%E0%B8%88%E0%B9%89%E0%B8%B2%E0%B9%80%E0%B8%AD%E0%B9%8B%E0%B8%A2%20(%E0%B9%80%E0%B8%9E%E0%B8%A5%E0%B8%87%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%A5%E0%B8%B0%E0%B8%84%E0%B8%A3%20%22%E0%B8%AA%E0%B8%AD%E0%B8%94%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%AD%E0%B8%A2%E0%B8%A1%E0%B8%B2%E0%B8%A5%E0%B8%B2%22)%20MABELZ%20PiXXiE",
+    "animeId": 383
+  },
+  {
+    "id": 964,
+    "title": "กลัวว่าฉันจะไม่เสียใจ",
+    "artist": "PURPEECH",
+    "lang": "th",
+    "genre": "Thai Pop / Typo",
+    "bpm": 111,
+    "mood": "เพลงฮิตวัยรุ่น / ฟังสบาย",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงไทย"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/41/e2/1741e2b3-ac89-1c23-ba1f-5b5de48f58e6/mzaf_11357443247325326525.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/41/e2/1741e2b3-ac89-1c23-ba1f-5b5de48f58e6/mzaf_11357443247325326525.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/c0/9e/4f/c09e4f86-9bdc-063d-5baa-fd4f573040d9/cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%81%E0%B8%A5%E0%B8%B1%E0%B8%A7%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%89%E0%B8%B1%E0%B8%99%E0%B8%88%E0%B8%B0%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B9%83%E0%B8%88%20(Fear)%20PURPEECH",
+    "animeId": 184
+  },
+  {
+    "id": 965,
+    "title": "It's not a bad life",
+    "artist": "BE:FIRST",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 134,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/df/ff/d9/dfffd906-365a-dd12-ed09-6e459a49c69a/mzaf_872231920401838684.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/df/ff/d9/dfffd906-365a-dd12-ed09-6e459a49c69a/mzaf_872231920401838684.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ed/f2/36/edf236d5-4773-2ad5-94ce-42f1f400b296/ANTCD-A0000020993.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/It's%20not%20a%20bad%20life%20BE%3AFIRST",
+    "animeId": 71
+  },
+  {
+    "id": 966,
+    "title": "Everything I Need",
+    "artist": "ELLEGARDEN",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 109,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3b/07/af/3b07af44-4da2-a2f8-7161-24d699092dfa/mzaf_4925687564998409389.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3b/07/af/3b07af44-4da2-a2f8-7161-24d699092dfa/mzaf_4925687564998409389.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/4f/1d/04/4f1d04f7-9c39-93f9-56f4-de8aa25d2db1/29378.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Everything%20I%20Need%20ELLEGARDEN",
+    "animeId": 282
+  },
+  {
+    "id": 967,
+    "title": "3XL",
+    "artist": "Number_i",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 132,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/39/62/9d/39629dcc-19ec-c194-5280-6fd45a888d3c/mzaf_17349075655288308567.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/39/62/9d/39629dcc-19ec-c194-5280-6fd45a888d3c/mzaf_17349075655288308567.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/29/52/90/295290eb-1ffc-1990-33e2-c754c6d3f361/4570199893418.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/3XL%20Number_i",
+    "animeId": 102
+  },
+  {
+    "id": 968,
+    "title": "EGO",
+    "artist": "Travis Japan",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 144,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/0f/28/ea0f28d8-1f6a-e4c5-2047-1c2e3fc14f1c/mzaf_13558941889552139260.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/0f/28/ea0f28d8-1f6a-e4c5-2047-1c2e3fc14f1c/mzaf_13558941889552139260.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6b/da/d9/6bdad980-a723-2291-d36a-10c56cd30223/26UM1IM15358.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/EGO%20Travis%20Japan",
+    "animeId": 157
+  },
+  {
+    "id": 969,
+    "title": "Raven Sky",
+    "artist": "Ado",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 138,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cd/79/be/cd79be32-f54b-04e6-17b2-325355bccec1/mzaf_8632127513620888782.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cd/79/be/cd79be32-f54b-04e6-17b2-325355bccec1/mzaf_8632127513620888782.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fc/db/a6/fcdba60e-6b10-6bbf-a86e-ac96bb806cef/26UM1IM12682.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Raven%20Sky%20Ado",
+    "animeId": 13
+  },
+  {
+    "id": 970,
+    "title": "It's Me",
+    "artist": "ILLIT",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 138,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/34/ca/da/34cadad5-c0be-7909-a08a-d0ba07013059/mzaf_661550860744885801.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/34/ca/da/34cadad5-c0be-7909-a08a-d0ba07013059/mzaf_661550860744885801.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cc/76/26/cc76262a-dc2e-0746-ed85-070a56d23d40/26UMGIM46377.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/It's%20Me%20ILLIT",
+    "animeId": 294
+  },
+  {
+    "id": 971,
+    "title": "Yes! 東京",
+    "artist": "EBiDAN (恵比寿学園男子部), 超特急, M!LK & 原因は自分にある。",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 133,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e2/cf/9f/e2cf9fff-f89a-b83d-95d6-0d0fbc69279d/mzaf_17741390110945722224.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e2/cf/9f/e2cf9fff-f89a-b83d-95d6-0d0fbc69279d/mzaf_17741390110945722224.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a4/db/f8/a4dbf830-ec1e-e5af-723a-2ef5e4dac674/4580789774065.png/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Yes!%20%E6%9D%B1%E4%BA%AC%20(feat.%20SUPER%E2%98%85DRAGON%2C%20Sakurashimeji%2C%20ONE%20N'%20ONLY%2C%20BUDDiiS%2C%20ICEx%20%26%20Lienel)%20EBiDAN%20(%E6%81%B5%E6%AF%94%E5%AF%BF%E5%AD%A6%E5%9C%92%E7%94%B7%E5%AD%90%E9%83%A8)%2C%20%E8%B6%85%E7%89%B9%E6%80%A5%2C%20M!LK%20%26%20%E5%8E%9F%E5%9B%A0%E3%81%AF%E8%87%AA%E5%88%86%E3%81%AB%E3%81%82%E3%82%8B%E3%80%82",
+    "animeId": 77
+  },
+  {
+    "id": 972,
+    "title": "ありふれた世界の果てに",
+    "artist": "YAO",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 118,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f1/da/3e/f1da3e12-d280-1787-3c1b-c1b1823972e7/mzaf_12140783115020634748.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f1/da/3e/f1da3e12-d280-1787-3c1b-c1b1823972e7/mzaf_12140783115020634748.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/fa/d5/a6/fad5a6d5-60b1-4ba3-3da9-be47bb3b7d68/4550759798070_cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E3%81%82%E3%82%8A%E3%81%B5%E3%82%8C%E3%81%9F%E4%B8%96%E7%95%8C%E3%81%AE%E6%9E%9C%E3%81%A6%E3%81%AB%20(feat.%20Awich%2C%20CHICO%20CARLITO%2C%20ONE%20OK%20ROCK%20%26%20Paledusk)%20YAO",
+    "animeId": 348
+  },
+  {
+    "id": 973,
+    "title": "VIVANT <Main theme>",
+    "artist": "千住明",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 135,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bf/25/a8/bf25a847-1a06-2c77-84d3-c4914b05ca6d/mzaf_10707312544545621497.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bf/25/a8/bf25a847-1a06-2c77-84d3-c4914b05ca6d/mzaf_10707312544545621497.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/04/02/2d/04022dc2-0a7f-d853-75f7-471e59b5afb2/UZCL-2271_72.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/VIVANT%20%3CMain%20theme%3E%20%E5%8D%83%E4%BD%8F%E6%98%8E",
+    "animeId": 234
+  },
+  {
+    "id": 974,
+    "title": "Period",
+    "artist": "iri",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 126,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/44/8f/19448f83-ced3-9a94-43b6-13de28cc2c8d/mzaf_6171244371185627644.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/19/44/8f/19448f83-ced3-9a94-43b6-13de28cc2c8d/mzaf_6171244371185627644.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1b/15/4f/1b154f5e-0870-2f74-2b71-4aac3c8716fe/4547366855944.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Period%20iri",
+    "animeId": 42
+  },
+  {
+    "id": 975,
+    "title": "Notes'n'Words",
+    "artist": "ONE OK ROCK",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 141,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e2/f0/ea/e2f0eaa6-4911-28fd-6468-3de37a053819/mzaf_16801486631126109079.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e2/f0/ea/e2f0eaa6-4911-28fd-6468-3de37a053819/mzaf_16801486631126109079.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/99/b9/d3/99b9d3dd-b465-78d5-33d0-a441b43c4228/25UMGIM89662.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Notes'n'Words%20ONE%20OK%20ROCK",
+    "animeId": 246
+  },
+  {
+    "id": 976,
+    "title": "MUJO",
+    "artist": "吉井和哉",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 102,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bd/c8/35/bdc83546-79b7-a25a-1536-f0b0950fb6e2/mzaf_255096294134719100.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/bd/c8/35/bdc83546-79b7-a25a-1536-f0b0950fb6e2/mzaf_255096294134719100.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d8/bc/cb/d8bccb1e-16c2-c314-28ce-fe69c9f10434/26UM1IM27215.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/MUJO%20%E5%90%89%E4%BA%95%E5%92%8C%E5%93%89",
+    "animeId": 60
+  },
+  {
+    "id": 977,
+    "title": "愛MUST BE",
+    "artist": "櫻坂46",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 102,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/0f/4d/860f4d15-9f6a-7675-aac4-b154aa36f460/mzaf_3930328419742329412.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/0f/4d/860f4d15-9f6a-7675-aac4-b154aa36f460/mzaf_3930328419742329412.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/04/8e/94/048e9483-51e7-46c4-1b33-50d0d87478e5/4547366858808.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E6%84%9BMUST%20BE%20%E6%AB%BB%E5%9D%8246",
+    "animeId": 198
+  },
+  {
+    "id": 978,
+    "title": "IGNITE",
+    "artist": "JO1",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 105,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a2/a3/b9/a2a3b97f-966f-1220-3671-aeaa2bf95038/mzaf_8962814783714493433.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a2/a3/b9/a2a3b97f-966f-1220-3671-aeaa2bf95038/mzaf_8962814783714493433.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8e/97/88/8e97883f-a1c7-4ac8-3982-de71a9988f2c/4582109079195.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/IGNITE%20JO1",
+    "animeId": 303
+  },
+  {
+    "id": 979,
+    "title": "DEMON'S SHOT",
+    "artist": "Aiobahn +81 & DEMONDICE",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 129,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/8c/04/9a8c0413-92d0-123b-f981-2e8ceaf47109/mzaf_2163786138777330682.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9a/8c/04/9a8c0413-92d0-123b-f981-2e8ceaf47109/mzaf_2163786138777330682.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/20/a5/ab/20a5ab13-7ae3-4e34-aa40-5eb6e9c421c5/ANTCD-A0000021126.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/DEMON'S%20SHOT%20Aiobahn%20%2B81%20%26%20DEMONDICE",
+    "animeId": 90
+  },
+  {
+    "id": 980,
+    "title": "SEASONS",
+    "artist": "AK-69",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 127,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/45/c9/f6/45c9f6cf-8d88-9ebe-dc08-ecfcd29fc1ff/mzaf_13035464495773497616.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/45/c9/f6/45c9f6cf-8d88-9ebe-dc08-ecfcd29fc1ff/mzaf_13035464495773497616.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cd/ae/c0/cdaec0be-2156-0e9c-2eec-612cc4e3eaab/4550795379042_cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/SEASONS%20(feat.%20ayumi%20hamasaki)%20AK-69",
+    "animeId": 56
+  },
+  {
+    "id": 981,
+    "title": "So Strawberry",
+    "artist": "MAZZEL",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 120,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8e/91/03/8e910332-cce9-67b8-dbd5-14f9b3845a98/mzaf_15988515699966728713.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8e/91/03/8e910332-cce9-67b8-dbd5-14f9b3845a98/mzaf_15988515699966728713.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5a/23/35/5a233580-10ac-9d28-0213-2dd916446f1d/26UM1IM06803.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/So%20Strawberry%20MAZZEL",
+    "animeId": 390
+  },
+  {
+    "id": 982,
+    "title": "烏 - Raven",
+    "artist": "米津玄師",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 119,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1e/1a/8e/1e1a8e3d-5249-1e67-6a45-1a8520756653/mzaf_16789981099640879663.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1e/1a/8e/1e1a8e3d-5249-1e67-6a45-1a8520756653/mzaf_16789981099640879663.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/66/89/10/668910f4-2f09-12c7-200a-104eee77cb48/4547366827767.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E7%83%8F%20-%20Raven%20%E7%B1%B3%E6%B4%A5%E7%8E%84%E5%B8%AB",
+    "animeId": 114
+  },
+  {
+    "id": 983,
+    "title": "Firestarter",
+    "artist": "MAN WITH A MISSION",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 144,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/52/23/a35223f7-edda-ebaf-4e17-6d6780769a21/mzaf_4970044458396585182.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/52/23/a35223f7-edda-ebaf-4e17-6d6780769a21/mzaf_4970044458396585182.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/31/47/7c/31477ced-6d71-93ce-ac7d-66b69dc13cd2/4547366856347.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Firestarter%20MAN%20WITH%20A%20MISSION",
+    "animeId": 2
+  },
+  {
+    "id": 984,
+    "title": "SPIN",
+    "artist": "Kroi",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 100,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/18/b4/b018b427-e910-2d46-ad96-b7e40fd830b8/mzaf_8364305176090011792.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/18/b4/b018b427-e910-2d46-ad96-b7e40fd830b8/mzaf_8364305176090011792.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4b/bf/52/4bbf52a7-8cfc-9174-b85d-efc473c6c80a/28688.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/SPIN%20Kroi",
+    "animeId": 279
+  },
+  {
+    "id": 985,
+    "title": "LIKE LIKE LIKE",
+    "artist": "八木勇征",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 120,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d6/fd/5e/d6fd5e28-2c9f-c4eb-e363-c628dec7b87a/mzaf_12301423629181964084.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d6/fd/5e/d6fd5e28-2c9f-c4eb-e363-c628dec7b87a/mzaf_12301423629181964084.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/06/d2/2a/06d22a18-e316-a33e-0402-da219c5cdae8/26UM1IM20169.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/LIKE%20LIKE%20LIKE%20%E5%85%AB%E6%9C%A8%E5%8B%87%E5%BE%81",
+    "animeId": 17
+  },
+  {
+    "id": 986,
+    "title": "Grave of Halo",
+    "artist": "アキ・ローゼンタール",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 142,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8a/00/80/8a00805d-7588-0c13-3f7d-bd6b8b080d2d/mzaf_14911017563797911177.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8a/00/80/8a00805d-7588-0c13-3f7d-bd6b8b080d2d/mzaf_14911017563797911177.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d0/de/75/d0de7553-b6e5-1440-107a-d99dbda257c2/4580883423616_art.png/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Grave%20of%20Halo%20%E3%82%A2%E3%82%AD%E3%83%BB%E3%83%AD%E3%83%BC%E3%82%BC%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%AB",
+    "animeId": 400
+  },
+  {
+    "id": 987,
+    "title": "IRIS OUT",
+    "artist": "米津玄師",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 129,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/90/85/cb/9085cb94-33c8-78bc-b8a6-4750232a210d/mzaf_5526054165895597852.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/90/85/cb/9085cb94-33c8-78bc-b8a6-4750232a210d/mzaf_5526054165895597852.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/f9/f1/e0f9f1f3-a088-b28d-6760-a28accabc705/4547366775181.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/IRIS%20OUT%20%E7%B1%B3%E6%B4%A5%E7%8E%84%E5%B8%AB",
+    "animeId": 117
+  },
+  {
+    "id": 988,
+    "title": "AIYOU",
+    "artist": "Eve",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 120,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/91/9d/02919d45-e9c3-e60f-ac9b-b45d1173aecd/mzaf_4507834398239403482.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/02/91/9d/02919d45-e9c3-e60f-ac9b-b45d1173aecd/mzaf_4507834398239403482.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a2/7c/6b/a27c6b19-fd28-8d99-2fae-c324213515d0/4573623373876.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/AIYOU%20Eve",
+    "animeId": 142
+  },
+  {
+    "id": 989,
+    "title": "Zoo ～君がいるから～",
+    "artist": "Dream Ami",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 106,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fe/bb/a5/febba5d6-e4ec-1329-3839-1ebf42c2d772/mzaf_14166656642604232216.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/fe/bb/a5/febba5d6-e4ec-1329-3839-1ebf42c2d772/mzaf_14166656642604232216.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/75/4f/58/754f582c-d1fd-e35d-c622-f83ee6ed1fae/25UM2IM06914.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Zoo%20%EF%BD%9E%E5%90%9B%E3%81%8C%E3%81%84%E3%82%8B%E3%81%8B%E3%82%89%EF%BD%9E%20(From%20%E3%80%8E%E3%82%BA%E3%83%BC%E3%83%88%E3%83%94%E3%82%A22%E3%80%8F%2F%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88)%20Dream%20Ami",
+    "animeId": 104
+  },
+  {
+    "id": 990,
+    "title": "Five",
+    "artist": "嵐",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 140,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2c/12/dd/2c12dd4f-e633-d172-a317-fad5833c185d/mzaf_7003659723601078413.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/2c/12/dd/2c12dd4f-e633-d172-a317-fad5833c185d/mzaf_7003659723601078413.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/05/77/28/05772817-1d81-ee8e-8224-a225f74a310b/820200234377.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Five%20%E5%B5%90",
+    "animeId": 206
+  },
+  {
+    "id": 991,
+    "title": "Fortress Defense",
+    "artist": "10-FEET",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 108,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/f7/7b/99f77b0e-a52c-051a-5cf0-36c5fcbe0b6d/mzaf_12899519500165902587.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/f7/7b/99f77b0e-a52c-051a-5cf0-36c5fcbe0b6d/mzaf_12899519500165902587.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/35/13/27/3513279b-cfda-d57c-b2ce-18cb99dd1d1f/26UMGIM98181.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Fortress%20Defense%2010-FEET",
+    "animeId": 173
+  },
+  {
+    "id": 992,
+    "title": "Nightmare Syndrome♡",
+    "artist": "Special for Princess!",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 141,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/41/8f/34418f0f-165e-3ebb-176d-fef7a901edf1/mzaf_13558426490549170409.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/41/8f/34418f0f-165e-3ebb-176d-fef7a901edf1/mzaf_13558426490549170409.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1e/10/40/1e1040ad-de98-2e54-1465-9c5201ba2f65/4547366856354.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Nightmare%20Syndrome%E2%99%A1%20Special%20for%20Princess!",
+    "animeId": 268
+  },
+  {
+    "id": 993,
+    "title": "new trick",
+    "artist": "ROSÉ",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 113,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8d/9d/e1/8d9de148-da69-7d45-16a4-17e75b6b8499/mzaf_3622309126687450676.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8d/9d/e1/8d9de148-da69-7d45-16a4-17e75b6b8499/mzaf_3622309126687450676.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/06/3f/48063f55-8c24-92e6-2bbe-ffb3a638420b/075679555984.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/new%20trick%20ROS%C3%89",
+    "animeId": 246
+  },
+  {
+    "id": 994,
+    "title": "AIKATSU!× AIKATSU! ～いちご & あおい & 蘭 Ver.～",
+    "artist": "わか, ふうり & ゆな",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 127,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/89/de/6689dea1-a5dc-e55f-48bd-45f370c12c71/mzaf_12999197832781478573.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/66/89/de/6689dea1-a5dc-e55f-48bd-45f370c12c71/mzaf_12999197832781478573.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/f3/79/0e/f3790e51-5cb6-4fa7-91f4-8ba8ffad59cb/4540774750863.png/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/AIKATSU!%C3%97%20AIKATSU!%20%EF%BD%9E%E3%81%84%E3%81%A1%E3%81%94%20%26%20%E3%81%82%E3%81%8A%E3%81%84%20%26%20%E8%98%AD%20Ver.%EF%BD%9E%20%E3%82%8F%E3%81%8B%2C%20%E3%81%B5%E3%81%86%E3%82%8A%20%26%20%E3%82%86%E3%81%AA",
+    "animeId": 35
+  },
+  {
+    "id": 995,
+    "title": "Honto",
+    "artist": "sumika",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 110,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7a/94/f5/7a94f5e2-9a37-319c-1319-a61bec4b7a5a/mzaf_11101122309477964551.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7a/94/f5/7a94f5e2-9a37-319c-1319-a61bec4b7a5a/mzaf_11101122309477964551.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9b/4d/46/9b4d4680-ab20-2ce4-c89f-be96e38d9d41/4547366800814.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Honto%20sumika",
+    "animeId": 326
+  },
+  {
+    "id": 996,
+    "title": "アイカツ!INVITATION",
+    "artist": "わか, ふうり, ゆな, れみ, えり & りすこ",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 135,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5b/59/6a/5b596a80-8ed2-b2c7-3902-439b9c6086e9/mzaf_16485688784469254111.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5b/59/6a/5b596a80-8ed2-b2c7-3902-439b9c6086e9/mzaf_16485688784469254111.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/75/7c/a4/757ca41d-8888-1e50-5eb7-f5bd5e67c52e/4540774750856.png/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E3%82%A2%E3%82%A4%E3%82%AB%E3%83%84!INVITATION%20%E3%82%8F%E3%81%8B%2C%20%E3%81%B5%E3%81%86%E3%82%8A%2C%20%E3%82%86%E3%81%AA%2C%20%E3%82%8C%E3%81%BF%2C%20%E3%81%88%E3%82%8A%20%26%20%E3%82%8A%E3%81%99%E3%81%93",
+    "animeId": 412
+  },
+  {
+    "id": 997,
+    "title": "Walking with you",
+    "artist": "Novelbright",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 103,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e7/cc/64/e7cc64b9-f1bd-454f-1632-60014d0c8083/mzaf_14347820585037570997.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e7/cc/64/e7cc64b9-f1bd-454f-1632-60014d0c8083/mzaf_14347820585037570997.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/3a/0a/ca/3a0aca57-45c1-7aca-1be1-9755d549ffb9/EPM-10001.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Walking%20with%20you%20Novelbright",
+    "animeId": 381
+  },
+  {
+    "id": 998,
+    "title": "Agitato",
+    "artist": "初星学園",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 107,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7d/2e/b7/7d2eb766-03ac-6897-8f8b-a79392aa0a5b/mzaf_5230869230407404945.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7d/2e/b7/7d2eb766-03ac-6897-8f8b-a79392aa0a5b/mzaf_5230869230407404945.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f3/b1/13/f3b11306-f2ad-f33f-67ec-b63147ffd358/PA00229432_0_255513_jacket.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Agitato%20%E5%88%9D%E6%98%9F%E5%AD%A6%E5%9C%92",
+    "animeId": 337
+  },
+  {
+    "id": 999,
+    "title": "Soranji",
+    "artist": "Mrs. GREEN APPLE",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 100,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3a/f6/00/3af60019-4319-4f3c-8183-983c9c4e55d9/mzaf_11855037906783799062.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3a/f6/00/3af60019-4319-4f3c-8183-983c9c4e55d9/mzaf_11855037906783799062.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/e1/ec/d4/e1ecd4b4-4f2f-c49e-fa95-958c6b4cf7ab/22UM1IM16537.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Soranji%20Mrs.%20GREEN%20APPLE",
+    "animeId": 391
+  },
+  {
+    "id": 1000,
+    "title": "GO GHOST",
+    "artist": "King Gnu",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 120,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b5/94/11/b59411d9-986a-ba04-f305-935f249a835f/mzaf_6316876655859296881.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/b5/94/11/b59411d9-986a-ba04-f305-935f249a835f/mzaf_6316876655859296881.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/47/f3/49/47f3490b-4395-28ba-e6a9-88c9dd7be8fa/4547366841732.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/GO%20GHOST%20King%20Gnu",
+    "animeId": 238
+  },
+  {
+    "id": 1001,
+    "title": "lulu.",
+    "artist": "Mrs. GREEN APPLE",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 113,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4d/9f/5f/4d9f5f06-3e20-9ce6-f3e0-fbe4e5fc40a1/mzaf_6745694631041190913.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4d/9f/5f/4d9f5f06-3e20-9ce6-f3e0-fbe4e5fc40a1/mzaf_6745694631041190913.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/0c/57/00/0c570009-660c-0faa-c53b-8f06ce2b04ea/25UM2IM10507.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/lulu.%20Mrs.%20GREEN%20APPLE",
+    "animeId": 104
+  },
+  {
+    "id": 1002,
+    "title": "I’m the law",
+    "artist": "櫻坂46",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 110,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b2/1b/49/b21b498a-3fbf-9aaa-a25e-c76238cfd418/mzaf_10537927864764173928.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b2/1b/49/b21b498a-3fbf-9aaa-a25e-c76238cfd418/mzaf_10537927864764173928.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/04/8e/94/048e9483-51e7-46c4-1b33-50d0d87478e5/4547366858808.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/I%E2%80%99m%20the%20law%20%E6%AB%BB%E5%9D%8246",
+    "animeId": 232
+  },
+  {
+    "id": 1003,
+    "title": "ナギイチ",
+    "artist": "NMB48",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 102,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/38/e2/0738e2cb-2830-6160-c9e3-24044ba6a8bf/mzaf_10845101867025141529.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/07/38/e2/0738e2cb-2830-6160-c9e3-24044ba6a8bf/mzaf_10845101867025141529.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d8/86/f4/d886f4ca-7322-5fc9-089c-6657f40d30d3/26UM1IM29306.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E3%83%8A%E3%82%AE%E3%82%A4%E3%83%81%20(%EF%BD%9Eall%20members%202026%EF%BD%9E)%20NMB48",
+    "animeId": 69
+  },
+  {
+    "id": 1004,
+    "title": "晩餐歌 - Bansanka",
+    "artist": "tuki.",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 108,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9c/fc/b3/9cfcb377-3b90-d2ff-c9c9-7305d9a0090d/mzaf_8407642499488424263.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9c/fc/b3/9cfcb377-3b90-d2ff-c9c9-7305d9a0090d/mzaf_8407642499488424263.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/67/03/c9/6703c973-c9da-1bd8-cc81-fe315b951231/4582649065306.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/%E6%99%A9%E9%A4%90%E6%AD%8C%20-%20Bansanka%20tuki.",
+    "animeId": 176
+  },
+  {
+    "id": 1005,
+    "title": "RIZAN",
+    "artist": "稲葉浩志",
+    "lang": "jp",
+    "genre": "J-Pop / Anime",
+    "bpm": 132,
+    "mood": "Anime Beat / สนุก",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "อนิเมะ"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3e/88/d8/3e88d82f-98e6-b072-5be5-dd8dece5f890/mzaf_741413637878726715.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3e/88/d8/3e88d82f-98e6-b072-5be5-dd8dece5f890/mzaf_741413637878726715.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/41/9c/9b/419c9be8-8025-7d48-af84-fd528f7fbaf0/inaba-0238.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/RIZAN%20%E7%A8%B2%E8%91%89%E6%B5%A9%E5%BF%97",
+    "animeId": 258
+  },
+  {
+    "id": 1006,
+    "title": "Patient Zero",
+    "artist": "Taylor Swift",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 100,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/78/eb/50/78eb50a1-7fe5-0d0c-4854-d11ea5402565/mzaf_2293213266022903634.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/78/eb/50/78eb50a1-7fe5-0d0c-4854-d11ea5402565/mzaf_2293213266022903634.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ef/c0/d4/efc0d4c7-557d-e255-849a-ae1c0c3a6ac2/26UM1IM31398.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Patient%20Zero%20(Piano%20Version)%20Taylor%20Swift",
+    "animeId": 401
+  },
+  {
+    "id": 1007,
+    "title": "BAD TIMES",
+    "artist": "Imael Angel",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 133,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/79/6c/e9/796ce961-9c5b-8f48-dd6d-9ee1ff38dc58/mzaf_3288254996312096641.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/79/6c/e9/796ce961-9c5b-8f48-dd6d-9ee1ff38dc58/mzaf_3288254996312096641.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d5/ad/da/d5adda6b-65f4-755a-05ab-f33a4e0e4cdd/artwork.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/BAD%20TIMES%20Imael%20Angel",
+    "animeId": 101
+  },
+  {
+    "id": 1008,
+    "title": "If I Don't Leave I’m Gonna Stay",
+    "artist": "Carly Pearce & Riley Green",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 130,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/27/03/72/27037276-e6fa-d11d-0841-aac6d1b88faf/mzaf_6983783438891540807.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/27/03/72/27037276-e6fa-d11d-0841-aac6d1b88faf/mzaf_6983783438891540807.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/48/ce/a2/48cea289-289a-0d95-a67f-e562f804d518/0843930149803.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/If%20I%20Don't%20Leave%20I%E2%80%99m%20Gonna%20Stay%20Carly%20Pearce%20%26%20Riley%20Green",
+    "animeId": 65
+  },
+  {
+    "id": 1009,
+    "title": "Bad Times",
+    "artist": "Imael Angel",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 103,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cf/fc/38/cffc38e7-ccf6-499a-2a93-eb98de0d936b/mzaf_3294710183099291572.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/cf/fc/38/cffc38e7-ccf6-499a-2a93-eb98de0d936b/mzaf_3294710183099291572.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/08/03/7f/08037f7d-6173-9348-991d-5966f0686539/artwork.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Bad%20Times%20(Extended%20Version)%20Imael%20Angel",
+    "animeId": 186
+  },
+  {
+    "id": 1010,
+    "title": "Patient Zero",
+    "artist": "Taylor Swift",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 116,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/17/c2/f417c2be-5557-4835-8a07-3e8f3eb02899/mzaf_14765043756596089844.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/17/c2/f417c2be-5557-4835-8a07-3e8f3eb02899/mzaf_14765043756596089844.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/66/d9/ad/66d9ad66-7a21-5de5-bad0-3130997a7057/26UM1IM31399.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Patient%20Zero%20(Acoustic%20Version)%20Taylor%20Swift",
+    "animeId": 328
+  },
+  {
+    "id": 1011,
+    "title": "Flower In A Hurricane [from GTAVI]",
+    "artist": "Justice, Tame Impala, SZA & King Gizzard & The Lizard Wizard",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 139,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/04/33/f5/0433f5b3-d831-1935-08e2-86e233973e02/mzaf_16615932387163717675.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/04/33/f5/0433f5b3-d831-1935-08e2-86e233973e02/mzaf_16615932387163717675.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/bf/ee/c5bfee6e-9cf9-4e02-a3c6-38a69d3e0a9e/5056556187486_cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Flower%20In%20A%20Hurricane%20%5Bfrom%20GTAVI%5D%20Justice%2C%20Tame%20Impala%2C%20SZA%20%26%20King%20Gizzard%20%26%20The%20Lizard%20Wizard",
+    "animeId": 103
+  },
+  {
+    "id": 1012,
+    "title": "My Years With You",
+    "artist": "RUSTIC DRIFTER",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 133,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d8/70/d9/d870d9e0-9689-7f11-1ef5-f03a96e92ac8/mzaf_11610334708035576652.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d8/70/d9/d870d9e0-9689-7f11-1ef5-f03a96e92ac8/mzaf_11610334708035576652.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cd/92/3f/cd923fbb-21e8-3a9f-fa0f-3c2e47ad4ad1/artwork.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/My%20Years%20With%20You%20RUSTIC%20DRIFTER",
+    "animeId": 208
+  },
+  {
+    "id": 1013,
+    "title": "Last Thing You Need",
+    "artist": "Morgan Wallen",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 132,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a6/35/6ca635bf-5556-933f-a2de-cf441db29152/mzaf_7854810682514136041.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6c/a6/35/6ca635bf-5556-933f-a2de-cf441db29152/mzaf_7854810682514136041.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5d/d3/1c/5dd31c9c-1e1c-0bbc-104f-4a42e2bb4c59/075679556424.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Last%20Thing%20You%20Need%20Morgan%20Wallen",
+    "animeId": 54
+  },
+  {
+    "id": 1014,
+    "title": "One more day",
+    "artist": "Rocky B",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 132,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a5/a3/34/a5a3343d-c45b-e68f-c876-89aea90e1ff2/mzaf_1568137949511285806.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a5/a3/34/a5a3343d-c45b-e68f-c876-89aea90e1ff2/mzaf_1568137949511285806.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/57/2d/51/572d51b6-0451-bca9-3282-c1195785b5fa/701486082329.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/One%20more%20day%20Rocky%20B",
+    "animeId": 101
+  },
+  {
+    "id": 1015,
+    "title": "Don't Mind If I Do",
+    "artist": "Riley Green",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 112,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/88/96/4b/88964ba3-344f-48fa-d2c9-a2ab1421511a/mzaf_3619284133913526200.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/88/96/4b/88964ba3-344f-48fa-d2c9-a2ab1421511a/mzaf_3619284133913526200.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/25/fb/18/25fb1804-5862-1936-9d98-d8e7b5513413/24BMR0005677.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Don't%20Mind%20If%20I%20Do%20(feat.%20Ella%20Langley)%20Riley%20Green",
+    "animeId": 167
+  },
+  {
+    "id": 1016,
+    "title": "Thriller",
+    "artist": "Michael Jackson",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 109,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/58/8c/cb/588ccb9a-ab79-4a38-43b5-d4c24ea42859/mzaf_2083607504726567992.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/58/8c/cb/588ccb9a-ab79-4a38-43b5-d4c24ea42859/mzaf_2083607504726567992.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/32/4f/fd/324ffda2-9e51-8f6a-0c2d-c6fd2b41ac55/074643811224.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Thriller%20Michael%20Jackson",
+    "animeId": 395
+  },
+  {
+    "id": 1017,
+    "title": "Too Slick (Remix) [feat. Method Man]",
+    "artist": "Pete & Bas",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 114,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/50/44/33504469-4c99-34d8-7007-a8914f797b6e/mzaf_16435298363564041945.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/33/50/44/33504469-4c99-34d8-7007-a8914f797b6e/mzaf_16435298363564041945.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fc/9d/d0/fc9dd019-e8fd-456c-d547-03f44da97434/5064090696357_cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Too%20Slick%20(Remix)%20%5Bfeat.%20Method%20Man%5D%20Pete%20%26%20Bas",
+    "animeId": 254
+  },
+  {
+    "id": 1018,
+    "title": "Been By Now",
+    "artist": "Morgan Wallen",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 108,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/8e/e7/d48ee7e8-0c76-ca27-7222-aa4d2b048dc2/mzaf_11704984347411785772.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d4/8e/e7/d48ee7e8-0c76-ca27-7222-aa4d2b048dc2/mzaf_11704984347411785772.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/9f/8d/52/9f8d52a0-b6d9-d038-327b-4fe58bedce67/26UMGIM94572.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Been%20By%20Now%20Morgan%20Wallen",
+    "animeId": 15
+  },
+  {
+    "id": 1019,
+    "title": "TRENCHES",
+    "artist": "Anberlin",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 120,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/51/44/72/514472ff-965d-5f3e-278a-97325472f878/mzaf_14091192429569533013.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/51/44/72/514472ff-965d-5f3e-278a-97325472f878/mzaf_14091192429569533013.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9f/0f/64/9f0f64ae-7d9c-ed4c-254d-f114ad76d454/794558052566.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/TRENCHES%20(feat.%20Switchfoot)%20Anberlin",
+    "animeId": 264
+  },
+  {
+    "id": 1020,
+    "title": "God I'm Just Grateful",
+    "artist": "Elevation Worship & Chandler Moore",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 123,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/92/07/4c/92074ca4-7f88-7ed7-ae79-9950c7000969/mzaf_6849252024047969715.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/92/07/4c/92074ca4-7f88-7ed7-ae79-9950c7000969/mzaf_6849252024047969715.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/51/42/01/51420110-806a-86c5-7025-5016e5a2bd57/196873750729.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/God%20I'm%20Just%20Grateful%20Elevation%20Worship%20%26%20Chandler%20Moore",
+    "animeId": 395
+  },
+  {
+    "id": 1021,
+    "title": "Mama, Don't Close Your Eyes",
+    "artist": "Bjorn Bonebreaker",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 124,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/2a/ae/942aae1b-16ec-7de9-4a1a-247e06ab8e5b/mzaf_13001702980669412928.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/94/2a/ae/942aae1b-16ec-7de9-4a1a-247e06ab8e5b/mzaf_13001702980669412928.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/05/71/cf/0571cf88-b7fc-b762-d646-8a4b3a598953/artwork.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Mama%2C%20Don't%20Close%20Your%20Eyes%20Bjorn%20Bonebreaker",
+    "animeId": 342
+  },
+  {
+    "id": 1022,
+    "title": "Jaded",
+    "artist": "Koe Wetzel & Ella Langley",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 122,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/94/f7/e2/94f7e2cc-b182-cb75-7a31-7e88eee2191e/mzaf_12920756836197900992.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/94/f7/e2/94f7e2cc-b182-cb75-7a31-7e88eee2191e/mzaf_12920756836197900992.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c1/09/7e/c1097e38-0d2e-d389-2be7-0762979bb43a/ticket.easjqfbg.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Jaded%20Koe%20Wetzel%20%26%20Ella%20Langley",
+    "animeId": 217
+  },
+  {
+    "id": 1023,
+    "title": "You Wouldn't Know",
+    "artist": "Stephen Day",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 127,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/21/ad/f7/21adf7b6-b08c-c70c-299b-ea84d917b9e5/mzaf_15604830368049679307.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/21/ad/f7/21adf7b6-b08c-c70c-299b-ea84d917b9e5/mzaf_15604830368049679307.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/75/d9/dc/75d9dc73-fbe8-ba62-5cb0-adbbdbd8baa8/820233976039.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/You%20Wouldn't%20Know%20Stephen%20Day",
+    "animeId": 227
+  },
+  {
+    "id": 1024,
+    "title": "My Way",
+    "artist": "Riley Green",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 116,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d6/56/b8/d656b8e9-28a5-5313-28d3-06282cb7da64/mzaf_8128067240056507632.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d6/56/b8/d656b8e9-28a5-5313-28d3-06282cb7da64/mzaf_8128067240056507632.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/74/60/09/74600943-c67a-5335-4f8c-bad8b3e5d2a8/26BMR0007851.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/My%20Way%20Riley%20Green",
+    "animeId": 140
+  },
+  {
+    "id": 1025,
+    "title": "On My Own",
+    "artist": "Patti LaBelle & Michael McDonald",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 125,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/01/da/52/01da5221-fd43-f0ab-14d3-9e0609fb175c/mzaf_14246889338466723842.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/01/da/52/01da5221-fd43-f0ab-14d3-9e0609fb175c/mzaf_14246889338466723842.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/f6/70/d7/f670d7c9-7587-8cbf-fed1-9be01f7d3c7b/00076732573723.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/On%20My%20Own%20Patti%20LaBelle%20%26%20Michael%20McDonald",
+    "animeId": 406
+  },
+  {
+    "id": 1026,
+    "title": "Street Of Dreams",
+    "artist": "U2",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 120,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/82/fd/d9/82fdd99a-beae-d37a-cae2-ea3d9c149b61/mzaf_18418741231256215877.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/82/fd/d9/82fdd99a-beae-d37a-cae2-ea3d9c149b61/mzaf_18418741231256215877.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/19/6b/ac/196bac72-8c20-98c9-7fb4-5c66619cc0c3/26UMGIM93067.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Street%20Of%20Dreams%20U2",
+    "animeId": 45
+  },
+  {
+    "id": 1027,
+    "title": "3 am",
+    "artist": "Matchbox Twenty",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 110,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1a/68/7f/1a687f1d-68fa-2c6d-7f84-3cc6ba56e058/mzaf_14873767130143969472.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1a/68/7f/1a687f1d-68fa-2c6d-7f84-3cc6ba56e058/mzaf_14873767130143969472.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/be/24/30/be243026-a149-dc9d-ef3b-d01fef6da03f/075679957535.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/3%20am%20Matchbox%20Twenty",
+    "animeId": 410
+  },
+  {
+    "id": 1028,
+    "title": "Dirty Bird",
+    "artist": "Helluva Boss, Bryce Pinkham & Brandon Rogers",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 107,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c3/a5/5a/c3a55a5f-1bf2-c4fe-3922-53f3b4a522b3/mzaf_10566100918819137331.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c3/a5/5a/c3a55a5f-1bf2-c4fe-3922-53f3b4a522b3/mzaf_10566100918819137331.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c0/ac/d3/c0acd3d3-2eea-3d02-e06d-2497bf7b8fc3/075679556769.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Dirty%20Bird%20Helluva%20Boss%2C%20Bryce%20Pinkham%20%26%20Brandon%20Rogers",
+    "animeId": 100
+  },
+  {
+    "id": 1029,
+    "title": "Jesus Is Coming",
+    "artist": "George Paul",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 141,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/19/a4/8619a4b3-be3d-5b3f-a096-0062b5916ba8/mzaf_16392985772859659739.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/86/19/a4/8619a4b3-be3d-5b3f-a096-0062b5916ba8/mzaf_16392985772859659739.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4e/ed/3a/4eed3a01-4766-f854-19a2-55d325c4df17/artwork.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Jesus%20Is%20Coming%20George%20Paul",
+    "animeId": 331
+  },
+  {
+    "id": 1030,
+    "title": "Dracula",
+    "artist": "Tame Impala",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 101,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/5d/31/715d3169-5fba-a0b7-da24-2aefc83796cf/mzaf_8089500935177582820.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/5d/31/715d3169-5fba-a0b7-da24-2aefc83796cf/mzaf_8089500935177582820.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/36/be/b4/36beb41f-c644-55cb-9fbb-bf0622a66653/196873644783.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Dracula%20Tame%20Impala",
+    "animeId": 29
+  },
+  {
+    "id": 1031,
+    "title": "Monster Mash",
+    "artist": "Bobby \"Boris\" Pickett & The Crypt-Kickers",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 108,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ac/1e/45/ac1e4508-6a0c-ded2-c3e0-715df9e27e58/mzaf_1451444538093662860.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ac/1e/45/ac1e4508-6a0c-ded2-c3e0-715df9e27e58/mzaf_1451444538093662860.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/96/4e/2e/964e2e34-975a-f9da-ea23-326fdce09941/07UMGIM07880.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Monster%20Mash%20Bobby%20%22Boris%22%20Pickett%20%26%20The%20Crypt-Kickers",
+    "animeId": 76
+  },
+  {
+    "id": 1032,
+    "title": "The Jesus I Know Now",
+    "artist": "Brandon Lake & Lainey Wilson",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 106,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/f8/fc/f9f8fc76-efd6-a84c-58a6-199dca9430af/mzaf_1794227461374329739.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f9/f8/fc/f9f8fc76-efd6-a84c-58a6-199dca9430af/mzaf_1794227461374329739.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3f/82/90/3f8290ba-b6cd-2028-0fc1-844e25bf0389/196874252284.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/The%20Jesus%20I%20Know%20Now%20Brandon%20Lake%20%26%20Lainey%20Wilson",
+    "animeId": 143
+  },
+  {
+    "id": 1033,
+    "title": "I Can't Love You Anymore",
+    "artist": "Ella Langley & Morgan Wallen",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 115,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1d/bf/35/1dbf3531-4434-a183-7552-4d8eba15e756/mzaf_17703032666608891166.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1d/bf/35/1dbf3531-4434-a183-7552-4d8eba15e756/mzaf_17703032666608891166.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/26/35/03/26350323-d656-4817-49e6-4d658af8363a/196874332917.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/I%20Can't%20Love%20You%20Anymore%20Ella%20Langley%20%26%20Morgan%20Wallen",
+    "animeId": 264
+  },
+  {
+    "id": 1034,
+    "title": "Ordinary",
+    "artist": "Alex Warren",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 139,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/2f/82/f42f82e5-e164-dd14-4f9a-2767d0215bae/mzaf_2512873933120069750.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/f4/2f/82/f42f82e5-e164-dd14-4f9a-2767d0215bae/mzaf_2512873933120069750.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/46/78/fb/4678fb84-d19e-f11b-93ff-4dc17660bff8/075679619075.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Ordinary%20Alex%20Warren",
+    "animeId": 72
+  },
+  {
+    "id": 1035,
+    "title": "you look like you love me",
+    "artist": "Ella Langley & Riley Green",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 111,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/f6/be/14f6bec3-f232-2211-042c-743d933c9c02/mzaf_7434264055963505924.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/14/f6/be/14f6bec3-f232-2211-042c-743d933c9c02/mzaf_7434264055963505924.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/62/33/40/62334080-6129-4d0c-086b-921cc956cb7a/196872090895.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/you%20look%20like%20you%20love%20me%20Ella%20Langley%20%26%20Riley%20Green",
+    "animeId": 169
+  },
+  {
+    "id": 1036,
+    "title": "Take a Little",
+    "artist": "Jaxson Blue",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 136,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1b/ed/e0/1bede00e-5137-7cab-77db-dcde025e6d7a/mzaf_11614365294874107987.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1b/ed/e0/1bede00e-5137-7cab-77db-dcde025e6d7a/mzaf_11614365294874107987.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4c/22/ef/4c22efe8-9ad8-35ca-5946-b53bc872cc6a/artwork.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Take%20a%20Little%20Jaxson%20Blue",
+    "animeId": 280
+  },
+  {
+    "id": 1037,
+    "title": "I Did It Tired",
+    "artist": "Kara Holt",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 140,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4a/56/08/4a560811-a602-6740-ac36-430097a3f196/mzaf_14024246248573843144.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4a/56/08/4a560811-a602-6740-ac36-430097a3f196/mzaf_14024246248573843144.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6c/fd/c5/6cfdc554-120d-c093-2a7a-1dc0b09abfd7/artwork.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/I%20Did%20It%20Tired%20Kara%20Holt",
+    "animeId": 47
+  },
+  {
+    "id": 1038,
+    "title": "Cleveland!",
+    "artist": "Taylor Swift",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 108,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/39/42/5b/39425b91-27b1-4b37-2f57-6f704fa5d8a6/mzaf_158326623628930700.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/39/42/5b/39425b91-27b1-4b37-2f57-6f704fa5d8a6/mzaf_158326623628930700.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a0/dd/fd/a0ddfd72-ee9e-f046-6466-a5dbefc696fa/26UM1IM21436.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Cleveland!%20Taylor%20Swift",
+    "animeId": 240
+  },
+  {
+    "id": 1039,
+    "title": "Movin' To The Sun",
+    "artist": "HUGEL, Imael Angel & Ultra Naté",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 143,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a9/d2/09/a9d209b4-55a5-67e8-2e15-949cb00e716d/mzaf_11935934741751979581.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a9/d2/09/a9d209b4-55a5-67e8-2e15-949cb00e716d/mzaf_11935934741751979581.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/96/61/7a/96617ab5-51da-7cfc-97e5-c5a6a893c210/1087654.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Movin'%20To%20The%20Sun%20HUGEL%2C%20Imael%20Angel%20%26%20Ultra%20Nat%C3%A9",
+    "animeId": 112
+  },
+  {
+    "id": 1040,
+    "title": "Tennessee Whiskey",
+    "artist": "Chris Stapleton",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 104,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/b3/e0/76b3e0d2-54e7-cf85-5acd-7e80842965b8/mzaf_15197962862081974235.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/76/b3/e0/76b3e0d2-54e7-cf85-5acd-7e80842965b8/mzaf_15197962862081974235.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/e2/4b/60/e24b6016-8278-bb18-cf5d-d44bf68371da/00602547223838.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Tennessee%20Whiskey%20Chris%20Stapleton",
+    "animeId": 296
+  },
+  {
+    "id": 1041,
+    "title": "Waste My Time",
+    "artist": "Marc Atlas",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 110,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1e/17/be/1e17bede-a54d-380e-c84d-19b02e8ba743/mzaf_10915469612348480374.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1e/17/be/1e17bede-a54d-380e-c84d-19b02e8ba743/mzaf_10915469612348480374.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b8/b0/66/b8b06683-b734-08eb-eac7-788e63db3358/26SYMIM35305.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Waste%20My%20Time%20Marc%20Atlas",
+    "animeId": 302
+  },
+  {
+    "id": 1042,
+    "title": "Be Her",
+    "artist": "Ella Langley",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 122,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c8/7c/d4/c87cd4df-1197-1d1d-a07c-c5139d59a58f/mzaf_8671653320488087674.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c8/7c/d4/c87cd4df-1197-1d1d-a07c-c5139d59a58f/mzaf_8671653320488087674.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a1/ba/64/a1ba6484-f462-1b88-ddff-d4c014d5f265/196874018361.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Be%20Her%20Ella%20Langley",
+    "animeId": 157
+  },
+  {
+    "id": 1043,
+    "title": "VALHALLA CALLING",
+    "artist": "Ragal Ironbull",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 105,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/f4/bc/a7f4bcc1-e5d7-b359-992f-2c26204aed21/mzaf_8985768031688914813.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a7/f4/bc/a7f4bcc1-e5d7-b359-992f-2c26204aed21/mzaf_8985768031688914813.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/3c/f5/ce/3cf5ce7f-0eb7-ab67-d641-924cb9f96aef/7300349535632_cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/VALHALLA%20CALLING%20Ragal%20Ironbull",
+    "animeId": 142
+  },
+  {
+    "id": 1044,
+    "title": "Worst Way",
+    "artist": "Riley Green",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 136,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c1/b3/92/c1b392f5-6498-4b20-5adb-ab8c28d2e06b/mzaf_15006075300477439725.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c1/b3/92/c1b392f5-6498-4b20-5adb-ab8c28d2e06b/mzaf_15006075300477439725.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a9/79/dc/a979dc04-be66-92a4-60d5-5ce4dd7414b7/24BMR0005137.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Worst%20Way%20Riley%20Green",
+    "animeId": 46
+  },
+  {
+    "id": 1045,
+    "title": "Babylon",
+    "artist": "Taylor Swift",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 112,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/58/f2/54/58f254a3-25aa-0542-bf46-4627c8f2e06b/mzaf_5527018976386911832.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/58/f2/54/58f254a3-25aa-0542-bf46-4627c8f2e06b/mzaf_5527018976386911832.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a0/dd/fd/a0ddfd72-ee9e-f046-6466-a5dbefc696fa/26UM1IM21436.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Babylon%20Taylor%20Swift",
+    "animeId": 327
+  },
+  {
+    "id": 1046,
+    "title": "Pink Clouding",
+    "artist": "Taylor Swift",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 113,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1e/88/d5/1e88d560-253f-3fa2-87a0-2f83b9681948/mzaf_11928544907491655022.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1e/88/d5/1e88d560-253f-3fa2-87a0-2f83b9681948/mzaf_11928544907491655022.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a0/dd/fd/a0ddfd72-ee9e-f046-6466-a5dbefc696fa/26UM1IM21436.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Pink%20Clouding%20Taylor%20Swift",
+    "animeId": 223
+  },
+  {
+    "id": 1047,
+    "title": "She Will Be Loved",
+    "artist": "Maroon 5",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 120,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/10/25/68/10256857-d091-2376-8535-3745e624cdfb/mzaf_4355177103005991043.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/10/25/68/10256857-d091-2376-8535-3745e624cdfb/mzaf_4355177103005991043.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d0/3e/25/d03e255d-e205-0e66-20f6-01e251896c25/14UMGIM27076.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/She%20Will%20Be%20Loved%20Maroon%205",
+    "animeId": 348
+  },
+  {
+    "id": 1048,
+    "title": "Enter Sandman",
+    "artist": "Metallica",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 133,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/8a/fc/538afc1c-b9cd-24ab-b401-2fa8c81abc46/mzaf_3160131754964321707.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/53/8a/fc/538afc1c-b9cd-24ab-b401-2fa8c81abc46/mzaf_3160131754964321707.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2e/94/95/2e9495d7-dfe3-ddc8-87ef-6ef797a60218/850007452056.png/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Enter%20Sandman%20Metallica",
+    "animeId": 168
+  },
+  {
+    "id": 1049,
+    "title": "God Didn’t Let Me Break",
+    "artist": "Still Heals",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 143,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/5b/8c/ce5b8cc7-6aa4-2981-f9d8-4db3c152a57b/mzaf_11226441772870571870.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ce/5b/8c/ce5b8cc7-6aa4-2981-f9d8-4db3c152a57b/mzaf_11226441772870571870.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/26/a7/62/26a762fb-b712-0629-d24f-14a7296e8f9f/artwork.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/God%20Didn%E2%80%99t%20Let%20Me%20Break%20Still%20Heals",
+    "animeId": 395
+  },
+  {
+    "id": 1050,
+    "title": "Alabama Vs. Tennessee",
+    "artist": "Riley Green",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 140,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0e/5f/09/0e5f09a2-fca5-8a3f-c25b-223753c335ce/mzaf_1177458365066239026.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0e/5f/09/0e5f09a2-fca5-8a3f-c25b-223753c335ce/mzaf_1177458365066239026.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/26/25/3b/26253b51-f8be-094a-abbf-8c7348be0bcc/26BMR0008455.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Alabama%20Vs.%20Tennessee%20(feat.%20Peyton%20Manning)%20Riley%20Green",
+    "animeId": 64
+  },
+  {
+    "id": 1051,
+    "title": "Iris",
+    "artist": "The Goo Goo Dolls",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 144,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/c4/72/d5c472a3-2cea-e2fd-a94a-5a9290667075/mzaf_15343141215451287660.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/d5/c4/72/d5c472a3-2cea-e2fd-a94a-5a9290667075/mzaf_15343141215451287660.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/b4/0c/98/mzi.vhowcacb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Iris%20The%20Goo%20Goo%20Dolls",
+    "animeId": 179
+  },
+  {
+    "id": 1052,
+    "title": "Push",
+    "artist": "Matchbox Twenty",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 136,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5b/0e/a0/5b0ea0ab-1105-615c-96b7-cb00d9799fd3/mzaf_4223696966788393692.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5b/0e/a0/5b0ea0ab-1105-615c-96b7-cb00d9799fd3/mzaf_4223696966788393692.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/be/24/30/be243026-a149-dc9d-ef3b-d01fef6da03f/075679957535.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Push%20Matchbox%20Twenty",
+    "animeId": 121
+  },
+  {
+    "id": 1053,
+    "title": "9 to 5",
+    "artist": "Dolly Parton",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 125,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/83/42/7183429b-c504-9261-f5cb-5f41e3a532bc/mzaf_12589133056404920978.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/71/83/42/7183429b-c504-9261-f5cb-5f41e3a532bc/mzaf_12589133056404920978.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/37/fa/d1/mzi.ecmonpil.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/9%20to%205%20Dolly%20Parton",
+    "animeId": 222
+  },
+  {
+    "id": 1054,
+    "title": "Just Another Day",
+    "artist": "Jon Secada",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 132,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a1/c4/4e/a1c44e2d-443a-f580-c5cf-22d43c16b580/mzaf_546894429644437007.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a1/c4/4e/a1c44e2d-443a-f580-c5cf-22d43c16b580/mzaf_546894429644437007.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ff/48/54/ff4854c9-0cf3-b3c0-8126-6dacfbe50c82/00077779884551.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Just%20Another%20Day%20Jon%20Secada",
+    "animeId": 16
+  },
+  {
+    "id": 1055,
+    "title": "How Good God Is",
+    "artist": "Brandon Lake",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 116,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a2/da/20/a2da2086-03e8-7648-18eb-8fc616933112/mzaf_9839735523133651328.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a2/da/20/a2da2086-03e8-7648-18eb-8fc616933112/mzaf_9839735523133651328.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/1b/de/5c/1bde5c6a-05ba-c591-ff95-a34194541a7d/196874664483.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/How%20Good%20God%20Is%20Brandon%20Lake",
+    "animeId": 33
+  },
+  {
+    "id": 1056,
+    "title": "Loving Life Again",
+    "artist": "Ella Langley",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 140,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cd/f7/c9/cdf7c910-e4c6-9828-c83a-9e7a215bb70c/mzaf_1496635585165093785.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/cd/f7/c9/cdf7c910-e4c6-9828-c83a-9e7a215bb70c/mzaf_1496635585165093785.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a1/ba/64/a1ba6484-f462-1b88-ddff-d4c014d5f265/196874018361.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Loving%20Life%20Again%20Ella%20Langley",
+    "animeId": 411
+  },
+  {
+    "id": 1057,
+    "title": "Ghostbusters",
+    "artist": "Ray Parker Jr.",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 132,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/1f/f1/701ff165-58e2-75eb-464b-fec3483f93bd/mzaf_15159076127980316987.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/1f/f1/701ff165-58e2-75eb-464b-fec3483f93bd/mzaf_15159076127980316987.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/9a/70/43/9a704362-976d-ec4b-0367-54d368cb0ef8/886445902204.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Ghostbusters%20Ray%20Parker%20Jr.",
+    "animeId": 200
+  },
+  {
+    "id": 1058,
+    "title": "Billie Jean",
+    "artist": "Michael Jackson",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 111,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dc/bc/8a/dcbc8a3e-4ce1-c00d-cc02-eda2212053c7/mzaf_8347559338388601510.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dc/bc/8a/dcbc8a3e-4ce1-c00d-cc02-eda2212053c7/mzaf_8347559338388601510.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/32/4f/fd/324ffda2-9e51-8f6a-0c2d-c6fd2b41ac55/074643811224.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Billie%20Jean%20Michael%20Jackson",
+    "animeId": 304
+  },
+  {
+    "id": 1059,
+    "title": "I Knew It, I Knew You",
+    "artist": "Taylor Swift",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 111,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/76/42/737642e6-c478-bed7-f11f-efee96072450/mzaf_5163950318414409594.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/73/76/42/737642e6-c478-bed7-f11f-efee96072450/mzaf_5163950318414409594.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/34/35/6c/34356cb4-bd0b-3bac-b118-1a6d7264dc64/26UMGIM69942.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/I%20Knew%20It%2C%20I%20Knew%20You%20(From%20%22Toy%20Story%205%22)%20Taylor%20Swift",
+    "animeId": 249
+  },
+  {
+    "id": 1060,
+    "title": "Thunderstruck",
+    "artist": "AC/DC",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 113,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f2/76/cd/f276cd0b-d440-4190-7caa-afe359b27a7b/mzaf_6396399126209223363.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f2/76/cd/f276cd0b-d440-4190-7caa-afe359b27a7b/mzaf_6396399126209223363.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Features114/v4/fc/c2/f8/fcc2f850-1d81-7440-c0a0-de7fcef1e911/dj.rrgizfic.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Thunderstruck%20AC%2FDC",
+    "animeId": 388
+  },
+  {
+    "id": 1061,
+    "title": "The JAWN",
+    "artist": "Jerri",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 103,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e3/13/7c/e3137c3b-ce05-ab93-33e6-dfe8de227086/mzaf_15448089015110236396.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e3/13/7c/e3137c3b-ce05-ab93-33e6-dfe8de227086/mzaf_15448089015110236396.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5b/73/3a/5b733a6d-4234-abbb-4c82-5282657b5c2d/193436473040.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/The%20JAWN%20Jerri",
+    "animeId": 74
+  },
+  {
+    "id": 1062,
+    "title": "Stairway to Heaven",
+    "artist": "Led Zeppelin",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 139,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a2/e9/c8/a2e9c8fb-e282-9e9d-b5f9-d44fadb07e1e/mzaf_13939222705716798166.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a2/e9/c8/a2e9c8fb-e282-9e9d-b5f9-d44fadb07e1e/mzaf_13939222705716798166.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5c/15/9b/5c159b27-95ca-b9a7-84e3-28e795fffd39/dj.kvkrpptq.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Stairway%20to%20Heaven%20Led%20Zeppelin",
+    "animeId": 364
+  },
+  {
+    "id": 1063,
+    "title": "Halloween Theme",
+    "artist": "John Carpenter, Cody Carpenter & Daniel Davies",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 131,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/76/5e/43765e97-ad21-c645-51b1-3a8a547263d9/mzaf_10428659719463428925.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/43/76/5e/43765e97-ad21-c645-51b1-3a8a547263d9/mzaf_10428659719463428925.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/83/28/f0/8328f03c-30eb-b8fe-523a-c5a8aa4c7850/843563106761.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Halloween%20Theme%20John%20Carpenter%2C%20Cody%20Carpenter%20%26%20Daniel%20Davies",
+    "animeId": 308
+  },
+  {
+    "id": 1064,
+    "title": "Golden",
+    "artist": "HUNTR/X, EJAE, AUDREY NUNA, REI AMI & KPop Demon Hunters Cast",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 124,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4a/9d/a1/4a9da1c4-096f-8f45-4a3b-c883c45ca451/mzaf_3059921854949935161.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/4a/9d/a1/4a9da1c4-096f-8f45-4a3b-c883c45ca451/mzaf_3059921854949935161.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e1/15/42/e1154273-8ecd-5702-e6e6-597f28001681/25UMGIM82363.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Golden%20HUNTR%2FX%2C%20EJAE%2C%20AUDREY%20NUNA%2C%20REI%20AMI%20%26%20KPop%20Demon%20Hunters%20Cast",
+    "animeId": 174
+  },
+  {
+    "id": 1065,
+    "title": "Radical",
+    "artist": "Shunned at a Funeral",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 110,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/46/4d/57/464d5705-4743-6bba-4c46-648840fd98fd/mzaf_11249565173953527441.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/46/4d/57/464d5705-4743-6bba-4c46-648840fd98fd/mzaf_11249565173953527441.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ad/69/3c/ad693c39-5e30-97ea-1159-61da7170d7c7/artwork.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Radical%20Shunned%20at%20a%20Funeral",
+    "animeId": 227
+  },
+  {
+    "id": 1066,
+    "title": "Hey There Delilah",
+    "artist": "Plain White T's",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 133,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/94/f4/da94f49d-8d7c-5b6b-194c-737ff6e4e945/mzaf_6692330061210041993.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/da/94/f4/da94f49d-8d7c-5b6b-194c-737ff6e4e945/mzaf_6692330061210041993.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/00/a9/eb/00a9ebdb-af5e-2234-b584-35346f861b3d/26CRGIM56006.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Hey%20There%20Delilah%20(feat.%20L%C3%98L%C3%98)%20Plain%20White%20T's",
+    "animeId": 250
+  },
+  {
+    "id": 1067,
+    "title": "Just Give Me a Reason",
+    "artist": "P!nk",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 103,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6b/98/87/6b98879c-5091-bcaa-24c9-07c69252db8c/mzaf_12123656044443906655.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6b/98/87/6b98879c-5091-bcaa-24c9-07c69252db8c/mzaf_12123656044443906655.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2c/b0/de/2cb0de7b-4559-d885-36f8-271c950cba34/886443562097.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Just%20Give%20Me%20a%20Reason%20(feat.%20Nate%20Ruess)%20P!nk",
+    "animeId": 153
+  },
+  {
+    "id": 1068,
+    "title": "When Heaven Calls Me Home",
+    "artist": "Home Grown Country",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 111,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0b/18/85/0b188592-3068-8145-9738-df2b8f2bef1b/mzaf_16641958280343600565.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/0b/18/85/0b188592-3068-8145-9738-df2b8f2bef1b/mzaf_16641958280343600565.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/68/fe/0b/68fe0bdf-5e89-5fca-1952-7e44e8dddef0/artwork.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/When%20Heaven%20Calls%20Me%20Home%20Home%20Grown%20Country",
+    "animeId": 19
+  },
+  {
+    "id": 1069,
+    "title": "I'm Sorry!",
+    "artist": "Helluva Boss, ian hecox & Anthony Padilla",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 134,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0d/a1/c8/0da1c8a9-0d67-2371-e7be-6264c347fc63/mzaf_221260799457447256.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0d/a1/c8/0da1c8a9-0d67-2371-e7be-6264c347fc63/mzaf_221260799457447256.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c0/ac/d3/c0acd3d3-2eea-3d02-e06d-2497bf7b8fc3/075679556769.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/I'm%20Sorry!%20(Court-Ordered%20Apology)%20Helluva%20Boss%2C%20ian%20hecox%20%26%20Anthony%20Padilla",
+    "animeId": 8
+  },
+  {
+    "id": 1070,
+    "title": "Fade into You",
+    "artist": "Mazzy Star",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 109,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4c/db/e8/4cdbe88c-b737-617d-0c1c-35ba36445750/mzaf_4038354414747356567.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4c/db/e8/4cdbe88c-b737-617d-0c1c-35ba36445750/mzaf_4038354414747356567.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/0f/03/ea/0f03ead1-d1eb-27fd-0734-b257b515692f/13UABIM59278.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Fade%20into%20You%20Mazzy%20Star",
+    "animeId": 268
+  },
+  {
+    "id": 1071,
+    "title": "Islands In the Stream",
+    "artist": "Dolly Parton & Kenny Rogers",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 102,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/44/e1/b3/44e1b370-4d29-c686-d332-008ac5fe26d7/mzaf_12505497198581622728.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/44/e1/b3/44e1b370-4d29-c686-d332-008ac5fe26d7/mzaf_12505497198581622728.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/37/fa/d1/mzi.ecmonpil.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Islands%20In%20the%20Stream%20Dolly%20Parton%20%26%20Kenny%20Rogers",
+    "animeId": 51
+  },
+  {
+    "id": 1072,
+    "title": "Mi Chico",
+    "artist": "DJ Goja, Jason Derulo & Melody",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 102,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e7/5c/22/e75c22b4-f44a-b9a8-d401-63197cb75191/mzaf_18113839483971952063.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/e7/5c/22/e75c22b4-f44a-b9a8-d401-63197cb75191/mzaf_18113839483971952063.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/c5/aa/2b/c5aa2b28-7860-b387-fec4-4cefd5096150/712132026161_cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Mi%20Chico%20(Jason%20Derulo%20x%20Melody%20Version)%20DJ%20Goja%2C%20Jason%20Derulo%20%26%20Melody",
+    "animeId": 412
+  },
+  {
+    "id": 1073,
+    "title": "Broken Window Serenade",
+    "artist": "Whiskey Myers",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 101,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/aa/06/99aa06cf-ee64-7022-bc3c-bacb5d696869/mzaf_12695967465468457006.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/aa/06/99aa06cf-ee64-7022-bc3c-bacb5d696869/mzaf_12695967465468457006.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d0/cf/22/d0cf226c-607d-d97c-61d4-26eabde51f1d/886443002371_Cover.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Broken%20Window%20Serenade%20Whiskey%20Myers",
+    "animeId": 97
+  },
+  {
+    "id": 1074,
+    "title": "Hotel California",
+    "artist": "Eagles",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 131,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/30/06/1730066d-13fb-6803-0e52-46d4762b94e0/mzaf_8068080726527063383.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/17/30/06/1730066d-13fb-6803-0e52-46d4762b94e0/mzaf_8068080726527063383.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/88/16/2c/88162c3d-46db-8321-61f3-3a47404cfe76/075596050920.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Hotel%20California%20Eagles",
+    "animeId": 369
+  },
+  {
+    "id": 1075,
+    "title": "Unwell",
+    "artist": "Matchbox Twenty",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 105,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/39/22/fc/3922fc64-45f0-dbbd-bb73-3a7c9c56df89/mzaf_13063874552116068608.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/39/22/fc/3922fc64-45f0-dbbd-bb73-3a7c9c56df89/mzaf_13063874552116068608.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ea/35/a1/ea35a127-b30c-0c76-941a-16db9757bea6/075679958501.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Unwell%20Matchbox%20Twenty",
+    "animeId": 368
+  },
+  {
+    "id": 1076,
+    "title": "Mr. Know It All",
+    "artist": "Teddy Swims",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 130,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8b/66/e2/8b66e2c2-73bb-1041-3e37-648c54eb0073/mzaf_10721864796995191648.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/8b/66/e2/8b66e2c2-73bb-1041-3e37-648c54eb0073/mzaf_10721864796995191648.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7e/fb/0b/7efb0b1b-8e34-5bd0-99ee-eafc83b8d5c7/054391217349.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Mr.%20Know%20It%20All%20Teddy%20Swims",
+    "animeId": 316
+  },
+  {
+    "id": 1077,
+    "title": "Draw You Out",
+    "artist": "Noah Kahan & The Hunger Games",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 101,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5a/c8/77/5ac877dd-735f-54e2-cd35-1ecf8e58e9f3/mzaf_9636314184134924144.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/5a/c8/77/5ac877dd-735f-54e2-cd35-1ecf8e58e9f3/mzaf_9636314184134924144.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/de/a0/db/dea0db01-b9a7-173e-ccb2-c07c31f634bb/26UM1IM10359.rgb.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Draw%20You%20Out%20Noah%20Kahan%20%26%20The%20Hunger%20Games",
+    "animeId": 385
+  },
+  {
+    "id": 1078,
+    "title": "Lonely Boy",
+    "artist": "Emily Ann Roberts",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 114,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/42/a1/b5/42a1b5af-4a4c-d71e-3973-21bdf79a081b/mzaf_6895652892767264084.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/42/a1/b5/42a1b5af-4a4c-d71e-3973-21bdf79a081b/mzaf_6895652892767264084.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/46/02/77/460277d5-052b-e4f1-98bf-837b37013caf/196874695463.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Lonely%20Boy%20Emily%20Ann%20Roberts",
+    "animeId": 234
+  },
+  {
+    "id": 1079,
+    "title": "Be By You",
+    "artist": "Luke Combs",
+    "lang": "en",
+    "genre": "Pop / International",
+    "bpm": 144,
+    "mood": "Trending / Chill",
+    "tags": [
+      "Spotify",
+      "Typo",
+      "เพลงสากล"
+    ],
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a1/3a/eb/a13aeb88-1a04-0f07-c062-02f1b18b8392/mzaf_7787513642053136740.plus.aac.p.m4a",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a1/3a/eb/a13aeb88-1a04-0f07-c062-02f1b18b8392/mzaf_7787513642053136740.plus.aac.p.m4a",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/4c/b6/e5/4cb6e5b1-2db0-88c0-f025-b79cad3b8fab/196873832111.jpg/600x600bb.png",
+    "spotifyUrl": "https://open.spotify.com/search/Be%20By%20You%20Luke%20Combs",
+    "animeId": 241
   }
 ];
 
