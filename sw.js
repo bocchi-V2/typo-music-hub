@@ -1,4 +1,4 @@
-const CACHE_NAME = 'haimiya-typo-v22';
+const CACHE_NAME = 'haimiya-typo-v23';
 const AUDIO_CACHE_NAME = 'haimiya-audio-vault';
 
 // ไฟล์ที่ต้องแคชเพื่อให้แอพทำงานแบบ offline ได้ 100%
@@ -69,6 +69,9 @@ async function handleAudioRangeRequest(request) {
       }
       return networkResponse;
     } catch (err) {
+      // เมื่อออฟไลน์ และไม่มีแคชเพลงนี้ ให้ตอบกลับด้วย blue_relax.m4a แทนที่จะเกิด Error
+      const fallbackAudio = await caches.match('./blue_relax.m4a');
+      if (fallbackAudio) return fallbackAudio;
       return new Response('Offline audio not cached', { status: 503, statusText: 'Offline' });
     }
   }
@@ -136,6 +139,8 @@ self.addEventListener('fetch', (event) => {
     );
     return;
   }
+
+  // 3. สำหรับรูปภาพหรือข้อมูลภายนอก (CDN / Covers / Posters / Apple / Deezer / Kitsu)
   if (!url.origin.includes(self.location.origin)) {
     event.respondWith(
       caches.match(event.request).then((cached) => {
@@ -146,7 +151,14 @@ self.addEventListener('fetch', (event) => {
             caches.open(CACHE_NAME).then((cache) => cache.put(event.request, cloned));
           }
           return response;
-        }).catch(() => null);
+        }).catch(() => {
+          // หากออฟไลน์และเป็นรูปภาพ ให้ตอบกลับด้วยรูป splash-cover.jpg ในเครื่อง
+          const isImg = event.request.destination === 'image' || url.pathname.match(/\.(jpg|jpeg|png|webp|gif)/i);
+          if (isImg) {
+            return caches.match('./splash-cover.jpg');
+          }
+          return null;
+        });
       })
     );
     return;
