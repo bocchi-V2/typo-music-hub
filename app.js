@@ -310,12 +310,34 @@ function translateTag(tag) {
 }
 
 function formatBpm(bpmStr) {
-  if (!bpmStr) return currentAppLang === 'th' ? 'ปานกลาง' : 'Mid Tempo';
-  if (currentAppLang === 'th') return bpmStr;
-  return bpmStr
+  if (!bpmStr && bpmStr !== 0) return currentAppLang === 'th' ? 'ปานกลาง' : 'Mid Tempo';
+  if (typeof bpmStr === 'number') return `${bpmStr} BPM`;
+  const str = String(bpmStr);
+  if (currentAppLang === 'th') return str;
+  return str
     .replace('ช้า', 'Slow')
     .replace('ปานกลาง', 'Mid')
     .replace('เร็ว', 'Fast');
+}
+
+function normalizeMood(m) {
+  if (!m) return 'chill';
+  const str = String(m).toLowerCase();
+  if (str === 'sad' || str.includes('เศร้า') || str.includes('ดิ่ง') || str.includes('อกหัก') || str.includes('เจ็บ') || str.includes('คิดถึง') || str.includes('ความทรงจำ')) return 'sad';
+  if (str === 'love' || str.includes('รัก') || str.includes('อบอุ่น') || str.includes('romantic') || str.includes('หวาน') || str.includes('ตกหลุมรัก') || str.includes('แฟน')) return 'love';
+  if (str === 'hype' || str.includes('มันส์') || str.includes('เดือด') || str.includes('beat') || str.includes('พลัง') || str.includes('เท่') || str.includes('เต้น') || str.includes('สนุก')) return 'hype';
+  return 'chill';
+}
+
+function getSongBpmNumber(s) {
+  if (typeof s.bpm === 'number') return s.bpm;
+  if (!s.bpm && s.bpm !== 0) return 100;
+  const numMatch = String(s.bpm).match(/\d+/);
+  if (numMatch) return parseInt(numMatch[0], 10);
+  const str = String(s.bpm).toLowerCase();
+  if (str.includes('ช้า') || str.includes('slow')) return 65;
+  if (str.includes('เร็ว') || str.includes('fast')) return 130;
+  return 95;
 }
 
 function getAnimeDisplayName(anime) {
@@ -374,10 +396,11 @@ const langPillText = l => {
 };
 
 const moodLabel = m => {
+  const norm = normalizeMood(m);
   if (currentAppLang === 'th') {
-    return ({ sad:'💔 เศร้า', love:'❤️ รัก', hype:'🔥 เร้าใจ', chill:'🌊 ชิลล์' }[m] || m);
+    return ({ sad:'💔 เศร้า', love:'❤️ รัก', hype:'🔥 เร้าใจ', chill:'🌊 ชิลล์' }[norm] || '🌊 ชิลล์');
   } else {
-    return ({ sad:'💔 Sad', love:'❤️ Romantic', hype:'🔥 Hype', chill:'🌊 Chill' }[m] || m);
+    return ({ sad:'💔 Sad', love:'❤️ Romantic', hype:'🔥 Hype', chill:'🌊 Chill' }[norm] || '🌊 Chill');
   }
 };
 
@@ -1291,16 +1314,20 @@ function getZoneNameTH(zone) {
 function getEligibleSongsForZone() {
   return SONGS.filter(s => {
     const matchZone = selectedZone === 'all' || s.lang === selectedZone;
-    const matchMood = selectedRandomMood === 'all' || s.mood === selectedRandomMood;
+    const songMood = normalizeMood(s.mood);
+    const matchMood = selectedRandomMood === 'all' || songMood === selectedRandomMood;
 
     let matchBpm = true;
-    const bpmStr = s.bpm || '';
-    if (selectedRandomBpm === 'slow') {
-      matchBpm = bpmStr.includes('ช้า') || parseInt(bpmStr.match(/\d+/)?.[0] || '100') < 78;
-    } else if (selectedRandomBpm === 'mid') {
-      matchBpm = bpmStr.includes('ปานกลาง') || (parseInt(bpmStr.match(/\d+/)?.[0] || '100') >= 78 && parseInt(bpmStr.match(/\d+/)?.[0] || '100') <= 108);
-    } else if (selectedRandomBpm === 'fast') {
-      matchBpm = bpmStr.includes('เร็ว') || parseInt(bpmStr.match(/\d+/)?.[0] || '100') > 108;
+    if (selectedRandomBpm !== 'all') {
+      const bpmNum = getSongBpmNumber(s);
+      const bpmStr = String(s.bpm || '').toLowerCase();
+      if (selectedRandomBpm === 'slow') {
+        matchBpm = bpmStr.includes('ช้า') || bpmStr.includes('slow') || bpmNum < 85;
+      } else if (selectedRandomBpm === 'mid') {
+        matchBpm = bpmStr.includes('ปานกลาง') || bpmStr.includes('mid') || (bpmNum >= 85 && bpmNum <= 118);
+      } else if (selectedRandomBpm === 'fast') {
+        matchBpm = bpmStr.includes('เร็ว') || bpmStr.includes('fast') || bpmNum > 118;
+      }
     }
 
     return matchZone && matchMood && matchBpm;
@@ -1465,43 +1492,89 @@ function renderRandomShowcase(song) {
 }
 
 async function randomSong() {
-  const eligible = getEligibleSongsForZone();
-  if (eligible.length === 0) {
-    alert(currentAppLang === 'th' ? 'ไม่พบเพลงที่ตรงกับตัวเลือกของคุณ กรุณาปรับเปลี่ยนมู้ดหรือความเร็ว BPM' : 'No songs match your filter. Please adjust mood or BPM.');
-    return;
-  }
-
   const btn = document.getElementById('random-btn');
-  btn.textContent = currentAppLang === 'th' ? '🎲 กำลังสุ่มเพลง...' : '🎲 Rolling song...';
-  btn.disabled = true;
-
-  playDiceSound();
-
-  const card = document.getElementById('random-card');
-  card.classList.add('card-flip');
-
-  await new Promise(r => setTimeout(r, 450));
-  card.classList.remove('card-flip');
-
-  if (!zoneDeck || zoneDeck.length === 0) {
-    initZoneDeck();
+  if (btn) {
+    btn.textContent = currentAppLang === 'th' ? '🎲 กำลังสุ่มเพลง...' : '🎲 Rolling song...';
+    btn.disabled = true;
   }
 
-  const nextId = zoneDeck.shift();
-  const song = SONGS.find(s => s.id === nextId) || eligible[0];
-  lastRandomSongId = song.id;
-  updateZoneCounterUI();
+  try {
+    let eligible = getEligibleSongsForZone();
+    let relaxedFilter = false;
 
-  renderRandomShowcase(song);
+    // Smart Fallback: ถ้าเงื่อนไขแน่นเกินไปจนไม่พบเพลง ให้ขยายเงื่อนไขอัตโนมัติ
+    if (!eligible || eligible.length === 0) {
+      // 1. ลองปลด BPM filter ก่อน
+      eligible = SONGS.filter(s => (selectedZone === 'all' || s.lang === selectedZone) && (selectedRandomMood === 'all' || normalizeMood(s.mood) === selectedRandomMood));
+      relaxedFilter = true;
+    }
+    if (!eligible || eligible.length === 0) {
+      // 2. ลองปลด Mood filter
+      eligible = SONGS.filter(s => selectedZone === 'all' || s.lang === selectedZone);
+      relaxedFilter = true;
+    }
+    if (!eligible || eligible.length === 0) {
+      // 3. Fallback รวมทุกเพลง
+      eligible = SONGS;
+      relaxedFilter = true;
+    }
 
-  document.getElementById('random-placeholder').classList.add('hidden');
-  document.getElementById('random-result').classList.remove('hidden');
+    playDiceSound();
 
-  btn.textContent = currentAppLang === 'th' ? '🎲 สุ่มเพลงใหม่ในโซนนี้!' : '🎲 Roll New in This Zone!';
-  btn.disabled = false;
+    const card = document.getElementById('random-card');
+    if (card) card.classList.add('card-flip');
 
-  togglePlaySong(song.id);
-  document.getElementById('random').scrollIntoView({ behavior: 'smooth' });
+    await new Promise(r => setTimeout(r, 400));
+    if (card) card.classList.remove('card-flip');
+
+    if (!zoneDeck || zoneDeck.length === 0) {
+      initZoneDeck();
+    }
+
+    // หยิบเพลงจากกองสับไพ่
+    let song = null;
+    while (zoneDeck.length > 0 && !song) {
+      const nextId = zoneDeck.shift();
+      song = SONGS.find(s => s.id === nextId);
+    }
+    if (!song) {
+      const randomIdx = Math.floor(Math.random() * eligible.length);
+      song = eligible[randomIdx] || SONGS[0];
+    }
+
+    lastRandomSongId = song.id;
+    updateZoneCounterUI();
+
+    renderRandomShowcase(song);
+
+    const placeholderEl = document.getElementById('random-placeholder');
+    const resultEl = document.getElementById('random-result');
+    if (placeholderEl) placeholderEl.classList.add('hidden');
+    if (resultEl) resultEl.classList.remove('hidden');
+
+    if (relaxedFilter) {
+      showToast(currentAppLang === 'th' ? '💡 สุ่มเพลงที่ตรงกับโซนนี้ให้เรียบร้อยแล้ว!' : '💡 Rolled the best matching track for you!');
+    }
+
+    try {
+      togglePlaySong(song.id);
+    } catch (pe) {
+      console.warn('Playback error during random roll:', pe);
+    }
+
+    const randomSection = document.getElementById('random');
+    if (randomSection) {
+      randomSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  } catch (err) {
+    console.error('Error during randomSong:', err);
+    showToast(currentAppLang === 'th' ? '⚠️ เกิดข้อผิดพลาดในการสุ่มเพลง กรุณาลองใหม่อีกครั้ง' : '⚠️ Error rolling song, please try again');
+  } finally {
+    if (btn) {
+      btn.textContent = currentAppLang === 'th' ? '🎲 สุ่มเพลงใหม่ในโซนนี้! (ไม่ซ้ำ)' : '🎲 Roll New in This Zone!';
+      btn.disabled = false;
+    }
+  }
 }
 
 // ---- ALL SONGS CATALOG FILTERING ----
@@ -1509,7 +1582,7 @@ let currentLangFilter = 'th'; // 'all', 'th', 'en', 'jp'
 let currentMoodFilter = 'all';
 let currentSearchTerm = '';
 
-const moodClass = m => ({ sad:'mood-sad', love:'mood-love', hype:'mood-hype', chill:'mood-chill' }[m] || 'mood-chill');
+const moodClass = m => ({ sad:'mood-sad', love:'mood-love', hype:'mood-hype', chill:'mood-chill' }[normalizeMood(m)] || 'mood-chill');
 
 // รายชื่อ genre และคำค้นที่ไม่เหมาะสม — กรองเฮนไท / เนื้อหาผู้ใหญ่ / 18+ ทั้งหมด
 const BLOCKED_GENRES = [
@@ -1611,7 +1684,7 @@ function renderSongsGrid() {
 
   const filtered = SONGS.filter(s => {
     const matchLang = s.lang === currentLangFilter;
-    const matchMood = currentMoodFilter === 'all' || s.mood === currentMoodFilter;
+    const matchMood = currentMoodFilter === 'all' || normalizeMood(s.mood) === currentMoodFilter;
 
     const anime = ANIME_MAP.get(s.animeId);
     const animeNames = (term && anime) ? `${anime.nameTH} ${anime.name}`.toLowerCase() : '';
