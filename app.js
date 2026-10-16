@@ -847,8 +847,10 @@ async function getOfflinePlayableUrl(url) {
         return URL.createObjectURL(blob);
       }
     }
-    // สำรองด้วย blue_relax.m4a
-    const blueRes = await cache.match('blue_relax.m4a');
+    // สำรองด้วย blue_relax.m4a จาก CacheStorage (รับประกันมีในเครื่อง 100%)
+    let blueRes = await caches.match('./blue_relax.m4a');
+    if (!blueRes) blueRes = await caches.match('blue_relax.m4a');
+    if (!blueRes) blueRes = await cache.match('blue_relax.m4a');
     if (blueRes) {
       showToast(currentAppLang === 'th' ? '📡 ออฟไลน์: กำลังเล่นเพลงผ่อนคลาย (blue)' : '📡 Offline: Playing blue (relax bgm)');
       const blob = await blueRes.blob();
@@ -1068,8 +1070,16 @@ function togglePlaySong(songId) {
     }
 
     if (!playableUrl && !navigator.onLine) {
-      handleAudioFail();
-      return;
+      let blueRes = await caches.match('./blue_relax.m4a');
+      if (!blueRes) blueRes = await caches.match('blue_relax.m4a');
+      if (blueRes) {
+        const blob = await blueRes.blob();
+        playableUrl = URL.createObjectURL(blob);
+        showToast(currentAppLang === 'th' ? '📡 ออฟไลน์: กำลังเล่นเพลงผ่อนคลาย (blue)' : '📡 Offline: Playing blue (relax bgm)');
+      } else {
+        handleAudioFail();
+        return;
+      }
     }
 
     const audio = getSharedAudioPlayer();
@@ -1086,11 +1096,31 @@ function togglePlaySong(songId) {
 
     audio.onerror = async (e) => {
       console.warn('Audio error:', e, 'src:', audio.src);
+      if (!navigator.onLine) {
+        let blueRes = await caches.match('./blue_relax.m4a');
+        if (!blueRes) blueRes = await caches.match('blue_relax.m4a');
+        if (blueRes) {
+          const blob = await blueRes.blob();
+          const altBlob = URL.createObjectURL(blob);
+          cleanupOldBlobUrl();
+          _lastBlobUrl = altBlob;
+          audio.removeAttribute('crossorigin');
+          audio.src = altBlob;
+          audio.load();
+          audio.play().then(() => {
+            updateAudioUI(true);
+            showBottomPlayer(song);
+            showToast(currentAppLang === 'th' ? '📡 ออฟไลน์: กำลังเล่นเพลงผ่อนคลาย (blue)' : '📡 Offline: Playing blue (relax bgm)');
+          }).catch(handleAudioFail);
+          return;
+        }
+      }
       if (fallbackUrl && audio.src !== fallbackUrl) {
         const altUrl = await getOfflinePlayableUrl(fallbackUrl);
         if (altUrl) {
           cleanupOldBlobUrl();
           _lastBlobUrl = altUrl;
+          if (altUrl.startsWith('blob:')) audio.removeAttribute('crossorigin');
           audio.src = altUrl;
           audio.load();
           audio.play().then(() => {
@@ -1129,18 +1159,25 @@ function togglePlaySong(songId) {
 
     const targetSrc = playableUrl || url;
     _lastBlobUrl = targetSrc;
+    if (targetSrc.startsWith('blob:') || targetSrc.startsWith('data:')) {
+      audio.removeAttribute('crossorigin');
+    } else {
+      audio.crossOrigin = 'anonymous';
+    }
     audio.src = targetSrc;
     audio.load();
 
     // รอให้ audio buffer โหลดพอก่อนเล่น เพื่อลด stutter ตอนเริ่มเพลง
     const waitForBuffer = () => new Promise((resolve) => {
       const onCanPlay = () => {
+        audio.removeEventListener('canplay', onCanPlay);
         audio.removeEventListener('canplaythrough', onCanPlay);
         resolve();
       };
+      audio.addEventListener('canplay', onCanPlay, { once: true });
       audio.addEventListener('canplaythrough', onCanPlay, { once: true });
-      // Timeout fallback 2s กรณีเน็ตช้า
-      setTimeout(resolve, 2000);
+      // Timeout fallback 1.5s กรณีเน็ตช้า
+      setTimeout(resolve, 1500);
     });
 
     await waitForBuffer();
@@ -2477,12 +2514,13 @@ function initWeeklyUpdateTracker() {
 // ---- HAIMIYA YAHO AUDIO CLIP (Softer Volume) ----
 let haimiyaAudio = null;
 
+let _isHaimiyaPlaying = false;
+
 function getHaimiyaAudio() {
   if (!haimiyaAudio) {
     haimiyaAudio = new Audio('haimiya_yaho.mp3');
     haimiyaAudio.preload = 'auto';
-    // ปรับระดับเสียงให้เบาลง นุ่มนวล สบายหู ไม่ตกใจ
-    haimiyaAudio.volume = 0.22;
+    haimiyaAudio.volume = 0.90;
   }
   return haimiyaAudio;
 }
@@ -2495,26 +2533,42 @@ try {
 function playHaimiyaYaho() {
   try {
     const audio = getHaimiyaAudio();
-    audio.volume = 0.22;
+    // ถ้ากำลังเล่นอยู่แล้ว ห้ามตัดจบ ให้เล่นต่อจนจบประโยคสมบูรณ์
+    if (_isHaimiyaPlaying && !audio.paused && audio.currentTime > 0.05) {
+      return;
+    }
+
+    _isHaimiyaPlaying = true;
+    audio.volume = 0.90;
     audio.currentTime = 0;
+
+    audio.onended = () => {
+      _isHaimiyaPlaying = false;
+      // เมื่อเสียงทักทายพูดจบประโยคครบถ้วนแล้ว จึงเริ่มเพลงผ่อนคลายเบาๆ
+      if (typeof startRelaxBgm === 'function') {
+        startRelaxBgm();
+      }
+    };
+
     const playPromise = audio.play();
     if (playPromise && playPromise.catch) {
       playPromise.catch((err) => {
+        _isHaimiyaPlaying = false;
         // If autoplay blocked by browser policy, play on the very next user tap anywhere
         const onFirstGesture = () => {
-          audio.currentTime = 0;
-          audio.volume = 0.22;
-          audio.play().catch(() => {});
           window.removeEventListener('pointerdown', onFirstGesture);
           window.removeEventListener('touchstart', onFirstGesture);
           window.removeEventListener('click', onFirstGesture);
+          playHaimiyaYaho();
         };
         window.addEventListener('pointerdown', onFirstGesture, { once: true });
         window.addEventListener('touchstart', onFirstGesture, { once: true, passive: true });
         window.addEventListener('click', onFirstGesture, { once: true });
       });
     }
-  } catch (e) {}
+  } catch (e) {
+    _isHaimiyaPlaying = false;
+  }
 }
 
 // ---- RELAXING BACKGROUND AMBIENT MUSIC ("blue" by yung kai) ----
@@ -2875,8 +2929,8 @@ function initSplashScreen() {
 //  ระบบซิงค์เพลง/อนิเมะสดอัตโนมัติ และอัปเดตแอป APK ทับของเดิมได้ 100% ไม่ต้องลบแอปเก่า
 // ============================================
 
-const CURRENT_APP_VERSION = 'v2.20261016.1145';
-const CURRENT_VERSION_CODE = 1792151100;
+const CURRENT_APP_VERSION = 'v2.20261016.1200';
+const CURRENT_VERSION_CODE = 1792152000;
 const GITHUB_REPO_OWNER = 'bocchi-V2';
 const GITHUB_REPO_NAME = 'typo-music-hub';
 const GITHUB_PAGES_BASE = 'https://bocchi-v2.github.io/typo-music-hub';
@@ -3103,7 +3157,7 @@ function playNotificationChime() {
         osc.type = 'sine';
         osc.frequency.setValueAtTime(n.freq, now + n.start);
         gain.gain.setValueAtTime(0, now + n.start);
-        gain.gain.linearRampToValueAtTime(0.35, now + n.start + 0.03);
+        gain.gain.linearRampToValueAtTime(0.85, now + n.start + 0.03);
         gain.gain.exponentialRampToValueAtTime(0.001, now + n.start + n.dur);
         osc.connect(gain);
         gain.connect(ctx.destination);
@@ -3118,7 +3172,7 @@ function playNotificationChime() {
         osc2.type = 'triangle';
         osc2.frequency.setValueAtTime(2000 + i * 500, now + 0.6 + i * 0.08);
         g2.gain.setValueAtTime(0, now + 0.6 + i * 0.08);
-        g2.gain.linearRampToValueAtTime(0.12, now + 0.62 + i * 0.08);
+        g2.gain.linearRampToValueAtTime(0.35, now + 0.62 + i * 0.08);
         g2.gain.exponentialRampToValueAtTime(0.001, now + 0.75 + i * 0.08);
         osc2.connect(g2);
         g2.connect(ctx.destination);
@@ -3243,67 +3297,64 @@ function getUpdateVoiceAudio() {
   return _updateVoiceAudio;
 }
 
-// โหลดไฟล์เสียงแจ้งเตือนแปลงเป็น AudioBuffer เพื่อขยายเสียงได้มากกว่า 100%
-async function getAmplifiedVoiceBuffer(ctx) {
-  if (_voiceAudioBuffer) return _voiceAudioBuffer;
-  try {
-    const res = await fetch('update_voice.mp3');
-    if (!res.ok) return null;
-    const arrayBuffer = await res.arrayBuffer();
-    _voiceAudioBuffer = await ctx.decodeAudioData(arrayBuffer);
-    return _voiceAudioBuffer;
-  } catch(e) {
-    console.warn('Failed to decode voice audio:', e);
-    return null;
-  }
-}
+let _voiceMediaElementSource = null;
+let _voiceGainNode = null;
 
-// ฟังก์ชันเล่นเสียงแจ้งเตือนแบบ Boost Volume ขยายความดังขึ้น 2.8 เท่า (280%)
-async function playAmplifiedVoiceAudio() {
-  const AudioCtx = window.AudioContext || window.webkitAudioContext;
-  if (!AudioCtx) {
-    const audio = getUpdateVoiceAudio();
-    audio.currentTime = 0;
-    audio.volume = 1.0;
-    return audio.play();
-  }
+// ฟังก์ชันเล่นเสียงแจ้งเตือนแบบ Boost Volume ขยายความดังขึ้น 3.6 เท่า (360%)
+function playAmplifiedVoiceAudio() {
+  return new Promise((resolve) => {
+    try {
+      const audio = getUpdateVoiceAudio();
+      audio.currentTime = 0;
+      audio.volume = 1.0;
 
-  if (!_voiceAudioCtx || _voiceAudioCtx.state === 'closed') {
-    _voiceAudioCtx = new AudioCtx();
-  }
-  if (_voiceAudioCtx.state === 'suspended') {
-    await _voiceAudioCtx.resume();
-  }
+      const AudioCtx = window.AudioContext || window.webkitAudioContext;
+      if (AudioCtx) {
+        if (!_voiceAudioCtx || _voiceAudioCtx.state === 'closed') {
+          _voiceAudioCtx = new AudioCtx();
+        }
+        if (_voiceAudioCtx.state === 'suspended') {
+          _voiceAudioCtx.resume().catch(() => {});
+        }
 
-  const buf = await getAmplifiedVoiceBuffer(_voiceAudioCtx);
-  if (!buf) {
-    const audio = getUpdateVoiceAudio();
-    audio.currentTime = 0;
-    audio.volume = 1.0;
-    return audio.play();
-  }
+        if (!_voiceMediaElementSource) {
+          try {
+            _voiceMediaElementSource = _voiceAudioCtx.createMediaElementSource(audio);
+            _voiceGainNode = _voiceAudioCtx.createGain();
+            _voiceGainNode.gain.setValueAtTime(3.6, _voiceAudioCtx.currentTime); // 360% Volume Boost!
 
-  const src = _voiceAudioCtx.createBufferSource();
-  src.buffer = buf;
+            const comp = _voiceAudioCtx.createDynamicsCompressor();
+            comp.threshold.setValueAtTime(-12, _voiceAudioCtx.currentTime);
+            comp.knee.setValueAtTime(30, _voiceAudioCtx.currentTime);
+            comp.ratio.setValueAtTime(12, _voiceAudioCtx.currentTime);
+            comp.attack.setValueAtTime(0.003, _voiceAudioCtx.currentTime);
+            comp.release.setValueAtTime(0.25, _voiceAudioCtx.currentTime);
 
-  // เพิ่มความดังเสียงแจ้งเตือนขึ้น 2.8 เท่า (280% Volume Boost)
-  const gain = _voiceAudioCtx.createGain();
-  gain.gain.setValueAtTime(2.8, _voiceAudioCtx.currentTime);
+            _voiceMediaElementSource.connect(_voiceGainNode);
+            _voiceGainNode.connect(comp);
+            comp.connect(_voiceAudioCtx.destination);
+          } catch(e) {
+            console.warn('MediaElementSource attach error:', e);
+          }
+        } else if (_voiceGainNode) {
+          _voiceGainNode.gain.setValueAtTime(3.6, _voiceAudioCtx.currentTime);
+        }
+      }
 
-  // Dynamic Compressor เพื่อให้เสียงดังกระหึ่ม คมชัด ไม่แตกพร่า
-  const comp = _voiceAudioCtx.createDynamicsCompressor();
-  comp.threshold.setValueAtTime(-12, _voiceAudioCtx.currentTime);
-  comp.knee.setValueAtTime(30, _voiceAudioCtx.currentTime);
-  comp.ratio.setValueAtTime(12, _voiceAudioCtx.currentTime);
-  comp.attack.setValueAtTime(0.003, _voiceAudioCtx.currentTime);
-  comp.release.setValueAtTime(0.25, _voiceAudioCtx.currentTime);
-
-  src.connect(gain);
-  gain.connect(comp);
-  comp.connect(_voiceAudioCtx.destination);
-
-  src.start(0);
-  return Promise.resolve();
+      const p = audio.play();
+      if (p && p.then) {
+        p.then(resolve).catch(err => {
+          console.warn('Voice play error:', err);
+          resolve();
+        });
+      } else {
+        resolve();
+      }
+    } catch(err) {
+      console.warn('playAmplifiedVoiceAudio failed:', err);
+      resolve();
+    }
+  });
 }
 
 // Pre-load เสียงแจ้งเตือนอัปเดตทันที

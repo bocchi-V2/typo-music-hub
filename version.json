@@ -1,10 +1,10 @@
 {
-  "version": "2.20261016.1145",
-  "versionCode": 1792151100,
+  "version": "2.20261016.1200",
+  "versionCode": 1792152000,
   "songCount": 1814,
   "animeCount": 414,
   "pairCount": 816,
-  "updatedAt": "2026-10-16T11:45:00.000Z",
+  "updatedAt": "2026-10-16T12:00:00.000Z",
   "appName": "Haimiya Typo",
   "releaseUrl": "https://github.com/bocchi-V2/typo-music-hub/releases/latest"
 }
