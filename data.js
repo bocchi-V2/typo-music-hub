@@ -5889,6 +5889,32 @@ const ANIMES = [
     "mood": "hype",
     "desc": "โมโมะ สาวมัธยมที่เชื่อเรื่องผี และโอคารุน หนุ่มเนิร์ดที่เชื่อเรื่องเอเลี่ยน ต้องร่วมมือกันต่อสู้กับสิ่งลี้ลับสุดพิศดาร",
     "coverUrl": "https://media.kitsu.app/anime/poster_images/47833/original.jpg"
+  },
+  {
+    "id": 418,
+    "name": "Nisemonogatari",
+    "nameTH": "Nisemonogatari",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6546/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/6546/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Nisemonogatari",
+    "mood": "hype"
+  },
+  {
+    "id": 419,
+    "name": "Barakamon",
+    "nameTH": "Barakamon",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8026/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/8026/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Barakamon",
+    "mood": "hype"
   }
 ];
 
@@ -294207,5 +294233,29 @@ const ANIME_PAIRS = [
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d9/80/8e/d9808ee9-1e6c-9a58-91c0-0cc5e63b1d64/25UMGIM81991.rgb.jpg/600x600bb.jpg",
     "songId": 1829,
     "animeId": 183
+  },
+  {
+    "songId": 3021,
+    "animeId": 410,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Kono Subarashii Sekai ni Shukufuku wo! OVA",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 3022,
+    "animeId": 99,
+    "category": "hype",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Maquia: When the Promised Flower Blooms",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "songId": 3023,
+    "animeId": 183,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ 5 Centimeters per Second",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
   }
 ];
