@@ -2365,31 +2365,31 @@ const ANIMES = [
   },
   {
     "id": 173,
-    "name": "Violet Evergarden: The Movie",
-    "nameTH": "ไวโอเล็ต เอเวอร์การ์เดน เดอะมูฟวี่",
+    "name": "The Boy and the Heron",
+    "nameTH": "เด็กชายกับนกกระสา",
     "genre": [
+      "แฟนตาซี",
       "ดราม่า",
-      "โรแมนติก",
-      "ซึ้งกินใจ"
+      "ผจญภัย"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/41370/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/41370/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Violet%20Evergarden",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46270/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/46270/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20Boy%20and%20the%20Heron",
+    "mood": "epic"
   },
   {
     "id": 174,
-    "name": "Princess Mononoke",
-    "nameTH": "เจ้าหญิงจิตวิญญาณแห่งพงไพร",
+    "name": "The Girl Who Leapt Through Time",
+    "nameTH": "กระโดดจั๊มพ์ทะลุข้ามเวลา",
     "genre": [
-      "แฟนตาซี",
-      "ผจญภัย",
-      "ยอดนิยม"
+      "ไซไฟ",
+      "ดราม่า",
+      "โรงเรียน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/166/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/166/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Princess%20Mononoke",
-    "mood": "epic"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1454/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/1454/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20Girl%20Who%20Leapt%20Through%20Time",
+    "mood": "love"
   },
   {
     "id": 175,
@@ -2421,30 +2421,30 @@ const ANIMES = [
   },
   {
     "id": 177,
-    "name": "Howl's Moving Castle",
-    "nameTH": "ปราสาทเวทมนตร์ของฮาวล์",
+    "name": "Kuroko's Basketball",
+    "nameTH": "คุโรโกะ โนะ บาสเก็ต",
     "genre": [
-      "แฟนตาซี",
-      "โรแมนติก",
-      "ยอดนิยม"
+      "กีฬา",
+      "โรงเรียน",
+      "พลังพิเศษ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/224/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/224/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Howl%27s%20Moving%20Castle",
-    "mood": "love"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7645/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7645/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kuroko's%20Basketball",
+    "mood": "hype"
   },
   {
     "id": 178,
-    "name": "My Neighbor Totoro",
-    "nameTH": "โทโทโร่เพื่อนรัก",
+    "name": "Tamako Market",
+    "nameTH": "ตลาดป่วน ก๊วนทามาโกะ",
     "genre": [
-      "แฟนตาซี",
+      "คอมเมดี้",
       "ชีวิตประจำวัน",
-      "อบอุ่นหัวใจ"
+      "อบอุ่น"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/544/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/544/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=My%20Neighbor%20Totoro",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7377/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7377/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Tamako%20Market",
     "mood": "happy"
   },
   {
@@ -2463,100 +2463,100 @@ const ANIMES = [
   },
   {
     "id": 180,
-    "name": "Kiki's Delivery Service",
-    "nameTH": "แม่มดน้อยกิกิ",
+    "name": "Yuru Camp",
+    "nameTH": "แคมป์สบายสไตล์สาว ม.ปลาย",
     "genre": [
-      "แฟนตาซี",
       "ชีวิตประจำวัน",
-      "อบอุ่นหัวใจ"
+      "ท่องเที่ยว",
+      "ผ่อนคลาย"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/547/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/547/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Kiki%27s%20Delivery%20Service",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13569/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/13569/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Yuru%20Camp",
+    "mood": "chill"
   },
   {
     "id": 181,
-    "name": "Ponyo",
-    "nameTH": "โปเนียว ธิดาสมุทรผจญภัย",
+    "name": "Barakamon",
+    "nameTH": "เกาะมีฮา คนมีเฮ",
     "genre": [
-      "แฟนตาซี",
-      "ผจญภัย",
+      "คอมเมดี้",
+      "ชีวิตประจำวัน",
       "อบอุ่นหัวใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/2464/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/2464/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Ponyo",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8026/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/8026/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Barakamon",
     "mood": "happy"
   },
   {
     "id": 182,
-    "name": "Castle in the Sky",
-    "nameTH": "ลาพิวต้า พลิกตำนานเหนือเวหา",
+    "name": "A Place Further than the Universe",
+    "nameTH": "ดินแดนที่ห่างไกลยิ่งกว่าอวกาศ",
     "genre": [
       "ผจญภัย",
-      "แฟนตาซี",
-      "ไซไฟ"
+      "ดราม่า",
+      "มิตรภาพ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/541/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/541/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Castle%20in%20the%20Sky",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13615/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/13615/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=A%20Place%20Further%20than%20the%20Universe",
     "mood": "epic"
   },
   {
     "id": 183,
-    "name": "Whisper of the Heart",
-    "nameTH": "วันนั้น...วันไหน หัวใจจะเป็นสีชมพู",
+    "name": "Ping Pong The Animation",
+    "nameTH": "ปิงปอง ดิ แอนิเมชั่น",
     "genre": [
-      "โรแมนติก",
+      "กีฬา",
       "ดราม่า",
-      "ชีวิตในโรงเรียน"
+      "ศิลปะ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/548/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/548/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Whisper%20of%20the%20Heart",
-    "mood": "love"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8240/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/8240/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Ping%20Pong%20The%20Animation",
+    "mood": "hype"
   },
   {
     "id": 184,
-    "name": "The Tale of the Princess Kaguya",
-    "nameTH": "เจ้าหญิงกระบอกไม้ไผ่",
+    "name": "Run with the Wind",
+    "nameTH": "ลมพัดผ่านเรา (Kaze ga Tsuyoku Fuiteiru)",
     "genre": [
-      "แฟนตาซี",
-      "ดราม่า",
-      "ซึ้งกินใจ"
+      "กีฬา",
+      "วิ่งมาราธอน",
+      "ดราม่า"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/5406/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/5406/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=The%20Tale%20of%20the%20Princess%20Kaguya",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41372/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/41372/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Run%20with%20the%20Wind",
+    "mood": "hype"
   },
   {
     "id": 185,
-    "name": "The Wind Rises",
-    "nameTH": "ปีกแห่งฝัน วันแห่งรัก",
+    "name": "Chihayafuru",
+    "nameTH": "จิฮายะฟุรุ",
     "genre": [
+      "กีฬา",
       "ดราม่า",
-      "โรแมนติก",
-      "ประวัติศาสตร์"
+      "โรงเรียน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7196/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/7196/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=The%20Wind%20Rises",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6344/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/6344/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Chihayafuru",
+    "mood": "hype"
   },
   {
     "id": 186,
-    "name": "The Cat Returns",
-    "nameTH": "เจ้าแมวยอดนักสืบ",
+    "name": "Natsume's Book of Friends",
+    "nameTH": "นัตสึเมะกับบันทึกพิศวง",
     "genre": [
-      "แฟนตาซี",
-      "คอมเมดี้",
-      "ผจญภัย"
+      "ภูตผี",
+      "ดราม่า",
+      "อบอุ่นหัวใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/545/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/545/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=The%20Cat%20Returns",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3436/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/3436/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Natsume's%20Book%20of%20Friends",
     "mood": "chill"
   },
   {
@@ -2589,31 +2589,31 @@ const ANIMES = [
   },
   {
     "id": 189,
-    "name": "Detective Conan",
-    "nameTH": "ยอดนักสืบจิ๋วโคนัน",
+    "name": "March Comes in Like a Lion",
+    "nameTH": "ตราบวันฟ้าใส (3-gatsu no Lion)",
     "genre": [
-      "สืบสวน",
-      "ลึกลับ",
-      "ยอดนิยม"
+      "ดราม่า",
+      "โชงิ",
+      "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/210/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/210/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Detective%20Conan",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11615/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/11615/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=March%20Comes%20in%20Like%20a%20Lion",
+    "mood": "sad"
   },
   {
     "id": 190,
-    "name": "Detective Conan: The Million-dollar Pentagram",
-    "nameTH": "ยอดนักสืบจิ๋วโคนัน: ปริศนาปราการ 1 ล้านดอลลาร์",
+    "name": "Vivy: Fluorite Eye's Song",
+    "nameTH": "วิวี่ บทเพลงแห่งฟลูออไรท์",
     "genre": [
-      "สืบสวน",
-      "แอ็กชัน",
-      "ยอดนิยม"
+      "ไซไฟ",
+      "ดนตรี",
+      "แอ็กชัน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/47952/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/47952/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Detective%20Conan",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/44030/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/44030/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Vivy%3A%20Fluorite%20Eye's%20Song",
+    "mood": "epic"
   },
   {
     "id": 191,
@@ -2631,16 +2631,16 @@ const ANIMES = [
   },
   {
     "id": 192,
-    "name": "Detective Conan: Black Iron Submarine",
-    "nameTH": "ยอดนักสืบจิ๋วโคนัน: มฤตยูใต้น้ำทมิฬ",
+    "name": "Cyberpunk: Edgerunners",
+    "nameTH": "ไซเบอร์พังก์: เอ็ดจ์รันเนอร์ส",
     "genre": [
-      "สืบสวน",
+      "ไซไฟ",
       "แอ็กชัน",
-      "ระทึกขวัญ"
+      "ดิสโทเปีย"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/46864/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/46864/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Detective%20Conan",
+    "coverUrl": "https://media.kitsu.app/anime/43248/poster_image/medium-b6579dda46b596b2d2c3fa6d4618dc69.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/43248/poster_image/medium-b6579dda46b596b2d2c3fa6d4618dc69.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Cyberpunk%3A%20Edgerunners",
     "mood": "epic"
   },
   {
@@ -2659,31 +2659,31 @@ const ANIMES = [
   },
   {
     "id": 194,
-    "name": "Slam Dunk",
-    "nameTH": "สแลมดังก์",
+    "name": "Spirited Away",
+    "nameTH": "มิติวิญญาณมหัศจรรย์",
     "genre": [
-      "กีฬา",
-      "โรงเรียน",
-      "คอมเมดี้"
+      "แฟนตาซี",
+      "ผจญภัย",
+      "ครอบครัว"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/169/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/169/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Slam%20Dunk",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/176/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/176/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Spirited%20Away",
+    "mood": "chill"
   },
   {
     "id": 195,
-    "name": "The First Slam Dunk",
-    "nameTH": "เดอะ เฟิสต์ สแลมดังก์",
+    "name": "Princess Mononoke",
+    "nameTH": "เจ้าหญิงจิตวิญญาณแห่งพงไพร",
     "genre": [
-      "กีฬา",
-      "ดราม่า",
-      "ยอดนิยม"
+      "แฟนตาซี",
+      "ผจญภัย",
+      "ธรรมชาติ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/44053/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/44053/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=The%20First%20Slam%20Dunk",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/166/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/166/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Princess%20Mononoke",
+    "mood": "epic"
   },
   {
     "id": 196,
@@ -2715,45 +2715,45 @@ const ANIMES = [
   },
   {
     "id": 198,
-    "name": "Haikyuu!! The Dumpster Battle",
-    "nameTH": "ไฮคิว!! ศึกที่กองขยะ",
+    "name": "Howl's Moving Castle",
+    "nameTH": "ปราสาทเวทมนตร์ของฮาวล์",
     "genre": [
-      "กีฬา",
-      "โรงเรียน",
-      "ยอดนิยม"
+      "แฟนตาซี",
+      "โรแมนติก",
+      "ผจญภัย"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/46270/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/46270/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Haikyuu",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/224/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/224/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Howl's%20Moving%20Castle",
+    "mood": "love"
   },
   {
     "id": 199,
-    "name": "Gintama: The Final",
-    "nameTH": "กินทามะ เดอะ ไฟนอล",
+    "name": "My Neighbor Totoro",
+    "nameTH": "โทโทโร่เพื่อนรัก",
     "genre": [
-      "คอมเมดี้",
-      "แอ็กชัน",
-      "ซามูไร"
+      "แฟนตาซี",
+      "ชีวิตประจำวัน",
+      "ครอบครัว"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/42514/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/42514/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Gintama",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/544/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/544/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=My%20Neighbor%20Totoro",
+    "mood": "happy"
   },
   {
     "id": 200,
-    "name": "Mob Psycho 100 III",
-    "nameTH": "ม็อบไซโค 100 คนพลังจิต ซีซั่น 3",
+    "name": "Kiki's Delivery Service",
+    "nameTH": "แม่มดน้อยกิกิ",
     "genre": [
-      "แอ็กชัน",
-      "คอมเมดี้",
-      "เหนือธรรมชาติ"
+      "แฟนตาซี",
+      "ชีวิตประจำวัน",
+      "อบอุ่น"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/45214/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/45214/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Mob%20Psycho%20100",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/547/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/547/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kiki's%20Delivery%20Service",
+    "mood": "happy"
   },
   {
     "id": 201,
@@ -2877,17 +2877,17 @@ const ANIMES = [
   },
   {
     "id": 209,
-    "name": "Dr. Stone: New World",
-    "nameTH": "ดร.สโตน: โลกใบใหม่ ซีซั่น 3",
+    "name": "Ponyo",
+    "nameTH": "โปเนียว ธิดาสมุทรผจญภัย",
     "genre": [
-      "ไซไฟ",
+      "แฟนตาซี",
       "ผจญภัย",
-      "วิทยาศาสตร์"
+      "เด็ก"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/45610/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/45610/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Dr.%20Stone",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/2464/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/2464/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Ponyo",
+    "mood": "happy"
   },
   {
     "id": 210,
@@ -3056,17 +3056,17 @@ const ANIMES = [
   },
   {
     "id": 221,
-    "name": "Delicious in Dungeon",
-    "nameTH": "สูตรลับดันเจี้ยน (Dungeon Meshi)",
+    "name": "Castle in the Sky",
+    "nameTH": "ลาพิวต้า พลิกตำนานเหนือเวหา",
     "genre": [
+      "ผจญภัย",
       "แฟนตาซี",
-      "ทำอาหาร",
-      "ผจญภัย"
+      "ไซไฟ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/46367/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/46367/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Dungeon%20Meshi",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/541/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/541/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Castle%20in%20the%20Sky",
+    "mood": "epic"
   },
   {
     "id": 222,
@@ -3205,31 +3205,31 @@ const ANIMES = [
   },
   {
     "id": 231,
-    "name": "Wolf Children",
-    "nameTH": "คู่จี๊ดชีวิตอัศจรรย์",
+    "name": "Whisper of the Heart",
+    "nameTH": "วันนั้น...วันไหน หัวใจจะเป็นสีชมพู",
     "genre": [
-      "แฟนตาซี",
+      "โรแมนติก",
       "ดราม่า",
-      "ครอบครัว"
+      "ดนตรี"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6744/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/6744/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Wolf%20Children",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/548/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/548/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Whisper%20of%20the%20Heart",
+    "mood": "love"
   },
   {
     "id": 232,
-    "name": "The Boy and the Beast",
-    "nameTH": "ศิษย์มหัศจรรย์กับอาจารย์พันธุ์อสูร",
+    "name": "The Tale of the Princess Kaguya",
+    "nameTH": "เจ้าหญิงกระบอกไม้ไผ่",
     "genre": [
-      "ผจญภัย",
       "แฟนตาซี",
-      "เหนือธรรมชาติ"
+      "ดราม่า",
+      "ประวัติศาสตร์"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/9924/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/9924/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=The%20Boy%20and%20the%20Beast",
-    "mood": "epic"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/5406/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/5406/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20Tale%20of%20the%20Princess%20Kaguya",
+    "mood": "sad"
   },
   {
     "id": 233,
@@ -3248,45 +3248,45 @@ const ANIMES = [
   },
   {
     "id": 234,
-    "name": "Summer Wars",
-    "nameTH": "สงครามฤดูร้อน",
+    "name": "The Wind Rises",
+    "nameTH": "ปีกแห่งฝัน วันแห่งรัก",
     "genre": [
-      "ไซไฟ",
-      "คอมเมดี้",
-      "ครอบครัว"
+      "ดราม่า",
+      "โรแมนติก",
+      "ประวัติศาสตร์"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/3956/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/3956/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Summer%20Wars",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7196/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7196/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20Wind%20Rises",
+    "mood": "sad"
   },
   {
     "id": 235,
-    "name": "Josee, the Tiger and the Fish",
-    "nameTH": "โจเซ่ กับเสือและหมู่ปลา",
+    "name": "The Cat Returns",
+    "nameTH": "เจ้าแมวยอดนักสืบ",
     "genre": [
-      "โรแมนติก",
-      "ดราม่า",
-      "ซึ้งกินใจ"
+      "แฟนตาซี",
+      "คอมเมดี้",
+      "ผจญภัย"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/42828/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/42828/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Josee%20the%20Tiger%20and%20the%20Fish",
-    "mood": "love"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/545/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/545/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20Cat%20Returns",
+    "mood": "chill"
   },
   {
     "id": 236,
-    "name": "Belle",
-    "nameTH": "เบล เจ้าหญิงแห่งเสียงเพลง",
+    "name": "The Boy and the Heron",
+    "nameTH": "เด็กชายกับนกกระสา",
     "genre": [
-      "ดนตรี",
-      "ไซไฟ",
-      "ดราม่า"
+      "แฟนตาซี",
+      "ดราม่า",
+      "ผจญภัย"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/43977/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/43977/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Belle",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46270/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/46270/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20Boy%20and%20the%20Heron",
+    "mood": "epic"
   },
   {
     "id": 237,
@@ -3320,45 +3320,45 @@ const ANIMES = [
   },
   {
     "id": 239,
-    "name": "Words Bubble Up Like Soda Pop",
-    "nameTH": "ถ้อยคำเอ่อล้นด้วยหัวใจรัก",
+    "name": "Your Name",
+    "nameTH": "หลับตาฝัน ถึงชื่อเธอ",
     "genre": [
       "โรแมนติก",
-      "ดนตรี",
-      "ชีวิตในโรงเรียน"
+      "ดราม่า",
+      "เหนือธรรมชาติ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/42555/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/42555/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Words%20Bubble%20Up",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11614/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/11614/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Your%20Name",
     "mood": "love"
   },
   {
     "id": 240,
-    "name": "K-On!!",
-    "nameTH": "เค-อง! ก๊วนดนตรีแป๋วแหวว ซีซั่น 2",
+    "name": "Weathering With You",
+    "nameTH": "ฤดูฝัน ฉันมีเธอ",
     "genre": [
-      "ดนตรี",
-      "คอมเมดี้",
-      "ชีวิตประจำวัน"
+      "โรแมนติก",
+      "แฟนตาซี",
+      "ดราม่า"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/5070/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/5070/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=K-On",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/42028/poster_image/medium-7c29b40139396c7d225977be4e5987be.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/42028/poster_image/medium-7c29b40139396c7d225977be4e5987be.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Weathering%20With%20You",
+    "mood": "sad"
   },
   {
     "id": 241,
-    "name": "Sound! Euphonium",
-    "nameTH": "ฮิบิเคะ! ยูโฟเนียม",
+    "name": "Suzume",
+    "nameTH": "การผนึกประตูของซูซูเมะ",
     "genre": [
-      "ดนตรี",
-      "ดราม่า",
-      "ชีวิตในโรงเรียน"
+      "แฟนตาซี",
+      "ผจญภัย",
+      "ดราม่า"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8965/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/8965/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Sound%20Euphonium",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/45597/poster_image/medium-63432be1d191a4ce68e599e02336a62b.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/45597/poster_image/medium-63432be1d191a4ce68e599e02336a62b.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Suzume",
+    "mood": "epic"
   },
   {
     "id": 242,
@@ -3407,45 +3407,45 @@ const ANIMES = [
   },
   {
     "id": 245,
-    "name": "Hyouka",
-    "nameTH": "ปริศนาความทรงจำ (เฮียวกะ)",
+    "name": "5 Centimeters per Second",
+    "nameTH": "ยามซากุระร่วงโรย (5 cm/s)",
     "genre": [
-      "สืบสวน",
-      "ลึกลับ",
-      "ชีวิตในโรงเรียน"
+      "โรแมนติก",
+      "ดราม่า",
+      "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6734/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/6734/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Hyouka",
-    "mood": "chill"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1517/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/1517/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=5%20Centimeters%20per%20Second",
+    "mood": "sad"
   },
   {
     "id": 246,
-    "name": "Tamako Love Story",
-    "nameTH": "ทามาโกะ เลิฟ สตอรี่",
+    "name": "The Garden of Words",
+    "nameTH": "ยามสายฝนโปรยปราย",
     "genre": [
       "โรแมนติก",
-      "คอมเมดี้",
-      "ชีวิตประจำวัน"
+      "ดราม่า",
+      "ฝน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8267/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/8267/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Tamako%20Love%20Story",
-    "mood": "love"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7515/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7515/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20Garden%20of%20Words",
+    "mood": "chill"
   },
   {
     "id": 247,
-    "name": "Nichijou",
-    "nameTH": "สามัญชนคนกวนโอ๊ย",
+    "name": "A Silent Voice",
+    "nameTH": "รักไร้เสียง (Koe no Katachi)",
     "genre": [
-      "คอมเมดี้",
-      "ชีวิตในโรงเรียน",
-      "เฮฮา"
+      "ดราม่า",
+      "โรงเรียน",
+      "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/5938/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/5938/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Nichijou",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/10028/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/10028/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=A%20Silent%20Voice",
+    "mood": "sad"
   },
   {
     "id": 248,
@@ -3464,101 +3464,101 @@ const ANIMES = [
   },
   {
     "id": 249,
-    "name": "Non Non Biyori",
-    "nameTH": "สาวใสหัวใจบ้านทุ่ง",
-    "genre": [
-      "ชีวิตประจำวัน",
-      "ชนบท",
-      "อบอุ่นหัวใจ"
-    ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7740/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/7740/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Non%20Non%20Biyori",
-    "mood": "chill"
-  },
-  {
-    "id": 250,
-    "name": "Yuru Camp Season 3",
-    "nameTH": "แคมป์สบายสไตล์สาว ม.ปลาย ซีซั่น 3",
-    "genre": [
-      "ชีวิตประจำวัน",
-      "ท่องเที่ยว",
-      "ผ่อนคลาย"
-    ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/46369/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/46369/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Yuru%20Camp",
-    "mood": "chill"
-  },
-  {
-    "id": 251,
-    "name": "Campfire Cooking in Another World",
-    "nameTH": "สกิลสุดพิสดารกับมื้ออาหารในต่างโลก",
-    "genre": [
-      "ต่างโลก",
-      "ทำอาหาร",
-      "คอมเมดี้"
-    ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/46487/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/46487/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Campfire%20Cooking",
-    "mood": "happy"
-  },
-  {
-    "id": 252,
-    "name": "Natsume's Book of Friends Season 6",
-    "nameTH": "นัตสึเมะกับบันทึกพิศวง ซีซั่น 6",
-    "genre": [
-      "ภูตผี",
-      "ดราม่า",
-      "อบอุ่นหัวใจ"
-    ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/12586/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/12586/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Natsume",
-    "mood": "chill"
-  },
-  {
-    "id": 253,
-    "name": "March Comes in Like a Lion Season 2",
-    "nameTH": "ตราบวันฟ้าใส ซีซั่น 2",
+    "name": "I Want to Eat Your Pancreas",
+    "nameTH": "ตับอ่อนเธอนั้น ขอฉันเถอะนะ",
     "genre": [
       "ดราม่า",
-      "โชงิ",
+      "โรแมนติก",
       "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13350/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/13350/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=March%20Comes%20in%20Like%20a%20Lion",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13723/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/13723/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=I%20Want%20to%20Eat%20Your%20Pancreas",
     "mood": "sad"
   },
   {
-    "id": 254,
-    "name": "Chihayafuru 3",
-    "nameTH": "จิฮายะฟุรุ ซีซั่น 3",
+    "id": 250,
+    "name": "Josee, the Tiger and the Fish",
+    "nameTH": "โจเซ่ กับเสือและหมู่ปลา",
     "genre": [
-      "กีฬา",
+      "โรแมนติก",
       "ดราม่า",
-      "โรงเรียน"
+      "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/41198/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/41198/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Chihayafuru",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42828/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/42828/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Josee%2C%20the%20Tiger%20and%20the%20Fish",
+    "mood": "love"
+  },
+  {
+    "id": 251,
+    "name": "Belle",
+    "nameTH": "เบล เจ้าหญิงแห่งเสียงเพลง",
+    "genre": [
+      "ดนตรี",
+      "ไซไฟ",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/43977/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/43977/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Belle",
+    "mood": "sad"
+  },
+  {
+    "id": 252,
+    "name": "Summer Wars",
+    "nameTH": "สงครามฤดูร้อน",
+    "genre": [
+      "ไซไฟ",
+      "คอมเมดี้",
+      "ครอบครัว"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3956/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/3956/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Summer%20Wars",
     "mood": "hype"
   },
   {
-    "id": 255,
-    "name": "Little Witch Academia",
-    "nameTH": "โรงเรียนแม่มดน้อย",
+    "id": 253,
+    "name": "The Boy and the Beast",
+    "nameTH": "ศิษย์มหัศจรรย์กับอาจารย์พันธุ์อสูร",
     "genre": [
-      "เวทมนตร์",
+      "ผจญภัย",
       "แฟนตาซี",
-      "คอมเมดี้"
+      "มิตรภาพ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/12204/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/12204/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Little%20Witch%20Academia",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/9924/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/9924/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20Boy%20and%20the%20Beast",
+    "mood": "epic"
+  },
+  {
+    "id": 254,
+    "name": "Wolf Children",
+    "nameTH": "คู่จี๊ดชีวิตอัศจรรย์",
+    "genre": [
+      "ครอบครัว",
+      "แฟนตาซี",
+      "ซึ้งกินใจ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6744/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/6744/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Wolf%20Children",
+    "mood": "sad"
+  },
+  {
+    "id": 255,
+    "name": "The Girl Who Leapt Through Time",
+    "nameTH": "กระโดดจั๊มพ์ทะลุข้ามเวลา",
+    "genre": [
+      "ไซไฟ",
+      "ดราม่า",
+      "โรงเรียน"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1454/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/1454/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20Girl%20Who%20Leapt%20Through%20Time",
+    "mood": "love"
   },
   {
     "id": 256,
@@ -3576,90 +3576,48 @@ const ANIMES = [
   },
   {
     "id": 257,
-    "name": "Spy x Family Code: White",
-    "nameTH": "สปาย × แฟมิลี โค้ด ไวท์",
+    "name": "Words Bubble Up Like Soda Pop",
+    "nameTH": "ถ้อยคำเอ่อล้นด้วยหัวใจรัก",
     "genre": [
-      "คอมเมดี้",
-      "แอ็กชัน",
-      "ครอบครัว"
+      "โรแมนติก",
+      "ดนตรี",
+      "ชีวิตในโรงเรียน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/46881/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/46881/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Spy%20x%20Family",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42555/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/42555/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Words%20Bubble%20Up%20Like%20Soda%20Pop",
+    "mood": "love"
   },
   {
     "id": 258,
-    "name": "Doraemon: Stand by Me",
-    "nameTH": "สแตนด์บายมี โดราเอมอน เพื่อนกันตลอดไป",
+    "name": "Hotarubi no Mori e",
+    "nameTH": "สู่ป่าแห่งแสงหิ่งห้อย",
     "genre": [
       "แฟนตาซี",
-      "มิตรภาพ",
+      "โรแมนติก",
       "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8207/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/8207/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Doraemon%20Stand%20by%20Me",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6169/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/6169/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Hotarubi%20no%20Mori%20e",
     "mood": "sad"
   },
   {
     "id": 259,
-    "name": "Doraemon: Nobita's Sky Utopia",
-    "nameTH": "โดราเอมอน: ฟากฟ้าแห่งยูโทเปียของโนบิตะ",
+    "name": "Violet Evergarden",
+    "nameTH": "ไวโอเล็ต เอเวอร์การ์เดน",
     "genre": [
+      "ดราม่า",
       "แฟนตาซี",
-      "ผจญภัย",
-      "มิตรภาพ"
+      "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/46214/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/46214/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Doraemon",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/12230/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/12230/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Violet%20Evergarden",
+    "mood": "sad"
   },
   {
     "id": 260,
-    "name": "Crayon Shin-chan: The Storm Called: The Battle of the Warring States",
-    "nameTH": "ชินจัง เดอะมูฟวี่: ชินจัง เดอะมูฟวี่ พายุพัดหวน ศึกชิงบัลลังก์เจ้าหญิง",
-    "genre": [
-      "คอมเมดี้",
-      "ครอบครัว",
-      "ซึ้งกินใจ"
-    ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/3625/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/3625/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Shin-chan",
-    "mood": "sad"
-  },
-  {
-    "id": 261,
-    "name": "Assassination Classroom Season 2",
-    "nameTH": "ห้องเรียนลอบสังหาร ซีซั่น 2",
-    "genre": [
-      "แอ็กชัน",
-      "คอมเมดี้",
-      "ชีวิตในโรงเรียน"
-    ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/10903/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/10903/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Assassination%20Classroom",
-    "mood": "sad"
-  },
-  {
-    "id": 262,
-    "name": "Bungo Stray Dogs: Dead Apple",
-    "nameTH": "คณะประพันธกรจรจัด: เดด แอปเปิล",
-    "genre": [
-      "พลังพิเศษ",
-      "สืบสวน",
-      "แอ็กชัน"
-    ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13364/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/13364/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Bungo%20Stray%20Dogs",
-    "mood": "epic"
-  },
-  {
-    "id": 263,
     "name": "Violet Evergarden: The Movie",
     "nameTH": "ไวโอเล็ต เอเวอร์การ์เดน เดอะมูฟวี่",
     "genre": [
@@ -3669,134 +3627,176 @@ const ANIMES = [
     ],
     "coverUrl": "https://media.kitsu.app/anime/poster_images/41370/medium.jpg",
     "coverFallback": "https://media.kitsu.app/anime/poster_images/41370/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Violet%20Evergarden",
+    "anifumeUrl": "https://anifume.com/?s=Violet%20Evergarden%3A%20The%20Movie",
     "mood": "sad"
+  },
+  {
+    "id": 261,
+    "name": "Haikyuu!!",
+    "nameTH": "ไฮคิว!! คู่ตบฟ้าประทาน",
+    "genre": [
+      "กีฬา",
+      "โรงเรียน",
+      "มิตรภาพ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8133/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/8133/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Haikyuu!!",
+    "mood": "hype"
+  },
+  {
+    "id": 262,
+    "name": "Haikyuu!! The Dumpster Battle",
+    "nameTH": "ไฮคิว!! ศึกที่กองขยะ",
+    "genre": [
+      "กีฬา",
+      "โรงเรียน",
+      "ไฮป์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46270/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/46270/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Haikyuu!!%20The%20Dumpster%20Battle",
+    "mood": "hype"
+  },
+  {
+    "id": 263,
+    "name": "Slam Dunk",
+    "nameTH": "สแลมดังก์",
+    "genre": [
+      "กีฬา",
+      "โรงเรียน",
+      "คลาสสิก"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/169/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/169/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Slam%20Dunk",
+    "mood": "hype"
   },
   {
     "id": 264,
-    "name": "Princess Mononoke",
-    "nameTH": "เจ้าหญิงจิตวิญญาณแห่งพงไพร",
+    "name": "The First Slam Dunk",
+    "nameTH": "เดอะ เฟิสต์ สแลมดังก์",
     "genre": [
-      "แฟนตาซี",
-      "ผจญภัย",
-      "ยอดนิยม"
+      "กีฬา",
+      "ดราม่า",
+      "ระดับโลก"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/166/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/166/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Princess%20Mononoke",
-    "mood": "epic"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/44053/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/44053/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20First%20Slam%20Dunk",
+    "mood": "hype"
   },
   {
     "id": 265,
-    "name": "Howl's Moving Castle",
-    "nameTH": "ปราสาทเวทมนตร์ของฮาวล์",
+    "name": "Kuroko's Basketball",
+    "nameTH": "คุโรโกะ โนะ บาสเก็ต",
     "genre": [
-      "แฟนตาซี",
-      "โรแมนติก",
-      "ยอดนิยม"
+      "กีฬา",
+      "โรงเรียน",
+      "พลังพิเศษ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/224/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/224/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Howl%27s%20Moving%20Castle",
-    "mood": "love"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7645/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7645/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kuroko's%20Basketball",
+    "mood": "hype"
   },
   {
     "id": 266,
-    "name": "My Neighbor Totoro",
-    "nameTH": "โทโทโร่เพื่อนรัก",
+    "name": "Detective Conan",
+    "nameTH": "ยอดนักสืบจิ๋วโคนัน",
     "genre": [
-      "แฟนตาซี",
-      "ชีวิตประจำวัน",
-      "อบอุ่นหัวใจ"
+      "สืบสวน",
+      "ลึกลับ",
+      "ยอดนิยม"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/544/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/544/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=My%20Neighbor%20Totoro",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/210/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/210/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Detective%20Conan",
+    "mood": "hype"
   },
   {
     "id": 267,
-    "name": "Kiki's Delivery Service",
-    "nameTH": "แม่มดน้อยกิกิ",
+    "name": "Detective Conan: The Million-dollar Pentagram",
+    "nameTH": "ยอดนักสืบจิ๋วโคนัน: ปริศนาปราการ 1 ล้านดอลลาร์",
     "genre": [
-      "แฟนตาซี",
-      "ชีวิตประจำวัน",
-      "อบอุ่นหัวใจ"
+      "สืบสวน",
+      "แอ็กชัน",
+      "ยอดนิยม"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/547/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/547/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Kiki%27s%20Delivery%20Service",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/47952/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/47952/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Detective%20Conan%3A%20The%20Million-dollar%20Pentagram",
+    "mood": "hype"
   },
   {
     "id": 268,
-    "name": "Ponyo",
-    "nameTH": "โปเนียว ธิดาสมุทรผจญภัย",
+    "name": "Detective Conan: Black Iron Submarine",
+    "nameTH": "ยอดนักสืบจิ๋วโคนัน: มฤตยูใต้น้ำทมิฬ",
     "genre": [
-      "แฟนตาซี",
-      "ผจญภัย",
-      "อบอุ่นหัวใจ"
+      "สืบสวน",
+      "แอ็กชัน",
+      "ระทึกขวัญ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/2464/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/2464/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Ponyo",
-    "mood": "happy"
-  },
-  {
-    "id": 269,
-    "name": "Castle in the Sky",
-    "nameTH": "ลาพิวต้า พลิกตำนานเหนือเวหา",
-    "genre": [
-      "ผจญภัย",
-      "แฟนตาซี",
-      "ไซไฟ"
-    ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/541/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/541/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Castle%20in%20the%20Sky",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46864/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/46864/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Detective%20Conan%3A%20Black%20Iron%20Submarine",
     "mood": "epic"
   },
   {
-    "id": 270,
-    "name": "Whisper of the Heart",
-    "nameTH": "วันนั้น...วันไหน หัวใจจะเป็นสีชมพู",
+    "id": 269,
+    "name": "Gintama",
+    "nameTH": "กินทามะ",
     "genre": [
-      "โรแมนติก",
-      "ดราม่า",
-      "ชีวิตในโรงเรียน"
+      "คอมเมดี้",
+      "แอ็กชัน",
+      "ซามูไร"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/548/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/548/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Whisper%20of%20the%20Heart",
-    "mood": "love"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/203/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/203/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Gintama",
+    "mood": "hype"
+  },
+  {
+    "id": 270,
+    "name": "Gintama: The Final",
+    "nameTH": "กินทามะ เดอะ ไฟนอล",
+    "genre": [
+      "แอ็กชัน",
+      "คอมเมดี้",
+      "ซามูไร"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42514/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/42514/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Gintama%3A%20The%20Final",
+    "mood": "epic"
   },
   {
     "id": 271,
-    "name": "The Tale of the Princess Kaguya",
-    "nameTH": "เจ้าหญิงกระบอกไม้ไผ่",
+    "name": "Mob Psycho 100",
+    "nameTH": "ม็อบไซโค 100 คนพลังจิต",
     "genre": [
-      "แฟนตาซี",
-      "ดราม่า",
-      "ซึ้งกินใจ"
+      "แอ็กชัน",
+      "คอมเมดี้",
+      "เหนือธรรมชาติ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/5406/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/5406/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=The%20Tale%20of%20the%20Princess%20Kaguya",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11819/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/11819/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Mob%20Psycho%20100",
+    "mood": "hype"
   },
   {
     "id": 272,
-    "name": "The Wind Rises",
-    "nameTH": "ปีกแห่งฝัน วันแห่งรัก",
+    "name": "Mob Psycho 100 III",
+    "nameTH": "ม็อบไซโค 100 คนพลังจิต ซีซั่น 3",
     "genre": [
-      "ดราม่า",
-      "โรแมนติก",
-      "ประวัติศาสตร์"
+      "แอ็กชัน",
+      "คอมเมดี้",
+      "เหนือธรรมชาติ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7196/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/7196/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=The%20Wind%20Rises",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/45214/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/45214/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Mob%20Psycho%20100%20III",
+    "mood": "hype"
   },
   {
     "id": 273,
@@ -3814,17 +3814,17 @@ const ANIMES = [
   },
   {
     "id": 274,
-    "name": "The Cat Returns",
-    "nameTH": "เจ้าแมวยอดนักสืบ",
+    "name": "Dr. Stone",
+    "nameTH": "ดร.สโตน",
     "genre": [
-      "แฟนตาซี",
-      "คอมเมดี้",
-      "ผจญภัย"
+      "ไซไฟ",
+      "ผจญภัย",
+      "วิทยาศาสตร์"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/545/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/545/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=The%20Cat%20Returns",
-    "mood": "chill"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41819/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/41819/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Dr.%20Stone",
+    "mood": "hype"
   },
   {
     "id": 275,
@@ -3856,114 +3856,114 @@ const ANIMES = [
   },
   {
     "id": 277,
-    "name": "Detective Conan",
-    "nameTH": "ยอดนักสืบจิ๋วโคนัน",
+    "name": "Dr. Stone: New World",
+    "nameTH": "ดร.สโตน: โลกใบใหม่ ซีซั่น 3",
     "genre": [
-      "สืบสวน",
-      "ลึกลับ",
-      "ยอดนิยม"
+      "ไซไฟ",
+      "ผจญภัย",
+      "วิทยาศาสตร์"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/210/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/210/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Detective%20Conan",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/45610/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/45610/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Dr.%20Stone%3A%20New%20World",
     "mood": "hype"
   },
   {
     "id": 278,
-    "name": "Detective Conan: The Million-dollar Pentagram",
-    "nameTH": "ยอดนักสืบจิ๋วโคนัน: ปริศนาปราการ 1 ล้านดอลลาร์",
+    "name": "Spy x Family",
+    "nameTH": "สปาย × แฟมิลี",
     "genre": [
-      "สืบสวน",
-      "แอ็กชัน",
-      "ยอดนิยม"
+      "คอมเมดี้",
+      "ครอบครัว",
+      "สายลับ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/47952/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/47952/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Detective%20Conan",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/45398/poster_image/medium-f2f30d957a12e8269655c6036b460c90.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/45398/poster_image/medium-f2f30d957a12e8269655c6036b460c90.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Spy%20x%20Family",
+    "mood": "happy"
   },
   {
     "id": 279,
-    "name": "Detective Conan: Black Iron Submarine",
-    "nameTH": "ยอดนักสืบจิ๋วโคนัน: มฤตยูใต้น้ำทมิฬ",
+    "name": "Spy x Family Code: White",
+    "nameTH": "สปาย × แฟมิลี โค้ด ไวท์",
     "genre": [
-      "สืบสวน",
+      "คอมเมดี้",
       "แอ็กชัน",
-      "ระทึกขวัญ"
+      "ครอบครัว"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/46864/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/46864/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Detective%20Conan",
-    "mood": "epic"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46881/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/46881/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Spy%20x%20Family%20Code%3A%20White",
+    "mood": "happy"
   },
   {
     "id": 280,
-    "name": "Slam Dunk",
-    "nameTH": "สแลมดังก์",
+    "name": "Frieren: Beyond Journey's End",
+    "nameTH": "คำอธิษฐานในวันที่จากลา Frieren",
     "genre": [
-      "กีฬา",
-      "โรงเรียน",
-      "คอมเมดี้"
+      "แฟนตาซี",
+      "การเดินทาง",
+      "อบอุ่น"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/169/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/169/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Slam%20Dunk",
-    "mood": "hype"
+    "coverUrl": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
+    "coverFallback": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Frieren%3A%20Beyond%20Journey's%20End",
+    "mood": "chill"
   },
   {
     "id": 281,
-    "name": "Kuroko's Basketball",
-    "nameTH": "คุโรโกะ โนะ บาสเก็ต",
+    "name": "Delicious in Dungeon",
+    "nameTH": "สูตรลับดันเจี้ยน (Dungeon Meshi)",
     "genre": [
-      "กีฬา",
-      "โรงเรียน",
-      "แอคชั่น"
+      "แฟนตาซี",
+      "ทำอาหาร",
+      "ผจญภัย"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7645/medium.jpg",
-    "coverFallback": "https://shikimori.io/system/animes/original/11771.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Kuroko+Basketball",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46367/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/46367/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Delicious%20in%20Dungeon",
+    "mood": "happy"
   },
   {
     "id": 282,
-    "name": "The First Slam Dunk",
-    "nameTH": "เดอะ เฟิสต์ สแลมดังก์",
+    "name": "Bocchi the Rock!",
+    "nameTH": "บ็อจจิ เดอะ ร็อก!",
     "genre": [
-      "กีฬา",
-      "ดราม่า",
-      "ยอดนิยม"
+      "ดนตรี",
+      "คอมเมดี้",
+      "ชีวิตประจำวัน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/44053/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/44053/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=The%20First%20Slam%20Dunk",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/44196/poster_image/medium-a7b52a1e9cea5a04b29ee6878fbff923.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/44196/poster_image/medium-a7b52a1e9cea5a04b29ee6878fbff923.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Bocchi%20the%20Rock!",
+    "mood": "chill"
   },
   {
     "id": 283,
-    "name": "Haikyuu!! The Dumpster Battle",
-    "nameTH": "ไฮคิว!! ศึกที่กองขยะ",
+    "name": "Mashle: Magic and Muscles",
+    "nameTH": "ศึกโลกเวทมนตร์คนพลังกล้าม",
     "genre": [
-      "กีฬา",
-      "โรงเรียน",
-      "ยอดนิยม"
+      "คอมเมดี้",
+      "แอ็กชัน",
+      "เวทมนตร์"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/46270/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/46270/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Haikyuu",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46210/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/46210/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Mashle%3A%20Magic%20and%20Muscles",
     "mood": "hype"
   },
   {
     "id": 284,
-    "name": "Gintama: The Final",
-    "nameTH": "กินทามะ เดอะ ไฟนอล",
+    "name": "Wind Breaker",
+    "nameTH": "วินด์เบรกเกอร์ นักเรียนสายบู๊",
     "genre": [
-      "คอมเมดี้",
       "แอ็กชัน",
-      "ซามูไร"
+      "โรงเรียน",
+      "มิตรภาพ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/42514/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/42514/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Gintama",
+    "coverUrl": "https://media.kitsu.app/anime/47271/poster_image/medium-90a981a5a5570ba5fdb809a3152c8348.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/47271/poster_image/medium-90a981a5a5570ba5fdb809a3152c8348.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Wind%20Breaker",
     "mood": "hype"
   },
   {
@@ -3982,30 +3982,30 @@ const ANIMES = [
   },
   {
     "id": 286,
-    "name": "Mob Psycho 100 III",
-    "nameTH": "ม็อบไซโค 100 คนพลังจิต ซีซั่น 3",
+    "name": "Kaiju No. 8",
+    "nameTH": "ไคจูหมายเลข 8",
     "genre": [
       "แอ็กชัน",
-      "คอมเมดี้",
-      "เหนือธรรมชาติ"
+      "ไซไฟ",
+      "สัตว์ประหลาด"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/45214/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/45214/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Mob%20Psycho%20100",
+    "coverUrl": "https://media.kitsu.app/anime/46300/poster_image/medium-c1c025bbee42bed048e628b1eae278c0.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/46300/poster_image/medium-c1c025bbee42bed048e628b1eae278c0.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Kaiju%20No.%208",
     "mood": "hype"
   },
   {
     "id": 287,
-    "name": "Dr. Stone: New World",
-    "nameTH": "ดร.สโตน: โลกใบใหม่ ซีซั่น 3",
+    "name": "Blue Lock",
+    "nameTH": "ขังดวลแข้ง",
     "genre": [
-      "ไซไฟ",
-      "ผจญภัย",
-      "วิทยาศาสตร์"
+      "กีฬา",
+      "ฟุตบอล",
+      "ไฮป์"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/45610/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/45610/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Dr.%20Stone",
+    "coverUrl": "https://anifume.com/images/45/Blue-Lock.jpg",
+    "coverFallback": "https://anifume.com/images/45/Blue-Lock.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Blue%20Lock",
     "mood": "hype"
   },
   {
@@ -4024,115 +4024,115 @@ const ANIMES = [
   },
   {
     "id": 289,
-    "name": "Delicious in Dungeon",
-    "nameTH": "สูตรลับดันเจี้ยน (Dungeon Meshi)",
+    "name": "Demon Slayer: Kimetsu no Yaiba",
+    "nameTH": "ดาบพิฆาตอสูร",
     "genre": [
-      "แฟนตาซี",
-      "ทำอาหาร",
-      "ผจญภัย"
+      "แอ็กชัน",
+      "ดาร์กแฟนตาซี",
+      "ซามูไร"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/46367/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/46367/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Dungeon%20Meshi",
-    "mood": "happy"
+    "coverUrl": "https://anifume.com/images/53/Kimetsu-no-Yaiba-Hashira-Geiko-hen.jpg",
+    "coverFallback": "https://anifume.com/images/53/Kimetsu-no-Yaiba-Hashira-Geiko-hen.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Demon%20Slayer%3A%20Kimetsu%20no%20Yaiba",
+    "mood": "hype"
   },
   {
     "id": 290,
-    "name": "Wolf Children",
-    "nameTH": "คู่จี๊ดชีวิตอัศจรรย์",
+    "name": "Jujutsu Kaisen",
+    "nameTH": "มหาเวทย์ผนึกมาร",
     "genre": [
-      "แฟนตาซี",
-      "ดราม่า",
-      "ครอบครัว"
+      "แอ็กชัน",
+      "คุณไสย",
+      "ดาร์กแฟนตาซี"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6744/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/6744/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Wolf%20Children",
-    "mood": "sad"
+    "coverUrl": "https://anifume.com/images/19/Jujutsu-Kaisen-3.jpg",
+    "coverFallback": "https://anifume.com/images/19/Jujutsu-Kaisen-3.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Jujutsu%20Kaisen",
+    "mood": "hype"
   },
   {
     "id": 291,
-    "name": "The Boy and the Beast",
-    "nameTH": "ศิษย์มหัศจรรย์กับอาจารย์พันธุ์อสูร",
+    "name": "Attack on Titan",
+    "nameTH": "ผ่าพิภพไททัน",
     "genre": [
-      "ผจญภัย",
-      "แฟนตาซี",
-      "เหนือธรรมชาติ"
+      "แอ็กชัน",
+      "ดราม่า",
+      "มหากาพย์"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/9924/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/9924/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=The%20Boy%20and%20the%20Beast",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7442/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7442/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Attack%20on%20Titan",
     "mood": "epic"
   },
   {
     "id": 292,
-    "name": "The Boy and the Heron",
-    "nameTH": "เด็กชายกับนกกระสา",
+    "name": "Chainsaw Man",
+    "nameTH": "มนุษย์เลื่อยยนต์",
     "genre": [
-      "แฟนตาซี",
-      "ผจญภัย",
-      "จิบลิ"
+      "แอ็กชัน",
+      "เหนือธรรมชาติ",
+      "ดาร์ก"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/46874/poster_image/medium-77ce4d83e28e24e71cf7fdcbe0df8e28.jpeg",
-    "coverFallback": "https://shikimori.io/system/animes/original/57458.jpg",
-    "anifumeUrl": "https://anifume.com/?s=The+Boy+and+the+Heron",
-    "mood": "chill"
+    "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "coverFallback": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Chainsaw%20Man",
+    "mood": "hype"
   },
   {
     "id": 293,
-    "name": "Summer Wars",
-    "nameTH": "สงครามฤดูร้อน",
+    "name": "One Piece",
+    "nameTH": "วันพีซ",
     "genre": [
-      "ไซไฟ",
-      "คอมเมดี้",
-      "ครอบครัว"
+      "ผจญภัย",
+      "แอ็กชัน",
+      "มิตรภาพ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/3956/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/3956/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Summer%20Wars",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/12/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/12/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=One%20Piece",
     "mood": "hype"
   },
   {
     "id": 294,
-    "name": "Josee, the Tiger and the Fish",
-    "nameTH": "โจเซ่ กับเสือและหมู่ปลา",
+    "name": "Naruto Shippuden",
+    "nameTH": "นารูโตะ ตำนานวายุสลาตัน",
     "genre": [
-      "โรแมนติก",
-      "ดราม่า",
-      "ซึ้งกินใจ"
+      "แอ็กชัน",
+      "นินจา",
+      "มิตรภาพ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/42828/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/42828/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Josee%20the%20Tiger%20and%20the%20Fish",
-    "mood": "love"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1555/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/1555/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Naruto%20Shippuden",
+    "mood": "hype"
   },
   {
     "id": 295,
-    "name": "Belle",
-    "nameTH": "เบล เจ้าหญิงแห่งเสียงเพลง",
+    "name": "Bleach",
+    "nameTH": "บลีช เทพมรณะ",
     "genre": [
-      "ดนตรี",
-      "ไซไฟ",
-      "ดราม่า"
+      "แอ็กชัน",
+      "ยมทูต",
+      "พลังพิเศษ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/43977/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/43977/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Belle",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/244/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/244/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Bleach",
+    "mood": "hype"
   },
   {
     "id": 296,
-    "name": "Words Bubble Up Like Soda Pop",
-    "nameTH": "ถ้อยคำเอ่อล้นด้วยหัวใจรัก",
+    "name": "Hunter x Hunter",
+    "nameTH": "ฮันเตอร์ x ฮันเตอร์",
     "genre": [
-      "โรแมนติก",
-      "ดนตรี",
-      "ชีวิตในโรงเรียน"
+      "ผจญภัย",
+      "แอ็กชัน",
+      "แฟนตาซี"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/42555/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/42555/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Words%20Bubble%20Up",
-    "mood": "love"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6448/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/6448/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Hunter%20x%20Hunter",
+    "mood": "hype"
   },
   {
     "id": 297,
@@ -4150,44 +4150,44 @@ const ANIMES = [
   },
   {
     "id": 298,
-    "name": "K-On!!",
-    "nameTH": "เค-อง! ก๊วนดนตรีแป๋วแหวว ซีซั่น 2",
+    "name": "Fullmetal Alchemist: Brotherhood",
+    "nameTH": "แขนกลคนแปรธาตุ บราเธอร์ฮูด",
     "genre": [
-      "ดนตรี",
-      "คอมเมดี้",
-      "ชีวิตประจำวัน"
+      "แฟนตาซี",
+      "ผจญภัย",
+      "ดราม่า"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/5070/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/5070/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=K-On",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3936/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/3936/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Fullmetal%20Alchemist%3A%20Brotherhood",
+    "mood": "epic"
   },
   {
     "id": 299,
-    "name": "Sound! Euphonium",
-    "nameTH": "ฮิบิเคะ! ยูโฟเนียม",
+    "name": "Steins;Gate",
+    "nameTH": "สไตน์ส;เกท",
     "genre": [
-      "ดนตรี",
-      "ดราม่า",
-      "ชีวิตในโรงเรียน"
+      "ไซไฟ",
+      "ข้ามเวลา",
+      "ระทึกขวัญ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8965/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/8965/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Sound%20Euphonium",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/5646/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/5646/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Steins%3BGate",
+    "mood": "epic"
   },
   {
     "id": 300,
-    "name": "Hyouka",
-    "nameTH": "ปริศนาความทรงจำ (เฮียวกะ)",
+    "name": "Cowboy Bebop",
+    "nameTH": "คาวบอย บีบ๊อป",
     "genre": [
-      "สืบสวน",
-      "ลึกลับ",
-      "ชีวิตในโรงเรียน"
+      "ไซไฟ",
+      "แอ็กชัน",
+      "แจ๊ส"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6734/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/6734/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Hyouka",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/1/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Cowboy%20Bebop",
     "mood": "chill"
   },
   {
@@ -4461,17 +4461,17 @@ const ANIMES = [
   },
   {
     "id": 319,
-    "name": "Tamako Love Story",
-    "nameTH": "ทามาโกะ เลิฟ สตอรี่",
+    "name": "Vinland Saga",
+    "nameTH": "วินแลนด์ ซาก้า",
     "genre": [
-      "โรแมนติก",
-      "คอมเมดี้",
-      "ชีวิตประจำวัน"
+      "ประวัติศาสตร์",
+      "ไวกิ้ง",
+      "ดราม่า"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8267/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/8267/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Tamako%20Love%20Story",
-    "mood": "love"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41084/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/41084/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Vinland%20Saga",
+    "mood": "epic"
   },
   {
     "id": 320,
@@ -4550,58 +4550,58 @@ const ANIMES = [
   },
   {
     "id": 325,
-    "name": "Nichijou",
-    "nameTH": "สามัญชนคนกวนโอ๊ย",
+    "name": "K-On!!",
+    "nameTH": "เค-อง! ก๊วนดนตรีแป๋วแหวว",
     "genre": [
+      "ดนตรี",
       "คอมเมดี้",
-      "ชีวิตในโรงเรียน",
-      "เฮฮา"
+      "ชีวิตประจำวัน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/5938/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/5938/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Nichijou",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/5070/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/5070/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=K-On!!",
     "mood": "happy"
   },
   {
     "id": 326,
-    "name": "Non Non Biyori",
-    "nameTH": "สาวใสหัวใจบ้านทุ่ง",
+    "name": "Sound! Euphonium",
+    "nameTH": "ฮิบิเคะ! ยูโฟเนียม",
     "genre": [
-      "ชีวิตประจำวัน",
-      "ชนบท",
-      "อบอุ่นหัวใจ"
+      "ดนตรี",
+      "ดราม่า",
+      "โรงเรียน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7740/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/7740/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Non%20Non%20Biyori",
-    "mood": "chill"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8965/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/8965/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Sound!%20Euphonium",
+    "mood": "sad"
   },
   {
     "id": 327,
-    "name": "Yuru Camp Season 3",
-    "nameTH": "แคมป์สบายสไตล์สาว ม.ปลาย ซีซั่น 3",
+    "name": "Hyouka",
+    "nameTH": "ปริศนาความทรงจำ (เฮียวกะ)",
     "genre": [
-      "ชีวิตประจำวัน",
-      "ท่องเที่ยว",
-      "ผ่อนคลาย"
+      "สืบสวน",
+      "ชีวิตในโรงเรียน",
+      "ลึกลับ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/46369/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/46369/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Yuru%20Camp",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6734/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/6734/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Hyouka",
     "mood": "chill"
   },
   {
     "id": 328,
-    "name": "Campfire Cooking in Another World",
-    "nameTH": "สกิลสุดพิสดารกับมื้ออาหารในต่างโลก",
+    "name": "Tamako Market",
+    "nameTH": "ตลาดป่วน ก๊วนทามาโกะ",
     "genre": [
-      "ต่างโลก",
-      "ทำอาหาร",
-      "คอมเมดี้"
+      "คอมเมดี้",
+      "ชีวิตประจำวัน",
+      "อบอุ่น"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/46487/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/46487/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Campfire%20Cooking",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7377/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7377/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Tamako%20Market",
     "mood": "happy"
   },
   {
@@ -4621,73 +4621,72 @@ const ANIMES = [
   },
   {
     "id": 330,
-    "name": "Natsume's Book of Friends Season 6",
-    "nameTH": "นัตสึเมะกับบันทึกพิศวง ซีซั่น 6",
+    "name": "Tamako Love Story",
+    "nameTH": "ทามาโกะ เลิฟ สตอรี่",
     "genre": [
-      "ภูตผี",
-      "ดราม่า",
-      "อบอุ่นหัวใจ"
+      "โรแมนติก",
+      "คอมเมดี้",
+      "ชีวิตประจำวัน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/12586/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/12586/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Natsume",
-    "mood": "chill"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8267/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/8267/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Tamako%20Love%20Story",
+    "mood": "love"
   },
   {
     "id": 331,
-    "name": "March Comes in Like a Lion Season 2",
-    "nameTH": "ตราบวันฟ้าใส ซีซั่น 2",
+    "name": "Nichijou",
+    "nameTH": "สามัญชนคนกวนโอ๊ย",
     "genre": [
-      "ดราม่า",
-      "โชงิ",
-      "ซึ้งกินใจ"
+      "คอมเมดี้",
+      "ชีวิตในโรงเรียน",
+      "ฮาหลุดโลก"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13350/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/13350/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=March%20Comes%20in%20Like%20a%20Lion",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/5938/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/5938/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Nichijou",
+    "mood": "happy"
   },
   {
     "id": 332,
-    "name": "Chihayafuru 3",
-    "nameTH": "จิฮายะฟุรุ ซีซั่น 3",
+    "name": "Non Non Biyori",
+    "nameTH": "สาวใสหัวใจบ้านทุ่ง",
     "genre": [
-      "กีฬา",
-      "ดราม่า",
-      "โรงเรียน"
+      "ชีวิตประจำวัน",
+      "ชนบท",
+      "ผ่อนคลาย"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/41198/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/41198/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Chihayafuru",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7740/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7740/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Non%20Non%20Biyori",
+    "mood": "chill"
   },
   {
     "id": 333,
-    "name": "The Girl Who Leapt Through Time",
-    "nameTH": "กระโดดจัมพ์ทะลุข้ามเวลา",
+    "name": "Yuru Camp",
+    "nameTH": "แคมป์สบายสไตล์สาว ม.ปลาย",
     "genre": [
-      "ย้อนเวลา",
-      "ฤดูร้อน",
-      "โรแมนติก",
-      "ความทรงจำ"
+      "ชีวิตประจำวัน",
+      "ท่องเที่ยว",
+      "ผ่อนคลาย"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/1990/medium.jpg",
-    "coverFallback": "https://shikimori.io/system/animes/original/2236.jpg",
-    "anifumeUrl": "https://anifume.com/?s=The+Girl+Who+Leapt+Through+Time",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13569/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/13569/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Yuru%20Camp",
     "mood": "chill"
   },
   {
     "id": 334,
-    "name": "Little Witch Academia",
-    "nameTH": "โรงเรียนแม่มดน้อย",
+    "name": "Barakamon",
+    "nameTH": "เกาะมีฮา คนมีเฮ",
     "genre": [
-      "เวทมนตร์",
-      "แฟนตาซี",
-      "คอมเมดี้"
+      "คอมเมดี้",
+      "ชีวิตประจำวัน",
+      "อบอุ่นหัวใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/12204/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/12204/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Little%20Witch%20Academia",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8026/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/8026/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Barakamon",
     "mood": "happy"
   },
   {
@@ -4722,45 +4721,45 @@ const ANIMES = [
   },
   {
     "id": 337,
-    "name": "Spy x Family Code: White",
-    "nameTH": "สปาย × แฟมิลี โค้ด ไวท์",
+    "name": "A Place Further than the Universe",
+    "nameTH": "ดินแดนที่ห่างไกลยิ่งกว่าอวกาศ",
     "genre": [
-      "คอมเมดี้",
-      "แอ็กชัน",
-      "ครอบครัว"
+      "ผจญภัย",
+      "ดราม่า",
+      "มิตรภาพ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/46881/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/46881/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Spy%20x%20Family",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13615/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/13615/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=A%20Place%20Further%20than%20the%20Universe",
+    "mood": "epic"
   },
   {
     "id": 338,
+    "name": "Little Witch Academia",
+    "nameTH": "โรงเรียนแม่มดน้อย",
+    "genre": [
+      "เวทมนตร์",
+      "แฟนตาซี",
+      "คอมเมดี้"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/12204/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/12204/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Little%20Witch%20Academia",
+    "mood": "happy"
+  },
+  {
+    "id": 339,
     "name": "Doraemon: Stand by Me",
     "nameTH": "สแตนด์บายมี โดราเอมอน เพื่อนกันตลอดไป",
     "genre": [
       "แฟนตาซี",
-      "มิตรภาพ",
+      "ครอบครัว",
       "ซึ้งกินใจ"
     ],
     "coverUrl": "https://media.kitsu.app/anime/poster_images/8207/medium.jpg",
     "coverFallback": "https://media.kitsu.app/anime/poster_images/8207/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Doraemon%20Stand%20by%20Me",
+    "anifumeUrl": "https://anifume.com/?s=Doraemon%3A%20Stand%20by%20Me",
     "mood": "sad"
-  },
-  {
-    "id": 339,
-    "name": "Doraemon: Nobita's Sky Utopia",
-    "nameTH": "โดราเอมอน: ฟากฟ้าแห่งยูโทเปียของโนบิตะ",
-    "genre": [
-      "แฟนตาซี",
-      "ผจญภัย",
-      "มิตรภาพ"
-    ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/46214/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/46214/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Doraemon",
-    "mood": "happy"
   },
   {
     "id": 340,
@@ -4794,33 +4793,31 @@ const ANIMES = [
   },
   {
     "id": 342,
-    "name": "Monogatari Series",
-    "nameTH": "ปกรณัมของเหล่าภูต บาเกะโมโนกาตาริ",
+    "name": "Doraemon: Nobita's Sky Utopia",
+    "nameTH": "โดราเอมอน: ฟากฟ้าแห่งยูโทเปียของโนบิตะ",
     "genre": [
-      "การสนทนาเฉียบคม",
-      "ภูตผี",
-      "สไตล์เฉพาะตัว",
-      "โรแมนติก"
+      "แฟนตาซี",
+      "ผจญภัย",
+      "มิตรภาพ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/4255/medium.jpg",
-    "coverFallback": "https://shikimori.io/system/animes/original/5081.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Bakemonogatari",
-    "mood": "chill"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46214/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/46214/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Doraemon%3A%20Nobita's%20Sky%20Utopia",
+    "mood": "happy"
   },
   {
     "id": 343,
-    "name": "Kizumonogatari",
-    "nameTH": "คิสึโมโนกาตาริ ปกรณัมของตำหนิ",
+    "name": "Assassination Classroom",
+    "nameTH": "ห้องเรียนลอบสังหาร",
     "genre": [
-      "แวมไพร์",
-      "แอนิเมชันระดับพระกาฬ",
-      "ดาร์ก",
-      "แอคชั่น"
+      "แอ็กชัน",
+      "คอมเมดี้",
+      "โรงเรียน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6462/medium.jpg",
-    "coverFallback": "https://shikimori.io/system/animes/original/9693.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Kizumonogatari",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8640/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/8640/large.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Assassination%20Classroom",
+    "mood": "sad"
   },
   {
     "id": 344,
@@ -4854,17 +4851,17 @@ const ANIMES = [
   },
   {
     "id": 346,
-    "name": "Crayon Shin-chan: The Storm Called: The Battle of the Warring States",
-    "nameTH": "ชินจัง เดอะมูฟวี่: ชินจัง เดอะมูฟวี่ พายุพัดหวน ศึกชิงบัลลังก์เจ้าหญิง",
+    "name": "Ping Pong The Animation",
+    "nameTH": "ปิงปอง ดิ แอนิเมชั่น",
     "genre": [
-      "คอมเมดี้",
-      "ครอบครัว",
-      "ซึ้งกินใจ"
+      "กีฬา",
+      "ดราม่า",
+      "ศิลปะ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/3625/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/3625/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Shin-chan",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8240/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/8240/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Ping%20Pong%20The%20Animation",
+    "mood": "hype"
   },
   {
     "id": 347,
@@ -4898,17 +4895,17 @@ const ANIMES = [
   },
   {
     "id": 349,
-    "name": "Assassination Classroom Season 2",
-    "nameTH": "ห้องเรียนลอบสังหาร ซีซั่น 2",
+    "name": "Run with the Wind",
+    "nameTH": "ลมพัดผ่านเรา (Kaze ga Tsuyoku Fuiteiru)",
     "genre": [
-      "แอ็กชัน",
-      "คอมเมดี้",
-      "ชีวิตในโรงเรียน"
+      "กีฬา",
+      "วิ่งมาราธอน",
+      "ดราม่า"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/10903/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/10903/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Assassination%20Classroom",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41372/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/41372/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Run%20with%20the%20Wind",
+    "mood": "hype"
   },
   {
     "id": 350,
@@ -4941,17 +4938,17 @@ const ANIMES = [
   },
   {
     "id": 352,
-    "name": "Bungo Stray Dogs: Dead Apple",
-    "nameTH": "คณะประพันธกรจรจัด: เดด แอปเปิล",
+    "name": "Chihayafuru",
+    "nameTH": "จิฮายะฟุรุ",
     "genre": [
-      "พลังพิเศษ",
-      "สืบสวน",
-      "แอ็กชัน"
+      "กีฬา",
+      "ดราม่า",
+      "โรงเรียน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13364/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/13364/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Bungo%20Stray%20Dogs",
-    "mood": "epic"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6344/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/6344/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Chihayafuru",
+    "mood": "hype"
   },
   {
     "id": 353,
@@ -4969,17 +4966,17 @@ const ANIMES = [
   },
   {
     "id": 354,
-    "name": "Violet Evergarden: The Movie",
-    "nameTH": "ไวโอเล็ต เอเวอร์การ์เดน เดอะมูฟวี่",
+    "name": "Natsume's Book of Friends",
+    "nameTH": "นัตสึเมะกับบันทึกพิศวง",
     "genre": [
+      "ภูตผี",
       "ดราม่า",
-      "โรแมนติก",
-      "ซึ้งกินใจ"
+      "อบอุ่นหัวใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/41370/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/41370/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Violet%20Evergarden",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3436/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/3436/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Natsume's%20Book%20of%20Friends",
+    "mood": "chill"
   },
   {
     "id": 355,
@@ -5011,17 +5008,17 @@ const ANIMES = [
   },
   {
     "id": 357,
-    "name": "Princess Mononoke",
-    "nameTH": "เจ้าหญิงจิตวิญญาณแห่งพงไพร",
+    "name": "March Comes in Like a Lion",
+    "nameTH": "ตราบวันฟ้าใส (3-gatsu no Lion)",
     "genre": [
-      "แฟนตาซี",
-      "ผจญภัย",
-      "ยอดนิยม"
+      "ดราม่า",
+      "โชงิ",
+      "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/166/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/166/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Princess%20Mononoke",
-    "mood": "epic"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11615/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/11615/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=March%20Comes%20in%20Like%20a%20Lion",
+    "mood": "sad"
   },
   {
     "id": 358,
@@ -5039,17 +5036,17 @@ const ANIMES = [
   },
   {
     "id": 359,
-    "name": "Howl's Moving Castle",
-    "nameTH": "ปราสาทเวทมนตร์ของฮาวล์",
+    "name": "Campfire Cooking in Another World",
+    "nameTH": "สกิลสุดพิสดารกับมื้ออาหารในต่างโลก",
     "genre": [
-      "แฟนตาซี",
-      "โรแมนติก",
-      "ยอดนิยม"
+      "ต่างโลก",
+      "ทำอาหาร",
+      "คอมเมดี้"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/224/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/224/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Howl%27s%20Moving%20Castle",
-    "mood": "love"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46487/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/46487/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Campfire%20Cooking%20in%20Another%20World",
+    "mood": "happy"
   },
   {
     "id": 360,
@@ -5067,17 +5064,17 @@ const ANIMES = [
   },
   {
     "id": 361,
-    "name": "My Neighbor Totoro",
-    "nameTH": "โทโทโร่เพื่อนรัก",
+    "name": "Vivy: Fluorite Eye's Song",
+    "nameTH": "วิวี่ บทเพลงแห่งฟลูออไรท์",
     "genre": [
-      "แฟนตาซี",
-      "ชีวิตประจำวัน",
-      "อบอุ่นหัวใจ"
+      "ไซไฟ",
+      "ดนตรี",
+      "แอ็กชัน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/544/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/544/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=My%20Neighbor%20Totoro",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/44030/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/44030/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Vivy%3A%20Fluorite%20Eye's%20Song",
+    "mood": "epic"
   },
   {
     "id": 362,
@@ -5123,59 +5120,59 @@ const ANIMES = [
   },
   {
     "id": 365,
-    "name": "Kiki's Delivery Service",
-    "nameTH": "แม่มดน้อยกิกิ",
+    "name": "Cyberpunk: Edgerunners",
+    "nameTH": "ไซเบอร์พังก์: เอ็ดจ์รันเนอร์ส",
     "genre": [
-      "แฟนตาซี",
-      "ชีวิตประจำวัน",
-      "อบอุ่นหัวใจ"
+      "ไซไฟ",
+      "แอ็กชัน",
+      "ดิสโทเปีย"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/547/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/547/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Kiki%27s%20Delivery%20Service",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/43248/poster_image/medium-b6579dda46b596b2d2c3fa6d4618dc69.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/43248/poster_image/medium-b6579dda46b596b2d2c3fa6d4618dc69.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Cyberpunk%3A%20Edgerunners",
+    "mood": "epic"
   },
   {
     "id": 366,
-    "name": "Ponyo",
-    "nameTH": "โปเนียว ธิดาสมุทรผจญภัย",
+    "name": "Spirited Away",
+    "nameTH": "มิติวิญญาณมหัศจรรย์",
     "genre": [
       "แฟนตาซี",
       "ผจญภัย",
-      "อบอุ่นหัวใจ"
+      "ครอบครัว"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/2464/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/2464/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Ponyo",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/176/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/176/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Spirited%20Away",
+    "mood": "chill"
   },
   {
     "id": 367,
-    "name": "Bakemonogatari",
-    "nameTH": "บาเคโมโนกาตาริ",
+    "name": "Princess Mononoke",
+    "nameTH": "เจ้าหญิงจิตวิญญาณแห่งพงไพร",
     "genre": [
       "แฟนตาซี",
-      "โรแมนติก",
-      "ลึกลับ"
+      "ผจญภัย",
+      "ธรรมชาติ"
     ],
-    "coverUrl": "https://cdn.myanimelist.net/images/anime/11/75274l.jpg",
-    "coverFallback": "https://shikimori.io/system/animes/original/5081.jpg?1711956945",
-    "anifumeUrl": "https://anifume.com/?s=Bakemonogatari",
-    "mood": "love"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/166/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/166/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Princess%20Mononoke",
+    "mood": "epic"
   },
   {
     "id": 368,
-    "name": "Castle in the Sky",
-    "nameTH": "ลาพิวต้า พลิกตำนานเหนือเวหา",
+    "name": "Howl's Moving Castle",
+    "nameTH": "ปราสาทเวทมนตร์ของฮาวล์",
     "genre": [
-      "ผจญภัย",
       "แฟนตาซี",
-      "ไซไฟ"
+      "โรแมนติก",
+      "ผจญภัย"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/541/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/541/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Castle%20in%20the%20Sky",
-    "mood": "epic"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/224/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/224/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Howl's%20Moving%20Castle",
+    "mood": "love"
   },
   {
     "id": 369,
@@ -5277,31 +5274,31 @@ const ANIMES = [
   },
   {
     "id": 376,
-    "name": "DanMachi (Is It Wrong to Try to Pick Up Girls in a Dungeon?)",
-    "nameTH": "มันผิดรึไงถ้าใจอยากจะพบรักในดันเจี้ยน",
+    "name": "My Neighbor Totoro",
+    "nameTH": "โทโทโร่เพื่อนรัก",
     "genre": [
       "แฟนตาซี",
-      "ผจญภัย",
-      "แอคชั่น"
+      "ชีวิตประจำวัน",
+      "ครอบครัว"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/10016/medium.jpg",
-    "coverFallback": "https://shikimori.one/system/animes/original/28121.jpg",
-    "anifumeUrl": "https://anifume.com/?s=DanMachi%20(Is%20It%20Wrong%20to%20Try%20to%20Pick%20Up%20Girls%20in%20a%20Dungeon%3F)",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/544/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/544/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=My%20Neighbor%20Totoro",
+    "mood": "happy"
   },
   {
     "id": 377,
-    "name": "Vivy: Fluorite Eye's Song",
-    "nameTH": "วีวี่ บทเพลงแห่งดวงดาว",
+    "name": "Kiki's Delivery Service",
+    "nameTH": "แม่มดน้อยกิกิ",
     "genre": [
-      "ไซไฟ",
-      "ดนตรี",
-      "แอคชั่น"
+      "แฟนตาซี",
+      "ชีวิตประจำวัน",
+      "อบอุ่น"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/43974/medium.jpg",
-    "coverFallback": "https://shikimori.one/system/animes/original/46095.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Vivy%3A%20Fluorite%20Eye's%20Song",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/547/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/547/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kiki's%20Delivery%20Service",
+    "mood": "happy"
   },
   {
     "id": 378,
@@ -5431,26 +5428,40 @@ const ANIMES = [
   },
   {
     "id": 387,
-    "name": "Monogatari Series: Off & Monster Season",
-    "nameTH": "โมโนกาตาริ ซีรีส์ ออฟ & มอนสเตอร์ ซีซัน",
+    "name": "Ponyo",
+    "nameTH": "โปเนียว ธิดาสมุทรผจญภัย",
     "genre": [
-      "เหนือธรรมชาติ",
-      "ลึกลับ",
-      "คอมเมดี้"
+      "แฟนตาซี",
+      "ผจญภัย",
+      "เด็ก"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/48316/medium.jpg",
-    "coverFallback": "https://shikimori.one/system/animes/original/57706.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Monogatari%20Series%3A%20Off%20%26%20Monster%20Season",
-    "mood": "chill"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/2464/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/2464/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Ponyo",
+    "mood": "happy"
   },
   {
     "id": 388,
+    "name": "Castle in the Sky",
+    "nameTH": "ลาพิวต้า พลิกตำนานเหนือเวหา",
+    "genre": [
+      "ผจญภัย",
+      "แฟนตาซี",
+      "ไซไฟ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/541/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/541/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Castle%20in%20the%20Sky",
+    "mood": "epic"
+  },
+  {
+    "id": 389,
     "name": "Whisper of the Heart",
     "nameTH": "วันนั้น...วันไหน หัวใจจะเป็นสีชมพู",
     "genre": [
       "โรแมนติก",
       "ดราม่า",
-      "ชีวิตในโรงเรียน"
+      "ดนตรี"
     ],
     "coverUrl": "https://media.kitsu.app/anime/poster_images/548/medium.jpg",
     "coverFallback": "https://media.kitsu.app/anime/poster_images/548/medium.jpg",
@@ -5458,31 +5469,17 @@ const ANIMES = [
     "mood": "love"
   },
   {
-    "id": 389,
+    "id": 390,
     "name": "The Tale of the Princess Kaguya",
     "nameTH": "เจ้าหญิงกระบอกไม้ไผ่",
     "genre": [
       "แฟนตาซี",
       "ดราม่า",
-      "ซึ้งกินใจ"
+      "ประวัติศาสตร์"
     ],
     "coverUrl": "https://media.kitsu.app/anime/poster_images/5406/medium.jpg",
     "coverFallback": "https://media.kitsu.app/anime/poster_images/5406/medium.jpg",
     "anifumeUrl": "https://anifume.com/?s=The%20Tale%20of%20the%20Princess%20Kaguya",
-    "mood": "sad"
-  },
-  {
-    "id": 390,
-    "name": "The Wind Rises",
-    "nameTH": "ปีกแห่งฝัน วันแห่งรัก",
-    "genre": [
-      "ดราม่า",
-      "โรแมนติก",
-      "ประวัติศาสตร์"
-    ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7196/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/7196/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=The%20Wind%20Rises",
     "mood": "sad"
   },
   {
@@ -5501,6 +5498,20 @@ const ANIMES = [
   },
   {
     "id": 392,
+    "name": "The Wind Rises",
+    "nameTH": "ปีกแห่งฝัน วันแห่งรัก",
+    "genre": [
+      "ดราม่า",
+      "โรแมนติก",
+      "ประวัติศาสตร์"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7196/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7196/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20Wind%20Rises",
+    "mood": "sad"
+  },
+  {
+    "id": 393,
     "name": "The Cat Returns",
     "nameTH": "เจ้าแมวยอดนักสืบ",
     "genre": [
@@ -5514,157 +5525,143 @@ const ANIMES = [
     "mood": "chill"
   },
   {
-    "id": 393,
-    "name": "Detective Conan",
-    "nameTH": "ยอดนักสืบจิ๋วโคนัน",
-    "genre": [
-      "สืบสวน",
-      "ลึกลับ",
-      "ยอดนิยม"
-    ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/210/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/210/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Detective%20Conan",
-    "mood": "hype"
-  },
-  {
     "id": 394,
-    "name": "Detective Conan: The Million-dollar Pentagram",
-    "nameTH": "ยอดนักสืบจิ๋วโคนัน: ปริศนาปราการ 1 ล้านดอลลาร์",
+    "name": "The Boy and the Heron",
+    "nameTH": "เด็กชายกับนกกระสา",
     "genre": [
-      "สืบสวน",
-      "แอ็กชัน",
-      "ยอดนิยม"
-    ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/47952/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/47952/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Detective%20Conan",
-    "mood": "hype"
-  },
-  {
-    "id": 395,
-    "name": "Detective Conan: Black Iron Submarine",
-    "nameTH": "ยอดนักสืบจิ๋วโคนัน: มฤตยูใต้น้ำทมิฬ",
-    "genre": [
-      "สืบสวน",
-      "แอ็กชัน",
-      "ระทึกขวัญ"
-    ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/46864/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/46864/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Detective%20Conan",
-    "mood": "epic"
-  },
-  {
-    "id": 396,
-    "name": "Slam Dunk",
-    "nameTH": "สแลมดังก์",
-    "genre": [
-      "กีฬา",
-      "โรงเรียน",
-      "คอมเมดี้"
-    ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/169/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/169/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Slam%20Dunk",
-    "mood": "hype"
-  },
-  {
-    "id": 397,
-    "name": "The First Slam Dunk",
-    "nameTH": "เดอะ เฟิสต์ สแลมดังก์",
-    "genre": [
-      "กีฬา",
+      "แฟนตาซี",
       "ดราม่า",
-      "ยอดนิยม"
-    ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/44053/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/44053/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=The%20First%20Slam%20Dunk",
-    "mood": "hype"
-  },
-  {
-    "id": 398,
-    "name": "Haikyuu!! The Dumpster Battle",
-    "nameTH": "ไฮคิว!! ศึกที่กองขยะ",
-    "genre": [
-      "กีฬา",
-      "โรงเรียน",
-      "ยอดนิยม"
+      "ผจญภัย"
     ],
     "coverUrl": "https://media.kitsu.app/anime/poster_images/46270/medium.jpg",
     "coverFallback": "https://media.kitsu.app/anime/poster_images/46270/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Haikyuu",
-    "mood": "hype"
+    "anifumeUrl": "https://anifume.com/?s=The%20Boy%20and%20the%20Heron",
+    "mood": "epic"
+  },
+  {
+    "id": 395,
+    "name": "Your Name",
+    "nameTH": "หลับตาฝัน ถึงชื่อเธอ",
+    "genre": [
+      "โรแมนติก",
+      "ดราม่า",
+      "เหนือธรรมชาติ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11614/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/11614/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Your%20Name",
+    "mood": "love"
+  },
+  {
+    "id": 396,
+    "name": "Weathering With You",
+    "nameTH": "ฤดูฝัน ฉันมีเธอ",
+    "genre": [
+      "โรแมนติก",
+      "แฟนตาซี",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/42028/poster_image/medium-7c29b40139396c7d225977be4e5987be.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/42028/poster_image/medium-7c29b40139396c7d225977be4e5987be.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Weathering%20With%20You",
+    "mood": "sad"
+  },
+  {
+    "id": 397,
+    "name": "Suzume",
+    "nameTH": "การผนึกประตูของซูซูเมะ",
+    "genre": [
+      "แฟนตาซี",
+      "ผจญภัย",
+      "ดราม่า"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/45597/poster_image/medium-63432be1d191a4ce68e599e02336a62b.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/45597/poster_image/medium-63432be1d191a4ce68e599e02336a62b.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Suzume",
+    "mood": "epic"
+  },
+  {
+    "id": 398,
+    "name": "5 Centimeters per Second",
+    "nameTH": "ยามซากุระร่วงโรย (5 cm/s)",
+    "genre": [
+      "โรแมนติก",
+      "ดราม่า",
+      "ซึ้งกินใจ"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1517/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/1517/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=5%20Centimeters%20per%20Second",
+    "mood": "sad"
   },
   {
     "id": 399,
-    "name": "Gintama: The Final",
-    "nameTH": "กินทามะ เดอะ ไฟนอล",
+    "name": "The Garden of Words",
+    "nameTH": "ยามสายฝนโปรยปราย",
     "genre": [
-      "คอมเมดี้",
-      "แอ็กชัน",
-      "ซามูไร"
+      "โรแมนติก",
+      "ดราม่า",
+      "ฝน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/42514/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/42514/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Gintama",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7515/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7515/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20Garden%20of%20Words",
+    "mood": "chill"
   },
   {
     "id": 400,
-    "name": "Mob Psycho 100 III",
-    "nameTH": "ม็อบไซโค 100 คนพลังจิต ซีซั่น 3",
+    "name": "A Silent Voice",
+    "nameTH": "รักไร้เสียง (Koe no Katachi)",
     "genre": [
-      "แอ็กชัน",
-      "คอมเมดี้",
-      "เหนือธรรมชาติ"
+      "ดราม่า",
+      "โรงเรียน",
+      "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/45214/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/45214/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Mob%20Psycho%20100",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/10028/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/10028/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=A%20Silent%20Voice",
+    "mood": "sad"
   },
   {
     "id": 401,
-    "name": "Dr. Stone: New World",
-    "nameTH": "ดร.สโตน: โลกใบใหม่ ซีซั่น 3",
+    "name": "I Want to Eat Your Pancreas",
+    "nameTH": "ตับอ่อนเธอนั้น ขอฉันเถอะนะ",
     "genre": [
-      "ไซไฟ",
-      "ผจญภัย",
-      "วิทยาศาสตร์"
+      "ดราม่า",
+      "โรแมนติก",
+      "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/45610/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/45610/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Dr.%20Stone",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13723/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/13723/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=I%20Want%20to%20Eat%20Your%20Pancreas",
+    "mood": "sad"
   },
   {
     "id": 402,
-    "name": "Delicious in Dungeon",
-    "nameTH": "สูตรลับดันเจี้ยน (Dungeon Meshi)",
+    "name": "Josee, the Tiger and the Fish",
+    "nameTH": "โจเซ่ กับเสือและหมู่ปลา",
     "genre": [
-      "แฟนตาซี",
-      "ทำอาหาร",
-      "ผจญภัย"
+      "โรแมนติก",
+      "ดราม่า",
+      "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/46367/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/46367/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Dungeon%20Meshi",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42828/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/42828/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Josee%2C%20the%20Tiger%20and%20the%20Fish",
+    "mood": "love"
   },
   {
     "id": 403,
-    "name": "Wolf Children",
-    "nameTH": "คู่จี๊ดชีวิตอัศจรรย์",
+    "name": "Belle",
+    "nameTH": "เบล เจ้าหญิงแห่งเสียงเพลง",
     "genre": [
-      "แฟนตาซี",
-      "ดราม่า",
-      "ครอบครัว"
+      "ดนตรี",
+      "ไซไฟ",
+      "ดราม่า"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6744/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/6744/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Wolf%20Children",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/43977/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/43977/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Belle",
     "mood": "sad"
   },
   {
@@ -5779,17 +5776,17 @@ const ANIMES = [
   },
   {
     "id": 412,
-    "name": "The Boy and the Beast",
-    "nameTH": "ศิษย์มหัศจรรย์กับอาจารย์พันธุ์อสูร",
+    "name": "Summer Wars",
+    "nameTH": "สงครามฤดูร้อน",
     "genre": [
-      "ผจญภัย",
-      "แฟนตาซี",
-      "เหนือธรรมชาติ"
+      "ไซไฟ",
+      "คอมเมดี้",
+      "ครอบครัว"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/9924/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/9924/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=The%20Boy%20and%20the%20Beast",
-    "mood": "epic"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3956/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/3956/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Summer%20Wars",
+    "mood": "hype"
   },
   {
     "id": 413,
@@ -5832,16 +5829,17 @@ const ANIMES = [
   },
   {
     "id": 416,
-    "name": "Date A Live",
-    "nameTH": "Date A Live",
+    "name": "The Boy and the Beast",
+    "nameTH": "ศิษย์มหัศจรรย์กับอาจารย์พันธุ์อสูร",
     "genre": [
-      "อนิเมะ",
-      "ยอดนิยม"
+      "ผจญภัย",
+      "แฟนตาซี",
+      "มิตรภาพ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7278/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/7278/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Date%20A%20Live",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/9924/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/9924/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20Boy%20and%20the%20Beast",
+    "mood": "epic"
   },
   {
     "id": 417,
@@ -5859,29 +5857,31 @@ const ANIMES = [
   },
   {
     "id": 418,
-    "name": "Nisemonogatari",
-    "nameTH": "Nisemonogatari",
+    "name": "Wolf Children",
+    "nameTH": "คู่จี๊ดชีวิตอัศจรรย์",
     "genre": [
-      "อนิเมะ",
-      "ยอดนิยม"
+      "ครอบครัว",
+      "แฟนตาซี",
+      "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6546/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/6546/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Nisemonogatari",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6744/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/6744/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Wolf%20Children",
+    "mood": "sad"
   },
   {
     "id": 419,
-    "name": "Barakamon",
-    "nameTH": "Barakamon",
+    "name": "The Girl Who Leapt Through Time",
+    "nameTH": "กระโดดจั๊มพ์ทะลุข้ามเวลา",
     "genre": [
-      "อนิเมะ",
-      "ยอดนิยม"
+      "ไซไฟ",
+      "ดราม่า",
+      "โรงเรียน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8026/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/8026/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Barakamon",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1454/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/1454/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20Girl%20Who%20Leapt%20Through%20Time",
+    "mood": "love"
   },
   {
     "id": 420,
@@ -5927,17 +5927,17 @@ const ANIMES = [
   },
   {
     "id": 423,
-    "name": "Summer Wars",
-    "nameTH": "สงครามฤดูร้อน",
+    "name": "Words Bubble Up Like Soda Pop",
+    "nameTH": "ถ้อยคำเอ่อล้นด้วยหัวใจรัก",
     "genre": [
-      "ไซไฟ",
-      "คอมเมดี้",
-      "ครอบครัว"
+      "โรแมนติก",
+      "ดนตรี",
+      "ชีวิตในโรงเรียน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/3956/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/3956/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Summer%20Wars",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42555/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/42555/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Words%20Bubble%20Up%20Like%20Soda%20Pop",
+    "mood": "love"
   },
   {
     "id": 424,
@@ -5981,16 +5981,17 @@ const ANIMES = [
   },
   {
     "id": 427,
-    "name": "Date A Live II",
-    "nameTH": "Date A Live II",
+    "name": "Hotarubi no Mori e",
+    "nameTH": "สู่ป่าแห่งแสงหิ่งห้อย",
     "genre": [
-      "อนิเมะ",
-      "ชีวิตในโรงเรียน"
+      "แฟนตาซี",
+      "โรแมนติก",
+      "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7864/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/7864/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Date%20A%20Live%20II",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6169/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/6169/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Hotarubi%20no%20Mori%20e",
+    "mood": "sad"
   },
   {
     "id": 428,
@@ -6062,17 +6063,17 @@ const ANIMES = [
   },
   {
     "id": 433,
-    "name": "Oreshura",
-    "nameTH": "Oreshura",
+    "name": "Violet Evergarden",
+    "nameTH": "ไวโอเล็ต เอเวอร์การ์เดน",
     "genre": [
-      "อนิเมะ",
-      "แอ็กชัน",
-      "โรแมนติก"
+      "ดราม่า",
+      "แฟนตาซี",
+      "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7162/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/7162/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Oreshura",
-    "mood": "epic"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/12230/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/12230/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Violet%20Evergarden",
+    "mood": "sad"
   },
   {
     "id": 434,
@@ -6090,30 +6091,31 @@ const ANIMES = [
   },
   {
     "id": 435,
-    "name": "Josee, the Tiger and the Fish",
-    "nameTH": "โจเซ่ กับเสือและหมู่ปลา",
+    "name": "Violet Evergarden: The Movie",
+    "nameTH": "ไวโอเล็ต เอเวอร์การ์เดน เดอะมูฟวี่",
     "genre": [
-      "โรแมนติก",
       "ดราม่า",
+      "โรแมนติก",
       "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/42828/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/42828/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Josee%20the%20Tiger%20and%20the%20Fish",
-    "mood": "love"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41370/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/41370/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Violet%20Evergarden%3A%20The%20Movie",
+    "mood": "sad"
   },
   {
     "id": 436,
-    "name": "Owarimonogatari",
-    "nameTH": "Owarimonogatari",
+    "name": "Haikyuu!!",
+    "nameTH": "ไฮคิว!! คู่ตบฟ้าประทาน",
     "genre": [
-      "อนิเมะ",
-      "ชีวิตในโรงเรียน"
+      "กีฬา",
+      "โรงเรียน",
+      "มิตรภาพ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/11182/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/11182/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Owarimonogatari",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8133/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/8133/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Haikyuu!!",
+    "mood": "hype"
   },
   {
     "id": 437,
@@ -6144,17 +6146,17 @@ const ANIMES = [
   },
   {
     "id": 439,
-    "name": "Mayo Chiki!",
-    "nameTH": "Mayo Chiki!",
+    "name": "Haikyuu!! The Dumpster Battle",
+    "nameTH": "ไฮคิว!! ศึกที่กองขยะ",
     "genre": [
-      "อนิเมะ",
-      "โรแมนติก",
-      "ชีวิตในโรงเรียน"
+      "กีฬา",
+      "โรงเรียน",
+      "ไฮป์"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6039/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/6039/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Mayo%20Chiki!",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46270/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/46270/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Haikyuu!!%20The%20Dumpster%20Battle",
+    "mood": "hype"
   },
   {
     "id": 440,
@@ -6212,17 +6214,17 @@ const ANIMES = [
   },
   {
     "id": 444,
-    "name": "A Place Further Than the Universe",
-    "nameTH": "A Place Further Than the Universe",
+    "name": "Slam Dunk",
+    "nameTH": "สแลมดังก์",
     "genre": [
-      "อนิเมะ",
-      "ยอดนิยม",
-      "แฟนตาซี"
+      "กีฬา",
+      "โรงเรียน",
+      "คลาสสิก"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13615/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/13615/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=A%20Place%20Further%20Than%20the%20Universe",
-    "mood": "chill"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/169/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/169/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Slam%20Dunk",
+    "mood": "hype"
   },
   {
     "id": 445,
@@ -6239,17 +6241,17 @@ const ANIMES = [
   },
   {
     "id": 446,
-    "name": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka II",
-    "nameTH": "Is It Wrong to Try to Pick Up Girls in a Dungeon? II",
+    "name": "The First Slam Dunk",
+    "nameTH": "เดอะ เฟิสต์ สแลมดังก์",
     "genre": [
-      "อนิเมะ",
-      "ยอดนิยม",
-      "แฟนตาซี"
+      "กีฬา",
+      "ดราม่า",
+      "ระดับโลก"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/40599/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/40599/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Dungeon%20ni%20Deai%20wo%20Motomeru%20no%20wa%20Machigatteiru%20Darou%20ka%20II",
-    "mood": "chill"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/44053/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/44053/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20First%20Slam%20Dunk",
+    "mood": "hype"
   },
   {
     "id": 447,
@@ -6335,17 +6337,17 @@ const ANIMES = [
   },
   {
     "id": 453,
-    "name": "Belle",
-    "nameTH": "เบล เจ้าหญิงแห่งเสียงเพลง",
+    "name": "Kuroko's Basketball",
+    "nameTH": "คุโรโกะ โนะ บาสเก็ต",
     "genre": [
-      "ดนตรี",
-      "ไซไฟ",
-      "ดราม่า"
+      "กีฬา",
+      "โรงเรียน",
+      "พลังพิเศษ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/43977/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/43977/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Belle",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7645/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7645/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kuroko's%20Basketball",
+    "mood": "hype"
   },
   {
     "id": 454,
@@ -6391,17 +6393,17 @@ const ANIMES = [
   },
   {
     "id": 457,
-    "name": "Words Bubble Up Like Soda Pop",
-    "nameTH": "ถ้อยคำเอ่อล้นด้วยหัวใจรัก",
+    "name": "Detective Conan",
+    "nameTH": "ยอดนักสืบจิ๋วโคนัน",
     "genre": [
-      "โรแมนติก",
-      "ดนตรี",
-      "ชีวิตในโรงเรียน"
+      "สืบสวน",
+      "ลึกลับ",
+      "ยอดนิยม"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/42555/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/42555/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Words%20Bubble%20Up",
-    "mood": "love"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/210/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/210/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Detective%20Conan",
+    "mood": "hype"
   },
   {
     "id": 458,
@@ -6418,45 +6420,45 @@ const ANIMES = [
   },
   {
     "id": 459,
-    "name": "Kizumonogatari II: Nekketsu-hen",
-    "nameTH": "Kizumonogatari Part 2: Nekketsu",
+    "name": "Detective Conan: The Million-dollar Pentagram",
+    "nameTH": "ยอดนักสืบจิ๋วโคนัน: ปริศนาปราการ 1 ล้านดอลลาร์",
     "genre": [
-      "อนิเมะ",
+      "สืบสวน",
       "แอ็กชัน",
-      "ดราม่า"
+      "ยอดนิยม"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/11406/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/11406/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Kizumonogatari%20II%3A%20Nekketsu-hen",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/47952/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/47952/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Detective%20Conan%3A%20The%20Million-dollar%20Pentagram",
+    "mood": "hype"
   },
   {
     "id": 460,
-    "name": "Mahou Shoujo Madoka★Magica Movie 3: Hangyaku no Monogatari",
-    "nameTH": "Puella Magi Madoka Magica the Movie: Rebellion",
+    "name": "Detective Conan: Black Iron Submarine",
+    "nameTH": "ยอดนักสืบจิ๋วโคนัน: มฤตยูใต้น้ำทมิฬ",
     "genre": [
-      "อนิเมะ",
+      "สืบสวน",
       "แอ็กชัน",
-      "โรแมนติก"
+      "ระทึกขวัญ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6638/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/6638/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Mahou%20Shoujo%20Madoka%E2%98%85Magica%20Movie%203%3A%20Hangyaku%20no%20Monogatari",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46864/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/46864/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Detective%20Conan%3A%20Black%20Iron%20Submarine",
     "mood": "epic"
   },
   {
     "id": 461,
-    "name": "K-On!!",
-    "nameTH": "เค-อง! ก๊วนดนตรีแป๋วแหวว ซีซั่น 2",
+    "name": "Gintama",
+    "nameTH": "กินทามะ",
     "genre": [
-      "ดนตรี",
       "คอมเมดี้",
-      "ชีวิตประจำวัน"
+      "แอ็กชัน",
+      "ซามูไร"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/5070/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/5070/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=K-On",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/203/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/203/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Gintama",
+    "mood": "hype"
   },
   {
     "id": 462,
@@ -6571,16 +6573,17 @@ const ANIMES = [
   },
   {
     "id": 470,
-    "name": "Zero no Tsukaima: Futatsuki no Kishi",
-    "nameTH": "The Familiar of Zero: Knight of the Twin Moons",
+    "name": "Gintama: The Final",
+    "nameTH": "กินทามะ เดอะ ไฟนอล",
     "genre": [
-      "อนิเมะ",
-      "แฟนตาซี"
+      "แอ็กชัน",
+      "คอมเมดี้",
+      "ซามูไร"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/1657/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/1657/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Zero%20no%20Tsukaima%3A%20Futatsuki%20no%20Kishi",
-    "mood": "cute"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42514/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/42514/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Gintama%3A%20The%20Final",
+    "mood": "epic"
   },
   {
     "id": 471,
@@ -6611,31 +6614,31 @@ const ANIMES = [
   },
   {
     "id": 473,
-    "name": "Sound! Euphonium",
-    "nameTH": "ฮิบิเคะ! ยูโฟเนียม",
+    "name": "Mob Psycho 100",
+    "nameTH": "ม็อบไซโค 100 คนพลังจิต",
     "genre": [
-      "ดนตรี",
-      "ดราม่า",
-      "ชีวิตในโรงเรียน"
+      "แอ็กชัน",
+      "คอมเมดี้",
+      "เหนือธรรมชาติ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8965/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/8965/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Sound%20Euphonium",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11819/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/11819/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Mob%20Psycho%20100",
+    "mood": "hype"
   },
   {
     "id": 474,
-    "name": "Hanamonogatari",
-    "nameTH": "Hanamonogatari",
+    "name": "Mob Psycho 100 III",
+    "nameTH": "ม็อบไซโค 100 คนพลังจิต ซีซั่น 3",
     "genre": [
-      "อนิเมะ",
-      "แฟนตาซี",
-      "ชีวิตในโรงเรียน"
+      "แอ็กชัน",
+      "คอมเมดี้",
+      "เหนือธรรมชาติ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8032/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/8032/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Hanamonogatari",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/45214/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/45214/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Mob%20Psycho%20100%20III",
+    "mood": "hype"
   },
   {
     "id": 475,
@@ -6680,17 +6683,17 @@ const ANIMES = [
   },
   {
     "id": 478,
-    "name": "Tamako Market",
-    "nameTH": "Tamako Market",
+    "name": "Dr. Stone",
+    "nameTH": "ดร.สโตน",
     "genre": [
-      "อนิเมะ",
-      "ยอดนิยม",
-      "แฟนตาซี"
+      "ไซไฟ",
+      "ผจญภัย",
+      "วิทยาศาสตร์"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7425/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/7425/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Tamako%20Market",
-    "mood": "chill"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41819/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/41819/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Dr.%20Stone",
+    "mood": "hype"
   },
   {
     "id": 479,
@@ -6776,17 +6779,17 @@ const ANIMES = [
   },
   {
     "id": 485,
-    "name": "Hyouka",
-    "nameTH": "ปริศนาความทรงจำ (เฮียวกะ)",
+    "name": "Dr. Stone: New World",
+    "nameTH": "ดร.สโตน: โลกใบใหม่ ซีซั่น 3",
     "genre": [
-      "สืบสวน",
-      "ลึกลับ",
-      "ชีวิตในโรงเรียน"
+      "ไซไฟ",
+      "ผจญภัย",
+      "วิทยาศาสตร์"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6734/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/6734/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Hyouka",
-    "mood": "chill"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/45610/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/45610/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Dr.%20Stone%3A%20New%20World",
+    "mood": "hype"
   },
   {
     "id": 486,
@@ -6978,17 +6981,17 @@ const ANIMES = [
   },
   {
     "id": 500,
-    "name": "Owarimonogatari 2nd Season",
-    "nameTH": "Owarimonogatari Second Season",
+    "name": "Spy x Family",
+    "nameTH": "สปาย × แฟมิลี",
     "genre": [
-      "อนิเมะ",
-      "ยอดนิยม",
-      "แฟนตาซี"
+      "คอมเมดี้",
+      "ครอบครัว",
+      "สายลับ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13268/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/13268/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Owarimonogatari%202nd%20Season",
-    "mood": "chill"
+    "coverUrl": "https://media.kitsu.app/anime/45398/poster_image/medium-f2f30d957a12e8269655c6036b460c90.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/45398/poster_image/medium-f2f30d957a12e8269655c6036b460c90.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Spy%20x%20Family",
+    "mood": "happy"
   },
   {
     "id": 501,
@@ -7266,17 +7269,17 @@ const ANIMES = [
   },
   {
     "id": 521,
-    "name": "Tsukimonogatari",
-    "nameTH": "Tsukimonogatari",
+    "name": "Spy x Family Code: White",
+    "nameTH": "สปาย × แฟมิลี โค้ด ไวท์",
     "genre": [
-      "อนิเมะ",
-      "ยอดนิยม",
-      "แฟนตาซี"
+      "คอมเมดี้",
+      "แอ็กชัน",
+      "ครอบครัว"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/9961/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/9961/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Tsukimonogatari",
-    "mood": "chill"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46881/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/46881/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Spy%20x%20Family%20Code%3A%20White",
+    "mood": "happy"
   },
   {
     "id": 522,
@@ -7472,16 +7475,16 @@ const ANIMES = [
   },
   {
     "id": 536,
-    "name": "Domestic na Kanojo",
-    "nameTH": "Domestic Girlfriend",
+    "name": "Frieren: Beyond Journey's End",
+    "nameTH": "คำอธิษฐานในวันที่จากลา Frieren",
     "genre": [
-      "อนิเมะ",
-      "ยอดนิยม",
-      "แฟนตาซี"
+      "แฟนตาซี",
+      "การเดินทาง",
+      "อบอุ่น"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/41479/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/41479/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Domestic%20na%20Kanojo",
+    "coverUrl": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
+    "coverFallback": "https://anifume.com/images/20/Sousou-no-Frieren-2.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Frieren%3A%20Beyond%20Journey's%20End",
     "mood": "chill"
   },
   {
@@ -7528,31 +7531,31 @@ const ANIMES = [
   },
   {
     "id": 540,
-    "name": "Ping Pong The Animation",
-    "nameTH": "Ping Pong the Animation",
+    "name": "Delicious in Dungeon",
+    "nameTH": "สูตรลับดันเจี้ยน (Dungeon Meshi)",
     "genre": [
-      "อนิเมะ",
-      "แอ็กชัน",
-      "โรแมนติก"
+      "แฟนตาซี",
+      "ทำอาหาร",
+      "ผจญภัย"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8262/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/8262/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Ping%20Pong%20The%20Animation",
-    "mood": "epic"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46367/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/46367/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Delicious%20in%20Dungeon",
+    "mood": "happy"
   },
   {
     "id": 541,
-    "name": "Zero no Tsukaima: Princesses no Rondo",
-    "nameTH": "The Familiar of Zero: Rondo of Princesses",
+    "name": "Bocchi the Rock!",
+    "nameTH": "บ็อจจิ เดอะ ร็อก!",
     "genre": [
-      "อนิเมะ",
-      "แอ็กชัน",
-      "แฟนตาซี"
+      "ดนตรี",
+      "คอมเมดี้",
+      "ชีวิตประจำวัน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/3209/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/3209/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Zero%20no%20Tsukaima%3A%20Princesses%20no%20Rondo",
-    "mood": "epic"
+    "coverUrl": "https://media.kitsu.app/anime/44196/poster_image/medium-a7b52a1e9cea5a04b29ee6878fbff923.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/44196/poster_image/medium-a7b52a1e9cea5a04b29ee6878fbff923.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Bocchi%20the%20Rock!",
+    "mood": "chill"
   },
   {
     "id": 542,
@@ -7666,17 +7669,17 @@ const ANIMES = [
   },
   {
     "id": 550,
-    "name": "Tamako Love Story",
-    "nameTH": "ทามาโกะ เลิฟ สตอรี่",
+    "name": "Mashle: Magic and Muscles",
+    "nameTH": "ศึกโลกเวทมนตร์คนพลังกล้าม",
     "genre": [
-      "โรแมนติก",
       "คอมเมดี้",
-      "ชีวิตประจำวัน"
+      "แอ็กชัน",
+      "เวทมนตร์"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8267/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/8267/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Tamako%20Love%20Story",
-    "mood": "love"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46210/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/46210/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Mashle%3A%20Magic%20and%20Muscles",
+    "mood": "hype"
   },
   {
     "id": 551,
@@ -7722,17 +7725,17 @@ const ANIMES = [
   },
   {
     "id": 554,
-    "name": "Nichijou",
-    "nameTH": "สามัญชนคนกวนโอ๊ย",
+    "name": "Wind Breaker",
+    "nameTH": "วินด์เบรกเกอร์ นักเรียนสายบู๊",
     "genre": [
-      "คอมเมดี้",
-      "ชีวิตในโรงเรียน",
-      "เฮฮา"
+      "แอ็กชัน",
+      "โรงเรียน",
+      "มิตรภาพ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/5938/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/5938/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Nichijou",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/47271/poster_image/medium-90a981a5a5570ba5fdb809a3152c8348.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/47271/poster_image/medium-90a981a5a5570ba5fdb809a3152c8348.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Wind%20Breaker",
+    "mood": "hype"
   },
   {
     "id": 555,
@@ -7749,16 +7752,17 @@ const ANIMES = [
   },
   {
     "id": 556,
-    "name": "Hagure Yuusha no Aesthetica",
-    "nameTH": "Aesthetica of a Rogue Hero",
+    "name": "Kaiju No. 8",
+    "nameTH": "ไคจูหมายเลข 8",
     "genre": [
-      "อนิเมะ",
-      "ชีวิตในโรงเรียน"
+      "แอ็กชัน",
+      "ไซไฟ",
+      "สัตว์ประหลาด"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6896/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/6896/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Hagure%20Yuusha%20no%20Aesthetica",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/46300/poster_image/medium-c1c025bbee42bed048e628b1eae278c0.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/46300/poster_image/medium-c1c025bbee42bed048e628b1eae278c0.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Kaiju%20No.%208",
+    "mood": "hype"
   },
   {
     "id": 557,
@@ -7775,16 +7779,17 @@ const ANIMES = [
   },
   {
     "id": 558,
-    "name": "Isekai wa Smartphone to Tomo ni.",
-    "nameTH": "In Another World With My Smartphone",
+    "name": "Blue Lock",
+    "nameTH": "ขังดวลแข้ง",
     "genre": [
-      "อนิเมะ",
-      "แฟนตาซี"
+      "กีฬา",
+      "ฟุตบอล",
+      "ไฮป์"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13457/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/13457/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Isekai%20wa%20Smartphone%20to%20Tomo%20ni.",
-    "mood": "happy"
+    "coverUrl": "https://anifume.com/images/45/Blue-Lock.jpg",
+    "coverFallback": "https://anifume.com/images/45/Blue-Lock.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Blue%20Lock",
+    "mood": "hype"
   },
   {
     "id": 559,
@@ -7801,17 +7806,17 @@ const ANIMES = [
   },
   {
     "id": 560,
-    "name": "Kore wa Zombie Desu ka? of the Dead",
-    "nameTH": "Is this A Zombie? of the Dead",
+    "name": "Demon Slayer: Kimetsu no Yaiba",
+    "nameTH": "ดาบพิฆาตอสูร",
     "genre": [
-      "อนิเมะ",
-      "โรแมนติก",
-      "ผจญภัย"
+      "แอ็กชัน",
+      "ดาร์กแฟนตาซี",
+      "ซามูไร"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6347/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/6347/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Kore%20wa%20Zombie%20Desu%20ka%3F%20of%20the%20Dead",
-    "mood": "happy"
+    "coverUrl": "https://anifume.com/images/53/Kimetsu-no-Yaiba-Hashira-Geiko-hen.jpg",
+    "coverFallback": "https://anifume.com/images/53/Kimetsu-no-Yaiba-Hashira-Geiko-hen.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Demon%20Slayer%3A%20Kimetsu%20no%20Yaiba",
+    "mood": "hype"
   },
   {
     "id": 561,
@@ -7828,17 +7833,17 @@ const ANIMES = [
   },
   {
     "id": 562,
-    "name": "Non Non Biyori",
-    "nameTH": "สาวใสหัวใจบ้านทุ่ง",
+    "name": "Jujutsu Kaisen",
+    "nameTH": "มหาเวทย์ผนึกมาร",
     "genre": [
-      "ชีวิตประจำวัน",
-      "ชนบท",
-      "อบอุ่นหัวใจ"
+      "แอ็กชัน",
+      "คุณไสย",
+      "ดาร์กแฟนตาซี"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7740/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/7740/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Non%20Non%20Biyori",
-    "mood": "chill"
+    "coverUrl": "https://anifume.com/images/19/Jujutsu-Kaisen-3.jpg",
+    "coverFallback": "https://anifume.com/images/19/Jujutsu-Kaisen-3.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Jujutsu%20Kaisen",
+    "mood": "hype"
   },
   {
     "id": 563,
@@ -7951,17 +7956,17 @@ const ANIMES = [
   },
   {
     "id": 571,
-    "name": "Yuru Camp Season 3",
-    "nameTH": "แคมป์สบายสไตล์สาว ม.ปลาย ซีซั่น 3",
+    "name": "Attack on Titan",
+    "nameTH": "ผ่าพิภพไททัน",
     "genre": [
-      "ชีวิตประจำวัน",
-      "ท่องเที่ยว",
-      "ผ่อนคลาย"
+      "แอ็กชัน",
+      "ดราม่า",
+      "มหากาพย์"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/46369/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/46369/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Yuru%20Camp",
-    "mood": "chill"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7442/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7442/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Attack%20on%20Titan",
+    "mood": "epic"
   },
   {
     "id": 572,
@@ -7991,17 +7996,17 @@ const ANIMES = [
   },
   {
     "id": 574,
-    "name": "Campfire Cooking in Another World",
-    "nameTH": "สกิลสุดพิสดารกับมื้ออาหารในต่างโลก",
+    "name": "Chainsaw Man",
+    "nameTH": "มนุษย์เลื่อยยนต์",
     "genre": [
-      "ต่างโลก",
-      "ทำอาหาร",
-      "คอมเมดี้"
+      "แอ็กชัน",
+      "เหนือธรรมชาติ",
+      "ดาร์ก"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/46487/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/46487/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Campfire%20Cooking",
-    "mood": "happy"
+    "coverUrl": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "coverFallback": "https://anifume.com/images/24/Chainsaw-Man-Movie-Reze-hen.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Chainsaw%20Man",
+    "mood": "hype"
   },
   {
     "id": 575,
@@ -8019,17 +8024,17 @@ const ANIMES = [
   },
   {
     "id": 576,
-    "name": "Outbreak Company",
-    "nameTH": "Outbreak Company",
+    "name": "One Piece",
+    "nameTH": "วันพีซ",
     "genre": [
-      "อนิเมะ",
+      "ผจญภัย",
       "แอ็กชัน",
-      "คอมเมดี้"
+      "มิตรภาพ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7837/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/7837/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Outbreak%20Company",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/12/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/12/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=One%20Piece",
+    "mood": "hype"
   },
   {
     "id": 577,
@@ -8088,17 +8093,17 @@ const ANIMES = [
   },
   {
     "id": 581,
-    "name": "Hidan no Aria",
-    "nameTH": "Aria the Scarlet Ammo",
+    "name": "Naruto Shippuden",
+    "nameTH": "นารูโตะ ตำนานวายุสลาตัน",
     "genre": [
-      "อนิเมะ",
-      "ยอดนิยม",
-      "แฟนตาซี"
+      "แอ็กชัน",
+      "นินจา",
+      "มิตรภาพ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/5407/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/5407/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Hidan%20no%20Aria",
-    "mood": "chill"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1555/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/1555/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Naruto%20Shippuden",
+    "mood": "hype"
   },
   {
     "id": 582,
@@ -8184,17 +8189,17 @@ const ANIMES = [
   },
   {
     "id": 588,
-    "name": "Death March kara Hajimaru Isekai Kyousoukyoku",
-    "nameTH": "Death March to the Parallel World Rhapsody",
+    "name": "Bleach",
+    "nameTH": "บลีช เทพมรณะ",
     "genre": [
-      "อนิเมะ",
-      "แฟนตาซี",
-      "ผจญภัย"
+      "แอ็กชัน",
+      "ยมทูต",
+      "พลังพิเศษ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13276/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/13276/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Death%20March%20kara%20Hajimaru%20Isekai%20Kyousoukyoku",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/244/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/244/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Bleach",
+    "mood": "hype"
   },
   {
     "id": 589,
@@ -8253,16 +8258,17 @@ const ANIMES = [
   },
   {
     "id": 593,
-    "name": "Hajimete no Gal",
-    "nameTH": "My First Girlfriend is a Gal",
+    "name": "Hunter x Hunter",
+    "nameTH": "ฮันเตอร์ x ฮันเตอร์",
     "genre": [
-      "อนิเมะ",
-      "โรแมนติก"
+      "ผจญภัย",
+      "แอ็กชัน",
+      "แฟนตาซี"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/12761/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/12761/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Hajimete%20no%20Gal",
-    "mood": "love"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6448/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/6448/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Hunter%20x%20Hunter",
+    "mood": "hype"
   },
   {
     "id": 594,
@@ -8415,16 +8421,17 @@ const ANIMES = [
   },
   {
     "id": 605,
-    "name": "Blood-C",
-    "nameTH": "BLOOD-C",
+    "name": "Fullmetal Alchemist: Brotherhood",
+    "nameTH": "แขนกลคนแปรธาตุ บราเธอร์ฮูด",
     "genre": [
-      "อนิเมะ",
-      "ชีวิตในโรงเรียน"
+      "แฟนตาซี",
+      "ผจญภัย",
+      "ดราม่า"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6203/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/6203/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Blood-C",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3936/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/3936/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Fullmetal%20Alchemist%3A%20Brotherhood",
+    "mood": "epic"
   },
   {
     "id": 606,
@@ -8455,16 +8462,17 @@ const ANIMES = [
   },
   {
     "id": 608,
-    "name": "Zero no Tsukaima F",
-    "nameTH": "The Familiar of Zero F",
+    "name": "Steins;Gate",
+    "nameTH": "สไตน์ส;เกท",
     "genre": [
-      "อนิเมะ",
-      "โรแมนติก"
+      "ไซไฟ",
+      "ข้ามเวลา",
+      "ระทึกขวัญ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6493/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/6493/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Zero%20no%20Tsukaima%20F",
-    "mood": "love"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/5646/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/5646/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Steins%3BGate",
+    "mood": "epic"
   },
   {
     "id": 609,
@@ -8618,16 +8626,16 @@ const ANIMES = [
   },
   {
     "id": 620,
-    "name": "IS: Infinite Stratos 2",
-    "nameTH": "Infinite Stratos 2",
+    "name": "Cowboy Bebop",
+    "nameTH": "คาวบอย บีบ๊อป",
     "genre": [
-      "อนิเมะ",
-      "ยอดนิยม",
-      "แฟนตาซี"
+      "ไซไฟ",
+      "แอ็กชัน",
+      "แจ๊ส"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7733/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/7733/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=IS%3A%20Infinite%20Stratos%202",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/1/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Cowboy%20Bebop",
     "mood": "chill"
   },
   {
@@ -8645,15 +8653,16 @@ const ANIMES = [
   },
   {
     "id": 622,
-    "name": "Campione!",
-    "nameTH": "Campione!",
+    "name": "Vinland Saga",
+    "nameTH": "วินแลนด์ ซาก้า",
     "genre": [
-      "อนิเมะ",
-      "แอ็กชัน"
+      "ประวัติศาสตร์",
+      "ไวกิ้ง",
+      "ดราม่า"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6702/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/6702/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Campione!",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41084/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/41084/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Vinland%20Saga",
     "mood": "epic"
   },
   {
@@ -8685,17 +8694,17 @@ const ANIMES = [
   },
   {
     "id": 625,
-    "name": "Natsume's Book of Friends Season 6",
-    "nameTH": "นัตสึเมะกับบันทึกพิศวง ซีซั่น 6",
+    "name": "K-On!!",
+    "nameTH": "เค-อง! ก๊วนดนตรีแป๋วแหวว",
     "genre": [
-      "ภูตผี",
-      "ดราม่า",
-      "อบอุ่นหัวใจ"
+      "ดนตรี",
+      "คอมเมดี้",
+      "ชีวิตประจำวัน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/12586/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/12586/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Natsume",
-    "mood": "chill"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/5070/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/5070/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=K-On!!",
+    "mood": "happy"
   },
   {
     "id": 626,
@@ -8875,17 +8884,17 @@ const ANIMES = [
   },
   {
     "id": 639,
-    "name": "Grisaia no Rakuen",
-    "nameTH": "The Eden of Grisaia",
+    "name": "Sound! Euphonium",
+    "nameTH": "ฮิบิเคะ! ยูโฟเนียม",
     "genre": [
-      "อนิเมะ",
-      "ยอดนิยม",
-      "แฟนตาซี"
+      "ดนตรี",
+      "ดราม่า",
+      "โรงเรียน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/10155/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/10155/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Grisaia%20no%20Rakuen",
-    "mood": "chill"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8965/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/8965/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Sound!%20Euphonium",
+    "mood": "sad"
   },
   {
     "id": 640,
@@ -8903,16 +8912,17 @@ const ANIMES = [
   },
   {
     "id": 641,
-    "name": "Golden Boy",
-    "nameTH": "Golden Boy",
+    "name": "Hyouka",
+    "nameTH": "ปริศนาความทรงจำ (เฮียวกะ)",
     "genre": [
-      "อนิเมะ",
-      "ผจญภัย"
+      "สืบสวน",
+      "ชีวิตในโรงเรียน",
+      "ลึกลับ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/243/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/243/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Golden%20Boy",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6734/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/6734/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Hyouka",
+    "mood": "chill"
   },
   {
     "id": 642,
@@ -9025,16 +9035,16 @@ const ANIMES = [
   },
   {
     "id": 650,
-    "name": "Gantz",
-    "nameTH": "Gantz",
+    "name": "Tamako Market",
+    "nameTH": "ตลาดป่วน ก๊วนทามาโกะ",
     "genre": [
-      "อนิเมะ",
-      "ยอดนิยม",
-      "แฟนตาซี"
+      "คอมเมดี้",
+      "ชีวิตประจำวัน",
+      "อบอุ่น"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/351/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/351/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Gantz",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7377/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7377/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Tamako%20Market",
     "mood": "happy"
   },
   {
@@ -9106,17 +9116,17 @@ const ANIMES = [
   },
   {
     "id": 656,
-    "name": "March Comes in Like a Lion Season 2",
-    "nameTH": "ตราบวันฟ้าใส ซีซั่น 2",
+    "name": "Tamako Love Story",
+    "nameTH": "ทามาโกะ เลิฟ สตอรี่",
     "genre": [
-      "ดราม่า",
-      "โชงิ",
-      "ซึ้งกินใจ"
+      "โรแมนติก",
+      "คอมเมดี้",
+      "ชีวิตประจำวัน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13350/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/13350/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=March%20Comes%20in%20Like%20a%20Lion",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8267/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/8267/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Tamako%20Love%20Story",
+    "mood": "love"
   },
   {
     "id": 657,
@@ -9161,17 +9171,17 @@ const ANIMES = [
   },
   {
     "id": 660,
-    "name": "Chihayafuru 3",
-    "nameTH": "จิฮายะฟุรุ ซีซั่น 3",
+    "name": "Nichijou",
+    "nameTH": "สามัญชนคนกวนโอ๊ย",
     "genre": [
-      "กีฬา",
-      "ดราม่า",
-      "โรงเรียน"
+      "คอมเมดี้",
+      "ชีวิตในโรงเรียน",
+      "ฮาหลุดโลก"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/41198/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/41198/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Chihayafuru",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/5938/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/5938/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Nichijou",
+    "mood": "happy"
   },
   {
     "id": 661,
@@ -9285,16 +9295,17 @@ const ANIMES = [
   },
   {
     "id": 669,
-    "name": "One Piece: Episode of Merry - Mou Hitori no Nakama no Monogatari",
-    "nameTH": "One Piece: Episode of Merry - Mou Hitori no Nakama no Monogatari",
+    "name": "Non Non Biyori",
+    "nameTH": "สาวใสหัวใจบ้านทุ่ง",
     "genre": [
-      "อนิเมะ",
-      "แอ็กชัน"
+      "ชีวิตประจำวัน",
+      "ชนบท",
+      "ผ่อนคลาย"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7894/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/7894/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=One%20Piece%3A%20Episode%20of%20Merry%20-%20Mou%20Hitori%20no%20Nakama%20no%20Monogatari",
-    "mood": "epic"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7740/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7740/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Non%20Non%20Biyori",
+    "mood": "chill"
   },
   {
     "id": 670,
@@ -9312,30 +9323,30 @@ const ANIMES = [
   },
   {
     "id": 671,
-    "name": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka Gaiden: Sword Oratoria",
-    "nameTH": "Sword Oratoria: Is it Wrong to Try to Pick Up Girls in a Dungeon? On the Side",
+    "name": "Yuru Camp",
+    "nameTH": "แคมป์สบายสไตล์สาว ม.ปลาย",
     "genre": [
-      "อนิเมะ",
-      "ยอดนิยม",
-      "แฟนตาซี"
+      "ชีวิตประจำวัน",
+      "ท่องเที่ยว",
+      "ผ่อนคลาย"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/11902/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/11902/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Dungeon%20ni%20Deai%20wo%20Motomeru%20no%20wa%20Machigatteiru%20Darou%20ka%20Gaiden%3A%20Sword%20Oratoria",
-    "mood": "dark"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13569/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/13569/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Yuru%20Camp",
+    "mood": "chill"
   },
   {
     "id": 672,
-    "name": "Little Witch Academia",
-    "nameTH": "โรงเรียนแม่มดน้อย",
+    "name": "Barakamon",
+    "nameTH": "เกาะมีฮา คนมีเฮ",
     "genre": [
-      "เวทมนตร์",
-      "แฟนตาซี",
-      "คอมเมดี้"
+      "คอมเมดี้",
+      "ชีวิตประจำวัน",
+      "อบอุ่นหัวใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/12204/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/12204/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Little%20Witch%20Academia",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8026/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/8026/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Barakamon",
     "mood": "happy"
   },
   {
@@ -9367,16 +9378,17 @@ const ANIMES = [
   },
   {
     "id": 675,
-    "name": "Mahou Shoujo Madoka★Magica Movie 2: Eien no Monogatari",
-    "nameTH": "Puella Magi Madoka Magica the Movie Part 2: Eternal",
+    "name": "A Place Further than the Universe",
+    "nameTH": "ดินแดนที่ห่างไกลยิ่งกว่าอวกาศ",
     "genre": [
-      "อนิเมะ",
-      "แฟนตาซี"
+      "ผจญภัย",
+      "ดราม่า",
+      "มิตรภาพ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6637/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/6637/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Mahou%20Shoujo%20Madoka%E2%98%85Magica%20Movie%202%3A%20Eien%20no%20Monogatari",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13615/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/13615/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=A%20Place%20Further%20than%20the%20Universe",
+    "mood": "epic"
   },
   {
     "id": 676,
@@ -9394,16 +9406,16 @@ const ANIMES = [
   },
   {
     "id": 677,
-    "name": "Spy x Family Code: White",
-    "nameTH": "สปาย × แฟมิลี โค้ด ไวท์",
+    "name": "Little Witch Academia",
+    "nameTH": "โรงเรียนแม่มดน้อย",
     "genre": [
-      "คอมเมดี้",
-      "แอ็กชัน",
-      "ครอบครัว"
+      "เวทมนตร์",
+      "แฟนตาซี",
+      "คอมเมดี้"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/46881/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/46881/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Spy%20x%20Family",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/12204/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/12204/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Little%20Witch%20Academia",
     "mood": "happy"
   },
   {
@@ -9504,16 +9516,17 @@ const ANIMES = [
   },
   {
     "id": 685,
-    "name": "Corpse Party: Tortured Souls - Bougyakusareta Tamashii no Jukyou",
-    "nameTH": "Corpse Party: Tortured Souls",
+    "name": "Doraemon: Stand by Me",
+    "nameTH": "สแตนด์บายมี โดราเอมอน เพื่อนกันตลอดไป",
     "genre": [
-      "อนิเมะ",
-      "ชีวิตในโรงเรียน"
+      "แฟนตาซี",
+      "ครอบครัว",
+      "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7199/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/7199/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Corpse%20Party%3A%20Tortured%20Souls%20-%20Bougyakusareta%20Tamashii%20no%20Jukyou",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8207/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/8207/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Doraemon%3A%20Stand%20by%20Me",
+    "mood": "sad"
   },
   {
     "id": 686,
@@ -9544,16 +9557,16 @@ const ANIMES = [
   },
   {
     "id": 688,
-    "name": "Seireitsukai no Blade Dance",
-    "nameTH": "Blade Dance of the Elementalers",
+    "name": "Doraemon: Nobita's Sky Utopia",
+    "nameTH": "โดราเอมอน: ฟากฟ้าแห่งยูโทเปียของโนบิตะ",
     "genre": [
-      "อนิเมะ",
-      "แอ็กชัน",
-      "ชีวิตในโรงเรียน"
+      "แฟนตาซี",
+      "ผจญภัย",
+      "มิตรภาพ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7878/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/7878/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Seireitsukai%20no%20Blade%20Dance",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46214/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/46214/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Doraemon%3A%20Nobita's%20Sky%20Utopia",
     "mood": "happy"
   },
   {
@@ -9802,31 +9815,31 @@ const ANIMES = [
   },
   {
     "id": 707,
-    "name": "Sakura Trick",
-    "nameTH": "Sakura Trick",
+    "name": "Assassination Classroom",
+    "nameTH": "ห้องเรียนลอบสังหาร",
     "genre": [
-      "อนิเมะ",
-      "โรแมนติก",
-      "ชีวิตในโรงเรียน"
+      "แอ็กชัน",
+      "คอมเมดี้",
+      "โรงเรียน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7978/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/7978/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Sakura%20Trick",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8640/large.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/8640/large.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Assassination%20Classroom",
+    "mood": "sad"
   },
   {
     "id": 708,
-    "name": "Madan no Ou to Vanadis",
-    "nameTH": "Lord Marksman and Vanadis",
+    "name": "Ping Pong The Animation",
+    "nameTH": "ปิงปอง ดิ แอนิเมชั่น",
     "genre": [
-      "อนิเมะ",
-      "แฟนตาซี",
-      "ผจญภัย"
+      "กีฬา",
+      "ดราม่า",
+      "ศิลปะ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8630/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/8630/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Madan%20no%20Ou%20to%20Vanadis",
-    "mood": "dark"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8240/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/8240/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Ping%20Pong%20The%20Animation",
+    "mood": "hype"
   },
   {
     "id": 709,
@@ -9939,17 +9952,17 @@ const ANIMES = [
   },
   {
     "id": 717,
-    "name": "Mysterious Girlfriend X",
-    "nameTH": "Mysterious Girlfriend X",
+    "name": "Run with the Wind",
+    "nameTH": "ลมพัดผ่านเรา (Kaze ga Tsuyoku Fuiteiru)",
     "genre": [
-      "อนิเมะ",
-      "โรแมนติก",
-      "ชีวิตในโรงเรียน"
+      "กีฬา",
+      "วิ่งมาราธอน",
+      "ดราม่า"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6740/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/6740/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Mysterious%20Girlfriend%20X",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41372/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/41372/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Run%20with%20the%20Wind",
+    "mood": "hype"
   },
   {
     "id": 718,
@@ -9981,17 +9994,17 @@ const ANIMES = [
   },
   {
     "id": 720,
-    "name": "Doraemon: Stand by Me",
-    "nameTH": "สแตนด์บายมี โดราเอมอน เพื่อนกันตลอดไป",
+    "name": "Chihayafuru",
+    "nameTH": "จิฮายะฟุรุ",
     "genre": [
-      "แฟนตาซี",
-      "มิตรภาพ",
-      "ซึ้งกินใจ"
+      "กีฬา",
+      "ดราม่า",
+      "โรงเรียน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8207/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/8207/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Doraemon%20Stand%20by%20Me",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6344/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/6344/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Chihayafuru",
+    "mood": "hype"
   },
   {
     "id": 721,
@@ -10036,31 +10049,31 @@ const ANIMES = [
   },
   {
     "id": 724,
-    "name": "Shuffle!",
-    "nameTH": "Shuffle!",
+    "name": "Natsume's Book of Friends",
+    "nameTH": "นัตสึเมะกับบันทึกพิศวง",
     "genre": [
-      "อนิเมะ",
-      "โรแมนติก",
-      "ชีวิตในโรงเรียน"
+      "ภูตผี",
+      "ดราม่า",
+      "อบอุ่นหัวใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/58/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/58/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Shuffle!",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3436/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/3436/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Natsume's%20Book%20of%20Friends",
+    "mood": "chill"
   },
   {
     "id": 725,
-    "name": "Saijaku Muhai no Bahamut",
-    "nameTH": "Undefeated Bahamut Chronicle",
+    "name": "March Comes in Like a Lion",
+    "nameTH": "ตราบวันฟ้าใส (3-gatsu no Lion)",
     "genre": [
-      "อนิเมะ",
-      "แอ็กชัน",
-      "ไซไฟ"
+      "ดราม่า",
+      "โชงิ",
+      "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/10913/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/10913/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Saijaku%20Muhai%20no%20Bahamut",
-    "mood": "epic"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11615/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/11615/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=March%20Comes%20in%20Like%20a%20Lion",
+    "mood": "sad"
   },
   {
     "id": 726,
@@ -10092,16 +10105,16 @@ const ANIMES = [
   },
   {
     "id": 728,
-    "name": "Oniichan dakedo Ai sae Areba Kankeinai yo ne!",
-    "nameTH": "OniAi",
+    "name": "Campfire Cooking in Another World",
+    "nameTH": "สกิลสุดพิสดารกับมื้ออาหารในต่างโลก",
     "genre": [
-      "อนิเมะ",
-      "แอ็กชัน",
-      "ชีวิตในโรงเรียน"
+      "ต่างโลก",
+      "ทำอาหาร",
+      "คอมเมดี้"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7094/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/7094/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Oniichan%20dakedo%20Ai%20sae%20Areba%20Kankeinai%20yo%20ne!",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46487/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/46487/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Campfire%20Cooking%20in%20Another%20World",
     "mood": "happy"
   },
   {
@@ -10174,17 +10187,17 @@ const ANIMES = [
   },
   {
     "id": 734,
-    "name": "Doraemon: Nobita's Sky Utopia",
-    "nameTH": "โดราเอมอน: ฟากฟ้าแห่งยูโทเปียของโนบิตะ",
+    "name": "Vivy: Fluorite Eye's Song",
+    "nameTH": "วิวี่ บทเพลงแห่งฟลูออไรท์",
     "genre": [
-      "แฟนตาซี",
-      "ผจญภัย",
-      "มิตรภาพ"
+      "ไซไฟ",
+      "ดนตรี",
+      "แอ็กชัน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/46214/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/46214/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Doraemon",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/44030/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/44030/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Vivy%3A%20Fluorite%20Eye's%20Song",
+    "mood": "epic"
   },
   {
     "id": 735,
@@ -10241,31 +10254,31 @@ const ANIMES = [
   },
   {
     "id": 739,
-    "name": "Fate/kaleid liner Prisma☆Illya",
-    "nameTH": "Fate/Kaleid Liner Prisma Illya",
+    "name": "Cyberpunk: Edgerunners",
+    "nameTH": "ไซเบอร์พังก์: เอ็ดจ์รันเนอร์ส",
     "genre": [
-      "อนิเมะ",
-      "แฟนตาซี",
-      "ชีวิตในโรงเรียน"
+      "ไซไฟ",
+      "แอ็กชัน",
+      "ดิสโทเปีย"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7173/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/7173/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Fate%2Fkaleid%20liner%20Prisma%E2%98%86Illya",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/43248/poster_image/medium-b6579dda46b596b2d2c3fa6d4618dc69.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/43248/poster_image/medium-b6579dda46b596b2d2c3fa6d4618dc69.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Cyberpunk%3A%20Edgerunners",
+    "mood": "epic"
   },
   {
     "id": 740,
-    "name": "Crayon Shin-chan: The Storm Called: The Battle of the Warring States",
-    "nameTH": "ชินจัง เดอะมูฟวี่: ชินจัง เดอะมูฟวี่ พายุพัดหวน ศึกชิงบัลลังก์เจ้าหญิง",
+    "name": "Spirited Away",
+    "nameTH": "มิติวิญญาณมหัศจรรย์",
     "genre": [
-      "คอมเมดี้",
-      "ครอบครัว",
-      "ซึ้งกินใจ"
+      "แฟนตาซี",
+      "ผจญภัย",
+      "ครอบครัว"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/3625/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/3625/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Shin-chan",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/176/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/176/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Spirited%20Away",
+    "mood": "chill"
   },
   {
     "id": 741,
@@ -10283,17 +10296,17 @@ const ANIMES = [
   },
   {
     "id": 742,
-    "name": "Renai Boukun",
-    "nameTH": "Love Tyrant",
+    "name": "Princess Mononoke",
+    "nameTH": "เจ้าหญิงจิตวิญญาณแห่งพงไพร",
     "genre": [
-      "อนิเมะ",
-      "โรแมนติก",
-      "แฟนตาซี"
+      "แฟนตาซี",
+      "ผจญภัย",
+      "ธรรมชาติ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/11610/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/11610/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Renai%20Boukun",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/166/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/166/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Princess%20Mononoke",
+    "mood": "epic"
   },
   {
     "id": 743,
@@ -10353,17 +10366,17 @@ const ANIMES = [
   },
   {
     "id": 747,
-    "name": "Mahou Shoujo Madoka★Magica Movie 1: Hajimari no Monogatari",
-    "nameTH": "Puella Magi Madoka Magica the Movie Part 1: Beginnings",
+    "name": "Howl's Moving Castle",
+    "nameTH": "ปราสาทเวทมนตร์ของฮาวล์",
     "genre": [
-      "อนิเมะ",
-      "แอ็กชัน",
-      "แฟนตาซี"
+      "แฟนตาซี",
+      "โรแมนติก",
+      "ผจญภัย"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6636/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/6636/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Mahou%20Shoujo%20Madoka%E2%98%85Magica%20Movie%201%3A%20Hajimari%20no%20Monogatari",
-    "mood": "epic"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/224/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/224/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Howl's%20Moving%20Castle",
+    "mood": "love"
   },
   {
     "id": 748,
@@ -10381,17 +10394,17 @@ const ANIMES = [
   },
   {
     "id": 749,
-    "name": "Assassination Classroom Season 2",
-    "nameTH": "ห้องเรียนลอบสังหาร ซีซั่น 2",
+    "name": "My Neighbor Totoro",
+    "nameTH": "โทโทโร่เพื่อนรัก",
     "genre": [
-      "แอ็กชัน",
-      "คอมเมดี้",
-      "ชีวิตในโรงเรียน"
+      "แฟนตาซี",
+      "ชีวิตประจำวัน",
+      "ครอบครัว"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/10903/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/10903/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Assassination%20Classroom",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/544/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/544/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=My%20Neighbor%20Totoro",
+    "mood": "happy"
   },
   {
     "id": 750,
@@ -10421,42 +10434,44 @@ const ANIMES = [
   },
   {
     "id": 752,
-    "name": "Maji de Watashi ni Koi Shinasai!",
-    "nameTH": "Majikoi: Oh! Samurai Girls",
+    "name": "Kiki's Delivery Service",
+    "nameTH": "แม่มดน้อยกิกิ",
     "genre": [
-      "อนิเมะ",
-      "แอ็กชัน",
-      "ชีวิตในโรงเรียน"
+      "แฟนตาซี",
+      "ชีวิตประจำวัน",
+      "อบอุ่น"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6081/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/6081/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Maji%20de%20Watashi%20ni%20Koi%20Shinasai!",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/547/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/547/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kiki's%20Delivery%20Service",
     "mood": "happy"
   },
   {
     "id": 753,
-    "name": "Diabolik Lovers",
-    "nameTH": "Diabolik Lovers",
+    "name": "Ponyo",
+    "nameTH": "โปเนียว ธิดาสมุทรผจญภัย",
     "genre": [
-      "อนิเมะ",
-      "โรแมนติก"
+      "แฟนตาซี",
+      "ผจญภัย",
+      "เด็ก"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7707/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/7707/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Diabolik%20Lovers",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/2464/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/2464/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Ponyo",
+    "mood": "happy"
   },
   {
     "id": 754,
-    "name": "Hundred",
-    "nameTH": "Hundred",
+    "name": "Castle in the Sky",
+    "nameTH": "ลาพิวต้า พลิกตำนานเหนือเวหา",
     "genre": [
-      "อนิเมะ",
-      "แอ็กชัน"
+      "ผจญภัย",
+      "แฟนตาซี",
+      "ไซไฟ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/11029/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/11029/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Hundred",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/541/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/541/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Castle%20in%20the%20Sky",
     "mood": "epic"
   },
   {
@@ -10639,17 +10654,17 @@ const ANIMES = [
   },
   {
     "id": 768,
-    "name": "Punch Line",
-    "nameTH": "Punch Line",
+    "name": "Whisper of the Heart",
+    "nameTH": "วันนั้น...วันไหน หัวใจจะเป็นสีชมพู",
     "genre": [
-      "อนิเมะ",
-      "แอ็กชัน",
-      "โรแมนติก"
+      "โรแมนติก",
+      "ดราม่า",
+      "ดนตรี"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/10038/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/10038/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Punch%20Line",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/548/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/548/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Whisper%20of%20the%20Heart",
+    "mood": "love"
   },
   {
     "id": 769,
@@ -10666,17 +10681,17 @@ const ANIMES = [
   },
   {
     "id": 770,
-    "name": "Kämpfer",
-    "nameTH": "Kämpfer",
+    "name": "The Tale of the Princess Kaguya",
+    "nameTH": "เจ้าหญิงกระบอกไม้ไผ่",
     "genre": [
-      "อนิเมะ",
-      "แอ็กชัน",
-      "ชีวิตในโรงเรียน"
+      "แฟนตาซี",
+      "ดราม่า",
+      "ประวัติศาสตร์"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/4474/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/4474/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=K%C3%A4mpfer",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/5406/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/5406/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20Tale%20of%20the%20Princess%20Kaguya",
+    "mood": "sad"
   },
   {
     "id": 771,
@@ -10707,17 +10722,17 @@ const ANIMES = [
   },
   {
     "id": 773,
-    "name": "Bungo Stray Dogs: Dead Apple",
-    "nameTH": "คณะประพันธกรจรจัด: เดด แอปเปิล",
+    "name": "The Wind Rises",
+    "nameTH": "ปีกแห่งฝัน วันแห่งรัก",
     "genre": [
-      "พลังพิเศษ",
-      "สืบสวน",
-      "แอ็กชัน"
+      "ดราม่า",
+      "โรแมนติก",
+      "ประวัติศาสตร์"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/13364/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/13364/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Bungo%20Stray%20Dogs",
-    "mood": "epic"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7196/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7196/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20Wind%20Rises",
+    "mood": "sad"
   },
   {
     "id": 774,
@@ -11035,30 +11050,30 @@ const ANIMES = [
   },
   {
     "id": 797,
-    "name": "Violet Evergarden: The Movie",
-    "nameTH": "ไวโอเล็ต เอเวอร์การ์เดน เดอะมูฟวี่",
+    "name": "The Cat Returns",
+    "nameTH": "เจ้าแมวยอดนักสืบ",
     "genre": [
-      "ดราม่า",
-      "โรแมนติก",
-      "ซึ้งกินใจ"
+      "แฟนตาซี",
+      "คอมเมดี้",
+      "ผจญภัย"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/41370/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/41370/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Violet%20Evergarden",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/545/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/545/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20Cat%20Returns",
+    "mood": "chill"
   },
   {
     "id": 798,
-    "name": "Princess Mononoke",
-    "nameTH": "เจ้าหญิงจิตวิญญาณแห่งพงไพร",
+    "name": "The Boy and the Heron",
+    "nameTH": "เด็กชายกับนกกระสา",
     "genre": [
       "แฟนตาซี",
-      "ผจญภัย",
-      "ยอดนิยม"
+      "ดราม่า",
+      "ผจญภัย"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/166/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/166/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Princess%20Mononoke",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46270/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/46270/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20Boy%20and%20the%20Heron",
     "mood": "epic"
   },
   {
@@ -11076,16 +11091,16 @@ const ANIMES = [
   },
   {
     "id": 800,
-    "name": "Howl's Moving Castle",
-    "nameTH": "ปราสาทเวทมนตร์ของฮาวล์",
+    "name": "Your Name",
+    "nameTH": "หลับตาฝัน ถึงชื่อเธอ",
     "genre": [
-      "แฟนตาซี",
       "โรแมนติก",
-      "ยอดนิยม"
+      "ดราม่า",
+      "เหนือธรรมชาติ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/224/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/224/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Howl%27s%20Moving%20Castle",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11614/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/11614/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Your%20Name",
     "mood": "love"
   },
   {
@@ -11228,29 +11243,31 @@ const ANIMES = [
   },
   {
     "id": 811,
-    "name": "Love Hina",
-    "nameTH": "Love Hina",
+    "name": "Weathering With You",
+    "nameTH": "ฤดูฝัน ฉันมีเธอ",
     "genre": [
-      "อนิเมะ",
-      "โรแมนติก"
+      "โรแมนติก",
+      "แฟนตาซี",
+      "ดราม่า"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/166/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/166/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Love%20Hina",
+    "coverUrl": "https://media.kitsu.app/anime/42028/poster_image/medium-7c29b40139396c7d225977be4e5987be.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/42028/poster_image/medium-7c29b40139396c7d225977be4e5987be.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Weathering%20With%20You",
     "mood": "sad"
   },
   {
     "id": 812,
-    "name": "Busou Shoujo Machiavellianism",
-    "nameTH": "Armed Girl's Machiavellism",
+    "name": "Suzume",
+    "nameTH": "การผนึกประตูของซูซูเมะ",
     "genre": [
-      "อนิเมะ",
-      "ชีวิตในโรงเรียน"
+      "แฟนตาซี",
+      "ผจญภัย",
+      "ดราม่า"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/12265/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/12265/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Busou%20Shoujo%20Machiavellianism",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/45597/poster_image/medium-63432be1d191a4ce68e599e02336a62b.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/45597/poster_image/medium-63432be1d191a4ce68e599e02336a62b.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Suzume",
+    "mood": "epic"
   },
   {
     "id": 813,
@@ -11322,17 +11339,17 @@ const ANIMES = [
   },
   {
     "id": 818,
-    "name": "Imouto sae Ireba Ii.",
-    "nameTH": "A Sister's All You Need",
+    "name": "5 Centimeters per Second",
+    "nameTH": "ยามซากุระร่วงโรย (5 cm/s)",
     "genre": [
-      "อนิเมะ",
-      "ยอดนิยม",
-      "แฟนตาซี"
+      "โรแมนติก",
+      "ดราม่า",
+      "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/11207/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/11207/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Imouto%20sae%20Ireba%20Ii.",
-    "mood": "chill"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1517/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/1517/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=5%20Centimeters%20per%20Second",
+    "mood": "sad"
   },
   {
     "id": 819,
@@ -11623,17 +11640,17 @@ const ANIMES = [
   },
   {
     "id": 840,
-    "name": "My Neighbor Totoro",
-    "nameTH": "โทโทโร่เพื่อนรัก",
+    "name": "The Garden of Words",
+    "nameTH": "ยามสายฝนโปรยปราย",
     "genre": [
-      "แฟนตาซี",
-      "ชีวิตประจำวัน",
-      "อบอุ่นหัวใจ"
+      "โรแมนติก",
+      "ดราม่า",
+      "ฝน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/544/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/544/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=My%20Neighbor%20Totoro",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7515/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7515/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20Garden%20of%20Words",
+    "mood": "chill"
   },
   {
     "id": 841,
@@ -11690,16 +11707,17 @@ const ANIMES = [
   },
   {
     "id": 845,
-    "name": "Gleipnir",
-    "nameTH": "Gleipnir",
+    "name": "A Silent Voice",
+    "nameTH": "รักไร้เสียง (Koe no Katachi)",
     "genre": [
-      "อนิเมะ",
-      "ชีวิตในโรงเรียน"
+      "ดราม่า",
+      "โรงเรียน",
+      "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/42173/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/42173/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Gleipnir",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/10028/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/10028/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=A%20Silent%20Voice",
+    "mood": "sad"
   },
   {
     "id": 846,
@@ -11716,16 +11734,17 @@ const ANIMES = [
   },
   {
     "id": 847,
-    "name": "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka III",
-    "nameTH": "Is It Wrong to Try to Pick Up Girls in a Dungeon? III",
+    "name": "I Want to Eat Your Pancreas",
+    "nameTH": "ตับอ่อนเธอนั้น ขอฉันเถอะนะ",
     "genre": [
-      "อนิเมะ",
-      "ผจญภัย"
+      "ดราม่า",
+      "โรแมนติก",
+      "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/42583/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/42583/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Dungeon%20ni%20Deai%20wo%20Motomeru%20no%20wa%20Machigatteiru%20Darou%20ka%20III",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13723/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/13723/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=I%20Want%20to%20Eat%20Your%20Pancreas",
+    "mood": "sad"
   },
   {
     "id": 848,
@@ -11948,17 +11967,17 @@ const ANIMES = [
   },
   {
     "id": 864,
-    "name": "MM!",
-    "nameTH": "MM!",
+    "name": "Josee, the Tiger and the Fish",
+    "nameTH": "โจเซ่ กับเสือและหมู่ปลา",
     "genre": [
-      "อนิเมะ",
-      "ยอดนิยม",
-      "แฟนตาซี"
+      "โรแมนติก",
+      "ดราม่า",
+      "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/5329/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/5329/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=MM!",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42828/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/42828/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Josee%2C%20the%20Tiger%20and%20the%20Fish",
+    "mood": "love"
   },
   {
     "id": 865,
@@ -12057,17 +12076,17 @@ const ANIMES = [
   },
   {
     "id": 872,
-    "name": "Kiki's Delivery Service",
-    "nameTH": "แม่มดน้อยกิกิ",
+    "name": "Belle",
+    "nameTH": "เบล เจ้าหญิงแห่งเสียงเพลง",
     "genre": [
-      "แฟนตาซี",
-      "ชีวิตประจำวัน",
-      "อบอุ่นหัวใจ"
+      "ดนตรี",
+      "ไซไฟ",
+      "ดราม่า"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/547/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/547/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Kiki%27s%20Delivery%20Service",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/43977/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/43977/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Belle",
+    "mood": "sad"
   },
   {
     "id": 873,
@@ -12203,16 +12222,17 @@ const ANIMES = [
   },
   {
     "id": 883,
-    "name": "Ore ga Ojousama Gakkou ni \"Shomin Sample\" Toshite Gets♥Sareta Ken",
-    "nameTH": "Shomin Sample",
+    "name": "Summer Wars",
+    "nameTH": "สงครามฤดูร้อน",
     "genre": [
-      "อนิเมะ",
-      "ชีวิตในโรงเรียน"
+      "ไซไฟ",
+      "คอมเมดี้",
+      "ครอบครัว"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8651/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/8651/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Ore%20ga%20Ojousama%20Gakkou%20ni%20%22Shomin%20Sample%22%20Toshite%20Gets%E2%99%A5Sareta%20Ken",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/3956/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/3956/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Summer%20Wars",
+    "mood": "hype"
   },
   {
     "id": 884,
@@ -12244,17 +12264,17 @@ const ANIMES = [
   },
   {
     "id": 886,
-    "name": "Ore wo Suki na no wa Omae dake ka yo",
-    "nameTH": "ORESUKI: Are you the only one who loves me?",
+    "name": "The Boy and the Beast",
+    "nameTH": "ศิษย์มหัศจรรย์กับอาจารย์พันธุ์อสูร",
     "genre": [
-      "อนิเมะ",
-      "โรแมนติก",
-      "ชีวิตในโรงเรียน"
+      "ผจญภัย",
+      "แฟนตาซี",
+      "มิตรภาพ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/42047/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/42047/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Ore%20wo%20Suki%20na%20no%20wa%20Omae%20dake%20ka%20yo",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/9924/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/9924/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20Boy%20and%20the%20Beast",
+    "mood": "epic"
   },
   {
     "id": 887,
@@ -12271,17 +12291,17 @@ const ANIMES = [
   },
   {
     "id": 888,
-    "name": "Ponyo",
-    "nameTH": "โปเนียว ธิดาสมุทรผจญภัย",
+    "name": "Wolf Children",
+    "nameTH": "คู่จี๊ดชีวิตอัศจรรย์",
     "genre": [
+      "ครอบครัว",
       "แฟนตาซี",
-      "ผจญภัย",
-      "อบอุ่นหัวใจ"
+      "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/2464/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/2464/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Ponyo",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6744/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/6744/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Wolf%20Children",
+    "mood": "sad"
   },
   {
     "id": 889,
@@ -12448,16 +12468,17 @@ const ANIMES = [
   },
   {
     "id": 901,
-    "name": "Plunderer",
-    "nameTH": "Plunderer",
+    "name": "The Girl Who Leapt Through Time",
+    "nameTH": "กระโดดจั๊มพ์ทะลุข้ามเวลา",
     "genre": [
-      "อนิเมะ",
-      "ผจญภัย"
+      "ไซไฟ",
+      "ดราม่า",
+      "โรงเรียน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/40600/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/40600/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Plunderer",
-    "mood": "hype"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/1454/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/1454/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20Girl%20Who%20Leapt%20Through%20Time",
+    "mood": "love"
   },
   {
     "id": 902,
@@ -12488,29 +12509,31 @@ const ANIMES = [
   },
   {
     "id": 904,
-    "name": "Love Stage!!",
-    "nameTH": "Love Stage!!",
+    "name": "Words Bubble Up Like Soda Pop",
+    "nameTH": "ถ้อยคำเอ่อล้นด้วยหัวใจรัก",
     "genre": [
-      "อนิเมะ",
-      "โรแมนติก"
+      "โรแมนติก",
+      "ดนตรี",
+      "ชีวิตในโรงเรียน"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7767/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/7767/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Love%20Stage!!",
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42555/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/42555/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Words%20Bubble%20Up%20Like%20Soda%20Pop",
     "mood": "love"
   },
   {
     "id": 905,
-    "name": "Happy Sugar Life",
-    "nameTH": "Happy Sugar Life",
+    "name": "Hotarubi no Mori e",
+    "nameTH": "สู่ป่าแห่งแสงหิ่งห้อย",
     "genre": [
-      "อนิเมะ",
-      "โรแมนติก"
+      "แฟนตาซี",
+      "โรแมนติก",
+      "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/41097/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/41097/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Happy%20Sugar%20Life",
-    "mood": "dark"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6169/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/6169/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Hotarubi%20no%20Mori%20e",
+    "mood": "sad"
   },
   {
     "id": 906,
@@ -12554,17 +12577,17 @@ const ANIMES = [
   },
   {
     "id": 909,
-    "name": "Kaguya-hime no Monogatari",
-    "nameTH": "The Tale of the Princess Kaguya",
+    "name": "Violet Evergarden",
+    "nameTH": "ไวโอเล็ต เอเวอร์การ์เดน",
     "genre": [
-      "อนิเมะ",
-      "ยอดนิยม",
-      "แฟนตาซี"
+      "ดราม่า",
+      "แฟนตาซี",
+      "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/7486/poster_image/medium-99fa0ba86ea719a6b93d68ee2f7253af.jpeg",
-    "coverFallback": "https://media.kitsu.app/anime/7486/poster_image/medium-99fa0ba86ea719a6b93d68ee2f7253af.jpeg",
-    "anifumeUrl": "https://anifume.com/?s=Kaguya-hime%20no%20Monogatari",
-    "mood": "chill"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/12230/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/12230/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Violet%20Evergarden",
+    "mood": "sad"
   },
   {
     "id": 910,
@@ -12623,17 +12646,17 @@ const ANIMES = [
   },
   {
     "id": 914,
-    "name": "Castle in the Sky",
-    "nameTH": "ลาพิวต้า พลิกตำนานเหนือเวหา",
+    "name": "Violet Evergarden: The Movie",
+    "nameTH": "ไวโอเล็ต เอเวอร์การ์เดน เดอะมูฟวี่",
     "genre": [
-      "ผจญภัย",
-      "แฟนตาซี",
-      "ไซไฟ"
+      "ดราม่า",
+      "โรแมนติก",
+      "ซึ้งกินใจ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/541/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/541/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Castle%20in%20the%20Sky",
-    "mood": "epic"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41370/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/41370/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Violet%20Evergarden%3A%20The%20Movie",
+    "mood": "sad"
   },
   {
     "id": 915,
@@ -12651,16 +12674,17 @@ const ANIMES = [
   },
   {
     "id": 916,
-    "name": "Grisaia no Meikyuu: Caprice no Mayu 0",
-    "nameTH": "The Labyrinth of Grisaia: The Cocoon of Caprice 0",
+    "name": "Haikyuu!!",
+    "nameTH": "ไฮคิว!! คู่ตบฟ้าประทาน",
     "genre": [
-      "อนิเมะ",
-      "ชีวิตในโรงเรียน"
+      "กีฬา",
+      "โรงเรียน",
+      "มิตรภาพ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/10154/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/10154/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Grisaia%20no%20Meikyuu%3A%20Caprice%20no%20Mayu%200",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8133/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/8133/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Haikyuu!!",
+    "mood": "hype"
   },
   {
     "id": 917,
@@ -12773,17 +12797,17 @@ const ANIMES = [
   },
   {
     "id": 925,
-    "name": "Whisper of the Heart",
-    "nameTH": "วันนั้น...วันไหน หัวใจจะเป็นสีชมพู",
+    "name": "Haikyuu!! The Dumpster Battle",
+    "nameTH": "ไฮคิว!! ศึกที่กองขยะ",
     "genre": [
-      "โรแมนติก",
-      "ดราม่า",
-      "ชีวิตในโรงเรียน"
+      "กีฬา",
+      "โรงเรียน",
+      "ไฮป์"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/548/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/548/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Whisper%20of%20the%20Heart",
-    "mood": "love"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46270/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/46270/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Haikyuu!!%20The%20Dumpster%20Battle",
+    "mood": "hype"
   },
   {
     "id": 926,
@@ -12897,16 +12921,17 @@ const ANIMES = [
   },
   {
     "id": 934,
-    "name": "Kono Naka ni Hitori, Imouto ga Iru!",
-    "nameTH": "NAKAIMO - My Little Sister Is Among Them!",
+    "name": "Slam Dunk",
+    "nameTH": "สแลมดังก์",
     "genre": [
-      "อนิเมะ",
-      "ชีวิตในโรงเรียน"
+      "กีฬา",
+      "โรงเรียน",
+      "คลาสสิก"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/6947/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/6947/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Kono%20Naka%20ni%20Hitori%2C%20Imouto%20ga%20Iru!",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/169/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/169/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Slam%20Dunk",
+    "mood": "hype"
   },
   {
     "id": 935,
@@ -12924,17 +12949,17 @@ const ANIMES = [
   },
   {
     "id": 936,
-    "name": "The Tale of the Princess Kaguya",
-    "nameTH": "เจ้าหญิงกระบอกไม้ไผ่",
+    "name": "The First Slam Dunk",
+    "nameTH": "เดอะ เฟิสต์ สแลมดังก์",
     "genre": [
-      "แฟนตาซี",
+      "กีฬา",
       "ดราม่า",
-      "ซึ้งกินใจ"
+      "ระดับโลก"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/5406/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/5406/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=The%20Tale%20of%20the%20Princess%20Kaguya",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/44053/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/44053/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20First%20Slam%20Dunk",
+    "mood": "hype"
   },
   {
     "id": 937,
@@ -12952,17 +12977,17 @@ const ANIMES = [
   },
   {
     "id": 938,
-    "name": "The Wind Rises",
-    "nameTH": "ปีกแห่งฝัน วันแห่งรัก",
+    "name": "Kuroko's Basketball",
+    "nameTH": "คุโรโกะ โนะ บาสเก็ต",
     "genre": [
-      "ดราม่า",
-      "โรแมนติก",
-      "ประวัติศาสตร์"
+      "กีฬา",
+      "โรงเรียน",
+      "พลังพิเศษ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7196/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/7196/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=The%20Wind%20Rises",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7645/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7645/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kuroko's%20Basketball",
+    "mood": "hype"
   },
   {
     "id": 939,
@@ -13008,16 +13033,17 @@ const ANIMES = [
   },
   {
     "id": 942,
-    "name": "Uzaki-chan wa Asobitai!",
-    "nameTH": "Uzaki-chan Wants to Hang Out",
+    "name": "Detective Conan",
+    "nameTH": "ยอดนักสืบจิ๋วโคนัน",
     "genre": [
-      "อนิเมะ",
-      "แอ็กชัน"
+      "สืบสวน",
+      "ลึกลับ",
+      "ยอดนิยม"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/43094/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/43094/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Uzaki-chan%20wa%20Asobitai!",
-    "mood": "epic"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/210/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/210/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Detective%20Conan",
+    "mood": "hype"
   },
   {
     "id": 943,
@@ -13048,17 +13074,17 @@ const ANIMES = [
   },
   {
     "id": 945,
-    "name": "Kakumeiki Valvrave",
-    "nameTH": "Valvrave the Liberator",
+    "name": "Detective Conan: The Million-dollar Pentagram",
+    "nameTH": "ยอดนักสืบจิ๋วโคนัน: ปริศนาปราการ 1 ล้านดอลลาร์",
     "genre": [
-      "อนิเมะ",
-      "ยอดนิยม",
-      "แฟนตาซี"
+      "สืบสวน",
+      "แอ็กชัน",
+      "ยอดนิยม"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7487/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/7487/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Kakumeiki%20Valvrave",
-    "mood": "chill"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/47952/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/47952/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Detective%20Conan%3A%20The%20Million-dollar%20Pentagram",
+    "mood": "hype"
   },
   {
     "id": 946,
@@ -13211,17 +13237,17 @@ const ANIMES = [
   },
   {
     "id": 957,
-    "name": "Koyomimonogatari",
-    "nameTH": "Koyomimonogatari",
+    "name": "Detective Conan: Black Iron Submarine",
+    "nameTH": "ยอดนักสืบจิ๋วโคนัน: มฤตยูใต้น้ำทมิฬ",
     "genre": [
-      "อนิเมะ",
-      "ยอดนิยม",
-      "แฟนตาซี"
+      "สืบสวน",
+      "แอ็กชัน",
+      "ระทึกขวัญ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/11613/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/11613/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Koyomimonogatari",
-    "mood": "chill"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/46864/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/46864/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Detective%20Conan%3A%20Black%20Iron%20Submarine",
+    "mood": "epic"
   },
   {
     "id": 958,
@@ -13309,17 +13335,17 @@ const ANIMES = [
   },
   {
     "id": 964,
-    "name": "Pupa",
-    "nameTH": "Pupa",
+    "name": "Gintama",
+    "nameTH": "กินทามะ",
     "genre": [
-      "อนิเมะ",
-      "ยอดนิยม",
-      "แฟนตาซี"
+      "คอมเมดี้",
+      "แอ็กชัน",
+      "ซามูไร"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/7845/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/7845/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Pupa",
-    "mood": "chill"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/203/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/203/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Gintama",
+    "mood": "hype"
   },
   {
     "id": 965,
@@ -13336,16 +13362,17 @@ const ANIMES = [
   },
   {
     "id": 966,
-    "name": "Kuusen Madoushi Kouhosei no Kyoukan",
-    "nameTH": "Sky Wizards Academy",
+    "name": "Gintama: The Final",
+    "nameTH": "กินทามะ เดอะ ไฟนอล",
     "genre": [
-      "อนิเมะ",
-      "แอ็กชัน"
+      "แอ็กชัน",
+      "คอมเมดี้",
+      "ซามูไร"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/8650/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/8650/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Kuusen%20Madoushi%20Kouhosei%20no%20Kyoukan",
-    "mood": "happy"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42514/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/42514/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Gintama%3A%20The%20Final",
+    "mood": "epic"
   },
   {
     "id": 967,
@@ -13620,17 +13647,17 @@ const ANIMES = [
   },
   {
     "id": 987,
-    "name": "Date A Live III",
-    "nameTH": "Date A Live III",
+    "name": "Mob Psycho 100",
+    "nameTH": "ม็อบไซโค 100 คนพลังจิต",
     "genre": [
-      "อนิเมะ",
-      "ยอดนิยม",
-      "แฟนตาซี"
+      "แอ็กชัน",
+      "คอมเมดี้",
+      "เหนือธรรมชาติ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/14040/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/14040/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Date%20A%20Live%20III",
-    "mood": "chill"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11819/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/11819/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Mob%20Psycho%20100",
+    "mood": "hype"
   },
   {
     "id": 988,
@@ -13661,17 +13688,17 @@ const ANIMES = [
   },
   {
     "id": 990,
-    "name": "Mnemosyne: Mnemosyne no Musume-tachi",
-    "nameTH": "Rin: Daughters of Mnemosyne",
+    "name": "Mob Psycho 100 III",
+    "nameTH": "ม็อบไซโค 100 คนพลังจิต ซีซั่น 3",
     "genre": [
-      "อนิเมะ",
-      "ยอดนิยม",
-      "แฟนตาซี"
+      "แอ็กชัน",
+      "คอมเมดี้",
+      "เหนือธรรมชาติ"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/2946/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/2946/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=Mnemosyne%3A%20Mnemosyne%20no%20Musume-tachi",
-    "mood": "sad"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/45214/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/45214/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Mob%20Psycho%20100%20III",
+    "mood": "hype"
   },
   {
     "id": 991,
@@ -13716,17 +13743,17 @@ const ANIMES = [
   },
   {
     "id": 994,
-    "name": "The Cat Returns",
-    "nameTH": "เจ้าแมวยอดนักสืบ",
+    "name": "Dr. Stone",
+    "nameTH": "ดร.สโตน",
     "genre": [
-      "แฟนตาซี",
-      "คอมเมดี้",
-      "ผจญภัย"
+      "ไซไฟ",
+      "ผจญภัย",
+      "วิทยาศาสตร์"
     ],
-    "coverUrl": "https://media.kitsu.app/anime/poster_images/545/medium.jpg",
-    "coverFallback": "https://media.kitsu.app/anime/poster_images/545/medium.jpg",
-    "anifumeUrl": "https://anifume.com/?s=The%20Cat%20Returns",
-    "mood": "chill"
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41819/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/41819/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Dr.%20Stone",
+    "mood": "hype"
   },
   {
     "id": 995,

@@ -28,11 +28,11 @@ const { execSync } = require('child_process');
 const EXACT_ADULT_WORDS = [
   /\bhentai\b/i, /\becchi\b/i, /\berotica\b/i, /\br-?18\+?\b/i, /\b18\+/i, /\+18\b/i, /\b18\s*plus\b/i,
   /\badult\b/i, /\bsmut\b/i, /\byaoi\b/i, /\byuri\b/i, /\bsex\b/i, /\bporn\b/i,
-  /\bnsfw\b/i, /\bxxx\b/i
+  /\bnsfw\b/i, /\bxxx\b/i, /\bh-?anime\b/i, /\buncensored\b/i, /\bnudity\b/i
 ];
 
 const THAI_ADULT_WORDS = [
-  'เฮนไท', 'เอจจิ', 'เซ็กส์', 'โป๊', 'ลามก', 'ทะลึ่ง', 'เสียว'
+  'เฮนไท', 'เอจจิ', 'เซ็กส์', 'โป๊', 'ลามก', 'ทะลึ่ง', 'เสียว', 'แนวh', 'แนว h', '18+'
 ];
 
 function check18Plus(text) {
