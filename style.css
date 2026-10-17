@@ -4737,6 +4737,7 @@ header#hero {
   background: rgba(255, 255, 255, 0.04);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   cursor: grab;
+  touch-action: none;
 }
 
 .fmp-drag-header:active {
@@ -4879,6 +4880,13 @@ header#hero {
   transition: width 0.1s linear;
 }
 
+.fmp-controls-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .fmp-controls {
   display: flex;
   align-items: center;
@@ -4918,6 +4926,26 @@ header#hero {
 .fmp-play-toggle:hover {
   background: #7dd3fc;
   color: #000;
+}
+
+.fmp-mini-vol-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 0.8rem;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.fmp-mini-vol-btn:hover {
+  background: rgba(56, 189, 248, 0.25);
+  border-color: #38bdf8;
 }
 
 .fmp-resize-grip {
@@ -4979,36 +5007,45 @@ header#hero {
   box-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
-/* BUTTON IN BOTTOM PLAYER */
+/* BUTTON IN BOTTOM PLAYER: แอพลอย (FLOATING PLAYER) */
+.btn-floating-player,
 .btn-pip {
-  background: rgba(56, 189, 248, 0.15) !important;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(168, 85, 247, 0.2)) !important;
   color: #38bdf8 !important;
-  border: 1px solid rgba(56, 189, 248, 0.35) !important;
-  font-weight: 600;
+  border: 1px solid rgba(56, 189, 248, 0.45) !important;
+  font-weight: 600 !important;
+  border-radius: 999px !important;
+  transition: all 0.25s ease !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  cursor: pointer !important;
 }
 
+.btn-floating-player:hover,
 .btn-pip:hover {
-  background: rgba(56, 189, 248, 0.3) !important;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.38), rgba(168, 85, 247, 0.38)) !important;
   color: #fff !important;
-  box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.5) !important;
+  transform: translateY(-1px);
 }
 
-/* ANDROID PICTURE-IN-PICTURE BODY OVERRIDE */
-body.pip-mode {
+/* ANDROID NATIVE PiP OVERRIDE ONLY (WHEN EXPLICITLY RUNNING IN NATIVE PiP WINDOW) */
+body.native-pip-active {
   background: #0f172a !important;
   overflow: hidden !important;
 }
 
-body.pip-mode nav,
-body.pip-mode header,
-body.pip-mode main,
-body.pip-mode footer,
-body.pip-mode #bottom-player,
-body.pip-mode .hero {
+body.native-pip-active nav,
+body.native-pip-active header,
+body.native-pip-active main,
+body.native-pip-active footer,
+body.native-pip-active #bottom-player,
+body.native-pip-active .hero {
   display: none !important;
 }
 
-body.pip-mode .floating-mini-player {
+body.native-pip-active .floating-mini-player {
   position: fixed !important;
   inset: 0 !important;
   width: 100% !important;

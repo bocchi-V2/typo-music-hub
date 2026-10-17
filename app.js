@@ -1331,7 +1331,7 @@ function showBottomPlayer(song) {
       <!-- Actions & Volume Panel (Responsive for Desktop & Mobile) -->
       <div class="bp-actions-panel">
         <div class="bp-actions">
-          <button class="btn-sm btn-pip" onclick="togglePictureInPictureMode()" title="เปิดโหมดป๊อปอัปย่อส่วน (Picture-in-Picture) ลอยได้บนหน้าจอ">📺 ป๊อปอัป PiP</button>
+          <button class="btn-sm btn-floating-player" id="btn-toggle-float" onclick="toggleFloatingPlayer(event)" title="${currentAppLang === 'th' ? 'เปิดโหมดเครื่องเล่นลอย (Floating Player) ลากย้ายได้อิสระ' : 'Toggle Floating Mini-Player'}">✨ แอพลอย</button>
           <button class="btn-sm btn-match" onclick="openAnimeMatchModal(${song.id})">${matchLabel}</button>
           <button class="btn-sm btn-bp-save ${isSaved ? 'saved' : ''}" data-save-id="${song.id}" onclick="toggleSaveSong(${song.id}, event)" title="${saveTooltip}">
             ${saveLabel}
@@ -2361,9 +2361,9 @@ function installPWA() {
       deferredPrompt = null;
     });
   } else {
-    alert(currentAppLang === 'th'
-      ? '💡 วิธีติดตั้งลงหน้าจอมือถือทันที:\n1. กดปุ่มตัวเลือก (จุด 3 จุด หรือปุ่มแชร์) ในเบราว์เซอร์\n2. เลือก "เพิ่มลงในหน้าจอหลัก" (Add to Home screen / Install App)\n3. เข้าใช้งานได้จากไอคอนหน้าจอมือถือได้ทันทีครับ!'
-      : '💡 How to install on mobile:\n1. Tap the browser menu (3 dots or Share icon)\n2. Select "Add to Home screen" or "Install App"\n3. Launch directly from your home screen!');
+    showToast(currentAppLang === 'th'
+      ? '💡 แตะเมนูเบราว์เซอร์ (จุด 3 จุด หรือปุ่มแชร์) แล้วเลือก "เพิ่มลงในหน้าจอหลัก" ได้ทันทีครับ!'
+      : '💡 Tap browser menu and select "Add to Home Screen" to install!');
   }
 }
 
@@ -2868,8 +2868,8 @@ if (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.App
 }
 
 // ============================================
-//  FLOATING MINI-PLAYER / PICTURE-IN-PICTURE MODE
-//  ป๊อปอัปย่อส่วนลอยได้ + PiP สำหรับเล่นเพลงต่อเนื่องเมื่อออกจากแอป
+//  FLOATING MINI-PLAYER ("แอพลอย")
+//  เครื่องเล่นเพลงลอยได้บนหน้าจอ ไม่ซ้อนป๊อปอัป ไม่ปิดบังหน้าจอ
 // ============================================
 
 let _miniPlayerVisible = false;
@@ -2877,7 +2877,7 @@ let _miniPlayerCollapsed = false;
 let _fmpDragOffset = { x: 0, y: 0 };
 let _fmpDragging = false;
 
-// เปิด/ปิดมินิเพลเยอร์ลอย
+// เปิดมินิเพลเยอร์ลอย
 function showMiniPlayer() {
   const fmp = document.getElementById('floating-mini-player');
   if (!fmp) return;
@@ -2885,12 +2885,23 @@ function showMiniPlayer() {
   _miniPlayerVisible = true;
   _miniPlayerCollapsed = false;
   syncMiniPlayerInfo();
+  startMiniPlayerProgressLoop();
 
   // ซ่อน mascot bubble
   const bubble = document.getElementById('floating-mascot-bubble');
   if (bubble) bubble.style.display = 'none';
+
+  // ตรวจสอบตำแหน่งให้อยู่ในมุมมองหน้าจอเสมอ
+  const rect = fmp.getBoundingClientRect();
+  if (rect.right > window.innerWidth || rect.bottom > window.innerHeight || rect.left < 0 || rect.top < 0) {
+    fmp.style.right = '20px';
+    fmp.style.bottom = '95px';
+    fmp.style.left = 'auto';
+    fmp.style.top = 'auto';
+  }
 }
 
+// ปิดมินิเพลเยอร์ลอย
 function closeMiniPlayer() {
   const fmp = document.getElementById('floating-mini-player');
   if (fmp) fmp.style.display = 'none';
@@ -2900,17 +2911,34 @@ function closeMiniPlayer() {
   const bubble = document.getElementById('floating-mascot-bubble');
   if (bubble) bubble.style.display = 'none';
 
-  // ออกจาก PiP mode ถ้าเปิดอยู่
   document.body.classList.remove('pip-mode');
+  document.body.classList.remove('native-pip-active');
 }
 
+// สลับเปิด/ปิดแอพลอย
+function toggleFloatingPlayer(e) {
+  if (e && e.stopPropagation) e.stopPropagation();
+  const fmp = document.getElementById('floating-mini-player');
+  const bubble = document.getElementById('floating-mascot-bubble');
+  if (!fmp) return;
+
+  if (_miniPlayerVisible || (bubble && bubble.style.display !== 'none')) {
+    closeMiniPlayer();
+    showToast(currentAppLang === 'th' ? 'ปิดเครื่องเล่นลอยแล้ว' : 'Floating player closed');
+  } else {
+    showMiniPlayer();
+    showToast(currentAppLang === 'th' ? '✨ เปิดโหมดเครื่องเล่นลอย (ลากย้ายตำแหน่งได้อิสระ)' : '✨ Floating player opened');
+  }
+}
+
+// ย่อเป็นฟองสบู่ลอย / ขยายกลับ
 function toggleMiniPlayerCollapse() {
   const fmp = document.getElementById('floating-mini-player');
   const bubble = document.getElementById('floating-mascot-bubble');
   if (!fmp || !bubble) return;
 
   if (!_miniPlayerCollapsed) {
-    // ย่อเป็นฟองสบู่
+    // ย่อเป็นฟองสบู่ลอย
     fmp.style.display = 'none';
     bubble.style.display = 'block';
     _miniPlayerCollapsed = true;
@@ -2927,6 +2955,7 @@ function expandMiniPlayer() {
   _miniPlayerVisible = true;
   _miniPlayerCollapsed = false;
   syncMiniPlayerInfo();
+  startMiniPlayerProgressLoop();
 }
 
 // สลับเล่น/หยุดจากมินิเพลเยอร์
@@ -2970,10 +2999,14 @@ function syncMiniPlayerPlayState() {
   const toggle = document.getElementById('fmp-play-toggle');
   const overlay = document.getElementById('fmp-play-overlay');
   const coverImg = document.getElementById('fmp-cover-img');
+  const muteBtn = document.getElementById('fmp-mute-btn');
   const isPlaying = currentAudio && !currentAudio.paused;
 
   if (toggle) toggle.textContent = isPlaying ? '⏸' : '▶';
   if (overlay) overlay.textContent = isPlaying ? '⏸' : '▶';
+  if (muteBtn && currentAudio) {
+    muteBtn.textContent = (currentAudio.muted || currentAudio.volume === 0) ? '🔇' : '🔊';
+  }
   if (coverImg) {
     if (isPlaying) {
       coverImg.classList.add('spinning');
@@ -2983,7 +3016,7 @@ function syncMiniPlayerPlayState() {
   }
 }
 
-// อัปเดต progress bar ของมินิเพลเยอร์ (เรียกจาก requestAnimationFrame)
+// อัปเดต progress bar ของมินิเพลเยอร์
 function updateMiniPlayerProgress() {
   if (!_miniPlayerVisible || !currentAudio) return;
   const fill = document.getElementById('fmp-progress-fill');
@@ -3003,90 +3036,21 @@ function startMiniPlayerProgressLoop() {
   }
 }
 
-// Picture-in-Picture Mode (รองรับทั้ง Android Native APK, Document PiP บนเบราว์เซอร์ และ Floating Overlay)
-async function togglePictureInPictureMode() {
-  // 1. สำหรับ Android native: ใช้ JavaScript Bridge เรียก PiP ผ่าน Java (ตรวจทั้ง enterPip และ enterPiP)
+// สำหรับความเข้ากันได้กับการเรียก togglePictureInPictureMode
+async function togglePictureInPictureMode(e) {
+  // สำหรับ Android native APK: ให้เรียก Java bridge เพื่อเข้า native PiP
   if (window.AndroidBridge && (typeof window.AndroidBridge.enterPip === 'function' || typeof window.AndroidBridge.enterPiP === 'function')) {
     try {
       const enterFn = window.AndroidBridge.enterPip || window.AndroidBridge.enterPiP;
       enterFn.call(window.AndroidBridge);
       showMiniPlayer();
-      document.body.classList.add('pip-mode');
       return;
-    } catch (e) {
-      console.warn('Native PiP failed, using web fallback:', e);
+    } catch (err) {
+      console.warn('Native PiP failed:', err);
     }
   }
-
-  // 2. สำหรับเบราว์เซอร์ที่รองรับ Document Picture-in-Picture API (Chrome 116+ Desktop/Android)
-  if ('documentPictureInPicture' in window) {
-    try {
-      if (window.documentPictureInPicture.window) {
-        window.documentPictureInPicture.window.close();
-        return;
-      }
-      const pipWindow = await window.documentPictureInPicture.requestWindow({
-        width: 340,
-        height: 480
-      });
-
-      // คัดลอก style sheets เข้าไปใน pipWindow เพื่อให้ดีไซน์สวยงามครบถ้วน
-      [...document.styleSheets].forEach(styleSheet => {
-        try {
-          if (styleSheet.href) {
-            const link = document.createElement('link');
-            link.rel = 'stylesheet';
-            link.href = styleSheet.href;
-            pipWindow.document.head.appendChild(link);
-          } else if (styleSheet.cssRules) {
-            const style = document.createElement('style');
-            [...styleSheet.cssRules].forEach(rule => {
-              style.appendChild(document.createTextNode(rule.cssText));
-            });
-            pipWindow.document.head.appendChild(style);
-          }
-        } catch (e) {}
-      });
-
-      const fmp = document.getElementById('floating-mini-player');
-      if (fmp) {
-        showMiniPlayer();
-        fmp.style.position = 'static';
-        fmp.style.transform = 'none';
-        fmp.style.width = '100%';
-        pipWindow.document.body.appendChild(fmp);
-      }
-
-      pipWindow.addEventListener('pagehide', () => {
-        if (fmp) {
-          fmp.style.position = '';
-          fmp.style.transform = '';
-          fmp.style.width = '';
-          document.body.appendChild(fmp);
-        }
-      });
-      return;
-    } catch (e) {
-      console.warn('Document PiP request failed:', e);
-    }
-  }
-
-  // 3. สำหรับ Capacitor / WebView
-  if (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.App) {
-    try {
-      window.Capacitor.Plugins.App.minimizeApp();
-    } catch (e) {}
-  }
-
-  // 4. Web fallback: แสดง floating mini-player ลอยในหน้าจอเว็บ
-  if (document.body.classList.contains('pip-mode')) {
-    document.body.classList.remove('pip-mode');
-    closeMiniPlayer();
-  } else {
-    showMiniPlayer();
-    document.body.classList.add('pip-mode');
-    startMiniPlayerProgressLoop();
-  }
+  // บนเว็บและอุปกรณ์ทั่วไป: สลับเปิด/ปิดโหมดแอพลอยตรงๆ ไม่มีป๊อปอัปซ้อนป๊อปอัป ไม่ปิดบังหน้าจอ
+  toggleFloatingPlayer(e);
 }
 
 // ลาก Mini-Player (Drag support)
@@ -3301,8 +3265,8 @@ function initSplashScreen() {
 //  ระบบซิงค์เพลง/อนิเมะสดอัตโนมัติ และอัปเดตแอป APK ทับของเดิมได้ 100% ไม่ต้องลบแอปเก่า
 // ============================================
 
-const CURRENT_APP_VERSION = 'v2.20261016.24';
-const CURRENT_VERSION_CODE = 1792162000;
+const CURRENT_APP_VERSION = 'v2.20261017.11020';
+const CURRENT_VERSION_CODE = 1792244037442;
 const GITHUB_REPO_OWNER = 'bocchi-V2';
 const GITHUB_REPO_NAME = 'typo-music-hub';
 const GITHUB_PAGES_BASE = 'https://bocchi-v2.github.io/typo-music-hub';
