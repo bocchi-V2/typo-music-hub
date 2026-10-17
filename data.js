@@ -13902,6 +13902,32 @@ const ANIMES = [
     "coverFallback": "https://media.kitsu.app/anime/poster_images/4363/medium.jpg",
     "anifumeUrl": "https://anifume.com/?s=Heaven's%20Lost%20Property",
     "mood": "hype"
+  },
+  {
+    "id": 1003,
+    "name": "Tsurezure Children",
+    "nameTH": "Tsurezure Children",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/13258/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/13258/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Tsurezure%20Children",
+    "mood": "hype"
+  },
+  {
+    "id": 1004,
+    "name": "Akagami no Shirayuki-hime 2nd Season",
+    "nameTH": "Akagami no Shirayuki-hime 2nd Season",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11179/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/11179/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Akagami%20no%20Shirayuki-hime%202nd%20Season",
+    "mood": "hype"
   }
 ];
 
