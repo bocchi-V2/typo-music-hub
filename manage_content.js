@@ -28,11 +28,21 @@ const { execSync } = require('child_process');
 const EXACT_ADULT_WORDS = [
   /\bhentai\b/i, /\becchi\b/i, /\berotica\b/i, /\br-?18\+?\b/i, /\b18\+/i, /\+18\b/i, /\b18\s*plus\b/i,
   /\badult\b/i, /\bsmut\b/i, /\byaoi\b/i, /\byuri\b/i, /\bsex\b/i, /\bporn\b/i,
-  /\bnsfw\b/i, /\bxxx\b/i, /\bh-?anime\b/i, /\buncensored\b/i, /\bnudity\b/i
+  /\bnsfw\b/i, /\bxxx\b/i, /\bh-?anime\b/i, /\buncensored\b/i, /\bnudity\b/i,
+  /\bnaked\b/i, /\bnude\b/i, /\btopless\b/i, /\bbikini\b/i, /\bswimsuit\b/i,
+  /\bundressed\b/i, /\blewd\b/i, /\boppai\b/i, /\bpantsu\b/i, /\blingerie\b/i,
+  /\bundead unluck\b/i, /\bkill la kill\b/i, /\bno game no life\b/i, /\bberserk\b/i,
+  /\bcyberpunk:? edgerunners\b/i, /\b2\.5 dimensional seduction\b/i, /\bbunny girl senpai\b/i,
+  /\bfree!:? eternal summer\b/i, /\bdance in the vampire bund\b/i, /\bichiban ushiro no daimaou\b/i,
+  /\bisekai maou\b/i, /\byusibu\b/i, /\bair gear\b/i, /\bpanty & stocking\b/i,
+  /\bcitrus\b/i, /\bgokukoku no brynhildr\b/i, /\bsono bisque doll\b/i, /\bmy dress-up darling\b/i,
+  /\brent-a-girlfriend\b/i, /\bkanojo, okarishimasu\b/i, /\b5-toubun no hanayome\b/i,
+  /\btengen toppa gurren lagann\b/i, /\bchobits\b/i, /\branma\b/i, /\bkonosuba\b/i
 ];
 
 const THAI_ADULT_WORDS = [
-  'เฮนไท', 'เอจจิ', 'เซ็กส์', 'โป๊', 'ลามก', 'ทะลึ่ง', 'เสียว', 'แนวh', 'แนว h', '18+'
+  'เฮนไท', 'เอจจิ', 'เซ็กส์', 'โป๊', 'ลามก', 'ทะลึ่ง', 'เสียว', 'แนวh', 'แนว h', '18+',
+  'เปลือย', 'แก้ผ้า', 'บิกินี่', 'ชุดชั้นใน', 'เปลือยอก', 'กึ่งเปลือย'
 ];
 
 function check18Plus(text) {
