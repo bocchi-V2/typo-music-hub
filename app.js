@@ -1004,10 +1004,37 @@ function playPreviousSong() {
   togglePlaySong(SONGS[prevIdx].id);
 }
 
-function togglePlaySong(songId) {
+async function togglePlaySong(songId) {
   const song = SONGS.find(s => s.id === songId);
-  const audioSrc = song ? (song.previewUrl || song.audioUrl || song.audioFallback) : null;
-  if (!song || !audioSrc) {
+  if (!song) return;
+
+  // Real-time audio accuracy resolution:
+  // If the song's audio was shared or flagged for resolution, fetch exact track from iTunes in real-time
+  let audioSrc = song.previewUrl || song.audioUrl || song.audioFallback;
+  if (song.needsLiveResolution && !song._resolved && navigator.onLine) {
+    try {
+      const cleanTitle = (song.title || '').replace(/\([^)]*\)/g, '').replace(/\[[^\]]*\]/g, '').trim();
+      const cleanArtist = (song.artist || '').replace(/\([^)]*\)/g, '').replace(/\[[^\]]*\]/g, '').trim();
+      const country = song.lang === 'th' ? 'th' : (song.lang === 'jp' ? 'jp' : (song.lang === 'kr' ? 'kr' : 'us'));
+      const res = await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(cleanTitle + ' ' + cleanArtist)}&country=${country}&entity=song&limit=1`);
+      const json = await res.json();
+      if (json && json.results && json.results[0] && json.results[0].previewUrl) {
+        audioSrc = json.results[0].previewUrl;
+        song.previewUrl = audioSrc;
+        song.audioUrl = audioSrc;
+        song.audioFallback = audioSrc;
+        song._resolved = true;
+        song.needsLiveResolution = false;
+        if (json.results[0].artworkUrl100) {
+          song.coverUrl = json.results[0].artworkUrl100.replace('100x100', '600x600');
+        }
+      }
+    } catch (e) {
+      console.warn('Real audio resolution notice:', e.message);
+    }
+  }
+
+  if (!audioSrc) {
     const songTitle = song ? `"${song.title}"` : (currentAppLang === 'th' ? 'เพลงนี้' : 'this track');
     showToast(currentAppLang === 'th' ? `🎧 ${songTitle} ยังไม่มีตัวอย่าง 30s ในระบบ — กดปุ่ม Spotify เพื่อฟังเพลงเต็ม` : `🎧 30s preview not available for ${songTitle} — Open Spotify for full audio`);
     return;
@@ -1800,7 +1827,7 @@ function renderSongsGrid() {
   const term = currentSearchTerm.toLowerCase().trim();
 
   const filtered = SONGS.filter(s => {
-    const matchLang = s.lang === currentLangFilter;
+    const matchLang = currentLangFilter === 'all' || s.lang === currentLangFilter;
     const matchMood = currentMoodFilter === 'all' || normalizeMood(s.mood) === currentMoodFilter;
 
     const anime = ANIME_MAP.get(s.animeId);
@@ -1811,6 +1838,9 @@ function renderSongsGrid() {
       || s.artist.toLowerCase().includes(term)
       || s.tags.some(t => t.toLowerCase().includes(term))
       || animeNames.includes(term);
+
+    // If searching by term, find across all zones intelligently
+    if (term && matchSearch && matchMood) return true;
 
     return matchLang && matchMood && matchSearch;
   });
@@ -1851,7 +1881,7 @@ function updateZoneBanner() {
   const bannerText = document.getElementById('zone-banner-text');
   if (!bannerText) return;
 
-  const count = SONGS.filter(s => s.lang === currentLangFilter).length;
+  const count = currentLangFilter === 'all' ? SONGS.length : SONGS.filter(s => s.lang === currentLangFilter).length;
   let zoneName = '';
   if (currentAppLang === 'th') {
     if (currentLangFilter === 'th') zoneName = 'โซนเพลงไทย';
@@ -1859,16 +1889,16 @@ function updateZoneBanner() {
     else if (currentLangFilter === 'jp') zoneName = 'โซนเพลงญี่ปุ่น / อนิเมะ';
     else if (currentLangFilter === 'lao') zoneName = '🇱🇦 โซนเพลงลาว / อีสาน';
     else if (currentLangFilter === 'kr') zoneName = '🇰🇷 โซนเพลงเกาหลี / K-Pop';
-    else zoneName = 'ทุกลำดับเพลง';
-    bannerText.innerHTML = `📍 กำลังแสดง: <strong>${zoneName}</strong> (${count} เพลง) — แสดงเฉพาะเพลงในโซนนี้`;
+    else zoneName = 'รวมทุกโซนเพลง';
+    bannerText.innerHTML = `📍 กำลังแสดง: <strong>${zoneName}</strong> (${count.toLocaleString()} เพลง) — ${currentLangFilter === 'all' ? 'รวมเพลงทุกหมวด' : 'แสดงเฉพาะเพลงในโซนนี้'}`;
   } else {
     if (currentLangFilter === 'th') zoneName = 'Thai Songs Zone';
     else if (currentLangFilter === 'en') zoneName = 'Global Songs Zone (English)';
     else if (currentLangFilter === 'jp') zoneName = 'Japanese & Anime Zone';
     else if (currentLangFilter === 'lao') zoneName = 'Lao & Isan Zone';
     else if (currentLangFilter === 'kr') zoneName = 'K-Pop Zone';
-    else zoneName = 'All Tracks';
-    bannerText.innerHTML = `📍 Active: <strong>${zoneName}</strong> (${count} songs) — Showing this zone only`;
+    else zoneName = 'All Zones';
+    bannerText.innerHTML = `📍 Active: <strong>${zoneName}</strong> (${count.toLocaleString()} songs) — ${currentLangFilter === 'all' ? 'Showing all genres' : 'Showing this zone only'}`;
   }
 }
 
@@ -1897,7 +1927,7 @@ function switchStudioWorkspace(ws, smoothScroll = false) {
   // Hide all first
   [wsMusic, wsPairs, wsVersus, wsSaved].forEach(w => w && w.classList.add('hidden'));
 
-  const musicZones = ['th', 'en', 'jp', 'lao', 'kr'];
+  const musicZones = ['th', 'en', 'jp', 'lao', 'kr', 'all'];
   if (musicZones.includes(ws)) {
     if (wsMusic) wsMusic.classList.remove('hidden');
 
@@ -3986,9 +4016,15 @@ function updateStats() {
   const hubTh = document.getElementById('hub-count-th');
   const hubEn = document.getElementById('hub-count-en');
   const hubJp = document.getElementById('hub-count-jp');
-  if (hubTh) hubTh.textContent = `${thCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
-  if (hubEn) hubEn.textContent = `${enCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
-  if (hubJp) hubJp.textContent = `${jpCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  const hubKr = document.getElementById('hub-count-kr');
+  const hubLao = document.getElementById('hub-count-lao');
+  const hubAll = document.getElementById('hub-count-all');
+  if (hubTh) hubTh.textContent = `${thCount.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (hubEn) hubEn.textContent = `${enCount.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (hubJp) hubJp.textContent = `${jpCount.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (hubKr) hubKr.textContent = `${krCount.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (hubLao) hubLao.textContent = `${laoCount.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (hubAll) hubAll.textContent = `${SONGS.length.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
 
   const szTh = document.getElementById('sz-sub-th');
   const szEn = document.getElementById('sz-sub-en');
