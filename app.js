@@ -10,6 +10,20 @@
 let ANIME_MAP = new Map();
 let SONG_MAP = new Map();
 
+function restoreCustomAnimePairs() {
+  try {
+    const raw = localStorage.getItem('typo_custom_anime_pairs');
+    if (!raw) return;
+    const customPairs = JSON.parse(raw);
+    for (const [sId, aId] of Object.entries(customPairs)) {
+      const s = SONG_MAP.get(parseInt(sId));
+      if (s && ANIME_MAP.has(aId)) {
+        s.animeId = aId;
+      }
+    }
+  } catch (e) {}
+}
+
 function initDataMaps() {
   if (typeof ANIMES !== 'undefined' && Array.isArray(ANIMES)) {
     ANIME_MAP = new Map(ANIMES.map(a => [a.id, a]));
@@ -17,6 +31,7 @@ function initDataMaps() {
   if (typeof SONGS !== 'undefined' && Array.isArray(SONGS)) {
     SONG_MAP = new Map(SONGS.map(s => [s.id, s]));
   }
+  restoreCustomAnimePairs();
 }
 initDataMaps();
 
@@ -350,10 +365,13 @@ function getAnimeDisplayName(anime) {
 
 function getAnimeSecondaryName(anime) {
   if (!anime) return '';
+  const genres = Array.isArray(anime.genre)
+    ? anime.genre
+    : (typeof anime.genre === 'string' ? anime.genre.split(',').map(s => s.trim()) : []);
   if (currentAppLang === 'en') {
-    return (anime.genre || []).map(translateGenre).join(', ');
+    return genres.map(translateGenre).join(', ');
   }
-  return anime.name ? `${anime.name} • ${(anime.genre || []).join(', ')}` : (anime.genre || []).join(', ');
+  return anime.name ? `${anime.name} • ${genres.join(', ')}` : genres.join(', ');
 }
 
 function getZoneName(zone) {
@@ -1011,7 +1029,8 @@ async function togglePlaySong(songId) {
   // Real-time audio accuracy resolution:
   // If the song's audio was shared or flagged for resolution, fetch exact track from iTunes in real-time
   let audioSrc = song.previewUrl || song.audioUrl || song.audioFallback;
-  if (song.needsLiveResolution && !song._resolved && navigator.onLine) {
+  const isDeezer = audioSrc && audioSrc.includes('dzcdn.net');
+  if ((song.needsLiveResolution || isDeezer) && !song._resolved && navigator.onLine) {
     try {
       const cleanTitle = (song.title || '').replace(/\([^)]*\)/g, '').replace(/\[[^\]]*\]/g, '').trim();
       const cleanArtist = (song.artist || '').replace(/\([^)]*\)/g, '').replace(/\[[^\]]*\]/g, '').trim();
@@ -1551,9 +1570,7 @@ function updateZoneCounterUI() {
 
 // ---- RANDOM EXECUTION WITH DICE SFX & 3D TUMBLE ----
 function renderRandomShowcase(song) {
-  const pair = ANIME_PAIRS.find(p => p.songId === song.id);
-  const anime = ANIMES.find(a => a.id === song.animeId) || (pair ? ANIMES.find(a => a.id === pair.animeId) : null) ||
-                { name: song.title || '', nameTH: song.artist || '', coverUrl: song.coverUrl || '', coverFallback: 'favicon-logo.jpg', genre: [], anifumeUrl: '#' };
+  const anime = ANIME_MAP.get(song.animeId) || (ANIMES && ANIMES.find(a => a.id === song.animeId)) || ANIMES[0];
   const isPlaying = currentPlayingId === song.id && currentAudio && !currentAudio.paused;
   const percent = Math.round(currentVolume * 100);
   const icon = getVolumeIcon(currentVolume);
@@ -1736,8 +1753,13 @@ const BLOCKED_GENRES = [
 
 function isAnimeAppropriate(anime) {
   if (!anime) return false;
-  const genreList = (anime.genre || []).map(g => String(g).toLowerCase());
-  const nameStr = `${anime.name || ''} ${anime.nameTH || ''}`.toLowerCase();
+  let genreList = [];
+  if (Array.isArray(anime.genre)) {
+    genreList = anime.genre.map(g => String(g).toLowerCase());
+  } else if (typeof anime.genre === 'string') {
+    genreList = anime.genre.split(',').map(g => g.trim().toLowerCase());
+  }
+  const nameStr = `${anime.name || ''} ${anime.nameTH || ''} ${genreList.join(' ')}`.toLowerCase();
   for (const b of BLOCKED_GENRES) {
     const bLower = b.toLowerCase();
     if (genreList.some(g => g.includes(bLower)) || nameStr.includes(bLower)) {
@@ -1748,9 +1770,7 @@ function isAnimeAppropriate(anime) {
 }
 
 function songCardHTML(song, index = 0) {
-  // ค้นหาอนิเมะจาก animeId ของเพลง ถ้าไม่เจอให้แสดงข้อมูลเปล่า ไม่ fallback ไปใช้อนิเมะอื่นที่ไม่เกี่ยวข้อง
-  const anime = (ANIMES && song.animeId && ANIMES.find(a => a.id === song.animeId)) ||
-                { name: song.title || '', nameTH: song.artist || '', coverUrl: song.coverUrl || '', coverFallback: 'favicon-logo.jpg', genre: [] };
+  const anime = ANIME_MAP.get(song.animeId) || (ANIMES && ANIMES.find(a => a.id === song.animeId)) || ANIMES[0];
   const tags = getSongTagsForDisplay(song).map(t => `<span class="song-tag">${t}</span>`).join('');
   const isPlaying = currentPlayingId === song.id && currentAudio && !currentAudio.paused;
   const moodVal = song.mood || 'chill';
@@ -2293,20 +2313,16 @@ function findPairByAnime(animeId) {
   }, 100);
 }
 
-// openAnimeMatchModal now shows default pairing directly
+// openAnimeMatchModal shows pairing details in modal-overlay
 function openAnimeMatchModal(songId) {
-  const song = SONGS.find(s => s.id === songId);
+  const song = SONG_MAP.get(songId) || SONGS.find(s => s.id === songId);
   if (!song) return;
 
-  const pairs = ANIME_PAIRS.filter(p => p.songId === songId);
-  const anime = ANIMES.find(a => a.id === song.animeId) || (pairs.length ? ANIMES.find(a => a.id === pairs[0].animeId) : ANIMES[0]);
+  const anime = ANIME_MAP.get(song.animeId) || (ANIMES && ANIMES.find(a => a.id === song.animeId)) || ANIMES[0];
+  if (!anime) return;
 
-  if (!anime) {
-    openAnimePicker(songId);
-    return;
-  }
-  // Show pair detail directly
-  selectAnimePair(songId, anime.id);
+  renderAnimeMatchModalContent(song, anime);
+  document.getElementById('modal-overlay').classList.remove('hidden');
 }
 
 function closeModal() {
@@ -2400,58 +2416,113 @@ function installPWA() {
 // ---- ANIME PICKER: เลือกเพลงแล้วเลือกอนิเมะที่เข้ากัน ----
 let _pickerSongId = null;
 
+function renderPickerAnimeGrid(song, searchTerm = '') {
+  const grid = document.getElementById('anime-picker-grid');
+  if (!grid) return;
+
+  const songMood = song.mood || 'chill';
+  const term = searchTerm.toLowerCase().trim();
+
+  let animesToShow = ANIMES.filter(a => isAnimeAppropriate(a));
+  if (term) {
+    animesToShow = animesToShow.filter(a => {
+      const matchName = (a.name || '').toLowerCase().includes(term);
+      const matchTH = (a.nameTH || '').toLowerCase().includes(term);
+      const matchGenre = (a.genre || []).some(g => String(g).toLowerCase().includes(term));
+      return matchName || matchTH || matchGenre;
+    });
+  } else {
+    const matched = animesToShow.filter(a => a.mood === songMood);
+    const others = animesToShow.filter(a => a.mood !== songMood);
+    animesToShow = [...matched.slice(0, 45), ...others.slice(0, 35)];
+  }
+
+  const matchBadgeText = currentAppLang === 'th' ? '★ เข้ากับเพลง' : '★ Mood Match';
+  const noResultText = currentAppLang === 'th' ? 'ไม่พบอนิเมะที่ตรงกับคำค้นหา' : 'No anime found matching your query';
+
+  if (animesToShow.length === 0) {
+    grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:2.5rem 1rem;color:var(--text-muted);font-size:0.95rem;">${noResultText}</div>`;
+    return;
+  }
+
+  grid.innerHTML = animesToShow.map(anime => {
+    const isMoodMatch = anime.mood === songMood;
+    const isSelected = song.animeId === anime.id;
+    return `
+      <div class="anime-picker-card ${isMoodMatch ? 'mood-match' : ''} ${isSelected ? 'selected-pair' : ''}"
+        onclick="selectAnimePair(${song.id}, ${anime.id})"
+        title="${getAnimeDisplayName(anime)}">
+        ${animeImgTag(anime, 'picker-anime-img')}
+        <div class="picker-anime-info">
+          ${isSelected ? `<span class="picker-match-badge" style="color:#38bdf8;">✓ คู่ปัจจุบัน</span>` : (isMoodMatch ? `<span class="picker-match-badge">${matchBadgeText}</span>` : '')}
+          <div class="picker-anime-name">${getAnimeDisplayName(anime)}</div>
+          <div class="picker-anime-en">${getAnimeSecondaryName(anime)}</div>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+function filterPickerAnimes(val) {
+  if (!_pickerSongId) return;
+  const song = SONG_MAP.get(_pickerSongId) || SONGS.find(s => s.id === _pickerSongId);
+  if (song) {
+    renderPickerAnimeGrid(song, val);
+  }
+}
+
 function openAnimePicker(songId) {
-  const song = SONGS.find(s => s.id === songId);
+  const song = SONG_MAP.get(songId) || SONGS.find(s => s.id === songId);
   if (!song) return;
   _pickerSongId = songId;
 
   const songMood = song.mood || 'chill';
-  const safeAnimes = ANIMES.filter(a => isAnimeAppropriate(a));
-  const matchedAnimes = safeAnimes.filter(a => a.mood === songMood).slice(0, 30);
-  const otherAnimes = safeAnimes.filter(a => a.mood !== songMood).slice(0, 20);
-  const suggestedAnimes = [...matchedAnimes, ...otherAnimes];
-
   const content = document.getElementById('anime-picker-content');
   if (!content) return;
 
   const promptText = currentAppLang === 'th'
-    ? `เลือกอนิเมะที่เข้ากับอารมณ์เพลงนี้ — อนิเมะมู้ด <span style="color:var(--primary);font-weight:700;">${moodLabel(songMood)}</span> แนะนำเป็นอันดับต้น`
-    : `Select an anime matching this song's vibe — <span style="color:var(--primary);font-weight:700;">${moodLabel(songMood)}</span> anime recommended first`;
+    ? `เลือกอนิเมะจากทั้งหมด 1,000 เรื่อง หรือพิมพ์ค้นหาได้ทันที — มู้ด <span style="color:var(--primary);font-weight:700;">${moodLabel(songMood)}</span> แนะนำเป็นอันดับต้น`
+    : `Select from 1,000 verified animes or search — vibe <span style="color:var(--primary);font-weight:700;">${moodLabel(songMood)}</span> recommended first`;
 
-  const matchBadgeText = currentAppLang === 'th' ? '★ เข้ากัน' : '★ Match';
-  const cancelText = currentAppLang === 'th' ? 'ยกเลิก' : 'Cancel';
+  const cancelText = currentAppLang === 'th' ? 'ปิดหน้าต่าง' : 'Close';
 
   content.innerHTML = `
-    <div style="margin-bottom:1.4rem;">
-      <div style="font-size:0.78rem;font-weight:700;color:var(--primary);letter-spacing:1px;text-transform:uppercase;margin-bottom:0.5rem;">ANIME PAIRING STUDIO</div>
-      <div style="font-size:1.3rem;font-weight:800;color:#fff;margin-bottom:0.3rem;">🎵 ${song.title}</div>
-      <div style="color:var(--text-muted);font-size:0.9rem;margin-bottom:0.8rem;">${currentAppLang === 'th' ? 'โดย' : 'By'} ${song.artist} • ${moodLabel(songMood)}</div>
-      <div style="font-size:0.95rem;color:var(--text-muted);">
+    <div style="margin-bottom:1rem;">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;">
+        <div>
+          <div style="font-size:0.75rem;font-weight:700;color:var(--primary);letter-spacing:1px;text-transform:uppercase;margin-bottom:0.3rem;">ANIME PAIRING STUDIO</div>
+          <div style="font-size:1.25rem;font-weight:800;color:#fff;margin-bottom:0.2rem;">🎵 ${song.title}</div>
+          <div style="color:var(--text-muted);font-size:0.85rem;">${currentAppLang === 'th' ? 'โดย' : 'By'} ${song.artist} • ${moodLabel(songMood)}</div>
+        </div>
+        <button onclick="closeAnimePicker()" style="background:rgba(255,255,255,0.08);border:none;color:#fff;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;">✕</button>
+      </div>
+      <div style="font-size:0.85rem;color:var(--text-muted);margin-top:0.6rem;">
         ${promptText}
+      </div>
+
+      <!-- Quick Search Bar -->
+      <div style="margin-top:0.8rem;position:relative;">
+        <input type="text" id="anime-picker-search"
+          placeholder="${currentAppLang === 'th' ? '🔍 พิมพ์ค้นหาอนิเมะจาก 1,000 เรื่อง...' : '🔍 Search anime from 1,000 titles...'}"
+          oninput="filterPickerAnimes(this.value)"
+          style="width:100%;padding:0.65rem 1rem 0.65rem 2.4rem;background:rgba(15,23,42,0.8);border:1px solid rgba(255,255,255,0.15);border-radius:10px;color:#fff;font-family:Kanit,sans-serif;font-size:0.9rem;outline:none;" />
+        <span style="position:absolute;left:0.8rem;top:50%;transform:translateY(-50%);opacity:0.6;">🔍</span>
       </div>
     </div>
 
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:0.9rem;max-height:55vh;overflow-y:auto;padding-right:4px;">
-      ${suggestedAnimes.map(anime => {
-        const isMoodMatch = anime.mood === songMood;
-        return `
-          <div class="anime-picker-card ${isMoodMatch ? 'mood-match' : ''}" onclick="selectAnimePair(${song.id}, ${anime.id})" title="${getAnimeDisplayName(anime)}">
-            ${animeImgTag(anime, 'picker-anime-img')}
-            <div class="picker-anime-info">
-              ${isMoodMatch ? `<span class="picker-match-badge">${matchBadgeText}</span>` : ''}
-              <div class="picker-anime-name">${getAnimeDisplayName(anime)}</div>
-              <div class="picker-anime-en">${getAnimeSecondaryName(anime)}</div>
-            </div>
-          </div>`;
-      }).join('')}
+    <div id="anime-picker-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(125px,1fr));gap:0.85rem;max-height:55vh;overflow-y:auto;padding-right:4px;">
     </div>
 
-    <div style="margin-top:1.2rem;padding-top:1rem;border-top:1px solid var(--glass-border);text-align:center;">
-      <button onclick="closeAnimePicker()" style="background:none;border:1px solid var(--glass-border);color:var(--text-muted);padding:0.5rem 1.5rem;border-radius:9999px;cursor:pointer;font-family:Kanit,sans-serif;">${cancelText}</button>
+    <div style="margin-top:1rem;padding-top:0.8rem;border-top:1px solid var(--glass-border);text-align:center;">
+      <button onclick="closeAnimePicker()" style="background:none;border:1px solid var(--glass-border);color:var(--text-muted);padding:0.45rem 1.4rem;border-radius:9999px;cursor:pointer;font-family:Kanit,sans-serif;font-size:0.85rem;">${cancelText}</button>
     </div>
   `;
 
+  renderPickerAnimeGrid(song, '');
   document.getElementById('anime-picker-overlay').classList.remove('hidden');
+  setTimeout(() => {
+    const input = document.getElementById('anime-picker-search');
+    if (input) input.focus();
+  }, 100);
 }
 
 function closeAnimePicker() {
@@ -2462,10 +2533,51 @@ function closeAnimePicker() {
 
 function selectAnimePair(songId, animeId) {
   closeAnimePicker();
-  const song = SONGS.find(s => s.id === songId);
-  const anime = ANIMES.find(a => a.id === animeId);
+  const song = SONG_MAP.get(songId) || SONGS.find(s => s.id === songId);
+  const anime = ANIME_MAP.get(animeId) || ANIMES.find(a => a.id === animeId);
   if (!song || !anime) return;
 
+  // 1. Update Song Model
+  song.animeId = animeId;
+  SONG_MAP.set(song.id, song);
+
+  // 2. Persist custom pairing to localStorage
+  try {
+    const customPairs = JSON.parse(localStorage.getItem('typo_custom_anime_pairs') || '{}');
+    customPairs[songId] = animeId;
+    localStorage.setItem('typo_custom_anime_pairs', JSON.stringify(customPairs));
+  } catch (e) {}
+
+  // 3. Update Random Showcase if this song is currently shown
+  if (typeof lastRandomSongId !== 'undefined' && lastRandomSongId === songId) {
+    renderRandomShowcase(song);
+  }
+
+  // 4. Update the song card in songs-grid
+  const cardElem = document.getElementById(`song-${songId}`);
+  if (cardElem) {
+    cardElem.outerHTML = songCardHTML(song, 0);
+  }
+
+  // 5. Update bottom player if this song is currently loaded/playing
+  if (currentPlayingId === songId) {
+    renderBottomPlayer(song);
+  }
+
+  // 6. If modal-overlay is currently open, update its content directly without reopening or nested popups
+  const modalOverlay = document.getElementById('modal-overlay');
+  if (modalOverlay && !modalOverlay.classList.contains('hidden')) {
+    renderAnimeMatchModalContent(song, anime);
+  }
+
+  // 7. Show toast feedback
+  const animeName = currentAppLang === 'th' ? (anime.nameTH || anime.name) : (anime.name || anime.nameTH);
+  showToast(currentAppLang === 'th'
+    ? `🌸 เปลี่ยนคู่ตัดต่อเป็น "${animeName}" เรียบร้อย!`
+    : `🌸 Switched matched anime to "${animeName}"!`);
+}
+
+function renderAnimeMatchModalContent(song, anime) {
   const fallbackCover = getSongFallbackCover(song);
   const isPlaying = currentPlayingId === song.id && currentAudio && !currentAudio.paused;
   const isSaved = isSongSaved(song.id);
@@ -2474,7 +2586,7 @@ function selectAnimePair(songId, animeId) {
     ? (currentAppLang === 'th' ? '❤️ บันทึกแล้ว' : '❤️ Saved')
     : (currentAppLang === 'th' ? '🤍 บันทึกเพลงนี้' : '🤍 Save this song');
 
-  const anifumeBtnText = currentAppLang === 'th' ? '🌸 ดูข้อมูลและตอนที่ Anifume →' : '🌸 View details on Anifume →';
+  const anifumeBtnText = currentAppLang === 'th' ? '🌸 ดูข้อมูลบน Anifume →' : '🌸 View details on Anifume →';
   const switchAnimeText = currentAppLang === 'th' ? '🔄 เปลี่ยนอนิเมะ' : '🔄 Switch Anime';
   const recAnimeHeader = currentAppLang === 'th' ? '✅ อนิเมะแนะนำสำหรับตัดต่อคู่กัน' : '✅ Recommended Anime Pairing for Editing';
 
@@ -2516,8 +2628,6 @@ function selectAnimePair(songId, animeId) {
       </div>
     </div>
   `;
-
-  document.getElementById('modal-overlay').classList.remove('hidden');
 }
 
 // Only one toggleMenu function
