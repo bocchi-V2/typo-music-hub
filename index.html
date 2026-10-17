@@ -711,15 +711,15 @@
   <!-- BOTTOM PLAYER -->
   <div id="bottom-player" class="bottom-player"></div>
 
-  <script src="data.js"></script>
-  <script src="app.js"></script>
+  <script src="data.js?v=20261018.1"></script>
+  <script src="app.js?v=20261018.1"></script>
 
   <!-- Service Worker Registration & Offline Support -->
   <script>
     // ลงทะเบียน Service Worker เพื่อให้แอพทำงานแบบ offline ได้
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js')
+        navigator.serviceWorker.register('./sw.js?v=35')
           .then((reg) => {
             console.log('✅ Service Worker ลงทะเบียนสำเร็จ – แอพพร้อมใช้งาน Offline!');
             // เช็คอัปเดตใหม่ทุกครั้งที่เปิดแอพ (ถ้ามีเน็ต)

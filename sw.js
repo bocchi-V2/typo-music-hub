@@ -1,4 +1,4 @@
-const CACHE_NAME = 'haimiya-typo-v32';
+const CACHE_NAME = 'haimiya-typo-v35';
 const AUDIO_CACHE_NAME = 'haimiya-audio-vault';
 
 // ไฟล์ที่ต้องแคชเพื่อให้แอพทำงานแบบ offline ได้ 100%
@@ -131,8 +131,8 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // 2. สำหรับ version.json หรือ request ที่มี _t (Live Content Sync) ให้ดึงสดจากเน็ตก่อนเสมอ (Network-First)
-  if (url.pathname.endsWith('version.json') || url.searchParams.has('_t')) {
+  // 2. สำหรับ version.json, data.js, app.js หรือ request ที่มี _t/v ให้ดึงสดจากเน็ตก่อนเสมอ (Network-First)
+  if (url.pathname.endsWith('version.json') || url.pathname.endsWith('data.js') || url.pathname.endsWith('app.js') || url.searchParams.has('_t') || url.searchParams.has('v')) {
     event.respondWith(
       fetch(event.request).then((networkRes) => {
         if (networkRes && networkRes.status === 200) {
