@@ -13752,6 +13752,32 @@ const ANIMES = [
     "coverFallback": "https://media.kitsu.app/anime/poster_images/11179/medium.jpg",
     "anifumeUrl": "https://anifume.com/?s=Akagami%20no%20Shirayuki-hime%202nd%20Season",
     "mood": "hype"
+  },
+  {
+    "id": 1005,
+    "name": "Rokudenashi Majutsu Koushi to Akashic Records",
+    "nameTH": "Rokudenashi Majutsu Koushi to Akashic Records",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11942/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/11942/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Rokudenashi%20Majutsu%20Koushi%20to%20Akashic%20Records",
+    "mood": "hype"
+  },
+  {
+    "id": 1006,
+    "name": "Inu x Boku SS",
+    "nameTH": "Inu x Boku SS",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/6439/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/6439/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Inu%20x%20Boku%20SS",
+    "mood": "hype"
   }
 ];
 
@@ -536838,6 +536864,81 @@ const SONGS = [
     "typoIdea": "ตัวหนังสือหนาสไตล์ Bold Chrome หรือ Cyberpunk Glitch สีม่วงนีออน-เขียวนีออน ขยายสลับกระตุกสั่นตามเสียง Bass Drop และจังหวะกลองสับแบบบราซิลเลียนฟังก์",
     "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/03/35/78/03357873-db48-8882-9169-b6779bb26ac0/mzaf_5273366577958528387.plus.aac.p.m4a",
     "audioFallback": null
+  },
+  {
+    "id": 19802,
+    "title": "同往 (《嫁金钗》电视剧陆濯·情深曲)",
+    "artist": "ZHANG HAO",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ec/a2/e0/eca2e07a-e227-08b1-4828-eb72232b19d6/4896043565776.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4f/5e/8e/4f5e8ef5-85b6-b350-b5b2-9b178af1ef0f/mzaf_13411093397273909039.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E5%90%8C%E5%BE%80%20(%E3%80%8A%E5%AB%81%E9%87%91%E9%92%97%E3%80%8B%E7%94%B5%E8%A7%86%E5%89%A7%E9%99%86%E6%BF%AF%C2%B7%E6%83%85%E6%B7%B1%E6%9B%B2)%20ZHANG%20HAO",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตTH"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 345,
+    "animeMatch": [
+      345
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Skip to Loafer",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 19803,
+    "title": "Swan's War (feat. SKY-HI, BE:FIRST, MAZZEL, REIKO & RUI)",
+    "artist": "BMSG SKY",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ea/3f/35/ea3f354d-55a1-a420-d045-0c70a07ed0b6/ANTCD-58989.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8e/59/64/8e59641b-0a2d-96aa-9685-2ad6b0edb9d3/mzaf_13188476918446035667.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Swan's%20War%20(feat.%20SKY-HI%2C%20BE%3AFIRST%2C%20MAZZEL%2C%20REIKO%20%26%20RUI)%20BMSG%20SKY",
+    "mood": "hype",
+    "tags": [
+      "มันส์สะใจ",
+      "บีทกระแทก",
+      "ไวรัล",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "jp",
+    "animeId": 143,
+    "animeMatch": [
+      143
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "id": 19804,
+    "title": "Mama's Boy",
+    "artist": "River Cain",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/ca/23/20/ca23209c-b8a6-bd08-12f1-14db7396c806/artwork.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3f/84/35/3f84352d-dfd1-d8fc-8f81-03cf08ea49b9/mzaf_3560730875622777484.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Mama's%20Boy%20River%20Cain",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตUS"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 912,
+    "animeMatch": [
+      912
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ HIDARI (Pilot Film)",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
   }
 ];
 
@@ -542709,5 +542810,29 @@ const ANIME_PAIRS = [
     "badge": "✨ ประจำวันใหม่",
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Tensei shitara Slime Datta Ken OVA",
     "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "songId": 19802,
+    "animeId": 345,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Skip to Loafer",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 19803,
+    "animeId": 143,
+    "category": "hype",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "songId": 19804,
+    "animeId": 912,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ HIDARI (Pilot Film)",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
   }
 ];
