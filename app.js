@@ -119,6 +119,7 @@ const I18N = {
     zoneJp: "โซนเพลงญี่ปุ่น / อนิเมะ",
     zoneLao: "🇱🇦 โซนเพลงลาว / อีสาน",
     zoneKr: "🇰🇷 โซนเพลงเกาหลี / K-Pop",
+    zoneFunk: "⚡ โซนลับ Funk (Brazilian & Phonk)",
     searchPlaceholder: "ค้นหาเพลง, ศิลปิน, แท็ก หรือชื่ออนิเมะ...",
     allMoods: "ทุกอารมณ์",
     moodSad: "💔 เศร้า",
@@ -228,6 +229,7 @@ const I18N = {
     zoneJp: "Japanese & Anime Zone",
     zoneLao: "🇱🇦 Lao & Isan Zone",
     zoneKr: "🇰🇷 K-Pop Zone",
+    zoneFunk: "⚡ Secret Funk Zone (Brazilian & Phonk)",
     searchPlaceholder: "Search song, artist, tag, or anime...",
     allMoods: "All Moods",
     moodSad: "💔 Sad",
@@ -381,6 +383,7 @@ function getZoneName(zone) {
     if (zone === 'jp') return '🇯🇵 โซนเพลงญี่ปุ่น / อนิเมะ';
     if (zone === 'lao') return '🇱🇦 โซนเพลงลาว / อีสาน';
     if (zone === 'kr') return '🇰🇷 โซนเพลงเกาหลี / K-Pop';
+    if (zone === 'funk') return '⚡ โซนลับ Funk & Phonk';
     return '🌐 สุ่มรวมทุกโซน';
   } else {
     if (zone === 'th') return '🇹🇭 Thai Songs Zone';
@@ -388,6 +391,7 @@ function getZoneName(zone) {
     if (zone === 'jp') return '🇯🇵 Japanese & Anime Zone';
     if (zone === 'lao') return '🇱🇦 Lao & Isan Zone';
     if (zone === 'kr') return '🇰🇷 K-Pop Zone';
+    if (zone === 'funk') return '⚡ Secret Funk & Phonk Zone';
     return '🌐 All Combined Zones';
   }
 }
@@ -403,12 +407,14 @@ const langPillText = l => {
     if (l === 'jp') return '🇯🇵 ญี่ปุ่น';
     if (l === 'lao') return '🇱🇦 ลาว';
     if (l === 'kr') return '🇰🇷 เกาหลี';
+    if (l === 'funk') return '⚡ Funk';
     return '🇹🇭 ไทย';
   } else {
     if (l === 'en') return '🇬🇧 Global';
     if (l === 'jp') return '🇯🇵 Japanese';
     if (l === 'lao') return '🇱🇦 Lao';
     if (l === 'kr') return '🇰🇷 K-Pop';
+    if (l === 'funk') return '⚡ Funk';
     return '🇹🇭 Thai';
   }
 };
@@ -1909,6 +1915,7 @@ function updateZoneBanner() {
     else if (currentLangFilter === 'jp') zoneName = 'โซนเพลงญี่ปุ่น / อนิเมะ';
     else if (currentLangFilter === 'lao') zoneName = '🇱🇦 โซนเพลงลาว / อีสาน';
     else if (currentLangFilter === 'kr') zoneName = '🇰🇷 โซนเพลงเกาหลี / K-Pop';
+    else if (currentLangFilter === 'funk') zoneName = '⚡ โซนลับ Funk & Phonk (Spotify Secret Zone)';
     else zoneName = 'รวมทุกโซนเพลง';
     bannerText.innerHTML = `📍 กำลังแสดง: <strong>${zoneName}</strong> (${count.toLocaleString()} เพลง) — ${currentLangFilter === 'all' ? 'รวมเพลงทุกหมวด' : 'แสดงเฉพาะเพลงในโซนนี้'}`;
   } else {
@@ -1917,6 +1924,7 @@ function updateZoneBanner() {
     else if (currentLangFilter === 'jp') zoneName = 'Japanese & Anime Zone';
     else if (currentLangFilter === 'lao') zoneName = 'Lao & Isan Zone';
     else if (currentLangFilter === 'kr') zoneName = 'K-Pop Zone';
+    else if (currentLangFilter === 'funk') zoneName = '⚡ Secret Funk & Phonk Zone (Spotify)';
     else zoneName = 'All Zones';
     bannerText.innerHTML = `📍 Active: <strong>${zoneName}</strong> (${count.toLocaleString()} songs) — ${currentLangFilter === 'all' ? 'Showing all genres' : 'Showing this zone only'}`;
   }
@@ -1947,12 +1955,16 @@ function switchStudioWorkspace(ws, smoothScroll = false) {
   // Hide all first
   [wsMusic, wsPairs, wsVersus, wsSaved].forEach(w => w && w.classList.add('hidden'));
 
-  const musicZones = ['th', 'en', 'jp', 'lao', 'kr', 'all'];
+  const musicZones = ['th', 'en', 'jp', 'lao', 'kr', 'funk', 'all'];
   if (musicZones.includes(ws)) {
     if (wsMusic) wsMusic.classList.remove('hidden');
 
     currentLangFilter = ws;
     visibleSongsCount = 18;
+
+    if (ws === 'funk') {
+      showToast(currentAppLang === 'th' ? '🕶️ ปลดล็อกเข้าสู่โซนลับ Funk & Phonk เรียบร้อย! รวม 780 เพลง' : '🕶️ Unlocked Secret Funk Zone! 780 Tracks');
+    }
 
     // Keep randomizer tabs synced
     selectedZone = ws;
@@ -2509,7 +2521,7 @@ function openAnimePicker(songId) {
       </div>
     </div>
 
-    <div id="anime-picker-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(125px,1fr));gap:0.85rem;max-height:55vh;overflow-y:auto;padding-right:4px;">
+    <div id="anime-picker-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(125px,1fr));gap:0.85rem;max-height:55vh;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;touch-action:pan-y;padding-right:4px;">
     </div>
 
     <div style="margin-top:1rem;padding-top:0.8rem;border-top:1px solid var(--glass-border);text-align:center;">
@@ -2519,6 +2531,20 @@ function openAnimePicker(songId) {
 
   renderPickerAnimeGrid(song, '');
   document.getElementById('anime-picker-overlay').classList.remove('hidden');
+  document.body.classList.add('anime-picker-open');
+  document.body.style.overflow = 'hidden';
+
+  const pickerGrid = document.getElementById('anime-picker-grid');
+  if (pickerGrid) {
+    pickerGrid.addEventListener('wheel', (e) => {
+      const isTop = pickerGrid.scrollTop === 0;
+      const isBottom = Math.abs(pickerGrid.scrollHeight - pickerGrid.scrollTop - pickerGrid.clientHeight) <= 1;
+      if ((isTop && e.deltaY < 0) || (isBottom && e.deltaY > 0)) {
+        e.preventDefault();
+      }
+    }, { passive: false });
+  }
+
   setTimeout(() => {
     const input = document.getElementById('anime-picker-search');
     if (input) input.focus();
@@ -2528,6 +2554,8 @@ function openAnimePicker(songId) {
 function closeAnimePicker() {
   const overlay = document.getElementById('anime-picker-overlay');
   if (overlay) overlay.classList.add('hidden');
+  document.body.classList.remove('anime-picker-open');
+  document.body.style.overflow = '';
   _pickerSongId = null;
 }
 
@@ -4112,16 +4140,19 @@ function updateStats() {
   const jpCount = SONGS.filter(s => s.lang === 'jp').length;
   const laoCount = SONGS.filter(s => s.lang === 'lao').length;
   const krCount = SONGS.filter(s => s.lang === 'kr').length;
+  const funkCount = SONGS.filter(s => s.lang === 'funk').length;
 
   const countTh = document.getElementById('zone-count-th');
   const countEn = document.getElementById('zone-count-en');
   const countJp = document.getElementById('zone-count-jp');
+  const countFunk = document.getElementById('zone-count-funk');
   const countAll = document.getElementById('zone-count-all');
 
-  if (countTh) countTh.textContent = `${thCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
-  if (countEn) countEn.textContent = `${enCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
-  if (countJp) countJp.textContent = `${jpCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
-  if (countAll) countAll.textContent = `${SONGS.length} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (countTh) countTh.textContent = `${thCount.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (countEn) countEn.textContent = `${enCount.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (countJp) countJp.textContent = `${jpCount.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (countFunk) countFunk.textContent = `${funkCount.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (countAll) countAll.textContent = `${SONGS.length.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
 
   const hubTh = document.getElementById('hub-count-th');
   const hubEn = document.getElementById('hub-count-en');
@@ -4141,13 +4172,15 @@ function updateStats() {
   const szJp = document.getElementById('sz-sub-jp');
   const szLao = document.getElementById('sz-sub-lao');
   const szKr = document.getElementById('sz-sub-kr');
+  const szFunk = document.getElementById('sz-sub-funk');
   const szPairs = document.getElementById('sz-sub-pairs');
-  if (szTh) szTh.textContent = `${thCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
-  if (szEn) szEn.textContent = `${enCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
-  if (szJp) szJp.textContent = `${jpCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
-  if (szLao) szLao.textContent = `${laoCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
-  if (szKr) szKr.textContent = `${krCount} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
-  if (szPairs) szPairs.textContent = `${ANIMES.length} ${currentAppLang === 'th' ? 'เรื่อง' : 'titles'}`;
+  if (szTh) szTh.textContent = `${thCount.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (szEn) szEn.textContent = `${enCount.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (szJp) szJp.textContent = `${jpCount.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (szLao) szLao.textContent = `${laoCount.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (szKr) szKr.textContent = `${krCount.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (szFunk) szFunk.textContent = `${funkCount.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (szPairs) szPairs.textContent = `${ANIMES.length.toLocaleString()} ${currentAppLang === 'th' ? 'เรื่อง' : 'titles'}`;
 
   const filterPairAll = document.getElementById('filter-pair-all');
   if (filterPairAll) {
