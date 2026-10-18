@@ -75,6 +75,9 @@
         <a href="#" class="nav-link nav-saved-btn" onclick="switchStudioWorkspace('saved', true); return false;">
           ❤️ <span data-i18n="navSaved">บันทึกไว้</span> (<span id="nav-saved-count">0</span>)
         </a>
+        <a href="#" class="nav-link nav-link-secret" onclick="switchStudioWorkspace('funk', true); return false;" title="⚡ โซนลับ Funk & Brazilian Phonk (Spotify Secret Zone)">
+          ⚡ <span data-i18n="zoneFunk">โซนลับ Funk</span> <span class="nav-secret-tag">SECRET</span>
+        </a>
         <button class="nav-link nav-app-btn" onclick="openAppModal(); return false;" style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(129, 140, 248, 0.2)); border: 1px solid rgba(56, 189, 248, 0.4); border-radius: 999px; cursor: pointer; color: #fff; font-weight: 600; padding: 0.35rem 0.9rem; margin-left: 0.3rem;">
           📲 <span data-i18n="navInstallApp">ติดตั้งแอป / APK</span>
         </button>
@@ -129,7 +132,7 @@
       <p class="hero-desc" data-i18n="heroDesc">ค้นหาเพลงสำหรับทำคลิปไทโป พร้อมระบบสุ่มแยกโซน ปรับความดังเสียง และจับคู่ซีนอนิเมะที่เข้ากันที่สุด</p>
       <div class="hero-btns">
         <a href="#random" class="btn btn-primary" id="hero-random-btn" data-i18n="heroBtnRandom">🎲 ไปที่โซนสุ่มเพลง</a>
-        <a href="#songs" class="btn btn-ghost" id="hero-btn-songs">🎵 <span data-i18n="heroBtnSongs">สำรวจคลังเพลง</span> (<span id="hero-song-count">19021</span> <span data-i18n="heroBtnSongsSuffix">เพลง</span>)</a>
+        <a href="#songs" class="btn btn-ghost" id="hero-btn-songs">🎵 <span data-i18n="heroBtnSongs">สำรวจคลังเพลง</span> (<span id="hero-song-count">19801</span> <span data-i18n="heroBtnSongsSuffix">เพลง</span>)</a>
         <button class="btn btn-ghost" onclick="openAppModal()" style="border-color: rgba(56, 189, 248, 0.45); background: rgba(56, 189, 248, 0.1); color: #38bdf8;">
           📲 ดาวน์โหลด APK / ติดตั้งแอป
         </button>
@@ -219,6 +222,13 @@
           <small class="sz-sub" id="sz-sub-kr">6 เพลง</small>
         </span>
       </button>
+      <button class="studio-zone-tab tab-secret" data-ws="funk" onclick="switchStudioWorkspace('funk')">
+        <span class="sz-icon">⚡</span>
+        <span class="sz-text">
+          <strong class="sz-title" data-i18n="zoneFunk">โซนลับ Funk</strong>
+          <small class="sz-sub" id="sz-sub-funk">780 เพลง</small>
+        </span>
+      </button>
       <button class="studio-zone-tab" data-ws="pairs" onclick="switchStudioWorkspace('pairs')">
         <span class="sz-icon">🌸</span>
         <span class="sz-text">
@@ -277,6 +287,13 @@
             <div class="zone-tab-info">
               <span class="zone-tab-title" data-i18n="randZoneJp">โซนเพลงญี่ปุ่น / อนิเมะ</span>
               <span class="zone-tab-count" id="zone-count-jp">7 เพลง</span>
+            </div>
+          </button>
+          <button class="zone-tab-btn btn-secret-zone" data-zone="funk" onclick="selectZone('funk', this)">
+            <span class="zone-flag">⚡</span>
+            <div class="zone-tab-info">
+              <span class="zone-tab-title" data-i18n="zoneFunk">โซนลับ Funk & Phonk</span>
+              <span class="zone-tab-count" id="zone-count-funk">780 เพลง</span>
             </div>
           </button>
           <button class="zone-tab-btn" data-zone="all" onclick="selectZone('all', this)">
@@ -711,8 +728,8 @@
   <!-- BOTTOM PLAYER -->
   <div id="bottom-player" class="bottom-player"></div>
 
-  <script src="data.js?v=20261018.2"></script>
-  <script src="app.js?v=20261018.2"></script>
+  <script src="data.js?v=20261018.3"></script>
+  <script src="app.js?v=20261018.3"></script>
 
   <!-- Service Worker Registration & Offline Support -->
   <script>
@@ -723,15 +740,15 @@
         if ('caches' in window) {
           caches.keys().then((keys) => {
             keys.forEach((key) => {
-              if (key !== 'haimiya-typo-v36' && key !== 'haimiya-audio-vault') {
+              if (key !== 'haimiya-typo-v37' && key !== 'haimiya-audio-vault') {
                 caches.delete(key);
               }
             });
           });
         }
-        navigator.serviceWorker.register('./sw.js?v=36')
+        navigator.serviceWorker.register('./sw.js?v=37')
           .then((reg) => {
-            console.log('✅ Service Worker v36 ลงทะเบียนสำเร็จ!');
+            console.log('✅ Service Worker v37 ลงทะเบียนสำเร็จ!');
             reg.update();
           })
           .catch((err) => console.warn('⚠️ SW registration failed:', err));
