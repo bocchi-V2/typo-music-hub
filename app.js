@@ -3448,8 +3448,8 @@ function initSplashScreen() {
 //  ระบบซิงค์เพลง/อนิเมะสดอัตโนมัติ และอัปเดตแอป APK ทับของเดิมได้ 100% ไม่ต้องลบแอปเก่า
 // ============================================
 
-const CURRENT_APP_VERSION = 'v2.20261018.19801';
-const CURRENT_VERSION_CODE = 1792302660000;
+const CURRENT_APP_VERSION = 'v2.20261018.2115';
+const CURRENT_VERSION_CODE = 1792334000000;
 const GITHUB_REPO_OWNER = 'bocchi-V2';
 const GITHUB_REPO_NAME = 'typo-music-hub';
 const GITHUB_PAGES_BASE = 'https://bocchi-v2.github.io/typo-music-hub';
@@ -4123,6 +4123,7 @@ function dismissUpdateBanner() {
 document.addEventListener('DOMContentLoaded', async () => {
   initSplashScreen();
   await loadCachedDatabase();
+  ensureSecretFunkElements();
   setAppLanguage(currentAppLang);
   renderSongsGrid();
   renderAnimeMatchGrid();
@@ -4148,6 +4149,73 @@ document.addEventListener('DOMContentLoaded', async () => {
     checkApkAppUpdate();
   });
 });
+
+// Dynamic injector ensuring Secret Funk Zone exists even if HTML is served from an older cache
+function ensureSecretFunkElements() {
+  try {
+    // 1. Ensure Hero Secret Funk button
+    const heroBtns = document.querySelector('.hero-btns');
+    if (heroBtns && !document.getElementById('hero-btn-secret-funk')) {
+      const btn = document.createElement('a');
+      btn.href = '#';
+      btn.className = 'btn btn-secret-funk';
+      btn.id = 'hero-btn-secret-funk';
+      btn.innerHTML = '⚡ 🕶️ โซนลับ Funk (780 เพลง) <span class="badge-secret">SECRET</span>';
+      btn.onclick = (e) => { e.preventDefault(); switchStudioWorkspace('funk', true); };
+      heroBtns.insertBefore(btn, heroBtns.firstChild);
+    }
+
+    // 2. Ensure navbar secret link is the FIRST link in nav-links
+    const navLinks = document.getElementById('nav-links-menu') || document.querySelector('.nav-links');
+    if (navLinks) {
+      let secretLink = navLinks.querySelector('.nav-link-secret');
+      if (!secretLink) {
+        secretLink = document.createElement('a');
+        secretLink.href = '#';
+        secretLink.className = 'nav-link nav-link-secret';
+        secretLink.innerHTML = '🕶️ <span>⚡ โซนลับ Funk (780 เพลง)</span> <span class="nav-secret-tag">SECRET</span>';
+        secretLink.onclick = (e) => { e.preventDefault(); switchStudioWorkspace('funk', true); };
+        navLinks.insertBefore(secretLink, navLinks.firstChild);
+      } else if (navLinks.firstChild !== secretLink) {
+        navLinks.insertBefore(secretLink, navLinks.firstChild);
+      }
+    }
+
+    // 3. Ensure studio-zone-tab for Funk
+    const studioZoneNav = document.querySelector('.studio-zone-nav');
+    if (studioZoneNav && !studioZoneNav.querySelector('[data-ws="funk"]')) {
+      const tab = document.createElement('button');
+      tab.className = 'studio-zone-tab tab-secret';
+      tab.dataset.ws = 'funk';
+      tab.onclick = () => switchStudioWorkspace('funk');
+      tab.innerHTML = `<span class="sz-icon">⚡</span>
+        <div class="sz-info">
+          <strong class="sz-title">โซนลับ Funk</strong>
+          <small class="sz-sub" id="sz-sub-funk">780 เพลง</small>
+        </div>
+        <span class="sz-badge badge-secret">HOT</span>`;
+      studioZoneNav.appendChild(tab);
+    }
+
+    // 4. Ensure randomizer zone tab for Funk
+    const zoneTabs = document.getElementById('zone-tabs');
+    if (zoneTabs && !zoneTabs.querySelector('[data-zone="funk"]')) {
+      const btn = document.createElement('button');
+      btn.className = 'zone-tab-btn btn-secret-zone';
+      btn.dataset.zone = 'funk';
+      btn.onclick = function() { selectZone('funk', this); };
+      btn.innerHTML = `<span class="zone-tab-icon">⚡</span>
+        <div class="zone-tab-info">
+          <span class="zone-tab-title">โซนลับ Funk & Phonk</span>
+          <span class="zone-tab-count" id="zone-count-funk">780 เพลง</span>
+        </div>
+        <span class="badge-secret">SECRET</span>`;
+      zoneTabs.appendChild(btn);
+    }
+  } catch (err) {
+    console.warn('⚠️ ensureSecretFunkElements:', err);
+  }
+}
 
 function updateStats() {
   const songsCountEl = document.getElementById('stat-songs-count');

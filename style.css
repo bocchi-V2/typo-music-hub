@@ -5187,6 +5187,39 @@ body.anime-picker-open {
   box-shadow: 0 0 20px rgba(234, 179, 8, 0.35) !important;
 }
 
+/* HERO SECRET FUNK BUTTON & CALLOUT */
+.btn-secret-funk {
+  background: linear-gradient(135deg, #facc15 0%, #ec4899 50%, #8b5cf6 100%) !important;
+  color: #0b0f19 !important;
+  font-weight: 800 !important;
+  border: 1px solid rgba(254, 240, 138, 0.6) !important;
+  box-shadow: 0 0 25px rgba(234, 179, 8, 0.45), 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  text-decoration: none !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  cursor: pointer !important;
+  position: relative !important;
+  overflow: hidden !important;
+  animation: hero-secret-glow 3s infinite alternate ease-in-out;
+}
+
+.btn-secret-funk:hover {
+  transform: translateY(-2px) scale(1.03) !important;
+  box-shadow: 0 0 35px rgba(234, 179, 8, 0.75), 0 8px 25px rgba(236, 72, 153, 0.4) !important;
+  color: #000 !important;
+}
+
+@keyframes hero-secret-glow {
+  0% {
+    box-shadow: 0 0 18px rgba(234, 179, 8, 0.4), 0 0 5px rgba(236, 72, 153, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 32px rgba(234, 179, 8, 0.8), 0 0 15px rgba(168, 85, 247, 0.6);
+  }
+}
+
 /* ANDROID NATIVE PiP OVERRIDE ONLY (WHEN EXPLICITLY RUNNING IN NATIVE PiP WINDOW) */
 body.native-pip-active {
   background: #0f172a !important;
