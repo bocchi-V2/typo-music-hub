@@ -2664,9 +2664,24 @@ function toggleMenu() {
   const btn = document.getElementById('hamburger');
   if (navLinks) {
     navLinks.classList.toggle('open');
-    if (btn) btn.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
+    if (btn) {
+      const isOpen = navLinks.classList.contains('open');
+      btn.innerHTML = isOpen ? '<span class="hamburger-icon">✕</span> <span class="hamburger-text">ปิด</span>' : '<span class="hamburger-icon">☰</span> <span class="hamburger-text">โซนเพลง</span>';
+    }
   }
 }
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+  const navLinks = document.querySelector('.nav-links');
+  const btn = document.getElementById('hamburger');
+  if (navLinks && navLinks.classList.contains('open')) {
+    if (!navLinks.contains(e.target) && btn && !btn.contains(e.target)) {
+      navLinks.classList.remove('open');
+      if (btn) btn.innerHTML = '<span class="hamburger-icon">☰</span> <span class="hamburger-text">โซนเพลง</span>';
+    }
+  }
+});
 
 
 
@@ -3433,8 +3448,8 @@ function initSplashScreen() {
 //  ระบบซิงค์เพลง/อนิเมะสดอัตโนมัติ และอัปเดตแอป APK ทับของเดิมได้ 100% ไม่ต้องลบแอปเก่า
 // ============================================
 
-const CURRENT_APP_VERSION = 'v2.20261017.19020';
-const CURRENT_VERSION_CODE = 1792248572897;
+const CURRENT_APP_VERSION = 'v2.20261018.19801';
+const CURRENT_VERSION_CODE = 1792302660000;
 const GITHUB_REPO_OWNER = 'bocchi-V2';
 const GITHUB_REPO_NAME = 'typo-music-hub';
 const GITHUB_PAGES_BASE = 'https://bocchi-v2.github.io/typo-music-hub';
@@ -3509,12 +3524,19 @@ async function loadCachedDatabase() {
     const cachedSongs = await getHaimiyaDB('synced_songs');
     const cachedAnimes = await getHaimiyaDB('synced_animes');
     const cachedPairs = await getHaimiyaDB('synced_pairs');
-    if (cachedSongs && Array.isArray(cachedSongs) && cachedSongs.length > SONGS.length) {
-      replaceArrayInPlace(SONGS, cachedSongs);
-      if (cachedAnimes && Array.isArray(cachedAnimes)) replaceArrayInPlace(ANIMES, cachedAnimes);
-      if (cachedPairs && Array.isArray(cachedPairs)) replaceArrayInPlace(ANIME_PAIRS, cachedPairs);
-      initDataMaps();
-      console.log(`⚡ [IndexedDB] โหลดฐานข้อมูลเพลงแคชสำเร็จ: ${SONGS.length} เพลง | ${ANIMES.length} อนิเมะ`);
+    if (cachedSongs && Array.isArray(cachedSongs)) {
+      if (SONGS.length > cachedSongs.length) {
+        // App has newer songs (including Funk secret zone) - update IndexedDB!
+        await setHaimiyaDB('synced_songs', SONGS);
+        await setHaimiyaDB('synced_version_code', CURRENT_VERSION_CODE);
+        console.log(`⚡ [IndexedDB] อัปเดตฐานข้อมูลเพลงใหม่ลงเครื่อง: ${SONGS.length} เพลง`);
+      } else if (cachedSongs.length > SONGS.length) {
+        replaceArrayInPlace(SONGS, cachedSongs);
+        if (cachedAnimes && Array.isArray(cachedAnimes)) replaceArrayInPlace(ANIMES, cachedAnimes);
+        if (cachedPairs && Array.isArray(cachedPairs)) replaceArrayInPlace(ANIME_PAIRS, cachedPairs);
+        initDataMaps();
+        console.log(`⚡ [IndexedDB] โหลดฐานข้อมูลเพลงแคชสำเร็จ: ${SONGS.length} เพลง | ${ANIMES.length} อนิเมะ`);
+      }
     }
   } catch (e) {
     console.warn('⚠️ loadCachedDatabase:', e);
@@ -4209,7 +4231,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
     const btn = document.getElementById('hamburger');
     if (navLinks && navLinks.classList.contains('open')) {
       navLinks.classList.remove('open');
-      if (btn) btn.textContent = '☰';
+      if (btn) btn.innerHTML = '<span class="hamburger-icon">☰</span> <span class="hamburger-text">โซนเพลง</span>';
     }
   });
 });
@@ -4223,7 +4245,7 @@ document.addEventListener('keydown', e => {
     if (navLinks && navLinks.classList.contains('open')) {
       navLinks.classList.remove('open');
       const btn = document.getElementById('hamburger');
-      if (btn) btn.textContent = '☰';
+      if (btn) btn.innerHTML = '<span class="hamburger-icon">☰</span> <span class="hamburger-text">โซนเพลง</span>';
     }
   }
 });

@@ -369,12 +369,32 @@ body::after {
 }
 
 .hamburger {
-  display: none;
-  background: none;
-  border: none;
+  display: flex !important;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.15rem;
   cursor: pointer;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+.hamburger:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(56, 189, 248, 0.4);
+  transform: translateY(-1px);
+}
+.hamburger-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+.hamburger-text {
+  font-size: 0.85rem;
+  font-weight: 600;
 }
 
 /* ---- HERO SECTION ---- */
@@ -2332,6 +2352,9 @@ header#hero {
     top: 68px;
     left: 0;
     right: 0;
+    max-height: calc(100vh - 75px);
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
     background: rgba(16, 20, 36, 0.98);
     backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px);
@@ -2355,7 +2378,40 @@ header#hero {
   }
 
   .bp-content { flex-wrap: wrap; }
-  .bp-volume-panel { order: 3; }
+}
+
+@media (min-width: 901px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 68px;
+    right: 1.5rem;
+    left: auto;
+    width: 290px;
+    max-height: calc(100vh - 85px);
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+    background: rgba(15, 23, 42, 0.98);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0.55rem;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+  }
+  .nav-links.open {
+    display: flex !important;
+  }
+  .nav-links .nav-link {
+    width: 100%;
+    padding: 0.65rem 0.95rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
 }
 
 @media (max-width: 640px) {
