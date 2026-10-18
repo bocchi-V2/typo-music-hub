@@ -64,7 +64,10 @@
         <span class="logo-badge">EDIT STUDIO</span>
         <span class="logo-title" data-i18n="logoTitle">Haimiya Typo</span>
       </a>
-      <div class="nav-links">
+      <div class="nav-links" id="nav-links-menu">
+        <a href="#" class="nav-link nav-link-secret" onclick="switchStudioWorkspace('funk', true); return false;" title="⚡ โซนลับ Funk & Brazilian Phonk (Spotify Secret Zone)">
+          🕶️ <span data-i18n="zoneFunk">⚡ โซนลับ Funk (780 เพลง)</span> <span class="nav-secret-tag">SECRET</span>
+        </a>
         <a href="#" class="nav-link active-nav" onclick="switchStudioWorkspace('th', true); return false;" data-i18n="zoneTh">🇹🇭 เพลงไทย</a>
         <a href="#" class="nav-link" onclick="switchStudioWorkspace('en', true); return false;" data-i18n="zoneEn">🇬🇧 เพลงสากล</a>
         <a href="#" class="nav-link" onclick="switchStudioWorkspace('jp', true); return false;" data-i18n="zoneJp">🇯🇵 เพลงญี่ปุ่น/อนิเมะ</a>
@@ -74,9 +77,6 @@
         <a href="#" class="nav-link" onclick="switchStudioWorkspace('versus', true); return false;" data-i18n="navVersus">⚔️ โหวตเพลง</a>
         <a href="#" class="nav-link nav-saved-btn" onclick="switchStudioWorkspace('saved', true); return false;">
           ❤️ <span data-i18n="navSaved">บันทึกไว้</span> (<span id="nav-saved-count">0</span>)
-        </a>
-        <a href="#" class="nav-link nav-link-secret" onclick="switchStudioWorkspace('funk', true); return false;" title="⚡ โซนลับ Funk & Brazilian Phonk (Spotify Secret Zone)">
-          ⚡ <span data-i18n="zoneFunk">โซนลับ Funk</span> <span class="nav-secret-tag">SECRET</span>
         </a>
         <button class="nav-link nav-app-btn" onclick="openAppModal(); return false;" style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(129, 140, 248, 0.2)); border: 1px solid rgba(56, 189, 248, 0.4); border-radius: 999px; cursor: pointer; color: #fff; font-weight: 600; padding: 0.35rem 0.9rem; margin-left: 0.3rem;">
           📲 <span data-i18n="navInstallApp">ติดตั้งแอป / APK</span>
@@ -98,7 +98,10 @@
         <span class="lang-divider">/</span>
         <button class="lang-toggle-btn" id="btn-lang-en" onclick="setAppLanguage('en')">🇬🇧 EN</button>
       </div>
-      <button class="hamburger" id="hamburger" onclick="toggleMenu()">☰</button>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" title="เมนูโซนเพลงต่างๆ (กดเพื่อเปิด/ปิด)">
+        <span class="hamburger-icon">☰</span>
+        <span class="hamburger-text">โซนเพลง</span>
+      </button>
     </div>
   </nav>
 
@@ -746,17 +749,22 @@
             });
           });
         }
-        navigator.serviceWorker.register('./sw.js?v=37')
+        navigator.serviceWorker.register('./sw.js?v=38')
           .then((reg) => {
-            console.log('✅ Service Worker v37 ลงทะเบียนสำเร็จ!');
+            console.log('✅ Service Worker v38 ลงทะเบียนสำเร็จ!');
             reg.update();
           })
           .catch((err) => console.warn('⚠️ SW registration failed:', err));
       });
 
-      // แจ้งเตือนเมื่อมี SW ใหม่พร้อมใช้งาน
+      // แจ้งเตือนและรีเฟรชหน้าเว็บอัตโนมัติเมื่อ Service Worker อัปเดตเสร็จ
+      let refreshing = false;
       navigator.serviceWorker.addEventListener('controllerchange', () => {
-        console.log('🔄 มีอัปเดตใหม่! กำลังโหลดข้อมูลล่าสุด...');
+        if (!refreshing) {
+          refreshing = true;
+          console.log('🔄 มีอัปเดตใหม่! กำลังโหลดข้อมูลล่าสุด...');
+          window.location.reload();
+        }
       });
     }
 
