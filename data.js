@@ -13778,6 +13778,32 @@ const ANIMES = [
     "coverFallback": "https://media.kitsu.app/anime/poster_images/6439/medium.jpg",
     "anifumeUrl": "https://anifume.com/?s=Inu%20x%20Boku%20SS",
     "mood": "hype"
+  },
+  {
+    "id": 1007,
+    "name": "The Melancholy of Haruhi Suzumiya",
+    "nameTH": "The Melancholy of Haruhi Suzumiya",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/751/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/751/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20Melancholy%20of%20Haruhi%20Suzumiya",
+    "mood": "hype"
+  },
+  {
+    "id": 1008,
+    "name": "Nisekoi",
+    "nameTH": "Nisekoi",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7821/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7821/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Nisekoi",
+    "mood": "hype"
   }
 ];
 
@@ -536939,6 +536965,81 @@ const SONGS = [
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ HIDARI (Pilot Film)",
     "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 19805,
+    "title": "Swan's War (feat. SKY-HI, BE:FIRST, MAZZEL, REIKO & RUI)",
+    "artist": "BMSG SKY",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ea/3f/35/ea3f354d-55a1-a420-d045-0c70a07ed0b6/ANTCD-58989.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8e/59/64/8e59641b-0a2d-96aa-9685-2ad6b0edb9d3/mzaf_13188476918446035667.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Swan's%20War%20(feat.%20SKY-HI%2C%20BE%3AFIRST%2C%20MAZZEL%2C%20REIKO%20%26%20RUI)%20BMSG%20SKY",
+    "mood": "hype",
+    "tags": [
+      "มันส์สะใจ",
+      "บีทกระแทก",
+      "ไวรัล",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "jp",
+    "animeId": 504,
+    "animeMatch": [
+      504
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ World Trigger 3",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "id": 19806,
+    "title": "ครั้งแรกพอทน (Not Again) [feat. Joke iScream]",
+    "artist": "LYKN",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/08/cd/cc/08cdcceb-f30e-e096-3fc3-3df198c48d24/888332880459.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/85/71/4e/85714ec8-954d-e3aa-53ec-80e2014906fe/mzaf_8506731614841365403.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%81%E0%B8%A3%E0%B8%81%E0%B8%9E%E0%B8%AD%E0%B8%97%E0%B8%99%20(Not%20Again)%20%5Bfeat.%20Joke%20iScream%5D%20LYKN",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตTH"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "th",
+    "animeId": 746,
+    "animeMatch": [
+      746
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ World Trigger",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 19807,
+    "title": "Looks Can Kill",
+    "artist": "IVE",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/01/2f/77/012f77a7-f38e-6799-5e8b-16d0756df44d/885288585919.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/cf/66/b0cf663c-2092-6695-d89d-c42f5ef5b691/mzaf_283039607585779770.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Looks%20Can%20Kill%20IVE",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตTH"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "th",
+    "animeId": 164,
+    "animeMatch": [
+      164
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Hitoribocchi no Isekai Kouryaku",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
   }
 ];
 
@@ -542833,6 +542934,30 @@ const ANIME_PAIRS = [
     "category": "chill",
     "badge": "✨ ประจำวันใหม่",
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ HIDARI (Pilot Film)",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 19805,
+    "animeId": 504,
+    "category": "hype",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ World Trigger 3",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "songId": 19806,
+    "animeId": 746,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ World Trigger",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 19807,
+    "animeId": 164,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Hitoribocchi no Isekai Kouryaku",
     "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
   }
 ];
