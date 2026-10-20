@@ -13804,6 +13804,32 @@ const ANIMES = [
     "coverFallback": "https://media.kitsu.app/anime/poster_images/7821/medium.jpg",
     "anifumeUrl": "https://anifume.com/?s=Nisekoi",
     "mood": "hype"
+  },
+  {
+    "id": 1009,
+    "name": "Kimetsu no Yaiba: Hashira Gou Kaigi - Chouyashiki Hen",
+    "nameTH": "Kimetsu no Yaiba: Hashira Gou Kaigi - Chouyashiki Hen",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/44390/poster_image/medium-d2485ad0e9550e63b5ff17bad6dc9f34.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/44390/poster_image/medium-d2485ad0e9550e63b5ff17bad6dc9f34.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Kimetsu%20no%20Yaiba%3A%20Hashira%20Gou%20Kaigi%20-%20Chouyashiki%20Hen",
+    "mood": "hype"
+  },
+  {
+    "id": 1010,
+    "name": "The Girl Who Leapt Through Time",
+    "nameTH": "The Girl Who Leapt Through Time",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/2027/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/2027/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=The%20Girl%20Who%20Leapt%20Through%20Time",
+    "mood": "hype"
   }
 ];
 
@@ -537040,6 +537066,81 @@ const SONGS = [
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Hitoribocchi no Isekai Kouryaku",
     "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 19808,
+    "title": "When Will My Life Begin (Japanese Version)",
+    "artist": "Mari Okonogi",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1d/9a/f0/1d9af026-dc32-424f-0c9e-c26fc8949faa/21UMGIM65749.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9c/b1/8c/9cb18ca4-8367-ab52-28ec-ee6d1d567b14/mzaf_847420431615093284.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/When%20Will%20My%20Life%20Begin%20(Japanese%20Version)%20Mari%20Okonogi",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 885,
+    "animeMatch": [
+      885
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Kanojo ga Flag wo Oraretara",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 19809,
+    "title": "Swan's War (feat. SKY-HI, BE:FIRST, MAZZEL, REIKO & RUI)",
+    "artist": "BMSG SKY",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ea/3f/35/ea3f354d-55a1-a420-d045-0c70a07ed0b6/ANTCD-58989.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8e/59/64/8e59641b-0a2d-96aa-9685-2ad6b0edb9d3/mzaf_13188476918446035667.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Swan's%20War%20(feat.%20SKY-HI%2C%20BE%3AFIRST%2C%20MAZZEL%2C%20REIKO%20%26%20RUI)%20BMSG%20SKY",
+    "mood": "hype",
+    "tags": [
+      "มันส์สะใจ",
+      "บีทกระแทก",
+      "ไวรัล",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "jp",
+    "animeId": 650,
+    "animeMatch": [
+      650
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Akudama Drive",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "id": 19810,
+    "title": "12 o'clock",
+    "artist": "JEONGHAN & JOSHUA",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/17/fa/10/17fa102c-b868-5caa-3647-90356f44485b/823375384984_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/35/e3/2e/35e32e38-e7cf-a9a1-e94e-a23f45c483e5/mzaf_18387269611974835765.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/12%20o'clock%20JEONGHAN%20%26%20JOSHUA",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตTH"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "th",
+    "animeId": 79,
+    "animeMatch": [
+      79
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ #Compass 2.0: Sentou Setsuri Kaiseki System",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
   }
 ];
 
@@ -542958,6 +543059,30 @@ const ANIME_PAIRS = [
     "category": "chill",
     "badge": "✨ ประจำวันใหม่",
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Hitoribocchi no Isekai Kouryaku",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 19808,
+    "animeId": 885,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Kanojo ga Flag wo Oraretara",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 19809,
+    "animeId": 650,
+    "category": "hype",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Akudama Drive",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "songId": 19810,
+    "animeId": 79,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ #Compass 2.0: Sentou Setsuri Kaiseki System",
     "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
   }
 ];
