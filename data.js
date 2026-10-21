@@ -13830,6 +13830,32 @@ const ANIMES = [
     "coverFallback": "https://media.kitsu.app/anime/poster_images/2027/medium.jpg",
     "anifumeUrl": "https://anifume.com/?s=The%20Girl%20Who%20Leapt%20Through%20Time",
     "mood": "hype"
+  },
+  {
+    "id": 1011,
+    "name": "Zetsuen no Tempest",
+    "nameTH": "Zetsuen no Tempest",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7078/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7078/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Zetsuen%20no%20Tempest",
+    "mood": "hype"
+  },
+  {
+    "id": 1012,
+    "name": "Rosario to Vampire",
+    "nameTH": "Rosario to Vampire",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/2706/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/2706/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Rosario%20to%20Vampire",
+    "mood": "hype"
   }
 ];
 
@@ -537141,6 +537167,81 @@ const SONGS = [
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ #Compass 2.0: Sentou Setsuri Kaiseki System",
     "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 19811,
+    "title": "When Will My Life Begin (Japanese Version)",
+    "artist": "Mari Okonogi",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1d/9a/f0/1d9af026-dc32-424f-0c9e-c26fc8949faa/21UMGIM65749.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9c/b1/8c/9cb18ca4-8367-ab52-28ec-ee6d1d567b14/mzaf_847420431615093284.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/When%20Will%20My%20Life%20Begin%20(Japanese%20Version)%20Mari%20Okonogi",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 101,
+    "animeMatch": [
+      101
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Animegataris",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 19812,
+    "title": "Swan's War (feat. SKY-HI, BE:FIRST, MAZZEL, REIKO & RUI)",
+    "artist": "BMSG SKY",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ea/3f/35/ea3f354d-55a1-a420-d045-0c70a07ed0b6/ANTCD-58989.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/8e/59/64/8e59641b-0a2d-96aa-9685-2ad6b0edb9d3/mzaf_13188476918446035667.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Swan's%20War%20(feat.%20SKY-HI%2C%20BE%3AFIRST%2C%20MAZZEL%2C%20REIKO%20%26%20RUI)%20BMSG%20SKY",
+    "mood": "hype",
+    "tags": [
+      "มันส์สะใจ",
+      "บีทกระแทก",
+      "ไวรัล",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "jp",
+    "animeId": 271,
+    "animeMatch": [
+      271
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Dead Mount Death Play",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "id": 19813,
+    "title": "Sorenanoni",
+    "artist": "Uru",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/bf/cb/2a/bfcb2a95-29a7-4aad-8083-fed1cbd46986/4547366858440.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6d/e5/47/6de5473b-a118-533a-92f2-e01fc3e0bdb4/mzaf_1247823559730948854.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Sorenanoni%20Uru",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 679,
+    "animeMatch": [
+      679
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Durarara!!x2 Shou",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
   }
 ];
 
@@ -543083,6 +543184,30 @@ const ANIME_PAIRS = [
     "category": "chill",
     "badge": "✨ ประจำวันใหม่",
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ #Compass 2.0: Sentou Setsuri Kaiseki System",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 19811,
+    "animeId": 101,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Animegataris",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 19812,
+    "animeId": 271,
+    "category": "hype",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Dead Mount Death Play",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "songId": 19813,
+    "animeId": 679,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Durarara!!x2 Shou",
     "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
   }
 ];
