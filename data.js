@@ -13856,6 +13856,32 @@ const ANIMES = [
     "coverFallback": "https://media.kitsu.app/anime/poster_images/2706/medium.jpg",
     "anifumeUrl": "https://anifume.com/?s=Rosario%20to%20Vampire",
     "mood": "hype"
+  },
+  {
+    "id": 1013,
+    "name": "Nagi no Asukara",
+    "nameTH": "Nagi no Asukara",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7370/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7370/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Nagi%20no%20Asukara",
+    "mood": "hype"
+  },
+  {
+    "id": 1014,
+    "name": "Mushoku Tensei: Isekai Ittara Honki Dasu",
+    "nameTH": "Mushoku Tensei: Isekai Ittara Honki Dasu",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/42323/poster_image/medium-b274092f0e16d8788b9f0ac497f321b2.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/42323/poster_image/medium-b274092f0e16d8788b9f0ac497f321b2.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Mushoku%20Tensei%3A%20Isekai%20Ittara%20Honki%20Dasu",
+    "mood": "hype"
   }
 ];
 
@@ -537242,6 +537268,81 @@ const SONGS = [
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Durarara!!x2 Shou",
     "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 19814,
+    "title": "The 7th Sense (Sung by TAEYONG, MARK, JAEHYUN, DOYOUNG & TEN)",
+    "artist": "NCT U",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/76/0b/31/760b31a0-d9cc-34b3-0c1f-baa1d5315518/The_7th_Sense.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/70/39/d6/7039d645-d63f-d1f9-6fbd-64ca81ef800d/mzaf_11881727676927781318.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/The%207th%20Sense%20(Sung%20by%20TAEYONG%2C%20MARK%2C%20JAEHYUN%2C%20DOYOUNG%20%26%20TEN)%20NCT%20U",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตTH"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "th",
+    "animeId": 202,
+    "animeMatch": [
+      202
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Maou Gakuin no Futekigousha: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou e Kayou 2nd Season Part 2",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 19815,
+    "title": "Sorenanoni",
+    "artist": "Uru",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/bf/cb/2a/bfcb2a95-29a7-4aad-8083-fed1cbd46986/4547366858440.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6d/e5/47/6de5473b-a118-533a-92f2-e01fc3e0bdb4/mzaf_1247823559730948854.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Sorenanoni%20Uru",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 6,
+    "animeMatch": [
+      6
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Tokyo Revengers: Santen Sensou-hen",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 19816,
+    "title": "Seminole Wind",
+    "artist": "John Anderson",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Features/19/ca/3e/dj.efdqofep.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ae/1f/1f/ae1f1fa9-cab8-4e55-b0f0-72fbf6bb4be8/mzaf_15951645728215121902.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Seminole%20Wind%20John%20Anderson",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตUS"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 748,
+    "animeMatch": [
+      748
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Liz to Aoi Tori",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
   }
 ];
 
@@ -543208,6 +543309,30 @@ const ANIME_PAIRS = [
     "category": "chill",
     "badge": "✨ ประจำวันใหม่",
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Durarara!!x2 Shou",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 19814,
+    "animeId": 202,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Maou Gakuin no Futekigousha: Shijou Saikyou no Maou no Shiso, Tensei shite Shison-tachi no Gakkou e Kayou 2nd Season Part 2",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 19815,
+    "animeId": 6,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Tokyo Revengers: Santen Sensou-hen",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 19816,
+    "animeId": 748,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Liz to Aoi Tori",
     "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
   }
 ];
