@@ -13882,6 +13882,32 @@ const ANIMES = [
     "coverFallback": "https://media.kitsu.app/anime/42323/poster_image/medium-b274092f0e16d8788b9f0ac497f321b2.jpeg",
     "anifumeUrl": "https://anifume.com/?s=Mushoku%20Tensei%3A%20Isekai%20Ittara%20Honki%20Dasu",
     "mood": "hype"
+  },
+  {
+    "id": 1015,
+    "name": "Dr. Stone",
+    "nameTH": "Dr. Stone",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/42080/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/42080/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Dr.%20Stone",
+    "mood": "hype"
+  },
+  {
+    "id": 1016,
+    "name": "Kono Subarashii Sekai ni Shukufuku wo!",
+    "nameTH": "Kono Subarashii Sekai ni Shukufuku wo!",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/10941/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/10941/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kono%20Subarashii%20Sekai%20ni%20Shukufuku%20wo!",
+    "mood": "hype"
   }
 ];
 
@@ -537343,6 +537369,81 @@ const SONGS = [
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Liz to Aoi Tori",
     "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 19817,
+    "title": "Tarantino",
+    "artist": "LISA",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1d/de/67/1dde6726-f217-b447-46cd-94d5f9621797/196874712696.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3c/78/76/3c787652-b53c-92a7-7905-993f1b1c246d/mzaf_1162819887189843451.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Tarantino%20LISA",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตTH"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "th",
+    "animeId": 623,
+    "animeMatch": [
+      623
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Inu to Neko Docchi mo Katteru to Mainichi Tanoshii",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 19818,
+    "title": "Kokoro Wo Tomenaide",
+    "artist": "YUZU",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b4/64/34/b464349e-5b65-7d08-e0fb-5fb84b4211fd/4988061935058.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/01/17/57/0117578c-61f3-84f5-1367-7d07d155075e/mzaf_13771959385137077682.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Kokoro%20Wo%20Tomenaide%20YUZU",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 488,
+    "animeMatch": [
+      488
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Princess Connect! Re:Dive",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 19819,
+    "title": "Straight Tequila Night (Re-Recorded)",
+    "artist": "John Anderson",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/ca/db/35/cadb3512-0e4a-23d5-1627-86f7ca8ae159/709951690789.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e1/d3/28/e1d3283b-470b-93f3-e8a1-dd24a2c5fd01/mzaf_7693111880252150849.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Straight%20Tequila%20Night%20(Re-Recorded)%20John%20Anderson",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตUS"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 809,
+    "animeMatch": [
+      809
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Inuyashiki",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
   }
 ];
 
@@ -543333,6 +543434,30 @@ const ANIME_PAIRS = [
     "category": "chill",
     "badge": "✨ ประจำวันใหม่",
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Liz to Aoi Tori",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 19817,
+    "animeId": 623,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Inu to Neko Docchi mo Katteru to Mainichi Tanoshii",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 19818,
+    "animeId": 488,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Princess Connect! Re:Dive",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 19819,
+    "animeId": 809,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Inuyashiki",
     "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
   }
 ];
