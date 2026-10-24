@@ -6,8 +6,8 @@
 
 :root {
   /* Weekly Rotating Accent – Auto-updated by maintenance bot */
-  --weekly-accent: #a78bfa;
-  --weekly-glow: rgba(167, 139, 250, 0.35);
+  --weekly-accent: #34d399;
+  --weekly-glow: rgba(52, 211, 153, 0.35);
   --primary: #10b981;          /* Studio Emerald Green */
   --primary-hover: #059669;
   --accent: #6366f1;           /* Clean Iris Blue */
