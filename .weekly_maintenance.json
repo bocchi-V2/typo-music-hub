@@ -1,15 +1,28 @@
 {
-  "lastRun": 1792263633079,
-  "cycle": 7,
+  "lastRun": 1792869247530,
+  "cycle": 8,
   "fixes": [
-    "SW Cache bumped to v36",
-    "CSS: 401 !important overrides",
-    "Stats updated: 19021 songs, 1002 anime",
-    "Weekly Accent rotated: Aurora Purple",
-    "UI Badge updated: Theme Aurora Purple, Cache v36",
-    "Manifest version: 2.0.20261017"
+    "SW Cache bumped to v40",
+    "CSS: 444 !important overrides",
+    "Stats updated: 19822 songs, 1018 anime",
+    "Weekly Accent rotated: Emerald Green",
+    "UI Badge updated: Theme Emerald Green, Cache v40",
+    "Manifest version: 2.0.20261024"
   ],
   "history": [
+    {
+      "date": "2026-10-24T19:14:07.530Z",
+      "cycle": 8,
+      "fixes": [
+        "SW Cache bumped to v40",
+        "CSS: 444 !important overrides",
+        "Stats updated: 19822 songs, 1018 anime",
+        "Weekly Accent rotated: Emerald Green",
+        "UI Badge updated: Theme Emerald Green, Cache v40",
+        "Manifest version: 2.0.20261024"
+      ],
+      "changes": 5
+    },
     {
       "date": "2026-10-17T19:00:33.079Z",
       "cycle": 7,
@@ -94,6 +107,6 @@
       "changes": 4
     }
   ],
-  "lastRunDate": "2026-10-17T19:00:33.079Z",
+  "lastRunDate": "2026-10-24T19:14:07.530Z",
   "totalChanges": 5
 }
