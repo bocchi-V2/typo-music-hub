@@ -13934,6 +13934,32 @@ const ANIMES = [
     "coverFallback": "https://media.kitsu.app/anime/poster_images/1555/medium.jpg",
     "anifumeUrl": "https://anifume.com/?s=Naruto%3A%20Shippuuden",
     "mood": "hype"
+  },
+  {
+    "id": 1019,
+    "name": "Tokyo Ghoul:re 2",
+    "nameTH": "Tokyo Ghoul:re 2",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/41359/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/41359/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Tokyo%20Ghoul%3Are%202",
+    "mood": "hype"
+  },
+  {
+    "id": 1020,
+    "name": "Kimi ni Todoke 2nd Season",
+    "nameTH": "Kimi ni Todoke 2nd Season",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/5820/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/5820/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Kimi%20ni%20Todoke%202nd%20Season",
+    "mood": "hype"
   }
 ];
 
@@ -537545,6 +537571,81 @@ const SONGS = [
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ 4-nin wa Sorezore Uso wo Tsuku",
     "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 19823,
+    "title": "Saikaiai Lie Kitaishite Cry",
+    "artist": "Hey! Say! JUMP",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7c/49/53/7c49534f-a8ea-a65e-bea7-331e362f8737/4517331102106.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/21/24/d1/2124d1a9-cfa4-f233-3c85-e66e8b5fc4fb/mzaf_13899420652109684224.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Saikaiai%20Lie%20Kitaishite%20Cry%20Hey!%20Say!%20JUMP",
+    "mood": "sad",
+    "tags": [
+      "ดิ่งลึก",
+      "เศร้าซึ้ง",
+      "อารมณ์ดิ่ง",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ช้า (78 BPM)",
+    "lang": "jp",
+    "animeId": 280,
+    "animeMatch": [
+      280
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Yuzuki-san Chi no Yon Kyoudai.",
+    "typoIdea": "ตัวหนังสือสีควันเทา เลือนหายช้าๆ สไตล์ Minimal Sad"
+  },
+  {
+    "id": 19824,
+    "title": "Kokoro Wo Tomenaide",
+    "artist": "YUZU",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b4/64/34/b464349e-5b65-7d08-e0fb-5fb84b4211fd/4988061935058.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/01/17/57/0117578c-61f3-84f5-1367-7d07d155075e/mzaf_13771959385137077682.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Kokoro%20Wo%20Tomenaide%20YUZU",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 739,
+    "animeMatch": [
+      739
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Trickster: Edogawa Ranpo \"Shounen Tanteidan\" yori",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 19825,
+    "title": "Sorenanoni",
+    "artist": "Uru",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/bf/cb/2a/bfcb2a95-29a7-4aad-8083-fed1cbd46986/4547366858440.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6d/e5/47/6de5473b-a118-533a-92f2-e01fc3e0bdb4/mzaf_1247823559730948854.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Sorenanoni%20Uru",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 102,
+    "animeMatch": [
+      102
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Cuticle Detective Inaba",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
   }
 ];
 
@@ -543583,6 +543684,30 @@ const ANIME_PAIRS = [
     "category": "chill",
     "badge": "✨ ประจำวันใหม่",
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ 4-nin wa Sorezore Uso wo Tsuku",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 19823,
+    "animeId": 280,
+    "category": "sad",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Yuzuki-san Chi no Yon Kyoudai.",
+    "typoIdea": "ตัวหนังสือสีควันเทา เลือนหายช้าๆ สไตล์ Minimal Sad"
+  },
+  {
+    "songId": 19824,
+    "animeId": 739,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Trickster: Edogawa Ranpo \"Shounen Tanteidan\" yori",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 19825,
+    "animeId": 102,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Cuticle Detective Inaba",
     "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
   }
 ];
