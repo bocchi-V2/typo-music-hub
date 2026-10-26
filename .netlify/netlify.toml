@@ -7,7 +7,7 @@ redirects = []
 [functions."*"]
 
 [build]
-publish = "."
+publish = "C:\\Users\\Smart\\Desktop\\เพลงตัดคลิปไทโป"
 publishOrigin = "config"
 
 [build.environment]

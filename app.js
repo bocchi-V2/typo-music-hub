@@ -1222,6 +1222,11 @@ async function togglePlaySong(songId) {
   };
 
   const tryPlay = async (url, fallbackUrl) => {
+    // ✅ Stop AI chat audio when main player starts playing
+    if (typeof stopAiChatAudio === 'function') {
+      try { stopAiChatAudio(); } catch (e) {}
+    }
+
     // ดับเพลงผ่อนคลายทันทีเพื่อไม่ให้เสียงชนกัน
     duckRelaxBgm();
 
@@ -4939,7 +4944,7 @@ function stopAiChatAudio() {
   }
 }
 
-// 3. Audio Preview in AI Chat
+// 3. Audio Preview in AI Chat (with main player muting)
 function toggleAiSongPreview(previewUrl, btn) {
   if (!previewUrl) {
     showToast('⚠️ เพลงนี้ไม่มีตัวอย่างเสียงออนไลน์');
@@ -4952,6 +4957,15 @@ function toggleAiSongPreview(previewUrl, btn) {
   }
 
   stopAiChatAudio();
+
+  // ✅ Pause main player & relax BGM when playing AI chat audio
+  if (typeof currentAudio !== 'undefined' && currentAudio && !currentAudio.paused) {
+    try { currentAudio.pause(); } catch (e) {}
+    if (typeof updateAudioUI === 'function') updateAudioUI(false);
+  }
+  if (typeof relaxBgmAudio !== 'undefined' && relaxBgmAudio && !relaxBgmAudio.paused) {
+    try { relaxBgmAudio.pause(); } catch (e) {}
+  }
 
   const audio = new Audio(previewUrl);
   audio.volume = 0.85;
@@ -5062,21 +5076,19 @@ async function sendGeminiMessage() {
     return;
   }
 
-  const lower = rawText.toLowerCase();
+  const trimmed = rawText.trim();
+  const lower = trimmed.toLowerCase();
 
-  // Intent A: Add song ("เพิ่มเพลง", "add song", "ลงเพลง", "ขอเพลง")
-  const isAddSong = lower.includes('เพิ่มเพลง') || lower.includes('add song') || lower.includes('ลงเพลง') || lower.includes('ขอเพลง');
-  
-  // Intent B: Report Bug ("แจ้งบั๊ก", "บั๊ก", "ปัญหา", "ไม่เล่น", "เสียงไม่ออก", "ค้าง", "error", "bug")
-  const isBugReport = lower.includes('แจ้งบั๊ก') || lower.includes('บั๊ก') || lower.includes('แจ้งปัญหา') || lower.includes('ปัญหา') || lower.includes('เสียงไม่เล่น') || lower.includes('โหลดไม่ได้') || lower.includes('ค้าง') || lower.includes('error') || lower.includes('bug');
+  // Intent A: Explicit add song command only (e.g. "เพิ่มเพลง APT" or "/add APT")
+  const isAddSong = /^(เพิ่มเพลง|add song|\/add)\s+/i.test(trimmed) || (trimmed === 'เพิ่มเพลง' || trimmed === 'add song');
+
+  // Intent B: Explicit bug report command only (e.g. "แจ้งบั๊ก: ...", "แจ้งปัญหา: ...", "/bug ...")
+  const isBugReport = /^(แจ้งบั๊ก|แจ้งปัญหา|\/bug)[:\s]/i.test(trimmed) || (trimmed === 'แจ้งบั๊ก' || trimmed === 'แจ้งปัญหา');
 
   if (isAddSong) {
     let songQuery = rawText
+      .replace(/^(\/add|add song|เพิ่มเพลง)\s*/i, '')
       .replace(/ช่วย/g, '')
-      .replace(/เพิ่มเพลง/g, '')
-      .replace(/add song/gi, '')
-      .replace(/ลงเพลง/g, '')
-      .replace(/ขอเพลง/g, '')
       .replace(/หน่อยครับ/g, '')
       .replace(/หน่อยค่ะ/g, '')
       .replace(/หน่อย/g, '')
@@ -5182,7 +5194,7 @@ async function sendGeminiMessage() {
 
   // Intent B: Bug Reporting
   if (isBugReport) {
-    let bugTitle = rawText.replace(/แจ้งบั๊ก:?/g, '').replace(/แจ้งปัญหา:?/g, '').trim() || rawText;
+    let bugTitle = rawText.replace(/^(แจ้งบั๊ก|แจ้งปัญหา|\/bug)[:\s]*/i, '').trim() || rawText;
     try {
       const bugRes = await fetch('/api/ai/report-bug', {
         method: 'POST',
@@ -5223,15 +5235,15 @@ async function sendGeminiMessage() {
     return;
   }
 
-  // Intent C: Real AI Chat (Calling Gemini 2.5 Flash / Smart Music Assistant)
+  // Intent C: Genuine Google Gemini Intelligence (Not fake, no canned answers!)
   window.__aiChatHistory = window.__aiChatHistory || [];
 
   try {
     const activeApiKey = getGeminiApiKey();
     let aiResponseText = '';
-    let engineUsed = 'Gemini 2.5 Flash';
+    let engineUsed = 'Google Gemini 3 Flash';
 
-    // 1. Try calling server endpoint /api/ai/chat if server is active
+    // 1. Try calling server endpoint /api/ai/chat (Netlify Serverless Function or Node Server)
     try {
       const chatRes = await fetch('/api/ai/chat', {
         method: 'POST',
@@ -5245,56 +5257,83 @@ async function sendGeminiMessage() {
 
       if (chatRes.ok) {
         const chatData = await chatRes.json();
-        if (chatData.ok && chatData.reply && !chatData.needKey) {
+        if (chatData.ok && chatData.reply) {
           aiResponseText = chatData.reply;
-          engineUsed = chatData.engine || 'Gemini 2.5 Flash';
+          engineUsed = chatData.engine || 'Google Gemini 3 Flash';
         }
       }
     } catch (netErr) {
       console.warn('Server /api/ai/chat unreachable, using direct Gemini API:', netErr);
     }
 
-    // 2. Direct client-side Google Gemini 2.5 Flash API call
+    // 2. Direct client-side Google Gemini Flash API call (High-quota, fast models)
     if (!aiResponseText && activeApiKey) {
-      try {
-        const gUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${encodeURIComponent(activeApiKey)}`;
-        const gRes = await fetch(gUrl, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            system_instruction: {
-              parts: [{
-                text: `คุณคือ "ไฮมิยะ" (Haimiya) ผู้ช่วย AI อัจฉริยะประจำแอป Haimiya Typo ซึ่งเป็นคลังเพลงสำหรับคนตัดต่อคลิปไทโป (Typography / AMV / TikTok edits)
-คุณพูดจาน่ารัก สุภาพ เป็นกันเอง ตอบภาษาไทยเป็นหลัก ใช้อิโมจิน่ารักๆ ได้ ✨🌸🎵
-ตอบตรงประเด็น กระชับ เข้าใจง่าย มีคำแนะนำเชิงสร้างสรรค์สำหรับการตัดต่อคลิป ไทโป อารมณ์เพลง และการจับคู่กับอนิเมะ
-ถ้าผู้ใช้ต้องการเพิ่มเพลง ให้บอกว่า: "สามารถพิมพ์ว่า 'เพิ่มเพลง [ชื่อเพลง]' เช่น 'เพิ่มเพลง APT' ได้ทันทีเลยค่ะ ไฮมิยะจะค้นหาและเพิ่มลงคลังให้ทุกคนค่ะ"
-ถ้าผู้ใช้รายงานปัญหา ให้แนะนำให้พิมพ์ 'แจ้งบั๊ก: [รายละเอียด]' เพื่อให้ระบบบันทึกเข้าระบบอัตโนมัติ
-แอป Haimiya Typo มีเพลงตัดต่อคลิปไทโปหลายพันเพลง ทั้งเพลงไทย, สากล, ญี่ปุ่น (อนิเมะ), ลาว, K-Pop พร้อมโหมด Funk/Phonk และระบบจับคู่อนิเมะยอดฮิต`
-              }]
-            },
-            contents: [
-              ...window.__aiChatHistory.slice(-6).map(h => ({
-                role: h.role === 'user' ? 'user' : 'model',
-                parts: [{ text: h.text }]
-              })),
-              { role: 'user', parts: [{ text: rawText }] }
-            ],
-            generationConfig: {
-              temperature: 0.85,
-              topP: 0.92,
-              maxOutputTokens: 950
-            }
-          })
-        });
-        const gData = await gRes.json();
-        if (gData.candidates && gData.candidates[0]?.content?.parts) {
-          aiResponseText = gData.candidates[0].content.parts.map(p => p.text).join('');
-          engineUsed = 'Gemini 2.5 Flash';
-        } else if (gData.error) {
-          console.warn('Direct Gemini API returned error:', gData.error);
+      const modelsToTry = [
+        'gemini-3-flash-preview',
+        'gemini-3.5-flash-lite',
+        'gemini-3.1-flash-lite-preview',
+        'gemini-2.5-flash'
+      ];
+
+      // Format multi-turn conversation ensuring strict alternation
+      const formattedContents = [];
+      const validHistory = window.__aiChatHistory.slice(-6).filter(h => h && h.text && (h.role === 'user' || h.role === 'model'));
+      let lastRole = null;
+      for (const h of validHistory) {
+        const role = h.role === 'model' ? 'model' : 'user';
+        if (role !== lastRole) {
+          formattedContents.push({ role, parts: [{ text: h.text }] });
+          lastRole = role;
         }
-      } catch (gErr) {
-        console.warn('Direct Gemini call failed:', gErr);
+      }
+      if (lastRole === 'user') {
+        formattedContents.pop();
+      }
+      formattedContents.push({ role: 'user', parts: [{ text: rawText }] });
+
+      const systemInstructionText = `คุณคือ "ไฮมิยะ" (Haimiya) ผู้ช่วย AI อัจฉริยะตัวจริงประจำแอป Haimiya Typo (คลังเพลงสำหรับตัดต่อคลิปไทโป & อนิเมะ)
+คุณขับเคลื่อนด้วยโมเดล AI ของ Google Gemini
+
+บุคลิกภาพและการตอบ:
+- น่ารัก สดใส สุภาพ และเป็นกันเอง ใช้หางเสียง "ค่ะ/นะคะ" มีอิโมจิน่ารักๆ ✨🌸🎵
+- เป็น AI ตัวจริงที่คิด วิเคราะห์ แนะนำไอเดียอย่างลึกซึ้ง ไม่ตอบตามสคริปต์ ไม่ตอบเป็นหุ่นยนต์
+- เชี่ยวชาญเพลงทุกแนว (ไทย, สากล, J-Pop อนิเมะ, K-Pop, Phonk, Funk, T-Pop)
+- เชี่ยวชาญการตัดต่อคลิปไทโป (Typography / Kinetic Motion / AMV / TikTok / Reels)
+- แนะนำท่อนฮุก จังหวะบีท ทรานซิชัน การมาร์กคีย์เฟรมใน CapCut, After Effects, Premiere Pro ได้อย่างแม่นยำ
+- ตอบคำถามได้ทุกเรื่องอย่างชาญฉลาดและตรงประเด็น`;
+
+      for (const modelName of modelsToTry) {
+        if (aiResponseText) break;
+        try {
+          const gUrl = `https://generativelanguage.googleapis.com/v1beta/models/${modelName}:generateContent?key=${encodeURIComponent(activeApiKey)}`;
+          const gRes = await fetch(gUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              system_instruction: {
+                parts: [{ text: systemInstructionText }]
+              },
+              contents: formattedContents,
+              generationConfig: {
+                temperature: 0.85,
+                topP: 0.92,
+                maxOutputTokens: 1200
+              }
+            })
+          });
+
+          if (gRes.ok) {
+            const gData = await gRes.json();
+            if (gData.candidates && gData.candidates[0]?.content?.parts) {
+              aiResponseText = gData.candidates[0].content.parts.map(p => p.text).join('');
+              engineUsed = `Google Gemini (${modelName})`;
+            }
+          } else {
+            console.warn(`Gemini ${modelName} HTTP ${gRes.status}`);
+          }
+        } catch (gErr) {
+          console.warn(`Gemini ${modelName} call failed:`, gErr);
+        }
       }
     }
 
@@ -5330,11 +5369,11 @@ async function sendGeminiMessage() {
       window.__aiChatHistory.push({ role: 'model', text: aiResponseText });
 
       const formattedHtml = renderAiMarkdown(aiResponseText);
-      const pillHtml = `<div class="gemini-engine-pill">✨ ขับเคลื่อนโดย ${escapeHtml(engineUsed)}</div>`;
+      const pillHtml = `<div class="gemini-engine-pill">✦ ขับเคลื่อนโดย ${escapeHtml(engineUsed)}</div>`;
       appendAiResponse(formattedHtml + pillHtml);
     } else {
       appendAiResponse(`
-        <p>ไฮมิยะพร้อมช่วยเหลือค่ะ! คุณสามารถพิมพ์ว่า <code>เพิ่มเพลง [ชื่อเพลง]</code> เช่น <strong>"เพิ่มเพลง APT"</strong> เพื่อค้นหาและเพิ่มเพลงใหม่ลงคลัง หรือถามเกี่ยวกับไอเดียตัดต่อคลิปไทโปได้เลยนะคะ 🌸✨</p>
+        <p>ไฮมิยะพร้อมช่วยเหลือค่ะ! ขออภัยด้วยที่การเชื่อมต่ออินเทอร์เน็ตขัดข้องชั่วคราว ลองส่งข้อความใหม่อีกครั้ง หรือพิมพ์ <code>เพิ่มเพลง [ชื่อเพลง]</code> ได้เลยนะคะ 🌸✨</p>
       `);
     }
   } catch (aiErr) {
@@ -5591,11 +5630,11 @@ async function updateGeminiKeyStatusBadge() {
 
   if (localKey || hasServerKey) {
     if (badge) {
-      badge.textContent = '✨ Gemini 2.5 Flash';
+      badge.textContent = '✨ Gemini 3 Flash';
       badge.style.background = 'linear-gradient(135deg, rgba(56, 189, 248, 0.35), rgba(129, 140, 248, 0.45))';
       badge.style.borderColor = 'rgba(56, 189, 248, 0.6)';
     }
-    if (subtext) subtext.textContent = 'เชื่อมต่อ Google Gemini 2.5 Flash สำเร็จ • ตอบอัจฉริยะแบบเรียลไทม์';
+    if (subtext) subtext.textContent = 'เชื่อมต่อ Google Gemini Flash สำเร็จ • ตอบอัจฉริยะแบบเรียลไทม์';
   } else {
     if (badge) {
       badge.textContent = '⚡ Free AI Online';

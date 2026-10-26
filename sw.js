@@ -1,4 +1,4 @@
-const CACHE_NAME = 'haimiya-typo-v46-mobile-ai';
+const CACHE_NAME = 'haimiya-typo-v48-gemini3';
 const AUDIO_CACHE_NAME = 'haimiya-audio-vault';
 
 // ไฟล์ที่ต้องแคชเพื่อให้แอพทำงานแบบ offline ได้ 100%
@@ -32,13 +32,19 @@ const ASSETS_TO_CACHE = [
   './update_voice.mp3'
 ];
 
-// ติดตั้ง SW: แคชไฟล์ทั้งหมดทันที
+// ติดตั้ง SW: แคชไฟล์ทั้งหมดทันที (ปลอดภัย ไม่ล้มเหลวแม้บางไฟล์มีปัญหา)
+// ⚠️ ไม่ใช้ skipWaiting() เพื่อป้องกันแอพรีสตาร์ทเอง — SW ใหม่จะทำงานเมื่อผู้ใช้เปิดแอพครั้งถัดไป
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
+    caches.open(CACHE_NAME).then(async (cache) => {
       console.log('[SW] กำลังแคชไฟล์ทั้งหมดสำหรับ Offline...');
-      return cache.addAll(ASSETS_TO_CACHE);
-    }).then(() => self.skipWaiting())
+      await Promise.allSettled(
+        ASSETS_TO_CACHE.map((url) =>
+          cache.add(url).catch((err) => console.warn('[SW] ข้ามไฟล์แคช:', url, err.message))
+        )
+      );
+    })
+    // ไม่เรียก self.skipWaiting() เพื่อป้องกันแอพรีเฟรชเอง ขณะผู้ใช้กำลังใช้งาน
   );
 });
 
