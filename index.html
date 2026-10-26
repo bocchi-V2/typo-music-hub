@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=45" />
+  <link rel="stylesheet" href="style.css?v=46" />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
@@ -101,7 +101,9 @@
             <span class="eq-bar bar-3"></span>
           </span>
         </button>
-      </div>
+      <button class="nav-ai-btn-header" onclick="openHaimiyaAI(); return false;" title="เปิดโหมด AI (Haimiya AI Studio)">
+        <span class="ai-sparkle-dot">✨</span> 🤖 AI
+      </button>
       <div class="lang-switch-box">
         <button class="lang-toggle-btn active" id="btn-lang-th" onclick="setAppLanguage('th')">🇹🇭 TH</button>
         <span class="lang-divider">/</span>
@@ -143,6 +145,9 @@
       </h1>
       <p class="hero-desc" data-i18n="heroDesc">ค้นหาเพลงสำหรับทำคลิปไทโป พร้อมระบบสุ่มแยกโซน ปรับความดังเสียง และจับคู่ซีนอนิเมะที่เข้ากันที่สุด</p>
       <div class="hero-btns">
+        <button class="btn btn-ai-hero" onclick="openHaimiyaAI(); return false;">
+          ✨ 🤖 คุยกับ Haimiya AI Studio
+        </button>
         <a href="#random" class="btn btn-primary" id="hero-random-btn" data-i18n="heroBtnRandom">🎲 ไปที่โซนสุ่มเพลง</a>
         <a href="#songs" class="btn btn-ghost" id="hero-btn-songs">🎵 <span data-i18n="heroBtnSongs">สำรวจคลังเพลง</span> (<span id="hero-song-count">19075</span> <span data-i18n="heroBtnSongsSuffix">เพลง</span>)</a>
         <button class="btn btn-ghost" onclick="openAppModal()" style="border-color: rgba(56, 189, 248, 0.45); background: rgba(56, 189, 248, 0.1); color: #38bdf8;">
@@ -199,6 +204,13 @@
   <!-- STUDIO ZONE WORKSPACE SWITCHER -->
   <div class="studio-zone-nav-container">
     <div class="studio-zone-nav">
+      <button class="studio-zone-tab studio-zone-ai" onclick="openHaimiyaAI(); return false;" title="เปิดโหมด AI แชทสั่งเพลงและปรึกษาคลิป">
+        <span class="sz-icon">✨🤖</span>
+        <span class="sz-text">
+          <strong class="sz-title" style="color: #c084fc;">โหมด AI Studio</strong>
+          <small class="sz-sub" style="color: #cbd5e1;">คุย & เพิ่มเพลง</small>
+        </span>
+      </button>
       <button class="studio-zone-tab active" data-ws="th" onclick="switchStudioWorkspace('th')">
         <span class="sz-icon">🇹🇭</span>
         <span class="sz-text">
@@ -795,12 +807,13 @@
   <!-- ============================================
        FLOATING DRAGGABLE AI ASSISTANT BUBBLE (ก้อนกลมๆ ขยับได้ มีเงา)
        ============================================ -->
-  <div id="haimiya-ai-floating-bubble" class="haimiya-ai-floating-bubble" title="คลิกเพื่อคุยกับ Haimiya AI (ลากย้ายได้อิสระ / คลิกซ้ำเพื่อปิด)">
+  <div id="haimiya-ai-floating-bubble" class="haimiya-ai-floating-bubble" onclick="toggleHaimiyaAI()" title="คลิกเพื่อคุยกับ Haimiya AI (ลากย้ายได้อิสระ / คลิกซ้ำเพื่อปิด)">
     <div class="ai-bubble-inner">
       <img src="haimiya_ai_bubble.jpg" alt="Haimiya AI" class="ai-bubble-img" />
       <span class="ai-bubble-sparkle">✨</span>
       <span class="ai-bubble-pulse"></span>
     </div>
+    <span class="ai-bubble-label">✨ AI</span>
   </div>
 
   <!-- ============================================
@@ -951,8 +964,8 @@
   <!-- BOTTOM PLAYER -->
   <div id="bottom-player" class="bottom-player"></div>
 
-  <script src="data.js?v=20261026.45"></script>
-  <script src="app.js?v=20261026.45"></script>
+  <script src="data.js?v=20261026.46"></script>
+  <script src="app.js?v=20261026.46"></script>
 
   <!-- Service Worker Registration & Offline Support -->
   <script>
