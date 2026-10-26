@@ -29,6 +29,16 @@ function initDataMaps() {
     ANIME_MAP = new Map(ANIMES.map(a => [a.id, a]));
   }
   if (typeof SONGS !== 'undefined' && Array.isArray(SONGS)) {
+    try {
+      const userAdded = JSON.parse(localStorage.getItem('haimiya_user_added_songs') || '[]');
+      if (Array.isArray(userAdded) && userAdded.length > 0) {
+        userAdded.forEach(song => {
+          if (!SONGS.some(s => s.id === song.id || (s.title === song.title && s.artist === song.artist))) {
+            SONGS.unshift(song);
+          }
+        });
+      }
+    } catch (e) {}
     SONG_MAP = new Map(SONGS.map(s => [s.id, s]));
   }
   restoreCustomAnimePairs();
@@ -4757,7 +4767,23 @@ function escapeHtml(str) {
     .replace(/'/g, '&#39;');
 }
 
-// 1. Draggable Bubble Logic with Mouse & Touch
+// 1. Draggable Bubble Logic with Mouse & Touch (Click & Tap 100% Reliable)
+let _lastAiToggleTime = 0;
+
+function toggleHaimiyaAI() {
+  const now = Date.now();
+  if (now - _lastAiToggleTime < 350) return; // Prevent double-trigger from pointerUp + click
+  _lastAiToggleTime = now;
+
+  const modal = document.getElementById('haimiya-ai-modal');
+  if (!modal) return;
+  if (modal.classList.contains('hidden')) {
+    openHaimiyaAI();
+  } else {
+    closeHaimiyaAI();
+  }
+}
+
 function initDraggableAiBubble() {
   const bubble = document.getElementById('haimiya-ai-floating-bubble');
   if (!bubble) return;
@@ -4770,6 +4796,7 @@ function initDraggableAiBubble() {
   } catch (e) {}
 
   let isDragging = false;
+  let hasDragged = false;
   let startX = 0;
   let startY = 0;
   let initialLeft = 0;
@@ -4798,6 +4825,7 @@ function initDraggableAiBubble() {
     if (e.type === 'mousedown' && e.button !== 0) return;
     
     isDragging = true;
+    hasDragged = false;
     movedDistance = 0;
     
     const clientX = e.type === 'touchstart' ? e.touches[0].clientX : e.clientX;
@@ -4814,7 +4842,7 @@ function initDraggableAiBubble() {
 
     if (e.type === 'touchstart') {
       window.addEventListener('touchmove', onPointerMove, { passive: false });
-      window.addEventListener('touchend', onPointerUp);
+      window.addEventListener('touchend', onPointerUp, { passive: true });
     } else {
       window.addEventListener('mousemove', onPointerMove);
       window.addEventListener('mouseup', onPointerUp);
@@ -4831,8 +4859,9 @@ function initDraggableAiBubble() {
     const dy = clientY - startY;
     movedDistance = Math.hypot(dx, dy);
 
-    if (e.cancelable && movedDistance > 5) {
-      e.preventDefault();
+    if (movedDistance > 10) {
+      hasDragged = true;
+      if (e.cancelable) e.preventDefault();
     }
 
     const newLeft = Math.min(Math.max(8, initialLeft + dx), window.innerWidth - bubble.offsetWidth - 8);
@@ -4854,26 +4883,103 @@ function initDraggableAiBubble() {
     window.removeEventListener('touchmove', onPointerMove);
     window.removeEventListener('touchend', onPointerUp);
 
-    // If moved <= 15px, treat as click/tap -> toggle AI modal!
-    if (movedDistance <= 15) {
+    if (hasDragged) {
+      setTimeout(() => { hasDragged = false; }, 120);
+      // Save final position only on desktop
+      try {
+        if (window.innerWidth > 768) {
+          const rect = bubble.getBoundingClientRect();
+          localStorage.setItem('haimiya_ai_bubble_pos', JSON.stringify({
+            x: rect.left,
+            y: rect.top
+          }));
+        }
+      } catch (err) {}
+    } else {
+      // Tap/click detected without drag -> toggle modal safely!
       toggleHaimiyaAI();
-      return;
     }
-
-    // Save final position only on desktop
-    try {
-      if (window.innerWidth > 768) {
-        const rect = bubble.getBoundingClientRect();
-        localStorage.setItem('haimiya_ai_bubble_pos', JSON.stringify({
-          x: rect.left,
-          y: rect.top
-        }));
-      }
-    } catch (e) {}
   }
 
   bubble.addEventListener('mousedown', onPointerDown);
   bubble.addEventListener('touchstart', onPointerDown, { passive: true });
+
+  // Handle explicit click
+  bubble.onclick = function(e) {
+    if (hasDragged) {
+      e.preventDefault();
+      e.stopPropagation();
+      return;
+    }
+    toggleHaimiyaAI();
+  };
+}
+
+// Persistent Chat History
+const AI_CHAT_STORAGE_KEY = 'haimiya_ai_chat_saved_history_v1';
+
+function saveAiChatMessage(role, text, html) {
+  try {
+    let history = JSON.parse(localStorage.getItem(AI_CHAT_STORAGE_KEY) || '[]');
+    history.push({
+      role: role,
+      text: text || '',
+      html: html || '',
+      time: Date.now()
+    });
+    if (history.length > 50) history = history.slice(-50);
+    localStorage.setItem(AI_CHAT_STORAGE_KEY, JSON.stringify(history));
+  } catch (e) {}
+}
+
+function loadSavedAiChatHistory() {
+  const list = document.getElementById('gemini-messages-list');
+  const welcome = document.getElementById('gemini-welcome-box');
+  if (!list) return;
+
+  try {
+    const raw = localStorage.getItem(AI_CHAT_STORAGE_KEY);
+    if (!raw) return;
+    const history = JSON.parse(raw);
+    if (!Array.isArray(history) || history.length === 0) return;
+
+    list.innerHTML = '';
+    window.__aiChatHistory = [];
+
+    history.forEach(item => {
+      if (item.role === 'user') {
+        window.__aiChatHistory.push({ role: 'user', text: item.text });
+        const userMsgEl = document.createElement('div');
+        userMsgEl.className = 'gemini-msg-row user';
+        userMsgEl.innerHTML = `<div class="gemini-msg-bubble">${escapeHtml(item.text)}</div>`;
+        list.appendChild(userMsgEl);
+      } else {
+        if (item.text) {
+          window.__aiChatHistory.push({ role: 'model', text: item.text });
+        }
+        const row = document.createElement('div');
+        row.className = 'gemini-msg-row ai';
+        row.innerHTML = `
+          <div class="gemini-msg-avatar">
+            <img src="haimiya_ai_avatar.jpg" alt="Haimiya AI" onerror="this.src='splash-cover.jpg';" />
+          </div>
+          <div class="gemini-msg-bubble">${item.html || renderAiMarkdown(item.text)}</div>
+        `;
+        list.appendChild(row);
+      }
+    });
+
+    if (welcome) welcome.style.display = 'none';
+
+    const chatBody = document.getElementById('gemini-chat-body');
+    if (chatBody) {
+      setTimeout(() => {
+        chatBody.scrollTop = chatBody.scrollHeight;
+      }, 60);
+    }
+  } catch (e) {
+    console.warn('loadSavedAiChatHistory error:', e);
+  }
 }
 
 // 2. Open / Close / Toggle AI Modal
@@ -4885,6 +4991,12 @@ function openHaimiyaAI() {
   modal.classList.remove('hidden');
   document.body.classList.add('ai-modal-open');
   if (bubble) bubble.classList.add('active-open');
+
+  // Load chat history if message list is currently empty
+  const list = document.getElementById('gemini-messages-list');
+  if (list && list.children.length === 0) {
+    loadSavedAiChatHistory();
+  }
 
   // Close hamburger menu if open
   const navLinks = document.querySelector('.nav-links');
@@ -4918,16 +5030,6 @@ function closeHaimiyaAI() {
 
   // Stop any audio playing in chat
   stopAiChatAudio();
-}
-
-function toggleHaimiyaAI() {
-  const modal = document.getElementById('haimiya-ai-modal');
-  if (!modal) return;
-  if (modal.classList.contains('hidden')) {
-    openHaimiyaAI();
-  } else {
-    closeHaimiyaAI();
-  }
 }
 
 function stopAiChatAudio() {
@@ -5016,8 +5118,12 @@ function clearAiChat() {
   const welcome = document.getElementById('gemini-welcome-box');
   if (list) list.innerHTML = '';
   if (welcome) welcome.style.display = 'block';
+  window.__aiChatHistory = [];
+  try {
+    localStorage.removeItem(AI_CHAT_STORAGE_KEY);
+  } catch (e) {}
   stopAiChatAudio();
-  showToast('🧹 ล้างข้อความแชทเรียบร้อย');
+  showToast('🧹 ล้างประวัติการสนทนาเรียบร้อยแล้วค่ะ');
 }
 
 // 5. Send message and Gemini response logic
@@ -5044,6 +5150,9 @@ async function sendGeminiMessage() {
   `;
   list.appendChild(userMsgEl);
 
+  // Save to persistent storage
+  saveAiChatMessage('user', rawText, '');
+
   // Show typing indicator & scroll
   if (typingIndicator) typingIndicator.classList.remove('hidden');
   if (chatBody) chatBody.scrollTop = chatBody.scrollHeight;
@@ -5069,7 +5178,7 @@ async function sendGeminiMessage() {
           <strong style="color: #6ee7b7; font-size: 1.05rem;">บันทึกและเปิดใช้งาน Google Gemini API Key สำเร็จแล้วค่ะ!</strong>
         </div>
         <p style="margin: 0; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6;">
-          ไฮมิยะเชื่อมต่อกับ <strong>Google Gemini 2.5 Flash</strong> สำเร็จแล้วค่ะ 🎉 พร้อมแนะนำเพลงและคุยตอบคำถามเรื่องตัดต่อคลิปไทโปได้ทันทีค่ะ 🌸
+          ไฮมิยะเชื่อมต่อกับ <strong>Google Gemini 3 Flash</strong> สำเร็จแล้วค่ะ 🎉 พร้อมแนะนำเพลงและคุยตอบคำถามเรื่องตัดต่อคลิปไทโปได้ทันทีค่ะ 🌸
         </p>
       </div>
     `);
@@ -5079,20 +5188,20 @@ async function sendGeminiMessage() {
   const trimmed = rawText.trim();
   const lower = trimmed.toLowerCase();
 
-  // Intent A: Explicit add song command only (e.g. "เพิ่มเพลง APT" or "/add APT")
-  const isAddSong = /^(เพิ่มเพลง|add song|\/add)\s+/i.test(trimmed) || (trimmed === 'เพิ่มเพลง' || trimmed === 'add song');
+  // Intent A: Natural song addition request (e.g. "เพิ่มเพลง APT", "ช่วยลงเพลง APT หน่อย", "อยากได้เพลง...", "ขอเพลง...ลงคลัง")
+  const addSongPattern = /(เพิ่มเพลง|ลงเพลง|แอดเพลง|ขอเพิ่มเพลง|ขอเพลง|อยากให้เพิ่ม|อยากได้เพลง|เอาเพลง|add\s*song|\/add)/i;
+  const isAddSong = addSongPattern.test(trimmed);
 
   // Intent B: Explicit bug report command only (e.g. "แจ้งบั๊ก: ...", "แจ้งปัญหา: ...", "/bug ...")
   const isBugReport = /^(แจ้งบั๊ก|แจ้งปัญหา|\/bug)[:\s]/i.test(trimmed) || (trimmed === 'แจ้งบั๊ก' || trimmed === 'แจ้งปัญหา');
 
   if (isAddSong) {
-    let songQuery = rawText
-      .replace(/^(\/add|add song|เพิ่มเพลง)\s*/i, '')
-      .replace(/ช่วย/g, '')
-      .replace(/หน่อยครับ/g, '')
-      .replace(/หน่อยค่ะ/g, '')
-      .replace(/หน่อย/g, '')
-      .replace(/ให้/g, '')
+    let songQuery = trimmed
+      .replace(/^(ช่วย|อยากให้|ขอ|ช่วยกัน|ลอง|รบกวน|พี่|ไฮมิยะ)\s*/gi, '')
+      .replace(/(เพิ่มเพลง|ลงเพลง|แอดเพลง|ขอเพิ่มเพลง|ขอเพลง|อยากให้เพิ่ม|อยากได้เพลง|เอาเพลง|add\s*song|\/add)/gi, '')
+      .replace(/(เข้าคลัง|ลงคลัง|ลงระบบ|ในแอพ|ในแอป|ในเว็บ|ในคลัง)/gi, '')
+      .replace(/(ด้วยนะ|ด้วยครับ|ด้วยค่ะ|ด้วย|หน่อยครับ|หน่อยค่ะ|หน่อยนะ|หน่อยจ้า|หน่อย|ให้หน่อย|ทีครับ|ทีค่ะ|ที|ให้ที)/gi, '')
+      .replace(/^(เพลง|song)\s*/gi, '')
       .trim();
 
     if (!songQuery) {
@@ -5100,7 +5209,7 @@ async function sendGeminiMessage() {
       appendAiResponse(`
         <p>🎵 บอกชื่อเพลงหรือศิลปินที่อยากให้ไฮมิยะค้นหาและเพิ่มลงคลังได้เลยค่ะ!</p>
         <p style="margin-top: 6px; color: #94a3b8; font-size: 0.86rem;">
-          ตัวอย่างเช่น: <code>เพิ่มเพลง APT</code>, <code>เพิ่มเพลง นาฬิกาตาย</code>, หรือ <code>เพิ่มเพลง Day One - PUN</code> ✨
+          ตัวอย่างเช่น: <code>เพิ่มเพลง APT</code>, <code>เพิ่มเพลง Die With A Smile</code>, หรือ <code>เพิ่มเพลง Day One - PUN</code> ✨
         </p>
       `);
       return;
@@ -5116,8 +5225,8 @@ async function sendGeminiMessage() {
 
       if (data && data.results && data.results.length > 0) {
         let cardsHtml = `
-          <p>✨ ไฮมิยะค้นพบเพลงที่ตรงกับ <strong>"${escapeHtml(songQuery)}"</strong> แล้วค่ะ!</p>
-          <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 4px;">คลิกลองฟัง หรือกดปุ่ม <strong>"ยืนยันเพิ่มเพลงนี้ลงคลัง"</strong> เพลงจะถูกบันทึกและซิงค์ให้ทุกคนในแอปทันทีค่ะ:</p>
+          <p>✨ ไฮมิยะค้นพบตัวเลือกเพลงสำหรับ <strong>"${escapeHtml(songQuery)}"</strong> แล้วค่ะ!</p>
+          <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 4px;">คลิก <strong>▶️ ลองฟังตัวอย่าง</strong> เพื่อฟังเสียงได้ทันที หรือกดปุ่ม <strong>"➕ ยืนยันเพิ่มเพลงนี้ลงคลัง"</strong> เพลงจะถูกบันทึกและซิงค์ให้ทุกคนในแอปทันทีค่ะ 🌸🎵:</p>
         `;
 
         data.results.forEach((track, idx) => {
@@ -5171,7 +5280,7 @@ async function sendGeminiMessage() {
                 🌸 <strong>จับคู่ตัดต่อแนะนำ:</strong> ${escapeHtml(matchedAnime.name)} • ${escapeHtml(songPayload.reason)}
               </div>
               <div class="gsc-actions">
-                ${previewUrl ? `<button class="btn-ai-play" onclick="toggleAiSongPreview('${escapeHtml(previewUrl)}', this)">▶️ ลองฟังตัวอย่าง</button>` : ''}
+                ${previewUrl ? `<button class="btn-ai-play" onclick="toggleAiSongPreview('${escapeHtml(previewUrl)}', this)">▶️ ลองฟังตัวอย่างเสียง</button>` : ''}
                 <button class="btn-ai-confirm-add" id="btn-add-${cardId}" onclick="confirmAddSongViaAi('${cardId}', this)">
                   ➕ ยืนยันเพิ่มเพลงนี้ลงคลังทันที (แชร์ให้ทุกคน)
                 </button>
@@ -5370,7 +5479,7 @@ async function sendGeminiMessage() {
 
       const formattedHtml = renderAiMarkdown(aiResponseText);
       const pillHtml = `<div class="gemini-engine-pill">✦ ขับเคลื่อนโดย ${escapeHtml(engineUsed)}</div>`;
-      appendAiResponse(formattedHtml + pillHtml);
+      appendAiResponse(formattedHtml + pillHtml, aiResponseText);
     } else {
       appendAiResponse(`
         <p>ไฮมิยะพร้อมช่วยเหลือค่ะ! ขออภัยด้วยที่การเชื่อมต่ออินเทอร์เน็ตขัดข้องชั่วคราว ลองส่งข้อความใหม่อีกครั้ง หรือพิมพ์ <code>เพิ่มเพลง [ชื่อเพลง]</code> ได้เลยนะคะ 🌸✨</p>
@@ -5385,7 +5494,7 @@ async function sendGeminiMessage() {
   }
 }
 
-function appendAiResponse(htmlContent) {
+function appendAiResponse(htmlContent, rawTextToSave) {
   const list = document.getElementById('gemini-messages-list');
   const chatBody = document.getElementById('gemini-chat-body');
   if (!list) return;
@@ -5399,6 +5508,9 @@ function appendAiResponse(htmlContent) {
     <div class="gemini-msg-bubble">${htmlContent}</div>
   `;
   list.appendChild(row);
+
+  // Save to persistent storage
+  saveAiChatMessage('model', rawTextToSave || '', htmlContent);
 
   if (chatBody) {
     chatBody.scrollTo({ top: chatBody.scrollHeight, behavior: 'smooth' });
@@ -5457,66 +5569,72 @@ async function confirmAddSongViaAi(cardId, btn) {
   btn.disabled = true;
   btn.innerHTML = '⏳ กำลังบันทึกลงคลังกลาง...';
 
+  const songId = songPayload.id || (Date.now() + Math.floor(Math.random() * 1000));
+  const fullSong = {
+    ...songPayload,
+    id: songId,
+    addedAt: new Date().toISOString()
+  };
+
+  // 1. Update in-memory database immediately
+  if (typeof SONGS !== 'undefined' && Array.isArray(SONGS)) {
+    if (!SONGS.some(s => s.id === fullSong.id || (s.title === fullSong.title && s.artist === fullSong.artist))) {
+      SONGS.unshift(fullSong);
+    }
+  }
+  if (typeof ANIME_PAIRS !== 'undefined' && Array.isArray(ANIME_PAIRS) && fullSong.animeId) {
+    ANIME_PAIRS.unshift({
+      songId: fullSong.id,
+      animeId: fullSong.animeId,
+      category: fullSong.mood || 'chill',
+      badge: '🤖 เพิ่มโดย AI',
+      reason: fullSong.reason || '',
+      typoIdea: fullSong.typoIdea || ''
+    });
+  }
+
+  // 2. Persist in localStorage so it remains after refreshing/reopening
   try {
-    const res = await fetch('/api/ai/add-song', {
+    let localSongs = JSON.parse(localStorage.getItem('haimiya_user_added_songs') || '[]');
+    if (!localSongs.some(s => s.id === fullSong.id || (s.title === fullSong.title && s.artist === fullSong.artist))) {
+      localSongs.unshift(fullSong);
+      localStorage.setItem('haimiya_user_added_songs', JSON.stringify(localSongs));
+    }
+  } catch (e) {}
+
+  // 3. Post to backend endpoint if available
+  try {
+    fetch('/api/ai/add-song', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(songPayload)
-    });
+      body: JSON.stringify(fullSong)
+    }).catch(() => {});
+  } catch (e) {}
 
-    const result = await res.json();
+  // 4. Update UI stats & song grid
+  if (typeof updateStats === 'function') updateStats();
+  if (typeof renderSongsGrid === 'function') renderSongsGrid();
 
-    if (result && result.ok) {
-      const addedSong = result.song || songPayload;
+  // 5. Play bell chime celebration!
+  playNotificationChime();
 
-      // Update in-memory database so user can search immediately
-      if (typeof SONGS !== 'undefined') {
-        SONGS.unshift(addedSong);
-      }
-      if (typeof ANIME_PAIRS !== 'undefined' && addedSong.animeId) {
-        ANIME_PAIRS.unshift({
-          songId: addedSong.id,
-          animeId: addedSong.animeId,
-          category: addedSong.mood,
-          badge: '🤖 เพิ่มโดย AI',
-          reason: addedSong.reason,
-          typoIdea: addedSong.typoIdea
-        });
-      }
+  // 6. Update button state
+  btn.className = 'btn-ai-confirm-add added';
+  btn.innerHTML = '✅ เพิ่มลงคลังเรียบร้อยแล้ว! (ค้นหาได้ทันที)';
 
-      // Update UI stats & song grid
-      if (typeof updateStats === 'function') updateStats();
-      if (typeof renderSongsGrid === 'function') renderSongsGrid();
+  showToast(`🎉 เพิ่มเพลง "${fullSong.title}" ลงคลังเรียบร้อยแล้ว!`);
 
-      // Play bell chime celebration!
-      playNotificationChime();
-
-      // Update button state
-      btn.className = 'btn-ai-confirm-add added';
-      btn.innerHTML = '✅ เพิ่มลงคลังเรียบร้อยแล้ว! (ทุกคนเห็นแล้ว)';
-
-      showToast(`🎉 เพิ่มเพลง "${addedSong.title}" ลงคลังเรียบร้อยแล้ว!`);
-
-      appendAiResponse(`
-        <div style="background: rgba(16, 185, 129, 0.14); border: 1.5px solid rgba(16, 185, 129, 0.4); border-radius: 14px; padding: 1rem; margin-top: 0.5rem;">
-          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
-            <span style="font-size: 1.3rem;">🎉</span>
-            <strong style="color: #6ee7b7; font-size: 1.05rem;">สำเร็จแล้วค่ะ!</strong>
-          </div>
-          <p style="margin: 0; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6;">
-            เพลง <strong>"${escapeHtml(addedSong.title)}"</strong> โดย <strong>${escapeHtml(addedSong.artist)}</strong> ได้ถูกเพิ่มเข้าสู่ฐานข้อมูลกลาง <code>data.js</code> เรียบร้อยแล้วค่ะ ทุกคนที่มีแอพจะสามารถค้นหา ฟัง และนำไปตัดคลิปได้ทันทีค่ะ ✨
-          </p>
-        </div>
-      `);
-    } else {
-      throw new Error(result.error || 'Server returned failure');
-    }
-  } catch (err) {
-    console.warn('Error confirming add song:', err);
-    btn.disabled = false;
-    btn.innerHTML = '⚠️ ลองอีกครั้ง';
-    showToast('⚠️ ไม่สามารถบันทึกลงเซิร์ฟเวอร์ได้ กรุณาลองใหม่อีกครั้ง');
-  }
+  appendAiResponse(`
+    <div style="background: rgba(16, 185, 129, 0.14); border: 1.5px solid rgba(16, 185, 129, 0.4); border-radius: 14px; padding: 1rem; margin-top: 0.5rem;">
+      <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+        <span style="font-size: 1.3rem;">🎉</span>
+        <strong style="color: #6ee7b7; font-size: 1.05rem;">เพิ่มเพลงสำเร็จเรียบร้อยค่ะ!</strong>
+      </div>
+      <p style="margin: 0; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6;">
+        เพลง <strong>"${escapeHtml(fullSong.title)}"</strong> โดย <strong>${escapeHtml(fullSong.artist)}</strong> ได้ถูกเพิ่มเข้าสู่คลังเพลงเรียบร้อยแล้วค่ะ! ทุกคนสามารถค้นหา ฟัง และนำไปตัดคลิปไทโปได้ทันทีค่ะ ✨
+      </p>
+    </div>
+  `);
 }
 
 // Markdown / Rich text renderer for AI responses

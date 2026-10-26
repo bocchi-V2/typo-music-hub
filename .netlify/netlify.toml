@@ -1,14 +1,13 @@
+functionsDirectory = "C:\\Users\\Smart\\Desktop\\เพลงตัดคลิปไทโป\\netlify\\functions"
+functionsDirectoryOrigin = "config-v1"
 headersOrigin = "config"
+redirectsOrigin = "config"
 plugins = []
-redirects = []
-
-[functions]
-
-[functions."*"]
 
 [build]
 publish = "C:\\Users\\Smart\\Desktop\\เพลงตัดคลิปไทโป"
 publishOrigin = "config"
+functions = "C:\\Users\\Smart\\Desktop\\เพลงตัดคลิปไทโป\\netlify\\functions"
 
 [build.environment]
 
@@ -24,9 +23,37 @@ publishOrigin = "config"
 
 [build.services]
 
+[functions]
+
+[functions."*"]
+
 [[headers]]
 for = "/*"
 
 [headers.values]
 Access-Control-Allow-Origin = "*"
 X-Frame-Options = "ALLOWALL"
+
+[[redirects]]
+from = "/api/ai/chat"
+to = "/.netlify/functions/chat"
+status = 200.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
+
+[[redirects]]
+from = "/api/ai/config"
+to = "/.netlify/functions/config"
+status = 200.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]
