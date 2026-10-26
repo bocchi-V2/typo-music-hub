@@ -14032,6 +14032,32 @@ const ANIMES = [
     "coverFallback": "https://media.kitsu.app/anime/poster_images/47379/medium.jpg",
     "anifumeUrl": "https://anifume.com/?s=Blue%20Lock",
     "mood": "hype"
+  },
+  {
+    "id": 1025,
+    "name": "Gintama': Enchousen",
+    "nameTH": "Gintama': Enchousen",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7253/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7253/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Gintama'%3A%20Enchousen",
+    "mood": "hype"
+  },
+  {
+    "id": 1026,
+    "name": "Owarimonogatari",
+    "nameTH": "Owarimonogatari",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/11182/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/11182/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Owarimonogatari",
+    "mood": "hype"
   }
 ];
 
@@ -610495,6 +610521,156 @@ const SONGS = [
     ],
     "reason": "เพลงฮิต TikTok ที่กำลังมาแรงในปีนี้ เหมาะตัดคลิปสั้นไทโปเปิดท่อนฮุกดึงดูดคนดู",
     "typoIdea": "ไทโปแบบเนื้อเพลงวิ่งคาราโอเกะสไตล์ลักชัวรี่ มีขีดไฮไลท์เลื่อนตามคำร้อง"
+  },
+  {
+    "id": 22856,
+    "title": "That's!Chojo",
+    "artist": "M!LK",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/7e/64/fb/7e64fb04-5523-7ddc-b493-c0696a55c7ec/VEATP-46003.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b0/2f/c0/b02fc0fd-7a81-3ac1-2b75-5fa129bb6aaa/mzaf_1245475934343953023.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/That's!Chojo%20M!LK",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 782,
+    "animeMatch": [
+      782
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Violet Evergarden Gaiden: Eien to Jidou Shuki Ningyou",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 22857,
+    "title": "KIMIGAIRU",
+    "artist": "U-KNOW",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/a1/bd/1d/a1bd1d28-b14e-af2b-15fb-dbaab7d04f6b/ANTCD-A0000021535.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a4/06/df/a406dfec-510e-c0ec-b3ae-e23ead9c78b5/mzaf_10714148815161024655.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/KIMIGAIRU%20U-KNOW",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 657,
+    "animeMatch": [
+      657
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Gochuumon wa Usagi Desu ka? Bloom",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 22858,
+    "title": "Sorenanoni",
+    "artist": "Uru",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/bf/cb/2a/bfcb2a95-29a7-4aad-8083-fed1cbd46986/4547366858440.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/6d/e5/47/6de5473b-a118-533a-92f2-e01fc3e0bdb4/mzaf_1247823559730948854.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Sorenanoni%20Uru",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 116,
+    "animeMatch": [
+      116
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Momentary Lily",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 22859,
+    "title": "Kokoro Wo Tomenaide",
+    "artist": "YUZU",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/b4/64/34/b464349e-5b65-7d08-e0fb-5fb84b4211fd/4988061935058.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/01/17/57/0117578c-61f3-84f5-1367-7d07d155075e/mzaf_13771959385137077682.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Kokoro%20Wo%20Tomenaide%20YUZU",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 160,
+    "animeMatch": [
+      160
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ NegaPosi Angler",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 22860,
+    "title": "You’re Under Arrest",
+    "artist": "ILLIT",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b9/40/bf/b940bf84-9f10-15e6-423f-3cdca2bbdd21/823375411949_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/99/99/7a/99997a0f-d9eb-bfd4-32fc-1e71cce95c43/mzaf_3667811440805358624.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/You%E2%80%99re%20Under%20Arrest%20ILLIT",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 414,
+    "animeMatch": [
+      414
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Saikin Yatotta Maid ga Ayashii",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 22861,
+    "title": "Zombie Zombie Zombie",
+    "artist": "Hoshimachi Suisei",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/a0/1e/7fa01eac-757e-97fb-c924-9731f52f18f7/4573623373906.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ab/af/ef/abafeff2-a56a-c967-adab-220e567fe9c2/mzaf_12560484103863775107.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Zombie%20Zombie%20Zombie%20Hoshimachi%20Suisei",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 350,
+    "animeMatch": [
+      350
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Ousama Ranking: Yuuki no Takarabako",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
   }
 ];
 
@@ -640960,5 +641136,53 @@ const ANIME_PAIRS = [
     "badge": "🔥 เพลงฮิตTikTok",
     "reason": "เพลงฮิต TikTok ที่กำลังมาแรงในปีนี้ เหมาะตัดคลิปสั้นไทโปเปิดท่อนฮุกดึงดูดคนดู",
     "typoIdea": "ไทโปแบบเนื้อเพลงวิ่งคาราโอเกะสไตล์ลักชัวรี่ มีขีดไฮไลท์เลื่อนตามคำร้อง"
+  },
+  {
+    "songId": 22856,
+    "animeId": 782,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Violet Evergarden Gaiden: Eien to Jidou Shuki Ningyou",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 22857,
+    "animeId": 657,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Gochuumon wa Usagi Desu ka? Bloom",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 22858,
+    "animeId": 116,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Momentary Lily",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 22859,
+    "animeId": 160,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ NegaPosi Angler",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 22860,
+    "animeId": 414,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Saikin Yatotta Maid ga Ayashii",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 22861,
+    "animeId": 350,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ Ousama Ranking: Yuuki no Takarabako",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
   }
 ];
