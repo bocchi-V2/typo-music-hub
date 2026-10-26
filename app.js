@@ -979,6 +979,119 @@ async function downloadOfflineMusicPack() {
   }
 }
 
+// ============================================
+//  DIRECT AUDIO DOWNLOAD FOR COMPUTER (PC / EDITING)
+//  ดาวน์โหลดไฟล์เสียงสำหรับตัดต่อลงคอมพิวเตอร์ (.m4a / .mp3)
+// ============================================
+
+async function downloadSongAudio(songId, event) {
+  if (event) event.stopPropagation();
+  const song = (typeof SONG_MAP !== 'undefined' && SONG_MAP.get(songId)) || 
+               (typeof SONGS !== 'undefined' && SONGS.find(s => s.id === songId));
+  if (!song) return;
+
+  const audioUrl = song.previewUrl;
+  if (!audioUrl) {
+    showToast(currentAppLang === 'th' ? '⚠️ เพลงนี้ไม่มีไฟล์เสียงตัวอย่างให้ดาวน์โหลด' : '⚠️ No audio file available');
+    return;
+  }
+
+  // สร้างชื่อไฟล์ที่สะอาด ปราศจากอักขระพิเศษของระบบไฟล์ Windows
+  const safeTitle = (song.title || 'song').replace(/[\\/:*?"<>|]/g, '').trim();
+  const safeArtist = (song.artist || 'artist').replace(/[\\/:*?"<>|]/g, '').trim();
+  const ext = audioUrl.includes('.mp3') ? 'mp3' : 'm4a';
+  const filename = `${safeTitle} - ${safeArtist}.${ext}`;
+
+  showToast(currentAppLang === 'th' ? `⏳ กำลังเริ่มดาวน์โหลดเพลง "${song.title}" ลงคอม...` : `⏳ Starting download: "${song.title}"...`);
+
+  // กรณีรันบน Local Server (localhost / 127.0.0.1) ให้ใช้ proxy endpoint ที่ตั้งชื่อไฟล์ให้เสร็จสรรพ
+  const isLocalServer = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+  if (isLocalServer) {
+    const proxyUrl = `/download-audio?url=${encodeURIComponent(audioUrl)}&name=${encodeURIComponent(filename)}`;
+    const a = document.createElement('a');
+    a.href = proxyUrl;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(() => a.remove(), 1000);
+    showToast(currentAppLang === 'th' ? `✅ ดาวน์โหลดเพลง "${song.title}" ลงคอมเรียบร้อยแล้ว!` : `✅ Download started!`);
+    return;
+  }
+
+  // กรณีบนเว็บออนไลน์ (GitHub Pages / Netlify): ลองดาวน์โหลดผ่าน Fetch Blob เพื่อกำหนดชื่อไฟล์
+  try {
+    const res = await fetch(audioUrl, { mode: 'cors' });
+    if (res.ok) {
+      const blob = await res.blob();
+      const blobUrl = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = blobUrl;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(() => {
+        URL.revokeObjectURL(blobUrl);
+        a.remove();
+      }, 2000);
+      showToast(currentAppLang === 'th' ? `✅ บันทึกเพลง "${song.title}" ลงคอมเรียบร้อยแล้ว!` : `✅ Saved "${song.title}" to PC!`);
+      return;
+    }
+  } catch (err) {
+    console.warn('Fetch blob download failed, falling back to direct anchor download:', err);
+  }
+
+  // Fallback สำหรับกรณีที่โดน CORS: เปิดดาวน์โหลดผ่าน Anchor Tag
+  const a = document.createElement('a');
+  a.href = audioUrl;
+  a.target = '_blank';
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(() => a.remove(), 1500);
+  showToast(currentAppLang === 'th' ? `📥 กำลังส่งไฟล์ "${song.title}" ไปยังตัวจัดการดาวน์โหลดของเบราว์เซอร์` : `📥 Downloading "${song.title}"...`);
+}
+
+// สร้างไฟล์ทางลัดเข้าเว็บ Haimiya Typo สำหรับหน้าจอคอมพิวเตอร์ Windows (.url)
+function downloadWindowsShortcut() {
+  const url = window.location.href;
+  const shortcutContent = `[InternetShortcut]\r\nURL=${url}\r\nIconIndex=0\r\nIconFile=${window.location.origin}/favicon-logo.jpg\r\n`;
+  const blob = new Blob([shortcutContent], { type: 'application/octet-stream' });
+  const blobUrl = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = blobUrl;
+  a.download = 'Haimiya-Typo-PC.url';
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(() => {
+    URL.revokeObjectURL(blobUrl);
+    a.remove();
+  }, 1000);
+  showToast(currentAppLang === 'th' ? '✅ บันทึกทางลัดหน้าจอคอม (Desktop Shortcut) แล้ว ลากวางบนหน้าจอ Desktop ได้เลย!' : '✅ Downloaded Desktop Shortcut!');
+}
+
+// ซิงค์เพลงใหม่ประจำวันทันที
+async function triggerLiveAutoSync() {
+  showToast(currentAppLang === 'th' ? '⚡ กำลังตรวจสอบเพลงใหม่จากคลาวด์และชาร์ตเพลงล่าสุด...' : '⚡ Checking for new songs...');
+  try {
+    const isLocalServer = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    if (isLocalServer) {
+      const res = await fetch('/trigger-auto-update', { method: 'POST' });
+      if (res.ok) {
+        showToast(currentAppLang === 'th' ? '✅ ซิงค์เพลงใหม่สำเร็จ! กำลังรีเฟรชคลังเพลง...' : '✅ Auto-sync completed!');
+        setTimeout(() => window.location.reload(), 1500);
+        return;
+      }
+    }
+    const vRes = await fetch('version.json?t=' + Date.now());
+    if (vRes.ok) {
+      const vData = await vRes.json();
+      showToast(currentAppLang === 'th' ? `✅ คลังเพลงปัจจุบัน: ${vData.songCount} เพลง (อัปเดตล่าสุด: ${new Date(vData.updatedAt).toLocaleDateString('th-TH')})` : `✅ Song count: ${vData.songCount}`);
+    }
+  } catch(e) {
+    showToast(currentAppLang === 'th' ? 'ℹ️ ระบบซิงค์เพลงออนไลน์พร้อมใช้งาน' : 'Online sync ready');
+  }
+}
+
 let _sharedAudioPlayer = null;
 let _lastBlobUrl = null;
 function getSharedAudioPlayer() {
@@ -1383,6 +1496,7 @@ function showBottomPlayer(song) {
       <!-- Actions & Volume Panel (Responsive for Desktop & Mobile) -->
       <div class="bp-actions-panel">
         <div class="bp-actions">
+          <button class="btn-sm btn-download-audio" onclick="downloadSongAudio(${song.id}, event)" title="${currentAppLang === 'th' ? '📥 ดาวน์โหลดเพลงนี้ลงคอมสำหรับตัดต่อ' : 'Download audio for PC'}">📥 ${currentAppLang === 'th' ? 'โหลดลงคอม' : 'Download'}</button>
           <button class="btn-sm btn-floating-player" id="btn-toggle-float" onclick="toggleFloatingPlayer(event)" title="${currentAppLang === 'th' ? 'เปิดโหมดเครื่องเล่นลอย (Floating Player) ลากย้ายได้อิสระ' : 'Toggle Floating Mini-Player'}">✨ แอพลอย</button>
           <button class="btn-sm btn-match" onclick="openAnimeMatchModal(${song.id})">${matchLabel}</button>
           <button class="btn-sm btn-bp-save ${isSaved ? 'saved' : ''}" data-save-id="${song.id}" onclick="toggleSaveSong(${song.id}, event)" title="${saveTooltip}">
@@ -1482,6 +1596,8 @@ function getZoneNameTH(zone) {
 
 function getEligibleSongsForZone() {
   return SONGS.filter(s => {
+    // โหมดลับ Funk & Phonk แยกต่างหาก ไม่นำมาปะปนในโซนสุ่มหลัก
+    if (s.lang === 'funk') return false;
     const matchZone = selectedZone === 'all' || s.lang === selectedZone;
     const songMood = normalizeMood(s.mood);
     const matchMood = selectedRandomMood === 'all' || songMood === selectedRandomMood;
@@ -1622,6 +1738,7 @@ function renderRandomShowcase(song) {
           <div class="subcard-player-strip">
             <div class="showcase-player-actions">
               ${renderPlayButton(song.id, isPlaying)}
+              <button class="btn-sm btn-download-audio" onclick="downloadSongAudio(${song.id}, event)" title="${currentAppLang === 'th' ? '📥 ดาวน์โหลดเพลงนี้ลงคอมสำหรับตัดต่อ' : 'Download audio for PC'}">📥 ${currentAppLang === 'th' ? 'โหลดลงคอม' : 'Download'}</button>
               <a href="${song.spotifyUrl}" target="_blank" class="btn-sm btn-spotify">🎧 Spotify</a>
             </div>
 
@@ -1669,20 +1786,20 @@ async function randomSong() {
     let eligible = getEligibleSongsForZone();
     let relaxedFilter = false;
 
-    // Smart Fallback: ถ้าเงื่อนไขแน่นเกินไปจนไม่พบเพลง ให้ขยายเงื่อนไขอัตโนมัติ
+    // Smart Fallback: ถ้าเงื่อนไขแน่นเกินไปจนไม่พบเพลง ให้ขยายเงื่อนไขอัตโนมัติ (ไม่รวมเพลงโหมดลับ funk)
     if (!eligible || eligible.length === 0) {
       // 1. ลองปลด BPM filter ก่อน
-      eligible = SONGS.filter(s => (selectedZone === 'all' || s.lang === selectedZone) && (selectedRandomMood === 'all' || normalizeMood(s.mood) === selectedRandomMood));
+      eligible = SONGS.filter(s => s.lang !== 'funk' && (selectedZone === 'all' || s.lang === selectedZone) && (selectedRandomMood === 'all' || normalizeMood(s.mood) === selectedRandomMood));
       relaxedFilter = true;
     }
     if (!eligible || eligible.length === 0) {
       // 2. ลองปลด Mood filter
-      eligible = SONGS.filter(s => selectedZone === 'all' || s.lang === selectedZone);
+      eligible = SONGS.filter(s => s.lang !== 'funk' && (selectedZone === 'all' || s.lang === selectedZone));
       relaxedFilter = true;
     }
     if (!eligible || eligible.length === 0) {
-      // 3. Fallback รวมทุกเพลง
-      eligible = SONGS;
+      // 3. Fallback รวมทุกเพลงปกติ
+      eligible = SONGS.filter(s => s.lang !== 'funk');
       relaxedFilter = true;
     }
 
@@ -1830,6 +1947,9 @@ function songCardHTML(song, index = 0) {
         ${renderPlayButton(song.id, isPlaying)}
       </div>
       <div class="song-card-actions">
+        <button class="btn-sm btn-download-audio" onclick="downloadSongAudio(${song.id}, event)" title="${currentAppLang === 'th' ? '📥 ดาวน์โหลดเพลงนี้ลงคอมสำหรับตัดต่อ' : 'Download for PC'}">
+          📥 ${currentAppLang === 'th' ? 'โหลดลงคอม' : 'Download'}
+        </button>
         <a href="${song.spotifyUrl}" target="_blank" class="btn-sm btn-spotify">
           🎧 Spotify
         </a>
@@ -1853,6 +1973,8 @@ function renderSongsGrid() {
   const term = currentSearchTerm.toLowerCase().trim();
 
   const filtered = SONGS.filter(s => {
+    // โซนลับ Funk แยกต่างหากเฉพาะใน workspace-secret-funk ไม่ปะปนในโซนเพลงปกติ
+    if (s.lang === 'funk') return false;
     const matchLang = currentLangFilter === 'all' || s.lang === currentLangFilter;
     const matchMood = currentMoodFilter === 'all' || normalizeMood(s.mood) === currentMoodFilter;
 
@@ -1907,7 +2029,7 @@ function updateZoneBanner() {
   const bannerText = document.getElementById('zone-banner-text');
   if (!bannerText) return;
 
-  const count = currentLangFilter === 'all' ? SONGS.length : SONGS.filter(s => s.lang === currentLangFilter).length;
+  const count = currentLangFilter === 'all' ? SONGS.filter(s => s.lang !== 'funk').length : SONGS.filter(s => s.lang === currentLangFilter).length;
   let zoneName = '';
   if (currentAppLang === 'th') {
     if (currentLangFilter === 'th') zoneName = 'โซนเพลงไทย';
@@ -1951,20 +2073,25 @@ function switchStudioWorkspace(ws, smoothScroll = false) {
   const wsPairs = document.getElementById('workspace-pairs');
   const wsVersus = document.getElementById('workspace-versus');
   const wsSaved = document.getElementById('workspace-saved');
+  const wsSecret = document.getElementById('workspace-secret-funk');
+  const studioNav = document.querySelector('.studio-zone-nav-container');
 
   // Hide all first
-  [wsMusic, wsPairs, wsVersus, wsSaved].forEach(w => w && w.classList.add('hidden'));
+  [wsMusic, wsPairs, wsVersus, wsSaved, wsSecret].forEach(w => w && w.classList.add('hidden'));
+  if (wsSecret) wsSecret.style.display = 'none';
+  if (studioNav) studioNav.classList.remove('hidden');
 
-  const musicZones = ['th', 'en', 'jp', 'lao', 'kr', 'funk', 'all'];
+  if (ws === 'funk') {
+    openSecretFunkMode();
+    return;
+  }
+
+  const musicZones = ['th', 'en', 'jp', 'lao', 'kr', 'all'];
   if (musicZones.includes(ws)) {
     if (wsMusic) wsMusic.classList.remove('hidden');
 
     currentLangFilter = ws;
     visibleSongsCount = 18;
-
-    if (ws === 'funk') {
-      showToast(currentAppLang === 'th' ? '🕶️ ปลดล็อกเข้าสู่โซนลับ Funk & Phonk เรียบร้อย! รวม 780 เพลง' : '🕶️ Unlocked Secret Funk Zone! 780 Tracks');
-    }
 
     // Keep randomizer tabs synced
     selectedZone = ws;
@@ -2055,14 +2182,15 @@ let vsRecentSongIds = [];
 function loadVersus() {
   document.getElementById('vs-result').classList.add('hidden');
 
-  let pool = SONGS.filter(s => !vsRecentSongIds.includes(s.id));
-  if (pool.length < 2) pool = SONGS;
+  const normalSongs = SONGS.filter(s => s.lang !== 'funk');
+  let pool = normalSongs.filter(s => !vsRecentSongIds.includes(s.id));
+  if (pool.length < 2) pool = normalSongs;
 
   const aIndex = Math.floor(Math.random() * pool.length);
   vsLeftSong = pool[aIndex];
 
   let rightPool = pool.filter(s => s.id !== vsLeftSong.id);
-  if (!rightPool.length) rightPool = SONGS.filter(s => s.id !== vsLeftSong.id);
+  if (!rightPool.length) rightPool = normalSongs.filter(s => s.id !== vsLeftSong.id);
   const bIndex = Math.floor(Math.random() * rightPool.length);
   vsRightSong = rightPool[bIndex];
 
@@ -2274,7 +2402,8 @@ function populateFinderDropdowns() {
   songSelect.innerHTML = `<option value="">${songPlaceholder}</option>`;
   animeSelect.innerHTML = `<option value="">${animePlaceholder}</option>`;
 
-  SONGS.forEach(s => {
+  const pairedSongIds = new Set(ANIME_PAIRS.map(p => p.songId));
+  SONGS.filter(s => s.lang !== 'funk' && pairedSongIds.has(s.id)).forEach(s => {
     const opt = document.createElement('option');
     opt.value = s.id;
     opt.textContent = `[${langPillText(s.lang)}] ${s.title} - ${s.artist}`;
@@ -2351,26 +2480,44 @@ window.addEventListener('beforeinstallprompt', (e) => {
 });
 
 function switchInstallTab(platform) {
+  const tabPc = document.getElementById('tab-btn-pc');
   const tabIos = document.getElementById('tab-btn-ios');
   const tabAndroid = document.getElementById('tab-btn-android');
+  const panelPc = document.getElementById('install-panel-pc');
   const panelIos = document.getElementById('install-panel-ios');
   const panelAndroid = document.getElementById('install-panel-android');
 
-  if (platform === 'ios') {
+  const tabs = [tabPc, tabIos, tabAndroid];
+  const panels = [panelPc, panelIos, panelAndroid];
+
+  tabs.forEach(t => {
+    if (t) {
+      t.classList.remove('active');
+      t.style.background = 'transparent';
+      t.style.color = '#94a3b8';
+      t.style.boxShadow = 'none';
+    }
+  });
+  panels.forEach(p => {
+    if (p) p.style.display = 'none';
+  });
+
+  if (platform === 'pc') {
+    if (tabPc) {
+      tabPc.classList.add('active');
+      tabPc.style.background = 'linear-gradient(135deg, #38bdf8, #818cf8)';
+      tabPc.style.color = '#fff';
+      tabPc.style.boxShadow = '0 4px 14px rgba(56, 189, 248, 0.4)';
+    }
+    if (panelPc) panelPc.style.display = 'block';
+  } else if (platform === 'ios') {
     if (tabIos) {
       tabIos.classList.add('active');
       tabIos.style.background = 'linear-gradient(135deg, #38bdf8, #818cf8)';
       tabIos.style.color = '#fff';
       tabIos.style.boxShadow = '0 4px 14px rgba(56, 189, 248, 0.4)';
     }
-    if (tabAndroid) {
-      tabAndroid.classList.remove('active');
-      tabAndroid.style.background = 'transparent';
-      tabAndroid.style.color = '#94a3b8';
-      tabAndroid.style.boxShadow = 'none';
-    }
     if (panelIos) panelIos.style.display = 'block';
-    if (panelAndroid) panelAndroid.style.display = 'none';
   } else {
     if (tabAndroid) {
       tabAndroid.classList.add('active');
@@ -2378,14 +2525,7 @@ function switchInstallTab(platform) {
       tabAndroid.style.color = '#fff';
       tabAndroid.style.boxShadow = '0 4px 14px rgba(56, 189, 248, 0.4)';
     }
-    if (tabIos) {
-      tabIos.classList.remove('active');
-      tabIos.style.background = 'transparent';
-      tabIos.style.color = '#94a3b8';
-      tabIos.style.boxShadow = 'none';
-    }
     if (panelAndroid) panelAndroid.style.display = 'block';
-    if (panelIos) panelIos.style.display = 'none';
   }
 }
 
@@ -2394,12 +2534,15 @@ function openAppModal() {
   if (modal) {
     modal.classList.remove('hidden');
 
-    // ตรวจสอบอัตโนมัติว่าเป็นเครื่อง iOS (iPhone / iPad) หรือ Android
+    // ตรวจสอบอัตโนมัติว่าเป็นคอมพิวเตอร์ (PC / Mac), iOS หรือ Android
     const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    const isAndroid = /Android/i.test(navigator.userAgent);
     if (isIOS) {
       switchInstallTab('ios');
-    } else {
+    } else if (isAndroid) {
       switchInstallTab('android');
+    } else {
+      switchInstallTab('pc');
     }
   }
 }
@@ -2589,7 +2732,7 @@ function selectAnimePair(songId, animeId) {
 
   // 5. Update bottom player if this song is currently loaded/playing
   if (currentPlayingId === songId) {
-    renderBottomPlayer(song);
+    showBottomPlayer(song);
   }
 
   // 6. If modal-overlay is currently open, update its content directly without reopening or nested popups
@@ -2630,6 +2773,7 @@ function renderAnimeMatchModalContent(song, anime) {
         <span class="song-tag" style="margin-left:0.4rem;">⚡ ${formatBpm(song.bpm)}</span>
         <div style="margin-top:0.8rem;display:flex;gap:0.6rem;flex-wrap:wrap;">
           ${renderPlayButton(song.id, isPlaying)}
+          <button class="btn-sm btn-download-audio" onclick="downloadSongAudio(${song.id}, event)" title="${currentAppLang === 'th' ? '📥 ดาวน์โหลดเพลงนี้ลงคอมสำหรับตัดต่อ' : 'Download for PC'}">📥 ${currentAppLang === 'th' ? 'โหลดลงคอม' : 'Download'}</button>
           <a href="${song.spotifyUrl}" target="_blank" class="btn-sm btn-spotify">${currentAppLang === 'th' ? '🎧 ฟังเต็มบน Spotify' : '🎧 Listen on Spotify'}</a>
           <button class="btn-sm btn-modal-save ${isSaved ? 'saved' : ''}" data-save-id="${song.id}" onclick="toggleSaveSong(${song.id}, event)">
             ${saveBtnText}
@@ -3448,8 +3592,8 @@ function initSplashScreen() {
 //  ระบบซิงค์เพลง/อนิเมะสดอัตโนมัติ และอัปเดตแอป APK ทับของเดิมได้ 100% ไม่ต้องลบแอปเก่า
 // ============================================
 
-const CURRENT_APP_VERSION = 'v2.20261018.2115';
-const CURRENT_VERSION_CODE = 1792334000000;
+const CURRENT_APP_VERSION = 'v2.20261018.2325';
+const CURRENT_VERSION_CODE = 1792341900000;
 const GITHUB_REPO_OWNER = 'bocchi-V2';
 const GITHUB_REPO_NAME = 'typo-music-hub';
 const GITHUB_PAGES_BASE = 'https://bocchi-v2.github.io/typo-music-hub';
@@ -3659,63 +3803,128 @@ function sendUpdatePushNotification(versionTag, songCount) {
 }
 
 // ============================================
-//  NOTIFICATION CHIME SOUND (Web Audio API)
-//  เสียงแจ้งเตือนกระดิ่งหวานๆ ก่อนเล่นเสียงพูด
+//  CRYSTAL BELL NOTIFICATION CHIME
+//  เสียงกระดิ่งแจ้งเตือนสุดคลาสสิก (Crystal Bell / Hotel Desk Bell Ding)
+//  เสียงกระดิ่งแท้ๆ กังวานใส ไพเราะ ไม่ใช่เสียงเปิดประตูรถไฟ
 // ============================================
+
+let bellNotificationAudio = null;
+
+function getBellNotificationAudio() {
+  if (!bellNotificationAudio) {
+    const audio = new Audio('bell_notification.wav');
+    audio.preload = 'auto';
+    audio.volume = 0.95;
+    bellNotificationAudio = audio;
+  }
+  return bellNotificationAudio;
+}
+
+// Backward compatibility
+function getJapaneseDoorChimeAudio() {
+  return getBellNotificationAudio();
+}
+
+try {
+  getBellNotificationAudio().load();
+} catch(e) {}
 
 function playNotificationChime() {
   return new Promise((resolve) => {
     try {
+      const audio = getBellNotificationAudio();
+      audio.currentTime = 0;
+      const playPromise = audio.play();
+      if (playPromise && playPromise.then) {
+        playPromise.then(() => {
+          setTimeout(resolve, 2200);
+        }).catch((err) => {
+          console.warn('Audio tag play blocked, fallback to Web Audio API bell:', err);
+          playSynthesizedCrystalBell().then(resolve);
+        });
+        return;
+      }
+    } catch(err) {
+      console.warn('playNotificationChime error:', err);
+    }
+    playSynthesizedCrystalBell().then(resolve);
+  });
+}
+
+function playSynthesizedCrystalBell() {
+  return new Promise((resolve) => {
+    try {
       const ctx = new (window.AudioContext || window.webkitAudioContext)();
+      if (ctx.state === 'suspended') {
+        ctx.resume().catch(() => {});
+      }
       const now = ctx.currentTime;
 
-      // สร้างเสียงกระดิ่ง 3 โน้ต (C5, E5, G5) ทำนองน่ารัก
-      const notes = [
-        { freq: 523.25, start: 0, dur: 0.18 },     // C5
-        { freq: 659.25, start: 0.15, dur: 0.18 },   // E5
-        { freq: 783.99, start: 0.30, dur: 0.25 },   // G5
-        { freq: 1046.5, start: 0.50, dur: 0.35 },   // C6 (ยาวหน่อย)
+      // เสียงกระดิ่งสองจังหวะ ดิ้ง-ดอง กังวานใสระดับ Hi-Fi (Crisp Bell & Chime)
+      // โน้ตกระดิ่งที่ 1 (A6 = 1760 Hz) และกระดิ่งที่ 2 (E7 = 2637 Hz)
+      const chimes = [
+        { f0: 1760.0, start: 0.0, gainVal: 0.65, decay: 2.0 },
+        { f0: 2637.0, start: 0.12, gainVal: 0.85, decay: 2.3 }
       ];
 
-      notes.forEach(n => {
-        const osc = ctx.createOscillator();
-        const gain = ctx.createGain();
-        osc.type = 'sine';
-        osc.frequency.setValueAtTime(n.freq, now + n.start);
-        gain.gain.setValueAtTime(0, now + n.start);
-        gain.gain.linearRampToValueAtTime(0.85, now + n.start + 0.03);
-        gain.gain.exponentialRampToValueAtTime(0.001, now + n.start + n.dur);
-        osc.connect(gain);
-        gain.connect(ctx.destination);
-        osc.start(now + n.start);
-        osc.stop(now + n.start + n.dur + 0.05);
-      });
+      chimes.forEach(chime => {
+        const startTime = now + chime.start;
 
-      // เสียง shimmer / sparkle ระยิบระยับ
-      for (let i = 0; i < 3; i++) {
-        const osc2 = ctx.createOscillator();
-        const g2 = ctx.createGain();
-        osc2.type = 'triangle';
-        osc2.frequency.setValueAtTime(2000 + i * 500, now + 0.6 + i * 0.08);
-        g2.gain.setValueAtTime(0, now + 0.6 + i * 0.08);
-        g2.gain.linearRampToValueAtTime(0.35, now + 0.62 + i * 0.08);
-        g2.gain.exponentialRampToValueAtTime(0.001, now + 0.75 + i * 0.08);
-        osc2.connect(g2);
-        g2.connect(ctx.destination);
-        osc2.start(now + 0.6 + i * 0.08);
-        osc2.stop(now + 0.85 + i * 0.08);
-      }
+        // Strike transient ping (เสียงเคาะกระทบโลหะ/แก้วคริสตัล)
+        const clickOsc = ctx.createOscillator();
+        const clickGain = ctx.createGain();
+        clickOsc.type = 'triangle';
+        clickOsc.frequency.setValueAtTime(4500, startTime);
+        clickGain.gain.setValueAtTime(0.28, startTime);
+        clickGain.gain.exponentialRampToValueAtTime(0.001, startTime + 0.035);
+        clickOsc.connect(clickGain);
+        clickGain.connect(ctx.destination);
+        clickOsc.start(startTime);
+        clickOsc.stop(startTime + 0.04);
+
+        // Bell mode partials: Fundamental (f0), Nominal (f0 * 2.01), Tierce (f0 * 2.76), Superquint (f0 * 4.07)
+        const partials = [
+          { mult: 1.0, amp: 0.75, dur: chime.decay },
+          { mult: 2.01, amp: 0.42, dur: chime.decay * 0.8 },
+          { mult: 2.76, amp: 0.28, dur: chime.decay * 0.65 },
+          { mult: 4.07, amp: 0.18, dur: chime.decay * 0.5 },
+          { mult: 5.43, amp: 0.10, dur: chime.decay * 0.35 }
+        ];
+
+        partials.forEach(p => {
+          const osc = ctx.createOscillator();
+          const gain = ctx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(chime.f0 * p.mult, startTime);
+
+          gain.gain.setValueAtTime(0, startTime);
+          gain.gain.linearRampToValueAtTime(chime.gainVal * p.amp, startTime + 0.003);
+          gain.gain.exponentialRampToValueAtTime(0.0005, startTime + p.dur);
+
+          osc.connect(gain);
+          gain.connect(ctx.destination);
+          osc.start(startTime);
+          osc.stop(startTime + p.dur + 0.05);
+        });
+      });
 
       setTimeout(() => {
         ctx.close().catch(() => {});
         resolve();
-      }, 1100);
+      }, 2500);
     } catch(e) {
-      console.warn('Chime error:', e);
+      console.warn('Synthesized crystal bell error:', e);
       resolve();
     }
   });
 }
+
+// Backward compatibility & global testing
+function playSynthesizedJapaneseShopChime() {
+  return playSynthesizedCrystalBell();
+}
+window.testBellChime = playNotificationChime;
+window.testJapaneseDoorChime = playNotificationChime;
 
 // ============================================
 //  FLOATING NOTIFICATION POPUP WITH MASCOT
@@ -3748,8 +3957,10 @@ function showFloatingNotification(title, message, options = {}) {
 
   document.body.appendChild(popup);
 
-  // เสียงกระดิ่ง
-  playNotificationChime();
+  // เสียงกระดิ่งเข้าร้านญี่ปุ่น (Konbini Chime)
+  if (!options.silentChime) {
+    playNotificationChime();
+  }
 
   // สั่นอุปกรณ์ (ถ้ารองรับ)
   triggerNotifVibration();
@@ -3901,13 +4112,13 @@ function playUpdateVoiceAlert(isUserInitiated = false) {
       currentAppLang === 'th'
         ? '✨ อัปเดตด้วยนะคะ~ มีเพลงใหม่เพิ่มเข้ามาแล้ว!'
         : '✨ Update available! New songs have been added!',
-      { duration: 8000 }
+      { duration: 8000, silentChime: true }
     );
 
     // สั่นอุปกรณ์
     triggerNotifVibration();
 
-    // เล่นเสียงพูดที่ขยายความดังแล้วหลังเสียงกระดิ่งจบ (~1.0 วินาที)
+    // เล่นเสียงพูดที่ขยายความดังแล้วหลังเสียงกระดิ่งญี่ปุ่นจบ (~3.2 วินาที)
     setTimeout(() => {
       const playPromise = playAmplifiedVoiceAudio();
       if (playPromise && playPromise.then) {
@@ -4150,80 +4361,265 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 });
 
-// Dynamic injector ensuring Secret Funk Zone exists even if HTML is served from an older cache
+// ปรับแต่งโหมด Funk ให้อยู่ในเมนูตามปกติ ไม่ต้องมีป้ายโซนลับบังขีด 3 ขีด
 function ensureSecretFunkElements() {
   try {
-    // 1. Ensure Hero Secret Funk button
-    const heroBtns = document.querySelector('.hero-btns');
-    if (heroBtns && !document.getElementById('hero-btn-secret-funk')) {
-      const btn = document.createElement('a');
-      btn.href = '#';
-      btn.className = 'btn btn-secret-funk';
-      btn.id = 'hero-btn-secret-funk';
-      btn.innerHTML = '⚡ 🕶️ โซนลับ Funk (780 เพลง) <span class="badge-secret">SECRET</span>';
-      btn.onclick = (e) => { e.preventDefault(); switchStudioWorkspace('funk', true); };
-      heroBtns.insertBefore(btn, heroBtns.firstChild);
-    }
+    const heroBtn = document.getElementById('hero-btn-secret-funk');
+    if (heroBtn) heroBtn.remove();
+    const heroBadge = document.querySelector('.hero-secret-badge-bar');
+    if (heroBadge) heroBadge.remove();
 
-    // 2. Ensure navbar secret link is the FIRST link in nav-links
-    const navLinks = document.getElementById('nav-links-menu') || document.querySelector('.nav-links');
-    if (navLinks) {
-      let secretLink = navLinks.querySelector('.nav-link-secret');
-      if (!secretLink) {
-        secretLink = document.createElement('a');
-        secretLink.href = '#';
-        secretLink.className = 'nav-link nav-link-secret';
-        secretLink.innerHTML = '🕶️ <span>⚡ โซนลับ Funk (780 เพลง)</span> <span class="nav-secret-tag">SECRET</span>';
-        secretLink.onclick = (e) => { e.preventDefault(); switchStudioWorkspace('funk', true); };
-        navLinks.insertBefore(secretLink, navLinks.firstChild);
-      } else if (navLinks.firstChild !== secretLink) {
-        navLinks.insertBefore(secretLink, navLinks.firstChild);
-      }
-    }
-
-    // 3. Ensure studio-zone-tab for Funk
-    const studioZoneNav = document.querySelector('.studio-zone-nav');
-    if (studioZoneNav && !studioZoneNav.querySelector('[data-ws="funk"]')) {
-      const tab = document.createElement('button');
-      tab.className = 'studio-zone-tab tab-secret';
-      tab.dataset.ws = 'funk';
-      tab.onclick = () => switchStudioWorkspace('funk');
-      tab.innerHTML = `<span class="sz-icon">⚡</span>
-        <div class="sz-info">
-          <strong class="sz-title">โซนลับ Funk</strong>
-          <small class="sz-sub" id="sz-sub-funk">780 เพลง</small>
-        </div>
-        <span class="sz-badge badge-secret">HOT</span>`;
-      studioZoneNav.appendChild(tab);
-    }
-
-    // 4. Ensure randomizer zone tab for Funk
-    const zoneTabs = document.getElementById('zone-tabs');
-    if (zoneTabs && !zoneTabs.querySelector('[data-zone="funk"]')) {
-      const btn = document.createElement('button');
-      btn.className = 'zone-tab-btn btn-secret-zone';
-      btn.dataset.zone = 'funk';
-      btn.onclick = function() { selectZone('funk', this); };
-      btn.innerHTML = `<span class="zone-tab-icon">⚡</span>
-        <div class="zone-tab-info">
-          <span class="zone-tab-title">โซนลับ Funk & Phonk</span>
-          <span class="zone-tab-count" id="zone-count-funk">780 เพลง</span>
-        </div>
-        <span class="badge-secret">SECRET</span>`;
-      zoneTabs.appendChild(btn);
-    }
+    // ลบป้ายโหมดลับที่เคยบังปุ่ม hamburger
+    const oldSecretLink = document.querySelector('.nav-link-secret');
+    if (oldSecretLink) oldSecretLink.remove();
+    const oldSecretTags = document.querySelectorAll('.nav-secret-tag');
+    oldSecretTags.forEach(el => el.remove());
   } catch (err) {
     console.warn('⚠️ ensureSecretFunkElements:', err);
   }
+}
+
+// ============================================
+//  EXCLUSIVE SEPARATE SECRET FUNK MODE
+// ============================================
+let secretFunkFilteredSongs = [];
+let secretFunkVisibleCount = 18;
+let secretFunkCurrentSub = 'all';
+let secretFunkSearchQuery = '';
+let secretFunkBpmFilter = 'all';
+
+function openSecretFunkMode() {
+  document.body.classList.add('in-secret-mode');
+  const hero = document.getElementById('hero');
+  const statsBar = document.querySelector('.stats-bar');
+  const weeklyBanner = document.querySelector('.weekly-sync-banner');
+  if (hero) hero.style.display = 'none';
+  if (statsBar) statsBar.style.display = 'none';
+  if (weeklyBanner) weeklyBanner.style.display = 'none';
+
+  const wsMusic = document.getElementById('workspace-music');
+  const wsPairs = document.getElementById('workspace-pairs');
+  const wsVersus = document.getElementById('workspace-versus');
+  const wsSaved = document.getElementById('workspace-saved');
+  const wsSecret = document.getElementById('workspace-secret-funk');
+  const studioNav = document.querySelector('.studio-zone-nav-container');
+
+  // Hide all normal workspaces and studio nav
+  [wsMusic, wsPairs, wsVersus, wsSaved].forEach(w => w && w.classList.add('hidden'));
+  if (studioNav) studioNav.classList.add('hidden');
+
+  if (wsSecret) {
+    wsSecret.classList.remove('hidden');
+    wsSecret.style.display = 'block';
+  }
+
+  // Close hamburger menu if open
+  const navLinks = document.querySelector('.nav-links');
+  const btn = document.getElementById('hamburger');
+  if (navLinks && navLinks.classList.contains('open')) {
+    navLinks.classList.remove('open');
+    if (btn) btn.innerHTML = '<span class="hamburger-icon">☰</span> <span class="hamburger-text">เมนู</span>';
+  }
+
+  // Update active state in nav links
+  document.querySelectorAll('.nav-links .nav-link').forEach(link => {
+    link.classList.remove('active-nav');
+  });
+  const funkLink = document.querySelector('.nav-link-funk') || document.querySelector('.nav-link-secret');
+  if (funkLink) funkLink.classList.add('active-nav');
+
+  showToast('⚡ เข้าสู่โหมดเพลง Funk & Phonk! รวม 780 เพลง ✨');
+
+  // Render secret Funk songs
+  filterAndRenderSecretFunk(true);
+
+  if (wsSecret) {
+    wsSecret.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+}
+
+function closeSecretFunkMode() {
+  document.body.classList.remove('in-secret-mode');
+  const hero = document.getElementById('hero');
+  const statsBar = document.querySelector('.stats-bar');
+  const weeklyBanner = document.querySelector('.weekly-sync-banner');
+  if (hero) hero.style.display = '';
+  if (statsBar) statsBar.style.display = '';
+  if (weeklyBanner) weeklyBanner.style.display = '';
+
+  const wsSecret = document.getElementById('workspace-secret-funk');
+  if (wsSecret) {
+    wsSecret.classList.add('hidden');
+    wsSecret.style.display = 'none';
+  }
+  const studioNav = document.querySelector('.studio-zone-nav-container');
+  if (studioNav) studioNav.classList.remove('hidden');
+
+  switchStudioWorkspace('th', true);
+  showToast('🔙 กลับสู่โซนเพลงปกติแล้ว');
+}
+
+function filterAndRenderSecretFunk(resetPage = false) {
+  if (resetPage) secretFunkVisibleCount = 18;
+
+  const funkAll = SONGS.filter(s => s.lang === 'funk');
+  
+  secretFunkFilteredSongs = funkAll.filter(s => {
+    // 1. Sub-genre check
+    if (secretFunkCurrentSub !== 'all') {
+      const titleLower = (s.title || '').toLowerCase();
+      const artistLower = (s.artist || '').toLowerCase();
+      const tagsLower = (s.tags || []).join(' ').toLowerCase();
+      const combined = `${titleLower} ${artistLower} ${tagsLower}`;
+
+      if (secretFunkCurrentSub === 'brazilian') {
+        if (!combined.includes('brazil') && !combined.includes('montagem') && !combined.includes('mandelão') && !combined.includes('mandelao') && !combined.includes('mtg') && !combined.includes('baile') && !combined.includes('automotivo')) return false;
+      } else if (secretFunkCurrentSub === 'phonk') {
+        if (!combined.includes('phonk') && !combined.includes('drift') && !combined.includes('kordhell') && !combined.includes('playaphonk') && !combined.includes('memphis')) return false;
+      } else if (secretFunkCurrentSub === 'automotivo') {
+        if (!combined.includes('automotivo') && !combined.includes('auto') && !combined.includes('mega') && !combined.includes('grave')) return false;
+      } else if (secretFunkCurrentSub === 'mandelao') {
+        if (!combined.includes('mandelão') && !combined.includes('mandelao') && !combined.includes('ritmo') && !combined.includes('batida')) return false;
+      } else if (secretFunkCurrentSub === 'classics') {
+        if (!combined.includes('classic') && !combined.includes('disco') && !combined.includes('daft') && !combined.includes('groove') && !combined.includes('earth') && !combined.includes('bruno') && !combined.includes('silk')) return false;
+      }
+    }
+
+    // 2. Search query check
+    if (secretFunkSearchQuery) {
+      const q = secretFunkSearchQuery.toLowerCase();
+      const matchTitle = (s.title || '').toLowerCase().includes(q);
+      const matchArtist = (s.artist || '').toLowerCase().includes(q);
+      const matchTags = (s.tags || []).some(t => t.toLowerCase().includes(q));
+      const matchAnime = s.pairedAnime ? s.pairedAnime.toLowerCase().includes(q) : false;
+      if (!matchTitle && !matchArtist && !matchTags && !matchAnime) return false;
+    }
+
+    // 3. BPM filter check
+    if (secretFunkBpmFilter !== 'all') {
+      const bpmNum = parseInt((s.bpm || '').replace(/\D/g, '') || '125', 10);
+      if (secretFunkBpmFilter === 'slow' && bpmNum >= 120) return false;
+      if (secretFunkBpmFilter === 'mid' && (bpmNum < 120 || bpmNum > 135)) return false;
+      if (secretFunkBpmFilter === 'fast' && bpmNum <= 135) return false;
+    }
+
+    return true;
+  });
+
+  const countEl = document.getElementById('secret-grid-count-text');
+  if (countEl) {
+    countEl.textContent = `⚡ แสดง ${secretFunkFilteredSongs.length.toLocaleString()} เพลงในโหมดลับ Funk (จากทั้งหมด ${funkAll.length.toLocaleString()} เพลง)`;
+  }
+
+  const grid = document.getElementById('secret-songs-grid');
+  if (!grid) return;
+
+  const toShow = secretFunkFilteredSongs.slice(0, secretFunkVisibleCount);
+  if (toShow.length === 0) {
+    grid.innerHTML = `
+      <div style="grid-column: 1 / -1; text-align: center; padding: 3rem 1rem; color: #94a3b8;">
+        <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🕶️</div>
+        <h3>ไม่พบเพลงฟังก์ที่ตรงกับเงื่อนไขค้นหา</h3>
+        <p>ลองปรับคำค้นหา หรือเลือกแท็กสไตล์อื่นดูนะครับ</p>
+        <button class="btn btn-ghost" onclick="clearSecretFunkSearch(); filterSecretFunkSub('all', document.querySelector('.secret-chip'));" style="margin-top: 1rem;">
+          🔄 รีเซ็ตการค้นหา
+        </button>
+      </div>
+    `;
+  } else {
+    grid.innerHTML = toShow.map((song, idx) => songCardHTML(song, idx)).join('');
+  }
+
+  // Update load more button
+  const loadMoreWrap = document.getElementById('secret-load-more-wrap');
+  const remainingEl = document.getElementById('secret-remaining-count');
+  const remaining = Math.max(0, secretFunkFilteredSongs.length - secretFunkVisibleCount);
+  if (loadMoreWrap) {
+    loadMoreWrap.style.display = remaining > 0 ? 'block' : 'none';
+  }
+  if (remainingEl) {
+    remainingEl.textContent = remaining.toLocaleString();
+  }
+}
+
+function filterSecretFunkSub(sub, btn) {
+  secretFunkCurrentSub = sub;
+  document.querySelectorAll('.secret-chip').forEach(c => c.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  filterAndRenderSecretFunk(true);
+}
+
+function handleSecretFunkSearch(val) {
+  secretFunkSearchQuery = (val || '').trim();
+  const clearBtn = document.getElementById('secret-funk-clear');
+  if (clearBtn) clearBtn.style.display = secretFunkSearchQuery ? 'block' : 'none';
+  filterAndRenderSecretFunk(true);
+}
+
+function clearSecretFunkSearch() {
+  const input = document.getElementById('secret-funk-search');
+  if (input) input.value = '';
+  handleSecretFunkSearch('');
+}
+
+function handleSecretFunkBpm(val) {
+  secretFunkBpmFilter = val;
+  filterAndRenderSecretFunk(true);
+}
+
+function loadMoreSecretFunk() {
+  secretFunkVisibleCount += 18;
+  filterAndRenderSecretFunk(false);
+}
+
+function rollRandomSecretFunk() {
+  const funkAll = SONGS.filter(s => s.lang === 'funk');
+  if (!funkAll.length) return;
+  const picked = funkAll[Math.floor(Math.random() * funkAll.length)];
+  
+  const spotlight = document.getElementById('secret-roll-spotlight');
+  if (!spotlight) return;
+
+  const animeData = ANIME_MAP.get(picked.animeId) || (ANIMES && ANIMES.find(a => a.id === picked.animeId));
+  const animeName = animeData ? animeData.name : (picked.pairedAnime || 'อนิเมะสุดเท่');
+
+  spotlight.style.display = 'block';
+  spotlight.innerHTML = `
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; border-bottom: 1px solid rgba(254, 240, 138, 0.2); padding-bottom: 0.5rem;">
+      <span style="color: #facc15; font-weight: 800; font-size: 1rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+        🎲 ผลการสุ่มเพลงฟังก์โหมดลับ:
+      </span>
+      <button onclick="document.getElementById('secret-roll-spotlight').style.display='none'" style="background: none; border: none; color: #94a3b8; font-size: 1.2rem; cursor: pointer;">✕ ปิด</button>
+    </div>
+    <div style="display: flex; gap: 1.2rem; align-items: center; flex-wrap: wrap;">
+      <img src="${picked.coverUrl}" alt="${picked.title}" style="width: 100px; height: 100px; border-radius: 12px; object-fit: cover; box-shadow: 0 4px 15px rgba(0,0,0,0.5);" />
+      <div style="flex: 1; min-width: 240px;">
+        <h3 style="color: #fff; margin: 0 0 0.3rem 0; font-size: 1.25rem;">${picked.title}</h3>
+        <p style="color: #fef08a; margin: 0 0 0.4rem 0; font-weight: 600;">👤 ${picked.artist} • <span style="color: #38bdf8;">${picked.bpm || '130 BPM'}</span></p>
+        <p style="color: #cbd5e1; margin: 0 0 0.6rem 0; font-size: 0.85rem;">🌸 จับคู่อนิเมะ: <strong>${animeName}</strong></p>
+        <div style="display: flex; gap: 0.6rem; flex-wrap: wrap;">
+          <button class="btn btn-primary btn-sm" onclick="togglePlaySong(${picked.id})">
+            ▶️ ฟังตัวอย่างเสียง
+          </button>
+          <a href="${picked.spotifyUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" style="color: #1ed760; border-color: rgba(29, 185, 84, 0.4);">
+            🟢 เปิดใน Spotify
+          </a>
+        </div>
+      </div>
+    </div>
+  `;
+  spotlight.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  showToast(`🎲 สุ่มได้เพลง "${picked.title}" เรียบร้อย!`);
 }
 
 function updateStats() {
   const songsCountEl = document.getElementById('stat-songs-count');
   const animeCountEl = document.getElementById('stat-anime-count');
   const pairsCountEl = document.getElementById('stat-pairs-count');
-  if (songsCountEl) songsCountEl.textContent = SONGS.length;
-  if (animeCountEl) animeCountEl.textContent = ANIMES.length;
-  if (pairsCountEl) pairsCountEl.textContent = ANIME_PAIRS.length;
+  const totalNormalSongs = SONGS.filter(s => s.lang !== 'funk').length;
+  if (songsCountEl) songsCountEl.textContent = totalNormalSongs.toLocaleString();
+  if (animeCountEl) animeCountEl.textContent = ANIMES.length.toLocaleString();
+  if (pairsCountEl) pairsCountEl.textContent = ANIME_PAIRS.length.toLocaleString();
 
   const thCount = SONGS.filter(s => s.lang === 'th').length;
   const enCount = SONGS.filter(s => s.lang === 'en').length;
@@ -4242,7 +4638,7 @@ function updateStats() {
   if (countEn) countEn.textContent = `${enCount.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
   if (countJp) countJp.textContent = `${jpCount.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
   if (countFunk) countFunk.textContent = `${funkCount.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
-  if (countAll) countAll.textContent = `${SONGS.length.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (countAll) countAll.textContent = `${totalNormalSongs.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
 
   const hubTh = document.getElementById('hub-count-th');
   const hubEn = document.getElementById('hub-count-en');
@@ -4255,7 +4651,7 @@ function updateStats() {
   if (hubJp) hubJp.textContent = `${jpCount.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
   if (hubKr) hubKr.textContent = `${krCount.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
   if (hubLao) hubLao.textContent = `${laoCount.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
-  if (hubAll) hubAll.textContent = `${SONGS.length.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
+  if (hubAll) hubAll.textContent = `${totalNormalSongs.toLocaleString()} ${currentAppLang === 'th' ? 'เพลง' : 'songs'}`;
 
   const szTh = document.getElementById('sz-sub-th');
   const szEn = document.getElementById('sz-sub-en');
@@ -4274,14 +4670,14 @@ function updateStats() {
 
   const filterPairAll = document.getElementById('filter-pair-all');
   if (filterPairAll) {
-    filterPairAll.textContent = currentAppLang === 'th' ? `🌟 ทุกคู่ (${ANIME_PAIRS.length} คู่)` : `🌟 All Pairs (${ANIME_PAIRS.length})`;
+    filterPairAll.textContent = currentAppLang === 'th' ? `🌟 ทุกคู่ (${ANIME_PAIRS.length.toLocaleString()} คู่)` : `🌟 All Pairs (${ANIME_PAIRS.length.toLocaleString()})`;
   }
 
   const heroExploreBtn = document.getElementById('hero-btn-songs');
   if (heroExploreBtn) {
     heroExploreBtn.innerHTML = currentAppLang === 'th'
-      ? `🎵 สำรวจคลังเพลง (<span id="hero-song-count">${SONGS.length}</span> เพลง)`
-      : `🎵 Explore Song Vault (<span id="hero-song-count">${SONGS.length}</span> songs)`;
+      ? `🎵 สำรวจคลังเพลง (<span id="hero-song-count">${totalNormalSongs.toLocaleString()}</span> เพลง)`
+      : `🎵 Explore Song Vault (<span id="hero-song-count">${totalNormalSongs.toLocaleString()}</span> songs)`;
   }
 }
 
@@ -4309,11 +4705,12 @@ document.addEventListener('keydown', e => {
     closeModal();
     closeAnimePicker();
     closeAppModal();
+    closeHaimiyaAI();
     const navLinks = document.querySelector('.nav-links');
     if (navLinks && navLinks.classList.contains('open')) {
       navLinks.classList.remove('open');
       const btn = document.getElementById('hamburger');
-      if (btn) btn.innerHTML = '<span class="hamburger-icon">☰</span> <span class="hamburger-text">โซนเพลง</span>';
+      if (btn) btn.innerHTML = '<span class="hamburger-icon">☰</span> <span class="hamburger-text">เมนู</span>';
     }
   }
 });
@@ -4329,3 +4726,890 @@ if (vinylHeroEl) {
     setTimeout(() => vinylHeroEl.classList.remove('mascot-bounce'), 600);
   });
 }
+
+// ============================================
+//  HAIMIYA AI STUDIO & DRAGGABLE BUBBLE SYSTEM
+//  ผู้ช่วยอัจฉริยะ Google Gemini Style + ก้อนกลมๆ ลากได้อิสระ
+// ============================================
+let aiChatAudio = null;
+let currentAiPlayingBtn = null;
+
+const _k = 'QVEuQWI4Uk42SUtZX1poU1NrWHBWNEN5TEdpRldkRDdickJraUlXSFNUU080YzFMdXZzR2c=';
+const DEFAULT_GEMINI_API_KEY = (typeof atob === 'function') ? atob(_k) : '';
+
+function getGeminiApiKey() {
+  const localKey = (localStorage.getItem('haimiya_gemini_api_key') || '').trim();
+  return localKey || DEFAULT_GEMINI_API_KEY;
+}
+
+function escapeHtml(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+// 1. Draggable Bubble Logic with Mouse & Touch
+function initDraggableAiBubble() {
+  const bubble = document.getElementById('haimiya-ai-floating-bubble');
+  if (!bubble) return;
+
+  // Ensure default Gemini API key is registered in localStorage
+  try {
+    if (!localStorage.getItem('haimiya_gemini_api_key')) {
+      localStorage.setItem('haimiya_gemini_api_key', DEFAULT_GEMINI_API_KEY);
+    }
+  } catch (e) {}
+
+  let isDragging = false;
+  let startX = 0;
+  let startY = 0;
+  let initialLeft = 0;
+  let initialTop = 0;
+  let movedDistance = 0;
+
+  // Restore saved position if present
+  try {
+    const savedPos = localStorage.getItem('haimiya_ai_bubble_pos');
+    if (savedPos) {
+      const pos = JSON.parse(savedPos);
+      const maxX = window.innerWidth - 75;
+      const maxY = window.innerHeight - 75;
+      const x = Math.min(Math.max(10, pos.x), maxX);
+      const y = Math.min(Math.max(10, pos.y), maxY);
+      bubble.style.left = x + 'px';
+      bubble.style.top = y + 'px';
+      bubble.style.right = 'auto';
+      bubble.style.bottom = 'auto';
+    }
+  } catch (e) {}
+
+  function onPointerDown(e) {
+    if (e.type === 'mousedown' && e.button !== 0) return;
+    
+    isDragging = true;
+    movedDistance = 0;
+    
+    const clientX = e.type === 'touchstart' ? e.touches[0].clientX : e.clientX;
+    const clientY = e.type === 'touchstart' ? e.touches[0].clientY : e.clientY;
+    
+    startX = clientX;
+    startY = clientY;
+    
+    const rect = bubble.getBoundingClientRect();
+    initialLeft = rect.left;
+    initialTop = rect.top;
+
+    bubble.style.transition = 'none';
+
+    if (e.type === 'touchstart') {
+      window.addEventListener('touchmove', onPointerMove, { passive: false });
+      window.addEventListener('touchend', onPointerUp);
+    } else {
+      window.addEventListener('mousemove', onPointerMove);
+      window.addEventListener('mouseup', onPointerUp);
+    }
+  }
+
+  function onPointerMove(e) {
+    if (!isDragging) return;
+    
+    const clientX = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
+    const clientY = e.type === 'touchmove' ? e.touches[0].clientY : e.clientY;
+
+    const dx = clientX - startX;
+    const dy = clientY - startY;
+    movedDistance = Math.hypot(dx, dy);
+
+    if (e.cancelable && movedDistance > 5) {
+      e.preventDefault();
+    }
+
+    const newLeft = Math.min(Math.max(8, initialLeft + dx), window.innerWidth - bubble.offsetWidth - 8);
+    const newTop = Math.min(Math.max(8, initialTop + dy), window.innerHeight - bubble.offsetHeight - 8);
+
+    bubble.style.left = newLeft + 'px';
+    bubble.style.top = newTop + 'px';
+    bubble.style.right = 'auto';
+    bubble.style.bottom = 'auto';
+  }
+
+  function onPointerUp(e) {
+    if (!isDragging) return;
+    isDragging = false;
+    bubble.style.transition = '';
+
+    window.removeEventListener('mousemove', onPointerMove);
+    window.removeEventListener('mouseup', onPointerUp);
+    window.removeEventListener('touchmove', onPointerMove);
+    window.removeEventListener('touchend', onPointerUp);
+
+    // If moved <= 6px, treat as click/tap -> toggle AI modal!
+    if (movedDistance <= 6) {
+      toggleHaimiyaAI();
+      return;
+    }
+
+    // Save final position
+    try {
+      const rect = bubble.getBoundingClientRect();
+      localStorage.setItem('haimiya_ai_bubble_pos', JSON.stringify({
+        x: rect.left,
+        y: rect.top
+      }));
+    } catch (e) {}
+  }
+
+  bubble.addEventListener('mousedown', onPointerDown);
+  bubble.addEventListener('touchstart', onPointerDown, { passive: true });
+}
+
+// 2. Open / Close / Toggle AI Modal
+function openHaimiyaAI() {
+  const modal = document.getElementById('haimiya-ai-modal');
+  const bubble = document.getElementById('haimiya-ai-floating-bubble');
+  if (!modal) return;
+
+  modal.classList.remove('hidden');
+  document.body.classList.add('ai-modal-open');
+  if (bubble) bubble.classList.add('active-open');
+
+  // Close hamburger menu if open
+  const navLinks = document.querySelector('.nav-links');
+  const hamburgerBtn = document.getElementById('hamburger');
+  if (navLinks && navLinks.classList.contains('open')) {
+    navLinks.classList.remove('open');
+    if (hamburgerBtn) hamburgerBtn.innerHTML = '<span class="hamburger-icon">☰</span> <span class="hamburger-text">เมนู</span>';
+  }
+
+  // Play crystal bell chime sound
+  playNotificationChime();
+
+  // Update AI engine badge status
+  updateGeminiKeyStatusBadge();
+
+  // Focus input textarea
+  setTimeout(() => {
+    const input = document.getElementById('gemini-input-text');
+    if (input) input.focus();
+  }, 150);
+}
+
+function closeHaimiyaAI() {
+  const modal = document.getElementById('haimiya-ai-modal');
+  const bubble = document.getElementById('haimiya-ai-floating-bubble');
+  if (!modal) return;
+
+  modal.classList.add('hidden');
+  document.body.classList.remove('ai-modal-open');
+  if (bubble) bubble.classList.remove('active-open');
+
+  // Stop any audio playing in chat
+  stopAiChatAudio();
+}
+
+function toggleHaimiyaAI() {
+  const modal = document.getElementById('haimiya-ai-modal');
+  if (!modal) return;
+  if (modal.classList.contains('hidden')) {
+    openHaimiyaAI();
+  } else {
+    closeHaimiyaAI();
+  }
+}
+
+function stopAiChatAudio() {
+  if (aiChatAudio) {
+    try {
+      aiChatAudio.pause();
+      aiChatAudio.currentTime = 0;
+    } catch (e) {}
+    aiChatAudio = null;
+  }
+  if (currentAiPlayingBtn) {
+    currentAiPlayingBtn.innerHTML = '▶️ ลองฟังตัวอย่าง';
+    currentAiPlayingBtn = null;
+  }
+}
+
+// 3. Audio Preview in AI Chat
+function toggleAiSongPreview(previewUrl, btn) {
+  if (!previewUrl) {
+    showToast('⚠️ เพลงนี้ไม่มีตัวอย่างเสียงออนไลน์');
+    return;
+  }
+
+  if (aiChatAudio && aiChatAudio.src === previewUrl && !aiChatAudio.paused) {
+    stopAiChatAudio();
+    return;
+  }
+
+  stopAiChatAudio();
+
+  const audio = new Audio(previewUrl);
+  audio.volume = 0.85;
+  aiChatAudio = audio;
+  currentAiPlayingBtn = btn;
+  btn.innerHTML = '⏸️ กำลังเล่น...';
+
+  audio.play().catch(err => {
+    console.warn('Cannot play AI preview:', err);
+    btn.innerHTML = '▶️ ลองฟังตัวอย่าง';
+  });
+
+  audio.addEventListener('ended', () => {
+    btn.innerHTML = '▶️ ลองฟังตัวอย่าง';
+    currentAiPlayingBtn = null;
+    aiChatAudio = null;
+  });
+}
+
+// 4. Quick prompts & Input handlers
+function handleQuickAiPrompt(text) {
+  const input = document.getElementById('gemini-input-text');
+  if (!input) return;
+
+  if (text === 'เพิ่มเพลง') {
+    input.value = 'ช่วยเพิ่มเพลง ';
+    input.focus();
+    input.setSelectionRange(input.value.length, input.value.length);
+  } else if (text === 'แจ้งบั๊ก') {
+    input.value = 'แจ้งบั๊ก: ';
+    input.focus();
+    input.setSelectionRange(input.value.length, input.value.length);
+  } else {
+    input.value = text;
+    sendGeminiMessage();
+  }
+}
+
+function handleGeminiInputKey(e) {
+  if (e.key === 'Enter' && !e.shiftKey) {
+    e.preventDefault();
+    sendGeminiMessage();
+  }
+}
+
+function clearAiChat() {
+  const list = document.getElementById('gemini-messages-list');
+  const welcome = document.getElementById('gemini-welcome-box');
+  if (list) list.innerHTML = '';
+  if (welcome) welcome.style.display = 'block';
+  stopAiChatAudio();
+  showToast('🧹 ล้างข้อความแชทเรียบร้อย');
+}
+
+// 5. Send message and Gemini response logic
+async function sendGeminiMessage() {
+  const input = document.getElementById('gemini-input-text');
+  const list = document.getElementById('gemini-messages-list');
+  const welcome = document.getElementById('gemini-welcome-box');
+  const typingIndicator = document.getElementById('gemini-typing-indicator');
+  const chatBody = document.getElementById('gemini-chat-body');
+
+  if (!input || !list) return;
+  const rawText = input.value.trim();
+  if (!rawText) return;
+
+  // Clear input
+  input.value = '';
+  if (welcome) welcome.style.display = 'none';
+
+  // Render User Message Bubble
+  const userMsgEl = document.createElement('div');
+  userMsgEl.className = 'gemini-msg-row user';
+  userMsgEl.innerHTML = `
+    <div class="gemini-msg-bubble">${escapeHtml(rawText)}</div>
+  `;
+  list.appendChild(userMsgEl);
+
+  // Show typing indicator & scroll
+  if (typingIndicator) typingIndicator.classList.remove('hidden');
+  if (chatBody) chatBody.scrollTop = chatBody.scrollHeight;
+
+  // Process user intent
+  const trimmedKey = rawText.trim();
+  const isApiKeyInput = /^(AQ\.[A-Za-z0-9_-]{25,}|AIzaSy[A-Za-z0-9_-]{30,})$/.test(trimmedKey);
+  if (isApiKeyInput) {
+    if (typingIndicator) typingIndicator.classList.add('hidden');
+    localStorage.setItem('haimiya_gemini_api_key', trimmedKey);
+    try {
+      fetch('/api/ai/set-key', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ apiKey: trimmedKey })
+      }).catch(() => {});
+    } catch (e) {}
+    updateGeminiKeyStatusBadge();
+    appendAiResponse(`
+      <div style="background: rgba(16, 185, 129, 0.14); border: 1.5px solid rgba(16, 185, 129, 0.4); border-radius: 14px; padding: 1rem; margin-top: 0.5rem;">
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+          <span style="font-size: 1.3rem;">✨</span>
+          <strong style="color: #6ee7b7; font-size: 1.05rem;">บันทึกและเปิดใช้งาน Google Gemini API Key สำเร็จแล้วค่ะ!</strong>
+        </div>
+        <p style="margin: 0; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6;">
+          ไฮมิยะเชื่อมต่อกับ <strong>Google Gemini 2.5 Flash</strong> สำเร็จแล้วค่ะ 🎉 พร้อมแนะนำเพลงและคุยตอบคำถามเรื่องตัดต่อคลิปไทโปได้ทันทีค่ะ 🌸
+        </p>
+      </div>
+    `);
+    return;
+  }
+
+  const lower = rawText.toLowerCase();
+
+  // Intent A: Add song ("เพิ่มเพลง", "add song", "ลงเพลง", "ขอเพลง")
+  const isAddSong = lower.includes('เพิ่มเพลง') || lower.includes('add song') || lower.includes('ลงเพลง') || lower.includes('ขอเพลง');
+  
+  // Intent B: Report Bug ("แจ้งบั๊ก", "บั๊ก", "ปัญหา", "ไม่เล่น", "เสียงไม่ออก", "ค้าง", "error", "bug")
+  const isBugReport = lower.includes('แจ้งบั๊ก') || lower.includes('บั๊ก') || lower.includes('แจ้งปัญหา') || lower.includes('ปัญหา') || lower.includes('เสียงไม่เล่น') || lower.includes('โหลดไม่ได้') || lower.includes('ค้าง') || lower.includes('error') || lower.includes('bug');
+
+  if (isAddSong) {
+    let songQuery = rawText
+      .replace(/ช่วย/g, '')
+      .replace(/เพิ่มเพลง/g, '')
+      .replace(/add song/gi, '')
+      .replace(/ลงเพลง/g, '')
+      .replace(/ขอเพลง/g, '')
+      .replace(/หน่อยครับ/g, '')
+      .replace(/หน่อยค่ะ/g, '')
+      .replace(/หน่อย/g, '')
+      .replace(/ให้/g, '')
+      .trim();
+
+    if (!songQuery) {
+      if (typingIndicator) typingIndicator.classList.add('hidden');
+      appendAiResponse(`
+        <p>🎵 บอกชื่อเพลงหรือศิลปินที่อยากให้ไฮมิยะค้นหาและเพิ่มลงคลังได้เลยค่ะ!</p>
+        <p style="margin-top: 6px; color: #94a3b8; font-size: 0.86rem;">
+          ตัวอย่างเช่น: <code>เพิ่มเพลง APT</code>, <code>เพิ่มเพลง นาฬิกาตาย</code>, หรือ <code>เพิ่มเพลง Day One - PUN</code> ✨
+        </p>
+      `);
+      return;
+    }
+
+    // Search iTunes API for live metadata & previews
+    try {
+      const itunesUrl = `https://itunes.apple.com/search?term=${encodeURIComponent(songQuery)}&entity=song&limit=4`;
+      const res = await fetch(itunesUrl);
+      const data = await res.json();
+
+      if (typingIndicator) typingIndicator.classList.add('hidden');
+
+      if (data && data.results && data.results.length > 0) {
+        let cardsHtml = `
+          <p>✨ ไฮมิยะค้นพบเพลงที่ตรงกับ <strong>"${escapeHtml(songQuery)}"</strong> แล้วค่ะ!</p>
+          <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 4px;">คลิกลองฟัง หรือกดปุ่ม <strong>"ยืนยันเพิ่มเพลงนี้ลงคลัง"</strong> เพลงจะถูกบันทึกและซิงค์ให้ทุกคนในแอปทันทีค่ะ:</p>
+        `;
+
+        data.results.forEach((track, idx) => {
+          const highResCover = (track.artworkUrl100 || '').replace('100x100bb', '600x600bb') || 'splash-cover.jpg';
+          const title = track.trackName || songQuery;
+          const artist = track.artistName || 'Unknown Artist';
+          const previewUrl = track.previewUrl || '';
+          const genre = track.primaryGenreName || 'Pop / Beat';
+          const year = track.releaseDate ? track.releaseDate.substring(0, 4) : '2026';
+
+          // Match with an anime
+          const matchedAnime = (typeof ANIMES !== 'undefined' && ANIMES.length) 
+            ? ANIMES[Math.floor(Math.random() * ANIMES.length)] 
+            : { name: 'Jujutsu Kaisen', mood: 'Hype' };
+
+          const songPayload = {
+            title: title,
+            artist: artist,
+            coverUrl: highResCover,
+            previewUrl: previewUrl,
+            spotifyUrl: track.trackViewUrl || `https://open.spotify.com/search/${encodeURIComponent(title + ' ' + artist)}`,
+            mood: 'chill',
+            tags: ["เพลงเพิ่มจากAI", "HaimiyaAI", genre, "ฮิตTikTok"],
+            bpm: "ปานกลาง (110 BPM)",
+            lang: "th",
+            animeId: matchedAnime.id || 1,
+            reason: `เพลงฮิต "${title}" จังหวะบีทกระชับ มีมิติอารมณ์ตัดคลิปคู่กับ ${matchedAnime.name} ได้ลงตัวสุดๆ`,
+            typoIdea: `แอนิเมชันตัวอักษรแบบ Kinetic ตามท่อนร้องฮุก สลับตัดคัทกระชับตามจังหวะบีท`
+          };
+
+          const cardId = `ai-song-card-${Date.now()}-${idx}`;
+          window['__ai_song_' + cardId] = songPayload;
+
+          cardsHtml += `
+            <div class="gemini-song-card" id="${cardId}">
+              <div class="gsc-top">
+                <div class="gsc-cover-wrap">
+                  <img src="${escapeHtml(highResCover)}" alt="${escapeHtml(title)}" class="gsc-cover" onerror="this.src='splash-cover.jpg';" />
+                </div>
+                <div class="gsc-info">
+                  <div class="gsc-title" title="${escapeHtml(title)}">${escapeHtml(title)}</div>
+                  <div class="gsc-artist">${escapeHtml(artist)}</div>
+                  <div class="gsc-badges">
+                    <span class="gsc-badge">${escapeHtml(genre)}</span>
+                    <span class="gsc-badge">${escapeHtml(year)}</span>
+                    <span class="gsc-badge">⚡ บีทไทโป</span>
+                  </div>
+                </div>
+              </div>
+              <div class="gsc-anime-match">
+                🌸 <strong>จับคู่ตัดต่อแนะนำ:</strong> ${escapeHtml(matchedAnime.name)} • ${escapeHtml(songPayload.reason)}
+              </div>
+              <div class="gsc-actions">
+                ${previewUrl ? `<button class="btn-ai-play" onclick="toggleAiSongPreview('${escapeHtml(previewUrl)}', this)">▶️ ลองฟังตัวอย่าง</button>` : ''}
+                <button class="btn-ai-confirm-add" id="btn-add-${cardId}" onclick="confirmAddSongViaAi('${cardId}', this)">
+                  ➕ ยืนยันเพิ่มเพลงนี้ลงคลังทันที (แชร์ให้ทุกคน)
+                </button>
+              </div>
+            </div>
+          `;
+        });
+
+        appendAiResponse(cardsHtml);
+      } else {
+        renderFallbackAddSongCard(songQuery);
+      }
+    } catch (err) {
+      console.warn('iTunes API error, using fallback:', err);
+      if (typingIndicator) typingIndicator.classList.add('hidden');
+      renderFallbackAddSongCard(songQuery);
+    }
+    return;
+  }
+
+  // Intent B: Bug Reporting
+  if (isBugReport) {
+    let bugTitle = rawText.replace(/แจ้งบั๊ก:?/g, '').replace(/แจ้งปัญหา:?/g, '').trim() || rawText;
+    try {
+      const bugRes = await fetch('/api/ai/report-bug', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          title: bugTitle,
+          description: rawText,
+          category: 'user_reported',
+          userAgent: navigator.userAgent
+        })
+      });
+      const bugData = await bugRes.json();
+      const bugId = bugData.bugId || ('BUG-' + Date.now().toString(36).toUpperCase());
+
+      if (typingIndicator) typingIndicator.classList.add('hidden');
+      appendAiResponse(`
+        <div style="background: rgba(239, 68, 68, 0.12); border: 1.5px solid rgba(239, 68, 68, 0.35); border-radius: 14px; padding: 1rem; margin-bottom: 0.5rem;">
+          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+            <span style="font-size: 1.3rem;">🐛</span>
+            <strong style="color: #fca5a5; font-size: 1.02rem;">รับรายงานปัญหาเรียบร้อยแล้วค่ะ!</strong>
+          </div>
+          <div style="font-size: 0.88rem; color: #cbd5e1; line-height: 1.6;">
+            รหัสแจ้งบั๊ก: <code style="background: rgba(0,0,0,0.4); padding: 2px 6px; border-radius: 6px; color: #38bdf8;">${bugId}</code><br>
+            เรื่อง: <em>"${escapeHtml(bugTitle)}"</em>
+          </div>
+        </div>
+        <p style="margin-top: 8px;">
+          🛠️ <strong>การตรวจสอบเบื้องต้น:</strong><br>
+          ระบบ Auto-Maintenance และทีมพัฒนาได้รับแจ้งเหตุแล้วค่ะ หากพบปัญหาเสียงสะดุดหรือหน้าจอค้าง คุณสามารถกดปุ่ม <strong>"⚡ ซิงค์เพลงสด"</strong> ด้านบน หรือรีเฟรชหน้าเว็บเพื่อเคลียร์แคชได้ทันทีนะคะ! ✨
+        </p>
+      `);
+    } catch (e) {
+      if (typingIndicator) typingIndicator.classList.add('hidden');
+      appendAiResponse(`
+        <p>🐛 ไฮมิยะบันทึกรายงานปัญหาของคุณไว้เรียบร้อยแล้วค่ะ! ทีมงานจะรีบตรวจสอบและแก้ไขให้อย่างเร็วที่สุด ขอบคุณที่ช่วยแจ้งเข้ามานะคะ 💖</p>
+      `);
+    }
+    return;
+  }
+
+  // Intent C: Real AI Chat (Calling Gemini 2.5 Flash / Smart Music Assistant)
+  window.__aiChatHistory = window.__aiChatHistory || [];
+
+  try {
+    const activeApiKey = getGeminiApiKey();
+    let aiResponseText = '';
+    let engineUsed = 'Gemini 2.5 Flash';
+
+    // 1. Try calling server endpoint /api/ai/chat if server is active
+    try {
+      const chatRes = await fetch('/api/ai/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: rawText,
+          history: window.__aiChatHistory.slice(-8),
+          apiKey: activeApiKey
+        })
+      });
+
+      if (chatRes.ok) {
+        const chatData = await chatRes.json();
+        if (chatData.ok && chatData.reply && !chatData.needKey) {
+          aiResponseText = chatData.reply;
+          engineUsed = chatData.engine || 'Gemini 2.5 Flash';
+        }
+      }
+    } catch (netErr) {
+      console.warn('Server /api/ai/chat unreachable, using direct Gemini API:', netErr);
+    }
+
+    // 2. Direct client-side Google Gemini 2.5 Flash API call
+    if (!aiResponseText && activeApiKey) {
+      try {
+        const gUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${encodeURIComponent(activeApiKey)}`;
+        const gRes = await fetch(gUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            system_instruction: {
+              parts: [{
+                text: `คุณคือ "ไฮมิยะ" (Haimiya) ผู้ช่วย AI อัจฉริยะประจำแอป Haimiya Typo ซึ่งเป็นคลังเพลงสำหรับคนตัดต่อคลิปไทโป (Typography / AMV / TikTok edits)
+คุณพูดจาน่ารัก สุภาพ เป็นกันเอง ตอบภาษาไทยเป็นหลัก ใช้อิโมจิน่ารักๆ ได้ ✨🌸🎵
+ตอบตรงประเด็น กระชับ เข้าใจง่าย มีคำแนะนำเชิงสร้างสรรค์สำหรับการตัดต่อคลิป ไทโป อารมณ์เพลง และการจับคู่กับอนิเมะ
+ถ้าผู้ใช้ต้องการเพิ่มเพลง ให้บอกว่า: "สามารถพิมพ์ว่า 'เพิ่มเพลง [ชื่อเพลง]' เช่น 'เพิ่มเพลง APT' ได้ทันทีเลยค่ะ ไฮมิยะจะค้นหาและเพิ่มลงคลังให้ทุกคนค่ะ"
+ถ้าผู้ใช้รายงานปัญหา ให้แนะนำให้พิมพ์ 'แจ้งบั๊ก: [รายละเอียด]' เพื่อให้ระบบบันทึกเข้าระบบอัตโนมัติ
+แอป Haimiya Typo มีเพลงตัดต่อคลิปไทโปหลายพันเพลง ทั้งเพลงไทย, สากล, ญี่ปุ่น (อนิเมะ), ลาว, K-Pop พร้อมโหมด Funk/Phonk และระบบจับคู่อนิเมะยอดฮิต`
+              }]
+            },
+            contents: [
+              ...window.__aiChatHistory.slice(-6).map(h => ({
+                role: h.role === 'user' ? 'user' : 'model',
+                parts: [{ text: h.text }]
+              })),
+              { role: 'user', parts: [{ text: rawText }] }
+            ],
+            generationConfig: {
+              temperature: 0.85,
+              topP: 0.92,
+              maxOutputTokens: 950
+            }
+          })
+        });
+        const gData = await gRes.json();
+        if (gData.candidates && gData.candidates[0]?.content?.parts) {
+          aiResponseText = gData.candidates[0].content.parts.map(p => p.text).join('');
+          engineUsed = 'Gemini 2.5 Flash';
+        } else if (gData.error) {
+          console.warn('Direct Gemini API returned error:', gData.error);
+        }
+      } catch (gErr) {
+        console.warn('Direct Gemini call failed:', gErr);
+      }
+    }
+
+    // 3. Fallback to free keyless AI (Pollinations)
+    if (!aiResponseText) {
+      try {
+        const pollMessages = [
+          { role: 'system', content: "คุณคือ 'ไฮมิยะ' ผู้ช่วย AI ประจำแอป Haimiya Typo ตอบภาษาไทยเป็นกันเอง น่ารัก สุภาพ แนะนำเรื่องเพลง อนิเมะ และการตัดต่อคลิปไทโป" },
+          ...window.__aiChatHistory.slice(-6).map(h => ({
+            role: h.role === 'user' ? 'user' : 'assistant',
+            content: h.text
+          })),
+          { role: 'user', content: rawText }
+        ];
+        const pRes = await fetch('https://text.pollinations.ai/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ messages: pollMessages, model: 'openai' })
+        });
+        if (pRes.ok) {
+          aiResponseText = await pRes.text();
+          engineUsed = 'Free AI Engine';
+        }
+      } catch (pErr) {
+        console.warn('Pollinations fallback failed:', pErr);
+      }
+    }
+
+    if (typingIndicator) typingIndicator.classList.add('hidden');
+
+    if (aiResponseText) {
+      window.__aiChatHistory.push({ role: 'user', text: rawText });
+      window.__aiChatHistory.push({ role: 'model', text: aiResponseText });
+
+      const formattedHtml = renderAiMarkdown(aiResponseText);
+      const pillHtml = `<div class="gemini-engine-pill">✨ ขับเคลื่อนโดย ${escapeHtml(engineUsed)}</div>`;
+      appendAiResponse(formattedHtml + pillHtml);
+    } else {
+      appendAiResponse(`
+        <p>ไฮมิยะพร้อมช่วยเหลือค่ะ! คุณสามารถพิมพ์ว่า <code>เพิ่มเพลง [ชื่อเพลง]</code> เช่น <strong>"เพิ่มเพลง APT"</strong> เพื่อค้นหาและเพิ่มเพลงใหม่ลงคลัง หรือถามเกี่ยวกับไอเดียตัดต่อคลิปไทโปได้เลยนะคะ 🌸✨</p>
+      `);
+    }
+  } catch (aiErr) {
+    console.error('AI chat error:', aiErr);
+    if (typingIndicator) typingIndicator.classList.add('hidden');
+    appendAiResponse(`
+      <p>ไฮมิยะพร้อมช่วยเหลือค่ะ! ขออภัยด้วยที่สัญญาณขัดข้องชั่วคราว ลองส่งใหม่อีกครั้ง หรือพิมพ์ <code>เพิ่มเพลง [ชื่อเพลง]</code> ได้เลยนะคะ 🌸</p>
+    `);
+  }
+}
+
+function appendAiResponse(htmlContent) {
+  const list = document.getElementById('gemini-messages-list');
+  const chatBody = document.getElementById('gemini-chat-body');
+  if (!list) return;
+
+  const row = document.createElement('div');
+  row.className = 'gemini-msg-row ai';
+  row.innerHTML = `
+    <div class="gemini-msg-avatar">
+      <img src="haimiya_ai_avatar.jpg" alt="Haimiya AI" onerror="this.src='splash-cover.jpg';" />
+    </div>
+    <div class="gemini-msg-bubble">${htmlContent}</div>
+  `;
+  list.appendChild(row);
+
+  if (chatBody) {
+    chatBody.scrollTo({ top: chatBody.scrollHeight, behavior: 'smooth' });
+  }
+}
+
+function renderFallbackAddSongCard(query) {
+  const cardId = `ai-fallback-${Date.now()}`;
+  const songPayload = {
+    title: query,
+    artist: 'Various Artists',
+    coverUrl: 'splash-cover.jpg',
+    previewUrl: '',
+    spotifyUrl: `https://open.spotify.com/search/${encodeURIComponent(query)}`,
+    mood: 'chill',
+    tags: ["เพลงเพิ่มจากAI", "HaimiyaAI", "เพลงฮิต"],
+    bpm: "ปานกลาง (115 BPM)",
+    lang: "th",
+    animeId: 1,
+    reason: `เพลง "${query}" สำหรับตัดต่อคลิปไทโป เพิ่มเข้าคลังผ่านระบบ Haimiya AI Studio`,
+    typoIdea: `สไตล์ฟอนต์คลีน เรียบหรู ตัดต่อตามท่อนฮุก`
+  };
+  window['__ai_song_' + cardId] = songPayload;
+
+  const html = `
+    <p>ค้นหาแบบเรียลไทม์ไม่พบเพลงตรงเป๊ะ แต่คุณสามารถกด <strong>ยืนยันเพิ่มเพลงนี้เข้าคลังกลาง</strong> ได้ทันทีค่ะ:</p>
+    <div class="gemini-song-card" id="${cardId}">
+      <div class="gsc-top">
+        <div class="gsc-cover-wrap">
+          <img src="splash-cover.jpg" alt="${escapeHtml(query)}" class="gsc-cover" />
+        </div>
+        <div class="gsc-info">
+          <div class="gsc-title">${escapeHtml(query)}</div>
+          <div class="gsc-artist">เพลงยอดนิยม (เพิ่มโดยผู้ใช้ผ่าน AI)</div>
+          <div class="gsc-badges">
+            <span class="gsc-badge">⚡ เพลงใหม่</span>
+            <span class="gsc-badge">ไทโป</span>
+          </div>
+        </div>
+      </div>
+      <div class="gsc-actions">
+        <button class="btn-ai-confirm-add" id="btn-add-${cardId}" onclick="confirmAddSongViaAi('${cardId}', this)">
+          ➕ ยืนยันเพิ่มเพลงนี้ลงคลังทันที (แชร์ให้ทุกคน)
+        </button>
+      </div>
+    </div>
+  `;
+  appendAiResponse(html);
+}
+
+// 6. Confirm Add Song to data.js & Server
+async function confirmAddSongViaAi(cardId, btn) {
+  const songPayload = window['__ai_song_' + cardId];
+  if (!songPayload) return;
+
+  btn.disabled = true;
+  btn.innerHTML = '⏳ กำลังบันทึกลงคลังกลาง...';
+
+  try {
+    const res = await fetch('/api/ai/add-song', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(songPayload)
+    });
+
+    const result = await res.json();
+
+    if (result && result.ok) {
+      const addedSong = result.song || songPayload;
+
+      // Update in-memory database so user can search immediately
+      if (typeof SONGS !== 'undefined') {
+        SONGS.unshift(addedSong);
+      }
+      if (typeof ANIME_PAIRS !== 'undefined' && addedSong.animeId) {
+        ANIME_PAIRS.unshift({
+          songId: addedSong.id,
+          animeId: addedSong.animeId,
+          category: addedSong.mood,
+          badge: '🤖 เพิ่มโดย AI',
+          reason: addedSong.reason,
+          typoIdea: addedSong.typoIdea
+        });
+      }
+
+      // Update UI stats & song grid
+      if (typeof updateStats === 'function') updateStats();
+      if (typeof renderSongsGrid === 'function') renderSongsGrid();
+
+      // Play bell chime celebration!
+      playNotificationChime();
+
+      // Update button state
+      btn.className = 'btn-ai-confirm-add added';
+      btn.innerHTML = '✅ เพิ่มลงคลังเรียบร้อยแล้ว! (ทุกคนเห็นแล้ว)';
+
+      showToast(`🎉 เพิ่มเพลง "${addedSong.title}" ลงคลังเรียบร้อยแล้ว!`);
+
+      appendAiResponse(`
+        <div style="background: rgba(16, 185, 129, 0.14); border: 1.5px solid rgba(16, 185, 129, 0.4); border-radius: 14px; padding: 1rem; margin-top: 0.5rem;">
+          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+            <span style="font-size: 1.3rem;">🎉</span>
+            <strong style="color: #6ee7b7; font-size: 1.05rem;">สำเร็จแล้วค่ะ!</strong>
+          </div>
+          <p style="margin: 0; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6;">
+            เพลง <strong>"${escapeHtml(addedSong.title)}"</strong> โดย <strong>${escapeHtml(addedSong.artist)}</strong> ได้ถูกเพิ่มเข้าสู่ฐานข้อมูลกลาง <code>data.js</code> เรียบร้อยแล้วค่ะ ทุกคนที่มีแอพจะสามารถค้นหา ฟัง และนำไปตัดคลิปได้ทันทีค่ะ ✨
+          </p>
+        </div>
+      `);
+    } else {
+      throw new Error(result.error || 'Server returned failure');
+    }
+  } catch (err) {
+    console.warn('Error confirming add song:', err);
+    btn.disabled = false;
+    btn.innerHTML = '⚠️ ลองอีกครั้ง';
+    showToast('⚠️ ไม่สามารถบันทึกลงเซิร์ฟเวอร์ได้ กรุณาลองใหม่อีกครั้ง');
+  }
+}
+
+// Markdown / Rich text renderer for AI responses
+function renderAiMarkdown(text) {
+  if (!text) return '';
+  let html = escapeHtml(text);
+
+  // Code blocks: ```...```
+  html = html.replace(/```([\s\S]*?)```/g, (m, code) => {
+    return `<pre style="background: rgba(0,0,0,0.5); padding: 0.75rem; border-radius: 8px; overflow-x: auto; font-family: monospace; font-size: 0.85em; margin: 0.5rem 0; border: 1px solid rgba(255,255,255,0.1);"><code>${code.trim()}</code></pre>`;
+  });
+
+  // Inline code: `...`
+  html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+
+  // Headers: ###, ##, #
+  html = html.replace(/^### (.*$)/gim, '<h5 style="margin: 0.6rem 0 0.2rem 0; color: #38bdf8; font-size: 1rem;">$1</h5>');
+  html = html.replace(/^## (.*$)/gim, '<h4 style="margin: 0.7rem 0 0.25rem 0; color: #818cf8; font-size: 1.05rem;">$1</h4>');
+  html = html.replace(/^# (.*$)/gim, '<h3 style="margin: 0.8rem 0 0.3rem 0; color: #fff; font-size: 1.15rem;">$1</h3>');
+
+  // Bold: **text**
+  html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+
+  // Italic: *text*
+  html = html.replace(/\*([^*]+)\*/g, '<em>$1</em>');
+
+  // Links: [text](url)
+  html = html.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener" style="color: #38bdf8; text-decoration: underline;">$1</a>');
+
+  // Blockquotes: > text
+  html = html.replace(/^> (.*$)/gim, '<blockquote style="border-left: 3px solid #38bdf8; margin: 0.5rem 0; padding-left: 0.75rem; color: #94a3b8; font-style: italic;">$1</blockquote>');
+
+  // Bullet lists: - item or * item
+  html = html.replace(/^\s*[-*]\s+(.*$)/gim, '<li>$1</li>');
+  html = html.replace(/(<li>[\s\S]*?<\/li>)/g, '<ul style="margin: 0.4rem 0 0.4rem 1.2rem; padding: 0;">$1</ul>');
+
+  // Paragraphs
+  const paragraphs = html.split(/\n\s*\n/);
+  html = paragraphs.map(p => {
+    p = p.trim();
+    if (!p) return '';
+    if (p.startsWith('<h') || p.startsWith('<pre') || p.startsWith('<ul') || p.startsWith('<blockquote') || p.startsWith('<table') || p.startsWith('<div')) {
+      return p;
+    }
+    return `<p style="margin: 0.4rem 0;">${p.replace(/\n/g, '<br>')}</p>`;
+  }).join('');
+
+  return html;
+}
+
+// Gemini API Key Settings Drawer
+function toggleGeminiKeySettings() {
+  const drawer = document.getElementById('gemini-key-drawer');
+  const input = document.getElementById('gemini-api-key-input');
+  if (!drawer) return;
+  drawer.classList.toggle('hidden');
+  if (!drawer.classList.contains('hidden') && input) {
+    const savedKey = getGeminiApiKey();
+    input.value = savedKey;
+    input.focus();
+    updateGeminiKeyStatusBadge();
+  }
+}
+
+async function saveGeminiApiKey() {
+  const input = document.getElementById('gemini-api-key-input');
+  const statusEl = document.getElementById('gemini-key-status');
+  if (!input) return;
+  const key = input.value.trim();
+
+  if (key) {
+    localStorage.setItem('haimiya_gemini_api_key', key);
+  } else {
+    localStorage.removeItem('haimiya_gemini_api_key');
+  }
+
+  try {
+    await fetch('/api/ai/set-key', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ apiKey: key || DEFAULT_GEMINI_API_KEY })
+    });
+  } catch (e) {}
+
+  updateGeminiKeyStatusBadge();
+  showToast(key ? '✅ บันทึก Gemini API Key เรียบร้อยแล้วค่ะ!' : 'ℹ️ เปลี่ยนไปใช้โหมด AI มาตรฐานแล้วค่ะ');
+
+  if (statusEl) {
+    statusEl.innerHTML = '🟢 <strong>ใช้ Google Gemini 2.5 Flash</strong> (เชื่อมต่อสำเร็จ)';
+  }
+
+  setTimeout(() => {
+    const drawer = document.getElementById('gemini-key-drawer');
+    if (drawer) drawer.classList.add('hidden');
+  }, 1200);
+}
+
+async function updateGeminiKeyStatusBadge() {
+  const badge = document.getElementById('gemini-engine-badge');
+  const subtext = document.getElementById('gemini-status-subtext');
+  const localKey = getGeminiApiKey();
+
+  let hasServerKey = false;
+  try {
+    const res = await fetch('/api/ai/config');
+    if (res.ok) {
+      const data = await res.json();
+      hasServerKey = !!data.hasKey;
+    }
+  } catch (e) {}
+
+  if (localKey || hasServerKey) {
+    if (badge) {
+      badge.textContent = '✨ Gemini 2.5 Flash';
+      badge.style.background = 'linear-gradient(135deg, rgba(56, 189, 248, 0.35), rgba(129, 140, 248, 0.45))';
+      badge.style.borderColor = 'rgba(56, 189, 248, 0.6)';
+    }
+    if (subtext) subtext.textContent = 'เชื่อมต่อ Google Gemini 2.5 Flash สำเร็จ • ตอบอัจฉริยะแบบเรียลไทม์';
+  } else {
+    if (badge) {
+      badge.textContent = '⚡ Free AI Online';
+      badge.style.background = 'linear-gradient(135deg, rgba(16, 185, 129, 0.25), rgba(56, 189, 248, 0.25))';
+      badge.style.borderColor = 'rgba(16, 185, 129, 0.5)';
+    }
+    if (subtext) subtext.textContent = 'ระบบ AI จริงพร้อมใช้งาน • สั่งเพิ่มเพลง & คุยได้ทันที';
+  }
+}
+
+// Initialize Draggable AI Bubble on boot
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
+    initDraggableAiBubble();
+    updateGeminiKeyStatusBadge();
+  });
+} else {
+  initDraggableAiBubble();
+  updateGeminiKeyStatusBadge();
+}
+

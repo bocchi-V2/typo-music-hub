@@ -1,62 +1,14 @@
 {
-  "lastSyncTime": 1792956273914,
-  "dayCount": 20,
+  "lastSyncTime": 1793019805029,
+  "dayCount": 12,
   "history": [
     {
-      "date": "25/10/2569 19:24:33",
-      "addedSongs": 3,
-      "addedAnimes": 2,
-      "totalSongs": 19825,
-      "totalAnimes": 1020
-    },
-    {
-      "date": "24/10/2569 19:10:52",
-      "addedSongs": 3,
-      "addedAnimes": 2,
-      "totalSongs": 19822,
-      "totalAnimes": 1018
-    },
-    {
-      "date": "23/10/2569 20:10:14",
-      "addedSongs": 3,
-      "addedAnimes": 2,
-      "totalSongs": 19819,
-      "totalAnimes": 1016
-    },
-    {
-      "date": "22/10/2569 20:21:59",
-      "addedSongs": 3,
-      "addedAnimes": 2,
-      "totalSongs": 19816,
-      "totalAnimes": 1014
-    },
-    {
-      "date": "21/10/2569 20:25:37",
-      "addedSongs": 3,
-      "addedAnimes": 2,
-      "totalSongs": 19813,
-      "totalAnimes": 1012
-    },
-    {
-      "date": "20/10/2569 20:14:26",
-      "addedSongs": 3,
-      "addedAnimes": 2,
-      "totalSongs": 19810,
-      "totalAnimes": 1010
-    },
-    {
-      "date": "19/10/2569 21:18:50",
-      "addedSongs": 3,
-      "addedAnimes": 2,
-      "totalSongs": 19807,
-      "totalAnimes": 1008
-    },
-    {
-      "date": "18/10/2569 19:08:29",
-      "addedSongs": 3,
-      "addedAnimes": 2,
-      "totalSongs": 19804,
-      "totalAnimes": 1006
+      "date": "26/10/2569 20:03:25",
+      "addedSongs": 3000,
+      "addedAnimes": 0,
+      "totalSongs": 22855,
+      "totalAnimes": 1024,
+      "note": "3000 TikTok & 2024-2026 Hits Drop"
     },
     {
       "date": "17/10/2569 21:15:47",
@@ -143,9 +95,9 @@
       "totalAnimes": 406
     }
   ],
-  "lastSyncDate": "2026-10-25",
-  "totalSongs": 19825,
-  "totalAnimes": 1020,
+  "lastSyncDate": "2026-10-26",
+  "totalSongs": 22855,
+  "totalAnimes": 1024,
   "totalFunk": 25,
   "lastSyncDateStr": "26/10/2569"
 }

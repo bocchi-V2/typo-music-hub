@@ -223,7 +223,7 @@ async function runDailyUpdate() {
   }
 
   let nextSongId = Math.max(0, ...SONGS.map(s => s.id)) + 1;
-  const targetSongsPerDay = 3; // เพิ่มวันละ 3 เพลงคุณภาพสูงที่มีตัวอย่างเสียง
+  const targetSongsPerDay = 10; // เพิ่มเพลงฮิตคุณภาพสูงวันละ 10 เพลงที่มีตัวอย่างเสียงและปกชัด HD
 
   for (const cand of combinedChartCandidates) {
     if (addedSongs >= targetSongsPerDay) break;

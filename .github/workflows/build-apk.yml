@@ -30,6 +30,11 @@ on:
       - 'update_voice.mp3'
       - 'version.json'
       - 'configure_android.js'
+      - 'ai_config.json'
+      - 'haimiya_ai_avatar.jpg'
+      - 'haimiya_ai_bubble.jpg'
+      - 'bell_notification.wav'
+      - 'japanese_door_chime.wav'
       - '.github/workflows/build-apk.yml'
 
 jobs:
@@ -57,7 +62,7 @@ jobs:
       - name: 📁 จัดเตรียมไฟล์เว็บสำหรับแอป (www Directory)
         run: |
           mkdir -p www
-          for f in index.html style.css app.js data.js version.json manifest.json sw.js splash-cover.jpg notification-mascot.jpg loading-chibi.jpg haimiya_yaho.wav haimiya_yaho.mp3 favicon-logo.jpg dice-roll.mp3 app-icon.jpg bg-hero.jpg blue_relax.m4a update_voice.wav update_voice.m4a update_voice.mp4 update_voice.mp3 haimiya-typo.mobileconfig; do
+          for f in index.html style.css app.js data.js version.json manifest.json sw.js splash-cover.jpg notification-mascot.jpg loading-chibi.jpg haimiya_yaho.wav haimiya_yaho.mp3 favicon-logo.jpg dice-roll.mp3 app-icon.jpg bg-hero.jpg blue_relax.m4a update_voice.wav update_voice.m4a update_voice.mp4 update_voice.mp3 haimiya-typo.mobileconfig haimiya_ai_avatar.jpg haimiya_ai_bubble.jpg ai_config.json bell_notification.wav japanese_door_chime.wav; do
             if [ -f "$f" ]; then cp "$f" www/; fi
           done
           # Copy optional files that might exist

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'haimiya-typo-v40';
+const CACHE_NAME = 'haimiya-typo-v45-ai';
 const AUDIO_CACHE_NAME = 'haimiya-audio-vault';
 
 // ไฟล์ที่ต้องแคชเพื่อให้แอพทำงานแบบ offline ได้ 100%
@@ -10,13 +10,18 @@ const ASSETS_TO_CACHE = [
   './data.js',
   './version.json',
   './manifest.json',
+  './ai_config.json',
   './haimiya-typo.mobileconfig',
   './favicon-logo.jpg',
   './app-icon.jpg',
   './splash-cover.jpg',
   './notification-mascot.jpg',
+  './haimiya_ai_bubble.jpg',
+  './haimiya_ai_avatar.jpg',
   './bg-hero.jpg',
   './loading-chibi.jpg',
+  './bell_notification.wav',
+  './japanese_door_chime.wav',
   './haimiya_yaho.wav',
   './haimiya_yaho.mp3',
   './dice-roll.mp3',
