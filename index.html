@@ -969,40 +969,14 @@
 
   <!-- Service Worker Registration & Offline Support -->
   <script>
-    // ลงทะเบียน Service Worker เพื่อให้แอพทำงานแบบ offline ได้
+    // ลงทะเบียน Service Worker อย่างปลอดภัย (ปิดการสั่ง reload อัตโนมัติ ป้องกันปัญหารีเฟรชวนลูป 100%)
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        // ล้างแคชเก่าในเบราว์เซอร์ทันที
-        if ('caches' in window) {
-          caches.keys().then((keys) => {
-            keys.forEach((key) => {
-              if (key !== 'haimiya-typo-v44' && key !== 'haimiya-audio-vault') {
-                caches.delete(key);
-              }
-            });
-          });
-        }
-        navigator.serviceWorker.register('./sw.js?v=44')
+        navigator.serviceWorker.register('./sw.js')
           .then((reg) => {
-            console.log('✅ Service Worker v44 ลงทะเบียนสำเร็จ!');
-            reg.update();
+            console.log('✅ Service Worker ลงทะเบียนสำเร็จ!');
           })
           .catch((err) => console.warn('⚠️ SW registration failed:', err));
-      });
-
-      // แจ้งเตือนและรีเฟรชหน้าเว็บอัตโนมัติเมื่อ Service Worker อัปเดตเสร็จ (ป้องกัน reload วนลูป 100%)
-      let refreshing = false;
-      navigator.serviceWorker.addEventListener('controllerchange', () => {
-        if (refreshing) return;
-        const currentSwVer = 'v44';
-        if (sessionStorage.getItem('sw_reloaded_ver') === currentSwVer) {
-          console.log('⏭️ ป้องกันการรีเฟรชซ้ำ: เวอร์ชันตรงแล้ว (' + currentSwVer + ')');
-          return;
-        }
-        refreshing = true;
-        sessionStorage.setItem('sw_reloaded_ver', currentSwVer);
-        console.log('🔄 อัปเดต Service Worker ' + currentSwVer + ' สำเร็จ! กำลังโหลดข้อมูลล่าสุด...');
-        window.location.reload();
       });
     }
 
