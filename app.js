@@ -3607,8 +3607,8 @@ function initSplashScreen() {
 //  ระบบซิงค์เพลง/อนิเมะสดอัตโนมัติ และอัปเดตแอป APK ทับของเดิมได้ 100% ไม่ต้องลบแอปเก่า
 // ============================================
 
-const CURRENT_APP_VERSION = 'v2.20261018.2325';
-const CURRENT_VERSION_CODE = 1792341900000;
+const CURRENT_APP_VERSION = 'v2.20261027.0630';
+const CURRENT_VERSION_CODE = 1793031300;
 const GITHUB_REPO_OWNER = 'bocchi-V2';
 const GITHUB_REPO_NAME = 'typo-music-hub';
 const GITHUB_PAGES_BASE = 'https://bocchi-v2.github.io/typo-music-hub';
@@ -4752,6 +4752,31 @@ let currentAiPlayingBtn = null;
 const _k = 'QVEuQWI4Uk42SUtZX1poU1NrWHBWNEN5TEdpRldkRDdickJraUlXSFNUU080YzFMdXZzR2c=';
 const DEFAULT_GEMINI_API_KEY = (typeof atob === 'function') ? atob(_k) : '';
 
+function getAiApiBase() {
+  try {
+    if (typeof window !== 'undefined' && window.location) {
+      const host = window.location.hostname || '';
+      const proto = window.location.protocol || '';
+      // If running on Netlify production, use relative paths
+      if (host.includes('netlify.app')) {
+        return '';
+      }
+      // When inside Capacitor mobile app (capacitor://localhost or file://) or GitHub Pages or localhost
+      if (
+        proto === 'capacitor:' ||
+        proto === 'file:' ||
+        host.includes('github.io') ||
+        (window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform()) ||
+        host === 'localhost' ||
+        host === '127.0.0.1'
+      ) {
+        return 'https://mellow-baklava-bffed3.netlify.app';
+      }
+    }
+  } catch (e) {}
+  return '';
+}
+
 function getGeminiApiKey() {
   const localKey = (localStorage.getItem('haimiya_gemini_api_key') || '').trim();
   return localKey || DEFAULT_GEMINI_API_KEY;
@@ -5164,7 +5189,7 @@ async function sendGeminiMessage() {
     if (typingIndicator) typingIndicator.classList.add('hidden');
     localStorage.setItem('haimiya_gemini_api_key', trimmedKey);
     try {
-      fetch('/api/ai/set-key', {
+      fetch(getAiApiBase() + '/api/ai/set-key', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ apiKey: trimmedKey })
@@ -5305,7 +5330,7 @@ async function sendGeminiMessage() {
   if (isBugReport) {
     let bugTitle = rawText.replace(/^(แจ้งบั๊ก|แจ้งปัญหา|\/bug)[:\s]*/i, '').trim() || rawText;
     try {
-      const bugRes = await fetch('/api/ai/report-bug', {
+      const bugRes = await fetch(getAiApiBase() + '/api/ai/report-bug', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -5354,7 +5379,7 @@ async function sendGeminiMessage() {
 
     // 1. Try calling server endpoint /api/ai/chat (Netlify Serverless Function or Node Server)
     try {
-      const chatRes = await fetch('/api/ai/chat', {
+      const chatRes = await fetch(getAiApiBase() + '/api/ai/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -5604,7 +5629,7 @@ async function confirmAddSongViaAi(cardId, btn) {
 
   // 3. Post to backend endpoint if available
   try {
-    fetch('/api/ai/add-song', {
+    fetch(getAiApiBase() + '/api/ai/add-song', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(fullSong)
@@ -5712,7 +5737,7 @@ async function saveGeminiApiKey() {
   }
 
   try {
-    await fetch('/api/ai/set-key', {
+    await fetch(getAiApiBase() + '/api/ai/set-key', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ apiKey: key || DEFAULT_GEMINI_API_KEY })
@@ -5723,7 +5748,7 @@ async function saveGeminiApiKey() {
   showToast(key ? '✅ บันทึก Gemini API Key เรียบร้อยแล้วค่ะ!' : 'ℹ️ เปลี่ยนไปใช้โหมด AI มาตรฐานแล้วค่ะ');
 
   if (statusEl) {
-    statusEl.innerHTML = '🟢 <strong>ใช้ Google Gemini 2.5 Flash</strong> (เชื่อมต่อสำเร็จ)';
+    statusEl.innerHTML = '🟢 <strong>ใช้ Google Gemini 3 Flash</strong> (เชื่อมต่อสำเร็จ)';
   }
 
   setTimeout(() => {
@@ -5739,7 +5764,7 @@ async function updateGeminiKeyStatusBadge() {
 
   let hasServerKey = false;
   try {
-    const res = await fetch('/api/ai/config');
+    const res = await fetch(getAiApiBase() + '/api/ai/config');
     if (res.ok) {
       const data = await res.json();
       hasServerKey = !!data.hasKey;
