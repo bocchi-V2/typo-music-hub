@@ -17,6 +17,16 @@
   to = "/.netlify/functions/add-song"
   status = 200
 
+[[redirects]]
+  from = "/api/ai/report-bug"
+  to = "/.netlify/functions/report-bug"
+  status = 200
+
+[[redirects]]
+  from = "/api/ai/set-key"
+  to = "/.netlify/functions/set-key"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]

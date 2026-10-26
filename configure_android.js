@@ -18,9 +18,9 @@ if (!fs.existsSync(gradlePath)) {
 
 let content = fs.readFileSync(gradlePath, 'utf8');
 
-// คำนวณ versionCode จาก timestamp (หน่วย 10 วินาที เพื่อให้พอดีกับ 32-bit int และเพิ่มขึ้นตลอดกาล)
+// คำนวณ versionCode จาก timestamp (พอดีกับ 32-bit int และเพิ่มขึ้นตลอดกาล ไม่น้อยกว่าเวอร์ชันเดิม)
 const timestamp = Math.floor(Date.now() / 1000);
-const versionCode = Math.max(1, Math.floor((timestamp - 1700000000) / 10));
+const versionCode = Math.max(1793031300, timestamp);
 
 const now = new Date();
 const pad = (n) => String(n).padStart(2, '0');
