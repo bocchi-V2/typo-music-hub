@@ -1,4 +1,4 @@
-const CACHE_NAME = 'haimiya-typo-v50-mobile-app-release';
+const CACHE_NAME = 'haimiya-typo-v51-chat-history-drawer';
 const AUDIO_CACHE_NAME = 'haimiya-audio-vault';
 
 // ไฟล์ที่ต้องแคชเพื่อให้แอพทำงานแบบ offline ได้ 100%

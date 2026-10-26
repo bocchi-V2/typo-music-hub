@@ -3607,8 +3607,8 @@ function initSplashScreen() {
 //  ระบบซิงค์เพลง/อนิเมะสดอัตโนมัติ และอัปเดตแอป APK ทับของเดิมได้ 100% ไม่ต้องลบแอปเก่า
 // ============================================
 
-const CURRENT_APP_VERSION = 'v2.20261027.0630';
-const CURRENT_VERSION_CODE = 1793031300;
+const CURRENT_APP_VERSION = 'v2.20261027.0650';
+const CURRENT_VERSION_CODE = 1793031310;
 const GITHUB_REPO_OWNER = 'bocchi-V2';
 const GITHUB_REPO_NAME = 'typo-music-hub';
 const GITHUB_PAGES_BASE = 'https://bocchi-v2.github.io/typo-music-hub';
@@ -4971,11 +4971,12 @@ function loadSavedAiChatHistory() {
     list.innerHTML = '';
     window.__aiChatHistory = [];
 
-    history.forEach(item => {
+    history.forEach((item, idx) => {
       if (item.role === 'user') {
         window.__aiChatHistory.push({ role: 'user', text: item.text });
         const userMsgEl = document.createElement('div');
         userMsgEl.className = 'gemini-msg-row user';
+        userMsgEl.id = 'ai-msg-row-' + idx;
         userMsgEl.innerHTML = `<div class="gemini-msg-bubble">${escapeHtml(item.text)}</div>`;
         list.appendChild(userMsgEl);
       } else {
@@ -4984,6 +4985,7 @@ function loadSavedAiChatHistory() {
         }
         const row = document.createElement('div');
         row.className = 'gemini-msg-row ai';
+        row.id = 'ai-msg-row-' + idx;
         row.innerHTML = `
           <div class="gemini-msg-avatar">
             <img src="haimiya_ai_avatar.jpg" alt="Haimiya AI" onerror="this.src='splash-cover.jpg';" />
@@ -5005,6 +5007,104 @@ function loadSavedAiChatHistory() {
   } catch (e) {
     console.warn('loadSavedAiChatHistory error:', e);
   }
+}
+
+// Chat History Drawer Functions
+function toggleAiHistoryDrawer() {
+  const drawer = document.getElementById('gemini-history-drawer');
+  if (!drawer) return;
+  if (drawer.classList.contains('hidden')) {
+    renderAiHistoryDrawer();
+    drawer.classList.remove('hidden');
+  } else {
+    drawer.classList.add('hidden');
+  }
+}
+
+function formatHistoryTime(ts) {
+  if (!ts) return '';
+  const date = new Date(ts);
+  const hours = String(date.getHours()).padStart(2, '0');
+  const mins = String(date.getMinutes()).padStart(2, '0');
+  return `${hours}:${mins} น.`;
+}
+
+function renderAiHistoryDrawer() {
+  const drawerList = document.getElementById('gemini-history-list');
+  const countBadge = document.getElementById('gemini-history-count-badge');
+  if (!drawerList) return;
+
+  let history = [];
+  try {
+    history = JSON.parse(localStorage.getItem(AI_CHAT_STORAGE_KEY) || '[]');
+  } catch (e) {}
+
+  if (countBadge) {
+    countBadge.textContent = `${history.length} ข้อความ`;
+  }
+
+  if (!history.length) {
+    drawerList.innerHTML = `
+      <div class="gemini-history-empty">
+        <span class="empty-icon">🌸</span>
+        <div>ยังไม่มีประวัติการสนทนาในเครื่องค่ะ</div>
+        <div style="font-size: 0.8rem; color: #64748b; margin-top: 4px;">ลองส่งข้อความสั่งเพิ่มเพลง หรือคุยกับไฮมิยะได้เลยนะคะ ✨</div>
+      </div>
+    `;
+    return;
+  }
+
+  let itemsHtml = '';
+  history.slice().reverse().forEach((item, revIdx) => {
+    const originalIdx = history.length - 1 - revIdx;
+    const isUser = item.role === 'user';
+    const icon = isUser ? '👤' : '🌸';
+    const roleLabel = isUser ? 'คุณ' : 'ไฮมิยะ AI';
+    const roleClass = isUser ? 'user' : 'ai';
+    const cleanText = (item.text || '').replace(/\n/g, ' ').trim();
+    const snippet = escapeHtml(cleanText.slice(0, 80)) || (isUser ? 'ข้อความ' : 'คำตอบ/การ์ดเพลง');
+    const timeStr = item.time ? formatHistoryTime(item.time) : '';
+
+    itemsHtml += `
+      <div class="gemini-history-item" onclick="jumpToAiHistoryMessage(${originalIdx})">
+        <span class="gemini-history-item-icon">${icon}</span>
+        <div class="gemini-history-item-body">
+          <div class="gemini-history-item-top">
+            <span class="gemini-history-item-role ${roleClass}">${roleLabel}</span>
+            <span class="gemini-history-item-time">${timeStr}</span>
+          </div>
+          <div class="gemini-history-item-text" title="${snippet}">${snippet}</div>
+        </div>
+      </div>
+    `;
+  });
+
+  drawerList.innerHTML = itemsHtml;
+}
+
+function jumpToAiHistoryMessage(idx) {
+  const drawer = document.getElementById('gemini-history-drawer');
+  if (drawer) drawer.classList.add('hidden');
+
+  const list = document.getElementById('gemini-messages-list');
+  if (!list || list.children.length === 0) {
+    loadSavedAiChatHistory();
+  }
+
+  setTimeout(() => {
+    const targetEl = document.getElementById('ai-msg-row-' + idx);
+    if (targetEl) {
+      targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      targetEl.style.transition = 'all 0.4s ease';
+      targetEl.style.outline = '2px solid rgba(56, 189, 248, 0.9)';
+      targetEl.style.boxShadow = '0 0 25px rgba(56, 189, 248, 0.6)';
+      targetEl.style.borderRadius = '14px';
+      setTimeout(() => {
+        targetEl.style.outline = '';
+        targetEl.style.boxShadow = '';
+      }, 1800);
+    }
+  }, 60);
 }
 
 // 2. Open / Close / Toggle AI Modal
@@ -5047,11 +5147,13 @@ function openHaimiyaAI() {
 function closeHaimiyaAI() {
   const modal = document.getElementById('haimiya-ai-modal');
   const bubble = document.getElementById('haimiya-ai-floating-bubble');
+  const historyDrawer = document.getElementById('gemini-history-drawer');
   if (!modal) return;
 
   modal.classList.add('hidden');
   document.body.classList.remove('ai-modal-open');
   if (bubble) bubble.classList.remove('active-open');
+  if (historyDrawer) historyDrawer.classList.add('hidden');
 
   // Stop any audio playing in chat
   stopAiChatAudio();
@@ -5141,8 +5243,13 @@ function handleGeminiInputKey(e) {
 function clearAiChat() {
   const list = document.getElementById('gemini-messages-list');
   const welcome = document.getElementById('gemini-welcome-box');
+  const drawer = document.getElementById('gemini-history-drawer');
   if (list) list.innerHTML = '';
   if (welcome) welcome.style.display = 'block';
+  if (drawer) {
+    drawer.classList.add('hidden');
+    renderAiHistoryDrawer();
+  }
   window.__aiChatHistory = [];
   try {
     localStorage.removeItem(AI_CHAT_STORAGE_KEY);
@@ -5170,6 +5277,7 @@ async function sendGeminiMessage() {
   // Render User Message Bubble
   const userMsgEl = document.createElement('div');
   userMsgEl.className = 'gemini-msg-row user';
+  userMsgEl.id = 'ai-msg-row-' + list.children.length;
   userMsgEl.innerHTML = `
     <div class="gemini-msg-bubble">${escapeHtml(rawText)}</div>
   `;
@@ -5526,6 +5634,7 @@ function appendAiResponse(htmlContent, rawTextToSave) {
 
   const row = document.createElement('div');
   row.className = 'gemini-msg-row ai';
+  row.id = 'ai-msg-row-' + list.children.length;
   row.innerHTML = `
     <div class="gemini-msg-avatar">
       <img src="haimiya_ai_avatar.jpg" alt="Haimiya AI" onerror="this.src='splash-cover.jpg';" />
