@@ -838,24 +838,29 @@
           </div>
         </div>
         <div class="gemini-header-actions">
-          <button class="gemini-btn-icon" onclick="toggleGeminiKeySettings()" title="สถานะ Gemini API (เชื่อมต่อในตัวแล้ว)">🔑</button>
+          <button class="gemini-btn-icon btn-history-toggle" id="btn-toggle-ai-history" onclick="toggleAiHistoryDrawer()" title="📜 ดูประวัติการแชท (Chat History)">
+            <span class="history-icon">📜</span>
+            <span class="history-text">ประวัติแชท</span>
+          </button>
           <button class="gemini-btn-icon" onclick="clearAiChat()" title="ล้างประวัติการสนทนา">🗑️</button>
           <button class="gemini-close-btn" onclick="closeHaimiyaAI()" title="ปิดโหมด AI (หรือคลิกที่ก้อนกลมๆ)">✕</button>
         </div>
       </div>
 
-      <!-- API Key Drawer -->
-      <div id="gemini-key-drawer" class="gemini-key-drawer hidden">
-        <div class="gemini-key-inner">
-          <div class="gemini-key-desc">
-            <span>🟢 <strong>Google Gemini API ในตัว:</strong> ระบบเชื่อมต่อ API Key อัจฉริยะไว้ในแอปและเว็บเรียบร้อยแล้ว พร้อมใช้งาน 100% โดยไม่ต้องกรอกคีย์เองค่ะ (หรือใส่คีย์ส่วนตัวเพิ่มเติมได้หากต้องการ)</span>
+      <!-- Chat History Drawer (หน้าต่างดูประวัติการแชท) -->
+      <div id="gemini-history-drawer" class="gemini-history-drawer hidden">
+        <div class="gemini-history-header">
+          <div class="gemini-history-title">
+            <span>📜 ประวัติการสนทนา</span>
+            <span class="gemini-history-count" id="gemini-history-count-badge">0 ข้อความ</span>
           </div>
-          <div class="gemini-key-inputs">
-            <input type="password" id="gemini-api-key-input" class="gemini-key-input" placeholder="เชื่อมต่อ Google Gemini สำเร็จในตัวแล้วค่ะ ✨" />
-            <button class="btn-save-key" onclick="saveGeminiApiKey()">บันทึก</button>
-            <button class="btn-cancel-key" onclick="toggleGeminiKeySettings()">ปิด</button>
+          <div class="gemini-history-actions">
+            <button class="btn-history-clear" onclick="clearAiChat()" title="ล้างประวัติทั้งหมด">🗑️ ล้างประวัติ</button>
+            <button class="btn-history-close" onclick="toggleAiHistoryDrawer()" title="ปิดหน้าต่างประวัติ">✕</button>
           </div>
-          <div id="gemini-key-status" class="gemini-key-status"></div>
+        </div>
+        <div class="gemini-history-list" id="gemini-history-list">
+          <!-- History items will be dynamically rendered here -->
         </div>
       </div>
 
