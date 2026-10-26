@@ -4771,19 +4771,21 @@ function initDraggableAiBubble() {
   let initialTop = 0;
   let movedDistance = 0;
 
-  // Restore saved position if present
+  // Restore saved position if present (Desktop only)
   try {
-    const savedPos = localStorage.getItem('haimiya_ai_bubble_pos');
-    if (savedPos) {
-      const pos = JSON.parse(savedPos);
-      const maxX = window.innerWidth - 75;
-      const maxY = window.innerHeight - 75;
-      const x = Math.min(Math.max(10, pos.x), maxX);
-      const y = Math.min(Math.max(10, pos.y), maxY);
-      bubble.style.left = x + 'px';
-      bubble.style.top = y + 'px';
-      bubble.style.right = 'auto';
-      bubble.style.bottom = 'auto';
+    if (window.innerWidth > 768) {
+      const savedPos = localStorage.getItem('haimiya_ai_bubble_pos');
+      if (savedPos) {
+        const pos = JSON.parse(savedPos);
+        const maxX = window.innerWidth - 75;
+        const maxY = window.innerHeight - 75;
+        const x = Math.min(Math.max(10, pos.x), maxX);
+        const y = Math.min(Math.max(10, pos.y), maxY);
+        bubble.style.left = x + 'px';
+        bubble.style.top = y + 'px';
+        bubble.style.right = 'auto';
+        bubble.style.bottom = 'auto';
+      }
     }
   } catch (e) {}
 
@@ -4847,19 +4849,21 @@ function initDraggableAiBubble() {
     window.removeEventListener('touchmove', onPointerMove);
     window.removeEventListener('touchend', onPointerUp);
 
-    // If moved <= 6px, treat as click/tap -> toggle AI modal!
-    if (movedDistance <= 6) {
+    // If moved <= 15px, treat as click/tap -> toggle AI modal!
+    if (movedDistance <= 15) {
       toggleHaimiyaAI();
       return;
     }
 
-    // Save final position
+    // Save final position only on desktop
     try {
-      const rect = bubble.getBoundingClientRect();
-      localStorage.setItem('haimiya_ai_bubble_pos', JSON.stringify({
-        x: rect.left,
-        y: rect.top
-      }));
+      if (window.innerWidth > 768) {
+        const rect = bubble.getBoundingClientRect();
+        localStorage.setItem('haimiya_ai_bubble_pos', JSON.stringify({
+          x: rect.left,
+          y: rect.top
+        }));
+      }
     } catch (e) {}
   }
 
