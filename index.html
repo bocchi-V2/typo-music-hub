@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=39" />
+  <link rel="stylesheet" href="style.css?v=45" />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
@@ -68,21 +68,27 @@
         <span class="logo-title" data-i18n="logoTitle">Haimiya Typo</span>
       </a>
       <div class="nav-links" id="nav-links-menu">
-        <a href="#" class="nav-link nav-link-secret" onclick="switchStudioWorkspace('funk', true); return false;" title="⚡ โซนลับ Funk & Brazilian Phonk (Spotify Secret Zone)">
-          🕶️ <span data-i18n="zoneFunk">⚡ โซนลับ Funk (780 เพลง)</span> <span class="nav-secret-tag">SECRET</span>
+        <a href="#" class="nav-link nav-link-ai" onclick="openHaimiyaAI(); return false;" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.25), rgba(236, 72, 153, 0.25)); border: 1px solid rgba(168, 85, 247, 0.45); color: #e9d5ff; font-weight: 600;">
+          ✨ 🤖 Haimiya AI Studio
         </a>
-        <a href="#" class="nav-link active-nav" onclick="switchStudioWorkspace('th', true); return false;" data-i18n="zoneTh">🇹🇭 เพลงไทย</a>
-        <a href="#" class="nav-link" onclick="switchStudioWorkspace('en', true); return false;" data-i18n="zoneEn">🇬🇧 เพลงสากล</a>
-        <a href="#" class="nav-link" onclick="switchStudioWorkspace('jp', true); return false;" data-i18n="zoneJp">🇯🇵 เพลงญี่ปุ่น/อนิเมะ</a>
-        <a href="#" class="nav-link" onclick="switchStudioWorkspace('lao', true); return false;" data-i18n="zoneLao">🇱🇦 เพลงลาว</a>
-        <a href="#" class="nav-link" onclick="switchStudioWorkspace('kr', true); return false;" data-i18n="zoneKr">🇰🇷 K-Pop</a>
-        <a href="#" class="nav-link" onclick="switchStudioWorkspace('pairs', true); return false;" data-i18n="navAnimeMatch">🌸 จับคู่อนิเมะ</a>
-        <a href="#" class="nav-link" onclick="switchStudioWorkspace('versus', true); return false;" data-i18n="navVersus">⚔️ โหวตเพลง</a>
-        <a href="#" class="nav-link nav-saved-btn" onclick="switchStudioWorkspace('saved', true); return false;">
+        <a href="#" class="nav-link nav-link-funk" onclick="openSecretFunkMode(); return false;" title="โซนเพลง Funk & Brazilian Phonk">
+          ⚡ Funk & Phonk
+        </a>
+        <a href="#" class="nav-link active-nav" onclick="closeSecretFunkMode(); switchStudioWorkspace('th', true); return false;" data-i18n="zoneTh">🇹🇭 เพลงไทย</a>
+        <a href="#" class="nav-link" onclick="closeSecretFunkMode(); switchStudioWorkspace('en', true); return false;" data-i18n="zoneEn">🇬🇧 เพลงสากล</a>
+        <a href="#" class="nav-link" onclick="closeSecretFunkMode(); switchStudioWorkspace('jp', true); return false;" data-i18n="zoneJp">🇯🇵 เพลงญี่ปุ่น/อนิเมะ</a>
+        <a href="#" class="nav-link" onclick="closeSecretFunkMode(); switchStudioWorkspace('lao', true); return false;" data-i18n="zoneLao">🇱🇦 เพลงลาว</a>
+        <a href="#" class="nav-link" onclick="closeSecretFunkMode(); switchStudioWorkspace('kr', true); return false;" data-i18n="zoneKr">🇰🇷 K-Pop</a>
+        <a href="#" class="nav-link" onclick="closeSecretFunkMode(); switchStudioWorkspace('pairs', true); return false;" data-i18n="navAnimeMatch">🌸 จับคู่อนิเมะ</a>
+        <a href="#" class="nav-link" onclick="closeSecretFunkMode(); switchStudioWorkspace('versus', true); return false;" data-i18n="navVersus">⚔️ โหวตเพลง</a>
+        <a href="#" class="nav-link nav-saved-btn" onclick="closeSecretFunkMode(); switchStudioWorkspace('saved', true); return false;">
           ❤️ <span data-i18n="navSaved">บันทึกไว้</span> (<span id="nav-saved-count">0</span>)
         </a>
         <button class="nav-link nav-app-btn" onclick="openAppModal(); return false;" style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(129, 140, 248, 0.2)); border: 1px solid rgba(56, 189, 248, 0.4); border-radius: 999px; cursor: pointer; color: #fff; font-weight: 600; padding: 0.35rem 0.9rem; margin-left: 0.3rem;">
-          📲 <span data-i18n="navInstallApp">ติดตั้งแอป / APK</span>
+          💻 <span data-i18n="navInstallApp">โหลดลงคอม / มือถือ</span>
+        </button>
+        <button class="nav-link" onclick="triggerLiveAutoSync(); return false;" style="background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.35); border-radius: 999px; cursor: pointer; color: #34d399; font-weight: 600; padding: 0.35rem 0.85rem;" title="⚡ ซิงค์เพลงใหม่และตรวจสอบสถานะคลังเพลง">
+          ⚡ ซิงค์เพลงสด
         </button>
       </div>
       <div class="relax-bgm-box">
@@ -101,10 +107,9 @@
         <span class="lang-divider">/</span>
         <button class="lang-toggle-btn" id="btn-lang-en" onclick="setAppLanguage('en')">🇬🇧 EN</button>
       </div>
-      <button class="hamburger" id="hamburger" onclick="toggleMenu()" title="เมนูโซนเพลงต่างๆ (กดเพื่อเปิด/ปิด)">
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" title="เมนูโซนเพลงและเครื่องมือ (กดเพื่อเปิด/ปิด)">
         <span class="hamburger-icon">☰</span>
-        <span class="hamburger-text">โซนเพลง</span>
-        <span class="nav-secret-tag" style="margin-left: 5px; font-size: 0.62rem; padding: 2px 6px;">⚡FUNK</span>
+        <span class="hamburger-text">เมนู</span>
       </button>
     </div>
   </nav>
@@ -138,19 +143,11 @@
       </h1>
       <p class="hero-desc" data-i18n="heroDesc">ค้นหาเพลงสำหรับทำคลิปไทโป พร้อมระบบสุ่มแยกโซน ปรับความดังเสียง และจับคู่ซีนอนิเมะที่เข้ากันที่สุด</p>
       <div class="hero-btns">
-        <a href="#" class="btn btn-secret-funk" onclick="switchStudioWorkspace('funk', true); return false;" id="hero-btn-secret-funk" title="กดเพื่อเข้าสู่โซนลับ Funk & Brazilian Phonk (780 เพลง)">
-          ⚡ 🕶️ โซนลับ Funk (780 เพลง) <span class="badge-secret">SECRET</span>
-        </a>
         <a href="#random" class="btn btn-primary" id="hero-random-btn" data-i18n="heroBtnRandom">🎲 ไปที่โซนสุ่มเพลง</a>
-        <a href="#songs" class="btn btn-ghost" id="hero-btn-songs">🎵 <span data-i18n="heroBtnSongs">สำรวจคลังเพลง</span> (<span id="hero-song-count">19822</span> <span data-i18n="heroBtnSongsSuffix">เพลง</span>)</a>
+        <a href="#songs" class="btn btn-ghost" id="hero-btn-songs">🎵 <span data-i18n="heroBtnSongs">สำรวจคลังเพลง</span> (<span id="hero-song-count">19075</span> <span data-i18n="heroBtnSongsSuffix">เพลง</span>)</a>
         <button class="btn btn-ghost" onclick="openAppModal()" style="border-color: rgba(56, 189, 248, 0.45); background: rgba(56, 189, 248, 0.1); color: #38bdf8;">
           📲 ดาวน์โหลด APK / ติดตั้งแอป
         </button>
-      </div>
-      <div class="hero-secret-badge-bar" onclick="switchStudioWorkspace('funk', true); return false;" style="cursor: pointer; margin-top: 1.1rem; display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.55rem 1.1rem; background: linear-gradient(135deg, rgba(234, 179, 8, 0.15), rgba(168, 85, 247, 0.22)); border: 1px solid rgba(234, 179, 8, 0.4); border-radius: 999px; backdrop-filter: blur(10px); color: #fef08a; font-size: 0.88rem; box-shadow: 0 4px 20px rgba(0,0,0,0.3); transition: transform 0.2s ease;">
-        <span style="font-size: 1.1rem; animation: pulse-secret 2s infinite ease-in-out; display: inline-block;">🔥</span>
-        <span><strong>โซนลับใหม่:</strong> Funk & Brazilian Phonk 780 เพลง (กดตรงนี้ หรือกดปุ่ม <strong>[☰ โซนเพลง ⚡FUNK]</strong> ขวาบน)</span>
-        <span style="color: #facc15; font-weight: bold; margin-left: 4px;">➜</span>
       </div>
     </div>
     <div class="hero-visual">
@@ -168,22 +165,22 @@
 
   <div class="stats-bar">
     <div class="stat-item">
-      <span class="stat-num" id="stat-songs-count">19822</span>
-      <span class="stat-label" data-i18n="statTotalSongs">เพลงทั้งหมดในคลัง</span>
+      <span class="stat-num" id="stat-songs-count">19075</span>
+      <span class="stat-label" data-i18n="statTotalSongs">เพลงในโซนหลัก</span>
     </div>
     <div class="stat-divider"></div>
     <div class="stat-item">
-      <span class="stat-num">6</span>
-      <span class="stat-label" data-i18n="statZones">6 โซนภาษา (ไทย / สากล / ญี่ปุ่น / ลาว / K-Pop / โซนลับ Funk)</span>
+      <span class="stat-num">5</span>
+      <span class="stat-label" data-i18n="statZones">5 โซนเพลงปกติ (ไทย / สากล / ญี่ปุ่น / ลาว / K-Pop)</span>
     </div>
     <div class="stat-divider"></div>
     <div class="stat-item">
-      <span class="stat-num" id="stat-anime-count">1018</span>
+      <span class="stat-num" id="stat-anime-count">1024</span>
       <span class="stat-label" data-i18n="statAnimes">อนิเมะยอดฮิต</span>
     </div>
     <div class="stat-divider"></div>
     <div class="stat-item">
-      <span class="stat-num" id="stat-pairs-count">856</span>
+      <span class="stat-num" id="stat-pairs-count">889</span>
       <span class="stat-label" data-i18n="statPairs">คู่แนะนำพร้อมทริคไทโป</span>
     </div>
   </div>
@@ -235,13 +232,6 @@
         <span class="sz-text">
           <strong class="sz-title" data-i18n="zoneKr">โซนเพลง K-Pop / เกาหลี</strong>
           <small class="sz-sub" id="sz-sub-kr">6 เพลง</small>
-        </span>
-      </button>
-      <button class="studio-zone-tab tab-secret" data-ws="funk" onclick="switchStudioWorkspace('funk')">
-        <span class="sz-icon">⚡</span>
-        <span class="sz-text">
-          <strong class="sz-title" data-i18n="zoneFunk">โซนลับ Funk</strong>
-          <small class="sz-sub" id="sz-sub-funk">780 เพลง</small>
         </span>
       </button>
       <button class="studio-zone-tab" data-ws="pairs" onclick="switchStudioWorkspace('pairs')">
@@ -302,13 +292,6 @@
             <div class="zone-tab-info">
               <span class="zone-tab-title" data-i18n="randZoneJp">โซนเพลงญี่ปุ่น / อนิเมะ</span>
               <span class="zone-tab-count" id="zone-count-jp">7 เพลง</span>
-            </div>
-          </button>
-          <button class="zone-tab-btn btn-secret-zone" data-zone="funk" onclick="selectZone('funk', this)">
-            <span class="zone-flag">⚡</span>
-            <div class="zone-tab-info">
-              <span class="zone-tab-title" data-i18n="zoneFunk">โซนลับ Funk & Phonk</span>
-              <span class="zone-tab-count" id="zone-count-funk">780 เพลง</span>
             </div>
           </button>
           <button class="zone-tab-btn" data-zone="all" onclick="selectZone('all', this)">
@@ -503,6 +486,79 @@
     </section>
   </div>
 
+  <!-- WORKSPACE 5: EXCLUSIVE SEPARATE SECRET FUNK VAULT (โหมดลับแยกต่างหาก) -->
+  <div id="workspace-secret-funk" class="studio-workspace hidden secret-vault-workspace" style="display: none;">
+    <section class="section secret-room-section">
+      <div class="secret-room-header-card">
+        <div class="secret-room-badge-row">
+          <span class="secret-vip-badge">🕶️ EXCLUSIVE SECRET MODE</span>
+          <span class="secret-spotify-badge">🟢 Spotify Funk Playlist</span>
+          <span class="secret-count-badge">⚡ 780 เพลงลับ</span>
+          <button class="btn btn-exit-secret" onclick="closeSecretFunkMode()" title="ออกจากโหมดลับ กลับสู่โซนเพลงปกติ">
+            🔙 ออกจากโหมดลับ / กลับหน้าปกติ
+          </button>
+        </div>
+        <h2 class="secret-room-title">
+          ⚡ <span class="gradient-secret-text">โหมดลับ: Funk & Brazilian Phonk Studio</span>
+        </h2>
+        <p class="secret-room-desc">
+          ยินดีต้อนรับสู่โหมดลับแยกต่างหาก รวมคลังเพลง Funk จาก Spotify ครบ 780 เพลง (บราซิลฟังก์, Drift Phonk, Automotivo, Mandelão, Funk Hits) พร้อมตัวเล่นเสียงตัวอย่าง 30 วินาที ลิงก์ตรง Spotify และระบบจับคู่อนิเมะแบบลับ
+        </p>
+      </div>
+
+      <div class="secret-tools-bar">
+        <div class="secret-subgenre-chips" id="secret-subgenre-chips">
+          <button class="secret-chip active" data-sub="all" onclick="filterSecretFunkSub('all', this)">⚡ เพลงฟังก์ทั้งหมด (780)</button>
+          <button class="secret-chip" data-sub="brazilian" onclick="filterSecretFunkSub('brazilian', this)">🇧🇷 Brazilian Funk (260)</button>
+          <button class="secret-chip" data-sub="phonk" onclick="filterSecretFunkSub('phonk', this)">🏎️ Drift Phonk (180)</button>
+          <button class="secret-chip" data-sub="automotivo" onclick="filterSecretFunkSub('automotivo', this)">🔥 Automotivo (140)</button>
+          <button class="secret-chip" data-sub="mandelao" onclick="filterSecretFunkSub('mandelao', this)">🥁 Mandelão (100)</button>
+          <button class="secret-chip" data-sub="classics" onclick="filterSecretFunkSub('classics', this)">🎷 Funk Classics & Disco (100)</button>
+        </div>
+
+        <div class="secret-search-row">
+          <div class="secret-search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="secret-funk-search" class="secret-search-input" placeholder="ค้นหาเพลงฟังก์, ศิลปิน, สไตล์, หรืออนิเมะคู่..." oninput="handleSecretFunkSearch(this.value)" />
+            <button class="secret-search-clear" id="secret-funk-clear" onclick="clearSecretFunkSearch()" style="display: none;">✕</button>
+          </div>
+          <div class="secret-bpm-box">
+            <select id="secret-funk-bpm" class="secret-bpm-select" onchange="handleSecretFunkBpm(this.value)">
+              <option value="all">⚡ ทุกระดับ BPM</option>
+              <option value="slow">🐢 ช้า (&lt; 120 BPM)</option>
+              <option value="mid">🎵 ปานกลาง (120-135 BPM)</option>
+              <option value="fast">🔥 เร็ว / แดนซ์ (&gt; 135 BPM)</option>
+            </select>
+          </div>
+          <button class="btn btn-roll-funk" onclick="rollRandomSecretFunk()" title="สุ่มเพลงฟังก์ 1 เพลงทันที">
+            🎲 สุ่มเพลงฟังก์ 1 เพลง
+          </button>
+        </div>
+      </div>
+
+      <div id="secret-roll-spotlight" class="secret-roll-spotlight" style="display: none;"></div>
+
+      <div class="secret-grid-meta">
+        <span id="secret-grid-count-text">⚡ กำลังโหลดคลังเพลงฟังก์ 780 เพลง...</span>
+        <button class="btn-refresh-secret" onclick="filterAndRenderSecretFunk(true)">🔄 รีเฟรชรายการ</button>
+      </div>
+
+      <div class="songs-grid" id="secret-songs-grid"></div>
+
+      <div class="secret-load-more-wrap" id="secret-load-more-wrap">
+        <button class="btn btn-ghost" id="secret-load-more-btn" onclick="loadMoreSecretFunk()">
+          🔽 โหลดเพลงฟังก์เพิ่มเติม (<span id="secret-remaining-count">762</span> เพลง)
+        </button>
+      </div>
+
+      <div class="secret-bottom-bar">
+        <button class="btn btn-exit-secret btn-exit-bottom" onclick="closeSecretFunkMode()">
+          🔙 ออกจากโหมดลับ / กลับสู่หน้าปกติ
+        </button>
+      </div>
+    </section>
+  </div>
+
   <!-- WORKSPACE 2: ANIME PAIRING VAULT -->
   <div id="workspace-pairs" class="studio-workspace hidden">
     <!-- ANIME MATCH SECTION -->
@@ -617,21 +673,61 @@
         <div style="position: relative; width: 110px; height: 110px; margin: 0 auto 1.2rem; border-radius: 28px; overflow: hidden; box-shadow: 0 10px 35px rgba(56, 189, 248, 0.45); border: 2.5px solid rgba(56, 189, 248, 0.65);">
           <img src="app-icon.jpg" alt="App Icon" style="width: 100%; height: 100%; object-fit: cover;" />
         </div>
-        <h2 style="font-size: 1.65rem; font-weight: 800; color: #fff; margin-bottom: 0.35rem;">Haimiya Typo สำหรับมือถือ</h2>
-        <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.5;">แอป Haimiya Typo พร้อมหน้าจอโหลดตัวการ์ตูนหมุน และเสียงต้อนรับ Yaho!</p>
+        <h2 style="font-size: 1.65rem; font-weight: 800; color: #fff; margin-bottom: 0.35rem;">Haimiya Typo สำหรับคอมพิวเตอร์และมือถือ</h2>
+        <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.5;">ติดตั้งลงคอมพิวเตอร์ (PC / Windows / Mac) หรือมือถือ พร้อมระบบดาวน์โหลดเพลงตัดต่อและซิงค์เพลงสด!</p>
 
         <!-- Platform Selector Tabs -->
         <div class="app-platform-tabs" style="display: flex; background: rgba(255, 255, 255, 0.06); border-radius: 999px; padding: 4px; margin-bottom: 1.2rem; border: 1px solid rgba(255, 255, 255, 0.1);">
-          <button id="tab-btn-ios" class="app-platform-tab-btn active" onclick="switchInstallTab('ios')" style="flex: 1; padding: 0.6rem 0.8rem; border-radius: 999px; border: none; background: linear-gradient(135deg, #38bdf8, #818cf8); color: #fff; font-weight: 600; font-size: 0.92rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; box-shadow: 0 4px 14px rgba(56, 189, 248, 0.4);">
-            🍏 iPhone / iPad (iOS)
+          <button id="tab-btn-pc" class="app-platform-tab-btn active" onclick="switchInstallTab('pc')" style="flex: 1; padding: 0.6rem 0.6rem; border-radius: 999px; border: none; background: linear-gradient(135deg, #38bdf8, #818cf8); color: #fff; font-weight: 600; font-size: 0.88rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px; box-shadow: 0 4px 14px rgba(56, 189, 248, 0.4);">
+            💻 คอมพิวเตอร์ (PC)
           </button>
-          <button id="tab-btn-android" class="app-platform-tab-btn" onclick="switchInstallTab('android')" style="flex: 1; padding: 0.6rem 0.8rem; border-radius: 999px; border: none; background: transparent; color: #94a3b8; font-weight: 600; font-size: 0.92rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px;">
+          <button id="tab-btn-ios" class="app-platform-tab-btn" onclick="switchInstallTab('ios')" style="flex: 1; padding: 0.6rem 0.6rem; border-radius: 999px; border: none; background: transparent; color: #94a3b8; font-weight: 600; font-size: 0.88rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px;">
+            🍏 iOS (iPhone)
+          </button>
+          <button id="tab-btn-android" class="app-platform-tab-btn" onclick="switchInstallTab('android')" style="flex: 1; padding: 0.6rem 0.6rem; border-radius: 999px; border: none; background: transparent; color: #94a3b8; font-weight: 600; font-size: 0.88rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px;">
             🤖 Android
           </button>
         </div>
 
+        <!-- ===== PC PANEL ===== -->
+        <div id="install-panel-pc" style="display: block;">
+          <div style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.12), rgba(129, 140, 248, 0.12)); border: 1.5px solid rgba(56, 189, 248, 0.35); border-radius: 16px; padding: 1.1rem; text-align: left; margin-bottom: 1rem;">
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 0.6rem;">
+              <span style="font-size: 1.4rem;">💻</span>
+              <strong style="color: #38bdf8; font-size: 1.05rem;">วิธีที่ 1: ติดตั้งเป็นโปรแกรมบนคอม (แนะนำ สะดวก 100%)</strong>
+            </div>
+            <p style="color: #cbd5e1; font-size: 0.88rem; line-height: 1.6; margin-bottom: 0.8rem;">
+              หากเปิดด้วย Chrome, Edge หรือ Brave บนคอมพิวเตอร์ สามารถกดปุ่มด้านล่างเพื่อติดตั้งเป็นโปรแกรมบนหน้าจอ Desktop ได้ทันที:
+            </p>
+            <button id="btn-pc-pwa-install" class="btn btn-primary" onclick="installPWA()" style="width: 100%; justify-content: center; font-size: 0.95rem; padding: 0.85rem; box-shadow: 0 6px 20px rgba(56, 189, 248, 0.35); margin-bottom: 0.5rem;">
+              ⚡ ติดตั้งเป็นแอปบนคอมพิวเตอร์ (1 คลิก)
+            </button>
+            <div style="font-size: 0.78rem; color: #94a3b8; line-height: 1.5;">
+              * หรือกดไอคอนรูป <strong>คอมพิวเตอร์ / ➕ ติดตั้ง</strong> ที่แถบ Address Bar มุมขวาบนของเบราว์เซอร์
+            </div>
+          </div>
+
+          <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+            <!-- PC Option 2: Download Windows Shortcut -->
+            <button class="btn btn-ghost" onclick="downloadWindowsShortcut()" style="width: 100%; justify-content: center; font-size: 0.95rem; border-color: rgba(56, 189, 248, 0.5); color: #38bdf8; padding: 0.85rem;">
+              📥 วิธีที่ 2: บันทึกทางลัดหน้าจอ Desktop (.url)
+            </button>
+
+            <!-- PC Option 3: Download Offline Music Pack for PC -->
+            <button class="btn btn-ghost" onclick="downloadOfflineMusicPack()" style="width: 100%; justify-content: center; font-size: 0.9rem; border-color: rgba(168, 85, 247, 0.5); color: #c084fc; padding: 0.85rem;">
+              🎧 บันทึกคลังเพลงฮิตลงคอมไว้ฟังและตัดต่อออฟไลน์ (Offline Pack)
+            </button>
+          </div>
+
+          <div style="margin-top: 1rem; padding: 0.85rem 1rem; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; font-size: 0.82rem; color: #94a3b8; text-align: left; line-height: 1.6;">
+            💡 <strong>สำหรับคนตัดต่อคลิปบนคอม:</strong><br/>
+            • <strong>ปุ่มโหลดเพลงลงคอม:</strong> ในทุกการ์ดเพลงจะมีปุ่ม <strong style="color:#38bdf8;">📥 โหลดลงคอม</strong> กดโหลดเป็นไฟล์เสียง <code>.m4a</code> ไปลากใส่ CapCut PC, Premiere Pro หรือ AE ได้ทันที<br/>
+            • <strong>รันบนเครื่องแบบ Auto-Sync:</strong> ดับเบิลคลิกไฟล์ <code>start_haimiya_desktop.bat</code> ในโฟลเดอร์เพื่อเปิดและซิงค์เพลงใหม่อัตโนมัติทุกครั้ง
+          </div>
+        </div>
+
         <!-- ===== iOS PANEL ===== -->
-        <div id="install-panel-ios" style="display: block;">
+        <div id="install-panel-ios" style="display: none;">
           <div style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.12), rgba(129, 140, 248, 0.12)); border: 1.5px solid rgba(56, 189, 248, 0.35); border-radius: 16px; padding: 1.1rem; text-align: left; margin-bottom: 1rem;">
             <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 0.6rem;">
               <span style="font-size: 1.4rem;">📲</span>
@@ -696,6 +792,118 @@
     </div>
   </div>
 
+  <!-- ============================================
+       FLOATING DRAGGABLE AI ASSISTANT BUBBLE (ก้อนกลมๆ ขยับได้ มีเงา)
+       ============================================ -->
+  <div id="haimiya-ai-floating-bubble" class="haimiya-ai-floating-bubble" title="คลิกเพื่อคุยกับ Haimiya AI (ลากย้ายได้อิสระ / คลิกซ้ำเพื่อปิด)">
+    <div class="ai-bubble-inner">
+      <img src="haimiya_ai_bubble.jpg" alt="Haimiya AI" class="ai-bubble-img" />
+      <span class="ai-bubble-sparkle">✨</span>
+      <span class="ai-bubble-pulse"></span>
+    </div>
+  </div>
+
+  <!-- ============================================
+       HAIMIYA AI STUDIO MODAL (GEMINI-INSPIRED UI)
+       หน้าจอแชท AI อัจฉริยะ ดีไซน์สไตล์ Google Gemini
+       ============================================ -->
+  <div id="haimiya-ai-modal" class="haimiya-ai-modal hidden">
+    <div class="gemini-ai-container">
+      <!-- Top Header -->
+      <div class="gemini-header">
+        <div class="gemini-header-left">
+          <div class="gemini-avatar-wrap">
+            <img src="haimiya_ai_avatar.jpg" alt="Haimiya AI" class="gemini-avatar-img" />
+            <span class="gemini-online-dot"></span>
+          </div>
+          <div class="gemini-header-info">
+            <div class="gemini-title-row">
+              <h3 class="gemini-title">Haimiya AI Studio</h3>
+              <span id="gemini-engine-badge" class="gemini-sparkle-badge" title="สถานะ AI Engine">✨ AI Online</span>
+            </div>
+            <div class="gemini-status-text" id="gemini-status-subtext">ผู้ช่วยอัจฉริยะ • สั่งเพิ่มเพลงลงคลัง & ปรึกษาคลิปไทโป</div>
+          </div>
+        </div>
+        <div class="gemini-header-actions">
+          <button class="gemini-btn-icon" onclick="toggleGeminiKeySettings()" title="ตั้งค่า Gemini API Key (ฟรี)">🔑</button>
+          <button class="gemini-btn-icon" onclick="clearAiChat()" title="ล้างการสนทนา">🗑️</button>
+          <button class="gemini-close-btn" onclick="closeHaimiyaAI()" title="ปิดโหมด AI (หรือคลิกที่ก้อนกลมๆ)">✕</button>
+        </div>
+      </div>
+
+      <!-- API Key Drawer -->
+      <div id="gemini-key-drawer" class="gemini-key-drawer hidden">
+        <div class="gemini-key-inner">
+          <div class="gemini-key-desc">
+            <span>🔑 <strong>Google Gemini API Key:</strong> (ขอฟรีได้ที่ <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener">aistudio.google.com</a> หรือเว้นว่างไว้เพื่อใช้ AI ฟรีอัตโนมัติ)</span>
+          </div>
+          <div class="gemini-key-inputs">
+            <input type="password" id="gemini-api-key-input" class="gemini-key-input" placeholder="วาง API Key เช่น AIzaSy..." />
+            <button class="btn-save-key" onclick="saveGeminiApiKey()">บันทึก</button>
+            <button class="btn-cancel-key" onclick="toggleGeminiKeySettings()">ปิด</button>
+          </div>
+          <div id="gemini-key-status" class="gemini-key-status"></div>
+        </div>
+      </div>
+
+      <!-- Chat Messages Flow -->
+      <div class="gemini-chat-body" id="gemini-chat-body">
+        <!-- Welcome Hero Message -->
+        <div class="gemini-welcome-box" id="gemini-welcome-box">
+          <div class="gemini-welcome-sparkle">✦</div>
+          <h2 class="gemini-welcome-greeting">สวัสดีค่ะ, มีอะไรให้ <span class="gradient-gemini-text">ไฮมิยะ AI</span> ช่วยคะ?</h2>
+          <p class="gemini-welcome-sub">บอกชื่อเพลงที่อยากให้เพิ่มเข้าคลัง หรือพิมพ์แจ้งปัญหา/บั๊กการใช้งานได้เลยค่ะ!</p>
+
+          <!-- Quick Suggestion Chips -->
+          <div class="gemini-prompt-chips">
+            <button class="gemini-chip" onclick="handleQuickAiPrompt('เพิ่มเพลง')">
+              <span class="chip-icon">🎵</span>
+              <span>เพิ่มเพลงใหม่ลงคลัง</span>
+            </button>
+            <button class="gemini-chip" onclick="handleQuickAiPrompt('แจ้งบั๊ก')">
+              <span class="chip-icon">🐛</span>
+              <span>แจ้งบั๊ก / ปัญหาการใช้งาน</span>
+            </button>
+            <button class="gemini-chip" onclick="handleQuickAiPrompt('แนะนำเพลงตัดต่อคลิป')">
+              <span class="chip-icon">🌸</span>
+              <span>แนะนำเพลงตัดต่อคู่กับอนิเมะ</span>
+            </button>
+            <button class="gemini-chip" onclick="handleQuickAiPrompt('เพลงฮิต TikTok บีทเดือดๆ')">
+              <span class="chip-icon">🔥</span>
+              <span>เพลงฮิต TikTok มันส์ๆ</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Messages will be appended here -->
+        <div class="gemini-messages-list" id="gemini-messages-list"></div>
+        <div id="gemini-typing-indicator" class="gemini-typing-indicator hidden">
+          <div class="typing-sparkle">✨</div>
+          <div class="typing-dots">
+            <span></span><span></span><span></span>
+          </div>
+          <span class="typing-text">ไฮมิยะกำลังคิดและค้นหาเพลง...</span>
+        </div>
+      </div>
+
+      <!-- Input Footer Bar -->
+      <div class="gemini-input-footer">
+        <div class="gemini-input-bar">
+          <textarea id="gemini-input-text" class="gemini-input-textarea" placeholder="พิมพ์คุยกับไฮมิยะ เช่น 'เพิ่มเพลง APT' หรือ 'แจ้งบั๊กเสียงไม่เล่น'..." rows="1" onkeydown="handleGeminiInputKey(event)"></textarea>
+          <button id="gemini-send-btn" class="gemini-send-btn" onclick="sendGeminiMessage()" title="ส่งข้อความ (Enter)">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </div>
+        <div class="gemini-disclaimer">
+          Haimiya AI สามารถค้นหาตัวอย่างเสียงและปก HD เพื่อเพิ่มเพลงใหม่ลงคลังกลางสำหรับผู้ใช้ทุกคน
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- FLOATING RESIZABLE MINI-PLAYER WIDGET (โหมดแอพลอย ไม่ซ้อนป๊อปอัป ลากย้ายอิสระ) -->
   <div id="floating-mini-player" class="floating-mini-player" style="display: none;">
     <div class="fmp-drag-header" id="fmp-drag-header" title="คลิกค้างแล้วลากเพื่อย้ายตำแหน่ง">
@@ -743,8 +951,8 @@
   <!-- BOTTOM PLAYER -->
   <div id="bottom-player" class="bottom-player"></div>
 
-  <script src="data.js?v=20261018.39"></script>
-  <script src="app.js?v=20261018.39"></script>
+  <script src="data.js?v=20261026.45"></script>
+  <script src="app.js?v=20261026.45"></script>
 
   <!-- Service Worker Registration & Offline Support -->
   <script>
@@ -755,28 +963,33 @@
         if ('caches' in window) {
           caches.keys().then((keys) => {
             keys.forEach((key) => {
-              if (key !== 'haimiya-typo-v39' && key !== 'haimiya-audio-vault') {
+              if (key !== 'haimiya-typo-v44' && key !== 'haimiya-audio-vault') {
                 caches.delete(key);
               }
             });
           });
         }
-        navigator.serviceWorker.register('./sw.js?v=39')
+        navigator.serviceWorker.register('./sw.js?v=44')
           .then((reg) => {
-            console.log('✅ Service Worker v39 ลงทะเบียนสำเร็จ!');
+            console.log('✅ Service Worker v44 ลงทะเบียนสำเร็จ!');
             reg.update();
           })
           .catch((err) => console.warn('⚠️ SW registration failed:', err));
       });
 
-      // แจ้งเตือนและรีเฟรชหน้าเว็บอัตโนมัติเมื่อ Service Worker อัปเดตเสร็จ
+      // แจ้งเตือนและรีเฟรชหน้าเว็บอัตโนมัติเมื่อ Service Worker อัปเดตเสร็จ (ป้องกัน reload วนลูป 100%)
       let refreshing = false;
       navigator.serviceWorker.addEventListener('controllerchange', () => {
-        if (!refreshing) {
-          refreshing = true;
-          console.log('🔄 มีอัปเดตใหม่! กำลังโหลดข้อมูลล่าสุด...');
-          window.location.reload();
+        if (refreshing) return;
+        const currentSwVer = 'v44';
+        if (sessionStorage.getItem('sw_reloaded_ver') === currentSwVer) {
+          console.log('⏭️ ป้องกันการรีเฟรชซ้ำ: เวอร์ชันตรงแล้ว (' + currentSwVer + ')');
+          return;
         }
+        refreshing = true;
+        sessionStorage.setItem('sw_reloaded_ver', currentSwVer);
+        console.log('🔄 อัปเดต Service Worker ' + currentSwVer + ' สำเร็จ! กำลังโหลดข้อมูลล่าสุด...');
+        window.location.reload();
       });
     }
 
