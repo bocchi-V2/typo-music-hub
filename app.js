@@ -3607,8 +3607,8 @@ function initSplashScreen() {
 //  ระบบซิงค์เพลง/อนิเมะสดอัตโนมัติ และอัปเดตแอป APK ทับของเดิมได้ 100% ไม่ต้องลบแอปเก่า
 // ============================================
 
-const CURRENT_APP_VERSION = 'v2.20261027.0650';
-const CURRENT_VERSION_CODE = 1793031310;
+const CURRENT_APP_VERSION = 'v2.20261027.0700';
+const CURRENT_VERSION_CODE = 1793031320;
 const GITHUB_REPO_OWNER = 'bocchi-V2';
 const GITHUB_REPO_NAME = 'typo-music-hub';
 const GITHUB_PAGES_BASE = 'https://bocchi-v2.github.io/typo-music-hub';
@@ -5220,9 +5220,8 @@ function handleQuickAiPrompt(text) {
   if (!input) return;
 
   if (text === 'เพิ่มเพลง') {
-    input.value = 'ช่วยเพิ่มเพลง ';
-    input.focus();
-    input.setSelectionRange(input.value.length, input.value.length);
+    input.value = 'เพิ่มเพลงใหม่';
+    sendGeminiMessage();
   } else if (text === 'แจ้งบั๊ก') {
     input.value = 'แจ้งบั๊ก: ';
     input.focus();
@@ -5321,50 +5320,87 @@ async function sendGeminiMessage() {
   const trimmed = rawText.trim();
   const lower = trimmed.toLowerCase();
 
-  // Intent A: Natural song addition request (e.g. "เพิ่มเพลง APT", "ช่วยลงเพลง APT หน่อย", "อยากได้เพลง...", "ขอเพลง...ลงคลัง")
-  const addSongPattern = /(เพิ่มเพลง|ลงเพลง|แอดเพลง|ขอเพิ่มเพลง|ขอเพลง|อยากให้เพิ่ม|อยากได้เพลง|เอาเพลง|add\s*song|\/add)/i;
+  // Intent A: Natural song addition or discover new songs request
+  // (e.g. "เพิ่มเพลงใหม่", "ขอเพลงใหม่ๆ", "เพิ่มเพลง APT", "ช่วยลงเพลง Die With A Smile", "อยากได้เพลงใหม่")
+  const addSongPattern = /(เพิ่มเพลง|ลงเพลง|แอดเพลง|ขอเพิ่มเพลง|ขอเพลง|อยากให้เพิ่ม|อยากได้เพลง|เอาเพลง|add\s*song|\/add|เพลงใหม่)/i;
   const isAddSong = addSongPattern.test(trimmed);
 
   // Intent B: Explicit bug report command only (e.g. "แจ้งบั๊ก: ...", "แจ้งปัญหา: ...", "/bug ...")
   const isBugReport = /^(แจ้งบั๊ก|แจ้งปัญหา|\/bug)[:\s]/i.test(trimmed) || (trimmed === 'แจ้งบั๊ก' || trimmed === 'แจ้งปัญหา');
 
   if (isAddSong) {
-    let songQuery = trimmed
-      .replace(/^(ช่วย|อยากให้|ขอ|ช่วยกัน|ลอง|รบกวน|พี่|ไฮมิยะ)\s*/gi, '')
+    let cleaned = trimmed
+      .replace(/^(ช่วย|อยากให้|ขอ|ช่วยกัน|ลอง|รบกวน|พี่|ไฮมิยะ|อยากได้)\s*/gi, '')
       .replace(/(เพิ่มเพลง|ลงเพลง|แอดเพลง|ขอเพิ่มเพลง|ขอเพลง|อยากให้เพิ่ม|อยากได้เพลง|เอาเพลง|add\s*song|\/add)/gi, '')
       .replace(/(เข้าคลัง|ลงคลัง|ลงระบบ|ในแอพ|ในแอป|ในเว็บ|ในคลัง)/gi, '')
       .replace(/(ด้วยนะ|ด้วยครับ|ด้วยค่ะ|ด้วย|หน่อยครับ|หน่อยค่ะ|หน่อยนะ|หน่อยจ้า|หน่อย|ให้หน่อย|ทีครับ|ทีค่ะ|ที|ให้ที)/gi, '')
       .replace(/^(เพลง|song)\s*/gi, '')
       .trim();
 
-    if (!songQuery) {
-      if (typingIndicator) typingIndicator.classList.add('hidden');
-      appendAiResponse(`
-        <p>🎵 บอกชื่อเพลงหรือศิลปินที่อยากให้ไฮมิยะค้นหาและเพิ่มลงคลังได้เลยค่ะ!</p>
-        <p style="margin-top: 6px; color: #94a3b8; font-size: 0.86rem;">
-          ตัวอย่างเช่น: <code>เพิ่มเพลง APT</code>, <code>เพิ่มเพลง Die With A Smile</code>, หรือ <code>เพิ่มเพลง Day One - PUN</code> ✨
-        </p>
-      `);
-      return;
-    }
+    // ตรวจสอบว่าผู้ใช้ระบุชื่อเพลงเจาะจง หรือเป็นการสั่งขอเพลงใหม่/เพลงฮิตประจำสัปดาห์
+    let specificTitle = cleaned
+      .replace(/(เพลงใหม่ล่าสุด|เพลงมาใหม่|เพลงใหม่ๆ|เพลงใหม่|ใหม่ล่าสุด|มาใหม่|ใหม่ๆ|ใหม่|ล่าสุด|ฮิตๆ|ฮิต|ติดชาร์ต)/gi, '')
+      .trim();
 
-    // Search iTunes API for live metadata & previews
+    const isDiscoverNew = !specificTitle || /^(ใหม่|ใหม่ๆ|ใหม่ล่าสุด|มาใหม่|ฮิตใหม่|ฮิตๆ|ล่าสุด|ฮิต|ติดชาร์ต|new|trending|latest)$/i.test(cleaned);
+
+    let trackList = [];
+    let queryHeader = '';
+
     try {
-      const itunesUrl = `https://itunes.apple.com/search?term=${encodeURIComponent(songQuery)}&entity=song&limit=4`;
-      const res = await fetch(itunesUrl);
-      const data = await res.json();
+      if (isDiscoverNew) {
+        queryHeader = 'เพลงใหม่ล่าสุด & เพลงฮิตติดชาร์ต';
+        try {
+          const rssRes = await fetch('https://itunes.apple.com/th/rss/topsongs/limit=8/json');
+          if (rssRes.ok) {
+            const rssData = await rssRes.json();
+            const entries = rssData.feed?.entry || [];
+            trackList = entries.map(e => ({
+              trackName: e['im:name']?.label,
+              artistName: e['im:artist']?.label,
+              artworkUrl100: e['im:image']?.[2]?.label || e['im:image']?.[1]?.label || '',
+              previewUrl: e.link?.[1]?.attributes?.href || '',
+              primaryGenreName: e.category?.attributes?.label || 'Pop / Beat',
+              releaseDate: e['im:releaseDate']?.label || '2026',
+              trackViewUrl: e.link?.[0]?.attributes?.href || ''
+            }));
+          }
+        } catch (rssErr) {
+          console.warn('iTunes RSS error, fallback to search:', rssErr);
+        }
+
+        if (!trackList.length) {
+          const fallbackSearchUrl = `https://itunes.apple.com/search?term=LISA+APT+trending+hits+2026&entity=song&limit=6`;
+          const fbRes = await fetch(fallbackSearchUrl);
+          const fbData = await fbRes.json();
+          if (fbData && fbData.results && fbData.results.length > 0) {
+            trackList = fbData.results;
+          }
+        }
+      } else {
+        queryHeader = specificTitle;
+        const itunesUrl = `https://itunes.apple.com/search?term=${encodeURIComponent(specificTitle)}&entity=song&limit=4`;
+        const res = await fetch(itunesUrl);
+        const data = await res.json();
+        if (data && data.results && data.results.length > 0) {
+          trackList = data.results;
+        }
+      }
 
       if (typingIndicator) typingIndicator.classList.add('hidden');
 
-      if (data && data.results && data.results.length > 0) {
-        let cardsHtml = `
-          <p>✨ ไฮมิยะค้นพบตัวเลือกเพลงสำหรับ <strong>"${escapeHtml(songQuery)}"</strong> แล้วค่ะ!</p>
+      if (trackList.length > 0) {
+        let cardsHtml = isDiscoverNew ? `
+          <p>✨ ไฮมิยะรวบรวม <strong>"เพลงใหม่ล่าสุด & เพลงฮิตติดชาร์ต"</strong> ประจำสัปดาห์มาให้เลือกเพิ่มลงคลังแล้วค่ะ!</p>
+          <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 4px;">คลิก <strong>▶️ ลองฟังตัวอย่าง</strong> เพื่อฟังเสียงได้ทันที หรือกดปุ่ม <strong>"➕ ยืนยันเพิ่มเพลงนี้ลงคลัง"</strong> เพลงที่เลือกจะถูกบันทึกและซิงค์ให้ทุกคนในแอปทันทีค่ะ 🌸🎵:</p>
+        ` : `
+          <p>✨ ไฮมิยะค้นพบตัวเลือกเพลงสำหรับ <strong>"${escapeHtml(specificTitle)}"</strong> แล้วค่ะ!</p>
           <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 4px;">คลิก <strong>▶️ ลองฟังตัวอย่าง</strong> เพื่อฟังเสียงได้ทันที หรือกดปุ่ม <strong>"➕ ยืนยันเพิ่มเพลงนี้ลงคลัง"</strong> เพลงจะถูกบันทึกและซิงค์ให้ทุกคนในแอปทันทีค่ะ 🌸🎵:</p>
         `;
 
-        data.results.forEach((track, idx) => {
-          const highResCover = (track.artworkUrl100 || '').replace('100x100bb', '600x600bb') || 'splash-cover.jpg';
-          const title = track.trackName || songQuery;
+        trackList.forEach((track, idx) => {
+          const highResCover = (track.artworkUrl100 || '').replace('100x100bb', '600x600bb').replace('170x170', '600x600') || 'splash-cover.jpg';
+          const title = track.trackName || queryHeader;
           const artist = track.artistName || 'Unknown Artist';
           const previewUrl = track.previewUrl || '';
           const genre = track.primaryGenreName || 'Pop / Beat';
@@ -5382,7 +5418,7 @@ async function sendGeminiMessage() {
             previewUrl: previewUrl,
             spotifyUrl: track.trackViewUrl || `https://open.spotify.com/search/${encodeURIComponent(title + ' ' + artist)}`,
             mood: 'chill',
-            tags: ["เพลงเพิ่มจากAI", "HaimiyaAI", genre, "ฮิตTikTok"],
+            tags: ["เพลงเพิ่มจากAI", "HaimiyaAI", genre, "ฮิตTikTok", "เพลงใหม่"],
             bpm: "ปานกลาง (110 BPM)",
             lang: "th",
             animeId: matchedAnime.id || 1,
@@ -5424,12 +5460,12 @@ async function sendGeminiMessage() {
 
         appendAiResponse(cardsHtml);
       } else {
-        renderFallbackAddSongCard(songQuery);
+        renderFallbackAddSongCard(specificTitle || 'เพลงใหม่ยอดนิยม');
       }
     } catch (err) {
-      console.warn('iTunes API error, using fallback:', err);
+      console.warn('Song search API error, using fallback:', err);
       if (typingIndicator) typingIndicator.classList.add('hidden');
-      renderFallbackAddSongCard(songQuery);
+      renderFallbackAddSongCard(specificTitle || 'เพลงใหม่ยอดนิยม');
     }
     return;
   }
