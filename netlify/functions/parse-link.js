@@ -115,6 +115,23 @@ function detectLang(title, artist) {
   if (/[\u0E00-\u0E7F]/.test(text)) return 'th';
   if (/[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff]/.test(text)) return 'jp';
   if (/[\uac00-\ud7af]/.test(text)) return 'kr';
+  const thaiArtists = [
+    'three man down', 'tilly birds', 'jeff satur', 'nont tanont', 'dept',
+    'bowkylion', '4eve', 'proxie', 'billkin', 'pp krit', 'safeplanet',
+    'tattoo colour', 'polycat', 'purpeech', 'anatomy rabbit', 'fellow fellow',
+    'urboytj', 'youngohm', 'milli', 'violette wautier', 'the toys', 'stamp',
+    'f.hero', 'slot machine', 'bodyslam', 'cocktail', 'scrubb', 'paradox',
+    'palmy', 'num kala', 'getsunova', 'clash', 'labanoon', 'lomosonic',
+    'mean', 'zweed n roll', 'whal & dolph', 'guygeegee', 'gavin d',
+    'maiyarap', 'twopee', 'thaitanium', 'threemandown', 'tillybirds',
+    'jeffsatur', 'earth patravee', 'folk9', 'mild', 'bedroom audio',
+    'da endorphine', 'wonderframe', 'mirrr', 'ice paris', 'nunew',
+    'bright vachirawit', 'win metawin', 'nanon', 'mew suppasit', 'max jenmana',
+    'gmmtv', 'rs music'
+  ];
+  const artLower = (artist || '').toLowerCase();
+  const titleLower = (title || '').toLowerCase();
+  if (thaiArtists.some(ta => artLower.includes(ta) || titleLower.includes(ta))) return 'th';
   return 'en';
 }
 
