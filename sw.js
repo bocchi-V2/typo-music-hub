@@ -1,4 +1,4 @@
-const CACHE_NAME = 'haimiya-typo-v52-discover-new-songs';
+const CACHE_NAME = 'haimiya-typo-v53-live-link-underline-ui';
 const AUDIO_CACHE_NAME = 'haimiya-audio-vault';
 
 // ไฟล์ที่ต้องแคชเพื่อให้แอพทำงานแบบ offline ได้ 100%

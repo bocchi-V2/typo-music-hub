@@ -17,6 +17,9 @@ jobs:
     steps:
       - name: 📥 ดึงโค้ดโปรเจกต์
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: ⚙️ ติดตั้ง Node.js
         uses: actions/setup-node@v4
@@ -28,10 +31,12 @@ jobs:
 
       - name: 💾 บันทึกและ Push เพลงใหม่กลับเข้าคลัง
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action Bot"
-          git add data.js .daily_sync.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "chore(auto): Daily auto-drop new songs & anime [skip ci]" && git push)
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data.js .daily_sync.json version.json
+          git diff --staged --quiet || (git commit -m "chore(auto): Daily auto-drop new songs & anime [skip ci]" && git push origin HEAD:master)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 🚀 Deploy ขึ้น Netlify Production ทันที
         continue-on-error: true

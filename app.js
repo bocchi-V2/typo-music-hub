@@ -5320,8 +5320,158 @@ async function sendGeminiMessage() {
   const trimmed = rawText.trim();
   const lower = trimmed.toLowerCase();
 
+  // Helper for detecting song language accurately
+  function detectSongLang(title, artist) {
+    const text = (title || '') + ' ' + (artist || '');
+    if (/[\u0E00-\u0E7F]/.test(text)) return 'th';
+    if (/[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff]/.test(text)) return 'jp';
+    if (/[\uac00-\ud7af]/.test(text)) return 'kr';
+    const thaiArtists = [
+      'three man down', 'tilly birds', 'jeff satur', 'nont tanont', 'dept', 
+      'bowkylion', '4eve', 'proxie', 'bus', 'atlas', 'perses', 'pixxie', 
+      'billkin', 'pp krit', 'safeplanet', 'tattoo colour', 'polycat', 
+      'purpeech', 'anatomy rabbit', 'fellow fellow', 'urboytj', 'youngohm', 
+      'milli', 'violette wautier', 'the toys', 'stamp', 'f.hero', 'slot machine',
+      'bodyslam', 'cocktail', 'scrubb', 'paradox', 'lula', 'season five', 'ink waruntorn'
+    ];
+    const artLower = (artist || '').toLowerCase();
+    if (thaiArtists.some(ta => artLower.includes(ta))) return 'th';
+    return 'en';
+  }
+
+  // Intent 0: Direct URL Parsing (YouTube, Spotify, Apple Music, etc.)
+  const urlRegex = /https?:\/\/[^\s]+/i;
+  const urlMatch = trimmed.match(urlRegex);
+
+  if (urlMatch) {
+    const targetUrl = urlMatch[0];
+    try {
+      let parsedSong = null;
+      // 1. Try server endpoint /api/ai/parse-link
+      try {
+        const parseRes = await fetch(getAiApiBase() + '/api/ai/parse-link', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ url: targetUrl })
+        });
+        if (parseRes.ok) {
+          const parseData = await parseRes.json();
+          if (parseData.ok && parseData.song) {
+            parsedSong = parseData.song;
+          }
+        }
+      } catch (errServer) {
+        console.warn('Server parse-link unavailable, attempting client fallback:', errServer);
+      }
+
+      // 2. Client-side fallback if server unreachable
+      if (!parsedSong) {
+        if (targetUrl.includes('youtube.com') || targetUrl.includes('youtu.be')) {
+          try {
+            const oRes = await fetch(`https://www.youtube.com/oembed?url=${encodeURIComponent(targetUrl)}&format=json`);
+            if (oRes.ok) {
+              const oData = await oRes.json();
+              const ytTitle = (oData.title || '').replace(/\[.*?\]|\(.*?\)/g, '').trim();
+              const itRes = await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(ytTitle)}&entity=song&limit=1`);
+              const itData = await itRes.json();
+              const track = itData?.results?.[0];
+              parsedSong = {
+                title: track?.trackName || ytTitle || 'YouTube Song',
+                artist: track?.artistName || oData.author_name || 'YouTube Artist',
+                coverUrl: track?.artworkUrl100 ? track.artworkUrl100.replace('100x100bb', '600x600bb') : (oData.thumbnail_url || 'splash-cover.jpg'),
+                previewUrl: track?.previewUrl || '',
+                spotifyUrl: track?.trackViewUrl || `https://open.spotify.com/search/${encodeURIComponent(ytTitle)}`,
+                youtubeUrl: targetUrl,
+                mood: 'chill',
+                bpm: 'ปานกลาง (110 BPM)',
+                lang: detectSongLang(track?.trackName || ytTitle, track?.artistName || oData.author_name),
+                tags: ["ดึงจากลิงก์จริง", "YouTube", "ไทโป"]
+              };
+            }
+          } catch (eYt) {}
+        }
+      }
+
+      if (typingIndicator) typingIndicator.classList.add('hidden');
+
+      if (parsedSong) {
+        const matchedAnime = (typeof ANIMES !== 'undefined' && ANIMES.length) 
+          ? ANIMES[Math.floor(Math.random() * ANIMES.length)] 
+          : { name: 'Jujutsu Kaisen', mood: 'Hype' };
+
+        const songPayload = {
+          title: parsedSong.title,
+          artist: parsedSong.artist,
+          coverUrl: parsedSong.coverUrl || 'splash-cover.jpg',
+          previewUrl: parsedSong.previewUrl || '',
+          spotifyUrl: parsedSong.spotifyUrl || `https://open.spotify.com/search/${encodeURIComponent(parsedSong.title + ' ' + parsedSong.artist)}`,
+          youtubeUrl: targetUrl,
+          mood: parsedSong.mood || 'chill',
+          tags: parsedSong.tags || ["ดึงจากลิงก์จริง", "ไทโป"],
+          bpm: parsedSong.bpm || "ปานกลาง (100 BPM)",
+          lang: parsedSong.lang || detectSongLang(parsedSong.title, parsedSong.artist),
+          animeId: matchedAnime.id || 1,
+          reason: `เพลง "${parsedSong.title}" ดึงข้อมูลสดจากลิงก์จริง จังหวะลงตัวตัดต่อคู่กับ ${matchedAnime.name}`,
+          typoIdea: `แอนิเมชันตัวอักษรไทโปตามท่อนร้องของเพลง "${parsedSong.title}" คมชัดตามจังหวะบีท`
+        };
+
+        const cardId = `ai-link-card-${Date.now()}`;
+        window['__ai_song_' + cardId] = songPayload;
+
+        const langBadge = songPayload.lang === 'th' ? '🇹🇭 เพลงไทย' : (songPayload.lang === 'jp' ? '🇯🇵 J-Pop' : (songPayload.lang === 'kr' ? '🇰🇷 K-Pop' : '🇬🇧 สากล'));
+
+        const html = `
+          <div style="margin-bottom: 8px;">
+            <p>✨ <strong>เปิดลิงก์และดึงข้อมูลเพลงสดสำเร็จแล้วค่ะ!</strong> 🌐</p>
+            <p style="font-size: 0.85rem; color: #94a3b8;">ดึงข้อมูลชื่อเพลง ศิลปิน ปก HD และเสียงตัวอย่างจากลิงก์ที่คุณส่งมาเรียบร้อยแล้วค่ะ:</p>
+          </div>
+          <div class="gemini-song-card" id="${cardId}">
+            <div class="gsc-top">
+              <div class="gsc-cover-wrap">
+                <img src="${escapeHtml(songPayload.coverUrl)}" alt="${escapeHtml(songPayload.title)}" class="gsc-cover" onerror="this.src='splash-cover.jpg';" />
+              </div>
+              <div class="gsc-info">
+                <div class="gsc-title" title="${escapeHtml(songPayload.title)}">${escapeHtml(songPayload.title)}</div>
+                <div class="gsc-artist">${escapeHtml(songPayload.artist)}</div>
+                <div class="gsc-badges">
+                  <span class="gsc-badge">${langBadge}</span>
+                  <span class="gsc-badge">🌐 ลิงก์จริง</span>
+                  <span class="gsc-badge">⚡ บีทไทโป</span>
+                </div>
+              </div>
+            </div>
+            <div class="gsc-anime-match">
+              🌸 <strong>จับคู่ตัดต่อแนะนำ:</strong> ${escapeHtml(matchedAnime.name)} • ${escapeHtml(songPayload.reason)}
+            </div>
+            <div class="gsc-actions">
+              ${songPayload.previewUrl ? `<button class="btn-ai-play" onclick="toggleAiSongPreview('${escapeHtml(songPayload.previewUrl)}', this)">▶️ ลองฟังตัวอย่างเสียง</button>` : ''}
+              <button class="btn-ai-confirm-add" id="btn-add-${cardId}" onclick="confirmAddSongViaAi('${cardId}', this)">
+                ➕ ยืนยันเพิ่มเพลงนี้ลงคลังทันที (แชร์ให้ทุกคน)
+              </button>
+            </div>
+          </div>
+        `;
+        appendAiResponse(html);
+        return;
+      } else {
+        appendAiResponse(`
+          <p>⚠️ ไฮมิยะพยายามเปิดลิงก์ <code>${escapeHtml(targetUrl)}</code> แล้ว แต่ไม่พบข้อมูลเพลงที่เปิดสาธารณะได้ค่ะ</p>
+          <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 4px;">ลองส่งชื่อเพลงและศิลปิน เช่น <code>เพิ่มเพลง ถ้าเราเจอกันอีก Tilly Birds</code> หรือลองส่งลิงก์ YouTube เพลงอื่นได้เลยนะคะ 🌸🎵</p>
+        `);
+        return;
+      }
+    } catch (urlErr) {
+      console.warn('URL parse error:', urlErr);
+      if (typingIndicator) typingIndicator.classList.add('hidden');
+      appendAiResponse(`
+        <p>⚠️ เกิดข้อผิดพลาดในการเปิดลิงก์เพลงค่ะ ลองพิมพ์ชื่อเพลงและศิลปินโดยตรงได้เลยนะคะ เช่น <code>เพิ่มเพลง กุ๊กกู๋</code> ✨</p>
+      `);
+      return;
+    }
+  }
+
   // Intent A: Natural song addition or discover new songs request
-  // (e.g. "เพิ่มเพลงใหม่", "ขอเพลงใหม่ๆ", "เพิ่มเพลง APT", "ช่วยลงเพลง Die With A Smile", "อยากได้เพลงใหม่")
+  // (e.g. "เพิ่มเพลงใหม่", "ขอเพลงไทย", "เพิ่มเพลงไทย", "เพิ่มเพลง APT", "ช่วยลงเพลง Die With A Smile")
   const addSongPattern = /(เพิ่มเพลง|ลงเพลง|แอดเพลง|ขอเพิ่มเพลง|ขอเพลง|อยากให้เพิ่ม|อยากได้เพลง|เอาเพลง|add\s*song|\/add|เพลงใหม่)/i;
   const isAddSong = addSongPattern.test(trimmed);
 
@@ -5329,6 +5479,8 @@ async function sendGeminiMessage() {
   const isBugReport = /^(แจ้งบั๊ก|แจ้งปัญหา|\/bug)[:\s]/i.test(trimmed) || (trimmed === 'แจ้งบั๊ก' || trimmed === 'แจ้งปัญหา');
 
   if (isAddSong) {
+    const wantsThai = /(เพลงไทย|ภาษาไทย|ขอเพลงไทย|t-pop|tpop|\bth\b|ไทย)/i.test(trimmed);
+
     let cleaned = trimmed
       .replace(/^(ช่วย|อยากให้|ขอ|ช่วยกัน|ลอง|รบกวน|พี่|ไฮมิยะ|อยากได้)\s*/gi, '')
       .replace(/(เพิ่มเพลง|ลงเพลง|แอดเพลง|ขอเพิ่มเพลง|ขอเพลง|อยากให้เพิ่ม|อยากได้เพลง|เอาเพลง|add\s*song|\/add)/gi, '')
@@ -5339,23 +5491,23 @@ async function sendGeminiMessage() {
 
     // ตรวจสอบว่าผู้ใช้ระบุชื่อเพลงเจาะจง หรือเป็นการสั่งขอเพลงใหม่/เพลงฮิตประจำสัปดาห์
     let specificTitle = cleaned
-      .replace(/(เพลงใหม่ล่าสุด|เพลงมาใหม่|เพลงใหม่ๆ|เพลงใหม่|ใหม่ล่าสุด|มาใหม่|ใหม่ๆ|ใหม่|ล่าสุด|ฮิตๆ|ฮิต|ติดชาร์ต)/gi, '')
+      .replace(/(เพลงใหม่ล่าสุด|เพลงมาใหม่|เพลงใหม่ๆ|เพลงใหม่|ใหม่ล่าสุด|มาใหม่|ใหม่ๆ|ใหม่|ล่าสุด|ฮิตๆ|ฮิต|ติดชาร์ต|เพลงไทย|ภาษาไทย|ไทย)/gi, '')
       .trim();
 
-    const isDiscoverNew = !specificTitle || /^(ใหม่|ใหม่ๆ|ใหม่ล่าสุด|มาใหม่|ฮิตใหม่|ฮิตๆ|ล่าสุด|ฮิต|ติดชาร์ต|new|trending|latest)$/i.test(cleaned);
+    const isDiscoverNew = !specificTitle || /^(ใหม่|ใหม่ๆ|ใหม่ล่าสุด|มาใหม่|ฮิตใหม่|ฮิตๆ|ล่าสุด|ฮิต|ติดชาร์ต|new|trending|latest|ไทย|เพลงไทย)$/i.test(cleaned);
 
     let trackList = [];
     let queryHeader = '';
 
     try {
       if (isDiscoverNew) {
-        queryHeader = 'เพลงใหม่ล่าสุด & เพลงฮิตติดชาร์ต';
+        queryHeader = wantsThai ? 'เพลงไทยฮิตใหม่ล่าสุด & ติดชาร์ต T-Pop' : 'เพลงใหม่ล่าสุด & เพลงฮิตติดชาร์ต';
         try {
-          const rssRes = await fetch('https://itunes.apple.com/th/rss/topsongs/limit=8/json');
+          const rssRes = await fetch('https://itunes.apple.com/th/rss/topsongs/limit=35/json');
           if (rssRes.ok) {
             const rssData = await rssRes.json();
             const entries = rssData.feed?.entry || [];
-            trackList = entries.map(e => ({
+            let mapped = entries.map(e => ({
               trackName: e['im:name']?.label,
               artistName: e['im:artist']?.label,
               artworkUrl100: e['im:image']?.[2]?.label || e['im:image']?.[1]?.label || '',
@@ -5364,26 +5516,47 @@ async function sendGeminiMessage() {
               releaseDate: e['im:releaseDate']?.label || '2026',
               trackViewUrl: e.link?.[0]?.attributes?.href || ''
             }));
+
+            // ถ้าผู้ใช้สั่ง "เพลงไทย" หรือ "เพิ่มเพลงไทย" -> กรองเฉพาะเพลงไทยแท้ๆ 100% ไม่เอาเพลง EN มาปน!
+            if (wantsThai) {
+              mapped = mapped.filter(t => detectSongLang(t.trackName, t.artistName) === 'th');
+            }
+
+            trackList = mapped.slice(0, 8);
           }
         } catch (rssErr) {
           console.warn('iTunes RSS error, fallback to search:', rssErr);
         }
 
         if (!trackList.length) {
-          const fallbackSearchUrl = `https://itunes.apple.com/search?term=LISA+APT+trending+hits+2026&entity=song&limit=6`;
-          const fbRes = await fetch(fallbackSearchUrl);
+          const fallbackTerm = wantsThai 
+            ? 'Three Man Down Tilly Birds Jeff Satur NONT TANONT' 
+            : 'trending hits 2026';
+          const fbRes = await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(fallbackTerm)}&country=th&entity=song&limit=6`);
           const fbData = await fbRes.json();
           if (fbData && fbData.results && fbData.results.length > 0) {
-            trackList = fbData.results;
+            let resList = fbData.results;
+            if (wantsThai) {
+              resList = resList.filter(t => detectSongLang(t.trackName, t.artistName) === 'th');
+            }
+            trackList = resList;
           }
         }
       } else {
         queryHeader = specificTitle;
-        const itunesUrl = `https://itunes.apple.com/search?term=${encodeURIComponent(specificTitle)}&entity=song&limit=4`;
+        const country = wantsThai ? 'th' : 'us';
+        const itunesUrl = `https://itunes.apple.com/search?term=${encodeURIComponent(specificTitle)}&country=${country}&entity=song&limit=6`;
         const res = await fetch(itunesUrl);
         const data = await res.json();
         if (data && data.results && data.results.length > 0) {
-          trackList = data.results;
+          let resList = data.results;
+          if (wantsThai) {
+            // Strict filter if user explicitly asked for Thai song
+            const thaiOnly = resList.filter(t => detectSongLang(t.trackName, t.artistName) === 'th');
+            trackList = thaiOnly.length > 0 ? thaiOnly : resList;
+          } else {
+            trackList = resList;
+          }
         }
       }
 
@@ -5391,7 +5564,7 @@ async function sendGeminiMessage() {
 
       if (trackList.length > 0) {
         let cardsHtml = isDiscoverNew ? `
-          <p>✨ ไฮมิยะรวบรวม <strong>"เพลงใหม่ล่าสุด & เพลงฮิตติดชาร์ต"</strong> ประจำสัปดาห์มาให้เลือกเพิ่มลงคลังแล้วค่ะ!</p>
+          <p>✨ ไฮมิยะรวบรวม <strong>"${escapeHtml(queryHeader)}"</strong> มาให้เลือกเพิ่มลงคลังแล้วค่ะ!</p>
           <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 4px;">คลิก <strong>▶️ ลองฟังตัวอย่าง</strong> เพื่อฟังเสียงได้ทันที หรือกดปุ่ม <strong>"➕ ยืนยันเพิ่มเพลงนี้ลงคลัง"</strong> เพลงที่เลือกจะถูกบันทึกและซิงค์ให้ทุกคนในแอปทันทีค่ะ 🌸🎵:</p>
         ` : `
           <p>✨ ไฮมิยะค้นพบตัวเลือกเพลงสำหรับ <strong>"${escapeHtml(specificTitle)}"</strong> แล้วค่ะ!</p>
@@ -5405,6 +5578,7 @@ async function sendGeminiMessage() {
           const previewUrl = track.previewUrl || '';
           const genre = track.primaryGenreName || 'Pop / Beat';
           const year = track.releaseDate ? track.releaseDate.substring(0, 4) : '2026';
+          const songLang = wantsThai ? 'th' : detectSongLang(title, artist);
 
           // Match with an anime
           const matchedAnime = (typeof ANIMES !== 'undefined' && ANIMES.length) 
@@ -5418,9 +5592,9 @@ async function sendGeminiMessage() {
             previewUrl: previewUrl,
             spotifyUrl: track.trackViewUrl || `https://open.spotify.com/search/${encodeURIComponent(title + ' ' + artist)}`,
             mood: 'chill',
-            tags: ["เพลงเพิ่มจากAI", "HaimiyaAI", genre, "ฮิตTikTok", "เพลงใหม่"],
+            tags: ["เพลงเพิ่มจากAI", "HaimiyaAI", genre, songLang === 'th' ? 'เพลงไทย' : 'เพลงฮิต', "เพลงใหม่"],
             bpm: "ปานกลาง (110 BPM)",
-            lang: "th",
+            lang: songLang,
             animeId: matchedAnime.id || 1,
             reason: `เพลงฮิต "${title}" จังหวะบีทกระชับ มีมิติอารมณ์ตัดคลิปคู่กับ ${matchedAnime.name} ได้ลงตัวสุดๆ`,
             typoIdea: `แอนิเมชันตัวอักษรแบบ Kinetic ตามท่อนร้องฮุก สลับตัดคัทกระชับตามจังหวะบีท`
@@ -5428,6 +5602,8 @@ async function sendGeminiMessage() {
 
           const cardId = `ai-song-card-${Date.now()}-${idx}`;
           window['__ai_song_' + cardId] = songPayload;
+
+          const langBadge = songLang === 'th' ? '🇹🇭 เพลงไทย' : (songLang === 'jp' ? '🇯🇵 J-Pop' : (songLang === 'kr' ? '🇰🇷 K-Pop' : '🇬🇧 สากล'));
 
           cardsHtml += `
             <div class="gemini-song-card" id="${cardId}">
@@ -5439,9 +5615,9 @@ async function sendGeminiMessage() {
                   <div class="gsc-title" title="${escapeHtml(title)}">${escapeHtml(title)}</div>
                   <div class="gsc-artist">${escapeHtml(artist)}</div>
                   <div class="gsc-badges">
+                    <span class="gsc-badge">${langBadge}</span>
                     <span class="gsc-badge">${escapeHtml(genre)}</span>
                     <span class="gsc-badge">${escapeHtml(year)}</span>
-                    <span class="gsc-badge">⚡ บีทไทโป</span>
                   </div>
                 </div>
               </div>
@@ -5460,12 +5636,12 @@ async function sendGeminiMessage() {
 
         appendAiResponse(cardsHtml);
       } else {
-        renderFallbackAddSongCard(specificTitle || 'เพลงใหม่ยอดนิยม');
+        renderFallbackAddSongCard(specificTitle || (wantsThai ? 'เพลงไทยยอดนิยม' : 'เพลงใหม่ยอดนิยม'));
       }
     } catch (err) {
       console.warn('Song search API error, using fallback:', err);
       if (typingIndicator) typingIndicator.classList.add('hidden');
-      renderFallbackAddSongCard(specificTitle || 'เพลงใหม่ยอดนิยม');
+      renderFallbackAddSongCard(specificTitle || (wantsThai ? 'เพลงไทยยอดนิยม' : 'เพลงใหม่ยอดนิยม'));
     }
     return;
   }
@@ -5688,44 +5864,16 @@ function appendAiResponse(htmlContent, rawTextToSave) {
 }
 
 function renderFallbackAddSongCard(query) {
-  const cardId = `ai-fallback-${Date.now()}`;
-  const songPayload = {
-    title: query,
-    artist: 'Various Artists',
-    coverUrl: 'splash-cover.jpg',
-    previewUrl: '',
-    spotifyUrl: `https://open.spotify.com/search/${encodeURIComponent(query)}`,
-    mood: 'chill',
-    tags: ["เพลงเพิ่มจากAI", "HaimiyaAI", "เพลงฮิต"],
-    bpm: "ปานกลาง (115 BPM)",
-    lang: "th",
-    animeId: 1,
-    reason: `เพลง "${query}" สำหรับตัดต่อคลิปไทโป เพิ่มเข้าคลังผ่านระบบ Haimiya AI Studio`,
-    typoIdea: `สไตล์ฟอนต์คลีน เรียบหรู ตัดต่อตามท่อนฮุก`
-  };
-  window['__ai_song_' + cardId] = songPayload;
-
   const html = `
-    <p>ค้นหาแบบเรียลไทม์ไม่พบเพลงตรงเป๊ะ แต่คุณสามารถกด <strong>ยืนยันเพิ่มเพลงนี้เข้าคลังกลาง</strong> ได้ทันทีค่ะ:</p>
-    <div class="gemini-song-card" id="${cardId}">
-      <div class="gsc-top">
-        <div class="gsc-cover-wrap">
-          <img src="splash-cover.jpg" alt="${escapeHtml(query)}" class="gsc-cover" />
-        </div>
-        <div class="gsc-info">
-          <div class="gsc-title">${escapeHtml(query)}</div>
-          <div class="gsc-artist">เพลงยอดนิยม (เพิ่มโดยผู้ใช้ผ่าน AI)</div>
-          <div class="gsc-badges">
-            <span class="gsc-badge">⚡ เพลงใหม่</span>
-            <span class="gsc-badge">ไทโป</span>
-          </div>
-        </div>
+    <div style="background: rgba(239, 68, 68, 0.08); border: 1.5px solid rgba(239, 68, 68, 0.25); border-radius: 14px; padding: 1rem; margin-top: 0.5rem;">
+      <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+        <span style="font-size: 1.3rem;">🔍</span>
+        <strong style="color: #fca5a5; font-size: 1rem;">ไม่พบเพลงที่ตรงเป๊ะสำหรับ "${escapeHtml(query)}" บนชาร์ตแบบเรียลไทม์</strong>
       </div>
-      <div class="gsc-actions">
-        <button class="btn-ai-confirm-add" id="btn-add-${cardId}" onclick="confirmAddSongViaAi('${cardId}', this)">
-          ➕ ยืนยันเพิ่มเพลงนี้ลงคลังทันที (แชร์ให้ทุกคน)
-        </button>
-      </div>
+      <p style="margin: 0; color: #cbd5e1; font-size: 0.88rem; line-height: 1.6;">
+        💡 <strong>ดึงเพลงจากลิงก์จริงได้ทันที:</strong><br>
+        คุณสามารถ <strong>คัดลอกลิงก์เพลงจาก YouTube หรือ Spotify</strong> (เช่น <code>https://youtu.be/...</code> หรือ <code>https://open.spotify.com/...</code>) แล้ววางส่งในแชทนี้ได้เลยนะคะ! ไฮมิยะจะเปิดลิงก์และดึงชื่อเพลง ศิลปิน ปก HD 600x600 และเสียงตัวอย่างจริงมาให้เพิ่มลงคลังทันทีค่ะ 🌸🎵
+      </p>
     </div>
   `;
   appendAiResponse(html);
