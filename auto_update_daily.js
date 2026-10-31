@@ -96,11 +96,23 @@ async function fetchTrendingAnimeCandidates() {
 
 // ตรวจจับภาษาของเพลง
 function detectLanguage(title, artist, country) {
-  const text = title + ' ' + artist;
+  const text = (title || '') + ' ' + (artist || '');
   if (/[\u0E00-\u0E7F]/.test(text)) return 'th';
   if (/[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff]/.test(text)) return 'jp';
+  if (/[\uac00-\ud7af]/.test(text)) return 'kr';
+
+  const thaiArtists = [
+    'three man down', 'tilly birds', 'jeff satur', 'nont tanont', 'dept', 
+    'bowkylion', '4eve', 'proxie', 'bus', 'atlas', 'perses', 'pixxie', 
+    'billkin', 'pp krit', 'safeplanet', 'tattoo colour', 'polycat', 
+    'purpeech', 'anatomy rabbit', 'fellow fellow', 'urboytj', 'youngohm', 
+    'milli', 'violette wautier', 'the toys', 'stamp', 'f.hero', 'slot machine',
+    'bodyslam', 'cocktail', 'scrubb', 'paradox', 'lula', 'season five', 'ink waruntorn'
+  ];
+  const artLower = (artist || '').toLowerCase();
+  if (thaiArtists.some(ta => artLower.includes(ta))) return 'th';
+
   if (country === 'jp') return 'jp';
-  if (country === 'th') return 'th';
   return 'en';
 }
 

@@ -320,6 +320,37 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  // AI Endpoint: ดึงข้อมูลสดจากลิงก์จริง (YouTube, Spotify, Apple Music)
+  if ((req.method === 'POST' || req.method === 'GET') && req.url.startsWith('/api/ai/parse-link')) {
+    const parseLinkHandler = require('./netlify/functions/parse-link').handler;
+    const urlObj = new URL(req.url, 'http://localhost:4173');
+    const queryUrl = urlObj.searchParams.get('url') || '';
+    
+    const chunks = [];
+    req.on('data', c => chunks.push(c));
+    req.on('end', async () => {
+      let bodyUrl = '';
+      try {
+        const parsedBody = JSON.parse(Buffer.concat(chunks).toString('utf8') || '{}');
+        bodyUrl = parsedBody.url || '';
+      } catch (e) {}
+
+      const event = {
+        httpMethod: req.method,
+        queryStringParameters: { url: queryUrl || bodyUrl },
+        body: JSON.stringify({ url: bodyUrl || queryUrl })
+      };
+
+      const result = await parseLinkHandler(event, {});
+      res.writeHead(result.statusCode, {
+        ...(result.headers || {}),
+        'Access-Control-Allow-Origin': '*'
+      });
+      res.end(result.body);
+    });
+    return;
+  }
+
   // 5. Static Files Serving
   let reqPath = req.url.split('?')[0];
   if (reqPath === '/' || reqPath === '\\') reqPath = '/index.html';

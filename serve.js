@@ -300,6 +300,37 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  // AI Endpoint: ดึงข้อมูลสดจากลิงก์จริง (YouTube, Spotify, Apple Music)
+  if ((req.method === 'POST' || req.method === 'GET') && req.url.startsWith('/api/ai/parse-link')) {
+    const parseLinkHandler = require('./netlify/functions/parse-link').handler;
+    const urlObj = new URL(req.url, 'http://localhost:4173');
+    const queryUrl = urlObj.searchParams.get('url') || '';
+    
+    const chunks = [];
+    req.on('data', c => chunks.push(c));
+    req.on('end', async () => {
+      let bodyUrl = '';
+      try {
+        const parsedBody = JSON.parse(Buffer.concat(chunks).toString('utf8') || '{}');
+        bodyUrl = parsedBody.url || '';
+      } catch (e) {}
+
+      const event = {
+        httpMethod: req.method,
+        queryStringParameters: { url: queryUrl || bodyUrl },
+        body: JSON.stringify({ url: bodyUrl || queryUrl })
+      };
+
+      const result = await parseLinkHandler(event, {});
+      res.writeHead(result.statusCode, {
+        ...(result.headers || {}),
+        'Access-Control-Allow-Origin': '*'
+      });
+      res.end(result.body);
+    });
+    return;
+  }
+
   let safePath = path.normalize(decodeURIComponent(req.url.split('?')[0])).replace(/^(\.\.[\/\\])+/, '');
   if (safePath === '/' || safePath === '\\') safePath = '/index.html';
   const filePath = path.join(__dirname, safePath);
@@ -319,6 +350,39 @@ const server = http.createServer((req, res) => {
 server.listen(4173, () => {
   console.log('Server running on http://localhost:4173');
 });
+
+// ============================================================
+// AUTOMATIC DAILY UPDATE SCHEDULER
+// ตรวจสอบและอัปเดตเพลงและอนิเมะฮิตสดใหม่ทุกวันโดยอัตโนมัติ (Live Daily Drop)
+// ============================================================
+function checkAndRunDailySync() {
+  const syncFile = path.join(__dirname, '.daily_sync.json');
+  let syncState = {};
+  if (fs.existsSync(syncFile)) {
+    try { syncState = JSON.parse(fs.readFileSync(syncFile, 'utf8')); } catch (e) {}
+  }
+  const todayDateStr = new Date().toLocaleDateString('th-TH', { timeZone: 'Asia/Bangkok' });
+  const lastSyncDateStr = syncState.lastSyncDateStr || (syncState.history?.[0]?.date ? syncState.history[0].date.split(' ')[0] : '');
+
+  if (lastSyncDateStr !== todayDateStr) {
+    console.log(`🌅 [Daily Auto-Sync] ตรวจพบวันใหม่ (${todayDateStr}) กำลังเริ่มดึงเพลงและอนิเมะฮิตประจำวันอัตโนมัติ...`);
+    const { exec } = require('child_process');
+    exec('node auto_update_daily.js --force', (err, stdout, stderr) => {
+      if (err) {
+        console.error('❌ [Daily Auto-Sync] เกิดข้อผิดพลาด:', err.message);
+      } else {
+        console.log('✅ [Daily Auto-Sync] อัปเดตเพลงประจำวันเรียบร้อยแล้ว:\n' + stdout);
+      }
+    });
+  } else {
+    console.log(`ℹ️ [Daily Auto-Sync] เพลงประจำวัน (${todayDateStr}) ได้รับการอัปเดตเรียบร้อยแล้ว`);
+  }
+}
+
+// ตรวจสอบทันทีตอนสตาร์ทเซิร์ฟเวอร์
+setTimeout(checkAndRunDailySync, 3000);
+// และตรวจสอบซ้ำทุกๆ 30 นาที (เพื่อจับเวลาข้ามเที่ยงคืน)
+setInterval(checkAndRunDailySync, 30 * 60 * 1000);
 
 // Helper: เรียก Free AI Engine (Pollinations) แบบ 100% ฟรีและรองรับภาษาไทย
 function callFreeAiFallback(userMessage, systemInstruction, chatHistory, res) {

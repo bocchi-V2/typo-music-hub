@@ -27,6 +27,11 @@
   to = "/.netlify/functions/set-key"
   status = 200
 
+[[redirects]]
+  from = "/api/ai/parse-link"
+  to = "/.netlify/functions/parse-link"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]

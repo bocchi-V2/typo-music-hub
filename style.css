@@ -343,13 +343,14 @@ body::after {
 .lang-toggle-btn {
   background: none;
   border: none;
+  border-bottom: 2px solid transparent;
   color: var(--text-muted);
   font-family: 'Plus Jakarta Sans', 'Kanit', sans-serif;
   font-size: 0.78rem;
   font-weight: 700;
   cursor: pointer;
   padding: 0.2rem 0.45rem;
-  border-radius: var(--radius-pill);
+  border-radius: 0;
   transition: all 0.2s ease;
   display: flex;
   align-items: center;
@@ -357,11 +358,14 @@ body::after {
 }
 .lang-toggle-btn:hover {
   color: #fff;
+  border-bottom-color: rgba(255, 255, 255, 0.3);
 }
 .lang-toggle-btn.active {
-  background: rgba(255, 255, 255, 0.18);
+  background: transparent;
   color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid var(--primary);
+  border-radius: 0;
+  box-shadow: none;
 }
 .lang-divider {
   color: rgba(255, 255, 255, 0.25);
@@ -748,9 +752,10 @@ header#hero {
   align-items: center;
   gap: 0.9rem;
   padding: 0.9rem 1.2rem;
-  border-radius: var(--radius-sm);
-  background: var(--card-bg);
-  border: 1px solid var(--glass-border);
+  border-radius: 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2.5px solid transparent;
   color: var(--text);
   font-family: 'Kanit', sans-serif;
   cursor: pointer;
@@ -758,14 +763,16 @@ header#hero {
   transition: all 0.2s ease;
 }
 .zone-tab-btn:hover {
-  background: var(--card-hover);
-  border-color: rgba(255, 255, 255, 0.2);
-  transform: translateY(-2px);
+  background: transparent;
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+  transform: none;
 }
 .zone-tab-btn.active {
-  background: #18242e;
-  border-color: var(--primary);
-  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.2);
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid var(--primary);
+  border-radius: 0;
+  box-shadow: none;
 }
 .zone-flag { font-size: 1.5rem; flex-shrink: 0; }
 .zone-tab-info { display: flex; flex-direction: column; }
@@ -798,25 +805,30 @@ header#hero {
   flex-wrap: wrap;
 }
 .pill-btn {
-  padding: 0.35rem 0.85rem;
-  border-radius: var(--radius-pill);
-  border: 1px solid var(--glass-border);
-  background: rgba(255, 255, 255, 0.04);
+  padding: 0.4rem 0.85rem;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: transparent;
   color: var(--text-muted);
   font-family: 'Kanit', sans-serif;
-  font-size: 0.82rem;
+  font-size: 0.85rem;
   cursor: pointer;
   transition: all 0.2s;
 }
 .pill-btn:hover {
   color: #fff;
-  border-color: rgba(255, 255, 255, 0.3);
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+  background: transparent;
 }
 .pill-btn.active {
-  background: rgba(16, 185, 129, 0.15);
-  border-color: var(--primary);
-  color: var(--primary);
-  font-weight: 600;
+  background: transparent;
+  border: none;
+  border-bottom: 2.5px solid var(--primary);
+  border-radius: 0;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: none;
 }
 
 /* Status Strip */
@@ -1173,9 +1185,11 @@ header#hero {
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.35);
 }
 .zone-hub-btn.active {
-  background: rgba(16, 185, 129, 0.15);
-  border-color: var(--primary);
-  box-shadow: 0 0 0 1px var(--primary), 0 8px 24px rgba(16, 185, 129, 0.15);
+  background: transparent;
+  border-color: transparent;
+  border-bottom: 3px solid var(--primary);
+  border-radius: 0;
+  box-shadow: none;
 }
 .zone-hub-btn .hub-icon {
   font-size: 1.8rem;
@@ -1233,24 +1247,33 @@ header#hero {
   color: var(--primary);
 }
 
-.filter-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center; }
+.filter-tags { display: flex; gap: 0.8rem; flex-wrap: wrap; justify-content: center; }
 .tag-btn {
-  padding: 0.35rem 1rem;
-  border-radius: var(--radius-pill);
-  border: 1px solid var(--glass-border);
+  padding: 0.45rem 0.9rem;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid transparent;
   background: transparent;
   color: var(--text-muted);
   font-family: 'Kanit', sans-serif;
-  font-size: 0.82rem;
+  font-size: 0.86rem;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
+  position: relative;
 }
-.tag-btn:hover { color: #fff; border-color: rgba(255, 255, 255, 0.25); }
-.tag-btn.active {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.3);
+.tag-btn:hover {
   color: #fff;
-  font-weight: 600;
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+  background: transparent;
+}
+.tag-btn.active {
+  background: transparent;
+  border: none;
+  border-bottom: 2.5px solid var(--primary);
+  border-radius: 0;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: none;
 }
 
 /* Song Cards Grid */
@@ -2006,22 +2029,30 @@ header#hero {
   margin-bottom: 2rem;
 }
 .match-filter-btn {
-  padding: 0.45rem 1.1rem;
-  border-radius: var(--radius-pill);
-  border: 1px solid var(--glass-border);
-  background: var(--card-bg);
+  padding: 0.45rem 0.9rem;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background: transparent;
   color: var(--text-muted);
   font-family: 'Kanit', sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.86rem;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
 }
-.match-filter-btn:hover { color: #fff; border-color: rgba(255, 255, 255, 0.25); }
-.match-filter-btn.active {
-  background: #1e293b;
-  border-color: var(--primary);
+.match-filter-btn:hover {
   color: #fff;
-  font-weight: 600;
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+  background: transparent;
+}
+.match-filter-btn.active {
+  background: transparent;
+  border: none;
+  border-bottom: 2.5px solid var(--primary);
+  border-radius: 0;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: none;
 }
 
 .anime-match-grid {
@@ -2237,11 +2268,12 @@ header#hero {
 .studio-zone-nav::-webkit-scrollbar { display: none; }
 .studio-zone-tab {
   flex: 1;
-  min-width: 170px;
+  min-width: 160px;
   background: transparent;
-  border: 1px solid transparent;
-  border-radius: var(--radius-pill);
-  padding: 0.65rem 1.1rem;
+  border: none;
+  border-bottom: 3px solid transparent;
+  border-radius: 0;
+  padding: 0.65rem 0.9rem;
   color: var(--text-muted);
   cursor: pointer;
   display: flex;
@@ -2251,14 +2283,17 @@ header#hero {
   text-align: left;
 }
 .studio-zone-tab:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: transparent;
+  border-bottom-color: rgba(255, 255, 255, 0.25);
   color: #fff;
 }
 .studio-zone-tab.active {
-  background: #1e2538;
-  border-color: rgba(255, 255, 255, 0.18);
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid var(--primary);
+  border-radius: 0;
   color: #fff;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  box-shadow: none;
 }
 .studio-zone-tab.active .sz-sub {
   color: var(--primary);
@@ -3117,9 +3152,11 @@ header#hero {
 }
 
 .studio-zone-tab.tab-saved.active {
-  background: linear-gradient(135deg, rgba(255, 51, 102, 0.25), rgba(225, 29, 72, 0.35));
-  border-color: #ff3366;
-  box-shadow: 0 0 20px rgba(255, 51, 102, 0.35);
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 3.5px solid #ff3366 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
 /* Buttons in Player, Modal, and Showcase */
@@ -3459,28 +3496,33 @@ header#hero {
 }
 
 .studio-zone-tab {
-  background: rgba(255, 255, 255, 0.03) !important;
-  border: 1px solid rgba(255, 255, 255, 0.06) !important;
-  border-radius: 18px !important;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 3px solid transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  transform: none !important;
 }
 
 .studio-zone-tab:hover {
-  background: rgba(255, 255, 255, 0.08) !important;
-  border-color: rgba(167, 139, 250, 0.35) !important;
-  transform: translateY(-2px);
+  background: transparent !important;
+  border-bottom-color: rgba(255, 255, 255, 0.25) !important;
+  transform: none !important;
 }
 
 .studio-zone-tab.active {
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.25), rgba(168, 85, 247, 0.2)) !important;
-  border: 1px solid rgba(167, 139, 250, 0.6) !important;
-  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;
-  transform: translateY(-2px);
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 3.5px solid var(--primary) !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  transform: none !important;
 }
 
 .studio-zone-tab.active .sz-icon {
-  transform: scale(1.15);
-  filter: drop-shadow(0 0 12px rgba(167, 139, 250, 0.7));
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 8px var(--primary));
 }
 
 /* ── 5. SONG CARDS & COVER ELEVATION ── */
@@ -5190,20 +5232,26 @@ body.anime-picker-open {
 }
 
 .studio-zone-tab.tab-secret.active {
-  background: linear-gradient(135deg, rgba(234, 179, 8, 0.25), rgba(168, 85, 247, 0.4)) !important;
-  border-color: #facc15 !important;
-  box-shadow: 0 0 25px rgba(234, 179, 8, 0.4) !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 3.5px solid #facc15 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
 .zone-tab-btn.btn-secret-zone {
-  background: linear-gradient(135deg, rgba(30, 27, 75, 0.6), rgba(88, 28, 135, 0.4)) !important;
-  border-color: rgba(234, 179, 8, 0.3) !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 2.5px solid transparent !important;
+  border-radius: 0 !important;
 }
 
 .zone-tab-btn.btn-secret-zone.active {
-  background: linear-gradient(135deg, rgba(234, 179, 8, 0.25), rgba(168, 85, 247, 0.4)) !important;
-  border-color: #facc15 !important;
-  box-shadow: 0 0 20px rgba(234, 179, 8, 0.35) !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 3px solid #facc15 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
 /* ===================================
@@ -6544,5 +6592,33 @@ body.in-secret-mode .nav-link-secret {
   }
 }
 
+/* ========================================================
+   CLEAN EDITORIAL SELECTION THEME:
+   เมื่อกดเลือกอะไร ให้มีเพียงเส้นขีดอยู่ใต้สิ่งที่เลือกเฉยๆ (ไม่มีก้อนกลม/Pill)
+   ======================================================== */
+.studio-zone-tab.active,
+.tag-btn.active,
+.pill-btn.active,
+.match-filter-btn.active,
+.zone-tab-btn.active,
+.zone-hub-btn.active,
+.lang-toggle-btn.active {
+  background: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 2.8px solid var(--primary) !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
 
+.studio-zone-tab.tab-saved.active {
+  border-bottom-color: #ff3366 !important;
+}
 
+.studio-zone-tab.tab-secret.active,
+.zone-tab-btn.btn-secret-zone.active {
+  border-bottom-color: #facc15 !important;
+}
