@@ -5327,17 +5327,41 @@ async function sendGeminiMessage() {
     if (/[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff]/.test(text)) return 'jp';
     if (/[\uac00-\ud7af]/.test(text)) return 'kr';
     const thaiArtists = [
-      'three man down', 'tilly birds', 'jeff satur', 'nont tanont', 'dept', 
-      'bowkylion', '4eve', 'proxie', 'bus', 'atlas', 'perses', 'pixxie', 
-      'billkin', 'pp krit', 'safeplanet', 'tattoo colour', 'polycat', 
-      'purpeech', 'anatomy rabbit', 'fellow fellow', 'urboytj', 'youngohm', 
+      'three man down', 'tilly birds', 'jeff satur', 'nont tanont', 'dept',
+      'bowkylion', '4eve', 'proxie', 'bus because of you', 'atlas', 'perses', 'pixxie',
+      'billkin', 'pp krit', 'safeplanet', 'tattoo colour', 'polycat',
+      'purpeech', 'anatomy rabbit', 'fellow fellow', 'urboytj', 'youngohm',
       'milli', 'violette wautier', 'the toys', 'stamp', 'f.hero', 'slot machine',
-      'bodyslam', 'cocktail', 'scrubb', 'paradox', 'lula', 'season five', 'ink waruntorn'
+      'bodyslam', 'cocktail', 'scrubb', 'paradox', 'lula', 'season five', 'ink waruntorn',
+      'palmy', 'num kala', 'big ass', 'potato', 'getsunova', 'clash', 'labanoon',
+      'silly fools', 'moderndog', 'pause', 'klear', 'lomosonic', 'mean',
+      'zweed n roll', 'whal & dolph', 'fridaynight to sunday', 'plastic plastic',
+      'peck palitchoke', 'palaphol', 'lipta', 'serious bacon', 'yes indeed',
+      'singto numchok', 'bright vachirawit', 'gulf kanawut', 'ohm pawat',
+      'sprite x guygeegee', 'guygeegee', 'numcha', 'gavin d', 'txrbo',
+      'dawjai', 'maiyarap', 'twopee', 'diamond mqt', 'daboyway', 'kanomroo',
+      'cream', 'wanyai', 'timethai', 'jaonaay', 'pure', 'nice2meet u',
+      'telex telexs', 'way thaitanium', 'thaitanium', 'buddha bless',
+      'threemandown', 'tillybirds', 'jeffsatur', 'ponchet', 'beminor',
+      'autta', 'songkran', 'bamm', 'isbanky', 'pearwah', 'nene',
+      'bonnadol', 'saran', 'earth patravee', 'folk9', 'no one else',
+      'pun basher', 'season change', 'warin', 'ab normal', 'instinct',
+      'portrait', 'singular', 'tai orathai', 'bird thongchai', 'tata young',
+      'christina aguilar', 'da endorphine', 'endorphine', 'am fine',
+      'bedroom audio', 'hobbit', 'indigo', 'mild', 'musketeers', 'so cool',
+      'nologo', 'twio', 'tontrakul', 'gena', 'la luna', 'y not 7', 'crescendo',
+      'pae arak', 'kangsadan', 'bow maylada', 'marc tatchapon', 'flukie',
+      'wonderframe', 'mirrr', 'nap a lin', 'ice paris', 'saint', 'zee pruk',
+      'nunew', 'gemini norawit', 'fourth nattawat', 'win metawin', 'nanon',
+      'pp billkin', 'mew suppasit', 'war wanarat', 'max jenmana',
+      'ost rak', 'ost lakorn', 'thai drama', 'gmmtv', 'nadao', 'rs music'
     ];
     const artLower = (artist || '').toLowerCase();
-    if (thaiArtists.some(ta => artLower.includes(ta))) return 'th';
+    const titleLower = (title || '').toLowerCase();
+    if (thaiArtists.some(ta => artLower.includes(ta) || titleLower.includes(ta))) return 'th';
     return 'en';
   }
+
 
   // Intent 0: Direct URL Parsing (YouTube, Spotify, Apple Music, etc.)
   const urlRegex = /https?:\/\/[^\s]+/i;
