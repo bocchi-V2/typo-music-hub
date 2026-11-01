@@ -5565,7 +5565,7 @@ async function parseAndRenderAiSongResponse(aiText, engineUsed, rawUserPrompt) {
   }
 
   const formattedHtml = renderAiMarkdown(cleanText);
-  const pillHtml = `<div class="gemini-engine-pill">✦ ขับเคลื่อนโดย ${escapeHtml(engineUsed)}</div>`;
+  const pillHtml = `<div class="gemini-engine-pill">✦ Haimiya AI</div>`;
 
   if (Array.isArray(recommendedSongs) && recommendedSongs.length > 0) {
     const resolvedSongs = await Promise.all(recommendedSongs.map(async (item) => {
@@ -5643,10 +5643,10 @@ async function sendGeminiMessage() {
       <div style="background: rgba(16, 185, 129, 0.14); border: 1.5px solid rgba(16, 185, 129, 0.4); border-radius: 14px; padding: 1rem; margin-top: 0.5rem;">
         <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
           <span style="font-size: 1.3rem;">✨</span>
-          <strong style="color: #6ee7b7; font-size: 1.05rem;">บันทึกและเปิดใช้งาน Google Gemini API Key สำเร็จแล้วค่ะ!</strong>
+          <strong style="color: #6ee7b7; font-size: 1.05rem;">บันทึกและเปิดใช้งาน Haimiya AI สำเร็จแล้วค่ะ!</strong>
         </div>
         <p style="margin: 0; color: #e2e8f0; font-size: 0.9rem; line-height: 1.6;">
-          ไฮมิยะเชื่อมต่อกับ <strong>Google Gemini 3 Flash</strong> สำเร็จแล้วค่ะ 🎉 พร้อมแนะนำเพลงและคุยตอบคำถามเรื่องตัดต่อคลิปไทโปได้ทันทีค่ะ 🌸
+          ไฮมิยะเชื่อมต่อระบบ <strong>Haimiya AI</strong> สำเร็จแล้วค่ะ 🎉 พร้อมแนะนำเพลงและช่วยตัดต่อคลิปได้ทันทีค่ะ 🌸
         </p>
       </div>
     `);
@@ -5929,7 +5929,7 @@ async function sendGeminiMessage() {
   try {
     const activeApiKey = getGeminiApiKey();
     let aiResponseText = '';
-    let engineUsed = 'Google Gemini 2.5 Flash';
+    let engineUsed = 'Haimiya AI';
 
     // 1. Try calling server endpoint /api/ai/chat (Netlify Serverless Function or Node Server)
     try {
@@ -5947,7 +5947,7 @@ async function sendGeminiMessage() {
         const chatData = await chatRes.json();
         if (chatData.ok && chatData.reply) {
           aiResponseText = chatData.reply;
-          engineUsed = chatData.engine || 'Google Gemini 2.5 Flash';
+          engineUsed = 'Haimiya AI';
         }
       }
     } catch (netErr) {
@@ -5991,55 +5991,38 @@ async function sendGeminiMessage() {
         ? '\n\nเพลงในคลังที่ตรงกับคำค้น "' + rawText.substring(0, 50) + '":\n' + libraryMatches.map(m => '- ' + m.title + ' โดย ' + m.artist + ' [' + m.lang + '] อารมณ์: ' + m.mood).join('\n')
         : '';
 
-      const systemInstructionText = `คุณคือ "ไฮมิยะ" (Haimiya) ผู้ช่วย AI อัจฉริยะตัวจริงเสียงจริงประจำแอป Haimiya Typo (คลังเพลงตัดคลิปไทโป & อนิเมะ & AMV)
-คุณขับเคลื่อนด้วย Google Gemini โมเดล AI ระดับโลก
+      const systemInstructionText = `คุณคือ "ไฮมิยะ" (Haimiya AI) ผู้ช่วย AI อัจฉริยะประจำแอป Haimiya Typo (คลังเพลงตัดคลิปไทโป & อนิเมะ & AMV)
+ห้ามบอกว่าใช้โมเดลอะไรขับเคลื่อน (ห้ามเอ่ยชื่อ Google Gemini, GPT, Claude หรือเทคโนโลยีเบื้องหลังเด็ดขาด) คุณคือ "Haimiya AI" หรือ "ไฮมิยะ AI" เท่านั้น
 
-บุคลิกและสไตล์การตอบ:
-- น่ารัก สดใส สุภาพ และเป็นกันเอง ใช้หางเสียง "ค่ะ/นะคะ" มีอิโมจิน่ารักๆ ประกอบอย่างพอดี ✨🌸🎵
-- เป็น AI จริงที่คิด วิเคราะห์ แนะนำไอเดียอย่างลึกซึ้ง ไม่ตอบตามสคริปต์ ไม่ตอบเป็นหุ่นยนต์
-- เชี่ยวชาญเพลงทุกแนวในโลกแห่งความจริง: เพลงไทย (T-Pop, อินดี้, ป็อป, ร็อค), เพลงสากล (Global Hits, Billboard, TikTok Viral, R&B, Hip-hop), เพลงญี่ปุ่น (Anime OST, J-Pop, Vocaloid), เพลงเกาหลี (K-Pop), เพลงลาว/อีสาน, และแนวบีทหนักๆ (Phonk, Funk, Lo-Fi, EDM)
-- เชี่ยวชาญการตัดต่อคลิปไทโป (Typography / Kinetic Motion / AMV / TikTok / Reels / CapCut / Premiere Pro / After Effects / Alight Motion): การมาร์กจุดดรอปบีท, ทรานซิชันซูม/สไลด์/วาร์ป, Velocity, Kinetic Typography, ฟอนต์, เอฟเฟกต์ Glow, คีย์เฟรม
-- สำคัญมาก: "ตัดคู่คลิป" หรือ "ตัดคู่" ในบริบทนี้ หมายถึง "การตัดต่อคลิปวิดีโอคู่กับอนิเมะหรือตัวละคร" (AMV / Typography / TikTok) เสมอ! ห้ามเข้าใจผิดว่าเป็นการตัดความสัมพันธ์หรือการเลิกราเด็ดขาด!
-- รอบรู้เพลงใหม่ล่าสุดทั้งเพลงฮิตติดชาร์ตและเพลงนอกกระแสคุณภาพสูง
+กฎเหล็กเรื่องการตอบ (สำคัญที่สุด!):
+- ตอบสั้นกระชับ ตรงประเด็นเสมอ ไม่เกิน 1-2 ประโยคสั้นๆ พอ! ผู้ใช้ขี้เกียจอ่าน ห้ามพูดพร่ำเพรื่อ ห้ามพูดเยิ่นเย้อเด็ดขาด
+- ห้ามเล่นบทบาทสมมติ (Roleplay/ซึนเดเระ/พูดเพ้อเจ้อ/ต่อบทละครยาวๆ) เด็ดขาด
+- สุภาพ น่ารัก เป็นกันเอง ใช้หางเสียง "ค่ะ/นะคะ" + อิโมจินิดหน่อย 🌸✨
+- ถ้าคุยทั่วไปหรือทักทาย: ตอบสั้นๆ 1 บรรทัดพอ เช่น "สวัสดีค่ะ! อยากได้เพลงแนวไหนไปตัดคลิปบอกไฮมิยะได้เลยนะคะ 🌸"
+- ถ้าถามเทคนิคตัดต่อ: สรุปหัวใจสำคัญสั้นๆ 1-2 บรรทัดจบ ไม่ต้องสอนเป็นเรียงความ
 
-กติกาสำคัญในการแนะนำเพลง:
-เมื่อผู้ใช้ขอเพลง, แนะนำเพลง, ถามหาเพลง, พูดถึงอารมณ์/แนวเพลง/ศิลปิน/อนิเมะ หรือสั่ง "ขอเพลงเศร้า", "เพลงฮิต TikTok", "แนะนำเพลงตัดคู่คลิป", "เพลงใหม่", "มีเพลงอะไรบ้าง" ฯลฯ:
-1. ตอบทักทายและให้คำแนะนำอย่างกระชับ น่ารัก และเจาะลึก 1-2 ย่อหน้า
-2. คัดเลือกเพลงจริง 3-6 เพลงที่ตอบโจทย์ผู้ใช้ที่สุด ทั้งเพลงฮิตและเพลงใหม่
-3. ปิดท้ายคำตอบด้วยบล็อก JSON เสมอ (ห้ามขาด) ในแท็ก \`\`\`json [ ... ] \`\`\` เพื่อให้ระบบดึงปก HD และเสียงตัวอย่างจริงมาแสดงเป็นการ์ดเพลงแบบกดฟังได้ทันที ดังนี้:
+กติกาเมื่อผู้ใช้ขอเพลง / แนะนำเพลง / พูดถึงอารมณ์ / แนวดนตรี / อนิเมะ / ศิลปิน:
+1. ตอบสั้นๆ เพียง 1 บรรทัด
+2. คัดเลือกเพลงจริง 3-5 เพลง
+3. แนบบล็อก JSON ในแท็ก \`\`\`json [ ... ] \`\`\` ต่อท้ายทันที ดังนี้:
 \`\`\`json
 [
   {
-    "title": "ชื่อเพลงทางการสำหรับค้นหา",
-    "artist": "ชื่อศิลปินหลัก",
+    "title": "ชื่อเพลงทางการภาษาเดิม",
+    "artist": "ชื่อศิลปินจริง",
     "anime": "ชื่ออนิเมะที่แนะนำให้ตัดคู่กัน",
-    "reason": "เหตุผลที่จังหวะหรือมู้ดเข้ากัน",
-    "typoIdea": "ไอเดียตัดต่อหรือเอฟเฟกต์ตัวอักษรไทโป/บีทดรอป",
-    "mood": "sad",
+    "reason": "เหตุผลสั้นๆ",
+    "typoIdea": "ไอเดียไทโปสั้นๆ",
+    "mood": "hype",
     "lang": "th"
   }
 ]
 \`\`\`
 
-หากผู้ใช้ถามคำถามทั่วไปที่ไม่เกี่ยวกับการขอเพลง (เช่น ทักทายทั่วไป หรือถามเทคนิคการตัดต่อใน CapCut/AE):
-ให้ตอบอย่างชาญฉลาดและละเอียด โดยไม่ต้องใส่บล็อก JSON ก็ได้
-
-เทคนิคเพิ่มเติมสำหรับการแนะนำเพลง:
-- ให้ "title" เป็นชื่อเพลงทางการภาษาเดิม (ไม่แปล ไม่ทับศัพท์) เพื่อให้ค้นหาใน iTunes ได้ถูกต้อง
-- "artist" ต้องเป็นชื่อศิลปินจริง สะกดถูกต้อง
-- "anime" ควรเป็นอนิเมะที่บรรยากาศเข้ากับเพลง เช่น เพลงเศร้าคู่ Your Lie in April, เพลงมันส์คู่ Jujutsu Kaisen
-- "mood" ต้องเป็นหนึ่งใน: hype, sad, chill, dark, epic, cute, romantic, energetic, melancholic, dreamy
-- "lang" ต้องเป็น: th, en, jp, kr, lao
-- แนะนำเพลงที่หลากหลาย: ผสมทั้งเพลงฮิตยอดนิยมและเพลงคุณภาพนอกกระแส
-- ถ้าผู้ใช้ถามเป็นภาษาไทย ให้เน้นเพลงไทย 2-3 เพลง + เพลงสากล/ญี่ปุ่น 1-2 เพลง
-- ถ้าผู้ใช้ถามเรื่องอนิเมะเฉพาะเจาะจง ให้แนะนำ Opening/Ending ของอนิเมะนั้นด้วย
-
-ความรู้ด้านการตัดต่อเพิ่มเติม:
-- CapCut: Keyframe, Auto Velocity, Beat Sync, Text Animation, Overlay, Green Screen
-- After Effects: Motion Graphics, Particle, Track Matte, Expression, Wiggle, Ease
-- Alight Motion: Blending Modes, XML Preset Import, Curve Editor, Shake Effect
-- เทคนิค BPM Sync: จับ BPM เพลง แล้ว snap cut ตามจังหวะ ทำให้คลิปมีพลัง
-- Font แนะนำ: FCBangkrathue, TH Krub, IBM Plex Thai, Kanit, Prompt (ฟอนต์ไทย), Montserrat, Bebas Neue (สากล)` + libraryContext + matchContext;
+ความหมายสำคัญ:
+- "ตัดคู่คลิป" หรือ "ตัดคู่" หมายถึงการตัดต่อคลิปคู่กับอนิเมะ/ตัวละคร (AMV / Typography / TikTok) เสมอ ไม่ใช่การเลิกรา
+- "mood" เลือกจาก: hype, sad, chill, dark, epic, cute, romantic, energetic
+- "lang" เลือกจาก: th, en, jp, kr, lao` + libraryContext + matchContext;
 
       for (const modelName of modelsToTry) {
         if (aiResponseText) break;
@@ -6056,7 +6039,7 @@ async function sendGeminiMessage() {
               generationConfig: {
                 temperature: 0.88,
                 topP: 0.95,
-                maxOutputTokens: 2500
+                maxOutputTokens: 1000
               }
             })
           });
@@ -6065,7 +6048,7 @@ async function sendGeminiMessage() {
             const gData = await gRes.json();
             if (gData.candidates && gData.candidates[0]?.content?.parts) {
               aiResponseText = gData.candidates[0].content.parts.map(p => p.text).join('');
-              engineUsed = `Google Gemini (${modelName})`;
+              engineUsed = 'Haimiya AI';
             }
           } else {
             console.warn(`Gemini ${modelName} HTTP ${gRes.status}`);
@@ -6094,7 +6077,7 @@ async function sendGeminiMessage() {
         });
         if (pRes.ok) {
           aiResponseText = await pRes.text();
-          engineUsed = 'Free AI Engine';
+          engineUsed = 'Haimiya AI';
         }
       } catch (pErr) {
         console.warn('Pollinations fallback failed:', pErr);
@@ -6321,10 +6304,10 @@ async function saveGeminiApiKey() {
   } catch (e) {}
 
   updateGeminiKeyStatusBadge();
-  showToast(key ? '✅ บันทึก Gemini API Key เรียบร้อยแล้วค่ะ!' : 'ℹ️ เปลี่ยนไปใช้โหมด AI มาตรฐานแล้วค่ะ');
+  showToast(key ? '✅ บันทึก API Key เรียบร้อยแล้วค่ะ!' : 'ℹ️ เปลี่ยนไปใช้โหมด AI มาตรฐานแล้วค่ะ');
 
   if (statusEl) {
-    statusEl.innerHTML = '🟢 <strong>ใช้ Google Gemini 3 Flash</strong> (เชื่อมต่อสำเร็จ)';
+    statusEl.innerHTML = '🟢 <strong>Haimiya AI พร้อมใช้งาน</strong>';
   }
 
   setTimeout(() => {
@@ -6349,11 +6332,11 @@ async function updateGeminiKeyStatusBadge() {
 
   if (localKey || hasServerKey) {
     if (badge) {
-      badge.textContent = '✨ Gemini 3 Flash';
+      badge.textContent = '✦ Haimiya AI';
       badge.style.background = 'linear-gradient(135deg, rgba(56, 189, 248, 0.35), rgba(129, 140, 248, 0.45))';
       badge.style.borderColor = 'rgba(56, 189, 248, 0.6)';
     }
-    if (subtext) subtext.textContent = 'เชื่อมต่อ Google Gemini Flash สำเร็จ • ตอบอัจฉริยะแบบเรียลไทม์';
+    if (subtext) subtext.textContent = 'Haimiya AI พร้อมแนะนำเพลงและช่วยตัดต่อคลิปค่ะ';
   } else {
     if (badge) {
       badge.textContent = '⚡ Free AI Online';
