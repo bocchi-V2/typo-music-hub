@@ -1000,65 +1000,162 @@ async function downloadSongAudio(songId, event) {
                (typeof SONGS !== 'undefined' && SONGS.find(s => s.id === songId));
   if (!song) return;
 
-  const audioUrl = song.previewUrl;
-  if (!audioUrl) {
-    showToast(currentAppLang === 'th' ? '⚠️ เพลงนี้ไม่มีไฟล์เสียงตัวอย่างให้ดาวน์โหลด' : '⚠️ No audio file available');
-    return;
-  }
-
-  // สร้างชื่อไฟล์ที่สะอาด ปราศจากอักขระพิเศษของระบบไฟล์ Windows
   const safeTitle = (song.title || 'song').replace(/[\\/:*?"<>|]/g, '').trim();
   const safeArtist = (song.artist || 'artist').replace(/[\\/:*?"<>|]/g, '').trim();
-  const ext = audioUrl.includes('.mp3') ? 'mp3' : 'm4a';
-  const filename = `${safeTitle} - ${safeArtist}.${ext}`;
+  const searchQuery = safeTitle + ' ' + safeArtist;
 
-  showToast(currentAppLang === 'th' ? `⏳ กำลังเริ่มดาวน์โหลดเพลง "${song.title}" ลงคอม...` : `⏳ Starting download: "${song.title}"...`);
+  showToast(currentAppLang === 'th' ? `⏳ กำลังค้นหาและดาวน์โหลดเพลงเต็ม "${song.title}"...` : `⏳ Searching full song: "${song.title}"...`);
 
-  // กรณีรันบน Local Server (localhost / 127.0.0.1) ให้ใช้ proxy endpoint ที่ตั้งชื่อไฟล์ให้เสร็จสรรพ
-  const isLocalServer = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-  if (isLocalServer) {
-    const proxyUrl = `/download-audio?url=${encodeURIComponent(audioUrl)}&name=${encodeURIComponent(filename)}`;
-    const a = document.createElement('a');
-    a.href = proxyUrl;
-    a.download = filename;
-    document.body.appendChild(a);
-    a.click();
-    setTimeout(() => a.remove(), 1000);
-    showToast(currentAppLang === 'th' ? `✅ ดาวน์โหลดเพลง "${song.title}" ลงคอมเรียบร้อยแล้ว!` : `✅ Download started!`);
-    return;
+  // Strategy 1: Try Spotify-to-MP3 free APIs (cobalt.tools - free, no API key needed)
+  try {
+    // Search YouTube for the song to get a video URL
+    const ytSearchUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(searchQuery + ' official audio')}`;
+    
+    // Use cobalt API to convert (free, open-source)
+    const cobaltRes = await fetch('https://api.cobalt.tools/api/json', {
+      method: 'POST',
+      headers: { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        url: `https://music.youtube.com/search?q=${encodeURIComponent(searchQuery)}`,
+        vCodec: 'h264',
+        vQuality: 'max',
+        aFormat: 'mp3',
+        isAudioOnly: true,
+        filenamePattern: 'basic'
+      })
+    });
+    
+    if (cobaltRes.ok) {
+      const cobaltData = await cobaltRes.json();
+      if (cobaltData.url) {
+        const a = document.createElement('a');
+        a.href = cobaltData.url;
+        a.download = `${safeTitle} - ${safeArtist}.mp3`;
+        a.target = '_blank';
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(() => a.remove(), 2000);
+        showToast(currentAppLang === 'th' ? `✅ กำลังดาวน์โหลดเพลงเต็ม "${song.title}" แล้วค่ะ! 🎵` : `✅ Downloading full song!`);
+        return;
+      }
+    }
+  } catch (e) {
+    console.warn('Cobalt API unavailable:', e);
   }
 
-  // กรณีบนเว็บออนไลน์ (GitHub Pages / Netlify): ลองดาวน์โหลดผ่าน Fetch Blob เพื่อกำหนดชื่อไฟล์
-  try {
-    const res = await fetch(audioUrl, { mode: 'cors' });
-    if (res.ok) {
-      const blob = await res.blob();
-      const blobUrl = URL.createObjectURL(blob);
+  // Strategy 2: Open YouTube Music search page (user can use their preferred downloader)
+  // Also try direct Spotify/Apple Music link for premium users
+  const spotifyUrl = song.spotifyUrl || `https://open.spotify.com/search/${encodeURIComponent(searchQuery)}`;
+  const ytMusicUrl = `https://music.youtube.com/search?q=${encodeURIComponent(searchQuery)}`;
+  
+  // Strategy 3: Try downloading from available audio sources (preview as fallback)
+  const audioUrl = song.fullUrl || song.downloadUrl || song.previewUrl;
+  if (audioUrl) {
+    const ext = audioUrl.includes('.mp3') ? 'mp3' : 'm4a';
+    const filename = `${safeTitle} - ${safeArtist}.${ext}`;
+
+    // กรณีรันบน Local Server
+    const isLocalServer = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+    if (isLocalServer) {
+      const proxyUrl = `/download-audio?url=${encodeURIComponent(audioUrl)}&name=${encodeURIComponent(filename)}`;
       const a = document.createElement('a');
-      a.href = blobUrl;
+      a.href = proxyUrl;
       a.download = filename;
       document.body.appendChild(a);
       a.click();
-      setTimeout(() => {
-        URL.revokeObjectURL(blobUrl);
-        a.remove();
-      }, 2000);
-      showToast(currentAppLang === 'th' ? `✅ บันทึกเพลง "${song.title}" ลงคอมเรียบร้อยแล้ว!` : `✅ Saved "${song.title}" to PC!`);
+      setTimeout(() => a.remove(), 1000);
+      showToast(currentAppLang === 'th' ? `✅ ดาวน์โหลดเพลง "${song.title}" เรียบร้อย!` : `✅ Download started!`);
       return;
     }
-  } catch (err) {
-    console.warn('Fetch blob download failed, falling back to direct anchor download:', err);
+
+    // กรณีบนเว็บออนไลน์: ลองดาวน์โหลดผ่าน Fetch Blob
+    try {
+      const res = await fetch(audioUrl, { mode: 'cors' });
+      if (res.ok) {
+        const blob = await res.blob();
+        const blobUrl = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = blobUrl;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(() => {
+          URL.revokeObjectURL(blobUrl);
+          a.remove();
+        }, 2000);
+        showToast(currentAppLang === 'th' ? `✅ บันทึกเพลง "${song.title}" เรียบร้อย!` : `✅ Saved "${song.title}"!`);
+        return;
+      }
+    } catch (err) {
+      console.warn('Direct download failed:', err);
+    }
   }
 
-  // Fallback สำหรับกรณีที่โดน CORS: เปิดดาวน์โหลดผ่าน Anchor Tag
-  const a = document.createElement('a');
-  a.href = audioUrl;
-  a.target = '_blank';
-  a.download = filename;
-  document.body.appendChild(a);
-  a.click();
-  setTimeout(() => a.remove(), 1500);
-  showToast(currentAppLang === 'th' ? `📥 กำลังส่งไฟล์ "${song.title}" ไปยังตัวจัดการดาวน์โหลดของเบราว์เซอร์` : `📥 Downloading "${song.title}"...`);
+  // Strategy 4: Show download options modal
+  showDownloadOptionsModal(song, searchQuery, spotifyUrl, ytMusicUrl);
+}
+
+// แสดงตัวเลือกดาวน์โหลดเพลงเต็ม
+function showDownloadOptionsModal(song, query, spotifyUrl, ytMusicUrl) {
+  // Remove existing modal
+  const existingModal = document.getElementById('download-options-modal');
+  if (existingModal) existingModal.remove();
+
+  const safeTitle = escapeHtml(song.title || 'เพลง');
+  const safeArtist = escapeHtml(song.artist || '');
+  const coverUrl = song.coverUrl || 'splash-cover.jpg';
+  const encodedQuery = encodeURIComponent(query);
+
+  const modal = document.createElement('div');
+  modal.id = 'download-options-modal';
+  modal.style.cssText = 'position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.7);backdrop-filter:blur(8px);animation:fadeIn 0.2s ease;';
+  modal.innerHTML = `
+    <div style="background:rgba(15,23,42,0.97);border:1.5px solid rgba(99,102,241,0.3);border-radius:20px;padding:1.5rem;max-width:380px;width:90%;box-shadow:0 20px 50px rgba(0,0,0,0.6);">
+      <div style="display:flex;gap:12px;align-items:center;margin-bottom:1rem;">
+        <img src="${escapeHtml(coverUrl)}" style="width:56px;height:56px;border-radius:12px;object-fit:cover;" onerror="this.src='splash-cover.jpg';">
+        <div>
+          <div style="font-weight:700;color:#fff;font-size:1rem;">${safeTitle}</div>
+          <div style="color:#94a3b8;font-size:0.85rem;">${safeArtist}</div>
+        </div>
+      </div>
+      <p style="color:#cbd5e1;font-size:0.85rem;margin-bottom:1rem;">🎵 เลือกช่องทางดาวน์โหลดเพลงเต็มได้เลยค่ะ:</p>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <a href="https://www.youtube.com/results?search_query=${encodedQuery}+official+audio" target="_blank" rel="noopener" 
+           style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:rgba(255,0,0,0.12);border:1px solid rgba(255,0,0,0.3);border-radius:12px;color:#ff6b6b;text-decoration:none;font-weight:600;font-size:0.9rem;">
+          ▶️ ค้นใน YouTube (ฟรี)
+        </a>
+        <a href="${escapeHtml(ytMusicUrl)}" target="_blank" rel="noopener"
+           style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:rgba(255,0,0,0.08);border:1px solid rgba(255,80,80,0.25);border-radius:12px;color:#ff8a8a;text-decoration:none;font-weight:600;font-size:0.9rem;">
+          🎵 YouTube Music
+        </a>
+        <a href="${escapeHtml(spotifyUrl)}" target="_blank" rel="noopener"
+           style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:rgba(29,185,84,0.12);border:1px solid rgba(29,185,84,0.3);border-radius:12px;color:#1DB954;text-decoration:none;font-weight:600;font-size:0.9rem;">
+          🟢 เปิดใน Spotify
+        </a>
+        <a href="https://music.apple.com/search?term=${encodedQuery}" target="_blank" rel="noopener"
+           style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:rgba(252,60,68,0.12);border:1px solid rgba(252,60,68,0.3);border-radius:12px;color:#fc3c44;text-decoration:none;font-weight:600;font-size:0.9rem;">
+          🍎 Apple Music
+        </a>
+        ${song.previewUrl ? `
+        <button onclick="(async()=>{try{const r=await fetch('${escapeHtml(song.previewUrl)}',{mode:'cors'});if(r.ok){const b=await r.blob();const u=URL.createObjectURL(b);const a=document.createElement('a');a.href=u;a.download='${escapeHtml((song.title||'song').replace(/[\\\\/:*?\"<>|]/g,''))}-preview.m4a';document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(u);a.remove()},2e3);showToast('✅ บันทึกเพลงตัวอย่าง 30 วินาที เรียบร้อย!')}}catch(e){window.open('${escapeHtml(song.previewUrl)}','_blank')}})()"
+                style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:rgba(56,189,248,0.12);border:1px solid rgba(56,189,248,0.3);border-radius:12px;color:#38bdf8;font-weight:600;font-size:0.9rem;cursor:pointer;border:1px solid rgba(56,189,248,0.3);font-family:'Kanit',sans-serif;">
+          💿 ดาวน์โหลดตัวอย่าง 30 วิ (Preview)
+        </button>` : ''}
+      </div>
+      <button onclick="this.closest('#download-options-modal').remove()" 
+              style="width:100%;margin-top:12px;padding:10px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:12px;color:#94a3b8;cursor:pointer;font-family:'Kanit',sans-serif;font-size:0.85rem;">
+        ✕ ปิด
+      </button>
+    </div>
+  `;
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) modal.remove();
+  });
+  document.body.appendChild(modal);
+  showToast(currentAppLang === 'th' ? '🎵 เลือกช่องทางดาวน์โหลดเพลงเต็มได้เลยค่ะ!' : '🎵 Choose download source!');
 }
 
 // สร้างไฟล์ทางลัดเข้าเว็บ Haimiya Typo สำหรับหน้าจอคอมพิวเตอร์ Windows (.url)
