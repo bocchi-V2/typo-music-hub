@@ -33,7 +33,7 @@
   
   --radius: 16px;
   --radius-sm: 10px;
-  --radius-pill: 9999px;
+  --radius-pill: 10px;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -1599,7 +1599,7 @@ header#hero {
 .btn-sm {
   padding: 0.4rem 0.85rem;
   font-size: 0.78rem;
-  border-radius: var(--radius-pill);
+  border-radius: 8px;
   border: none;
   cursor: pointer;
   font-family: 'Kanit', sans-serif;
@@ -1608,7 +1608,9 @@ header#hero {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.3rem;
   transition: all 0.2s;
+  white-space: nowrap;
 }
 .btn-spotify {
   background: #1DB954;
@@ -3401,7 +3403,7 @@ header#hero {
   background: linear-gradient(135deg, rgba(99, 102, 241, 0.22), rgba(236, 72, 153, 0.16)) !important;
   border: 1px solid rgba(167, 139, 250, 0.45) !important;
   box-shadow: 0 0 25px rgba(99, 102, 241, 0.3) !important;
-  border-radius: 999px !important;
+  border-radius: 10px !important;
   letter-spacing: 0.12em !important;
   color: #c084fc !important;
 }
@@ -3581,7 +3583,7 @@ header#hero {
 .song-mood {
   font-weight: 600;
   padding: 0.3rem 0.8rem !important;
-  border-radius: 999px !important;
+  border-radius: 10px !important;
 }
 
 .song-mood.mood-hype {
@@ -3945,7 +3947,7 @@ header#hero {
     white-space: nowrap !important;
     font-size: 0.75rem !important;
     padding: 0.35rem 0.65rem !important;
-    border-radius: 999px !important;
+    border-radius: 8px !important;
     display: inline-flex !important;
     align-items: center !important;
     gap: 0.3rem !important;
@@ -3969,7 +3971,7 @@ header#hero {
     padding: 0.24rem 0.55rem !important;
     background: rgba(255, 255, 255, 0.06) !important;
     border: 1px solid rgba(255, 255, 255, 0.12) !important;
-    border-radius: 999px !important;
+    border-radius: 10px !important;
   }
 
   .bottom-player .bp-vol-slider {
@@ -5131,7 +5133,7 @@ header#hero {
   color: #38bdf8 !important;
   border: 1px solid rgba(56, 189, 248, 0.45) !important;
   font-weight: 600 !important;
-  border-radius: 999px !important;
+  border-radius: 10px !important;
   transition: all 0.25s ease !important;
   display: inline-flex !important;
   align-items: center !important;
@@ -6678,4 +6680,155 @@ button:focus-visible {
 .studio-zone-tab.tab-secret.active,
 .zone-tab-btn.btn-secret-zone.active {
   border-bottom-color: #facc15 !important;
+}
+
+
+/* ========================================================
+   RESPONSIVE BOTTOM PLAYER FIX - ปุ่มไม่เบียดกัน
+   ======================================================== */
+
+/* Desktop: ปุ่ม actions ให้ wrap ได้ + gap มากขึ้น */
+@media (min-width: 1041px) {
+  .bottom-player .bp-actions-panel {
+    flex: 0 1 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    max-width: 55% !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-end !important;
+  }
+  
+  .bottom-player .bp-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-end !important;
+  }
+
+  .bottom-player .bp-actions .btn-sm {
+    padding: 0.38rem 0.75rem !important;
+    font-size: 0.76rem !important;
+    border-radius: 8px !important;
+    white-space: nowrap !important;
+    flex: 0 0 auto !important;
+  }
+}
+
+/* Tablet 769-1040px: ปุ่มย่อลง + wrap ได้ */
+@media (max-width: 1040px) and (min-width: 769px) {
+  .bottom-player .bp-actions-panel {
+    flex-wrap: wrap !important;
+    gap: 0.4rem !important;
+    justify-content: flex-end !important;
+    max-width: 50% !important;
+  }
+
+  .bottom-player .bp-actions {
+    flex-wrap: wrap !important;
+    gap: 0.35rem !important;
+    justify-content: flex-end !important;
+  }
+
+  .bottom-player .bp-actions .btn-sm {
+    padding: 0.3rem 0.6rem !important;
+    font-size: 0.72rem !important;
+    border-radius: 8px !important;
+  }
+}
+
+/* Mobile: ปุ่ม action เลื่อนได้ + ขนาดพอดีนิ้ว */
+@media (max-width: 768px) {
+  .bottom-player .bp-actions .btn-sm {
+    border-radius: 8px !important;
+    padding: 0.35rem 0.6rem !important;
+    font-size: 0.73rem !important;
+    min-height: 32px !important;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+  .bottom-player .bp-actions .btn-sm {
+    padding: 0.28rem 0.45rem !important;
+    font-size: 0.68rem !important;
+  }
+}
+
+/* ========================================================
+   SONG CARD RESPONSIVE - การ์ดเพลงปรับตามหน้าจอ
+   ======================================================== */
+
+/* Large desktop */
+@media (min-width: 1400px) {
+  .song-card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)) !important;
+    gap: 1rem !important;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) and (max-width: 1399px) {
+  .song-card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+    gap: 0.85rem !important;
+  }
+}
+
+/* Tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .song-card-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)) !important;
+    gap: 0.75rem !important;
+  }
+  
+  .song-card-actions {
+    flex-wrap: wrap !important;
+    gap: 0.35rem !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 599px) {
+  .song-card-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.6rem !important;
+  }
+  
+  .song-card-actions {
+    flex-wrap: wrap !important;
+    gap: 0.3rem !important;
+  }
+  
+  .song-card-actions .btn-sm {
+    font-size: 0.72rem !important;
+    padding: 0.35rem 0.55rem !important;
+  }
+}
+
+/* ========================================================
+   GLOBAL ANTI-CAPSULE: ทุกปุ่มเป็นสี่เหลี่ยมมุมมนเล็กน้อย ไม่ใช่ก้อนกลม
+   ======================================================== */
+.btn-sm,
+.btn-spotify,
+.btn-anime-match,
+.btn-download-audio,
+.btn-match,
+.btn-bp-save,
+.btn-yt,
+.song-card-actions .btn-sm {
+  border-radius: 8px !important;
+}
+
+.btn-download-audio {
+  border-radius: 8px !important;
+}
+
+.btn-spotify {
+  border-radius: 8px !important;
+}
+
+.btn-anime-match {
+  border-radius: 8px !important;
 }
