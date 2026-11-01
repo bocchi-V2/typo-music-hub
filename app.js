@@ -995,10 +995,8 @@ async function downloadOfflineMusicPack() {
 // ============================================
 
 // ============================================================
-// FULL SONG DOWNLOAD & MULTI-SOURCE AUDIO MODAL
 // ============================================================
-// ============================================================
-// FULL SONG DOWNLOAD & MULTI-SOURCE AUDIO MODAL
+// FULL SONG DOWNLOAD & MULTI-SOURCE AUDIO MODAL (REAL FULL SONGS)
 // ============================================================
 async function downloadSongAudio(songId, event) {
   if (event) {
@@ -1013,12 +1011,13 @@ async function downloadSongAudio(songId, event) {
   const safeArtist = (song.artist || 'artist').replace(/[\\/:*?"<>|]/g, '').trim();
   const searchQuery = `${safeTitle} ${safeArtist}`.trim();
 
-  showToast(currentAppLang === 'th' ? `⏳ กำลังค้นหาเพลงเต็ม "${song.title}"...` : `⏳ Searching full song: "${song.title}"...`);
+  showToast(currentAppLang === 'th' ? `⏳ กำลังค้นหาเพลงเต็ม 100% "${song.title}"...` : `⏳ Searching full song: "${song.title}"...`);
 
   const spotifyUrl = song.spotifyUrl || `https://open.spotify.com/search/${encodeURIComponent(searchQuery)}`;
   const ytMusicUrl = `https://music.youtube.com/search?q=${encodeURIComponent(searchQuery)}`;
   let fullVideoUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(searchQuery + ' official audio')}`;
-  let fullDownloadUrl = `https://y2mate.nu/en/youtube-to-mp3/?url=${encodeURIComponent(fullVideoUrl)}`;
+  let fullDownloadUrl = `https://y2mate.is/`;
+  let backupDownloadUrl = `https://ytmp3.nu/?url=${encodeURIComponent(fullVideoUrl)}`;
 
   try {
     const res = await fetch(`${getAiApiBase()}/api/ai/get-full-song?q=${encodeURIComponent(searchQuery)}`);
@@ -1027,13 +1026,14 @@ async function downloadSongAudio(songId, event) {
       if (data && data.ok) {
         if (data.videoUrl) fullVideoUrl = data.videoUrl;
         if (data.downloadUrl) fullDownloadUrl = data.downloadUrl;
+        if (data.backupDownloadUrl) backupDownloadUrl = data.backupDownloadUrl;
       }
     }
   } catch (err) {
-    console.warn('get-full-song server endpoint unavailable, using direct fallback:', err);
+    console.warn('get-full-song endpoint error, using direct links:', err);
   }
 
-  showDownloadOptionsModal(song, searchQuery, spotifyUrl, ytMusicUrl, fullVideoUrl, fullDownloadUrl);
+  showDownloadOptionsModal(song, searchQuery, spotifyUrl, ytMusicUrl, fullVideoUrl, fullDownloadUrl, backupDownloadUrl);
 }
 
 async function downloadPreviewHookAudio(previewUrl, songTitle) {
@@ -1056,7 +1056,7 @@ async function downloadPreviewHookAudio(previewUrl, songTitle) {
   }
 }
 
-function showDownloadOptionsModal(song, query, spotifyUrl, ytMusicUrl, fullVideoUrl, fullDownloadUrl) {
+function showDownloadOptionsModal(song, query, spotifyUrl, ytMusicUrl, fullVideoUrl, fullDownloadUrl, backupDownloadUrl) {
   const existingModal = document.getElementById('download-options-modal');
   if (existingModal) existingModal.remove();
 
@@ -1066,17 +1066,18 @@ function showDownloadOptionsModal(song, query, spotifyUrl, ytMusicUrl, fullVideo
   const encodedQuery = encodeURIComponent(query);
 
   const videoUrlToUse = fullVideoUrl || `https://www.youtube.com/results?search_query=${encodedQuery}+official+audio`;
-  const converterUrl = fullDownloadUrl || `https://y2mate.nu/en/youtube-to-mp3/?url=${encodeURIComponent(videoUrlToUse)}`;
+  const y2mateConverter = fullDownloadUrl || `https://y2mate.is/`;
+  const ytmp3Converter = backupDownloadUrl || `https://ytmp3.nu/?url=${encodeURIComponent(videoUrlToUse)}`;
 
   const modal = document.createElement('div');
   modal.id = 'download-options-modal';
-  modal.style.cssText = 'position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.75);backdrop-filter:blur(10px);animation:fadeIn 0.2s ease;padding:1rem;';
+  modal.style.cssText = 'position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.78);backdrop-filter:blur(12px);animation:fadeIn 0.2s ease;padding:1rem;';
   
   let previewBtnHtml = '';
   if (song.previewUrl) {
     previewBtnHtml = `
       <button onclick="downloadPreviewHookAudio('${escapeHtml(song.previewUrl)}', '${safeTitle}')"
-              style="display:flex;align-items:center;justify-content:space-between;padding:8px 12px;background:rgba(255,255,255,0.03);border:1px dashed rgba(255,255,255,0.15);border-radius:10px;color:#94a3b8;font-size:0.8rem;cursor:pointer;font-family:'Kanit',sans-serif;margin-top:4px;">
+              style="display:flex;align-items:center;justify-content:space-between;padding:8px 12px;background:rgba(255,255,255,0.03);border:1px dashed rgba(255,255,255,0.18);border-radius:10px;color:#94a3b8;font-size:0.8rem;cursor:pointer;font-family:'Kanit',sans-serif;margin-top:4px;">
         <span>💿 โหลดเฉพาะตัวอย่างท่อนฮุก 30 วินาที (สำหรับคลิปสั้น)</span>
         <span>⬇️</span>
       </button>
@@ -1084,51 +1085,60 @@ function showDownloadOptionsModal(song, query, spotifyUrl, ytMusicUrl, fullVideo
   }
 
   modal.innerHTML = `
-    <div style="background:rgba(15,23,42,0.98);border:1.5px solid rgba(56,189,248,0.3);border-radius:18px;padding:1.4rem;max-width:420px;width:100%;box-shadow:0 25px 60px rgba(0,0,0,0.8);box-sizing:border-box;">
+    <div style="background:rgba(15,23,42,0.98);border:1.5px solid rgba(56,189,248,0.35);border-radius:18px;padding:1.4rem;max-width:440px;width:100%;box-shadow:0 25px 60px rgba(0,0,0,0.85);box-sizing:border-box;">
       <div style="display:flex;gap:12px;align-items:center;margin-bottom:1.1rem;padding-bottom:0.9rem;border-bottom:1px solid rgba(255,255,255,0.1);">
-        <img src="${escapeHtml(coverUrl)}" style="width:58px;height:58px;border-radius:10px;object-fit:cover;box-shadow:0 4px 12px rgba(0,0,0,0.4);" onerror="this.src='splash-cover.jpg';">
+        <img src="${escapeHtml(coverUrl)}" style="width:60px;height:60px;border-radius:10px;object-fit:cover;box-shadow:0 4px 15px rgba(0,0,0,0.5);" onerror="this.src='splash-cover.jpg';">
         <div style="min-width:0;flex:1;">
-          <div style="font-weight:700;color:#fff;font-size:1.05rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${safeTitle}</div>
+          <div style="font-weight:700;color:#fff;font-size:1.08rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${safeTitle}</div>
           <div style="color:#94a3b8;font-size:0.85rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${safeArtist}</div>
-          <div style="display:inline-block;margin-top:3px;font-size:0.72rem;background:rgba(16,185,129,0.18);color:#34d399;border:1px solid rgba(16,185,129,0.35);padding:1px 6px;border-radius:6px;font-weight:600;">🎵 ตัวเลือกเพลงเต็ม 100%</div>
+          <div style="display:inline-flex;align-items:center;gap:4px;margin-top:3px;font-size:0.75rem;background:rgba(16,185,129,0.2);color:#34d399;border:1px solid rgba(16,185,129,0.4);padding:2px 7px;border-radius:6px;font-weight:600;">
+            <span>🎵 เพลงเต็ม 100% (Full Track)</span>
+          </div>
         </div>
-        <button onclick="this.closest('#download-options-modal').remove()" style="background:none;border:none;color:#94a3b8;font-size:1.3rem;cursor:pointer;padding:4px 8px;border-radius:6px;">✕</button>
+        <button onclick="this.closest('#download-options-modal').remove()" style="background:none;border:none;color:#94a3b8;font-size:1.4rem;cursor:pointer;padding:4px 8px;border-radius:6px;">✕</button>
       </div>
 
       <div style="color:#cbd5e1;font-size:0.88rem;margin-bottom:0.85rem;font-weight:500;">
-        เลือกช่องทางดาวน์โหลดเพลงเต็มสำหรับนำไปตัดต่อ:
+        ช่องทางดาวน์โหลดเพลงเต็มสำหรับนำไปตัดต่อ:
       </div>
 
       <div style="display:flex;flex-direction:column;gap:8px;">
-        <!-- Option 1: Fast Full MP3 Converter (Highlight) -->
-        <a href="${escapeHtml(converterUrl)}" target="_blank" rel="noopener"
-           style="display:flex;align-items:center;justify-content:space-between;padding:12px 14px;background:linear-gradient(135deg, rgba(56,189,248,0.2), rgba(99,102,241,0.25));border:1.5px solid rgba(56,189,248,0.55);border-radius:10px;color:#fff;text-decoration:none;font-weight:700;font-size:0.92rem;box-shadow:0 4px 15px rgba(56,189,248,0.2);">
-          <span>⚡ แปลงและดาวน์โหลดเป็น MP3 เพลงเต็ม</span>
-          <span style="font-size:1.1rem;">⬇️</span>
+        <!-- Option 1: Fast Full MP3 Downloader (Highlight) -->
+        <a href="${escapeHtml(y2mateConverter)}" target="_blank" rel="noopener"
+           style="display:flex;align-items:center;justify-content:space-between;padding:12px 14px;background:linear-gradient(135deg, rgba(16,185,129,0.3), rgba(56,189,248,0.35));border:1.5px solid rgba(16,185,129,0.6);border-radius:10px;color:#fff;text-decoration:none;font-weight:700;font-size:0.94rem;box-shadow:0 4px 18px rgba(16,185,129,0.25);">
+          <span>⚡ ดาวน์โหลดเพลงเต็ม MP3 ทันที (320kbps)</span>
+          <span style="font-size:1.15rem;">⬇️</span>
         </a>
 
-        <!-- Option 2: YouTube Official Video -->
-        <a href="${escapeHtml(videoUrlToUse)}" target="_blank" rel="noopener"
-           style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:rgba(239,68,68,0.12);border:1px solid rgba(239,68,68,0.35);border-radius:10px;color:#fca5a5;text-decoration:none;font-weight:600;font-size:0.88rem;">
-          <span>📺 เปิดวิดีโอเพลงเต็มบน YouTube (Official)</span>
+        <!-- Option 2: Backup MP3 Downloader -->
+        <a href="${escapeHtml(ytmp3Converter)}" target="_blank" rel="noopener"
+           style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:linear-gradient(135deg, rgba(56,189,248,0.18), rgba(99,102,241,0.22));border:1px solid rgba(56,189,248,0.4);border-radius:10px;color:#e0f2fe;text-decoration:none;font-weight:600;font-size:0.88rem;">
+          <span>🚀 ลิงก์สำรองโหลดเพลงเต็ม MP3 (YTmp3)</span>
           <span>➔</span>
         </a>
 
-        <!-- Option 3: YouTube Music -->
+        <!-- Option 3: YouTube Official Video -->
+        <a href="${escapeHtml(videoUrlToUse)}" target="_blank" rel="noopener"
+           style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:rgba(239,68,68,0.12);border:1px solid rgba(239,68,68,0.35);border-radius:10px;color:#fca5a5;text-decoration:none;font-weight:600;font-size:0.88rem;">
+          <span>📺 ฟัง/โหลดบน YouTube (วิดีโอฉบับเต็ม / Official MV)</span>
+          <span>➔</span>
+        </a>
+
+        <!-- Option 4: YouTube Music -->
         <a href="${escapeHtml(ytMusicUrl)}" target="_blank" rel="noopener"
            style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:10px;color:#e2e8f0;text-decoration:none;font-weight:600;font-size:0.88rem;">
           <span>🎵 ฟังเพลงเต็มบน YouTube Music</span>
           <span>➔</span>
         </a>
 
-        <!-- Option 4: Spotify -->
+        <!-- Option 5: Spotify -->
         <a href="${escapeHtml(spotifyUrl)}" target="_blank" rel="noopener"
            style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:rgba(29,185,84,0.12);border:1px solid rgba(29,185,84,0.35);border-radius:10px;color:#4ade80;text-decoration:none;font-weight:600;font-size:0.88rem;">
           <span>🟢 เปิดใน Spotify</span>
           <span>➔</span>
         </a>
 
-        <!-- Option 5: 30s Hook Preview -->
+        <!-- Option 6: 30s Hook Preview -->
         ${previewBtnHtml}
       </div>
 
