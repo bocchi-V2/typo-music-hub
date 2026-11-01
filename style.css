@@ -382,7 +382,7 @@ body::after {
   font-size: 1.15rem;
   cursor: pointer;
   padding: 0.4rem 0.85rem;
-  border-radius: 999px;
+  border-radius: 8px;
   font-family: 'Kanit', sans-serif;
   font-weight: 600;
   transition: all 0.25s ease;
@@ -5828,7 +5828,7 @@ body.in-secret-mode .nav-link-secret {
 .gemini-sparkle-badge {
   font-size: 0.72rem;
   padding: 2px 8px;
-  border-radius: 999px;
+  border-radius: 6px;
   background: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(236, 72, 153, 0.3));
   border: 1px solid rgba(168, 85, 247, 0.45);
   color: #c084fc;
@@ -6496,7 +6496,7 @@ body.in-secret-mode .nav-link-secret {
   gap: 6px;
   background: linear-gradient(135deg, rgba(139, 92, 246, 0.4), rgba(236, 72, 153, 0.4));
   border: 1.5px solid rgba(168, 85, 247, 0.7);
-  border-radius: 999px;
+  border-radius: 8px;
   color: #fff;
   font-weight: 700;
   font-size: 0.86rem;
@@ -6830,5 +6830,33 @@ button:focus-visible {
 }
 
 .btn-anime-match {
+  border-radius: 8px !important;
+}
+
+
+/* ========================================================
+   NO-PILL FIX: แปลงปุ่มและ Badge ให้เป็นมุมมนทรงสวย (ไม่ใช่ก้อนกลม 999px)
+   ======================================================== */
+.hamburger {
+  border-radius: 8px !important;
+}
+
+.gemini-sparkle-badge {
+  border-radius: 6px !important;
+  font-size: 0.72rem !important;
+  padding: 3px 8px !important;
+}
+
+.gemini-engine-pill {
+  border-radius: 6px !important;
+  font-size: 0.72rem !important;
+  padding: 3px 8px !important;
+}
+
+.nav-ai-btn-header {
+  border-radius: 8px !important;
+}
+
+.nav-links .nav-link {
   border-radius: 8px !important;
 }

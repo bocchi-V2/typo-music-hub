@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=46" />
+  <link rel="stylesheet" href="style.css?v=1793530477201" />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
@@ -84,10 +84,10 @@
         <a href="#" class="nav-link nav-saved-btn" onclick="closeSecretFunkMode(); switchStudioWorkspace('saved', true); return false;">
           ❤️ <span data-i18n="navSaved">บันทึกไว้</span> (<span id="nav-saved-count">0</span>)
         </a>
-        <button class="nav-link nav-app-btn" onclick="openAppModal(); return false;" style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(129, 140, 248, 0.2)); border: 1px solid rgba(56, 189, 248, 0.4); border-radius: 999px; cursor: pointer; color: #fff; font-weight: 600; padding: 0.35rem 0.9rem; margin-left: 0.3rem;">
+        <button class="nav-link nav-app-btn" onclick="openAppModal(); return false;" style="background: linear-gradient(135deg, rgba(56, 189, 248, 0.2), rgba(129, 140, 248, 0.2)); border: 1px solid rgba(56, 189, 248, 0.4); border-radius: 8px; cursor: pointer; color: #fff; font-weight: 600; padding: 0.35rem 0.9rem; margin-left: 0.3rem;">
           💻 <span data-i18n="navInstallApp">โหลดลงคอม / มือถือ</span>
         </button>
-        <button class="nav-link" onclick="triggerLiveAutoSync(); return false;" style="background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.35); border-radius: 999px; cursor: pointer; color: #34d399; font-weight: 600; padding: 0.35rem 0.85rem;" title="⚡ ซิงค์เพลงใหม่และตรวจสอบสถานะคลังเพลง">
+        <button class="nav-link" onclick="triggerLiveAutoSync(); return false;" style="background: rgba(16, 185, 129, 0.15); border: 1px solid rgba(16, 185, 129, 0.35); border-radius: 8px; cursor: pointer; color: #34d399; font-weight: 600; padding: 0.35rem 0.85rem;" title="⚡ ซิงค์เพลงใหม่และตรวจสอบสถานะคลังเพลง">
           ⚡ ซิงค์เพลงสด
         </button>
       </div>
@@ -109,7 +109,7 @@
         <span class="lang-divider">/</span>
         <button class="lang-toggle-btn" id="btn-lang-en" onclick="setAppLanguage('en')">🇬🇧 EN</button>
       </div>
-      <button class="hamburger" id="hamburger" onclick="toggleMenu()" title="เมนูโซนเพลงและเครื่องมือ (กดเพื่อเปิด/ปิด)">
+      <button class="hamburger" id="hamburger" onclick="toggleMenu(event)" title="เมนูโซนเพลงและเครื่องมือ (กดเพื่อเปิด/ปิด)">
         <span class="hamburger-icon">☰</span>
         <span class="hamburger-text">เมนู</span>
       </button>
@@ -689,14 +689,14 @@
         <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.5;">ติดตั้งลงคอมพิวเตอร์ (PC / Windows / Mac) หรือมือถือ พร้อมระบบดาวน์โหลดเพลงตัดต่อและซิงค์เพลงสด!</p>
 
         <!-- Platform Selector Tabs -->
-        <div class="app-platform-tabs" style="display: flex; background: rgba(255, 255, 255, 0.06); border-radius: 999px; padding: 4px; margin-bottom: 1.2rem; border: 1px solid rgba(255, 255, 255, 0.1);">
-          <button id="tab-btn-pc" class="app-platform-tab-btn active" onclick="switchInstallTab('pc')" style="flex: 1; padding: 0.6rem 0.6rem; border-radius: 999px; border: none; background: linear-gradient(135deg, #38bdf8, #818cf8); color: #fff; font-weight: 600; font-size: 0.88rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px; box-shadow: 0 4px 14px rgba(56, 189, 248, 0.4);">
+        <div class="app-platform-tabs" style="display: flex; background: rgba(255, 255, 255, 0.06); border-radius: 8px; padding: 4px; margin-bottom: 1.2rem; border: 1px solid rgba(255, 255, 255, 0.1);">
+          <button id="tab-btn-pc" class="app-platform-tab-btn active" onclick="switchInstallTab('pc')" style="flex: 1; padding: 0.6rem 0.6rem; border-radius: 8px; border: none; background: linear-gradient(135deg, #38bdf8, #818cf8); color: #fff; font-weight: 600; font-size: 0.88rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px; box-shadow: 0 4px 14px rgba(56, 189, 248, 0.4);">
             💻 คอมพิวเตอร์ (PC)
           </button>
-          <button id="tab-btn-ios" class="app-platform-tab-btn" onclick="switchInstallTab('ios')" style="flex: 1; padding: 0.6rem 0.6rem; border-radius: 999px; border: none; background: transparent; color: #94a3b8; font-weight: 600; font-size: 0.88rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px;">
+          <button id="tab-btn-ios" class="app-platform-tab-btn" onclick="switchInstallTab('ios')" style="flex: 1; padding: 0.6rem 0.6rem; border-radius: 8px; border: none; background: transparent; color: #94a3b8; font-weight: 600; font-size: 0.88rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px;">
             🍏 iOS (iPhone)
           </button>
-          <button id="tab-btn-android" class="app-platform-tab-btn" onclick="switchInstallTab('android')" style="flex: 1; padding: 0.6rem 0.6rem; border-radius: 999px; border: none; background: transparent; color: #94a3b8; font-weight: 600; font-size: 0.88rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px;">
+          <button id="tab-btn-android" class="app-platform-tab-btn" onclick="switchInstallTab('android')" style="flex: 1; padding: 0.6rem 0.6rem; border-radius: 8px; border: none; background: transparent; color: #94a3b8; font-weight: 600; font-size: 0.88rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 5px;">
             🤖 Android
           </button>
         </div>
@@ -973,8 +973,8 @@
   <!-- BOTTOM PLAYER -->
   <div id="bottom-player" class="bottom-player"></div>
 
-  <script src="data.js?v=20261026.46"></script>
-  <script src="app.js?v=20261026.46"></script>
+  <script src="data.js?v=1793530477201"></script>
+  <script src="app.js?v=1793530477201"></script>
 
   <!-- Service Worker Registration & Offline Support -->
   <script>
