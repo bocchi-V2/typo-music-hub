@@ -1,103 +1,54 @@
-// Add debug log to body so we can see what failed on server
 const https = require('https');
 
 function httpsGet(url, options = {}) {
   return new Promise((resolve, reject) => {
-    https.get(url, {
+    const req = https.get(url, {
       headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
         'Accept-Language': 'th,en;q=0.9',
-        'Referer': 'https://ytmp3.gl/',
-        'Origin': 'https://ytmp3.gl',
         ...options.headers
       },
-      timeout: 12000
+      timeout: 8000
     }, (res) => {
+      // Follow redirects
       if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
         return httpsGet(res.headers.location, options).then(resolve).catch(reject);
       }
       let data = '';
       res.on('data', chunk => data += chunk);
-      res.on('end', () => {
-        try {
-          const json = JSON.parse(data);
-          resolve({ statusCode: res.statusCode, data, json, headers: res.headers });
-        } catch (e) {
-          resolve({ statusCode: res.statusCode, data, headers: res.headers });
-        }
-      });
-    }).on('error', reject);
+      res.on('end', () => resolve({ statusCode: res.statusCode, data, headers: res.headers }));
+    });
+    req.on('error', reject);
+    req.on('timeout', () => { req.destroy(); reject(new Error('timeout')); });
   });
 }
 
-async function searchYouTube(query) {
-  try {
-    const searchRes = await httpsGet(`https://www.youtube.com/results?search_query=${encodeURIComponent(query + ' official audio')}`);
-    const match = searchRes.data.match(/\/watch\?v=([a-zA-Z0-9_-]{11})/);
-    return match ? match[1] : null;
-  } catch (e) {
-    return null;
-  }
-}
-
-async function getGammaMp3(videoId, query) {
-  const debug = [];
-  try {
-    debug.push('fetching ytmp3.gl');
-    const home = await httpsGet('https://ytmp3.gl/');
-    debug.push(`ytmp3.gl status: ${home.statusCode}`);
-    const m = home.data.match(/apiKey\s*=\s*['"]([^'"]+)['"]/);
-    const apiKey = m ? m[1] : null;
-    debug.push(`apiKey: ${apiKey ? 'found' : 'missing'}`);
-    if (!apiKey) return { directAudioUrl: null, debug };
-
-    debug.push('calling auth');
-    const auth = await httpsGet(`https://gamma.gammacloud.net/api/v1/auth?api_key=${apiKey}&_=${Date.now()}`);
-    debug.push(`auth status: ${auth.statusCode}, body: ${auth.data.slice(0, 100)}`);
-    const token = auth.json?.key;
-    if (!token) return { directAudioUrl: null, debug };
-
-    debug.push('calling init');
-    const init = await httpsGet(`https://gamma.gammacloud.net/api/v1/init?_=${Date.now()}`, {
-      headers: { 'Authorization': `Bearer ${token}` }
+function httpsPost(url, body, headers = {}) {
+  return new Promise((resolve, reject) => {
+    const u = new URL(url);
+    const postData = typeof body === 'string' ? body : JSON.stringify(body);
+    const req = https.request({
+      hostname: u.hostname,
+      port: u.port || 443,
+      path: u.pathname + u.search,
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'Content-Length': Buffer.byteLength(postData),
+        ...headers
+      },
+      timeout: 12000
+    }, (res) => {
+      let data = '';
+      res.on('data', chunk => data += chunk);
+      res.on('end', () => resolve({ statusCode: res.statusCode, data, headers: res.headers }));
     });
-    debug.push(`init status: ${init.statusCode}`);
-    const convertURL = init.json?.convertURL;
-    if (!convertURL) return { directAudioUrl: null, debug };
-
-    debug.push('calling convertURL');
-    let conv = await httpsGet(`${convertURL}&v=${videoId}&f=mp3&_=${Date.now()}`);
-    debug.push(`conv status: ${conv.statusCode}, redirect: ${conv.json?.redirect}`);
-    if (conv.json?.redirect === 1 && conv.json?.redirectURL) {
-      conv = await httpsGet(`${conv.json.redirectURL}&v=${videoId}&f=mp3&_=${Date.now()}`);
-      debug.push(`redirect conv status: ${conv.statusCode}`);
-    }
-
-    if (conv.json?.downloadURL) {
-      return {
-        directAudioUrl: `${conv.json.downloadURL}&v=${videoId}&f=mp3&r=ytmp3.gl`,
-        title: conv.json.title || query,
-        debug
-      };
-    }
-
-    if (conv.json?.progressURL) {
-      for (let i = 0; i < 7; i++) {
-        await new Promise(r => setTimeout(r, 1800));
-        const prog = await httpsGet(`${conv.json.progressURL}&_=${Date.now()}`);
-        if (prog.json?.status === 'download' || prog.json?.progress >= 3) {
-          return {
-            directAudioUrl: `${conv.json.downloadURL}&v=${videoId}&f=mp3&r=ytmp3.gl`,
-            title: prog.json.title || conv.json.title || query,
-            debug
-          };
-        }
-      }
-    }
-  } catch (err) {
-    debug.push(`error: ${err.message}`);
-  }
-  return { directAudioUrl: null, debug };
+    req.on('error', reject);
+    req.on('timeout', () => { req.destroy(); reject(new Error('timeout')); });
+    req.write(postData);
+    req.end();
+  });
 }
 
 exports.handler = async (event) => {
@@ -113,56 +64,110 @@ exports.handler = async (event) => {
   }
 
   try {
-    let q = (event.queryStringParameters?.q || '').trim();
-    if (!q && event.body) {
-      try {
-        const body = JSON.parse(event.body);
-        q = (body.query || `${body.title || ''} ${body.artist || ''}`).trim();
-      } catch (e) {}
+    let q = '';
+    if (event.httpMethod === 'POST') {
+      const body = JSON.parse(event.body || '{}');
+      q = (body.query || `${body.title || ''} ${body.artist || ''}`).trim();
+    } else {
+      q = (event.queryStringParameters?.q || '').trim();
     }
 
     if (!q) {
       return { statusCode: 400, headers: corsHeaders, body: JSON.stringify({ ok: false, error: 'Query required' }) };
     }
 
-    const videoId = await searchYouTube(q);
+    // Step 1: Search YouTube for the video ID
+    const searchQuery = `${q} official audio`;
+    let videoId = null;
+    try {
+      const searchRes = await httpsGet(`https://www.youtube.com/results?search_query=${encodeURIComponent(searchQuery)}`);
+      const match = searchRes.data.match(/\/watch\?v=([a-zA-Z0-9_-]{11})/);
+      if (match) videoId = match[1];
+    } catch (e) {
+      console.warn('YouTube search failed:', e.message);
+    }
+
     if (!videoId) {
       return {
         statusCode: 200,
         headers: corsHeaders,
-        body: JSON.stringify({ ok: false, error: 'No YouTube video found', query: q })
+        body: JSON.stringify({ ok: false, error: 'No video found', searchQuery: q })
       };
     }
 
     const youtubeUrl = `https://www.youtube.com/watch?v=${videoId}`;
-    const gammaResult = await getGammaMp3(videoId, q);
 
-    if (gammaResult && gammaResult.directAudioUrl) {
-      return {
-        statusCode: 200,
-        headers: corsHeaders,
-        body: JSON.stringify({
-          ok: true,
-          fullLength: true,
-          videoId,
-          videoUrl: youtubeUrl,
-          directAudioUrl: gammaResult.directAudioUrl,
-          title: gammaResult.title,
-          query: q
-        })
-      };
+    // Step 2: Try Cobalt API to get direct audio download URL
+    let directAudioUrl = null;
+
+    // Try cobalt.tools API (primary)
+    const cobaltInstances = [
+      'https://api.cobalt.tools',
+      'https://cobalt-api.hyper.lol'
+    ];
+
+    for (const cobaltBase of cobaltInstances) {
+      if (directAudioUrl) break;
+      try {
+        const cobaltRes = await httpsPost(`${cobaltBase}/`, {
+          url: youtubeUrl,
+          downloadMode: 'audio',
+          audioFormat: 'mp3'
+        }, {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        });
+
+        if (cobaltRes.statusCode === 200) {
+          const cobaltData = JSON.parse(cobaltRes.data);
+          if (cobaltData.url) {
+            directAudioUrl = cobaltData.url;
+          } else if (cobaltData.audio) {
+            directAudioUrl = cobaltData.audio;
+          }
+        }
+      } catch (e) {
+        console.warn(`Cobalt ${cobaltBase} failed:`, e.message);
+      }
+    }
+
+    // Step 3: Try alternative - piped.video API
+    if (!directAudioUrl) {
+      const pipedInstances = [
+        'pipedapi.kavin.rocks',
+        'api.piped.projectsegfau.lt'
+      ];
+      for (const pipedHost of pipedInstances) {
+        if (directAudioUrl) break;
+        try {
+          const pipedRes = await httpsGet(`https://${pipedHost}/streams/${videoId}`);
+          if (pipedRes.statusCode === 200) {
+            const pipedData = JSON.parse(pipedRes.data);
+            // Get audio-only stream with highest quality
+            if (pipedData.audioStreams && pipedData.audioStreams.length > 0) {
+              const sorted = pipedData.audioStreams
+                .filter(s => s.mimeType && s.mimeType.includes('audio'))
+                .sort((a, b) => (b.bitrate || 0) - (a.bitrate || 0));
+              if (sorted.length > 0) {
+                directAudioUrl = sorted[0].url;
+              }
+            }
+          }
+        } catch (e) {
+          console.warn(`Piped ${pipedHost} failed:`, e.message);
+        }
+      }
     }
 
     return {
       statusCode: 200,
       headers: corsHeaders,
       body: JSON.stringify({
-        ok: false,
+        ok: true,
         videoId,
         videoUrl: youtubeUrl,
-        directAudioUrl: null,
-        debug: gammaResult?.debug,
-        query: q
+        directAudioUrl: directAudioUrl || null,
+        searchQuery: q
       })
     };
   } catch (err) {

@@ -14195,6 +14195,8 @@ const SONGS = [
   {
     "id": 27087,
     "title": "สาธุ (Emo Rock Version)",
+    "duration": 71,
+    "isFull": true,
     "artist": "arick pink elephant (TikTok)",
     "coverUrl": "sathu_emo_cover.jpg",
     "previewUrl": "sathu_emo_arick.mp3",
@@ -611863,8 +611865,11 @@ const SONGS = [
     "id": 22903,
     "title": "สาธุ (Sathu) [feat. ปลาย กนกพร]",
     "artist": "ASIA7",
-    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/8e/ed/3b/8eed3b2d-9f7d-a860-4bfc-24d4ac467c84/888332887274.jpg/600x600bb.jpg",
-    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a2/aa/98/a2aa98c2-c1b6-463f-9277-c73361abf01f/mzaf_17500534216737138431.plus.aac.p.m4a",
+    "duration": 222,
+    "isFull": true,
+    "coverUrl": "sathu_emo_cover.jpg",
+    "previewUrl": "sathu_asia7_full.mp3",
+    "audioUrl": "sathu_asia7_full.mp3",
     "spotifyUrl": "https://open.spotify.com/search/%E0%B8%AA%E0%B8%B2%E0%B8%98%E0%B8%B8%20(Sathu)%20%5Bfeat.%20%E0%B8%9B%E0%B8%A5%E0%B8%B2%E0%B8%A2%20%E0%B8%81%E0%B8%99%E0%B8%81%E0%B8%9E%E0%B8%A3%5D%20ASIA7",
     "mood": "epic",
     "tags": [
