@@ -1,3 +1,4 @@
+// Add debug log to body so we can see what failed on server
 const https = require('https');
 
 function httpsGet(url, options = {}) {
@@ -40,31 +41,43 @@ async function searchYouTube(query) {
 }
 
 async function getGammaMp3(videoId, query) {
+  const debug = [];
   try {
+    debug.push('fetching ytmp3.gl');
     const home = await httpsGet('https://ytmp3.gl/');
+    debug.push(`ytmp3.gl status: ${home.statusCode}`);
     const m = home.data.match(/apiKey\s*=\s*['"]([^'"]+)['"]/);
     const apiKey = m ? m[1] : null;
-    if (!apiKey) return null;
+    debug.push(`apiKey: ${apiKey ? 'found' : 'missing'}`);
+    if (!apiKey) return { directAudioUrl: null, debug };
 
+    debug.push('calling auth');
     const auth = await httpsGet(`https://gamma.gammacloud.net/api/v1/auth?api_key=${apiKey}&_=${Date.now()}`);
+    debug.push(`auth status: ${auth.statusCode}, body: ${auth.data.slice(0, 100)}`);
     const token = auth.json?.key;
-    if (!token) return null;
+    if (!token) return { directAudioUrl: null, debug };
 
+    debug.push('calling init');
     const init = await httpsGet(`https://gamma.gammacloud.net/api/v1/init?_=${Date.now()}`, {
       headers: { 'Authorization': `Bearer ${token}` }
     });
+    debug.push(`init status: ${init.statusCode}`);
     const convertURL = init.json?.convertURL;
-    if (!convertURL) return null;
+    if (!convertURL) return { directAudioUrl: null, debug };
 
+    debug.push('calling convertURL');
     let conv = await httpsGet(`${convertURL}&v=${videoId}&f=mp3&_=${Date.now()}`);
+    debug.push(`conv status: ${conv.statusCode}, redirect: ${conv.json?.redirect}`);
     if (conv.json?.redirect === 1 && conv.json?.redirectURL) {
       conv = await httpsGet(`${conv.json.redirectURL}&v=${videoId}&f=mp3&_=${Date.now()}`);
+      debug.push(`redirect conv status: ${conv.statusCode}`);
     }
 
     if (conv.json?.downloadURL) {
       return {
         directAudioUrl: `${conv.json.downloadURL}&v=${videoId}&f=mp3&r=ytmp3.gl`,
-        title: conv.json.title || query
+        title: conv.json.title || query,
+        debug
       };
     }
 
@@ -75,15 +88,16 @@ async function getGammaMp3(videoId, query) {
         if (prog.json?.status === 'download' || prog.json?.progress >= 3) {
           return {
             directAudioUrl: `${conv.json.downloadURL}&v=${videoId}&f=mp3&r=ytmp3.gl`,
-            title: prog.json.title || conv.json.title || query
+            title: prog.json.title || conv.json.title || query,
+            debug
           };
         }
       }
     }
   } catch (err) {
-    console.warn('Gamma flow failed:', err.message);
+    debug.push(`error: ${err.message}`);
   }
-  return null;
+  return { directAudioUrl: null, debug };
 }
 
 exports.handler = async (event) => {
@@ -99,19 +113,18 @@ exports.handler = async (event) => {
   }
 
   try {
-    let q = '';
-    if (event.httpMethod === 'POST') {
-      const body = JSON.parse(event.body || '{}');
-      q = (body.query || `${body.title || ''} ${body.artist || ''}`).trim();
-    } else {
-      q = (event.queryStringParameters?.q || '').trim();
+    let q = (event.queryStringParameters?.q || '').trim();
+    if (!q && event.body) {
+      try {
+        const body = JSON.parse(event.body);
+        q = (body.query || `${body.title || ''} ${body.artist || ''}`).trim();
+      } catch (e) {}
     }
 
     if (!q) {
       return { statusCode: 400, headers: corsHeaders, body: JSON.stringify({ ok: false, error: 'Query required' }) };
     }
 
-    // 1. Search YouTube
     const videoId = await searchYouTube(q);
     if (!videoId) {
       return {
@@ -122,8 +135,6 @@ exports.handler = async (event) => {
     }
 
     const youtubeUrl = `https://www.youtube.com/watch?v=${videoId}`;
-
-    // 2. Resolve direct MP3 audio
     const gammaResult = await getGammaMp3(videoId, q);
 
     if (gammaResult && gammaResult.directAudioUrl) {
@@ -150,6 +161,7 @@ exports.handler = async (event) => {
         videoId,
         videoUrl: youtubeUrl,
         directAudioUrl: null,
+        debug: gammaResult?.debug,
         query: q
       })
     };
