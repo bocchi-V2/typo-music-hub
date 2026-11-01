@@ -2914,27 +2914,53 @@ function renderAnimeMatchModalContent(song, anime) {
   `;
 }
 
-// Only one toggleMenu function
-function toggleMenu() {
+// Robust toggleMenu function
+function toggleMenu(event) {
+  if (event) {
+    if (typeof event.stopPropagation === 'function') event.stopPropagation();
+    if (event.cancelBubble !== undefined) event.cancelBubble = true;
+  }
   const navLinks = document.querySelector('.nav-links');
   const btn = document.getElementById('hamburger');
   if (navLinks) {
-    navLinks.classList.toggle('open');
+    const willOpen = !navLinks.classList.contains('open');
+    navLinks.classList.toggle('open', willOpen);
     if (btn) {
-      const isOpen = navLinks.classList.contains('open');
-      btn.innerHTML = isOpen ? '<span class="hamburger-icon">✕</span> <span class="hamburger-text">ปิด</span>' : '<span class="hamburger-icon">☰</span> <span class="hamburger-text">โซนเพลง</span>';
+      btn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+      btn.innerHTML = willOpen
+        ? '<span class="hamburger-icon">✕</span> <span class="hamburger-text">ปิด</span>'
+        : '<span class="hamburger-icon">☰</span> <span class="hamburger-text">โซนเพลง</span>';
     }
   }
 }
 
-// Close menu when clicking outside
+// Close menu when clicking outside or when selecting a nav link
 document.addEventListener('click', (e) => {
   const navLinks = document.querySelector('.nav-links');
   const btn = document.getElementById('hamburger');
-  if (navLinks && navLinks.classList.contains('open')) {
-    if (!navLinks.contains(e.target) && btn && !btn.contains(e.target)) {
-      navLinks.classList.remove('open');
-      if (btn) btn.innerHTML = '<span class="hamburger-icon">☰</span> <span class="hamburger-text">โซนเพลง</span>';
+  if (!navLinks || !navLinks.classList.contains('open')) return;
+
+  // If clicked a link inside nav-links, close the menu smoothly
+  if (e.target && e.target.closest('.nav-link')) {
+    navLinks.classList.remove('open');
+    if (btn) {
+      btn.setAttribute('aria-expanded', 'false');
+      btn.innerHTML = '<span class="hamburger-icon">☰</span> <span class="hamburger-text">โซนเพลง</span>';
+    }
+    return;
+  }
+
+  // If clicked inside the hamburger button itself, toggleMenu handles it
+  if (e.target && e.target.closest('#hamburger')) {
+    return;
+  }
+
+  // If clicked anywhere else outside, close the menu
+  if (!navLinks.contains(e.target)) {
+    navLinks.classList.remove('open');
+    if (btn) {
+      btn.setAttribute('aria-expanded', 'false');
+      btn.innerHTML = '<span class="hamburger-icon">☰</span> <span class="hamburger-text">โซนเพลง</span>';
     }
   }
 });
@@ -6319,31 +6345,14 @@ async function saveGeminiApiKey() {
 async function updateGeminiKeyStatusBadge() {
   const badge = document.getElementById('gemini-engine-badge');
   const subtext = document.getElementById('gemini-status-subtext');
-  const localKey = getGeminiApiKey();
-
-  let hasServerKey = false;
-  try {
-    const res = await fetch(getAiApiBase() + '/api/ai/config');
-    if (res.ok) {
-      const data = await res.json();
-      hasServerKey = !!data.hasKey;
-    }
-  } catch (e) {}
-
-  if (localKey || hasServerKey) {
-    if (badge) {
-      badge.textContent = '✦ Haimiya AI';
-      badge.style.background = 'linear-gradient(135deg, rgba(56, 189, 248, 0.35), rgba(129, 140, 248, 0.45))';
-      badge.style.borderColor = 'rgba(56, 189, 248, 0.6)';
-    }
-    if (subtext) subtext.textContent = 'Haimiya AI พร้อมแนะนำเพลงและช่วยตัดต่อคลิปค่ะ';
-  } else {
-    if (badge) {
-      badge.textContent = '⚡ Free AI Online';
-      badge.style.background = 'linear-gradient(135deg, rgba(16, 185, 129, 0.25), rgba(56, 189, 248, 0.25))';
-      badge.style.borderColor = 'rgba(16, 185, 129, 0.5)';
-    }
-    if (subtext) subtext.textContent = 'ระบบ AI จริงพร้อมใช้งาน • สั่งเพิ่มเพลง & คุยได้ทันที';
+  if (badge) {
+    badge.textContent = '✦ Haimiya AI';
+    badge.style.background = 'linear-gradient(135deg, rgba(56, 189, 248, 0.35), rgba(129, 140, 248, 0.45))';
+    badge.style.borderColor = 'rgba(56, 189, 248, 0.6)';
+    badge.style.borderRadius = '6px';
+  }
+  if (subtext) {
+    subtext.textContent = 'Haimiya AI พร้อมแนะนำเพลงและช่วยตัดต่อคลิปค่ะ';
   }
 }
 
