@@ -14162,6 +14162,32 @@ const ANIMES = [
     "coverFallback": "https://media.kitsu.app/anime/poster_images/7880/medium.jpg",
     "anifumeUrl": "https://anifume.com/?s=No%20Game%20No%20Life",
     "mood": "hype"
+  },
+  {
+    "id": 1035,
+    "name": "Danganronpa: Kibou no Gakuen to Zetsubou no Koukousei The Animation",
+    "nameTH": "Danganronpa: Kibou no Gakuen to Zetsubou no Koukousei The Animation",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/7469/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/7469/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Danganronpa%3A%20Kibou%20no%20Gakuen%20to%20Zetsubou%20no%20Koukousei%20The%20Animation",
+    "mood": "hype"
+  },
+  {
+    "id": 1036,
+    "name": "Akatsuki no Yona",
+    "nameTH": "Akatsuki no Yona",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8648/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/8648/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Akatsuki%20no%20Yona",
+    "mood": "hype"
   }
 ];
 
