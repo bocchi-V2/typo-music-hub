@@ -51,9 +51,8 @@ exports.handler = async (event, context) => {
     });
 
     const videoUrl = videoId ? `https://www.youtube.com/watch?v=${videoId}` : `https://www.youtube.com/results?search_query=${encodeURIComponent(searchQuery)}`;
-    const downloadUrl = videoId 
-      ? `https://y2mate.nu/en/youtube-to-mp3/?url=https://www.youtube.com/watch?v=${videoId}`
-      : `https://ytmp3.nu/?url=${encodeURIComponent(searchUrl)}`;
+    const y2mateUrl = videoId ? `https://y2mate.is/watch?v=${videoId}` : `https://y2mate.is/`;
+    const ytmp3Url = videoId ? `https://ytmp3.nu/?url=https://www.youtube.com/watch?v=${videoId}` : `https://ytmp3.nu/?url=${encodeURIComponent(searchUrl)}`;
 
     return {
       statusCode: 200,
@@ -62,7 +61,8 @@ exports.handler = async (event, context) => {
         ok: true,
         videoId,
         videoUrl,
-        downloadUrl,
+        downloadUrl: y2mateUrl,
+        backupDownloadUrl: ytmp3Url,
         searchQuery: q
       })
     };
