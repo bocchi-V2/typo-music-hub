@@ -6622,3 +6622,60 @@ body.in-secret-mode .nav-link-secret {
 .zone-tab-btn.btn-secret-zone.active {
   border-bottom-color: #facc15 !important;
 }
+
+
+/* ========================================================
+   ANTI-BLOB FIX: ลบก้อนกลมทั้งหมดเมื่อเลือกอะไร
+   ทุก active state ให้เป็นเส้นขีดใต้เท่านั้น ไม่มีพื้นหลังก้อนกลม/Pill
+   ======================================================== */
+*, *::before, *::after {
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+button:focus, a:focus, [tabindex]:focus,
+.btn-sm:focus, .pill-btn:focus, .tag-btn:focus, 
+.zone-tab-btn:focus, .zone-hub-btn:focus,
+.studio-zone-tab:focus, .match-filter-btn:focus,
+.lang-toggle-btn:focus, .secret-chip:focus,
+.nav-link:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--primary) !important;
+  outline-offset: 2px !important;
+}
+
+.studio-zone-tab.active,
+.tag-btn.active,
+.pill-btn.active,
+.match-filter-btn.active,
+.zone-tab-btn.active,
+.zone-hub-btn.active,
+.lang-toggle-btn.active,
+.secret-chip.active,
+.nav-link.active-nav,
+.btn-sfx-toggle.active {
+  background: transparent !important;
+  background-image: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: 2.8px solid var(--primary) !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+.studio-zone-tab.tab-saved.active {
+  border-bottom-color: #ff3366 !important;
+}
+
+.studio-zone-tab.tab-secret.active,
+.zone-tab-btn.btn-secret-zone.active {
+  border-bottom-color: #facc15 !important;
+}
