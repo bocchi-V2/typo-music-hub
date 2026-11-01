@@ -7047,3 +7047,283 @@ button:focus-visible {
 .btn-yt {
   border-radius: 8px !important;
 }
+
+
+/* ========================================================
+   SEARCH BAR: กลมมน (999px) + ธีมมืด Dark Glass
+   ======================================================== */
+.search-input-box {
+  position: relative !important;
+  width: 100% !important;
+  background: rgba(15, 23, 42, 0.88) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 999px !important;
+  backdrop-filter: blur(18px) !important;
+  -webkit-backdrop-filter: blur(18px) !important;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.08) !important;
+  transition: all 0.25s ease !important;
+}
+
+.search-input-box:focus-within {
+  background: rgba(15, 23, 42, 0.98) !important;
+  border-color: rgba(56, 189, 248, 0.7) !important;
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.3), 0 4px 25px rgba(0, 0, 0, 0.6) !important;
+}
+
+.search-input {
+  width: 100% !important;
+  padding: 0.85rem 2.8rem 0.85rem 3rem !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 999px !important;
+  color: #f8fafc !important;
+  font-family: 'Kanit', sans-serif !important;
+  font-size: 0.98rem !important;
+  font-weight: 500 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.search-input::placeholder {
+  color: #64748b !important;
+}
+
+/* Force dark theme even when Chrome / Safari autofills */
+.search-input:-webkit-autofill,
+.search-input:-webkit-autofill:hover, 
+.search-input:-webkit-autofill:focus, 
+.search-input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #0f172a inset !important;
+  -webkit-text-fill-color: #f8fafc !important;
+  caret-color: #f8fafc !important;
+  border-radius: 999px !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+
+.search-icon {
+  color: #94a3b8 !important;
+}
+
+.search-clear-btn {
+  color: #94a3b8 !important;
+}
+.search-clear-btn:hover {
+  color: #f8fafc !important;
+}
+
+/* Funk / Secret Search Box */
+.secret-search-box {
+  background: rgba(15, 23, 42, 0.88) !important;
+  border: 1.5px solid rgba(168, 85, 247, 0.35) !important;
+  border-radius: 999px !important;
+}
+.secret-search-input {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 999px !important;
+  color: #f8fafc !important;
+}
+.secret-search-input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #0f172a inset !important;
+  -webkit-text-fill-color: #f8fafc !important;
+  border-radius: 999px !important;
+}
+
+/* ========================================================
+   ปุ่มการ์ดเพลง: สี่เหลี่ยมมุมมน 8px (ไม่ใช่ทรงแคปซูลยาว)
+   ======================================================== */
+.song-card-actions .btn-sm,
+.btn-download-audio,
+.btn-spotify,
+.btn-anime-match,
+.btn-match,
+.btn-bp-save,
+.btn-yt {
+  border-radius: 8px !important;
+}
+
+/* ========================================================
+   FLOATING DOWNLOAD PROGRESS WIDGET (% แจ้งเตือนแบบเรียลไทม์)
+   ======================================================== */
+.direct-dl-widget {
+  position: fixed !important;
+  bottom: 24px !important;
+  right: 24px !important;
+  z-index: 999999 !important;
+  background: rgba(15, 23, 42, 0.97) !important;
+  border: 1.5px solid rgba(56, 189, 248, 0.5) !important;
+  border-radius: 16px !important;
+  padding: 12px 16px !important;
+  min-width: 320px !important;
+  max-width: 90vw !important;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.85), 0 0 25px rgba(56, 189, 248, 0.25) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  animation: slideInDl 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  box-sizing: border-box !important;
+  color: #fff !important;
+  font-family: 'Kanit', sans-serif !important;
+}
+
+@keyframes slideInDl {
+  from { opacity: 0; transform: translateY(20px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.dl-widget-header {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin-bottom: 8px !important;
+}
+
+.dl-widget-icon {
+  font-size: 1.3rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.dl-widget-info {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+.dl-widget-title {
+  font-weight: 700 !important;
+  font-size: 0.92rem !important;
+  color: #fff !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.dl-widget-status {
+  font-size: 0.78rem !important;
+  color: #94a3b8 !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  margin-top: 2px !important;
+}
+
+.dl-widget-pct {
+  font-weight: 700 !important;
+  color: #38bdf8 !important;
+  font-size: 0.85rem !important;
+}
+
+.dl-widget-track {
+  width: 100% !important;
+  height: 6px !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 999px !important;
+  overflow: hidden !important;
+  position: relative !important;
+}
+
+.dl-widget-fill {
+  height: 100% !important;
+  background: linear-gradient(90deg, #10b981, #38bdf8) !important;
+  border-radius: 999px !important;
+  transition: width 0.15s ease-out !important;
+  box-shadow: 0 0 10px rgba(56, 189, 248, 0.6) !important;
+}
+
+@media (max-width: 640px) {
+  .direct-dl-widget {
+    bottom: 85px !important;
+    left: 16px !important;
+    right: 16px !important;
+    min-width: unset !important;
+    max-width: unset !important;
+  }
+}
+
+
+/* ========================================================
+   CRITICAL RESPONSIVE FIXES: BOTTOM PLAYER & HAMBURGER & BUTTONS
+   ======================================================== */
+.hamburger {
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  z-index: 1002 !important;
+  border-radius: 8px !important;
+}
+
+.hamburger * {
+  pointer-events: none !important;
+}
+
+.nav-links.open {
+  z-index: 99999 !important;
+  display: flex !important;
+}
+
+/* Bottom Player: ป้องกันปุ่มเบียด / ทับเวลา 0:30 */
+.bottom-player .bp-controls {
+  flex: 1 1 320px !important;
+  min-width: 220px !important;
+  max-width: 500px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.25rem !important;
+  margin: 0 0.5rem !important;
+}
+
+.bottom-player .bp-controls-row {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px !important;
+}
+
+.bottom-player .bp-progress-wrap {
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}
+
+.bottom-player .bp-progress-bar {
+  flex: 1 1 auto !important;
+  min-width: 90px !important;
+}
+
+.bottom-player .bp-actions-panel {
+  flex: 0 0 auto !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  margin-left: auto !important;
+}
+
+.bottom-player .bp-actions {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.35rem !important;
+  flex-wrap: wrap !important;
+  justify-content: flex-end !important;
+  max-width: 440px !important;
+}
+
+.bottom-player .bp-actions .btn-sm {
+  border-radius: 8px !important;
+  padding: 0.35rem 0.65rem !important;
+  font-size: 0.74rem !important;
+  white-space: nowrap !important;
+}
+
+/* ทุกปุ่มการ์ดเพลงเป็นสี่เหลี่ยมมุมมนสวยงาม 8px ไม่ใช่ก้อนกลม */
+.song-card-actions .btn-sm,
+.btn-download-audio,
+.btn-spotify,
+.btn-anime-match,
+.btn-match,
+.btn-bp-save,
+.btn-yt,
+.btn-floating-player {
+  border-radius: 8px !important;
+}

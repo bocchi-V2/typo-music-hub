@@ -14193,6 +14193,36 @@ const ANIMES = [
 
 const SONGS = [
   {
+    "id": 27087,
+    "title": "สาธุ (Emo Rock Version)",
+    "artist": "arick pink elephant (TikTok)",
+    "coverUrl": "sathu_emo_cover.jpg",
+    "previewUrl": "sathu_emo_arick.mp3",
+    "audioUrl": "sathu_emo_arick.mp3",
+    "spotifyUrl": "https://www.tiktok.com/@arickpinkelephant182/video/7689434606638238996",
+    "youtubeUrl": "https://www.tiktok.com/@arickpinkelephant182/video/7689434606638238996",
+    "mood": "hype",
+    "tags": [
+      "สาธุ",
+      "TikTok",
+      "Emo",
+      "Rock",
+      "Pink Elephant",
+      "ไวรัล",
+      "เพลงเต็ม 1 นาที"
+    ],
+    "bpm": "เร็ว (145 BPM)",
+    "lang": "th",
+    "animeId": 1,
+    "animeMatch": [
+      1,
+      2
+    ],
+    "reason": "เพลง 'สาธุ' ในเวอร์ชัน Emo Rock ของ arick pink elephant (TikTok ไวรัล) อารมณ์เดือดจัด จังหวะสับและกีตาร์แตก เหมาะมากกับการตัดคลิปไทโปคู่กับ Jujutsu Kaisen หรือ Chainsaw Man",
+    "typoIdea": "แอนิเมชันตัวอักษรแบบ Grunge / Glitch Effect ตามท่อนว้ากและจังหวะกลองสับเร็ว สลับซูมกระแทกบีท",
+    "audioFallback": null
+  },
+  {
     "id": 1,
     "title": "ดาวหางฮัลเลย์",
     "artist": "fellow fellow",
