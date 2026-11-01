@@ -1010,16 +1010,9 @@ async function downloadSongAudio(songId, event) {
                (typeof SONGS !== 'undefined' && SONGS.find(s => s.id === songId));
   if (!song) return;
 
-  const audioUrl = song.audioUrl || song.previewUrl;
-  if (!audioUrl) {
-    showToast(currentAppLang === 'th' ? '⚠️ เพลงนี้ไม่มีไฟล์เสียงให้ดาวน์โหลดค่ะ' : '⚠️ No audio file available');
-    return;
-  }
-
   const safeTitle = (song.title || 'song').replace(/[\\/:*?"<>|]/g, '').trim();
   const safeArtist = (song.artist || 'artist').replace(/[\\/:*?"<>|]/g, '').trim();
-  const ext = audioUrl.includes('.mp3') ? 'mp3' : 'm4a';
-  const filename = `${safeTitle} - ${safeArtist}.${ext}`;
+  const filename = `${safeTitle} - ${safeArtist}.mp3`;
 
   // Remove existing widget if any
   const existingWidget = document.getElementById('direct-download-progress-bar');
@@ -1031,11 +1024,11 @@ async function downloadSongAudio(songId, event) {
   widget.className = 'direct-dl-widget';
   widget.innerHTML = `
     <div class="dl-widget-header">
-      <span class="dl-widget-icon">📥</span>
+      <span class="dl-widget-icon" id="dl-widget-icon">⏳</span>
       <div class="dl-widget-info">
         <div class="dl-widget-title">${escapeHtml(song.title)} - ${escapeHtml(song.artist)}</div>
         <div class="dl-widget-status">
-          <span id="dl-widget-label">กำลังดาวน์โหลดลงเครื่อง...</span>
+          <span id="dl-widget-label">กำลังค้นหาและเตรียมไฟล์เพลงเต็ม...</span>
           <span class="dl-widget-pct" id="dl-widget-pct">0%</span>
         </div>
       </div>
@@ -1049,14 +1042,147 @@ async function downloadSongAudio(songId, event) {
   const pctEl = document.getElementById('dl-widget-pct');
   const fillEl = document.getElementById('dl-widget-fill');
   const labelEl = document.getElementById('dl-widget-label');
+  const iconEl = document.getElementById('dl-widget-icon');
+
+  // Animated progress ticker
+  let currentPct = 0;
+  let progressInterval = setInterval(() => {
+    if (currentPct < 75) {
+      currentPct += Math.floor(Math.random() * 8) + 4;
+      if (currentPct > 75) currentPct = 75;
+      if (pctEl) pctEl.textContent = currentPct + '%';
+      if (fillEl) fillEl.style.width = currentPct + '%';
+    }
+  }, 280);
+
+  // Helper to mark 100% complete
+  const finishDownloadUi = (isFull = true) => {
+    clearInterval(progressInterval);
+    if (pctEl) pctEl.textContent = '100%';
+    if (fillEl) {
+      fillEl.style.width = '100%';
+      fillEl.style.background = '#10b981';
+    }
+    if (iconEl) iconEl.textContent = '✅';
+    if (labelEl) {
+      labelEl.textContent = isFull ? 'บันทึกเพลงเต็มลงเครื่องแล้ว! (100%)' : 'บันทึกลงเครื่องแล้ว! (100%)';
+      labelEl.style.color = '#34d399';
+    }
+    if (widget) {
+      widget.style.borderColor = 'rgba(16, 185, 129, 0.8)';
+      setTimeout(() => {
+        widget.style.opacity = '0';
+        widget.style.transform = 'translateY(15px)';
+        setTimeout(() => widget.remove(), 400);
+      }, 3500);
+    }
+    showToast(currentAppLang === 'th' ? `✅ บันทึกเพลง "${song.title}" (${isFull ? 'เพลงเต็ม' : 'ตัวอย่าง'}) ลงเครื่องสำเร็จแล้ว! (100%)` : `✅ Downloaded "${song.title}" successfully!`);
+  };
+
+  // Case 1: Already a local full MP3 file (e.g. สาธุ Emo Rock Version)
+  const isLocalFile = song.audioUrl && (song.audioUrl.endsWith('.mp3') || !song.audioUrl.includes('apple.com'));
+  if (isLocalFile) {
+    try {
+      const res = await fetch(song.audioUrl, { mode: 'cors' });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const contentLength = res.headers.get('content-length');
+      const totalBytes = contentLength ? parseInt(contentLength, 10) : 0;
+      let receivedBytes = 0;
+      const chunks = [];
+
+      clearInterval(progressInterval);
+      if (labelEl) labelEl.textContent = 'กำลังบันทึกเพลงเต็มลงเครื่อง...';
+
+      if (res.body && typeof res.body.getReader === 'function') {
+        const reader = res.body.getReader();
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          chunks.push(value);
+          receivedBytes += value.length;
+          if (totalBytes > 0) {
+            const pct = Math.min(99, Math.round((receivedBytes / totalBytes) * 100));
+            if (pctEl) pctEl.textContent = pct + '%';
+            if (fillEl) fillEl.style.width = pct + '%';
+          }
+        }
+      } else {
+        const blob = await res.blob();
+        chunks.push(new Uint8Array(await blob.arrayBuffer()));
+      }
+
+      const finalBlob = new Blob(chunks, { type: 'audio/mpeg' });
+      const blobUrl = URL.createObjectURL(finalBlob);
+      const a = document.createElement('a');
+      a.href = blobUrl;
+      a.download = filename;
+      a.style.display = 'none';
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(() => {
+        URL.revokeObjectURL(blobUrl);
+        a.remove();
+      }, 3000);
+
+      finishDownloadUi(true);
+      return;
+    } catch (err) {
+      console.warn('Local file fetch error:', err);
+    }
+  }
+
+  // Case 2: Query full-song API
+  try {
+    const q = `${song.title || ''} ${song.artist || ''}`.trim();
+    const apiUrl = `/api/ai/get-full-song?q=${encodeURIComponent(q)}`;
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 11000);
+
+    const apiRes = await fetch(apiUrl, { signal: controller.signal });
+    clearTimeout(timeoutId);
+
+    if (apiRes.ok) {
+      const data = await apiRes.json();
+      if (data.ok && data.directAudioUrl) {
+        clearInterval(progressInterval);
+        if (labelEl) labelEl.textContent = 'พบเพลงเต็มแล้ว! กำลังบันทึกลงเครื่อง...';
+        if (pctEl) pctEl.textContent = '90%';
+        if (fillEl) fillEl.style.width = '90%';
+
+        // Direct device download trigger
+        const a = document.createElement('a');
+        a.href = data.directAudioUrl;
+        a.download = filename;
+        a.style.display = 'none';
+        document.body.appendChild(a);
+        a.click();
+        setTimeout(() => a.remove(), 2500);
+
+        finishDownloadUi(true);
+        return;
+      }
+    }
+  } catch (err) {
+    console.warn('Full-song resolution error:', err);
+  }
+
+  // Case 3: Fallback to preview audio stream
+  const fallbackUrl = song.audioUrl || song.previewUrl;
+  if (!fallbackUrl) {
+    clearInterval(progressInterval);
+    if (widget) widget.remove();
+    showToast(currentAppLang === 'th' ? '⚠️ เพลงนี้ไม่มีไฟล์เสียงให้ดาวน์โหลดค่ะ' : '⚠️ No audio file available');
+    return;
+  }
+
+  clearInterval(progressInterval);
+  if (labelEl) labelEl.textContent = 'กำลังดาวน์โหลดไฟล์เสียงลงเครื่อง...';
 
   try {
-    const res = await fetch(audioUrl, { mode: 'cors' });
+    const res = await fetch(fallbackUrl, { mode: 'cors' });
     if (!res.ok) throw new Error('HTTP ' + res.status);
-
     const contentLength = res.headers.get('content-length');
     const totalBytes = contentLength ? parseInt(contentLength, 10) : 0;
-
     let receivedBytes = 0;
     const chunks = [];
 
@@ -1067,7 +1193,6 @@ async function downloadSongAudio(songId, event) {
         if (done) break;
         chunks.push(value);
         receivedBytes += value.length;
-
         if (totalBytes > 0) {
           const pct = Math.min(99, Math.round((receivedBytes / totalBytes) * 100));
           if (pctEl) pctEl.textContent = pct + '%';
@@ -1075,65 +1200,32 @@ async function downloadSongAudio(songId, event) {
         }
       }
     } else {
-      // Fallback if ReadableStream is not available
       const blob = await res.blob();
       chunks.push(new Uint8Array(await blob.arrayBuffer()));
     }
 
-    // 100% Complete
-    if (pctEl) pctEl.textContent = '100%';
-    if (fillEl) fillEl.style.width = '100%';
-    if (labelEl) labelEl.textContent = 'บันทึกลงเครื่องแล้ว!';
-
-    // Assemble blob and trigger direct in-device download
+    const ext = fallbackUrl.includes('.mp3') ? 'mp3' : 'm4a';
     const finalBlob = new Blob(chunks, { type: ext === 'mp3' ? 'audio/mpeg' : 'audio/mp4' });
     const blobUrl = URL.createObjectURL(finalBlob);
-
     const a = document.createElement('a');
     a.href = blobUrl;
-    a.download = filename;
+    a.download = `${safeTitle} - ${safeArtist}.${ext}`;
     a.style.display = 'none';
     document.body.appendChild(a);
     a.click();
-
     setTimeout(() => {
       URL.revokeObjectURL(blobUrl);
       a.remove();
     }, 3000);
 
-    // Update notification to success
-    if (widget) {
-      widget.style.borderColor = 'rgba(16, 185, 129, 0.8)';
-      widget.innerHTML = `
-        <div class="dl-widget-header">
-          <span class="dl-widget-icon">✅</span>
-          <div class="dl-widget-info">
-            <div class="dl-widget-title">${escapeHtml(song.title)}</div>
-            <div class="dl-widget-status" style="color: #34d399; font-weight: 600;">
-              ดาวน์โหลดลงเครื่องเรียบร้อยแล้ว (100%)
-            </div>
-          </div>
-        </div>
-        <div class="dl-widget-track">
-          <div class="dl-widget-fill" style="width: 100%; background: #10b981;"></div>
-        </div>
-      `;
-      setTimeout(() => {
-        widget.style.opacity = '0';
-        widget.style.transform = 'translateY(15px)';
-        setTimeout(() => widget.remove(), 400);
-      }, 3500);
-    }
-
-    showToast(currentAppLang === 'th' ? `✅ บันทึกเพลง "${song.title}" ลงเครื่องสำเร็จแล้ว! (100%)` : `✅ Downloaded "${song.title}" successfully!`);
-
-  } catch (err) {
-    console.warn('Direct in-device download fetch error, attempting direct anchor fallback:', err);
+    finishDownloadUi(false);
+  } catch (fbErr) {
+    console.warn('Fallback download fetch error, attempting direct anchor:', fbErr);
+    clearInterval(progressInterval);
     if (widget) widget.remove();
 
-    // Fallback: direct browser trigger
     const a = document.createElement('a');
-    a.href = audioUrl;
+    a.href = fallbackUrl;
     a.download = filename;
     a.target = '_blank';
     document.body.appendChild(a);
@@ -5109,7 +5201,7 @@ function loadSavedAiChatHistory() {
           <div class="gemini-msg-avatar">
             <img src="haimiya_ai_avatar.jpg" alt="Haimiya AI" onerror="this.src='splash-cover.jpg';" />
           </div>
-          <div class="gemini-msg-bubble">${item.html || renderAiMarkdown(item.text)}</div>
+          <div class="gemini-msg-bubble">${(item.html || renderAiMarkdown(item.text)).replace(/✦\s*(?:Google\s*)?Gemini[^<]*/gi, '✦ Haimiya AI').replace(/Google Gemini 3 Flash/gi, 'Haimiya AI')}</div>
         `;
         list.appendChild(row);
       }

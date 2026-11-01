@@ -7327,3 +7327,82 @@ button:focus-visible {
 .btn-floating-player {
   border-radius: 8px !important;
 }
+
+
+/* ========================================================
+   DEFINITIVE OVERRIDES: DARK GLASS SEARCH, 8PX BUTTONS, NO GEMINI PILL
+   ======================================================== */
+
+/* 1. Hide legacy Gemini engine pill completely */
+.gemini-engine-pill {
+  display: none !important;
+}
+
+/* 2. Search input dark glass theme matching whole site */
+.search-bar-wrap .search-input-box,
+#search-input-box,
+.search-input-box {
+  background: rgba(15, 23, 42, 0.92) !important;
+  background-color: rgba(15, 23, 42, 0.92) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.18) !important;
+  border-radius: 999px !important;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.5) !important;
+}
+
+.search-input,
+#search-input {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: #f8fafc !important;
+  border: none !important;
+  border-radius: 999px !important;
+  outline: none !important;
+}
+
+.search-input:focus,
+#search-input:focus {
+  background: transparent !important;
+  background-color: transparent !important;
+  color: #ffffff !important;
+}
+
+/* Override browser autofill white background */
+.search-input:-webkit-autofill,
+.search-input:-webkit-autofill:hover, 
+.search-input:-webkit-autofill:focus, 
+.search-input:-webkit-autofill:active,
+.search-input:-internal-autofill-selected,
+#search-input:-webkit-autofill,
+#search-input:-internal-autofill-selected {
+  -webkit-box-shadow: 0 0 0 1000px #0f172a inset !important;
+  -webkit-text-fill-color: #f8fafc !important;
+  caret-color: #f8fafc !important;
+  border-radius: 999px !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+
+/* 3. Song card action buttons: 8px rounded rectangle, NOT capsule pills */
+.song-card-actions,
+.song-card .song-card-actions {
+  display: flex !important;
+  gap: 0.45rem !important;
+}
+
+.song-card-actions .btn-sm,
+.song-card-actions .btn-download-audio,
+.song-card-actions .btn-spotify,
+.song-card-actions .btn-anime-match,
+.btn-download-audio,
+.btn-spotify,
+.btn-anime-match {
+  border-radius: 8px !important;
+}
+
+/* 4. Hamburger button: 8px rounded rectangle */
+.hamburger,
+#hamburger {
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+  z-index: 1002 !important;
+}
