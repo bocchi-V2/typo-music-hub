@@ -170,7 +170,7 @@
 
   <div class="stats-bar">
     <div class="stat-item">
-      <span class="stat-num" id="stat-songs-count">22911</span>
+      <span class="stat-num" id="stat-songs-count">27086</span>
       <span class="stat-label" data-i18n="statTotalSongs">เพลงในโซนหลัก</span>
     </div>
     <div class="stat-divider"></div>
@@ -185,7 +185,7 @@
     </div>
     <div class="stat-divider"></div>
     <div class="stat-item">
-      <span class="stat-num" id="stat-pairs-count">3945</span>
+      <span class="stat-num" id="stat-pairs-count">8120</span>
       <span class="stat-label" data-i18n="statPairs">คู่แนะนำพร้อมทริคไทโป</span>
     </div>
   </div>
@@ -215,42 +215,42 @@
         <span class="sz-icon">🇹🇭</span>
         <span class="sz-text">
           <strong class="sz-title" data-i18n="zoneTh">โซนเพลงไทย</strong>
-          <small class="sz-sub" id="sz-sub-th">313 เพลง</small>
+          <small class="sz-sub" id="sz-sub-th">10,186 เพลง</small>
         </span>
       </button>
       <button class="studio-zone-tab" data-ws="en" onclick="switchStudioWorkspace('en')">
         <span class="sz-icon">🇬🇧</span>
         <span class="sz-text">
           <strong class="sz-title" data-i18n="zoneEn">โซนเพลงสากล</strong>
-          <small class="sz-sub" id="sz-sub-en">177 เพลง</small>
+          <small class="sz-sub" id="sz-sub-en">8,658 เพลง</small>
         </span>
       </button>
       <button class="studio-zone-tab" data-ws="jp" onclick="switchStudioWorkspace('jp')">
         <span class="sz-icon">🇯🇵</span>
         <span class="sz-text">
           <strong class="sz-title" data-i18n="zoneJp">โซนเพลงญี่ปุ่น / อนิเมะ</strong>
-          <small class="sz-sub" id="sz-sub-jp">152 เพลง</small>
+          <small class="sz-sub" id="sz-sub-jp">5,189 เพลง</small>
         </span>
       </button>
       <button class="studio-zone-tab" data-ws="lao" onclick="switchStudioWorkspace('lao')">
         <span class="sz-icon">🇱🇦</span>
         <span class="sz-text">
           <strong class="sz-title" data-i18n="zoneLao">โซนเพลงลาว / อีสาน</strong>
-          <small class="sz-sub" id="sz-sub-lao">30 เพลง</small>
+          <small class="sz-sub" id="sz-sub-lao">503 เพลง</small>
         </span>
       </button>
       <button class="studio-zone-tab" data-ws="kr" onclick="switchStudioWorkspace('kr')">
         <span class="sz-icon">🇰🇷</span>
         <span class="sz-text">
           <strong class="sz-title" data-i18n="zoneKr">โซนเพลง K-Pop / เกาหลี</strong>
-          <small class="sz-sub" id="sz-sub-kr">6 เพลง</small>
+          <small class="sz-sub" id="sz-sub-kr">1,770 เพลง</small>
         </span>
       </button>
       <button class="studio-zone-tab" data-ws="pairs" onclick="switchStudioWorkspace('pairs')">
         <span class="sz-icon">🌸</span>
         <span class="sz-text">
           <strong class="sz-title" data-i18n="navAnimeMatch">คลังจับคู่อนิเมะ</strong>
-          <small class="sz-sub" id="sz-sub-pairs">387 เรื่อง</small>
+          <small class="sz-sub" id="sz-sub-pairs">8,120 คู่</small>
         </span>
       </button>
       <button class="studio-zone-tab" data-ws="versus" onclick="switchStudioWorkspace('versus')">
@@ -870,25 +870,29 @@
         <div class="gemini-welcome-box" id="gemini-welcome-box">
           <div class="gemini-welcome-sparkle">✦</div>
           <h2 class="gemini-welcome-greeting">สวัสดีค่ะ, มีอะไรให้ <span class="gradient-gemini-text">ไฮมิยะ AI</span> ช่วยคะ?</h2>
-          <p class="gemini-welcome-sub">บอกชื่อเพลงที่อยากให้เพิ่มเข้าคลัง หรือพิมพ์แจ้งปัญหา/บั๊กการใช้งานได้เลยค่ะ!</p>
+          <p class="gemini-welcome-sub">แนะนำเพลงตามมู้ด/อนิเมะ ลองฟังเสียงตัวอย่างสด หรือเพิ่มเพลงใหม่เข้าคลังกลางได้ทันทีค่ะ!</p>
 
           <!-- Quick Suggestion Chips -->
           <div class="gemini-prompt-chips">
             <button class="gemini-chip" onclick="handleQuickAiPrompt('เพิ่มเพลง')">
               <span class="chip-icon">🎵</span>
-              <span>เพิ่มเพลงใหม่ลงคลัง</span>
-            </button>
-            <button class="gemini-chip" onclick="handleQuickAiPrompt('แจ้งบั๊ก')">
-              <span class="chip-icon">🐛</span>
-              <span>แจ้งบั๊ก / ปัญหาการใช้งาน</span>
+              <span>เพลงฮิตติดเทรนด์ล่าสุด</span>
             </button>
             <button class="gemini-chip" onclick="handleQuickAiPrompt('แนะนำเพลงตัดต่อคลิป')">
               <span class="chip-icon">🌸</span>
-              <span>แนะนำเพลงตัดต่อคู่กับอนิเมะ</span>
+              <span>แนะนำเพลงคู่กับอนิเมะ</span>
             </button>
             <button class="gemini-chip" onclick="handleQuickAiPrompt('เพลงฮิต TikTok บีทเดือดๆ')">
               <span class="chip-icon">🔥</span>
-              <span>เพลงฮิต TikTok มันส์ๆ</span>
+              <span>TikTok บีทเดือดๆ ดรอปสะใจ</span>
+            </button>
+            <button class="gemini-chip" onclick="handleQuickAiPrompt('ขอเพลงเศร้า')">
+              <span class="chip-icon">💔</span>
+              <span>เพลงเศร้า อกหักซึ้งๆ</span>
+            </button>
+            <button class="gemini-chip" onclick="handleQuickAiPrompt('แจ้งบั๊ก')">
+              <span class="chip-icon">🐛</span>
+              <span>แจ้งปัญหา / บั๊ก</span>
             </button>
           </div>
         </div>
@@ -907,7 +911,7 @@
       <!-- Input Footer Bar -->
       <div class="gemini-input-footer">
         <div class="gemini-input-bar">
-          <textarea id="gemini-input-text" class="gemini-input-textarea" placeholder="พิมพ์คุยกับไฮมิยะ เช่น 'เพิ่มเพลง APT' หรือ 'แจ้งบั๊กเสียงไม่เล่น'..." rows="1" onkeydown="handleGeminiInputKey(event)"></textarea>
+          <textarea id="gemini-input-text" class="gemini-input-textarea" placeholder="พิมพ์คุยกับไฮมิยะ เช่น 'ขอเพลงเศร้า', 'เพลงฮิต TikTok', 'เพิ่มเพลง APT' หรือวางลิงก์ YouTube..." rows="1" onkeydown="handleGeminiInputKey(event)"></textarea>
           <button id="gemini-send-btn" class="gemini-send-btn" onclick="sendGeminiMessage()" title="ส่งข้อความ (Enter)">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="22" y1="2" x2="11" y2="13"></line>
