@@ -996,8 +996,11 @@ async function downloadOfflineMusicPack() {
 
 // ============================================================
 // ============================================================
-// FULL SONG DOWNLOAD & MULTI-SOURCE AUDIO MODAL (REAL FULL SONGS)
+// DIRECT IN-DEVICE AUDIO DOWNLOAD WITH LIVE % PROGRESS NOTIFICATION
+// โหลดใส่เครื่องโดยตรง ไม่เปิดเว็บอื่น พร้อมแจ้งเตือนเปอร์เซ็นต์สด
 // ============================================================
+let _activeDownloadController = null;
+
 async function downloadSongAudio(songId, event) {
   if (event) {
     if (typeof event.stopPropagation === 'function') event.stopPropagation();
@@ -1007,149 +1010,138 @@ async function downloadSongAudio(songId, event) {
                (typeof SONGS !== 'undefined' && SONGS.find(s => s.id === songId));
   if (!song) return;
 
+  const audioUrl = song.audioUrl || song.previewUrl;
+  if (!audioUrl) {
+    showToast(currentAppLang === 'th' ? '⚠️ เพลงนี้ไม่มีไฟล์เสียงให้ดาวน์โหลดค่ะ' : '⚠️ No audio file available');
+    return;
+  }
+
   const safeTitle = (song.title || 'song').replace(/[\\/:*?"<>|]/g, '').trim();
   const safeArtist = (song.artist || 'artist').replace(/[\\/:*?"<>|]/g, '').trim();
-  const searchQuery = `${safeTitle} ${safeArtist}`.trim();
+  const ext = audioUrl.includes('.mp3') ? 'mp3' : 'm4a';
+  const filename = `${safeTitle} - ${safeArtist}.${ext}`;
 
-  showToast(currentAppLang === 'th' ? `⏳ กำลังค้นหาเพลงเต็ม 100% "${song.title}"...` : `⏳ Searching full song: "${song.title}"...`);
+  // Remove existing widget if any
+  const existingWidget = document.getElementById('direct-download-progress-bar');
+  if (existingWidget) existingWidget.remove();
 
-  const spotifyUrl = song.spotifyUrl || `https://open.spotify.com/search/${encodeURIComponent(searchQuery)}`;
-  const ytMusicUrl = `https://music.youtube.com/search?q=${encodeURIComponent(searchQuery)}`;
-  let fullVideoUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(searchQuery + ' official audio')}`;
-  let fullDownloadUrl = `https://y2mate.is/`;
-  let backupDownloadUrl = `https://ytmp3.nu/?url=${encodeURIComponent(fullVideoUrl)}`;
-
-  try {
-    const res = await fetch(`${getAiApiBase()}/api/ai/get-full-song?q=${encodeURIComponent(searchQuery)}`);
-    if (res.ok) {
-      const data = await res.json();
-      if (data && data.ok) {
-        if (data.videoUrl) fullVideoUrl = data.videoUrl;
-        if (data.downloadUrl) fullDownloadUrl = data.downloadUrl;
-        if (data.backupDownloadUrl) backupDownloadUrl = data.backupDownloadUrl;
-      }
-    }
-  } catch (err) {
-    console.warn('get-full-song endpoint error, using direct links:', err);
-  }
-
-  showDownloadOptionsModal(song, searchQuery, spotifyUrl, ytMusicUrl, fullVideoUrl, fullDownloadUrl, backupDownloadUrl);
-}
-
-async function downloadPreviewHookAudio(previewUrl, songTitle) {
-  try {
-    const res = await fetch(previewUrl, { mode: 'cors' });
-    if (res.ok) {
-      const blob = await res.blob();
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = `${(songTitle || 'song').replace(/[\\/:*?"<>|]/g, '')}-preview.m4a`;
-      document.body.appendChild(a);
-      a.click();
-      setTimeout(() => { URL.revokeObjectURL(url); a.remove(); }, 2000);
-      showToast('✅ บันทึกตัวอย่างท่อนฮุก 30 วิ เรียบร้อย!');
-      return;
-    }
-  } catch (e) {
-    window.open(previewUrl, '_blank');
-  }
-}
-
-function showDownloadOptionsModal(song, query, spotifyUrl, ytMusicUrl, fullVideoUrl, fullDownloadUrl, backupDownloadUrl) {
-  const existingModal = document.getElementById('download-options-modal');
-  if (existingModal) existingModal.remove();
-
-  const safeTitle = escapeHtml(song.title || 'เพลง');
-  const safeArtist = escapeHtml(song.artist || '');
-  const coverUrl = song.coverUrl || 'splash-cover.jpg';
-  const encodedQuery = encodeURIComponent(query);
-
-  const videoUrlToUse = fullVideoUrl || `https://www.youtube.com/results?search_query=${encodedQuery}+official+audio`;
-  const y2mateConverter = fullDownloadUrl || `https://y2mate.is/`;
-  const ytmp3Converter = backupDownloadUrl || `https://ytmp3.nu/?url=${encodeURIComponent(videoUrlToUse)}`;
-
-  const modal = document.createElement('div');
-  modal.id = 'download-options-modal';
-  modal.style.cssText = 'position:fixed;inset:0;z-index:99999;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.78);backdrop-filter:blur(12px);animation:fadeIn 0.2s ease;padding:1rem;';
-  
-  let previewBtnHtml = '';
-  if (song.previewUrl) {
-    previewBtnHtml = `
-      <button onclick="downloadPreviewHookAudio('${escapeHtml(song.previewUrl)}', '${safeTitle}')"
-              style="display:flex;align-items:center;justify-content:space-between;padding:8px 12px;background:rgba(255,255,255,0.03);border:1px dashed rgba(255,255,255,0.18);border-radius:10px;color:#94a3b8;font-size:0.8rem;cursor:pointer;font-family:'Kanit',sans-serif;margin-top:4px;">
-        <span>💿 โหลดเฉพาะตัวอย่างท่อนฮุก 30 วินาที (สำหรับคลิปสั้น)</span>
-        <span>⬇️</span>
-      </button>
-    `;
-  }
-
-  modal.innerHTML = `
-    <div style="background:rgba(15,23,42,0.98);border:1.5px solid rgba(56,189,248,0.35);border-radius:18px;padding:1.4rem;max-width:440px;width:100%;box-shadow:0 25px 60px rgba(0,0,0,0.85);box-sizing:border-box;">
-      <div style="display:flex;gap:12px;align-items:center;margin-bottom:1.1rem;padding-bottom:0.9rem;border-bottom:1px solid rgba(255,255,255,0.1);">
-        <img src="${escapeHtml(coverUrl)}" style="width:60px;height:60px;border-radius:10px;object-fit:cover;box-shadow:0 4px 15px rgba(0,0,0,0.5);" onerror="this.src='splash-cover.jpg';">
-        <div style="min-width:0;flex:1;">
-          <div style="font-weight:700;color:#fff;font-size:1.08rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${safeTitle}</div>
-          <div style="color:#94a3b8;font-size:0.85rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${safeArtist}</div>
-          <div style="display:inline-flex;align-items:center;gap:4px;margin-top:3px;font-size:0.75rem;background:rgba(16,185,129,0.2);color:#34d399;border:1px solid rgba(16,185,129,0.4);padding:2px 7px;border-radius:6px;font-weight:600;">
-            <span>🎵 เพลงเต็ม 100% (Full Track)</span>
-          </div>
+  // Create UI Progress Notification Widget
+  const widget = document.createElement('div');
+  widget.id = 'direct-download-progress-bar';
+  widget.className = 'direct-dl-widget';
+  widget.innerHTML = `
+    <div class="dl-widget-header">
+      <span class="dl-widget-icon">📥</span>
+      <div class="dl-widget-info">
+        <div class="dl-widget-title">${escapeHtml(song.title)} - ${escapeHtml(song.artist)}</div>
+        <div class="dl-widget-status">
+          <span id="dl-widget-label">กำลังดาวน์โหลดลงเครื่อง...</span>
+          <span class="dl-widget-pct" id="dl-widget-pct">0%</span>
         </div>
-        <button onclick="this.closest('#download-options-modal').remove()" style="background:none;border:none;color:#94a3b8;font-size:1.4rem;cursor:pointer;padding:4px 8px;border-radius:6px;">✕</button>
       </div>
-
-      <div style="color:#cbd5e1;font-size:0.88rem;margin-bottom:0.85rem;font-weight:500;">
-        ช่องทางดาวน์โหลดเพลงเต็มสำหรับนำไปตัดต่อ:
-      </div>
-
-      <div style="display:flex;flex-direction:column;gap:8px;">
-        <!-- Option 1: Fast Full MP3 Downloader (Highlight) -->
-        <a href="${escapeHtml(y2mateConverter)}" target="_blank" rel="noopener"
-           style="display:flex;align-items:center;justify-content:space-between;padding:12px 14px;background:linear-gradient(135deg, rgba(16,185,129,0.3), rgba(56,189,248,0.35));border:1.5px solid rgba(16,185,129,0.6);border-radius:10px;color:#fff;text-decoration:none;font-weight:700;font-size:0.94rem;box-shadow:0 4px 18px rgba(16,185,129,0.25);">
-          <span>⚡ ดาวน์โหลดเพลงเต็ม MP3 ทันที (320kbps)</span>
-          <span style="font-size:1.15rem;">⬇️</span>
-        </a>
-
-        <!-- Option 2: Backup MP3 Downloader -->
-        <a href="${escapeHtml(ytmp3Converter)}" target="_blank" rel="noopener"
-           style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:linear-gradient(135deg, rgba(56,189,248,0.18), rgba(99,102,241,0.22));border:1px solid rgba(56,189,248,0.4);border-radius:10px;color:#e0f2fe;text-decoration:none;font-weight:600;font-size:0.88rem;">
-          <span>🚀 ลิงก์สำรองโหลดเพลงเต็ม MP3 (YTmp3)</span>
-          <span>➔</span>
-        </a>
-
-        <!-- Option 3: YouTube Official Video -->
-        <a href="${escapeHtml(videoUrlToUse)}" target="_blank" rel="noopener"
-           style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:rgba(239,68,68,0.12);border:1px solid rgba(239,68,68,0.35);border-radius:10px;color:#fca5a5;text-decoration:none;font-weight:600;font-size:0.88rem;">
-          <span>📺 ฟัง/โหลดบน YouTube (วิดีโอฉบับเต็ม / Official MV)</span>
-          <span>➔</span>
-        </a>
-
-        <!-- Option 4: YouTube Music -->
-        <a href="${escapeHtml(ytMusicUrl)}" target="_blank" rel="noopener"
-           style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:10px;color:#e2e8f0;text-decoration:none;font-weight:600;font-size:0.88rem;">
-          <span>🎵 ฟังเพลงเต็มบน YouTube Music</span>
-          <span>➔</span>
-        </a>
-
-        <!-- Option 5: Spotify -->
-        <a href="${escapeHtml(spotifyUrl)}" target="_blank" rel="noopener"
-           style="display:flex;align-items:center;justify-content:space-between;padding:10px 14px;background:rgba(29,185,84,0.12);border:1px solid rgba(29,185,84,0.35);border-radius:10px;color:#4ade80;text-decoration:none;font-weight:600;font-size:0.88rem;">
-          <span>🟢 เปิดใน Spotify</span>
-          <span>➔</span>
-        </a>
-
-        <!-- Option 6: 30s Hook Preview -->
-        ${previewBtnHtml}
-      </div>
-
-      <button onclick="this.closest('#download-options-modal').remove()" 
-              style="width:100%;margin-top:12px;padding:9px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:10px;color:#94a3b8;cursor:pointer;font-family:'Kanit',sans-serif;font-size:0.85rem;">
-        ✕ ปิดหน้าต่างนี้
-      </button>
+    </div>
+    <div class="dl-widget-track">
+      <div class="dl-widget-fill" id="dl-widget-fill" style="width: 0%;"></div>
     </div>
   `;
-  modal.addEventListener('click', (e) => { if (e.target === modal) modal.remove(); });
-  document.body.appendChild(modal);
+  document.body.appendChild(widget);
+
+  const pctEl = document.getElementById('dl-widget-pct');
+  const fillEl = document.getElementById('dl-widget-fill');
+  const labelEl = document.getElementById('dl-widget-label');
+
+  try {
+    const res = await fetch(audioUrl, { mode: 'cors' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+
+    const contentLength = res.headers.get('content-length');
+    const totalBytes = contentLength ? parseInt(contentLength, 10) : 0;
+
+    let receivedBytes = 0;
+    const chunks = [];
+
+    if (res.body && typeof res.body.getReader === 'function') {
+      const reader = res.body.getReader();
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        chunks.push(value);
+        receivedBytes += value.length;
+
+        if (totalBytes > 0) {
+          const pct = Math.min(99, Math.round((receivedBytes / totalBytes) * 100));
+          if (pctEl) pctEl.textContent = pct + '%';
+          if (fillEl) fillEl.style.width = pct + '%';
+        }
+      }
+    } else {
+      // Fallback if ReadableStream is not available
+      const blob = await res.blob();
+      chunks.push(new Uint8Array(await blob.arrayBuffer()));
+    }
+
+    // 100% Complete
+    if (pctEl) pctEl.textContent = '100%';
+    if (fillEl) fillEl.style.width = '100%';
+    if (labelEl) labelEl.textContent = 'บันทึกลงเครื่องแล้ว!';
+
+    // Assemble blob and trigger direct in-device download
+    const finalBlob = new Blob(chunks, { type: ext === 'mp3' ? 'audio/mpeg' : 'audio/mp4' });
+    const blobUrl = URL.createObjectURL(finalBlob);
+
+    const a = document.createElement('a');
+    a.href = blobUrl;
+    a.download = filename;
+    a.style.display = 'none';
+    document.body.appendChild(a);
+    a.click();
+
+    setTimeout(() => {
+      URL.revokeObjectURL(blobUrl);
+      a.remove();
+    }, 3000);
+
+    // Update notification to success
+    if (widget) {
+      widget.style.borderColor = 'rgba(16, 185, 129, 0.8)';
+      widget.innerHTML = `
+        <div class="dl-widget-header">
+          <span class="dl-widget-icon">✅</span>
+          <div class="dl-widget-info">
+            <div class="dl-widget-title">${escapeHtml(song.title)}</div>
+            <div class="dl-widget-status" style="color: #34d399; font-weight: 600;">
+              ดาวน์โหลดลงเครื่องเรียบร้อยแล้ว (100%)
+            </div>
+          </div>
+        </div>
+        <div class="dl-widget-track">
+          <div class="dl-widget-fill" style="width: 100%; background: #10b981;"></div>
+        </div>
+      `;
+      setTimeout(() => {
+        widget.style.opacity = '0';
+        widget.style.transform = 'translateY(15px)';
+        setTimeout(() => widget.remove(), 400);
+      }, 3500);
+    }
+
+    showToast(currentAppLang === 'th' ? `✅ บันทึกเพลง "${song.title}" ลงเครื่องสำเร็จแล้ว! (100%)` : `✅ Downloaded "${song.title}" successfully!`);
+
+  } catch (err) {
+    console.warn('Direct in-device download fetch error, attempting direct anchor fallback:', err);
+    if (widget) widget.remove();
+
+    // Fallback: direct browser trigger
+    const a = document.createElement('a');
+    a.href = audioUrl;
+    a.download = filename;
+    a.target = '_blank';
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(() => a.remove(), 2000);
+
+    showToast(currentAppLang === 'th' ? `📥 กำลังส่งไฟล์ "${song.title}" ไปยังโฟลเดอร์ดาวน์โหลดของเครื่องค่ะ` : `📥 Downloading "${song.title}" to device...`);
+  }
 }
 
 function downloadWindowsShortcut() {
@@ -2907,12 +2899,15 @@ function renderAnimeMatchModalContent(song, anime) {
   `;
 }
 
-// Robust toggleMenu function
+let _lastToggleMenuTime = 0;
+
+// Robust toggleMenu function (Fixed DOM-detachment & click debounce)
 function toggleMenu(event) {
   if (event) {
     if (typeof event.stopPropagation === 'function') event.stopPropagation();
     if (event.cancelBubble !== undefined) event.cancelBubble = true;
   }
+  _lastToggleMenuTime = Date.now();
   const navLinks = document.querySelector('.nav-links');
   const btn = document.getElementById('hamburger');
   if (navLinks) {
@@ -2920,31 +2915,36 @@ function toggleMenu(event) {
     navLinks.classList.toggle('open', willOpen);
     if (btn) {
       btn.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
-      btn.innerHTML = willOpen
-        ? '<span class="hamburger-icon">✕</span> <span class="hamburger-text">ปิด</span>'
-        : '<span class="hamburger-icon">☰</span> <span class="hamburger-text">โซนเพลง</span>';
+      const icon = btn.querySelector('.hamburger-icon');
+      const text = btn.querySelector('.hamburger-text');
+      if (icon) icon.textContent = willOpen ? '✕' : '☰';
+      if (text) text.textContent = willOpen ? (currentAppLang === 'th' ? 'ปิด' : 'Close') : (currentAppLang === 'th' ? 'โซนเพลง' : 'Menu');
     }
   }
 }
 
 // Close menu when clicking outside or when selecting a nav link
 document.addEventListener('click', (e) => {
+  // Ignore clicks within 350ms of toggleMenu triggering to avoid false outside-click detection
+  if (Date.now() - _lastToggleMenuTime < 350) return;
+
   const navLinks = document.querySelector('.nav-links');
   const btn = document.getElementById('hamburger');
   if (!navLinks || !navLinks.classList.contains('open')) return;
+
+  // If clicked inside hamburger button, ignore
+  if (e.target && e.target.closest('#hamburger')) return;
 
   // If clicked a link inside nav-links, close the menu smoothly
   if (e.target && e.target.closest('.nav-link')) {
     navLinks.classList.remove('open');
     if (btn) {
       btn.setAttribute('aria-expanded', 'false');
-      btn.innerHTML = '<span class="hamburger-icon">☰</span> <span class="hamburger-text">โซนเพลง</span>';
+      const icon = btn.querySelector('.hamburger-icon');
+      const text = btn.querySelector('.hamburger-text');
+      if (icon) icon.textContent = '☰';
+      if (text) text.textContent = currentAppLang === 'th' ? 'โซนเพลง' : 'Menu';
     }
-    return;
-  }
-
-  // If clicked inside the hamburger button itself, toggleMenu handles it
-  if (e.target && e.target.closest('#hamburger')) {
     return;
   }
 
@@ -2953,7 +2953,10 @@ document.addEventListener('click', (e) => {
     navLinks.classList.remove('open');
     if (btn) {
       btn.setAttribute('aria-expanded', 'false');
-      btn.innerHTML = '<span class="hamburger-icon">☰</span> <span class="hamburger-text">โซนเพลง</span>';
+      const icon = btn.querySelector('.hamburger-icon');
+      const text = btn.querySelector('.hamburger-text');
+      if (icon) icon.textContent = '☰';
+      if (text) text.textContent = currentAppLang === 'th' ? 'โซนเพลง' : 'Menu';
     }
   }
 });
