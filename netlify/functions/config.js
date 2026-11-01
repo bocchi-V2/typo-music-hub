@@ -16,8 +16,8 @@ exports.handler = async (event, context) => {
     body: JSON.stringify({
       ok: true,
       hasKey: true,
-      engine: 'Google Gemini 3.5 Flash Lite',
-      version: '2026.10'
+      engine: 'Haimiya AI',
+      version: '2026.11'
     })
   };
 };

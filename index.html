@@ -111,7 +111,7 @@
       </div>
       <button class="hamburger" id="hamburger" onclick="toggleMenu(event)" title="เมนูโซนเพลงและเครื่องมือ (กดเพื่อเปิด/ปิด)">
         <span class="hamburger-icon">☰</span>
-        <span class="hamburger-text">เมนู</span>
+        <span class="hamburger-text">โซนเพลง</span>
       </button>
     </div>
   </nav>
@@ -450,7 +450,7 @@
     <div class="search-bar-wrap">
       <div class="search-input-box">
         <span class="search-icon">🔍</span>
-        <input type="text" id="search-input" class="search-input" placeholder="ค้นหาเพลง, ศิลปิน, แท็ก หรือชื่ออนิเมะ..." oninput="filterSongs()" />
+        <input type="text" id="search-input" class="search-input" placeholder="ค้นหาเพลง, ศิลปิน, แท็ก หรือชื่ออนิเมะ..." oninput="filterSongs()" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
         <button class="search-clear-btn" onclick="clearSearch()" id="search-clear" style="display:none;">✕</button>
       </div>
 
