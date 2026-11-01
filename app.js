@@ -496,9 +496,24 @@ function setAppLanguage(lang) {
 
 
 function renderPlayButton(songId, isPlaying) {
+  const song = (typeof SONGS !== 'undefined' && SONGS.find(s => s.id === songId)) ||
+               (typeof SONG_MAP !== 'undefined' && SONG_MAP.get(songId));
+  const isFull = song && (song.isFull || (song.audioUrl && (song.audioUrl.endsWith('.mp3') || !song.audioUrl.includes('apple.com'))));
+  
+  let durationBadge = '0:30';
+  if (song && song.duration) {
+    const dm = Math.floor(song.duration / 60);
+    const ds = Math.floor(song.duration % 60).toString().padStart(2, '0');
+    durationBadge = `${dm}:${ds}`;
+  } else if (isFull) {
+    durationBadge = '1:11';
+  }
+
   const label = isPlaying
     ? (currentAppLang === 'th' ? 'กำลังเล่น' : 'Playing')
-    : (currentAppLang === 'th' ? 'ฟังตัวอย่าง 30s' : 'Preview 30s');
+    : (isFull 
+        ? (currentAppLang === 'th' ? '▶ ฟังเพลงเต็ม' : '▶ Play Full') 
+        : (currentAppLang === 'th' ? 'ฟังเพลง' : 'Play'));
 
   const iconHtml = isPlaying
     ? '<svg width="11" height="11" viewBox="0 0 24 24" fill="#000"><rect x="5" y="3" width="4.5" height="18" rx="1.5"></rect><rect x="14.5" y="3" width="4.5" height="18" rx="1.5"></rect></svg>'
@@ -514,10 +529,9 @@ function renderPlayButton(songId, isPlaying) {
       <span class="play-label">${label}</span>
       ${waveHtml}
     </div>
-    <span class="play-duration-badge">0:30</span>
+    <span class="play-duration-badge">${durationBadge}</span>
   </button>`;
 }
-
 
 // ---- DICE ROLL SFX CONTROLLER (u_qpfzpy / dice-roll.mp3) ----
 let diceAudio = new Audio('dice-roll.mp3');
@@ -1076,7 +1090,7 @@ async function downloadSongAudio(songId, event) {
         setTimeout(() => widget.remove(), 400);
       }, 3500);
     }
-    showToast(currentAppLang === 'th' ? `✅ บันทึกเพลง "${song.title}" (${isFull ? 'เพลงเต็ม' : 'ตัวอย่าง'}) ลงเครื่องสำเร็จแล้ว! (100%)` : `✅ Downloaded "${song.title}" successfully!`);
+    showToast(currentAppLang === 'th' ? `✅ บันทึกเพลง "${song.title}" (เพลงเต็ม) ลงเครื่องสำเร็จแล้ว! (100%)` : `✅ Downloaded "${song.title}" successfully!`);
   };
 
   // Case 1: Already a local full MP3 file (e.g. สาธุ Emo Rock Version)
@@ -1227,7 +1241,7 @@ async function downloadSongAudio(songId, event) {
     const a = document.createElement('a');
     a.href = fallbackUrl;
     a.download = filename;
-    a.target = '_blank';
+    // no target blank to avoid opening tabs
     document.body.appendChild(a);
     a.click();
     setTimeout(() => a.remove(), 2000);
@@ -1503,6 +1517,9 @@ async function togglePlaySong(songId) {
     // Throttle timeupdate to reduce UI jank and audio stuttering on low-end devices
     // เพิ่ม interval เป็น 350ms เพื่อลดภาระ CPU บนมือถือ
     let _lastProgressUpdate = 0;
+    audio.onloadedmetadata = () => {
+      updateBottomPlayerProgress();
+    };
     audio.ontimeupdate = () => {
       const now = performance.now();
       if (now - _lastProgressUpdate > 350) {
@@ -1563,10 +1580,25 @@ async function togglePlaySong(songId) {
 function updateAudioUI(isPlaying) {
   document.querySelectorAll('[data-play-btn]').forEach(btn => {
     const id = parseInt(btn.dataset.playBtn);
+    const song = (typeof SONGS !== 'undefined' && SONGS.find(s => s.id === id)) ||
+                 (typeof SONG_MAP !== 'undefined' && SONG_MAP.get(id));
+    const isFull = song && (song.isFull || (song.audioUrl && (song.audioUrl.endsWith('.mp3') || !song.audioUrl.includes('apple.com'))));
+
+    let durationBadge = '0:30';
+    if (song && song.duration) {
+      const dm = Math.floor(song.duration / 60);
+      const ds = Math.floor(song.duration % 60).toString().padStart(2, '0');
+      durationBadge = `${dm}:${ds}`;
+    } else if (isFull) {
+      durationBadge = '1:11';
+    }
+
     const thisPlaying = id === currentPlayingId && isPlaying;
     const label = thisPlaying
       ? (currentAppLang === 'th' ? 'กำลังเล่น' : 'Playing')
-      : (currentAppLang === 'th' ? 'ฟังตัวอย่าง 30s' : 'Preview 30s');
+      : (isFull 
+          ? (currentAppLang === 'th' ? '▶ ฟังเพลงเต็ม' : '▶ Play Full') 
+          : (currentAppLang === 'th' ? 'ฟังเพลง' : 'Play'));
 
     const iconHtml = thisPlaying
       ? '<svg width="11" height="11" viewBox="0 0 24 24" fill="#000"><rect x="5" y="3" width="4.5" height="18" rx="1.5"></rect><rect x="14.5" y="3" width="4.5" height="18" rx="1.5"></rect></svg>'
@@ -1582,7 +1614,7 @@ function updateAudioUI(isPlaying) {
         <span class="play-label">${label}</span>
         ${waveHtml}
       </div>
-      <span class="play-duration-badge">0:30</span>
+      <span class="play-duration-badge">${durationBadge}</span>
     `;
 
     if (thisPlaying) {
@@ -1678,7 +1710,7 @@ function showBottomPlayer(song) {
           <div class="bp-progress-bar" onclick="seekAudio(event)">
             <div class="bp-progress-fill" id="bp-progress-fill"></div>
           </div>
-          <span class="bp-time" id="bp-time-total">0:30</span>
+          <span class="bp-time" id="bp-time-total">${song.duration ? Math.floor(song.duration/60) + ':' + Math.floor(song.duration%60).toString().padStart(2,'0') : (song.isFull ? '1:11' : '0:30')}</span>
         </div>
       </div>
 
