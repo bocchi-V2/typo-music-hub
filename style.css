@@ -6860,3 +6860,96 @@ button:focus-visible {
 .nav-links .nav-link {
   border-radius: 8px !important;
 }
+
+
+/* ========================================================
+   DARK GLASS THEME SEARCH BAR (ธีมมืดเข้ากับทั้งเว็บ)
+   ======================================================== */
+.search-input-box {
+  position: relative !important;
+  width: 100% !important;
+  background: rgba(15, 23, 42, 0.85) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 12px !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.08) !important;
+  transition: all 0.25s ease !important;
+}
+
+.search-input-box:focus-within {
+  background: rgba(15, 23, 42, 0.95) !important;
+  border-color: rgba(56, 189, 248, 0.6) !important;
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.25), 0 4px 25px rgba(0, 0, 0, 0.5) !important;
+}
+
+.search-input {
+  width: 100% !important;
+  padding: 0.85rem 2.8rem 0.85rem 3rem !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 12px !important;
+  color: #f8fafc !important;
+  font-family: 'Kanit', sans-serif !important;
+  font-size: 0.98rem !important;
+  font-weight: 500 !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.search-input::placeholder {
+  color: #64748b !important;
+}
+
+/* Override Chrome / Safari / Edge light autofill & autocomplete */
+.search-input:-webkit-autofill,
+.search-input:-webkit-autofill:hover, 
+.search-input:-webkit-autofill:focus, 
+.search-input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #0f172a inset !important;
+  -webkit-text-fill-color: #f8fafc !important;
+  caret-color: #f8fafc !important;
+  border-radius: 12px !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+
+.search-icon {
+  color: #94a3b8 !important;
+}
+
+.search-clear-btn {
+  color: #94a3b8 !important;
+}
+.search-clear-btn:hover {
+  color: #f8fafc !important;
+}
+
+/* Secret / Funk Search Box */
+.secret-search-box {
+  background: rgba(15, 23, 42, 0.85) !important;
+  border: 1.5px solid rgba(168, 85, 247, 0.3) !important;
+  border-radius: 12px !important;
+}
+.secret-search-input {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 12px !important;
+  color: #f8fafc !important;
+}
+.secret-search-input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #0f172a inset !important;
+  -webkit-text-fill-color: #f8fafc !important;
+}
+
+/* ========================================================
+   BUTTONS: สี่เหลี่ยมมุมมน 8px (ไม่ใช่ทรงแคปซูล 999px)
+   ======================================================== */
+.song-card-actions .btn-sm,
+.btn-download-audio,
+.btn-spotify,
+.btn-anime-match,
+.btn-match,
+.btn-bp-save,
+.btn-yt {
+  border-radius: 8px !important;
+}
