@@ -32,6 +32,11 @@
   to = "/.netlify/functions/parse-link"
   status = 200
 
+[[redirects]]
+  from = "/api/ai/get-full-song"
+  to = "/.netlify/functions/get-full-song"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
