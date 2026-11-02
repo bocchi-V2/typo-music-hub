@@ -146,7 +146,7 @@ const I18N = {
     moodHype: "🔥 เร้าใจ",
     moodChill: "🌊 ชิลล์",
     loadMoreBtn: "⬇ แสดงเพลงเพิ่มเติม",
-    previewBtn: "ฟังตัวอย่าง 30s",
+    previewBtn: "ฟังเพลงเต็ม",
     playingBtn: "กำลังเล่น",
     pauseBtn: "หยุด",
     spotifyBtn: "Spotify",
@@ -256,7 +256,7 @@ const I18N = {
     moodHype: "🔥 Hype",
     moodChill: "🌊 Chill",
     loadMoreBtn: "⬇ Show More Songs",
-    previewBtn: "Preview 30s",
+    previewBtn: "Play Full",
     playingBtn: "Playing",
     pauseBtn: "Pause",
     spotifyBtn: "Spotify",
@@ -509,20 +509,18 @@ function renderPlayButton(songId, isPlaying) {
                (typeof SONG_MAP !== 'undefined' && SONG_MAP.get(songId));
   const isFull = song && (song.isFull || song.fullAudioUrl || (song.audioUrl && (song.audioUrl.endsWith('.mp3') || !song.audioUrl.includes('apple.com'))));
   
-  let durationBadge = '0:30';
+  let durationBadge = '3:20';
   if (song && song.duration) {
     const dm = Math.floor(song.duration / 60);
     const ds = Math.floor(song.duration % 60).toString().padStart(2, '0');
     durationBadge = `${dm}:${ds}`;
-  } else if (isFull) {
+  } else if (song && song.isFull) {
     durationBadge = '1:11';
   }
 
   const label = isPlaying
     ? (currentAppLang === 'th' ? 'กำลังเล่น' : 'Playing')
-    : (isFull 
-        ? (currentAppLang === 'th' ? '▶ ฟังเพลงเต็ม' : '▶ Play Full') 
-        : (currentAppLang === 'th' ? 'ฟังเพลง' : 'Play'));
+    : (currentAppLang === 'th' ? '▶ ฟังเพลงเต็ม' : '▶ Play Full');
 
   const iconHtml = isPlaying
     ? '<svg width="11" height="11" viewBox="0 0 24 24" fill="#000"><rect x="5" y="3" width="4.5" height="18" rx="1.5"></rect><rect x="14.5" y="3" width="4.5" height="18" rx="1.5"></rect></svg>'
@@ -1581,6 +1579,18 @@ async function togglePlaySong(songId) {
     };
 
     audio.onended = () => {
+      // Seamlessly continue into full song if full stream was resolved in background
+      if (song.fullAudioUrl && audio.src !== song.fullAudioUrl) {
+        audio.src = song.fullAudioUrl;
+        audio.currentTime = 29.5;
+        audio.play().then(() => {
+          updateAudioUI(true);
+          showBottomPlayer(song);
+        }).catch(() => {
+          if (isLoopTrack) { audio.currentTime = 0; audio.play().catch(() => {}); } else { playNextSong(); }
+        });
+        return;
+      }
       if (isLoopTrack) {
         audio.currentTime = 0;
         audio.play().then(() => updateAudioUI(true)).catch(() => {
@@ -1588,7 +1598,6 @@ async function togglePlaySong(songId) {
           resumeRelaxBgm();
         });
       } else {
-        // ใช้ setTimeout เล็กน้อยเพื่อให้ audio buffer ล้างก่อนเปลี่ยนเพลง ลด stutter
         setTimeout(() => playNextSong(), 50);
       }
     };
@@ -1635,6 +1644,35 @@ async function togglePlaySong(songId) {
     audio.play().then(() => {
       updateAudioUI(true);
       showBottomPlayer(song);
+
+      // Auto resolve full song in background for any song playing!
+      if (!song.fullAudioUrl && !song.isFull && navigator.onLine) {
+        (async () => {
+          try {
+            const q = `${song.title || ''} ${song.artist || ''}`.trim();
+            const apiRes = await fetch(`${NETLIFY_BASE}/api/ai/get-full-song?q=${encodeURIComponent(q)}`);
+            if (apiRes.ok) {
+              const data = await apiRes.json();
+              if (data.ok && data.directAudioUrl) {
+                song.fullAudioUrl = data.directAudioUrl;
+                song.isFull = true;
+                if (data.duration) song.duration = data.duration;
+                // If user is still listening to this song:
+                if (currentPlayingId === song.id && currentAudio && !currentAudio.paused) {
+                  // If near 25s, switch to full stream
+                  if (currentAudio.currentTime > 24) {
+                    const ct = currentAudio.currentTime;
+                    currentAudio.src = data.directAudioUrl;
+                    currentAudio.currentTime = ct;
+                    currentAudio.play().catch(() => {});
+                  }
+                  showBottomPlayer(song);
+                }
+              }
+            }
+          } catch(e) {}
+        })();
+      }
       updateMediaSession(song, false);
       if (!navigator.onLine) {
         showToast(currentAppLang === 'th' ? '⚡ เล่นจากคลังเพลงออฟไลน์ในเครื่อง' : '⚡ Playing from offline storage');
@@ -1789,7 +1827,7 @@ function showBottomPlayer(song) {
           <div class="bp-progress-bar" onclick="seekAudio(event)">
             <div class="bp-progress-fill" id="bp-progress-fill"></div>
           </div>
-          <span class="bp-time" id="bp-time-total">${song.duration ? Math.floor(song.duration/60) + ':' + Math.floor(song.duration%60).toString().padStart(2,'0') : (song.isFull ? '1:11' : '0:30')}</span>
+          <span class="bp-time" id="bp-time-total">${song.duration ? Math.floor(song.duration/60) + ':' + Math.floor(song.duration%60).toString().padStart(2,'0') : (song.isFull ? '1:11' : '3:30')}</span>
         </div>
       </div>
 
@@ -1855,7 +1893,7 @@ function hideBottomPlayer() {
 function updateBottomPlayerProgress() {
   if (!currentAudio) return;
   const cur = currentAudio.currentTime || 0;
-  const dur = currentAudio.duration || 30;
+  const dur = (currentAudio.duration && isFinite(currentAudio.duration)) ? currentAudio.duration : ((currentPlayingId && SONG_MAP.get(currentPlayingId)?.duration) || 210);
   const pct = Math.min((cur / dur) * 100, 100);
 
   const fill = document.getElementById('bp-progress-fill');
@@ -1869,6 +1907,12 @@ function updateBottomPlayerProgress() {
     const m = Math.floor(cur / 60);
     const s = Math.floor(cur % 60).toString().padStart(2, '0');
     curEl.textContent = `${m}:${s}`;
+  }
+  const totalEl = document.getElementById('bp-time-total');
+  if (totalEl && currentAudio.duration && isFinite(currentAudio.duration) && currentAudio.duration > 35) {
+    const tm = Math.floor(currentAudio.duration / 60);
+    const ts = Math.floor(currentAudio.duration % 60).toString().padStart(2, '0');
+    totalEl.textContent = `${tm}:${ts}`;
   }
 }
 
