@@ -1,53 +1,54 @@
 const https = require('https');
+const http = require('http');
 
 function httpsGet(url, options = {}) {
   return new Promise((resolve, reject) => {
-    const req = https.get(url, {
+    const parsed = new URL(url);
+    const client = parsed.protocol === 'http:' ? http : https;
+    const req = client.get(url, {
       headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
         'Accept-Language': 'th,en;q=0.9',
         ...options.headers
       },
-      timeout: 8000
+      timeout: options.timeout || 8000
     }, (res) => {
       // Follow redirects
       if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
-        return httpsGet(res.headers.location, options).then(resolve).catch(reject);
+        const nextUrl = new URL(res.headers.location, url).href;
+        return httpsGet(nextUrl, options).then(resolve).catch(reject);
       }
       let data = '';
       res.on('data', chunk => data += chunk);
-      res.on('end', () => resolve({ statusCode: res.statusCode, data, headers: res.headers }));
+      res.on('end', () => resolve({ statusCode: res.statusCode, data, headers: res.headers, finalUrl: url }));
     });
     req.on('error', reject);
     req.on('timeout', () => { req.destroy(); reject(new Error('timeout')); });
   });
 }
 
-function httpsPost(url, body, headers = {}) {
-  return new Promise((resolve, reject) => {
-    const u = new URL(url);
-    const postData = typeof body === 'string' ? body : JSON.stringify(body);
-    const req = https.request({
-      hostname: u.hostname,
-      port: u.port || 443,
-      path: u.pathname + u.search,
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-        'Content-Length': Buffer.byteLength(postData),
-        ...headers
-      },
-      timeout: 12000
-    }, (res) => {
-      let data = '';
-      res.on('data', chunk => data += chunk);
-      res.on('end', () => resolve({ statusCode: res.statusCode, data, headers: res.headers }));
-    });
-    req.on('error', reject);
-    req.on('timeout', () => { req.destroy(); reject(new Error('timeout')); });
-    req.write(postData);
-    req.end();
+function resolveRedirectLocation(url) {
+  return new Promise((resolve) => {
+    try {
+      const parsed = new URL(url);
+      const client = parsed.protocol === 'http:' ? http : https;
+      const req = client.request(url, {
+        method: 'HEAD',
+        headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' },
+        timeout: 6000
+      }, res => {
+        if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+          resolve(res.headers.location);
+        } else {
+          resolve(url);
+        }
+      });
+      req.on('error', () => resolve(url));
+      req.on('timeout', () => { req.destroy(); resolve(url); });
+      req.end();
+    } catch (e) {
+      resolve(url);
+    }
   });
 }
 
@@ -76,15 +77,28 @@ exports.handler = async (event) => {
       return { statusCode: 400, headers: corsHeaders, body: JSON.stringify({ ok: false, error: 'Query required' }) };
     }
 
-    // Step 1: Search YouTube for the video ID
-    const searchQuery = `${q} official audio`;
+    // Step 1: Search YouTube for Video ID
+    const searchQueries = [
+      `${q} official audio`,
+      `${q} official mv`,
+      q
+    ];
+
     let videoId = null;
-    try {
-      const searchRes = await httpsGet(`https://www.youtube.com/results?search_query=${encodeURIComponent(searchQuery)}`);
-      const match = searchRes.data.match(/\/watch\?v=([a-zA-Z0-9_-]{11})/);
-      if (match) videoId = match[1];
-    } catch (e) {
-      console.warn('YouTube search failed:', e.message);
+    let videoTitle = null;
+
+    for (const sq of searchQueries) {
+      if (videoId) break;
+      try {
+        const searchRes = await httpsGet(`https://www.youtube.com/results?search_query=${encodeURIComponent(sq)}`);
+        // Find video ID from search results
+        const match = searchRes.data.match(/\/watch\?v=([a-zA-Z0-9_-]{11})/);
+        if (match) {
+          videoId = match[1];
+        }
+      } catch (e) {
+        console.warn('YouTube search query failed:', sq, e.message);
+      }
     }
 
     if (!videoId) {
@@ -96,66 +110,51 @@ exports.handler = async (event) => {
     }
 
     const youtubeUrl = `https://www.youtube.com/watch?v=${videoId}`;
-
-    // Step 2: Try Cobalt API to get direct audio download URL
     let directAudioUrl = null;
+    let duration = null;
 
-    // Try cobalt.tools API (primary)
-    const cobaltInstances = [
-      'https://api.cobalt.tools',
-      'https://cobalt-api.hyper.lol'
+    // Step 2: Try Invidious Instances (Fastest, direct high quality audio formats)
+    const invidiousInstances = [
+      'https://yt.chocolatemoo53.com',
+      'https://invidious.nerdvpn.de',
+      'https://inv.nadeko.net'
     ];
 
-    for (const cobaltBase of cobaltInstances) {
+    for (const base of invidiousInstances) {
       if (directAudioUrl) break;
       try {
-        const cobaltRes = await httpsPost(`${cobaltBase}/`, {
-          url: youtubeUrl,
-          downloadMode: 'audio',
-          audioFormat: 'mp3'
-        }, {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        });
+        const invRes = await httpsGet(`${base}/api/v1/videos/${videoId}`, { timeout: 6000 });
+        if (invRes.statusCode === 200) {
+          const invData = JSON.parse(invRes.data);
+          videoTitle = invData.title || videoTitle;
+          duration = invData.lengthSeconds || duration;
 
-        if (cobaltRes.statusCode === 200) {
-          const cobaltData = JSON.parse(cobaltRes.data);
-          if (cobaltData.url) {
-            directAudioUrl = cobaltData.url;
-          } else if (cobaltData.audio) {
-            directAudioUrl = cobaltData.audio;
+          const adaptiveFormats = invData.adaptiveFormats || [];
+          const audioFormats = adaptiveFormats.filter(f => f.type && f.type.includes('audio'));
+          if (audioFormats.length > 0) {
+            // Prefer audio/mp4 (AAC), then highest bitrate
+            const mp4Audio = audioFormats.find(f => f.type.includes('audio/mp4'));
+            const chosen = mp4Audio || audioFormats.sort((a, b) => (parseInt(b.bitrate, 10) || 0) - (parseInt(a.bitrate, 10) || 0))[0];
+            if (chosen && chosen.url) {
+              directAudioUrl = chosen.url;
+            }
           }
         }
       } catch (e) {
-        console.warn(`Cobalt ${cobaltBase} failed:`, e.message);
+        console.warn(`Invidious ${base} failed:`, e.message);
       }
     }
 
-    // Step 3: Try alternative - piped.video API
+    // Step 3: Try Invidious latest_version proxy (itag 140 = 128kbps AAC audio)
     if (!directAudioUrl) {
-      const pipedInstances = [
-        'pipedapi.kavin.rocks',
-        'api.piped.projectsegfau.lt'
-      ];
-      for (const pipedHost of pipedInstances) {
-        if (directAudioUrl) break;
-        try {
-          const pipedRes = await httpsGet(`https://${pipedHost}/streams/${videoId}`);
-          if (pipedRes.statusCode === 200) {
-            const pipedData = JSON.parse(pipedRes.data);
-            // Get audio-only stream with highest quality
-            if (pipedData.audioStreams && pipedData.audioStreams.length > 0) {
-              const sorted = pipedData.audioStreams
-                .filter(s => s.mimeType && s.mimeType.includes('audio'))
-                .sort((a, b) => (b.bitrate || 0) - (a.bitrate || 0));
-              if (sorted.length > 0) {
-                directAudioUrl = sorted[0].url;
-              }
-            }
-          }
-        } catch (e) {
-          console.warn(`Piped ${pipedHost} failed:`, e.message);
+      try {
+        const proxyStreamUrl = `https://yt.chocolatemoo53.com/latest_version?id=${videoId}&itag=140`;
+        const resolved = await resolveRedirectLocation(proxyStreamUrl);
+        if (resolved && resolved !== proxyStreamUrl) {
+          directAudioUrl = resolved;
         }
+      } catch (e) {
+        console.warn('latest_version proxy failed:', e.message);
       }
     }
 
@@ -165,6 +164,8 @@ exports.handler = async (event) => {
       body: JSON.stringify({
         ok: true,
         videoId,
+        title: videoTitle,
+        duration: duration ? parseInt(duration, 10) : null,
         videoUrl: youtubeUrl,
         directAudioUrl: directAudioUrl || null,
         searchQuery: q

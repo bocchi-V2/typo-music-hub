@@ -84,11 +84,14 @@ exports.handler = async (event) => {
       isBase64Encoded: true
     };
   } catch (err) {
+    // Resilient Fallback: 302 redirect directly to audio source so client browser/phone downloads directly
     return {
-      statusCode: 500,
-      headers: corsHeaders,
-      body: JSON.stringify({ error: 'Download proxy failed: ' + err.message })
+      statusCode: 302,
+      headers: {
+        ...corsHeaders,
+        'Location': queryUrl
+      },
+      body: ''
     };
   }
 };
-

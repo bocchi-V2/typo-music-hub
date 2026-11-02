@@ -507,7 +507,7 @@ function setAppLanguage(lang) {
 function renderPlayButton(songId, isPlaying) {
   const song = (typeof SONGS !== 'undefined' && SONGS.find(s => s.id === songId)) ||
                (typeof SONG_MAP !== 'undefined' && SONG_MAP.get(songId));
-  const isFull = song && (song.isFull || (song.audioUrl && (song.audioUrl.endsWith('.mp3') || !song.audioUrl.includes('apple.com'))));
+  const isFull = song && (song.isFull || song.fullAudioUrl || (song.audioUrl && (song.audioUrl.endsWith('.mp3') || !song.audioUrl.includes('apple.com'))));
   
   let durationBadge = '0:30';
   if (song && song.duration) {
@@ -1173,36 +1173,87 @@ async function downloadSongAudio(songId, event) {
     }
   }
 
-  // Case 2: Query full-song API
+  // Case 0: Already resolved full song in session
+  if (song.fullAudioUrl) {
+    clearInterval(progressInterval);
+    if (labelEl) labelEl.textContent = 'กำลังบันทึกเพลงเต็มลงเครื่อง...';
+    if (pctEl) pctEl.textContent = '90%';
+    if (fillEl) fillEl.style.width = '90%';
+    if (widget) {
+      widget._directUrl = song.fullAudioUrl;
+      widget._fileName = filename;
+    }
+    const a = document.createElement('a');
+    a.href = song.fullAudioUrl;
+    a.download = filename;
+    a.style.display = 'none';
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(() => a.remove(), 2500);
+    finishDownloadUi(true);
+    return;
+  }
+
+  // Case 2: Query full-song API with fallback query
   try {
+    if (labelEl) labelEl.textContent = 'กำลังค้นหาและดึงไฟล์เพลงเต็ม...';
     const q = `${song.title || ''} ${song.artist || ''}`.trim();
     const apiUrl = `${NETLIFY_BASE}/api/ai/get-full-song?q=${encodeURIComponent(q)}`;
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 11000);
+    const timeoutId = setTimeout(() => controller.abort(), 12000);
 
-    const apiRes = await fetch(apiUrl, { signal: controller.signal });
+    let apiRes = await fetch(apiUrl, { signal: controller.signal });
     clearTimeout(timeoutId);
 
+    let data = null;
     if (apiRes.ok) {
-      const data = await apiRes.json();
-      if (data.ok && data.directAudioUrl) {
-        clearInterval(progressInterval);
-        if (labelEl) labelEl.textContent = 'พบเพลงเต็มแล้ว! กำลังบันทึกลงเครื่อง...';
-        if (pctEl) pctEl.textContent = '90%';
-        if (fillEl) fillEl.style.width = '90%';
+      data = await apiRes.json();
+    }
 
-        // Direct device download trigger
-        const a = document.createElement('a');
-        a.href = data.directAudioUrl;
-        a.download = filename;
-        a.style.display = 'none';
-        document.body.appendChild(a);
-        a.click();
-        setTimeout(() => a.remove(), 2500);
+    // Try fallback query with song title only if first query didn't return audio
+    if ((!data || !data.directAudioUrl) && song.title) {
+      try {
+        const q2 = (song.title || '').replace(/\([^)]*\)/g, '').replace(/\[[^\]]*\]/g, '').trim();
+        if (q2 && q2 !== q) {
+          const apiRes2 = await fetch(`${NETLIFY_BASE}/api/ai/get-full-song?q=${encodeURIComponent(q2)}`);
+          if (apiRes2.ok) {
+            const data2 = await apiRes2.json();
+            if (data2.ok && data2.directAudioUrl) {
+              data = data2;
+            }
+          }
+        }
+      } catch (e2) {}
+    }
 
-        finishDownloadUi(true);
-        return;
+    if (data && data.ok && data.directAudioUrl) {
+      clearInterval(progressInterval);
+      if (labelEl) labelEl.textContent = 'พบเพลงเต็มแล้ว! กำลังบันทึกลงเครื่อง...';
+      if (pctEl) pctEl.textContent = '95%';
+      if (fillEl) fillEl.style.width = '95%';
+
+      // Cache full audio info on song object
+      song.fullAudioUrl = data.directAudioUrl;
+      song.isFull = true;
+      if (data.duration) song.duration = data.duration;
+
+      // Store directUrl on widget so mobile phone user gets the tap button
+      if (widget) {
+        widget._directUrl = data.directAudioUrl;
+        widget._fileName = filename;
       }
+
+      // Direct device download trigger
+      const a = document.createElement('a');
+      a.href = data.directAudioUrl;
+      a.download = filename;
+      a.style.display = 'none';
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(() => a.remove(), 2500);
+
+      finishDownloadUi(true);
+      return;
     }
   } catch (err) {
     console.warn('Full-song resolution error:', err);
@@ -1373,7 +1424,7 @@ async function togglePlaySong(songId) {
 
   // Real-time audio accuracy resolution:
   // If the song's audio was shared or flagged for resolution, fetch exact track from iTunes in real-time
-  let audioSrc = resolveAssetUrl(song.previewUrl || song.audioUrl || song.audioFallback);
+  let audioSrc = resolveAssetUrl(song.fullAudioUrl || song.previewUrl || song.audioUrl || song.audioFallback);
   const isDeezer = audioSrc && audioSrc.includes('dzcdn.net');
   if ((song.needsLiveResolution || isDeezer) && !song._resolved && navigator.onLine) {
     try {
@@ -1610,7 +1661,7 @@ function updateAudioUI(isPlaying) {
     const id = parseInt(btn.dataset.playBtn);
     const song = (typeof SONGS !== 'undefined' && SONGS.find(s => s.id === id)) ||
                  (typeof SONG_MAP !== 'undefined' && SONG_MAP.get(id));
-    const isFull = song && (song.isFull || (song.audioUrl && (song.audioUrl.endsWith('.mp3') || !song.audioUrl.includes('apple.com'))));
+    const isFull = song && (song.isFull || song.fullAudioUrl || (song.audioUrl && (song.audioUrl.endsWith('.mp3') || !song.audioUrl.includes('apple.com'))));
 
     let durationBadge = '0:30';
     if (song && song.duration) {
