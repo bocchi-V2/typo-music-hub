@@ -37,6 +37,25 @@
   to = "/.netlify/functions/get-full-song"
   status = 200
 
+[[redirects]]
+  from = "/api/download"
+  to = "/.netlify/functions/download-proxy"
+  status = 200
+
+[[headers]]
+  for = "*.mp3"
+  [headers.values]
+    Content-Type = "audio/mpeg"
+    Content-Disposition = "attachment"
+    Access-Control-Allow-Origin = "*"
+
+[[headers]]
+  for = "*.m4a"
+  [headers.values]
+    Content-Type = "audio/mp4"
+    Content-Disposition = "attachment"
+    Access-Control-Allow-Origin = "*"
+
 [[headers]]
   for = "/*"
   [headers.values]
