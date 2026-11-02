@@ -7406,3 +7406,110 @@ button:focus-visible {
   pointer-events: auto !important;
   z-index: 1002 !important;
 }
+
+
+/* ========================================================
+   FIX: Spinning cover MUST be circle (50%) even on mobile
+   ======================================================== */
+.bp-cover.spinning,
+.bottom-player .bp-cover.spinning {
+  border-radius: 50% !important;
+  overflow: hidden !important;
+}
+
+/* ========================================================
+   FIX: Compact bottom player on mobile — max 60% screen
+   ======================================================== */
+@media (max-width: 768px) {
+  .bottom-player {
+    max-height: 55vh !important;
+    overflow-y: auto !important;
+    padding: 0.5rem 0.7rem !important;
+  }
+
+  .bottom-player .bp-inner {
+    gap: 0.3rem !important;
+  }
+
+  .bottom-player .bp-track {
+    gap: 0.45rem !important;
+  }
+
+  .bottom-player .bp-cover {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  .bottom-player .bp-title {
+    font-size: 0.82rem !important;
+    max-width: 180px !important;
+  }
+
+  .bottom-player .bp-artist {
+    font-size: 0.68rem !important;
+    max-width: 170px !important;
+  }
+
+  .bottom-player .bp-controls {
+    gap: 0.3rem !important;
+  }
+
+  .bottom-player .bp-play-btn {
+    width: 34px !important;
+    height: 34px !important;
+    min-width: 34px !important;
+  }
+
+  .bottom-player .bp-actions-panel {
+    gap: 0.25rem !important;
+    padding-bottom: 0 !important;
+  }
+
+  .bottom-player .bp-actions {
+    gap: 0.25rem !important;
+  }
+
+  .bottom-player .bp-actions .btn-sm {
+    padding: 0.28rem 0.5rem !important;
+    font-size: 0.7rem !important;
+    min-height: 28px !important;
+  }
+
+  .bottom-player .bp-volume-panel {
+    padding: 0.18rem 0.4rem !important;
+    gap: 0.15rem !important;
+  }
+
+  .bottom-player .bp-vol-slider {
+    width: 40px !important;
+  }
+
+  .bottom-player .bp-close-btn {
+    width: 26px !important;
+    height: 26px !important;
+    min-width: 26px !important;
+    font-size: 0.85rem !important;
+  }
+}
+
+/* ========================================================
+   FIX: Song card action buttons wrap properly on mobile
+   ======================================================== */
+@media (max-width: 599px) {
+  .song-card-actions {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.3rem !important;
+  }
+
+  .song-card-actions .btn-sm {
+    flex: 0 0 auto !important;
+    font-size: 0.7rem !important;
+    padding: 0.3rem 0.5rem !important;
+    white-space: nowrap !important;
+  }
+
+  .song-card-actions .btn-anime-match {
+    flex: 0 0 auto !important;
+  }
+}

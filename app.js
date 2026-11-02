@@ -3,6 +3,15 @@
 //  ระบบสุ่มเพลงแยกโซน ปรับระดับเสียง และจับคู่อนิเมะสำหรับนักตัดต่อ
 // ============================================
 
+// ---- RESOLVE AUDIO/ASSET URL ----
+// แปลง relative path ให้เป็น absolute URL ชี้ไปที่ Netlify เสมอ (แก้ปัญหา APK/PWA ที่ origin เป็น localhost)
+const NETLIFY_BASE = 'https://mellow-baklava-bffed3.netlify.app';
+function resolveAssetUrl(url) {
+  if (!url) return url;
+  if (url.startsWith('http://') || url.startsWith('https://') || url.startsWith('blob:') || url.startsWith('data:')) return url;
+  return NETLIFY_BASE + '/' + url.replace(/^\.\//,'');
+}
+
 // ---- ANIME COVER IMAGE HELPERS ----
 // สร้าง img tag ที่มี fallback URL อัตโนมัติกรณีรูปโหลดไม่ขึ้น พร้อมรองรับ eager/high priority
 
@@ -1084,20 +1093,37 @@ async function downloadSongAudio(songId, event) {
     }
     if (widget) {
       widget.style.borderColor = 'rgba(16, 185, 129, 0.8)';
-      setTimeout(() => {
-        widget.style.opacity = '0';
-        widget.style.transform = 'translateY(15px)';
-        setTimeout(() => widget.remove(), 400);
-      }, 3500);
+      // Mobile: add a direct tap-to-save button
+      const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      if (isMobile && widget._directUrl) {
+        const saveBtn = document.createElement('a');
+        saveBtn.href = widget._directUrl;
+        saveBtn.download = widget._fileName || 'song.mp3';
+        saveBtn.className = 'btn-direct-save';
+        saveBtn.textContent = '💾 แตะเพื่อบันทึกลงเครื่อง';
+        saveBtn.style.cssText = 'display:block;text-align:center;margin-top:8px;padding:10px 16px;background:linear-gradient(135deg,#10b981,#38bdf8);color:#fff;border-radius:10px;font-weight:700;font-size:0.9rem;text-decoration:none;';
+        widget.appendChild(saveBtn);
+        setTimeout(() => {
+          widget.style.opacity = '0';
+          widget.style.transform = 'translateY(15px)';
+          setTimeout(() => widget.remove(), 400);
+        }, 12000);
+      } else {
+        setTimeout(() => {
+          widget.style.opacity = '0';
+          widget.style.transform = 'translateY(15px)';
+          setTimeout(() => widget.remove(), 400);
+        }, 3500);
+      }
     }
     showToast(currentAppLang === 'th' ? `✅ บันทึกเพลง "${song.title}" (เพลงเต็ม) ลงเครื่องสำเร็จแล้ว! (100%)` : `✅ Downloaded "${song.title}" successfully!`);
   };
 
   // Case 1: Already a local full MP3 file (e.g. สาธุ Emo Rock Version)
-  const isLocalFile = song.audioUrl && (song.audioUrl.endsWith('.mp3') || !song.audioUrl.includes('apple.com'));
+  const isLocalFile = song.audioUrl && (song.audioUrl.endsWith('.mp3') || song.audioUrl.includes('netlify.app'));
   if (isLocalFile) {
     try {
-      const res = await fetch(song.audioUrl, { mode: 'cors' });
+      const res = await fetch(resolveAssetUrl(song.audioUrl), { mode: 'cors' });
       if (!res.ok) throw new Error('HTTP ' + res.status);
       const contentLength = res.headers.get('content-length');
       const totalBytes = contentLength ? parseInt(contentLength, 10) : 0;
@@ -1127,6 +1153,8 @@ async function downloadSongAudio(songId, event) {
 
       const finalBlob = new Blob(chunks, { type: 'audio/mpeg' });
       const blobUrl = URL.createObjectURL(finalBlob);
+      // Store for mobile direct save fallback
+      if (widget) { widget._directUrl = resolveAssetUrl(song.audioUrl); widget._fileName = filename; }
       const a = document.createElement('a');
       a.href = blobUrl;
       a.download = filename;
@@ -1148,7 +1176,7 @@ async function downloadSongAudio(songId, event) {
   // Case 2: Query full-song API
   try {
     const q = `${song.title || ''} ${song.artist || ''}`.trim();
-    const apiUrl = `/api/ai/get-full-song?q=${encodeURIComponent(q)}`;
+    const apiUrl = `${NETLIFY_BASE}/api/ai/get-full-song?q=${encodeURIComponent(q)}`;
     const controller = new AbortController();
     const timeoutId = setTimeout(() => controller.abort(), 11000);
 
@@ -1181,7 +1209,7 @@ async function downloadSongAudio(songId, event) {
   }
 
   // Case 3: Fallback to preview audio stream
-  const fallbackUrl = song.audioUrl || song.previewUrl;
+  const fallbackUrl = resolveAssetUrl(song.audioUrl || song.previewUrl);
   if (!fallbackUrl) {
     clearInterval(progressInterval);
     if (widget) widget.remove();
@@ -1345,7 +1373,7 @@ async function togglePlaySong(songId) {
 
   // Real-time audio accuracy resolution:
   // If the song's audio was shared or flagged for resolution, fetch exact track from iTunes in real-time
-  let audioSrc = song.previewUrl || song.audioUrl || song.audioFallback;
+  let audioSrc = resolveAssetUrl(song.previewUrl || song.audioUrl || song.audioFallback);
   const isDeezer = audioSrc && audioSrc.includes('dzcdn.net');
   if ((song.needsLiveResolution || isDeezer) && !song._resolved && navigator.onLine) {
     try {
@@ -1675,7 +1703,7 @@ function showBottomPlayer(song) {
     <div class="bp-inner">
       <div class="bp-track">
         <div class="bp-cover-box">
-          <img src="${song.coverUrl}" alt="${song.title}" class="bp-cover ${currentAudio && !currentAudio.paused ? 'spinning' : ''}" id="bp-cover-img"
+          <img src="${resolveAssetUrl(song.coverUrl)}" alt="${song.title}" class="bp-cover ${currentAudio && !currentAudio.paused ? 'spinning' : ''}" id="bp-cover-img"
             onerror="this.onerror=null;this.src='${fallbackCover}';" />
         </div>
         <div class="bp-info">
@@ -2175,7 +2203,7 @@ function songCardHTML(song, index = 0) {
           🎧 Spotify
         </a>
         <button class="btn-sm btn-anime-match" onclick="openAnimePicker(${song.id})" title="${currentAppLang === 'th' ? 'เปลี่ยนคู่ตัดต่ออนิเมะ' : 'Switch matched anime'}">
-          ${currentAppLang === 'th' ? '🌸 จับคู่อนิเมะ' : '🌸 Anime Match'}
+          ${currentAppLang === 'th' ? '🌸 จับคู่' : '🌸 Anime'}
         </button>
       </div>
     </div>`;
