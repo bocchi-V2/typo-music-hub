@@ -111,7 +111,7 @@ const ANIMES = [
   {
     "id": 9,
     "name": "Magical Knight Rayearth (2026)",
-    "nameTH": "เมจิกไน���์ เรย์เอิร์ธ (2026)",
+    "nameTH": "เมจิกไนท์ เรย์เอิร์ธ (2026)",
     "genre": [
       "เวทมนตร์",
       "หุ่นยนต์",
@@ -249,7 +249,7 @@ const ANIMES = [
   {
     "id": 19,
     "name": "Ao no Hako 2nd Season",
-    "nameTH": "Ao no Hako 2 กล่องรักวัยใส (ภาค2)ซับไ��ย",
+    "nameTH": "Ao no Hako 2 กล่องรักวัยใส (ภาค2) ซับไทย",
     "genre": [
       "โรแมนติก",
       "ชีวิตประจำวัน",
@@ -538,7 +538,7 @@ const ANIMES = [
   {
     "id": 40,
     "name": "29-sai Dokushin Chuuken Boukensha no Nichijou",
-    "nameTH": "29-sai Dokushin Chuuken Boukensha no Nichijou ชีวิตประจำวันของนัก��จญภัยวัย 29",
+    "nameTH": "29-sai Dokushin Chuuken Boukensha no Nichijou ชีวิตประจำวันของนักผจญภัยวัย 29",
     "genre": [
       "แฟนตาซี",
       "ผจญภัย",
@@ -2675,7 +2675,7 @@ const ANIMES = [
   {
     "id": 195,
     "name": "Ore wa Subete wo \"Parry\" Suru: Gyaku Kanchigai no Sekai Saikyou wa Boukensha ni Naritai",
-    "nameTH": "Ore wa Subete wo Parry suru ฉันจะแพรี่ให้หมด ผู้แข็งแกร่งที่สุดในโลกอยากจะเป็นนักผจญภัยให้ได้[���บ]",
+    "nameTH": "Ore wa Subete wo Parry suru ฉันจะแพรี่ให้หมด ผู้แข็งแกร่งที่สุดในโลกอยากจะเป็นนักผจญภัยให้ได้ [จบ]",
     "genre": [
       "เวทมนตร์",
       "แอ็กชัน",
@@ -3476,7 +3476,7 @@ const ANIMES = [
   {
     "id": 253,
     "name": "Loop 7-kaime no Akuyaku Reijou wa, Moto Tekikoku de Jiyuu Kimamana Hanayome Seikatsu wo Mankitsu Suru",
-    "nameTH": "Loop 7-kaime no Akuyaku Reijou wa ชีวิตลูปที่ 7 ของนางร้าย ขอเป็นเจ้าสาวนอนกลิ้งสบายในแดนอดีตศัตรู[จ��]",
+    "nameTH": "Loop 7-kaime no Akuyaku Reijou wa ชีวิตลูปที่ 7 ของนางร้าย ขอเป็นเจ้าสาวนอนกลิ้งสบายในแดนอดีตศัตรู [จบ]",
     "genre": [
       "แฟนตาซี",
       "โรแมนติก",
@@ -9646,7 +9646,7 @@ const ANIMES = [
   {
     "id": 703,
     "name": "Fruits Basket (2019)",
-    "nameTH": "Fruits Basket 2019 เสน่ห์ส��วข้าวปั้น (ภาค2)",
+    "nameTH": "Fruits Basket 2019 เสน่ห์สาวข้าวปั้น (ภาค2)",
     "genre": [
       "แฟนตาซี",
       "คอมเมดี้",
@@ -35769,7 +35769,7 @@ const SONGS = [
   },
   {
     "id": 904,
-    "title": "นาฬิก���ทราย",
+    "title": "นาฬิกาทราย",
     "artist": "BOWKYLION",
     "lang": "th",
     "genre": "Thai Pop / Typo",
@@ -39587,7 +39587,7 @@ const SONGS = [
   },
   {
     "id": 1092,
-    "title": "ไม่รักดีกว่��",
+    "title": "ไม่รักดีกว่า",
     "artist": "Z9",
     "lang": "th",
     "genre": "Thai Pop / Spotify Hits",
@@ -42070,7 +42070,7 @@ const SONGS = [
   },
   {
     "id": 1215,
-    "title": "ฤดูที่ฉั��เหงา",
+    "title": "ฤดูที่ฉันเหงา",
     "artist": "Flure",
     "lang": "th",
     "genre": "Thai Pop / Spotify Hits",
@@ -46993,7 +46993,7 @@ const SONGS = [
   },
   {
     "id": 1460,
-    "title": "ซ่อน(ไ��่)หา",
+    "title": "ซ่อน(ไม่)หา",
     "artist": "Jeff Satur",
     "lang": "th",
     "genre": "Thai Pop / Spotify Hits",
@@ -47033,7 +47033,7 @@ const SONGS = [
   },
   {
     "id": 1462,
-    "title": "How You Feel - From \"��ิ่งเฮียก็หาว่าซื่อ cutie pie series\"",
+    "title": "How You Feel - From \"นิ่งเฮียก็หาว่าซื่อ cutie pie series\"",
     "artist": "NuNew",
     "lang": "th",
     "genre": "Thai Pop / Spotify Hits",
@@ -414283,7 +414283,7 @@ const SONGS = [
   },
   {
     "id": 15245,
-    "title": "カ��ェ・オ・レ",
+    "title": "カフェ・オ・レ",
     "artist": "森七菜",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/98/13/61/9813618e-5217-011f-b3e2-8673291a3580/4547366847550.jpg/600x600bb.png",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a5/70/50/a5705049-8e3c-eda4-7d32-2d114bfa9a0f/mzaf_14721861878548586622.plus.aac.p.m4a",
@@ -542890,7 +542890,7 @@ const SONGS = [
   },
   {
     "id": 20029,
-    "title": "เพื่อนเ���่น ไม่เล่นเพื่อน (Just Being Friendly) [",
+    "title": "เพื่อนเล่น ไม่เล่นเพื่อน (Just Being Friendly)",
     "artist": "Tilly Birds",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3a/d1/4c/3ad14c38-72fa-5cbc-558b-7ee6ef9d101e/888332916318.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/90/b1/cf/90b1cffa-e581-488a-1978-77b61af4f9b1/mzaf_14460411884468388426.plus.aac.p.m4a",
@@ -555970,7 +555970,7 @@ const SONGS = [
   },
   {
     "id": 20574,
-    "title": "นี่เธอข���มยหัวใจเราไปแล้วเหรอเนี่ย",
+    "title": "นี่เธอขโมยหัวใจเราไปแล้วเหรอเนี่ย",
     "artist": "SERIOUS BACON",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d9/42/59/d942594c-e3ad-0a41-deb4-d1baaf2f40e5/0840410411368_Cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/5c/56/7b/5c567b9b-03cf-6289-df55-a5502cbfec79/mzaf_4997137930191022532.plus.aac.p.m4a",
@@ -573970,7 +573970,7 @@ const SONGS = [
   },
   {
     "id": 21324,
-    "title": "แ��่บรรยากาศ",
+    "title": "แพ้บรรยากาศ",
     "artist": "T_047",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/fb/2e/b0/fb2eb05d-5007-e0bc-d3af-42603a7be83b/cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/e9/f8/11/e9f811e9-9af3-0850-81a9-ebbe0711e707/mzaf_10241820728382937426.plus.aac.p.m4a",
@@ -577762,7 +577762,7 @@ const SONGS = [
   },
   {
     "id": 21482,
-    "title": "พูด��ปเหอะ",
+    "title": "พูดไปเหอะ",
     "artist": "Yented",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/ac/5b/7e/ac5b7eb1-01bf-fa9d-5c40-7bec68c6b5bf/cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/45/0d/0e/450d0e2b-9ce3-58cb-db54-1c60601f291b/mzaf_4632528583642194685.plus.aac.p.m4a",
@@ -589042,7 +589042,7 @@ const SONGS = [
   },
   {
     "id": 21952,
-    "title": "ต้องเสียน้ำตาให้��ธออีกกี่ครั้ง",
+    "title": "ต้องเสียน้ำตาให้เธออีกกี่ครั้ง",
     "artist": "Zom Marie",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/0b/a1/bb/0ba1bb96-56fb-01a6-4938-4b195c9bd06d/00602435751115_Cover.jpg/600x600bb.jpg",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/38/f7/d1/38f7d1c7-b043-de65-d1bb-e19155d90e03/mzaf_8270723605830637638.plus.aac.p.m4a",
@@ -612781,7 +612781,7 @@ const SONGS = [
   },
   {
     "id": 22935,
-    "title": "��ม่สมศักดิ์ศรี",
+    "title": "ไม่สมศักดิ์ศรี",
     "artist": "Joey Phuwasit",
     "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/98/4b/ba/984bbabf-b088-fb25-49bd-24a891c903d2/888332880961.jpg/600x600bb.png",
     "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/56/67/65/56676562-ef91-514f-5124-adde57c7dcda/mzaf_6487339787372557189.plus.aac.p.m4a",
