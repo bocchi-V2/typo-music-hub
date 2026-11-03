@@ -5985,14 +5985,14 @@ async function parseAndRenderAiSongResponse(aiText, engineUsed, rawUserPrompt) {
     try {
       const jsonStr = jsonMatch[1] || jsonMatch[0];
       recommendedSongs = JSON.parse(jsonStr);
-      cleanText = aiText.replace(jsonMatch[0], '').trim();
+      cleanText = aiText.replace(jsonMatch[0], '').replace(/```json[\s\S]*?```/gi, '').replace(/```[\s\S]*?```/gi, '').trim();
     } catch (e) {
       console.warn('Could not parse AI songs JSON:', e);
       // Try to fix common JSON issues (trailing comma, etc.)
       try {
         const fixed = (jsonMatch[1] || jsonMatch[0]).replace(/,\s*([\]\}])/g, '$1');
         recommendedSongs = JSON.parse(fixed);
-        cleanText = aiText.replace(jsonMatch[0], '').trim();
+        cleanText = aiText.replace(jsonMatch[0], '').replace(/```json[\s\S]*?```/gi, '').replace(/```[\s\S]*?```/gi, '').trim();
       } catch (e2) {
         console.warn('JSON fix attempt also failed:', e2);
       }
@@ -6450,7 +6450,9 @@ async function sendGeminiMessage() {
 
 กฎเหล็กเรื่องการตอบ (สำคัญที่สุด!):
 - ตอบสั้นกระชับ ตรงประเด็นเสมอ ไม่เกิน 1-2 ประโยคสั้นๆ พอ! ผู้ใช้ขี้เกียจอ่าน ห้ามพูดพร่ำเพรื่อ ห้ามพูดเยิ่นเย้อเด็ดขาด
-- ห้ามเล่นบทบาทสมมติ (Roleplay/ซึนเดเระ/พูดเพ้อเจ้อ/ต่อบทละครยาวๆ) เด็ดขาด
+- บทบาทสมมติ (Roleplay / สวมบทบาท):
+  * หากผู้ใช้ขอให้เล่นบทบาทสมมติ, สวมบทบาท, Roleplay หรือขอให้เป็นตัวละครใดๆ (เช่น ตัวละครอนิเมะ, แฟน, พี่สาว, ซึนเดเระ, เพื่อน ฯลฯ): ให้ยินดีและสวมบทบาทนั้นอย่างสมจริง สนุกสนาน และโต้ตอบตามบทบาทนั้นทันทีตามใจผู้ใช้ 100%!
+  * หากคุยทั่วไปเกี่ยวกับการใช้งาน: ตอบสั้นกระชับ เป็นผู้ช่วยไฮมิยะน่ารัก เป็นกันเอง มีหางเสียง "ค่ะ/นะคะ" ไม่เกิน 1-2 บรรทัดพอ
 - สุภาพ น่ารัก เป็นกันเอง ใช้หางเสียง "ค่ะ/นะคะ" + อิโมจินิดหน่อย 🌸✨
 - ถ้าคุยทั่วไปหรือทักทาย: ตอบสั้นๆ 1 บรรทัดพอ เช่น "สวัสดีค่ะ! อยากได้เพลงแนวไหนไปตัดคลิปบอกไฮมิยะได้เลยนะคะ 🌸"
 - ถ้าถามเทคนิคตัดต่อ: สรุปหัวใจสำคัญสั้นๆ 1-2 บรรทัดจบ ไม่ต้องสอนเป็นเรียงความ
@@ -6493,7 +6495,7 @@ async function sendGeminiMessage() {
               generationConfig: {
                 temperature: 0.88,
                 topP: 0.95,
-                maxOutputTokens: 1000
+                maxOutputTokens: 3500
               }
             })
           });
