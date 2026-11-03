@@ -1,4 +1,4 @@
-const CACHE_NAME = 'haimiya-typo-v1793670000209';
+const CACHE_NAME = 'haimiya-typo-v1793710000210';
 const AUDIO_CACHE_NAME = 'haimiya-audio-vault';
 
 // ไฟล์ที่ต้องแคชเพื่อให้แอพทำงานแบบ offline ได้ 100%
@@ -69,7 +69,7 @@ async function handleAudioRangeRequest(request) {
     try {
       const audioCache = await caches.open(AUDIO_CACHE_NAME);
       response = await audioCache.match(request.url, { ignoreSearch: true });
-    } catch (e) {}
+    } catch (e) { }
   }
 
   // ถ้าไม่มีในแคชและมีเน็ต ให้ดึงจากเน็ตและเก็บลง Audio Vault
@@ -82,7 +82,7 @@ async function handleAudioRangeRequest(request) {
           if (fullRes && fullRes.status === 200) {
             caches.open(AUDIO_CACHE_NAME).then(c => c.put(request.url, fullRes));
           }
-        }).catch(() => {});
+        }).catch(() => { });
       }
       return networkResponse;
     } catch (err) {
@@ -107,10 +107,10 @@ async function handleAudioRangeRequest(request) {
       const end = match[2] ? parseInt(match[2], 10) : totalLength - 1;
       const chunk = arrayBuffer.slice(start, end + 1);
 
-      const contentType = response.headers.get('content-type') || 
-        (request.url.includes('.m4a') ? 'audio/mp4' : 
-         request.url.includes('.wav') ? 'audio/wav' :
-         request.url.includes('.mp3') ? 'audio/mpeg' : 'audio/mp4');
+      const contentType = response.headers.get('content-type') ||
+        (request.url.includes('.m4a') ? 'audio/mp4' :
+          request.url.includes('.wav') ? 'audio/wav' :
+            request.url.includes('.mp3') ? 'audio/mpeg' : 'audio/mp4');
 
       return new Response(chunk, {
         status: 206,
@@ -123,7 +123,7 @@ async function handleAudioRangeRequest(request) {
         ]
       });
     }
-  } catch (e) {}
+  } catch (e) { }
 
   return response;
 }
@@ -134,11 +134,11 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
 
   // 1. ตรวจสอบไฟล์เสียงที่มี Range Header หรือไฟล์เพลง .m4a / .wav / .mp3 / itunes audio preview
-  const isAudioFile = url.pathname.endsWith('.m4a') || 
-                      url.pathname.endsWith('.wav') || 
-                      url.pathname.endsWith('.mp3') || 
-                      url.hostname.includes('apple.com') ||
-                      event.request.headers.get('range');
+  const isAudioFile = url.pathname.endsWith('.m4a') ||
+    url.pathname.endsWith('.wav') ||
+    url.pathname.endsWith('.mp3') ||
+    url.hostname.includes('apple.com') ||
+    event.request.headers.get('range');
 
   if (isAudioFile) {
     event.respondWith(handleAudioRangeRequest(event.request));
@@ -147,14 +147,14 @@ self.addEventListener('fetch', (event) => {
 
   // 2. สำหรับ index.html, version.json, data.js, app.js หรือ request ที่มี _t/v หรือการเข้าหน้าเว็บ (Navigation) ให้ดึงสดจากเน็ตก่อนเสมอ (Network-First)
   const isNetworkFirst = event.request.mode === 'navigate' ||
-                         url.pathname.endsWith('index.html') ||
-                         url.pathname === '/' ||
-                         url.pathname.endsWith('version.json') || 
-                         url.pathname.endsWith('data.js') || 
-                         url.pathname.endsWith('app.js') || 
-                         url.pathname.endsWith('style.css') ||
-                         url.searchParams.has('_t') || 
-                         url.searchParams.has('v');
+    url.pathname.endsWith('index.html') ||
+    url.pathname === '/' ||
+    url.pathname.endsWith('version.json') ||
+    url.pathname.endsWith('data.js') ||
+    url.pathname.endsWith('app.js') ||
+    url.pathname.endsWith('style.css') ||
+    url.searchParams.has('_t') ||
+    url.searchParams.has('v');
 
   if (isNetworkFirst) {
     event.respondWith(
@@ -255,7 +255,7 @@ self.addEventListener('periodicsync', (event) => {
             });
           }
         })
-        .catch(() => {})
+        .catch(() => { })
     );
   }
 });
