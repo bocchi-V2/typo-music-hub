@@ -6385,31 +6385,8 @@ async function sendGeminiMessage() {
     let aiResponseText = '';
     let engineUsed = 'Haimiya AI';
 
-    // 1. Try calling server endpoint /api/ai/chat (Netlify Serverless Function or Node Server)
-    try {
-      const chatRes = await fetch(getAiApiBase() + '/api/ai/chat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message: rawText,
-          history: window.__aiChatHistory.slice(-8),
-          apiKey: activeApiKey
-        })
-      });
-
-      if (chatRes.ok) {
-        const chatData = await chatRes.json();
-        if (chatData.ok && chatData.reply) {
-          aiResponseText = chatData.reply;
-          engineUsed = 'Haimiya AI';
-        }
-      }
-    } catch (netErr) {
-      console.warn('Server /api/ai/chat unreachable, using direct Gemini API:', netErr);
-    }
-
-    // 2. Direct client-side Google Gemini Flash API call (High-quota, fast models)
-    if (!aiResponseText && activeApiKey) {
+    // 1. Direct client-side Google Gemini Flash API call (High-quota, fast models, real library context & roleplay support)
+    if (activeApiKey) {
       const modelsToTry = [
         'gemini-2.5-flash',
         'gemini-3.8-flash',
@@ -6512,6 +6489,31 @@ async function sendGeminiMessage() {
         } catch (gErr) {
           console.warn(`Gemini ${modelName} call failed:`, gErr);
         }
+      }
+    }
+
+    // 2. Server endpoint fallback /api/ai/chat (Netlify Serverless Function or Node Server)
+    if (!aiResponseText) {
+      try {
+        const chatRes = await fetch(getAiApiBase() + '/api/ai/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            message: rawText,
+            history: window.__aiChatHistory.slice(-8),
+            apiKey: activeApiKey
+          })
+        });
+
+        if (chatRes.ok) {
+          const chatData = await chatRes.json();
+          if (chatData.ok && chatData.reply) {
+            aiResponseText = chatData.reply;
+            engineUsed = 'Haimiya AI';
+          }
+        }
+      } catch (netErr) {
+        console.warn('Server /api/ai/chat unreachable:', netErr);
       }
     }
 

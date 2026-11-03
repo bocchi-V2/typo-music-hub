@@ -133,7 +133,8 @@ exports.handler = async (event, context) => {
       body: JSON.stringify({
         ok: true,
         reply: aiReply,
-        engine: usedModel
+        engine: usedModel,
+        fn_version: "2026.11.03.fix"
       })
     };
   } catch (err) {
