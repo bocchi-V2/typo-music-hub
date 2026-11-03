@@ -3142,6 +3142,13 @@ function openAnimePicker(songId) {
   if (!song) return;
   _pickerSongId = songId;
 
+  // ซ่อน modal รายละเอียดคู่เพลงเดิมชั่วคราว เพื่อไม่ให้ปุ่มปิด ✕ และกรอบกระจกซ้อนทับกัน
+  const detailModal = document.getElementById('modal-overlay');
+  if (detailModal && !detailModal.classList.contains('hidden')) {
+    detailModal.dataset.wasOpen = 'true';
+    detailModal.classList.add('hidden');
+  }
+
   const songMood = song.mood || 'chill';
   const content = document.getElementById('anime-picker-content');
   if (!content) return;
@@ -3160,7 +3167,7 @@ function openAnimePicker(songId) {
           <div style="font-size:1.25rem;font-weight:800;color:#fff;margin-bottom:0.2rem;">🎵 ${song.title}</div>
           <div style="color:var(--text-muted);font-size:0.85rem;">${currentAppLang === 'th' ? 'โดย' : 'By'} ${song.artist} • ${moodLabel(songMood)}</div>
         </div>
-        <button onclick="closeAnimePicker()" style="background:rgba(255,255,255,0.08);border:none;color:#fff;width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;">✕</button>
+        <!-- Close button is handled by modal-close in modal-box -->
       </div>
       <div style="font-size:0.85rem;color:var(--text-muted);margin-top:0.6rem;">
         ${promptText}
@@ -3211,10 +3218,20 @@ function closeAnimePicker() {
   if (overlay) overlay.classList.add('hidden');
   document.body.classList.remove('anime-picker-open');
   document.body.style.overflow = '';
+
+  // แสดง modal รายละเอียดเดิมกลับมาหากเปิดมาจากหน้านั้น
+  const detailModal = document.getElementById('modal-overlay');
+  if (detailModal && detailModal.dataset.wasOpen === 'true') {
+    delete detailModal.dataset.wasOpen;
+    detailModal.classList.remove('hidden');
+  }
   _pickerSongId = null;
 }
 
 function selectAnimePair(songId, animeId) {
+  const detailModal = document.getElementById('modal-overlay');
+  const shouldReopenDetail = detailModal && detailModal.dataset.wasOpen === 'true';
+  if (detailModal) delete detailModal.dataset.wasOpen;
   closeAnimePicker();
   const song = SONG_MAP.get(songId) || SONGS.find(s => s.id === songId);
   const anime = ANIME_MAP.get(animeId) || ANIMES.find(a => a.id === animeId);
