@@ -6494,11 +6494,12 @@ body.in-secret-mode .nav-link-secret {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.4), rgba(236, 72, 153, 0.4));
-  border: 1.5px solid rgba(168, 85, 247, 0.7);
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1.5px solid rgba(56, 189, 248, 0.35);
   border-radius: 8px;
-  color: #fff;
-  font-weight: 700;
+  color: #e2e8f0;
+  font-weight: 600;
   font-size: 0.86rem;
   padding: 0.38rem 0.85rem;
   cursor: pointer;
@@ -6508,18 +6509,21 @@ body.in-secret-mode .nav-link-secret {
   font-family: 'Kanit', sans-serif;
 }
 .nav-ai-btn-header:hover {
-  transform: scale(1.05);
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.6), rgba(236, 72, 153, 0.6));
-  box-shadow: 0 0 22px rgba(236, 72, 153, 0.7);
+  transform: translateY(-1px);
+  background: rgba(51, 65, 85, 0.85);
+  border-color: rgba(56, 189, 248, 0.65);
+  box-shadow: 0 4px 16px rgba(56, 189, 248, 0.25);
+  color: #fff;
 }
 
 /* Hero Section AI Button */
 .btn-ai-hero {
-  background: linear-gradient(135deg, #7c3aed, #db2777) !important;
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.85), rgba(99, 102, 241, 0.85)) !important;
   color: #fff !important;
-  font-weight: 700 !important;
-  border: 1.5px solid rgba(255, 255, 255, 0.2) !important;
-  box-shadow: 0 6px 22px rgba(124, 58, 237, 0.5) !important;
+  font-weight: 600 !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 18px rgba(14, 165, 233, 0.3) !important;
   cursor: pointer;
   transition: all 0.25s ease;
 }
@@ -6542,13 +6546,14 @@ body.in-secret-mode .nav-link-secret {
 .ai-bubble-label {
   display: block;
   position: absolute;
-  bottom: -10px;
+  bottom: -6px;
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(135deg, #6366f1, #ec4899);
-  color: #fff;
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  color: #38bdf8;
   font-size: 0.65rem;
-  font-weight: 800;
+  font-weight: 700;
   padding: 1px 7px;
   border-radius: 8px;
   white-space: nowrap;

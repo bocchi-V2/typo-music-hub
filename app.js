@@ -1,3 +1,82 @@
+
+// ---- PERSISTENT FULL-SONG CACHE & ZERO-DELAY ENGINE ----
+function getSongCacheKey(songId) {
+  return 'haimiya_fs_' + songId;
+}
+
+function loadSingleSongFullCache(song) {
+  if (!song || song.fullAudioUrl) return;
+  try {
+    const raw = localStorage.getItem(getSongCacheKey(song.id));
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (parsed && parsed.url) {
+        song.fullAudioUrl = parsed.url;
+        song.isFull = true;
+        if (parsed.dur) song.duration = parsed.dur;
+      }
+    }
+  } catch (e) {}
+}
+
+function saveSongFullCache(song, url, dur) {
+  if (!song || !url) return;
+  song.fullAudioUrl = url;
+  song.isFull = true;
+  if (dur) song.duration = dur;
+  try {
+    localStorage.setItem(getSongCacheKey(song.id), JSON.stringify({ url, dur: dur || song.duration || null, t: Date.now() }));
+  } catch (e) {}
+}
+
+// โหลดแคชเพลงเต็มทั้งหมดที่เคยดึงไว้เข้าสู่ Memory ทันทีที่เปิดแอป
+function initPersistentFullSongCache() {
+  try {
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key && key.startsWith('haimiya_fs_')) {
+        const id = parseInt(key.replace('haimiya_fs_', ''), 10);
+        if (id && typeof SONG_MAP !== 'undefined') {
+          const song = SONG_MAP.get(id);
+          if (song && !song.fullAudioUrl) {
+            loadSingleSongFullCache(song);
+          }
+        }
+      }
+    }
+  } catch (e) {}
+}
+
+async function triggerBackgroundFullSongFetch(song) {
+  if (!song || song.fullAudioUrl || song._fetchingFull || !navigator.onLine) return;
+  song._fetchingFull = true;
+  try {
+    const q = `${song.title || ''} ${song.artist || ''}`.trim();
+    const res = await fetch(`${NETLIFY_BASE}/api/ai/get-full-song?q=${encodeURIComponent(q)}`);
+    if (res.ok) {
+      const data = await res.json();
+      if (data && data.ok && data.directAudioUrl) {
+        saveSongFullCache(song, data.directAudioUrl, data.duration);
+        // หากผู้ใช้กำลังฟังเพลงนี้อยู่ ให้สลับไปสตรีมเพลงเต็มแบบไร้รอยต่อ
+        if (currentPlayingId === song.id && currentAudio && !currentAudio.paused) {
+          const curTime = currentAudio.currentTime;
+          // ถ้าระยะเวลาเกิน 24s ให้สลับทันทีเพื่อเล่นต่อยาวๆ
+          if (curTime > 20) {
+            currentAudio.src = data.directAudioUrl;
+            currentAudio.currentTime = curTime;
+            currentAudio.play().catch(() => {});
+          }
+          showBottomPlayer(song);
+          updateAudioUI(true);
+        }
+      }
+    }
+  } catch (e) {
+  } finally {
+    song._fetchingFull = false;
+  }
+}
+
 // ============================================
 //  APP.JS – Typo Music Platform (Studio Edition)
 //  ระบบสุ่มเพลงแยกโซน ปรับระดับเสียง และจับคู่อนิเมะสำหรับนักตัดต่อ
@@ -34,6 +113,7 @@ function restoreCustomAnimePairs() {
 }
 
 function initDataMaps() {
+  initPersistentFullSongCache();
   if (typeof ANIMES !== 'undefined' && Array.isArray(ANIMES)) {
     ANIME_MAP = new Map(ANIMES.map(a => [a.id, a]));
   }
@@ -1028,6 +1108,7 @@ async function downloadSongAudio(songId, event) {
   const song = (typeof SONG_MAP !== 'undefined' && SONG_MAP.get(songId)) || 
                (typeof SONGS !== 'undefined' && SONGS.find(s => s.id === songId));
   if (!song) return;
+  loadSingleSongFullCache(song);
 
   const safeTitle = (song.title || 'song').replace(/[\\/:*?"<>|]/g, '').trim();
   const safeArtist = (song.artist || 'artist').replace(/[\\/:*?"<>|]/g, '').trim();
@@ -1230,8 +1311,9 @@ async function downloadSongAudio(songId, event) {
 
       // Cache full audio info on song object
       song.fullAudioUrl = data.directAudioUrl;
-      song.isFull = true;
-      if (data.duration) song.duration = data.duration;
+        song.isFull = true;
+        if (data.duration) song.duration = data.duration;
+        saveSongFullCache(song, data.directAudioUrl, data.duration);
 
       // Store directUrl on widget so mobile phone user gets the tap button
       if (widget) {
