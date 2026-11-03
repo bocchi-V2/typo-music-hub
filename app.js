@@ -1373,8 +1373,8 @@ function getSharedAudioPlayer() {
   if (!_sharedAudioPlayer) {
     _sharedAudioPlayer = new Audio();
     _sharedAudioPlayer.preload = 'auto';
-    // ตั้งค่า crossOrigin เพื่อลดปัญหา CORS audio stutter
-    _sharedAudioPlayer.crossOrigin = 'anonymous';
+    // อนุญาตเล่น audio จากทุก CDN (รวมถึง googlevideo/full songs) โดยไม่ติดบล็อก CORS
+    _sharedAudioPlayer.removeAttribute('crossorigin');
     // ตั้งค่า buffer ขนาดใหญ่เพื่อลด audio stutter
     try {
       _sharedAudioPlayer.mozAudioChannelType = 'content';
@@ -1478,6 +1478,35 @@ async function togglePlaySong(songId) {
     try {
       currentAudio.pause();
     } catch (e) {}
+  }
+
+  // ดึงเพลงเต็มจริงทันทีหากยังไม่ได้ดึง (เอาเพลงเต็มๆ มาเล่น ไม่ใช่ตัวอย่าง 30s)
+  if (!song.fullAudioUrl && !song.isFull && navigator.onLine) {
+    const playBtn = document.querySelector(`[data-play-btn="${songId}"]`);
+    if (playBtn) {
+      playBtn.classList.add('loading');
+      playBtn.innerHTML = '⏳ กำลังดึงเพลงเต็ม...';
+      playBtn.style.opacity = '0.85';
+    }
+    try {
+      const q = `${song.title || ''} ${song.artist || ''}`.trim();
+      const apiRes = await fetch(`${NETLIFY_BASE}/api/ai/get-full-song?q=${encodeURIComponent(q)}`);
+      if (apiRes.ok) {
+        const data = await apiRes.json();
+        if (data && data.ok && data.directAudioUrl) {
+          song.fullAudioUrl = data.directAudioUrl;
+          song.isFull = true;
+          if (data.duration) song.duration = data.duration;
+          audioSrc = data.directAudioUrl;
+        }
+      }
+    } catch (err) {
+      console.warn('Real full song fetch on click error:', err);
+    }
+    if (playBtn) {
+      playBtn.classList.remove('loading');
+      playBtn.style.opacity = '';
+    }
   }
 
   const handleAudioFail = () => {
@@ -1618,11 +1647,8 @@ async function togglePlaySong(songId) {
 
     const targetSrc = playableUrl || url;
     _lastBlobUrl = targetSrc;
-    if (targetSrc.startsWith('blob:') || targetSrc.startsWith('data:')) {
-      audio.removeAttribute('crossorigin');
-    } else {
-      audio.crossOrigin = 'anonymous';
-    }
+    // เล่น direct audio stream เต็มเพลงได้ทันทีโดยไม่ติด CORS
+    audio.removeAttribute('crossorigin');
     audio.src = targetSrc;
     audio.load();
 
@@ -2038,6 +2064,7 @@ function updateZoneCounterUI() {
 function renderRandomShowcase(song) {
   const anime = ANIME_MAP.get(song.animeId) || (ANIMES && ANIMES.find(a => a.id === song.animeId)) || ANIMES[0];
   const isPlaying = currentPlayingId === song.id && currentAudio && !currentAudio.paused;
+  queueFullSongPreload(song);
   const percent = Math.round(currentVolume * 100);
   const icon = getVolumeIcon(currentVolume);
   const animeDisplayName = getAnimeDisplayName(anime);
@@ -2236,7 +2263,44 @@ function isAnimeAppropriate(anime) {
   return true;
 }
 
+
+// ---- IDLE PRELOADER: ทยอยดึงเพลงเต็มล่วงหน้า เพื่อให้กดฟังแล้วได้เพลงเต็มทันที 0ms ----
+let _preloadQueue = [];
+let _isPreloading = false;
+
+function queueFullSongPreload(song) {
+  if (!song || song.fullAudioUrl || song.isFull || !navigator.onLine) return;
+  if (_preloadQueue.some(s => s.id === song.id)) return;
+  _preloadQueue.push(song);
+  if (!_isPreloading) {
+    setTimeout(processPreloadQueue, 1000);
+  }
+}
+
+async function processPreloadQueue() {
+  if (_isPreloading || _preloadQueue.length === 0 || !navigator.onLine) return;
+  _isPreloading = true;
+  const song = _preloadQueue.shift();
+  try {
+    const q = `${song.title || ''} ${song.artist || ''}`.trim();
+    const res = await fetch(`${NETLIFY_BASE}/api/ai/get-full-song?q=${encodeURIComponent(q)}`);
+    if (res.ok) {
+      const data = await res.json();
+      if (data && data.ok && data.directAudioUrl) {
+        song.fullAudioUrl = data.directAudioUrl;
+        song.isFull = true;
+        if (data.duration) song.duration = data.duration;
+      }
+    }
+  } catch (e) {}
+  _isPreloading = false;
+  if (_preloadQueue.length > 0) {
+    setTimeout(processPreloadQueue, 2000);
+  }
+}
+
 function songCardHTML(song, index = 0) {
+  queueFullSongPreload(song);
   const anime = ANIME_MAP.get(song.animeId) || (ANIMES && ANIMES.find(a => a.id === song.animeId)) || ANIMES[0];
   const tags = getSongTagsForDisplay(song).map(t => `<span class="song-tag">${t}</span>`).join('');
   const isPlaying = currentPlayingId === song.id && currentAudio && !currentAudio.paused;
