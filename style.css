@@ -7513,3 +7513,54 @@ button:focus-visible {
     flex: 0 0 auto !important;
   }
 }
+
+
+/* ==== SEEK THUMB (ก้อนกลม ลากเพื่อข้ามท่อน) ==== */
+.bp-seek-thumb {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 6px rgba(16, 185, 129, 0.7), 0 1px 4px rgba(0,0,0,0.4);
+  cursor: grab;
+  z-index: 5;
+  transition: transform 0.1s, box-shadow 0.15s;
+  touch-action: none;
+}
+.bp-seek-thumb:active {
+  cursor: grabbing;
+  transform: translate(-50%, -50%) scale(1.3);
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.9), 0 2px 8px rgba(0,0,0,0.5);
+}
+.bp-progress-bar {
+  position: relative !important;
+  overflow: visible !important;
+}
+
+/* ==== INLINE LOADING SPINNER ==== */
+.loading-spinner-inline {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: #10b981;
+  border-radius: 50%;
+  animation: spinInline 0.6s linear infinite;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+@keyframes spinInline {
+  to { transform: rotate(360deg); }
+}
+
+/* Mobile: larger thumb for touch */
+@media (max-width: 768px) {
+  .bp-seek-thumb {
+    width: 18px;
+    height: 18px;
+  }
+}
