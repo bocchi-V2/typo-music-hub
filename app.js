@@ -509,13 +509,11 @@ function renderPlayButton(songId, isPlaying) {
                (typeof SONG_MAP !== 'undefined' && SONG_MAP.get(songId));
   const isFull = song && (song.isFull || song.fullAudioUrl || (song.audioUrl && (song.audioUrl.endsWith('.mp3') || !song.audioUrl.includes('apple.com'))));
   
-  let durationBadge = '3:20';
+  let durationBadge = '--:--';
   if (song && song.duration) {
     const dm = Math.floor(song.duration / 60);
     const ds = Math.floor(song.duration % 60).toString().padStart(2, '0');
     durationBadge = `${dm}:${ds}`;
-  } else if (song && song.isFull) {
-    durationBadge = '1:11';
   }
 
   const label = isPlaying
@@ -1485,7 +1483,7 @@ async function togglePlaySong(songId) {
     const playBtn = document.querySelector(`[data-play-btn="${songId}"]`);
     if (playBtn) {
       playBtn.classList.add('loading');
-      playBtn.innerHTML = '⏳ กำลังดึงเพลงเต็ม...';
+      playBtn.innerHTML = '<span class="loading-spinner-inline"></span> กำลังโหลดเพลง...';
       playBtn.style.opacity = '0.85';
     }
     try {
@@ -1727,21 +1725,17 @@ function updateAudioUI(isPlaying) {
                  (typeof SONG_MAP !== 'undefined' && SONG_MAP.get(id));
     const isFull = song && (song.isFull || song.fullAudioUrl || (song.audioUrl && (song.audioUrl.endsWith('.mp3') || !song.audioUrl.includes('apple.com'))));
 
-    let durationBadge = '0:30';
+    let durationBadge = '--:--';
     if (song && song.duration) {
       const dm = Math.floor(song.duration / 60);
       const ds = Math.floor(song.duration % 60).toString().padStart(2, '0');
       durationBadge = `${dm}:${ds}`;
-    } else if (isFull) {
-      durationBadge = '1:11';
     }
 
     const thisPlaying = id === currentPlayingId && isPlaying;
     const label = thisPlaying
       ? (currentAppLang === 'th' ? 'กำลังเล่น' : 'Playing')
-      : (isFull 
-          ? (currentAppLang === 'th' ? '▶ ฟังเพลงเต็ม' : '▶ Play Full') 
-          : (currentAppLang === 'th' ? 'ฟังเพลง' : 'Play'));
+      : (currentAppLang === 'th' ? '▶ ฟังเพลงเต็ม' : '▶ Play Full');
 
     const iconHtml = thisPlaying
       ? '<svg width="11" height="11" viewBox="0 0 24 24" fill="#000"><rect x="5" y="3" width="4.5" height="18" rx="1.5"></rect><rect x="14.5" y="3" width="4.5" height="18" rx="1.5"></rect></svg>'
@@ -1850,10 +1844,11 @@ function showBottomPlayer(song) {
         </div>
         <div class="bp-progress-wrap">
           <span class="bp-time" id="bp-time-cur">0:00</span>
-          <div class="bp-progress-bar" onclick="seekAudio(event)">
+          <div class="bp-progress-bar" id="bp-progress-bar">
             <div class="bp-progress-fill" id="bp-progress-fill"></div>
+            <div class="bp-seek-thumb" id="bp-seek-thumb"></div>
           </div>
-          <span class="bp-time" id="bp-time-total">${song.duration ? Math.floor(song.duration/60) + ':' + Math.floor(song.duration%60).toString().padStart(2,'0') : (song.isFull ? '1:11' : '3:30')}</span>
+          <span class="bp-time" id="bp-time-total">${song.duration ? Math.floor(song.duration/60) + ':' + Math.floor(song.duration%60).toString().padStart(2,'0') : '--:--'}</span>
         </div>
       </div>
 
@@ -1925,6 +1920,9 @@ function updateBottomPlayerProgress() {
   const fill = document.getElementById('bp-progress-fill');
   if (fill) fill.style.width = pct + '%';
 
+  const thumb = document.getElementById('bp-seek-thumb');
+  if (thumb) thumb.style.left = pct + '%';
+
   const topFill = document.getElementById('bp-top-progress-fill');
   if (topFill) topFill.style.width = pct + '%';
 
@@ -1935,7 +1933,7 @@ function updateBottomPlayerProgress() {
     curEl.textContent = `${m}:${s}`;
   }
   const totalEl = document.getElementById('bp-time-total');
-  if (totalEl && currentAudio.duration && isFinite(currentAudio.duration) && currentAudio.duration > 35) {
+  if (totalEl && currentAudio.duration && isFinite(currentAudio.duration)) {
     const tm = Math.floor(currentAudio.duration / 60);
     const ts = Math.floor(currentAudio.duration % 60).toString().padStart(2, '0');
     totalEl.textContent = `${tm}:${ts}`;
@@ -1944,11 +1942,35 @@ function updateBottomPlayerProgress() {
 
 function seekAudio(e) {
   if (!currentAudio || !currentAudio.duration) return;
-  const rect = e.currentTarget.getBoundingClientRect();
-  const clickX = e.clientX - rect.left;
-  const pct = clickX / rect.width;
+  const bar = document.getElementById('bp-progress-bar') || e.currentTarget;
+  const rect = bar.getBoundingClientRect();
+  const clickX = (e.clientX || (e.touches && e.touches[0] && e.touches[0].clientX) || 0) - rect.left;
+  const pct = Math.max(0, Math.min(clickX / rect.width, 1));
   currentAudio.currentTime = pct * currentAudio.duration;
+  updateBottomPlayerProgress();
 }
+
+// ---- DRAG SEEK THUMB ----
+let _seekDragging = false;
+(function initSeekDrag() {
+  document.addEventListener('pointerdown', (e) => {
+    const thumb = document.getElementById('bp-seek-thumb');
+    const bar = document.getElementById('bp-progress-bar');
+    if (!thumb || !bar) return;
+    if (e.target === thumb || e.target === bar || bar.contains(e.target)) {
+      _seekDragging = true;
+      seekAudio(e);
+      e.preventDefault();
+    }
+  });
+  document.addEventListener('pointermove', (e) => {
+    if (!_seekDragging) return;
+    seekAudio(e);
+  });
+  document.addEventListener('pointerup', () => {
+    _seekDragging = false;
+  });
+})();
 
 // ---- ZONE-BASED RANDOMIZER WITH OPTIONS & SHUFFLE DECK ----
 let selectedZone = 'th'; // 'th', 'en', 'jp', 'all'
@@ -2273,7 +2295,7 @@ function queueFullSongPreload(song) {
   if (_preloadQueue.some(s => s.id === song.id)) return;
   _preloadQueue.push(song);
   if (!_isPreloading) {
-    setTimeout(processPreloadQueue, 1000);
+    setTimeout(processPreloadQueue, 300);
   }
 }
 
@@ -2295,7 +2317,7 @@ async function processPreloadQueue() {
   } catch (e) {}
   _isPreloading = false;
   if (_preloadQueue.length > 0) {
-    setTimeout(processPreloadQueue, 2000);
+    setTimeout(processPreloadQueue, 800);
   }
 }
 
