@@ -77,6 +77,22 @@ async function triggerBackgroundFullSongFetch(song) {
   }
 }
 
+// ---- CACHE SANITIZER (Purge any corrupted/hijacked cover or audio cache) ----
+(function purgeCorruptedCache() {
+  try {
+    const keysToRemove = [];
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (key && (key.startsWith('haimiya_cv_') || key.startsWith('haimiya_fs_'))) {
+        keysToRemove.push(key);
+      }
+    }
+    keysToRemove.forEach(k => {
+      try { localStorage.removeItem(k); } catch (e) {}
+    });
+  } catch (e) {}
+})();
+
 // ============================================
 //  APP.JS – Typo Music Platform (Studio Edition)
 //  ระบบสุ่มเพลงแยกโซน ปรับระดับเสียง และจับคู่อนิเมะสำหรับนักตัดต่อ
@@ -1500,32 +1516,42 @@ async function togglePlaySong(songId) {
   const song = SONGS.find(s => s.id === songId);
   if (!song) return;
 
-  // Real-time audio accuracy resolution:
-  // If the song's audio was shared or flagged for resolution, fetch exact track from iTunes in real-time
-  let audioSrc = resolveAssetUrl(song.fullAudioUrl || song.previewUrl || song.audioUrl || song.audioFallback);
+  // 1. Resolve safe audio URL (prefer valid Apple Music / Spotify preview URLs)
+  let audioSrc = resolveAssetUrl(song.previewUrl || song.audioUrl || song.audioFallback || song.fullAudioUrl);
   const isDeezer = audioSrc && audioSrc.includes('dzcdn.net');
-  if ((song.needsLiveResolution || isDeezer) && !song._resolved && navigator.onLine) {
+
+  // If audio is Deezer (expired tokens) or completely missing, try to resolve via iTunes ONLY with strict title match
+  if ((!audioSrc || isDeezer) && !song._resolved && navigator.onLine) {
     try {
-      const cleanTitle = (song.title || '').replace(/\([^)]*\)/g, '').replace(/\[[^\]]*\]/g, '').trim();
-      const cleanArtist = (song.artist || '').replace(/\([^)]*\)/g, '').replace(/\[[^\]]*\]/g, '').trim();
+      const cleanTitle = (song.title || '').replace(/\([^)]*\)/g, '').replace(/\[[^\]]*\]/g, '').replace(/"/g, '').trim();
+      const cleanArtist = (song.artist || '').split(',')[0].split('&')[0].split('feat')[0].replace(/\([^)]*\)/g, '').trim();
       const country = song.lang === 'th' ? 'th' : (song.lang === 'jp' ? 'jp' : (song.lang === 'kr' ? 'kr' : 'us'));
-      const res = await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(cleanTitle + ' ' + cleanArtist)}&country=${country}&entity=song&limit=1`);
+      const res = await fetch(`https://itunes.apple.com/search?term=${encodeURIComponent(cleanTitle + ' ' + cleanArtist)}&country=${country}&entity=song&limit=5`);
       const json = await res.json();
-      if (json && json.results && json.results[0] && json.results[0].previewUrl) {
-        audioSrc = json.results[0].previewUrl;
-        song.previewUrl = audioSrc;
-        song.audioUrl = audioSrc;
-        song.audioFallback = audioSrc;
-        song._resolved = true;
-        song.needsLiveResolution = false;
-        if (json.results[0].artworkUrl100) {
-          song.coverUrl = json.results[0].artworkUrl100.replace('100x100', '600x600');
+      if (json && json.results && json.results.length > 0) {
+        const normalizeStr = s => (s || '').toLowerCase().replace(/[\s\-_\.\,\:\;\!\?\'\"\"\(\)\[\]\{\}\/\\]+/g, '');
+        const origTitle = normalizeStr(song.title);
+        // STRICT: require title to match! NEVER fall back to results[0] blindly
+        const bestResult = json.results.find(r => {
+          const rTitle = normalizeStr(r.trackName);
+          return rTitle.includes(origTitle) || origTitle.includes(rTitle) || (origTitle.length > 3 && rTitle.slice(0, 8) === origTitle.slice(0, 8));
+        });
+        if (bestResult && bestResult.previewUrl) {
+          audioSrc = bestResult.previewUrl;
+          song.previewUrl = audioSrc;
+          song.audioUrl = audioSrc;
+          song.audioFallback = audioSrc;
+          song._resolved = true;
+          if ((!song.coverUrl || song.coverUrl.includes('dzcdn.net')) && bestResult.artworkUrl100) {
+            song.coverUrl = bestResult.artworkUrl100.replace('100x100', '600x600');
+          }
         }
       }
     } catch (e) {
       console.warn('Real audio resolution notice:', e.message);
     }
   }
+  song.needsLiveResolution = false;
 
   if (!audioSrc) {
     const songTitle = song ? `"${song.title}"` : (currentAppLang === 'th' ? 'เพลงนี้' : 'this track');
@@ -1560,33 +1586,9 @@ async function togglePlaySong(songId) {
     } catch (e) {}
   }
 
-  // ดึงเพลงเต็มจริงทันทีหากยังไม่ได้ดึง (เอาเพลงเต็มๆ มาเล่น ไม่ใช่ตัวอย่าง 30s)
-  if (!song.fullAudioUrl && !song.isFull && navigator.onLine) {
-    const playBtn = document.querySelector(`[data-play-btn="${songId}"]`);
-    if (playBtn) {
-      playBtn.classList.add('loading');
-      playBtn.innerHTML = '<span class="loading-spinner-inline"></span> กำลังโหลดเพลง...';
-      playBtn.style.opacity = '0.85';
-    }
-    try {
-      const q = `${song.title || ''} ${song.artist || ''}`.trim();
-      const apiRes = await fetch(`${NETLIFY_BASE}/api/ai/get-full-song?q=${encodeURIComponent(q)}`);
-      if (apiRes.ok) {
-        const data = await apiRes.json();
-        if (data && data.ok && data.directAudioUrl) {
-          song.fullAudioUrl = data.directAudioUrl;
-          song.isFull = true;
-          if (data.duration) song.duration = data.duration;
-          audioSrc = data.directAudioUrl;
-        }
-      }
-    } catch (err) {
-      console.warn('Real full song fetch on click error:', err);
-    }
-    if (playBtn) {
-      playBtn.classList.remove('loading');
-      playBtn.style.opacity = '';
-    }
+  // Non-blocking background fetch for real song duration (plays audioSrc immediately without waiting)
+  if (!song.duration && navigator.onLine) {
+    triggerBackgroundFullSongFetch(song);
   }
 
   const handleAudioFail = () => {
@@ -5876,21 +5878,35 @@ async function searchLiveTrackPreview(title, artist, lang) {
     const country = (l === 'th' || l === 'lao') ? 'th' : (l === 'jp' ? 'jp' : (l === 'kr' ? 'kr' : 'us'));
     const term = `${title || ''} ${artist || ''}`.trim();
     if (!term) return null;
-    const url = `https://itunes.apple.com/search?term=${encodeURIComponent(term)}&entity=song&limit=3&country=${country}`;
+    const url = `https://itunes.apple.com/search?term=${encodeURIComponent(term)}&entity=song&limit=5&country=${country}`;
     const res = await fetch(url);
     if (!res.ok) return null;
     const data = await res.json();
     if (data && data.results && data.results.length > 0) {
-      const track = data.results.find(t => t.previewUrl) || data.results[0];
-      const hdCover = (track.artworkUrl100 || '').replace('100x100bb', '600x600bb').replace('170x170', '600x600') || 'splash-cover.jpg';
+      // STRICT VALIDATION: result must match requested title or artist!
+      const norm = s => (s || '').toLowerCase().replace(/[\s\-_\.\,\:\;\!\?\'\"\"\(\)\[\]\{\}\/\\]+/g, '');
+      const qTitle = norm(title);
+      const qArtist = norm(artist);
+
+      const matched = data.results.find(t => {
+        const tTitle = norm(t.trackName);
+        const tArtist = norm(t.artistName);
+        const titleMatches = qTitle && (tTitle.includes(qTitle) || qTitle.includes(tTitle) || (qTitle.length > 3 && tTitle.slice(0, 6) === qTitle.slice(0, 6)));
+        const artistMatches = qArtist && (tArtist.includes(qArtist) || qArtist.includes(tArtist));
+        return titleMatches || artistMatches;
+      });
+
+      if (!matched) return null; // NEVER return random results[0]!
+
+      const hdCover = (matched.artworkUrl100 || '').replace('100x100bb', '600x600bb').replace('170x170', '600x600') || 'splash-cover.jpg';
       return {
-        title: track.trackName || title,
-        artist: track.artistName || artist || 'Unknown Artist',
+        title: matched.trackName || title,
+        artist: matched.artistName || artist || 'Unknown Artist',
         coverUrl: hdCover,
-        previewUrl: track.previewUrl || '',
-        spotifyUrl: track.trackViewUrl || `https://open.spotify.com/search/${encodeURIComponent(title + ' ' + artist)}`,
-        genre: track.primaryGenreName || 'Pop / Beat',
-        year: track.releaseDate ? track.releaseDate.substring(0, 4) : '2026'
+        previewUrl: matched.previewUrl || '',
+        spotifyUrl: matched.trackViewUrl || `https://open.spotify.com/search/${encodeURIComponent(title + ' ' + artist)}`,
+        genre: matched.primaryGenreName || 'Pop / Beat',
+        year: matched.releaseDate ? matched.releaseDate.substring(0, 4) : '2026'
       };
     }
   } catch (e) {
@@ -6023,20 +6039,32 @@ async function parseAndRenderAiSongResponse(aiText, engineUsed, rawUserPrompt) {
 
   if (Array.isArray(recommendedSongs) && recommendedSongs.length > 0) {
     const resolvedSongs = await Promise.all(recommendedSongs.map(async (item) => {
+      // 1. Check if song already exists in our local library (27,000+ verified songs)
+      let localSong = null;
+      if (typeof searchSongsInLibrary === 'function' && typeof SONGS !== 'undefined') {
+        const matches = searchSongsInLibrary(item.title, 1);
+        if (matches && matches.length > 0) {
+          localSong = SONGS.find(s => s.id === matches[0].id);
+        }
+      }
+
+      // 2. Query iTunes with strict match validation
       const live = await searchLiveTrackPreview(item.title, item.artist, item.lang);
+
+      // 3. Resolve cleanly without ever leaking wrong compilation covers or audio
       return {
-        title: (live && live.title) || item.title,
-        artist: (live && live.artist) || item.artist || 'Unknown Artist',
-        coverUrl: (live && live.coverUrl) || 'splash-cover.jpg',
-        previewUrl: (live && live.previewUrl) || '',
-        spotifyUrl: (live && live.spotifyUrl) || `https://open.spotify.com/search/${encodeURIComponent(item.title + ' ' + (item.artist || ''))}`,
-        genre: (live && live.genre) || 'Pop / Beat',
+        title: (live && live.title) || (localSong && localSong.title) || item.title,
+        artist: (live && live.artist) || (localSong && localSong.artist) || item.artist || 'Unknown Artist',
+        coverUrl: (live && live.coverUrl) || (localSong && localSong.coverUrl) || 'splash-cover.jpg',
+        previewUrl: (live && live.previewUrl) || (localSong && (localSong.previewUrl || localSong.audioUrl)) || '',
+        spotifyUrl: (live && live.spotifyUrl) || (localSong && localSong.spotifyUrl) || `https://open.spotify.com/search/${encodeURIComponent(item.title + ' ' + (item.artist || ''))}`,
+        genre: (live && live.genre) || (localSong && localSong.tags && localSong.tags[0]) || 'Pop / Beat',
         year: (live && live.year) || '2026',
         anime: item.anime || '',
-        reason: item.reason || '',
-        typoIdea: item.typoIdea || '',
-        mood: item.mood || 'chill',
-        lang: item.lang || detectSongLang(item.title, item.artist)
+        reason: item.reason || (localSong && localSong.reason) || '',
+        typoIdea: item.typoIdea || (localSong && localSong.typoIdea) || '',
+        mood: item.mood || (localSong && localSong.mood) || 'chill',
+        lang: item.lang || (localSong && localSong.lang) || detectSongLang(item.title, item.artist)
       };
     }));
 
