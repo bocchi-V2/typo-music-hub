@@ -1512,12 +1512,35 @@ function playPreviousSong() {
   togglePlaySong(SONGS[prevIdx].id);
 }
 
+// ---- CACHED FULL SONGS HELPERS ----
+function getCachedFullSong(songId) {
+  try {
+    const cache = JSON.parse(localStorage.getItem('_haimiya_full_songs') || '{}');
+    return cache[songId];
+  } catch (e) { return null; }
+}
+function setCachedFullSong(songId, data) {
+  try {
+    const cache = JSON.parse(localStorage.getItem('_haimiya_full_songs') || '{}');
+    cache[songId] = data;
+    localStorage.setItem('_haimiya_full_songs', JSON.stringify(cache));
+  } catch (e) {}
+}
+
 async function togglePlaySong(songId) {
   const song = SONGS.find(s => s.id === songId);
   if (!song) return;
 
-  // 1. Resolve safe audio URL (prefer valid Apple Music / Spotify preview URLs)
-  let audioSrc = resolveAssetUrl(song.previewUrl || song.audioUrl || song.audioFallback || song.fullAudioUrl);
+  // Check if we have cached full audio for this song
+  const cachedFull = getCachedFullSong(song.id);
+  if (cachedFull && cachedFull.directAudioUrl) {
+    song.fullAudioUrl = cachedFull.directAudioUrl;
+    if (cachedFull.duration) song.duration = cachedFull.duration;
+    song.isFull = true;
+  }
+
+  // 1. Resolve safe audio URL (prefer full song stream, then valid Apple Music / Spotify preview URLs)
+  let audioSrc = resolveAssetUrl(song.fullAudioUrl || song.previewUrl || song.audioUrl || song.audioFallback);
   const isDeezer = audioSrc && audioSrc.includes('dzcdn.net');
 
   // If audio is Deezer (expired tokens) or completely missing, try to resolve via iTunes ONLY with strict title match
@@ -1757,7 +1780,9 @@ async function togglePlaySong(songId) {
       if (!song.fullAudioUrl && !song.isFull && navigator.onLine) {
         (async () => {
           try {
-            const q = `${song.title || ''} ${song.artist || ''}`.trim();
+            const cleanTitle = (song.title || '').replace(/\([^)]*\)/g, '').replace(/\[[^\]]*\]/g, '').replace(/"/g, '').trim();
+            const cleanArtist = (song.artist || '').split(',')[0].split('&')[0].replace(/\([^)]*\)/g, '').trim();
+            const q = `${cleanTitle} ${cleanArtist}`.trim();
             const apiRes = await fetch(`${NETLIFY_BASE}/api/ai/get-full-song?q=${encodeURIComponent(q)}`);
             if (apiRes.ok) {
               const data = await apiRes.json();
@@ -1765,16 +1790,19 @@ async function togglePlaySong(songId) {
                 song.fullAudioUrl = data.directAudioUrl;
                 song.isFull = true;
                 if (data.duration) song.duration = data.duration;
-                // If user is still listening to this song:
+                setCachedFullSong(song.id, { directAudioUrl: data.directAudioUrl, duration: data.duration });
+
+                // If user is still listening to this song, seamlessly hot-swap to full audio
                 if (currentPlayingId === song.id && currentAudio && !currentAudio.paused) {
-                  // If near 25s, switch to full stream
-                  if (currentAudio.currentTime > 24) {
-                    const ct = currentAudio.currentTime;
-                    currentAudio.src = data.directAudioUrl;
-                    currentAudio.currentTime = ct;
-                    currentAudio.play().catch(() => {});
-                  }
+                  const ct = currentAudio.currentTime || 0;
+                  const wasPlaying = !currentAudio.paused;
+                  currentAudio.src = data.directAudioUrl;
+                  currentAudio.addEventListener('loadedmetadata', () => {
+                    try { currentAudio.currentTime = ct; } catch(e) {}
+                    if (wasPlaying) currentAudio.play().catch(() => {});
+                  }, { once: true });
                   showBottomPlayer(song);
+                  updateBottomPlayerProgress();
                 }
               }
             }
@@ -1965,6 +1993,7 @@ function showBottomPlayer(song) {
   `;
 
   player.style.display = 'block';
+  document.body.classList.add('has-bottom-player');
   requestAnimationFrame(() => {
     player.classList.add('visible');
   });
@@ -1980,6 +2009,7 @@ function hideBottomPlayer() {
     }
   }
   updateAudioUI(false);
+  document.body.classList.remove('has-bottom-player');
   const player = document.getElementById('bottom-player');
   if (player) {
     player.classList.remove('visible');
@@ -1998,7 +2028,13 @@ function hideBottomPlayer() {
 function updateBottomPlayerProgress() {
   if (!currentAudio) return;
   const cur = currentAudio.currentTime || 0;
-  const dur = (currentAudio.duration && isFinite(currentAudio.duration)) ? currentAudio.duration : ((currentPlayingId && SONG_MAP.get(currentPlayingId)?.duration) || 210);
+  const song = (typeof SONGS !== 'undefined' && SONGS.find(s => s.id === currentPlayingId)) ||
+               (typeof SONG_MAP !== 'undefined' && SONG_MAP.get(currentPlayingId));
+  const dur = (song && song.duration && song.duration > 30)
+    ? song.duration
+    : ((currentAudio.duration && isFinite(currentAudio.duration) && currentAudio.duration > 30)
+        ? currentAudio.duration
+        : (song?.duration || (currentAudio.duration && isFinite(currentAudio.duration) ? currentAudio.duration : 210)));
   const pct = Math.min((cur / dur) * 100, 100);
 
   const fill = document.getElementById('bp-progress-fill');
@@ -2017,9 +2053,9 @@ function updateBottomPlayerProgress() {
     curEl.textContent = `${m}:${s}`;
   }
   const totalEl = document.getElementById('bp-time-total');
-  if (totalEl && currentAudio.duration && isFinite(currentAudio.duration)) {
-    const tm = Math.floor(currentAudio.duration / 60);
-    const ts = Math.floor(currentAudio.duration % 60).toString().padStart(2, '0');
+  if (totalEl) {
+    const tm = Math.floor(dur / 60);
+    const ts = Math.floor(dur % 60).toString().padStart(2, '0');
     totalEl.textContent = `${tm}:${ts}`;
   }
 }
@@ -5969,7 +6005,7 @@ function renderSongCardsHtml(songList, headerHtml) {
           ${songPayload.typoIdea ? `<div style="margin-top: 4px; font-size: 0.8rem; color: #a7f3d0;">💡 <em>ทริคไทโป: ${escapeHtml(songPayload.typoIdea)}</em></div>` : ''}
         </div>
         <div class="gsc-actions">
-          ${songPayload.previewUrl ? `<button class="btn-ai-play" onclick="toggleAiSongPreview('${escapeHtml(songPayload.previewUrl)}', this)">▶️ ลองฟังตัวอย่างเสียง</button>` : ''}
+          <button class="btn-ai-play" id="btn-ai-play-${cardId}" onclick="playOrResolveAiSongPreview('${cardId}', this)">▶️ ลองฟังตัวอย่างเพลง</button>
           <button class="btn-ai-confirm-add" id="btn-add-${cardId}" onclick="confirmAddSongViaAi('${cardId}', this)">
             ➕ ยืนยันเพิ่มเพลงนี้ลงคลังทันที (แชร์ให้ทุกคน)
           </button>
@@ -6286,7 +6322,7 @@ async function sendGeminiMessage() {
               🌸 <strong>จับคู่ตัดต่อแนะนำ:</strong> ${escapeHtml(matchedAnime.name)} • ${escapeHtml(songPayload.reason)}
             </div>
             <div class="gsc-actions">
-              ${songPayload.previewUrl ? `<button class="btn-ai-play" onclick="toggleAiSongPreview('${escapeHtml(songPayload.previewUrl)}', this)">▶️ ลองฟังตัวอย่างเสียง</button>` : ''}
+              <button class="btn-ai-play" id="btn-ai-play-${cardId}" onclick="playOrResolveAiSongPreview('${cardId}', this)">▶️ ลองฟังตัวอย่างเพลง</button>
               <button class="btn-ai-confirm-add" id="btn-add-${cardId}" onclick="confirmAddSongViaAi('${cardId}', this)">
                 ➕ ยืนยันเพิ่มเพลงนี้ลงคลังทันที (แชร์ให้ทุกคน)
               </button>

@@ -7265,60 +7265,62 @@ button:focus-visible {
   display: flex !important;
 }
 
-/* Bottom Player: ป้องกันปุ่มเบียด / ทับเวลา 0:30 */
-.bottom-player .bp-controls {
-  flex: 1 1 320px !important;
-  min-width: 220px !important;
-  max-width: 500px !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 0.25rem !important;
-  margin: 0 0.5rem !important;
-}
+/* Bottom Player: ป้องกันปุ่มเบียด / ทับเวลา 0:30 (สำหรับ Desktop & แท็บเล็ตแนวนอน) */
+@media (min-width: 769px) {
+  .bottom-player .bp-controls {
+    flex: 1 1 320px !important;
+    min-width: 220px !important;
+    max-width: 500px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.25rem !important;
+    margin: 0 0.5rem !important;
+  }
 
-.bottom-player .bp-controls-row {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 12px !important;
-}
+  .bottom-player .bp-controls-row {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+  }
 
-.bottom-player .bp-progress-wrap {
-  width: 100% !important;
-  display: flex !important;
-  align-items: center !important;
-  gap: 0.5rem !important;
-}
+  .bottom-player .bp-progress-wrap {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+  }
 
-.bottom-player .bp-progress-bar {
-  flex: 1 1 auto !important;
-  min-width: 90px !important;
-}
+  .bottom-player .bp-progress-bar {
+    flex: 1 1 auto !important;
+    min-width: 90px !important;
+  }
 
-.bottom-player .bp-actions-panel {
-  flex: 0 0 auto !important;
-  display: flex !important;
-  align-items: center !important;
-  gap: 0.5rem !important;
-  margin-left: auto !important;
-}
+  .bottom-player .bp-actions-panel {
+    flex: 0 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    margin-left: auto !important;
+  }
 
-.bottom-player .bp-actions {
-  display: flex !important;
-  align-items: center !important;
-  gap: 0.35rem !important;
-  flex-wrap: wrap !important;
-  justify-content: flex-end !important;
-  max-width: 440px !important;
-}
+  .bottom-player .bp-actions {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.35rem !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-end !important;
+    max-width: 440px !important;
+  }
 
-.bottom-player .bp-actions .btn-sm {
-  border-radius: 8px !important;
-  padding: 0.35rem 0.65rem !important;
-  font-size: 0.74rem !important;
-  white-space: nowrap !important;
+  .bottom-player .bp-actions .btn-sm {
+    border-radius: 8px !important;
+    padding: 0.35rem 0.65rem !important;
+    font-size: 0.74rem !important;
+    white-space: nowrap !important;
+  }
 }
 
 /* ทุกปุ่มการ์ดเพลงเป็นสี่เหลี่ยมมุมมนสวยงาม 8px ไม่ใช่ก้อนกลม */
@@ -7423,61 +7425,171 @@ button:focus-visible {
 }
 
 /* ========================================================
-   FIX: Compact bottom player on mobile — max 60% screen
+   FIX: Sleek & Ultra-Compact Bottom Player + Mascot on Mobile
    ======================================================== */
 @media (max-width: 768px) {
   .bottom-player {
-    max-height: 55vh !important;
-    overflow-y: auto !important;
-    padding: 0.5rem 0.7rem !important;
+    position: fixed !important;
+    bottom: 8px !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) translateY(calc(100% + 40px)) !important;
+    width: calc(100% - 16px) !important;
+    max-width: 480px !important;
+    padding: 0.55rem 0.75rem 0.55rem !important;
+    border-radius: 18px !important;
+    max-height: none !important;
+    height: auto !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.75), 0 0 25px rgba(16, 185, 129, 0.2) !important;
+  }
+
+  .bottom-player.visible {
+    transform: translateX(-50%) translateY(0) !important;
   }
 
   .bottom-player .bp-inner {
-    gap: 0.3rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.35rem !important;
+    width: 100% !important;
+    position: relative !important;
+    box-sizing: border-box !important;
   }
 
   .bottom-player .bp-track {
-    gap: 0.45rem !important;
+    width: 100% !important;
+    max-width: calc(100% - 34px) !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    min-width: 0 !important;
   }
 
   .bottom-player .bp-cover {
     width: 36px !important;
     height: 36px !important;
+    border-radius: 8px !important;
+    flex-shrink: 0 !important;
   }
 
   .bottom-player .bp-title {
-    font-size: 0.82rem !important;
-    max-width: 180px !important;
+    font-size: 0.84rem !important;
+    max-width: 200px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
   }
 
   .bottom-player .bp-artist {
-    font-size: 0.68rem !important;
-    max-width: 170px !important;
+    font-size: 0.7rem !important;
+    max-width: 180px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
   }
 
+  /* ปุ่มปิดแถบเครื่องเล่น: ตรึงมุมบนขวา สะดวกในการกด ไม่หลุดจอ */
+  .bottom-player .bp-close-btn {
+    position: absolute !important;
+    top: -2px !important;
+    right: 0 !important;
+    width: 28px !important;
+    height: 28px !important;
+    min-width: 28px !important;
+    font-size: 0.88rem !important;
+    margin: 0 !important;
+    z-index: 30 !important;
+  }
+
+  /* Controls: ไม่ขยายความสูงแนวตั้ง กระชับติดกัน ไม่เว้นช่องว่าง */
   .bottom-player .bp-controls {
-    gap: 0.3rem !important;
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 0.35rem !important;
+    margin: 0 !important;
+  }
+
+  .bottom-player .bp-controls-row {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 16px !important;
+    margin-bottom: 0 !important;
   }
 
   .bottom-player .bp-play-btn {
-    width: 34px !important;
-    height: 34px !important;
-    min-width: 34px !important;
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+  }
+
+  .bottom-player .bp-play-btn svg {
+    width: 14px !important;
+    height: 14px !important;
+  }
+
+  .bottom-player .bp-progress-wrap {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.45rem !important;
+    margin: 0 !important;
+  }
+
+  .bottom-player .bp-progress-bar {
+    flex: 1 1 auto !important;
+    min-width: 70px !important;
+    height: 5px !important;
+  }
+
+  .bottom-player .bp-time {
+    font-size: 0.72rem !important;
+    min-width: 26px !important;
   }
 
   .bottom-player .bp-actions-panel {
-    gap: 0.25rem !important;
-    padding-bottom: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.35rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    flex-wrap: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+    padding: 2px 0 0 !important;
+  }
+
+  .bottom-player .bp-actions-panel::-webkit-scrollbar {
+    display: none !important;
   }
 
   .bottom-player .bp-actions {
-    gap: 0.25rem !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.35rem !important;
+    flex: 0 0 auto !important;
   }
 
   .bottom-player .bp-actions .btn-sm {
-    padding: 0.28rem 0.5rem !important;
-    font-size: 0.7rem !important;
-    min-height: 28px !important;
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+    font-size: 0.72rem !important;
+    padding: 0.32rem 0.58rem !important;
+    min-height: 30px !important;
+    border-radius: 8px !important;
   }
 
   .bottom-player .bp-volume-panel {
@@ -7489,11 +7601,100 @@ button:focus-visible {
     width: 40px !important;
   }
 
-  .bottom-player .bp-close-btn {
-    width: 26px !important;
-    height: 26px !important;
-    min-width: 26px !important;
-    font-size: 0.85rem !important;
+  /* เลื่อนมาสคอต Chibi ขึ้นไม่ให้ทับปุ่มควบคุมเมื่อเปิดเครื่องเล่น */
+  body.has-bottom-player .haimiya-ai-floating-bubble,
+  body.has-bottom-player #haimiya-ai-floating-bubble {
+    bottom: 165px !important;
+    transition: bottom 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s ease !important;
+  }
+}
+
+/* ========================================================
+   FIX: Mobile Top Bar / Header Breathing Room & Alignment
+   ======================================================== */
+@media (max-width: 640px) {
+  .navbar {
+    padding: 0 0.65rem !important;
+    height: 60px !important;
+  }
+
+  .nav-inner {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 0.35rem !important;
+    width: 100% !important;
+  }
+
+  .nav-logo {
+    flex-shrink: 0 !important;
+    gap: 0.4rem !important;
+  }
+
+  .nav-logo-img {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .logo-title {
+    font-size: 0.98rem !important;
+  }
+
+  .relax-bgm-box {
+    flex-shrink: 1 !important;
+    min-width: 0 !important;
+  }
+
+  .relax-bgm-btn {
+    padding: 0.25rem 0.48rem !important;
+    font-size: 0.72rem !important;
+    gap: 0.3rem !important;
+    white-space: nowrap !important;
+  }
+
+  /* ปุ่มผู้ช่วยบน Header ให้เรียงแนวนอน ไม่แตกเป็น 2 บรรทัด */
+  .nav-ai-btn-header {
+    white-space: nowrap !important;
+    padding: 0.28rem 0.55rem !important;
+    font-size: 0.78rem !important;
+    gap: 4px !important;
+    flex-shrink: 0 !important;
+    border-radius: 8px !important;
+  }
+
+  .lang-switch-box {
+    padding: 0.18rem 0.38rem !important;
+    gap: 0.18rem !important;
+    margin-right: 0 !important;
+    flex-shrink: 0 !important;
+  }
+
+  .lang-toggle-btn {
+    padding: 0.12rem 0.25rem !important;
+    font-size: 0.72rem !important;
+  }
+
+  .hamburger {
+    padding: 0.28rem 0.5rem !important;
+    gap: 0.2rem !important;
+    flex-shrink: 0 !important;
+    min-width: 36px !important;
+    height: 36px !important;
+    border-radius: 8px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hamburger-text {
+    display: none !important;
+  }
+
+  .logo-title {
+    font-size: 0.92rem !important;
+  }
+
+  .nav-inner {
+    gap: 0.25rem !important;
   }
 }
 
