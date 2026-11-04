@@ -1,11 +1,9 @@
 {
-  "version": "2.20261105.1793812401892",
-  "versionCode": 2026110504,
-  "songCount": 33256,
-  "animeCount": 1042,
-  "updatedAt": "2026-11-04T17:13:21.893Z",
+  "version": "2.20261104.22",
+  "versionCode": 1793830690,
+  "songCount": 32153,
+  "animeCount": 1044,
+  "updatedAt": "2026-11-04T22:18:10.691Z",
   "appName": "Haimiya Typo",
-  "releaseUrl": "https://github.com/bocchi-V2/typo-music-hub/releases/latest",
-  "versionName": "v2.20261105.04",
-  "description": "🎉 มหาขยายคลังเพลง 33256 เพลง (+5,000+ เพลงใหม่ครบทุกโซน ไทย, สากล, ญี่ปุ่น/อนิเมะ, K-Pop) พร้อมปุ่มพรีวิวเสียงทุกเพลง & แก้ UI มือถือกระชับคมชัด & เพลงเต็ม"
+  "releaseUrl": "https://github.com/bocchi-V2/typo-music-hub/releases/latest"
 }
