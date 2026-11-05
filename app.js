@@ -1423,6 +1423,458 @@ async function downloadSongAudio(songId, event) {
   }
 }
 
+
+
+// ============================================================
+// ดาวน์โหลดเพลงเป็นไฟล์วิดีโอ + เนื้อเพลง (Karaoke style)
+// พื้นหลังดำ มีเนื้อร้อง สำหรับนำไปใช้ในแอพตัดต่อวิดีโอ
+// ============================================================
+let _videoDownloadAbort = null;
+
+async function downloadSongVideo(songId, event) {
+  if (event) {
+    if (typeof event.stopPropagation === 'function') event.stopPropagation();
+    if (event.cancelBubble !== undefined) event.cancelBubble = true;
+  }
+
+  const song = (typeof SONG_MAP !== 'undefined' && SONG_MAP.get(songId)) ||
+               (typeof SONGS !== 'undefined' && SONGS.find(s => s.id === songId));
+  if (!song) return;
+  loadSingleSongFullCache(song);
+
+  // ตรวจสอบว่า browser รองรับ MediaRecorder video หรือไม่
+  const canRecordVideo = typeof MediaRecorder !== 'undefined' &&
+    MediaRecorder.isTypeSupported('video/webm;codecs=vp8,opus');
+
+  if (!canRecordVideo) {
+    // iOS Safari ไม่รองรับ → fallback เป็นดาวน์โหลดเสียง
+    showToast('📱 เบราว์เซอร์นี้ไม่รองรับสร้างวิดีโอ ดาวน์โหลดเป็นไฟล์เสียงแทนค่ะ');
+    return downloadSongAudio(songId, event);
+  }
+
+  const safeTitle = (song.title || 'song').replace(/[\\/:*?"<>|]/g, '').trim();
+  const safeArtist = (song.artist || 'artist').replace(/[\\/:*?"<>|]/g, '').trim();
+  const filename = safeTitle + ' - ' + safeArtist + ' [Lyrics].webm';
+
+  // สร้าง AbortController สำหรับยกเลิก
+  _videoDownloadAbort = new AbortController();
+
+  // ลบ widget เก่าถ้ามี
+  const existingWidget = document.getElementById('direct-download-progress-bar');
+  if (existingWidget) existingWidget.remove();
+
+  // สร้าง UI widget
+  const widget = document.createElement('div');
+  widget.id = 'direct-download-progress-bar';
+  widget.className = 'direct-dl-widget';
+  widget.innerHTML = '<div class="dl-widget-header">' +
+    '<span class="dl-widget-icon" id="dl-widget-icon">🎬</span>' +
+    '<div class="dl-widget-info">' +
+      '<div class="dl-widget-title">' + escapeHtml(song.title) + ' - ' + escapeHtml(song.artist) + '</div>' +
+      '<div class="dl-widget-status">' +
+        '<span id="dl-widget-label">กำลังเตรียมสร้างวิดีโอ+เนื้อเพลง...</span>' +
+        '<span class="dl-widget-pct" id="dl-widget-pct">0%</span>' +
+      '</div>' +
+    '</div>' +
+    '<button onclick="cancelVideoDownload()" style="background:none;border:none;color:#f87171;font-size:1.2rem;cursor:pointer;padding:4px 8px;" title="ยกเลิก">✕</button>' +
+  '</div>' +
+  '<div class="dl-widget-track">' +
+    '<div class="dl-widget-fill" id="dl-widget-fill" style="width: 0%;"></div>' +
+  '</div>';
+  document.body.appendChild(widget);
+
+  const pctEl = document.getElementById('dl-widget-pct');
+  const fillEl = document.getElementById('dl-widget-fill');
+  const labelEl = document.getElementById('dl-widget-label');
+  const iconEl = document.getElementById('dl-widget-icon');
+
+  function updateProgress(pct, label) {
+    if (pctEl) pctEl.textContent = Math.round(pct) + '%';
+    if (fillEl) fillEl.style.width = Math.round(pct) + '%';
+    if (labelEl && label) labelEl.textContent = label;
+  }
+
+  try {
+    // ====== STEP 1: หาเสียงเพลง ======
+    updateProgress(5, 'กำลังค้นหาไฟล์เพลง...');
+
+    let audioUrl = '';
+    // ลองใช้ fullAudioUrl (cached) ก่อน
+    const cachedFull = getCachedFullSong(song.id);
+    if (cachedFull) {
+      audioUrl = cachedFull;
+    } else if (song.fullAudioUrl) {
+      audioUrl = song.fullAudioUrl;
+    } else if (song.audioUrl) {
+      audioUrl = song.audioUrl;
+    }
+
+    // ถ้ายังไม่มี → ขอจาก API
+    if (!audioUrl) {
+      updateProgress(8, 'กำลังค้นหาเพลงเต็มจากเซิร์ฟเวอร์...');
+      try {
+        const q = encodeURIComponent(song.title + ' ' + song.artist);
+        const apiRes = await fetch('https://mellow-baklava-bffed3.netlify.app/.netlify/functions/get-full-song?q=' + q);
+        const apiData = await apiRes.json();
+        if (apiData && apiData.audioUrl) {
+          audioUrl = apiData.audioUrl;
+          setCachedFullSong(song.id, audioUrl);
+        }
+      } catch (e) {
+        console.warn('get-full-song API failed:', e);
+      }
+    }
+
+    // Fallback ไปใช้ previewUrl
+    if (!audioUrl && song.previewUrl) {
+      audioUrl = song.previewUrl;
+    }
+
+    if (!audioUrl) {
+      updateProgress(0, '❌ ไม่พบไฟล์เพลง');
+      showToast('❌ ไม่พบไฟล์เพลงสำหรับดาวน์โหลดค่ะ');
+      setTimeout(() => { if (widget) widget.remove(); }, 3000);
+      return;
+    }
+
+    if (_videoDownloadAbort.signal.aborted) return cleanup();
+
+    // ====== STEP 2: ดึงเนื้อเพลงจาก LRCLIB ======
+    updateProgress(12, 'กำลังค้นหาเนื้อเพลง...');
+    let syncedLyrics = []; // [{time: seconds, text: string}]
+    let plainLyrics = '';
+
+    try {
+      const lrcQ = encodeURIComponent(song.title + ' ' + song.artist);
+      const lrcRes = await fetch('https://lrclib.net/api/search?q=' + lrcQ);
+      const lrcData = await lrcRes.json();
+      if (Array.isArray(lrcData) && lrcData.length > 0) {
+        const bestMatch = lrcData[0];
+        if (bestMatch.syncedLyrics) {
+          // Parse synced lyrics [mm:ss.xx] text
+          const lines = bestMatch.syncedLyrics.split('\n');
+          for (const line of lines) {
+            const match = line.match(/\[(\d+):(\d+\.?\d*)\]\s*(.*)/);
+            if (match) {
+              const timeSec = parseInt(match[1]) * 60 + parseFloat(match[2]);
+              const text = match[3].trim();
+              if (text) syncedLyrics.push({ time: timeSec, text: text });
+            }
+          }
+        }
+        if (bestMatch.plainLyrics) {
+          plainLyrics = bestMatch.plainLyrics;
+        }
+      }
+    } catch (e) {
+      console.warn('LRCLIB fetch failed:', e);
+    }
+
+    // ถ้าไม่มี synced lyrics → ใช้ plain lyrics กระจายตาม duration
+    // (จะตั้งค่าหลัง decode audio)
+
+    if (_videoDownloadAbort.signal.aborted) return cleanup();
+
+    // ====== STEP 3: โหลดและ decode เสียง ======
+    updateProgress(18, 'กำลังโหลดไฟล์เสียง...');
+
+    let audioBuffer;
+    try {
+      let fetchUrl = audioUrl;
+      let audioResponse;
+      try {
+        audioResponse = await fetch(fetchUrl, { signal: _videoDownloadAbort.signal });
+        if (!audioResponse.ok) throw new Error('Direct fetch failed: ' + audioResponse.status);
+      } catch (directErr) {
+        // CORS error → ใช้ download-proxy
+        updateProgress(20, 'กำลังโหลดผ่านพร็อกซี่...');
+        const proxyUrl = 'https://mellow-baklava-bffed3.netlify.app/.netlify/functions/download-proxy?url=' + encodeURIComponent(audioUrl);
+        audioResponse = await fetch(proxyUrl, { signal: _videoDownloadAbort.signal });
+        if (!audioResponse.ok) throw new Error('Proxy fetch failed: ' + audioResponse.status);
+      }
+
+      updateProgress(30, 'กำลังประมวลผลเสียง...');
+      const arrayBuf = await audioResponse.arrayBuffer();
+
+      const offlineCtx = new (window.OfflineAudioContext || window.webkitOfflineAudioContext)(2, 44100, 44100);
+      audioBuffer = await offlineCtx.decodeAudioData(arrayBuf);
+    } catch (e) {
+      console.error('Audio decode failed:', e);
+      updateProgress(0, '❌ โหลดเสียงล้มเหลว');
+      showToast('❌ ไม่สามารถโหลดเสียงเพลงได้ค่ะ');
+      setTimeout(() => { if (widget) widget.remove(); }, 3000);
+      return;
+    }
+
+    const duration = audioBuffer.duration;
+
+    // ถ้าไม่มี synced lyrics แต่มี plain lyrics → กระจายตามเวลา
+    if (syncedLyrics.length === 0 && plainLyrics) {
+      const plainLines = plainLyrics.split('\n').filter(l => l.trim());
+      const interval = duration / (plainLines.length + 1);
+      plainLines.forEach((line, i) => {
+        syncedLyrics.push({ time: interval * (i + 1), text: line.trim() });
+      });
+    }
+
+    // ถ้าไม่มีเนื้อเพลงเลย → แสดงชื่อเพลงวน
+    if (syncedLyrics.length === 0) {
+      const placeholder = ['♪ ' + song.title + ' ♪', '🎵 ' + song.artist + ' 🎵', '♫ ♪ ♫'];
+      const interval = duration / (placeholder.length + 1);
+      placeholder.forEach((line, i) => {
+        syncedLyrics.push({ time: interval * (i + 1), text: line });
+      });
+    }
+
+    if (_videoDownloadAbort.signal.aborted) return cleanup();
+
+    // ====== STEP 4: ตั้งค่า Canvas + MediaRecorder ======
+    updateProgress(35, 'กำลังเตรียมสร้างวิดีโอ...');
+
+    const CANVAS_W = 720;
+    const CANVAS_H = 1280;
+    const canvas = document.createElement('canvas');
+    canvas.width = CANVAS_W;
+    canvas.height = CANVAS_H;
+    const ctx = canvas.getContext('2d');
+
+    // สร้าง AudioContext
+    const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const source = audioCtx.createBufferSource();
+    source.buffer = audioBuffer;
+
+    // ส่งเสียงไปยัง MediaStreamDestination (ไม่เล่นลำโพง)
+    const dest = audioCtx.createMediaStreamDestination();
+    source.connect(dest);
+
+    // ดึง video stream จาก canvas
+    const canvasStream = canvas.captureStream(24);
+
+    // รวม stream: video จาก canvas + audio จาก AudioContext
+    const combinedStream = new MediaStream([
+      ...canvasStream.getVideoTracks(),
+      ...dest.stream.getAudioTracks()
+    ]);
+
+    const recorder = new MediaRecorder(combinedStream, {
+      mimeType: 'video/webm;codecs=vp8,opus',
+      videoBitsPerSecond: 1000000
+    });
+
+    const chunks = [];
+    recorder.ondataavailable = (e) => {
+      if (e.data && e.data.size > 0) chunks.push(e.data);
+    };
+
+    // ====== STEP 5: เริ่ม recording + render loop ======
+    updateProgress(40, 'กำลังสร้างวิดีโอ+เนื้อเพลง... 0:00 / ' + formatTime(duration));
+
+    const startTime = audioCtx.currentTime;
+    let animFrameId = null;
+    let recordingDone = false;
+
+    function formatTime(sec) {
+      const m = Math.floor(sec / 60);
+      const s = Math.floor(sec % 60);
+      return m + ':' + (s < 10 ? '0' : '') + s;
+    }
+
+    function getCurrentLyricIndex(currentTime) {
+      let idx = -1;
+      for (let i = 0; i < syncedLyrics.length; i++) {
+        if (currentTime >= syncedLyrics[i].time) idx = i;
+        else break;
+      }
+      return idx;
+    }
+
+    function renderFrame() {
+      if (recordingDone || _videoDownloadAbort.signal.aborted) return;
+
+      const elapsed = audioCtx.currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+
+      // พื้นหลังดำ
+      ctx.fillStyle = '#000000';
+      ctx.fillRect(0, 0, CANVAS_W, CANVAS_H);
+
+      // ชื่อเพลง + ศิลปิน ด้านบน
+      ctx.textAlign = 'center';
+      ctx.fillStyle = 'rgba(255,255,255,0.5)';
+      ctx.font = '600 28px "Kanit", "Noto Sans Thai", sans-serif';
+      ctx.fillText(song.title, CANVAS_W / 2, 120);
+      ctx.font = '400 22px "Kanit", "Noto Sans Thai", sans-serif';
+      ctx.fillStyle = 'rgba(255,255,255,0.35)';
+      ctx.fillText(song.artist, CANVAS_W / 2, 158);
+
+      // เนื้อเพลง (karaoke style)
+      const lyricIdx = getCurrentLyricIndex(elapsed);
+      const centerY = CANVAS_H / 2;
+      const lineHeight = 52;
+
+      // แสดง 5 บรรทัดรอบบรรทัดปัจจุบัน
+      for (let offset = -2; offset <= 2; offset++) {
+        const i = lyricIdx + offset;
+        if (i < 0 || i >= syncedLyrics.length) continue;
+        const y = centerY + (offset * lineHeight);
+        const alpha = offset === 0 ? 1.0 : (offset === -1 || offset === 1) ? 0.4 : 0.2;
+
+        if (offset === 0) {
+          // บรรทัดปัจจุบัน - เรืองแสง
+          ctx.font = '700 36px "Kanit", "Noto Sans Thai", sans-serif';
+          ctx.shadowColor = '#10b981';
+          ctx.shadowBlur = 20;
+          ctx.fillStyle = 'rgba(255,255,255,' + alpha + ')';
+          ctx.fillText(syncedLyrics[i].text, CANVAS_W / 2, y);
+          ctx.shadowBlur = 0;
+        } else {
+          ctx.font = '400 28px "Kanit", "Noto Sans Thai", sans-serif';
+          ctx.fillStyle = 'rgba(255,255,255,' + alpha + ')';
+          ctx.fillText(syncedLyrics[i].text, CANVAS_W / 2, y);
+        }
+      }
+
+      // ถ้ายังไม่มีเนื้อเพลง (ก่อนบรรทัดแรก)
+      if (lyricIdx < 0) {
+        ctx.font = '400 30px "Kanit", "Noto Sans Thai", sans-serif';
+        ctx.fillStyle = 'rgba(255,255,255,0.3)';
+        ctx.fillText('♪ ♫ ♪', CANVAS_W / 2, centerY);
+      }
+
+      // Progress bar ด้านล่าง
+      const barY = CANVAS_H - 100;
+      const barW = CANVAS_W - 80;
+      const barH = 6;
+      const barX = 40;
+
+      // แทร็กเทา
+      ctx.fillStyle = 'rgba(255,255,255,0.15)';
+      ctx.beginPath();
+      ctx.roundRect(barX, barY, barW, barH, 3);
+      ctx.fill();
+
+      // แทร็กเขียว
+      ctx.fillStyle = '#10b981';
+      ctx.beginPath();
+      ctx.roundRect(barX, barY, barW * progress, barH, 3);
+      ctx.fill();
+
+      // เวลา
+      ctx.font = '400 20px "Kanit", "Noto Sans Thai", sans-serif';
+      ctx.fillStyle = 'rgba(255,255,255,0.5)';
+      ctx.textAlign = 'left';
+      ctx.fillText(formatTime(elapsed), barX, barY + 30);
+      ctx.textAlign = 'right';
+      ctx.fillText(formatTime(duration), barX + barW, barY + 30);
+
+      // Watermark
+      ctx.textAlign = 'center';
+      ctx.font = '400 16px "Kanit", "Noto Sans Thai", sans-serif';
+      ctx.fillStyle = 'rgba(255,255,255,0.15)';
+      ctx.fillText('Haimiya Typo ♪', CANVAS_W / 2, CANVAS_H - 30);
+
+      // อัปเดต progress widget
+      const pctDone = 40 + (progress * 55); // 40-95%
+      updateProgress(pctDone, 'กำลังสร้างวิดีโอ+เนื้อเพลง... ' + formatTime(elapsed) + ' / ' + formatTime(duration));
+
+      animFrameId = requestAnimationFrame(renderFrame);
+    }
+
+    // เริ่มเล่นเสียง
+    recorder.start(1000); // chunk ทุก 1 วินาที
+    source.start(0);
+    renderFrame();
+
+    // รอจนเสียงเล่นจบ
+    await new Promise((resolve) => {
+      source.onended = () => {
+        recordingDone = true;
+        if (animFrameId) cancelAnimationFrame(animFrameId);
+        // render เฟรมสุดท้าย
+        ctx.fillStyle = '#000000';
+        ctx.fillRect(0, 0, CANVAS_W, CANVAS_H);
+        ctx.textAlign = 'center';
+        ctx.font = '600 32px "Kanit", "Noto Sans Thai", sans-serif';
+        ctx.fillStyle = 'rgba(255,255,255,0.6)';
+        ctx.fillText(song.title, CANVAS_W / 2, CANVAS_H / 2 - 20);
+        ctx.font = '400 24px "Kanit", "Noto Sans Thai", sans-serif';
+        ctx.fillStyle = 'rgba(255,255,255,0.4)';
+        ctx.fillText(song.artist, CANVAS_W / 2, CANVAS_H / 2 + 20);
+        ctx.fillText('♪ Haimiya Typo ♪', CANVAS_W / 2, CANVAS_H / 2 + 60);
+
+        setTimeout(() => {
+          recorder.stop();
+        }, 500); // รอ 500ms ให้เฟรมสุดท้ายเข้า
+        resolve();
+      };
+
+      // Handle abort
+      _videoDownloadAbort.signal.addEventListener('abort', () => {
+        recordingDone = true;
+        if (animFrameId) cancelAnimationFrame(animFrameId);
+        source.stop();
+        recorder.stop();
+        audioCtx.close();
+        resolve();
+      });
+    });
+
+    if (_videoDownloadAbort.signal.aborted) return cleanup();
+
+    // รอ recorder stop event
+    await new Promise((resolve) => {
+      recorder.onstop = resolve;
+      if (recorder.state !== 'recording') resolve();
+    });
+
+    audioCtx.close();
+
+    if (_videoDownloadAbort.signal.aborted) return cleanup();
+
+    // ====== STEP 6: สร้างไฟล์และดาวน์โหลด ======
+    updateProgress(98, 'กำลังเตรียมไฟล์วิดีโอ...');
+
+    const blob = new Blob(chunks, { type: 'video/webm' });
+    const blobUrl = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = blobUrl;
+    a.download = filename;
+    a.style.display = 'none';
+    document.body.appendChild(a);
+    a.click();
+
+    setTimeout(() => {
+      URL.revokeObjectURL(blobUrl);
+      a.remove();
+    }, 5000);
+
+    updateProgress(100, '✅ ดาวน์โหลดวิดีโอ+เนื้อเพลงสำเร็จ!');
+    if (iconEl) iconEl.textContent = '✅';
+    showToast('✅ ดาวน์โหลดวิดีโอ "' + song.title + '" สำเร็จแล้วค่ะ!');
+
+    setTimeout(() => { if (widget) widget.remove(); }, 5000);
+
+  } catch (err) {
+    console.error('downloadSongVideo error:', err);
+    updateProgress(0, '❌ เกิดข้อผิดพลาด: ' + (err.message || 'unknown'));
+    showToast('❌ สร้างวิดีโอล้มเหลว: ' + (err.message || ''));
+    setTimeout(() => { if (widget) widget.remove(); }, 5000);
+  }
+
+  function cleanup() {
+    if (widget) widget.remove();
+    showToast('⚠️ ยกเลิกการสร้างวิดีโอแล้วค่ะ');
+  }
+}
+
+function cancelVideoDownload() {
+  if (_videoDownloadAbort) {
+    _videoDownloadAbort.abort();
+    _videoDownloadAbort = null;
+  }
+}
+
 function downloadWindowsShortcut() {
   const url = window.location.href;
   const shortcutContent = `[InternetShortcut]\r\nURL=${url}\r\nIconIndex=0\r\nIconFile=${window.location.origin}/favicon-logo.jpg\r\n`;
@@ -1967,7 +2419,7 @@ function showBottomPlayer(song) {
       <!-- Actions & Volume Panel (Responsive for Desktop & Mobile) -->
       <div class="bp-actions-panel">
         <div class="bp-actions">
-          <button class="btn-sm btn-download-audio" onclick="downloadSongAudio(${song.id}, event)" title="${currentAppLang === 'th' ? '📥 ดาวน์โหลดเพลงนี้ลงคอมสำหรับตัดต่อ' : 'Download audio for PC'}">📥 ${currentAppLang === 'th' ? 'โหลดลงคอม' : 'Download'}</button>
+          <button class="btn-sm btn-download-audio" onclick="downloadSongVideo(${song.id}, event)" title="${currentAppLang === 'th' ? '📥 ดาวน์โหลดเพลงนี้ลงคอมสำหรับตัดต่อ' : 'Download audio for PC'}">📹 ${currentAppLang === 'th' ? 'โหลดวิดีโอ+เนื้อเพลง' : 'Download Video+Lyrics'}</button>
           <button class="btn-sm btn-floating-player" id="btn-toggle-float" onclick="toggleFloatingPlayer(event)" title="${currentAppLang === 'th' ? 'เปิดโหมดเครื่องเล่นลอย (Floating Player) ลากย้ายได้อิสระ' : 'Toggle Floating Mini-Player'}">✨ แอพลอย</button>
           <button class="btn-sm btn-match" onclick="openAnimeMatchModal(${song.id})">${matchLabel}</button>
           <button class="btn-sm btn-bp-save ${isSaved ? 'saved' : ''}" data-save-id="${song.id}" onclick="toggleSaveSong(${song.id}, event)" title="${saveTooltip}">
@@ -2251,7 +2703,7 @@ function renderRandomShowcase(song) {
           <div class="subcard-player-strip">
             <div class="showcase-player-actions">
               ${renderPlayButton(song.id, isPlaying)}
-              <button class="btn-sm btn-download-audio" onclick="downloadSongAudio(${song.id}, event)" title="${currentAppLang === 'th' ? '📥 ดาวน์โหลดเพลงนี้ลงคอมสำหรับตัดต่อ' : 'Download audio for PC'}">📥 ${currentAppLang === 'th' ? 'โหลดลงคอม' : 'Download'}</button>
+              <button class="btn-sm btn-download-audio" onclick="downloadSongVideo(${song.id}, event)" title="${currentAppLang === 'th' ? '📥 ดาวน์โหลดเพลงนี้ลงคอมสำหรับตัดต่อ' : 'Download audio for PC'}">📹 ${currentAppLang === 'th' ? 'โหลดวิดีโอ+เนื้อเพลง' : 'Download Video+Lyrics'}</button>
               <a href="${song.spotifyUrl}" target="_blank" class="btn-sm btn-spotify">🎧 Spotify</a>
             </div>
 
@@ -2497,8 +2949,8 @@ function songCardHTML(song, index = 0) {
         ${renderPlayButton(song.id, isPlaying)}
       </div>
       <div class="song-card-actions">
-        <button class="btn-sm btn-download-audio" onclick="downloadSongAudio(${song.id}, event)" title="${currentAppLang === 'th' ? '📥 ดาวน์โหลดเพลงนี้ลงคอมสำหรับตัดต่อ' : 'Download for PC'}">
-          📥 ${currentAppLang === 'th' ? 'โหลดลงคอม' : 'Download'}
+        <button class="btn-sm btn-download-audio" onclick="downloadSongVideo(${song.id}, event)" title="${currentAppLang === 'th' ? '📥 ดาวน์โหลดเพลงนี้ลงคอมสำหรับตัดต่อ' : 'Download for PC'}">
+          📹 ${currentAppLang === 'th' ? 'โหลดวิดีโอ+เนื้อเพลง' : 'Download Video+Lyrics'}
         </button>
         <a href="${song.spotifyUrl}" target="_blank" class="btn-sm btn-spotify">
           🎧 Spotify
@@ -3340,7 +3792,7 @@ function renderAnimeMatchModalContent(song, anime) {
         <span class="song-tag" style="margin-left:0.4rem;">⚡ ${formatBpm(song.bpm)}</span>
         <div style="margin-top:0.8rem;display:flex;gap:0.6rem;flex-wrap:wrap;">
           ${renderPlayButton(song.id, isPlaying)}
-          <button class="btn-sm btn-download-audio" onclick="downloadSongAudio(${song.id}, event)" title="${currentAppLang === 'th' ? '📥 ดาวน์โหลดเพลงนี้ลงคอมสำหรับตัดต่อ' : 'Download for PC'}">📥 ${currentAppLang === 'th' ? 'โหลดลงคอม' : 'Download'}</button>
+          <button class="btn-sm btn-download-audio" onclick="downloadSongVideo(${song.id}, event)" title="${currentAppLang === 'th' ? '📥 ดาวน์โหลดเพลงนี้ลงคอมสำหรับตัดต่อ' : 'Download for PC'}">📹 ${currentAppLang === 'th' ? 'โหลดวิดีโอ+เนื้อเพลง' : 'Download Video+Lyrics'}</button>
           <a href="${song.spotifyUrl}" target="_blank" class="btn-sm btn-spotify">${currentAppLang === 'th' ? '🎧 ฟังเต็มบน Spotify' : '🎧 Listen on Spotify'}</a>
           <button class="btn-sm btn-modal-save ${isSaved ? 'saved' : ''}" data-save-id="${song.id}" onclick="toggleSaveSong(${song.id}, event)">
             ${saveBtnText}
@@ -5949,6 +6401,95 @@ async function searchLiveTrackPreview(title, artist, lang) {
     console.warn('searchLiveTrackPreview error:', e);
   }
   return null;
+}
+
+
+// ฟังก์ชันฟังตัวอย่างเพลงที่ AI แนะนำ
+let _aiPreviewAudio = null;
+let _aiPreviewCardId = null;
+
+async function playOrResolveAiSongPreview(cardId, btnEl) {
+  const songPayload = window['__ai_song_' + cardId];
+  if (!songPayload) {
+    showToast('❌ ไม่พบข้อมูลเพลงนี้');
+    return;
+  }
+
+  // If already playing this card — stop it
+  if (_aiPreviewAudio && _aiPreviewCardId === cardId && !_aiPreviewAudio.paused) {
+    _aiPreviewAudio.pause();
+    _aiPreviewAudio.currentTime = 0;
+    if (btnEl) btnEl.innerHTML = '▶️ ลองฟังตัวอย่างเพลง';
+    _aiPreviewCardId = null;
+    return;
+  }
+
+  // Stop any previously playing preview
+  if (_aiPreviewAudio) {
+    _aiPreviewAudio.pause();
+    _aiPreviewAudio.currentTime = 0;
+    const oldBtn = document.getElementById('btn-ai-play-' + _aiPreviewCardId);
+    if (oldBtn) oldBtn.innerHTML = '▶️ ลองฟังตัวอย่างเพลง';
+  }
+
+  if (btnEl) btnEl.innerHTML = '⏳ กำลังโหลดเสียง...';
+
+  // Try to find a preview URL
+  let audioUrl = songPayload.previewUrl || '';
+
+  // If no preview URL, try to search Apple Music / iTunes
+  if (!audioUrl) {
+    try {
+      const q = encodeURIComponent(songPayload.title + ' ' + songPayload.artist);
+      const res = await fetch('https://itunes.apple.com/search?term=' + q + '&media=music&limit=3');
+      const data = await res.json();
+      if (data.results && data.results.length > 0) {
+        audioUrl = data.results[0].previewUrl || '';
+        // Save for future use
+        songPayload.previewUrl = audioUrl;
+      }
+    } catch (e) {
+      console.warn('iTunes search failed for AI preview:', e);
+    }
+  }
+
+  if (!audioUrl) {
+    if (btnEl) btnEl.innerHTML = '❌ ไม่พบเสียงตัวอย่าง';
+    showToast('❌ ไม่พบเสียงตัวอย่างสำหรับเพลงนี้ค่ะ ลองเพิ่มลงคลังแล้วเปิดฟังเต็มเพลงได้เลย');
+    setTimeout(() => {
+      if (btnEl) btnEl.innerHTML = '▶️ ลองฟังตัวอย่างเพลง';
+    }, 3000);
+    return;
+  }
+
+  try {
+    _aiPreviewAudio = new Audio(audioUrl);
+    _aiPreviewCardId = cardId;
+    _aiPreviewAudio.crossOrigin = 'anonymous';
+    _aiPreviewAudio.volume = 0.8;
+
+    _aiPreviewAudio.onplay = () => {
+      if (btnEl) btnEl.innerHTML = '⏸️ หยุดฟังตัวอย่าง';
+    };
+    _aiPreviewAudio.onended = () => {
+      if (btnEl) btnEl.innerHTML = '▶️ ลองฟังตัวอย่างเพลง';
+      _aiPreviewCardId = null;
+    };
+    _aiPreviewAudio.onerror = () => {
+      if (btnEl) btnEl.innerHTML = '❌ โหลดเสียงล้มเหลว';
+      showToast('❌ ไม่สามารถเล่นตัวอย่างเพลงนี้ได้ค่ะ');
+      setTimeout(() => {
+        if (btnEl) btnEl.innerHTML = '▶️ ลองฟังตัวอย่างเพลง';
+      }, 3000);
+    };
+
+    await _aiPreviewAudio.play();
+    showToast('🎵 กำลังเล่นตัวอย่าง: ' + songPayload.title);
+  } catch (e) {
+    console.error('AI preview play error:', e);
+    if (btnEl) btnEl.innerHTML = '▶️ ลองฟังตัวอย่างเพลง';
+    showToast('❌ เล่นตัวอย่างไม่ได้ค่ะ ลองเพิ่มลงคลังแล้วเปิดฟังเต็มได้');
+  }
 }
 
 function renderSongCardsHtml(songList, headerHtml) {
