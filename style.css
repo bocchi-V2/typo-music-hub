@@ -7770,3 +7770,221 @@ button:focus-visible {
     height: 18px;
   }
 }
+
+
+/* ============================================================
+   DOWNLOAD CHOICE SHEET (ป๊อปอัปเลือกโหลดเพลง / วิดีโอ)
+   ============================================================ */
+.download-choice-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 9999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  animation: fadeInDlModal 0.25s ease-out;
+  box-sizing: border-box;
+}
+
+@keyframes fadeInDlModal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.download-choice-sheet {
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+  border: 1.5px solid rgba(56, 189, 248, 0.45);
+  border-radius: 24px;
+  width: 100%;
+  max-width: 440px;
+  padding: 1.5rem;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 30px rgba(56, 189, 248, 0.2);
+  color: #fff;
+  font-family: 'Kanit', sans-serif;
+  animation: popUpDlModal 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-sizing: border-box;
+}
+
+@keyframes popUpDlModal {
+  from { opacity: 0; transform: translateY(20px) scale(0.94); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.dc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.dc-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #38bdf8, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dc-close {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #94a3b8;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: all 0.2s;
+}
+
+.dc-close:hover {
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+  border-color: rgba(239, 68, 68, 0.4);
+}
+
+.dc-song-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 10px 14px;
+  margin-bottom: 1.2rem;
+}
+
+.dc-cover {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+}
+
+.dc-meta {
+  min-width: 0;
+  flex: 1;
+}
+
+.dc-name {
+  font-weight: 700;
+  font-size: 0.98rem;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dc-artist {
+  font-size: 0.82rem;
+  color: #94a3b8;
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dc-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dc-option-btn {
+  background: rgba(30, 41, 59, 0.7);
+  border: 1.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 14px 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: all 0.25s ease;
+  text-align: left;
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.dc-option-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.dc-option-btn.dc-audio {
+  border-color: rgba(16, 185, 129, 0.4);
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(6, 78, 59, 0.25));
+}
+
+.dc-option-btn.dc-audio:hover {
+  border-color: #10b981;
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.25);
+}
+
+.dc-option-btn.dc-video {
+  border-color: rgba(129, 140, 248, 0.4);
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.12), rgba(49, 46, 129, 0.25));
+}
+
+.dc-option-btn.dc-video:hover {
+  border-color: #818cf8;
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.25);
+}
+
+.dc-opt-icon {
+  font-size: 1.7rem;
+  flex-shrink: 0;
+}
+
+.dc-opt-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.dc-opt-title {
+  font-size: 0.98rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.dc-badge-fast {
+  font-size: 0.7rem;
+  background: rgba(16, 185, 129, 0.25);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.5);
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.dc-opt-desc {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  margin-top: 3px;
+  line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+  .download-choice-sheet {
+    max-width: 95vw;
+    padding: 1.2rem;
+  }
+}
