@@ -6404,18 +6404,134 @@ async function searchLiveTrackPreview(title, artist, lang) {
 }
 
 
-// ฟังก์ชันฟังตัวอย่างเพลงที่ AI แนะนำ
+
+// ============================================
+// GLOBAL HELPER: DETECT SONG LANGUAGE ACCURATELY
+// ============================================
+function detectSongLang(title, artist) {
+  const text = (title || '') + ' ' + (artist || '');
+  if (/[\u0E00-\u0E7F]/.test(text)) return 'th';
+  if (/[\u0E80-\u0EFF]/.test(text)) return 'lao';
+  if (/[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff]/.test(text)) return 'jp';
+  if (/[\uac00-\ud7af]/.test(text)) return 'kr';
+  const thaiArtists = [
+    'three man down', 'tilly birds', 'jeff satur', 'nont tanont', 'dept',
+    'bowkylion', '4eve', 'proxie', 'bus because of you', 'atlas', 'perses', 'pixxie',
+    'billkin', 'pp krit', 'safeplanet', 'tattoo colour', 'polycat',
+    'purpeech', 'anatomy rabbit', 'fellow fellow', 'urboytj', 'youngohm',
+    'milli', 'violette wautier', 'the toys', 'stamp', 'f.hero', 'slot machine',
+    'bodyslam', 'cocktail', 'scrubb', 'paradox', 'lula', 'season five', 'ink waruntorn',
+    'palmy', 'num kala', 'big ass', 'potato', 'getsunova', 'clash', 'labanoon',
+    'silly fools', 'moderndog', 'pause', 'klear', 'lomosonic', 'mean',
+    'zweed n roll', 'whal & dolph', 'fridaynight to sunday', 'plastic plastic',
+    'peck palitchoke', 'palaphol', 'lipta', 'serious bacon', 'yes indeed',
+    'singto numchok', 'bright vachirawit', 'gulf kanawut', 'ohm pawat',
+    'sprite x guygeegee', 'guygeegee', 'numcha', 'gavin d', 'txrbo',
+    'dawjai', 'maiyarap', 'twopee', 'diamond mqt', 'daboyway', 'kanomroo',
+    'cream', 'wanyai', 'timethai', 'jaonaay', 'pure', 'nice2meet u',
+    'telex telexs', 'way thaitanium', 'thaitanium', 'buddha bless',
+    'threemandown', 'tillybirds', 'jeffsatur', 'ponchet', 'beminor',
+    'autta', 'songkran', 'bamm', 'isbanky', 'pearwah', 'nene',
+    'bonnadol', 'saran', 'earth patravee', 'folk9', 'no one else',
+    'pun basher', 'season change', 'warin', 'ab normal', 'instinct',
+    'portrait', 'singular', 'tai orathai', 'bird thongchai', 'tata young',
+    'christina aguilar', 'da endorphine', 'endorphine', 'am fine',
+    'bedroom audio', 'hobbit', 'indigo', 'mild', 'musketeers', 'so cool',
+    'nologo', 'twio', 'tontrakul', 'gena', 'la luna', 'y not 7', 'crescendo',
+    'pae arak', 'kangsadan', 'bow maylada', 'marc tatchapon', 'flukie',
+    'wonderframe', 'mirrr', 'nap a lin', 'iceパリ', 'ice paris', 'saint', 'zee pruk',
+    'nunew', 'gemini norawit', 'fourth nattawat', 'win metawin', 'nanon',
+    'pp billkin', 'mew suppasit', 'war wanarat', 'max jenmana',
+    'ost rak', 'ost lakorn', 'thai drama', 'gmmtv', 'nadao', 'rs music'
+  ];
+  const artLower = (artist || '').toLowerCase();
+  const titleLower = (title || '').toLowerCase();
+  if (thaiArtists.some(ta => artLower.includes(ta) || titleLower.includes(ta))) return 'th';
+  return 'en';
+}
+
+// ============================================
+// BULLETPROOF AI SONG PAYLOAD RETRIEVER
+// 4-tier fallback: Memory -> localStorage -> DOM dataset -> DOM text extraction
+// ============================================
+function getAiSongPayload(cardId, btnEl) {
+  // 1. Check in-memory global
+  if (window['__ai_song_' + cardId]) {
+    return window['__ai_song_' + cardId];
+  }
+
+  // 2. Check localStorage
+  try {
+    const raw = localStorage.getItem('__ai_song_' + cardId);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (parsed && parsed.title) {
+        window['__ai_song_' + cardId] = parsed;
+        return parsed;
+      }
+    }
+  } catch (e) {}
+
+  // 3. Check DOM dataset.song
+  const cardEl = document.getElementById(cardId) || (btnEl && btnEl.closest('.gemini-song-card'));
+  if (cardEl && cardEl.dataset && cardEl.dataset.song) {
+    try {
+      const parsed = JSON.parse(cardEl.dataset.song);
+      if (parsed && parsed.title) {
+        window['__ai_song_' + cardId] = parsed;
+        return parsed;
+      }
+    } catch (e) {}
+  }
+
+  // 4. Fallback: Extract directly from card elements in DOM
+  if (cardEl) {
+    const titleEl = cardEl.querySelector('.gsc-title');
+    const artistEl = cardEl.querySelector('.gsc-artist');
+    const coverEl = cardEl.querySelector('.gsc-cover');
+    if (titleEl) {
+      const title = (titleEl.getAttribute('title') || titleEl.textContent || '').trim();
+      const artist = (artistEl ? artistEl.textContent : '').trim() || 'ศิลปินนิรนาม';
+      const coverUrl = coverEl ? coverEl.src : 'splash-cover.jpg';
+      const lang = detectSongLang(title, artist);
+      const payload = {
+        title: title,
+        artist: artist,
+        coverUrl: coverUrl,
+        previewUrl: '',
+        spotifyUrl: 'https://open.spotify.com/search/' + encodeURIComponent(title + ' ' + artist),
+        mood: 'chill',
+        tags: ['เพลงแนะนำโดยAI', 'HaimiyaAI', lang === 'th' ? 'เพลงไทย' : 'เพลงฮิต'],
+        bpm: 'ปานกลาง (110 BPM)',
+        lang: lang,
+        animeId: 1,
+        reason: 'เพลง ' + title + ' จังหวะลงตัวตัดต่อคลิปไทโป',
+        typoIdea: 'แอนิเมชันตัวอักษรแบบ Kinetic ตามจังหวะบีท'
+      };
+      window['__ai_song_' + cardId] = payload;
+      try { localStorage.setItem('__ai_song_' + cardId, JSON.stringify(payload)); } catch (e) {}
+      return payload;
+    }
+  }
+
+  return null;
+}
+
+
+// ============================================
+// ฟังก์ชันฟังตัวอย่างเพลงที่ AI แนะนำ (Bulletproof Preview Player)
+// ============================================
 let _aiPreviewAudio = null;
 let _aiPreviewCardId = null;
 
 async function playOrResolveAiSongPreview(cardId, btnEl) {
-  const songPayload = window['__ai_song_' + cardId];
+  const songPayload = getAiSongPayload(cardId, btnEl);
   if (!songPayload) {
     showToast('❌ ไม่พบข้อมูลเพลงนี้');
     return;
   }
 
-  // If already playing this card — stop it
+  // If already playing this card — toggle pause
   if (_aiPreviewAudio && _aiPreviewCardId === cardId && !_aiPreviewAudio.paused) {
     _aiPreviewAudio.pause();
     _aiPreviewAudio.currentTime = 0;
@@ -6426,47 +6542,86 @@ async function playOrResolveAiSongPreview(cardId, btnEl) {
 
   // Stop any previously playing preview
   if (_aiPreviewAudio) {
-    _aiPreviewAudio.pause();
-    _aiPreviewAudio.currentTime = 0;
+    try {
+      _aiPreviewAudio.pause();
+      _aiPreviewAudio.currentTime = 0;
+    } catch (e) {}
     const oldBtn = document.getElementById('btn-ai-play-' + _aiPreviewCardId);
     if (oldBtn) oldBtn.innerHTML = '▶️ ลองฟังตัวอย่างเพลง';
   }
 
-  if (btnEl) btnEl.innerHTML = '⏳ กำลังโหลดเสียง...';
+  // Also stop any other audio in the app (main player & relax BGM)
+  if (typeof currentAudio !== 'undefined' && currentAudio && !currentAudio.paused) {
+    try { currentAudio.pause(); } catch (e) {}
+    if (typeof updateAudioUI === 'function') updateAudioUI(false);
+  }
+  if (typeof relaxBgmAudio !== 'undefined' && relaxBgmAudio && !relaxBgmAudio.paused) {
+    try { relaxBgmAudio.pause(); } catch (e) {}
+  }
+  if (typeof stopAiChatAudio === 'function') {
+    stopAiChatAudio();
+  }
+
+  if (btnEl) btnEl.innerHTML = '⏳ กำลังค้นหาเสียง...';
 
   // Try to find a preview URL
   let audioUrl = songPayload.previewUrl || '';
 
-  // If no preview URL, try to search Apple Music / iTunes
+  // If no preview URL, try to search iTunes API with proper country code
   if (!audioUrl) {
     try {
+      const lang = songPayload.lang || detectSongLang(songPayload.title, songPayload.artist);
+      const country = (lang === 'th' || lang === 'lao') ? 'th' : (lang === 'jp' ? 'jp' : (lang === 'kr' ? 'kr' : 'us'));
       const q = encodeURIComponent(songPayload.title + ' ' + songPayload.artist);
-      const res = await fetch('https://itunes.apple.com/search?term=' + q + '&media=music&limit=3');
-      const data = await res.json();
-      if (data.results && data.results.length > 0) {
-        audioUrl = data.results[0].previewUrl || '';
-        // Save for future use
-        songPayload.previewUrl = audioUrl;
+      const res = await fetch('https://itunes.apple.com/search?term=' + q + '&entity=song&limit=5&country=' + country);
+      if (res.ok) {
+        const data = await res.json();
+        if (data && data.results && data.results.length > 0) {
+          const matched = data.results.find(t => t.previewUrl) || data.results[0];
+          if (matched && matched.previewUrl) {
+            audioUrl = matched.previewUrl;
+            songPayload.previewUrl = audioUrl;
+            window['__ai_song_' + cardId] = songPayload;
+    try { localStorage.setItem('__ai_song_' + cardId, JSON.stringify(songPayload)); } catch (e) {}
+            try { localStorage.setItem('__ai_song_' + cardId, JSON.stringify(songPayload)); } catch (e) {}
+          }
+        }
       }
     } catch (e) {
       console.warn('iTunes search failed for AI preview:', e);
     }
   }
 
+  // If still no preview URL, check if song exists in our library SONGS
+  if (!audioUrl && typeof SONGS !== 'undefined' && Array.isArray(SONGS)) {
+    const norm = s => (s || '').toLowerCase().replace(/[^a-z0-9\u0E00-\u0E7F]/g, '');
+    const qT = norm(songPayload.title);
+    const qA = norm(songPayload.artist);
+    const found = SONGS.find(s => {
+      const sT = norm(s.title);
+      const sA = norm(s.artist);
+      return (sT === qT && sA === qA) || (sT.includes(qT) && qT.length > 4);
+    });
+    if (found && (found.previewUrl || found.fullAudioUrl || found.audioUrl)) {
+      audioUrl = found.previewUrl || found.fullAudioUrl || found.audioUrl;
+      songPayload.previewUrl = audioUrl;
+    }
+  }
+
   if (!audioUrl) {
     if (btnEl) btnEl.innerHTML = '❌ ไม่พบเสียงตัวอย่าง';
-    showToast('❌ ไม่พบเสียงตัวอย่างสำหรับเพลงนี้ค่ะ ลองเพิ่มลงคลังแล้วเปิดฟังเต็มเพลงได้เลย');
+    showToast('❌ ไม่พบเสียงตัวอย่างออนไลน์สำหรับเพลงนี้ค่ะ สามารถกดยืนยันเพิ่มเพลงลงคลังได้เลย');
     setTimeout(() => {
       if (btnEl) btnEl.innerHTML = '▶️ ลองฟังตัวอย่างเพลง';
-    }, 3000);
+    }, 3500);
     return;
   }
 
   try {
+    // Note: Do NOT set crossOrigin='anonymous' to avoid CORS preflight blocks on Apple CDNs
     _aiPreviewAudio = new Audio(audioUrl);
     _aiPreviewCardId = cardId;
-    _aiPreviewAudio.crossOrigin = 'anonymous';
-    _aiPreviewAudio.volume = 0.8;
+    _aiPreviewAudio.volume = 0.85;
 
     _aiPreviewAudio.onplay = () => {
       if (btnEl) btnEl.innerHTML = '⏸️ หยุดฟังตัวอย่าง';
@@ -6475,9 +6630,10 @@ async function playOrResolveAiSongPreview(cardId, btnEl) {
       if (btnEl) btnEl.innerHTML = '▶️ ลองฟังตัวอย่างเพลง';
       _aiPreviewCardId = null;
     };
-    _aiPreviewAudio.onerror = () => {
-      if (btnEl) btnEl.innerHTML = '❌ โหลดเสียงล้มเหลว';
-      showToast('❌ ไม่สามารถเล่นตัวอย่างเพลงนี้ได้ค่ะ');
+    _aiPreviewAudio.onerror = (e) => {
+      console.warn('Audio play error:', e);
+      if (btnEl) btnEl.innerHTML = '❌ เสียงเล่นไม่ได้';
+      showToast('❌ ไม่สามารถเล่นไฟล์เสียงนี้ได้ค่ะ');
       setTimeout(() => {
         if (btnEl) btnEl.innerHTML = '▶️ ลองฟังตัวอย่างเพลง';
       }, 3000);
@@ -6485,10 +6641,10 @@ async function playOrResolveAiSongPreview(cardId, btnEl) {
 
     await _aiPreviewAudio.play();
     showToast('🎵 กำลังเล่นตัวอย่าง: ' + songPayload.title);
-  } catch (e) {
-    console.error('AI preview play error:', e);
+  } catch (playErr) {
+    console.error('AI preview play error:', playErr);
     if (btnEl) btnEl.innerHTML = '▶️ ลองฟังตัวอย่างเพลง';
-    showToast('❌ เล่นตัวอย่างไม่ได้ค่ะ ลองเพิ่มลงคลังแล้วเปิดฟังเต็มได้');
+    showToast('❌ ไม่สามารถเล่นเสียงได้ ลองแตะอีกครั้งนะคะ');
   }
 }
 
@@ -6522,11 +6678,12 @@ function renderSongCardsHtml(songList, headerHtml) {
       typoIdea: s.typoIdea || `แอนิเมชันตัวอักษรแบบ Kinetic ตามท่อนร้องฮุก สลับตัดคัทกระชับตามจังหวะบีท`
     };
     window['__ai_song_' + cardId] = songPayload;
+    try { localStorage.setItem('__ai_song_' + cardId, JSON.stringify(songPayload)); } catch (e) {}
 
     const langBadge = songPayload.lang === 'th' ? '🇹🇭 เพลงไทย' : (songPayload.lang === 'jp' ? '🇯🇵 J-Pop' : (songPayload.lang === 'kr' ? '🇰🇷 K-Pop' : (songPayload.lang === 'lao' ? '🇱🇦 เพลงลาว' : '🇬🇧 สากล')));
 
     cardsHtml += `
-      <div class="gemini-song-card" id="${cardId}">
+      <div class="gemini-song-card" id="${cardId}" data-song="${escapeHtml(JSON.stringify(songPayload))}">
         <div class="gsc-top">
           <div class="gsc-cover-wrap">
             <img src="${escapeHtml(songPayload.coverUrl)}" alt="${escapeHtml(songPayload.title)}" class="gsc-cover" onerror="this.src='splash-cover.jpg';" />
@@ -6836,6 +6993,7 @@ async function sendGeminiMessage() {
 
         const cardId = `ai-link-card-${Date.now()}`;
         window['__ai_song_' + cardId] = songPayload;
+    try { localStorage.setItem('__ai_song_' + cardId, JSON.stringify(songPayload)); } catch (e) {}
 
         const langBadge = songPayload.lang === 'th' ? '🇹🇭 เพลงไทย' : (songPayload.lang === 'jp' ? '🇯🇵 J-Pop' : (songPayload.lang === 'kr' ? '🇰🇷 K-Pop' : '🇬🇧 สากล'));
 
@@ -6844,7 +7002,7 @@ async function sendGeminiMessage() {
             <p>✨ <strong>เปิดลิงก์และดึงข้อมูลเพลงสดสำเร็จแล้วค่ะ!</strong> 🌐</p>
             <p style="font-size: 0.85rem; color: #94a3b8;">ดึงข้อมูลชื่อเพลง ศิลปิน ปก HD และเสียงตัวอย่างจากลิงก์ที่คุณส่งมาเรียบร้อยแล้วค่ะ:</p>
           </div>
-          <div class="gemini-song-card" id="${cardId}">
+          <div class="gemini-song-card" id="${cardId}" data-song="${escapeHtml(JSON.stringify(songPayload))}">
             <div class="gsc-top">
               <div class="gsc-cover-wrap">
                 <img src="${escapeHtml(songPayload.coverUrl)}" alt="${escapeHtml(songPayload.title)}" class="gsc-cover" onerror="this.src='splash-cover.jpg';" />
@@ -7210,8 +7368,12 @@ function renderFallbackAddSongCard(query) {
 
 // 6. Confirm Add Song to data.js & Server
 async function confirmAddSongViaAi(cardId, btn) {
-  const songPayload = window['__ai_song_' + cardId];
-  if (!songPayload) return;
+  const songPayload = getAiSongPayload(cardId, btn);
+  if (!songPayload) {
+    showToast('❌ ไม่พบข้อมูลเพลงที่จะเพิ่มค่ะ ลองกดใหม่อีกครั้ง');
+    if (btn) btn.disabled = false;
+    return;
+  }
 
   btn.disabled = true;
   btn.innerHTML = '⏳ กำลังบันทึกลงคลังกลาง...';
