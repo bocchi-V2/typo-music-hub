@@ -1,22 +1,40 @@
 /**
  * ============================================================
- *  AUTO_UPDATE_DAILY.JS
+ *  AUTO_UPDATE_DAILY.JS (v2 - Mega Expansion)
  *  ระบบอัปเดตเพลงและอนิเมะอัตโนมัติประจำวันแบบ Real-Time (Live Chart Sync)
- *  ดึงเพลงฮิตสดใหม่จาก iTunes / Apple Music Charts (TH, JP, US) & Kitsu Anime API
+ *  ดึงเพลงฮิตสดใหม่จาก iTunes / Apple Music Charts ทุกโซน
  *  รองรับการรันผ่าน GitHub Actions / Windows Task Scheduler / npm run daily
+ * ============================================================
+ *  v2 Changes:
+ *  - เพิ่มประเทศจาก 3 → 15+ ประเทศ (TH, JP, KR, US, GB, AU, DE, FR, BR, IN, PH, ID, VN, TW, MX)
+ *  - เพิ่มเพลงต่อวัน 10 → 50 เพลง
+ *  - เพิ่ม genre RSS feeds (Pop, Hip-Hop, Rock, K-Pop, J-Pop, Anime, R&B, Latin, Country)
+ *  - เพิ่มลาว (Lao) detection
+ *  - Retry logic สำหรับ iTunes Search API
+ *  - Rate limit protection (delay between API calls)
  * ============================================================
  */
 
 const fs = require('fs');
 const https = require('https');
+const http = require('http');
 const { execSync } = require('child_process');
 
 const SYNC_FILE = '.daily_sync.json';
 const ONE_DAY_MS = 24 * 60 * 60 * 1000;
 
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 function fetchJson(url, headers = {}) {
   return new Promise((resolve) => {
-    const req = https.get(url, { headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)', ...headers } }, (res) => {
+    const protocol = url.startsWith('https') ? https : http;
+    const req = protocol.get(url, { headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36', ...headers } }, (res) => {
+      // Follow redirects
+      if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+        return fetchJson(res.headers.location, headers).then(resolve);
+      }
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => {
@@ -28,32 +46,43 @@ function fetchJson(url, headers = {}) {
       });
     });
     req.on('error', () => resolve(null));
-    req.setTimeout(12000, () => {
+    req.setTimeout(15000, () => {
       req.destroy();
       resolve(null);
     });
   });
 }
 
-// ค้นหาเพลงละเอียดจาก iTunes Search API เพื่อเอา previewUrl และปก HD 600x600
-async function searchITunesSong(term) {
-  const url = `https://itunes.apple.com/search?term=${encodeURIComponent(term)}&entity=song&limit=3`;
-  const json = await fetchJson(url);
-  if (!json || !json.results || !json.results.length) return null;
-  const track = json.results.find(t => t.previewUrl && t.trackExplicitness !== 'explicit') || json.results.find(t => t.previewUrl) || json.results[0];
-  if (!track || !track.previewUrl) return null;
-  return {
-    title: track.trackName,
-    artist: track.artistName,
-    previewUrl: track.previewUrl,
-    coverUrl: (track.artworkUrl100 || '').replace('100x100bb', '600x600bb'),
-    spotifyUrl: `https://open.spotify.com/search/${encodeURIComponent(track.trackName + ' ' + track.artistName)}`,
-    primaryGenreName: track.primaryGenreName || 'Pop'
-  };
+// ค้นหาเพลงจาก iTunes Search API พร้อม retry
+async function searchITunesSong(term, retries = 2) {
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const url = `https://itunes.apple.com/search?term=${encodeURIComponent(term)}&entity=song&limit=5`;
+      const json = await fetchJson(url);
+      if (!json || !json.results) {
+        if (attempt < retries) { await sleep(2000); continue; }
+        return null;
+      }
+      if (!json.results.length) return null;
+      const track = json.results.find(t => t.previewUrl && t.trackExplicitness !== 'explicit') || json.results.find(t => t.previewUrl) || json.results[0];
+      if (!track || !track.previewUrl) return null;
+      return {
+        title: track.trackName,
+        artist: track.artistName,
+        previewUrl: track.previewUrl,
+        coverUrl: (track.artworkUrl100 || '').replace('100x100bb', '600x600bb'),
+        spotifyUrl: `https://open.spotify.com/search/${encodeURIComponent(track.trackName + ' ' + track.artistName)}`,
+        primaryGenreName: track.primaryGenreName || 'Pop'
+      };
+    } catch (e) {
+      if (attempt < retries) await sleep(2000);
+    }
+  }
+  return null;
 }
 
 // ดึงชาร์ตเพลงฮิตจาก Apple Music / iTunes Top Songs RSS
-async function fetchChartSongs(country = 'th', limit = 35) {
+async function fetchChartSongs(country = 'th', limit = 50) {
   const url = `https://itunes.apple.com/${country}/rss/topsongs/limit=${limit}/json`;
   const json = await fetchJson(url);
   if (!json || !json.feed || !json.feed.entry) return [];
@@ -65,7 +94,22 @@ async function fetchChartSongs(country = 'th', limit = 35) {
   })).filter(s => s.title && s.artist);
 }
 
-// ดึงอนิเมะยอดนิยม / เรื่องใหม่ๆ จาก Kitsu API โดยหมุนเวียน offset เพื่อให้อนิเมะใหม่ไม่ซ้ำ
+// ดึงเพลงตามแนวเพลง (genre) จาก iTunes RSS
+async function fetchGenreSongs(country, genreId, limit = 30) {
+  // Genre IDs: 14=Pop, 18=Hip-Hop, 21=Rock, 6=Country, 15=R&B/Soul, 12=Latin, 29=Anime
+  const url = `https://itunes.apple.com/${country}/rss/topsongs/limit=${limit}/genre=${genreId}/json`;
+  const json = await fetchJson(url);
+  if (!json || !json.feed || !json.feed.entry) return [];
+  return json.feed.entry.map(e => ({
+    title: e['im:name']?.label || '',
+    artist: e['im:artist']?.label || '',
+    coverUrl: e['im:image']?.[2]?.label || e['im:image']?.[1]?.label || '',
+    country,
+    genre: genreId
+  })).filter(s => s.title && s.artist);
+}
+
+// ดึงอนิเมะยอดนิยม / เรื่องใหม่ๆ จาก Kitsu API
 async function fetchTrendingAnimeCandidates() {
   const candidates = [];
   const offsets = [
@@ -98,6 +142,7 @@ async function fetchTrendingAnimeCandidates() {
 function detectLanguage(title, artist, country) {
   const text = (title || '') + ' ' + (artist || '');
   if (/[\u0E00-\u0E7F]/.test(text)) return 'th';
+  if (/[\u0E80-\u0EFF]/.test(text)) return 'lao'; // ลาว
   if (/[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff]/.test(text)) return 'jp';
   if (/[\uac00-\ud7af]/.test(text)) return 'kr';
 
@@ -135,14 +180,17 @@ function detectLanguage(title, artist, country) {
   const titleLower = (title || '').toLowerCase();
   if (thaiArtists.some(ta => artLower.includes(ta) || titleLower.includes(ta))) return 'th';
 
-  if (country === 'jp') return 'jp';
+  // Country-based language detection
+  const countryLangMap = { 'jp': 'jp', 'kr': 'kr', 'th': 'th', 'tw': 'jp', 'vn': 'en', 'la': 'lao' };
+  if (countryLangMap[country]) return countryLangMap[country];
+  
   return 'en';
 }
 
 // ตรวจจับอารมณ์เพลง (Mood) และแนวทางทำไทโป
 function deriveMoodAndTypo(title, artist, genre = '') {
   const lower = (title + ' ' + artist + ' ' + genre).toLowerCase();
-  if (lower.includes('rock') || lower.includes('metal') || lower.includes('dance') || lower.includes('edm') || lower.includes('hype') || lower.includes('rap')) {
+  if (lower.includes('rock') || lower.includes('metal') || lower.includes('dance') || lower.includes('edm') || lower.includes('hype') || lower.includes('rap') || lower.includes('hip-hop') || lower.includes('trap')) {
     return {
       mood: 'hype',
       bpm: 'เร็ว (128 BPM)',
@@ -150,7 +198,7 @@ function deriveMoodAndTypo(title, artist, genre = '') {
       typoIdea: 'เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม'
     };
   }
-  if (lower.includes('sad') || lower.includes('cry') || lower.includes('อกหัก') || lower.includes('เหงา') || lower.includes('เศร้า') || lower.includes('tear') || lower.includes('hurt')) {
+  if (lower.includes('sad') || lower.includes('cry') || lower.includes('อกหัก') || lower.includes('เหงา') || lower.includes('เศร้า') || lower.includes('tear') || lower.includes('hurt') || lower.includes('broken') || lower.includes('lonely')) {
     return {
       mood: 'sad',
       bpm: 'ช้า (78 BPM)',
@@ -158,12 +206,44 @@ function deriveMoodAndTypo(title, artist, genre = '') {
       typoIdea: 'ตัวหนังสือสีควันเทา เลือนหายช้าๆ สไตล์ Minimal Sad'
     };
   }
-  if (lower.includes('love') || lower.includes('รัก') || lower.includes('หวาน') || lower.includes('sweet') || lower.includes('cute') || lower.includes('ใจ')) {
+  if (lower.includes('love') || lower.includes('รัก') || lower.includes('หวาน') || lower.includes('sweet') || lower.includes('cute') || lower.includes('ใจ') || lower.includes('heart') || lower.includes('kiss')) {
     return {
       mood: 'love',
       bpm: 'ปานกลาง (100 BPM)',
       tags: ['หวานละมุน', 'โรแมนติก', 'คลั่งรัก'],
       typoIdea: 'ฟอนต์มนละมุน ขยับเด้งน่ารักตามท่อนฮุก มีประกายหัวใจเบาๆ'
+    };
+  }
+  if (lower.includes('anime') || lower.includes('アニメ') || lower.includes('opening') || lower.includes('ending')) {
+    return {
+      mood: 'hype',
+      bpm: 'เร็ว (140 BPM)',
+      tags: ['อนิเมะ', 'OP/ED', 'เปิดเรื่อง'],
+      typoIdea: 'ไทโปสไตล์อนิเมะ OP ตัวอักษรกระเด้งตามจังหวะ เฟดอินเท่ๆ'
+    };
+  }
+  if (lower.includes('funk') || lower.includes('montagem') || lower.includes('phonk') || lower.includes('brazilian')) {
+    return {
+      mood: 'hype',
+      bpm: 'เร็วมาก (150 BPM)',
+      tags: ['Funk', 'Phonk', 'บราซิลบีท'],
+      typoIdea: 'เอฟเฟกต์สั่นแรงตามเบส ตัวหนังสือสีเรดนีออน กระพริบตามจังหวะ'
+    };
+  }
+  if (lower.includes('latin') || lower.includes('reggaeton') || lower.includes('bachata') || lower.includes('salsa')) {
+    return {
+      mood: 'chill',
+      bpm: 'ปานกลาง (105 BPM)',
+      tags: ['ลาติน', 'Reggaeton', 'สนุก'],
+      typoIdea: 'ฟอนต์สีสันสดใส ลูกเล่นเลื่อนนุ่มนวลตามจังหวะ'
+    };
+  }
+  if (lower.includes('country') || lower.includes('folk') || lower.includes('acoustic')) {
+    return {
+      mood: 'chill',
+      bpm: 'ปานกลาง (95 BPM)',
+      tags: ['คันทรี่', 'อะคูสติก', 'อบอุ่น'],
+      typoIdea: 'ฟอนต์สไตล์คราฟต์ สีอุ่นน้ำตาล เลื่อนนุ่มนวล'
     };
   }
   return {
@@ -180,7 +260,7 @@ async function runDailyUpdate() {
   const shouldDeploy = args.includes('--deploy');
 
   console.log('══════════════════════════════════════════════════════════');
-  console.log('☀️  ไทโปมิวสิค – ระบบอัปเดตเพลงและอนิเมะอัตโนมัติประจำวัน (Live Charts)');
+  console.log('☀️  ไทโปมิวสิค – ระบบอัปเดตเพลง MEGA ประจำวัน (v2 - 15+ ประเทศ)');
   console.log('══════════════════════════════════════════════════════════');
 
   let syncState = { lastSyncTime: 0, dayCount: 0, history: [] };
@@ -194,9 +274,9 @@ async function runDailyUpdate() {
   const todayDateStr = new Date(now).toLocaleDateString('th-TH', { timeZone: 'Asia/Bangkok' });
   const lastSyncDateStr = syncState.lastSyncDateStr || (syncState.history?.[0]?.date ? syncState.history[0].date.split(' ')[0] : '');
 
-  // ตรวจสอบว่าวันนี้ได้รันไปแล้วหรือยัง (ตามวันปฏิทินไทย ข้ามเที่ยงคืน = วันใหม่ทันที)
+  // ตรวจสอบว่าวันนี้ได้รันไปแล้วหรือยัง
   if (!isForce && lastSyncDateStr === todayDateStr) {
-    console.log(`ℹ️ วันนี้ (${todayDateStr}) ได้รับการอัปเดตเพลงและอนิเมะประจำวันแล้ว`);
+    console.log(`ℹ️ วันนี้ (${todayDateStr}) ได้รับการอัปเดตเพลงประจำวันแล้ว`);
     console.log(`⏳ รอบถัดไปจะมาถึงเวลาเที่ยงคืน (00:00 น.)`);
     console.log(`💡 ใช้คำสั่ง 'node auto_update_daily.js --force' หากต้องการบังคับอัปเดตทันที`);
     return;
@@ -212,13 +292,15 @@ async function runDailyUpdate() {
 
   let addedAnimes = 0;
   let addedSongs = 0;
+  let skippedDuplicates = 0;
+  let failedSearches = 0;
 
-  // 1. เพิ่มอนิเมะใหม่ 1-2 เรื่องจาก Kitsu (ถ้ายังไม่มีในคลัง)
+  // 1. เพิ่มอนิเมะใหม่ 3-5 เรื่องจาก Kitsu
   try {
     const animeCandidates = await fetchTrendingAnimeCandidates();
     let nextAnimeId = Math.max(0, ...ANIMES.map(a => a.id)) + 1;
     for (const cand of animeCandidates) {
-      if (addedAnimes >= 2) break; // เพิ่มวันละ 1-2 เรื่อง
+      if (addedAnimes >= 5) break;
       const exists = ANIMES.some(a => a.name.toLowerCase() === cand.name.toLowerCase());
       if (!exists && cand.coverUrl) {
         console.log(`🌸 เพิ่มอนิเมะใหม่ประจำวัน: ${cand.name}...`);
@@ -237,50 +319,112 @@ async function runDailyUpdate() {
       }
     }
   } catch (err) {
-    console.warn('⚠️ ไม่สามารถดึงอนิเมะใหม่จาก Kitsu ได้ ข้ามไปยังขั้นตอนถัดไป:', err.message);
+    console.warn('⚠️ ไม่สามารถดึงอนิเมะใหม่จาก Kitsu ได้:', err.message);
   }
 
-  // 2. ดึงเพลงฮิตสดใหม่จาก Apple Music / iTunes Charts (ไทย, ญี่ปุ่น, สากล)
-  console.log('📡 กำลังดึงชาร์ตเพลงฮิตจาก Apple Music / iTunes (TH, JP, US)...');
-  const [chartTH, chartJP, chartUS] = await Promise.all([
-    fetchChartSongs('th', 40),
-    fetchChartSongs('jp', 40),
-    fetchChartSongs('us', 40)
-  ]);
+  // 2. ดึงเพลงฮิตจากหลายประเทศ + หลาย genre
+  console.log('📡 กำลังดึงชาร์ตเพลงฮิตจาก Apple Music / iTunes (15+ ประเทศ + แนวเพลง)...');
 
-  // สลับหมุนเวียนคละชาร์ตเพื่อความหลากหลาย
-  const combinedChartCandidates = [];
-  const maxLen = Math.max(chartTH.length, chartJP.length, chartUS.length);
-  for (let i = 0; i < maxLen; i++) {
-    if (chartTH[i]) combinedChartCandidates.push(chartTH[i]);
-    if (chartJP[i]) combinedChartCandidates.push(chartJP[i]);
-    if (chartUS[i]) combinedChartCandidates.push(chartUS[i]);
+  // ชาร์ตรวมจากหลายประเทศ
+  const countries = [
+    { code: 'th', name: 'ไทย', limit: 50 },
+    { code: 'jp', name: 'ญี่ปุ่น', limit: 50 },
+    { code: 'kr', name: 'เกาหลี', limit: 50 },
+    { code: 'us', name: 'อเมริกา', limit: 50 },
+    { code: 'gb', name: 'อังกฤษ', limit: 40 },
+    { code: 'au', name: 'ออสเตรเลีย', limit: 30 },
+    { code: 'de', name: 'เยอรมัน', limit: 30 },
+    { code: 'fr', name: 'ฝรั่งเศส', limit: 30 },
+    { code: 'br', name: 'บราซิล', limit: 40 },
+    { code: 'mx', name: 'เม็กซิโก', limit: 30 },
+    { code: 'in', name: 'อินเดีย', limit: 30 },
+    { code: 'ph', name: 'ฟิลิปปินส์', limit: 30 },
+    { code: 'id', name: 'อินโดนีเซีย', limit: 30 },
+    { code: 'tw', name: 'ไต้หวัน', limit: 30 },
+    { code: 'vn', name: 'เวียดนาม', limit: 30 },
+  ];
+
+  // ดึงชาร์ตรวมทุกประเทศพร้อมกัน (แบ่ง batch เพื่อไม่ให้ overload)
+  const allCharts = [];
+  const batchSize = 5;
+  
+  for (let i = 0; i < countries.length; i += batchSize) {
+    const batch = countries.slice(i, i + batchSize);
+    const results = await Promise.all(batch.map(c => fetchChartSongs(c.code, c.limit)));
+    results.forEach((songs, idx) => {
+      console.log(`  📊 ${batch[idx].name} (${batch[idx].code.toUpperCase()}): ${songs.length} เพลง`);
+      allCharts.push(...songs);
+    });
+    if (i + batchSize < countries.length) await sleep(1000); // Rate limit protection
   }
+
+  // ดึงเพลงตามแนวเพลง (genre) เพิ่มเติม
+  console.log('📡 กำลังดึงเพลงตามแนวเพลง (Genre RSS)...');
+  const genreFeeds = [
+    { country: 'us', genreId: 14, name: 'Pop US' },
+    { country: 'us', genreId: 18, name: 'Hip-Hop US' },
+    { country: 'us', genreId: 21, name: 'Rock US' },
+    { country: 'us', genreId: 15, name: 'R&B US' },
+    { country: 'jp', genreId: 27, name: 'J-Pop' },
+    { country: 'jp', genreId: 29, name: 'Anime JP' },
+    { country: 'kr', genreId: 51, name: 'K-Pop' },
+    { country: 'br', genreId: 14, name: 'Pop BR' },
+    { country: 'mx', genreId: 12, name: 'Latin MX' },
+    { country: 'th', genreId: 14, name: 'Pop TH' },
+  ];
+
+  for (let i = 0; i < genreFeeds.length; i += 3) {
+    const batch = genreFeeds.slice(i, i + 3);
+    const results = await Promise.all(batch.map(g => fetchGenreSongs(g.country, g.genreId, 25)));
+    results.forEach((songs, idx) => {
+      console.log(`  🎵 ${batch[idx].name}: ${songs.length} เพลง`);
+      allCharts.push(...songs);
+    });
+    if (i + 3 < genreFeeds.length) await sleep(800);
+  }
+
+  console.log(`📊 รวมได้ ${allCharts.length} เพลงจากชาร์ตทั้งหมด`);
+
+  // สลับคละเพลงจากทุกแหล่ง
+  const combinedChartCandidates = allCharts.sort(() => Math.random() - 0.5);
+
+  // สร้าง lookup set สำหรับเช็คซ้ำแบบเร็ว
+  const existingTitles = new Set();
+  SONGS.forEach(s => {
+    const norm = (s.title || '').toLowerCase().replace(/[\(\[\-].*?[\)\]]/g, '').trim();
+    existingTitles.add(norm);
+    // เพิ่ม key แบบ title+artist ด้วย
+    existingTitles.add(norm + '|' + (s.artist || '').toLowerCase().trim());
+  });
 
   let nextSongId = Math.max(0, ...SONGS.map(s => s.id)) + 1;
-  const targetSongsPerDay = 10; // เพิ่มเพลงฮิตคุณภาพสูงวันละ 10 เพลงที่มีตัวอย่างเสียงและปกชัด HD
+  const targetSongsPerDay = 50; // เพิ่มเป็น 50 เพลง/วัน
 
   for (const cand of combinedChartCandidates) {
     if (addedSongs >= targetSongsPerDay) break;
 
-    // เช็คว่ามีเพลงนี้ในคลังแล้วหรือยัง (เช็คชื่อเพลงและศิลปินแบบ case-insensitive)
+    // เช็คซ้ำแบบเร็ว
     const normTitle = cand.title.toLowerCase().replace(/[\(\[\-].*?[\)\]]/g, '').trim();
-    const exists = SONGS.some(s => {
-      const existingTitle = s.title.toLowerCase().replace(/[\(\[\-].*?[\)\]]/g, '').trim();
-      return existingTitle === normTitle || (existingTitle.includes(normTitle) && normTitle.length > 5);
-    });
+    const normKey = normTitle + '|' + cand.artist.toLowerCase().trim();
+    
+    if (existingTitles.has(normTitle) || existingTitles.has(normKey)) {
+      skippedDuplicates++;
+      continue;
+    }
 
-    if (exists) continue;
+    // Rate limit: delay ระหว่าง iTunes search calls
+    await sleep(300);
 
-    console.log(`🔍 ค้นหาตัวอย่างเสียง & ข้อมูล HD: ${cand.title} - ${cand.artist}...`);
+    console.log(`🔍 [${addedSongs + 1}/${targetSongsPerDay}] ค้นหา: ${cand.title} - ${cand.artist}...`);
     const track = await searchITunesSong(`${cand.title} ${cand.artist}`);
-    if (!track || !track.previewUrl) continue;
+    if (!track || !track.previewUrl) {
+      failedSearches++;
+      continue;
+    }
 
-    // ตรวจสอบภาษา อารมณ์ และไอเดียไทโป
     const lang = detectLanguage(track.title, track.artist, cand.country);
     const { mood, bpm, tags, typoIdea } = deriveMoodAndTypo(track.title, track.artist, track.primaryGenreName);
 
-    // สุ่มจับคู่อนิเมะที่เข้ากัน
     const matchedAnime = ANIMES[Math.floor(Math.random() * ANIMES.length)] || ANIMES[0];
 
     const newSong = {
@@ -296,7 +440,7 @@ async function runDailyUpdate() {
       lang: lang,
       animeId: matchedAnime.id,
       animeMatch: [matchedAnime.id],
-      reason: `เพลงฮิตใหม่ประจำวันจากชาร์ต เหมาะตัดต่อคลิปไทโปคู่กับ ${matchedAnime.name}`,
+      reason: `เพลงฮิตใหม่ประจำวันจากชาร์ต ${cand.country.toUpperCase()} เหมาะตัดต่อคลิปไทโปคู่กับ ${matchedAnime.name}`,
       typoIdea: typoIdea
     };
 
@@ -310,16 +454,21 @@ async function runDailyUpdate() {
       typoIdea: newSong.typoIdea
     });
 
-    console.log(`✅ เพิ่มเพลงสำเร็จ: "${track.title}" โดย ${track.artist} (${lang.toUpperCase()})`);
+    // เพิ่มเข้า lookup set เพื่อไม่ให้เพลงซ้ำในรอบเดียวกัน
+    existingTitles.add(normTitle);
+    existingTitles.add(normKey);
+
+    console.log(`  ✅ เพิ่มสำเร็จ: "${track.title}" โดย ${track.artist} (${lang.toUpperCase()}) [${cand.country.toUpperCase()}]`);
     nextSongId++;
     addedSongs++;
   }
 
   // บันทึกกลับลง data.js
+  console.log('💾 กำลังบันทึก data.js...');
   const out = `const ANIMES = ${JSON.stringify(ANIMES, null, 2)};\n\nconst SONGS = ${JSON.stringify(SONGS, null, 2)};\n\nconst ANIME_PAIRS = ${JSON.stringify(ANIME_PAIRS, null, 2)};\n`;
   fs.writeFileSync('data.js', out, 'utf8');
 
-  // บันทึก version.json เพื่อให้แอพมือถือและเว็บซิงค์ข้อมูลใหม่ได้อัตโนมัติ (OTA Sync)
+  // บันทึก version.json
   const versionData = {
     version: `2.${new Date(now).toISOString().slice(0, 10).replace(/-/g, '')}.${new Date(now).getHours()}`,
     versionCode: Math.floor(now / 1000),
@@ -330,6 +479,25 @@ async function runDailyUpdate() {
     releaseUrl: "https://github.com/bocchi-V2/typo-music-hub/releases/latest"
   };
   fs.writeFileSync('version.json', JSON.stringify(versionData, null, 2), 'utf8');
+
+  // อัปเดต sw.js (cache buster) เพื่อให้มือถือและเบราว์เซอร์รับเพลงใหม่ทันที
+  if (fs.existsSync('sw.js')) {
+    let sw = fs.readFileSync('sw.js', 'utf8');
+    const newCacheName = `haimiya-typo-${versionData.version}.${versionData.versionCode}`;
+    sw = sw.replace(/const CACHE_NAME\s*=\s*['"][^'"]+['"];/, `const CACHE_NAME = '${newCacheName}';`);
+    fs.writeFileSync('sw.js', sw, 'utf8');
+    console.log(`⚡ อัปเดต Service Worker Cache: ${newCacheName}`);
+  }
+
+  // อัปเดต index.html query string เพื่อบังคับรีเฟรชไฟล์ data.js
+  if (fs.existsSync('index.html')) {
+    let html = fs.readFileSync('index.html', 'utf8');
+    const newV = `${versionData.version}.${versionData.versionCode}`;
+    html = html.replace(/data\.js\?v=[^"']+/g, `data.js?v=${newV}`);
+    html = html.replace(/app\.js\?v=[^"']+/g, `app.js?v=${newV}`);
+    fs.writeFileSync('index.html', html, 'utf8');
+    console.log(`⚡ อัปเดต version query string ใน index.html: ?v=${newV}`);
+  }
 
   // บันทึกสถานะการซิงค์
   syncState.lastSyncTime = now;
@@ -343,17 +511,23 @@ async function runDailyUpdate() {
     date: new Date(now).toLocaleString('th-TH'),
     addedSongs,
     addedAnimes,
+    skippedDuplicates,
+    failedSearches,
     totalSongs: SONGS.length,
     totalAnimes: ANIMES.length
   });
-  if (syncState.history.length > 30) syncState.history.pop();
+  if (syncState.history.length > 60) syncState.history.pop();
 
   fs.writeFileSync(SYNC_FILE, JSON.stringify(syncState, null, 2), 'utf8');
 
   console.log(`══════════════════════════════════════════════════════════`);
-  console.log(`🎉 บันทึกรอบอัปเดตประจำวันเรียบร้อย! (วันที่ ${syncState.dayCount})`);
-  console.log(`📊 เพิ่มเพลงใหม่จากชาร์ตสด: +${addedSongs} เพลง | อนิเมะใหม่: +${addedAnimes} เรื่อง`);
-  console.log(`📁 คลังรวมทั้งหมดในเว็บ: ${SONGS.length} เพลง | ${ANIMES.length} เรื่องอนิเมะ`);
+  console.log(`🎉 บันทึกรอบอัปเดต MEGA ประจำวันเรียบร้อย! (วันที่ ${syncState.dayCount})`);
+  console.log(`📊 สรุปผล:`);
+  console.log(`   🎵 เพลงใหม่: +${addedSongs} เพลง`);
+  console.log(`   🌸 อนิเมะใหม่: +${addedAnimes} เรื่อง`);
+  console.log(`   ⏭️  ข้ามเพลงซ้ำ: ${skippedDuplicates} เพลง`);
+  console.log(`   ❌ ค้นหาไม่พบ: ${failedSearches} เพลง`);
+  console.log(`   📁 คลังรวมทั้งหมด: ${SONGS.length} เพลง | ${ANIMES.length} อนิเมะ`);
   console.log(`══════════════════════════════════════════════════════════`);
 
   if (shouldDeploy) {
