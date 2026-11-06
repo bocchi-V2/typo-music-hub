@@ -1431,6 +1431,84 @@ async function downloadSongAudio(songId, event) {
 // ============================================================
 let _videoDownloadAbort = null;
 
+
+// ============================================================
+// DOWNLOAD CHOICE MODAL (ให้ผู้ใช้เลือกว่าจะโหลดไฟล์เสียง หรือวิดีโอ)
+// ============================================================
+let _currentDownloadSongId = null;
+
+function openDownloadChoiceModal(songId, event) {
+  if (event) {
+    if (typeof event.stopPropagation === 'function') event.stopPropagation();
+    if (event.cancelBubble !== undefined) event.cancelBubble = true;
+  }
+
+  const song = (typeof SONG_MAP !== 'undefined' && SONG_MAP.get(songId)) || 
+               (typeof SONGS !== 'undefined' && SONGS.find(s => s.id === songId));
+  if (!song) return;
+
+  _currentDownloadSongId = songId;
+
+  // Remove existing modal if any
+  closeDownloadChoiceModal();
+
+  const overlay = document.createElement('div');
+  overlay.id = 'download-choice-modal-overlay';
+  overlay.className = 'download-choice-overlay';
+  overlay.onclick = closeDownloadChoiceModal;
+
+  const coverSrc = song.coverUrl || 'splash-cover.jpg';
+
+  overlay.innerHTML = `
+    <div class="download-choice-sheet" onclick="event.stopPropagation()">
+      <div class="dc-header">
+        <div class="dc-title">📥 ดาวน์โหลดเพลงไปใช้ตัดต่อ</div>
+        <button class="dc-close" onclick="closeDownloadChoiceModal()" title="ปิด">✕</button>
+      </div>
+      <div class="dc-song-info">
+        <img src="${escapeHtml(coverSrc)}" alt="${escapeHtml(song.title)}" class="dc-cover" onerror="this.src='splash-cover.jpg';" />
+        <div class="dc-meta">
+          <div class="dc-name">${escapeHtml(song.title)}</div>
+          <div class="dc-artist">${escapeHtml(song.artist)}</div>
+        </div>
+      </div>
+      <div class="dc-options">
+        <button class="dc-option-btn dc-audio" onclick="startDownloadChoice(${song.id}, 'audio', event)">
+          <div class="dc-opt-icon">⚡️</div>
+          <div class="dc-opt-content">
+            <div class="dc-opt-title">🎵 โหลดไฟล์เสียงเพลงเต็ม (.mp3 / .m4a) <span class="dc-badge-fast">เร็วที่สุด 1 วิ</span></div>
+            <div class="dc-opt-desc">นำเข้าแอป CapCut, TikTok, Premiere ได้ทันที 100% ไม่ติดปัญหา</div>
+          </div>
+        </button>
+        <button class="dc-option-btn dc-video" onclick="startDownloadChoice(${song.id}, 'video', event)">
+          <div class="dc-opt-icon">🎬</div>
+          <div class="dc-opt-content">
+            <div class="dc-opt-title">📹 โหลดเป็นไฟล์วิดีโอ + เนื้อเพลง (.webm)</div>
+            <div class="dc-opt-desc">พื้นหลังดำ มีเนื้อร้องเรืองแสงคาราโอเกะ สำหรับดึงเสียงใน CapCut</div>
+          </div>
+        </button>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(overlay);
+}
+
+function closeDownloadChoiceModal() {
+  const overlay = document.getElementById('download-choice-modal-overlay');
+  if (overlay) overlay.remove();
+}
+
+function startDownloadChoice(songId, format, event) {
+  closeDownloadChoiceModal();
+  if (format === 'video') {
+    downloadSongVideo(songId, event);
+  } else {
+    downloadSongAudio(songId, event);
+  }
+}
+
+
 async function downloadSongVideo(songId, event) {
   if (event) {
     if (typeof event.stopPropagation === 'function') event.stopPropagation();
@@ -1516,8 +1594,7 @@ async function downloadSongVideo(songId, event) {
         const q = encodeURIComponent(song.title + ' ' + song.artist);
         const apiRes = await fetch('https://mellow-baklava-bffed3.netlify.app/.netlify/functions/get-full-song?q=' + q);
         const apiData = await apiRes.json();
-        if (apiData && apiData.audioUrl) {
-          audioUrl = apiData.audioUrl;
+        if (apiData && (apiData.directAudioUrl || apiData.audioUrl)) { audioUrl = apiData.directAudioUrl || apiData.audioUrl;
           setCachedFullSong(song.id, audioUrl);
         }
       } catch (e) {
@@ -1600,10 +1677,11 @@ async function downloadSongVideo(songId, event) {
       audioBuffer = await offlineCtx.decodeAudioData(arrayBuf);
     } catch (e) {
       console.error('Audio decode failed:', e);
-      updateProgress(0, '❌ โหลดเสียงล้มเหลว');
-      showToast('❌ ไม่สามารถโหลดเสียงเพลงได้ค่ะ');
-      setTimeout(() => { if (widget) widget.remove(); }, 3000);
-      return;
+      console.warn('Audio decode/fetch limitation, falling back to direct audio download');
+      updateProgress(80, '⚡ กำลังบันทึกเป็นไฟล์เสียงสำหรับ CapCut ให้แทนค่ะ...');
+      showToast('📥 เซิร์ฟเวอร์ไม่อนุญาตให้เรนเดอร์วิดีโอ ระบบกำลังส่งไฟล์เสียงสำหรับนำเข้า CapCut ให้แทนค่ะ');
+      setTimeout(() => { if (widget) widget.remove(); }, 2500);
+      return downloadSongAudio(songId, event);
     }
 
     const duration = audioBuffer.duration;
@@ -2419,7 +2497,7 @@ function showBottomPlayer(song) {
       <!-- Actions & Volume Panel (Responsive for Desktop & Mobile) -->
       <div class="bp-actions-panel">
         <div class="bp-actions">
-          <button class="btn-sm btn-download-audio" onclick="downloadSongVideo(${song.id}, event)" title="${currentAppLang === 'th' ? '📥 ดาวน์โหลดเพลงนี้ลงคอมสำหรับตัดต่อ' : 'Download audio for PC'}">📹 ${currentAppLang === 'th' ? 'โหลดวิดีโอ+เนื้อเพลง' : 'Download Video+Lyrics'}</button>
+          <button class="btn-sm btn-download-audio" onclick="openDownloadChoiceModal(${song.id}, event)" title="${currentAppLang === 'th' ? '📥 ดาวน์โหลดเพลงนี้ลงคอมสำหรับตัดต่อ' : 'Download audio for PC'}">📥 ${currentAppLang === 'th' ? 'ดาวน์โหลดเพลง' : 'Download'}</button>
           <button class="btn-sm btn-floating-player" id="btn-toggle-float" onclick="toggleFloatingPlayer(event)" title="${currentAppLang === 'th' ? 'เปิดโหมดเครื่องเล่นลอย (Floating Player) ลากย้ายได้อิสระ' : 'Toggle Floating Mini-Player'}">✨ แอพลอย</button>
           <button class="btn-sm btn-match" onclick="openAnimeMatchModal(${song.id})">${matchLabel}</button>
           <button class="btn-sm btn-bp-save ${isSaved ? 'saved' : ''}" data-save-id="${song.id}" onclick="toggleSaveSong(${song.id}, event)" title="${saveTooltip}">
@@ -2703,7 +2781,7 @@ function renderRandomShowcase(song) {
           <div class="subcard-player-strip">
             <div class="showcase-player-actions">
               ${renderPlayButton(song.id, isPlaying)}
-              <button class="btn-sm btn-download-audio" onclick="downloadSongVideo(${song.id}, event)" title="${currentAppLang === 'th' ? '📥 ดาวน์โหลดเพลงนี้ลงคอมสำหรับตัดต่อ' : 'Download audio for PC'}">📹 ${currentAppLang === 'th' ? 'โหลดวิดีโอ+เนื้อเพลง' : 'Download Video+Lyrics'}</button>
+              <button class="btn-sm btn-download-audio" onclick="openDownloadChoiceModal(${song.id}, event)" title="${currentAppLang === 'th' ? '📥 ดาวน์โหลดเพลงนี้ลงคอมสำหรับตัดต่อ' : 'Download audio for PC'}">📥 ${currentAppLang === 'th' ? 'ดาวน์โหลดเพลง' : 'Download'}</button>
               <a href="${song.spotifyUrl}" target="_blank" class="btn-sm btn-spotify">🎧 Spotify</a>
             </div>
 
@@ -2949,8 +3027,8 @@ function songCardHTML(song, index = 0) {
         ${renderPlayButton(song.id, isPlaying)}
       </div>
       <div class="song-card-actions">
-        <button class="btn-sm btn-download-audio" onclick="downloadSongVideo(${song.id}, event)" title="${currentAppLang === 'th' ? '📥 ดาวน์โหลดเพลงนี้ลงคอมสำหรับตัดต่อ' : 'Download for PC'}">
-          📹 ${currentAppLang === 'th' ? 'โหลดวิดีโอ+เนื้อเพลง' : 'Download Video+Lyrics'}
+        <button class="btn-sm btn-download-audio" onclick="openDownloadChoiceModal(${song.id}, event)" title="${currentAppLang === 'th' ? '📥 ดาวน์โหลดเพลงนี้ลงคอมสำหรับตัดต่อ' : 'Download for PC'}">
+          📥 ${currentAppLang === 'th' ? 'ดาวน์โหลดเพลง' : 'Download'}
         </button>
         <a href="${song.spotifyUrl}" target="_blank" class="btn-sm btn-spotify">
           🎧 Spotify
@@ -3792,7 +3870,7 @@ function renderAnimeMatchModalContent(song, anime) {
         <span class="song-tag" style="margin-left:0.4rem;">⚡ ${formatBpm(song.bpm)}</span>
         <div style="margin-top:0.8rem;display:flex;gap:0.6rem;flex-wrap:wrap;">
           ${renderPlayButton(song.id, isPlaying)}
-          <button class="btn-sm btn-download-audio" onclick="downloadSongVideo(${song.id}, event)" title="${currentAppLang === 'th' ? '📥 ดาวน์โหลดเพลงนี้ลงคอมสำหรับตัดต่อ' : 'Download for PC'}">📹 ${currentAppLang === 'th' ? 'โหลดวิดีโอ+เนื้อเพลง' : 'Download Video+Lyrics'}</button>
+          <button class="btn-sm btn-download-audio" onclick="openDownloadChoiceModal(${song.id}, event)" title="${currentAppLang === 'th' ? '📥 ดาวน์โหลดเพลงนี้ลงคอมสำหรับตัดต่อ' : 'Download for PC'}">📥 ${currentAppLang === 'th' ? 'ดาวน์โหลดเพลง' : 'Download'}</button>
           <a href="${song.spotifyUrl}" target="_blank" class="btn-sm btn-spotify">${currentAppLang === 'th' ? '🎧 ฟังเต็มบน Spotify' : '🎧 Listen on Spotify'}</a>
           <button class="btn-sm btn-modal-save ${isSaved ? 'saved' : ''}" data-save-id="${song.id}" onclick="toggleSaveSong(${song.id}, event)">
             ${saveBtnText}
