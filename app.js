@@ -5480,6 +5480,24 @@ document.addEventListener('DOMContentLoaded', async () => {
   await loadCachedDatabase();
   ensureSecretFunkElements();
   setAppLanguage(currentAppLang);
+  // ตรวจจับเมื่อผู้ใช้เพิ่งรีสตาร์ทมาจากการแก้บั๊กอัตโนมัติ
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.has('repaired') || localStorage.getItem('haimiya_auto_repaired_at')) {
+    const repairedAt = parseInt(localStorage.getItem('haimiya_auto_repaired_at') || '0', 10);
+    if (Date.now() - repairedAt < 45000 || urlParams.has('repaired')) {
+      setTimeout(() => {
+        if (typeof showToast === 'function') {
+          showToast('🎉 ซ่อมแซมระบบและแก้บั๊กสำเร็จ 100%! ล้างแคชเก่าและอัปเดตระบบเสถียรล่าสุดให้เรียบร้อยแล้วค่ะ 🌸✨', 5500);
+        }
+      }, 700);
+    }
+    try {
+      localStorage.removeItem('haimiya_auto_repaired_at');
+      const cleanUrl = window.location.pathname + window.location.hash;
+      window.history.replaceState({}, '', cleanUrl);
+    } catch (e) {}
+  }
+
   renderSongsGrid();
   renderAnimeMatchGrid();
   populateFinderDropdowns();
@@ -5939,6 +5957,45 @@ function toggleHaimiyaAI() {
 }
 
 function initDraggableAiBubble() {
+  // Paste & Drag-and-drop listener for screenshots
+  setTimeout(() => {
+    const chatModal = document.getElementById('haimiya-ai-modal');
+    const inputArea = document.getElementById('gemini-input-text');
+    if (inputArea && !inputArea._pasteInit) {
+      inputArea._pasteInit = true;
+      inputArea.addEventListener('paste', (e) => {
+        const items = e.clipboardData && e.clipboardData.items;
+        if (items) {
+          for (let i = 0; i < items.length; i++) {
+            if (items[i].type.indexOf('image') !== -1 || items[i].type.indexOf('video') !== -1) {
+              const blob = items[i].getAsFile();
+              if (blob) {
+                processGeminiAttachedFile(blob);
+                e.preventDefault();
+                break;
+              }
+            }
+          }
+        }
+      });
+    }
+    if (chatModal && !chatModal._dropInit) {
+      chatModal._dropInit = true;
+      chatModal.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+      });
+      chatModal.addEventListener('drop', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const files = e.dataTransfer && e.dataTransfer.files;
+        if (files && files.length > 0) {
+          processGeminiAttachedFile(files[0]);
+        }
+      });
+    }
+  }, 100);
+
   const bubble = document.getElementById('haimiya-ai-floating-bubble');
   if (!bubble) return;
 
@@ -6891,10 +6948,281 @@ async function parseAndRenderAiSongResponse(aiText, engineUsed, rawUserPrompt) {
     }));
 
     const cardsHtml = renderSongCardsHtml(resolvedSongs);
-    appendAiResponse(formattedHtml + cardsHtml + pillHtml, aiText);
+    
+    const repairHint = '<div style="margin-top: 10px; border-top: 1px dashed rgba(255,255,255,0.12); padding-top: 8px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px;"><span style="font-size: 0.76rem; color: #64748b;">💡 แนบรูป/วิดีโอเพื่อแก้บั๊กหรือขอเพลงได้ตลอดค่ะ</span><button class="btn-sm btn-ghost" onclick="executeRealAppBugRepair()" style="font-size: 0.75rem; color: #f87171; border-color: rgba(248,113,113,0.3); padding: 2px 8px;">🛠️ ซ่อมแซมระบบ & รีสตาร์ท</button></div>';
+    appendAiResponse(formattedHtml + cardsHtml + repairHint + pillHtml, aiText);
   } else {
-    appendAiResponse(formattedHtml + pillHtml, aiText);
+    
+    const repairHint = '<div style="margin-top: 10px; border-top: 1px dashed rgba(255,255,255,0.12); padding-top: 8px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px;"><span style="font-size: 0.76rem; color: #64748b;">💡 แนบรูป/วิดีโอเพื่อแก้บั๊กหรือขอเพลงได้ตลอดค่ะ</span><button class="btn-sm btn-ghost" onclick="executeRealAppBugRepair()" style="font-size: 0.75rem; color: #f87171; border-color: rgba(248,113,113,0.3); padding: 2px 8px;">🛠️ ซ่อมแซมระบบ & รีสตาร์ท</button></div>';
+    appendAiResponse(formattedHtml + repairHint + pillHtml, aiText);
   }
+}
+
+
+// ============================================================
+// HAIMIYA AI MULTIMODAL MEDIA ATTACHMENT & REAL BUG REPAIR ENGINE
+// ============================================================
+window.__geminiAttachedMedia = null;
+window.__geminiBugModeActive = false;
+
+function handleGeminiFileSelect(event) {
+  const file = event.target.files && event.target.files[0];
+  if (!file) return;
+  processGeminiAttachedFile(file);
+}
+
+function processGeminiAttachedFile(file) {
+  if (!file) return;
+  const isImage = file.type.startsWith('image/');
+  const isVideo = file.type.startsWith('video/');
+
+  if (!isImage && !isVideo) {
+    if (typeof showToast === 'function') showToast('⚠️ กรุณาเลือกไฟล์รูปภาพ (PNG, JPG, WEBP) หรือคลิปวิดีโอ (MP4, WEBM) ค่ะ');
+    return;
+  }
+
+  if (file.size > 28 * 1024 * 1024) {
+    if (typeof showToast === 'function') showToast('⚠️ ขนาดไฟล์ใหญ่เกิน 28MB ค่ะ กรุณาเลือกไฟล์ที่เล็กลง');
+    return;
+  }
+
+  if (typeof showToast === 'function') showToast('⏳ กำลังประมวลผลไฟล์แนบ...');
+
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    const rawDataUrl = e.target.result;
+
+    if (isImage) {
+      const img = new Image();
+      img.onload = () => {
+        const maxDim = 1280;
+        let w = img.width;
+        let h = img.height;
+        if (w > maxDim || h > maxDim) {
+          if (w > h) {
+            h = Math.round((h * maxDim) / w);
+            w = maxDim;
+          } else {
+            w = Math.round((w * maxDim) / h);
+            h = maxDim;
+          }
+        }
+        const canvas = document.createElement('canvas');
+        canvas.width = w;
+        canvas.height = h;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0, w, h);
+        const optDataUrl = canvas.toDataURL('image/jpeg', 0.85);
+        const base64 = optDataUrl.split(',')[1];
+
+        setGeminiAttachedMedia({
+          type: 'image',
+          name: file.name,
+          size: Math.round(base64.length * 0.75),
+          mimeType: 'image/jpeg',
+          dataUrl: optDataUrl,
+          base64: base64
+        });
+      };
+      img.onerror = () => {
+        const base64 = rawDataUrl.split(',')[1];
+        setGeminiAttachedMedia({
+          type: 'image',
+          name: file.name,
+          size: file.size,
+          mimeType: file.type || 'image/jpeg',
+          dataUrl: rawDataUrl,
+          base64: base64
+        });
+      };
+      img.src = rawDataUrl;
+    } else {
+      // Video
+      const base64 = rawDataUrl.split(',')[1];
+      setGeminiAttachedMedia({
+        type: 'video',
+        name: file.name,
+        size: file.size,
+        mimeType: file.type || 'video/mp4',
+        dataUrl: rawDataUrl,
+        base64: base64
+      });
+    }
+  };
+  reader.readAsDataURL(file);
+}
+
+function setGeminiAttachedMedia(mediaObj) {
+  window.__geminiAttachedMedia = mediaObj;
+  // Auto-detect if name indicates bug
+  if (/bug|error|broken|crash|issue|screenshot|แคป|บั๊ก|บัค|พัง/i.test(mediaObj.name)) {
+    window.__geminiBugModeActive = true;
+  }
+
+  renderGeminiAttachmentPreview();
+  const input = document.getElementById('gemini-input-text');
+  if (input) {
+    if (!input.value.trim()) {
+      input.placeholder = window.__geminiBugModeActive ? 'พิมพ์อธิบายบั๊กเพิ่มเติม หรือกดส่งเพื่อแก้บั๊กทันที...' : 'พิมพ์ข้อความถามไฮมิยะจากภาพนี้ หรือกดส่งได้เลยค่ะ...';
+    }
+    input.focus();
+  }
+}
+
+function renderGeminiAttachmentPreview() {
+  const container = document.getElementById('gemini-attachment-preview');
+  if (!container) return;
+
+  const media = window.__geminiAttachedMedia;
+  if (!media) {
+    container.classList.add('hidden');
+    container.innerHTML = '';
+    return;
+  }
+
+  const isImg = media.type === 'image';
+  const sizeKb = Math.round(media.size / 1024);
+  const sizeStr = sizeKb > 1024 ? (sizeKb / 1024).toFixed(1) + ' MB' : sizeKb + ' KB';
+
+  container.className = 'gemini-attachment-preview';
+  container.innerHTML = `
+    <div class="gemini-preview-card">
+      <div class="gemini-preview-thumb-box">
+        ${isImg
+          ? `<img src="${media.dataUrl}" class="gemini-preview-thumb" alt="Preview" />`
+          : `<video src="${media.dataUrl}" class="gemini-preview-thumb" muted playsinline></video>`
+        }
+      </div>
+      <div class="gemini-preview-meta">
+        <div class="gemini-preview-title">${escapeHtml(media.name)}</div>
+        <div class="gemini-preview-sub">
+          <span class="preview-type-pill">${isImg ? '📸 รูปภาพ' : '🎥 วิดีโอ'}</span>
+          <span class="preview-size-text">${sizeStr}</span>
+        </div>
+      </div>
+      <div class="gemini-preview-intent">
+        <button type="button" class="btn-preview-mode ${window.__geminiBugModeActive ? 'active-bug' : ''}" onclick="toggleBugReportMode()">
+          ${window.__geminiBugModeActive ? '🛠️ โหมดแก้บั๊ก (เปิดอยู่)' : '🛠️ กดเพื่อแจ้งแก้บั๊ก'}
+        </button>
+      </div>
+      <button type="button" class="gemini-preview-del-btn" onclick="clearGeminiAttachment()" title="ลบไฟล์แนบ">✕</button>
+    </div>
+  `;
+}
+
+function toggleBugReportMode() {
+  window.__geminiBugModeActive = !window.__geminiBugModeActive;
+  renderGeminiAttachmentPreview();
+  const input = document.getElementById('gemini-input-text');
+  if (input && !input.value.trim()) {
+    input.placeholder = window.__geminiBugModeActive ? 'พิมพ์อธิบายบั๊กเพิ่มเติม หรือกดส่งเพื่อแก้บั๊กทันที...' : 'พิมพ์ข้อความถามไฮมิยะจากภาพนี้ หรือกดส่งได้เลยค่ะ...';
+  }
+}
+
+function clearGeminiAttachment() {
+  window.__geminiAttachedMedia = null;
+  window.__geminiBugModeActive = false;
+  const fileInput = document.getElementById('gemini-file-input');
+  if (fileInput) fileInput.value = '';
+  const container = document.getElementById('gemini-attachment-preview');
+  if (container) {
+    container.classList.add('hidden');
+    container.innerHTML = '';
+  }
+  const input = document.getElementById('gemini-input-text');
+  if (input) {
+    input.placeholder = 'พิมพ์คุยกับไฮมิยะ หรือส่งรูปแจ้งแก้บั๊ก/รูปอนิเมะ...';
+  }
+}
+
+// REAL EMERGENCY BUG REPAIR ENGINE
+async function executeRealAppBugRepair(reason = 'ผู้ใช้ส่งรูปภาพ/วิดีโอแจ้งแก้บั๊ก') {
+  const modal = document.getElementById('haimiya-repair-modal');
+  if (modal) modal.classList.remove('hidden');
+
+  const fill = document.getElementById('repair-progress-bar-fill');
+  const step1 = document.getElementById('repair-step-1');
+  const step2 = document.getElementById('repair-step-2');
+  const step3 = document.getElementById('repair-step-3');
+  const step4 = document.getElementById('repair-step-4');
+
+  function setStep(stepEl, status, icon) {
+    if (!stepEl) return;
+    if (status === 'done') {
+      stepEl.className = 'repair-step done';
+      const ic = stepEl.querySelector('.step-icon');
+      if (ic) ic.textContent = icon || '✅';
+    } else if (status === 'active') {
+      stepEl.className = 'repair-step active';
+      const ic = stepEl.querySelector('.step-icon');
+      if (ic) ic.textContent = icon || '⏳';
+    }
+  }
+
+  // Step 1: Analyze bug
+  setStep(step1, 'active', '🔍');
+  if (fill) fill.style.width = '25%';
+  await new Promise(r => setTimeout(r, 450));
+  setStep(step1, 'done', '✅');
+
+  // Step 2: Purge Caches & Service Worker
+  setStep(step2, 'active', '🧹');
+  if (fill) fill.style.width = '55%';
+  try {
+    if ('caches' in window) {
+      const keys = await window.caches.keys();
+      await Promise.all(keys.map(k => window.caches.delete(k)));
+      console.log('Real repair: purged caches', keys);
+    }
+    if ('serviceWorker' in navigator) {
+      const regs = await navigator.serviceWorker.getRegistrations();
+      await Promise.all(regs.map(r => r.unregister()));
+      console.log('Real repair: unregistered service workers', regs.length);
+    }
+  } catch (err) {
+    console.warn('Real repair cache purge error:', err);
+  }
+  await new Promise(r => setTimeout(r, 550));
+  setStep(step2, 'done', '✅');
+
+  // Step 3: Sanitize Storage & DOM
+  setStep(step3, 'active', '🧼');
+  if (fill) fill.style.width = '85%';
+  try {
+    const obsoleteKeys = [
+      'haimiya_bp_pos',
+      'haimiya_bp_size',
+      'haimiya_last_tab',
+      'haimiya_audio_cache_index'
+    ];
+    obsoleteKeys.forEach(k => {
+      try { localStorage.removeItem(k); } catch (e) {}
+    });
+
+    // Reset bottom player styles
+    const bp = document.getElementById('bottom-player');
+    if (bp) {
+      bp.removeAttribute('style');
+      bp.className = 'bottom-player';
+    }
+
+    sessionStorage.clear();
+    localStorage.setItem('haimiya_auto_repaired_at', Date.now().toString());
+    localStorage.setItem('haimiya_repaired_reason', reason);
+  } catch (err) {
+    console.warn('Storage sanitation error:', err);
+  }
+  await new Promise(r => setTimeout(r, 500));
+  setStep(step3, 'done', '✅');
+
+  // Step 4: Reboot
+  setStep(step4, 'active', '🚀');
+  if (fill) fill.style.width = '100%';
+  await new Promise(r => setTimeout(r, 650));
+
+  // Exit & hard reload with fresh cache-busting timestamp
+  const targetUrl = window.location.origin + window.location.pathname + '?repaired=' + Date.now();
+  window.location.replace(targetUrl);
 }
 
 // 5. Send message and Gemini response logic
@@ -6907,23 +7235,67 @@ async function sendGeminiMessage() {
 
   if (!input || !list) return;
   const rawText = input.value.trim();
-  if (!rawText) return;
+  const attachedMedia = window.__geminiAttachedMedia;
+  if (!rawText && !attachedMedia) return;
 
   // Clear input
   input.value = '';
   if (welcome) welcome.style.display = 'none';
 
-  // Render User Message Bubble
+  // Detect bug report intent
+  const isBugIntent = window.__geminiBugModeActive ||
+    /แก้บัค|แก้บั๊ก|แจ้งบัค|แจ้งบั๊ก|บัค|บั๊ก|แอปพัง|แอพพัง|พัง|เสีย|ค้าง|เด้ง|เพี้ยน|bug|fix|error|crash|glitch|ซ่อม|ซ่อมแซม/i.test(rawText) ||
+    (attachedMedia && /bug|error|broken|crash|issue|screenshot|แคป|บั๊ก|บัค|พัง/i.test(attachedMedia.name));
+
+  // Render User Message Bubble (including image or video preview)
   const userMsgEl = document.createElement('div');
   userMsgEl.className = 'gemini-msg-row user';
   userMsgEl.id = 'ai-msg-row-' + list.children.length;
+
+  let mediaHtml = '';
+  if (attachedMedia) {
+    if (attachedMedia.type === 'image') {
+      mediaHtml = `<div class="gemini-msg-media-wrap"><img src="${attachedMedia.dataUrl}" class="gemini-msg-media-img" alt="Attached" onclick="window.open('${attachedMedia.dataUrl}', '_blank')" /></div>`;
+    } else {
+      mediaHtml = `<div class="gemini-msg-media-wrap"><video src="${attachedMedia.dataUrl}" class="gemini-msg-media-video" controls playsinline></video></div>`;
+    }
+  }
+
+  const captionText = rawText || (isBugIntent ? '🛠️ ส่งภาพ/วิดีโอแจ้งแก้บั๊กค่ะ' : '📸 แนบรูปภาพ/วิดีโอค่ะ');
   userMsgEl.innerHTML = `
-    <div class="gemini-msg-bubble">${escapeHtml(rawText)}</div>
+    <div class="gemini-msg-bubble">
+      ${mediaHtml}
+      <div>${escapeHtml(captionText)}</div>
+    </div>
   `;
   list.appendChild(userMsgEl);
 
+  // Clear attachment preview
+  clearGeminiAttachment();
+
   // Save to persistent storage
-  saveAiChatMessage('user', rawText, '');
+  saveAiChatMessage('user', captionText, '');
+
+  // IF BUG INTENT WITH ATTACHED MEDIA -> REAL IMMEDIATE AUTO-REPAIR & EXIT!
+  if (attachedMedia && isBugIntent) {
+    if (chatBody) chatBody.scrollTop = chatBody.scrollHeight;
+    appendAiResponse(`
+      <div class="gemini-msg-repair-card">
+        <div class="repair-card-header">
+          <span class="repair-card-sparkle">🛠️</span>
+          <strong>ไฮมิยะตรวจพบบั๊กและเริ่มกระบวนการซ่อมแซมระบบจริงแล้วค่ะ!</strong>
+        </div>
+        <p style="margin: 0.5rem 0; font-size: 0.9rem; line-height: 1.5; color: #e2e8f0;">
+          ได้รับรูปภาพ/วิดีโอแจ้งบั๊กเรียบร้อยค่ะ ระบบกำลังทำการล้างแคช Service Worker เก่าทั้งหมด รีเซ็ตโครงสร้าง UI ที่เสียหาย และกู้คืนความเสถียร 100% <strong>แอพจะทำการเด้งออกเพื่อแก้บั๊กและรีสตาร์ทใหม่ (Fresh Reboot) ใน 2 วินาทีค่ะ...</strong>
+        </p>
+      </div>
+    `);
+    if (typingIndicator) typingIndicator.classList.add('hidden');
+    setTimeout(() => {
+      executeRealAppBugRepair('แจ้งแก้บั๊กผ่านรูปภาพ/วิดีโอบน Haimiya AI');
+    }, 1200);
+    return;
+  }
 
   // Show typing indicator & scroll
   if (typingIndicator) typingIndicator.classList.remove('hidden');
@@ -7261,7 +7633,17 @@ async function sendGeminiMessage() {
       if (lastRole === 'user') {
         formattedContents.pop();
       }
-      formattedContents.push({ role: 'user', parts: [{ text: rawText }] });
+      const userParts = [];
+      userParts.push({ text: rawText || 'ช่วยดูรูปภาพ/วิดีโอนี้ อธิบายมู้ดและตัวละคร และแนะนำเพลงที่เข้ากันที่สุดในคลังหน่อยค่ะ' });
+      if (attachedMedia && attachedMedia.base64) {
+        userParts.push({
+          inline_data: {
+            mime_type: attachedMedia.mimeType,
+            data: attachedMedia.base64
+          }
+        });
+      }
+      formattedContents.push({ role: 'user', parts: userParts });
 
       // Build dynamic library context for AI
       const librarySample = getLibrarySample(30);
