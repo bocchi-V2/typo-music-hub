@@ -155,7 +155,7 @@ const server = http.createServer((req, res) => {
             }
           });
 
-          const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
+          const geminiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.7-flash:generateContent?key=${apiKey}`;
           const urlObj = new URL(geminiUrl);
 
           const geminiReq = https.request({
