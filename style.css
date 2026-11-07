@@ -7988,3 +7988,310 @@ button:focus-visible {
     padding: 1.2rem;
   }
 }
+
+
+/* ============================================================
+   AI MULTIMODAL MEDIA ATTACHMENT & REAL AUTO-REPAIR ENGINE
+   ============================================================ */
+
+/* Media Attachment in Gemini AI */
+.gemini-attach-btn {
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.08);
+  color: #38bdf8;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  margin-right: 8px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+}
+
+.gemini-attach-btn:hover {
+  background: rgba(56, 189, 248, 0.25);
+  border-color: rgba(56, 189, 248, 0.6);
+  transform: scale(1.08);
+}
+
+.gemini-attachment-preview {
+  margin-bottom: 0.6rem;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.gemini-attachment-preview.hidden {
+  display: none !important;
+}
+
+.gemini-preview-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(30, 41, 59, 0.9);
+  border: 1.5px solid rgba(56, 189, 248, 0.4);
+  border-radius: 12px;
+  padding: 6px 10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.gemini-preview-thumb-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.gemini-preview-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gemini-preview-meta {
+  flex: 1;
+  min-width: 0;
+}
+
+.gemini-preview-title {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #f1f5f9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.gemini-preview-sub {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+
+.preview-type-pill {
+  background: rgba(56, 189, 248, 0.2);
+  color: #38bdf8;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.gemini-preview-intent {
+  flex-shrink: 0;
+}
+
+.btn-preview-mode {
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(248, 113, 113, 0.4);
+  background: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.btn-preview-mode:hover,
+.btn-preview-mode.active-bug {
+  background: rgba(239, 68, 68, 0.35);
+  border-color: #ef4444;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.4);
+}
+
+.gemini-preview-del-btn {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 4px;
+  line-height: 1;
+  border-radius: 50%;
+  transition: all 0.15s;
+}
+
+.gemini-preview-del-btn:hover {
+  color: #f87171;
+  transform: scale(1.15);
+}
+
+/* Chat bubble media rendering */
+.gemini-msg-media-wrap {
+  margin-bottom: 6px;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 280px;
+  background: #000;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.gemini-msg-media-img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.gemini-msg-media-img:hover {
+  opacity: 0.9;
+}
+
+.gemini-msg-media-video {
+  width: 100%;
+  max-height: 220px;
+  display: block;
+}
+
+.gemini-msg-repair-card {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(56, 189, 248, 0.15));
+  border: 1.5px solid rgba(239, 68, 68, 0.4);
+  border-radius: 12px;
+  padding: 12px;
+  margin-top: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+.repair-card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fca5a5;
+  font-size: 0.95rem;
+}
+
+/* Real Emergency Repair & Bug Fix Modal HUD */
+.haimiya-repair-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.haimiya-repair-modal.hidden {
+  display: none !important;
+}
+
+.repair-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 15, 30, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.repair-modal-card {
+  position: relative;
+  z-index: 10;
+  background: rgba(15, 23, 42, 0.95);
+  border: 1.5px solid rgba(56, 189, 248, 0.5);
+  border-radius: 20px;
+  padding: 24px 20px;
+  max-width: 440px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.85), 0 0 30px rgba(56, 189, 248, 0.25);
+  animation: scaleUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.repair-icon-pulsing {
+  font-size: 2.8rem;
+  margin-bottom: 8px;
+  display: inline-block;
+  animation: toolPulse 1.2s infinite alternate ease-in-out;
+}
+
+@keyframes toolPulse {
+  from { transform: scale(1) rotate(0deg); }
+  to { transform: scale(1.15) rotate(10deg); }
+}
+
+.repair-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin: 0 0 6px 0;
+}
+
+.repair-subtitle {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  margin: 0 0 18px 0;
+  line-height: 1.4;
+}
+
+.repair-steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  margin-bottom: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.repair-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.84rem;
+  color: #64748b;
+  transition: all 0.2s ease;
+}
+
+.repair-step.active {
+  color: #38bdf8;
+  font-weight: 500;
+}
+
+.repair-step.done {
+  color: #34d399;
+}
+
+.repair-step .step-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.repair-progress-bar-wrap {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.repair-progress-bar-fill {
+  height: 100%;
+  width: 15%;
+  background: linear-gradient(90deg, #38bdf8, #10b981);
+  border-radius: 999px;
+  transition: width 0.35s ease;
+}

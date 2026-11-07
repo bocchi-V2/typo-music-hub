@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=2.20261108.1794071800" />
+  <link rel="stylesheet" href="style.css?v=2.20261108.1794071850" />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
@@ -910,8 +910,15 @@
 
       <!-- Input Footer Bar -->
       <div class="gemini-input-footer">
+        <!-- Media Attachment Preview Container -->
+        <div id="gemini-attachment-preview" class="gemini-attachment-preview hidden"></div>
+
         <div class="gemini-input-bar">
-          <textarea id="gemini-input-text" class="gemini-input-textarea" placeholder="พิมพ์คุยกับไฮมิยะ เช่น 'ขอเพลงเศร้า', 'เพลงฮิต TikTok', 'เพิ่มเพลง APT' หรือวางลิงก์ YouTube..." rows="1" onkeydown="handleGeminiInputKey(event)"></textarea>
+          <input type="file" id="gemini-file-input" accept="image/*,video/*" style="display:none;" onchange="handleGeminiFileSelect(event)" />
+          <button type="button" id="gemini-attach-btn" class="gemini-attach-btn" onclick="document.getElementById('gemini-file-input').click()" title="แนบรูปภาพหรือวิดีโอ (เช่น แคปภาพบั๊ก, อนิเมะ, คลิปตัดต่อ)">
+            📷
+          </button>
+          <textarea id="gemini-input-text" class="gemini-input-textarea" placeholder="พิมพ์คุยกับไฮมิยะ หรือส่งรูปแจ้งแก้บั๊ก/รูปอนิเมะ..." rows="1" onkeydown="handleGeminiInputKey(event)"></textarea>
           <button id="gemini-send-btn" class="gemini-send-btn" onclick="sendGeminiMessage()" title="ส่งข้อความ (Enter)">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="22" y1="2" x2="11" y2="13"></line>
@@ -920,7 +927,7 @@
           </button>
         </div>
         <div class="gemini-disclaimer">
-          Haimiya AI สามารถค้นหาตัวอย่างเสียงและปก HD เพื่อเพิ่มเพลงใหม่ลงคลังกลางสำหรับผู้ใช้ทุกคน
+          รองรับการส่งรูป/วิดีโอแจ้งแก้บั๊ก (ระบบจะล้างแคชและซ่อมแซมให้อัตโนมัติ) และขอเพลงตามรูปอนิเมะ
         </div>
       </div>
     </div>
@@ -973,8 +980,8 @@
   <!-- BOTTOM PLAYER -->
   <div id="bottom-player" class="bottom-player"></div>
 
-<script src="data.js?v=2.20261108.1794071800"></script>
-  <script src="app.js?v=2.20261108.1794071800"></script>
+<script src="data.js?v=2.20261108.1794071850"></script>
+  <script src="app.js?v=2.20261108.1794071850"></script>
 
   <!-- Service Worker Registration & Offline Support -->
   <script>
@@ -1024,6 +1031,40 @@
     pointer-events: none;
   ">
     📡 ออฟไลน์โหมด
+  </div>
+
+
+  <!-- REAL EMERGENCY REPAIR & BUG FIX MODAL -->
+  <div id="haimiya-repair-modal" class="haimiya-repair-modal hidden">
+    <div class="repair-modal-backdrop"></div>
+    <div class="repair-modal-card">
+      <div class="repair-icon-pulsing">🛠️</div>
+      <h3 class="repair-title">ระบบซ่อมแซมและแก้บั๊กอัตโนมัติ</h3>
+      <p class="repair-subtitle">กำลังกู้คืนระบบ ล้างแคชไฟล์ที่เสียหาย และรีสตาร์ทแอปสู่เวอร์ชันล่าสุด 100%</p>
+      
+      <div class="repair-steps-list">
+        <div class="repair-step active" id="repair-step-1">
+          <span class="step-icon">🔍</span>
+          <span class="step-text">วิเคราะห์โครงสร้างข้อผิดพลาดและแคชที่ค้างในระบบ...</span>
+        </div>
+        <div class="repair-step" id="repair-step-2">
+          <span class="step-icon">⏳</span>
+          <span class="step-text">ล้างแคช Service Worker และ Web Cache ทั้งหมดในเบราว์เซอร์...</span>
+        </div>
+        <div class="repair-step" id="repair-step-3">
+          <span class="step-icon">⏳</span>
+          <span class="step-text">รีเซ็ตเลย์เอาต์ คืนค่า DOM และหน่วยความจำสู่มาตรฐาน 100%...</span>
+        </div>
+        <div class="repair-step" id="repair-step-4">
+          <span class="step-icon">⏳</span>
+          <span class="step-text">🚀 เตรียมเด้งออกจากแอปเพื่อรีสตาร์ทใหม่ (Fresh Reboot)...</span>
+        </div>
+      </div>
+
+      <div class="repair-progress-bar-wrap">
+        <div class="repair-progress-bar-fill" id="repair-progress-bar-fill"></div>
+      </div>
+    </div>
   </div>
 
 </body>
