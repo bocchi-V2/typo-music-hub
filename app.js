@@ -2426,6 +2426,112 @@ function updateAudioUI(isPlaying) {
 }
 
 // ---- BOTTOM PLAYER WITH VOLUME SLIDER & CONTROLS ----
+
+// ============================================================
+// DRAGGABLE ENGINE FOR BOTTOM PLAYER (ลากย้ายเครื่องเล่นเหมือนแอพลอย)
+// ============================================================
+let _bpDragging = false;
+let _bpDragMoved = false;
+let _bpDragOffset = { x: 0, y: 0 };
+let _bpCustomPos = null; // { x, y }
+
+// โหลดตำแหน่งที่เคยลากไว้ใน Session
+try {
+  const savedPos = localStorage.getItem('haimiya_bp_pos');
+  if (savedPos) _bpCustomPos = JSON.parse(savedPos);
+} catch (e) {}
+
+function initBottomPlayerDraggable() {
+  const player = document.getElementById('bottom-player');
+  if (!player || player._dragInitialized) return;
+  player._dragInitialized = true;
+
+  player.addEventListener('pointerdown', (e) => {
+    // ไม่อนุญาตให้ลากเมื่อกดโดนปุ่ม, ตัวเลื่อนเสียง, ตัวเลื่อนเวลา, หรือลิงก์
+    if (e.target.closest('button, input, a, .bp-progress-bar, .bp-top-progress, .bp-seek-thumb')) {
+      return;
+    }
+
+    _bpDragging = true;
+    _bpDragMoved = false;
+    const rect = player.getBoundingClientRect();
+    _bpDragOffset.x = e.clientX - rect.left;
+    _bpDragOffset.y = e.clientY - rect.top;
+
+    player.classList.add('is-dragging');
+    player.style.transition = 'none';
+    try { player.setPointerCapture(e.pointerId); } catch (err) {}
+  });
+
+  player.addEventListener('pointermove', (e) => {
+    if (!_bpDragging) return;
+    _bpDragMoved = true;
+
+    const x = e.clientX - _bpDragOffset.x;
+    const y = e.clientY - _bpDragOffset.y;
+
+    const w = player.offsetWidth;
+    const h = player.offsetHeight;
+    const maxX = window.innerWidth - w;
+    const maxY = window.innerHeight - h;
+
+    const clampedX = Math.max(4, Math.min(x, maxX - 4));
+    const clampedY = Math.max(4, Math.min(y, maxY - 4));
+
+    player.style.setProperty('left', clampedX + 'px', 'important');
+    player.style.setProperty('top', clampedY + 'px', 'important');
+    player.style.setProperty('bottom', 'auto', 'important');
+    player.style.setProperty('right', 'auto', 'important');
+    player.style.setProperty('transform', 'none', 'important');
+    player.classList.add('is-floating');
+  });
+
+  const onPointerUp = (e) => {
+    if (!_bpDragging) return;
+    _bpDragging = false;
+    player.classList.remove('is-dragging');
+    player.style.transition = '';
+
+    try { player.releasePointerCapture(e.pointerId); } catch (err) {}
+
+    const rect = player.getBoundingClientRect();
+    // ถ้าลากลงไปใกล้ด้านล่างสุด (ระยะห่างน้อยกว่า 45px) ให้กลับไปโหมดตรึงด้านล่างตามเดิม
+    if (window.innerHeight - rect.bottom < 45) {
+      resetBottomPlayerPosition();
+    } else {
+      _bpCustomPos = { x: rect.left, y: rect.top };
+      try {
+        localStorage.setItem('haimiya_bp_pos', JSON.stringify(_bpCustomPos));
+      } catch (err) {}
+    }
+  };
+
+  player.addEventListener('pointerup', onPointerUp);
+  player.addEventListener('pointercancel', onPointerUp);
+}
+
+function resetBottomPlayerPosition(event) {
+  if (event) {
+    if (typeof event.stopPropagation === 'function') event.stopPropagation();
+    if (event.cancelBubble !== undefined) event.cancelBubble = true;
+  }
+  const player = document.getElementById('bottom-player');
+  if (!player) return;
+
+  _bpCustomPos = null;
+  try { localStorage.removeItem('haimiya_bp_pos'); } catch (err) {}
+
+  player.classList.remove('is-floating');
+  player.classList.remove('is-dragging');
+  player.style.removeProperty('left');
+  player.style.removeProperty('top');
+  player.style.removeProperty('bottom');
+  player.style.removeProperty('right');
+  player.style.removeProperty('transform');
+  player.style.transition = 'transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease';
+}
+
+
 function showBottomPlayer(song) {
   let player = document.getElementById('bottom-player');
   if (!player) return;
@@ -2447,6 +2553,12 @@ function showBottomPlayer(song) {
   const closeTooltip = currentAppLang === 'th' ? 'ปิดแถบเครื่องเล่น' : 'Close player';
 
   player.innerHTML = `
+    <!-- Drag Handle Bar for Floating Player (ลากย้ายอิสระเหมือนแอพลอย) -->
+    <div class="bp-drag-handle" id="bp-drag-handle" ondblclick="resetBottomPlayerPosition(event)" title="แตะหรือคลิกค้างเพื่อลากย้ายเครื่องเล่นได้อิสระ (ดับเบิลคลิกเพื่อกลับไปข้างล่าง)">
+      <div class="bp-drag-pill"></div>
+      <span class="bp-drag-label">✨ ลากย้ายเครื่องเล่นได้อิสระ</span>
+      <button class="bp-dock-btn" onclick="resetBottomPlayerPosition(event)" title="ตรึงกลับไปไว้ด้านล่าง">📌 ด้านล่าง</button>
+    </div>
     <!-- Top Thin Progress Line for Mobile & Desktop -->
     <div class="bp-top-progress" onclick="seekAudio(event)" title="เลื่อนช่วงเวลา">
       <div class="bp-top-progress-fill" id="bp-top-progress-fill"></div>
@@ -2524,6 +2636,23 @@ function showBottomPlayer(song) {
 
   player.style.display = 'block';
   document.body.classList.add('has-bottom-player');
+
+  // ตรวจสอบและตรึงตำแหน่งที่ผู้ใช้เคยลากย้ายไว้ (ลอยอิสระเหมือนแอพลอย)
+  if (_bpCustomPos && _bpCustomPos.x !== undefined && _bpCustomPos.y !== undefined) {
+    const maxX = window.innerWidth - (player.offsetWidth || 340);
+    const maxY = window.innerHeight - (player.offsetHeight || 140);
+    const x = Math.max(4, Math.min(_bpCustomPos.x, maxX - 4));
+    const y = Math.max(4, Math.min(_bpCustomPos.y, maxY - 4));
+    player.style.setProperty('left', x + 'px', 'important');
+    player.style.setProperty('top', y + 'px', 'important');
+    player.style.setProperty('bottom', 'auto', 'important');
+    player.style.setProperty('right', 'auto', 'important');
+    player.style.setProperty('transform', 'none', 'important');
+    player.classList.add('is-floating');
+  }
+
+  // เรียกใช้ระบบลากย้ายอิสระ
+  initBottomPlayerDraggable();
   requestAnimationFrame(() => {
     player.classList.add('visible');
   });
