@@ -8078,3 +8078,194 @@ button:focus-visible {
   cursor: grabbing !important;
   transition: none !important;
 }
+
+
+/* ============================================================
+   COLLAPSIBLE & RESIZABLE BOTTOM PLAYER (ย่อ-ขยาย และปรับขนาดได้)
+   ============================================================ */
+.bp-collapse-toggle-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #cbd5e1;
+  font-size: 0.68rem;
+  padding: 2px 8px;
+  border-radius: 999px;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 3px;
+  font-weight: 600;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.bp-collapse-toggle-btn:hover {
+  background: rgba(56, 189, 248, 0.25);
+  color: #38bdf8;
+  border-color: rgba(56, 189, 248, 0.5);
+  transform: scale(1.05);
+}
+
+.bp-minimize-btn {
+  width: 28px !important;
+  height: 28px !important;
+  min-width: 28px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #94a3b8 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 0.95rem !important;
+  cursor: pointer !important;
+  transition: all 0.2s !important;
+  padding: 0 !important;
+  margin-right: 4px !important;
+}
+
+.bp-minimize-btn:hover {
+  background: rgba(56, 189, 248, 0.25) !important;
+  color: #38bdf8 !important;
+  border-color: rgba(56, 189, 248, 0.6) !important;
+  transform: scale(1.1) !important;
+}
+
+.bp-resize-handle {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 22px;
+  height: 22px;
+  cursor: nwse-resize;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 4px;
+  opacity: 0.4;
+  transition: opacity 0.2s, transform 0.2s;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: 40;
+}
+
+.bp-resize-handle::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-right: 2.5px solid rgba(56, 189, 248, 0.85);
+  border-bottom: 2.5px solid rgba(56, 189, 248, 0.85);
+  border-radius: 1px;
+}
+
+.bp-resize-handle:hover,
+.bottom-player.is-resizing .bp-resize-handle {
+  opacity: 1 !important;
+  transform: scale(1.25);
+}
+
+.bottom-player.is-resizing {
+  transition: none !important;
+  user-select: none !important;
+}
+
+/* โหมดกล่องย่อขนาดเล็ก (Compact Mini Bar Capsule) */
+.bottom-player.is-collapsed {
+  padding: 4px 12px 6px 12px !important;
+  width: auto !important;
+  min-width: 250px !important;
+  max-width: 380px !important;
+  border-radius: 999px !important;
+  border: 1.5px solid rgba(56, 189, 248, 0.6) !important;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.85), 0 0 25px rgba(56, 189, 248, 0.35) !important;
+  height: auto !important;
+}
+
+.bottom-player.is-collapsed .bp-drag-handle {
+  padding: 2px 0 2px 0 !important;
+  margin-bottom: 2px !important;
+  border-bottom: none !important;
+}
+
+.bottom-player.is-collapsed .bp-drag-label {
+  display: none !important;
+}
+
+.bottom-player.is-collapsed .bp-dock-btn {
+  display: none !important;
+}
+
+.bottom-player.is-collapsed .bp-actions {
+  display: none !important;
+}
+
+.bottom-player.is-collapsed .bp-volume-panel {
+  display: none !important;
+}
+
+.bottom-player.is-collapsed .bp-controls-row .bp-skip-btn,
+.bottom-player.is-collapsed .bp-controls-row .bp-loop-btn {
+  display: none !important;
+}
+
+.bottom-player.is-collapsed .bp-progress-wrap {
+  display: none !important;
+}
+
+.bottom-player.is-collapsed .bp-inner {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 8px !important;
+}
+
+.bottom-player.is-collapsed .bp-track {
+  max-width: 160px !important;
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+}
+
+.bottom-player.is-collapsed .bp-cover {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 6px !important;
+}
+
+.bottom-player.is-collapsed .bp-title {
+  font-size: 0.78rem !important;
+  max-width: 120px !important;
+}
+
+.bottom-player.is-collapsed .bp-artist {
+  display: none !important;
+}
+
+.bottom-player.is-collapsed .bp-controls {
+  flex: 0 0 auto !important;
+  margin: 0 !important;
+}
+
+.bottom-player.is-collapsed .bp-controls-row {
+  margin: 0 !important;
+  gap: 4px !important;
+}
+
+.bottom-player.is-collapsed .bp-play-btn {
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px !important;
+}
+
+.bottom-player.is-collapsed .bp-actions-panel {
+  flex: 0 0 auto !important;
+  margin: 0 !important;
+  gap: 3px !important;
+}
+
+.bottom-player.is-collapsed .bp-resize-handle {
+  display: none !important;
+}

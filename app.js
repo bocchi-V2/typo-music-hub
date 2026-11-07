@@ -2532,6 +2532,110 @@ function resetBottomPlayerPosition(event) {
 }
 
 
+
+// ============================================================
+// COLLAPSE & RESIZE ENGINE FOR BOTTOM PLAYER
+// ============================================================
+let _bpCollapsed = false;
+let _bpResizing = false;
+let _bpResizeStart = { x: 0, y: 0, w: 0, h: 0 };
+let _bpCustomSize = null; // { w, h }
+
+try {
+  const savedSize = localStorage.getItem('haimiya_bp_size');
+  if (savedSize) _bpCustomSize = JSON.parse(savedSize);
+} catch (e) {}
+
+function toggleBottomPlayerCollapse(event) {
+  if (event) {
+    if (typeof event.stopPropagation === 'function') event.stopPropagation();
+    if (event.cancelBubble !== undefined) event.cancelBubble = true;
+  }
+  const player = document.getElementById('bottom-player');
+  if (!player) return;
+
+  _bpCollapsed = !_bpCollapsed;
+
+  if (_bpCollapsed) {
+    player.classList.add('is-collapsed');
+    const icon = document.getElementById('bp-collapse-icon');
+    if (icon) icon.textContent = '🔼';
+    const btn = document.getElementById('bp-collapse-toggle-btn');
+    if (btn) btn.innerHTML = '<span id="bp-collapse-icon">🔼</span> ขยาย';
+    const minBtn = player.querySelector('.bp-minimize-btn');
+    if (minBtn) {
+      minBtn.innerHTML = '🗖';
+      minBtn.title = 'ขยายขนาดเครื่องเล่นเต็ม';
+    }
+  } else {
+    player.classList.remove('is-collapsed');
+    const icon = document.getElementById('bp-collapse-icon');
+    if (icon) icon.textContent = '🔽';
+    const btn = document.getElementById('bp-collapse-toggle-btn');
+    if (btn) btn.innerHTML = '<span id="bp-collapse-icon">🔽</span> ย่อ';
+    const minBtn = player.querySelector('.bp-minimize-btn');
+    if (minBtn) {
+      minBtn.innerHTML = '🗕';
+      minBtn.title = 'ย่อขนาดเครื่องเล่น (Mini Bar)';
+    }
+  }
+}
+
+function initBottomPlayerResizable() {
+  const player = document.getElementById('bottom-player');
+  const handle = document.getElementById('bp-resize-handle');
+  if (!player || !handle || handle._resizeInitialized) return;
+  handle._resizeInitialized = true;
+
+  handle.addEventListener('pointerdown', (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+
+    _bpResizing = true;
+    const rect = player.getBoundingClientRect();
+    _bpResizeStart = {
+      x: e.clientX,
+      y: e.clientY,
+      w: rect.width,
+      h: rect.height
+    };
+
+    player.classList.add('is-resizing');
+    try { handle.setPointerCapture(e.pointerId); } catch (err) {}
+  });
+
+  handle.addEventListener('pointermove', (e) => {
+    if (!_bpResizing) return;
+    const deltaX = e.clientX - _bpResizeStart.x;
+    const deltaY = e.clientY - _bpResizeStart.y;
+
+    const newW = Math.max(260, Math.min(window.innerWidth - 16, _bpResizeStart.w + deltaX));
+    const newH = Math.max(54, Math.min(window.innerHeight - 24, _bpResizeStart.h + deltaY));
+
+    player.style.setProperty('width', newW + 'px', 'important');
+    player.style.setProperty('max-width', '98vw', 'important');
+    player.style.setProperty('height', newH + 'px', 'important');
+
+    _bpCustomSize = { w: newW, h: newH };
+  });
+
+  const onPointerUp = (e) => {
+    if (!_bpResizing) return;
+    _bpResizing = false;
+    player.classList.remove('is-resizing');
+    try { handle.releasePointerCapture(e.pointerId); } catch (err) {}
+    if (_bpCustomSize) {
+      try {
+        localStorage.setItem('haimiya_bp_size', JSON.stringify(_bpCustomSize));
+      } catch (err) {}
+    }
+  };
+
+  handle.addEventListener('pointerup', onPointerUp);
+  handle.addEventListener('pointercancel', onPointerUp);
+}
+
+
 function showBottomPlayer(song) {
   let player = document.getElementById('bottom-player');
   if (!player) return;
@@ -2629,9 +2733,12 @@ function showBottomPlayer(song) {
           <span class="bp-vol-percent" id="bp-vol-percent">${percent}%</span>
         </div>
 
+        <button class="bp-minimize-btn" onclick="toggleBottomPlayerCollapse(event)" title="ย่อขนาดเครื่องเล่น (Mini Bar)">🗕</button>
         <button class="bp-close-btn" onclick="hideBottomPlayer()" title="${closeTooltip}">✕</button>
       </div>
     </div>
+    <!-- Corner Resize Handle (ปรับขนาดย่อขยายเครื่องเล่นได้อิสระ) -->
+    <div class="bp-resize-handle" id="bp-resize-handle" title="แตะหรือคลิกค้างเพื่อปรับขนาดย่อ-ขยายเครื่องเล่น"></div>
   `;
 
   player.style.display = 'block';
@@ -2653,6 +2760,23 @@ function showBottomPlayer(song) {
 
   // เรียกใช้ระบบลากย้ายอิสระ
   initBottomPlayerDraggable();
+  initBottomPlayerResizable();
+
+  // ตรวจสอบและตรึงขนาดที่เคยปรับย่อ-ขยายไว้
+  if (_bpCustomSize && _bpCustomSize.w && !_bpCollapsed) {
+    const clampedW = Math.min(window.innerWidth - 16, _bpCustomSize.w);
+    player.style.setProperty('width', clampedW + 'px', 'important');
+    player.style.setProperty('max-width', '98vw', 'important');
+    if (_bpCustomSize.h) {
+      const clampedH = Math.min(window.innerHeight - 24, _bpCustomSize.h);
+      player.style.setProperty('height', clampedH + 'px', 'important');
+    }
+  }
+
+  // ซิงค์สถานะย่อ/ขยาย
+  if (_bpCollapsed) {
+    player.classList.add('is-collapsed');
+  }
   requestAnimationFrame(() => {
     player.classList.add('visible');
   });
