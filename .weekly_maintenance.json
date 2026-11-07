@@ -1,14 +1,24 @@
 {
-  "lastRun": 1793478236027,
-  "cycle": 9,
+  "lastRun": 1794083990023,
+  "cycle": 10,
   "fixes": [
-    "CSS: 510 !important overrides",
-    "Stats updated: 22911 songs, 1036 anime",
-    "Weekly Accent rotated: Sunset Gold",
-    "UI Badge updated: Theme Sunset Gold, Cache v5",
-    "Manifest version: 2.0.20261031"
+    "CSS: 1008 !important overrides",
+    "Weekly Accent rotated: Cyber Cyan",
+    "UI Badge updated: Theme Cyber Cyan, Cache v5",
+    "Manifest version: 2.0.20261107"
   ],
   "history": [
+    {
+      "date": "2026-11-07T20:39:50.023Z",
+      "cycle": 10,
+      "fixes": [
+        "CSS: 1008 !important overrides",
+        "Weekly Accent rotated: Cyber Cyan",
+        "UI Badge updated: Theme Cyber Cyan, Cache v5",
+        "Manifest version: 2.0.20261107"
+      ],
+      "changes": 3
+    },
     {
       "date": "2026-10-31T20:23:56.027Z",
       "cycle": 9,
@@ -118,6 +128,6 @@
       "changes": 4
     }
   ],
-  "lastRunDate": "2026-10-31T20:23:56.027Z",
-  "totalChanges": 4
+  "lastRunDate": "2026-11-07T20:39:50.023Z",
+  "totalChanges": 3
 }
