@@ -1,4 +1,4 @@
-const CACHE_NAME = 'haimiya-typo-2.20261107.1794070753743';
+const CACHE_NAME = 'haimiya-typo-2.20261108.1794071432101';
 const AUDIO_CACHE_NAME = 'haimiya-audio-vault';
 
 // ไฟล์ที่ต้องแคชเพื่อให้แอพทำงานแบบ offline ได้ 100%

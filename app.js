@@ -2581,58 +2581,160 @@ function toggleBottomPlayerCollapse(event) {
   }
 }
 
+
 function initBottomPlayerResizable() {
   const player = document.getElementById('bottom-player');
-  const handle = document.getElementById('bp-resize-handle');
-  if (!player || !handle || handle._resizeInitialized) return;
-  handle._resizeInitialized = true;
+  if (!player || player._resizeInitialized) return;
+  player._resizeInitialized = true;
 
-  handle.addEventListener('pointerdown', (e) => {
-    e.stopPropagation();
-    e.preventDefault();
+  const handleRight = document.getElementById('bp-resize-right') || document.getElementById('bp-resize-handle');
+  const handleLeft = document.getElementById('bp-resize-left');
 
-    _bpResizing = true;
-    const rect = player.getBoundingClientRect();
-    _bpResizeStart = {
-      x: e.clientX,
-      y: e.clientY,
-      w: rect.width,
-      h: rect.height
+  function bindCornerResize(handleEl, isLeft) {
+    if (!handleEl) return;
+    handleEl.addEventListener('pointerdown', (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+
+      _bpResizing = true;
+      const rect = player.getBoundingClientRect();
+      _bpResizeStart = {
+        x: e.clientX,
+        y: e.clientY,
+        w: rect.width,
+        h: rect.height,
+        left: rect.left,
+        top: rect.top,
+        isLeft: isLeft
+      };
+
+      player.classList.add('is-resizing');
+      player.style.transition = 'none';
+      try { handleEl.setPointerCapture(e.pointerId); } catch (err) {}
+    });
+
+    handleEl.addEventListener('pointermove', (e) => {
+      if (!_bpResizing) return;
+      const deltaX = e.clientX - _bpResizeStart.x;
+      const deltaY = e.clientY - _bpResizeStart.y;
+
+      let newW = _bpResizeStart.isLeft ? (_bpResizeStart.w - deltaX) : (_bpResizeStart.w + deltaX);
+      let newH = _bpResizeStart.h + deltaY;
+
+      newW = Math.max(240, Math.min(window.innerWidth - 12, newW));
+      newH = Math.max(50, Math.min(window.innerHeight - 20, newH));
+
+      player.style.setProperty('width', newW + 'px', 'important');
+      player.style.setProperty('max-width', '98vw', 'important');
+      player.style.setProperty('height', newH + 'px', 'important');
+
+      // ถ้าลากมุมซ้าย เลื่อนตำแหน่ง left ตามด้วย
+      if (_bpResizeStart.isLeft) {
+        const newLeft = Math.max(6, _bpResizeStart.left + deltaX);
+        player.style.setProperty('left', newLeft + 'px', 'important');
+      }
+
+      _bpCustomSize = { w: newW, h: newH };
+    });
+
+    const onPointerUp = (e) => {
+      if (!_bpResizing) return;
+      _bpResizing = false;
+      player.classList.remove('is-resizing');
+      player.style.transition = '';
+      try { handleEl.releasePointerCapture(e.pointerId); } catch (err) {}
+      if (_bpCustomSize) {
+        try { localStorage.setItem('haimiya_bp_size', JSON.stringify(_bpCustomSize)); } catch (err) {}
+      }
     };
 
-    player.classList.add('is-resizing');
-    try { handle.setPointerCapture(e.pointerId); } catch (err) {}
-  });
+    handleEl.addEventListener('pointerup', onPointerUp);
+    handleEl.addEventListener('pointercancel', onPointerUp);
+  }
 
-  handle.addEventListener('pointermove', (e) => {
-    if (!_bpResizing) return;
-    const deltaX = e.clientX - _bpResizeStart.x;
-    const deltaY = e.clientY - _bpResizeStart.y;
+  bindCornerResize(handleRight, false);
+  bindCornerResize(handleLeft, true);
 
-    const newW = Math.max(260, Math.min(window.innerWidth - 16, _bpResizeStart.w + deltaX));
-    const newH = Math.max(54, Math.min(window.innerHeight - 24, _bpResizeStart.h + deltaY));
+  // ============================================
+  // PINCH-TO-ZOOM RESIZE (2 นิ้วซูมเข้า-ซูมออก เพื่อปรับขนาดได้จากตรงไหนก็ได้)
+  // ============================================
+  let _pinchStartDist = 0;
+  let _pinchStartW = 0;
+  let _pinchStartH = 0;
+  let _isPinching = false;
 
-    player.style.setProperty('width', newW + 'px', 'important');
-    player.style.setProperty('max-width', '98vw', 'important');
-    player.style.setProperty('height', newH + 'px', 'important');
+  player.addEventListener('touchstart', (e) => {
+    if (e.touches.length === 2) {
+      _isPinching = true;
+      _pinchStartDist = Math.hypot(
+        e.touches[0].clientX - e.touches[1].clientX,
+        e.touches[0].clientY - e.touches[1].clientY
+      );
+      const rect = player.getBoundingClientRect();
+      _pinchStartW = rect.width;
+      _pinchStartH = rect.height;
+      player.classList.add('is-resizing');
+      player.style.transition = 'none';
+    }
+  }, { passive: true });
 
-    _bpCustomSize = { w: newW, h: newH };
-  });
+  player.addEventListener('touchmove', (e) => {
+    if (_isPinching && e.touches.length === 2) {
+      const curDist = Math.hypot(
+        e.touches[0].clientX - e.touches[1].clientX,
+        e.touches[0].clientY - e.touches[1].clientY
+      );
+      const ratio = curDist / (_pinchStartDist || 1);
 
-  const onPointerUp = (e) => {
-    if (!_bpResizing) return;
-    _bpResizing = false;
-    player.classList.remove('is-resizing');
-    try { handle.releasePointerCapture(e.pointerId); } catch (err) {}
-    if (_bpCustomSize) {
-      try {
-        localStorage.setItem('haimiya_bp_size', JSON.stringify(_bpCustomSize));
-      } catch (err) {}
+      // ถ้าหนีบนิ้วหดลงมาเล็กมาก (ratio < 0.62) -> ย่อเป็นมินิบาร์ทันที
+      if (ratio < 0.62 && !_bpCollapsed) {
+        toggleBottomPlayerCollapse();
+        _isPinching = false;
+        return;
+      } else if (ratio > 1.35 && _bpCollapsed) {
+        toggleBottomPlayerCollapse();
+        _isPinching = false;
+        return;
+      }
+
+      const newW = Math.max(240, Math.min(window.innerWidth - 12, _pinchStartW * ratio));
+      const newH = Math.max(50, Math.min(window.innerHeight - 20, _pinchStartH * ratio));
+
+      player.style.setProperty('width', newW + 'px', 'important');
+      player.style.setProperty('max-width', '98vw', 'important');
+      player.style.setProperty('height', newH + 'px', 'important');
+      _bpCustomSize = { w: newW, h: newH };
+    }
+  }, { passive: true });
+
+  const onTouchEnd = (e) => {
+    if (_isPinching && e.touches.length < 2) {
+      _isPinching = false;
+      player.classList.remove('is-resizing');
+      player.style.transition = '';
+      if (_bpCustomSize) {
+        try { localStorage.setItem('haimiya_bp_size', JSON.stringify(_bpCustomSize)); } catch (err) {}
+      }
     }
   };
 
-  handle.addEventListener('pointerup', onPointerUp);
-  handle.addEventListener('pointercancel', onPointerUp);
+  player.addEventListener('touchend', onTouchEnd, { passive: true });
+  player.addEventListener('touchcancel', onTouchEnd, { passive: true });
+
+  // ============================================
+  // DOUBLE-TAP TO COLLAPSE/RESTORE ON MOBILE
+  // ============================================
+  let _lastTapTime = 0;
+  player.addEventListener('touchend', (e) => {
+    if (e.target.closest('button, input, a, .bp-progress-bar, .bp-seek-thumb')) return;
+    const now = Date.now();
+    if (now - _lastTapTime < 280) {
+      toggleBottomPlayerCollapse(e);
+      _lastTapTime = 0;
+    } else {
+      _lastTapTime = now;
+    }
+  }, { passive: true });
 }
 
 
@@ -2738,7 +2840,9 @@ function showBottomPlayer(song) {
       </div>
     </div>
     <!-- Corner Resize Handle (ปรับขนาดย่อขยายเครื่องเล่นได้อิสระ) -->
-    <div class="bp-resize-handle" id="bp-resize-handle" title="แตะหรือคลิกค้างเพื่อปรับขนาดย่อ-ขยายเครื่องเล่น"></div>
+    <!-- Dual Bottom Corner Resize Handles (ลากปรับขนาดได้จาก 2 ด้านล่าง) -->
+    <div class="bp-resize-handle bp-resize-left" id="bp-resize-left" title="ลากเพื่อปรับขนาด"></div>
+    <div class="bp-resize-handle bp-resize-right" id="bp-resize-right" title="ลากเพื่อปรับขนาด"></div>
   `;
 
   player.style.display = 'block';
