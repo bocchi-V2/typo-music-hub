@@ -2426,318 +2426,6 @@ function updateAudioUI(isPlaying) {
 }
 
 // ---- BOTTOM PLAYER WITH VOLUME SLIDER & CONTROLS ----
-
-// ============================================================
-// DRAGGABLE ENGINE FOR BOTTOM PLAYER (ลากย้ายเครื่องเล่นเหมือนแอพลอย)
-// ============================================================
-let _bpDragging = false;
-let _bpDragMoved = false;
-let _bpDragOffset = { x: 0, y: 0 };
-let _bpCustomPos = null; // { x, y }
-
-// โหลดตำแหน่งที่เคยลากไว้ใน Session
-try {
-  const savedPos = localStorage.getItem('haimiya_bp_pos');
-  if (savedPos) _bpCustomPos = JSON.parse(savedPos);
-} catch (e) {}
-
-function initBottomPlayerDraggable() {
-  const player = document.getElementById('bottom-player');
-  if (!player || player._dragInitialized) return;
-  player._dragInitialized = true;
-
-  player.addEventListener('pointerdown', (e) => {
-    // ไม่อนุญาตให้ลากเมื่อกดโดนปุ่ม, ตัวเลื่อนเสียง, ตัวเลื่อนเวลา, หรือลิงก์
-    if (e.target.closest('button, input, a, .bp-progress-bar, .bp-top-progress, .bp-seek-thumb')) {
-      return;
-    }
-
-    _bpDragging = true;
-    _bpDragMoved = false;
-    const rect = player.getBoundingClientRect();
-    _bpDragOffset.x = e.clientX - rect.left;
-    _bpDragOffset.y = e.clientY - rect.top;
-
-    player.classList.add('is-dragging');
-    player.style.transition = 'none';
-    try { player.setPointerCapture(e.pointerId); } catch (err) {}
-  });
-
-  player.addEventListener('pointermove', (e) => {
-    if (!_bpDragging) return;
-    _bpDragMoved = true;
-
-    const x = e.clientX - _bpDragOffset.x;
-    const y = e.clientY - _bpDragOffset.y;
-
-    const w = player.offsetWidth;
-    const h = player.offsetHeight;
-    const maxX = window.innerWidth - w;
-    const maxY = window.innerHeight - h;
-
-    const clampedX = Math.max(4, Math.min(x, maxX - 4));
-    const clampedY = Math.max(4, Math.min(y, maxY - 4));
-
-    player.style.setProperty('left', clampedX + 'px', 'important');
-    player.style.setProperty('top', clampedY + 'px', 'important');
-    player.style.setProperty('bottom', 'auto', 'important');
-    player.style.setProperty('right', 'auto', 'important');
-    player.style.setProperty('transform', 'none', 'important');
-    player.classList.add('is-floating');
-  });
-
-  const onPointerUp = (e) => {
-    if (!_bpDragging) return;
-    _bpDragging = false;
-    player.classList.remove('is-dragging');
-    player.style.transition = '';
-
-    try { player.releasePointerCapture(e.pointerId); } catch (err) {}
-
-    const rect = player.getBoundingClientRect();
-    // ถ้าลากลงไปใกล้ด้านล่างสุด (ระยะห่างน้อยกว่า 45px) ให้กลับไปโหมดตรึงด้านล่างตามเดิม
-    if (window.innerHeight - rect.bottom < 45) {
-      resetBottomPlayerPosition();
-    } else {
-      _bpCustomPos = { x: rect.left, y: rect.top };
-      try {
-        localStorage.setItem('haimiya_bp_pos', JSON.stringify(_bpCustomPos));
-      } catch (err) {}
-    }
-  };
-
-  player.addEventListener('pointerup', onPointerUp);
-  player.addEventListener('pointercancel', onPointerUp);
-}
-
-function resetBottomPlayerPosition(event) {
-  if (event) {
-    if (typeof event.stopPropagation === 'function') event.stopPropagation();
-    if (event.cancelBubble !== undefined) event.cancelBubble = true;
-  }
-  const player = document.getElementById('bottom-player');
-  if (!player) return;
-
-  _bpCustomPos = null;
-  try { localStorage.removeItem('haimiya_bp_pos'); } catch (err) {}
-
-  player.classList.remove('is-floating');
-  player.classList.remove('is-dragging');
-  player.style.removeProperty('left');
-  player.style.removeProperty('top');
-  player.style.removeProperty('bottom');
-  player.style.removeProperty('right');
-  player.style.removeProperty('transform');
-  player.style.transition = 'transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease';
-}
-
-
-
-// ============================================================
-// COLLAPSE & RESIZE ENGINE FOR BOTTOM PLAYER
-// ============================================================
-let _bpCollapsed = false;
-let _bpResizing = false;
-let _bpResizeStart = { x: 0, y: 0, w: 0, h: 0 };
-let _bpCustomSize = null; // { w, h }
-
-try {
-  const savedSize = localStorage.getItem('haimiya_bp_size');
-  if (savedSize) _bpCustomSize = JSON.parse(savedSize);
-} catch (e) {}
-
-function toggleBottomPlayerCollapse(event) {
-  if (event) {
-    if (typeof event.stopPropagation === 'function') event.stopPropagation();
-    if (event.cancelBubble !== undefined) event.cancelBubble = true;
-  }
-  const player = document.getElementById('bottom-player');
-  if (!player) return;
-
-  _bpCollapsed = !_bpCollapsed;
-
-  if (_bpCollapsed) {
-    player.classList.add('is-collapsed');
-    const icon = document.getElementById('bp-collapse-icon');
-    if (icon) icon.textContent = '🔼';
-    const btn = document.getElementById('bp-collapse-toggle-btn');
-    if (btn) btn.innerHTML = '<span id="bp-collapse-icon">🔼</span> ขยาย';
-    const minBtn = player.querySelector('.bp-minimize-btn');
-    if (minBtn) {
-      minBtn.innerHTML = '🗖';
-      minBtn.title = 'ขยายขนาดเครื่องเล่นเต็ม';
-    }
-  } else {
-    player.classList.remove('is-collapsed');
-    const icon = document.getElementById('bp-collapse-icon');
-    if (icon) icon.textContent = '🔽';
-    const btn = document.getElementById('bp-collapse-toggle-btn');
-    if (btn) btn.innerHTML = '<span id="bp-collapse-icon">🔽</span> ย่อ';
-    const minBtn = player.querySelector('.bp-minimize-btn');
-    if (minBtn) {
-      minBtn.innerHTML = '🗕';
-      minBtn.title = 'ย่อขนาดเครื่องเล่น (Mini Bar)';
-    }
-  }
-}
-
-
-function initBottomPlayerResizable() {
-  const player = document.getElementById('bottom-player');
-  if (!player || player._resizeInitialized) return;
-  player._resizeInitialized = true;
-
-  const handleRight = document.getElementById('bp-resize-right') || document.getElementById('bp-resize-handle');
-  const handleLeft = document.getElementById('bp-resize-left');
-
-  function bindCornerResize(handleEl, isLeft) {
-    if (!handleEl) return;
-    handleEl.addEventListener('pointerdown', (e) => {
-      e.stopPropagation();
-      e.preventDefault();
-
-      _bpResizing = true;
-      const rect = player.getBoundingClientRect();
-      _bpResizeStart = {
-        x: e.clientX,
-        y: e.clientY,
-        w: rect.width,
-        h: rect.height,
-        left: rect.left,
-        top: rect.top,
-        isLeft: isLeft
-      };
-
-      player.classList.add('is-resizing');
-      player.style.transition = 'none';
-      try { handleEl.setPointerCapture(e.pointerId); } catch (err) {}
-    });
-
-    handleEl.addEventListener('pointermove', (e) => {
-      if (!_bpResizing) return;
-      const deltaX = e.clientX - _bpResizeStart.x;
-      const deltaY = e.clientY - _bpResizeStart.y;
-
-      let newW = _bpResizeStart.isLeft ? (_bpResizeStart.w - deltaX) : (_bpResizeStart.w + deltaX);
-      let newH = _bpResizeStart.h + deltaY;
-
-      newW = Math.max(240, Math.min(window.innerWidth - 12, newW));
-      newH = Math.max(50, Math.min(window.innerHeight - 20, newH));
-
-      player.style.setProperty('width', newW + 'px', 'important');
-      player.style.setProperty('max-width', '98vw', 'important');
-      player.style.setProperty('height', newH + 'px', 'important');
-
-      // ถ้าลากมุมซ้าย เลื่อนตำแหน่ง left ตามด้วย
-      if (_bpResizeStart.isLeft) {
-        const newLeft = Math.max(6, _bpResizeStart.left + deltaX);
-        player.style.setProperty('left', newLeft + 'px', 'important');
-      }
-
-      _bpCustomSize = { w: newW, h: newH };
-    });
-
-    const onPointerUp = (e) => {
-      if (!_bpResizing) return;
-      _bpResizing = false;
-      player.classList.remove('is-resizing');
-      player.style.transition = '';
-      try { handleEl.releasePointerCapture(e.pointerId); } catch (err) {}
-      if (_bpCustomSize) {
-        try { localStorage.setItem('haimiya_bp_size', JSON.stringify(_bpCustomSize)); } catch (err) {}
-      }
-    };
-
-    handleEl.addEventListener('pointerup', onPointerUp);
-    handleEl.addEventListener('pointercancel', onPointerUp);
-  }
-
-  bindCornerResize(handleRight, false);
-  bindCornerResize(handleLeft, true);
-
-  // ============================================
-  // PINCH-TO-ZOOM RESIZE (2 นิ้วซูมเข้า-ซูมออก เพื่อปรับขนาดได้จากตรงไหนก็ได้)
-  // ============================================
-  let _pinchStartDist = 0;
-  let _pinchStartW = 0;
-  let _pinchStartH = 0;
-  let _isPinching = false;
-
-  player.addEventListener('touchstart', (e) => {
-    if (e.touches.length === 2) {
-      _isPinching = true;
-      _pinchStartDist = Math.hypot(
-        e.touches[0].clientX - e.touches[1].clientX,
-        e.touches[0].clientY - e.touches[1].clientY
-      );
-      const rect = player.getBoundingClientRect();
-      _pinchStartW = rect.width;
-      _pinchStartH = rect.height;
-      player.classList.add('is-resizing');
-      player.style.transition = 'none';
-    }
-  }, { passive: true });
-
-  player.addEventListener('touchmove', (e) => {
-    if (_isPinching && e.touches.length === 2) {
-      const curDist = Math.hypot(
-        e.touches[0].clientX - e.touches[1].clientX,
-        e.touches[0].clientY - e.touches[1].clientY
-      );
-      const ratio = curDist / (_pinchStartDist || 1);
-
-      // ถ้าหนีบนิ้วหดลงมาเล็กมาก (ratio < 0.62) -> ย่อเป็นมินิบาร์ทันที
-      if (ratio < 0.62 && !_bpCollapsed) {
-        toggleBottomPlayerCollapse();
-        _isPinching = false;
-        return;
-      } else if (ratio > 1.35 && _bpCollapsed) {
-        toggleBottomPlayerCollapse();
-        _isPinching = false;
-        return;
-      }
-
-      const newW = Math.max(240, Math.min(window.innerWidth - 12, _pinchStartW * ratio));
-      const newH = Math.max(50, Math.min(window.innerHeight - 20, _pinchStartH * ratio));
-
-      player.style.setProperty('width', newW + 'px', 'important');
-      player.style.setProperty('max-width', '98vw', 'important');
-      player.style.setProperty('height', newH + 'px', 'important');
-      _bpCustomSize = { w: newW, h: newH };
-    }
-  }, { passive: true });
-
-  const onTouchEnd = (e) => {
-    if (_isPinching && e.touches.length < 2) {
-      _isPinching = false;
-      player.classList.remove('is-resizing');
-      player.style.transition = '';
-      if (_bpCustomSize) {
-        try { localStorage.setItem('haimiya_bp_size', JSON.stringify(_bpCustomSize)); } catch (err) {}
-      }
-    }
-  };
-
-  player.addEventListener('touchend', onTouchEnd, { passive: true });
-  player.addEventListener('touchcancel', onTouchEnd, { passive: true });
-
-  // ============================================
-  // DOUBLE-TAP TO COLLAPSE/RESTORE ON MOBILE
-  // ============================================
-  let _lastTapTime = 0;
-  player.addEventListener('touchend', (e) => {
-    if (e.target.closest('button, input, a, .bp-progress-bar, .bp-seek-thumb')) return;
-    const now = Date.now();
-    if (now - _lastTapTime < 280) {
-      toggleBottomPlayerCollapse(e);
-      _lastTapTime = 0;
-    } else {
-      _lastTapTime = now;
-    }
-  }, { passive: true });
-}
-
-
 function showBottomPlayer(song) {
   let player = document.getElementById('bottom-player');
   if (!player) return;
@@ -2759,12 +2447,6 @@ function showBottomPlayer(song) {
   const closeTooltip = currentAppLang === 'th' ? 'ปิดแถบเครื่องเล่น' : 'Close player';
 
   player.innerHTML = `
-    <!-- Drag Handle Bar for Floating Player (ลากย้ายอิสระเหมือนแอพลอย) -->
-    <div class="bp-drag-handle" id="bp-drag-handle" ondblclick="resetBottomPlayerPosition(event)" title="แตะหรือคลิกค้างเพื่อลากย้ายเครื่องเล่นได้อิสระ (ดับเบิลคลิกเพื่อกลับไปข้างล่าง)">
-      <div class="bp-drag-pill"></div>
-      <span class="bp-drag-label">✨ ลากย้ายเครื่องเล่นได้อิสระ</span>
-      <button class="bp-dock-btn" onclick="resetBottomPlayerPosition(event)" title="ตรึงกลับไปไว้ด้านล่าง">📌 ด้านล่าง</button>
-    </div>
     <!-- Top Thin Progress Line for Mobile & Desktop -->
     <div class="bp-top-progress" onclick="seekAudio(event)" title="เลื่อนช่วงเวลา">
       <div class="bp-top-progress-fill" id="bp-top-progress-fill"></div>
@@ -2835,52 +2517,13 @@ function showBottomPlayer(song) {
           <span class="bp-vol-percent" id="bp-vol-percent">${percent}%</span>
         </div>
 
-        <button class="bp-minimize-btn" onclick="toggleBottomPlayerCollapse(event)" title="ย่อขนาดเครื่องเล่น (Mini Bar)">🗕</button>
         <button class="bp-close-btn" onclick="hideBottomPlayer()" title="${closeTooltip}">✕</button>
       </div>
     </div>
-    <!-- Corner Resize Handle (ปรับขนาดย่อขยายเครื่องเล่นได้อิสระ) -->
-    <!-- Dual Bottom Corner Resize Handles (ลากปรับขนาดได้จาก 2 ด้านล่าง) -->
-    <div class="bp-resize-handle bp-resize-left" id="bp-resize-left" title="ลากเพื่อปรับขนาด"></div>
-    <div class="bp-resize-handle bp-resize-right" id="bp-resize-right" title="ลากเพื่อปรับขนาด"></div>
   `;
 
   player.style.display = 'block';
   document.body.classList.add('has-bottom-player');
-
-  // ตรวจสอบและตรึงตำแหน่งที่ผู้ใช้เคยลากย้ายไว้ (ลอยอิสระเหมือนแอพลอย)
-  if (_bpCustomPos && _bpCustomPos.x !== undefined && _bpCustomPos.y !== undefined) {
-    const maxX = window.innerWidth - (player.offsetWidth || 340);
-    const maxY = window.innerHeight - (player.offsetHeight || 140);
-    const x = Math.max(4, Math.min(_bpCustomPos.x, maxX - 4));
-    const y = Math.max(4, Math.min(_bpCustomPos.y, maxY - 4));
-    player.style.setProperty('left', x + 'px', 'important');
-    player.style.setProperty('top', y + 'px', 'important');
-    player.style.setProperty('bottom', 'auto', 'important');
-    player.style.setProperty('right', 'auto', 'important');
-    player.style.setProperty('transform', 'none', 'important');
-    player.classList.add('is-floating');
-  }
-
-  // เรียกใช้ระบบลากย้ายอิสระ
-  initBottomPlayerDraggable();
-  initBottomPlayerResizable();
-
-  // ตรวจสอบและตรึงขนาดที่เคยปรับย่อ-ขยายไว้
-  if (_bpCustomSize && _bpCustomSize.w && !_bpCollapsed) {
-    const clampedW = Math.min(window.innerWidth - 16, _bpCustomSize.w);
-    player.style.setProperty('width', clampedW + 'px', 'important');
-    player.style.setProperty('max-width', '98vw', 'important');
-    if (_bpCustomSize.h) {
-      const clampedH = Math.min(window.innerHeight - 24, _bpCustomSize.h);
-      player.style.setProperty('height', clampedH + 'px', 'important');
-    }
-  }
-
-  // ซิงค์สถานะย่อ/ขยาย
-  if (_bpCollapsed) {
-    player.classList.add('is-collapsed');
-  }
   requestAnimationFrame(() => {
     player.classList.add('visible');
   });
@@ -5823,6 +5466,16 @@ function dismissUpdateBanner() {
 
 // ---- INIT ----
 document.addEventListener('DOMContentLoaded', async () => {
+  // ล้างค่าตกค้างจากการทดสอบแถบเล่นเพลงแบบลาก/ย่อขนาด ให้กลับมาใช้โหมดเดิมมาตรฐาน 100%
+  try {
+    localStorage.removeItem('haimiya_bp_pos');
+    localStorage.removeItem('haimiya_bp_size');
+    const p = document.getElementById('bottom-player');
+    if (p) {
+      p.removeAttribute('style');
+      p.className = 'bottom-player';
+    }
+  } catch (e) {}
   initSplashScreen();
   await loadCachedDatabase();
   ensureSecretFunkElements();
@@ -7586,10 +7239,12 @@ async function sendGeminiMessage() {
     // 1. Direct client-side Google Gemini Flash API call (High-quota, fast models, real library context & roleplay support)
     if (activeApiKey) {
       const modelsToTry = [
-        'gemini-2.5-flash',
+        'gemini-3.7-flash',
         'gemini-3.8-flash',
-        'gemini-3-flash-preview',
-        'gemini-3.5-flash-lite'
+        'gemini-3.5-flash-lite',
+        'gemini-3.1-flash-lite',
+        'gemini-flash-lite-latest',
+        'gemini-flash-latest'
       ];
 
       // Format multi-turn conversation ensuring strict alternation
@@ -7609,32 +7264,39 @@ async function sendGeminiMessage() {
       formattedContents.push({ role: 'user', parts: [{ text: rawText }] });
 
       // Build dynamic library context for AI
-      const librarySample = getLibrarySample(25);
+      const librarySample = getLibrarySample(30);
       const libraryContext = librarySample.length > 0 
         ? '\n\nตัวอย่างเพลงในคลัง Haimiya Typo (' + (typeof SONGS !== 'undefined' ? SONGS.length : 0) + ' เพลง):\n' + librarySample.join('\n')
         : '';
       
       // Search library for songs matching user query to give AI real context
-      const libraryMatches = searchSongsInLibrary(rawText, 5);
+      const libraryMatches = searchSongsInLibrary(rawText, 8);
       const matchContext = libraryMatches.length > 0 
         ? '\n\nเพลงในคลังที่ตรงกับคำค้น "' + rawText.substring(0, 50) + '":\n' + libraryMatches.map(m => '- ' + m.title + ' โดย ' + m.artist + ' [' + m.lang + '] อารมณ์: ' + m.mood).join('\n')
         : '';
 
-      const systemInstructionText = `คุณคือ "ไฮมิยะ" (Haimiya AI) ผู้ช่วย AI อัจฉริยะประจำแอป Haimiya Typo (คลังเพลงตัดคลิปไทโป & อนิเมะ & AMV)
+      const systemInstructionText = `คุณคือ "ไฮมิยะ" (Haimiya AI) ผู้ช่วย AI อัจฉริยะประจำแอป Haimiya Typo (คลังเพลงตัดคลิปไทโป & อนิเมะ & AMV อันดับ 1)
 ห้ามบอกว่าใช้โมเดลอะไรขับเคลื่อน (ห้ามเอ่ยชื่อ Google Gemini, GPT, Claude หรือเทคโนโลยีเบื้องหลังเด็ดขาด) คุณคือ "Haimiya AI" หรือ "ไฮมิยะ AI" เท่านั้น
 
+ความรู้และความเชี่ยวชาญระดับสูง:
+- รู้จักเพลงในคลัง Haimiya Typo กว่า 32,263 เพลง ทุกแนวเพลง (T-Pop, Hiphop, Indie, Rock, เพลงลูกทุ่ง/อีสาน, สากล Inter, Phonk, Speed Up, Funk, J-Pop, Anime OST, Vocaloid, K-Pop, เพลงลาว Lao)
+- เชี่ยวชาญศาสตร์การตัดต่อวิดีโอ Typography, AMV, TikTok, Reels, YouTube Shorts:
+  * การจับจังหวะ Beat Drop, Bass Drop, Hook Cut, Smooth Shake, Zoom Blur, Glitch, RGB Split, Optical Flow Slowmo
+  * สไตล์ Typography: Kinetic Typography, Minimal Glow, Serif Aesthetic, Y2K Grunge, 3D Camera Tracking, Lyrics Sync
+  * การจับคู่อารมณ์เพลง (Mood Matching) ให้เข้ากับตัวละครอนิเมะ ฉากแอ็กชัน หรือฉากรักดราม่า
+- เข้าใจคำสแลง วัยรุ่น ศัพท์ตัดต่อ ศัพท์อนิเมะ และเข้าใจความต้องการของผู้ใช้อย่างรวดเร็วและแม่นยำ
+
 กฎเหล็กเรื่องการตอบ (สำคัญที่สุด!):
-- ตอบสั้นกระชับ ตรงประเด็นเสมอ ไม่เกิน 1-2 ประโยคสั้นๆ พอ! ผู้ใช้ขี้เกียจอ่าน ห้ามพูดพร่ำเพรื่อ ห้ามพูดเยิ่นเย้อเด็ดขาด
+- ตอบสั้นกระชับ คมคาย ได้ใจความเสมอ ไม่เกิน 1-2 ประโยคสั้นๆ พอ! ผู้ใช้เน้นความรวดเร็ว ห้ามพร่ำเพรื่อเด็ดขาด
 - บทบาทสมมติ (Roleplay / สวมบทบาท):
-  * หากผู้ใช้ขอให้เล่นบทบาทสมมติ, สวมบทบาท, Roleplay หรือขอให้เป็นตัวละครใดๆ (เช่น ตัวละครอนิเมะ, แฟน, พี่สาว, ซึนเดเระ, เพื่อน ฯลฯ): ให้ยินดีและสวมบทบาทนั้นอย่างสมจริง สนุกสนาน และโต้ตอบตามบทบาทนั้นทันทีตามใจผู้ใช้ 100%!
-  * หากคุยทั่วไปเกี่ยวกับการใช้งาน: ตอบสั้นกระชับ เป็นผู้ช่วยไฮมิยะน่ารัก เป็นกันเอง มีหางเสียง "ค่ะ/นะคะ" ไม่เกิน 1-2 บรรทัดพอ
-- สุภาพ น่ารัก เป็นกันเอง ใช้หางเสียง "ค่ะ/นะคะ" + อิโมจินิดหน่อย 🌸✨
-- ถ้าคุยทั่วไปหรือทักทาย: ตอบสั้นๆ 1 บรรทัดพอ เช่น "สวัสดีค่ะ! อยากได้เพลงแนวไหนไปตัดคลิปบอกไฮมิยะได้เลยนะคะ 🌸"
-- ถ้าถามเทคนิคตัดต่อ: สรุปหัวใจสำคัญสั้นๆ 1-2 บรรทัดจบ ไม่ต้องสอนเป็นเรียงความ
+  * หากผู้ใช้ขอให้เล่นบทบาทสมมติ สวมบทบาท หรือขอให้เป็นตัวละครใดๆ (เช่น ตัวละครอนิเมะ, แฟน, พี่สาว, ซึนเดเระ, เพื่อน ฯลฯ): ให้สวมบทบาทนั้นอย่างสมจริง มีเสน่ห์ สนุกสนาน 100%!
+  * หากคุยทั่วไปเกี่ยวกับการใช้งาน: ตอบสั้นกระชับ เป็นผู้ช่วยไฮมิยะน่ารัก เป็นกันเอง มีหางเสียง "ค่ะ/นะคะ" + อิโมจิสวยงาม 🌸✨
+- ถ้าคุยทั่วไปหรือทักทาย: ตอบสั้นๆ 1 บรรทัด เช่น "สวัสดีค่ะ! ไฮมิยะพร้อมช่วยหาเพลงและไอเดียตัดคลิปปังๆ ให้แล้วค่ะ บอกแนวเพลงหรืออนิเมะที่อยากตัดได้เลยนะคะ 🌸"
+- ถ้าถามเทคนิคตัดต่อ: สรุปหัวใจ 1-2 ข้อสั้นๆ กระชับและนำไปใช้ใน Alight Motion / CapCut / Premiere Pro / After Effects ได้ทันที
 
 กติกาเมื่อผู้ใช้ขอเพลง / แนะนำเพลง / พูดถึงอารมณ์ / แนวดนตรี / อนิเมะ / ศิลปิน:
-1. ตอบสั้นๆ เพียง 1 บรรทัด
-2. คัดเลือกเพลงจริง 3-5 เพลง
+1. ตอบเกริ่นสั้นๆ เพียง 1 บรรทัด
+2. คัดเลือกเพลงจริงที่ตรงใจและมีคุณภาพ 3-5 เพลง
 3. แนบบล็อก JSON ในแท็ก \`\`\`json [ ... ] \`\`\` ต่อท้ายทันที ดังนี้:
 \`\`\`json
 [
@@ -7642,8 +7304,8 @@ async function sendGeminiMessage() {
     "title": "ชื่อเพลงทางการภาษาเดิม",
     "artist": "ชื่อศิลปินจริง",
     "anime": "ชื่ออนิเมะที่แนะนำให้ตัดคู่กัน",
-    "reason": "เหตุผลสั้นๆ",
-    "typoIdea": "ไอเดียไทโปสั้นๆ",
+    "reason": "เหตุผลสั้นๆ ที่เหมาะกับการตัดต่อ",
+    "typoIdea": "ไอเดียไทโปสั้นๆ (เช่น สไตล์ฟอนต์, เอฟเฟกต์บีท)",
     "mood": "hype",
     "lang": "th"
   }
@@ -7668,8 +7330,8 @@ async function sendGeminiMessage() {
               },
               contents: formattedContents,
               generationConfig: {
-                temperature: 0.88,
-                topP: 0.95,
+                temperature: 0.72,
+                topP: 0.9,
                 maxOutputTokens: 3500
               }
             })

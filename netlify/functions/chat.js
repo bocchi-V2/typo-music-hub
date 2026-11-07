@@ -85,10 +85,12 @@ exports.handler = async (event, context) => {
 
     // Models in priority order: gemini-2.5-flash (stable, high quota), gemini-3.8-flash, gemini-3-flash-preview, gemini-3.5-flash-lite
     const modelsToTry = [
-      'gemini-2.5-flash',
+      'gemini-3.7-flash',
       'gemini-3.8-flash',
-      'gemini-3-flash-preview',
-      'gemini-3.5-flash-lite'
+      'gemini-3.5-flash-lite',
+      'gemini-3.1-flash-lite',
+      'gemini-flash-lite-latest',
+      'gemini-flash-latest'
     ];
     let aiReply = '';
     let usedModel = 'Haimiya AI';
@@ -100,8 +102,8 @@ exports.handler = async (event, context) => {
           system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },
           contents: contents,
           generationConfig: {
-            temperature: 0.88,
-            topP: 0.95,
+            temperature: 0.72,
+            topP: 0.9,
             maxOutputTokens: 3500
           }
         });
