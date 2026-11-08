@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=2.20261108.1794071850" />
+  <link rel="stylesheet" href="style.css?v=2.20261108.19.1794104000" />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
@@ -838,11 +838,13 @@
           </div>
         </div>
         <div class="gemini-header-actions">
-          <button class="gemini-btn-icon btn-history-toggle" id="btn-toggle-ai-history" onclick="toggleAiHistoryDrawer()" title="📜 ดูประวัติการแชท (Chat History)">
-            <span class="history-icon">📜</span>
-            <span class="history-text">ประวัติแชท</span>
+          <button class="gemini-btn-new-chat" id="btn-new-ai-chat" onclick="createNewAiChatSession()" title="สร้างช่องแชทใหม่ (+ New Chat)">
+            ✨ + แชทใหม่
           </button>
-          <button class="gemini-btn-icon" onclick="clearAiChat()" title="ล้างประวัติการสนทนา">🗑️</button>
+          <button class="gemini-btn-icon btn-history-toggle" id="btn-toggle-ai-history" onclick="toggleAiHistoryDrawer()" title="📁 คลังห้องแชท & ประวัติ (Chat Sessions)">
+            <span class="history-icon">📁</span>
+            <span class="history-text">ห้องแชท</span>
+          </button>
           <button class="gemini-close-btn" onclick="closeHaimiyaAI()" title="ปิดโหมด AI">✕</button>
         </div>
       </div>
@@ -851,12 +853,13 @@
       <div id="gemini-history-drawer" class="gemini-history-drawer hidden">
         <div class="gemini-history-header">
           <div class="gemini-history-title">
-            <span>📜 ประวัติการสนทนา</span>
-            <span class="gemini-history-count" id="gemini-history-count-badge">0 ข้อความ</span>
+            <span>📁 คลังห้องแชท & ประวัติ</span>
+            <span class="gemini-history-count" id="gemini-history-count-badge">1 ห้องแชท</span>
           </div>
           <div class="gemini-history-actions">
-            <button class="btn-history-clear" onclick="clearAiChat()" title="ล้างประวัติทั้งหมด">🗑️ ล้างประวัติ</button>
-            <button class="btn-history-close" onclick="toggleAiHistoryDrawer()" title="ปิดหน้าต่างประวัติ">✕</button>
+            <button class="btn-history-new" onclick="createNewAiChatSession()" title="สร้างห้องแชทใหม่">➕ แชทใหม่</button>
+            <button class="btn-history-clear" onclick="clearAllAiSessions()" title="ล้างห้องแชททั้งหมด">🗑️ ล้างทั้งหมด</button>
+            <button class="btn-history-close" onclick="toggleAiHistoryDrawer()" title="ปิดหน้าต่าง">✕</button>
           </div>
         </div>
         <div class="gemini-history-list" id="gemini-history-list">
@@ -980,8 +983,8 @@
   <!-- BOTTOM PLAYER -->
   <div id="bottom-player" class="bottom-player"></div>
 
-<script src="data.js?v=2.20261108.1.1794103137"></script>
-  <script src="app.js?v=2.20261108.1.1794103137"></script>
+  <script src="data.js?v=2.20261108.19.1794104000"></script>
+  <script src="app.js?v=2.20261108.19.1794104000"></script>
 
   <!-- Service Worker Registration & Offline Support -->
   <script>

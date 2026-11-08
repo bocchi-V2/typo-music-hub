@@ -5480,6 +5480,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   await loadCachedDatabase();
   ensureSecretFunkElements();
   setAppLanguage(currentAppLang);
+  initAiChatSessions();
   // ตรวจจับเมื่อผู้ใช้เพิ่งรีสตาร์ทมาจากการแก้บั๊กอัตโนมัติ
   const urlParams = new URLSearchParams(window.location.search);
   if (urlParams.has('repaired') || localStorage.getItem('haimiya_auto_repaired_at')) {
@@ -6126,76 +6127,296 @@ function initDraggableAiBubble() {
   };
 }
 
-// Persistent Chat History
-const AI_CHAT_STORAGE_KEY = 'haimiya_ai_chat_saved_history_v1';
+// ============================================================
+// HAIMIYA AI MULTI-SESSION CHAT STORE (ระบบคลังห้องแชทแยกอิสระ)
+// ============================================================
+const AI_SESSIONS_STORAGE_KEY = 'haimiya_ai_sessions_v2';
+const AI_ACTIVE_SESSION_ID_KEY = 'haimiya_ai_active_session_id';
 
-function saveAiChatMessage(role, text, html) {
+function getAiChatSessions() {
   try {
-    let history = JSON.parse(localStorage.getItem(AI_CHAT_STORAGE_KEY) || '[]');
-    history.push({
-      role: role,
-      text: text || '',
-      html: html || '',
-      time: Date.now()
-    });
-    if (history.length > 50) history = history.slice(-50);
-    localStorage.setItem(AI_CHAT_STORAGE_KEY, JSON.stringify(history));
-  } catch (e) {}
-}
-
-function loadSavedAiChatHistory() {
-  const list = document.getElementById('gemini-messages-list');
-  const welcome = document.getElementById('gemini-welcome-box');
-  if (!list) return;
-
-  try {
-    const raw = localStorage.getItem(AI_CHAT_STORAGE_KEY);
-    if (!raw) return;
-    const history = JSON.parse(raw);
-    if (!Array.isArray(history) || history.length === 0) return;
-
-    list.innerHTML = '';
-    window.__aiChatHistory = [];
-
-    history.forEach((item, idx) => {
-      if (item.role === 'user') {
-        window.__aiChatHistory.push({ role: 'user', text: item.text });
-        const userMsgEl = document.createElement('div');
-        userMsgEl.className = 'gemini-msg-row user';
-        userMsgEl.id = 'ai-msg-row-' + idx;
-        userMsgEl.innerHTML = `<div class="gemini-msg-bubble">${escapeHtml(item.text)}</div>`;
-        list.appendChild(userMsgEl);
-      } else {
-        if (item.text) {
-          window.__aiChatHistory.push({ role: 'model', text: item.text });
-        }
-        const row = document.createElement('div');
-        row.className = 'gemini-msg-row ai';
-        row.id = 'ai-msg-row-' + idx;
-        row.innerHTML = `
-          <div class="gemini-msg-avatar">
-            <img src="haimiya_ai_avatar.jpg" alt="Haimiya AI" onerror="this.src='splash-cover.jpg';" />
-          </div>
-          <div class="gemini-msg-bubble">${(item.html || renderAiMarkdown(item.text)).replace(/✦\s*(?:Google\s*)?Gemini[^<]*/gi, '✦ Haimiya AI').replace(/Google Gemini 3 Flash/gi, 'Haimiya AI')}</div>
-        `;
-        list.appendChild(row);
-      }
-    });
-
-    if (welcome) welcome.style.display = 'none';
-
-    const chatBody = document.getElementById('gemini-chat-body');
-    if (chatBody) {
-      setTimeout(() => {
-        chatBody.scrollTop = chatBody.scrollHeight;
-      }, 60);
+    const raw = localStorage.getItem(AI_SESSIONS_STORAGE_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed) && parsed.length > 0) return parsed;
     }
   } catch (e) {
-    console.warn('loadSavedAiChatHistory error:', e);
+    console.warn('Error reading AI sessions:', e);
+  }
+
+  // Auto-migrate from old flat history if present
+  let initialMessages = [];
+  try {
+    const oldFlat = JSON.parse(localStorage.getItem('haimiya_ai_chat_saved_history_v1') || '[]');
+    if (Array.isArray(oldFlat) && oldFlat.length > 0) {
+      initialMessages = oldFlat;
+    }
+  } catch (e) {}
+
+  const defaultSession = {
+    id: 'sess_' + Date.now(),
+    title: initialMessages.length > 0 ? 'แชทก่อนหน้า' : 'แชทใหม่',
+    createdAt: Date.now(),
+    updatedAt: Date.now(),
+    messages: initialMessages
+  };
+
+  const sessions = [defaultSession];
+  try {
+    localStorage.setItem(AI_SESSIONS_STORAGE_KEY, JSON.stringify(sessions));
+    localStorage.setItem(AI_ACTIVE_SESSION_ID_KEY, defaultSession.id);
+  } catch (e) {}
+  return sessions;
+}
+
+function saveAiChatSessions(sessions) {
+  try {
+    localStorage.setItem(AI_SESSIONS_STORAGE_KEY, JSON.stringify(sessions));
+  } catch (e) {
+    console.warn('saveAiChatSessions error:', e);
   }
 }
 
-// Chat History Drawer Functions
+function getActiveAiSessionId() {
+  let activeId = localStorage.getItem(AI_ACTIVE_SESSION_ID_KEY);
+  const sessions = getAiChatSessions();
+  if (!activeId || !sessions.some(s => s.id === activeId)) {
+    activeId = sessions[0].id;
+    try { localStorage.setItem(AI_ACTIVE_SESSION_ID_KEY, activeId); } catch (e) {}
+  }
+  return activeId;
+}
+
+function getActiveAiSession() {
+  const sessions = getAiChatSessions();
+  const activeId = getActiveAiSessionId();
+  return sessions.find(s => s.id === activeId) || sessions[0];
+}
+
+function initAiChatSessions() {
+  const session = getActiveAiSession();
+  renderActiveSessionMessages(session);
+}
+
+function renderActiveSessionMessages(session) {
+  if (!session) session = getActiveAiSession();
+  const list = document.getElementById('gemini-messages-list');
+  const welcome = document.getElementById('gemini-welcome-box');
+  const chatBody = document.getElementById('gemini-chat-body');
+  const titleEl = document.getElementById('gemini-header-title');
+  if (!list) return;
+
+  if (titleEl) {
+    titleEl.textContent = session.title || 'Haimiya Studio';
+    titleEl.title = session.title || 'Haimiya Studio';
+  }
+
+  list.innerHTML = '';
+  window.__aiChatHistory = [];
+
+  const msgs = Array.isArray(session.messages) ? session.messages : [];
+
+  if (msgs.length === 0) {
+    if (welcome) welcome.style.display = 'block';
+    return;
+  }
+
+  if (welcome) welcome.style.display = 'none';
+
+  msgs.forEach((item, idx) => {
+    if (item.role === 'user') {
+      window.__aiChatHistory.push({ role: 'user', text: item.text });
+      const userMsgEl = document.createElement('div');
+      userMsgEl.className = 'gemini-msg-row user';
+      userMsgEl.id = 'ai-msg-row-' + idx;
+
+      let mediaHtml = '';
+      if (item.media && item.media.dataUrl) {
+        if (item.media.type === 'video') {
+          mediaHtml = '<div class="gemini-msg-media-wrap"><video src="' + item.media.dataUrl + '" class="gemini-msg-media-video" controls playsinline></video></div>';
+        } else {
+          mediaHtml = '<div class="gemini-msg-media-wrap"><img src="' + item.media.dataUrl + '" class="gemini-msg-media-img" alt="Attached" onclick="window.open(\'' + item.media.dataUrl + '\', \'_blank\')" /></div>';
+        }
+      }
+
+      userMsgEl.innerHTML = '<div class="gemini-msg-bubble">' + mediaHtml + '<div>' + escapeHtml(item.text) + '</div></div>';
+      list.appendChild(userMsgEl);
+    } else {
+      if (item.text) {
+        window.__aiChatHistory.push({ role: 'model', text: item.text });
+      }
+      const row = document.createElement('div');
+      row.className = 'gemini-msg-row ai';
+      row.id = 'ai-msg-row-' + idx;
+      row.innerHTML = '<div class="gemini-msg-avatar"><img src="haimiya_ai_avatar.jpg" alt="Haimiya AI" onerror="this.src=\'splash-cover.jpg\';" /></div>' +
+        '<div class="gemini-msg-bubble">' + (item.html || renderAiMarkdown(item.text)).replace(/✦\s*(?:Google\s*)?Gemini[^<]*/gi, '✦ Haimiya AI').replace(/Google Gemini 3 Flash/gi, 'Haimiya AI') + '</div>';
+      list.appendChild(row);
+    }
+  });
+
+  if (chatBody) {
+    setTimeout(() => { chatBody.scrollTop = chatBody.scrollHeight; }, 50);
+  }
+}
+
+function createNewAiChatSession(initialTitle = 'แชทใหม่') {
+  const sessions = getAiChatSessions();
+  const newSess = {
+    id: 'sess_' + Date.now() + '_' + Math.random().toString(36).slice(2, 6),
+    title: initialTitle,
+    createdAt: Date.now(),
+    updatedAt: Date.now(),
+    messages: []
+  };
+
+  sessions.unshift(newSess);
+  saveAiChatSessions(sessions);
+  localStorage.setItem(AI_ACTIVE_SESSION_ID_KEY, newSess.id);
+
+  renderActiveSessionMessages(newSess);
+
+  const drawer = document.getElementById('gemini-history-drawer');
+  if (drawer && !drawer.classList.contains('hidden')) {
+    renderAiHistoryDrawer();
+    drawer.classList.add('hidden');
+  }
+
+  const input = document.getElementById('gemini-input-text');
+  if (input) {
+    input.value = '';
+    input.focus();
+  }
+
+  if (typeof clearGeminiAttachment === 'function') clearGeminiAttachment();
+  if (typeof showToast === 'function') showToast('✨ เปิดช่องแชทใหม่แล้วค่ะ');
+}
+
+function switchAiChatSession(sessionId) {
+  const sessions = getAiChatSessions();
+  const target = sessions.find(s => s.id === sessionId);
+  if (!target) return;
+
+  localStorage.setItem(AI_ACTIVE_SESSION_ID_KEY, target.id);
+  renderActiveSessionMessages(target);
+
+  const drawer = document.getElementById('gemini-history-drawer');
+  if (drawer) drawer.classList.add('hidden');
+
+  if (typeof showToast === 'function') showToast('📂 สลับไปที่ห้องแชทแล้วค่ะ');
+}
+
+function deleteAiChatSession(sessionId, event) {
+  if (event) {
+    event.stopPropagation();
+    event.preventDefault();
+  }
+
+  let sessions = getAiChatSessions();
+  const activeId = getActiveAiSessionId();
+  sessions = sessions.filter(s => s.id !== sessionId);
+
+  if (sessions.length === 0) {
+    const fresh = {
+      id: 'sess_' + Date.now(),
+      title: 'แชทใหม่',
+      createdAt: Date.now(),
+      updatedAt: Date.now(),
+      messages: []
+    };
+    sessions = [fresh];
+  }
+
+  saveAiChatSessions(sessions);
+
+  if (activeId === sessionId) {
+    localStorage.setItem(AI_ACTIVE_SESSION_ID_KEY, sessions[0].id);
+    renderActiveSessionMessages(sessions[0]);
+  }
+
+  renderAiHistoryDrawer();
+  if (typeof showToast === 'function') showToast('🗑️ ลบห้องแชทเรียบร้อยแล้วค่ะ');
+}
+
+function renameAiChatSession(sessionId, event) {
+  if (event) {
+    event.stopPropagation();
+    event.preventDefault();
+  }
+
+  const sessions = getAiChatSessions();
+  const target = sessions.find(s => s.id === sessionId);
+  if (!target) return;
+
+  const newTitle = prompt('ตั้งชื่อห้องแชทใหม่:', target.title);
+  if (newTitle && newTitle.trim()) {
+    target.title = newTitle.trim();
+    target.updatedAt = Date.now();
+    saveAiChatSessions(sessions);
+    renderAiHistoryDrawer();
+    if (sessionId === getActiveAiSessionId()) {
+      const titleEl = document.getElementById('gemini-header-title');
+      if (titleEl) titleEl.textContent = target.title;
+    }
+    if (typeof showToast === 'function') showToast('✏️ เปลี่ยนชื่อห้องแชทแล้วค่ะ');
+  }
+}
+
+function clearAllAiSessions() {
+  if (!confirm('ต้องการล้างห้องแชทและประวัติทั้งหมดใช่หรือไม่?')) return;
+  const fresh = {
+    id: 'sess_' + Date.now(),
+    title: 'แชทใหม่',
+    createdAt: Date.now(),
+    updatedAt: Date.now(),
+    messages: []
+  };
+  saveAiChatSessions([fresh]);
+  localStorage.setItem(AI_ACTIVE_SESSION_ID_KEY, fresh.id);
+  renderActiveSessionMessages(fresh);
+  renderAiHistoryDrawer();
+  if (typeof showToast === 'function') showToast('🗑️ ล้างห้องแชททั้งหมดแล้วค่ะ');
+}
+
+function saveAiChatMessage(role, text, html, media) {
+  try {
+    const sessions = getAiChatSessions();
+    const activeId = getActiveAiSessionId();
+    const session = sessions.find(s => s.id === activeId) || sessions[0];
+
+    if (!session.messages) session.messages = [];
+    session.messages.push({
+      role: role,
+      text: text || '',
+      html: html || '',
+      media: media || null,
+      time: Date.now()
+    });
+
+    if (session.messages.length > 80) {
+      session.messages = session.messages.slice(-80);
+    }
+
+    // Auto-rename session on first user message if still default title
+    if (role === 'user' && (session.title === 'แชทใหม่' || session.title === 'แชทเริ่มต้น')) {
+      if (media && media.type === 'video') {
+        session.title = '🎬 ตรวจหาเพลงจากคลิป';
+      } else if (media && media.type === 'image') {
+        session.title = '📸 วิเคราะห์จากรูปภาพ';
+      } else {
+        const clean = (text || '').replace(/[\r\n]+/g, ' ').trim();
+        session.title = clean.slice(0, 24) + (clean.length > 24 ? '...' : '') || 'การสนทนา';
+      }
+      const titleEl = document.getElementById('gemini-header-title');
+      if (titleEl) titleEl.textContent = session.title;
+    }
+
+    session.updatedAt = Date.now();
+    saveAiChatSessions(sessions);
+  } catch (e) {
+    console.warn('saveAiChatMessage error:', e);
+  }
+}
+
 function toggleAiHistoryDrawer() {
   const drawer = document.getElementById('gemini-history-drawer');
   if (!drawer) return;
@@ -6210,9 +6431,12 @@ function toggleAiHistoryDrawer() {
 function formatHistoryTime(ts) {
   if (!ts) return '';
   const date = new Date(ts);
+  const now = new Date();
+  const isToday = date.toDateString() === now.toDateString();
   const hours = String(date.getHours()).padStart(2, '0');
   const mins = String(date.getMinutes()).padStart(2, '0');
-  return `${hours}:${mins} น.`;
+  if (isToday) return `วันนี้ ${hours}:${mins} น.`;
+  return `${date.getDate()}/${date.getMonth() + 1} ${hours}:${mins} น.`;
 }
 
 function renderAiHistoryDrawer() {
@@ -6220,81 +6444,61 @@ function renderAiHistoryDrawer() {
   const countBadge = document.getElementById('gemini-history-count-badge');
   if (!drawerList) return;
 
-  let history = [];
-  try {
-    history = JSON.parse(localStorage.getItem(AI_CHAT_STORAGE_KEY) || '[]');
-  } catch (e) {}
+  const sessions = getAiChatSessions();
+  const activeId = getActiveAiSessionId();
 
   if (countBadge) {
-    countBadge.textContent = `${history.length} ข้อความ`;
+    countBadge.textContent = `${sessions.length} ห้องแชท`;
   }
 
-  if (!history.length) {
+  if (!sessions.length) {
     drawerList.innerHTML = `
       <div class="gemini-history-empty">
         <span class="empty-icon">🌸</span>
-        <div>ยังไม่มีประวัติการสนทนาในเครื่องค่ะ</div>
-        <div style="font-size: 0.8rem; color: #64748b; margin-top: 4px;">ลองส่งข้อความสั่งเพิ่มเพลง หรือคุยกับไฮมิยะได้เลยนะคะ ✨</div>
+        <div>ยังไม่มีห้องแชทในเครื่องค่ะ</div>
       </div>
     `;
     return;
   }
 
-  let itemsHtml = '';
-  history.slice().reverse().forEach((item, revIdx) => {
-    const originalIdx = history.length - 1 - revIdx;
-    const isUser = item.role === 'user';
-    const icon = isUser ? '👤' : '🌸';
-    const roleLabel = isUser ? 'คุณ' : 'ไฮมิยะ AI';
-    const roleClass = isUser ? 'user' : 'ai';
-    const cleanText = (item.text || '').replace(/\n/g, ' ').trim();
-    const snippet = escapeHtml(cleanText.slice(0, 80)) || (isUser ? 'ข้อความ' : 'คำตอบ/การ์ดเพลง');
-    const timeStr = item.time ? formatHistoryTime(item.time) : '';
+  let html = '';
+  sessions.forEach(sess => {
+    const isActive = sess.id === activeId;
+    const msgCount = Array.isArray(sess.messages) ? sess.messages.length : 0;
+    const timeStr = sess.updatedAt ? formatHistoryTime(sess.updatedAt) : '';
 
-    itemsHtml += `
-      <div class="gemini-history-item" onclick="jumpToAiHistoryMessage(${originalIdx})">
-        <span class="gemini-history-item-icon">${icon}</span>
-        <div class="gemini-history-item-body">
-          <div class="gemini-history-item-top">
-            <span class="gemini-history-item-role ${roleClass}">${roleLabel}</span>
-            <span class="gemini-history-item-time">${timeStr}</span>
+    let icon = '💬';
+    if (sess.messages && sess.messages.some(m => m.media && m.media.type === 'video')) icon = '🎬';
+    else if (sess.messages && sess.messages.some(m => m.media && m.media.type === 'image')) icon = '📸';
+    else if (/เพลง|ดนตรี|music|song/i.test(sess.title)) icon = '🎵';
+
+    html += `
+      <div class="gemini-session-card ${isActive ? 'active-session' : ''}" onclick="switchAiChatSession('${sess.id}')">
+        <div class="gsc-session-icon">${icon}</div>
+        <div class="gsc-session-body">
+          <div class="gsc-session-top">
+            <span class="gsc-session-title">${escapeHtml(sess.title || 'แชทไม่มีชื่อ')}</span>
+            <span class="gsc-session-time">${timeStr}</span>
           </div>
-          <div class="gemini-history-item-text" title="${snippet}">${snippet}</div>
+          <div class="gsc-session-meta">
+            <span class="gsc-session-count">${msgCount} ข้อความ</span>
+            ${isActive ? '<span class="gsc-session-active-pill">● กำลังคุยอยู่</span>' : ''}
+          </div>
+        </div>
+        <div class="gsc-session-actions">
+          <button class="btn-session-action" onclick="renameAiChatSession('${sess.id}', event)" title="เปลี่ยนชื่อห้อง">✏️</button>
+          <button class="btn-session-action btn-delete" onclick="deleteAiChatSession('${sess.id}', event)" title="ลบห้องนี้">🗑️</button>
         </div>
       </div>
     `;
   });
 
-  drawerList.innerHTML = itemsHtml;
-}
-
-function jumpToAiHistoryMessage(idx) {
-  const drawer = document.getElementById('gemini-history-drawer');
-  if (drawer) drawer.classList.add('hidden');
-
-  const list = document.getElementById('gemini-messages-list');
-  if (!list || list.children.length === 0) {
-    loadSavedAiChatHistory();
-  }
-
-  setTimeout(() => {
-    const targetEl = document.getElementById('ai-msg-row-' + idx);
-    if (targetEl) {
-      targetEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      targetEl.style.transition = 'all 0.4s ease';
-      targetEl.style.outline = '2px solid rgba(56, 189, 248, 0.9)';
-      targetEl.style.boxShadow = '0 0 25px rgba(56, 189, 248, 0.6)';
-      targetEl.style.borderRadius = '14px';
-      setTimeout(() => {
-        targetEl.style.outline = '';
-        targetEl.style.boxShadow = '';
-      }, 1800);
-    }
-  }, 60);
+  drawerList.innerHTML = html;
 }
 
 // 2. Open / Close / Toggle AI Modal
 function openHaimiyaAI() {
+  if (typeof initAiChatSessions === "function") initAiChatSessions();
   const modal = document.getElementById('haimiya-ai-modal');
   const bubble = document.getElementById('haimiya-ai-floating-bubble');
   if (!modal) return;
@@ -7101,8 +7305,9 @@ function renderGeminiAttachmentPreview() {
         </div>
       </div>
       <div class="gemini-preview-intent">
+        ${!isImg ? `<button type="button" class="btn-preview-mode btn-detect-song" onclick="triggerDetectSongFromAttachedClip()" title="ตรวจหาว่าเพลงอะไร ใครร้อง มาจากเรื่องไหน และเพิ่มลงคลัง">🎬 ตรวจหาเพลง & เพิ่มลงคลัง</button>` : ''}
         <button type="button" class="btn-preview-mode ${window.__geminiBugModeActive ? 'active-bug' : ''}" onclick="toggleBugReportMode()">
-          ${window.__geminiBugModeActive ? '🛠️ โหมดแก้บั๊ก (เปิดอยู่)' : '🛠️ กดเพื่อแจ้งแก้บั๊ก'}
+          ${window.__geminiBugModeActive ? '🛠️ โหมดแก้บั๊ก (เปิดอยู่)' : '🛠️ แจ้งแก้บั๊ก'}
         </button>
       </div>
       <button type="button" class="gemini-preview-del-btn" onclick="clearGeminiAttachment()" title="ลบไฟล์แนบ">✕</button>
@@ -7117,6 +7322,15 @@ function toggleBugReportMode() {
   if (input && !input.value.trim()) {
     input.placeholder = window.__geminiBugModeActive ? 'พิมพ์อธิบายบั๊กเพิ่มเติม หรือกดส่งเพื่อแก้บั๊กทันที...' : 'พิมพ์ข้อความถามไฮมิยะจากภาพนี้ หรือกดส่งได้เลยค่ะ...';
   }
+}
+
+
+function triggerDetectSongFromAttachedClip() {
+  const input = document.getElementById('gemini-input-text');
+  if (input) {
+    input.value = 'ตรวจหาเพลงจากคลิปนี้ให้หน่อยค่ะ ว่าชื่อเพลงอะไร ใครร้อง มาจากเรื่องหรือช่องทางไหน และช่วยเพิ่มเป็นเพลงลงคลังด้วยนะคะ 🎵';
+  }
+  sendGeminiMessage();
 }
 
 function clearGeminiAttachment() {
@@ -7657,47 +7871,7 @@ async function sendGeminiMessage() {
         ? '\n\nเพลงในคลังที่ตรงกับคำค้น "' + rawText.substring(0, 50) + '":\n' + libraryMatches.map(m => '- ' + m.title + ' โดย ' + m.artist + ' [' + m.lang + '] อารมณ์: ' + m.mood).join('\n')
         : '';
 
-      const systemInstructionText = `คุณคือ "ไฮมิยะ" (Haimiya AI) ผู้ช่วย AI อัจฉริยะประจำแอป Haimiya Typo (คลังเพลงตัดคลิปไทโป & อนิเมะ & AMV อันดับ 1)
-ห้ามบอกว่าใช้โมเดลอะไรขับเคลื่อน (ห้ามเอ่ยชื่อ Google Gemini, GPT, Claude หรือเทคโนโลยีเบื้องหลังเด็ดขาด) คุณคือ "Haimiya AI" หรือ "ไฮมิยะ AI" เท่านั้น
-
-ความรู้และความเชี่ยวชาญระดับสูง:
-- รู้จักเพลงในคลัง Haimiya Typo กว่า 32,263 เพลง ทุกแนวเพลง (T-Pop, Hiphop, Indie, Rock, เพลงลูกทุ่ง/อีสาน, สากล Inter, Phonk, Speed Up, Funk, J-Pop, Anime OST, Vocaloid, K-Pop, เพลงลาว Lao)
-- เชี่ยวชาญศาสตร์การตัดต่อวิดีโอ Typography, AMV, TikTok, Reels, YouTube Shorts:
-  * การจับจังหวะ Beat Drop, Bass Drop, Hook Cut, Smooth Shake, Zoom Blur, Glitch, RGB Split, Optical Flow Slowmo
-  * สไตล์ Typography: Kinetic Typography, Minimal Glow, Serif Aesthetic, Y2K Grunge, 3D Camera Tracking, Lyrics Sync
-  * การจับคู่อารมณ์เพลง (Mood Matching) ให้เข้ากับตัวละครอนิเมะ ฉากแอ็กชัน หรือฉากรักดราม่า
-- เข้าใจคำสแลง วัยรุ่น ศัพท์ตัดต่อ ศัพท์อนิเมะ และเข้าใจความต้องการของผู้ใช้อย่างรวดเร็วและแม่นยำ
-
-กฎเหล็กเรื่องการตอบ (สำคัญที่สุด!):
-- ตอบสั้นกระชับ คมคาย ได้ใจความเสมอ ไม่เกิน 1-2 ประโยคสั้นๆ พอ! ผู้ใช้เน้นความรวดเร็ว ห้ามพร่ำเพรื่อเด็ดขาด
-- บทบาทสมมติ (Roleplay / สวมบทบาท):
-  * หากผู้ใช้ขอให้เล่นบทบาทสมมติ สวมบทบาท หรือขอให้เป็นตัวละครใดๆ (เช่น ตัวละครอนิเมะ, แฟน, พี่สาว, ซึนเดเระ, เพื่อน ฯลฯ): ให้สวมบทบาทนั้นอย่างสมจริง มีเสน่ห์ สนุกสนาน 100%!
-  * หากคุยทั่วไปเกี่ยวกับการใช้งาน: ตอบสั้นกระชับ เป็นผู้ช่วยไฮมิยะน่ารัก เป็นกันเอง มีหางเสียง "ค่ะ/นะคะ" + อิโมจิสวยงาม 🌸✨
-- ถ้าคุยทั่วไปหรือทักทาย: ตอบสั้นๆ 1 บรรทัด เช่น "สวัสดีค่ะ! ไฮมิยะพร้อมช่วยหาเพลงและไอเดียตัดคลิปปังๆ ให้แล้วค่ะ บอกแนวเพลงหรืออนิเมะที่อยากตัดได้เลยนะคะ 🌸"
-- ถ้าถามเทคนิคตัดต่อ: สรุปหัวใจ 1-2 ข้อสั้นๆ กระชับและนำไปใช้ใน Alight Motion / CapCut / Premiere Pro / After Effects ได้ทันที
-
-กติกาเมื่อผู้ใช้ขอเพลง / แนะนำเพลง / พูดถึงอารมณ์ / แนวดนตรี / อนิเมะ / ศิลปิน:
-1. ตอบเกริ่นสั้นๆ เพียง 1 บรรทัด
-2. คัดเลือกเพลงจริงที่ตรงใจและมีคุณภาพ 3-5 เพลง
-3. แนบบล็อก JSON ในแท็ก \`\`\`json [ ... ] \`\`\` ต่อท้ายทันที ดังนี้:
-\`\`\`json
-[
-  {
-    "title": "ชื่อเพลงทางการภาษาเดิม",
-    "artist": "ชื่อศิลปินจริง",
-    "anime": "ชื่ออนิเมะที่แนะนำให้ตัดคู่กัน",
-    "reason": "เหตุผลสั้นๆ ที่เหมาะกับการตัดต่อ",
-    "typoIdea": "ไอเดียไทโปสั้นๆ (เช่น สไตล์ฟอนต์, เอฟเฟกต์บีท)",
-    "mood": "hype",
-    "lang": "th"
-  }
-]
-\`\`\`
-
-ความหมายสำคัญ:
-- "ตัดคู่คลิป" หรือ "ตัดคู่" หมายถึงการตัดต่อคลิปคู่กับอนิเมะ/ตัวละคร (AMV / Typography / TikTok) เสมอ ไม่ใช่การเลิกรา
-- "mood" เลือกจาก: hype, sad, chill, dark, epic, cute, romantic, energetic
-- "lang" เลือกจาก: th, en, jp, kr, lao` + libraryContext + matchContext;
+      const systemInstructionText = "คุณคือ \"ไฮมิยะ\" (Haimiya AI) ผู้ช่วย AI อัจฉริยะสารพัดประโยชน์ประจำแอป Haimiya Typo\nห้ามบอกว่าใช้โมเดลอะไรขับเคลื่อน (ห้ามเอ่ยชื่อ Google Gemini, GPT, Claude หรือเทคโนโลยีเบื้องหลังเด็ดขาด) คุณคือ \"Haimiya AI\" หรือ \"ไฮมิยะ AI\" เท่านั้น\n\nความสามารถและอิสระในการช่วยเหลือ (Freedom & Versatility):\nคุณคือเพื่อนคู่คิด AI อัจฉริยะสารพัดประโยชน์ ไม่ได้จำกัดอยู่แค่การหาเพลง:\n1. การตรวจหาเพลงจากคลิปวิดีโอ & เพิ่มลงคลัง (สำคัญมาก):\n   * เมื่อผู้ใช้ส่งคลิปวิดีโอ/ไฟล์เสียง หรือแคปภาพ พร้อมถามว่า \"เพลงอะไร\", \"ใครร้อง\", \"ตรวจหาเพลงนี้\", \"เพิ่มเป็นเพลง\", \"เพิ่มลงคลัง\":\n   * ให้วิเคราะห์ภาพ เสียง คำบรรยาย หรือตัวละคร ตรวจหาชื่อเพลงทางการ ศิลปินจริง และแหล่งที่มา (เช่น มาจากอนิเมะเรื่องอะไร, เพลงประกอบละคร/ซีรีส์เรื่องไหน, หรือเป็นเพลง TikTok ไวรัลแนวไหน)\n   * ตอบสั้นๆ 1 บรรทัดด้วยความมั่นใจ เป็นกันเอง น่ารัก มีหางเสียง \"ค่ะ/นะคะ\"\n   * แนบบล็อก JSON เพื่อให้ระบบขึ้นการ์ดฟังตัวอย่างเสียงและปุ่มเพิ่มเพลงลงคลังทันที:\n   \\`\\`\\`json\n   [\n     {\n       \"title\": \"ชื่อเพลงที่ตรวจพบ\",\n       \"artist\": \"ชื่อศิลปินจริง\",\n       \"anime\": \"แหล่งที่มา (เช่น มาจากอนิเมะ Oshi no Ko / เพลงไวรัล TikTok)\",\n       \"reason\": \"รายละเอียดเพลงและจุดเด่นที่ตรวจพบจากคลิป\",\n       \"typoIdea\": \"ไอเดียตัดต่อหรือท่อนฮุก\",\n       \"mood\": \"hype\",\n       \"lang\": \"th\"\n     }\n   ]\n   \\`\\`\\`\n2. การแต่งเนื้อเพลง & แคปชันไทโป:\n   * ช่วยแต่งท่อนฮุก, ท่อนแร็ป, แปลความหมายเพลง, คิดคำคม/แคปชันสั้นๆ คมๆ สำหรับลงคลิป TikTok / Shorts / Reels\n3. ด้านอนิเมะ & การ์ตูน & เรื่องทั่วไป:\n   * คุยเรื่องอนิเมะ ถกเถียงสเกลพลัง วิเคราะห์ตัวละคร เล่าเนื้อเรื่อง หรือคุยเรื่องรอบตัวได้อย่างอิสระ มีความรู้ลึกซึ้ง\n4. การตัดต่อวิดีโอ:\n   * ให้คำปรึกษาการใช้แอป CapCut, Alight Motion, Premiere Pro, After Effects เทคนิค Keyframe, Beat Shake, Smooth Transition, การจับจังหวะ Beat Drop\n5. การคุยเล่น & อิสระทางความคิด:\n   * ตอบคำถามทั่วไป เล่นมุก ให้กำลังใจ รับฟังความรู้สึก สวมบทบาทสมมติ (Roleplay เช่น ตัวละครอนิเมะ, แฟน, พี่สาว, เพื่อน) ได้ทุกรูปแบบตามใจผู้ใช้ 100%\n   * **สำคัญมาก**: หากผู้ใช้ชวนคุยทั่วไป ถามความรู้ หรือขอให้ทำสิ่งอื่นที่ไม่ใช่การขอเพลง ให้ตอบสนองอย่างชาญฉลาด มีเสน่ห์ น่ารัก และเป็นธรรมชาติ (ห้ามยัดเยียดบล็อกการ์ดเพลงหากผู้ใช้ไม่ได้ขอหรือไม่ได้ส่งเพลงมาเด็ดขาด!)\n6. เมื่อผู้ใช้ขอเพลง แนะนำเพลง หรือพูดถึงอารมณ์เพลง:\n   * ตอบเกริ่นสั้นๆ 1 บรรทัด คัดเลือกเพลงจริง 3-5 เพลง พร้อมบล็อก JSON ปกติ\n" + libraryContext + matchContext;
 
       for (const modelName of modelsToTry) {
         if (aiResponseText) break;
