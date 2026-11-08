@@ -5681,7 +5681,7 @@ body.in-secret-mode .nav-link-secret {
   border: 3px solid rgba(255, 255, 255, 0.9);
   box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.6), 0 8px 24px rgba(0, 0, 0, 0.5), inset 0 0 12px rgba(255, 255, 255, 0.35);
   overflow: hidden;
-  background: #111424;
+  background: #111424 url('haimiya_ai_bubble.jpg') center/cover no-repeat, url('splash-cover.jpg') center/cover no-repeat;
   pointer-events: none;
 }
 
@@ -5792,6 +5792,7 @@ body.in-secret-mode .nav-link-secret {
   border: 2px solid rgba(129, 140, 248, 0.6);
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(99, 102, 241, 0.35);
+  background: #1e1b4b url('haimiya_ai_avatar.jpg') center/cover no-repeat, url('splash-cover.jpg') center/cover no-repeat;
 }
 
 .gemini-avatar-img {
@@ -6018,6 +6019,7 @@ body.in-secret-mode .nav-link-secret {
   border: 1.5px solid rgba(129, 140, 248, 0.5);
   flex-shrink: 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  background: #1e1b4b url('haimiya_ai_avatar.jpg') center/cover no-repeat, url('splash-cover.jpg') center/cover no-repeat;
 }
 
 .gemini-msg-avatar img {
