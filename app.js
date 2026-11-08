@@ -57,17 +57,15 @@ async function triggerBackgroundFullSongFetch(song) {
       const data = await res.json();
       if (data && data.ok && data.directAudioUrl) {
         saveSongFullCache(song, data.directAudioUrl, data.duration);
-        // หากผู้ใช้กำลังฟังเพลงนี้อยู่ ให้สลับไปสตรีมเพลงเต็มแบบไร้รอยต่อ
+        // สลับไปสตรีมเพลงเต็มทันทีแบบไร้รอยต่อ เพื่อให้เล่นได้ยาวจนจบเพลง
         if (currentPlayingId === song.id && currentAudio && !currentAudio.paused) {
-          const curTime = currentAudio.currentTime;
-          // ถ้าระยะเวลาเกิน 24s ให้สลับทันทีเพื่อเล่นต่อยาวๆ
-          if (curTime > 20) {
-            currentAudio.src = data.directAudioUrl;
-            currentAudio.currentTime = curTime;
-            currentAudio.play().catch(() => {});
-          }
+          const curTime = currentAudio.currentTime || 0;
+          currentAudio.src = data.directAudioUrl;
+          currentAudio.currentTime = curTime;
+          currentAudio.play().catch(() => {});
           showBottomPlayer(song);
           updateAudioUI(true);
+          updateBottomPlayerProgress();
         }
       }
     }
@@ -2061,12 +2059,15 @@ async function togglePlaySong(songId) {
   const song = SONGS.find(s => s.id === songId);
   if (!song) return;
 
-  // Check if we have cached full audio for this song
+  // โหมดเพลงเต็ม: กำหนดเป็นเพลงเต็มทุกเพลง และดึงสตรีมเพลงเต็มทันที
+  song.isFull = true;
   const cachedFull = getCachedFullSong(song.id);
   if (cachedFull && cachedFull.directAudioUrl) {
     song.fullAudioUrl = cachedFull.directAudioUrl;
     if (cachedFull.duration) song.duration = cachedFull.duration;
-    song.isFull = true;
+  }
+  if (!song.fullAudioUrl && navigator.onLine) {
+    triggerBackgroundFullSongFetch(song);
   }
 
   // 1. Resolve safe audio URL (prefer full song stream, then valid Apple Music / Spotify preview URLs)
@@ -2242,18 +2243,40 @@ async function togglePlaySong(songId) {
       handleAudioFail();
     };
 
-    audio.onended = () => {
-      // Seamlessly continue into full song if full stream was resolved in background
+    audio.onended = async () => {
+      // หากมีสตรีมเพลงเต็ม ให้เล่นต่อยาวจนจบเพลงแบบไร้รอยต่อ
       if (song.fullAudioUrl && audio.src !== song.fullAudioUrl) {
         audio.src = song.fullAudioUrl;
         audio.currentTime = 29.5;
         audio.play().then(() => {
           updateAudioUI(true);
           showBottomPlayer(song);
+          updateBottomPlayerProgress();
         }).catch(() => {
           if (isLoopTrack) { audio.currentTime = 0; audio.play().catch(() => {}); } else { playNextSong(); }
         });
         return;
+      }
+
+      // หากกำลังดึงเพลงเต็มอยู่ ให้รอสตรีมเพื่อเล่นต่อยาวๆ แทนที่จะตัดจบ
+      if (song._fetchingFull && !song.fullAudioUrl) {
+        let waited = 0;
+        while (waited < 3500 && song._fetchingFull && !song.fullAudioUrl) {
+          await new Promise(r => setTimeout(r, 250));
+          waited += 250;
+        }
+        if (song.fullAudioUrl && audio.src !== song.fullAudioUrl) {
+          audio.src = song.fullAudioUrl;
+          audio.currentTime = 29.5;
+          audio.play().then(() => {
+            updateAudioUI(true);
+            showBottomPlayer(song);
+            updateBottomPlayerProgress();
+          }).catch(() => {
+            if (isLoopTrack) { audio.currentTime = 0; audio.play().catch(() => {}); } else { playNextSong(); }
+          });
+          return;
+        }
       }
       if (isLoopTrack) {
         audio.currentTime = 0;
