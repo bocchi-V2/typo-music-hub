@@ -14513,6 +14513,71 @@ const ANIMES = [
     "coverFallback": "https://media.kitsu.app/anime/poster_images/3505/medium.jpg",
     "anifumeUrl": "https://anifume.com/?s=Clannad%3A%20After%20Story",
     "mood": "hype"
+  },
+  {
+    "id": 1062,
+    "name": "Lovely★Complex",
+    "nameTH": "Lovely★Complex",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/1833/poster_image/medium-72d72a57a725ec8446e727353a507e75.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/1833/poster_image/medium-72d72a57a725ec8446e727353a507e75.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=Lovely%E2%98%85Complex",
+    "mood": "hype"
+  },
+  {
+    "id": 1063,
+    "name": "Shinmai Maou no Testament",
+    "nameTH": "Shinmai Maou no Testament",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/8652/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/8652/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Shinmai%20Maou%20no%20Testament",
+    "mood": "hype"
+  },
+  {
+    "id": 1064,
+    "name": "SPY x FAMILY Part 2",
+    "nameTH": "SPY x FAMILY Part 2",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/45619/poster_image/medium-32f8572bcf852803f4455c8c0f70ac11.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/45619/poster_image/medium-32f8572bcf852803f4455c8c0f70ac11.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=SPY%20x%20FAMILY%20Part%202",
+    "mood": "hype"
+  },
+  {
+    "id": 1065,
+    "name": "Seitokai Yakuindomo",
+    "nameTH": "Seitokai Yakuindomo",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/poster_images/5434/medium.jpg",
+    "coverFallback": "https://media.kitsu.app/anime/poster_images/5434/medium.jpg",
+    "anifumeUrl": "https://anifume.com/?s=Seitokai%20Yakuindomo",
+    "mood": "hype"
+  },
+  {
+    "id": 1066,
+    "name": "One Piece Film: Z",
+    "nameTH": "One Piece Film: Z",
+    "genre": [
+      "อนิเมะ",
+      "ยอดนิยม"
+    ],
+    "coverUrl": "https://media.kitsu.app/anime/6827/poster_image/medium-027d3d774a1a888984b575a69fd5f0e1.jpeg",
+    "coverFallback": "https://media.kitsu.app/anime/6827/poster_image/medium-027d3d774a1a888984b575a69fd5f0e1.jpeg",
+    "anifumeUrl": "https://anifume.com/?s=One%20Piece%20Film%3A%20Z",
+    "mood": "hype"
   }
 ];
 
@@ -864158,6 +864223,956 @@ const SONGS = [
     ],
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต ID เหมาะตัดต่อคลิปไทโปคู่กับ Prima Doll",
     "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32314,
+    "title": "Nhạn",
+    "artist": "Vi Nhan Ngoc",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/84/45/d4/8445d49c-63eb-ff07-30be-8f4d4be89ed2/4070335174116.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ca/2b/b1/ca2bb151-a526-8965-0446-21125925c3f7/mzaf_16188244732623355019.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Nh%E1%BA%A1n%20Vi%20Nhan%20Ngoc",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตVN"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 228,
+    "animeMatch": [
+      228
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต VN เหมาะตัดต่อคลิปไทโปคู่กับ Astro Note",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32315,
+    "title": "Supermassive Black Hole",
+    "artist": "Muse",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4a/c1/5d/4ac15dc9-2ae6-1d5b-3add-43bae227f941/825646095452.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/76/4a/63/764a63c0-9533-97ce-51a5-31a23b57f2eb/mzaf_3187296926844362175.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Supermassive%20Black%20Hole%20Muse",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตGB"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 866,
+    "animeMatch": [
+      866
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต GB เหมาะตัดต่อคลิปไทโปคู่กับ Asobi Asobase OVA",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32316,
+    "title": "Yo Quería",
+    "artist": "Cristian",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/d1/2e/68/d12e6892-8d75-124f-597c-ce467ec99811/743219578723.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1c/d8/df/1cd8dfb5-0260-f3e2-1f7f-208f8e337ec9/mzaf_10097935257300151194.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Yo%20Quer%C3%ADa%20Cristian",
+    "mood": "chill",
+    "tags": [
+      "ลาติน",
+      "Reggaeton",
+      "สนุก",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตMX"
+    ],
+    "bpm": "ปานกลาง (105 BPM)",
+    "lang": "en",
+    "animeId": 806,
+    "animeMatch": [
+      806
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต MX เหมาะตัดต่อคลิปไทโปคู่กับ Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka II",
+    "typoIdea": "ฟอนต์สีสันสดใส ลูกเล่นเลื่อนนุ่มนวลตามจังหวะ"
+  },
+  {
+    "id": 32317,
+    "title": "Kilómetros",
+    "artist": "Los Caligaris",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/15/26/85/15268571-2f86-6e04-b004-78d12eef8aa9/888831916468.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/47/0d/1b/470d1be6-245c-f7dd-8ed0-cdcb8f9bb7fc/mzaf_12614974324325966097.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Kil%C3%B3metros%20Los%20Caligaris",
+    "mood": "chill",
+    "tags": [
+      "ลาติน",
+      "Reggaeton",
+      "สนุก",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตMX"
+    ],
+    "bpm": "ปานกลาง (105 BPM)",
+    "lang": "en",
+    "animeId": 770,
+    "animeMatch": [
+      770
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต MX เหมาะตัดต่อคลิปไทโปคู่กับ Infinite Dendrogram",
+    "typoIdea": "ฟอนต์สีสันสดใส ลูกเล่นเลื่อนนุ่มนวลตามจังหวะ"
+  },
+  {
+    "id": 32318,
+    "title": "Luna Say Maybe",
+    "artist": "Hatsuboshi Gakuen & Temari Tsukimura",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/68/4b/54/684b54e8-6ffd-58e3-52c1-ce42caea9f95/PA00153097_0_191082_jacket.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ea/27/e6/ea27e620-85b9-f9cd-9751-b3d1b78664f5/mzaf_6951665158767699075.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Luna%20Say%20Maybe%20Hatsuboshi%20Gakuen%20%26%20Temari%20Tsukimura",
+    "mood": "hype",
+    "tags": [
+      "อนิเมะ",
+      "OP/ED",
+      "เปิดเรื่อง",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "เร็ว (140 BPM)",
+    "lang": "jp",
+    "animeId": 204,
+    "animeMatch": [
+      204
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต JP เหมาะตัดต่อคลิปไทโปคู่กับ Unnamed Memory",
+    "typoIdea": "ไทโปสไตล์อนิเมะ OP ตัวอักษรกระเด้งตามจังหวะ เฟดอินเท่ๆ"
+  },
+  {
+    "id": 32319,
+    "title": "Ao Ar Livre",
+    "artist": "Manu Gavassi",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/ad/2d/ee/ad2dee32-1058-bd28-e0dc-24dbdd18356c/12DMGIM03313.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/e7/72/4e/e7724eec-8c3e-4671-d6f2-331a8cd6dd0e/mzaf_13687038709896350646.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Ao%20Ar%20Livre%20Manu%20Gavassi",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตBR"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 744,
+    "animeMatch": [
+      744
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต BR เหมาะตัดต่อคลิปไทโปคู่กับ Fragtime",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32320,
+    "title": "Duele",
+    "artist": "Belinda",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/ac/ab/86/acab862d-1198-7efd-235a-39aab7998112/05099963136852.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/80/62/1c/80621c79-914a-184c-db23-3b770e1cdd30/mzaf_13110285501177289928.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Duele%20Belinda",
+    "mood": "chill",
+    "tags": [
+      "ลาติน",
+      "Reggaeton",
+      "สนุก",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตMX"
+    ],
+    "bpm": "ปานกลาง (105 BPM)",
+    "lang": "en",
+    "animeId": 529,
+    "animeMatch": [
+      529
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต MX เหมาะตัดต่อคลิปไทโปคู่กับ Tsuki to Laika to Nosferatu",
+    "typoIdea": "ฟอนต์สีสันสดใส ลูกเล่นเลื่อนนุ่มนวลตามจังหวะ"
+  },
+  {
+    "id": 32321,
+    "title": "Pure in the world",
+    "artist": "FRUITS ZIPPER",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cf/9c/27/cf9c27b9-3dda-cc64-cd44-cefbd59224e1/4582468113219.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/84/b8/a6/84b8a61f-f5db-730c-ef39-5e51b1160ec3/mzaf_9790169763526626352.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Pure%20in%20the%20world%20FRUITS%20ZIPPER",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "th",
+    "animeId": 100,
+    "animeMatch": [
+      100
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต JP เหมาะตัดต่อคลิปไทโปคู่กับ Bye Bye, Earth",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32322,
+    "title": "When I Close My Eyes",
+    "artist": "Tom Odell",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a5/5f/c3/a55fc31f-e830-f456-f38a-6b24bf591d3b/198704646256_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/3a/c1/cc/3ac1cc04-8f29-3ca8-1f78-8e536db0d0ba/mzaf_424924162158550047.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/When%20I%20Close%20My%20Eyes%20Tom%20Odell",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตGB"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 311,
+    "animeMatch": [
+      311
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต GB เหมาะตัดต่อคลิปไทโปคู่กับ Level 1 dakedo Unique Skill de Saikyou desu",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32323,
+    "title": "Let's Get Loud",
+    "artist": "Jennifer Lopez",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/c7/f4/6d/c7f46dbd-bc8d-7a7a-cf66-4b96dc59e105/888880316592.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/83/67/b6/8367b6c9-409f-5715-297a-8ae487eb810b/mzaf_490135022279424240.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Let's%20Get%20Loud%20Jennifer%20Lopez",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตGB"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 236,
+    "animeMatch": [
+      236
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต GB เหมาะตัดต่อคลิปไทโปคู่กับ Snack Basue",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32324,
+    "title": "Shinka",
+    "artist": "ADO",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/0d/55/81/0d55816f-02cc-ab41-235d-8371d803dfc3/26UM1IM35880.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e7/26/d0/e726d043-393e-4f4b-a433-235555837997/mzaf_8061101602459547452.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Shinka%20ADO",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 180,
+    "animeMatch": [
+      180
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต JP เหมาะตัดต่อคลิปไทโปคู่กับ Isekai Shikkaku",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32325,
+    "title": "Si lo ven",
+    "artist": "KAROL G",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/2b/66/b2/2b66b26c-ab23-faa1-c4ee-06fa2cce8f76/26UM1IM00558.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/db/41/9e/db419e72-090b-659f-4595-a9efb4335189/mzaf_18019547207333725954.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Si%20lo%20ven%20KAROL%20G",
+    "mood": "chill",
+    "tags": [
+      "ลาติน",
+      "Reggaeton",
+      "สนุก",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตMX"
+    ],
+    "bpm": "ปานกลาง (105 BPM)",
+    "lang": "en",
+    "animeId": 74,
+    "animeMatch": [
+      74
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต MX เหมาะตัดต่อคลิปไทโปคู่กับ Shirobuta Kizoku desu ga Zense no Kioku ga Haeta node Hiyoko na Otouto Sodatemasu",
+    "typoIdea": "ฟอนต์สีสันสดใส ลูกเล่นเลื่อนนุ่มนวลตามจังหวะ"
+  },
+  {
+    "id": 32326,
+    "title": "Mr Charm",
+    "artist": "The Rolling Stones",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/5a/d5/b1/5ad5b194-b6e3-369f-1de6-f2e962582ad4/26UMGIM36901.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/61/66/98/61669824-3bad-44e6-c945-bc7acd3232f7/mzaf_8769406904017203766.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Mr%20Charm%20The%20Rolling%20Stones",
+    "mood": "hype",
+    "tags": [
+      "มันส์สะใจ",
+      "บีทกระแทก",
+      "ไวรัล",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตUS"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "en",
+    "animeId": 225,
+    "animeMatch": [
+      225
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต US เหมาะตัดต่อคลิปไทโปคู่กับ Jii-san Baa-san Wakagaeru",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "id": 32327,
+    "title": "1 KẺ ĐÁNG THƯƠNG 1 NGƯỜI ĐÁNG TRÁCH (feat. COOLKID & Ánh Sáng AZA)",
+    "artist": "TINH HÀ \"SAY HI\"",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f8/02/02/f8020293-8eca-031a-4198-20b9c5e6819a/196874806791.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/b2/1b/eab21bc4-f68c-c208-24fe-f0b33336cd1e/mzaf_6877101015191674309.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/1%20K%E1%BA%BA%20%C4%90%C3%81NG%20TH%C6%AF%C6%A0NG%201%20NG%C6%AF%E1%BB%9CI%20%C4%90%C3%81NG%20TR%C3%81CH%20(feat.%20COOLKID%20%26%20%C3%81nh%20S%C3%A1ng%20AZA)%20TINH%20H%C3%80%20%22SAY%20HI%22",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตVN"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 337,
+    "animeMatch": [
+      337
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต VN เหมาะตัดต่อคลิปไทโปคู่กับ Edomae Elf",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32328,
+    "title": "Trem-Bala (feat. Ana Vilela)",
+    "artist": "Jetlag Music",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/0b/46/5b/0b465bed-32fa-5e7e-ec58-303f40563a90/0.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/6c/d9/e7/6cd9e754-6dcb-d687-e668-32c19d66f725/mzaf_1683772884075570290.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Trem-Bala%20(feat.%20Ana%20Vilela)%20Jetlag%20Music",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตBR"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 964,
+    "animeMatch": [
+      964
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต BR เหมาะตัดต่อคลิปไทโปคู่กับ Emiya-san Chi no Kyou no Gohan",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32329,
+    "title": "Garakuta Road",
+    "artist": "Hatsuboshi Gakuen",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/41/df/44/41df44ef-476f-7d0a-bfa4-21f73738c853/PA00218612_0_246017_jacket.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/e8/b2/13/e8b21355-3fef-7000-9287-a44fc1d0f50f/mzaf_12544593076355312026.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Garakuta%20Road%20Hatsuboshi%20Gakuen",
+    "mood": "hype",
+    "tags": [
+      "อนิเมะ",
+      "OP/ED",
+      "เปิดเรื่อง",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "เร็ว (140 BPM)",
+    "lang": "jp",
+    "animeId": 130,
+    "animeMatch": [
+      130
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต JP เหมาะตัดต่อคลิปไทโปคู่กับ Hana wa Saku, Shura no Gotoku",
+    "typoIdea": "ไทโปสไตล์อนิเมะ OP ตัวอักษรกระเด้งตามจังหวะ เฟดอินเท่ๆ"
+  },
+  {
+    "id": 32330,
+    "title": "Si Quiere",
+    "artist": "Banda El Recodo de Cruz Lizárraga",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music3/v4/ee/fe/67/eefe67a8-e464-1a0b-d1f6-29a8365b15cc/dj.grpfzgzz.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/31/ea/53/31ea535d-dfa8-245c-0691-fb563557dfe4/mzaf_2848111680054117642.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Si%20Quiere%20Banda%20El%20Recodo%20de%20Cruz%20Liz%C3%A1rraga",
+    "mood": "chill",
+    "tags": [
+      "ลาติน",
+      "Reggaeton",
+      "สนุก",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตMX"
+    ],
+    "bpm": "ปานกลาง (105 BPM)",
+    "lang": "en",
+    "animeId": 246,
+    "animeMatch": [
+      246
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต MX เหมาะตัดต่อคลิปไทโปคู่กับ Synduality: Noir Part 2",
+    "typoIdea": "ฟอนต์สีสันสดใส ลูกเล่นเลื่อนนุ่มนวลตามจังหวะ"
+  },
+  {
+    "id": 32331,
+    "title": "Tự Do Như Cơn Gió",
+    "artist": "Xanh",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e9/b6/ac/e9b6ac8f-a8fb-1084-7b42-027df901e96d/artwork.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/50/95/61/509561c3-72a0-3dd9-0418-6f8eb8ec0d87/mzaf_5213249893324015601.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/T%E1%BB%B1%20Do%20Nh%C6%B0%20C%C6%A1n%20Gi%C3%B3%20Xanh",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตVN"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 550,
+    "animeMatch": [
+      550
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต VN เหมาะตัดต่อคลิปไทโปคู่กับ Night Head 2041",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32332,
+    "title": "Merry Christmas, i miss you",
+    "artist": "Alex Crichton",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/db/68/80/db6880fb-9032-b17a-d082-6f00620c50c4/3b72e539-6ee5-430b-bea2-4e1c9cddd475.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/10/81/2a/10812ae6-19c6-9e0d-6daa-01536638d123/mzaf_13448019751749227987.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Merry%20Christmas%2C%20i%20miss%20you%20Alex%20Crichton",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตID"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 901,
+    "animeMatch": [
+      901
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต ID เหมาะตัดต่อคลิปไทโปคู่กับ Servamp",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32333,
+    "title": "Ito Ako (feat. Kai Montinola)",
+    "artist": "Jenie Chan",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/6b/7e/b0/6b7eb0da-70a2-7fcb-9a19-2036e0f63f34/artwork.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/7b/de/997bde12-dec3-dd51-b569-6658becb08d7/mzaf_4802019650890354134.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Ito%20Ako%20(feat.%20Kai%20Montinola)%20Jenie%20Chan",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตPH"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 448,
+    "animeMatch": [
+      448
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต PH เหมาะตัดต่อคลิปไทโปคู่กับ Jashin-chan Dropkick",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32334,
+    "title": "Olimpo",
+    "artist": "Neton Vega & Fuerza Regida",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/fa/91/0e/fa910ef9-5a70-973e-1b2c-27f34dd4e536/1963625111737_cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1c/73/b1/1c73b1f7-6209-bd13-a27b-70ebf5559583/mzaf_5541725137508406561.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Olimpo%20Neton%20Vega%20%26%20Fuerza%20Regida",
+    "mood": "chill",
+    "tags": [
+      "ลาติน",
+      "Reggaeton",
+      "สนุก",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตMX"
+    ],
+    "bpm": "ปานกลาง (105 BPM)",
+    "lang": "en",
+    "animeId": 623,
+    "animeMatch": [
+      623
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต MX เหมาะตัดต่อคลิปไทโปคู่กับ Inu to Neko Docchi mo Katteru to Mainichi Tanoshii",
+    "typoIdea": "ฟอนต์สีสันสดใส ลูกเล่นเลื่อนนุ่มนวลตามจังหวะ"
+  },
+  {
+    "id": 32335,
+    "title": "Anh Vẫn Ở Đây",
+    "artist": "Quang Đăng Trần & Viam",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/3f/18/cf/3f18cf91-92ed-1acf-7d9a-d74d6f755134/3617397778343.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/33/59/02/33590284-24bd-b40b-802f-e2420479c24d/mzaf_10405882291671365677.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Anh%20Va%CC%82%CC%83n%20O%CC%9B%CC%89%20%C4%90a%CC%82y%20Quang%20%C4%90%C4%83ng%20Tr%E1%BA%A7n%20%26%20Viam",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตVN"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 72,
+    "animeMatch": [
+      72
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต VN เหมาะตัดต่อคลิปไทโปคู่กับ Hyouka: Motsubeki Mono wa",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32336,
+    "title": "OVERLAY OF HOPES",
+    "artist": "SHINY COLORS",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/cf/94/2a/cf942a8a-5ad7-b8a3-3edf-731dd7cb532a/4540774750832.png/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/07/35/72/073572f6-9d05-0f67-2718-8235ce3492ff/mzaf_1582652614388141851.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/OVERLAY%20OF%20HOPES%20SHINY%20COLORS",
+    "mood": "hype",
+    "tags": [
+      "อนิเมะ",
+      "OP/ED",
+      "เปิดเรื่อง",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตJP"
+    ],
+    "bpm": "เร็ว (140 BPM)",
+    "lang": "jp",
+    "animeId": 139,
+    "animeMatch": [
+      139
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต JP เหมาะตัดต่อคลิปไทโปคู่กับ Izure Saikyou no Renkinjutsushi?",
+    "typoIdea": "ไทโปสไตล์อนิเมะ OP ตัวอักษรกระเด้งตามจังหวะ เฟดอินเท่ๆ"
+  },
+  {
+    "id": 32337,
+    "title": "Contesta Mis Llamadas",
+    "artist": "María José",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/6b/f4/94/6bf4941f-91f8-f13d-8386-c01ae5440df3/885288812053.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/62/4f/5b/624f5b7e-5b0a-758d-0ce1-5b4cd49493d6/mzaf_13571958605895175926.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Contesta%20Mis%20Llamadas%20Mar%C3%ADa%20Jos%C3%A9",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตMX"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 51,
+    "animeMatch": [
+      51
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต MX เหมาะตัดต่อคลิปไทโปคู่กับ Akuyaku Reijou wa Ringoku no Outaishi ni Dekiai Sareru",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32338,
+    "title": "Quiero Perderme Contigo",
+    "artist": "José José",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/5d/1d/fd/5d1dfdc7-8ab5-3592-8c52-521a50262188/884977038811.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ee/73/04/ee7304a3-e564-dc3a-6974-ffd26daf6302/mzaf_4190327514464876299.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Quiero%20Perderme%20Contigo%20Jos%C3%A9%20Jos%C3%A9",
+    "mood": "chill",
+    "tags": [
+      "ลาติน",
+      "Reggaeton",
+      "สนุก",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตMX"
+    ],
+    "bpm": "ปานกลาง (105 BPM)",
+    "lang": "en",
+    "animeId": 407,
+    "animeMatch": [
+      407
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต MX เหมาะตัดต่อคลิปไทโปคู่กับ Noumin Kanren no Skill bakka Agetetara Nazeka Tsuyoku Natta.",
+    "typoIdea": "ฟอนต์สีสันสดใส ลูกเล่นเลื่อนนุ่มนวลตามจังหวะ"
+  },
+  {
+    "id": 32339,
+    "title": "Chú Tiểu Ngây Thơ",
+    "artist": "Nguyen Phu Quy",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e7/88/61/e78861df-c59e-cce9-1ecc-009ace3242fc/199066414927.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ea/8a/d5/ea8ad5fc-1ece-d373-8eec-be94ab494815/mzaf_16794825489460019853.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Ch%C3%BA%20Ti%E1%BB%83u%20Ng%C3%A2y%20Th%C6%A1%20Nguyen%20Phu%20Quy",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตVN"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 135,
+    "animeMatch": [
+      135
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต VN เหมาะตัดต่อคลิปไทโปคู่กับ Ao no Exorcist: Yosuga-hen",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32340,
+    "title": "I Hope I Go First",
+    "artist": "David Cray Stone",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/02/55/17/02551781-1ccd-dbb4-fb7d-d540a6473ca4/artwork.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/26/02/ce/2602ce6b-add9-5136-9adb-7ad97beeddbe/mzaf_11345606278544273582.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/I%20Hope%20I%20Go%20First%20David%20Cray%20Stone",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตUS"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 166,
+    "animeMatch": [
+      166
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต US เหมาะตัดต่อคลิปไทโปคู่กับ Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta...",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32341,
+    "title": "In a Minute",
+    "artist": "Thomas Rhett",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/51/dc/53/51dc53da-2faf-3cdb-9c42-bca9729a803a/13UMDIM01260.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/13/37/81/1337819d-3b23-911c-ec32-2618d0b6838d/mzaf_17098254888251814830.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/In%20a%20Minute%20Thomas%20Rhett",
+    "mood": "chill",
+    "tags": [
+      "คันทรี่",
+      "อะคูสติก",
+      "อบอุ่น",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตUS"
+    ],
+    "bpm": "ปานกลาง (95 BPM)",
+    "lang": "en",
+    "animeId": 650,
+    "animeMatch": [
+      650
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต US เหมาะตัดต่อคลิปไทโปคู่กับ Akudama Drive",
+    "typoIdea": "ฟอนต์สไตล์คราฟต์ สีอุ่นน้ำตาล เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32342,
+    "title": "Roddy Theme (From \"Jailer 2\")",
+    "artist": "Anirudh Ravichander",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d6/d2/84/d6d2848b-f41f-8f41-fdc9-25b25b2f310e/711641151814.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/d9/b7/5a/d9b75a29-b790-440c-4a34-3a7ab26985ae/mzaf_18389923733148569977.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Roddy%20Theme%20(From%20%22Jailer%202%22)%20Anirudh%20Ravichander",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตIN"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 860,
+    "animeMatch": [
+      860
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต IN เหมาะตัดต่อคลิปไทโปคู่กับ Katsute Kami Datta Kemono-tachi e",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32343,
+    "title": "Un Año Más",
+    "artist": "Mario Girón",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/00/a9/a4/00a9a419-4ee2-947a-de4a-f3ace25473e3/711641091639.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0d/b8/d8/0db8d834-3b97-a08d-537c-4591a24b8e4c/mzaf_8945448488640981504.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Un%20A%C3%B1o%20M%C3%A1s%20Mario%20Gir%C3%B3n",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตMX"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 1006,
+    "animeMatch": [
+      1006
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต MX เหมาะตัดต่อคลิปไทโปคู่กับ Blue Box",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32344,
+    "title": "Ven A Mi Casa Esta Navidad",
+    "artist": "Mario Girón",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/00/a9/a4/00a9a419-4ee2-947a-de4a-f3ace25473e3/711641091639.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/4c/77/f5/4c77f582-993a-a353-e90f-875c1796915f/mzaf_7177854541910910018.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Ven%20A%20Mi%20Casa%20Esta%20Navidad%20Mario%20Gir%C3%B3n",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตMX"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 959,
+    "animeMatch": [
+      959
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต MX เหมาะตัดต่อคลิปไทโปคู่กับ Yama no Susume",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32345,
+    "title": "Biblical",
+    "artist": "Calum Scott",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/7e/f0/70/7ef07089-7f8c-2fc7-ff8c-07603d1fbe42/21UMGIM26080.rgb.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/aa/44/65/aa44651d-36ce-eec9-9a82-ee48eb70a978/mzaf_12718421976068131295.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Biblical%20Calum%20Scott",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตPH"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 510,
+    "animeMatch": [
+      510
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต PH เหมาะตัดต่อคลิปไทโปคู่กับ Shin no Nakama ja Nai to Yuusha no Party wo Oidasareta node, Henkyou de Slow Life suru Koto ni Shima",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32346,
+    "title": "Godzilla Main Title",
+    "artist": "Bear McCreary",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/cc/4d/05/cc4d0512-8327-f8a2-88bb-03d6ffcffde2/794043200267.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c0/94/e4/c094e47a-a18d-0e40-d749-0ba211eca9ed/mzaf_16619137343869578757.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Godzilla%20Main%20Title%20Bear%20McCreary",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตTW"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 434,
+    "animeMatch": [
+      434
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต TW เหมาะตัดต่อคลิปไทโปคู่กับ Kumichou Musume to Sewagakari Picture Drama",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32347,
+    "title": "折月亮(《折月亮》影视剧主题曲)",
+    "artist": "Liu Yu Ning",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ea/2c/72/ea2c72ef-754a-0fa4-3818-da43537c1a7a/4896010973153.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a9/df/19/a9df199b-7786-cfde-da78-a7772612cedb/mzaf_771997836063221549.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/%E6%8A%98%E6%9C%88%E4%BA%AE(%E3%80%8A%E6%8A%98%E6%9C%88%E4%BA%AE%E3%80%8B%E5%BD%B1%E8%A7%86%E5%89%A7%E4%B8%BB%E9%A2%98%E6%9B%B2)%20Liu%20Yu%20Ning",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตTW"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "jp",
+    "animeId": 79,
+    "animeMatch": [
+      79
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต TW เหมาะตัดต่อคลิปไทโปคู่กับ #Compass 2.0: Sentou Setsuri Kaiseki System",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "id": 32348,
+    "title": "A Dance, A Kiss",
+    "artist": "Johnny Gill",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/5e/9e/c3/5e9ec30f-7a51-cde2-40b6-147d1f117e91/8721466941523.png/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/85/ff/c6/85ffc64a-dc31-091f-e36f-f60021535d37/mzaf_15333536635319191670.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/A%20Dance%2C%20A%20Kiss%20Johnny%20Gill",
+    "mood": "hype",
+    "tags": [
+      "มันส์สะใจ",
+      "บีทกระแทก",
+      "ไวรัล",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตUS"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "en",
+    "animeId": 268,
+    "animeMatch": [
+      268
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต US เหมาะตัดต่อคลิปไทโปคู่กับ Tokyo Revengers: Tenjiku-hen",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "id": 32349,
+    "title": "The Book of Love",
+    "artist": "Peter Gabriel",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music5/v4/17/e5/20/17e52004-5294-f95e-33ad-2b35bf928156/Scratch_My_Back-iTunes.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/29/ad/d5/29add51a-4be8-4055-f6fa-46b7634da8b4/mzaf_17922965667925460218.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/The%20Book%20of%20Love%20Peter%20Gabriel",
+    "mood": "hype",
+    "tags": [
+      "มันส์สะใจ",
+      "บีทกระแทก",
+      "ไวรัล",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตGB"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "en",
+    "animeId": 864,
+    "animeMatch": [
+      864
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต GB เหมาะตัดต่อคลิปไทโปคู่กับ Senki Zesshou Symphogear",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "id": 32350,
+    "title": "Tarot",
+    "artist": ".Feast",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/07/95/66/07956604-57ed-5a20-3c98-536c847f8ac2/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/b4/e1/a5/b4e1a53b-ecad-986c-3305-c523ffcde555/mzaf_6946463728211422361.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Tarot%20.Feast",
+    "mood": "hype",
+    "tags": [
+      "มันส์สะใจ",
+      "บีทกระแทก",
+      "ไวรัล",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตID"
+    ],
+    "bpm": "เร็ว (128 BPM)",
+    "lang": "en",
+    "animeId": 350,
+    "animeMatch": [
+      350
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต ID เหมาะตัดต่อคลิปไทโปคู่กับ Ousama Ranking: Yuuki no Takarabako",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "id": 32351,
+    "title": "Ngày Đá Đơm Bông",
+    "artist": "Lam Ngoc Hoa",
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8d/c0/e2/8dc0e2a4-0c69-34ac-f2b9-61a71c212e10/cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/36/71/27/36712788-2e68-1d2a-5506-789f0d323805/mzaf_14615907544405012796.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/Ng%C3%A0y%20%C4%90%C3%A1%20%C4%90%C6%A1m%20B%C3%B4ng%20Lam%20Ngoc%20Hoa",
+    "mood": "chill",
+    "tags": [
+      "กรูฟนุ่ม",
+      "ฟังสบาย",
+      "สไตล์คาเฟ่",
+      "เพลงใหม่วันนี้",
+      "DailyDrop",
+      "ชาร์ตVN"
+    ],
+    "bpm": "ชิลล์ (92 BPM)",
+    "lang": "en",
+    "animeId": 698,
+    "animeMatch": [
+      698
+    ],
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต VN เหมาะตัดต่อคลิปไทโปคู่กับ Made in Abyss: Fukaki Tamashii no Reimei",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
   }
 ];
 
@@ -970278,6 +971293,310 @@ const ANIME_PAIRS = [
     "category": "chill",
     "badge": "✨ ประจำวันใหม่",
     "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต ID เหมาะตัดต่อคลิปไทโปคู่กับ Prima Doll",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32314,
+    "animeId": 228,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต VN เหมาะตัดต่อคลิปไทโปคู่กับ Astro Note",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32315,
+    "animeId": 866,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต GB เหมาะตัดต่อคลิปไทโปคู่กับ Asobi Asobase OVA",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32316,
+    "animeId": 806,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต MX เหมาะตัดต่อคลิปไทโปคู่กับ Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka II",
+    "typoIdea": "ฟอนต์สีสันสดใส ลูกเล่นเลื่อนนุ่มนวลตามจังหวะ"
+  },
+  {
+    "songId": 32317,
+    "animeId": 770,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต MX เหมาะตัดต่อคลิปไทโปคู่กับ Infinite Dendrogram",
+    "typoIdea": "ฟอนต์สีสันสดใส ลูกเล่นเลื่อนนุ่มนวลตามจังหวะ"
+  },
+  {
+    "songId": 32318,
+    "animeId": 204,
+    "category": "hype",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต JP เหมาะตัดต่อคลิปไทโปคู่กับ Unnamed Memory",
+    "typoIdea": "ไทโปสไตล์อนิเมะ OP ตัวอักษรกระเด้งตามจังหวะ เฟดอินเท่ๆ"
+  },
+  {
+    "songId": 32319,
+    "animeId": 744,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต BR เหมาะตัดต่อคลิปไทโปคู่กับ Fragtime",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32320,
+    "animeId": 529,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต MX เหมาะตัดต่อคลิปไทโปคู่กับ Tsuki to Laika to Nosferatu",
+    "typoIdea": "ฟอนต์สีสันสดใส ลูกเล่นเลื่อนนุ่มนวลตามจังหวะ"
+  },
+  {
+    "songId": 32321,
+    "animeId": 100,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต JP เหมาะตัดต่อคลิปไทโปคู่กับ Bye Bye, Earth",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32322,
+    "animeId": 311,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต GB เหมาะตัดต่อคลิปไทโปคู่กับ Level 1 dakedo Unique Skill de Saikyou desu",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32323,
+    "animeId": 236,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต GB เหมาะตัดต่อคลิปไทโปคู่กับ Snack Basue",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32324,
+    "animeId": 180,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต JP เหมาะตัดต่อคลิปไทโปคู่กับ Isekai Shikkaku",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32325,
+    "animeId": 74,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต MX เหมาะตัดต่อคลิปไทโปคู่กับ Shirobuta Kizoku desu ga Zense no Kioku ga Haeta node Hiyoko na Otouto Sodatemasu",
+    "typoIdea": "ฟอนต์สีสันสดใส ลูกเล่นเลื่อนนุ่มนวลตามจังหวะ"
+  },
+  {
+    "songId": 32326,
+    "animeId": 225,
+    "category": "hype",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต US เหมาะตัดต่อคลิปไทโปคู่กับ Jii-san Baa-san Wakagaeru",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "songId": 32327,
+    "animeId": 337,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต VN เหมาะตัดต่อคลิปไทโปคู่กับ Edomae Elf",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32328,
+    "animeId": 964,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต BR เหมาะตัดต่อคลิปไทโปคู่กับ Emiya-san Chi no Kyou no Gohan",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32329,
+    "animeId": 130,
+    "category": "hype",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต JP เหมาะตัดต่อคลิปไทโปคู่กับ Hana wa Saku, Shura no Gotoku",
+    "typoIdea": "ไทโปสไตล์อนิเมะ OP ตัวอักษรกระเด้งตามจังหวะ เฟดอินเท่ๆ"
+  },
+  {
+    "songId": 32330,
+    "animeId": 246,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต MX เหมาะตัดต่อคลิปไทโปคู่กับ Synduality: Noir Part 2",
+    "typoIdea": "ฟอนต์สีสันสดใส ลูกเล่นเลื่อนนุ่มนวลตามจังหวะ"
+  },
+  {
+    "songId": 32331,
+    "animeId": 550,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต VN เหมาะตัดต่อคลิปไทโปคู่กับ Night Head 2041",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32332,
+    "animeId": 901,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต ID เหมาะตัดต่อคลิปไทโปคู่กับ Servamp",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32333,
+    "animeId": 448,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต PH เหมาะตัดต่อคลิปไทโปคู่กับ Jashin-chan Dropkick",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32334,
+    "animeId": 623,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต MX เหมาะตัดต่อคลิปไทโปคู่กับ Inu to Neko Docchi mo Katteru to Mainichi Tanoshii",
+    "typoIdea": "ฟอนต์สีสันสดใส ลูกเล่นเลื่อนนุ่มนวลตามจังหวะ"
+  },
+  {
+    "songId": 32335,
+    "animeId": 72,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต VN เหมาะตัดต่อคลิปไทโปคู่กับ Hyouka: Motsubeki Mono wa",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32336,
+    "animeId": 139,
+    "category": "hype",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต JP เหมาะตัดต่อคลิปไทโปคู่กับ Izure Saikyou no Renkinjutsushi?",
+    "typoIdea": "ไทโปสไตล์อนิเมะ OP ตัวอักษรกระเด้งตามจังหวะ เฟดอินเท่ๆ"
+  },
+  {
+    "songId": 32337,
+    "animeId": 51,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต MX เหมาะตัดต่อคลิปไทโปคู่กับ Akuyaku Reijou wa Ringoku no Outaishi ni Dekiai Sareru",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32338,
+    "animeId": 407,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต MX เหมาะตัดต่อคลิปไทโปคู่กับ Noumin Kanren no Skill bakka Agetetara Nazeka Tsuyoku Natta.",
+    "typoIdea": "ฟอนต์สีสันสดใส ลูกเล่นเลื่อนนุ่มนวลตามจังหวะ"
+  },
+  {
+    "songId": 32339,
+    "animeId": 135,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต VN เหมาะตัดต่อคลิปไทโปคู่กับ Ao no Exorcist: Yosuga-hen",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32340,
+    "animeId": 166,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต US เหมาะตัดต่อคลิปไทโปคู่กับ Otome Game no Hametsu Flag shika Nai Akuyaku Reijou ni Tensei shiteshimatta...",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32341,
+    "animeId": 650,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต US เหมาะตัดต่อคลิปไทโปคู่กับ Akudama Drive",
+    "typoIdea": "ฟอนต์สไตล์คราฟต์ สีอุ่นน้ำตาล เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32342,
+    "animeId": 860,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต IN เหมาะตัดต่อคลิปไทโปคู่กับ Katsute Kami Datta Kemono-tachi e",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32343,
+    "animeId": 1006,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต MX เหมาะตัดต่อคลิปไทโปคู่กับ Blue Box",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32344,
+    "animeId": 959,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต MX เหมาะตัดต่อคลิปไทโปคู่กับ Yama no Susume",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32345,
+    "animeId": 510,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต PH เหมาะตัดต่อคลิปไทโปคู่กับ Shin no Nakama ja Nai to Yuusha no Party wo Oidasareta node, Henkyou de Slow Life suru Koto ni Shima",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32346,
+    "animeId": 434,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต TW เหมาะตัดต่อคลิปไทโปคู่กับ Kumichou Musume to Sewagakari Picture Drama",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32347,
+    "animeId": 79,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต TW เหมาะตัดต่อคลิปไทโปคู่กับ #Compass 2.0: Sentou Setsuri Kaiseki System",
+    "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
+  },
+  {
+    "songId": 32348,
+    "animeId": 268,
+    "category": "hype",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต US เหมาะตัดต่อคลิปไทโปคู่กับ Tokyo Revengers: Tenjiku-hen",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "songId": 32349,
+    "animeId": 864,
+    "category": "hype",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต GB เหมาะตัดต่อคลิปไทโปคู่กับ Senki Zesshou Symphogear",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "songId": 32350,
+    "animeId": 350,
+    "category": "hype",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต ID เหมาะตัดต่อคลิปไทโปคู่กับ Ousama Ranking: Yuuki no Takarabako",
+    "typoIdea": "เอฟเฟกต์ Glitch กระชากตามจังหวะเบส ตัวหนังสือสีนีออนเข้ม"
+  },
+  {
+    "songId": 32351,
+    "animeId": 698,
+    "category": "chill",
+    "badge": "✨ ประจำวันใหม่",
+    "reason": "เพลงฮิตใหม่ประจำวันจากชาร์ต VN เหมาะตัดต่อคลิปไทโปคู่กับ Made in Abyss: Fukaki Tamashii no Reimei",
     "typoIdea": "ไทโปตัวเขียนสไตล์โมเดิร์นสีขาวโปร่งแสง เลื่อนนุ่มนวล"
   }
 ];
