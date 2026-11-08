@@ -3074,6 +3074,7 @@ function renderSongsGrid() {
   const grid = document.getElementById('songs-grid');
   if (!grid) return;
   const term = currentSearchTerm.toLowerCase().trim();
+  const cleanTerm = term.replace(/[\s\(\)\[\]\{\}\'\"_\.\-]+/g, '');
 
   const filtered = SONGS.filter(s => {
     // โซนลับ Funk แยกต่างหากเฉพาะใน workspace-secret-funk ไม่ปะปนในโซนเพลงปกติ
@@ -3084,10 +3085,15 @@ function renderSongsGrid() {
     const anime = ANIME_MAP.get(s.animeId);
     const animeNames = (term && anime) ? `${anime.nameTH} ${anime.name}`.toLowerCase() : '';
 
+    const cleanTitle = (s.title || '').toLowerCase().replace(/[\s\(\)\[\]\{\}\'\"_\.\-]+/g, '');
+    const cleanArtist = (s.artist || '').toLowerCase().replace(/[\s\(\)\[\]\{\}\'\"_\.\-]+/g, '');
+
     const matchSearch = !term
       || s.title.toLowerCase().includes(term)
       || s.artist.toLowerCase().includes(term)
-      || s.tags.some(t => t.toLowerCase().includes(term))
+      || (cleanTerm && cleanTitle.includes(cleanTerm))
+      || (cleanTerm && cleanArtist.includes(cleanTerm))
+      || s.tags.some(t => t.toLowerCase().includes(term) || (cleanTerm && t.toLowerCase().replace(/[\s\(\)\[\]\{\}\'\"_\.\-]+/g, '').includes(cleanTerm)))
       || animeNames.includes(term);
 
     // If searching by term, find across all zones intelligently
@@ -6689,15 +6695,19 @@ function searchSongsInLibrary(query, maxResults = 10) {
   if (typeof SONGS === 'undefined' || !SONGS.length) return [];
   const q = (query || '').toLowerCase().trim();
   if (!q) return [];
-  const keywords = q.split(/\s+/).filter(k => k.length >= 2);
+  const cleanQ = q.replace(/[\s\(\)\[\]\{\}\'\"_\.\-]+/g, '');
+  const rawKeywords = q.split(/[\s\(\)\[\]\{\}\'\"_\.\-]+/).filter(k => k.length >= 2);
+  const keywords = [...new Set([...rawKeywords, ...(cleanQ && cleanQ.length >= 3 ? [cleanQ] : [])])];
   
   const scored = SONGS.map(s => {
     const text = ((s.title || '') + ' ' + (s.artist || '') + ' ' + (s.tags || []).join(' ') + ' ' + (s.mood || '')).toLowerCase();
+    const cleanSongTitle = (s.title || '').toLowerCase().replace(/[\s\(\)\[\]\{\}\'\"_\.\-]+/g, '');
     let score = 0;
     for (const kw of keywords) {
       if (text.includes(kw)) score += 10;
       if ((s.title || '').toLowerCase().includes(kw)) score += 20;
       if ((s.artist || '').toLowerCase().includes(kw)) score += 15;
+      if (cleanSongTitle && cleanSongTitle.includes(kw)) score += 25;
     }
     return { song: s, score };
   }).filter(x => x.score > 0).sort((a, b) => b.score - a.score).slice(0, maxResults);

@@ -14583,6 +14583,43 @@ const ANIMES = [
 
 const SONGS = [
   {
+    "id": 40352,
+    "title": "I'm Sorry (สีดา)",
+    "artist": "The Rube",
+    "duration": 218,
+    "isFull": true,
+    "coverUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/99/60/b9/9960b9e2-2a5b-5abd-2251-25a7462d1aab/00602508248801_Cover.jpg/600x600bb.jpg",
+    "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/ff/83/baff8315-b58d-8736-00f0-ba0c9cba7400/mzaf_12369787554331899659.plus.aac.p.m4a",
+    "audioUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/ff/83/baff8315-b58d-8736-00f0-ba0c9cba7400/mzaf_12369787554331899659.plus.aac.p.m4a",
+    "spotifyUrl": "https://open.spotify.com/search/I'm%20Sorry%20(%E0%B8%AA%E0%B8%B5%E0%B8%94%E0%B8%B2)%20The%20Rube",
+    "youtubeUrl": "https://www.youtube.com/watch?v=kYv_C2L2Jd4",
+    "mood": "sad",
+    "tags": [
+      "I'm sorry",
+      "im sorry",
+      "im sorry(สีดา)",
+      "im sorry (สีดา)",
+      "สีดา",
+      "The Rube",
+      "เดอะรู๊บ",
+      "ไทยป๊อป",
+      "เพลงเศร้า",
+      "เพลงเต็ม",
+      "ไวรัลTikTok",
+      "ตัดต่อไทโป"
+    ],
+    "bpm": "ช้า (74 BPM)",
+    "lang": "th",
+    "animeId": 18,
+    "animeMatch": [
+      18,
+      1
+    ],
+    "reason": "เพลง 'I'm Sorry (สีดา)' ของ The Rube ผสมผสานดนตรีไทยประยุกต์และอารมณ์ตัดพ้อสุดกินใจ สื่อถึงความสำนึกผิดและความรักที่ไม่อาจหวนคืน เหมาะกับการตัดต่อคลิปไทโปคู่กับฉากดราม่าของอนิเมะอย่างยิ่ง",
+    "typoIdea": "ฟอนต์ลายไทยโมเดิร์นสีทองหม่น สลับเอฟเฟกต์ควันลอยจางๆ และข้อความแตกร้าว Fade-out ช้าๆ ตามท่อน 'ฉันขอโทษที่ทำให้เธอต้องเสียน้ำตา'",
+    "audioFallback": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/ba/ff/83/baff8315-b58d-8736-00f0-ba0c9cba7400/mzaf_12369787554331899659.plus.aac.p.m4a"
+  },
+  {
     "id": 27087,
     "title": "สาธุ (Emo Rock Version)",
     "duration": 71,
@@ -1129978,6 +1130015,14 @@ const SONGS = [
 ];
 
 const ANIME_PAIRS = [
+  {
+    "songId": 40352,
+    "animeId": 18,
+    "category": "sad",
+    "badge": "👑 เพลงฮิตตลอดกาล",
+    "reason": "ท่อนโซโล่และเสียงเอื้อนไทยประยุกต์ตัดต่อกับซีนอารมณ์ดราม่าและน้ำตาของตัวละคร",
+    "typoIdea": "ฟอนต์ลายไทยโมเดิร์นสีทองหม่น สลับเอฟเฟกต์ควันลอยจางๆ และข้อความแตกร้าว Fade-out ช้าๆ"
+  },
   {
     "songId": 29513,
     "animeId": 458,
