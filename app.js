@@ -6997,7 +6997,114 @@ async function playOrResolveAiSongPreview(cardId, btnEl) {
   }
 }
 
-function renderSongCardsHtml(songList, headerHtml) {
+// ============================================================
+// AUTO-ADD SONG TO LIBRARY & FOCUS HELPERS
+// ============================================================
+function autoAddSongToLibrary(songPayload) {
+  if (!songPayload || !songPayload.title) return null;
+
+  const title = (songPayload.title || '').trim();
+  const artist = (songPayload.artist || 'Unknown Artist').trim();
+  if (!title) return null;
+
+  // 1. Check if already exists in SONGS
+  let existing = null;
+  if (typeof SONGS !== 'undefined' && Array.isArray(SONGS)) {
+    existing = SONGS.find(s => s.id === songPayload.id || (s.title && s.title.toLowerCase() === title.toLowerCase() && s.artist && s.artist.toLowerCase() === artist.toLowerCase()));
+  }
+
+  if (existing) {
+    if (!existing.previewUrl && songPayload.previewUrl) {
+      existing.previewUrl = songPayload.previewUrl;
+    }
+    if ((!existing.coverUrl || existing.coverUrl === 'splash-cover.jpg') && songPayload.coverUrl) {
+      existing.coverUrl = songPayload.coverUrl;
+    }
+    return existing;
+  }
+
+  const songId = songPayload.id || (Date.now() + Math.floor(Math.random() * 1000));
+  const fullSong = {
+    id: songId,
+    title: title,
+    artist: artist,
+    coverUrl: songPayload.coverUrl || 'splash-cover.jpg',
+    previewUrl: songPayload.previewUrl || songPayload.audioUrl || '',
+    spotifyUrl: songPayload.spotifyUrl || `https://open.spotify.com/search/${encodeURIComponent(title + ' ' + artist)}`,
+    mood: songPayload.mood || 'chill',
+    tags: songPayload.tags || ["เพลงเพิ่มโดยAI", "HaimiyaAI", songPayload.genre || "Pop", (songPayload.lang === 'th' || detectSongLang(title, artist) === 'th') ? 'เพลงไทย' : 'เพลงฮิต'],
+    bpm: songPayload.bpm || "ปานกลาง (110 BPM)",
+    lang: songPayload.lang || detectSongLang(title, artist),
+    animeId: songPayload.animeId || 1,
+    reason: songPayload.reason || `เพลง "${title}" จังหวะบีทกระชับ มีมิติอารมณ์ตัดคลิปไทโปได้ลงตัวสุดๆ`,
+    typoIdea: songPayload.typoIdea || `แอนิเมชันตัวอักษรแบบ Kinetic ตามท่อนร้องฮุก สลับตัดคัทกระชับตามจังหวะบีท`,
+    addedAt: new Date().toISOString(),
+    isUserAdded: true
+  };
+
+  // Add to in-memory library (position 0)
+  if (typeof SONGS !== 'undefined' && Array.isArray(SONGS)) {
+    SONGS.unshift(fullSong);
+  }
+  if (typeof SONG_MAP !== 'undefined' && SONG_MAP) {
+    SONG_MAP.set(fullSong.id, fullSong);
+  }
+
+  // Add to anime pairs
+  if (typeof ANIME_PAIRS !== 'undefined' && Array.isArray(ANIME_PAIRS) && fullSong.animeId) {
+    ANIME_PAIRS.unshift({
+      songId: fullSong.id,
+      animeId: fullSong.animeId,
+      category: fullSong.mood || 'chill',
+      badge: '🤖 เพิ่มโดย AI',
+      reason: fullSong.reason || '',
+      typoIdea: fullSong.typoIdea || ''
+    });
+  }
+
+  // Persist permanently in localStorage
+  try {
+    let localSongs = JSON.parse(localStorage.getItem('haimiya_user_added_songs') || '[]');
+    if (!localSongs.some(s => s.id === fullSong.id || (s.title && s.title.toLowerCase() === title.toLowerCase() && s.artist && s.artist.toLowerCase() === artist.toLowerCase()))) {
+      localSongs.unshift(fullSong);
+      localStorage.setItem('haimiya_user_added_songs', JSON.stringify(localSongs));
+    }
+  } catch (e) {
+    console.warn('Could not save user added song to localStorage:', e);
+  }
+
+  // Update UI stats and grids
+  try {
+    if (typeof updateStats === 'function') updateStats();
+    if (typeof renderSongsGrid === 'function') renderSongsGrid();
+  } catch (e) {}
+
+  return fullSong;
+}
+
+function focusSongInGrid(songTitle) {
+  if (typeof closeHaimiyaAI === 'function') closeHaimiyaAI();
+  const searchInput = document.getElementById('search-input');
+  if (searchInput && songTitle) {
+    searchInput.value = songTitle;
+    if (typeof filterSongs === 'function') filterSongs();
+  }
+  const grid = document.getElementById('songs-grid');
+  if (grid) {
+    grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  showToast(currentAppLang === 'th' ? `🎵 กำลังแสดงเพลง "${songTitle}" ในคลัง` : `🎵 Showing "${songTitle}" in library`);
+}
+
+function safeAppReload() {
+  showToast(currentAppLang === 'th' ? '⚡ กำลังรีเฟรชหน้าเว็บอย่างปลอดภัย...' : '⚡ Refreshing cleanly...');
+  setTimeout(() => {
+    window.location.reload();
+  }, 300);
+}
+
+function renderSongCardsHtml(songList, headerHtml, isAutoAdd = false) {
+  if (!Array.isArray(songList) || songList.length === 0) return '';
   let cardsHtml = headerHtml ? `<div style="margin-bottom: 8px;">${headerHtml}</div>` : '';
   songList.forEach((s, idx) => {
     const cardId = `ai-song-card-${Date.now()}-${idx}-${Math.floor(Math.random() * 1000)}`;
@@ -7026,16 +7133,24 @@ function renderSongCardsHtml(songList, headerHtml) {
       reason: s.reason || `เพลง "${s.title}" จังหวะบีทกระชับ มีมิติอารมณ์ตัดต่อคู่กับ ${animeName} ได้ลงตัวสุดๆ`,
       typoIdea: s.typoIdea || `แอนิเมชันตัวอักษรแบบ Kinetic ตามท่อนร้องฮุก สลับตัดคัทกระชับตามจังหวะบีท`
     };
+
+    // Auto add to library if requested!
+    if (isAutoAdd) {
+      autoAddSongToLibrary(songPayload);
+    }
+
     window['__ai_song_' + cardId] = songPayload;
     try { localStorage.setItem('__ai_song_' + cardId, JSON.stringify(songPayload)); } catch (e) {}
 
     const langBadge = songPayload.lang === 'th' ? '🇹🇭 เพลงไทย' : (songPayload.lang === 'jp' ? '🇯🇵 J-Pop' : (songPayload.lang === 'kr' ? '🇰🇷 K-Pop' : (songPayload.lang === 'lao' ? '🇱🇦 เพลงลาว' : '🇬🇧 สากล')));
 
+    const isAlreadyAdded = isAutoAdd || (typeof SONGS !== 'undefined' && SONGS.some(song => song.title && song.title.toLowerCase() === songPayload.title.toLowerCase() && song.artist && song.artist.toLowerCase() === songPayload.artist.toLowerCase()));
+
     cardsHtml += `
       <div class="gemini-song-card" id="${cardId}" data-song="${escapeHtml(JSON.stringify(songPayload))}">
         <div class="gsc-top">
           <div class="gsc-cover-wrap">
-            <img src="${escapeHtml(songPayload.coverUrl)}" alt="${escapeHtml(songPayload.title)}" class="gsc-cover" onerror="this.src='splash-cover.jpg';" />
+            <img src="${escapeHtml(songPayload.coverUrl)}" alt="${escapeHtml(songPayload.title)}" class="gsc-cover" onerror="this.onerror=null; this.src='splash-cover.jpg';" />
           </div>
           <div class="gsc-info">
             <div class="gsc-title" title="${escapeHtml(songPayload.title)}">${escapeHtml(songPayload.title)}</div>
@@ -7043,7 +7158,7 @@ function renderSongCardsHtml(songList, headerHtml) {
             <div class="gsc-badges">
               <span class="gsc-badge">${langBadge}</span>
               ${s.genre ? `<span class="gsc-badge">${escapeHtml(s.genre)}</span>` : ''}
-              ${s.year ? `<span class="gsc-badge">${escapeHtml(s.year)}</span>` : ''}
+              ${isAlreadyAdded ? `<span class="gsc-badge" style="background: rgba(16, 185, 129, 0.25); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.4);">✓ อยู่ในคลังแล้ว</span>` : ''}
             </div>
           </div>
         </div>
@@ -7053,9 +7168,15 @@ function renderSongCardsHtml(songList, headerHtml) {
         </div>
         <div class="gsc-actions">
           <button class="btn-ai-play" id="btn-ai-play-${cardId}" onclick="playOrResolveAiSongPreview('${cardId}', this)">▶️ ลองฟังตัวอย่างเพลง</button>
-          <button class="btn-ai-confirm-add" id="btn-add-${cardId}" onclick="confirmAddSongViaAi('${cardId}', this)">
-            ➕ ยืนยันเพิ่มเพลงนี้ลงคลังทันที (แชร์ให้ทุกคน)
-          </button>
+          ${isAlreadyAdded ? `
+            <button class="btn-ai-confirm-add added" id="btn-add-${cardId}" onclick="focusSongInGrid('${escapeHtml(songPayload.title)}')">
+              ✅ เพิ่มลงคลังเพลงแล้ว (แตะเพื่อดูในคลัง)
+            </button>
+          ` : `
+            <button class="btn-ai-confirm-add" id="btn-add-${cardId}" onclick="confirmAddSongViaAi('${cardId}', this)">
+              ➕ ยืนยันเพิ่มเพลงนี้ลงคลังทันที (แชร์ให้ทุกคน)
+            </button>
+          `}
         </div>
       </div>
     `;
@@ -7071,7 +7192,7 @@ async function parseAndRenderAiSongResponse(aiText, engineUsed, rawUserPrompt) {
   const patterns = [
     /```json\s*(\[\s*\{[\s\S]*?\}\s*\])\s*```/i,
     /```\s*(\[\s*\{[\s\S]*?\}\s*\])\s*```/i,
-    /\[\s*\{\s*"title"\s*:[\s\S]*?\}\s*\]/i
+    /\[\s*\{\s*"title"\s*:[\s\S]*?\}\]/i
   ];
   
   let jsonMatch = null;
@@ -7087,7 +7208,6 @@ async function parseAndRenderAiSongResponse(aiText, engineUsed, rawUserPrompt) {
       cleanText = aiText.replace(jsonMatch[0], '').replace(/```json[\s\S]*?```/gi, '').replace(/```[\s\S]*?```/gi, '').trim();
     } catch (e) {
       console.warn('Could not parse AI songs JSON:', e);
-      // Try to fix common JSON issues (trailing comma, etc.)
       try {
         const fixed = (jsonMatch[1] || jsonMatch[0]).replace(/,\s*([\]\}])/g, '$1');
         recommendedSongs = JSON.parse(fixed);
@@ -7117,12 +7237,16 @@ async function parseAndRenderAiSongResponse(aiText, engineUsed, rawUserPrompt) {
     }
   }
 
+  const isAddSongIntent = Boolean(
+    rawUserPrompt && /เพิ่มเพลง|ลงเพลง|แอดเพลง|เพิ่มเป็นเพลง|เพิ่มลงคลัง|แอดลงคลัง|ตรวจหาเพลง|ช่วยเพิ่ม|ดึงขึ้นคลัง|add/i.test(rawUserPrompt)
+  );
+
   const formattedHtml = renderAiMarkdown(cleanText);
   const pillHtml = `<div class="gemini-engine-pill">✦ Haimiya AI</div>`;
+  const helperHint = '<div style="margin-top: 10px; border-top: 1px dashed rgba(255,255,255,0.12); padding-top: 8px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px;"><span style="font-size: 0.76rem; color: #64748b;">💡 แนบรูป/วิดีโอเพื่อขอเพลงหรือตรวจคลิปได้ตลอดค่ะ</span><button class="btn-sm btn-ghost" onclick="safeAppReload()" style="font-size: 0.75rem; color: #38bdf8; border-color: rgba(56,189,248,0.3); padding: 2px 8px;">🔄 รีเฟรชเว็บ</button></div>';
 
   if (Array.isArray(recommendedSongs) && recommendedSongs.length > 0) {
     const resolvedSongs = await Promise.all(recommendedSongs.map(async (item) => {
-      // 1. Check if song already exists in our local library (27,000+ verified songs)
       let localSong = null;
       if (typeof searchSongsInLibrary === 'function' && typeof SONGS !== 'undefined') {
         const matches = searchSongsInLibrary(item.title, 1);
@@ -7131,10 +7255,8 @@ async function parseAndRenderAiSongResponse(aiText, engineUsed, rawUserPrompt) {
         }
       }
 
-      // 2. Query iTunes with strict match validation
       const live = await searchLiveTrackPreview(item.title, item.artist, item.lang);
 
-      // 3. Resolve cleanly without ever leaking wrong compilation covers or audio
       return {
         title: (live && live.title) || (localSong && localSong.title) || item.title,
         artist: (live && live.artist) || (localSong && localSong.artist) || item.artist || 'Unknown Artist',
@@ -7151,18 +7273,27 @@ async function parseAndRenderAiSongResponse(aiText, engineUsed, rawUserPrompt) {
       };
     }));
 
-    const cardsHtml = renderSongCardsHtml(resolvedSongs);
-    
-    const repairHint = '<div style="margin-top: 10px; border-top: 1px dashed rgba(255,255,255,0.12); padding-top: 8px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px;"><span style="font-size: 0.76rem; color: #64748b;">💡 แนบรูป/วิดีโอเพื่อแก้บั๊กหรือขอเพลงได้ตลอดค่ะ</span><button class="btn-sm btn-ghost" onclick="executeRealAppBugRepair()" style="font-size: 0.75rem; color: #f87171; border-color: rgba(248,113,113,0.3); padding: 2px 8px;">🛠️ ซ่อมแซมระบบ & รีสตาร์ท</button></div>';
-    appendAiResponse(formattedHtml + cardsHtml + repairHint + pillHtml, aiText);
+    let autoAddBanner = '';
+    if (isAddSongIntent && resolvedSongs.length > 0) {
+      resolvedSongs.forEach(s => autoAddSongToLibrary(s));
+      autoAddBanner = `
+        <div style="background: rgba(16, 185, 129, 0.15); border: 1.5px solid rgba(16, 185, 129, 0.45); border-radius: 12px; padding: 10px 14px; margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+          <span style="font-size: 1.4rem;">🎉</span>
+          <div>
+            <strong style="color: #6ee7b7; font-size: 0.95rem;">เพิ่มเพลงลงคลังอัตโนมัติเรียบร้อยแล้วค่ะ!</strong>
+            <div style="font-size: 0.82rem; color: #cbd5e1; margin-top: 2px;">เพลง "${escapeHtml(resolvedSongs[0].title)}" ถูกบันทึกเข้าสู่คลังเพลงของแอปถาวร ไม่สูญหายแม้ปิดหรือรีเฟรชหน้าจอ ค้นหาและเปิดฟังได้ทันที ✨</div>
+          </div>
+        </div>
+      `;
+      showToast(currentAppLang === 'th' ? `🎉 เพิ่มเพลง "${resolvedSongs[0].title}" ลงคลังเพลงโดยอัตโนมัติแล้ว!` : `🎉 Added "${resolvedSongs[0].title}" to library!`);
+    }
+
+    const cardsHtml = renderSongCardsHtml(resolvedSongs, '', isAddSongIntent);
+    appendAiResponse(formattedHtml + autoAddBanner + cardsHtml + helperHint + pillHtml, aiText);
   } else {
-    
-    const repairHint = '<div style="margin-top: 10px; border-top: 1px dashed rgba(255,255,255,0.12); padding-top: 8px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px;"><span style="font-size: 0.76rem; color: #64748b;">💡 แนบรูป/วิดีโอเพื่อแก้บั๊กหรือขอเพลงได้ตลอดค่ะ</span><button class="btn-sm btn-ghost" onclick="executeRealAppBugRepair()" style="font-size: 0.75rem; color: #f87171; border-color: rgba(248,113,113,0.3); padding: 2px 8px;">🛠️ ซ่อมแซมระบบ & รีสตาร์ท</button></div>';
-    appendAiResponse(formattedHtml + repairHint + pillHtml, aiText);
+    appendAiResponse(formattedHtml + helperHint + pillHtml, aiText);
   }
 }
-
-
 // ============================================================
 // HAIMIYA AI MULTIMODAL MEDIA ATTACHMENT & REAL BUG REPAIR ENGINE
 // ============================================================
@@ -7379,19 +7510,20 @@ async function executeRealAppBugRepair(reason = 'ผู้ใช้ส่งร�
   await new Promise(r => setTimeout(r, 450));
   setStep(step1, 'done', '✅');
 
-  // Step 2: Purge Caches & Service Worker
+  // Step 2: Purge Stale Caches & Re-sync Service Worker safely
   setStep(step2, 'active', '🧹');
   if (fill) fill.style.width = '55%';
   try {
     if ('caches' in window) {
       const keys = await window.caches.keys();
-      await Promise.all(keys.map(k => window.caches.delete(k)));
-      console.log('Real repair: purged caches', keys);
+      // Purge old versions but protect audio vault
+      await Promise.all(keys.filter(k => !k.includes('vault')).map(k => window.caches.delete(k)));
+      console.log('Real repair: purged stale caches', keys);
     }
     if ('serviceWorker' in navigator) {
       const regs = await navigator.serviceWorker.getRegistrations();
-      await Promise.all(regs.map(r => r.unregister()));
-      console.log('Real repair: unregistered service workers', regs.length);
+      await Promise.all(regs.map(r => r.update().catch(() => {})));
+      console.log('Real repair: re-synced service workers', regs.length);
     }
   } catch (err) {
     console.warn('Real repair cache purge error:', err);
@@ -7801,12 +7933,21 @@ async function sendGeminiMessage() {
           };
         });
 
+        // Automatically add best matching song to library!
+        const bestSong = autoAddSongToLibrary(songList[0]);
         const headerHtml = `
-          <p>✨ ไฮมิยะค้นพบตัวเลือกเพลงสำหรับ <strong>"${escapeHtml(explicitQuery)}"</strong> แล้วค่ะ!</p>
-          <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 4px;">คลิก <strong>▶️ ลองฟังตัวอย่าง</strong> เพื่อฟังเสียงได้ทันที หรือกดปุ่ม <strong>"➕ ยืนยันเพิ่มเพลงนี้ลงคลัง"</strong> เพลงจะถูกบันทึกและซิงค์ให้ทุกคนในแอปทันทีค่ะ 🌸🎵:</p>
+          <div style="background: rgba(16, 185, 129, 0.15); border: 1.5px solid rgba(16, 185, 129, 0.45); border-radius: 12px; padding: 10px 14px; margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+            <span style="font-size: 1.4rem;">🎉</span>
+            <div>
+              <strong style="color: #6ee7b7; font-size: 0.95rem;">เพิ่มเพลง "${escapeHtml(songList[0].title)}" ลงคลังอัตโนมัติแล้วค่ะ!</strong>
+              <div style="font-size: 0.82rem; color: #cbd5e1; margin-top: 2px;">เพลง "${escapeHtml(songList[0].title)}" โดย ${escapeHtml(songList[0].artist)} ถูกบันทึกเข้าสู่คลังเพลงของแอปถาวร ไม่สูญหายแม้ปิดหรือรีโหลดเว็บ สามารถกดฟังตัวอย่าง นำไปตัดต่อ หรือค้นหาได้ทันที 🎵</div>
+            </div>
+          </div>
         `;
-        const cardsHtml = renderSongCardsHtml(songList, headerHtml);
-        appendAiResponse(cardsHtml, `ค้นหาเพลง "${explicitQuery}"`);
+        const helperHint = '<div style="margin-top: 10px; border-top: 1px dashed rgba(255,255,255,0.12); padding-top: 8px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 6px;"><span style="font-size: 0.76rem; color: #64748b;">💡 แนบรูป/วิดีโอเพื่อขอเพลงหรือตรวจคลิปได้ตลอดค่ะ</span><button class="btn-sm btn-ghost" onclick="safeAppReload()" style="font-size: 0.75rem; color: #38bdf8; border-color: rgba(56,189,248,0.3); padding: 2px 8px;">🔄 รีเฟรชเว็บ</button></div>';
+        const cardsHtml = renderSongCardsHtml(songList, headerHtml, true);
+        appendAiResponse(cardsHtml + helperHint, `เพิ่มเพลง "${explicitQuery}"`);
+        showToast(currentAppLang === 'th' ? `🎉 เพิ่มเพลง "${songList[0].title}" ลงคลังเพลงโดยอัตโนมัติแล้ว!` : `🎉 Added "${songList[0].title}" to library!`);
         return;
       }
     } catch (err) {
