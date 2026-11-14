@@ -1,13 +1,24 @@
 {
-  "lastRun": 1794083990023,
-  "cycle": 10,
+  "lastRun": 1794690316359,
+  "cycle": 11,
   "fixes": [
-    "CSS: 1008 !important overrides",
-    "Weekly Accent rotated: Cyber Cyan",
-    "UI Badge updated: Theme Cyber Cyan, Cache v5",
-    "Manifest version: 2.0.20261107"
+    "CSS: 1015 !important overrides",
+    "Weekly Accent rotated: Rose Red",
+    "UI Badge updated: Theme Rose Red, Cache v5",
+    "Manifest version: 2.0.20261114"
   ],
   "history": [
+    {
+      "date": "2026-11-14T21:05:16.359Z",
+      "cycle": 11,
+      "fixes": [
+        "CSS: 1015 !important overrides",
+        "Weekly Accent rotated: Rose Red",
+        "UI Badge updated: Theme Rose Red, Cache v5",
+        "Manifest version: 2.0.20261114"
+      ],
+      "changes": 3
+    },
     {
       "date": "2026-11-07T20:39:50.023Z",
       "cycle": 10,
@@ -113,21 +124,8 @@
         "Manifest version: 2.0.20261015"
       ],
       "changes": 3
-    },
-    {
-      "date": "2026-10-15T16:26:28.316Z",
-      "cycle": 1,
-      "fixes": [
-        "SW Cache bumped to v4",
-        "HTML_MISSING: Service Worker",
-        "CSS: 172 !important overrides",
-        "Stats updated: 723 songs, 406 anime",
-        "Added weekly accent: Aurora Purple",
-        "Manifest version: 2.0.20261015"
-      ],
-      "changes": 4
     }
   ],
-  "lastRunDate": "2026-11-07T20:39:50.023Z",
+  "lastRunDate": "2026-11-14T21:05:16.359Z",
   "totalChanges": 3
 }
