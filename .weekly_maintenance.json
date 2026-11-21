@@ -1,13 +1,24 @@
 {
-  "lastRun": 1794690316359,
-  "cycle": 11,
+  "lastRun": 1795298423133,
+  "cycle": 12,
   "fixes": [
     "CSS: 1015 !important overrides",
-    "Weekly Accent rotated: Rose Red",
-    "UI Badge updated: Theme Rose Red, Cache v5",
-    "Manifest version: 2.0.20261114"
+    "Weekly Accent rotated: Sakura Pink",
+    "UI Badge updated: Theme Sakura Pink, Cache v5",
+    "Manifest version: 2.0.20261121"
   ],
   "history": [
+    {
+      "date": "2026-11-21T22:00:23.133Z",
+      "cycle": 12,
+      "fixes": [
+        "CSS: 1015 !important overrides",
+        "Weekly Accent rotated: Sakura Pink",
+        "UI Badge updated: Theme Sakura Pink, Cache v5",
+        "Manifest version: 2.0.20261121"
+      ],
+      "changes": 3
+    },
     {
       "date": "2026-11-14T21:05:16.359Z",
       "cycle": 11,
@@ -112,20 +123,8 @@
         "Manifest version: 2.0.20261015"
       ],
       "changes": 4
-    },
-    {
-      "date": "2026-10-15T16:35:25.639Z",
-      "cycle": 2,
-      "fixes": [
-        "SW Cache bumped to v5",
-        "HTML_MISSING: Service Worker",
-        "CSS: 172 !important overrides",
-        "Weekly accent rotated: Aurora Purple",
-        "Manifest version: 2.0.20261015"
-      ],
-      "changes": 3
     }
   ],
-  "lastRunDate": "2026-11-14T21:05:16.359Z",
+  "lastRunDate": "2026-11-21T22:00:23.133Z",
   "totalChanges": 3
 }
