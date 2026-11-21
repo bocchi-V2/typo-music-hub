@@ -1,7 +1,16 @@
 {
-  "lastSyncTime": 1795215258993,
-  "dayCount": 46,
+  "lastSyncTime": 1795232462500,
+  "dayCount": 47,
   "history": [
+    {
+      "date": "21/11/2569 03:41:02",
+      "addedSongs": 50,
+      "addedAnimes": 5,
+      "skippedDuplicates": 554,
+      "failedSearches": 12,
+      "totalSongs": 41326,
+      "totalAnimes": 1166
+    },
     {
       "date": "20/11/2569 22:54:18",
       "addedSongs": 50,
@@ -379,9 +388,9 @@
       "totalAnimes": 406
     }
   ],
-  "lastSyncDate": "2026-11-20",
-  "totalSongs": 41276,
-  "totalAnimes": 1161,
+  "lastSyncDate": "2026-11-21",
+  "totalSongs": 41326,
+  "totalAnimes": 1166,
   "totalFunk": 25,
   "lastSyncDateStr": "21/11/2569"
 }
